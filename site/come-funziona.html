@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Come funziona · GERICO</title>
+<meta name="description" content="Come GERICO sceglie le testate, confronta i fatti, scrive il suo parere e aggiorna il Terminal.">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GERICO">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Come funziona GERICO">
+<meta property="og:description" content="Come GERICO confronta le testate e aggiorna il Terminal.">
+<meta property="og:image" content="assets/img/og-gerico.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/gerico.css">
+<script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Vai al testo</a>
+<header class="masthead wrap">
+<div class="mast-row">
+<a class="brand" href="index.html" aria-label="GERICO, prima pagina"><img class="logo-light" src="assets/img/gerico-logo.svg" alt="GERICO" width="186" height="56"><img class="logo-dark" src="assets/img/gerico-logo-dark.svg" alt="GERICO" width="186" height="56"></a>
+<div class="tools">
+<button class="tool" type="button" data-theme-toggle aria-pressed="false" aria-label="Passa al tema scuro"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path></svg></button>
+<button class="tool" type="button" data-size aria-label="Dimensione del testo: normale">Aa</button>
+</div>
+</div>
+<nav class="sections" aria-label="Sezioni"><a href="index.html">Prima pagina</a><a href="come-funziona.html" aria-current="page">Come funziona</a><a class="to-terminal" href="terminal.html">Terminal</a></nav>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+<div class="prose">
+<h1>Come funziona GERICO</h1>
+<p>Ogni mattina GERICO legge le principali testate italiane e internazionali, raggruppa gli articoli che parlano dello stesso fatto e li mette a confronto. Il risultato è un'edizione breve: per ogni storia, cosa riportano tutte le testate, dove si dividono e un parere che separa i fatti dalle interpretazioni.</p>
+
+<h2>Il muro delle testate</h2>
+<p>Ogni pietra del muro è una testata. È piena se la testata riporta gli stessi fatti delle altre, chiara se li riporta solo in parte o con una cornice diversa, vuota se ne dà una versione che li contraddice. Sotto il muro trovi quante testate concordano e, per le storie principali, quali testate controllate non ne parlano.</p>
+
+<h2>Fatti, divergenze e parere</h2>
+<p>I fatti condivisi sono quelli che GERICO ha trovato davvero negli articoli letti; accanto a ogni fatto c'è il numero di testate che lo riportano. Le divergenze sono solo differenze reali: numeri, attribuzioni, parole scelte. Il parere di GERICO dice cosa è accertato, dove le letture si dividono, perché la notizia conta e cosa guardare nei giorni successivi. Non prende posizioni politiche e non dà consigli di investimento.</p>
+
+<h2>Le testate</h2>
+<p>L'elenco fisso comprende testate italiane, europee, americane, mediorientali, ucraine e asiatiche. Ogni articolo viene controllato per data: un pezzo vecchio entra solo come contesto, dichiarato.</p>
+<p id="outlets">Testate lette nell'ultima edizione: —</p>
+<p id="quality"></p>
+
+<h2>Quando si aggiorna</h2>
+<ul>
+<li>Ogni mattina alle 7:18: notizie, mercati e agenda del giorno.</li>
+<li>Nei giorni feriali alle 17:50: solo le chiusure delle Borse europee.</li>
+<li>Una volta al mese: i pesi della mappa del Terminal.</li>
+</ul>
+
+<h2>Il Terminal</h2>
+<p>La mappa del Terminal mostra le principali Borse del mondo. L'area di ogni quadrato è il peso del Paese nell'indice mondiale MSCI ACWI (nella vista Europa, nell'indice MSCI Europe); il colore è la variazione dell'ultima seduta dell'indice principale di quel Paese. Le variazioni arrivano dagli stessi articoli datati usati per i mercati: quando un dato non è verificato, il quadrato resta grigio.</p>
+<p>I prezzi in diretta, se li chiedi, arrivano dal widget gratuito di TradingView e hanno un ritardo diverso per ogni mercato.</p>
+
+<h2>I limiti</h2>
+<p>GERICO lavora solo su fonti pubbliche e può sbagliare. Gli articoli originali sono sempre linkati: in caso di dubbio, conta quello che scrive la testata. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
+</div>
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<div class="c1"><nav aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">GERICO Terminal</a><a href="privacy.html">Privacy</a></nav></div>
+<div class="c2"><p class="small">GERICO non dà consigli di investimento.</p></div>
+</div>
+</footer>
+
+<script src="assets/js/common.js"></script>
+<script>
+(async function () {
+  G.initPrefs();
+  const ed = await G.load("edition");
+  if (!ed) return;
+  if ((ed.outlets || []).length) document.getElementById("outlets").textContent = "Testate lette nell'edizione di " + G.longDay(ed.lastRun) + ": " + ed.outlets.join(", ") + ".";
+  const q = ed.quality;
+  if (q && typeof q.articlesRead === "number") document.getElementById("quality").textContent = "In quel giro: " + q.articlesRead + " articoli letti, " + (q.articlesDiscarded || 0) + " scartati perché vecchi, " + (q.factsChecked || 0) + " fatti ricontrollati" + (q.factsCorrected ? ", " + q.factsCorrected + " corretti" : "") + ".";
+})();
+</script>
+</body>
+</html>

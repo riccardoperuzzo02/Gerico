@@ -39,5 +39,7 @@ poi apri http://127.0.0.1:8765/
 
 ## Pubblicazione su Cloudflare Pages
 
-Workers & Pages, Crea, Pages, Collega a Git, repository `gerico`. Impostazioni: nessun framework, nessun comando di build,
-cartella di output `site`. Quando il sito ha il suo indirizzo: `python3 scripts/set_site_url.py https://<indirizzo>` e push.
+Workers & Pages › Create application › scheda Pages › Import an existing Git repository, repository `Gerico`.
+Impostazioni: Production branch `main`, Framework preset `None`, Build command `exit 0`, Build output directory `site`.
+Ogni push su `main` ripubblica il sito (il piano gratuito ne consente 500 al mese; la pipeline ne fa circa 50).
+Quando il sito ha il suo indirizzo: `python3 scripts/set_site_url.py https://<indirizzo>` e push.

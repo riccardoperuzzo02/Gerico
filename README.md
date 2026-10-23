@@ -6,7 +6,7 @@ Sito statico: HTML, CSS e JavaScript senza framework e senza build. Nessun serve
 ## Struttura
 
 ```
-site/                 la cartella pubblicata da Cloudflare Pages
+site/                 la cartella pubblicata da Cloudflare
   index.html          prima pagina (sezioni con #mondo, #italia, ... e #seguiti)
   storia.html?id=...  una storia: fatti, divergenze, parere, cronologia, fonti
   terminal.html       GERICO Terminal: mappa a quadrati, indici, valute, tassi, materie prime, agenda, notizie
@@ -22,7 +22,7 @@ pipeline/             i testi delle attività programmate (7:18 e 17:50)
 
 La redazione vive nell'app privata su claude.ai. Ogni mattina alle 7:18 l'attività programmata aggiorna il suo database,
 poi legge i documenti con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e fa un commit con push.
-Cloudflare Pages ripubblica il sito da solo. Nei giorni feriali alle 17:50 un giro breve aggiorna solo mercati e mappa.
+Cloudflare ripubblica il sito da solo. Nei giorni feriali alle 17:50 un giro breve aggiorna solo mercati e mappa.
 
 - `edition.json`: storie live in ordine di importanza, più le archiviate degli ultimi 7 giorni
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno
@@ -37,9 +37,10 @@ python3 -m http.server 8765 -d site
 
 poi apri http://127.0.0.1:8765/
 
-## Pubblicazione su Cloudflare Pages
+## Pubblicazione su Cloudflare
 
-Workers & Pages › Create application › scheda Pages › Import an existing Git repository, repository `Gerico`.
-Impostazioni: Production branch `main`, Framework preset `None`, Build command `exit 0`, Build output directory `site`.
-Ogni push su `main` ripubblica il sito (il piano gratuito ne consente 500 al mese; la pipeline ne fa circa 50).
+Compute › Workers & Pages › Create › Import a repository, repository `Gerico`, nome del progetto `gerico`.
+Build command vuoto, Deploy command `npx wrangler deploy`: `wrangler.toml` dice a Cloudflare di pubblicare la cartella `site`
+come file statici (gratis, senza limiti di traffico). Ogni push su `main` ripubblica il sito; la pipeline ne fa circa 50 al mese.
+In alternativa funziona anche Cloudflare Pages: Framework preset `None`, Build command `exit 0`, Build output directory `site`.
 Quando il sito ha il suo indirizzo: `python3 scripts/set_site_url.py https://<indirizzo>` e push.

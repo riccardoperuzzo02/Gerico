@@ -1,0 +1,9 @@
+# Pubblicazione su Cloudflare (Worker con soli file statici).
+# Il sito è la cartella site/: nessun codice lato server, nessuna chiave.
+# Il nome deve restare uguale al nome del progetto su Cloudflare.
+name = "gerico"
+compatibility_date = "2025-10-01"
+
+[assets]
+directory = "./site"
+not_found_handling = "404-page"

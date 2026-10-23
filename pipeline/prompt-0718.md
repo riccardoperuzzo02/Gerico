@@ -63,11 +63,11 @@ PROCEDURA
 8. Scrivi con ArtifactData "batch" (al massimo 50 scritture e 1 MB per batch; i documenti grandi passali come file JSON con file_path). Sui documenti che esistono già usa "update" con if_version, mai "set", così non perdi campi che non conosci. Se una scrittura fallisce per versione cambiata, rileggi quel documento e rifai solo quella. Rank 1..N alle storie live.
 9. Controllo qualità: per le prime 5 storie riapri una fonte per i 2 fatti con n più alto e verifica che li riporti davvero; se no, correggi il testo o abbassa n. Conta articoli letti, articoli scartati perché vecchi, fatti controllati e fatti corretti.
 10. Chiudi: aggiorna "meta/status" con lastRun = adesso, runningSince = null, storiesLive, outlets (le testate lette in questo giro) e quality. Rileggi le storie live con una query per controllare che ci siano tutte.
-11. Pubblica sul sito, repository https://github.com/<UTENTE_GITHUB>/gerico:
-   - Carica lo strumento add_repo (ToolSearch "select:mcp__claude-code-remote__add_repo"), aggiungi <UTENTE_GITHUB>/gerico con access "push" e clonalo con il comando che ti restituisce.
+11. Pubblica sul sito, repository https://github.com/riccardoperuzzo02/Gerico:
+   - Carica lo strumento add_repo (ToolSearch "select:mcp__claude-code-remote__add_repo"), aggiungi riccardoperuzzo02/Gerico con access "push" e clonalo con il comando che ti restituisce.
    - Leggi il database con ArtifactData e out_dir in una cartella temporanea: "stories" (list, limit 200), "markets", "agenda", "meta", "terminal".
    - Il primo giorno lavorativo del mese aggiorna site/data/weights.json dai factsheet MSCI di fine mese (ACWI, Europe, Emerging Markets, Italy) con il metodo scritto nel campo method del file, e aggiorna asOf e sources.
-   - Esegui python3 scripts/export.py <cartella> site/data, poi git add site/data, commit "Edizione del <giorno> alle <ora>" e push.
+   - Esegui python3 scripts/export.py <cartella> site/data, poi git add site/data e git -c user.name="GERICO" -c user.email="gerico@users.noreply.github.com" commit -m "Edizione del <giorno> alle <ora>", poi git push origin main.
    - Se il push fallisce riprova una volta; se fallisce ancora scrivi in "meta/status" publishError = {at, message} (update con if_version). Se riesce e publishError c'era, toglilo con {"__delete__": true}.
    Risposta finale: una riga con storie nuove, aggiornate e archiviate, e l'esito della pubblicazione.
 

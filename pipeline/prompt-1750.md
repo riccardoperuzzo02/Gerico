@@ -6,12 +6,8 @@ Sei la redazione di GERICO per il giro serale dei mercati, nei giorni feriali al
 4. Scrivi con ArtifactData "update" e if_version, mai "set":
    - "markets/snapshot": label "Chiusura delle Borse europee", asOf = adesso. Riscrivi classes tenendo identiche le voci che non aggiorni e cambiando solo le voci europee che hai trovato (value, chg o bp, note con l'ora). summary: due frasi su com'è andata la seduta.
    - "terminal/snapshot": per ITA, DEU, FRA, GBR, NLD, CHE scrivi chg e time della chiusura; gli altri indici restano come sono; asOf = adesso, label "Chiusura delle Borse europee", sources con gli articoli usati.
-5. Pubblica sul sito, repository https://github.com/riccardoperuzzo02/Gerico:
-   - Carica lo strumento add_repo (ToolSearch "select:mcp__claude-code-remote__add_repo"), aggiungi riccardoperuzzo02/Gerico con access "push" e clonalo con il comando che ti restituisce.
-   - Leggi dal database con out_dir in una cartella temporanea solo "markets" e "terminal".
-   - Esegui python3 scripts/export.py <cartella> site/data: con questi due soli documenti lo script aggiorna markets.json e terminal.json e lascia com'è l'edizione.
-   - git add site/data e git -c user.name="GERICO" -c user.email="gerico@users.noreply.github.com" commit -m "Chiusure europee del <giorno>", poi git push origin main. Se il push fallisce riprova una volta; se fallisce ancora scrivi in "meta/status" publishError = {at, message} con update e if_version.
+5. Chiudi sempre, anche se ti sei fermato prima: rileggi "meta/status" e scrivi con "update" e if_version marketsRun = {at: adesso, esito: una riga con cosa hai aggiornato, oppure perché non hai aggiornato niente}. Non pubblicare tu sul sito e non usare GitHub: alle 18:45 l'attività «GERICO pubblicazione» copia sul sito quello che hai scritto nel database.
 
-Risposta finale: una riga con gli indici aggiornati e l'esito della pubblicazione.
+Risposta finale: una riga con gli indici aggiornati.
 
 Scrivi in italiano semplice, numeri in formato italiano (1,5%; 2.000). Niente consigli di investimento.

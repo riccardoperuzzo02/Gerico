@@ -6,10 +6,10 @@ Uso:
 
 <cartella_dump> è la cartella creata leggendo il database dell'app con ArtifactData e out_dir:
     stories/<id>.json, markets/snapshot.json, agenda/today.json, meta/status.json
-    e, quando esiste, terminal/snapshot.json.
-Scrive edition.json, markets.json, agenda.json e terminal.json. Non tocca weights.json,
-che si aggiorna a parte una volta al mese. Nel sito finiscono solo dati editoriali:
-mai le preferenze degli utenti (data/users) né altro."""
+    e, quando esistono, terminal/snapshot.json e terminal/weights.json.
+Scrive edition.json, markets.json, agenda.json, terminal.json e, se nel database ci sono i pesi
+della mappa (aggiornati una volta al mese), weights.json. Un giro senza novità non cambia nessun file.
+Nel sito finiscono solo dati editoriali: mai le preferenze degli utenti (data/users) né altro."""
 import json
 import os
 import sys
@@ -121,12 +121,23 @@ def main(dump, out):
     if terminal is None and markets is not None:
         terminal = derive_terminal(markets)
 
-    files = {"edition.json": edition, "markets.json": markets, "agenda.json": agenda, "terminal.json": terminal}
+    weights = load(os.path.join(dump, "terminal", "weights.json"))
+    if weights is not None and not (weights.get("world") and weights.get("europe")):
+        print("  weights.json: pesi nel database incompleti, lascio il file com'era")
+        weights = None
+
+    files = {"edition.json": edition, "markets.json": markets, "agenda.json": agenda, "terminal.json": terminal,
+             "weights.json": weights}
     for fname, data in files.items():
         if data is None:
             print(f"  {fname}: nessun dato nel database, lascio il file com'era")
             continue
         path = os.path.join(out, fname)
+        if fname == "edition.json":
+            # se l'edizione non è cambiata tengo l'ora di prima: così un giro senza novità non produce un commit
+            old = load(path) or {}
+            if {k: v for k, v in old.items() if k != "generatedAt"} == {k: v for k, v in data.items() if k != "generatedAt"}:
+                data["generatedAt"] = old.get("generatedAt", data["generatedAt"])
         tmp = path + ".tmp"
         with open(tmp, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))

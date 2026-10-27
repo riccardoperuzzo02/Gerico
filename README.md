@@ -15,19 +15,21 @@ site/                 la cartella pubblicata da Cloudflare
   data/               i dati dell'edizione, scritti dalla pipeline
 scripts/export.py     dal database dell'app di redazione ai file di site/data
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
-pipeline/             i testi delle attività programmate (7:18 e 17:50)
+pipeline/             i testi delle attività programmate (7:18, 17:50 e pubblicazione)
 ```
 
 ## Da dove arrivano i dati
 
-La redazione vive nell'app privata su claude.ai. Ogni mattina alle 7:18 l'attività programmata aggiorna il suo database,
-poi legge i documenti con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e fa un commit con push.
-Cloudflare ripubblica il sito da solo. Nei giorni feriali alle 17:50 un giro breve aggiorna solo mercati e mappa.
+La redazione vive nell'app privata su claude.ai e scrive solo nel suo database: ogni mattina alle 7:18 l'edizione completa,
+nei giorni feriali alle 17:50 le chiusure delle Borse europee. Alle 7:45 e alle 18:45 un'attività separata e breve legge il
+database con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e, se qualcosa è cambiato, fa un commit con push.
+Cloudflare ripubblica il sito da solo. La pubblicazione sta in un'attività a parte perché nei giri lunghi il passaggio su GitHub
+falliva; se una mattina non c'è niente di nuovo, l'export non cambia nessun file e non parte nessun commit.
 
 - `edition.json`: storie live in ordine di importanza, più le archiviate degli ultimi 7 giorni
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno
 - `terminal.json`: variazioni degli indici della mappa (finché manca `terminal/snapshot` nel database, sono ricavate dai mercati)
-- `weights.json`: pesi della mappa dai factsheet MSCI, aggiornati una volta al mese
+- `weights.json`: pesi della mappa dai factsheet MSCI (documento `terminal/weights` del database), aggiornati una volta al mese
 
 ## Anteprima in locale
 

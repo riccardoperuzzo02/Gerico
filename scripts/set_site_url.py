@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scrive l'indirizzo pubblico del sito nelle pagine, per le anteprime di condivisione.
 
-Uso: python3 scripts/set_site_url.py https://gerico.riccardoperuzzo02.workers.dev
+Uso: python3 scripts/set_site_url.py https://gerico.financialnews.workers.dev
 Rende assoluto og:image e aggiunge og:url e il link canonico a ogni pagina HTML di site/.
 Si può rilanciare quando cambia l'indirizzo (per esempio con un dominio personale)."""
 import glob

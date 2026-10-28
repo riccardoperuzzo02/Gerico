@@ -114,10 +114,14 @@
   } else {
     $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
   }
-  requestAnimationFrame(() => setTimeout(() => {
+  // il resto della storia (sotto lo schermo) arriva a passaggio animato finito: mentre il titolo vola, la pagina non ha altro da fare
+  const fill = () => {
     $("st-body").insertAdjacentHTML("beforeend", rest);
     $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcList + "</section>" : "") + linkedHTML + tagsHTML;
-  }, 0));
+  };
+  const afterPass = () => requestAnimationFrame(() => setTimeout(fill, 0));
+  const pass = window.gericoVT;
+  if (pass && pass.finished) pass.finished.then(afterPass, afterPass); else afterPass();
 
   // ---------- eventi ----------
   // arrivati dalla prima pagina, «Prima pagina» torna indietro: stessa posizione e titolo che rifà il percorso

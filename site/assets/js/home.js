@@ -144,8 +144,11 @@
     ghost.className = "feed-ghost";
     ghost.setAttribute("aria-hidden", "true");
     ghost.querySelectorAll(".reveal").forEach((el) => el.classList.remove("reveal"));
-    ghost.style.top = feed.offsetTop + "px";
-    ghost.style.width = feed.offsetWidth + "px";
+    // posizione al decimale di pixel: offsetTop arrotonda e la copia partirebbe con un piccolo scatto
+    const box = feed.parentElement, fr = feed.getBoundingClientRect(), br = box.getBoundingClientRect();
+    ghost.style.top = (fr.top - br.top - box.clientTop) + "px";
+    ghost.style.left = (fr.left - br.left - box.clientLeft) + "px";
+    ghost.style.width = fr.width + "px";
     renderFeed(true);
     feed.parentElement.appendChild(ghost);
     ghost.style.height = feed.offsetHeight + "px";

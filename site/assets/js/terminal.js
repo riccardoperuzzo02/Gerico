@@ -47,8 +47,14 @@
     $("detail").innerHTML = html;
   }
   // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
-  const SPRING = window.CSS && CSS.supports && CSS.supports("animation-timing-function", "linear(0, 1)")
-    ? getComputedStyle(document.documentElement).getPropertyValue("--spring").trim() || "ease-out" : "cubic-bezier(0.2, 0.8, 0.2, 1)";
+  // curva con un filo di rimbalzo, cubic-bezier: Safari la anima da solo, senza il thread della pagina (con linear() no)
+  const SNAP = "cubic-bezier(0.3, 1.2, 0.5, 1)";
+  // l'origine si fissa sull'elemento per la durata dell'animazione: nei fotogrammi si muovono solo transform e opacity
+  const withOrigin = (el, origin, a) => {
+    el.style.transformOrigin = origin;
+    const clear = () => { el.style.transformOrigin = ""; };
+    a.finished.then(clear, clear);
+  };
   // le posizioni dei quadrati arrivano dal calcolo della mappa: nessuna lettura dal layout, nessun ricalcolo forzato
   const byCode = (rects) => { const m = {}; (rects || []).forEach((r) => { m[r.code] = r; }); return m; };
   let lastRects = null;
@@ -58,10 +64,10 @@
       if (!b) return;
       if (!a) { el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, easing: "ease-out" }); return; }
       if (Math.abs(a.x - b.x) < 1 && Math.abs(a.y - b.y) < 1 && Math.abs(a.w - b.w) < 1 && Math.abs(a.h - b.h) < 1) return;
-      el.animate([
-        { transformOrigin: "0 0", transform: "translate(" + (a.x - b.x) + "px, " + (a.y - b.y) + "px) scale(" + (a.w / b.w).toFixed(4) + ", " + (a.h / b.h).toFixed(4) + ")" },
-        { transformOrigin: "0 0", transform: "none" }
-      ], { duration: 380, easing: SPRING });
+      withOrigin(el, "0 0", el.animate([
+        { transform: "translate(" + (a.x - b.x) + "px, " + (a.y - b.y) + "px) scale(" + (a.w / b.w).toFixed(4) + ", " + (a.h / b.h).toFixed(4) + ")" },
+        { transform: "none" }
+      ], { duration: 420, easing: SNAP }));
     });
   }
   function placeRing(instant, now) {
@@ -69,7 +75,8 @@
     if (!ring) return;
     if (!r) { ring.style.opacity = "0"; return; }
     if (instant) ring.classList.remove("ready");
-    ring.style.transform = "translate(" + r.x + "px, " + r.y + "px)";
+    ring.style.left = r.x + "px";
+    ring.style.top = r.y + "px";
     ring.style.width = r.w + "px";
     ring.style.height = r.h + "px";
     ring.style.opacity = "1";
@@ -93,17 +100,19 @@
     const now = byCode(rects);
     if (firstDraw) {
       firstDraw = false;
-      // la mappa cresce dal centro: ogni quadrato parte rimpicciolito verso il centro della mappa
+      // la mappa cresce dal centro: ogni quadrato parte rimpicciolito verso il centro, prima quelli vicini (al massimo 240 ms di scarto)
       if (!G.reduced() && rects.length) {
-        const cx = $("map").clientWidth / 2, cy = $("map").clientHeight / 2;
-        $("map").querySelectorAll(".tile").forEach((el, k) => {
-          const r = now[el.dataset.code];
-          if (!r) return;
-          const o = (cx - r.x).toFixed(1) + "px " + (cy - r.y).toFixed(1) + "px";
-          el.animate([{ opacity: 0, transform: "scale(0.55)", transformOrigin: o }, { opacity: 1, transform: "none", transformOrigin: o }],
-            { duration: 620, delay: k * 22, easing: SPRING, fill: "backwards" });
+        const map = $("map"), cx = map.clientWidth / 2, cy = map.clientHeight / 2, far = Math.hypot(cx, cy) || 1;
+        G.afterIntro(() => {
+          map.querySelectorAll(".tile").forEach((el) => {
+            const r = now[el.dataset.code];
+            if (!r) return;
+            const d = Math.hypot(r.x + r.w / 2 - cx, r.y + r.h / 2 - cy) / far;
+            withOrigin(el, (cx - r.x).toFixed(1) + "px " + (cy - r.y).toFixed(1) + "px",
+              el.animate([{ opacity: 0, transform: "scale(0.6)" }, { opacity: 1, transform: "none" }], { duration: 560, delay: Math.round(d * 240), easing: SNAP, fill: "backwards" }));
+          });
+          if ($("ring")) $("ring").animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, delay: 520, fill: "backwards" });
         });
-        if ($("ring")) $("ring").animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: 560, fill: "backwards" });
       }
     }
     if (before) flip(before, now);
@@ -136,10 +145,11 @@
     }).observe($("map"));
   }
 
-  // le percentuali contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza)
+  // le percentuali delle tabelle contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza).
+  // Nella mappa no: i quadrati stanno già crescendo, e cambiare testo a ogni fotogramma li ridisegnerebbe tutti.
   function countUp(root) {
     if (G.reduced()) return;
-    const els = Array.from(root.querySelectorAll("[data-n]")).filter((el) => isFinite(Number(el.dataset.n)));
+    const els = Array.from(root.querySelectorAll("[data-n]")).filter((el) => isFinite(Number(el.dataset.n)) && !el.closest("#map"));
     if (!els.length) return;
     const final = els.map((el) => el.textContent);
     const fmt = { pct: (v) => G.pctBare(v), "pct%": (v) => G.pct(v), bp: (v) => G.bps(Math.round(v)).replace(" pb", "") };
@@ -324,5 +334,5 @@
   setInterval(renderAgenda, 30000);
   renderNews();
   renderStatus();
-  countUp(document.body);
+  G.afterIntro(() => countUp(document.body));
 })();

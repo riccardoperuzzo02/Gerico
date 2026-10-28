@@ -24,15 +24,21 @@
 </head>
 <body>
 <a class="skip" href="#main">Vai al testo</a>
-<header class="masthead wrap">
-<div class="mast-row">
+<header class="top">
+<div class="wrap top-row">
 <a class="brand" href="index.html" aria-label="GERICO, prima pagina"><img class="logo-light" src="assets/img/gerico-logo.svg" alt="GERICO" width="186" height="56"><img class="logo-dark" src="assets/img/gerico-logo-dark.svg" alt="GERICO" width="186" height="56"></a>
-<div class="tools">
-<button class="tool" type="button" data-theme-toggle aria-pressed="false" aria-label="Passa al tema scuro"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path></svg></button>
-<button class="tool" type="button" data-size aria-label="Dimensione del testo: normale">Aa</button>
+<p class="edition" id="edition-line">Le notizie confrontate tra le testate</p>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
+</div>
+<div class="menu" id="menu" hidden>
+<div class="wrap menu-in">
+<nav class="menu-links" aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">Mercati e Terminal</a><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
+<div class="opts">
+<div class="opt" role="group" aria-label="Tema"><span>Tema</span><button type="button" data-theme-set="light">Chiaro</button><button type="button" data-theme-set="dark">Scuro</button></div>
+<div class="opt" role="group" aria-label="Dimensione del testo"><span>Testo</span><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div>
 </div>
 </div>
-<nav class="sections" aria-label="Sezioni"><a href="index.html">Prima pagina</a><a href="come-funziona.html" aria-current="page">Come funziona</a><a class="to-terminal" href="terminal.html">Terminal</a></nav>
+</div>
 </header>
 
 <main id="main" class="wrap" tabindex="-1">
@@ -53,8 +59,8 @@
 
 <h2>Quando si aggiorna</h2>
 <ul>
-<li>Ogni mattina alle 7:18: notizie, mercati e agenda del giorno.</li>
-<li>Nei giorni feriali alle 17:50: solo le chiusure delle Borse europee.</li>
+<li>Ogni mattina verso le 7:45: notizie, mercati e agenda del giorno.</li>
+<li>Nei giorni feriali verso le 18:45: le chiusure delle Borse europee.</li>
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
 
@@ -69,8 +75,8 @@
 
 <footer class="foot">
 <div class="wrap">
-<div class="c1"><nav aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">GERICO Terminal</a><a href="privacy.html">Privacy</a></nav></div>
-<div class="c2"><p class="small">GERICO non dà consigli di investimento.</p></div>
+<p>GERICO confronta le testate e separa i fatti dalle interpretazioni. Non dà consigli di investimento.</p>
+<nav aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="come-funziona.html">Come funziona</a><a href="terminal.html">Mercati e Terminal</a><a href="privacy.html">Privacy</a></nav>
 </div>
 </footer>
 

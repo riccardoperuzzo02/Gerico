@@ -1,15 +1,13 @@
-/* GERICO Terminal: mappa a quadrati, pannelli, riga di comando, tasti F1-F7, prezzi in diretta al clic. */
+/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F7) e comandi, prezzi in diretta al clic. */
 (async function () {
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
-  const short = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
   const lowFirst = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : "");
   G.initPrefs();
 
   // ---------- orologio ----------
-  const fClock = new Intl.DateTimeFormat("it-IT", { weekday: "short", day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Europe/Rome" });
-  const tick = () => { $("clock").textContent = fClock.format(new Date()).replace(/\./g, "").replace(",", " ·").toUpperCase() + " ROMA"; };
+  const tick = () => { $("clock").textContent = "Roma, " + G.romeNow().hm; };
   tick();
   setInterval(tick, 30000);
 
@@ -20,7 +18,8 @@
   };
 
   // ---------- mappa ----------
-  $("legend").innerHTML = G.BANDS.map(([c, l]) => '<span><i style="background:' + c + '"></i>' + esc(l) + "</span>").join("");
+  $("legend").innerHTML = G.BANDS.map(([c, l]) => '<span><i style="background:' + c + '"></i>' + esc(l) + "</span>").join("") +
+    '<span><i style="background:' + G.NO_DATA + '"></i>grigio: nessun dato oggi</span>';
 
   function linkedStory(code) {
     const stories = (ed && ed.stories) || [];
@@ -35,12 +34,12 @@
     const basis = state.view === "europa" ? "MSCI Europe" : "MSCI ACWI";
     const cg = typeof it.chg === "number"
       ? '<b class="' + (it.chg > 0 ? "t-up" : it.chg < 0 ? "t-down" : "") + '">' + G.pct(it.chg) + "</b>"
-      : "dato mancante";
-    let html = '<p><span class="lab">SELEZIONE</span>' + esc(it.name) + (it.index ? " · " + esc(it.index) : "") + " · " + cg + " · peso " + G.wt(it.value) + " nell'indice " + basis + "</p>";
+      : "nessun dato oggi";
+    let html = "<p><b>" + esc(it.name) + "</b>" + (it.index ? ", " + esc(it.index) : "") + ": " + cg + ". Peso " + G.wt(it.value) + " nell'indice " + basis + ".</p>";
     if (it.note) html += "<p>" + esc(it.note) + "</p>";
-    else if (it.time) html += "<p>Dato delle " + esc(it.time) + "</p>";
-    const s = it.other ? null : linkedStory(it.code);
-    if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(s.title) + "</a></p>";
+    else if (it.time) html += "<p>Dato delle " + esc(it.time) + ".</p>";
+    const s = linkedStory(it.code);
+    if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
     $("detail").innerHTML = html;
   }
   function drawMap(focusSel) {
@@ -51,11 +50,11 @@
       return;
     }
     const items = G.mapItems(wt, tm, state.view);
-    if (!items.some((x) => x.code === state.sel)) state.sel = (items.find((x) => !x.other) || {}).code || "";
+    if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
     G.drawMap($("map"), items, { interactive: true, selected: state.sel });
-    const basis = state.view === "europa" ? "MSCI Europe" : "MSCI ACWI";
-    const vari = tm && tm.asOf ? " Variazioni: " + (tm.label ? lowFirst(tm.label) + ", " : "") + G.when(tm.asOf) + "." : " Variazioni non disponibili.";
-    $("map-sub").textContent = "Ogni quadrato è una Borsa: l'area è il suo peso nell'indice " + basis + " (dati MSCI al " + G.dayOnly(wt.asOf) + "), il colore la variazione dell'ultima seduta." + vari;
+    const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
+    const when = tm && tm.asOf ? " Dati: " + (tm.label ? lowFirst(tm.label) + ", " : "") + G.when(tm.asOf) + "." : "";
+    $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ". Verde se l'ultima seduta è salita, rosso se è scesa." + when;
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
@@ -83,37 +82,36 @@
     const rows = c.items.map((it) => {
       const tone = G.tone(it, key);
       const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(" pb", "") : "";
-      return '<tr><th scope="row">' + esc(short(it.name).toUpperCase()) + (it.note ? "<small>" + esc(it.note) + "</small>" : "") + "</th><td>" +
-        esc(G.cleanValue(it.value) || "—") + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
+      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (it.note ? "<small>" + esc(it.note) + "</small>" : "") + "</th><td>" +
+        esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
     }).join("");
     $(target).innerHTML = '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
       "</th></tr></thead><tbody>" + rows + "</tbody></table>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
   function renderAgenda() {
-    if (!ag || !(ag.items || []).length) { $("ag").innerHTML = '<p class="t-na">Agenda non disponibile.</p>'; return; }
+    if (!ag || !(ag.items || []).length) { $("ag").innerHTML = '<p class="t-na">L\'agenda di oggi non è ancora disponibile.</p>'; return; }
     const today = !ag.date || String(ag.date).slice(0, 10) === G.dayKey(new Date());
     const now = G.romeNow().hm;
     const items = ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     const next = today ? items.find((it) => it.impact === "alto" && it.time && it.time >= now) : null;
-    $("next").innerHTML = next ? "prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b>" : "";
-    $("ag-h").textContent = today ? "AGENDA DI OGGI" : "AGENDA DEL " + G.dayOnly(ag.date).toUpperCase();
+    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b>" : "";
+    $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
     $("ag").innerHTML = '<ol class="t-agenda">' + items.map((it) => {
       const past = today && it.time && it.time < now;
-      const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "prec. " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
+      const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
       const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
       return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
-        '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(imp.toUpperCase()) + "</span></li>";
+        '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(G.cap(imp)) + "</span></li>";
     }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
   }
 
   function renderNews() {
-    const st = ((ed && ed.stories) || []).slice().sort((a, b) => new Date(b.updated) - new Date(a.updated)).slice(0, 8);
+    const st = ((ed && ed.stories) || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 8);
     if (!st.length) { $("nw").innerHTML = '<p class="t-na">Nessuna notizia disponibile.</p>'; return; }
     $("nw").innerHTML = '<ul class="t-news">' + st.map((s) => {
       const n = (s.sources || []).length, a = G.counts(s.sources).allineata;
-      return '<li><span class="tm">' + esc(G.isToday(s.updated) ? G.hm2(s.updated) : G.day(s.updated).toUpperCase()) + '</span><a href="' + G.storyUrl(s) + '">' + esc(s.title) +
-        '</a><span class="ag" title="' + a + " testate su " + n + ' concordano">' + a + "/" + n + "</span></li>";
+      return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + '</a><span class="ag">' + a + " su " + n + " concordano</span></li>";
     }).join("") + "</ul>";
   }
 
@@ -126,7 +124,7 @@
     }
   }
 
-  // ---------- riga di comando e tasti funzione ----------
+  // ---------- sezioni, comandi e tasti funzione ----------
   const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
@@ -145,7 +143,7 @@
     else if (c === "MAPPA MONDO" || c === "MONDO") { setView("mondo"); go("map-panel"); }
     else if (PANELS[c]) go(PANELS[c]);
     else ok = false;
-    $("cmd-help").textContent = ok ? "" : "Comando non riconosciuto. Prova: MAPPA MONDO, MAPPA EUROPA, INDICI, VALUTE, TASSI, MATERIE PRIME, AGENDA, NOTIZIE.";
+    $("cmd-help").textContent = ok ? "" : "Non trovato. Prova: mappa mondo, mappa europa, indici, valute, tassi, materie prime, agenda, notizie.";
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
@@ -186,22 +184,24 @@
     sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: "it" });
     wrap.appendChild(sc);
     box.appendChild(wrap);
-    $("live-btn").textContent = "Nascondi prezzi in diretta";
+    $("live-btn").textContent = "Nascondi i prezzi in diretta";
+    $("live-btn").setAttribute("aria-expanded", "true");
   }
-  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = "Mostra prezzi in diretta"; }
+  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = "Prezzi in diretta"; $("live-btn").setAttribute("aria-expanded", "false"); }
   $("live-btn").addEventListener("click", () => {
     if ($("tv").childElementCount) { unloadTV(); G.ls.set("gerico.live", false); }
     else { loadTV(); G.ls.set("gerico.live", true); }
   });
+  $("live-btn").setAttribute("aria-expanded", "false");
   if (G.ls.get("gerico.live", false)) loadTV();
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
   drawMap(false);
-  table("indici", ["INDICE", "ULTIMO", "VAR %"], "ix");
-  table("valute", ["COPPIA", "ULTIMO", "VAR %"], "fx");
-  table("obbligazioni", ["TITOLO", "REND.", "PB"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
-  table("materie", ["MATERIA", "ULTIMO", "VAR %"], "cm");
+  table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
+  table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
+  table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
+  table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
   renderNews();
   renderStatus();

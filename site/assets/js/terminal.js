@@ -58,6 +58,7 @@
     const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
     $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
+    G.seg(document.querySelector(".t-seg"));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
   }

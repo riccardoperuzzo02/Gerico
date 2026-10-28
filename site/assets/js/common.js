@@ -192,13 +192,76 @@
     if (t) return t === "dark";
     return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches;
   };
+  G.reduced = () => !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+  // righe che scorrono di lato: sfumatura a destra solo se c'è altro da vedere
+  G.watchRow = (row) => {
+    if (!row || row._fade) return;
+    row._fade = () => row.classList.toggle("has-more", row.scrollWidth - row.clientWidth - row.scrollLeft > 4);
+    row.addEventListener("scroll", row._fade, { passive: true });
+    row._fade();
+  };
+
+  // controllo segmentato: un indicatore scivola sotto la scelta attiva.
+  // Si animano solo transform e opacity: per la larghezza si usa FLIP (si parte scalati e si torna a scala 1).
+  G.seg = (box, instant) => {
+    if (!box) return;
+    let ind = box.querySelector(":scope > .seg-ind");
+    if (!ind) {
+      ind = document.createElement("span");
+      ind.className = "seg-ind";
+      ind.setAttribute("aria-hidden", "true");
+      box.prepend(ind);
+    }
+    const on = box.querySelector(':scope > [aria-current="page"], :scope > [aria-pressed="true"]');
+    if (!on || !on.offsetWidth) { ind.style.opacity = "0"; ind._pos = null; return; }
+    const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos;
+    ind.style.opacity = "";
+    ind.style.width = w + "px";
+    if (prev && !instant && !G.reduced() && (prev.x !== x || prev.w !== w)) {
+      ind.style.transition = "none";
+      ind.style.transform = "translateX(" + prev.x + "px) scaleX(" + (prev.w / w).toFixed(4) + ")";
+      void ind.offsetWidth;
+      ind.style.transition = "";
+    }
+    ind.style.transform = "translateX(" + x + "px)";
+    ind._pos = { x, w };
+    box.classList.add("ready");
+    // se il binario scorre, la scelta attiva resta in vista
+    if (box.scrollWidth > box.clientWidth + 1) {
+      const behavior = instant || G.reduced() ? "auto" : "smooth";
+      if (x - 12 < box.scrollLeft) box.scrollTo({ left: x - 12, behavior });
+      else if (x + w + 12 > box.scrollLeft + box.clientWidth) box.scrollTo({ left: x + w + 12 - box.clientWidth, behavior });
+    }
+    G.watchRow(box);
+    box._fade();
+  };
+
+  // intestazione: la riga sottile e il titolo piccolo compaiono quando il titolo grande passa sotto
+  G.watchTop = () => {
+    const top = document.querySelector(".top");
+    if (!top || !window.IntersectionObserver) return;
+    let target = document.getElementById("large-title"), margin = "-" + top.offsetHeight + "px 0px 0px 0px";
+    if (!target) {
+      target = document.createElement("div");
+      target.className = "top-sentinel";
+      target.setAttribute("aria-hidden", "true");
+      document.body.prepend(target);
+      margin = "0px";
+    }
+    new IntersectionObserver(([e]) => {
+      const on = !e.isIntersecting && e.boundingClientRect.top < top.offsetHeight;
+      top.classList.toggle("scrolled", on);
+      document.documentElement.classList.toggle("scrolled", on);
+    }, { rootMargin: margin }).observe(target);
+  };
+
   G.initPrefs = () => {
     const html = document.documentElement;
-    const SIZES = ["normale", "grande", "molto grande"];
+    const groups = (sel) => new Set(Array.from(document.querySelectorAll(sel)).map((b) => b.parentElement));
     const applySize = (s) => {
       html.classList.toggle("size-1", s === 1); html.classList.toggle("size-2", s === 2);
       document.querySelectorAll("[data-size-set]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.sizeSet) === s)));
-      document.querySelectorAll("[data-size]").forEach((b) => b.setAttribute("aria-label", "Dimensione del testo: " + SIZES[s]));
     };
     const applyTheme = () => {
       const dark = G.isDark();
@@ -209,39 +272,57 @@
     document.querySelectorAll("[data-size-set]").forEach((b) => b.addEventListener("click", () => {
       const s = Number(b.dataset.sizeSet) || 0;
       G.ls.set("gerico.size", s); applySize(s);
-      window.dispatchEvent(new Event("resize"));
-    }));
-    document.querySelectorAll("[data-size]").forEach((b) => b.addEventListener("click", () => {
-      const s = (G.ls.get("gerico.size", 0) + 1) % 3;
-      G.ls.set("gerico.size", s); applySize(s);
+      groups("[data-size-set]").forEach((g) => G.seg(g));
       window.dispatchEvent(new Event("resize"));
     }));
     document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
       G.ls.set("gerico.theme", b.dataset.themeSet);
       html.setAttribute("data-theme", b.dataset.themeSet);
       applyTheme();
+      groups("[data-theme-set]").forEach((g) => G.seg(g));
     }));
 
-    // menu dell'intestazione
+    // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
+    document.addEventListener("touchstart", () => {}, { passive: true });
+
+    // il menu è un dialog: tiene il focus dentro, si chiude con Esc, toccando fuori o con il pulsante
     const btn = document.querySelector(".menu-btn"), menu = document.getElementById("menu");
-    if (btn && menu) {
-      const set = (open) => {
-        menu.hidden = !open;
-        btn.setAttribute("aria-expanded", String(open));
+    if (btn && menu && typeof menu.showModal === "function") {
+      const open = () => {
+        if (menu.open) return;
+        menu.classList.remove("closing");
+        menu.showModal();
+        btn.setAttribute("aria-expanded", "true");
+        menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
       };
-      btn.addEventListener("click", () => set(menu.hidden));
-      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !menu.hidden) { set(false); btn.focus(); } });
-      document.addEventListener("click", (e) => { if (!menu.hidden && !menu.contains(e.target) && !btn.contains(e.target)) set(false); });
+      const close = () => {
+        if (!menu.open || menu.classList.contains("closing")) return;
+        btn.setAttribute("aria-expanded", "false");
+        const done = () => { menu.classList.remove("closing"); menu.close(); btn.focus({ preventScroll: true }); };
+        menu.classList.add("closing");
+        const anims = G.reduced() || !menu.getAnimations ? [] : menu.getAnimations();
+        if (!anims.length) return done();
+        Promise.all(anims.map((a) => a.finished)).then(done, done);
+      };
+      btn.addEventListener("click", () => (menu.open ? close() : open()));
+      menu.addEventListener("cancel", (e) => { e.preventDefault(); close(); });
+      menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
+      menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
+      // la pagina in cui sei è segnata nel menu
+      const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
+      menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
     }
 
-    // sezioni che scorrono: sfumatura a destra solo se c'è altro da vedere
-    document.querySelectorAll(".sections").forEach((nav) => {
-      const upd = () => nav.classList.toggle("has-more", nav.scrollWidth - nav.clientWidth - nav.scrollLeft > 4);
-      nav.addEventListener("scroll", upd, { passive: true });
-      window.addEventListener("resize", upd);
-      G.watchSections = upd;
-      upd();
+    document.querySelectorAll(".chips").forEach(G.watchRow);
+    let rz = 0;
+    window.addEventListener("resize", () => {
+      cancelAnimationFrame(rz);
+      rz = requestAnimationFrame(() => {
+        document.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        document.querySelectorAll(".chips").forEach((r) => r._fade && r._fade());
+      });
     });
+    G.watchTop();
   };
 
   // ---------- mappa a quadrati (treemap squarified) ----------

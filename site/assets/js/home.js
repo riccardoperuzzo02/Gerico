@@ -23,6 +23,8 @@
     G.setEdition(lastRun);
     if (G.hoursAgo(lastRun) > 30) {
       $("large-title").textContent = "Ultima edizione";
+      const tt = document.querySelector(".top-title");
+      if (tt) tt.textContent = "Ultima edizione";
       $("notice").innerHTML = '<p class="notice">Questa edizione è di ' + esc(G.longDay(lastRun)) + " alle " + esc(G.hm(lastRun)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
     }
   }

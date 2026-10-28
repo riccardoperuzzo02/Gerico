@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261028">
 <script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s)}catch(e){}</script>
 </head>
 <body class="term">
@@ -29,17 +29,9 @@
 <div class="wrap top-row">
 <a class="brand t-brand" href="index.html" aria-label="GERICO, prima pagina"><img src="assets/img/gerico-mark-dark.svg" alt="" width="28" height="28"><span>GERICO Terminal</span></a>
 <p class="edition" id="clock"></p>
-<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
+<button class="menu-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
 </div>
-<div class="menu" id="menu" hidden>
-<div class="wrap menu-in">
-<nav class="menu-links" aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">Mercati e Terminal</a><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
-<div class="opts">
-<div class="opt" role="group" aria-label="Dimensione del testo"><span>Testo</span><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div>
-</div>
-</div>
-</div>
-<nav class="wrap" aria-label="Sezioni del Terminal"><div class="sections" id="keys">
+<nav class="wrap" aria-label="Sezioni del Terminal"><div class="chips" id="keys">
 <button type="button" data-cmd="MAPPA"><span class="fk">F1</span>Mappa</button>
 <button type="button" data-cmd="INDICI"><span class="fk">F2</span>Indici</button>
 <button type="button" data-cmd="VALUTE"><span class="fk">F3</span>Valute</button>
@@ -49,6 +41,14 @@
 <button type="button" data-cmd="NOTIZIE"><span class="fk">F7</span>Notizie</button>
 </div></nav>
 </header>
+<dialog class="menu" id="menu" aria-labelledby="menu-t">
+<div class="menu-in">
+<div class="grab" aria-hidden="true"></div>
+<div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+<nav class="menu-links" aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">Mercati e Terminal</a><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
+<div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
+</div>
+</dialog>
 
 <div class="wrap t-tools">
 <form class="t-cmd" id="cmd-form">
@@ -69,9 +69,9 @@
 <section class="t-panel" id="map-panel" aria-labelledby="map-h" tabindex="-1">
 <div class="t-headrow">
 <h2 id="map-h">Mappa dei mercati</h2>
-<div class="t-views" role="group" aria-label="Vista della mappa">
-<button class="t-btn" type="button" data-view="mondo" aria-pressed="true">Mondo</button>
-<button class="t-btn" type="button" data-view="europa" aria-pressed="false">Europa</button>
+<div class="seg seg-fill t-seg" role="group" aria-label="Vista della mappa">
+<button type="button" data-view="mondo" aria-pressed="true">Mondo</button>
+<button type="button" data-view="europa" aria-pressed="false">Europa</button>
 </div>
 </div>
 <p class="t-sub" id="map-sub">Ogni quadrato è una Borsa: più è grande, più pesa nell'indice mondiale MSCI ACWI.</p>
@@ -98,7 +98,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js"></script>
-<script src="assets/js/terminal.js"></script>
+<script src="assets/js/common.js?v=20261028"></script>
+<script src="assets/js/terminal.js?v=20261028"></script>
 </body>
 </html>

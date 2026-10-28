@@ -5,10 +5,10 @@ L'app è l'artifact https://claude.ai/artifact/NuWHrmRAhg5LLw3YU48MfB e legge il
 
 Documenti (i campi esistenti non si tolgono e non si rinominano):
 - "stories/<id>", id leggibile e stabile (es. "2026-10-07-yemen-aden-riad"):
-  title (neutro, chi ha fatto cosa e dove), section ("mondo" | "italia" | "economia" | "mercati" | "tecnologia"), rank (1 = più importante), status ("live" | "archived"),
-  summary (2-3 frasi), facts [{text, n}] (n = quante testate fra le fonti della storia riportano davvero quel fatto), divergences [{point, positions: [{who: [testate], says}]}],
+  title (una frase sola, al massimo 80 caratteri, niente punto e virgola: chi ha fatto cosa e dove, in modo neutro), section ("mondo" | "italia" | "economia" | "mercati" | "tecnologia"), rank (1 = più importante), status ("live" | "archived"),
+  summary (al massimo 2 frasi e 300 caratteri), facts [{text, n, who}] (un fatto per voce, in una frase di al massimo 200 caratteri; n = quante testate fra le fonti della storia riportano davvero quel fatto; who = i nomi di quelle testate; niente testate tra parentesi nel testo), divergences [{point, positions: [{who: [testate], says}]}],
   view (il parere di GERICO, 2 paragrafi brevi separati da una riga vuota), open [domande aperte],
-  sources [{name, kind, country, area, url, angle, stance, at | date}], firstSeen, updated (ISO 8601 con fuso, es. 2026-10-07T18:48:00+02:00), change (una riga sulla novità di questo giro; "" se nessuna),
+  sources [{name, kind, country, area, url, angle, stance, at | date}], firstSeen, updated (ISO 8601 con fuso, es. 2026-10-07T18:48:00+02:00), change (una riga sulla novità di questo giro; "" per una storia nuova o senza novità: «Prima notizia» va solo in history),
   tags [2-4 temi brevi e stabili, con la maiuscola: "Iran", "Ucraina", "Medio Oriente", "BCE", "Fed", "Titoli di Stato", "Petrolio", "Conti pubblici", "Energia", "Francia", "Germania", "Spagna", "Stati Uniti"... riusa sempre la stessa forma],
   history [{at, text}] (dal più recente; al massimo 10 voci; una voce per ogni giro con una novità vera),
   notCovered [nomi delle testate dell'elenco fisso che hai controllato e che non ne parlano].
@@ -49,7 +49,8 @@ PROCEDURA
    - notCovered (solo prime 5 storie): le testate dell'elenco fisso che hai davvero controllato, sulla prima pagina o con una ricerca mirata, senza trovare la notizia. Non metterci quelle che non sei riuscito ad aprire.
    - tags: 2-4, dalla lista comune.
    - Quando la novità principale cambia, aggiorna anche title e summary: titolo e sintesi parlano sempre dello stesso fatto.
-   - history: storia nuova = una voce {at: adesso, text: "Prima notizia: ..."}; storia aggiornata = aggiungi in testa {at: adesso, text: la novità} e tieni le ultime 10. change = la stessa novità.
+   - history: storia nuova = una voce {at: adesso, text: "Prima notizia: ..."} e change = ""; storia aggiornata = aggiungi in testa {at: adesso, text: la novità} e tieni le ultime 10, change = la stessa novità.
+   - Quando riscrivi una storia salvata con le regole vecchie, porta titolo, sintesi e fatti alle regole di adesso: titolo breve senza punto e virgola, sintesi di due frasi, un fatto per voce con who.
    - Parere di GERICO: primo paragrafo, cosa è accertato e dove le letture divergono; secondo, perché conta e cosa guardare. Fatto separato dall'interpretazione, termini contestati attribuiti a chi li usa, nessuna presa di posizione politica, nessun consiglio di investimento.
 6. Mercati, solo da fonti con la data di oggi (ANSA economia, Reuters via Internazionale, Teleborsa, Il Sole 24 Ore, CNBC, Axios). Mai Google Finance né dati senza data; mai il connettore Alpha Vantage (25 richieste al giorno).
    - indici: Ftse Mib e principali Borse europee, l'ultima chiusura di Wall Street (Dow, S&P 500, Nasdaq) e, la mattina, Tokyo e Hong Kong. La mattina la chiusura di Wall Street sta in un articolo di ieri sera o di stamattina: cerca «Wall Street chiude» su Teleborsa o ANSA economia, oppure «stock market today» di CNBC con la data di ieri nell'indirizzo.

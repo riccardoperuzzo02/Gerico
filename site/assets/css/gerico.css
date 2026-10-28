@@ -235,7 +235,9 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100svh - var(--t
 /* ---------- prima pagina ---------- */
 .home { display: grid; gap: 0 56px; padding-bottom: 32px; }
 @media (min-width: 1000px) { .home { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; } }
-.feed { min-width: 0; max-width: 720px; }
+.feed { position: relative; min-width: 0; max-width: 720px; }
+.home { overflow-x: clip; }
+.feed-ghost { position: absolute; left: 0; overflow: hidden; pointer-events: none; }
 .large { padding-top: 10px; }
 .large h1 { font-size: 2.125rem; line-height: 1.1; font-weight: 750; letter-spacing: -0.022em; }
 @media (min-width: 760px) { .large { padding-top: 26px; } .large h1 { font-size: 2.5rem; } }
@@ -592,6 +594,10 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .t-agenda li.hi .tm { color: var(--t-accent); }
 .t-agenda li.next { margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 10px; background: rgba(240, 180, 76, 0.1); border-top-color: transparent; }
 .t-agenda li.next + li { border-top-color: transparent; }
+.t-agenda li.next.soon { position: relative; }
+.t-agenda li.next.soon::before { content: ""; position: absolute; left: 0; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: var(--t-accent); }
+.t-next.soon::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: var(--t-accent); vertical-align: 1px; }
+.t-table td.mv { min-width: 6.5ch; }
 .t-agenda .ev small { display: block; margin-top: 2px; font-size: 0.8125rem; color: var(--t-ink-3); }
 .t-agenda .im { justify-self: end; font-size: 0.75rem; }
 .t-agenda .im.alto { padding: 2px 8px; border-radius: 999px; background: var(--t-accent); color: #090C12; font-weight: 700; }
@@ -628,6 +634,21 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
   a { color: #000000 !important; }
   .srcs a::after { content: " (" attr(href) ")"; font-weight: 400; font-size: 9pt; color: #444444; word-break: break-all; }
 }
+
+/* ---------- intro: il nome al centro che va al suo posto, alla prima apertura in una scheda ---------- */
+.intro-screen, .intro-word { display: none; }
+html.intro-run .intro-screen {
+  display: block; position: fixed; inset: 0; z-index: 90; background: var(--ground);
+  animation: intro-safety 0s linear 3s forwards;
+}
+html.intro-run .intro-word {
+  display: block; position: fixed; left: 50%; top: 50%; z-index: 91; transform: translate(-50%, -50%);
+  color: var(--brand); font-size: 48px; font-weight: 800; letter-spacing: 0.07em; line-height: 1; white-space: nowrap;
+  pointer-events: none; animation: intro-safety 0s linear 3s forwards;
+}
+html.intro-run .top .brand { opacity: 0; animation: brand-safety 0s linear 3s forwards; }
+@keyframes intro-safety { to { visibility: hidden; } }
+@keyframes brand-safety { to { opacity: 1; } }
 
 /* ---------- sagome grigie mentre i dati arrivano ---------- */
 .sk { display: flow-root; }
@@ -703,8 +724,12 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   /* entrata dei contenuti */
   .reveal { animation: rise 320ms var(--ease) backwards; animation-delay: calc(var(--i, 0) * 25ms); }
   .swap { animation: fade-in 200ms var(--ease) backwards; }
-  .tiles-in .tile { animation: fade-in 420ms var(--ease) backwards; animation-delay: calc(var(--k, 0) * 20ms); }
-  .tiles-in ~ .t-ring { animation: fade-in 300ms var(--ease) 300ms backwards; }
+  .t-agenda li.next.soon::before, .t-next.soon::before { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+
+  /* cambio di tema: il nuovo colore entra a cerchio (il cerchio lo anima lo script) */
+  html.theme-vt::view-transition-old(root), html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+  html.theme-vt .story-main h1 { view-transition-name: none; }
   .sk i::after, #st-title:empty::after { animation: shimmer 1.4s ease-in-out infinite; }
 
   /* il titolo grande si rimpicciolisce mentre passa sotto l'intestazione */
@@ -721,6 +746,8 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
 @keyframes shimmer { to { transform: translateX(100%); } }
 @keyframes shrink-title { to { transform: scale(0.86); opacity: 0.15; } }
+@keyframes pulse-dot { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.7); opacity: 0.35; } }
+
 @supports (interpolate-size: allow-keywords) { :root { interpolate-size: allow-keywords; } }
 
 @media (prefers-reduced-motion: reduce) {

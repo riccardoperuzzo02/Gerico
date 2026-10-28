@@ -167,13 +167,28 @@
 
   // ---------- pannelli che si aprono e si chiudono ----------
   // il pulsante ha aria-expanded e aria-controls; il pannello ha la classe collapse
+  // l'altezza si anima in CSS dove c'è interpolate-size; altrimenti la misura lo script
+  const autoHeight = !!(window.CSS && CSS.supports && CSS.supports("interpolate-size", "allow-keywords"));
   G.toggle = (btn, open) => {
     const panel = document.getElementById(btn.getAttribute("aria-controls"));
     if (!panel) return false;
     if (open === undefined) open = btn.getAttribute("aria-expanded") !== "true";
     btn.setAttribute("aria-expanded", String(open));
-    panel.classList.toggle("open", open);
     panel.inert = !open;
+    if (autoHeight || G.reduced()) { panel.classList.toggle("open", open); return open; }
+    const from = panel.getBoundingClientRect().height;
+    panel.classList.toggle("open", open);
+    const to = open ? panel.scrollHeight : 0;
+    panel.style.height = from + "px";
+    void panel.offsetHeight;
+    panel.style.height = to + "px";
+    const end = (e) => {
+      if (e && (e.target !== panel || e.propertyName !== "height")) return;
+      panel.style.height = "";
+      panel.removeEventListener("transitionend", end);
+    };
+    panel.addEventListener("transitionend", end);
+    setTimeout(end, 400);
     return open;
   };
 
@@ -293,7 +308,11 @@
         menu.classList.remove("closing");
         menu.showModal();
         btn.setAttribute("aria-expanded", "true");
-        menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        // gli indicatori si misurano solo la prima volta (o dopo un ridimensionamento), nel fotogramma successivo
+        requestAnimationFrame(() => menu.querySelectorAll(".seg").forEach((s) => {
+          const ind = s.querySelector(":scope > .seg-ind");
+          if (!ind || !ind._pos) G.seg(s, true);
+        }));
       };
       const close = () => {
         if (!menu.open || menu.classList.contains("closing")) return;
@@ -306,6 +325,15 @@
       };
       btn.addEventListener("click", () => (menu.open ? close() : open()));
       menu.addEventListener("cancel", (e) => { e.preventDefault(); close(); });
+      // il focus gira dentro il pannello: dall'ultimo elemento si torna al primo e viceversa
+      menu.addEventListener("keydown", (e) => {
+        if (e.key !== "Tab") return;
+        const f = Array.from(menu.querySelectorAll("a[href], button:not([disabled])")).filter((x) => x.offsetParent !== null);
+        if (!f.length) return;
+        const firstEl = f[0], lastEl = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
+      });
       menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
       menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
       // la pagina in cui sei è segnata nel menu
@@ -379,7 +407,7 @@
     const W = el.clientWidth, H = el.clientHeight;
     if (!W || !H) return;
     const rects = G.squarify(items, W, H);
-    el.innerHTML = rects.map((r) => {
+    el.innerHTML = rects.map((r, k) => {
       const has = typeof r.chg === "number";
       const cg = has ? G.pct(r.chg) : "";
       const label = r.name + (r.index ? ", " + r.index : "") + ", " + (has ? cg : "nessun dato oggi") + ", peso " + G.wt(r.value);
@@ -397,7 +425,7 @@
       } else if (size === "tiny") {
         inner = '<span class="a"><span class="nm">' + r.code + "</span></span>";
       }
-      const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(r.chg);
+      const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(r.chg) + ";--k:" + k;
       const cls = "tile " + size + (has ? "" : " nodata");
       if (opts.interactive) {
         return '<button type="button" class="' + cls + '" data-code="' + r.code + '" aria-pressed="' + (r.code === opts.selected) + '" aria-label="' + G.esc(label) + '" style="' + style + '">' + inner + "</button>";

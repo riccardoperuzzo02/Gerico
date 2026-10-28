@@ -62,14 +62,18 @@
       ((s.divergences || []).length ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
+  // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
+  let first = true;
   function leadHTML(s, showSection) {
-    return '<article class="lead reveal" style="--i:0"><h2>' + link(s) + "</h2>" +
+    return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0"><h2>' + link(s) + "</h2>" +
       '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s, showSection) + "</article>";
   }
   function itemHTML(s, showSection, i) {
-    return '<li class="item' + (i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
+    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
   }
   function renderFeed() {
+    const feed = $("feed");
+    if (!first) { feed.classList.remove("swap"); void feed.offsetWidth; feed.classList.add("swap"); }
     const list = visible();
     if (!list.length) {
       $("feed").innerHTML = state.section === "seguiti"
@@ -78,8 +82,9 @@
       return;
     }
     const all = state.section === "tutte" || state.section === "seguiti";
-    $("feed").innerHTML = leadHTML(list[0], all) +
+    feed.innerHTML = leadHTML(list[0], all) +
       (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "");
+    first = false;
   }
 
   // ---------- mercati: un riquadro con 5 numeri ----------
@@ -107,23 +112,22 @@
       return '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
         '</td><td class="mv ' + G.tone(it, key) + '">' + esc(mv) + "</td></tr>";
     }).join("");
-    $("side").innerHTML = '<section class="mk-box" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
+    $("side").innerHTML = '<section class="mk-box reveal" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
       '<p class="when">' + esc(G.cap(mk.label || "")) + (mk.asOf ? ", " + esc(G.when(mk.asOf)) : "") + "</p>" +
       '<table><tbody>' + tr + '</tbody></table><a class="more" href="terminal.html">Tutti i mercati e l\'agenda</a></section>';
   }
 
   // ---------- eventi ----------
   window.addEventListener("hashchange", () => { state.section = sectionFromHash(); markNav(); renderFeed(); });
-  // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva
-  $("feed").addEventListener("click", (e) => {
-    const a = e.target.closest("a[data-id]");
-    if (!a) return;
+  // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
+  // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
+  document.addEventListener("click", (e) => {
     document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; });
-    const h = a.closest("h2");
-    if (h) h.style.viewTransitionName = "story-title";
+    const a = e.target.closest("#feed a[data-id]");
+    if (!a) return;
+    a.closest("h2").style.viewTransitionName = "story-title";
     try { sessionStorage.setItem("gerico.vt", JSON.stringify({ id: a.dataset.id, title: a.textContent, sec: a.dataset.sec })); } catch (err) { /* niente */ }
   });
-  window.addEventListener("pageshow", () => document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; }));
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";

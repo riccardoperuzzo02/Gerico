@@ -10,6 +10,13 @@
   tick();
   setInterval(tick, 30000);
 
+  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti)
+  const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
+  $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
+    '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
+    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
+    '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
+
   const [ed, mk, ag, tm, wt] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights")]);
   const state = {
     view: G.ls.get("gerico.mapView", "mondo") === "europa" ? "europa" : "mondo",
@@ -17,12 +24,6 @@
   };
 
   // ---------- mappa ----------
-  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati
-  const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
-  $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
-    '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
-    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
-    '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
 
   function linkedStory(code) {
     const stories = (ed && ed.stories) || [];
@@ -45,7 +46,42 @@
     if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
     $("detail").innerHTML = html;
   }
-  function drawMap(focusSel) {
+  // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
+  const SPRING = window.CSS && CSS.supports && CSS.supports("animation-timing-function", "linear(0, 1)")
+    ? getComputedStyle(document.documentElement).getPropertyValue("--spring").trim() || "ease-out" : "cubic-bezier(0.2, 0.8, 0.2, 1)";
+  const rect = (el) => ({ x: el.offsetLeft, y: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight });
+  function snapshot() {
+    const m = {};
+    $("map").querySelectorAll(".tile").forEach((el) => { m[el.dataset.code] = rect(el); });
+    return m;
+  }
+  function flip(before) {
+    $("map").querySelectorAll(".tile").forEach((el) => {
+      const a = before[el.dataset.code], b = rect(el);
+      if (!a) { el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, easing: "ease-out" }); return; }
+      if (Math.abs(a.x - b.x) < 1 && Math.abs(a.y - b.y) < 1 && Math.abs(a.w - b.w) < 1 && Math.abs(a.h - b.h) < 1) return;
+      el.animate([
+        { transformOrigin: "0 0", transform: "translate(" + (a.x - b.x) + "px, " + (a.y - b.y) + "px) scale(" + (a.w / b.w).toFixed(4) + ", " + (a.h / b.h).toFixed(4) + ")" },
+        { transformOrigin: "0 0", transform: "none" }
+      ], { duration: 380, easing: SPRING });
+    });
+  }
+  function placeRing(instant) {
+    const ring = $("ring"), el = $("map").querySelector('.tile[aria-pressed="true"]');
+    if (!ring) return;
+    if (!el) { ring.style.opacity = "0"; return; }
+    const r = rect(el);
+    if (instant) ring.classList.remove("ready");
+    ring.style.transform = "translate(" + r.x + "px, " + r.y + "px)";
+    ring.style.width = r.w + "px";
+    ring.style.height = r.h + "px";
+    ring.style.opacity = "1";
+    ring.parentElement.classList.add("has-ring");
+    if (instant) { void ring.offsetWidth; ring.classList.add("ready"); }
+  }
+  let firstDraw = true;
+  // how: "flip" cambiando vista, "select" scegliendo un quadrato, niente al primo disegno e al ridimensionamento
+  function drawMap(focusSel, how) {
     if (!wt) {
       $("map-sub").textContent = "I pesi della mappa non sono disponibili in questo momento.";
       $("map").innerHTML = "";
@@ -54,7 +90,14 @@
     }
     const items = G.mapItems(wt, tm, state.view);
     if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
+    const before = how === "flip" && !G.reduced() ? snapshot() : null;
     G.drawMap($("map"), items, { interactive: true, selected: state.sel });
+    if (firstDraw) {
+      firstDraw = false;
+      if (!G.reduced()) { $("map").classList.add("tiles-in"); setTimeout(() => $("map").classList.remove("tiles-in"), 1000); }
+    }
+    if (before) flip(before);
+    placeRing(!how);
     const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
     $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
@@ -62,18 +105,25 @@
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
   }
-  function setView(v) { state.view = v; G.ls.set("gerico.mapView", v); drawMap(); }
+  function setView(v) { if (v === state.view) return; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false, "flip"); }
   $("map").addEventListener("click", (e) => {
     const b = e.target.closest("[data-code]");
     if (!b) return;
     state.sel = b.dataset.code;
     G.ls.set("gerico.mapSel", state.sel);
-    drawMap(true);
+    drawMap(true, "select");
   });
   document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+  let size = "";
   if (window.ResizeObserver) {
     let rt;
-    new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => drawMap(false), 100); }).observe($("map"));
+    new ResizeObserver(() => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        const now = $("map").clientWidth + "x" + $("map").clientHeight;
+        if (now !== size) { size = now; drawMap(false); }
+      }, 100);
+    }).observe($("map"));
   }
 
   // ---------- pannelli ----------
@@ -225,6 +275,7 @@
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
   drawMap(false);
+  size = $("map").clientWidth + "x" + $("map").clientHeight;
   table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
   table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
   table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");

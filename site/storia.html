@@ -18,6 +18,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="expect" href="#st-body" blocking="render">
 <link rel="stylesheet" href="assets/css/gerico.css?v=20261028">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s)}catch(e){}</script>
 </head>
@@ -41,7 +42,13 @@
 </dialog>
 
 <main id="main" class="wrap story" tabindex="-1">
-<div class="story-main" id="story"><p class="loading">Carico la storia…</p></div>
+<div class="story-main" id="story">
+<a class="back" id="back" href="index.html"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>Prima pagina</a>
+<p class="meta" id="st-meta"></p>
+<h1 id="st-title"></h1>
+<script>/* titolo subito al suo posto, per il passaggio animato dalla prima pagina */try{var v=JSON.parse(sessionStorage.getItem("gerico.vt")),q=new URLSearchParams(location.search).get("id");if(v&&v.id===q){document.getElementById("st-title").textContent=v.title;var m=document.createElement("span");m.className="sec";m.textContent=v.sec;document.getElementById("st-meta").appendChild(m)}}catch(e){}</script>
+<div id="st-body"><div class="sk" aria-hidden="true"><i style="width:100%"></i><i style="width:96%"></i><i style="width:90%"></i><i style="width:62%"></i><i class="h" style="width:100%;height:7.5em;margin-top:22px;border-radius:14px"></i><i class="h" style="width:55%;margin-top:36px"></i><i style="width:100%"></i><i style="width:94%"></i><i style="width:80%"></i></div><p class="sr-only" role="status">Carico la storia…</p></div>
+</div>
 <aside class="story-side only-wide" id="side" aria-label="Fonti e temi"></aside>
 </main>
 

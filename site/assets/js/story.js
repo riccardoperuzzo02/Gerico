@@ -89,20 +89,34 @@
 
   // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
   const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + wallFig + factsBlock + divBlock + viewBlock + narrow + hist + open;
+  // in due tempi: prima quello che sta nello schermo, il resto al fotogramma dopo (l'arrivo sulla pagina resta leggero)
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + wallFig + factsBlock;
+  const rest = divBlock + viewBlock + narrow + hist + open;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
   const h1 = $("st-title");
   if (h1 && h1.textContent === title && $("st-body")) {
     $("st-meta").innerHTML = metaHTML;
     $("st-body").innerHTML = body;
+    $("st-body").classList.add("reveal");
   } else {
-    $("story").innerHTML = back + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body">' + body + "</div>";
+    $("story").innerHTML = back + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
   }
-  $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcList + "</section>" : "") + linkedHTML + tagsHTML;
+  requestAnimationFrame(() => setTimeout(() => {
+    $("st-body").insertAdjacentHTML("beforeend", rest);
+    $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcList + "</section>" : "") + linkedHTML + tagsHTML;
+  }, 0));
 
   // ---------- eventi ----------
+  // arrivati dalla prima pagina, «Prima pagina» torna indietro: stessa posizione e titolo che rifà il percorso
+  let fromHome = false;
+  try {
+    const vt = JSON.parse(sessionStorage.getItem("gerico.vt") || "null");
+    const ref = document.referrer ? new URL(document.referrer) : null;
+    fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
+  } catch (err) { /* niente */ }
   document.addEventListener("click", (e) => {
+    if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }
     const t = e.target.closest(".wallbtn, .disc, #more-facts");
     if (t) {
       const isOpen = G.toggle(t);

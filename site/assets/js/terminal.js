@@ -93,7 +93,18 @@
     const now = byCode(rects);
     if (firstDraw) {
       firstDraw = false;
-      if (!G.reduced()) { $("map").classList.add("tiles-in"); setTimeout(() => $("map").classList.remove("tiles-in"), 1000); }
+      // la mappa cresce dal centro: ogni quadrato parte rimpicciolito verso il centro della mappa
+      if (!G.reduced() && rects.length) {
+        const cx = $("map").clientWidth / 2, cy = $("map").clientHeight / 2;
+        $("map").querySelectorAll(".tile").forEach((el, k) => {
+          const r = now[el.dataset.code];
+          if (!r) return;
+          const o = (cx - r.x).toFixed(1) + "px " + (cy - r.y).toFixed(1) + "px";
+          el.animate([{ opacity: 0, transform: "scale(0.55)", transformOrigin: o }, { opacity: 1, transform: "none", transformOrigin: o }],
+            { duration: 620, delay: k * 22, easing: SPRING, fill: "backwards" });
+        });
+        if ($("ring")) $("ring").animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: 560, fill: "backwards" });
+      }
     }
     if (before) flip(before, now);
     placeRing(!how, now);
@@ -125,6 +136,22 @@
     }).observe($("map"));
   }
 
+  // le percentuali contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza)
+  function countUp(root) {
+    if (G.reduced()) return;
+    const els = Array.from(root.querySelectorAll("[data-n]")).filter((el) => isFinite(Number(el.dataset.n)));
+    if (!els.length) return;
+    const final = els.map((el) => el.textContent);
+    const fmt = { pct: (v) => G.pctBare(v), "pct%": (v) => G.pct(v), bp: (v) => G.bps(Math.round(v)).replace(" pb", "") };
+    const t0 = performance.now(), D = 700;
+    const step = (t) => {
+      const p = Math.min(1, (t - t0) / D), e = 1 - Math.pow(1 - p, 3);
+      els.forEach((el, i) => { el.textContent = p < 1 ? (fmt[el.dataset.f] || String)(Number(el.dataset.n) * e) : final[i]; });
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
   // ---------- pannelli ----------
   const cls = (key) => ((mk && mk.classes) || []).find((c) => c.key === key);
   // la nota che si ripete (per esempio «Chiusura 26 ottobre») va una volta sola sotto il titolo
@@ -149,8 +176,9 @@
     const rows = c.items.map((it, i) => {
       const tone = G.tone(it, key);
       const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(" pb", "") : "";
+      const num = typeof it.chg === "number" ? ' data-n="' + it.chg + '" data-f="pct"' : typeof it.bp === "number" ? ' data-n="' + it.bp + '" data-f="bp"' : "";
       return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
-        esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
+        esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '"' + num + ">" + esc(mv) + "</td></tr>";
     }).join("");
     $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
       "</th></tr></thead><tbody>" + rows + "</tbody></table>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
@@ -163,19 +191,21 @@
     const items = ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     const next = today ? items.find((it) => it.impact === "alto" && it.time && it.time >= now) : null;
     // quanto manca al prossimo evento ad alto impatto (si aggiorna ogni 30 secondi)
-    let left = "";
+    let left = "", soon = false;
     if (next) {
       const [hh, mm] = String(next.time).split(":").map(Number);
       const mins = hh * 60 + mm - G.romeNow().min;
+      soon = mins <= 15;
       left = mins <= 0 ? "adesso" : mins < 60 ? "tra " + mins + " min" : "tra " + Math.floor(mins / 60) + " h " + String(mins % 60).padStart(2, "0") + " min";
     }
+    $("next").classList.toggle("soon", soon);
     $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b> · " + esc(left) : "";
     $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
     $("ag").innerHTML = '<ol class="t-agenda">' + items.map((it) => {
       const past = today && it.time && it.time < now;
       const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
       const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
-      return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + (it === next ? " next" : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
+      return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + (it === next ? " next" + (soon ? " soon" : "") : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
         '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(G.cap(imp)) + "</span></li>";
     }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
   }
@@ -294,4 +324,5 @@
   setInterval(renderAgenda, 30000);
   renderNews();
   renderStatus();
+  countUp(document.body);
 })();

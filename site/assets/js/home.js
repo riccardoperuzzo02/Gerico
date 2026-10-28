@@ -75,9 +75,10 @@
   function itemHTML(s, showSection, i) {
     return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
   }
-  function renderFeed() {
+  function renderFeed(viaTransition) {
     const feed = $("feed");
-    if (!first) { feed.classList.remove("swap"); void feed.offsetWidth; feed.classList.add("swap"); }
+    feed.classList.remove("swap");
+    if (!first && !viaTransition) { void feed.offsetWidth; feed.classList.add("swap"); }
     const list = visible();
     if (!list.length) {
       $("feed").innerHTML = state.section === "seguiti"
@@ -124,7 +125,35 @@
   }
 
   // ---------- eventi ----------
-  window.addEventListener("hashchange", () => { state.section = sectionFromHash(); markNav(); renderFeed(); });
+  // cambiando sezione l'elenco scorre di lato, nel verso della sezione scelta (dove il browser non lo sa fare, dissolvenza)
+  window.addEventListener("hashchange", () => {
+    const prev = state.section, next = sectionFromHash();
+    if (next === prev) return;
+    const order = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec);
+    const dir = order.indexOf(next) >= order.indexOf(prev) ? "dir-next" : "dir-prev";
+    state.section = next;
+    markNav();
+    slideFeed(dir === "dir-next" ? 1 : -1);
+  });
+  // l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro: una copia del vecchio sopra il nuovo, solo transform e opacity
+  function slideFeed(sgn) {
+    const feed = $("feed");
+    if (G.reduced() || !feed.animate) { renderFeed(); return; }
+    const ghost = feed.cloneNode(true);
+    ghost.removeAttribute("id");
+    ghost.className = "feed-ghost";
+    ghost.setAttribute("aria-hidden", "true");
+    ghost.querySelectorAll(".reveal").forEach((el) => el.classList.remove("reveal"));
+    ghost.style.top = feed.offsetTop + "px";
+    ghost.style.width = feed.offsetWidth + "px";
+    renderFeed(true);
+    feed.parentElement.appendChild(ghost);
+    ghost.style.height = feed.offsetHeight + "px";
+    const E = "cubic-bezier(0.2, 0.8, 0.2, 1)";
+    ghost.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateX(" + -18 * sgn + "%)" }], { duration: 240, easing: E, fill: "forwards" })
+      .finished.then(() => ghost.remove(), () => ghost.remove());
+    feed.animate([{ opacity: 0, transform: "translateX(" + 18 * sgn + "%)" }, { opacity: 1, transform: "none" }], { duration: 320, easing: E });
+  }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
   document.addEventListener("click", (e) => {

@@ -286,8 +286,47 @@
     }, { rootMargin: margin }).observe(target);
   };
 
+  // intro: alla prima apertura del sito in questa scheda il nome GERICO compare al centro e va al suo posto.
+  // Finché la scheda resta aperta non si rivede (memoria di sessione). Con «riduci movimento» non c'è.
+  G.intro = () => {
+    const html = document.documentElement;
+    if (!html.classList.contains("intro-run")) return;
+    const scr = document.querySelector(".intro-screen"), word = document.querySelector(".intro-word"), brand = document.querySelector(".top .brand");
+    let ended = false;
+    const end = () => {
+      if (ended) return;
+      ended = true;
+      html.classList.remove("intro-run");
+    };
+    try { sessionStorage.setItem("gerico.intro", "1"); } catch (e) { /* niente */ }
+    if (!scr || !word || !brand || !word.animate) return end();
+    const E = "cubic-bezier(0.2, 0.8, 0.2, 1)", base = "translate(-50%, -50%)", t0 = performance.now();
+    word.animate([{ opacity: 0, transform: base + " scale(0.94)" }, { opacity: 1, transform: base }], { duration: 260, easing: E, fill: "both" });
+    // il viaggio verso l'intestazione si misura con il carattere già caricato, così arriva esatto
+    const go = () => {
+      if (ended) return;
+      const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
+      const range = document.createRange();
+      range.selectNodeContents(tn || brand);
+      const b = range.getBoundingClientRect(), w = word.getBoundingClientRect();
+      const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
+      const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
+      const lag = performance.now() - t0;
+      const move = word.animate([{ transform: base }, { transform: base + " translate(" + dx.toFixed(1) + "px, " + dy.toFixed(1) + "px) scale(" + s.toFixed(4) + ")" }],
+        { duration: 520, delay: Math.max(0, 420 - lag), easing: E, fill: "both" });
+      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 380, delay: Math.max(0, 500 - lag), easing: "ease-out", fill: "both" });
+      move.finished.then(end, end);
+    };
+    const font = document.fonts && document.fonts.load ? document.fonts.load('800 48px "Atkinson Hyperlegible Next"') : Promise.resolve();
+    Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
+    // un tocco la salta
+    scr.addEventListener("pointerdown", () => { word.getAnimations().concat(scr.getAnimations()).forEach((a) => a.finish()); end(); }, { once: true });
+    setTimeout(end, 2200);
+  };
+
   G.initPrefs = () => {
     const html = document.documentElement;
+    G.intro();
     const groups = (sel) => new Set(Array.from(document.querySelectorAll(sel)).map((b) => b.parentElement));
     const applySize = (s) => {
       html.classList.toggle("size-1", s === 1); html.classList.toggle("size-2", s === 2);
@@ -306,10 +345,23 @@
       window.dispatchEvent(new Event("resize"));
     }));
     document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
-      G.ls.set("gerico.theme", b.dataset.themeSet);
-      html.setAttribute("data-theme", b.dataset.themeSet);
-      applyTheme();
-      requestAnimationFrame(() => groups("[data-theme-set]").forEach((g) => G.seg(g)));
+      const changes = (b.dataset.themeSet === "dark") !== G.isDark();
+      const apply = () => {
+        G.ls.set("gerico.theme", b.dataset.themeSet);
+        html.setAttribute("data-theme", b.dataset.themeSet);
+        applyTheme();
+        groups("[data-theme-set]").forEach((g) => G.seg(g));
+      };
+      // cambio di tema: il nuovo colore si allarga a cerchio dal pulsante toccato
+      if (!changes || !document.startViewTransition || G.reduced()) { apply(); return; }
+      const r = b.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
+      const rad = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+      document.querySelectorAll("[style*='view-transition-name']").forEach((el) => { el.style.viewTransitionName = ""; });
+      html.classList.add("theme-vt");
+      const t = document.startViewTransition(apply);
+      t.ready.then(() => html.animate({ clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + rad.toFixed(0) + "px at " + x + "px " + y + "px)"] },
+        { duration: 480, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
+      t.finished.finally(() => html.classList.remove("theme-vt"));
     }));
 
     // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
@@ -352,7 +404,7 @@
       });
       menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
       menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
-      // il primo disegno del menu si prepara quando il browser è libero: la prima apertura resta leggera
+      // il primo disegno del menu si prepara in anticipo: la prima apertura resta leggera
       const warm = () => {
         if (menu.open) return;
         menu.classList.add("warm");
@@ -360,7 +412,9 @@
         menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
         menu.classList.remove("warm");
       };
-      if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 2500 }); else setTimeout(warm, 1500);
+      // si prepara quando il dito tocca il pulsante (o il pulsante prende il focus): il lavoro si divide tra tocco e apertura
+      btn.addEventListener("pointerdown", warm, { once: true });
+      btn.addEventListener("focus", warm, { once: true });
       // la pagina in cui sei è segnata nel menu
       const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
@@ -442,11 +496,11 @@
         // senza dato: grigio con la sola sigla
         inner = size === "none" ? "" : '<span class="a"><span class="nm">' + r.code + "</span></span>";
       } else if (size === "big") {
-        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg">' + cg + "</span></span>";
+        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
       } else if (size === "med") {
-        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span></span><span class="b"><span class="cg">' + cg + "</span></span>";
+        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
       } else if (size === "small") {
-        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
+        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>" : "");
       } else if (size === "tiny") {
         inner = '<span class="a"><span class="nm">' + r.code + "</span></span>";
       }

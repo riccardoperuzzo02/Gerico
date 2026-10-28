@@ -165,6 +165,18 @@
     return out;
   };
 
+  // ---------- pannelli che si aprono e si chiudono ----------
+  // il pulsante ha aria-expanded e aria-controls; il pannello ha la classe collapse
+  G.toggle = (btn, open) => {
+    const panel = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!panel) return false;
+    if (open === undefined) open = btn.getAttribute("aria-expanded") !== "true";
+    btn.setAttribute("aria-expanded", String(open));
+    panel.classList.toggle("open", open);
+    panel.inert = !open;
+    return open;
+  };
+
   // ---------- temi seguiti ----------
   G.follows = () => G.ls.get("gerico.follows", []);
   G.toggleFollow = (t) => {

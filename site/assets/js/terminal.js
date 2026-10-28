@@ -3,7 +3,6 @@
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
-  const lowFirst = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : "");
   G.initPrefs();
 
   // ---------- orologio ----------
@@ -18,8 +17,12 @@
   };
 
   // ---------- mappa ----------
-  $("legend").innerHTML = G.BANDS.map(([c, l]) => '<span><i style="background:' + c + '"></i>' + esc(l) + "</span>").join("") +
-    '<span><i style="background:' + G.NO_DATA + '"></i>grigio: nessun dato oggi</span>';
+  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati
+  const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
+  $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
+    '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
+    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
+    '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
 
   function linkedStory(code) {
     const stories = (ed && ed.stories) || [];
@@ -53,8 +56,7 @@
     if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
     G.drawMap($("map"), items, { interactive: true, selected: state.sel });
     const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
-    const when = tm && tm.asOf ? " Dati: " + (tm.label ? lowFirst(tm.label) + ", " : "") + G.when(tm.asOf) + "." : "";
-    $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ". Verde se l'ultima seduta è salita, rosso se è scesa." + when;
+    $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
@@ -75,17 +77,32 @@
 
   // ---------- pannelli ----------
   const cls = (key) => ((mk && mk.classes) || []).find((c) => c.key === key);
+  // la nota che si ripete (per esempio «Chiusura 26 ottobre») va una volta sola sotto il titolo
+  const head = (note) => String(note || "").split(/[;,]/)[0].trim();
+  function commonNote(items) {
+    if (items.length < 2 || items.some((it) => !head(it.note))) return "";
+    const count = {};
+    items.forEach((it) => { count[head(it.note)] = (count[head(it.note)] || 0) + 1; });
+    const top = Object.keys(count).sort((a, b) => count[b] - count[a])[0];
+    return count[top] >= 2 ? top : "";
+  }
+  const ownNote = (note, common) => {
+    if (!common || head(note) !== common) return note || "";
+    return G.cap(String(note).slice(String(note).indexOf(common) + common.length).replace(/^[\s;,]+/, ""));
+  };
   function table(key, cols, target, extraNote) {
     const c = cls(key);
     if (!mk) { $(target).innerHTML = '<p class="t-na">Dati di mercato non disponibili.</p>'; return; }
     if (!c || !(c.items || []).length) { $(target).innerHTML = '<p class="t-na">' + esc((c && c.note) || "Nessun dato verificato in questo aggiornamento.") + "</p>"; return; }
-    const rows = c.items.map((it) => {
+    const common = commonNote(c.items);
+    const notes = c.items.map((it) => ownNote(it.note, common));
+    const rows = c.items.map((it, i) => {
       const tone = G.tone(it, key);
       const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(" pb", "") : "";
-      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (it.note ? "<small>" + esc(it.note) + "</small>" : "") + "</th><td>" +
+      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
         esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
     }).join("");
-    $(target).innerHTML = '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
+    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
       "</th></tr></thead><tbody>" + rows + "</tbody></table>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
@@ -106,9 +123,19 @@
     }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
   }
 
+  // solo le storie legate ai mercati: citate dai dati di mercato o nelle sezioni Mercati ed Economia, al massimo 3
   function renderNews() {
-    const st = ((ed && ed.stories) || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 8);
-    if (!st.length) { $("nw").innerHTML = '<p class="t-na">Nessuna notizia disponibile.</p>'; return; }
+    const ids = new Set();
+    ((mk && mk.classes) || []).forEach((c) => (c.items || []).forEach((it) => { if (it.story) ids.add(it.story); }));
+    ((tm && tm.indices) || []).forEach((x) => { if (x && x.story) ids.add(x.story); });
+    const st = ((ed && ed.stories) || []).filter((s) => ids.has(s.id) || s.section === "mercati" || s.section === "economia")
+      .sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 3);
+    if (!st.length) {
+      $("p-notizie").hidden = true;
+      const k = document.querySelector('[data-cmd="NOTIZIE"]');
+      if (k) k.hidden = true;
+      return;
+    }
     $("nw").innerHTML = '<ul class="t-news">' + st.map((s) => {
       const n = (s.sources || []).length, a = G.counts(s.sources).allineata;
       return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + '</a><span class="ag">' + a + " su " + n + " concordano</span></li>";
@@ -117,8 +144,7 @@
 
   function renderStatus() {
     const asOf = (tm && tm.asOf) || (mk && mk.asOf);
-    $("st-data").textContent = asOf ? "Dati di mercato: " + (mk && mk.label ? lowFirst(mk.label) + ", " : "") + G.when(asOf) : "Dati di mercato non disponibili";
-    $("st-next").textContent = "Prossimo aggiornamento: " + G.nextUpdate();
+    $("st-line").textContent = (asOf ? "Aggiornato " + G.when(asOf) : "Dati non disponibili") + " · prossimo " + G.nextUpdate();
     if (asOf && G.hoursAgo(asOf) > 30) {
       $("stale").innerHTML = '<p class="t-stale">I dati di mercato sono di ' + esc(G.longDay(asOf)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
     }

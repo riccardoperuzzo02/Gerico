@@ -5,6 +5,9 @@
   const $ = (id) => document.getElementById(id);
 
   G.initPrefs();
+  // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
+  if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
+
   const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Riprova tra qualche minuto.</p></div>';
@@ -15,14 +18,14 @@
   const firstRun = G.firstRunToday(stories);
   const state = { section: "tutte", follows: G.follows() };
 
-  // ---------- edizione e piede ----------
+  // ---------- edizione ----------
   if (lastRun) {
     G.setEdition(lastRun);
     if (G.hoursAgo(lastRun) > 30) {
+      $("large-title").textContent = "Ultima edizione";
       $("notice").innerHTML = '<p class="notice">Questa edizione è di ' + esc(G.longDay(lastRun)) + " alle " + esc(G.hm(lastRun)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
     }
   }
-  if ((ed.outlets || []).length) $("foot-outlets").textContent = "Testate lette in questa edizione: " + ed.outlets.join(", ") + ".";
 
   // ---------- sezioni (senza numeri) ----------
   const sectionFromHash = () => {
@@ -35,36 +38,34 @@
     if (state.section === "seguiti") return followed();
     return stories.filter((s) => s.section === state.section);
   };
-  function renderNav() {
+  function buildNav() {
     const items = [["tutte", "Tutte"]];
     Object.keys(G.SECTIONS).forEach((k) => { if (stories.some((s) => s.section === k)) items.push([k, G.SECTIONS[k]]); });
     if (state.follows.length) items.push(["seguiti", "Seguiti"]);
-    $("sections").innerHTML = items.map(([k, label]) =>
-      '<a href="' + (k === "tutte" ? "#" : "#" + k) + '"' + (state.section === k ? ' aria-current="page"' : "") + ">" + esc(label) + "</a>").join("");
-    if (G.watchSections) G.watchSections();
+    $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
+  }
+  function markNav() {
+    $("sections").querySelectorAll("a").forEach((a) => { if (a.dataset.sec === state.section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (G.seg) G.seg($("sections"));
   }
 
-  // ---------- notizie ----------
-  function meta(s, showSection) {
+  // ---------- notizie: titolo e una riga grigia ----------
+  function line(s, showSection) {
+    const parts = [];
+    if (showSection) parts.push('<span class="sec">' + esc(G.secLabel(s.section)) + "</span>");
     const upd = G.updatedLabel(s, firstRun);
-    if (!showSection && !upd) return "";
-    return '<p class="meta">' + (showSection ? '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" : "") +
-      (upd ? '<span class="upd">' + esc(upd) + "</span>" : "") + "</p>";
+    if (upd) parts.push('<span class="upd">' + esc(upd) + "</span>");
+    parts.push("<span>" + esc(G.agreeLine(s.sources)) + "</span>");
+    return '<p class="line">' + parts.join('<span class="sep" aria-hidden="true">·</span>') +
+      ((s.divergences || []).length ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
-  function agree(s) {
-    const d = (s.divergences || [])[0];
-    return '<p class="agree"><span class="ok">' + esc(G.agreeLine(s.sources)) + "</span>" +
-      (d ? '<span class="split">Si dividono: ' + esc(d.point) + "</span>" : "") + "</p>";
-  }
+  const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
   function leadHTML(s, showSection) {
-    return '<article class="lead">' + meta(s, showSection) +
-      '<h1><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></h1>" +
-      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + agree(s) + "</article>";
+    return '<article class="lead reveal" style="--i:0"><h2>' + link(s) + "</h2>" +
+      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s, showSection) + "</article>";
   }
-  function itemHTML(s, showSection) {
-    return '<li class="item">' + meta(s, showSection) +
-      '<h2><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></h2>" +
-      '<p class="sum">' + esc(G.firstSentences(s.summary, 160)) + "</p>" + agree(s) + "</li>";
+  function itemHTML(s, showSection, i) {
+    return '<li class="item' + (i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
   }
   function renderFeed() {
     const list = visible();
@@ -76,7 +77,7 @@
     }
     const all = state.section === "tutte" || state.section === "seguiti";
     $("feed").innerHTML = leadHTML(list[0], all) +
-      (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s) => itemHTML(s, all)).join("") + "</ol>" : "");
+      (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "");
   }
 
   // ---------- mercati: un riquadro con 5 numeri ----------
@@ -110,9 +111,19 @@
   }
 
   // ---------- eventi ----------
-  window.addEventListener("hashchange", () => { state.section = sectionFromHash(); renderNav(); renderFeed(); });
+  window.addEventListener("hashchange", () => { state.section = sectionFromHash(); markNav(); renderFeed(); });
+  // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva
+  $("feed").addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-id]");
+    if (!a) return;
+    document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; });
+    const h = a.closest("h2");
+    if (h) h.style.viewTransitionName = "story-title";
+    try { sessionStorage.setItem("gerico.vt", JSON.stringify({ id: a.dataset.id, title: a.textContent, sec: a.dataset.sec })); } catch (err) { /* niente */ }
+  });
+  window.addEventListener("pageshow", () => document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; }));
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  renderNav(); renderFeed(); renderSide();
+  buildNav(); markNav(); renderFeed(); renderSide();
 })();

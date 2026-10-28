@@ -109,6 +109,11 @@
     return '<div class="wall ' + (cls || "") + '" aria-hidden="true">' + "<i></i>".repeat(c.allineata) +
       '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</div>";
   };
+  // il muro in miniatura dell'elenco: un mattoncino per testata, dentro una riga di testo (quindi span, non div)
+  G.miniWall = (src) => {
+    const c = G.counts(src);
+    return '<span class="mw" aria-hidden="true">' + "<i></i>".repeat(c.allineata) + '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</span>";
+  };
   // la frase breve delle schede: «5 testate su 6 concordano»
   G.agreeLine = (src) => {
     const c = G.counts(src), n = (src || []).length;
@@ -190,6 +195,16 @@
     panel.addEventListener("transitionend", end);
     setTimeout(end, 400);
     return open;
+  };
+
+  // ---------- avviso breve in basso («Link copiato») ----------
+  G.toast = (msg) => {
+    let t = document.querySelector(".toast");
+    if (!t) { t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); document.body.appendChild(t); }
+    t.textContent = msg;
+    requestAnimationFrame(() => t.classList.add("on"));
+    clearTimeout(t._h);
+    t._h = setTimeout(() => t.classList.remove("on"), 2200);
   };
 
   // ---------- temi seguiti ----------
@@ -337,6 +352,15 @@
       });
       menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
       menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
+      // il primo disegno del menu si prepara quando il browser è libero: la prima apertura resta leggera
+      const warm = () => {
+        if (menu.open) return;
+        menu.classList.add("warm");
+        void menu.offsetHeight;
+        menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        menu.classList.remove("warm");
+      };
+      if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 2500 }); else setTimeout(warm, 1500);
       // la pagina in cui sei è segnata nel menu
       const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });

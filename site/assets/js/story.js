@@ -7,6 +7,7 @@
 
   const CHEV = '<svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg>';
   const back = '<a class="back" id="back" href="index.html"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>Prima pagina</a>';
+  const topBar = '<div class="story-top">' + back + '<button type="button" class="share" id="share">Condividi</button></div>';
   const id = new URLSearchParams(location.search).get("id") || "";
   const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
   if (!ed) {
@@ -51,8 +52,9 @@
       '<button type="button" class="btn-text" id="more-facts" aria-expanded="false" aria-controls="facts-more">' + moreLabel + CHEV + "</button>" : "") + "</section>" : "";
 
   // ---------- divergenze, parere, cronologia, domande ----------
-  const divs = (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + "</h3><dl>" +
-    (d.positions || []).map((p) => "<dt>" + esc((p.who || []).join(", ")) + "</dt><dd>" + esc(p.says) + "</dd>").join("") + "</dl></div>").join("");
+  // le posizioni a confronto: affiancate sul computer quando sono due, una sotto l'altra sul telefono
+  const divs = (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + '</h3><dl class="pos-list' + ((d.positions || []).length === 2 ? " two" : "") + '">' +
+    (d.positions || []).map((p) => '<div class="pos"><dt>' + esc((p.who || []).join(", ")) + "</dt><dd>" + esc(p.says) + "</dd></div>").join("") + "</dl></div>").join("");
   const divBlock = '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Dove si dividono</h2>' +
     (divs || '<p class="plain">Le testate lette concordano sui fatti principali.</p>') + "</section>";
   const paras = String(s.view || "").split(/\n\s*\n/).filter((p) => p.trim()).map((p) => "<p>" + esc(p.trim()) + "</p>").join("");
@@ -90,8 +92,17 @@
   // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
   const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
   // in due tempi: prima quello che sta nello schermo, il resto al fotogramma dopo (l'arrivo sulla pagina resta leggero)
+  // in fondo la notizia successiva dell'edizione, così si legge di fila senza tornare indietro
+  const order = (ed.stories || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  const at = order.findIndex((x) => x.id === s.id);
+  const nx = at >= 0 ? order[at + 1] : null;
+  const nextHTML = nx
+    ? '<nav class="next" aria-label="Prossima notizia"><a href="' + G.storyUrl(nx) + '" data-id="' + esc(nx.id) + '" data-sec="' + esc(G.secLabel(nx.section)) + '">' +
+      '<span class="next-l">Prossima notizia</span><span class="next-t">' + esc(G.headline(nx)) + '</span><span class="next-m">' +
+      esc(G.secLabel(nx.section)) + " · " + esc(G.agreeLine(nx.sources)) + "</span></a></nav>"
+    : at >= 0 ? '<nav class="next" aria-label="Fine dell\'edizione"><a href="index.html"><span class="next-l">Fine dell\'edizione</span><span class="next-t">Torna alla prima pagina</span></a></nav>' : "";
   const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + wallFig + factsBlock;
-  const rest = divBlock + viewBlock + narrow + hist + open;
+  const rest = divBlock + viewBlock + narrow + hist + open + nextHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
   const h1 = $("st-title");
@@ -99,8 +110,9 @@
     $("st-meta").innerHTML = metaHTML;
     $("st-body").innerHTML = body;
     $("st-body").classList.add("reveal");
+    if ($("share")) $("share").hidden = false;
   } else {
-    $("story").innerHTML = back + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
+    $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
   }
   requestAnimationFrame(() => setTimeout(() => {
     $("st-body").insertAdjacentHTML("beforeend", rest);
@@ -115,8 +127,36 @@
     const ref = document.referrer ? new URL(document.referrer) : null;
     fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
   } catch (err) { /* niente */ }
+  // condividere: il foglio di condivisione del telefono, altrimenti il link copiato
+  async function share() {
+    const url = location.href;
+    if (navigator.share) { try { await navigator.share({ title: title + " · GERICO", url }); } catch (err) { /* annullato */ } return; }
+    try { await navigator.clipboard.writeText(url); G.toast("Link copiato"); } catch (err) { G.toast("Copia il link dalla barra degli indirizzi"); }
+  }
+  // passaggio verso la notizia successiva: il titolo della scheda diventa il titolo della pagina dopo
+  const handoff = (toNext) => {
+    const h = $("st-title"), nt = document.querySelector(".next-t");
+    if (h) h.style.viewTransitionName = toNext ? "none" : "";
+    if (nt) nt.style.viewTransitionName = toNext ? "story-title" : "";
+  };
+  window.addEventListener("pageswap", (e) => {
+    const nt = document.querySelector(".next a[data-id]");
+    let toNext = false;
+    try {
+      const u = e.activation && e.activation.entry && e.activation.entry.url ? new URL(e.activation.entry.url) : null;
+      toNext = !!(u && nt && u.searchParams.get("id") === nt.dataset.id);
+    } catch (err) { /* niente */ }
+    handoff(toNext);
+  });
   document.addEventListener("click", (e) => {
     if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }
+    if (e.target.closest("#share")) { share(); return; }
+    const na = e.target.closest(".next a[data-id]");
+    if (na) {
+      handoff(true);
+      try { sessionStorage.setItem("gerico.vt", JSON.stringify({ id: na.dataset.id, title: na.querySelector(".next-t").textContent, sec: na.dataset.sec })); } catch (err) { /* niente */ }
+      return;
+    }
     const t = e.target.closest(".wallbtn, .disc, #more-facts");
     if (t) {
       const isOpen = G.toggle(t);

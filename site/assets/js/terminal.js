@@ -162,13 +162,20 @@
     const now = G.romeNow().hm;
     const items = ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     const next = today ? items.find((it) => it.impact === "alto" && it.time && it.time >= now) : null;
-    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b>" : "";
+    // quanto manca al prossimo evento ad alto impatto (si aggiorna ogni 30 secondi)
+    let left = "";
+    if (next) {
+      const [hh, mm] = String(next.time).split(":").map(Number);
+      const mins = hh * 60 + mm - G.romeNow().min;
+      left = mins <= 0 ? "adesso" : mins < 60 ? "tra " + mins + " min" : "tra " + Math.floor(mins / 60) + " h " + String(mins % 60).padStart(2, "0") + " min";
+    }
+    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b> · " + esc(left) : "";
     $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
     $("ag").innerHTML = '<ol class="t-agenda">' + items.map((it) => {
       const past = today && it.time && it.time < now;
       const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
       const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
-      return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
+      return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + (it === next ? " next" : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
         '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(G.cap(imp)) + "</span></li>";
     }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
   }
@@ -280,6 +287,7 @@
   table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
   table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
+  setInterval(renderAgenda, 30000);
   renderNews();
   renderStatus();
 })();

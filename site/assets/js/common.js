@@ -197,6 +197,16 @@
     return open;
   };
 
+  // ---------- avviso breve in basso («Link copiato») ----------
+  G.toast = (msg) => {
+    let t = document.querySelector(".toast");
+    if (!t) { t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); document.body.appendChild(t); }
+    t.textContent = msg;
+    requestAnimationFrame(() => t.classList.add("on"));
+    clearTimeout(t._h);
+    t._h = setTimeout(() => t.classList.remove("on"), 2200);
+  };
+
   // ---------- temi seguiti ----------
   G.follows = () => G.ls.get("gerico.follows", []);
   G.toggleFollow = (t) => {

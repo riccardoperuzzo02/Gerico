@@ -109,6 +109,11 @@
     return '<div class="wall ' + (cls || "") + '" aria-hidden="true">' + "<i></i>".repeat(c.allineata) +
       '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</div>";
   };
+  // il muro in miniatura dell'elenco: un mattoncino per testata, dentro una riga di testo (quindi span, non div)
+  G.miniWall = (src) => {
+    const c = G.counts(src);
+    return '<span class="mw" aria-hidden="true">' + "<i></i>".repeat(c.allineata) + '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</span>";
+  };
   // la frase breve delle schede: «5 testate su 6 concordano»
   G.agreeLine = (src) => {
     const c = G.counts(src), n = (src || []).length;

@@ -21,6 +21,9 @@
   // ---------- edizione ----------
   if (lastRun) {
     G.setEdition(lastRun);
+    const edl = document.querySelector("#edition-line .ed-l");
+    // «Mercoledì 28 ottobre · 8 notizie · ore 7:23»: sta in una riga anche sul telefono
+    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · " + stories.length + (stories.length === 1 ? " notizia" : " notizie") + " · ore ");
     if (G.hoursAgo(lastRun) > 30) {
       $("large-title").textContent = "Ultima edizione";
       const tt = document.querySelector(".top-title");
@@ -57,9 +60,10 @@
     if (showSection) parts.push('<span class="sec">' + esc(G.secLabel(s.section)) + "</span>");
     const upd = G.updatedLabel(s, firstRun);
     if (upd) parts.push('<span class="upd">' + esc(upd) + "</span>");
-    parts.push("<span>" + esc(G.agreeLine(s.sources)) + "</span>");
+    parts.push('<span class="agr">' + G.miniWall(s.sources) + esc(G.agreeLine(s.sources)) + "</span>");
+    // «Versioni diverse» solo quando almeno una testata racconta i fatti in modo diverso
     return '<p class="line">' + parts.join('<span class="sep" aria-hidden="true">·</span>') +
-      ((s.divergences || []).length ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
+      (G.counts(s.sources).divergente ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
   // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
@@ -82,8 +86,10 @@
       return;
     }
     const all = state.section === "tutte" || state.section === "seguiti";
+    // l'edizione ha una fine: si sa quando arriva la prossima
+    const end = '<p class="end"><strong>' + (state.section === "tutte" ? "Fine dell'edizione." : "Fine della sezione.") + "</strong> Prossimo aggiornamento " + esc(G.nextUpdate()) + ".</p>";
     feed.innerHTML = leadHTML(list[0], all) +
-      (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "");
+      (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "") + end;
     first = false;
   }
 

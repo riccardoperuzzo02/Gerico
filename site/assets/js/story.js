@@ -56,7 +56,7 @@
   const divBlock = '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Dove si dividono</h2>' +
     (divs || '<p class="plain">Le testate lette concordano sui fatti principali.</p>') + "</section>";
   const paras = String(s.view || "").split(/\n\s*\n/).filter((p) => p.trim()).map((p) => "<p>" + esc(p.trim()) + "</p>").join("");
-  const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h"><img class="logo-light" src="assets/img/gerico-mark.svg" alt=""><img class="logo-dark" src="assets/img/gerico-mark-dark.svg" alt="">Il parere di GERICO</h2>' + paras + "</section>" : "";
+  const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h">Il parere di GERICO</h2>' + paras + "</section>" : "";
   const disclosure = (pid, label, inner, extra) => '<section class="block disc-block' + (extra ? " " + extra : "") + '"><h2><button type="button" class="disc" aria-expanded="false" aria-controls="' + pid + '">' +
     label + CHEV + '</button></h2><div class="collapse" id="' + pid + '" inert><div class="collapse-in">' + inner + "</div></div></section>";
   const histList = s.history || [];

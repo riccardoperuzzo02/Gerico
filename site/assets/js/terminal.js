@@ -49,15 +49,13 @@
   // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
   const SPRING = window.CSS && CSS.supports && CSS.supports("animation-timing-function", "linear(0, 1)")
     ? getComputedStyle(document.documentElement).getPropertyValue("--spring").trim() || "ease-out" : "cubic-bezier(0.2, 0.8, 0.2, 1)";
-  const rect = (el) => ({ x: el.offsetLeft, y: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight });
-  function snapshot() {
-    const m = {};
-    $("map").querySelectorAll(".tile").forEach((el) => { m[el.dataset.code] = rect(el); });
-    return m;
-  }
-  function flip(before) {
+  // le posizioni dei quadrati arrivano dal calcolo della mappa: nessuna lettura dal layout, nessun ricalcolo forzato
+  const byCode = (rects) => { const m = {}; (rects || []).forEach((r) => { m[r.code] = r; }); return m; };
+  let lastRects = null;
+  function flip(before, now) {
     $("map").querySelectorAll(".tile").forEach((el) => {
-      const a = before[el.dataset.code], b = rect(el);
+      const a = before[el.dataset.code], b = now[el.dataset.code];
+      if (!b) return;
       if (!a) { el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, easing: "ease-out" }); return; }
       if (Math.abs(a.x - b.x) < 1 && Math.abs(a.y - b.y) < 1 && Math.abs(a.w - b.w) < 1 && Math.abs(a.h - b.h) < 1) return;
       el.animate([
@@ -66,11 +64,10 @@
       ], { duration: 380, easing: SPRING });
     });
   }
-  function placeRing(instant) {
-    const ring = $("ring"), el = $("map").querySelector('.tile[aria-pressed="true"]');
+  function placeRing(instant, now) {
+    const ring = $("ring"), r = now[state.sel];
     if (!ring) return;
-    if (!el) { ring.style.opacity = "0"; return; }
-    const r = rect(el);
+    if (!r) { ring.style.opacity = "0"; return; }
     if (instant) ring.classList.remove("ready");
     ring.style.transform = "translate(" + r.x + "px, " + r.y + "px)";
     ring.style.width = r.w + "px";
@@ -90,18 +87,20 @@
     }
     const items = G.mapItems(wt, tm, state.view);
     if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
-    const before = how === "flip" && !G.reduced() ? snapshot() : null;
-    G.drawMap($("map"), items, { interactive: true, selected: state.sel });
+    const before = how === "flip" && !G.reduced() && lastRects ? byCode(lastRects) : null;
+    const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel }) || [];
+    lastRects = rects;
+    const now = byCode(rects);
     if (firstDraw) {
       firstDraw = false;
       if (!G.reduced()) { $("map").classList.add("tiles-in"); setTimeout(() => $("map").classList.remove("tiles-in"), 1000); }
     }
-    if (before) flip(before);
-    placeRing(!how);
+    if (before) flip(before, now);
+    placeRing(!how, now);
     const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
     $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
-    G.seg(document.querySelector(".t-seg"));
+    requestAnimationFrame(() => G.seg(document.querySelector(".t-seg")));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
   }

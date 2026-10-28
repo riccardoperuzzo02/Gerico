@@ -287,14 +287,14 @@
     document.querySelectorAll("[data-size-set]").forEach((b) => b.addEventListener("click", () => {
       const s = Number(b.dataset.sizeSet) || 0;
       G.ls.set("gerico.size", s); applySize(s);
-      groups("[data-size-set]").forEach((g) => G.seg(g));
+      requestAnimationFrame(() => groups("[data-size-set]").forEach((g) => G.seg(g)));
       window.dispatchEvent(new Event("resize"));
     }));
     document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
       G.ls.set("gerico.theme", b.dataset.themeSet);
       html.setAttribute("data-theme", b.dataset.themeSet);
       applyTheme();
-      groups("[data-theme-set]").forEach((g) => G.seg(g));
+      requestAnimationFrame(() => groups("[data-theme-set]").forEach((g) => G.seg(g)));
     }));
 
     // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
@@ -306,6 +306,7 @@
       const open = () => {
         if (menu.open) return;
         menu.classList.remove("closing");
+        document.documentElement.classList.add("menu-open");
         menu.showModal();
         btn.setAttribute("aria-expanded", "true");
         // gli indicatori si misurano solo la prima volta (o dopo un ridimensionamento), nel fotogramma successivo
@@ -317,7 +318,7 @@
       const close = () => {
         if (!menu.open || menu.classList.contains("closing")) return;
         btn.setAttribute("aria-expanded", "false");
-        const done = () => { menu.classList.remove("closing"); menu.close(); btn.focus({ preventScroll: true }); };
+        const done = () => { menu.classList.remove("closing"); menu.close(); document.documentElement.classList.remove("menu-open"); btn.focus({ preventScroll: true }); };
         menu.classList.add("closing");
         const anims = G.reduced() || !menu.getAnimations ? [] : menu.getAnimations();
         if (!anims.length) return done();
@@ -360,7 +361,7 @@
     CHN: ["Cina", "CSI 300"], FRA: ["Francia", "CAC 40"], CHE: ["Svizzera", "SMI"], DEU: ["Germania", "DAX"],
     IND: ["India", "Nifty 50"], NLD: ["Paesi Bassi", "AEX"], ITA: ["Italia", "FTSE MIB"], BRA: ["Brasile", "Bovespa"]
   };
-  G.NO_DATA = "#4A5350";
+  G.NO_DATA = "#4A505C";
   G.BANDS = [
     ["#B3261E", "−1% o meno"], ["#8C1F1A", "da −1 a −0,5"], ["#56201C", "da −0,5 a 0"],
     ["#1B4A33", "da 0 a +0,5"], ["#0D5F32", "da +0,5 a +1"], ["#0F7A3F", "+1% o più"]
@@ -432,5 +433,6 @@
       }
       return '<div class="' + cls + '" style="' + style + '">' + inner + "</div>";
     }).join("");
+    return rects;
   };
 })();

@@ -26,6 +26,8 @@
   const TZ = "Europe/Rome";
   const fHM = new Intl.DateTimeFormat("it-IT", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: TZ });
   const fDay = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "short", timeZone: TZ });
+  const fDayLong = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", timeZone: TZ });
+  const fWeek = new Intl.DateTimeFormat("it-IT", { weekday: "long", day: "numeric", month: "long", timeZone: TZ });
   const fLong = new Intl.DateTimeFormat("it-IT", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ });
   const fKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ });
   const valid = (iso) => { const d = new Date(iso); return isNaN(d) ? null : d; };
@@ -45,7 +47,7 @@
     if (G.isToday(iso)) return "alle " + G.hm(iso);
     const y = new Date(); y.setDate(y.getDate() - 1);
     if (G.dayKey(d) === G.dayKey(y)) return "ieri alle " + G.hm(iso);
-    return G.day(iso);
+    return "il " + G.day(iso) + " alle " + G.hm(iso);
   };
   G.romeNow = () => {
     const p = {};
@@ -53,11 +55,11 @@
       .formatToParts(new Date()).forEach((x) => { p[x.type] = x.value; });
     return { wd: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday), min: (Number(p.hour) % 24) * 60 + Number(p.minute), hm: (p.hour % 24).toString().padStart(2, "0") + ":" + p.minute };
   };
-  // aggiornamenti: 7:18 tutti i giorni, 17:50 nei giorni feriali
+  // il sito si aggiorna alle 7:45 tutti i giorni e alle 18:45 nei giorni feriali
   G.nextUpdate = () => {
     const now = G.romeNow();
     const names = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
-    const slots = (d) => (d === 0 || d === 6 ? [438] : [438, 1070]);
+    const slots = (d) => (d === 0 || d === 6 ? [465] : [465, 1125]);
     for (let k = 0; k < 8; k++) {
       const d = (now.wd + k) % 7;
       for (const m of slots(d)) {
@@ -69,12 +71,22 @@
     return "";
   };
 
+  // riga dell'edizione nell'intestazione: lunga sul computer, corta sul telefono
+  G.setEdition = (iso) => {
+    const el = document.getElementById("edition-line");
+    const d = valid(iso);
+    if (!el || !d) return;
+    el.innerHTML = '<span class="ed-l">' + G.esc(G.cap(fWeek.format(d))) + " · edizione delle " + G.esc(G.hm(iso)) + "</span>" +
+      '<span class="ed-s">' + G.esc(fDayLong.format(d)) + ", ore " + G.esc(G.hm(iso)) + "</span>";
+  };
+
   // ---------- numeri ----------
   const nf2 = new Intl.NumberFormat("it-IT", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const sign = (v) => (v > 0 ? "+" : v < 0 ? "−" : "");
   G.pct = (v) => sign(v) + nf2.format(Math.abs(v)) + "%";
   G.pctBare = (v) => sign(v) + nf2.format(Math.abs(v));
   G.bps = (v) => sign(v) + String(Math.abs(v)).replace(".", ",") + " pb";
+  G.bpsLong = (v) => sign(v) + String(Math.abs(v)).replace(".", ",") + (Math.abs(v) === 1 ? " punto base" : " punti base");
   G.wt = (v) => nf2.format(v) + "%";
   G.move = (it) => (typeof it.chg === "number" ? G.pct(it.chg) : typeof it.bp === "number" ? G.bps(it.bp) : "");
   // per i titoli di Stato un rendimento che sale è un prezzo che scende: va in rosso
@@ -84,8 +96,9 @@
   };
   G.size = (it) => (typeof it.chg === "number" ? Math.abs(it.chg) : typeof it.bp === "number" ? Math.abs(it.bp) / 10 : -1);
   G.cleanValue = (v) => (v && v !== "—" && v !== "-" ? v : "");
+  G.shortName = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
 
-  // ---------- muro delle testate ----------
+  // ---------- accordo tra le testate ----------
   G.counts = (src) => {
     const c = { allineata: 0, parziale: 0, divergente: 0 };
     (src || []).forEach((s) => { if (c[s.stance] !== undefined) c[s.stance]++; else c.parziale++; });
@@ -96,28 +109,45 @@
     return '<div class="wall ' + (cls || "") + '" aria-hidden="true">' + "<i></i>".repeat(c.allineata) +
       '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</div>";
   };
+  // la frase breve delle schede: «5 testate su 6 concordano»
+  G.agreeLine = (src) => {
+    const c = G.counts(src), n = (src || []).length;
+    if (!n) return "";
+    if (n === 1) return "Una sola testata";
+    return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano");
+  };
   const tail = (c) => (c.parziale ? ", " + c.parziale + " in parte" : "") + (c.divergente ? ", " + c.divergente + (c.divergente === 1 ? " diverge" : " divergono") : "");
   G.agreeShort = (src) => { const c = G.counts(src), n = (src || []).length; return c.allineata + " su " + n + " concordano" + tail(c); };
   G.agreeLong = (src) => {
     const c = G.counts(src), n = (src || []).length;
-    if (n === 1) return c.allineata ? "1 testata riporta i fatti." : "1 testata, in parte.";
-    return c.allineata + " testate su " + n + " concordano sui fatti" + tail(c) + ".";
+    if (n === 1) return c.allineata ? "Una sola testata riporta questi fatti." : "Una sola testata, che li riporta in parte.";
+    return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano") + " sui fatti" + tail(c) + ".";
   };
 
   // ---------- storie ----------
   G.SECTIONS = { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || "Notizie";
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  G.flag = (s, lastRun) => {
-    if (!s.firstSeen) return "";
-    if (lastRun && Math.abs(new Date(s.firstSeen) - new Date(lastRun)) < 3 * 3600000) return "Nuova";
-    if (s.change && lastRun && Math.abs(new Date(s.updated) - new Date(lastRun)) < 3 * 3600000) return "Aggiornata";
-    return "";
+
+  // titolo da mostrare: i titoli vecchi sono lunghi come riassunti, si tiene la parte prima del punto e virgola
+  G.headline = (s) => {
+    const t = String((s && s.title) || "").trim();
+    if (t.length <= 80) return t;
+    const semi = t.indexOf(";");
+    if (semi >= 20) return t.slice(0, semi).trim();
+    const cut = t.lastIndexOf(" ", 78);
+    return t.slice(0, cut > 40 ? cut : 78).replace(/[,:]$/, "") + "…";
   };
-  G.kicker = (s, lastRun, extra) => {
-    const f = G.flag(s, lastRun);
-    return '<p class="kicker"><span class="sec">' + G.esc(G.secLabel(s.section)) + "</span>" +
-      (f ? '<span class="upd">' + f + "</span>" : "") + '<span class="time">' + G.esc(G.when(s.updated)) + "</span>" + (extra || "") + "</p>";
+  // una novità vera: c'è un testo di novità che non è la prima notizia e la storia ha almeno due passaggi
+  G.realChange = (s) => !!s.change && !/^prima notizia/i.test(s.change.trim()) && (s.history || []).length >= 2;
+  // «Aggiornata alle 13:10» solo se la storia è cambiata dopo il primo giro del giorno
+  G.firstRunToday = (stories) => {
+    const t = (stories || []).filter((s) => G.isToday(s.updated)).map((s) => new Date(s.updated).getTime());
+    return t.length ? Math.min.apply(null, t) : null;
+  };
+  G.updatedLabel = (s, firstRun) => {
+    if (!s.updated || !G.isToday(s.updated) || !firstRun || !G.realChange(s)) return "";
+    return new Date(s.updated).getTime() - firstRun > 60 * 60000 ? "Aggiornata alle " + G.hm(s.updated) : "";
   };
   // le prime frasi intere che stanno in max caratteri (niente lookbehind: va anche su Safari vecchi)
   G.firstSentences = (text, max) => {
@@ -135,6 +165,33 @@
     return out;
   };
 
+  // ---------- pannelli che si aprono e si chiudono ----------
+  // il pulsante ha aria-expanded e aria-controls; il pannello ha la classe collapse
+  // l'altezza si anima in CSS dove c'è interpolate-size; altrimenti la misura lo script
+  const autoHeight = !!(window.CSS && CSS.supports && CSS.supports("interpolate-size", "allow-keywords"));
+  G.toggle = (btn, open) => {
+    const panel = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!panel) return false;
+    if (open === undefined) open = btn.getAttribute("aria-expanded") !== "true";
+    btn.setAttribute("aria-expanded", String(open));
+    panel.inert = !open;
+    if (autoHeight || G.reduced()) { panel.classList.toggle("open", open); return open; }
+    const from = panel.getBoundingClientRect().height;
+    panel.classList.toggle("open", open);
+    const to = open ? panel.scrollHeight : 0;
+    panel.style.height = from + "px";
+    void panel.offsetHeight;
+    panel.style.height = to + "px";
+    const end = (e) => {
+      if (e && (e.target !== panel || e.propertyName !== "height")) return;
+      panel.style.height = "";
+      panel.removeEventListener("transitionend", end);
+    };
+    panel.addEventListener("transitionend", end);
+    setTimeout(end, 400);
+    return open;
+  };
+
   // ---------- temi seguiti ----------
   G.follows = () => G.ls.get("gerico.follows", []);
   G.toggleFollow = (t) => {
@@ -144,38 +201,156 @@
     return n;
   };
 
-  // ---------- tema e dimensione del testo ----------
+  // ---------- menu, tema e dimensione del testo ----------
   G.isDark = () => {
     const t = document.documentElement.getAttribute("data-theme");
     if (t) return t === "dark";
     return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches;
   };
+  G.reduced = () => !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+  // righe che scorrono di lato: sfumatura a destra solo se c'è altro da vedere
+  G.watchRow = (row) => {
+    if (!row || row._fade) return;
+    row._fade = () => row.classList.toggle("has-more", row.scrollWidth - row.clientWidth - row.scrollLeft > 4);
+    row.addEventListener("scroll", row._fade, { passive: true });
+    row._fade();
+  };
+
+  // controllo segmentato: un indicatore scivola sotto la scelta attiva.
+  // Si animano solo transform e opacity: per la larghezza si usa FLIP (si parte scalati e si torna a scala 1).
+  G.seg = (box, instant) => {
+    if (!box) return;
+    let ind = box.querySelector(":scope > .seg-ind");
+    if (!ind) {
+      ind = document.createElement("span");
+      ind.className = "seg-ind";
+      ind.setAttribute("aria-hidden", "true");
+      box.prepend(ind);
+    }
+    const on = box.querySelector(':scope > [aria-current="page"], :scope > [aria-pressed="true"]');
+    if (!on || !on.offsetWidth) { ind.style.opacity = "0"; ind._pos = null; return; }
+    const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos;
+    ind.style.opacity = "";
+    ind.style.width = w + "px";
+    if (prev && !instant && !G.reduced() && (prev.x !== x || prev.w !== w)) {
+      ind.style.transition = "none";
+      ind.style.transform = "translateX(" + prev.x + "px) scaleX(" + (prev.w / w).toFixed(4) + ")";
+      void ind.offsetWidth;
+      ind.style.transition = "";
+    }
+    ind.style.transform = "translateX(" + x + "px)";
+    ind._pos = { x, w };
+    box.classList.add("ready");
+    // se il binario scorre, la scelta attiva resta in vista
+    if (box.scrollWidth > box.clientWidth + 1) {
+      const behavior = instant || G.reduced() ? "auto" : "smooth";
+      if (x - 12 < box.scrollLeft) box.scrollTo({ left: x - 12, behavior });
+      else if (x + w + 12 > box.scrollLeft + box.clientWidth) box.scrollTo({ left: x + w + 12 - box.clientWidth, behavior });
+    }
+    G.watchRow(box);
+    box._fade();
+  };
+
+  // intestazione: la riga sottile e il titolo piccolo compaiono quando il titolo grande passa sotto
+  G.watchTop = () => {
+    const top = document.querySelector(".top");
+    if (!top || !window.IntersectionObserver) return;
+    let target = document.getElementById("large-title"), margin = "-" + top.offsetHeight + "px 0px 0px 0px";
+    if (!target) {
+      target = document.createElement("div");
+      target.className = "top-sentinel";
+      target.setAttribute("aria-hidden", "true");
+      document.body.prepend(target);
+      margin = "0px";
+    }
+    new IntersectionObserver(([e]) => {
+      const on = !e.isIntersecting && e.boundingClientRect.top < top.offsetHeight;
+      top.classList.toggle("scrolled", on);
+      document.documentElement.classList.toggle("scrolled", on);
+    }, { rootMargin: margin }).observe(target);
+  };
+
   G.initPrefs = () => {
     const html = document.documentElement;
-    const applySize = (s) => { html.classList.toggle("size-1", s === 1); html.classList.toggle("size-2", s === 2); };
+    const groups = (sel) => new Set(Array.from(document.querySelectorAll(sel)).map((b) => b.parentElement));
+    const applySize = (s) => {
+      html.classList.toggle("size-1", s === 1); html.classList.toggle("size-2", s === 2);
+      document.querySelectorAll("[data-size-set]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.sizeSet) === s)));
+    };
+    const applyTheme = () => {
+      const dark = G.isDark();
+      document.querySelectorAll("[data-theme-set]").forEach((b) => b.setAttribute("aria-pressed", String((b.dataset.themeSet === "dark") === dark)));
+    };
     applySize(G.ls.get("gerico.size", 0));
-    document.querySelectorAll("[data-size]").forEach((b) => {
-      b.addEventListener("click", () => {
-        const s = (G.ls.get("gerico.size", 0) + 1) % 3;
-        G.ls.set("gerico.size", s); applySize(s);
-        b.setAttribute("aria-label", "Dimensione del testo: " + ["normale", "grande", "molto grande"][s]);
-        window.dispatchEvent(new Event("resize"));
-      });
-    });
-    document.querySelectorAll("[data-theme-toggle]").forEach((b) => {
-      const upd = () => {
-        const dark = G.isDark();
-        b.setAttribute("aria-pressed", String(dark));
-        b.setAttribute("aria-label", dark ? "Passa al tema chiaro" : "Passa al tema scuro");
+    applyTheme();
+    document.querySelectorAll("[data-size-set]").forEach((b) => b.addEventListener("click", () => {
+      const s = Number(b.dataset.sizeSet) || 0;
+      G.ls.set("gerico.size", s); applySize(s);
+      groups("[data-size-set]").forEach((g) => G.seg(g));
+      window.dispatchEvent(new Event("resize"));
+    }));
+    document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
+      G.ls.set("gerico.theme", b.dataset.themeSet);
+      html.setAttribute("data-theme", b.dataset.themeSet);
+      applyTheme();
+      groups("[data-theme-set]").forEach((g) => G.seg(g));
+    }));
+
+    // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
+    document.addEventListener("touchstart", () => {}, { passive: true });
+
+    // il menu è un dialog: tiene il focus dentro, si chiude con Esc, toccando fuori o con il pulsante
+    const btn = document.querySelector(".menu-btn"), menu = document.getElementById("menu");
+    if (btn && menu && typeof menu.showModal === "function") {
+      const open = () => {
+        if (menu.open) return;
+        menu.classList.remove("closing");
+        menu.showModal();
+        btn.setAttribute("aria-expanded", "true");
+        // gli indicatori si misurano solo la prima volta (o dopo un ridimensionamento), nel fotogramma successivo
+        requestAnimationFrame(() => menu.querySelectorAll(".seg").forEach((s) => {
+          const ind = s.querySelector(":scope > .seg-ind");
+          if (!ind || !ind._pos) G.seg(s, true);
+        }));
       };
-      b.addEventListener("click", () => {
-        const next = G.isDark() ? "light" : "dark";
-        G.ls.set("gerico.theme", next);
-        html.setAttribute("data-theme", next);
-        upd();
+      const close = () => {
+        if (!menu.open || menu.classList.contains("closing")) return;
+        btn.setAttribute("aria-expanded", "false");
+        const done = () => { menu.classList.remove("closing"); menu.close(); btn.focus({ preventScroll: true }); };
+        menu.classList.add("closing");
+        const anims = G.reduced() || !menu.getAnimations ? [] : menu.getAnimations();
+        if (!anims.length) return done();
+        Promise.all(anims.map((a) => a.finished)).then(done, done);
+      };
+      btn.addEventListener("click", () => (menu.open ? close() : open()));
+      menu.addEventListener("cancel", (e) => { e.preventDefault(); close(); });
+      // il focus gira dentro il pannello: dall'ultimo elemento si torna al primo e viceversa
+      menu.addEventListener("keydown", (e) => {
+        if (e.key !== "Tab") return;
+        const f = Array.from(menu.querySelectorAll("a[href], button:not([disabled])")).filter((x) => x.offsetParent !== null);
+        if (!f.length) return;
+        const firstEl = f[0], lastEl = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
       });
-      upd();
+      menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
+      menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
+      // la pagina in cui sei è segnata nel menu
+      const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
+      menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
+    }
+
+    document.querySelectorAll(".chips").forEach(G.watchRow);
+    let rz = 0;
+    window.addEventListener("resize", () => {
+      cancelAnimationFrame(rz);
+      rz = requestAnimationFrame(() => {
+        document.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        document.querySelectorAll(".chips").forEach((r) => r._fade && r._fade());
+      });
     });
+    G.watchTop();
   };
 
   // ---------- mappa a quadrati (treemap squarified) ----------
@@ -185,11 +360,12 @@
     CHN: ["Cina", "CSI 300"], FRA: ["Francia", "CAC 40"], CHE: ["Svizzera", "SMI"], DEU: ["Germania", "DAX"],
     IND: ["India", "Nifty 50"], NLD: ["Paesi Bassi", "AEX"], ITA: ["Italia", "FTSE MIB"], BRA: ["Brasile", "Bovespa"]
   };
+  G.NO_DATA = "#4A5350";
   G.BANDS = [
     ["#B3261E", "−1% o meno"], ["#8C1F1A", "da −1 a −0,5"], ["#56201C", "da −0,5 a 0"],
-    ["#1B4A33", "da 0 a +0,5"], ["#0D5F32", "da +0,5 a +1"], ["#0F7A3F", "+1% o più"], ["#27302D", "dato mancante"]
+    ["#1B4A33", "da 0 a +0,5"], ["#0D5F32", "da +0,5 a +1"], ["#0F7A3F", "+1% o più"]
   ];
-  G.band = (c) => (typeof c !== "number" ? "#27302D" : c >= 1 ? "#0F7A3F" : c >= 0.5 ? "#0D5F32" : c >= 0 ? "#1B4A33" : c > -0.5 ? "#56201C" : c > -1 ? "#8C1F1A" : "#B3261E");
+  G.band = (c) => (typeof c !== "number" ? G.NO_DATA : c >= 1 ? "#0F7A3F" : c >= 0.5 ? "#0D5F32" : c >= 0 ? "#1B4A33" : c > -0.5 ? "#56201C" : c > -1 ? "#8C1F1A" : "#B3261E");
 
   G.squarify = (items, W, H) => {
     const total = items.reduce((s, i) => s + i.value, 0) || 1;
@@ -215,18 +391,15 @@
     return items.map((it, k) => Object.assign({}, it, out[k]));
   };
 
-  // pesi + variazioni -> quadrati in ordine di peso; "Altri Paesi" è il resto fino a 100
+  // pesi + variazioni -> quadrati in ordine di peso (solo i 14 Paesi della mappa)
   G.mapItems = (weights, terminal, view) => {
     const w = (weights && weights[view === "europa" ? "europe" : "world"]) || {};
     const by = {};
     ((terminal && terminal.indices) || []).forEach((x) => { if (x && x.code) by[x.code] = x; });
-    const items = Object.keys(w).filter((k) => G.MARKETS[k] && typeof w[k] === "number").map((k) => {
+    return Object.keys(w).filter((k) => G.MARKETS[k] && typeof w[k] === "number").map((k) => {
       const d = by[k] || {};
       return { code: k, name: G.MARKETS[k][0], index: G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: d.story || "" };
-    });
-    const sum = items.reduce((s, x) => s + x.value, 0);
-    if (sum < 99.9) items.push({ code: "ALTRI", name: "Altri Paesi", index: "", value: Math.round((100 - sum) * 100) / 100, chg: null, other: true });
-    return items.sort((a, b) => b.value - a.value);
+    }).sort((a, b) => b.value - a.value);
   };
 
   G.drawMap = (el, items, opts) => {
@@ -234,27 +407,30 @@
     const W = el.clientWidth, H = el.clientHeight;
     if (!W || !H) return;
     const rects = G.squarify(items, W, H);
-    el.innerHTML = rects.map((r) => {
-      const cg = typeof r.chg === "number" ? G.pct(r.chg) : "n.d.";
-      const label = r.name + (r.index ? ", " + r.index : "") + ", " + (typeof r.chg === "number" ? cg : "dato mancante") + ", peso " + G.wt(r.value);
-      const code = r.other ? "ALTRI" : r.code;
-      let size, inner = "";
-      if (opts.compact) {
-        size = r.w >= 120 && r.h >= 70 ? "big" : r.w >= 28 && r.h >= 16 ? "tiny" : "none";
-        if (size === "big") inner = '<span class="a"><span class="nm">' + code + '</span></span><span class="b"><span class="cg">' + cg + "</span></span>";
-        else if (size === "tiny" && !r.other) inner = '<span class="a"><span class="nm">' + code + "</span></span>";
-      } else {
-        size = r.w >= 170 && r.h >= 110 ? "big" : r.w >= 90 && r.h >= 56 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 22 && r.h >= 14 ? "tiny" : "none";
-        if (size === "big") inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span><span class="ix">' + G.esc(r.index || "nessun indice unico") + '</span></span><span class="b"><span class="cg">' + cg + '</span><span class="wt">peso ' + G.wt(r.value) + "</span></span>";
-        else if (size === "med") inner = '<span class="a"><span class="nm">' + G.esc(r.name) + "</span>" + (r.h >= 72 && r.index ? '<span class="ix">' + G.esc(r.index) + "</span>" : "") + '</span><span class="b"><span class="cg">' + cg + "</span></span>";
-        else if (size === "small") inner = '<span class="a"><span class="nm">' + code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
-        else if (size === "tiny") inner = r.other ? "" : '<span class="a"><span class="nm">' + code + "</span></span>";
+    el.innerHTML = rects.map((r, k) => {
+      const has = typeof r.chg === "number";
+      const cg = has ? G.pct(r.chg) : "";
+      const label = r.name + (r.index ? ", " + r.index : "") + ", " + (has ? cg : "nessun dato oggi") + ", peso " + G.wt(r.value);
+      let size = r.w >= 170 && r.h >= 110 ? "big" : r.w >= 90 && r.h >= 56 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 22 && r.h >= 14 ? "tiny" : "none";
+      let inner = "";
+      if (!has) {
+        // senza dato: grigio con la sola sigla
+        inner = size === "none" ? "" : '<span class="a"><span class="nm">' + r.code + "</span></span>";
+      } else if (size === "big") {
+        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg">' + cg + "</span></span>";
+      } else if (size === "med") {
+        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span></span><span class="b"><span class="cg">' + cg + "</span></span>";
+      } else if (size === "small") {
+        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
+      } else if (size === "tiny") {
+        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>";
       }
-      const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(r.chg);
+      const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(r.chg) + ";--k:" + k;
+      const cls = "tile " + size + (has ? "" : " nodata");
       if (opts.interactive) {
-        return '<button type="button" class="tile ' + size + '" data-code="' + r.code + '" aria-pressed="' + (r.code === opts.selected) + '" aria-label="' + G.esc(label) + '" style="' + style + '">' + inner + "</button>";
+        return '<button type="button" class="' + cls + '" data-code="' + r.code + '" aria-pressed="' + (r.code === opts.selected) + '" aria-label="' + G.esc(label) + '" style="' + style + '">' + inner + "</button>";
       }
-      return '<div class="tile ' + size + '" style="' + style + '">' + inner + "</div>";
+      return '<div class="' + cls + '" style="' + style + '">' + inner + "</div>";
     }).join("");
   };
 })();

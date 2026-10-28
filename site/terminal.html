@@ -18,78 +18,87 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/atkinson-hyperlegible-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261028">
 <script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s)}catch(e){}</script>
 </head>
 <body class="term">
 <a class="skip" href="#map-panel">Vai alla mappa</a>
 
-<header class="t-top">
-<a class="t-brand" href="index.html" aria-label="Torna alla prima pagina di GERICO"><img src="assets/img/gerico-mark-dark.svg" alt=""><span>GERICO TERMINAL</span></a>
-<form class="t-cmd" id="cmd-form">
-<label for="cmd">COMANDO</label>
-<input id="cmd" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="ES. MAPPA EUROPA" aria-describedby="cmd-help">
-<button class="t-btn" type="submit">INVIO</button>
-</form>
-<span class="t-clock" id="clock"></span>
-</header>
-
-<nav class="t-keys" aria-label="Funzioni">
-<button class="t-btn" type="button" data-cmd="MAPPA"><span class="fk">F1</span>MAPPA</button>
-<button class="t-btn" type="button" data-cmd="INDICI"><span class="fk">F2</span>INDICI</button>
-<button class="t-btn" type="button" data-cmd="VALUTE"><span class="fk">F3</span>VALUTE</button>
-<button class="t-btn" type="button" data-cmd="TASSI"><span class="fk">F4</span>TASSI</button>
-<button class="t-btn" type="button" data-cmd="MATERIE PRIME"><span class="fk">F5</span>MATERIE PRIME</button>
-<button class="t-btn" type="button" data-cmd="AGENDA"><span class="fk">F6</span>AGENDA</button>
-<button class="t-btn" type="button" data-cmd="NOTIZIE"><span class="fk">F7</span>NOTIZIE</button>
-</nav>
-<p class="t-msg" id="cmd-help" aria-live="polite"></p>
-
-<div class="t-live">
-<span class="pill">IN DIRETTA</span>
-<span>Prezzi dal widget gratuito di TradingView, con ritardo diverso per ogni mercato. Si carica solo se lo chiedi: TradingView usa cookie suoi.</span>
-<button class="t-btn" type="button" id="live-btn">Mostra prezzi in diretta</button>
-<div class="tv" id="tv"></div>
+<header class="top">
+<div class="wrap top-row">
+<a class="brand t-brand" href="index.html" aria-label="GERICO, prima pagina"><img src="assets/img/gerico-mark-dark.svg" alt="" width="28" height="28"><span>GERICO Terminal</span></a>
+<p class="edition" id="clock"></p>
+<button class="menu-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
 </div>
-<div id="stale" aria-live="polite"></div>
+<nav class="wrap" aria-label="Sezioni del Terminal"><div class="chips" id="keys">
+<button type="button" data-cmd="MAPPA"><span class="fk">F1</span>Mappa</button>
+<button type="button" data-cmd="INDICI"><span class="fk">F2</span>Indici</button>
+<button type="button" data-cmd="VALUTE"><span class="fk">F3</span>Valute</button>
+<button type="button" data-cmd="TASSI"><span class="fk">F4</span>Tassi</button>
+<button type="button" data-cmd="MATERIE PRIME"><span class="fk">F5</span>Materie prime</button>
+<button type="button" data-cmd="AGENDA"><span class="fk">F6</span>Agenda</button>
+<button type="button" data-cmd="NOTIZIE"><span class="fk">F7</span>Notizie</button>
+</div></nav>
+</header>
+<dialog class="menu" id="menu" aria-labelledby="menu-t">
+<div class="menu-in">
+<div class="grab" aria-hidden="true"></div>
+<div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+<nav class="menu-links" aria-label="Pagine"><a href="index.html">Prima pagina</a><a href="terminal.html">Mercati e Terminal</a><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
+<div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
+</div>
+</dialog>
 
-<main class="t-main" id="main">
+<div class="wrap t-tools">
+<form class="t-cmd" id="cmd-form">
+<label for="cmd">Vai a</label>
+<input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="mappa europa, valute, agenda…" aria-describedby="cmd-help">
+<button class="t-btn" type="submit">Vai</button>
+</form>
+<div class="t-live">
+<button class="t-btn" type="button" id="live-btn" aria-controls="tv">Prezzi in diretta</button>
+<p>Dal widget gratuito di TradingView, con ritardi diversi per mercato. Si carica solo se lo chiedi e usa cookie di TradingView.</p>
+</div>
+</div>
+<p class="wrap t-msg" id="cmd-help" aria-live="polite"></p>
+<div class="wrap tv" id="tv"></div>
+<div class="wrap" id="stale" aria-live="polite"></div>
+
+<main class="wrap t-main" id="main">
 <section class="t-panel" id="map-panel" aria-labelledby="map-h" tabindex="-1">
 <div class="t-headrow">
-<h2 id="map-h">MAPPA DEI MERCATI</h2>
-<div class="t-views" role="group" aria-label="Vista della mappa">
-<button class="t-btn" type="button" data-view="mondo" aria-pressed="true">MONDO</button>
-<button class="t-btn" type="button" data-view="europa" aria-pressed="false">EUROPA</button>
+<h2 id="map-h">Mappa dei mercati</h2>
+<div class="seg seg-fill t-seg" role="group" aria-label="Vista della mappa">
+<button type="button" data-view="mondo" aria-pressed="true">Mondo</button>
+<button type="button" data-view="europa" aria-pressed="false">Europa</button>
 </div>
 </div>
-<p class="t-sub" id="map-sub">Carico la mappa…</p>
-<div class="t-map tmap" id="map"></div>
+<p class="t-sub" id="map-sub">Ogni quadrato è una Borsa: più è grande, più pesa nell'indice mondiale MSCI ACWI.</p>
+<div class="t-mapwrap"><div class="t-map tmap" id="map"></div><div class="t-ring" id="ring" aria-hidden="true"></div></div>
 <div class="t-legend" id="legend"></div>
-<div class="t-detail" id="detail" aria-live="polite"></div>
+<div class="t-detail" id="detail" aria-live="polite"><p>Tocca un quadrato per vedere il dettaglio.</p></div>
 </section>
 
 <div class="t-side">
-<section class="t-panel" id="p-indici" aria-labelledby="ix-h" tabindex="-1"><h2 id="ix-h">INDICI</h2><div id="ix"></div></section>
-<section class="t-panel" id="p-valute" aria-labelledby="fx-h" tabindex="-1"><h2 id="fx-h">VALUTE</h2><div id="fx"></div></section>
-<section class="t-panel" id="p-tassi" aria-labelledby="rt-h" tabindex="-1"><h2 id="rt-h">TASSI A 10 ANNI</h2><div id="rt"></div></section>
+<section class="t-panel" id="p-indici" aria-labelledby="ix-h" tabindex="-1"><h2 id="ix-h">Indici</h2><div id="ix"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-valute" aria-labelledby="fx-h" tabindex="-1"><h2 id="fx-h">Valute</h2><div id="fx"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-tassi" aria-labelledby="rt-h" tabindex="-1"><h2 id="rt-h">Tassi a 10 anni</h2><div id="rt"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 </div>
 </main>
 
-<div class="t-bottom">
-<section class="t-panel" id="p-agenda" aria-labelledby="ag-h" tabindex="-1"><div class="t-headrow"><h2 id="ag-h">AGENDA DI OGGI</h2><span class="t-next" id="next"></span></div><div id="ag"></div></section>
-<section class="t-panel" id="p-materie" aria-labelledby="cm-h" tabindex="-1"><h2 id="cm-h">MATERIE PRIME</h2><div id="cm"></div></section>
-<section class="t-panel" id="p-notizie" aria-labelledby="nw-h" tabindex="-1"><h2 id="nw-h">NOTIZIE GERICO</h2><div id="nw"></div></section>
+<div class="wrap t-bottom">
+<section class="t-panel" id="p-agenda" aria-labelledby="ag-h" tabindex="-1"><div class="t-headrow"><h2 id="ag-h">Agenda di oggi</h2><span class="t-next" id="next"></span></div><div id="ag"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-materie" aria-labelledby="cm-h" tabindex="-1"><h2 id="cm-h">Materie prime</h2><div id="cm"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-notizie" aria-labelledby="nw-h" tabindex="-1"><h2 id="nw-h">Notizie sui mercati</h2><div id="nw"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 </div>
 
 <footer class="t-status">
-<span id="st-data"></span>
-<span id="st-next"></span>
-<span>Nessun consiglio di investimento · <a href="privacy.html">Privacy</a></span>
+<p class="wrap"><span id="st-line"></span> · <span>Nessun consiglio di investimento</span> · <a href="privacy.html">Privacy</a></p>
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js"></script>
-<script src="assets/js/terminal.js"></script>
+<script src="assets/js/common.js?v=20261028"></script>
+<script src="assets/js/terminal.js?v=20261028"></script>
 </body>
 </html>

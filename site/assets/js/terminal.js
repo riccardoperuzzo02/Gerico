@@ -1,17 +1,21 @@
-/* GERICO Terminal: mappa a quadrati, pannelli, riga di comando, tasti F1-F7, prezzi in diretta al clic. */
+/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F7) e comandi, prezzi in diretta al clic. */
 (async function () {
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
-  const short = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
-  const lowFirst = (s) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : "");
   G.initPrefs();
 
   // ---------- orologio ----------
-  const fClock = new Intl.DateTimeFormat("it-IT", { weekday: "short", day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Europe/Rome" });
-  const tick = () => { $("clock").textContent = fClock.format(new Date()).replace(/\./g, "").replace(",", " ·").toUpperCase() + " ROMA"; };
+  const tick = () => { $("clock").textContent = "Roma, " + G.romeNow().hm; };
   tick();
   setInterval(tick, 30000);
+
+  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti)
+  const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
+  $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
+    '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
+    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
+    '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
 
   const [ed, mk, ag, tm, wt] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights")]);
   const state = {
@@ -20,7 +24,6 @@
   };
 
   // ---------- mappa ----------
-  $("legend").innerHTML = G.BANDS.map(([c, l]) => '<span><i style="background:' + c + '"></i>' + esc(l) + "</span>").join("");
 
   function linkedStory(code) {
     const stories = (ed && ed.stories) || [];
@@ -35,15 +38,50 @@
     const basis = state.view === "europa" ? "MSCI Europe" : "MSCI ACWI";
     const cg = typeof it.chg === "number"
       ? '<b class="' + (it.chg > 0 ? "t-up" : it.chg < 0 ? "t-down" : "") + '">' + G.pct(it.chg) + "</b>"
-      : "dato mancante";
-    let html = '<p><span class="lab">SELEZIONE</span>' + esc(it.name) + (it.index ? " · " + esc(it.index) : "") + " · " + cg + " · peso " + G.wt(it.value) + " nell'indice " + basis + "</p>";
+      : "nessun dato oggi";
+    let html = "<p><b>" + esc(it.name) + "</b>" + (it.index ? ", " + esc(it.index) : "") + ": " + cg + ". Peso " + G.wt(it.value) + " nell'indice " + basis + ".</p>";
     if (it.note) html += "<p>" + esc(it.note) + "</p>";
-    else if (it.time) html += "<p>Dato delle " + esc(it.time) + "</p>";
-    const s = it.other ? null : linkedStory(it.code);
-    if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(s.title) + "</a></p>";
+    else if (it.time) html += "<p>Dato delle " + esc(it.time) + ".</p>";
+    const s = linkedStory(it.code);
+    if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
     $("detail").innerHTML = html;
   }
-  function drawMap(focusSel) {
+  // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
+  const SPRING = window.CSS && CSS.supports && CSS.supports("animation-timing-function", "linear(0, 1)")
+    ? getComputedStyle(document.documentElement).getPropertyValue("--spring").trim() || "ease-out" : "cubic-bezier(0.2, 0.8, 0.2, 1)";
+  const rect = (el) => ({ x: el.offsetLeft, y: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight });
+  function snapshot() {
+    const m = {};
+    $("map").querySelectorAll(".tile").forEach((el) => { m[el.dataset.code] = rect(el); });
+    return m;
+  }
+  function flip(before) {
+    $("map").querySelectorAll(".tile").forEach((el) => {
+      const a = before[el.dataset.code], b = rect(el);
+      if (!a) { el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, easing: "ease-out" }); return; }
+      if (Math.abs(a.x - b.x) < 1 && Math.abs(a.y - b.y) < 1 && Math.abs(a.w - b.w) < 1 && Math.abs(a.h - b.h) < 1) return;
+      el.animate([
+        { transformOrigin: "0 0", transform: "translate(" + (a.x - b.x) + "px, " + (a.y - b.y) + "px) scale(" + (a.w / b.w).toFixed(4) + ", " + (a.h / b.h).toFixed(4) + ")" },
+        { transformOrigin: "0 0", transform: "none" }
+      ], { duration: 380, easing: SPRING });
+    });
+  }
+  function placeRing(instant) {
+    const ring = $("ring"), el = $("map").querySelector('.tile[aria-pressed="true"]');
+    if (!ring) return;
+    if (!el) { ring.style.opacity = "0"; return; }
+    const r = rect(el);
+    if (instant) ring.classList.remove("ready");
+    ring.style.transform = "translate(" + r.x + "px, " + r.y + "px)";
+    ring.style.width = r.w + "px";
+    ring.style.height = r.h + "px";
+    ring.style.opacity = "1";
+    ring.parentElement.classList.add("has-ring");
+    if (instant) { void ring.offsetWidth; ring.classList.add("ready"); }
+  }
+  let firstDraw = true;
+  // how: "flip" cambiando vista, "select" scegliendo un quadrato, niente al primo disegno e al ridimensionamento
+  function drawMap(focusSel, how) {
     if (!wt) {
       $("map-sub").textContent = "I pesi della mappa non sono disponibili in questo momento.";
       $("map").innerHTML = "";
@@ -51,82 +89,119 @@
       return;
     }
     const items = G.mapItems(wt, tm, state.view);
-    if (!items.some((x) => x.code === state.sel)) state.sel = (items.find((x) => !x.other) || {}).code || "";
+    if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
+    const before = how === "flip" && !G.reduced() ? snapshot() : null;
     G.drawMap($("map"), items, { interactive: true, selected: state.sel });
-    const basis = state.view === "europa" ? "MSCI Europe" : "MSCI ACWI";
-    const vari = tm && tm.asOf ? " Variazioni: " + (tm.label ? lowFirst(tm.label) + ", " : "") + G.when(tm.asOf) + "." : " Variazioni non disponibili.";
-    $("map-sub").textContent = "Ogni quadrato è una Borsa: l'area è il suo peso nell'indice " + basis + " (dati MSCI al " + G.dayOnly(wt.asOf) + "), il colore la variazione dell'ultima seduta." + vari;
+    if (firstDraw) {
+      firstDraw = false;
+      if (!G.reduced()) { $("map").classList.add("tiles-in"); setTimeout(() => $("map").classList.remove("tiles-in"), 1000); }
+    }
+    if (before) flip(before);
+    placeRing(!how);
+    const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
+    $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
+    G.seg(document.querySelector(".t-seg"));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
   }
-  function setView(v) { state.view = v; G.ls.set("gerico.mapView", v); drawMap(); }
+  function setView(v) { if (v === state.view) return; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false, "flip"); }
   $("map").addEventListener("click", (e) => {
     const b = e.target.closest("[data-code]");
     if (!b) return;
     state.sel = b.dataset.code;
     G.ls.set("gerico.mapSel", state.sel);
-    drawMap(true);
+    drawMap(true, "select");
   });
   document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+  let size = "";
   if (window.ResizeObserver) {
     let rt;
-    new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => drawMap(false), 100); }).observe($("map"));
+    new ResizeObserver(() => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        const now = $("map").clientWidth + "x" + $("map").clientHeight;
+        if (now !== size) { size = now; drawMap(false); }
+      }, 100);
+    }).observe($("map"));
   }
 
   // ---------- pannelli ----------
   const cls = (key) => ((mk && mk.classes) || []).find((c) => c.key === key);
+  // la nota che si ripete (per esempio «Chiusura 26 ottobre») va una volta sola sotto il titolo
+  const head = (note) => String(note || "").split(/[;,]/)[0].trim();
+  function commonNote(items) {
+    if (items.length < 2 || items.some((it) => !head(it.note))) return "";
+    const count = {};
+    items.forEach((it) => { count[head(it.note)] = (count[head(it.note)] || 0) + 1; });
+    const top = Object.keys(count).sort((a, b) => count[b] - count[a])[0];
+    return count[top] >= 2 ? top : "";
+  }
+  const ownNote = (note, common) => {
+    if (!common || head(note) !== common) return note || "";
+    return G.cap(String(note).slice(String(note).indexOf(common) + common.length).replace(/^[\s;,]+/, ""));
+  };
   function table(key, cols, target, extraNote) {
     const c = cls(key);
     if (!mk) { $(target).innerHTML = '<p class="t-na">Dati di mercato non disponibili.</p>'; return; }
     if (!c || !(c.items || []).length) { $(target).innerHTML = '<p class="t-na">' + esc((c && c.note) || "Nessun dato verificato in questo aggiornamento.") + "</p>"; return; }
-    const rows = c.items.map((it) => {
+    const common = commonNote(c.items);
+    const notes = c.items.map((it) => ownNote(it.note, common));
+    const rows = c.items.map((it, i) => {
       const tone = G.tone(it, key);
       const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(" pb", "") : "";
-      return '<tr><th scope="row">' + esc(short(it.name).toUpperCase()) + (it.note ? "<small>" + esc(it.note) + "</small>" : "") + "</th><td>" +
-        esc(G.cleanValue(it.value) || "—") + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
+      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
+        esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '">' + esc(mv) + "</td></tr>";
     }).join("");
-    $(target).innerHTML = '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
+    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
       "</th></tr></thead><tbody>" + rows + "</tbody></table>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
   function renderAgenda() {
-    if (!ag || !(ag.items || []).length) { $("ag").innerHTML = '<p class="t-na">Agenda non disponibile.</p>'; return; }
+    if (!ag || !(ag.items || []).length) { $("ag").innerHTML = '<p class="t-na">L\'agenda di oggi non è ancora disponibile.</p>'; return; }
     const today = !ag.date || String(ag.date).slice(0, 10) === G.dayKey(new Date());
     const now = G.romeNow().hm;
     const items = ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     const next = today ? items.find((it) => it.impact === "alto" && it.time && it.time >= now) : null;
-    $("next").innerHTML = next ? "prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b>" : "";
-    $("ag-h").textContent = today ? "AGENDA DI OGGI" : "AGENDA DEL " + G.dayOnly(ag.date).toUpperCase();
+    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b>" : "";
+    $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
     $("ag").innerHTML = '<ol class="t-agenda">' + items.map((it) => {
       const past = today && it.time && it.time < now;
-      const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "prec. " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
+      const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
       const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
       return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
-        '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(imp.toUpperCase()) + "</span></li>";
+        '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(G.cap(imp)) + "</span></li>";
     }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
   }
 
+  // solo le storie legate ai mercati: citate dai dati di mercato o nelle sezioni Mercati ed Economia, al massimo 3
   function renderNews() {
-    const st = ((ed && ed.stories) || []).slice().sort((a, b) => new Date(b.updated) - new Date(a.updated)).slice(0, 8);
-    if (!st.length) { $("nw").innerHTML = '<p class="t-na">Nessuna notizia disponibile.</p>'; return; }
+    const ids = new Set();
+    ((mk && mk.classes) || []).forEach((c) => (c.items || []).forEach((it) => { if (it.story) ids.add(it.story); }));
+    ((tm && tm.indices) || []).forEach((x) => { if (x && x.story) ids.add(x.story); });
+    const st = ((ed && ed.stories) || []).filter((s) => ids.has(s.id) || s.section === "mercati" || s.section === "economia")
+      .sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 3);
+    if (!st.length) {
+      $("p-notizie").hidden = true;
+      const k = document.querySelector('[data-cmd="NOTIZIE"]');
+      if (k) k.hidden = true;
+      return;
+    }
     $("nw").innerHTML = '<ul class="t-news">' + st.map((s) => {
       const n = (s.sources || []).length, a = G.counts(s.sources).allineata;
-      return '<li><span class="tm">' + esc(G.isToday(s.updated) ? G.hm2(s.updated) : G.day(s.updated).toUpperCase()) + '</span><a href="' + G.storyUrl(s) + '">' + esc(s.title) +
-        '</a><span class="ag" title="' + a + " testate su " + n + ' concordano">' + a + "/" + n + "</span></li>";
+      return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + '</a><span class="ag">' + a + " su " + n + " concordano</span></li>";
     }).join("") + "</ul>";
   }
 
   function renderStatus() {
     const asOf = (tm && tm.asOf) || (mk && mk.asOf);
-    $("st-data").textContent = asOf ? "Dati di mercato: " + (mk && mk.label ? lowFirst(mk.label) + ", " : "") + G.when(asOf) : "Dati di mercato non disponibili";
-    $("st-next").textContent = "Prossimo aggiornamento: " + G.nextUpdate();
+    $("st-line").textContent = (asOf ? "Aggiornato " + G.when(asOf) : "Dati non disponibili") + " · prossimo " + G.nextUpdate();
     if (asOf && G.hoursAgo(asOf) > 30) {
       $("stale").innerHTML = '<p class="t-stale">I dati di mercato sono di ' + esc(G.longDay(asOf)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
     }
   }
 
-  // ---------- riga di comando e tasti funzione ----------
+  // ---------- sezioni, comandi e tasti funzione ----------
   const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
@@ -145,7 +220,7 @@
     else if (c === "MAPPA MONDO" || c === "MONDO") { setView("mondo"); go("map-panel"); }
     else if (PANELS[c]) go(PANELS[c]);
     else ok = false;
-    $("cmd-help").textContent = ok ? "" : "Comando non riconosciuto. Prova: MAPPA MONDO, MAPPA EUROPA, INDICI, VALUTE, TASSI, MATERIE PRIME, AGENDA, NOTIZIE.";
+    $("cmd-help").textContent = ok ? "" : "Non trovato. Prova: mappa mondo, mappa europa, indici, valute, tassi, materie prime, agenda, notizie.";
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
@@ -186,22 +261,25 @@
     sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: "it" });
     wrap.appendChild(sc);
     box.appendChild(wrap);
-    $("live-btn").textContent = "Nascondi prezzi in diretta";
+    $("live-btn").textContent = "Nascondi i prezzi in diretta";
+    $("live-btn").setAttribute("aria-expanded", "true");
   }
-  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = "Mostra prezzi in diretta"; }
+  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = "Prezzi in diretta"; $("live-btn").setAttribute("aria-expanded", "false"); }
   $("live-btn").addEventListener("click", () => {
     if ($("tv").childElementCount) { unloadTV(); G.ls.set("gerico.live", false); }
     else { loadTV(); G.ls.set("gerico.live", true); }
   });
+  $("live-btn").setAttribute("aria-expanded", "false");
   if (G.ls.get("gerico.live", false)) loadTV();
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
   drawMap(false);
-  table("indici", ["INDICE", "ULTIMO", "VAR %"], "ix");
-  table("valute", ["COPPIA", "ULTIMO", "VAR %"], "fx");
-  table("obbligazioni", ["TITOLO", "REND.", "PB"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
-  table("materie", ["MATERIA", "ULTIMO", "VAR %"], "cm");
+  size = $("map").clientWidth + "x" + $("map").clientHeight;
+  table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
+  table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
+  table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
+  table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
   renderNews();
   renderStatus();

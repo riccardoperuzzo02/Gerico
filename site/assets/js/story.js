@@ -3,95 +3,129 @@
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
-  const short = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
   G.initPrefs();
 
+  const CHEV = '<svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg>';
+  const back = '<a class="back" id="back" href="index.html"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>Prima pagina</a>';
   const id = new URLSearchParams(location.search).get("id") || "";
   const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
   if (!ed) {
-    $("story").innerHTML = '<div class="empty"><h1>La storia non si è caricata.</h1><p>Riprova tra qualche minuto.</p></div>';
+    $("story").innerHTML = back + '<div class="empty"><h1>La storia non si è caricata.</h1><p>Riprova tra qualche minuto.</p></div>';
     return;
   }
   const s = (ed.stories || []).concat(ed.archive || []).find((x) => x.id === id);
   if (!s) {
-    $("story").innerHTML = '<div class="empty"><h1>Questa storia non c\'è più.</h1><p>GERICO tiene le storie per una settimana. <a href="index.html">Torna alla prima pagina</a>.</p></div>';
+    $("story").innerHTML = back + '<div class="empty"><h1>Questa storia non c\'è più.</h1><p>GERICO tiene le storie per una settimana. <a href="index.html">Torna alla prima pagina</a>.</p></div>';
     return;
   }
-  document.title = s.title + " · GERICO";
+  const title = G.headline(s);
+  document.title = title + " · GERICO";
   const md = document.querySelector('meta[name="description"]');
   if (md && s.summary) md.setAttribute("content", s.summary);
 
-  // ---------- testa ----------
-  const f0 = s.status === "archived" ? "Archiviata" : G.flag(s, ed.lastRun);
-  const flag = f0 === "Aggiornata" ? "" : f0; // l'orario sotto dice già «Aggiornata»
-  const upd = s.updated ? (G.isToday(s.updated) ? "oggi alle " + G.hm(s.updated) : "il " + G.day(s.updated) + " alle " + G.hm(s.updated)) : "";
-  const kicker = '<p class="kicker">' + (flag ? '<span class="upd">' + flag + "</span>" : "") +
-    (upd ? '<span class="time">Aggiornata ' + esc(upd) + "</span>" : "") +
-    (s.firstSeen ? '<span class="time">Seguita dal ' + esc(G.day(s.firstSeen)) + "</span>" : "") + "</p>";
-  const nc = (s.notCovered || []).length ? '<p class="nc"><strong>Non ne parlano:</strong> ' + esc(s.notCovered.join(", ")) + "</p>" : "";
-  const wallFig = '<figure class="wallfig">' + G.wall(s.sources, "huge") +
-    '<figcaption><span class="agree">' + esc(G.agreeLong(s.sources)) + "</span>" +
-    '<span class="legend"><span><i></i>concorda</span><span><i class="p"></i>in parte</span><span><i class="d"></i>diverge</span></span>' + nc + "</figcaption></figure>";
+  // ---------- testa: sezione e ora, titolo, sintesi ----------
+  const when = s.status === "archived" ? "archiviata" : s.updated ? "aggiornata " + G.when(s.updated) : "";
+  const metaHTML = '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" + (when ? '<span class="sep" aria-hidden="true">·</span><span>' + esc(when) + "</span>" : "");
+  const upd = G.updatedLabel(s, G.firstRunToday(ed.stories));
+  const latest = upd ? '<p class="latest"><strong>' + esc(upd) + ".</strong> " + esc(s.change) + "</p>" : "";
 
-  // ---------- fatti ----------
-  const SHOW = 6;
+  // ---------- il muro: toccandolo si apre la spiegazione ----------
+  const nc = (s.notCovered || []).length ? '<p class="nc">Non ne parlano: ' + esc(s.notCovered.join(", ")) + "</p>" : "";
+  const wallFig = '<div class="wallfig"><button type="button" class="wallbtn" aria-expanded="false" aria-controls="legend">' + G.wall(s.sources, "huge") +
+    '<span class="agree">' + esc(G.agreeLong(s.sources)) + "</span>" + CHEV + "</button>" +
+    '<div class="collapse" id="legend" inert><div class="collapse-in"><div class="legend"><p>Ogni pietra è una testata.</p><ul>' +
+    '<li><i></i>Piena: riporta gli stessi fatti delle altre</li><li><i class="p"></i>Chiara: li riporta solo in parte</li><li><i class="d"></i>Vuota: ne dà una versione diversa</li>' +
+    "</ul></div></div></div>" + nc + "</div>";
+
+  // ---------- fatti: i 3 riportati da più testate, gli altri a richiesta ----------
+  const SHOW = 3;
   const facts = (s.facts || []).slice().sort((a, b) => (b.n || 0) - (a.n || 0));
-  const factsHTML = facts.map((f, i) => "<li" + (i >= SHOW ? ' class="more-hidden"' : "") + '><span class="tx">' + esc(f.text) +
-    '</span><span class="n">' + (f.n || 1) + (f.n > 1 ? " testate" : " testata") + "</span></li>").join("");
-  const factsBlock = facts.length ? '<section class="block" aria-labelledby="ft-h"><h2 id="ft-h"><span class="bar" aria-hidden="true"></span>Fatti condivisi</h2><ol class="facts" id="facts">' +
-    factsHTML + "</ol>" + (facts.length > SHOW ? '<button type="button" class="btn" id="more-facts" aria-expanded="false" aria-controls="facts">Mostra gli altri ' + (facts.length - SHOW) + " fatti</button>" : "") + "</section>" : "";
+  const factLi = (f) => {
+    const n = f.n || 1;
+    const who = Array.isArray(f.who) && f.who.length ? f.who.join(", ") : "";
+    return '<li><p class="tx">' + esc(f.text) + '</p><p class="who">' + esc((n === 1 ? "1 testata" : n + " testate") + (who ? ": " + who : "")) + "</p></li>";
+  };
+  const moreLabel = "Mostra tutti i " + facts.length + " fatti";
+  const factsBlock = facts.length ? '<section class="block" aria-labelledby="ft-h"><h2 id="ft-h">Su cosa concordano</h2><ol class="facts">' + facts.slice(0, SHOW).map(factLi).join("") + "</ol>" +
+    (facts.length > SHOW ? '<div class="collapse" id="facts-more" inert><div class="collapse-in"><ol class="facts" start="' + (SHOW + 1) + '">' + facts.slice(SHOW).map(factLi).join("") + "</ol></div></div>" +
+      '<button type="button" class="btn-text" id="more-facts" aria-expanded="false" aria-controls="facts-more">' + moreLabel + CHEV + "</button>" : "") + "</section>" : "";
 
   // ---------- divergenze, parere, cronologia, domande ----------
   const divs = (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + "</h3><dl>" +
     (d.positions || []).map((p) => "<dt>" + esc((p.who || []).join(", ")) + "</dt><dd>" + esc(p.says) + "</dd>").join("") + "</dl></div>").join("");
-  const divBlock = '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Dove divergono</h2>' +
-    (divs || '<p style="margin-top:10px">Le testate lette concordano sui fatti principali.</p>') + "</section>";
+  const divBlock = '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Dove si dividono</h2>' +
+    (divs || '<p class="plain">Le testate lette concordano sui fatti principali.</p>') + "</section>";
   const paras = String(s.view || "").split(/\n\s*\n/).filter((p) => p.trim()).map((p) => "<p>" + esc(p.trim()) + "</p>").join("");
   const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h"><img class="logo-light" src="assets/img/gerico-mark.svg" alt=""><img class="logo-dark" src="assets/img/gerico-mark-dark.svg" alt="">Il parere di GERICO</h2>' + paras + "</section>" : "";
-  const hist = (s.history || []).map((h) => '<li><span class="at">' + esc(G.day(h.at) + ", " + G.hm(h.at)) + "</span><span>" + esc(h.text) + "</span></li>").join("");
-  const open = (s.open || []).map((q) => "<li>" + esc(q) + "</li>").join("");
+  const disclosure = (pid, label, inner, extra) => '<section class="block disc-block' + (extra ? " " + extra : "") + '"><h2><button type="button" class="disc" aria-expanded="false" aria-controls="' + pid + '">' +
+    label + CHEV + '</button></h2><div class="collapse" id="' + pid + '" inert><div class="collapse-in">' + inner + "</div></div></section>";
+  const histList = s.history || [];
+  const hist = histList.length >= 2 ? disclosure("hist", "Come è cambiata", '<ol class="hist">' +
+    histList.map((h) => '<li><span class="at">' + esc(G.day(h.at) + ", " + G.hm(h.at)) + "</span><span>" + esc(h.text) + "</span></li>").join("") + "</ol>") : "";
+  const open = (s.open || []).length ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">Domande aperte</h2><ul class="openq">' +
+    s.open.map((q) => "<li>" + esc(q) + "</li>").join("") + "</ul></section>" : "";
 
-  $("story").innerHTML = '<p class="crumbs"><a href="index.html">Prima pagina</a> · ' + esc(G.secLabel(s.section)) + "</p>" + kicker +
-    "<h1>" + esc(s.title) + '</h1><p class="sum">' + esc(s.summary) + "</p>" + wallFig +
-    (s.change ? '<p class="latest"><strong>Ultima novità.</strong> ' + esc(s.change) + "</p>" : "") +
-    factsBlock + divBlock + viewBlock +
-    (hist ? '<section class="block" aria-labelledby="hs-h"><h2 id="hs-h">Come si è evoluta</h2><ol class="hist">' + hist + "</ol></section>" : "") +
-    (open ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">Ancora da chiarire</h2><ul class="openq">' + open + "</ul></section>" : "");
-
-  // ---------- colonna: fonti, mercati collegati, temi ----------
+  // ---------- fonti, mercati collegati, temi ----------
   const stance = { allineata: "concorda", parziale: "in parte", divergente: "diverge" };
-  const srcs = (s.sources || []).map((x) => {
+  const srcList = '<ul class="srcs">' + (s.sources || []).map((x) => {
     const u = G.safeUrl(x.url);
     const date = x.at ? G.day(x.at) : x.date ? G.dayOnly(x.date) : "";
     const meta = [x.area || x.country, x.kind, date].filter(Boolean).join(" · ");
-    return '<li><div class="top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") +
-      '<span class="st">' + esc(stance[x.stance] || "in parte") + "</span></div>" + (meta ? '<p class="meta">' + esc(meta) + "</p>" : "") +
+    return '<li><div class="src-top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") +
+      '<span class="st st-' + esc(x.stance || "parziale") + '">' + esc(stance[x.stance] || "in parte") + "</span></div>" + (meta ? '<p class="meta2">' + esc(meta) + "</p>" : "") +
       (x.angle ? '<p class="angle">' + esc(x.angle) + "</p>" : "") + "</li>";
-  }).join("");
+  }).join("") + "</ul>";
+  const nSrc = (s.sources || []).length;
+  const srcTitle = nSrc === 1 ? "La fonte" : "Le " + nSrc + " fonti";
   const linked = [];
   ((mk && mk.classes) || []).forEach((c) => (c.items || []).forEach((it) => { if (it.story === s.id) linked.push({ it, c }); }));
-  const linkedHTML = linked.length ? '<div class="linked"><h2>MERCATI COLLEGATI</h2><table><tbody>' +
-    linked.map(({ it, c }) => '<tr><th scope="row">' + esc(short(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
-      (G.move(it) ? ' <span class="' + G.tone(it, c.key) + '">' + esc(G.move(it)) + "</span>" : "") + "</td></tr>").join("") +
-    "</tbody></table><p>" + esc(mk.label || "") + (mk.asOf ? ", " + esc(G.when(mk.asOf)) : "") + '</p><a href="terminal.html">Apri nel Terminal</a></div>' : "";
+  const linkedHTML = linked.length ? '<section class="linked" aria-label="Mercati collegati"><h2>Mercati collegati</h2><table><tbody>' +
+    linked.map(({ it, c }) => '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
+      '</td><td class="mv ' + G.tone(it, c.key) + '">' + esc(typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it)) + "</td></tr>").join("") +
+    '</tbody></table><p class="when">' + esc(G.cap(mk.label || "")) + (mk.asOf ? ", " + esc(G.when(mk.asOf)) : "") + '</p><a class="more" href="terminal.html">Tutti i mercati</a></section>' : "";
   const follows = G.follows();
-  const tags = (s.tags || []).length ? '<section aria-labelledby="tt-h"><h2 id="tt-h">Temi da seguire</h2><div class="tags">' +
-    s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(t) + "</button>").join("") +
-    '</div><p class="hint">I temi seguiti finiscono nella sezione Seguiti della prima pagina.</p></section>' : "";
-  $("rail").innerHTML = (srcs ? '<section aria-labelledby="sr-h"><h2 id="sr-h">Le fonti</h2><ul class="srcs">' + srcs + "</ul></section>" : "") + linkedHTML + tags;
+  const tagsHTML = (s.tags || []).length ? '<section class="tagbox" aria-label="Temi"><h2>Segui questi temi</h2><div class="tags">' +
+    s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(t) + "</button>").join("") + "</div></section>" : "";
+
+  // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
+  const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
+  // in due tempi: prima quello che sta nello schermo, il resto al fotogramma dopo (l'arrivo sulla pagina resta leggero)
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + wallFig + factsBlock;
+  const rest = divBlock + viewBlock + narrow + hist + open;
+
+  // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
+  const h1 = $("st-title");
+  if (h1 && h1.textContent === title && $("st-body")) {
+    $("st-meta").innerHTML = metaHTML;
+    $("st-body").innerHTML = body;
+    $("st-body").classList.add("reveal");
+  } else {
+    $("story").innerHTML = back + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
+  }
+  requestAnimationFrame(() => setTimeout(() => {
+    $("st-body").insertAdjacentHTML("beforeend", rest);
+    $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcList + "</section>" : "") + linkedHTML + tagsHTML;
+  }, 0));
 
   // ---------- eventi ----------
-  const more = $("more-facts");
-  if (more) more.addEventListener("click", () => {
-    const list = $("facts"), openNow = !list.classList.contains("open");
-    list.classList.toggle("open", openNow);
-    more.setAttribute("aria-expanded", String(openNow));
-    more.textContent = openNow ? "Mostra meno fatti" : "Mostra gli altri " + (facts.length - SHOW) + " fatti";
-  });
-  $("rail").addEventListener("click", (e) => {
+  // arrivati dalla prima pagina, «Prima pagina» torna indietro: stessa posizione e titolo che rifà il percorso
+  let fromHome = false;
+  try {
+    const vt = JSON.parse(sessionStorage.getItem("gerico.vt") || "null");
+    const ref = document.referrer ? new URL(document.referrer) : null;
+    fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
+  } catch (err) { /* niente */ }
+  document.addEventListener("click", (e) => {
+    if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }
+    const t = e.target.closest(".wallbtn, .disc, #more-facts");
+    if (t) {
+      const isOpen = G.toggle(t);
+      if (t.id === "more-facts") t.firstChild.textContent = isOpen ? "Mostra solo i principali" : moreLabel;
+      return;
+    }
     const b = e.target.closest("[data-follow]");
     if (!b) return;
     const f = G.toggleFollow(b.dataset.follow);
-    b.setAttribute("aria-pressed", String(f.includes(b.dataset.follow)));
+    document.querySelectorAll('[data-follow="' + CSS.escape(b.dataset.follow) + '"]').forEach((x) => x.setAttribute("aria-pressed", String(f.includes(b.dataset.follow))));
   });
 })();

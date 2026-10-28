@@ -1,3 +1,23 @@
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/storia
+  Cache-Control: no-cache
+/storia.html
+  Cache-Control: no-cache
+/terminal
+  Cache-Control: no-cache
+/terminal.html
+  Cache-Control: no-cache
+/come-funziona
+  Cache-Control: no-cache
+/come-funziona.html
+  Cache-Control: no-cache
+/privacy
+  Cache-Control: no-cache
+/privacy.html
+  Cache-Control: no-cache
 /data/*
   Cache-Control: public, max-age=300, must-revalidate
 /assets/fonts/*

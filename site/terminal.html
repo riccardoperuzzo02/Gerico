@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261028-3">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261028-4">
 <script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s)}catch(e){}</script>
 </head>
 <body class="term">
@@ -63,7 +63,6 @@
 </div>
 <p class="wrap t-msg" id="cmd-help" aria-live="polite"></p>
 <div class="wrap tv" id="tv"></div>
-<div class="wrap" id="stale" aria-live="polite"></div>
 
 <main class="wrap t-main" id="main">
 <section class="t-panel" id="map-panel" aria-labelledby="map-h" tabindex="-1">
@@ -75,6 +74,7 @@
 </div>
 </div>
 <p class="t-sub" id="map-sub">Ogni quadrato è una Borsa: più è grande, più pesa nell'indice mondiale MSCI ACWI.</p>
+<p class="t-asof" id="asof">&nbsp;</p>
 <div class="t-mapwrap"><div class="t-map tmap" id="map"></div><div class="t-ring" id="ring" aria-hidden="true"></div></div>
 <div class="t-legend" id="legend"></div>
 <div class="t-detail" id="detail" aria-live="polite"><p>Tocca un quadrato per vedere il dettaglio.</p></div>
@@ -98,7 +98,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js?v=20261028-3"></script>
-<script src="assets/js/terminal.js?v=20261028-3"></script>
+<script src="assets/js/common.js?v=20261028-4"></script>
+<script src="assets/js/terminal.js?v=20261028-4"></script>
 </body>
 </html>

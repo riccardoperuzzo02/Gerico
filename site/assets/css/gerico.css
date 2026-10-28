@@ -172,6 +172,7 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100svh - var(--t
   overflow: auto; overscroll-behavior: contain;
 }
 .menu::backdrop { background: rgba(0, 0, 0, 0.32); }
+.menu.warm { display: block; visibility: hidden; pointer-events: none; }
 .menu-in { padding: 6px 16px calc(20px + env(safe-area-inset-bottom)); }
 .grab { width: 36px; height: 5px; margin: 0 auto; border-radius: 3px; background: var(--fill); }
 .menu-head { display: flex; align-items: center; justify-content: space-between; min-height: 52px; }
@@ -326,7 +327,7 @@ html.scrolled .sec-nav::after { opacity: 1; }
   min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px;
   background: var(--group); color: var(--link); font-size: 0.9375rem; font-weight: 700; cursor: pointer;
 }
-.next { margin-top: 40px; }
+.next { margin-top: 28px; }
 .next a {
   position: relative; display: grid; gap: 4px; padding: 16px 44px 16px 18px; border-radius: var(--radius);
   background: var(--group); color: var(--ink); text-decoration: none;
@@ -383,10 +384,10 @@ html.scrolled .sec-nav::after { opacity: 1; }
 .chev { flex: none; }
 [aria-expanded="true"] > .chev { transform: rotate(180deg); }
 
-.block { margin-top: 36px; }
+.block { margin-top: 30px; }
 .block > h2 { font-size: 1.375rem; line-height: 1.25; font-weight: 700; letter-spacing: -0.012em; }
 .facts { margin-top: 4px; }
-.facts li { padding: 14px 0; border-top: 1px solid var(--rule); }
+.facts li { padding: 12px 0; border-top: 1px solid var(--rule); }
 .facts:first-of-type li:first-child { border-top: 0; }
 .facts .tx { font-size: 1.0625rem; line-height: 1.6; }
 .facts .who { margin-top: 4px; font-size: 0.8125rem; line-height: 1.45; color: var(--muted); }
@@ -404,12 +405,12 @@ html.scrolled .sec-nav::after { opacity: 1; }
 .pos dt { font-size: 0.8125rem; line-height: 1.4; font-weight: 700; color: var(--ink-3); }
 .pos dd { margin-top: 3px; line-height: 1.6; }
 @media (min-width: 760px) { .pos-list.two { grid-template-columns: 1fr 1fr; gap: 20px; } }
-.view-panel { margin-top: 36px; padding: 18px 18px 20px; border-radius: var(--radius); background: var(--palm-weak); }
+.view-panel { margin-top: 30px; padding: 18px 18px 20px; border-radius: var(--radius); background: var(--palm-weak); }
 .view-panel h2 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
 .view-panel p { margin-top: 10px; font-size: 1.0625rem; line-height: 1.65; color: var(--ink-2); }
 
 /* sezioni che si aprono: un gruppo arrotondato con il titolo come pulsante */
-.disc-block { margin-top: 28px; border-radius: var(--radius); background: var(--group); }
+.disc-block { margin-top: 20px; border-radius: var(--radius); background: var(--group); }
 .disc-block > h2 { font-size: 1.125rem; }
 .disc {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
@@ -442,7 +443,7 @@ html.scrolled .sec-nav::after { opacity: 1; }
 .story-side h2, .tagbox h2 { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em; }
 .linked { margin-top: 20px; padding: 16px 16px 2px; border-radius: var(--radius); background: var(--group); }
 .linked .when { margin-top: 8px; }
-.tagbox { margin-top: 28px; }
+.tagbox { margin-top: 24px; }
 .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
   min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px;
@@ -557,6 +558,8 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .t-headrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .t-seg { flex: 0 0 200px; }
 .t-sub { margin: 10px 0 12px; font-size: 0.875rem; line-height: 1.5; color: var(--t-ink-2); }
+.t-asof { min-height: 1.5em; margin: -8px 0 12px; font-size: 0.8125rem; line-height: 1.5; color: var(--t-ink-3); }
+.t-asof.stale { color: var(--t-accent); font-weight: 600; }
 .t-mapwrap { position: relative; }
 .t-map { position: relative; height: 560px; border-radius: 10px; overflow: hidden; background: var(--t-bg); }
 .t-ring { position: absolute; left: 0; top: 0; z-index: 2; border: 3px solid #F0B44C; pointer-events: none; opacity: 0; }

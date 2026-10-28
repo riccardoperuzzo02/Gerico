@@ -202,8 +202,12 @@
   function renderStatus() {
     const asOf = (tm && tm.asOf) || (mk && mk.asOf);
     $("st-line").textContent = (asOf ? "Aggiornato " + G.when(asOf) : "Dati non disponibili") + " · prossimo " + G.nextUpdate();
-    if (asOf && G.hoursAgo(asOf) > 30) {
-      $("stale").innerHTML = '<p class="t-stale">I dati di mercato sono di ' + esc(G.longDay(asOf)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
+    // la data dei dati sta sotto la mappa, in una riga già riservata: nessun salto quando arriva
+    if (asOf) {
+      const stale = G.hoursAgo(asOf) > 30, w = G.when(asOf);
+      $("asof").textContent = stale ? "Dati del " + G.day(asOf) + ", non ancora aggiornati"
+        : /^alle /.test(w) ? "Dati delle " + w.slice(5) : /^il /.test(w) ? "Dati del " + w.slice(3) : "Dati di " + w;
+      $("asof").classList.toggle("stale", stale);
     }
   }
 

@@ -352,6 +352,15 @@
       });
       menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
       menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
+      // il primo disegno del menu si prepara quando il browser è libero: la prima apertura resta leggera
+      const warm = () => {
+        if (menu.open) return;
+        menu.classList.add("warm");
+        void menu.offsetHeight;
+        menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        menu.classList.remove("warm");
+      };
+      if (window.requestIdleCallback) requestIdleCallback(warm, { timeout: 2500 }); else setTimeout(warm, 1500);
       // la pagina in cui sei è segnata nel menu
       const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });

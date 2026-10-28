@@ -46,7 +46,9 @@
   --top-h: 52px;
   --sans: "Atkinson Hyperlegible Next", Verdana, sans-serif;
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
-  --spring: linear(0, 0.014 2%, 0.074 5%, 0.164 8%, 0.308 12%, 0.454 16%, 0.589 20%, 0.731 25%, 0.839 30%, 0.916 35%, 0.966 40%, 1.001 46%, 1.017 53%, 1.020 60%, 1.014 70%, 1.007 80%, 1);
+  /* curve cubic-bezier, non linear(): Safari anima da solo (senza il thread della pagina) solo queste */
+  --snap: cubic-bezier(0.3, 1.2, 0.5, 1);
+  --ease-sheet: cubic-bezier(0.32, 0.72, 0, 1);
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -639,14 +641,18 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .intro-screen, .intro-word { display: none; }
 html.intro-run .intro-screen {
   display: block; position: fixed; inset: 0; z-index: 90; background: var(--ground);
-  animation: intro-safety 0s linear 3s forwards;
+  animation: intro-safety 0s linear 4.5s forwards;
 }
+/* il nome parte invisibile: lo fa comparire lo script quando il carattere è pronto (niente lampi né cambi di carattere) */
 html.intro-run .intro-word {
-  display: block; position: fixed; left: 50%; top: 50%; z-index: 91; transform: translate(-50%, -50%);
+  display: block; position: fixed; left: 50%; top: 50%; z-index: 91; transform: translate(-50%, -50%); opacity: 0;
   color: var(--brand); font-size: 48px; font-weight: 800; letter-spacing: 0.07em; line-height: 1; white-space: nowrap;
-  pointer-events: none; animation: intro-safety 0s linear 3s forwards;
+  pointer-events: none; animation: intro-safety 0s linear 4.5s forwards;
 }
-html.intro-run .top .brand { opacity: 0; animation: brand-safety 0s linear 3s forwards; }
+html.intro-run .top .brand { opacity: 0; animation: brand-safety 0s linear 4.5s forwards; }
+/* le notizie aspettano sotto lo schermo e salgono mentre si apre */
+html.intro-run .reveal { animation-play-state: paused; }
+html.intro-run.intro-open .reveal { animation-play-state: running; }
 @keyframes intro-safety { to { visibility: hidden; } }
 @keyframes brand-safety { to { opacity: 1; } }
 
@@ -686,32 +692,34 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 260ms; animation-timing-function: var(--ease); }
   ::view-transition-group(story-title) { animation-duration: 380ms; animation-timing-function: var(--ease); }
 
-  /* tocco */
+  /* tocco: i controlli piccoli rispondono subito, i blocchi grandi solo se il dito resta fermo un attimo
+     (così iniziare a scorrere sopra una notizia non la fa pulsare) */
   .lead, .list .item, .seg > a, .seg > button, .chips button, .t-btn, .tag, .btn-text, .disc, .wallbtn,
   .menu-btn, .menu-x, .menu-links a, .back, .more, .t-news li, .share, .next a {
-    transition: transform 120ms var(--ease);
+    transition: transform 140ms var(--ease);
   }
   .toast { transition: opacity 200ms var(--ease), transform 200ms var(--ease); }
   .lead h2 a::after, .item h2 a::after { transition: opacity 120ms var(--ease); }
-  .lead:active, .list .item:active, .seg > a:active, .seg > button:active, .chips button:active, .t-btn:active, .tag:active,
+  .seg > a:active, .seg > button:active, .chips button:active, .t-btn:active, .tag:active,
   .btn-text:active, .disc:active, .wallbtn:active, .menu-btn:active, .menu-x:active, .menu-links a:active, .back:active, .more:active,
-  .share:active, .next a:active {
+  .share:active {
     transform: scale(0.98);
   }
+  .lead:active, .list .item:active, .next a:active { transform: scale(0.985); transition-delay: 90ms; }
 
   /* controlli */
-  .seg-ind { transition: transform 260ms var(--spring), opacity 150ms var(--ease); }
+  .seg-ind { transition: transform 300ms var(--snap), opacity 150ms var(--ease); }
   .top::after, .sec-nav::after { transition: opacity 200ms var(--ease); }
   .top-title { transform: translateY(4px); transition: opacity 200ms var(--ease), transform 200ms var(--ease); }
   .top.scrolled .top-title { transform: none; }
   .chev { transition: transform 260ms var(--ease); }
   .collapse { transition: height 280ms var(--ease), visibility 0s linear 280ms; }
   .collapse.open { transition: height 280ms var(--ease), visibility 0s; }
-  .t-ring.ready { transition: transform 380ms var(--spring), width 380ms var(--spring), height 380ms var(--spring), opacity 200ms var(--ease); }
+  /* l'anello cambia posto e misura insieme: tutte proprietà di impaginazione, così restano sincronizzate */
+  .t-ring.ready { transition: left 360ms var(--ease), top 360ms var(--ease), width 360ms var(--ease), height 360ms var(--ease), opacity 200ms var(--ease); }
 
   /* menu: sale dal basso sul telefono, scende dall'alto sul computer */
-  .menu { box-shadow: var(--sheet-shadow), 0 80px 0 var(--group); }
-  .menu[open] { animation: sheet-in 340ms var(--spring); }
+  .menu[open] { animation: sheet-in 420ms var(--ease-sheet); }
   .menu.closing { animation: sheet-out 220ms var(--ease) forwards; }
   .menu[open]::backdrop { animation: fade-in 240ms var(--ease); }
   .menu.closing::backdrop { animation: fade-out 220ms var(--ease) forwards; }

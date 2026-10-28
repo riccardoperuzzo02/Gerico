@@ -286,23 +286,39 @@
     }, { rootMargin: margin }).observe(target);
   };
 
-  // intro: alla prima apertura del sito in questa scheda il nome GERICO compare al centro e va al suo posto.
+  // intro: alla prima apertura del sito in questa scheda il nome GERICO compare al centro, resta un momento e va al suo posto.
   // Finché la scheda resta aperta non si rivede (memoria di sessione). Con «riduci movimento» non c'è.
+  // Solo transform e opacity con curve cubic-bezier: Safari le anima da solo, anche mentre la pagina sotto si sta disegnando.
+  const afterIntro = [];
+  // ciò che deve entrare in scena (mappa, numeri) aspetta che lo schermo dell'intro si apra
+  G.afterIntro = (fn) => {
+    const c = document.documentElement.classList;
+    if (c.contains("intro-run") && !c.contains("intro-open")) afterIntro.push(fn); else fn();
+  };
   G.intro = () => {
     const html = document.documentElement;
     if (!html.classList.contains("intro-run")) return;
     const scr = document.querySelector(".intro-screen"), word = document.querySelector(".intro-word"), brand = document.querySelector(".top .brand");
-    let ended = false;
+    let ended = false, opened = false;
+    const open = () => {
+      if (opened) return;
+      opened = true;
+      html.classList.add("intro-open");
+      afterIntro.splice(0).forEach((fn) => { try { fn(); } catch (e) { /* niente */ } });
+    };
     const end = () => {
       if (ended) return;
       ended = true;
-      html.classList.remove("intro-run");
+      open();
+      html.classList.remove("intro-run", "intro-open");
+      [word, scr, brand].forEach((el) => el && el.getAnimations && el.getAnimations().forEach((a) => a.cancel()));
     };
     try { sessionStorage.setItem("gerico.intro", "1"); } catch (e) { /* niente */ }
     if (!scr || !word || !brand || !word.animate) return end();
-    const E = "cubic-bezier(0.2, 0.8, 0.2, 1)", base = "translate(-50%, -50%)", t0 = performance.now();
-    word.animate([{ opacity: 0, transform: base + " scale(0.94)" }, { opacity: 1, transform: base }], { duration: 260, easing: E, fill: "both" });
-    // il viaggio verso l'intestazione si misura con il carattere già caricato, così arriva esatto
+    // tempi in millisecondi: il nome compare (IN), resta fermo fino a STAY, poi viaggia (MOVE) e lascia il posto al nome vero (OUT)
+    const IN = 480, STAY = 1150, MOVE = 680, OUT = 140, T = STAY + MOVE + OUT;
+    const base = "translate(-50%, -50%)";
+    // si parte con il carattere già caricato: niente cambio di carattere a metà e arrivo esatto
     const go = () => {
       if (ended) return;
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
@@ -311,17 +327,29 @@
       const b = range.getBoundingClientRect(), w = word.getBoundingClientRect();
       const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
       const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
-      const lag = performance.now() - t0;
-      const move = word.animate([{ transform: base }, { transform: base + " translate(" + dx.toFixed(1) + "px, " + dy.toFixed(1) + "px) scale(" + s.toFixed(4) + ")" }],
-        { duration: 520, delay: Math.max(0, 420 - lag), easing: E, fill: "both" });
-      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 380, delay: Math.max(0, 500 - lag), easing: "ease-out", fill: "both" });
-      move.finished.then(end, end);
+      const there = base + " translate(" + dx.toFixed(2) + "px, " + dy.toFixed(2) + "px) scale(" + s.toFixed(4) + ")";
+      // un'unica animazione per il nome: comparsa, pausa, viaggio, dissolvenza sopra il nome vero
+      word.animate([
+        { offset: 0, opacity: 0, transform: base + " scale(0.94)", easing: "cubic-bezier(0.2, 0, 0, 1)" },
+        { offset: IN / T, opacity: 1, transform: base, easing: "linear" },
+        { offset: STAY / T, opacity: 1, transform: base, easing: "cubic-bezier(0.45, 0, 0.1, 1)" },
+        { offset: (STAY + MOVE) / T, opacity: 1, transform: there, easing: "linear" },
+        { offset: 1, opacity: 0, transform: there }
+      ], { duration: T, fill: "both" }).finished.then(end, end);
+      // il nome vero compare sotto quello in viaggio nell'istante in cui arriva: nessuno scatto
+      const k = (STAY + MOVE) / T;
+      // la riserva CSS (il nome vero ricompare dopo 4 secondi se lo script si ferma) qui non serve più
+      brand.getAnimations().forEach((a) => a.cancel());
+      brand.animate([{ opacity: 0 }, { opacity: 0, offset: k }, { opacity: 1, offset: k }, { opacity: 1 }], { duration: T, fill: "both" });
+      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 480, delay: STAY + 60, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" });
+      setTimeout(open, STAY + 60);
+      setTimeout(end, T + 1200);
     };
     const font = document.fonts && document.fonts.load ? document.fonts.load('800 48px "Atkinson Hyperlegible Next"') : Promise.resolve();
-    Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
+    Promise.race([font, new Promise((r) => setTimeout(r, 700))]).then(go, go);
     // un tocco la salta
-    scr.addEventListener("pointerdown", () => { word.getAnimations().concat(scr.getAnimations()).forEach((a) => a.finish()); end(); }, { once: true });
-    setTimeout(end, 2200);
+    scr.addEventListener("pointerdown", end, { once: true });
+    setTimeout(() => { if (!word.getAnimations().length) end(); }, 1500);
   };
 
   G.initPrefs = () => {
@@ -405,14 +433,19 @@
       menu.addEventListener("click", (e) => { if (e.target === menu) close(); });
       menu.querySelectorAll("[data-close]").forEach((b) => b.addEventListener("click", close));
       // il primo disegno del menu si prepara in anticipo: la prima apertura resta leggera
+      let warmed = false;
       const warm = () => {
-        if (menu.open) return;
+        if (warmed || menu.open) return;
+        warmed = true;
         menu.classList.add("warm");
         void menu.offsetHeight;
         menu.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
         menu.classList.remove("warm");
       };
-      // si prepara quando il dito tocca il pulsante (o il pulsante prende il focus): il lavoro si divide tra tocco e apertura
+      // si prepara poco dopo l'apertura della pagina, a browser fermo (Safari non ha requestIdleCallback: un timer);
+      // se tocchi il menu prima, si prepara al tocco
+      const later = () => G.afterIntro(() => (window.requestIdleCallback ? requestIdleCallback(warm, { timeout: 2500 }) : setTimeout(warm, 1200)));
+      if (document.readyState === "complete") later(); else window.addEventListener("load", later, { once: true });
       btn.addEventListener("pointerdown", warm, { once: true });
       btn.addEventListener("focus", warm, { once: true });
       // la pagina in cui sei è segnata nel menu

@@ -308,7 +308,7 @@
       "<div><dt>Minimo</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : "n.d.") + "</dd></div></dl>" +
       '<p class="t-note">' + (it.at ? "Ultimo prezzo " + esc(G.when(it.at)) + ". " : "") + ext(it.url, "Vedi su Yahoo Finance") + "</p></div>";
     return '<li class="q" data-sym="' + esc(it.sym) + '">' + opener("q-row",
-      '<span class="q-n">' + esc(it.name) + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
+      '<span class="q-n">' + esc(it.name) + (it.stale ? "<small>fermo al " + esc(G.dayOnly(it.date)) + "</small>" : "") + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
       '<span class="q-v">' + esc(val) + '</span><span class="q-c ' + (good > 0 ? "t-up" : good < 0 ? "t-down" : "") + '">' + esc(mv) + "</span>", big) + "</li>";
   }
   function drawGroup(openSym) {

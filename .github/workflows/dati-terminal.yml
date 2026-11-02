@@ -12,9 +12,6 @@ on:
     - cron: "23 21 * * 1-5"   # dopo la chiusura di Wall Street
     - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
   workflow_dispatch:
-  push:
-    branches: [dati-terminal]
-    paths: [scripts/fin_data.py, scripts/fin_requirements.txt, .github/workflows/dati-terminal.yml]
 
 permissions:
   contents: write

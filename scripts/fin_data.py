@@ -177,21 +177,27 @@ def one_quote(yf, sym, name, key):
     return item
 
 
+OLD = {}  # i file del giro prima, per tenere il dato vecchio di uno strumento che oggi non risponde
+
+
 def fetch_quotes():
     import yfinance as yf
-    groups, errors, total = [], [], 0
+    before = {it.get("sym"): it for g in ((OLD.get("quotes.json") or {}).get("groups") or []) for it in (g.get("items") or [])}
+    groups, errors, total, good = [], [], 0, 0
     for key, label, items in QUOTES:
         rows = []
         for sym, name in items:
             total += 1
             try:
                 rows.append(one_quote(yf, sym, name, key))
+                good += 1
             except Exception as e:
                 errors.append(f"{sym}: {type(e).__name__}: {e}"[:200])
+                if before.get(sym):
+                    rows.append(dict(before[sym], stale=True))  # resta il dato di prima, con la sua data
             time.sleep(0.5)
         if rows:
             groups.append({"key": key, "label": label, "items": rows})
-    good = sum(len(g["items"]) for g in groups)
     if good < total / 2:
         raise RuntimeError(f"solo {good} strumenti su {total}. Primo errore: {errors[0] if errors else '-'}")
     return {"source": {"name": "Yahoo Finance", "via": "yfinance", "url": "https://finance.yahoo.com/"},
@@ -549,6 +555,11 @@ def main(out):
         if only and key not in only:
             continue
         t0 = time.time()
+        try:
+            with open(os.path.join(out, fname), encoding="utf-8") as f:
+                OLD[fname] = json.load(f)
+        except (OSError, ValueError):
+            OLD[fname] = None
         try:
             data = {"asOf": iso(now()), **fn()}
             save(out, fname, data)

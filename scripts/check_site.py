@@ -68,8 +68,18 @@ def check_data(site):
             need(isinstance(d, dict) and d.get("world") and d.get("europe"), "weights.json: mancano world o europe")
     else:
         warnings.append("weights.json: manca, la mappa del Terminal resterà vuota")
+    # file facoltativi: le brevi del giro delle notizie e i dati del job «Dati del Terminal»
+    optional = (("brevi.json", "items"), ("quotes.json", "groups"), ("macro.json", "series"),
+                ("sec.json", "filings"), ("sentiment.json", "assets"))
+    for name, key in optional:
+        path = os.path.join(data, name)
+        if os.path.exists(path):
+            d = load(path)
+            if d is not None:
+                need(isinstance(d, dict) and isinstance(d.get(key), list), f"{name}: manca la lista {key}")
+    known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json"} | {n for n, _ in optional}
     for path in glob.glob(os.path.join(data, "*.json")):
-        if os.path.basename(path) not in ("edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json"):
+        if os.path.basename(path) not in known:
             load(path)
 
 

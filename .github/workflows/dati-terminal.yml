@@ -1,0 +1,68 @@
+name: Dati del Terminal
+
+# Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR)
+# e le notizie di Yahoo Finance con il tono calcolato da FinBERT. Salva i file in site/data
+# e li pubblica su main, come fa l'attività «GERICO pubblicazione». Non usa crediti Claude.
+on:
+  schedule:
+    # orari in UTC: a Roma è un'ora in più d'inverno, due d'estate
+    - cron: "47 5 * * 1-5"    # prima dell'apertura europea
+    - cron: "17 11 * * 1-5"   # metà giornata
+    - cron: "52 16 * * 1-5"   # dopo la chiusura delle Borse europee
+    - cron: "23 21 * * 1-5"   # dopo la chiusura di Wall Street
+    - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
+  workflow_dispatch:
+  push:
+    branches: [dati-terminal]
+    paths: [scripts/fin_data.py, scripts/fin_requirements.txt, .github/workflows/dati-terminal.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dati-terminal-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  dati:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/fin_requirements.txt
+      - name: Modello FinBERT in cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: finbert-prosusai-1
+      - name: Librerie
+        run: |
+          python -m pip install -q --upgrade pip
+          pip install -q torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q -r scripts/fin_requirements.txt
+      - name: Scarica i dati
+        run: python scripts/fin_data.py site/data
+      - name: Controlla il sito
+        run: python scripts/check_site.py site
+      - name: Pubblica
+        run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          for f in quotes macro sec sentiment; do
+            if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
+          done
+          if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
+          git commit -q -m "Dati del Terminal del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
+          for i in 1 2 3 4; do
+            if git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 15))
+          done
+          echo "::error::Push non riuscito dopo 4 tentativi"
+          exit 1

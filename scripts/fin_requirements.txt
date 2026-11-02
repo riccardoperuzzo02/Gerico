@@ -1,0 +1,5 @@
+# Librerie del job «Dati del Terminal» (torch per CPU si installa a parte, dal suo indice)
+yfinance>=0.2.61
+requests>=2.31
+transformers==4.46.3
+huggingface-hub>=0.24,<1.0

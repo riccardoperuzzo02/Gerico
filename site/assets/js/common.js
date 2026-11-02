@@ -37,6 +37,11 @@
   G.longDay = (iso) => { const d = valid(iso); return d ? fLong.format(d) : ""; };
   G.dayKey = (d) => fKey.format(d);
   G.isToday = (iso) => { const d = valid(iso); return !!d && G.dayKey(d) === G.dayKey(new Date()); };
+  // quanti giorni di calendario (a Roma) fa: 0 oggi, 1 ieri
+  const utcDay = (key) => { const p = key.split("-").map(Number); return Date.UTC(p[0], p[1] - 1, p[2]); };
+  G.dayAge = (iso) => { const d = valid(iso); return d ? Math.round((utcDay(G.dayKey(new Date())) - utcDay(G.dayKey(d))) / 864e5) : Infinity; };
+  const fWd = new Intl.DateTimeFormat("it-IT", { weekday: "long", timeZone: TZ });
+  G.weekday = (iso) => { const d = valid(iso); return d ? fWd.format(d) : ""; };
   G.hoursAgo = (iso) => { const d = valid(iso); return d ? (Date.now() - d.getTime()) / 3600000 : Infinity; };
   G.dayOnly = (ymd) => { const d = valid(String(ymd).slice(0, 10) + "T12:00:00Z"); return d ? fDay.format(d).replace(".", "") : ""; };
   G.when = (iso) => {
@@ -48,6 +53,14 @@
     const y = new Date(); y.setDate(y.getDate() - 1);
     if (G.dayKey(d) === G.dayKey(y)) return "ieri alle " + G.hm(iso);
     return "il " + G.day(iso) + " alle " + G.hm(iso);
+  };
+  // etichetta dei dati di mercato: «ieri», «stamattina» o «venerdì» valgono solo se i dati sono di oggi
+  const RELATIVE = /ieri|oggi|stamattina|stasera|metà giornata|lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica/i;
+  G.mkWhen = (m) => {
+    const label = G.cap((m && m.label) || ""), asOf = m && m.asOf;
+    if (!asOf || !valid(asOf)) return label;
+    if (G.isToday(asOf) || !RELATIVE.test(label)) return (label ? label + ", " : "Dati ") + G.when(asOf);
+    return "Dati " + (G.dayAge(asOf) === 1 ? "di ieri" : "del " + G.day(asOf)) + ", ore " + G.hm(asOf);
   };
   G.romeNow = () => {
     const p = {};
@@ -99,10 +112,36 @@
   G.shortName = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
 
   // ---------- accordo tra le testate ----------
+  // si contano le testate, non gli articoli: con più articoli della stessa testata vale il più recente
+  const outletKey = (s) => G.shortName(s && s.name).toLowerCase().replace(/\s+/g, " ");
+  G.outlets = (src) => {
+    const by = new Map();
+    (src || []).forEach((s, i) => {
+      if (!s) return;
+      const k = outletKey(s) || "#" + i;
+      const t = Date.parse(s.at || s.date || "") || 0;
+      const prev = by.get(k);
+      if (!prev || t > prev.t) by.set(k, { s, t });
+    });
+    return Array.from(by.values()).map((x) => x.s);
+  };
   G.counts = (src) => {
     const c = { allineata: 0, parziale: 0, divergente: 0 };
-    (src || []).forEach((s) => { if (c[s.stance] !== undefined) c[s.stance]++; else c.parziale++; });
+    G.outlets(src).forEach((s) => { if (c[s.stance] !== undefined) c[s.stance]++; else c.parziale++; });
     return c;
+  };
+  // una prima pagina o una pagina di sezione: domani dirà altro, quindi non prova niente
+  G.isFrontPage = (u) => {
+    try {
+      const x = new URL(u);
+      const path = x.pathname.replace(/\/+$/, "");
+      const segs = path.split("/").filter(Boolean);
+      if (!segs.length) return true;
+      const last = segs[segs.length - 1];
+      if (/^(index|default|home)(\.\w+)?$/i.test(last)) return true;
+      if (!/\d/.test(path) && !/-/.test(last) && /\.s?html?$/i.test(last)) return true;
+      return segs.length <= 2 && !/\d/.test(path) && (last.match(/-/g) || []).length <= 2;
+    } catch (e) { return false; }
   };
   G.wall = (src, cls) => {
     const c = G.counts(src);
@@ -116,15 +155,15 @@
   };
   // la frase breve delle schede: «5 testate su 6 concordano»
   G.agreeLine = (src) => {
-    const c = G.counts(src), n = (src || []).length;
+    const c = G.counts(src), n = G.outlets(src).length;
     if (!n) return "";
     if (n === 1) return "Una sola testata";
     return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano");
   };
   const tail = (c) => (c.parziale ? ", " + c.parziale + " in parte" : "") + (c.divergente ? ", " + c.divergente + (c.divergente === 1 ? " diverge" : " divergono") : "");
-  G.agreeShort = (src) => { const c = G.counts(src), n = (src || []).length; return c.allineata + " su " + n + " concordano" + tail(c); };
+  G.agreeShort = (src) => { const c = G.counts(src), n = G.outlets(src).length; return c.allineata + " su " + n + " concordano" + tail(c); };
   G.agreeLong = (src) => {
-    const c = G.counts(src), n = (src || []).length;
+    const c = G.counts(src), n = G.outlets(src).length;
     if (n === 1) return c.allineata ? "Una sola testata riporta questi fatti." : "Una sola testata, che li riporta in parte.";
     return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano") + " sui fatti" + tail(c) + ".";
   };
@@ -316,11 +355,15 @@
     try { sessionStorage.setItem("gerico.intro", "1"); } catch (e) { /* niente */ }
     if (!scr || !word || !brand || !word.animate) return end();
     // tempi in millisecondi: il nome compare (IN), resta fermo fino a STAY, poi viaggia (MOVE) e lascia il posto al nome vero (OUT)
-    const IN = 480, STAY = 1150, MOVE = 680, OUT = 140, T = STAY + MOVE + OUT;
+    const IN = 480, MOVE = 680, OUT = 140;
     const base = "translate(-50%, -50%)";
     // si parte con il carattere già caricato: niente cambio di carattere a metà e arrivo esatto
     const go = () => {
       if (ended) return;
+      // su un telefono lento lo schermo dell'intro è già lì da un po' mentre il carattere arriva:
+      // la pausa si accorcia di quanto si è aspettato oltre 300 ms (al massimo 500), così l'intro non ritarda la lettura
+      const late = Math.min(500, Math.max(0, (window.performance ? performance.now() : 0) - 300));
+      const STAY = Math.round(1150 - late), T = STAY + MOVE + OUT;
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
       const range = document.createRange();
       range.selectNodeContents(tn || brand);

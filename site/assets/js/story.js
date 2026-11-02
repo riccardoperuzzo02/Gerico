@@ -11,7 +11,9 @@
   const id = new URLSearchParams(location.search).get("id") || "";
   const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
   if (!ed) {
-    $("story").innerHTML = back + '<div class="empty"><h1>La storia non si è caricata.</h1><p>Riprova tra qualche minuto.</p></div>';
+    $("story").innerHTML = back + '<div class="empty"><h1>La storia non si è caricata.</h1><p>Può essere la connessione. Riprova tra poco.</p>' +
+      '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
+    $("retry").addEventListener("click", () => location.reload());
     return;
   }
   const s = (ed.stories || []).concat(ed.archive || []).find((x) => x.id === id);
@@ -23,6 +25,19 @@
   document.title = title + " · GERICO";
   const md = document.querySelector('meta[name="description"]');
   if (md && s.summary) md.setAttribute("content", s.summary);
+  // dati strutturati per i motori di ricerca, che leggono anche quello che scrive lo script
+  try {
+    const ld = document.createElement("script");
+    ld.type = "application/ld+json";
+    const img = document.querySelector('meta[property="og:image"]');
+    ld.textContent = JSON.stringify({
+      "@context": "https://schema.org", "@type": "NewsArticle", headline: title.slice(0, 110), description: s.summary || "",
+      datePublished: s.firstSeen || s.updated || undefined, dateModified: s.updated || s.firstSeen || undefined,
+      image: img ? [img.content] : undefined, mainEntityOfPage: location.origin + location.pathname + "?id=" + encodeURIComponent(id),
+      author: { "@type": "Organization", name: "GERICO" }, publisher: { "@type": "Organization", name: "GERICO" }
+    });
+    document.head.appendChild(ld);
+  } catch (err) { /* niente */ }
 
   // ---------- testa: sezione e ora, titolo, sintesi ----------
   const when = s.status === "archived" ? "archiviata" : s.updated ? "aggiornata " + G.when(s.updated) : "";
@@ -73,18 +88,21 @@
     const u = G.safeUrl(x.url);
     const date = x.at ? G.day(x.at) : x.date ? G.dayOnly(x.date) : "";
     const meta = [x.area || x.country, x.kind, date].filter(Boolean).join(" · ");
-    return '<li><div class="src-top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") +
+    // un link a una prima pagina non prova il fatto: domani quella pagina dirà altro
+    const front = u && G.isFrontPage(u) ? '<span class="fp">pagina principale</span>' : "";
+    return '<li><div class="src-top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") + front +
       '<span class="st st-' + esc(x.stance || "parziale") + '">' + esc(stance[x.stance] || "in parte") + "</span></div>" + (meta ? '<p class="meta2">' + esc(meta) + "</p>" : "") +
       (x.angle ? '<p class="angle">' + esc(x.angle) + "</p>" : "") + "</li>";
   }).join("") + "</ul>";
-  const nSrc = (s.sources || []).length;
-  const srcTitle = nSrc === 1 ? "La fonte" : "Le " + nSrc + " fonti";
+  // le testate si contano una volta; se di una testata ci sono più articoli, il titolo lo dice
+  const nSrc = (s.sources || []).length, nOut = G.outlets(s.sources).length;
+  const srcTitle = nSrc === 1 ? "La fonte" : nOut === nSrc ? "Le " + nSrc + " fonti" : "Le " + nOut + " testate, " + nSrc + " articoli";
   const linked = [];
   ((mk && mk.classes) || []).forEach((c) => (c.items || []).forEach((it) => { if (it.story === s.id) linked.push({ it, c }); }));
   const linkedHTML = linked.length ? '<section class="linked" aria-label="Mercati collegati"><h2>Mercati collegati</h2><table><tbody>' +
     linked.map(({ it, c }) => '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
       '</td><td class="mv ' + G.tone(it, c.key) + '">' + esc(typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it)) + "</td></tr>").join("") +
-    '</tbody></table><p class="when">' + esc(G.cap(mk.label || "")) + (mk.asOf ? ", " + esc(G.when(mk.asOf)) : "") + '</p><a class="more" href="terminal.html">Tutti i mercati</a></section>' : "";
+    '</tbody></table><p class="when">' + esc(G.mkWhen(mk)) + '</p><a class="more" href="terminal.html">Tutti i mercati</a></section>' : "";
   const follows = G.follows();
   const tagsHTML = (s.tags || []).length ? '<section class="tagbox" aria-label="Temi"><h2>Segui questi temi</h2><div class="tags">' +
     s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(t) + "</button>").join("") + "</div></section>" : "";
@@ -132,8 +150,9 @@
     fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
   } catch (err) { /* niente */ }
   // condividere: il foglio di condivisione del telefono, altrimenti il link copiato
+  // si condivide la pagina /s/<id>: ha titolo e sintesi nei meta, così l'anteprima su WhatsApp e simili è quella della storia
   async function share() {
-    const url = location.href;
+    const url = /^[a-z0-9][a-z0-9-]{0,150}$/.test(id) ? new URL("s/" + id, location.href).href : location.href;
     if (navigator.share) { try { await navigator.share({ title: title + " · GERICO", url }); } catch (err) { /* annullato */ } return; }
     try { await navigator.clipboard.writeText(url); G.toast("Link copiato"); } catch (err) { G.toast("Copia il link dalla barra degli indirizzi"); }
   }

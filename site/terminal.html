@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261028-6">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261102-1">
 <script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body class="term">
@@ -66,6 +66,7 @@
 <div class="wrap tv" id="tv"></div>
 
 <main class="wrap t-main" id="main">
+<h1 class="sr-only">GERICO Terminal: mercati e agenda</h1>
 <section class="t-panel" id="map-panel" aria-labelledby="map-h" tabindex="-1">
 <div class="t-headrow">
 <h2 id="map-h">Mappa dei mercati</h2>
@@ -78,6 +79,7 @@
 <p class="t-asof" id="asof">&nbsp;</p>
 <div class="t-mapwrap"><div class="t-map tmap" id="map"></div><div class="t-ring" id="ring" aria-hidden="true"></div></div>
 <div class="t-legend" id="legend"></div>
+<div class="t-vals" id="vals" aria-hidden="true"></div>
 <div class="t-detail" id="detail" aria-live="polite"><p>Tocca un quadrato per vedere il dettaglio.</p></div>
 </section>
 
@@ -99,7 +101,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js?v=20261028-6"></script>
-<script src="assets/js/terminal.js?v=20261028-6"></script>
+<script src="assets/js/common.js?v=20261102-1"></script>
+<script src="assets/js/terminal.js?v=20261102-1"></script>
 </body>
 </html>

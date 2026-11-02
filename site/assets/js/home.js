@@ -10,7 +10,10 @@
 
   const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
   if (!ed || !Array.isArray(ed.stories)) {
-    $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Riprova tra qualche minuto.</p></div>';
+    $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
+      '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
+    $("retry").addEventListener("click", () => location.reload());
+    $("side").innerHTML = "";
     return;
   }
   const stories = ed.stories.slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
@@ -24,11 +27,16 @@
     const edl = document.querySelector("#edition-line .ed-l");
     // «Mercoledì 28 ottobre · 8 notizie · ore 7:23»: sta in una riga anche sul telefono
     if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · " + stories.length + (stories.length === 1 ? " notizia" : " notizie") + " · ore ");
-    if (G.hoursAgo(lastRun) > 30) {
-      $("large-title").textContent = "Ultima edizione";
+    // «Oggi» solo sopra l'edizione di oggi. L'edizione del mattino esce alle 7:45: dalle 8:15 (o se ne manca più di una) lo si dice subito
+    const age = G.dayAge(lastRun);
+    if (age > 0) {
+      const name = age === 1 ? "Ieri" : age < 7 ? G.cap(G.weekday(lastRun)) : "Ultima edizione";
+      $("large-title").textContent = name;
       const tt = document.querySelector(".top-title");
-      if (tt) tt.textContent = "Ultima edizione";
-      $("notice").innerHTML = '<p class="notice">Questa edizione è di ' + esc(G.longDay(lastRun)) + " alle " + esc(G.hm(lastRun)) + ": l'aggiornamento di oggi non è ancora arrivato.</p>";
+      if (tt) tt.textContent = name;
+      if (age > 1 || G.romeNow().min >= 495) {
+        $("notice").innerHTML = '<p class="notice">Questa è l\'edizione di ' + esc(G.longDay(lastRun)) + " alle " + esc(G.hm(lastRun)) + ". Quella di oggi non è ancora uscita.</p>";
+      }
     }
   }
 
@@ -55,14 +63,16 @@
   }
 
   // ---------- notizie: titolo e una riga grigia ----------
+  // il punto separatore sta dentro la parte che segue: va a capo con lei e non resta da solo a fine riga
+  const SEP = '<span class="sep" aria-hidden="true">·</span>';
   function line(s, showSection) {
     const parts = [];
-    if (showSection) parts.push('<span class="sec">' + esc(G.secLabel(s.section)) + "</span>");
+    if (showSection) parts.push(["sec", esc(G.secLabel(s.section))]);
     const upd = G.updatedLabel(s, firstRun);
-    if (upd) parts.push('<span class="upd">' + esc(upd) + "</span>");
-    parts.push('<span class="agr">' + G.miniWall(s.sources) + esc(G.agreeLine(s.sources)) + "</span>");
+    if (upd) parts.push(["upd", esc(upd)]);
+    parts.push(["agr", G.miniWall(s.sources) + '<span class="agr-t">' + esc(G.agreeLine(s.sources)) + "</span>"]);
     // «Versioni diverse» solo quando almeno una testata racconta i fatti in modo diverso
-    return '<p class="line">' + parts.join('<span class="sep" aria-hidden="true">·</span>') +
+    return '<p class="line">' + parts.map(([c, h], i) => '<span class="' + c + '">' + (i ? SEP : "") + h + "</span>").join("") +
       (G.counts(s.sources).divergente ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
@@ -120,8 +130,15 @@
         '</td><td class="mv ' + G.tone(it, key) + '">' + esc(mv) + "</td></tr>";
     }).join("");
     $("side").innerHTML = '<section class="mk-box reveal" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
-      '<p class="when">' + esc(G.cap(mk.label || "")) + (mk.asOf ? ", " + esc(G.when(mk.asOf)) : "") + "</p>" +
-      '<table><tbody>' + tr + '</tbody></table><a class="more" href="terminal.html">Tutti i mercati e l\'agenda</a></section>';
+      '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
+      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">Tutti i mercati e l\'agenda</a></section>';
+  }
+  // una classe intera senza dati si dice, invece di lasciare il riquadro più corto senza spiegazione
+  function gapNote() {
+    const want = { obbligazioni: "i titoli di Stato", valute: "le valute", materie: "le materie prime" };
+    const miss = Object.keys(want).filter((k) => { const c = (mk.classes || []).find((x) => x.key === k); return !c || !(c.items || []).length; }).map((k) => want[k]);
+    if (!miss.length) return "";
+    return '<p class="mk-gap">In questo aggiornamento mancano ' + esc(miss.length > 1 ? miss.slice(0, -1).join(", ") + " e " + miss[miss.length - 1] : miss[0]) + ".</p>";
   }
 
   // ---------- eventi ----------
@@ -134,6 +151,9 @@
     state.section = next;
     markNav();
     slideFeed(dir === "dir-next" ? 1 : -1);
+    // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
+    const n = visible().length, st = $("sec-status");
+    if (st) st.textContent = (next === "tutte" ? "Tutte le notizie" : next === "seguiti" ? "Temi seguiti" : G.SECTIONS[next]) + ": " + n + (n === 1 ? " notizia" : " notizie");
   });
   // l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro: una copia del vecchio sopra il nuovo, solo transform e opacity
   function slideFeed(sgn) {

@@ -119,19 +119,28 @@
     placeRing(!how, now);
     const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
     $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
+    // sotto la mappa tutte le variazioni in chiaro, con un'area da toccare comoda anche per i quadrati piccoli.
+    // Per i lettori di schermo bastano i quadrati, che hanno già nome e variazione: qui niente doppioni.
+    $("vals").innerHTML = items.map((it) => {
+      const has = typeof it.chg === "number";
+      return '<button type="button" tabindex="-1" data-code="' + it.code + '" aria-pressed="' + (it.code === state.sel) + '"><span class="c">' + it.code + "</span>" +
+        '<span class="v' + (has ? (it.chg > 0 ? " t-up" : it.chg < 0 ? " t-down" : "") : " nd") + '">' + (has ? G.pct(it.chg) : "n.d.") + "</span></button>";
+    }).join("");
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     requestAnimationFrame(() => G.seg(document.querySelector(".t-seg")));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
   }
   function setView(v) { if (v === state.view) return; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false, "flip"); }
-  $("map").addEventListener("click", (e) => {
+  const pickTile = (e) => {
     const b = e.target.closest("[data-code]");
     if (!b) return;
     state.sel = b.dataset.code;
     G.ls.set("gerico.mapSel", state.sel);
-    drawMap(true, "select");
-  });
+    drawMap(e.currentTarget.id === "map", "select");
+  };
+  $("map").addEventListener("click", pickTile);
+  $("vals").addEventListener("click", pickTile);
   document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
   let size = "";
   if (window.ResizeObserver) {
@@ -180,7 +189,7 @@
   function table(key, cols, target, extraNote) {
     const c = cls(key);
     if (!mk) { $(target).innerHTML = '<p class="t-na">Dati di mercato non disponibili.</p>'; return; }
-    if (!c || !(c.items || []).length) { $(target).innerHTML = '<p class="t-na">' + esc((c && c.note) || "Nessun dato verificato in questo aggiornamento.") + "</p>"; return; }
+    if (!c || !(c.items || []).length) { $(target).innerHTML = '<p class="t-na t-warn">' + esc((c && c.note) || "Nessun dato verificato in questo aggiornamento.") + "</p>"; return; }
     const common = commonNote(c.items);
     const notes = c.items.map((it) => ownNote(it.note, common));
     const rows = c.items.map((it, i) => {
@@ -190,8 +199,9 @@
       return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
         esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '"' + num + ">" + esc(mv) + "</td></tr>";
     }).join("");
-    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
-      "</th></tr></thead><tbody>" + rows + "</tbody></table>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
+    // con il testo molto grande la tabella scorre di lato da sola, la pagina no
+    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<div class="t-scroll"><table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
+      "</th></tr></thead><tbody>" + rows + "</tbody></table></div>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
   function renderAgenda() {
@@ -211,7 +221,11 @@
     $("next").classList.toggle("soon", soon);
     $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b> · " + esc(left) : "";
     $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
-    $("ag").innerHTML = '<ol class="t-agenda">' + items.map((it) => {
+    // un'agenda vecchia o troppo corta si dice in chiaro: chi la usa per i dati ad alto impatto deve saperlo
+    const wd = G.romeNow().wd;
+    const warn = !today ? "L'agenda di oggi non è ancora arrivata: questa è quella del " + G.dayOnly(ag.date) + "."
+      : wd >= 1 && wd <= 5 && items.length < 3 ? "Agenda forse incompleta: oggi ha " + (items.length === 1 ? "una voce sola" : "solo " + items.length + " voci") + ". Controlla gli orari dei dati ad alto impatto su un calendario economico." : "";
+    $("ag").innerHTML = (warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "") + '<ol class="t-agenda">' + items.map((it) => {
       const past = today && it.time && it.time < now;
       const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
       const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
@@ -234,7 +248,7 @@
       return;
     }
     $("nw").innerHTML = '<ul class="t-news">' + st.map((s) => {
-      const n = (s.sources || []).length, a = G.counts(s.sources).allineata;
+      const n = G.outlets(s.sources).length, a = G.counts(s.sources).allineata;
       return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + '</a><span class="ag">' + a + " su " + n + " concordano</span></li>";
     }).join("") + "</ul>";
   }

@@ -16,14 +16,17 @@ con lastError che dice quando e perché non si è aggiornato: il Terminal lo mos
 Gli esiti escono come annotazioni di GitHub Actions (::notice:: e ::warning::)."""
 import csv
 import datetime as dt
+import email.utils
 import io
 import json
 import math
 import os
+import re
 import sys
 import time
 import traceback
 from urllib.parse import quote
+from xml.etree import ElementTree
 from zoneinfo import ZoneInfo
 
 import requests
@@ -136,6 +139,17 @@ def history(yf, sym):
     raise last
 
 
+def market_time(ts):
+    try:
+        if hasattr(ts, "timestamp"):
+            return iso(dt.datetime.fromtimestamp(ts.timestamp(), UTC))
+        if ts:
+            return iso(dt.datetime.fromtimestamp(int(float(ts)), UTC))
+    except (TypeError, ValueError, OverflowError, OSError):
+        pass
+    return ""
+
+
 def one_quote(yf, sym, name, key):
     t, h = history(yf, sym)
     closes = [float(c) for c in h["Close"].tolist()]
@@ -144,11 +158,7 @@ def one_quote(yf, sym, name, key):
         raise ValueError("serie troppo corta")
     meta = getattr(t, "history_metadata", None) or {}
     last, prev = closes[-1], closes[-2]
-    ts = meta.get("regularMarketTime")
-    try:
-        at = iso(dt.datetime.fromtimestamp(int(ts), UTC)) if ts else ""
-    except (TypeError, ValueError, OverflowError):
-        at = ""
+    at = market_time(meta.get("regularMarketTime"))
     item = {"sym": sym, "name": name, "last": num(last), "prev": num(prev), "date": dates[-1], "at": at,
             "currency": meta.get("currency") or "", "url": "https://finance.yahoo.com/quote/" + quote(sym, safe="")}
 
@@ -306,8 +316,29 @@ def sec_what(form, items):
     return SEC_FORMS.get(form, form), codes
 
 
+SEC_UAS = ["GERICO Terminal gerico@users.noreply.github.com", "GERICO gerico@users.noreply.github.com",
+           "Mozilla/5.0 (compatible; GERICO/1.0; +https://gerico.financialnews.workers.dev) gerico@users.noreply.github.com"]
+sec_ua = [None]
+
+
+def sec_get(url):
+    """La SEC rifiuta le richieste senza un User-Agent che dica chi è: si prova la forma che ha già funzionato, poi le altre."""
+    tried = []
+    for ua in ([sec_ua[0]] if sec_ua[0] else []) + [u for u in SEC_UAS if u != sec_ua[0]]:
+        r = requests.get(url, headers={"User-Agent": ua, "Accept-Encoding": "gzip, deflate"}, timeout=30)
+        if r.status_code == 200:
+            if sec_ua[0] != ua:
+                sec_ua[0] = ua
+                notice(f"SEC: risponde con User-Agent «{ua}»")
+            return r
+        title = re.search(r"<title>(.*?)</title>", r.text or "", re.S | re.I)
+        tried.append(f"{r.status_code} ({(title.group(1).strip() if title else (r.text or '')[:80]).strip()}, server {r.headers.get('server', '?')})")
+        time.sleep(1)
+    raise RuntimeError("SEC: " + "; ".join(tried))
+
+
 def fetch_sec():
-    tickers = get("https://www.sec.gov/files/company_tickers.json").json()
+    tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
     cik_of = {str(v.get("ticker", "")).upper(): int(v["cik_str"]) for v in tickers.values() if v.get("cik_str")}
     since = (dt.date.today() - dt.timedelta(days=SEC_DAYS)).isoformat()
     filings, errors, ok = [], [], 0
@@ -317,7 +348,7 @@ def fetch_sec():
             errors.append(f"{tk}: CIK non trovato")
             continue
         try:
-            rec = get(f"https://data.sec.gov/submissions/CIK{cik:010d}.json").json()["filings"]["recent"]
+            rec = sec_get(f"https://data.sec.gov/submissions/CIK{cik:010d}.json").json()["filings"]["recent"]
             ok += 1
         except Exception as e:
             errors.append(f"{tk}: {type(e).__name__}: {e}"[:200])
@@ -378,6 +409,22 @@ def parse_news(raw):
     return out
 
 
+def rss_news(sym):
+    r = get("https://feeds.finance.yahoo.com/rss/2.0/headline", {"s": sym, "region": "US", "lang": "en-US"})
+    out = []
+    for it in ElementTree.fromstring(r.content).iter("item"):
+        title, link = (it.findtext("title") or "").strip(), (it.findtext("link") or "").strip()
+        try:
+            when = email.utils.parsedate_to_datetime(it.findtext("pubDate") or "")
+        except (TypeError, ValueError):
+            continue
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=UTC)
+        if title and link.startswith("http"):
+            out.append({"title": title, "publisher": (it.findtext("source") or "").strip(), "url": link, "when": when})
+    return out
+
+
 def fetch_sentiment():
     import torch
     import yfinance as yf
@@ -400,17 +447,31 @@ def fetch_sentiment():
 
     cutoff = dt.datetime.now(UTC) - dt.timedelta(hours=NEWS_HOURS)
     assets, errors = [], []
+    found = []
     for sym, label in SENTIMENT:
+        got, how = [], []
         try:
             t = yf.Ticker(sym)
             raw = t.get_news(count=20) if hasattr(t, "get_news") else t.news
+            got = parse_news(raw)
+            how.append(f"yfinance {len(raw or [])}/{len(got)}")
+            if raw and not got:
+                first = raw[0] if isinstance(raw[0], dict) else {}
+                how.append("chiavi " + ",".join(list(first.keys())[:8]) + " / " + ",".join(list((first.get("content") or {}).keys())[:12]))
         except Exception as e:
-            errors.append(f"{sym}: {type(e).__name__}: {e}"[:200])
-            continue
-        finally:
+            how.append(f"yfinance {type(e).__name__}: {str(e)[:80]}")
+        time.sleep(0.5)
+        if len(got) < 3:
+            try:
+                extra = rss_news(sym)
+                how.append(f"rss {len(extra)}")
+                got += extra
+            except Exception as e:
+                how.append(f"rss {type(e).__name__}: {str(e)[:80]}")
             time.sleep(0.5)
+        found.append(f"{sym}: " + ", ".join(how))
         seen, news = set(), []
-        for n in sorted(parse_news(raw), key=lambda x: x["when"], reverse=True):
+        for n in sorted(got, key=lambda x: x["when"], reverse=True):
             key = n["url"].split("?")[0]
             if n["when"] < cutoff or key in seen or n["title"].lower() in seen:
                 continue
@@ -430,6 +491,7 @@ def fetch_sentiment():
                        "neu": counts["neutral"], "score": round(score, 3),
                        "news": [{"title": n["title"], "publisher": n["publisher"], "url": n["url"], "at": iso(n["when"]),
                                  "label": n["label"], "p": n["p"]} for n in news[:8]]})
+    notice("Notizie trovate. " + " | ".join(found))
     if len(assets) < 3:
         raise RuntimeError(f"notizie solo per {len(assets)} mercati. Primo errore: {errors[0] if errors else '-'}")
     return {"source": {"name": "Yahoo Finance", "via": "yfinance", "url": "https://finance.yahoo.com/news/"},

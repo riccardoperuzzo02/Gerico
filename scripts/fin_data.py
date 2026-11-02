@@ -25,7 +25,7 @@ import re
 import sys
 import time
 import traceback
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 from xml.etree import ElementTree
 from zoneinfo import ZoneInfo
 
@@ -338,7 +338,14 @@ def sec_get(url):
 
 
 def fetch_sec():
-    tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
+    try:
+        tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
+    except RuntimeError as e:
+        if "Threshold" not in str(e):
+            raise
+        notice("SEC: blocco per troppe richieste dall'indirizzo del server, riprovo tra 45 secondi")
+        time.sleep(45)
+        tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
     cik_of = {str(v.get("ticker", "")).upper(): int(v["cik_str"]) for v in tickers.values() if v.get("cik_str")}
     since = (dt.date.today() - dt.timedelta(days=SEC_DAYS)).isoformat()
     filings, errors, ok = [], [], 0
@@ -378,8 +385,17 @@ def fetch_sec():
 
 # ---------------------------------------------------------------- notizie di Yahoo Finance e FinBERT
 
-SENTIMENT = [("^GSPC", "Borsa Usa"), ("EURUSD=X", "EUR/USD"), ("USDJPY=X", "USD/JPY"), ("GBPUSD=X", "GBP/USD"),
-             ("GC=F", "Oro"), ("CL=F", "Petrolio"), ("BTC-USD", "Bitcoin"), ("NVDA", "Nvidia")]
+# simbolo, nome, parole che il titolo deve contenere per parlare davvero di quel mercato
+SENTIMENT = [("^GSPC", "Borsa Usa", r"s&p|stocks?\b|wall street|dow\b|nasdaq|equit|market"),
+             ("DX-Y.NYB", "Dollaro", r"dollar|greenback|\bdxy\b|\bfed\b|powell"),
+             ("^TNX", "Treasury", r"treasur|yields?\b|bonds?\b|\bfed\b"),
+             ("EURUSD=X", "EUR/USD", r"\beuro\b|eur/usd|eurusd|\becb\b|lagarde"),
+             ("GBPUSD=X", "GBP/USD", r"pound|sterling|gbp|bank of england|\bboe\b"),
+             ("USDJPY=X", "USD/JPY", r"\byen\b|jpy|bank of japan|\bboj\b"),
+             ("GC=F", "Oro", r"gold|bullion|xau|precious"),
+             ("CL=F", "Petrolio", r"\boil\b|crude|brent|wti|opec"),
+             ("BTC-USD", "Bitcoin", r"bitcoin|\bbtc\b|crypto"),
+             ("NVDA", "Nvidia", r"nvidia|nvda")]
 MODEL = "ProsusAI/finbert"
 NEWS_HOURS = 72
 
@@ -407,6 +423,14 @@ def parse_news(raw):
         if title and url.startswith("http"):
             out.append({"title": title, "publisher": who, "url": url, "when": when})
     return out
+
+
+WIRE = re.compile(r"^[A-Z]{2}-[A-Z0-9-]+$")  # codici di agenzia come «BC-OILS»: non sono titoli
+
+
+def publisher(url):
+    host = urlparse(url).netloc.lower().removeprefix("www.")
+    return "Yahoo Finance" if "yahoo." in host else host
 
 
 def rss_news(sym):
@@ -448,7 +472,7 @@ def fetch_sentiment():
     cutoff = dt.datetime.now(UTC) - dt.timedelta(hours=NEWS_HOURS)
     assets, errors = [], []
     found = []
-    for sym, label in SENTIMENT:
+    for sym, label, words in SENTIMENT:
         got, how = [], []
         try:
             t = yf.Ticker(sym)
@@ -470,15 +494,22 @@ def fetch_sentiment():
                 how.append(f"rss {type(e).__name__}: {str(e)[:80]}")
             time.sleep(0.5)
         found.append(f"{sym}: " + ", ".join(how))
-        seen, news = set(), []
+        seen, news, off = set(), [], 0
         for n in sorted(got, key=lambda x: x["when"], reverse=True):
             key = n["url"].split("?")[0]
-            if n["when"] < cutoff or key in seen or n["title"].lower() in seen:
+            if n["when"] < cutoff or key in seen or n["title"].lower() in seen or WIRE.match(n["title"]):
                 continue
+            # il feed di Yahoo mescola notizie generiche: conta solo quelle che parlano di questo mercato
+            if not re.search(words, n["title"], re.I):
+                off += 1
+                continue
+            if not n["publisher"]:
+                n["publisher"] = publisher(n["url"])
             seen.update({key, n["title"].lower()})
             news.append(n)
+        found[-1] += f", pertinenti {len(news)}, fuori tema {off}"
         if len(news) < 3:
-            errors.append(f"{sym}: solo {len(news)} notizie nelle ultime {NEWS_HOURS} ore")
+            errors.append(f"{sym}: solo {len(news)} notizie pertinenti nelle ultime {NEWS_HOURS} ore")
             continue
         probs = classify([n["title"] for n in news])
         counts = {"positive": 0, "negative": 0, "neutral": 0}
@@ -502,7 +533,7 @@ def fetch_sentiment():
 # ---------------------------------------------------------------- avvio
 
 PARTS = [("quotes", "quotes.json", fetch_quotes), ("macro", "macro.json", fetch_macro),
-         ("sec", "sec.json", fetch_sec), ("sentiment", "sentiment.json", fetch_sentiment)]
+         ("sentiment", "sentiment.json", fetch_sentiment), ("sec", "sec.json", fetch_sec)]
 
 
 def summary(key, d):

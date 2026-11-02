@@ -265,8 +265,156 @@
     }
   }
 
+  // ---------- dati del job «Dati del Terminal»: prezzi e grafici (yfinance), macro (FRED), tono delle notizie (FinBERT), SEC ----------
+  // pannello senza dati: sparisce, con il suo tasto
+  const hide = (panel, cmd) => {
+    $(panel).hidden = true;
+    const k = document.querySelector('[data-cmd="' + cmd + '"]');
+    if (k) k.hidden = true;
+  };
+  // da dove vengono i dati e quando: se l'ultimo aggiornamento non è riuscito si dice, con l'ora dei dati che restano
+  function srcLine(id, d, label) {
+    const stale = G.hoursAgo(d.asOf) > 30;
+    let t = label + (d.asOf ? " · " + (stale ? "dati del " + G.day(d.asOf) : "aggiornato " + G.when(d.asOf)) : "");
+    if (d.lastError && d.lastError.at) t += ". L'ultimo aggiornamento, " + G.when(d.lastError.at) + ", non è riuscito: restano i dati di prima.";
+    $(id).textContent = t;
+    $(id).classList.toggle("stale", stale || !!d.lastError);
+  }
+  const ext = (url, text) => '<a href="' + esc(G.safeUrl(url)) + '" target="_blank" rel="noopener">' + esc(text) + '<span class="sr-only"> (si apre in un\'altra scheda)</span></a>';
+  let uid = 0;
+  // riga che si apre: un pulsante e un pannello sotto (stessa animazione delle schede della storia)
+  const opener = (cls, inner, body) => {
+    const id = "x" + ++uid;
+    return '<button type="button" class="' + cls + '" aria-expanded="false" aria-controls="' + id + '">' + inner + "</button>" +
+      '<div class="collapse" id="' + id + '" inert>' + body + "</div>";
+  };
+
+  // prezzi e grafici: un gruppo alla volta, ogni riga si apre sul grafico grande di tre mesi
+  const GROUP = { indici: "Indici", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
+  let quotes = null, grKey = G.ls.get("gerico.grGroup", "valute");
+  function quoteRow(it, rates) {
+    const d = rates ? it.bp : it.chg;
+    const good = typeof d === "number" ? (rates ? -d : d) : 0;
+    const first = (it.spark || [])[0];
+    const trend = typeof first === "number" ? (rates ? first - it.last : it.last - first) : 0;
+    const tr = trend > 0 ? "t-up" : trend < 0 ? "t-down" : "";
+    const mv = typeof d !== "number" ? "n.d." : rates ? G.signed(d, 1) + " pb" : G.pct(d);
+    const val = typeof it.last !== "number" ? "n.d." : rates ? G.num(it.last, 2) + "%" : G.price(it.sym, it.last);
+    const per = (k) => { const v = it[(rates ? "bp" : "chg") + k]; return typeof v !== "number" ? "n.d." : rates ? G.signed(v, 1) + " pb" : G.pct(v); };
+    const big = '<div class="q-more"><span class="' + tr + '">' + G.spark(it.spark, 320, 112, "sp-big", true) + "</span>" +
+      '<p class="q-range"><span>' + esc(G.dayOnly(it.sparkFrom)) + "</span><span>" + esc(G.dayOnly(it.date)) + "</span></p>" +
+      '<dl class="q-stats"><div><dt>1 settimana</dt><dd>' + per("1w") + "</dd></div><div><dt>1 mese</dt><dd>" + per("1m") + "</dd></div><div><dt>3 mesi</dt><dd>" + per("3m") + "</dd></div>" +
+      "<div><dt>Massimo</dt><dd>" + (typeof it.hi === "number" ? (rates ? G.num(it.hi, 2) + "%" : G.price(it.sym, it.hi)) : "n.d.") + "</dd></div>" +
+      "<div><dt>Minimo</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : "n.d.") + "</dd></div></dl>" +
+      '<p class="t-note">' + (it.at ? "Ultimo prezzo " + esc(G.when(it.at)) + ". " : "") + ext(it.url, "Vedi su Yahoo Finance") + "</p></div>";
+    return '<li class="q" data-sym="' + esc(it.sym) + '">' + opener("q-row",
+      '<span class="q-n">' + esc(it.name) + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
+      '<span class="q-v">' + esc(val) + '</span><span class="q-c ' + (good > 0 ? "t-up" : good < 0 ? "t-down" : "") + '">' + esc(mv) + "</span>", big) + "</li>";
+  }
+  function drawGroup(openSym) {
+    const g = quotes.groups.find((x) => x.key === grKey) || quotes.groups[0];
+    const rates = g.key === "tassi";
+    $("gr").innerHTML = '<p class="q-head" aria-hidden="true"><span>Strumento</span><span>3 mesi</span><span>Ultimo</span><span>Oggi</span></p><ul class="q-list">' +
+      g.items.map((it) => quoteRow(it, rates)).join("") + "</ul>" +
+      (rates ? '<p class="t-note">Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.</p>' : "");
+    if (openSym) {
+      const li = $("gr").querySelector('[data-sym="' + CSS.escape(openSym) + '"] .q-row');
+      if (li) G.toggle(li, true);
+    }
+  }
+  function renderQuotes(qt) {
+    const groups = ((qt && qt.groups) || []).filter((g) => (g.items || []).length);
+    if (!groups.length) return hide("p-grafici", "GRAFICI");
+    quotes = { groups };
+    if (!groups.some((g) => g.key === grKey)) grKey = groups[0].key;
+    srcLine("gr-src", qt, "Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno");
+    $("gr-tabs").innerHTML = groups.map((g) => '<button type="button" data-g="' + g.key + '" aria-pressed="' + (g.key === grKey) + '">' + esc(GROUP[g.key] || g.label) + "</button>").join("");
+    G.seg($("gr-tabs"), true);
+    drawGroup();
+    $("gr-tabs").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-g]");
+      if (!b || b.dataset.g === grKey) return;
+      grKey = b.dataset.g;
+      G.ls.set("gerico.grGroup", grKey);
+      $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      G.seg($("gr-tabs"));
+      drawGroup();
+    });
+  }
+  // un nome o un simbolo scritto nel campo dei comandi («eurusd», «oro», «s&p 500») apre il suo grafico
+  const norm = (s) => String(s || "").toUpperCase().replace(/=X$/, "").replace(/[^A-Z0-9]/g, "");
+  function findQuote(c) {
+    if (!quotes) return null;
+    const k = norm(c);
+    if (k.length < 2) return null;
+    for (const g of quotes.groups) for (const it of g.items) if (norm(it.sym) === k || norm(it.name) === k) return { g: g.key, it };
+    return null;
+  }
+
+  // macro: le serie della Fed di St. Louis, ognuna con il dato, la data e il grafico; il riquadro porta alla serie su FRED
+  const MONTHS = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  const macroDate = (s) => {
+    const d = String(s || "");
+    return /^\d{4}-\d{2}/.test(d) ? MONTHS[Number(d.slice(5, 7)) - 1] + " " + d.slice(0, 4) : "";
+  };
+  function macroVal(s, v) {
+    if (typeof v !== "number") return "n.d.";
+    if (s.unit === "%") return G.num(v, s.freq === "m" ? 1 : 2) + "%";
+    if (s.unit === "pp") return G.signed(v, 2) + " punti";
+    if (s.unit === "mila") return (s.id === "PAYEMS" ? G.signed(v, 0) : G.num(v, 0)) + " mila";
+    return G.num(v, 2);
+  }
+  function renderMacro(mc) {
+    const ss = (mc && mc.series) || [];
+    if (!ss.length) return hide("p-macro", "MACRO");
+    srcLine("mc-src", mc, "FRED, Fed di St. Louis");
+    $("mc").innerHTML = '<div class="m-grid">' + ss.map((s) => {
+      const when = s.freq === "m" ? "dato di " + macroDate(s.date) : s.freq === "s" ? "settimana al " + G.dayOnly(s.date) : G.dayOnly(s.date);
+      return '<a class="m-card" href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener"><span class="m-n">' + esc(s.name) + "</span>" +
+        '<span class="m-v">' + esc(macroVal(s, s.last)) + '</span><span class="m-d">' + esc(when) + " · prima " + esc(macroVal(s, s.prev)) + "</span>" +
+        '<span class="m-sp">' + G.spark(s.spark, 120, 28, "sp") + '</span><span class="sr-only"> (apre la serie ' + esc(s.id) + " su FRED)</span></a>";
+    }).join("") + '</div><p class="t-note">Inflazione: variazione sullo stesso mese dell\'anno prima. Posti di lavoro: nuovi posti nel mese, in migliaia.</p>';
+  }
+
+  // tono delle notizie: per ogni mercato quanti titoli FinBERT legge come positivi, neutri o negativi
+  const LAB = { positive: ["positivo", "l-pos"], negative: ["negativo", "l-neg"], neutral: ["neutro", "l-neu"] };
+  function renderSentiment(se) {
+    const as = ((se && se.assets) || []).filter((a) => a && a.n);
+    if (!as.length) return hide("p-sentiment", "SENTIMENT");
+    srcLine("se-src", se, "Titoli di Yahoo Finance delle ultime " + (se.hours || 72) + " ore, tono calcolato da FinBERT");
+    $("se").innerHTML = '<ul class="s-list">' + as.map((a) => {
+      const pp = (a.pos / a.n) * 100, ng = (a.neg / a.n) * 100;
+      const tone = a.score > 0.15 ? ["più positivo", "t-up"] : a.score < -0.15 ? ["più negativo", "t-down"] : ["misto", ""];
+      const news = (a.news || []).map((n) => {
+        const l = LAB[n.label] || LAB.neutral;
+        return '<li><span class="s-lab ' + l[1] + '">' + l[0] + "</span>" + ext(n.url, n.title) + "<small>" + esc([n.publisher, G.when(n.at)].filter(Boolean).join(" · ")) + "</small></li>";
+      }).join("");
+      return "<li>" + opener("s-row",
+        '<span class="s-n">' + esc(a.name) + "<small>" + a.n + (a.n === 1 ? " titolo" : " titoli") + "</small></span>" +
+        '<span class="s-bar" aria-hidden="true"><i class="b-pos" style="width:' + pp.toFixed(1) + '%"></i><i class="b-neu" style="width:' + (100 - pp - ng).toFixed(1) + '%"></i><i class="b-neg" style="width:' + ng.toFixed(1) + '%"></i></span>' +
+        '<span class="s-t ' + tone[1] + '">' + tone[0] + '</span><span class="sr-only">: ' + a.pos + " positivi, " + a.neu + " neutri, " + a.neg + " negativi</span>",
+        '<ul class="s-news">' + news + "</ul>") + "</li>";
+    }).join("") + '</ul><p class="t-note">Verde i titoli positivi, grigio i neutri, rosso i negativi. FinBERT è un modello per testi finanziari in inglese: legge solo il titolo e sbaglia con ironia, domande e titoli acchiappaclic. Dice il tono delle notizie, non dove andrà il prezzo.</p>';
+  }
+
+  // documenti SEC: gli ultimi depositati da un gruppo di grandi società Usa
+  function renderSec(sc) {
+    if (!sc || !Array.isArray(sc.filings)) return hide("p-sec", "SEC");
+    srcLine("sc-src", sc, "SEC EDGAR, ultimi " + (sc.days || 30) + " giorni, " + ((sc.companies || []).length || "alcune") + " grandi società Usa");
+    $("sc").innerHTML = sc.filings.length ? '<ol class="sec-list">' + sc.filings.slice(0, 25).map((f) =>
+      '<li><span class="sec-d">' + esc(G.dayOnly(f.date)) + '</span><span class="sec-k">' + esc(f.ticker) + "</span>" +
+      '<span class="sec-b">' + ext(f.url, f.company + ": " + f.what) + "<small>" + esc(f.form) + "</small></span></li>").join("") + "</ol>"
+      : '<p class="t-na">Nessun documento negli ultimi giorni.</p>';
+  }
+  // le righe che si aprono, in tutti i pannelli nuovi
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest(".q-row, .s-row");
+    if (b) G.toggle(b);
+  });
+
   // ---------- sezioni, comandi e tasti funzione ----------
-  const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie" };
+  const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie",
+    GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
     const el = $(id);
@@ -282,13 +430,20 @@
     let ok = true;
     if (c === "MAPPA EUROPA" || c === "EUROPA") { setView("europa"); go("map-panel"); }
     else if (c === "MAPPA MONDO" || c === "MONDO") { setView("mondo"); go("map-panel"); }
-    else if (PANELS[c]) go(PANELS[c]);
-    else ok = false;
-    $("cmd-help").textContent = ok ? "" : "Non trovato. Prova: mappa mondo, mappa europa, indici, valute, tassi, materie prime, agenda, notizie.";
+    else if (PANELS[c] && !$(PANELS[c]).hidden) go(PANELS[c]);
+    else {
+      const q = findQuote(c);
+      if (q) {
+        if (q.g !== grKey) { grKey = q.g; $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey))); G.seg($("gr-tabs"), true); }
+        drawGroup(q.it.sym);
+        go("p-grafici");
+      } else ok = false;
+    }
+    $("cmd-help").textContent = ok ? "" : "Non trovato. Prova: mappa europa, valute, agenda, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.";
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
-  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE" };
+  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "GRAFICI", F9: "MACRO", F10: "SENTIMENT" };
   document.addEventListener("keydown", (e) => {
     const t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
@@ -347,6 +502,12 @@
   renderAgenda();
   setInterval(renderAgenda, 30000);
   renderNews();
+  // i dati del job arrivano dopo: stanno più in basso e non devono ritardare la mappa
+  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec")]).then(([qt, mc, se, sc]) => {
+    [[renderQuotes, qt], [renderMacro, mc], [renderSentiment, se], [renderSec, sc]].forEach(([fn, d]) => {
+      try { fn(d); } catch (e) { /* un pannello rotto non ferma gli altri */ }
+    });
+  });
   renderStatus();
   G.afterIntro(() => countUp(document.body));
 })();

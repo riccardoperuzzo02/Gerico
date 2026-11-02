@@ -68,11 +68,12 @@
       .formatToParts(new Date()).forEach((x) => { p[x.type] = x.value; });
     return { wd: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday), min: (Number(p.hour) % 24) * 60 + Number(p.minute), hm: (p.hour % 24).toString().padStart(2, "0") + ":" + p.minute };
   };
-  // il sito si aggiorna alle 7:45 tutti i giorni e alle 18:45 nei giorni feriali
-  G.nextUpdate = () => {
+  // il sito si aggiorna alle 7:45 e alle 13:45 (notizie e mercati) e alle 18:45 nei giorni feriali (solo i mercati).
+  // newsOnly: il prossimo aggiornamento delle notizie
+  G.nextUpdate = (newsOnly) => {
     const now = G.romeNow();
     const names = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
-    const slots = (d) => (d === 0 || d === 6 ? [465] : [465, 1125]);
+    const slots = (d) => (newsOnly || d === 0 || d === 6 ? [465, 825] : [465, 825, 1125]);
     for (let k = 0; k < 8; k++) {
       const d = (now.wd + k) % 7;
       for (const m of slots(d)) {
@@ -110,6 +111,22 @@
   G.size = (it) => (typeof it.chg === "number" ? Math.abs(it.chg) : typeof it.bp === "number" ? Math.abs(it.bp) / 10 : -1);
   G.cleanValue = (v) => (v && v !== "—" && v !== "-" ? v : "");
   G.shortName = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
+  // numeri con un numero fisso di decimali; i prezzi dei cambi con 4 (lo yen con 2), i numeri grandi in forma corta senza decimali
+  const nfd = {};
+  G.num = (v, d) => (nfd[d] || (nfd[d] = new Intl.NumberFormat("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d }))).format(v);
+  G.price = (sym, v, compact) => G.num(v, /=X$/.test(sym) && !/JPY/.test(sym) ? 4 : compact && Math.abs(v) >= 1000 ? 0 : 2);
+  G.signed = (v, d) => sign(v) + G.num(Math.abs(v), d);
+  // grafico a linea in SVG, senza librerie: area leggera sotto la linea solo se richiesta
+  G.spark = (vals, w, h, cls, area) => {
+    const v = (vals || []).filter((x) => typeof x === "number" && isFinite(x));
+    if (v.length < 2) return "";
+    let lo = Math.min.apply(null, v), hi = Math.max.apply(null, v);
+    if (hi === lo) { hi += 1; lo -= 1; }
+    const pts = v.map((x, i) => (1 + (i * (w - 2)) / (v.length - 1)).toFixed(1) + "," + (h - 1.5 - ((x - lo) / (hi - lo)) * (h - 3)).toFixed(1));
+    const fill = area ? '<polygon points="1,' + h + " " + pts.join(" ") + " " + (w - 1) + "," + h + '" fill="currentColor" opacity="0.12"/>' : "";
+    return '<svg class="' + cls + '" viewBox="0 0 ' + w + " " + h + '" preserveAspectRatio="none" aria-hidden="true" focusable="false">' + fill +
+      '<polyline points="' + pts.join(" ") + '" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>';
+  };
 
   // ---------- accordo tra le testate ----------
   // si contano le testate, non gli articoli: con più articoli della stessa testata vale il più recente
@@ -282,7 +299,7 @@
       ind.setAttribute("aria-hidden", "true");
       box.prepend(ind);
     }
-    const on = box.querySelector(':scope > [aria-current="page"], :scope > [aria-pressed="true"]');
+    const on = box.querySelector(':scope > [aria-current="page"], :scope > [aria-current="true"], :scope > [aria-pressed="true"]');
     if (!on || !on.offsetWidth) { ind.style.opacity = "0"; ind._pos = null; return; }
     const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos;
     ind.style.opacity = "";
@@ -395,6 +412,22 @@
     setTimeout(() => { if (!word.getAnimations().length) end(); }, 1500);
   };
 
+  // passaggio tra Notizie e Terminal: la pagina nuova si apre a cerchio dal punto toccato.
+  // Il punto resta in memoria di sessione per qualche secondo: lo legge lo script nell'head della pagina nuova.
+  // Toccare la pagina in cui sei già riporta in cima, come le schede delle app.
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest("a[data-reveal]");
+    if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.getAttribute("aria-current") === "page") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" });
+      return;
+    }
+    const r = a.getBoundingClientRect();
+    const x = e.clientX || r.left + r.width / 2, y = e.clientY || r.top + r.height / 2;
+    try { sessionStorage.setItem("gerico.reveal", JSON.stringify({ x: x / innerWidth, y: y / innerHeight, to: new URL(a.href).pathname, t: Date.now() })); } catch (err) { /* niente */ }
+  });
+
   G.initPrefs = () => {
     const html = document.documentElement;
     G.intro();
@@ -496,12 +529,28 @@
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
     }
 
+    // interruttore Notizie / Terminal: arrivando dall'altra pagina l'indicatore parte da dove l'hai toccato e scivola qui
+    const mode = document.querySelector(".mode");
+    if (mode) {
+      const on = mode.querySelector("[aria-current]");
+      const other = Array.from(mode.querySelectorAll("a")).find((a) => a !== on);
+      if (html.classList.contains("vt-reveal") && on && other && !G.reduced()) {
+        const cur = on.getAttribute("aria-current");
+        on.removeAttribute("aria-current"); other.setAttribute("aria-current", cur);
+        G.seg(mode, true);
+        other.removeAttribute("aria-current"); on.setAttribute("aria-current", cur);
+        requestAnimationFrame(() => requestAnimationFrame(() => G.seg(mode)));
+      } else G.seg(mode, true);
+    }
+    // la classe del passaggio a cerchio serve solo durante il passaggio: poi non deve toccare gli altri (cambio di tema)
+    if (html.classList.contains("vt-reveal")) setTimeout(() => html.classList.remove("vt-reveal"), 1500);
+
     document.querySelectorAll(".chips").forEach(G.watchRow);
     let rz = 0;
     window.addEventListener("resize", () => {
       cancelAnimationFrame(rz);
       rz = requestAnimationFrame(() => {
-        document.querySelectorAll(".seg").forEach((s) => G.seg(s, true));
+        document.querySelectorAll(".seg, .mode").forEach((s) => G.seg(s, true));
         document.querySelectorAll(".chips").forEach((r) => r._fade && r._fade());
       });
     });

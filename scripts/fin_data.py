@@ -338,14 +338,9 @@ def sec_get(url):
 
 
 def fetch_sec():
-    try:
-        tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
-    except RuntimeError as e:
-        if "Threshold" not in str(e):
-            raise
-        notice("SEC: blocco per troppe richieste dall'indirizzo del server, riprovo tra 45 secondi")
-        time.sleep(45)
-        tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
+    # dai server di GitHub la SEC risponde spesso «Request Rate Threshold Exceeded»: il blocco è per indirizzo,
+    # riprovare nello stesso giro non serve. Il file di prima resta e il Terminal dice da quando.
+    tickers = sec_get("https://www.sec.gov/files/company_tickers.json").json()
     cik_of = {str(v.get("ticker", "")).upper(): int(v["cik_str"]) for v in tickers.values() if v.get("cik_str")}
     since = (dt.date.today() - dt.timedelta(days=SEC_DAYS)).isoformat()
     filings, errors, ok = [], [], 0
@@ -395,7 +390,7 @@ SENTIMENT = [("^GSPC", "Borsa Usa", r"s&p|stocks?\b|wall street|dow\b|nasdaq|equ
              ("GC=F", "Oro", r"gold|bullion|xau|precious"),
              ("CL=F", "Petrolio", r"\boil\b|crude|brent|wti|opec"),
              ("BTC-USD", "Bitcoin", r"bitcoin|\bbtc\b|crypto"),
-             ("NVDA", "Nvidia", r"nvidia|nvda")]
+             ("^STOXX50E", "Borse europee", r"europe|stoxx|\bdax\b|ftse|\bcac\b|\becb\b")]
 MODEL = "ProsusAI/finbert"
 NEWS_HOURS = 72
 

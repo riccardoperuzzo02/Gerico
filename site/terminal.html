@@ -19,8 +19,8 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261102-1">
-<script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261102-2">
+<script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}try{var r=JSON.parse(sessionStorage.getItem("gerico.reveal"));sessionStorage.removeItem("gerico.reveal");var p=function(u){return String(u).replace(/\/index(\.html)?$/,"/").replace(/\.html$/,"")};if(r&&Date.now()-r.t<5000&&p(r.to)===p(location.pathname)&&!matchMedia("(prefers-reduced-motion: reduce)").matches){var w=innerWidth,h=innerHeight,x=Math.round(r.x*w),y=Math.round(r.y*h),R=Math.ceil(Math.hypot(Math.max(x,w-x),Math.max(y,h-y))),c=document.createElement("style");c.textContent="@keyframes g-reveal{from{clip-path:circle(0px at "+x+"px "+y+"px)}to{clip-path:circle("+R+"px at "+x+"px "+y+"px)}}";document.head.appendChild(c);document.documentElement.classList.add("vt-reveal")}}catch(e){}</script>
 </head>
 <body class="term">
 <div class="intro-screen" aria-hidden="true"></div><div class="intro-word" aria-hidden="true">GERICO</div>
@@ -28,8 +28,9 @@
 
 <header class="top">
 <div class="wrap top-row">
-<a class="brand t-brand" href="index.html" aria-label="GERICO Terminal: torna alla prima pagina">GERICO<span>Terminal</span></a>
+<a class="brand" href="./" data-reveal aria-label="GERICO, prima pagina">GERICO</a>
 <p class="edition" id="clock"></p>
+<nav class="mode" aria-label="Notizie o Terminal"><a href="./" data-reveal>Notizie</a><a href="terminal" data-reveal aria-current="page">Terminal</a></nav>
 <button class="menu-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
 </div>
 <nav class="wrap" aria-label="Sezioni del Terminal"><div class="chips" id="keys">
@@ -40,6 +41,10 @@
 <button type="button" data-cmd="MATERIE PRIME"><span class="fk">F5</span>Materie prime</button>
 <button type="button" data-cmd="AGENDA"><span class="fk">F6</span>Agenda</button>
 <button type="button" data-cmd="NOTIZIE"><span class="fk">F7</span>Notizie</button>
+<button type="button" data-cmd="GRAFICI"><span class="fk">F8</span>Grafici</button>
+<button type="button" data-cmd="MACRO"><span class="fk">F9</span>Macro</button>
+<button type="button" data-cmd="SENTIMENT"><span class="fk">F10</span>Sentiment</button>
+<button type="button" data-cmd="SEC">SEC</button>
 </div></nav>
 </header>
 <dialog class="menu" id="menu" aria-labelledby="menu-t">
@@ -54,7 +59,7 @@
 <div class="wrap t-tools">
 <form class="t-cmd" id="cmd-form">
 <label for="cmd">Vai a</label>
-<input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="mappa europa, valute, agenda…" aria-describedby="cmd-help">
+<input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="mappa europa, eurusd, oro, macro…" aria-describedby="cmd-help">
 <button class="t-btn" type="submit">Vai</button>
 </form>
 <div class="t-live">
@@ -90,10 +95,20 @@
 </div>
 </main>
 
+<div class="wrap t-charts">
+<section class="t-panel" id="p-grafici" aria-labelledby="gr-h" tabindex="-1"><div class="t-headrow"><h2 id="gr-h">Prezzi e grafici</h2><div class="seg seg-fill t-seg t-groups" id="gr-tabs" role="group" aria-label="Gruppo di strumenti"></div></div><p class="t-src" id="gr-src">&nbsp;</p><div id="gr"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+</div>
+
 <div class="wrap t-bottom">
 <section class="t-panel" id="p-agenda" aria-labelledby="ag-h" tabindex="-1"><div class="t-headrow"><h2 id="ag-h">Agenda di oggi</h2><span class="t-next" id="next"></span></div><div id="ag"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 <section class="t-panel" id="p-materie" aria-labelledby="cm-h" tabindex="-1"><h2 id="cm-h">Materie prime</h2><div id="cm"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 <section class="t-panel" id="p-notizie" aria-labelledby="nw-h" tabindex="-1"><h2 id="nw-h">Notizie sui mercati</h2><div id="nw"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+</div>
+
+<div class="wrap t-more">
+<section class="t-panel" id="p-macro" aria-labelledby="mc-h" tabindex="-1"><h2 id="mc-h">Macro: Stati Uniti ed eurozona</h2><p class="t-src" id="mc-src">&nbsp;</p><div id="mc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-sentiment" aria-labelledby="se-h" tabindex="-1"><h2 id="se-h">Tono delle notizie</h2><p class="t-src" id="se-src">&nbsp;</p><div id="se"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-sec" aria-labelledby="sc-h" tabindex="-1"><h2 id="sc-h">Documenti SEC</h2><p class="t-src" id="sc-src">&nbsp;</p><div id="sc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 </div>
 
 <footer class="t-status">
@@ -101,7 +116,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js?v=20261102-1"></script>
-<script src="assets/js/terminal.js?v=20261102-1"></script>
+<script src="assets/js/common.js?v=20261102-2"></script>
+<script src="assets/js/terminal.js?v=20261102-2"></script>
 </body>
 </html>

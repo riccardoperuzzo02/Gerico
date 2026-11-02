@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261102-1">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261102-2">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -59,14 +59,24 @@
 
 <h2>Quando si aggiorna</h2>
 <ul>
-<li>Ogni mattina verso le 7:45: notizie, mercati e agenda del giorno.</li>
+<li>Ogni mattina verso le 7:45: notizie, brevi, mercati e agenda del giorno.</li>
+<li>Ogni giorno verso le 13:45: le novità della mattina, le brevi nuove e i dati di metà giornata.</li>
 <li>Nei giorni feriali verso le 18:45: le chiusure delle Borse europee.</li>
+<li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche e tono delle notizie nel Terminal.</li>
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
+<p>Le brevi sono notizie lette su una sola testata, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le confronta, come fa invece con le storie.</p>
 
 <h2>Il Terminal</h2>
 <p>La mappa del Terminal mostra le principali Borse del mondo. L'area di ogni quadrato è il peso del Paese nell'indice mondiale MSCI ACWI (nella vista Europa, nell'indice MSCI Europe); il colore è la variazione dell'ultima seduta dell'indice principale di quel Paese. Le variazioni arrivano dagli stessi articoli datati usati per i mercati: quando un dato non è verificato, il quadrato resta grigio.</p>
 <p>I prezzi in diretta, se li chiedi, arrivano dal widget gratuito di TradingView e hanno un ritardo diverso per ogni mercato.</p>
+<p>Gli altri pannelli del Terminal li prepara un programma che gira sui server di GitHub, non nel tuo browser: la pagina legge solo i file di GERICO.</p>
+<ul>
+<li><strong>Prezzi e grafici</strong>: da Yahoo Finance, con la libreria yfinance. Una chiusura al giorno per tre mesi; i prezzi possono avere qualche minuto di ritardo.</li>
+<li><strong>Macro</strong>: tassi, inflazione e lavoro dalla banca dati FRED della Fed di St. Louis. L'inflazione è la variazione sullo stesso mese dell'anno prima.</li>
+<li><strong>Tono delle notizie</strong>: i titoli di Yahoo Finance degli ultimi tre giorni, letti da FinBERT, un modello per testi finanziari in inglese. Dice se un titolo suona positivo, neutro o negativo per i mercati; sbaglia spesso con ironia e domande e non dice dove andrà un prezzo.</li>
+<li><strong>Documenti SEC</strong>: le comunicazioni ufficiali (8-K, 10-Q, 10-K) di un gruppo di grandi società Usa, dalla banca dati EDGAR. Il pannello compare solo quando la SEC risponde ai server di GitHub.</li>
+</ul>
 
 <h2>I limiti</h2>
 <p>GERICO lavora solo su fonti pubbliche e può sbagliare. Gli articoli originali sono sempre linkati: in caso di dubbio, conta quello che scrive la testata. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
@@ -79,7 +89,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261102-1"></script>
+<script src="assets/js/common.js?v=20261102-2"></script>
 <script>
 (async function () {
   G.initPrefs();

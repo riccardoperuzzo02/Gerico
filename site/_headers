@@ -1,9 +1,9 @@
 /
   Cache-Control: no-cache
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5stJO8HqwhZ9DFIKUDUSULx4kGwdoSRwaupXjv9K2aI='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-6ger60owRfvXdXTSruXf2R1J9GzMTmZEbqH6+tYer7g='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /index.html
   Cache-Control: no-cache
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5stJO8HqwhZ9DFIKUDUSULx4kGwdoSRwaupXjv9K2aI='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-6ger60owRfvXdXTSruXf2R1J9GzMTmZEbqH6+tYer7g='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /storia
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-NDT8Pnb0JAr6oWF79oGhEUXkad7piLWqXtZsxFnLCjA=' 'sha256-b3mlm/zPFYm3n/8gv/fN+1G6yXQVu86RcvpYZdkmEjo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
@@ -12,10 +12,10 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-NDT8Pnb0JAr6oWF79oGhEUXkad7piLWqXtZsxFnLCjA=' 'sha256-b3mlm/zPFYm3n/8gv/fN+1G6yXQVu86RcvpYZdkmEjo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /terminal
   Cache-Control: no-cache
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-pqZkY7UuJR4yrcukAOaC0JehXfOArqy51K/bzE9GcFA=' https://s3.tradingview.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.tradingview-widget.com https://*.tradingview.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-f3ky1cjUekJ2L0N0k8xdJhF9nqB1pk66N5gufo6yPMU=' https://s3.tradingview.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.tradingview-widget.com https://*.tradingview.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /terminal.html
   Cache-Control: no-cache
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-pqZkY7UuJR4yrcukAOaC0JehXfOArqy51K/bzE9GcFA=' https://s3.tradingview.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.tradingview-widget.com https://*.tradingview.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-f3ky1cjUekJ2L0N0k8xdJhF9nqB1pk66N5gufo6yPMU=' https://s3.tradingview.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.tradingview-widget.com https://*.tradingview.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /come-funziona
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Roywou2kVmgcZBMoX2A+LfcLdbovoJ6oLUKlUPxHWTU=' 'sha256-dSiK9owDIYo1nF/OgiKKQuRT/eRJyB3NhARNECnhQoM='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'

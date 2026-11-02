@@ -8,18 +8,23 @@
   // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
   if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
 
-  const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
+  const [ed, mk, qt, br] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi")]);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
     $("retry").addEventListener("click", () => location.reload());
     $("side").innerHTML = "";
+    $("ticker").hidden = true;
     return;
   }
   const stories = ed.stories.slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
   const lastRun = ed.lastRun;
   const firstRun = G.firstRunToday(stories);
   const state = { section: "tutte", follows: G.follows() };
+  // le brevi valgono per il giorno in cui sono uscite: più vecchie di 30 ore non si mostrano
+  const brevi = br && Array.isArray(br.items) && G.hoursAgo(br.asOf) < 30 ? br.items.filter((b) => b && b.title && G.safeUrl(b.url)) : [];
+  const live = new Set(stories.map((s) => s.id));
+  const archive = (Array.isArray(ed.archive) ? ed.archive : []).filter((s) => s && s.id && s.title && !live.has(s.id));
 
   // ---------- edizione ----------
   if (lastRun) {
@@ -45,15 +50,19 @@
     const h = decodeURIComponent(location.hash.slice(1));
     return h === "seguiti" || G.SECTIONS[h] ? h : "tutte";
   };
-  const followed = () => stories.filter((s) => (s.tags || []).some((t) => state.follows.includes(t)));
+  const follows = (s) => (s.tags || []).some((t) => state.follows.includes(t));
+  const followed = () => stories.filter(follows);
   const visible = () => {
     if (state.section === "tutte") return stories;
     if (state.section === "seguiti") return followed();
     return stories.filter((s) => s.section === state.section);
   };
+  // le brevi non hanno temi: nei Seguiti non compaiono
+  const visibleBrevi = () => (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || b.section === state.section)).slice(0, 15);
+  const visiblePast = () => (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : s.section === state.section))).slice(0, 8);
   function buildNav() {
     const items = [["tutte", "Tutte"]];
-    Object.keys(G.SECTIONS).forEach((k) => { if (stories.some((s) => s.section === k)) items.push([k, G.SECTIONS[k]]); });
+    Object.keys(G.SECTIONS).forEach((k) => { if (stories.some((s) => s.section === k) || brevi.some((b) => b.section === k)) items.push([k, G.SECTIONS[k]]); });
     if (state.follows.length) items.push(["seguiti", "Seguiti"]);
     $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
   }
@@ -85,23 +94,71 @@
   function itemHTML(s, showSection, i) {
     return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
   }
+  // brevi: una riga e il link all'articolo, da una sola testata
+  function breviHTML(items, showSection) {
+    if (!items.length) return "";
+    return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">In breve</h2>' +
+      '<p class="blk-sub">Notizie lette su una sola testata: GERICO non le ha ancora confrontate.</p><ul class="brevi">' +
+      items.map((b) => {
+        const t = G.isToday(b.at) ? G.hm(b.at) : b.at ? G.when(b.at) : "";
+        const meta = [showSection ? G.secLabel(b.section) : "", b.source, t].filter(Boolean).map(esc).join(" · ");
+        return '<li><a href="' + esc(G.safeUrl(b.url)) + '" target="_blank" rel="noopener">' + esc(b.title) +
+          '<span class="sr-only"> (si apre il sito della testata)</span></a>' + (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</li>";
+      }).join("") + "</ul></section>";
+  }
+  // storie dei giorni scorsi: archiviate, ancora leggibili
+  function pastHTML(items, showSection) {
+    if (!items.length) return "";
+    return '<section class="blk" aria-labelledby="past-h"><h2 class="blk-h" id="past-h">Nei giorni scorsi</h2><ul class="brevi past">' +
+      items.map((s) => {
+        const meta = [showSection ? G.secLabel(s.section) : "", s.updated ? G.cap(G.weekday(s.updated)) + " " + G.day(s.updated) : ""].filter(Boolean).map(esc).join(" · ");
+        return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a>" + (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</li>";
+      }).join("") + "</ul></section>";
+  }
   function renderFeed(viaTransition) {
     const feed = $("feed");
     feed.classList.remove("swap");
     if (!first && !viaTransition) { void feed.offsetWidth; feed.classList.add("swap"); }
-    const list = visible();
-    if (!list.length) {
-      $("feed").innerHTML = state.section === "seguiti"
+    const list = visible(), bl = visibleBrevi(), past = visiblePast();
+    if (!list.length && !bl.length) {
+      $("feed").innerHTML = (state.section === "seguiti"
         ? '<div class="empty"><h2>Nessuna storia sui temi che segui.</h2><p>I temi si seguono dalla pagina di ogni storia.</p></div>'
-        : '<div class="empty"><h2>Nessuna storia in questa sezione.</h2><p><a href="#">Torna a tutte le notizie</a>.</p></div>';
+        : '<div class="empty"><h2>Nessuna storia in questa sezione.</h2><p><a href="#">Torna a tutte le notizie</a>.</p></div>') + pastHTML(past, true);
       return;
     }
     const all = state.section === "tutte" || state.section === "seguiti";
-    // l'edizione ha una fine: si sa quando arriva la prossima
-    const end = '<p class="end"><strong>' + (state.section === "tutte" ? "Fine dell'edizione." : "Fine della sezione.") + "</strong> Prossimo aggiornamento " + esc(G.nextUpdate()) + ".</p>";
-    feed.innerHTML = leadHTML(list[0], all) +
-      (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "") + end;
+    // l'edizione ha una fine: si sa quando arrivano le prossime notizie
+    const end = '<p class="end"><strong>' + (state.section === "tutte" ? "Fine dell'edizione." : "Fine della sezione.") + "</strong> Prossimo aggiornamento delle notizie " + esc(G.nextUpdate(true)) + ".</p>";
+    const top = list.length
+      ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
+      : '<p class="none">Oggi in questa sezione non ci sono storie confrontate, solo brevi.</p>';
+    feed.innerHTML = top + breviHTML(bl, all) + pastHTML(past, all) + end;
     first = false;
+  }
+
+  // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
+  const QPICK = [["indici", "FTSEMIB.MI"], ["indici", "^GSPC"], ["valute", "EURUSD=X"], ["materie", "BZ=F"], ["materie", "GC=F"], ["cripto", "BTC-USD"]];
+  function renderTicker() {
+    const cells = [];
+    let when = "";
+    if (qt && Array.isArray(qt.groups) && G.hoursAgo(qt.asOf) < 30) {
+      QPICK.forEach(([g, sym]) => {
+        const grp = qt.groups.find((x) => x.key === g), it = grp && (grp.items || []).find((x) => x.sym === sym);
+        if (!it || typeof it.last !== "number") return;
+        cells.push({ name: it.name, value: G.price(it.sym, it.last, true), mv: typeof it.chg === "number" ? G.pct(it.chg) : "", tone: G.tone(it) });
+      });
+      when = G.when(qt.asOf);
+    }
+    if (cells.length < 4 && mk) {
+      cells.length = 0;
+      pick().forEach(({ it, key }) => cells.push({ name: G.shortName(it.name), value: G.cleanValue(it.value), mv: G.move(it).replace(" pb", ""), tone: G.tone(it, key) }));
+      when = mk.asOf ? G.when(mk.asOf) : "";
+    }
+    if (!cells.length) { $("ticker").hidden = true; return; }
+    $("tk-w").textContent = when ? " · " + when : "";
+    $("tk-row").innerHTML = cells.slice(0, 6).map((c) => '<span class="tk"><span class="tk-n">' + esc(c.name) + '</span><span class="tk-v">' + esc(c.value) +
+      '</span><span class="tk-c ' + (c.tone || "") + '">' + esc(c.mv || "—") + "</span></span>").join("");
+    $("ticker").classList.remove("sk-tk");
   }
 
   // ---------- mercati: un riquadro con 5 numeri ----------
@@ -189,5 +246,19 @@
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  buildNav(); markNav(); renderFeed(); renderSide();
+  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker();
+
+  // la pagina resta aperta nel telefono: tornandoci dopo un po', se è uscita un'edizione nuova lo si dice con un pulsante
+  let checked = Date.now();
+  document.addEventListener("visibilitychange", async () => {
+    if (document.visibilityState !== "visible" || Date.now() - checked < 3 * 60000 || $("fresh")) return;
+    checked = Date.now();
+    const now = await G.load("edition");
+    if (!now || !now.lastRun || now.lastRun === ed.lastRun) return;
+    const btn = document.createElement("button");
+    btn.type = "button"; btn.id = "fresh"; btn.className = "fresh";
+    btn.textContent = "Edizione nuova delle " + G.hm(now.lastRun) + " · Aggiorna";
+    btn.addEventListener("click", () => location.reload());
+    document.body.appendChild(btn);
+  });
 })();

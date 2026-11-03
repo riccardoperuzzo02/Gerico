@@ -71,39 +71,42 @@
     if (G.seg) G.seg($("sections"));
   }
 
-  // ---------- notizie: titolo e una riga grigia ----------
-  // il punto separatore sta dentro la parte che segue: va a capo con lei e non resta da solo a fine riga
-  const SEP = '<span class="sep" aria-hidden="true">·</span>';
-  function line(s, showSection) {
+  // ---------- notizie: occhiello sopra il titolo, come nei siti all-news ----------
+  // sezione in maiuscolo e ora dell'ultimo aggiornamento; «Aggiornata» in rosso quando la storia è cambiata oggi
+  const ago = (iso) => (G.isToday(iso) ? G.hm(iso) : G.dayAge(iso) === 1 ? "ieri" : G.day(iso));
+  function kicker(s, showSection) {
     const parts = [];
-    if (showSection) parts.push(["sec", esc(G.secLabel(s.section))]);
+    if (showSection) parts.push('<span class="k-sec">' + esc(G.secLabel(s.section)) + "</span>");
     const upd = G.updatedLabel(s, firstRun);
-    if (upd) parts.push(["upd", esc(upd)]);
-    parts.push(["agr", G.miniWall(s.sources) + '<span class="agr-t">' + esc(G.agreeLine(s.sources)) + "</span>"]);
-    // «Versioni diverse» solo quando almeno una testata racconta i fatti in modo diverso
-    return '<p class="line">' + parts.map(([c, h], i) => '<span class="' + c + '">' + (i ? SEP : "") + h + "</span>").join("") +
+    if (upd) parts.push('<span class="k-live">' + esc(upd) + "</span>");
+    else if (s.updated) parts.push('<span class="k-time">' + esc(ago(s.updated)) + "</span>");
+    return parts.length ? '<p class="kick">' + parts.join("") + "</p>" : "";
+  }
+  // sotto il titolo: il muro delle testate e quante concordano
+  function line(s) {
+    return '<p class="line"><span class="agr">' + G.miniWall(s.sources) + '<span class="agr-t">' + esc(G.agreeLine(s.sources)) + "</span></span>" +
       (G.counts(s.sources).divergente ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
   // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
   let first = true;
   function leadHTML(s, showSection) {
-    return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0"><h2>' + link(s) + "</h2>" +
-      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s, showSection) + "</article>";
+    return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" +
+      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s) + "</article>";
   }
   function itemHTML(s, showSection, i) {
-    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '"><h2>' + link(s) + "</h2>" + line(s, showSection) + "</li>";
+    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" + line(s) + "</li>";
   }
-  // brevi: una riga e il link all'articolo, da una sola testata
+  // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {
     if (!items.length) return "";
     return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">In breve</h2>' +
       '<p class="blk-sub">Notizie lette su una sola testata: GERICO non le ha ancora confrontate.</p><ul class="brevi">' +
       items.map((b) => {
-        const t = G.isToday(b.at) ? G.hm(b.at) : b.at ? G.when(b.at) : "";
-        const meta = [showSection ? G.secLabel(b.section) : "", b.source, t].filter(Boolean).map(esc).join(" · ");
-        return '<li><a href="' + esc(G.safeUrl(b.url)) + '" target="_blank" rel="noopener">' + esc(b.title) +
-          '<span class="sr-only"> (si apre il sito della testata)</span></a>' + (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</li>";
+        const meta = [showSection ? G.secLabel(b.section) : "", b.source].filter(Boolean).map(esc).join(" · ");
+        return '<li><span class="b-time' + (G.isToday(b.at) ? "" : " old") + '">' + esc(b.at ? ago(b.at) : "") + '</span><div class="b-body">' +
+          '<a href="' + esc(G.safeUrl(b.url)) + '" target="_blank" rel="noopener">' + esc(b.title) + '<span class="sr-only"> (si apre il sito della testata)</span></a>' +
+          (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</div></li>";
       }).join("") + "</ul></section>";
   }
   // storie dei giorni scorsi: archiviate, ancora leggibili
@@ -134,6 +137,32 @@
       : '<p class="none">Oggi in questa sezione non ci sono storie confrontate, solo brevi.</p>';
     feed.innerHTML = top + breviHTML(bl, all) + pastHTML(past, all) + end;
     first = false;
+  }
+
+  // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
+  // brevi con l'ora e storie nuove o aggiornate; sotto le due voci la fascia non compare
+  function renderUltim() {
+    const recent = (iso) => !!iso && G.hoursAgo(iso) >= 0 && G.hoursAgo(iso) < 18;
+    const items = [];
+    brevi.forEach((b) => { if (recent(b.at)) items.push({ at: b.at, title: b.title, url: G.safeUrl(b.url), ext: true }); });
+    stories.forEach((s) => {
+      const at = G.realChange(s) ? s.updated : s.firstSeen;
+      if (recent(at)) items.push({ at, title: G.headline(s), url: G.storyUrl(s) });
+    });
+    items.sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
+    const list = items.slice(0, 12);
+    if (list.length < 2) return;
+    const copy = (dup) => list.map((it) => '<a href="' + esc(it.url) + '"' + (it.ext ? ' target="_blank" rel="noopener"' : "") + (dup ? ' tabindex="-1"' : "") +
+      "><b>" + esc((G.isToday(it.at) ? "" : "ieri ") + G.hm(it.at)) + "</b>" + esc(it.title) + "</a>").join("");
+    const t = $("ultim-t");
+    t.innerHTML = '<span class="ultim-s">' + copy(false) + '</span><span class="ultim-s dup" aria-hidden="true">' + copy(true) + "</span>";
+    $("ultim").hidden = false;
+    // velocità costante, circa 60 pixel al secondo, qualunque sia la lunghezza della fascia
+    requestAnimationFrame(() => t.style.setProperty("--dur", Math.max(25, Math.round(t.scrollWidth / 2 / 60)) + "s"));
+    $("ultim-p").addEventListener("click", () => {
+      const p = $("ultim").classList.toggle("paused");
+      $("ultim-p").setAttribute("aria-pressed", String(p));
+    });
   }
 
   // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
@@ -246,7 +275,7 @@
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker();
+  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderUltim();
 
   // la pagina resta aperta nel telefono: tornandoci dopo un po', se è uscita un'edizione nuova lo si dice con un pulsante
   let checked = Date.now();

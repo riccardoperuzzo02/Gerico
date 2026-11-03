@@ -12,6 +12,10 @@ on:
     - cron: "23 21 * * 1-5"   # dopo la chiusura di Wall Street
     - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
   workflow_dispatch:
+  # anche dopo ogni edizione pubblicata: gli orari del cron di GitHub non sono garantiti e a volte saltano
+  push:
+    branches: [main]
+    paths: [site/data/edition.json]
 
 permissions:
   contents: write

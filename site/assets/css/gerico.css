@@ -975,3 +975,89 @@ body.term a.m-card:hover { color: var(--t-ink); background: #202A3D; }
 @media (prefers-reduced-motion: no-preference) { .fresh { animation: fresh-in 320ms var(--ease) both; } }
 @keyframes fresh-in { from { opacity: 0; transform: translate(-50%, -8px); } to { opacity: 1; transform: translate(-50%, 0); } }
 .q-n small { display: block; font-size: 0.6875rem; font-weight: 400; color: var(--t-accent); }
+
+/* ---------- 3 novembre: impaginazione da canale all-news (fascia Ultim'ora, occhielli, apertura grande), con i colori di sempre ---------- */
+
+/* fascia Ultim'ora: le notizie delle ultime ore scorrono; si ferma col pulsante, col dito o col mouse sopra */
+.ultim { background: var(--palm-weak); color: var(--ink); }
+.ultim[hidden] { display: none; }
+.ultim-in { display: flex; align-items: center; gap: 10px; height: 40px; }
+.ultim-l {
+  flex: none; padding: 4px 8px 3px; border-radius: 4px; background: var(--palm); color: var(--ground);
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.07em; line-height: 1.2; text-transform: uppercase; white-space: nowrap;
+}
+.ultim-v {
+  flex: 1 1 auto; min-width: 0; overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 14px, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 14px, #000 calc(100% - 28px), transparent);
+}
+.ultim-t { display: inline-flex; white-space: nowrap; animation: crawl var(--dur, 60s) linear infinite; will-change: transform; }
+.ultim-s { display: inline-flex; }
+.ultim-t a { display: inline-flex; align-items: baseline; gap: 8px; padding-right: 28px; color: var(--ink); font-size: 0.875rem; font-weight: 600; line-height: 40px; text-decoration: none; }
+.ultim-t a b { color: var(--palm); font-weight: 800; font-variant-numeric: tabular-nums; }
+.ultim-t a:hover { color: var(--ink); text-decoration: underline; }
+.ultim-t a:focus-visible { outline: 2px solid var(--palm); outline-offset: -4px; }
+.ultim:hover .ultim-t, .ultim:focus-within .ultim-t, .ultim.paused .ultim-t { animation-play-state: paused; }
+.ultim-p { flex: none; display: grid; place-items: center; width: 30px; height: 30px; margin-right: -4px; padding: 0; border: 0; border-radius: 50%; background: var(--press); color: var(--ink); cursor: pointer; }
+.ultim-p .i-play, .ultim.paused .ultim-p .i-pause { display: none; }
+.ultim.paused .ultim-p .i-play { display: block; }
+@keyframes crawl { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ultim-t { animation: none; }
+  .ultim-v { overflow-x: auto; scrollbar-width: none; }
+  .ultim-s.dup, .ultim-p { display: none; }
+}
+
+/* riga dell'edizione: OGGI in maiuscolo e la data, al posto del titolo grande */
+.home .large { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; padding-top: 16px; }
+.home .large h1 { font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.08em; line-height: 1.5; text-transform: uppercase; color: var(--palm); }
+.home .edition-sub { margin-top: 0; min-height: 0; font-size: 0.875rem; }
+
+/* sezioni: schede in maiuscolo con la barra sotto la scelta */
+.sec-nav { padding-top: 2px; padding-bottom: 0; box-shadow: inset 0 -1px 0 var(--rule); }
+.sec-nav .seg { min-height: 44px; padding: 0; gap: 2px; border-radius: 0; background: none; }
+.sec-nav .seg > a { min-height: 44px; padding: 0 12px; border-radius: 0; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.sec-nav .seg > [aria-current="page"] { color: var(--ink); }
+.sec-nav .seg:not(.ready) > [aria-current="page"] { background: none; box-shadow: inset 0 -3px 0 var(--palm); }
+.sec-nav .seg .seg-ind { top: auto; bottom: 0; height: 3px; border-radius: 2px 2px 0 0; background: var(--palm); box-shadow: none; }
+html.scrolled .sec-nav::after { opacity: 0; }
+
+/* occhiello sopra i titoli: sezione e ora; «Aggiornata» con un punto che pulsa */
+.kick { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 6px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; line-height: 1.35; text-transform: uppercase; }
+.k-sec { color: var(--palm); }
+.k-time { color: var(--muted); letter-spacing: 0.03em; }
+.k-live { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
+.k-live::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--palm); }
+@media (prefers-reduced-motion: no-preference) { .k-live::before { animation: live-dot 1.6s ease-in-out infinite; } }
+@keyframes live-dot { 50% { opacity: 0.3; } }
+.item h2 { font-weight: 700; }
+
+/* apertura: la prima notizia in un riquadro, con il titolo grande */
+.lead { position: relative; overflow: hidden; margin-top: 14px; padding: 18px 16px 16px; border-radius: var(--radius); background: var(--group); }
+@media (min-width: 760px) { .lead { margin: 18px 0 6px; padding: 24px 26px 20px; } }
+.lead h2 { font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem); line-height: 1.12; font-weight: 800; letter-spacing: -0.018em; }
+.lead .kick .k-sec { padding: 3px 8px 2px; border-radius: 4px; background: var(--palm); color: var(--ground); }
+.lead h2 a::after { inset: -18px -16px -200px; border-radius: 0; }
+@media (min-width: 760px) { .lead h2 a::after { inset: -24px -26px -200px; } }
+
+/* sul computer le altre notizie stanno su due colonne */
+@media (min-width: 760px) {
+  .feed { max-width: none; }
+  .list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+}
+
+/* brevi: l'ora a sinistra, come le notizie d'agenzia */
+.brevi:not(.past) li { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 0 12px; }
+.b-time { padding-top: 1px; font-size: 0.875rem; font-weight: 800; color: var(--palm); font-variant-numeric: tabular-nums; }
+.b-time.old { color: var(--muted); font-weight: 700; }
+.b-body { min-width: 0; }
+.blk-h { text-transform: uppercase; font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; }
+.blk-h::before { content: ""; display: inline-block; width: 4px; height: 0.95em; margin-right: 8px; vertical-align: -0.1em; background: var(--palm); border-radius: 1px; }
+
+/* striscia dei mercati: etichetta come le altre */
+.tk-h { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.tk-h span { letter-spacing: 0; text-transform: none; }
+
+/* storia: occhiello in maiuscolo come in prima pagina */
+.story-main .meta { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+@media (min-width: 760px) { .sec-nav { box-shadow: none; } .sec-nav .seg { width: auto; box-shadow: inset 0 -1px 0 var(--rule); } }

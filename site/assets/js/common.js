@@ -365,8 +365,17 @@
     const c = document.documentElement.classList;
     if (c.contains("intro-run") && !c.contains("intro-open")) afterIntro.push(fn); else fn();
   };
+  // entrata: una volta al giorno il nome GERICO compare al centro, il tratto dell'evidenziatore lo attraversa,
+  // il nome va al suo posto in alto e le notizie salgono a cascata, in poco più di un secondo; un tocco o uno
+  // scorrimento la saltano. Nelle altre aperture solo il tratto che passa sul nome in alto (classe intro-mini).
+  // Il contenuto è già disegnato sotto lo schermo dell'intro: l'entrata non ritarda la lettura.
+  G.today = () => new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" });
   G.intro = () => {
     const html = document.documentElement;
+    if (html.classList.contains("intro-mini")) {
+      try { sessionStorage.setItem("gerico.intro", "1"); } catch (e) { /* niente */ }
+      setTimeout(() => html.classList.remove("intro-mini"), 900);
+    }
     if (!html.classList.contains("intro-run")) return;
     const scr = document.querySelector(".intro-screen"), word = document.querySelector(".intro-word"), brand = document.querySelector(".top .brand");
     let ended = false, opened = false;
@@ -380,21 +389,19 @@
       if (ended) return;
       ended = true;
       open();
-      html.classList.remove("intro-run", "intro-open");
+      html.classList.remove("intro-run", "intro-open", "intro-go");
       [word, scr, brand].forEach((el) => el && el.getAnimations && el.getAnimations().forEach((a) => a.cancel()));
     };
-    try { sessionStorage.setItem("gerico.intro", "1"); } catch (e) { /* niente */ }
+    try { sessionStorage.setItem("gerico.intro", "1"); localStorage.setItem("gerico.introDay", JSON.stringify(G.today())); } catch (e) { /* niente */ }
     if (!scr || !word || !brand || !word.animate) return end();
-    // tempi in millisecondi: il nome compare (IN), resta fermo fino a STAY, poi viaggia (MOVE) e lascia il posto al nome vero (OUT)
-    const IN = 480, MOVE = 680, OUT = 140;
+    // tempi in millisecondi: il nome compare (IN) mentre il tratto lo attraversa (SWEEP), resta un attimo (HOLD),
+    // viaggia al suo posto (MOVE) e lascia il posto al nome vero (OUT)
+    const IN = 160, SWEEP = 340, HOLD = 110, MOVE = 540, OUT = 110;
     const base = "translate(-50%, -50%)";
     // si parte con il carattere già caricato: niente cambio di carattere a metà e arrivo esatto
     const go = () => {
       if (ended) return;
-      // su un telefono lento lo schermo dell'intro è già lì da un po' mentre il carattere arriva:
-      // la pausa si accorcia di quanto si è aspettato oltre 300 ms (al massimo 500), così l'intro non ritarda la lettura
-      const late = Math.min(500, Math.max(0, (window.performance ? performance.now() : 0) - 300));
-      const STAY = Math.round(1150 - late), T = STAY + MOVE + OUT;
+      const T = SWEEP + HOLD + MOVE + OUT;
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
       const range = document.createRange();
       range.selectNodeContents(tn || brand);
@@ -402,27 +409,30 @@
       const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
       const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
       const there = base + " translate(" + dx.toFixed(2) + "px, " + dy.toFixed(2) + "px) scale(" + s.toFixed(4) + ")";
-      // un'unica animazione per il nome: comparsa, pausa, viaggio, dissolvenza sopra il nome vero
+      // il tratto parte con il nome (animazione CSS di ::before, classe intro-go)
+      html.classList.add("intro-go");
       word.animate([
-        { offset: 0, opacity: 0, transform: base + " scale(0.94)", easing: "cubic-bezier(0.2, 0, 0, 1)" },
-        { offset: IN / T, opacity: 1, transform: base, easing: "linear" },
-        { offset: STAY / T, opacity: 1, transform: base, easing: "cubic-bezier(0.45, 0, 0.1, 1)" },
-        { offset: (STAY + MOVE) / T, opacity: 1, transform: there, easing: "linear" },
+        { offset: 0, opacity: 0, transform: base, easing: "linear" },
+        { offset: IN / T, opacity: 1, transform: base },
+        { offset: (SWEEP + HOLD) / T, opacity: 1, transform: base, easing: "cubic-bezier(0.5, 0, 0.1, 1)" },
+        { offset: (SWEEP + HOLD + MOVE) / T, opacity: 1, transform: there, easing: "linear" },
         { offset: 1, opacity: 0, transform: there }
       ], { duration: T, fill: "both" }).finished.then(end, end);
       // il nome vero compare sotto quello in viaggio nell'istante in cui arriva: nessuno scatto
-      const k = (STAY + MOVE) / T;
-      // la riserva CSS (il nome vero ricompare dopo 4 secondi se lo script si ferma) qui non serve più
+      const k = (SWEEP + HOLD + MOVE) / T;
       brand.getAnimations().forEach((a) => a.cancel());
       brand.animate([{ opacity: 0 }, { opacity: 0, offset: k }, { opacity: 1, offset: k }, { opacity: 1 }], { duration: T, fill: "both" });
-      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 480, delay: STAY + 60, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" });
-      setTimeout(open, STAY + 60);
+      // lo schermo si apre mentre il nome parte: le notizie salgono sotto di lui
+      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 420, delay: SWEEP + HOLD, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" });
+      setTimeout(open, SWEEP + HOLD);
       setTimeout(end, T + 1200);
     };
     const font = document.fonts && document.fonts.load ? document.fonts.load('800 48px "Atkinson Hyperlegible Next"') : Promise.resolve();
-    Promise.race([font, new Promise((r) => setTimeout(r, 700))]).then(go, go);
-    // un tocco la salta
+    Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
+    // un tocco o uno scorrimento la saltano
     scr.addEventListener("pointerdown", end, { once: true });
+    window.addEventListener("wheel", end, { once: true, passive: true });
+    window.addEventListener("touchmove", end, { once: true, passive: true });
     setTimeout(() => { if (!word.getAnimations().length) end(); }, 1500);
   };
 
@@ -917,6 +927,33 @@
 
     document.querySelectorAll(".chips").forEach(G.watchRow);
     G.watchTop();
+  };
+
+  // ---------- titoli da seguire: lo stesso blocco in prima pagina e nel Terminal ----------
+  // Chi produce le analisi e i conflitti di interesse: la frase la decide chi cura GERICO (vedi come-funziona.html#titoli)
+  G.TITOLI_DISC = "";
+  G.titoliFresh = (t) => !!(t && Array.isArray(t.items) && G.hoursAgo(t.asOf) < 30);
+  G.titoliHTML = (t, h) => {
+    const esc = G.esc;
+    const row = (x) => {
+      const p = typeof x.price === "number" ? G.num(x.price, x.price >= 1000 ? 0 : 2) + (x.market === "Usa" ? " $" : " €") : "";
+      const c = typeof x.chg === "number" ? ' <b class="' + (x.chg > 0 ? "up" : x.chg < 0 ? "down" : "") + '">' + G.pct(x.chg) + "</b>" : "";
+      return '<li class="tit-i"><p class="tit-top"><span class="tit-n">' + esc(x.name) + '</span><span class="tit-k">' + esc([x.ticker, x.market].filter(Boolean).join(" · ")) + "</span>" +
+        (p ? '<span class="tit-p">' + esc(p) + c + "</span>" : "") + "</p>" +
+        '<p class="tit-why"><strong>Perché</strong> ' + esc(x.why) + "</p>" +
+        (x.signal ? '<p class="tit-sig">' + esc(x.signal) + "</p>" : "") +
+        '<p class="tit-risk"><strong>Rischio</strong> ' + esc(x.risk) + "</p>" +
+        '<p class="tit-src">Fonte: ' + (x.sources || []).map((s) => '<a href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener">' + esc(s.name || "articolo") + "</a>" +
+          (s.date ? " (" + esc(G.dayOnly(s.date)) + ")" : "")).join(", ") + "</p></li>";
+    };
+    const s = h && h.summary;
+    const rec = s && s.n >= 5 ? '<p class="tit-rec">Gli ultimi ' + s.n + ": " + s.better + " meglio del loro indice dopo 5 sedute" +
+      (typeof s.avgExcess === "number" ? ", in media " + G.signed(s.avgExcess, 1) + " punti" : "") + ".</p>" : "";
+    const list = t.items.length ? '<ol class="tit-list">' + t.items.map(row).join("") + "</ol>"
+      : '<p class="tit-none">Oggi nessun titolo passa i filtri.' + (t.note ? " " + esc(t.note) : "") + "</p>";
+    return list + rec + '<p class="tit-disc">' + (G.TITOLI_DISC ? esc(G.TITOLI_DISC) + " " : "") + "Analisi automatica di GERICO " + esc(G.isToday(t.asOf) ? "delle " + G.hm(t.asOf) : "del " + G.day(t.asOf) + " alle " + G.hm(t.asOf)) +
+      ": segnali sui prezzi e notizie con data, non un consiglio di investimento. Può sbagliare e si può perdere denaro. " +
+      '<a href="come-funziona.html#titoli">Metodo e rischi</a>.</p>';
   };
 
   // ---------- mappa a quadrati (treemap squarified) ----------

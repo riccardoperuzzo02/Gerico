@@ -1200,3 +1200,49 @@ html.gp-on body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
 @media (max-width: 359px) { .gp-sk { display: none; } }
 /* con lo swipe tra le storie il titolo scorre con la pagina: niente volo del titolo */
 html[data-swipe] .story-main h1 { view-transition-name: none; }
+
+/* ========== titoli da seguire: prima pagina e Terminal ========== */
+.tit-list { margin: 8px 0 0; padding: 0; list-style: none; }
+.tit-i { padding: 12px 0; border-top: 1px solid var(--rule); }
+.tit-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.tit-n { font-size: 1.0625rem; font-weight: 800; }
+.tit-k { font-size: 0.75rem; letter-spacing: 0.03em; color: var(--muted); }
+.tit-p { margin-left: auto; font-size: 0.9375rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tit-p b.up { color: var(--up); }
+.tit-p b.down { color: var(--down); }
+body.term .tit-p b.up { color: var(--t-up); }
+body.term .tit-p b.down { color: var(--t-down); }
+.tit-why, .tit-risk { margin-top: 6px; font-size: 0.9375rem; line-height: 1.45; }
+.tit-why strong, .tit-risk strong { margin-right: 4px; font-weight: 800; }
+.tit-sig { margin-top: 4px; font-size: 0.8125rem; line-height: 1.4; color: var(--muted); }
+.tit-src { margin-top: 6px; font-size: 0.8125rem; color: var(--muted); }
+.tit-rec { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.875rem; font-weight: 700; }
+.tit-disc { margin-top: 8px; font-size: 0.75rem; line-height: 1.45; color: var(--muted); }
+.tit-none { margin-top: 8px; color: var(--muted); }
+
+/* ========== entrata: il tratto dell'evidenziatore come elemento a sé, che si può far passare ========== */
+/* il tratto è un ::before dietro al nome: --band-top e --band-bottom dicono dove sta (in chiaro sotto, al buio un'etichetta) */
+:root { --band-top: 49%; --band-bottom: 27%; --iw-top: 49%; --iw-bottom: 20%; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --band-top: 22%; --band-bottom: 22%; --iw-top: 4%; --iw-bottom: 4%; } }
+:root[data-theme="dark"], body.term { --band-top: 22%; --band-bottom: 22%; --iw-top: 4%; --iw-bottom: 4%; }
+.brand, :root[data-theme] .brand, body.term .brand { position: relative; isolation: isolate; background: none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brand { background: none !important; } }
+.brand::before {
+  content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: var(--band-top); bottom: var(--band-bottom);
+  background: var(--hl); transform-origin: 0 50%;
+}
+html.intro-run .intro-word, :root[data-theme].intro-run .intro-word, html.intro-run body.term .intro-word { isolation: isolate; background: none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]).intro-run .intro-word { background: none !important; } }
+html.intro-run .intro-word::before {
+  content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: var(--iw-top); bottom: var(--iw-bottom);
+  background: var(--hl); transform: scaleX(0); transform-origin: 0 50%;
+}
+html.intro-go .intro-word::before { animation: band-in 340ms cubic-bezier(0.65, 0, 0.25, 1) forwards; }
+html.intro-mini .top .brand::before { animation: band-in 460ms cubic-bezier(0.65, 0, 0.25, 1) 160ms both; }
+@keyframes band-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+/* le notizie salgono a cascata mentre lo schermo dell'intro si apre */
+html.intro-run .reveal { animation-duration: 420ms; animation-delay: calc(var(--i, 0) * 45ms + 40ms); }
+html.intro-run .ultim, html.intro-run .ticker, html.intro-run .listen, html.intro-run #edition-line { animation: rise 420ms var(--ease) backwards; animation-play-state: paused; }
+html.intro-run.intro-open .ultim, html.intro-run.intro-open .ticker, html.intro-run.intro-open .listen, html.intro-run.intro-open #edition-line { animation-play-state: running; }
+html.intro-run .ticker { animation-delay: 45ms; }
+html.intro-run .listen { animation-delay: 90ms; }

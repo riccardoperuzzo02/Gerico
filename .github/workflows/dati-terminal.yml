@@ -1,7 +1,8 @@
 name: Dati del Terminal
 
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR)
-# e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno. Salva i file in site/data
+# e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno;
+# calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati. Salva i file in site/data
 # e li pubblica su main, come fa l'attività «GERICO pubblicazione». Non usa crediti Claude.
 on:
   schedule:
@@ -16,7 +17,7 @@ on:
   # e quando cambiano gli script del job
   push:
     branches: [main]
-    paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/fin_requirements.txt]
+    paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/screener.py, scripts/titoli_storico.py, scripts/fin_requirements.txt]
 
 permissions:
   contents: write
@@ -57,6 +58,10 @@ jobs:
         run: python scripts/fin_data.py site/data
       - name: Riepilogo audio
         run: python scripts/audio.py site
+      - name: Screener dei titoli
+        run: python scripts/screener.py screener
+      - name: Storico dei titoli da seguire
+        run: python scripts/titoli_storico.py site/data
       - name: Controlla il sito
         run: python scripts/check_site.py site
       - name: Pubblica
@@ -67,6 +72,9 @@ jobs:
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
           if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi
+          for f in screener/candidati.json site/data/titoli-storico.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
           git commit -q -m "Dati del Terminal del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
           for i in 1 2 3 4; do

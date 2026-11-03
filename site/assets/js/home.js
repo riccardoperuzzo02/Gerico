@@ -8,7 +8,8 @@ G.page("home", async function (P) {
   // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
   if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
 
-  const [ed, mk, qt, br, au] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio")]);
+  const [ed, mk, qt, br, au, tit, tsh] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
+    G.load("titoli"), G.load("titoli-storico")]);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
@@ -120,6 +121,12 @@ G.page("home", async function (P) {
         return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a>" + (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</li>";
       }).join("") + "</ul></section>";
   }
+  // titoli da seguire: un segnale sui prezzi e una notizia; in Tutte, Economia e Mercati
+  function titoliHTML() {
+    if (!G.titoliFresh(tit) || !["tutte", "economia", "mercati"].includes(state.section)) return "";
+    return '<section class="blk tit" aria-labelledby="tit-h"><h2 class="blk-h" id="tit-h">Titoli da seguire</h2>' +
+      '<p class="blk-sub">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p>' + G.titoliHTML(tit, tsh) + "</section>";
+  }
   function renderFeed(viaTransition) {
     const feed = $("feed");
     feed.classList.remove("swap");
@@ -137,7 +144,7 @@ G.page("home", async function (P) {
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       : '<p class="none">Oggi in questa sezione non ci sono storie confrontate, solo brevi.</p>';
-    feed.innerHTML = top + breviHTML(bl, all) + pastHTML(past, all) + end;
+    feed.innerHTML = top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
     first = false;
   }
 

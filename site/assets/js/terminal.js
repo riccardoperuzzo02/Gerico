@@ -425,7 +425,7 @@ G.page("terminal", async function (P) {
 
   // ---------- sezioni, comandi e tasti funzione ----------
   const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie",
-    GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec" };
+    GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
     const el = $(id);
@@ -518,7 +518,13 @@ G.page("terminal", async function (P) {
   P.every(renderAgenda, 30000);
   renderNews();
   // i dati del job arrivano dopo: stanno più in basso e non devono ritardare la mappa
-  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec")]).then(([qt, mc, se, sc]) => {
+  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico")]).then(([qt, mc, se, sc, ti, th]) => {
+    if (G.titoliFresh(ti)) {
+      $("ti").innerHTML = G.titoliHTML(ti, th);
+      $("p-titoli").hidden = false;
+      const chip = document.querySelector('[data-cmd="TITOLI"]');
+      if (chip) chip.hidden = false;
+    }
     [[renderQuotes, qt], [renderMacro, mc], [renderSentiment, se], [renderSec, sc]].forEach(([fn, d]) => {
       try { fn(d); } catch (e) { /* un pannello rotto non ferma gli altri */ }
     });

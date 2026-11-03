@@ -1,0 +1,19 @@
+{
+ "caricamento_s": 51,
+ "sr": 24000,
+ "torch_threads": 1,
+ "2-chatterbox": {
+  "durata_s": 51.1,
+  "generazione_s": 957,
+  "volte_il_tempo_reale": 18.73,
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5
+ },
+ "3-chatterbox-espressiva": {
+  "durata_s": 54.4,
+  "generazione_s": 953,
+  "volte_il_tempo_reale": 17.51,
+  "exaggeration": 0.7,
+  "cfg_weight": 0.35
+ }
+}

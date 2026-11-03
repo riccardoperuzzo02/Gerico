@@ -1,5 +1,5 @@
 /* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F7) e comandi, prezzi in diretta al clic. */
-(async function () {
+G.page("terminal", async function (P) {
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
@@ -8,7 +8,7 @@
   // ---------- orologio ----------
   const tick = () => { $("clock").textContent = "Roma, " + G.romeNow().hm; };
   tick();
-  setInterval(tick, 30000);
+  P.every(tick, 30000);
 
   // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti)
   const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
@@ -145,13 +145,13 @@
   let size = "";
   if (window.ResizeObserver) {
     let rt;
-    new ResizeObserver(() => {
+    P.keep(new ResizeObserver(() => {
       clearTimeout(rt);
       rt = setTimeout(() => {
         const now = $("map").clientWidth + "x" + $("map").clientHeight;
         if (now !== size) { size = now; drawMap(false); }
       }, 100);
-    }).observe($("map"));
+    })).observe($("map"));
   }
 
   // le percentuali delle tabelle contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza).
@@ -331,6 +331,17 @@
     $("gr-tabs").innerHTML = groups.map((g) => '<button type="button" data-g="' + g.key + '" aria-pressed="' + (g.key === grKey) + '">' + esc(GROUP[g.key] || g.label) + "</button>").join("");
     G.seg($("gr-tabs"), true);
     drawGroup();
+    const keys = groups.map((g) => g.key), near = (d) => keys[keys.indexOf(grKey) + d];
+    const slide = (d) => {
+      const b = $("gr-tabs").querySelector('[data-g="' + near(d) + '"]');
+      if (!b) return;
+      b.click();
+      if (!G.reduced() && $("gr").animate) $("gr").animate([{ opacity: 0, transform: "translateX(" + 28 * d + "px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)" });
+    };
+    G.swipe($("gr"), {
+      canNext: () => !!near(1), canPrev: () => !!near(-1),
+      next: (reset) => { reset(false); slide(1); }, prev: (reset) => { reset(false); slide(-1); }
+    });
     $("gr-tabs").addEventListener("click", (e) => {
       const b = e.target.closest("[data-g]");
       if (!b || b.dataset.g === grKey) return;
@@ -407,7 +418,7 @@
       : '<p class="t-na">Nessun documento negli ultimi giorni.</p>';
   }
   // le righe che si aprono, in tutti i pannelli nuovi
-  document.addEventListener("click", (e) => {
+  P.on(document, "click", (e) => {
     const b = e.target.closest(".q-row, .s-row");
     if (b) G.toggle(b);
   });
@@ -444,7 +455,7 @@
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
   const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "GRAFICI", F9: "MACRO", F10: "SENTIMENT" };
-  document.addEventListener("keydown", (e) => {
+  P.on(document, "keydown", (e) => {
     const t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
     if (e.altKey || e.ctrlKey || e.metaKey) return;
@@ -493,6 +504,10 @@
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
+  G.swipe($("map"), {
+    canNext: () => state.view !== "europa", canPrev: () => state.view === "europa",
+    next: (reset) => { reset(false); setView("europa"); }, prev: (reset) => { reset(false); setView("mondo"); }
+  });
   drawMap(false);
   size = $("map").clientWidth + "x" + $("map").clientHeight;
   table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
@@ -500,7 +515,7 @@
   table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
   table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
-  setInterval(renderAgenda, 30000);
+  P.every(renderAgenda, 30000);
   renderNews();
   // i dati del job arrivano dopo: stanno più in basso e non devono ritardare la mappa
   Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec")]).then(([qt, mc, se, sc]) => {
@@ -510,4 +525,4 @@
   });
   renderStatus();
   G.afterIntro(() => countUp(document.body));
-})();
+});

@@ -1,5 +1,5 @@
 /* GERICO: prima pagina. Una notizia in evidenza, le altre in elenco, i mercati in un riquadro piccolo. */
-(async function () {
+G.page("home", async function (P) {
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
@@ -90,7 +90,8 @@
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
   // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
-  let first = true;
+  // arrivando da un'altra pagina del sito c'è già la transizione: niente entrata a cascata
+  let first = !G.soft;
   function leadHTML(s, showSection) {
     return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" +
       '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s) + "</article>";
@@ -168,45 +169,29 @@
 
   // ---------- riepilogo a voce: il bollettino del mattino, letto da una voce sintetica ----------
   // l'audio si scarica solo quando lo chiedi; con il telefono bloccato si comanda dalla schermata di blocco
+  // il lettore è uno solo per tutto il sito (G.player): qui la scheda lo comanda e ne mostra l'avanzamento
   function renderListen() {
     const box = $("listen");
     if (!au || !au.src || G.hoursAgo(au.asOf) > 30) { box.hidden = true; return; }
-    const audio = $("ls-audio"), btn = $("ls-btn");
-    const mmss = (sec) => Math.floor(sec / 60) + ":" + String(Math.floor(sec % 60)).padStart(2, "0");
+    const pl = G.player, btn = $("ls-btn");
+    pl.set(au);
     const when = au.source || au.asOf;
-    const title = G.isToday(when) ? "Il riepilogo di oggi" : "Il riepilogo di " + G.weekday(when);
-    $("ls-t").textContent = title;
+    $("ls-t").textContent = pl.title();
     const mins = Math.max(1, Math.round((au.duration || 60) / 60));
     $("ls-s").textContent = "Notizie e mercati in " + (mins === 1 ? "un minuto" : mins + " minuti") + ", con l'aggiornamento delle " + G.hm(when);
-    $("ls-time").textContent = au.duration ? mmss(au.duration) : "";
     box.classList.remove("wait");
     btn.disabled = false;
-    btn.addEventListener("click", () => {
-      if (!audio.getAttribute("src")) audio.src = au.src;
-      if (audio.paused) audio.play().catch(() => {}); else audio.pause();
-    });
-    const set = (on) => {
+    btn.addEventListener("click", () => pl.toggle());
+    const paint = () => {
+      const on = pl.playing(), d = pl.dur(), p = pl.pos();
       box.classList.toggle("playing", on);
-      btn.setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : "Ascolta il riepilogo");
+      btn.setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : p > 0 ? "Riprendi il riepilogo" : "Ascolta il riepilogo");
+      $("ls-prog").style.transform = "scaleX(" + (d ? Math.min(1, p / d) : 0).toFixed(4) + ")";
+      $("ls-time").textContent = d ? pl.mmss(Math.max(0, d - p)) : "";
     };
-    audio.addEventListener("play", () => {
-      set(true);
-      if ("mediaSession" in navigator && window.MediaMetadata) {
-        navigator.mediaSession.metadata = new MediaMetadata({ title, artist: "GERICO", album: au.title || "",
-          artwork: [{ src: new URL("assets/img/apple-touch-icon.png", location.href).href, sizes: "180x180", type: "image/png" }] });
-        try {
-          navigator.mediaSession.setActionHandler("seekbackward", () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
-          navigator.mediaSession.setActionHandler("seekforward", () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 15); });
-        } catch (e) { /* non tutti i browser li hanno */ }
-      }
-    });
-    audio.addEventListener("pause", () => set(false));
-    audio.addEventListener("timeupdate", () => {
-      const d = audio.duration || au.duration || 1;
-      $("ls-prog").style.transform = "scaleX(" + Math.min(1, audio.currentTime / d).toFixed(4) + ")";
-      $("ls-time").textContent = mmss(Math.max(0, d - audio.currentTime));
-    });
-    audio.addEventListener("ended", () => { set(false); $("ls-prog").style.transform = "scaleX(0)"; $("ls-time").textContent = au.duration ? mmss(au.duration) : ""; });
+    P.add(pl.on(paint));
+    paint();
+    pl.card(box);
   }
 
   // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
@@ -273,7 +258,7 @@
 
   // ---------- eventi ----------
   // cambiando sezione l'elenco scorre di lato, nel verso della sezione scelta (dove il browser non lo sa fare, dissolvenza)
-  window.addEventListener("hashchange", () => {
+  P.on(window, "hashchange", () => {
     const prev = state.section, next = sectionFromHash();
     if (next === prev) return;
     const order = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec);
@@ -309,7 +294,7 @@
   }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
-  document.addEventListener("click", (e) => {
+  P.on(document, "click", (e) => {
     document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; });
     const a = e.target.closest("#feed a[data-id]");
     if (!a) return;
@@ -321,12 +306,30 @@
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
   buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderUltim(); renderListen();
 
+  // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
+  const step = (d) => { const o = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec); return o[o.indexOf(state.section) + d]; };
+  const goSec = (k) => { location.hash = k === "tutte" ? "" : k; };
+  G.swipe($("main") || $("feed").parentElement, {
+    follow: $("feed"),
+    canNext: () => !!step(1), canPrev: () => !!step(-1),
+    next: (reset) => { const k = step(1); reset(false); goSec(k); },
+    prev: (reset) => { const k = step(-1); reset(false); goSec(k); }
+  });
+  // alla prima visita, su un telefono, l'elenco accenna un movimento di lato: si capisce che si può scorrere
+  if (!G.soft && !G.reduced() && "ontouchstart" in window && !G.ls.get("gerico.swipeHint", false)) {
+    G.ls.set("gerico.swipeHint", true);
+    P.later(() => {
+      const f = $("feed");
+      if (f && f.animate) f.animate([{ transform: "none" }, { transform: "translateX(-26px)", offset: 0.4 }, { transform: "none" }], { duration: 900, easing: "cubic-bezier(0.3, 0, 0.2, 1)" });
+    }, 1600);
+  }
+
   // la pagina resta aperta nel telefono: tornandoci dopo un po', se è uscita un'edizione nuova lo si dice con un pulsante
   let checked = Date.now();
-  document.addEventListener("visibilitychange", async () => {
+  P.on(document, "visibilitychange", async () => {
     if (document.visibilityState !== "visible" || Date.now() - checked < 3 * 60000 || $("fresh")) return;
     checked = Date.now();
-    const now = await G.load("edition");
+    const now = await G.load("edition", true);
     if (!now || !now.lastRun || now.lastRun === ed.lastRun) return;
     const btn = document.createElement("button");
     btn.type = "button"; btn.id = "fresh"; btn.className = "fresh";
@@ -334,4 +337,4 @@
     btn.addEventListener("click", () => location.reload());
     document.body.appendChild(btn);
   });
-})();
+});

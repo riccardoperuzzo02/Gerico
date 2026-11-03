@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261103-2">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261103-3">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -90,16 +90,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261103-2"></script>
-<script>
-(async function () {
-  G.initPrefs();
-  const ed = await G.load("edition");
-  if (!ed) return;
-  if ((ed.outlets || []).length) document.getElementById("outlets").textContent = "Testate lette nell'edizione di " + G.longDay(ed.lastRun) + ": " + ed.outlets.join(", ") + ".";
-  const q = ed.quality;
-  if (q && typeof q.articlesRead === "number") document.getElementById("quality").textContent = "In quel giro: " + q.articlesRead + " articoli letti, " + (q.articlesDiscarded || 0) + " scartati perché vecchi, " + (q.factsChecked || 0) + " fatti ricontrollati" + (q.factsCorrected ? ", " + q.factsCorrected + " corretti" : "") + ".";
-})();
-</script>
+<script src="assets/js/common.js?v=20261103-3"></script>
+<script src="assets/js/info.js?v=20261103-3"></script>
 </body>
 </html>

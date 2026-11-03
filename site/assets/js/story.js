@@ -1,5 +1,5 @@
 /* GERICO: pagina di una storia (storia.html?id=...). */
-(async function () {
+G.page("story", async function (P) {
   "use strict";
   const esc = G.esc;
   const $ = (id) => document.getElementById(id);
@@ -114,6 +114,7 @@
   const order = (ed.stories || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
   const at = order.findIndex((x) => x.id === s.id);
   const nx = at >= 0 ? order[at + 1] : null;
+  const pv = at > 0 ? order[at - 1] : null;
   const nextHTML = nx
     ? '<nav class="next" aria-label="Prossima notizia"><a href="' + G.storyUrl(nx) + '" data-id="' + esc(nx.id) + '" data-sec="' + esc(G.secLabel(nx.section)) + '">' +
       '<span class="next-l">Prossima notizia</span><span class="next-t">' + esc(G.headline(nx)) + '</span><span class="next-m">' +
@@ -146,7 +147,7 @@
   let fromHome = false;
   try {
     const vt = JSON.parse(sessionStorage.getItem("gerico.vt") || "null");
-    const ref = document.referrer ? new URL(document.referrer) : null;
+    const ref = G.prevUrl ? new URL(G.prevUrl) : document.referrer ? new URL(document.referrer) : null;
     fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
   } catch (err) { /* niente */ }
   // condividere: il foglio di condivisione del telefono, altrimenti il link copiato
@@ -162,7 +163,7 @@
     if (h) h.style.viewTransitionName = toNext ? "none" : "";
     if (nt) nt.style.viewTransitionName = toNext ? "story-title" : "";
   };
-  window.addEventListener("pageswap", (e) => {
+  P.on(window, "pageswap", (e) => {
     const nt = document.querySelector(".next a[data-id]");
     let toNext = false;
     try {
@@ -171,7 +172,13 @@
     } catch (err) { /* niente */ }
     handoff(toNext);
   });
-  document.addEventListener("click", (e) => {
+  // swipe: a sinistra la notizia successiva dell'edizione, a destra quella prima
+  G.swipe($("story"), {
+    canNext: () => !!nx, canPrev: () => !!pv,
+    next: () => G.go(G.storyUrl(nx), { dir: "forward", swipe: true }),
+    prev: () => G.go(G.storyUrl(pv), { dir: "back", swipe: true })
+  });
+  P.on(document, "click", (e) => {
     if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }
     if (e.target.closest("#share")) { share(); return; }
     const na = e.target.closest(".next a[data-id]");
@@ -191,4 +198,4 @@
     const f = G.toggleFollow(b.dataset.follow);
     document.querySelectorAll('[data-follow="' + CSS.escape(b.dataset.follow) + '"]').forEach((x) => x.setAttribute("aria-pressed", String(f.includes(b.dataset.follow))));
   });
-})();
+});

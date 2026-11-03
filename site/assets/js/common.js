@@ -14,12 +14,22 @@
   G.cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
 
   // ---------- dati ----------
-  G.load = async (name) => {
-    try {
-      const r = await fetch("data/" + name + ".json", { cache: "no-cache" });
-      if (!r.ok) return null;
-      return await r.json();
-    } catch (e) { return null; }
+  // passando da una pagina all'altra senza ricaricare, gli stessi dati servono di nuovo: per un minuto si riusano.
+  // fresh = true li riscarica comunque (per esempio per vedere se è uscita un'edizione nuova)
+  const memo = {};
+  G.load = (name, fresh) => {
+    const hit = memo[name];
+    if (!fresh && hit && Date.now() - hit.t < 60000) return hit.p;
+    const p = (async () => {
+      try {
+        const r = await fetch("data/" + name + ".json", { cache: "no-cache" });
+        if (!r.ok) return null;
+        return await r.json();
+      } catch (e) { return null; }
+    })();
+    memo[name] = { p, t: Date.now() };
+    p.then((d) => { if (d === null && memo[name] && memo[name].p === p) delete memo[name]; });
+    return p;
   };
 
   // ---------- date e ore, sempre a Roma ----------
@@ -324,7 +334,10 @@
   };
 
   // intestazione: la riga sottile e il titolo piccolo compaiono quando il titolo grande passa sotto
+  let topObs = null;
   G.watchTop = () => {
+    if (topObs) { topObs.disconnect(); topObs = null; }
+    document.documentElement.classList.remove("scrolled");
     const top = document.querySelector(".top");
     if (!top || !window.IntersectionObserver) return;
     let target = document.getElementById("large-title"), margin = "-" + top.offsetHeight + "px 0px 0px 0px";
@@ -335,11 +348,12 @@
       document.body.prepend(target);
       margin = "0px";
     }
-    new IntersectionObserver(([e]) => {
+    topObs = new IntersectionObserver(([e]) => {
       const on = !e.isIntersecting && e.boundingClientRect.top < top.offsetHeight;
       top.classList.toggle("scrolled", on);
       document.documentElement.classList.toggle("scrolled", on);
-    }, { rootMargin: margin }).observe(target);
+    }, { rootMargin: margin });
+    topObs.observe(target);
   };
 
   // intro: alla prima apertura del sito in questa scheda il nome GERICO compare al centro, resta un momento e va al suo posto.
@@ -412,20 +426,379 @@
     setTimeout(() => { if (!word.getAnimations().length) end(); }, 1500);
   };
 
-  // passaggio tra Notizie e Terminal: la pagina nuova si apre a cerchio dal punto toccato.
-  // Il punto resta in memoria di sessione per qualche secondo: lo legge lo script nell'head della pagina nuova.
-  // Toccare la pagina in cui sei già riporta in cima, come le schede delle app.
-  document.addEventListener("click", (e) => {
-    const a = e.target.closest && e.target.closest("a[data-reveal]");
-    if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    if (a.getAttribute("aria-current") === "page") {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" });
-      return;
+  // ---------- pagine: ogni script di pagina si registra con G.page; la navigazione lo avvia e lo chiude ----------
+  // Quello che una pagina accende fuori dai suoi elementi (ascoltatori su window e document, timer, osservatori)
+  // passa da P: uscendo dalla pagina si spegne tutto, così niente si accumula da una pagina all'altra.
+  let cleanup = [];
+  const P = {
+    on(t, type, fn, o) { t.addEventListener(type, fn, o); cleanup.push(() => t.removeEventListener(type, fn, o)); },
+    every(fn, ms) { const id = setInterval(fn, ms); cleanup.push(() => clearInterval(id)); return id; },
+    later(fn, ms) { const id = setTimeout(fn, ms); cleanup.push(() => clearTimeout(id)); return id; },
+    keep(o) { cleanup.push(() => { try { o.disconnect(); } catch (e) { /* niente */ } }); return o; },
+    add(fn) { cleanup.push(fn); },
+    done: Promise.resolve()
+  };
+  G.P = P;
+  G.pages = {};
+  G.current = "";
+  const startPage = (name) => {
+    let r;
+    try { r = G.pages[name](P); } catch (e) { console.error(e); }
+    P.done = Promise.resolve(r).catch((e) => console.error(e));
+  };
+  G.page = (name, fn) => {
+    G.pages[name] = fn;
+    if (!G.current || G.current === name) { G.current = name; startPage(name); }
+  };
+  const stopPage = () => { cleanup.splice(0).forEach((f) => { try { f(); } catch (e) { /* niente */ } }); };
+
+  // ---------- riepilogo a voce: un solo lettore per tutto il sito ----------
+  // L'audio vive fuori dalla pagina: cambiando pagina continua, e anche in un'altra scheda o a schermo bloccato.
+  // Una barra in basso lo comanda da ogni pagina; la posizione resta in memoria di sessione:
+  // dopo un ricaricamento si riprende da lì con un tocco (iOS non fa ripartire l'audio da solo).
+  G.player = (() => {
+    const audio = new Audio();
+    audio.preload = "none";
+    const KEY = "gerico.audio";
+    let info = null, saved = 0, closed = false, cardSeen = false, lastSave = 0, lastPos = 0, bar = null;
+    const subs = new Set();
+    const emit = () => { subs.forEach((f) => { try { f(); } catch (e) { /* niente */ } }); paint(); };
+    const mmss = (s) => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
+    const when = () => info && (info.source || info.asOf);
+    const title = () => (info ? (G.isToday(when()) ? "Il riepilogo di oggi" : "Il riepilogo di " + G.weekday(when())) : "");
+    const dur = () => audio.duration || (info && info.duration) || 0;
+    const pos = () => audio.currentTime || saved || 0;
+    const started = () => !!info && (!audio.paused || pos() > 0);
+    const save = () => {
+      try {
+        if (!info || (!pos() && audio.paused)) sessionStorage.removeItem(KEY);
+        else sessionStorage.setItem(KEY, JSON.stringify({ src: info.src, t: Math.round(pos()), at: Date.now() }));
+      } catch (e) { /* niente */ }
+    };
+    const srcReady = () => {
+      if (!info || audio.getAttribute("src")) return;
+      audio.src = info.src;
+      if (saved) {
+        const t = saved;
+        audio.addEventListener("loadedmetadata", () => { try { audio.currentTime = t; } catch (e) { /* niente */ } }, { once: true });
+      }
+    };
+    const session = () => {
+      if (!("mediaSession" in navigator) || !window.MediaMetadata || !info) return;
+      navigator.mediaSession.metadata = new MediaMetadata({ title: title(), artist: "GERICO", album: "Notizie e mercati, a voce",
+        artwork: [{ src: new URL("assets/img/apple-touch-icon.png", location.href).href, sizes: "180x180", type: "image/png" }] });
+      const set = (a, f) => { try { navigator.mediaSession.setActionHandler(a, f); } catch (e) { /* non tutti i browser li hanno */ } };
+      set("play", () => api.play());
+      set("pause", () => audio.pause());
+      set("seekbackward", () => api.seek(-15));
+      set("seekforward", () => api.seek(15));
+      set("seekto", (d) => { if (d && typeof d.seekTime === "number") audio.currentTime = d.seekTime; });
+      set("stop", () => api.close());
+    };
+    const api = {
+      audio, mmss, title, dur, pos, info: () => info,
+      set(data) {
+        if (!data || !data.src) return;
+        const same = info && info.src === data.src;
+        info = data;
+        if (!same) {
+          try {
+            const s = JSON.parse(sessionStorage.getItem(KEY) || "null");
+            saved = s && s.src === data.src && Date.now() - s.at < 6 * 3600000 ? s.t : 0;
+          } catch (e) { saved = 0; }
+          if (audio.getAttribute("src") && audio.getAttribute("src") !== data.src) { audio.pause(); audio.removeAttribute("src"); audio.load(); }
+        }
+        emit();
+      },
+      play() { if (!info) return; closed = false; srcReady(); audio.play().catch(() => {}); },
+      toggle() { if (audio.paused) api.play(); else audio.pause(); },
+      seek(d) { if (!audio.duration) return; audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + d)); },
+      close() { audio.pause(); closed = true; saved = 0; try { audio.currentTime = 0; } catch (e) { /* niente */ } save(); emit(); },
+      playing: () => !audio.paused,
+      on(f) { subs.add(f); return () => subs.delete(f); },
+      // in prima pagina la scheda «Ascolta» fa da lettore: quando è in vista la barra non serve
+      card(el) {
+        cardSeen = false;
+        if (!el || !window.IntersectionObserver) return;
+        const o = new IntersectionObserver(([e]) => { cardSeen = e.isIntersecting; paint(); });
+        o.observe(el);
+        P.keep(o);
+        P.add(() => { cardSeen = false; paint(); });
+      },
+      mount() { if (bar && !bar.isConnected) document.body.appendChild(bar); cardSeen = false; paint(); }
+    };
+    audio.addEventListener("play", () => { session(); emit(); });
+    audio.addEventListener("pause", () => { save(); emit(); });
+    audio.addEventListener("ended", () => { saved = 0; try { audio.currentTime = 0; } catch (e) { /* niente */ } audio.pause(); save(); emit(); });
+    audio.addEventListener("timeupdate", () => {
+      const now = Date.now();
+      if (now - lastSave > 4000) { lastSave = now; save(); }
+      if (Math.abs(audio.currentTime - lastPos) >= 0.25) { lastPos = audio.currentTime; emit(); }
+      if ("mediaSession" in navigator && navigator.mediaSession.setPositionState && audio.duration) {
+        try { navigator.mediaSession.setPositionState({ duration: audio.duration, position: Math.min(audio.currentTime, audio.duration), playbackRate: audio.playbackRate }); } catch (e) { /* niente */ }
+      }
+    });
+    window.addEventListener("pagehide", save);
+
+    // la barra in basso, uguale su tutte le pagine
+    const ICON = '<svg class="i-play" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M4.5 2.6v10.8L13.2 8z" fill="currentColor"/></svg>' +
+      '<svg class="i-pause" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>';
+    const build = () => {
+      bar = document.createElement("div");
+      bar.className = "gp";
+      bar.id = "gp";
+      bar.setAttribute("role", "region");
+      bar.setAttribute("aria-label", "Riepilogo a voce");
+      bar.hidden = true;
+      bar.innerHTML = '<button type="button" class="gp-play" aria-label="Ascolta il riepilogo">' + ICON + "</button>" +
+        '<div class="gp-txt"><p class="gp-t"></p><p class="gp-s"></p></div>' +
+        '<button type="button" class="gp-sk" data-d="-15" aria-label="Indietro di 15 secondi">−15</button>' +
+        '<button type="button" class="gp-sk" data-d="15" aria-label="Avanti di 15 secondi">+15</button>' +
+        '<button type="button" class="gp-x" aria-label="Chiudi il riepilogo"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>' +
+        '<span class="gp-bar" aria-hidden="true"><i></i></span>';
+      bar.querySelector(".gp-play").addEventListener("click", () => api.toggle());
+      bar.querySelectorAll(".gp-sk").forEach((b) => b.addEventListener("click", () => api.seek(Number(b.dataset.d))));
+      bar.querySelector(".gp-x").addEventListener("click", () => api.close());
+      document.body.appendChild(bar);
+    };
+    function paint() {
+      if (!bar) { if (!document.body) return; build(); }
+      const show = started() && !closed && !cardSeen;
+      if (bar.hidden === show) bar.hidden = !show;
+      document.documentElement.classList.toggle("gp-on", show);
+      if (!show) return;
+      const on = !audio.paused, d = dur();
+      bar.classList.toggle("playing", on);
+      bar.querySelector(".gp-play").setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : "Riprendi il riepilogo");
+      bar.querySelector(".gp-t").textContent = title();
+      bar.querySelector(".gp-s").textContent = d ? (on ? "Mancano " : "In pausa · mancano ") + mmss(Math.max(0, d - pos())) : "";
+      bar.querySelector(".gp-bar i").style.transform = "scaleX(" + (d ? Math.min(1, pos() / d) : 0).toFixed(4) + ")";
     }
-    const r = a.getBoundingClientRect();
-    const x = e.clientX || r.left + r.width / 2, y = e.clientY || r.top + r.height / 2;
-    try { sessionStorage.setItem("gerico.reveal", JSON.stringify({ x: x / innerWidth, y: y / innerHeight, to: new URL(a.href).pathname, t: Date.now() })); } catch (err) { /* niente */ }
+    return api;
+  })();
+  // dopo un ricaricamento, se il riepilogo era a metà, la barra lo ripropone da dove eri
+  try {
+    if (sessionStorage.getItem("gerico.audio")) G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) < 30) G.player.set(au); });
+  } catch (e) { /* niente */ }
+
+  // ---------- navigazione senza ricaricare la pagina ----------
+  // I link interni scaricano la pagina nuova e ne prendono il contenuto: l'audio continua e il passaggio è animato
+  // (avanti da destra, indietro da sinistra, tra Notizie e Terminal un cerchio dal punto toccato).
+  // Se qualcosa non va, il link si apre come sempre.
+  const PAGE_RE = /^\/(?:index|storia|terminal|come-funziona|privacy)?(?:\.html)?$/;
+  const SCRIPT_PAGE = { "home.js": "home", "story.js": "story", "terminal.js": "terminal", "info.js": "info" };
+  const htmlEl = document.documentElement;
+  const soft = !!(window.fetch && window.DOMParser && history.pushState && window.Promise);
+  const MY = (() => { const s = document.querySelector('script[src*="assets/js/common.js"]'); return s ? s.getAttribute("src") : ""; })();
+  const pages = new Map();
+  const fetchPage = (url) => {
+    const key = url.split("#")[0];
+    const hit = pages.get(key);
+    if (hit && Date.now() - hit.t < 60000) return hit.p;
+    const p = fetch(key, { credentials: "same-origin" }).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); });
+    pages.set(key, { p, t: Date.now() });
+    p.catch(() => pages.delete(key));
+    return p;
+  };
+  const pageOf = (doc) => {
+    for (const s of doc.querySelectorAll("script[src]")) {
+      const m = (s.getAttribute("src") || "").match(/assets\/js\/([a-z]+\.js)/);
+      if (m && SCRIPT_PAGE[m[1]]) return { name: SCRIPT_PAGE[m[1]], src: s.getAttribute("src") };
+    }
+    return { name: "plain", src: "" };
+  };
+  const loaded = new Set();
+  const loadScript = (src) => new Promise((res, rej) => {
+    if (loaded.has(src)) return res();
+    const s = document.createElement("script");
+    s.src = src;
+    s.onload = () => { loaded.add(src); res(); };
+    s.onerror = rej;
+    document.head.appendChild(s);
+  });
+  document.querySelectorAll('script[src*="assets/js/"]').forEach((s) => loaded.add(s.getAttribute("src")));
+  const isPageLink = (a) => {
+    if (!a || !a.href || a.target || a.hasAttribute("download") || a.dataset.full !== undefined) return null;
+    let u;
+    try { u = new URL(a.href, location.href); } catch (e) { return null; }
+    if (u.origin !== location.origin || !PAGE_RE.test(u.pathname)) return null;
+    return u;
+  };
+  // il contenuto della pagina nuova prende il posto di quello vecchio; restano la barra del riepilogo e l'html con le preferenze
+  const apply = (doc, name) => {
+    document.title = doc.title;
+    ["description"].forEach((n) => {
+      const a = document.querySelector('meta[name="' + n + '"]'), b = doc.querySelector('meta[name="' + n + '"]');
+      if (a && b) a.setAttribute("content", b.getAttribute("content"));
+    });
+    const cA = document.querySelector('link[rel="canonical"]'), cB = doc.querySelector('link[rel="canonical"]');
+    if (cA && cB) cA.setAttribute("href", cB.getAttribute("href")); else if (cA && !cB) cA.remove(); else if (!cA && cB) document.head.appendChild(cB.cloneNode());
+    document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.remove());
+    doc.querySelectorAll('meta[name="theme-color"]').forEach((m) => document.head.appendChild(m.cloneNode()));
+    // come farebbe lo script nell'head della pagina nuova: il Terminal è sempre scuro, le altre pagine seguono il tema scelto
+    const theme = name === "terminal" ? null : G.ls.get("gerico.theme", null);
+    if (theme) htmlEl.setAttribute("data-theme", theme); else htmlEl.removeAttribute("data-theme");
+    htmlEl.classList.remove("intro-run", "intro-open", "first-visit", "menu-open", "scrolled", "vt-reveal");
+    const b = document.body, keep = document.getElementById("gp");
+    Array.from(b.attributes).forEach((at) => b.removeAttribute(at.name));
+    Array.from(doc.body.attributes).forEach((at) => b.setAttribute(at.name, at.value));
+    // la barra del riepilogo non si stacca mai: niente animazione ripetuta a ogni pagina
+    Array.from(b.childNodes).forEach((n) => { if (n !== keep) n.remove(); });
+    const frag = document.createDocumentFragment();
+    Array.from(doc.body.childNodes).forEach((n) => { if (n.nodeName !== "SCRIPT") frag.appendChild(n); });
+    b.insertBefore(frag, keep || null);
+  };
+  let navId = 0, idx = 0, ready = false, shown = location.pathname + location.search;
+  G.prevUrl = "";
+  G.soft = false;
+  // dir: "forward" | "back" | "reveal"; at: punto toccato per il cerchio; y: scorrimento da ripristinare
+  G.go = async (url, opt) => {
+    opt = opt || {};
+    if (!soft) { location.href = url; return; }
+    const id = ++navId;
+    let text;
+    try { text = await fetchPage(url); } catch (e) { location.href = url; return; }
+    if (id !== navId) return;
+    const doc = new DOMParser().parseFromString(text, "text/html");
+    const common = doc.querySelector('script[src*="assets/js/common.js"]');
+    // dopo un aggiornamento del sito gli script cambiano versione: meglio una pagina caricata da capo
+    if (!common || common.getAttribute("src") !== MY) { location.href = url; return; }
+    const pg = pageOf(doc);
+    if (!ready) { ready = true; try { history.scrollRestoration = "manual"; } catch (e) { /* niente */ } }
+    if (opt.push !== false) { try { history.replaceState(Object.assign({}, history.state, { g: 1, n: idx, y: scrollY }), ""); } catch (e) { /* niente */ } }
+    const from = location.href;
+    const swap = async () => {
+      stopPage();
+      apply(doc, pg.name);
+      if (opt.push !== false) { idx += 1; history.pushState({ g: 1, n: idx, y: 0 }, "", url); }
+      shown = location.pathname + location.search;
+      G.prevUrl = from;
+      G.soft = true;
+      G.current = pg.name;
+      if (G.pages[pg.name]) startPage(pg.name);
+      else if (pg.src) { try { await loadScript(pg.src); } catch (e) { location.href = url; return; } }
+      else { G.initPrefs(); P.done = Promise.resolve(); }
+      G.player.mount();
+      // la transizione fotografa la pagina nuova quando ha disegnato il contenuto principale (al massimo 400 ms)
+      await Promise.race([P.done, new Promise((r) => setTimeout(r, 400))]);
+      const h = new URL(url, location.href).hash;
+      const target = h && document.getElementById(decodeURIComponent(h.slice(1)));
+      window.scrollTo(0, target ? target.getBoundingClientRect().top + scrollY - 70 : opt.y || 0);
+    };
+    const finish = () => {
+      // per chi usa un lettore di schermo: il fuoco va all'inizio della pagina nuova e il titolo si annuncia
+      const main = document.getElementById("main") || document.querySelector("main");
+      if (main) { if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1"); main.focus({ preventScroll: true }); }
+      let live = document.getElementById("nav-live");
+      if (!live) { live = document.createElement("p"); live.id = "nav-live"; live.className = "sr-only"; live.setAttribute("aria-live", "polite"); document.body.appendChild(live); }
+      live.textContent = document.title;
+    };
+    const animate = document.startViewTransition && !G.reduced() && !opt.instant;
+    if (!animate) { await swap(); finish(); return; }
+    htmlEl.dataset.vt = opt.dir || "forward";
+    if (opt.swipe) htmlEl.dataset.swipe = "1";
+    const t = document.startViewTransition(swap);
+    window.gericoVT = t;
+    if (opt.dir === "reveal" && opt.at) {
+      const { x, y } = opt.at, rad = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+      t.ready.then(() => htmlEl.animate({ clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + rad.toFixed(0) + "px at " + x + "px " + y + "px)"] },
+        { duration: 560, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
+    }
+    t.finished.then(finish, finish).finally(() => { delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; if (window.gericoVT === t) window.gericoVT = null; });
+  };
+  if (soft) {
+    try { history.replaceState(Object.assign({}, history.state, { g: 1, n: 0 }), ""); } catch (e) { /* niente */ }
+    document.addEventListener("click", (e) => {
+      if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest && e.target.closest("a[href]");
+      const u = isPageLink(a);
+      if (!u) return;
+      // un link alla stessa pagina con solo un'ancora (le sezioni della prima pagina) lo gestisce la pagina
+      if (u.pathname === location.pathname && u.search === location.search && u.hash) return;
+      e.preventDefault();
+      // toccare la pagina in cui sei già riporta in cima, come le schede delle app
+      if (u.href === location.href) { window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" }); return; }
+      if (a.hasAttribute("data-reveal")) {
+        const r = a.getBoundingClientRect();
+        G.go(u.href, { dir: "reveal", at: { x: e.clientX || r.left + r.width / 2, y: e.clientY || r.top + r.height / 2 } });
+      } else G.go(u.href, { dir: a.dataset.dir || "forward" });
+    });
+    // il dito si appoggia su un link: la pagina si scarica già, al tocco è pronta
+    const warm = (e) => { const u = isPageLink(e.target.closest && e.target.closest("a[href]")); if (u && u.href.split("#")[0] !== location.href.split("#")[0]) fetchPage(u.href).catch(() => {}); };
+    document.addEventListener("touchstart", warm, { passive: true });
+    document.addEventListener("mouseover", warm, { passive: true });
+    window.addEventListener("popstate", (e) => {
+      // è cambiata solo l'ancora (le sezioni della prima pagina): ci pensa la pagina
+      if (location.pathname + location.search === shown) return;
+      const st = e.state || {};
+      const n = typeof st.n === "number" ? st.n : idx - 1;
+      const back = n < idx;
+      idx = n;
+      // se il browser ha già animato il ritorno (il gesto dal bordo su iOS), niente seconda animazione
+      G.go(location.href, { push: false, y: st.y || 0, dir: back ? "back" : "forward", instant: !!e.hasUAVisualTransition });
+    });
+  }
+
+  // ---------- swipe: scorrere di lato per passare alla sezione, al gruppo o alla storia vicina ----------
+  // Conta solo un gesto orizzontale e deciso. I bordi dello schermo restano a iOS (indietro e avanti);
+  // gli elementi che scorrono da soli (fasce, controlli, tabelle) e i campi di testo non lo fanno partire.
+  // Lo scorrimento verticale non si blocca mai: gli ascoltatori sono passivi. Pulsanti e schede restano: è una scorciatoia.
+  const NOSWIPE = "input, textarea, select, [contenteditable], .ultim, [data-noswipe]";
+  G.swipe = (area, opt) => {
+    if (!area || !("ontouchstart" in window)) return;
+    const follow = opt.follow || area;
+    let x0 = 0, y0 = 0, t0 = 0, dx = 0, mode = "";
+    // dentro un elemento che scorre di lato (schede lunghe, tabelle larghe) il gesto è suo
+    const scrollsX = (el) => {
+      for (let n = el; n && n !== area && n !== document.body; n = n.parentElement) {
+        if (n.scrollWidth > n.clientWidth + 2) { const o = getComputedStyle(n).overflowX; if (o === "auto" || o === "scroll") return true; }
+      }
+      return false;
+    };
+    const reset = (smooth) => {
+      if (!smooth || G.reduced()) { follow.style.transition = ""; follow.style.transform = ""; return; }
+      follow.style.transition = "transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1)";
+      follow.style.transform = "";
+      P.later(() => { follow.style.transition = ""; }, 240);
+    };
+    P.on(area, "touchstart", (e) => {
+      const t = e.touches[0];
+      x0 = t.clientX; y0 = t.clientY; t0 = Date.now(); dx = 0;
+      mode = e.touches.length > 1 || x0 < 24 || x0 > innerWidth - 24 || (e.target.closest && e.target.closest(NOSWIPE)) || scrollsX(e.target) ? "no" : "";
+    }, { passive: true });
+    P.on(area, "touchmove", (e) => {
+      if (mode === "no") return;
+      const t = e.touches[0], dy = t.clientY - y0;
+      dx = t.clientX - x0;
+      if (!mode) {
+        if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+        mode = Math.abs(dx) > Math.abs(dy) * 1.5 ? "x" : "no";
+        if (mode === "no") return;
+      }
+      // il contenuto segue il dito con resistenza; dove oltre non c'è niente resta quasi fermo
+      const can = dx < 0 ? opt.canNext() : opt.canPrev();
+      if (!G.reduced()) follow.style.transform = "translateX(" + (dx * (can ? 0.35 : 0.08)).toFixed(1) + "px)";
+    }, { passive: true });
+    P.on(area, "touchend", () => {
+      if (mode !== "x") { mode = ""; return; }
+      mode = "";
+      const v = Math.abs(dx) / Math.max(1, Date.now() - t0);
+      const ok = Math.abs(dx) > 56 || (Math.abs(dx) > 28 && v > 0.45);
+      if (ok && dx < 0 && opt.canNext()) opt.next(reset);
+      else if (ok && dx > 0 && opt.canPrev()) opt.prev(reset);
+      else reset(true);
+    }, { passive: true });
+    P.on(area, "touchcancel", () => { mode = ""; reset(true); }, { passive: true });
+  };
+  // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
+  document.addEventListener("touchstart", () => {}, { passive: true });
+  let rz = 0;
+  window.addEventListener("resize", () => {
+    cancelAnimationFrame(rz);
+    rz = requestAnimationFrame(() => {
+      document.querySelectorAll(".seg, .mode").forEach((s) => G.seg(s, true));
+      document.querySelectorAll(".chips").forEach((r) => r._fade && r._fade());
+    });
   });
 
   G.initPrefs = () => {
@@ -467,9 +840,6 @@
         { duration: 480, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
       t.finished.finally(() => html.classList.remove("theme-vt"));
     }));
-
-    // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
-    document.addEventListener("touchstart", () => {}, { passive: true });
 
     // il menu è un dialog: tiene il focus dentro, si chiude con Esc, toccando fuori o con il pulsante
     const btn = document.querySelector(".menu-btn"), menu = document.getElementById("menu");
@@ -534,7 +904,7 @@
     if (mode) {
       const on = mode.querySelector("[aria-current]");
       const other = Array.from(mode.querySelectorAll("a")).find((a) => a !== on);
-      if (html.classList.contains("vt-reveal") && on && other && !G.reduced()) {
+      if ((html.classList.contains("vt-reveal") || html.dataset.vt === "reveal") && on && other && !G.reduced()) {
         const cur = on.getAttribute("aria-current");
         on.removeAttribute("aria-current"); other.setAttribute("aria-current", cur);
         G.seg(mode, true);
@@ -546,14 +916,6 @@
     if (html.classList.contains("vt-reveal")) setTimeout(() => html.classList.remove("vt-reveal"), 1500);
 
     document.querySelectorAll(".chips").forEach(G.watchRow);
-    let rz = 0;
-    window.addEventListener("resize", () => {
-      cancelAnimationFrame(rz);
-      rz = requestAnimationFrame(() => {
-        document.querySelectorAll(".seg, .mode").forEach((s) => G.seg(s, true));
-        document.querySelectorAll(".chips").forEach((r) => r._fade && r._fade());
-      });
-    });
     G.watchTop();
   };
 

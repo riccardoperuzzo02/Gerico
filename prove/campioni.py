@@ -1,6 +1,6 @@
 """Campioni della voce con Chatterbox multilingue (Resemble AI, licenza MIT), sul server di GitHub.
 
-python prove/chatterbox.py prove/out
+python prove/campioni.py prove/out
 Usa il timbro di Nicola (prove/ref_nicola.wav, fatto con Kokoro) e legge prove/testo.txt
 con due impostazioni: normale ed espressiva. Scrive i file m4a e report-chatterbox.json."""
 import functools

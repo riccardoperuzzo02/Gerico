@@ -5,7 +5,7 @@ name: Prove voce
 on:
   push:
     branches: [prove-voce]
-    paths: [prove/testo.txt, prove/chatterbox.py, prove/ref_nicola.wav, .github/workflows/prove-voce.yml]
+    paths: [prove/testo.txt, prove/campioni.py, prove/ref_nicola.wav, .github/workflows/prove-voce.yml]
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
           pip install chatterbox-tts==0.1.7 num2words imageio-ffmpeg soundfile > prove/out/log-pip2.txt 2>&1 || (tail -60 prove/out/log-pip2.txt; exit 1)
           tail -5 prove/out/log-pip2.txt
       - name: Campioni
-        run: python prove/chatterbox.py prove/out 2>&1 | tee prove/out/log-campioni.txt; exit ${PIPESTATUS[0]}
+        run: python prove/campioni.py prove/out 2>&1 | tee prove/out/log-campioni.txt; exit ${PIPESTATUS[0]}
       - name: Salva nel ramo
         if: always()
         run: |

@@ -26,14 +26,44 @@ FILES = ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin")
 CACHE = os.path.expanduser("~/.cache/kokoro")
 VOICE, LANG, SPEED = "im_nicola", "it", 1.0
 
-# come si leggono sigle e simboli che la voce sbaglierebbe
+# come si leggono sigle, nomi e simboli che la voce sbaglierebbe (controllati con i fonemi di espeak per l'italiano)
 SAY = [
-    (r"S&P\s*500", "esse e pi cinquecento"), (r"S&P", "esse e pi"), (r"\bFtse\s*Mib\b", "Ftse Mib"),
+    (r"S&P\s*500", "esse e pi cinquecento"), (r"S&P", "esse e pi"), (r"\bFTSE\b|\bFtse\b", "Futsi"),
     (r"\bEUR/USD\b", "euro dollaro"), (r"\bGBP/USD\b", "sterlina dollaro"), (r"\bUSD/JPY\b", "dollaro yen"),
     (r"\bUSD/CHF\b", "dollaro franco"), (r"\bAUD/USD\b", "dollaro australiano"), (r"\bUSD/CAD\b", "dollaro canadese"),
-    (r"\bWti\b|\bWTI\b", "W T I"), (r"\bTTF\b", "T T F"), (r"\bBtp\b|\bBTP\b", "Btp"), (r"\bPil\b|\bPIL\b", "Pil"),
+    (r"\bWti\b|\bWTI\b", "W T I"), (r"\bTTF\b|\bTtf\b", "T T F"), (r"\bBtp\b|\bBTP\b", "Btp"), (r"\bPil\b|\bPIL\b", "Pil"),
     (r"\bpb\b", "punti base"), (r"\bp\.p\.", "punti percentuali"), (r"\bmld\b", "miliardi"), (r"\bmln\b", "milioni"),
+    (r"\bBCE\b|\bBce\b", "bi ci e"), (r"\b([lL])'(?:UE|Ue)\b", r"\1'Unione europea"), (r"\bUE\b|\bUe\b", "Unione europea"),
+    (r"\bFMI\b|\bFmi\b", "effe emme i"), (r"\bFBI\b|\bFbi\b", "effe bi ai"), (r"\bETF\b|\bEtf\b", "e ti effe"),
+    (r"\bCEO\b|\b[Cc]eo\b", "amministratore delegato"), (r"\bchips?\b", "cip"), (r"\bspread\b", "sprèd"),
+    (r"\bStoxx\b|\bSTOXX\b", "Stox"), (r"\bTreasury\b", "Trèsciuri"), (r"\bReuters\b", "Ròiters"), (r"\bBloomberg\b", "Blùmberg"),
+    (r"\bJPMorgan\b|\bJP Morgan\b", "Gei Pi Morgan"), (r"\bSachs\b", "Saks"), (r"\bNvidia\b", "Envìdia"), (r"\bASML\b", "a esse emme elle"),
+    (r"\bTrump\b", "Tramp"), (r"\bVance\b", "Vens"), (r"\bPowell\b", "Pàuel"), (r"\bBinance\b", "Bàinans"), (r"\bEisenkot\b", "Àisenkot"),
 ]
+# espeak segna le parole che legge in inglese con (en) ... (it): la voce leggerebbe i segni come lettere, quindi si tolgono
+FLAG = re.compile(r"\([a-z]{2,3}(?:-[a-z0-9]+)*\)")
+
+
+UNITS = ("zero uno due tre quattro cinque sei sette otto nove dieci undici dodici tredici quattordici quindici sedici "
+         "diciassette diciotto diciannove").split()
+TENS = ("", "", "venti", "trenta", "quaranta", "cinquanta", "sessanta", "settanta", "ottanta", "novanta")
+
+
+def words(n):
+    """Un numero intero in lettere (fino a 999.999), per i casi in cui la voce leggerebbe male le cifre."""
+    if n < 20:
+        return UNITS[n]
+    if n < 100:
+        t, u = divmod(n, 10)
+        w = TENS[t][:-1] if u in (1, 8) else TENS[t]
+        return w + ("tré" if u == 3 else UNITS[u] if u else "")
+    if n < 1000:
+        c, r = divmod(n, 100)
+        return ("cento" if c == 1 else UNITS[c] + "cento") + (words(r) if r else "")
+    if n < 1_000_000:
+        m, r = divmod(n, 1000)
+        return ("mille" if m == 1 else words(m) + "mila") + (words(r) if r else "")
+    return str(n)
 
 
 def speakable(text):
@@ -42,6 +72,9 @@ def speakable(text):
         t = re.sub(a, b, t)
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)            # 3.956 -> 3956: la voce non legge il punto delle migliaia
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)
+    # l'1,4 e dell'8: davanti alle cifre la voce leggerebbe l'apostrofo come «elle», quindi il numero va in lettere
+    t = re.sub(r"\b([A-Za-zÀ-ÿ]*')(\d+)(?:,(\d+))?",
+               lambda m: m.group(1) + words(int(m.group(2))) + (" virgola " + m.group(3) if m.group(3) else ""), t)
     t = re.sub(r"\s*%", " per cento", t)
     t = re.sub(r"\$\s*(\d[\d.,]*)", r"\1 dollari", t)
     t = re.sub(r"(\d[\d.,]*)\s*\$", r"\1 dollari", t)
@@ -98,7 +131,8 @@ def main(site):
     k = model()
     parts, rate = [], 24000
     for c in chunks(speakable(rp["text"])):
-        samples, rate = k.create(c, voice=VOICE, speed=SPEED, lang=LANG)
+        phonemes = FLAG.sub("", k.tokenizer.phonemize(c, lang=LANG))
+        samples, rate = k.create(phonemes, voice=VOICE, speed=SPEED, is_phonemes=True)
         parts.extend([samples, np.zeros(int(rate * 0.28), dtype=samples.dtype)])  # una pausa breve tra un pezzo e l'altro
     audio = np.concatenate(parts)
     os.makedirs(os.path.join(site, "audio"), exist_ok=True)

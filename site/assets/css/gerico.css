@@ -1248,3 +1248,53 @@ html.intro-run .ultim, html.intro-run .ticker, html.intro-run .listen, html.intr
 html.intro-run.intro-open .ultim, html.intro-run.intro-open .ticker, html.intro-run.intro-open .listen, html.intro-run.intro-open #edition-line { animation-play-state: running; }
 html.intro-run .ticker { animation-delay: 45ms; }
 html.intro-run .listen { animation-delay: 90ms; }
+
+/* ========== identità «Tratto» (3 novembre, sera): fondo carta, nome e titolo d'apertura passati con l'evidenziatore ========== */
+/* scelta dell'utente fra tre rifiniture di «Evidenziatore»; le regole stanno in docs/brand.md */
+:root {
+  --ground: #FAF8F3; --group: #FFFFFF; --cell: #FFFFFF; --fill: #ECE8DF; --raised: #FFFFFF; --rule: #E4DFD3;
+  --bar: rgba(250, 248, 243, 0.88);
+  --band-top: 52%; --band-bottom: 6%; --iw-top: 52%; --iw-bottom: 6%; --band-color: var(--hl); --brand: #0B0B0C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0B0B0C; --group: #161618; --cell: #1F1F22; --fill: #26262A; --raised: #3A3A40; --rule: #26262A; --bar: rgba(11, 11, 12, 0.82);
+    --band-top: 52%; --band-bottom: 6%; --iw-top: 52%; --iw-bottom: 6%; --band-color: #3B350B; --brand: #FFD60A;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0B0B0C; --group: #161618; --cell: #1F1F22; --fill: #26262A; --raised: #3A3A40; --rule: #26262A; --bar: rgba(11, 11, 12, 0.82);
+  --band-top: 52%; --band-bottom: 6%; --iw-top: 52%; --iw-bottom: 6%; --band-color: #3B350B; --brand: #FFD60A;
+}
+/* Terminal: grafite neutra al posto del blu notte, il nome giallo come al buio */
+body.term {
+  --t-bg: #0B0B0C; --t-head: #0E0E10; --t-panel: #151517; --t-rule: #26262A; --t-rule-2: #1D1D20; --t-line: #3A3A40;
+  --t-ink: #F2F2EF; --t-ink-2: #C9C9C4; --t-ink-3: #9A9A95; --cell: #1F1F22; --fill: #1F1F22; --raised: #3A3A40; --bar: rgba(11, 11, 12, 0.82);
+  --band-top: 52%; --band-bottom: 6%; --iw-top: 52%; --iw-bottom: 6%; --band-color: #3B350B; --brand: #FFD60A;
+}
+
+/* il nome: un tratto di evidenziatore con le punte oblique sotto la metà bassa delle lettere */
+.brand, body.term .brand { color: var(--brand) !important; padding: 0 5px !important; margin-left: -5px !important; }
+.brand::before, html.intro-run .intro-word::before { background: var(--band-color); clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%); }
+html.intro-run .intro-word, :root[data-theme].intro-run .intro-word, html.intro-run body.term .intro-word { color: var(--brand) !important; padding: 0 12px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]).intro-run .intro-word { color: var(--brand) !important; } }
+
+/* il titolo d'apertura passato con l'evidenziatore, riga per riga */
+.lead h2 a { background: linear-gradient(transparent 58%, rgba(255, 214, 10, 0.95) 58%, rgba(255, 214, 10, 0.95) 90%, transparent 90%); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lead h2 a { background: linear-gradient(transparent 60%, rgba(255, 214, 10, 0.3) 60%, rgba(255, 214, 10, 0.3) 92%, transparent 92%); } }
+:root[data-theme="dark"] .lead h2 a { background: linear-gradient(transparent 60%, rgba(255, 214, 10, 0.3) 60%, rgba(255, 214, 10, 0.3) 92%, transparent 92%); }
+
+/* occhielli: la sezione sottolineata con il tratto (al buio scritta in giallo), anche nell'apertura: niente etichette */
+.k-sec, .lead .kick .k-sec, :root[data-theme] .lead .kick .k-sec {
+  padding: 0 2px !important; margin: 0 0 0 -2px !important; border-radius: 0 !important; color: var(--ink) !important;
+  background: linear-gradient(transparent 55%, var(--hl) 55%, var(--hl) 95%, transparent 95%) !important;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .k-sec, :root:not([data-theme="light"]) .lead .kick .k-sec { color: var(--hl) !important; background: none !important; } }
+:root[data-theme="dark"] .k-sec, :root[data-theme="dark"] .lead .kick .k-sec { color: var(--hl) !important; background: none !important; }
+.k-live::before { border-radius: 1px; width: 8px; height: 8px; }
+
+/* riquadri: carta bianca con un filo, sul fondo color carta */
+.lead, .ticker, .listen { background: var(--group); box-shadow: inset 0 0 0 1px var(--rule); }
+.ultim { background: var(--group); box-shadow: inset 0 -1px 0 var(--rule); }
+.sec-nav .seg .seg-ind { height: 4px; background: var(--hl); }
+.sec-nav .seg:not(.ready) > [aria-current="page"] { box-shadow: inset 0 -4px 0 var(--hl); }

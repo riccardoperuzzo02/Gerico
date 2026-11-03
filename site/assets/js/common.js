@@ -931,7 +931,7 @@
 
   // ---------- titoli da seguire: lo stesso blocco in prima pagina e nel Terminal ----------
   // Chi produce le analisi e i conflitti di interesse: la frase la decide chi cura GERICO (vedi come-funziona.html#titoli)
-  G.TITOLI_DISC = "";
+  G.TITOLI_DISC = "A cura di Riccardo Peruzzo, che non ha posizioni sui titoli citati.";
   G.titoliFresh = (t) => !!(t && Array.isArray(t.items) && G.hoursAgo(t.asOf) < 30);
   G.titoliHTML = (t, h) => {
     const esc = G.esc;
@@ -952,7 +952,7 @@
     const list = t.items.length ? '<ol class="tit-list">' + t.items.map(row).join("") + "</ol>"
       : '<p class="tit-none">Oggi nessun titolo passa i filtri.' + (t.note ? " " + esc(t.note) : "") + "</p>";
     return list + rec + '<p class="tit-disc">' + (G.TITOLI_DISC ? esc(G.TITOLI_DISC) + " " : "") + "Analisi automatica di GERICO " + esc(G.isToday(t.asOf) ? "delle " + G.hm(t.asOf) : "del " + G.day(t.asOf) + " alle " + G.hm(t.asOf)) +
-      ": segnali sui prezzi e notizie con data, non un consiglio di investimento. Può sbagliare e si può perdere denaro. " +
+      ": segnali sui prezzi e notizie con data. Non è una consulenza personalizzata: può sbagliare e si può perdere denaro. " +
       '<a href="come-funziona.html#titoli">Metodo e rischi</a>.</p>';
   };
 

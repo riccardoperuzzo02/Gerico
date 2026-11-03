@@ -7,7 +7,7 @@ Uso:
 Gira nel job «Dati del Terminal». Se il riepilogo non c'è, o l'audio è già quello del riepilogo
 attuale, non fa niente. La voce è Nicola di Kokoro (modello aperto, licenza Apache 2.0), che gira
 sul server senza servizi esterni; i file del modello si scaricano dalle release di kokoro-onnx
-su GitHub e restano nella cache del job. L'audio è AAC mono a 32 kbps: circa 240 KB al minuto.
+su GitHub e restano nella cache del job. L'audio è AAC mono a 64 kbps: circa 480 KB al minuto.
 Scrive anche site/data/audio.json, che la prima pagina legge per mostrare il pulsante «Ascolta»."""
 import hashlib
 import json
@@ -25,7 +25,15 @@ from zoneinfo import ZoneInfo
 MODEL_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
 FILES = ("kokoro-v1.0.int8.onnx", "voices-v1.0.bin")
 CACHE = os.path.expanduser("~/.cache/kokoro")
-VOICE, LANG, SPEED = "im_nicola", "it", 1.0
+LANG = "it"
+# Nicola con un po' di Sara (15%): l'intonazione varia di più e la voce resta maschile; un filo più veloce, frase per frase
+VOICE_MIX = (("im_nicola", 0.85), ("if_sara", 0.15))
+SPEED = 1.1
+VOICE_ID = "kokoro-nicola85-sara15-v2"  # cambia quando cambia la voce: l'audio si rifà anche con lo stesso testo
+# volume normalizzato (-16 LUFS, come i podcast), un po' di compressione e di presenza sulle medie
+CHAIN = ("highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,"
+         "equalizer=f=3200:t=q:w=1.2:g=2.5,loudnorm=I=-16:TP=-1.5:LRA=9")
+PAUSE_SENT, PAUSE_PARA = 0.2, 0.55
 
 # come si leggono sigle, nomi e simboli che la voce sbaglierebbe (controllati con i fonemi di espeak per l'italiano)
 SAY = [
@@ -99,6 +107,38 @@ def chunks(text, size=380):
     return out
 
 
+def sentences(text):
+    """Frasi del testo già pronto per la voce; quelle molto lunghe si spezzano alle virgole."""
+    out = []
+    for s in re.split(r"(?<=[.!?])\s+", text):
+        s = s.strip()
+        while len(s) > 300:
+            cut = max(s.rfind(", ", 0, 300), s.rfind("; ", 0, 300))
+            if cut < 80:
+                break
+            out.append(s[:cut + 1])
+            s = s[cut + 2:]
+        if s:
+            out.append(s)
+    return out
+
+
+def jingle(np, rate):
+    """La sigla di GERICO: due note brevi (la e mi), suono di marimba fatto con numpy. Niente file con diritti."""
+    def note(f, dur=0.9):
+        t = np.arange(int(rate * dur)) / rate
+        env = np.minimum(t / 0.004, 1.0)
+        y = (np.sin(2 * np.pi * f * t) * np.exp(-t / 0.32) + 0.32 * np.sin(2 * np.pi * 4 * f * t) * np.exp(-t / 0.09)
+             + 0.06 * np.sin(2 * np.pi * 9.9 * f * t) * np.exp(-t / 0.04))
+        return (env * y).astype(np.float32)
+    out = np.zeros(int(rate * 1.25), dtype=np.float32)
+    for start, f in ((0.0, 440.0), (0.17, 659.25)):
+        n = note(f)
+        i = int(rate * start)
+        out[i:i + len(n)] += n[: len(out) - i]
+    return out / np.max(np.abs(out)) * 0.45
+
+
 def ffmpeg():
     """Il ffmpeg del sistema, se c'è; altrimenti quello del pacchetto imageio-ffmpeg (sul server di GitHub non c'è)."""
     exe = shutil.which("ffmpeg")
@@ -132,32 +172,40 @@ def main(site):
             old = json.load(f)
     except (OSError, ValueError):
         old = {}
-    if old.get("source") == rp.get("asOf") and os.path.exists(os.path.join(site, "audio", "riepilogo.m4a")):
+    if old.get("source") == rp.get("asOf") and old.get("voiceId") == VOICE_ID and os.path.exists(os.path.join(site, "audio", "riepilogo.m4a")):
         print("L'audio è già quello del riepilogo attuale.")
         return
     import numpy as np
     import soundfile as sf
     t0 = time.time()
     k = model()
-    parts, rate = [], 24000
-    for c in chunks(speakable(rp["text"])):
-        phonemes = FLAG.sub("", k.tokenizer.phonemize(c, lang=LANG))
-        samples, rate = k.create(phonemes, voice=VOICE, speed=SPEED, is_phonemes=True)
-        parts.extend([samples, np.zeros(int(rate * 0.28), dtype=samples.dtype)])  # una pausa breve tra un pezzo e l'altro
-    audio = np.concatenate(parts)
+    style = lambda v: k.get_voice_style(v) if hasattr(k, "get_voice_style") else k.voices[v]
+    voice = sum(w * style(v) for v, w in VOICE_MIX)
+    rate = 24000
+    parts = [jingle(np, rate), np.zeros(int(rate * 0.35), dtype=np.float32)]
+    # frase per frase: ogni frase ha la sua intonazione; pausa breve tra le frasi, più lunga tra un tema e l'altro (riga vuota)
+    paras = [p for p in re.split(r"\n\s*\n", rp["text"]) if p.strip()]
+    for para in paras:
+        for s in sentences(speakable(para)):
+            phonemes = FLAG.sub("", k.tokenizer.phonemize(s, lang=LANG))
+            samples, rate = k.create(phonemes, voice=voice, speed=SPEED, is_phonemes=True)
+            parts.extend([samples.astype(np.float32), np.zeros(int(rate * PAUSE_SENT), dtype=np.float32)])
+        parts[-1] = np.zeros(int(rate * PAUSE_PARA), dtype=np.float32)
+    audio = np.concatenate(parts[:-1])
     os.makedirs(os.path.join(site, "audio"), exist_ok=True)
     dest = os.path.join(site, "audio", "riepilogo.m4a")
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, "r.wav")
-        sf.write(wav, audio, rate)
-        subprocess.run([ffmpeg(), "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-c:a", "aac", "-b:a", "32k",
-                        "-movflags", "+faststart", dest + ".tmp.m4a"], check=True)
+        sf.write(wav, audio / max(1e-6, float(np.max(np.abs(audio)))) * 0.9, rate)
+        subprocess.run([ffmpeg(), "-loglevel", "error", "-y", "-i", wav, "-af", CHAIN, "-ar", str(rate), "-ac", "1",
+                        "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", dest + ".tmp.m4a"], check=True)
     os.replace(dest + ".tmp.m4a", dest)
     with open(dest, "rb") as f:
         tag = hashlib.sha256(f.read()).hexdigest()[:10]
     info = {"asOf": datetime.now(ZoneInfo("Europe/Rome")).isoformat(timespec="seconds"), "source": rp.get("asOf"),
             "date": rp.get("date"), "title": rp.get("title") or "Il riepilogo di GERICO",
-            "duration": round(len(audio) / rate), "src": "audio/riepilogo.m4a?v=" + tag, "voice": "Nicola, sintesi vocale Kokoro"}
+            "duration": round(len(audio) / rate), "src": "audio/riepilogo.m4a?v=" + tag, "voice": "Nicola, sintesi vocale Kokoro",
+            "voiceId": VOICE_ID}
     with open(os.path.join(data, "audio.json"), "w", encoding="utf-8") as f:
         json.dump(info, f, ensure_ascii=False, separators=(",", ":"))
     print(f"::notice::audio.json: riepilogo letto in {info['duration']} s di audio, {os.path.getsize(dest) // 1024} KB, in {time.time() - t0:.0f} s")

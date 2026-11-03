@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Come funziona · GERICO</title>
 <meta name="description" content="Come GERICO sceglie le testate, confronta i fatti, scrive il suo parere e aggiorna il Terminal.">
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GERICO">
 <meta property="og:locale" content="it_IT">
@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261103-5">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261103-6">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add(localStorage.getItem("gerico.introDay")===JSON.stringify(new Date().toLocaleDateString("it-IT",{timeZone:"Europe/Rome"}))?"intro-mini":"intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -79,6 +79,14 @@
 <li><strong>Documenti SEC</strong>: le comunicazioni ufficiali (8-K, 10-Q, 10-K) di un gruppo di grandi società Usa, dalla banca dati EDGAR. Il pannello compare solo quando la SEC risponde ai server di GitHub.</li>
 </ul>
 
+<h2 id="titoli">Titoli da seguire</h2>
+<p>Nei giorni feriali GERICO indica da zero a cinque titoli che hanno un motivo concreto per salire nelle sedute successive. La sezione compare in prima pagina e nel Terminal nei giorni in cui è stata preparata. Si fa in due passi.</p>
+<p>Il primo passo guarda i prezzi. Un programma scorre circa 190 titoli molto scambiati (Ftse Mib, Euro Stoxx 50 e i cento titoli principali di Wall Street) e cerca alcuni segnali di brevissimo periodo: la chiusura sopra il massimo delle venti sedute prima, con volumi alti; un salto in apertura che tiene nei giorni dopo; un andamento migliore del proprio indice nelle ultime venti sedute; un calo di pochi giorni dentro un trend al rialzo. Sono segnali noti e misurabili, non previsioni.</p>
+<p>Il secondo passo guarda le notizie. Per i candidati con il punteggio più alto GERICO cerca una notizia con data delle ultime 48 ore che spieghi il movimento: conti, previsioni, ordini, giudizi degli analisti. Restano solo i titoli in cui prezzi e notizia vanno nella stessa direzione. Si scartano quelli con i conti in arrivo nei due giorni dopo e quelli con la notizia già tutta nel prezzo. Ogni titolo ha il perché, il rischio e la fonte con la data. Se nessun titolo passa i filtri, la sezione lo dice.</p>
+<p>Per ogni titolo pubblicato GERICO calcola il rendimento dopo 1, 3 e 5 sedute e lo confronta con quello del suo indice. Il conto degli ultimi venti titoli sta sotto la sezione, anche quando va male.</p>
+<p>I segnali di brevissimo periodo sbagliano spesso, e un titolo può scendere anche con una notizia buona. Questa sezione non è una consulenza personalizzata: non tiene conto della tua situazione, dei tuoi obiettivi e di quanto rischio puoi sopportare. Si può perdere denaro.</p>
+<p>Le analisi sono a cura di Riccardo Peruzzo, che cura GERICO e non ha posizioni sui titoli citati. Se questo cambiasse, sarà scritto qui e nella sezione.</p>
+
 <h2>I limiti</h2>
 <p>GERICO lavora solo su fonti pubbliche e può sbagliare. Gli articoli originali sono sempre linkati: in caso di dubbio, conta quello che scrive la testata. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
 </div>
@@ -90,7 +98,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261103-5"></script>
-<script src="assets/js/info.js?v=20261103-5"></script>
+<script src="assets/js/common.js?v=20261103-6"></script>
+<script src="assets/js/info.js?v=20261103-6"></script>
 </body>
 </html>

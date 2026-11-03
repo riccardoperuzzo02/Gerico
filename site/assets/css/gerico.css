@@ -1061,3 +1061,90 @@ html.scrolled .sec-nav::after { opacity: 0; }
 /* storia: occhiello in maiuscolo come in prima pagina */
 .story-main .meta { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
 @media (min-width: 760px) { .sec-nav { box-shadow: none; } .sec-nav .seg { width: auto; box-shadow: inset 0 -1px 0 var(--rule); } }
+
+/* ========== identità «Evidenziatore» (3 novembre): nero d'inchiostro e giallo evidenziatore, i fatti evidenziati ========== */
+:root {
+  --ground: #FFFFFF; --group: #F4F4F1; --cell: #FFFFFF; --fill: #E9E9E5; --raised: #FFFFFF;
+  --ink: #0B0B0C; --ink-2: #1F1F21; --ink-3: #333336; --muted: #5E5E62; --rule: #E5E5E1;
+  --hair: rgba(0, 0, 0, 0.1); --press: rgba(0, 0, 0, 0.06); --bar: rgba(255, 255, 255, 0.86);
+  --palm: #0B0B0C; --palm-weak: #FFF6C7; --partial: #FFD60A; --lintel: #D9A900; --split: #9A5600;
+  --link: #0B0B0C; --link-hover: #000000; --brand: #0B0B0C;
+  --hl: #FFD60A; --hl-ink: #0B0B0C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0B0B0C; --group: #1A1A1C; --cell: #242426; --fill: #2B2B2E; --raised: #4A4A4E;
+    --ink: #F5F5F2; --ink-2: #DCDCD8; --ink-3: #CBCBC6; --muted: #A3A39E; --rule: #26262A;
+    --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(11, 11, 12, 0.8);
+    --palm: #FFD60A; --palm-weak: #24210B; --partial: #7A6A14; --lintel: #FFD60A; --split: #F0B44C;
+    --link: #F5F5F2; --link-hover: #FFFFFF; --brand: #0B0B0C;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0B0B0C; --group: #1A1A1C; --cell: #242426; --fill: #2B2B2E; --raised: #4A4A4E;
+  --ink: #F5F5F2; --ink-2: #DCDCD8; --ink-3: #CBCBC6; --muted: #A3A39E; --rule: #26262A;
+  --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(11, 11, 12, 0.8);
+  --palm: #FFD60A; --palm-weak: #24210B; --partial: #7A6A14; --lintel: #FFD60A; --split: #F0B44C;
+  --link: #F5F5F2; --link-hover: #FFFFFF; --brand: #0B0B0C;
+}
+::selection { background: var(--hl); color: var(--hl-ink); }
+/* i link si sottolineano con l'evidenziatore */
+a { text-decoration-color: var(--hl); text-decoration-thickness: 0.16em; text-underline-offset: 0.18em; }
+
+/* marchio: GERICO con il tratto di evidenziatore; al buio diventa un'etichetta gialla */
+.brand { padding: 0 4px; margin-left: -4px; background: linear-gradient(transparent 49%, var(--hl) 49%, var(--hl) 73%, transparent 73%); }
+html.intro-run .intro-word { padding: 0 10px; background: linear-gradient(transparent 49%, var(--hl) 49%, var(--hl) 80%, transparent 80%); color: var(--hl-ink); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand { padding: 0 7px; margin-left: -7px; background: linear-gradient(transparent 22%, var(--hl) 22%, var(--hl) 78%, transparent 78%); }
+  :root:not([data-theme="light"]).intro-run .intro-word { background: linear-gradient(transparent 4%, var(--hl) 4%, var(--hl) 96%, transparent 96%); }
+}
+:root[data-theme="dark"] .brand { padding: 0 7px; margin-left: -7px; background: linear-gradient(transparent 22%, var(--hl) 22%, var(--hl) 78%, transparent 78%); }
+:root[data-theme="dark"].intro-run .intro-word { background: linear-gradient(transparent 4%, var(--hl) 4%, var(--hl) 96%, transparent 96%); }
+
+/* titoli più neri e più stretti */
+.lead h2 { font-weight: 800; font-size: clamp(2.05rem, 1.4rem + 2vw, 2.8rem); line-height: 1.03; letter-spacing: -0.03em; }
+.item h2 { font-weight: 800; font-size: 1.25rem; line-height: 1.22; letter-spacing: -0.02em; }
+.story-main h1 { font-weight: 800; letter-spacing: -0.03em; }
+.mk-box h2, .linked h2, .blk-h, .t-panel h2 { font-weight: 800; }
+
+/* occhielli: la sezione evidenziata; nell'apertura un'etichetta gialla */
+.k-sec { color: var(--ink); padding: 0 2px; margin-left: -2px; background: linear-gradient(transparent 55%, var(--hl) 55%, var(--hl) 95%, transparent 95%); }
+.lead .kick .k-sec { margin: 0; padding: 3px 8px 2px; background: var(--hl); color: var(--hl-ink); }
+.k-live::before { background: var(--hl); box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25); }
+.blk-h::before { background: var(--hl); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .k-sec { background: none; color: var(--hl); } }
+:root[data-theme="dark"] .k-sec { background: none; color: var(--hl); }
+
+/* fascia Ultim'ora: etichetta nera con il giallo, al buio gialla con il nero */
+.ultim-l { background: var(--hl-ink); color: var(--hl); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ultim-l { background: var(--hl); color: var(--hl-ink); } }
+:root[data-theme="dark"] .ultim-l { background: var(--hl); color: var(--hl-ink); }
+
+/* muro delle testate: nero chi concorda, giallo chi concorda in parte (con un filo, che sul bianco si veda) */
+.mw i.p, .wall i.p { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); }
+
+/* Terminal: il giallo del marchio al posto dell'oro */
+body.term { --t-accent: #FFD60A; --link-hover: #FFE45C; }
+body.term a:hover { color: #FFE45C; }
+body.term .brand { color: var(--hl-ink); padding: 0 7px; margin-left: -7px; background: linear-gradient(transparent 22%, var(--hl) 22%, var(--hl) 78%, transparent 78%); }
+html.intro-run body.term .intro-word { color: var(--hl-ink); background: linear-gradient(transparent 4%, var(--hl) 4%, var(--hl) 96%, transparent 96%); }
+
+/* riepilogo a voce: pulsante nero con il giallo, il tempo che manca, la barra gialla che avanza */
+.listen { position: relative; overflow: hidden; display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; gap: 0 12px; margin-top: 12px; padding: 10px 14px 12px 10px; border-radius: var(--radius); background: var(--group); }
+.listen[hidden] { display: none; }
+.ls-btn { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: var(--hl-ink); color: var(--hl); cursor: pointer; }
+.ls-btn:disabled { opacity: 0.35; cursor: default; }
+.ls-btn .i-pause, .listen.playing .ls-btn .i-play { display: none; }
+.listen.playing .ls-btn .i-pause { display: block; }
+.ls-txt { min-width: 0; }
+.ls-t { font-size: 0.9375rem; font-weight: 800; line-height: 1.3; }
+.ls-s { font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
+.ls-time { font-size: 0.8125rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.ls-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; }
+.ls-bar i { display: block; width: 100%; height: 100%; background: var(--hl); transform: scaleX(0); transform-origin: 0 50%; }
+.listen.wait .ls-t, .listen.wait .ls-s { opacity: 0.5; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ls-btn { background: var(--hl); color: var(--hl-ink); } }
+:root[data-theme="dark"] .ls-btn { background: var(--hl); color: var(--hl-ink); }
+@media (prefers-reduced-motion: no-preference) { .ls-bar i { transition: transform 250ms linear; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lead .kick .k-sec { padding: 3px 8px 2px; background: var(--hl); color: var(--hl-ink); } }
+:root[data-theme="dark"] .lead .kick .k-sec { padding: 3px 8px 2px; background: var(--hl); color: var(--hl-ink); }

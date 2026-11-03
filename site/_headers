@@ -33,6 +33,8 @@
 /s/*
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'
+/audio/*
+  Cache-Control: public, max-age=300, must-revalidate
 /data/*
   Cache-Control: public, max-age=300, must-revalidate
 /assets/fonts/*

@@ -1,7 +1,7 @@
 name: Dati del Terminal
 
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR)
-# e le notizie di Yahoo Finance con il tono calcolato da FinBERT. Salva i file in site/data
+# e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno. Salva i file in site/data
 # e li pubblica su main, come fa l'attività «GERICO pubblicazione». Non usa crediti Claude.
 on:
   schedule:
@@ -15,7 +15,7 @@ on:
   # anche dopo ogni edizione pubblicata: gli orari del cron di GitHub non sono garantiti e a volte saltano
   push:
     branches: [main]
-    paths: [site/data/edition.json]
+    paths: [site/data/edition.json, site/data/riepilogo.json]
 
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -42,6 +42,11 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: finbert-prosusai-1
+      - name: Voce del riepilogo in cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1-int8
       - name: Librerie
         run: |
           python -m pip install -q --upgrade pip
@@ -49,15 +54,18 @@ jobs:
           pip install -q -r scripts/fin_requirements.txt
       - name: Scarica i dati
         run: python scripts/fin_data.py site/data
+      - name: Riepilogo audio
+        run: python scripts/audio.py site
       - name: Controlla il sito
         run: python scripts/check_site.py site
       - name: Pubblica
         run: |
           git config user.name "GERICO"
           git config user.email "gerico@users.noreply.github.com"
-          for f in quotes macro sec sentiment; do
+          for f in quotes macro sec sentiment audio; do
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
+          if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi
           if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
           git commit -q -m "Dati del Terminal del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
           for i in 1 2 3 4; do

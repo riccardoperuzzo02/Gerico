@@ -8,13 +8,14 @@
   // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
   if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
 
-  const [ed, mk, qt, br] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi")]);
+  const [ed, mk, qt, br, au] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio")]);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
     $("retry").addEventListener("click", () => location.reload());
     $("side").innerHTML = "";
     $("ticker").hidden = true;
+    $("listen").hidden = true;
     return;
   }
   const stories = ed.stories.slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
@@ -165,6 +166,49 @@
     });
   }
 
+  // ---------- riepilogo a voce: il bollettino del mattino, letto da una voce sintetica ----------
+  // l'audio si scarica solo quando lo chiedi; con il telefono bloccato si comanda dalla schermata di blocco
+  function renderListen() {
+    const box = $("listen");
+    if (!au || !au.src || G.hoursAgo(au.asOf) > 30) { box.hidden = true; return; }
+    const audio = $("ls-audio"), btn = $("ls-btn");
+    const mmss = (sec) => Math.floor(sec / 60) + ":" + String(Math.floor(sec % 60)).padStart(2, "0");
+    const when = au.source || au.asOf;
+    const title = G.isToday(when) ? "Il riepilogo di oggi" : "Il riepilogo di " + G.weekday(when);
+    $("ls-t").textContent = title;
+    const mins = Math.max(1, Math.round((au.duration || 60) / 60));
+    $("ls-s").textContent = "Notizie e mercati in " + (mins === 1 ? "un minuto" : mins + " minuti") + ", con l'aggiornamento delle " + G.hm(when);
+    $("ls-time").textContent = au.duration ? mmss(au.duration) : "";
+    box.classList.remove("wait");
+    btn.disabled = false;
+    btn.addEventListener("click", () => {
+      if (!audio.getAttribute("src")) audio.src = au.src;
+      if (audio.paused) audio.play().catch(() => {}); else audio.pause();
+    });
+    const set = (on) => {
+      box.classList.toggle("playing", on);
+      btn.setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : "Ascolta il riepilogo");
+    };
+    audio.addEventListener("play", () => {
+      set(true);
+      if ("mediaSession" in navigator && window.MediaMetadata) {
+        navigator.mediaSession.metadata = new MediaMetadata({ title, artist: "GERICO", album: au.title || "",
+          artwork: [{ src: new URL("assets/img/apple-touch-icon.png", location.href).href, sizes: "180x180", type: "image/png" }] });
+        try {
+          navigator.mediaSession.setActionHandler("seekbackward", () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
+          navigator.mediaSession.setActionHandler("seekforward", () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 15); });
+        } catch (e) { /* non tutti i browser li hanno */ }
+      }
+    });
+    audio.addEventListener("pause", () => set(false));
+    audio.addEventListener("timeupdate", () => {
+      const d = audio.duration || au.duration || 1;
+      $("ls-prog").style.transform = "scaleX(" + Math.min(1, audio.currentTime / d).toFixed(4) + ")";
+      $("ls-time").textContent = mmss(Math.max(0, d - audio.currentTime));
+    });
+    audio.addEventListener("ended", () => { set(false); $("ls-prog").style.transform = "scaleX(0)"; $("ls-time").textContent = au.duration ? mmss(au.duration) : ""; });
+  }
+
   // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
   const QPICK = [["indici", "FTSEMIB.MI"], ["indici", "^GSPC"], ["valute", "EURUSD=X"], ["materie", "BZ=F"], ["materie", "GC=F"], ["cripto", "BTC-USD"]];
   function renderTicker() {
@@ -275,7 +319,7 @@
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderUltim();
+  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderUltim(); renderListen();
 
   // la pagina resta aperta nel telefono: tornandoci dopo un po', se è uscita un'edizione nuova lo si dice con un pulsante
   let checked = Date.now();

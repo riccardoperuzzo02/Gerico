@@ -77,7 +77,18 @@ def check_data(site):
             d = load(path)
             if d is not None:
                 need(isinstance(d, dict) and isinstance(d.get(key), list), f"{name}: manca la lista {key}")
-    known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json"} | {n for n, _ in optional}
+    path = os.path.join(data, "audio.json")
+    if os.path.exists(path):
+        d = load(path)
+        src = str((d or {}).get("src") or "").split("?")[0]
+        need(bool(src) and os.path.exists(os.path.join(site, src)), f"audio.json: il file audio {src or '(vuoto)'} non c'è")
+    optional = optional + (("riepilogo.json", None),)
+    for name, _ in optional[-1:]:
+        path = os.path.join(data, name)
+        if os.path.exists(path):
+            d = load(path)
+            need(isinstance(d, dict) and isinstance(d.get("text"), str) and len(d["text"]) > 100, f"{name}: manca il testo")
+    known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json", "audio.json"} | {n for n, _ in optional}
     for path in glob.glob(os.path.join(data, "*.json")):
         if os.path.basename(path) not in known:
             load(path)

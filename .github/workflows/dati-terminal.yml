@@ -12,10 +12,11 @@ on:
     - cron: "23 21 * * 1-5"   # dopo la chiusura di Wall Street
     - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
   workflow_dispatch:
-  # anche dopo ogni edizione pubblicata: gli orari del cron di GitHub non sono garantiti e a volte saltano
+  # anche dopo ogni edizione pubblicata (gli orari del cron di GitHub non sono garantiti e a volte saltano)
+  # e quando cambiano gli script del job
   push:
     branches: [main]
-    paths: [site/data/edition.json, site/data/riepilogo.json]
+    paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/fin_requirements.txt]
 
 permissions:
   contents: write

@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -98,6 +99,15 @@ def chunks(text, size=380):
     return out
 
 
+def ffmpeg():
+    """Il ffmpeg del sistema, se c'è; altrimenti quello del pacchetto imageio-ffmpeg (sul server di GitHub non c'è)."""
+    exe = shutil.which("ffmpeg")
+    if exe:
+        return exe
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
 def model():
     os.makedirs(CACHE, exist_ok=True)
     for name in FILES:
@@ -140,7 +150,7 @@ def main(site):
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, "r.wav")
         sf.write(wav, audio, rate)
-        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-c:a", "aac", "-b:a", "32k",
+        subprocess.run([ffmpeg(), "-loglevel", "error", "-y", "-i", wav, "-ac", "1", "-c:a", "aac", "-b:a", "32k",
                         "-movflags", "+faststart", dest + ".tmp.m4a"], check=True)
     os.replace(dest + ".tmp.m4a", dest)
     with open(dest, "rb") as f:

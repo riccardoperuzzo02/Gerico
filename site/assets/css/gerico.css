@@ -16,6 +16,8 @@
   src: url("../fonts/atkinson-hyperlegible-next-latin-wght-italic.woff2") format("woff2");
 }
 
+/* ========== movimento: quattro durate e tre curve per tutto il sito ========== */
+:root { --t-1: 140ms; --t-2: 220ms; --t-3: 360ms; --t-4: 560ms; --ease-emph: cubic-bezier(0.65, 0, 0.25, 1); --ease-exit: cubic-bezier(0.4, 0, 1, 1); }
 :root {
   --ground: #FFFFFF;
   --group: #F3F3F0;
@@ -689,17 +691,17 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   html { scroll-behavior: smooth; }
 
   /* passaggio tra le pagine: dissolvenza breve, il titolo toccato diventa il titolo della storia */
-  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 260ms; animation-timing-function: var(--ease); }
-  ::view-transition-group(story-title) { animation-duration: 380ms; animation-timing-function: var(--ease); }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--t-2); animation-timing-function: var(--ease); }
+  ::view-transition-group(story-title) { animation-duration: var(--t-3); animation-timing-function: var(--ease); }
 
   /* tocco: i controlli piccoli rispondono subito, i blocchi grandi solo se il dito resta fermo un attimo
      (così iniziare a scorrere sopra una notizia non la fa pulsare) */
   .lead, .list .item, .seg > a, .seg > button, .chips button, .t-btn, .tag, .btn-text, .disc, .wallbtn,
   .menu-btn, .menu-x, .menu-links a, .back, .more, .t-news li, .share, .next a {
-    transition: transform 140ms var(--ease);
+    transition: transform var(--t-1) var(--ease);
   }
-  .toast { transition: opacity 200ms var(--ease), transform 200ms var(--ease); }
-  .lead h2 a::after, .item h2 a::after { transition: opacity 120ms var(--ease); }
+  .toast { transition: opacity var(--t-2) var(--ease), transform var(--t-2) var(--ease); }
+  .lead h2 a::after, .item h2 a::after { transition: opacity var(--t-1) var(--ease); }
   .seg > a:active, .seg > button:active, .chips button:active, .t-btn:active, .tag:active,
   .btn-text:active, .disc:active, .wallbtn:active, .menu-btn:active, .menu-x:active, .menu-links a:active, .back:active, .more:active,
   .share:active {
@@ -708,30 +710,30 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   .lead:active, .list .item:active, .next a:active { transform: scale(0.985); transition-delay: 90ms; }
 
   /* controlli */
-  .seg-ind { transition: transform 300ms var(--snap), opacity 150ms var(--ease); }
-  .top::after, .sec-nav::after { transition: opacity 200ms var(--ease); }
-  .top-title { transform: translateY(4px); transition: opacity 200ms var(--ease), transform 200ms var(--ease); }
+  .seg-ind { transition: transform var(--t-3) var(--snap), opacity var(--t-1) var(--ease); }
+  .top::after, .sec-nav::after { transition: opacity var(--t-2) var(--ease); }
+  .top-title { transform: translateY(4px); transition: opacity var(--t-2) var(--ease), transform var(--t-2) var(--ease); }
   .top.scrolled .top-title { transform: none; }
-  .chev { transition: transform 260ms var(--ease); }
-  .collapse { transition: height 280ms var(--ease), visibility 0s linear 280ms; }
-  .collapse.open { transition: height 280ms var(--ease), visibility 0s; }
+  .chev { transition: transform var(--t-2) var(--ease); }
+  .collapse { transition: height var(--t-2) var(--ease), visibility 0s linear var(--t-2); }
+  .collapse.open { transition: height var(--t-2) var(--ease), visibility 0s; }
   /* l'anello cambia posto e misura insieme: tutte proprietà di impaginazione, così restano sincronizzate */
-  .t-ring.ready { transition: left 360ms var(--ease), top 360ms var(--ease), width 360ms var(--ease), height 360ms var(--ease), opacity 200ms var(--ease); }
+  .t-ring.ready { transition: left var(--t-3) var(--ease), top var(--t-3) var(--ease), width var(--t-3) var(--ease), height var(--t-3) var(--ease), opacity var(--t-2) var(--ease); }
 
   /* menu: sale dal basso sul telefono, scende dall'alto sul computer */
-  .menu[open] { animation: sheet-in 420ms var(--ease-sheet); }
-  .menu.closing { animation: sheet-out 220ms var(--ease) forwards; }
-  .menu[open]::backdrop { animation: fade-in 240ms var(--ease); }
-  .menu.closing::backdrop { animation: fade-out 220ms var(--ease) forwards; }
+  .menu[open] { animation: sheet-in var(--t-3) var(--ease-sheet); }
+  .menu.closing { animation: sheet-out var(--t-2) var(--ease) forwards; }
+  .menu[open]::backdrop { animation: fade-in var(--t-2) var(--ease); }
+  .menu.closing::backdrop { animation: fade-out var(--t-2) var(--ease) forwards; }
   @media (min-width: 760px) {
     .menu { box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18), 0 0 0 0.5px var(--hair); transform-origin: top right; }
-    .menu[open] { animation: pop-in 240ms var(--ease); }
-    .menu.closing { animation: pop-out 180ms var(--ease) forwards; }
+    .menu[open] { animation: pop-in var(--t-2) var(--ease); }
+    .menu.closing { animation: pop-out var(--t-1) var(--ease) forwards; }
   }
 
   /* entrata dei contenuti */
-  .reveal { animation: rise 320ms var(--ease) backwards; animation-delay: calc(var(--i, 0) * 25ms); }
-  .swap { animation: fade-in 200ms var(--ease) backwards; }
+  .reveal { animation: rise var(--t-3) var(--ease) backwards; animation-delay: calc(var(--i, 0) * 25ms); }
+  .swap { animation: fade-in var(--t-2) var(--ease) backwards; }
   .t-agenda li.next.soon::before, .t-next.soon::before { animation: pulse-dot 1.4s ease-in-out infinite; }
 
 
@@ -855,9 +857,9 @@ html.vt-reveal .mode:not(.ready) > a:not([aria-current]) { background: var(--rai
 /* passaggio tra le due pagine: la pagina nuova si apre a cerchio dal punto toccato, la vecchia resta ferma sotto */
 @media (prefers-reduced-motion: no-preference) {
   html.vt-reveal::view-transition-old(root) { animation: none; }
-  html.vt-reveal::view-transition-new(root) { animation: g-reveal 560ms cubic-bezier(0.2, 0.8, 0.2, 1) both; mix-blend-mode: normal; }
-  .mode .seg-ind { transition: transform 420ms var(--snap), opacity 150ms var(--ease); }
-  .ticker { transition: transform 140ms var(--ease); }
+  html.vt-reveal::view-transition-new(root) { animation: g-reveal var(--t-4) cubic-bezier(0.2, 0.8, 0.2, 1) both; mix-blend-mode: normal; }
+  .mode .seg-ind { transition: transform var(--t-3) var(--snap), opacity var(--t-1) var(--ease); }
+  .ticker { transition: transform var(--t-1) var(--ease); }
   .ticker:active { transform: scale(0.985); }
 }
 
@@ -972,7 +974,7 @@ body.term a.m-card:hover { color: var(--t-ink); background: #202A3D; }
   font-family: var(--sans); font-size: 0.9375rem; font-weight: 700; white-space: nowrap; cursor: pointer;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
-@media (prefers-reduced-motion: no-preference) { .fresh { animation: fresh-in 320ms var(--ease) both; } }
+@media (prefers-reduced-motion: no-preference) { .fresh { animation: fresh-in var(--t-3) var(--ease) both; } }
 @keyframes fresh-in { from { opacity: 0; transform: translate(-50%, -8px); } to { opacity: 1; transform: translate(-50%, 0); } }
 .q-n small { display: block; font-size: 0.6875rem; font-weight: 400; color: var(--t-accent); }
 
@@ -1145,7 +1147,7 @@ html.intro-run body.term .intro-word { color: var(--hl-ink); background: linear-
 .listen.wait .ls-t, .listen.wait .ls-s { opacity: 0.5; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ls-btn { background: var(--hl); color: var(--hl-ink); } }
 :root[data-theme="dark"] .ls-btn { background: var(--hl); color: var(--hl-ink); }
-@media (prefers-reduced-motion: no-preference) { .ls-bar i { transition: transform 250ms linear; } }
+@media (prefers-reduced-motion: no-preference) { .ls-bar i { transition: transform var(--t-2) linear; } }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lead .kick .k-sec { padding: 3px 8px 2px; background: var(--hl); color: var(--hl-ink); } }
 :root[data-theme="dark"] .lead .kick .k-sec { padding: 3px 8px 2px; background: var(--hl); color: var(--hl-ink); }
 
@@ -1155,12 +1157,12 @@ html.intro-run body.term .intro-word { color: var(--hl-ink); background: linear-
   .top { view-transition-name: top; }
   .gp { view-transition-name: gp; }
   html.theme-vt .top, html.theme-vt .gp, html[data-vt="reveal"] .top { view-transition-name: none; }
-  html[data-vt="forward"]::view-transition-old(root) { animation: 200ms cubic-bezier(0.4, 0, 1, 1) both vt-out-l; }
-  html[data-vt="forward"]::view-transition-new(root) { animation: 360ms var(--ease) both vt-in-r; }
-  html[data-vt="back"]::view-transition-old(root) { animation: 200ms cubic-bezier(0.4, 0, 1, 1) both vt-out-r; }
-  html[data-vt="back"]::view-transition-new(root) { animation: 360ms var(--ease) both vt-in-l; }
+  html[data-vt="forward"]::view-transition-old(root) { animation: var(--t-2) cubic-bezier(0.4, 0, 1, 1) both vt-out-l; }
+  html[data-vt="forward"]::view-transition-new(root) { animation: var(--t-3) var(--ease) both vt-in-r; }
+  html[data-vt="back"]::view-transition-old(root) { animation: var(--t-2) cubic-bezier(0.4, 0, 1, 1) both vt-out-r; }
+  html[data-vt="back"]::view-transition-new(root) { animation: var(--t-3) var(--ease) both vt-in-l; }
   html[data-vt="reveal"]::view-transition-old(root), html[data-vt="reveal"]::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
-  html[data-vt]::view-transition-group(top) { animation-duration: 220ms; }
+  html[data-vt]::view-transition-group(top) { animation-duration: var(--t-2); }
 }
 @keyframes vt-out-l { to { opacity: 0; transform: translateX(-28px); } }
 @keyframes vt-in-r { from { opacity: 0; transform: translateX(44px); } }
@@ -1189,8 +1191,8 @@ html.intro-run body.term .intro-word { color: var(--hl-ink); background: linear-
 .gp-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(255, 255, 255, 0.12); }
 .gp-bar i { display: block; width: 100%; height: 100%; background: #FFD60A; transform: scaleX(0); transform-origin: 0 50%; }
 @media (prefers-reduced-motion: no-preference) {
-  .gp-bar i { transition: transform 250ms linear; }
-  .gp:not([hidden]) { animation: gp-in 320ms var(--ease) both; }
+  .gp-bar i { transition: transform var(--t-2) linear; }
+  .gp:not([hidden]) { animation: gp-in var(--t-3) var(--ease) both; }
 }
 @keyframes gp-in { from { opacity: 0; transform: translateY(24px); } }
 html.gp-on body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
@@ -1237,12 +1239,12 @@ html.intro-run .intro-word::before {
   content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: var(--iw-top); bottom: var(--iw-bottom);
   background: var(--hl); transform: scaleX(0); transform-origin: 0 50%;
 }
-html.intro-go .intro-word::before { animation: band-in 340ms cubic-bezier(0.65, 0, 0.25, 1) forwards; }
-html.intro-mini .top .brand::before { animation: band-in 460ms cubic-bezier(0.65, 0, 0.25, 1) 160ms both; }
+html.intro-go .intro-word::before { animation: band-in var(--t-3) cubic-bezier(0.65, 0, 0.25, 1) forwards; }
+html.intro-mini .top .brand::before { animation: band-in var(--t-4) cubic-bezier(0.65, 0, 0.25, 1) 160ms both; }
 @keyframes band-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 /* le notizie salgono a cascata mentre lo schermo dell'intro si apre */
-html.intro-run .reveal { animation-duration: 420ms; animation-delay: calc(var(--i, 0) * 45ms + 40ms); }
-html.intro-run .ultim, html.intro-run .ticker, html.intro-run .listen, html.intro-run #edition-line { animation: rise 420ms var(--ease) backwards; animation-play-state: paused; }
+html.intro-run .reveal { animation-duration: var(--t-3); animation-delay: calc(var(--i, 0) * 45ms + 40ms); }
+html.intro-run .ultim, html.intro-run .ticker, html.intro-run .listen, html.intro-run #edition-line { animation: rise var(--t-3) var(--ease) backwards; animation-play-state: paused; }
 html.intro-run.intro-open .ultim, html.intro-run.intro-open .ticker, html.intro-run.intro-open .listen, html.intro-run.intro-open #edition-line { animation-play-state: running; }
 html.intro-run .ticker { animation-delay: 45ms; }
 html.intro-run .listen { animation-delay: 90ms; }

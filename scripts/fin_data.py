@@ -184,12 +184,20 @@ def fetch_quotes():
     import yfinance as yf
     before = {it.get("sym"): it for g in ((OLD.get("quotes.json") or {}).get("groups") or []) for it in (g.get("items") or [])}
     groups, errors, total, good = [], [], 0, 0
+    today = now().date().isoformat()
     for key, label, items in QUOTES:
         rows = []
         for sym, name in items:
             total += 1
             try:
-                rows.append(one_quote(yf, sym, name, key))
+                q = one_quote(yf, sym, name, key)
+                old = before.get(sym)
+                # di notte Yahoo a volte toglie per qualche ora l'ultima seduta delle Borse europee:
+                # il dato non torna indietro, resta quello già salvato
+                if old and q["date"] < (old.get("date") or "") <= today:
+                    notice(f"{sym}: Yahoo dà la seduta del {q['date']}, resta quella del {old['date']}")
+                    q = old
+                rows.append(q)
                 good += 1
             except Exception as e:
                 errors.append(f"{sym}: {type(e).__name__}: {e}"[:200])

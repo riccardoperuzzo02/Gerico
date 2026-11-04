@@ -165,6 +165,23 @@ def earnings_soon(yf, sym, today):
     return None
 
 
+def older_than_saved(path, dates):
+    """I mercati per cui i dati appena letti sono più vecchi di quelli nel file già salvato."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            old = json.load(f)
+    except (OSError, ValueError):
+        return []
+    saved = dict(old.get("dates") or {})
+    if not saved:  # file di prima della versione con «dates»: le date dei candidati
+        for c in old.get("candidates") or []:
+            if c.get("market") and c.get("date"):
+                saved[c["market"]] = max(saved.get(c["market"], c["date"]), c["date"])
+    today = datetime.now(ROME).date().isoformat()
+    return [f"{m} {d} invece di {saved[m]}" for m, d in sorted(dates.items())
+            if saved.get(m) and d < saved[m] <= today]
+
+
 def main(outdir):
     import yfinance as yf
     t0 = time.time()
@@ -176,7 +193,11 @@ def main(outdir):
                 meta[sym] = {"name": name, "market": market, "bench": bench, "cur": cur}
                 syms.append(sym)
     benches = sorted({b for _, b, _ in MARKETS.values()})
-    data = yf.download(syms + benches, period="1y", interval="1d", group_by="ticker", auto_adjust=True,
+    # date di inizio e fine invece di period="1y": con period Yahoo risponde da una copia in cache
+    # che al mattino può non avere ancora l'ultima seduta europea
+    start = (now - timedelta(days=380)).date().isoformat()
+    end = (now + timedelta(days=2)).date().isoformat()
+    data = yf.download(syms + benches, start=start, end=end, interval="1d", group_by="ticker", auto_adjust=True,
                        threads=True, progress=False)
     bret = {}
     for b in benches:
@@ -206,12 +227,22 @@ def main(outdir):
         for k in ("last", "chg", "adv", "vratio", "ret5", "ret20", "rs20", "sma50", "sma200", "rsi2"):
             if isinstance(r.get(k), float):
                 r[k] = None if math.isnan(r[k]) else round(r[k], 4 if k == "last" else 2)
-    out = {"asOf": now.isoformat(timespec="seconds"), "dataDate": latest, "universe": len(syms), "scanned": len(rows),
-           "withSignal": len(ok), "benchmarks": {b: (round(v, 2) if v is not None else None) for b, v in bret.items()},
+    dates = {}  # l'ultima seduta letta per ogni mercato
+    for r in rows:
+        dates[r["market"]] = max(dates.get(r["market"], r["date"]), r["date"])
+    out = {"asOf": now.isoformat(timespec="seconds"), "dataDate": latest, "dates": dates, "universe": len(syms),
+           "scanned": len(rows), "withSignal": len(ok),
+           "benchmarks": {b: (round(v, 2) if v is not None else None) for b, v in bret.items()},
            "method": "screener v1: rottura, salto e tenuta, forza relativa, ritracciamento in trend (vedi scripts/screener.py)",
            "candidates": top}
+    path = os.path.join(outdir, "candidati.json")
+    back = older_than_saved(path, dates)
+    if back:
+        # di notte Yahoo a volte toglie per qualche ora l'ultima seduta: resta il file con i dati più recenti
+        print("::notice::screener: Yahoo dà sedute più vecchie di quelle già salvate (" + "; ".join(back) + "), resta il file di prima")
+        return
     os.makedirs(outdir, exist_ok=True)
-    with open(os.path.join(outdir, "candidati.json"), "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"::notice::screener: {len(rows)} titoli letti su {len(syms)}, {len(ok)} con un segnale, {len(top)} candidati, in {time.time() - t0:.0f} s")
 

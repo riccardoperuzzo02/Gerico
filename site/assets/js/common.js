@@ -490,7 +490,9 @@
       audio.src = info.src;
       if (saved) {
         const t = saved;
-        audio.addEventListener("loadedmetadata", () => { try { audio.currentTime = t; } catch (e) { /* niente */ } }, { once: true });
+        const jump = () => { try { if (Math.abs(audio.currentTime - t) > 1) audio.currentTime = t; } catch (e) { /* niente */ } };
+        audio.addEventListener("loadedmetadata", jump, { once: true });
+        audio.addEventListener("canplay", jump, { once: true });
       }
     };
     const session = () => {
@@ -736,6 +738,8 @@
     // il dito si appoggia su un link: la pagina si scarica già, al tocco è pronta
     const warm = (e) => { const u = isPageLink(e.target.closest && e.target.closest("a[href]")); if (u && u.href.split("#")[0] !== location.href.split("#")[0]) fetchPage(u.href).catch(() => {}); };
     document.addEventListener("touchstart", warm, { passive: true });
+    let edgeAt = 0;
+    document.addEventListener("touchstart", (e) => { const x = e.touches[0] && e.touches[0].clientX; if (x < 24 || x > innerWidth - 24) edgeAt = Date.now(); }, { passive: true });
     document.addEventListener("mouseover", warm, { passive: true });
     window.addEventListener("popstate", (e) => {
       // è cambiata solo l'ancora (le sezioni della prima pagina): ci pensa la pagina
@@ -745,7 +749,7 @@
       const back = n < idx;
       idx = n;
       // se il browser ha già animato il ritorno (il gesto dal bordo su iOS), niente seconda animazione
-      G.go(location.href, { push: false, y: st.y || 0, dir: back ? "back" : "forward", instant: !!e.hasUAVisualTransition });
+      G.go(location.href, { push: false, y: st.y || 0, dir: back ? "back" : "forward", instant: !!e.hasUAVisualTransition || Date.now() - edgeAt < 1500 });
     });
   }
 
@@ -995,12 +999,35 @@
   };
 
   // pesi + variazioni -> quadrati in ordine di peso (solo i 14 Paesi della mappa)
-  G.mapItems = (weights, terminal, view) => {
+  // una Borsa che manca nella pubblicazione, o che lì ha una chiusura vecchia, prende l'ultima seduta scaricata dal job
+  // (Yahoo Finance), se è di pochi giorni fa
+  const MAP_SYM = { USA: "^GSPC", JPN: "^N225", GBR: "^FTSE", FRA: "^FCHI", DEU: "^GDAXI", ITA: "FTSEMIB.MI" };
+  const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  // la data scritta nella nota («Chiusura del 27 ottobre») come AAAA-MM-GG, "" se non c'è
+  const noteDate = (note) => {
+    const m = new RegExp("\\b(\\d{1,2}) (" + MESI.join("|") + ")\\b", "i").exec(note || "");
+    if (!m) return "";
+    const today = G.dayKey(new Date()), y = Number(today.slice(0, 4));
+    const key = (yy) => yy + "-" + String(MESI.indexOf(m[2].toLowerCase()) + 1).padStart(2, "0") + "-" + m[1].padStart(2, "0");
+    return key(y) > today ? key(y - 1) : key(y);
+  };
+  const fromQuote = (q) => {
+    if (!q || q.stale || typeof q.chg !== "number" || !/^\d{4}-\d{2}-\d{2}$/.test(q.date || "")) return null;
+    const age = G.dayAge(q.date + "T12:00:00Z");
+    if (age > 4) return null;
+    return { chg: q.chg, time: G.hm(q.at), note: (age === 0 && q.at ? "Dato delle " + G.hm(q.at) : "Chiusura del " + G.dayOnly(q.date)) + ", da Yahoo Finance." };
+  };
+  G.mapItems = (weights, terminal, view, quotes) => {
     const w = (weights && weights[view === "europa" ? "europe" : "world"]) || {};
-    const by = {};
+    const by = {}, qs = {};
     ((terminal && terminal.indices) || []).forEach((x) => { if (x && x.code) by[x.code] = x; });
+    ((quotes && quotes.groups) || []).forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) qs[q.sym] = q; }));
     return Object.keys(w).filter((k) => G.MARKETS[k] && typeof w[k] === "number").map((k) => {
-      const d = by[k] || {};
+      const own = by[k], q = qs[MAP_SYM[k]], alt = fromQuote(q);
+      // la voce della pubblicazione resta, anche senza numero se ha una nota (per esempio Borsa chiusa per festa),
+      // salvo quando la sua nota dice che è una chiusura più vecchia di quella del job
+      const old = !!(own && alt && noteDate(own.note) && noteDate(own.note) < q.date);
+      const d = (own && !old && (typeof own.chg === "number" || own.note) ? own : alt) || own || {};
       return { code: k, name: G.MARKETS[k][0], index: G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: d.story || "" };
     }).sort((a, b) => b.value - a.value);
   };

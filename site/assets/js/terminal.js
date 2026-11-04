@@ -51,8 +51,8 @@ G.page("terminal", async function (P) {
     $("detail").innerHTML = html;
   }
   // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
-  // curva con un filo di rimbalzo, cubic-bezier: Safari la anima da solo, senza il thread della pagina (con linear() no)
-  const SNAP = "cubic-bezier(0.3, 1.2, 0.5, 1)";
+  // curva che parte svelta e si posa piano, cubic-bezier: Safari la anima da solo, senza il thread della pagina (con linear() no)
+  const SNAP = "cubic-bezier(0.32, 0.72, 0, 1)";
   // l'origine si fissa sull'elemento per la durata dell'animazione: nei fotogrammi si muovono solo transform e opacity
   const withOrigin = (el, origin, a) => {
     el.style.transformOrigin = origin;

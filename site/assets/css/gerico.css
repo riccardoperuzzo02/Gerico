@@ -49,7 +49,7 @@
   --sans: "Atkinson Hyperlegible Next", Verdana, sans-serif;
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   /* curve cubic-bezier, non linear(): Safari anima da solo (senza il thread della pagina) solo queste */
-  --snap: cubic-bezier(0.3, 1.2, 0.5, 1);
+  --snap: cubic-bezier(0.32, 0.72, 0, 1); /* gli indicatori che scorrono si posano senza rimbalzo */
   --ease-sheet: cubic-bezier(0.32, 0.72, 0, 1);
   color-scheme: light;
 }
@@ -1328,3 +1328,43 @@ body.term .t-side:not(.ready) { visibility: hidden; opacity: 0; animation: t-sid
 .t-ff-week > summary::-webkit-details-marker { display: none; }
 .t-ff-week > summary::before { content: ""; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform var(--t-2) var(--ease); }
 .t-ff-week[open] > summary::before { transform: rotate(45deg); }
+
+/* ========== 4 novembre, pomeriggio: Ultim'ora sempre in vista, passaggi più fluidi ========== */
+/* l'Ultim'ora resta ferma sotto la barra in alto mentre scorri; le sezioni si fermano sotto di lei */
+.ultim { position: sticky; top: var(--top-h); z-index: 25; }
+.home .sec-nav { top: calc(var(--top-h) + 40px); }
+body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
+.home [id] { scroll-margin-top: calc(var(--top-h) + 120px); }
+
+/* una sola curva per tutto ciò che si sposta di molto: parte svelta e si posa piano, senza rimbalzi */
+:root { --t-push: 380ms; --ease-push: cubic-bezier(0.32, 0.72, 0, 1); }
+/* tra Notizie e Terminal cambia tutto, anche il colore: le due pagine stanno una accanto all'altra e si spingono intere,
+   barra in alto compresa (niente colori mescolati a metà); il Terminal sta a destra, come nell'interruttore */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-mode] .top { view-transition-name: none; }
+}
+/* telefono: le pagine si spingono come in un'app. Avanti la nuova entra intera da destra e la vecchia scivola un po' sotto;
+   indietro la pagina in cima esce a destra e scopre quella di prima. Le pagine restano piene: niente dissolvenze a metà */
+@media (prefers-reduced-motion: no-preference) and (max-width: 759px) {
+  html[data-vt="forward"]::view-transition-old(root) { animation: var(--t-push) var(--ease-push) both vt-under-l; }
+  html[data-vt="forward"]::view-transition-new(root) { animation: var(--t-push) var(--ease-push) both vt-over-r; box-shadow: -12px 0 28px rgba(0, 0, 0, 0.12); }
+  html[data-vt="back"]::view-transition-old(root) { z-index: 1; animation: var(--t-push) var(--ease-push) both vt-away-r; box-shadow: -12px 0 28px rgba(0, 0, 0, 0.12); }
+  html[data-vt="back"]::view-transition-new(root) { animation: var(--t-push) var(--ease-push) both vt-from-l; }
+  /* con la pagina intera che scorre il titolo non vola: si muove con la sua pagina */
+  #feed h2, .story-main h1 { view-transition-name: none !important; }
+}
+/* computer: le pagine scivolano di poco e si incrociano, la nuova appena dopo la vecchia; tra Notizie e Terminal si spingono come sul telefono */
+@media (prefers-reduced-motion: no-preference) and (min-width: 760px) {
+  html[data-vt="forward"]::view-transition-old(root) { animation: 180ms var(--ease-exit) both vt-out-l; }
+  html[data-vt="forward"]::view-transition-new(root) { animation: 320ms var(--ease) 40ms both vt-in-r; }
+  html[data-vt="back"]::view-transition-old(root) { animation: 180ms var(--ease-exit) both vt-out-r; }
+  html[data-vt="back"]::view-transition-new(root) { animation: 320ms var(--ease) 40ms both vt-in-l; }
+  html[data-mode][data-vt="forward"]::view-transition-old(root) { animation: 440ms var(--ease-push) both vt-under-l; }
+  html[data-mode][data-vt="forward"]::view-transition-new(root) { animation: 440ms var(--ease-push) both vt-over-r; box-shadow: -12px 0 28px rgba(0, 0, 0, 0.12); }
+  html[data-mode][data-vt="back"]::view-transition-old(root) { z-index: 1; animation: 440ms var(--ease-push) both vt-away-r; box-shadow: -12px 0 28px rgba(0, 0, 0, 0.12); }
+  html[data-mode][data-vt="back"]::view-transition-new(root) { animation: 440ms var(--ease-push) both vt-from-l; }
+}
+@keyframes vt-over-r { from { transform: translateX(100%); } }
+@keyframes vt-under-l { to { transform: translateX(-28%); } }
+@keyframes vt-away-r { to { transform: translateX(100%); } }
+@keyframes vt-from-l { from { transform: translateX(-28%); } }

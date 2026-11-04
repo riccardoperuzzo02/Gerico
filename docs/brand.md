@@ -41,11 +41,13 @@ Un solo giallo. Il giallo non si usa per i testi su fondo chiaro (non si legge):
 
 ## Movimento
 
-- Quattro durate: `--t-1` 140 ms (risposte al tocco), `--t-2` 220 ms (piccoli cambi), `--t-3` 360 ms (pagine e pannelli), `--t-4` 560 ms (entrata e passaggi grandi).
-- Curve: `--ease` per quasi tutto, `--ease-emph` per il tratto, `--ease-exit` per ciò che esce, `--snap` per gli indicatori che scorrono.
-- Solo `transform`, `opacity` e `clip-path`. Con «riduci movimento» resta una dissolvenza breve.
-- Pagine: avanti entra da destra, indietro da sinistra; tra Notizie e Terminal un cerchio dal punto toccato; la barra in alto e quella del riepilogo restano ferme.
-- Entrata: una volta al giorno il tratto attraversa il nome al centro, il nome va al suo posto e le notizie salgono a cascata (circa 1,1 s); nelle altre aperture solo il tratto sul nome in alto.
+- Quattro durate: `--t-1` 140 ms (risposte al tocco), `--t-2` 220 ms (piccoli cambi), `--t-3` 360 ms (pannelli), `--t-4` 560 ms (passaggi grandi); `--t-push` 380 ms per le pagine.
+- Curve: `--ease` per quasi tutto, `--ease-emph` per il tratto, `--ease-exit` per ciò che esce, `--ease-push` (parte svelta e si posa piano) per pagine, sezioni e indicatori (`--snap`). Niente rimbalzi.
+- Solo `transform` e `opacity`. Con «riduci movimento» resta una dissolvenza breve.
+- Pagine sul telefono: si spingono come in un'app. Avanti la nuova entra intera da destra e la vecchia scivola un po' sotto; indietro la pagina in cima esce a destra. La barra in alto e quella del riepilogo restano ferme. Sul computer le pagine scivolano di poco e si incrociano.
+- Notizie e Terminal stanno una accanto all'altra (il Terminal a destra, come nell'interruttore) e si spingono intere, barra in alto compresa.
+- Sezioni della prima pagina: gli elenchi scorrono attaccati come pagine; con lo swipe il passaggio riparte dal punto lasciato dal dito.
+- Entrata: a ogni nuova apertura del sito il tratto attraversa il nome al centro, il nome aspetta che le notizie siano pronte (al massimo 1,5 s), va al suo posto e le notizie salgono a cascata.
 
 ## Voce
 

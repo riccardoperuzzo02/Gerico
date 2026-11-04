@@ -366,9 +366,9 @@
     const c = document.documentElement.classList;
     if (c.contains("intro-run") && !c.contains("intro-open")) afterIntro.push(fn); else fn();
   };
-  // entrata: una volta al giorno il nome GERICO compare al centro, il tratto dell'evidenziatore lo attraversa,
-  // il nome va al suo posto in alto e le notizie salgono a cascata, in poco più di un secondo; un tocco o uno
-  // scorrimento la saltano. Nelle altre aperture solo il tratto che passa sul nome in alto (classe intro-mini).
+  // entrata: a ogni nuova apertura del sito (una volta per scheda) il nome GERICO compare al centro, il tratto
+  // dell'evidenziatore lo attraversa, il nome va al suo posto in alto e le notizie salgono a cascata; un tocco o uno
+  // scorrimento la saltano. Se le notizie non sono ancora arrivate il nome aspetta al centro, al massimo un secondo e mezzo.
   // Il contenuto è già disegnato sotto lo schermo dell'intro: l'entrata non ritarda la lettura.
   G.today = () => new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" });
   G.intro = () => {
@@ -393,16 +393,18 @@
       html.classList.remove("intro-run", "intro-open", "intro-go");
       [word, scr, brand].forEach((el) => el && el.getAnimations && el.getAnimations().forEach((a) => a.cancel()));
     };
-    try { sessionStorage.setItem("gerico.intro", "1"); localStorage.setItem("gerico.introDay", JSON.stringify(G.today())); } catch (e) { /* niente */ }
+    try { sessionStorage.setItem("gerico.intro", "1"); localStorage.removeItem("gerico.introDay"); } catch (e) { /* niente */ }
     if (!scr || !word || !brand || !word.animate) return end();
     // tempi in millisecondi: il nome compare (IN) mentre il tratto lo attraversa (SWEEP), resta un attimo (HOLD),
     // viaggia al suo posto (MOVE) e lascia il posto al nome vero (OUT)
-    const IN = 160, SWEEP = 340, HOLD = 110, MOVE = 540, OUT = 110;
+    const IN = 160, SWEEP = 360, HOLD = 120, MOVE = 520, OUT = 120;
     const base = "translate(-50%, -50%)";
-    // si parte con il carattere già caricato: niente cambio di carattere a metà e arrivo esatto
-    const go = () => {
+    const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+    // il nome resta al centro finché la pagina sotto non ha disegnato le notizie (al massimo un secondo e mezzo):
+    // lo schermo si apre su notizie vere, non sugli scheletri
+    const pageReady = () => Promise.race([Promise.resolve(G.P && G.P.done), wait(1500)]);
+    const move = () => {
       if (ended) return;
-      const T = SWEEP + HOLD + MOVE + OUT;
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
       const range = document.createRange();
       range.selectNodeContents(tn || brand);
@@ -410,23 +412,27 @@
       const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
       const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
       const there = base + " translate(" + dx.toFixed(2) + "px, " + dy.toFixed(2) + "px) scale(" + s.toFixed(4) + ")";
-      // il tratto parte con il nome (animazione CSS di ::before, classe intro-go)
-      html.classList.add("intro-go");
+      const T = MOVE + OUT, k = MOVE / T;
       word.animate([
-        { offset: 0, opacity: 0, transform: base, easing: "linear" },
-        { offset: IN / T, opacity: 1, transform: base },
-        { offset: (SWEEP + HOLD) / T, opacity: 1, transform: base, easing: "cubic-bezier(0.5, 0, 0.1, 1)" },
-        { offset: (SWEEP + HOLD + MOVE) / T, opacity: 1, transform: there, easing: "linear" },
+        { offset: 0, opacity: 1, transform: base, easing: "cubic-bezier(0.5, 0, 0.1, 1)" },
+        { offset: k, opacity: 1, transform: there, easing: "linear" },
         { offset: 1, opacity: 0, transform: there }
       ], { duration: T, fill: "both" }).finished.then(end, end);
       // il nome vero compare sotto quello in viaggio nell'istante in cui arriva: nessuno scatto
-      const k = (SWEEP + HOLD + MOVE) / T;
       brand.getAnimations().forEach((a) => a.cancel());
       brand.animate([{ opacity: 0 }, { opacity: 0, offset: k }, { opacity: 1, offset: k }, { opacity: 1 }], { duration: T, fill: "both" });
       // lo schermo si apre mentre il nome parte: le notizie salgono sotto di lui
-      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 420, delay: SWEEP + HOLD, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" });
-      setTimeout(open, SWEEP + HOLD);
+      scr.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 420, easing: "cubic-bezier(0.4, 0, 0.2, 1)", fill: "both" });
+      open();
       setTimeout(end, T + 1200);
+    };
+    // si parte con il carattere già caricato: niente cambio di carattere a metà e arrivo esatto
+    const go = () => {
+      if (ended) return;
+      // il tratto parte con il nome (animazione CSS di ::before, classe intro-go)
+      html.classList.add("intro-go");
+      word.animate([{ opacity: 0 }, { opacity: 1 }], { duration: IN, easing: "linear", fill: "forwards" });
+      Promise.all([wait(SWEEP + HOLD), pageReady()]).then(move, move);
     };
     const font = document.fonts && document.fonts.load ? document.fonts.load('800 48px "Atkinson Hyperlegible Next"') : Promise.resolve();
     Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
@@ -605,9 +611,9 @@
   const MY = (() => { const s = document.querySelector('script[src*="assets/js/common.js"]'); return s ? s.getAttribute("src") : ""; })();
   const pages = new Map();
   const fetchPage = (url) => {
-    const key = url.split("#")[0];
+    const key = url.split("#")[0].split("?")[0];
     const hit = pages.get(key);
-    if (hit && Date.now() - hit.t < 60000) return hit.p;
+    if (hit && Date.now() - hit.t < 600000) return hit.p;
     const p = fetch(key, { credentials: "same-origin" }).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); });
     pages.set(key, { p, t: Date.now() });
     p.catch(() => pages.delete(key));
@@ -651,7 +657,7 @@
     // come farebbe lo script nell'head della pagina nuova: il Terminal è sempre scuro, le altre pagine seguono il tema scelto
     const theme = name === "terminal" ? null : G.ls.get("gerico.theme", null);
     if (theme) htmlEl.setAttribute("data-theme", theme); else htmlEl.removeAttribute("data-theme");
-    htmlEl.classList.remove("intro-run", "intro-open", "first-visit", "menu-open", "scrolled", "vt-reveal");
+    htmlEl.classList.remove("intro-run", "intro-open", "intro-go", "first-visit", "menu-open", "scrolled");
     const b = document.body, keep = document.getElementById("gp");
     Array.from(b.attributes).forEach((at) => b.removeAttribute(at.name));
     Array.from(doc.body.attributes).forEach((at) => b.setAttribute(at.name, at.value));
@@ -664,7 +670,7 @@
   let navId = 0, idx = 0, ready = false, shown = location.pathname + location.search;
   G.prevUrl = "";
   G.soft = false;
-  // dir: "forward" | "back" | "reveal"; at: punto toccato per il cerchio; y: scorrimento da ripristinare
+  // dir: "forward" | "back"; mode: passaggio tra Notizie e Terminal; y: scorrimento da ripristinare
   G.go = async (url, opt) => {
     opt = opt || {};
     if (!soft) { location.href = url; return; }
@@ -708,16 +714,13 @@
     };
     const animate = document.startViewTransition && !G.reduced() && !opt.instant;
     if (!animate) { await swap(); finish(); return; }
-    htmlEl.dataset.vt = opt.dir || "forward";
+    htmlEl.dataset.vt = opt.dir === "back" ? "back" : "forward";
     if (opt.swipe) htmlEl.dataset.swipe = "1";
+    // tra Notizie e Terminal cambia anche il tema: la barra in alto sfuma da un colore all'altro e la pillola dell'interruttore scivola
+    if (opt.mode) htmlEl.dataset.mode = "1";
     const t = document.startViewTransition(swap);
     window.gericoVT = t;
-    if (opt.dir === "reveal" && opt.at) {
-      const { x, y } = opt.at, rad = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-      t.ready.then(() => htmlEl.animate({ clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + rad.toFixed(0) + "px at " + x + "px " + y + "px)"] },
-        { duration: 560, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
-    }
-    t.finished.then(finish, finish).finally(() => { delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; if (window.gericoVT === t) window.gericoVT = null; });
+    t.finished.then(finish, finish).finally(() => { delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; delete htmlEl.dataset.mode; if (window.gericoVT === t) window.gericoVT = null; });
   };
   if (soft) {
     try { history.replaceState(Object.assign({}, history.state, { g: 1, n: 0 }), ""); } catch (e) { /* niente */ }
@@ -731,11 +734,24 @@
       e.preventDefault();
       // toccare la pagina in cui sei già riporta in cima, come le schede delle app
       if (u.href === location.href) { window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" }); return; }
-      if (a.hasAttribute("data-reveal")) {
-        const r = a.getBoundingClientRect();
-        G.go(u.href, { dir: "reveal", at: { x: e.clientX || r.left + r.width / 2, y: e.clientY || r.top + r.height / 2 } });
-      } else G.go(u.href, { dir: a.dataset.dir || "forward" });
+      if (a.hasAttribute("data-reveal")) G.go(u.href, { dir: /terminal/.test(u.pathname) ? "forward" : "back", mode: true });
+      else G.go(u.href, { dir: a.dataset.dir || "forward" });
     });
+    // a pagina ferma si preparano le pagine dove si va più spesso (una storia e il Terminal) e i loro script:
+    // al primo tocco il passaggio parte subito, senza aspettare la rete. Con il risparmio dati attivo no
+    const preload = () => {
+      if (navigator.connection && navigator.connection.saveData) return;
+      ["storia.html", "terminal"].forEach((u) => {
+        const url = new URL(u, location.href);
+        if (url.pathname === location.pathname) return;
+        fetchPage(url.href).then((text) => {
+          const doc = new DOMParser().parseFromString(text, "text/html"), pg = pageOf(doc);
+          if (pg.src && !loaded.has(pg.src)) fetch(new URL(pg.src, url).href, { credentials: "same-origin" }).catch(() => {});
+        }).catch(() => {});
+      });
+    };
+    const idle = () => G.afterIntro(() => (window.requestIdleCallback ? requestIdleCallback(preload, { timeout: 3000 }) : setTimeout(preload, 1500)));
+    if (document.readyState === "complete") idle(); else window.addEventListener("load", idle, { once: true });
     // il dito si appoggia su un link: la pagina si scarica già, al tocco è pronta
     const warm = (e) => { const u = isPageLink(e.target.closest && e.target.closest("a[href]")); if (u && u.href.split("#")[0] !== location.href.split("#")[0]) fetchPage(u.href).catch(() => {}); };
     document.addEventListener("touchstart", warm, { passive: true });
@@ -762,7 +778,7 @@
   G.swipe = (area, opt) => {
     if (!area || !("ontouchstart" in window)) return;
     const follow = opt.follow || area;
-    let x0 = 0, y0 = 0, t0 = 0, dx = 0, mode = "";
+    let x0 = 0, y0 = 0, t0 = 0, dx = 0, off = 0, mode = "";
     // dentro un elemento che scorre di lato (schede lunghe, tabelle larghe) il gesto è suo
     const scrollsX = (el) => {
       for (let n = el; n && n !== area && n !== document.body; n = n.parentElement) {
@@ -771,14 +787,16 @@
       return false;
     };
     const reset = (smooth) => {
-      if (!smooth || G.reduced()) { follow.style.transition = ""; follow.style.transform = ""; return; }
-      follow.style.transition = "transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1)";
+      off = 0;
+      if (!smooth || G.reduced()) { follow.style.transition = ""; follow.style.transform = ""; follow.style.opacity = ""; return; }
+      follow.style.transition = "transform 260ms cubic-bezier(0.32, 0.72, 0, 1), opacity 260ms cubic-bezier(0.32, 0.72, 0, 1)";
       follow.style.transform = "";
-      P.later(() => { follow.style.transition = ""; }, 240);
+      follow.style.opacity = "";
+      P.later(() => { follow.style.transition = ""; }, 280);
     };
     P.on(area, "touchstart", (e) => {
       const t = e.touches[0];
-      x0 = t.clientX; y0 = t.clientY; t0 = Date.now(); dx = 0;
+      x0 = t.clientX; y0 = t.clientY; t0 = Date.now(); dx = 0; off = 0;
       mode = e.touches.length > 1 || x0 < 24 || x0 > innerWidth - 24 || (e.target.closest && e.target.closest(NOSWIPE)) || scrollsX(e.target) ? "no" : "";
     }, { passive: true });
     P.on(area, "touchmove", (e) => {
@@ -790,17 +808,21 @@
         mode = Math.abs(dx) > Math.abs(dy) * 1.5 ? "x" : "no";
         if (mode === "no") return;
       }
-      // il contenuto segue il dito con resistenza; dove oltre non c'è niente resta quasi fermo
+      // il contenuto segue il dito (a metà della corsa) e sfuma un poco; dove oltre non c'è niente resta quasi fermo.
+      // Al rilascio il passaggio riparte da qui: nessuno scatto indietro
       const can = dx < 0 ? opt.canNext() : opt.canPrev();
-      if (!G.reduced()) follow.style.transform = "translateX(" + (dx * (can ? 0.35 : 0.08)).toFixed(1) + "px)";
+      if (G.reduced()) return;
+      off = dx * (can ? 0.5 : 0.1);
+      follow.style.transform = "translateX(" + off.toFixed(1) + "px)";
+      follow.style.opacity = can ? (1 - Math.min(0.3, Math.abs(off) / innerWidth)).toFixed(3) : "";
     }, { passive: true });
     P.on(area, "touchend", () => {
       if (mode !== "x") { mode = ""; return; }
       mode = "";
       const v = Math.abs(dx) / Math.max(1, Date.now() - t0);
       const ok = Math.abs(dx) > 56 || (Math.abs(dx) > 28 && v > 0.45);
-      if (ok && dx < 0 && opt.canNext()) opt.next(reset);
-      else if (ok && dx > 0 && opt.canPrev()) opt.prev(reset);
+      if (ok && dx < 0 && opt.canNext()) opt.next(reset, off);
+      else if (ok && dx > 0 && opt.canPrev()) opt.prev(reset, off);
       else reset(true);
     }, { passive: true });
     P.on(area, "touchcancel", () => { mode = ""; reset(true); }, { passive: true });
@@ -914,21 +936,9 @@
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
     }
 
-    // interruttore Notizie / Terminal: arrivando dall'altra pagina l'indicatore parte da dove l'hai toccato e scivola qui
+    // interruttore Notizie / Terminal: la pillola va subito al suo posto; tra le due pagine la fa scivolare il passaggio (CSS)
     const mode = document.querySelector(".mode");
-    if (mode) {
-      const on = mode.querySelector("[aria-current]");
-      const other = Array.from(mode.querySelectorAll("a")).find((a) => a !== on);
-      if ((html.classList.contains("vt-reveal") || html.dataset.vt === "reveal") && on && other && !G.reduced()) {
-        const cur = on.getAttribute("aria-current");
-        on.removeAttribute("aria-current"); other.setAttribute("aria-current", cur);
-        G.seg(mode, true);
-        other.removeAttribute("aria-current"); on.setAttribute("aria-current", cur);
-        requestAnimationFrame(() => requestAnimationFrame(() => G.seg(mode)));
-      } else G.seg(mode, true);
-    }
-    // la classe del passaggio a cerchio serve solo durante il passaggio: poi non deve toccare gli altri (cambio di tema)
-    if (html.classList.contains("vt-reveal")) setTimeout(() => html.classList.remove("vt-reveal"), 1500);
+    if (mode) G.seg(mode, true);
 
     document.querySelectorAll(".chips").forEach(G.watchRow);
     G.watchTop();

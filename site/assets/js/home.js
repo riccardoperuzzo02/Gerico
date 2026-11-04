@@ -48,23 +48,29 @@ G.page("home", async function (P) {
   }
 
   // ---------- sezioni (senza numeri) ----------
+  // le schede della prima pagina, in quest'ordine dopo Tutte; Economia comprende anche le storie dei mercati
+  const TABS = [["economia", ["economia", "mercati"]], ["mondo", ["mondo"]], ["italia", ["italia"]], ["tecnologia", ["tecnologia"]]];
+  const TAB_OF = {};
+  TABS.forEach(([k, secs]) => secs.forEach((x) => { TAB_OF[x] = k; }));
+  const inTab = (sec) => TAB_OF[sec] === state.section;
   const sectionFromHash = () => {
     const h = decodeURIComponent(location.hash.slice(1));
-    return h === "seguiti" || G.SECTIONS[h] ? h : "tutte";
+    return h === "seguiti" ? h : TAB_OF[h] || "tutte";
   };
   const follows = (s) => (s.tags || []).some((t) => state.follows.includes(t));
   const followed = () => stories.filter(follows);
   const visible = () => {
     if (state.section === "tutte") return stories;
     if (state.section === "seguiti") return followed();
-    return stories.filter((s) => s.section === state.section);
+    return stories.filter((s) => inTab(s.section));
   };
   // le brevi non hanno temi: nei Seguiti non compaiono
-  const visibleBrevi = () => (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || b.section === state.section)).slice(0, 15);
-  const visiblePast = () => (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : s.section === state.section))).slice(0, 8);
+  const visibleBrevi = () => (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || inTab(b.section))).slice(0, 15);
+  const visiblePast = () => (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
   function buildNav() {
     const items = [["tutte", "Tutte"]];
-    Object.keys(G.SECTIONS).forEach((k) => { if (stories.some((s) => s.section === k) || brevi.some((b) => b.section === k)) items.push([k, G.SECTIONS[k]]); });
+    const has = (secs) => stories.some((s) => secs.includes(s.section)) || brevi.some((b) => secs.includes(b.section));
+    TABS.forEach(([k, secs]) => { if (has(secs)) items.push([k, G.SECTIONS[k]]); });
     if (state.follows.length) items.push(["seguiti", "Seguiti"]);
     $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
   }
@@ -149,21 +155,23 @@ G.page("home", async function (P) {
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
-  // brevi con l'ora e storie nuove o aggiornate; sotto le due voci la fascia non compare
+  // brevi con l'ora e storie nuove o aggiornate delle ultime 18 ore; se sono poche, le più recenti comunque: la fascia c'è sempre
   function renderUltim() {
-    const recent = (iso) => !!iso && G.hoursAgo(iso) >= 0 && G.hoursAgo(iso) < 18;
     const items = [];
-    brevi.forEach((b) => { if (recent(b.at)) items.push({ at: b.at, title: b.title, url: G.safeUrl(b.url), ext: true }); });
+    const ok = (iso) => !!iso && G.hoursAgo(iso) >= 0;
+    brevi.forEach((b) => { if (ok(b.at)) items.push({ at: b.at, title: b.title, url: G.safeUrl(b.url), ext: true }); });
     stories.forEach((s) => {
       const at = G.realChange(s) ? s.updated : s.firstSeen;
-      if (recent(at)) items.push({ at, title: G.headline(s), url: G.storyUrl(s) });
+      if (ok(at)) items.push({ at, title: G.headline(s), url: G.storyUrl(s) });
     });
     items.sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
-    const list = items.slice(0, 12);
-    // la fascia è nella pagina da subito, per non spingere giù le notizie quando arriva: senza almeno due voci si toglie
-    if (list.length < 2) { $("ultim").hidden = true; return; }
+    const recent = items.filter((it) => G.hoursAgo(it.at) < 18);
+    const list = (recent.length >= 4 ? recent : items).slice(0, 12);
+    // la fascia è nella pagina da subito, per non spingere giù le notizie quando arriva: senza notizie si toglie
+    if (!list.length) { $("ultim").hidden = true; return; }
+    const when = (iso) => { const a = G.dayAge(iso); return (a === 0 ? "" : a === 1 ? "ieri " : G.day(iso) + " ") + G.hm(iso); };
     const copy = (dup) => list.map((it) => '<a href="' + esc(it.url) + '"' + (it.ext ? ' target="_blank" rel="noopener"' : "") + (dup ? ' tabindex="-1"' : "") +
-      "><b>" + esc((G.isToday(it.at) ? "" : "ieri ") + G.hm(it.at)) + "</b>" + esc(it.title) + "</a>").join("");
+      "><b>" + esc(when(it.at)) + "</b>" + esc(it.title) + "</a>").join("");
     const t = $("ultim-t");
     t.innerHTML = '<span class="ultim-s">' + copy(false) + '</span><span class="ultim-s dup" aria-hidden="true">' + copy(true) + "</span>";
     $("ultim").hidden = false;
@@ -297,20 +305,28 @@ G.page("home", async function (P) {
     const dir = order.indexOf(next) >= order.indexOf(prev) ? "dir-next" : "dir-prev";
     state.section = next;
     markNav();
-    slideFeed(dir === "dir-next" ? 1 : -1);
+    slideFeed(dir === "dir-next" ? 1 : -1, fromX);
+    fromX = 0;
     // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
     const n = visible().length, st = $("sec-status");
     if (st) st.textContent = (next === "tutte" ? "Tutte le notizie" : next === "seguiti" ? "Temi seguiti" : G.SECTIONS[next]) + ": " + n + (n === 1 ? " notizia" : " notizie");
   });
-  // l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro: una copia del vecchio sopra il nuovo, solo transform e opacity
-  function slideFeed(sgn) {
+  // l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro, attaccati come le pagine di un libro:
+  // una copia del vecchio sopra il nuovo, solo transform e opacity. Dopo uno swipe si riparte dal punto lasciato dal dito
+  let fromX = 0;
+  function slideFeed(sgn, x0) {
     const feed = $("feed");
     if (G.reduced() || !feed.animate) { renderFeed(); return; }
+    x0 = x0 || 0;
     const ghost = feed.cloneNode(true);
     ghost.removeAttribute("id");
     ghost.className = "feed-ghost";
     ghost.setAttribute("aria-hidden", "true");
     ghost.querySelectorAll(".reveal").forEach((el) => el.classList.remove("reveal"));
+    // della copia basta la parte sullo schermo: meno da disegnare mentre si muove
+    const bottom = innerHeight + 40;
+    Array.from(feed.children).forEach((c, i) => { if (c.getBoundingClientRect().top > bottom && ghost.children[i]) ghost.children[i].dataset.cut = "1"; });
+    ghost.querySelectorAll(":scope > [data-cut]").forEach((c) => c.remove());
     // posizione al decimale di pixel: offsetTop arrotonda e la copia partirebbe con un piccolo scatto
     const box = feed.parentElement, fr = feed.getBoundingClientRect(), br = box.getBoundingClientRect();
     ghost.style.top = (fr.top - br.top - box.clientTop) + "px";
@@ -318,11 +334,13 @@ G.page("home", async function (P) {
     ghost.style.width = fr.width + "px";
     renderFeed(true);
     feed.parentElement.appendChild(ghost);
-    ghost.style.height = feed.offsetHeight + "px";
-    const E = "cubic-bezier(0.2, 0.8, 0.2, 1)";
-    ghost.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateX(" + -18 * sgn + "%)" }], { duration: 240, easing: E, fill: "forwards" })
+    // alta quanto la parte del vecchio elenco che si vedeva, anche se il nuovo è più corto
+    ghost.style.height = Math.max(feed.offsetHeight, Math.min(fr.height, innerHeight - fr.top + 40)) + "px";
+    const E = "cubic-bezier(0.32, 0.72, 0, 1)", W = feed.getBoundingClientRect().width + 32, D = 340;
+    const o0 = x0 ? (1 - Math.min(0.3, Math.abs(x0) / innerWidth)) : 1;
+    ghost.animate([{ opacity: o0, transform: "translateX(" + x0.toFixed(1) + "px)" }, { opacity: 0.2, transform: "translateX(" + (-sgn * W) + "px)" }], { duration: D, easing: E, fill: "forwards" })
       .finished.then(() => ghost.remove(), () => ghost.remove());
-    feed.animate([{ opacity: 0, transform: "translateX(" + 18 * sgn + "%)" }, { opacity: 1, transform: "none" }], { duration: 320, easing: E });
+    feed.animate([{ opacity: 0.4, transform: "translateX(" + (x0 + sgn * W).toFixed(1) + "px)" }, { opacity: 1, transform: "none" }], { duration: D, easing: E });
   }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
@@ -345,8 +363,8 @@ G.page("home", async function (P) {
   G.swipe($("main") || $("feed").parentElement, {
     follow: $("feed"),
     canNext: () => !!step(1), canPrev: () => !!step(-1),
-    next: (reset) => { const k = step(1); reset(false); goSec(k); },
-    prev: (reset) => { const k = step(-1); reset(false); goSec(k); }
+    next: (reset, off) => { const k = step(1); fromX = off || 0; reset(false); goSec(k); },
+    prev: (reset, off) => { const k = step(-1); fromX = off || 0; reset(false); goSec(k); }
   });
   // alla prima visita, su un telefono, l'elenco accenna un movimento di lato: si capisce che si può scorrere
   if (!G.soft && !G.reduced() && "ontouchstart" in window && !G.ls.get("gerico.swipeHint", false)) {

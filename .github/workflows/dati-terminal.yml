@@ -3,7 +3,7 @@ name: Dati del Terminal
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR), il calendario economico (Forex Factory)
 # e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno;
 # calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati. Salva i file in site/data
-# e li pubblica su main, come fa l'attività «GERICO pubblicazione». Non usa crediti Claude.
+# e li pubblica su main, come fanno i giri delle notizie e delle chiusure. Non usa crediti Claude.
 on:
   schedule:
     # orari in UTC: a Roma è un'ora in più d'inverno, due d'estate

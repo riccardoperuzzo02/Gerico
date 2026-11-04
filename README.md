@@ -15,16 +15,19 @@ site/                 la cartella pubblicata da Cloudflare
   data/               i dati dell'edizione, scritti dalla pipeline
 scripts/export.py     dal database dell'app di redazione ai file di site/data
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
-pipeline/             i testi delle attività programmate (7:18, 17:50 e pubblicazione)
+pipeline/             i testi delle attività programmate (notizie, chiusure europee, titoli da seguire)
 ```
 
 ## Da dove arrivano i dati
 
-La redazione vive nell'app privata su claude.ai e scrive solo nel suo database: ogni mattina alle 7:18 l'edizione completa,
-nei giorni feriali alle 17:50 le chiusure delle Borse europee. Alle 7:45 e alle 18:45 un'attività separata e breve legge il
-database con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e, se qualcosa è cambiato, fa un commit con push.
-Cloudflare ripubblica il sito da solo. La pubblicazione sta in un'attività a parte perché nei giri lunghi il passaggio su GitHub
-falliva; se una mattina non c'è niente di nuovo, l'export non cambia nessun file e non parte nessun commit.
+La redazione vive nell'app privata su claude.ai e scrive nel suo database: ogni giorno alle 7:18 l'edizione completa e alle
+13:18 l'aggiornamento di metà giornata, nei giorni feriali alle 18:15 le chiusure delle Borse europee. Alla fine del giro la
+stessa attività legge il database con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e gli altri script
+della pubblicazione e, se qualcosa è cambiato, fa un commit con push: il sito si aggiorna verso le 7:30, le 13:30 e le 18:20.
+Prima di pubblicare riparte sempre dall'ultima versione di main (`git fetch` e `git checkout -f -B main origin/main`): i push
+rifiutati dei primi giorni venivano da un clone vecchio. Fino al 4 novembre 2026 la pubblicazione era un'attività a parte;
+è stata unita ai giri per avere meno chat su Claude. Se una volta non c'è niente di nuovo, l'export non cambia nessun file e
+non parte nessun commit. Cloudflare ripubblica il sito da solo.
 
 - `edition.json`: storie live in ordine di importanza, più le archiviate degli ultimi 7 giorni
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno

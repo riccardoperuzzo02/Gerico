@@ -129,10 +129,18 @@ def history(yf, sym):
     for i in range(3):
         try:
             t = yf.Ticker(sym)
-            h = t.history(period="6mo", interval="1d", auto_adjust=False, actions=False)
+            # all'ultimo tentativo date di inizio e fine invece di period: a volte Yahoo risponde a period
+            # con una serie monca (succede spesso al gas TTF), e con le date la risposta non viene dalla cache
+            span = {"period": "6mo"} if i < 2 else {"start": (now() - dt.timedelta(days=190)).date().isoformat(),
+                                                    "end": (now() + dt.timedelta(days=2)).date().isoformat()}
+            h = t.history(interval="1d", auto_adjust=False, actions=False, **span)
             if h is not None and not h.empty and "Close" in h:
-                return t, h.dropna(subset=["Close"])
-            last = ValueError("nessun dato")
+                h = h.dropna(subset=["Close"])
+                if len(h) >= 2:
+                    return t, h
+                last = ValueError("serie troppo corta")
+            else:
+                last = ValueError("nessun dato")
         except Exception as e:  # yfinance alza eccezioni diverse per limiti di richieste e simboli sbagliati
             last = e
         time.sleep(4 * (i + 1))

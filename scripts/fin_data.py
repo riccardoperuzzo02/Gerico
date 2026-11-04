@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Dati del Terminal da quattro fonti pubbliche, per il job «Dati del Terminal» di GitHub Actions.
+"""Dati del Terminal da cinque fonti pubbliche, per il job «Dati del Terminal» di GitHub Actions.
 
 Uso:
     python3 scripts/fin_data.py site/data
-    FIN_ONLY=macro,sec python3 scripts/fin_data.py site/data    solo alcune parti (quotes, macro, sec, sentiment)
+    FIN_ONLY=macro,sec python3 scripts/fin_data.py site/data    solo alcune parti (quotes, macro, sec, sentiment, calendario)
 
 Scrive in site/data:
 - quotes.json     prezzi, variazioni e grafico di tre mesi da Yahoo Finance, con yfinance;
 - macro.json      serie economiche della Fed di St. Louis (FRED), senza chiave;
 - sec.json        gli ultimi documenti depositati alla SEC (EDGAR) da un gruppo di grandi società Usa;
-- sentiment.json  le notizie di Yahoo Finance su alcuni mercati, con il tono di ogni titolo calcolato da FinBERT.
+- sentiment.json  le notizie di Yahoo Finance su alcuni mercati, con il tono di ogni titolo calcolato da FinBERT;
+- calendario.json il calendario economico della settimana di Forex Factory, con gli orari in ora italiana.
 
 Ogni parte va per conto suo. Se una fonte non risponde, il suo file resta quello di prima,
 con lastError che dice quando e perché non si è aggiornato: il Terminal lo mostra.
@@ -547,10 +548,50 @@ def fetch_sentiment():
             "hours": NEWS_HOURS, "assets": assets, "errors": errors}
 
 
+# ---------------------------------------------------------------- Forex Factory (calendario economico)
+
+# il feed pubblico della settimana in corso: titolo, valuta, data con il fuso di New York, impatto, previsione, precedente
+FF_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+FF_IMPACT = {"high": "alto", "medium": "medio", "low": "basso", "holiday": "festivo"}
+
+
+def fetch_calendar():
+    r = get(FF_URL)
+    try:
+        raw = r.json()
+    except ValueError:
+        # quando limita le richieste Forex Factory risponde con una pagina HTML invece che con il JSON
+        raise RuntimeError(f"risposta non JSON (HTTP {r.status_code})")
+    if not isinstance(raw, list):
+        raise RuntimeError("risposta senza elenco di eventi")
+    items = []
+    for x in raw:
+        if not isinstance(x, dict):
+            continue
+        try:
+            when = dt.datetime.fromisoformat(str(x.get("date") or "")).astimezone(ROME)
+        except ValueError:
+            continue
+        title = re.sub(r"\s+", " ", str(x.get("title") or "")).strip()
+        if not title:
+            continue
+        items.append({"date": when.date().isoformat(), "time": when.strftime("%H:%M"),
+                      "currency": str(x.get("country") or "").strip().upper()[:4], "title": title[:120],
+                      "impact": FF_IMPACT.get(str(x.get("impact") or "").strip().lower(), "basso"),
+                      "forecast": str(x.get("forecast") or "").strip()[:24],
+                      "previous": str(x.get("previous") or "").strip()[:24]})
+    if not items:
+        raise RuntimeError("nessun evento leggibile")
+    items.sort(key=lambda i: (i["date"], i["time"]))
+    return {"source": {"name": "Forex Factory", "url": "https://www.forexfactory.com/calendar"},
+            "tz": "Europe/Rome", "items": items}
+
+
 # ---------------------------------------------------------------- avvio
 
 PARTS = [("quotes", "quotes.json", fetch_quotes), ("macro", "macro.json", fetch_macro),
-         ("sentiment", "sentiment.json", fetch_sentiment), ("sec", "sec.json", fetch_sec)]
+         ("sentiment", "sentiment.json", fetch_sentiment), ("sec", "sec.json", fetch_sec),
+         ("calendario", "calendario.json", fetch_calendar)]
 
 
 def summary(key, d):
@@ -560,6 +601,8 @@ def summary(key, d):
         return f"{len(d['series'])} serie"
     if key == "sec":
         return f"{len(d['filings'])} documenti"
+    if key == "calendario":
+        return f"{len(d['items'])} eventi, {sum(1 for i in d['items'] if i['impact'] == 'alto')} ad alto impatto"
     return f"{len(d['assets'])} mercati, {sum(a['n'] for a in d['assets'])} titoli"
 
 

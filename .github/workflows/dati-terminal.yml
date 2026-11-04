@@ -1,6 +1,6 @@
 name: Dati del Terminal
 
-# Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR)
+# Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR), il calendario economico (Forex Factory)
 # e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno;
 # calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati. Salva i file in site/data
 # e li pubblica su main, come fa l'attività «GERICO pubblicazione». Non usa crediti Claude.
@@ -68,7 +68,7 @@ jobs:
         run: |
           git config user.name "GERICO"
           git config user.email "gerico@users.noreply.github.com"
-          for f in quotes macro sec sentiment audio; do
+          for f in quotes macro sec sentiment audio calendario; do
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
           if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi

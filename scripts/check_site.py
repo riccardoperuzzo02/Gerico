@@ -70,7 +70,8 @@ def check_data(site):
         warnings.append("weights.json: manca, la mappa del Terminal resterà vuota")
     # file facoltativi: le brevi del giro delle notizie e i dati del job «Dati del Terminal»
     optional = (("brevi.json", "items"), ("quotes.json", "groups"), ("macro.json", "series"),
-                ("sec.json", "filings"), ("sentiment.json", "assets"), ("titoli.json", "items"), ("titoli-storico.json", "items"))
+                ("sec.json", "filings"), ("sentiment.json", "assets"), ("titoli.json", "items"), ("titoli-storico.json", "items"),
+                ("calendario.json", "items"))
     for name, key in optional:
         path = os.path.join(data, name)
         if os.path.exists(path):

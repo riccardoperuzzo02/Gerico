@@ -20,7 +20,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261104-2">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261104-3">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!localStorage.getItem("gerico.introSeen"))document.documentElement.classList.add("first-visit");if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add(localStorage.getItem("gerico.introDay")===JSON.stringify(new Date().toLocaleDateString("it-IT",{timeZone:"Europe/Rome"}))?"intro-mini":"intro-run")}catch(e){}try{var r=JSON.parse(sessionStorage.getItem("gerico.reveal"));sessionStorage.removeItem("gerico.reveal");var p=function(u){return String(u).replace(/\/index(\.html)?$/,"/").replace(/\.html$/,"")};if(r&&Date.now()-r.t<5000&&p(r.to)===p(location.pathname)&&!matchMedia("(prefers-reduced-motion: reduce)").matches){var w=innerWidth,h=innerHeight,x=Math.round(r.x*w),y=Math.round(r.y*h),R=Math.ceil(Math.hypot(Math.max(x,w-x),Math.max(y,h-y))),c=document.createElement("style");c.textContent="@keyframes g-reveal{from{clip-path:circle(0px at "+x+"px "+y+"px)}to{clip-path:circle("+R+"px at "+x+"px "+y+"px)}}";document.head.appendChild(c);document.documentElement.classList.add("vt-reveal")}}catch(e){}</script>
 </head>
 <body>
@@ -35,7 +35,7 @@
 <button class="menu-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
 </div>
 </header>
-<div class="ultim" id="ultim" role="region" aria-label="Ultim'ora" hidden><div class="wrap ultim-in"><span class="ultim-l">Ultim'ora</span><div class="ultim-v"><div class="ultim-t" id="ultim-t"></div></div><button class="ultim-p" id="ultim-p" type="button" aria-pressed="false" aria-label="Ferma lo scorrimento"><svg class="i-pause" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M3 2v8M9 2v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><svg class="i-play" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M3.5 2.2v7.6L10 6z" fill="currentColor"/></svg></button></div></div>
+<div class="ultim" id="ultim" role="region" aria-label="Ultim'ora"><div class="wrap ultim-in"><span class="ultim-l">Ultim'ora</span><div class="ultim-v"><div class="ultim-t" id="ultim-t"></div></div><button class="ultim-p" id="ultim-p" type="button" aria-pressed="false" aria-label="Ferma lo scorrimento"><svg class="i-pause" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M3 2v8M9 2v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><svg class="i-play" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M3.5 2.2v7.6L10 6z" fill="currentColor"/></svg></button></div></div>
 <dialog class="menu" id="menu" aria-labelledby="menu-t">
 <div class="menu-in">
 <div class="grab" aria-hidden="true"></div>
@@ -49,7 +49,7 @@
 <main id="main" class="wrap home" tabindex="-1">
 <div class="feed">
 <div class="large"><h1 id="large-title">Oggi</h1><p class="edition-sub" id="edition-line">&nbsp;</p></div>
-<div class="listen wait" id="listen"><button type="button" class="ls-btn" id="ls-btn" aria-label="Ascolta il riepilogo" disabled><svg class="i-play" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M4.5 2.6v10.8L13.2 8z" fill="currentColor"/></svg><svg class="i-pause" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button><div class="ls-txt"><p class="ls-t" id="ls-t">Il riepilogo di oggi</p><p class="ls-s" id="ls-s">Notizie e mercati, a voce</p></div><span class="ls-time" id="ls-time"></span><span class="ls-bar" aria-hidden="true"><i id="ls-prog"></i></span></div>
+<div class="listen wait" id="listen"><button type="button" class="ls-btn" id="ls-btn" aria-label="Ascolta il riepilogo" disabled><svg class="i-play" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M4.5 2.6v10.8L13.2 8z" fill="currentColor"/></svg><svg class="i-pause" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button><div class="ls-txt"><p class="ls-t" id="ls-t">Il riepilogo di oggi</p><p class="ls-s" id="ls-s">Notizie e mercati in tre minuti, con l'aggiornamento di oggi</p></div><span class="ls-time" id="ls-time"></span><span class="ls-bar" aria-hidden="true"><i id="ls-prog"></i></span></div>
 <p class="intro" id="intro">Le notizie del giorno lette su più testate: cosa riportano tutte e dove si dividono. <a href="come-funziona.html">Come funziona</a></p>
 <a class="ticker sk-tk" id="ticker" href="terminal" data-reveal><span class="tk-top"><span class="tk-h">Mercati<span id="tk-w"></span></span><span class="tk-go">Apri il Terminal<svg aria-hidden="true" width="7" height="12" viewBox="0 0 7 12"><path d="M1 1l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span><span class="tk-row" id="tk-row"><span class="tk"></span><span class="tk"></span><span class="tk"></span><span class="tk"></span></span></a>
 <nav class="sec-nav" aria-label="Sezioni"><div class="seg" id="sections"></div></nav>
@@ -67,7 +67,7 @@
 </footer>
 
 <noscript><div class="wrap"><p class="notice">Per leggere l'edizione serve JavaScript attivo.</p></div></noscript>
-<script src="assets/js/common.js?v=20261104-2"></script>
-<script src="assets/js/home.js?v=20261104-2"></script>
+<script src="assets/js/common.js?v=20261104-3"></script>
+<script src="assets/js/home.js?v=20261104-3"></script>
 </body>
 </html>

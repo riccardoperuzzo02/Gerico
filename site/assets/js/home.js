@@ -160,7 +160,8 @@ G.page("home", async function (P) {
     });
     items.sort((a, b) => Date.parse(b.at) - Date.parse(a.at));
     const list = items.slice(0, 12);
-    if (list.length < 2) return;
+    // la fascia è nella pagina da subito, per non spingere giù le notizie quando arriva: senza almeno due voci si toglie
+    if (list.length < 2) { $("ultim").hidden = true; return; }
     const copy = (dup) => list.map((it) => '<a href="' + esc(it.url) + '"' + (it.ext ? ' target="_blank" rel="noopener"' : "") + (dup ? ' tabindex="-1"' : "") +
       "><b>" + esc((G.isToday(it.at) ? "" : "ieri ") + G.hm(it.at)) + "</b>" + esc(it.title) + "</a>").join("");
     const t = $("ultim-t");

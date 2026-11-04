@@ -1306,3 +1306,11 @@ main[tabindex="-1"]:focus, main[tabindex="-1"]:focus-visible, [tabindex="-1"]:fo
 body.term .t-side { transition: opacity var(--t-2) var(--ease); }
 body.term .t-side:not(.ready) { visibility: hidden; opacity: 0; animation: t-side-show 0s 2s forwards; }
 @keyframes t-side-show { to { visibility: visible; opacity: 1; } }
+/* prima pagina: la fascia dell'ultim'ora e la scheda del riepilogo hanno da subito la loro misura finale,
+   così l'arrivo dei dati non sposta le notizie (il testo d'attesa della scheda è lungo come quello vero) */
+.ultim-v { height: 40px; }
+.ls-time:empty::before { content: "0:00"; visibility: hidden; }
+/* il margine della prima notizia resta dentro #feed: la lista non scende quando le notizie sostituiscono lo scheletro */
+#feed { display: flow-root; }
+/* sotto i 375 px la riga dell'edizione non sta accanto a «Oggi»: va subito a capo, con il suo spazio */
+@media (max-width: 374px) { .home .edition-sub { flex-basis: 100%; min-height: 1.5em; } }

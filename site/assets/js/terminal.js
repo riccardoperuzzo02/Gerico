@@ -21,7 +21,7 @@ G.page("terminal", async function (P) {
   const showSide = () => { const side = document.querySelector(".t-side"); if (side) side.classList.add("ready"); };
   P.later(showSide, 2000);
   // anche le quotazioni del job: alla mappa servono per le Borse che mancano nella pubblicazione (è un file piccolo)
-  const [ed, mk, ag, tm, wt, qt0] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes")]);
+  const [ed, mk, ag, tm, wt, qt0, ff] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes"), G.load("calendario")]);
   const state = {
     view: G.ls.get("gerico.mapView", "mondo") === "europa" ? "europa" : "mondo",
     sel: G.ls.get("gerico.mapSel", "ITA")
@@ -208,34 +208,68 @@ G.page("terminal", async function (P) {
       "</th></tr></thead><tbody>" + rows + "</tbody></table></div>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
+  // una riga dell'agenda: ora, valuta, evento con i numeri sotto, impatto
+  function agendaRow(o) {
+    const cls = [o.past ? "past" : "", o.imp === "alto" ? "hi" : "", o.next ? "next" + (o.soon ? " soon" : "") : ""].filter(Boolean).join(" ");
+    return '<li' + (cls ? ' class="' + cls + '"' : "") + '><span class="tm">' + esc(o.time || "—") + "</span><span>" + esc(o.cur || "") +
+      '</span><span class="ev">' + esc(o.ev) + (o.nums ? "<small>" + esc(o.nums) + "</small>" : "") + '</span><span class="im ' + (o.imp || "") + '">' + esc(G.cap(o.imp || "")) + "</span></li>";
+  }
+  // Forex Factory: oggi impatto alto e medio e festività; dei giorni dopo solo l'impatto alto
+  const FF_TODAY = { alto: 1, medio: 1, festivo: 1 };
   function renderAgenda() {
-    if (!ag || !(ag.items || []).length) { $("ag").innerHTML = '<p class="t-na">L\'agenda di oggi non è ancora disponibile.</p>'; return; }
-    const today = !ag.date || String(ag.date).slice(0, 10) === G.dayKey(new Date());
-    const now = G.romeNow().hm;
-    const items = ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
-    const next = today ? items.find((it) => it.impact === "alto" && it.time && it.time >= now) : null;
-    // quanto manca al prossimo evento ad alto impatto (si aggiorna ogni 30 secondi)
+    const now = G.romeNow().hm, dayKey = G.dayKey(new Date());
+    const hasAg = !!(ag && (ag.items || []).length);
+    const today = hasAg && (!ag.date || String(ag.date).slice(0, 10) === dayKey);
+    const items = hasAg ? ag.items.slice().sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99"))) : [];
+    const ffOk = !!(ff && Array.isArray(ff.items) && G.hoursAgo(ff.asOf) < 8 * 24);
+    const ffToday = ffOk ? ff.items.filter((it) => it.date === dayKey && FF_TODAY[it.impact]) : [];
+    const ffWeek = ffOk ? ff.items.filter((it) => it.date > dayKey && it.impact === "alto") : [];
+    // il prossimo evento ad alto impatto di oggi, dall'agenda di GERICO o da Forex Factory (si aggiorna ogni 30 secondi)
+    const cands = [];
+    if (today) items.forEach((it) => { if (it.impact === "alto" && it.time && it.time >= now) cands.push({ time: it.time, cur: it.currency || "", ref: it }); });
+    ffToday.forEach((it) => { if (it.impact === "alto" && it.time >= now) cands.push({ time: it.time, cur: it.currency, ref: it }); });
+    cands.sort((a, b) => a.time.localeCompare(b.time));
+    const next = cands[0] || null;
     let left = "", soon = false;
     if (next) {
-      const [hh, mm] = String(next.time).split(":").map(Number);
+      const [hh, mm] = next.time.split(":").map(Number);
       const mins = hh * 60 + mm - G.romeNow().min;
       soon = mins <= 15;
       left = mins <= 0 ? "adesso" : mins < 60 ? "tra " + mins + " min" : "tra " + Math.floor(mins / 60) + " h " + String(mins % 60).padStart(2, "0") + " min";
     }
     $("next").classList.toggle("soon", soon);
-    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + (next.currency || "")) + "</b> · " + esc(left) : "";
-    $("ag-h").textContent = today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
-    // un'agenda vecchia o troppo corta si dice in chiaro: chi la usa per i dati ad alto impatto deve saperlo
-    const wd = G.romeNow().wd;
-    const warn = !today ? "L'agenda di oggi non è ancora arrivata: questa è quella del " + G.dayOnly(ag.date) + "."
-      : wd >= 1 && wd <= 5 && items.length < 3 ? "Agenda forse incompleta: oggi ha " + (items.length === 1 ? "una voce sola" : "solo " + items.length + " voci") + ". Controlla gli orari dei dati ad alto impatto su un calendario economico." : "";
-    $("ag").innerHTML = (warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "") + '<ol class="t-agenda">' + items.map((it) => {
-      const past = today && it.time && it.time < now;
-      const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
-      const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
-      return '<li class="' + (past ? "past " : "") + (imp === "alto" ? "hi" : "") + (it === next ? " next" + (soon ? " soon" : "") : "") + '"><span class="tm">' + esc(it.time || "—") + "</span><span>" + esc(it.currency || "") +
-        '</span><span class="ev">' + esc(it.event) + (nums ? "<small>" + esc(nums) + "</small>" : "") + '</span><span class="im ' + imp + '">' + esc(G.cap(imp)) + "</span></li>";
-    }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
+    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + next.cur) + "</b> · " + esc(left) : "";
+    $("ag-h").textContent = !hasAg || today ? "Agenda di oggi" : "Agenda del " + G.dayOnly(ag.date);
+    let html = "";
+    if (!hasAg) html = '<p class="t-na">L\'agenda di GERICO di oggi non è ancora disponibile.</p>';
+    else {
+      // un'agenda vecchia o troppo corta si dice in chiaro: chi la usa per i dati ad alto impatto deve saperlo
+      const wd = G.romeNow().wd, check = ffToday.length ? "Controlla qui sotto il calendario di Forex Factory." : "Controlla gli orari dei dati ad alto impatto su un calendario economico.";
+      const warn = !today ? "L'agenda di oggi non è ancora arrivata: questa è quella del " + G.dayOnly(ag.date) + "."
+        : wd >= 1 && wd <= 5 && items.length < 3 ? "Agenda forse incompleta: oggi ha " + (items.length === 1 ? "una voce sola" : "solo " + items.length + " voci") + ". " + check : "";
+      html = (warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "") + '<ol class="t-agenda">' + items.map((it) => {
+        const nums = [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · ");
+        const imp = ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "";
+        return agendaRow({ time: it.time, cur: it.currency, ev: it.event, nums, imp, past: today && it.time && it.time < now, next: next && next.ref === it, soon });
+      }).join("") + "</ol>" + (ag.note ? '<p class="t-note">' + esc(ag.note) + "</p>" : "");
+    }
+    if (ffOk) {
+      const nums = (it) => [it.forecast ? "previsione " + it.forecast : "", it.previous ? "precedente " + it.previous : ""].filter(Boolean).join(" · ");
+      const row = (it) => agendaRow({ time: it.time, cur: it.currency, ev: it.title, nums: nums(it), imp: it.impact, past: it.date === dayKey && it.time < now, next: next && next.ref === it, soon });
+      // la tendina dei giorni dopo resta aperta o chiusa come l'ha lasciata chi legge, anche quando l'agenda si aggiorna
+      const open = !!document.querySelector("#ag .t-ff-week[open]");
+      let last = "";
+      const week = ffWeek.map((it) => {
+        let day = "";
+        if (it.date !== last) { last = it.date; day = '<li class="t-day">' + esc(G.cap(G.weekday(it.date + "T12:00:00Z")) + " " + G.dayOnly(it.date)) + "</li>"; }
+        return day + row(it);
+      }).join("");
+      html += '<div class="t-ff"><h3 class="t-ff-h">Forex Factory</h3>' +
+        (ffToday.length ? '<ol class="t-agenda">' + ffToday.map(row).join("") + "</ol>" : '<p class="t-na">Oggi nessun evento ad alto o medio impatto.</p>') +
+        (ffWeek.length ? '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>Prossimi giorni, impatto alto (" + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>" : "") +
+        '<p class="t-note">Dal calendario di ' + ext("https://www.forexfactory.com/calendar", "Forex Factory") + ", letto " + esc(G.when(ff.asOf)) + ". Orari in ora italiana; impatto basso escluso.</p></div>";
+    }
+    $("ag").innerHTML = html;
   }
 
   // solo le storie legate ai mercati: citate dai dati di mercato o nelle sezioni Mercati ed Economia, al massimo 3
@@ -428,7 +462,7 @@ G.page("terminal", async function (P) {
   });
 
   // ---------- sezioni, comandi e tasti funzione ----------
-  const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", NOTIZIE: "p-notizie",
+  const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", CALENDARIO: "p-agenda", FOREX: "p-agenda", "FOREX FACTORY": "p-agenda", FF: "p-agenda", NOTIZIE: "p-notizie",
     GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {

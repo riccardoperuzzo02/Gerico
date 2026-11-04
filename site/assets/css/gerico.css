@@ -1314,3 +1314,17 @@ body.term .t-side:not(.ready) { visibility: hidden; opacity: 0; animation: t-sid
 #feed { display: flow-root; }
 /* sotto i 375 px la riga dell'edizione non sta accanto a «Oggi»: va subito a capo, con il suo spazio */
 @media (max-width: 374px) { .home .edition-sub { flex-basis: 100%; min-height: 1.5em; } }
+/* Forex Factory. Prima pagina: il prossimo dato ad alto impatto in fondo al riquadro dei mercati, su una riga sola */
+.tk-ev { display: block; margin-top: 10px; overflow: hidden; font-size: 0.8125rem; line-height: 1.4; color: var(--muted); white-space: nowrap; text-overflow: ellipsis; }
+.tk-ev b { color: var(--ink); font-weight: 800; font-variant-numeric: tabular-nums; }
+.tk-ev-l { font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.6875rem; }
+/* Terminal: il calendario di Forex Factory sotto l'agenda di GERICO */
+.t-ff { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--hair); }
+.t-ff-h { margin: 0 0 2px; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--t-ink-2); }
+.t-agenda .im.festivo { color: var(--t-ink-3); }
+.t-agenda li.t-day { display: block; padding: 14px 0 2px; border-top: 0; font-size: 0.8125rem; font-weight: 800; color: var(--t-ink-2); }
+.t-ff-week { margin-top: 4px; }
+.t-ff-week > summary { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 0.875rem; font-weight: 700; color: var(--t-ink-2); cursor: pointer; list-style: none; }
+.t-ff-week > summary::-webkit-details-marker { display: none; }
+.t-ff-week > summary::before { content: ""; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform var(--t-2) var(--ease); }
+.t-ff-week[open] > summary::before { transform: rotate(45deg); }

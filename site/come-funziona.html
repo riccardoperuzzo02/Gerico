@@ -20,7 +20,7 @@
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261104-3">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261104-4">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add(localStorage.getItem("gerico.introDay")===JSON.stringify(new Date().toLocaleDateString("it-IT",{timeZone:"Europe/Rome"}))?"intro-mini":"intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -60,10 +60,10 @@
 
 <h2>Quando si aggiorna</h2>
 <ul>
-<li>Ogni mattina verso le 7:45: notizie, brevi, mercati e agenda del giorno.</li>
-<li>Ogni giorno verso le 13:45: le novità della mattina, le brevi nuove e i dati di metà giornata.</li>
-<li>Nei giorni feriali verso le 18:45: le chiusure delle Borse europee.</li>
-<li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche e tono delle notizie nel Terminal.</li>
+<li>Ogni mattina verso le 7:30: notizie, brevi, mercati e agenda del giorno.</li>
+<li>Ogni giorno verso le 13:30: le novità della mattina, le brevi nuove e i dati di metà giornata.</li>
+<li>Nei giorni feriali verso le 18:20: le chiusure delle Borse europee.</li>
+<li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche, tono delle notizie e calendario di Forex Factory nel Terminal.</li>
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
 <p>Le brevi sono notizie lette su una sola testata, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le confronta, come fa invece con le storie.</p>
@@ -77,6 +77,7 @@
 <li><strong>Prezzi e grafici</strong>: da Yahoo Finance, con la libreria yfinance. Una chiusura al giorno per tre mesi; i prezzi possono avere qualche minuto di ritardo.</li>
 <li><strong>Macro</strong>: tassi, inflazione e lavoro dalla banca dati FRED della Fed di St. Louis. L'inflazione è la variazione sullo stesso mese dell'anno prima.</li>
 <li><strong>Tono delle notizie</strong>: i titoli di Yahoo Finance degli ultimi tre giorni, letti da FinBERT, un modello per testi finanziari in inglese. Dice se un titolo suona positivo, neutro o negativo per i mercati; sbaglia spesso con ironia e domande e non dice dove andrà un prezzo.</li>
+<li><strong>Calendario economico</strong>: oltre all'agenda di GERICO, il calendario della settimana di Forex Factory, con gli orari in ora italiana: oggi gli eventi ad alto e medio impatto e le festività, poi quelli ad alto impatto dei giorni dopo. In prima pagina, in fondo al riquadro dei mercati, c'è il prossimo dato ad alto impatto.</li>
 <li><strong>Documenti SEC</strong>: le comunicazioni ufficiali (8-K, 10-Q, 10-K) di un gruppo di grandi società Usa, dalla banca dati EDGAR. Il pannello compare solo quando la SEC risponde ai server di GitHub.</li>
 </ul>
 
@@ -99,7 +100,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261104-3"></script>
-<script src="assets/js/info.js?v=20261104-3"></script>
+<script src="assets/js/common.js?v=20261104-4"></script>
+<script src="assets/js/info.js?v=20261104-4"></script>
 </body>
 </html>

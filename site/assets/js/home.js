@@ -8,8 +8,8 @@ G.page("home", async function (P) {
   // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
   if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
 
-  const [ed, mk, qt, br, au, tit, tsh] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
-    G.load("titoli"), G.load("titoli-storico")]);
+  const [ed, mk, qt, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
+    G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda")]);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
@@ -34,7 +34,7 @@ G.page("home", async function (P) {
     const edl = document.querySelector("#edition-line .ed-l");
     // «Mercoledì 28 ottobre · 8 notizie · ore 7:23»: sta in una riga anche sul telefono
     if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · " + stories.length + (stories.length === 1 ? " notizia" : " notizie") + " · ore ");
-    // «Oggi» solo sopra l'edizione di oggi. L'edizione del mattino esce alle 7:45: dalle 8:15 (o se ne manca più di una) lo si dice subito
+    // «Oggi» solo sopra l'edizione di oggi. L'edizione del mattino esce verso le 7:30: dalle 8:15 (o se ne manca più di una) lo si dice subito
     const age = G.dayAge(lastRun);
     if (age > 0) {
       const name = age === 1 ? "Ieri" : age < 7 ? G.cap(G.weekday(lastRun)) : "Ultima edizione";
@@ -227,6 +227,30 @@ G.page("home", async function (P) {
     $("ticker").classList.remove("sk-tk");
   }
 
+  // ---------- il prossimo dato ad alto impatto, in fondo al riquadro dei mercati ----------
+  // da Forex Factory (orari già in ora italiana) e dall'agenda di GERICO: il primo che deve ancora uscire, oggi o nei giorni dopo
+  function renderNext() {
+    const el = $("tk-ev");
+    if (!el) return;
+    const day = G.dayKey(new Date()), now = G.romeNow().hm, list = [];
+    if (ff && Array.isArray(ff.items) && G.hoursAgo(ff.asOf) < 8 * 24) {
+      ff.items.forEach((it) => { if (it.impact === "alto" && (it.date > day || (it.date === day && it.time >= now))) list.push({ date: it.date, time: it.time, cur: it.currency, ev: it.title }); });
+    }
+    if (ag && Array.isArray(ag.items) && String(ag.date || "").slice(0, 10) === day) {
+      ag.items.forEach((it) => { if (it.impact === "alto" && it.time && it.time >= now) list.push({ date: day, time: it.time, cur: it.currency || "", ev: it.event || "" }); });
+    }
+    list.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    const n = list[0];
+    if (!n) { el.innerHTML = '<span class="tk-ev-l">Calendario</span> nessun dato ad alto impatto in arrivo questa settimana'; return; }
+    let when = n.time;
+    if (n.date !== day) when = G.weekday(n.date + "T12:00:00Z") + " " + n.time;
+    else {
+      const [hh, mm] = n.time.split(":").map(Number), mins = hh * 60 + mm - G.romeNow().min;
+      if (mins < 60) when = n.time + " (" + (mins <= 0 ? "adesso" : "tra " + mins + " min") + ")";
+    }
+    el.innerHTML = '<span class="tk-ev-l">Alto impatto</span> <b>' + esc(when + " " + n.cur) + "</b> " + esc(n.ev);
+  }
+
   // ---------- mercati: un riquadro con 5 numeri ----------
   const WANT = [
     ["indici", /ftse\s*mib/i], ["obbligazioni", /spread/i], ["valute", /eur.?\/?.?usd|euro.?dollaro/i],
@@ -312,7 +336,8 @@ G.page("home", async function (P) {
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderUltim(); renderListen();
+  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
+  P.every(renderNext, 30000);
 
   // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
   const step = (d) => { const o = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec); return o[o.indexOf(state.section) + d]; };

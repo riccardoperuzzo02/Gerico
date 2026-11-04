@@ -78,12 +78,13 @@
       .formatToParts(new Date()).forEach((x) => { p[x.type] = x.value; });
     return { wd: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday), min: (Number(p.hour) % 24) * 60 + Number(p.minute), hm: (p.hour % 24).toString().padStart(2, "0") + ":" + p.minute };
   };
-  // il sito si aggiorna alle 7:45 e alle 13:45 (notizie e mercati) e alle 18:45 nei giorni feriali (solo i mercati).
+  // il sito si aggiorna verso le 7:30 e le 13:30 (notizie e mercati) e verso le 18:20 nei giorni feriali (solo i mercati):
+  // ogni giro pubblica da solo appena ha finito.
   // newsOnly: il prossimo aggiornamento delle notizie
   G.nextUpdate = (newsOnly) => {
     const now = G.romeNow();
     const names = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
-    const slots = (d) => (newsOnly || d === 0 || d === 6 ? [465, 825] : [465, 825, 1125]);
+    const slots = (d) => (newsOnly || d === 0 || d === 6 ? [450, 810] : [450, 810, 1100]);
     for (let k = 0; k < 8; k++) {
       const d = (now.wd + k) % 7;
       for (const m of slots(d)) {

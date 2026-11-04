@@ -17,6 +17,9 @@ G.page("terminal", async function (P) {
     '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
     '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
 
+  // la colonna di lato compare con i dati (più sotto); se qualcosa si rompe prima, compare comunque
+  const showSide = () => { const side = document.querySelector(".t-side"); if (side) side.classList.add("ready"); };
+  P.later(showSide, 2000);
   // anche le quotazioni del job: alla mappa servono per le Borse che mancano nella pubblicazione (è un file piccolo)
   const [ed, mk, ag, tm, wt, qt0] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes")]);
   const state = {
@@ -515,8 +518,7 @@ G.page("terminal", async function (P) {
   table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
   table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
   // la colonna di lato compare quando ha i dati (CSS .t-side.ready): le tabelle non spingono giù i pannelli sotto
-  const side = document.querySelector(".t-side");
-  if (side) side.classList.add("ready");
+  showSide();
   table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
   P.every(renderAgenda, 30000);

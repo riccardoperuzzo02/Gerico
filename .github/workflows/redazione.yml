@@ -23,6 +23,11 @@ on:
         type: choice
         options: [prova, notizie, chiusure, titoli]
         default: prova
+      variante:
+        description: "Per le notizie: giro delle 7:18 o delle 13:18 (auto: 7:18 prima delle 11)"
+        type: choice
+        options: [auto, "7:18", "13:18"]
+        default: auto
 
 permissions:
   contents: write
@@ -47,6 +52,7 @@ jobs:
         env:
           SCHEDULE: ${{ github.event.schedule }}
           SCELTA: ${{ inputs.giro }}
+          VARIANTE: ${{ inputs.variante }}
         run: python3 scripts/redazione.py giro | tee -a "$GITHUB_OUTPUT"
 
       - name: Token

@@ -115,8 +115,9 @@ def cmd_giro():
             return 0
     elif scelta in GIRI:
         giro = scelta
+        voluta = os.environ.get("VARIANTE", "").strip()
         if giro == "notizie":
-            variante = "7:18" if now.hour < 11 else "13:18"
+            variante = voluta if voluta in GIRI["notizie"]["ore"].values() else ("7:18" if now.hour < 11 else "13:18")
         else:
             variante = next(iter(GIRI[giro]["ore"].values()), "")
     else:

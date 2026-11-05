@@ -679,7 +679,8 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
 /* ---------- movimento: brevi e morbidi, solo transform e opacity (l'altezza solo per i pannelli che si aprono) ---------- */
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
-  html { scroll-behavior: smooth; }
+  /* niente scroll-behavior: smooth su tutta la pagina: rendeva morbidi anche gli scorrimenti dei passaggi di pagina
+     (la pagina scorreva a vista mentre entrava). Gli scorrimenti morbidi voluti lo chiedono da sé */
 
   /* passaggio tra le pagine: dissolvenza breve, il titolo toccato diventa il titolo della storia */
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--t-2); animation-timing-function: var(--ease); }

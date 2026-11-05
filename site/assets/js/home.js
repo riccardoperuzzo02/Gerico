@@ -72,9 +72,17 @@ G.page("home", async function (P) {
     if (state.follows.length) items.push(["seguiti", "Seguiti"]);
     $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
   }
-  function markNav() {
-    $("sections").querySelectorAll("a").forEach((a) => { if (a.dataset.sec === state.section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
-    if (G.seg) G.seg($("sections"));
+  // quiet: l'indicatore lo sta già muovendo lo swipe; la scheda scelta però resta in vista nel binario delle sezioni
+  function markNav(k, quiet) {
+    const on = k || state.section, box = $("sections");
+    let el = null;
+    box.querySelectorAll("a").forEach((a) => { if (a.dataset.sec === on) { a.setAttribute("aria-current", "page"); el = a; } else a.removeAttribute("aria-current"); });
+    if (!quiet) { if (G.seg) G.seg(box); return; }
+    if (el && box.scrollWidth > box.clientWidth + 1) {
+      const x = el.offsetLeft, w = el.offsetWidth, behavior = G.reduced() ? "auto" : "smooth";
+      if (x - 12 < box.scrollLeft) box.scrollTo({ left: x - 12, behavior });
+      else if (x + w + 12 > box.scrollLeft + box.clientWidth) box.scrollTo({ left: x + w + 12 - box.clientWidth, behavior });
+    }
   }
 
   // ---------- notizie: occhiello sopra il titolo, come nei siti all-news ----------
@@ -308,17 +316,79 @@ G.page("home", async function (P) {
   }
 
   // ---------- eventi ----------
-  // cambiando sezione l'elenco scorre di lato, nel verso della sezione scelta (dove il browser non lo sa fare, dissolvenza)
-  P.on(window, "hashchange", () => {
-    const prev = state.section, next = sectionFromHash();
-    if (next === prev) return;
-    const order = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec);
-    const dir = order.indexOf(next) >= order.indexOf(prev) ? "dir-next" : "dir-prev";
-    state.section = next;
+  // Le sezioni cambiano l'indirizzo con pushState: niente navigazione ad ancora, che con «#» (Tutte) faceva salire la
+  // pagina in cima o rifaceva tutta la pagina. Toccando una scheda l'elenco scorre di lato; indietro e avanti del
+  // browser fanno lo stesso, tranne quando il telefono ha già animato il gesto dal bordo (allora cambia e basta)
+  const order = () => Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec);
+  // tapK: la sezione toccata mentre entra; noPush: l'indirizzo è già cambiato (indietro e avanti del browser)
+  let swiper = null, tapK = null, noPush = false;
+  // cambiare sezione. Sul telefono la sezione nuova entra di lato come con lo swipe, già pronta (preparata a pagina ferma
+  // se è quella vicina); altrove, o con il movimento ridotto, l'elenco scorre o cambia e basta.
+  // fromHist: viene da indietro/avanti; instant: il telefono ha già animato il gesto dal bordo
+  function toSection(k, fromHist, instant) {
+    if (swiper) swiper.finish();
+    if (!k || k === state.section) return;
+    const o = order(), d = o.indexOf(k) >= o.indexOf(state.section) ? 1 : -1;
+    if (!instant && swiper && !G.reduced()) {
+      tapK = k; noPush = !!fromHist;
+      if (swiper.go(d, k)) {
+        // la scheda toccata si accende subito; l'indicatore va verso la vicina con la molla, verso le altre da sé
+        markNav(k, k === step(d));
+        return;
+      }
+      tapK = null; noPush = false;
+    }
+    if (!fromHist) goSec(k);
+    state.section = k;
     markNav();
-    slideFeed(dir === "dir-next" ? 1 : -1);
-    announce(next);
+    if (instant) { renderFeed(true); const st = sectionTop(); if (st.scroll !== null) window.scrollTo({ top: st.scroll, behavior: "instant" }); }
+    else slideFeed(d);
+    announce(k);
+  }
+  P.on($("sections"), "click", (e) => {
+    const a = e.target.closest("a[data-sec]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    // la scheda in cui sei già: si torna all'inizio della sezione
+    if (a.dataset.sec === state.section && !tapK) {
+      const st = sectionTop();
+      if (st.scroll !== null) window.scrollTo({ top: st.scroll, behavior: G.reduced() ? "auto" : "smooth" });
+      return;
+    }
+    toSection(a.dataset.sec);
   });
+  // «Torna a tutte le notizie» nella sezione vuota
+  P.on($("feed"), "click", (e) => {
+    const a = e.target.closest('a[href="#"]');
+    if (!a) return;
+    e.preventDefault();
+    toSection("tutte");
+  });
+  // dove stava la pagina in ogni passo della cronologia delle sezioni: col gesto dal bordo il telefono mostra la foto
+  // della sezione com'era lasciata, e la pagina deve fermarsi proprio lì
+  const ys = {};
+  const entry = () => (history.state && history.state.k) || "0";
+  P.on(window, "scroll", () => { ys[entry()] = scrollY; }, { passive: true });
+  let edgeAt = 0;
+  P.on(document, "touchstart", (e) => { const x = e.touches[0] && e.touches[0].clientX; if (x < 24 || x > innerWidth - 24) edgeAt = Date.now(); }, { passive: true });
+  const here = location.pathname + location.search;
+  const fromHistory = (e) => {
+    // indietro verso un'altra pagina: ci pensa il passaggio di pagina, questa non deve muoversi
+    if (location.pathname + location.search !== here) return;
+    const k = sectionFromHash();
+    if (k === state.section && !tapK) return;
+    if (e && e.hasUAVisualTransition || Date.now() - edgeAt < 1500) {
+      toSection(k, true, true);
+      const y = ys[entry()];
+      if (typeof y === "number") window.scrollTo({ top: y, behavior: "instant" });
+    } else toSection(k, true);
+  };
+  P.on(window, "popstate", fromHistory);
+  P.on(window, "hashchange", fromHistory);
+  // il logo o «Notizie» toccati sulla prima pagina: si torna a Tutte (se si è già lì, in cima: lo fa common.js)
+  const onSame = () => { if (state.section === "tutte" && !tapK) return false; toSection("tutte"); return true; };
+  G.samePage = onSame;
+  P.keep({ disconnect: () => { if (G.samePage === onSame) G.samePage = null; } });
   // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
   function announce(sec) {
     const n = visible().length, st = $("sec-status");
@@ -389,13 +459,19 @@ G.page("home", async function (P) {
 
   // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
   const step = (d) => { const o = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec); return o[o.indexOf(state.section) + d]; };
-  const goSec = (k) => { location.hash = k === "tutte" ? "" : k; };
+  const goSec = (k) => {
+    const url = location.pathname + location.search + (k === "tutte" ? "" : "#" + k);
+    // lo scorrimento delle sezioni lo decide la pagina: il browser non deve rimettere la sua posizione dopo
+    try { history.scrollRestoration = "manual"; } catch (e) { /* niente */ }
+    try { history.pushState(Object.assign({}, history.state, { k: Date.now().toString(36) + Math.random().toString(36).slice(2, 6) }), "", url); }
+    catch (e) { location.hash = k === "tutte" ? "" : k; }
+  };
   // la sezione vicina sta accanto, intera, e arriva con il dito; l'indicatore delle sezioni la segue.
   // Arrivata al suo posto diventa la pagina vera, nello stesso fotogramma: niente scatti
   // la sezione accanto, già disegnata: una cornice fissa (nascosta finché non serve) con dentro la lista e, sul telefono,
   // il riquadro dei mercati dove starà davvero
-  function buildPeek(d) {
-    const k = step(d);
+  function buildPeek(d, k) {
+    k = k || step(d);
     if (!k) return null;
     const feed = $("feed"), side = $("side"), st = sectionTop(), fr = feed.getBoundingClientRect();
     const h = Math.max(0, innerHeight - st.top + 40);
@@ -455,19 +531,19 @@ G.page("home", async function (P) {
   P.keep({ disconnect: () => { [1, -1].forEach((d) => { if (prepared[d]) prepared[d].frame.remove(); }); } });
   // sul telefono i mercati e il piede stanno sotto l'elenco: fanno parte della pagina e si spostano con lui
   const stacked = () => { const s = $("side"); return !!s && s.getBoundingClientRect().top >= $("feed").getBoundingClientRect().bottom - 1; };
-  G.swipe($("main") || $("feed").parentElement, {
+  swiper = G.swipe($("main") || $("feed").parentElement, {
     follow: () => (stacked() ? [$("feed"), $("side"), document.querySelector(".foot > .wrap")] : [$("feed")]),
     canNext: () => !!step(1), canPrev: () => !!step(-1),
     // la sezione accanto è ferma rispetto allo schermo (in una cornice fissa che la ritaglia ai lati): se alla fine la
     // pagina deve risalire all'inizio della sezione, lei non si muove. Ha il fondo della pagina e copre quello che c'è sotto.
     // Di solito è già pronta (preparata a pagina ferma): al primo movimento del dito c'è solo da metterla al suo posto
-    peek: (d) => {
-      const k = step(d);
+    peek: (d, k) => {
+      k = k || step(d);
       if (!k) return null;
       let r = prepared[d];
       delete prepared[d];
       const fw = $("feed").getBoundingClientRect().width;
-      if (!r || r.key !== k || r.ver !== feedVer || Math.abs(r.w - fw) > 0.5) { if (r) r.frame.remove(); r = buildPeek(d); }
+      if (!r || r.key !== k || r.ver !== feedVer || Math.abs(r.w - fw) > 0.5) { if (r) r.frame.remove(); r = buildPeek(d, k); }
       if (!r) return null;
       const st = sectionTop(), h = Math.max(0, innerHeight - st.top + 40);
       r.frame.style.top = st.top.toFixed(1) + "px";
@@ -477,20 +553,23 @@ G.page("home", async function (P) {
       return r.p;
     },
     drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); prepareSoon(); },
-    commit: (d) => {
-      const k = step(d);
+    commit: (d, k) => {
+      k = k || step(d);
+      const push = !noPush;
+      tapK = null; noPush = false;
       if (!k) return;
       const st = sectionTop(), y = scrollY;
       state.section = k;
-      // l'indirizzo cambia per il tasto indietro; con «#» il browser salirebbe in cima: la riga dopo rimette la pagina
-      goSec(k);
+      // l'indirizzo cambia per il tasto indietro (pushState: niente scorrimenti del browser); da indietro/avanti è già cambiato
+      if (push) goSec(k);
       renderFeed(true);
       // subito, non con lo scorrimento morbido della pagina: la sezione nuova è già lì
       window.scrollTo({ top: st.scroll !== null ? st.scroll : y, behavior: "instant" });
       markNav();
       announce(k);
     },
-    progress: (p, d, anim) => G.segFollow($("sections"), p, d, anim)
+    // l'indicatore segue verso la scheda vicina; per una scheda più lontana toccata si muove da sé (markNav)
+    progress: (p, d, anim) => { if (!tapK || tapK === step(d)) G.segFollow($("sections"), p, d, anim); }
   });
   // alla prima visita, su un telefono, l'elenco accenna un movimento di lato: si capisce che si può scorrere
   if (!G.soft && !G.reduced() && "ontouchstart" in window && !G.ls.get("gerico.swipeHint", false)) {

@@ -15,21 +15,44 @@
 
   // ---------- dati ----------
   // passando da una pagina all'altra senza ricaricare, gli stessi dati servono di nuovo: per un minuto si riusano.
+  // Dopo, fino a dieci minuti, si usano subito quelli in mano e intanto si chiedono quelli nuovi per la volta dopo:
+  // il passaggio di pagina non aspetta mai la rete del telefono. Oltre, si aspettano i dati nuovi.
   // fresh = true li riscarica comunque (per esempio per vedere se è uscita un'edizione nuova)
   const memo = {};
+  const fetchData = async (name) => {
+    try {
+      const r = await fetch("data/" + name + ".json", { cache: "no-cache" });
+      if (!r.ok) return null;
+      return await r.json();
+    } catch (e) { return null; }
+  };
   G.load = (name, fresh) => {
-    const hit = memo[name];
-    if (!fresh && hit && Date.now() - hit.t < 60000) return hit.p;
-    const p = (async () => {
-      try {
-        const r = await fetch("data/" + name + ".json", { cache: "no-cache" });
-        if (!r.ok) return null;
-        return await r.json();
-      } catch (e) { return null; }
-    })();
-    memo[name] = { p, t: Date.now() };
-    p.then((d) => { if (d === null && memo[name] && memo[name].p === p) delete memo[name]; });
+    const hit = memo[name], age = hit ? Date.now() - hit.t : Infinity;
+    if (!fresh && hit && age < 60000) return hit.p;
+    if (!fresh && hit && hit.ok && age < 600000) {
+      if (!hit.next) {
+        hit.next = fetchData(name).then((d) => {
+          if (memo[name] === hit) { if (d !== null) memo[name] = { p: Promise.resolve(d), t: Date.now(), ok: true }; else hit.next = null; }
+        });
+      }
+      return hit.p;
+    }
+    const p = fetchData(name), entry = { p, t: Date.now(), ok: false };
+    memo[name] = entry;
+    p.then((d) => { if (memo[name] !== entry) return; if (d === null) delete memo[name]; else entry.ok = true; });
     return p;
+  };
+  // i dati delle pagine principali (pochi kB) si tengono pronti a pagina ferma: andando da una all'altra non si aspetta
+  // la rete. Con il risparmio dati attivo no
+  const WARM = ["edition", "markets", "quotes", "agenda", "calendario", "brevi", "audio", "terminal", "weights", "titoli", "titoli-storico"];
+  let warmT = 0;
+  G.warmData = () => {
+    if (navigator.connection && navigator.connection.saveData) return;
+    clearTimeout(warmT);
+    warmT = setTimeout(() => {
+      const run = () => WARM.forEach((n) => G.load(n));
+      if (window.requestIdleCallback) requestIdleCallback(run, { timeout: 4000 }); else run();
+    }, 1500);
   };
 
   // ---------- date e ore, sempre a Roma ----------
@@ -620,13 +643,21 @@
   const soft = !!(window.fetch && window.DOMParser && history.pushState && window.Promise);
   const MY = (() => { const s = document.querySelector('script[src*="assets/js/common.js"]'); return s ? s.getAttribute("src") : ""; })();
   const pages = new Map();
+  // la pagina (solo l'involucro: i contenuti arrivano dai dati) si tiene per dieci minuti; dopo si usa ancora quella in
+  // mano e intanto si chiede quella nuova: il tocco non aspetta la rete. Se nel frattempo il sito è cambiato, la pagina
+  // nuova ha script di un'altra versione e si carica da capo (vedi G.go)
   const fetchPage = (url) => {
     const key = url.split("#")[0].split("?")[0];
     const hit = pages.get(key);
     if (hit && Date.now() - hit.t < 600000) return hit.p;
-    const p = fetch(key, { credentials: "same-origin" }).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); });
-    pages.set(key, { p, t: Date.now() });
-    p.catch(() => pages.delete(key));
+    const get = () => fetch(key, { credentials: "same-origin" }).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); });
+    if (hit && hit.ok) {
+      if (!hit.next) hit.next = get().then((text) => { if (pages.get(key) === hit) pages.set(key, { p: Promise.resolve(text), t: Date.now(), ok: true }); }, () => { hit.next = null; });
+      return hit.p;
+    }
+    const p = get(), entry = { p, t: Date.now(), ok: false };
+    pages.set(key, entry);
+    p.then(() => { entry.ok = true; }, () => { if (pages.get(key) === entry) pages.delete(key); });
     return p;
   };
   const pageOf = (doc) => {
@@ -646,6 +677,9 @@
     document.head.appendChild(s);
   });
   document.querySelectorAll('script[src*="assets/js/"]').forEach((s) => loaded.add(s.getAttribute("src")));
+  // la stessa pagina con due nomi: «/» e «/index.html», «/terminal» e «/terminal.html»
+  const normPath = (p) => p.replace(/\.html$/, "").replace(/\/index$/, "/");
+  const samePath = (a, b) => normPath(a.pathname) === normPath(b.pathname) && a.search === b.search;
   const isPageLink = (a) => {
     if (!a || !a.href || a.target || a.hasAttribute("download") || a.dataset.full !== undefined) return null;
     let u;
@@ -697,6 +731,8 @@
     if (opt.push !== false) { try { history.replaceState(Object.assign({}, history.state, { g: 1, n: idx, y: scrollY }), ""); } catch (e) { /* niente */ } }
     const from = location.href;
     const swap = async () => {
+      // è partito un altro passaggio prima di questo: la pagina la cambia lui, questo non tocca niente
+      if (id !== navId) return;
       stopPage();
       apply(doc, pg.name);
       if (opt.push !== false) { idx += 1; history.pushState({ g: 1, n: idx, y: 0 }, "", url); }
@@ -712,9 +748,11 @@
       await Promise.race([P.done, new Promise((r) => setTimeout(r, 400))]);
       const h = new URL(url, location.href).hash;
       const target = h && document.getElementById(decodeURIComponent(h.slice(1)));
-      window.scrollTo(0, target ? target.getBoundingClientRect().top + scrollY - 70 : opt.y || 0);
+      // un salto, mai uno scorrimento morbido: la transizione fotografa la pagina già al suo posto
+      window.scrollTo({ top: target ? target.getBoundingClientRect().top + scrollY - 70 : opt.y || 0, behavior: "instant" });
     };
     const finish = () => {
+      G.warmData();
       // per chi usa un lettore di schermo: il fuoco va all'inizio della pagina nuova e il titolo si annuncia
       const main = document.getElementById("main") || document.querySelector("main");
       if (main) { if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1"); main.focus({ preventScroll: true }); }
@@ -736,9 +774,11 @@
     const t = document.startViewTransition(swap);
     window.gericoVT = t;
     t.finished.then(finish, finish).finally(() => {
+      // un passaggio partito dopo questo ha già messo i suoi segni (verso, swipe, interruttore): restano suoi
+      if (window.gericoVT !== t) return;
+      window.gericoVT = null;
       delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; delete htmlEl.dataset.mode;
       ["--sx", "--sdur", "--sease"].forEach((k) => htmlEl.style.removeProperty(k));
-      if (window.gericoVT === t) window.gericoVT = null;
     });
   };
   if (soft) {
@@ -749,10 +789,16 @@
       const u = isPageLink(a);
       if (!u) return;
       // un link alla stessa pagina con solo un'ancora (le sezioni della prima pagina) lo gestisce la pagina
-      if (u.pathname === location.pathname && u.search === location.search && u.hash) return;
+      const same = samePath(u, location);
+      if (same && u.hash) return;
       e.preventDefault();
-      // toccare la pagina in cui sei già riporta in cima, come le schede delle app
-      if (u.href === location.href) { window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" }); return; }
+      // toccare la pagina in cui sei già (anche «./» per «index.html», o «Notizie» da una sezione) non la rifà da capo:
+      // la pagina decide (la prima pagina torna a Tutte), altrimenti si torna in cima, come le schede delle app
+      if (same) {
+        if (G.samePage && G.samePage(a)) return;
+        window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" });
+        return;
+      }
       if (a.hasAttribute("data-reveal")) {
         const toTerm = /terminal/.test(u.pathname);
         if (!toTerm && G.modeBack && G.modeBack()) return;
@@ -763,6 +809,7 @@
     // a pagina ferma si preparano le pagine dove si va più spesso (una storia e il Terminal) e i loro script:
     // al primo tocco il passaggio parte subito, senza aspettare la rete. Con il risparmio dati attivo no
     const preload = () => {
+      G.warmData();
       if (navigator.connection && navigator.connection.saveData) return;
       ["storia.html", "terminal"].forEach((u) => {
         const url = new URL(u, location.href);
@@ -988,6 +1035,27 @@
     };
     P.on(area, "touchend", () => release(false), { passive: true });
     P.on(area, "touchcancel", () => release(true), { passive: true });
+    // un tocco su una scheda fa lo stesso passaggio dello swipe: la pagina accanto (k: quale, anche non vicina) entra già
+    // pronta, con la spinta di un colpo deciso del dito, e si posa con la stessa molla
+    return {
+      go(d, k) {
+        if (busy) finishBusy();
+        if (mode === "x" || !opt.peek || !opt.commit || G.reduced()) return false;
+        clear();
+        const f = follows()[0];
+        W = (f ? f.getBoundingClientRect().width : innerWidth) + SWIPE_GAP;
+        const p = opt.peek(d, k);
+        if (!p) return false;
+        p.style.willChange = "transform";
+        peeks[d] = p; side = d; x = 0;
+        follows().forEach((el) => { el.style.willChange = "transform"; });
+        place();
+        settle(-d * W, -d * 2.2, () => opt.commit(d, k), d);
+        return true;
+      },
+      // un passaggio ancora in corso arriva subito
+      finish() { if (busy) finishBusy(); }
+    };
   };
   // l'indicatore di un gruppo di schede segue lo swipe: p da 0 a 1 verso la scheda vicina (d = 1 dopo, -1 prima);
   // con anim si posa insieme alla pagina, con la stessa molla. Solo transform: niente ricalcolo della pagina a ogni passo

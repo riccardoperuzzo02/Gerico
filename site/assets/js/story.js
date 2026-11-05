@@ -184,8 +184,12 @@ G.page("story", async function (P) {
     next: (reset, off, anim) => { reset(false); G.go(G.storyUrl(nx), { dir: "forward", swipe: true, sx: off, anim }); },
     prev: (reset, off, anim) => { reset(false); G.go(G.storyUrl(pv), { dir: "back", swipe: true, sx: off, anim }); }
   });
+  // prima del passaggio di pagina di common.js (fase di cattura): un solo passaggio, quello indietro. Prima partivano
+  // tutti e due, la pagina si rifaceva due volte e la cronologia si sporcava
   P.on(document, "click", (e) => {
-    if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }
+    if (fromHome && e.target.closest("#back") && !e.button && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) { e.preventDefault(); history.back(); }
+  }, { capture: true });
+  P.on(document, "click", (e) => {
     if (e.target.closest("#share")) { share(); return; }
     const na = e.target.closest(".next a[data-id]");
     if (na) {

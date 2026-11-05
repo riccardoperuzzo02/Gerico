@@ -105,7 +105,7 @@ G.page("terminal", async function (P) {
     if (firstDraw) {
       firstDraw = false;
       // la mappa cresce dal centro: ogni quadrato parte rimpicciolito verso il centro, prima quelli vicini (al massimo 240 ms di scarto)
-      if (!G.reduced() && rects.length) {
+      if (!G.reduced() && !G.soft && rects.length) {
         const map = $("map"), cx = map.clientWidth / 2, cy = map.clientHeight / 2, far = Math.hypot(cx, cy) || 1;
         G.afterIntro(() => {
           map.querySelectorAll(".tile").forEach((el) => {
@@ -161,7 +161,7 @@ G.page("terminal", async function (P) {
   // le percentuali delle tabelle contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza).
   // Nella mappa no: i quadrati stanno già crescendo, e cambiare testo a ogni fotogramma li ridisegnerebbe tutti.
   function countUp(root) {
-    if (G.reduced()) return;
+    if (G.reduced() || G.soft) return;
     const els = Array.from(root.querySelectorAll("[data-n]")).filter((el) => isFinite(Number(el.dataset.n)) && !el.closest("#map"));
     if (!els.length) return;
     const final = els.map((el) => el.textContent);
@@ -588,7 +588,10 @@ G.page("terminal", async function (P) {
   P.every(renderAgenda, 30000);
   renderNews();
   // i dati del job arrivano dopo: stanno più in basso e non devono ritardare la mappa
-  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico")]).then(([qt, mc, se, sc, ti, th]) => {
+  // arrivando da un'altra pagina, i pannelli sotto (grafici, macro, notizie della SEC) si disegnano a passaggio finito:
+  // mentre le pagine si spingono il telefono non ha altro da fare
+  const settled = window.gericoVT && window.gericoVT.finished ? window.gericoVT.finished.catch(() => {}) : Promise.resolve();
+  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico"), settled]).then(([qt, mc, se, sc, ti, th]) => {
     if (G.titoliFresh(ti)) {
       $("ti").innerHTML = G.titoliHTML(ti, th);
       $("p-titoli").hidden = false;

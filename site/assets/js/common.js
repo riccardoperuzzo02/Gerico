@@ -753,7 +753,11 @@
       e.preventDefault();
       // toccare la pagina in cui sei già riporta in cima, come le schede delle app
       if (u.href === location.href) { window.scrollTo({ top: 0, behavior: G.reduced() ? "auto" : "smooth" }); return; }
-      if (a.hasAttribute("data-reveal")) G.go(u.href, { dir: /terminal/.test(u.pathname) ? "forward" : "back", mode: true });
+      if (a.hasAttribute("data-reveal")) {
+        const toTerm = /terminal/.test(u.pathname);
+        if (!toTerm && G.modeBack && G.modeBack()) return;
+        G.go(u.href, { dir: toTerm ? "forward" : "back", mode: true });
+      }
       else G.go(u.href, { dir: a.dataset.dir || "forward" });
     });
     // a pagina ferma si preparano le pagine dove si va più spesso (una storia e il Terminal) e i loro script:
@@ -774,8 +778,18 @@
     // il dito si appoggia su un link: la pagina si scarica già, al tocco è pronta
     const warm = (e) => { const u = isPageLink(e.target.closest && e.target.closest("a[href]")); if (u && u.href.split("#")[0] !== location.href.split("#")[0]) fetchPage(u.href).catch(() => {}); };
     document.addEventListener("touchstart", warm, { passive: true });
-    let edgeAt = 0;
+    let edgeAt = 0, modeBack = false;
     document.addEventListener("touchstart", (e) => { const x = e.touches[0] && e.touches[0].clientX; if (x < 24 || x > innerWidth - 24) edgeAt = Date.now(); }, { passive: true });
+    // dal Terminal alle Notizie, se si arrivava dalle Notizie, si torna indietro: stessa sezione e stesso punto della pagina,
+    // con il passaggio dell'interruttore (le due pagine che si spingono intere)
+    G.modeBack = () => {
+      let prev = null;
+      try { prev = G.prevUrl ? new URL(G.prevUrl) : null; } catch (e) { prev = null; }
+      if (!(idx > 0 && prev && prev.origin === location.origin && /^\/(index(\.html)?)?$/.test(prev.pathname))) return false;
+      modeBack = true;
+      history.back();
+      return true;
+    };
     document.addEventListener("mouseover", warm, { passive: true });
     window.addEventListener("popstate", (e) => {
       // è cambiata solo l'ancora (le sezioni della prima pagina): ci pensa la pagina
@@ -785,7 +799,9 @@
       const back = n < idx;
       idx = n;
       // se il browser ha già animato il ritorno (il gesto dal bordo su iOS), niente seconda animazione
-      G.go(location.href, { push: false, y: st.y || 0, dir: back ? "back" : "forward", instant: !!e.hasUAVisualTransition || Date.now() - edgeAt < 1500 });
+      const mode = modeBack;
+      modeBack = false;
+      G.go(location.href, { push: false, y: st.y || 0, dir: back ? "back" : "forward", mode, instant: !mode && (!!e.hasUAVisualTransition || Date.now() - edgeAt < 1500) });
     });
   }
 
@@ -915,8 +931,7 @@
         W = (f ? f.getBoundingClientRect().width : innerWidth) + SWIPE_GAP;
         follows().forEach((el) => { el.style.willChange = "transform"; });
       }
-      // gesto di lato: la pagina non scorre su e giù intanto
-      if (e.cancelable) e.preventDefault();
+      // gesto di lato: la pagina non scorre su e giù intanto (touch-action: pan-y nel CSS), senza bloccare niente qui
       const now = performance.now();
       track.push([now, t.clientX]);
       while (track.length > 2 && now - track[0][0] > 100) track.shift();
@@ -934,7 +949,7 @@
       x = can(d) ? (Math.abs(dx) <= W ? dx : Math.sign(dx) * (W + rubber(Math.abs(dx) - W, W))) : rubber(dx, W);
       if (still) return;
       schedule();
-    }, { passive: false });
+    }, { passive: true });
     // un tocco finito dopo uno swipe non apre la notizia su cui si è alzato il dito
     let swiped = 0;
     P.on(area, "click", (e) => { if (performance.now() - swiped < 400) { e.preventDefault(); e.stopPropagation(); } }, { capture: true });

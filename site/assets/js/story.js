@@ -128,10 +128,10 @@ G.page("story", async function (P) {
   if (h1 && h1.textContent === title && $("st-body")) {
     $("st-meta").innerHTML = metaHTML;
     $("st-body").innerHTML = body;
-    $("st-body").classList.add("reveal");
+    if (!G.soft) $("st-body").classList.add("reveal");
     if ($("share")) $("share").hidden = false;
   } else {
-    $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body" class="reveal">' + body + "</div>";
+    $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body"' + (G.soft ? "" : ' class="reveal"') + ">" + body + "</div>";
   }
   // il resto della storia (sotto lo schermo) arriva a passaggio animato finito: mentre il titolo vola, la pagina non ha altro da fare
   const fill = () => {

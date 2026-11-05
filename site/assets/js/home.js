@@ -131,12 +131,17 @@ G.page("home", async function (P) {
     return '<section class="blk tit" aria-labelledby="tit-h"><h2 class="blk-h" id="tit-h">Titoli da seguire</h2>' +
       '<p class="blk-sub">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p>' + G.titoliHTML(tit, tsh) + "</section>";
   }
+  // versione dell'elenco e sezioni accanto preparate per lo swipe (vedi prepareSoon)
+  let feedVer = 0, prepTimer = 0;
+  const prepared = {};
   function renderFeed(viaTransition) {
     const feed = $("feed");
     feed.classList.remove("swap");
     if (!first && !viaTransition) { void feed.offsetWidth; feed.classList.add("swap"); }
     feed.innerHTML = feedMarkup();
     first = false;
+    feedVer += 1;
+    prepareSoon();
   }
   // il contenuto di un'altra sezione, uguale a quello che disegnerebbe renderFeed: la pagina accanto durante lo swipe
   function feedMarkupFor(sec) {
@@ -379,7 +384,7 @@ G.page("home", async function (P) {
 
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
-  buildNav(); markNav(); renderFeed(); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
+  buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
   P.every(renderNext, 30000);
 
   // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
@@ -387,46 +392,91 @@ G.page("home", async function (P) {
   const goSec = (k) => { location.hash = k === "tutte" ? "" : k; };
   // la sezione vicina sta accanto, intera, e arriva con il dito; l'indicatore delle sezioni la segue.
   // Arrivata al suo posto diventa la pagina vera, nello stesso fotogramma: niente scatti
+  // la sezione accanto, già disegnata: una cornice fissa (nascosta finché non serve) con dentro la lista e, sul telefono,
+  // il riquadro dei mercati dove starà davvero
+  function buildPeek(d) {
+    const k = step(d);
+    if (!k) return null;
+    const feed = $("feed"), side = $("side"), st = sectionTop(), fr = feed.getBoundingClientRect();
+    const h = Math.max(0, innerHeight - st.top + 40);
+    const frame = document.createElement("div");
+    frame.className = "peek-frame";
+    frame.style.visibility = "hidden";
+    frame.style.top = st.top.toFixed(1) + "px";
+    frame.style.height = h + "px";
+    const p = document.createElement("div");
+    p.className = "feed-ghost feed-peek";
+    p.setAttribute("aria-hidden", "true");
+    p.style.top = "0px";
+    p.style.left = fr.left.toFixed(1) + "px";
+    p.style.width = fr.width + "px";
+    p.style.height = h + "px";
+    p.style.transform = "translate3d(" + (d * (fr.width + 28)) + "px,0,0)";
+    // come #feed (flow-root): stessi margini dentro, stesse altezze
+    const list = document.createElement("div");
+    list.style.display = "flow-root";
+    list.innerHTML = feedMarkupFor(k);
+    p.appendChild(list);
+    frame.appendChild(p);
+    document.body.appendChild(frame);
+    if (stacked()) {
+      const sr = side.getBoundingClientRect(), c = side.cloneNode(true);
+      c.style.cssText = "position:absolute;margin:0;left:" + (sr.left - fr.left).toFixed(1) + "px;width:" + sr.width.toFixed(1) + "px;top:" + (list.offsetHeight + sr.top - fr.bottom).toFixed(1) + "px";
+      p.appendChild(c);
+    }
+    p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    return { frame, p, key: k, ver: feedVer, w: fr.width };
+  }
+  // a pagina ferma si preparano le due sezioni accanto: così il primo movimento del dito non costruisce niente
+  // mai mentre il dito è sullo schermo, e una sezione per volta: ogni pezzo di lavoro sta in un momento libero
+  let touching = false;
+  P.on(document, "touchstart", () => { touching = true; }, { passive: true, capture: true });
+  P.on(document, "touchend", () => { touching = false; }, { passive: true, capture: true });
+  P.on(document, "touchcancel", () => { touching = false; }, { passive: true, capture: true });
+  function prepareSoon() {
+    if (!("ontouchstart" in window) || G.reduced()) return;
+    clearTimeout(prepTimer);
+    const one = (d) => {
+      const r = prepared[d], k = step(d);
+      if (r && r.key === k && r.ver === feedVer) return false;
+      if (r) { r.frame.remove(); delete prepared[d]; }
+      if (k) prepared[d] = buildPeek(d);
+      return !!k;
+    };
+    const idle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 60));
+    const go = (sides) => {
+      if (!sides.length) return;
+      if (touching || window.gericoVT) { prepTimer = P.later(() => go(sides), 400); return; }
+      one(sides[0]);
+      if (sides.length > 1) idle(() => go(sides.slice(1)));
+    };
+    prepTimer = P.later(() => idle(() => go([1, -1])), window.gericoVT ? 700 : 300);
+  }
+  P.keep({ disconnect: () => { [1, -1].forEach((d) => { if (prepared[d]) prepared[d].frame.remove(); }); } });
   // sul telefono i mercati e il piede stanno sotto l'elenco: fanno parte della pagina e si spostano con lui
   const stacked = () => { const s = $("side"); return !!s && s.getBoundingClientRect().top >= $("feed").getBoundingClientRect().bottom - 1; };
   G.swipe($("main") || $("feed").parentElement, {
     follow: () => (stacked() ? [$("feed"), $("side"), document.querySelector(".foot > .wrap")] : [$("feed")]),
     canNext: () => !!step(1), canPrev: () => !!step(-1),
     // la sezione accanto è ferma rispetto allo schermo (in una cornice fissa che la ritaglia ai lati): se alla fine la
-    // pagina deve risalire all'inizio della sezione, lei non si muove. Ha il fondo della pagina e copre quello che c'è sotto
+    // pagina deve risalire all'inizio della sezione, lei non si muove. Ha il fondo della pagina e copre quello che c'è sotto.
+    // Di solito è già pronta (preparata a pagina ferma): al primo movimento del dito c'è solo da metterla al suo posto
     peek: (d) => {
       const k = step(d);
       if (!k) return null;
-      const feed = $("feed"), side = $("side"), st = sectionTop(), fr = feed.getBoundingClientRect();
-      const h = Math.max(0, innerHeight - st.top + 40);
-      const frame = document.createElement("div");
-      frame.className = "peek-frame";
-      frame.style.top = st.top.toFixed(1) + "px";
-      frame.style.height = h + "px";
-      const p = document.createElement("div");
-      p.className = "feed-ghost feed-peek";
-      p.setAttribute("aria-hidden", "true");
-      p.style.top = "0px";
-      p.style.left = fr.left.toFixed(1) + "px";
-      p.style.width = fr.width + "px";
-      p.style.height = h + "px";
-      // come #feed (flow-root): stessi margini dentro, stesse altezze
-      const list = document.createElement("div");
-      list.style.display = "flow-root";
-      list.innerHTML = feedMarkupFor(k);
-      p.appendChild(list);
-      frame.appendChild(p);
-      document.body.appendChild(frame);
-      // sotto l'elenco nuovo anche il riquadro dei mercati, dove starà davvero: la pagina accanto è intera
-      if (stacked()) {
-        const sr = side.getBoundingClientRect(), c = side.cloneNode(true);
-        c.style.cssText = "position:absolute;margin:0;left:" + (sr.left - fr.left).toFixed(1) + "px;width:" + sr.width.toFixed(1) + "px;top:" + (list.offsetHeight + sr.top - fr.bottom).toFixed(1) + "px";
-        p.appendChild(c);
-      }
-      p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
-      return p;
+      let r = prepared[d];
+      delete prepared[d];
+      const fw = $("feed").getBoundingClientRect().width;
+      if (!r || r.key !== k || r.ver !== feedVer || Math.abs(r.w - fw) > 0.5) { if (r) r.frame.remove(); r = buildPeek(d); }
+      if (!r) return null;
+      const st = sectionTop(), h = Math.max(0, innerHeight - st.top + 40);
+      r.frame.style.top = st.top.toFixed(1) + "px";
+      r.frame.style.height = h + "px";
+      r.p.style.height = h + "px";
+      r.frame.style.visibility = "";
+      return r.p;
     },
-    drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); },
+    drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); prepareSoon(); },
     commit: (d) => {
       const k = step(d);
       if (!k) return;

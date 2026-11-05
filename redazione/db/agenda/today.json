@@ -1,0 +1,36 @@
+{
+  "asOf": "2026-11-05T07:25:56+01:00",
+  "date": "2026-11-05",
+  "items": [
+    {
+      "actual": "",
+      "country": "Regno Unito",
+      "currency": "GBP",
+      "event": "Bank of England, decisione sui tassi",
+      "expected": "4%",
+      "impact": "alto",
+      "previous": "3,75%",
+      "time": "13:00"
+    },
+    {
+      "actual": "",
+      "country": "Stati Uniti",
+      "currency": "USD",
+      "event": "Richieste settimanali di sussidi di disoccupazione (orario abituale)",
+      "expected": "",
+      "impact": "medio",
+      "previous": "",
+      "time": "14:30"
+    }
+  ],
+  "sources": [
+    {
+      "name": "forexfundamentals.com, calendario BoE",
+      "url": "https://forexfundamentals.com/economic-calendar/boe/2026-11-05"
+    },
+    {
+      "name": "Teleborsa, agenda del giorno",
+      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-5-novembre-2026-1_2026-11-05_TLB-BIT.html"
+    }
+  ]
+}

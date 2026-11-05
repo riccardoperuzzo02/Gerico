@@ -1,0 +1,208 @@
+{
+  "change": "28-29 ottobre: Milano +0,40% con Stellantis +15,38%, spread a 115; la Fed lascia i tassi al 3,75-4%.",
+  "divergences": [
+    {
+      "point": "Dow Jones dopo la Fed",
+      "positions": [
+        {
+          "says": "Il tabellone della pagina del 28 ottobre mostra il Dow Jones a +0,19%, senza ora.",
+          "who": [
+            "Teleborsa"
+          ]
+        },
+        {
+          "says": "Il tabellone della pagina mostra il Dow Jones a +0,32%, senza ora.",
+          "who": [
+            "Milano Finanza"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 2,
+      "text": "Milano chiude a +0,40% a 49.824 punti; Stellantis +15,38%, Lottomatica +3,36%, Technoprobe +1,70%, Eni +1,64%; Tim -1,51%, Inwit -1,24%.",
+      "who": [
+        "Teleborsa",
+        "SoldiOnline"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Francoforte chiude a +0,44%, Parigi invariata e Londra a +0,07%; Madrid in calo.",
+      "who": [
+        "Teleborsa",
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Lo spread Btp-Bund è a 115 punti e il Btp decennale rende il 4,54%.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "La Fed lascia i tassi al 3,75-4% con dieci voti su dodici; Hammack e Cook volevano un rialzo.",
+      "who": [
+        "Teleborsa",
+        "Milano Finanza"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "La Fed scrive che l'inflazione resta elevata; il Pce di agosto era al 3,4%.",
+      "who": [
+        "Milano Finanza"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Warsh annuncia che dal 2027 le riunioni saranno otto l'anno, una delle quali dedicata alla strategia di lungo periodo.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "La prossima riunione è l'8-9 dicembre e i mercati scommettono su un nuovo rialzo.",
+      "who": [
+        "Money.it",
+        "Milano Finanza"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Il Wti sale a circa 101,58 dollari, il Brent a circa 115,81 e il gas europeo supera i 99 euro.",
+      "who": [
+        "ANSA",
+        "Teleborsa"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-07T17:08:47+02:00",
+  "history": [
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "28-29 ottobre: Milano +0,40% con Stellantis +15,38%, spread a 115; la Fed lascia i tassi al 3,75-4%."
+    },
+    {
+      "at": "2026-10-28T14:56:46+01:00",
+      "text": "27-28 ottobre: Milano +0,90%, spread a 113,8, Wall Street e Asia in rialzo; oggi la Fed decide sui tassi."
+    },
+    {
+      "at": "2026-10-27T07:24:50+01:00",
+      "text": "26-27 ottobre: Europa e Wall Street in rialzo, Milano +1,29%, spread a 112; Borsa brasiliana -17%."
+    },
+    {
+      "at": "2026-10-23T07:23:06+02:00",
+      "text": "22-23 ottobre: Milano chiude a -2,54%, spread a 124 punti, Oat sopra il 5%; Wall Street in calo (Nasdaq 100 vicino a -3%); Tokyo -1,72% stamattina."
+    },
+    {
+      "at": "2026-10-22T07:22:16+02:00",
+      "text": "21-22 ottobre: l'Europa chiude in rialzo (Ftse Mib +1,17%), lo spread Btp-Bund è a 115,7 punti per ANSA e l'Oat francese a 10 anni tocca il 5%, massimo dal 2002; Tokyo -1,09% stamattina."
+    },
+    {
+      "at": "2026-10-20T07:24:00+02:00",
+      "text": "19 ottobre: Milano la peggiore Borsa in Europa, Banco Bpm -3,7%; spread a 111,3 punti, Btp al 4,56%; gas sopra 88 euro."
+    },
+    {
+      "at": "2026-10-19T07:21:57+02:00",
+      "text": "16-19 ottobre: Milano +0,93% a 49.857 punti; Nasdaq -2% nella settimana peggiore da giugno; spread Btp-Bund a 106; Tokyo -1,21% lunedì."
+    },
+    {
+      "at": "2026-10-16T07:23:35+02:00",
+      "text": "15-16 ottobre: Milano -0,7%, Europa in ordine sparso; decennale Usa al 5,07% in giornata; Tokyo rimbalza dell'1,75% dopo il -4%."
+    },
+    {
+      "at": "2026-10-15T07:24:29+02:00",
+      "text": "14-15 ottobre: l'inflazione Usa sale al 3,7%, Wall Street in calo, Tokyo cede oltre il 4%; Milano -0,61% con le banche."
+    },
+    {
+      "at": "2026-10-14T07:24:16+02:00",
+      "text": "13 ottobre: Piazza Affari chiude quasi ferma (Ftse Mib +0,04% a 50.057) e lo spread Btp-Bund scende a 106,6 punti, da 109,9 (ANSA); le Borse europee chiudono piatte."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Che cosa deciderà la Bce oggi?",
+    "Il Pil Usa del terzo trimestre cambierà le attese sul rialzo di dicembre?"
+  ],
+  "rank": 6,
+  "section": "mercati",
+  "sources": [
+    {
+      "angle": "Chiusura poco mossa delle Borse europee; Milano +0,40%, spread a 115.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "stance": "allineata",
+      "url": "https://www.teleborsa.it/News/2026/10/28/chiusura-poco-mossa-per-le-borse-europee-in-attesa-di-fed-e-big-tech-male-l-ibex-spagnolo-235.html"
+    },
+    {
+      "angle": "Francoforte +0,44%, Parigi invariata, Londra +0,07%.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/28/borsa-leuropa-termina-poco-mossa_c962c8b6-6f0e-4156-82f7-eb39443eb4c5.html"
+    },
+    {
+      "angle": "Stellantis +15,38% trascina Milano.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "SoldiOnline",
+      "stance": "allineata",
+      "url": "https://www.soldionline.it/notizie/azioni-italia/stellantis-vola-del-1538-e-trascina-milano-cosa-sta-muovendo-il-ftse-mib"
+    },
+    {
+      "angle": "La Fed lascia i tassi; due membri volevano un rialzo.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Milano Finanza",
+      "stance": "allineata",
+      "url": "https://www.milanofinanza.it/news/la-fed-lascia-i-tassi-invariati-al-3-75-4-ma-due-membri-del-fomc-volevano-un-rialzo-202610281914371033"
+    },
+    {
+      "angle": "Tassi invariati con inflazione quasi doppia rispetto al target; prossima riunione 8-9 dicembre.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Money.it",
+      "stance": "allineata",
+      "url": "https://www.money.it/tassi-fed-invariati-al-375-4-nonostante-inflazione-quasi-doppia-rispetto-al-target-i-mercati-aspettano-warsh"
+    },
+    {
+      "angle": "Warsh: dal 2027 otto riunioni l'anno.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "stance": "parziale",
+      "url": "https://www.teleborsa.it/News/2026/10/28/fed-warsh-modifica-del-calendario-delle-riunioni-per-riflettere-sulle-grandi-questioni-281.html"
+    }
+  ],
+  "status": "archived",
+  "summary": "Il 28 ottobre Milano chiude a +0,40% a 49.824 punti, con Stellantis a +15,38% dopo i conti; lo spread Btp-Bund è a 115 punti. La Fed lascia i tassi al 3,75-4% con dieci voti su dodici: due membri volevano un rialzo.",
+  "tags": [
+    "Titoli di Stato",
+    "Borsa",
+    "Petrolio",
+    "BCE"
+  ],
+  "title": "Borse: Milano chiude a +0,40% con Stellantis a +15%, la Fed lascia i tassi",
+  "updated": "2026-10-29T07:27:28+01:00",
+  "view": "È accertato che il 28 ottobre le Borse europee hanno chiuso poco mosse, con Milano a +0,40% trainata da Stellantis (+15,38% dopo i conti), e che la Fed ha lasciato i tassi al 3,75-4%, con due voti per un rialzo. Per Wall Street non ho ancora un articolo di chiusura: i tabelloni delle pagine danno il Dow Jones a +0,19% o +0,32%, senza ora.\n\nConta perché la Fed ha alzato i tassi a settembre, l'inflazione resta alta e Milano Finanza e Money.it riportano che i mercati scommettono su un altro rialzo a dicembre. Da guardare: l'esito della riunione della Bce di oggi, il Pil Usa del terzo trimestre e il petrolio, legato al negoziato sull'Iran."
+}

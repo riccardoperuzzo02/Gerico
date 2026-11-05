@@ -13,21 +13,34 @@ site/                 la cartella pubblicata da Cloudflare
   come-funziona.html, privacy.html, 404.html
   assets/             css, js, font (Atkinson Hyperlegible, licenza OFL) e immagini
   data/               i dati dell'edizione, scritti dalla pipeline
-scripts/export.py     dal database dell'app di redazione ai file di site/data
+redazione/            i testi dei giri (notizie, chiusure europee, titoli da seguire) e il database in redazione/db
+scripts/redazione.py  quale giro fare, controllo del database, pubblicazione (workflow «Redazione»)
+scripts/export.py     dal database della redazione ai file di site/data
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
-pipeline/             i testi delle attività programmate (notizie, chiusure europee, titoli da seguire)
+pipeline/             i testi delle attività programmate su claude.ai, finché non passano su GitHub
 ```
 
 ## Da dove arrivano i dati
 
-La redazione vive nell'app privata su claude.ai e scrive nel suo database: ogni giorno alle 7:18 l'edizione completa e alle
-13:18 l'aggiornamento di metà giornata, nei giorni feriali alle 18:15 le chiusure delle Borse europee. Alla fine del giro la
-stessa attività legge il database con `out_dir`, esegue `python3 scripts/export.py <cartella> site/data` e gli altri script
-della pubblicazione e, se qualcosa è cambiato, fa un commit con push: il sito si aggiorna verso le 7:30, le 13:30 e le 18:20.
-Prima di pubblicare riparte sempre dall'ultima versione di main (`git fetch` e `git checkout -f -B main origin/main`): i push
-rifiutati dei primi giorni venivano da un clone vecchio. Fino al 4 novembre 2026 la pubblicazione era un'attività a parte;
-è stata unita ai giri per avere meno chat su Claude. Se una volta non c'è niente di nuovo, l'export non cambia nessun file e
-non parte nessun commit. Cloudflare ripubblica il sito da solo.
+La redazione gira su GitHub Actions, nel workflow «Redazione» (`.github/workflows/redazione.yml`): ogni giorno alle 7:18
+l'edizione completa e alle 13:18 l'aggiornamento di metà giornata, nei giorni feriali alle 18:15 le chiusure delle Borse
+europee. Ogni giro avvia Claude Code con il suo testo in `redazione/` (`notizie.md`, `chiusure.md`, `titoli.md`): legge le
+testate e scrive il database, che è la cartella `redazione/db`, un file JSON per documento (`stories/<id>.json`,
+`markets/snapshot.json`, `agenda/today.json`, `meta/status.json`, ...). Poi `python3 scripts/redazione.py pubblica <giro>`
+cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (`check_dump.py`, `export.py`, `brevi.py`,
+`riepilogo.py`, `titoli.py`, `share_pages.py`, `check_site.py`), scrive l'esito in `meta/status.json` (`lastPublish` o
+`publishError`) e fa commit e push su main. Se è cambiato il riepilogo, avvia «Dati del Terminal», che lo legge con la voce
+sintetica. Cloudflare ripubblica il sito da solo: verso le 7:30, le 13:30 e le 18:20.
+
+Claude Code usa l'abbonamento Claude di Riccardo con il segreto `CLAUDE_CODE_OAUTH_TOKEN` (Settings › Secrets and variables ›
+Actions), creato con `claude setup-token` e valido un anno: nessuna chat su claude.ai. Può scrivere solo in `redazione/db` e
+usare solo `date` e gli script di `scripts/`; il token di GitHub lo vede solo il passo della pubblicazione. La trascrizione di
+ogni giro resta 7 giorni tra gli artifact del run. Il giro «prova» (Actions › Redazione › Run workflow) controlla il token e
+la pubblicazione senza cambiare niente. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
+`scripts/redazione.py giro` fa partire solo quello giusto. Due giri non partono mai insieme (`concurrency`).
+
+Fino a novembre 2026 i giri erano attività programmate su claude.ai, che scrivevano nel database dell'app privata e aprivano
+una chat a ogni giro. Gli orari del workflow si accendono quando quelle attività sono spente.
 
 - `edition.json`: storie live in ordine di importanza, più le archiviate degli ultimi 7 giorni
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno

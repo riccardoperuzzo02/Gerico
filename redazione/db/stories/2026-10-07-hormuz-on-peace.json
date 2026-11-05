@@ -1,0 +1,469 @@
+{
+  "change": "5 novembre: dopo il voto Usa il petrolio cala di oltre l'8%; Trump ammette il peso della guerra, Khamenei e un deputato iraniano alzano i toni.",
+  "divergences": [
+    {
+      "point": "Cosa cambia dopo il voto Usa",
+      "positions": [
+        {
+          "says": "Analisti e fonti del Golfo sono divisi: per alcuni l'accordo è più urgente per Trump, per altri potrebbe voler «finire il lavoro» con un attacco.",
+          "who": [
+            "Reuters"
+          ]
+        },
+        {
+          "says": "Riporta Khamenei: la sconfitta di Trump non fa cessare l'ostilità Usa.",
+          "who": [
+            "Al Jazeera"
+          ]
+        },
+        {
+          "says": "Riporta un deputato iraniano che minaccia le basi Usa in Europa se usate contro l'Iran.",
+          "who": [
+            "Euronews"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Esito della risposta alle proposte",
+      "positions": [
+        {
+          "says": "Rezaei dice che la risposta Usa alle condizioni iraniane è «non convincente».",
+          "who": [
+            "Al Jazeera"
+          ]
+        },
+        {
+          "says": "Trump dice al Financial Times che gli Usa stanno ottenendo ciò che vogliono.",
+          "who": [
+            "ANSA"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Rischio di nuove azioni militari",
+      "positions": [
+        {
+          "says": "Trump dice al Financial Times che non c'è un piano immediato per attaccare l'Iran.",
+          "who": [
+            "ANSA"
+          ]
+        },
+        {
+          "says": "Teheran avverte di un «nuovo campo di battaglia» dopo il presunto attacco Usa a Qeshm; Doha giudica i colloqui dalle risposte ufficiali, non dalle minacce.",
+          "who": [
+            "Euronews"
+          ]
+        },
+        {
+          "says": "Un funzionario iraniano dice che le parti sono ancora molto distanti.",
+          "who": [
+            "Reuters"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Probabilità di un accordo",
+      "positions": [
+        {
+          "says": "Trump dice a Fox che ci sono «ottime probabilità» di accordo.",
+          "who": [
+            "ANSA"
+          ]
+        },
+        {
+          "says": "Fonti iraniane ritengono ancora più probabile un nuovo attacco Usa di un'intesa.",
+          "who": [
+            "Reuters"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Natura dell'attacco a Qeshm",
+      "positions": [
+        {
+          "says": "Funzionari Usa parlano di «operazioni difensive» per impedire attacchi alle navi; poche ore prima Trump aveva detto di non sapere se si potesse ancora parlare di guerra.",
+          "who": [
+            "Il Post"
+          ]
+        },
+        {
+          "says": "Titola sul Wall Street Journal che parla di «attacco limitato» contro l'isola.",
+          "who": [
+            "ANSA"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Il 4 novembre il Wti chiude a New York a 88,15 dollari (-8,26%) e il Brent a 94,70 (-8,59%); ANSA lega il calo al voto Usa e alle attese di fine della guerra.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump ammette che la guerra ha pesato sulla sconfitta repubblicana, ma dice che andava fatta per fermare il programma nucleare iraniano.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "La Guida suprema Mojtaba Khamenei dice che il voto Usa non cambierà l'ostilità verso l'Iran e avverte contro ogni cedimento.",
+      "who": [
+        "Al Jazeera",
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il deputato iraniano Ahmad Bakhshayesh Ardestani dice a Euronews che l'Iran colpirà le basi usate dagli Usa in Europa, citando Italia e Germania.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I Pasdaran promettono una risposta «senza limiti geografici» a ogni minaccia.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Due fonti vicine ai governi del Golfo dicono a Reuters che un Trump indebolito ha più incentivi a un accordo e un attacco su larga scala appare meno probabile.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Gli Usa impongono sanzioni a società e persone indiane e turche accusate di aiutare l'Iran.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Mohsen Rezaei, del Consiglio supremo di sicurezza iraniano, dice su X che la risposta Usa alle sette condizioni per riaprire Hormuz non è convincente.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump conferma che gli Usa hanno colpito un'installazione antiaerea iraniana a Qeshm: la definisce un attacco minore e dice che «non era guerra».",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo media statunitensi, il CENTCOM avrebbe piani di attacco pronti da mercoledì, con tre portaerei nell'area.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "L'UKMTO riferisce che due proiettili non identificati hanno colpito la sala macchine di una petroliera a circa 26 km a nord-est di Limah, in Oman, senza vittime.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Le autorità iraniane dicono di avere pronto un piano di «massima deterrenza» e di aver ampliato le liste dei bersagli a mezzi Usa e israeliani.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il portavoce del Qatar Al Ansari dice: «Se non ci fosse speranza, non ci sarebbero negoziati»; una delegazione qatariota ha incontrato funzionari iraniani per oltre tre ore lunedì.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Qatar lavora a un accordo provvisorio per costruire fiducia e definisce la libertà di navigazione «non negoziabile».",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump dice al Financial Times che non c'è un piano immediato per attaccare l'Iran e che gli Usa stanno ottenendo ciò che vogliono.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I Pasdaran dicono che tre petroliere hanno urtato mine navali nello Stretto di Hormuz e che sono stati abbattuti due droni Usa vicino a Bandar Khamir.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Dopo il presunto attacco Usa a Qeshm l'Iran avverte di un «nuovo campo di battaglia»; un funzionario Usa parla di attacchi difensivi.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Un funzionario iraniano dice che Usa e Iran restano molto lontani da un'intesa per chiudere la guerra, mentre il Qatar media.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il 2 novembre in serata IRNA e Fars riportano esplosioni a Qeshm e Bandar Lengeh; due testimoni dicono di aver visto due aerei sull'isola.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I Pasdaran dicono di aver catturato due droni Usa a sud di Qeshm e di averne abbattuto un MQ-9 a est di Hormuz; né Iran né Usa avevano commentato ufficialmente.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Post ricorda che l'ultimo grande attacco Usa annunciato in Iran risale al 1° settembre e che da settimane ci sono operazioni limitate non annunciate.",
+      "who": [
+        "Il Post"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Vance parla di «buone conversazioni» con gli iraniani; Trump, chiesto di attacchi dopo il voto, ha risposto «no».",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Il portavoce Baghaei dice che Hormuz può riaprire in due giorni se gli Usa tolgono il blocco dei porti iraniani e cessano le ostilità.",
+      "who": [
+        "Al Jazeera",
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo Ap, Netanyahu preme per una nuova ondata di attacchi all'Iran dopo le elezioni Usa.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I colloqui di Doha con i mediatori del Qatar sono finiti senza svolta; la delegazione iraniana è partita domenica e i contatti con gli Usa continuano.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il portavoce iraniano Baghaei dice che il dialogo continua ma «la questione è complessa».",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Teheran dice di aver inviato una proposta tramite il Qatar: ora «la palla è nel campo degli Usa».",
+      "who": [
+        "Al Jazeera"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-07T17:40:00+02:00",
+  "history": [
+    {
+      "at": "2026-11-05T07:24:55+01:00",
+      "text": "5 novembre: dopo il voto Usa il petrolio cala di oltre l'8%; Trump ammette il peso della guerra, Khamenei e un deputato iraniano alzano i toni."
+    },
+    {
+      "at": "2026-11-04T13:22:10+01:00",
+      "text": "4 novembre, mezzogiorno: Teheran giudica «non convincente» la risposta Usa, Trump conferma il colpo a Qeshm, una petroliera è colpita vicino a Limah."
+    },
+    {
+      "at": "2026-11-04T07:25:00+01:00",
+      "text": "4 novembre: il Qatar parla di speranza e di un accordo provvisorio, Trump esclude un piano immediato di attacco, i Pasdaran riferiscono di tre petroliere su mine."
+    },
+    {
+      "at": "2026-11-03T13:21:33+01:00",
+      "text": "3 novembre, mezzogiorno: dopo i raid su Qeshm Vance vede progressi, Teheran dice che tocca agli Usa e il petrolio risale."
+    },
+    {
+      "at": "2026-11-03T07:25:18+01:00",
+      "text": "2 novembre: colloqui di Doha chiusi senza intesa, raid limitato Usa su Qeshm, Trump parla di «ottime probabilità» di accordo, il petrolio crolla."
+    },
+    {
+      "at": "2026-11-02T07:26:43+01:00",
+      "text": "1 novembre: terzo giorno di colloqui a Doha; Teheran avverte che non porrà limiti se i combattimenti riprendono; nave Gnl del Qatar colpita da oggetti non identificati."
+    },
+    {
+      "at": "2026-11-01T07:19:46+01:00",
+      "text": "1 novembre: Trump dice che non c'è fretta, la guida suprema ordina di rispondere a ogni minaccia, il Pakistan media."
+    },
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "28 ottobre: Teheran respinge la nuova bozza del Qatar; petrolio e gas salgono sui timori di raid Usa."
+    },
+    {
+      "at": "2026-10-28T14:56:46+01:00",
+      "text": "27 ottobre: a Mosca l'emiro del Qatar incontra Pezeshkian; il Wti chiude a 99,90 dollari."
+    },
+    {
+      "at": "2026-10-27T07:24:50+01:00",
+      "text": "26-27 ottobre: colloqui di sicurezza a Teheran con Arabia Saudita, Turchia e Pakistan; Netanyahu allude a una ripresa della guerra; petrolio in calo."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Trump sceglierà un accordo o un attacco limitato?",
+    "Il Qatar otterrà un'intesa provvisoria su Hormuz?",
+    "Il calo del petrolio reggerà senza una riapertura dello Stretto?"
+  ],
+  "rank": 2,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Minacce iraniane alle basi Usa in Europa.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Francia",
+      "kind": "giornale online",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/2026/11/04/iranian-mp-tells-euronews-tehrans-missiles-will-strike-europe-if-us-uses-its-bases-there"
+    },
+    {
+      "angle": "Il petrolio chiude in forte calo dopo il voto Usa.",
+      "area": "Italia",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/04/il-petrolio-chiude-con-un-tonfo-a-new-york-826-con-la-vittoria-dem_8f3215dc-4514-4342-a38d-4b9cf832b5be.html"
+    },
+    {
+      "angle": "Trump difende la guerra dopo la sconfitta; Khamenei: ostilità invariata.",
+      "area": "Medio Oriente",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it"
+    },
+    {
+      "angle": "Analisi: Trump tra accordo e escalation dopo la sconfitta; sanzioni a società indiane e turche.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/analysis-beaten-at-home-trump-faces-stark-choice-on-iran-deal-or-escalation"
+    },
+    {
+      "angle": "L'Iran dice che il voto israeliano non cambia nulla.",
+      "area": "Medio Oriente",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Israele",
+      "kind": "giornale",
+      "name": "Times of Israel",
+      "stance": "allineata",
+      "url": "https://www.timesofisrael.com/liveblog_entry/iran-says-outcome-of-israeli-elections-makes-no-difference-to-it/"
+    },
+    {
+      "angle": "Petrolio in calo, il capo del Centcom sorvola Hormuz.",
+      "area": "Medio Oriente",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Arabia Saudita",
+      "kind": "giornale",
+      "name": "Arab News",
+      "stance": "allineata",
+      "url": "https://www.arabnews.com/energy/oil-drops-from-near-six-month-highs-on-hopes-iran-war-hostilities-to-ease-3008294"
+    },
+    {
+      "angle": "Parte dalla condanna dell'India e dalla proprietà della nave, una società di Dubai.",
+      "area": "Medio Oriente",
+      "country": "Emirati Arabi Uniti",
+      "date": "2026-10-06",
+      "kind": "quotidiano",
+      "name": "The National",
+      "stance": "allineata",
+      "url": "https://www.thenationalnews.com/news/uae/2026/10/06/india-condemns-strike-on-oil-tanker-owned-by-dubai-company-in-strait-of-hormuz/"
+    },
+    {
+      "angle": "Taglio tecnico marittimo: avvisi UKMTO, dati della nave e la sua presenza nella lista nera iraniana.",
+      "area": "Stati Uniti",
+      "country": "Stati Uniti",
+      "date": "2026-10-06",
+      "kind": "online",
+      "name": "gCaptain",
+      "stance": "allineata",
+      "url": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/"
+    },
+    {
+      "angle": "Si concentra sui marinai indiani feriti e sull'evacuazione fatta dall'Oman.",
+      "area": "Asia",
+      "country": "India",
+      "date": "2026-10-07",
+      "kind": "online",
+      "name": "Marine Insight",
+      "stance": "allineata",
+      "url": "https://www.marineinsight.com/video-oman-evacuates-injured-crew-members-from-oil-tanker-attacked-in-strait-of-hormuz/"
+    },
+    {
+      "angle": "Petrolio e gas salgono sui timori di raid Usa.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "stance": "parziale",
+      "url": "https://www.teleborsa.it/News/2026/10/28/medio-oriente-corrono-petrolio-e-gas-sui-timori-di-nuovi-raid-usa-sull-iran-271.html"
+    },
+    {
+      "angle": "Attacco Usa a Qeshm.",
+      "area": "Italia",
+      "at": "2026-11-03T07:25:18+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/03/hormuz-qeshm-iran-attacco-stati-uniti/"
+    }
+  ],
+  "status": "live",
+  "summary": "Dopo la vittoria dei Democratici il Wti chiude in calo dell'8,26% e il Brent dell'8,59%, secondo ANSA. Teheran dice che l'ostilità Usa non finirà e un deputato iraniano minaccia le basi Usa in Europa.",
+  "tags": [
+    "Iran",
+    "Petrolio",
+    "Medio Oriente",
+    "Stati Uniti"
+  ],
+  "title": "Iran-Usa: dopo il voto il petrolio crolla di oltre l'8%, Teheran non cede",
+  "updated": "2026-11-05T07:24:55+01:00",
+  "view": "È accertato che il 4 novembre il petrolio ha chiuso in forte calo (Wti -8,26%, Brent -8,59% secondo ANSA, che lo collega alla vittoria democratica e alle attese di fine della guerra) e che Trump ha ammesso il peso della guerra sul voto, difendendola. Le letture sul dopo divergono: fonti del Golfo citate da Reuters vedono un Trump più incline all'accordo, altre parlano del rischio opposto; Khamenei e un deputato iraniano, riportati da Al Jazeera ed Euronews, non mostrano aperture e minacciano le basi Usa.\n\nConta perché Hormuz resta chiuso e il prezzo del greggio dipende più dalle attese di pace che da un cambiamento sul terreno. Da guardare: la risposta degli Usa alle sette condizioni iraniane, il lavoro del Qatar e le mosse militari nello Stretto."
+}

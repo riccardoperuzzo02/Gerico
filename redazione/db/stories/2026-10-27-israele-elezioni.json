@@ -1,0 +1,255 @@
+{
+  "change": "5 novembre: la commissione elettorale non trova frodi e conferma i risultati; Herzog avvia le consultazioni.",
+  "divergences": [
+    {
+      "point": "Regolarità del voto",
+      "positions": [
+        {
+          "says": "Il Likud sostiene senza prove che i partiti arabi abbiano «rubato» il voto e preso fondi dal Qatar; il comitato elettorale dice che i risultati non cambiano.",
+          "who": [
+            "Al Jazeera"
+          ]
+        },
+        {
+          "says": "Riferisce che Netanyahu denuncia brogli e chiede a polizia e Shin Bet di indagare.",
+          "who": [
+            "Il Post"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 2,
+      "text": "La commissione elettorale non trova prove di irregolarità che abbiano compromesso il voto o inciso sui risultati.",
+      "who": [
+        "Euronews",
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "La certificazione dei risultati era prevista per mercoledì 4 novembre; il Likud aveva accusato senza prove i partiti arabi di aver «rubato» il voto.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Herzog incontrerà ogni partito eletto e terrà due giorni di consultazioni prima di indicare l'incaricato, probabilmente Netanyahu o Eisenkot.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Una indagine separata dello Shin Bet su presunte interferenze straniere è in corso.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo Reuters, i rivali di Netanyahu sfruttano la vittoria dei Democratici negli Usa per chiederne la rimozione.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il campo di Netanyahu ha 53 seggi, quello di Eisenkot 48; tre partiti a guida araba ottengono un record di 19 seggi, otto dei quali di Ra'am.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Likud dice, senza prove, che i partiti arabi hanno «rubato» il voto e preso fondi dal Qatar; il Qatar respinge le accuse.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il capo del comitato elettorale Noam Sohlberg dice che anche se i sospetti fossero confermati non cambierebbero i risultati.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Eisenkot parla di una «campagna organizzata» per delegittimare i risultati.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "La polizia ha rilasciato due dei tre attivisti arrestati prima del voto con denaro per comprare voti, secondo l'accusa legati a Ra'am.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I risultati saranno certificati questa settimana, poi Herzog indicherà chi deve formare il governo.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "L'affluenza è stata del 77,7%, la più alta dal 1999.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Herzog nomina un candidato premier, che ha 42 giorni per formare il governo; senza accordo si torna al voto.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A scrutinio oltre il 90%, il blocco di Netanyahu ha 53 seggi (26 al Likud), quello di Eisenkot 48 e i partiti arabi 19, il loro miglior risultato.",
+      "who": [
+        "Il Post"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-27T07:24:50+01:00",
+  "history": [
+    {
+      "at": "2026-11-05T07:24:55+01:00",
+      "text": "5 novembre: la commissione elettorale non trova frodi e conferma i risultati; Herzog avvia le consultazioni."
+    },
+    {
+      "at": "2026-11-03T07:25:18+01:00",
+      "text": "2 novembre: Likud accusa i partiti arabi di aver «rubato» il voto, il comitato elettorale difende il risultato che verrà certificato questa settimana."
+    },
+    {
+      "at": "2026-11-01T07:19:46+01:00",
+      "text": "1 novembre: a scrutinio oltre il 90% Netanyahu è a 53 seggi, Eisenkot a 48; Netanyahu denuncia brogli."
+    },
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "29 ottobre: a scrutinio al 76% il blocco di Netanyahu è a 54 seggi, Eisenkot a 47, i partiti arabi a 19."
+    },
+    {
+      "at": "2026-10-28T14:56:46+01:00",
+      "text": "28 ottobre: l'exit poll aggiornato dà 51 seggi a ciascun blocco; Likud primo nello scrutinio parziale; affluenza al 77,7%."
+    },
+    {
+      "at": "2026-10-28T07:22:00+01:00",
+      "text": "Exit poll in stallo; con un quarto dei seggi scrutinati il Likud è in testa (23,4%)."
+    },
+    {
+      "at": "2026-10-27T07:24:50+01:00",
+      "text": "Prima notizia: aperti i seggi per il voto in Israele; Netanyahu e Eisenkot a confronto, Iran sullo sfondo."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Chi sarà incaricato da Herzog dopo le consultazioni?",
+    "Eisenkot accetterà l'appoggio dei partiti arabi?",
+    "Netanyahu e Eisenkot potrebbero allearsi, o si tornerà al voto?"
+  ],
+  "rank": 5,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Netanyahu, Eisenkot, richiesta di attacco all'Iran secondo la Cnn, smentita del premier.",
+      "area": "Medio Oriente",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Israele",
+      "kind": "giornale",
+      "name": "Times of Israel",
+      "stance": "allineata",
+      "url": "https://www.timesofisrael.com/liveblog-october-26-2026/"
+    },
+    {
+      "angle": "Aperti i seggi, oltre 7 milioni di elettori.",
+      "area": "Italia",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/27/israele-aperti-i-seggi-per-il-rinnovo-della-knesset_4702a02c-f927-45a4-97ff-e07e4d05c058.html"
+    },
+    {
+      "angle": "I rivali di Netanyahu e la vittoria dei Democratici Usa.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/netanyahu-rivals-seize-on-democrats-sweep-of-us-congress-seeking-his-ouster"
+    },
+    {
+      "angle": "La commissione respinge le accuse di frode del Likud.",
+      "area": "Medio Oriente",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/11/4/israel-vote-results-confirmed-as-election-commission-rejects-fraud-claims"
+    },
+    {
+      "angle": "Il ministro della Difesa nega contrasti tra premier e capo dell'esercito sull'Iran.",
+      "area": "Medio Oriente",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Arabia Saudita",
+      "kind": "giornale",
+      "name": "Arab News",
+      "stance": "allineata",
+      "url": "https://www.arabnews.com/middle-east/israel-defense-minister-denies-report-of-rift-between-pm-army-chief-on-iran-3008320"
+    },
+    {
+      "angle": "Risultati a scrutinio oltre il 90%, accuse di brogli, consultazioni di Herzog.",
+      "area": "Italia",
+      "at": "2026-11-01T07:19:46+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/10/28/elezioni-israeliane-2026-primi-risultati/"
+    },
+    {
+      "angle": "Il peso dei partiti arabi sul governo (25 ottobre).",
+      "area": "Italia",
+      "at": "2026-10-25T12:00:00+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Open",
+      "stance": "parziale",
+      "url": "https://www.open.online/2026/10/25/israele-elezioni-voto-arabo-peso-governo-francesca-mannocchi/"
+    },
+    {
+      "angle": "Nessuna frode trovata; prossimi passi di Herzog.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Francia",
+      "kind": "tv",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/2026/11/04/israels-election-commission-says-no-fraud-found-in-last-weeks-vote"
+    }
+  ],
+  "status": "live",
+  "summary": "La commissione elettorale dice che non ci sono prove di irregolarità che abbiano inciso sui risultati, contro le accuse del Likud di voto «rubato». Il presidente Herzog avvia le consultazioni per incaricare chi formerà il governo.",
+  "tags": [
+    "Israele",
+    "Elezioni",
+    "Medio Oriente",
+    "Iran"
+  ],
+  "title": "Israele: la commissione elettorale non trova frodi e conferma il voto",
+  "updated": "2026-11-05T07:24:55+01:00",
+  "view": "È accertato che la commissione elettorale, secondo Euronews e Al Jazeera, non ha trovato irregolarità che abbiano inciso sul voto, mentre il Likud continua a parlare, senza prove, di voto «rubato». Nessuno dei due blocchi ha la maggioranza: Reuters indica 53 seggi per il blocco di Netanyahu su 120, otto in meno della soglia.\n\nConta perché ora tocca a Herzog scegliere chi incaricare; le opzioni citate da Euronews sono un'intesa Netanyahu-Eisenkot, un accordo di Eisenkot con i partiti arabi o nuove elezioni all'inizio dell'anno. Da guardare: l'esito delle consultazioni e l'indagine dello Shin Bet."
+}

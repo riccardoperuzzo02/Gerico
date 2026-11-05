@@ -1,0 +1,137 @@
+{
+  "change": "",
+  "divergences": [
+    {
+      "point": "Perché salgono i mercati",
+      "positions": [
+        {
+          "says": "Il rialzo è legato alle attese di fine della guerra in Iran, a meno spesa in IA e a rendimenti più bassi.",
+          "who": [
+            "ANSA"
+          ]
+        },
+        {
+          "says": "Gli investitori guardano oltre il cambio politico, puntando su consumi e intelligenza artificiale.",
+          "who": [
+            "Teleborsa"
+          ]
+        },
+        {
+          "says": "Cita l'analista Dan Ives: un Congresso democratico potrebbe creare ostacoli a leggi su IA e tecnologia.",
+          "who": [
+            "Al Jazeera"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Il 4 novembre il Dow Jones chiude a +3,03% (53.356 punti), l'S&P 500 a +1,58% e il Nasdaq a +1,44%.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Le Borse europee chiudono in rialzo: Madrid +3%, Francoforte +2,22%, Milano +2,18%, Parigi +1,96%, Londra +1,79%.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Wti chiude in calo dell'8,26% a New York e il gas scende di oltre l'8%, a circa 84 euro al megawattora.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il rendimento del Btp a 10 anni scende al 4,31% (-15 punti base) e quello del Treasury a 4,90% (-6 punti base).",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A Milano Intesa Sanpaolo sale del 5,45% e UniCredit del 5,48%; Technoprobe perde il 7%, Prysmian il 6,9% e Avio il 6,04%.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I dati sul lavoro di ottobre negli Usa battono le attese, secondo Teleborsa.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Teleborsa riporta l'euro-dollaro in rialzo e il dollaro in calo; ANSA indica l'euro a 1,1237 (+0,4%).",
+      "who": [
+        "Teleborsa",
+        "ANSA"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-05T07:24:55+01:00",
+  "history": [
+    {
+      "at": "2026-11-05T07:24:55+01:00",
+      "text": "Prima notizia: Mercati in forte rialzo dopo il voto Usa"
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Il calo del petrolio dipende da attese di pace o da un cambiamento reale su Hormuz?",
+    "I rendimenti più bassi reggeranno nei prossimi giorni?"
+  ],
+  "rank": 6,
+  "section": "mercati",
+  "sources": [
+    {
+      "angle": "Chiusure di Wall Street e delle Borse europee, petrolio, gas e rendimenti.",
+      "area": "Italia",
+      "country": "Italia",
+      "date": "2026-11-04",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/i-mercati-brindano-dopo-il-voto-usa-giu-la-difesa-e-rally-di-banche-e-tech_e4cb0902-0e68-4d16-9575-cc40d4484c1a.html"
+    },
+    {
+      "angle": "Wall Street dopo il voto e dati macro.",
+      "area": "Italia",
+      "country": "Italia",
+      "date": "2026-11-04",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "stance": "allineata",
+      "url": "https://www.teleborsa.it/News/2026/11/04/brillante-wall-street-dopo-la-vittoria-dei-dem-e-dati-macro-193.html"
+    },
+    {
+      "angle": "Apertura di Wall Street e timori sulla regolazione tecnologica.",
+      "area": "Medio Oriente",
+      "country": "Qatar",
+      "date": "2026-11-04",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "parziale",
+      "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections"
+    }
+  ],
+  "status": "live",
+  "summary": "Il 4 novembre il Dow Jones chiude a +3,03% e l'S&P 500 a +1,58%, mentre le Borse europee salgono fra l'1,8% e il 3%. ANSA lega il rialzo al voto Usa e alle attese di fine della guerra in Iran, con petrolio e gas in forte calo.",
+  "tags": [
+    "Wall Street",
+    "Petrolio",
+    "Titoli di Stato",
+    "Stati Uniti"
+  ],
+  "title": "Mercati: dopo il voto Usa Wall Street e le Borse europee in forte rialzo",
+  "updated": "2026-11-05T07:24:55+01:00",
+  "view": "È accertato che il 4 novembre i listini Usa ed europei hanno chiuso in forte rialzo e che il petrolio e il gas sono scesi. Sulle cause le fonti non coincidono: ANSA parla di attese di pace in Iran, di minore spesa in IA e di rendimenti più bassi; Teleborsa di investitori che guardano oltre il cambio politico; Al Jazeera riporta il timore di un analista su nuove regole per la tecnologia.\n\nConta perché il calo del petrolio e dei rendimenti sostiene banche e titoli tecnologici, mentre la difesa scende. Da guardare: se il petrolio regge senza una riapertura di Hormuz e come reagiscono i listini asiatici stamattina."
+}

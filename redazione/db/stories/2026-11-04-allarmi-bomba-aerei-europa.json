@@ -1,0 +1,90 @@
+{
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Almeno sette voli e una nave hanno ricevuto minacce di bomba nello stesso giorno e non sono stati trovati ordigni.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Post parla di allarmi infondati su sette aerei in vari Paesi europei, due dei quali atterrati a Roma.",
+      "who": [
+        "Il Post"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Open cita falsi allarmi su sette voli in poche ore, anche a Fiumicino e Bergamo.",
+      "who": [
+        "Open"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Nel porto di Syros, in Grecia, una falsa segnalazione ha portato a controlli su una nave da crociera diretta in Israele.",
+      "who": [
+        "Reuters"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-04T07:25:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-04T07:25:00+01:00",
+      "text": "Prima notizia: falsi allarmi bomba su sette voli e una nave in Europa."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Chi ha inviato le minacce e le minacce sono coordinate?",
+    "Ci sono collegamenti con gli attacchi informatici ai supermercati?"
+  ],
+  "rank": 9,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Minacce su voli e nave.",
+      "area": "Europa",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/03/bomb-threats-reported-on-two-passenger-planes-to-warsaw-both-land"
+    },
+    {
+      "angle": "Allarmi infondati su sette aerei, due atterrati a Roma.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/03/europe-aerei-allarme-bomba/"
+    },
+    {
+      "angle": "Falsi allarmi a Fiumicino e Bergamo.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "stance": "allineata",
+      "url": "https://www.open.online/2026/11/03/falsi-allarmi-bomba-aerei-europa-fiumicino-bergamo-cosa-successo/"
+    }
+  ],
+  "status": "live",
+  "summary": "Il 3 novembre minacce di bomba hanno coinvolto almeno sette voli in vari Paesi europei e una nave da crociera nel porto greco di Syros, ma non sono stati trovati ordigni. Due aerei sono atterrati a Roma.",
+  "tags": [
+    "Sicurezza",
+    "Europa",
+    "Trasporto aereo"
+  ],
+  "title": "Europa: falsi allarmi bomba su sette voli e una nave, nessun ordigno trovato",
+  "updated": "2026-11-04T07:25:00+01:00",
+  "view": "È accertato che il 3 novembre una serie di minacce di bomba ha coinvolto voli e una nave in Europa e che le verifiche non hanno trovato ordigni; Reuters, Il Post e Open concordano sul numero di sette voli. Non è noto chi abbia lanciato gli allarmi né se siano collegati.\n\nConta perché in giornata si sommano agli attacchi informatici ai supermercati e creano disagi nei trasporti. Da guardare: eventuali indagini sull'origine delle minacce e un collegamento con gli altri episodi, oggi non dimostrato."
+}

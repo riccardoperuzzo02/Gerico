@@ -1,0 +1,434 @@
+#!/usr/bin/env python3
+"""Aiuti per i giri della redazione su GitHub Actions (workflow «Redazione»).
+
+Uso:
+    python3 scripts/redazione.py giro             quale giro fare adesso: righe giro=, variante=, modello=, turni=
+    python3 scripts/redazione.py live             le storie live del database: rank, id, ultimo aggiornamento, titolo
+    python3 scripts/redazione.py controlla        controlla il database con le regole del punto 8 del giro delle notizie
+    python3 scripts/redazione.py pubblica <giro>  copia il database sul sito, scrive lastPublish o publishError, commit e push
+    python3 scripts/redazione.py pubblica prova   come sopra su una copia: non cambia niente e non fa commit
+    python3 scripts/redazione.py esito <file>     la risposta finale del giro dalla trascrizione (stream-json)
+
+Il database è la cartella redazione/db, con lo stesso formato del dump di prima: un file JSON per documento
+(stories/<id>.json, markets/snapshot.json, agenda/today.json, meta/status.json, terminal/..., brevi/today.json,
+riepilogo/today.json, titoli/today.json). Claude Code lo legge e lo scrive; gli script di sempre lo copiano in site/data."""
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from brevi import front_page  # noqa: E402  stessa regola delle brevi e del sito
+
+ROME = ZoneInfo("Europe/Rome")
+DB = "redazione/db"
+SITE = "site"
+ARCHIVE_DAYS = 7
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre",
+        "novembre", "dicembre"]
+
+# ora di Roma del giro -> come si chiama il giro nel testo (la prima riga del messaggio a Claude)
+GIRI = {
+    "notizie": {"ore": {7: "7:18", 13: "13:18"}, "modello": "claude-sonnet-5-5", "turni": 150},
+    "chiusure": {"ore": {18: "18:15"}, "modello": "claude-sonnet-5-5", "turni": 40},
+    "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
+    "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
+}
+# i cron sono in UTC: per ogni giro ce n'è uno per l'ora legale e uno per l'ora solare, e parte solo quello giusto
+CRON = {
+    "18 5 * * *": "notizie", "18 6 * * *": "notizie", "18 11 * * *": "notizie", "18 12 * * *": "notizie",
+    "15 16 * * 1-5": "chiusure", "15 17 * * 1-5": "chiusure",
+    "2 5 * * 1-5": "titoli", "2 6 * * 1-5": "titoli",
+}
+SECTIONS = {"mondo", "italia", "economia", "mercati", "tecnologia"}
+CLASSES = ["indici", "azioni", "obbligazioni", "valute", "materie", "cripto"]
+TZ_RE = re.compile(r"(Z|[+-]\d{2}:?\d{2})$")
+
+
+def now_rome():
+    return datetime.now(ROME).replace(microsecond=0)
+
+
+def load(path, default=None):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return default
+
+
+def save(path, data):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.replace(tmp, path)
+
+
+def parse_time(value):
+    if not isinstance(value, str) or not TZ_RE.search(value.strip()):
+        return None
+    try:
+        return datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def stories(db=DB):
+    d = os.path.join(db, "stories")
+    out = []
+    for name in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+        if name.endswith(".json"):
+            s = load(os.path.join(d, name))
+            if isinstance(s, dict):
+                out.append((name[:-5], s))
+    return out
+
+
+# ---------- giro ----------
+
+def cmd_giro():
+    """Per il workflow: stampa giro, variante, modello e turni; niente se a quest'ora non c'è un giro da fare."""
+    event = os.environ.get("GITHUB_EVENT_NAME", "")
+    sched = os.environ.get("SCHEDULE", "").strip()
+    scelta = os.environ.get("SCELTA", "").strip()
+    now = now_rome()
+    if event == "schedule":
+        giro = CRON.get(sched)
+        if not giro:
+            print(f"Cron sconosciuto: «{sched}»", file=sys.stderr)
+            return 0
+        minute, hour = (int(x) for x in sched.split()[:2])
+        day = datetime.now(timezone.utc).date()
+        local = datetime(day.year, day.month, day.day, hour, minute, tzinfo=timezone.utc).astimezone(ROME)
+        variante = GIRI[giro]["ore"].get(local.hour)
+        if not variante:
+            print(f"Il cron «{sched}» oggi cade alle {local:%H:%M} di Roma: il giro {giro} lo fa l'altro cron.",
+                  file=sys.stderr)
+            return 0
+    elif scelta in GIRI:
+        giro = scelta
+        if giro == "notizie":
+            variante = "7:18" if now.hour < 11 else "13:18"
+        else:
+            variante = next(iter(GIRI[giro]["ore"].values()), "")
+    else:
+        print(f"Giro sconosciuto: «{scelta}»", file=sys.stderr)
+        return 1
+    g = GIRI[giro]
+    print(f"giro={giro}\nvariante={variante}\nmodello={g['modello']}\nturni={g['turni']}")
+    return 0
+
+
+# ---------- live ----------
+
+def cmd_live():
+    live = [(s.get("rank") if isinstance(s.get("rank"), int) else 99, sid, s) for sid, s in stories()
+            if s.get("status") == "live"]
+    live.sort(key=lambda x: (x[0], x[1]))
+    for rank, sid, s in live:
+        print(f"{rank:>2}  {sid}  {s.get('updated', '?')}  [{s.get('section', '?')}]  {s.get('title', '')}")
+    archived = sum(1 for _sid, s in stories() if s.get("status") != "live")
+    print(f"Storie live: {len(live)}. Archiviate nel database: {archived} (quelle di più di {ARCHIVE_DAYS} giorni "
+          "le cancella la pubblicazione).")
+    return 0
+
+
+# ---------- controlla ----------
+
+def check_time(value, where, problems):
+    if value in (None, ""):
+        return
+    if parse_time(value) is None:
+        problems.append(f"{where}: «{value}» non è un orario ISO 8601 con il fuso")
+
+
+def cmd_controlla(db=DB, quiet=False):
+    problems = []
+    today = now_rome().date().isoformat()
+    live = []
+    for sid, s in stories(db):
+        where = f"stories/{sid}"
+        if s.get("status") not in ("live", "archived"):
+            problems.append(f"{where}: status «{s.get('status')}» (va «live» o «archived»)")
+        for k in ("firstSeen", "updated"):
+            check_time(s.get(k), f"{where}.{k}", problems)
+        if s.get("status") != "live":
+            continue
+        live.append((sid, s))
+        if not isinstance(s.get("rank"), int) or isinstance(s.get("rank"), bool):
+            problems.append(f"{where}: rank «{s.get('rank')}» non è un numero intero")
+        title = s.get("title") or ""
+        if not title:
+            problems.append(f"{where}: titolo vuoto")
+        elif len(title) > 80:
+            problems.append(f"{where}: titolo di {len(title)} caratteri (al massimo 80)")
+        if ";" in title:
+            problems.append(f"{where}: titolo con il punto e virgola")
+        if len(s.get("summary") or "") > 300:
+            problems.append(f"{where}: sintesi oltre 300 caratteri")
+        if s.get("section") not in SECTIONS:
+            problems.append(f"{where}: section «{s.get('section')}» non valida")
+        names = []
+        for src in s.get("sources") or []:
+            name, url = (src.get("name") or "").strip(), src.get("url") or ""
+            if name.lower() in names:
+                problems.append(f"{where}: due voci per la stessa testata «{name}»")
+            names.append(name.lower())
+            if not re.match(r"^https?://", url) or front_page(url):
+                problems.append(f"{where}: la fonte «{name}» non ha l'indirizzo di un articolo ({url or 'vuoto'})")
+        hist = s.get("history") or []
+        if len(hist) > 10:
+            problems.append(f"{where}: history ha {len(hist)} voci (al massimo 10)")
+        for i, h in enumerate(hist):
+            check_time(h.get("at"), f"{where}.history[{i}].at", problems)
+    ranks = sorted(s.get("rank") for _sid, s in live if isinstance(s.get("rank"), int))
+    if ranks and ranks != list(range(1, len(ranks) + 1)):
+        problems.append(f"rank delle storie live non vanno da 1 a {len(ranks)}: {ranks}")
+    if len(live) < 10:
+        problems.append(f"storie live: {len(live)} (ne servono almeno 10)")
+
+    markets = load(os.path.join(db, "markets", "snapshot.json"))
+    if markets is not None:
+        keys = [c.get("key") for c in markets.get("classes") or []]
+        if keys != CLASSES:
+            problems.append(f"markets/snapshot: classi {keys} (servono {CLASSES}, in quest'ordine)")
+        check_time(markets.get("asOf"), "markets/snapshot.asOf", problems)
+
+    agenda = load(os.path.join(db, "agenda", "today.json"))
+    if agenda is not None:
+        for i, it in enumerate(agenda.get("items") or []):
+            t = it.get("time") or ""
+            if it.get("impact") == "alto" and not re.match(r"^\d{2}:\d{2}$", t):
+                problems.append(f"agenda/today: «{it.get('event')}» è ad alto impatto e non ha l'orario HH:MM")
+            elif t and not re.match(r"^\d{2}:\d{2}$", t):
+                problems.append(f"agenda/today: orario «{t}» di «{it.get('event')}» non è HH:MM")
+        check_time(agenda.get("asOf"), "agenda/today.asOf", problems)
+
+    brevi = load(os.path.join(db, "brevi", "today.json"))
+    if brevi is not None:
+        items = brevi.get("items") or []
+        if len(items) > 15:
+            problems.append(f"brevi/today: {len(items)} brevi (al massimo 15)")
+        story_urls = {src.get("url") for _sid, s in live for src in s.get("sources") or []}
+        for b in items:
+            url = b.get("url") or ""
+            if not re.match(r"^https?://", url) or front_page(url):
+                problems.append(f"brevi/today: «{b.get('title')}» non ha l'indirizzo di un articolo")
+            elif url in story_urls:
+                problems.append(f"brevi/today: «{b.get('title')}» ripete una fonte di una storia live")
+            check_time(b.get("at"), f"brevi/today «{b.get('title')}».at", problems)
+
+    riepilogo = load(os.path.join(db, "riepilogo", "today.json"))
+    if riepilogo is not None:
+        words = len((riepilogo.get("text") or "").split())
+        if riepilogo.get("date") == today and not 380 <= words <= 450:
+            problems.append(f"riepilogo/today: {words} parole (servono 380-450)")
+
+    meta = load(os.path.join(db, "meta", "status.json"), {}) or {}
+    check_time(meta.get("lastRun"), "meta/status.lastRun", problems)
+
+    if not quiet:
+        for p in problems:
+            print("- " + p)
+        print("Tutto a posto." if not problems else f"Da sistemare: {len(problems)}.")
+    return problems
+
+
+# ---------- pubblica ----------
+
+def run(cmd, check=False):
+    p = subprocess.run(cmd, capture_output=True, text=True)
+    out = (p.stdout + p.stderr).strip()
+    if check and p.returncode:
+        raise RuntimeError(f"{' '.join(cmd)}: {out[-400:]}")
+    return p.returncode == 0, out
+
+
+def delete_old(db):
+    """Cancella le storie archiviate da più di 7 giorni (prima lo faceva il giro delle notizie)."""
+    limit = datetime.now(timezone.utc) - timedelta(days=ARCHIVE_DAYS)
+    gone = []
+    for sid, s in stories(db):
+        upd = parse_time(s.get("updated"))
+        if s.get("status") != "live" and upd and upd < limit:
+            os.remove(os.path.join(db, "stories", sid + ".json"))
+            gone.append(sid)
+    return gone
+
+
+def esito_line(giro, outputs, gone, warnings, meta):
+    parts = []
+    joined = "\n".join(outputs.values())
+    m = re.search(r"Dump controllato: \d+ documenti, (\d+) correzioni", joined)
+    if m:
+        parts.append(f"check_dump.py: {m.group(1)} correzioni")
+    m = re.search(r"brevi\.json: (\d+) brevi", joined)
+    if m:
+        parts.append(f"brevi.py: {m.group(1)} brevi copiate")
+    m = re.search(r"riepilogo\.json: (\d+) parole", joined)
+    if m:
+        parts.append(f"riepilogo.py: riepilogo copiato ({m.group(1)} parole)")
+    if "titoli.json: nessun" in joined:
+        parts.append("titoli.py: nessun titolo nel database")
+    else:
+        m = re.search(r"titoli\.json: (\d+)", joined)
+        if m:
+            parts.append(f"titoli.py: {m.group(1)} titoli copiati")
+    if gone:
+        parts.append(f"cancellate {len(gone)} storie archiviate da più di {ARCHIVE_DAYS} giorni")
+    if warnings:
+        parts.append(f"controlla: {len(warnings)} cose da sistemare")
+    if giro == "notizie" and (meta.get("quality") or {}).get("factsChecked") == 0:
+        parts.append("controllo dei fatti non fatto")
+    return f"Giro {giro} su GitHub; " + "; ".join(parts) + "."
+
+
+def git_push():
+    for i in range(4):
+        ok, out = run(["git", "pull", "-q", "--rebase", "origin", "main"])
+        if ok:
+            ok, out = run(["git", "push", "-q", "origin", "HEAD:main"])
+            if ok:
+                return True, ""
+        run(["git", "rebase", "--abort"])
+        time.sleep((i + 1) * 15)
+    return False, out
+
+
+def github_output(**kv):
+    path = os.environ.get("GITHUB_OUTPUT")
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            for k, v in kv.items():
+                f.write(f"{k}={v}\n")
+
+
+def cmd_pubblica(giro):
+    prova = giro == "prova"
+    db, site = DB, SITE
+    if prova:
+        tmp = tempfile.mkdtemp(prefix="gerico-prova-")
+        shutil.copytree(DB, os.path.join(tmp, "db"))
+        shutil.copytree(SITE, os.path.join(tmp, "site"))
+        db, site = os.path.join(tmp, "db"), os.path.join(tmp, "site")
+    gone = delete_old(db)
+    py = sys.executable
+    steps = [("check_dump.py", [db]), ("export.py", [db, f"{site}/data"]), ("brevi.py", [db, f"{site}/data"]),
+             ("riepilogo.py", [db, f"{site}/data"]), ("titoli.py", [db, f"{site}/data"]),
+             ("share_pages.py", [site]), ("check_site.py", [site])]
+    outputs, error = {}, None
+    for name, args in steps:
+        if not os.path.exists(os.path.join("scripts", name)):
+            continue
+        ok, out = run([py, os.path.join("scripts", name), *args])
+        outputs[name] = out
+        print(f"== {name}\n{out}")
+        if not ok:
+            tail = " | ".join(out.splitlines()[-3:])
+            error = f"Passo {name} fallito: {tail}"
+            break
+    warnings = cmd_controlla(db, quiet=True)
+    for w in warnings:
+        print("controlla: " + w)
+
+    status_path = os.path.join(db, "meta", "status.json")
+    meta = load(status_path, {}) or {}
+    at = now_rome().isoformat()
+    if error:
+        if not prova:
+            run(["git", "checkout", "--", SITE])
+            run(["git", "clean", "-fdq", SITE])
+        meta["publishError"] = {"at": at, "message": error}
+        print("ERRORE: " + error)
+    else:
+        meta["lastPublish"] = {"at": at, "esito": esito_line(giro, outputs, gone, warnings, meta)}
+        meta.pop("publishError", None)
+        print("Esito: " + meta["lastPublish"]["esito"])
+    save(status_path, meta)
+    if prova:
+        shutil.rmtree(os.path.dirname(db), ignore_errors=True)
+        return 1 if error else 0
+
+    run(["git", "add", "-A", DB, SITE], check=True)
+    ok, staged = run(["git", "diff", "--cached", "--name-only"])
+    files = [f for f in staged.splitlines() if f]
+    if not files:
+        print("Niente di nuovo.")
+        return 1 if error else 0
+    t = now_rome()
+    on_site = any(f.startswith(SITE + "/") for f in files)
+    msg = (f"Edizione del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}" if on_site
+           else f"Database della redazione del {t.day}/{t.month} alle {t:%H:%M}")
+    run(["git", "-c", "user.name=GERICO", "-c", "user.email=gerico@users.noreply.github.com",
+         "commit", "-q", "-m", msg], check=True)
+    pushed, out = git_push()
+    if not pushed:
+        print(f"::error::Push non riuscito dopo 4 tentativi: {out[-300:]}")
+        return 1
+    print(f"Pubblicato: {msg}")
+    audio = any(f in (f"{SITE}/data/edition.json", f"{SITE}/data/riepilogo.json") for f in files)
+    github_output(terminal="si" if audio else "no")
+    return 1 if error else 0
+
+
+# ---------- esito ----------
+
+def cmd_esito(path):
+    """La risposta finale di Claude Code: nel log e nel riepilogo del job su GitHub."""
+    result = None
+    try:
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    obj = json.loads(line)
+                except ValueError:
+                    continue
+                if obj.get("type") == "result":
+                    result = obj
+    except OSError:
+        pass
+    if not result:
+        text = "Claude Code non ha dato una risposta finale (accesso non riuscito o giro interrotto)."
+        failed = True
+    else:
+        failed = bool(result.get("is_error")) or result.get("subtype") != "success"
+        mins = round((result.get("duration_ms") or 0) / 60000, 1)
+        text = (f"{(result.get('result') or '').strip() or result.get('subtype')}\n\n"
+                f"Turni: {result.get('num_turns')}, durata: {mins} minuti.")
+    print(text)
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write("### Risposta del giro\n\n" + text + "\n")
+    return 1 if failed else 0
+
+
+def main(argv):
+    if len(argv) < 2:
+        print(__doc__)
+        return 2
+    cmd = argv[1]
+    if cmd == "giro":
+        return cmd_giro()
+    if cmd == "live":
+        return cmd_live()
+    if cmd == "controlla":
+        return 1 if cmd_controlla() else 0
+    if cmd == "pubblica" and len(argv) == 3:
+        return cmd_pubblica(argv[2])
+    if cmd == "esito" and len(argv) == 3:
+        return cmd_esito(argv[2])
+    print(__doc__)
+    return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

@@ -1,0 +1,288 @@
+{
+  "change": "5 novembre: il bilancio di Komyshuvakha sale a 40 morti e 59 dispersi secondo Reuters.",
+  "divergences": [
+    {
+      "point": "Obiettivo di Komyshuvakha e della rete elettrica",
+      "positions": [
+        {
+          "says": "Mosca parla di unità militari ucraine colpite e di impianti che alimentano fabbriche militari.",
+          "who": [
+            "Reuters"
+          ]
+        },
+        {
+          "says": "Kiev descrive un attacco di massa all'infrastruttura energetica, con blackout e interruzioni dell'acqua.",
+          "who": [
+            "Kyiv Independent"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Bilancio dell'attacco a Komyshuvakha",
+      "positions": [
+        {
+          "says": "40 morti, tra cui due soccorritori e quattro agenti, e 59 dispersi secondo Fedorov.",
+          "who": [
+            "Reuters"
+          ]
+        },
+        {
+          "says": "33 morti e oltre 50 dispersi, un bilancio precedente.",
+          "who": [
+            "Euronews"
+          ]
+        },
+        {
+          "says": "Mosca dice di aver colpito unità militari ucraine, con fino a 25 militari uccisi; entrambi i governi negano di colpire civili.",
+          "who": [
+            "Reuters"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Euronews titola su 33 morti e oltre 50 dispersi dopo il bombardamento russo a Zaporizhzhia.",
+      "who": [
+        "Euronews"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Zelensky dice che i russi hanno prima bombardato la scuola all'arrivo delle persone e poi colpito di nuovo il rifugio.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "La tregua di sei giorni per evacuare Oleshky era scaduta il giorno prima; Melania Trump parla di quasi 800 evacuati.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo Zelensky nella notte sono stati lanciati 289 droni, 17 missili balistici e 59 missili da crociera, da Odessa a Rivne.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Kyiv Independent parla del più grande attacco all'energia ucraina di quest'anno; Ukrenergo dice che è stata colpita anche una sottostazione cruciale per una centrale nucleare.",
+      "who": [
+        "Kyiv Independent"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Mancano luce a Kiev e in almeno altre sei regioni; a Kiev sono disturbati acqua e trasporti. DTEK dice che tre delle sue cinque centrali termiche sono ferme.",
+      "who": [
+        "Reuters",
+        "Kyiv Independent"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A Dnipro due morti e circa 20 feriti.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Mosca dice di aver colpito impianti elettrici che alimentano fabbriche militari e l'esercito ucraino.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A Komyshuvakha un rifugio-centro aiuti è colpito due volte: 40 morti per Reuters e 59 dispersi, secondo Fedorov.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Mosca sostiene di aver colpito unità militari ucraine a Komyshuvakha, con fino a 25 militari uccisi.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "I colloqui promossi dagli Usa ad Abu Dhabi sono il 10 e 11 novembre; il Cremlino conferma un incontro faccia a faccia con gli ucraini.",
+      "who": [
+        "Reuters",
+        "Open"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "La Commissione Ue ospita il 4 novembre un incontro con Usa, Nato, Kiev e alleati europei.",
+      "who": [
+        "Reuters",
+        "Kyiv Independent"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Merz dice che i colloqui sono «il passo giusto» ma che finora non ha visto segni di impegno serio da Mosca.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo la gestione russa della centrale di Zaporizhzhia, un drone ucraino ha ucciso due persone, tra cui un dipendente.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Budanov, capo dell'Ufficio presidenziale, dice che negli scontri a una struttura della Guardia nazionale vicino a Kiev c'è stata «influenza esterna».",
+      "who": [
+        "Kyiv Independent"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-07T17:08:47+02:00",
+  "history": [
+    {
+      "at": "2026-11-05T07:24:55+01:00",
+      "text": "5 novembre: il bilancio di Komyshuvakha sale a 40 morti e 59 dispersi secondo Reuters."
+    },
+    {
+      "at": "2026-11-04T07:25:00+01:00",
+      "text": "4 novembre: attacco russo alla rete elettrica con blackout a Kiev, a Komyshuvakha almeno 33 morti per Zelensky, Merz chiede impegno concreto a Mosca."
+    },
+    {
+      "at": "2026-11-03T07:25:18+01:00",
+      "text": "2-3 novembre: strage a Komyshuvakha, fine della tregua di Oleshky, colloqui tecnici ad Abu Dhabi il 10-11 novembre, attacco a Kharkiv."
+    },
+    {
+      "at": "2026-11-02T07:26:43+01:00",
+      "text": "2 novembre: hackerata l'app di allerta, Zelensky offre di fermare i raid sulle raffinerie in cambio di missili Usa, evacuati 167 civili a Kherson."
+    },
+    {
+      "at": "2026-11-01T07:19:46+01:00",
+      "text": "1 novembre: evacuati da Oleshky via Bielorussia, via libera Usa ai Patriot per 2,1 miliardi, Rubio dubita della pace."
+    },
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "28 ottobre: la tregua di Oleshky regge; Zelensky spera nei colloqui ad Abu Dhabi entro il 10 novembre."
+    },
+    {
+      "at": "2026-10-28T14:56:46+01:00",
+      "text": "27 ottobre: Zelensky parla di riconquiste a Kupiansk, Mosca rivendica 92 insediamenti da settembre."
+    },
+    {
+      "at": "2026-10-27T07:24:50+01:00",
+      "text": "27 ottobre: nuovo attacco su Kyiv (un morto), tregua locale a Oleshky, Zelensky attende il via Usa ai Patriot."
+    },
+    {
+      "at": "2026-10-23T07:23:06+02:00",
+      "text": "22-23 ottobre: Putin dice che i colloqui devono toccare la sicurezza anche di Mosca e parla di terre «storicamente russe»; missili su Kyiv la sera; Trump dice che Musk ha ripristinato lo Starlink, Kyiv lo nega."
+    },
+    {
+      "at": "2026-10-22T07:22:16+02:00",
+      "text": "21-22 ottobre: Putin dice a Witkoff di essere pronto a riprendere i colloqui trilaterali e libera l'americano Hubbard; Zelensky è d'accordo; nella notte droni su Mosca e missili su Kyiv."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Quanti sono i dispersi di Komyshuvakha?",
+    "Chi parteciperà ai colloqui di Abu Dhabi del 10-11 novembre?",
+    "Quanto tempo servirà a ripristinare la rete elettrica ucraina?"
+  ],
+  "rank": 4,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Bilancio dell'attacco a Komyshuvakha e colloqui di Abu Dhabi.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/dozens-dead-and-missing-after-russian-strike-on-ukrainian-aid-centre-officials-say"
+    },
+    {
+      "angle": "Blackout a Kiev e sottostazione per una centrale nucleare.",
+      "area": "Ucraina e Russia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Ucraina",
+      "kind": "giornale online",
+      "name": "Kyiv Independent",
+      "stance": "allineata",
+      "url": "https://kyivindependent.com/russia-unleashes-biggest-mass-attack-on-ukraines-energy-this-year-2/"
+    },
+    {
+      "angle": "Il Cremlino conferma l'incontro di Abu Dhabi.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "stance": "allineata",
+      "url": "https://www.open.online/2026/11/03/guerra-russia-ucraina-ultime-notizie-3-nov-diretta/"
+    },
+    {
+      "angle": "Uno dei più massicci attacchi all'energia dell'ultimo anno.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/03/russia-attacchi-infrastrutture-energetiche-ucraine/"
+    },
+    {
+      "angle": "Video e bilancio dell'attacco a Zaporizhzhia.",
+      "area": "Europa",
+      "at": "2026-11-05T07:24:55+01:00",
+      "country": "Francia",
+      "kind": "online",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/video/2026/11/04/ukraine-31-dead-over-45-missing-after-russian-bombing-in-zaporizhzhia"
+    },
+    {
+      "angle": "Colloqui tecnici ad Abu Dhabi.",
+      "area": "Italia",
+      "at": "2026-11-03T07:25:18+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/03/witkoff-usa-medieranno-colloqui-abu-dhabi-a-livello-tecnico-tra-russia_673a7d30-31d6-44ab-8403-e3e302bc08e3.html"
+    },
+    {
+      "angle": "Attacchi informatici alle app di allerta.",
+      "area": "Medio Oriente",
+      "at": "2026-11-03T07:25:18+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/11/2/ukraine-blames-russia-after-air-alert-app-sends-out-false-warnings"
+    }
+  ],
+  "status": "live",
+  "summary": "Un attacco russo a un rifugio usato come centro aiuti a Komyshuvakha, nello Zaporizhzhia, ha causato 40 morti secondo Reuters, con 59 dispersi. I colloqui promossi dagli Usa ad Abu Dhabi sono fissati per il 10 e 11 novembre.",
+  "tags": [
+    "Ucraina",
+    "Russia",
+    "Stati Uniti"
+  ],
+  "title": "Ucraina: strage a Komyshuvakha, 40 morti secondo Reuters; colloqui ad Abu Dhabi",
+  "updated": "2026-11-05T07:24:55+01:00",
+  "view": "È accertato che l'attacco a Komyshuvakha ha colpito un rifugio usato come centro aiuti. Il bilancio cambia con le ore: Euronews riporta 33 morti e oltre 50 dispersi, Reuters 40 morti e 59 dispersi secondo il funzionario ucraino Fedorov. Mosca dice di aver colpito unità militari, con fino a 25 soldati uccisi, e le due parti negano di colpire civili: non c'è verifica indipendente di questa parte.\n\nConta perché l'attacco arriva a un giorno dalla fine della tregua di Oleshky e a pochi giorni dai colloqui di Abu Dhabi del 10 e 11 novembre, ai quali Merz chiede un impegno serio da Mosca. Da guardare: l'elenco dei partecipanti, il bilancio definitivo e lo stato della rete elettrica."
+}

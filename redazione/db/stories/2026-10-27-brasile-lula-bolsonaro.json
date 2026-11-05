@@ -1,0 +1,262 @@
+{
+  "change": "1 novembre: Rubio nega aiuti alla fuga di Bolsonaro; Trump dice che Flavio può restare negli Usa; incontro Rubio-ministro brasiliano atteso.",
+  "divergences": [
+    {
+      "point": "Dove cade l'accento sulle irregolarità",
+      "positions": [
+        {
+          "says": "Elenca problemi da entrambi i lati: l'orario prorogato dalla Corte suprema e i presunti tagli ai trasporti denunciati dal campo di Lula.",
+          "who": [
+            "Al Jazeera"
+          ]
+        },
+        {
+          "says": "Sottolinea il peso limitato delle ore extra (meno di 35.000 voti su uno scarto di oltre 4 milioni) e riporta le parole di Trump e della campagna del Dipartimento di Stato.",
+          "who": [
+            "Reuters"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Il segretario di Stato Rubio nega che l'amministrazione Trump abbia aiutato Bolsonaro a fuggire negli Stati Uniti.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump dice che Flavio Bolsonaro, sconfitto alle presidenziali, può restare negli Usa per il tempo che vuole.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Rubio dovrebbe incontrare il ministro degli Esteri brasiliano dopo le tensioni sul voto.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Lula vince con poco più del 51% contro circa il 48% di Flavio Bolsonaro, con il 98,76% delle schede scrutinate; lo scarto supera i 4 milioni di voti.",
+      "who": [
+        "Al Jazeera",
+        "Reuters"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Flavio Bolsonaro, arrivato negli Usa, si dichiara senza prove presidente eletto e dice di aver lasciato il Brasile per evitare la politicizzazione della giustizia.",
+      "who": [
+        "Reuters",
+        "ANSA"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "Il Dipartimento di Stato Usa rilascerà il visto a Flavio Bolsonaro e alla famiglia, usciti dal Brasile con una breve sosta in Ecuador.",
+      "who": [
+        "Euronews",
+        "Reuters",
+        "ANSA"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "Trump dice di non voler essere coinvolto e definisce l'elezione brasiliana molto strana; il 26 ottobre aveva detto, senza prove, che sembrava truccata.",
+      "who": [
+        "ANSA",
+        "Euronews",
+        "Reuters"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Il Partito Liberale dichiara «riconosciamo i risultati», aggiungendo che le questioni sollevate vanno chiarite.",
+      "who": [
+        "Reuters",
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo un docente di Insper citato da Reuters, nelle due ore di proroga del voto hanno votato meno di 35.000 persone, circa lo 0,03% del totale.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "L'Ibovespa perde circa il 17% e le contrattazioni vengono sospese, la prima volta dal marzo 2020; il real perde l'8,1% sul dollaro.",
+      "who": [
+        "ANSA",
+        "Il Post",
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il campo di Lula denuncia tagli ai trasporti pubblici in alcune città; la Polizia federale indaga su disservizi in cinque Stati.",
+      "who": [
+        "Al Jazeera"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-27T07:24:50+01:00",
+  "history": [
+    {
+      "at": "2026-11-02T07:26:43+01:00",
+      "text": "1 novembre: Rubio nega aiuti alla fuga di Bolsonaro; Trump dice che Flavio può restare negli Usa; incontro Rubio-ministro brasiliano atteso."
+    },
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "28 ottobre: Flavio Bolsonaro, negli Usa, si dichiara presidente eletto; Trump dice di non voler essere coinvolto."
+    },
+    {
+      "at": "2026-10-28T07:22:00+01:00",
+      "text": "Flávio Bolsonaro in Florida: gli Usa concedono i visti alla famiglia."
+    },
+    {
+      "at": "2026-10-27T07:24:50+01:00",
+      "text": "Prima notizia: Lula vince il ballottaggio; Bolsonaro contesta, il suo partito riconosce il risultato; la Borsa crolla del 17%."
+    }
+  ],
+  "notCovered": [
+    "Kyiv Independent"
+  ],
+  "open": [
+    "Flavio Bolsonaro presenterà davvero un ricorso per annullare il voto?",
+    "Che cosa accerterà la Polizia federale sui disservizi ai trasporti in cinque Stati?",
+    "Come risponderà il governo brasiliano alle parole di Trump?"
+  ],
+  "rank": 9,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Scarto di oltre 4 milioni; il partito riconosce il risultato; Trump parla di voto truccato; real -8,1%.",
+      "area": "Europa",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/27/brazil-heads-back-to-the-future-as-flavio-bolsonaro-refuses-to-recognize-lula-win"
+    },
+    {
+      "angle": "Lula al 51%, Bolsonaro contesta la proroga del voto; accuse di tagli ai trasporti.",
+      "area": "Medio Oriente",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/10/26/brazil-election-2026-key-takeaways-from-lulas-historic-win"
+    },
+    {
+      "angle": "Lula vince, Bolsonaro rifiuta il risultato; Trump parla di voto «truccato».",
+      "area": "Europa",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Francia",
+      "kind": "tv",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/2026/10/26/brazils-lula-clinches-election-victory-as-bolsonaro-rejects-results"
+    },
+    {
+      "angle": "Crollo del 17% della Borsa, sospese le contrattazioni; il partito di Bolsonaro riconosce Lula.",
+      "area": "Italia",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/10/26/la-borsa-brasiliana-crolla-dopo-la-vittoria-di-lula-sospese-le-contrattazioni_2e65cffe-a3d0-4d4f-82b5-bbca863136a8.html"
+    },
+    {
+      "angle": "Dopo l'annuncio della vittoria di Lula la Borsa crolla e le contrattazioni sono sospese.",
+      "area": "Italia",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "parziale",
+      "url": "https://www.ilpost.it/2026/10/26/crollo-borsa-brasile-lula/"
+    },
+    {
+      "angle": "Lula vince e Bolsonaro contesta i risultati.",
+      "area": "Italia",
+      "at": "2026-10-27T07:24:50+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Open",
+      "stance": "allineata",
+      "url": "https://www.open.online/2026/10/26/brasile-vittoria-lula-bolsonaro-risultati/"
+    },
+    {
+      "angle": "Flavio Bolsonaro dagli Usa si dichiara presidente eletto.",
+      "area": "Europa",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/28/flavio-bolsonaro-declares-himself-rightful-president-elect-of-brazil"
+    },
+    {
+      "angle": "Gli Usa daranno il visto a Flavio Bolsonaro, partito dal Brasile.",
+      "area": "Europa",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Francia",
+      "kind": "tv",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/news/international"
+    },
+    {
+      "angle": "Trump non vuole essere coinvolto; Bolsonaro a Miami con la famiglia.",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/index.shtml"
+    },
+    {
+      "angle": "Smentita di Rubio.",
+      "area": "Medio Oriente",
+      "at": "2026-11-02T07:26:43+01:00",
+      "country": "Qatar",
+      "kind": "giornale",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/"
+    },
+    {
+      "angle": "Trump su Flavio Bolsonaro e incontro con il ministro brasiliano.",
+      "area": "Europa",
+      "at": "2026-11-02T07:26:43+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters"
+    }
+  ],
+  "status": "archived",
+  "summary": "Il 1° novembre Al Jazeera riporta che Rubio nega che l'amministrazione Trump abbia aiutato Bolsonaro a fuggire negli Usa. Secondo Reuters, Trump dice che Flavio Bolsonaro può restare quanto vuole e Rubio dovrebbe vedere il ministro degli Esteri brasiliano.",
+  "tags": [
+    "Brasile",
+    "Stati Uniti",
+    "Mercati",
+    "Elezioni"
+  ],
+  "title": "Brasile: Rubio nega aiuti a Bolsonaro, Trump lo lascia restare negli Usa",
+  "updated": "2026-11-02T07:26:43+01:00",
+  "view": "È accertato che Lula ha vinto il ballottaggio con uno scarto superiore ai 4 milioni di voti, che il Partito Liberale ha riconosciuto il risultato e che Flavio Bolsonaro, ora negli Usa, si proclama presidente eletto senza portare prove. Restano contese due cose: se la proroga di due ore del voto abbia pesato (Reuters cita una stima molto bassa) e se i tagli ai trasporti denunciati dal campo di Lula abbiano influito, tema su cui indaga la Polizia federale.\n\nConta per la tenuta politica del Paese e per i mercati, con Borsa e real ai minimi da anni. Da guardare: un eventuale ricorso, il ruolo degli Usa dopo le parole di Trump e il visto, e il comportamento della Borsa nei prossimi giorni."
+}

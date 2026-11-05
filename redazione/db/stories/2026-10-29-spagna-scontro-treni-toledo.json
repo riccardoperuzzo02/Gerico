@@ -1,0 +1,301 @@
+{
+  "change": "4 novembre: il ministro dei Trasporti Puente si dimette; Euronews e Open parlano di 69 morti.",
+  "divergences": [
+    {
+      "point": "Bilancio dei morti",
+      "positions": [
+        {
+          "says": "Il 28-29 ottobre indicano almeno 68 morti.",
+          "who": [
+            "Al Jazeera",
+            "ABC News Australia",
+            "CNBC",
+            "Il Sole 24 Ore"
+          ]
+        },
+        {
+          "says": "Il 3 novembre parlano di 69 morti.",
+          "who": [
+            "Euronews",
+            "Open"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Bilancio dei feriti",
+      "positions": [
+        {
+          "says": "In mattinata cita oltre 150 feriti e almeno 39 morti, dati provvisori di La Razón e non ufficiali.",
+          "who": [
+            "Open"
+          ]
+        },
+        {
+          "says": "Parla di più di 80 feriti secondo le autorità, con almeno 68 morti.",
+          "who": [
+            "ABC News Australia"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Italiani coinvolti",
+      "positions": [
+        {
+          "says": "Ha titolato prima sette italiani coinvolti e due dispersi, poi nove coinvolti e tre disperse.",
+          "who": [
+            "Il Sole 24 Ore"
+          ]
+        }
+      ]
+    },
+    {
+      "point": "Italiani dispersi",
+      "positions": [
+        {
+          "says": "La Farnesina indica nove italiani coinvolti e tre donne disperse.",
+          "who": [
+            "Il Sole 24 Ore"
+          ]
+        },
+        {
+          "says": "Cinque italiani coinvolti, una donna di Pistoia dispersa.",
+          "who": [
+            "Avvenire"
+          ]
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "n": 3,
+      "text": "Il ministro dei Trasporti spagnolo Óscar Puente si è dimesso il 3 novembre per l'incidente di Urda.",
+      "who": [
+        "Il Post",
+        "Open",
+        "Euronews"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Euronews e Open indicano 69 morti nell'incidente di Urda, uno in più rispetto alle prime cifre.",
+      "who": [
+        "Euronews",
+        "Open"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "Un treno Renfe Madrid-Siviglia ha colpito sul retro un treno Iryo fermo vicino a Urda, in provincia di Toledo, il 28 ottobre.",
+      "who": [
+        "Al Jazeera",
+        "ABC News Australia",
+        "Open"
+      ]
+    },
+    {
+      "n": 4,
+      "text": "Il bilancio è di almeno 68 morti.",
+      "who": [
+        "ABC News Australia",
+        "Al Jazeera",
+        "CNBC",
+        "Il Sole 24 Ore"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Dopo il guasto di un sistema di sicurezza su 63 km, il centro di controllo ha dato al Renfe il via libera a riprendere la corsa; il ministro Puente parla di ordine inspiegabile.",
+      "who": [
+        "ABC News Australia"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Fonti di governo citate da El País indicano un errore di un operatore del centro di Atocha; per l'ANSA audio dei contatti con i macchinisti mostrano errori.",
+      "who": [
+        "Open"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Renfe viaggiava fino a 200 km/h; secondo Puente non avrebbe mai dovuto avere il via libera a piena velocità.",
+      "who": [
+        "ABC News Australia"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "La Farnesina indica nove italiani coinvolti: tre donne disperse, uno ricoverato e cinque in condizioni stabili.",
+      "who": [
+        "Il Sole 24 Ore"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Il premier Sánchez proclama tre giorni di lutto nazionale.",
+      "who": [
+        "Il Messaggero",
+        "Dire"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "L'incidente arriva nove mesi dopo il deragliamento di Adamuz, che aveva causato 45 morti.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Lo scontro è avvenuto alle 8:53 vicino a Urda; i feriti sono almeno 80, 15 in gravi condizioni, tra 544 passeggeri.",
+      "who": [
+        "Avvenire"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo le prime ipotesi un guasto al sistema di sicurezza ha fermato i treni per sei minuti; alle 8:36 un operatore Adif avrebbe autorizzato la marcia a velocità normale invece che a vista.",
+      "who": [
+        "Avvenire"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Per Avvenire gli italiani coinvolti sono cinque e una donna di Pistoia risulta dispersa.",
+      "who": [
+        "Avvenire"
+      ]
+    }
+  ],
+  "firstSeen": "2026-10-29T07:27:28+01:00",
+  "history": [
+    {
+      "at": "2026-11-04T07:25:00+01:00",
+      "text": "4 novembre: il ministro dei Trasporti Puente si dimette; Euronews e Open parlano di 69 morti."
+    },
+    {
+      "at": "2026-11-01T07:19:46+01:00",
+      "text": "1 novembre: la stampa italiana ricostruisce la dinamica: doppio errore umano ipotizzato, almeno 80 feriti, il numero degli italiani dispersi non coincide fra le fonti."
+    },
+    {
+      "at": "2026-10-29T07:27:28+01:00",
+      "text": "Prima notizia: scontro tra treni vicino a Toledo, almeno 68 morti, tre italiane disperse."
+    }
+  ],
+  "notCovered": [
+    "Kyiv Independent",
+    "Times of Israel"
+  ],
+  "open": [
+    "Quale ordine ha dato il centro di controllo e perché un segnale di arresto era ancora attivo?",
+    "Che fine hanno fatto le tre italiane disperse?",
+    "Quando riaprirà la linea Madrid-Andalusia?"
+  ],
+  "rank": 10,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Dimissioni del ministro dei Trasporti.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/03/dimissioni-ministro-trasporti-spagnolo-oscar-puente/"
+    },
+    {
+      "angle": "Dimissioni dopo il deragliamento di Urda, 69 morti.",
+      "area": "Italia",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "stance": "allineata",
+      "url": "https://www.open.online/2026/11/03/scontro-treni-spagna-dimissioni-ministro-trasporti/"
+    },
+    {
+      "angle": "Puente si dimette, 69 morti.",
+      "area": "Europa",
+      "at": "2026-11-04T07:25:00+01:00",
+      "country": "Francia",
+      "kind": "giornale online",
+      "name": "Euronews",
+      "stance": "allineata",
+      "url": "https://www.euronews.com/2026/11/03/spains-transport-minister-oscar-puente-resigns-over-urda-train-crash-that-killed-69"
+    },
+    {
+      "angle": "Primo resoconto: Renfe contro Iryo fermo a Urda, poi bilancio salito a 68 morti.",
+      "area": "Medio Oriente",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain"
+    },
+    {
+      "angle": "L'ordine inspiegabile del centro di controllo, 68 morti e oltre 80 feriti.",
+      "area": "Oceania",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Australia",
+      "kind": "tv",
+      "name": "ABC News Australia",
+      "stance": "allineata",
+      "url": "https://www.abc.net.au/news/2026-10-29/spain-train-crash-inexplicable-order-high-speed-rail/107321318"
+    },
+    {
+      "angle": "Almeno 68 morti nello scontro ad alta velocità (solo titolo letto).",
+      "area": "Stati Uniti",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Stati Uniti",
+      "kind": "tv",
+      "name": "CNBC",
+      "stance": "allineata",
+      "url": "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html"
+    },
+    {
+      "angle": "Italiani coinvolti e dispersi; almeno 68 vittime (titolo aggiornato).",
+      "area": "Italia",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Sole 24 Ore",
+      "stance": "allineata",
+      "url": "https://www.ilsole24ore.com/art/spagna-almeno-dieci-morti-scontro-treni-toledo-AJZaxbwB"
+    },
+    {
+      "angle": "Urda si mobilita per aiutare le vittime.",
+      "area": "Europa",
+      "at": "2026-10-29T07:27:28+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "parziale",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/28/spanish-town-rallies-to-help-victims-of-deadly-train-crash"
+    },
+    {
+      "angle": "Dinamica, 68 vittime, ipotesi di doppio errore umano, una dispersa italiana.",
+      "area": "Italia",
+      "at": "2026-11-01T07:19:46+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Avvenire",
+      "stance": "allineata",
+      "url": "https://www.avvenire.it/mondo/spagna-scontro-tra-treni-sullalta-velocita-madrid-siviglia-almeno-46-morti_114929"
+    }
+  ],
+  "status": "live",
+  "summary": "Il 3 novembre il ministro dei Trasporti Óscar Puente si è dimesso dopo l'incidente del 28 ottobre sulla Madrid-Siviglia. Euronews e Open parlano di 69 morti.",
+  "tags": [
+    "Spagna",
+    "Ferrovie",
+    "Italia"
+  ],
+  "title": "Spagna: si dimette il ministro Puente dopo lo scontro tra treni a Urda",
+  "updated": "2026-11-04T07:25:00+01:00",
+  "view": "È accertato che il 3 novembre il ministro Puente si è dimesso per l'incidente di Urda, secondo Il Post, Open ed Euronews. Il bilancio sale da 68 a 69 morti secondo Euronews e Open; le testate che hanno seguito i primi giorni indicano 68. Sulle cause le fonti convergono su un errore del centro di controllo, ma l'inchiesta non è conclusa.\n\nConta perché è la prima conseguenza politica dell'incidente, il secondo grave sull'alta velocità spagnola in nove mesi. Da guardare: il successore di Puente, l'esito dell'inchiesta sul centro di controllo e la riapertura della Madrid-Andalusia."
+}

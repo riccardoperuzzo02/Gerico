@@ -1,0 +1,31 @@
+{
+  "lastPublish": {
+    "at": "2026-11-05T07:56:00+01:00",
+    "esito": "Pubblicata a mano l'edizione delle 7:18 (cc38280): il giro non aveva il repository. check_dump.py: 0 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
+  },
+  "lastRun": "2026-11-05T07:27:00+01:00",
+  "marketsRun": {
+    "at": "2026-11-04T18:21:00+01:00",
+    "esito": "Aggiornate le chiusure di Ftse Mib, Dax, Cac 40 e Ftse 100, spread Btp-Bund, Btp a 10 anni, euro/dollaro e Intesa, UniCredit, Avio; Aex, Smi, Bund, Brent, gas TTF non trovati con valori di chiusura verificati."
+  },
+  "outlets": [
+    "ANSA",
+    "Il Post",
+    "Reuters",
+    "Euronews",
+    "Al Jazeera",
+    "Teleborsa",
+    "CNBC"
+  ],
+  "quality": {
+    "articlesDiscarded": 0,
+    "articlesRead": 27,
+    "at": "2026-11-05T07:27:00+01:00",
+    "factsChecked": 4,
+    "factsCorrected": 3,
+    "storiesArchived": 2,
+    "storiesNew": 1,
+    "storiesUpdated": 5
+  },
+  "storiesLive": 10
+}

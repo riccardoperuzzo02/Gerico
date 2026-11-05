@@ -14,7 +14,8 @@ on:
     - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
   workflow_dispatch:
   # anche dopo ogni edizione pubblicata (gli orari del cron di GitHub non sono garantiti e a volte saltano)
-  # e quando cambiano gli script del job
+  # e quando cambiano gli script del job; le edizioni del workflow «Redazione» lo avviano con workflow_dispatch,
+  # perché i push fatti con il token di GitHub non fanno partire altri workflow
   push:
     branches: [main]
     paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/screener.py, scripts/titoli_storico.py, scripts/fin_requirements.txt]

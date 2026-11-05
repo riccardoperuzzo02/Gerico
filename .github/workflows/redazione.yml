@@ -1,0 +1,140 @@
+name: Redazione
+
+# I giri della redazione di GERICO, senza chat su Claude: notizie alle 7:18 e alle 13:18, chiusure delle Borse
+# europee alle 18:15 dei giorni feriali; i titoli da seguire restano spenti finché non arriva l'ok della compliance.
+# Claude Code usa l'abbonamento Claude di Riccardo (segreto CLAUDE_CODE_OAUTH_TOKEN, creato con `claude setup-token`),
+# legge le testate e scrive il database in redazione/db; poi scripts/redazione.py lo copia in site/data con gli
+# script di sempre, pubblica su main e, se è cambiato il riepilogo, avvia «Dati del Terminal» per l'audio.
+# Il giro «prova» controlla solo che il token funzioni e che la pubblicazione passi, senza cambiare niente.
+on:
+  # gli orari si accendono quando le attività programmate su Claude sono spente: due redazioni insieme si pestano i piedi
+  # schedule:
+  #   # orari in UTC: per ogni giro un cron per l'ora legale e uno per l'ora solare; parte solo quello giusto
+  #   - cron: "18 5 * * *"      # notizie 7:18 (ora legale)
+  #   - cron: "18 6 * * *"      # notizie 7:18 (ora solare)
+  #   - cron: "18 11 * * *"     # notizie 13:18 (ora legale)
+  #   - cron: "18 12 * * *"     # notizie 13:18 (ora solare)
+  #   - cron: "15 16 * * 1-5"   # chiusure 18:15 (ora legale)
+  #   - cron: "15 17 * * 1-5"   # chiusure 18:15 (ora solare)
+  workflow_dispatch:
+    inputs:
+      giro:
+        description: Giro da fare
+        type: choice
+        options: [prova, notizie, chiusure, titoli]
+        default: prova
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: redazione
+  cancel-in-progress: false
+
+jobs:
+  giro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Quale giro
+        id: giro
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          SCELTA: ${{ inputs.giro }}
+        run: python3 scripts/redazione.py giro | tee -a "$GITHUB_OUTPUT"
+
+      - name: Token
+        if: steps.giro.outputs.giro != ''
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::Manca il segreto CLAUDE_CODE_OAUTH_TOKEN: crealo con «claude setup-token» e aggiungilo in Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
+      - name: Claude Code
+        if: steps.giro.outputs.giro != ''
+        run: |
+          for i in 1 2 3; do
+            if curl -fsSL https://claude.ai/install.sh | bash; then break; fi
+            if [ "$i" = 3 ]; then echo "::error::Installazione di Claude Code non riuscita"; exit 1; fi
+            sleep 10
+          done
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Giro
+        id: claude
+        if: steps.giro.outputs.giro != ''
+        timeout-minutes: 40
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GIRO: ${{ steps.giro.outputs.giro }}
+          VARIANTE: ${{ steps.giro.outputs.variante }}
+          MODELLO: ${{ steps.giro.outputs.modello }}
+          TURNI: ${{ steps.giro.outputs.turni }}
+        run: |
+          if [ "$GIRO" = prova ]; then
+            echo "Rispondi solo con la parola: pronto" > "$RUNNER_TEMP/prompt.md"
+          else
+            { printf 'Questo è il giro delle %s.\n\n' "$VARIANTE"; cat "redazione/$GIRO.md"; } > "$RUNNER_TEMP/prompt.md"
+          fi
+          # Claude scrive solo nel database e usa solo questi comandi: niente git, niente altro sul runner
+          TOOLS=(WebSearch WebFetch Read Glob Grep "Edit(redazione/db/**)" "Write(redazione/db/**)"
+                 "Bash(TZ=Europe/Rome date:*)" "Bash(date:*)"
+                 "Bash(python3 scripts/redazione.py:*)" "Bash(python3 scripts/check_dump.py:*)")
+          # il limite di tempo è dentro il passo, così l'esito e la pubblicazione arrivano comunque
+          timeout --foreground 36m claude -p --model "$MODELLO" --max-turns "$TURNI" --output-format stream-json --verbose \
+            --allowedTools "${TOOLS[@]}" < "$RUNNER_TEMP/prompt.md" > "$RUNNER_TEMP/giro.jsonl" || true
+          if python3 scripts/redazione.py esito "$RUNNER_TEMP/giro.jsonl"; then
+            echo "risposta=si" >> "$GITHUB_OUTPUT"
+          elif grep -q '"type":"system"' "$RUNNER_TEMP/giro.jsonl"; then
+            echo "risposta=interrotta" >> "$GITHUB_OUTPUT"   # partito ma non finito: si pubblica quello che ha scritto
+          else
+            echo "risposta=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trascrizione del giro
+        if: always() && steps.giro.outputs.giro != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: giro-${{ steps.giro.outputs.giro }}-${{ github.run_id }}
+          path: ${{ runner.temp }}/giro.jsonl
+          retention-days: 7
+          if-no-files-found: ignore
+
+      # anche un giro interrotto pubblica quello che ha scritto nel database; uno che non è partito no
+      - name: Pubblica
+        id: pubblica
+        if: always() && steps.giro.outputs.giro != '' && steps.claude.outputs.risposta != 'no' && steps.claude.outputs.risposta != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GIRO: ${{ steps.giro.outputs.giro }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          python3 scripts/redazione.py pubblica "$GIRO"
+
+      - name: Dati del Terminal e audio del riepilogo
+        if: always() && steps.pubblica.outputs.terminal == 'si'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run dati-terminal.yml --ref main
+
+      - name: Esito
+        if: always() && steps.giro.outputs.giro != ''
+        env:
+          RISPOSTA: ${{ steps.claude.outputs.risposta }}
+        run: |
+          if [ "$RISPOSTA" = no ] || [ -z "$RISPOSTA" ]; then
+            echo "::error::Claude Code non è partito: controlla il segreto CLAUDE_CODE_OAUTH_TOKEN (scade dopo un anno) e la trascrizione."
+            exit 1
+          fi
+          if [ "$RISPOSTA" = interrotta ]; then
+            echo "::warning::Il giro si è fermato prima della fine (tempo o turni finiti): è uscito quello che aveva scritto."
+          fi

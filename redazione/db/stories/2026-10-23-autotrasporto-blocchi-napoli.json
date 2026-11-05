@@ -1,0 +1,75 @@
+{
+  "change": "Prima notizia: blocchi dell'autotrasporto, il Garante chiede la precettazione, decreto da 105 milioni.",
+  "divergences": [],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Il 22 ottobre il Garante degli scioperi chiede la precettazione dell'autotrasporto: i blocchi sono «diffusi e resistenti» e prolungano le criticità (ANSA)."
+    },
+    {
+      "n": 2,
+      "text": "Il Consiglio dei ministri approva un decreto con 105 milioni per gli autotrasportatori e 70 per agricoltura e pesca (ANSA); Il Post parla di misure per compensare i costi del carburante, con sostegno ad aziende agricole e della pesca."
+    },
+    {
+      "n": 1,
+      "text": "A Napoli molti supermercati hanno scaffali vuoti, quasi tutti i distributori sono senza carburante e il trasporto dei pazienti è colpito (Il Post)."
+    },
+    {
+      "n": 1,
+      "text": "La produzione di mozzarella di bufala dop in Campania è ferma da giorni, un fatto senza precedenti; caseifici e allevatori non sanno come gestire il latte (Il Post)."
+    },
+    {
+      "n": 1,
+      "text": "Il 19 ottobre Il Post riportava blocchi stradali che continuavano al Sud."
+    }
+  ],
+  "firstSeen": "2026-10-23T07:23:40+02:00",
+  "history": [
+    {
+      "at": "2026-10-23T07:23:40+02:00",
+      "text": "Prima notizia: blocchi dell'autotrasporto, il Garante chiede la precettazione, decreto da 105 milioni."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Se viene disposta la precettazione.",
+    "Se i fondi del decreto fermano i blocchi.",
+    "Quando riprendono le forniture a Napoli.",
+    "Quanto durerà lo stop alla mozzarella dop."
+  ],
+  "rank": 6,
+  "section": "italia",
+  "sources": [
+    {
+      "angle": "22 ottobre: Garante chiede la precettazione; decreto da 105 milioni per i trasportatori.",
+      "area": "Italia",
+      "at": "2026-10-23T07:23:40+02:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/index.shtml"
+    },
+    {
+      "angle": "22 ottobre: Napoli senza carburante e con scaffali vuoti; misure del governo.",
+      "area": "Italia",
+      "at": "2026-10-23T07:23:40+02:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/"
+    }
+  ],
+  "status": "archived",
+  "summary": "Il 22 ottobre il Garante degli scioperi chiede la precettazione dell'autotrasporto, perché i blocchi sono «diffusi e resistenti». Il governo approva un decreto con 105 milioni per i trasportatori e 70 per agricoltura e pesca. A Napoli, secondo Il Post, mancano molti prodotti nei supermercati e quasi tutti i distributori sono senza carburante.",
+  "tags": [
+    "Caro vita",
+    "Italia",
+    "Carburanti",
+    "Autotrasporto"
+  ],
+  "title": "Italia: blocchi degli autotrasportatori, a Napoli scaffali vuoti e distributori senza carburante; il Garante chiede la precettazione, il governo stanzia fondi",
+  "updated": "2026-10-23T07:23:40+02:00",
+  "view": "È accertato, secondo ANSA e Il Post, che il 22 ottobre il governo ha approvato fondi per autotrasporto, agricoltura e pesca e che il Garante degli scioperi ha chiesto la precettazione. Gli effetti sul territorio sono documentati soprattutto da Il Post, per Napoli e la Campania; ANSA non li quantifica. Non ci sono letture opposte tra le due testate.\n\nConta perché i blocchi toccano carburante, alimentari e sanità in una grande città e si sommano alle proteste sul caro vita. Da guardare: se il ministro dispone la precettazione, se i 105 milioni bastano a fermare i blocchi e quando riprendono le forniture a Napoli."
+}

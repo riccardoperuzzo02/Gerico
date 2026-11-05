@@ -911,9 +911,9 @@
         v = (b[1] - a[1]) / Math.max(1, b[0] - a[0]);
       }
       const d = side;
-      // dove arriverebbe la pagina lasciata andare con questa velocità: oltre un terzo, si passa
-      const proj = x + v * 200;
-      const go = !cancelled && d && can(d) && -d * x > 6 && -d * proj > W * 0.34;
+      // dove arriverebbe la pagina lasciata andare con questa velocità: oltre un terzo abbondante, si passa
+      const proj = x + v * 220;
+      const go = !cancelled && d && can(d) && -d * x > 6 && -d * proj > W * 0.32;
       if (G.reduced()) {
         clear();
         if (go) { if (opt.commit) opt.commit(d); else (d > 0 ? opt.next : opt.prev)(reset, 0); }

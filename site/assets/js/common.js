@@ -897,9 +897,13 @@
       place();
       if (opt.progress && can(d)) opt.progress(Math.min(1, Math.abs(x) / W), d);
     }, { passive: false });
+    // un tocco finito dopo uno swipe non apre la notizia su cui si è alzato il dito
+    let swiped = 0;
+    P.on(area, "click", (e) => { if (performance.now() - swiped < 400) { e.preventDefault(); e.stopPropagation(); } }, { capture: true });
     const release = (cancelled) => {
       if (mode !== "x") { mode = ""; return; }
       mode = "";
+      swiped = performance.now();
       const now = performance.now();
       let v = 0;
       if (!cancelled && track.length > 1 && now - track[track.length - 1][0] < 60) {

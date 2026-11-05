@@ -247,7 +247,6 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100svh - var(--t
 @media (min-width: 760px) { .large { padding-top: 26px; } .large h1 { font-size: 2.5rem; } }
 .edition-sub { margin-top: 2px; min-height: 1.5em; font-size: 0.9375rem; color: var(--muted); }
 .edition-sub .ed-s { display: none; }
-.intro a { font-weight: 700; }
 .sec-nav {
   position: sticky; top: var(--top-h); z-index: 20;
   margin: 8px -16px 0; padding: 8px 16px;
@@ -627,7 +626,7 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 /* ---------- stampa: solo il testo, sezioni aperte, link scritti per intero ---------- */
 @media print {
   .top, .menu, .sec-nav, .foot, .skip, .side, .story-side, .share, .next, .btn-text, .chips, .t-tools, .tv, .t-status,
-  .tagbox, .chev, .end, .toast, .intro { display: none !important; }
+  .tagbox, .chev, .end, .toast { display: none !important; }
   html, body { background: #FFFFFF !important; color: #000000 !important; }
   body { font-size: 11pt; }
   main { min-height: 0; }

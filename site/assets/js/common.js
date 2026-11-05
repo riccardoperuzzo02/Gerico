@@ -314,6 +314,16 @@
     if (!on || !on.offsetWidth) { ind.style.opacity = "0"; ind._pos = null; return; }
     const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos;
     ind.style.opacity = "";
+    if (ind._follow) {
+      // l'indicatore arriva da uno swipe (scala e transizione proprie): si mette al suo posto così com'è
+      ind._follow = false;
+      ind.style.transition = "none";
+      ind.style.width = w + "px";
+      ind.style.transform = "translateX(" + x + "px)";
+      void ind.offsetWidth;
+      ind.style.transition = "";
+      instant = true;
+    }
     ind.style.width = w + "px";
     if (prev && !instant && !G.reduced() && (prev.x !== x || prev.w !== w)) {
       ind.style.transition = "none";
@@ -792,11 +802,24 @@
   //   senza peek, next(reset, off, anim) e prev(...): la storia vicina arriva con la transizione di pagina.
   const NOSWIPE = "input, textarea, select, [contenteditable], .ultim, [data-noswipe]";
   const SWIPE_GAP = 28;
-  // curva che parte alla velocità del dito (v in px/ms verso l'arrivo) e si posa piano, senza superare l'arrivo
+  // Il passaggio dopo il rilascio è una molla senza rimbalzo: parte alla velocità del dito (v in px/ms verso l'arrivo),
+  // accelera o rallenta in modo continuo e si posa piano. La curva è scritta a punti con linear(); dove il browser non la
+  // conosce, una cubic-bezier simile. Più è veloce il colpo, più è breve.
+  const LINEAR = typeof CSS !== "undefined" && !!CSS.supports && CSS.supports("animation-timing-function", "linear(0, 0.5, 1)");
   G.swipeAnim = (v, dist) => {
-    const D = Math.round(Math.min(520, Math.max(380, 2.6 * dist / Math.max(v, 0.6))));
-    const y1 = Math.min(0.9, Math.max(0, (v * D / Math.max(dist, 1)) * 0.22));
-    return { D, ease: "cubic-bezier(0.22, " + y1.toFixed(3) + ", 0.2, 1)" };
+    const d = Math.max(dist, 1), vn = Math.max(0, v) / d;     // velocità in frazioni della corsa al ms
+    const w = Math.max(4.6 / 330, vn);                          // a riposo: 95% della corsa in circa 330 ms
+    const B = w - vn;                                           // con w ≥ vn la molla non supera mai l'arrivo
+    const left = (t) => (1 + B * t) * Math.exp(-w * t);        // quanto manca (1 all'inizio, 0 all'arrivo)
+    let D = 260;
+    while (D < 760 && left(D) > 0.004) D += 10;
+    if (!LINEAR) {
+      const y1 = Math.min(0.9, (vn * D) * 0.25);
+      return { D, ease: "cubic-bezier(0.25, " + y1.toFixed(3) + ", 0.25, 1)" };
+    }
+    const pts = [];
+    for (let i = 0; i <= 24; i++) pts.push(i === 24 ? "1" : (1 - left((D * i) / 24)).toFixed(4));
+    return { D, ease: "linear(" + pts.join(", ") + ")" };
   };
   // la resistenza oltre l'ultima pagina: più tiri, meno si sposta (la formula dei bordi di iOS)
   const rubber = (x, w) => Math.sign(x) * (1 - 1 / (Math.abs(x) * 0.55 / w + 1)) * w * 0.55;
@@ -805,7 +828,8 @@
     if (!area || !("ontouchstart" in window)) return;
     const follows = () => [].concat(typeof opt.follow === "function" ? opt.follow() : (opt.follow || area)).filter(Boolean);
     const can = (d) => (d > 0 ? opt.canNext() : opt.canPrev());
-    let x0 = 0, y0 = 0, t0 = 0, mode = "", track = [], peeks = {}, W = 0, side = 0, lock = 0, x = 0, busy = null, anims = [];
+    let x0 = 0, y0 = 0, t0 = 0, mode = "", track = [], peeks = {}, W = 0, side = 0, lock = 0, x = 0, busy = null, anims = [], raf = 0;
+    const drop = (el) => (opt.drop ? opt.drop(el) : el.remove());
     // dentro un elemento che scorre di lato (schede lunghe, tabelle larghe) il gesto è suo
     const scrollsX = (el) => {
       for (let n = el; n && n !== area && n !== document.body; n = n.parentElement) {
@@ -814,14 +838,20 @@
       return false;
     };
     const place = () => {
+      raf = 0;
       follows().forEach((el) => { el.style.transform = tx(x); });
       [1, -1].forEach((d) => { if (peeks[d]) peeks[d].style.transform = tx(x + d * W); });
+      if (opt.progress && side && can(side)) opt.progress(Math.min(1, Math.abs(x) / W), side);
     };
+    // il dito manda più eventi di quanti fotogrammi ci sono: si scrive una volta per fotogramma, sempre l'ultima posizione
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(place); };
+    const flush = () => { if (raf) { cancelAnimationFrame(raf); place(); } };
     const clear = () => {
+      if (raf) { cancelAnimationFrame(raf); raf = 0; }
       anims.forEach((a) => a.cancel());
       anims = [];
       follows().forEach((el) => { el.style.transform = ""; el.style.willChange = ""; });
-      [1, -1].forEach((d) => { if (peeks[d]) peeks[d].remove(); });
+      [1, -1].forEach((d) => { if (peeks[d]) drop(peeks[d]); });
       peeks = {}; x = 0; side = 0;
     };
     // compatibilità con le pagine senza peek: reset(true) torna al posto con un'animazione
@@ -830,6 +860,7 @@
       settle(0, 0, () => {});
     };
     const settle = (to, v, done, d) => {
+      flush();
       const from = x, dist = Math.abs(to - from);
       const toward = to === from ? 0 : Math.max(0, v * Math.sign(to - from));
       const anim = G.swipeAnim(toward, dist);
@@ -840,17 +871,25 @@
       follows().forEach((el) => move(el, from, to));
       [1, -1].forEach((k) => { if (peeks[k]) move(peeks[k], from + k * W, to + k * W); });
       anims = all;
-      const job = { done };
+      const job = { done, keep: to ? peeks[d] : null };
       busy = job;
       Promise.all(all.map((a) => a.finished)).then(() => { if (busy === job) finishBusy(); }, () => {});
     };
-    // a pagina arrivata il cambio vero e la pulizia stanno nello stesso fotogramma: niente scatti
+    // a pagina arrivata il cambio vero e la pulizia stanno nello stesso fotogramma. La pagina accanto (coprente) resta
+    // sopra ancora due fotogrammi, finché quella vera sotto è disegnata: così le scritte non compaiono dal nulla
     const finishBusy = () => {
       const job = busy;
       busy = null;
       if (!job) return;
       job.done();
+      const keep = job.keep && peeks[side] === job.keep ? job.keep : null;
+      if (keep) { keep.getAnimations().forEach((a) => a.cancel()); keep.style.transform = "none"; anims = anims.filter((a) => a.effect && a.effect.target !== keep); delete peeks[side]; }
+      const still = follows();
       clear();
+      if (keep) {
+        still.forEach((el) => { el.style.willChange = "transform"; });
+        requestAnimationFrame(() => requestAnimationFrame(() => { drop(keep); still.forEach((el) => { if (!el.style.transform) el.style.willChange = ""; }); }));
+      }
     };
     P.on(area, "touchstart", (e) => {
       // un tocco mentre la pagina si posa la fa arrivare subito: si riparte da lì
@@ -884,7 +923,7 @@
       if (track.length > 12) track.shift();
       const dx = t.clientX - x0, d = dx < 0 ? 1 : dx > 0 ? -1 : lock, still = G.reduced();
       if (d !== side) {
-        if (side && opt.progress && !still) opt.progress(0, side);
+        if (side && opt.progress && !still && can(side)) opt.progress(0, side);
         side = d;
         if (opt.peek && can(d) && !peeks[d] && !still) {
           const p = opt.peek(d);
@@ -894,8 +933,7 @@
       // con una pagina accanto si segue il dito uno a uno; oltre l'ultima, resistenza
       x = can(d) ? (Math.abs(dx) <= W ? dx : Math.sign(dx) * (W + rubber(Math.abs(dx) - W, W))) : rubber(dx, W);
       if (still) return;
-      place();
-      if (opt.progress && can(d)) opt.progress(Math.min(1, Math.abs(x) / W), d);
+      schedule();
     }, { passive: false });
     // un tocco finito dopo uno swipe non apre la notizia su cui si è alzato il dito
     let swiped = 0;
@@ -904,11 +942,15 @@
       if (mode !== "x") { mode = ""; return; }
       mode = "";
       swiped = performance.now();
+      flush();
       const now = performance.now();
       let v = 0;
-      if (!cancelled && track.length > 1 && now - track[track.length - 1][0] < 60) {
-        const a = track[0], b = track[track.length - 1];
-        v = (b[1] - a[1]) / Math.max(1, b[0] - a[0]);
+      // la velocità del dito negli ultimi 60 ms; se si era fermato prima di alzarsi, zero
+      if (!cancelled && track.length > 1 && now - track[track.length - 1][0] < 80) {
+        const b = track[track.length - 1];
+        let a = track[0];
+        for (let i = track.length - 2; i >= 0; i--) { a = track[i]; if (b[0] - a[0] >= 60) break; }
+        v = (b[1] - a[1]) / Math.max(8, b[0] - a[0]);
       }
       const d = side;
       // dove arriverebbe la pagina lasciata andare con questa velocità: oltre un terzo abbondante, si passa
@@ -933,22 +975,28 @@
     P.on(area, "touchcancel", () => release(true), { passive: true });
   };
   // l'indicatore di un gruppo di schede segue lo swipe: p da 0 a 1 verso la scheda vicina (d = 1 dopo, -1 prima);
-  // con anim si posa insieme alla pagina, alla stessa velocità
+  // con anim si posa insieme alla pagina, con la stessa molla. Solo transform: niente ricalcolo della pagina a ogni passo
   G.segFollow = (box, p, d, anim) => {
     const ind = box && box.querySelector(":scope > .seg-ind");
     if (!ind) return;
-    const btns = Array.from(box.querySelectorAll(":scope > button, :scope > a"));
-    const on = btns.findIndex((b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true");
-    const a = btns[on], b = btns[on + d];
-    if (!a || !b) return;
-    const x = a.offsetLeft + (b.offsetLeft - a.offsetLeft) * p, w = a.offsetWidth + (b.offsetWidth - a.offsetWidth) * p;
-    ind.style.transition = anim ? "transform " + anim.D + "ms " + anim.ease + ", width " + anim.D + "ms " + anim.ease : "none";
-    ind.style.width = w.toFixed(1) + "px";
-    ind.style.transform = "translateX(" + x.toFixed(1) + "px)";
+    let g = ind._g;
+    if (!g || g.d !== d || !g.at || g.at + 1500 < performance.now()) {
+      const btns = Array.from(box.querySelectorAll(":scope > button, :scope > a"));
+      const on = btns.findIndex((b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true");
+      const a = btns[on], b = btns[on + d];
+      if (!a || !b) return;
+      g = ind._g = { d, xa: a.offsetLeft, wa: a.offsetWidth, xb: b.offsetLeft, wb: b.offsetWidth, at: 0 };
+      ind.style.width = g.wa + "px";
+    }
+    g.at = performance.now();
+    const x = g.xa + (g.xb - g.xa) * p, s = (g.wa + (g.wb - g.wa) * p) / g.wa;
+    ind._follow = true;
+    ind.style.transition = anim ? "transform " + anim.D + "ms " + anim.ease : "none";
+    ind.style.transform = "translateX(" + x.toFixed(1) + "px) scaleX(" + s.toFixed(4) + ")";
     if (anim) {
-      // a fine corsa G.seg trova l'indicatore già al suo posto e non lo rifà partire
-      ind._pos = p >= 1 ? { x: b.offsetLeft, w: b.offsetWidth } : { x: a.offsetLeft, w: a.offsetWidth };
-      P.later(() => { ind.style.transition = ""; }, anim.D + 40);
+      // a fine corsa G.seg trova l'indicatore già al suo posto e lo fissa senza farlo ripartire
+      ind._pos = p >= 1 ? { x: g.xb, w: g.wb } : { x: g.xa, w: g.wa };
+      ind._g = null;
     }
   };
   // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart

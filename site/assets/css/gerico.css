@@ -1367,9 +1367,11 @@ body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
 @keyframes vt-from-l { from { transform: translateX(-28%); } }
 
 /* swipe: la pagina vicina (sezione, vista della mappa, gruppo di grafici) sta accanto, intera, e arriva con il dito */
-.feed-peek { z-index: 1; }
+.feed-peek { z-index: 1; background: var(--ground); }
+/* la cornice della sezione accanto: ferma sullo schermo, sotto le barre in alto, ritaglia la pagina ai lati */
+.peek-frame { position: fixed; left: 0; right: 0; z-index: 10; overflow: hidden; pointer-events: none; }
 .t-peek { position: absolute; left: 0; top: 0; pointer-events: none; }
-.gr-peek { position: absolute; pointer-events: none; }
+.gr-peek { position: absolute; pointer-events: none; background: var(--t-panel); }
 #map-panel, #p-grafici { overflow-x: clip; }
 /* il testo del piede si sposta con la pagina durante lo swipe: senza uscire di lato */
 .foot { overflow-x: clip; }
@@ -1390,3 +1392,66 @@ body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
 @keyframes vt-sw-in-r { from { transform: translateX(calc(100% + 28px + var(--sx, 0px))); } to { transform: none; } }
 @keyframes vt-sw-out-r { from { transform: translateX(var(--sx, 0px)); } to { transform: translateX(calc(100% + 28px)); } }
 @keyframes vt-sw-in-l { from { transform: translateX(calc(-100% - 28px + var(--sx, 0px))); } to { transform: none; } }
+
+/* ========== 5 novembre, sera: più aria ========== */
+/* più spazio tra i blocchi e dentro i riquadri, righe un po' più ariose; i caratteri restano quelli */
+/* prima pagina */
+.home .large { padding-top: 26px; }
+.listen { margin-top: 16px; padding: 14px 16px 16px 14px; gap: 0 14px; }
+.ticker { margin-top: 14px; padding: 14px 16px 16px; }
+.tk-row { margin-top: 12px; gap: 10px; }
+.tk-ev { margin-top: 14px; }
+.home .sec-nav { margin-top: 18px; }
+.lead { margin-top: 22px; padding: 24px 20px 22px; }
+.kick { margin-bottom: 10px; }
+.lead .sum { margin-top: 14px; line-height: 1.55; }
+.line { margin-top: 12px; }
+.list .item { padding: 24px 0; }
+.blk { padding: 38px 0 16px; }
+.blk-sub { margin-top: 6px; }
+.brevi { margin-top: 12px; }
+.brevi li { padding: 16px 0; }
+.end { padding: 34px 0 14px; }
+.mk-box { margin: 34px 0 12px; padding: 20px 20px 8px; }
+.mk-box th, .mk-box td, .linked th, .linked td { padding-top: 13px; padding-bottom: 13px; }
+.foot { margin-top: 44px; padding-top: 10px; }
+/* storia */
+.story-main h1 { margin-top: 10px; }
+.story-main .sum { margin-top: 18px; }
+.block { margin-top: 44px; }
+.facts { margin-top: 10px; }
+.facts li { padding: 16px 0; }
+.div-item { margin-top: 16px; padding: 20px; }
+.view-panel { margin-top: 44px; padding: 22px 22px 24px; }
+.view-panel p { margin-top: 12px; }
+.srcs li { padding: 16px 0; }
+.hist li { padding: 14px 0; }
+.openq li + li { margin-top: 10px; }
+.next { margin-top: 40px; }
+.story-side { padding-top: 26px; }
+.story-side > section:first-child { padding: 20px 20px 8px; }
+.linked { margin-top: 26px; padding: 20px 20px 8px; }
+/* Terminal */
+.t-main { gap: 20px; padding-top: 20px; padding-bottom: 20px; }
+.t-side { gap: 20px; }
+.t-panel { padding: 20px; }
+.t-sub { margin: 12px 0 16px; }
+.t-asof { margin: -10px 0 16px; }
+.t-legend { margin-top: 16px; }
+.t-detail { margin-top: 14px; padding: 14px 16px; }
+.t-table { margin-top: 12px; }
+.t-table th[scope="row"] { padding: 12px 0; }
+.t-table td { padding-top: 12px; padding-bottom: 12px; }
+.t-agenda li { padding: 13px 0; }
+.q-head { margin-top: 14px; padding-bottom: 6px; }
+.q-row { min-height: 54px; padding: 8px 0; }
+.t-charts { padding-bottom: 20px; }
+@media (max-width: 759px) {
+  .lead { padding: 22px 18px 20px; }
+  .mk-box, .linked, .story-side > section:first-child { padding-left: 16px; padding-right: 16px; }
+  .t-panel { padding: 18px 16px; }
+}
+/* schermi molto stretti o testo molto grande: margini di prima, il testo ha bisogno di spazio in larghezza */
+@media (max-width: 359px) {
+  .lead, .mk-box, .linked, .story-side > section:first-child, .t-panel { padding-left: 12px; padding-right: 12px; }
+}

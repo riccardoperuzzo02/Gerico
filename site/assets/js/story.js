@@ -140,7 +140,12 @@ G.page("story", async function (P) {
   };
   const afterPass = () => requestAnimationFrame(() => setTimeout(fill, 0));
   const pass = window.gericoVT;
-  if (pass && pass.finished) pass.finished.then(afterPass, afterPass); else afterPass();
+  // con lo swipe e sul telefono la pagina entra intera e scorre tutta insieme: il resto deve già esserci nella fotografia
+  // della transizione, così nessuna scritta compare dopo. Sul computer il titolo vola e il resto arriva a passaggio finito
+  const whole = !!document.documentElement.dataset.swipe || matchMedia("(max-width: 759px)").matches;
+  if (pass && pass.finished && whole) fill();
+  else if (pass && pass.finished) pass.finished.then(afterPass, afterPass);
+  else afterPass();
 
   // ---------- eventi ----------
   // arrivati dalla prima pagina, «Prima pagina» torna indietro: stessa posizione e titolo che rifà il percorso

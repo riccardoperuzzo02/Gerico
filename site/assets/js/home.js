@@ -325,11 +325,13 @@ G.page("home", async function (P) {
   function sectionTop() {
     const feed = $("feed"), nav = document.querySelector(".home .sec-nav"), fr = feed.getBoundingClientRect();
     if (!nav) return { top: fr.top, scroll: null };
-    // dove starebbe la barra senza lo scorrimento: un attimo ferma, letta e rimessa com'era, prima che lo schermo si ridisegni
-    const was = nav.style.position;
-    nav.style.position = "static";
-    const natural = nav.getBoundingClientRect().top + scrollY;
-    nav.style.position = was;
+    // dove starebbe la barra senza lo scorrimento: subito sotto l'elemento che la precede (che non è mai fermo in alto),
+    // con il margine più grande dei due. Solo letture: niente ricalcolo della pagina
+    let el = nav.previousElementSibling;
+    while (el && !el.offsetHeight) el = el.previousElementSibling;
+    if (!el) return { top: fr.top, scroll: null };
+    const gap = Math.max(parseFloat(getComputedStyle(el).marginBottom) || 0, parseFloat(getComputedStyle(nav).marginTop) || 0);
+    const natural = el.getBoundingClientRect().bottom + gap + scrollY;
     const s = Math.max(0, Math.round(natural - (parseFloat(getComputedStyle(nav).top) || 0)));
     return scrollY > s + 1 ? { top: fr.top + (scrollY - s), scroll: s } : { top: fr.top, scroll: null };
   }
@@ -390,24 +392,31 @@ G.page("home", async function (P) {
   G.swipe($("main") || $("feed").parentElement, {
     follow: () => (stacked() ? [$("feed"), $("side"), document.querySelector(".foot > .wrap")] : [$("feed")]),
     canNext: () => !!step(1), canPrev: () => !!step(-1),
+    // la sezione accanto è ferma rispetto allo schermo (in una cornice fissa che la ritaglia ai lati): se alla fine la
+    // pagina deve risalire all'inizio della sezione, lei non si muove. Ha il fondo della pagina e copre quello che c'è sotto
     peek: (d) => {
       const k = step(d);
       if (!k) return null;
-      const feed = $("feed"), box = feed.parentElement, side = $("side"), st = sectionTop();
-      const fr = feed.getBoundingClientRect(), br = box.getBoundingClientRect();
+      const feed = $("feed"), side = $("side"), st = sectionTop(), fr = feed.getBoundingClientRect();
+      const h = Math.max(0, innerHeight - st.top + 40);
+      const frame = document.createElement("div");
+      frame.className = "peek-frame";
+      frame.style.top = st.top.toFixed(1) + "px";
+      frame.style.height = h + "px";
       const p = document.createElement("div");
       p.className = "feed-ghost feed-peek";
       p.setAttribute("aria-hidden", "true");
-      p.style.top = (st.top - br.top - box.clientTop) + "px";
-      p.style.left = (fr.left - br.left - box.clientLeft) + "px";
+      p.style.top = "0px";
+      p.style.left = fr.left.toFixed(1) + "px";
       p.style.width = fr.width + "px";
-      p.style.height = Math.max(0, innerHeight - st.top + 40) + "px";
+      p.style.height = h + "px";
       // come #feed (flow-root): stessi margini dentro, stesse altezze
       const list = document.createElement("div");
       list.style.display = "flow-root";
       list.innerHTML = feedMarkupFor(k);
       p.appendChild(list);
-      box.appendChild(p);
+      frame.appendChild(p);
+      document.body.appendChild(frame);
       // sotto l'elenco nuovo anche il riquadro dei mercati, dove starà davvero: la pagina accanto è intera
       if (stacked()) {
         const sr = side.getBoundingClientRect(), c = side.cloneNode(true);
@@ -417,6 +426,7 @@ G.page("home", async function (P) {
       p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
       return p;
     },
+    drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); },
     commit: (d) => {
       const k = step(d);
       if (!k) return;

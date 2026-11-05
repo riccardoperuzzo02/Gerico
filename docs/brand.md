@@ -38,6 +38,7 @@ Un solo giallo. Il giallo non si usa per i testi su fondo chiaro (non si legge):
 - Raggio dei riquadri 14 px; riquadri bianchi con un filo da 1 px, senza ombre in chiaro.
 - Margini laterali 16 px sul telefono.
 - Aree da toccare di almeno 44 px.
+- Aria: righe dell'elenco a 24 px, blocchi a 38-44 px l'uno dall'altro, riquadri con 20 px dentro (16 sul telefono, 12 sotto i 360 px). Le regole stanno in fondo a `gerico.css`, sotto «più aria».
 
 ## Movimento
 
@@ -46,7 +47,7 @@ Un solo giallo. Il giallo non si usa per i testi su fondo chiaro (non si legge):
 - Solo `transform` e `opacity`. Con «riduci movimento» resta una dissolvenza breve.
 - Pagine sul telefono: si spingono come in un'app. Avanti la nuova entra intera da destra e la vecchia scivola un po' sotto; indietro la pagina in cima esce a destra. La barra in alto e quella del riepilogo restano ferme. Sul computer le pagine scivolano di poco e si incrociano.
 - Notizie e Terminal stanno una accanto all'altra (il Terminal a destra, come nell'interruttore) e si spingono intere, barra in alto compresa.
-- Swipe (sezioni della prima pagina, mappa e grafici del Terminal, storie): il contenuto sta attaccato al dito, uno a uno, e quello accanto entra dal lato, intero, a 28 px di distanza, insieme all'indicatore delle schede. Al rilascio prosegue con la velocità del dito e si posa piano in 380-520 ms (`G.swipeAnim`); passa con un colpo deciso o oltre un terzo della larghezza. Oltre l'ultima pagina fa resistenza, come su iOS. Una sezione nuova comincia dall'inizio, sotto la barra delle sezioni. Toccando una sezione le pagine scorrono attaccate in 440 ms.
+- Swipe (sezioni della prima pagina, mappa e grafici del Terminal, storie): il contenuto sta attaccato al dito, uno a uno, e quello accanto entra dal lato, intero, a 28 px di distanza, insieme all'indicatore delle schede. Al rilascio prosegue con la velocità del dito e si posa come una molla senza rimbalzo (`G.swipeAnim`: curva `linear()` a punti, 0,26-0,76 s, più breve se il colpo è veloce); passa con un colpo deciso o oltre un terzo della larghezza. La pagina accanto copre quella sotto e resta finché la vera è disegnata. Oltre l'ultima pagina fa resistenza, come su iOS. Una sezione nuova comincia dall'inizio, sotto la barra delle sezioni. Toccando una sezione le pagine scorrono attaccate in 440 ms.
 - Entrata: a ogni nuova apertura del sito il tratto attraversa il nome al centro, il nome aspetta che le notizie siano pronte (al massimo 1,5 s), va al suo posto e le notizie salgono a cascata.
 
 ## Voce

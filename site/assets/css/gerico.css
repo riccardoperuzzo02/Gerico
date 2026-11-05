@@ -247,8 +247,6 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100svh - var(--t
 @media (min-width: 760px) { .large { padding-top: 26px; } .large h1 { font-size: 2.5rem; } }
 .edition-sub { margin-top: 2px; min-height: 1.5em; font-size: 0.9375rem; color: var(--muted); }
 .edition-sub .ed-s { display: none; }
-.intro { display: none; margin-top: 12px; font-size: 0.9375rem; line-height: 1.5; color: var(--muted); }
-.first-visit .intro { display: block; }
 .intro a { font-weight: 700; }
 .sec-nav {
   position: sticky; top: var(--top-h); z-index: 20;
@@ -1368,3 +1366,28 @@ body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
 @keyframes vt-under-l { to { transform: translateX(-28%); } }
 @keyframes vt-away-r { to { transform: translateX(100%); } }
 @keyframes vt-from-l { from { transform: translateX(-28%); } }
+
+/* swipe: la pagina vicina (sezione, vista della mappa, gruppo di grafici) sta accanto, intera, e arriva con il dito */
+.feed-peek { z-index: 1; }
+.t-peek { position: absolute; left: 0; top: 0; pointer-events: none; }
+.gr-peek { position: absolute; pointer-events: none; }
+#map-panel, #p-grafici { overflow-x: clip; }
+/* il testo del piede si sposta con la pagina durante lo swipe: senza uscire di lato */
+.foot { overflow-x: clip; }
+#p-grafici { position: relative; }
+/* swipe tra le storie: la pagina riparte da dove l'ha lasciata il dito, alla sua velocità, e la storia vicina entra
+   attaccata e intera, come nelle sezioni della prima pagina */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-swipe][data-vt]::view-transition-old(root), html[data-swipe][data-vt]::view-transition-new(root) {
+    animation-duration: var(--sdur, 460ms); animation-timing-function: var(--sease, var(--ease-push)); animation-fill-mode: both; animation-delay: 0s;
+    mix-blend-mode: normal; box-shadow: none;
+  }
+  html[data-swipe][data-vt="forward"]::view-transition-old(root) { z-index: 0; animation-name: vt-sw-out-l; }
+  html[data-swipe][data-vt="forward"]::view-transition-new(root) { z-index: 1; animation-name: vt-sw-in-r; }
+  html[data-swipe][data-vt="back"]::view-transition-old(root) { z-index: 0; animation-name: vt-sw-out-r; }
+  html[data-swipe][data-vt="back"]::view-transition-new(root) { z-index: 1; animation-name: vt-sw-in-l; }
+}
+@keyframes vt-sw-out-l { from { transform: translateX(var(--sx, 0px)); } to { transform: translateX(calc(-100% - 28px)); } }
+@keyframes vt-sw-in-r { from { transform: translateX(calc(100% + 28px + var(--sx, 0px))); } to { transform: none; } }
+@keyframes vt-sw-out-r { from { transform: translateX(var(--sx, 0px)); } to { transform: translateX(calc(100% + 28px)); } }
+@keyframes vt-sw-in-l { from { transform: translateX(calc(-100% - 28px + var(--sx, 0px))); } to { transform: none; } }

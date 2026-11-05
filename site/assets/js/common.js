@@ -657,7 +657,7 @@
     // come farebbe lo script nell'head della pagina nuova: il Terminal è sempre scuro, le altre pagine seguono il tema scelto
     const theme = name === "terminal" ? null : G.ls.get("gerico.theme", null);
     if (theme) htmlEl.setAttribute("data-theme", theme); else htmlEl.removeAttribute("data-theme");
-    htmlEl.classList.remove("intro-run", "intro-open", "intro-go", "first-visit", "menu-open", "scrolled");
+    htmlEl.classList.remove("intro-run", "intro-open", "intro-go", "menu-open", "scrolled");
     const b = document.body, keep = document.getElementById("gp");
     Array.from(b.attributes).forEach((at) => b.removeAttribute(at.name));
     Array.from(doc.body.attributes).forEach((at) => b.setAttribute(at.name, at.value));
@@ -715,12 +715,21 @@
     const animate = document.startViewTransition && !G.reduced() && !opt.instant;
     if (!animate) { await swap(); finish(); return; }
     htmlEl.dataset.vt = opt.dir === "back" ? "back" : "forward";
-    if (opt.swipe) htmlEl.dataset.swipe = "1";
+    if (opt.swipe) {
+      htmlEl.dataset.swipe = "1";
+      // dopo uno swipe la pagina riparte da dove l'ha lasciata il dito, alla sua velocità (CSS: --sx, --sdur, --sease)
+      htmlEl.style.setProperty("--sx", (opt.sx || 0).toFixed(1) + "px");
+      if (opt.anim) { htmlEl.style.setProperty("--sdur", opt.anim.D + "ms"); htmlEl.style.setProperty("--sease", opt.anim.ease); }
+    }
     // tra Notizie e Terminal cambia anche il tema: la barra in alto sfuma da un colore all'altro e la pillola dell'interruttore scivola
     if (opt.mode) htmlEl.dataset.mode = "1";
     const t = document.startViewTransition(swap);
     window.gericoVT = t;
-    t.finished.then(finish, finish).finally(() => { delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; delete htmlEl.dataset.mode; if (window.gericoVT === t) window.gericoVT = null; });
+    t.finished.then(finish, finish).finally(() => {
+      delete htmlEl.dataset.vt; delete htmlEl.dataset.swipe; delete htmlEl.dataset.mode;
+      ["--sx", "--sdur", "--sease"].forEach((k) => htmlEl.style.removeProperty(k));
+      if (window.gericoVT === t) window.gericoVT = null;
+    });
   };
   if (soft) {
     try { history.replaceState(Object.assign({}, history.state, { g: 1, n: 0 }), ""); } catch (e) { /* niente */ }
@@ -771,14 +780,32 @@
   }
 
   // ---------- swipe: scorrere di lato per passare alla sezione, al gruppo o alla storia vicina ----------
-  // Conta solo un gesto orizzontale e deciso. I bordi dello schermo restano a iOS (indietro e avanti);
-  // gli elementi che scorrono da soli (fasce, controlli, tabelle) e i campi di testo non lo fanno partire.
-  // Lo scorrimento verticale non si blocca mai: gli ascoltatori sono passivi. Pulsanti e schede restano: è una scorciatoia.
+  // Il contenuto sta attaccato al dito e quello vicino entra dal lato, intero e alla stessa velocità, come due pagine
+  // affiancate. Al rilascio la pagina prosegue con la velocità del dito e si posa piano, senza rimbalzi; dove oltre non
+  // c'è niente il contenuto fa resistenza, come su iOS. Basta un colpo deciso o una pagina portata oltre un terzo.
+  // I bordi dello schermo restano a iOS (indietro e avanti); gli elementi che scorrono da soli (fasce, controlli, tabelle)
+  // e i campi di testo non lo fanno partire. Pulsanti e schede restano: è una scorciatoia.
+  // opt: canNext(), canPrev(); follow: l'elemento (o gli elementi) che si spostano;
+  //   peek(d): il contenuto vicino (d = 1 dopo, -1 prima), già nella pagina e messo sopra quello di adesso;
+  //   commit(d): il cambio vero, senza animazioni, quando la pagina vicina è arrivata al suo posto;
+  //   progress(p, d, anim): per l'indicatore delle schede (p da 0 a 1 verso la scheda vicina);
+  //   senza peek, next(reset, off, anim) e prev(...): la storia vicina arriva con la transizione di pagina.
   const NOSWIPE = "input, textarea, select, [contenteditable], .ultim, [data-noswipe]";
+  const SWIPE_GAP = 28;
+  // curva che parte alla velocità del dito (v in px/ms verso l'arrivo) e si posa piano, senza superare l'arrivo
+  G.swipeAnim = (v, dist) => {
+    const D = Math.round(Math.min(520, Math.max(380, 2.6 * dist / Math.max(v, 0.6))));
+    const y1 = Math.min(0.9, Math.max(0, (v * D / Math.max(dist, 1)) * 0.22));
+    return { D, ease: "cubic-bezier(0.22, " + y1.toFixed(3) + ", 0.2, 1)" };
+  };
+  // la resistenza oltre l'ultima pagina: più tiri, meno si sposta (la formula dei bordi di iOS)
+  const rubber = (x, w) => Math.sign(x) * (1 - 1 / (Math.abs(x) * 0.55 / w + 1)) * w * 0.55;
+  const tx = (x) => (x ? "translate3d(" + x.toFixed(1) + "px,0,0)" : "none");
   G.swipe = (area, opt) => {
     if (!area || !("ontouchstart" in window)) return;
-    const follow = opt.follow || area;
-    let x0 = 0, y0 = 0, t0 = 0, dx = 0, off = 0, mode = "";
+    const follows = () => [].concat(typeof opt.follow === "function" ? opt.follow() : (opt.follow || area)).filter(Boolean);
+    const can = (d) => (d > 0 ? opt.canNext() : opt.canPrev());
+    let x0 = 0, y0 = 0, t0 = 0, mode = "", track = [], peeks = {}, W = 0, side = 0, lock = 0, x = 0, busy = null, anims = [];
     // dentro un elemento che scorre di lato (schede lunghe, tabelle larghe) il gesto è suo
     const scrollsX = (el) => {
       for (let n = el; n && n !== area && n !== document.body; n = n.parentElement) {
@@ -786,46 +813,139 @@
       }
       return false;
     };
+    const place = () => {
+      follows().forEach((el) => { el.style.transform = tx(x); });
+      [1, -1].forEach((d) => { if (peeks[d]) peeks[d].style.transform = tx(x + d * W); });
+    };
+    const clear = () => {
+      anims.forEach((a) => a.cancel());
+      anims = [];
+      follows().forEach((el) => { el.style.transform = ""; el.style.willChange = ""; });
+      [1, -1].forEach((d) => { if (peeks[d]) peeks[d].remove(); });
+      peeks = {}; x = 0; side = 0;
+    };
+    // compatibilità con le pagine senza peek: reset(true) torna al posto con un'animazione
     const reset = (smooth) => {
-      off = 0;
-      if (!smooth || G.reduced()) { follow.style.transition = ""; follow.style.transform = ""; follow.style.opacity = ""; return; }
-      follow.style.transition = "transform 260ms cubic-bezier(0.32, 0.72, 0, 1), opacity 260ms cubic-bezier(0.32, 0.72, 0, 1)";
-      follow.style.transform = "";
-      follow.style.opacity = "";
-      P.later(() => { follow.style.transition = ""; }, 280);
+      if (!smooth || G.reduced()) { clear(); return; }
+      settle(0, 0, () => {});
+    };
+    const settle = (to, v, done, d) => {
+      const from = x, dist = Math.abs(to - from);
+      const toward = to === from ? 0 : Math.max(0, v * Math.sign(to - from));
+      const anim = G.swipeAnim(toward, dist);
+      if (opt.progress && side) opt.progress(to ? 1 : 0, side, anim);
+      if (G.reduced() || dist < 1) { done(); clear(); return; }
+      const all = [];
+      const move = (el, a, b) => all.push(el.animate([{ transform: tx(a) }, { transform: tx(b) }], { duration: anim.D, easing: anim.ease, fill: "forwards" }));
+      follows().forEach((el) => move(el, from, to));
+      [1, -1].forEach((k) => { if (peeks[k]) move(peeks[k], from + k * W, to + k * W); });
+      anims = all;
+      const job = { done };
+      busy = job;
+      Promise.all(all.map((a) => a.finished)).then(() => { if (busy === job) finishBusy(); }, () => {});
+    };
+    // a pagina arrivata il cambio vero e la pulizia stanno nello stesso fotogramma: niente scatti
+    const finishBusy = () => {
+      const job = busy;
+      busy = null;
+      if (!job) return;
+      job.done();
+      clear();
     };
     P.on(area, "touchstart", (e) => {
+      // un tocco mentre la pagina si posa la fa arrivare subito: si riparte da lì
+      if (busy) finishBusy();
       const t = e.touches[0];
-      x0 = t.clientX; y0 = t.clientY; t0 = Date.now(); dx = 0; off = 0;
+      x0 = t.clientX; y0 = t.clientY; t0 = performance.now(); track = []; x = 0; side = 0; lock = 0;
       mode = e.touches.length > 1 || x0 < 24 || x0 > innerWidth - 24 || (e.target.closest && e.target.closest(NOSWIPE)) || scrollsX(e.target) ? "no" : "";
     }, { passive: true });
     P.on(area, "touchmove", (e) => {
       if (mode === "no") return;
-      const t = e.touches[0], dy = t.clientY - y0;
-      dx = t.clientX - x0;
+      const t = e.touches[0], ddx = t.clientX - x0, ddy = t.clientY - y0;
       if (!mode) {
-        if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
-        mode = Math.abs(dx) > Math.abs(dy) * 1.5 ? "x" : "no";
+        if (Math.abs(ddx) < 8 && Math.abs(ddy) < 8) return;
+        mode = Math.abs(ddx) > Math.abs(ddy) * 1.3 ? "x" : "no";
         if (mode === "no") return;
+        // da qui il contenuto segue il dito: si toglie solo la soglia, così un colpo rapido (pochi eventi) non si perde
+        x0 += Math.sign(ddx) * 8;
+        lock = ddx < 0 ? 1 : -1;
+        // la velocità conta anche il tratto prima del blocco: un colpo breve arriva in pochi eventi
+        track = [[t0, t.clientX - ddx]];
+        x = 0;
+        const f = follows()[0];
+        W = (f ? f.getBoundingClientRect().width : innerWidth) + SWIPE_GAP;
+        follows().forEach((el) => { el.style.willChange = "transform"; });
       }
-      // il contenuto segue il dito (a metà della corsa) e sfuma un poco; dove oltre non c'è niente resta quasi fermo.
-      // Al rilascio il passaggio riparte da qui: nessuno scatto indietro
-      const can = dx < 0 ? opt.canNext() : opt.canPrev();
-      if (G.reduced()) return;
-      off = dx * (can ? 0.5 : 0.1);
-      follow.style.transform = "translateX(" + off.toFixed(1) + "px)";
-      follow.style.opacity = can ? (1 - Math.min(0.3, Math.abs(off) / innerWidth)).toFixed(3) : "";
-    }, { passive: true });
-    P.on(area, "touchend", () => {
+      // gesto di lato: la pagina non scorre su e giù intanto
+      if (e.cancelable) e.preventDefault();
+      const now = performance.now();
+      track.push([now, t.clientX]);
+      while (track.length > 2 && now - track[0][0] > 100) track.shift();
+      if (track.length > 12) track.shift();
+      const dx = t.clientX - x0, d = dx < 0 ? 1 : dx > 0 ? -1 : lock, still = G.reduced();
+      if (d !== side) {
+        if (side && opt.progress && !still) opt.progress(0, side);
+        side = d;
+        if (opt.peek && can(d) && !peeks[d] && !still) {
+          const p = opt.peek(d);
+          if (p) { p.style.willChange = "transform"; peeks[d] = p; }
+        }
+      }
+      // con una pagina accanto si segue il dito uno a uno; oltre l'ultima, resistenza
+      x = can(d) ? (Math.abs(dx) <= W ? dx : Math.sign(dx) * (W + rubber(Math.abs(dx) - W, W))) : rubber(dx, W);
+      if (still) return;
+      place();
+      if (opt.progress && can(d)) opt.progress(Math.min(1, Math.abs(x) / W), d);
+    }, { passive: false });
+    const release = (cancelled) => {
       if (mode !== "x") { mode = ""; return; }
       mode = "";
-      const v = Math.abs(dx) / Math.max(1, Date.now() - t0);
-      const ok = Math.abs(dx) > 56 || (Math.abs(dx) > 28 && v > 0.45);
-      if (ok && dx < 0 && opt.canNext()) opt.next(reset, off);
-      else if (ok && dx > 0 && opt.canPrev()) opt.prev(reset, off);
-      else reset(true);
-    }, { passive: true });
-    P.on(area, "touchcancel", () => { mode = ""; reset(true); }, { passive: true });
+      const now = performance.now();
+      let v = 0;
+      if (!cancelled && track.length > 1 && now - track[track.length - 1][0] < 60) {
+        const a = track[0], b = track[track.length - 1];
+        v = (b[1] - a[1]) / Math.max(1, b[0] - a[0]);
+      }
+      const d = side;
+      // dove arriverebbe la pagina lasciata andare con questa velocità: oltre un terzo, si passa
+      const proj = x + v * 200;
+      const go = !cancelled && d && can(d) && -d * x > 6 && -d * proj > W * 0.34;
+      if (G.reduced()) {
+        clear();
+        if (go) { if (opt.commit) opt.commit(d); else (d > 0 ? opt.next : opt.prev)(reset, 0); }
+        return;
+      }
+      if (go && opt.peek && peeks[d]) { settle(-d * W, v, () => opt.commit(d), d); return; }
+      if (go && !opt.peek) {
+        // la pagina vicina arriva con la transizione: parte da dove l'ha lasciata il dito, alla sua velocità
+        const anim = G.swipeAnim(Math.max(0, -d * v), Math.max(1, W - Math.abs(x)));
+        (d > 0 ? opt.next : opt.prev)(reset, x, anim);
+        return;
+      }
+      if (go && opt.commit) { clear(); opt.commit(d); return; }
+      settle(0, v, () => {});
+    };
+    P.on(area, "touchend", () => release(false), { passive: true });
+    P.on(area, "touchcancel", () => release(true), { passive: true });
+  };
+  // l'indicatore di un gruppo di schede segue lo swipe: p da 0 a 1 verso la scheda vicina (d = 1 dopo, -1 prima);
+  // con anim si posa insieme alla pagina, alla stessa velocità
+  G.segFollow = (box, p, d, anim) => {
+    const ind = box && box.querySelector(":scope > .seg-ind");
+    if (!ind) return;
+    const btns = Array.from(box.querySelectorAll(":scope > button, :scope > a"));
+    const on = btns.findIndex((b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true");
+    const a = btns[on], b = btns[on + d];
+    if (!a || !b) return;
+    const x = a.offsetLeft + (b.offsetLeft - a.offsetLeft) * p, w = a.offsetWidth + (b.offsetWidth - a.offsetWidth) * p;
+    ind.style.transition = anim ? "transform " + anim.D + "ms " + anim.ease + ", width " + anim.D + "ms " + anim.ease : "none";
+    ind.style.width = w.toFixed(1) + "px";
+    ind.style.transform = "translateX(" + x.toFixed(1) + "px)";
+    if (anim) {
+      // a fine corsa G.seg trova l'indicatore già al suo posto e non lo rifà partire
+      ind._pos = p >= 1 ? { x: b.offsetLeft, w: b.offsetWidth } : { x: a.offsetLeft, w: a.offsetWidth };
+      P.later(() => { ind.style.transition = ""; }, anim.D + 40);
+    }
   };
   // su iOS lo stato :active (la risposta al tocco) funziona solo se c'è un ascoltatore touchstart
   document.addEventListener("touchstart", () => {}, { passive: true });

@@ -349,12 +349,16 @@ G.page("terminal", async function (P) {
       '<span class="q-n">' + esc(it.name) + (it.stale ? "<small>fermo al " + esc(G.dayOnly(it.date)) + "</small>" : "") + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
       '<span class="q-v">' + esc(val) + '</span><span class="q-c ' + (good > 0 ? "t-up" : good < 0 ? "t-down" : "") + '">' + esc(mv) + "</span>", big) + "</li>";
   }
-  function drawGroup(openSym) {
-    const g = quotes.groups.find((x) => x.key === grKey) || quotes.groups[0];
+  // un gruppo di strumenti: lo stesso elenco per la pagina e per il gruppo accanto durante lo swipe
+  function groupMarkup(key) {
+    const g = quotes.groups.find((x) => x.key === key) || quotes.groups[0];
     const rates = g.key === "tassi";
-    $("gr").innerHTML = '<p class="q-head" aria-hidden="true"><span>Strumento</span><span>3 mesi</span><span>Ultimo</span><span>Oggi</span></p><ul class="q-list">' +
+    return '<p class="q-head" aria-hidden="true"><span>Strumento</span><span>3 mesi</span><span>Ultimo</span><span>Oggi</span></p><ul class="q-list">' +
       g.items.map((it) => quoteRow(it, rates)).join("") + "</ul>" +
       (rates ? '<p class="t-note">Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.</p>' : "");
+  }
+  function drawGroup(openSym) {
+    $("gr").innerHTML = groupMarkup(grKey);
     if (openSym) {
       const li = $("gr").querySelector('[data-sym="' + CSS.escape(openSym) + '"] .q-row');
       if (li) G.toggle(li, true);
@@ -370,15 +374,26 @@ G.page("terminal", async function (P) {
     G.seg($("gr-tabs"), true);
     drawGroup();
     const keys = groups.map((g) => g.key), near = (d) => keys[keys.indexOf(grKey) + d];
-    const slide = (d) => {
-      const b = $("gr-tabs").querySelector('[data-g="' + near(d) + '"]');
-      if (!b) return;
-      b.click();
-      if (!G.reduced() && $("gr").animate) $("gr").animate([{ opacity: 0, transform: "translateX(" + 28 * d + "px)" }, { opacity: 1, transform: "none" }], { duration: 260, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)" });
-    };
+    // swipe: il gruppo accanto sta di lato, intero, e arriva con il dito; l'indicatore delle schede lo segue
     G.swipe($("gr"), {
       canNext: () => !!near(1), canPrev: () => !!near(-1),
-      next: (reset) => { reset(false); slide(1); }, prev: (reset) => { reset(false); slide(-1); }
+      peek: (d) => {
+        const k = near(d);
+        if (!k) return null;
+        const gr = $("gr"), box = gr.parentElement, r = gr.getBoundingClientRect(), b = box.getBoundingClientRect();
+        const p = document.createElement("div");
+        p.className = "gr-peek";
+        p.setAttribute("aria-hidden", "true");
+        p.innerHTML = groupMarkup(k);
+        p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+        p.style.top = (r.top - b.top - box.clientTop) + "px";
+        p.style.left = (r.left - b.left - box.clientLeft) + "px";
+        p.style.width = r.width + "px";
+        box.appendChild(p);
+        return p;
+      },
+      commit: (d) => { const b = $("gr-tabs").querySelector('[data-g="' + near(d) + '"]'); if (b) b.click(); },
+      progress: (p, d, anim) => G.segFollow($("gr-tabs"), p, d, anim)
     });
     $("gr-tabs").addEventListener("click", (e) => {
       const b = e.target.closest("[data-g]");
@@ -542,9 +557,24 @@ G.page("terminal", async function (P) {
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
+  // swipe sulla mappa: l'altra vista sta accanto, già disegnata, e arriva con il dito insieme al riquadro della Borsa scelta;
+  // l'interruttore Mondo/Europa la segue. Toccando l'interruttore invece i quadrati si spostano da una vista all'altra
   G.swipe($("map"), {
+    follow: () => [$("map"), $("ring")],
     canNext: () => state.view !== "europa", canPrev: () => state.view === "europa",
-    next: (reset) => { reset(false); setView("europa"); }, prev: (reset) => { reset(false); setView("mondo"); }
+    peek: (d) => {
+      if (!wt) return null;
+      const map = $("map"), p = document.createElement("div");
+      p.className = "t-map tmap t-peek";
+      p.setAttribute("aria-hidden", "true");
+      p.style.width = map.offsetWidth + "px";
+      p.style.height = map.offsetHeight + "px";
+      map.parentElement.appendChild(p);
+      G.drawMap(p, G.mapItems(wt, tm, d > 0 ? "europa" : "mondo", qt0), { interactive: false });
+      return p;
+    },
+    commit: (d) => { const v = d > 0 ? "europa" : "mondo"; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false); },
+    progress: (p, d, anim) => G.segFollow(document.querySelector("#map-panel .t-seg"), p, d, anim)
   });
   drawMap(false);
   size = $("map").clientWidth + "x" + $("map").clientHeight;

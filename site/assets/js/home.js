@@ -5,8 +5,6 @@ G.page("home", async function (P) {
   const $ = (id) => document.getElementById(id);
 
   G.initPrefs();
-  // la frase che spiega GERICO compare solo alla prima visita (la classe first-visit la mette lo script nell'head)
-  if (!G.ls.get("gerico.introSeen", false)) G.ls.set("gerico.introSeen", true);
 
   const [ed, mk, qt, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
     G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda")]);
@@ -32,8 +30,8 @@ G.page("home", async function (P) {
   if (lastRun) {
     G.setEdition(lastRun);
     const edl = document.querySelector("#edition-line .ed-l");
-    // «Mercoledì 28 ottobre · 8 notizie · ore 7:23»: sta in una riga anche sul telefono
-    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · " + stories.length + (stories.length === 1 ? " notizia" : " notizie") + " · ore ");
+    // «Mercoledì 28 ottobre · ore 7:23»: sta in una riga anche sul telefono
+    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · ore ");
     // «Oggi» solo sopra l'edizione di oggi. L'edizione del mattino esce verso le 7:30: dalle 8:15 (o se ne manca più di una) lo si dice subito
     const age = G.dayAge(lastRun);
     if (age > 0) {
@@ -137,12 +135,21 @@ G.page("home", async function (P) {
     const feed = $("feed");
     feed.classList.remove("swap");
     if (!first && !viaTransition) { void feed.offsetWidth; feed.classList.add("swap"); }
+    feed.innerHTML = feedMarkup();
+    first = false;
+  }
+  // il contenuto di un'altra sezione, uguale a quello che disegnerebbe renderFeed: la pagina accanto durante lo swipe
+  function feedMarkupFor(sec) {
+    const was = state.section, f = first;
+    state.section = sec; first = false;
+    try { return feedMarkup(); } finally { state.section = was; first = f; }
+  }
+  function feedMarkup() {
     const list = visible(), bl = visibleBrevi(), past = visiblePast();
     if (!list.length && !bl.length) {
-      $("feed").innerHTML = (state.section === "seguiti"
+      return (state.section === "seguiti"
         ? '<div class="empty"><h2>Nessuna storia sui temi che segui.</h2><p>I temi si seguono dalla pagina di ogni storia.</p></div>'
         : '<div class="empty"><h2>Nessuna storia in questa sezione.</h2><p><a href="#">Torna a tutte le notizie</a>.</p></div>') + pastHTML(past, true);
-      return;
     }
     const all = state.section === "tutte" || state.section === "seguiti";
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
@@ -150,8 +157,7 @@ G.page("home", async function (P) {
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       : '<p class="none">Oggi in questa sezione non ci sono storie confrontate, solo brevi.</p>';
-    feed.innerHTML = top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
-    first = false;
+    return top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
@@ -305,42 +311,59 @@ G.page("home", async function (P) {
     const dir = order.indexOf(next) >= order.indexOf(prev) ? "dir-next" : "dir-prev";
     state.section = next;
     markNav();
-    slideFeed(dir === "dir-next" ? 1 : -1, fromX);
-    fromX = 0;
-    // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
-    const n = visible().length, st = $("sec-status");
-    if (st) st.textContent = (next === "tutte" ? "Tutte le notizie" : next === "seguiti" ? "Temi seguiti" : G.SECTIONS[next]) + ": " + n + (n === 1 ? " notizia" : " notizie");
+    slideFeed(dir === "dir-next" ? 1 : -1);
+    announce(next);
   });
-  // l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro, attaccati come le pagine di un libro:
-  // una copia del vecchio sopra il nuovo, solo transform e opacity. Dopo uno swipe si riparte dal punto lasciato dal dito
-  let fromX = 0;
-  function slideFeed(sgn, x0) {
-    const feed = $("feed");
-    if (G.reduced() || !feed.animate) { renderFeed(); return; }
-    x0 = x0 || 0;
+  // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
+  function announce(sec) {
+    const n = visible().length, st = $("sec-status");
+    if (st) st.textContent = (sec === "tutte" ? "Tutte le notizie" : sec === "seguiti" ? "Temi seguiti" : G.SECTIONS[sec]) + ": " + n + (n === 1 ? " notizia" : " notizie");
+  }
+  // dove comincia una sezione sullo schermo: dove sta adesso l'elenco o, se la pagina è già scesa oltre il suo inizio,
+  // subito sotto la barra delle sezioni ferma in alto (scroll: dove portare la pagina). Cambiando sezione si riparte
+  // dall'inizio della nuova, come in un'app.
+  function sectionTop() {
+    const feed = $("feed"), nav = document.querySelector(".home .sec-nav"), fr = feed.getBoundingClientRect();
+    if (!nav) return { top: fr.top, scroll: null };
+    // dove starebbe la barra senza lo scorrimento: un attimo ferma, letta e rimessa com'era, prima che lo schermo si ridisegni
+    const was = nav.style.position;
+    nav.style.position = "static";
+    const natural = nav.getBoundingClientRect().top + scrollY;
+    nav.style.position = was;
+    const s = Math.max(0, Math.round(natural - (parseFloat(getComputedStyle(nav).top) || 0)));
+    return scrollY > s + 1 ? { top: fr.top + (scrollY - s), scroll: s } : { top: fr.top, scroll: null };
+  }
+  // toccando una sezione l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro, attaccati come le pagine
+  // di un libro e interi: una copia del vecchio sopra il nuovo, solo transform
+  function slideFeed(sgn) {
+    const feed = $("feed"), st = sectionTop();
+    if (G.reduced() || !feed.animate) { renderFeed(); if (st.scroll !== null) window.scrollTo({ top: st.scroll, behavior: "instant" }); return; }
     const ghost = feed.cloneNode(true);
     ghost.removeAttribute("id");
     ghost.className = "feed-ghost";
     ghost.setAttribute("aria-hidden", "true");
     ghost.querySelectorAll(".reveal").forEach((el) => el.classList.remove("reveal"));
+    ghost.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
     // della copia basta la parte sullo schermo: meno da disegnare mentre si muove
     const bottom = innerHeight + 40;
     Array.from(feed.children).forEach((c, i) => { if (c.getBoundingClientRect().top > bottom && ghost.children[i]) ghost.children[i].dataset.cut = "1"; });
     ghost.querySelectorAll(":scope > [data-cut]").forEach((c) => c.remove());
     // posizione al decimale di pixel: offsetTop arrotonda e la copia partirebbe con un piccolo scatto
     const box = feed.parentElement, fr = feed.getBoundingClientRect(), br = box.getBoundingClientRect();
-    ghost.style.top = (fr.top - br.top - box.clientTop) + "px";
+    let top = fr.top - br.top - box.clientTop;
     ghost.style.left = (fr.left - br.left - box.clientLeft) + "px";
     ghost.style.width = fr.width + "px";
     renderFeed(true);
+    // la sezione nuova comincia dall'inizio: la pagina sale, la copia resta dov'era sullo schermo
+    if (st.scroll !== null) { top -= scrollY - st.scroll; window.scrollTo({ top: st.scroll, behavior: "instant" }); }
+    ghost.style.top = top + "px";
     feed.parentElement.appendChild(ghost);
     // alta quanto la parte del vecchio elenco che si vedeva, anche se il nuovo è più corto
-    ghost.style.height = Math.max(feed.offsetHeight, Math.min(fr.height, innerHeight - fr.top + 40)) + "px";
-    const E = "cubic-bezier(0.32, 0.72, 0, 1)", W = feed.getBoundingClientRect().width + 32, D = 340;
-    const o0 = x0 ? (1 - Math.min(0.3, Math.abs(x0) / innerWidth)) : 1;
-    ghost.animate([{ opacity: o0, transform: "translateX(" + x0.toFixed(1) + "px)" }, { opacity: 0.2, transform: "translateX(" + (-sgn * W) + "px)" }], { duration: D, easing: E, fill: "forwards" })
+    ghost.style.height = Math.max(0, Math.min(fr.height, innerHeight - fr.top + 40)) + "px";
+    const W = fr.width + 28, D = 440, E = "cubic-bezier(0.32, 0.72, 0, 1)";
+    ghost.animate([{ transform: "none" }, { transform: "translate3d(" + (-sgn * W) + "px,0,0)" }], { duration: D, easing: E, fill: "forwards" })
       .finished.then(() => ghost.remove(), () => ghost.remove());
-    feed.animate([{ opacity: 0.4, transform: "translateX(" + (x0 + sgn * W).toFixed(1) + "px)" }, { opacity: 1, transform: "none" }], { duration: D, easing: E });
+    feed.animate([{ transform: "translate3d(" + (sgn * W) + "px,0,0)" }, { transform: "none" }], { duration: D, easing: E });
   }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
@@ -360,11 +383,54 @@ G.page("home", async function (P) {
   // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
   const step = (d) => { const o = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec); return o[o.indexOf(state.section) + d]; };
   const goSec = (k) => { location.hash = k === "tutte" ? "" : k; };
+  // la sezione vicina sta accanto, intera, e arriva con il dito; l'indicatore delle sezioni la segue.
+  // Arrivata al suo posto diventa la pagina vera, nello stesso fotogramma: niente scatti
+  // sul telefono i mercati e il piede stanno sotto l'elenco: fanno parte della pagina e si spostano con lui
+  const stacked = () => { const s = $("side"); return !!s && s.getBoundingClientRect().top >= $("feed").getBoundingClientRect().bottom - 1; };
   G.swipe($("main") || $("feed").parentElement, {
-    follow: $("feed"),
+    follow: () => (stacked() ? [$("feed"), $("side"), document.querySelector(".foot > .wrap")] : [$("feed")]),
     canNext: () => !!step(1), canPrev: () => !!step(-1),
-    next: (reset, off) => { const k = step(1); fromX = off || 0; reset(false); goSec(k); },
-    prev: (reset, off) => { const k = step(-1); fromX = off || 0; reset(false); goSec(k); }
+    peek: (d) => {
+      const k = step(d);
+      if (!k) return null;
+      const feed = $("feed"), box = feed.parentElement, side = $("side"), st = sectionTop();
+      const fr = feed.getBoundingClientRect(), br = box.getBoundingClientRect();
+      const p = document.createElement("div");
+      p.className = "feed-ghost feed-peek";
+      p.setAttribute("aria-hidden", "true");
+      p.style.top = (st.top - br.top - box.clientTop) + "px";
+      p.style.left = (fr.left - br.left - box.clientLeft) + "px";
+      p.style.width = fr.width + "px";
+      p.style.height = Math.max(0, innerHeight - st.top + 40) + "px";
+      // come #feed (flow-root): stessi margini dentro, stesse altezze
+      const list = document.createElement("div");
+      list.style.display = "flow-root";
+      list.innerHTML = feedMarkupFor(k);
+      p.appendChild(list);
+      box.appendChild(p);
+      // sotto l'elenco nuovo anche il riquadro dei mercati, dove starà davvero: la pagina accanto è intera
+      if (stacked()) {
+        const sr = side.getBoundingClientRect(), c = side.cloneNode(true);
+        c.style.cssText = "position:absolute;margin:0;left:" + (sr.left - fr.left).toFixed(1) + "px;width:" + sr.width.toFixed(1) + "px;top:" + (list.offsetHeight + sr.top - fr.bottom).toFixed(1) + "px";
+        p.appendChild(c);
+      }
+      p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+      return p;
+    },
+    commit: (d) => {
+      const k = step(d);
+      if (!k) return;
+      const st = sectionTop(), y = scrollY;
+      state.section = k;
+      // l'indirizzo cambia per il tasto indietro; con «#» il browser salirebbe in cima: la riga dopo rimette la pagina
+      goSec(k);
+      renderFeed(true);
+      // subito, non con lo scorrimento morbido della pagina: la sezione nuova è già lì
+      window.scrollTo({ top: st.scroll !== null ? st.scroll : y, behavior: "instant" });
+      markNav();
+      announce(k);
+    },
+    progress: (p, d, anim) => G.segFollow($("sections"), p, d, anim)
   });
   // alla prima visita, su un telefono, l'elenco accenna un movimento di lato: si capisce che si può scorrere
   if (!G.soft && !G.reduced() && "ontouchstart" in window && !G.ls.get("gerico.swipeHint", false)) {

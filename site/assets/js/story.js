@@ -172,11 +172,12 @@ G.page("story", async function (P) {
     } catch (err) { /* niente */ }
     handoff(toNext);
   });
-  // swipe: a sinistra la notizia successiva dell'edizione, a destra quella prima
+  // swipe: a sinistra la notizia successiva dell'edizione, a destra quella prima. La pagina segue il dito e, lasciata,
+  // prosegue da lì alla stessa velocità mentre la storia vicina entra attaccata (transizione di pagina con lo scarto del dito)
   G.swipe($("story"), {
     canNext: () => !!nx, canPrev: () => !!pv,
-    next: () => G.go(G.storyUrl(nx), { dir: "forward", swipe: true }),
-    prev: () => G.go(G.storyUrl(pv), { dir: "back", swipe: true })
+    next: (reset, off, anim) => { reset(false); G.go(G.storyUrl(nx), { dir: "forward", swipe: true, sx: off, anim }); },
+    prev: (reset, off, anim) => { reset(false); G.go(G.storyUrl(pv), { dir: "back", swipe: true, sx: off, anim }); }
   });
   P.on(document, "click", (e) => {
     if (fromHome && e.target.closest("#back") && !e.metaKey && !e.ctrlKey && !e.shiftKey) { e.preventDefault(); history.back(); return; }

@@ -21,7 +21,10 @@ G.page("terminal", async function (P) {
   const showSide = () => { const side = document.querySelector(".t-side"); if (side) side.classList.add("ready"); };
   P.later(showSide, 2000);
   // anche le quotazioni del job: alla mappa servono per le Borse che mancano nella pubblicazione (è un file piccolo)
-  const [ed, mk, ag, tm, wt, qt0, ff] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes"), G.load("calendario")]);
+  const [ed, mk0, ag, tm, wt, qtFirst, ff] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes"), G.load("calendario")]);
+  // i numeri delle tabelle: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
+  // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, in fondo)
+  let qt0 = qtFirst, mk = G.withQuotes(mk0, qt0);
   const state = {
     view: G.ls.get("gerico.mapView", "mondo") === "europa" ? "europa" : "mondo",
     sel: G.ls.get("gerico.mapSel", "ITA")
@@ -36,10 +39,12 @@ G.page("terminal", async function (P) {
     const country = G.MARKETS[code] && G.MARKETS[code][0];
     return stories.find((s) => (s.tags || []).includes(country)) || null;
   }
-  function renderDetail(items) {
-    const it = items.find((x) => x.code === state.sel);
-    if (!it) { $("detail").innerHTML = "<p>Tocca un quadrato per vedere il dettaglio.</p>"; return; }
-    const basis = state.view === "europa" ? "MSCI Europe" : "MSCI ACWI";
+  // il dettaglio della Borsa scelta: lo stesso markup per la pagina e per la vista accanto durante lo swipe
+  function renderDetail(items) { $("detail").innerHTML = detailHTML(items, state.sel, state.view); }
+  function detailHTML(items, sel, view) {
+    const it = items.find((x) => x.code === sel);
+    if (!it) return "<p>Tocca un quadrato per vedere il dettaglio.</p>";
+    const basis = view === "europa" ? "MSCI Europe" : "MSCI ACWI";
     const cg = typeof it.chg === "number"
       ? '<b class="' + (it.chg > 0 ? "t-up" : it.chg < 0 ? "t-down" : "") + '">' + G.pct(it.chg) + "</b>"
       : "nessun dato oggi";
@@ -48,11 +53,103 @@ G.page("terminal", async function (P) {
     else if (it.time) html += "<p>Dato delle " + esc(it.time) + ".</p>";
     const s = linkedStory(it.code);
     if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
-    $("detail").innerHTML = html;
+    return html;
   }
+  // sotto la mappa tutte le variazioni in chiaro, con un'area da toccare comoda anche per i quadrati piccoli.
+  // Per i lettori di schermo bastano i quadrati, che hanno già nome e variazione: qui niente doppioni.
+  const valsHTML = (items, sel) => items.map((it) => {
+    const has = typeof it.chg === "number";
+    return '<button type="button" tabindex="-1" data-code="' + it.code + '" aria-pressed="' + (it.code === sel) + '"><span class="c">' + it.code + "</span>" +
+      '<span class="v' + (has ? (it.chg > 0 ? " t-up" : it.chg < 0 ? " t-down" : "") : " nd") + '">' + (has ? G.pct(it.chg) : "n.d.") + "</span></button>";
+  }).join("");
+  const subText = (view) => "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + (view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI") + ".";
+  // la Borsa scelta in una vista: se lì non c'è, la più grande
+  const selIn = (items, sel) => (items.some((x) => x.code === sel) ? sel : (items[0] || {}).code || "");
   // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
   // curva che parte svelta e si posa piano, cubic-bezier: Safari la anima da solo, senza il thread della pagina (con linear() no)
   const SNAP = "cubic-bezier(0.32, 0.72, 0, 1)";
+  // ---------- altezze che cambiano (vista della mappa, gruppo di grafici, dettaglio) ----------
+  // Quello che sta sotto non salta mai: lo spazio passa dall'altezza di prima a quella nuova con un movimento morbido.
+  // easeHeight: il contenuto nuovo è già dentro, h0 è l'altezza di prima
+  function easeHeight(el, h0, D, ease) {
+    if (!el || G.reduced()) return;
+    const h1 = el.offsetHeight;
+    if (Math.abs(h1 - h0) < 1) return;
+    if (el._hA) el._hA.cancel();
+    el.style.overflow = "hidden";
+    const a = el._hA = el.animate([{ height: h0 + "px" }, { height: h1 + "px" }], { duration: D || 420, easing: ease || SNAP });
+    const done = () => { if (el._hA === a) { el._hA = null; el.style.overflow = ""; } };
+    a.finished.then(done, done);
+  }
+  // swipe: mentre il dito trascina, la vista accanto è ritagliata all'altezza di quella che esce. Lasciata andare verso
+  // l'altra, lo spazio va all'altezza della nuova con la stessa molla del passaggio, e la vista accanto si apre intera:
+  // all'arrivo il contenuto vero trova il suo posto già pronto (releaseHeight)
+  function swipeHeight(el, peek, going, anim) {
+    if (!el || !peek || !anim || !going || G.reduced()) return;
+    const h0 = el.offsetHeight;
+    peek.style.height = "";
+    const h1 = peek.offsetHeight;
+    peek.style.height = h0 + "px";
+    if (Math.abs(h1 - h0) < 1) return;
+    const o = { duration: anim.D, easing: anim.ease, fill: "forwards" };
+    if (el._hA) el._hA.cancel();
+    el.style.overflow = "hidden";
+    el._hA = el.animate([{ height: h0 + "px" }, { height: h1 + "px" }], o);
+    peek.animate([{ height: h0 + "px" }, { height: h1 + "px" }], o);
+  }
+  function releaseHeight(el) {
+    if (!el) return;
+    if (el._hA) { el._hA.cancel(); el._hA = null; }
+    el.style.overflow = "";
+  }
+  // ---------- viste accanto pronte prima dello swipe ----------
+  // A pagina ferma (mai mentre il dito è sullo schermo) la vista accanto si disegna nascosta, una per volta nei momenti
+  // liberi: al primo movimento del dito c'è solo da metterla al suo posto. Se intanto è cambiato qualcosa (key), si rifà.
+  // keyOf(d): che cosa sta da quella parte ("" se niente); build(d): l'elemento; place(el): posizione e altezza di adesso
+  let touchingT = false, alive = true;
+  P.on(document, "touchstart", () => { touchingT = true; }, { passive: true, capture: true });
+  P.on(document, "touchend", () => { touchingT = false; }, { passive: true, capture: true });
+  P.on(document, "touchcancel", () => { touchingT = false; }, { passive: true, capture: true });
+  P.keep({ disconnect: () => { alive = false; } });
+  function preparer(keyOf, build, place) {
+    const ready = {};
+    let timer = 0;
+    const idle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 80));
+    const drop = (d) => { if (ready[d]) { ready[d].el.remove(); delete ready[d]; } };
+    const one = (d) => {
+      const key = keyOf(d);
+      if (ready[d] && ready[d].key === key) return;
+      drop(d);
+      if (!key) return;
+      const el = build(d);
+      if (el) { el.style.visibility = "hidden"; ready[d] = { key, el }; }
+    };
+    const run = (sides) => {
+      if (!alive || !sides.length) return;
+      if (touchingT || window.gericoVT) { timer = P.later(() => run(sides), 400); return; }
+      one(sides[0]);
+      if (sides.length > 1) idle(() => run(sides.slice(1)));
+    };
+    return {
+      take(d) {
+        const r = ready[d], key = keyOf(d);
+        delete ready[d];
+        let el = r && r.key === key ? r.el : null;
+        if (r && !el) r.el.remove();
+        if (!el) el = key ? build(d) : null;
+        if (!el) return null;
+        place(el);
+        el.style.visibility = "";
+        return el;
+      },
+      soon() {
+        if (!("ontouchstart" in window) || G.reduced()) return;
+        clearTimeout(timer);
+        timer = P.later(() => idle(() => run([1, -1])), 500);
+      },
+      clear() { drop(1); drop(-1); }
+    };
+  }
   // l'origine si fissa sull'elemento per la durata dell'animazione: nei fotogrammi si muovono solo transform e opacity
   const withOrigin = (el, origin, a) => {
     el.style.transformOrigin = origin;
@@ -97,7 +194,7 @@ G.page("terminal", async function (P) {
       return;
     }
     const items = G.mapItems(wt, tm, state.view, qt0);
-    if (!items.some((x) => x.code === state.sel)) state.sel = (items[0] || {}).code || "";
+    state.sel = selIn(items, state.sel);
     const before = how === "flip" && !G.reduced() && lastRects ? byCode(lastRects) : null;
     const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel }) || [];
     lastRects = rects;
@@ -121,27 +218,32 @@ G.page("terminal", async function (P) {
     }
     if (before) flip(before, now);
     placeRing(!how, now);
-    const basis = state.view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI";
-    $("map-sub").textContent = "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + basis + ".";
-    // sotto la mappa tutte le variazioni in chiaro, con un'area da toccare comoda anche per i quadrati piccoli.
-    // Per i lettori di schermo bastano i quadrati, che hanno già nome e variazione: qui niente doppioni.
-    $("vals").innerHTML = items.map((it) => {
-      const has = typeof it.chg === "number";
-      return '<button type="button" tabindex="-1" data-code="' + it.code + '" aria-pressed="' + (it.code === state.sel) + '"><span class="c">' + it.code + "</span>" +
-        '<span class="v' + (has ? (it.chg > 0 ? " t-up" : it.chg < 0 ? " t-down" : "") : " nd") + '">' + (has ? G.pct(it.chg) : "n.d.") + "</span></button>";
-    }).join("");
+    $("map-sub").textContent = subText(state.view);
+    $("vals").innerHTML = valsHTML(items, state.sel);
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     requestAnimationFrame(() => G.seg(document.querySelector(".t-seg")));
     renderDetail(items);
     if (focusSel) { const b = $("map").querySelector('[data-code="' + state.sel + '"]'); if (b) b.focus(); }
+    if (mapPrep) mapPrep.soon();
   }
-  function setView(v) { if (v === state.view) return; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false, "flip"); }
+  let mapSwipe = null, mapPrep = null;
+  // toccando l'interruttore i quadrati si spostano da una vista all'altra; sotto, valori e dettaglio cambiano altezza piano
+  function setView(v) {
+    if (v === state.view) return;
+    if (mapSwipe) mapSwipe.finish();
+    const mv = $("mapview"), h0 = mv.offsetHeight;
+    state.view = v; G.ls.set("gerico.mapView", v);
+    drawMap(false, "flip");
+    easeHeight(mv, h0, 420);
+  }
   const pickTile = (e) => {
     const b = e.target.closest("[data-code]");
     if (!b) return;
+    const mv = $("mapview"), h0 = mv.offsetHeight;
     state.sel = b.dataset.code;
     G.ls.set("gerico.mapSel", state.sel);
     drawMap(e.currentTarget.id === "map", "select");
+    easeHeight(mv, h0, 300);
   };
   $("map").addEventListener("click", pickTile);
   $("vals").addEventListener("click", pickTile);
@@ -292,7 +394,8 @@ G.page("terminal", async function (P) {
   }
 
   function renderStatus() {
-    const asOf = (tm && tm.asOf) || (mk && mk.asOf);
+    // l'ora dei dati più freschi tra prezzi del job, mappa e chiusure della redazione
+    const asOf = [qt0 && qt0.asOf, tm && tm.asOf, mk && mk.asOf].filter((x) => x && !isNaN(Date.parse(x))).sort((a, b) => Date.parse(a) - Date.parse(b)).pop();
     $("st-line").textContent = (asOf ? "Aggiornato " + G.when(asOf) : "Dati non disponibili") + " · prossimo " + G.nextUpdate();
     // la data dei dati sta sotto la mappa, in una riga già riservata: nessun salto quando arriva
     if (asOf) {
@@ -329,7 +432,7 @@ G.page("terminal", async function (P) {
 
   // prezzi e grafici: un gruppo alla volta, ogni riga si apre sul grafico grande di tre mesi
   const GROUP = { indici: "Indici", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
-  let quotes = null, grKey = G.ls.get("gerico.grGroup", "valute");
+  let quotes = null, grKey = G.ls.get("gerico.grGroup", "valute"), grPrep = null, grVer = 0;
   function quoteRow(it, rates) {
     const d = rates ? it.bp : it.chg;
     const good = typeof d === "number" ? (rates ? -d : d) : 0;
@@ -357,12 +460,28 @@ G.page("terminal", async function (P) {
       g.items.map((it) => quoteRow(it, rates)).join("") + "</ul>" +
       (rates ? '<p class="t-note">Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.</p>' : "");
   }
-  function drawGroup(openSym) {
+  function drawGroup(openSym, still) {
     $("gr").innerHTML = groupMarkup(grKey);
+    if (grPrep) grPrep.soon();
     if (openSym) {
       const li = $("gr").querySelector('[data-sym="' + CSS.escape(openSym) + '"] .q-row');
-      if (li) G.toggle(li, true);
+      if (!li) return;
+      if (!still) { G.toggle(li, true); return; }
+      // ridisegnato con prezzi nuovi: la riga aperta resta aperta, senza riaprirsi
+      const panel = document.getElementById(li.getAttribute("aria-controls"));
+      li.setAttribute("aria-expanded", "true");
+      if (panel) { panel.style.transition = "none"; panel.classList.add("open"); panel.inert = false; void panel.offsetHeight; panel.style.transition = ""; }
     }
+  }
+  // prezzi nuovi a pagina aperta: stesso gruppo, stessa riga aperta
+  function updateQuotes(qt) {
+    const groups = ((qt && qt.groups) || []).filter((g) => (g.items || []).length);
+    if (!quotes || !groups.length) return;
+    quotes = { groups };
+    grVer += 1;
+    srcLine("gr-src", qt, "Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno");
+    const open = $("gr").querySelector('.q-row[aria-expanded="true"]');
+    drawGroup(open && open.closest("[data-sym]") ? open.closest("[data-sym]").dataset.sym : "", true);
   }
   function renderQuotes(qt) {
     const groups = ((qt && qt.groups) || []).filter((g) => (g.items || []).length);
@@ -374,35 +493,67 @@ G.page("terminal", async function (P) {
     G.seg($("gr-tabs"), true);
     drawGroup();
     const keys = groups.map((g) => g.key), near = (d) => keys[keys.indexOf(grKey) + d];
-    // swipe: il gruppo accanto sta di lato, intero, e arriva con il dito; l'indicatore delle schede lo segue
-    G.swipe($("gr"), {
+    // la scheda accesa; quiet: l'indicatore lo sta già muovendo lo swipe
+    const markGroup = (k, quiet) => {
+      $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === k)));
+      if (!quiet) G.seg($("gr-tabs"));
+    };
+    const setGroup = (k) => { grKey = k; G.ls.set("gerico.grGroup", k); markGroup(k); drawGroup(); };
+    // swipe: il gruppo accanto sta di lato, intero e già disegnato, e arriva con il dito; l'indicatore delle schede lo segue.
+    // Toccando una scheda succede lo stesso (anche verso un gruppo non vicino). I gruppi hanno altezze diverse: mentre il
+    // dito trascina quello accanto è ritagliato all'altezza di quello che esce, all'arrivo lo spazio si adegua con la molla
+    let grPeek = null, grTap = null;
+    // il gruppo accanto, disegnato come quello vero; place: al suo posto, alto quanto quello che esce
+    const buildGroup = (d, k) => {
+      k = k || near(d);
+      if (!k) return null;
+      const gr = $("gr"), p = document.createElement("div");
+      p.className = "gr-peek";
+      p.setAttribute("aria-hidden", "true");
+      p.innerHTML = groupMarkup(k);
+      p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+      p.style.width = gr.getBoundingClientRect().width + "px";
+      gr.parentElement.appendChild(p);
+      return p;
+    };
+    const placeGroup = (p) => {
+      const gr = $("gr"), box = gr.parentElement, r = gr.getBoundingClientRect(), b = box.getBoundingClientRect();
+      p.style.top = (r.top - b.top - box.clientTop) + "px";
+      p.style.left = (r.left - b.left - box.clientLeft) + "px";
+      p.style.width = r.width + "px";
+      p.style.height = r.height + "px";
+    };
+    grPrep = preparer((d) => (near(d) ? [near(d), grVer, $("gr").clientWidth].join("|") : ""), (d) => buildGroup(d), placeGroup);
+    const grSwipe = G.swipe($("gr"), {
       canNext: () => !!near(1), canPrev: () => !!near(-1),
-      peek: (d) => {
-        const k = near(d);
-        if (!k) return null;
-        const gr = $("gr"), box = gr.parentElement, r = gr.getBoundingClientRect(), b = box.getBoundingClientRect();
-        const p = document.createElement("div");
-        p.className = "gr-peek";
-        p.setAttribute("aria-hidden", "true");
-        p.innerHTML = groupMarkup(k);
-        p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
-        p.style.top = (r.top - b.top - box.clientTop) + "px";
-        p.style.left = (r.left - b.left - box.clientLeft) + "px";
-        p.style.width = r.width + "px";
-        box.appendChild(p);
-        return p;
+      // un gruppo non vicino (tocco su una scheda lontana) si disegna al momento; quelli vicini sono già pronti
+      peek: (d, k) => {
+        if (k && k !== near(d)) { const p = buildGroup(d, k); if (p) placeGroup(p); return (grPeek = p); }
+        return (grPeek = grPrep.take(d));
       },
-      commit: (d) => { const b = $("gr-tabs").querySelector('[data-g="' + near(d) + '"]'); if (b) b.click(); },
-      progress: (p, d, anim) => G.segFollow($("gr-tabs"), p, d, anim)
+      drop: (el) => { el.remove(); grPrep.soon(); },
+      commit: (d, k) => { grTap = null; setGroup(k || near(d)); releaseHeight($("gr")); },
+      progress: (p, d, anim) => {
+        if (!grTap || grTap === near(d)) G.segFollow($("gr-tabs"), p, d, anim);
+        if (anim) swipeHeight($("gr"), grPeek, p >= 1, anim);
+      }
     });
+    grPrep.soon();
     $("gr-tabs").addEventListener("click", (e) => {
       const b = e.target.closest("[data-g]");
-      if (!b || b.dataset.g === grKey) return;
-      grKey = b.dataset.g;
-      G.ls.set("gerico.grGroup", grKey);
-      $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-      G.seg($("gr-tabs"));
-      drawGroup();
+      if (!b) return;
+      if (grSwipe) grSwipe.finish();
+      const k = b.dataset.g;
+      if (k === grKey) return;
+      const d = keys.indexOf(k) > keys.indexOf(grKey) ? 1 : -1;
+      if (grSwipe && !G.reduced()) {
+        grTap = k;
+        if (grSwipe.go(d, k)) { markGroup(k, k === near(d)); return; }
+        grTap = null;
+      }
+      const h0 = $("gr").offsetHeight;
+      setGroup(k);
+      easeHeight($("gr"), h0, 420);
     });
   }
   // un nome o un simbolo scritto nel campo dei comandi («eurusd», «oro», «s&p 500») apre il suo grafico
@@ -557,24 +708,55 @@ G.page("terminal", async function (P) {
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";
-  // swipe sulla mappa: l'altra vista sta accanto, già disegnata, e arriva con il dito insieme al riquadro della Borsa scelta;
-  // l'interruttore Mondo/Europa la segue. Toccando l'interruttore invece i quadrati si spostano da una vista all'altra
-  G.swipe($("map"), {
-    follow: () => [$("map"), $("ring")],
+  // swipe sulla mappa: la vista intera (mappa con l'anello sulla Borsa scelta, legenda, valori, dettaglio) è una pagina;
+  // l'altra vista sta accanto, già disegnata, e arriva con il dito. L'interruttore Mondo/Europa la segue.
+  // Toccando l'interruttore invece i quadrati si spostano da una vista all'altra
+  let mapPeek = null;
+  const otherView = (d) => (d > 0 ? (state.view !== "europa" ? "europa" : "") : state.view === "europa" ? "mondo" : "");
+  // la vista accanto: mappa con l'anello sulla Borsa scelta, legenda, valori e dettaglio, disegnati come quelli veri
+  const buildView = (d) => {
+    const view = otherView(d);
+    if (!wt || !view) return null;
+    const items = G.mapItems(wt, tm, view, qt0), sel = selIn(items, state.sel), panel = $("map-panel");
+    const p = document.createElement("div");
+    p.className = "t-view t-peek";
+    p.setAttribute("aria-hidden", "true");
+    const lg = $("legend").cloneNode(true);
+    lg.removeAttribute("id");
+    p.innerHTML = '<div class="t-mapwrap has-ring"><div class="t-map tmap"></div><div class="t-ring"></div></div>' + lg.outerHTML +
+      '<div class="t-vals">' + valsHTML(items, sel) + '</div><div class="t-detail">' + detailHTML(items, sel, view) + "</div>";
+    p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    p.style.width = $("mapview").getBoundingClientRect().width + "px";
+    panel.appendChild(p);
+    const rects = byCode(G.drawMap(p.querySelector(".t-map"), items, { interactive: false, selected: sel }) || []), s = rects[sel], ring = p.querySelector(".t-ring");
+    if (s) { ring.style.left = s.x + "px"; ring.style.top = s.y + "px"; ring.style.width = s.w + "px"; ring.style.height = s.h + "px"; }
+    else ring.remove();
+    return p;
+  };
+  // al decimale di pixel, alla stessa altezza della vista che esce (ritagliata finché il dito trascina)
+  const placeView = (p) => {
+    const mv = $("mapview"), panel = $("map-panel"), r = mv.getBoundingClientRect(), b = panel.getBoundingClientRect();
+    p.style.top = (r.top - b.top - panel.clientTop) + "px";
+    p.style.left = (r.left - b.left - panel.clientLeft) + "px";
+    p.style.width = r.width + "px";
+    p.style.height = r.height + "px";
+  };
+  mapPrep = preparer((d) => { const v = otherView(d); return v ? [v, state.sel, qt0 && qt0.asOf, $("map").clientWidth].join("|") : ""; }, buildView, placeView);
+  mapSwipe = G.swipe($("mapview"), {
+    follow: () => [$("mapview")],
     canNext: () => state.view !== "europa", canPrev: () => state.view === "europa",
-    peek: (d) => {
-      if (!wt) return null;
-      const map = $("map"), p = document.createElement("div");
-      p.className = "t-map tmap t-peek";
-      p.setAttribute("aria-hidden", "true");
-      p.style.width = map.offsetWidth + "px";
-      p.style.height = map.offsetHeight + "px";
-      map.parentElement.appendChild(p);
-      G.drawMap(p, G.mapItems(wt, tm, d > 0 ? "europa" : "mondo", qt0), { interactive: false });
-      return p;
+    peek: (d) => (mapPeek = mapPrep.take(d)),
+    drop: (el) => { el.remove(); mapPrep.soon(); },
+    commit: (d) => {
+      const v = d > 0 ? "europa" : "mondo";
+      state.view = v; G.ls.set("gerico.mapView", v);
+      drawMap(false);
+      releaseHeight($("mapview"));
     },
-    commit: (d) => { const v = d > 0 ? "europa" : "mondo"; state.view = v; G.ls.set("gerico.mapView", v); drawMap(false); },
-    progress: (p, d, anim) => G.segFollow(document.querySelector("#map-panel .t-seg"), p, d, anim)
+    progress: (p, d, anim) => {
+      G.segFollow(document.querySelector("#map-panel .t-seg"), p, d, anim);
+      if (anim) swipeHeight($("mapview"), mapPeek, p >= 1, anim);
+    }
   });
   drawMap(false);
   size = $("map").clientWidth + "x" + $("map").clientHeight;
@@ -604,4 +786,19 @@ G.page("terminal", async function (P) {
   });
   renderStatus();
   G.afterIntro(() => countUp(document.body));
+
+  // prezzi nuovi a pagina aperta (job «Prezzi», ogni mezz'ora): mappa, tabelle, grafici e riga dei dati, senza animazioni
+  const tables = () => {
+    table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
+    table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
+    table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
+    table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
+  };
+  G.liveQuotes(P, qt0 && qt0.asOf, (q) => {
+    qt0 = q; mk = G.withQuotes(mk0, q);
+    drawMap(false);
+    tables();
+    updateQuotes(q);
+    renderStatus();
+  });
 });

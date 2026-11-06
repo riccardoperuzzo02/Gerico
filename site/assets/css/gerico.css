@@ -1459,7 +1459,7 @@ body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
 }
 /* dove si fa lo swipe il browser tiene per sé solo lo scorrimento in verticale e lo zoom: il gesto di lato è della pagina,
    senza dover fermare lo scorrimento da JavaScript (gli ascoltatori restano passivi) */
-.home, #story, #map, #gr { touch-action: pan-y pinch-zoom; }
+.home, #story, #mapview, #gr { touch-action: pan-y pinch-zoom; }
 
 /* durante un passaggio di pagina le animazioni continue (fascia dell'ultim'ora, puntini che pulsano, scheletri) si
    fermano: la pagina nuova resta ferma e il telefono la disegna una volta sola invece che a ogni fotogramma */
@@ -1486,3 +1486,19 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
   .sec-nav .seg { padding-left: 12px; }
   .sec-nav .seg::after { flex-basis: 10px; }
 }
+
+/* ========== 6 novembre, pomeriggio: swipe perfetti anche nel Terminal ========== */
+/* Tutte le file che scorrono di lato (schede, pulsanti del Terminal) scorrono libere: niente maschera sfumata (su iOS
+   rende a scatti un elemento che scorre) e niente aggancio. Le file a tutta larghezza hanno lo spazio in fondo come
+   elemento: il padding finale di un contenitore che scorre non conta ovunque */
+.seg.has-more, .chips.has-more { -webkit-mask-image: none; mask-image: none; }
+.seg, .chips { scroll-snap-type: none; }
+.seg > a, .seg > button, .chips button { scroll-snap-align: none; }
+.chips::after { content: ""; flex: 0 0 8px; }
+/* mappa del Terminal: mappa, legenda, valori e dettaglio sono una pagina sola, che si sfoglia intera; la vista accanto
+   sta nel pannello, alla stessa altezza di quella che esce (ritagliata), e cresce o cala con la molla all'arrivo */
+#map-panel { position: relative; }
+.t-view { position: relative; }
+.t-view.t-peek { position: absolute; overflow: hidden; pointer-events: none; }
+.t-view.t-peek .t-ring { opacity: 1; }
+.gr-peek { overflow: hidden; }

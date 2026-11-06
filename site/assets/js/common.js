@@ -724,6 +724,9 @@
     b.insertBefore(frag, keep || null);
   };
   let navId = 0, idx = 0, ready = false, shown = location.pathname + location.search;
+  // la pagina di ogni passo della cronologia fatto senza ricaricare: dice dove porta «indietro» (G.entryBefore)
+  const entries = { 0: shown };
+  G.entryBefore = () => entries[idx - 1] || "";
   G.prevUrl = "";
   G.soft = false;
   // dir: "forward" | "back"; mode: passaggio tra Notizie e Terminal; y: scorrimento da ripristinare
@@ -748,6 +751,7 @@
       stopPage();
       apply(doc, pg.name);
       if (opt.push !== false) { idx += 1; history.pushState({ g: 1, n: idx, y: 0 }, "", url); }
+      entries[idx] = location.pathname + location.search;
       shown = location.pathname + location.search;
       G.prevUrl = from;
       G.soft = true;
@@ -1296,7 +1300,10 @@
   // pesi + variazioni -> quadrati in ordine di peso (solo i 14 Paesi della mappa)
   // una Borsa che manca nella pubblicazione, o che lì ha una chiusura vecchia, prende l'ultima seduta scaricata dal job
   // (Yahoo Finance), se è di pochi giorni fa
-  const MAP_SYM = { USA: "^GSPC", JPN: "^N225", GBR: "^FTSE", FRA: "^FCHI", DEU: "^GDAXI", ITA: "FTSEMIB.MI" };
+  const MAP_SYM = {
+    USA: "^GSPC", JPN: "^N225", GBR: "^FTSE", FRA: "^FCHI", DEU: "^GDAXI", ITA: "FTSEMIB.MI", TWN: "^TWII", CAN: "^GSPTSE",
+    KOR: "^KS11", CHN: "000300.SS", CHE: "^SSMI", IND: "^NSEI", NLD: "^AEX", BRA: "^BVSP"
+  };
   const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   // la data scritta nella nota («Chiusura del 27 ottobre») come AAAA-MM-GG, "" se non c'è
   const noteDate = (note) => {
@@ -1310,7 +1317,7 @@
     if (!q || q.stale || typeof q.chg !== "number" || !/^\d{4}-\d{2}-\d{2}$/.test(q.date || "")) return null;
     const age = G.dayAge(q.date + "T12:00:00Z");
     if (age > 4) return null;
-    return { chg: q.chg, time: G.hm(q.at), note: (age === 0 && q.at ? "Dato delle " + G.hm(q.at) : "Chiusura del " + G.dayOnly(q.date)) + ", da Yahoo Finance." };
+    return { chg: q.chg, time: G.hm(q.at), note: G.qNote(q) + "." };
   };
   G.mapItems = (weights, terminal, view, quotes) => {
     const w = (weights && weights[view === "europa" ? "europe" : "world"]) || {};
@@ -1319,12 +1326,130 @@
     ((quotes && quotes.groups) || []).forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) qs[q.sym] = q; }));
     return Object.keys(w).filter((k) => G.MARKETS[k] && typeof w[k] === "number").map((k) => {
       const own = by[k], q = qs[MAP_SYM[k]], alt = fromQuote(q);
-      // la voce della pubblicazione resta, anche senza numero se ha una nota (per esempio Borsa chiusa per festa),
-      // salvo quando la sua nota dice che è una chiusura più vecchia di quella del job
-      const old = !!(own && alt && noteDate(own.note) && noteDate(own.note) < q.date);
-      const d = (own && !old && (typeof own.chg === "number" || own.note) ? own : alt) || own || {};
-      return { code: k, name: G.MARKETS[k][0], index: G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: d.story || "" };
+      // il numero è quello della Borsa scaricato dal job (più fresco, per tutte le Borse); quello della redazione resta
+      // solo se dice una seduta più nuova, o se il job non ce l'ha (anche senza numero con una nota: Borsa chiusa per festa)
+      const newer = !!(own && alt && noteDate(own.note) && noteDate(own.note) > q.date);
+      const d = (alt && !newer ? alt : own && (typeof own.chg === "number" || own.note) ? own : alt) || {};
+      return { code: k, name: G.MARKETS[k][0], index: G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" };
     }).sort((a, b) => b.value - a.value);
+  };
+
+  // ---------- prezzi nuovi a pagina aperta ----------
+  // Ogni tre minuti, e tornando sulla pagina, si chiede quotes.json al sito: una richiesta piccola, quasi sempre «non
+  // cambiato». Se il job ha pubblicato prezzi nuovi la pagina ridisegna i suoi numeri (apply), senza animazioni e mai
+  // mentre il dito è sullo schermo o qualcosa si sta muovendo: in quel caso riprova poco dopo
+  let touchNow = false;
+  document.addEventListener("touchstart", () => { touchNow = true; }, { passive: true, capture: true });
+  ["touchend", "touchcancel"].forEach((ev) => document.addEventListener(ev, () => { touchNow = false; }, { passive: true, capture: true }));
+  const moving = () => touchNow || !!window.gericoVT || (document.getAnimations ? document.getAnimations() : []).some((a) => {
+    if (a.playState !== "running" || !a.effect || !a.effect.getTiming) return false;
+    return a.effect.getTiming().iterations !== Infinity;
+  });
+  G.liveQuotes = (P, asOf, apply) => {
+    let last = asOf || "", at = Date.now();
+    const run = (q) => {
+      if (moving()) { P.later(() => run(q), 1200); return; }
+      last = q.asOf;
+      try { apply(q); } catch (e) { console.error(e); }
+    };
+    const check = async () => {
+      if (document.visibilityState !== "visible") return;
+      at = Date.now();
+      const q = await G.load("quotes", true);
+      if (!q || !q.asOf || (last && !(Date.parse(q.asOf) > Date.parse(last)))) return;
+      run(q);
+    };
+    P.every(check, 180000);
+    P.on(document, "visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - at > 60000) check(); });
+  };
+
+  // ---------- prezzi del job dentro i dati della redazione ----------
+  // La redazione scrive le chiusure leggendo le testate, con il perché e la storia collegata; il job «Prezzi» prende i
+  // numeri dalla Borsa (Yahoo Finance), ogni mezz'ora e per tutti gli strumenti. Per ogni voce che hanno tutti e due vale
+  // il dato più recente: quello del job, salvo quando la redazione ha una seduta più nuova. Spiegazioni e storie restano;
+  // le voci principali che la redazione non ha (altre valute, oro, argento...) le aggiunge il job.
+  const Q_OF = {
+    "s&p 500": "^GSPC", "nasdaq": "^IXIC", "nasdaq composite": "^IXIC", "nasdaq 100": "^NDX", "dow jones": "^DJI",
+    "euro stoxx 50": "^STOXX50E", "eurostoxx 50": "^STOXX50E", "dax": "^GDAXI", "ftse mib": "FTSEMIB.MI", "cac 40": "^FCHI",
+    "ftse 100": "^FTSE", "ibex 35": "^IBEX", "ibex": "^IBEX", "smi": "^SSMI", "aex": "^AEX", "nikkei": "^N225", "nikkei 225": "^N225",
+    "hang seng": "^HSI", "shanghai": "000001.SS", "shanghai composite": "000001.SS", "csi 300": "000300.SS", "kospi": "^KS11",
+    "taiex": "^TWII", "nifty 50": "^NSEI", "s&p/tsx": "^GSPTSE", "bovespa": "^BVSP",
+    "eur/usd": "EURUSD=X", "euro/dollaro": "EURUSD=X", "gbp/usd": "GBPUSD=X", "sterlina/dollaro": "GBPUSD=X", "usd/jpy": "USDJPY=X",
+    "dollaro/yen": "USDJPY=X", "eur/gbp": "EURGBP=X", "euro/sterlina": "EURGBP=X", "usd/chf": "USDCHF=X", "dollaro/franco": "USDCHF=X",
+    "aud/usd": "AUDUSD=X", "usd/cad": "USDCAD=X", "nzd/usd": "NZDUSD=X", "indice del dollaro": "DX-Y.NYB", "dollar index": "DX-Y.NYB",
+    "brent": "BZ=F", "petrolio brent": "BZ=F", "wti": "CL=F", "petrolio wti": "CL=F", "gas ttf": "TTF=F", "gas": "TTF=F",
+    "oro": "GC=F", "argento": "SI=F", "rame": "HG=F", "bitcoin": "BTC-USD", "ether": "ETH-USD", "ethereum": "ETH-USD",
+    "treasury 10 anni": "^TNX", "treasury usa 10 anni": "^TNX"
+  };
+  // le voci che ogni classe deve avere, nell'ordine; per gli indici solo se la redazione non ne ha scritto nessuno
+  const ENSURE = {
+    valute: ["EURUSD=X", "GBPUSD=X", "USDJPY=X", "EURGBP=X", "USDCHF=X"],
+    materie: ["BZ=F", "CL=F", "TTF=F", "GC=F", "SI=F", "HG=F"],
+    cripto: ["BTC-USD", "ETH-USD"],
+    obbligazioni: ["^TNX"]
+  };
+  const ONLY_IF_EMPTY = { indici: ["^GSPC", "^IXIC", "^DJI", "FTSEMIB.MI", "^GDAXI", "^FCHI", "^FTSE", "^N225"] };
+  const CLASS_LABEL = { indici: "Indici", valute: "Valute", materie: "Materie prime", cripto: "Cripto", obbligazioni: "Titoli di Stato" };
+  const UNIT = { "BZ=F": " $", "CL=F": " $", "GC=F": " $", "SI=F": " $", "HG=F": " $", "TTF=F": " €/MWh", "BTC-USD": " $", "ETH-USD": " $" };
+  const qValue = (q) => (q.sym === "^TNX" ? G.num(q.last, 2) + "%" : /-USD$/.test(q.sym) ? G.num(q.last, 0) : G.price(q.sym, q.last)) + (UNIT[q.sym] || "");
+  // quando è il dato. Le Borse hanno sedute: in corso, chiusa oggi a quell'ora, chiusura di un giorno prima. Valute,
+  // materie prime, cripto e tassi si scambiano quasi sempre: per loro solo l'ora (o il giorno) del dato
+  G.qNote = (q) => {
+    const age = G.dayAge(q.date + "T12:00:00Z"), cont = /=X$|=F$|-USD$|^DX-Y|^\^(TNX|IRX|FVX|TYX)$/.test(q.sym || "");
+    const today = age === 0 && q.at;
+    const head = cont ? (today ? "Dato delle " + G.hm(q.at) : "Dato del " + G.dayOnly(q.date))
+      : today && q.state === "aperta" ? "Seduta in corso alle " + G.hm(q.at)
+      : today && q.state === "chiusa" ? "Chiusura delle " + G.hm(q.at)
+      : today ? "Dato delle " + G.hm(q.at) : "Chiusura del " + G.dayOnly(q.date);
+    return head + " (Yahoo Finance)";
+  };
+  const usable = (q) => !!q && !q.stale && typeof q.last === "number" && /^\d{4}-\d{2}-\d{2}$/.test(q.date || "") && G.dayAge(q.date + "T12:00:00Z") <= 4;
+  // valore della redazione che non è un numero vero: manca, oppure «sotto 77.000», «sopra 1,34»
+  const vague = (v) => !v || /^(—|-|n\.?d\.?)$/i.test(String(v).trim()) || /^(sotto|sopra|circa|oltre)\b/i.test(String(v).trim());
+  const fromJob = (base, q) => {
+    const out = Object.assign({}, base, { value: qValue(q), note: G.qNote(q), src: "job" });
+    if (q.sym === "^TNX") { delete out.chg; out.bp = typeof q.bp === "number" ? q.bp : null; }
+    else { delete out.bp; out.chg = typeof q.chg === "number" ? q.chg : null; }
+    return out;
+  };
+  G.withQuotes = (m, quotes) => {
+    if (!quotes || !Array.isArray(quotes.groups)) return m;
+    const qs = {};
+    quotes.groups.forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) qs[q.sym] = q; }));
+    let used = false;
+    const classes = ((m && m.classes) || []).map((c) => {
+      let fromQ = 0;
+      const items = (c.items || []).map((it) => {
+        const q = qs[Q_OF[G.shortName(it.name).toLowerCase()]];
+        if (!usable(q)) return it;
+        const nd = noteDate(it.note);
+        if (nd && nd > q.date && !vague(it.value)) return it;
+        fromQ += 1;
+        return fromJob(it, q);
+      });
+      const want = ENSURE[c.key] || (!items.length ? ONLY_IF_EMPTY[c.key] : null) || [];
+      const have = new Set(items.map((it) => Q_OF[G.shortName(it.name).toLowerCase()]).filter(Boolean));
+      let added = 0;
+      want.forEach((sym) => { if (!have.has(sym) && usable(qs[sym])) { items.push(fromJob({ name: qs[sym].name }, qs[sym])); added += 1; } });
+      if (!fromQ && !added) return c;
+      used = true;
+      const out = Object.assign({}, c, { items });
+      // la nota della classe che diceva cosa mancava, o di quando erano i dati, non vale più
+      if (out.note && ((added && /nessun dato|non hanno un dato|mancan|non disponibil/i.test(out.note)) ||
+        (fromQ * 2 >= (c.items || []).length && /stamattina|seduta in corso|dati d[ie]l?|chiusur|apertur|livello non indicato/i.test(out.note)))) delete out.note;
+      return out;
+    });
+    // classi intere che la redazione non ha scritto
+    Object.keys(Object.assign({}, ENSURE, ONLY_IF_EMPTY)).forEach((key) => {
+      if (classes.some((c) => c.key === key)) return;
+      const items = (ENSURE[key] || ONLY_IF_EMPTY[key]).filter((sym) => usable(qs[sym])).map((sym) => fromJob({ name: qs[sym].name }, qs[sym]));
+      if (items.length) { classes.push({ key, label: CLASS_LABEL[key], items }); used = true; }
+    });
+    if (!used) return m;
+    // l'ora dei dati è quella del più recente dei due; la dicitura della redazione («Chiusura delle Borse europee») vale
+    // solo se è lei la più nuova
+    const fresher = quotes.asOf && (!m || !m.asOf || Date.parse(quotes.asOf) > Date.parse(m.asOf));
+    return Object.assign({}, m || {}, { classes, asOf: fresher ? quotes.asOf : m.asOf, label: fresher ? "" : (m && m.label) || "" });
   };
 
   G.drawMap = (el, items, opts) => {

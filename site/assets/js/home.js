@@ -6,8 +6,11 @@ G.page("home", async function (P) {
 
   G.initPrefs();
 
-  const [ed, mk, qt, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
+  const [ed, mk0, qt0, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
     G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda")]);
+  // i numeri dei mercati: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
+  // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, più sotto)
+  let qt = qt0, mk = G.withQuotes(mk0, qt);
   if (!ed || !Array.isArray(ed.stories)) {
     $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
@@ -287,7 +290,8 @@ G.page("home", async function (P) {
     for (const b of BACKUP) { if (out.length >= 5) break; find(b); }
     return out.slice(0, 5);
   }
-  function renderSide() {
+  // live: prezzi nuovi a pagina aperta, il riquadro cambia senza ricomparire
+  function renderSide(live) {
     const rows = pick();
     if (!rows.length) { $("side").innerHTML = ""; return; }
     const tr = rows.map(({ it, key }) => {
@@ -295,7 +299,7 @@ G.page("home", async function (P) {
       return '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
         '</td><td class="mv ' + G.tone(it, key) + '">' + esc(mv) + "</td></tr>";
     }).join("");
-    $("side").innerHTML = '<section class="mk-box reveal" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
+    $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
       '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
       '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">Tutti i mercati e l\'agenda</a></section>';
   }
@@ -461,6 +465,13 @@ G.page("home", async function (P) {
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
   P.every(renderNext, 30000);
+  // prezzi nuovi a pagina aperta: ticker e riquadro Mercati; le sezioni accanto già pronte per lo swipe (che sul telefono
+  // contengono il riquadro) si rifanno
+  G.liveQuotes(P, qt0 && qt0.asOf, (q) => {
+    qt = q; mk = G.withQuotes(mk0, q);
+    renderTicker(); renderSide(true);
+    feedVer += 1; prepareSoon();
+  });
 
   // ---------- swipe tra le sezioni: a sinistra la sezione dopo, a destra quella prima ----------
   const step = (d) => { const o = Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec); return o[o.indexOf(state.section) + d]; };

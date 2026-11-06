@@ -47,6 +47,16 @@ una chat a ogni giro. Gli orari del workflow si accendono quando quelle attivit�
 - `terminal.json`: variazioni degli indici della mappa (finché manca `terminal/snapshot` nel database, sono ricavate dai mercati)
 - `weights.json`: pesi della mappa dai factsheet MSCI (documento `terminal/weights` del database), aggiornati una volta al mese
 
+I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora
+nelle ore di mercato dei giorni feriali e scarica solo `quotes.json` con yfinance (Yahoo Finance): indici di tutte le Borse
+della mappa, valute, tassi Usa, materie prime e cripto, con apertura, chiusura precedente e Borsa aperta o chiusa. Dura circa un
+minuto. Lo stesso file lo scrive anche «Dati del Terminal» quattro volte al giorno, che fa anche il resto (macro, SEC, tono delle
+notizie, riepilogo a voce, screener); i due non girano mai insieme. Sul sito i numeri di `quotes.json` hanno la precedenza su
+quelli della redazione quando sono più recenti (`G.withQuotes` e `G.mapItems` in `common.js`): della redazione restano le
+spiegazioni, le storie collegate e i dati che la Borsa non dà (Btp, Bund, spread). Le pagine aperte controllano ogni tre minuti
+se sono usciti prezzi nuovi e li mostrano da sole. I timer di GitHub possono partire in ritardo, anche di un'ora: ogni prezzo
+porta l'ora a cui si riferisce.
+
 ## Anteprima in locale
 
 ```

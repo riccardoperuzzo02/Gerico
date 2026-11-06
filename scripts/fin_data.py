@@ -4,6 +4,7 @@
 Uso:
     python3 scripts/fin_data.py site/data
     FIN_ONLY=macro,sec python3 scripts/fin_data.py site/data    solo alcune parti (quotes, macro, sec, sentiment, calendario)
+    FIN_ONLY=quotes python3 scripts/fin_data.py site/data       solo i prezzi: è il job leggero «Prezzi», ogni mezz'ora
 
 Scrive in site/data:
 - quotes.json     prezzi, variazioni e grafico di tre mesi da Yahoo Finance, con yfinance;
@@ -107,10 +108,13 @@ def get(url, params=None, tries=3):
 # ---------------------------------------------------------------- Yahoo Finance (yfinance)
 
 QUOTES = [
+    # tutte le Borse della mappa del Terminal (un indice per Paese) e quelle che la redazione cita di solito
     ("indici", "Indici", [
-        ("^GSPC", "S&P 500"), ("^NDX", "Nasdaq 100"), ("^DJI", "Dow Jones"), ("^STOXX50E", "Euro Stoxx 50"),
-        ("^GDAXI", "Dax"), ("FTSEMIB.MI", "Ftse Mib"), ("^FCHI", "Cac 40"), ("^FTSE", "Ftse 100"),
-        ("^N225", "Nikkei 225"), ("^HSI", "Hang Seng")]),
+        ("^GSPC", "S&P 500"), ("^NDX", "Nasdaq 100"), ("^IXIC", "Nasdaq Composite"), ("^DJI", "Dow Jones"),
+        ("^STOXX50E", "Euro Stoxx 50"), ("^GDAXI", "Dax"), ("FTSEMIB.MI", "Ftse Mib"), ("^FCHI", "Cac 40"),
+        ("^FTSE", "Ftse 100"), ("^IBEX", "Ibex 35"), ("^SSMI", "Smi"), ("^AEX", "Aex"),
+        ("^N225", "Nikkei 225"), ("^HSI", "Hang Seng"), ("000300.SS", "Csi 300"), ("000001.SS", "Shanghai Composite"), ("^KS11", "Kospi"),
+        ("^TWII", "Taiex"), ("^NSEI", "Nifty 50"), ("^GSPTSE", "S&P/TSX"), ("^BVSP", "Bovespa")]),
     ("valute", "Valute", [
         ("EURUSD=X", "EUR/USD"), ("GBPUSD=X", "GBP/USD"), ("USDJPY=X", "USD/JPY"), ("AUDUSD=X", "AUD/USD"),
         ("USDCHF=X", "USD/CHF"), ("USDCAD=X", "USD/CAD"), ("NZDUSD=X", "NZD/USD"), ("EURGBP=X", "EUR/GBP"),
@@ -159,6 +163,23 @@ def market_time(ts):
     return ""
 
 
+def market_state(meta):
+    """«aperta» o «chiusa» in questo momento, dagli orari della seduta che Yahoo manda insieme ai prezzi ("" se mancano)"""
+    reg = ((meta or {}).get("currentTradingPeriod") or {}).get("regular") or {}
+
+    def sec(x):
+        if hasattr(x, "timestamp"):
+            return x.timestamp()
+        return float(x)
+
+    try:
+        start, end = sec(reg.get("start")), sec(reg.get("end"))
+    except (TypeError, ValueError):
+        return ""
+    t = time.time()
+    return "aperta" if start <= t < end else "chiusa"
+
+
 def one_quote(yf, sym, name, key):
     t, h = history(yf, sym)
     closes = [float(c) for c in h["Close"].tolist()]
@@ -170,6 +191,14 @@ def one_quote(yf, sym, name, key):
     at = market_time(meta.get("regularMarketTime"))
     item = {"sym": sym, "name": name, "last": num(last), "prev": num(prev), "date": dates[-1], "at": at,
             "currency": meta.get("currency") or "", "url": "https://finance.yahoo.com/quote/" + quote(sym, safe="")}
+    # apertura della seduta (quella di oggi se la Borsa ha già aperto) e Borsa aperta o chiusa adesso
+    if "Open" in h:
+        op = num(h["Open"].iloc[-1])
+        if op:
+            item["open"] = op
+    state = market_state(meta)
+    if state:
+        item["state"] = state
 
     def pct(n):
         return round((last / closes[-1 - n] - 1) * 100, 2) if len(closes) > n and closes[-1 - n] else None

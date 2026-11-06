@@ -9,7 +9,9 @@ G.page("story", async function (P) {
   const back = '<a class="back" id="back" href="index.html" data-dir="back"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>Prima pagina</a>';
   const topBar = '<div class="story-top">' + back + '<button type="button" class="share" id="share">Condividi</button></div>';
   const id = new URLSearchParams(location.search).get("id") || "";
-  const [ed, mk] = await Promise.all([G.load("edition"), G.load("markets")]);
+  const [ed, mk0, qt] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes")]);
+  // i mercati collegati con i numeri più freschi (job dei prezzi o redazione, G.withQuotes)
+  const mk = G.withQuotes(mk0, qt);
   if (!ed) {
     $("story").innerHTML = back + '<div class="empty"><h1>La storia non si è caricata.</h1><p>Può essere la connessione. Riprova tra poco.</p>' +
       '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
@@ -154,6 +156,8 @@ G.page("story", async function (P) {
     const vt = JSON.parse(sessionStorage.getItem("gerico.vt") || "null");
     const ref = G.prevUrl ? new URL(G.prevUrl) : document.referrer ? new URL(document.referrer) : null;
     fromHome = !!(vt && vt.id === id && ref && ref.origin === location.origin && /^\/(index(\.html)?)?$/.test(ref.pathname) && history.length > 1);
+    // anche dopo essere passati da una storia all'altra e tornati indietro: se il passo prima è la prima pagina, si torna lì
+    if (!fromHome && G.entryBefore && /^\/(index(\.html)?)?$/.test(G.entryBefore().split("?")[0])) fromHome = true;
   } catch (err) { /* niente */ }
   // condividere: il foglio di condivisione del telefono, altrimenti il link copiato
   // si condivide la pagina /s/<id>: ha titolo e sintesi nei meta, così l'anteprima su WhatsApp e simili è quella della storia

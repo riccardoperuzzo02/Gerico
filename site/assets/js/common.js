@@ -324,6 +324,17 @@
 
   // controllo segmentato: un indicatore scivola sotto la scelta attiva.
   // Si animano solo transform e opacity: per la larghezza si usa FLIP (si parte scalati e si torna a scala 1).
+  // dove portare il binario perché una scheda (x, w) stia al centro, senza andare oltre i bordi
+  const segCenter = (box, x, w) => Math.max(0, Math.min(box.scrollWidth - box.clientWidth, Math.round(x + w / 2 - box.clientWidth / 2)));
+  // colori dei nomi delle schede durante lo swipe: «rgb(…)» in numeri, una via di mezzo, e via i colori messi a mano
+  const rgb = (c) => {
+    const m = String(c).match(/rgba?\(([^)]+)\)/);
+    if (!m) return null;
+    const v = m[1].split(/[\s,\/]+/).filter(Boolean).map(Number);
+    return v.length >= 3 && v.every((n) => !isNaN(n)) ? [v[0], v[1], v[2], v.length > 3 ? v[3] : 1] : null;
+  };
+  const mixRGB = (x, y, p) => "rgba(" + [0, 1, 2].map((i) => Math.round(x[i] + (y[i] - x[i]) * p)).join(", ") + ", " + (x[3] + (y[3] - x[3]) * p).toFixed(3) + ")";
+  const untint = (box) => box.querySelectorAll(":scope > a, :scope > button").forEach((el) => { el.style.color = ""; el.style.transition = ""; });
   G.seg = (box, instant) => {
     if (!box) return;
     let ind = box.querySelector(":scope > .seg-ind");
@@ -335,11 +346,12 @@
     }
     const on = box.querySelector(':scope > [aria-current="page"], :scope > [aria-current="true"], :scope > [aria-pressed="true"]');
     if (!on || !on.offsetWidth) { ind.style.opacity = "0"; ind._pos = null; return; }
-    const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos;
+    const x = on.offsetLeft, w = on.offsetWidth, prev = ind._pos, followed = !!ind._follow;
     ind.style.opacity = "";
     if (ind._follow) {
       // l'indicatore arriva da uno swipe (scala e transizione proprie): si mette al suo posto così com'è
       ind._follow = false;
+      untint(box);
       ind.style.transition = "none";
       ind.style.width = w + "px";
       ind.style.transform = "translateX(" + x + "px)";
@@ -357,11 +369,11 @@
     ind.style.transform = "translateX(" + x + "px)";
     ind._pos = { x, w };
     box.classList.add("ready");
-    // se il binario scorre, la scelta attiva resta in vista
-    if (box.scrollWidth > box.clientWidth + 1) {
-      const behavior = instant || G.reduced() ? "auto" : "smooth";
-      if (x - 12 < box.scrollLeft) box.scrollTo({ left: x - 12, behavior });
-      else if (x + w + 12 > box.scrollLeft + box.clientWidth) box.scrollTo({ left: x + w + 12 - box.clientWidth, behavior });
+    // se il binario scorre, la scelta attiva va al centro (le vicine restano in vista ai due lati), come le schede di iOS.
+    // Dopo uno swipe il binario l'ha già portata lì G.segFollow, insieme alla pagina: qui non si tocca
+    if (box.scrollWidth > box.clientWidth + 1 && !followed) {
+      const to = segCenter(box, x, w);
+      if (Math.abs(to - box.scrollLeft) > 1) box.scrollTo({ left: to, behavior: instant || !prev || G.reduced() ? "auto" : "smooth" });
     }
     G.watchRow(box);
     box._fade();
@@ -1068,8 +1080,23 @@
       const on = btns.findIndex((b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true");
       const a = btns[on], b = btns[on + d];
       if (!a || !b) return;
-      g = ind._g = { d, xa: a.offsetLeft, wa: a.offsetWidth, xb: b.offsetLeft, wb: b.offsetWidth, at: 0 };
+      g = ind._g = { d, xa: a.offsetLeft, wa: a.offsetWidth, xb: b.offsetLeft, wb: b.offsetWidth, at: 0,
+        roll: box.scrollWidth > box.clientWidth + 1, sa: box.scrollLeft, sb: segCenter(box, b.offsetLeft, b.offsetWidth),
+        a, b, ca: rgb(getComputedStyle(a).color), cb: rgb(getComputedStyle(b).color) };
       ind.style.width = g.wa + "px";
+    }
+    // anche il colore dei due nomi passa dall'uno all'altro con il dito (all'arrivo G.seg lascia fare al CSS)
+    if (g.ca && g.cb) {
+      const q = anim ? (p >= 1 ? 1 : 0) : p, tr = anim ? "color " + anim.D + "ms " + anim.ease : "none";
+      g.a.style.transition = tr; g.b.style.transition = tr;
+      g.a.style.color = mixRGB(g.ca, g.cb, q); g.b.style.color = mixRGB(g.cb, g.ca, q);
+      // tornato indietro: finita la corsa i colori tornano quelli del CSS
+      if (anim && p < 1) setTimeout(() => { if (!ind._g) untint(box); }, anim.D + 60);
+    }
+    // il binario delle schede scorre insieme alla pagina: la scheda di arrivo viene al centro mentre il dito la porta
+    if (g.roll) {
+      if (anim) box.scrollTo({ left: p >= 1 ? g.sb : g.sa, behavior: G.reduced() ? "auto" : "smooth" });
+      else box.scrollLeft = g.sa + (g.sb - g.sa) * p;
     }
     g.at = performance.now();
     const x = g.xa + (g.xb - g.xa) * p, s = (g.wa + (g.wb - g.wa) * p) / g.wa;

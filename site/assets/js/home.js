@@ -32,16 +32,13 @@ G.page("home", async function (P) {
     const edl = document.querySelector("#edition-line .ed-l");
     // «Mercoledì 28 ottobre · ore 7:23»: sta in una riga anche sul telefono
     if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · ore ");
-    // «Oggi» solo sopra l'edizione di oggi. L'edizione del mattino esce verso le 7:30: dalle 8:15 (o se ne manca più di una) lo si dice subito
+    // «Oggi» solo sopra l'edizione di oggi; per le altre il giorno (la data e l'ora sono nella riga accanto)
     const age = G.dayAge(lastRun);
     if (age > 0) {
       const name = age === 1 ? "Ieri" : age < 7 ? G.cap(G.weekday(lastRun)) : "Ultima edizione";
       $("large-title").textContent = name;
       const tt = document.querySelector(".top-title");
       if (tt) tt.textContent = name;
-      if (age > 1 || G.romeNow().min >= 495) {
-        $("notice").innerHTML = '<p class="notice">Questa è l\'edizione di ' + esc(G.longDay(lastRun)) + " alle " + esc(G.hm(lastRun)) + ". Quella di oggi non è ancora uscita.</p>";
-      }
     }
   }
 
@@ -72,17 +69,11 @@ G.page("home", async function (P) {
     if (state.follows.length) items.push(["seguiti", "Seguiti"]);
     $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
   }
-  // quiet: l'indicatore lo sta già muovendo lo swipe; la scheda scelta però resta in vista nel binario delle sezioni
+  // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
   function markNav(k, quiet) {
     const on = k || state.section, box = $("sections");
-    let el = null;
-    box.querySelectorAll("a").forEach((a) => { if (a.dataset.sec === on) { a.setAttribute("aria-current", "page"); el = a; } else a.removeAttribute("aria-current"); });
-    if (!quiet) { if (G.seg) G.seg(box); return; }
-    if (el && box.scrollWidth > box.clientWidth + 1) {
-      const x = el.offsetLeft, w = el.offsetWidth, behavior = G.reduced() ? "auto" : "smooth";
-      if (x - 12 < box.scrollLeft) box.scrollTo({ left: x - 12, behavior });
-      else if (x + w + 12 > box.scrollLeft + box.clientWidth) box.scrollTo({ left: x + w + 12 - box.clientWidth, behavior });
-    }
+    box.querySelectorAll("a").forEach((a) => { if (a.dataset.sec === on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (!quiet && G.seg) G.seg(box);
   }
 
   // ---------- notizie: occhiello sopra il titolo, come nei siti all-news ----------
@@ -140,7 +131,8 @@ G.page("home", async function (P) {
       '<p class="blk-sub">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p>' + G.titoliHTML(tit, tsh) + "</section>";
   }
   // versione dell'elenco e sezioni accanto preparate per lo swipe (vedi prepareSoon)
-  let feedVer = 0, prepTimer = 0;
+  // alive: la prima pagina è ancora quella sullo schermo (i momenti liberi del browser non si spengono con la pagina)
+  let feedVer = 0, prepTimer = 0, alive = true;
   const prepared = {};
   function renderFeed(viaTransition) {
     const feed = $("feed");
@@ -510,7 +502,7 @@ G.page("home", async function (P) {
   P.on(document, "touchend", () => { touching = false; }, { passive: true, capture: true });
   P.on(document, "touchcancel", () => { touching = false; }, { passive: true, capture: true });
   function prepareSoon() {
-    if (!("ontouchstart" in window) || G.reduced()) return;
+    if (!alive || !("ontouchstart" in window) || G.reduced()) return;
     clearTimeout(prepTimer);
     const one = (d) => {
       const r = prepared[d], k = step(d);
@@ -521,14 +513,14 @@ G.page("home", async function (P) {
     };
     const idle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 1500 }) : setTimeout(fn, 60));
     const go = (sides) => {
-      if (!sides.length) return;
+      if (!alive || !sides.length) return;
       if (touching || window.gericoVT) { prepTimer = P.later(() => go(sides), 400); return; }
       one(sides[0]);
       if (sides.length > 1) idle(() => go(sides.slice(1)));
     };
     prepTimer = P.later(() => idle(() => go([1, -1])), window.gericoVT ? 700 : 300);
   }
-  P.keep({ disconnect: () => { [1, -1].forEach((d) => { if (prepared[d]) prepared[d].frame.remove(); }); } });
+  P.keep({ disconnect: () => { alive = false; clearTimeout(prepTimer); [1, -1].forEach((d) => { if (prepared[d]) prepared[d].frame.remove(); }); } });
   // sul telefono i mercati e il piede stanno sotto l'elenco: fanno parte della pagina e si spostano con lui
   const stacked = () => { const s = $("side"); return !!s && s.getBoundingClientRect().top >= $("feed").getBoundingClientRect().bottom - 1; };
   swiper = G.swipe($("main") || $("feed").parentElement, {

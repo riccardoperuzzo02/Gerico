@@ -1467,3 +1467,22 @@ html[data-vt] .ultim-t, html[data-vt] .k-live::before, html[data-vt] .t-agenda l
 html[data-vt] .sk i::after, html[data-vt] #st-title:empty::after { animation-play-state: paused; }
 /* le pagine che si spingono non hanno ombra: un'ombra sfumata alta tutto lo schermo costava a ogni fotogramma */
 html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(root) { box-shadow: none !important; }
+
+/* ========== 6 novembre: barra delle sezioni fluida ========== */
+/* Sul telefono scorre da un bordo all'altro dello schermo, come le schede di iOS: le sezioni che non ci stanno escono
+   dal bordo, senza la sfumatura fatta con una maschera (su iOS una maschera su un elemento che scorre lo rende a scatti)
+   e senza aggancio alle schede (lo scorrimento si ferma dove lo lascia il dito). La scheda scelta va al centro (JS) */
+.sec-nav .seg { scroll-snap-type: none; }
+.sec-nav .seg > a { scroll-snap-align: none; }
+.sec-nav .seg.has-more { -webkit-mask-image: none; mask-image: none; }
+@media (max-width: 759px) {
+  .sec-nav { padding-left: 0; padding-right: 0; }
+  .sec-nav .seg { padding-left: 16px; }
+  /* lo spazio in fondo come elemento: il padding finale di un contenitore che scorre non conta ovunque */
+  .sec-nav .seg::after { content: ""; flex: 0 0 14px; }
+}
+@media (max-width: 359px) {
+  .sec-nav { margin-left: -12px; margin-right: -12px; }
+  .sec-nav .seg { padding-left: 12px; }
+  .sec-nav .seg::after { flex-basis: 10px; }
+}

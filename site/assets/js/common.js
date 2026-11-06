@@ -1334,7 +1334,9 @@
       // solo se dice una seduta più nuova, o se il job non ce l'ha (anche senza numero con una nota: Borsa chiusa per festa)
       const newer = !!(own && alt && noteDate(own.note) && noteDate(own.note) > q.date);
       const d = (alt && !newer ? alt : own && (typeof own.chg === "number" || own.note) ? own : alt) || {};
-      return { code: k, name: G.MARKETS[k][0], index: d === alt ? index : G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" };
+      // dal job anche i livelli: ultimo, apertura della seduta e chiusura precedente (per il dettaglio)
+      const lv = d === alt && q ? { sym: q.sym, last: q.last, open: q.open, prev: q.prev } : {};
+      return Object.assign({ code: k, name: G.MARKETS[k][0], index: d === alt ? index : G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" }, lv);
     }).sort((a, b) => b.value - a.value);
   };
 

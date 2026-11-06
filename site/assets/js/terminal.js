@@ -49,6 +49,10 @@ G.page("terminal", async function (P) {
       ? '<b class="' + (it.chg > 0 ? "t-up" : it.chg < 0 ? "t-down" : "") + '">' + G.pct(it.chg) + "</b>"
       : "nessun dato oggi";
     let html = "<p><b>" + esc(it.name) + "</b>" + (it.index ? ", " + esc(it.index) : "") + ": " + cg + ". Peso " + G.wt(it.value) + " nell'indice " + basis + ".</p>";
+    if (typeof it.last === "number") {
+      const lv = ["ultimo " + G.price(it.sym, it.last)].concat(typeof it.open === "number" ? ["apertura " + G.price(it.sym, it.open)] : [], typeof it.prev === "number" ? ["chiusura precedente " + G.price(it.sym, it.prev)] : []);
+      html += "<p>" + esc(G.cap(lv.join(" · "))) + ".</p>";
+    }
     if (it.note) html += "<p>" + esc(it.note) + "</p>";
     else if (it.time) html += "<p>Dato delle " + esc(it.time) + ".</p>";
     const s = linkedStory(it.code);
@@ -458,7 +462,10 @@ G.page("terminal", async function (P) {
     const per = (k) => { const v = it[(rates ? "bp" : "chg") + k]; return typeof v !== "number" ? "n.d." : rates ? G.signed(v, 1) + " pb" : G.pct(v); };
     const big = '<div class="q-more"><span class="' + tr + '">' + G.spark(it.spark, 320, 112, "sp-big", true) + "</span>" +
       '<p class="q-range"><span>' + esc(G.dayOnly(it.sparkFrom)) + "</span><span>" + esc(G.dayOnly(it.date)) + "</span></p>" +
-      '<dl class="q-stats"><div><dt>1 settimana</dt><dd>' + per("1w") + "</dd></div><div><dt>1 mese</dt><dd>" + per("1m") + "</dd></div><div><dt>3 mesi</dt><dd>" + per("3m") + "</dd></div>" +
+      '<dl class="q-stats">' +
+      (typeof it.open === "number" ? "<div><dt>Apertura</dt><dd>" + (rates ? G.num(it.open, 2) + "%" : G.price(it.sym, it.open)) + "</dd></div>" : "") +
+      (typeof it.prev === "number" ? "<div><dt>Chiusura prima</dt><dd>" + (rates ? G.num(it.prev, 2) + "%" : G.price(it.sym, it.prev)) + "</dd></div>" : "") +
+      '<div><dt>1 settimana</dt><dd>' + per("1w") + "</dd></div><div><dt>1 mese</dt><dd>" + per("1m") + "</dd></div><div><dt>3 mesi</dt><dd>" + per("3m") + "</dd></div>" +
       "<div><dt>Massimo</dt><dd>" + (typeof it.hi === "number" ? (rates ? G.num(it.hi, 2) + "%" : G.price(it.sym, it.hi)) : "n.d.") + "</dd></div>" +
       "<div><dt>Minimo</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : "n.d.") + "</dd></div></dl>" +
       '<p class="t-note">' + (it.at ? "Ultimo prezzo " + esc(G.when(it.at)) + ". " : "") + ext(it.url, "Vedi su Yahoo Finance") + "</p></div>";

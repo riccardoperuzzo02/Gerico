@@ -990,7 +990,9 @@
         W = (f ? f.getBoundingClientRect().width : innerWidth) + SWIPE_GAP;
         follows().forEach((el) => { el.style.willChange = "transform"; });
       }
-      // gesto di lato: la pagina non scorre su e giù intanto (touch-action: pan-y nel CSS), senza bloccare niente qui
+      // gesto di lato: la pagina non scorre su e giù intanto. touch-action: pan-y non basta su iOS, che con il dito un po' in
+      // diagonale faceva scorrere la pagina insieme allo swipe (la sezione nuova poi compariva più in basso): qui si ferma
+      if (e.cancelable) e.preventDefault();
       const now = performance.now();
       track.push([now, t.clientX]);
       while (track.length > 2 && now - track[0][0] > 100) track.shift();
@@ -1008,7 +1010,7 @@
       x = can(d) ? (Math.abs(dx) <= W ? dx : Math.sign(dx) * (W + rubber(Math.abs(dx) - W, W))) : rubber(dx, W);
       if (still) return;
       schedule();
-    }, { passive: true });
+    }, { passive: false });
     // un tocco finito dopo uno swipe non apre la notizia su cui si è alzato il dito
     let swiped = 0;
     P.on(area, "click", (e) => { if (performance.now() - swiped < 400) { e.preventDefault(); e.stopPropagation(); } }, { capture: true });

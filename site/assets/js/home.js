@@ -313,7 +313,8 @@ G.page("home", async function (P) {
   // browser fanno lo stesso, tranne quando il telefono ha già animato il gesto dal bordo (allora cambia e basta)
   const order = () => Array.from($("sections").querySelectorAll("a")).map((a) => a.dataset.sec);
   // tapK: la sezione toccata mentre entra; noPush: l'indirizzo è già cambiato (indietro e avanti del browser)
-  let swiper = null, tapK = null, noPush = false;
+  // peekTop: dove sta sullo schermo la sezione accanto mostrata dallo swipe
+  let swiper = null, tapK = null, noPush = false, peekTop = null;
   // cambiare sezione. Sul telefono la sezione nuova entra di lato come con lo swipe, già pronta (preparata a pagina ferma
   // se è quella vicina); altrove, o con il movimento ridotto, l'elenco scorre o cambia e basta.
   // fromHist: viene da indietro/avanti; instant: il telefono ha già animato il gesto dal bordo
@@ -333,7 +334,7 @@ G.page("home", async function (P) {
     if (!fromHist) goSec(k);
     state.section = k;
     markNav();
-    if (instant) { renderFeed(true); const st = sectionTop(); if (st.scroll !== null) window.scrollTo({ top: st.scroll, behavior: "instant" }); }
+    if (instant) { const st = sectionTop(), y0 = scrollY; renderFeed(true); scrollKeep(st.scroll !== null ? st.scroll : y0); }
     else slideFeed(d);
     announce(k);
   }
@@ -386,6 +387,16 @@ G.page("home", async function (P) {
     const n = visible().length, st = $("sec-status");
     if (st) st.textContent = (sec === "tutte" ? "Tutte le notizie" : sec === "seguiti" ? "Temi seguiti" : G.SECTIONS[sec]) + ": " + n + (n === 1 ? " notizia" : " notizie");
   }
+  // porta la pagina a «y» dopo aver cambiato sezione. Se la sezione nuova è troppo corta per arrivarci, l'elenco si
+  // allunga di quel che manca (spazio vuoto in fondo): altrimenti il browser fermerebbe la pagina più in alto e tutto
+  // scenderebbe di colpo
+  function scrollKeep(y) {
+    const feed = $("feed");
+    feed.style.minHeight = "";
+    const max = document.documentElement.scrollHeight - innerHeight;
+    if (y > max + 1) feed.style.minHeight = Math.ceil(feed.offsetHeight + (y - max)) + "px";
+    window.scrollTo({ top: Math.max(0, y), behavior: "instant" });
+  }
   // dove comincia una sezione sullo schermo: dove sta adesso l'elenco o, se la pagina è già scesa oltre il suo inizio,
   // subito sotto la barra delle sezioni ferma in alto (scroll: dove portare la pagina). Cambiando sezione si riparte
   // dall'inizio della nuova, come in un'app.
@@ -405,8 +416,9 @@ G.page("home", async function (P) {
   // toccando una sezione l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro, attaccati come le pagine
   // di un libro e interi: una copia del vecchio sopra il nuovo, solo transform
   function slideFeed(sgn) {
-    const feed = $("feed"), st = sectionTop();
-    if (G.reduced() || !feed.animate) { renderFeed(); if (st.scroll !== null) window.scrollTo({ top: st.scroll, behavior: "instant" }); return; }
+    // lo scorrimento si rimette sempre a mano: quando l'elenco cambia, il browser (scroll anchoring) lo sposterebbe da sé
+    const feed = $("feed"), st = sectionTop(), y0 = scrollY, target = st.scroll !== null ? st.scroll : y0;
+    if (G.reduced() || !feed.animate) { renderFeed(); scrollKeep(target); return; }
     const ghost = feed.cloneNode(true);
     ghost.removeAttribute("id");
     ghost.className = "feed-ghost";
@@ -424,7 +436,8 @@ G.page("home", async function (P) {
     ghost.style.width = fr.width + "px";
     renderFeed(true);
     // la sezione nuova comincia dall'inizio: la pagina sale, la copia resta dov'era sullo schermo
-    if (st.scroll !== null) { top -= scrollY - st.scroll; window.scrollTo({ top: st.scroll, behavior: "instant" }); }
+    top -= y0 - target;
+    scrollKeep(target);
     ghost.style.top = top + "px";
     feed.parentElement.appendChild(ghost);
     // alta quanto la parte del vecchio elenco che si vedeva, anche se il nuovo è più corto
@@ -539,6 +552,7 @@ G.page("home", async function (P) {
       if (!r) return null;
       const st = sectionTop(), h = Math.max(0, innerHeight - st.top + 40);
       r.frame.style.top = st.top.toFixed(1) + "px";
+      peekTop = st.top;
       r.frame.style.height = h + "px";
       r.p.style.height = h + "px";
       r.frame.style.visibility = "";
@@ -550,13 +564,15 @@ G.page("home", async function (P) {
       const push = !noPush;
       tapK = null; noPush = false;
       if (!k) return;
-      const st = sectionTop(), y = scrollY;
+      const st = sectionTop(), y = scrollY, top = $("feed").getBoundingClientRect().top, shown = peekTop;
+      peekTop = null;
       state.section = k;
       // l'indirizzo cambia per il tasto indietro (pushState: niente scorrimenti del browser); da indietro/avanti è già cambiato
       if (push) goSec(k);
       renderFeed(true);
-      // subito, non con lo scorrimento morbido della pagina: la sezione nuova è già lì
-      window.scrollTo({ top: st.scroll !== null ? st.scroll : y, behavior: "instant" });
+      // subito, e con l'elenco vero esattamente dove stava la pagina accanto che lo copriva: niente salti in su o in giù,
+      // anche se intanto la pagina si è mossa
+      scrollKeep(shown !== null ? Math.round(top + y - shown) : st.scroll !== null ? st.scroll : y);
       markNav();
       announce(k);
     },

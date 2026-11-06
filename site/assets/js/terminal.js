@@ -71,13 +71,18 @@ G.page("terminal", async function (P) {
   // ---------- altezze che cambiano (vista della mappa, gruppo di grafici, dettaglio) ----------
   // Quello che sta sotto non salta mai: lo spazio passa dall'altezza di prima a quella nuova con un movimento morbido.
   // easeHeight: il contenuto nuovo è già dentro, h0 è l'altezza di prima
+  // più è grande il cambio di altezza, più dura (sempre con la stessa curva): un salto di mille pixel non deve sembrare
+  // uno scatto
+  // con una curva morbida all'inizio e alla fine: lo spazio non ha la spinta del dito
+  const hDur = (D, dh) => Math.min(900, Math.max(D, 300 + Math.abs(dh) * 0.4));
+  const SOFT = "cubic-bezier(0.45, 0, 0.2, 1)";
   function easeHeight(el, h0, D, ease) {
     if (!el || G.reduced()) return;
     const h1 = el.offsetHeight;
     if (Math.abs(h1 - h0) < 1) return;
     if (el._hA) el._hA.cancel();
     el.style.overflow = "hidden";
-    const a = el._hA = el.animate([{ height: h0 + "px" }, { height: h1 + "px" }], { duration: D || 420, easing: ease || SNAP });
+    const a = el._hA = el.animate([{ height: h0 + "px" }, { height: h1 + "px" }], { duration: hDur(D || 420, h1 - h0), easing: ease || SOFT });
     const done = () => { if (el._hA === a) { el._hA = null; el.style.overflow = ""; } };
     a.finished.then(done, done);
   }
@@ -91,16 +96,22 @@ G.page("terminal", async function (P) {
     const h1 = peek.offsetHeight;
     peek.style.height = h0 + "px";
     if (Math.abs(h1 - h0) < 1) return;
-    const o = { duration: anim.D, easing: anim.ease, fill: "forwards" };
+    // per i cambi piccoli la stessa molla del passaggio; per quelli grandi più lunga, e finisce dopo l'arrivo (releaseHeight)
+    const big = hDur(anim.D, h1 - h0) > anim.D;
+    const o = big ? { duration: hDur(anim.D, h1 - h0), easing: SOFT, fill: "forwards" } : { duration: anim.D, easing: anim.ease, fill: "forwards" };
     if (el._hA) el._hA.cancel();
     el.style.overflow = "hidden";
     el._hA = el.animate([{ height: h0 + "px" }, { height: h1 + "px" }], o);
     peek.animate([{ height: h0 + "px" }, { height: h1 + "px" }], o);
   }
+  // all'arrivo il contenuto vero è dentro: se lo spazio sta ancora cambiando, finisce il suo movimento e poi torna
+  // all'altezza naturale (la stessa)
   function releaseHeight(el) {
     if (!el) return;
-    if (el._hA) { el._hA.cancel(); el._hA = null; }
-    el.style.overflow = "";
+    const a = el._hA;
+    const done = () => { if (el._hA === a) { if (a) a.cancel(); el._hA = null; el.style.overflow = ""; } };
+    if (a && a.playState === "running") a.finished.then(done, done);
+    else done();
   }
   // ---------- viste accanto pronte prima dello swipe ----------
   // A pagina ferma (mai mentre il dito è sullo schermo) la vista accanto si disegna nascosta, una per volta nei momenti
@@ -396,7 +407,10 @@ G.page("terminal", async function (P) {
   function renderStatus() {
     // l'ora dei dati più freschi tra prezzi del job, mappa e chiusure della redazione
     const asOf = [qt0 && qt0.asOf, tm && tm.asOf, mk && mk.asOf].filter((x) => x && !isNaN(Date.parse(x))).sort((a, b) => Date.parse(a) - Date.parse(b)).pop();
-    $("st-line").textContent = (asOf ? "Aggiornato " + G.when(asOf) : "Dati non disponibili") + " · prossimo " + G.nextUpdate();
+    // i prezzi arrivano ogni mezz'ora nelle ore di Borsa; le chiusure della redazione agli orari delle edizioni
+    $("st-line").textContent = !asOf ? "Dati non disponibili"
+      : qt0 && asOf === qt0.asOf ? "Prezzi aggiornati " + G.when(asOf) + ", ogni mezz'ora nelle ore di Borsa"
+      : "Aggiornato " + G.when(asOf) + " · prossimo " + G.nextUpdate();
     // la data dei dati sta sotto la mappa, in una riga già riservata: nessun salto quando arriva
     if (asOf) {
       const stale = G.hoursAgo(asOf) > 30, w = G.when(asOf);

@@ -1304,6 +1304,8 @@
     USA: "^GSPC", JPN: "^N225", GBR: "^FTSE", FRA: "^FCHI", DEU: "^GDAXI", ITA: "FTSEMIB.MI", TWN: "^TWII", CAN: "^GSPTSE",
     KOR: "^KS11", CHN: "000300.SS", CHE: "^SSMI", IND: "^NSEI", NLD: "^AEX", BRA: "^BVSP"
   };
+  // se l'indice di un Paese manca (Yahoo a volte non dà il Csi 300), ce n'è uno di riserva, con il suo nome
+  const MAP_ALT = { CHN: ["000001.SS", "Shanghai Composite"] };
   const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   // la data scritta nella nota («Chiusura del 27 ottobre») come AAAA-MM-GG, "" se non c'è
   const noteDate = (note) => {
@@ -1325,12 +1327,14 @@
     ((terminal && terminal.indices) || []).forEach((x) => { if (x && x.code) by[x.code] = x; });
     ((quotes && quotes.groups) || []).forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) qs[q.sym] = q; }));
     return Object.keys(w).filter((k) => G.MARKETS[k] && typeof w[k] === "number").map((k) => {
-      const own = by[k], q = qs[MAP_SYM[k]], alt = fromQuote(q);
+      let q = qs[MAP_SYM[k]], alt = fromQuote(q), index = G.MARKETS[k][1];
+      if (!alt && MAP_ALT[k] && fromQuote(qs[MAP_ALT[k][0]])) { q = qs[MAP_ALT[k][0]]; alt = fromQuote(q); index = MAP_ALT[k][1]; }
+      const own = by[k];
       // il numero è quello della Borsa scaricato dal job (più fresco, per tutte le Borse); quello della redazione resta
       // solo se dice una seduta più nuova, o se il job non ce l'ha (anche senza numero con una nota: Borsa chiusa per festa)
       const newer = !!(own && alt && noteDate(own.note) && noteDate(own.note) > q.date);
       const d = (alt && !newer ? alt : own && (typeof own.chg === "number" || own.note) ? own : alt) || {};
-      return { code: k, name: G.MARKETS[k][0], index: G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" };
+      return { code: k, name: G.MARKETS[k][0], index: d === alt ? index : G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" };
     }).sort((a, b) => b.value - a.value);
   };
 

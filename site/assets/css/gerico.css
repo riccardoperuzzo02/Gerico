@@ -1502,3 +1502,156 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
 .t-view.t-peek { position: absolute; overflow: hidden; pointer-events: none; }
 .t-view.t-peek .t-ring { opacity: 1; }
 .gr-peek { overflow: hidden; }
+
+/* ========== prova del 7 novembre (solo con ?prova=1): titoli con le grazie, più aria, riquadri che galleggiano ==========
+   Il sito resta quello di sempre: tutto qui sotto vale solo quando l'html ha la classe «prova» (la mette lo script
+   nell'head, che ricorda la scelta nella scheda). Il nome GERICO e il giallo evidenziatore restano i nostri; delle app
+   dei quotidiani prendiamo solo il modo di impaginare. Newsreader (OFL) si scarica solo in prova */
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("../fonts/newsreader-latin-opsz-normal.woff2") format("woff2");
+}
+html.prova {
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --ground: #F1F0EC; --group: #FFFFFF; --bar: rgba(241, 240, 236, 0.9);
+  --card-r: 22px;
+  --card-shadow: 0 1px 2px rgba(20, 20, 24, 0.04), 0 6px 22px rgba(20, 20, 24, 0.07);
+  --pb-bg: rgba(250, 249, 246, 0.78); --pb-edge: rgba(0, 0, 0, 0.09); --pb-ink: #57575C; --pb-on: #FFFFFF; --pb-on-ink: #0B0B0C;
+  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06); --pb-press: rgba(0, 0, 0, 0.06);
+}
+@media (prefers-color-scheme: dark) {
+  html.prova:not([data-theme="light"]) {
+    --ground: #0B0B0C; --group: #18181B; --bar: rgba(11, 11, 12, 0.88);
+    --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
+    --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+    --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+  }
+}
+html.prova[data-theme="dark"] {
+  --ground: #0B0B0C; --group: #18181B; --bar: rgba(11, 11, 12, 0.88);
+  --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
+  --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+}
+html.prova body.term {
+  --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+}
+
+/* intestazione sul telefono: il nome al centro, da solo; Notizie, Terminal e menu passano nella barra in basso */
+@media (max-width: 759px) {
+  html.prova .top-row, html.prova body.term .top-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  html.prova .top-row > .brand { grid-column: 2; justify-self: center; margin-left: 0 !important; font-size: 23px; }
+  html.prova .top .mode, html.prova .top .menu-btn { display: none; }
+}
+
+/* Ultim'ora: una pillola che galleggia sotto il nome */
+html.prova .ultim { padding: 6px 0 4px; background: var(--ground); box-shadow: none; }
+html.prova .ultim-in {
+  width: calc(100% - 2 * max(16px, env(safe-area-inset-left))); max-width: 1072px; margin: 0 auto; padding: 0 5px 0 5px;
+  border-radius: 999px; background: var(--group); box-shadow: var(--card-shadow);
+}
+@media (min-width: 760px) { html.prova .ultim-in { width: calc(100% - 48px); } }
+html.prova .ultim-l { padding: 6px 10px 5px; border-radius: 999px; }
+html.prova .home .sec-nav { top: calc(var(--top-h) + 50px); }
+
+/* il giorno, grande e leggero, con le grazie */
+html.prova .home .large { display: block; padding-top: 22px; }
+html.prova .home .large h1 { font-family: var(--serif); font-size: 3rem; font-weight: 400; line-height: 1; letter-spacing: -0.02em; text-transform: none; color: var(--ink); }
+html.prova .home .edition-sub { margin-top: 6px; }
+
+/* riquadri: carta bianca che galleggia sul fondo, angoli morbidi, un'ombra appena */
+html.prova .lead, html.prova .ticker, html.prova .listen, html.prova .mk-box, html.prova .blk, html.prova .list .item,
+html.prova .div-item, html.prova .story-side > section:first-child, html.prova .linked, html.prova .next a {
+  border-radius: var(--card-r); background: var(--group); box-shadow: var(--card-shadow);
+}
+html.prova .listen { margin-top: 18px; }
+html.prova .ticker { margin-top: 12px; }
+html.prova .ls-t { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.005em; }
+
+/* sezioni: parole normali, non maiuscole; la scelta in nero con un tratto giallo sottile sotto la parola */
+html.prova .sec-nav { box-shadow: none; }
+html.prova .sec-nav .seg > a { flex: 0 0 auto; padding: 0 11px; font-size: 0.9375rem; font-weight: 650; letter-spacing: 0; text-transform: none; color: var(--muted); }
+html.prova .sec-nav .seg > [aria-current="page"] { color: var(--ink); }
+html.prova .sec-nav .seg .seg-ind { bottom: 4px; height: 3px; padding: 0 11px; border-radius: 2px; background: var(--hl); background-clip: content-box; }
+html.prova .sec-nav .seg:not(.ready) > [aria-current="page"] { box-shadow: none; }
+@media (min-width: 760px) { html.prova .sec-nav .seg { box-shadow: none; } }
+
+/* le notizie: ogni storia un riquadro, il titolo con le grazie */
+html.prova .lead { margin-top: 14px; padding: 24px 20px 22px; }
+html.prova .lead h2 { font-family: var(--serif); font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
+html.prova .lead .sum { margin-top: 12px; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.45; }
+html.prova .list { display: grid; gap: 12px; margin-top: 12px; }
+html.prova .list .item { padding: 20px 18px 18px; }
+html.prova .list .item::before { display: none; }
+html.prova .item h2 { font-family: var(--serif); font-size: 1.375rem; font-weight: 600; line-height: 1.18; letter-spacing: -0.01em; }
+html.prova .lead h2 a::after, html.prova .item h2 a::after { inset: 0; border-radius: var(--card-r); }
+html.prova .kick { margin-bottom: 10px; }
+html.prova .line { margin-top: 12px; }
+html.prova .blk { margin-top: 12px; padding: 22px 18px 10px; border-top: 0; }
+html.prova .blk-h, html.prova .mk-box h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; text-transform: none; }
+html.prova .blk-h::before { display: none; }
+html.prova .end { padding: 30px 8px 8px; border-top: 0; }
+html.prova .mk-box { margin: 12px 0 12px; padding: 22px 18px 8px; }
+@media (min-width: 1000px) { html.prova .mk-box { margin-top: 26px; } }
+/* scheletri: già a forma di riquadro */
+html.prova .sk-lead, html.prova .sk-item { margin-top: 12px; padding: 20px 18px; border: 0; border-radius: var(--card-r); background: var(--group); box-shadow: var(--card-shadow); }
+
+/* storia e pagine di testo: titolo e sommario con le grazie, i riquadri come in prima pagina */
+html.prova .story-main h1 { font-family: var(--serif); font-size: clamp(2.125rem, 1.6rem + 2vw, 2.875rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
+html.prova .story-main .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; }
+html.prova .block > h2, html.prova .view-panel h2, html.prova .story-side h2, html.prova .linked h2, html.prova .tagbox h2,
+html.prova .prose h1, html.prova .prose h2, html.prova .next-t {
+  font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em;
+}
+html.prova .block > h2 { font-size: 1.625rem; }
+html.prova .prose h1 { font-size: clamp(2.25rem, 1.7rem + 2vw, 3rem); line-height: 1.06; letter-spacing: -0.018em; }
+html.prova .prose h2 { font-size: 1.625rem; }
+html.prova .view-panel { border-radius: var(--card-r); }
+html.prova .div-item { padding: 20px 18px; }
+html.prova .next-t { font-size: 1.3125rem; line-height: 1.22; }
+
+/* barra in basso a pillola, solo sul telefono: Notizie, Terminal, il riepilogo a voce e il menu */
+.pb { display: none; }
+@media (max-width: 759px) {
+  html.prova .pb {
+    position: fixed; z-index: 41; left: 0; right: 0; bottom: calc(10px + env(safe-area-inset-bottom));
+    display: flex; gap: 2px; width: max-content; margin: 0 auto; padding: 4px;
+    border-radius: 999px; background: var(--pb-bg); box-shadow: 0 0 0 0.5px var(--pb-edge), var(--pb-shadow);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8); backdrop-filter: blur(20px) saturate(1.8);
+  }
+  html.prova .pb-i {
+    position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+    width: 72px; height: 52px; padding: 0; border: 0; border-radius: 999px; background: none;
+    color: var(--pb-ink); font: 650 0.6875rem/1 var(--sans); letter-spacing: 0.01em; text-decoration: none; cursor: pointer;
+  }
+  html.prova .pb-i:hover { color: var(--pb-ink); }
+  html.prova .pb-i[aria-current] { background: var(--pb-on); color: var(--pb-on-ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08); }
+  html.prova .pb-i:not([aria-current]):active { background: var(--pb-press); }
+  html.prova .pb-i:focus-visible { outline: 2px solid currentColor; outline-offset: -3px; }
+  html.prova .pb-i svg { flex: none; width: 22px; height: 22px; }
+  html.prova .pb-i .pb-eq, html.prova .pb-i.playing .pb-ear { display: none; }
+  html.prova .pb-i.playing .pb-eq { display: block; }
+  html.prova .pb-i.playing { color: var(--pb-on-ink); }
+  /* il riepilogo a voce sale sopra la barra; in fondo alla pagina c'è spazio per entrambe */
+  html.prova .gp { bottom: calc(78px + env(safe-area-inset-bottom)); border-radius: 20px; }
+  html.prova body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  html.prova.gp-on body { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 359px) { html.prova .pb-i { width: 64px; } }
+@media (prefers-reduced-motion: no-preference) {
+  /* la barra resta ferma mentre la pagina cambia; tra Notizie e Terminal sfuma da un colore all'altro */
+  html.prova .pb { view-transition-name: pb; }
+  html.theme-vt .pb { view-transition-name: none; }
+  html[data-vt]::view-transition-group(pb) { animation-duration: var(--t-3); }
+  html.prova .pb-i.playing .pb-eq rect { transform-box: fill-box; transform-origin: 50% 100%; animation: pb-eq 0.9s ease-in-out infinite alternate; }
+  html.prova .pb-i.playing .pb-eq rect:nth-child(2) { animation-delay: -0.45s; }
+  html.prova .pb-i.playing .pb-eq rect:nth-child(3) { animation-delay: -0.2s; }
+}
+@keyframes pb-eq { from { transform: scaleY(0.35); } to { transform: scaleY(1); } }
+/* nel menu, solo in prova: il pulsante per tornare alla grafica di adesso */
+.prova-out { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; padding: 0 16px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font-weight: 700; cursor: pointer; }
+.prova-out:active { background: var(--press); }

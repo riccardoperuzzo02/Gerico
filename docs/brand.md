@@ -65,3 +65,13 @@ Italiano semplice, come una persona che spiega a un collega. Niente aggettivi en
 
 - Icona: quadrato giallo con la G nera. Nessun logo o simbolo di altri (niente icone Apple).
 - Immagine di condivisione: fondo chiaro, GERICO con il tratto, la riga di mattoncini delle testate.
+
+## Prova grafica (7 novembre)
+
+Una prima pagina di prova da confrontare con quella di adesso. Si accende con `?prova=1` in fondo all'indirizzo (resta accesa nella scheda finché non la chiudi) e si spegne con `?prova=0` o dal menu, «Torna alla grafica di adesso». Senza prova il sito è identico a prima: tutte le regole stanno in fondo a `gerico.css` sotto `html.prova`, e la barra in basso esiste solo in prova.
+
+- Titoli, sommari e intestazioni dei blocchi in Newsreader (OFL, servito dal sito, si scarica solo in prova), peso 600; il giorno in alto grande e leggero (400). Il resto resta in Atkinson Hyperlegible Next.
+- Fondo grigio carta (#F1F0EC; al buio #0B0B0C), ogni storia un riquadro bianco con angoli da 22 px e un'ombra appena (al buio un filo).
+- Ultim'ora come pillola che galleggia; sezioni in parole normali, la scelta in nero con un tratto giallo sottile sotto la parola.
+- Sul telefono il nome sta al centro, da solo. Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu stanno in una barra a pillola in basso, che resta ferma tra le pagine; la voce scelta ha la sua pillola bianca. La barra del riepilogo sale sopra di lei.
+- Il nome GERICO e il giallo evidenziatore restano i nostri: delle app dei quotidiani si prende solo il modo di impaginare, nessun marchio.

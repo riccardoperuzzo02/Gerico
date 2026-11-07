@@ -645,6 +645,75 @@
     if (sessionStorage.getItem("gerico.audio")) G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) < 30) G.player.set(au); });
   } catch (e) { /* niente */ }
 
+  // ---------- prova del 7 novembre (solo con ?prova=1): la barra in basso a pillola ----------
+  // Notizie, Terminal, il riepilogo a voce e il menu, a portata di pollice. Sul telefono prende il posto
+  // dell'interruttore e del menu in alto (li nasconde il CSS); sul computer non c'è. Come la barra del riepilogo
+  // resta nella pagina da un passaggio all'altro: cambia solo la voce accesa. Senza la prova non esiste
+  G.tabbar = (() => {
+    let bar = null, asked = false;
+    const svg = (body, cls) => '<svg' + (cls ? ' class="' + cls + '"' : "") + ' aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + body + "</svg>";
+    const ICON = {
+      notizie: svg('<rect x="3.5" y="4.5" width="17" height="15" rx="3"/><path d="M7.5 9h9M7.5 12.5h9M7.5 16h5"/>'),
+      terminal: svg('<path d="M3.5 17l5.2-5.6 3.8 3.3 7.5-8.2"/><path d="M15.2 6.5h4.8v4.8"/>'),
+      ascolta: svg('<path d="M4.5 16.5V12a7.5 7.5 0 0 1 15 0v4.5"/><rect x="3.5" y="13.5" width="4.5" height="7" rx="2"/><rect x="16" y="13.5" width="4.5" height="7" rx="2"/>', "pb-ear") +
+        '<svg class="pb-eq" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="3" height="14" rx="1.5"/><rect x="10.5" y="5" width="3" height="14" rx="1.5"/><rect x="16" y="5" width="3" height="14" rx="1.5"/></svg>',
+      menu: svg('<path d="M4.5 7h15M4.5 12h15M4.5 17h15"/>')
+    };
+    const paint = () => {
+      if (!bar) return;
+      const b = bar.querySelector('[data-k="ascolta"]'), ok = !!G.player.info(), playing = ok && G.player.playing();
+      if (b.hidden === ok) b.hidden = !ok;
+      b.classList.toggle("playing", playing);
+      b.setAttribute("aria-pressed", String(playing));
+      b.setAttribute("aria-label", playing ? "Metti in pausa il riepilogo" : "Ascolta il riepilogo");
+    };
+    const build = () => {
+      bar = document.createElement("nav");
+      bar.className = "pb";
+      bar.id = "pb";
+      bar.setAttribute("aria-label", "Navigazione");
+      bar.innerHTML = '<a class="pb-i" href="./" data-reveal data-k="notizie">' + ICON.notizie + "<span>Notizie</span></a>" +
+        '<a class="pb-i" href="terminal" data-reveal data-k="terminal">' + ICON.terminal + "<span>Terminal</span></a>" +
+        '<button class="pb-i" type="button" data-k="ascolta" aria-pressed="false" hidden>' + ICON.ascolta + "<span>Ascolta</span></button>" +
+        '<button class="pb-i" type="button" data-k="menu" aria-haspopup="dialog" aria-controls="menu">' + ICON.menu + "<span>Menu</span></button>";
+      bar.querySelector('[data-k="ascolta"]').addEventListener("click", () => G.player.toggle());
+      // il menu è quello della pagina: lo apre il suo pulsante, che sul telefono in alto è nascosto
+      bar.querySelector('[data-k="menu"]').addEventListener("click", () => { const b = document.querySelector(".top .menu-btn"); if (b) b.click(); });
+      G.player.on(paint);
+      document.body.appendChild(bar);
+    };
+    return {
+      mount() {
+        if (!document.documentElement.classList.contains("prova") || !document.body) return;
+        if (!bar) build(); else if (!bar.isConnected) document.body.appendChild(bar);
+        const k = G.current === "terminal" ? "terminal" : G.current === "home" || G.current === "story" ? "notizie" : "";
+        bar.querySelectorAll("a.pb-i").forEach((a) => {
+          if (a.dataset.k !== k) a.removeAttribute("aria-current");
+          else a.setAttribute("aria-current", G.current === "story" ? "true" : "page");
+        });
+        // la voce del riepilogo compare quando c'è quello del giorno
+        if (!asked) {
+          asked = true;
+          G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) <= 30 && !G.player.info()) G.player.set(au); paint(); }).catch(() => {});
+        }
+        paint();
+        // il colore dietro la barra di stato segue il fondo della prova
+        if (!document.body.classList.contains("term")) {
+          document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { if (/light/.test(m.getAttribute("media") || "")) m.setAttribute("content", "#F1F0EC"); });
+        }
+        // nel menu, il pulsante per tornare alla grafica di adesso
+        const mi = document.querySelector("#menu .menu-in");
+        if (mi && !mi.querySelector(".prova-out")) {
+          const d = document.createElement("div");
+          d.className = "opt";
+          d.innerHTML = '<p class="opt-l">Grafica di prova</p><button type="button" class="prova-out">Torna alla grafica di adesso</button>';
+          d.querySelector("button").addEventListener("click", () => { try { sessionStorage.setItem("gerico.prova", "0"); } catch (e) { /* niente */ } location.reload(); });
+          mi.appendChild(d);
+        }
+      }
+    };
+  })();
+
   // ---------- navigazione senza ricaricare la pagina ----------
   // I link interni scaricano la pagina nuova e ne prendono il contenuto: l'audio continua e il passaggio è animato
   // (avanti da destra, indietro da sinistra, tra Notizie e Terminal un cerchio dal punto toccato).
@@ -714,14 +783,14 @@
     const theme = name === "terminal" ? null : G.ls.get("gerico.theme", null);
     if (theme) htmlEl.setAttribute("data-theme", theme); else htmlEl.removeAttribute("data-theme");
     htmlEl.classList.remove("intro-run", "intro-open", "intro-go", "menu-open", "scrolled");
-    const b = document.body, keep = document.getElementById("gp");
+    const b = document.body, keep = [document.getElementById("gp"), document.getElementById("pb")].filter(Boolean);
     Array.from(b.attributes).forEach((at) => b.removeAttribute(at.name));
     Array.from(doc.body.attributes).forEach((at) => b.setAttribute(at.name, at.value));
-    // la barra del riepilogo non si stacca mai: niente animazione ripetuta a ogni pagina
-    Array.from(b.childNodes).forEach((n) => { if (n !== keep) n.remove(); });
+    // la barra del riepilogo (e in prova quella in basso) non si stacca mai: niente animazione ripetuta a ogni pagina
+    Array.from(b.childNodes).forEach((n) => { if (!keep.includes(n)) n.remove(); });
     const frag = document.createDocumentFragment();
     Array.from(doc.body.childNodes).forEach((n) => { if (n.nodeName !== "SCRIPT") frag.appendChild(n); });
-    b.insertBefore(frag, keep || null);
+    b.insertBefore(frag, b.firstChild);
   };
   let navId = 0, idx = 0, ready = false, shown = location.pathname + location.search;
   // la pagina di ogni passo della cronologia fatto senza ricaricare: dice dove porta «indietro» (G.entryBefore)
@@ -1230,6 +1299,7 @@
 
     document.querySelectorAll(".chips").forEach(G.watchRow);
     G.watchTop();
+    G.tabbar.mount();
   };
 
   // ---------- titoli da seguire: lo stesso blocco in prima pagina e nel Terminal ----------

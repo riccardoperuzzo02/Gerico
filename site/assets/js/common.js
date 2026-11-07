@@ -453,7 +453,8 @@
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
       const range = document.createRange();
       range.selectNodeContents(tn || brand);
-      const b = range.getBoundingClientRect(), w = word.getBoundingClientRect();
+      // in prova il nome ha il punto dopo il testo (::after) e niente margini: si misura tutto il nome
+      const b = (html.classList.contains("prova") ? brand : range).getBoundingClientRect(), w = word.getBoundingClientRect();
       const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
       const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
       const there = base + " translate(" + dx.toFixed(2) + "px, " + dy.toFixed(2) + "px) scale(" + s.toFixed(4) + ")";
@@ -479,7 +480,8 @@
       word.animate([{ opacity: 0 }, { opacity: 1 }], { duration: IN, easing: "linear", fill: "forwards" });
       Promise.all([wait(SWEEP + HOLD), pageReady()]).then(move, move);
     };
-    const font = document.fonts && document.fonts.load ? document.fonts.load('800 48px "Atkinson Hyperlegible Next"') : Promise.resolve();
+    const face = html.classList.contains("prova") ? '750 64px "Newsreader"' : '800 48px "Atkinson Hyperlegible Next"';
+    const font = document.fonts && document.fonts.load ? document.fonts.load(face) : Promise.resolve();
     Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
     // un tocco o uno scorrimento la saltano
     scr.addEventListener("pointerdown", end, { once: true });
@@ -697,10 +699,14 @@
           G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) <= 30 && !G.player.info()) G.player.set(au); paint(); }).catch(() => {});
         }
         paint();
-        // il colore dietro la barra di stato segue il fondo della prova
+        // il colore dietro la barra di stato segue il fondo della prova; l'icona della scheda è quella della prova
         if (!document.body.classList.contains("term")) {
-          document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { if (/light/.test(m.getAttribute("media") || "")) m.setAttribute("content", "#F1F0EC"); });
+          document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { if (/light/.test(m.getAttribute("media") || "")) m.setAttribute("content", "#F2F2F2"); });
         }
+        document.querySelectorAll('link[rel="icon"]').forEach((l) => {
+          const want = l.getAttribute("type") === "image/svg+xml" ? "assets/img/favicon-prova.svg" : "assets/img/favicon-prova-32.png";
+          if (l.getAttribute("href") !== want) l.setAttribute("href", want);
+        });
         // nel menu, il pulsante per tornare alla grafica di adesso
         const mi = document.querySelector("#menu .menu-in");
         if (mi && !mi.querySelector(".prova-out")) {

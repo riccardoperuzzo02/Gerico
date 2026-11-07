@@ -1503,10 +1503,12 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
 .t-view.t-peek .t-ring { opacity: 1; }
 .gr-peek { overflow: hidden; }
 
-/* ========== prova del 7 novembre (solo con ?prova=1): titoli con le grazie, più aria, riquadri che galleggiano ==========
+/* ========== prova del 7 novembre (solo con ?prova=1): un'altra grafica, da confrontare con quella di adesso ==========
    Il sito resta quello di sempre: tutto qui sotto vale solo quando l'html ha la classe «prova» (la mette lo script
-   nell'head, che ricorda la scelta nella scheda). Il nome GERICO e il giallo evidenziatore restano i nostri; delle app
-   dei quotidiani prendiamo solo il modo di impaginare. Newsreader (OFL) si scarica solo in prova */
+   nell'head, che ricorda la scelta nella scheda). Impaginazione da app di quotidiano (titoli con le grazie, riquadri che
+   galleggiano, barra in basso a pillola) e anche colori e nome nuovi: bianco, grigio e nero d'inchiostro, un blu per
+   etichette e comandi, il nome «Gerico.» con le grazie e il punto blu. Niente giallo e niente tratto, nessun marchio
+   d'altri. Newsreader (OFL) si scarica solo in prova */
 @font-face {
   font-family: "Newsreader";
   font-style: normal;
@@ -1516,35 +1518,53 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
 }
 html.prova {
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --ground: #F1F0EC; --group: #FFFFFF; --bar: rgba(241, 240, 236, 0.9);
+  --accent: #1F56D6; --accent-2: #1847B5; --on-accent: #FFFFFF;
+  --ground: #F2F2F2; --group: #FFFFFF; --cell: #FFFFFF; --fill: #E7E7EA; --raised: #FFFFFF;
+  --ink: #111111; --ink-2: #2A2A2D; --ink-3: #3C3C40; --muted: #67676D; --rule: #E2E2E5;
+  --hair: rgba(0, 0, 0, 0.09); --press: rgba(0, 0, 0, 0.06); --bar: rgba(242, 242, 242, 0.9);
+  --palm: var(--accent); --palm-weak: #EBF0FC; --partial: #A3BCF2; --lintel: #7C9CE6;
+  --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #FFFFFF;
   --card-r: 22px;
-  --card-shadow: 0 1px 2px rgba(20, 20, 24, 0.04), 0 6px 22px rgba(20, 20, 24, 0.07);
-  --pb-bg: rgba(250, 249, 246, 0.78); --pb-edge: rgba(0, 0, 0, 0.09); --pb-ink: #57575C; --pb-on: #FFFFFF; --pb-on-ink: #0B0B0C;
+  --card-shadow: 0 1px 2px rgba(17, 17, 20, 0.04), 0 6px 22px rgba(17, 17, 20, 0.07);
+  --pb-bg: rgba(250, 250, 251, 0.78); --pb-edge: rgba(0, 0, 0, 0.09); --pb-text: #111111; --pb-ink: #5C5C62; --pb-on: #FFFFFF; --pb-on-ink: #111111;
   --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06); --pb-press: rgba(0, 0, 0, 0.06);
 }
 @media (prefers-color-scheme: dark) {
   html.prova:not([data-theme="light"]) {
-    --ground: #0B0B0C; --group: #18181B; --bar: rgba(11, 11, 12, 0.88);
+    --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B;
+    --ground: #0A0A0B; --group: #1B1B1E; --cell: #222226; --fill: #2A2A2E; --raised: #45454B;
+    --ink: #F2F2F2; --ink-2: #DADADD; --ink-3: #C7C7CB; --muted: #A1A1A7; --rule: #2A2A2E;
+    --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(10, 10, 11, 0.88);
+    --palm: var(--accent); --palm-weak: #0F1A30; --partial: #3B5A9E; --lintel: #5A7BD0;
+    --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #0A0A0B;
     --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
-    --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+    --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
     --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
   }
 }
 html.prova[data-theme="dark"] {
-  --ground: #0B0B0C; --group: #18181B; --bar: rgba(11, 11, 12, 0.88);
+  --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B;
+  --ground: #0A0A0B; --group: #1B1B1E; --cell: #222226; --fill: #2A2A2E; --raised: #45454B;
+  --ink: #F2F2F2; --ink-2: #DADADD; --ink-3: #C7C7CB; --muted: #A1A1A7; --rule: #2A2A2E;
+  --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(10, 10, 11, 0.88);
+  --palm: var(--accent); --palm-weak: #0F1A30; --partial: #3B5A9E; --lintel: #5A7BD0;
+  --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #0A0A0B;
   --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
-  --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+  --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
   --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
 }
+/* Terminal: il blu al posto del giallo, il nome in bianco, le barre in basso scure */
 html.prova body.term {
-  --pb-bg: rgba(34, 34, 37, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-ink: #A9A9A4; --pb-on: #48484D; --pb-on-ink: #FFFFFF;
+  --t-accent: #7AA2FF; --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B; --link-hover: #9AB8FF; --brand: #F2F2EF;
+  --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
   --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
 }
+html.prova body.term a:hover { color: #9AB8FF; }
 
 /* intestazione sul telefono: il nome al centro, da solo; Notizie, Terminal e menu passano nella barra in basso */
 @media (max-width: 759px) {
   html.prova .top-row, html.prova body.term .top-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
-  html.prova .top-row > .brand { grid-column: 2; justify-self: center; margin-left: 0 !important; font-size: 23px; }
+  html.prova .top-row > .brand { grid-column: 2; justify-self: center; }
   html.prova .top .mode, html.prova .top .menu-btn { display: none; }
 }
 
@@ -1572,11 +1592,11 @@ html.prova .listen { margin-top: 18px; }
 html.prova .ticker { margin-top: 12px; }
 html.prova .ls-t { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.005em; }
 
-/* sezioni: parole normali, non maiuscole; la scelta in nero con un tratto giallo sottile sotto la parola */
+/* sezioni: parole normali, non maiuscole; la scelta in nero con un filo nero sotto la parola */
 html.prova .sec-nav { box-shadow: none; }
 html.prova .sec-nav .seg > a { flex: 0 0 auto; padding: 0 11px; font-size: 0.9375rem; font-weight: 650; letter-spacing: 0; text-transform: none; color: var(--muted); }
 html.prova .sec-nav .seg > [aria-current="page"] { color: var(--ink); }
-html.prova .sec-nav .seg .seg-ind { bottom: 4px; height: 3px; padding: 0 11px; border-radius: 2px; background: var(--hl); background-clip: content-box; }
+html.prova .sec-nav .seg .seg-ind { bottom: 6px; height: 2px; padding: 0 11px; border-radius: 1px; background: var(--ink); background-clip: content-box; }
 html.prova .sec-nav .seg:not(.ready) > [aria-current="page"] { box-shadow: none; }
 @media (min-width: 760px) { html.prova .sec-nav .seg { box-shadow: none; } }
 
@@ -1655,3 +1675,63 @@ html.prova .next-t { font-size: 1.3125rem; line-height: 1.22; }
 /* nel menu, solo in prova: il pulsante per tornare alla grafica di adesso */
 .prova-out { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; padding: 0 16px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font-weight: 700; cursor: pointer; }
 .prova-out:active { background: var(--press); }
+
+/* ---------- prova: il nome, i colori dei comandi e delle etichette ---------- */
+/* il nome «Gerico.»: con le grazie, nel taglio da titolo, il punto blu; niente tratto. Il testo nella pagina resta
+   GERICO: qui si scrive in minuscolo con la prima lettera grande (::first-letter vuole un blocco, non un flex) */
+html.prova .brand {
+  display: block; padding: 0 !important; margin-left: 0 !important;
+  font-family: var(--serif); font-size: 28px; font-weight: 750; font-variation-settings: "opsz" 72;
+  letter-spacing: -0.018em; line-height: 44px; text-transform: lowercase;
+}
+html.prova .brand::first-letter { text-transform: uppercase; }
+html.prova .brand::before { display: none; }
+html.prova .brand::after { content: "."; display: inline-block; color: var(--accent); }
+@media (min-width: 760px) { html.prova .brand { font-size: 31px; } }
+/* entrata: il nome compare al centro, il punto arriva con un piccolo scatto, poi il nome va al suo posto */
+html.prova.intro-run .intro-word {
+  padding: 0 !important; font-family: var(--serif); font-size: 64px; font-weight: 750; font-variation-settings: "opsz" 72;
+  letter-spacing: -0.018em; text-transform: lowercase;
+}
+html.prova.intro-run .intro-word::first-letter { text-transform: uppercase; }
+html.prova.intro-run .intro-word::before { display: none; }
+html.prova.intro-run .intro-word::after { content: "."; display: inline-block; color: var(--accent); transform: scale(0); }
+html.prova.intro-go .intro-word::after { animation: pv-dot var(--t-3) cubic-bezier(0.34, 1.56, 0.64, 1) 120ms forwards; }
+@keyframes pv-dot { from { transform: scale(0); } to { transform: scale(1); } }
+
+/* Ultim'ora: l'etichetta blu */
+html.prova .ultim .ultim-l { background: var(--accent); color: var(--on-accent); }
+
+/* occhielli in parole normali: la sezione in un'etichetta blu con il filo, poi l'ora in grigio */
+html.prova .kick { gap: 4px 10px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+:root.prova:not(#_) .k-sec {
+  margin: 0 !important; padding: 2px 7px 1px !important; border-radius: 6px !important;
+  background: none !important; color: var(--accent) !important; box-shadow: inset 0 0 0 1px currentColor; font-weight: 700;
+}
+html.prova .k-time { letter-spacing: 0; }
+html.prova .k-live::before { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: none; }
+
+/* titolo d'apertura: nero pieno, senza evidenziatore */
+:root.prova:not(#_) .lead h2 a { background: none; }
+
+/* muro delle testate: blu pieno chi concorda, blu chiaro chi concorda in parte */
+html.prova .mw i.p, html.prova .wall i.p { box-shadow: none; }
+
+/* riepilogo a voce: il pulsante e la barra che avanza in blu */
+:root.prova:not(#_) .ls-btn { background: var(--accent); color: var(--on-accent); }
+html.prova .ls-bar i { background: var(--accent); }
+
+/* la barra del riepilogo è di vetro come quella in basso, con il pulsante blu */
+:root.prova:not(#_) .gp {
+  background: var(--pb-bg); color: var(--pb-text); box-shadow: 0 0 0 0.5px var(--pb-edge), var(--pb-shadow);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8); backdrop-filter: blur(20px) saturate(1.8);
+}
+html.prova .gp-s, html.prova .gp-x { color: var(--pb-ink); }
+html.prova .gp-sk { color: var(--pb-text); }
+html.prova .gp-sk:active, html.prova .gp-x:active { background: var(--pb-press); }
+html.prova .gp-play { background: var(--accent); color: var(--on-accent); }
+html.prova .gp-play:active { background: var(--accent-2); }
+html.prova .gp button:focus-visible { outline-color: var(--accent); }
+html.prova .gp-bar { background: var(--pb-press); }
+html.prova .gp-bar i { background: var(--accent); }
+html.prova .ultim-l { padding: 6px 10px 5px; font-size: 0.75rem; letter-spacing: 0; text-transform: none; }

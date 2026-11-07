@@ -68,10 +68,13 @@ Italiano semplice, come una persona che spiega a un collega. Niente aggettivi en
 
 ## Prova grafica (7 novembre)
 
-Una prima pagina di prova da confrontare con quella di adesso. Si accende con `?prova=1` in fondo all'indirizzo (resta accesa nella scheda finché non la chiudi) e si spegne con `?prova=0` o dal menu, «Torna alla grafica di adesso». Senza prova il sito è identico a prima: tutte le regole stanno in fondo a `gerico.css` sotto `html.prova`, e la barra in basso esiste solo in prova.
+Una grafica di prova da confrontare con quella di adesso. Si accende con `?prova=1` in fondo all'indirizzo (resta accesa nella scheda finché non la chiudi) e si spegne con `?prova=0` o dal menu, «Torna alla grafica di adesso». Senza prova il sito è identico a prima: tutte le regole stanno in fondo a `gerico.css` sotto `html.prova`, e la barra in basso, il nome nuovo e l'icona nuova esistono solo in prova.
 
-- Titoli, sommari e intestazioni dei blocchi in Newsreader (OFL, servito dal sito, si scarica solo in prova), peso 600; il giorno in alto grande e leggero (400). Il resto resta in Atkinson Hyperlegible Next.
-- Fondo grigio carta (#F1F0EC; al buio #0B0B0C), ogni storia un riquadro bianco con angoli da 22 px e un'ombra appena (al buio un filo).
-- Ultim'ora come pillola che galleggia; sezioni in parole normali, la scelta in nero con un tratto giallo sottile sotto la parola.
-- Sul telefono il nome sta al centro, da solo. Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu stanno in una barra a pillola in basso, che resta ferma tra le pagine; la voce scelta ha la sua pillola bianca. La barra del riepilogo sale sopra di lei.
-- Il nome GERICO e il giallo evidenziatore restano i nostri: delle app dei quotidiani si prende solo il modo di impaginare, nessun marchio.
+- Nome: «Gerico.» in Newsreader 750, taglio da titolo (opsz 72), spaziatura −0,018 em, con il punto blu. Nella pagina il testo resta GERICO: il CSS lo scrive in minuscolo con la prima lettera grande. Entrata: il nome compare al centro, il punto arriva con un piccolo scatto, poi il nome va al suo posto.
+- Icona della scheda: quadrato blu con la G bianca di Newsreader (`assets/img/favicon-prova.svg` e `favicon-prova-32.png`).
+- Colori: fondo grigio (#F2F2F2; al buio #0A0A0B), riquadri bianchi (al buio #1B1B1E), inchiostro #111111, un solo colore per etichette e comandi, il blu #1F56D6 (al buio #7AA2FF). Il muro delle testate in blu pieno (concordano) e blu chiaro (in parte); il parere su un blu chiarissimo. Niente giallo e niente tratto dell'evidenziatore. Nel Terminal il blu chiaro prende il posto del giallo.
+- Caratteri: titoli, sommari e intestazioni dei blocchi in Newsreader (OFL, servito dal sito, si scarica solo in prova), peso 600; il giorno in alto grande e leggero (400). Il resto resta in Atkinson Hyperlegible Next.
+- Occhielli in parole normali: la sezione in un'etichetta blu con il filo, poi l'ora in grigio. Ultim'ora: una pillola che galleggia, con l'etichetta blu. Sezioni in parole normali, la scelta in nero con un filo nero sotto la parola.
+- Riquadri con angoli da 22 px e un'ombra appena (al buio un filo).
+- Sul telefono il nome sta al centro, da solo. Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu stanno in una barra a pillola di vetro in basso, che resta ferma tra le pagine; la voce scelta ha la sua pillola bianca. La barra del riepilogo, anche lei di vetro con il pulsante blu, sale sopra di lei.
+- Nessun marchio d'altri: dalle app dei quotidiani si prende il modo di impaginare, non nomi, loghi o caratteri.

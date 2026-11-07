@@ -1503,12 +1503,11 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
 .t-view.t-peek .t-ring { opacity: 1; }
 .gr-peek { overflow: hidden; }
 
-/* ========== prova del 7 novembre (solo con ?prova=1): un'altra grafica, da confrontare con quella di adesso ==========
-   Il sito resta quello di sempre: tutto qui sotto vale solo quando l'html ha la classe «prova» (la mette lo script
-   nell'head, che ricorda la scelta nella scheda). Impaginazione da app di quotidiano (titoli con le grazie, riquadri che
-   galleggiano, barra in basso a pillola) e anche colori e nome nuovi: bianco, grigio e nero d'inchiostro, un blu per
-   etichette e comandi, il nome «Gerico.» con le grazie e il punto blu. Niente giallo e niente tratto, nessun marchio
-   d'altri. Newsreader (OFL) si scarica solo in prova */
+/* ========== grafica nuova (rebranding del 7 novembre): «Gerico.», bianco e blu navy ==========
+   Impaginazione da app di quotidiano: titoli con le grazie, riquadri che galleggiano su un fondo grigio chiaro, barra in
+   basso a pillola. Il nome è «Gerico.» con le grazie, in blu navy come le etichette e i comandi; al buio il fondo è una
+   notte blu navy e i comandi sono bianchi. Tutto vale sotto html.nuova, la classe fissa nelle pagine: le regole delle
+   grafiche di prima restano più su nel file e qui si scavalcano. Le regole stanno in docs/brand.md */
 @font-face {
   font-family: "Newsreader";
   font-style: normal;
@@ -1516,222 +1515,222 @@ html[data-vt]::view-transition-old(root), html[data-vt]::view-transition-new(roo
   font-display: swap;
   src: url("../fonts/newsreader-latin-opsz-normal.woff2") format("woff2");
 }
-html.prova {
+html.nuova {
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --accent: #1F56D6; --accent-2: #1847B5; --on-accent: #FFFFFF;
-  --ground: #F2F2F2; --group: #FFFFFF; --cell: #FFFFFF; --fill: #E7E7EA; --raised: #FFFFFF;
-  --ink: #111111; --ink-2: #2A2A2D; --ink-3: #3C3C40; --muted: #67676D; --rule: #E2E2E5;
-  --hair: rgba(0, 0, 0, 0.09); --press: rgba(0, 0, 0, 0.06); --bar: rgba(242, 242, 242, 0.9);
-  --palm: var(--accent); --palm-weak: #EBF0FC; --partial: #A3BCF2; --lintel: #7C9CE6;
-  --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #FFFFFF;
+  --navy: #1B2F5B;
+  --accent: var(--navy); --accent-2: #13244A; --on-accent: #FFFFFF;
+  --ground: #F2F2F2; --group: #FFFFFF; --cell: #FFFFFF; --fill: #E7E8EC; --raised: #FFFFFF;
+  --ink: #121D36; --ink-2: #26314A; --ink-3: #3A4560; --muted: #5F6780; --rule: #E2E4E9;
+  --hair: rgba(16, 24, 44, 0.09); --press: rgba(16, 24, 44, 0.06); --bar: rgba(242, 242, 242, 0.9);
+  --palm: var(--accent); --palm-weak: #EDF1F8; --partial: #A9B8D8; --lintel: #6E85B7;
+  --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--accent); --hl: var(--accent); --hl-ink: #FFFFFF;
   --card-r: 22px;
-  --card-shadow: 0 1px 2px rgba(17, 17, 20, 0.04), 0 6px 22px rgba(17, 17, 20, 0.07);
-  --pb-bg: rgba(250, 250, 251, 0.78); --pb-edge: rgba(0, 0, 0, 0.09); --pb-text: #111111; --pb-ink: #5C5C62; --pb-on: #FFFFFF; --pb-on-ink: #111111;
-  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.06); --pb-press: rgba(0, 0, 0, 0.06);
+  --card-shadow: 0 1px 2px rgba(16, 24, 44, 0.04), 0 6px 22px rgba(16, 24, 44, 0.07);
+  --pb-bg: rgba(250, 250, 251, 0.78); --pb-edge: rgba(16, 24, 44, 0.09); --pb-text: #121D36; --pb-ink: #5F6780; --pb-on: #FFFFFF; --pb-on-ink: var(--navy);
+  --pb-shadow: 0 12px 32px rgba(16, 24, 44, 0.14), 0 2px 8px rgba(16, 24, 44, 0.06); --pb-press: rgba(16, 24, 44, 0.06);
 }
 @media (prefers-color-scheme: dark) {
-  html.prova:not([data-theme="light"]) {
-    --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B;
-    --ground: #0A0A0B; --group: #1B1B1E; --cell: #222226; --fill: #2A2A2E; --raised: #45454B;
-    --ink: #F2F2F2; --ink-2: #DADADD; --ink-3: #C7C7CB; --muted: #A1A1A7; --rule: #2A2A2E;
-    --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(10, 10, 11, 0.88);
-    --palm: var(--accent); --palm-weak: #0F1A30; --partial: #3B5A9E; --lintel: #5A7BD0;
-    --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #0A0A0B;
-    --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
-    --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
-    --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+  html.nuova:not([data-theme="light"]) {
+    --accent: #FFFFFF; --accent-2: #DCE3F0; --on-accent: #0A1428;
+    --ground: #0A1428; --group: #111E38; --cell: #16243F; --fill: #1B2A48; --raised: #33456B;
+    --ink: #EEF2F8; --ink-2: #D3DAE6; --ink-3: #BCC5D6; --muted: #95A1B9; --rule: #1E2C48;
+    --hair: rgba(255, 255, 255, 0.10); --press: rgba(255, 255, 255, 0.07); --bar: rgba(10, 20, 40, 0.88);
+    --palm: var(--accent); --palm-weak: #13213D; --partial: #4F6390; --lintel: #8EA2CC;
+    --link: var(--accent); --link-hover: var(--accent-2); --brand: #FFFFFF; --hl: var(--accent); --hl-ink: #0A1428;
+    --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+    --pb-bg: rgba(20, 34, 62, 0.76); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #EEF2F8; --pb-ink: #A3AFC6; --pb-on: #33456B; --pb-on-ink: #FFFFFF;
+    --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.5); --pb-press: rgba(255, 255, 255, 0.08);
   }
 }
-html.prova[data-theme="dark"] {
-  --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B;
-  --ground: #0A0A0B; --group: #1B1B1E; --cell: #222226; --fill: #2A2A2E; --raised: #45454B;
-  --ink: #F2F2F2; --ink-2: #DADADD; --ink-3: #C7C7CB; --muted: #A1A1A7; --rule: #2A2A2E;
-  --hair: rgba(255, 255, 255, 0.12); --press: rgba(255, 255, 255, 0.08); --bar: rgba(10, 10, 11, 0.88);
-  --palm: var(--accent); --palm-weak: #0F1A30; --partial: #3B5A9E; --lintel: #5A7BD0;
-  --link: var(--accent); --link-hover: var(--accent-2); --brand: var(--ink); --hl: var(--accent); --hl-ink: #0A0A0B;
-  --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
-  --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
-  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+html.nuova[data-theme="dark"] {
+  --accent: #FFFFFF; --accent-2: #DCE3F0; --on-accent: #0A1428;
+  --ground: #0A1428; --group: #111E38; --cell: #16243F; --fill: #1B2A48; --raised: #33456B;
+  --ink: #EEF2F8; --ink-2: #D3DAE6; --ink-3: #BCC5D6; --muted: #95A1B9; --rule: #1E2C48;
+  --hair: rgba(255, 255, 255, 0.10); --press: rgba(255, 255, 255, 0.07); --bar: rgba(10, 20, 40, 0.88);
+  --palm: var(--accent); --palm-weak: #13213D; --partial: #4F6390; --lintel: #8EA2CC;
+  --link: var(--accent); --link-hover: var(--accent-2); --brand: #FFFFFF; --hl: var(--accent); --hl-ink: #0A1428;
+  --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --pb-bg: rgba(20, 34, 62, 0.76); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #EEF2F8; --pb-ink: #A3AFC6; --pb-on: #33456B; --pb-on-ink: #FFFFFF;
+  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.5); --pb-press: rgba(255, 255, 255, 0.08);
 }
-/* Terminal: il blu al posto del giallo, il nome in bianco, le barre in basso scure */
-html.prova body.term {
-  --t-accent: #7AA2FF; --accent: #7AA2FF; --accent-2: #9AB8FF; --on-accent: #0A0A0B; --link-hover: #9AB8FF; --brand: #F2F2EF;
-  --pb-bg: rgba(36, 36, 40, 0.74); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #F2F2F2; --pb-ink: #A9A9AE; --pb-on: #4A4A50; --pb-on-ink: #FFFFFF;
-  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.55); --pb-press: rgba(255, 255, 255, 0.08);
+/* Terminal: sempre al buio, nella notte blu navy; il nome bianco, gli stati in un azzurro tenue */
+html.nuova body.term {
+  --t-bg: #0A1428; --t-head: #0B162C; --t-panel: #111E38; --t-rule: #1E2C48; --t-rule-2: #17243F; --t-line: #2C3D60;
+  --t-ink: #EEF2F8; --t-ink-2: #C3CCDD; --t-ink-3: #8E9AB3; --cell: #16243F; --fill: #16243F; --raised: #33456B; --bar: rgba(10, 20, 40, 0.88);
+  --t-accent: #A9BDEB; --accent: #FFFFFF; --accent-2: #DCE3F0; --on-accent: #0A1428; --link-hover: #C9D6F2; --brand: #FFFFFF;
+  --pb-bg: rgba(20, 34, 62, 0.76); --pb-edge: rgba(255, 255, 255, 0.12); --pb-text: #EEF2F8; --pb-ink: #A3AFC6; --pb-on: #33456B; --pb-on-ink: #FFFFFF;
+  --pb-shadow: 0 12px 32px rgba(0, 0, 0, 0.5); --pb-press: rgba(255, 255, 255, 0.08);
 }
-html.prova body.term a:hover { color: #9AB8FF; }
+html.nuova body.term a:hover { color: #C9D6F2; }
 
 /* intestazione sul telefono: il nome al centro, da solo; Notizie, Terminal e menu passano nella barra in basso */
 @media (max-width: 759px) {
-  html.prova .top-row, html.prova body.term .top-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
-  html.prova .top-row > .brand { grid-column: 2; justify-self: center; }
-  html.prova .top .mode, html.prova .top .menu-btn { display: none; }
+  html.nuova .top-row, html.nuova body.term .top-row { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+  html.nuova .top-row > .brand { grid-column: 2; justify-self: center; }
+  html.nuova .top .mode, html.nuova .top .menu-btn { display: none; }
 }
 
 /* Ultim'ora: una pillola che galleggia sotto il nome */
-html.prova .ultim { padding: 6px 0 4px; background: var(--ground); box-shadow: none; }
-html.prova .ultim-in {
+html.nuova .ultim { padding: 6px 0 4px; background: var(--ground); box-shadow: none; }
+html.nuova .ultim-in {
   width: calc(100% - 2 * max(16px, env(safe-area-inset-left))); max-width: 1072px; margin: 0 auto; padding: 0 5px 0 5px;
   border-radius: 999px; background: var(--group); box-shadow: var(--card-shadow);
 }
-@media (min-width: 760px) { html.prova .ultim-in { width: calc(100% - 48px); } }
-html.prova .ultim-l { padding: 6px 10px 5px; border-radius: 999px; }
-html.prova .home .sec-nav { top: calc(var(--top-h) + 50px); }
+@media (min-width: 760px) { html.nuova .ultim-in { width: calc(100% - 48px); } }
+html.nuova .ultim-l { padding: 6px 10px 5px; border-radius: 999px; }
+html.nuova .home .sec-nav { top: calc(var(--top-h) + 50px); }
 
 /* il giorno, grande e leggero, con le grazie */
-html.prova .home .large { display: block; padding-top: 22px; }
-html.prova .home .large h1 { font-family: var(--serif); font-size: 3rem; font-weight: 400; line-height: 1; letter-spacing: -0.02em; text-transform: none; color: var(--ink); }
-html.prova .home .edition-sub { margin-top: 6px; }
+html.nuova .home .large { display: block; padding-top: 22px; }
+html.nuova .home .large h1 { font-family: var(--serif); font-size: 3rem; font-weight: 400; line-height: 1; letter-spacing: -0.02em; text-transform: none; color: var(--ink); }
+html.nuova .home .edition-sub { margin-top: 6px; }
 
 /* riquadri: carta bianca che galleggia sul fondo, angoli morbidi, un'ombra appena */
-html.prova .lead, html.prova .ticker, html.prova .listen, html.prova .mk-box, html.prova .blk, html.prova .list .item,
-html.prova .div-item, html.prova .story-side > section:first-child, html.prova .linked, html.prova .next a {
+html.nuova .lead, html.nuova .ticker, html.nuova .listen, html.nuova .mk-box, html.nuova .blk, html.nuova .list .item,
+html.nuova .div-item, html.nuova .story-side > section:first-child, html.nuova .linked, html.nuova .next a {
   border-radius: var(--card-r); background: var(--group); box-shadow: var(--card-shadow);
 }
-html.prova .listen { margin-top: 18px; }
-html.prova .ticker { margin-top: 12px; }
-html.prova .ls-t { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.005em; }
+html.nuova .listen { margin-top: 18px; }
+html.nuova .ticker { margin-top: 12px; }
+html.nuova .ls-t { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: -0.005em; }
 
-/* sezioni: parole normali, non maiuscole; la scelta in nero con un filo nero sotto la parola */
-html.prova .sec-nav { box-shadow: none; }
-html.prova .sec-nav .seg > a { flex: 0 0 auto; padding: 0 11px; font-size: 0.9375rem; font-weight: 650; letter-spacing: 0; text-transform: none; color: var(--muted); }
-html.prova .sec-nav .seg > [aria-current="page"] { color: var(--ink); }
-html.prova .sec-nav .seg .seg-ind { bottom: 6px; height: 2px; padding: 0 11px; border-radius: 1px; background: var(--ink); background-clip: content-box; }
-html.prova .sec-nav .seg:not(.ready) > [aria-current="page"] { box-shadow: none; }
-@media (min-width: 760px) { html.prova .sec-nav .seg { box-shadow: none; } }
+/* sezioni: parole normali, non maiuscole; la scelta in nero con un filo navy sotto la parola (al buio bianco) */
+html.nuova .sec-nav { box-shadow: none; }
+html.nuova .sec-nav .seg > a { flex: 0 0 auto; padding: 0 11px; font-size: 0.9375rem; font-weight: 650; letter-spacing: 0; text-transform: none; color: var(--muted); }
+html.nuova .sec-nav .seg > [aria-current="page"] { color: var(--ink); }
+html.nuova .sec-nav .seg .seg-ind { bottom: 6px; height: 2px; padding: 0 11px; border-radius: 1px; background: var(--accent); background-clip: content-box; }
+html.nuova .sec-nav .seg:not(.ready) > [aria-current="page"] { box-shadow: none; }
+@media (min-width: 760px) { html.nuova .sec-nav .seg { box-shadow: none; } }
 
 /* le notizie: ogni storia un riquadro, il titolo con le grazie */
-html.prova .lead { margin-top: 14px; padding: 24px 20px 22px; }
-html.prova .lead h2 { font-family: var(--serif); font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
-html.prova .lead .sum { margin-top: 12px; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.45; }
-html.prova .list { display: grid; gap: 12px; margin-top: 12px; }
-html.prova .list .item { padding: 20px 18px 18px; }
-html.prova .list .item::before { display: none; }
-html.prova .item h2 { font-family: var(--serif); font-size: 1.375rem; font-weight: 600; line-height: 1.18; letter-spacing: -0.01em; }
-html.prova .lead h2 a::after, html.prova .item h2 a::after { inset: 0; border-radius: var(--card-r); }
-html.prova .kick { margin-bottom: 10px; }
-html.prova .line { margin-top: 12px; }
-html.prova .blk { margin-top: 12px; padding: 22px 18px 10px; border-top: 0; }
-html.prova .blk-h, html.prova .mk-box h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; text-transform: none; }
-html.prova .blk-h::before { display: none; }
-html.prova .end { padding: 30px 8px 8px; border-top: 0; }
-html.prova .mk-box { margin: 12px 0 12px; padding: 22px 18px 8px; }
-@media (min-width: 1000px) { html.prova .mk-box { margin-top: 26px; } }
+html.nuova .lead { margin-top: 14px; padding: 24px 20px 22px; }
+html.nuova .lead h2 { font-family: var(--serif); font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
+html.nuova .lead .sum { margin-top: 12px; font-family: var(--serif); font-size: 1.1875rem; line-height: 1.45; }
+html.nuova .list { display: grid; gap: 12px; margin-top: 12px; }
+html.nuova .list .item { padding: 20px 18px 18px; }
+html.nuova .list .item::before { display: none; }
+html.nuova .item h2 { font-family: var(--serif); font-size: 1.375rem; font-weight: 600; line-height: 1.18; letter-spacing: -0.01em; }
+html.nuova .lead h2 a::after, html.nuova .item h2 a::after { inset: 0; border-radius: var(--card-r); }
+html.nuova .kick { margin-bottom: 10px; }
+html.nuova .line { margin-top: 12px; }
+html.nuova .blk { margin-top: 12px; padding: 22px 18px 10px; border-top: 0; }
+html.nuova .blk-h, html.nuova .mk-box h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; text-transform: none; }
+html.nuova .blk-h::before { display: none; }
+html.nuova .end { padding: 30px 8px 8px; border-top: 0; }
+html.nuova .mk-box { margin: 12px 0 12px; padding: 22px 18px 8px; }
+@media (min-width: 1000px) { html.nuova .mk-box { margin-top: 26px; } }
 /* scheletri: già a forma di riquadro */
-html.prova .sk-lead, html.prova .sk-item { margin-top: 12px; padding: 20px 18px; border: 0; border-radius: var(--card-r); background: var(--group); box-shadow: var(--card-shadow); }
+html.nuova .sk-lead, html.nuova .sk-item { margin-top: 12px; padding: 20px 18px; border: 0; border-radius: var(--card-r); background: var(--group); box-shadow: var(--card-shadow); }
 
 /* storia e pagine di testo: titolo e sommario con le grazie, i riquadri come in prima pagina */
-html.prova .story-main h1 { font-family: var(--serif); font-size: clamp(2.125rem, 1.6rem + 2vw, 2.875rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
-html.prova .story-main .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; }
-html.prova .block > h2, html.prova .view-panel h2, html.prova .story-side h2, html.prova .linked h2, html.prova .tagbox h2,
-html.prova .prose h1, html.prova .prose h2, html.prova .next-t {
+html.nuova .story-main h1 { font-family: var(--serif); font-size: clamp(2.125rem, 1.6rem + 2vw, 2.875rem); font-weight: 600; line-height: 1.07; letter-spacing: -0.018em; }
+html.nuova .story-main .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; }
+html.nuova .block > h2, html.nuova .view-panel h2, html.nuova .story-side h2, html.nuova .linked h2, html.nuova .tagbox h2,
+html.nuova .prose h1, html.nuova .prose h2, html.nuova .next-t {
   font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em;
 }
-html.prova .block > h2 { font-size: 1.625rem; }
-html.prova .prose h1 { font-size: clamp(2.25rem, 1.7rem + 2vw, 3rem); line-height: 1.06; letter-spacing: -0.018em; }
-html.prova .prose h2 { font-size: 1.625rem; }
-html.prova .view-panel { border-radius: var(--card-r); }
-html.prova .div-item { padding: 20px 18px; }
-html.prova .next-t { font-size: 1.3125rem; line-height: 1.22; }
+html.nuova .block > h2 { font-size: 1.625rem; }
+html.nuova .prose h1 { font-size: clamp(2.25rem, 1.7rem + 2vw, 3rem); line-height: 1.06; letter-spacing: -0.018em; }
+html.nuova .prose h2 { font-size: 1.625rem; }
+html.nuova .view-panel { border-radius: var(--card-r); }
+html.nuova .div-item { padding: 20px 18px; }
+html.nuova .next-t { font-size: 1.3125rem; line-height: 1.22; }
 
 /* barra in basso a pillola, solo sul telefono: Notizie, Terminal, il riepilogo a voce e il menu */
 .pb { display: none; }
 @media (max-width: 759px) {
-  html.prova .pb {
+  html.nuova .pb {
     position: fixed; z-index: 41; left: 0; right: 0; bottom: calc(10px + env(safe-area-inset-bottom));
     display: flex; gap: 2px; width: max-content; margin: 0 auto; padding: 4px;
     border-radius: 999px; background: var(--pb-bg); box-shadow: 0 0 0 0.5px var(--pb-edge), var(--pb-shadow);
     -webkit-backdrop-filter: blur(20px) saturate(1.8); backdrop-filter: blur(20px) saturate(1.8);
   }
-  html.prova .pb-i {
+  html.nuova .pb-i {
     position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
     width: 72px; height: 52px; padding: 0; border: 0; border-radius: 999px; background: none;
     color: var(--pb-ink); font: 650 0.6875rem/1 var(--sans); letter-spacing: 0.01em; text-decoration: none; cursor: pointer;
   }
-  html.prova .pb-i:hover { color: var(--pb-ink); }
-  html.prova .pb-i[aria-current] { background: var(--pb-on); color: var(--pb-on-ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08); }
-  html.prova .pb-i:not([aria-current]):active { background: var(--pb-press); }
-  html.prova .pb-i:focus-visible { outline: 2px solid currentColor; outline-offset: -3px; }
-  html.prova .pb-i svg { flex: none; width: 22px; height: 22px; }
-  html.prova .pb-i .pb-eq, html.prova .pb-i.playing .pb-ear { display: none; }
-  html.prova .pb-i.playing .pb-eq { display: block; }
-  html.prova .pb-i.playing { color: var(--pb-on-ink); }
+  html.nuova .pb-i:hover { color: var(--pb-ink); }
+  html.nuova .pb-i[aria-current] { background: var(--pb-on); color: var(--pb-on-ink); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08); }
+  html.nuova .pb-i:not([aria-current]):active { background: var(--pb-press); }
+  html.nuova .pb-i:focus-visible { outline: 2px solid currentColor; outline-offset: -3px; }
+  html.nuova .pb-i svg { flex: none; width: 22px; height: 22px; }
+  html.nuova .pb-i .pb-eq, html.nuova .pb-i.playing .pb-ear { display: none; }
+  html.nuova .pb-i.playing .pb-eq { display: block; }
+  html.nuova .pb-i.playing { color: var(--pb-on-ink); }
   /* il riepilogo a voce sale sopra la barra; in fondo alla pagina c'è spazio per entrambe */
-  html.prova .gp { bottom: calc(78px + env(safe-area-inset-bottom)); border-radius: 20px; }
-  html.prova body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
-  html.prova.gp-on body { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
+  html.nuova .gp { bottom: calc(78px + env(safe-area-inset-bottom)); border-radius: 20px; }
+  html.nuova body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  html.nuova.gp-on body { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
 }
-@media (max-width: 359px) { html.prova .pb-i { width: 64px; } }
+@media (max-width: 359px) { html.nuova .pb-i { width: 64px; } }
 @media (prefers-reduced-motion: no-preference) {
   /* la barra resta ferma mentre la pagina cambia; tra Notizie e Terminal sfuma da un colore all'altro */
-  html.prova .pb { view-transition-name: pb; }
+  html.nuova .pb { view-transition-name: pb; }
   html.theme-vt .pb { view-transition-name: none; }
   html[data-vt]::view-transition-group(pb) { animation-duration: var(--t-3); }
-  html.prova .pb-i.playing .pb-eq rect { transform-box: fill-box; transform-origin: 50% 100%; animation: pb-eq 0.9s ease-in-out infinite alternate; }
-  html.prova .pb-i.playing .pb-eq rect:nth-child(2) { animation-delay: -0.45s; }
-  html.prova .pb-i.playing .pb-eq rect:nth-child(3) { animation-delay: -0.2s; }
+  html.nuova .pb-i.playing .pb-eq rect { transform-box: fill-box; transform-origin: 50% 100%; animation: pb-eq 0.9s ease-in-out infinite alternate; }
+  html.nuova .pb-i.playing .pb-eq rect:nth-child(2) { animation-delay: -0.45s; }
+  html.nuova .pb-i.playing .pb-eq rect:nth-child(3) { animation-delay: -0.2s; }
 }
 @keyframes pb-eq { from { transform: scaleY(0.35); } to { transform: scaleY(1); } }
-/* nel menu, solo in prova: il pulsante per tornare alla grafica di adesso */
-.prova-out { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; padding: 0 16px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font-weight: 700; cursor: pointer; }
-.prova-out:active { background: var(--press); }
 
-/* ---------- prova: il nome, i colori dei comandi e delle etichette ---------- */
-/* il nome «Gerico.»: con le grazie, nel taglio da titolo, il punto blu; niente tratto. Il testo nella pagina resta
+/* ---------- grafica nuova: il nome, i colori dei comandi e delle etichette ---------- */
+/* il nome «Gerico.»: con le grazie, nel taglio da titolo, tutto in navy (al buio bianco); niente tratto. Il testo nella pagina resta
    GERICO: qui si scrive in minuscolo con la prima lettera grande (::first-letter vuole un blocco, non un flex) */
-html.prova .brand {
+html.nuova .brand {
   display: block; padding: 0 !important; margin-left: 0 !important;
   font-family: var(--serif); font-size: 28px; font-weight: 750; font-variation-settings: "opsz" 72;
   letter-spacing: -0.018em; line-height: 44px; text-transform: lowercase;
 }
-html.prova .brand::first-letter { text-transform: uppercase; }
-html.prova .brand::before { display: none; }
-html.prova .brand::after { content: "."; display: inline-block; color: var(--accent); }
-@media (min-width: 760px) { html.prova .brand { font-size: 31px; } }
+html.nuova .brand::first-letter { text-transform: uppercase; }
+html.nuova .brand::before { display: none; }
+html.nuova .brand::after { content: "."; display: inline-block; color: var(--accent); }
+@media (min-width: 760px) { html.nuova .brand { font-size: 31px; } }
 /* entrata: il nome compare al centro, il punto arriva con un piccolo scatto, poi il nome va al suo posto */
-html.prova.intro-run .intro-word {
+html.nuova.intro-run .intro-word {
   padding: 0 !important; font-family: var(--serif); font-size: 64px; font-weight: 750; font-variation-settings: "opsz" 72;
   letter-spacing: -0.018em; text-transform: lowercase;
 }
-html.prova.intro-run .intro-word::first-letter { text-transform: uppercase; }
-html.prova.intro-run .intro-word::before { display: none; }
-html.prova.intro-run .intro-word::after { content: "."; display: inline-block; color: var(--accent); transform: scale(0); }
-html.prova.intro-go .intro-word::after { animation: pv-dot var(--t-3) cubic-bezier(0.34, 1.56, 0.64, 1) 120ms forwards; }
+html.nuova.intro-run .intro-word::first-letter { text-transform: uppercase; }
+html.nuova.intro-run .intro-word::before { display: none; }
+html.nuova.intro-run .intro-word::after { content: "."; display: inline-block; color: var(--accent); transform: scale(0); }
+html.nuova.intro-go .intro-word::after { animation: pv-dot var(--t-3) cubic-bezier(0.34, 1.56, 0.64, 1) 120ms forwards; }
 @keyframes pv-dot { from { transform: scale(0); } to { transform: scale(1); } }
 
-/* Ultim'ora: l'etichetta blu */
-html.prova .ultim .ultim-l { background: var(--accent); color: var(--on-accent); }
+/* Ultim'ora: l'etichetta navy (al buio bianca) */
+html.nuova .ultim .ultim-l { background: var(--accent); color: var(--on-accent); }
 
-/* occhielli in parole normali: la sezione in un'etichetta blu con il filo, poi l'ora in grigio */
-html.prova .kick { gap: 4px 10px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
-:root.prova:not(#_) .k-sec {
+/* occhielli in parole normali: la sezione in un'etichetta navy con il filo, poi l'ora in grigio */
+html.nuova .kick { gap: 4px 10px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+:root.nuova:not(#_) .k-sec {
   margin: 0 !important; padding: 2px 7px 1px !important; border-radius: 6px !important;
   background: none !important; color: var(--accent) !important; box-shadow: inset 0 0 0 1px currentColor; font-weight: 700;
 }
-html.prova .k-time { letter-spacing: 0; }
-html.prova .k-live::before { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: none; }
+html.nuova .k-time { letter-spacing: 0; }
+html.nuova .k-live::before { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: none; }
 
 /* titolo d'apertura: nero pieno, senza evidenziatore */
-:root.prova:not(#_) .lead h2 a { background: none; }
+:root.nuova:not(#_) .lead h2 a { background: none; }
 
-/* muro delle testate: blu pieno chi concorda, blu chiaro chi concorda in parte */
-html.prova .mw i.p, html.prova .wall i.p { box-shadow: none; }
+/* muro delle testate: navy pieno chi concorda, navy chiaro chi concorda in parte (al buio bianco e navy tenue) */
+html.nuova .mw i.p, html.nuova .wall i.p { box-shadow: none; }
 
-/* riepilogo a voce: il pulsante e la barra che avanza in blu */
-:root.prova:not(#_) .ls-btn { background: var(--accent); color: var(--on-accent); }
-html.prova .ls-bar i { background: var(--accent); }
+/* riepilogo a voce: il pulsante e la barra che avanza in navy (al buio bianchi) */
+:root.nuova:not(#_) .ls-btn { background: var(--accent); color: var(--on-accent); }
+html.nuova .ls-bar i { background: var(--accent); }
 
-/* la barra del riepilogo è di vetro come quella in basso, con il pulsante blu */
-:root.prova:not(#_) .gp {
+/* la barra del riepilogo è di vetro come quella in basso, con il pulsante navy */
+:root.nuova:not(#_) .gp {
   background: var(--pb-bg); color: var(--pb-text); box-shadow: 0 0 0 0.5px var(--pb-edge), var(--pb-shadow);
   -webkit-backdrop-filter: blur(20px) saturate(1.8); backdrop-filter: blur(20px) saturate(1.8);
 }
-html.prova .gp-s, html.prova .gp-x { color: var(--pb-ink); }
-html.prova .gp-sk { color: var(--pb-text); }
-html.prova .gp-sk:active, html.prova .gp-x:active { background: var(--pb-press); }
-html.prova .gp-play { background: var(--accent); color: var(--on-accent); }
-html.prova .gp-play:active { background: var(--accent-2); }
-html.prova .gp button:focus-visible { outline-color: var(--accent); }
-html.prova .gp-bar { background: var(--pb-press); }
-html.prova .gp-bar i { background: var(--accent); }
-html.prova .ultim-l { padding: 6px 10px 5px; font-size: 0.75rem; letter-spacing: 0; text-transform: none; }
+html.nuova .gp-s, html.nuova .gp-x { color: var(--pb-ink); }
+html.nuova .gp-sk { color: var(--pb-text); }
+html.nuova .gp-sk:active, html.nuova .gp-x:active { background: var(--pb-press); }
+html.nuova .gp-play { background: var(--accent); color: var(--on-accent); }
+html.nuova .gp-play:active { background: var(--accent-2); }
+html.nuova .gp button:focus-visible { outline-color: var(--accent); }
+html.nuova .gp-bar { background: var(--pb-press); }
+html.nuova .gp-bar i { background: var(--accent); }
+html.nuova .ultim-l { padding: 6px 10px 5px; font-size: 0.75rem; letter-spacing: 0; text-transform: none; }

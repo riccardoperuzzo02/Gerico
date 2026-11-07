@@ -453,8 +453,8 @@
       const tn = Array.from(brand.childNodes).find((n) => n.nodeType === 3 && n.textContent.trim());
       const range = document.createRange();
       range.selectNodeContents(tn || brand);
-      // in prova il nome ha il punto dopo il testo (::after) e niente margini: si misura tutto il nome
-      const b = (html.classList.contains("prova") ? brand : range).getBoundingClientRect(), w = word.getBoundingClientRect();
+      // nella grafica nuova il nome ha il punto dopo il testo (::after) e niente margini: si misura tutto il nome
+      const b = (html.classList.contains("nuova") ? brand : range).getBoundingClientRect(), w = word.getBoundingClientRect();
       const s = parseFloat(getComputedStyle(brand).fontSize) / parseFloat(getComputedStyle(word).fontSize);
       const dx = b.left + b.width / 2 - (w.left + w.width / 2), dy = b.top + b.height / 2 - (w.top + w.height / 2);
       const there = base + " translate(" + dx.toFixed(2) + "px, " + dy.toFixed(2) + "px) scale(" + s.toFixed(4) + ")";
@@ -480,7 +480,7 @@
       word.animate([{ opacity: 0 }, { opacity: 1 }], { duration: IN, easing: "linear", fill: "forwards" });
       Promise.all([wait(SWEEP + HOLD), pageReady()]).then(move, move);
     };
-    const face = html.classList.contains("prova") ? '750 64px "Newsreader"' : '800 48px "Atkinson Hyperlegible Next"';
+    const face = html.classList.contains("nuova") ? '750 64px "Newsreader"' : '800 48px "Atkinson Hyperlegible Next"';
     const font = document.fonts && document.fonts.load ? document.fonts.load(face) : Promise.resolve();
     Promise.race([font, new Promise((r) => setTimeout(r, 600))]).then(go, go);
     // un tocco o uno scorrimento la saltano
@@ -647,10 +647,10 @@
     if (sessionStorage.getItem("gerico.audio")) G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) < 30) G.player.set(au); });
   } catch (e) { /* niente */ }
 
-  // ---------- prova del 7 novembre (solo con ?prova=1): la barra in basso a pillola ----------
+  // ---------- barra in basso a pillola (grafica nuova, 7 novembre) ----------
   // Notizie, Terminal, il riepilogo a voce e il menu, a portata di pollice. Sul telefono prende il posto
   // dell'interruttore e del menu in alto (li nasconde il CSS); sul computer non c'è. Come la barra del riepilogo
-  // resta nella pagina da un passaggio all'altro: cambia solo la voce accesa. Senza la prova non esiste
+  // resta nella pagina da un passaggio all'altro: cambia solo la voce accesa
   G.tabbar = (() => {
     let bar = null, asked = false;
     const svg = (body, cls) => '<svg' + (cls ? ' class="' + cls + '"' : "") + ' aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + body + "</svg>";
@@ -686,7 +686,7 @@
     };
     return {
       mount() {
-        if (!document.documentElement.classList.contains("prova") || !document.body) return;
+        if (!document.documentElement.classList.contains("nuova") || !document.body) return;
         if (!bar) build(); else if (!bar.isConnected) document.body.appendChild(bar);
         const k = G.current === "terminal" ? "terminal" : G.current === "home" || G.current === "story" ? "notizie" : "";
         bar.querySelectorAll("a.pb-i").forEach((a) => {
@@ -699,26 +699,14 @@
           G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) <= 30 && !G.player.info()) G.player.set(au); paint(); }).catch(() => {});
         }
         paint();
-        // il colore dietro la barra di stato segue il fondo della prova; l'icona della scheda è quella della prova
-        if (!document.body.classList.contains("term")) {
-          document.querySelectorAll('meta[name="theme-color"]').forEach((m) => { if (/light/.test(m.getAttribute("media") || "")) m.setAttribute("content", "#F2F2F2"); });
-        }
-        document.querySelectorAll('link[rel="icon"]').forEach((l) => {
-          const want = l.getAttribute("type") === "image/svg+xml" ? "assets/img/favicon-prova.svg" : "assets/img/favicon-prova-32.png";
-          if (l.getAttribute("href") !== want) l.setAttribute("href", want);
-        });
-        // nel menu, il pulsante per tornare alla grafica di adesso
-        const mi = document.querySelector("#menu .menu-in");
-        if (mi && !mi.querySelector(".prova-out")) {
-          const d = document.createElement("div");
-          d.className = "opt";
-          d.innerHTML = '<p class="opt-l">Grafica di prova</p><button type="button" class="prova-out">Torna alla grafica di adesso</button>';
-          d.querySelector("button").addEventListener("click", () => { try { sessionStorage.setItem("gerico.prova", "0"); } catch (e) { /* niente */ } location.reload(); });
-          mi.appendChild(d);
-        }
       }
     };
   })();
+
+  // i link alla prova della grafica (?prova=1, 7 novembre) portano alla grafica di tutti: l'indirizzo si pulisce
+  if (/[?&]prova=/.test(location.search)) {
+    try { const u = new URL(location.href); u.searchParams.delete("prova"); history.replaceState(history.state, "", u.pathname + u.search + u.hash); sessionStorage.removeItem("gerico.prova"); } catch (e) { /* niente */ }
+  }
 
   // ---------- navigazione senza ricaricare la pagina ----------
   // I link interni scaricano la pagina nuova e ne prendono il contenuto: l'audio continua e il passaggio è animato
@@ -792,7 +780,7 @@
     const b = document.body, keep = [document.getElementById("gp"), document.getElementById("pb")].filter(Boolean);
     Array.from(b.attributes).forEach((at) => b.removeAttribute(at.name));
     Array.from(doc.body.attributes).forEach((at) => b.setAttribute(at.name, at.value));
-    // la barra del riepilogo (e in prova quella in basso) non si stacca mai: niente animazione ripetuta a ogni pagina
+    // la barra del riepilogo e quella in basso non si staccano mai: niente animazione ripetuta a ogni pagina
     Array.from(b.childNodes).forEach((n) => { if (!keep.includes(n)) n.remove(); });
     const frag = document.createDocumentFragment();
     Array.from(doc.body.childNodes).forEach((n) => { if (n.nodeName !== "SCRIPT") frag.appendChild(n); });

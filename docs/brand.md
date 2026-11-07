@@ -1,55 +1,56 @@
-# GERICO: identità «Tratto»
+# Gerico: identità «Quotidiano», bianco e blu navy
 
-Scelta il 3 novembre 2026 fra tre rifiniture di «Evidenziatore». Le regole qui sotto valgono per sito, Terminal, immagini e audio. I valori stanno in `site/assets/css/gerico.css` (blocco «identità Tratto» in fondo).
+Scelta il 7 novembre 2026, dopo una prova da confrontare con la grafica di prima («Tratto», gialla, del 3 novembre). Le regole qui sotto valgono per sito, Terminal e immagini. I valori stanno in fondo a `site/assets/css/gerico.css`, nel blocco «grafica nuova», sotto la classe `nuova` che ogni pagina ha sull'`html`. Le regole delle grafiche di prima restano più su nel file e qui si scavalcano.
 
 ## Idea
 
-GERICO legge più testate e mette in evidenza i fatti condivisi. Il segno è il tratto dell'evidenziatore: si usa per dire «questo conta», non per decorare.
+Un'app di quotidiano: titoli con le grazie, riquadri bianchi che galleggiano su un fondo grigio chiaro, un solo colore, il blu navy, per il nome, le etichette e i comandi. Al buio il fondo diventa una notte blu navy e i comandi diventano bianchi. Dalle app dei giornali si prende il modo di impaginare, mai nomi, loghi o caratteri d'altri.
+
+## Il nome
+
+- «Gerico.» in Newsreader 750, taglio da titolo (opsz 72), spaziatura −0,018 em, tutto in blu navy compreso il punto; al buio e nel Terminal tutto bianco. Nel testo delle pagine resta GERICO: il CSS lo scrive in minuscolo con la prima lettera grande (`::first-letter`, quindi il nome è un blocco e non un flex).
+- Sul telefono sta al centro della barra in alto, da solo (28 px); sul computer a sinistra (31 px).
 
 ## Colori
 
-| Ruolo | Chiaro | Scuro e Terminal |
+| Ruolo | Chiaro | Scuro (anche il Terminal) |
 |---|---|---|
-| Fondo (`--ground`) | #FAF8F3, color carta | #0B0B0C, nero inchiostro |
-| Riquadri (`--group`) | #FFFFFF con filo #E4DFD3 | #161618 con filo #26262A |
-| Testo (`--ink`) | #0B0B0C | #F5F5F2 |
-| Evidenziatore (`--hl`) | #FFD60A | #FFD60A |
-| Tratto sotto il nome (`--band-color`) | #FFD60A | #3B350B, oliva scuro |
-| Nome (`--brand`) | #0B0B0C | #FFD60A |
+| Fondo (`--ground`) | #F2F2F2, grigio chiaro | #0A1428, notte blu navy |
+| Riquadri (`--group`) | #FFFFFF con un'ombra appena | #111E38 con un filo bianco al 6% |
+| Testo (`--ink`) | #121D36, nero con un fondo di navy | #EEF2F8 |
+| Testo secondario (`--muted`) | #5F6780 | #95A1B9 |
+| Navy (`--accent`): nome, etichette, pulsanti, link | #1B2F5B | bianco (#FFFFFF) |
 | Su e giù (`--up`, `--down`) | #0B7A3B, #B42318 | i verdi e rossi del tema scuro |
+| Muro delle testate | navy pieno chi concorda, #A9B8D8 in parte | bianco e #4F6390 |
+| Parere (`--palm-weak`) | #EDF1F8 | #13213D |
+| Stati del Terminal (`--t-accent`) | | #A9BDEB, azzurro tenue |
 
-Un solo giallo. Il giallo non si usa per i testi su fondo chiaro (non si legge): lì si usa il tratto sotto il testo.
-
-## Il tratto
-
-- Dove sì: il nome GERICO; il titolo d'apertura della prima pagina; la sezione negli occhielli; la sezione attiva (linea di 4 px); la selezione del testo; la sottolineatura dei link; l'avanzamento del riepilogo a voce.
-- Dove no: titoli delle altre notizie, pulsanti, numeri dei mercati, etichette di stato.
-- Forma: copre la metà bassa delle lettere (dal 52% al 94% dell'altezza), con le punte oblique (2%). Al buio il nome diventa giallo e il tratto oliva scuro.
-- È un `::before` dietro al testo: si anima con `transform: scaleX()` da sinistra.
+Un solo colore oltre al bianco, al grigio e al testo. Il verde e il rosso restano ai mercati. «Versioni diverse» resta in bruno (`--split`).
 
 ## Caratteri
 
-- Atkinson Hyperlegible Next, servito dal sito (nessun font esterno).
-- Titoli 800, spaziatura stretta (da −0,02 a −0,03 em). Testo 400. Occhielli 800 maiuscoli con spaziatura 0,06 em.
+- Titoli, sommari, nome e intestazioni dei blocchi: Newsreader (OFL), servito dal sito; titoli 600, il giorno in alto («Oggi», «Ieri») grande e leggero (400).
+- Il resto, occhielli, righe di servizio, numeri, comandi: Atkinson Hyperlegible Next.
+- Occhielli in parole normali: la sezione in un'etichetta navy con il filo (al buio bianca), poi l'ora in grigio. Sezioni della prima pagina in parole normali, la scelta in nero con un filo navy di 2 px sotto la parola.
 - Cifre tabellari nei numeri che cambiano (prezzi, tempi del riepilogo).
 
 ## Spazi e forme
 
-- Raggio dei riquadri 14 px; riquadri bianchi con un filo da 1 px, senza ombre in chiaro.
-- Margini laterali 16 px sul telefono.
-- Aree da toccare di almeno 44 px.
-- Aria: righe dell'elenco a 24 px, blocchi a 38-44 px l'uno dall'altro, riquadri con 20 px dentro (16 sul telefono, 12 sotto i 360 px). Le regole stanno in fondo a `gerico.css`, sotto «più aria».
+- Ogni storia è un riquadro con angoli da 22 px; tra un riquadro e l'altro 12 px; dentro 20 px (18 sul telefono).
+- Ultim'ora: una pillola che galleggia sotto il nome, con l'etichetta navy.
+- Margini laterali 16 px sul telefono. Aree da toccare di almeno 44 px.
+- Barra in basso, solo sul telefono: Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu, in una pillola di vetro; la voce scelta ha la sua pillola bianca. Resta ferma tra le pagine. La barra del riepilogo, di vetro anche lei con il pulsante navy, sale sopra di lei.
 
 ## Movimento
 
 - Quattro durate: `--t-1` 140 ms (risposte al tocco), `--t-2` 220 ms (piccoli cambi), `--t-3` 360 ms (pannelli), `--t-4` 560 ms (passaggi grandi); `--t-push` 380 ms per le pagine.
 - Curve: `--ease` per quasi tutto, `--ease-emph` per il tratto, `--ease-exit` per ciò che esce, `--ease-push` (parte svelta e si posa piano) per pagine, sezioni e indicatori (`--snap`). Niente rimbalzi.
 - Solo `transform` e `opacity`. Con «riduci movimento» resta una dissolvenza breve.
-- Pagine sul telefono: si spingono come in un'app. Avanti la nuova entra intera da destra e la vecchia scivola un po' sotto; indietro la pagina in cima esce a destra. La barra in alto e quella del riepilogo restano ferme. Sul computer le pagine scivolano di poco e si incrociano.
+- Pagine sul telefono: si spingono come in un'app. Avanti la nuova entra intera da destra e la vecchia scivola un po' sotto; indietro la pagina in cima esce a destra. La barra in alto, la barra in basso e quella del riepilogo restano ferme. Sul computer le pagine scivolano di poco e si incrociano.
 - Notizie e Terminal stanno una accanto all'altra (il Terminal a destra, come nell'interruttore) e si spingono intere, barra in alto compresa.
 - Swipe (sezioni della prima pagina, mappa e grafici del Terminal, storie): il contenuto sta attaccato al dito, uno a uno, e quello accanto entra dal lato, intero, a 28 px di distanza, insieme all'indicatore delle schede. Al rilascio prosegue con la velocità del dito e si posa come una molla senza rimbalzo (`G.swipeAnim`: curva `linear()` a punti, 0,26-0,76 s, più breve se il colpo è veloce); passa con un colpo deciso o oltre un terzo della larghezza. La pagina accanto copre quella sotto e resta finché la vera è disegnata. Oltre l'ultima pagina fa resistenza, come su iOS. Una sezione nuova comincia dall'inizio, sotto la barra delle sezioni. Toccando una sezione succede lo stesso dello swipe (sezione accanto già pronta, stessa molla, con la spinta di un colpo deciso). Durante lo swipe la pagina non scorre su e giù, nemmeno con il dito in diagonale. Nel Terminal la vista della mappa (mappa, legenda, valori, dettaglio) e il gruppo dei grafici si sfogliano interi; se il contenuto che arriva è più alto o più basso, lo spazio si adegua con la stessa molla e quello che sta sotto non salta mai. Le viste accanto si preparano a pagina ferma.
 - Barra delle sezioni sul telefono: scorre da un bordo all'altro dello schermo, libera (niente aggancio alle schede, niente sfumatura con una maschera: su iOS rende a scatti un elemento che scorre). La scheda scelta va al centro; durante lo swipe la barra scorre con il dito, l'indicatore la segue e il colore dei due nomi passa dall'uno all'altro.
-- Entrata: a ogni nuova apertura del sito il tratto attraversa il nome al centro, il nome aspetta che le notizie siano pronte (al massimo 1,5 s), va al suo posto e le notizie salgono a cascata.
+- Entrata: a ogni nuova apertura del sito il nome compare al centro e il punto arriva con un piccolo scatto; il nome aspetta che le notizie siano pronte (al massimo 1,5 s), va al suo posto e le notizie salgono a cascata.
 
 ## Voce
 
@@ -63,18 +64,6 @@ Italiano semplice, come una persona che spiega a un collega. Niente aggettivi en
 
 ## Icone e immagini
 
-- Icona: quadrato giallo con la G nera. Nessun logo o simbolo di altri (niente icone Apple).
-- Immagine di condivisione: fondo chiaro, GERICO con il tratto, la riga di mattoncini delle testate.
-
-## Prova grafica (7 novembre)
-
-Una grafica di prova da confrontare con quella di adesso. Si accende con `?prova=1` in fondo all'indirizzo (resta accesa nella scheda finché non la chiudi) e si spegne con `?prova=0` o dal menu, «Torna alla grafica di adesso». Senza prova il sito è identico a prima: tutte le regole stanno in fondo a `gerico.css` sotto `html.prova`, e la barra in basso, il nome nuovo e l'icona nuova esistono solo in prova.
-
-- Nome: «Gerico.» in Newsreader 750, taglio da titolo (opsz 72), spaziatura −0,018 em, con il punto blu. Nella pagina il testo resta GERICO: il CSS lo scrive in minuscolo con la prima lettera grande. Entrata: il nome compare al centro, il punto arriva con un piccolo scatto, poi il nome va al suo posto.
-- Icona della scheda: quadrato blu con la G bianca di Newsreader (`assets/img/favicon-prova.svg` e `favicon-prova-32.png`).
-- Colori: fondo grigio (#F2F2F2; al buio #0A0A0B), riquadri bianchi (al buio #1B1B1E), inchiostro #111111, un solo colore per etichette e comandi, il blu #1F56D6 (al buio #7AA2FF). Il muro delle testate in blu pieno (concordano) e blu chiaro (in parte); il parere su un blu chiarissimo. Niente giallo e niente tratto dell'evidenziatore. Nel Terminal il blu chiaro prende il posto del giallo.
-- Caratteri: titoli, sommari e intestazioni dei blocchi in Newsreader (OFL, servito dal sito, si scarica solo in prova), peso 600; il giorno in alto grande e leggero (400). Il resto resta in Atkinson Hyperlegible Next.
-- Occhielli in parole normali: la sezione in un'etichetta blu con il filo, poi l'ora in grigio. Ultim'ora: una pillola che galleggia, con l'etichetta blu. Sezioni in parole normali, la scelta in nero con un filo nero sotto la parola.
-- Riquadri con angoli da 22 px e un'ombra appena (al buio un filo).
-- Sul telefono il nome sta al centro, da solo. Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu stanno in una barra a pillola di vetro in basso, che resta ferma tra le pagine; la voce scelta ha la sua pillola bianca. La barra del riepilogo, anche lei di vetro con il pulsante blu, sale sopra di lei.
-- Nessun marchio d'altri: dalle app dei quotidiani si prende il modo di impaginare, non nomi, loghi o caratteri.
+- Icona: quadrato blu navy con la G bianca di Newsreader (`favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, quest'ultima senza angoli: li arrotonda iOS).
+- Immagine di condivisione (`og-gerico.png`, 1200×630): fondo grigio chiaro, un riquadro bianco con «Gerico.» in navy, la frase sotto e la riga di mattoncini delle testate.
+- Nessun logo o simbolo di altri (niente icone Apple, niente marchi di altri giornali).

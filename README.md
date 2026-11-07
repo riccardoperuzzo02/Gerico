@@ -11,7 +11,7 @@ site/                 la cartella pubblicata da Cloudflare
   storia.html?id=...  una storia: fatti, divergenze, parere, cronologia, fonti
   terminal.html       GERICO Terminal: mappa a quadrati, indici, valute, tassi, materie prime, agenda, notizie
   come-funziona.html, privacy.html, 404.html
-  assets/             css, js, font (Atkinson Hyperlegible; Newsreader per la prova grafica; licenza OFL) e immagini
+  assets/             css, js, font (Atkinson Hyperlegible e Newsreader, licenza OFL) e immagini
   data/               i dati dell'edizione, scritti dalla pipeline
 redazione/            i testi dei giri (notizie, chiusure europee, titoli da seguire) e il database in redazione/db
 scripts/redazione.py  quale giro fare, controllo del database, pubblicazione (workflow «Redazione»)

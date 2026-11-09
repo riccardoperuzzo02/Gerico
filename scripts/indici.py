@@ -29,7 +29,7 @@ import sys
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 sys.stdout.reconfigure(line_buffering=True)
@@ -338,15 +338,13 @@ def composizione(yf, code, conf, prima):
     return {"code": code, "index": conf["index"], "pesiAsOf": adesso(), "fonte": fonte, "metodo": metodo, "top": top, "cur": main, "items": items}
 
 
-def prezzi(yf, dato):
-    """Ultimo prezzo e variazione della seduta di ogni titolo, poi i pesi con i prezzi nuovi."""
+def scarica(yf, simboli, prova):
+    """Le chiusure giornaliere degli ultimi giorni. Con le date di inizio e fine, non con period: a volte Yahoo risponde
+    a period con una serie vecchia, senza la seduta di oggi (la stessa cosa che fin_data.py evita per il gas TTF)."""
     import pandas as pd
-    items, main = dato["items"], dato.get("cur") or ""
-    mm = norm_cur(main)[0]
-    serve = {norm_cur(x["k"])[0] for x in items if x.get("k")} - {mm, ""}
-    fx_sym = {c: f"{c}{mm}=X" for c in serve}
-    simboli = [x["s"] for x in items] + list(fx_sym.values())
-    df = yf.download(simboli, period="7d", interval="1d", group_by="ticker", auto_adjust=False, threads=True, progress=False)
+    oggi = datetime.now(timezone.utc).date()
+    span = {"start": (oggi - timedelta(days=12 + 7 * prova)).isoformat(), "end": (oggi + timedelta(days=2)).isoformat()}
+    df = yf.download(simboli, interval="1d", group_by="ticker", auto_adjust=False, threads=True, progress=False, **span)
 
     def chiusure(s):
         try:
@@ -354,14 +352,31 @@ def prezzi(yf, dato):
             return c if len(c) else None
         except Exception:
             return None
-    serie = {s: chiusure(s) for s in simboli}
+    return {s: chiusure(s) for s in simboli}
+
+
+def prezzi(yf, dato):
+    """Ultimo prezzo e variazione della seduta di ogni titolo, poi i pesi con i prezzi nuovi."""
+    items, main = dato["items"], dato.get("cur") or ""
+    mm = norm_cur(main)[0]
+    serve = {norm_cur(x["k"])[0] for x in items if x.get("k")} - {mm, ""}
+    fx_sym = {c: f"{c}{mm}=X" for c in serve}
+    simboli = [x["s"] for x in items] + list(fx_sym.values())
+    for prova in range(2):
+        serie = scarica(yf, simboli, prova)
+        # la seduta dell'indice: la data più recente che ha almeno metà dei titoli
+        date = Counter(str(serie[x["s"]].index[-1])[:10] for x in items if serie.get(x["s"]) is not None)
+        if not date:
+            raise RuntimeError("nessun prezzo")
+        tot = sum(date.values())
+        seduta = next((d for d in sorted(date, reverse=True) if date[d] >= 0.5 * tot), date.most_common(1)[0][0])
+        # una seduta più vecchia di quella che c'è già è una risposta vecchia di Yahoo: si riprova, poi si tiene quella di prima
+        if not dato.get("date") or seduta >= dato["date"]:
+            break
+        print(f"  {dato['code']}: Yahoo dà la seduta del {seduta}, più vecchia di quella che c'è ({dato['date']})" + (", riprovo" if not prova else ""))
+    else:
+        raise RuntimeError("risposta vecchia di Yahoo, restano i prezzi di prima")
     fx = {c: float(serie[sym].iloc[-1]) for c, sym in fx_sym.items() if serie.get(sym) is not None}
-    # la seduta dell'indice: la data più recente che ha almeno metà dei titoli
-    date = Counter(str(serie[x["s"]].index[-1])[:10] for x in items if serie.get(x["s"]) is not None)
-    if not date:
-        raise RuntimeError("nessun prezzo")
-    tot = sum(date.values())
-    seduta = next((d for d in sorted(date, reverse=True) if date[d] >= 0.5 * tot), date.most_common(1)[0][0])
     for x in items:
         c = serie.get(x["s"])
         x.pop("d", None)

@@ -46,16 +46,16 @@ INDICI = {
             "nikkei": "https://indexes.nikkei.co.jp/en/nkave/index/component?idx=nk225"},
     "GBR": {"index": "FTSE 100", "wiki": "https://en.wikipedia.org/wiki/FTSE_100_Index", "suffix": ".L", "dash": True},
     "CAN": {"index": "S&P/TSX 60", "wiki": "https://en.wikipedia.org/wiki/S%26P/TSX_60", "suffix": ".TO", "dash": True},
-    "FRA": {"index": "CAC 40", "wiki": "https://en.wikipedia.org/wiki/CAC_40", "suffix": ".PA"},
-    "CHE": {"index": "SMI", "wiki": "https://en.wikipedia.org/wiki/Swiss_Market_Index", "suffix": ".SW"},
+    "FRA": {"index": "CAC 40", "wiki": "https://en.wikipedia.org/wiki/CAC_40", "suffix": ".PA", "tetto": 15},
+    "CHE": {"index": "SMI", "wiki": "https://en.wikipedia.org/wiki/Swiss_Market_Index", "suffix": ".SW", "tetto": 18},
     "DEU": {"index": "DAX", "wiki": "https://en.wikipedia.org/wiki/DAX", "suffix": ".DE"},
     "IND": {"index": "Nifty 50", "wiki": "https://en.wikipedia.org/wiki/NIFTY_50", "suffix": ".NS"},
-    "NLD": {"index": "AEX", "wiki": "https://en.wikipedia.org/wiki/AEX_index", "suffix": ".AS"},
-    "ITA": {"index": "FTSE MIB", "wiki": "https://en.wikipedia.org/wiki/FTSE_MIB", "suffix": ".MI", "fix": {"STM": "STMMI", "STLA": "STLAM"}},
+    "NLD": {"index": "AEX", "wiki": "https://en.wikipedia.org/wiki/AEX_index", "suffix": ".AS", "tetto": 15},
+    "ITA": {"index": "FTSE MIB", "wiki": "https://en.wikipedia.org/wiki/FTSE_MIB", "suffix": ".MI", "fix": {"STM": "STMMI", "STLA": "STLAM"}, "tetto": 15},
     "BRA": {"index": "Ibovespa", "wiki": "https://pt.wikipedia.org/wiki/Ibovespa", "suffix": ".SA", "riserva": [
         ("PETR4", "Petrobras PN"), ("PETR3", "Petrobras ON"), ("VALE3", "Vale"), ("ITUB4", "Itaú Unibanco"), ("BBDC4", "Bradesco"),
         ("BBAS3", "Banco do Brasil"), ("B3SA3", "B3"), ("ABEV3", "Ambev"), ("WEGE3", "WEG"), ("ITSA4", "Itaúsa"), ("BPAC11", "BTG Pactual"),
-        ("ELET3", "Eletrobras"), ("SUZB3", "Suzano"), ("RAIL3", "Rumo"), ("RENT3", "Localiza"), ("EQTL3", "Equatorial"), ("SBSP3", "Sabesp"),
+("SUZB3", "Suzano"), ("RAIL3", "Rumo"), ("RENT3", "Localiza"), ("EQTL3", "Equatorial"), ("SBSP3", "Sabesp"),
         ("RADL3", "Raia Drogasil"), ("GGBR4", "Gerdau"), ("VBBR3", "Vibra Energia"), ("RDOR3", "Rede D'Or"), ("BBSE3", "BB Seguridade"),
         ("PRIO3", "Prio"), ("SANB11", "Santander Brasil"), ("CMIG4", "Cemig"), ("TIMS3", "TIM Brasil"), ("VIVT3", "Telefônica Brasil"),
         ("KLBN11", "Klabin"), ("LREN3", "Lojas Renner"), ("UGPA3", "Ultrapar"), ("TOTS3", "Totvs"), ("CSAN3", "Cosan")]},
@@ -160,7 +160,8 @@ def yahoo(sym, conf):
     if conf.get("dash"):
         s = s.replace(".", "-")
     suf = conf.get("suffix") or ""
-    if suf and not s.endswith(suf):
+    # un titolo di un'altra Borsa (ArcelorMittal «MT.AS» nel CAC 40, Airbus «AIR.PA» nel DAX) resta com'è
+    if suf and not s.endswith(suf) and (conf.get("dash") or not re.search(r"\.[A-Z]{1,3}$", s)):
         s += suf
     return s
 
@@ -168,7 +169,7 @@ def yahoo(sym, conf):
 def sigla(s, conf):
     """La sigla di Borsa da mostrare: AAPL, BRK.B, ENI, 7203."""
     suf = conf.get("suffix") or ""
-    t = s[: -len(suf)] if suf and s.endswith(suf) else re.sub(r"\.(SS|SZ)$", "", s)
+    t = s[: -len(suf)] if suf and s.endswith(suf) else re.sub(r"\.[A-Z]{1,3}$", "", s) if not conf.get("dash") else s
     return t.replace("-", ".") if conf.get("dash") else t
 
 
@@ -294,7 +295,7 @@ def composizione(yf, code, conf, prima):
         except Exception as e:
             print(f"    fattori del Nikkei non trovati ({e})")
     simboli = [s for s, _ in elenco]
-    with ThreadPoolExecutor(6) as ex:
+    with ThreadPoolExecutor(4) as ex:
         schede = dict(zip(simboli, ex.map(lambda s: scheda(yf, s), simboli)))
     valute = Counter(sc["cur"] for sc in schede.values() if sc.get("cur"))
     main = valute.most_common(1)[0][0] if valute else ""
@@ -377,8 +378,21 @@ def prezzi(yf, dato):
         r = 1 if maj == mm else fx.get(maj)
         return x["q"] * x["p"] / div * r if r else 0
     tot = sum(valore(x) for x in items) or 1
+    pesi = {x["s"]: valore(x) / tot * 100 for x in items}
+    tetto = (INDICI.get(dato.get("code")) or {}).get("tetto")
+    if tetto:
+        # come l'indice: nessun titolo sopra il tetto, quello che avanza va agli altri in proporzione
+        for _ in range(20):
+            sopra = {s for s, w in pesi.items() if w > tetto + 1e-9}
+            if not sopra:
+                break
+            liberi = sum(w for s, w in pesi.items() if w < tetto - 1e-9)
+            extra = sum(pesi[s] - tetto for s in sopra)
+            for s in pesi:
+                pesi[s] = tetto if s in sopra else pesi[s] + (extra * pesi[s] / liberi if liberi and pesi[s] < tetto - 1e-9 else 0)
+        dato["tetto"] = tetto
     for x in items:
-        x["w"] = round(valore(x) / tot * 100, 4)
+        x["w"] = round(pesi[x["s"]], 4)
     dato["items"] = sorted((x for x in items if x["w"] > 0), key=lambda x: -x["w"])
     con = [x for x in dato["items"] if isinstance(x.get("c"), (int, float))]
     sw = sum(x["w"] for x in con)
@@ -391,7 +405,10 @@ def main(cartella):
     import yfinance as yf
     out = os.path.join(cartella, "indici")
     os.makedirs(out, exist_ok=True)
-    forza = os.environ.get("INDICI_COMPOSIZIONE") == "1"
+    # INDICI_COMPOSIZIONE: «1» o «tutti» rifà tutte le composizioni, «FRA,DEU» solo quelle
+    rifai = (os.environ.get("INDICI_COMPOSIZIONE") or "").strip().upper()
+    forza = rifai in ("1", "TUTTI", "ALL")
+    rifai = {c.strip() for c in rifai.split(",") if c.strip()} if not forza else set()
     solo = {c.strip().upper() for c in (os.environ.get("INDICI_SOLO") or "").split(",") if c.strip()}
     codici = [c for c in INDICI if not solo or c in solo]
     dati = {c: carica(os.path.join(out, c + ".json")) for c in codici}
@@ -402,7 +419,7 @@ def main(cartella):
         except Exception:
             return 10 ** 6
     # prima le composizioni più vecchie: se il tempo finisce, le altre aspettano il giro dopo
-    for c in sorted((c for c in codici if forza or eta(c) >= GIORNI), key=lambda c: -eta(c)):
+    for c in sorted((c for c in codici if forza or c in rifai or eta(c) >= GIORNI), key=lambda c: -eta(c)):
         if resto() < BUDGET * 0.4:
             print(f"  {c}: composizione rimandata al giro dopo (tempo finito)")
             continue
@@ -427,7 +444,7 @@ def main(cartella):
     for c in INDICI:
         d = carica(os.path.join(out, c + ".json"))
         if d and d.get("items"):
-            elenco[c] = {"index": d.get("index"), "n": len(d["items"]), "date": d.get("date", ""), "asOf": d.get("asOf", "")}
+            elenco[c] = {"index": d.get("index"), "n": len(d["items"]), "top": d.get("top", 0), "date": d.get("date", ""), "asOf": d.get("asOf", "")}
     salva(os.path.join(out, "elenco.json"), {"asOf": adesso(), "indici": elenco})
     print(f"Fatto in {time.monotonic() - T0:.0f} s: {len(elenco)} indici.")
 

@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       composizione:
-        description: Rifai l'elenco dei titoli e i pesi
-        type: boolean
-        default: false
+        description: "Rifai l'elenco dei titoli e il flottante: «tutti», oppure dei codici separati da virgole (es. FRA,DEU); vuoto per nessuno"
+        type: string
+        default: ""
       solo:
         description: "Solo questi codici, separati da virgole (es. USA,ITA); vuoto per tutti"
         type: string
@@ -39,7 +39,8 @@ jobs:
         run: pip install -q -r scripts/prezzi_requirements.txt lxml
       - name: Indici
         env:
-          INDICI_COMPOSIZIONE: ${{ inputs.composizione && '1' || '' }}
+          INDICI_COMPOSIZIONE: ${{ inputs.composizione }}
+          INDICI_SECONDI: "1200"
           INDICI_SOLO: ${{ inputs.solo }}
         run: python -u scripts/indici.py site/data
       - name: Pubblica

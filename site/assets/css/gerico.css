@@ -551,7 +551,9 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
   min-width: 0; padding: 16px; border-radius: var(--radius); background: var(--t-panel);
   scroll-margin-top: calc(var(--top-h) + 70px);
 }
-.t-panel.flash { box-shadow: 0 0 0 2px var(--t-accent); }
+.t-panel.flash { animation: t-flash 1200ms ease-out both; }
+@keyframes t-flash { 0% { box-shadow: 0 0 0 2px rgba(169, 189, 235, 0); } 18%, 62% { box-shadow: 0 0 0 2px var(--t-accent); } 100% { box-shadow: 0 0 0 2px rgba(169, 189, 235, 0); } }
+@media (prefers-reduced-motion: reduce) { .t-panel.flash { animation: none; box-shadow: 0 0 0 2px var(--t-accent); } }
 .t-panel h2 { font-size: 1.125rem; font-weight: 700; letter-spacing: -0.01em; color: var(--t-ink); }
 .t-headrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .t-seg { flex: 0 0 200px; }
@@ -732,7 +734,7 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
 
   /* cambio di tema o di dimensione del testo: una dissolvenza breve su tutta la pagina. La pagina vecchia sfuma sopra la
      nuova, che sta ferma sotto: niente somma di luci a metà (plus-lighter), niente cerchio */
-  html.theme-vt::view-transition-old(root) { animation: 320ms cubic-bezier(0.4, 0, 0.2, 1) both vt-fade-out; mix-blend-mode: normal; }
+  html.theme-vt::view-transition-old(root) { animation: 320ms cubic-bezier(0.4, 0, 0.2, 1) both vt-fade-out; mix-blend-mode: normal; z-index: 1; }
   html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
   html.theme-vt .story-main h1 { view-transition-name: none; }
   .sk i::after, #st-title:empty::after { animation: shimmer 1.4s ease-in-out infinite; }
@@ -2035,3 +2037,35 @@ body.term a.skip, body.term a.skip:hover { background: #EEF2F8; color: #0A1428; 
 .t-mapwrap.has-ring .tile[aria-pressed="true"]:focus-visible { outline: 2px solid #FFFFFF; outline-offset: -7px; }
 /* in stampa la mappa della storia non serve (un riquadro blu pieno) */
 @media print { .media { display: none !important; } }
+
+/* ========== transizioni (9 novembre, sera) ========== */
+/* il messaggio breve («Link copiato») sul telefono sta sopra la barra in basso, e sopra il lettore se c'è: prima
+   finiva sopra i pulsanti della barra */
+@media (max-width: 759px) {
+  html.nuova .toast { bottom: calc(86px + env(safe-area-inset-bottom)); }
+  html.nuova.gp-on .toast { bottom: calc(160px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* menu: il velo scuro dietro sale insieme al foglio, non di colpo prima di lui */
+  .menu[open]::backdrop { animation: fade-in var(--t-3) cubic-bezier(0.3, 0, 0.5, 1); }
+  /* i comandi cambiano colore in un attimo invece che di scatto (segui un tema, una scheda scelta, il passaggio del mouse).
+     Non durante il cambio di tema: lì è tutta la pagina a sfumare insieme, e un comando che cambia colore per conto suo
+     resterebbe per un attimo con la scritta del tema vecchio sul fondo di quello nuovo */
+  html:not(.theme-vt) :is(.tag, .chips button, .t-btn, .more-brevi, .t-pick, .share, .btn-text) {
+    transition: transform var(--t-1) var(--ease), background-color var(--t-1) var(--ease), color var(--t-1) var(--ease), box-shadow var(--t-1) var(--ease);
+  }
+  html:not(.theme-vt) :is(.seg > a, .seg > button) { transition: transform var(--t-1) var(--ease), color var(--t-2) var(--ease); }
+}
+/* gli elenchi lunghi del Terminal (i 500 titoli di un indice): il browser disegna solo le righe vicine allo schermo.
+   «Mostra tutti» risponde subito anche su un telefono lento */
+.q-list.st > li { content-visibility: auto; contain-intrinsic-size: auto 62px; }
+/* computer: aprendo una storia la sua immagine cresce dalla scheda alla pagina, come già fa il titolo; e torna indietro */
+@media (prefers-reduced-motion: no-preference) and (min-width: 760px) {
+  .st-media { view-transition-name: story-img; }
+  ::view-transition-group(story-img) { animation-duration: var(--t-3); animation-timing-function: var(--ease); }
+  /* i due riquadri non hanno le stesse proporzioni: l'immagine li riempie mentre cambiano forma, senza schiacciarsi */
+  ::view-transition-old(story-img), ::view-transition-new(story-img) { height: 100%; object-fit: cover; overflow: clip; }
+  html.theme-vt .st-media, html[data-swipe] .st-media, html[data-mode] .st-media { view-transition-name: none; }
+}
+/* i quadrati che escono dalla mappa quando cambia la vista (Mondo, Europa): sfumano, non spariscono di colpo */
+.t-leave { position: absolute; inset: 0; z-index: 0; pointer-events: none; }

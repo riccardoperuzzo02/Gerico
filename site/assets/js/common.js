@@ -374,19 +374,23 @@
   // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
   // Solo file del sito (img/storie/...): niente immagini da altri siti
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';
+  const imgSeen = new Set();
   G.storyImg = (s, o) => {
     const im = s && s.img;
     if (!im || typeof im.src !== "string" || !/^img\/storie\/[\w.-]+\.svg(\?v=\w+)?$/.test(im.src)) return "";
     o = o || {};
-    return '<figure class="media' + (o.cls ? " " + o.cls : "") + '"><img src="' + G.esc(im.src) + '" alt="" width="640" height="360" decoding="async"' +
-      (o.eager ? ' fetchpriority="high"' : ' loading="lazy"') + ">" +
+    // un'immagine già arrivata in questa visita c'è subito, senza dissolvenza: tornando a una pagina la si ritrova com'era
+    const seen = imgSeen.has(im.src);
+    return '<figure class="media' + (o.cls ? " " + o.cls : "") + '"><img' + (seen ? ' class="in"' : "") + ' src="' + G.esc(im.src) + '" alt="" width="640" height="360" decoding="' + (seen ? "sync" : "async") + '"' +
+      (o.eager ? ' fetchpriority="high"' : seen ? "" : ' loading="lazy"') + ">" +
       (o.cap !== false && im.label ? '<figcaption class="m-cap">' + PIN + "<span>" + G.esc(im.label) + "</span></figcaption>" : "") + "</figure>";
   };
   // le immagini compaiono con una dissolvenza quando sono arrivate (quelle già pronte subito)
   G.showImgs = (root) => {
     (root || document).querySelectorAll(".media img:not(.in)").forEach((img) => {
-      if (img.complete && img.naturalWidth) img.classList.add("in");
-      else img.addEventListener("load", () => img.classList.add("in"), { once: true });
+      const ok = () => { img.classList.add("in"); imgSeen.add(img.getAttribute("src")); };
+      if (img.complete && img.naturalWidth) ok();
+      else img.addEventListener("load", ok, { once: true });
     });
   };
 
@@ -793,10 +797,26 @@
       bar.querySelector(".gp-x").addEventListener("click", () => api.close());
       document.body.appendChild(bar);
     };
+    // la barra entra salendo e esce scendendo (prima compariva e spariva di colpo); durante un passaggio di pagina no:
+    // lì è la transizione della pagina a portarla
+    let barShown = false, barAnim = null;
+    function showBar(show) {
+      if (show === barShown) return;
+      barShown = show;
+      if (barAnim) { barAnim.cancel(); barAnim = null; }
+      const move = !!bar.animate && !G.reduced() && !window.gericoVT && bar.isConnected;
+      if (show) {
+        bar.hidden = false;
+        if (move) barAnim = bar.animate([{ opacity: 0, transform: "translateY(14px) scale(0.98)" }, { opacity: 1, transform: "none" }], { duration: 280, easing: "cubic-bezier(0.32, 0.72, 0, 1)" });
+      } else if (move && !bar.hidden) {
+        const a = barAnim = bar.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(10px) scale(0.98)" }], { duration: 170, easing: "cubic-bezier(0.4, 0, 1, 1)", fill: "forwards" });
+        a.finished.then(() => { if (barAnim === a) { bar.hidden = true; a.cancel(); barAnim = null; } }, () => {});
+      } else bar.hidden = true;
+    }
     function paint() {
       if (!bar) { if (!document.body) return; build(); }
       const show = started() && !closed && !cardSeen;
-      if (bar.hidden === show) bar.hidden = !show;
+      showBar(show);
       document.documentElement.classList.toggle("gp-on", show);
       if (!show) return;
       const on = !audio.paused, d = dur();
@@ -957,6 +977,9 @@
   const entries = { 0: shown };
   G.entryBefore = () => entries[idx - 1] || "";
   G.prevUrl = "";
+  // la pagina che c'era sullo schermo prima di questa (percorso e ricerca), anche dopo «indietro» e «avanti» del browser:
+  // lì G.prevUrl è già l'indirizzo nuovo, perché il browser lo cambia prima di avvisare
+  G.shownBefore = "";
   G.soft = false;
   // dir: "forward" | "back"; mode: passaggio tra Notizie e Terminal; y: scorrimento da ripristinare
   G.go = async (url, opt) => {
@@ -973,7 +996,7 @@
     const pg = pageOf(doc);
     if (!ready) { ready = true; try { history.scrollRestoration = "manual"; } catch (e) { /* niente */ } }
     if (opt.push !== false) { try { history.replaceState(Object.assign({}, history.state, { g: 1, n: idx, y: scrollY }), ""); } catch (e) { /* niente */ } }
-    const from = location.href;
+    const from = location.href, was = shown;
     const swap = async () => {
       // è partito un altro passaggio prima di questo: la pagina la cambia lui, questo non tocca niente
       if (id !== navId) return;
@@ -983,6 +1006,7 @@
       entries[idx] = location.pathname + location.search;
       shown = location.pathname + location.search;
       G.prevUrl = from;
+      G.shownBefore = was;
       G.soft = true;
       G.current = pg.name;
       if (G.pages[pg.name]) startPage(pg.name);

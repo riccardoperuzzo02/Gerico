@@ -30,6 +30,10 @@ Fai l'elenco di tutto quello che si muove o cambia sullo schermo: passaggi tra l
 - con «movimento ridotto» diventa un cambio immediato o una dissolvenza breve, senza perdere niente;
 - lascia il fuoco della tastiera e lo scorrimento dove ci si aspetta.
 Correggi quelle che non lo sono e rifinisci le altre dove un dettaglio le rende più naturali. Non aggiungere animazioni per decorare: ogni movimento spiega da dove arriva una cosa o dove va.
+Tre attenzioni nel misurare, perché una misura sbagliata fa vedere difetti che non ci sono e nasconde quelli veri:
+- il ritardo si conta dall'istante del gesto preso dentro la pagina (l'evento `click`, `touchstart` o `popstate`), non da quando lo strumento di prova comincia a preparare il clic;
+- i fotogrammi registrati si mettono in ordine di orario prima di guardarli: possono arrivare fuori ordine, e due fotogrammi scambiati sembrano un lampo;
+- che un'animazione «giri» non basta: guarda nei fotogrammi che sullo schermo cambi davvero qualcosa a ogni passo. Una dissolvenza può girare coperta da un altro livello, e chi usa il sito vede solo uno scatto. Lo stesso per gli elementi piccoli (una barra, un pulsante): si guardano ritagliando la loro zona, sull'intera pagina il cambiamento è troppo piccolo per essere misurato.
 
 RESOCONTO
 Alla fine scrivi, in italiano semplice e senza gergo: i bug trovati (cosa vedeva chi usa il sito, dove, la causa in una riga, com'è stato corretto), le transizioni cambiate (com'erano, come sono), cosa hai controllato senza trovare problemi, e cosa resta aperto perché chiede una decisione o non si può provare da qui. Niente «dovrebbe funzionare»: per ogni correzione dici con quale prova l'hai vista funzionare.

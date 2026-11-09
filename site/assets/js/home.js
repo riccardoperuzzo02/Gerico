@@ -592,16 +592,34 @@ G.page("home", async function (P) {
   }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
-  P.on(document, "click", (e) => {
-    document.querySelectorAll(".lead h2, .item h2").forEach((h) => { h.style.viewTransitionName = ""; });
-    const a = e.target.closest("#feed a[data-id]");
+  // (computer) anche l'immagine della scheda diventa quella della storia
+  const nameCard = (a) => {
+    document.querySelectorAll("#feed h2, #feed .media").forEach((el) => { el.style.viewTransitionName = ""; });
     if (!a) return;
     a.closest("h2").style.viewTransitionName = "story-title";
+    // sul telefono la pagina entra intera di lato: lì l'immagine resta nella sua pagina
+    const md = matchMedia("(min-width: 760px)").matches ? a.closest(".lead, .item").querySelector(".media") : null;
+    if (md) md.style.viewTransitionName = "story-img";
+  };
+  P.on(document, "click", (e) => {
+    const a = e.target.closest("#feed a[data-id]");
+    nameCard(a);
+    if (!a) return;
     try { sessionStorage.setItem("gerico.vt", JSON.stringify({ id: a.dataset.id, title: a.textContent, sec: a.dataset.sec })); } catch (err) { /* niente */ }
   });
 
   state.section = sectionFromHash();
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
+  // tornando da una storia, il suo titolo e la sua immagine rifanno il percorso al contrario fino alla scheda
+  try {
+    const m = G.shownBefore && /\/storia(?:\.html)?\?(?:.*&)?id=([^&#]+)/.exec(G.shownBefore);
+    if (m && G.soft) {
+      nameCard($("feed").querySelector('a[data-id="' + CSS.escape(decodeURIComponent(m[1])) + '"]'));
+      // finito il ritorno i nomi si tolgono: un passaggio verso un'altra pagina non deve portarsi dietro quella scheda
+      const pass = window.gericoVT, clear = () => nameCard(null);
+      if (pass && pass.finished) pass.finished.then(clear, clear); else P.later(clear, 1200);
+    }
+  } catch (e) { /* senza la scheda il ritorno è la dissolvenza di sempre */ }
   // passando dal telefono al computer (finestra allargata, tablet girato) le brevi cambiano colonna
   if (wideQ && wideQ.addEventListener) P.on(wideQ, "change", () => renderFeed(true));
   // la colonna di sinistra cambia altezza (caratteri caricati, finestra più larga o più stretta): si rifà il conto

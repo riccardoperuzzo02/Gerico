@@ -141,7 +141,17 @@ G.page("story", async function (P) {
     $("st-body").insertAdjacentHTML("beforeend", rest);
     $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcIntro + srcList + "</section>" : "") + linkedHTML + tagsHTML;
   };
-  const afterPass = () => requestAnimationFrame(() => setTimeout(fill, 0));
+  // quello che arriva a passaggio finito (computer: la colonna delle fonti, il resto sotto) compare con una dissolvenza
+  const late = () => {
+    const had = $("st-body").children.length;
+    fill();
+    if (G.reduced()) return;
+    // solo i pezzi appena arrivati: quello che c'era già non deve lampeggiare
+    [$("side")].concat(Array.from($("st-body").children).slice(had)).forEach((el) => {
+      if (el && el.animate) el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, easing: "ease-out" });
+    });
+  };
+  const afterPass = () => requestAnimationFrame(() => setTimeout(late, 0));
   const pass = window.gericoVT;
   // con lo swipe e sul telefono la pagina entra intera e scorre tutta insieme: il resto deve già esserci nella fotografia
   // della transizione, così nessuna scritta compare dopo. Sul computer il titolo vola e il resto arriva a passaggio finito
@@ -172,6 +182,9 @@ G.page("story", async function (P) {
     const h = $("st-title"), nt = document.querySelector(".next-t");
     if (h) h.style.viewTransitionName = toNext ? "none" : "";
     if (nt) nt.style.viewTransitionName = toNext ? "story-title" : "";
+    // l'immagine di questa storia non diventa quella della prossima: sono due notizie diverse
+    const im = document.querySelector(".st-media");
+    if (im) im.style.viewTransitionName = toNext ? "none" : "";
   };
   P.on(window, "pageswap", (e) => {
     const nt = document.querySelector(".next a[data-id]");

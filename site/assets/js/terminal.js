@@ -266,7 +266,19 @@ G.page("terminal", async function (P) {
     const before = how === "flip" && !G.reduced() && lastRects ? byCode(lastRects) : null;
     // la mappa si ridisegna da capo: se il fuoco della tastiera era su un quadrato, torna sullo stesso (se no si perdeva)
     const ae = document.activeElement, hadFocus = ae && ae.closest && ae.closest("#map") && ae.dataset ? ae.dataset.code : "";
+    // cambiando vista, i quadrati che nella nuova non ci sono restano un attimo come immagine e sfumano (flip)
+    const leaving = before ? Array.from($("map").querySelectorAll(":scope > .tile")).filter((el) => !items.some((x) => x.code === el.dataset.code)).map((el) => el.cloneNode(true)) : [];
     const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel, enter: ixInfo }) || [];
+    if (leaving.length) {
+      const lv = document.createElement("div");
+      lv.className = "t-leave";
+      lv.setAttribute("aria-hidden", "true");
+      lv.inert = true;
+      leaving.forEach((el) => { el.removeAttribute("aria-pressed"); lv.appendChild(el); });
+      $("map").insertBefore(lv, $("map").firstChild);
+      const a = lv.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 240, easing: "cubic-bezier(0.4, 0, 1, 1)", fill: "forwards" });
+      a.finished.then(() => lv.remove(), () => lv.remove());
+    }
     if (hadFocus && !focusSel) { const fb = $("map").querySelector('[data-code="' + hadFocus + '"]'); if (fb) fb.focus({ preventScroll: true }); }
     lastRects = rects;
     const now = byCode(rects);
@@ -590,7 +602,7 @@ G.page("terminal", async function (P) {
     withOrigin(im, "0 0", im.animate([{ transform: "translate(" + (t.left - to.left).toFixed(1) + "px," + (t.top - to.top).toFixed(1) + "px) scale(" + (t.width / to.width).toFixed(4) + "," + (t.height / to.height).toFixed(4) + ")", opacity: 0.4 }, { transform: "none", opacity: 1 }], o));
     const ring = $("inring");
     ring.style.visibility = "hidden";
-    ["inlegend", "indetail", "insum", "inlist"].forEach((id, k) => $(id).animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 380, delay: 180 + k * 40, easing: SNAP, fill: "backwards" }));
+    ["inlegend", "indetail", "insum", "inlist"].forEach((id, k) => $(id).animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 380, delay: 50 + k * 40, easing: SNAP, fill: "backwards" }));
     P.later(() => { g.f.remove(); ring.style.visibility = ""; }, ZOOM + 40);
   }
   function animateOut(before, code) {

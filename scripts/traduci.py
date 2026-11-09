@@ -34,7 +34,7 @@ CAMPI = {
     # prima l'italiano (pochi titoli brevi), poi l'inglese (gli articoli): se il tempo finisce, il grosso continua al giro dopo
     "it": {"calendario": ["title"], "sentiment": ["title"]},
     "en": {
-        "edition": ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle"],
+        "edition": ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle", "label"],
         "brevi": ["title"], "markets": ["summary", "label", "note", "why"], "agenda": ["event", "note"],
         "terminal": ["label", "note"], "titoli": ["why", "risk", "signal", "note"],
     },

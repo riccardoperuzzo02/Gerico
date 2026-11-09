@@ -107,7 +107,7 @@
   // (calendario di Forex Factory, notizie di Yahoo Finance per il tono). Un testo non ancora tradotto resta com'è
   const TR = {
     en: {
-      edition: ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle"],
+      edition: ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle", "label"],
       brevi: ["title"], markets: ["summary", "label", "note", "why"], agenda: ["event", "note"], terminal: ["label", "note"],
       titoli: ["why", "risk", "signal", "note"]
     },

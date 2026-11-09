@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-3">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-4">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -82,6 +82,7 @@
 
 <h2>Il Terminal</h2>
 <p>La mappa del Terminal mostra le principali Borse del mondo. L'area di ogni quadrato è il peso del Paese nell'indice mondiale MSCI ACWI (nella vista Europa, nell'indice MSCI Europe); il colore è la variazione dell'ultima seduta dell'indice principale di quel Paese. Le variazioni arrivano dagli stessi articoli datati usati per i mercati: quando un dato non è verificato, il quadrato resta grigio.</p>
+<p>Toccando di nuovo una Borsa, o il tasto sotto la mappa, si entra nel suo indice: un quadrato per ogni titolo, grande quanto pesa e colorato come va nella seduta; sotto, quanti titoli salgono e quanti scendono, quali hanno spinto o frenato di più l'indice e l'elenco completo. L'elenco dei titoli arriva da Wikipedia e si aggiorna ogni quattro settimane; prezzi e flottante (le azioni che si scambiano davvero) da Yahoo Finance, quattro volte al giorno. Il peso è una stima di GERICO: il valore in Borsa del flottante di ogni titolo sul totale, con il tetto per titolo dove l'indice ne ha uno (AEX, CAC 40, FTSE MIB, SMI). Gli indici ufficiali contano il flottante a modo loro, quindi i pesi veri possono essere un po' diversi. Il Nikkei 225 pesa i titoli in base al prezzo, con dei fattori di correzione che qui non ci sono: lì la grandezza dei quadrati è il valore in Borsa, e la pagina lo dice. Per Corea del Sud, Taiwan e Brasile ci sono una trentina dei titoli più grandi, non tutti. La Cina non c'è: per le azioni cinesi il flottante dei dati gratuiti comprende le quote dello Stato, e banche e petrolio risulterebbero molto più pesanti che nell'indice vero.</p>
 <p>I prezzi in diretta, se li chiedi, arrivano dal widget gratuito di TradingView e hanno un ritardo diverso per ogni mercato.</p>
 <p>Gli altri pannelli del Terminal li prepara un programma che gira sui server di GitHub, non nel tuo browser: la pagina legge solo i file di GERICO.</p>
 <ul>
@@ -140,6 +141,7 @@
 
 <h2>The Terminal</h2>
 <p>The Terminal map shows the world's main stock markets. The area of each square is the country's weight in the MSCI ACWI world index (in the Europe view, in the MSCI Europe index); the colour is the change in the last session of that country's main index. The changes come from the same dated articles used for the markets: when a figure is not verified, the square stays grey.</p>
+<p>Tapping a market again, or the button under the map, opens its index: one square per stock, sized by its weight and coloured by how it is doing in the session; below, how many stocks are up and down, which ones pushed the index up or held it back the most, and the full list. The list of stocks comes from Wikipedia and is refreshed every four weeks; prices and free float (the shares that actually trade) come from Yahoo Finance, four times a day. The weight is GERICO's estimate: each stock's free-float market value over the total, with a cap per stock where the index has one (AEX, CAC 40, FTSE MIB, SMI). Official indices count the free float their own way, so the real weights can be slightly different. The Nikkei 225 weights stocks by price, with correction factors that are not available here: there the size of the squares is market value, and the page says so. For South Korea, Taiwan and Brazil there are about thirty of the largest stocks, not all of them. China is not included: for Chinese shares the free float in free data includes state holdings, and banks and oil companies would weigh far more than in the real index.</p>
 <p>Live prices, if you ask for them, come from TradingView's free widget and have a different delay for each market.</p>
 <p>The other Terminal panels are prepared by a program that runs on GitHub's servers, not in your browser: the page only reads GERICO's files.</p>
 <ul>
@@ -170,7 +172,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261109-3"></script>
-<script src="assets/js/info.js?v=20261109-3"></script>
+<script src="assets/js/common.js?v=20261109-4"></script>
+<script src="assets/js/info.js?v=20261109-4"></script>
 </body>
 </html>

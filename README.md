@@ -47,6 +47,9 @@ una chat a ogni giro. Gli orari del workflow si accendono quando quelle attivit�
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno
 - `terminal.json`: variazioni degli indici della mappa (finché manca `terminal/snapshot` nel database, sono ricavate dai mercati)
 - `weights.json`: pesi della mappa dai factsheet MSCI (documento `terminal/weights` del database), aggiornati una volta al mese
+- `indici/<CODICE>.json`, `indici/elenco.json`: i titoli dentro gli indici della mappa (S&P 500, Nikkei 225, FTSE 100...), con
+  peso stimato e variazione della seduta. Li scrive `scripts/indici.py` a ogni giro di «Dati del Terminal»: l'elenco dei titoli da
+  Wikipedia ogni quattro settimane, flottante e prezzi da Yahoo Finance. Il workflow «Indici» rifà a mano le composizioni
 - `tr/en.json`, `tr/it.json`: le traduzioni, vedi «Due lingue»
 
 I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora

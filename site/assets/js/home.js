@@ -139,6 +139,15 @@ G.page("home", async function (P) {
   // alive: la prima pagina è ancora quella sullo schermo (i momenti liberi del browser non si spengono con la pagina)
   let feedVer = 0, prepTimer = 0, alive = true;
   const prepared = {};
+  // sul computer le brevi stanno nella colonna di destra, sotto i mercati: accanto alle notizie, non dopo
+  const wideQ = window.matchMedia ? matchMedia("(min-width: 1000px)") : null;
+  const brInSide = () => !!(wideQ && wideQ.matches);
+  function renderSideBrevi() {
+    const box = $("side-brevi");
+    if (!box) return;
+    box.innerHTML = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti") : "";
+    $("side").classList.toggle("with-brevi", !!box.innerHTML);
+  }
   function renderFeed(viaTransition) {
     const feed = $("feed");
     feed.classList.remove("swap");
@@ -146,6 +155,7 @@ G.page("home", async function (P) {
     feed.innerHTML = feedMarkup();
     first = false;
     feedVer += 1;
+    renderSideBrevi();
     prepareSoon();
   }
   // il contenuto di un'altra sezione, uguale a quello che disegnerebbe renderFeed: la pagina accanto durante lo swipe
@@ -167,7 +177,7 @@ G.page("home", async function (P) {
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       : '<p class="none">' + G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.") + "</p>";
-    return top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
+    return top + (brInSide() ? "" : breviHTML(bl, all)) + titoliHTML() + pastHTML(past, all) + end;
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
@@ -295,7 +305,7 @@ G.page("home", async function (P) {
   // live: prezzi nuovi a pagina aperta, il riquadro cambia senza ricomparire
   function renderSide(live) {
     const rows = pick();
-    if (!rows.length) { $("side").innerHTML = ""; return; }
+    if (!rows.length) { $("side").innerHTML = '<div id="side-brevi"></div>'; renderSideBrevi(); return; }
     const tr = rows.map(({ it, key }) => {
       const mv = typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it);
       return '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
@@ -303,7 +313,9 @@ G.page("home", async function (P) {
     }).join("");
     $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
       '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
-      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>";
+      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>" +
+      '<div id="side-brevi"></div>';
+    renderSideBrevi();
   }
   // una classe intera senza dati si dice, invece di lasciare il riquadro più corto senza spiegazione
   function gapNote() {
@@ -466,6 +478,8 @@ G.page("home", async function (P) {
   state.section = sectionFromHash();
   if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
+  // passando dal telefono al computer (finestra allargata, tablet girato) le brevi cambiano colonna
+  if (wideQ && wideQ.addEventListener) P.on(wideQ, "change", () => renderFeed(true));
   P.every(renderNext, 30000);
   // prezzi nuovi a pagina aperta: ticker e riquadro Mercati; le sezioni accanto già pronte per lo swipe (che sul telefono
   // contengono il riquadro) si rifanno

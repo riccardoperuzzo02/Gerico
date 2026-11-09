@@ -177,7 +177,7 @@
   };
   // i dati delle pagine principali (pochi kB) si tengono pronti a pagina ferma: andando da una all'altra non si aspetta
   // la rete. Con il risparmio dati attivo no
-  const WARM = ["edition", "markets", "quotes", "agenda", "calendario", "brevi", "audio", "terminal", "weights", "titoli", "titoli-storico"];
+  const WARM = ["edition", "markets", "quotes", "agenda", "calendario", "brevi", "audio", "terminal", "weights", "titoli", "titoli-storico", "indici/elenco"];
   let warmT = 0;
   G.warmData = () => {
     if (navigator.connection && navigator.connection.saveData) return;
@@ -1659,14 +1659,18 @@
     el.innerHTML = rects.map((r, k) => {
       const has = typeof r.chg === "number";
       const cg = has ? G.pct(r.chg) : "";
-      const label = G.tn(r.name) + (r.index ? ", " + r.index : "") + ", " + (has ? cg : G.L("nessun dato oggi", "no data today")) + G.L(", peso ", ", weight ") + G.wt(r.value);
+      // la Borsa scelta, se ha i suoi titoli (Terminal, opts.enter): toccandola di nuovo si entra nell'indice
+      const go = !!(opts.enter && r.code === opts.selected && opts.enter(r.code));
+      const label = G.tn(r.name) + (r.index ? ", " + r.index : "") + ", " + (has ? cg : G.L("nessun dato oggi", "no data today")) + G.L(", peso ", ", weight ") + G.wt(r.value) +
+        (go ? G.L(". Tocca di nuovo per vedere i suoi titoli", ". Tap again to see its stocks") : "");
       let size = r.w >= 170 && r.h >= 110 ? "big" : r.w >= 90 && r.h >= 56 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 22 && r.h >= 14 ? "tiny" : "none";
       let inner = "";
       if (!has) {
         // senza dato: grigio con la sola sigla
         inner = size === "none" ? "" : '<span class="a"><span class="nm">' + r.code + "</span></span>";
       } else if (size === "big") {
-        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
+        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>" +
+          (go ? '<span class="go" aria-hidden="true">' + G.L("Titoli", "Stocks") + " ›</span>" : "");
       } else if (size === "med") {
         inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
       } else if (size === "small") {

@@ -2,7 +2,8 @@ name: Dati del Terminal
 
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR), il calendario economico (Forex Factory)
 # e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno (voce di Gemini, Kokoro di riserva);
-# calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati. Salva i file in site/data
+# calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati; aggiorna i titoli
+# dentro gli indici della mappa (scripts/indici.py). Salva i file in site/data
 # e li pubblica su main, come fanno i giri delle notizie e delle chiusure. Non usa crediti Claude.
 on:
   schedule:
@@ -57,6 +58,13 @@ jobs:
           pip install -q -r scripts/fin_requirements.txt
       - name: Scarica i dati
         run: python scripts/fin_data.py site/data
+      - name: Dentro gli indici della mappa
+        # i titoli di ogni indice con peso e variazione (scripts/indici.py); se non riesce restano i dati di prima
+        continue-on-error: true
+        timeout-minutes: 8
+        env:
+          INDICI_SECONDI: "300"
+        run: python scripts/indici.py site/data
       - name: Riepilogo audio
         env:
           # la voce di Gemini (livello gratuito dell'API); senza chiave, o se il servizio non risponde, legge Kokoro.
@@ -78,6 +86,7 @@ jobs:
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
           if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi
+          if [ -d site/data/indici ]; then git add site/data/indici; fi
           for f in screener/candidati.json site/data/titoli-storico.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done

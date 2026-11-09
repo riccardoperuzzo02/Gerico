@@ -7,7 +7,7 @@ Uso:
 Scrive site/data/indici/<CODICE>.json, un file per Paese della mappa (USA, JPN, GBR...), e site/data/indici/elenco.json
 con gli indici che ci sono. Due lavori:
 - la composizione, una volta ogni 4 settimane per indice (o sempre con INDICI_COMPOSIZIONE=1): l'elenco dei titoli da
-  Wikipedia (per Corea, Taiwan e Cina, che lì non hanno l'elenco, i 30 titoli più grandi, scritti qui sotto) e da
+  Wikipedia (per Corea e Taiwan, che lì non hanno l'elenco, i 30 titoli più grandi, scritti qui sotto) e da
   Yahoo Finance, per ogni titolo, il flottante (le azioni che si scambiano davvero), il settore e la valuta;
 - i prezzi, a ogni giro: l'ultimo prezzo e la variazione della seduta di ogni titolo, con un download solo per indice.
 Il peso di un titolo è flottante per prezzo sul totale dell'indice, come fanno gli indici veri, che però contano il
@@ -59,7 +59,8 @@ INDICI = {
         ("RADL3", "Raia Drogasil"), ("GGBR4", "Gerdau"), ("VBBR3", "Vibra Energia"), ("RDOR3", "Rede D'Or"), ("BBSE3", "BB Seguridade"),
         ("PRIO3", "Prio"), ("SANB11", "Santander Brasil"), ("CMIG4", "Cemig"), ("TIMS3", "TIM Brasil"), ("VIVT3", "Telefônica Brasil"),
         ("KLBN11", "Klabin"), ("LREN3", "Lojas Renner"), ("UGPA3", "Ultrapar"), ("TOTS3", "Totvs"), ("CSAN3", "Cosan")]},
-    # senza l'elenco completo su Wikipedia: i titoli più grandi
+    # senza l'elenco completo su Wikipedia: i titoli più grandi. La Cina no: per le azioni cinesi il flottante dei dati
+    # gratuiti comprende le quote dello Stato, e banche e petrolio peserebbero molte volte più che nel CSI 300 vero
     "KOR": {"index": "Kospi", "suffix": ".KS", "lista": [
         ("005930", "Samsung Electronics"), ("000660", "SK Hynix"), ("373220", "LG Energy Solution"), ("207940", "Samsung Biologics"),
         ("005380", "Hyundai Motor"), ("000270", "Kia"), ("068270", "Celltrion"), ("105560", "KB Financial"), ("055550", "Shinhan Financial"),
@@ -75,15 +76,6 @@ INDICI = {
         ("1301", "Formosa Plastics"), ("2357", "Asustek"), ("3008", "Largan"), ("2884", "E.Sun Financial"), ("2892", "First Financial"),
         ("1216", "Uni-President"), ("2345", "Accton"), ("3231", "Wistron"), ("2395", "Advantech"), ("6669", "Wiwynn"), ("2379", "Realtek"),
         ("3034", "Novatek"), ("2327", "Yageo"), ("5880", "Taiwan Cooperative Financial"), ("2885", "Yuanta Financial"), ("2603", "Evergreen Marine")]},
-    "CHN": {"index": "CSI 300", "suffix": "", "lista": [
-        ("600519.SS", "Kweichow Moutai"), ("300750.SZ", "CATL"), ("601318.SS", "Ping An Insurance"), ("600036.SS", "China Merchants Bank"),
-        ("000858.SZ", "Wuliangye"), ("601166.SS", "Industrial Bank"), ("600900.SS", "China Yangtze Power"), ("000333.SZ", "Midea"),
-        ("601899.SS", "Zijin Mining"), ("600276.SS", "Jiangsu Hengrui"), ("601398.SS", "ICBC"), ("601288.SS", "Agricultural Bank of China"),
-        ("601988.SS", "Bank of China"), ("601857.SS", "PetroChina"), ("600030.SS", "CITIC Securities"), ("002594.SZ", "BYD"),
-        ("300059.SZ", "East Money"), ("600309.SS", "Wanhua Chemical"), ("000651.SZ", "Gree Electric"), ("601012.SS", "LONGi"),
-        ("300760.SZ", "Mindray"), ("002415.SZ", "Hikvision"), ("600887.SS", "Yili"), ("601328.SS", "Bank of Communications"),
-        ("600028.SS", "Sinopec"), ("601088.SS", "China Shenhua"), ("600050.SS", "China Unicom"), ("601628.SS", "China Life"),
-        ("000001.SZ", "Ping An Bank"), ("002475.SZ", "Luxshare")]},
 }
 
 
@@ -126,7 +118,7 @@ def norm_cur(cur):
 
 SUFFISSI = re.compile(r"(?:,?\s+(?:inc\.?|incorporated|corporation|corp\.?|company|co\.?|plc|p\.l\.c\.|s\.p\.a\.?|spa|ag|se|n\.v\.?|nv|"
                       r"s\.a\.?|sa|ltd\.?|limited|holdings?|group|co\.,?\s*ltd\.?|kgaa|& co\.?|oyj|asa|ab|a/s|s\.a\.b\. de c\.v\.|"
-                      r"reit|trust|corp\.,? ltd\.?|ltd\.,?))+$", re.I)
+                      r"reit|trust|corp\.,? ltd\.?|ltd\.,?|l\.?p\.?))+$", re.I)
 
 
 # nomi che senza la forma societaria non si riconoscono più
@@ -144,6 +136,10 @@ def breve(nome):
         prima = n
         n = SUFFISSI.sub("", n).strip(" ,.")
     n = re.sub(r"^the\s+", "", n, flags=re.I)
+    # «Lilly (Eli)» -> «Eli Lilly», «Smucker (J.M.)» -> «J.M. Smucker»
+    m = re.match(r"^(.+?)\s+\(([^()]{1,12})\)$", n)
+    if m:
+        n = m.group(2) + " " + m.group(1)
     if n.isupper() and " " in n and len(n) > 6:
         n = n.title()
     n = NOMI.get(n, n)
@@ -192,11 +188,14 @@ def da_wikipedia(conf):
     import pandas as pd
     html = pagina(conf["wiki"])
     if conf.get("tyo"):
-        # il Nikkei 225 su Wikipedia è un elenco: «Canon Inc. (TYO: 7751)»
-        testo = H.unescape(re.sub(r"<[^>]+>", "", re.sub(r"<(?:/li|br\s*/?|/p|/tr|/td|/dd)>", "\n", html, flags=re.I)))
+        # il Nikkei 225 su Wikipedia è un elenco: «<a>Canon Inc.</a> (<a>TYO</a>: 7751)». Il nome è il testo del
+        # collegamento subito prima; senza collegamento, il testo prima della parentesi (l'ultima parte della frase)
         out = {}
+        for m in re.finditer(r"<a [^>]*>([^<]{2,80})</a>\s*\(\s*(?:<a [^>]*>)?\s*(?:TYO|TSE)\s*(?:</a>)?\s*:\s*(?:<a [^>]*>)?\s*([0-9]{3}[0-9A-Z])\b", html):
+            out.setdefault(m.group(2) + conf["suffix"], H.unescape(m.group(1)).strip())
+        testo = H.unescape(re.sub(r"<[^>]+>", "", re.sub(r"<(?:/li|br\s*/?|/p|/tr|/td|/dd)>", "\n", html, flags=re.I)))
         for m in re.finditer(r"([^\n()]{2,90}?)\s*\(\s*(?:TYO|TSE)\s*:\s*([0-9]{3}[0-9A-Z])\s*\)", testo):
-            out.setdefault(m.group(2) + conf["suffix"], m.group(1).strip(" ,;·•-"))
+            out.setdefault(m.group(2) + conf["suffix"], re.split(r",\s+|\s+is\s+|\.\s+", m.group(1).strip(" ,;·•-"))[-1])
         return list(out.items())
     viste = []
     for t in pd.read_html(io.StringIO(html), flavor="lxml"):
@@ -327,6 +326,12 @@ def composizione(yf, code, conf, prima):
         items.append(it)
     if len(items) < 10:
         raise RuntimeError(f"dati di Yahoo per pochi titoli ({len(items)} su {len(elenco)})")
+    doppi = {k for k, v in Counter(x["n"] for x in items).items() if v > 1}
+    if doppi:
+        grezzi = dict(elenco)
+        for x in items:
+            if x["n"] in doppi and grezzi.get(x["s"]):
+                x["n"] = re.sub(r"\s*\[[^\]]*\]|[.,]+$", "", grezzi[x["s"]]).strip()
     metodo = "prezzo" if paf else "quota" if conf.get("nikkei") else "flottante" if flott >= 0.7 * len(items) else "capitalizzazione"
     print(f"  {code} {conf['index']}: {len(items)} titoli su {len(elenco)} nell'elenco ({fonte}), pesi: {metodo}"
           f"{f', fattori Nikkei per {nik}' if paf else f', flottante per {flott}'}, valuta {main}, {time.monotonic() - t:.0f} s")

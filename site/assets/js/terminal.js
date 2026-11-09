@@ -10,19 +10,57 @@ G.page("terminal", async function (P) {
   tick();
   P.every(tick, 30000);
 
-  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti)
+  // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti).
+  // Dentro un indice i titoli si muovono di più: la stessa barra va da −2% a +2%
   const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
-  $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
-    '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
+  const legendHTML = (k) => '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
+    '<span class="t-ticks"><span style="left:16.67%">−' + k + '%</span><span style="left:50%">0</span><span style="left:83.33%">+' + k + "%</span></span></span>" +
     '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>' + G.L("nessun dato", "no data") + "</span>" +
-    '<span class="sr-only">' + G.L("Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c'è il dato.",
-      "Red if the market fell, green if it rose: the stronger the colour, the bigger the move, up to 1% or more. Grey if there is no data today.") + "</span>";
+    '<span class="sr-only">' + (k === 1 ? G.L("Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c'è il dato.",
+      "Red if the market fell, green if it rose: the stronger the colour, the bigger the move, up to 1% or more. Grey if there is no data today.")
+      : G.L("Rosso se il titolo è sceso, verde se è salito: più è intenso, più è ampia la variazione, fino a 2% o più. Grigio se non c'è il dato.",
+        "Red if the stock fell, green if it rose: the stronger the colour, the bigger the move, up to 2% or more. Grey if there is no data.")) + "</span>";
+  $("legend").innerHTML = legendHTML(1);
+  $("inlegend").innerHTML = legendHTML(2);
 
-  // la colonna di lato compare con i dati (più sotto); se qualcosa si rompe prima, compare comunque
-  const showSide = () => { const side = document.querySelector(".t-side"); if (side) side.classList.add("ready"); };
+  // ---------- computer: due colonne, ognuna con i suoi pannelli uno sotto l'altro ----------
+  // Le righe della griglia sono di 4 pixel (CSS .t-board.packed): ogni pannello ne occupa quante è alto, più lo spazio
+  // tra i pannelli, e sta subito sotto quello prima nella sua colonna. Prima di un pannello largo quanto la pagina (la
+  // macro) l'ultimo pannello della colonna più corta si allunga fino all'altra, se mancano pochi pixel: nessun buco.
+  // Si rifà quando un pannello cambia altezza (dati arrivati, un indice aperto, una riga aperta). Sul telefono i
+  // pannelli stanno uno sotto l'altro e non serve.
+  const board = $("main"), wideQ = window.matchMedia ? matchMedia("(min-width: 1000px)") : null, U = 4;
+  function pack() {
+    const on = !!(wideQ && wideQ.matches), ps = Array.from(board.querySelectorAll(":scope > .t-panel")).filter((p) => !p.hidden);
+    board.classList.toggle("packed", on);
+    // prima tutte le scritture, poi tutte le letture: un solo ricalcolo della pagina
+    ps.forEach((p) => { p.style.alignSelf = ""; p.style.marginBottom = ""; if (!on) p.style.gridRowEnd = ""; });
+    if (!on) return;
+    const gap = parseFloat(getComputedStyle(board).columnGap) || 21;
+    const m = ps.map((p) => { const cs = getComputedStyle(p); return { p, rows: Math.max(1, Math.ceil((p.offsetHeight + gap) / U)), c: cs.gridColumnEnd === "-1" ? -1 : cs.gridColumnStart === "2" ? 1 : 0 }; });
+    let h = [0, 0], last = [null, null];
+    m.forEach((x) => {
+      if (x.c >= 0) { h[x.c] += x.rows; last[x.c] = x; return; }
+      const s = h[0] < h[1] ? 0 : 1, d = Math.abs(h[0] - h[1]);
+      if (d && last[s] && d * U <= 320) { last[s].rows += d; last[s].grow = true; }
+      h = [Math.max(h[0], h[1]) + x.rows, Math.max(h[0], h[1]) + x.rows];
+      last = [null, null];
+    });
+    m.forEach((x) => {
+      x.p.style.gridRowEnd = "span " + x.rows;
+      if (x.grow) { x.p.style.alignSelf = "stretch"; x.p.style.marginBottom = gap + "px"; }
+    });
+  }
+  // nella stessa fase del ridimensionamento: i pannelli sotto si spostano nello stesso fotogramma
+  if (window.ResizeObserver) { const ro = P.keep(new ResizeObserver(pack)); board.querySelectorAll(":scope > .t-panel").forEach((p) => ro.observe(p)); }
+  if (wideQ && wideQ.addEventListener) P.on(wideQ, "change", pack);
+  pack();
+
+  // tassi e agenda compaiono con i dati (più sotto); se qualcosa si rompe prima, compaiono comunque
+  const showSide = () => { board.classList.add("ready"); };
   P.later(showSide, 2000);
   // anche le quotazioni del job: alla mappa servono per le Borse che mancano nella pubblicazione (è un file piccolo)
-  const [ed, mk0, ag, tm, wt, qtFirst, ff] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes"), G.load("calendario")]);
+  const [ed, mk0, ag, tm, wt, qtFirst, ff, idxList] = await Promise.all([G.load("edition"), G.load("markets"), G.load("agenda"), G.load("terminal"), G.load("weights"), G.load("quotes"), G.load("calendario"), G.load("indici/elenco")]);
   // i numeri delle tabelle: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
   // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, in fondo)
   let qt0 = qtFirst, mk = G.withQuotes(mk0, qt0);
@@ -41,7 +79,11 @@ G.page("terminal", async function (P) {
     return stories.find((s) => (s.tags || []).includes(country)) || null;
   }
   // il dettaglio della Borsa scelta: lo stesso markup per la pagina e per la vista accanto durante lo swipe
-  function renderDetail(items) { $("detail").innerHTML = detailHTML(items, state.sel, state.view); }
+  function renderDetail(items) {
+    $("detail").innerHTML = detailHTML(items, state.sel, state.view);
+    const c = state.sel;
+    if (ixInfo(c) && !(navigator.connection && navigator.connection.saveData)) P.later(() => { if (state.sel === c && !inside.code) G.load("indici/" + c); }, 700);
+  }
   function detailHTML(items, sel, view) {
     const it = items.find((x) => x.code === sel);
     if (!it) return "<p>" + G.L("Tocca un quadrato per vedere il dettaglio.", "Tap a square to see the details.") + "</p>";
@@ -58,6 +100,11 @@ G.page("terminal", async function (P) {
     else if (it.time) html += "<p>" + G.L("Dato delle ", "Data at ") + esc(it.time) + ".</p>";
     const s = linkedStory(it.code);
     if (s) html += "<p>" + G.L("Storia collegata: ", "Related story: ") + '<a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
+    const ix = ixInfo(it.code);
+    if (ix) {
+      html += '<p class="t-inopen"><button type="button" class="t-btn t-inbtn" data-inside="' + it.code + '">' + G.L("Dentro ", "Inside ") + esc(theIx(ix.index)) +
+        "<small>" + ix.n + G.L(" titoli", " stocks") + '</small><span class="ar" aria-hidden="true">›</span></button></p>';
+    }
     return html;
   }
   // sotto la mappa solo le Borse con il quadrato troppo piccolo per scriverci la variazione (le altre si leggono già nel
@@ -216,7 +263,7 @@ G.page("terminal", async function (P) {
     const items = G.mapItems(wt, tm, state.view, qt0);
     state.sel = selIn(items, state.sel);
     const before = how === "flip" && !G.reduced() && lastRects ? byCode(lastRects) : null;
-    const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel }) || [];
+    const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel, enter: ixInfo }) || [];
     lastRects = rects;
     const now = byCode(rects);
     if (firstDraw) {
@@ -238,7 +285,7 @@ G.page("terminal", async function (P) {
     }
     if (before) flip(before, now);
     placeRing(!how, now);
-    $("map-sub").textContent = subText(state.view);
+    if (!inside.code) $("map-sub").textContent = subText(state.view);
     $("vals").innerHTML = valsHTML(items, state.sel, rects);
     document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === state.view)));
     requestAnimationFrame(() => G.seg(document.querySelector(".t-seg")));
@@ -249,6 +296,7 @@ G.page("terminal", async function (P) {
   let mapSwipe = null, mapPrep = null;
   // toccando l'interruttore i quadrati si spostano da una vista all'altra; sotto, valori e dettaglio cambiano altezza piano
   function setView(v) {
+    if (inside.code) leave();
     if (v === state.view) return;
     if (mapSwipe) mapSwipe.finish();
     const mv = $("mapview"), h0 = mv.offsetHeight;
@@ -259,6 +307,7 @@ G.page("terminal", async function (P) {
   const pickTile = (e) => {
     const b = e.target.closest("[data-code]");
     if (!b) return;
+    if (b.dataset.code === state.sel && ixInfo(b.dataset.code)) { enter(b.dataset.code, { push: true }); return; }
     const mv = $("mapview"), h0 = mv.offsetHeight;
     state.sel = b.dataset.code;
     G.ls.set("gerico.mapSel", state.sel);
@@ -267,6 +316,7 @@ G.page("terminal", async function (P) {
   };
   $("map").addEventListener("click", pickTile);
   $("vals").addEventListener("click", pickTile);
+  $("detail").addEventListener("click", (e) => { const b = e.target.closest("[data-inside]"); if (b) enter(b.dataset.inside, { push: true }); });
   document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
   let size = "";
   if (window.ResizeObserver) {
@@ -278,6 +328,390 @@ G.page("terminal", async function (P) {
         if (now !== size) { size = now; drawMap(false); }
       }, 100);
     })).observe($("map"));
+  }
+
+  // ---------- dentro l'indice: i titoli, quanto pesano e come vanno ----------
+  // Dal dettaglio di una Borsa, o toccando di nuovo il suo quadrato, la mappa entra nell'indice: un quadrato per titolo,
+  // grande quanto pesa, colorato come va. Sotto: quanti salgono e quanti scendono, chi ha spinto e chi ha frenato
+  // l'indice, l'elenco dei titoli. I dati sono di scripts/indici.py (job «Dati del Terminal», quattro volte al giorno):
+  // elenco dei titoli da Wikipedia, flottante e prezzi da Yahoo Finance. L'indirizzo diventa #indice-USA: il tasto
+  // indietro, anche il gesto dal bordo di iOS, torna alla mappa delle Borse.
+  const inside = { code: "", d: null, sel: "", sort: "peso", all: false, rects: [], mapIndex: "" };
+  const mapTitle = $("map-h").textContent;
+  const SECTOR_IT = { Technology: "Tecnologia", "Financial Services": "Finanza", Healthcare: "Salute", "Consumer Cyclical": "Consumi ciclici",
+    "Communication Services": "Comunicazioni", Industrials: "Industria", "Consumer Defensive": "Consumi di base", Energy: "Energia",
+    "Basic Materials": "Materiali", "Real Estate": "Immobiliare", Utilities: "Servizi pubblici" };
+  const sectorName = (x) => (G.en ? x : SECTOR_IT[x] || x);
+  const CUR = { USD: "$", EUR: "€", GBp: "p", GBX: "p", GBP: "£", JPY: "¥", CHF: "CHF", INR: "₹", CAD: "C$", BRL: "R$", KRW: "₩", TWD: "NT$", CNY: "¥" };
+  // «348,59 $» in italiano, «$348.59» in inglese (pence: «1.234 p», «1,234p»)
+  const stockPrice = (x, d) => {
+    if (typeof x.p !== "number") return "";
+    const v = G.num(x.p, x.p >= 1000 ? 0 : 2), c = CUR[x.k || d.cur] || x.k || d.cur || "";
+    return !G.en ? v + " " + c : c === "p" ? v + "p" : /^[A-Z]{3}$/.test(c) ? c + " " + v : c + v;
+  };
+  const hasC = (x) => typeof x.c === "number";
+  const upDown = (v) => (v > 0 ? "t-up" : v < 0 ? "t-down" : "");
+  // pesi piccoli con tre decimali (0,052%), contributi piccoli anche
+  const wtS = (w) => G.num(w, w >= 10 ? 1 : w >= 0.1 ? 2 : 3) + "%";
+  const pts = (v) => G.signed(v, Math.abs(v) >= 0.01 ? 2 : 3);
+  const ptsLong = (v) => (Math.abs(v) < 0.0005 ? G.L("quasi nullo", "close to zero") : pts(v) + G.L(" punti", " pp"));
+  // il nome corto: la prima parola, o le prime due se la prima è corta («Banco BPM»)
+  const firstWord = (n) => { const w = String(n || "").split(/\s+/); return w[0].length >= 4 || w.length < 2 ? w[0] : w[0] + " " + w[1]; };
+  // nei quadrati piccoli la sigla, o il nome dove la sigla è un numero (Giappone, Corea, Taiwan)
+  const stockTag = (x) => (/^\d/.test(x.t || "") ? firstWord(x.n) : x.t || x.s);
+  function ixInfo(code) { return (idxList && idxList.indici && idxList.indici[code]) || null; }
+  // «l'S&P 500», «il DAX»; «dell'AEX», «del FTSE MIB»
+  const vowel = (n) => /^(S&P|SMI|AEX|[AEIOU])/i.test(n);
+  function theIx(n) { return G.en ? "the " + n : (vowel(n) ? "l'" : "il ") + n; }
+  const ofIx = (n) => (G.en ? "the " + n : (vowel(n) ? "dell'" : "del ") + n);
+  const viewName = () => (state.view === "europa" ? G.L("Europa", "Europe") : G.L("Mondo", "World"));
+  const isToday = (d) => !!d && d.date === G.dayKey(new Date());
+  const quota = (d) => !!d && d.metodo === "quota";
+  const weightWord = (d) => (quota(d) ? G.L("quota", "share") : G.L("peso", "weight"));
+  const hashCode = () => { const m = /^#ind(?:ice|ex)-([A-Z]{3})$/.exec(location.hash); return m ? m[1] : ""; };
+
+  // il primo testo che ci sta nel quadrato: misurato con il carattere vero (rem: grandezza del testo, room: spazio in pixel)
+  const meas = document.createElement("canvas").getContext("2d");
+  let REM = 16, FAM = "sans-serif";
+  const fit = (texts, rem, room, weight) => texts.find((t) => {
+    if (!t) return false;
+    meas.font = (weight || 700) + " " + rem * REM + "px " + FAM;
+    return meas.measureText(t).width <= room;
+  }) || "";
+  // i quadrati: tutti i titoli, tranne la coda di quelli che verrebbero più piccoli di 6 × 6 pixel, uniti in uno
+  function stockTiles(d, W, H) {
+    const xs = d.items;
+    let n = xs.length;
+    while (n > 10 && (xs[n - 1].w / 100) * W * H < 36) n -= 1;
+    const tile = (x) => ({ code: x.s, st: x, value: x.w, chg: hasC(x) ? x.c : null });
+    const tiles = xs.slice(0, n).map(tile), rest = xs.slice(n);
+    if (rest.length === 1) tiles.push(tile(rest[0]));
+    else if (rest.length) {
+      const rc = rest.filter(hasC), sw = rc.reduce((a, x) => a + x.w, 0);
+      tiles.push({ code: "_altri", rest, value: rest.reduce((a, x) => a + x.w, 0), chg: sw ? rc.reduce((a, x) => a + x.w * x.c, 0) / sw : null });
+    }
+    return tiles;
+  }
+  function drawStocks(el, d, sel) {
+    const W = el.clientWidth, H = el.clientHeight;
+    if (!W || !H) return [];
+    const rects = G.squarify(stockTiles(d, W, H), W, H), ww = weightWord(d);
+    REM = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+    FAM = getComputedStyle(el).fontFamily || FAM;
+    el.innerHTML = rects.map((r) => {
+      const has = typeof r.chg === "number", cg = has ? G.pct(r.chg) : "", x = r.st, rest = r.rest;
+      const size = r.w >= 150 && r.h >= 92 ? "big" : r.w >= 80 && r.h >= 50 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 24 && r.h >= 14 ? "tiny" : "none";
+      const name = rest ? G.L("Altri ", "Other ") + rest.length : x.n, tag = rest ? G.L("Altri", "Other") : stockTag(x);
+      // nei quadrati medi il nome, se ci sta, poi la prima parola, poi la sigla; in quelli piccoli la sigla solo se ci sta intera
+      const num = !rest && /^\d/.test(x.t || "");
+      const med = rest ? name : fit([x.n, firstWord(x.n), num ? "" : x.t], 0.875, r.w - 18) || (num ? firstWord(x.n) : x.t);
+      const nm = (t) => (t ? '<span class="a"><span class="nm">' + esc(t) + "</span></span>" : "");
+      // la variazione può arrivare fino al bordo del quadrato (il nome no: ha i puntini)
+      const b = (rem, pad) => (has && fit([cg], rem, r.w - pad, 750) ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
+      const inner = size === "big" ? '<span class="a"><span class="nm">' + esc(name) + '</span><span class="ix">' + esc(rest ? G.L("i più piccoli", "the smallest") : x.t + " · " + wtS(x.w)) + "</span></span>" + b(2, 14)
+        : size === "med" ? nm(med) + b(1.125, 12)
+        : size === "small" ? nm(fit([tag], 0.75, r.w - 15)) + b(0.75, 9)
+        : size === "tiny" ? nm(fit([tag], 0.625, r.w - 13)) : "";
+      const label = rest
+        ? G.L("Altri ", "Other ") + rest.length + G.L(" titoli, i più piccoli", " stocks, the smallest") + (has ? G.L(", in media ", ", on average ") + cg : "") + ", " + ww + " " + wtS(r.value)
+        : x.n + ", " + x.t + ", " + (has ? cg : G.L("nessun dato", "no data")) + ", " + ww + " " + wtS(x.w);
+      // i titoli si muovono più delle Borse: la stessa scala di colori, larga il doppio (fino a ±2%)
+      const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(has ? r.chg / 2 : null);
+      return '<button type="button" class="tile ' + size + (has ? "" : " nodata") + '" data-code="' + esc(r.code) + '" aria-pressed="' + (r.code === sel) + '" aria-label="' + esc(label) + '" style="' + style + '">' + inner + "</button>";
+    }).join("");
+    return rects;
+  }
+  // l'anello sul titolo scelto; se è nella coda dei più piccoli, sul quadrato che li tiene
+  function placeInRing(instant) {
+    const ring = $("inring"), rs = inside.rects;
+    const r = rs.find((t) => t.code === inside.sel) || rs.find((t) => t.rest && t.rest.some((x) => x.s === inside.sel));
+    if (!r) { ring.style.opacity = "0"; ring.parentElement.classList.remove("has-ring"); return; }
+    if (instant) ring.classList.remove("ready");
+    ring.style.left = r.x + "px"; ring.style.top = r.y + "px"; ring.style.width = r.w + "px"; ring.style.height = r.h + "px";
+    ring.style.opacity = "1";
+    ring.parentElement.classList.add("has-ring");
+    if (instant) { void ring.offsetWidth; ring.classList.add("ready"); }
+  }
+  function stockDetail(d) {
+    const r = inside.rects.find((t) => t.code === inside.sel);
+    if (r && r.rest) {
+      return "<p>" + G.L("Gli altri ", "The other ") + r.rest.length + G.L(" titoli, i più piccoli: insieme ", " stocks, the smallest: together ") + (quota(d) ? G.L("valgono il ", "they make up ") : G.L("pesano il ", "they weigh ")) + wtS(r.value) +
+        (typeof r.chg === "number" ? G.L(", in media ", ", on average ") + '<b class="' + upDown(r.chg) + '">' + G.pct(r.chg) + "</b>" : "") + G.L(". Sono tutti nell'elenco qui sotto.", ". They are all in the list below.") + "</p>";
+    }
+    const x = r ? r.st : d.items.find((s) => s.s === inside.sel);
+    if (!x) return "<p>" + G.L("Tocca un quadrato per vedere il titolo: quanto pesa e come va.", "Tap a square to see the stock: its weight and how it is doing.") + "</p>";
+    const day = isToday(d) ? G.L("oggi", "today") : G.L("nella seduta del ", "in the session of ") + G.dayOnly(d.date);
+    const cg = hasC(x) ? '<b class="' + upDown(x.c) + '">' + G.pct(x.c) + "</b> " + day : G.cap(G.L("nessun dato ", "no data ") + day);
+    let html = "<p><b>" + esc(x.n) + "</b> · " + esc(x.t) + (x.x ? " · " + esc(sectorName(x.x)) : "") + "</p>";
+    html += "<p>" + cg + " · " + weightWord(d) + " " + wtS(x.w) + (hasC(x) && !quota(d) ? " · " + G.L("contributo all'indice ", "contribution to the index ") + ptsLong((x.w * x.c) / 100) : "") + "</p>";
+    const pr = stockPrice(x, d);
+    if (pr) html += "<p>" + G.L("Ultimo prezzo ", "Last price ") + esc(pr) + (x.d ? G.L(", del ", ", of ") + esc(G.dayOnly(x.d)) : "") + ".</p>";
+    return html;
+  }
+  // quanti salgono e quanti scendono; chi ha spinto e chi ha frenato l'indice (peso per variazione)
+  function insideSummary(d) {
+    const wc = d.items.filter(hasC);
+    if (!wc.length) return '<p class="t-na">' + G.L("Non ci sono ancora i prezzi dei titoli di questa seduta.", "There are no stock prices for this session yet.") + "</p>";
+    const up = wc.filter((x) => x.c > 0).length, dn = wc.filter((x) => x.c < 0).length, fl = wc.length - up - dn, nd = d.items.length - wc.length;
+    const bar = (k, n) => (n ? '<i class="' + k + '" style="width:' + ((n / wc.length) * 100).toFixed(2) + '%"></i>' : "");
+    let html = '<div class="t-breadth"><p>' + (isToday(d) ? G.L("Oggi: ", "Today: ") : G.L("Seduta del ", "Session of ") + esc(G.dayOnly(d.date)) + ": ") +
+      '<b class="t-up">' + up + G.L(" in rialzo", " up") + '</b>, <b class="t-down">' + dn + G.L(" in ribasso", " down") + "</b>" +
+      (fl ? ", " + fl + (fl === 1 ? G.L(" invariato", " unchanged") : G.L(" invariati", " unchanged")) : "") + (nd ? ", " + nd + G.L(" senza dato", " without data") : "") + "</p>" +
+      '<span class="t-bbar" aria-hidden="true">' + bar("up", up) + bar("fl", fl) + bar("dn", dn) + "</span></div>";
+    if (quota(d)) return html;
+    const con = wc.map((x) => ({ x, v: (x.w * x.c) / 100 }));
+    const top = con.filter((a) => a.v > 0).sort((a, b) => b.v - a.v).slice(0, 3);
+    const bot = con.filter((a) => a.v < 0).sort((a, b) => a.v - b.v).slice(0, 3);
+    const line = (lab, arr) => (!arr.length ? "" : '<div class="t-contrib"><p class="l">' + lab + "</p>" + arr.map((a) =>
+      '<button type="button" class="t-pick" data-stock="' + esc(a.x.s) + '"><span>' + esc(a.x.n) + '</span><b class="' + upDown(a.v) + '">' + pts(a.v) + "</b></button>").join("") + "</div>");
+    html += line(G.L("Hanno spinto di più l'indice", "Pushed the index up the most"), top) + line(G.L("L'hanno frenato di più", "Held it back the most"), bot);
+    if (top.length || bot.length) html += '<p class="t-note">' + G.L("In punti percentuali dell'indice: il peso del titolo per la sua variazione, una stima.", "In percentage points of the index: the stock's weight times its move, an estimate.") + "</p>";
+    return html;
+  }
+  const SORTS = [["peso", G.L("Per peso", "By weight")], ["su", G.L("In rialzo", "Gainers")], ["giu", G.L("In ribasso", "Losers")]];
+  function sorted(d) {
+    const xs = d.items.slice();
+    if (inside.sort === "su") xs.sort((a, b) => (hasC(b) ? b.c : -1e9) - (hasC(a) ? a.c : -1e9));
+    else if (inside.sort === "giu") xs.sort((a, b) => (hasC(a) ? a.c : 1e9) - (hasC(b) ? b.c : 1e9));
+    return xs;
+  }
+  function stockRow(x, d) {
+    const pr = stockPrice(x, d);
+    const stats = [x.x ? [G.L("Settore", "Sector"), sectorName(x.x)] : null, pr ? [G.L("Ultimo prezzo", "Last price"), pr] : null,
+      hasC(x) && !quota(d) ? [G.L("Contributo", "Contribution"), ptsLong((x.w * x.c) / 100)] : null].filter(Boolean);
+    const body = '<div class="q-more">' + (stats.length ? '<dl class="q-stats">' + stats.map(([k, v]) => "<div><dt>" + k + "</dt><dd>" + esc(v) + "</dd></div>").join("") + "</dl>" : "") +
+      '<p class="t-note">' + (x.d ? G.L("Prezzo del ", "Price of ") + esc(G.dayOnly(x.d)) + ". " : "") + ext("https://finance.yahoo.com/quote/" + encodeURIComponent(x.s), G.L("Vedi su Yahoo Finance", "See on Yahoo Finance")) + "</p></div>";
+    return '<li class="q" data-stock="' + esc(x.s) + '">' + opener("q-row st", '<span class="q-n">' + esc(x.n) + "<small>" + esc(x.t) + "</small></span>" +
+      '<span class="q-v">' + wtS(x.w) + '</span><span class="q-c ' + (hasC(x) ? upDown(x.c) : "") + '">' + (hasC(x) ? G.pct(x.c) : ND) + "</span>", body) + "</li>";
+  }
+  // venti righe; tutte se l'indice è piccolo o se si chiede
+  function rowsHTML(d) {
+    const xs = sorted(d), lim = inside.all || xs.length <= 40 ? xs.length : 20;
+    return { rows: xs.slice(0, lim).map((x) => stockRow(x, d)).join(""),
+      more: lim < xs.length ? '<button type="button" class="t-btn" data-all="1">' + G.L("Mostra tutti i ", "Show all ") + xs.length + G.L(" titoli", " stocks") + "</button>" : "" };
+  }
+  function methodNote(d) {
+    const parts = [];
+    if (quota(d)) parts.push(G.L("Il Nikkei 225 pesa i titoli in base al prezzo, con dei fattori di correzione che qui non ci sono: la grandezza dei quadrati è il valore in Borsa del flottante di ogni titolo, non il suo peso ufficiale.",
+      "The Nikkei 225 weights stocks by price, with correction factors that are not available here: the size of each square is the stock's free-float market value, not its official weight."));
+    else if (d.metodo === "prezzo") parts.push(G.L("Il Nikkei 225 pesa i titoli in base al prezzo: qui il peso è il prezzo per il fattore di correzione di Nikkei, sul totale.", "The Nikkei 225 weights stocks by price: here the weight is the price times Nikkei's adjustment factor, over the total."));
+    else {
+      parts.push(G.L("Pesi stimati da GERICO: il valore in Borsa " + (d.metodo === "flottante" ? "del flottante (le azioni che si scambiano) " : "") + "di ogni titolo sul totale" + (d.tetto ? ", con il tetto del " + d.tetto + "% per titolo che ha anche l'indice" : "") + ".",
+        "Weights estimated by GERICO: each stock's " + (d.metodo === "flottante" ? "free-float " : "") + "market value over the total" + (d.tetto ? ", with the index's own " + d.tetto + "% cap per stock" : "") + "."));
+      parts.push(G.L("L'indice ufficiale conta il flottante a modo suo: i pesi veri possono essere un po' diversi.", "The official index counts the free float its own way: the real weights can be slightly different."));
+    }
+    if (d.top) parts.push(G.L("Qui ci sono " + d.top + " dei titoli più grandi, non tutti: il peso è sul loro totale.", "Only " + d.top + " of the largest stocks are here: the weight is on their total."));
+    if (inside.mapIndex && inside.mapIndex !== d.index) parts.push(G.L("La mappa mostra " + theIx(inside.mapIndex) + "; qui ci sono i titoli " + ofIx(d.index) + ", i più grandi.", "The map shows " + theIx(inside.mapIndex) + "; these are the stocks of " + theIx(d.index) + ", the largest ones."));
+    parts.push(G.L("Elenco dei titoli: ", "List of stocks: ") + (d.fonte === "Wikipedia" ? "Wikipedia" : G.L("scelto da GERICO", "chosen by GERICO")) + G.L(", aggiornato il ", ", updated ") + G.day(d.pesiAsOf) + G.L(". Prezzi e flottante: Yahoo Finance.", ". Prices and free float: Yahoo Finance."));
+    return '<p class="t-note t-inmethod">' + esc(parts.join(" ")) + "</p>";
+  }
+  const backRow = () => '<p class="t-backrow"><button type="button" class="t-btn" data-leave="1">‹ ' + G.L("Torna alla mappa: ", "Back to the map: ") + viewName() + "</button></p>";
+  function insideList(d) {
+    const n = d.items.length, r = rowsHTML(d);
+    return '<div class="t-headrow t-inhead"><h3>' + (d.top ? G.L(n + " titoli tra i più grandi", n + " of the largest stocks") : G.L("I " + n + " titoli", "The " + n + " stocks")) + "</h3>" +
+      '<div class="seg seg-fill t-seg t-sort" role="group" aria-label="' + G.L("Ordine dell'elenco", "List order") + '">' +
+      SORTS.map(([k, l]) => '<button type="button" data-sort="' + k + '" aria-pressed="' + (k === inside.sort) + '">' + l + "</button>").join("") + "</div></div>" +
+      '<p class="q-head st" aria-hidden="true"><span>' + G.L("Titolo", "Stock") + "</span><span>" + (quota(d) ? G.L("Quota", "Share") : G.L("Peso", "Weight")) + "</span><span>" + (isToday(d) ? G.L("Oggi", "Today") : esc(G.dayOnly(d.date))) + "</span></p>" +
+      '<ul class="q-list st" id="inrows">' + r.rows + '</ul><p class="t-morebtn" id="inmore">' + r.more + "</p>" + methodNote(d) + backRow();
+  }
+  // titolo del pannello, riga sotto e ora dei dati: quelli dell'indice
+  function insideHeader(d, code) {
+    const ix = d ? d.index : (ixInfo(code) || {}).index || code, country = G.MARKETS[code] ? G.tn(G.MARKETS[code][0]) : "";
+    $("map-h").textContent = ix + (country ? " · " + country : "");
+    $("map-sub").textContent = !d ? "" : quota(d) ? G.L("Ogni quadrato è un titolo " + ofIx(ix) + ": più è grande, più vale in Borsa.", "Each square is a stock of " + theIx(ix) + ": the bigger it is, the more it is worth.")
+      : G.L("Ogni quadrato è un titolo " + ofIx(ix) + ": più è grande, più pesa nell'indice.", "Each square is a stock of " + theIx(ix) + ": the bigger it is, the more it weighs in the index.");
+    const a = $("asof");
+    if (!d || !d.asOf) { a.innerHTML = "&nbsp;"; a.classList.remove("stale"); return; }
+    const stale = G.hoursAgo(d.asOf) > 30, w = G.when(d.asOf);
+    a.textContent = stale ? G.L("Prezzi del " + G.day(d.asOf) + ", non ancora aggiornati", "Prices of " + G.day(d.asOf) + ", not yet updated") : G.L("Prezzi aggiornati ", "Prices updated ") + w;
+    if (!stale && !isToday(d) && d.date) a.textContent += G.L(", seduta del ", ", session of ") + G.dayOnly(d.date);
+    a.classList.toggle("stale", stale);
+  }
+  function drawInside() {
+    const d = inside.d;
+    insideHeader(d, inside.code);
+    if (!d) {
+      $("inmap").parentElement.hidden = true; $("inlegend").hidden = true;
+      $("indetail").innerHTML = "<p>" + G.L("I titoli " + ofIx((ixInfo(inside.code) || {}).index || "") + " non sono disponibili in questo momento.", "The stocks of " + theIx((ixInfo(inside.code) || {}).index || "") + " are not available right now.") + "</p>";
+      $("insum").innerHTML = ""; $("inlist").innerHTML = backRow();
+      return;
+    }
+    $("inmap").parentElement.hidden = false; $("inlegend").hidden = false;
+    inside.rects = drawStocks($("inmap"), d, inside.sel);
+    placeInRing(true);
+    $("indetail").innerHTML = stockDetail(d);
+    $("insum").innerHTML = insideSummary(d);
+    $("inlist").innerHTML = insideList(d);
+    requestAnimationFrame(() => G.seg($("inlist").querySelector(".t-sort"), true));
+  }
+  function selectStock(sym) {
+    if (!inside.d) return;
+    const iv = $("inview"), h0 = iv.offsetHeight;
+    inside.sel = sym;
+    $("inmap").querySelectorAll(".tile").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.code === sym)));
+    placeInRing(false);
+    $("indetail").innerHTML = stockDetail(inside.d);
+    easeHeight(iv, h0, 300);
+  }
+
+  // ---------- entrare e uscire: la mappa dei titoli cresce dal quadrato della Borsa, e ci rientra ----------
+  const ZOOM = 520;
+  function snapCountry(code) {
+    const map = $("map"), tile = map.querySelector('[data-code="' + code + '"]');
+    if (!tile || !map.clientWidth) return null;
+    return { map: map.getBoundingClientRect(), tile: tile.getBoundingClientRect(), html: map.innerHTML };
+  }
+  // la copia della mappa che esce, sopra il suo posto di prima
+  function ghost(rect, html, clip) {
+    const panel = $("map-panel"), b = panel.getBoundingClientRect();
+    const f = document.createElement("div");
+    f.className = "t-ghost" + (clip ? " clip" : "");
+    f.setAttribute("aria-hidden", "true");
+    f.style.cssText = "left:" + (rect.left - b.left - panel.clientLeft) + "px;top:" + (rect.top - b.top - panel.clientTop) + "px;width:" + rect.width + "px;height:" + rect.height + "px";
+    const m = document.createElement("div");
+    m.className = "tmap t-ghostmap";
+    m.innerHTML = html;
+    f.appendChild(m);
+    panel.appendChild(f);
+    return { f, m };
+  }
+  function animateIn(before) {
+    const im = $("inmap"), to = im.getBoundingClientRect(), t = before.tile, mp = before.map;
+    if (!to.width || !t.width || !t.height) return;
+    const o = { duration: ZOOM, easing: SNAP };
+    // le Borse si avvicinano: il quadrato scelto diventa grande quanto la mappa, e sparisce
+    const g = ghost(mp, before.html, true), sx = mp.width / t.width, sy = mp.height / t.height;
+    g.m.animate([{ transform: "none", opacity: 1 }, { opacity: 0.25, offset: 0.55 }, { transform: "translate(" + ((mp.left - t.left) * sx).toFixed(1) + "px," + ((mp.top - t.top) * sy).toFixed(1) + "px) scale(" + sx.toFixed(4) + "," + sy.toFixed(4) + ")", opacity: 0 }], Object.assign({ fill: "forwards" }, o));
+    // i titoli partono dal posto e dalla grandezza di quel quadrato
+    withOrigin(im, "0 0", im.animate([{ transform: "translate(" + (t.left - to.left).toFixed(1) + "px," + (t.top - to.top).toFixed(1) + "px) scale(" + (t.width / to.width).toFixed(4) + "," + (t.height / to.height).toFixed(4) + ")", opacity: 0.4 }, { transform: "none", opacity: 1 }], o));
+    const ring = $("inring");
+    ring.style.visibility = "hidden";
+    ["inlegend", "indetail", "insum", "inlist"].forEach((id, k) => $(id).animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 380, delay: 180 + k * 40, easing: SNAP, fill: "backwards" }));
+    P.later(() => { g.f.remove(); ring.style.visibility = ""; }, ZOOM + 40);
+  }
+  function animateOut(before, code) {
+    const map = $("map"), tile = map.querySelector('[data-code="' + code + '"]');
+    if (!tile) return;
+    const to = map.getBoundingClientRect(), tr = tile.getBoundingClientRect(), mp = before.map;
+    if (!to.width || !tr.width || !tr.height) return;
+    const o = { duration: ZOOM, easing: SNAP };
+    // i titoli rientrano nel quadrato della loro Borsa
+    const g = ghost(mp, before.html, false);
+    g.m.animate([{ transform: "none", opacity: 1 }, { opacity: 0.5, offset: 0.5 }, { transform: "translate(" + (tr.left - mp.left).toFixed(1) + "px," + (tr.top - mp.top).toFixed(1) + "px) scale(" + (tr.width / mp.width).toFixed(4) + "," + (tr.height / mp.height).toFixed(4) + ")", opacity: 0 }], Object.assign({ fill: "forwards" }, o));
+    // le Borse tornano da vicino a lontano, dentro il loro riquadro
+    const wrap = map.parentElement, ring = $("ring"), sx = to.width / tr.width, sy = to.height / tr.height;
+    wrap.classList.add("t-zooming");
+    ring.style.visibility = "hidden";
+    withOrigin(map, "0 0", map.animate([{ transform: "translate(" + ((to.left - tr.left) * sx).toFixed(1) + "px," + ((to.top - tr.top) * sy).toFixed(1) + "px) scale(" + sx.toFixed(4) + "," + sy.toFixed(4) + ")", opacity: 0 }, { opacity: 1, offset: 0.45 }, { transform: "none", opacity: 1 }], o));
+    P.later(() => { g.f.remove(); wrap.classList.remove("t-zooming"); ring.style.visibility = ""; }, ZOOM + 40);
+  }
+  let inTok = 0;
+  async function enter(code, opt) {
+    opt = opt || {};
+    if (inside.code === code || !ixInfo(code)) return;
+    const tok = ++inTok;
+    const d = await G.load("indici/" + code);
+    if (tok !== inTok) return;
+    if (inside.code) leaveInside({ instant: true });
+    if (mapSwipe) mapSwipe.finish();
+    const panel = $("map-panel"), h0 = panel.offsetHeight;
+    const before = !opt.instant && !G.reduced() ? snapCountry(code) : null;
+    const items = wt ? G.mapItems(wt, tm, state.view, qt0) : [], mi = items.find((x) => x.code === code);
+    const ok = !!(d && Array.isArray(d.items) && d.items.length);
+    if (ok) d.items.sort((a, b) => b.w - a.w);
+    Object.assign(inside, { code, d: ok ? d : null, sel: "", sort: "peso", all: false, rects: [], mapIndex: mi ? mi.index : "" });
+    if (opt.push) { try { history.pushState(Object.assign({}, history.state, { gi: code }), "", location.pathname + location.search + "#indice-" + code); } catch (e) { /* niente */ } }
+    state.sel = code;
+    G.ls.set("gerico.mapSel", code);
+    board.classList.add("inside");
+    $("mapview").hidden = true;
+    $("inview").hidden = false;
+    $("map-seg").hidden = true;
+    $("in-back").hidden = false;
+    $("in-back").textContent = "‹ " + viewName();
+    $("in-back").setAttribute("aria-label", G.L("Torna alla mappa: ", "Back to the map: ") + viewName());
+    drawInside();
+    if (before) animateIn(before);
+    easeHeight(panel, h0, 420);
+    if (!opt.instant) {
+      $("in-back").focus({ preventScroll: true });
+      const top = $("inmap").getBoundingClientRect().top, bar = document.querySelector(".top");
+      if (top < (bar ? bar.getBoundingClientRect().bottom : 0) + 8) panel.scrollIntoView({ behavior: G.reduced() ? "auto" : "smooth", block: "start" });
+    }
+  }
+  function leaveInside(opt) {
+    opt = opt || {};
+    if (!inside.code) return;
+    inTok += 1;
+    const code = inside.code, panel = $("map-panel"), h0 = panel.offsetHeight, im = $("inmap"), r = im.getBoundingClientRect();
+    // se la mappa dei titoli non si vede (si è scesi nell'elenco), niente zoom: si torna in cima alla mappa
+    const seen = r.height > 0 && r.bottom > 40 && r.top < innerHeight - 40;
+    const before = !opt.instant && !G.reduced() && seen ? { map: r, html: im.innerHTML } : null;
+    Object.assign(inside, { code: "", d: null, sel: "", rects: [] });
+    board.classList.remove("inside");
+    $("inview").hidden = true;
+    $("mapview").hidden = false;
+    $("map-seg").hidden = false;
+    $("in-back").hidden = true;
+    $("map-h").textContent = mapTitle;
+    ["inmap", "indetail", "insum", "inlist"].forEach((id) => { $(id).innerHTML = ""; });
+    state.sel = code;
+    drawMap(false);
+    renderStatus();
+    if (!seen && !opt.instant) panel.scrollIntoView({ block: "start" });
+    if (before) animateOut(before, code);
+    easeHeight(panel, h0, 420);
+    if (!opt.instant) { const b = $("map").querySelector('[data-code="' + code + '"]'); if (b) b.focus({ preventScroll: true }); }
+  }
+  // indietro: se l'indice si è aperto da questa pagina, con la storia del browser (come il gesto di iOS)
+  function leave() {
+    if (!inside.code) return;
+    if (history.state && history.state.gi === inside.code) { history.back(); return; }
+    try { history.replaceState(history.state, "", location.pathname + location.search); } catch (e) { /* niente */ }
+    leaveInside();
+  }
+  function fromHash(e) {
+    const want = hashCode();
+    if (want === inside.code) return;
+    const instant = !!(e && e.hasUAVisualTransition);
+    if (want && ixInfo(want)) enter(want, { instant });
+    else if (!want) leaveInside({ instant });
+  }
+  P.on(window, "popstate", fromHash);
+  P.on(window, "hashchange", fromHash);
+  $("in-back").addEventListener("click", leave);
+  $("inview").addEventListener("click", (e) => {
+    const t = e.target;
+    if (t.closest("a")) return;
+    const tile = t.closest("#inmap .tile");
+    if (tile) { selectStock(tile.dataset.code); return; }
+    const so = t.closest("[data-sort]");
+    if (so && so.dataset.sort !== inside.sort && inside.d) {
+      inside.sort = so.dataset.sort;
+      const box = so.parentElement;
+      box.querySelectorAll("[data-sort]").forEach((b) => b.setAttribute("aria-pressed", String(b === so)));
+      G.seg(box);
+      const r = rowsHTML(inside.d);
+      $("inrows").innerHTML = r.rows;
+      $("inmore").innerHTML = r.more;
+      return;
+    }
+    if (t.closest("[data-all]") && inside.d) { inside.all = true; const r = rowsHTML(inside.d); $("inrows").innerHTML = r.rows; $("inmore").innerHTML = ""; return; }
+    if (t.closest("[data-leave]")) { leave(); return; }
+    const pick = t.closest("[data-stock]");
+    if (pick) selectStock(pick.dataset.stock);
+  });
+  if (window.ResizeObserver) {
+    let rt, sz = "";
+    P.keep(new ResizeObserver(() => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        const now = $("inmap").clientWidth + "x" + $("inmap").clientHeight;
+        if (now === sz) return;
+        sz = now;
+        if (inside.d) { inside.rects = drawStocks($("inmap"), inside.d, inside.sel); placeInRing(true); }
+      }, 100);
+    })).observe($("inmap"));
   }
 
   // le percentuali delle tabelle contano fino al valore, una volta sola all'apertura (le cifre hanno tutte la stessa larghezza).
@@ -435,7 +869,7 @@ G.page("terminal", async function (P) {
       : qt0 && asOf === qt0.asOf ? G.L("Prezzi aggiornati ", "Prices updated ") + G.when(asOf) + G.L(", ogni mezz'ora nelle ore di Borsa", ", every half hour during market hours")
       : G.L("Aggiornato ", "Updated ") + G.when(asOf) + G.L(" · prossimo ", " · next ") + G.nextUpdate();
     // la data dei dati sta sotto la mappa, in una riga già riservata: nessun salto quando arriva
-    if (asOf) {
+    if (asOf && !inside.code) {
       const stale = G.hoursAgo(asOf) > 30, w = G.when(asOf);
       $("asof").textContent = G.en ? (stale ? "Data of " + G.day(asOf) + ", not yet updated" : "Data " + w)
         : stale ? "Dati del " + G.day(asOf) + ", non ancora aggiornati"
@@ -743,6 +1177,7 @@ G.page("terminal", async function (P) {
     const t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
     if (e.altKey || e.ctrlKey || e.metaKey) return;
+    if (e.key === "Escape" && inside.code && !document.querySelector("dialog[open]")) { e.preventDefault(); leave(); return; }
     if (FKEYS[e.key]) { e.preventDefault(); run(FKEYS[e.key]); }
   });
 
@@ -842,8 +1277,9 @@ G.page("terminal", async function (P) {
   });
   drawMap(false);
   size = $("map").clientWidth + "x" + $("map").clientHeight;
+  if (hashCode() && ixInfo(hashCode())) enter(hashCode(), { instant: true });
   rates();
-  // la colonna di lato compare quando ha i dati (CSS .t-side.ready): le tabelle non spingono giù i pannelli sotto
+  // tassi e agenda compaiono quando hanno i dati (CSS .t-board.ready): le tabelle non spingono giù i pannelli sotto
   showSide();
   renderAgenda();
   P.every(renderAgenda, 30000);

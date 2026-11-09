@@ -1288,8 +1288,8 @@ main[tabindex="-1"]:focus, main[tabindex="-1"]:focus-visible, [tabindex="-1"]:fo
 /* Terminal: indici, valute e tassi compaiono insieme quando ci sono i dati, con una dissolvenza.
    Le tabelle hanno righe e note diverse ogni giorno: comparire evita che i pannelli sotto saltino.
    Se lo script non arriva, la colonna compare comunque dopo 2 secondi. */
-body.term .t-side { transition: opacity var(--t-2) var(--ease); }
-body.term .t-side:not(.ready) { visibility: hidden; opacity: 0; animation: t-side-show 0s 2s forwards; }
+body.term .t-board > .t-wait { transition: opacity var(--t-2) var(--ease); }
+body.term .t-board:not(.ready) > .t-wait { visibility: hidden; opacity: 0; animation: t-side-show 0s 2s forwards; }
 @keyframes t-side-show { to { visibility: visible; opacity: 1; } }
 /* prima pagina: la fascia dell'ultim'ora e la scheda del riepilogo hanno da subito la loro misura finale,
    così l'arrivo dei dati non sposta le notizie (il testo d'attesa della scheda è lungo come quello vero) */
@@ -1820,10 +1820,6 @@ html.nuova .next { margin-top: var(--f34); }
 /* il campo «Vai a» c'è solo sul computer: sul telefono la riga non occupa spazio */
 .t-tools { padding-top: var(--f21, 21px); }
 @media (max-width: 999px) { .t-tools { display: none; } }
-html.nuova .t-main { gap: var(--f13); padding-top: var(--f13); padding-bottom: var(--f13); }
-html.nuova .t-side, .t-col { display: grid; gap: var(--f13, 13px); align-content: start; }
-html.nuova .t-charts { display: grid; gap: var(--f13); padding-bottom: var(--f13); }
-html.nuova .t-more { gap: var(--f13); padding-bottom: var(--f21); }
 html.nuova .t-panel { padding: var(--f21) 16px; }
 html.nuova .t-sub { margin: var(--f8) 0 var(--f13); }
 html.nuova .t-asof { margin: calc(-1 * var(--f8)) 0 var(--f13); }
@@ -1838,14 +1834,7 @@ html.nuova .tv { margin-top: var(--f13); padding-top: 0; }
 /* agenda: una lista sola, poi i giorni dopo */
 html.nuova .t-ff-week { margin-top: var(--f8); }
 @media (max-width: 359px) { html.nuova .t-panel { padding-left: 12px; padding-right: 12px; } }
-/* computer: mappa | tassi e agenda, grafici | notizie e tono, come 1,618 a 1; sotto, la macro su tutta la larghezza */
-@media (min-width: 1000px) {
-  html.nuova .t-main { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f21); padding-top: var(--f21); padding-bottom: var(--f21); }
-  html.nuova .t-side, html.nuova .t-col { gap: var(--f21); }
-  html.nuova .t-charts { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f21); align-items: start; padding-bottom: var(--f21); }
-  html.nuova .t-more { grid-template-columns: minmax(0, 1fr); gap: var(--f21); }
-  html.nuova .t-panel { padding: var(--f21); }
-}
+@media (min-width: 1000px) { html.nuova .t-panel { padding: var(--f21); } }
 /* le serie macro in righe piene: 2 colonne sul telefono, 3 sul tablet, 4 sul computer */
 html.nuova .m-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--f8); margin-top: var(--f13); }
 @media (min-width: 760px) { html.nuova .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -1855,3 +1844,74 @@ html.nuova .m-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(
 /* ========== due lingue (9 novembre) ==========
    I testi lunghi (Come funziona, Privacy) hanno le due versioni nella pagina: si vede quella della lingua scelta */
 html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { display: none !important; }
+
+/* ========== dentro l'indice (9 novembre) ==========
+   Dal dettaglio di una Borsa: i titoli dell'indice in una mappa, quanti salgono e quanti scendono, chi spinge, l'elenco */
+.t-back { flex: 0 0 auto; min-height: 40px; padding: 0 16px; font-size: 0.875rem; }
+.t-detail .t-inopen { margin-top: var(--f13, 13px); }
+.t-inbtn {
+  display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; max-width: 100%; min-height: 44px; padding: 10px 16px 10px 18px;
+  background: var(--t-accent); color: #090C12; white-space: normal; text-align: left; line-height: 1.25;
+}
+.t-inbtn small { font-size: 0.8125rem; font-weight: 600; opacity: 0.8; }
+.t-inbtn .ar { font-size: 1.25rem; line-height: 1; }
+.t-insum { margin-top: var(--f13, 13px); }
+.t-insum:empty { display: none; }
+.t-breadth p { font-size: 0.9375rem; line-height: 1.5; color: var(--t-ink-2); }
+.t-bbar { display: flex; gap: 2px; height: 6px; margin-top: var(--f8, 8px); border-radius: 3px; overflow: hidden; background: var(--fill); }
+.t-bbar i { display: block; height: 100%; }
+.t-bbar .up { background: var(--t-up); }
+.t-bbar .fl { background: var(--t-ink-3); }
+.t-bbar .dn { background: var(--t-down); }
+.t-contrib { display: flex; flex-wrap: wrap; gap: var(--f8, 8px); margin-top: var(--f13, 13px); }
+.t-contrib .l { flex: 1 1 100%; font-size: 0.8125rem; color: var(--t-ink-3); }
+.t-pick {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; max-width: 100%; padding: 0 12px; border: 0; border-radius: 999px;
+  background: var(--fill); color: var(--t-ink); font-family: var(--sans); font-size: 0.875rem; font-weight: 600; cursor: pointer;
+}
+.t-pick span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.t-pick b { font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (hover: hover) { .t-pick:hover { background: var(--raised); } }
+.t-inlist { margin-top: var(--f21, 21px); padding-top: var(--f13, 13px); border-top: 1px solid var(--hair); }
+.t-inlist:empty { display: none; }
+.t-inhead h3 { font-size: 1rem; font-weight: 700; color: var(--t-ink); }
+.t-inhead .t-sort { flex: 0 1 320px; }
+@media (max-width: 759px) { .t-inhead .t-sort { flex: 1 1 100%; } }
+.q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 76px 76px; }
+.q-row.st .q-n small { color: var(--t-ink-3); }
+@media (max-width: 420px) { .q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 66px 70px; } }
+.t-morebtn:empty { display: none; }
+.t-morebtn, .t-backrow { margin-top: var(--f13, 13px); }
+.t-inmethod { margin-top: var(--f21, 21px); line-height: 1.5; }
+/* lo zoom: la copia della mappa che esce sta sopra, il riquadro taglia quello che sborda */
+.t-ghost { position: absolute; z-index: 3; pointer-events: none; }
+.t-ghost.clip, .t-zooming { overflow: hidden; border-radius: 10px; }
+.t-ghostmap { position: absolute; inset: 0; transform-origin: 0 0; }
+#inview { touch-action: pan-y pinch-zoom; }
+/* i titoli piccolissimi: il bordo scuro non copre il colore */
+#inmap .tile.none { border-width: 0.5px; }
+/* sul quadrato scelto, se l'indice si apre: toccandolo di nuovo si entra */
+.tmap .tile .go { position: absolute; right: 8px; bottom: 9px; padding: 3px 9px; border-radius: 999px; background: rgba(9, 12, 18, 0.5); font-size: 0.75rem; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+
+/* ========== il Terminal senza buchi (9 novembre) ==========
+   Sul telefono un pannello sotto l'altro. Sul computer due colonne, 1,618 a 1, che si riempiono ognuna per conto suo:
+   le righe della griglia sono di 4 pixel e ogni pannello ne prende quante è alto (lo calcola terminal.js, classe
+   packed), così accanto a un pannello lungo non resta spazio vuoto sotto uno corto */
+.t-board { display: grid; gap: var(--f13, 13px); padding-top: var(--f13, 13px); padding-bottom: var(--f21, 21px); }
+.t-board > .t-panel { min-width: 0; }
+@media (min-width: 1000px) {
+  .t-board { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f21, 21px); padding-top: var(--f21, 21px); align-items: start; grid-auto-flow: row dense; }
+  .t-board > .t-l { grid-column: 1; }
+  .t-board > .t-r { grid-column: 2; }
+  .t-board.packed { grid-auto-rows: 4px; row-gap: 0; }
+  /* in fondo, larghi quanto la pagina: titoli, macro, SEC */
+  .t-board > #p-titoli, .t-board > #p-macro, .t-board > #p-sec { grid-column: 1 / -1; }
+  /* dentro un indice la mappa prende tutta la larghezza, gli altri pannelli continuano sotto; la macro va nella colonna
+     larga, con tre serie per riga */
+  .t-board.inside > #map-panel { grid-column: 1 / -1; }
+  .t-board.inside > #p-macro { grid-column: 1; }
+  html.nuova .t-board.inside #p-macro .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* notizie: l'ultima scheda dispari prende tutta la riga; sul computer le brevi nella colonna dei mercati */
+@media (min-width: 760px) { html.nuova .list > .item:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+@media (min-width: 1000px) { .side.with-brevi .mk-box { position: static; } }

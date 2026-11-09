@@ -1,0 +1,56 @@
+name: Prova delle voci
+
+# Legge i primi due temi del riepilogo di oggi con più voci di Gemini e le pubblica in site/audio/prove/, per scegliere
+# la voce ascoltandole dal telefono (gerico.financialnews.workers.dev/audio/prove/<voce>.m4a). Si avvia a mano:
+# Actions › Prova delle voci › Run workflow. Serve il segreto GEMINI_API_KEY. La voce scelta va nella variabile
+# GERICO_VOCE (Settings › Secrets and variables › Actions › Variables); poi la cartella delle prove si può cancellare.
+on:
+  workflow_dispatch:
+    inputs:
+      voci:
+        description: "Voci da provare, separate da virgola (vuoto: Charon, Sadaltager, Iapetus, Algieba, Schedar, Kore, Sulafat, Erinome)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dati-terminal-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Librerie
+        run: pip install -q numpy soundfile imageio-ffmpeg==0.6.0
+      - name: Legge con ogni voce
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GERICO_PROVE: ${{ inputs.voci }}
+        run: python scripts/audio.py site --prove
+      - name: Pubblica
+        run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          # le prove si rimettono ogni volta sopra l'ultima versione di main: nessun conflitto con chi ha pubblicato intanto
+          cp -r site/audio/prove "$RUNNER_TEMP/prove"
+          for i in 1 2 3 4; do
+            git fetch -q --depth 1 origin "$GITHUB_REF_NAME" && git reset -q --hard FETCH_HEAD
+            rm -rf site/audio/prove && cp -r "$RUNNER_TEMP/prove" site/audio/prove
+            git add -A site/audio/prove
+            if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
+            git commit -q -m "Prova delle voci del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep $((i * 10))
+          done
+          echo "::error::Push non riuscito dopo 4 tentativi"
+          exit 1

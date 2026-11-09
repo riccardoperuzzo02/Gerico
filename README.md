@@ -30,7 +30,8 @@ testate e scrive il database, che è la cartella `redazione/db`, un file JSON pe
 cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (`check_dump.py`, `export.py`, `brevi.py`,
 `riepilogo.py`, `titoli.py`, `share_pages.py`, `check_site.py`), scrive l'esito in `meta/status.json` (`lastPublish` o
 `publishError`) e fa commit e push su main. Se è cambiato il riepilogo, avvia «Dati del Terminal», che lo legge con la voce
-sintetica. Cloudflare ripubblica il sito da solo: verso le 7:30, le 13:30 e le 18:20.
+sintetica di Gemini (segreto `GEMINI_API_KEY`, livello gratuito; la voce si sceglie con la variabile `GERICO_VOCE` dopo il
+workflow «Prova delle voci»); senza chiave, o se il servizio non risponde, legge Kokoro. Cloudflare ripubblica il sito da solo: verso le 7:30, le 13:30 e le 18:20.
 
 Claude Code usa l'abbonamento Claude di Riccardo con il segreto `CLAUDE_CODE_OAUTH_TOKEN` (Settings › Secrets and variables ›
 Actions), creato con `claude setup-token` e valido un anno: nessuna chat su claude.ai. Può scrivere solo in `redazione/db` e

@@ -1,7 +1,7 @@
 name: Dati del Terminal
 
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR), il calendario economico (Forex Factory)
-# e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno;
+# e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno (voce di Gemini, Kokoro di riserva);
 # calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati. Salva i file in site/data
 # e li pubblica su main, come fanno i giri delle notizie e delle chiusure. Non usa crediti Claude.
 on:
@@ -58,6 +58,11 @@ jobs:
       - name: Scarica i dati
         run: python scripts/fin_data.py site/data
       - name: Riepilogo audio
+        env:
+          # la voce di Gemini (livello gratuito dell'API); senza chiave, o se il servizio non risponde, legge Kokoro.
+          # GERICO_VOCE (Settings › Secrets and variables › Actions › Variables) cambia la voce senza toccare il codice
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GERICO_VOCE: ${{ vars.GERICO_VOCE }}
         run: python scripts/audio.py site
       - name: Screener dei titoli
         run: python scripts/screener.py screener

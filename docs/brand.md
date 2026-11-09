@@ -54,9 +54,11 @@ Un solo colore oltre al bianco, al grigio e al testo. Il verde e il rosso restan
 
 ## Voce
 
-- Riepilogo a voce: Nicola di Kokoro con il 15% di Sara, velocità 1,1, letto frase per frase; volume a −16 LUFS, AAC 64 kbps.
+- Riepilogo a voce: Gemini 3.8 Flash TTS di Google, voce Charon (maschile, «informativa») finché non se ne sceglie un'altra con la variabile `GERICO_VOCE`; stile in una riga fissa (conduttore di un notiziario radio del mattino, calmo e cordiale, ritmo naturale, senza enfasi), fuori dal testo. Un paragrafo per richiesta, silenzi tagliati in testa e in coda, 0,7 s tra un tema e l'altro; volume a −16 LUFS, compressione morbida, AAC 64 kbps.
+- Controlli: ogni pezzo fra 1,7 e 4,2 parole al secondo, altrimenti si rifà (fino a 4 volte); se non va, tutto il riepilogo lo legge la voce di riserva. Mai due voci nello stesso audio.
+- Voce di riserva: Nicola di Kokoro con il 15% di Sara, velocità 1,1, frase per frase, con le grafie fonetiche dei nomi stranieri.
 - Sigla: due note di marimba (la e mi), 1,25 s, generate in `scripts/audio.py`.
-- Testo per l'orecchio: frasi brevi, passaggi tra i temi, numeri raggruppati, sigle scritte come si leggono.
+- Testo per l'orecchio: frasi brevi, passaggi tra i temi, numeri raggruppati, sigle scritte come si leggono. Per la voce di Gemini i nomi restano veri (Trump, Reuters); GERICO si legge «Gèrico».
 
 ## Tono dei testi
 

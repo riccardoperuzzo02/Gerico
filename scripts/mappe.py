@@ -180,13 +180,27 @@ def dentro(pt, polys):
 
 
 def vicino(pt, polys, limite_km):
-    """Il punto è a meno di limite_km da un vertice del confine? (Per le città sulla costa: i confini sono semplificati.)"""
+    """Il punto è a meno di limite_km da un vertice del confine? (Per le città sulla costa e per le isole troppo piccole
+    per essere disegnate: i confini sono semplificati.)"""
+    dlat = limite_km / 111.0 + 0.1
+    dlon = limite_km / (111.0 * max(0.2, math.cos(math.radians(pt[1])))) + 0.1
     for p in polys:
         for r in p:
             for v in r:
-                if abs(v[1] - pt[1]) < 1 and min(abs(v[0] - pt[0] - sh) for sh in (0, 360, -360)) < 2 and km(v, pt) < limite_km:
+                if abs(v[1] - pt[1]) < dlat and min(abs(v[0] - pt[0] - sh) for sh in (0, 360, -360)) < dlon and km(v, pt) < limite_km:
                     return True
     return False
+
+
+def luogo_valido(pt, k, tutte):
+    """Il luogo sta nel paese principale: dentro i suoi confini, sulla costa, o su una sua isola troppo piccola per la
+    mappa (Lampedusa): in mare o comunque fuori dagli altri paesi, a meno di 350 km dal paese. Una coordinata sbagliata
+    (latitudine e longitudine scambiate, un altro paese) non passa."""
+    if not (-180 <= pt[0] <= 180 and -90 <= pt[1] <= 90):
+        return False
+    if dentro(pt, tutte[k]) or vicino(pt, tutte[k], 25):
+        return True
+    return vicino(pt, tutte[k], 350) and not any(dentro(pt, polys) for kk, polys in tutte.items() if kk != k)
 
 
 def nucleo(polys):
@@ -379,7 +393,7 @@ def disegna(sigle, city=None):
     punto = None
     if city and chiavi and isinstance(city.get("lat"), (int, float)) and isinstance(city.get("lon"), (int, float)):
         pt = (float(city["lon"]), float(city["lat"]))
-        if -180 <= pt[0] <= 180 and -90 <= pt[1] <= 90 and (dentro(pt, tutte[chiavi[0]]) or vicino(pt, tutte[chiavi[0]], 25)):
+        if luogo_valido(pt, chiavi[0], tutte):
             punto = pt
     # dove guardare: il paese principale intero; degli altri tutto, ma dei grandissimi (la Russia accanto all'Ucraina)
     # solo la parte vicina. Se un paese è lontano (gli Stati Uniti per una notizia sull'Iran), il mondo intero
@@ -610,8 +624,8 @@ def didascalia(sigle, punto, city):
         return ""
     if sigle[0] == "EU":
         return "Unione europea"
-    if punto and city and city.get("name"):
-        n, paese = str(city["name"]).strip(), nome(sigle[0])
+    if punto and city and isinstance(city.get("name"), str) and city["name"].strip():
+        n, paese = city["name"].strip(), nome(sigle[0])
         return n if n.lower() == paese.lower() else n + ", " + paese
     nomi = ["Unione europea" if s == "EU" else nome(s) for s in sigle[:3]]
     return nomi[0] if len(nomi) == 1 else ", ".join(nomi[:-1]) + " e " + nomi[-1]

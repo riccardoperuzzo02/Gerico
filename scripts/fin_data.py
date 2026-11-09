@@ -84,8 +84,15 @@ def keep_old(out, name, err):
         with open(path, encoding="utf-8") as f:
             old = json.load(f)
     except (OSError, ValueError):
+        # il file non c'è mai stato (dai server di GitHub la SEC rifiuta le richieste): se ne scrive uno che dice «non
+        # disponibile», così il sito nasconde il pannello senza chiedere a ogni visita un file che non esiste. Una volta
+        # sola e senza ora: non produce un commit a ogni giro
+        if name == "sec.json":
+            save(out, name, {"asOf": None, "unavailable": True, "filings": []})
         return
     if isinstance(old, dict):
+        if old.get("unavailable"):
+            return
         old["lastError"] = {"at": iso(now()), "message": err[:300]}
         save(out, name, old)
 

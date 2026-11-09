@@ -97,20 +97,21 @@ G.page("terminal", async function (P) {
       html += "<p>" + esc(G.cap(lv.join(" · "))) + ".</p>";
     }
     if (it.note) html += "<p>" + esc(it.note) + "</p>";
-    else if (it.time) html += "<p>" + G.L("Dato delle ", "Data at ") + esc(it.time) + ".</p>";
+    // un'ora senza giorno vale solo per oggi: per un dato dei giorni prima si scrive anche il giorno
+    else if (it.time) html += "<p>" + (it.day && !G.isToday(it.day) ? G.L("Dato del ", "Data of ") + esc(G.day(it.day)) + G.L(" alle ", " at ") : G.L("Dato delle ", "Data at ")) + esc(it.time) + ".</p>";
     const s = linkedStory(it.code);
     if (s) html += "<p>" + G.L("Storia collegata: ", "Related story: ") + '<a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
     const ix = ixInfo(it.code);
     if (ix) {
       html += '<p class="t-inopen"><button type="button" class="t-btn t-inbtn" data-inside="' + it.code + '">' + G.L("Dentro ", "Inside ") + esc(theIx(ix.index)) +
-        "<small>" + ix.n + G.L(" titoli", " stocks") + '</small><span class="ar" aria-hidden="true">›</span></button></p>';
+        '<span class="nw"><small>' + ix.n + G.L(" titoli", " stocks") + '</small><span class="ar" aria-hidden="true">›</span></span></button></p>';
     }
     return html;
   }
   // sotto la mappa solo le Borse con il quadrato troppo piccolo per scriverci la variazione (le altre si leggono già nel
   // quadrato), con un'area da toccare comoda. Per i lettori di schermo bastano i quadrati, che hanno nome e variazione.
-  // Le soglie sono quelle di G.drawMap: la variazione compare nei quadrati grandi, medi e piccoli larghi almeno 46 px
-  const readable = (r) => (r.w >= 90 && r.h >= 56) || (r.w >= 46 && r.h >= 30);
+  // Lo dice G.drawMap, che misura il testo: r.shown è vero se la variazione è scritta nel quadrato
+  const readable = (r) => !!r.shown;
   const valsHTML = (items, sel, rects) => {
     const small = new Set((rects || []).filter((r) => typeof r.chg === "number" && !readable(r)).map((r) => r.code));
     return items.filter((it) => small.has(it.code)).map((it) =>
@@ -263,7 +264,10 @@ G.page("terminal", async function (P) {
     const items = G.mapItems(wt, tm, state.view, qt0);
     state.sel = selIn(items, state.sel);
     const before = how === "flip" && !G.reduced() && lastRects ? byCode(lastRects) : null;
+    // la mappa si ridisegna da capo: se il fuoco della tastiera era su un quadrato, torna sullo stesso (se no si perdeva)
+    const ae = document.activeElement, hadFocus = ae && ae.closest && ae.closest("#map") && ae.dataset ? ae.dataset.code : "";
     const rects = G.drawMap($("map"), items, { interactive: true, selected: state.sel, enter: ixInfo }) || [];
+    if (hadFocus && !focusSel) { const fb = $("map").querySelector('[data-code="' + hadFocus + '"]'); if (fb) fb.focus({ preventScroll: true }); }
     lastRects = rects;
     const now = byCode(rects);
     if (firstDraw) {
@@ -371,13 +375,8 @@ G.page("terminal", async function (P) {
   const hashCode = () => { const m = /^#ind(?:ice|ex)-([A-Z]{3})$/.exec(location.hash); return m ? m[1] : ""; };
 
   // il primo testo che ci sta nel quadrato: misurato con il carattere vero (rem: grandezza del testo, room: spazio in pixel)
-  const meas = document.createElement("canvas").getContext("2d");
   let REM = 16, FAM = "sans-serif";
-  const fit = (texts, rem, room, weight) => texts.find((t) => {
-    if (!t) return false;
-    meas.font = (weight || 700) + " " + rem * REM + "px " + FAM;
-    return meas.measureText(t).width <= room;
-  }) || "";
+  const fit = (texts, rem, room, weight) => G.fitText(texts, rem * REM, room, weight, FAM);
   // i quadrati: tutti i titoli, tranne la coda di quelli che verrebbero più piccoli di 6 × 6 pixel, uniti in uno
   function stockTiles(d, W, H) {
     const xs = d.items;
@@ -404,14 +403,19 @@ G.page("terminal", async function (P) {
       const name = rest ? G.L("Altri ", "Other ") + rest.length : x.n, tag = rest ? G.L("Altri", "Other") : stockTag(x);
       // nei quadrati medi il nome, se ci sta, poi la prima parola, poi la sigla; in quelli piccoli la sigla solo se ci sta intera
       const num = !rest && /^\d/.test(x.t || "");
-      const med = rest ? name : fit([x.n, firstWord(x.n), num ? "" : x.t], 0.875, r.w - 18) || (num ? firstWord(x.n) : x.t);
-      const nm = (t) => (t ? '<span class="a"><span class="nm">' + esc(t) + "</span></span>" : "");
-      // la variazione può arrivare fino al bordo del quadrato (il nome no: ha i puntini)
-      const b = (rem, pad) => (has && fit([cg], rem, r.w - pad, 750) ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
-      const inner = size === "big" ? '<span class="a"><span class="nm">' + esc(name) + '</span><span class="ix">' + esc(rest ? G.L("i più piccoli", "the smallest") : x.t + " · " + wtS(x.w)) + "</span></span>" + b(2, 14)
-        : size === "med" ? nm(med) + b(1.125, 12)
+      // se nemmeno la prima parola ci sta, la si prova in piccolo, poi la sigla: mai un nome con i puntini
+      let med = rest ? name : fit([x.n, firstWord(x.n), num ? "" : x.t], 0.875, r.w - 18), medS = false;
+      if (!med && size === "med") { med = fit([firstWord(x.n), x.t], 0.75, r.w - 18); medS = !!med; }
+      const nm = (t, small) => (t ? '<span class="a"><span class="nm' + (small ? " nm-s" : "") + '">' + esc(t) + "</span></span>" : "");
+      // la variazione può arrivare fino al bordo del quadrato (il nome no), ma solo se in altezza sta sotto il nome
+      // senza toccarlo (G.tileNeed, con la grandezza del testo scelta)
+      const b = (rem, pad) => (has && r.h >= G.tileNeed(size, REM) && fit([cg], rem, r.w - pad, 750) ? '<span class="b"><span class="cg">' + cg + "</span></span>" : "");
+      const bigName = size === "big" ? (rest ? name : fit([x.n, firstWord(x.n), x.t], 1, r.w - 20)) : "";
+      const bigSub = size === "big" ? (rest ? G.L("i più piccoli", "the smallest") : fit([x.t + " · " + wtS(x.w), x.t], 0.75, r.w - 20, 400)) : "";
+      const inner = size === "big" ? '<span class="a"><span class="nm">' + esc(bigName) + "</span>" + (bigSub ? '<span class="ix">' + esc(bigSub) + "</span>" : "") + "</span>" + b(2, 14)
+        : size === "med" ? nm(med, medS) + b(1.125, 12)
         : size === "small" ? nm(fit([tag], 0.75, r.w - 15)) + b(0.75, 9)
-        : size === "tiny" ? nm(fit([tag], 0.625, r.w - 13)) : "";
+        : size === "tiny" ? nm(r.h >= G.tileNeed("tiny", REM) ? fit([tag], 0.625, r.w - 13) : "") : "";
       const label = rest
         ? G.L("Altri ", "Other ") + rest.length + G.L(" titoli, i più piccoli", " stocks, the smallest") + (has ? G.L(", in media ", ", on average ") + cg : "") + ", " + ww + " " + wtS(r.value)
         : x.n + ", " + x.t + ", " + (has ? cg : G.L("nessun dato", "no data")) + ", " + ww + " " + wtS(x.w);
@@ -1036,7 +1040,7 @@ G.page("terminal", async function (P) {
       p.className = "gr-peek";
       p.setAttribute("aria-hidden", "true");
       p.innerHTML = groupMarkup(k);
-      p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+      G.inertCopy(p);
       p.style.width = gr.getBoundingClientRect().width + "px";
       gr.parentElement.appendChild(p);
       return p;
@@ -1151,7 +1155,7 @@ G.page("terminal", async function (P) {
 
   // documenti SEC: gli ultimi depositati da un gruppo di grandi società Usa
   function renderSec(sc) {
-    if (!sc || !Array.isArray(sc.filings)) return hide("p-sec", "SEC");
+    if (!sc || sc.unavailable || !Array.isArray(sc.filings)) return hide("p-sec", "SEC");
     srcLine("sc-src", sc, G.en ? "SEC EDGAR, last " + (sc.days || 30) + " days, " + ((sc.companies || []).length || "some") + " large US companies"
       : "SEC EDGAR, ultimi " + (sc.days || 30) + " giorni, " + ((sc.companies || []).length || "alcune") + " grandi società Usa");
     $("sc").innerHTML = sc.filings.length ? '<ol class="sec-list">' + sc.filings.slice(0, 25).map((f) =>
@@ -1285,7 +1289,7 @@ G.page("terminal", async function (P) {
     lg.removeAttribute("id");
     p.innerHTML = '<div class="t-mapwrap has-ring"><div class="t-map tmap"></div><div class="t-ring"></div></div>' + lg.outerHTML +
       '<div class="t-vals"></div><div class="t-detail">' + detailHTML(items, sel, view) + "</div>";
-    p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    G.inertCopy(p);
     p.style.width = $("mapview").getBoundingClientRect().width + "px";
     panel.appendChild(p);
     const drawn = G.drawMap(p.querySelector(".t-map"), items, { interactive: false, selected: sel }) || [];

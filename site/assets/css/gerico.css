@@ -475,12 +475,13 @@ html.scrolled .sec-nav::after { opacity: 1; }
 .tmap .tile.med .a { left: 8px; top: 7px; }
 .tmap .tile.med .b { left: 8px; bottom: 7px; }
 .tmap .tile.med .nm { font-size: 0.875rem; }
+.tmap .tile.med .nm.nm-s { font-size: 0.75rem; }
 .tmap .tile.med .cg { font-size: 1.125rem; }
-.tmap .tile.small .a { left: 5px; top: 5px; }
+.tmap .tile.small .a { left: 5px; top: 5px; right: 5px; }
 .tmap .tile.small .b { left: 5px; bottom: 5px; }
 .tmap .tile.small .nm { font-size: 0.75rem; }
 .tmap .tile.small .cg { font-size: 0.75rem; }
-.tmap .tile.tiny .a { left: 3px; top: 3px; }
+.tmap .tile.tiny .a { left: 3px; top: 3px; right: 3px; }
 .tmap .tile.tiny .nm { font-size: 0.625rem; }
 
 /* ---------- GERICO Terminal: scuro e pieno di dati, ma si legge come il resto ---------- */
@@ -985,7 +986,10 @@ body.term a.m-card:hover { color: var(--t-ink); background: #202A3D; }
 .ultim-t a b { color: var(--palm); font-weight: 800; font-variant-numeric: tabular-nums; }
 .ultim-t a:hover { color: var(--ink); text-decoration: underline; }
 .ultim-t a:focus-visible { outline: 2px solid var(--palm); outline-offset: -4px; }
-.ultim:hover .ultim-t, .ultim:focus-within .ultim-t, .ultim.paused .ultim-t { animation-play-state: paused; }
+/* si ferma con il pulsante, quando un suo link ha il fuoco della tastiera e, dove c'è un mouse, quando ci si passa sopra.
+   Non con :hover dappertutto: sul telefono resta acceso dopo un tocco, e il pulsante non la faceva più ripartire */
+.ultim.paused .ultim-t, .ultim-v:focus-within .ultim-t { animation-play-state: paused; }
+@media (hover: hover) { .ultim-v:hover .ultim-t { animation-play-state: paused; } }
 .ultim-p { flex: none; display: grid; place-items: center; width: 30px; height: 30px; margin-right: -4px; padding: 0; border: 0; border-radius: 50%; background: var(--press); color: var(--ink); cursor: pointer; }
 .ultim-p .i-play, .ultim.paused .ultim-p .i-pause { display: none; }
 .ultim.paused .ultim-p .i-play { display: block; }
@@ -1968,7 +1972,7 @@ html.nuova .lead.has-img .media {
 @media (max-width: 759px) {
   html.nuova .list .item.has-img { display: grid; grid-template-columns: minmax(0, 1fr) 88px; grid-template-areas: "k k" "t m" "b b"; column-gap: var(--f13); align-items: start; }
   html.nuova .item.has-img > .kick { grid-area: k; }
-  html.nuova .item.has-img > h2 { grid-area: t; font-size: 1.1875rem; line-height: 1.24; -webkit-line-clamp: 6; }
+  html.nuova .item.has-img > h2 { grid-area: t; font-size: 1.1875rem; line-height: 1.24; }
   html.nuova .item.has-img > .c-by { grid-area: b; }
   html.nuova .item.has-img > .media { grid-area: m; width: 88px; height: 88px; margin-top: 3px; border-radius: 14px; }
   html.nuova .item.has-img > .media .m-cap { display: none; }
@@ -1999,3 +2003,35 @@ html.nuova .sk-lead .m { height: auto; margin: calc(-1 * var(--f21)) calc(-1 * v
 /* nella storia: la mappa sotto il sommario, prima della firma */
 .st-media { margin-top: var(--f21, 21px); aspect-ratio: 16 / 9; border-radius: 16px; }
 .st-media + .byline { margin-top: var(--f13, 13px); }
+
+/* ========== controllo qualità (9 novembre, sera) ========== */
+/* i titoli delle schede sono interi a ogni larghezza e a ogni grandezza del testo: mai i puntini in un titolo */
+html.nuova .item h2 { display: block; -webkit-line-clamp: none; overflow: visible; overflow-wrap: break-word; }
+/* Terminal: i nomi lunghi nelle tabelle vanno a capo invece di finire con i puntini («Indice del dollaro») */
+.q-n { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: break-word; line-height: 1.25; }
+.t-pick { min-height: 36px; height: auto; padding: 6px 12px; text-align: left; }
+.t-pick span { white-space: normal; overflow: visible; text-overflow: clip; }
+/* la riga dell'evento sotto i mercati: sugli schermi stretti va su due righe, non si taglia */
+@media (max-width: 400px) { .tk-ev { white-space: normal; overflow: visible; text-overflow: clip; } }
+/* «Dentro l'indice»: il numero dei titoli e la freccia restano insieme quando il pulsante va a capo */
+.t-inbtn .nw { display: inline-flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+/* il link «Vai alla mappa» per chi usa la tastiera: nel Terminal era chiaro su chiaro */
+body.term a.skip, body.term a.skip:hover { background: #EEF2F8; color: #0A1428; }
+/* bersagli del tocco di almeno 44 pixel: la pausa dell'Ultim'ora, il ritorno dalla mappa dei titoli, le notizie del
+   Terminal (tutta la riga), le schede con un nome corto («All») */
+.ultim-p { position: relative; }
+.ultim-p::after { content: ""; position: absolute; inset: -7px; }
+.t-back { min-height: 44px; }
+.t-news a::after { content: ""; position: absolute; inset: 0; }
+.sec-nav .seg > a { min-width: 44px; justify-content: center; }
+/* Ultim'ora con la tastiera: la fascia si ferma e diventa una riga che scorre, con il titolo che ha il fuoco in vista
+   (prima il fuoco poteva finire su un titolo già uscito dalla fascia) */
+.ultim.kbd .ultim-t { animation: none; }
+.ultim.kbd .ultim-v { overflow-x: auto; scrollbar-width: none; }
+.ultim.kbd .ultim-v::-webkit-scrollbar { display: none; }
+.ultim.kbd .ultim-s.dup { display: none; }
+/* il quadrato scelto, quando ha il fuoco della tastiera: un filo bianco dentro l'anello (da solo l'anello non diceva
+   se il fuoco era lì) */
+.t-mapwrap.has-ring .tile[aria-pressed="true"]:focus-visible { outline: 2px solid #FFFFFF; outline-offset: -7px; }
+/* in stampa la mappa della storia non serve (un riquadro blu pieno) */
+@media print { .media { display: none !important; } }

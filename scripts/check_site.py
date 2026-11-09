@@ -52,6 +52,16 @@ def check_data(site):
                 need(isinstance(s.get("facts", []), list), f"edition.json: {s.get('id')}: facts non è una lista")
                 r = s.get("rank")
                 need(r is None or (isinstance(r, int) and not isinstance(r, bool)), f"edition.json: {s.get('id')}: rank {r!r} non è un numero intero")
+                # la forma che le pagine si aspettano (check_dump.py la sistema prima: qui è l'ultimo controllo)
+                sid = s.get("id")
+                for k in ("summary", "article", "view", "change", "section", "updated", "firstSeen"):
+                    need(s.get(k) is None or isinstance(s[k], str), f"edition.json: {sid}: {k} non è un testo")
+                for k in ("tags", "themes", "open", "notCovered"):
+                    need(s.get(k) is None or (isinstance(s[k], list) and all(isinstance(x, str) for x in s[k])), f"edition.json: {sid}: {k} non è una lista di testi")
+                for k in ("sources", "facts", "history", "divergences"):
+                    need(s.get(k) is None or (isinstance(s[k], list) and all(isinstance(x, dict) for x in s[k])), f"edition.json: {sid}: {k} non è una lista di voci")
+                need(all(isinstance(h.get("at"), str) and isinstance(h.get("text"), str) for h in s.get("history") or [] if isinstance(h, dict)),
+                     f"edition.json: {sid}: history con una voce senza ora o senza testo")
                 img = s.get("img")
                 if img is not None:
                     src = str((img or {}).get("src") or "").split("?")[0] if isinstance(img, dict) else ""
@@ -69,6 +79,22 @@ def check_data(site):
         d = load(path)
         if d is not None:
             need(isinstance(d, dict) and isinstance(d.get(key), list), f"{name}: manca la lista {key}")
+            rows = d.get(key) if isinstance(d, dict) and isinstance(d.get(key), list) else []
+            need(all(isinstance(x, dict) for x in rows), f"{name}: {key} con voci che non sono voci")
+            if name == "markets.json":
+                for c in rows:
+                    if isinstance(c, dict):
+                        its = c.get("items")
+                        need(isinstance(its, list) and all(isinstance(i, dict) and isinstance(i.get("name"), str) for i in its), f"{name}: classe {c.get('key')!r} con voci senza nome")
+                        need(all(not isinstance(i, dict) or all(i.get(n) is None or (isinstance(i[n], (int, float)) and not isinstance(i[n], bool)) for n in ("chg", "bp")) for i in its or []),
+                             f"{name}: classe {c.get('key')!r} con una variazione che non è un numero")
+            elif name == "agenda.json":
+                need(all(isinstance(i, dict) and isinstance(i.get("event"), str) for i in rows), f"{name}: un evento senza nome")
+            elif name == "terminal.json":
+                need(all(isinstance(i, dict) and isinstance(i.get("code"), str) and (i.get("chg") is None or (isinstance(i["chg"], (int, float)) and not isinstance(i["chg"], bool))) for i in rows),
+                     f"{name}: un indice senza codice o con una variazione che non è un numero")
+            for k in ("label", "summary"):
+                need(not isinstance(d, dict) or d.get(k) is None or isinstance(d[k], str), f"{name}: {k} non è un testo")
     path = os.path.join(data, "weights.json")
     if os.path.exists(path):
         d = load(path)

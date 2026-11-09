@@ -12,6 +12,38 @@
   G.esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   G.safeUrl = (u) => { try { const x = new URL(u, location.href); return /^https?:$/.test(x.protocol) ? x.href : ""; } catch (e) { return ""; } };
   G.cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
+  // una copia di un pezzo di pagina che serve solo da immagine durante un passaggio (la lista che esce, la sezione
+  // accanto): niente id doppi nella pagina e niente rimandi a id che nella copia non ci sono più
+  G.inertCopy = (root) => {
+    root.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    root.querySelectorAll("[aria-labelledby], [aria-controls], [aria-describedby], label[for]").forEach((el) => {
+      ["aria-labelledby", "aria-controls", "aria-describedby", "for"].forEach((a) => el.removeAttribute(a));
+    });
+    return root;
+  };
+  // con la tastiera il fuoco non resta mai nascosto sotto una barra ferma (l'intestazione, le sezioni, la barra in basso):
+  // se l'elemento che ha preso il fuoco è coperto da una barra, la pagina scorre di quel che serve per scoprirlo
+  document.addEventListener("focusin", (e) => {
+    const el = e.target;
+    if (!el || !el.matches || !el.matches(":focus-visible") || el.closest("dialog, header, .pb, .sec-nav, .ultim")) return;
+    requestAnimationFrame(() => {
+      if (document.activeElement !== el) return;
+      const r = el.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > innerHeight || !r.width) return;
+      const x = Math.min(innerWidth - 1, Math.max(0, r.left + r.width / 2));
+      const bar = (y) => {
+        const t = document.elementFromPoint(x, Math.min(innerHeight - 1, Math.max(0, y)));
+        if (!t || t === el || el.contains(t) || t.contains(el)) return null;
+        for (let n = t; n && n !== document.body; n = n.parentElement) { const p = getComputedStyle(n).position; if (p === "sticky" || p === "fixed") return n; }
+        return null;
+      };
+      const up = bar(r.top + Math.min(r.height / 2, 14)), down = bar(r.bottom - Math.min(r.height / 2, 14));
+      if (up && up.getBoundingClientRect().top < innerHeight / 2) window.scrollBy({ top: r.top - up.getBoundingClientRect().bottom - 12, behavior: "instant" });
+      else if (down && down.getBoundingClientRect().top >= innerHeight / 2) window.scrollBy({ top: r.bottom - down.getBoundingClientRect().top + 12, behavior: "instant" });
+    });
+  });
+  // la parte dopo # di un indirizzo, decodificata; vuota se l'indirizzo è scritto male (%E0%A4 da solo fa cadere decodeURIComponent)
+  G.unhash = (h) => { try { return decodeURIComponent(String(h || "").replace(/^#/, "")); } catch (e) { return ""; } };
 
   // ---------- lingua: italiano o inglese ----------
   // si sceglie nel menu (o con ?lang=en nell'indirizzo) e resta per le visite dopo. I testi dell'interfaccia stanno nelle
@@ -960,7 +992,7 @@
       // la transizione fotografa la pagina nuova quando ha disegnato il contenuto principale (al massimo 400 ms)
       await Promise.race([P.done, new Promise((r) => setTimeout(r, 400))]);
       const h = new URL(url, location.href).hash;
-      const target = h && document.getElementById(decodeURIComponent(h.slice(1)));
+      const target = h && document.getElementById(G.unhash(h));
       // un salto, mai uno scorrimento morbido: la transizione fotografa la pagina già al suo posto
       window.scrollTo({ top: target ? target.getBoundingClientRect().top + scrollY - 70 : opt.y || 0, behavior: "instant" });
     };
@@ -1553,7 +1585,9 @@
       const d = (alt && !newer ? alt : own && (typeof own.chg === "number" || own.note) ? own : alt) || {};
       // dal job anche i livelli: ultimo, apertura della seduta e chiusura precedente (per il dettaglio)
       const lv = d === alt && q ? { sym: q.sym, last: q.last, open: q.open, prev: q.prev } : {};
-      return Object.assign({ code: k, name: G.MARKETS[k][0], index: d === alt ? index : G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "" }, lv);
+      return Object.assign({ code: k, name: G.MARKETS[k][0], index: d === alt ? index : G.MARKETS[k][1], value: w[k], chg: typeof d.chg === "number" ? d.chg : null, time: d.time || "", note: d.note || "", story: (own && own.story) || "",
+        // l'ora della redazione è senza giorno: il giorno è quello del suo aggiornamento (serve quando non è oggi)
+        day: d === own && d.time ? (terminal && terminal.asOf) || "" : "" }, lv);
     }).sort((a, b) => b.value - a.value);
   };
 
@@ -1675,32 +1709,60 @@
     return Object.assign({}, m || {}, { classes, asOf: fresher ? quotes.asOf : m.asOf, label: fresher ? "" : (m && m.label) || "" });
   };
 
+  // ---------- cosa sta scritto in un quadrato della mappa ----------
+  // Si misura con il carattere vero (un canvas), alla grandezza del testo scelta nel menu: un nome o una variazione che
+  // non ci stanno interi non si scrivono (niente puntini, niente numeri tagliati dal bordo, niente righe una sull'altra).
+  const meas = document.createElement("canvas").getContext("2d");
+  // Nella mappa le cifre hanno tutte la stessa larghezza (tabular-nums), e il canvas non lo sa: si misurano come zeri,
+  // la cifra più larga, così un «+1,11%» non risulta più stretto di com'è disegnato
+  G.fitText = (texts, px, room, weight, fam) => texts.find((t) => {
+    if (!t) return false;
+    meas.font = (weight || 700) + " " + px + "px " + (fam || "sans-serif");
+    return meas.measureText(String(t).replace(/\d/g, "0")).width <= room;
+  }) || "";
+  // l'altezza che serve a un quadrato per avere il nome in alto e la variazione in basso senza toccarsi, e per il solo
+  // nome (rem: i pixel di 1rem). I numeri sono quelli del CSS di .tmap .tile: margini, grandezze, interlinea 1,15
+  G.tileNeed = (size, rem) => (size === "big" ? 9 + 1.15 * rem + 2 + 0.8625 * rem + 6 + 2 * rem + 9 + 2
+    : size === "med" ? 7 + 1.00625 * rem + 3 + 1.29375 * rem + 7 + 2
+    : size === "small" ? 5 + 0.8625 * rem + 2 + 0.8625 * rem + 5 + 2
+    : size === "small1" ? 5 + 0.8625 * rem + 5 + 2 : 3 + 0.71875 * rem + 3 + 2);
   G.drawMap = (el, items, opts) => {
     opts = opts || {};
     const W = el.clientWidth, H = el.clientHeight;
     if (!W || !H) return;
     const rects = G.squarify(items, W, H);
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, fam = getComputedStyle(el).fontFamily;
+    const fit = (texts, em, room, weight) => G.fitText(texts, em * rem, room, weight, fam);
     el.innerHTML = rects.map((r, k) => {
       const has = typeof r.chg === "number";
-      const cg = has ? G.pct(r.chg) : "";
+      const cg = has ? G.pct(r.chg) : "", name = G.tn(r.name);
       // la Borsa scelta, se ha i suoi titoli (Terminal, opts.enter): toccandola di nuovo si entra nell'indice
       const go = !!(opts.enter && r.code === opts.selected && opts.enter(r.code));
-      const label = G.tn(r.name) + (r.index ? ", " + r.index : "") + ", " + (has ? cg : G.L("nessun dato oggi", "no data today")) + G.L(", peso ", ", weight ") + G.wt(r.value) +
+      const label = name + (r.index ? ", " + r.index : "") + ", " + (has ? cg : G.L("nessun dato oggi", "no data today")) + G.L(", peso ", ", weight ") + G.wt(r.value) +
         (go ? G.L(". Tocca di nuovo per vedere i suoi titoli", ". Tap again to see its stocks") : "");
-      let size = r.w >= 170 && r.h >= 110 ? "big" : r.w >= 90 && r.h >= 56 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 22 && r.h >= 14 ? "tiny" : "none";
-      let inner = "";
-      if (!has) {
-        // senza dato: grigio con la sola sigla
-        inner = size === "none" ? "" : '<span class="a"><span class="nm">' + r.code + "</span></span>";
-      } else if (size === "big") {
-        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>" +
-          (go ? '<span class="go" aria-hidden="true">' + G.L("Titoli", "Stocks") + " ›</span>" : "");
-      } else if (size === "med") {
-        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
-      } else if (size === "small") {
-        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>" : "");
-      } else if (size === "tiny") {
-        inner = '<span class="a"><span class="nm">' + r.code + "</span></span>";
+      // la grandezza più grande in cui nome e variazione stanno interi: se no si scende di una, fino al quadrato muto
+      // (la variazione che non sta nel quadrato la mostra il Terminal sotto la mappa: r.shown dice se c'è)
+      const nmHTML = (t, ix) => '<span class="a"><span class="nm">' + G.esc(t) + "</span>" + (ix ? '<span class="ix">' + G.esc(ix) + "</span>" : "") + "</span>";
+      const cgHTML = '<span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
+      let size = "none", inner = "";
+      r.shown = false;
+      const start = r.w >= 170 && r.h >= 110 ? 0 : r.w >= 90 && r.h >= 56 ? 1 : r.w >= 40 && r.h >= 30 ? 2 : r.w >= 22 && r.h >= 14 ? 3 : 4;
+      if (start <= 0 && r.h >= G.tileNeed("big", rem) && (!has || fit([cg], 2, r.w - 14, 750))) {
+        size = "big";
+        inner = nmHTML(fit([name, r.code], 1, r.w - 20), has ? fit([r.index], 0.75, r.w - 20, 400) : "") + (has ? cgHTML : "") +
+          (has && go ? '<span class="go" aria-hidden="true">' + G.L("Titoli", "Stocks") + " ›</span>" : "");
+        r.shown = has;
+      } else if (start <= 1 && r.h >= G.tileNeed("med", rem) && (!has || fit([cg], 1.125, r.w - 12, 750)) && fit([name, r.code], 0.875, r.w - 18)) {
+        size = "med";
+        inner = nmHTML(fit([name, r.code], 0.875, r.w - 18)) + (has ? cgHTML : "");
+        r.shown = has;
+      } else if (start <= 2 && r.h >= G.tileNeed("small1", rem) && fit([r.code], 0.75, r.w - 12)) {
+        size = "small";
+        r.shown = has && r.h >= G.tileNeed("small", rem) && !!fit([cg], 0.75, r.w - 10, 750);
+        inner = nmHTML(r.code) + (r.shown ? cgHTML : "");
+      } else if (start <= 3 && r.h >= G.tileNeed("tiny", rem) && fit([r.code], 0.625, r.w - 8)) {
+        size = "tiny";
+        inner = nmHTML(r.code);
       }
       const style = "left:" + r.x.toFixed(1) + "px;top:" + r.y.toFixed(1) + "px;width:" + r.w.toFixed(1) + "px;height:" + r.h.toFixed(1) + "px;background:" + G.band(r.chg) + ";--k:" + k;
       const cls = "tile " + size + (has ? "" : " nodata");

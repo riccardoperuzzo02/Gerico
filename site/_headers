@@ -29,7 +29,7 @@
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-vurGt+FNpxhlU3dishvr2wLQnDA1HqidulCcTCNUAC0=' 'sha256-UU5gutolB5fBc3x6PLigFrb+EqcD9mCc+B6iavyI/d8=' 'sha256-b3mlm/zPFYm3n/8gv/fN+1G6yXQVu86RcvpYZdkmEjo=' 'sha256-UW56llrq3HLkS26/fE0zgJhIBLniwj3/Z879g/XE/p4=' https://s3.tradingview.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.tradingview-widget.com https://*.tradingview.com; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /404.html
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-5SnF5G0iEfW7njKp6EeHwbR84D8ztBRvleTymNmYqMg='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-XecQpP3mEPs3tMs/OUc9juGpZAna06uPuHyFyBVh8ZE='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; manifest-src 'self'
 /s/*
   Cache-Control: no-cache
   Content-Security-Policy: default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'

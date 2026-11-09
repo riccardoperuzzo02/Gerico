@@ -60,9 +60,11 @@ G.page("home", async function (P) {
   const themeOf = (k) => (/^t-/.test(k || "") ? themes.find((t) => "t-" + t.id === k) : null);
   const kwIn = (txt, t) => { const x = String(txt || "").toLowerCase(); return (t.keywords && t.keywords.length ? t.keywords : [t.label]).some((k) => k && x.includes(String(k).toLowerCase())); };
   const inTheme = (s, t) => (Array.isArray(s.themes) && !t.auto ? s.themes.includes(t.id) : kwIn([s.title, s.summary].concat(s.tags || []).join(" "), t));
+  // «seguiti» vale solo se si segue qualcosa: senza temi seguiti quella scheda non c'è, e si va a Tutte
   const sectionFromHash = () => {
-    const h = decodeURIComponent(location.hash.slice(1));
-    return h === "seguiti" || themeOf(h) ? h : TAB_OF[h] || "tutte";
+    const h = G.unhash(location.hash);
+    if (h === "seguiti") return state.follows.length ? h : "tutte";
+    return themeOf(h) ? h : TAB_OF[h] || "tutte";
   };
   const follows = (s) => (s.tags || []).some((t) => state.follows.includes(t));
   const followed = () => stories.filter(follows);
@@ -162,6 +164,12 @@ G.page("home", async function (P) {
   // alive: la prima pagina è ancora quella sullo schermo (i momenti liberi del browser non si spengono con la pagina)
   let feedVer = 0, prepTimer = 0, alive = true;
   const prepared = {};
+  // il dito è sullo schermo: le sezioni accanto non si preparano in quel momento (prepareSoon). Dichiarato qui, prima
+  // del primo disegno dell'elenco, che fa partire il timer che lo legge
+  let touching = false;
+  P.on(document, "touchstart", () => { touching = true; }, { passive: true, capture: true });
+  P.on(document, "touchend", () => { touching = false; }, { passive: true, capture: true });
+  P.on(document, "touchcancel", () => { touching = false; }, { passive: true, capture: true });
   // sul computer le brevi stanno nella colonna di destra, sotto i mercati: accanto alle notizie, non dopo
   const wideQ = window.matchMedia ? matchMedia("(min-width: 1000px)") : null;
   const brInSide = () => !!(wideQ && wideQ.matches);
@@ -182,7 +190,7 @@ G.page("home", async function (P) {
     if (!old) return;
     const h1 = box.offsetHeight, ghost = old.cloneNode(true);
     ghost.removeAttribute("aria-labelledby");
-    ghost.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    G.inertCopy(ghost);
     ghost.setAttribute("aria-hidden", "true");
     ghost.classList.add("side-ghost");
     box.appendChild(ghost);
@@ -307,6 +315,18 @@ G.page("home", async function (P) {
     $("ultim-p").addEventListener("click", () => {
       const p = $("ultim").classList.toggle("paused");
       $("ultim-p").setAttribute("aria-pressed", String(p));
+    });
+    // con la tastiera: il titolo che prende il fuoco si porta in vista, a fascia ferma (CSS .ultim.kbd); uscendo riparte
+    P.on(t, "focusin", (e) => {
+      const a = e.target.closest && e.target.closest("a");
+      if (!a || !a.matches(":focus-visible")) return;
+      $("ultim").classList.add("kbd");
+      a.scrollIntoView({ block: "nearest", inline: "center", behavior: "instant" });
+    });
+    P.on(t, "focusout", (e) => {
+      if (t.contains(e.relatedTarget)) return;
+      $("ultim").classList.remove("kbd");
+      t.parentElement.scrollLeft = 0;
     });
   }
 
@@ -546,7 +566,7 @@ G.page("home", async function (P) {
     ghost.className = "feed-ghost";
     ghost.setAttribute("aria-hidden", "true");
     ghost.querySelectorAll(".reveal").forEach((el) => el.classList.remove("reveal"));
-    ghost.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    G.inertCopy(ghost);
     // della copia basta la parte sullo schermo: meno da disegnare mentre si muove
     const bottom = innerHeight + 40;
     Array.from(feed.children).forEach((c, i) => { if (c.getBoundingClientRect().top > bottom && ghost.children[i]) ghost.children[i].dataset.cut = "1"; });
@@ -581,7 +601,6 @@ G.page("home", async function (P) {
   });
 
   state.section = sectionFromHash();
-  if (state.section === "seguiti" && !state.follows.length) state.section = "tutte";
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
   // passando dal telefono al computer (finestra allargata, tablet girato) le brevi cambiano colonna
   if (wideQ && wideQ.addEventListener) P.on(wideQ, "change", () => renderFeed(true));
@@ -651,15 +670,11 @@ G.page("home", async function (P) {
       c.style.cssText = "position:absolute;margin:0;left:" + (sr.left - fr.left).toFixed(1) + "px;width:" + sr.width.toFixed(1) + "px;top:" + (list.offsetHeight + sr.top - fr.bottom).toFixed(1) + "px";
       p.appendChild(c);
     }
-    p.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    G.inertCopy(p);
     return { frame, p, key: k, ver: feedVer, w: fr.width };
   }
   // a pagina ferma si preparano le due sezioni accanto: così il primo movimento del dito non costruisce niente
   // mai mentre il dito è sullo schermo, e una sezione per volta: ogni pezzo di lavoro sta in un momento libero
-  let touching = false;
-  P.on(document, "touchstart", () => { touching = true; }, { passive: true, capture: true });
-  P.on(document, "touchend", () => { touching = false; }, { passive: true, capture: true });
-  P.on(document, "touchcancel", () => { touching = false; }, { passive: true, capture: true });
   function prepareSoon() {
     if (!alive || !("ontouchstart" in window) || G.reduced()) return;
     clearTimeout(prepTimer);

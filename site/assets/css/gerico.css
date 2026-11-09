@@ -1931,3 +1931,8 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 @media (hover: hover) { .more-brevi:hover { background: var(--raised); } }
 #side-brevi .blk.fitted { display: flex; flex-direction: column; }
 #side-brevi .blk.fitted .more-brevi { margin-top: auto; }
+/* cambiando sezione sul computer: le notizie che scorrono di lato restano nella loro colonna */
+.feed.slide-clip { overflow-x: clip; }
+/* la lista delle brevi che esce, sopra quella nuova mentre sfuma */
+#side-brevi { position: relative; }
+#side-brevi .side-ghost { position: absolute; left: 0; right: 0; top: 0; margin-top: 0; pointer-events: none; }

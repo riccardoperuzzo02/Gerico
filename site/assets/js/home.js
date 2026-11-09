@@ -165,10 +165,33 @@ G.page("home", async function (P) {
   function renderSideBrevi() {
     const box = $("side-brevi");
     if (!box) return;
-    box.innerHTML = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section)) : "";
-    $("side").classList.toggle("with-brevi", !!box.innerHTML);
+    const html = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section)) : "";
+    // cambiando sezione sul computer: la lista vecchia sfuma sopra la nuova e il riquadro va alla sua altezza nuova
+    const old = box.dataset.shown && box.firstElementChild && box.offsetHeight && !G.reduced() && box.animate ? box.firstElementChild : null;
+    const h0 = old ? box.offsetHeight : 0;
+    if (old && html === box.dataset.html) return;
+    box.innerHTML = html;
+    box.dataset.html = html;
+    box.dataset.shown = "1";
+    $("side").classList.toggle("with-brevi", !!html);
     sideOpen = false;
     fitSide();
+    if (!old) return;
+    const h1 = box.offsetHeight, ghost = old.cloneNode(true);
+    ghost.removeAttribute("aria-labelledby");
+    ghost.querySelectorAll("[id]").forEach((el) => el.removeAttribute("id"));
+    ghost.setAttribute("aria-hidden", "true");
+    ghost.classList.add("side-ghost");
+    box.appendChild(ghost);
+    const o = { duration: Math.min(700, 320 + Math.abs(h1 - h0) * 0.25), easing: "cubic-bezier(0.45, 0, 0.2, 1)" };
+    box.style.overflow = "hidden";
+    const a = box.animate([{ height: h0 + "px" }, { height: h1 + "px" }], o);
+    ghost.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 200, easing: "ease-out", fill: "forwards" });
+    if (box.firstElementChild && box.firstElementChild !== ghost) {
+      box.firstElementChild.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 320, delay: 120, easing: "cubic-bezier(0.32, 0.72, 0, 1)", fill: "backwards" });
+    }
+    const done = () => { ghost.remove(); box.style.overflow = ""; };
+    a.finished.then(done, done);
   }
   // sul computer la colonna di destra finisce dove finisce la sinistra (di solito «Nei giorni scorsi»): le brevi che
   // non ci stanno aspettano sotto «Mostra altre N», e si aprono con un'animazione. Almeno 3 brevi si vedono sempre.
@@ -507,10 +530,13 @@ G.page("home", async function (P) {
   }
   // toccando una sezione l'elenco vecchio esce da un lato mentre il nuovo entra dall'altro, attaccati come le pagine
   // di un libro e interi: una copia del vecchio sopra il nuovo, solo transform
+  // sul computer, con la colonna di destra accanto, quello che scorre di lato resta dentro la colonna delle notizie
+  const clipFeed = (on) => { const f = $("feed").parentElement; if (f) f.classList.toggle("slide-clip", on && !stacked()); };
   function slideFeed(sgn) {
     // lo scorrimento si rimette sempre a mano: quando l'elenco cambia, il browser (scroll anchoring) lo sposterebbe da sé
     const feed = $("feed"), st = sectionTop(), y0 = scrollY, target = st.scroll !== null ? st.scroll : y0;
     if (G.reduced() || !feed.animate) { renderFeed(); scrollKeep(target); return; }
+    clipFeed(true);
     const ghost = feed.cloneNode(true);
     ghost.removeAttribute("id");
     ghost.className = "feed-ghost";
@@ -537,7 +563,8 @@ G.page("home", async function (P) {
     const W = fr.width + 28, D = 440, E = "cubic-bezier(0.32, 0.72, 0, 1)";
     ghost.animate([{ transform: "none" }, { transform: "translate3d(" + (-sgn * W) + "px,0,0)" }], { duration: D, easing: E, fill: "forwards" })
       .finished.then(() => ghost.remove(), () => ghost.remove());
-    feed.animate([{ transform: "translate3d(" + (sgn * W) + "px,0,0)" }, { transform: "none" }], { duration: D, easing: E });
+    const fa = feed.animate([{ transform: "translate3d(" + (sgn * W) + "px,0,0)" }, { transform: "none" }], { duration: D, easing: E });
+    fa.finished.then(() => clipFeed(false), () => clipFeed(false));
   }
   // passaggio animato verso la storia: il titolo toccato diventa il titolo della pagina successiva.
   // Il nome resta finché non tocchi altro, così tornando indietro il titolo rifà il percorso al contrario.
@@ -597,11 +624,13 @@ G.page("home", async function (P) {
     frame.style.visibility = "hidden";
     frame.style.top = st.top.toFixed(1) + "px";
     frame.style.height = h + "px";
+    const side2 = !stacked();
+    if (side2) { frame.style.left = fr.left.toFixed(1) + "px"; frame.style.right = "auto"; frame.style.width = fr.width.toFixed(1) + "px"; }
     const p = document.createElement("div");
     p.className = "feed-ghost feed-peek";
     p.setAttribute("aria-hidden", "true");
     p.style.top = "0px";
-    p.style.left = fr.left.toFixed(1) + "px";
+    p.style.left = (side2 ? 0 : fr.left).toFixed(1) + "px";
     p.style.width = fr.width + "px";
     p.style.height = h + "px";
     p.style.transform = "translate3d(" + (d * (fr.width + 28)) + "px,0,0)";
@@ -668,9 +697,10 @@ G.page("home", async function (P) {
       r.frame.style.height = h + "px";
       r.p.style.height = h + "px";
       r.frame.style.visibility = "";
+      clipFeed(true);
       return r.p;
     },
-    drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); prepareSoon(); },
+    drop: (p) => { (p.parentElement && p.parentElement.classList.contains("peek-frame") ? p.parentElement : p).remove(); clipFeed(false); prepareSoon(); },
     commit: (d, k) => {
       k = k || step(d);
       const push = !noPush;
@@ -681,6 +711,7 @@ G.page("home", async function (P) {
       state.section = k;
       // l'indirizzo cambia per il tasto indietro (pushState: niente scorrimenti del browser); da indietro/avanti è già cambiato
       if (push) goSec(k);
+      clipFeed(false);
       renderFeed(true);
       // subito, e con l'elenco vero esattamente dove stava la pagina accanto che lo copriva: niente salti in su o in giù,
       // anche se intanto la pagina si è mossa

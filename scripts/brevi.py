@@ -15,6 +15,8 @@ import sys
 from datetime import datetime
 from urllib.parse import urlparse
 
+from testo import senza_lineette
+
 SECTIONS = {"mondo", "italia", "economia", "mercati", "tecnologia"}
 
 
@@ -72,7 +74,7 @@ def main(dump, out):
         if not isinstance(it, dict):
             dropped += 1
             continue
-        title = re.sub(r"\s+", " ", str(it.get("title") or "")).strip()
+        title = senza_lineette(re.sub(r"\s+", " ", str(it.get("title") or "")).strip())
         url = str(it.get("url") or "").strip()
         key = url.split("#")[0].rstrip("/")
         if not title or not re.match(r"^https?://", url) or front_page(url) or key in taken \

@@ -12,11 +12,16 @@ della mappa (aggiornati una volta al mese), weights.json. Un giro senza novità 
 Nel sito finiscono solo dati editoriali: mai le preferenze degli utenti (data/users) né altro."""
 import json
 import os
+import re
 import sys
+import unicodedata
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 
+from testo import pulisci, senza_lineette
+
 STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "article", "facts", "divergences", "view", "open",
-                "sources", "firstSeen", "updated", "change", "tags", "history", "notCovered"]
+                "sources", "firstSeen", "updated", "change", "tags", "themes", "history", "notCovered"]
 SOURCE_FIELDS = ["name", "kind", "country", "area", "url", "angle", "stance", "at", "date"]
 ARCHIVE_DAYS = 7
 
@@ -61,7 +66,56 @@ def clean_story(raw, sid):
         x["url"] = clean_url(x.get("url"))
         srcs.append(x)
     s["sources"] = srcs
-    return s
+    # niente lineette nei testi pubblicati (regola di stile della redazione)
+    return pulisci(s)
+
+
+# temi che non fanno da tema caldo: sono Paesi o aree troppo larghi per una scheda
+GENERICI = {"stati uniti", "usa", "europa", "italia", "mondo", "economia", "mercati", "ue", "unione europea", "cina"}
+
+
+def slug(t):
+    t = unicodedata.normalize("NFKD", str(t)).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:40]
+
+
+def tocca(s, t):
+    """Una storia è del tema se lo ha in themes; le storie senza themes, e i temi ricavati dai tag, per parole chiave."""
+    if isinstance(s.get("themes"), list) and not t.get("auto"):
+        return t["id"] in s["themes"]
+    txt = " ".join([s.get("title") or "", s.get("summary") or ""] + [str(x) for x in s.get("tags") or []]).lower()
+    return any(k.lower() in txt for k in t["keywords"])
+
+
+def temi_caldi(dump, live):
+    """I 3 temi caldi delle schede della prima pagina: quelli della redazione (meta/temi) con almeno una storia live;
+    finché mancano, i tag più presenti nelle storie live, pesati per importanza."""
+    doc = load(os.path.join(dump, "meta", "temi.json")) or {}
+    out = []
+    for t in doc.get("temi") or [] if isinstance(doc, dict) else []:
+        if not isinstance(t, dict):
+            continue
+        label = senza_lineette(str(t.get("label") or "").strip())[:24]
+        tid = slug(t.get("id") or label)
+        if not label or not tid or any(x["id"] == tid for x in out):
+            continue
+        kw = [str(k).strip() for k in t.get("keywords") or [] if str(k).strip()][:10] or [label]
+        out.append({"id": tid, "label": label, "keywords": kw, "since": str(t.get("since") or "")[:10]})
+    out = [t for t in out if any(tocca(s, t) for s in live)][:3]
+    if len(out) < 3:
+        peso = Counter()
+        for s in live:
+            r = s.get("rank") if isinstance(s.get("rank"), int) else 15
+            for tag in s.get("tags") or []:
+                if str(tag).strip().lower() not in GENERICI:
+                    peso[str(tag).strip()] += max(1, 16 - r)
+        for tag, _ in peso.most_common():
+            if len(out) >= 3:
+                break
+            if any(x["id"] == slug(tag) or tag.lower() in (k.lower() for k in x["keywords"]) for x in out):
+                continue
+            out.append({"id": slug(tag), "label": tag, "keywords": [tag], "since": "", "auto": True})
+    return out
 
 
 def derive_terminal(markets):
@@ -114,7 +168,7 @@ def main(dump, out):
     if live:
         edition = {"generatedAt": now.isoformat(timespec="seconds"), "lastRun": meta.get("lastRun"),
                    "outlets": meta.get("outlets") or [], "quality": meta.get("quality") or {},
-                   "stories": live, "archive": archive}
+                   "themes": temi_caldi(dump, live), "stories": live, "archive": archive}
     markets = load(os.path.join(dump, "markets", "snapshot.json"))
     agenda = load(os.path.join(dump, "agenda", "today.json"))
     terminal = load(os.path.join(dump, "terminal", "snapshot.json"))
@@ -144,6 +198,8 @@ def main(dump, out):
         os.replace(tmp, path)
         print(f"  {fname}: {os.path.getsize(path):,} byte")
     print(f"Storie live: {len(live)}, archiviate negli ultimi {ARCHIVE_DAYS} giorni: {len(archive)}")
+    if edition:
+        print("Temi caldi: " + ", ".join(t["label"] + (" (dai tag)" if t.get("auto") else "") for t in edition["themes"]))
     if terminal:
         print(f"Indici per la mappa: {len(terminal.get('indices') or [])}" + (" (ricavati dai mercati)" if terminal.get("derived") else ""))
     if not os.path.exists(os.path.join(out, "weights.json")):

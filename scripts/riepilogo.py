@@ -13,6 +13,8 @@ import re
 import sys
 from datetime import datetime
 
+from testo import senza_lineette
+
 
 def main(dump, out):
     path = os.path.join(dump, "riepilogo", "today.json")
@@ -22,7 +24,7 @@ def main(dump, out):
     except (OSError, ValueError):
         print("  riepilogo.json: nessun riepilogo nel database, lascio il file com'era")
         return
-    text = re.sub(r"[ \t]+", " ", str(doc.get("text") or "")).strip()
+    text = senza_lineette(re.sub(r"[ \t]+", " ", str(doc.get("text") or "")).strip())
     try:
         when = datetime.fromisoformat(str(doc.get("asOf")).replace("Z", "+00:00"))
     except ValueError:

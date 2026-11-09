@@ -53,6 +53,9 @@ def check_data(site):
                 r = s.get("rank")
                 need(r is None or (isinstance(r, int) and not isinstance(r, bool)), f"edition.json: {s.get('id')}: rank {r!r} non è un numero intero")
         need(isinstance(ed.get("archive", []), list) if isinstance(ed, dict) else False, "edition.json: archive non è una lista")
+        th = ed.get("themes", []) if isinstance(ed, dict) else []
+        need(isinstance(th, list) and len(th) <= 3 and all(isinstance(t, dict) and t.get("id") and t.get("label") for t in th),
+             "edition.json: themes deve essere una lista di al massimo 3 temi con id e label")
     for name, key in (("markets.json", "classes"), ("agenda.json", "items"), ("terminal.json", "indices")):
         path = os.path.join(data, name)
         if not os.path.exists(path):

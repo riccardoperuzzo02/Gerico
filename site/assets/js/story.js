@@ -119,7 +119,13 @@ G.page("story", async function (P) {
       esc([G.secLabel(nx.section), G.srcCount(nx.sources)].filter(Boolean).join(" · ")) + "</span></a></nav>"
     : at >= 0 ? '<nav class="next" aria-label="' + G.L("Fine dell'edizione", "End of the edition") + '"><a href="index.html"><span class="next-l">' + G.L("Fine dell'edizione", "End of the edition") + '</span><span class="next-t">' + G.L("Torna alla prima pagina", "Back to the front page") + "</span></a></nav>" : "";
   // prima i fatti (l'articolo), poi cosa non si sa, poi il parere, dichiarato, e le fonti
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + (articleHTML || factsHTML);
+  // la firma: la redazione di GERICO che segue quella sezione. Gli articoli li scrive l'intelligenza artificiale sulle
+  // fonti in fondo alla pagina, e la firma lo dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
+  const DESK = G.en ? { mondo: "Foreign desk", italia: "Home desk", economia: "Economy desk", mercati: "Markets desk", tecnologia: "Technology desk" }
+    : { mondo: "Redazione Esteri", italia: "Redazione Interni", economia: "Redazione Economia", mercati: "Redazione Mercati", tecnologia: "Redazione Tecnologia" };
+  const byline = '<p class="byline"><span class="by">' + esc(DESK[s.section] || G.L("Redazione", "Newsroom")) + '</span><span class="sep" aria-hidden="true">·</span><span class="ai">' +
+    G.L("Scritto con l'intelligenza artificiale sulle fonti elencate in fondo", "Written with artificial intelligence from the sources listed below") + "</span></p>";
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + byline + latest + (articleHTML || factsHTML);
   const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento

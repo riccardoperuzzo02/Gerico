@@ -53,26 +53,46 @@ G.page("home", async function (P) {
   const TAB_OF = {};
   TABS.forEach(([k, secs]) => secs.forEach((x) => { TAB_OF[x] = k; }));
   const inTab = (sec) => TAB_OF[sec] === state.section;
+  // i temi caldi: tre vicende che durano (una guerra, un'elezione), scelte dalla redazione; restano finché hanno
+  // storie live. Una storia è del tema se lo ha in themes; le storie vecchie, le brevi e i temi ricavati dai tag,
+  // per parole chiave (anche radici: «ucrain» trova Ucraina e ucraini)
+  const themes = (Array.isArray(ed.themes) ? ed.themes : []).filter((t) => t && t.id && t.label).slice(0, 3);
+  const themeOf = (k) => (/^t-/.test(k || "") ? themes.find((t) => "t-" + t.id === k) : null);
+  const kwIn = (txt, t) => { const x = String(txt || "").toLowerCase(); return (t.keywords && t.keywords.length ? t.keywords : [t.label]).some((k) => k && x.includes(String(k).toLowerCase())); };
+  const inTheme = (s, t) => (Array.isArray(s.themes) && !t.auto ? s.themes.includes(t.id) : kwIn([s.title, s.summary].concat(s.tags || []).join(" "), t));
   const sectionFromHash = () => {
     const h = decodeURIComponent(location.hash.slice(1));
-    return h === "seguiti" ? h : TAB_OF[h] || "tutte";
+    return h === "seguiti" || themeOf(h) ? h : TAB_OF[h] || "tutte";
   };
   const follows = (s) => (s.tags || []).some((t) => state.follows.includes(t));
   const followed = () => stories.filter(follows);
   const visible = () => {
+    const th = themeOf(state.section);
+    if (th) return stories.filter((s) => inTheme(s, th));
     if (state.section === "tutte") return stories;
     if (state.section === "seguiti") return followed();
     return stories.filter((s) => inTab(s.section));
   };
-  // le brevi non hanno temi: nei Seguiti non compaiono
-  const visibleBrevi = () => (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || inTab(b.section))).slice(0, 15);
-  const visiblePast = () => (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
+  // le brevi non hanno temi: nei Seguiti non compaiono, in un tema caldo quelle con le sue parole nel titolo
+  const visibleBrevi = () => {
+    const th = themeOf(state.section);
+    if (th) return brevi.filter((b) => kwIn(b.title, th)).slice(0, 15);
+    return (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || inTab(b.section))).slice(0, 15);
+  };
+  const visiblePast = () => {
+    const th = themeOf(state.section);
+    if (th) return archive.filter((s) => inTheme(s, th)).slice(0, 8);
+    return (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
+  };
   function buildNav() {
     const items = [["tutte", G.L("Tutte", "All")]];
+    // dopo Tutte i temi caldi (con un pallino), poi le sezioni
+    themes.forEach((t) => { if (stories.some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
     const has = (secs) => stories.some((s) => secs.includes(s.section)) || brevi.some((b) => secs.includes(b.section));
     TABS.forEach(([k, secs]) => { if (has(secs)) items.push([k, G.SECTIONS[k]]); });
     if (state.follows.length) items.push(["seguiti", G.L("Seguiti", "Following")]);
-    $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
+    $("sections").innerHTML = items.map(([k, label, hot]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
+      (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
   }
   // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
   function markNav(k, quiet) {
@@ -145,8 +165,62 @@ G.page("home", async function (P) {
   function renderSideBrevi() {
     const box = $("side-brevi");
     if (!box) return;
-    box.innerHTML = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti") : "";
+    box.innerHTML = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section)) : "";
     $("side").classList.toggle("with-brevi", !!box.innerHTML);
+    sideOpen = false;
+    fitSide();
+  }
+  // sul computer la colonna di destra finisce dove finisce la sinistra (di solito «Nei giorni scorsi»): le brevi che
+  // non ci stanno aspettano sotto «Mostra altre N», e si aprono con un'animazione. Almeno 3 brevi si vedono sempre.
+  let sideOpen = false;
+  function fitSide() {
+    const box = $("side-brevi"), list = box && box.querySelector(".brevi");
+    if (!list) return;
+    const old = box.querySelector(".more-brevi");
+    if (old) old.remove();
+    const items = Array.from(list.children), sec = box.querySelector(".blk");
+    items.forEach((li) => { li.hidden = false; });
+    sec.classList.remove("fitted");
+    sec.style.minHeight = "";
+    if (sideOpen || !brInSide()) return;
+    const blocks = Array.from($("feed").children).filter((el) => !el.classList.contains("end") && !el.classList.contains("sr-only") && el.offsetHeight);
+    const last = blocks[blocks.length - 1];
+    if (!last) return;
+    const end = last.getBoundingClientRect().bottom;
+    const pad = sec.getBoundingClientRect().bottom - list.getBoundingClientRect().bottom;
+    // lo spazio per il pulsante: circa una riga e mezza
+    const btn = 52;
+    if (sec.getBoundingClientRect().bottom <= end + 1) return;
+    let keep = items.length;
+    while (keep > 3 && items[keep - 1].getBoundingClientRect().bottom + pad + btn > end) keep -= 1;
+    if (keep >= items.length) return;
+    items.slice(keep).forEach((li) => { li.hidden = true; });
+    // il riquadro finisce esattamente dove finisce la colonna di sinistra; il pulsante sta in fondo
+    sec.classList.add("fitted");
+    sec.style.minHeight = Math.max(0, end - sec.getBoundingClientRect().top) + "px";
+    const n = items.length - keep;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "more-brevi";
+    b.setAttribute("aria-expanded", "false");
+    b.textContent = G.L(n === 1 ? "Mostra un'altra breve" : "Mostra altre " + n + " brevi", n === 1 ? "Show one more" : "Show " + n + " more");
+    list.after(b);
+    b.addEventListener("click", () => {
+      const h0 = sec.offsetHeight;
+      sideOpen = true;
+      sec.classList.remove("fitted");
+      sec.style.minHeight = "";
+      const shown = items.slice(keep);
+      shown.forEach((li) => { li.hidden = false; });
+      b.remove();
+      if (G.reduced() || !sec.animate) return;
+      const h1 = sec.offsetHeight;
+      sec.style.overflow = "hidden";
+      const a = sec.animate([{ height: h0 + "px" }, { height: h1 + "px" }], { duration: Math.min(900, 300 + (h1 - h0) * 0.4), easing: "cubic-bezier(0.45, 0, 0.2, 1)" });
+      shown.forEach((li, k) => li.animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 320, delay: 80 + Math.min(k, 8) * 40, easing: "ease-out", fill: "backwards" }));
+      const done = () => { sec.style.overflow = ""; };
+      a.finished.then(done, done);
+    });
   }
   function renderFeed(viaTransition) {
     const feed = $("feed");
@@ -171,7 +245,7 @@ G.page("home", async function (P) {
         ? '<div class="empty"><h2>' + G.L("Nessuna storia sui temi che segui.", "No stories on the topics you follow.") + "</h2><p>" + G.L("I temi si seguono dalla pagina di ogni storia.", "You can follow topics from each story's page.") + "</p></div>"
         : '<div class="empty"><h2>' + G.L("Nessuna storia in questa sezione.", "No stories in this section.") + '</h2><p><a href="#">' + G.L("Torna a tutte le notizie", "Back to all the news") + "</a>.</p></div>") + pastHTML(past, true);
     }
-    const all = state.section === "tutte" || state.section === "seguiti";
+    const all = state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section);
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
     const end = '<p class="end"><strong>' + (state.section === "tutte" ? G.L("Fine dell'edizione.", "End of the edition.") : G.L("Fine della sezione.", "End of the section.")) + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
     const top = list.length
@@ -480,6 +554,17 @@ G.page("home", async function (P) {
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
   // passando dal telefono al computer (finestra allargata, tablet girato) le brevi cambiano colonna
   if (wideQ && wideQ.addEventListener) P.on(wideQ, "change", () => renderFeed(true));
+  // la colonna di sinistra cambia altezza (caratteri caricati, finestra più larga o più stretta): si rifà il conto
+  if (window.ResizeObserver) {
+    let fr = 0, lastH = 0;
+    P.keep(new ResizeObserver(() => {
+      const h = $("feed").offsetHeight;
+      if (Math.abs(h - lastH) < 2) return;
+      lastH = h;
+      cancelAnimationFrame(fr);
+      fr = requestAnimationFrame(fitSide);
+    })).observe($("feed"));
+  }
   P.every(renderNext, 30000);
   // prezzi nuovi a pagina aperta: ticker e riquadro Mercati; le sezioni accanto già pronte per lo swipe (che sul telefono
   // contengono il riquadro) si rifanno

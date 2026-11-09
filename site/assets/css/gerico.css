@@ -1915,3 +1915,19 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 /* notizie: l'ultima scheda dispari prende tutta la riga; sul computer le brevi nella colonna dei mercati */
 @media (min-width: 760px) { html.nuova .list > .item:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 @media (min-width: 1000px) { .side.with-brevi .mk-box { position: static; } }
+
+/* ========== temi caldi, firma, colonna delle brevi (9 novembre) ========== */
+/* i temi caldi nelle schede: un pallino rosso prima del nome */
+.sec-nav .hot-dot { display: inline-block; flex: none; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #C8102E; }
+/* la firma della redazione sotto il sommario, con la dichiarazione dell'intelligenza artificiale */
+.byline { margin-top: var(--f13, 13px); font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
+.byline .by { font-weight: 700; color: var(--ink); }
+.byline .sep { margin: 0 6px; }
+/* computer: le brevi che non stanno nella colonna di destra */
+.more-brevi {
+  display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin: var(--f8, 8px) 0 var(--f13, 13px);
+  border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font-family: var(--sans); font-size: 0.9375rem; font-weight: 700; cursor: pointer;
+}
+@media (hover: hover) { .more-brevi:hover { background: var(--raised); } }
+#side-brevi .blk.fitted { display: flex; flex-direction: column; }
+#side-brevi .blk.fitted .more-brevi { margin-top: auto; }

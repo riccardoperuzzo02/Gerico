@@ -181,6 +181,13 @@ def cmd_controlla(db=DB, quiet=False):
             problems.append(f"{where}: aggiornata oggi ma senza article, l'articolo di GERICO")
         if re.search(r"(testate|fonti|giornali)[^.]{0,40}\bconcord", article, re.I):
             problems.append(f"{where}: l'articolo parla di cosa concordano le testate (le testate sono le fonti, non l'argomento)")
+        if not article.strip():
+            problems.append(f"{where}: storia live senza article (ogni storia live è un articolo)")
+        for k in ("title", "summary", "article", "view"):
+            if re.search("[—–]", str(s.get(k) or "")):
+                problems.append(f"{where}.{k}: c'è una lineetta («—» o «–»): virgola, punto, due punti o parentesi")
+        if not isinstance(s.get("themes"), list):
+            problems.append(f"{where}: manca themes (gli id dei temi caldi, anche [])")
         if s.get("section") not in SECTIONS:
             problems.append(f"{where}: section «{s.get('section')}» non valida")
         names = []
@@ -238,6 +245,13 @@ def cmd_controlla(db=DB, quiet=False):
         words = len((riepilogo.get("text") or "").split())
         if riepilogo.get("date") == today and not 380 <= words <= 450:
             problems.append(f"riepilogo/today: {words} parole (servono 380-450)")
+
+    temi = (load(os.path.join(db, "meta", "temi.json"), {}) or {}).get("temi") or []
+    if len(temi) != 3:
+        problems.append(f"meta/temi: {len(temi)} temi (ne servono 3)")
+    for t in temi:
+        if not any(t.get("id") in (s.get("themes") or []) for _sid, s in live):
+            problems.append(f"meta/temi: il tema «{t.get('label')}» non ha storie live")
 
     meta = load(os.path.join(db, "meta", "status.json"), {}) or {}
     check_time(meta.get("lastRun"), "meta/status.lastRun", problems)

@@ -6,21 +6,21 @@ G.page("story", async function (P) {
   G.initPrefs();
 
   const CHEV = '<svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg>';
-  const back = '<a class="back" id="back" href="index.html" data-dir="back"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>Prima pagina</a>';
-  const topBar = '<div class="story-top">' + back + '<button type="button" class="share" id="share">Condividi</button></div>';
+  const back = '<a class="back" id="back" href="index.html" data-dir="back"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>' + G.L("Prima pagina", "Front page") + "</a>";
+  const topBar = '<div class="story-top">' + back + '<button type="button" class="share" id="share">' + G.L("Condividi", "Share") + "</button></div>";
   const id = new URLSearchParams(location.search).get("id") || "";
   const [ed, mk0, qt] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes")]);
   // i mercati collegati con i numeri più freschi (job dei prezzi o redazione, G.withQuotes)
   const mk = G.withQuotes(mk0, qt);
   if (!ed) {
-    $("story").innerHTML = back + '<div class="empty"><h1>La storia non si è caricata.</h1><p>Può essere la connessione. Riprova tra poco.</p>' +
-      '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
+    $("story").innerHTML = back + '<div class="empty"><h1>' + G.L("La storia non si è caricata.", "The story did not load.") + "</h1><p>" + G.L("Può essere la connessione. Riprova tra poco.", "It may be the connection. Try again shortly.") + "</p>" +
+      '<p><button type="button" class="btn-retry" id="retry">' + G.L("Riprova", "Try again") + "</button></p></div>";
     $("retry").addEventListener("click", () => location.reload());
     return;
   }
   const s = (ed.stories || []).concat(ed.archive || []).find((x) => x.id === id);
   if (!s) {
-    $("story").innerHTML = back + '<div class="empty"><h1>Questa storia non c\'è più.</h1><p>GERICO tiene le storie per una settimana. <a href="index.html">Torna alla prima pagina</a>.</p></div>';
+    $("story").innerHTML = back + '<div class="empty"><h1>' + G.L("Questa storia non c'è più.", "This story is no longer here.") + "</h1><p>" + G.L("GERICO tiene le storie per una settimana.", "GERICO keeps stories for a week.") + ' <a href="index.html">' + G.L("Torna alla prima pagina", "Back to the front page") + "</a>.</p></div>";
     return;
   }
   const title = G.headline(s);
@@ -42,10 +42,11 @@ G.page("story", async function (P) {
   } catch (err) { /* niente */ }
 
   // ---------- testa: sezione, ora e fonti, titolo, sommario ----------
-  const when = s.status === "archived" ? "archiviata" : s.updated ? "aggiornata " + G.when(s.updated) : "";
+  const when = s.status === "archived" ? G.L("archiviata", "archived") : s.updated ? G.L("aggiornata ", "updated ") + G.when(s.updated) : "";
   const nSrcs = G.srcCount(s.sources);
   const sep = '<span class="sep" aria-hidden="true">·</span>';
-  const metaHTML = '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" + (when ? sep + "<span>" + esc(when) + "</span>" : "") + (nSrcs ? sep + "<span>" + esc(nSrcs) + "</span>" : "");
+  const metaHTML = '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" + (when ? sep + "<span>" + esc(when) + "</span>" : "") + (nSrcs ? sep + "<span>" + esc(nSrcs) + "</span>" : "") +
+    (G.en && s.untranslated ? sep + "<span>in Italian</span>" : "");
   const upd = G.updatedLabel(s, G.firstRunToday(ed.stories));
   const latest = upd ? '<p class="latest"><strong>' + esc(upd) + ".</strong> " + esc(s.change) + "</p>" : "";
 
@@ -57,21 +58,21 @@ G.page("story", async function (P) {
   const facts = art.length ? [] : s.facts || [];
   const factsHTML = facts.length ? '<ul class="facts">' + facts.map((f) => {
     const who = Array.isArray(f.who) && f.who.length ? f.who.join(", ") : "";
-    return '<li><p class="tx">' + esc(f.text) + "</p>" + (who ? '<p class="who">' + esc("Fonti: " + who) + "</p>" : "") + "</li>";
+    return '<li><p class="tx">' + esc(f.text) + "</p>" + (who ? '<p class="who">' + esc(G.L("Fonti: ", "Sources: ") + who) + "</p>" : "") + "</li>";
   }).join("") + "</ul>" : "";
   const divs = art.length ? "" : (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + '</h3><dl class="pos-list' + ((d.positions || []).length === 2 ? " two" : "") + '">' +
     (d.positions || []).map((p) => '<div class="pos"><dt>' + esc((p.who || []).join(", ")) + "</dt><dd>" + esc(p.says) + "</dd></div>").join("") + "</dl></div>").join("");
-  const divBlock = divs ? '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Versioni diverse</h2>' + divs + "</section>" : "";
+  const divBlock = divs ? '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">' + G.L("Versioni diverse", "Different versions") + "</h2>" + divs + "</section>" : "";
 
   // ---------- cosa non si sa, parere, cronologia ----------
   const paras = G.paras(s.view).map((p) => "<p>" + esc(p) + "</p>").join("");
-  const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h">Il parere di GERICO</h2>' + paras + "</section>" : "";
+  const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h">' + G.L("Il parere di GERICO", "GERICO's view") + "</h2>" + paras + "</section>" : "";
   const disclosure = (pid, label, inner, extra) => '<section class="block disc-block' + (extra ? " " + extra : "") + '"><h2><button type="button" class="disc" aria-expanded="false" aria-controls="' + pid + '">' +
     label + CHEV + '</button></h2><div class="collapse" id="' + pid + '" inert><div class="collapse-in">' + inner + "</div></div></section>";
   const histList = s.history || [];
-  const hist = histList.length >= 2 ? disclosure("hist", "Come è cambiata", '<ol class="hist">' +
+  const hist = histList.length >= 2 ? disclosure("hist", G.L("Come è cambiata", "How it changed"), '<ol class="hist">' +
     histList.map((h) => '<li><span class="at">' + esc(G.day(h.at) + ", " + G.hm(h.at)) + "</span><span>" + esc(h.text) + "</span></li>").join("") + "</ol>") : "";
-  const open = (s.open || []).length ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">Cosa non si sa ancora</h2><ul class="openq">' +
+  const open = (s.open || []).length ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">' + G.L("Cosa non si sa ancora", "What is not known yet") + '</h2><ul class="openq">' +
     s.open.map((q) => "<li>" + esc(q) + "</li>").join("") + "</ul></section>" : "";
 
   // ---------- fonti, mercati collegati, temi ----------
@@ -82,26 +83,27 @@ G.page("story", async function (P) {
   const srcList = '<ul class="srcs">' + srcs.map((x) => {
     const u = G.safeUrl(x.url);
     const date = x.at ? G.day(x.at) : x.date ? G.dayOnly(x.date) : "";
-    const meta = [x.area || x.country, x.kind, date].filter(Boolean).join(" · ");
+    const meta = [G.tn(x.area || x.country), G.tn(x.kind), date].filter(Boolean).join(" · ");
     // un link a una prima pagina non prova il fatto: domani quella pagina dirà altro
-    const front = u && G.isFrontPage(u) ? '<span class="fp">pagina principale</span>' : "";
+    const front = u && G.isFrontPage(u) ? '<span class="fp">' + G.L("pagina principale", "home page") + "</span>" : "";
     return '<li><div class="src-top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") + front +
       "</div>" + (meta ? '<p class="meta2">' + esc(meta) + "</p>" : "") + (x.angle ? '<p class="angle">' + esc(x.angle) + "</p>" : "") + "</li>";
   }).join("") + "</ul>";
   const areas = AREAS.filter((a) => srcs.some((x) => x.area === a));
-  const srcIntro = areas.length > 1 ? '<p class="src-areas">Da ' + areas.length + " aree: " + esc(areas.join(", ")) + ".</p>" : "";
+  const srcIntro = areas.length > 1 ? '<p class="src-areas">' + G.L("Da ", "From ") + areas.length + G.L(" aree: ", " areas: ") + esc(areas.map(G.tn).join(", ")) + ".</p>" : "";
   // le testate si contano una volta; se di una testata ci sono più articoli, il titolo lo dice
   const nSrc = (s.sources || []).length, nOut = G.outlets(s.sources).length;
-  const srcTitle = nSrc === 1 ? "La fonte" : nOut === nSrc ? "Le " + nSrc + " fonti" : "Le " + nOut + " testate, " + nSrc + " articoli";
+  const srcTitle = G.en ? (nSrc === 1 ? "The source" : nOut === nSrc ? "The " + nSrc + " sources" : "The " + nOut + " outlets, " + nSrc + " articles")
+    : nSrc === 1 ? "La fonte" : nOut === nSrc ? "Le " + nSrc + " fonti" : "Le " + nOut + " testate, " + nSrc + " articoli";
   const linked = [];
   ((mk && mk.classes) || []).forEach((c) => (c.items || []).forEach((it) => { if (it.story === s.id) linked.push({ it, c }); }));
-  const linkedHTML = linked.length ? '<section class="linked" aria-label="Mercati collegati"><h2>Mercati collegati</h2><table><tbody>' +
-    linked.map(({ it, c }) => '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
+  const linkedHTML = linked.length ? '<section class="linked" aria-label="' + G.L("Mercati collegati", "Related markets") + '"><h2>' + G.L("Mercati collegati", "Related markets") + "</h2><table><tbody>" +
+    linked.map(({ it, c }) => '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
       '</td><td class="mv ' + G.tone(it, c.key) + '">' + esc(typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it)) + "</td></tr>").join("") +
-    '</tbody></table><p class="when">' + esc(G.mkWhen(mk)) + '</p><a class="more" href="terminal.html">Tutti i mercati</a></section>' : "";
+    '</tbody></table><p class="when">' + esc(G.mkWhen(mk)) + '</p><a class="more" href="terminal.html">' + G.L("Tutti i mercati", "All markets") + "</a></section>" : "";
   const follows = G.follows();
-  const tagsHTML = (s.tags || []).length ? '<section class="tagbox" aria-label="Temi"><h2>Segui questi temi</h2><div class="tags">' +
-    s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(t) + "</button>").join("") + "</div></section>" : "";
+  const tagsHTML = (s.tags || []).length ? '<section class="tagbox" aria-label="' + G.L("Temi", "Topics") + '"><h2>' + G.L("Segui questi temi", "Follow these topics") + '</h2><div class="tags">' +
+    s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(G.tn(t)) + "</button>").join("") + "</div></section>" : "";
 
   // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
   const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcIntro + srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
@@ -112,10 +114,10 @@ G.page("story", async function (P) {
   const nx = at >= 0 ? order[at + 1] : null;
   const pv = at > 0 ? order[at - 1] : null;
   const nextHTML = nx
-    ? '<nav class="next" aria-label="Prossima notizia"><a href="' + G.storyUrl(nx) + '" data-id="' + esc(nx.id) + '" data-sec="' + esc(G.secLabel(nx.section)) + '">' +
-      '<span class="next-l">Prossima notizia</span><span class="next-t">' + esc(G.headline(nx)) + '</span><span class="next-m">' +
+    ? '<nav class="next" aria-label="' + G.L("Prossima notizia", "Next story") + '"><a href="' + G.storyUrl(nx) + '" data-id="' + esc(nx.id) + '" data-sec="' + esc(G.secLabel(nx.section)) + '">' +
+      '<span class="next-l">' + G.L("Prossima notizia", "Next story") + '</span><span class="next-t">' + esc(G.headline(nx)) + '</span><span class="next-m">' +
       esc([G.secLabel(nx.section), G.srcCount(nx.sources)].filter(Boolean).join(" · ")) + "</span></a></nav>"
-    : at >= 0 ? '<nav class="next" aria-label="Fine dell\'edizione"><a href="index.html"><span class="next-l">Fine dell\'edizione</span><span class="next-t">Torna alla prima pagina</span></a></nav>' : "";
+    : at >= 0 ? '<nav class="next" aria-label="' + G.L("Fine dell'edizione", "End of the edition") + '"><a href="index.html"><span class="next-l">' + G.L("Fine dell'edizione", "End of the edition") + '</span><span class="next-t">' + G.L("Torna alla prima pagina", "Back to the front page") + "</span></a></nav>" : "";
   // prima i fatti (l'articolo), poi cosa non si sa, poi il parere, dichiarato, e le fonti
   const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + (articleHTML || factsHTML);
   const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;
@@ -159,7 +161,7 @@ G.page("story", async function (P) {
   async function share() {
     const url = /^[a-z0-9][a-z0-9-]{0,150}$/.test(id) ? new URL("s/" + id, location.href).href : location.href;
     if (navigator.share) { try { await navigator.share({ title: title + " · GERICO", url }); } catch (err) { /* annullato */ } return; }
-    try { await navigator.clipboard.writeText(url); G.toast("Link copiato"); } catch (err) { G.toast("Copia il link dalla barra degli indirizzi"); }
+    try { await navigator.clipboard.writeText(url); G.toast(G.L("Link copiato", "Link copied")); } catch (err) { G.toast(G.L("Copia il link dalla barra degli indirizzi", "Copy the link from the address bar")); }
   }
   // passaggio verso la notizia successiva: il titolo della scheda diventa il titolo della pagina dopo
   const handoff = (toNext) => {

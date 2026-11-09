@@ -6,7 +6,7 @@ G.page("terminal", async function (P) {
   G.initPrefs();
 
   // ---------- orologio ----------
-  const tick = () => { $("clock").textContent = "Roma, " + G.romeNow().hm; };
+  const tick = () => { $("clock").textContent = G.L("Roma, ", "Rome, ") + G.romeNow().hm; };
   tick();
   P.every(tick, 30000);
 
@@ -14,8 +14,9 @@ G.page("terminal", async function (P) {
   const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
   $("legend").innerHTML = '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
     '<span class="t-ticks"><span style="left:16.67%">−1%</span><span style="left:50%">0</span><span style="left:83.33%">+1%</span></span></span>' +
-    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>nessun dato</span>' +
-    '<span class="sr-only">Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c\'è il dato.</span>';
+    '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>' + G.L("nessun dato", "no data") + "</span>" +
+    '<span class="sr-only">' + G.L("Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c'è il dato.",
+      "Red if the market fell, green if it rose: the stronger the colour, the bigger the move, up to 1% or more. Grey if there is no data today.") + "</span>";
 
   // la colonna di lato compare con i dati (più sotto); se qualcosa si rompe prima, compare comunque
   const showSide = () => { const side = document.querySelector(".t-side"); if (side) side.classList.add("ready"); };
@@ -43,20 +44,20 @@ G.page("terminal", async function (P) {
   function renderDetail(items) { $("detail").innerHTML = detailHTML(items, state.sel, state.view); }
   function detailHTML(items, sel, view) {
     const it = items.find((x) => x.code === sel);
-    if (!it) return "<p>Tocca un quadrato per vedere il dettaglio.</p>";
+    if (!it) return "<p>" + G.L("Tocca un quadrato per vedere il dettaglio.", "Tap a square to see the details.") + "</p>";
     const basis = view === "europa" ? "MSCI Europe" : "MSCI ACWI";
     const cg = typeof it.chg === "number"
       ? '<b class="' + (it.chg > 0 ? "t-up" : it.chg < 0 ? "t-down" : "") + '">' + G.pct(it.chg) + "</b>"
-      : "nessun dato oggi";
-    let html = "<p><b>" + esc(it.name) + "</b>" + (it.index ? ", " + esc(it.index) : "") + ": " + cg + ". Peso " + G.wt(it.value) + " nell'indice " + basis + ".</p>";
+      : G.L("nessun dato oggi", "no data today");
+    let html = "<p><b>" + esc(G.tn(it.name)) + "</b>" + (it.index ? ", " + esc(it.index) : "") + ": " + cg + G.L(". Peso ", ". Weight ") + G.wt(it.value) + G.L(" nell'indice ", " in the ") + basis + G.L(".", " index.") + "</p>";
     if (typeof it.last === "number") {
-      const lv = ["ultimo " + G.price(it.sym, it.last)].concat(typeof it.open === "number" ? ["apertura " + G.price(it.sym, it.open)] : [], typeof it.prev === "number" ? ["chiusura precedente " + G.price(it.sym, it.prev)] : []);
+      const lv = [G.L("ultimo ", "last ") + G.price(it.sym, it.last)].concat(typeof it.open === "number" ? [G.L("apertura ", "open ") + G.price(it.sym, it.open)] : [], typeof it.prev === "number" ? [G.L("chiusura precedente ", "previous close ") + G.price(it.sym, it.prev)] : []);
       html += "<p>" + esc(G.cap(lv.join(" · "))) + ".</p>";
     }
     if (it.note) html += "<p>" + esc(it.note) + "</p>";
-    else if (it.time) html += "<p>Dato delle " + esc(it.time) + ".</p>";
+    else if (it.time) html += "<p>" + G.L("Dato delle ", "Data at ") + esc(it.time) + ".</p>";
     const s = linkedStory(it.code);
-    if (s) html += '<p>Storia collegata: <a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
+    if (s) html += "<p>" + G.L("Storia collegata: ", "Related story: ") + '<a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a></p>";
     return html;
   }
   // sotto la mappa solo le Borse con il quadrato troppo piccolo per scriverci la variazione (le altre si leggono già nel
@@ -69,7 +70,8 @@ G.page("terminal", async function (P) {
       '<button type="button" tabindex="-1" data-code="' + it.code + '" aria-pressed="' + (it.code === sel) + '"><span class="c">' + it.code + "</span>" +
       '<span class="v' + (it.chg > 0 ? " t-up" : it.chg < 0 ? " t-down" : "") + '">' + G.pct(it.chg) + "</span></button>").join("");
   };
-  const subText = (view) => "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + (view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI") + ".";
+  const subText = (view) => G.en ? "Each square is a stock market: the bigger it is, the more it weighs in the " + (view === "europa" ? "MSCI Europe index" : "MSCI ACWI world index") + "."
+    : "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice " + (view === "europa" ? "europeo MSCI Europe" : "mondiale MSCI ACWI") + ".";
   // la Borsa scelta in una vista: se lì non c'è, la più grande
   const selIn = (items, sel) => (items.some((x) => x.code === sel) ? sel : (items[0] || {}).code || "");
   // movimento della mappa: i quadrati compaiono con una dissolvenza, cambiando vista scivolano (FLIP), l'anello segue la scelta
@@ -206,7 +208,7 @@ G.page("terminal", async function (P) {
   // how: "flip" cambiando vista, "select" scegliendo un quadrato, niente al primo disegno e al ridimensionamento
   function drawMap(focusSel, how) {
     if (!wt) {
-      $("map-sub").textContent = "I pesi della mappa non sono disponibili in questo momento.";
+      $("map-sub").textContent = G.L("I pesi della mappa non sono disponibili in questo momento.", "The map weights are not available right now.");
       $("map").innerHTML = "";
       $("detail").innerHTML = "";
       return;
@@ -312,20 +314,20 @@ G.page("terminal", async function (P) {
   };
   function table(key, cols, target, extraNote, skip) {
     const c = cls(key);
-    if (!mk) { $(target).innerHTML = '<p class="t-na">Dati di mercato non disponibili.</p>'; return; }
+    if (!mk) { $(target).innerHTML = '<p class="t-na">' + G.L("Dati di mercato non disponibili.", "Market data not available.") + "</p>"; return; }
     const items = c ? (c.items || []).filter((it) => !(skip && skip(it))) : [];
-    if (!items.length) { $(target).innerHTML = '<p class="t-na t-warn">' + esc((c && c.note) || "Nessun dato verificato in questo aggiornamento.") + "</p>"; return; }
+    if (!items.length) { $(target).innerHTML = '<p class="t-na t-warn">' + esc((c && c.note) || G.L("Nessun dato verificato in questo aggiornamento.", "No verified data in this update.")) + "</p>"; return; }
     const common = commonNote(items);
     const notes = items.map((it) => ownNote(it.note, common));
     const rows = items.map((it, i) => {
       const tone = G.tone(it, key);
-      const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(" pb", "") : "";
+      const mv = typeof it.chg === "number" ? G.pctBare(it.chg) : typeof it.bp === "number" ? G.bps(it.bp).replace(/ (pb|bp)$/, "") : "";
       const num = typeof it.chg === "number" ? ' data-n="' + it.chg + '" data-f="pct"' : typeof it.bp === "number" ? ' data-n="' + it.bp + '" data-f="bp"' : "";
-      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
+      return '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + (notes[i] ? "<small>" + esc(notes[i]) + "</small>" : "") + "</th><td>" +
         esc(G.cleanValue(it.value)) + '</td><td class="mv' + (tone ? " t-" + tone : "") + '"' + num + ">" + esc(mv) + "</td></tr>";
     }).join("");
     // con il testo molto grande la tabella scorre di lato da sola, la pagina no
-    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? ", salvo dove indicato" : "") + "</p>" : "") + '<div class="t-scroll"><table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
+    $(target).innerHTML = (common ? '<p class="t-common">' + esc(common) + (notes.some(Boolean) ? G.L(", salvo dove indicato", ", unless stated") : "") + "</p>" : "") + '<div class="t-scroll"><table class="t-table"><thead><tr><th scope="col">' + cols[0] + '</th><th scope="col">' + cols[1] + '</th><th scope="col">' + cols[2] +
       "</th></tr></thead><tbody>" + rows + "</tbody></table></div>" + (c.note ? '<p class="t-note">' + esc(c.note) + "</p>" : "") + (extraNote ? '<p class="t-note">' + extraNote + "</p>" : "");
   }
 
@@ -334,7 +336,7 @@ G.page("terminal", async function (P) {
   const tnxIn = () => !!(qt0 && (qt0.groups || []).some((g) => (g.items || []).some((it) => it.sym === "^TNX" && typeof it.last === "number")));
   const treasury = (it) => /treasury/i.test(it.name || "") && tnxIn();
   function rates() {
-    table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.", treasury);
+    table("obbligazioni", G.en ? ["Bond", "Yield", "Basis points"] : ["Titolo", "Rendimento", "Punti base"], "rt", G.L("Rosso: rendimenti in salita, cioè prezzi in calo.", "Red: yields rising, which means prices falling."), treasury);
     const c = cls("obbligazioni"), all = c ? (c.items || []) : [];
     $("p-tassi").hidden = all.length > 0 && all.every(treasury);
   }
@@ -342,8 +344,9 @@ G.page("terminal", async function (P) {
   // una riga dell'agenda: ora, valuta, evento con i numeri sotto, impatto
   function agendaRow(o) {
     const cls = [o.past ? "past" : "", o.imp === "alto" ? "hi" : "", o.next ? "next" + (o.soon ? " soon" : "") : ""].filter(Boolean).join(" ");
+    const IMP = G.en ? { alto: "High", medio: "Medium", basso: "Low", festivo: "Holiday" } : {};
     return '<li' + (cls ? ' class="' + cls + '"' : "") + '><span class="tm">' + esc(o.time || "—") + "</span><span>" + esc(o.cur || "") +
-      '</span><span class="ev">' + esc(o.ev) + (o.nums ? "<small>" + esc(o.nums) + "</small>" : "") + '</span><span class="im ' + (o.imp || "") + '">' + esc(G.cap(o.imp || "")) + "</span></li>";
+      '</span><span class="ev">' + esc(o.ev) + (o.nums ? "<small>" + esc(o.nums) + "</small>" : "") + '</span><span class="im ' + (o.imp || "") + '">' + esc(IMP[o.imp] || G.cap(o.imp || "")) + "</span></li>";
   }
   // Forex Factory: oggi impatto alto e medio e festività; dei giorni dopo solo l'impatto alto
   const FF_TODAY = { alto: 1, medio: 1, festivo: 1 };
@@ -359,11 +362,11 @@ G.page("terminal", async function (P) {
     // nelle due (stessa valuta, orario entro 5 minuti) compare una volta, con le parole di GERICO e i numeri che mancano
     const rows = [];
     if (today) ag.items.forEach((it) => rows.push({ time: it.time || "", cur: it.currency || "", ev: it.event,
-      nums: [it.expected ? "atteso " + it.expected : "", it.previous ? "precedente " + it.previous : "", it.actual ? "effettivo " + it.actual : ""].filter(Boolean).join(" · "),
+      nums: [it.expected ? G.L("atteso ", "expected ") + G.numText(it.expected) : "", it.previous ? G.L("precedente ", "previous ") + G.numText(it.previous) : "", it.actual ? G.L("effettivo ", "actual ") + G.numText(it.actual) : ""].filter(Boolean).join(" · "),
       imp: ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "" }));
     const own = rows.length;
     ffToday.forEach((it) => {
-      const m = hmMin(it.time), nums = [it.forecast ? "previsione " + it.forecast : "", it.previous ? "precedente " + it.previous : ""].filter(Boolean).join(" · ");
+      const m = hmMin(it.time), nums = [it.forecast ? G.L("previsione ", "forecast ") + it.forecast : "", it.previous ? G.L("precedente ", "previous ") + it.previous : ""].filter(Boolean).join(" · ");
       const twin = m === null ? null : rows.slice(0, own).find((r) => r.cur === it.currency && hmMin(r.time) !== null && Math.abs(hmMin(r.time) - m) <= 5);
       if (twin) { if (!twin.nums) twin.nums = nums; if (it.impact === "alto") twin.imp = "alto"; return; }
       rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, nums, imp: it.impact });
@@ -375,20 +378,20 @@ G.page("terminal", async function (P) {
     if (next) {
       const mins = hmMin(next.time) - G.romeNow().min;
       soon = mins <= 15;
-      left = mins <= 0 ? "adesso" : mins < 60 ? "tra " + mins + " min" : "tra " + Math.floor(mins / 60) + " h " + String(mins % 60).padStart(2, "0") + " min";
+      left = mins <= 0 ? G.L("adesso", "now") : mins < 60 ? G.L("tra ", "in ") + mins + " min" : G.L("tra ", "in ") + Math.floor(mins / 60) + " h " + String(mins % 60).padStart(2, "0") + " min";
     }
     $("next").classList.toggle("soon", soon);
-    $("next").innerHTML = next ? "Prossimo ad alto impatto: <b>" + esc(next.time + " " + next.cur) + "</b> · " + esc(left) : "";
-    $("ag-h").textContent = "Agenda di oggi";
+    $("next").innerHTML = next ? G.L("Prossimo ad alto impatto: ", "Next high-impact event: ") + "<b>" + esc(next.time + " " + next.cur) + "</b> · " + esc(left) : "";
+    $("ag-h").textContent = G.L("Agenda di oggi", "Today's calendar");
     // un'agenda che manca o è troppo corta si dice in chiaro: chi la usa per i dati ad alto impatto deve saperlo
     const wd = G.romeNow().wd;
-    const warn = hasAg && !today ? "L'agenda di GERICO di oggi non è ancora arrivata."
-      : !ffOk && wd >= 1 && wd <= 5 && own < 3 ? "Agenda forse incompleta: controlla gli orari dei dati ad alto impatto su un calendario economico." : "";
+    const warn = hasAg && !today ? G.L("L'agenda di GERICO di oggi non è ancora arrivata.", "GERICO's calendar for today has not arrived yet.")
+      : !ffOk && wd >= 1 && wd <= 5 && own < 3 ? G.L("Agenda forse incompleta: controlla gli orari dei dati ad alto impatto su un calendario economico.", "The calendar may be incomplete: check the times of high-impact releases on an economic calendar.") : "";
     let html = warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "";
     html += rows.length ? '<ol class="t-agenda">' + rows.map((r) => agendaRow(Object.assign({}, r, { past: !!r.time && r.time < now, next: r === next, soon }))).join("") + "</ol>"
-      : '<p class="t-na">' + (ffOk || today ? "Oggi nessun evento ad alto o medio impatto." : "L'agenda di oggi non è ancora disponibile.") + "</p>";
+      : '<p class="t-na">' + (ffOk || today ? G.L("Oggi nessun evento ad alto o medio impatto.", "No high- or medium-impact events today.") : G.L("L'agenda di oggi non è ancora disponibile.", "Today's calendar is not available yet.")) + "</p>";
     if (ffWeek.length) {
-      const nums = (it) => [it.forecast ? "previsione " + it.forecast : "", it.previous ? "precedente " + it.previous : ""].filter(Boolean).join(" · ");
+      const nums = (it) => [it.forecast ? G.L("previsione ", "forecast ") + it.forecast : "", it.previous ? G.L("precedente ", "previous ") + it.previous : ""].filter(Boolean).join(" · ");
       // la tendina dei giorni dopo resta aperta o chiusa come l'ha lasciata chi legge, anche quando l'agenda si aggiorna
       const open = !!document.querySelector("#ag .t-ff-week[open]");
       let last = "";
@@ -397,12 +400,12 @@ G.page("terminal", async function (P) {
         if (it.date !== last) { last = it.date; day = '<li class="t-day">' + esc(G.cap(G.weekday(it.date + "T12:00:00Z")) + " " + G.dayOnly(it.date)) + "</li>"; }
         return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, nums: nums(it), imp: it.impact });
       }).join("");
-      html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>Prossimi giorni, impatto alto (" + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
+      html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
     }
     // da dove viene: una nota sola per le due fonti
     const srcs = (today ? (ag.sources || []).filter((x) => x && x.url).slice(0, 2).map((x) => ext(x.url, String(x.name || "").split(",")[0])) : [])
-      .concat(ffOk ? [ext("https://www.forexfactory.com/calendar", "Forex Factory") + " (letto " + esc(G.when(ff.asOf)) + ")"] : []);
-    html += '<p class="t-note">' + (srcs.length ? "Fonti: " + srcs.join(", ") + ". " : "") + "Orari in ora italiana" + (ffOk ? "; da Forex Factory solo impatto alto e medio" : "") + "." +
+      .concat(ffOk ? [ext("https://www.forexfactory.com/calendar", "Forex Factory") + G.L(" (letto ", " (read ") + esc(G.when(ff.asOf)) + ")"] : []);
+    html += '<p class="t-note">' + (srcs.length ? G.L("Fonti: ", "Sources: ") + srcs.join(", ") + ". " : "") + G.L("Orari in ora italiana", "Times are Italian time") + (ffOk ? G.L("; da Forex Factory solo impatto alto e medio", "; from Forex Factory only high and medium impact") : "") + "." +
       (today && ag.note ? " " + esc(ag.note) : "") + "</p>";
     $("ag").innerHTML = html;
   }
@@ -428,13 +431,14 @@ G.page("terminal", async function (P) {
     // l'ora dei dati più freschi tra prezzi del job, mappa e chiusure della redazione
     const asOf = [qt0 && qt0.asOf, tm && tm.asOf, mk && mk.asOf].filter((x) => x && !isNaN(Date.parse(x))).sort((a, b) => Date.parse(a) - Date.parse(b)).pop();
     // i prezzi arrivano ogni mezz'ora nelle ore di Borsa; le chiusure della redazione agli orari delle edizioni
-    $("st-line").textContent = !asOf ? "Dati non disponibili"
-      : qt0 && asOf === qt0.asOf ? "Prezzi aggiornati " + G.when(asOf) + ", ogni mezz'ora nelle ore di Borsa"
-      : "Aggiornato " + G.when(asOf) + " · prossimo " + G.nextUpdate();
+    $("st-line").textContent = !asOf ? G.L("Dati non disponibili", "Data not available")
+      : qt0 && asOf === qt0.asOf ? G.L("Prezzi aggiornati ", "Prices updated ") + G.when(asOf) + G.L(", ogni mezz'ora nelle ore di Borsa", ", every half hour during market hours")
+      : G.L("Aggiornato ", "Updated ") + G.when(asOf) + G.L(" · prossimo ", " · next ") + G.nextUpdate();
     // la data dei dati sta sotto la mappa, in una riga già riservata: nessun salto quando arriva
     if (asOf) {
       const stale = G.hoursAgo(asOf) > 30, w = G.when(asOf);
-      $("asof").textContent = stale ? "Dati del " + G.day(asOf) + ", non ancora aggiornati"
+      $("asof").textContent = G.en ? (stale ? "Data of " + G.day(asOf) + ", not yet updated" : "Data " + w)
+        : stale ? "Dati del " + G.day(asOf) + ", non ancora aggiornati"
         : /^alle /.test(w) ? "Dati delle " + w.slice(5) : /^il /.test(w) ? "Dati del " + w.slice(3) : "Dati di " + w;
       $("asof").classList.toggle("stale", stale);
     }
@@ -450,12 +454,12 @@ G.page("terminal", async function (P) {
   // da dove vengono i dati e quando: se l'ultimo aggiornamento non è riuscito si dice, con l'ora dei dati che restano
   function srcLine(id, d, label) {
     const stale = G.hoursAgo(d.asOf) > 30;
-    let t = label + (d.asOf ? " · " + (stale ? "dati del " + G.day(d.asOf) : "aggiornato " + G.when(d.asOf)) : "");
-    if (d.lastError && d.lastError.at) t += ". L'ultimo aggiornamento, " + G.when(d.lastError.at) + ", non è riuscito: restano i dati di prima.";
+    let t = label + (d.asOf ? " · " + (stale ? G.L("dati del ", "data of ") + G.day(d.asOf) : G.L("aggiornato ", "updated ") + G.when(d.asOf)) : "");
+    if (d.lastError && d.lastError.at) t += G.L(". L'ultimo aggiornamento, ", ". The last update, ") + G.when(d.lastError.at) + G.L(", non è riuscito: restano i dati di prima.", ", failed: the previous data remain.");
     $(id).textContent = t;
     $(id).classList.toggle("stale", stale || !!d.lastError);
   }
-  const ext = (url, text) => '<a href="' + esc(G.safeUrl(url)) + '" target="_blank" rel="noopener">' + esc(text) + '<span class="sr-only"> (si apre in un\'altra scheda)</span></a>';
+  const ext = (url, text) => '<a href="' + esc(G.safeUrl(url)) + '" target="_blank" rel="noopener">' + esc(text) + '<span class="sr-only"> ' + G.L("(si apre in un'altra scheda)", "(opens in a new tab)") + "</span></a>";
   let uid = 0;
   // riga che si apre: un pulsante e un pannello sotto (stessa animazione delle schede della storia)
   const opener = (cls, inner, body) => {
@@ -465,7 +469,9 @@ G.page("terminal", async function (P) {
   };
 
   // prezzi e grafici: un gruppo alla volta, ogni riga si apre sul grafico grande di tre mesi
-  const GROUP = { indici: "Indici", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
+  const GROUP = G.en ? { indici: "Indices", valute: "Currencies", tassi: "US rates", materie: "Commodities", cripto: "Crypto" }
+    : { indici: "Indici", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
+  const ND = G.L("n.d.", "n/a"), BP = G.L(" pb", " bp");
   let quotes = null, grKey = G.ls.get("gerico.grGroup", "valute"), grPrep = null, grVer = 0;
   function quoteRow(it, rates) {
     const d = rates ? it.bp : it.chg;
@@ -473,29 +479,29 @@ G.page("terminal", async function (P) {
     const first = (it.spark || [])[0];
     const trend = typeof first === "number" ? (rates ? first - it.last : it.last - first) : 0;
     const tr = trend > 0 ? "t-up" : trend < 0 ? "t-down" : "";
-    const mv = typeof d !== "number" ? "n.d." : rates ? G.signed(d, 1) + " pb" : G.pct(d);
-    const val = typeof it.last !== "number" ? "n.d." : rates ? G.num(it.last, 2) + "%" : G.price(it.sym, it.last);
-    const per = (k) => { const v = it[(rates ? "bp" : "chg") + k]; return typeof v !== "number" ? "n.d." : rates ? G.signed(v, 1) + " pb" : G.pct(v); };
+    const mv = typeof d !== "number" ? ND : rates ? G.signed(d, 1) + BP : G.pct(d);
+    const val = typeof it.last !== "number" ? ND : rates ? G.num(it.last, 2) + "%" : G.price(it.sym, it.last);
+    const per = (k) => { const v = it[(rates ? "bp" : "chg") + k]; return typeof v !== "number" ? ND : rates ? G.signed(v, 1) + BP : G.pct(v); };
     const big = '<div class="q-more"><span class="' + tr + '">' + G.spark(it.spark, 320, 112, "sp-big", true) + "</span>" +
       '<p class="q-range"><span>' + esc(G.dayOnly(it.sparkFrom)) + "</span><span>" + esc(G.dayOnly(it.date)) + "</span></p>" +
       '<dl class="q-stats">' +
-      (typeof it.open === "number" ? "<div><dt>Apertura</dt><dd>" + (rates ? G.num(it.open, 2) + "%" : G.price(it.sym, it.open)) + "</dd></div>" : "") +
-      (typeof it.prev === "number" ? "<div><dt>Chiusura prima</dt><dd>" + (rates ? G.num(it.prev, 2) + "%" : G.price(it.sym, it.prev)) + "</dd></div>" : "") +
-      '<div><dt>1 settimana</dt><dd>' + per("1w") + "</dd></div><div><dt>1 mese</dt><dd>" + per("1m") + "</dd></div><div><dt>3 mesi</dt><dd>" + per("3m") + "</dd></div>" +
-      "<div><dt>Massimo</dt><dd>" + (typeof it.hi === "number" ? (rates ? G.num(it.hi, 2) + "%" : G.price(it.sym, it.hi)) : "n.d.") + "</dd></div>" +
-      "<div><dt>Minimo</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : "n.d.") + "</dd></div></dl>" +
-      '<p class="t-note">' + (it.at ? "Ultimo prezzo " + esc(G.when(it.at)) + ". " : "") + ext(it.url, "Vedi su Yahoo Finance") + "</p></div>";
+      (typeof it.open === "number" ? "<div><dt>" + G.L("Apertura", "Open") + "</dt><dd>" + (rates ? G.num(it.open, 2) + "%" : G.price(it.sym, it.open)) + "</dd></div>" : "") +
+      (typeof it.prev === "number" ? "<div><dt>" + G.L("Chiusura prima", "Previous close") + "</dt><dd>" + (rates ? G.num(it.prev, 2) + "%" : G.price(it.sym, it.prev)) + "</dd></div>" : "") +
+      "<div><dt>" + G.L("1 settimana", "1 week") + "</dt><dd>" + per("1w") + "</dd></div><div><dt>" + G.L("1 mese", "1 month") + "</dt><dd>" + per("1m") + "</dd></div><div><dt>" + G.L("3 mesi", "3 months") + "</dt><dd>" + per("3m") + "</dd></div>" +
+      "<div><dt>" + G.L("Massimo", "High") + "</dt><dd>" + (typeof it.hi === "number" ? (rates ? G.num(it.hi, 2) + "%" : G.price(it.sym, it.hi)) : ND) + "</dd></div>" +
+      "<div><dt>" + G.L("Minimo", "Low") + "</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : ND) + "</dd></div></dl>" +
+      '<p class="t-note">' + (it.at ? G.L("Ultimo prezzo ", "Last price ") + esc(G.when(it.at)) + ". " : "") + ext(it.url, G.L("Vedi su Yahoo Finance", "See on Yahoo Finance")) + "</p></div>";
     return '<li class="q" data-sym="' + esc(it.sym) + '">' + opener("q-row",
-      '<span class="q-n">' + esc(it.name) + (it.stale ? "<small>fermo al " + esc(G.dayOnly(it.date)) + "</small>" : "") + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
+      '<span class="q-n">' + esc(G.tn(it.name)) + (it.stale ? "<small>" + G.L("fermo al ", "stuck at ") + esc(G.dayOnly(it.date)) + "</small>" : "") + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
       '<span class="q-v">' + esc(val) + '</span><span class="q-c ' + (good > 0 ? "t-up" : good < 0 ? "t-down" : "") + '">' + esc(mv) + "</span>", big) + "</li>";
   }
   // un gruppo di strumenti: lo stesso elenco per la pagina e per il gruppo accanto durante lo swipe
   function groupMarkup(key) {
     const g = quotes.groups.find((x) => x.key === key) || quotes.groups[0];
     const rates = g.key === "tassi";
-    return '<p class="q-head" aria-hidden="true"><span>Strumento</span><span>3 mesi</span><span>Ultimo</span><span>Oggi</span></p><ul class="q-list">' +
+    return '<p class="q-head" aria-hidden="true"><span>' + G.L("Strumento", "Instrument") + "</span><span>" + G.L("3 mesi", "3 months") + "</span><span>" + G.L("Ultimo", "Last") + "</span><span>" + G.L("Oggi", "Today") + '</span></p><ul class="q-list">' +
       g.items.map((it) => quoteRow(it, rates)).join("") + "</ul>" +
-      (rates ? '<p class="t-note">Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.</p>' : "");
+      (rates ? '<p class="t-note">' + G.L("Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.", "US Treasury yields. Red: yields rising, which means prices falling.") + "</p>" : "");
   }
   function drawGroup(openSym, still) {
     $("gr").innerHTML = groupMarkup(grKey);
@@ -516,7 +522,7 @@ G.page("terminal", async function (P) {
     if (!quotes || !groups.length) return;
     quotes = { groups };
     grVer += 1;
-    srcLine("gr-src", qt, "Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno");
+    srcLine("gr-src", qt, G.L("Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno", "Yahoo Finance, via yfinance. Three-month charts, one close per day"));
     const open = $("gr").querySelector('.q-row[aria-expanded="true"]');
     drawGroup(open && open.closest("[data-sym]") ? open.closest("[data-sym]").dataset.sym : "", true);
   }
@@ -528,7 +534,7 @@ G.page("terminal", async function (P) {
     }
     quotes = { groups };
     if (!groups.some((g) => g.key === grKey)) grKey = groups[0].key;
-    srcLine("gr-src", qt, "Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno");
+    srcLine("gr-src", qt, G.L("Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno", "Yahoo Finance, via yfinance. Three-month charts, one close per day"));
     $("gr-tabs").innerHTML = groups.map((g) => '<button type="button" data-g="' + g.key + '" aria-pressed="' + (g.key === grKey) + '">' + esc(GROUP[g.key] || g.label) + "</button>").join("");
     G.seg($("gr-tabs"), true);
     drawGroup();
@@ -602,21 +608,29 @@ G.page("terminal", async function (P) {
     if (!quotes) return null;
     const k = norm(c);
     if (k.length < 2) return null;
-    for (const g of quotes.groups) for (const it of g.items) if (norm(it.sym) === k || norm(it.name) === k) return { g: g.key, it };
+    for (const g of quotes.groups) for (const it of g.items) if (norm(it.sym) === k || norm(it.name) === k || norm(G.tn(it.name)) === k) return { g: g.key, it };
     return null;
   }
 
   // macro: le serie della Fed di St. Louis, ognuna con il dato, la data e il grafico; il riquadro porta alla serie su FRED
-  const MONTHS = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  const MONTHS = G.en ? ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    : ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  // i nomi delle serie FRED in inglese, per id
+  const MACRO_EN = {
+    DFEDTARU: "Fed: upper bound of the target range", ECBDFR: "ECB: deposit facility rate", DGS2: "2-year Treasury", DGS10: "10-year Treasury",
+    T10Y2Y: "US curve: 10-year minus 2-year", T10YIE: "US 10-year expected inflation", DTWEXBGS: "Dollar against other currencies (Fed index)",
+    CPIAUCSL: "US inflation", CPILFESL: "US core inflation", PCEPILFE: "Core PCE, the inflation measure the Fed watches", UNRATE: "US unemployment",
+    PAYEMS: "US jobs, added in the month", ICSA: "US jobless claims, weekly", CP0000EZ19M086NEST: "Euro area inflation"
+  };
   const macroDate = (s) => {
     const d = String(s || "");
     return /^\d{4}-\d{2}/.test(d) ? MONTHS[Number(d.slice(5, 7)) - 1] + " " + d.slice(0, 4) : "";
   };
   function macroVal(s, v) {
-    if (typeof v !== "number") return "n.d.";
+    if (typeof v !== "number") return ND;
     if (s.unit === "%") return G.num(v, s.freq === "m" ? 1 : 2) + "%";
-    if (s.unit === "pp") return G.signed(v, 2) + " punti";
-    if (s.unit === "mila") return (s.id === "PAYEMS" ? G.signed(v, 0) : G.num(v, 0)) + " mila";
+    if (s.unit === "pp") return G.signed(v, 2) + G.L(" punti", " points");
+    if (s.unit === "mila") return (s.id === "PAYEMS" ? G.signed(v, 0) : G.num(v, 0)) + G.L(" mila", "k");
     return G.num(v, 2);
   }
   // doppioni: il Treasury a 10 anni e il dollaro stanno già in «Prezzi e grafici», con il dato del giorno e il grafico
@@ -625,44 +639,46 @@ G.page("terminal", async function (P) {
   function renderMacro(mc) {
     const ss = ((mc && mc.series) || []).filter((s) => !(MACRO_DUP[s.id] && inCharts(MACRO_DUP[s.id])));
     if (!ss.length) return hide("p-macro", "MACRO");
-    srcLine("mc-src", mc, "FRED, Fed di St. Louis");
+    srcLine("mc-src", mc, G.L("FRED, Fed di St. Louis", "FRED, St. Louis Fed"));
     $("mc").innerHTML = '<div class="m-grid">' + ss.map((s) => {
-      const when = s.freq === "m" ? "dato di " + macroDate(s.date) : s.freq === "s" ? "settimana al " + G.dayOnly(s.date) : G.dayOnly(s.date);
-      return '<a class="m-card" href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener"><span class="m-n">' + esc(s.name) + "</span>" +
-        '<span class="m-v">' + esc(macroVal(s, s.last)) + '</span><span class="m-d">' + esc(when) + " · prima " + esc(macroVal(s, s.prev)) + "</span>" +
-        '<span class="m-sp">' + G.spark(s.spark, 120, 28, "sp") + '</span><span class="sr-only"> (apre la serie ' + esc(s.id) + " su FRED)</span></a>";
-    }).join("") + '</div><p class="t-note">Inflazione: variazione sullo stesso mese dell\'anno prima. Posti di lavoro: nuovi posti nel mese, in migliaia.</p>';
+      const when = s.freq === "m" ? G.L("dato di ", "data for ") + macroDate(s.date) : s.freq === "s" ? G.L("settimana al ", "week to ") + G.dayOnly(s.date) : G.dayOnly(s.date);
+      return '<a class="m-card" href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener"><span class="m-n">' + esc((G.en && MACRO_EN[s.id]) || s.name) + "</span>" +
+        '<span class="m-v">' + esc(macroVal(s, s.last)) + '</span><span class="m-d">' + esc(when) + G.L(" · prima ", " · before ") + esc(macroVal(s, s.prev)) + "</span>" +
+        '<span class="m-sp">' + G.spark(s.spark, 120, 28, "sp") + '</span><span class="sr-only"> ' + G.L("(apre la serie ", "(opens the series ") + esc(s.id) + G.L(" su FRED)", " on FRED)") + "</span></a>";
+    }).join("") + '</div><p class="t-note">' + G.L("Inflazione: variazione sullo stesso mese dell'anno prima. Posti di lavoro: nuovi posti nel mese, in migliaia.", "Inflation: change on the same month a year earlier. Jobs: new jobs in the month, in thousands.") + "</p>";
   }
 
   // tono delle notizie: per ogni mercato quanti titoli FinBERT legge come positivi, neutri o negativi
-  const LAB = { positive: ["positivo", "l-pos"], negative: ["negativo", "l-neg"], neutral: ["neutro", "l-neu"] };
+  const LAB = { positive: [G.L("positivo", "positive"), "l-pos"], negative: [G.L("negativo", "negative"), "l-neg"], neutral: [G.L("neutro", "neutral"), "l-neu"] };
   function renderSentiment(se) {
     const as = ((se && se.assets) || []).filter((a) => a && a.n);
     if (!as.length) return hide("p-sentiment", "SENTIMENT");
-    srcLine("se-src", se, "Titoli di Yahoo Finance delle ultime " + (se.hours || 72) + " ore, tono calcolato da FinBERT");
+    srcLine("se-src", se, G.L("Titoli di Yahoo Finance delle ultime ", "Yahoo Finance headlines from the last ") + (se.hours || 72) + G.L(" ore, tono calcolato da FinBERT", " hours, tone scored by FinBERT"));
     $("se").innerHTML = '<ul class="s-list">' + as.map((a) => {
       const pp = (a.pos / a.n) * 100, ng = (a.neg / a.n) * 100;
-      const tone = a.score > 0.15 ? ["più positivo", "t-up"] : a.score < -0.15 ? ["più negativo", "t-down"] : ["misto", ""];
+      const tone = a.score > 0.15 ? [G.L("più positivo", "more positive"), "t-up"] : a.score < -0.15 ? [G.L("più negativo", "more negative"), "t-down"] : [G.L("misto", "mixed"), ""];
       const news = (a.news || []).map((n) => {
         const l = LAB[n.label] || LAB.neutral;
         return '<li><span class="s-lab ' + l[1] + '">' + l[0] + "</span>" + ext(n.url, n.title) + "<small>" + esc([n.publisher, G.when(n.at)].filter(Boolean).join(" · ")) + "</small></li>";
       }).join("");
       return "<li>" + opener("s-row",
-        '<span class="s-n">' + esc(a.name) + "<small>" + a.n + (a.n === 1 ? " titolo" : " titoli") + "</small></span>" +
+        '<span class="s-n">' + esc(G.tn(a.name)) + "<small>" + a.n + (a.n === 1 ? G.L(" titolo", " headline") : G.L(" titoli", " headlines")) + "</small></span>" +
         '<span class="s-bar" aria-hidden="true"><i class="b-pos" style="width:' + pp.toFixed(1) + '%"></i><i class="b-neu" style="width:' + (100 - pp - ng).toFixed(1) + '%"></i><i class="b-neg" style="width:' + ng.toFixed(1) + '%"></i></span>' +
-        '<span class="s-t ' + tone[1] + '">' + tone[0] + '</span><span class="sr-only">: ' + a.pos + " positivi, " + a.neu + " neutri, " + a.neg + " negativi</span>",
+        '<span class="s-t ' + tone[1] + '">' + tone[0] + '</span><span class="sr-only">: ' + a.pos + G.L(" positivi, ", " positive, ") + a.neu + G.L(" neutri, ", " neutral, ") + a.neg + G.L(" negativi", " negative") + "</span>",
         '<ul class="s-news">' + news + "</ul>") + "</li>";
-    }).join("") + '</ul><p class="t-note">Verde i titoli positivi, grigio i neutri, rosso i negativi. FinBERT è un modello per testi finanziari in inglese: legge solo il titolo e sbaglia con ironia, domande e titoli acchiappaclic. Dice il tono delle notizie, non dove andrà il prezzo.</p>';
+    }).join("") + '</ul><p class="t-note">' + G.L("Verde i titoli positivi, grigio i neutri, rosso i negativi. FinBERT è un modello per testi finanziari in inglese: legge solo il titolo e sbaglia con ironia, domande e titoli acchiappaclic. Dice il tono delle notizie, non dove andrà il prezzo.",
+      "Green for positive headlines, grey for neutral, red for negative. FinBERT is a model for financial texts in English: it reads only the headline and gets irony, questions and clickbait wrong. It gives the tone of the news, not where the price will go.") + "</p>";
   }
 
   // documenti SEC: gli ultimi depositati da un gruppo di grandi società Usa
   function renderSec(sc) {
     if (!sc || !Array.isArray(sc.filings)) return hide("p-sec", "SEC");
-    srcLine("sc-src", sc, "SEC EDGAR, ultimi " + (sc.days || 30) + " giorni, " + ((sc.companies || []).length || "alcune") + " grandi società Usa");
+    srcLine("sc-src", sc, G.en ? "SEC EDGAR, last " + (sc.days || 30) + " days, " + ((sc.companies || []).length || "some") + " large US companies"
+      : "SEC EDGAR, ultimi " + (sc.days || 30) + " giorni, " + ((sc.companies || []).length || "alcune") + " grandi società Usa");
     $("sc").innerHTML = sc.filings.length ? '<ol class="sec-list">' + sc.filings.slice(0, 25).map((f) =>
       '<li><span class="sec-d">' + esc(G.dayOnly(f.date)) + '</span><span class="sec-k">' + esc(f.ticker) + "</span>" +
       '<span class="sec-b">' + ext(f.url, f.company + ": " + f.what) + "<small>" + esc(f.form) + "</small></span></li>").join("") + "</ol>"
-      : '<p class="t-na">Nessun documento negli ultimi giorni.</p>';
+      : '<p class="t-na">' + G.L("Nessun documento negli ultimi giorni.", "No filings in recent days.") + "</p>";
   }
   // le righe che si aprono, in tutti i pannelli nuovi
   P.on(document, "click", (e) => {
@@ -672,9 +688,12 @@ G.page("terminal", async function (P) {
 
   // ---------- sezioni, comandi e tasti funzione ----------
   // indici, valute e materie prime stanno in «Prezzi e grafici»: il tasto apre il pannello sul gruppo giusto
-  const GROUP_CMD = { INDICI: "indici", VALUTE: "valute", CAMBI: "valute", MATERIE: "materie", "MATERIE PRIME": "materie", CRIPTO: "cripto", "TASSI USA": "tassi" };
+  // i comandi valgono in italiano e in inglese
+  const GROUP_CMD = { INDICI: "indici", VALUTE: "valute", CAMBI: "valute", MATERIE: "materie", "MATERIE PRIME": "materie", CRIPTO: "cripto", "TASSI USA": "tassi",
+    INDICES: "indici", CURRENCIES: "valute", FX: "valute", COMMODITIES: "materie", CRYPTO: "cripto", "US RATES": "tassi" };
   const PANELS = { MAPPA: "map-panel", TASSI: "p-tassi", AGENDA: "p-agenda", CALENDARIO: "p-agenda", FOREX: "p-agenda", "FOREX FACTORY": "p-agenda", FF: "p-agenda", NOTIZIE: "p-notizie",
-    GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli" };
+    GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli",
+    MAP: "map-panel", RATES: "p-tassi", YIELDS: "p-tassi", CALENDAR: "p-agenda", NEWS: "p-notizie", CHARTS: "p-grafici", PRICES: "p-grafici", TONE: "p-sentiment", STOCKS: "p-titoli" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
     const el = $(id);
@@ -701,8 +720,8 @@ G.page("terminal", async function (P) {
     const c = String(raw || "").trim().toUpperCase().replace(/\s+/g, " ");
     if (!c) return;
     let ok = true;
-    if (c === "MAPPA EUROPA" || c === "EUROPA") { setView("europa"); go("map-panel"); }
-    else if (c === "MAPPA MONDO" || c === "MONDO") { setView("mondo"); go("map-panel"); }
+    if (c === "MAPPA EUROPA" || c === "EUROPA" || c === "EUROPE MAP" || c === "MAP EUROPE" || c === "EUROPE") { setView("europa"); go("map-panel"); }
+    else if (c === "MAPPA MONDO" || c === "MONDO" || c === "WORLD MAP" || c === "MAP WORLD" || c === "WORLD") { setView("mondo"); go("map-panel"); }
     else if (GROUP_CMD[c] && !$("p-grafici").hidden) openGroup(GROUP_CMD[c]);
     else if (PANELS[c] && $(PANELS[c]) && !$(PANELS[c]).hidden) go(PANELS[c]);
     else if (c === "TASSI" && !$("p-grafici").hidden) openGroup("tassi");
@@ -714,7 +733,8 @@ G.page("terminal", async function (P) {
         go("p-grafici");
       } else ok = false;
     }
-    $("cmd-help").textContent = ok ? "" : "Non trovato. Prova: mappa europa, valute, agenda, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.";
+    $("cmd-help").textContent = ok ? "" : G.L("Non trovato. Prova: mappa europa, valute, agenda, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.",
+      "Not found. Try: europe map, currencies, calendar, charts, macro, sentiment, sec, or a symbol such as eurusd, gold, bitcoin.");
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
@@ -747,18 +767,18 @@ G.page("terminal", async function (P) {
     wrap.appendChild(inner);
     const copy = document.createElement("div");
     copy.className = "tradingview-widget-copyright";
-    copy.innerHTML = '<a href="https://it.tradingview.com/" rel="noopener nofollow" target="_blank">Prezzi forniti da TradingView</a>';
+    copy.innerHTML = '<a href="https://' + G.L("it", "www") + '.tradingview.com/" rel="noopener nofollow" target="_blank">' + G.L("Prezzi forniti da TradingView", "Prices by TradingView") + "</a>";
     wrap.appendChild(copy);
     const sc = document.createElement("script");
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
     sc.async = true;
-    sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: "it" });
+    sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: G.L("it", "en") });
     wrap.appendChild(sc);
     box.appendChild(wrap);
-    $("live-btn").textContent = "Nascondi i prezzi in diretta";
+    $("live-btn").textContent = G.L("Nascondi i prezzi in diretta", "Hide live prices");
     $("live-btn").setAttribute("aria-expanded", "true");
   }
-  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = "Prezzi in diretta"; $("live-btn").setAttribute("aria-expanded", "false"); }
+  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = G.L("Prezzi in diretta", "Live prices"); $("live-btn").setAttribute("aria-expanded", "false"); }
   $("live-btn").addEventListener("click", () => {
     if ($("tv").childElementCount) { unloadTV(); G.ls.set("gerico.live", false); }
     else { loadTV(); G.ls.set("gerico.live", true); }

@@ -1,0 +1,60 @@
+name: Traduzione
+
+# GERICO in due lingue: la versione inglese dei testi della redazione (articoli, brevi, note dei mercati, agenda) e quella
+# italiana dei titoli che arrivano in inglese (calendario di Forex Factory, notizie di Yahoo Finance). Scrive site/data/tr/en.json
+# e it.json, che il sito applica da solo. Traduce solo i testi nuovi, con Gemini (la stessa chiave della voce del riepilogo).
+# Non usa crediti Claude. Senza chiave o con Gemini fuori servizio i testi nuovi restano nella lingua originale e il sito lo dice.
+on:
+  # dopo ogni edizione pubblicata e dopo i dati del Terminal (i push fatti con il token di GitHub non fanno partire altri
+  # workflow: per quelli c'è workflow_run)
+  push:
+    branches: [main]
+    paths: [site/data/edition.json, site/data/brevi.json, site/data/markets.json, site/data/agenda.json, site/data/terminal.json, site/data/titoli.json, scripts/traduci.py]
+  workflow_run:
+    workflows: ["Dati del Terminal", "Redazione"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      modelli:
+        description: Elenca i modelli Gemini disponibili, senza tradurre
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traduzione
+  cancel-in-progress: false
+
+jobs:
+  traduci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Traduci i testi nuovi
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # per scegliere il modello a mano: Settings › Secrets and variables › Actions › Variables
+          GERICO_GEMINI_TESTO: ${{ vars.GERICO_GEMINI_TESTO }}
+          SOLO_MODELLI: ${{ inputs.modelli }}
+        run: python3 scripts/traduci.py site/data
+      - name: Pubblica
+        if: inputs.modelli != true
+        run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          git add site/data/tr
+          if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
+          git commit -q -m "Traduzioni del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
+          for i in 1 2 3 4; do
+            if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 15))
+          done
+          echo "::error::Push non riuscito dopo 4 tentativi"
+          exit 1

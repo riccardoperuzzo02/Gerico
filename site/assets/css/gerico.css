@@ -1851,3 +1851,7 @@ html.nuova .m-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(
 @media (min-width: 760px) { html.nuova .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (min-width: 1000px) { html.nuova .m-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 339px) { html.nuova .m-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* ========== due lingue (9 novembre) ==========
+   I testi lunghi (Come funziona, Privacy) hanno le due versioni nella pagina: si vede quella della lingua scelta */
+html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { display: none !important; }

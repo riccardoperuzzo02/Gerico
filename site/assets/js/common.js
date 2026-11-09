@@ -13,6 +13,126 @@
   G.safeUrl = (u) => { try { const x = new URL(u, location.href); return /^https?:$/.test(x.protocol) ? x.href : ""; } catch (e) { return ""; } };
   G.cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
 
+  // ---------- lingua: italiano o inglese ----------
+  // si sceglie nel menu (o con ?lang=en nell'indirizzo) e resta per le visite dopo. I testi dell'interfaccia stanno nelle
+  // chiamate G.L(italiano, inglese) e, per le pagine e i nomi fissi, nel dizionario EN qui sotto. I contenuti arrivano
+  // tradotti da scripts/traduci.py (data/tr/en.json e data/tr/it.json), applicati in G.load
+  G.lang = (() => {
+    try {
+      const q = new URLSearchParams(location.search).get("lang");
+      if (q === "en" || q === "it") localStorage.setItem("gerico.lang", JSON.stringify(q));
+    } catch (e) { /* niente */ }
+    return G.ls.get("gerico.lang", "it") === "en" ? "en" : "it";
+  })();
+  G.en = G.lang === "en";
+  G.L = (it, en) => (G.en ? en : it);
+  document.documentElement.lang = G.lang;
+  const EN = {
+    // pagine
+    "GERICO · Le notizie del giorno, scritte su tutte le fonti": "GERICO · The day's news, written from every source",
+    "GERICO Terminal · I mercati a colpo d'occhio": "GERICO Terminal · Markets at a glance",
+    "Una storia · GERICO": "A story · GERICO", "Come funziona · GERICO": "How it works · GERICO", "Privacy · GERICO": "Privacy · GERICO",
+    "Pagina non trovata · GERICO": "Page not found · GERICO",
+    "Vai alle notizie": "Skip to the news", "Vai alla storia": "Skip to the story", "Vai alla mappa": "Skip to the map", "Vai al testo": "Skip to the text",
+    "GERICO, prima pagina": "GERICO, front page", "Oggi": "Today", "Notizie o Terminal": "News or Terminal", "Notizie": "News",
+    "Menu": "Menu", "Ultim'ora": "Latest", "Ferma lo scorrimento": "Pause the ticker", "Chiudi il menu": "Close the menu", "Pagine": "Pages",
+    "Come funziona": "How it works", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
+    "Grande": "Large", "Molto grande": "Very large", "Lingua": "Language", "Ascolta il riepilogo": "Listen to the briefing",
+    "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
+    "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
+    "Nessun consiglio di investimento": "Not investment advice", "Prima pagina": "Front page", "Condividi": "Share",
+    "Carico la storia…": "Loading the story…", "Fonti e temi": "Sources and topics", "Sezioni del Terminal": "Terminal sections",
+    "Mappa": "Map", "Indici": "Indices", "Valute": "Currencies", "Tassi": "Rates", "Materie prime": "Commodities", "Agenda": "Calendar",
+    "Macro": "Macro", "Sentiment": "Sentiment", "Titoli": "Stocks", "Vai a": "Go to", "Vai": "Go",
+    "mappa europa, eurusd, oro, macro…": "europe map, eurusd, gold, macro…",
+    "GERICO Terminal: mercati e agenda": "GERICO Terminal: markets and calendar", "Mappa dei mercati": "Market map",
+    "Vista della mappa": "Map view", "Mondo": "World", "Europa": "Europe",
+    "Ogni quadrato è una Borsa: più è grande, più pesa nell'indice mondiale MSCI ACWI.": "Each square is a stock market: the bigger it is, the more it weighs in the MSCI ACWI world index.",
+    "Tocca un quadrato per vedere il dettaglio.": "Tap a square to see the details.", "Tassi a 10 anni": "10-year yields",
+    "Agenda di oggi": "Today's calendar", "Prezzi e grafici": "Prices and charts", "Gruppo di strumenti": "Instrument group",
+    "Prezzi in diretta": "Live prices", "Nascondi i prezzi in diretta": "Hide live prices",
+    "Dal widget gratuito di TradingView, con ritardi diversi per mercato. Si carica solo se lo chiedi e usa cookie di TradingView.": "From TradingView's free widget, with different delays for each market. It loads only if you ask, and uses TradingView cookies.",
+    "Notizie sui mercati": "Market news", "Tono delle notizie": "News tone", "Titoli da seguire": "Stocks to watch",
+    "Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.": "A price signal and a news item that could move them in the coming days.",
+    "Macro: Stati Uniti ed eurozona": "Macro: United States and euro area", "Documenti SEC": "SEC filings",
+    "Questa pagina non c'è.": "This page doesn't exist.", "Forse la storia è stata archiviata.": "The story may have been archived.",
+    "Torna alla prima pagina": "Back to the front page", "Navigazione": "Navigation", "Ascolta": "Listen",
+    // aree, paesi, temi
+    "Italia": "Italy", "Stati Uniti": "United States", "Medio Oriente": "Middle East", "Ucraina e Russia": "Ukraine and Russia", "Oceania": "Oceania",
+    "Giappone": "Japan", "Regno Unito": "United Kingdom", "Corea del Sud": "South Korea", "Cina": "China", "Francia": "France",
+    "Svizzera": "Switzerland", "Germania": "Germany", "Paesi Bassi": "Netherlands", "Brasile": "Brazil", "Spagna": "Spain",
+    "Arabia Saudita": "Saudi Arabia", "Emirati Arabi Uniti": "United Arab Emirates", "Israele": "Israel", "Ucraina": "Ukraine",
+    "Polonia": "Poland", "Nuova Zelanda": "New Zealand", "America Latina": "Latin America", "Cisgiordania": "West Bank",
+    "Banche": "Banks", "Cybersicurezza": "Cybersecurity", "Elezioni": "Elections", "Ferrovie": "Railways",
+    "Intelligenza artificiale": "Artificial intelligence", "Petrolio": "Oil", "Politica": "Politics", "Sicurezza": "Security",
+    "Terrorismo": "Terrorism", "Titoli di Stato": "Government bonds", "Trasporto aereo": "Air travel", "Energia": "Energy",
+    "Conti pubblici": "Public finances", "BCE": "ECB", "Dazi": "Tariffs", "Tecnologia": "Technology", "Economia": "Economy",
+    // tipi di fonte
+    "agenzia": "news agency", "giornale": "newspaper", "giornale online": "online newspaper", "online": "online", "quotidiano": "daily", "tv": "TV",
+    // strumenti e gruppi
+    "Azioni": "Shares", "Cripto": "Crypto", "Tassi Usa": "US rates", "Indice del dollaro": "Dollar index", "Oro": "Gold",
+    "Argento": "Silver", "Rame": "Copper", "Gas TTF": "TTF gas", "Gas Henry Hub": "Henry Hub gas", "Wti": "WTI",
+    "Treasury 3 mesi": "3-month Treasury", "Treasury 5 anni": "5-year Treasury", "Treasury 10 anni": "10-year Treasury",
+    "Treasury 30 anni": "30-year Treasury", "Btp 10 anni": "10-year BTP", "Bund 10 anni": "10-year Bund", "Oat 10 anni": "10-year OAT",
+    "Spread Btp-Bund": "BTP-Bund spread", "Borsa Usa": "US stocks", "Dollaro": "Dollar", "Nikkei 225 (Tokyo)": "Nikkei 225 (Tokyo)"
+  };
+  G.tn = (s) => (G.en && s && Object.prototype.hasOwnProperty.call(EN, s) ? EN[s] : s);
+  // le scritte fisse delle pagine (intestazione, menu, titoli dei pannelli): in inglese dal dizionario. I blocchi lunghi
+  // (Come funziona, Privacy) hanno le due versioni nella pagina, con data-only="it" e data-only="en"
+  G.i18nStatic = (root) => {
+    if (!G.en || !root) return;
+    const skip = "script, style, [translate='no'], [data-only='it'], [lang='it']";
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) => (n.parentElement && n.parentElement.closest(skip) ? 2 : 1) });
+    const nodes = [];
+    while (w.nextNode()) nodes.push(w.currentNode);
+    nodes.forEach((n) => { const t = n.nodeValue.trim(); if (t && Object.prototype.hasOwnProperty.call(EN, t)) n.nodeValue = n.nodeValue.replace(t, EN[t]); });
+    root.querySelectorAll("[aria-label], [placeholder], [title]").forEach((el) => {
+      if (el.closest(skip)) return;
+      ["aria-label", "placeholder", "title"].forEach((a) => { const v = el.getAttribute(a); if (v && Object.prototype.hasOwnProperty.call(EN, v)) el.setAttribute(a, EN[v]); });
+    });
+    if (Object.prototype.hasOwnProperty.call(EN, document.title)) document.title = EN[document.title];
+  };
+  // un numero scritto all'italiana nei dati («4,33%», «50.053», «107 pb»), in inglese: «4.33%», «50,053», «107 bp»
+  G.numText = (v) => (!G.en || !v ? v : String(v).replace(/\d[\d.,]*\d/g, (m) => m.replace(/[.,]/g, (c) => (c === "." ? "," : "."))).replace(/(\d) pb\b/g, "$1 bp"));
+
+  // impronta di un testo (cyrb53, la stessa di scripts/traduci.py): la chiave delle traduzioni
+  G.hash = (str) => {
+    let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
+    for (let i = 0, ch; i < str.length; i++) { ch = str.charCodeAt(i); h1 = Math.imul(h1 ^ ch, 2654435761); h2 = Math.imul(h2 ^ ch, 1597334677); }
+    h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507); h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+    h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507); h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+    return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+  };
+  // quali campi di quali file si traducono: in inglese i testi della redazione, in italiano i titoli che arrivano in inglese
+  // (calendario di Forex Factory, notizie di Yahoo Finance per il tono). Un testo non ancora tradotto resta com'è
+  const TR = {
+    en: {
+      edition: ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle"],
+      brevi: ["title"], markets: ["summary", "label", "note", "why"], agenda: ["event", "note"], terminal: ["label", "note"],
+      titoli: ["why", "risk", "signal", "note"]
+    },
+    it: { calendario: ["title"], sentiment: ["title"] }
+  };
+  const translate = (data, map, keys) => {
+    const want = new Set(keys);
+    const tr = (s) => { const k = typeof s === "string" && s ? map[G.hash(s)] : null; return typeof k === "string" ? k : s; };
+    const walk = (o, key) => {
+      if (Array.isArray(o)) return o.map((x) => (typeof x === "string" ? (want.has(key) ? tr(x) : x) : walk(x, key)));
+      if (!o || typeof o !== "object") return o;
+      const out = {};
+      Object.keys(o).forEach((k) => { const v = o[k]; out[k] = typeof v === "string" ? (want.has(k) ? tr(v) : v) : walk(v, k); });
+      return out;
+    };
+    const out = walk(data, "");
+    // le storie non ancora tradotte si segnano: la pagina dice che sono in italiano
+    if (out && Array.isArray(out.stories)) {
+      const mark = (list, orig) => (list || []).forEach((s, i) => { if (orig[i] && s.title === orig[i].title) s.untranslated = true; });
+      mark(out.stories, data.stories);
+      mark(out.archive, data.archive || []);
+    }
+    return out;
+  };
+
   // ---------- dati ----------
   // passando da una pagina all'altra senza ricaricare, gli stessi dati servono di nuovo: per un minuto si riusano.
   // Dopo, fino a dieci minuti, si usano subito quelli in mano e intanto si chiedono quelli nuovi per la volta dopo:
@@ -26,7 +146,20 @@
       return await r.json();
     } catch (e) { return null; }
   };
+  // i file con testi da tradurre passano dalla mappa della lingua (data/tr/<lingua>.json); il risultato si tiene per
+  // lo stesso oggetto, così le pagine che lo chiedono di nuovo non rifanno il lavoro
+  const done = new WeakMap();
   G.load = (name, fresh) => {
+    const keys = (TR[G.lang] || {})[name];
+    const p = loadRaw(name, fresh);
+    if (!keys) return p;
+    return Promise.all([p, loadRaw("tr/" + G.lang)]).then(([d, m]) => {
+      if (!d || !m || typeof m !== "object") return d;
+      if (!done.has(d)) done.set(d, translate(d, m, keys));
+      return done.get(d);
+    });
+  };
+  const loadRaw = (name, fresh) => {
     const hit = memo[name], age = hit ? Date.now() - hit.t : Infinity;
     if (!fresh && hit && age < 60000) return hit.p;
     if (!fresh && hit && hit.ok && age < 600000) {
@@ -56,12 +189,12 @@
   };
 
   // ---------- date e ore, sempre a Roma ----------
-  const TZ = "Europe/Rome";
+  const TZ = "Europe/Rome", LOC = G.en ? "en-GB" : "it-IT";
   const fHM = new Intl.DateTimeFormat("it-IT", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: TZ });
-  const fDay = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "short", timeZone: TZ });
-  const fDayLong = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", timeZone: TZ });
-  const fWeek = new Intl.DateTimeFormat("it-IT", { weekday: "long", day: "numeric", month: "long", timeZone: TZ });
-  const fLong = new Intl.DateTimeFormat("it-IT", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ });
+  const fDay = new Intl.DateTimeFormat(LOC, { day: "numeric", month: "short", timeZone: TZ });
+  const fDayLong = new Intl.DateTimeFormat(LOC, { day: "numeric", month: "long", timeZone: TZ });
+  const fWeek = new Intl.DateTimeFormat(LOC, { weekday: "long", day: "numeric", month: "long", timeZone: TZ });
+  const fLong = new Intl.DateTimeFormat(LOC, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ });
   const fKey = new Intl.DateTimeFormat("en-CA", { timeZone: TZ });
   const valid = (iso) => { const d = new Date(iso); return isNaN(d) ? null : d; };
   G.hm2 = (iso) => { const d = valid(iso); return d ? fHM.format(d) : ""; };
@@ -73,27 +206,28 @@
   // quanti giorni di calendario (a Roma) fa: 0 oggi, 1 ieri
   const utcDay = (key) => { const p = key.split("-").map(Number); return Date.UTC(p[0], p[1] - 1, p[2]); };
   G.dayAge = (iso) => { const d = valid(iso); return d ? Math.round((utcDay(G.dayKey(new Date())) - utcDay(G.dayKey(d))) / 864e5) : Infinity; };
-  const fWd = new Intl.DateTimeFormat("it-IT", { weekday: "long", timeZone: TZ });
+  const fWd = new Intl.DateTimeFormat(LOC, { weekday: "long", timeZone: TZ });
   G.weekday = (iso) => { const d = valid(iso); return d ? fWd.format(d) : ""; };
   G.hoursAgo = (iso) => { const d = valid(iso); return d ? (Date.now() - d.getTime()) / 3600000 : Infinity; };
   G.dayOnly = (ymd) => { const d = valid(String(ymd).slice(0, 10) + "T12:00:00Z"); return d ? fDay.format(d).replace(".", "") : ""; };
   G.when = (iso) => {
     const d = valid(iso); if (!d) return "";
     const mins = Math.round((Date.now() - d.getTime()) / 60000);
-    if (mins < 1) return "adesso";
-    if (mins < 60) return mins + " min fa";
-    if (G.isToday(iso)) return "alle " + G.hm(iso);
+    if (mins < 1) return G.L("adesso", "just now");
+    if (mins < 60) return mins + G.L(" min fa", " min ago");
+    if (G.isToday(iso)) return G.L("alle ", "at ") + G.hm(iso);
     const y = new Date(); y.setDate(y.getDate() - 1);
-    if (G.dayKey(d) === G.dayKey(y)) return "ieri alle " + G.hm(iso);
-    return "il " + G.day(iso) + " alle " + G.hm(iso);
+    if (G.dayKey(d) === G.dayKey(y)) return G.L("ieri alle ", "yesterday at ") + G.hm(iso);
+    return G.L("il " + G.day(iso) + " alle ", "on " + G.day(iso) + " at ") + G.hm(iso);
   };
   // etichetta dei dati di mercato: «ieri», «stamattina» o «venerdì» valgono solo se i dati sono di oggi
-  const RELATIVE = /ieri|oggi|stamattina|stasera|metà giornata|lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica/i;
+  const RELATIVE = /ieri|oggi|stamattina|stasera|metà giornata|lunedì|martedì|mercoledì|giovedì|venerdì|sabato|domenica|yesterday|today|this morning|tonight|midday|monday|tuesday|wednesday|thursday|friday|saturday|sunday/i;
   G.mkWhen = (m) => {
     const label = G.cap((m && m.label) || ""), asOf = m && m.asOf;
     if (!asOf || !valid(asOf)) return label;
-    if (G.isToday(asOf) || !RELATIVE.test(label)) return (label ? label + ", " : "Dati ") + G.when(asOf);
-    return "Dati " + (G.dayAge(asOf) === 1 ? "di ieri" : "del " + G.day(asOf)) + ", ore " + G.hm(asOf);
+    if (G.isToday(asOf) || !RELATIVE.test(label)) return (label ? label + ", " : G.L("Dati ", "Data ")) + G.when(asOf);
+    return G.en ? "Data from " + (G.dayAge(asOf) === 1 ? "yesterday" : G.day(asOf)) + ", " + G.hm(asOf)
+      : "Dati " + (G.dayAge(asOf) === 1 ? "di ieri" : "del " + G.day(asOf)) + ", ore " + G.hm(asOf);
   };
   G.romeNow = () => {
     const p = {};
@@ -106,14 +240,14 @@
   // newsOnly: il prossimo aggiornamento delle notizie
   G.nextUpdate = (newsOnly) => {
     const now = G.romeNow();
-    const names = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
+    const names = G.en ? ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] : ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"];
     const slots = (d) => (newsOnly || d === 0 || d === 6 ? [450, 810] : [450, 810, 1100]);
     for (let k = 0; k < 8; k++) {
       const d = (now.wd + k) % 7;
       for (const m of slots(d)) {
         if (k === 0 && m <= now.min) continue;
-        const label = k === 0 ? "oggi" : k === 1 ? "domani" : names[d];
-        return label + " alle " + Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0");
+        const label = k === 0 ? G.L("oggi", "today") : k === 1 ? G.L("domani", "tomorrow") : names[d];
+        return label + G.L(" alle ", " at ") + Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0");
       }
     }
     return "";
@@ -124,17 +258,18 @@
     const el = document.getElementById("edition-line");
     const d = valid(iso);
     if (!el || !d) return;
-    el.innerHTML = '<span class="ed-l">' + G.esc(G.cap(fWeek.format(d))) + " · edizione delle " + G.esc(G.hm(iso)) + "</span>" +
-      '<span class="ed-s">' + G.esc(fDayLong.format(d)) + ", ore " + G.esc(G.hm(iso)) + "</span>";
+    el.innerHTML = '<span class="ed-l">' + G.esc(G.cap(fWeek.format(d))) + G.L(" · edizione delle ", " · edition of ") + G.esc(G.hm(iso)) + "</span>" +
+      '<span class="ed-s">' + G.esc(fDayLong.format(d)) + G.L(", ore ", ", ") + G.esc(G.hm(iso)) + "</span>";
   };
 
   // ---------- numeri ----------
-  const nf2 = new Intl.NumberFormat("it-IT", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const nf2 = new Intl.NumberFormat(LOC, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const sign = (v) => (v > 0 ? "+" : v < 0 ? "−" : "");
   G.pct = (v) => sign(v) + nf2.format(Math.abs(v)) + "%";
   G.pctBare = (v) => sign(v) + nf2.format(Math.abs(v));
-  G.bps = (v) => sign(v) + String(Math.abs(v)).replace(".", ",") + " pb";
-  G.bpsLong = (v) => sign(v) + String(Math.abs(v)).replace(".", ",") + (Math.abs(v) === 1 ? " punto base" : " punti base");
+  const dec = (v) => (G.en ? String(Math.abs(v)) : String(Math.abs(v)).replace(".", ","));
+  G.bps = (v) => sign(v) + dec(v) + G.L(" pb", " bp");
+  G.bpsLong = (v) => sign(v) + dec(v) + (Math.abs(v) === 1 ? G.L(" punto base", " basis point") : G.L(" punti base", " basis points"));
   G.wt = (v) => nf2.format(v) + "%";
   G.move = (it) => (typeof it.chg === "number" ? G.pct(it.chg) : typeof it.bp === "number" ? G.bps(it.bp) : "");
   // per i titoli di Stato un rendimento che sale è un prezzo che scende: va in rosso
@@ -143,11 +278,11 @@
     return typeof v !== "number" || v === 0 ? "" : v > 0 ? "up" : "down";
   };
   G.size = (it) => (typeof it.chg === "number" ? Math.abs(it.chg) : typeof it.bp === "number" ? Math.abs(it.bp) / 10 : -1);
-  G.cleanValue = (v) => (v && v !== "—" && v !== "-" ? v : "");
+  G.cleanValue = (v) => (v && v !== "—" && v !== "-" ? G.numText(v) : "");
   G.shortName = (n) => String(n || "").replace(/\s*\([^)]*\)/g, "").trim();
   // numeri con un numero fisso di decimali; i prezzi dei cambi con 4 (lo yen con 2), i numeri grandi in forma corta senza decimali
   const nfd = {};
-  G.num = (v, d) => (nfd[d] || (nfd[d] = new Intl.NumberFormat("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d }))).format(v);
+  G.num = (v, d) => (nfd[d] || (nfd[d] = new Intl.NumberFormat(LOC, { minimumFractionDigits: d, maximumFractionDigits: d }))).format(v);
   G.price = (sym, v, compact) => G.num(v, /=X$/.test(sym) && !/JPY/.test(sym) ? 4 : compact && Math.abs(v) >= 1000 ? 0 : 2);
   G.signed = (v, d) => sign(v) + G.num(Math.abs(v), d);
   // grafico a linea in SVG, senza librerie: area leggera sotto la linea solo se richiesta
@@ -177,7 +312,7 @@
     return Array.from(by.values()).map((x) => x.s);
   };
   // quante fonti ha l'articolo: «8 fonti». Sono le testate lette per scriverlo, non un voto su chi ha ragione
-  G.srcCount = (src) => { const n = G.outlets(src).length; return n ? (n === 1 ? "1 fonte" : n + " fonti") : ""; };
+  G.srcCount = (src) => { const n = G.outlets(src).length; return n ? (n === 1 ? G.L("1 fonte", "1 source") : n + G.L(" fonti", " sources")) : ""; };
   // il testo dell'articolo in paragrafi (separati da una riga vuota)
   G.paras = (txt) => String(txt || "").split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
   // una prima pagina o una pagina di sezione: domani dirà altro, quindi non prova niente
@@ -194,8 +329,9 @@
     } catch (e) { return false; }
   };
   // ---------- storie ----------
-  G.SECTIONS = { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
-  G.secLabel = (k) => G.SECTIONS[k] || "Notizie";
+  G.SECTIONS = G.en ? { mondo: "World", italia: "Italy", economia: "Economy", mercati: "Markets", tecnologia: "Technology" }
+    : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
+  G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
 
   // titolo da mostrare: i titoli vecchi sono lunghi come riassunti, si tiene la parte prima del punto e virgola
@@ -216,7 +352,7 @@
   };
   G.updatedLabel = (s, firstRun) => {
     if (!s.updated || !G.isToday(s.updated) || !firstRun || !G.realChange(s)) return "";
-    return new Date(s.updated).getTime() - firstRun > 60 * 60000 ? "Aggiornata alle " + G.hm(s.updated) : "";
+    return new Date(s.updated).getTime() - firstRun > 60 * 60000 ? G.L("Aggiornata alle ", "Updated at ") + G.hm(s.updated) : "";
   };
   // le prime frasi intere che stanno in max caratteri (niente lookbehind: va anche su Safari vecchi)
   G.firstSentences = (text, max) => {
@@ -503,7 +639,7 @@
     const emit = () => { subs.forEach((f) => { try { f(); } catch (e) { /* niente */ } }); paint(); };
     const mmss = (s) => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
     const when = () => info && (info.source || info.asOf);
-    const title = () => (info ? (G.isToday(when()) ? "Il riepilogo di oggi" : "Il riepilogo di " + G.weekday(when())) : "");
+    const title = () => (info ? (G.isToday(when()) ? G.L("Il riepilogo di oggi", "Today's briefing (in Italian)") : G.L("Il riepilogo di ", "Briefing of ") + G.weekday(when()) + G.L("", " (in Italian)")) : "");
     const dur = () => audio.duration || (info && info.duration) || 0;
     const pos = () => audio.currentTime || saved || 0;
     const started = () => !!info && (!audio.paused || pos() > 0);
@@ -588,13 +724,13 @@
       bar.className = "gp";
       bar.id = "gp";
       bar.setAttribute("role", "region");
-      bar.setAttribute("aria-label", "Riepilogo a voce");
+      bar.setAttribute("aria-label", G.L("Riepilogo a voce", "Audio briefing"));
       bar.hidden = true;
-      bar.innerHTML = '<button type="button" class="gp-play" aria-label="Ascolta il riepilogo">' + ICON + "</button>" +
+      bar.innerHTML = '<button type="button" class="gp-play" aria-label="' + G.L("Ascolta il riepilogo", "Listen to the briefing") + '">' + ICON + "</button>" +
         '<div class="gp-txt"><p class="gp-t"></p><p class="gp-s"></p></div>' +
-        '<button type="button" class="gp-sk" data-d="-15" aria-label="Indietro di 15 secondi">−15</button>' +
-        '<button type="button" class="gp-sk" data-d="15" aria-label="Avanti di 15 secondi">+15</button>' +
-        '<button type="button" class="gp-x" aria-label="Chiudi il riepilogo"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>' +
+        '<button type="button" class="gp-sk" data-d="-15" aria-label="' + G.L("Indietro di 15 secondi", "Back 15 seconds") + '">−15</button>' +
+        '<button type="button" class="gp-sk" data-d="15" aria-label="' + G.L("Avanti di 15 secondi", "Forward 15 seconds") + '">+15</button>' +
+        '<button type="button" class="gp-x" aria-label="' + G.L("Chiudi il riepilogo", "Close the briefing") + '"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>' +
         '<span class="gp-bar" aria-hidden="true"><i></i></span>';
       bar.querySelector(".gp-play").addEventListener("click", () => api.toggle());
       bar.querySelectorAll(".gp-sk").forEach((b) => b.addEventListener("click", () => api.seek(Number(b.dataset.d))));
@@ -609,9 +745,9 @@
       if (!show) return;
       const on = !audio.paused, d = dur();
       bar.classList.toggle("playing", on);
-      bar.querySelector(".gp-play").setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : "Riprendi il riepilogo");
+      bar.querySelector(".gp-play").setAttribute("aria-label", on ? G.L("Metti in pausa il riepilogo", "Pause the briefing") : G.L("Riprendi il riepilogo", "Resume the briefing"));
       bar.querySelector(".gp-t").textContent = title();
-      bar.querySelector(".gp-s").textContent = d ? (on ? "Mancano " : "In pausa · mancano ") + mmss(Math.max(0, d - pos())) : "";
+      bar.querySelector(".gp-s").textContent = d ? (on ? G.L("Mancano ", "Left ") : G.L("In pausa · mancano ", "Paused · left ")) + mmss(Math.max(0, d - pos())) : "";
       bar.querySelector(".gp-bar i").style.transform = "scaleX(" + (d ? Math.min(1, pos() / d) : 0).toFixed(4) + ")";
     }
     return api;
@@ -641,16 +777,16 @@
       if (b.hidden === ok) b.hidden = !ok;
       b.classList.toggle("playing", playing);
       b.setAttribute("aria-pressed", String(playing));
-      b.setAttribute("aria-label", playing ? "Metti in pausa il riepilogo" : "Ascolta il riepilogo");
+      b.setAttribute("aria-label", playing ? G.L("Metti in pausa il riepilogo", "Pause the briefing") : G.L("Ascolta il riepilogo", "Listen to the briefing"));
     };
     const build = () => {
       bar = document.createElement("nav");
       bar.className = "pb";
       bar.id = "pb";
-      bar.setAttribute("aria-label", "Navigazione");
-      bar.innerHTML = '<a class="pb-i" href="./" data-reveal data-k="notizie">' + ICON.notizie + "<span>Notizie</span></a>" +
+      bar.setAttribute("aria-label", G.L("Navigazione", "Navigation"));
+      bar.innerHTML = '<a class="pb-i" href="./" data-reveal data-k="notizie">' + ICON.notizie + "<span>" + G.L("Notizie", "News") + "</span></a>" +
         '<a class="pb-i" href="terminal" data-reveal data-k="terminal">' + ICON.terminal + "<span>Terminal</span></a>" +
-        '<button class="pb-i" type="button" data-k="ascolta" aria-pressed="false" hidden>' + ICON.ascolta + "<span>Ascolta</span></button>" +
+        '<button class="pb-i" type="button" data-k="ascolta" aria-pressed="false" hidden>' + ICON.ascolta + "<span>" + G.L("Ascolta", "Listen") + "</span></button>" +
         '<button class="pb-i" type="button" data-k="menu" aria-haspopup="dialog" aria-controls="menu">' + ICON.menu + "<span>Menu</span></button>";
       bar.querySelector('[data-k="ascolta"]').addEventListener("click", () => G.player.toggle());
       // il menu è quello della pagina: lo apre il suo pulsante, che sul telefono in alto è nascosto
@@ -1165,6 +1301,19 @@
 
   G.initPrefs = () => {
     const html = document.documentElement;
+    html.lang = G.lang;
+    G.i18nStatic(document.body);
+    // lingua: la scelta resta per le visite dopo; la pagina si ricarica nella lingua nuova (i dati tradotti sono altri file)
+    document.querySelectorAll("[data-lang-set]").forEach((b) => {
+      b.setAttribute("aria-pressed", String(b.dataset.langSet === G.lang));
+      b.addEventListener("click", () => {
+        if (b.dataset.langSet === G.lang) return;
+        G.ls.set("gerico.lang", b.dataset.langSet);
+        const u = new URL(location.href);
+        u.searchParams.delete("lang");
+        location.replace(u.href);
+      });
+    });
     G.intro();
     const groups = (sel) => new Set(Array.from(document.querySelectorAll(sel)).map((b) => b.parentElement));
     const applySize = (s) => {
@@ -1276,7 +1425,7 @@
 
   // ---------- titoli da seguire: lo stesso blocco in prima pagina e nel Terminal ----------
   // Chi produce le analisi e i conflitti di interesse: la frase la decide chi cura GERICO (vedi come-funziona.html#titoli)
-  G.TITOLI_DISC = "A cura di Riccardo Peruzzo, che non ha posizioni sui titoli citati.";
+  G.TITOLI_DISC = G.L("A cura di Riccardo Peruzzo, che non ha posizioni sui titoli citati.", "Edited by Riccardo Peruzzo, who holds no positions in the stocks mentioned.");
   G.titoliFresh = (t) => !!(t && Array.isArray(t.items) && G.hoursAgo(t.asOf) < 30);
   G.titoliHTML = (t, h) => {
     const esc = G.esc;
@@ -1285,20 +1434,21 @@
       const c = typeof x.chg === "number" ? ' <b class="' + (x.chg > 0 ? "up" : x.chg < 0 ? "down" : "") + '">' + G.pct(x.chg) + "</b>" : "";
       return '<li class="tit-i"><p class="tit-top"><span class="tit-n">' + esc(x.name) + '</span><span class="tit-k">' + esc([x.ticker, x.market].filter(Boolean).join(" · ")) + "</span>" +
         (p ? '<span class="tit-p">' + esc(p) + c + "</span>" : "") + "</p>" +
-        '<p class="tit-why"><strong>Perché</strong> ' + esc(x.why) + "</p>" +
+        '<p class="tit-why"><strong>' + G.L("Perché", "Why") + "</strong> " + esc(x.why) + "</p>" +
         (x.signal ? '<p class="tit-sig">' + esc(x.signal) + "</p>" : "") +
-        '<p class="tit-risk"><strong>Rischio</strong> ' + esc(x.risk) + "</p>" +
-        '<p class="tit-src">Fonte: ' + (x.sources || []).map((s) => '<a href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener">' + esc(s.name || "articolo") + "</a>" +
+        '<p class="tit-risk"><strong>' + G.L("Rischio", "Risk") + "</strong> " + esc(x.risk) + "</p>" +
+        '<p class="tit-src">' + G.L("Fonte: ", "Source: ") + (x.sources || []).map((s) => '<a href="' + esc(G.safeUrl(s.url)) + '" target="_blank" rel="noopener">' + esc(s.name || G.L("articolo", "article")) + "</a>" +
           (s.date ? " (" + esc(G.dayOnly(s.date)) + ")" : "")).join(", ") + "</p></li>";
     };
     const s = h && h.summary;
-    const rec = s && s.n >= 5 ? '<p class="tit-rec">Gli ultimi ' + s.n + ": " + s.better + " meglio del loro indice dopo 5 sedute" +
-      (typeof s.avgExcess === "number" ? ", in media " + G.signed(s.avgExcess, 1) + " punti" : "") + ".</p>" : "";
+    const rec = s && s.n >= 5 ? '<p class="tit-rec">' + G.L("Gli ultimi ", "The last ") + s.n + ": " + s.better + G.L(" meglio del loro indice dopo 5 sedute", " beat their index after 5 sessions") +
+      (typeof s.avgExcess === "number" ? G.L(", in media ", ", on average ") + G.signed(s.avgExcess, 1) + G.L(" punti", " points") : "") + ".</p>" : "";
     const list = t.items.length ? '<ol class="tit-list">' + t.items.map(row).join("") + "</ol>"
-      : '<p class="tit-none">Oggi nessun titolo passa i filtri.' + (t.note ? " " + esc(t.note) : "") + "</p>";
-    return list + rec + '<p class="tit-disc">' + (G.TITOLI_DISC ? esc(G.TITOLI_DISC) + " " : "") + "Analisi automatica di GERICO " + esc(G.isToday(t.asOf) ? "delle " + G.hm(t.asOf) : "del " + G.day(t.asOf) + " alle " + G.hm(t.asOf)) +
-      ": segnali sui prezzi e notizie con data. Non è una consulenza personalizzata: può sbagliare e si può perdere denaro. " +
-      '<a href="come-funziona.html#titoli">Metodo e rischi</a>.</p>';
+      : '<p class="tit-none">' + G.L("Oggi nessun titolo passa i filtri.", "No stock passes the filters today.") + (t.note ? " " + esc(t.note) : "") + "</p>";
+    const at = G.isToday(t.asOf) ? G.L("delle ", "at ") + G.hm(t.asOf) : G.L("del " + G.day(t.asOf) + " alle ", "of " + G.day(t.asOf) + " at ") + G.hm(t.asOf);
+    return list + rec + '<p class="tit-disc">' + (G.TITOLI_DISC ? esc(G.TITOLI_DISC) + " " : "") + G.L("Analisi automatica di GERICO ", "GERICO automatic analysis ") + esc(at) +
+      G.L(": segnali sui prezzi e notizie con data. Non è una consulenza personalizzata: può sbagliare e si può perdere denaro. ", ": price signals and dated news. It is not personalised advice: it can be wrong and you can lose money. ") +
+      '<a href="come-funziona.html#' + G.L("titoli", "stocks") + '">' + G.L("Metodo e rischi", "Method and risks") + "</a>.</p>";
   };
 
   // ---------- mappa a quadrati (treemap squarified) ----------
@@ -1310,8 +1460,8 @@
   };
   G.NO_DATA = "#4A505C";
   G.BANDS = [
-    ["#B3261E", "−1% o meno"], ["#8C1F1A", "da −1 a −0,5"], ["#56201C", "da −0,5 a 0"],
-    ["#1B4A33", "da 0 a +0,5"], ["#0D5F32", "da +0,5 a +1"], ["#0F7A3F", "+1% o più"]
+    ["#B3261E", G.L("−1% o meno", "−1% or less")], ["#8C1F1A", G.L("da −1 a −0,5", "−1 to −0.5")], ["#56201C", G.L("da −0,5 a 0", "−0.5 to 0")],
+    ["#1B4A33", G.L("da 0 a +0,5", "0 to +0.5")], ["#0D5F32", G.L("da +0,5 a +1", "+0.5 to +1")], ["#0F7A3F", G.L("+1% o più", "+1% or more")]
   ];
   G.band = (c) => (typeof c !== "number" ? G.NO_DATA : c >= 1 ? "#0F7A3F" : c >= 0.5 ? "#0D5F32" : c >= 0 ? "#1B4A33" : c > -0.5 ? "#56201C" : c > -1 ? "#8C1F1A" : "#B3261E");
 
@@ -1350,11 +1500,12 @@
   const MAP_ALT = { CHN: ["000001.SS", "Shanghai Composite"] };
   const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
   // la data scritta nella nota («Chiusura del 27 ottobre») come AAAA-MM-GG, "" se non c'è
+  const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
   const noteDate = (note) => {
-    const m = new RegExp("\\b(\\d{1,2}) (" + MESI.join("|") + ")\\b", "i").exec(note || "");
+    const m = new RegExp("\\b(\\d{1,2}) (" + MESI.concat(MONTHS).join("|") + ")\\b", "i").exec(note || "");
     if (!m) return "";
-    const today = G.dayKey(new Date()), y = Number(today.slice(0, 4));
-    const key = (yy) => yy + "-" + String(MESI.indexOf(m[2].toLowerCase()) + 1).padStart(2, "0") + "-" + m[1].padStart(2, "0");
+    const today = G.dayKey(new Date()), y = Number(today.slice(0, 4)), mm = m[2].toLowerCase();
+    const key = (yy) => yy + "-" + String((MESI.indexOf(mm) + 1) || (MONTHS.indexOf(mm) + 1)).padStart(2, "0") + "-" + m[1].padStart(2, "0");
     return key(y) > today ? key(y - 1) : key(y);
   };
   const fromQuote = (q) => {
@@ -1445,10 +1596,10 @@
   G.qNote = (q) => {
     const age = G.dayAge(q.date + "T12:00:00Z"), cont = /=X$|=F$|-USD$|^DX-Y|^\^(TNX|IRX|FVX|TYX)$/.test(q.sym || "");
     const today = age === 0 && q.at;
-    const head = cont ? (today ? "Dato delle " + G.hm(q.at) : "Dato del " + G.dayOnly(q.date))
-      : today && q.state === "aperta" ? "Seduta in corso alle " + G.hm(q.at)
-      : today && q.state === "chiusa" ? "Chiusura delle " + G.hm(q.at)
-      : today ? "Dato delle " + G.hm(q.at) : "Chiusura del " + G.dayOnly(q.date);
+    const head = cont ? (today ? G.L("Dato delle ", "Data at ") + G.hm(q.at) : G.L("Dato del ", "Data of ") + G.dayOnly(q.date))
+      : today && q.state === "aperta" ? G.L("Seduta in corso alle ", "Session under way at ") + G.hm(q.at)
+      : today && q.state === "chiusa" ? G.L("Chiusura delle ", "Close at ") + G.hm(q.at)
+      : today ? G.L("Dato delle ", "Data at ") + G.hm(q.at) : G.L("Chiusura del ", "Close of ") + G.dayOnly(q.date);
     return head + " (Yahoo Finance)";
   };
   const usable = (q) => !!q && !q.stale && typeof q.last === "number" && /^\d{4}-\d{2}-\d{2}$/.test(q.date || "") && G.dayAge(q.date + "T12:00:00Z") <= 4;
@@ -1508,16 +1659,16 @@
     el.innerHTML = rects.map((r, k) => {
       const has = typeof r.chg === "number";
       const cg = has ? G.pct(r.chg) : "";
-      const label = r.name + (r.index ? ", " + r.index : "") + ", " + (has ? cg : "nessun dato oggi") + ", peso " + G.wt(r.value);
+      const label = G.tn(r.name) + (r.index ? ", " + r.index : "") + ", " + (has ? cg : G.L("nessun dato oggi", "no data today")) + G.L(", peso ", ", weight ") + G.wt(r.value);
       let size = r.w >= 170 && r.h >= 110 ? "big" : r.w >= 90 && r.h >= 56 ? "med" : r.w >= 40 && r.h >= 30 ? "small" : r.w >= 22 && r.h >= 14 ? "tiny" : "none";
       let inner = "";
       if (!has) {
         // senza dato: grigio con la sola sigla
         inner = size === "none" ? "" : '<span class="a"><span class="nm">' + r.code + "</span></span>";
       } else if (size === "big") {
-        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
+        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span><span class="ix">' + G.esc(r.index) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
       } else if (size === "med") {
-        inner = '<span class="a"><span class="nm">' + G.esc(r.name) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
+        inner = '<span class="a"><span class="nm">' + G.esc(G.tn(r.name)) + '</span></span><span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>";
       } else if (size === "small") {
         inner = '<span class="a"><span class="nm">' + r.code + "</span></span>" + (r.w >= 46 ? '<span class="b"><span class="cg" data-n="' + r.chg + '" data-f="pct%">' + cg + "</span></span>" : "");
       } else if (size === "tiny") {

@@ -19,8 +19,8 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-2">
-<script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-3">
+<script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
 <div class="intro-screen" aria-hidden="true"></div><div class="intro-word" aria-hidden="true">GERICO</div>
@@ -36,13 +36,14 @@
 <div class="grab" aria-hidden="true"></div>
 <div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
 <nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
+<div class="opt"><p class="opt-l" id="opt-lang">Lingua</p><div class="seg seg-fill" role="group" aria-labelledby="opt-lang"><button type="button" data-lang-set="it" lang="it">Italiano</button><button type="button" data-lang-set="en" lang="en">English</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-theme">Tema</p><div class="seg seg-fill" role="group" aria-labelledby="opt-theme"><button type="button" data-theme-set="light">Chiaro</button><button type="button" data-theme-set="dark">Scuro</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
 </div>
 </dialog>
 
 <main id="main" class="wrap" tabindex="-1">
-<div class="prose">
+<div class="prose" data-only="it">
 <h1>Privacy</h1>
 <p>GERICO è un sito da leggere: non ha account, non usa cookie suoi e non raccoglie statistiche sulle visite.</p>
 
@@ -50,7 +51,7 @@
 <p>Titolare del trattamento: <span class="ph">[nome e cognome o ragione sociale]</span>, <span class="ph">[indirizzo di contatto]</span>.</p>
 
 <h2>Cosa resta nel tuo browser</h2>
-<p>Alcune scelte restano salvate solo sul tuo dispositivo, nella memoria locale del browser: tema chiaro o scuro, dimensione del testo, temi che segui, vista della mappa del Terminal e Borsa scelta sulla mappa, gruppo scelto nei grafici del Terminal, la scelta di mostrare i prezzi in diretta e l'accenno che mostra lo scorrimento di lato tra le sezioni. Non arrivano a noi e puoi cancellarle quando vuoi dalle impostazioni del browser.</p>
+<p>Alcune scelte restano salvate solo sul tuo dispositivo, nella memoria locale del browser: lingua, tema chiaro o scuro, dimensione del testo, temi che segui, vista della mappa del Terminal e Borsa scelta sulla mappa, gruppo scelto nei grafici del Terminal, la scelta di mostrare i prezzi in diretta e l'accenno che mostra lo scorrimento di lato tra le sezioni. Non arrivano a noi e puoi cancellarle quando vuoi dalle impostazioni del browser.</p>
 <p>Nella memoria di sessione del browser restano tre cose: il titolo della storia che hai toccato, per il passaggio tra le due pagine; il fatto che l'entrata con il nome GERICO sia già stata mostrata, così la vedi a ogni nuova apertura del sito ma non a ogni pagina; il punto a cui sei arrivato nel riepilogo a voce, così dopo un ricaricamento riparte da lì. Si cancellano da sole quando chiudi la scheda.</p>
 
 <h2>Hosting</h2>
@@ -58,6 +59,9 @@
 
 <h2>Caratteri</h2>
 <p>I caratteri tipografici (Atkinson Hyperlegible e Newsreader) sono ospitati sul sito: aprendo GERICO non fai richieste a Google o ad altri servizi di font.</p>
+
+<h2>Traduzione</h2>
+<p>La versione inglese degli articoli la prepara sui server di GitHub Gemini, il modello di Google, a cui vanno solo i testi pubblicati. Il tuo browser non contatta Google: legge la traduzione dai file di GERICO.</p>
 
 <h2>Prezzi in diretta nel Terminal</h2>
 <p>Il nastro dei prezzi in diretta è un widget di TradingView. Si carica solo se premi «Prezzi in diretta». Da quel momento il tuo browser si collega a TradingView, che può usare cookie e trattare dati secondo la sua <a href="https://it.tradingview.com/privacy-policy/" rel="noopener" target="_blank">informativa</a>. Puoi nasconderlo con lo stesso pulsante.</p>
@@ -68,8 +72,40 @@
 <h2>I tuoi diritti</h2>
 <p>Per qualsiasi richiesta sui dati personali scrivi a <span class="ph">[indirizzo di contatto]</span>. Puoi anche rivolgerti al Garante per la protezione dei dati personali.</p>
 
-<p><small>Ultimo aggiornamento: 2 novembre 2026.</small></p>
+<p><small>Ultimo aggiornamento: 9 novembre 2026.</small></p>
 </div>
+<div class="prose" data-only="en">
+<h1>Privacy</h1>
+<p>GERICO is a site for reading: it has no accounts, uses no cookies of its own and collects no visitor statistics.</p>
+
+<h2>Who is responsible</h2>
+<p>Data controller: <span class="ph">[name or company name]</span>, <span class="ph">[contact address]</span>.</p>
+
+<h2>What stays in your browser</h2>
+<p>Some choices are saved only on your device, in the browser's local storage: language, light or dark theme, text size, the topics you follow, the Terminal map view and the market chosen on the map, the group chosen in the Terminal charts, the choice to show live prices and the hint that shows sideways scrolling between sections. They never reach us and you can delete them at any time from your browser settings.</p>
+<p>Three things stay in the browser's session storage: the headline of the story you tapped, for the transition between the two pages; whether the GERICO opening animation has already been shown, so you see it each time you open the site but not on every page; and how far you got in the audio briefing, so after a reload it starts again from there. They are deleted automatically when you close the tab.</p>
+
+<h2>Hosting</h2>
+<p>The site is hosted by Cloudflare (Workers, static files only). To deliver the pages and protect them from abuse, Cloudflare processes technical data such as the IP address, according to its <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank">privacy policy</a>.</p>
+
+<h2>Fonts</h2>
+<p>The typefaces (Atkinson Hyperlegible and Newsreader) are hosted on the site: opening GERICO makes no requests to Google or other font services.</p>
+
+<h2>Translation</h2>
+<p>The English version of the articles is prepared on GitHub's servers with Gemini, Google's model, which receives only the published texts. Your browser does not contact Google: it reads the translation from GERICO's files.</p>
+
+<h2>Live prices in the Terminal</h2>
+<p>The live price tape is a TradingView widget. It loads only if you press «Live prices». From then on your browser connects to TradingView, which may use cookies and process data according to its <a href="https://www.tradingview.com/privacy-policy/" rel="noopener" target="_blank">privacy policy</a>. You can hide it with the same button.</p>
+
+<h2>Links to news outlets</h2>
+<p>Links to articles lead to the outlets' sites, which have their own privacy policies.</p>
+
+<h2>Your rights</h2>
+<p>For any request about personal data write to <span class="ph">[contact address]</span>. You can also contact the Italian data protection authority (Garante per la protezione dei dati personali).</p>
+
+<p><small>Last updated: 9 November 2026.</small></p>
+</div>
+
 </main>
 
 <footer class="foot">
@@ -77,7 +113,7 @@
 <p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a><span>Nessun consiglio di investimento</span></p>
 </div>
 </footer>
-<script src="assets/js/common.js?v=20261109-2"></script>
-<script src="assets/js/info.js?v=20261109-2"></script>
+<script src="assets/js/common.js?v=20261109-3"></script>
+<script src="assets/js/info.js?v=20261109-3"></script>
 </body>
 </html>

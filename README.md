@@ -47,6 +47,7 @@ una chat a ogni giro. Gli orari del workflow si accendono quando quelle attivit�
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno
 - `terminal.json`: variazioni degli indici della mappa (finché manca `terminal/snapshot` nel database, sono ricavate dai mercati)
 - `weights.json`: pesi della mappa dai factsheet MSCI (documento `terminal/weights` del database), aggiornati una volta al mese
+- `tr/en.json`, `tr/it.json`: le traduzioni, vedi «Due lingue»
 
 I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora
 nelle ore di mercato dei giorni feriali e scarica solo `quotes.json` con yfinance (Yahoo Finance): indici di tutte le Borse
@@ -57,6 +58,21 @@ quelli della redazione quando sono più recenti (`G.withQuotes` e `G.mapItems` i
 spiegazioni, le storie collegate e i dati che la Borsa non dà (Btp, Bund, spread). Le pagine aperte controllano ogni tre minuti
 se sono usciti prezzi nuovi e li mostrano da sole. I timer di GitHub possono partire in ritardo, anche di un'ora: ogni prezzo
 porta l'ora a cui si riferisce.
+
+## Due lingue
+
+Il sito si legge in italiano e in inglese: la lingua si sceglie nel menu (resta nel browser) o con `?lang=en` nell'indirizzo.
+Le scritte dell'interfaccia stanno nel codice, accanto alla versione italiana (`G.L(italiano, inglese)` e il dizionario `EN`
+in `common.js`, per le scritte fisse delle pagine e i nomi). Come funziona e Privacy hanno le due versioni nella pagina
+(`data-only="it"` e `data-only="en"`). Date e numeri seguono la lingua.
+
+I contenuti li traduce il workflow «Traduzione» (`.github/workflows/traduzione.yml`, `scripts/traduci.py`) dopo ogni edizione
+e dopo i dati del Terminal: i testi della redazione dall'italiano all'inglese (`site/data/tr/en.json`) e i titoli che arrivano
+in inglese, Forex Factory e Yahoo Finance, dall'inglese all'italiano (`site/data/tr/it.json`). Ogni file è una mappa
+{impronta del testo originale: traduzione}, con la stessa impronta in Python e nel sito (`G.hash`, cyrb53); `G.load` la
+applica ai campi da tradurre. Si traducono solo i testi nuovi, con Gemini (segreto `GEMINI_API_KEY`; il modello lo sceglie lo
+script tra i «flash», o la variabile `GERICO_GEMINI_TESTO`; «Run workflow» con «modelli» li elenca). Un testo non ancora
+tradotto resta nella lingua originale e, per le storie, il sito lo dice («in Italian»). Il riepilogo a voce resta in italiano.
 
 ## Anteprima in locale
 

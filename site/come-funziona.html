@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-2">
-<script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-3">
+<script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
 <div class="intro-screen" aria-hidden="true"></div><div class="intro-word" aria-hidden="true">GERICO</div>
@@ -38,13 +38,14 @@
 <div class="grab" aria-hidden="true"></div>
 <div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
 <nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a></nav>
+<div class="opt"><p class="opt-l" id="opt-lang">Lingua</p><div class="seg seg-fill" role="group" aria-labelledby="opt-lang"><button type="button" data-lang-set="it" lang="it">Italiano</button><button type="button" data-lang-set="en" lang="en">English</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-theme">Tema</p><div class="seg seg-fill" role="group" aria-labelledby="opt-theme"><button type="button" data-theme-set="light">Chiaro</button><button type="button" data-theme-set="dark">Scuro</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
 </div>
 </dialog>
 
 <main id="main" class="wrap" tabindex="-1">
-<div class="prose">
+<div class="prose" data-only="it">
 <h1>Come funziona GERICO</h1>
 <p>Ogni giorno GERICO legge testate italiane e straniere, agenzie e fonti ufficiali e, per ogni notizia importante, scrive un articolo suo. Non è il riassunto di un giornale: è costruito su tutte le fonti lette, con le posizioni di tutte le parti in causa e, per ogni dato, chi lo dice.</p>
 
@@ -64,8 +65,8 @@
 
 <h2>Le fonti</h2>
 <p>L'elenco fisso comprende testate italiane, europee, americane, mediorientali, ucraine e asiatiche. Ogni articolo letto viene controllato per data: un pezzo vecchio entra solo come contesto, dichiarato. In fondo a ogni notizia ci sono tutte le fonti, con il link all'articolo originale e cosa aggiunge ciascuna.</p>
-<p id="outlets">Testate lette nell'ultima edizione: —</p>
-<p id="quality"></p>
+<p data-outlets>Testate lette nell'ultima edizione: —</p>
+<p data-quality></p>
 
 <h2>Quando si aggiorna</h2>
 <ul>
@@ -76,6 +77,7 @@
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
 <p>Le brevi sono notizie da una sola fonte, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le ha ancora verificate su altre fonti.</p>
+<p>GERICO si legge in italiano e in inglese: la lingua si sceglie nel menu. Gli articoli li scrive la redazione in italiano; la versione inglese la prepara poco dopo ogni aggiornamento un programma sui server di GitHub con Gemini, il modello di Google, a cui vanno solo i testi pubblicati. Allo stesso modo i titoli che arrivano in inglese (il calendario di Forex Factory, le notizie di Yahoo Finance) si leggono in italiano. Una notizia appena uscita può restare per qualche minuto nella lingua originale, e la pagina lo dice. In caso di dubbio fa fede il testo italiano.</p>
 <p>Il riepilogo da ascoltare, in prima pagina, esce ogni mattina: le notizie principali e cosa muovono su oro, petrolio, valute e indici. Il testo lo scrive il giro delle notizie con gli stessi fatti e numeri dell'edizione; lo legge una voce sintetica: di norma quella di Gemini, il modello vocale di Google, a cui va solo il testo del riepilogo; se quel servizio non risponde, Nicola del modello aperto Kokoro, che gira sui server di GitHub senza servizi esterni.</p>
 
 <h2>Il Terminal</h2>
@@ -101,6 +103,65 @@
 <h2>I limiti</h2>
 <p>GERICO lavora solo su fonti pubbliche e può sbagliare. Ogni fonte è linkata, così ogni dato si può controllare all'origine. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
 </div>
+<div class="prose" data-only="en">
+<h1>How GERICO works</h1>
+<p>Every day GERICO reads Italian and foreign news outlets, news agencies and official sources and, for every important story, writes an article of its own. It is not a summary of one newspaper: it is built on all the sources read, with the positions of every party involved and, for each piece of data, who says it.</p>
+
+<h2>The rules</h2>
+<ul>
+<li>Every number, figure or statement has its source in the text: the government, agency, institute or outlet that reports it.</li>
+<li>The facts at the top are confirmed by at least two independent sources. Two newspapers running the same agency report count as one source.</li>
+<li>A fact with a single source is written as such («according to...»), never as certain.</li>
+<li>When the parties give different versions or numbers, the article reports all of them, each with who gives it.</li>
+<li>The sources come from different regions: for a story from the Middle East, Israeli and Arab outlets too; for Ukraine, Ukrainian ones too.</li>
+<li>There are no opinions in the article. What is not known yet is kept apart, under «What is not known yet».</li>
+<li>A mistake is corrected in the article, and the correction stays on record among the story's updates.</li>
+</ul>
+
+<h2>GERICO's view</h2>
+<p>Below the article, separate and with its own heading, is GERICO's view: what can be said with certainty, what remains open, why the story matters and what to watch in the following days. It is the only place where GERICO interprets. It takes no political sides and gives no investment advice.</p>
+
+<h2>The sources</h2>
+<p>The fixed list includes Italian, European, American, Middle Eastern, Ukrainian and Asian outlets. Every article read is checked for its date: an old piece is used only as context, and says so. At the end of every story are all the sources, with a link to the original article and what each one adds.</p>
+<p data-outlets>Outlets read for the latest edition: —</p>
+<p data-quality></p>
+
+<h2>When it updates</h2>
+<ul>
+<li>Every morning around 7:30 (Italian time): news, news in brief, markets and the day's calendar.</li>
+<li>Every day around 13:30: what happened during the morning, new items in brief and midday market data.</li>
+<li>On weekdays around 18:20: the close of European stock markets.</li>
+<li>Four times on weekdays and once on Saturdays: prices and charts, economic series, news tone and the Forex Factory calendar in the Terminal.</li>
+<li>Once a month: the weights of the Terminal map.</li>
+</ul>
+<p>News in brief comes from a single source, with a link to the article: it tells you what else happened. GERICO has not yet checked it against other sources.</p>
+<p>GERICO can be read in Italian and in English: choose the language in the menu. The newsroom writes the articles in Italian; shortly after each update a program on GitHub's servers prepares the English version with Gemini, Google's model, which receives only the published texts. In the same way, headlines that arrive in English (the Forex Factory calendar, Yahoo Finance news) are translated for the Italian site. A story that has just come out may stay in its original language for a few minutes, and the page says so. If in doubt, the Italian text is the reference.</p>
+<p>The audio briefing on the front page comes out every morning, in Italian: the main news and how it moves gold, oil, currencies and indices. The newsroom writes the text with the same facts and numbers as the edition; a synthetic voice reads it: normally Gemini's, Google's voice model, which receives only the text of the briefing; if that service does not respond, Nicola from the open Kokoro model, which runs on GitHub's servers with no external services.</p>
+
+<h2>The Terminal</h2>
+<p>The Terminal map shows the world's main stock markets. The area of each square is the country's weight in the MSCI ACWI world index (in the Europe view, in the MSCI Europe index); the colour is the change in the last session of that country's main index. The changes come from the same dated articles used for the markets: when a figure is not verified, the square stays grey.</p>
+<p>Live prices, if you ask for them, come from TradingView's free widget and have a different delay for each market.</p>
+<p>The other Terminal panels are prepared by a program that runs on GitHub's servers, not in your browser: the page only reads GERICO's files.</p>
+<ul>
+<li><strong>Prices and charts</strong>: from Yahoo Finance, with the yfinance library. One close per day for three months; prices may be a few minutes late.</li>
+<li><strong>Macro</strong>: rates, inflation and jobs from the St. Louis Fed's FRED database. Inflation is the change on the same month a year earlier.</li>
+<li><strong>News tone</strong>: Yahoo Finance headlines from the last three days, read by FinBERT, a model for financial texts in English. It says whether a headline sounds positive, neutral or negative for the markets; it often gets irony and questions wrong and does not say where a price will go.</li>
+<li><strong>Economic calendar</strong>: besides GERICO's calendar, the Forex Factory calendar for the week, in Italian time: today's high- and medium-impact events and holidays, then the high-impact events of the following days. On the front page, at the bottom of the markets box, is the next high-impact release.</li>
+<li><strong>SEC filings</strong>: the official filings (8-K, 10-Q, 10-K) of a group of large US companies, from the EDGAR database. The panel appears only when the SEC responds to GitHub's servers.</li>
+</ul>
+
+<h2 id="stocks">Stocks to watch</h2>
+<p>On weekdays GERICO points to between zero and five stocks with a concrete reason to rise in the following sessions. The section appears on the front page and in the Terminal on the days it has been prepared. It is done in two steps.</p>
+<p>The first step looks at prices. A program scans about 190 heavily traded stocks (FTSE MIB, Euro Stoxx 50 and the hundred main Wall Street stocks) and looks for a few very short-term signals: a close above the high of the previous twenty sessions, with high volume; an opening gap that holds in the following days; a better performance than its own index over the last twenty sessions; a dip of a few days within an uptrend. They are known, measurable signals, not forecasts.</p>
+<p>The second step looks at the news. For the candidates with the highest score GERICO looks for a news item dated within the last 48 hours that explains the move: results, guidance, orders, analyst ratings. Only the stocks where prices and news point the same way remain. Those with results due in the next two days, and those where the news is already fully priced in, are discarded. Each stock has the reason, the risk and the dated source. If no stock passes the filters, the section says so.</p>
+<p>For each stock published GERICO calculates the return after 1, 3 and 5 sessions and compares it with its index. The record of the last twenty stocks is shown below the section, even when it is bad.</p>
+<p>Very short-term signals are often wrong, and a stock can fall even on good news. This section is not personalised advice: it does not take into account your situation, your goals or how much risk you can bear. You can lose money.</p>
+<p>The analyses are edited by Riccardo Peruzzo, who runs GERICO and holds no positions in the stocks mentioned. If this changes, it will be stated here and in the section.</p>
+
+<h2>The limits</h2>
+<p>GERICO works only from public sources and can make mistakes. Every source is linked, so every figure can be checked at its origin. To report a mistake: <span class="ph">[contact address]</span>.</p>
+</div>
+
 </main>
 
 <footer class="foot">
@@ -109,7 +170,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261109-2"></script>
-<script src="assets/js/info.js?v=20261109-2"></script>
+<script src="assets/js/common.js?v=20261109-3"></script>
+<script src="assets/js/info.js?v=20261109-3"></script>
 </body>
 </html>

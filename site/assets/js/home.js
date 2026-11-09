@@ -12,8 +12,8 @@ G.page("home", async function (P) {
   // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, più sotto)
   let qt = qt0, mk = G.withQuotes(mk0, qt);
   if (!ed || !Array.isArray(ed.stories)) {
-    $("feed").innerHTML = '<div class="empty"><h2>L\'edizione non si è caricata.</h2><p>Può essere la connessione. Riprova tra poco.</p>' +
-      '<p><button type="button" class="btn-retry" id="retry">Riprova</button></p></div>';
+    $("feed").innerHTML = '<div class="empty"><h2>' + G.L("L'edizione non si è caricata.", "The edition did not load.") + "</h2><p>" + G.L("Può essere la connessione. Riprova tra poco.", "It may be the connection. Try again shortly.") + "</p>" +
+      '<p><button type="button" class="btn-retry" id="retry">' + G.L("Riprova", "Try again") + "</button></p></div>";
     $("retry").addEventListener("click", () => location.reload());
     $("side").innerHTML = "";
     $("ticker").hidden = true;
@@ -34,11 +34,11 @@ G.page("home", async function (P) {
     G.setEdition(lastRun);
     const edl = document.querySelector("#edition-line .ed-l");
     // «Mercoledì 28 ottobre · ore 7:23»: sta in una riga anche sul telefono
-    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · ore ");
+    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · ore ").replace(" · edition of ", " · ");
     // «Oggi» solo sopra l'edizione di oggi; per le altre il giorno (la data e l'ora sono nella riga accanto)
     const age = G.dayAge(lastRun);
     if (age > 0) {
-      const name = age === 1 ? "Ieri" : age < 7 ? G.cap(G.weekday(lastRun)) : "Ultima edizione";
+      const name = age === 1 ? G.L("Ieri", "Yesterday") : age < 7 ? G.cap(G.weekday(lastRun)) : G.L("Ultima edizione", "Latest edition");
       $("large-title").textContent = name;
       const tt = document.querySelector(".top-title");
       if (tt) tt.textContent = name;
@@ -68,10 +68,10 @@ G.page("home", async function (P) {
   const visibleBrevi = () => (state.section === "seguiti" ? [] : brevi.filter((b) => state.section === "tutte" || inTab(b.section))).slice(0, 15);
   const visiblePast = () => (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
   function buildNav() {
-    const items = [["tutte", "Tutte"]];
+    const items = [["tutte", G.L("Tutte", "All")]];
     const has = (secs) => stories.some((s) => secs.includes(s.section)) || brevi.some((b) => secs.includes(b.section));
     TABS.forEach(([k, secs]) => { if (has(secs)) items.push([k, G.SECTIONS[k]]); });
-    if (state.follows.length) items.push(["seguiti", "Seguiti"]);
+    if (state.follows.length) items.push(["seguiti", G.L("Seguiti", "Following")]);
     $("sections").innerHTML = items.map(([k, label]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '">' + esc(label) + "</a>").join("");
   }
   // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
@@ -83,7 +83,7 @@ G.page("home", async function (P) {
 
   // ---------- notizie: occhiello sopra il titolo, come nei siti all-news ----------
   // sezione in maiuscolo e ora dell'ultimo aggiornamento; «Aggiornata» in rosso quando la storia è cambiata oggi
-  const ago = (iso) => (G.isToday(iso) ? G.hm(iso) : G.dayAge(iso) === 1 ? "ieri" : G.day(iso));
+  const ago = (iso) => (G.isToday(iso) ? G.hm(iso) : G.dayAge(iso) === 1 ? G.L("ieri", "yesterday") : G.day(iso));
   function kicker(s, showSection) {
     const parts = [];
     if (showSection) parts.push('<span class="k-sec">' + esc(G.secLabel(s.section)) + "</span>");
@@ -93,6 +93,8 @@ G.page("home", async function (P) {
     // quante fonti ha letto GERICO per scrivere l'articolo
     const n = G.srcCount(s.sources);
     if (n) parts.push('<span class="k-src">' + esc(n) + "</span>");
+    // nel sito in inglese, una storia non ancora tradotta lo dice
+    if (G.en && s.untranslated) parts.push('<span class="k-src">in Italian</span>');
     return parts.length ? '<p class="kick">' + parts.join("") + "</p>" : "";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
@@ -109,19 +111,19 @@ G.page("home", async function (P) {
   // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {
     if (!items.length) return "";
-    return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">In breve</h2>' +
-      '<p class="blk-sub">Da una sola fonte e non ancora verificate da GERICO: il link porta all\'articolo.</p><ul class="brevi">' +
+    return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">' + G.L("In breve", "In brief") + "</h2>" +
+      '<p class="blk-sub">' + G.L("Da una sola fonte e non ancora verificate da GERICO: il link porta all'articolo.", "From a single source and not yet checked by GERICO: the link goes to the article.") + '</p><ul class="brevi">' +
       items.map((b) => {
         const meta = [showSection ? G.secLabel(b.section) : "", b.source].filter(Boolean).map(esc).join(" · ");
         return '<li><span class="b-time' + (G.isToday(b.at) ? "" : " old") + '">' + esc(b.at ? ago(b.at) : "") + '</span><div class="b-body">' +
-          '<a href="' + esc(G.safeUrl(b.url)) + '" target="_blank" rel="noopener">' + esc(b.title) + '<span class="sr-only"> (si apre il sito della testata)</span></a>' +
+          '<a href="' + esc(G.safeUrl(b.url)) + '" target="_blank" rel="noopener">' + esc(b.title) + '<span class="sr-only"> ' + G.L("(si apre il sito della testata)", "(opens the outlet's site)") + "</span></a>" +
           (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</div></li>";
       }).join("") + "</ul></section>";
   }
   // storie dei giorni scorsi: archiviate, ancora leggibili
   function pastHTML(items, showSection) {
     if (!items.length) return "";
-    return '<section class="blk" aria-labelledby="past-h"><h2 class="blk-h" id="past-h">Nei giorni scorsi</h2><ul class="brevi past">' +
+    return '<section class="blk" aria-labelledby="past-h"><h2 class="blk-h" id="past-h">' + G.L("Nei giorni scorsi", "In recent days") + '</h2><ul class="brevi past">' +
       items.map((s) => {
         const meta = [showSection ? G.secLabel(s.section) : "", s.updated ? G.cap(G.weekday(s.updated)) + " " + G.day(s.updated) : ""].filter(Boolean).map(esc).join(" · ");
         return '<li><a href="' + G.storyUrl(s) + '">' + esc(G.headline(s)) + "</a>" + (meta ? '<p class="b-m">' + meta + "</p>" : "") + "</li>";
@@ -130,8 +132,8 @@ G.page("home", async function (P) {
   // titoli da seguire: un segnale sui prezzi e una notizia; in Tutte, Economia e Mercati
   function titoliHTML() {
     if (!G.titoliFresh(tit) || !["tutte", "economia", "mercati"].includes(state.section)) return "";
-    return '<section class="blk tit" aria-labelledby="tit-h"><h2 class="blk-h" id="tit-h">Titoli da seguire</h2>' +
-      '<p class="blk-sub">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p>' + G.titoliHTML(tit, tsh) + "</section>";
+    return '<section class="blk tit" aria-labelledby="tit-h"><h2 class="blk-h" id="tit-h">' + G.L("Titoli da seguire", "Stocks to watch") + "</h2>" +
+      '<p class="blk-sub">' + G.L("Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.", "A price signal and a news item that could move them in the coming days.") + "</p>" + G.titoliHTML(tit, tsh) + "</section>";
   }
   // versione dell'elenco e sezioni accanto preparate per lo swipe (vedi prepareSoon)
   // alive: la prima pagina è ancora quella sullo schermo (i momenti liberi del browser non si spengono con la pagina)
@@ -156,15 +158,15 @@ G.page("home", async function (P) {
     const list = visible(), bl = visibleBrevi(), past = visiblePast();
     if (!list.length && !bl.length) {
       return (state.section === "seguiti"
-        ? '<div class="empty"><h2>Nessuna storia sui temi che segui.</h2><p>I temi si seguono dalla pagina di ogni storia.</p></div>'
-        : '<div class="empty"><h2>Nessuna storia in questa sezione.</h2><p><a href="#">Torna a tutte le notizie</a>.</p></div>') + pastHTML(past, true);
+        ? '<div class="empty"><h2>' + G.L("Nessuna storia sui temi che segui.", "No stories on the topics you follow.") + "</h2><p>" + G.L("I temi si seguono dalla pagina di ogni storia.", "You can follow topics from each story's page.") + "</p></div>"
+        : '<div class="empty"><h2>' + G.L("Nessuna storia in questa sezione.", "No stories in this section.") + '</h2><p><a href="#">' + G.L("Torna a tutte le notizie", "Back to all the news") + "</a>.</p></div>") + pastHTML(past, true);
     }
     const all = state.section === "tutte" || state.section === "seguiti";
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
-    const end = '<p class="end"><strong>' + (state.section === "tutte" ? "Fine dell'edizione." : "Fine della sezione.") + "</strong> Prossimo aggiornamento delle notizie " + esc(G.nextUpdate(true)) + ".</p>";
+    const end = '<p class="end"><strong>' + (state.section === "tutte" ? G.L("Fine dell'edizione.", "End of the edition.") : G.L("Fine della sezione.", "End of the section.")) + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
-      : '<p class="none">Oggi in questa sezione ci sono solo brevi.</p>';
+      : '<p class="none">' + G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.") + "</p>";
     return top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
   }
 
@@ -183,7 +185,7 @@ G.page("home", async function (P) {
     const list = (recent.length >= 4 ? recent : items).slice(0, 12);
     // la fascia è nella pagina da subito, per non spingere giù le notizie quando arriva: senza notizie si toglie
     if (!list.length) { $("ultim").hidden = true; return; }
-    const when = (iso) => { const a = G.dayAge(iso); return (a === 0 ? "" : a === 1 ? "ieri " : G.day(iso) + " ") + G.hm(iso); };
+    const when = (iso) => { const a = G.dayAge(iso); return (a === 0 ? "" : a === 1 ? G.L("ieri ", "yesterday ") : G.day(iso) + " ") + G.hm(iso); };
     const copy = (dup) => list.map((it) => '<a href="' + esc(it.url) + '"' + (it.ext ? ' target="_blank" rel="noopener"' : "") + (dup ? ' tabindex="-1"' : "") +
       "><b>" + esc(when(it.at)) + "</b>" + esc(it.title) + "</a>").join("");
     const t = $("ultim-t");
@@ -208,14 +210,14 @@ G.page("home", async function (P) {
     const when = au.source || au.asOf;
     $("ls-t").textContent = pl.title();
     // la durata sta già a destra (il tempo che manca): qui solo cosa c'è dentro e di quando è
-    $("ls-s").textContent = "Notizie e mercati, con l'aggiornamento delle " + G.hm(when);
+    $("ls-s").textContent = G.L("Notizie e mercati, con l'aggiornamento delle ", "News and markets in Italian, from the update at ") + G.hm(when);
     box.classList.remove("wait");
     btn.disabled = false;
     btn.addEventListener("click", () => pl.toggle());
     const paint = () => {
       const on = pl.playing(), d = pl.dur(), p = pl.pos();
       box.classList.toggle("playing", on);
-      btn.setAttribute("aria-label", on ? "Metti in pausa il riepilogo" : p > 0 ? "Riprendi il riepilogo" : "Ascolta il riepilogo");
+      btn.setAttribute("aria-label", on ? G.L("Metti in pausa il riepilogo", "Pause the briefing") : p > 0 ? G.L("Riprendi il riepilogo", "Resume the briefing") : G.L("Ascolta il riepilogo", "Listen to the briefing"));
       $("ls-prog").style.transform = "scaleX(" + (d ? Math.min(1, p / d) : 0).toFixed(4) + ")";
       $("ls-time").textContent = d ? pl.mmss(Math.max(0, d - p)) : "";
     };
@@ -239,12 +241,12 @@ G.page("home", async function (P) {
     }
     if (cells.length < 4 && mk) {
       cells.length = 0;
-      pick().forEach(({ it, key }) => cells.push({ name: G.shortName(it.name), value: G.cleanValue(it.value), mv: G.move(it).replace(" pb", ""), tone: G.tone(it, key) }));
+      pick().forEach(({ it, key }) => cells.push({ name: G.shortName(it.name), value: G.cleanValue(it.value), mv: G.move(it).replace(/ (pb|bp)$/, ""), tone: G.tone(it, key) }));
       when = mk.asOf ? G.when(mk.asOf) : "";
     }
     if (!cells.length) { $("ticker").hidden = true; return; }
     $("tk-w").textContent = when ? " · " + when : "";
-    $("tk-row").innerHTML = cells.slice(0, 6).map((c) => '<span class="tk"><span class="tk-n">' + esc(c.name) + '</span><span class="tk-v">' + esc(c.value) +
+    $("tk-row").innerHTML = cells.slice(0, 6).map((c) => '<span class="tk"><span class="tk-n">' + esc(G.tn(c.name)) + '</span><span class="tk-v">' + esc(c.value) +
       '</span><span class="tk-c ' + (c.tone || "") + '">' + esc(c.mv || "—") + "</span></span>").join("");
     $("ticker").classList.remove("sk-tk");
   }
@@ -263,14 +265,14 @@ G.page("home", async function (P) {
     }
     list.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     const n = list[0];
-    if (!n) { el.innerHTML = '<span class="tk-ev-l">Calendario</span> nessun dato ad alto impatto in arrivo questa settimana'; return; }
+    if (!n) { el.innerHTML = '<span class="tk-ev-l">' + G.L("Calendario", "Calendar") + "</span> " + G.L("nessun dato ad alto impatto in arrivo questa settimana", "no high-impact release due this week"); return; }
     let when = n.time;
     if (n.date !== day) when = G.weekday(n.date + "T12:00:00Z") + " " + n.time;
     else {
       const [hh, mm] = n.time.split(":").map(Number), mins = hh * 60 + mm - G.romeNow().min;
-      if (mins < 60) when = n.time + " (" + (mins <= 0 ? "adesso" : "tra " + mins + " min") + ")";
+      if (mins < 60) when = n.time + " (" + (mins <= 0 ? G.L("adesso", "now") : G.L("tra ", "in ") + mins + " min") + ")";
     }
-    el.innerHTML = '<span class="tk-ev-l">Alto impatto</span> <b>' + esc(when + " " + n.cur) + "</b> " + esc(n.ev);
+    el.innerHTML = '<span class="tk-ev-l">' + G.L("Alto impatto", "High impact") + "</span> <b>" + esc(when + " " + n.cur) + "</b> " + esc(n.ev);
   }
 
   // ---------- mercati: un riquadro con 5 numeri ----------
@@ -296,19 +298,19 @@ G.page("home", async function (P) {
     if (!rows.length) { $("side").innerHTML = ""; return; }
     const tr = rows.map(({ it, key }) => {
       const mv = typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it);
-      return '<tr><th scope="row">' + esc(G.shortName(it.name)) + "</th><td>" + esc(G.cleanValue(it.value)) +
+      return '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
         '</td><td class="mv ' + G.tone(it, key) + '">' + esc(mv) + "</td></tr>";
     }).join("");
-    $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">Mercati</h2>' +
+    $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
       '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
-      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">Tutti i mercati e l\'agenda</a></section>';
+      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>";
   }
   // una classe intera senza dati si dice, invece di lasciare il riquadro più corto senza spiegazione
   function gapNote() {
-    const want = { obbligazioni: "i titoli di Stato", valute: "le valute", materie: "le materie prime" };
+    const want = G.en ? { obbligazioni: "government bonds", valute: "currencies", materie: "commodities" } : { obbligazioni: "i titoli di Stato", valute: "le valute", materie: "le materie prime" };
     const miss = Object.keys(want).filter((k) => { const c = (mk.classes || []).find((x) => x.key === k); return !c || !(c.items || []).length; }).map((k) => want[k]);
     if (!miss.length) return "";
-    return '<p class="mk-gap">In questo aggiornamento mancano ' + esc(miss.length > 1 ? miss.slice(0, -1).join(", ") + " e " + miss[miss.length - 1] : miss[0]) + ".</p>";
+    return '<p class="mk-gap">' + G.L("In questo aggiornamento mancano ", "Missing from this update: ") + esc(miss.length > 1 ? miss.slice(0, -1).join(", ") + G.L(" e ", " and ") + miss[miss.length - 1] : miss[0]) + ".</p>";
   }
 
   // ---------- eventi ----------
@@ -389,7 +391,7 @@ G.page("home", async function (P) {
   // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
   function announce(sec) {
     const n = visible().length, st = $("sec-status");
-    if (st) st.textContent = (sec === "tutte" ? "Tutte le notizie" : sec === "seguiti" ? "Temi seguiti" : G.SECTIONS[sec]) + ": " + n + (n === 1 ? " notizia" : " notizie");
+    if (st) st.textContent = (sec === "tutte" ? G.L("Tutte le notizie", "All the news") : sec === "seguiti" ? G.L("Temi seguiti", "Followed topics") : G.SECTIONS[sec]) + ": " + n + (n === 1 ? G.L(" notizia", " story") : G.L(" notizie", " stories"));
   }
   // porta la pagina a «y» dopo aver cambiato sezione. Se la sezione nuova è troppo corta per arrivarci, l'elenco si
   // allunga di quel che manca (spazio vuoto in fondo): altrimenti il browser fermerebbe la pagina più in alto e tutto
@@ -608,7 +610,7 @@ G.page("home", async function (P) {
     if (!now || !now.lastRun || now.lastRun === ed.lastRun) return;
     const btn = document.createElement("button");
     btn.type = "button"; btn.id = "fresh"; btn.className = "fresh";
-    btn.textContent = "Edizione nuova delle " + G.hm(now.lastRun) + " · Aggiorna";
+    btn.textContent = G.L("Edizione nuova delle ", "New edition at ") + G.hm(now.lastRun) + G.L(" · Aggiorna", " · Refresh");
     btn.addEventListener("click", () => location.reload());
     document.body.appendChild(btn);
   });

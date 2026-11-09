@@ -1,4 +1,4 @@
-/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F7) e comandi, prezzi in diretta al clic. */
+/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F9) e comandi, prezzi in diretta al clic. */
 G.page("terminal", async function (P) {
   "use strict";
   const esc = G.esc;
@@ -506,7 +506,10 @@ G.page("terminal", async function (P) {
   }
   function renderQuotes(qt) {
     const groups = ((qt && qt.groups) || []).filter((g) => (g.items || []).length);
-    if (!groups.length) return hide("p-grafici", "GRAFICI");
+    if (!groups.length) {
+      ["INDICI", "VALUTE", "MATERIE PRIME"].forEach((c) => { const k = document.querySelector('[data-cmd="' + c + '"]'); if (k) k.hidden = true; });
+      return hide("p-grafici", "GRAFICI");
+    }
     quotes = { groups };
     if (!groups.some((g) => g.key === grKey)) grKey = groups[0].key;
     srcLine("gr-src", qt, "Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno");
@@ -649,7 +652,9 @@ G.page("terminal", async function (P) {
   });
 
   // ---------- sezioni, comandi e tasti funzione ----------
-  const PANELS = { MAPPA: "map-panel", INDICI: "p-indici", VALUTE: "p-valute", TASSI: "p-tassi", MATERIE: "p-materie", "MATERIE PRIME": "p-materie", AGENDA: "p-agenda", CALENDARIO: "p-agenda", FOREX: "p-agenda", "FOREX FACTORY": "p-agenda", FF: "p-agenda", NOTIZIE: "p-notizie",
+  // indici, valute e materie prime stanno in «Prezzi e grafici»: il tasto apre il pannello sul gruppo giusto
+  const GROUP_CMD = { INDICI: "indici", VALUTE: "valute", CAMBI: "valute", MATERIE: "materie", "MATERIE PRIME": "materie", CRIPTO: "cripto", "TASSI USA": "tassi" };
+  const PANELS = { MAPPA: "map-panel", TASSI: "p-tassi", AGENDA: "p-agenda", CALENDARIO: "p-agenda", FOREX: "p-agenda", "FOREX FACTORY": "p-agenda", FF: "p-agenda", NOTIZIE: "p-notizie",
     GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
@@ -660,13 +665,27 @@ G.page("terminal", async function (P) {
     el.classList.add("flash");
     setTimeout(() => el.classList.remove("flash"), 1200);
   }
+  // il gruppo si cambia prima di scorrere: quello che cambia altezza sta sotto il punto d'arrivo e niente si sposta
+  function openGroup(k) {
+    if (k !== grKey && (!quotes || quotes.groups.some((g) => g.key === k))) {
+      grKey = k;
+      G.ls.set("gerico.grGroup", k);
+      if (quotes) {
+        $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey)));
+        G.seg($("gr-tabs"), true);
+        drawGroup();
+      }
+    }
+    go("p-grafici");
+  }
   function run(raw) {
     const c = String(raw || "").trim().toUpperCase().replace(/\s+/g, " ");
     if (!c) return;
     let ok = true;
     if (c === "MAPPA EUROPA" || c === "EUROPA") { setView("europa"); go("map-panel"); }
     else if (c === "MAPPA MONDO" || c === "MONDO") { setView("mondo"); go("map-panel"); }
-    else if (PANELS[c] && !$(PANELS[c]).hidden) go(PANELS[c]);
+    else if (GROUP_CMD[c] && !$("p-grafici").hidden) openGroup(GROUP_CMD[c]);
+    else if (PANELS[c] && $(PANELS[c]) && !$(PANELS[c]).hidden) go(PANELS[c]);
     else {
       const q = findQuote(c);
       if (q) {
@@ -679,7 +698,7 @@ G.page("terminal", async function (P) {
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
-  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "GRAFICI", F9: "MACRO", F10: "SENTIMENT" };
+  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "MACRO", F9: "SENTIMENT" };
   P.on(document, "keydown", (e) => {
     const t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
@@ -781,12 +800,9 @@ G.page("terminal", async function (P) {
   });
   drawMap(false);
   size = $("map").clientWidth + "x" + $("map").clientHeight;
-  table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
-  table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
   table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
   // la colonna di lato compare quando ha i dati (CSS .t-side.ready): le tabelle non spingono giù i pannelli sotto
   showSide();
-  table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   renderAgenda();
   P.every(renderAgenda, 30000);
   renderNews();
@@ -810,10 +826,7 @@ G.page("terminal", async function (P) {
 
   // prezzi nuovi a pagina aperta (job «Prezzi», ogni mezz'ora): mappa, tabelle, grafici e riga dei dati, senza animazioni
   const tables = () => {
-    table("indici", ["Indice", "Ultimo", "Var. %"], "ix");
-    table("valute", ["Coppia", "Ultimo", "Var. %"], "fx");
     table("obbligazioni", ["Titolo", "Rendimento", "Punti base"], "rt", "Rosso: rendimenti in salita, cioè prezzi in calo.");
-    table("materie", ["Materia prima", "Ultimo", "Var. %"], "cm");
   };
   G.liveQuotes(P, qt0 && qt0.asOf, (q) => {
     qt0 = q; mk = G.withQuotes(mk0, q);

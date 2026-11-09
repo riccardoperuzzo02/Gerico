@@ -1203,11 +1203,22 @@
     };
     applySize(G.ls.get("gerico.size", 0));
     applyTheme();
+    // cambio di tema o di dimensione del testo: la pagina vecchia sfuma sopra la nuova (CSS, html.theme-vt)
+    const fade = (change) => {
+      if (!document.startViewTransition || G.reduced()) { change(); return; }
+      document.querySelectorAll("[style*='view-transition-name']").forEach((el) => { el.style.viewTransitionName = ""; });
+      html.classList.add("theme-vt");
+      const t = document.startViewTransition(change);
+      t.finished.finally(() => html.classList.remove("theme-vt"));
+    };
     document.querySelectorAll("[data-size-set]").forEach((b) => b.addEventListener("click", () => {
       const s = Number(b.dataset.sizeSet) || 0;
-      G.ls.set("gerico.size", s); applySize(s);
-      requestAnimationFrame(() => groups("[data-size-set]").forEach((g) => G.seg(g)));
-      window.dispatchEvent(new Event("resize"));
+      if (s === (G.ls.get("gerico.size", 0) || 0)) return;
+      fade(() => {
+        G.ls.set("gerico.size", s); applySize(s);
+        groups("[data-size-set]").forEach((g) => G.seg(g, true));
+        window.dispatchEvent(new Event("resize"));
+      });
     }));
     document.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
       const changes = (b.dataset.themeSet === "dark") !== G.isDark();
@@ -1217,16 +1228,9 @@
         applyTheme();
         groups("[data-theme-set]").forEach((g) => G.seg(g));
       };
-      // cambio di tema: il nuovo colore si allarga a cerchio dal pulsante toccato
-      if (!changes || !document.startViewTransition || G.reduced()) { apply(); return; }
-      const r = b.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
-      const rad = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-      document.querySelectorAll("[style*='view-transition-name']").forEach((el) => { el.style.viewTransitionName = ""; });
-      html.classList.add("theme-vt");
-      const t = document.startViewTransition(apply);
-      t.ready.then(() => html.animate({ clipPath: ["circle(0px at " + x + "px " + y + "px)", "circle(" + rad.toFixed(0) + "px at " + x + "px " + y + "px)"] },
-        { duration: 480, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", pseudoElement: "::view-transition-new(root)" })).catch(() => {});
-      t.finished.finally(() => html.classList.remove("theme-vt"));
+      // cambio di tema: una dissolvenza breve da un tema all'altro, su tutta la pagina
+      if (!changes) { apply(); return; }
+      fade(apply);
     }));
 
     // il menu è un dialog: tiene il focus dentro, si chiude con Esc, toccando fuori o con il pulsante

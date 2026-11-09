@@ -42,6 +42,8 @@ G.page("home", async function (P) {
       $("large-title").textContent = name;
       const tt = document.querySelector(".top-title");
       if (tt) tt.textContent = name;
+      // con il giorno della settimana nel titolo, la riga sotto non lo ripete: «6 novembre · ore 13:23»
+      if (age > 1 && age < 7 && edl) edl.textContent = edl.textContent.replace(/^\S+\s+/, "");
     }
   }
 

@@ -729,8 +729,10 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   .t-agenda li.next.soon::before, .t-next.soon::before { animation: pulse-dot 1.4s ease-in-out infinite; }
 
 
-  /* cambio di tema: il nuovo colore entra a cerchio (il cerchio lo anima lo script) */
-  html.theme-vt::view-transition-old(root), html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+  /* cambio di tema o di dimensione del testo: una dissolvenza breve su tutta la pagina. La pagina vecchia sfuma sopra la
+     nuova, che sta ferma sotto: niente somma di luci a metà (plus-lighter), niente cerchio */
+  html.theme-vt::view-transition-old(root) { animation: 320ms cubic-bezier(0.4, 0, 0.2, 1) both vt-fade-out; mix-blend-mode: normal; }
+  html.theme-vt::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
   html.theme-vt .story-main h1 { view-transition-name: none; }
   .sk i::after, #st-title:empty::after { animation: shimmer 1.4s ease-in-out infinite; }
 
@@ -826,8 +828,6 @@ body.term .mode > a[aria-current] { color: var(--t-ink); }
 .mode .seg-ind { border-radius: 999px; }
 /* prima che lo script prepari l'indicatore, la scelta attiva ha già il suo sfondo; arrivando dall'altra pagina sta ancora sull'altra */
 .mode:not(.ready) > a[aria-current] { background: var(--raised); box-shadow: var(--raised-shadow); }
-html.vt-reveal .mode:not(.ready) > a[aria-current] { background: none; box-shadow: none; }
-html.vt-reveal .mode:not(.ready) > a:not([aria-current]) { background: var(--raised); box-shadow: var(--raised-shadow); }
 @media (max-width: 599px) { .top-row .top-title { display: none; } }
 @media (max-width: 759px) { body.term .edition { display: none; } }
 @media (max-width: 359px) {
@@ -843,10 +843,7 @@ html.vt-reveal .mode:not(.ready) > a:not([aria-current]) { background: var(--rai
   .menu-btn { grid-column: 2; grid-row: 1; }
 }
 
-/* passaggio tra le due pagine: la pagina nuova si apre a cerchio dal punto toccato, la vecchia resta ferma sotto */
 @media (prefers-reduced-motion: no-preference) {
-  html.vt-reveal::view-transition-old(root) { animation: none; }
-  html.vt-reveal::view-transition-new(root) { animation: g-reveal var(--t-4) cubic-bezier(0.2, 0.8, 0.2, 1) both; mix-blend-mode: normal; }
   .mode .seg-ind { transition: transform var(--t-3) var(--snap), opacity var(--t-1) var(--ease); }
   .ticker { transition: transform var(--t-1) var(--ease); }
   .ticker:active { transform: scale(0.985); }
@@ -1145,12 +1142,11 @@ html.intro-run body.term .intro-word { color: var(--hl-ink); background: linear-
   /* la barra in alto e quella del riepilogo restano ferme mentre la pagina cambia */
   .top { view-transition-name: top; }
   .gp { view-transition-name: gp; }
-  html.theme-vt .top, html.theme-vt .gp, html[data-vt="reveal"] .top { view-transition-name: none; }
+  html.theme-vt .top, html.theme-vt .gp { view-transition-name: none; }
   html[data-vt="forward"]::view-transition-old(root) { animation: var(--t-2) cubic-bezier(0.4, 0, 1, 1) both vt-out-l; }
   html[data-vt="forward"]::view-transition-new(root) { animation: var(--t-3) var(--ease) both vt-in-r; }
   html[data-vt="back"]::view-transition-old(root) { animation: var(--t-2) cubic-bezier(0.4, 0, 1, 1) both vt-out-r; }
   html[data-vt="back"]::view-transition-new(root) { animation: var(--t-3) var(--ease) both vt-in-l; }
-  html[data-vt="reveal"]::view-transition-old(root), html[data-vt="reveal"]::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
   html[data-vt]::view-transition-group(top) { animation-duration: var(--t-2); }
 }
 @keyframes vt-out-l { to { opacity: 0; transform: translateX(-28px); } }
@@ -1734,3 +1730,22 @@ html.nuova .gp button:focus-visible { outline-color: var(--accent); }
 html.nuova .gp-bar { background: var(--pb-press); }
 html.nuova .gp-bar i { background: var(--accent); }
 html.nuova .ultim-l { padding: 6px 10px 5px; font-size: 0.75rem; letter-spacing: 0; text-transform: none; }
+
+/* ---------- ogni cosa una volta sola (9 novembre) ---------- */
+/* i mercati in prima pagina: sul telefono la scheda in alto (il riquadro in fondo la ripeteva); sul computer il riquadro
+   a lato, che resta fermo mentre scorri (la scheda in alto lo ripeteva) */
+@media (max-width: 999px) { html.nuova .home .side { display: none; } }
+@media (min-width: 1000px) { html.nuova .home .ticker { display: none; } }
+
+/* ---------- passaggi più naturali (9 novembre) ---------- */
+/* Notizie e Terminal sono due schede, non una pagina dentro l'altra: la pagina vecchia sfuma in fretta, la nuova compare
+   con un leggero avvicinamento (come si cambia scheda nelle app), attraverso il colore di fondo della pagina nuova.
+   La barra in basso resta ferma e sfuma da un colore all'altro nello stesso tempo. Le pagine una dentro l'altra
+   (prima pagina e storia) restano a spinta */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-mode][data-vt]::view-transition-old(root) { z-index: 0; animation: 140ms cubic-bezier(0.4, 0, 1, 1) both vt-fade-out; mix-blend-mode: normal; }
+  html[data-mode][data-vt]::view-transition-new(root) { z-index: 1; animation: 270ms cubic-bezier(0, 0, 0.2, 1) 110ms both vt-through-in; mix-blend-mode: normal; }
+  html[data-mode]::view-transition-group(pb) { animation-duration: 380ms; }
+}
+@keyframes vt-fade-out { to { opacity: 0; } }
+@keyframes vt-through-in { from { opacity: 0; transform: scale(0.985); } }

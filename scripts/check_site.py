@@ -89,6 +89,17 @@ def check_data(site):
         if os.path.exists(path):
             d = load(path)
             need(isinstance(d, dict) and isinstance(d.get("text"), str) and len(d["text"]) > 100, f"{name}: manca il testo")
+    # dentro gli indici della mappa (scripts/indici.py): un file per indice e l'elenco
+    for path in sorted(glob.glob(os.path.join(data, "indici", "*.json"))):
+        name, d = "indici/" + os.path.basename(path), load(path)
+        if d is None:
+            continue
+        if name == "indici/elenco.json":
+            need(isinstance(d, dict) and isinstance(d.get("indici"), dict), f"{name}: manca indici")
+            continue
+        items = d.get("items") if isinstance(d, dict) else None
+        need(isinstance(items, list) and items and all(isinstance(x, dict) and x.get("s") and isinstance(x.get("w"), (int, float)) for x in items),
+             f"{name}: titoli senza simbolo o peso")
     known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json", "audio.json"} | {n for n, _ in optional}
     for path in glob.glob(os.path.join(data, "*.json")):
         if os.path.basename(path) not in known:

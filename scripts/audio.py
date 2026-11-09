@@ -9,8 +9,9 @@ Gira nel job «Dati del Terminal». Se il riepilogo non c'è, o l'audio è già 
 stessa voce, non fa niente.
 
 La voce è quella di Gemini 3.8 Flash TTS di Google (API Gemini, livello gratuito; la chiave sta nel segreto
-GEMINI_API_KEY del repository, mai nel codice). Si legge un paragrafo per richiesta: dentro il paragrafo la voce lega
-le frasi come una persona; tra un tema e l'altro c'è una pausa sempre uguale. Ogni pezzo deve durare quanto ci si
+GEMINI_API_KEY del repository, mai nel codice). Si legge a pezzi di qualche tema (circa tre richieste per riepilogo, il
+livello gratuito ne concede poche al giorno): dentro il pezzo la voce lega le frasi come una persona; tra un pezzo e
+l'altro c'è una pausa sempre uguale. Ogni pezzo deve durare quanto ci si
 aspetta dal numero di parole, altrimenti si rifà. Se la chiave manca o il servizio non risponde, legge Nicola di
 Kokoro (modello aperto, licenza Apache 2.0), che gira sul server senza servizi esterni; i file del modello si
 scaricano dalle release di kokoro-onnx su GitHub e restano nella cache del job. Mai due voci nello stesso audio.
@@ -36,16 +37,19 @@ from zoneinfo import ZoneInfo
 # ---------- Gemini ----------
 GEMINI_URL = os.environ.get("GERICO_GEMINI_URL", "https://generativelanguage.googleapis.com/v1beta/interactions")
 GEMINI_MODEL = "gemini-3.8-flash-tts"
-GEMINI_VOICE = os.environ.get("GERICO_VOCE", "").strip() or "Charon"   # maschile, «informativa»
+GEMINI_VOICE = os.environ.get("GERICO_VOCE", "").strip() or "Iapetus"  # maschile, «chiara»: scelta il 9 novembre fra otto voci
 # lo stile sta fuori dal testo (il testo si legge parola per parola) ed è una riga breve e sempre uguale:
 # le indicazioni lunghe fanno cambiare la voce da un pezzo all'altro
 STYLE = os.environ.get("GERICO_STILE", "").strip() or "Conduttore di un notiziario radio del mattino: calmo, cordiale e sicuro, ritmo naturale, senza enfasi."
 GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:release=120:makeup=1.5,loudnorm=I=-16:TP=-1.5:LRA=11"
-PAUSE_TEMA = 0.7                       # tra un tema e l'altro (riga vuota nel testo)
-WPS = (1.7, 4.2)                       # parole al secondo accettate: fuori da qui il pezzo ha saltato o aggiunto parole
+PAUSE_TEMA = 0.7                       # tra un pezzo e l'altro
+CHUNK_WORDS = 170                      # parole al massimo per richiesta: il riepilogo sta in tre richieste
+WPS = (2.1, 3.8)                       # parole al secondo accettate (le voci leggono a 2,7-3): fuori da qui ha saltato o aggiunto
 TRIES = 4
+# il livello gratuito dell'API ha poche richieste al giorno: si legge a pezzi di qualche tema (non un paragrafo per volta)
+# e, finita la quota del giorno, si smette subito di chiedere
 # le voci della prova: maschili e femminili tra quelle adatte a leggere notizie
-PROVE = ("Charon", "Sadaltager", "Iapetus", "Algieba", "Schedar", "Kore", "Sulafat", "Erinome")
+PROVE = ("Charon", "Sadaltager", "Iapetus", "Algieba", "Schedar", "Kore", "Sulafat", "Erinome")  # una richiesta per voce
 
 
 def gemini_id(voice):
@@ -231,9 +235,25 @@ def gemini_piece(text, key, voice, np, sf):
     return pcm(find_audio(doc), np, sf)
 
 
+class QuotaDelGiorno(RuntimeError):
+    """Finite le richieste gratuite del giorno: riprovare adesso non serve."""
+
+
+def retry_wait(e, body, attempt):
+    """Quanto aspettare dopo un 429 o un errore del servizio: quello che dice Google (Retry-After o retryDelay), al massimo 90 s."""
+    wait = e.headers.get("Retry-After") if e.headers else None
+    if wait and wait.isdigit():
+        return min(90.0, float(wait))
+    m = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', body)
+    if m:
+        return min(90.0, float(m.group(1)) + 1)
+    return 10.0 * (attempt + 1)
+
+
 def gemini_read(text, key, voice, np, sf):
-    """Un paragrafo letto da Gemini, con i controlli: durata giusta per il numero di parole, niente silenzio vuoto.
-    Gli errori di quota e del servizio aspettano e riprovano; chiave o modello sbagliati fermano subito."""
+    """Un pezzo letto da Gemini, con i controlli: durata giusta per il numero di parole, niente silenzio vuoto.
+    Gli errori di quota al minuto e del servizio aspettano e riprovano; finita la quota del giorno, o con chiave o modello
+    sbagliati, si ferma subito."""
     words = len(text.split())
     last = None
     for attempt in range(TRIES):
@@ -249,22 +269,43 @@ def gemini_read(text, key, voice, np, sf):
             return y, rate
         except urllib.error.HTTPError as e:
             last = e
+            body = e.read()[:2000].decode("utf-8", "replace")
             if e.code in (400, 401, 403, 404):
-                raise RuntimeError(f"Gemini risponde {e.code}: {e.read()[:300]!r}") from None
-            wait = e.headers.get("Retry-After") if e.headers else None
-            time.sleep(min(60, float(wait)) if wait and wait.isdigit() else 8 * (attempt + 1))
+                raise RuntimeError(f"Gemini risponde {e.code}: {body[:300]}") from None
+            if e.code == 429 and re.search(r"per.?day|PerDay|daily", body, re.I):
+                raise QuotaDelGiorno("finite le richieste gratuite di oggi: " + " ".join(body.split())[:300]) from None
+            last = RuntimeError(f"HTTP {e.code}: {' '.join(body.split())[:300]}")
+            time.sleep(retry_wait(e, body, attempt))
         except (urllib.error.URLError, http.client.HTTPException, OSError, ValueError, KeyError, RuntimeError) as e:  # rete che si interrompe a metà compresa
             last = e
             time.sleep(3 * (attempt + 1))
     raise RuntimeError(f"Gemini non ha letto il pezzo dopo {TRIES} tentativi: {type(last).__name__}: {last}")
 
 
+def pieces(paras):
+    """I paragrafi messi insieme in pezzi di al massimo CHUNK_WORDS parole, senza mai spezzare un paragrafo:
+    dentro un pezzo la riga vuota fa fare alla voce la pausa tra i temi, tra un pezzo e l'altro la mette il montaggio."""
+    out, cur, n = [], [], 0
+    for p in paras:
+        w = len(p.split())
+        if cur and n + w > CHUNK_WORDS:
+            out.append("\n\n".join(cur))
+            cur, n = [], 0
+        cur.append(p)
+        n += w
+    if cur:
+        out.append("\n\n".join(cur))
+    return out
+
+
 def gemini_audio(paras, key, voice, np, sf):
-    """Tutto il riepilogo con Gemini: sigla, poi un paragrafo per richiesta con la pausa tra i temi."""
+    """Tutto il riepilogo con Gemini: sigla, poi i pezzi uno dopo l'altro con la pausa tra i temi."""
     rate = 24000
     parts = []
-    for i, para in enumerate(paras):
-        y, rate = gemini_read(per_voce(para), key, voice, np, sf)
+    for i, piece in enumerate(pieces(paras)):
+        if i:
+            time.sleep(3)  # niente raffiche: il livello gratuito conta anche le richieste al minuto
+        y, rate = gemini_read("\n\n".join(per_voce(p) for p in piece.split("\n\n")), key, voice, np, sf)
         if i:
             parts.append(np.zeros(int(rate * PAUSE_TEMA), dtype=np.float32))
         parts.append(y)
@@ -405,6 +446,9 @@ def prove(site):
     for v in voices:
         try:
             audio, rate = gemini_audio(paras, key, v, np, sf)
+        except QuotaDelGiorno as e:
+            print(f"::warning::prova di {v}: {e}; le altre voci domani")
+            break
         except Exception as e:  # noqa: BLE001  una voce che non va non ferma le altre
             print(f"::warning::prova di {v}: {type(e).__name__}: {e}")
             continue

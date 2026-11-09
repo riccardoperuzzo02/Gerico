@@ -90,12 +90,10 @@ G.page("home", async function (P) {
     const upd = G.updatedLabel(s, firstRun);
     if (upd) parts.push('<span class="k-live">' + esc(upd) + "</span>");
     else if (s.updated) parts.push('<span class="k-time">' + esc(ago(s.updated)) + "</span>");
+    // quante fonti ha letto GERICO per scrivere l'articolo
+    const n = G.srcCount(s.sources);
+    if (n) parts.push('<span class="k-src">' + esc(n) + "</span>");
     return parts.length ? '<p class="kick">' + parts.join("") + "</p>" : "";
-  }
-  // sotto il titolo: il muro delle testate e quante concordano
-  function line(s) {
-    return '<p class="line"><span class="agr">' + G.miniWall(s.sources) + '<span class="agr-t">' + esc(G.agreeLine(s.sources)) + "</span></span>" +
-      (G.counts(s.sources).divergente ? '<span class="badge">Versioni diverse</span>' : "") + "</p>";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
   // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
@@ -103,16 +101,16 @@ G.page("home", async function (P) {
   let first = !G.soft;
   function leadHTML(s, showSection) {
     return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" +
-      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + line(s) + "</article>";
+      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p></article>";
   }
   function itemHTML(s, showSection, i) {
-    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" + line(s) + "</li>";
+    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2></li>";
   }
   // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {
     if (!items.length) return "";
     return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">In breve</h2>' +
-      '<p class="blk-sub">Notizie lette su una sola testata: GERICO non le ha ancora confrontate.</p><ul class="brevi">' +
+      '<p class="blk-sub">Da una sola fonte e non ancora verificate da GERICO: il link porta all\'articolo.</p><ul class="brevi">' +
       items.map((b) => {
         const meta = [showSection ? G.secLabel(b.section) : "", b.source].filter(Boolean).map(esc).join(" · ");
         return '<li><span class="b-time' + (G.isToday(b.at) ? "" : " old") + '">' + esc(b.at ? ago(b.at) : "") + '</span><div class="b-body">' +
@@ -166,7 +164,7 @@ G.page("home", async function (P) {
     const end = '<p class="end"><strong>' + (state.section === "tutte" ? "Fine dell'edizione." : "Fine della sezione.") + "</strong> Prossimo aggiornamento delle notizie " + esc(G.nextUpdate(true)) + ".</p>";
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
-      : '<p class="none">Oggi in questa sezione non ci sono storie confrontate, solo brevi.</p>';
+      : '<p class="none">Oggi in questa sezione ci sono solo brevi.</p>';
     return top + breviHTML(bl, all) + titoliHTML() + pastHTML(past, all) + end;
   }
 
@@ -209,8 +207,8 @@ G.page("home", async function (P) {
     pl.set(au);
     const when = au.source || au.asOf;
     $("ls-t").textContent = pl.title();
-    const mins = Math.max(1, Math.round((au.duration || 60) / 60));
-    $("ls-s").textContent = "Notizie e mercati in " + (mins === 1 ? "un minuto" : mins + " minuti") + ", con l'aggiornamento delle " + G.hm(when);
+    // la durata sta già a destra (il tempo che manca): qui solo cosa c'è dentro e di quando è
+    $("ls-s").textContent = "Notizie e mercati, con l'aggiornamento delle " + G.hm(when);
     box.classList.remove("wait");
     btn.disabled = false;
     btn.addEventListener("click", () => pl.toggle());

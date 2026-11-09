@@ -1,6 +1,6 @@
 # GERICO, sito pubblico
 
-Le notizie del giorno confrontate tra le testate, con il GERICO Terminal per i mercati.
+Le notizie del giorno in articoli scritti su tutte le fonti, con le voci di tutte le parti e la fonte di ogni dato; con il GERICO Terminal per i mercati.
 Sito statico: HTML, CSS e JavaScript senza framework e senza build. Nessun server, nessuna chiave nel repository.
 
 ## Struttura
@@ -8,7 +8,7 @@ Sito statico: HTML, CSS e JavaScript senza framework e senza build. Nessun serve
 ```
 site/                 la cartella pubblicata da Cloudflare
   index.html          prima pagina (sezioni con #mondo, #italia, ... e #seguiti)
-  storia.html?id=...  una storia: fatti, divergenze, parere, cronologia, fonti
+  storia.html?id=...  una notizia: l'articolo di GERICO, cosa non si sa ancora, parere, cronologia, fonti
   terminal.html       GERICO Terminal: mappa a quadrati, indici, valute, tassi, materie prime, agenda, notizie
   come-funziona.html, privacy.html, 404.html
   assets/             css, js, font (Atkinson Hyperlegible e Newsreader, licenza OFL) e immagini

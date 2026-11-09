@@ -4,7 +4,7 @@ Scelta il 7 novembre 2026, dopo una prova da confrontare con la grafica di prima
 
 ## Idea
 
-Un'app di quotidiano: titoli con le grazie, riquadri bianchi che galleggiano su un fondo grigio chiaro, un solo colore, il blu navy, per il nome, le etichette e i comandi. Al buio il fondo diventa una notte blu navy e i comandi diventano bianchi. Dalle app dei giornali si prende il modo di impaginare, mai nomi, loghi o caratteri d'altri.
+Un'app di quotidiano: per ogni notizia un articolo scritto su tutte le fonti, titoli con le grazie, riquadri bianchi che galleggiano su un fondo grigio chiaro, un solo colore, il blu navy, per il nome, le etichette e i comandi. Al buio il fondo diventa una notte blu navy e i comandi diventano bianchi. Dalle app dei giornali si prende il modo di impaginare, mai nomi, loghi o caratteri d'altri.
 
 ## Il nome
 
@@ -21,7 +21,6 @@ Un'app di quotidiano: titoli con le grazie, riquadri bianchi che galleggiano su 
 | Testo secondario (`--muted`) | #5F6780 | #95A1B9 |
 | Navy (`--accent`): nome, etichette, pulsanti, link | #1B2F5B | bianco (#FFFFFF) |
 | Su e giù (`--up`, `--down`) | #0B7A3B, #B42318 | i verdi e rossi del tema scuro |
-| Muro delle testate | navy pieno chi concorda, #A9B8D8 in parte | bianco e #4F6390 |
 | Parere (`--palm-weak`) | #EDF1F8 | #13213D |
 | Stati del Terminal (`--t-accent`) | | #A9BDEB, azzurro tenue |
 
@@ -29,14 +28,15 @@ Un solo colore oltre al bianco, al grigio e al testo. Il verde e il rosso restan
 
 ## Caratteri
 
-- Titoli, sommari, nome e intestazioni dei blocchi: Newsreader (OFL), servito dal sito; titoli 600, il giorno in alto («Oggi», «Ieri») grande e leggero (400).
+- Titoli, sommari, testo degli articoli, nome e intestazioni dei blocchi: Newsreader (OFL), servito dal sito; titoli 600, il giorno in alto («Oggi», «Ieri») grande e leggero (400). Il testo degli articoli a 18 px con interlinea 1,618.
 - Il resto, occhielli, righe di servizio, numeri, comandi: Atkinson Hyperlegible Next.
 - Occhielli in parole normali: la sezione in un'etichetta navy con il filo (al buio bianca), poi l'ora in grigio. Sezioni della prima pagina in parole normali, la scelta in nero con un filo navy di 2 px sotto la parola.
 - Cifre tabellari nei numeri che cambiano (prezzi, tempi del riepilogo).
 
 ## Spazi e forme
 
-- Ogni storia è un riquadro con angoli da 22 px; tra un riquadro e l'altro 12 px; dentro 20 px (18 sul telefono).
+- Sezione aurea: spazi in serie di Fibonacci (5, 8, 13, 21, 34, 55 px, ogni passo il precedente per 1,618); caratteri a passi di √φ dai 16 px del testo (13 · 16 · 20,4 · 25,9 · 33 · 41,9 · 53,3); sul computer colonne come 1,618 a 1 (notizie e mercati, mappa e agenda, grafici e notizie).
+- Ogni storia è un riquadro con angoli da 22 px; tra un riquadro e l'altro 13 px; dentro 21 px. Nell'occhiello, dopo la sezione e l'ora, quante fonti ha letto GERICO («8 fonti»): niente muri né conteggi di chi concorda.
 - Ultim'ora: una pillola che galleggia sotto il nome, con l'etichetta navy.
 - Margini laterali 16 px sul telefono. Aree da toccare di almeno 44 px.
 - Barra in basso, solo sul telefono: Notizie, Terminal, Ascolta (il riepilogo a voce) e Menu, in una pillola di vetro; la voce scelta ha la sua pillola bianca. Resta ferma tra le pagine. La barra del riepilogo, di vetro anche lei con il pulsante navy, sale sopra di lei.
@@ -68,5 +68,5 @@ Italiano semplice, come una persona che spiega a un collega. Niente aggettivi en
 ## Icone e immagini
 
 - Icona: quadrato blu navy con la G bianca di Newsreader (`favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, quest'ultima senza angoli: li arrotonda iOS).
-- Immagine di condivisione (`og-gerico.png`, 1200×630): fondo grigio chiaro, un riquadro bianco con «Gerico.» in navy, la frase sotto e la riga di mattoncini delle testate.
+- Immagine di condivisione (`og-gerico.png`, 1200×630): fondo grigio chiaro, un riquadro bianco con «Gerico.» in navy e la frase sotto.
 - Nessun logo o simbolo di altri (niente icone Apple, niente marchi di altri giornali).

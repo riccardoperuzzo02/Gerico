@@ -176,11 +176,10 @@
     });
     return Array.from(by.values()).map((x) => x.s);
   };
-  G.counts = (src) => {
-    const c = { allineata: 0, parziale: 0, divergente: 0 };
-    G.outlets(src).forEach((s) => { if (c[s.stance] !== undefined) c[s.stance]++; else c.parziale++; });
-    return c;
-  };
+  // quante fonti ha l'articolo: «8 fonti». Sono le testate lette per scriverlo, non un voto su chi ha ragione
+  G.srcCount = (src) => { const n = G.outlets(src).length; return n ? (n === 1 ? "1 fonte" : n + " fonti") : ""; };
+  // il testo dell'articolo in paragrafi (separati da una riga vuota)
+  G.paras = (txt) => String(txt || "").split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
   // una prima pagina o una pagina di sezione: domani dirà altro, quindi non prova niente
   G.isFrontPage = (u) => {
     try {
@@ -194,31 +193,6 @@
       return segs.length <= 2 && !/\d/.test(path) && (last.match(/-/g) || []).length <= 2;
     } catch (e) { return false; }
   };
-  G.wall = (src, cls) => {
-    const c = G.counts(src);
-    return '<div class="wall ' + (cls || "") + '" aria-hidden="true">' + "<i></i>".repeat(c.allineata) +
-      '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</div>";
-  };
-  // il muro in miniatura dell'elenco: un mattoncino per testata, dentro una riga di testo (quindi span, non div)
-  G.miniWall = (src) => {
-    const c = G.counts(src);
-    return '<span class="mw" aria-hidden="true">' + "<i></i>".repeat(c.allineata) + '<i class="p"></i>'.repeat(c.parziale) + '<i class="d"></i>'.repeat(c.divergente) + "</span>";
-  };
-  // la frase breve delle schede: «5 testate su 6 concordano»
-  G.agreeLine = (src) => {
-    const c = G.counts(src), n = G.outlets(src).length;
-    if (!n) return "";
-    if (n === 1) return "Una sola testata";
-    return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano");
-  };
-  const tail = (c) => (c.parziale ? ", " + c.parziale + " in parte" : "") + (c.divergente ? ", " + c.divergente + (c.divergente === 1 ? " diverge" : " divergono") : "");
-  G.agreeShort = (src) => { const c = G.counts(src), n = G.outlets(src).length; return c.allineata + " su " + n + " concordano" + tail(c); };
-  G.agreeLong = (src) => {
-    const c = G.counts(src), n = G.outlets(src).length;
-    if (n === 1) return c.allineata ? "Una sola testata riporta questi fatti." : "Una sola testata, che li riporta in parte.";
-    return c.allineata + (c.allineata === 1 ? " testata su " + n + " concorda" : " testate su " + n + " concordano") + " sui fatti" + tail(c) + ".";
-  };
-
   // ---------- storie ----------
   G.SECTIONS = { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || "Notizie";

@@ -175,6 +175,12 @@ def cmd_controlla(db=DB, quiet=False):
             problems.append(f"{where}: titolo con il punto e virgola")
         if len(s.get("summary") or "") > 300:
             problems.append(f"{where}: sintesi oltre 300 caratteri")
+        # formato del 9 novembre: ogni storia è un articolo di GERICO scritto su tutte le fonti
+        article = s.get("article") or ""
+        if str(s.get("updated") or "")[:10] == today and not article.strip():
+            problems.append(f"{where}: aggiornata oggi ma senza article, l'articolo di GERICO")
+        if re.search(r"(testate|fonti|giornali)[^.]{0,40}\bconcord", article, re.I):
+            problems.append(f"{where}: l'articolo parla di cosa concordano le testate (le testate sono le fonti, non l'argomento)")
         if s.get("section") not in SECTIONS:
             problems.append(f"{where}: section «{s.get('section')}» non valida")
         names = []

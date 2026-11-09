@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-1">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-2">
 <script>try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body class="term">
@@ -62,13 +62,8 @@
 <input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="mappa europa, eurusd, oro, macro…" aria-describedby="cmd-help">
 <button class="t-btn" type="submit">Vai</button>
 </form>
-<div class="t-live">
-<button class="t-btn" type="button" id="live-btn" aria-controls="tv">Prezzi in diretta</button>
-<p>Dal widget gratuito di TradingView, con ritardi diversi per mercato. Si carica solo se lo chiedi e usa cookie di TradingView.</p>
-</div>
 </div>
 <p class="wrap t-msg" id="cmd-help" aria-live="polite"></p>
-<div class="wrap tv" id="tv"></div>
 
 <main class="wrap t-main" id="main">
 <h1 class="sr-only">GERICO Terminal: mercati e agenda</h1>
@@ -92,22 +87,23 @@
 
 <div class="t-side">
 <section class="t-panel" id="p-tassi" aria-labelledby="rt-h" tabindex="-1"><h2 id="rt-h">Tassi a 10 anni</h2><div id="rt"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-agenda" aria-labelledby="ag-h" tabindex="-1"><div class="t-headrow"><h2 id="ag-h">Agenda di oggi</h2><span class="t-next" id="next"></span></div><div id="ag"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 </div>
 </main>
 
 <div class="wrap t-charts">
-<section class="t-panel" id="p-grafici" aria-labelledby="gr-h" tabindex="-1"><div class="t-headrow"><h2 id="gr-h">Prezzi e grafici</h2><div class="seg seg-fill t-seg t-groups" id="gr-tabs" role="group" aria-label="Gruppo di strumenti"></div></div><p class="t-src" id="gr-src">&nbsp;</p><div id="gr"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
-</div>
-
-<div class="wrap t-bottom">
-<section class="t-panel" id="p-agenda" aria-labelledby="ag-h" tabindex="-1"><div class="t-headrow"><h2 id="ag-h">Agenda di oggi</h2><span class="t-next" id="next"></span></div><div id="ag"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-grafici" aria-labelledby="gr-h" tabindex="-1"><div class="t-headrow"><h2 id="gr-h">Prezzi e grafici</h2><div class="seg seg-fill t-seg t-groups" id="gr-tabs" role="group" aria-label="Gruppo di strumenti"></div></div><p class="t-src" id="gr-src">&nbsp;</p><div id="gr"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div>
+<div class="t-live"><button class="t-btn" type="button" id="live-btn" aria-controls="tv">Prezzi in diretta</button><p>Dal widget gratuito di TradingView, con ritardi diversi per mercato. Si carica solo se lo chiedi e usa cookie di TradingView.</p></div>
+<div class="tv" id="tv"></div></section>
+<div class="t-col">
 <section class="t-panel" id="p-notizie" aria-labelledby="nw-h" tabindex="-1"><h2 id="nw-h">Notizie sui mercati</h2><div id="nw"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-sentiment" aria-labelledby="se-h" tabindex="-1"><h2 id="se-h">Tono delle notizie</h2><p class="t-src" id="se-src">&nbsp;</p><div id="se"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+</div>
 </div>
 
 <div class="wrap t-more">
 <section class="t-panel" id="p-titoli" aria-labelledby="ti-h" tabindex="-1" hidden><h2 id="ti-h">Titoli da seguire</h2><p class="t-src">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p><div id="ti"></div></section>
 <section class="t-panel" id="p-macro" aria-labelledby="mc-h" tabindex="-1"><h2 id="mc-h">Macro: Stati Uniti ed eurozona</h2><p class="t-src" id="mc-src">&nbsp;</p><div id="mc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
-<section class="t-panel" id="p-sentiment" aria-labelledby="se-h" tabindex="-1"><h2 id="se-h">Tono delle notizie</h2><p class="t-src" id="se-src">&nbsp;</p><div id="se"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 <section class="t-panel" id="p-sec" aria-labelledby="sc-h" tabindex="-1"><h2 id="sc-h">Documenti SEC</h2><p class="t-src" id="sc-src">&nbsp;</p><div id="sc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 </div>
 
@@ -116,7 +112,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js?v=20261109-1"></script>
-<script src="assets/js/terminal.js?v=20261109-1"></script>
+<script src="assets/js/common.js?v=20261109-2"></script>
+<script src="assets/js/terminal.js?v=20261109-2"></script>
 </body>
 </html>

@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Come funziona · GERICO</title>
-<meta name="description" content="Come GERICO sceglie le testate, confronta i fatti, scrive il suo parere e aggiorna il Terminal.">
+<meta name="description" content="Come GERICO scrive le notizie su tutte le fonti, le regole che segue, il parere e il Terminal.">
 <meta name="theme-color" content="#F2F2F2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1428" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GERICO">
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="Come funziona GERICO">
-<meta property="og:description" content="Come GERICO confronta le testate e aggiorna il Terminal.">
+<meta property="og:description" content="Come GERICO scrive le notizie e aggiorna il Terminal.">
 <meta property="og:url" content="https://gerico.financialnews.workers.dev/come-funziona">
 <link rel="canonical" href="https://gerico.financialnews.workers.dev/come-funziona">
 <meta property="og:image" content="https://gerico.financialnews.workers.dev/assets/img/og-gerico.png">
@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-1">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-2">
 <script>try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -46,16 +46,24 @@
 <main id="main" class="wrap" tabindex="-1">
 <div class="prose">
 <h1>Come funziona GERICO</h1>
-<p>Ogni mattina GERICO legge le principali testate italiane e internazionali, raggruppa gli articoli che parlano dello stesso fatto e li mette a confronto. Il risultato è un'edizione breve: per ogni storia, cosa riportano tutte le testate, dove si dividono e un parere che separa i fatti dalle interpretazioni.</p>
+<p>Ogni giorno GERICO legge testate italiane e straniere, agenzie e fonti ufficiali e, per ogni notizia importante, scrive un articolo suo. Non è il riassunto di un giornale: è costruito su tutte le fonti lette, con le posizioni di tutte le parti in causa e, per ogni dato, chi lo dice.</p>
 
-<h2>Il muro delle testate</h2>
-<p>Ogni pietra del muro è una testata. È piena se la testata riporta gli stessi fatti delle altre, chiara se li riporta solo in parte o con una cornice diversa, vuota se ne dà una versione che li contraddice. Sotto il muro trovi quante testate concordano e, per le storie principali, quali testate controllate non ne parlano.</p>
+<h2>Le regole</h2>
+<ul>
+<li>Ogni numero, dato o dichiarazione ha la sua fonte nel testo: il governo, l'agenzia, l'istituto o la testata che lo riporta.</li>
+<li>I fatti in apertura sono confermati da almeno due fonti indipendenti. Due giornali che riprendono la stessa agenzia contano come una fonte sola.</li>
+<li>Un fatto con una sola fonte si scrive come tale («secondo...»), mai come certo.</li>
+<li>Quando le parti danno versioni o numeri diversi, l'articolo li riporta tutti, ciascuno con chi lo dà.</li>
+<li>Le fonti vengono da aree diverse: per una notizia dal Medio Oriente anche testate israeliane e arabe, per l'Ucraina anche quelle ucraine.</li>
+<li>Nell'articolo non ci sono opinioni. Quello che ancora non si sa sta a parte, in «Cosa non si sa ancora».</li>
+<li>Un errore si corregge nell'articolo, e la correzione resta scritta tra gli aggiornamenti della notizia.</li>
+</ul>
 
-<h2>Fatti, divergenze e parere</h2>
-<p>I fatti condivisi sono quelli che GERICO ha trovato davvero negli articoli letti; accanto a ogni fatto c'è il numero di testate che lo riportano. Le divergenze sono solo differenze reali: numeri, attribuzioni, parole scelte. Il parere di GERICO dice cosa è accertato, dove le letture si dividono, perché la notizia conta e cosa guardare nei giorni successivi. Non prende posizioni politiche e non dà consigli di investimento.</p>
+<h2>Il parere di GERICO</h2>
+<p>Sotto l'articolo, separato e con il suo titolo, c'è il parere di GERICO: cosa si può dire con certezza, cosa resta aperto, perché la notizia conta e cosa guardare nei giorni successivi. È l'unico punto in cui GERICO interpreta. Non prende posizioni politiche e non dà consigli di investimento.</p>
 
-<h2>Le testate</h2>
-<p>L'elenco fisso comprende testate italiane, europee, americane, mediorientali, ucraine e asiatiche. Ogni articolo viene controllato per data: un pezzo vecchio entra solo come contesto, dichiarato.</p>
+<h2>Le fonti</h2>
+<p>L'elenco fisso comprende testate italiane, europee, americane, mediorientali, ucraine e asiatiche. Ogni articolo letto viene controllato per data: un pezzo vecchio entra solo come contesto, dichiarato. In fondo a ogni notizia ci sono tutte le fonti, con il link all'articolo originale e cosa aggiunge ciascuna.</p>
 <p id="outlets">Testate lette nell'ultima edizione: —</p>
 <p id="quality"></p>
 
@@ -67,7 +75,7 @@
 <li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche, tono delle notizie e calendario di Forex Factory nel Terminal.</li>
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
-<p>Le brevi sono notizie lette su una sola testata, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le confronta, come fa invece con le storie.</p>
+<p>Le brevi sono notizie da una sola fonte, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le ha ancora verificate su altre fonti.</p>
 <p>Il riepilogo da ascoltare, in prima pagina, esce ogni mattina: le notizie principali e cosa muovono su oro, petrolio, valute e indici. Il testo lo scrive il giro delle notizie con gli stessi fatti e numeri dell'edizione; lo legge una voce sintetica: di norma quella di Gemini, il modello vocale di Google, a cui va solo il testo del riepilogo; se quel servizio non risponde, Nicola del modello aperto Kokoro, che gira sui server di GitHub senza servizi esterni.</p>
 
 <h2>Il Terminal</h2>
@@ -91,7 +99,7 @@
 <p>Le analisi sono a cura di Riccardo Peruzzo, che cura GERICO e non ha posizioni sui titoli citati. Se questo cambiasse, sarà scritto qui e nella sezione.</p>
 
 <h2>I limiti</h2>
-<p>GERICO lavora solo su fonti pubbliche e può sbagliare. Gli articoli originali sono sempre linkati: in caso di dubbio, conta quello che scrive la testata. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
+<p>GERICO lavora solo su fonti pubbliche e può sbagliare. Ogni fonte è linkata, così ogni dato si può controllare all'origine. Per segnalare un errore: <span class="ph">[indirizzo di contatto]</span>.</p>
 </div>
 </main>
 
@@ -101,7 +109,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261109-1"></script>
-<script src="assets/js/info.js?v=20261109-1"></script>
+<script src="assets/js/common.js?v=20261109-2"></script>
+<script src="assets/js/info.js?v=20261109-2"></script>
 </body>
 </html>

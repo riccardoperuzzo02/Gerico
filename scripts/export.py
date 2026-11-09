@@ -15,7 +15,7 @@ import os
 import sys
 from datetime import datetime, timedelta, timezone
 
-STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "facts", "divergences", "view", "open",
+STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "article", "facts", "divergences", "view", "open",
                 "sources", "firstSeen", "updated", "change", "tags", "history", "notCovered"]
 SOURCE_FIELDS = ["name", "kind", "country", "area", "url", "angle", "stance", "at", "date"]
 ARCHIVE_DAYS = 7

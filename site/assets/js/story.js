@@ -33,7 +33,7 @@ G.page("story", async function (P) {
     ld.type = "application/ld+json";
     const img = document.querySelector('meta[property="og:image"]');
     ld.textContent = JSON.stringify({
-      "@context": "https://schema.org", "@type": "NewsArticle", headline: title.slice(0, 110), description: s.summary || "",
+      "@context": "https://schema.org", "@type": "NewsArticle", headline: title.slice(0, 110), description: s.summary || "", articleBody: s.article || undefined,
       datePublished: s.firstSeen || s.updated || undefined, dateModified: s.updated || s.firstSeen || undefined,
       image: img ? [img.content] : undefined, mainEntityOfPage: location.origin + location.pathname + "?id=" + encodeURIComponent(id),
       author: { "@type": "Organization", name: "GERICO" }, publisher: { "@type": "Organization", name: "GERICO" }
@@ -41,61 +41,55 @@ G.page("story", async function (P) {
     document.head.appendChild(ld);
   } catch (err) { /* niente */ }
 
-  // ---------- testa: sezione e ora, titolo, sintesi ----------
+  // ---------- testa: sezione, ora e fonti, titolo, sommario ----------
   const when = s.status === "archived" ? "archiviata" : s.updated ? "aggiornata " + G.when(s.updated) : "";
-  const metaHTML = '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" + (when ? '<span class="sep" aria-hidden="true">·</span><span>' + esc(when) + "</span>" : "");
+  const nSrcs = G.srcCount(s.sources);
+  const sep = '<span class="sep" aria-hidden="true">·</span>';
+  const metaHTML = '<span class="sec">' + esc(G.secLabel(s.section)) + "</span>" + (when ? sep + "<span>" + esc(when) + "</span>" : "") + (nSrcs ? sep + "<span>" + esc(nSrcs) + "</span>" : "");
   const upd = G.updatedLabel(s, G.firstRunToday(ed.stories));
   const latest = upd ? '<p class="latest"><strong>' + esc(upd) + ".</strong> " + esc(s.change) + "</p>" : "";
 
-  // ---------- il muro: toccandolo si apre la spiegazione ----------
-  const nc = (s.notCovered || []).length ? '<p class="nc">Non ne parlano: ' + esc(s.notCovered.join(", ")) + "</p>" : "";
-  const wallFig = '<div class="wallfig"><button type="button" class="wallbtn" aria-expanded="false" aria-controls="legend">' + G.wall(s.sources, "huge") +
-    '<span class="agree">' + esc(G.agreeLong(s.sources)) + "</span>" + CHEV + "</button>" +
-    '<div class="collapse" id="legend" inert><div class="collapse-in"><div class="legend"><p>Ogni pietra è una testata.</p><ul>' +
-    '<li><i></i>Piena: riporta gli stessi fatti delle altre</li><li><i class="p"></i>Chiara: li riporta solo in parte</li><li><i class="d"></i>Vuota: ne dà una versione diversa</li>' +
-    "</ul></div></div></div>" + nc + "</div>";
-
-  // ---------- fatti: i 3 riportati da più testate, gli altri a richiesta ----------
-  const SHOW = 3;
-  const facts = (s.facts || []).slice().sort((a, b) => (b.n || 0) - (a.n || 0));
-  const factLi = (f) => {
-    const n = f.n || 1;
+  // ---------- l'articolo di GERICO, scritto su tutte le fonti ----------
+  const art = G.paras(s.article);
+  const articleHTML = art.length ? '<div class="article">' + art.map((p) => "<p>" + esc(p) + "</p>").join("") + "</div>" : "";
+  // le storie scritte prima del formato nuovo non hanno l'articolo: i fatti in fila, ognuno con le sue fonti,
+  // e le versioni diverse quando ci sono
+  const facts = art.length ? [] : s.facts || [];
+  const factsHTML = facts.length ? '<ul class="facts">' + facts.map((f) => {
     const who = Array.isArray(f.who) && f.who.length ? f.who.join(", ") : "";
-    return '<li><p class="tx">' + esc(f.text) + '</p><p class="who">' + esc((n === 1 ? "1 testata" : n + " testate") + (who ? ": " + who : "")) + "</p></li>";
-  };
-  const moreLabel = "Mostra tutti i " + facts.length + " fatti";
-  const factsBlock = facts.length ? '<section class="block" aria-labelledby="ft-h"><h2 id="ft-h">Su cosa concordano</h2><ol class="facts">' + facts.slice(0, SHOW).map(factLi).join("") + "</ol>" +
-    (facts.length > SHOW ? '<div class="collapse" id="facts-more" inert><div class="collapse-in"><ol class="facts" start="' + (SHOW + 1) + '">' + facts.slice(SHOW).map(factLi).join("") + "</ol></div></div>" +
-      '<button type="button" class="btn-text" id="more-facts" aria-expanded="false" aria-controls="facts-more">' + moreLabel + CHEV + "</button>" : "") + "</section>" : "";
-
-  // ---------- divergenze, parere, cronologia, domande ----------
-  // le posizioni a confronto: affiancate sul computer quando sono due, una sotto l'altra sul telefono
-  const divs = (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + '</h3><dl class="pos-list' + ((d.positions || []).length === 2 ? " two" : "") + '">' +
+    return '<li><p class="tx">' + esc(f.text) + "</p>" + (who ? '<p class="who">' + esc("Fonti: " + who) + "</p>" : "") + "</li>";
+  }).join("") + "</ul>" : "";
+  const divs = art.length ? "" : (s.divergences || []).map((d) => '<div class="div-item"><h3>' + esc(d.point) + '</h3><dl class="pos-list' + ((d.positions || []).length === 2 ? " two" : "") + '">' +
     (d.positions || []).map((p) => '<div class="pos"><dt>' + esc((p.who || []).join(", ")) + "</dt><dd>" + esc(p.says) + "</dd></div>").join("") + "</dl></div>").join("");
-  const divBlock = '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Dove si dividono</h2>' +
-    (divs || '<p class="plain">Le testate lette concordano sui fatti principali.</p>') + "</section>";
-  const paras = String(s.view || "").split(/\n\s*\n/).filter((p) => p.trim()).map((p) => "<p>" + esc(p.trim()) + "</p>").join("");
+  const divBlock = divs ? '<section class="block" aria-labelledby="dg-h"><h2 id="dg-h">Versioni diverse</h2>' + divs + "</section>" : "";
+
+  // ---------- cosa non si sa, parere, cronologia ----------
+  const paras = G.paras(s.view).map((p) => "<p>" + esc(p) + "</p>").join("");
   const viewBlock = paras ? '<section class="view-panel" aria-labelledby="pr-h"><h2 id="pr-h">Il parere di GERICO</h2>' + paras + "</section>" : "";
   const disclosure = (pid, label, inner, extra) => '<section class="block disc-block' + (extra ? " " + extra : "") + '"><h2><button type="button" class="disc" aria-expanded="false" aria-controls="' + pid + '">' +
     label + CHEV + '</button></h2><div class="collapse" id="' + pid + '" inert><div class="collapse-in">' + inner + "</div></div></section>";
   const histList = s.history || [];
   const hist = histList.length >= 2 ? disclosure("hist", "Come è cambiata", '<ol class="hist">' +
     histList.map((h) => '<li><span class="at">' + esc(G.day(h.at) + ", " + G.hm(h.at)) + "</span><span>" + esc(h.text) + "</span></li>").join("") + "</ol>") : "";
-  const open = (s.open || []).length ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">Domande aperte</h2><ul class="openq">' +
+  const open = (s.open || []).length ? '<section class="block" aria-labelledby="op-h"><h2 id="op-h">Cosa non si sa ancora</h2><ul class="openq">' +
     s.open.map((q) => "<li>" + esc(q) + "</li>").join("") + "</ul></section>" : "";
 
   // ---------- fonti, mercati collegati, temi ----------
-  const stance = { allineata: "concorda", parziale: "in parte", divergente: "diverge" };
-  const srcList = '<ul class="srcs">' + (s.sources || []).map((x) => {
+  // le fonti in ordine di area: si vede da dove arrivano le voci dell'articolo
+  const AREAS = ["Italia", "Europa", "Stati Uniti", "Medio Oriente", "Ucraina e Russia", "Asia"];
+  const areaRank = (x) => { const k = AREAS.indexOf(x.area); return k < 0 ? AREAS.length : k; };
+  const srcs = (s.sources || []).slice().sort((a, b) => areaRank(a) - areaRank(b));
+  const srcList = '<ul class="srcs">' + srcs.map((x) => {
     const u = G.safeUrl(x.url);
     const date = x.at ? G.day(x.at) : x.date ? G.dayOnly(x.date) : "";
     const meta = [x.area || x.country, x.kind, date].filter(Boolean).join(" · ");
     // un link a una prima pagina non prova il fatto: domani quella pagina dirà altro
     const front = u && G.isFrontPage(u) ? '<span class="fp">pagina principale</span>' : "";
     return '<li><div class="src-top">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : "<strong>" + esc(x.name) + "</strong>") + front +
-      '<span class="st st-' + esc(x.stance || "parziale") + '">' + esc(stance[x.stance] || "in parte") + "</span></div>" + (meta ? '<p class="meta2">' + esc(meta) + "</p>" : "") +
-      (x.angle ? '<p class="angle">' + esc(x.angle) + "</p>" : "") + "</li>";
+      "</div>" + (meta ? '<p class="meta2">' + esc(meta) + "</p>" : "") + (x.angle ? '<p class="angle">' + esc(x.angle) + "</p>" : "") + "</li>";
   }).join("") + "</ul>";
+  const areas = AREAS.filter((a) => srcs.some((x) => x.area === a));
+  const srcIntro = areas.length > 1 ? '<p class="src-areas">Da ' + areas.length + " aree: " + esc(areas.join(", ")) + ".</p>" : "";
   // le testate si contano una volta; se di una testata ci sono più articoli, il titolo lo dice
   const nSrc = (s.sources || []).length, nOut = G.outlets(s.sources).length;
   const srcTitle = nSrc === 1 ? "La fonte" : nOut === nSrc ? "Le " + nSrc + " fonti" : "Le " + nOut + " testate, " + nSrc + " articoli";
@@ -110,7 +104,7 @@ G.page("story", async function (P) {
     s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + follows.includes(t) + '">' + esc(t) + "</button>").join("") + "</div></section>" : "";
 
   // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
-  const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
+  const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcIntro + srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
   // in due tempi: prima quello che sta nello schermo, il resto al fotogramma dopo (l'arrivo sulla pagina resta leggero)
   // in fondo la notizia successiva dell'edizione, così si legge di fila senza tornare indietro
   const order = (ed.stories || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
@@ -120,10 +114,11 @@ G.page("story", async function (P) {
   const nextHTML = nx
     ? '<nav class="next" aria-label="Prossima notizia"><a href="' + G.storyUrl(nx) + '" data-id="' + esc(nx.id) + '" data-sec="' + esc(G.secLabel(nx.section)) + '">' +
       '<span class="next-l">Prossima notizia</span><span class="next-t">' + esc(G.headline(nx)) + '</span><span class="next-m">' +
-      esc(G.secLabel(nx.section)) + " · " + esc(G.agreeLine(nx.sources)) + "</span></a></nav>"
+      esc([G.secLabel(nx.section), G.srcCount(nx.sources)].filter(Boolean).join(" · ")) + "</span></a></nav>"
     : at >= 0 ? '<nav class="next" aria-label="Fine dell\'edizione"><a href="index.html"><span class="next-l">Fine dell\'edizione</span><span class="next-t">Torna alla prima pagina</span></a></nav>' : "";
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + wallFig + factsBlock;
-  const rest = divBlock + viewBlock + narrow + hist + open + nextHTML;
+  // prima i fatti (l'articolo), poi cosa non si sa, poi il parere, dichiarato, e le fonti
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + latest + (articleHTML || factsHTML);
+  const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
   const h1 = $("st-title");
@@ -138,7 +133,7 @@ G.page("story", async function (P) {
   // il resto della storia (sotto lo schermo) arriva a passaggio animato finito: mentre il titolo vola, la pagina non ha altro da fare
   const fill = () => {
     $("st-body").insertAdjacentHTML("beforeend", rest);
-    $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcList + "</section>" : "") + linkedHTML + tagsHTML;
+    $("side").innerHTML = (nSrc ? '<section aria-labelledby="sr-h"><h2 id="sr-h">' + srcTitle + "</h2>" + srcIntro + srcList + "</section>" : "") + linkedHTML + tagsHTML;
   };
   const afterPass = () => requestAnimationFrame(() => setTimeout(fill, 0));
   const pass = window.gericoVT;
@@ -201,12 +196,8 @@ G.page("story", async function (P) {
       try { sessionStorage.setItem("gerico.vt", JSON.stringify({ id: na.dataset.id, title: na.querySelector(".next-t").textContent, sec: na.dataset.sec })); } catch (err) { /* niente */ }
       return;
     }
-    const t = e.target.closest(".wallbtn, .disc, #more-facts");
-    if (t) {
-      const isOpen = G.toggle(t);
-      if (t.id === "more-facts") t.firstChild.textContent = isOpen ? "Mostra solo i principali" : moreLabel;
-      return;
-    }
+    const t = e.target.closest(".disc");
+    if (t) { G.toggle(t); return; }
     const b = e.target.closest("[data-follow]");
     if (!b) return;
     const f = G.toggleFollow(b.dataset.follow);

@@ -1749,3 +1749,105 @@ html.nuova .ultim-l { padding: 6px 10px 5px; font-size: 0.75rem; letter-spacing:
 }
 @keyframes vt-fade-out { to { opacity: 0; } }
 @keyframes vt-through-in { from { opacity: 0; transform: scale(0.985); } }
+
+/* ========== sezione aurea e formato articolo (9 novembre) ==========
+   Spazi in serie di Fibonacci: 5, 8, 13, 21, 34, 55 px; ogni passo è il precedente per 1,618, il rapporto aureo.
+   Caratteri a passi di √φ (1,272) partendo dai 16 px del testo: 13 · 16 · 20,4 · 25,9 · 33 · 41,9 · 53,3.
+   Sul computer le colonne stanno come 1,618 a 1. Il margine della pagina resta 16 px, l'unità di partenza */
+html.nuova { --f5: 5px; --f8: 8px; --f13: 13px; --f21: 21px; --f34: 34px; --f55: 55px; }
+
+/* ---------- prima pagina ---------- */
+/* il giorno: 41,9 px sul telefono, 53,3 sul computer */
+html.nuova .home .large { padding-top: var(--f21); }
+html.nuova .home .large h1 { font-size: clamp(2.618rem, 2.2rem + 1.4vw, 3.33rem); line-height: 1; }
+html.nuova .home .edition-sub { margin-top: var(--f5); }
+@media (min-width: 760px) { html.nuova .home .large { padding-top: var(--f34); } }
+/* il riepilogo a voce: sul telefono sta nella barra in basso (Ascolta), che lo fa partire da ogni pagina; qui sarebbe
+   un doppione. Sul computer resta la scheda, più bassa */
+@media (max-width: 759px) { html.nuova .home .listen { display: none; } }
+html.nuova .listen { margin-top: var(--f21); padding: var(--f13) var(--f21) var(--f13) var(--f13); gap: 0 var(--f13); }
+/* mercati: una scheda più bassa */
+html.nuova .ticker { margin-top: var(--f21); padding: var(--f13) var(--f21); }
+html.nuova .tk-row { margin-top: var(--f8); gap: var(--f8); }
+html.nuova .tk-ev { margin-top: var(--f13); }
+@media (max-width: 359px) { html.nuova .ticker { padding: var(--f13); } }
+html.nuova .home .sec-nav { margin-top: var(--f8); }
+/* le schede delle notizie: 21 dentro, 13 tra l'una e l'altra */
+html.nuova .lead { margin-top: var(--f8); padding: var(--f21); }
+html.nuova .lead h2 { font-size: clamp(2.058rem, 1.7rem + 1.2vw, 2.618rem); line-height: 1.1; }
+html.nuova .lead .sum { margin-top: var(--f13); font-size: 1.272rem; line-height: 1.5; }
+html.nuova .list { gap: var(--f13); margin-top: var(--f13); }
+html.nuova .list .item { padding: var(--f21); }
+html.nuova .item h2 { font-size: 1.272rem; line-height: 1.24; }
+html.nuova .kick { margin-bottom: var(--f8); font-size: 0.8125rem; }
+/* l'occhiello finisce con le fonti lette per l'articolo: «Mondo 7:26 · 8 fonti» */
+html.nuova .k-src { margin-left: -4px; font-weight: 500; color: var(--muted); }
+html.nuova .k-src::before { content: "·"; margin-right: 6px; }
+html.nuova .blk { margin-top: var(--f13); padding: var(--f21) var(--f21) var(--f8); }
+html.nuova .blk-h, html.nuova .mk-box h2 { font-size: 1.618rem; }
+html.nuova .blk-sub { margin-top: var(--f5); }
+html.nuova .end { padding: var(--f34) var(--f8) var(--f8); }
+html.nuova .sk-lead, html.nuova .sk-item { margin-top: var(--f13); padding: var(--f21); }
+/* computer: notizie e mercati come 1,618 a 1 */
+@media (min-width: 1000px) {
+  html.nuova .home { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); column-gap: var(--f34); }
+  html.nuova .mk-box { margin-top: var(--f34); padding: var(--f21) var(--f21) var(--f8); }
+}
+
+/* ---------- storia: l'articolo ---------- */
+html.nuova .story-main h1 { font-size: clamp(2.058rem, 1.7rem + 1.2vw, 2.618rem); line-height: 1.1; }
+html.nuova .story-main .sum { margin-top: var(--f21); font-size: 1.272rem; line-height: 1.5; color: var(--ink-2); }
+html.nuova .latest { margin-top: var(--f21); }
+/* il testo dell'articolo: con le grazie, 18 px, interlinea aurea (1,618) */
+.article { margin-top: var(--f21, 21px); }
+.article p { font-family: var(--serif, Georgia, serif); font-size: 1.125rem; line-height: 1.618; color: var(--ink); overflow-wrap: break-word; }
+.article p + p { margin-top: var(--f13, 13px); }
+html.nuova .facts { margin-top: var(--f21); }
+html.nuova .block { margin-top: var(--f34); }
+html.nuova .block > h2 { font-size: 1.618rem; }
+html.nuova .view-panel { margin-top: var(--f34); padding: var(--f21); }
+html.nuova .view-panel h2 { font-size: 1.272rem; }
+html.nuova .view-panel p { margin-top: var(--f8); }
+html.nuova .openq { margin-top: var(--f8); }
+html.nuova .next { margin-top: var(--f34); }
+.src-areas { margin-top: var(--f8, 8px); font-size: 0.8125rem; line-height: 1.45; color: var(--muted); }
+@media (min-width: 1000px) {
+  html.nuova .story { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); column-gap: var(--f34); }
+  html.nuova .story-main { max-width: 41rem; }
+}
+
+/* ---------- Terminal ---------- */
+/* il campo «Vai a» c'è solo sul computer: sul telefono la riga non occupa spazio */
+.t-tools { padding-top: var(--f21, 21px); }
+@media (max-width: 999px) { .t-tools { display: none; } }
+html.nuova .t-main { gap: var(--f13); padding-top: var(--f13); padding-bottom: var(--f13); }
+html.nuova .t-side, .t-col { display: grid; gap: var(--f13, 13px); align-content: start; }
+html.nuova .t-charts { display: grid; gap: var(--f13); padding-bottom: var(--f13); }
+html.nuova .t-more { gap: var(--f13); padding-bottom: var(--f21); }
+html.nuova .t-panel { padding: var(--f21) 16px; }
+html.nuova .t-sub { margin: var(--f8) 0 var(--f13); }
+html.nuova .t-asof { margin: calc(-1 * var(--f8)) 0 var(--f13); }
+html.nuova .t-legend { margin-top: var(--f13); }
+html.nuova .t-vals { margin-top: var(--f13); }
+.t-vals:empty { display: none; }
+html.nuova .t-detail { margin-top: var(--f13); padding: var(--f13) 16px; }
+/* prezzi in diretta: in fondo a «Prezzi e grafici», dove servono */
+.t-live { display: flex; flex-wrap: wrap; align-items: center; gap: var(--f8, 8px) var(--f13, 13px); margin-top: var(--f21, 21px); padding-top: var(--f13, 13px); border-top: 1px solid var(--hair); }
+.t-live p { flex: 1 1 220px; margin: 0; font-size: 0.8125rem; line-height: 1.45; color: var(--t-ink-3); }
+html.nuova .tv { margin-top: var(--f13); padding-top: 0; }
+/* agenda: una lista sola, poi i giorni dopo */
+html.nuova .t-ff-week { margin-top: var(--f8); }
+@media (max-width: 359px) { html.nuova .t-panel { padding-left: 12px; padding-right: 12px; } }
+/* computer: mappa | tassi e agenda, grafici | notizie e tono, come 1,618 a 1; sotto, la macro su tutta la larghezza */
+@media (min-width: 1000px) {
+  html.nuova .t-main { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f21); padding-top: var(--f21); padding-bottom: var(--f21); }
+  html.nuova .t-side, html.nuova .t-col { gap: var(--f21); }
+  html.nuova .t-charts { grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f21); align-items: start; padding-bottom: var(--f21); }
+  html.nuova .t-more { grid-template-columns: minmax(0, 1fr); gap: var(--f21); }
+  html.nuova .t-panel { padding: var(--f21); }
+}
+/* le serie macro in righe piene: 2 colonne sul telefono, 3 sul tablet, 4 sul computer */
+html.nuova .m-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--f8); margin-top: var(--f13); }
+@media (min-width: 760px) { html.nuova .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { html.nuova .m-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 339px) { html.nuova .m-grid { grid-template-columns: minmax(0, 1fr); } }

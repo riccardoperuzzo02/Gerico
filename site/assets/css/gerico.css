@@ -1955,10 +1955,9 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 }
 .m-cap span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .m-cap svg { flex: none; opacity: 0.9; }
-/* la firma delle schede: la redazione, poi «IA» in un'etichetta piccola */
+/* la firma delle schede: R.P. */
 .c-by { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: var(--f8, 8px); font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
 .c-desk { font-weight: 650; color: var(--ink-3); }
-.c-ia { padding: 1px 5px 0; border-radius: 4px; box-shadow: inset 0 0 0 1px var(--hair); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.04em; color: var(--muted); }
 html.nuova .lead .c-by { margin-top: var(--f13); }
 /* apertura: l'immagine larga in cima alla scheda, da bordo a bordo */
 html.nuova .lead.has-img .media {

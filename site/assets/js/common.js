@@ -41,6 +41,7 @@
     "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
     "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
     "Nessun consiglio di investimento": "Not investment advice", "Prima pagina": "Front page", "Condividi": "Share",
+    "Articoli scritti con l'intelligenza artificiale": "Articles written with artificial intelligence",
     "Carico la storia…": "Loading the story…", "Fonti e temi": "Sources and topics", "Sezioni del Terminal": "Terminal sections",
     "Mappa": "Map", "Indici": "Indices", "Valute": "Currencies", "Tassi": "Rates", "Materie prime": "Commodities", "Agenda": "Calendar",
     "Macro": "Macro", "Sentiment": "Sentiment", "Titoli": "Stocks", "Vai a": "Go to", "Vai": "Go",
@@ -333,14 +334,11 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  // la firma di tutti gli articoli: R.P. Gli articoli li scrive l'intelligenza artificiale sulle fonti elencate, e accanto
-  // alla firma si dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
+  // la firma di tutti gli articoli: R.P. Che sono scritti con l'intelligenza artificiale lo dice il piede di ogni pagina
+  // (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
   G.FIRMA = "R.P.";
   G.desk = () => G.FIRMA;
-  // la firma breve delle schede: la redazione e «IA» (per chi non vede, per esteso)
-  G.cardBy = (s) => '<p class="c-by"><span class="c-desk">' + G.esc(G.desk(s.section)) + '</span><span class="c-ia" title="' +
-    G.L("Scritto con l'intelligenza artificiale", "Written with artificial intelligence") + '"><span aria-hidden="true">' + G.L("IA", "AI") +
-    '</span><span class="sr-only">' + G.L(", scritto con l'intelligenza artificiale", ", written with artificial intelligence") + "</span></span></p>";
+  G.cardBy = () => '<p class="c-by"><span class="c-desk">' + G.esc(G.FIRMA) + "</span></p>";
   // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
   // Solo file del sito (img/storie/...): niente immagini da altri siti
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';

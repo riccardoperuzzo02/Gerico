@@ -18,6 +18,7 @@ L'audio è AAC mono a 64 kbps: circa 480 KB al minuto. Scrive anche site/data/au
 per mostrare il pulsante «Ascolta»."""
 import base64
 import hashlib
+import http.client
 import io
 import json
 import os
@@ -252,7 +253,7 @@ def gemini_read(text, key, voice, np, sf):
                 raise RuntimeError(f"Gemini risponde {e.code}: {e.read()[:300]!r}") from None
             wait = e.headers.get("Retry-After") if e.headers else None
             time.sleep(min(60, float(wait)) if wait and wait.isdigit() else 8 * (attempt + 1))
-        except (urllib.error.URLError, TimeoutError, ValueError, KeyError, RuntimeError) as e:
+        except (urllib.error.URLError, http.client.HTTPException, OSError, ValueError, KeyError, RuntimeError) as e:  # rete che si interrompe a metà compresa
             last = e
             time.sleep(3 * (attempt + 1))
     raise RuntimeError(f"Gemini non ha letto il pezzo dopo {TRIES} tentativi: {type(last).__name__}: {last}")

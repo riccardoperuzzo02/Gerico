@@ -605,6 +605,33 @@ G.page("terminal", async function (P) {
     withOrigin(map, "0 0", map.animate([{ transform: "translate(" + ((to.left - tr.left) * sx).toFixed(1) + "px," + ((to.top - tr.top) * sy).toFixed(1) + "px) scale(" + sx.toFixed(4) + "," + sy.toFixed(4) + ")", opacity: 0 }, { opacity: 1, offset: 0.45 }, { transform: "none", opacity: 1 }], o));
     P.later(() => { g.f.remove(); wrap.classList.remove("t-zooming"); ring.style.visibility = ""; }, ZOOM + 40);
   }
+  // sul computer, entrando in un indice o uscendone, i pannelli della colonna di destra cambiano posto (sotto la mappa
+  // larga, o di nuovo accanto): compaiono al posto nuovo con una dissolvenza e un piccolo movimento, invece di saltare.
+  // Solo quelli sullo schermo
+  const panelTops = () => new Map(Array.from(board.querySelectorAll(":scope > .t-panel.t-r")).map((p) => [p, p.getBoundingClientRect()]));
+  function settlePanels(r0) {
+    if (!r0 || G.reduced() || !(wideQ && wideQ.matches)) return;
+    pack();
+    let k = 0;
+    r0.forEach((a, p) => {
+      if (p.hidden) return;
+      const b = p.getBoundingClientRect();
+      if ((Math.abs(a.top - b.top) < 40 && Math.abs(a.left - b.left) < 40) || b.bottom < 0 || b.top > innerHeight) return;
+      p.animate([{ opacity: 0, transform: "translateY(14px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: 90 + k * 60, easing: SNAP, fill: "backwards" });
+      k += 1;
+    });
+  }
+  // le righe nuove dell'elenco (cambio di ordine, «Mostra tutti») compaiono una dopo l'altra, solo quelle sullo schermo
+  function fadeRows(rows) {
+    if (G.reduced()) return;
+    let k = 0;
+    rows.forEach((li) => {
+      const r = li.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > innerHeight || k > 14) return;
+      li.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 300, delay: k * 18, easing: SNAP, fill: "backwards" });
+      k += 1;
+    });
+  }
   let inTok = 0;
   async function enter(code, opt) {
     opt = opt || {};
@@ -623,6 +650,7 @@ G.page("terminal", async function (P) {
     if (opt.push) { try { history.pushState(Object.assign({}, history.state, { gi: code }), "", location.pathname + location.search + "#indice-" + code); } catch (e) { /* niente */ } }
     state.sel = code;
     G.ls.set("gerico.mapSel", code);
+    const r0 = opt.instant ? null : panelTops();
     board.classList.add("inside");
     $("mapview").hidden = true;
     $("inview").hidden = false;
@@ -633,6 +661,7 @@ G.page("terminal", async function (P) {
     drawInside();
     if (before) animateIn(before);
     easeHeight(panel, h0, 420);
+    settlePanels(r0);
     if (!opt.instant) {
       $("in-back").focus({ preventScroll: true });
       const top = $("inmap").getBoundingClientRect().top, bar = document.querySelector(".top");
@@ -648,6 +677,7 @@ G.page("terminal", async function (P) {
     const seen = r.height > 0 && r.bottom > 40 && r.top < innerHeight - 40;
     const before = !opt.instant && !G.reduced() && seen ? { map: r, html: im.innerHTML } : null;
     Object.assign(inside, { code: "", d: null, sel: "", rects: [] });
+    const r0 = opt.instant ? null : panelTops();
     board.classList.remove("inside");
     $("inview").hidden = true;
     $("mapview").hidden = false;
@@ -661,6 +691,7 @@ G.page("terminal", async function (P) {
     if (!seen && !opt.instant) panel.scrollIntoView({ block: "start" });
     if (before) animateOut(before, code);
     easeHeight(panel, h0, 420);
+    settlePanels(r0);
     if (!opt.instant) { const b = $("map").querySelector('[data-code="' + code + '"]'); if (b) b.focus({ preventScroll: true }); }
   }
   // indietro: se l'indice si è aperto da questa pagina, con la storia del browser (come il gesto di iOS)
@@ -694,9 +725,23 @@ G.page("terminal", async function (P) {
       const r = rowsHTML(inside.d);
       $("inrows").innerHTML = r.rows;
       $("inmore").innerHTML = r.more;
+      fadeRows(Array.from($("inrows").children));
       return;
     }
-    if (t.closest("[data-all]") && inside.d) { inside.all = true; const r = rowsHTML(inside.d); $("inrows").innerHTML = r.rows; $("inmore").innerHTML = ""; return; }
+    if (t.closest("[data-all]") && inside.d) {
+      // le righe in più si aprono sotto, con lo spazio che cresce morbido
+      const panel = $("map-panel"), h0 = panel.offsetHeight, n0 = $("inrows").children.length;
+      inside.all = true;
+      const r = rowsHTML(inside.d);
+      $("inrows").innerHTML = r.rows;
+      $("inmore").innerHTML = "";
+      easeHeight(panel, h0, 420);
+      fadeRows(Array.from($("inrows").children).slice(n0));
+      // chi usa la tastiera continua dalla prima riga nuova (il pulsante non c'è più)
+      const nx = $("inrows").children[n0], nb = nx && nx.querySelector("button");
+      if (nb) nb.focus({ preventScroll: true });
+      return;
+    }
     if (t.closest("[data-leave]")) { leave(); return; }
     const pick = t.closest("[data-stock]");
     if (pick) selectStock(pick.dataset.stock);

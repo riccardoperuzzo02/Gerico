@@ -130,8 +130,12 @@ def versione(nome):
     return float(m.group(1)) if m else 0.0
 
 
+# per tradurre contano la velocità e la disponibilità sul livello gratuito più dell'ultima versione: prima questi, se ci sono
+PREFERITI = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-3.5-flash", "gemini-2.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
+
+
 def modelli():
-    """I modelli «flash» che scrivono testo, dal più nuovo; prima quelli stabili, poi le anteprime, poi i «lite»."""
+    """I modelli «flash» che scrivono testo: prima i PREFERITI disponibili, poi gli altri dal più nuovo."""
     scelto = os.environ.get("GERICO_GEMINI_TESTO", "").strip()
     if scelto:
         return [scelto]
@@ -143,16 +147,17 @@ def modelli():
             for m in doc.get("models") or []:
                 nome = str(m.get("name", "")).replace("models/", "")
                 metodi = m.get("supportedGenerationMethods") or []
-                if "generateContent" in metodi and "flash" in nome and not re.search(r"tts|image|audio|live|embed|thinking|native|robotics", nome):
+                if "generateContent" in metodi and "flash" in nome and not re.search(r"tts|image|audio|live|embed|thinking|native|robotics|omni|transcribe", nome):
                     nomi.append(nome)
             tok = doc.get("nextPageToken")
             url = API + "/models?pageSize=1000&pageToken=" + tok if tok else ""
     except (urllib.error.URLError, OSError, ValueError) as e:
         print(f"  elenco dei modelli non riuscito ({e}): uso quelli di riserva")
     if not nomi:
-        nomi = ["gemini-3-flash", "gemini-2.5-flash", "gemini-2.0-flash"]
-    peso = lambda n: (("lite" in n), bool(re.search(r"preview|exp", n)), -versione(n), n)
-    return sorted(set(nomi), key=peso)[:4]
+        return PREFERITI[:4]
+    primi = [n for n in PREFERITI if n in nomi]
+    altri = sorted(set(nomi) - set(primi), key=lambda n: (("lite" in n), bool(re.search(r"preview|exp", n)), -versione(n), n))
+    return (primi + altri)[:5]
 
 
 class QuotaFinita(RuntimeError):
@@ -160,26 +165,38 @@ class QuotaFinita(RuntimeError):
 
 
 # per tradurre non serve ragionare a lungo: si chiede il minimo, nella forma che il modello accetta
-PENSIERO = [{"thinkingLevel": "minimal"}, {"thinkingLevel": "low"}, {"thinkingBudget": 0}, None]
+# per tradurre non serve ragionare a lungo: si chiede il minimo, nella forma che il modello accetta
+def forme_pensiero(modello):
+    if re.search(r"gemini-2\.5|latest", modello):
+        return [{"thinkingBudget": 0}, None]
+    return [{"thinkingLevel": "minimal"}, {"thinkingLevel": "low"}, {"thinkingBudget": 0}, None]
+
+
 pensiero = {}
 
 
+class Occupato(RuntimeError):
+    """Il modello è lento o sovraccarico (tempo scaduto, 503, troppe richieste al minuto): meglio passare al successivo."""
+
+
 def traduci_lotto(lotto, lingua, modello):
-    """Un lotto {id: testo} tradotto; riprova sui 429 al minuto e sui guasti del servizio, si ferma con la quota del giorno."""
-    for prova in range(3):
+    """Un lotto {id: testo} tradotto. Con la quota del giorno finita alza QuotaFinita; con il modello lento o sovraccarico,
+    dopo due tentativi, Occupato."""
+    forme, guasti = forme_pensiero(modello), 0
+    while True:
         k = pensiero.get(modello, 0)
         gen = {"responseMimeType": "application/json", "temperature": 0.2}
-        if PENSIERO[k]:
-            gen["thinkingConfig"] = PENSIERO[k]
+        if forme[k]:
+            gen["thinkingConfig"] = forme[k]
         body = {
             "systemInstruction": {"parts": [{"text": ISTRUZIONI[lingua]}]},
             "contents": [{"role": "user", "parts": [{"text": json.dumps(lotto, ensure_ascii=False)}]}],
             "generationConfig": gen,
         }
         try:
-            doc = chiedi(f"{API}/models/{modello}:generateContent", body, timeout=120)
+            doc = chiedi(f"{API}/models/{modello}:generateContent", body, timeout=90)
             parti = ((doc.get("candidates") or [{}])[0].get("content") or {}).get("parts") or []
-            testo = "".join(p.get("text", "") for p in parti).strip()
+            testo = "".join(p.get("text", "") for p in parti if not p.get("thought")).strip()
             testo = re.sub(r"^```(?:json)?\s*|\s*```$", "", testo)
             out = json.loads(testo)
             return {k: v for k, v in out.items() if k in lotto and isinstance(v, str) and v.strip()}
@@ -188,26 +205,32 @@ def traduci_lotto(lotto, lingua, modello):
             if e.code == 429 and re.search(r"per ?day|PerDay|daily", msg, re.I):
                 raise QuotaFinita(msg)
             # il modello non accetta questa forma del «pensiero»: si prova la successiva, senza contarla come errore
-            if e.code == 400 and re.search(r"think", msg, re.I) and pensiero.get(modello, 0) < len(PENSIERO) - 1:
-                pensiero[modello] = pensiero.get(modello, 0) + 1
-                print(f"  {modello}: {msg[:120]!r}; provo senza quella impostazione")
+            if e.code == 400 and re.search(r"think", msg, re.I) and k < len(forme) - 1:
+                pensiero[modello] = k + 1
                 continue
             if e.code in (400, 401, 403, 404):
                 print(f"  {modello}: errore {e.code}: {msg[:200]}")
                 raise
-            attesa = 20
+            guasti += 1
+            if guasti >= 2:
+                raise Occupato(f"errore {e.code}")
             m = re.search(r'"retryDelay":\s*"(\d+)s"', msg)
-            if m:
-                attesa = min(60, int(m.group(1)) + 1)
+            attesa = min(30, int(m.group(1)) + 1) if m else 10
             print(f"  {modello}: errore {e.code}, riprovo tra {attesa} s")
             time.sleep(attesa)
-        except (urllib.error.URLError, OSError, ValueError, KeyError, IndexError) as e:
+        except (urllib.error.URLError, OSError) as e:
+            guasti += 1
+            if guasti >= 2:
+                raise Occupato(str(e))
+            print(f"  {modello}: {e}, riprovo")
+        except (ValueError, KeyError, IndexError) as e:
+            guasti += 1
+            if guasti >= 2:
+                return {}
             print(f"  {modello}: risposta non valida ({e}), riprovo")
-            time.sleep(5)
-    return {}
 
 
-def lotti(nuovi, limite=5000):
+def lotti(nuovi, limite=4000):
     """I testi nuovi in lotti di al massimo `limite` caratteri: le risposte restano brevi e un errore costa poco."""
     lotto, peso = {}, 0
     for k, v in nuovi.items():
@@ -260,14 +283,18 @@ def main(cartella):
                 if time.time() - INIZIO > BUDGET:
                     print(f"  {lingua}: tempo finito, i testi rimasti li traduce il giro dopo")
                     break
-                ok, t0 = {}, time.time()
+                ok, t0, usato = {}, time.time(), ""
                 for modello in list(elenco):
                     try:
-                        ok = traduci_lotto(lotto, lingua, modello)
+                        ok, usato = traduci_lotto(lotto, lingua, modello), modello
                         break
                     except QuotaFinita as e:
                         print(f"  {modello}: quota del giorno finita ({str(e)[:160]})")
                         elenco.remove(modello)
+                    except Occupato as e:
+                        print(f"  {modello}: lento o sovraccarico ({e}), provo il modello dopo")
+                        elenco.remove(modello)
+                        elenco.append(modello)
                     except urllib.error.HTTPError as e:
                         print(f"  {modello}: errore {e.code}, provo il modello dopo")
                         elenco.remove(modello)
@@ -278,7 +305,7 @@ def main(cartella):
                 mappa.update(ok)
                 fatti += len(ok)
                 salva()
-                print(f"  {lingua} lotto {n}/{len(tutti)}: {len(ok)} su {len(lotto)} in {time.time() - t0:.0f} s ({elenco[0]})")
+                print(f"  {lingua} lotto {n}/{len(tutti)}: {len(ok)} su {len(lotto)} in {time.time() - t0:.0f} s ({usato or 'nessun modello'})")
                 time.sleep(4)
         salva()
         print(f"{lingua}: {len(voci)} testi, {len(voci) - len(nuovi)} già tradotti, {fatti} tradotti adesso, "

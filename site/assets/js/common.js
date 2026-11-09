@@ -333,11 +333,10 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  // la firma: la redazione di GERICO che segue quella sezione. Gli articoli li scrive l'intelligenza artificiale sulle
-  // fonti elencate, e la firma lo dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
-  G.DESKS = G.en ? { mondo: "Foreign desk", italia: "Home desk", economia: "Economy desk", mercati: "Markets desk", tecnologia: "Technology desk" }
-    : { mondo: "Redazione Esteri", italia: "Redazione Interni", economia: "Redazione Economia", mercati: "Redazione Mercati", tecnologia: "Redazione Tecnologia" };
-  G.desk = (k) => G.DESKS[k] || G.L("Redazione", "Newsroom");
+  // la firma di tutti gli articoli: R.P. Gli articoli li scrive l'intelligenza artificiale sulle fonti elencate, e accanto
+  // alla firma si dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
+  G.FIRMA = "R.P.";
+  G.desk = () => G.FIRMA;
   // la firma breve delle schede: la redazione e «IA» (per chi non vede, per esteso)
   G.cardBy = (s) => '<p class="c-by"><span class="c-desk">' + G.esc(G.desk(s.section)) + '</span><span class="c-ia" title="' +
     G.L("Scritto con l'intelligenza artificiale", "Written with artificial intelligence") + '"><span aria-hidden="true">' + G.L("IA", "AI") +

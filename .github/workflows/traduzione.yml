@@ -37,6 +37,9 @@ jobs:
           ref: main
           fetch-depth: 1
       - name: Traduci i testi nuovi
+        # se il tempo finisce si pubblica quello che è già tradotto: il resto lo fa il giro dopo
+        timeout-minutes: 14
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           # per scegliere il modello a mano: Settings › Secrets and variables › Actions › Variables
@@ -44,7 +47,7 @@ jobs:
           SOLO_MODELLI: ${{ inputs.modelli }}
         run: python3 scripts/traduci.py site/data
       - name: Pubblica
-        if: inputs.modelli != true
+        if: always() && inputs.modelli != true
         run: |
           git config user.name "GERICO"
           git config user.email "gerico@users.noreply.github.com"

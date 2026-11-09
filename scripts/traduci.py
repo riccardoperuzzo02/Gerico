@@ -21,17 +21,23 @@ import time
 import urllib.error
 import urllib.request
 
+# l'avanzamento si vede subito nel log di GitHub
+sys.stdout.reconfigure(line_buffering=True)
 API = os.environ.get("GERICO_GEMINI_API", "https://generativelanguage.googleapis.com/v1beta")
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+# tempo massimo per tradurre in un giro: poi si salva quello che c'è e il giro dopo continua
+BUDGET = float(os.environ.get("GERICO_TRADUZIONE_SECONDI", "660"))
+INIZIO = time.time()
 
 # quali campi di quali file: gli stessi di TR in site/assets/js/common.js
 CAMPI = {
+    # prima l'italiano (pochi titoli brevi), poi l'inglese (gli articoli): se il tempo finisce, il grosso continua al giro dopo
+    "it": {"calendario": ["title"], "sentiment": ["title"]},
     "en": {
         "edition": ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle"],
         "brevi": ["title"], "markets": ["summary", "label", "note", "why"], "agenda": ["event", "note"],
         "terminal": ["label", "note"], "titoli": ["why", "risk", "signal", "note"],
     },
-    "it": {"calendario": ["title"], "sentiment": ["title"]},
 }
 
 ISTRUZIONI = {
@@ -153,16 +159,25 @@ class QuotaFinita(RuntimeError):
     pass
 
 
+# per tradurre non serve ragionare a lungo: si chiede il minimo, nella forma che il modello accetta
+PENSIERO = [{"thinkingLevel": "minimal"}, {"thinkingLevel": "low"}, {"thinkingBudget": 0}, None]
+pensiero = {}
+
+
 def traduci_lotto(lotto, lingua, modello):
     """Un lotto {id: testo} tradotto; riprova sui 429 al minuto e sui guasti del servizio, si ferma con la quota del giorno."""
-    body = {
-        "systemInstruction": {"parts": [{"text": ISTRUZIONI[lingua]}]},
-        "contents": [{"role": "user", "parts": [{"text": json.dumps(lotto, ensure_ascii=False)}]}],
-        "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
-    }
-    for prova in range(4):
+    for prova in range(3):
+        k = pensiero.get(modello, 0)
+        gen = {"responseMimeType": "application/json", "temperature": 0.2}
+        if PENSIERO[k]:
+            gen["thinkingConfig"] = PENSIERO[k]
+        body = {
+            "systemInstruction": {"parts": [{"text": ISTRUZIONI[lingua]}]},
+            "contents": [{"role": "user", "parts": [{"text": json.dumps(lotto, ensure_ascii=False)}]}],
+            "generationConfig": gen,
+        }
         try:
-            doc = chiedi(f"{API}/models/{modello}:generateContent", body, timeout=180)
+            doc = chiedi(f"{API}/models/{modello}:generateContent", body, timeout=120)
             parti = ((doc.get("candidates") or [{}])[0].get("content") or {}).get("parts") or []
             testo = "".join(p.get("text", "") for p in parti).strip()
             testo = re.sub(r"^```(?:json)?\s*|\s*```$", "", testo)
@@ -172,7 +187,13 @@ def traduci_lotto(lotto, lingua, modello):
             msg = e.read().decode("utf-8", "replace")[:400]
             if e.code == 429 and re.search(r"per ?day|PerDay|daily", msg, re.I):
                 raise QuotaFinita(msg)
+            # il modello non accetta questa forma del «pensiero»: si prova la successiva, senza contarla come errore
+            if e.code == 400 and re.search(r"think", msg, re.I) and pensiero.get(modello, 0) < len(PENSIERO) - 1:
+                pensiero[modello] = pensiero.get(modello, 0) + 1
+                print(f"  {modello}: {msg[:120]!r}; provo senza quella impostazione")
+                continue
             if e.code in (400, 401, 403, 404):
+                print(f"  {modello}: errore {e.code}: {msg[:200]}")
                 raise
             attesa = 20
             m = re.search(r'"retryDelay":\s*"(\d+)s"', msg)
@@ -186,7 +207,7 @@ def traduci_lotto(lotto, lingua, modello):
     return {}
 
 
-def lotti(nuovi, limite=9000):
+def lotti(nuovi, limite=5000):
     """I testi nuovi in lotti di al massimo `limite` caratteri: le risposte restano brevi e un errore costa poco."""
     lotto, peso = {}, 0
     for k, v in nuovi.items():
@@ -223,18 +244,29 @@ def main(cartella):
                 voci[impronta(t)] = t
         mappa = {k: prima[k] for k in voci if isinstance(prima.get(k), str)}
         nuovi = {k: v for k, v in voci.items() if k not in mappa}
+
+        def salva():
+            tmp = uscita + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(dict(sorted(mappa.items())), f, ensure_ascii=False, separators=(",", ":"))
+            os.replace(tmp, uscita)
+
         fatti = 0
         if nuovi and not KEY:
             print(f"  {lingua}: {len(nuovi)} testi nuovi, ma manca GEMINI_API_KEY: restano nella lingua originale")
         elif nuovi and not quota:
-            for lotto in lotti(nuovi):
-                ok = {}
+            tutti = list(lotti(nuovi))
+            for n, lotto in enumerate(tutti, 1):
+                if time.time() - INIZIO > BUDGET:
+                    print(f"  {lingua}: tempo finito, i testi rimasti li traduce il giro dopo")
+                    break
+                ok, t0 = {}, time.time()
                 for modello in list(elenco):
                     try:
                         ok = traduci_lotto(lotto, lingua, modello)
                         break
                     except QuotaFinita as e:
-                        print(f"  {modello}: quota del giorno finita ({e})")
+                        print(f"  {modello}: quota del giorno finita ({str(e)[:160]})")
                         elenco.remove(modello)
                     except urllib.error.HTTPError as e:
                         print(f"  {modello}: errore {e.code}, provo il modello dopo")
@@ -245,13 +277,12 @@ def main(cartella):
                     break
                 mappa.update(ok)
                 fatti += len(ok)
-                time.sleep(7)
-        tmp = uscita + ".tmp"
-        with open(tmp, "w", encoding="utf-8") as f:
-            json.dump(dict(sorted(mappa.items())), f, ensure_ascii=False, separators=(",", ":"))
-        os.replace(tmp, uscita)
+                salva()
+                print(f"  {lingua} lotto {n}/{len(tutti)}: {len(ok)} su {len(lotto)} in {time.time() - t0:.0f} s ({elenco[0]})")
+                time.sleep(4)
+        salva()
         print(f"{lingua}: {len(voci)} testi, {len(voci) - len(nuovi)} già tradotti, {fatti} tradotti adesso, "
-              f"{len(voci) - len(mappa)} ancora nella lingua originale" + (f" (modello {elenco[0]})" if elenco else ""))
+              f"{len(voci) - len(mappa)} ancora nella lingua originale")
 
 
 if __name__ == "__main__":

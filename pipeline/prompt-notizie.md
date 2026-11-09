@@ -12,6 +12,7 @@ Documenti (i campi esistenti non si tolgono e non si rinominano):
   sources [{name, kind, country, area, url, angle, at | date}] (una voce per testata; url = l'indirizzo dell'articolo, mai una prima pagina; angle = in una riga cosa aggiunge quella fonte: il punto di vista, le voci che riporta, i dati che dà), firstSeen e updated (ISO 8601 con fuso, es. 2026-10-07T18:48:00+02:00, mai senza fuso, anche nelle storie archiviate), change (una riga sulla novità di questo giro; "" per una storia nuova o senza novità: «Prima notizia» va solo in history),
   tags [2-4 temi brevi e stabili, con la maiuscola: "Iran", "Ucraina", "Medio Oriente", "BCE", "Fed", "Titoli di Stato", "Petrolio", "Conti pubblici", "Energia", "Francia", "Germania", "Spagna", "Stati Uniti"... riusa sempre la stessa forma],
   themes [gli id dei temi caldi a cui appartiene la storia, vedi TEMI CALDI; [] se nessuno],
+  places [le sigle ISO a due lettere dei paesi della notizia, prima quello dove succede: ["UA", "RU"], ["YE", "SA", "IR"]; "EU" per l'Unione europea come istituzione; [] solo se la notizia non ha un luogo] e, se c'è, city {name, lat, lon} (il luogo preciso in italiano, con le coordinate a 2 decimali: {"name": "Cracovia", "lat": 50.06, "lon": 19.94}; solo per una città o un punto preciso di cui sei sicuro, mai per le notizie nazionali o per un luogo conteso): servono per la mappa che il sito disegna sopra ogni articolo,
   history [{at, text}] (dal più recente; al massimo 10 voci; una voce per ogni giro con una novità vera; una correzione comincia con «Correzione:»).
   divergences, notCovered e stance (nelle fonti) non si scrivono più: nelle storie nuove divergences e notCovered sono liste vuote, in quelle vecchie restano come sono.
 - "markets/snapshot": {asOf, label, summary, classes: [{key, label, items: [{name, value, chg | bp, note, why, story}], note}], sources: [{name, url}]}. Classi sempre tutte e sei, in quest'ordine: indici, azioni, obbligazioni (label "Titoli di Stato"), valute, materie (label "Materie prime"), cripto. chg = variazione % come numero (-2.4); bp = variazione in punti base come numero (16); value = testo in formato italiano ("4,67%", "101,90 $"); why = una riga sul perché del movimento; story = id della storia collegata.
@@ -126,7 +127,7 @@ PROCEDURA
    - rank è un numero intero;
    - firstSeen, updated, history.at, asOf e lastRun hanno il fuso;
    - in ogni storia c'è una sola voce per testata e nessuna prima pagina tra le fonti;
-   - ogni storia live ha article e facts con who, e themes; nell'articolo non c'è nessuna frase su cosa le testate concordano o quante riportano un fatto, e ogni numero ha chi lo dice;
+   - ogni storia live ha article e facts con who, themes e places; nell'articolo non c'è nessuna frase su cosa le testate concordano o quante riportano un fatto, e ogni numero ha chi lo dice;
    - i mercati hanno tutte e sei le classi;
    - ogni evento ad alto impatto dell'agenda ha l'orario;
    - le brevi sono al massimo 15, hanno l'indirizzo dell'articolo e non ripetono una storia live;

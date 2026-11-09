@@ -121,11 +121,10 @@ G.page("story", async function (P) {
   // prima i fatti (l'articolo), poi cosa non si sa, poi il parere, dichiarato, e le fonti
   // la firma: la redazione di GERICO che segue quella sezione. Gli articoli li scrive l'intelligenza artificiale sulle
   // fonti in fondo alla pagina, e la firma lo dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
-  const DESK = G.en ? { mondo: "Foreign desk", italia: "Home desk", economia: "Economy desk", mercati: "Markets desk", tecnologia: "Technology desk" }
-    : { mondo: "Redazione Esteri", italia: "Redazione Interni", economia: "Redazione Economia", mercati: "Redazione Mercati", tecnologia: "Redazione Tecnologia" };
-  const byline = '<p class="byline"><span class="by">' + esc(DESK[s.section] || G.L("Redazione", "Newsroom")) + '</span><span class="sep" aria-hidden="true">·</span><span class="ai">' +
+  const byline = '<p class="byline"><span class="by">' + esc(G.desk(s.section)) + '</span><span class="sep" aria-hidden="true">·</span><span class="ai">' +
     G.L("Scritto con l'intelligenza artificiale sulle fonti elencate in fondo", "Written with artificial intelligence from the sources listed below") + "</span></p>";
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + byline + latest + (articleHTML || factsHTML);
+  // l'immagine sotto il sommario, come nei quotidiani: la mappa del luogo della notizia
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true }) + byline + latest + (articleHTML || factsHTML);
   const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
@@ -138,6 +137,7 @@ G.page("story", async function (P) {
   } else {
     $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body"' + (G.soft ? "" : ' class="reveal"') + ">" + body + "</div>";
   }
+  G.showImgs($("st-body"));
   // il resto della storia (sotto lo schermo) arriva a passaggio animato finito: mentre il titolo vola, la pagina non ha altro da fare
   const fill = () => {
     $("st-body").insertAdjacentHTML("beforeend", rest);

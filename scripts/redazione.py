@@ -27,6 +27,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from brevi import front_page  # noqa: E402  stessa regola delle brevi e del sito
 
 ROME = ZoneInfo("Europe/Rome")
+try:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "mappe", "paesi.json"), encoding="utf-8") as _f:
+        PAESI = set(json.load(_f))
+except (OSError, ValueError):
+    PAESI = set()
 DB = "redazione/db"
 SITE = "site"
 ARCHIVE_DAYS = 7
@@ -188,6 +193,17 @@ def cmd_controlla(db=DB, quiet=False):
                 problems.append(f"{where}.{k}: c'è una lineetta («—» o «–»): virgola, punto, due punti o parentesi")
         if not isinstance(s.get("themes"), list):
             problems.append(f"{where}: manca themes (gli id dei temi caldi, anche [])")
+        # i paesi e il luogo della mappa sopra l'articolo
+        if not isinstance(s.get("places"), list):
+            problems.append(f"{where}: manca places (le sigle ISO dei paesi della notizia, per la mappa)")
+        else:
+            cattive = [c for c in s["places"] if not (isinstance(c, str) and (c == "EU" or c in PAESI))]
+            if cattive:
+                problems.append(f"{where}: places con sigle che non sono paesi: {cattive} (due lettere ISO, es. \"UA\", o \"EU\")")
+        city = s.get("city")
+        if city is not None and not (isinstance(city, dict) and city.get("name") and isinstance(city.get("lat"), (int, float))
+                                     and isinstance(city.get("lon"), (int, float)) and -90 <= city["lat"] <= 90 and -180 <= city["lon"] <= 180):
+            problems.append(f"{where}: city deve essere {{name, lat, lon}} con le coordinate in numeri")
         if s.get("section") not in SECTIONS:
             problems.append(f"{where}: section «{s.get('section')}» non valida")
         names = []

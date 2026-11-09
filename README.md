@@ -16,6 +16,7 @@ site/                 la cartella pubblicata da Cloudflare
 redazione/            i testi dei giri (notizie, chiusure europee, titoli da seguire) e il database in redazione/db
 scripts/redazione.py  quale giro fare, controllo del database, pubblicazione (workflow «Redazione»)
 scripts/export.py     dal database della redazione ai file di site/data
+scripts/mappe.py      la mappa sopra ogni articolo (site/img/storie), con i confini di Natural Earth in scripts/mappe
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
 pipeline/             i testi delle attività programmate su claude.ai, finché non passano su GitHub
 ```
@@ -51,6 +52,10 @@ una chat a ogni giro. Gli orari del workflow si accendono quando quelle attivit�
   peso stimato e variazione della seduta. Li scrive `scripts/indici.py` a ogni giro di «Dati del Terminal»: l'elenco dei titoli da
   Wikipedia ogni quattro settimane, flottante e prezzi da Yahoo Finance. Il workflow «Indici» rifà a mano le composizioni
 - `tr/en.json`, `tr/it.json`: le traduzioni, vedi «Due lingue»
+- `../img/storie/<id>.svg`: l'immagine di ogni storia live, una mappa del luogo disegnata da `scripts/mappe.py` durante
+  `export.py`, con i paesi di `places` (sigle ISO, il primo è quello dove succede) e il punto di `city` {name, lat, lon}, che
+  si disegna solo se cade nel paese. Confini: Natural Earth 4.1 (pubblico dominio) dal pacchetto world-atlas 2.0.2 (licenza
+  ISC, in `scripts/mappe/LICENSE-world-atlas`); nomi dei paesi: tabella `scripts/mappe/paesi.json`, fatta da pycountry
 
 I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora
 nelle ore di mercato dei giorni feriali e scarica solo `quotes.json` con yfinance (Yahoo Finance): indici di tutte le Borse

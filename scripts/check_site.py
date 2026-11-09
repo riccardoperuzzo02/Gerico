@@ -52,6 +52,11 @@ def check_data(site):
                 need(isinstance(s.get("facts", []), list), f"edition.json: {s.get('id')}: facts non è una lista")
                 r = s.get("rank")
                 need(r is None or (isinstance(r, int) and not isinstance(r, bool)), f"edition.json: {s.get('id')}: rank {r!r} non è un numero intero")
+                img = s.get("img")
+                if img is not None:
+                    src = str((img or {}).get("src") or "").split("?")[0] if isinstance(img, dict) else ""
+                    need(src.startswith("img/storie/") and os.path.exists(os.path.join(site, src)),
+                         f"edition.json: {s.get('id')}: l'immagine {src or '(vuota)'} non c'è")
         need(isinstance(ed.get("archive", []), list) if isinstance(ed, dict) else False, "edition.json: archive non è una lista")
         th = ed.get("themes", []) if isinstance(ed, dict) else []
         need(isinstance(th, list) and len(th) <= 3 and all(isinstance(t, dict) and t.get("id") and t.get("label") for t in th),

@@ -333,6 +333,33 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
+  // la firma: la redazione di GERICO che segue quella sezione. Gli articoli li scrive l'intelligenza artificiale sulle
+  // fonti elencate, e la firma lo dice (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
+  G.DESKS = G.en ? { mondo: "Foreign desk", italia: "Home desk", economia: "Economy desk", mercati: "Markets desk", tecnologia: "Technology desk" }
+    : { mondo: "Redazione Esteri", italia: "Redazione Interni", economia: "Redazione Economia", mercati: "Redazione Mercati", tecnologia: "Redazione Tecnologia" };
+  G.desk = (k) => G.DESKS[k] || G.L("Redazione", "Newsroom");
+  // la firma breve delle schede: la redazione e «IA» (per chi non vede, per esteso)
+  G.cardBy = (s) => '<p class="c-by"><span class="c-desk">' + G.esc(G.desk(s.section)) + '</span><span class="c-ia" title="' +
+    G.L("Scritto con l'intelligenza artificiale", "Written with artificial intelligence") + '"><span aria-hidden="true">' + G.L("IA", "AI") +
+    '</span><span class="sr-only">' + G.L(", scritto con l'intelligenza artificiale", ", written with artificial intelligence") + "</span></span></p>";
+  // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
+  // Solo file del sito (img/storie/...): niente immagini da altri siti
+  const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';
+  G.storyImg = (s, o) => {
+    const im = s && s.img;
+    if (!im || typeof im.src !== "string" || !/^img\/storie\/[\w.-]+\.svg(\?v=\w+)?$/.test(im.src)) return "";
+    o = o || {};
+    return '<figure class="media' + (o.cls ? " " + o.cls : "") + '"><img src="' + G.esc(im.src) + '" alt="" width="640" height="360" decoding="async"' +
+      (o.eager ? ' fetchpriority="high"' : ' loading="lazy"') + ">" +
+      (o.cap !== false && im.label ? '<figcaption class="m-cap">' + PIN + "<span>" + G.esc(im.label) + "</span></figcaption>" : "") + "</figure>";
+  };
+  // le immagini compaiono con una dissolvenza quando sono arrivate (quelle già pronte subito)
+  G.showImgs = (root) => {
+    (root || document).querySelectorAll(".media img:not(.in)").forEach((img) => {
+      if (img.complete && img.naturalWidth) img.classList.add("in");
+      else img.addEventListener("load", () => img.classList.add("in"), { once: true });
+    });
+  };
 
   // titolo da mostrare: i titoli vecchi sono lunghi come riassunti, si tiene la parte prima del punto e virgola
   G.headline = (s) => {

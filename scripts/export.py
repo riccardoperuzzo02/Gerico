@@ -20,6 +20,12 @@ from datetime import datetime, timedelta, timezone
 
 from testo import pulisci, senza_lineette
 
+try:
+    import mappe
+except Exception as e:  # senza le mappe l'edizione esce lo stesso, con le schede senza immagine
+    print("  mappe: non disponibili (" + str(e) + ")")
+    mappe = None
+
 STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "article", "facts", "divergences", "view", "open",
                 "sources", "firstSeen", "updated", "change", "tags", "themes", "history", "notCovered"]
 SOURCE_FIELDS = ["name", "kind", "country", "area", "url", "angle", "stance", "at", "date"]
@@ -118,6 +124,34 @@ def temi_caldi(dump, live):
     return out
 
 
+def immagini(dump, out, live):
+    """La mappa di ogni storia live in site/img/storie/<id>.svg (scripts/mappe.py), con il campo img per il sito.
+    Le mappe delle storie che non sono più live si tolgono. Un errore lascia la storia senza immagine, mai il giro fermo."""
+    if mappe is None:
+        return
+    site = os.path.dirname(os.path.abspath(out))
+    cartella = os.path.join(site, "img", "storie")
+    fatte, luoghi = set(), 0
+    for s in live:
+        raw = load(os.path.join(dump, "stories", s["id"] + ".json"), {}) or {}
+        try:
+            img = mappe.immagine(dict(raw, id=s["id"], title=s.get("title") or raw.get("title") or ""), cartella, "img/storie")
+        except Exception as e:
+            print(f"  mappa di {s['id']}: non riuscita ({e})")
+            continue
+        img["label"] = senza_lineette(img.get("label") or "")
+        if not img["label"]:
+            img.pop("label")
+        s["img"] = img
+        fatte.add(s["id"] + ".svg")
+        luoghi += 1 if img.get("label") else 0
+    if os.path.isdir(cartella):
+        for name in os.listdir(cartella):
+            if name.endswith(".svg") and name not in fatte:
+                os.remove(os.path.join(cartella, name))
+    print(f"  mappe: {len(fatte)} storie, {luoghi} con il luogo")
+
+
 def derive_terminal(markets):
     """Fallback finché il giro delle 7:18 non scrive terminal/snapshot: le variazioni dagli indici dei mercati."""
     indices = []
@@ -160,6 +194,8 @@ def main(dump, out):
                 archive.append(s)
     live.sort(key=lambda s: s.get("rank") or 99)
     archive.sort(key=lambda s: s.get("updated") or "", reverse=True)
+    if live:
+        immagini(dump, out, live)
 
     # ogni file si riscrive solo se il dump contiene i dati da cui nasce:
     # il giro delle 17:50 legge solo mercati e terminal e non deve svuotare l'edizione

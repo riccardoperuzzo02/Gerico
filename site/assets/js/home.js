@@ -121,12 +121,15 @@ G.page("home", async function (P) {
   // al primo caricamento le notizie entrano una dopo l'altra (le prime 8); cambiando sezione solo una dissolvenza
   // arrivando da un'altra pagina del sito c'è già la transizione: niente entrata a cascata
   let first = !G.soft;
+  // come nelle prime pagine dei quotidiani: l'immagine (la mappa del luogo), l'occhiello, il titolo, la firma
   function leadHTML(s, showSection) {
-    return '<article class="lead' + (first ? " reveal" : "") + '" style="--i:0">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" +
-      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p></article>";
+    const img = G.storyImg(s, { eager: true });
+    return '<article class="lead' + (img ? " has-img" : "") + (first ? " reveal" : "") + '" style="--i:0">' + img + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" +
+      '<p class="sum">' + esc(G.firstSentences(s.summary, 220)) + "</p>" + G.cardBy(s) + "</article>";
   }
   function itemHTML(s, showSection, i) {
-    return '<li class="item' + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + kicker(s, showSection) + "<h2>" + link(s) + "</h2></li>";
+    const img = G.storyImg(s);
+    return '<li class="item' + (img ? " has-img" : "") + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + img + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" + G.cardBy(s) + "</li>";
   }
   // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {
@@ -250,6 +253,7 @@ G.page("home", async function (P) {
     feed.classList.remove("swap");
     if (!first && !viaTransition) { void feed.offsetWidth; feed.classList.add("swap"); }
     feed.innerHTML = feedMarkup();
+    G.showImgs(feed);
     first = false;
     feedVer += 1;
     renderSideBrevi();
@@ -638,6 +642,7 @@ G.page("home", async function (P) {
     const list = document.createElement("div");
     list.style.display = "flow-root";
     list.innerHTML = feedMarkupFor(k);
+    G.showImgs(list);
     p.appendChild(list);
     frame.appendChild(p);
     document.body.appendChild(frame);

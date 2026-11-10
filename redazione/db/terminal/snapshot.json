@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-09T18:22:00+01:00",
+  "asOf": "2026-11-10T21:10:15+01:00",
   "indices": [
     {
       "chg": 0.32,
@@ -34,12 +34,12 @@
       "time": "17:57"
     },
     {
-      "chg": 2.69,
+      "chg": 0.69,
       "code": "ITA",
       "index": "FTSE MIB",
       "note": "",
       "story": "",
-      "time": "17:37"
+      "time": "17:54"
     },
     {
       "chg": 0.8,
@@ -60,6 +60,10 @@
   ],
   "label": "Chiusura delle Borse europee",
   "sources": [
+    {
+      "name": "ANSA (Milano chiude in rialzo, Ftse Mib +0,69%, 10 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-milano-chiude-in-rialzo-069-con-fincantieri-bper-e-unicredit_6c437363-b253-4fde-b6db-6776b74f6369.html"
+    },
     {
       "name": "ANSA (L'Europa chiude positiva, Londra +1%, 9 novembre)",
       "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/borsa-leuropa-chiude-positiva-londra-1_94a3aa82-aaf3-4279-af1a-d594ab95b478.html"

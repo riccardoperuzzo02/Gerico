@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-10T07:25:00+01:00",
+  "asOf": "2026-11-10T21:10:15+01:00",
   "classes": [
     {
       "items": [
@@ -26,11 +26,11 @@
           "why": ""
         },
         {
-          "chg": 2.69,
+          "chg": 0.69,
           "name": "Ftse Mib",
-          "note": "Chiusura del 9 novembre",
-          "value": "51.399",
-          "why": "Spinto dal risiko bancario."
+          "note": "Chiusura del 10 novembre (ANSA, 17:54)",
+          "value": "51.755",
+          "why": "Rialzo frenato dall'inflazione Usa sopra le attese; bene banche e Fincantieri."
         },
         {
           "chg": 1.9,
@@ -87,7 +87,7 @@
       ],
       "key": "indici",
       "label": "Indici",
-      "note": "Europa: chiusure del 9 novembre. Asia: dati del mattino del 10."
+      "note": "Ftse Mib: chiusura del 10 novembre. Altre Borse europee: chiusure del 9 novembre (quelle di oggi non ancora verificate). Asia: dati del mattino del 10."
     },
     {
       "items": [
@@ -192,8 +192,12 @@
       "note": "Nessun dato verificato in questo aggiornamento"
     }
   ],
-  "label": "Chiusure di ieri e Asia stamattina",
+  "label": "Chiusura delle Borse europee",
   "sources": [
+    {
+      "name": "ANSA, Milano chiude in rialzo (10 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-milano-chiude-in-rialzo-069-con-fincantieri-bper-e-unicredit_6c437363-b253-4fde-b6db-6776b74f6369.html"
+    },
     {
       "name": "ANSA, petrolio",
       "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/il-petrolio-crolla-su-possibili-progressi-in-medio-oriente-brent-56_aabacb7b-0fb4-4a98-a0b2-2b9d0cc3627d.html"
@@ -207,5 +211,5 @@
       "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/borsa-stabile-hong-kong-che-riporta-un-cauto-008-15_2026-11-10_TLB-1LINER.html?lang=it"
     }
   ],
-  "summary": "Europa in forte rialzo ieri, Tokyo apre sopra il 3%, petrolio in calo di oltre il 4%."
+  "summary": "Piazza Affari chiude in rialzo dello 0,69% a 51.755 punti, lontano dai massimi della seduta dopo l'inflazione Usa sopra le attese. Bene Fincantieri, Bper e UniCredit; male Stellantis e A2a."
 }

@@ -131,7 +131,7 @@ G.page("home", async function (P) {
   }
   function itemHTML(s, showSection, i) {
     const img = G.storyImg(s);
-    return '<li class="item' + (img ? " has-img" : "") + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + img + kicker(s, showSection) + "<h2>" + link(s) + "</h2>" + G.cardBy(s) + "</li>";
+    return '<li class="item' + (img ? " has-img" : "") + (first && i < 8 ? " reveal" : "") + '" style="--i:' + Math.min(i, 8) + '">' + img + kicker(s, showSection) + "<h2>" + link(s) + "</h2></li>";
   }
   // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {

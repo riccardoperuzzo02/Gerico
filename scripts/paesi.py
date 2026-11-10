@@ -26,7 +26,7 @@ import xml.etree.ElementTree as ET
 import zlib
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 sys.stdout.reconfigure(line_buffering=True)
 QUI = os.path.dirname(os.path.abspath(__file__))
@@ -167,6 +167,34 @@ def leggi_feed(data):
     return voci
 
 
+LINK = re.compile(r"<link\b[^>]*>", re.I)
+
+
+def trova_feed(sito):
+    """Il feed di un sito di cui si conosce solo la prima pagina: i <link rel="alternate"> RSS o Atom della pagina,
+    poi gli indirizzi più comuni. Torna l'indirizzo trovato e le voci."""
+    pagina = scarica(sito).decode("utf-8", "replace")
+    cand = []
+    for tag in LINK.findall(pagina):
+        if re.search(r"type\s*=\s*[\"']application/(rss|atom)\+xml", tag, re.I) and re.search(r"rel\s*=\s*[\"']?alternate", tag, re.I):
+            m = re.search(r"href\s*=\s*[\"']([^\"']+)", tag, re.I)
+            if m and not re.search(r"comment", m.group(1), re.I):
+                cand.append(urljoin(sito, html.unescape(m.group(1))))
+    cand += [urljoin(sito, x) for x in ("/feed/", "/rss", "/rss.xml", "/feed", "/index.xml", "/rss/", "/feed.xml")]
+    visti = set()
+    for c in cand:
+        if c in visti:
+            continue
+        visti.add(c)
+        try:
+            voci = leggi_feed(scarica(c))
+        except (urllib.error.URLError, OSError, ET.ParseError, ValueError, EOFError, zlib.error):
+            continue
+        if voci:
+            return c, voci
+    raise ValueError("nessun feed nella pagina né agli indirizzi soliti")
+
+
 def fuori(v):
     """Sport, gossip, pubblicità: le cartelle del link (non l'ultima parte, che è il titolo), le categorie, poche parole
     del titolo."""
@@ -226,22 +254,35 @@ def main(cartella):
     out = os.path.join(cartella, "paesi")
     os.makedirs(out, exist_ok=True)
     prima = {k: carica(os.path.join(out, k + ".json"), {}) or {} for k in fonti}
+    # i feed trovati partendo dalla prima pagina, nei giri di prima
+    trovati = {(x.get("paese"), x.get("testata")): x.get("trovato") for x in ((carica(os.path.join(out, "indice.json"), {}) or {}).get("feeds") or [])
+               if isinstance(x, dict) and x.get("trovato")}
     lavori = [(k, f) for k, p in fonti.items() for f in p["feed"]]
     stato, grezze = [], {}
     t0 = time.time()
 
     def uno(lavoro):
         k, f = lavoro
+        url = f.get("url") or trovati.get((k, f["nome"])) or ""
         try:
-            return k, f, leggi_feed(scarica(f["url"])), ""
+            if url:
+                try:
+                    return k, f, leggi_feed(scarica(url)), "", url
+                except (urllib.error.URLError, OSError, ET.ParseError, ValueError, EOFError, zlib.error):
+                    if f.get("url"):
+                        raise
+            # solo la prima pagina (o il feed trovato non va più): si cerca il feed nella pagina
+            url, voci = trova_feed(f["sito"])
+            return k, f, voci, "", url
         except urllib.error.HTTPError as e:
-            return k, f, None, f"HTTP {e.code}"
+            return k, f, None, f"HTTP {e.code}", url
         except (urllib.error.URLError, OSError, ET.ParseError, ValueError, EOFError, zlib.error) as e:
-            return k, f, None, f"{type(e).__name__}: {str(e)[:120]}"
+            return k, f, None, f"{type(e).__name__}: {str(e)[:120]}", url
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as ex:
-        for k, f, voci, errore in ex.map(uno, lavori):
-            stato.append({"paese": k, "testata": f["nome"], "url": f["url"], "ok": voci is not None, "voci": len(voci or []), "errore": errore})
+        for k, f, voci, errore, url in ex.map(uno, lavori):
+            stato.append({"paese": k, "testata": f["nome"], "url": f.get("url") or f.get("sito"), "ok": voci is not None, "voci": len(voci or []), "errore": errore,
+                          **({"trovato": url} if f.get("sito") and url and voci is not None else {})})
             grezze.setdefault(k, []).append((f, voci))
     print(f"feed letti in {time.time() - t0:.0f} s: {sum(1 for s in stato if s['ok'])} su {len(stato)}")
 

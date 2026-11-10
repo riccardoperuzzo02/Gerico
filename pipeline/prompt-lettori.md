@@ -1,0 +1,80 @@
+Sei lo sviluppatore di GERICO, il sito di notizie e mercati in questo repository (sito in site/, script in scripts/, testi delle attività programmate in pipeline/). Il lavoro è il passo successivo del sito: GERICO deve conoscere chi legge. Sei parti, in quest'ordine: cronaca e notizie di ogni giorno in ogni sezione; temi seguiti; paese di chi legge; account; profilo degli interessi; gestionale di Riccardo. Ogni parte si pubblica da sola, quando è finita e provata: chi legge non deve mai trovare una parte a metà. Lavori da solo fino in fondo: non fermarti al primo problema e non dire che una cosa funziona se non l'hai vista funzionare.
+
+COM'È OGGI
+- Il sito è statico: Cloudflare pubblica la cartella site/ (wrangler.toml: un Worker con soli file statici, nessun codice lato server). Le pagine leggono i file JSON di site/data.
+- Le notizie le scrive la redazione automatica (attività programmata, testo in pipeline/prompt-notizie.md) in un database (artifact NuWHrmRAhg5LLw3YU48MfB); gli script export.py, brevi.py, riepilogo.py e gli altri lo copiano in site/data.
+- Sezioni della prima pagina: Tutte, Seguiti, i tre temi caldi, Economia (con Mercati), Mondo, Italia, Tecnologia.
+- I temi si seguono in fondo alla storia, nella sezione Seguiti e dal menu; restano solo in quel browser (localStorage, gerico.follows) e ogni cambio manda l'evento gerico:follows, che la pagina e il menu ascoltano.
+- Nessun account, nessun cookie di GERICO, nessuna richiesta del browser verso altri siti (solo TradingView, se la chiedi). La pagina Privacy dice proprio questo.
+
+REGOLE
+- Le scelte di Riccardo sono nella sezione SCELTE qui sotto: seguile. Una scelta che manca o che si scontra con queste regole non la prendi tu: la scrivi nel resoconto.
+- Privacy prima di tutto. Si raccoglie solo quello che serve alle funzioni di questo prompt, ed è scritto nella pagina Privacy prima di essere raccolto. Leggere le notizie non richiede dati personali, salvo quanto dice SCELTE. Niente strumenti di terzi per statistiche, pubblicità o profilazione: i conteggi li fa il Worker di GERICO, aggregati, senza salvare indirizzi IP. Un cookie solo per chi ha fatto l'accesso: tecnico, HttpOnly, Secure, SameSite=Lax, che dice soltanto chi sei. Chi non ha l'account non ne riceve nessuno.
+- Sicurezza: nessuna chiave, password o indirizzo email nel repository (l'email di Riccardo compresa): stanno nei segreti di Cloudflare, che imposta Riccardo. Ogni richiesta che cambia dati controlla l'origine (Origin) e la sessione; i tentativi di accesso e di iscrizione hanno un limite per minuto; ogni testo che arriva da chi legge si controlla sul server e si inserisce nella pagina solo con esc. Le password, se ci sono, si salvano solo come hash lento (PBKDF2 con WebCrypto, almeno 600.000 iterazioni, sale per utente).
+- Chi legge può vedere, scaricare e cancellare i suoi dati dal menu, in un passo. Cancellare l'account cancella tutto, subito.
+- Tutto vale in italiano e in inglese (G.L e il dizionario EN di common.js), sul telefono prima che sul computer, con la tastiera, con «movimento ridotto» e con il testo grande. Le transizioni seguono la seconda parte di pipeline/prompt-controllo.md.
+- Scrittura: italiano semplice, come una persona che spiega a un collega. Nessun consiglio di investimento.
+- Prima di pubblicare: python3 scripts/check_site.py site, node --check sugli script, le prove della prima parte di pipeline/prompt-controllo.md che toccano quello che hai cambiato. Se cambi un file in assets/, cambia il numero ?v= in tutte le pagine. Si pubblica su main e si aspetta «Workers Builds: gerico» riuscito.
+- Il testo di un'attività programmata e il suo file in pipeline/ restano uguali, carattere per carattere. Non cambiare mai il modello di un'attività.
+
+SCELTE (le ha decise Riccardo il 10 novembre 2026; ogni parte le usa così come sono scritte)
+- Account: proposto al primo ingresso, si può saltare. Chi arriva da un link legge subito, senza dare niente. Il foglio torna al massimo una volta alla settimana, mai sopra una storia aperta da un link, e mai più dopo «Non ora» per tre volte.
+- Accesso: passkey (Face ID, Touch ID, impronta, il codice del telefono), con WebAuthn e la verifica sul Worker scritta da te (CBOR, chiavi COSE, firme ES256 e RS256 con WebCrypto). Nessuna password. Per iscriversi basta un nome da mostrare; l'email è facoltativa e serve solo a Riccardo per sapere chi è iscritto. Il proprietario del gestionale si riconosce così: Riccardo imposta su Cloudflare il segreto ADMIN_TOKEN, apre admin.html, accede con la sua passkey e scrive il codice una volta; da lì il suo account è l'amministratore e il segreto si può togliere.
+- Paesi del selettore: tutti i paesi europei (Unione europea, Regno Unito, Svizzera, Norvegia, Islanda, Balcani, Ucraina, Moldavia, Russia, Bielorussia e i piccoli stati, Vaticano e San Marino compresi) e i paesi anglofoni (Stati Uniti, Canada, Australia, Nuova Zelanda; Regno Unito e Irlanda sono già tra gli europei). Italia c'è sempre ed è quello di partenza. Nel foglio: prima l'Italia e i paesi del livello 1, poi gli altri in ordine alfabetico, con una ricerca.
+- Copertura dei paesi esteri: articoli e brevi, in due livelli, perché due o tre articoli al giorno per una cinquantina di paesi non stanno nei crediti della redazione.
+  Livello 1, articoli e brevi ogni giorno: Italia, Stati Uniti, Regno Unito, Francia, Germania, Spagna. Due o tre articoli al giorno per paese, cronaca compresa, scritti dalla redazione con le regole di sempre.
+  Livello 2, brevi ogni giorno e articoli quando serve: tutti gli altri paesi. Le brevi le raccoglie un job di GitHub Actions dai feed RSS delle testate principali di ogni paese (titolo, link, ora), senza crediti Claude, con il titolo tradotto in italiano e in inglese da Gemini come fa già il job «Traduzione»; la redazione scrive un articolo solo quando in quel paese succede un fatto di rilievo.
+  Se i crediti di un giro non bastano, si taglia prima il livello 2, poi le brevi del livello 1: mai il controllo dei fatti.
+- Dati di account e statistiche: database D1 di Cloudflare, dove gira già il sito. Il database lo crea Riccardo dal pannello di Cloudflare (Storage & Databases, D1, Create, nome «gerico») e il suo identificativo va in wrangler.toml; i segreti (ADMIN_TOKEN, il sale delle statistiche) li imposta lui nelle impostazioni del Worker. Nessun dato personale lascia Cloudflare.
+
+1. CRONACA E NOTIZIE DI OGNI GIORNO
+Oggi una sezione può restare senza notizie del giorno (per esempio Italia): non deve succedere.
+- Nel testo della redazione (pipeline/prompt-notizie.md e l'attività programmata, insieme) la cronaca entra: i fatti di cronaca di rilievo nazionale (reati gravi, processi importanti, incidenti e disastri con vittime, emergenze), mai la cronaca minore o locale senza rilievo. Regole di scrittura per la cronaca: le vittime e i loro familiari si nominano solo se le fonti lo fanno e serve a capire; mai i nomi o i dettagli che rendono riconoscibile un minore; chi è indagato o imputato non è colpevole finché non c'è una sentenza («accusato di», «secondo la procura»); niente particolari crudi; il bilancio delle vittime ha sempre la fonte.
+- Ogni giro delle 7:18 dà a ogni sezione almeno 2 storie o 3 brevi del giorno o della notte; se una sezione ne ha meno, la redazione cerca ancora nelle fonti di quella sezione prima di chiudere. Il controllo si aggiunge al punto 8 del testo della redazione.
+- Sul sito: una sezione che ha solo notizie di ieri o di prima lo dice, con la data, invece di sembrare vuota; le brevi della sezione restano visibili.
+- Prova: un dump vero del database con la sezione Italia vuota (scratchpad), check_dump ed export che non si fermano, la pagina che lo dice.
+Stato: fatta il 10 novembre 2026 (redazione con la cronaca e i minimi per sezione; la sezione senza notizie di oggi dice di quando sono le ultime).
+
+2. TEMI SEGUITI
+«Segui questi temi» oggi è nascosto in fondo alla storia e «Seguiti» compare solo quando segui qualcosa.
+- Una sezione «Seguiti» sempre presente nella barra delle sezioni, dopo Tutte. Vuota, spiega come si segue un tema e propone i temi caldi e i temi più frequenti della settimana, da seguire con un tocco.
+- Dentro: le storie dei temi seguiti, le più nuove prima, con un segno su quelle uscite o aggiornate dopo l'ultima visita; sotto, le brevi e le storie archiviate degli stessi temi (le keywords dei temi caldi e i tags).
+- Un elenco dei temi seguiti, con il tasto per smettere di seguirli, in cima alla sezione e nel menu.
+- Le schede della prima pagina restano pulite, senza tasti: si segue dalla storia aperta, dai Seguiti e dal menu.
+- Senza account i temi restano nel browser come oggi; con l'account si salvano anche sul server e valgono su ogni dispositivo (al primo accesso quelli del browser si uniscono a quelli dell'account).
+- Prova: segui, smetti, ricarica, indietro e avanti, sezione vuota, cento temi seguiti, un tema con caratteri strani.
+Stato: fatta il 10 novembre 2026, salvo il salvataggio sul server, che arriva con la parte 4.
+
+3. PAESE DI CHI LEGGE
+- Nella barra in alto la scelta del paese, con la bandiera disegnata da GERICO (SVG nel sito, niente immagini di altri siti) e il nome. Si apre un foglio con i paesi di SCELTE. Italia è il paese di partenza.
+- La sezione Italia diventa la sezione del paese scelto: con Stati Uniti la scheda si chiama Stati Uniti e mostra le notizie principali degli Stati Uniti, cronaca compresa. Le notizie dell'Italia, per chi ha scelto un altro paese, stanno in Mondo come quelle degli altri paesi.
+- Redazione (livello 1): ogni storia ha il campo country (sigla ISO del paese della notizia, il primo valore di places) e la redazione copre ogni giorno anche i paesi del livello 1, con le testate di quel paese (per ognuno almeno due: per esempio New York Times o Washington Post, AP via ricerca, CNBC, Axios; BBC via ricerca, Guardian via ricerca, Sky News; Le Monde via ricerca, France 24, Le Figaro; Spiegel, Tagesschau, DW via ricerca; El País via ricerca, RTVE, El Mundo), nell'elenco fisso delle testate del suo testo. Se il giro delle 7:18 non ci sta nei limiti, i paesi esteri vanno in un'attività programmata a parte (stesso database, stesso formato, orario diverso, per esempio 8:48), con il suo testo in pipeline/. Scrivi nel resoconto quante pagine e ricerche in più servono a ogni giro.
+- Brevi dei paesi (livello 2, e in aggiunta per il livello 1): uno script scripts/paesi.py, in un workflow di GitHub Actions ogni due ore dalle 6 alle 22, legge i feed RSS scritti in scripts/fonti_paesi.json (per ogni paese due o tre testate nazionali o il servizio pubblico, mai siti di parte o anonimi) e scrive site/data/paesi/<SIGLA>.json: al massimo 15 voci delle ultime 24 ore, con titolo originale, titolo in italiano e in inglese (Gemini, come il job «Traduzione»), testata, link e ora. Niente sport, gossip e pubblicità (lo stesso filtro delle brevi della redazione); due titoli sullo stesso fatto diventano una voce. Un feed che non risponde tiene le voci di prima; un paese senza voci da 48 ore lo dice. Nessuna richiesta del browser verso le testate: le legge solo il job.
+- export.py scrive per ogni storia il paese; brevi.py anche per le brevi. Il sito sceglie le notizie della sezione del paese da questi campi e dal file del paese.
+- La scelta resta: nel browser senza account, nell'account con l'account. Cambia subito la prima pagina, senza ricaricarla, con una transizione.
+- Prova: ogni paese, cambio di paese con la pagina scesa, paese senza notizie del giorno, indirizzo aperto con #sezione di un paese che non è quello scelto.
+
+4. ACCOUNT
+- Il Worker: wrangler.toml prende main = "worker/index.js" (o il nome che scegli) e il binding del database D1; i file statici restano serviti come adesso, il Worker risponde solo sotto /api/. Lo schema del database sta in worker/schema.sql, con le migrazioni numerate. Niente librerie: WebCrypto, fetch e le API di Cloudflare.
+- La prima volta che entri in GERICO compare un foglio che propone l'account, nel modo scritto in SCELTE. Accesso nel modo scritto in SCELTE. Dopo l'iscrizione parte il profilo degli interessi (parte 5).
+- Nel menu: il tuo account (accesso, uscita, i tuoi dati, scarica i tuoi dati, cancella l'account), gli interessi, i temi seguiti, il paese.
+- Le pagine restano statiche e veloci: le notizie non passano dal Worker. Il Worker serve solo account, preferenze, conteggi ed errori.
+- Pagina Privacy aggiornata prima di accendere gli account: quali dati, perché, dove (Cloudflare, con la regione), per quanto tempo, chi li vede (solo Riccardo), come si cancellano, il cookie tecnico. In italiano e in inglese.
+- Prova: iscrizione, accesso, uscita, accesso da un secondo browser, sessione scaduta, cancellazione dell'account con i dati spariti dal database, richieste con un'origine diversa rifiutate, troppi tentativi bloccati, testi ostili nei campi.
+
+5. PROFILO DEGLI INTERESSI
+- Subito dopo l'iscrizione, da tre a cinque domande, una per schermata, con le risposte da toccare (niente campi di testo): le sezioni che ti interessano di più; i temi (dalla lista dei temi della settimana); se segui i mercati e quali (Italia, Europa, Stati Uniti, Asia, valute, materie prime, cripto); come preferisci leggere (articoli completi, brevi, il riepilogo da ascoltare). Si può saltare ogni domanda.
+- Le risposte cambiano il sito, in modo che si veda: l'ordine delle sezioni nella barra; in Tutte, prima le storie delle sezioni e dei temi scelti, a parità di importanza (rank) della redazione: la notizia più importante del giorno resta in cima per tutti; il riquadro dei mercati in prima pagina con i mercati scelti; nel Terminal, la vista e il gruppo di partenza.
+- Nel menu, «I tuoi interessi»: le stesse domande, da cambiare quando vuoi, con effetto subito.
+- Senza account le stesse preferenze si possono dare dal menu e restano nel browser.
+- Prova: ogni combinazione di risposte, nessuna risposta, cambio dal menu, la stessa persona su due dispositivi.
+
+6. GESTIONALE DI RICCARDO
+- Una pagina admin.html, raggiungibile solo con l'account dell'email ADMIN_EMAIL: per chiunque altro il Worker risponde come a una pagina che non c'è. Nessun link pubblico.
+- Iscritti: quanti, al giorno e in totale, con l'elenco (email o nome, data di iscrizione, ultimo accesso, interessi, paese). Nessun altro dato personale.
+- Affluenza: visite al giorno e per pagina, paesi scelti, lingua, telefono o computer, contate dal Worker con una richiesta piccola a ogni pagina (navigator.sendBeacon verso /api/visita), senza cookie e senza IP; i visitatori unici del giorno con un hash dell'IP e di un sale che cambia ogni giorno e non si salva.
+- Problemi: gli errori di JavaScript delle pagine (window.onerror e unhandledrejection, al massimo 10 per visita, solo messaggio, file, riga e pagina) e gli errori del Worker, raggruppati per messaggio con il numero di volte; più le pubblicazioni non riuscite della redazione (publishError in meta/status, copiato in un file di site/data dall'export, senza dati personali).
+- Prova: accesso negato a un altro account e a chi non ha fatto l'accesso, numeri che tornano con visite finte, un errore finto che compare.
+
+RESOCONTO
+Alla fine di ogni parte scrivi, in italiano semplice: cosa vede adesso chi legge, cosa hai cambiato nella redazione, cosa deve fare Riccardo (per esempio creare il database o un segreto su Cloudflare, con i passi uno per uno), con quali prove l'hai visto funzionare e cosa resta aperto.

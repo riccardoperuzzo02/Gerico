@@ -1,7 +1,7 @@
 {
   "lastPublish": {
-    "at": "2026-11-10T13:32:48+01:00",
-    "esito": "Paesi: pubblicate 2 storie nuove (US, ES); check_dump 0 correzioni, check_site senza avvisi, push su main riuscito."
+    "at": "2026-11-10T20:55:50+01:00",
+    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (387 parole); titoli.py: nessun titolo nel database; cancellate 8 storie archiviate da più di 7 giorni; controlla: 1 cose da sistemare."
   },
   "lastRun": "2026-11-10T13:24:50+01:00",
   "marketsRun": {
@@ -17,10 +17,6 @@
   "paesiRun": {
     "at": "2026-11-10T13:32:00+01:00",
     "esito": "US 1 nuova (Hegseth, impeachment)/0 aggiornate/0 archiviate; ES 1 nuova (Oviedo, esplosione)/0/0; GB, FR, DE senza storie: pochi articoli apribili e nessuna seconda fonte di oggi."
-  },
-  "publishError": {
-    "at": "2026-11-10T13:24:50+01:00",
-    "message": "Repository non disponibile: add_repo non trovato dalla ricerca (select e parole chiave 'github repository'); git clone https://github.com/riccardoperuzzo02/Gerico.git fallito con 'could not read Username for https://github.com: terminal prompts disabled'; gh repo clone fallito (token GH_TOKEN non valido). Giro delle 13:18: aggiornate Ucraina e Yemen e le brevi; Mercati e Agenda non toccati; controllo dei fatti non fatto."
   },
   "quality": {
     "articlesDiscarded": 0,

@@ -51,7 +51,8 @@ jobs:
           if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
           git commit -q -m "Indici del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
           for i in 1 2 3 4; do
-            if git pull -q --rebase origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            # i dati li rifà ogni giro: se un altro giro ha toccato gli stessi file, vincono quelli appena calcolati
+            if git pull -q --rebase -X theirs origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
             git rebase --abort 2>/dev/null || true
             sleep $((i * 15))
           done

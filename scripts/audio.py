@@ -442,7 +442,7 @@ def apertura(paras):
 def monta(voce, rate, marks, aperti, np):
     """La voce sulla musica, come in un telegiornale. La sigla: il levare con i segnali orari, il colpo
     dell'orchestra e la frase degli ottoni, al volume della voce. Sulla battuta dopo entra la voce e sotto comincia
-    il tappeto: -13 dB rispetto alla voce sul saluto e sui titoli, poi -19 dB sulle notizie, -15 dB nelle pause tra
+    il tappeto: -16 dB rispetto alla voce sul saluto e sui titoli, poi -22 dB sulle notizie, -18 dB nelle pause tra
     un tema e l'altro. Dopo l'ultima parola il tappeto risale (-6 dB) e, sulla prima battuta utile, parte la
     chiusura: il conto alla rovescia e il colpo finale. `rate` è quella della musica (sigla.SR)."""
     import sigla
@@ -466,7 +466,7 @@ def monta(voce, rate, marks, aperti, np):
         return float(np.sqrt(np.mean(on ** 2))) if len(on) else 1e-6
     rv = forza(voce)
     g_piena = rv / forza(ap) * 10 ** (-1 / 20)  # sigla e chiusura: la stessa scala, come le ha scritte sigla.py
-    g_ap, g_corpo, g_pausa, g_risale = (rv / forza(tp) * 10 ** (db / 20) for db in (-13, -19, -15, -6))
+    g_ap, g_corpo, g_pausa, g_risale = (rv / forza(tp) * 10 ** (db / 20) for db in (-16, -22, -18, -6))
 
     def rampa(g, a, b, v0, v1):
         a, b = max(0, int(a)), max(int(a) + 1, int(b))

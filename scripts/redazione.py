@@ -387,6 +387,10 @@ def github_output(**kv):
 
 
 def cmd_pubblica(giro):
+    # chi pubblica è GERICO, anche nei commit che il rebase rifà quando main è andato avanti durante il giro
+    for k, v in (("GIT_AUTHOR_NAME", "GERICO"), ("GIT_AUTHOR_EMAIL", "gerico@users.noreply.github.com"),
+                 ("GIT_COMMITTER_NAME", "GERICO"), ("GIT_COMMITTER_EMAIL", "gerico@users.noreply.github.com")):
+        os.environ.setdefault(k, v)
     prova = giro == "prova"
     db, site = DB, SITE
     if prova:
@@ -481,6 +485,15 @@ def cmd_esito(path):
         pass
     finito = bool(result) and not result.get("is_error") and result.get("subtype") == "success"
     risposta = "si" if finito else ("interrotta" if strumenti else "no")
+    # gli strumenti che il workflow non permette (scritture fuori da redazione/db, comandi non in elenco)
+    negati = []
+    for d in (result or {}).get("permission_denials") or []:
+        if not isinstance(d, dict):
+            continue
+        inp = d.get("tool_input") if isinstance(d.get("tool_input"), dict) else {}
+        cosa = inp.get("file_path") or inp.get("command") or inp.get("url") or inp.get("pattern") or ""
+        cosa = re.sub(r"\s+", " ", str(cosa)).strip()
+        negati.append(f"{d.get('tool_name', '?')} {cosa[:140]}".strip())
     if not result:
         text = (f"Claude Code non ha dato una risposta finale (accesso non riuscito o giro interrotto). "
                 f"Strumenti usati: {strumenti}.")
@@ -488,8 +501,12 @@ def cmd_esito(path):
         mins = round((result.get("duration_ms") or 0) / 60000, 1)
         text = (f"{(result.get('result') or '').strip() or result.get('subtype')}\n\n"
                 f"Turni: {result.get('num_turns')}, strumenti usati: {strumenti}, durata: {mins} minuti.")
+    if negati:
+        text += f"\n\nPermessi negati ({len(negati)}):\n" + "\n".join(f"- {n}" for n in negati[:20])
     print(text)
     print(f"Esito per il workflow: {risposta}")
+    if negati:
+        print(f"::warning::Claude Code si è visto negare {len(negati)} azioni: l'elenco è nel passo Giro.")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as f:

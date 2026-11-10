@@ -109,8 +109,12 @@ jobs:
             { printf 'Questo è il giro delle %s.\n\n' "$VARIANTE"; cat "redazione/$GIRO.md"; } > "$RUNNER_TEMP/prompt.md"
           fi
           # Claude scrive solo nel database e usa solo questi comandi: niente git, niente altro sul runner
-          # (ogni regola nelle due forme, «comando *» e la vecchia «comando:*»)
-          TOOLS=(WebSearch WebFetch Read Glob Grep "Edit(redazione/db/**)" "Write(redazione/db/**)"
+          # (ogni regola dei comandi nelle due forme, «comando *» e la vecchia «comando:*»; le regole Edit valgono anche
+          # per Write, e la cartella del database c'è sia relativa sia assoluta, con la forma //percorso)
+          DBDIR="$GITHUB_WORKSPACE/redazione/db"
+          TOOLS=(WebSearch WebFetch Read Glob Grep
+                 "Edit(redazione/db/**)" "Edit(./redazione/db/**)" "Edit(/$DBDIR/**)"
+                 "Write(redazione/db/**)" "Write(/$DBDIR/**)"
                  "Bash(TZ=Europe/Rome date *)" "Bash(date *)" "Bash(TZ=Europe/Rome date:*)" "Bash(date:*)"
                  "Bash(python3 scripts/redazione.py *)" "Bash(python3 scripts/check_dump.py *)"
                  "Bash(python3 scripts/redazione.py:*)" "Bash(python3 scripts/check_dump.py:*)")

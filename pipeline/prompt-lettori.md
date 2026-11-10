@@ -43,7 +43,7 @@ Stato: fatta il 10 novembre 2026 (redazione con la cronaca e i minimi per sezion
 - Le schede della prima pagina restano pulite, senza tasti: si segue dalla storia aperta, dai Seguiti e dal menu.
 - Senza account i temi restano nel browser come oggi; con l'account si salvano anche sul server e valgono su ogni dispositivo (al primo accesso quelli del browser si uniscono a quelli dell'account).
 - Prova: segui, smetti, ricarica, indietro e avanti, sezione vuota, cento temi seguiti, un tema con caratteri strani.
-Stato: fatta il 10 novembre 2026, salvo il salvataggio sul server, che arriva con la parte 4.
+Stato: fatta il 10 novembre 2026; dal 10 sera, con la parte 4, le scelte si salvano anche sul server per chi ha l'account.
 
 3. PAESE DI CHI LEGGE
 - Nella barra in alto la scelta del paese, con la bandiera disegnata da GERICO (SVG nel sito, niente immagini di altri siti) e il nome. Si apre un foglio con i paesi di SCELTE. Italia è il paese di partenza.
@@ -62,7 +62,7 @@ Stato: il 10 novembre 2026 sono online la scelta del paese, la scheda del paese,
 - Le pagine restano statiche e veloci: le notizie non passano dal Worker. Il Worker serve solo account, preferenze, conteggi ed errori.
 - Pagina Privacy aggiornata prima di accendere gli account: quali dati, perché, dove (Cloudflare, con la regione), per quanto tempo, chi li vede (solo Riccardo), come si cancellano, il cookie tecnico. In italiano e in inglese.
 - Prova: iscrizione, accesso, uscita, accesso da un secondo browser, sessione scaduta, cancellazione dell'account con i dati spariti dal database, richieste con un'origine diversa rifiutate, troppi tentativi bloccati, testi ostili nei campi.
-Stato: scritta e provata in locale il 10 novembre 2026 (worker/, wrangler dev con D1 locale e passkey simulate in Chromium); va online quando ci sono il database D1 «gerico» e i segreti ADMIN_TOKEN e STATS_SALT.
+Stato: online dal 10 novembre 2026 sera (worker/, provata prima in locale con wrangler dev, D1 locale e passkey simulate in Chromium). Database D1 «gerico» con giurisdizione UE; segreti ADMIN_TOKEN e STATS_SALT nelle impostazioni del Worker. La pubblicazione usa il wrangler di Cloudflare: con wrangler fissato in package.json la build falliva.
 
 5. PROFILO DEGLI INTERESSI
 - Subito dopo l'iscrizione, da tre a cinque domande, una per schermata, con le risposte da toccare (niente campi di testo): le sezioni che ti interessano di più; i temi (dalla lista dei temi della settimana); se segui i mercati e quali (Italia, Europa, Stati Uniti, Asia, valute, materie prime, cripto); come preferisci leggere (articoli completi, brevi, il riepilogo da ascoltare). Si può saltare ogni domanda.
@@ -70,7 +70,7 @@ Stato: scritta e provata in locale il 10 novembre 2026 (worker/, wrangler dev co
 - Nel menu, «I tuoi interessi»: le stesse domande, da cambiare quando vuoi, con effetto subito.
 - Senza account le stesse preferenze si possono dare dal menu e restano nel browser.
 - Prova: ogni combinazione di risposte, nessuna risposta, cambio dal menu, la stessa persona su due dispositivi.
-Stato: scritta e provata in locale il 10 novembre 2026, insieme alla parte 4. «A parità di importanza» vuol dire dentro lo stesso gruppo della redazione: le prime cinque per rank (gli articoli lunghi) e le altre; la prima notizia resta in cima per tutti.
+Stato: online dal 10 novembre 2026 sera, insieme alla parte 4. «A parità di importanza» vuol dire dentro lo stesso gruppo della redazione: le prime cinque per rank (gli articoli lunghi) e le altre; la prima notizia resta in cima per tutti.
 
 6. GESTIONALE DI RICCARDO
 - Una pagina admin.html, raggiungibile solo con l'account dell'email ADMIN_EMAIL: per chiunque altro il Worker risponde come a una pagina che non c'è. Nessun link pubblico.
@@ -78,7 +78,7 @@ Stato: scritta e provata in locale il 10 novembre 2026, insieme alla parte 4. «
 - Affluenza: visite al giorno e per pagina, paesi scelti, lingua, telefono o computer, contate dal Worker con una richiesta piccola a ogni pagina (navigator.sendBeacon verso /api/visita), senza cookie e senza IP; i visitatori unici del giorno con un hash dell'IP e di un sale che cambia ogni giorno e non si salva.
 - Problemi: gli errori di JavaScript delle pagine (window.onerror e unhandledrejection, al massimo 10 per visita, solo messaggio, file, riga e pagina) e gli errori del Worker, raggruppati per messaggio con il numero di volte; più le pubblicazioni non riuscite della redazione (publishError in meta/status, copiato in un file di site/data dall'export, senza dati personali).
 - Prova: accesso negato a un altro account e a chi non ha fatto l'accesso, numeri che tornano con visite finte, un errore finto che compare.
-Stato: scritta e provata in locale il 10 novembre 2026, insieme alla parte 4. Il gestionale si riconosce dal codice ADMIN_TOKEN (SCELTE), non da un'email: nessuna email nel repository.
+Stato: online dal 10 novembre 2026 sera, insieme alla parte 4. Il gestionale si riconosce dal codice ADMIN_TOKEN (SCELTE), non da un'email: nessuna email nel repository.
 
 RESOCONTO
 Alla fine di ogni parte scrivi, in italiano semplice: cosa vede adesso chi legge, cosa hai cambiato nella redazione, cosa deve fare Riccardo (per esempio creare il database o un segreto su Cloudflare, con i passi uno per uno), con quali prove l'hai visto funzionare e cosa resta aperto.

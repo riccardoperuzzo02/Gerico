@@ -34,13 +34,15 @@ cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (
 `riepilogo.py`, `titoli.py`, `share_pages.py`, `check_site.py`), scrive l'esito in `meta/status.json` (`lastPublish` o
 `publishError`) e fa commit e push su main. Se è cambiato il riepilogo, avvia «Dati del Terminal», che lo legge con la voce
 sintetica di Gemini (segreto `GEMINI_API_KEY`, livello gratuito; la voce si sceglie con la variabile `GERICO_VOCE` dopo il
-workflow «Prova delle voci»); senza chiave, o se il servizio non risponde, legge Kokoro. Cloudflare ripubblica il sito da solo: verso le 7:30, le 13:30 e le 18:20.
+workflow «Prova delle voci»); senza chiave, o se il servizio non risponde, legge Kokoro. Cloudflare ripubblica il sito da solo: verso le 7:30, le 9:50, le 13:30 e le 18:20.
 
 Claude Code usa l'abbonamento Claude di Riccardo con il segreto `CLAUDE_CODE_OAUTH_TOKEN` (Settings › Secrets and variables ›
-Actions), creato con `claude setup-token` e valido un anno: nessuna chat su claude.ai. Può scrivere solo in `redazione/db` e
+Actions), creato con `claude setup-token` e valido un anno: nessuna chat su claude.ai (se il token incollato va a capo, perché
+il terminale lo spezza a 80 caratteri, il workflow toglie spazi e a capo prima di usarlo). Può scrivere solo in `redazione/db` e
 usare solo `date` e gli script di `scripts/`; il token di GitHub lo vede solo il passo della pubblicazione. La trascrizione di
-ogni giro resta 7 giorni tra gli artifact del run. Il giro «prova» (Actions › Redazione › Run workflow) controlla il token e
-la pubblicazione senza cambiare niente. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
+ogni giro resta 7 giorni tra gli artifact del run; le azioni negate a Claude sono elencate nel passo «Giro». Un giro che non
+riesce a cominciare (token rifiutato, limite dell'abbonamento) non pubblica niente e il run risulta fallito. Il giro «prova»
+(Actions › Redazione › Run workflow) controlla il token e la pubblicazione senza cambiare niente. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
 `scripts/redazione.py giro` fa partire solo quello giusto. Due giri non partono mai insieme (`concurrency`).
 
 Fino al 10 novembre 2026 i giri erano attività programmate su claude.ai, che scrivevano nel database dell'app privata e

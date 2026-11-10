@@ -977,14 +977,17 @@ G.page("terminal", async function (P) {
     const mv = typeof d !== "number" ? ND : rates ? G.signed(d, 1) + BP : G.pct(d);
     const val = typeof it.last !== "number" ? ND : rates ? G.num(it.last, 2) + "%" : G.price(it.sym, it.last);
     const per = (k) => { const v = it[(rates ? "bp" : "chg") + k]; return typeof v !== "number" ? ND : rates ? G.signed(v, 1) + BP : G.pct(v); };
+    const lv = (x) => typeof x !== "number" ? ND : rates ? G.num(x, 2) + "%" : G.price(it.sym, x);
+    const cella = (l, x) => "<div><dt>" + l + "</dt><dd>" + x + "</dd></div>";
+    // due file: i livelli (apertura, chiusura prima, massimo e minimo dei tre mesi) e le variazioni; ognuna riempie la
+    // sua riga, così non resta mai una voce da sola in fondo
+    const livelli = [typeof it.open === "number" ? cella(G.L("Apertura", "Open"), lv(it.open)) : "",
+      typeof it.prev === "number" ? cella(G.L("Chiusura prima", "Previous close"), lv(it.prev)) : "",
+      cella(G.L("Massimo", "High"), lv(it.hi)), cella(G.L("Minimo", "Low"), lv(it.lo))].filter(Boolean);
     const big = '<div class="q-more"><span class="' + tr + '">' + G.spark(it.spark, 320, 112, "sp-big", true) + "</span>" +
       '<p class="q-range"><span>' + esc(G.dayOnly(it.sparkFrom)) + "</span><span>" + esc(G.dayOnly(it.date)) + "</span></p>" +
-      '<dl class="q-stats">' +
-      (typeof it.open === "number" ? "<div><dt>" + G.L("Apertura", "Open") + "</dt><dd>" + (rates ? G.num(it.open, 2) + "%" : G.price(it.sym, it.open)) + "</dd></div>" : "") +
-      (typeof it.prev === "number" ? "<div><dt>" + G.L("Chiusura prima", "Previous close") + "</dt><dd>" + (rates ? G.num(it.prev, 2) + "%" : G.price(it.sym, it.prev)) + "</dd></div>" : "") +
-      "<div><dt>" + G.L("1 settimana", "1 week") + "</dt><dd>" + per("1w") + "</dd></div><div><dt>" + G.L("1 mese", "1 month") + "</dt><dd>" + per("1m") + "</dd></div><div><dt>" + G.L("3 mesi", "3 months") + "</dt><dd>" + per("3m") + "</dd></div>" +
-      "<div><dt>" + G.L("Massimo", "High") + "</dt><dd>" + (typeof it.hi === "number" ? (rates ? G.num(it.hi, 2) + "%" : G.price(it.sym, it.hi)) : ND) + "</dd></div>" +
-      "<div><dt>" + G.L("Minimo", "Low") + "</dt><dd>" + (typeof it.lo === "number" ? (rates ? G.num(it.lo, 2) + "%" : G.price(it.sym, it.lo)) : ND) + "</dd></div></dl>" +
+      '<dl class="q-stats q-n' + livelli.length + '">' + livelli.join("") + "</dl>" +
+      '<dl class="q-stats q-n3">' + cella(G.L("1 settimana", "1 week"), per("1w")) + cella(G.L("1 mese", "1 month"), per("1m")) + cella(G.L("3 mesi", "3 months"), per("3m")) + "</dl>" +
       '<p class="t-note">' + (it.at ? G.L("Ultimo prezzo ", "Last price ") + esc(G.when(it.at)) + ". " : "") + ext(it.url, G.L("Vedi su Yahoo Finance", "See on Yahoo Finance")) + "</p></div>";
     return '<li class="q" data-sym="' + esc(it.sym) + '">' + opener("q-row",
       '<span class="q-n">' + esc(G.tn(it.name)) + (it.stale ? "<small>" + G.L("fermo al ", "stuck at ") + esc(G.dayOnly(it.date)) + "</small>" : "") + '</span><span class="q-sp ' + tr + '">' + G.spark(it.spark, 72, 24, "sp") + "</span>" +
@@ -994,8 +997,8 @@ G.page("terminal", async function (P) {
   function groupMarkup(key) {
     const g = quotes.groups.find((x) => x.key === key) || quotes.groups[0];
     const rates = g.key === "tassi";
-    return '<p class="q-head" aria-hidden="true"><span>' + G.L("Strumento", "Instrument") + "</span><span>" + G.L("3 mesi", "3 months") + "</span><span>" + G.L("Ultimo", "Last") + "</span><span>" + G.L("Oggi", "Today") + '</span></p><ul class="q-list">' +
-      g.items.map((it) => quoteRow(it, rates)).join("") + "</ul>" +
+    return '<div class="q-tab"><p class="q-head" aria-hidden="true"><span>' + G.L("Strumento", "Instrument") + "</span><span>" + G.L("3 mesi", "3 months") + "</span><span>" + G.L("Ultimo", "Last") + "</span><span>" + G.L("Oggi", "Today") + '</span></p><ul class="q-list">' +
+      g.items.map((it) => quoteRow(it, rates)).join("") + "</ul></div>" +
       (rates ? '<p class="t-note">' + G.L("Rendimenti dei titoli di Stato Usa. Rosso: rendimenti in salita, cioè prezzi in calo.", "US Treasury yields. Red: yields rising, which means prices falling.") + "</p>" : "");
   }
   function drawGroup(openSym, still) {
@@ -1032,6 +1035,8 @@ G.page("terminal", async function (P) {
     srcLine("gr-src", qt, G.L("Yahoo Finance, tramite yfinance. Grafici di tre mesi, una chiusura al giorno", "Yahoo Finance, via yfinance. Three-month charts, one close per day"));
     $("gr-tabs").innerHTML = groups.map((g) => '<button type="button" data-g="' + g.key + '" aria-pressed="' + (g.key === grKey) + '">' + esc(GROUP[g.key] || g.label) + "</button>").join("");
     G.seg($("gr-tabs"), true);
+    // le schede stanno tutte su una riga; se non ci stanno (telefono) diventano un menu a tendina accanto al titolo
+    G.adatta($("gr-tabs"));
     drawGroup();
     const keys = groups.map((g) => g.key), near = (d) => keys[keys.indexOf(grKey) + d];
     // la scheda accesa; quiet: l'indicatore lo sta già muovendo lo swipe
@@ -1347,6 +1352,8 @@ G.page("terminal", async function (P) {
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
+  G.adatta($("keys"), { gradi: ["compatta"], classe: "tendina-nav", invito: G.L("Vai a una sezione", "Go to a section"),
+    etichetta: G.L("Sezioni del Terminal", "Terminal sections") });
   const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "MACRO", F9: "SENTIMENT" };
   P.on(document, "keydown", (e) => {
     const t = e.target;

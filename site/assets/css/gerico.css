@@ -2160,3 +2160,56 @@ html.nuova .blk.fol { padding-bottom: var(--f21); }
 .paesi-l button[aria-pressed="true"]::after { content: "✓"; margin-left: auto; color: var(--palm); font-weight: 800; }
 .paesi-l button:focus-visible { outline-offset: -3px; }
 .paesi-none { margin: 16px 4px 0; color: var(--muted); }
+
+/* ---------- tutto ci sta, o è un menu a tendina (10 novembre) ----------
+   una fila di schede o di scorciatoie che non sta su una riga non scorre di lato: diventa un menu a tendina (G.adatta) */
+.in-tendina { display: none !important; }
+.tendina { position: relative; flex: 0 0 auto; max-width: 100%; }
+.tendina[hidden] { display: none; }
+.tendina select {
+  -webkit-appearance: none; appearance: none; display: block; max-width: 100%; min-height: 44px; margin: 0;
+  padding: 0 44px 0 16px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink);
+  font: inherit; font-size: 0.9375rem; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; cursor: pointer;
+}
+.tendina::after {
+  content: ""; position: absolute; top: 50%; right: 19px; width: 7px; height: 7px; margin-top: -6px;
+  border-right: 2px solid var(--ink-3); border-bottom: 2px solid var(--ink-3); transform: rotate(45deg); pointer-events: none;
+}
+.tendina select:focus-visible { outline-offset: 2px; }
+/* le scorciatoie del Terminal: il menu prende la riga intera, come la fila che sostituisce */
+.tendina-nav { margin: 2px 0 10px; }
+.tendina-nav select { width: 100%; border-radius: 999px; }
+.chips.compatta .fk { display: none; }
+@media (min-width: 1000px) { .chips.compatta { gap: 6px; } }
+
+/* «Prezzi e grafici»: una tabella vera (sottogriglia). Le colonne dei numeri sono larghe quanto il numero più lungo del
+   gruppo, il nome prende tutto il resto; il grafico dei tre mesi è più largo dove c'è spazio */
+@supports (grid-template-columns: subgrid) {
+  .q-tab { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto; column-gap: 16px; }
+  .q-tab > .q-head, .q-tab > .q-list, .q-tab .q, .q-tab .q-row { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; column-gap: normal; }
+  .q-tab .q > .collapse { grid-column: 1 / -1; }
+  .q-tab .q-sp { width: 120px; }
+  @media (max-width: 759px) { .q-tab .q-sp { width: 80px; } }
+  @media (max-width: 420px) { .q-tab { column-gap: 10px; } .q-tab .q-sp { width: 48px; } }
+  @media (max-width: 340px) { .q-tab { grid-template-columns: minmax(0, 1fr) auto auto; } }
+}
+/* la riga aperta: i livelli in una fila e le variazioni in un'altra, ognuna piena; sul telefono i quattro livelli due per due */
+.q-stats.q-n2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.q-stats.q-n3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.q-stats.q-n4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.q-stats + .q-stats { margin-top: 12px; }
+@media (max-width: 420px) { .q-stats.q-n4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---------- Terminal più morbido (10 novembre) ----------
+   le sezioni hanno lo sfondo della pagina: niente riquadri, le separa lo spazio e una riga sottile in cima. Il contenuto
+   sta allineato ai bordi della colonna (il pannello sborda di 6 px ai lati solo per far stare intero il contorno dello
+   stato attivo). Niente dentro una sezione può disegnarsi fuori dai suoi bordi (contain: paint): durante uno swipe, con
+   un widget largo o con un'animazione nessuna sezione passa davanti all'altra colonna */
+body.term .t-panel {
+  background: var(--t-bg); border-top: 1px solid var(--t-rule-2); border-radius: 0; contain: paint;
+  margin-inline: -6px; padding-left: 6px; padding-right: 6px;
+}
+body.term .gr-peek { background: var(--t-bg); }
+/* i riquadri dentro le sezioni, prima più scuri del pannello, ora un filo più chiari della pagina */
+body.term .t-detail, body.term .t-vals button { background: var(--t-panel); }
+@media (min-width: 1000px) { body.term .t-board { column-gap: 40px; } }

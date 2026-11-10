@@ -557,6 +557,73 @@
     box._fade();
   };
 
+  // ---------- tutto ci sta, o è un menu a tendina ----------
+  // Una fila di pulsanti (schede, scorciatoie) sta tutta su una riga: niente scorrimento di lato, niente nomi tagliati.
+  // Se non ci sta, si prova a stringerla (le classi di `gradi`, una dopo l'altra); se ancora non ci sta, al suo posto c'è
+  // un menu a tendina con le stesse scelte, e sceglierne una tocca il pulsante vero: il resto funziona come prima.
+  // `invito`: per le file che portano altrove (nessuna scelta accesa), la voce che il menu mostra prima di scegliere.
+  // Si rifà il conto quando cambia la larghezza (telefono girato) o quando compaiono e spariscono pulsanti.
+  const nomeDi = (b) => Array.from(b.childNodes)
+    .filter((n) => !(n.classList && (n.classList.contains("fk") || n.classList.contains("sr-only"))))
+    .map((n) => n.textContent).join("").replace(/\s+/g, " ").trim();
+  G.adatta = (box, opt) => {
+    if (!box) return;
+    if (box._adatta) { box._adatta(); return; }
+    opt = opt || {};
+    const gradi = opt.gradi || [];
+    const wrap = document.createElement("div");
+    wrap.className = "tendina" + (opt.classe ? " " + opt.classe : "");
+    wrap.hidden = true;
+    const sel = document.createElement("select");
+    sel.setAttribute("aria-label", opt.etichetta || box.getAttribute("aria-label") || "");
+    wrap.appendChild(sel);
+    box.after(wrap);
+    const scelte = () => Array.from(box.querySelectorAll(":scope > a, :scope > button")).filter((b) => !b.hidden);
+    const accesa = (b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true";
+    const riempi = () => {
+      const bs = scelte();
+      const html = (opt.invito ? '<option value="" disabled>' + G.esc(opt.invito) + "</option>" : "") +
+        bs.map((b, i) => '<option value="' + i + '">' + G.esc(nomeDi(b)) + "</option>").join("");
+      if (sel._html !== html) { sel.innerHTML = html; sel._html = html; }
+      const on = bs.findIndex(accesa);
+      sel.value = on >= 0 ? String(on) : "";
+    };
+    const prova = () => {
+      box.classList.remove("in-tendina", ...gradi);
+      const ci_sta = () => box.scrollWidth <= box.clientWidth + 1;
+      let ok = ci_sta();
+      for (let i = 0; !ok && i < gradi.length; i++) { box.classList.add(gradi[i]); ok = ci_sta(); }
+      if (!ok) box.classList.add("in-tendina");
+      wrap.hidden = ok;
+      if (!ok) riempi();
+      if (ok && box.classList.contains("seg")) G.seg(box, true);
+    };
+    sel.addEventListener("change", () => {
+      const b = scelte()[+sel.value];
+      if (opt.invito) sel.value = "";
+      if (b) b.click();
+    });
+    // cambia solo la scelta accesa (o arriva l'indicatore di G.seg): basta il menu; altrimenti (pulsanti nuovi, nascosti,
+    // nomi tradotti) si rifà anche il conto della larghezza
+    const indicatore = (m) => m.type === "childList" && Array.from(m.addedNodes).concat(Array.from(m.removedNodes))
+      .every((n) => n.nodeType === 1 && n.classList.contains("seg-ind"));
+    new MutationObserver((ms) => {
+      if (ms.every((m) => (m.type === "attributes" && m.attributeName !== "hidden") || indicatore(m))) { if (!wrap.hidden) riempi(); }
+      else prova();
+    }).observe(box, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ["hidden", "aria-pressed", "aria-current"] });
+    // la larghezza che conta è quella del contenitore: cambia con lo schermo, non con quello che si mostra dentro
+    let largo = box.parentElement.clientWidth;
+    if (window.ResizeObserver) {
+      new ResizeObserver(() => {
+        const w = box.parentElement.clientWidth;
+        if (w !== largo) { largo = w; requestAnimationFrame(prova); }
+      }).observe(box.parentElement);
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(prova));
+    box._adatta = prova;
+    prova();
+  };
+
   // intestazione: la riga sottile e il titolo piccolo compaiono quando il titolo grande passa sotto
   let topObs = null;
   G.watchTop = () => {
@@ -1340,7 +1407,8 @@
   // con anim si posa insieme alla pagina, con la stessa molla. Solo transform: niente ricalcolo della pagina a ogni passo
   G.segFollow = (box, p, d, anim) => {
     const ind = box && box.querySelector(":scope > .seg-ind");
-    if (!ind) return;
+    // le schede diventate un menu a tendina (G.adatta) non si vedono: lo swipe cambia il gruppo, il menu lo segue da sé
+    if (!ind || !box.offsetWidth) return;
     let g = ind._g;
     if (!g || g.d !== d || !g.at || g.at + 1500 < performance.now()) {
       const btns = Array.from(box.querySelectorAll(":scope > button, :scope > a"));

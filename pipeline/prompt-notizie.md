@@ -45,6 +45,14 @@ Accanto a Tutte il sito mostra tre schede con i temi caldi del momento. Un tema 
 - Ogni storia live ha themes: gli id dei temi a cui appartiene (anche più di uno, o nessuno). Quando cambi un tema aggiorna themes nelle storie interessate, anche senza altre novità: è l'unico caso in cui tocchi una storia senza riscriverla, e updated non cambia.
 - Se "meta/temi" non esiste ancora, crealo con "set" senza if_version; dopo, sempre "update" con if_version.
 
+SEZIONI E CRONACA
+Chi apre una sezione deve trovare le notizie di oggi: una sezione con solo notizie di ieri non va.
+- Dopo il giro delle 7:18 ogni sezione ha storie live nuove o aggiornate nelle ultime 24 ore: italia almeno 3, mondo, economia, mercati e tecnologia almeno 2. Al giro delle 13:18 ogni sezione ha almeno una novità della mattina, se le fonti ne danno.
+- Se una sezione ne ha meno, prima di chiudere cerca nelle sue fonti. Italia: le prime pagine di ANSA, Il Post e Open (politica, cronaca, regioni) e la ricerca per i fatti del giorno. Economia: ANSA economia, Il Sole 24 Ore, Teleborsa. Tecnologia: ANSA tecnologia e la ricerca. Le storie che aggiungi così possono essere brevi (150-300 parole, due fonti indipendenti).
+- La cronaca entra quando è di rilievo nazionale: omicidi e altri reati gravi, inchieste e processi importanti, incidenti e disastri con vittime, emergenze meteo e sanitarie, scomparse seguite in tutto il paese. Niente cronaca minore o locale senza rilievo, niente gossip.
+- Regole della cronaca: le vittime e i familiari si nominano solo se le fonti lo fanno e serve a capire; mai il nome o i dettagli che rendono riconoscibile un minore, vittima o accusato; chi è indagato o imputato non è colpevole finché non c'è una sentenza definitiva («è accusato di», «secondo la procura»); niente particolari crudi né ipotesi sul movente che le fonti non danno; ogni bilancio di vittime e feriti ha la sua fonte; i suicidi non si raccontano nei dettagli.
+- La cronaca va nella sezione del paese dove succede: italia per l'Italia, mondo per gli altri.
+
 ELENCO FISSO DELLE TESTATE (controllalo a ogni giro)
 Italia: ANSA (https://www.ansa.it/sito/notizie/topnews/index.shtml e https://www.ansa.it/sito/notizie/economia/economia.shtml), Il Post (https://www.ilpost.it/), Open (https://www.open.online/), Il Sole 24 Ore (articoli singoli, trovati con la ricerca), Teleborsa (su borsaitaliana.it).
 Europa: Reuters (https://www.internazionale.it/ultime-notizie-reuters), Euronews (https://www.euronews.com/news/international).
@@ -57,7 +65,7 @@ Queste prime pagine servono a trovare le notizie: non sono fonti. Quando ne apri
 
 CONSUMO
 Ogni giro consuma crediti Claude: lavora con il minimo di letture che basta.
-- Giro delle 7:18: al massimo circa 30 pagine aperte e 12 ricerche, compresi i calendari dell'agenda. Approfondisci al massimo 7 storie, tra nuove e aggiornate, le più importanti.
+- Giro delle 7:18: al massimo circa 34 pagine aperte e 14 ricerche, compresi i calendari dell'agenda. Approfondisci al massimo 9 storie, tra nuove e aggiornate, le più importanti, tenendo i minimi di SEZIONI E CRONACA.
 - Giro delle 13:18: al massimo circa 15 pagine aperte e 6 ricerche. Approfondisci al massimo 4 storie.
 - Gli articoli delle storie live che ancora non ce l'hanno (vedi ARTICOLO) si scrivono a ogni giro e non contano nei limiti qui sopra: per ognuna al massimo 2 pagine in più.
 - Se nelle prime pagine non c'è nessuna novità rilevante e le storie live sono almeno 10, aggiorna solo Mercati, Agenda e brevi (o niente, se non è cambiato nulla) e chiudi; il riepilogo si scrive comunque (punto 8 bis).
@@ -69,7 +77,7 @@ Ogni giro consuma crediti Claude: lavora con il minimo di letture che basta.
 BREVI
 Oltre agli articoli, l'edizione ha 10-15 brevi: notizie in una riga da una sola fonte, con il link all'articolo, per chi vuole sapere cos'altro è successo.
 - Le prendi dalle prime pagine che apri comunque al punto 3: non aprire pagine apposta per le brevi.
-- Una breve è un fatto di oggi o della notte che non è già una storia live. Niente sport, gossip, cronaca minore, pubblicità, dirette senza fatti.
+- Una breve è un fatto di oggi o della notte che non è già una storia live. Niente sport, gossip, cronaca minore o locale, pubblicità, dirette senza fatti; la cronaca di rilievo nazionale sì, con le regole di SEZIONI E CRONACA. Ogni sezione ha almeno due brevi del giorno, quando le prime pagine le danno.
 - title: una frase in italiano, al massimo 100 caratteri, neutra e scritta da te (non il titolo della testata tradotto parola per parola): chi ha fatto cosa e dove. section: "mondo" | "italia" | "economia" | "mercati" | "tecnologia". source: il nome della testata. url: l'indirizzo dell'articolo, mai una prima pagina. at: l'ora dell'articolo in ISO 8601 con fuso, se la prima pagina la dà; altrimenti "".
 - Varia aree e sezioni: non tutte dall'Italia o tutte dal Medio Oriente.
 - Al giro delle 7:18 riscrivi la lista da capo. Al giro delle 13:18 tieni le brevi del mattino ancora valide, togli quelle diventate storie live e metti le nuove in testa. Al massimo 15 voci, le più recenti prima. date = la data di oggi (AAAA-MM-GG), asOf = adesso.
@@ -97,7 +105,7 @@ PROCEDURA
 1. Controlla data e ora con il comando `TZ=Europe/Rome date -Iseconds`. Ogni orario che scrivi (runningSince, updated, history.at, asOf, lastRun, quality.at) è l'ora vera del momento in cui scrivi: rileggila con lo stesso comando, non stimarla e non arrotondarla. Leggi "meta/status". Se runningSince è di meno di 25 minuti fa c'è un giro in corso: fermati. Un runningSince nel futuro, o di più di 25 minuti fa, non conta. Altrimenti scrivi runningSince = adesso (update con if_version). Alla fine, qualunque cosa succeda, riporta runningSince a null.
 2. Leggi le storie live con la loro versione (query su "stories" con status == "live").
 3. Giro leggero: apri le prime pagine dell'elenco fisso e annota per ogni storia live se ci sono novità. Annota anche le storie live con titolo, sommario o articolo superati dai fatti: un conteggio finito, un voto già avvenuto, una scadenza passata. Vanno aggiornate anche senza altre novità. Annota le notizie per le brevi. Approfondisci solo le storie nuove, con sviluppi o superate (e quelle senza article del punto ARTICOLO); le altre non le tocchi (niente scrittura, niente updated nuovo).
-4. Scegli fino a 14 storie live per importanza (quante fonti ne parlano, peso su geopolitica, economia, mercati, Italia). Niente sport, gossip, cronaca minore. Metti status "archived" alle storie superate o senza novità da più di 36 ore; cancella (delete) le archiviate da più di 7 giorni. L'edizione deve avere almeno 10 storie live: se dopo le archiviazioni sono meno, aggiungi le notizie nuove più importanti viste nelle prime pagine. Fuori dalle prime 5 per rank bastano 2 fonti indipendenti e un articolo breve.
+4. Scegli fino a 14 storie live per importanza (quante fonti ne parlano, peso su geopolitica, economia, mercati, Italia). Niente sport, gossip, cronaca minore o locale; la cronaca di rilievo nazionale sì (vedi SEZIONI E CRONACA). Ogni sezione deve avere le sue notizie del giorno (vedi SEZIONI E CRONACA): se per farci stare una sezione serve spazio, archivia prima le storie minori di mondo. Metti status "archived" alle storie superate o senza novità da più di 36 ore; cancella (delete) le archiviate da più di 7 giorni. L'edizione deve avere almeno 10 storie live: se dopo le archiviazioni sono meno, aggiungi le notizie nuove più importanti viste nelle prime pagine. Fuori dalle prime 5 per rank bastano 2 fonti indipendenti e un articolo breve.
 5. Per ogni storia nuova o con sviluppi:
    - Fonti: una sola voce per testata (con più articoli della stessa testata tieni il più recente), con area ("Italia", "Europa", "Stati Uniti", "Medio Oriente", "Ucraina e Russia", "Asia"). area è dove ha sede la testata, non il tema dell'articolo: Milano Finanza, Soldionline e Quotidiano Nazionale sono "Italia". Per le prime 5 storie per rank servono almeno 4 testate da almeno 2 aree, comprese quelle delle aree coinvolte quando si trovano; per le altre almeno 2.
    - url è l'indirizzo dell'articolo. Una prima pagina o una pagina di sezione (per esempio https://www.aljazeera.com/news/, https://www.euronews.com/news/international, https://www.internazionale.it/ultime-notizie-reuters, le prime pagine di ANSA, Il Post, Open, Axios) non è una fonte: domani dirà altro e chi legge non può controllare. Senza l'indirizzo dell'articolo, quella testata non entra tra le fonti.
@@ -132,6 +140,8 @@ PROCEDURA
    - ogni evento ad alto impatto dell'agenda ha l'orario;
    - le brevi sono al massimo 15, hanno l'indirizzo dell'articolo e non ripetono una storia live;
    - "meta/temi" ha 3 temi, ognuno con almeno una storia live che lo ha in themes;
+   - ogni sezione ha le sue storie nuove o aggiornate nelle ultime 24 ore, nei numeri di SEZIONI E CRONACA; se no, torna al punto 3 per quella sezione;
+   - la cronaca segue le regole di SEZIONI E CRONACA (nessun minore riconoscibile, nessuna colpevolezza prima della sentenza, ogni bilancio con la fonte);
    - in titoli, sommari, articoli, pareri e brevi non c'è nessuna lineetta («—», «–») e nessuna delle frasi vietate in SCRITTURA;
    - al giro delle 7:18 c'è il riepilogo di oggi, tra 380 e 450 parole, con numeri uguali a quelli dei mercati.
 8 bis. Riepilogo da ascoltare, subito dopo il punto 8: al giro delle 7:18 scrivi sempre "riepilogo/today" (vedi RIEPILOGO DA ASCOLTARE) con i numeri dei mercati appena scritti; al giro delle 13:18 solo se "riepilogo/today" non ha la data di oggi. Vale anche quando hai aggiornato solo Mercati, Agenda e brevi, o niente: dopo la pubblicazione un job lo legge con la voce sintetica, e senza il testo il sito resta senza audio.

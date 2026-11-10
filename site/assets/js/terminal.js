@@ -1175,6 +1175,116 @@ G.page("terminal", async function (P) {
       '<span class="sec-b">' + ext(f.url, f.company + ": " + f.what) + "<small>" + esc(f.form) + "</small></span></li>").join("") + "</ol>"
       : '<p class="t-na">' + G.L("Nessun documento negli ultimi giorni.", "No filings in recent days.") + "</p>";
   }
+  // ---------- trimestrali e cedole delle società della mappa (Yahoo Finance, dal job «Dati del Terminal») ----------
+  // Trimestrali: i conti usciti negli ultimi giorni, con lo scarto dalle attese, poi i prossimi giorno per giorno (la
+  // settimana che viene aperta, il resto in una tendina). Cedole: i prossimi stacchi. La scheda scelta resta per la
+  // visita dopo
+  let so = null, soKey = G.ls.get("gerico.soTab", "utili") === "cedole" ? "cedole" : "utili";
+  // le valute con il loro simbolo (CUR, sopra, è quello dei titoli dentro gli indici)
+  const fin = (v) => typeof v === "number" && isFinite(v);
+  const money = (v, cur) => G.num(v, Math.abs(v) >= 1000 ? 0 : Math.abs(v) >= 100 ? 1 : 2) + (cur ? " " + (CUR[cur] || cur) : "");
+  const bigMoney = (v, cur) => (v >= 1e9 ? G.num(v / 1e9, v >= 1e11 ? 0 : 1) + G.L(" mld", " bn") : G.num(v / 1e6, 0) + G.L(" mln", " m")) + (cur ? " " + (CUR[cur] || cur) : "");
+  const isDay = (s) => typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s);
+  const addDays = (key, n) => new Date(Date.parse(key + "T12:00:00Z") + n * 864e5).toISOString().slice(0, 10);
+  const dayLabel = (d, today) => (d === today ? G.L("Oggi", "Today") : d === addDays(today, 1) ? G.L("Domani", "Tomorrow")
+    : d === addDays(today, -1) ? G.L("Ieri", "Yesterday") : G.cap(G.weekday(d + "T12:00:00Z")) + " " + G.dayOnly(d));
+  // dentro una riga: «ieri», «sabato 7 nov» (in inglese i giorni restano con la maiuscola)
+  const inLine = (s) => (!s || (G.en && !/^(Today|Tomorrow|Yesterday)$/.test(s)) ? s : s.charAt(0).toLowerCase() + s.slice(1));
+  // le classi di azioni non servono qui: Alphabet, non Alphabet A; Petrobras, non Petrobras ON
+  const coName = (n) => String(n || "").replace(/\s+(A|B|C|ON|PN|PNA|PNB)$/, "");
+  const WHEN = (w) => (w === "prima" ? G.L("prima dell'apertura", "before the open") : w === "dopo" ? G.L("dopo la chiusura", "after the close")
+    : /^\d{2}:\d{2}$/.test(w || "") ? G.L("alle ", "at ") + w.replace(/^0/, "") : "");
+  const soNext = (v) => {
+    const sub = [v.index, v.period, WHEN(v.when), v.stima ? G.L("data stimata", "estimated date") : ""].filter(Boolean);
+    const rev = fin(v.rev) && v.rev > 0 ? G.L("ricavi ", "revenue ") + bigMoney(v.rev, v.cur) : "";
+    return '<li><span class="so-n">' + esc(coName(v.name)) + "<small>" + sub.map(esc).join(" · ") + '</small></span><span class="so-v"><span class="sr-only">' +
+      G.L("utile per azione atteso: ", "expected earnings per share: ") + "</span>" + (fin(v.eps) ? esc(money(v.eps, v.cur)) : "—") + (rev ? "<small>" + esc(rev) + "</small>" : "") + "</span></li>";
+  };
+  const soOut = (v, today) => {
+    const tone = fin(v.surprise) ? (v.surprise > 0 ? " t-up" : v.surprise < 0 ? " t-down" : "") : "";
+    const when = inLine(dayLabel(v.date, today)) + (/^\d{2}:\d{2}$/.test(v.when || "") ? G.L(" alle ", " at ") + v.when.replace(/^0/, "") : "");
+    const vs = money(v.actual, v.cur) + (fin(v.eps) ? G.L(" (attesi ", " (expected ") + money(v.eps, "") + ")" : "");
+    return '<li><span class="so-n">' + esc(coName(v.name)) + "<small>" + esc([v.index, when].filter(Boolean).join(" · ")) + '</small></span><span class="so-v' + tone + '">' +
+      (fin(v.surprise) ? '<span class="sr-only">' + G.L("rispetto alle attese: ", "against expectations: ") + "</span>" + esc(G.signed(v.surprise, 1) + "%") : "") +
+      "<small>" + esc(vs) + "</small></span></li>";
+  };
+  const soDiv = (v) => '<li><span class="so-n">' + esc(coName(v.name)) + "<small>" + esc(v.index || "") + '</small></span><span class="so-v so-pay">' +
+    (isDay(v.pay) ? '<span class="sr-only">' + G.L("pagamento il ", "paid on ") + "</span>" + esc(G.dayOnly(v.pay)) : "") + "</span></li>";
+  // una lista con il giorno sopra ogni gruppo
+  const byDay = (items, row, today) => {
+    let last = "";
+    return '<ol class="t-agenda t-soc">' + items.map((v) => {
+      const day = v.date !== last ? '<li class="t-day">' + esc(dayLabel(v.date, today)) + "</li>" : "";
+      last = v.date;
+      return day + row(v);
+    }).join("") + "</ol>";
+  };
+  // una colonna: le trimestrali (con i conti usciti da poco sopra) o le cedole. Aperti i primi giorni, finché fanno una
+  // decina di righe (un giorno non si spezza); gli altri nella tendina, che resta come l'ha lasciata chi legge
+  function soColumn(key, list, out, today) {
+    const box = key === "utili" ? "so-u" : "so-c", row = key === "utili" ? soNext : soDiv;
+    const open = !!document.querySelector("#" + box + " .so-later[open]");
+    let cut = list.length;
+    for (let i = 10; i < list.length; i++) if (list[i].date !== list[i - 1].date) { cut = i; break; }
+    const near = list.slice(0, cut), far = list.slice(cut);
+    // sul computer le due colonne stanno affiancate e hanno il loro titolo; sul telefono le sceglie l'interruttore
+    let html = '<h3 class="so-colh">' + (key === "utili" ? G.L("Trimestrali", "Earnings") : G.L("Cedole", "Dividends")) + "</h3>";
+    if (key === "utili" && out.length) {
+      html += '<h3 class="so-h">' + G.L("Usciti da poco", "Just reported") + '</h3><ol class="t-agenda t-soc">' + out.map((v) => soOut(v, today)).join("") + "</ol>";
+    }
+    if (list.length) {
+      if (key === "utili" && out.length) html += '<h3 class="so-h">' + G.L("In arrivo", "Coming up") + "</h3>";
+      html += '<p class="so-head" aria-hidden="true"><span>' + G.L("Società", "Company") + "</span><span>" +
+        (key === "utili" ? G.L("Utile per azione atteso", "Expected EPS") : G.L("Pagamento", "Payment")) + "</span></p>";
+      if (near.length) html += byDay(near, row, today);
+      if (far.length) {
+        html += '<details class="t-ff-week so-later"' + (open ? " open" : "") + "><summary>" + G.L("Dal ", "From ") + esc(G.dayOnly(far[0].date)) +
+          G.L(" al ", " to ") + esc(G.dayOnly(far[far.length - 1].date)) + " (" + far.length + ")</summary>" + byDay(far, row, today) + "</details>";
+      }
+    } else {
+      html += '<p class="t-na">' + (key === "utili" ? G.L("Nessuna trimestrale nelle prossime settimane tra le società seguite.", "No earnings reports in the coming weeks among the companies followed.")
+        : G.L("Nessuno stacco di cedola nelle prossime settimane tra le società seguite.", "No ex-dividend dates in the coming weeks among the companies followed.")) + "</p>";
+    }
+    html += '<p class="t-note">' + (key === "utili"
+      ? G.L("Tutte le società del Ftse Mib e le più grandi delle altre Borse della mappa. Utile per azione atteso: la media delle stime degli analisti, nella valuta dei conti. Le date possono cambiare: fa fede il calendario della società.",
+        "All FTSE MIB companies and the largest ones on the other markets of the map. Expected EPS: the average of analysts' estimates, in the currency of the accounts. Dates can change: the company's own calendar is what counts.")
+      : G.L("Lo stacco è il giorno da cui chi compra l'azione non ha più diritto alla cedola: di solito quel giorno il prezzo scende di circa quanto vale la cedola.",
+        "The ex-dividend date is the day from which a buyer of the share no longer gets the dividend: on that day the price usually falls by about the dividend's value.")) + "</p>";
+    $(box).innerHTML = html;
+  }
+  function renderSoc(d) {
+    if (d !== undefined) so = d;
+    const today = G.dayKey(new Date());
+    const all = so && Array.isArray(so.items) ? so.items.filter((v) => v && typeof v === "object" && (v.kind === "utili" || v.kind === "cedola") &&
+      isDay(v.date) && typeof v.name === "string" && v.name) : [];
+    const byDate = (a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
+    const out = all.filter((v) => v.kind === "utili" && fin(v.actual) && v.date >= addDays(today, -3) && v.date <= today).sort((a, b) => byDate(b, a));
+    const next = all.filter((v) => v.kind === "utili" && !fin(v.actual) && v.date >= today).sort(byDate);
+    const divs = all.filter((v) => v.kind === "cedola" && v.date >= today).sort(byDate);
+    if (!out.length && !next.length && !divs.length) return hide("p-societa", "TRIMESTRALI");
+    $("p-societa").hidden = false;
+    srcLine("so-src", so, G.L("Yahoo Finance, le società della mappa", "Yahoo Finance, the companies on the map"));
+    soColumn("utili", next, out, today);
+    soColumn("cedole", divs, [], today);
+  }
+  function setSo(k, instant) {
+    soKey = k === "cedole" ? "cedole" : "utili";
+    G.ls.set("gerico.soTab", soKey);
+    $("so").dataset.tab = soKey;
+    $("so-seg").querySelectorAll("[data-so]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.so === soKey)));
+    G.seg($("so-seg"), instant);
+    const col = $(soKey === "utili" ? "so-u" : "so-c");
+    if (!instant && !G.reduced() && col.animate && col.offsetParent) col.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180, easing: "ease-out" });
+  }
+  $("so").dataset.tab = soKey;
+  $("so-seg").querySelectorAll("[data-so]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.so === soKey)));
+  $("so-seg").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-so]");
+    if (b && b.dataset.so !== soKey) setSo(b.dataset.so);
+  });
+  // la data di oggi cambia anche a pagina aperta: le etichette Oggi e Domani si rifanno ogni dieci minuti
+  P.every(() => { if (so && !$("p-societa").hidden) renderSoc(); }, 600000);
+
   // le righe che si aprono, in tutti i pannelli nuovi
   P.on(document, "click", (e) => {
     const b = e.target.closest(".q-row, .s-row");
@@ -1189,6 +1299,9 @@ G.page("terminal", async function (P) {
   const PANELS = { MAPPA: "map-panel", TASSI: "p-tassi", AGENDA: "p-agenda", CALENDARIO: "p-agenda", FOREX: "p-agenda", "FOREX FACTORY": "p-agenda", FF: "p-agenda", NOTIZIE: "p-notizie",
     GRAFICI: "p-grafici", PREZZI: "p-grafici", MACRO: "p-macro", FRED: "p-macro", SENTIMENT: "p-sentiment", FINBERT: "p-sentiment", TONO: "p-sentiment", SEC: "p-sec", EDGAR: "p-sec", TITOLI: "p-titoli", IDEE: "p-titoli",
     MAP: "map-panel", RATES: "p-tassi", YIELDS: "p-tassi", CALENDAR: "p-agenda", NEWS: "p-notizie", CHARTS: "p-grafici", PRICES: "p-grafici", TONE: "p-sentiment", STOCKS: "p-titoli" };
+  // trimestrali e cedole: lo stesso pannello, con la scheda giusta
+  const SO_CMD = { TRIMESTRALI: "utili", UTILI: "utili", CONTI: "utili", "SOCIETÀ": "utili", SOCIETA: "utili", EARNINGS: "utili", COMPANIES: "utili",
+    CEDOLE: "cedole", CEDOLA: "cedole", DIVIDENDI: "cedole", DIVIDENDO: "cedole", DIVIDENDS: "cedole", DIVIDEND: "cedole" };
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   function go(id) {
     const el = $(id);
@@ -1218,6 +1331,7 @@ G.page("terminal", async function (P) {
     if (c === "MAPPA EUROPA" || c === "EUROPA" || c === "EUROPE MAP" || c === "MAP EUROPE" || c === "EUROPE") { setView("europa"); go("map-panel"); }
     else if (c === "MAPPA MONDO" || c === "MONDO" || c === "WORLD MAP" || c === "MAP WORLD" || c === "WORLD") { setView("mondo"); go("map-panel"); }
     else if (GROUP_CMD[c] && !$("p-grafici").hidden) openGroup(GROUP_CMD[c]);
+    else if (SO_CMD[c] && !$("p-societa").hidden) { if (SO_CMD[c] !== soKey) setSo(SO_CMD[c], true); go("p-societa"); }
     else if (PANELS[c] && $(PANELS[c]) && !$(PANELS[c]).hidden) go(PANELS[c]);
     else if (c === "TASSI" && !$("p-grafici").hidden) openGroup("tassi");
     else {
@@ -1228,8 +1342,8 @@ G.page("terminal", async function (P) {
         go("p-grafici");
       } else ok = false;
     }
-    $("cmd-help").textContent = ok ? "" : G.L("Non trovato. Prova: mappa europa, valute, agenda, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.",
-      "Not found. Try: europe map, currencies, calendar, charts, macro, sentiment, sec, or a symbol such as eurusd, gold, bitcoin.");
+    $("cmd-help").textContent = ok ? "" : G.L("Non trovato. Prova: mappa europa, valute, agenda, trimestrali, cedole, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.",
+      "Not found. Try: europe map, currencies, calendar, earnings, dividends, charts, macro, sentiment, sec, or a symbol such as eurusd, gold, bitcoin.");
   }
   $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
@@ -1349,14 +1463,14 @@ G.page("terminal", async function (P) {
   // arrivando da un'altra pagina, i pannelli sotto (grafici, macro, notizie della SEC) si disegnano a passaggio finito:
   // mentre le pagine si spingono il telefono non ha altro da fare
   const settled = window.gericoVT && window.gericoVT.finished ? window.gericoVT.finished.catch(() => {}) : Promise.resolve();
-  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico"), settled]).then(([qt, mc, se, sc, ti, th]) => {
+  Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico"), G.load("societari"), settled]).then(([qt, mc, se, sc, ti, th, soc]) => {
     if (G.titoliFresh(ti)) {
       $("ti").innerHTML = G.titoliHTML(ti, th);
       $("p-titoli").hidden = false;
       const chip = document.querySelector('[data-cmd="TITOLI"]');
       if (chip) chip.hidden = false;
     }
-    [[renderQuotes, qt], [renderMacro, mc], [renderSentiment, se], [renderSec, sc]].forEach(([fn, d]) => {
+    [[renderQuotes, qt], [renderMacro, mc], [renderSentiment, se], [renderSec, sc], [renderSoc, soc]].forEach(([fn, d]) => {
       try { fn(d); } catch (e) { /* un pannello rotto non ferma gli altri */ }
     });
   });

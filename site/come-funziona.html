@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-13">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261110-1">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -48,7 +48,7 @@
 <div class="prose" data-only="it">
 <h1>Come funziona GERICO</h1>
 <p>Ogni giorno GERICO legge testate italiane e straniere, agenzie e fonti ufficiali e, per ogni notizia importante, scrive un articolo suo. Non è il riassunto di un giornale: è costruito su tutte le fonti lette, con le posizioni di tutte le parti in causa e, per ogni dato, chi lo dice.</p>
-<p>Gli articoli sono firmati R.P., le iniziali di chi cura GERICO, e sono scritti con l'intelligenza artificiale: un modello linguistico, Claude di Anthropic, legge le fonti e scrive seguendo le regole qui sotto. Lo dice la riga in fondo a ogni pagina, e le fonti di ogni articolo sono in fondo all'articolo.</p>
+<p>Gli articoli escono «a cura di R.P.», le iniziali di chi cura GERICO, e sono scritti con l'intelligenza artificiale: un modello linguistico, Claude di Anthropic, legge le fonti e scrive seguendo le regole qui sotto. Lo dice la riga in fondo a ogni pagina, e le fonti di ogni articolo sono in fondo all'articolo.</p>
 <p>In prima pagina, accanto a Tutte, tre schede seguono i temi caldi del momento, come una guerra o un'elezione. Li sceglie la redazione e restano finché la vicenda è in corso, anche per settimane.</p>
 <p>L'immagine sopra ogni articolo è una mappa del luogo della notizia, disegnata da GERICO: il paese in chiaro, quelli coinvolti in azzurro, il punto preciso in rosso quando c'è. I confini vengono da Natural Earth, dati di pubblico dominio. Non usiamo foto di agenzia: hanno diritti d'autore, e caricarle da un altro sito farebbe sapere a terzi chi legge GERICO.</p>
 
@@ -76,7 +76,7 @@
 <li>Ogni mattina verso le 7:30: notizie, brevi, mercati e agenda del giorno.</li>
 <li>Ogni giorno verso le 13:30: le novità della mattina, le brevi nuove e i dati di metà giornata.</li>
 <li>Nei giorni feriali verso le 18:20: le chiusure delle Borse europee.</li>
-<li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche, tono delle notizie e calendario di Forex Factory nel Terminal.</li>
+<li>Nei giorni feriali quattro volte, il sabato una: prezzi e grafici, serie economiche, tono delle notizie, calendario di Forex Factory, trimestrali e cedole nel Terminal.</li>
 <li>Una volta al mese: i pesi della mappa del Terminal.</li>
 </ul>
 <p>Le brevi sono notizie da una sola fonte, con il link all'articolo: servono a sapere cos'altro è successo. GERICO non le ha ancora verificate su altre fonti.</p>
@@ -93,6 +93,7 @@
 <li><strong>Macro</strong>: tassi, inflazione e lavoro dalla banca dati FRED della Fed di St. Louis. L'inflazione è la variazione sullo stesso mese dell'anno prima.</li>
 <li><strong>Tono delle notizie</strong>: i titoli di Yahoo Finance degli ultimi tre giorni, letti da FinBERT, un modello per testi finanziari in inglese. Dice se un titolo suona positivo, neutro o negativo per i mercati; sbaglia spesso con ironia e domande e non dice dove andrà un prezzo.</li>
 <li><strong>Calendario economico</strong>: oltre all'agenda di GERICO, il calendario della settimana di Forex Factory, con gli orari in ora italiana: oggi gli eventi ad alto e medio impatto e le festività, poi quelli ad alto impatto dei giorni dopo. In prima pagina, in fondo al riquadro dei mercati, c'è il prossimo dato ad alto impatto.</li>
+<li><strong>Trimestrali e cedole</strong>: per tutte le società del Ftse Mib e le più grandi delle altre Borse della mappa, da Yahoo Finance: quando escono i conti (prima dell'apertura o dopo la chiusura, quando si sa), l'utile per azione che si aspettano gli analisti e, per i conti appena usciti, quello vero e lo scarto dalle attese; poi gli stacchi delle cedole delle prossime settimane. Le date che la società non ha ancora confermato sono segnate come stimate.</li>
 <li><strong>Documenti SEC</strong>: le comunicazioni ufficiali (8-K, 10-Q, 10-K) di un gruppo di grandi società Usa, dalla banca dati EDGAR. Il pannello compare solo quando la SEC risponde ai server di GitHub.</li>
 </ul>
 
@@ -110,7 +111,7 @@
 <div class="prose" data-only="en">
 <h1>How GERICO works</h1>
 <p>Every day GERICO reads Italian and foreign news outlets, news agencies and official sources and, for every important story, writes an article of its own. It is not a summary of one newspaper: it is built on all the sources read, with the positions of every party involved and, for each piece of data, who says it.</p>
-<p>Articles are signed R.P., the initials of the person who runs GERICO, and are written with artificial intelligence: a language model, Anthropic's Claude, reads the sources and writes by the rules below. The line at the bottom of every page says so, and the sources of each article are at the end of the article.</p>
+<p>Articles appear «edited by R.P.», the initials of the person who runs GERICO, and are written with artificial intelligence: a language model, Anthropic's Claude, reads the sources and writes by the rules below. The line at the bottom of every page says so, and the sources of each article are at the end of the article.</p>
 <p>On the front page, next to All, three tabs follow the hot topics of the moment, such as a war or an election. The newsroom picks them and they stay while the story goes on, even for weeks.</p>
 <p>The image above each article is a map of where the story happens, drawn by GERICO: the country in light colour, the countries involved in blue, the exact place in red when there is one. The borders come from Natural Earth, public domain data. We do not use agency photos: they are copyrighted, and loading them from another site would tell third parties who reads GERICO.</p>
 
@@ -138,7 +139,7 @@
 <li>Every morning around 7:30 (Italian time): news, news in brief, markets and the day's calendar.</li>
 <li>Every day around 13:30: what happened during the morning, new items in brief and midday market data.</li>
 <li>On weekdays around 18:20: the close of European stock markets.</li>
-<li>Four times on weekdays and once on Saturdays: prices and charts, economic series, news tone and the Forex Factory calendar in the Terminal.</li>
+<li>Four times on weekdays and once on Saturdays: prices and charts, economic series, news tone, the Forex Factory calendar, earnings and dividends in the Terminal.</li>
 <li>Once a month: the weights of the Terminal map.</li>
 </ul>
 <p>News in brief comes from a single source, with a link to the article: it tells you what else happened. GERICO has not yet checked it against other sources.</p>
@@ -155,6 +156,7 @@
 <li><strong>Macro</strong>: rates, inflation and jobs from the St. Louis Fed's FRED database. Inflation is the change on the same month a year earlier.</li>
 <li><strong>News tone</strong>: Yahoo Finance headlines from the last three days, read by FinBERT, a model for financial texts in English. It says whether a headline sounds positive, neutral or negative for the markets; it often gets irony and questions wrong and does not say where a price will go.</li>
 <li><strong>Economic calendar</strong>: besides GERICO's calendar, the Forex Factory calendar for the week, in Italian time: today's high- and medium-impact events and holidays, then the high-impact events of the following days. On the front page, at the bottom of the markets box, is the next high-impact release.</li>
+<li><strong>Earnings and dividends</strong>: for all FTSE MIB companies and the largest ones on the other markets of the map, from Yahoo Finance: when results come out (before the open or after the close, when known), the earnings per share analysts expect and, for results just out, the actual figure and the gap from expectations; then the ex-dividend dates of the coming weeks. Dates the company has not yet confirmed are marked as estimated.</li>
 <li><strong>SEC filings</strong>: the official filings (8-K, 10-Q, 10-K) of a group of large US companies, from the EDGAR database. The panel appears only when the SEC responds to GitHub's servers.</li>
 </ul>
 
@@ -178,7 +180,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261109-13"></script>
-<script src="assets/js/info.js?v=20261109-13"></script>
+<script src="assets/js/common.js?v=20261110-1"></script>
+<script src="assets/js/info.js?v=20261110-1"></script>
 </body>
 </html>

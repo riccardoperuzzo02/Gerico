@@ -119,8 +119,8 @@ G.page("story", async function (P) {
       esc([G.secLabel(nx.section), G.srcCount(nx.sources)].filter(Boolean).join(" · ")) + "</span></a></nav>"
     : at >= 0 ? '<nav class="next" aria-label="' + G.L("Fine dell'edizione", "End of the edition") + '"><a href="index.html"><span class="next-l">' + G.L("Fine dell'edizione", "End of the edition") + '</span><span class="next-t">' + G.L("Torna alla prima pagina", "Back to the front page") + "</span></a></nav>" : "";
   // prima i fatti (l'articolo), poi cosa non si sa, poi il parere, dichiarato, e le fonti
-  // la firma: R.P. (che gli articoli li scrive l'intelligenza artificiale lo dice il piede della pagina)
-  const byline = '<p class="byline"><span class="by">' + esc(G.FIRMA) + "</span></p>";
+  // la firma: «A cura di R.P.» (che gli articoli li scrive l'intelligenza artificiale lo dice il piede della pagina)
+  const byline = '<p class="byline">' + esc(G.CURA) + ' <span class="by">' + esc(G.FIRMA) + "</span></p>";
   // l'immagine sotto il sommario, come nei quotidiani: la mappa del luogo della notizia
   const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true }) + byline + latest + (articleHTML || factsHTML);
   const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;

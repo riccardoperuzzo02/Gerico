@@ -19,7 +19,7 @@ on:
   # perché i push fatti con il token di GitHub non fanno partire altri workflow
   push:
     branches: [main]
-    paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/screener.py, scripts/titoli_storico.py, scripts/fin_requirements.txt]
+    paths: [site/data/edition.json, site/data/riepilogo.json, scripts/fin_data.py, scripts/audio.py, scripts/screener.py, scripts/titoli_storico.py, scripts/fin_requirements.txt, scripts/societari.py]
 
 permissions:
   contents: write
@@ -65,6 +65,10 @@ jobs:
         env:
           INDICI_SECONDI: "300"
         run: python scripts/indici.py site/data
+      - name: Trimestrali e cedole
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/societari.py site/data
       - name: Riepilogo audio
         env:
           # la voce di Gemini (livello gratuito dell'API); senza chiave, o se il servizio non risponde, legge Kokoro.
@@ -82,7 +86,7 @@ jobs:
         run: |
           git config user.name "GERICO"
           git config user.email "gerico@users.noreply.github.com"
-          for f in quotes macro sec sentiment audio calendario; do
+          for f in quotes macro sec sentiment audio calendario societari; do
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
           if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi

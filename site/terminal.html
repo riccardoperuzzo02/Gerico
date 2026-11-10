@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261109-13">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261110-1">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body class="term">
@@ -44,6 +44,7 @@
 <button type="button" data-cmd="NOTIZIE"><span class="fk">F7</span>Notizie</button>
 <button type="button" data-cmd="MACRO"><span class="fk">F8</span>Macro</button>
 <button type="button" data-cmd="SENTIMENT"><span class="fk">F9</span>Sentiment</button><button type="button" data-cmd="TITOLI" hidden>Titoli</button>
+<button type="button" data-cmd="TRIMESTRALI">Trimestrali</button>
 <button type="button" data-cmd="SEC">SEC</button>
 </div></nav>
 </header>
@@ -100,6 +101,7 @@
 <div class="tv" id="tv"></div></section>
 <section class="t-panel t-r" id="p-notizie" aria-labelledby="nw-h" tabindex="-1"><h2 id="nw-h">Notizie sui mercati</h2><div id="nw"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 <section class="t-panel t-r" id="p-sentiment" aria-labelledby="se-h" tabindex="-1"><h2 id="se-h">Tono delle notizie</h2><p class="t-src" id="se-src">&nbsp;</p><div id="se"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
+<section class="t-panel" id="p-societa" aria-labelledby="so-h" tabindex="-1"><div class="t-headrow"><h2 id="so-h">Trimestrali e cedole</h2><div class="seg seg-fill t-seg" id="so-seg" role="group" aria-label="Cosa mostrare"><button type="button" data-so="utili" aria-pressed="true">Trimestrali</button><button type="button" data-so="cedole" aria-pressed="false">Cedole</button></div></div><p class="t-src" id="so-src">&nbsp;</p><div class="so-cols" id="so" data-tab="utili"><div class="so-col" id="so-u"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div><div class="so-col" id="so-c"></div></div></section>
 <section class="t-panel t-r" id="p-titoli" aria-labelledby="ti-h" tabindex="-1" hidden><h2 id="ti-h">Titoli da seguire</h2><p class="t-src">Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.</p><div id="ti"></div></section>
 <section class="t-panel t-l" id="p-macro" aria-labelledby="mc-h" tabindex="-1"><h2 id="mc-h">Macro: Stati Uniti ed eurozona</h2><p class="t-src" id="mc-src">&nbsp;</p><div id="mc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
 <section class="t-panel t-r" id="p-sec" aria-labelledby="sc-h" tabindex="-1"><h2 id="sc-h">Documenti SEC</h2><p class="t-src" id="sc-src">&nbsp;</p><div id="sc"><div class="sk" aria-hidden="true"><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i><i class="sk-row"></i></div></div></section>
@@ -110,7 +112,7 @@
 </footer>
 
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
-<script src="assets/js/common.js?v=20261109-13"></script>
-<script src="assets/js/terminal.js?v=20261109-13"></script>
+<script src="assets/js/common.js?v=20261110-1"></script>
+<script src="assets/js/terminal.js?v=20261110-1"></script>
 </body>
 </html>

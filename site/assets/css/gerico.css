@@ -519,7 +519,12 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
   font-size: 0.9375rem; font-weight: 700; white-space: nowrap; cursor: pointer; scroll-snap-align: start;
 }
 .chips .fk { display: none; margin-right: 6px; font-size: 0.75rem; font-weight: 400; color: var(--t-ink-3); }
-@media (min-width: 1000px) { .chips .fk { display: inline; } }
+@media (min-width: 1000px) {
+  .chips .fk { display: inline; }
+  /* con «Trimestrali» le scorciatoie sono dieci: un po' più strette, così sul computer stanno tutte in una riga */
+  .chips { gap: 6px; }
+  .chips button { padding: 0 13px; }
+}
 
 .t-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; padding-top: 14px; }
 .t-cmd { display: none; flex: 0 1 380px; align-items: center; gap: 8px; }
@@ -1910,8 +1915,8 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
   .t-board > .t-l { grid-column: 1; }
   .t-board > .t-r { grid-column: 2; }
   .t-board.packed { grid-auto-rows: 4px; row-gap: 0; }
-  /* in fondo, larghi quanto la pagina: titoli, macro, SEC */
-  .t-board > #p-titoli, .t-board > #p-macro, .t-board > #p-sec { grid-column: 1 / -1; }
+  /* in fondo, larghi quanto la pagina: trimestrali e cedole, titoli, macro, SEC */
+  .t-board > #p-societa, .t-board > #p-titoli, .t-board > #p-macro, .t-board > #p-sec { grid-column: 1 / -1; }
   /* dentro un indice la mappa prende tutta la larghezza, gli altri pannelli continuano sotto; la macro va nella colonna
      larga, con tre serie per riga */
   .t-board.inside > #map-panel { grid-column: 1 / -1; }
@@ -1961,9 +1966,10 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 }
 .m-cap span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .m-cap svg { flex: none; opacity: 0.9; }
-/* la firma delle schede: R.P. */
+/* la firma delle schede: «A cura di R.P.», le iniziali in evidenza */
 .c-by { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: var(--f8, 8px); font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
 .c-desk { font-weight: 650; color: var(--ink-3); }
+.c-cura { font-weight: 400; color: var(--muted); }
 html.nuova .lead .c-by { margin-top: var(--f13); }
 /* apertura: l'immagine larga in cima alla scheda, da bordo a bordo */
 html.nuova .lead.has-img .media {
@@ -2069,3 +2075,33 @@ body.term a.skip, body.term a.skip:hover { background: #EEF2F8; color: #0A1428; 
 }
 /* i quadrati che escono dalla mappa quando cambia la vista (Mondo, Europa): sfumano, non spariscono di colpo */
 .t-leave { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+
+/* ========== trimestrali e cedole (10 novembre) ==========
+   Le società della mappa: la riga ha il nome con sotto Borsa e orario, a destra l'utile atteso (o il pagamento della
+   cedola), con sotto i ricavi attesi. I giorni come nell'agenda */
+.t-soc li { grid-template-columns: minmax(0, 1fr) auto; gap: 2px 14px; }
+.t-soc .so-n { min-width: 0; font-weight: 650; color: var(--t-ink); overflow-wrap: anywhere; }
+.t-soc .so-n small, .t-soc .so-v small { display: block; margin-top: 2px; font-size: 0.8125rem; font-weight: 400; color: var(--t-ink-3); }
+.t-soc .so-v { justify-self: end; text-align: right; font-weight: 700; white-space: nowrap; }
+.t-soc .so-v.t-up small, .t-soc .so-v.t-down small { color: var(--t-ink-3); }
+.t-soc .so-v.so-pay { font-size: 0.8125rem; font-weight: 400; color: var(--t-ink-2); }
+.so-head { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; font-size: 0.75rem; color: var(--t-ink-3); }
+.so-head + .t-soc > li:first-child { border-top-color: transparent; }
+.so-h { margin-top: 14px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--t-ink-3); }
+.so-h + .t-soc { margin-top: 2px; }
+/* telefono e tablet: una colonna alla volta, la sceglie l'interruttore; il titolo della colonna non serve */
+@media (max-width: 999px) {
+  .so-colh { display: none; }
+  .so-cols[data-tab="utili"] > #so-c, .so-cols[data-tab="cedole"] > #so-u { display: none; }
+}
+/* computer: il pannello è largo quanto la pagina e le due colonne stanno affiancate, ognuna con il suo titolo; ogni
+   riga su una linea sola (Borsa e orario accanto al nome, i ricavi prima dell'utile, che resta in colonna a destra) */
+@media (min-width: 1000px) {
+  #p-societa .t-seg { display: none; }
+  .so-cols { display: grid; grid-template-columns: minmax(0, 1.618fr) minmax(0, 1fr); gap: var(--f34, 34px); align-items: start; }
+  .so-colh { margin-top: 12px; font-size: 1rem; font-weight: 700; color: var(--t-ink); }
+  .so-colh + .so-h { margin-top: 8px; }
+  .t-soc .so-n small { display: inline; margin: 0 0 0 10px; }
+  .t-soc .so-v { display: flex; flex-direction: row-reverse; align-items: baseline; gap: 12px; }
+  .t-soc .so-v small { margin-top: 0; }
+}

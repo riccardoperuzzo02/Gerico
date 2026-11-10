@@ -134,7 +134,20 @@ def check_data(site):
         items = d.get("items") if isinstance(d, dict) else None
         need(isinstance(items, list) and items and all(isinstance(x, dict) and x.get("s") and isinstance(x.get("w"), (int, float)) for x in items),
              f"{name}: titoli senza simbolo o peso")
-    known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json", "audio.json"} | {n for n, _ in optional}
+    # trimestrali e cedole delle società della mappa (scripts/societari.py)
+    path = os.path.join(data, "societari.json")
+    if os.path.exists(path):
+        d = load(path)
+        items = d.get("items") if isinstance(d, dict) else None
+        need(isinstance(items, list), "societari.json: manca la lista items")
+        day = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+        for i, x in enumerate(items if isinstance(items, list) else []):
+            ok = (isinstance(x, dict) and x.get("kind") in ("utili", "cedola") and isinstance(x.get("date"), str) and day.match(x["date"])
+                  and all(isinstance(x.get(k), str) and x[k] for k in ("sym", "name", "code"))
+                  and all(isinstance(x[k], (int, float)) and not isinstance(x[k], bool) for k in ("eps", "lo", "hi", "rev", "actual", "surprise") if k in x)
+                  and all(isinstance(x[k], str) for k in ("when", "period", "cur", "index", "pay") if k in x))
+            need(ok, f"societari.json: la voce {i} non ha la forma giusta ({str(x)[:80]})")
+    known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json", "audio.json", "societari.json"} | {n for n, _ in optional}
     for path in glob.glob(os.path.join(data, "*.json")):
         if os.path.basename(path) not in known:
             load(path)

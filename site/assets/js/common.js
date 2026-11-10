@@ -88,6 +88,7 @@
     "Notizie sui mercati": "Market news", "Tono delle notizie": "News tone", "Titoli da seguire": "Stocks to watch",
     "Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.": "A price signal and a news item that could move them in the coming days.",
     "Macro: Stati Uniti ed eurozona": "Macro: United States and euro area", "Documenti SEC": "SEC filings",
+    "Trimestrali e cedole": "Earnings and dividends", "Trimestrali": "Earnings", "Cedole": "Dividends", "Cosa mostrare": "What to show",
     "Questa pagina non c'è.": "This page doesn't exist.", "Forse la storia è stata archiviata.": "The story may have been archived.",
     "Torna alla prima pagina": "Back to the front page", "Navigazione": "Navigation", "Ascolta": "Listen",
     // aree, paesi, temi
@@ -366,11 +367,12 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  // la firma di tutti gli articoli: R.P. Che sono scritti con l'intelligenza artificiale lo dice il piede di ogni pagina
+  // la firma di tutti gli articoli: «A cura di R.P.». Che sono scritti con l'intelligenza artificiale lo dice il piede di ogni pagina
   // (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
   G.FIRMA = "R.P.";
-  G.desk = () => G.FIRMA;
-  G.cardBy = () => '<p class="c-by"><span class="c-desk">' + G.esc(G.FIRMA) + "</span></p>";
+  G.CURA = G.L("A cura di", "Edited by");
+  G.desk = () => G.CURA + " " + G.FIRMA;
+  G.cardBy = () => '<p class="c-by"><span class="c-desk"><span class="c-cura">' + G.esc(G.CURA) + "</span> " + G.esc(G.FIRMA) + "</span></p>";
   // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
   // Solo file del sito (img/storie/...): niente immagini da altri siti
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';

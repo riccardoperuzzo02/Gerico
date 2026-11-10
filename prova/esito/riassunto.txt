@@ -1,0 +1,164 @@
+yfinance 1.8.0
+universo 186
+calendari: 185 letti, 0 errori, in 2 s
+   ITA ISP.MI Intesa Sanpaolo | utili ['2027-02-02'] eps 0.11667 ricavi 7342497560 | cedola 2026-11-23 pag. None
+   ITA ENEL.MI Enel | utili ['2026-11-12'] eps 0.17796 ricavi 21979278560 | cedola 2026-07-20 pag. None
+   ITA ENI.MI Eni | utili ['2026-10-23'] eps 0.83946 ricavi 28101776690 | cedola 2026-11-23 pag. None
+   ITA G.MI Generali | utili ['2026-11-13'] eps None ricavi None | cedola 2026-05-18 pag. None
+   ITA BPE.MI BPER Banca | utili ['2027-02-04'] eps None ricavi 1980807000 | cedola 2026-11-23 pag. None
+   ITA PST.MI Poste italiane | utili ['2026-11-12'] eps 0.48167 ricavi 3326967010 | cedola 2026-06-22 pag. None
+   ITA TRN.MI Terna | utili ['2026-11-12'] eps 0.13864 ricavi 1049213680 | cedola 2026-06-22 pag. None
+   ITA SRG.MI Snam | utili ['2026-11-11'] eps 0.10762 ricavi 995467370 | cedola 2026-06-22 pag. None
+   ITA UNI.MI Unipol | utili ['2026-11-13'] eps None ricavi None | cedola 2026-05-18 pag. None
+   ITA TIT.MI Telecom Italia | utili ['2026-11-10'] eps None ricavi 3566738000 | cedola 2021-06-21 pag. None
+   ITA TEN.MI Tenaris | utili ['2026-11-04'] eps 0.55506 ricavi 3337381420 | cedola 2026-11-23 pag. None
+   ITA SPM.MI Saipem | utili ['2026-11-18'] eps 0.03585 ricavi 3927532930 | cedola 2026-05-18 pag. None
+   ITA BMED.MI Banca Mediolanum | utili ['2026-11-10'] eps 0.37272 ricavi 754000000 | cedola 2026-04-20 pag. None
+   ITA REC.MI Recordati | utili ['2026-11-10'] eps 0.79 ricavi 674400000 | cedola 2026-05-18 pag. None
+   ITA A2A.MI A2A | utili ['2026-11-10'] eps None ricavi 3771000000 | cedola 2026-05-18 pag. None
+   ITA INW.MI INWIT | utili ['2026-11-11'] eps 0.09678 ricavi 268549460 | cedola 2026-05-18 pag. None
+   ITA AVIO.MI Avio | utili ['2026-11-11'] eps None ricavi 133800000 | cedola 2026-05-18 pag. None
+   ITA HER.MI Hera | utili ['2026-11-11'] eps None ricavi 2994000000 | cedola 2026-06-22 pag. None
+   USA AAPL Apple | utili ['2027-01-28'] eps 2.91405 ricavi 156430011230 | cedola 2026-11-12 pag. 2026-11-16
+   USA NVDA Nvidia | utili ['2026-11-17'] eps 2.47461 ricavi 109006829530 | cedola 2026-09-10 pag. 2026-10-01
+   USA MSFT Microsoft | utili ['2027-01-27'] eps 4.85575 ricavi 96691687890 | cedola 2026-11-19 pag. 2026-12-10
+   USA GOOGL Alphabet A | utili ['2026-10-28'] eps 3.26702 ricavi 142401246490 | cedola 2026-12-07 pag. 2026-12-14
+   USA GOOG Alphabet C | utili ['2026-10-28'] eps 3.26702 ricavi 142401246490 | cedola 2026-12-07 pag. 2026-12-14
+   USA LLY Eli Lilly | utili ['2026-10-29'] eps 11.22773 ricavi 24761058230 | cedola 2026-11-13 pag. 2026-12-10
+   USA V Visa | utili ['2027-01-26'] eps 3.62965 ricavi 12204669400 | cedola 2026-11-10 pag. 2026-12-01
+   USA JNJ Johnson & Johnson | utili ['2027-01-26'] eps 2.91505 ricavi 26419759280 | cedola 2026-11-24 pag. 2026-12-08
+   USA XOM ExxonMobil | utili ['2027-01-29'] eps 4.07639 ricavi 118646740240 | cedola 2026-11-16 pag. 2026-12-10
+   USA WMT Walmart | utili ['2026-11-19'] eps 0.63517 ricavi 187220936400 | cedola 2026-12-11 pag. 2027-01-04
+   USA CVX Chevron | utili ['2027-01-29'] eps 5.69023 ricavi 65157267170 | cedola 2026-11-18 pag. 2026-12-10
+   USA CSCO Cisco | utili ['2026-11-12'] eps 1.32432 ricavi 18115769170 | cedola 2026-10-02 pag. 2026-10-21
+   USA KO Coca-Cola | utili ['2026-10-27'] eps 0.60091 ricavi 11300274920 | cedola 2026-12-01 pag. 2026-12-15
+   USA UNH UnitedHealth | utili ['2027-01-12'] eps 2.27275 ricavi 112422931260 | cedola 2026-12-07 pag. 2026-12-15
+   USA HD Home Depot | utili ['2026-11-17'] eps 3.83863 ricavi 42763187870 | cedola 2026-09-03 pag. 2026-09-17
+   USA BAC Bank of America | utili ['2027-01-15'] eps 1.12278 ricavi 30235461020 | cedola 2026-12-04 pag. 2026-12-24
+   USA AMAT Applied Materials | utili ['2026-11-12'] eps 4.05577 ricavi 10299491080 | cedola 2026-11-19 pag. 2026-12-10
+   USA LRCX Lam Research | utili ['2027-01-27'] eps 2.34922 ricavi 8643520980 | cedola 2026-12-02 pag. 2027-01-06
+   USA GS Goldman Sachs | utili ['2027-01-19'] eps 16.02872 ricavi 17727993560 | cedola 2026-12-02 pag. 2026-12-30
+   USA PANW Palo Alto Networks | utili ['2026-11-18'] eps 0.97062 ricavi 3307502500 | cedola None pag. None
+   USA AMGN Amgen | utili ['2027-02-02'] eps 5.63804 ricavi 10462522550 | cedola 2026-11-20 pag. 2026-12-11
+   USA RTX RTX | utili ['2027-01-26'] eps 1.83552 ricavi 25872550110 | cedola 2026-11-20 pag. 2026-12-10
+   USA LIN Linde | utili ['2026-10-29'] eps 4.49247 ricavi 9240113900 | cedola 2026-12-03 pag. 2026-12-17
+   USA IBM IBM | utili ['2027-01-27'] eps 4.62568 ricavi 20382528670 | cedola 2026-11-10 pag. 2026-12-10
+   USA CRWD CrowdStrike | utili ['2026-12-01'] eps 0.31145 ricavi 1528559430 | cedola None pag. None
+   DEU SIE.DE Siemens | utili ['2026-11-12'] eps 2.81246 ricavi 23239932540 | cedola 2026-02-13 pag. None
+   DEU ALV.DE Allianz | utili ['2026-11-12'] eps None ricavi None | cedola 2026-05-08 pag. None
+   DEU ENR.DE Siemens Energy | utili ['2026-11-11'] eps 1.37838 ricavi 12664773310 | cedola 2026-02-27 pag. None
+   DEU MUV2.DE Munich Re | utili ['2026-11-12'] eps 11.4262 ricavi 17883000000 | cedola 2026-04-30 pag. None
+   DEU IFX.DE Infineon Technologies | utili ['2026-11-10'] eps 0.62636 ricavi 4715257930 | cedola 2026-02-20 pag. None
+   DEU EOAN.DE E.ON | utili ['2026-11-11'] eps 0.125 ricavi None | cedola 2026-04-24 pag. None
+   FRA MC.PA LVMH | utili [] eps None ricavi 23299333330 | cedola 2026-12-01 pag. None
+   GBR SHEL.L Shell | utili ['2026-10-29'] eps 1.70338 ricavi 108872775410 | cedola 2026-11-12 pag. None
+   GBR ULVR.L Unilever | utili [] eps None ricavi 13022000000 | cedola 2026-11-12 pag. None
+   GBR BP.L BP | utili ['2026-10-30'] eps 0.34265 ricavi 67256289730 | cedola 2026-11-12 pag. None
+   GBR GSK.L GSK | utili ['2026-10-28'] eps 0.28503 ricavi 8865167920 | cedola 2026-11-12 pag. None
+   GBR NG.L National Grid | utili ['2026-11-05'] eps None ricavi None | cedola 2026-11-19 pag. None
+   NLD SHELL.AS Shell | utili ['2026-10-29'] eps 1.811 ricavi 108872775410 | cedola 2026-11-12 pag. None
+   NLD UNA.AS Unilever | utili [] eps None ricavi 13022000000 | cedola 2026-11-12 pag. None
+   NLD PRX.AS Prosus | utili ['2026-11-25'] eps None ricavi None | cedola 2026-11-09 pag. None
+   CHE CFR.SW Compagnie Financière Richemo | utili ['2026-11-13'] eps None ricavi 5899350000 | cedola 2026-09-16 pag. 2024-09-23
+   JPN 8306.T Mitsubishi UFJ Financial | utili ['2026-11-13'] eps None ricavi 1772561201250 | cedola 2027-03-30 pag. None
+   JPN 8316.T Sumitomo Mitsui Financial | utili ['2026-11-13'] eps None ricavi 1361652794670 | cedola 2027-03-30 pag. None
+   JPN 6098.T Recruit | utili ['2026-11-11'] eps None ricavi 1061607269739 | cedola 2027-03-30 pag. None
+   JPN 8411.T Mizuho Financial | utili ['2026-11-13'] eps None ricavi 1041083327720 | cedola 2027-03-30 pag. None
+   KOR 000660.KS SK Hynix | utili ['2027-01-27'] eps 120252.05 ricavi 131521972530000 | cedola 2026-11-27 pag. None
+   KOR 005380.KS Hyundai Motor | utili ['2027-01-28'] eps 7092.067 ricavi 49010603710000 | cedola 2026-11-27 pag. None
+   KOR 105560.KS KB Financial | utili ['2026-10-29'] eps 2245.737 ricavi 4408155000000 | cedola 2026-11-11 pag. None
+   TWN 2317.TW Hon Hai | utili ['2026-11-12'] eps 4.94367 ricavi 2870847106010 | cedola 2026-07-02 pag. None
+   CAN RY.TO Royal Bank of Canada | utili ['2026-12-03'] eps 4.14388 ricavi 18551732990 | cedola 2026-10-26 pag. 2026-11-24
+   CAN TD.TO Toronto-Dominion Bank | utili ['2026-12-03'] eps 2.53765 ricavi 15523429860 | cedola 2026-10-09 pag. 2026-10-31
+   CAN BMO.TO Bank of Montreal | utili ['2026-12-02'] eps 3.72697 ricavi 9908386060 | cedola 2026-10-30 pag. 2026-11-26
+   CAN BNS.TO Bank of Nova Scotia | utili ['2026-12-02'] eps 2.19804 ricavi 10285597710 | cedola 2026-10-06 pag. 2026-10-28
+   BRA PETR3.SA Petrobras ON | utili ['2026-11-10'] eps 3.902 ricavi 177339518300 | cedola 2026-08-24 pag. None
+   BRA ITUB4.SA Itaú Unibanco | utili [] eps 1.23 ricavi 50455057290 | cedola 2026-12-01 pag. None
+con appuntamenti nei prossimi 28 giorni: 73
+chiavi viste: ['Dividend Date', 'Earnings Average', 'Earnings Date', 'Earnings High', 'Earnings Low', 'Ex-Dividend Date', 'Revenue Average', 'Revenue High', 'Revenue Low']
+info HSBA.L {"currency": "GBp", "financialCurrency": "USD", "shortName": "HSBC HOLDINGS PLC ORD $0.50 (UK", "longName": "HSBC Holdings plc", "exchange": "LSE", "earningsTimestamp": 1793118600, "earningsTimestampStart": 1793118600, "earningsTimestampEnd": 1793118600, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1793087100, "dividendRate": 0.3, "dividendYield": 2.28, "lastDividendValue": 0.1, 
+info SHEL.L {"currency": "GBp", "financialCurrency": "USD", "shortName": "SHELL PLC ORD EUR0.07", "longName": "Shell plc", "exchange": "LSE", "earningsTimestamp": 1793291400, "earningsTimestampStart": 1793291400, "earningsTimestampEnd": 1793291400, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1793284200, "dividendRate": 1.17, "dividendYield": 3.12, "lastDividendValue": 0.3906, "exDividendDat
+info ROG.SW {"currency": null, "financialCurrency": null, "shortName": null, "longName": null, "exchange": null, "earningsTimestamp": null, "earningsTimestampStart": null, "earningsTimestampEnd": null, "isEarningsDateEstimate": null, "earningsCallTimestampStart": null, "dividendRate": null, "dividendYield": null, "lastDividendValue": null, "exDividendDate": null}
+info NESN.SW {"currency": "CHF", "financialCurrency": "CHF", "shortName": "NESTLE N", "longName": "Nestlé S.A.", "exchange": "EBS", "earningsTimestamp": null, "earningsTimestampStart": 1771518600, "earningsTimestampEnd": 1771518600, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1784791800, "dividendRate": 3.1, "dividendYield": 3.6, "lastDividendValue": 3.1, "exDividendDate": 1776643200}
+info ASML.AS {"currency": "EUR", "financialCurrency": "EUR", "shortName": "ASML HOLDING", "longName": "ASML Holding N.V.", "exchange": "AMS", "earningsTimestamp": 1791991800, "earningsTimestampStart": 1791991800, "earningsTimestampEnd": 1791991800, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1791982800, "dividendRate": 7.52, "dividendYield": 0.56, "lastDividendValue": 1.88, "exDividendDate":
+info 7203.T {"currency": "JPY", "financialCurrency": "JPY", "shortName": "TOYOTA MOTOR CORP", "longName": "Toyota Motor Corporation", "exchange": "JPX", "earningsTimestamp": 1793860200, "earningsTimestampStart": 1801722600, "earningsTimestampEnd": 1801722600, "isEarningsDateEstimate": true, "earningsCallTimestampStart": 1793854800, "dividendRate": 100.0, "dividendYield": 2.86, "lastDividendValue": 50.0, "exDi
+info 005930.KS {"currency": "KRW", "financialCurrency": "KRW", "shortName": "SamsungElec", "longName": "Samsung Electronics Co., Ltd.", "exchange": "KSC", "earningsTimestamp": 1793167200, "earningsTimestampStart": 1801029600, "earningsTimestampEnd": 1801029600, "isEarningsDateEstimate": true, "earningsCallTimestampStart": 1793235600, "dividendRate": 18404.0, "dividendYield": 9.69, "lastDividendValue": 4601.0, "e
+info 2330.TW {"currency": "TWD", "financialCurrency": "TWD", "shortName": "TAIWAN SEMICONDUCTOR MANUFACTUR", "longName": "Taiwan Semiconductor Manufacturing Company Limited", "exchange": "TAI", "earningsTimestamp": 1792042200, "earningsTimestampStart": 1799904600, "earningsTimestampEnd": 1799904600, "isEarningsDateEstimate": true, "earningsCallTimestampStart": 1792044000, "dividendRate": 28.0, "dividendYield":
+info RELIANCE.NS {"currency": "INR", "financialCurrency": "INR", "shortName": "RELIANCE INDUSTRIES LTD", "longName": "Reliance Industries Limited", "exchange": "NSI", "earningsTimestamp": 1793354400, "earningsTimestampStart": 1800007200, "earningsTimestampEnd": 1800007200, "isEarningsDateEstimate": true, "earningsCallTimestampStart": null, "dividendRate": 6.0, "dividendYield": 0.45, "lastDividendValue": 6.0, "exDi
+info RY.TO {"currency": "CAD", "financialCurrency": "CAD", "shortName": "ROYAL BANK OF CANADA", "longName": "Royal Bank of Canada", "exchange": "TOR", "earningsTimestamp": 1796304600, "earningsTimestampStart": 1796304600, "earningsTimestampEnd": 1796304600, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1796304600, "dividendRate": 7.04, "dividendYield": 2.44, "lastDividendValue": 1.76, "exDiv
+info PETR4.SA {"currency": "BRL", "financialCurrency": "BRL", "shortName": "PETROBRAS   PN      N2", "longName": "Petróleo Brasileiro S.A. - Petrobras", "exchange": "SAO", "earningsTimestamp": null, "earningsTimestampStart": 1754593200, "earningsTimestampEnd": 1754593200, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1762513140, "dividendRate": 3.66, "dividendYield": 8.11, "lastDividendValue": 
+info AAPL {"currency": "USD", "financialCurrency": "USD", "shortName": "Apple Inc.", "longName": "Apple Inc.", "exchange": "NMS", "earningsTimestamp": 1793653200, "earningsTimestampStart": 1801170000, "earningsTimestampEnd": 1801170000, "isEarningsDateEstimate": true, "earningsCallTimestampStart": 1793656800, "dividendRate": 1.08, "dividendYield": 0.31, "lastDividendValue": 0.27, "exDividendDate": 179444160
+info ENI.MI {"currency": "EUR", "financialCurrency": "EUR", "shortName": "ENI", "longName": "Eni S.p.A.", "exchange": "MIL", "earningsTimestamp": 1792769400, "earningsTimestampStart": 1792769400, "earningsTimestampEnd": 1792769400, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1792756800, "dividendRate": 1.08, "dividendYield": 4.31, "lastDividendValue": 0.46, "exDividendDate": 1795392000}
+info SAP.DE {"currency": "EUR", "financialCurrency": "EUR", "shortName": "SAP SE                        I", "longName": "SAP SE", "exchange": "GER", "earningsTimestamp": 1792596600, "earningsTimestampStart": 1792596600, "earningsTimestampEnd": 1792596600, "isEarningsDateEstimate": false, "earningsCallTimestampStart": 1792616400, "dividendRate": 2.5, "dividendYield": 1.19, "lastDividendValue": 2.5, "exDividend
+visualization pubblico: 100 righe; colonne ['Symbol', 'Company', 'Marketcap', 'Event Name', 'Event Start Date', 'Timing', 'EPS Estimate', 'Reported EPS', 'Surprise(%)']
+   {"Symbol": "A", "Company": "Agilent Technologies, Inc.", "Marketcap": "50801780011.91518", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-23 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "1.73", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "HPE", "Company": "Hewlett Packard Enterprise Company", "Marketcap": "63107676808.9903", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-23 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "1.28", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "MLYBY", "Company": "Malayan Banking Berhad", "Marketcap": "31871851124.077568", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-23 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "LNVGF", "Company": "Lenovo Group Limited", "Marketcap": "32252113002.1995", "Event Name": "Q2 2027 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": "0.07", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TKOMY", "Company": "Tokio Marine Holdings, Inc.", "Marketcap": "103554081795.98822", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "INTU", "Company": "Intuit Inc.", "Marketcap": "90387235215.94238", "Event Name": "Q1 2027 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "2.64", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "ROST", "Company": "Ross Stores, Inc.", "Marketcap": "76025115012.0", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "1.42", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TKOMF", "Company": "Tokio Marine Holdings, Inc.", "Marketcap": "103271918360.3305", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "BABAF", "Company": "Alibaba Group Holding Limited", "Marketcap": "262666060754.7326", "Event Name": "Q2 2027 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": "1.39", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "NHOLF", "Company": "Sompo Holdings, Inc.", "Marketcap": "40252340549.56513", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": "591.7", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "MSADF", "Company": "MS&AD Insurance Group Holdings, Inc.", "Marketcap": "44227088029.43538", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "KEYS", "Company": "Keysight Technologies, Inc.", "Marketcap": "49195624170.46829", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-19 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "3.38", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "LBLCF", "Company": "Loblaw Companies Limited", "Marketcap": "56832469975.201515", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-19 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "0.74", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "WMT", "Company": "Walmart Inc.", "Marketcap": "1000012255760.6562", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-11-19 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "0.64", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "NTES", "Company": "NetEase, Inc.", "Marketcap": "83014116173.90543", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-19 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "16.13", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "BABA", "Company": "Alibaba Group Holding Limited", "Marketcap": "262158554839.02444", "Event Name": "Q2 2027 Earnings Announcement", "Event Start Date": "2026-11-19 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "11.01", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "PANW", "Company": "Palo Alto Networks, Inc.", "Marketcap": "270814653318.59277", "Event Name": "Q1 2027 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "0.97", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "P", "Company": "Everpure, Inc.", "Marketcap": "34269089272.52536", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "0.77", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "EXPGF", "Company": "Experian plc", "Marketcap": "37054105780.87755", "Event Name": "H1 2027 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TCTZF", "Company": "Tencent Holdings Limited", "Marketcap": "474272665856.741", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": "7.21", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "SSEZF", "Company": "SSE plc", "Marketcap": "44042790181.37358", "Event Name": "H1 2027 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "LOW", "Company": "Lowe's Companies, Inc.", "Marketcap": "130220641234.30197", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-18 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "2.95", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TGT", "Company": "Target Corporation", "Marketcap": "75367825729.59277", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-18 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "1.71", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TJX", "Company": "The TJX Companies, Inc.", "Marketcap": "151939422416.8971", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-11-18 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "1.34", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TCEHY", "Company": "Tencent Holdings Limited", "Marketcap": "478865034969.16815", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-18 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "5.81", "Reported EPS": NaN, "Surprise(%)": NaN}
+  suffissi: {'US': 100}
+visualization con titoli 0-60: 18 righe
+visualization con titoli 60-120: 11 righe
+visualization con titoli 120-180: 10 righe
+visualization con titoli 180-240: 2 righe
+   {"Symbol": "NVDA", "Company": "NVIDIA Corporation", "Marketcap": "4314344445785.5225", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-11-17 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "2.47", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "BRK-B", "Company": "Berkshire Hathaway Inc.", "Marketcap": "1231443308998.5", "Event Name": NaN, "Event Start Date": "2026-11-07 13:00:00+00:00", "Timing": "TAS", "EPS Estimate": "6.14", "Reported EPS": "5.94", "Surprise(%)": "-3.21"}
+   {"Symbol": "WMT", "Company": "Walmart Inc.", "Marketcap": "1000012255760.6562", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-11-19 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "0.64", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "UCG.MI", "Company": "UniCredit S.p.A.", "Marketcap": "125136121330.38235", "Event Name": NaN, "Event Start Date": "2026-11-09 06:13:00+00:00", "Timing": "TAS", "EPS Estimate": "1.88", "Reported EPS": "2.15", "Surprise(%)": "14.02"}
+   {"Symbol": "ENEL.MI", "Company": "Enel SpA", "Marketcap": "98083606466.25778", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.18", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "G.MI", "Company": "Assicurazioni Generali S.p.A.", "Marketcap": "66870499517.3202", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-13 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.81", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "PST.MI", "Company": "Poste Italiane S.p.A.", "Marketcap": "40517508523.041016", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.48", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "SRG.MI", "Company": "Snam S.p.A.", "Marketcap": "20702358069.53464", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.11", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TRN.MI", "Company": "Terna S.p.A.", "Marketcap": "19638507535.169792", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.14", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "UNI.MI", "Company": "Unipol Assicurazioni S.p.A.", "Marketcap": "19626871146.960052", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-13 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.44", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "BMED.MI", "Company": "Banca Mediolanum S.p.A.", "Marketcap": "17847411873.576862", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-10 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.37", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TIT.MI", "Company": "Telecom Italia S.p.A.", "Marketcap": "12223579502.618704", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-10 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.07", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "REC.MI", "Company": "Recordati Industria Chimica e Farmaceutica S.p.A.", "Marketcap": "11003200317.382812", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-10 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.79", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "A2A.MI", "Company": "A2A S.p.A.", "Marketcap": "7665831240.544144", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-10 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "INW.MI", "Company": "Infrastrutture Wireless Italiane S.p.A.", "Marketcap": "6588182632.536449", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.1", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "HER.MI", "Company": "Hera S.p.A.", "Marketcap": "5596336908.611902", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "AVIO.MI", "Company": "Avio S.p.A.", "Marketcap": "1548863437.4319267", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "SPM.MI", "Company": "Saipem SpA", "Marketcap": "0.0", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-18 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.04", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "CSCO", "Company": "Cisco Systems, Inc.", "Marketcap": "388936201037.36017", "Event Name": "Q1 2027 Earnings Announcement", "Event Start Date": "2026-11-12 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "1.32", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "HD", "Company": "The Home Depot, Inc.", "Marketcap": "352603481017.6313", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-17 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "3.83", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "AMAT", "Company": "Applied Materials, Inc.", "Marketcap": "294067522816.1812", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-12 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "4.06", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "PANW", "Company": "Palo Alto Networks, Inc.", "Marketcap": "270814653318.59277", "Event Name": "Q1 2027 Earnings Announcement", "Event Start Date": "2026-11-18 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "0.97", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "CRWD", "Company": "CrowdStrike Holdings, Inc.", "Marketcap": "234051028059.2407", "Event Name": "Q3 2027 Earnings Announcement", "Event Start Date": "2026-12-01 21:00:00+00:00", "Timing": "AMC", "EPS Estimate": "0.31", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "SIE.DE", "Company": "Siemens Aktiengesellschaft", "Marketcap": "210044444918.04703", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "2.81", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "ENR.DE", "Company": "Siemens Energy AG", "Marketcap": "107428141887.02863", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "1.38", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "MUV2.DE", "Company": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München", "Marketcap": "71940710694.77887", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "11.43", "Reported EPS": NaN, 
+   {"Symbol": "IFX.DE", "Company": "Infineon Technologies AG", "Marketcap": "66391437776.597916", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-11-10 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.63", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "EOAN.DE", "Company": "E.ON SE", "Marketcap": "50210293361.69405", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-11 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "0.13", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "ALV.DE", "Company": "Allianz SE", "Marketcap": "0.0", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": "7.51", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "8306.T", "Company": "Mitsubishi UFJ Financial Group, Inc.", "Marketcap": "38663551943730.0", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-13 06:30:00+00:00", "Timing": "TNS", "EPS Estimate": "44.61", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "6098.T", "Company": "Recruit Holdings Co., Ltd.", "Marketcap": "24944098662560.0", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-11 06:30:00+00:00", "Timing": "TNS", "EPS Estimate": "83.91", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "8316.T", "Company": "Sumitomo Mitsui Financial Group, Inc.", "Marketcap": "24296108798064.0", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-13 06:30:00+00:00", "Timing": "TNS", "EPS Estimate": "50.65", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "8411.T", "Company": "Mizuho Financial Group, Inc.", "Marketcap": "19091291486041.0", "Event Name": "Q2 2026 Earnings Announcement", "Event Start Date": "2026-11-13 06:30:00+00:00", "Timing": "TNS", "EPS Estimate": "104.77", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "2317.TW", "Company": "Hon Hai Precision Industry Co., Ltd.", "Marketcap": "3398934615688.5", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-12 05:30:00+00:00", "Timing": "TNS", "EPS Estimate": "4.94", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "RY.TO", "Company": "Royal Bank of Canada", "Marketcap": "399158809787.5467", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-12-03 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "4.15", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "TD.TO", "Company": "The Toronto-Dominion Bank", "Marketcap": "286643423921.3514", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-12-03 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "2.54", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "BMO.TO", "Company": "Bank of Montreal", "Marketcap": "170839769161.35873", "Event Name": "Q4 2026 Earnings Announcement", "Event Start Date": "2026-12-02 13:30:00+00:00", "Timing": "BMO", "EPS Estimate": "3.73", "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "CFR.SW", "Company": "Compagnie Financière Richemont SA", "Marketcap": "102301611678.0", "Event Name": "H1 2027 Earnings Announcement", "Event Start Date": "2026-11-13 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "PRX.AS", "Company": "Prosus N.V.", "Marketcap": "78791344792.60992", "Event Name": "H1 2027 Earnings Announcement", "Event Start Date": "2026-11-25 16:30:00+00:00", "Timing": "TNS", "EPS Estimate": NaN, "Reported EPS": NaN, "Surprise(%)": NaN}
+   {"Symbol": "PETR3.SA", "Company": "Petróleo Brasileiro S.A. - Petrobras", "Marketcap": "657454236505.3", "Event Name": "Q3 2026 Earnings Announcement", "Event Start Date": "2026-11-10 20:00:00+00:00", "Timing": "TNS", "EPS Estimate": "3.9", "Reported EPS": NaN, "Surprise(%)": NaN}
+fine in 5 s

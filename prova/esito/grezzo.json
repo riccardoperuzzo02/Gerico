@@ -1,0 +1,3990 @@
+{
+ "calendar": {
+  "UCG.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-11-09"
+   ],
+   "Earnings High": 1.66855,
+   "Earnings Low": 1.27068,
+   "Earnings Average": 1.50891,
+   "Revenue High": 6515827000,
+   "Revenue Low": 6333638810,
+   "Revenue Average": 6424732900
+  },
+  "ISP.MI": {
+   "Ex-Dividend Date": "2026-11-23",
+   "Earnings Date": [
+    "2027-02-02"
+   ],
+   "Earnings High": 0.11667,
+   "Earnings Low": 0.11667,
+   "Earnings Average": 0.11667,
+   "Revenue High": 7542276000,
+   "Revenue Low": 7142719110,
+   "Revenue Average": 7342497560
+  },
+  "ENEL.MI": {
+   "Ex-Dividend Date": "2026-07-20",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 0.18,
+   "Earnings Low": 0.17387,
+   "Earnings Average": 0.17796,
+   "Revenue High": 25312335680,
+   "Revenue Low": 20086500000,
+   "Revenue Average": 21979278560
+  },
+  "RACE.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-11-03"
+   ],
+   "Earnings High": 2.56,
+   "Earnings Low": 2.49,
+   "Earnings Average": 2.52,
+   "Revenue High": 1994000000,
+   "Revenue Low": 1921833800,
+   "Revenue Average": 1966458450
+  },
+  "ENI.MI": {
+   "Ex-Dividend Date": "2026-11-23",
+   "Earnings Date": [
+    "2026-10-23"
+   ],
+   "Earnings High": 0.93515,
+   "Earnings Low": 0.7607,
+   "Earnings Average": 0.83946,
+   "Revenue High": 31915478000,
+   "Revenue Low": 22775961510,
+   "Revenue Average": 28101776690
+  },
+  "PRY.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 1.38524,
+   "Earnings Low": 1.38524,
+   "Earnings Average": 1.38524,
+   "Revenue High": 6525152270,
+   "Revenue Low": 6270000000,
+   "Revenue Average": 6397576140
+  },
+  "G.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "LDO.MI": {
+   "Ex-Dividend Date": "2026-06-22",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": 1.05779,
+   "Earnings Low": 1.05779,
+   "Earnings Average": 1.05779,
+   "Revenue High": 7029920000,
+   "Revenue Low": 6787000000,
+   "Revenue Average": 6905060550
+  },
+  "STMMI.MI": {
+   "Ex-Dividend Date": "2026-12-14",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 4185960000,
+   "Revenue Low": 4145600000,
+   "Revenue Average": 4158090000
+  },
+  "BMPS.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-06"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 2038530000,
+   "Revenue Low": 2038530000,
+   "Revenue Average": 2038530000
+  },
+  "BPE.MI": {
+   "Ex-Dividend Date": "2026-11-23",
+   "Earnings Date": [
+    "2027-02-04"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1980807000,
+   "Revenue Low": 1980807000,
+   "Revenue Average": 1980807000
+  },
+  "MB.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "BAMI.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2027-02-04"
+   ],
+   "Earnings High": 0.31,
+   "Earnings Low": 0.2751,
+   "Earnings Average": 0.29255,
+   "Revenue High": 1572906000,
+   "Revenue Low": 1572906000,
+   "Revenue Average": 1572906000
+  },
+  "PST.MI": {
+   "Ex-Dividend Date": "2026-06-22",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 0.48167,
+   "Earnings Low": 0.48167,
+   "Earnings Average": 0.48167,
+   "Revenue High": 3387332000,
+   "Revenue Low": 3282929910,
+   "Revenue Average": 3326967010
+  },
+  "FBK.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2027-02-05"
+   ],
+   "Earnings High": 0.31,
+   "Earnings Low": 0.28098,
+   "Earnings Average": 0.29624,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "TRN.MI": {
+   "Ex-Dividend Date": "2026-06-22",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 0.15,
+   "Earnings Low": 0.1276,
+   "Earnings Average": 0.13864,
+   "Revenue High": 1092432820,
+   "Revenue Low": 987000000,
+   "Revenue Average": 1049213680
+  },
+  "SRG.MI": {
+   "Ex-Dividend Date": "2026-06-22",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": 0.11,
+   "Earnings Low": 0.10599,
+   "Earnings Average": 0.10762,
+   "Revenue High": 1054235060,
+   "Revenue Low": 950689800,
+   "Revenue Average": 995467370
+  },
+  "UNI.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "TIT.MI": {
+   "Ex-Dividend Date": "2021-06-21",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 3606000000,
+   "Revenue Low": 3508000000,
+   "Revenue Average": 3566738000
+  },
+  "MONC.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [],
+   "Earnings High": 0.47692,
+   "Earnings Low": 0.47692,
+   "Earnings Average": 0.47692,
+   "Revenue High": 606100000,
+   "Revenue Low": 605519000,
+   "Revenue Average": 605712670
+  },
+  "STLAM.MI": {
+   "Ex-Dividend Date": "2025-04-22",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 0.27,
+   "Earnings Low": 0.27,
+   "Earnings Average": 0.27,
+   "Revenue High": 42809000000,
+   "Revenue Low": 40827000000,
+   "Revenue Average": 41687000000
+  },
+  "TEN.MI": {
+   "Ex-Dividend Date": "2026-11-23",
+   "Earnings Date": [
+    "2026-11-04"
+   ],
+   "Earnings High": 0.56519,
+   "Earnings Low": 0.55,
+   "Earnings Average": 0.55506,
+   "Revenue High": 3420169000,
+   "Revenue Low": 3146000000,
+   "Revenue Average": 3337381420
+  },
+  "LTMC.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-03"
+   ],
+   "Earnings High": 0.91935,
+   "Earnings Low": 0.62259,
+   "Earnings Average": 0.77097,
+   "Revenue High": 675790140,
+   "Revenue Low": 658350000,
+   "Revenue Average": 666713380
+  },
+  "IG.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 0.18033,
+   "Earnings Low": 0.18033,
+   "Earnings Average": 0.18033,
+   "Revenue High": 716000000,
+   "Revenue Low": 716000000,
+   "Revenue Average": 716000000
+  },
+  "SPM.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-18"
+   ],
+   "Earnings High": 0.042,
+   "Earnings Low": 0.03,
+   "Earnings Average": 0.03585,
+   "Revenue High": 4106700000,
+   "Revenue Low": 3792830530,
+   "Revenue Average": 3927532930
+  },
+  "BMED.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": 0.37272,
+   "Earnings Low": 0.37272,
+   "Earnings Average": 0.37272,
+   "Revenue High": 887000000,
+   "Revenue Low": 621000000,
+   "Revenue Average": 754000000
+  },
+  "REC.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": 0.79,
+   "Earnings Low": 0.79,
+   "Earnings Average": 0.79,
+   "Revenue High": 674800000,
+   "Revenue Low": 674000000,
+   "Revenue Average": 674400000
+  },
+  "CPR.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 768900000,
+   "Revenue Low": 751000000,
+   "Revenue Average": 761301030
+  },
+  "IVG.MI": {
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [
+    "2026-11-03"
+   ],
+   "Earnings High": 0.5,
+   "Earnings Low": 0.5,
+   "Earnings Average": 0.5,
+   "Revenue High": 4309511000,
+   "Revenue Low": 4309511000,
+   "Revenue Average": 4309511000
+  },
+  "AZM.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "A2A.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 3771000000,
+   "Revenue Low": 3771000000,
+   "Revenue Average": 3771000000
+  },
+  "BC.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [],
+   "Earnings High": 0.38558,
+   "Earnings Low": 0.38558,
+   "Earnings Average": 0.38558,
+   "Revenue High": 374189000,
+   "Revenue Low": 368400000,
+   "Revenue Average": 371172250
+  },
+  "BZU.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1144000000,
+   "Revenue Low": 1144000000,
+   "Revenue Average": 1144000000
+  },
+  "NEXI.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 963000000,
+   "Revenue Low": 938000000,
+   "Revenue Average": 953962470
+  },
+  "INW.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": 0.09678,
+   "Earnings Low": 0.09678,
+   "Earnings Average": 0.09678,
+   "Revenue High": 269046210,
+   "Revenue Low": 266300000,
+   "Revenue Average": 268549460
+  },
+  "FCT.MI": {
+   "Ex-Dividend Date": "2019-04-15",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 2140000000,
+   "Revenue Low": 2049000000,
+   "Revenue Average": 2094500000
+  },
+  "TPRO.MI": {
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 325000000,
+   "Revenue Low": 310400000,
+   "Revenue Average": 316401730
+  },
+  "AMP.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 0.16916,
+   "Earnings Low": 0.16916,
+   "Earnings Average": 0.16916,
+   "Revenue High": 667200000,
+   "Revenue Low": 659276170,
+   "Revenue Average": 663238080
+  },
+  "AVIO.MI": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 133800000,
+   "Revenue Low": 133800000,
+   "Revenue Average": 133800000
+  },
+  "HER.MI": {
+   "Ex-Dividend Date": "2026-06-22",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 2994000000,
+   "Revenue Low": 2994000000,
+   "Revenue Average": 2994000000
+  },
+  "AAPL": {
+   "Dividend Date": "2026-11-16",
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 3.18,
+   "Earnings Low": 2.83,
+   "Earnings Average": 2.91405,
+   "Revenue High": 158132000000,
+   "Revenue Low": 154257600000,
+   "Revenue Average": 156430011230
+  },
+  "NVDA": {
+   "Dividend Date": "2026-10-01",
+   "Ex-Dividend Date": "2026-09-10",
+   "Earnings Date": [
+    "2026-11-17"
+   ],
+   "Earnings High": 2.7,
+   "Earnings Low": 2.34,
+   "Earnings Average": 2.47461,
+   "Revenue High": 116251000000,
+   "Revenue Low": 104937000000,
+   "Revenue Average": 109006829530
+  },
+  "MSFT": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-19",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 4.97073,
+   "Earnings Low": 4.82,
+   "Earnings Average": 4.85575,
+   "Revenue High": 97868000000,
+   "Revenue Low": 95582000000,
+   "Revenue Average": 96691687890
+  },
+  "AMZN": {
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 2.8,
+   "Earnings Low": 2.36,
+   "Earnings Average": 2.49111,
+   "Revenue High": 247611000000,
+   "Revenue Low": 240000000000,
+   "Revenue Average": 244838490660
+  },
+  "GOOGL": {
+   "Dividend Date": "2026-12-14",
+   "Ex-Dividend Date": "2026-12-07",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 3.72,
+   "Earnings Low": 2.89611,
+   "Earnings Average": 3.26702,
+   "Revenue High": 148055000000,
+   "Revenue Low": 139000000000,
+   "Revenue Average": 142401246490
+  },
+  "GOOG": {
+   "Dividend Date": "2026-12-14",
+   "Ex-Dividend Date": "2026-12-07",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 3.72,
+   "Earnings Low": 2.89611,
+   "Earnings Average": 3.26702,
+   "Revenue High": 148055000000,
+   "Revenue Low": 139000000000,
+   "Revenue Average": 142401246490
+  },
+  "AVGO": {
+   "Dividend Date": "2026-09-30",
+   "Ex-Dividend Date": "2026-09-21",
+   "Earnings Date": [
+    "2026-12-09"
+   ],
+   "Earnings High": 3.92,
+   "Earnings Low": 3.69,
+   "Earnings Average": 3.83768,
+   "Revenue High": 35591502020,
+   "Revenue Low": 34743200000,
+   "Revenue Average": 34906205760
+  },
+  "META": {
+   "Dividend Date": "2026-09-28",
+   "Ex-Dividend Date": "2026-09-21",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 9.65,
+   "Earnings Low": 8.23,
+   "Earnings Average": 8.71875,
+   "Revenue High": 76065000000,
+   "Revenue Low": 73578400000,
+   "Revenue Average": 75155372690
+  },
+  "LLY": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-13",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 12.41946,
+   "Earnings Low": 10.37,
+   "Earnings Average": 11.22773,
+   "Revenue High": 25800000000,
+   "Revenue Low": 24043300000,
+   "Revenue Average": 24761058230
+  },
+  "TSLA": {
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 0.88,
+   "Earnings Low": 0.34213,
+   "Earnings Average": 0.50008,
+   "Revenue High": 35449624740,
+   "Revenue Low": 26676000000,
+   "Revenue Average": 29313093470
+  },
+  "JPM": {
+   "Dividend Date": "2026-10-31",
+   "Ex-Dividend Date": "2026-10-06",
+   "Earnings Date": [
+    "2027-01-14"
+   ],
+   "Earnings High": 6.4,
+   "Earnings Low": 5.65,
+   "Earnings Average": 5.85966,
+   "Revenue High": 52543167000,
+   "Revenue Low": 49453000000,
+   "Revenue Average": 51069960500
+  },
+  "AMD": {
+   "Ex-Dividend Date": "1995-04-27",
+   "Earnings Date": [
+    "2027-02-02"
+   ],
+   "Earnings High": 3.05,
+   "Earnings Low": 2.72,
+   "Earnings Average": 2.92736,
+   "Revenue High": 17369000000,
+   "Revenue Low": 16985000000,
+   "Revenue Average": 17055182990
+  },
+  "MU": {
+   "Dividend Date": "2026-10-29",
+   "Ex-Dividend Date": "2026-10-14",
+   "Earnings Date": [
+    "2026-12-23"
+   ],
+   "Earnings High": 40.47,
+   "Earnings Low": 35.85,
+   "Earnings Average": 38.29128,
+   "Revenue High": 65610000000,
+   "Revenue Low": 58065000000,
+   "Revenue Average": 61832643300
+  },
+  "BRK-B": {
+   "Earnings Date": [
+    "2026-11-09"
+   ],
+   "Earnings High": 5.90748,
+   "Earnings Low": 5.90748,
+   "Earnings Average": 5.90748,
+   "Revenue High": 104023000000,
+   "Revenue Low": 104023000000,
+   "Revenue Average": 104023000000
+  },
+  "V": {
+   "Dividend Date": "2026-12-01",
+   "Ex-Dividend Date": "2026-11-10",
+   "Earnings Date": [
+    "2027-01-26"
+   ],
+   "Earnings High": 3.75,
+   "Earnings Low": 3.58,
+   "Earnings Average": 3.62965,
+   "Revenue High": 12472000000,
+   "Revenue Low": 12052513760,
+   "Revenue Average": 12204669400
+  },
+  "JNJ": {
+   "Dividend Date": "2026-12-08",
+   "Ex-Dividend Date": "2026-11-24",
+   "Earnings Date": [
+    "2027-01-26"
+   ],
+   "Earnings High": 2.97,
+   "Earnings Low": 2.86,
+   "Earnings Average": 2.91505,
+   "Revenue High": 26683000000,
+   "Revenue Low": 26229000000,
+   "Revenue Average": 26419759280
+  },
+  "XOM": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-16",
+   "Earnings Date": [
+    "2027-01-29"
+   ],
+   "Earnings High": 4.71103,
+   "Earnings Low": 3.5,
+   "Earnings Average": 4.07639,
+   "Revenue High": 142759142250,
+   "Revenue Low": 81209000000,
+   "Revenue Average": 118646740240
+  },
+  "WMT": {
+   "Dividend Date": "2027-01-04",
+   "Ex-Dividend Date": "2026-12-11",
+   "Earnings Date": [
+    "2026-11-19"
+   ],
+   "Earnings High": 0.66,
+   "Earnings Low": 0.62,
+   "Earnings Average": 0.63517,
+   "Revenue High": 189775000000,
+   "Revenue Low": 185556000000,
+   "Revenue Average": 187220936400
+  },
+  "MA": {
+   "Dividend Date": "2026-11-09",
+   "Ex-Dividend Date": "2026-10-09",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 5.26,
+   "Earnings Low": 4.98,
+   "Earnings Average": 5.11666,
+   "Revenue High": 10091000000,
+   "Revenue Low": 9826235560,
+   "Revenue Average": 9920699860
+  },
+  "ABBV": {
+   "Dividend Date": "2027-02-16",
+   "Ex-Dividend Date": "2027-01-15",
+   "Earnings Date": [
+    "2026-10-30"
+   ],
+   "Earnings High": 4.01,
+   "Earnings Low": 3.81,
+   "Earnings Average": 3.87796,
+   "Revenue High": 18474300000,
+   "Revenue Low": 18322000000,
+   "Revenue Average": 18404097830
+  },
+  "COST": {
+   "Dividend Date": "2026-11-13",
+   "Ex-Dividend Date": "2026-10-30",
+   "Earnings Date": [
+    "2026-12-10"
+   ],
+   "Earnings High": 5.61,
+   "Earnings Low": 4.62,
+   "Earnings Average": 4.94304,
+   "Revenue High": 75786000000,
+   "Revenue Low": 71201000000,
+   "Revenue Average": 74326845890
+  },
+  "CVX": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-18",
+   "Earnings Date": [
+    "2027-01-29"
+   ],
+   "Earnings High": 7.0,
+   "Earnings Low": 4.99,
+   "Earnings Average": 5.69023,
+   "Revenue High": 82302000000,
+   "Revenue Low": 56052080550,
+   "Revenue Average": 65157267170
+  },
+  "PG": {
+   "Dividend Date": "2026-11-16",
+   "Ex-Dividend Date": "2026-10-23",
+   "Earnings Date": [
+    "2027-01-21"
+   ],
+   "Earnings High": 1.89,
+   "Earnings Low": 1.71,
+   "Earnings Average": 1.81498,
+   "Revenue High": 23108800000,
+   "Revenue Low": 22650000000,
+   "Revenue Average": 22851690120
+  },
+  "CSCO": {
+   "Dividend Date": "2026-10-21",
+   "Ex-Dividend Date": "2026-10-02",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 1.34,
+   "Earnings Low": 1.30992,
+   "Earnings Average": 1.32432,
+   "Revenue High": 18226000000,
+   "Revenue Low": 18017000000,
+   "Revenue Average": 18115769170
+  },
+  "KO": {
+   "Dividend Date": "2026-12-15",
+   "Ex-Dividend Date": "2026-12-01",
+   "Earnings Date": [
+    "2026-10-27"
+   ],
+   "Earnings High": 0.62,
+   "Earnings Low": 0.59,
+   "Earnings Average": 0.60091,
+   "Revenue High": 11477000000,
+   "Revenue Low": 11039800000,
+   "Revenue Average": 11300274920
+  },
+  "MRK": {
+   "Dividend Date": "2026-10-07",
+   "Ex-Dividend Date": "2026-09-15",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 1.964,
+   "Earnings Low": 1.7,
+   "Earnings Average": 1.75794,
+   "Revenue High": 16760000000,
+   "Revenue Low": 15917698780,
+   "Revenue Average": 16283056810
+  },
+  "PLTR": {
+   "Earnings Date": [
+    "2027-02-01"
+   ],
+   "Earnings High": 0.45,
+   "Earnings Low": 0.38,
+   "Earnings Average": 0.40585,
+   "Revenue High": 2771399940,
+   "Revenue Low": 2650100000,
+   "Revenue Average": 2670136910
+  },
+  "UNH": {
+   "Dividend Date": "2026-12-15",
+   "Ex-Dividend Date": "2026-12-07",
+   "Earnings Date": [
+    "2027-01-12"
+   ],
+   "Earnings High": 2.62,
+   "Earnings Low": 2.15,
+   "Earnings Average": 2.27275,
+   "Revenue High": 115398000000,
+   "Revenue Low": 109122000000,
+   "Revenue Average": 112422931260
+  },
+  "HD": {
+   "Dividend Date": "2026-09-17",
+   "Ex-Dividend Date": "2026-09-03",
+   "Earnings Date": [
+    "2026-11-17"
+   ],
+   "Earnings High": 4.04949,
+   "Earnings Low": 3.71,
+   "Earnings Average": 3.83863,
+   "Revenue High": 43691000000,
+   "Revenue Low": 41963000000,
+   "Revenue Average": 42763187870
+  },
+  "BAC": {
+   "Dividend Date": "2026-12-24",
+   "Ex-Dividend Date": "2026-12-04",
+   "Earnings Date": [
+    "2027-01-15"
+   ],
+   "Earnings High": 1.2,
+   "Earnings Low": 1.05,
+   "Earnings Average": 1.12278,
+   "Revenue High": 30431766100,
+   "Revenue Low": 29884000000,
+   "Revenue Average": 30235461020
+  },
+  "GE": {
+   "Dividend Date": "2026-10-26",
+   "Ex-Dividend Date": "2026-10-05",
+   "Earnings Date": [
+    "2027-01-21"
+   ],
+   "Earnings High": 2.17,
+   "Earnings Low": 1.94792,
+   "Earnings Average": 2.03558,
+   "Revenue High": 13915000000,
+   "Revenue Low": 12927000000,
+   "Revenue Average": 13298054320
+  },
+  "PM": {
+   "Dividend Date": "2026-10-26",
+   "Ex-Dividend Date": "2026-10-02",
+   "Earnings Date": [
+    "2026-10-21"
+   ],
+   "Earnings High": 1.99,
+   "Earnings Low": 1.76954,
+   "Earnings Average": 1.82092,
+   "Revenue High": 11078600000,
+   "Revenue Low": 10673039190,
+   "Revenue Average": 10844619340
+  },
+  "AMAT": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-19",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 4.19,
+   "Earnings Low": 4.02,
+   "Earnings Average": 4.05577,
+   "Revenue High": 10542000000,
+   "Revenue Low": 10249863940,
+   "Revenue Average": 10299491080
+  },
+  "INTC": {
+   "Dividend Date": "2024-09-01",
+   "Ex-Dividend Date": "2024-08-07",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 0.27,
+   "Earnings Low": 0.21,
+   "Earnings Average": 0.24895,
+   "Revenue High": 17940000000,
+   "Revenue Low": 15187000000,
+   "Revenue Average": 15618018670
+  },
+  "LRCX": {
+   "Dividend Date": "2027-01-06",
+   "Ex-Dividend Date": "2026-12-02",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 2.55,
+   "Earnings Low": 2.326,
+   "Earnings Average": 2.34922,
+   "Revenue High": 8890000000,
+   "Revenue Low": 8599336530,
+   "Revenue Average": 8643520980
+  },
+  "CAT": {
+   "Dividend Date": "2026-11-19",
+   "Ex-Dividend Date": "2026-10-26",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 7.09,
+   "Earnings Low": 5.78,
+   "Earnings Average": 6.43589,
+   "Revenue High": 21757000000,
+   "Revenue Low": 19894000000,
+   "Revenue Average": 20769648150
+  },
+  "GS": {
+   "Dividend Date": "2026-12-30",
+   "Ex-Dividend Date": "2026-12-02",
+   "Earnings Date": [
+    "2027-01-19"
+   ],
+   "Earnings High": 18.45,
+   "Earnings Low": 14.8,
+   "Earnings Average": 16.02872,
+   "Revenue High": 18698000000,
+   "Revenue Low": 16676000000,
+   "Revenue Average": 17727993560
+  },
+  "TXN": {
+   "Dividend Date": "2026-11-10",
+   "Ex-Dividend Date": "2026-10-30",
+   "Earnings Date": [
+    "2027-01-26"
+   ],
+   "Earnings High": 2.75,
+   "Earnings Low": 2.62,
+   "Earnings Average": 2.66458,
+   "Revenue High": 6150000000,
+   "Revenue Low": 6049729000,
+   "Revenue Average": 6067507350
+  },
+  "PANW": {
+   "Earnings Date": [
+    "2026-11-18"
+   ],
+   "Earnings High": 0.98,
+   "Earnings Low": 0.95,
+   "Earnings Average": 0.97062,
+   "Revenue High": 3367100000,
+   "Revenue Low": 3292425750,
+   "Revenue Average": 3307502500
+  },
+  "TMO": {
+   "Dividend Date": "2027-01-15",
+   "Ex-Dividend Date": "2026-12-15",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 7.26,
+   "Earnings Low": 7.0,
+   "Earnings Average": 7.1305,
+   "Revenue High": 13025000000,
+   "Revenue Low": 12715000000,
+   "Revenue Average": 12852514090
+  },
+  "NFLX": {
+   "Earnings Date": [
+    "2027-01-19"
+   ],
+   "Earnings High": 0.71,
+   "Earnings Low": 0.66,
+   "Earnings Average": 0.6758,
+   "Revenue High": 13500000000,
+   "Revenue Low": 13404100000,
+   "Revenue Average": 13446130180
+  },
+  "WFC": {
+   "Dividend Date": "2026-12-01",
+   "Ex-Dividend Date": "2026-11-06",
+   "Earnings Date": [
+    "2027-01-14"
+   ],
+   "Earnings High": 1.92,
+   "Earnings Low": 1.6,
+   "Earnings Average": 1.8385,
+   "Revenue High": 22605000000,
+   "Revenue Low": 22066000000,
+   "Revenue Average": 22358285710
+  },
+  "AMGN": {
+   "Dividend Date": "2026-12-11",
+   "Ex-Dividend Date": "2026-11-20",
+   "Earnings Date": [
+    "2027-02-02"
+   ],
+   "Earnings High": 6.08,
+   "Earnings Low": 5.13,
+   "Earnings Average": 5.63804,
+   "Revenue High": 10768087340,
+   "Revenue Low": 10207251280,
+   "Revenue Average": 10462522550
+  },
+  "RTX": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-20",
+   "Earnings Date": [
+    "2027-01-26"
+   ],
+   "Earnings High": 1.93,
+   "Earnings Low": 1.76,
+   "Earnings Average": 1.83552,
+   "Revenue High": 26417504490,
+   "Revenue Low": 25325000000,
+   "Revenue Average": 25872550110
+  },
+  "LIN": {
+   "Dividend Date": "2026-12-17",
+   "Ex-Dividend Date": "2026-12-03",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 4.5903,
+   "Earnings Low": 4.44,
+   "Earnings Average": 4.49247,
+   "Revenue High": 9462150000,
+   "Revenue Low": 8747776000,
+   "Revenue Average": 9240113900
+  },
+  "IBM": {
+   "Dividend Date": "2026-12-10",
+   "Ex-Dividend Date": "2026-11-10",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 4.778,
+   "Earnings Low": 4.5,
+   "Earnings Average": 4.62568,
+   "Revenue High": 20728103870,
+   "Revenue Low": 20130000000,
+   "Revenue Average": 20382528670
+  },
+  "CRWD": {
+   "Earnings Date": [
+    "2026-12-01"
+   ],
+   "Earnings High": 0.33,
+   "Earnings Low": 0.30946,
+   "Earnings Average": 0.31145,
+   "Revenue High": 1556000000,
+   "Revenue Low": 1525457000,
+   "Revenue Average": 1528559430
+  },
+  "ORCL": {
+   "Dividend Date": "2026-10-23",
+   "Ex-Dividend Date": "2026-10-09",
+   "Earnings Date": [
+    "2026-12-14"
+   ],
+   "Earnings High": 2.04,
+   "Earnings Low": 1.81,
+   "Earnings Average": 1.89,
+   "Revenue High": 21518000000,
+   "Revenue Low": 21190000000,
+   "Revenue Average": 21325430780
+  },
+  "MS": {
+   "Dividend Date": "2026-11-13",
+   "Ex-Dividend Date": "2026-10-30",
+   "Earnings Date": [
+    "2027-01-14"
+   ],
+   "Earnings High": 3.22,
+   "Earnings Low": 2.8,
+   "Earnings Average": 2.97077,
+   "Revenue High": 21135000000,
+   "Revenue Low": 19819100000,
+   "Revenue Average": 20365259560
+  },
+  "GEV": {
+   "Dividend Date": "2026-11-24",
+   "Ex-Dividend Date": "2026-10-27",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 8.86,
+   "Earnings Low": 5.78,
+   "Earnings Average": 6.92186,
+   "Revenue High": 14505776710,
+   "Revenue Low": 12829400000,
+   "Revenue Average": 14014935080
+  },
+  "SAP.DE": {
+   "Ex-Dividend Date": "2026-05-06",
+   "Earnings Date": [
+    "2026-10-21"
+   ],
+   "Earnings High": 2.18,
+   "Earnings Low": 1.90367,
+   "Earnings Average": 1.98039,
+   "Revenue High": 10976000000,
+   "Revenue Low": 10646000000,
+   "Revenue Average": 10763979580
+  },
+  "SIE.DE": {
+   "Ex-Dividend Date": "2026-02-13",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 3.03,
+   "Earnings Low": 2.6,
+   "Earnings Average": 2.81246,
+   "Revenue High": 23909822000,
+   "Revenue Low": 22363616660,
+   "Revenue Average": 23239932540
+  },
+  "ALV.DE": {
+   "Ex-Dividend Date": "2026-05-08",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "AIR.PA": {
+   "Ex-Dividend Date": "2026-04-21",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 3.12,
+   "Earnings Low": 2.81416,
+   "Earnings Average": 3.00805,
+   "Revenue High": 30803600000,
+   "Revenue Low": 26865294430,
+   "Revenue Average": 29420874050
+  },
+  "DTE.DE": {
+   "Ex-Dividend Date": "2026-04-02",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": 0.52,
+   "Earnings Low": 0.51017,
+   "Earnings Average": 0.51508,
+   "Revenue High": 34209006000,
+   "Revenue Low": 33120646999,
+   "Revenue Average": 33550534699
+  },
+  "ENR.DE": {
+   "Ex-Dividend Date": "2026-02-27",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": 1.59,
+   "Earnings Low": 1.16676,
+   "Earnings Average": 1.37838,
+   "Revenue High": 13187180000,
+   "Revenue Low": 12464000000,
+   "Revenue Average": 12664773310
+  },
+  "MUV2.DE": {
+   "Ex-Dividend Date": "2026-04-30",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 13.05766,
+   "Earnings Low": 9.95,
+   "Earnings Average": 11.4262,
+   "Revenue High": 17883000000,
+   "Revenue Low": 17883000000,
+   "Revenue Average": 17883000000
+  },
+  "IFX.DE": {
+   "Ex-Dividend Date": "2026-02-20",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": 0.7,
+   "Earnings Low": 0.59,
+   "Earnings Average": 0.62636,
+   "Revenue High": 4791766000,
+   "Revenue Low": 4693000000,
+   "Revenue Average": 4715257930
+  },
+  "DB1.DE": {
+   "Ex-Dividend Date": "2026-05-14",
+   "Earnings Date": [
+    "2026-10-20"
+   ],
+   "Earnings High": 3.36895,
+   "Earnings Low": 3.36895,
+   "Earnings Average": 3.36895,
+   "Revenue High": 1756935020,
+   "Revenue Low": 1736660000,
+   "Revenue Average": 1746797510
+  },
+  "BAYN.DE": {
+   "Ex-Dividend Date": "2026-04-27",
+   "Earnings Date": [
+    "2026-11-03"
+   ],
+   "Earnings High": 0.82681,
+   "Earnings Low": 0.23,
+   "Earnings Average": 0.59708,
+   "Revenue High": 12064680000,
+   "Revenue Low": 11481465560,
+   "Revenue Average": 11708864910
+  },
+  "DBK.DE": {
+   "Ex-Dividend Date": "2026-05-29",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 0.78831,
+   "Earnings Low": 0.56,
+   "Earnings Average": 0.68484,
+   "Revenue High": 8151789000,
+   "Revenue Low": 8067624430,
+   "Revenue Average": 8109706720
+  },
+  "DHL.DE": {
+   "Ex-Dividend Date": "2026-05-06",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": 1.17,
+   "Earnings Low": 1.04022,
+   "Earnings Average": 1.11972,
+   "Revenue High": 24421227380,
+   "Revenue Low": 23139658310,
+   "Revenue Average": 23886319740
+  },
+  "BAS.DE": {
+   "Ex-Dividend Date": "2026-05-04",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 0.05,
+   "Earnings Low": -0.34889,
+   "Earnings Average": -0.16963,
+   "Revenue High": 15944000000,
+   "Revenue Low": 15807000000,
+   "Revenue Average": 15875500000
+  },
+  "CBK.DE": {
+   "Ex-Dividend Date": "2026-05-21",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": 0.84,
+   "Earnings Low": 0.76308,
+   "Earnings Average": 0.81142,
+   "Revenue High": 3547985000,
+   "Revenue Low": 3481975710,
+   "Revenue Average": 3514980360
+  },
+  "EOAN.DE": {
+   "Ex-Dividend Date": "2026-04-24",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": 0.17,
+   "Earnings Low": 0.08,
+   "Earnings Average": 0.125,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "TTE.PA": {
+   "Ex-Dividend Date": "2026-12-31",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 4.71,
+   "Earnings Low": 3.94,
+   "Earnings Average": 4.19542,
+   "Revenue High": 68122000000,
+   "Revenue Low": 59827464000,
+   "Revenue Average": 62714588000
+  },
+  "SU.PA": {
+   "Ex-Dividend Date": "2026-05-11",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 12709679000,
+   "Revenue Low": 12709679000,
+   "Revenue Average": 12709679000
+  },
+  "AI.PA": {
+   "Ex-Dividend Date": "2026-05-18",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 7259000000,
+   "Revenue Low": 6970000000,
+   "Revenue Average": 7094500000
+  },
+  "OR.PA": {
+   "Ex-Dividend Date": "2026-04-29",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 12478000000,
+   "Revenue Low": 12470000000,
+   "Revenue Average": 12474000000
+  },
+  "BNP.PA": {
+   "Ex-Dividend Date": "2026-09-24",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 2.71312,
+   "Earnings Low": 2.33152,
+   "Earnings Average": 2.52232,
+   "Revenue High": 13967764000,
+   "Revenue Low": 12648827810,
+   "Revenue Average": 13308295900
+  },
+  "MC.PA": {
+   "Ex-Dividend Date": "2026-12-01",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 23334000000,
+   "Revenue Low": 23247000000,
+   "Revenue Average": 23299333330
+  },
+  "SAF.PA": {
+   "Ex-Dividend Date": "2026-05-26",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 8942000000,
+   "Revenue Low": 8936000000,
+   "Revenue Average": 8939000000
+  },
+  "SAN.PA": {
+   "Ex-Dividend Date": "2026-05-05",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 2.11,
+   "Earnings Low": 1.37128,
+   "Earnings Average": 1.7246,
+   "Revenue High": 13109000000,
+   "Revenue Low": 12712000000,
+   "Revenue Average": 12910876500
+  },
+  "CS.PA": {
+   "Ex-Dividend Date": "2026-05-11",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "EL.PA": {
+   "Ex-Dividend Date": "2026-05-05",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 7785000000,
+   "Revenue Low": 7785000000,
+   "Revenue Average": 7785000000
+  },
+  "DG.PA": {
+   "Ex-Dividend Date": "2026-10-13",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "ENGI.PA": {
+   "Ex-Dividend Date": "2026-04-30",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": 0.28,
+   "Earnings Low": 0.28,
+   "Earnings Average": 0.28,
+   "Revenue High": 15351113000,
+   "Revenue Low": 15351113000,
+   "Revenue Average": 15351113000
+  },
+  "GLE.PA": {
+   "Ex-Dividend Date": "2026-10-05",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 1.9,
+   "Earnings Low": 1.67,
+   "Earnings Average": 1.80894,
+   "Revenue High": 7016994440,
+   "Revenue Low": 6469684030,
+   "Revenue Average": 6798887490
+  },
+  "RMS.PA": {
+   "Ex-Dividend Date": "2026-04-21",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 4349000000,
+   "Revenue Low": 4349000000,
+   "Revenue Average": 4349000000
+  },
+  "HSBA.L": {
+   "Ex-Dividend Date": "2026-11-05",
+   "Earnings Date": [
+    "2026-10-27"
+   ],
+   "Earnings High": 0.4018,
+   "Earnings Low": 0.18,
+   "Earnings Average": 0.32546,
+   "Revenue High": 18051129000,
+   "Revenue Low": 18051129000,
+   "Revenue Average": 18051129000
+  },
+  "AZN.L": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [
+    "2026-10-30"
+   ],
+   "Earnings High": 2.42,
+   "Earnings Low": 2.13085,
+   "Earnings Average": 2.24157,
+   "Revenue High": 17140775559,
+   "Revenue Low": 16143343050,
+   "Revenue Average": 16564703399
+  },
+  "SHEL.L": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 2.01,
+   "Earnings Low": 1.4385,
+   "Earnings Average": 1.70338,
+   "Revenue High": 124645552750,
+   "Revenue Low": 95709000000,
+   "Revenue Average": 108872775410
+  },
+  "RR.L": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "ULVR.L": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 13144000000,
+   "Revenue Low": 12900000000,
+   "Revenue Average": 13022000000
+  },
+  "BATS.L": {
+   "Ex-Dividend Date": "2026-12-24",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "BP.L": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [
+    "2026-10-30"
+   ],
+   "Earnings High": 0.46,
+   "Earnings Low": 0.27821,
+   "Earnings Average": 0.34265,
+   "Revenue High": 74346886000,
+   "Revenue Low": 58346000000,
+   "Revenue Average": 67256289730
+  },
+  "RIO.L": {
+   "Ex-Dividend Date": "2026-08-13",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "GSK.L": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 0.3218,
+   "Earnings Low": 0.2709,
+   "Earnings Average": 0.28503,
+   "Revenue High": 9058055010,
+   "Revenue Low": 8720198000,
+   "Revenue Average": 8865167920
+  },
+  "NG.L": {
+   "Ex-Dividend Date": "2026-11-19",
+   "Earnings Date": [
+    "2026-11-05"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "BA.L": {
+   "Ex-Dividend Date": "2026-10-22",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "BARC.L": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [
+    "2026-10-22"
+   ],
+   "Earnings High": 0.0934,
+   "Earnings Low": 0.08509,
+   "Earnings Average": 0.08962,
+   "Revenue High": 7384798000,
+   "Revenue Low": 7340659040,
+   "Revenue Average": 7362728520
+  },
+  "LLOY.L": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 0.026,
+   "Earnings Low": 0.02454,
+   "Earnings Average": 0.02527,
+   "Revenue High": 5609696000,
+   "Revenue Low": 5609696000,
+   "Revenue Average": 5609696000
+  },
+  "REL.L": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "GLEN.L": {
+   "Ex-Dividend Date": "2026-08-27",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "ASML.AS": {
+   "Ex-Dividend Date": "2026-10-26",
+   "Earnings Date": [
+    "2026-10-14"
+   ],
+   "Earnings High": 16.11,
+   "Earnings Low": 14.84,
+   "Earnings Average": 15.38838,
+   "Revenue High": 15392855000,
+   "Revenue Low": 14410000000,
+   "Revenue Average": 14816055140
+  },
+  "SHELL.AS": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 1.88,
+   "Earnings Low": 1.74201,
+   "Earnings Average": 1.811,
+   "Revenue High": 124645552750,
+   "Revenue Low": 95709000000,
+   "Revenue Average": 108872775410
+  },
+  "UNA.AS": {
+   "Ex-Dividend Date": "2026-11-12",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 13144000000,
+   "Revenue Low": 12900000000,
+   "Revenue Average": 13022000000
+  },
+  "INGA.AS": {
+   "Ex-Dividend Date": "2026-08-03",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 0.62859,
+   "Earnings Low": 0.54,
+   "Earnings Average": 0.59313,
+   "Revenue High": 6491282560,
+   "Revenue Low": 6306000000,
+   "Revenue Average": 6397059340
+  },
+  "PRX.AS": {
+   "Ex-Dividend Date": "2026-11-09",
+   "Earnings Date": [
+    "2026-11-25"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "REN.AS": {
+   "Ex-Dividend Date": "2026-08-06",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "ASM.AS": {
+   "Ex-Dividend Date": "2026-05-13",
+   "Earnings Date": [
+    "2026-10-27"
+   ],
+   "Earnings High": 7.47424,
+   "Earnings Low": 7.06256,
+   "Earnings Average": 7.26467,
+   "Revenue High": 1323160000,
+   "Revenue Low": 1230000000,
+   "Revenue Average": 1260560210
+  },
+  "AD.AS": {
+   "Ex-Dividend Date": "2026-08-07",
+   "Earnings Date": [
+    "2026-11-04"
+   ],
+   "Earnings High": 0.80718,
+   "Earnings Low": 0.68,
+   "Earnings Average": 0.7343,
+   "Revenue High": 24223839000,
+   "Revenue Low": 24223839000,
+   "Revenue Average": 24223839000
+  },
+  "ROP.SW": {
+   "Ex-Dividend Date": "2026-03-12",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 15821000000,
+   "Revenue Low": 15544000000,
+   "Revenue Average": 15726971430
+  },
+  "NOVN.SW": {
+   "Dividend Date": "2025-03-13",
+   "Ex-Dividend Date": "2026-03-10",
+   "Earnings Date": [
+    "2026-10-27"
+   ],
+   "Earnings High": 2.3127,
+   "Earnings Low": 2.12,
+   "Earnings Average": 2.23665,
+   "Revenue High": 15239000000,
+   "Revenue Low": 14453536000,
+   "Revenue Average": 14851408680
+  },
+  "NESN.SW": {
+   "Dividend Date": "2025-04-24",
+   "Ex-Dividend Date": "2026-04-20",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 24736000000,
+   "Revenue Low": 21707000000,
+   "Revenue Average": 23604333330
+  },
+  "ABBN.SW": {
+   "Dividend Date": "2025-04-02",
+   "Ex-Dividend Date": "2026-03-23",
+   "Earnings Date": [
+    "2026-10-20"
+   ],
+   "Earnings High": 1.09,
+   "Earnings Low": 0.83527,
+   "Earnings Average": 0.9897,
+   "Revenue High": 10555000000,
+   "Revenue Low": 10223082000,
+   "Revenue Average": 10386714050
+  },
+  "UBSG.SW": {
+   "Dividend Date": "2025-04-17",
+   "Ex-Dividend Date": "2026-04-21",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 0.76,
+   "Earnings Low": 0.697,
+   "Earnings Average": 0.72775,
+   "Revenue High": 11032866000,
+   "Revenue Low": 10536598000,
+   "Revenue Average": 10784732000
+  },
+  "ZURN.SW": {
+   "Dividend Date": "2025-04-15",
+   "Ex-Dividend Date": "2026-04-10",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "CFR.SW": {
+   "Dividend Date": "2024-09-23",
+   "Ex-Dividend Date": "2026-09-16",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 6107400000,
+   "Revenue Low": 5677000000,
+   "Revenue Average": 5899350000
+  },
+  "LONN.SW": {
+   "Dividend Date": "2025-05-15",
+   "Ex-Dividend Date": "2026-05-12",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "8306.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1842095964500,
+   "Revenue Low": 1703026438000,
+   "Revenue Average": 1772561201250
+  },
+  "7203.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2027-02-04"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 14500000000000,
+   "Revenue Low": 13132506214800,
+   "Revenue Average": 13857292044480
+  },
+  "6758.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2027-02-04"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 4294254996140,
+   "Revenue Low": 3761600000000,
+   "Revenue Average": 3937168865910
+  },
+  "8316.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1560394434340,
+   "Revenue Low": 1162911155000,
+   "Revenue Average": 1361652794670
+  },
+  "6098.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2026-11-11"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1080457410450,
+   "Revenue Low": 1030200000000,
+   "Revenue Average": 1061607269739
+  },
+  "6857.T": {
+   "Ex-Dividend Date": "2026-09-29",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 530000000000,
+   "Revenue Low": 460980580000,
+   "Revenue Average": 496904864920
+  },
+  "6501.T": {
+   "Ex-Dividend Date": "2026-09-29",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 3049500000000,
+   "Revenue Low": 2892000000000,
+   "Revenue Average": 2962155636620
+  },
+  "8035.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2026-10-30"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 967800000000,
+   "Revenue Low": 876921022590,
+   "Revenue Average": 924874431800
+  },
+  "8058.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2027-02-04"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": null,
+   "Revenue Low": null,
+   "Revenue Average": null
+  },
+  "8411.T": {
+   "Ex-Dividend Date": "2027-03-30",
+   "Earnings Date": [
+    "2026-11-13"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 1141917390450,
+   "Revenue Low": 940249265000,
+   "Revenue Average": 1041083327720
+  },
+  "005930.KS": {
+   "Ex-Dividend Date": "2026-09-29",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 19142.0,
+   "Earnings Low": 15008.783,
+   "Earnings Average": 16478.95,
+   "Revenue High": 257970000000000,
+   "Revenue Low": 212400000000000,
+   "Revenue Average": 224573054730000
+  },
+  "000660.KS": {
+   "Ex-Dividend Date": "2026-11-27",
+   "Earnings Date": [
+    "2027-01-27"
+   ],
+   "Earnings High": 133655.0,
+   "Earnings Low": 111048.0,
+   "Earnings Average": 120252.05,
+   "Revenue High": 151041000000000,
+   "Revenue Low": 124000000000000,
+   "Revenue Average": 131521972530000
+  },
+  "005380.KS": {
+   "Ex-Dividend Date": "2026-11-27",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": 7869.97,
+   "Earnings Low": 6314.1636,
+   "Earnings Average": 7092.067,
+   "Revenue High": 51615000000000,
+   "Revenue Low": 46939000000000,
+   "Revenue Average": 49010603710000
+  },
+  "105560.KS": {
+   "Ex-Dividend Date": "2026-11-11",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 2612.08,
+   "Earnings Low": 2014.294,
+   "Earnings Average": 2245.737,
+   "Revenue High": 4609000000000,
+   "Revenue Low": 4149000000000,
+   "Revenue Average": 4408155000000
+  },
+  "055550.KS": {
+   "Ex-Dividend Date": "2026-11-02",
+   "Earnings Date": [
+    "2026-10-27"
+   ],
+   "Earnings High": 1833.4703,
+   "Earnings Low": 1298.6669,
+   "Earnings Average": 1470.9357,
+   "Revenue High": 3930153580000,
+   "Revenue Low": 3759845760000,
+   "Revenue Average": 3865142760000
+  },
+  "2330.TW": {
+   "Ex-Dividend Date": "2026-12-10",
+   "Earnings Date": [
+    "2027-01-14"
+   ],
+   "Earnings High": 34.64,
+   "Earnings Low": 31.9,
+   "Earnings Average": 33.14312,
+   "Revenue High": 1753006000000,
+   "Revenue Low": 1647305000000,
+   "Revenue Average": 1707801676350
+  },
+  "2454.TW": {
+   "Ex-Dividend Date": "2027-01-05",
+   "Earnings Date": [
+    "2026-10-30"
+   ],
+   "Earnings High": 26.74,
+   "Earnings Low": 23.2,
+   "Earnings Average": 25.40523,
+   "Revenue High": 225933000000,
+   "Revenue Low": 211061000000,
+   "Revenue Average": 219606158010
+  },
+  "2317.TW": {
+   "Ex-Dividend Date": "2026-07-02",
+   "Earnings Date": [
+    "2026-11-12"
+   ],
+   "Earnings High": 5.47,
+   "Earnings Low": 4.12,
+   "Earnings Average": 4.94367,
+   "Revenue High": 3026912000000,
+   "Revenue Low": 2726816000000,
+   "Revenue Average": 2870847106010
+  },
+  "2308.TW": {
+   "Ex-Dividend Date": "2026-06-17",
+   "Earnings Date": [
+    "2026-10-28"
+   ],
+   "Earnings High": 12.92,
+   "Earnings Low": 9.49421,
+   "Earnings Average": 11.24486,
+   "Revenue High": 228099000000,
+   "Revenue Low": 215302659880,
+   "Revenue Average": 218930752310
+  },
+  "3711.TW": {
+   "Ex-Dividend Date": "2026-07-03",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": 8.43667,
+   "Earnings Low": 6.24258,
+   "Earnings Average": 7.0409,
+   "Revenue High": 265005880120,
+   "Revenue Low": 244000000000,
+   "Revenue Average": 260606380630
+  },
+  "BHARTIARTL.NS": {
+   "Ex-Dividend Date": "2026-07-24",
+   "Earnings Date": [
+    "2027-02-03"
+   ],
+   "Earnings High": 16.3,
+   "Earnings Low": 15.8,
+   "Earnings Average": 16.12874,
+   "Revenue High": 635564684000,
+   "Revenue Low": 635564684000,
+   "Revenue Average": 635564684000
+  },
+  "HDFCBANK.NS": {
+   "Ex-Dividend Date": "2026-06-19",
+   "Earnings Date": [
+    "2027-01-16"
+   ],
+   "Earnings High": 13.03,
+   "Earnings Low": 12.99,
+   "Earnings Average": 13.01,
+   "Revenue High": 495622255000,
+   "Revenue Low": 495300000000,
+   "Revenue Average": 495461127500
+  },
+  "ICICIBANK.NS": {
+   "Ex-Dividend Date": "2026-08-03",
+   "Earnings Date": [
+    "2027-01-14"
+   ],
+   "Earnings High": 21.1,
+   "Earnings Low": 20.89,
+   "Earnings Average": 20.995,
+   "Revenue High": 353900000000,
+   "Revenue Low": 264977000000,
+   "Revenue Average": 323471546670
+  },
+  "RELIANCE.NS": {
+   "Ex-Dividend Date": "2026-06-05",
+   "Earnings Date": [
+    "2027-01-15"
+   ],
+   "Earnings High": 19.58,
+   "Earnings Low": 19.58,
+   "Earnings Average": 19.58,
+   "Revenue High": 3392000000000,
+   "Revenue Low": 3251900000000,
+   "Revenue Average": 3325712666670
+  },
+  "LT.NS": {
+   "Ex-Dividend Date": "2026-05-22",
+   "Earnings Date": [
+    "2027-01-28"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 801000000000,
+   "Revenue Low": 788743500000,
+   "Revenue Average": 794871750000
+  },
+  "RY.TO": {
+   "Dividend Date": "2026-11-24",
+   "Ex-Dividend Date": "2026-10-26",
+   "Earnings Date": [
+    "2026-12-03"
+   ],
+   "Earnings High": 4.26,
+   "Earnings Low": 4.08,
+   "Earnings Average": 4.14388,
+   "Revenue High": 18740000000,
+   "Revenue Low": 18223300000,
+   "Revenue Average": 18551732990
+  },
+  "TD.TO": {
+   "Dividend Date": "2026-10-31",
+   "Ex-Dividend Date": "2026-10-09",
+   "Earnings Date": [
+    "2026-12-03"
+   ],
+   "Earnings High": 2.62,
+   "Earnings Low": 2.45,
+   "Earnings Average": 2.53765,
+   "Revenue High": 15577000000,
+   "Revenue Low": 15469859720,
+   "Revenue Average": 15523429860
+  },
+  "SHOP.TO": {
+   "Earnings Date": [
+    "2026-11-03"
+   ],
+   "Earnings High": 0.78,
+   "Earnings Low": 0.49,
+   "Earnings Average": 0.62153,
+   "Revenue High": 4897000000,
+   "Revenue Low": 4768231000,
+   "Revenue Average": 4815751140
+  },
+  "BMO.TO": {
+   "Dividend Date": "2026-11-26",
+   "Ex-Dividend Date": "2026-10-30",
+   "Earnings Date": [
+    "2026-12-02"
+   ],
+   "Earnings High": 3.87,
+   "Earnings Low": 3.57,
+   "Earnings Average": 3.72697,
+   "Revenue High": 10042000000,
+   "Revenue Low": 9820000000,
+   "Revenue Average": 9908386060
+  },
+  "BNS.TO": {
+   "Dividend Date": "2026-10-28",
+   "Ex-Dividend Date": "2026-10-06",
+   "Earnings Date": [
+    "2026-12-02"
+   ],
+   "Earnings High": 2.26,
+   "Earnings Low": 2.11642,
+   "Earnings Average": 2.19804,
+   "Revenue High": 10526000000,
+   "Revenue Low": 10031390830,
+   "Revenue Average": 10285597710
+  },
+  "PETR3.SA": {
+   "Ex-Dividend Date": "2026-08-24",
+   "Earnings Date": [
+    "2026-11-10"
+   ],
+   "Earnings High": 3.902,
+   "Earnings Low": 3.902,
+   "Earnings Average": 3.902,
+   "Revenue High": 185269428730,
+   "Revenue Low": 168526854000,
+   "Revenue Average": 177339518300
+  },
+  "VALE3.SA": {
+   "Ex-Dividend Date": "2026-08-12",
+   "Earnings Date": [
+    "2026-10-29"
+   ],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 11568000000,
+   "Revenue Low": 10074336310,
+   "Revenue Average": 10583872620
+  },
+  "PETR4.SA": {
+   "Ex-Dividend Date": "2026-08-24",
+   "Earnings Date": [],
+   "Earnings High": null,
+   "Earnings Low": null,
+   "Earnings Average": null,
+   "Revenue High": 185269428730,
+   "Revenue Low": 168526854000,
+   "Revenue Average": 177339518300
+  },
+  "ITUB4.SA": {
+   "Ex-Dividend Date": "2026-12-01",
+   "Earnings Date": [],
+   "Earnings High": 1.23,
+   "Earnings Low": 1.23,
+   "Earnings Average": 1.23,
+   "Revenue High": 50730804000,
+   "Revenue Low": 50179310580,
+   "Revenue Average": 50455057290
+  },
+  "BPAC11.SA": {
+   "Ex-Dividend Date": "2026-08-11",
+   "Earnings Date": [],
+   "Earnings High": 1.3974,
+   "Earnings Low": 1.34,
+   "Earnings Average": 1.36281,
+   "Revenue High": 10900000000,
+   "Revenue Low": 10635072200,
+   "Revenue Average": 10769611940
+  }
+ },
+ "errors": {},
+ "info": {
+  "HSBA.L": {
+   "currency": "GBp",
+   "financialCurrency": "USD",
+   "shortName": "HSBC HOLDINGS PLC ORD $0.50 (UK",
+   "longName": "HSBC Holdings plc",
+   "exchange": "LSE",
+   "earningsTimestamp": 1793118600,
+   "earningsTimestampStart": 1793118600,
+   "earningsTimestampEnd": 1793118600,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1793087100,
+   "dividendRate": 0.3,
+   "dividendYield": 2.28,
+   "lastDividendValue": 0.1,
+   "exDividendDate": 1793836800
+  },
+  "SHEL.L": {
+   "currency": "GBp",
+   "financialCurrency": "USD",
+   "shortName": "SHELL PLC ORD EUR0.07",
+   "longName": "Shell plc",
+   "exchange": "LSE",
+   "earningsTimestamp": 1793291400,
+   "earningsTimestampStart": 1793291400,
+   "earningsTimestampEnd": 1793291400,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1793284200,
+   "dividendRate": 1.17,
+   "dividendYield": 3.12,
+   "lastDividendValue": 0.3906,
+   "exDividendDate": 1794441600
+  },
+  "ROG.SW": {
+   "currency": null,
+   "financialCurrency": null,
+   "shortName": null,
+   "longName": null,
+   "exchange": null,
+   "earningsTimestamp": null,
+   "earningsTimestampStart": null,
+   "earningsTimestampEnd": null,
+   "isEarningsDateEstimate": null,
+   "earningsCallTimestampStart": null,
+   "dividendRate": null,
+   "dividendYield": null,
+   "lastDividendValue": null,
+   "exDividendDate": null
+  },
+  "NESN.SW": {
+   "currency": "CHF",
+   "financialCurrency": "CHF",
+   "shortName": "NESTLE N",
+   "longName": "Nestlé S.A.",
+   "exchange": "EBS",
+   "earningsTimestamp": null,
+   "earningsTimestampStart": 1771518600,
+   "earningsTimestampEnd": 1771518600,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1784791800,
+   "dividendRate": 3.1,
+   "dividendYield": 3.6,
+   "lastDividendValue": 3.1,
+   "exDividendDate": 1776643200
+  },
+  "ASML.AS": {
+   "currency": "EUR",
+   "financialCurrency": "EUR",
+   "shortName": "ASML HOLDING",
+   "longName": "ASML Holding N.V.",
+   "exchange": "AMS",
+   "earningsTimestamp": 1791991800,
+   "earningsTimestampStart": 1791991800,
+   "earningsTimestampEnd": 1791991800,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1791982800,
+   "dividendRate": 7.52,
+   "dividendYield": 0.56,
+   "lastDividendValue": 1.88,
+   "exDividendDate": 1792972800
+  },
+  "7203.T": {
+   "currency": "JPY",
+   "financialCurrency": "JPY",
+   "shortName": "TOYOTA MOTOR CORP",
+   "longName": "Toyota Motor Corporation",
+   "exchange": "JPX",
+   "earningsTimestamp": 1793860200,
+   "earningsTimestampStart": 1801722600,
+   "earningsTimestampEnd": 1801722600,
+   "isEarningsDateEstimate": true,
+   "earningsCallTimestampStart": 1793854800,
+   "dividendRate": 100.0,
+   "dividendYield": 2.86,
+   "lastDividendValue": 50.0,
+   "exDividendDate": 1806364800
+  },
+  "005930.KS": {
+   "currency": "KRW",
+   "financialCurrency": "KRW",
+   "shortName": "SamsungElec",
+   "longName": "Samsung Electronics Co., Ltd.",
+   "exchange": "KSC",
+   "earningsTimestamp": 1793167200,
+   "earningsTimestampStart": 1801029600,
+   "earningsTimestampEnd": 1801029600,
+   "isEarningsDateEstimate": true,
+   "earningsCallTimestampStart": 1793235600,
+   "dividendRate": 18404.0,
+   "dividendYield": 9.69,
+   "lastDividendValue": 4601.0,
+   "exDividendDate": 1790640000
+  },
+  "2330.TW": {
+   "currency": "TWD",
+   "financialCurrency": "TWD",
+   "shortName": "TAIWAN SEMICONDUCTOR MANUFACTUR",
+   "longName": "Taiwan Semiconductor Manufacturing Company Limited",
+   "exchange": "TAI",
+   "earningsTimestamp": 1792042200,
+   "earningsTimestampStart": 1799904600,
+   "earningsTimestampEnd": 1799904600,
+   "isEarningsDateEstimate": true,
+   "earningsCallTimestampStart": 1792044000,
+   "dividendRate": 28.0,
+   "dividendYield": 1.25,
+   "lastDividendValue": 7.0,
+   "exDividendDate": 1796860800
+  },
+  "RELIANCE.NS": {
+   "currency": "INR",
+   "financialCurrency": "INR",
+   "shortName": "RELIANCE INDUSTRIES LTD",
+   "longName": "Reliance Industries Limited",
+   "exchange": "NSI",
+   "earningsTimestamp": 1793354400,
+   "earningsTimestampStart": 1800007200,
+   "earningsTimestampEnd": 1800007200,
+   "isEarningsDateEstimate": true,
+   "earningsCallTimestampStart": null,
+   "dividendRate": 6.0,
+   "dividendYield": 0.45,
+   "lastDividendValue": 6.0,
+   "exDividendDate": 1780617600
+  },
+  "RY.TO": {
+   "currency": "CAD",
+   "financialCurrency": "CAD",
+   "shortName": "ROYAL BANK OF CANADA",
+   "longName": "Royal Bank of Canada",
+   "exchange": "TOR",
+   "earningsTimestamp": 1796304600,
+   "earningsTimestampStart": 1796304600,
+   "earningsTimestampEnd": 1796304600,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1796304600,
+   "dividendRate": 7.04,
+   "dividendYield": 2.44,
+   "lastDividendValue": 1.76,
+   "exDividendDate": 1792972800
+  },
+  "PETR4.SA": {
+   "currency": "BRL",
+   "financialCurrency": "BRL",
+   "shortName": "PETROBRAS   PN      N2",
+   "longName": "Petróleo Brasileiro S.A. - Petrobras",
+   "exchange": "SAO",
+   "earningsTimestamp": null,
+   "earningsTimestampStart": 1754593200,
+   "earningsTimestampEnd": 1754593200,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1762513140,
+   "dividendRate": 3.66,
+   "dividendYield": 8.11,
+   "lastDividendValue": 1.348143,
+   "exDividendDate": 1787529600
+  },
+  "AAPL": {
+   "currency": "USD",
+   "financialCurrency": "USD",
+   "shortName": "Apple Inc.",
+   "longName": "Apple Inc.",
+   "exchange": "NMS",
+   "earningsTimestamp": 1793653200,
+   "earningsTimestampStart": 1801170000,
+   "earningsTimestampEnd": 1801170000,
+   "isEarningsDateEstimate": true,
+   "earningsCallTimestampStart": 1793656800,
+   "dividendRate": 1.08,
+   "dividendYield": 0.31,
+   "lastDividendValue": 0.27,
+   "exDividendDate": 1794441600
+  },
+  "ENI.MI": {
+   "currency": "EUR",
+   "financialCurrency": "EUR",
+   "shortName": "ENI",
+   "longName": "Eni S.p.A.",
+   "exchange": "MIL",
+   "earningsTimestamp": 1792769400,
+   "earningsTimestampStart": 1792769400,
+   "earningsTimestampEnd": 1792769400,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1792756800,
+   "dividendRate": 1.08,
+   "dividendYield": 4.31,
+   "lastDividendValue": 0.46,
+   "exDividendDate": 1795392000
+  },
+  "SAP.DE": {
+   "currency": "EUR",
+   "financialCurrency": "EUR",
+   "shortName": "SAP SE                        I",
+   "longName": "SAP SE",
+   "exchange": "GER",
+   "earningsTimestamp": 1792596600,
+   "earningsTimestampStart": 1792596600,
+   "earningsTimestampEnd": 1792596600,
+   "isEarningsDateEstimate": false,
+   "earningsCallTimestampStart": 1792616400,
+   "dividendRate": 2.5,
+   "dividendYield": 1.19,
+   "lastDividendValue": 2.5,
+   "exDividendDate": 1778025600
+  }
+ },
+ "vis_public": [
+  {
+   "Symbol": "A",
+   "Company": "Agilent Technologies, Inc.",
+   "Marketcap": "50801780011.91518",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-23 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.73",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HPE",
+   "Company": "Hewlett Packard Enterprise Company",
+   "Marketcap": "63107676808.9903",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-23 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.28",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MLYBY",
+   "Company": "Malayan Banking Berhad",
+   "Marketcap": "31871851124.077568",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-23 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "LNVGF",
+   "Company": "Lenovo Group Limited",
+   "Marketcap": "32252113002.1995",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.07",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TKOMY",
+   "Company": "Tokio Marine Holdings, Inc.",
+   "Marketcap": "103554081795.98822",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "INTU",
+   "Company": "Intuit Inc.",
+   "Marketcap": "90387235215.94238",
+   "Event Name": "Q1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "2.64",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ROST",
+   "Company": "Ross Stores, Inc.",
+   "Marketcap": "76025115012.0",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.42",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TKOMF",
+   "Company": "Tokio Marine Holdings, Inc.",
+   "Marketcap": "103271918360.3305",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BABAF",
+   "Company": "Alibaba Group Holding Limited",
+   "Marketcap": "262666060754.7326",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.39",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "NHOLF",
+   "Company": "Sompo Holdings, Inc.",
+   "Marketcap": "40252340549.56513",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "591.7",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MSADF",
+   "Company": "MS&AD Insurance Group Holdings, Inc.",
+   "Marketcap": "44227088029.43538",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "KEYS",
+   "Company": "Keysight Technologies, Inc.",
+   "Marketcap": "49195624170.46829",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "3.38",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "LBLCF",
+   "Company": "Loblaw Companies Limited",
+   "Marketcap": "56832469975.201515",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.74",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "WMT",
+   "Company": "Walmart Inc.",
+   "Marketcap": "1000012255760.6562",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.64",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "NTES",
+   "Company": "NetEase, Inc.",
+   "Marketcap": "83014116173.90543",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-19 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "16.13",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BABA",
+   "Company": "Alibaba Group Holding Limited",
+   "Marketcap": "262158554839.02444",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "11.01",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PANW",
+   "Company": "Palo Alto Networks, Inc.",
+   "Marketcap": "270814653318.59277",
+   "Event Name": "Q1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.97",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "P",
+   "Company": "Everpure, Inc.",
+   "Marketcap": "34269089272.52536",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.77",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "EXPGF",
+   "Company": "Experian plc",
+   "Marketcap": "37054105780.87755",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TCTZF",
+   "Company": "Tencent Holdings Limited",
+   "Marketcap": "474272665856.741",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "7.21",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SSEZF",
+   "Company": "SSE plc",
+   "Marketcap": "44042790181.37358",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "LOW",
+   "Company": "Lowe's Companies, Inc.",
+   "Marketcap": "130220641234.30197",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "2.95",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TGT",
+   "Company": "Target Corporation",
+   "Marketcap": "75367825729.59277",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "1.71",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TJX",
+   "Company": "The TJX Companies, Inc.",
+   "Marketcap": "151939422416.8971",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "1.34",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TCEHY",
+   "Company": "Tencent Holdings Limited",
+   "Marketcap": "478865034969.16815",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "5.81",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PDD",
+   "Company": "PDD Holdings Inc.",
+   "Marketcap": "114583415191.0",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "18.84",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BLMIF",
+   "Company": "Bank Leumi le-Israel B.M.",
+   "Marketcap": "33176701345.995884",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.47",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "JDCMF",
+   "Company": "JD.com, Inc.",
+   "Marketcap": "39316514647.06956",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "3.39",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "NVDA",
+   "Company": "NVIDIA Corporation",
+   "Marketcap": "4314344445785.5225",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-17 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "2.47",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "JD",
+   "Company": "JD.com, Inc.",
+   "Marketcap": "38327188866.615295",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "5.88",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "VIK",
+   "Company": "Viking Holdings Ltd",
+   "Marketcap": "38933444451.26117",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "1.27",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HD",
+   "Company": "The Home Depot, Inc.",
+   "Marketcap": "352603481017.6313",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "3.83",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ESLT",
+   "Company": "Elbit Systems Ltd.",
+   "Marketcap": "33844272977.738647",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "3.94",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "DIS",
+   "Company": "The Walt Disney Company",
+   "Marketcap": "205682948508.72723",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "1.69",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BKHPF",
+   "Company": "Bank Hapoalim B.M.",
+   "Marketcap": "34849140840.410736",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-16 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "2.06",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "JPSTF",
+   "Company": "JAPAN POST BANK Co., Ltd.",
+   "Marketcap": "73252238254.67061",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "50.51",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MUFG",
+   "Company": "Mitsubishi UFJ Financial Group, Inc.",
+   "Marketcap": "244250103836.06702",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.34",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "JPPHY",
+   "Company": "Japan Post Holdings Co., Ltd.",
+   "Marketcap": "40769791608.66482",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "DCNSF",
+   "Company": "Daiichi Life Group, Inc.",
+   "Marketcap": "41205470351.188194",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "JPHLF",
+   "Company": "Japan Post Holdings Co., Ltd.",
+   "Marketcap": "42212184064.375",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "35.68",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MBFJF",
+   "Company": "Mitsubishi UFJ Financial Group, Inc.",
+   "Marketcap": "243799862940.7866",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "44.61",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SNGNF",
+   "Company": "Singapore Telecommunications Limited",
+   "Marketcap": "53071213450.50646",
+   "Event Name": "H1 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MFG",
+   "Company": "Mizuho Financial Group, Inc.",
+   "Marketcap": "118550952679.09625",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.17",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ARZGF",
+   "Company": "Assicurazioni Generali S.p.A.",
+   "Marketcap": "52374187269.0506",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.81",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CFRHF",
+   "Company": "Compagnie Financière Richemont SA",
+   "Marketcap": "122756050663.27693",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SMFG",
+   "Company": "Sumitomo Mitsui Financial Group, Inc.",
+   "Marketcap": "152289740378.75833",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.4",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MZHOF",
+   "Company": "Mizuho Financial Group, Inc.",
+   "Marketcap": "118599243379.61739",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "104.77",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SMFNF",
+   "Company": "Sumitomo Mitsui Financial Group, Inc.",
+   "Marketcap": "149630304372.80246",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "50.65",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CFRUY",
+   "Company": "Compagnie Financière Richemont SA",
+   "Marketcap": "122938315393.7643",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "AMAT",
+   "Company": "Applied Materials, Inc.",
+   "Marketcap": "294067522816.1812",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "4.06",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ESOCF",
+   "Company": "Enel SpA",
+   "Marketcap": "108716780752.27853",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.18",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BRDCY",
+   "Company": "Bridgestone Corporation",
+   "Marketcap": "33543543181.205345",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PTTPF",
+   "Company": NaN,
+   "Marketcap": "41164655561.852455",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.07",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "EC",
+   "Company": "Ecopetrol S.A.",
+   "Marketcap": "32091579507.535156",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.61",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PITAF",
+   "Company": "Poste Italiane S.p.A.",
+   "Marketcap": "42925278987.85449",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.48",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ENLAY",
+   "Company": "Enel SpA",
+   "Marketcap": "109710539432.7526",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SIEGY",
+   "Company": "Siemens Aktiengesellschaft",
+   "Marketcap": "234430542271.87524",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.44",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HNHAF",
+   "Company": "Hon Hai Precision Industry Co., Ltd.",
+   "Marketcap": "45827490132.48438",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "4.94",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CSCO",
+   "Company": "Cisco Systems, Inc.",
+   "Marketcap": "388936201037.36017",
+   "Event Name": "Q1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.32",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MURGF",
+   "Company": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+   "Marketcap": "79655654732.71155",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "11.43",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MKGAF",
+   "Company": "Merck KGaA",
+   "Marketcap": "73955719701.47357",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "2.2",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PUTRY",
+   "Company": "PTT Public Company Limited",
+   "Marketcap": "33705958581.012337",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "NU",
+   "Company": "Nu Holdings Ltd.",
+   "Marketcap": "59707310166.75467",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.22",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SMAWF",
+   "Company": "Siemens Aktiengesellschaft",
+   "Marketcap": "231136778310.84406",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "2.81",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BRDCF",
+   "Company": "Bridgestone Corporation",
+   "Marketcap": "32926480215.705345",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "78.96",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TGOPF",
+   "Company": "3i Group plc",
+   "Marketcap": "35115858136.94388",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "KBCSF",
+   "Company": "KBC Group NV",
+   "Marketcap": "53900137187.88745",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "2.82",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ALIZF",
+   "Company": "Allianz SE",
+   "Marketcap": "195093476847.91626",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "7.51",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BN",
+   "Company": "Brookfield Corporation",
+   "Marketcap": "95924144574.50839",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.33",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "KBCSY",
+   "Company": "KBC Group NV",
+   "Marketcap": "54331219552.98825",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "1.6",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "NBIS",
+   "Company": "Nebius Group N.V.",
+   "Marketcap": "38453919756.463715",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "-1.24",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ALIZY",
+   "Company": "Allianz SE",
+   "Marketcap": "195028993089.06097",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.86",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ABMRF",
+   "Company": "ABN AMRO Bank N.V.",
+   "Marketcap": "37487042798.0",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.92",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "RCRRF",
+   "Company": "Recruit Holdings Co., Ltd.",
+   "Marketcap": "156942268868.0",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "83.91",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "RCRUY",
+   "Company": "Recruit Holdings Co., Ltd.",
+   "Marketcap": "157358928699.17657",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "VYLR",
+   "Company": "Vylor Inc.",
+   "Marketcap": "48399480698.32123",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "-0.52",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ENAKF",
+   "Company": "E.ON SE",
+   "Marketcap": "54795399594.711105",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.13",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "OTPBF",
+   "Company": "OTP Bank Nyrt.",
+   "Marketcap": "32640278374.148254",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1413.63",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SMEGF",
+   "Company": "Siemens Energy AG",
+   "Marketcap": "114856052733.18077",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.38",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "RWNFF",
+   "Company": "RWE Aktiengesellschaft",
+   "Marketcap": "50855030638.47417",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.66",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "FNV",
+   "Company": "Franco-Nevada Corporation",
+   "Marketcap": "50814532334.50836",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.73",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PWCDF",
+   "Company": "Power Corporation of Canada",
+   "Marketcap": "41153821955.82184",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.61",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "EONGY",
+   "Company": "E.ON SE",
+   "Marketcap": "56546970372.98518",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "AAVMY",
+   "Company": "ABN AMRO Bank N.V.",
+   "Marketcap": "39369545414.17389",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ALC",
+   "Company": "Alcon Inc.",
+   "Marketcap": "36322675704.956055",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.89",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HELKF",
+   "Company": "Henkel AG & Co. KGaA",
+   "Marketcap": "33804242729.938507",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SFTBF",
+   "Company": "SoftBank Group Corp.",
+   "Marketcap": "135352422988.75",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "41.19",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SFTBY",
+   "Company": "SoftBank Group Corp.",
+   "Marketcap": "133813677044.90222",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PBR",
+   "Company": "Petróleo Brasileiro S.A. - Petrobras",
+   "Marketcap": "118254125549.68068",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.41",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "IFNNF",
+   "Company": "Infineon Technologies AG",
+   "Marketcap": "71849337335.83746",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.63",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HNDAF",
+   "Company": "Honda Motor Co., Ltd.",
+   "Marketcap": "46560478481.1868",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "50.28",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "FKURF",
+   "Company": "Fujikura Ltd.",
+   "Marketcap": "34008091038.779137",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "20.02",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HENKY",
+   "Company": "Henkel AG & Co. KGaA",
+   "Marketcap": "34396133962.46791",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "VODPF",
+   "Company": "Vodafone Group Public Limited Company",
+   "Marketcap": "36838138196.84679",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "RSNHF",
+   "Company": "Resona Holdings, Inc.",
+   "Marketcap": "31114590385.033203",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 21:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "27.06",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "VOD",
+   "Company": "Vodafone Group Public Limited Company",
+   "Marketcap": "36351595015.21518",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-10 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SE",
+   "Company": "Sea Limited",
+   "Marketcap": "47749292774.37367",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.97",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TDG",
+   "Company": "TransDigm Group Incorporated",
+   "Marketcap": "67373791146.725464",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "12.21",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HMC",
+   "Company": "Honda Motor Co., Ltd.",
+   "Marketcap": "46508571630.96906",
+   "Event Name": "Q2 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-10 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "IFNNY",
+   "Company": "Infineon Technologies AG",
+   "Marketcap": "72512079980.76044",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.71",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  }
+ ],
+ "vis_custom": [
+  {
+   "Symbol": "NVDA",
+   "Company": "NVIDIA Corporation",
+   "Marketcap": "4314344445785.5225",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-17 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "2.47",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BRK-B",
+   "Company": "Berkshire Hathaway Inc.",
+   "Marketcap": "1231443308998.5",
+   "Event Name": NaN,
+   "Event Start Date": "2026-11-07 13:00:00+00:00",
+   "Timing": "TAS",
+   "EPS Estimate": "6.14",
+   "Reported EPS": "5.94",
+   "Surprise(%)": "-3.21"
+  },
+  {
+   "Symbol": "WMT",
+   "Company": "Walmart Inc.",
+   "Marketcap": "1000012255760.6562",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-19 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "0.64",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "UCG.MI",
+   "Company": "UniCredit S.p.A.",
+   "Marketcap": "125136121330.38235",
+   "Event Name": NaN,
+   "Event Start Date": "2026-11-09 06:13:00+00:00",
+   "Timing": "TAS",
+   "EPS Estimate": "1.88",
+   "Reported EPS": "2.15",
+   "Surprise(%)": "14.02"
+  },
+  {
+   "Symbol": "ENEL.MI",
+   "Company": "Enel SpA",
+   "Marketcap": "98083606466.25778",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.18",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "G.MI",
+   "Company": "Assicurazioni Generali S.p.A.",
+   "Marketcap": "66870499517.3202",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.81",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PST.MI",
+   "Company": "Poste Italiane S.p.A.",
+   "Marketcap": "40517508523.041016",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.48",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SRG.MI",
+   "Company": "Snam S.p.A.",
+   "Marketcap": "20702358069.53464",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.11",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TRN.MI",
+   "Company": "Terna S.p.A.",
+   "Marketcap": "19638507535.169792",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.14",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "UNI.MI",
+   "Company": "Unipol Assicurazioni S.p.A.",
+   "Marketcap": "19626871146.960052",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.44",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BMED.MI",
+   "Company": "Banca Mediolanum S.p.A.",
+   "Marketcap": "17847411873.576862",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.37",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TIT.MI",
+   "Company": "Telecom Italia S.p.A.",
+   "Marketcap": "12223579502.618704",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.07",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "REC.MI",
+   "Company": "Recordati Industria Chimica e Farmaceutica S.p.A.",
+   "Marketcap": "11003200317.382812",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.79",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "A2A.MI",
+   "Company": "A2A S.p.A.",
+   "Marketcap": "7665831240.544144",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "INW.MI",
+   "Company": "Infrastrutture Wireless Italiane S.p.A.",
+   "Marketcap": "6588182632.536449",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.1",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HER.MI",
+   "Company": "Hera S.p.A.",
+   "Marketcap": "5596336908.611902",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "AVIO.MI",
+   "Company": "Avio S.p.A.",
+   "Marketcap": "1548863437.4319267",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SPM.MI",
+   "Company": "Saipem SpA",
+   "Marketcap": "0.0",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-18 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.04",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CSCO",
+   "Company": "Cisco Systems, Inc.",
+   "Marketcap": "388936201037.36017",
+   "Event Name": "Q1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "1.32",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "HD",
+   "Company": "The Home Depot, Inc.",
+   "Marketcap": "352603481017.6313",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-17 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "3.83",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "AMAT",
+   "Company": "Applied Materials, Inc.",
+   "Marketcap": "294067522816.1812",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "4.06",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PANW",
+   "Company": "Palo Alto Networks, Inc.",
+   "Marketcap": "270814653318.59277",
+   "Event Name": "Q1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-18 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.97",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CRWD",
+   "Company": "CrowdStrike Holdings, Inc.",
+   "Marketcap": "234051028059.2407",
+   "Event Name": "Q3 2027 Earnings Announcement",
+   "Event Start Date": "2026-12-01 21:00:00+00:00",
+   "Timing": "AMC",
+   "EPS Estimate": "0.31",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "SIE.DE",
+   "Company": "Siemens Aktiengesellschaft",
+   "Marketcap": "210044444918.04703",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "2.81",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ENR.DE",
+   "Company": "Siemens Energy AG",
+   "Marketcap": "107428141887.02863",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "1.38",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "MUV2.DE",
+   "Company": "Münchener Rückversicherungs-Gesellschaft Aktiengesellschaft in München",
+   "Marketcap": "71940710694.77887",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "11.43",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "IFX.DE",
+   "Company": "Infineon Technologies AG",
+   "Marketcap": "66391437776.597916",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.63",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "EOAN.DE",
+   "Company": "E.ON SE",
+   "Marketcap": "50210293361.69405",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "0.13",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "ALV.DE",
+   "Company": "Allianz SE",
+   "Marketcap": "0.0",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "7.51",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "8306.T",
+   "Company": "Mitsubishi UFJ Financial Group, Inc.",
+   "Marketcap": "38663551943730.0",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 06:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "44.61",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "6098.T",
+   "Company": "Recruit Holdings Co., Ltd.",
+   "Marketcap": "24944098662560.0",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-11 06:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "83.91",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "8316.T",
+   "Company": "Sumitomo Mitsui Financial Group, Inc.",
+   "Marketcap": "24296108798064.0",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 06:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "50.65",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "8411.T",
+   "Company": "Mizuho Financial Group, Inc.",
+   "Marketcap": "19091291486041.0",
+   "Event Name": "Q2 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-13 06:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "104.77",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "2317.TW",
+   "Company": "Hon Hai Precision Industry Co., Ltd.",
+   "Marketcap": "3398934615688.5",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-12 05:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "4.94",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "RY.TO",
+   "Company": "Royal Bank of Canada",
+   "Marketcap": "399158809787.5467",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-12-03 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "4.15",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "TD.TO",
+   "Company": "The Toronto-Dominion Bank",
+   "Marketcap": "286643423921.3514",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-12-03 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "2.54",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BMO.TO",
+   "Company": "Bank of Montreal",
+   "Marketcap": "170839769161.35873",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-12-02 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "3.73",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "CFR.SW",
+   "Company": "Compagnie Financière Richemont SA",
+   "Marketcap": "102301611678.0",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-13 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PRX.AS",
+   "Company": "Prosus N.V.",
+   "Marketcap": "78791344792.60992",
+   "Event Name": "H1 2027 Earnings Announcement",
+   "Event Start Date": "2026-11-25 16:30:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": NaN,
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "PETR3.SA",
+   "Company": "Petróleo Brasileiro S.A. - Petrobras",
+   "Marketcap": "657454236505.3",
+   "Event Name": "Q3 2026 Earnings Announcement",
+   "Event Start Date": "2026-11-10 20:00:00+00:00",
+   "Timing": "TNS",
+   "EPS Estimate": "3.9",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  },
+  {
+   "Symbol": "BNS.TO",
+   "Company": "The Bank of Nova Scotia",
+   "Marketcap": "160605234307.40356",
+   "Event Name": "Q4 2026 Earnings Announcement",
+   "Event Start Date": "2026-12-02 13:30:00+00:00",
+   "Timing": "BMO",
+   "EPS Estimate": "2.2",
+   "Reported EPS": NaN,
+   "Surprise(%)": NaN
+  }
+ ]
+}

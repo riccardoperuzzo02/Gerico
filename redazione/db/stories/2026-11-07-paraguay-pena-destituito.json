@@ -1,0 +1,130 @@
+{
+  "article": "Il Senato del Paraguay ha destituito il presidente Santiago Peña il 6 novembre con 44 voti su 45, e un senatore si è astenuto, riporta Al Jazeera. Il caso riguarda il crollo di Ueno Bank, che la banca centrale ha commissariato; almeno 27 persone sono imputate, scrive Al Jazeera.\n\nLa Procura ha ordinato gli arresti domiciliari di Peña con l'accusa di abuso di fiducia e altri reati, riferiscono Al Jazeera, ANSA e Il Post. Secondo Reuters, un giudice ha poi disposto la detenzione preventiva dell'ex presidente in attesa del processo.\n\nIl vicepresidente Pedro Alliana, 52 anni, ha giurato come nuovo presidente, scrive Al Jazeera. ANSA riferisce che ci sono state nuove proteste e incidenti davanti alla casa di Peña.\n\nLe fonti consultate non riportano ancora la difesa di Peña né la linea politica che il nuovo governo intende seguire, e non danno altri dettagli sull'inchiesta su Ueno Bank oltre al numero degli imputati.",
+  "change": "9 novembre: un giudice dispone la detenzione preventiva di Peña in attesa del processo, secondo Reuters.",
+  "city": {
+    "lat": -25.27,
+    "lon": -57.63,
+    "name": "Asunción"
+  },
+  "divergences": [],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Un giudice ha disposto la detenzione preventiva dell'ex presidente Peña in attesa del processo.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il 6 novembre 44 senatori su 45 hanno votato per destituire il presidente Santiago Peña; uno si è astenuto.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "La Procura ha ordinato gli arresti domiciliari di Peña con l'accusa di abuso di fiducia e altri reati.",
+      "who": [
+        "Al Jazeera",
+        "ANSA",
+        "Il Post"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il caso riguarda il crollo di Ueno Bank: la banca centrale l'ha commissariata e almeno 27 persone sono imputate.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il vicepresidente Pedro Alliana, 52 anni, ha giurato come nuovo presidente.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Secondo ANSA ci sono state nuove proteste e incidenti davanti alla casa di Peña.",
+      "who": [
+        "ANSA"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-07T07:20:54+01:00",
+  "history": [
+    {
+      "at": "2026-11-09T07:26:39+01:00",
+      "text": "9 novembre: un giudice dispone la detenzione preventiva di Peña in attesa del processo, secondo Reuters."
+    },
+    {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "Prima notizia: il Senato destituisce Peña, che viene arrestato; giura Alliana."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Come si sviluppa l'inchiesta su Ueno Bank?",
+    "Che linea terrà il governo di Alliana?"
+  ],
+  "places": [
+    "PY"
+  ],
+  "rank": 7,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Peña destituito e agli arresti; giura Alliana.",
+      "area": "Medio Oriente",
+      "at": "2026-11-07T07:20:54+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/11/7/paraguays-santiago-pena-under-arrest-new-president-pedro-alliana-sworn-in"
+    },
+    {
+      "angle": "Arrestato Peña per il caso Ueno Bank; proteste.",
+      "area": "Italia",
+      "at": "2026-11-07T07:20:54+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/07/paraguay-arrestato-lex-presidente-pena-per-il-caso-ueno-bank_2c34c06b-3361-4145-a093-29a0dd046ae4.html"
+    },
+    {
+      "angle": "Peña destituito e arrestato.",
+      "area": "Italia",
+      "at": "2026-11-07T07:20:54+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/06/presidente-paraguay-santiago-pena-impeachment-destituito/"
+    },
+    {
+      "angle": "Peña davanti ai pm dopo la destituzione.",
+      "area": "Europa",
+      "at": "2026-11-09T07:26:39+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/07/paraguay-s-ex-president-pena-faces-prosecutors-after-impeachment-house-arrest"
+    }
+  ],
+  "status": "live",
+  "summary": "Il Senato ha destituito il presidente Santiago Peña per il caso Ueno Bank e la Procura lo ha messo agli arresti domiciliari. Il vice Pedro Alliana ha giurato come nuovo presidente.",
+  "tags": [
+    "Paraguay",
+    "America Latina",
+    "Banche"
+  ],
+  "themes": [],
+  "title": "Paraguay: Peña destituito dal Senato e arrestato, giura Alliana",
+  "updated": "2026-11-09T07:26:39+01:00",
+  "view": "È accertato che il Senato ha destituito Peña con un voto quasi unanime e che la Procura ne ha disposto l'arresto; le testate concordano sui fatti e il Parlamento ha respinto le sue dimissioni. Le imputazioni sono ipotesi della Procura, non condanne. ANSA riporta proteste, Al Jazeera nel suo articolo non le cita.\n\nConta perché il caso Ueno Bank ha lasciato clienti senza accesso a conti e pensioni, e perché la presidenza passa al vice di Peña. Da guardare: le indagini sugli altri imputati e le mosse del nuovo governo."
+}

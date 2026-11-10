@@ -1,25 +1,25 @@
 {
-  "change": "",
+  "change": "5 novembre: il rally si ribalta, Nasdaq -5,52% e Nikkei in forte calo stamattina.",
   "divergences": [
     {
-      "point": "Perché salgono i mercati",
+      "point": "Perché cadono i titoli dell'IA",
       "positions": [
         {
-          "says": "Il rialzo è legato alle attese di fine della guerra in Iran, a meno spesa in IA e a rendimenti più bassi.",
-          "who": [
-            "ANSA"
-          ]
-        },
-        {
-          "says": "Gli investitori guardano oltre il cambio politico, puntando su consumi e intelligenza artificiale.",
-          "who": [
-            "Teleborsa"
-          ]
-        },
-        {
-          "says": "Cita l'analista Dan Ives: un Congresso democratico potrebbe creare ostacoli a leggi su IA e tecnologia.",
+          "says": "Pesano il timore di restrizioni locali ai data center e una rotazione dalla tecnologia verso altri settori e dagli Usa verso l'estero.",
           "who": [
             "Al Jazeera"
+          ]
+        },
+        {
+          "says": "Un analista parla di mercati che prezzano il voto dopo il rally del giorno prima, con i prezzi dell'elettricità che rendono i data center un tema politico.",
+          "who": [
+            "Fox Business"
+          ]
+        },
+        {
+          "says": "Cita il timore di regole più strette sui data center che possano ridurre la domanda di chip.",
+          "who": [
+            "Teleborsa"
           ]
         }
       ]
@@ -28,51 +28,65 @@
   "facts": [
     {
       "n": 1,
-      "text": "Il 4 novembre il Dow Jones chiude a +3,03% (53.356 punti), l'S&P 500 a +1,58% e il Nasdaq a +1,44%.",
+      "text": "Il 5 novembre il Dow Jones chiude a -3,44% (51.523 punti), l'S&P 500 a -4,36% (7.354) e il Nasdaq a -5,52% (24.315).",
+      "who": [
+        "Fox Business"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Nvidia perde il 9,26% a 181,60 dollari e l'indice dei semiconduttori Philadelphia cede oltre il 12%.",
+      "who": [
+        "Fox Business"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A metà seduta Al Jazeera attribuisce il calo ai timori su regole e blocchi ai data center: 39 iniziative locali su 45 li limitano.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Le Borse europee chiudono contrastate: Milano circa -1,1%, Francoforte -0,3%, Londra invariata, Parigi +0,4%.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "A Milano STMicroelectronics perde circa l'11%, mentre Tenaris sale del 4,4%.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Ftse Mib chiude a 50.505 punti, in calo dell'1,03% secondo ANSA.",
       "who": [
         "ANSA"
       ]
     },
     {
       "n": 1,
-      "text": "Le Borse europee chiudono in rialzo: Madrid +3%, Francoforte +2,22%, Milano +2,18%, Parigi +1,96%, Londra +1,79%.",
-      "who": [
-        "ANSA"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il Wti chiude in calo dell'8,26% a New York e il gas scende di oltre l'8%, a circa 84 euro al megawattora.",
-      "who": [
-        "ANSA"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il rendimento del Btp a 10 anni scende al 4,31% (-15 punti base) e quello del Treasury a 4,90% (-6 punti base).",
-      "who": [
-        "ANSA"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "A Milano Intesa Sanpaolo sale del 5,45% e UniCredit del 5,48%; Technoprobe perde il 7%, Prysmian il 6,9% e Avio il 6,04%.",
-      "who": [
-        "ANSA"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "I dati sul lavoro di ottobre negli Usa battono le attese, secondo Teleborsa.",
+      "text": "La Banca d'Inghilterra alza i tassi di 25 punti base al 4%; lo spread Btp-Bund sale a circa 108 punti e il Btp a 10 anni rende il 4,33%.",
       "who": [
         "Teleborsa"
       ]
     },
     {
       "n": 2,
-      "text": "Teleborsa riporta l'euro-dollaro in rialzo e il dollaro in calo; ANSA indica l'euro a 1,1237 (+0,4%).",
+      "text": "L'oro sale di circa l'1% a 4.115 dollari l'oncia, massimo da due settimane secondo Al Jazeera; il petrolio guadagna circa il 2,4% secondo Teleborsa.",
       "who": [
-        "Teleborsa",
+        "Al Jazeera",
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Nikkei apre in calo del 5,1% a circa 56.930 punti e il cambio dollaro-yen è a 157,50, secondo ANSA.",
+      "who": [
         "ANSA"
       ]
     }
@@ -80,58 +94,72 @@
   "firstSeen": "2026-11-05T07:24:55+01:00",
   "history": [
     {
+      "at": "2026-11-06T07:21:33+01:00",
+      "text": "5 novembre: il rally si ribalta, Nasdaq -5,52% e Nikkei in forte calo stamattina."
+    },
+    {
       "at": "2026-11-05T07:24:55+01:00",
       "text": "Prima notizia: Mercati in forte rialzo dopo il voto Usa"
     }
   ],
   "notCovered": [],
   "open": [
-    "Il calo del petrolio dipende da attese di pace o da un cambiamento reale su Hormuz?",
-    "I rendimenti più bassi reggeranno nei prossimi giorni?"
+    "Le restrizioni locali ai data center cambieranno davvero la spesa in IA?",
+    "I listini asiatici e europei seguiranno Wall Street?"
   ],
-  "rank": 6,
+  "rank": 2,
   "section": "mercati",
   "sources": [
     {
-      "angle": "Chiusure di Wall Street e delle Borse europee, petrolio, gas e rendimenti.",
-      "area": "Italia",
-      "country": "Italia",
-      "date": "2026-11-04",
-      "kind": "agenzia",
-      "name": "ANSA",
+      "angle": "Chiusure di Wall Street e titoli più colpiti.",
+      "area": "Stati Uniti",
+      "country": "Stati Uniti",
+      "date": "2026-11-05",
+      "kind": "tv",
+      "name": "Fox Business",
       "stance": "allineata",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/i-mercati-brindano-dopo-il-voto-usa-giu-la-difesa-e-rally-di-banche-e-tech_e4cb0902-0e68-4d16-9575-cc40d4484c1a.html"
+      "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"
     },
     {
-      "angle": "Wall Street dopo il voto e dati macro.",
+      "angle": "Cause del calo e dati di metà seduta.",
+      "area": "Medio Oriente",
+      "country": "Qatar",
+      "date": "2026-11-05",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets"
+    },
+    {
+      "angle": "Chiusura europea, spread, Banca d'Inghilterra.",
       "area": "Italia",
       "country": "Italia",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "kind": "agenzia",
       "name": "Teleborsa",
       "stance": "allineata",
-      "url": "https://www.teleborsa.it/News/2026/11/04/brillante-wall-street-dopo-la-vittoria-dei-dem-e-dati-macro-193.html"
+      "url": "https://www.teleborsa.it/News/2026/11/05/europa-peggiora-piazza-affari-maglia-nera-233.html"
     },
     {
-      "angle": "Apertura di Wall Street e timori sulla regolazione tecnologica.",
-      "area": "Medio Oriente",
-      "country": "Qatar",
-      "date": "2026-11-04",
-      "kind": "tv",
-      "name": "Al Jazeera",
-      "stance": "parziale",
-      "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections"
+      "angle": "Apertura di Tokyo e legame con Wall Street.",
+      "area": "Italia",
+      "country": "Italia",
+      "date": "2026-11-06",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/06/borsa-tokyo-crolla-in-apertura-nikkei-51_e7ff7704-62a6-4166-aa2f-f36a2acf4c5d.html"
     }
   ],
-  "status": "live",
-  "summary": "Il 4 novembre il Dow Jones chiude a +3,03% e l'S&P 500 a +1,58%, mentre le Borse europee salgono fra l'1,8% e il 3%. ANSA lega il rialzo al voto Usa e alle attese di fine della guerra in Iran, con petrolio e gas in forte calo.",
+  "status": "archived",
+  "summary": "Il 5 novembre il Nasdaq perde il 5,52% e l'S&P 500 il 4,36%, trascinati da chip e data center dopo la vittoria dei Democratici. Stamattina il Nikkei cede oltre il 5% in apertura.",
   "tags": [
     "Wall Street",
-    "Petrolio",
-    "Titoli di Stato",
-    "Stati Uniti"
+    "Intelligenza artificiale",
+    "Stati Uniti",
+    "Titoli di Stato"
   ],
-  "title": "Mercati: dopo il voto Usa Wall Street e le Borse europee in forte rialzo",
-  "updated": "2026-11-05T07:24:55+01:00",
-  "view": "È accertato che il 4 novembre i listini Usa ed europei hanno chiuso in forte rialzo e che il petrolio e il gas sono scesi. Sulle cause le fonti non coincidono: ANSA parla di attese di pace in Iran, di minore spesa in IA e di rendimenti più bassi; Teleborsa di investitori che guardano oltre il cambio politico; Al Jazeera riporta il timore di un analista su nuove regole per la tecnologia.\n\nConta perché il calo del petrolio e dei rendimenti sostiene banche e titoli tecnologici, mentre la difesa scende. Da guardare: se il petrolio regge senza una riapertura di Hormuz e come reagiscono i listini asiatici stamattina."
+  "title": "Mercati: il 5 novembre crollano i titoli dell'IA, Nasdaq a -5,5%",
+  "updated": "2026-11-06T07:21:33+01:00",
+  "view": "È accertato che il 5 novembre Wall Street ha chiuso in forte calo, con il Nasdaq al peggior giorno da aprile 2025, e che stamattina Tokyo ha aperto con un ribasso superiore al 5%. Le cause sono lette in modo vicino ma non uguale: Al Jazeera e Teleborsa puntano sui timori per regole ai data center dopo il voto, mentre un analista citato da Fox Business parla anche di prezzi già scontati dopo il rally del giorno prima.\n\nConta perché il rialzo del 4 novembre si è rovesciato in 24 ore e il settore dei chip pesa molto sugli indici. Da guardare: i dati sul lavoro Usa di oggi pomeriggio, la tenuta dei listini asiatici e se il petrolio resta sopra i 90 dollari."
 }

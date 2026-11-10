@@ -1,7 +1,21 @@
 {
-  "change": "",
+  "change": "6 novembre: aperta un'indagine contro ignoti per gli allarmi a Malpensa; Il Post parla di quarto giorno di allarmi in Europa.",
   "divergences": [],
   "facts": [
+    {
+      "n": 1,
+      "text": "La procura ha aperto un'indagine contro ignoti per gli allarmi bomba all'aeroporto di Malpensa di giovedì.",
+      "who": [
+        "Il Post"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Post parla del quarto giorno di allarmi bomba in Europa.",
+      "who": [
+        "Il Post"
+      ]
+    },
     {
       "n": 1,
       "text": "Almeno sette voli e una nave hanno ricevuto minacce di bomba nello stesso giorno e non sono stati trovati ordigni.",
@@ -34,6 +48,10 @@
   "firstSeen": "2026-11-04T07:25:00+01:00",
   "history": [
     {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "6 novembre: aperta un'indagine contro ignoti per gli allarmi a Malpensa; Il Post parla di quarto giorno di allarmi in Europa."
+    },
+    {
       "at": "2026-11-04T07:25:00+01:00",
       "text": "Prima notizia: falsi allarmi bomba su sette voli e una nave in Europa."
     }
@@ -43,7 +61,7 @@
     "Chi ha inviato le minacce e le minacce sono coordinate?",
     "Ci sono collegamenti con gli attacchi informatici ai supermercati?"
   ],
-  "rank": 9,
+  "rank": 10,
   "section": "mondo",
   "sources": [
     {
@@ -57,14 +75,14 @@
       "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/03/bomb-threats-reported-on-two-passenger-planes-to-warsaw-both-land"
     },
     {
-      "angle": "Allarmi infondati su sette aerei, due atterrati a Roma.",
+      "angle": "Indagine contro ignoti per Malpensa.",
       "area": "Italia",
-      "at": "2026-11-04T07:25:00+01:00",
+      "at": "2026-11-07T07:20:54+01:00",
       "country": "Italia",
       "kind": "giornale online",
       "name": "Il Post",
       "stance": "allineata",
-      "url": "https://www.ilpost.it/2026/11/03/europe-aerei-allarme-bomba/"
+      "url": "https://www.ilpost.it/2026/11/06/indagine-ignoti-allarme-bomba-malpensa/"
     },
     {
       "angle": "Falsi allarmi a Fiumicino e Bergamo.",
@@ -77,7 +95,7 @@
       "url": "https://www.open.online/2026/11/03/falsi-allarmi-bomba-aerei-europa-fiumicino-bergamo-cosa-successo/"
     }
   ],
-  "status": "live",
+  "status": "archived",
   "summary": "Il 3 novembre minacce di bomba hanno coinvolto almeno sette voli in vari Paesi europei e una nave da crociera nel porto greco di Syros, ma non sono stati trovati ordigni. Due aerei sono atterrati a Roma.",
   "tags": [
     "Sicurezza",
@@ -85,6 +103,6 @@
     "Trasporto aereo"
   ],
   "title": "Europa: falsi allarmi bomba su sette voli e una nave, nessun ordigno trovato",
-  "updated": "2026-11-04T07:25:00+01:00",
+  "updated": "2026-11-07T07:20:54+01:00",
   "view": "È accertato che il 3 novembre una serie di minacce di bomba ha coinvolto voli e una nave in Europa e che le verifiche non hanno trovato ordigni; Reuters, Il Post e Open concordano sul numero di sette voli. Non è noto chi abbia lanciato gli allarmi né se siano collegati.\n\nConta perché in giornata si sommano agli attacchi informatici ai supermercati e creano disagi nei trasporti. Da guardare: eventuali indagini sull'origine delle minacce e un collegamento con gli altri episodi, oggi non dimostrato."
 }

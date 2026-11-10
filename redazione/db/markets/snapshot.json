@@ -1,180 +1,140 @@
 {
-  "asOf": "2026-11-05T07:25:56+01:00",
+  "asOf": "2026-11-10T07:25:00+01:00",
   "classes": [
     {
       "items": [
         {
-          "chg": 3.03,
-          "name": "Dow Jones",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "53.356,12",
-          "why": "Rialzo dopo la vittoria dei Democratici e il calo del petrolio."
-        },
-        {
-          "chg": 1.58,
-          "name": "S&P 500",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "7.688,62",
-          "why": ""
-        },
-        {
-          "chg": 1.44,
-          "name": "Nasdaq",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "25.736,51",
-          "why": ""
-        },
-        {
-          "chg": 2.18,
-          "name": "Ftse Mib",
-          "note": "Chiusura del 4 novembre (Teleborsa; ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "51.031",
-          "why": "Banche in testa."
-        },
-        {
-          "chg": 2.22,
-          "name": "Dax",
-          "note": "Chiusura del 4 novembre (Teleborsa; ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "26.438",
-          "why": ""
-        },
-        {
-          "chg": 1.96,
-          "name": "Cac 40",
-          "note": "Chiusura del 4 novembre (ANSA). Livello non indicato.",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "n.d.",
-          "why": ""
-        },
-        {
-          "chg": 1.79,
-          "name": "Ftse 100",
-          "note": "Chiusura del 4 novembre (Teleborsa; ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "10.829",
-          "why": ""
-        },
-        {
-          "chg": 3,
-          "name": "Ibex 35 (Madrid)",
-          "note": "Chiusura del 4 novembre (ANSA). Livello non indicato.",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "n.d.",
-          "why": ""
-        },
-        {
-          "chg": -0.36,
+          "chg": 3.13,
           "name": "Nikkei 225 (Tokyo)",
-          "note": "Dato delle 03:50 di oggi, a seduta in corso (Teleborsa).",
-          "story": "",
+          "note": "Apertura del 10 novembre",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "oltre 60.000",
+          "why": "Rimbalzo dei titoli tecnologici e calo del petrolio, secondo l'Ansa."
+        },
+        {
+          "chg": 0.08,
+          "name": "Hong Kong (Hang Seng)",
+          "note": "Dato intraday delle 06:20",
           "value": "n.d.",
           "why": ""
         },
         {
-          "chg": 4.8,
-          "name": "Hang Seng (Hong Kong)",
-          "note": "Dato delle 06:20 di oggi, a seduta in corso (Teleborsa).",
-          "story": "",
+          "chg": 0.37,
+          "name": "Shanghai",
+          "note": "Apertura pomeridiana delle 06:08",
           "value": "n.d.",
-          "why": "Forte rialzo dopo il voto Usa."
+          "why": ""
         },
         {
-          "chg": 2.26,
-          "name": "Shanghai",
-          "note": "Apertura del pomeriggio di oggi, 06:08 (Teleborsa).",
-          "story": "",
+          "chg": 2.69,
+          "name": "Ftse Mib",
+          "note": "Chiusura del 9 novembre",
+          "value": "51.399",
+          "why": "Spinto dal risiko bancario."
+        },
+        {
+          "chg": 1.9,
+          "name": "Dax",
+          "note": "Chiusura del 9 novembre",
           "value": "n.d.",
+          "why": ""
+        },
+        {
+          "chg": 1.1,
+          "name": "Cac 40",
+          "note": "Chiusura del 9 novembre",
+          "value": "n.d.",
+          "why": ""
+        },
+        {
+          "chg": 1,
+          "name": "Ftse 100",
+          "note": "Chiusura del 9 novembre",
+          "value": "n.d.",
+          "why": ""
+        },
+        {
+          "chg": 0.8,
+          "name": "Aex",
+          "note": "Chiusura del 9 novembre",
+          "value": "n.d.",
+          "why": ""
+        },
+        {
+          "chg": 0.32,
+          "name": "S&P 500",
+          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "7.376,86",
+          "why": ""
+        },
+        {
+          "chg": 1.09,
+          "name": "Nasdaq",
+          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "24.579,42",
+          "why": ""
+        },
+        {
+          "chg": -0.46,
+          "name": "Dow Jones",
+          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "51.285,73",
           "why": ""
         }
       ],
       "key": "indici",
       "label": "Indici",
-      "note": "Hong Kong, Shanghai e Tokyo: dati di stamattina, a seduta in corso."
+      "note": "Europa: chiusure del 9 novembre. Asia: dati del mattino del 10."
     },
     {
       "items": [
         {
-          "chg": 5.45,
-          "name": "Intesa Sanpaolo",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "—",
-          "why": "Banche in testa con il calo dei rendimenti."
+          "chg": 10,
+          "name": "Banco Bpm",
+          "note": "Chiusura del 9 novembre (ANSA, 17:44).",
+          "value": "n.d.",
+          "why": "Il risiko bancario spinge il titolo, secondo ANSA."
         },
         {
-          "chg": 5.48,
+          "chg": 5.3,
           "name": "UniCredit",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "—",
-          "why": ""
+          "note": "Dato intraday.",
+          "value": "n.d."
         },
         {
-          "chg": -7,
-          "name": "Technoprobe",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "",
-          "value": "—",
-          "why": "Dopo l'uscita del direttore tecnico."
+          "chg": -1.59,
+          "name": "Moncler",
+          "note": "Dato intraday.",
+          "value": "n.d."
         },
         {
-          "chg": -6.9,
-          "name": "Prysmian",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "",
-          "value": "—",
-          "why": ""
+          "chg": -1.04,
+          "name": "Stellantis",
+          "note": "Dato intraday.",
+          "value": "n.d."
         },
         {
-          "chg": -6.04,
-          "name": "Avio",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "—",
-          "why": "Difesa in calo con le attese di meno spesa militare."
-        },
-        {
-          "chg": 8.3,
-          "name": "Amazon (Wall Street)",
-          "note": "Dato intraday del 4 novembre (ANSA).",
-          "story": "",
-          "value": "—",
-          "why": ""
+          "chg": -6,
+          "name": "Nvidia",
+          "note": "Pre-market del 9 novembre",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "n.d.",
+          "why": "Indagine interna sull'amministratore delegato Huang."
         }
       ],
       "key": "azioni",
       "label": "Azioni",
-      "note": ""
+      "note": "Banco Bpm a fine seduta; gli altri titoli sono dati delle 11:58, secondo Teleborsa."
     },
     {
       "items": [
         {
-          "bp": -15,
-          "name": "Btp 10 anni",
-          "note": "4 novembre (ANSA); Teleborsa a fine seduta europea 4,34%.",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "4,31%",
-          "why": "Rendimenti in calo dopo il voto Usa."
-        },
-        {
-          "bp": -6,
           "name": "Spread Btp-Bund",
-          "note": "Chiusura del 4 novembre (Teleborsa).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "106 pb",
-          "why": ""
-        },
-        {
-          "bp": -6,
-          "name": "Treasury 10 anni",
-          "note": "4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "4,90%",
+          "note": "Chiusura del 9 novembre",
+          "value": "103 pb",
           "why": ""
         }
       ],
@@ -185,48 +145,45 @@
     {
       "items": [
         {
-          "chg": 0.4,
-          "name": "EUR/USD",
-          "note": "4 novembre (ANSA).",
-          "story": "2026-11-05-mercati-rally-voto-usa",
-          "value": "1,1237",
-          "why": "Dollaro in calo dopo il voto Usa."
+          "name": "USD/JPY",
+          "note": "Mattina del 10 novembre",
+          "value": "oltre 158",
+          "why": "Yen stabile sul dollaro, riferisce l'Ansa."
         }
       ],
       "key": "valute",
       "label": "Valute",
-      "note": "Le altre coppie non hanno un dato verificato."
+      "note": ""
     },
     {
       "items": [
         {
-          "chg": -8.26,
-          "name": "Wti",
-          "note": "Chiusura del 4 novembre (ANSA).",
-          "story": "2026-10-07-hormuz-on-peace",
-          "value": "88,15 $",
-          "why": "Attese di fine della guerra con l'Iran dopo il voto Usa."
-        },
-        {
-          "chg": -8.59,
+          "chg": -5.6,
           "name": "Brent",
-          "note": "Chiusura del 4 novembre (ANSA).",
+          "note": "Rilevazione delle 20:50 del 9 novembre",
           "story": "2026-10-07-hormuz-on-peace",
-          "value": "94,70 $",
-          "why": ""
+          "value": "92,80 $",
+          "why": "Speranza di progressi nella trattativa Usa-Iran, secondo l'Ansa."
         },
         {
-          "chg": -8,
-          "name": "Gas TTF",
-          "note": "4 novembre (ANSA); calo di oltre l'8%.",
+          "chg": -4.1,
+          "name": "Wti",
+          "note": "Rilevazione delle 20:50 del 9 novembre",
           "story": "2026-10-07-hormuz-on-peace",
-          "value": "84,26 €/MWh",
+          "value": "87,10 $",
+          "why": "Speranza di progressi nella trattativa Usa-Iran, secondo l'Ansa."
+        },
+        {
+          "chg": -3.9,
+          "name": "Gas TTF",
+          "note": "Rilevazione delle 18:14 del 9 novembre",
+          "value": "82,20 €/MWh",
           "why": ""
         }
       ],
       "key": "materie",
       "label": "Materie prime",
-      "note": "Oro: nessun dato verificato di oggi."
+      "note": ""
     },
     {
       "items": [],
@@ -238,21 +195,17 @@
   "label": "Chiusure di ieri e Asia stamattina",
   "sources": [
     {
-      "name": "ANSA (4 novembre, chiusure)",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/i-mercati-brindano-dopo-il-voto-usa-giu-la-difesa-e-rally-di-banche-e-tech_e4cb0902-0e68-4d16-9575-cc40d4484c1a.html"
+      "name": "ANSA, petrolio",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/il-petrolio-crolla-su-possibili-progressi-in-medio-oriente-brent-56_aabacb7b-0fb4-4a98-a0b2-2b9d0cc3627d.html"
     },
     {
-      "name": "ANSA (petrolio)",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/04/il-petrolio-chiude-con-un-tonfo-a-new-york-826-con-la-vittoria-dem_8f3215dc-4514-4342-a38d-4b9cf832b5be.html"
+      "name": "ANSA, Tokyo",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-tokyo-guadagna-oltre-il-3-in-apertura-il-nikkei-torna-sopra-quota-60mila_ebf520f9-1660-407f-be39-9967c37cab8b.html"
     },
     {
-      "name": "Teleborsa (4 novembre, chiusura europea)",
-      "url": "https://www.teleborsa.it/News/2026/11/04/chiusura-in-rialzo-per-le-borse-europee-con-le-banche-protagoniste-227.html"
-    },
-    {
-      "name": "Teleborsa (Asia, 5 novembre)",
-      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-5-novembre-2026-1_2026-11-05_TLB-BIT.html"
+      "name": "Teleborsa, Hong Kong",
+      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/borsa-stabile-hong-kong-che-riporta-un-cauto-008-15_2026-11-10_TLB-1LINER.html?lang=it"
     }
   ],
-  "summary": "Wall Street chiude in forte rialzo dopo il voto Usa: Dow Jones +3,03%, S&P 500 +1,58%. Le Borse europee salgono fra l'1,8% e il 3%, il petrolio Wti cala dell'8,26% e il rendimento del Btp scende al 4,31%."
+  "summary": "Europa in forte rialzo ieri, Tokyo apre sopra il 3%, petrolio in calo di oltre il 4%."
 }

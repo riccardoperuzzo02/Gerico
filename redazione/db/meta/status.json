@@ -1,31 +1,37 @@
 {
   "lastPublish": {
-    "at": "2026-11-05T07:56:00+01:00",
-    "esito": "Pubblicata a mano l'edizione delle 7:18 (cc38280): il giro non aveva il repository. check_dump.py: 0 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-10T13:32:48+01:00",
+    "esito": "Paesi: pubblicate 2 storie nuove (US, ES); check_dump 0 correzioni, check_site senza avvisi, push su main riuscito."
   },
-  "lastRun": "2026-11-05T07:27:00+01:00",
+  "lastRun": "2026-11-10T13:24:50+01:00",
   "marketsRun": {
-    "at": "2026-11-04T18:21:00+01:00",
-    "esito": "Aggiornate le chiusure di Ftse Mib, Dax, Cac 40 e Ftse 100, spread Btp-Bund, Btp a 10 anni, euro/dollaro e Intesa, UniCredit, Avio; Aex, Smi, Bund, Brent, gas TTF non trovati con valori di chiusura verificati."
+    "at": "2026-11-10T18:21:36+01:00",
+    "esito": "Niente aggiornato: alle 18:20 non ho trovato un articolo di chiusura di oggi, solo dati intraday (Ftse Mib +1,1% alle 14:54, ANSA); Mercati e Terminal restano alle chiusure del 9 novembre. Nessuna pubblicazione."
   },
   "outlets": [
     "ANSA",
-    "Il Post",
     "Reuters",
-    "Euronews",
     "Al Jazeera",
-    "Teleborsa",
-    "CNBC"
+    "Kyiv Independent"
   ],
+  "paesiRun": {
+    "at": "2026-11-10T13:32:00+01:00",
+    "esito": "US 1 nuova (Hegseth, impeachment)/0 aggiornate/0 archiviate; ES 1 nuova (Oviedo, esplosione)/0/0; GB, FR, DE senza storie: pochi articoli apribili e nessuna seconda fonte di oggi."
+  },
+  "publishError": {
+    "at": "2026-11-10T13:24:50+01:00",
+    "message": "Repository non disponibile: add_repo non trovato dalla ricerca (select e parole chiave 'github repository'); git clone https://github.com/riccardoperuzzo02/Gerico.git fallito con 'could not read Username for https://github.com: terminal prompts disabled'; gh repo clone fallito (token GH_TOKEN non valido). Giro delle 13:18: aggiornate Ucraina e Yemen e le brevi; Mercati e Agenda non toccati; controllo dei fatti non fatto."
+  },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 27,
-    "at": "2026-11-05T07:27:00+01:00",
-    "factsChecked": 4,
-    "factsCorrected": 3,
-    "storiesArchived": 2,
-    "storiesNew": 1,
-    "storiesUpdated": 5
+    "articlesRead": 6,
+    "at": "2026-11-10T13:24:50+01:00",
+    "factsChecked": 0,
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 0,
+    "storiesUpdated": 2
   },
+  "runningSince": null,
   "storiesLive": 10
 }

@@ -2,7 +2,8 @@
 """Aiuti per i giri della redazione su GitHub Actions (workflow «Redazione»).
 
 Uso:
-    python3 scripts/redazione.py giro             quale giro fare adesso: righe giro=, variante=, modello=, turni=
+    python3 scripts/redazione.py giro             quale giro fare adesso (notizie, paesi, chiusure, titoli, prova):
+                                                  righe giro=, variante=, modello=, turni=
     python3 scripts/redazione.py live             le storie live del database: rank, id, ultimo aggiornamento, titolo
     python3 scripts/redazione.py controlla        controlla il database con le regole del punto 8 del giro delle notizie
     python3 scripts/redazione.py pubblica <giro>  copia il database sul sito, scrive lastPublish o publishError, commit e push
@@ -42,6 +43,7 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", 
 GIRI = {
     "notizie": {"ore": {7: "7:18", 13: "13:18"}, "modello": "claude-sonnet-5-5", "turni": 150},
     "chiusure": {"ore": {18: "18:15"}, "modello": "claude-sonnet-5-5", "turni": 40},
+    "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 120},
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
 }
@@ -49,9 +51,12 @@ GIRI = {
 CRON = {
     "18 5 * * *": "notizie", "18 6 * * *": "notizie", "18 11 * * *": "notizie", "18 12 * * *": "notizie",
     "15 16 * * 1-5": "chiusure", "15 17 * * 1-5": "chiusure",
+    "47 7 * * *": "paesi", "47 8 * * *": "paesi",
     "2 5 * * 1-5": "titoli", "2 6 * * 1-5": "titoli",
 }
 SECTIONS = {"mondo", "italia", "economia", "mercati", "tecnologia"}
+# il giro dei paesi: ogni paese ha il suo blocco di rank (Stati Uniti 101, 102...; Regno Unito 201...)
+BLOCCHI = {"US": 100, "GB": 200, "FR": 300, "DE": 400, "ES": 500}
 CLASSES = ["indici", "azioni", "obbligazioni", "valute", "materie", "cripto"]
 TZ_RE = re.compile(r"(Z|[+-]\d{2}:?\d{2})$")
 
@@ -219,11 +224,44 @@ def cmd_controlla(db=DB, quiet=False):
             problems.append(f"{where}: history ha {len(hist)} voci (al massimo 10)")
         for i, h in enumerate(hist):
             check_time(h.get("at"), f"{where}.history[{i}].at", problems)
-    ranks = sorted(s.get("rank") for _sid, s in live if isinstance(s.get("rank"), int))
+    # le storie dei paesi (scope "paese", giro dei paesi) hanno i loro rank, a blocchi per paese, e non contano nei
+    # numeri della redazione principale
+    principali = [(sid, s) for sid, s in live if s.get("scope") != "paese"]
+    ranks = sorted(s.get("rank") for _sid, s in principali if isinstance(s.get("rank"), int))
     if ranks and ranks != list(range(1, len(ranks) + 1)):
         problems.append(f"rank delle storie live non vanno da 1 a {len(ranks)}: {ranks}")
-    if len(live) < 10:
-        problems.append(f"storie live: {len(live)} (ne servono almeno 10)")
+    if len(principali) < 10:
+        problems.append(f"storie live: {len(principali)} (ne servono almeno 10)")
+    per_paese = {}
+    for sid, s in live:
+        if s.get("scope") != "paese":
+            continue
+        where, c, r = f"stories/{sid}", s.get("country"), s.get("rank")
+        if c not in BLOCCHI:
+            problems.append(f"{where}: storia dei paesi con country «{c}» (US, GB, FR, DE o ES)")
+            continue
+        per_paese[c] = per_paese.get(c, 0) + 1
+        if isinstance(r, int) and not BLOCCHI[c] < r < BLOCCHI[c] + 100:
+            problems.append(f"{where}: rank {r} fuori dal blocco di {c} ({BLOCCHI[c] + 1}-{BLOCCHI[c] + 99})")
+        if (s.get("places") or [None])[0] != c:
+            problems.append(f"{where}: places deve cominciare con «{c}»")
+        if s.get("section") != "mondo":
+            problems.append(f"{where}: le storie dei paesi hanno section «mondo»")
+    for c, n in per_paese.items():
+        if n > 4:
+            problems.append(f"{c}: {n} storie live dei paesi (al massimo 4)")
+    # dopo il giro delle 7:18 ogni sezione ha le sue notizie del giorno (SEZIONI E CRONACA nel testo delle notizie)
+    if os.environ.get("GIRO") == "notizie" and os.environ.get("VARIANTE") == "7:18":
+        limite = datetime.now(timezone.utc) - timedelta(hours=24)
+        conta = {}
+        for _sid, s in principali:
+            upd = parse_time(s.get("updated"))
+            if upd and upd >= limite:
+                conta[s.get("section")] = conta.get(s.get("section"), 0) + 1
+        for sec, minimo in (("italia", 3), ("mondo", 2), ("economia", 2), ("mercati", 2), ("tecnologia", 2)):
+            if conta.get(sec, 0) < minimo:
+                problems.append(f"sezione {sec}: {conta.get(sec, 0)} storie nuove o aggiornate nelle ultime 24 ore "
+                                f"(ne servono {minimo}, vedi SEZIONI E CRONACA)")
 
     markets = load(os.path.join(db, "markets", "snapshot.json"))
     if markets is not None:
@@ -402,7 +440,8 @@ def cmd_pubblica(giro):
         return 1 if error else 0
     t = now_rome()
     on_site = any(f.startswith(SITE + "/") for f in files)
-    msg = (f"Edizione del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}" if on_site
+    msg = ((f"Notizie dei paesi del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}" if giro == "paesi"
+            else f"Edizione del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}") if on_site
            else f"Database della redazione del {t.day}/{t.month} alle {t:%H:%M}")
     run(["git", "-c", "user.name=GERICO", "-c", "user.email=gerico@users.noreply.github.com",
          "commit", "-q", "-m", msg], check=True)

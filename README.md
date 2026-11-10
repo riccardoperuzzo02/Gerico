@@ -24,8 +24,10 @@ pipeline/             i testi delle attività programmate su claude.ai, finché 
 ## Da dove arrivano i dati
 
 La redazione gira su GitHub Actions, nel workflow «Redazione» (`.github/workflows/redazione.yml`): ogni giorno alle 7:18
-l'edizione completa e alle 13:18 l'aggiornamento di metà giornata, nei giorni feriali alle 18:15 le chiusure delle Borse
-europee. Ogni giro avvia Claude Code con il suo testo in `redazione/` (`notizie.md`, `chiusure.md`, `titoli.md`): legge le
+l'edizione completa e alle 13:18 l'aggiornamento di metà giornata, alle 9:47 le notizie nazionali di Stati Uniti, Regno
+Unito, Francia, Germania e Spagna (storie con scope «paese», che vede solo chi ha scelto quel paese), nei giorni feriali alle
+18:15 le chiusure delle Borse europee. Ogni giro avvia Claude Code con il suo testo in `redazione/` (`notizie.md`,
+`paesi.md`, `chiusure.md`, `titoli.md`): legge le
 testate e scrive il database, che è la cartella `redazione/db`, un file JSON per documento (`stories/<id>.json`,
 `markets/snapshot.json`, `agenda/today.json`, `meta/status.json`, ...). Poi `python3 scripts/redazione.py pubblica <giro>`
 cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (`check_dump.py`, `export.py`, `brevi.py`,
@@ -41,8 +43,10 @@ ogni giro resta 7 giorni tra gli artifact del run. Il giro «prova» (Actions �
 la pubblicazione senza cambiare niente. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
 `scripts/redazione.py giro` fa partire solo quello giusto. Due giri non partono mai insieme (`concurrency`).
 
-Fino a novembre 2026 i giri erano attività programmate su claude.ai, che scrivevano nel database dell'app privata e aprivano
-una chat a ogni giro. Gli orari del workflow si accendono quando quelle attività sono spente.
+Fino al 10 novembre 2026 i giri erano attività programmate su claude.ai, che scrivevano nel database dell'app privata e
+aprivano una chat a ogni giro (i loro testi restano in `pipeline/`). Quella sera le attività sono state spente, il loro
+database è stato copiato in `redazione/db` e gli orari del workflow si sono accesi. Un cambio a un giro si fa nel suo file
+di `redazione/`.
 
 - `edition.json`: storie live in ordine di importanza, più le archiviate degli ultimi 7 giorni
 - `markets.json`, `agenda.json`: mercati per classe e agenda del giorno

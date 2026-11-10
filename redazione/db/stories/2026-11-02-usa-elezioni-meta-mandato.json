@@ -1,5 +1,6 @@
 {
-  "change": "5 novembre: il Congresso passa ai Democratici; Trump ammette il peso della guerra con l'Iran sul voto, Vance prende le distanze.",
+  "article": "I Democratici hanno conquistato sia la Camera sia il Senato nelle elezioni di metà mandato, riportano Al Jazeera, Reuters, Il Post, Euronews e ANSA. Al Senato, scrive Il Post, avranno almeno 54 seggi su 100, con almeno 7 guadagnati; per Al Jazeera ne tolgono almeno sei ai Repubblicani. Alla Camera Il Post li dà in vantaggio in oltre 250 distretti, mentre Al Jazeera prevede oltre 230 seggi, con lo spoglio ancora in corso.\n\nIn Texas il Democratico Talarico ha battuto il Repubblicano Paxton, sostenuto da Trump: i Democratici non vincevano lì al Senato dal 1988, riportano ANSA, Open, Al Jazeera, Il Post ed Euronews. In Georgia Ossoff ha conservato il seggio. In North Carolina Roy Cooper ha strappato un seggio ai Repubblicani, e in South Carolina Andrews ha vinto secondo le proiezioni di NBC, riferiscono Open e ANSA. In Kansas Adam Hamilton ha battuto il senatore Marshall; in Iowa la Democratica Turek rivendica la vittoria su Hinson, scrive Al Jazeera. Abdul El-Sayed ha vinto un seggio al Senato ed è il primo musulmano eletto al Senato Usa, secondo Euronews. Tra i governatori sono stati rieletti Hochul, Shapiro e Pritzker, mentre in Florida ha vinto il Repubblicano Donalds, riporta Open. Secondo Kyiv Independent, la deputata Victoria Spartz, nata in Ucraina, ha perso il seggio alla Camera a favore di un Democratico.\n\nTrump si è congratulato con i Democratici, scrive Euronews, mentre per Il Post non si assume responsabilità del risultato. Ha ammesso che la guerra con l'Iran ha contribuito alla sconfitta repubblicana, ma ha detto che andava fatta, riferisce Al Jazeera. Ha anche detto di «non essere sulla scheda», altrimenti ci sarebbe stata una vittoria schiacciante, riporta ANSA, e ha dato la colpa al governatore del Texas Greg Abbott, che ha definito «Rino». Ai sostenitori ha detto che userà il potere di veto nei prossimi due anni, riferisce ANSA. Secondo Al Jazeera ha ordinato al Dipartimento di Giustizia di indagare i Democratici per presunte minacce. Per Reuters e Il Post ha nominato Stephen Miller capo di gabinetto della Casa Bianca al posto di Susie Wiles.\n\nIl leader democratico alla Camera Jeffries sostiene l'impeachment del ministro della Difesa Hegseth, e i Democratici promettono indagini su alleati di Trump, scrive Al Jazeera. Il presidente della Camera Johnson, repubblicano, promette di riconquistare la Camera nel 2028, riferisce Euronews. Al Jazeera scrive che il vicepresidente Vance sembra mettere in dubbio la guerra in Iran dopo la sconfitta.\n\nIl 3 novembre la Corte Suprema aveva respinto la richiesta di Trump di mettere da parte circa 20.000 schede per posta in California, riferisce ANSA.",
+  "change": "9 novembre: Jeffries sostiene l'impeachment di Hegseth; i Democratici promettono indagini su alleati di Trump.",
   "divergences": [
     {
       "point": "Il ruolo della guerra con l'Iran nel voto",
@@ -37,6 +38,35 @@
     }
   ],
   "facts": [
+    {
+      "n": 1,
+      "text": "Il leader democratico Jeffries sostiene l'impeachment del ministro della Difesa Hegseth e i Democratici promettono indagini su alleati di Trump.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump dice ai sostenitori che userà il potere di veto nei prossimi due anni.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Trump ordina al Dipartimento di Giustizia di indagare i Democratici per presunte minacce.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 2,
+      "text": "Trump ha nominato Stephen Miller capo di gabinetto della Casa Bianca; sostituisce Susie Wiles.",
+      "who": [
+        "Reuters",
+        "Il Post"
+      ]
+    },
     {
       "n": 5,
       "text": "I Democratici conquistano sia la Camera sia il Senato.",
@@ -172,6 +202,18 @@
   "firstSeen": "2026-11-02T07:26:43+01:00",
   "history": [
     {
+      "at": "2026-11-09T07:26:39+01:00",
+      "text": "9 novembre: Jeffries sostiene l'impeachment di Hegseth; i Democratici promettono indagini su alleati di Trump."
+    },
+    {
+      "at": "2026-11-08T07:21:19+01:00",
+      "text": "8 novembre: Trump dice che userà il veto e ordina al Dipartimento di Giustizia di indagare i Democratici per presunte minacce."
+    },
+    {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "6 novembre: Trump nomina Stephen Miller capo di gabinetto al posto di Susie Wiles."
+    },
+    {
       "at": "2026-11-05T07:24:55+01:00",
       "text": "5 novembre: il Congresso passa ai Democratici; Trump ammette il peso della guerra con l'Iran sul voto, Vance prende le distanze."
     },
@@ -198,19 +240,12 @@
     "Che inchieste aprirà il Congresso democratico dopo gennaio?",
     "Il voto cambierà la linea di Trump sull'Iran?"
   ],
-  "rank": 1,
+  "places": [
+    "US"
+  ],
+  "rank": 4,
   "section": "mondo",
   "sources": [
-    {
-      "angle": "Proiezioni su Senato e Congresso, Texas e South Carolina, commento di Trump.",
-      "area": "Italia",
-      "at": "2026-11-04T07:25:00+01:00",
-      "country": "Italia",
-      "kind": "agenzia",
-      "name": "ANSA",
-      "stance": "allineata",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/04/media-i-dem-vincono-il-senato-e-conquistano-il-congresso_fb39350d-0fcb-471c-b5f6-bc9d9269212f.html"
-    },
     {
       "angle": "Diretta con seggi assegnati per Stato e governatori.",
       "area": "Italia",
@@ -242,14 +277,14 @@
       "url": "https://www.euronews.com/2026/11/04/democrats-did-a-good-job-trump-congratulates-democrats-on-midterm-wins"
     },
     {
-      "angle": "I Democratici vincono il Congresso; Trump si congratula senza assumersi responsabilità.",
+      "angle": "Trump nomina Miller capo di gabinetto.",
       "area": "Italia",
-      "at": "2026-11-05T07:24:55+01:00",
+      "at": "2026-11-07T07:20:54+01:00",
       "country": "Italia",
       "kind": "giornale online",
       "name": "Il Post",
       "stance": "allineata",
-      "url": "https://www.ilpost.it/2026/11/04/elezioni-midterm-risultati/"
+      "url": "https://www.ilpost.it/2026/11/06/stephen-miller-nuovo-capo-di-gabinetto-casa-bianca-chief-of-staff/"
     },
     {
       "angle": "Cosa è in palio e le corse chiave (aggiornamento del 26 ottobre).",
@@ -262,24 +297,34 @@
       "url": "https://www.washingtonexaminer.com/live-blog/2026-midterm-elections-live-updates/"
     },
     {
-      "angle": "Il Congresso passa ai Democratici; Trump, Vance e gli effetti sulla politica estera.",
+      "angle": "Miller capo di gabinetto al posto di Wiles.",
       "area": "Europa",
-      "at": "2026-11-05T07:24:55+01:00",
+      "at": "2026-11-07T07:20:54+01:00",
       "country": "Regno Unito",
       "kind": "agenzia",
       "name": "Reuters",
       "stance": "allineata",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/democrats-seize-congress-in-sweeping-midterm-repudiation-of-trump"
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/06/trump-promotes-stephen-miller-to-post-of-chief-of-staff"
     },
     {
-      "angle": "Seggi al Senato e alla Camera, corse chiave e reazione di Trump.",
+      "angle": "Trump annuncia il ricorso al veto.",
+      "area": "Italia",
+      "at": "2026-11-08T07:21:19+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/08/trump-ai-sostenitori-usero-il-potere-di-veto-maga-non-molla-se-risultati-deludenti_217d82e7-6eb8-4712-ae99-53db47194642.html"
+    },
+    {
+      "angle": "Jeffries sostiene l'impeachment di Hegseth.",
       "area": "Medio Oriente",
-      "at": "2026-11-05T07:24:55+01:00",
+      "at": "2026-11-09T07:26:39+01:00",
       "country": "Qatar",
-      "kind": "tv",
+      "kind": "giornale",
       "name": "Al Jazeera",
       "stance": "allineata",
-      "url": "https://www.aljazeera.com/news/2026/11/4/democrats-deliver-a-historic-routing-to-republicans-in-us-midterms"
+      "url": "https://www.aljazeera.com/news/2026/11/9/jeffries-backs-hegseth-impeachment-as-democrats-vow-probes-of-trump-allies"
     }
   ],
   "status": "live",
@@ -289,7 +334,10 @@
     "Elezioni",
     "Trump"
   ],
+  "themes": [
+    "voto-usa"
+  ],
   "title": "Usa: i Democratici vincono Camera e Senato, Trump lega la sconfitta all'Iran",
-  "updated": "2026-11-05T07:24:55+01:00",
+  "updated": "2026-11-09T07:26:39+01:00",
   "view": "È accertato che i Democratici hanno vinto sia la Camera sia il Senato; i numeri precisi restano provvisori (lo spoglio è ancora in corso). I numeri sono provvisori e cambiano da una fonte all'altra: Al Jazeera parla di almeno sei seggi strappati al Senato e oltre 230 alla Camera, Il Post di almeno 54 senatori e oltre 250 distretti in vantaggio. Sulla causa Trump, riportato da Al Jazeera, ammette il peso della guerra con l'Iran, mentre la sera prima aveva detto di non essere sulla scheda.\n\nConta perché un Congresso democratico può indagare sull'amministrazione, condizionare bilancio e nomine e pesare sulla politica estera. Da guardare: i seggi ancora aperti, le prime inchieste da gennaio e se Washington cambia linea sull'Iran, tema che muove anche il petrolio."
 }

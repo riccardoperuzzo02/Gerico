@@ -1,36 +1,42 @@
 {
-  "asOf": "2026-11-05T07:25:56+01:00",
-  "date": "2026-11-05",
+  "asOf": "2026-11-10T07:25:00+01:00",
+  "date": "2026-11-10",
   "items": [
     {
       "actual": "",
-      "country": "Regno Unito",
-      "currency": "GBP",
-      "event": "Bank of England, decisione sui tassi",
-      "expected": "4%",
-      "impact": "alto",
-      "previous": "3,75%",
-      "time": "13:00"
+      "country": "Giappone",
+      "currency": "JPY",
+      "event": "Bilancia delle partite correnti di settembre (già uscita)",
+      "expected": "",
+      "impact": "basso",
+      "previous": "",
+      "time": "07:00"
     },
     {
       "actual": "",
-      "country": "Stati Uniti",
+      "country": "Giappone",
+      "currency": "JPY",
+      "event": "Spesa delle famiglie di settembre, su base mensile (già uscita)",
+      "expected": "",
+      "impact": "basso",
+      "previous": "",
+      "time": "07:00"
+    },
+    {
+      "actual": "",
+      "country": "Emirati Arabi",
       "currency": "USD",
-      "event": "Richieste settimanali di sussidi di disoccupazione (orario abituale)",
+      "event": "Colloqui Usa, Russia e Ucraina ad Abu Dhabi, 10 e 11 novembre (le fonti non danno l'ora)",
       "expected": "",
       "impact": "medio",
       "previous": "",
-      "time": "14:30"
+      "time": ""
     }
   ],
   "sources": [
     {
-      "name": "forexfundamentals.com, calendario BoE",
-      "url": "https://forexfundamentals.com/economic-calendar/boe/2026-11-05"
-    },
-    {
-      "name": "Teleborsa, agenda del giorno",
-      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-5-novembre-2026-1_2026-11-05_TLB-BIT.html"
+      "name": "Teleborsa, 10 novembre",
+      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-10-novembre-2026-1_2026-11-10_TLB-BIT.html"
     }
   ]
 }

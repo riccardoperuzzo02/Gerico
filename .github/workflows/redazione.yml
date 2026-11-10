@@ -1,27 +1,30 @@
 name: Redazione
 
-# I giri della redazione di GERICO, senza chat su Claude: notizie alle 7:18 e alle 13:18, chiusure delle Borse
-# europee alle 18:15 dei giorni feriali; i titoli da seguire restano spenti finché non arriva l'ok della compliance.
+# I giri della redazione di GERICO, senza chat su Claude: notizie alle 7:18 e alle 13:18, i paesi (Stati Uniti, Regno
+# Unito, Francia, Germania, Spagna) alle 9:47, chiusure delle Borse europee alle 18:15 dei giorni feriali; i titoli da
+# seguire restano spenti finché non arriva l'ok della compliance.
 # Claude Code usa l'abbonamento Claude di Riccardo (segreto CLAUDE_CODE_OAUTH_TOKEN, creato con `claude setup-token`),
 # legge le testate e scrive il database in redazione/db; poi scripts/redazione.py lo copia in site/data con gli
 # script di sempre, pubblica su main e, se è cambiato il riepilogo, avvia «Dati del Terminal» per l'audio.
 # Il giro «prova» controlla solo che il token funzioni e che la pubblicazione passi, senza cambiare niente.
 on:
-  # gli orari si accendono quando le attività programmate su Claude sono spente: due redazioni insieme si pestano i piedi
-  # schedule:
-  #   # orari in UTC: per ogni giro un cron per l'ora legale e uno per l'ora solare; parte solo quello giusto
-  #   - cron: "18 5 * * *"      # notizie 7:18 (ora legale)
-  #   - cron: "18 6 * * *"      # notizie 7:18 (ora solare)
-  #   - cron: "18 11 * * *"     # notizie 13:18 (ora legale)
-  #   - cron: "18 12 * * *"     # notizie 13:18 (ora solare)
-  #   - cron: "15 16 * * 1-5"   # chiusure 18:15 (ora legale)
-  #   - cron: "15 17 * * 1-5"   # chiusure 18:15 (ora solare)
+  # accesi il 10 novembre 2026, con le attività programmate su Claude spente: due redazioni insieme si pestano i piedi
+  schedule:
+    # orari in UTC: per ogni giro un cron per l'ora legale e uno per l'ora solare; parte solo quello giusto
+    - cron: "18 5 * * *"      # notizie 7:18 (ora legale)
+    - cron: "18 6 * * *"      # notizie 7:18 (ora solare)
+    - cron: "47 7 * * *"      # paesi 9:47 (ora legale)
+    - cron: "47 8 * * *"      # paesi 9:47 (ora solare)
+    - cron: "18 11 * * *"     # notizie 13:18 (ora legale)
+    - cron: "18 12 * * *"     # notizie 13:18 (ora solare)
+    - cron: "15 16 * * 1-5"   # chiusure 18:15 (ora legale)
+    - cron: "15 17 * * 1-5"   # chiusure 18:15 (ora solare)
   workflow_dispatch:
     inputs:
       giro:
         description: Giro da fare
         type: choice
-        options: [prova, notizie, chiusure, titoli]
+        options: [prova, notizie, paesi, chiusure, titoli]
         default: prova
       variante:
         description: "Per le notizie: giro delle 7:18 o delle 13:18 (auto: 7:18 prima delle 11)"

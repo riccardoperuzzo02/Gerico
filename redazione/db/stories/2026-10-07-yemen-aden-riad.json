@@ -1,5 +1,6 @@
 {
-  "change": "5 novembre: il governo yemenita rivendica alture ad al-Jawf; gli houthi parlano di raid sui civili.",
+  "article": "Il 9 novembre l'oleodotto Est-Ovest dell'Arabia Saudita, nella regione di Medina, è stato colpito di nuovo, riferisce Al Jazeera citando l'Afp. Un funzionario del ministero dell'Energia saudita dice all'agenzia di Stato Spa che c'è stato un incendio limitato, spento, e che l'attività dell'oleodotto non è stata toccata. Al Jazeera scrive che il tubo è essenziale per le esportazioni saudite perché l'Iran ha limitato lo stretto di Hormuz.\n\nOggi il portavoce della coalizione a guida saudita, il generale Turki al-Maliki, dice su X che le forze hanno intercettato un missile balistico e uno da crociera su Riad, e un secondo missile balistico sul sud del Paese. Al-Maliki attribuisce i lanci agli houthi, sostenuti dall'Iran. Afp riporta più esplosioni a Riad e un allarme sui telefoni dei residenti, poi revocato. Funzionari sauditi dicono che detriti hanno causato danni lievi alla torre Aramco di Riad; non ci sono feriti, secondo Al Jazeera. Gli houthi non avevano commentato subito. Domenica avevano detto di aver attaccato il quartiere degli affari di Riad, mentre il loro portavoce Saree nega attacchi al territorio saudita, scrive Al Jazeera. Reuters titola che l'agenzia Saba riporta raid sauditi su Sanaa.\n\nIl governo yemenita riconosciuto chiede all'Iran di smettere di armare gli houthi, riferisce Ansa: indica 21 esperti stranieri, 14 dei Guardiani della rivoluzione e 7 di Hezbollah, con una fonte indicata come Iran International. Il ministero della Salute houthi riporta 27 morti e 36 feriti in un villaggio vicino a Sanaa e accusa raid sauditi; Reuters non ha verificato il dato. Quattro fonti militari dicono a Reuters che gli houthi sono a circa 80 chilometri da Aden, il punto più vicino dal 2015, e Reuters non ha verificato un video houthi a Souq al-Rabouh. Le forze governative dicono di avanzare ad al-Jawf, un dato che Al Jazeera non ha verificato.",
+  "change": "Nuovo attacco all'oleodotto Est-Ovest e missili su Riad intercettati, dice la coalizione.",
   "divergences": [
     {
       "point": "Chi avanza sul terreno",
@@ -21,78 +22,54 @@
   ],
   "facts": [
     {
-      "n": 1,
-      "text": "Le forze governative dicono di avanzare nelle alture di al-Dahida, a est di al-Hazm, nel governatorato di al-Jawf, e di aver ripreso posizioni a nord di Lahij.",
+      "text": "Il 9 novembre l'oleodotto Est-Ovest è stato colpito; un funzionario saudita parla di incendio limitato e attività non toccata.",
       "who": [
         "Al Jazeera"
       ]
     },
     {
-      "n": 1,
-      "text": "Media vicini agli houthi riportano raid contro un campo a al-Bayda e un centro sanitario a Taiz; l'houthi Saree nega attacchi al territorio saudita.",
+      "text": "Il portavoce della coalizione al-Maliki dice di aver intercettato missili balistici e da crociera su Riad e sul sud saudita.",
       "who": [
         "Al Jazeera"
       ]
     },
     {
-      "n": 1,
-      "text": "Un missile balistico houthi su un campo d'addestramento ad al-Dhalea avrebbe ucciso otto persone, secondo una fonte militare; non c'è un bilancio ufficiale.",
+      "text": "Funzionari sauditi dicono che detriti hanno causato danni lievi alla torre Aramco, senza feriti.",
       "who": [
         "Al Jazeera"
       ]
     },
     {
-      "n": 1,
-      "text": "Quattro fonti militari dicono a Reuters che gli houthi sono a circa 80 km da Aden, il punto più vicino dal 2015; Reuters non ha verificato un video houthi a Souq al-Rabouh.",
+      "text": "Il governo yemenita chiede all'Iran di smettere di armare gli houthi e indica 21 esperti stranieri.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Quattro fonti militari dicono che gli houthi sono a circa 80 km da Aden, il punto più vicino dal 2015.",
       "who": [
         "Reuters"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "L'avanzata minaccia la strada Aden-Taiz; Taiz è assediata da inizio ottobre e ha più di 100.000 sfollati.",
-      "who": [
-        "Reuters"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "L'esercito governativo dice di aver compiuto 1.272 operazioni in 24 ore e ucciso circa 500 houthi ad al-Jawf; Al Jazeera non ha verificato.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "La coalizione a guida saudita dice di aver intercettato un missile balistico e un drone diretti al sud dell'Arabia Saudita.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Media vicini agli houthi riportano sette feriti nei raid della coalizione a Hodeidah.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il governatore di Taiz dice che 120 centri sanitari hanno smesso di funzionare.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "L'Onu chiede un'inchiesta sulla morte di un suo dipendente detenuto dagli houthi dal giugno 2024.",
-      "who": [
-        "Al Jazeera"
       ]
     }
   ],
   "firstSeen": "2026-10-07T17:08:47+02:00",
   "history": [
+    {
+      "at": "2026-11-10T13:24:29+01:00",
+      "text": "Nuovo attacco all'oleodotto Est-Ovest e missili su Riad intercettati, dice la coalizione."
+    },
+    {
+      "at": "2026-11-09T07:26:39+01:00",
+      "text": "9 novembre: il governo yemenita accusa l'Iran di armare gli houthi; due missili diretti a Riad intercettati, dice la coalizione."
+    },
+    {
+      "at": "2026-11-08T07:21:19+01:00",
+      "text": "8 novembre: il ministero della Salute houthi parla di 27 morti in raid sauditi vicino a Sanaa; la Siria smentisce l'invio di truppe."
+    },
+    {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "6 novembre: secondo fonti citate da Reuters la Siria dà consulenza militare e addestramento all'Arabia Saudita contro gli houthi."
+    },
     {
       "at": "2026-11-05T07:24:55+01:00",
       "text": "5 novembre: il governo yemenita rivendica alture ad al-Jawf; gli houthi parlano di raid sui civili."
@@ -116,22 +93,6 @@
     {
       "at": "2026-10-23T07:23:06+02:00",
       "text": "22-23 ottobre: Dammam riapre dopo l'attacco (due morti per Arab News); nuovi missili su Riad e Najran; l'Egitto chiede negoziati; Onu: quasi 260.000 sfollati a Taiz."
-    },
-    {
-      "at": "2026-10-22T07:22:16+02:00",
-      "text": "21-22 ottobre: attacco all'aeroporto di Dammam, 1 morto e 8 feriti secondo l'autorità saudita (3 morti per Arab News, che cita anche Shaybah); gli Usa fanno partire parte dei diplomatici; Macron a Riad."
-    },
-    {
-      "at": "2026-10-19T07:21:57+02:00",
-      "text": "18 ottobre: proiettile Houthi a Najran, 6 feriti secondo la protezione civile saudita; navi attaccate al largo di Emirati e Yemen; l'Egitto assicura sostegno a Riad."
-    },
-    {
-      "at": "2026-10-18T07:22:48+02:00",
-      "text": "17 ottobre: l'Egitto chiede al parlamento il via libera per difendere l'Arabia Saudita; le forze yemenite dichiarano 1.417 attacchi contro gli Houthi."
-    },
-    {
-      "at": "2026-10-16T07:23:35+02:00",
-      "text": "15 ottobre: gli Houthi colpiscono il palazzo presidenziale di Aden (2-4 morti secondo le fonti); coalizione: 20 attacchi all'aeroporto di Riad in ottobre."
     }
   ],
   "notCovered": [
@@ -142,19 +103,14 @@
     "La controffensiva governativa riprenderà al-Jawf?",
     "Come risponderà la coalizione saudita agli attacchi sul suo territorio?"
   ],
-  "rank": 11,
+  "places": [
+    "YE",
+    "SA",
+    "IR"
+  ],
+  "rank": 8,
   "section": "mondo",
   "sources": [
-    {
-      "angle": "Il governo rivendica il controllo delle alture di al-Jawf; accuse reciproche.",
-      "area": "Medio Oriente",
-      "at": "2026-11-05T07:24:55+01:00",
-      "country": "Qatar",
-      "kind": "tv",
-      "name": "Al Jazeera",
-      "stance": "allineata",
-      "url": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range"
-    },
     {
       "angle": "La coalizione distrugge lanciamissili houthi a Sanaa.",
       "area": "Medio Oriente",
@@ -166,25 +122,48 @@
       "url": "https://www.arabnews.com/saudi-arabia/coalition-destroys-houthi-missile-launchers-in-sanaa-after-foiled-attack-on-riyadh-3008280"
     },
     {
-      "angle": "Houthi a 80 km da Aden.",
+      "angle": "La coalizione dice di aver intercettato due missili; Saba riporta raid sauditi su Sanaa.",
       "area": "Europa",
-      "at": "2026-11-03T07:25:18+01:00",
+      "at": "2026-11-10T13:24:29+01:00",
       "country": "Regno Unito",
       "kind": "agenzia",
       "name": "Reuters",
       "stance": "allineata",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/02/yemen-s-houthis-advance-to-within-80-km-of-aden-sources-say"
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/saudi-led-coalition-says-it-intercepts-two-houthi-missiles-fired-towards-riyadh"
+    },
+    {
+      "angle": "Oleodotto colpito, missili su Riad intercettati, versione del portavoce della coalizione.",
+      "area": "Medio Oriente",
+      "at": "2026-11-10T13:24:29+01:00",
+      "country": "Qatar",
+      "kind": "giornale",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline"
+    },
+    {
+      "angle": "Lo Yemen chiede all'Iran di smettere di armare gli houthi.",
+      "area": "Italia",
+      "at": "2026-11-09T07:26:39+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "stance": "allineata",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/08/lo-yemen-chiede-alliran-di-smettere-di-armare-gli-houthi_6c3c03fa-564e-43a0-9801-03f921c6d3b0.html"
     }
   ],
   "status": "live",
-  "summary": "Le forze governative yemenite dicono di aver preso il controllo di alture ad al-Jawf, mentre Reuters, il 2 novembre, riportava gli houthi a circa 80 km da Aden. Gli houthi parlano di raid che uccidono civili.",
+  "summary": "La coalizione a guida saudita dice di aver intercettato missili su Riad e nel sud del Paese. Il 9 novembre l'oleodotto Est-Ovest è stato colpito: un funzionario saudita parla di incendio limitato.",
   "tags": [
     "Yemen",
     "Medio Oriente",
     "Iran",
     "Arabia Saudita"
   ],
-  "title": "Yemen: il governo rivendica alture ad al-Jawf, houthi a 80 km da Aden",
-  "updated": "2026-11-05T07:24:55+01:00",
-  "view": "È accertato che i combattimenti proseguono su più fronti. Le forze governative rivendicano avanzate ad al-Jawf e a Lahij, mentre gli houthi riportano raid che avrebbero colpito civili; nessuna delle due versioni è verificata in modo indipendente. Reuters, il 2 novembre, citava quattro fonti militari secondo cui gli houthi erano a circa 80 km da Aden.\n\nConta perché la linea tra Taiz e Aden è la strada di accesso alla capitale governativa. Da guardare: se le avanzate rivendicate dal governo vengono confermate e come risponde la coalizione saudita."
+  "themes": [
+    "iran-usa"
+  ],
+  "title": "Yemen: Riad intercetta missili dopo un nuovo attacco all'oleodotto Est-Ovest",
+  "updated": "2026-11-10T13:24:29+01:00",
+  "view": "È accertato che i combattimenti proseguono e che le cifre vengono dalle parti: il ministero houthi dà 27 morti, Riad non ha commentato e Reuters non può verificare. Le forze governative rivendicano avanzate, gli houthi raid sui civili; nessuna delle due versioni è confermata in modo indipendente.\n\nConta perché il fronte si lega al conflitto tra Usa e Iran e alla sicurezza dei Paesi del Golfo. Da guardare: la risposta saudita, la conferma delle avanzate governative e il ruolo della Siria."
 }

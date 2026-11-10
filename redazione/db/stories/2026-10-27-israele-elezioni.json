@@ -1,5 +1,6 @@
 {
-  "change": "5 novembre: la commissione elettorale non trova frodi e conferma i risultati; Herzog avvia le consultazioni.",
+  "article": "Il presidente israeliano Herzog ha affidato a Gadi Eisenkot l'incarico di formare il nuovo governo. La scelta è stata comunicata sabato 7 novembre e l'incarico formale è arrivato domenica, riferisce Al Jazeera, e la notizia è confermata da Reuters e Il Post. Eisenkot ha sei settimane di tempo, servono 61 seggi su 120 e Benjamin Netanyahu resta primo ministro ad interim.\n\nNelle consultazioni con i partiti Eisenkot ha avuto 67 raccomandazioni su 120 seggi e Netanyahu 46, riportano Al Jazeera, Times of Israel e Reuters. Secondo Reuters, i 67 seggi di Eisenkot comprendono i 19 dei due partiti a guida araba, che per ora lui non vuole al governo. Il Times of Israel aveva scritto il 7 novembre che Herzog avrebbe annunciato la decisione domenica.\n\nIl voto del 27 ottobre aveva dato 48 seggi all'alleanza di Eisenkot e 53 al blocco di Netanyahu, mentre i partiti a guida araba hanno ottenuto un record di 19 seggi, scrive Al Jazeera.\n\nEisenkot si dice aperto a un governo con Netanyahu e con Smotrich, se il Likud e il Sionismo religioso lo sostengono, ed esclude i partiti arabi, riferisce Al Jazeera. Netanyahu dice che un governo sostenuto dai partiti arabi danneggerebbe Israele. Secondo il Times of Israel, il leader di Ra'am, Abbas, non definisce Hamas un gruppo terroristico, mentre Eisenkot ne fa una condizione per i partner di governo.\n\nSulla regolarità del voto, la commissione elettorale israeliana non ha trovato irregolarità che incidano sul risultato, scrivono Euronews e Al Jazeera. Il Likud accusa i partiti arabi, senza portare prove secondo Al Jazeera.",
+  "change": "9 novembre: incarico formale a Eisenkot, sei settimane di tempo; apre a Netanyahu e Smotrich nel governo.",
   "divergences": [
     {
       "point": "Regolarità del voto",
@@ -21,8 +22,61 @@
   ],
   "facts": [
     {
+      "n": 1,
+      "text": "Eisenkot si dice aperto a un governo con Netanyahu e Smotrich se Likud e Sionismo religioso lo sostengono; esclude i partiti arabi.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il 27 ottobre l'alleanza di Eisenkot ha vinto 48 seggi e il blocco di Netanyahu 53; i partiti a guida araba un record di 19.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Eisenkot ha sei settimane per formare il governo; servono 61 seggi su 120 e Netanyahu resta premier ad interim.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "Herzog ha scelto Eisenkot per formare il governo e lo ha comunicato sabato; l'incarico formale è domenica.",
+      "who": [
+        "Al Jazeera",
+        "Reuters",
+        "Il Post"
+      ]
+    },
+    {
+      "n": 3,
+      "text": "Eisenkot ha 67 raccomandazioni su 120 seggi, Netanyahu 46.",
+      "who": [
+        "Al Jazeera",
+        "Times of Israel",
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "I 67 seggi di Eisenkot includono i 19 dei due partiti a guida araba, che per ora lui non vuole al governo.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Netanyahu dice che un governo sostenuto dai partiti arabi danneggerebbe Israele.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
       "n": 2,
-      "text": "La commissione elettorale non trova prove di irregolarità che abbiano compromesso il voto o inciso sui risultati.",
+      "text": "La commissione elettorale non trova irregolarità che incidano sul risultato; il Likud accusa senza prove i partiti arabi.",
       "who": [
         "Euronews",
         "Al Jazeera"
@@ -30,98 +84,30 @@
     },
     {
       "n": 1,
-      "text": "La certificazione dei risultati era prevista per mercoledì 4 novembre; il Likud aveva accusato senza prove i partiti arabi di aver «rubato» il voto.",
+      "text": "Il leader di Ra'am, Abbas, non definisce Hamas gruppo terroristico; Eisenkot ne fa una condizione per i partner.",
       "who": [
-        "Euronews"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Herzog incontrerà ogni partito eletto e terrà due giorni di consultazioni prima di indicare l'incaricato, probabilmente Netanyahu o Eisenkot.",
-      "who": [
-        "Euronews"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Una indagine separata dello Shin Bet su presunte interferenze straniere è in corso.",
-      "who": [
-        "Euronews"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Secondo Reuters, i rivali di Netanyahu sfruttano la vittoria dei Democratici negli Usa per chiederne la rimozione.",
-      "who": [
-        "Reuters"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il campo di Netanyahu ha 53 seggi, quello di Eisenkot 48; tre partiti a guida araba ottengono un record di 19 seggi, otto dei quali di Ra'am.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il Likud dice, senza prove, che i partiti arabi hanno «rubato» il voto e preso fondi dal Qatar; il Qatar respinge le accuse.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Il capo del comitato elettorale Noam Sohlberg dice che anche se i sospetti fossero confermati non cambierebbero i risultati.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Eisenkot parla di una «campagna organizzata» per delegittimare i risultati.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "La polizia ha rilasciato due dei tre attivisti arrestati prima del voto con denaro per comprare voti, secondo l'accusa legati a Ra'am.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "I risultati saranno certificati questa settimana, poi Herzog indicherà chi deve formare il governo.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "L'affluenza è stata del 77,7%, la più alta dal 1999.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "Herzog nomina un candidato premier, che ha 42 giorni per formare il governo; senza accordo si torna al voto.",
-      "who": [
-        "Al Jazeera"
-      ]
-    },
-    {
-      "n": 1,
-      "text": "A scrutinio oltre il 90%, il blocco di Netanyahu ha 53 seggi (26 al Likud), quello di Eisenkot 48 e i partiti arabi 19, il loro miglior risultato.",
-      "who": [
-        "Il Post"
+        "Times of Israel"
       ]
     }
   ],
   "firstSeen": "2026-10-27T07:24:50+01:00",
   "history": [
+    {
+      "at": "2026-11-09T07:26:39+01:00",
+      "text": "9 novembre: incarico formale a Eisenkot, sei settimane di tempo; apre a Netanyahu e Smotrich nel governo."
+    },
+    {
+      "at": "2026-11-08T07:21:19+01:00",
+      "text": "8 novembre: Herzog sceglie Eisenkot, non Netanyahu, per formare il governo; cerimonia dell'incarico domenica."
+    },
+    {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "7 novembre: Herzog annuncia che affiderà il mandato domenica; Liberman apre ai partiti ultraortodossi."
+    },
+    {
+      "at": "2026-11-06T07:21:33+01:00",
+      "text": "5 novembre: nelle consultazioni 67 seggi indicano Eisenkot e 46 Netanyahu; Herzog decide entro l'11."
+    },
     {
       "at": "2026-11-05T07:24:55+01:00",
       "text": "5 novembre: la commissione elettorale non trova frodi e conferma i risultati; Herzog avvia le consultazioni."
@@ -145,30 +131,29 @@
     {
       "at": "2026-10-28T07:22:00+01:00",
       "text": "Exit poll in stallo; con un quarto dei seggi scrutinati il Likud è in testa (23,4%)."
-    },
-    {
-      "at": "2026-10-27T07:24:50+01:00",
-      "text": "Prima notizia: aperti i seggi per il voto in Israele; Netanyahu e Eisenkot a confronto, Iran sullo sfondo."
     }
   ],
   "notCovered": [],
   "open": [
-    "Chi sarà incaricato da Herzog dopo le consultazioni?",
-    "Eisenkot accetterà l'appoggio dei partiti arabi?",
-    "Netanyahu e Eisenkot potrebbero allearsi, o si tornerà al voto?"
+    "Eisenkot riuscirà a trovare 61 seggi entro sei settimane?",
+    "I partiti arabi entreranno nel governo o lo sosterranno dall'esterno?",
+    "Netanyahu contesterà l'incarico?"
   ],
-  "rank": 5,
+  "places": [
+    "IL"
+  ],
+  "rank": 2,
   "section": "mondo",
   "sources": [
     {
-      "angle": "Netanyahu, Eisenkot, richiesta di attacco all'Iran secondo la Cnn, smentita del premier.",
+      "angle": "Herzog decide domenica; i numeri delle raccomandazioni.",
       "area": "Medio Oriente",
-      "at": "2026-10-27T07:24:50+01:00",
+      "at": "2026-11-07T07:20:54+01:00",
       "country": "Israele",
       "kind": "giornale",
       "name": "Times of Israel",
       "stance": "allineata",
-      "url": "https://www.timesofisrael.com/liveblog-october-26-2026/"
+      "url": "https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/"
     },
     {
       "angle": "Aperti i seggi, oltre 7 milioni di elettori.",
@@ -181,26 +166,6 @@
       "url": "https://www.ansa.it/sito/notizie/topnews/2026/10/27/israele-aperti-i-seggi-per-il-rinnovo-della-knesset_4702a02c-f927-45a4-97ff-e07e4d05c058.html"
     },
     {
-      "angle": "I rivali di Netanyahu e la vittoria dei Democratici Usa.",
-      "area": "Europa",
-      "at": "2026-11-05T07:24:55+01:00",
-      "country": "Regno Unito",
-      "kind": "agenzia",
-      "name": "Reuters",
-      "stance": "allineata",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/netanyahu-rivals-seize-on-democrats-sweep-of-us-congress-seeking-his-ouster"
-    },
-    {
-      "angle": "La commissione respinge le accuse di frode del Likud.",
-      "area": "Medio Oriente",
-      "at": "2026-11-05T07:24:55+01:00",
-      "country": "Qatar",
-      "kind": "tv",
-      "name": "Al Jazeera",
-      "stance": "allineata",
-      "url": "https://www.aljazeera.com/news/2026/11/4/israel-vote-results-confirmed-as-election-commission-rejects-fraud-claims"
-    },
-    {
       "angle": "Il ministro della Difesa nega contrasti tra premier e capo dell'esercito sull'Iran.",
       "area": "Medio Oriente",
       "at": "2026-10-27T07:24:50+01:00",
@@ -209,16 +174,6 @@
       "name": "Arab News",
       "stance": "allineata",
       "url": "https://www.arabnews.com/middle-east/israel-defense-minister-denies-report-of-rift-between-pm-army-chief-on-iran-3008320"
-    },
-    {
-      "angle": "Risultati a scrutinio oltre il 90%, accuse di brogli, consultazioni di Herzog.",
-      "area": "Italia",
-      "at": "2026-11-01T07:19:46+01:00",
-      "country": "Italia",
-      "kind": "giornale",
-      "name": "Il Post",
-      "stance": "allineata",
-      "url": "https://www.ilpost.it/2026/10/28/elezioni-israeliane-2026-primi-risultati/"
     },
     {
       "angle": "Il peso dei partiti arabi sul governo (25 ottobre).",
@@ -239,17 +194,47 @@
       "name": "Euronews",
       "stance": "allineata",
       "url": "https://www.euronews.com/2026/11/04/israels-election-commission-says-no-fraud-found-in-last-weeks-vote"
+    },
+    {
+      "angle": "Incarico a Eisenkot, sei settimane, apertura a Netanyahu.",
+      "area": "Medio Oriente",
+      "at": "2026-11-09T07:26:39+01:00",
+      "country": "Qatar",
+      "kind": "giornale",
+      "name": "Al Jazeera",
+      "stance": "allineata",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government"
+    },
+    {
+      "angle": "Herzog sceglie il rivale di Netanyahu.",
+      "area": "Europa",
+      "at": "2026-11-08T07:21:19+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "stance": "allineata",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/07/israeli-president-picks-gadi-eisenkot-netanyahu-rival-to-form-government"
+    },
+    {
+      "angle": "Herzog nomina Eisenkot.",
+      "area": "Italia",
+      "at": "2026-11-08T07:21:19+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "stance": "allineata",
+      "url": "https://www.ilpost.it/2026/11/07/isaac-herzog-nomina-gadi-eisenkot-incarico-formare-governo/"
     }
   ],
   "status": "live",
-  "summary": "La commissione elettorale dice che non ci sono prove di irregolarità che abbiano inciso sui risultati, contro le accuse del Likud di voto «rubato». Il presidente Herzog avvia le consultazioni per incaricare chi formerà il governo.",
+  "summary": "Herzog ha affidato a Eisenkot l'incarico di formare il governo; servono 61 seggi e Netanyahu resta premier ad interim. Eisenkot dice di essere aperto al Likud e a Smotrich, non ai partiti arabi.",
   "tags": [
     "Israele",
     "Elezioni",
-    "Medio Oriente",
-    "Iran"
+    "Medio Oriente"
   ],
-  "title": "Israele: la commissione elettorale non trova frodi e conferma il voto",
-  "updated": "2026-11-05T07:24:55+01:00",
-  "view": "È accertato che la commissione elettorale, secondo Euronews e Al Jazeera, non ha trovato irregolarità che abbiano inciso sul voto, mentre il Likud continua a parlare, senza prove, di voto «rubato». Nessuno dei due blocchi ha la maggioranza: Reuters indica 53 seggi per il blocco di Netanyahu su 120, otto in meno della soglia.\n\nConta perché ora tocca a Herzog scegliere chi incaricare; le opzioni citate da Euronews sono un'intesa Netanyahu-Eisenkot, un accordo di Eisenkot con i partiti arabi o nuove elezioni all'inizio dell'anno. Da guardare: l'esito delle consultazioni e l'indagine dello Shin Bet."
+  "themes": [],
+  "title": "Israele: Eisenkot ha sei settimane per formare il governo e apre a Netanyahu",
+  "updated": "2026-11-09T07:26:39+01:00",
+  "view": "È accertato che Herzog ha affidato l'incarico a Eisenkot e non a Netanyahu, che resta premier ad interim, e che le raccomandazioni sono 67 contro 46. Le letture divergono sul peso dei partiti arabi: Netanyahu li presenta come un rischio per lo Stato, mentre Reuters ricorda che Eisenkot per ora non li vuole al governo. Sul voto, la commissione elettorale non trova prove di irregolarità e le accuse del Likud restano senza riscontri.\n\nConta perché una maggioranza di 61 seggi senza i partiti arabi e senza gli ultraortodossi è aritmeticamente difficile. Da guardare: i colloqui con Liberman e con i partiti religiosi, la leva obbligatoria e le condizioni su Hamas."
 }

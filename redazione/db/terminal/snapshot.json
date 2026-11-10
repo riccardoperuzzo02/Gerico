@@ -1,64 +1,76 @@
 {
-  "asOf": "2026-11-05T07:25:56+01:00",
+  "asOf": "2026-11-09T18:22:00+01:00",
   "indices": [
     {
-      "chg": 1.58,
+      "chg": 0.32,
       "code": "USA",
       "index": "S&P 500",
       "note": "",
-      "story": "2026-11-05-mercati-rally-voto-usa",
+      "story": "2026-11-09-wall-street-ia-chip",
       "time": "22:00"
     },
     {
-      "chg": 2.18,
-      "code": "ITA",
-      "index": "FTSE MIB",
-      "note": "",
-      "story": "2026-11-05-mercati-rally-voto-usa",
-      "time": "17:46"
-    },
-    {
-      "chg": 2.22,
-      "code": "DEU",
-      "index": "DAX",
-      "note": "",
-      "story": "2026-11-05-mercati-rally-voto-usa",
-      "time": "17:46"
-    },
-    {
-      "chg": 1.96,
+      "chg": 1.1,
       "code": "FRA",
       "index": "CAC 40",
       "note": "",
-      "story": "2026-11-05-mercati-rally-voto-usa",
-      "time": "17:46"
+      "story": "",
+      "time": "17:57"
     },
     {
-      "chg": 1.79,
+      "chg": 1.9,
+      "code": "DEU",
+      "index": "DAX",
+      "note": "",
+      "story": "",
+      "time": "17:57"
+    },
+    {
+      "chg": 1,
       "code": "GBR",
       "index": "FTSE 100",
       "note": "",
-      "story": "2026-11-05-mercati-rally-voto-usa",
-      "time": "17:46"
+      "story": "",
+      "time": "17:57"
     },
     {
-      "chg": -0.36,
+      "chg": 2.69,
+      "code": "ITA",
+      "index": "FTSE MIB",
+      "note": "",
+      "story": "",
+      "time": "17:37"
+    },
+    {
+      "chg": 0.8,
+      "code": "NLD",
+      "index": "AEX",
+      "note": "",
+      "story": "",
+      "time": "17:57"
+    },
+    {
+      "chg": 1.86,
       "code": "JPN",
       "index": "Nikkei 225",
-      "note": "Dato di stamattina in Asia, non chiusura",
+      "note": "Apertura, non chiusura.",
       "story": "",
-      "time": "03:50"
+      "time": "01:41"
     }
   ],
-  "label": "Chiusure di ieri e Asia stamattina",
+  "label": "Chiusura delle Borse europee",
   "sources": [
     {
-      "name": "ANSA",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/i-mercati-brindano-dopo-il-voto-usa-giu-la-difesa-e-rally-di-banche-e-tech_e4cb0902-0e68-4d16-9575-cc40d4484c1a.html"
+      "name": "ANSA (L'Europa chiude positiva, Londra +1%, 9 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/borsa-leuropa-chiude-positiva-londra-1_94a3aa82-aaf3-4279-af1a-d594ab95b478.html"
     },
     {
-      "name": "Teleborsa",
-      "url": "https://www.teleborsa.it/News/2026/11/04/chiusura-in-rialzo-per-le-borse-europee-con-le-banche-protagoniste-227.html"
+      "name": "ANSA (Milano chiude in forte rialzo, Ftse Mib +2,69%)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/borsa-milano-chiude-in-forte-rialzo-ftse-mib-269_abeba7ae-34ab-492d-8445-043916ad8b88.html"
+    },
+    {
+      "name": "Journal Arta (chiusura di Wall Street, 6 novembre)",
+      "url": "https://journalarta.com/en/2026/11/07/wall-street-close-nasdaq-rises-1-09-and-sp-500-gains-0-32-as-dow-slips-0-46/"
     }
   ]
 }

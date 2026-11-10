@@ -1,5 +1,5 @@
 {
-  "change": "",
+  "change": "6 novembre: l'ufficio di Netanyahu non smentisce l'annuncio di Trump, secondo Times of Israel.",
   "divergences": [
     {
       "point": "Origine dell'intesa",
@@ -20,6 +20,13 @@
     }
   ],
   "facts": [
+    {
+      "n": 1,
+      "text": "L'ufficio di Netanyahu non smentisce l'annuncio di Trump sullo stop imminente agli aiuti militari Usa.",
+      "who": [
+        "Times of Israel"
+      ]
+    },
     {
       "n": 2,
       "text": "Trump dice che gli Usa smetteranno di pagare a Israele circa 4 miliardi di dollari l'anno in aiuti militari, con effetto dal 2027.",
@@ -74,6 +81,10 @@
   "firstSeen": "2026-11-04T07:25:00+01:00",
   "history": [
     {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "6 novembre: l'ufficio di Netanyahu non smentisce l'annuncio di Trump, secondo Times of Israel."
+    },
+    {
       "at": "2026-11-04T07:25:00+01:00",
       "text": "Prima notizia: Trump annuncia lo stop agli aiuti militari a Israele dal 2027."
     }
@@ -83,7 +94,7 @@
     "Netanyahu confermerà la versione di Trump?",
     "Servirà un atto formale o del Congresso per chiudere gli aiuti prima del 2028?"
   ],
-  "rank": 7,
+  "rank": 6,
   "section": "mondo",
   "sources": [
     {
@@ -105,9 +116,19 @@
       "name": "Reuters",
       "stance": "allineata",
       "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/03/trump-says-us-will-stop-paying-israel-after-year-end"
+    },
+    {
+      "angle": "L'ufficio di Netanyahu non smentisce lo stop agli aiuti.",
+      "area": "Medio Oriente",
+      "at": "2026-11-07T07:20:54+01:00",
+      "country": "Israele",
+      "kind": "giornale",
+      "name": "Times of Israel",
+      "stance": "allineata",
+      "url": "https://www.timesofisrael.com/netanyahus-office-doesnt-deny-trumps-announcement-of-imminent-halt-to-us-military-aid/"
     }
   ],
-  "status": "live",
+  "status": "archived",
   "summary": "Il 3 novembre Trump ha detto a Fox News che gli Usa smetteranno di dare a Israele circa 4 miliardi di dollari l'anno in aiuti militari dal 2027, continuando a vendere armi. L'ufficio di Netanyahu non ha commentato; Eisenkot critica il metodo.",
   "tags": [
     "Stati Uniti",
@@ -115,6 +136,6 @@
     "Medio Oriente"
   ],
   "title": "Usa: Trump annuncia lo stop dal 2027 ai 4 miliardi l'anno di aiuti a Israele",
-  "updated": "2026-11-04T07:25:00+01:00",
+  "updated": "2026-11-07T07:20:54+01:00",
   "view": "È accertato che Trump ha annunciato in un'intervista telefonica a Fox News la fine, dal 2027, di circa 4 miliardi di dollari l'anno di aiuti militari a Israele, senza stop alle vendite di armi. Il racconto dell'origine è solo di Trump, che attribuisce l'idea a Netanyahu: l'ufficio del premier non aveva confermato, e per Reuters si tratterebbe di un accordo con lui.\n\nConta perché l'attuale intesa decennale dura fino al 2028 e la scelta arriva a ridosso delle elezioni israeliane contestate. Da guardare: la conferma di Gerusalemme, eventuali atti formali a Washington e le reazioni del nuovo Congresso."
 }

@@ -1,5 +1,5 @@
 {
-  "change": "4 novembre: il ministro dei Trasporti Puente si dimette; Euronews e Open parlano di 69 morti.",
+  "change": "7 novembre: la Procura europea indaga sull'incidente ferroviario, secondo Al Jazeera.",
   "divergences": [
     {
       "point": "Bilancio dei morti",
@@ -69,6 +69,13 @@
     }
   ],
   "facts": [
+    {
+      "n": 1,
+      "text": "La Procura europea indaga sull'incidente ferroviario mortale in Spagna.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
     {
       "n": 3,
       "text": "Il ministro dei Trasporti spagnolo Óscar Puente si è dimesso il 3 novembre per l'incidente di Urda.",
@@ -173,6 +180,10 @@
   "firstSeen": "2026-10-29T07:27:28+01:00",
   "history": [
     {
+      "at": "2026-11-07T07:20:54+01:00",
+      "text": "7 novembre: la Procura europea indaga sull'incidente ferroviario, secondo Al Jazeera."
+    },
+    {
       "at": "2026-11-04T07:25:00+01:00",
       "text": "4 novembre: il ministro dei Trasporti Puente si dimette; Euronews e Open parlano di 69 morti."
     },
@@ -194,7 +205,7 @@
     "Che fine hanno fatto le tre italiane disperse?",
     "Quando riaprirà la linea Madrid-Andalusia?"
   ],
-  "rank": 10,
+  "rank": 11,
   "section": "mondo",
   "sources": [
     {
@@ -228,14 +239,14 @@
       "url": "https://www.euronews.com/2026/11/03/spains-transport-minister-oscar-puente-resigns-over-urda-train-crash-that-killed-69"
     },
     {
-      "angle": "Primo resoconto: Renfe contro Iryo fermo a Urda, poi bilancio salito a 68 morti.",
+      "angle": "La Procura europea apre un'indagine.",
       "area": "Medio Oriente",
-      "at": "2026-10-29T07:27:28+01:00",
+      "at": "2026-11-07T07:20:54+01:00",
       "country": "Qatar",
       "kind": "tv",
       "name": "Al Jazeera",
       "stance": "allineata",
-      "url": "https://www.aljazeera.com/news/2026/10/28/injuries-reported-after-two-trains-collide-in-spain"
+      "url": "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain"
     },
     {
       "angle": "L'ordine inspiegabile del centro di controllo, 68 morti e oltre 80 feriti.",
@@ -288,7 +299,7 @@
       "url": "https://www.avvenire.it/mondo/spagna-scontro-tra-treni-sullalta-velocita-madrid-siviglia-almeno-46-morti_114929"
     }
   ],
-  "status": "live",
+  "status": "archived",
   "summary": "Il 3 novembre il ministro dei Trasporti Óscar Puente si è dimesso dopo l'incidente del 28 ottobre sulla Madrid-Siviglia. Euronews e Open parlano di 69 morti.",
   "tags": [
     "Spagna",
@@ -296,6 +307,6 @@
     "Italia"
   ],
   "title": "Spagna: si dimette il ministro Puente dopo lo scontro tra treni a Urda",
-  "updated": "2026-11-04T07:25:00+01:00",
+  "updated": "2026-11-07T07:20:54+01:00",
   "view": "È accertato che il 3 novembre il ministro Puente si è dimesso per l'incidente di Urda, secondo Il Post, Open ed Euronews. Il bilancio sale da 68 a 69 morti secondo Euronews e Open; le testate che hanno seguito i primi giorni indicano 68. Sulle cause le fonti convergono su un errore del centro di controllo, ma l'inchiesta non è conclusa.\n\nConta perché è la prima conseguenza politica dell'incidente, il secondo grave sull'alta velocità spagnola in nove mesi. Da guardare: il successore di Puente, l'esito dell'inchiesta sul centro di controllo e la riapertura della Madrid-Andalusia."
 }

@@ -1,104 +1,111 @@
 {
-  "asOf": "2026-11-05T07:25:56+01:00",
-  "date": "2026-11-05",
+  "asOf": "2026-11-10T13:24:29+01:00",
+  "date": "2026-11-10",
   "items": [
     {
-      "at": "2026-11-05T05:04:00+01:00",
+      "at": "2026-11-10T06:59:00+01:00",
+      "section": "economia",
+      "source": "Reuters",
+      "title": "Il surplus commerciale della Cina supera i mille miliardi di dollari, spinto dall'export legato all'IA",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/china-s-trade-surplus-soars-past-1-trillion-as-ai-boom-powers-exports"
+    },
+    {
+      "at": "2026-11-10T07:28:00+01:00",
       "section": "mondo",
+      "source": "Reuters",
+      "title": "Il Wall Street Journal scrive che aerei Usa sono stati evacuati da una seconda base britannica per la minaccia iraniana",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/us-aircraft-evacuated-from-second-uk-base-due-to-iran-threat-wsj-reports"
+    },
+    {
+      "at": "2026-11-10T01:28:00+01:00",
+      "section": "mercati",
       "source": "ANSA",
-      "title": "Hong Kong condanna l'attivista Joshua Wong ad altri dieci anni di carcere.",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/05/hong-kong-altri-10-anni-di-carcere-allattivista-pro-democrazia-joshua-wong_2f555401-caca-401d-bba4-153ca494d329.html"
-    },
-    {
-      "at": "2026-11-04T19:03:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Gli Usa sanzionano società e persone indiane e turche accusate di aiutare l'Iran.",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/us-slaps-sanctions-on-indian-turkish-firms-and-people-for-aiding-iran"
-    },
-    {
-      "at": "2026-11-04T19:49:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Il Marocco dice che rispetterà il cessate il fuoco nel Sahara occidentale dopo la fine della missione Onu.",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/morocco-says-it-will-uphold-western-sahara-ceasefire-after-un-mission-ends"
-    },
-    {
-      "at": "2026-11-04T19:31:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "La polizia anticorruzione ucraina lega alti funzionari della sicurezza a una rete criminale.",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/ukraine-s-anti-graft-police-target-senior-officials-in-major-fraud-probe"
-    },
-    {
-      "at": "2026-11-04T18:03:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Un operatore sanitario britannico con l'Ebola sarà evacuato dal Congo nel Regno Unito.",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/british-healthcare-worker-with-ebola-to-be-evacuated-from-congo-to-uk-document-shows"
-    },
-    {
-      "at": "",
-      "section": "mondo",
-      "source": "Euronews",
-      "title": "Zelensky è a Madrid per incontrare Sánchez e altri leader al vertice iberoamericano.",
-      "url": "https://www.euronews.com/2026/11/04/zelenski-makes-surprise-visit-to-madrid-for-talks-with-sanchez-and-latin-american-leaders"
+      "title": "Il Nikkei torna sopra quota 60.000 punti dopo un rialzo di oltre il 3% in apertura",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-tokyo-guadagna-oltre-il-3-in-apertura-il-nikkei-torna-sopra-quota-60mila_ebf520f9-1660-407f-be39-9967c37cab8b.html"
     },
     {
       "at": "",
       "section": "mondo",
       "source": "Al Jazeera",
-      "title": "In Sudafrica si vota alle elezioni locali, che mettono alla prova l'Anc.",
-      "url": "https://www.aljazeera.com/news/2026/11/4/south-africans-vote-in-local-elections-seen-as-test-for-embattled-anc"
+      "title": "Forze israeliane uccidono un quattordicenne palestinese in Cisgiordania, secondo Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/10/israeli-forces-kill-14-year-old-palestinian-boy-in-occupied-west-bank"
     },
     {
       "at": "",
       "section": "mondo",
       "source": "Al Jazeera",
-      "title": "In Indonesia il capo di gabinetto del presidente è destituito per presunte intercettazioni.",
-      "url": "https://www.aljazeera.com/news/2026/11/4/indonesian-presidents-chief-of-staff-dismissed-over-alleged"
-    },
-    {
-      "at": "2026-11-04T17:34:00+01:00",
-      "section": "economia",
-      "source": "Reuters",
-      "title": "Il Canada dice che le elezioni Usa non cambiano la sua linea sui dazi e prevede colloqui con Washington.",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/04/canada-says-midterms-won-t-change-trade-stance-sees-talks-with-us-officials"
+      "title": "Il Camerun fissa la data delle elezioni legislative e locali, rinviate due volte",
+      "url": "https://www.aljazeera.com/news/2026/11/10/cameroon-sets-date-for-twice-delayed-legislative-and-local-elections"
     },
     {
       "at": "",
-      "section": "economia",
-      "source": "Teleborsa",
-      "title": "Meta colloca la prima obbligazione in euro, con richieste per circa 53 miliardi.",
-      "url": "https://www.teleborsa.it/News/2026/11/04/brillante-wall-street-dopo-la-vittoria-dei-dem-e-dati-macro-193.html"
+      "section": "mondo",
+      "source": "Al Jazeera",
+      "title": "Un sondaggio dice che gli americani preferiscono di 3 a 1 i candidati contrari alla guerra con l'Iran",
+      "url": "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin"
     },
     {
-      "at": "",
-      "section": "economia",
+      "at": "2026-11-09T20:51:00+01:00",
+      "section": "mondo",
       "source": "ANSA",
-      "title": "Disney prepara migliaia di licenziamenti per tagliare i costi del 20%.",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/03/disney-prepara-migliaia-di-licenziamenti-punta-a-taglio-costi-del-20_39237a36-b4c8-4667-bfa8-7a0ec3db87e0.html"
+      "title": "Papa Leone incontra a Buenos Aires cinque vittime di abusi e chiede più protezione",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/il-papa-vede-vittime-di-abusi-rafforzare-la-protezione_f0ef9b55-a317-4d87-bba7-4716152f3106.html"
     },
     {
-      "at": "",
+      "at": "2026-11-09T20:42:00+01:00",
       "section": "italia",
+      "source": "ANSA",
+      "title": "Meloni dice che il decreto Bollette porta benefici ma serve tempo",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/meloni-dal-decreto-bollette-benefici-importanti-ma-serve-tempo-per-gli_40a2e652-f796-42b5-b5f1-3e6c986eebee.html"
+    },
+    {
+      "at": "2026-11-09T11:46:00+01:00",
+      "section": "economia",
       "source": "Il Post",
-      "title": "Electrolux e sindacati concordano di quasi dimezzare gli esuberi in Italia.",
-      "url": "https://www.ilpost.it/2026/11/04/electrolux-accordo-riduzione-esuberi/"
+      "title": "Crédit Agricole propone la fusione della sua divisione italiana con Banco Bpm",
+      "url": "https://www.ilpost.it/2026/11/09/credit-agricole-banco-bpm-fusione/"
     },
     {
-      "at": "2026-11-04T19:42:00+01:00",
-      "section": "italia",
-      "source": "ANSA",
-      "title": "Manovra: un deputato di Fratelli d'Italia annuncia un emendamento per riaprire il condono del 2003.",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/04/manovra-vietri-fdi-presentero-un-emendamento-per-riaprire-il-condono-del-2003_3efecbce-73a8-4ef4-b4c4-fba4e1d7010a.html"
+      "at": "2026-11-09T10:10:00+01:00",
+      "section": "economia",
+      "source": "Il Post",
+      "title": "Consob approva l'offerta di Intesa Sanpaolo su Monte dei Paschi",
+      "url": "https://www.ilpost.it/2026/11/09/consob-offerta-intesa-sanpaolo-monte-dei-paschi-di-siena/"
     },
     {
-      "at": "",
+      "at": "2026-11-09T11:39:00+01:00",
+      "section": "economia",
+      "source": "Il Post",
+      "title": "Gara per l'ex Ilva: due offerte, da Jindal e da Arvedi",
+      "url": "https://www.ilpost.it/2026/11/09/offerte-ex-ilva-taranto-jindal-arvedi/"
+    },
+    {
+      "at": "2026-11-09T17:12:00+01:00",
       "section": "tecnologia",
-      "source": "Al Jazeera",
-      "title": "Un tribunale australiano ascolta la difesa del governo sul divieto dei social ai minori di 16 anni.",
-      "url": "https://www.aljazeera.com/news/2026/11/4/australian-government-defends-social-media-ban-for-under-16s-in-court"
+      "source": "Il Post",
+      "title": "La Commissione Ue fa causa a Leonardo, Ibm e Atos per il sistema Ees",
+      "url": "https://www.ilpost.it/2026/11/09/ue-causa-ess-leonardo-ibm-atos/"
+    },
+    {
+      "at": "2026-11-09T01:49:00+01:00",
+      "section": "mondo",
+      "source": "Reuters",
+      "title": "Trump pensa di incontrare Xi e Putin al vertice Apec in Cina",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/09/trump-thinks-he-will-meet-xi-and-putin-at-china-apec-summit"
+    },
+    {
+      "at": "2026-11-09T04:02:00+01:00",
+      "section": "mondo",
+      "source": "Reuters",
+      "title": "I Paesi del G7 valutano a Parigi l'effetto della sconfitta di Trump alle elezioni di metà mandato",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/09/g7-allies-to-assess-impact-of-trump-s-midterm-setback-at-paris-talks"
+    },
+    {
+      "at": "2026-11-09T17:53:00+01:00",
+      "section": "economia",
+      "source": "Kyiv Independent",
+      "title": "L'Ue prevede altri 45 miliardi di euro per Kiev nel 2027",
+      "url": "https://kyivindependent.com/eu-plans-to-send-a-new-45-billion-euros-to-kyiv-in-2027/"
     }
   ]
 }

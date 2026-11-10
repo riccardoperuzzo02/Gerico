@@ -1,0 +1,91 @@
+{
+  "article": "Un agente della Policía Nacional, la polizia nazionale spagnola, è morto questa mattina a Oviedo, nelle Asturie, per l'esplosione di un ordigno. Un secondo agente, uno specialista Tedax (gli artificieri), è ferito in modo molto grave. Lo riportano The Objective e Infobae. L'esplosione è avvenuta nel quartiere di Villafría.\n\nSecondo Infobae, i vicini avevano segnalato spari vicino a un blocco di case popolari. Gli agenti hanno trovato nell'ingresso di un palazzo, in via Rafael Urrusti, uno zaino semiaperto con una luce lampeggiante e hanno chiamato i Tedax. Durante l'ispezione l'ordigno è esploso. Infobae scrive che il morto è un subispettore dell'unità cinofila e che al collega artificiere è stata amputata una gamba: è ricoverato all'ospedale HUCA. The Objective parla di un agente morto e di uno che ha perso una gamba.\n\nSempre secondo Infobae, anche una giovane ferita da un colpo d'arma da fuoco è stata portata all'HUCA, e le sue condizioni non sono note. The Objective riferisce, citando fonti di polizia, che la vicenda sarebbe legata a una lite di vicinato. Infobae aggiunge che la polizia cerca l'uomo ritenuto autore degli spari, che potrebbe essere collegato all'ordigno.\n\nLe informazioni sono preliminari e vengono in parte da fonti di polizia e da media locali. Non è chiaro chi abbia lasciato lo zaino, di che tipo fosse l'ordigno e se l'esplosione sia stata voluta. Sul posto c'erano il sindaco di Oviedo, Alfredo Canteli, e il capo superiore della Polizia nelle Asturie, Jorge Ignacio Moreno. La zona è transennata.",
+  "change": "",
+  "country": "ES",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Un agente della Policía Nacional è morto e un artificiere Tedax è gravemente ferito per l'esplosione di uno zaino a Villafría, Oviedo.",
+      "who": [
+        "The Objective",
+        "Infobae"
+      ]
+    },
+    {
+      "text": "Gli agenti erano intervenuti dopo una segnalazione di spari vicino a un blocco di case popolari.",
+      "who": [
+        "Infobae",
+        "The Objective"
+      ]
+    },
+    {
+      "text": "Al Tedax è stata amputata una gamba; è ricoverato all'ospedale HUCA in condizioni molto gravi.",
+      "who": [
+        "Infobae"
+      ]
+    },
+    {
+      "text": "Secondo fonti di polizia la vicenda sarebbe legata a una lite di vicinato.",
+      "who": [
+        "The Objective"
+      ]
+    },
+    {
+      "text": "La polizia cerca l'uomo ritenuto autore degli spari, che potrebbe essere legato all'ordigno.",
+      "who": [
+        "Infobae"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-10T13:31:57+01:00",
+  "history": [
+    {
+      "at": "2026-11-10T13:31:57+01:00",
+      "text": "Prima notizia: esplosione a Oviedo, morto un agente di polizia."
+    }
+  ],
+  "id": "2026-11-10-es-oviedo-esplosione-polizia",
+  "notCovered": [],
+  "open": [
+    "Chi ha lasciato lo zaino e di che ordigno si tratta?",
+    "L'uomo cercato è stato rintracciato?",
+    "Quali sono le condizioni della persona ferita da arma da fuoco?"
+  ],
+  "places": [
+    "ES"
+  ],
+  "rank": 501,
+  "scope": "paese",
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Il bilancio iniziale e la pista della lite di vicinato, da fonti di polizia.",
+      "area": "Europa",
+      "at": "2026-11-10T13:31:57+01:00",
+      "country": "Spagna",
+      "kind": "giornale",
+      "name": "The Objective",
+      "url": "https://theobjective.com/espana/2026-11-10/muere-policia-explosion-asturias/"
+    },
+    {
+      "angle": "La dinamica dello zaino, le condizioni dei feriti e la ricerca dell'uomo.",
+      "area": "America Latina",
+      "at": "2026-11-10T13:31:57+01:00",
+      "country": "Argentina",
+      "kind": "giornale",
+      "name": "Infobae",
+      "url": "https://www.infobae.com/espana/2026/11/10/un-policia-muere-y-otro-resulta-herido-de-gravedad-tras-la-explosion-de-una-mochila-durante-una-intervencion-por-un-tiroteo-en-oviedo/"
+    }
+  ],
+  "status": "live",
+  "summary": "Un agente della Policía Nacional è morto e uno specialista artificiere è gravemente ferito per l'esplosione di uno zaino a Oviedo. Era intervenuto dopo una segnalazione di spari.",
+  "tags": [
+    "Spagna",
+    "Cronaca",
+    "Polizia"
+  ],
+  "themes": [],
+  "title": "Spagna: un agente muore per un'esplosione a Oviedo",
+  "updated": "2026-11-10T13:31:57+01:00",
+  "view": "Si può dire con certezza che un agente è morto e un altro è gravemente ferito dopo l'esplosione di uno zaino durante un intervento per spari. Il resto, dalla lite di vicinato alla natura dell'ordigno, viene da fonti di polizia e media locali e va confermato.\n\nConta perché è la morte di un agente in servizio per un ordigno, e le circostanze non sono ancora chiare. Da guardare: le comunicazioni ufficiali del Ministero dell'Interno, l'identificazione e l'eventuale arresto dell'uomo cercato e le condizioni dei feriti."
+}

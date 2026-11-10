@@ -1,0 +1,131 @@
+{
+  "article": "Il 5 novembre a Wall Street i titoli dell'intelligenza artificiale e dei chip hanno registrato forti perdite. In seduta il Nasdaq perdeva oltre il 5% e l'indice dei semiconduttori Sox il 10,3%, con Nvidia a meno 8,6%, scrive Milano Finanza.\n\nMilano Finanza collega il calo ai timori di limiti allo sviluppo dell'IA dopo il voto americano, vinto dai Democratici, e ai conti di Qualcomm con guidance ridotta.\n\nIl 6 novembre c'è stato un rimbalzo parziale. Secondo Journal Arta, l'S&P 500 ha chiuso a 7.376,86 punti (più 0,32%), il Nasdaq a 24.579,42 (più 1,09%) e il Dow Jones a 51.285,73 (meno 0,46%). Le Borse europee hanno chiuso in calo lo stesso giorno, e Teleborsa cita i dati americani sul lavoro e i timori sui data center.\n\nIl 9 novembre ANSA riporta che Nvidia perde il 6% nel pre-market dopo l'avvio di un'indagine su Huang. Al Jazeera scrive che Nvidia ha aperto un'indagine sull'amministratore delegato Jensen Huang per una presunta relazione. Alle 12:43 le Borse europee salgono: il Ftse Mib guadagna l'1,94% e il Dax lo 0,95%, secondo Teleborsa.\n\nIl 10 novembre il Nikkei di Tokyo ha aperto in rialzo del 3,13% ed è tornato sopra i 60mila punti, riferisce l'Ansa, che attribuisce il movimento al rimbalzo dei titoli tecnologici e dei semiconduttori e al calo del petrolio. Secondo Teleborsa, alle 06:20 Hong Kong era a più 0,08% e alle 06:08 Shanghai a più 0,37%. Il Post scrive che il 9 novembre il titolo Nvidia è calato in modo marcato dopo le notizie sul rapporto del suo amministratore delegato con una presunta spia cinese. Per questo giro non c'è una fonte verificata sulla chiusura di Wall Street del 9 novembre.",
+  "change": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang.",
+  "city": {
+    "lat": 40.71,
+    "lon": -74.01,
+    "name": "New York"
+  },
+  "divergences": [],
+  "facts": [
+    {
+      "n": 1,
+      "text": "Il 5 novembre, in seduta, il Nasdaq perdeva oltre il 5% e l'indice dei semiconduttori Sox il 10,3%; Nvidia -8,6%.",
+      "who": [
+        "Milano Finanza"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Milano Finanza lega il calo ai timori di limiti allo sviluppo dell'IA dopo il voto e ai conti con guidance ridotta di Qualcomm.",
+      "who": [
+        "Milano Finanza"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il 6 novembre l'S&P 500 chiude a 7.376,86 (+0,32%), il Nasdaq a 24.579,42 (+1,09%) e il Dow a 51.285,73 (-0,46%).",
+      "who": [
+        "Journal Arta"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il 6 novembre le Borse europee chiudono in calo; Teleborsa cita i dati Usa sul lavoro e i timori sui data center.",
+      "who": [
+        "Teleborsa"
+      ]
+    },
+    {
+      "n": 1,
+      "text": "Il Nikkei apre in rialzo del 3,13% e torna sopra 60mila punti.",
+      "who": [
+        "ANSA"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-09T07:26:39+01:00",
+  "history": [
+    {
+      "at": "2026-11-10T07:25:00+01:00",
+      "text": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang."
+    },
+    {
+      "at": "2026-11-09T07:26:39+01:00",
+      "text": "Prima notizia: titoli IA e chip in forte calo a Wall Street, rimbalzo parziale venerdì."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Il rimbalzo di venerdì reggerà?",
+    "Quali regole sull'IA proporrà il nuovo Congresso?"
+  ],
+  "places": [
+    "US"
+  ],
+  "rank": 6,
+  "section": "mercati",
+  "sources": [
+    {
+      "angle": "Il crollo di chip e IA dopo il voto.",
+      "area": "Italia",
+      "at": "2026-11-05T22:00:00+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Milano Finanza",
+      "stance": "allineata",
+      "url": "https://www.milanofinanza.it/news/il-congresso-dem-affossa-l-ai-2723292"
+    },
+    {
+      "angle": "Chiusure europee del 6 novembre.",
+      "area": "Italia",
+      "at": "2026-11-06T18:00:00+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "stance": "allineata",
+      "url": "https://www.teleborsa.it/News/2026/11/06/diffusi-ribassi-in-europa-tra-timori-su-ai-e-stretta-fed-221.html"
+    },
+    {
+      "angle": "Chiusura di Wall Street del 6 novembre.",
+      "area": "Stati Uniti",
+      "at": "2026-11-07T00:00:00+01:00",
+      "country": "",
+      "kind": "giornale",
+      "name": "Journal Arta",
+      "stance": "parziale",
+      "url": "https://journalarta.com/en/2026/11/07/wall-street-close-nasdaq-rises-1-09-and-sp-500-gains-0-32-as-dow-slips-0-46/"
+    },
+    {
+      "angle": "Apertura di Tokyo, yen e petrolio.",
+      "area": "Italia",
+      "country": "IT",
+      "date": "2026-11-10",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-tokyo-guadagna-oltre-il-3-in-apertura-il-nikkei-torna-sopra-quota-60mila_ebf520f9-1660-407f-be39-9967c37cab8b.html"
+    },
+    {
+      "angle": "Il calo di Nvidia dopo le notizie su Huang.",
+      "area": "Italia",
+      "country": "IT",
+      "date": "2026-11-09",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/09/nvidia-risultato-borsa-notizia-relazione-ceo-presunta-spia-cinese/"
+    }
+  ],
+  "status": "live",
+  "summary": "Il 9 novembre Nvidia perdeva il 6% nel pre-market dopo l'indagine interna su Huang. Stamattina il Nikkei apre in rialzo del 3,13% e torna sopra 60mila punti.",
+  "tags": [
+    "Wall Street",
+    "Intelligenza artificiale",
+    "Nasdaq"
+  ],
+  "themes": [
+    "voto-usa"
+  ],
+  "title": "Borse: Nvidia cede il 6% prima dell'apertura, Tokyo rimbalza oltre il 3%",
+  "updated": "2026-11-10T07:25:00+01:00",
+  "view": "Le fonti concordano sulla sequenza: forte vendita di titoli IA e chip il 5 novembre, rimbalzo parziale il 6. Le cause sono interpretazioni dei cronisti: regole più dure sull'IA dopo il voto, i conti Qualcomm e, per Teleborsa, i dati sul lavoro che alzano le attese su un rialzo dei tassi.\n\nConta perché i titoli IA pesano molto sugli indici Usa. Da guardare: se il rimbalzo regge e come reagiscono i rendimenti Usa."
+}

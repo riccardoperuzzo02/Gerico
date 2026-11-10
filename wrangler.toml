@@ -1,9 +1,23 @@
-# Pubblicazione su Cloudflare (Worker con soli file statici).
-# Il sito è la cartella site/: nessun codice lato server, nessuna chiave.
-# Il nome deve restare uguale al nome del progetto su Cloudflare.
+# Pubblicazione su Cloudflare. Le pagine sono i file statici di site/, serviti senza passare dal Worker.
+# Il Worker (worker/index.js) risponde solo a /api/* (account, preferenze, visite, errori) e a /admin (il gestionale).
+# Il nome deve restare uguale al nome del progetto su Cloudflare. Nessuna chiave qui: i segreti ADMIN_TOKEN e STATS_SALT
+# stanno nelle impostazioni del Worker su Cloudflare (Settings, Variables and Secrets).
 name = "gerico"
+main = "worker/index.js"
 compatibility_date = "2025-10-01"
 
 [assets]
 directory = "./site"
+binding = "ASSETS"
 not_found_handling = "404-page"
+run_worker_first = ["/api/*", "/admin", "/admin/*", "/admin.html"]
+
+# il database degli account e dei conteggi: D1 «gerico», creato nel pannello di Cloudflare
+[[d1_databases]]
+binding = "DB"
+database_name = "gerico"
+database_id = "4c757380-ff80-4500-be98-a01333ae2a39"
+
+# ogni notte (2:17 UTC) la pulizia: sessioni e sfide scadute, limiti vecchi, visitatori unici dei giorni passati ridotti a un numero
+[triggers]
+crons = ["17 2 * * *"]

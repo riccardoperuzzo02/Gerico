@@ -1,0 +1,29 @@
+name: Prova calendario societario
+on:
+  push:
+    branches: [prova-societari]
+    paths: [prova/prova_societari.py, .github/workflows/prova-societari.yml]
+permissions:
+  contents: write
+concurrency:
+  group: prova-societari
+  cancel-in-progress: true
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q yfinance requests
+      - run: python prova/prova_societari.py prova/esito || true
+      - run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          git add prova/esito
+          git commit -q -m "Esito della prova del calendario societario"
+          git push -q origin HEAD:prova-societari

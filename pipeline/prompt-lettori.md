@@ -53,6 +53,7 @@ Stato: fatta il 10 novembre 2026, salvo il salvataggio sul server, che arriva co
 - export.py scrive per ogni storia il paese; brevi.py anche per le brevi. Il sito sceglie le notizie della sezione del paese da questi campi e dal file del paese.
 - La scelta resta: nel browser senza account, nell'account con l'account. Cambia subito la prima pagina, senza ricaricarla, con una transizione.
 - Prova: ogni paese, cambio di paese con la pagina scesa, paese senza notizie del giorno, indirizzo aperto con #sezione di un paese che non è quello scelto.
+Stato: il 10 novembre 2026 sono online la scelta del paese, la scheda del paese, le brevi delle testate (job «Paesi», 50 paesi) e il paese di ogni storia (country dall'export, scope «paese» per le notizie nazionali estere). Manca la copertura della redazione per i paesi del livello 1 (Stati Uniti, Regno Unito, Francia, Germania, Spagna) con l'attività a parte.
 
 4. ACCOUNT
 - Il Worker: wrangler.toml prende main = "worker/index.js" (o il nome che scegli) e il binding del database D1; i file statici restano serviti come adesso, il Worker risponde solo sotto /api/. Lo schema del database sta in worker/schema.sql, con le migrazioni numerate. Niente librerie: WebCrypto, fetch e le API di Cloudflare.

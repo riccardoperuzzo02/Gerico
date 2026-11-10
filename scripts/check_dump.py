@@ -9,6 +9,8 @@ export.py non si tocca, quindi i dati scritti male si sistemano qui, prima dell'
 - un orario senza fuso (2026-11-02T07:26:58) prende il fuso di Roma di quel giorno;
 - updated e firstSeen con il solo giorno (2026-11-02) diventano la mezzanotte di quel giorno, ora di Roma;
 - updated che non è un testo si toglie: la storia archiviata resta fuori dall'archivio invece di fermare l'export;
+- un orario nel futuro (più di due minuti dopo adesso) diventa adesso: la redazione a volte stima l'ora invece di
+  leggerla, e il sito non deve dire «aggiornata alle 7:50» per una storia scritta alle 7:25;
 - ogni campo prende la forma che il sito si aspetta: un testo dove serve un testo (sommario, articolo, parere, novità),
   una lista di testi dove serve una lista (temi, domande aperte), liste di voci fatte bene (fonti, fatti, storia delle
   modifiche, classi e voci dei mercati, eventi dell'agenda, indici della mappa). Le voci che non si possono
@@ -55,6 +57,33 @@ def fix_times(obj, where, notes):
     elif isinstance(obj, list):
         for v in obj:
             fix_times(v, where, notes)
+
+
+def adesso():
+    """L'ora della pubblicazione; ADESSO (ISO 8601 con fuso) la sostituisce nelle prove."""
+    v = os.environ.get("ADESSO")
+    if v:
+        return datetime.fromisoformat(v).astimezone(ROME)
+    return datetime.now(ROME).replace(microsecond=0)
+
+
+def fix_future(obj, where, notes, now):
+    """Un orario più avanti di adesso non può essere vero (scritture, articoli, voci della storia): diventa adesso."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in TIME_KEYS and isinstance(v, str):
+                try:
+                    t = datetime.fromisoformat(v.strip().replace("Z", "+00:00"))
+                except ValueError:
+                    continue
+                if t.tzinfo is not None and (t - now).total_seconds() > 120:
+                    obj[k] = now.isoformat(timespec="seconds")
+                    notes.append(f"{where}: {k} {v!r} è nel futuro, diventa {obj[k]!r}")
+            else:
+                fix_future(v, where, notes, now)
+    elif isinstance(obj, list):
+        for v in obj:
+            fix_future(v, where, notes, now)
 
 
 def fix_story(doc, where, notes):
@@ -281,7 +310,7 @@ def fix_terminal(doc, where, notes):
 def main(dump):
     if not os.path.isdir(dump):
         sys.exit(f"ERRORE: la cartella {dump} non esiste")
-    notes, found = [], 0
+    notes, found, now = [], 0, adesso()
     for root, _dirs, files in os.walk(dump):
         for name in sorted(files):
             if not name.endswith(".json"):
@@ -309,6 +338,7 @@ def main(dump):
             elif where == os.path.join("terminal", "snapshot.json"):
                 fix_terminal(doc, where, notes)
             fix_times(doc, where, notes)
+            fix_future(doc, where, notes, now)
             if len(notes) > before or json.dumps(doc, sort_keys=True, ensure_ascii=False) != snap:
                 tmp = path + ".tmp"
                 with open(tmp, "w", encoding="utf-8") as f:

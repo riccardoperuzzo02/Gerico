@@ -77,7 +77,7 @@ def scrivi(path, dato):
 def scarica(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip, deflate",
                                                "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5"})
-    with urllib.request.urlopen(req, timeout=20) as r:
+    with urllib.request.urlopen(req, timeout=28) as r:
         data = r.read(4_000_000)
         enc = (r.headers.get("Content-Encoding") or "").lower()
     if enc == "gzip" or data[:2] == b"\x1f\x8b":

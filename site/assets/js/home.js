@@ -6,8 +6,16 @@ G.page("home", async function (P) {
 
   G.initPrefs();
 
+  // il paese di chi legge: la sua scheda prende il posto di Italia. «vista»: un paese aperto dall'indirizzo (#francia)
+  // senza sceglierlo; la scelta resta quella salvata
+  let paese = G.paese(), vista = null;
+  { const h0 = G.paeseDaSlug(G.unhash(location.hash)); if (h0 && h0.code !== paese) vista = h0.code; }
+  const paeseOra = () => vista || paese;
+  const slugOra = () => G.paeseInfo(paeseOra()).slug;
+  const datiPaese = {};
+  const caricaPaese = async (code) => { if (!(code in datiPaese)) datiPaese[code] = await G.load("paesi/" + code); return datiPaese[code]; };
   const [ed, mk0, qt0, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
-    G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda")]);
+    G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda"), caricaPaese(paeseOra())]);
   // i numeri dei mercati: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
   // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, più sotto)
   let qt = qt0, mk = G.withQuotes(mk0, qt);
@@ -52,7 +60,27 @@ G.page("home", async function (P) {
   const TABS = [["economia", ["economia", "mercati"]], ["mondo", ["mondo"]], ["italia", ["italia"]], ["tecnologia", ["tecnologia"]]];
   const TAB_OF = {};
   TABS.forEach(([k, secs]) => secs.forEach((x) => { TAB_OF[x] = k; }));
-  const inTab = (sec) => TAB_OF[sec] === state.section;
+  // la sezione della redazione va nella sua scheda; Italia va nella scheda del paese se il paese è l'Italia, altrimenti in Mondo
+  const tabDi = (sec) => (sec === "italia" ? (paeseOra() === "IT" ? "italia" : "mondo") : TAB_OF[sec]);
+  const inTab = (sec) => tabDi(sec) === state.section;
+  // una storia è del paese se il paese è il suo (country: il primo dei suoi luoghi, scritto dall'export) o se il nome
+  // del paese è tra i suoi temi; per l'Italia vale anche la sezione Italia
+  const nomiDi = (code) => { const p = G.paeseInfo(code); return [p.it, p.en].map((x) => x.toLowerCase()); };
+  const delPaese = (s, code) => !!s && (s.country === code || (code === "IT" && s.section === "italia") ||
+    (s.tags || []).some((t) => nomiDi(code).includes(String(t).toLowerCase())));
+  const inPaese = () => state.section === slugOra();
+  // le notizie nazionali di un paese estero (scope "paese", scritte per la sua scheda) si vedono solo da chi ha scelto
+  // quel paese: per gli altri non stanno né in Tutte né in Mondo né nei temi
+  const perMe = (s) => s.scope !== "paese" || s.country === paeseOra();
+  const mie = () => stories.filter(perMe);
+  // Mondo, per chi ha scelto un altro paese: anche l'Italia, ma non le storie del suo paese (stanno nella sua scheda)
+  const inMondo = (s) => tabDi(s.section) === "mondo" && s.scope !== "paese" && !(paeseOra() !== "IT" && delPaese(s, paeseOra()));
+  // le brevi delle testate del paese (scripts/paesi.py), nella forma delle brevi della redazione, con il titolo tradotto
+  const breviPaese = () => {
+    const d = datiPaese[paeseOra()];
+    return (d && Array.isArray(d.items) ? d.items : []).filter((b) => b && b.title && G.safeUrl(b.url))
+      .map((b) => ({ title: (G.en ? b.en : b.it) || b.title, url: b.url, source: b.source, at: b.at, ext: true }));
+  };
   // i temi caldi: tre vicende che durano (una guerra, un'elezione), scelte dalla redazione; restano finché hanno
   // storie live. Una storia è del tema se lo ha in themes; le storie vecchie, le brevi e i temi ricavati dai tag,
   // per parole chiave (anche radici: «ucrain» trova Ucraina e ucraini)
@@ -64,6 +92,9 @@ G.page("home", async function (P) {
   const sectionFromHash = () => {
     const h = G.unhash(location.hash);
     if (h === "seguiti") return h;
+    // il nome di un paese: la scheda di quel paese (se non è quello scelto, solo per questa visita)
+    const ph = G.paeseDaSlug(h);
+    if (ph) { vista = ph.code === paese ? null : ph.code; return ph.slug; }
     return themeOf(h) ? h : TAB_OF[h] || "tutte";
   };
   // un tema seguito è un tag delle storie oppure un tema caldo: questo, per le sue parole chiave, vale anche per le brevi
@@ -72,7 +103,7 @@ G.page("home", async function (P) {
   const follows = (s) => state.follows.some((f) => (s.tags || []).includes(f) || (!!hotOf(f) && inTheme(s, hotOf(f))));
   // le storie dei temi seguiti, le più nuove prima (l'ora con il fuso: si confrontano gli istanti, non i testi)
   const when = (s) => Date.parse(s.updated || s.firstSeen || "") || 0;
-  const followed = () => stories.filter(follows).sort((a, b) => when(b) - when(a));
+  const followed = () => mie().filter(follows).sort((a, b) => when(b) - when(a));
   // una breve è di un tema seguito se lo nomina nel titolo (parola intera, maiuscole o no)
   const RX = new Map();
   const wordRx = (t) => { if (!RX.has(t)) RX.set(t, new RegExp("(^|[^\\p{L}\\p{N}])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "($|[^\\p{L}\\p{N}])", "iu")); return RX.get(t); };
@@ -83,28 +114,39 @@ G.page("home", async function (P) {
   const isNew = (s) => !!seenPrev && when(s) > (Date.parse(seenPrev) || Infinity);
   const visible = () => {
     const th = themeOf(state.section);
-    if (th) return stories.filter((s) => inTheme(s, th));
-    if (state.section === "tutte") return stories;
+    if (th) return mie().filter((s) => inTheme(s, th));
+    if (state.section === "tutte") return mie();
     if (state.section === "seguiti") return followed();
-    return stories.filter((s) => inTab(s.section));
+    if (inPaese()) return stories.filter((s) => delPaese(s, paeseOra()));
+    if (state.section === "mondo") return mie().filter(inMondo);
+    return mie().filter((s) => inTab(s.section));
   };
   // le brevi non hanno temi: in un tema caldo quelle con le sue parole nel titolo, nei Seguiti quelle che nominano un tema seguito
   const visibleBrevi = () => {
     const th = themeOf(state.section);
     if (th) return brevi.filter((b) => kwIn(b.title, th)).slice(0, 15);
+    if (inPaese()) {
+      // le brevi della redazione (per l'Italia) e quelle delle testate del paese, senza doppioni, le più nuove prima
+      const visti = new Set(), tutte = (paeseOra() === "IT" ? brevi.filter((b) => b.section === "italia") : []).concat(breviPaese());
+      return tutte.filter((b) => { const k = String(b.url).split("#")[0]; if (visti.has(k)) return false; visti.add(k); return true; })
+        .sort((a, b) => (Date.parse(b.at || "") || 0) - (Date.parse(a.at || "") || 0)).slice(0, 15);
+    }
     return (state.section === "seguiti" ? brevi.filter(followsBreve) : brevi.filter((b) => state.section === "tutte" || inTab(b.section))).slice(0, 15);
   };
   const visiblePast = () => {
     const th = themeOf(state.section);
-    if (th) return archive.filter((s) => inTheme(s, th)).slice(0, 8);
-    return (state.section === "tutte" ? archive : archive.filter((s) => (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
+    if (th) return archive.filter((s) => perMe(s) && inTheme(s, th)).slice(0, 8);
+    if (inPaese()) return archive.filter((s) => delPaese(s, paeseOra())).slice(0, 8);
+    if (state.section === "mondo") return archive.filter(inMondo).slice(0, 8);
+    return archive.filter((s) => perMe(s) && (state.section === "tutte" || (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
   };
   function buildNav() {
     const items = [["tutte", G.L("Tutte", "All")], ["seguiti", G.L("Seguiti", "Following")]];
     // dopo Tutte i temi caldi (con un pallino), poi le sezioni
-    themes.forEach((t) => { if (stories.some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
-    const has = (secs) => stories.some((s) => secs.includes(s.section)) || brevi.some((b) => secs.includes(b.section));
-    TABS.forEach(([k, secs]) => { if (has(secs)) items.push([k, G.SECTIONS[k]]); });
+    themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
+    const has = (k) => mie().some((s) => tabDi(s.section) === k) || brevi.some((b) => tabDi(b.section) === k);
+    // la scheda del paese c'è sempre, al posto di Italia, con il nome del paese
+    TABS.forEach(([k]) => { if (k === "italia") items.push([slugOra(), G.paeseNome(paeseOra())]); else if (has(k)) items.push([k, G.SECTIONS[k]]); });
     $("sections").innerHTML = items.map(([k, label, hot]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
       (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
   }
@@ -149,8 +191,13 @@ G.page("home", async function (P) {
   // brevi: l'ora a sinistra e la notizia in una riga, con il link all'articolo, da una sola testata
   function breviHTML(items, showSection) {
     if (!items.length) return "";
+    // nella scheda di un paese estero: le brevi vengono dalle sue testate, con il titolo tradotto
+    const estero = inPaese() && paeseOra() !== "IT";
+    const sub = estero ? G.L("Dalle testate del paese, con il titolo tradotto; non ancora verificate da GERICO: il link porta all'articolo originale.",
+      "From the country's outlets, with the headline translated; not yet checked by GERICO: the link goes to the original article.")
+      : G.L("Da una sola fonte e non ancora verificate da GERICO: il link porta all'articolo.", "From a single source and not yet checked by GERICO: the link goes to the article.");
     return '<section class="blk" aria-labelledby="brevi-h"><h2 class="blk-h" id="brevi-h">' + G.L("In breve", "In brief") + "</h2>" +
-      '<p class="blk-sub">' + G.L("Da una sola fonte e non ancora verificate da GERICO: il link porta all'articolo.", "From a single source and not yet checked by GERICO: the link goes to the article.") + '</p><ul class="brevi">' +
+      '<p class="blk-sub">' + esc(sub) + '</p><ul class="brevi">' +
       items.map((b) => {
         const meta = [showSection ? G.secLabel(b.section) : "", b.source].filter(Boolean).map(esc).join(" · ");
         return '<li><span class="b-time' + (G.isToday(b.at) ? "" : " old") + '">' + esc(b.at ? ago(b.at) : "") + '</span><div class="b-body">' +
@@ -292,7 +339,7 @@ G.page("home", async function (P) {
   function suggestions() {
     const hot = themes.filter((t) => !isFollowed(t.label)).map((t) => [t.label, true]);
     const n = {};
-    stories.concat(archive).forEach((s) => (s.tags || []).forEach((t) => { if (typeof t === "string" && t) n[t] = (n[t] || 0) + (live.has(s.id) ? 2 : 1); }));
+    mie().concat(archive.filter(perMe)).forEach((s) => (s.tags || []).forEach((t) => { if (typeof t === "string" && t) n[t] = (n[t] || 0) + (live.has(s.id) ? 2 : 1); }));
     const tags = Object.keys(n).filter((t) => !isFollowed(t) && !hotOf(t)).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 8);
     return hot.concat(tags.map((t) => [t, false]));
   }
@@ -335,6 +382,15 @@ G.page("home", async function (P) {
         : '<p class="none">' + G.L("Oggi nessuna storia sui temi che segui.", "No stories today on the topics you follow.") + "</p>";
       return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + pastHTML(past, true) + followMore() + end;
     }
+    const estero = inPaese() && paeseOra() !== "IT";
+    if (!list.length && !bl.length && estero) {
+      const d = datiPaese[paeseOra()];
+      return '<div class="empty"><h2>' + esc(G.L("Oggi nessuna notizia ", "No news ") + G.paeseDa(paeseOra()) + G.L(".", " today.")) + "</h2><p>" +
+        (d && d.silent ? G.L("Le testate di questo paese non pubblicano niente da due giorni.", "This country's outlets have published nothing for two days.")
+          : d ? G.L("Le sue testate non hanno ancora pubblicato niente oggi.", "Its outlets have published nothing yet today.")
+            : G.L("Le notizie di questo paese non si sono caricate. Riprova tra poco.", "This country's news did not load. Try again shortly.")) +
+        ' <a href="#">' + G.L("Torna a tutte le notizie", "Back to all the news") + "</a>.</p></div>" + pastHTML(past, true);
+    }
     if (!list.length && !bl.length) {
       // niente di oggi né brevi: se ci sono storie dei giorni scorsi, si dice di quando sono le ultime
       const lp = lastDay(past.map((x) => x.updated));
@@ -347,6 +403,9 @@ G.page("home", async function (P) {
     const top = list.length
       ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       // brevi di oggi, o solo di ieri e di prima: la riga lo dice com'è, con il giorno delle ultime
+      : estero ? '<p class="none">' + esc(G.cap(G.paeseDa(paeseOra())) + G.L(", oggi, le brevi delle sue testate. ", ", today: briefs from its outlets. ") + (G.paeseInfo(paeseOra()).level === 1
+        ? G.L("Gli articoli di GERICO sul paese compaiono qui quando escono.", "GERICO's articles on the country appear here when they come out.")
+        : G.L("GERICO scrive un articolo quando nel paese succede un fatto di rilievo.", "GERICO writes an article when something major happens in the country."))) + "</p>"
       : '<p class="none">' + (bl.some((b) => b && G.isToday(b.at)) ? G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.")
         : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>";
     return top + (brInSide() ? "" : breviHTML(bl, all)) + titoliHTML() + pastHTML(past, all) + end;
@@ -358,7 +417,7 @@ G.page("home", async function (P) {
     const items = [];
     const ok = (iso) => !!iso && G.hoursAgo(iso) >= 0;
     brevi.forEach((b) => { if (ok(b.at)) items.push({ at: b.at, title: b.title, url: G.safeUrl(b.url), ext: true }); });
-    stories.forEach((s) => {
+    mie().forEach((s) => {
       const at = G.realChange(s) ? s.updated : s.firstSeen;
       if (ok(at)) items.push({ at, title: G.headline(s), url: G.storyUrl(s) });
     });
@@ -552,6 +611,34 @@ G.page("home", async function (P) {
     }
     toSection(a.dataset.sec);
   });
+  // ---------- il paese, nella barra in alto: bandiera e nome; si cambia dal foglio, la prima pagina si rifà subito ----------
+  const pBtn = $("paese-btn");
+  const disegnaPaese = () => {
+    if (!pBtn) return;
+    pBtn.innerHTML = G.flag(paese) + '<span class="pb-n">' + esc(G.paeseNome(paese)) + '</span><svg class="pb-v" aria-hidden="true" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    pBtn.setAttribute("aria-label", G.L("Il tuo paese: ", "Your country: ") + G.paeseNome(paese) + G.L(". Cambialo", ". Change it"));
+    pBtn.hidden = false;
+  };
+  disegnaPaese();
+  if (pBtn) P.on(pBtn, "click", () => G.apriPaesi());
+  P.on(document, "gerico:paese", async (e) => {
+    const eraQui = inPaese(), eraMondo = state.section === "mondo";
+    paese = e.detail.code;
+    vista = null;
+    disegnaPaese();
+    await caricaPaese(paese);
+    buildNav();
+    if (eraQui) {
+      state.section = slugOra();
+      try { history.replaceState(history.state, "", location.pathname + location.search + "#" + slugOra()); } catch (err) { /* niente */ }
+    }
+    markNav();
+    // la sezione che si vede cambia subito, con la dissolvenza delle sezioni; le altre si preparano per lo swipe
+    if (eraQui || eraMondo) renderFeed();
+    else { feedVer += 1; prepareSoon(); }
+    announce(state.section);
+    G.toast(G.L("Il tuo paese: ", "Your country: ") + G.paeseNome(paese));
+  });
   // seguire e smettere di seguire un tema, dai Seguiti, dal menu o da una storia: i Seguiti si rifanno subito,
   // senza dissolvenza, e il fuoco resta sul tema toccato
   let refocus = null;
@@ -593,10 +680,18 @@ G.page("home", async function (P) {
   let edgeAt = 0;
   P.on(document, "touchstart", (e) => { const x = e.touches[0] && e.touches[0].clientX; if (x < 24 || x > innerWidth - 24) edgeAt = Date.now(); }, { passive: true });
   const here = location.pathname + location.search;
-  const fromHistory = (e) => {
+  const fromHistory = async (e) => {
     // indietro verso un'altra pagina: ci pensa il passaggio di pagina, questa non deve muoversi
     if (location.pathname + location.search !== here) return;
     const k = sectionFromHash();
+    // l'indirizzo chiede un altro paese: prima le sue notizie, poi la barra delle sezioni con il suo nome. Il browser
+    // manda due avvisi (popstate e hashchange): tutti e due aspettano i dati, il primo che arriva cambia la sezione
+    if (!(paeseOra() in datiPaese)) await caricaPaese(paeseOra());
+    if (!$("sections").querySelector('[data-sec="' + slugOra() + '"]')) {
+      buildNav();
+      markNav(state.section, true);
+      feedVer += 1;
+    }
     if (k === state.section && !tapK) return;
     if (e && e.hasUAVisualTransition || Date.now() - edgeAt < 1500) {
       toSection(k, true, true);
@@ -613,7 +708,7 @@ G.page("home", async function (P) {
   // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
   function announce(sec) {
     const n = visible().length, st = $("sec-status");
-    if (st) st.textContent = (sec === "tutte" ? G.L("Tutte le notizie", "All the news") : sec === "seguiti" ? G.L("Temi seguiti", "Followed topics") : G.SECTIONS[sec]) + ": " + n + (n === 1 ? G.L(" notizia", " story") : G.L(" notizie", " stories"));
+    if (st) st.textContent = (sec === "tutte" ? G.L("Tutte le notizie", "All the news") : sec === "seguiti" ? G.L("Temi seguiti", "Followed topics") : sec === slugOra() ? G.paeseNome(paeseOra()) : G.SECTIONS[sec]) + ": " + n + (n === 1 ? G.L(" notizia", " story") : G.L(" notizie", " stories"));
   }
   // porta la pagina a «y» dopo aver cambiato sezione. Se la sezione nuova è troppo corta per arrivarci, l'elenco si
   // allunga di quel che manca (spazio vuoto in fondo): altrimenti il browser fermerebbe la pagina più in alto e tutto

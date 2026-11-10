@@ -1838,4 +1838,208 @@
     }).join("");
     return rects;
   };
+  // ---------- il paese di chi legge: i paesi della scelta in alto, le bandiere disegnate qui, il foglio per sceglierli ----------
+  // «da» con l'articolo giusto, per le frasi in italiano («Oggi nessuna notizia dalla Francia»)
+  const DA_PAESE = { IT: "dall'Italia", US: "dagli Stati Uniti", GB: "dal Regno Unito", FR: "dalla Francia", DE: "dalla Germania", ES: "dalla Spagna", AT: "dall'Austria", BE: "dal Belgio", BG: "dalla Bulgaria", HR: "dalla Croazia", CY: "da Cipro", CZ: "dalla Repubblica Ceca", DK: "dalla Danimarca", EE: "dall'Estonia", FI: "dalla Finlandia", GR: "dalla Grecia", HU: "dall'Ungheria", IE: "dall'Irlanda", LV: "dalla Lettonia", LT: "dalla Lituania", LU: "dal Lussemburgo", MT: "da Malta", NL: "dai Paesi Bassi", PL: "dalla Polonia", PT: "dal Portogallo", RO: "dalla Romania", SK: "dalla Slovacchia", SI: "dalla Slovenia", SE: "dalla Svezia", CH: "dalla Svizzera", NO: "dalla Norvegia", IS: "dall'Islanda", AL: "dall'Albania", BA: "dalla Bosnia ed Erzegovina", XK: "dal Kosovo", ME: "dal Montenegro", MK: "dalla Macedonia del Nord", RS: "dalla Serbia", UA: "dall'Ucraina", MD: "dalla Moldavia", RU: "dalla Russia", BY: "dalla Bielorussia", AD: "da Andorra", LI: "dal Liechtenstein", MC: "da Monaco", SM: "da San Marino", VA: "dalla Città del Vaticano", CA: "dal Canada", AU: "dall'Australia", NZ: "dalla Nuova Zelanda" };
+  // sigla, nome italiano, nome inglese, livello (1: articoli e brevi ogni giorno; 2: le brevi delle testate), nome nell'indirizzo
+  G.PAESI = [
+    ["IT", "Italia", "Italy", 1, "italia"], ["US", "Stati Uniti", "United States", 1, "stati-uniti"], ["GB", "Regno Unito", "United Kingdom", 1, "regno-unito"],
+    ["FR", "Francia", "France", 1, "francia"], ["DE", "Germania", "Germany", 1, "germania"], ["ES", "Spagna", "Spain", 1, "spagna"],
+    ["AT", "Austria", "Austria", 2, "austria"], ["BE", "Belgio", "Belgium", 2, "belgio"], ["BG", "Bulgaria", "Bulgaria", 2, "bulgaria"],
+    ["HR", "Croazia", "Croatia", 2, "croazia"], ["CY", "Cipro", "Cyprus", 2, "cipro"], ["CZ", "Repubblica Ceca", "Czech Republic", 2, "repubblica-ceca"],
+    ["DK", "Danimarca", "Denmark", 2, "danimarca"], ["EE", "Estonia", "Estonia", 2, "estonia"], ["FI", "Finlandia", "Finland", 2, "finlandia"],
+    ["GR", "Grecia", "Greece", 2, "grecia"], ["HU", "Ungheria", "Hungary", 2, "ungheria"], ["IE", "Irlanda", "Ireland", 2, "irlanda"],
+    ["LV", "Lettonia", "Latvia", 2, "lettonia"], ["LT", "Lituania", "Lithuania", 2, "lituania"], ["LU", "Lussemburgo", "Luxembourg", 2, "lussemburgo"],
+    ["MT", "Malta", "Malta", 2, "malta"], ["NL", "Paesi Bassi", "Netherlands", 2, "paesi-bassi"], ["PL", "Polonia", "Poland", 2, "polonia"],
+    ["PT", "Portogallo", "Portugal", 2, "portogallo"], ["RO", "Romania", "Romania", 2, "romania"], ["SK", "Slovacchia", "Slovakia", 2, "slovacchia"],
+    ["SI", "Slovenia", "Slovenia", 2, "slovenia"], ["SE", "Svezia", "Sweden", 2, "svezia"], ["CH", "Svizzera", "Switzerland", 2, "svizzera"],
+    ["NO", "Norvegia", "Norway", 2, "norvegia"], ["IS", "Islanda", "Iceland", 2, "islanda"], ["AL", "Albania", "Albania", 2, "albania"],
+    ["BA", "Bosnia ed Erzegovina", "Bosnia and Herzegovina", 2, "bosnia-ed-erzegovina"], ["XK", "Kosovo", "Kosovo", 2, "kosovo"],
+    ["ME", "Montenegro", "Montenegro", 2, "montenegro"], ["MK", "Macedonia del Nord", "North Macedonia", 2, "macedonia-del-nord"],
+    ["RS", "Serbia", "Serbia", 2, "serbia"], ["UA", "Ucraina", "Ukraine", 2, "ucraina"], ["MD", "Moldavia", "Moldova", 2, "moldavia"],
+    ["RU", "Russia", "Russia", 2, "russia"], ["BY", "Bielorussia", "Belarus", 2, "bielorussia"], ["AD", "Andorra", "Andorra", 2, "andorra"],
+    ["LI", "Liechtenstein", "Liechtenstein", 2, "liechtenstein"], ["MC", "Monaco", "Monaco", 2, "monaco"], ["SM", "San Marino", "San Marino", 2, "san-marino"],
+    ["VA", "Città del Vaticano", "Vatican City", 2, "vaticano"], ["CA", "Canada", "Canada", 2, "canada"], ["AU", "Australia", "Australia", 2, "australia"],
+    ["NZ", "Nuova Zelanda", "New Zealand", 2, "nuova-zelanda"]
+  ].map(([code, it, en, level, slug]) => ({ code, it, en, level, slug, da: DA_PAESE[code] }));
+  const PAESE_DI = {};
+  G.PAESI.forEach((p) => { PAESE_DI[p.code] = p; });
+  G.paeseInfo = (code) => PAESE_DI[code] || PAESE_DI.IT;
+  G.paeseNome = (code) => { const p = G.paeseInfo(code); return G.en ? p.en : p.it; };
+  // «dalla Francia» / «from France»
+  G.paeseDa = (code) => { const p = G.paeseInfo(code); return G.en ? "from " + (["US", "GB", "NL", "CZ"].includes(code) ? "the " : "") + p.en : p.da; };
+  G.paeseDaSlug = (slug) => G.PAESI.find((p) => p.slug === slug) || null;
+  // il paese scelto resta nel browser (gerico.paese); l'Italia è quello di partenza
+  G.paese = () => { const c = G.ls.get("gerico.paese", "IT"); return PAESE_DI[c] ? c : "IT"; };
+  G.setPaese = (code) => {
+    if (!PAESE_DI[code]) return;
+    G.ls.set("gerico.paese", code);
+    document.dispatchEvent(new CustomEvent("gerico:paese", { detail: { code } }));
+  };
+
+  // le bandiere: disegni semplici, 30 x 20, fatti qui (nessuna immagine di altri siti). Gli stemmi sono ridotti a forme
+  // essenziali: a 20 pixel si riconosce la bandiera, non il dettaglio
+  const fr = (x, y, w, h, c) => '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" fill="' + c + '"/>';
+  const fh = (...c) => c.map((col, i) => fr(0, +(20 / c.length * i).toFixed(3), 30, +(20 / c.length + 0.05).toFixed(3), col)).join("");
+  const fv = (...c) => c.map((col, i) => fr(+(30 / c.length * i).toFixed(3), 0, +(30 / c.length + 0.05).toFixed(3), 20, col)).join("");
+  const nord = (bg, a, b) => fr(0, 0, 30, 20, bg) + (b ? fr(8, 0, 6, 20, a) + fr(0, 7, 30, 6, a) + fr(9.5, 0, 3, 20, b) + fr(0, 8.5, 30, 3, b) : fr(9, 0, 4, 20, a) + fr(0, 8, 30, 4, a));
+  const stella = (cx, cy, R, c, n, extra) => {
+    n = n || 5;
+    const ri = R * (n === 5 ? 0.382 : 0.45), p = [];
+    for (let i = 0; i < 2 * n; i++) { const a = -Math.PI / 2 + i * Math.PI / n, q = i % 2 ? ri : R; p.push((cx + q * Math.cos(a)).toFixed(2) + "," + (cy + q * Math.sin(a)).toFixed(2)); }
+    return '<polygon points="' + p.join(" ") + '" fill="' + c + '"' + (extra || "") + "/>";
+  };
+  const UJ = fr(0, 0, 30, 20, "#012169") + '<path d="M0 0L30 20M30 0L0 20" stroke="#FFF" stroke-width="4"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="1.4"/>' +
+    '<path d="M15 0V20M0 10H30" stroke="#FFF" stroke-width="6.6"/><path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="4"/>';
+  const CANTONE = '<svg x="0" y="0" width="15" height="10" viewBox="0 0 30 20">' + UJ + "</svg>";
+  const AQUILA = "M15 4.6l1.1 1.2 1.6-1.3.2 1.6 1.7-.9.1 1.4 1.8-.3-.6 1.5 1.6.4-1.3 1.2 1.2.9-1.7.6.6 1.4-1.8-.2-.4 1.6-1.4-1-.6 2.6-1.3 1.8-1.3-1.8-.6-2.6-1.4 1-.4-1.6-1.8.2.6-1.4-1.7-.6 1.2-.9-1.3-1.2 1.6-.4-.6-1.5 1.8.3.1-1.4 1.7.9.2-1.6 1.6 1.3z";
+  const scudo = (x, y, w, h, c, bordo, sw) => '<path d="M' + x + " " + y + "h" + w + "v" + (h * 0.55).toFixed(2) + "c0 " + (h * 0.3).toFixed(2) + " -" + (w * 0.3).toFixed(2) + " " + (h * 0.38).toFixed(2) + " -" + (w / 2).toFixed(2) + " " + (h * 0.45).toFixed(2) +
+    "c-" + (w * 0.2).toFixed(2) + " -" + (h * 0.07).toFixed(2) + " -" + (w / 2).toFixed(2) + " -" + (h * 0.15).toFixed(2) + " -" + (w / 2).toFixed(2) + " -" + (h * 0.45).toFixed(2) + 'z" fill="' + c + '"' + (bordo ? ' stroke="' + bordo + '" stroke-width="' + (sw || 0.4) + '"' : "") + "/>";
+  const FOGLIA = [[0, -4.6], [0.95, -2.7], [2.2, -3.2], [1.7, -0.7], [3.8, -1.7], [3.3, -0.5], [4.5, 0.1], [2.1, 1.6], [2.4, 2.5], [0.35, 2.1], [0.35, 4.4], [-0.35, 4.4], [-0.35, 2.1],
+    [-2.4, 2.5], [-2.1, 1.6], [-4.5, 0.1], [-3.3, -0.5], [-3.8, -1.7], [-1.7, -0.7], [-2.2, -3.2], [-0.95, -2.7]].map(([x, y]) => (15 + x * 1.15).toFixed(2) + "," + (10.3 + y * 1.15).toFixed(2)).join(" ");
+  const BANDIERE = {
+    IT: () => fv("#009246", "#FFFFFF", "#CE2B37"),
+    US: () => {
+      let s = "";
+      for (let i = 0; i < 13; i++) s += fr(0, +(i * 20 / 13).toFixed(3), 30, +(20 / 13 + 0.05).toFixed(3), i % 2 ? "#FFFFFF" : "#B22234");
+      s += fr(0, 0, 12, 10.77, "#3C3B6E");
+      for (let rr = 0; rr < 5; rr++) for (let c = 0; c < 6; c++) s += '<circle cx="' + (1.05 + c * 1.95).toFixed(2) + '" cy="' + (1.1 + rr * 2.1).toFixed(2) + '" r=".42" fill="#FFF"/>';
+      return s;
+    },
+    GB: () => UJ,
+    FR: () => fv("#002395", "#FFFFFF", "#ED2939"),
+    DE: () => fh("#000000", "#DD0000", "#FFCE00"),
+    ES: () => fr(0, 0, 30, 20, "#AA151B") + fr(0, 5, 30, 10, "#F1BF00") + scudo(7, 7.4, 4.2, 5.2, "#AA151B", "#C49A00") + fr(7.3, 6.1, 3.6, 0.9, "#C49A00"),
+    AT: () => fh("#ED2939", "#FFFFFF", "#ED2939"),
+    BE: () => fv("#000000", "#FDDA24", "#EF3340"),
+    BG: () => fh("#FFFFFF", "#00966E", "#D62612"),
+    HR: () => {
+      let s = fh("#FF0000", "#FFFFFF", "#171796") + fr(12.6, 5.6, 4.8, 6, "#FFFFFF");
+      for (let i = 0; i < 5; i++) for (let j = 0; j < 6; j++) if ((i + j) % 2 === 0) s += fr(+(12.6 + i * 0.96).toFixed(2), 5.6 + j, 0.96, 1, "#FF0000");
+      return s + '<path d="M12.6 5.6h4.8v6c0 1.3-1.2 2.2-2.4 2.6-1.2-.4-2.4-1.3-2.4-2.6z" fill="none" stroke="#171796" stroke-width=".35"/>';
+    },
+    CY: () => fr(0, 0, 30, 20, "#FFFFFF") + '<path d="M7.5 9.6c1.4-.9 3.4-1 5-1.6 1.7-.6 3.2-1.6 5.2-1.7 1.4-.1 2.8-.6 4-1.6.2 1-.4 1.9-1.3 2.4-1.2.7-2.5 1-3.4 1.9-.9.9-2.1 1.4-3.4 1.6-1.6.3-3.3.1-4.6-.2-.6-.2-1.2-.4-1.5-.8z" fill="#D57800"/>' +
+      '<path d="M10.5 13.2c1.6 1.4 3 1.9 4.5 1.9M19.5 13.2c-1.6 1.4-3 1.9-4.5 1.9" stroke="#4E5B31" stroke-width=".9" fill="none"/>',
+    CZ: () => fh("#FFFFFF", "#D7141A") + '<path d="M0 0L15 10L0 20z" fill="#11457E"/>',
+    DK: () => nord("#C8102E", "#FFFFFF"),
+    EE: () => fh("#0072CE", "#000000", "#FFFFFF"),
+    FI: () => nord("#FFFFFF", "#002F6C"),
+    GR: () => {
+      let s = "";
+      for (let i = 0; i < 9; i++) s += fr(0, +(i * 20 / 9).toFixed(3), 30, +(20 / 9 + 0.05).toFixed(3), i % 2 ? "#FFFFFF" : "#0D5EAF");
+      return s + fr(0, 0, 11.11, 11.11, "#0D5EAF") + fr(4.44, 0, 2.22, 11.11, "#FFFFFF") + fr(0, 4.44, 11.11, 2.22, "#FFFFFF");
+    },
+    HU: () => fh("#CE2939", "#FFFFFF", "#477050"),
+    IE: () => fv("#169B62", "#FFFFFF", "#FF883E"),
+    LV: () => fr(0, 0, 30, 20, "#9E3039") + fr(0, 8, 30, 4, "#FFFFFF"),
+    LT: () => fh("#FDB913", "#006A44", "#C1272D"),
+    LU: () => fh("#EA141D", "#FFFFFF", "#51ADDA"),
+    MT: () => fv("#FFFFFF", "#CF142B") + '<rect x="2" y="2" width="4.4" height="4.4" fill="#C3C3C3" stroke="#9E1B32" stroke-width=".35"/>' + fr(3.9, 2.4, 0.6, 3.6, "#EDEDED") + fr(2.4, 3.9, 3.6, 0.6, "#EDEDED"),
+    NL: () => fh("#AE1C28", "#FFFFFF", "#21468B"),
+    PL: () => fh("#FFFFFF", "#DC143C"),
+    PT: () => fr(0, 0, 12, 20, "#006600") + fr(12, 0, 18, 20, "#FF0000") + '<circle cx="12" cy="10" r="4.2" fill="none" stroke="#FFE900" stroke-width="1.2"/>' + scudo(10.3, 7.8, 3.4, 4.6, "#FFFFFF", "#FF0000", 0.55),
+    RO: () => fv("#002B7F", "#FCD116", "#CE1126"),
+    SK: () => fh("#FFFFFF", "#0B4EA2", "#EE1C25") + scudo(6.6, 4.4, 7.4, 11.6, "#EE1C25", "#FFFFFF", 0.7) +
+      '<path d="M10.3 6.3v6.8M8.7 8.1h3.2M8.2 10.1h4.2" stroke="#FFF" stroke-width=".9"/><path d="M7.6 13.2c.9-1.2 1.8-1.2 2.7 0 .9-1.2 1.8-1.2 2.7 0-.6 1-1.5 1.7-2.7 2.3-1.2-.6-2.1-1.3-2.7-2.3z" fill="#0B4EA2"/>',
+    SI: () => fh("#FFFFFF", "#005DA4", "#ED1C24") + scudo(6.4, 3.2, 5.2, 7.6, "#005DA4", "#ED1C24", 0.5) + '<path d="M7.2 8.1l1.2-1.8.8 1 .8-1 1.2 1.8z" fill="#FFF"/>' +
+      '<circle cx="8" cy="4.6" r=".35" fill="#FFDD00"/><circle cx="9" cy="4.2" r=".35" fill="#FFDD00"/><circle cx="10" cy="4.6" r=".35" fill="#FFDD00"/>',
+    SE: () => nord("#006AA7", "#FECC00"),
+    CH: () => fr(0, 0, 30, 20, "#DA291C") + fr(13.2, 4, 3.6, 12, "#FFFFFF") + fr(9, 8.2, 12, 3.6, "#FFFFFF"),
+    NO: () => nord("#BA0C2F", "#FFFFFF", "#00205B"),
+    IS: () => nord("#02529C", "#FFFFFF", "#DC1E35"),
+    AL: () => fr(0, 0, 30, 20, "#E41E20") + '<path d="' + AQUILA + '" fill="#000"/>',
+    BA: () => {
+      let s = fr(0, 0, 30, 20, "#002395") + '<path d="M8.5 0H23.5V15z" fill="#FECB00"/>';
+      for (let t = 0; t < 8; t++) s += stella(5.4 + 2.3 * t, 0.9 + 2.3 * t, 0.95, "#FFFFFF");
+      return s;
+    },
+    XK: () => fr(0, 0, 30, 20, "#244AA5") + '<path d="M12.2 9.4l1.6-1.6 2.2.3 1.9-.8 1.4 1.2-.3 1.8 1 1.5-1.2 1.7-1.9.4-1.4 1.3-1.8-.6-.8-1.6-1.3-.9z" fill="#D0A650"/>' +
+      [[9.6, 6.9], [11.9, 5.8], [14.3, 5.3], [16.7, 5.3], [19.1, 5.8], [21.4, 6.9]].map(([x, y]) => stella(x, y, 0.85, "#FFFFFF")).join(""),
+    ME: () => fr(0, 0, 30, 20, "#C40308") + '<rect x=".6" y=".6" width="28.8" height="18.8" fill="none" stroke="#D3AE3B" stroke-width="1.2"/>' +
+      '<path d="' + AQUILA + '" fill="#D3AE3B" transform="translate(15 10) scale(.82) translate(-15 -10)"/>',
+    MK: () => fr(0, 0, 30, 20, "#D20000") +
+      '<path d="M15 10L13.6 0H16.4zM15 10L13.6 20H16.4zM15 10L0 8.6V11.4zM15 10L30 8.6V11.4zM15 10L0 1.8V0H2.7zM15 10L30 1.8V0H27.3zM15 10L0 18.2V20H2.7zM15 10L30 18.2V20H27.3z" fill="#FFE600"/>' +
+      '<circle cx="15" cy="10" r="3.3" fill="#D20000"/><circle cx="15" cy="10" r="2.6" fill="#FFE600"/>',
+    RS: () => fh("#C6363C", "#0C4076", "#FFFFFF") + scudo(7.2, 5.4, 4.6, 8.4, "#C6363C", "#EDB92E") + '<path d="M9.5 6.6v6M7.9 9h3.2" stroke="#FFF" stroke-width=".8"/>' + fr(7.6, 4.3, 3.8, 1, "#EDB92E"),
+    UA: () => fh("#0057B7", "#FFD700"),
+    MD: () => fv("#003DA5", "#FFD200", "#CC092F") + '<path d="M15 5.6l1 1.4 2.2-.8-.6 1.8 1.6.4-1.6 1 .6 1.8-2-.6-.4 2.6h-1.6l-.4-2.6-2 .6.6-1.8-1.6-1 1.6-.4-.6-1.8 2.2.8z" fill="#B07E2C"/>' + fr(14.2, 9.6, 1.6, 2, "#CC092F"),
+    RU: () => fh("#FFFFFF", "#0039A6", "#D52B1E"),
+    BY: () => {
+      let s = fr(0, 0, 30, 13.33, "#C8313E") + fr(0, 13.33, 30, 6.67, "#4AA657") + fr(0, 0, 3.6, 20, "#FFFFFF");
+      for (let k = 0; k < 6; k++) s += '<path d="M1.8 ' + (k * 3.4 + 0.3).toFixed(1) + 'l1.1 1.4-1.1 1.4-1.1-1.4z" fill="#C8313E"/>';
+      return s;
+    },
+    AD: () => fr(0, 0, 9.6, 20, "#10069F") + fr(9.6, 0, 10.8, 20, "#FEDF00") + fr(20.4, 0, 9.6, 20, "#D50032") + scudo(13, 6.5, 4, 7.4, "#C7B37F", "#B6202B", 0.35) +
+      fr(13.4, 6.9, 1.5, 1.9, "#FEDF00") + fr(15.1, 6.9, 1.5, 1.9, "#D50032"),
+    LI: () => fh("#002B7F", "#CE1126") + '<path d="M4.2 7.4l.4-3 1.4 1.4 1.4-2.2 1.4 2.2 1.4-1.4.4 3z" fill="#FFD83D"/>',
+    MC: () => fh("#CE1126", "#FFFFFF"),
+    SM: () => fh("#FFFFFF", "#5EB6E4") + scudo(13.2, 6.5, 3.6, 6.6, "#5EB6E4", "#C9A227") + fr(13.7, 7.4, 0.6, 1.6, "#FFFFFF") + fr(14.7, 7, 0.6, 2, "#FFFFFF") + fr(15.7, 7.4, 0.6, 1.6, "#FFFFFF"),
+    VA: () => fv("#FFE000", "#FFFFFF") + '<path d="M19.2 13.6l5.4-6.2" stroke="#C9A227" stroke-width=".9"/><path d="M24.6 13.6l-5.4-6.2" stroke="#B5B5B5" stroke-width=".9"/>' +
+      '<path d="M20.4 7.2c0-1.7.8-2.8 1.5-2.8s1.5 1.1 1.5 2.8z" fill="#FFE000" stroke="#C9A227" stroke-width=".3"/>',
+    CA: () => fr(0, 0, 30, 20, "#FFFFFF") + fr(0, 0, 7.5, 20, "#D80621") + fr(22.5, 0, 7.5, 20, "#D80621") + '<polygon points="' + FOGLIA + '" fill="#D80621"/>',
+    AU: () => fr(0, 0, 30, 20, "#012169") + CANTONE + stella(7.5, 15, 2.4, "#FFFFFF", 7) +
+      [[22.5, 16.3, 1.25], [22.5, 4.2, 1.25], [19, 9, 1.25], [26, 8, 1.25]].map(([x, y, s]) => stella(x, y, s, "#FFFFFF", 7)).join("") + stella(24.2, 11.2, 0.7, "#FFFFFF"),
+    NZ: () => fr(0, 0, 30, 20, "#012169") + CANTONE +
+      [[22.5, 15.6, 1.45], [22.5, 4.6, 1.3], [19.2, 9.2, 1.3], [25.8, 8.4, 1.15]].map(([x, y, s]) => stella(x, y, s, "#C8102E", 5, ' stroke="#FFF" stroke-width=".45"')).join("")
+  };
+  G.flag = (code) => '<svg class="flag" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true" focusable="false">' + (BANDIERE[code] || BANDIERE.IT)() + "</svg>";
+
+  // il foglio per scegliere il paese: l'Italia e i paesi con gli articoli ogni giorno, poi gli altri in ordine alfabetico, con la ricerca
+  const senzaAccenti = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  G.apriPaesi = () => {
+    let d = document.getElementById("paesi");
+    if (!d) {
+      d = document.createElement("dialog");
+      d.className = "menu paesi";
+      d.id = "paesi";
+      d.setAttribute("aria-labelledby", "paesi-t");
+      document.body.appendChild(d);
+    }
+    const scelto = G.paese(), coll = new Intl.Collator(G.en ? "en" : "it");
+    const primi = G.PAESI.filter((p) => p.level === 1), altri = G.PAESI.filter((p) => p.level !== 1).sort((a, b) => coll.compare(G.paeseNome(a.code), G.paeseNome(b.code)));
+    const riga = (p) => '<li><button type="button" data-paese="' + p.code + '" aria-pressed="' + (p.code === scelto) + '" data-q="' + G.esc(senzaAccenti(p.it + " " + p.en)) + '">' +
+      G.flag(p.code) + '<span class="pn">' + G.esc(G.paeseNome(p.code)) + "</span></button></li>";
+    d.innerHTML = '<div class="menu-in"><div class="grab" aria-hidden="true"></div>' +
+      '<div class="menu-head"><h2 class="menu-t" id="paesi-t">' + G.L("Il tuo paese", "Your country") + '</h2><button class="menu-x" type="button" data-close aria-label="' + G.L("Chiudi", "Close") + '">' +
+      '<svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>' +
+      '<p class="paesi-sub">' + G.L("In prima pagina la scheda del tuo paese prende il posto di Italia, con le sue notizie principali.", "On the front page your country's tab takes the place of Italy, with its main news.") + "</p>" +
+      '<input class="paesi-q" type="search" autocomplete="off" spellcheck="false" placeholder="' + G.L("Cerca un paese", "Search for a country") + '" aria-label="' + G.L("Cerca un paese", "Search for a country") + '">' +
+      '<p class="opt-l paesi-g">' + G.L("Articoli e brevi ogni giorno", "Articles and briefs every day") + '</p><ul class="paesi-l">' + primi.map(riga).join("") + "</ul>" +
+      '<p class="opt-l paesi-g">' + G.L("Le brevi delle testate del paese", "Briefs from the country's outlets") + '</p><ul class="paesi-l">' + altri.map(riga).join("") + "</ul>" +
+      '<p class="paesi-none" hidden>' + G.L("Nessun paese con questo nome.", "No country with this name.") + "</p></div>";
+    const close = () => {
+      if (!d.open || d.classList.contains("closing")) return;
+      const done = () => { d.classList.remove("closing"); d.close(); document.documentElement.classList.remove("menu-open"); const b = document.getElementById("paese-btn"); if (b) b.focus({ preventScroll: true }); };
+      d.classList.add("closing");
+      const anims = G.reduced() || !d.getAnimations ? [] : d.getAnimations();
+      if (!anims.length) return done();
+      Promise.all(anims.map((a) => a.finished)).then(done, done);
+    };
+    if (!d._wired) {
+      d._wired = true;
+      d.addEventListener("cancel", (e) => { e.preventDefault(); close(); });
+      d.addEventListener("click", (e) => {
+        if (e.target === d || e.target.closest("[data-close]")) { close(); return; }
+        const b = e.target.closest("[data-paese]");
+        if (!b) return;
+        e.stopPropagation();
+        if (b.dataset.paese !== G.paese()) G.setPaese(b.dataset.paese);
+        close();
+      });
+      d.addEventListener("input", (e) => {
+        if (!e.target.matches(".paesi-q")) return;
+        const q = senzaAccenti(e.target.value.trim());
+        let n = 0;
+        d.querySelectorAll(".paesi-l li").forEach((li) => { const on = !q || li.firstChild.dataset.q.includes(q); li.hidden = !on; if (on) n += 1; });
+        d.querySelectorAll(".paesi-l").forEach((ul) => { const vis = Array.from(ul.children).some((li) => !li.hidden); ul.hidden = !vis; ul.previousElementSibling.hidden = !vis; });
+        d.querySelector(".paesi-none").hidden = n > 0;
+      });
+    }
+    d.classList.remove("closing");
+    document.documentElement.classList.add("menu-open");
+    d.showModal();
+    // il fuoco sul paese scelto (non sulla ricerca: sul telefono aprirebbe la tastiera)
+    const cur = d.querySelector('[data-paese="' + scelto + '"]');
+    if (cur) { cur.focus({ preventScroll: true }); cur.scrollIntoView({ block: "center" }); }
+  };
 })();

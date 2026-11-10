@@ -28,6 +28,9 @@ except Exception as e:  # senza le mappe l'edizione esce lo stesso, con le sched
 
 STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "article", "facts", "divergences", "view", "open",
                 "sources", "firstSeen", "updated", "change", "tags", "themes", "history", "notCovered"]
+# il paese della storia (sigla ISO dei paesi della scelta in alto) e, per le notizie nazionali di un paese estero scritte
+# per la sua scheda, scope "paese": quelle si vedono solo da chi ha scelto quel paese
+PAESI = set(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonti_paesi.json"), encoding="utf-8"))["paesi"])
 SOURCE_FIELDS = ["name", "kind", "country", "area", "url", "angle", "stance", "at", "date"]
 ARCHIVE_DAYS = 7
 
@@ -64,6 +67,18 @@ def clean_url(u):
 def clean_story(raw, sid):
     s = {k: raw[k] for k in STORY_FIELDS if k in raw}
     s["id"] = sid
+    paese = str(raw.get("country") or "").strip().upper()
+    if paese not in PAESI:
+        # senza country: il primo paese della notizia (places, o l'occhiello del titolo come per la mappa)
+        try:
+            sigle = mappe.sigle_storia(raw) if mappe else [str(c).strip().upper() for c in raw.get("places") or [] if isinstance(c, str)]
+        except Exception:  # noqa: BLE001  il paese è un di più: senza, la storia esce lo stesso
+            sigle = []
+        paese = sigle[0] if sigle and sigle[0] in PAESI else ""
+    if paese in PAESI:
+        s["country"] = paese
+        if raw.get("scope") == "paese" and paese != "IT":
+            s["scope"] = "paese"
     srcs = []
     for src in raw.get("sources") or []:
         if not isinstance(src, dict):
@@ -204,7 +219,7 @@ def main(dump, out):
     if live:
         edition = {"generatedAt": now.isoformat(timespec="seconds"), "lastRun": meta.get("lastRun"),
                    "outlets": meta.get("outlets") or [], "quality": meta.get("quality") or {},
-                   "themes": temi_caldi(dump, live), "stories": live, "archive": archive}
+                   "themes": temi_caldi(dump, [x for x in live if x.get("scope") != "paese"]), "stories": live, "archive": archive}
     markets = load(os.path.join(dump, "markets", "snapshot.json"))
     agenda = load(os.path.join(dump, "agenda", "today.json"))
     terminal = load(os.path.join(dump, "terminal", "snapshot.json"))

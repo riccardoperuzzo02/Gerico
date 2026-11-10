@@ -2122,3 +2122,41 @@ html.nuova .blk.fol { padding-bottom: var(--f21); }
 .fol-menu .menu-links { margin-top: 10px; }
 .fol-l { margin-top: var(--f21, 21px); font-size: 0.875rem; font-weight: 700; color: var(--muted); }
 .k-new { padding: 2px 7px 1px; border-radius: 6px; background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); font-weight: 700; }
+
+/* ---------- il paese di chi legge (10 novembre): nella barra in alto, bandiera e nome; il foglio per sceglierlo ---------- */
+.paese-btn {
+  position: relative; display: inline-flex; align-items: center; gap: 7px; max-width: 100%; min-height: 36px; padding: 0 11px 0 8px;
+  border: 0; border-radius: 999px; background: var(--fill); color: var(--ink); font: inherit; font-size: 14px; font-weight: 700; line-height: 1; cursor: pointer;
+}
+.paese-btn[hidden] { display: none; }
+.paese-btn::after { content: ""; position: absolute; inset: -4px -2px; }
+.paese-btn .pb-n { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.paese-btn .pb-v { flex: none; opacity: 0.6; }
+.flag { display: block; flex: none; border-radius: 3px; box-shadow: 0 0 0 0.5px rgba(16, 24, 44, 0.22); }
+.paese-btn .flag { width: 21px; height: 14px; }
+@media (min-width: 760px) {
+  .top-row:has(> .paese-btn:not([hidden])) { grid-template-columns: auto minmax(0, 1fr) auto auto auto; }
+  .top-row > .paese-btn { grid-column: 3; justify-self: end; }
+  .top-row:has(> .paese-btn:not([hidden])) > .mode { grid-column: 4; }
+  .top-row:has(> .paese-btn:not([hidden])) > .menu-btn { grid-column: 5; }
+}
+/* sul telefono il nome al centro resta libero: il pulsante si stringe (senza la freccia) e i nomi lunghi si accorciano */
+@media (max-width: 759px) {
+  .top-row > .paese-btn { grid-column: 3; grid-row: 1; justify-self: end; max-width: calc(50vw - 80px); gap: 6px; padding: 0 10px 0 7px; font-size: 13px; }
+  .top-row > .paese-btn .pb-v { display: none; }
+}
+.paesi-sub { margin: 0 4px 12px; font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
+.paesi-q { display: block; width: 100%; min-height: 44px; padding: 0 14px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font: inherit; font-size: 1rem; }
+.paesi-g { margin-top: 18px; }
+.paesi-l { display: grid; margin: 0; padding: 0; list-style: none; border-radius: 12px; background: var(--cell); overflow: hidden; }
+.paesi-l[hidden], .paesi-g[hidden], .paesi-l li[hidden] { display: none; }
+.paesi-l button {
+  position: relative; display: flex; align-items: center; gap: 12px; width: 100%; min-height: 48px; padding: 0 16px;
+  border: 0; background: none; color: var(--ink); font: inherit; font-size: 1rem; font-weight: 600; text-align: left; cursor: pointer;
+}
+.paesi-l li + li button::before { content: ""; position: absolute; top: 0; left: 55px; right: 0; height: 1px; background: var(--hair); }
+.paesi-l .flag { width: 27px; height: 18px; }
+.paesi-l button[aria-pressed="true"] { font-weight: 800; }
+.paesi-l button[aria-pressed="true"]::after { content: "✓"; margin-left: auto; color: var(--palm); font-weight: 800; }
+.paesi-l button:focus-visible { outline-offset: -3px; }
+.paesi-none { margin: 16px 4px 0; color: var(--muted); }

@@ -109,7 +109,9 @@ G.page("story", async function (P) {
   const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcIntro + srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
   // in due tempi: prima quello che sta nello schermo, il resto al fotogramma dopo (l'arrivo sulla pagina resta leggero)
   // in fondo la notizia successiva dell'edizione, così si legge di fila senza tornare indietro
-  const order = (ed.stories || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
+  // le notizie nazionali di un altro paese (scope "paese") non entrano nella fila, salvo quella che stai leggendo
+  const mioPaese = G.paese();
+  const order = (ed.stories || []).filter((x) => x.scope !== "paese" || x.country === mioPaese || x.id === s.id).sort((a, b) => (a.rank || 99) - (b.rank || 99));
   const at = order.findIndex((x) => x.id === s.id);
   const nx = at >= 0 ? order[at + 1] : null;
   const pv = at > 0 ? order[at - 1] : null;

@@ -235,6 +235,8 @@
   G.hm = (iso) => G.hm2(iso).replace(/^0(\d)/, "$1");
   G.day = (iso) => { const d = valid(iso); return d ? fDay.format(d).replace(".", "") : ""; };
   G.longDay = (iso) => { const d = valid(iso); return d ? fLong.format(d) : ""; };
+  // «sabato 7 novembre»: il giorno della settimana e la data, senza l'anno
+  G.weekDay = (iso) => { const d = valid(iso); return d ? fWeek.format(d) : ""; };
   G.dayKey = (d) => fKey.format(d);
   G.isToday = (iso) => { const d = valid(iso); return !!d && G.dayKey(d) === G.dayKey(new Date()); };
   // quanti giorni di calendario (a Roma) fa: 0 oggi, 1 ieri
@@ -470,11 +472,15 @@
   };
 
   // ---------- temi seguiti ----------
-  G.follows = () => G.ls.get("gerico.follows", []);
+  // restano nel browser (gerico.follows); ogni cambio lo sanno la pagina e il menu (evento gerico:follows)
+  G.follows = () => { const f = G.ls.get("gerico.follows", []); return Array.isArray(f) ? f.filter((x, i) => typeof x === "string" && x && f.indexOf(x) === i) : []; };
   G.toggleFollow = (t) => {
     const f = G.follows();
-    const n = f.includes(t) ? f.filter((x) => x !== t) : f.concat(t);
+    const on = !f.includes(t);
+    const n = on ? f.concat(t) : f.filter((x) => x !== t);
     G.ls.set("gerico.follows", n);
+    G.toast(on ? G.L("Ora segui «", "Now following “") + G.tn(t) + (location.hash === "#seguiti" ? G.L("»", "”") : G.L("»: lo trovi nei Seguiti", "”: find it in Following")) : G.L("Non segui più «", "No longer following “") + G.tn(t) + G.L("»", "”"));
+    document.dispatchEvent(new CustomEvent("gerico:follows", { detail: { tag: t, on } }));
     return n;
   };
 
@@ -1494,6 +1500,39 @@
       // la pagina in cui sei è segnata nel menu
       const clean = (p) => p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, "");
       menu.querySelectorAll(".menu-links a").forEach((a) => { if (clean(new URL(a.href).pathname) === clean(location.pathname)) a.setAttribute("aria-current", "page"); });
+      // un link del menu verso la pagina in cui sei (i Seguiti dalla prima pagina): il menu si chiude, la pagina fa il resto
+      menu.addEventListener("click", (e) => {
+        const a = e.target.closest("a[href]");
+        if (a && clean(new URL(a.href, location.href).pathname) === clean(location.pathname)) close();
+      });
+      // i temi seguiti, anche nel menu: un tocco smette di seguirli; sotto, il link alla sezione Seguiti
+      const links = menu.querySelector(".menu-links");
+      if (links && !menu.querySelector(".fol-menu")) {
+        const box = document.createElement("div");
+        box.className = "opt fol-menu";
+        links.after(box);
+        const draw = () => {
+          const f = G.follows();
+          box.innerHTML = '<p class="opt-l" id="opt-fol">' + G.L("Temi seguiti", "Followed topics") + "</p>" +
+            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<button type="button" class="tag" data-follow="' + G.esc(t) + '" aria-pressed="true">' + G.esc(G.tn(t)) + "</button>").join("") +
+              '</div><p class="fol-note">' + G.L("Tocca un tema per smettere di seguirlo.", "Tap a topic to stop following it.") + "</p>"
+              : '<p class="fol-note">' + G.L("Non segui ancora nessun tema.", "You don't follow any topics yet.") + "</p>") +
+            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Apri i Seguiti", "Open Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a></nav>";
+        };
+        draw();
+        box.addEventListener("click", (e) => {
+          const b = e.target.closest("[data-follow]");
+          if (!b) return;
+          // il tocco resta nel menu: il tasto sparisce subito e la pagina sotto non deve leggerlo una seconda volta
+          e.stopPropagation();
+          // il fuoco va al tema dopo (o a quello prima, o al link): con la tastiera si continua da lì
+          const all = Array.from(box.querySelectorAll("[data-follow]")), i = all.indexOf(b);
+          G.toggleFollow(b.dataset.follow);
+          const next = box.querySelectorAll("[data-follow]")[Math.min(i, box.querySelectorAll("[data-follow]").length - 1)] || box.querySelector("a");
+          if (next) next.focus({ preventScroll: true });
+        });
+        P.on(document, "gerico:follows", draw);
+      }
     }
 
     // interruttore Notizie / Terminal: la pillola va subito al suo posto; tra le due pagine la fa scivolare il passaggio (CSS)

@@ -217,9 +217,13 @@ G.page("story", async function (P) {
     }
     const t = e.target.closest(".disc");
     if (t) { G.toggle(t); return; }
-    const b = e.target.closest("[data-follow]");
+    const b = e.target.closest(".tagbox [data-follow]");
     if (!b) return;
-    const f = G.toggleFollow(b.dataset.follow);
-    document.querySelectorAll('[data-follow="' + CSS.escape(b.dataset.follow) + '"]').forEach((x) => x.setAttribute("aria-pressed", String(f.includes(b.dataset.follow))));
+    G.toggleFollow(b.dataset.follow);
+  });
+  // seguito o lasciato da qui o dal menu: i temi in fondo alla storia si aggiornano
+  P.on(document, "gerico:follows", () => {
+    const f = G.follows();
+    document.querySelectorAll(".tagbox [data-follow]").forEach((x) => x.setAttribute("aria-pressed", String(f.includes(x.dataset.follow))));
   });
 });

@@ -1,0 +1,11 @@
+Caratteri di GERICO
+
+atkinson-next-zero-wght-normal.woff2, atkinson-next-zero-wght-italic.woff2
+  Atkinson Hyperlegible Next (alfabeto latino, peso variabile 200-800), licenza SIL Open Font License 1.1:
+  vedi OFL-atkinson-hyperlegible-next.txt.
+  Modifica di GERICO del 10 novembre 2026: lo zero è senza la barra (i due vani interni del disegno
+  originale sono uniti in uno, a ogni peso). Lo script che fa la modifica è scripts/zero_senza_barra.py
+  nel repository. Il resto del carattere è quello originale.
+
+newsreader-latin-opsz-normal.woff2
+  Newsreader, licenza SIL Open Font License 1.1: vedi OFL-newsreader.txt. Non modificato.

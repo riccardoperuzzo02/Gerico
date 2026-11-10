@@ -458,8 +458,11 @@ def cmd_pubblica(giro):
 # ---------- esito ----------
 
 def cmd_esito(path):
-    """La risposta finale di Claude Code: nel log e nel riepilogo del job su GitHub."""
-    result = None
+    """La risposta finale di Claude Code, nel log e nel riepilogo del job su GitHub. Per il workflow scrive anche
+    risposta=si (giro finito), interrotta (ha usato i suoi strumenti ma non ha finito: tempo, turni, limite
+    dell'abbonamento; si pubblica quello che ha scritto) oppure no (non ha lavorato: accesso non riuscito, limite
+    dell'abbonamento o errore prima di cominciare; non si pubblica niente)."""
+    result, strumenti = None, 0
     try:
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -467,24 +470,35 @@ def cmd_esito(path):
                     obj = json.loads(line)
                 except ValueError:
                     continue
+                if not isinstance(obj, dict):
+                    continue
                 if obj.get("type") == "result":
                     result = obj
+                elif obj.get("type") == "assistant":
+                    content = (obj.get("message") or {}).get("content") or []
+                    strumenti += sum(1 for c in content if isinstance(c, dict) and c.get("type") == "tool_use")
     except OSError:
         pass
+    finito = bool(result) and not result.get("is_error") and result.get("subtype") == "success"
+    risposta = "si" if finito else ("interrotta" if strumenti else "no")
     if not result:
-        text = "Claude Code non ha dato una risposta finale (accesso non riuscito o giro interrotto)."
-        failed = True
+        text = (f"Claude Code non ha dato una risposta finale (accesso non riuscito o giro interrotto). "
+                f"Strumenti usati: {strumenti}.")
     else:
-        failed = bool(result.get("is_error")) or result.get("subtype") != "success"
         mins = round((result.get("duration_ms") or 0) / 60000, 1)
         text = (f"{(result.get('result') or '').strip() or result.get('subtype')}\n\n"
-                f"Turni: {result.get('num_turns')}, durata: {mins} minuti.")
+                f"Turni: {result.get('num_turns')}, strumenti usati: {strumenti}, durata: {mins} minuti.")
     print(text)
+    print(f"Esito per il workflow: {risposta}")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as f:
             f.write("### Risposta del giro\n\n" + text + "\n")
-    return 1 if failed else 0
+    output = os.environ.get("GITHUB_OUTPUT")
+    if output:
+        with open(output, "a", encoding="utf-8") as f:
+            f.write(f"risposta={risposta}\n")
+    return 0 if finito else 1
 
 
 def main(argv):

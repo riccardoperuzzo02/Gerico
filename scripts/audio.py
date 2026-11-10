@@ -8,11 +8,17 @@ Uso:
 Gira nel job «Dati del Terminal». Se il riepilogo non c'è, o l'audio è già quello del riepilogo attuale con la
 stessa voce, non fa niente.
 
+Si sente come un telegiornale: la sigla (segnali orari, il colpo dell'orchestra, la frase degli ottoni), la voce
+che entra sulla battuta dopo mentre la musica resta sotto (un po' più presente sul saluto e sui titoli e nelle pause
+tra un tema e l'altro), le notizie con le pause sempre uguali, poi la musica che risale, il conto alla rovescia e il
+colpo finale. La musica è di GERICO (scripts/sigla.py, con le parti pronte in scripts/sigla/): archi, ottoni e
+percussioni sono campioni di pubblico dominio dell'orchestra VSCO 2 CE, i suoni elettronici sono calcolati.
+
 La voce è quella di Gemini 3.8 Flash TTS di Google (API Gemini, livello gratuito; la chiave sta nel segreto
 GEMINI_API_KEY del repository, mai nel codice). Si legge a pezzi di qualche tema (circa tre richieste per riepilogo, il
-livello gratuito ne concede poche al giorno): dentro il pezzo la voce lega le frasi come una persona; tra un pezzo e
-l'altro c'è una pausa sempre uguale. Ogni pezzo deve durare quanto ci si
-aspetta dal numero di parole, altrimenti si rifà. Se la chiave manca o il servizio non risponde, legge Nicola di
+livello gratuito ne concede poche al giorno): dentro il pezzo la voce lega le frasi come una persona; poi il montaggio
+rimette in ordine le pause: tra un tema e l'altro sempre la stessa, dentro il tema mai troppo lunghe (ritma). Ogni
+pezzo deve durare quanto ci si aspetta dal numero di parole, altrimenti si rifà. Se la chiave manca o il servizio non risponde, legge Nicola di
 Kokoro (modello aperto, licenza Apache 2.0), che gira sul server senza servizi esterni; i file del modello si
 scaricano dalle release di kokoro-onnx su GitHub e restano nella cache del job. Mai due voci nello stesso audio.
 L'audio è AAC mono a 64 kbps: circa 480 KB al minuto. Scrive anche site/data/audio.json, che la prima pagina legge
@@ -40,9 +46,12 @@ GEMINI_MODEL = "gemini-3.8-flash-tts"
 GEMINI_VOICE = os.environ.get("GERICO_VOCE", "").strip() or "Iapetus"  # maschile, «chiara»: scelta il 9 novembre fra otto voci
 # lo stile sta fuori dal testo (il testo si legge parola per parola) ed è una riga breve e sempre uguale:
 # le indicazioni lunghe fanno cambiare la voce da un pezzo all'altro
-STYLE = os.environ.get("GERICO_STILE", "").strip() or "Conduttore di un notiziario radio del mattino: calmo, cordiale e sicuro, ritmo naturale, senza enfasi."
-GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:release=120:makeup=1.5,loudnorm=I=-16:TP=-1.5:LRA=11"
-PAUSE_TEMA = 0.7                       # tra un pezzo e l'altro
+STYLE = os.environ.get("GERICO_STILE", "").strip() or "Conduttore del telegiornale in diretta: sicuro, autorevole e partecipe, dizione chiara, ritmo deciso."
+# la voce prima di andare sulla musica (il volume finale lo dà FINALE, sul montaggio intero)
+GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:release=120:makeup=1.5"
+FINALE = "loudnorm=I=-16:TP=-2.5:LRA=11"  # -2,5 dBTP: l'AAC a 64 kbps alza un po' i picchi
+PAUSE_TEMA = 0.75                      # tra un tema e l'altro, sempre questa
+PAUSA_MAX, PAUSA_FRASE = 0.45, 0.36    # dentro un tema: una pausa più lunga di PAUSA_MAX diventa PAUSA_FRASE
 CHUNK_WORDS = 170                      # parole al massimo per richiesta: il riepilogo sta in tre richieste
 WPS = (2.1, 3.8)                       # parole al secondo accettate (le voci leggono a 2,7-3): fuori da qui ha saltato o aggiunto
 TRIES = 4
@@ -52,8 +61,22 @@ TRIES = 4
 PROVE = ("Charon", "Sadaltager", "Iapetus", "Algieba", "Schedar", "Kore", "Sulafat", "Erinome")  # una richiesta per voce
 
 
+def musica_id():
+    """Sei caratteri che cambiano quando cambia la musica (le parti in scripts/sigla/): l'audio si rifà da solo."""
+    h = hashlib.sha256()
+    cartella = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sigla")
+    for nome in ("apertura", "tappeto", "chiusura"):
+        try:
+            with open(os.path.join(cartella, nome + ".flac"), "rb") as f:
+                h.update(f.read())
+        except OSError:
+            h.update(nome.encode())
+    return h.hexdigest()[:6]
+
+
 def gemini_id(voice):
-    return "gemini-38-" + voice.lower() + "-v1"
+    # «tg2»: il montaggio da telegiornale con la sigla d'orchestra; con la musica che cambia, l'audio si rifà
+    return "gemini-38-" + voice.lower() + "-tg2-" + musica_id()
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -64,11 +87,10 @@ LANG = "it"
 # Nicola con un po' di Sara (15%): l'intonazione varia di più e la voce resta maschile; un filo più veloce, frase per frase
 VOICE_MIX = (("im_nicola", 0.85), ("if_sara", 0.15))
 SPEED = 1.1
-VOICE_ID = "kokoro-nicola85-sara15-v2"  # cambia quando cambia la voce: l'audio si rifà anche con lo stesso testo
-# volume normalizzato (-16 LUFS, come i podcast), un po' di compressione e di presenza sulle medie
-CHAIN = ("highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,"
-         "equalizer=f=3200:t=q:w=1.2:g=2.5,loudnorm=I=-16:TP=-1.5:LRA=9")
-PAUSE_SENT, PAUSE_PARA = 0.2, 0.55
+VOICE_ID = "kokoro-nicola85-sara15-tg2-" + musica_id()  # cambia con la voce, il montaggio o la musica: l'audio si rifà anche con lo stesso testo
+# un po' di compressione e di presenza sulle medie (il volume finale lo dà FINALE)
+CHAIN = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,equalizer=f=3200:t=q:w=1.2:g=2.5"
+PAUSE_SENT, PAUSE_PARA = 0.3, PAUSE_TEMA
 
 # come si leggono sigle, nomi e simboli che la voce sbaglierebbe (controllati con i fonemi di espeak per l'italiano)
 SAY = [
@@ -222,6 +244,60 @@ def trim(y, rate, np, keep=0.04):
     return y[a:b]
 
 
+def ritma(y, rate, np, testi):
+    """Le pause di un pezzo letto da Gemini, come in un notiziario. `testi` sono i paragrafi del pezzo: dove finisce
+    ognuno si stima dalla sua lunghezza (le lettere lette fin lì sul totale), e il passaggio da un tema all'altro è la
+    pausa più lunga vicino a quel punto; quelle pause durano tutte PAUSE_TEMA. Le altre, se superano PAUSA_MAX,
+    scendono a PAUSA_FRASE. Restano 30 ms del suono originale ai due lati di ogni pausa, sfumati (niente tagli secchi).
+    Torna l'audio e dove comincia ogni tema dopo il primo (in campioni)."""
+    win = max(1, int(rate * 0.01))
+    n = len(y) // win
+    if n < 20:
+        return y, []
+    rms = np.sqrt(np.mean(y[: n * win].reshape(n, win) ** 2, axis=1))
+    quiet = rms < max(1e-5, float(np.percentile(rms, 90)) * 10 ** (-35 / 20))
+    gaps, i = [], 0
+    while i < n:
+        if quiet[i]:
+            j = i
+            while j < n and quiet[j]:
+                j += 1
+            if j - i >= 12 and i > 0 and j < n:        # pause interne di almeno 120 ms
+                gaps.append((i * win, j * win))
+            i = j
+        else:
+            i += 1
+    # dove ci si aspetta il passaggio tra un paragrafo e l'altro, e lì vicino la pausa più lunga (non già presa)
+    lett = [len(t) for t in testi]
+    tot, acc, lunghe = max(1, sum(lett)), 0, set()
+    for k in range(len(lett) - 1):
+        acc += lett[k]
+        atteso = len(y) * acc / tot
+        raggio = max(2.0 * rate, 0.18 * len(y) / max(1, len(lett)))
+        vicine = [g for g in range(len(gaps)) if g not in lunghe and abs((gaps[g][0] + gaps[g][1]) / 2 - atteso) <= raggio]
+        if not vicine:
+            vicine = [g for g in range(len(gaps)) if g not in lunghe]
+        if vicine:
+            lunghe.add(max(vicine, key=lambda g: (gaps[g][1] - gaps[g][0]) - 0.15 * abs((gaps[g][0] + gaps[g][1]) / 2 - atteso)))
+    edge = int(rate * 0.03)
+    out, pos, size, marks = [], 0, 0, []
+    for k, (a, b) in enumerate(gaps):
+        dur = b - a
+        want = int(rate * PAUSE_TEMA) if k in lunghe else int(rate * PAUSA_FRASE) if dur > rate * PAUSA_MAX else dur
+        if want == dur:
+            continue
+        head = y[pos:a + edge].copy()
+        head[-edge:] *= np.linspace(1, 0, edge)
+        tail = y[b - edge:b].copy() * np.linspace(0, 1, edge)
+        out += [head, np.zeros(max(0, want - 2 * edge), dtype=np.float32), tail]
+        size += len(head) + max(0, want - 2 * edge) + edge
+        pos = b
+        if k in lunghe:
+            marks.append(size)
+    out.append(y[pos:])
+    return np.concatenate(out).astype(np.float32), sorted(marks)
+
+
 def gemini_piece(text, key, voice, np, sf):
     body = {"model": GEMINI_MODEL,
             "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
@@ -299,18 +375,23 @@ def pieces(paras):
 
 
 def gemini_audio(paras, key, voice, np, sf):
-    """Tutto il riepilogo con Gemini: sigla, poi i pezzi uno dopo l'altro con la pausa tra i temi."""
+    """Tutto il riepilogo con Gemini: i pezzi uno dopo l'altro, con le pause rimesse in ordine (ritma) e la stessa
+    pausa tra un pezzo e l'altro. Torna la voce, la frequenza e dove comincia ogni tema dopo il primo."""
     rate = 24000
-    parts = []
+    parts, marks, size = [], [], 0
     for i, piece in enumerate(pieces(paras)):
         if i:
             time.sleep(3)  # niente raffiche: il livello gratuito conta anche le richieste al minuto
         y, rate = gemini_read("\n\n".join(per_voce(p) for p in piece.split("\n\n")), key, voice, np, sf)
+        y, dentro = ritma(y, rate, np, [per_voce(p) for p in piece.split("\n\n")])
         if i:
             parts.append(np.zeros(int(rate * PAUSE_TEMA), dtype=np.float32))
+            size += int(rate * PAUSE_TEMA)
+            marks.append(size)
+        marks += [size + m for m in dentro]
         parts.append(y)
-    head = [jingle(np, rate), np.zeros(int(rate * 0.35), dtype=np.float32)]
-    return np.concatenate(head + parts), rate
+        size += len(y)
+    return np.concatenate(parts), rate, marks
 
 
 def kokoro_audio(paras, np):
@@ -318,19 +399,21 @@ def kokoro_audio(paras, np):
     style = lambda v: k.get_voice_style(v) if hasattr(k, "get_voice_style") else k.voices[v]
     voice = sum(w * style(v) for v, w in VOICE_MIX)
     rate = 24000
-    parts = [jingle(np, rate), np.zeros(int(rate * 0.35), dtype=np.float32)]
+    parts, marks = [], []
     # frase per frase: ogni frase ha la sua intonazione; pausa breve tra le frasi, più lunga tra un tema e l'altro (riga vuota)
-    for para in paras:
+    for i, para in enumerate(paras):
+        if i:
+            parts[-1] = np.zeros(int(rate * PAUSE_PARA), dtype=np.float32)
+            marks.append(sum(len(x) for x in parts))
         for s in sentences(speakable(para)):
             phonemes = FLAG.sub("", k.tokenizer.phonemize(s, lang=LANG))
             samples, rate = k.create(phonemes, voice=voice, speed=SPEED, is_phonemes=True)
             parts.extend([samples.astype(np.float32), np.zeros(int(rate * PAUSE_SENT), dtype=np.float32)])
-        parts[-1] = np.zeros(int(rate * PAUSE_PARA), dtype=np.float32)
-    return np.concatenate(parts[:-1]), rate
+    return np.concatenate(parts[:-1]), rate, marks
 
 
 def encode(audio, rate, dest, chain, np, sf):
-    """WAV normalizzato, poi ffmpeg: catena del suono, AAC mono a 64 kbps, pronto per lo streaming."""
+    """WAV normalizzato, poi ffmpeg: catena del suono (sul montaggio, FINALE), AAC mono a 64 kbps, pronto per lo streaming."""
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, "r.wav")
         sf.write(wav, audio / max(1e-6, float(np.max(np.abs(audio)))) * 0.9, rate)
@@ -339,20 +422,75 @@ def encode(audio, rate, dest, chain, np, sf):
     os.replace(dest + ".tmp.m4a", dest)
 
 
-def jingle(np, rate):
-    """La sigla di GERICO: due note brevi (la e mi), suono di marimba fatto con numpy. Niente file con diritti."""
-    def note(f, dur=0.9):
-        t = np.arange(int(rate * dur)) / rate
-        env = np.minimum(t / 0.004, 1.0)
-        y = (np.sin(2 * np.pi * f * t) * np.exp(-t / 0.32) + 0.32 * np.sin(2 * np.pi * 4 * f * t) * np.exp(-t / 0.09)
-             + 0.06 * np.sin(2 * np.pi * 9.9 * f * t) * np.exp(-t / 0.04))
-        return (env * y).astype(np.float32)
-    out = np.zeros(int(rate * 1.25), dtype=np.float32)
-    for start, f in ((0.0, 440.0), (0.17, 659.25)):
-        n = note(f)
-        i = int(rate * start)
-        out[i:i + len(n)] += n[: len(out) - i]
-    return out / np.max(np.abs(out)) * 0.45
+def filtro(y, rate, chain, np, sf, out=None):
+    """Una catena di ffmpeg su un pezzo di audio in memoria (la voce prima di andare sulla musica); con `out` la
+    porta anche a quella frequenza (la musica è a 48 kHz)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        a, b = os.path.join(tmp, "a.wav"), os.path.join(tmp, "b.wav")
+        sf.write(a, y, rate, subtype="FLOAT")
+        subprocess.run([ffmpeg(), "-loglevel", "error", "-y", "-i", a, "-af", chain, "-ar", str(out or rate), "-ac", "1",
+                        "-c:a", "pcm_f32le", b], check=True)
+        z, _ = sf.read(b, dtype="float32", always_2d=False)
+    return z
+
+
+def apertura(paras):
+    """Quanti paragrafi fanno l'apertura (il saluto e, se ci sono, i titoli): lì la musica sta un po' più alta."""
+    return 2 if len(paras) > 2 and re.match(r"\s*(In apertura|I titoli)\b", paras[1]) else 1
+
+
+def monta(voce, rate, marks, aperti, np):
+    """La voce sulla musica, come in un telegiornale. La sigla: il levare con i segnali orari, il colpo
+    dell'orchestra e la frase degli ottoni, al volume della voce. Sulla battuta dopo entra la voce e sotto comincia
+    il tappeto: -13 dB rispetto alla voce sul saluto e sui titoli, poi -19 dB sulle notizie, -15 dB nelle pause tra
+    un tema e l'altro. Dopo l'ultima parola il tappeto risale (-6 dB) e, sulla prima battuta utile, parte la
+    chiusura: il conto alla rovescia e il colpo finale. `rate` è quella della musica (sigla.SR)."""
+    import sigla
+    ap, tp, ch = sigla.parti(rate)
+    L = len(tp)
+    bar = sigla.BAR * rate
+    t_tp = int(round(sigla.TAPPETO * rate))
+    ingresso = int(round(sigla.VOCE * rate))
+    fine_voce = ingresso + len(voce)
+    # la chiusura comincia su una battuta del tappeto, almeno 0,35 secondi dopo l'ultima parola
+    t_ch = t_tp + int(round(np.ceil((fine_voce + 0.35 * rate - t_tp) / bar) * bar))
+    n = t_ch + len(ch)
+
+    # livelli: la voce fa da riferimento (le parti parlate, senza i bassi); la musica si misura allo stesso modo
+    def forza(x):
+        x = sigla.filtra(x.astype(np.float64), rate, alto=150)
+        w = int(rate * 0.05)
+        m = len(x) // w
+        r = np.sqrt(np.mean(x[: m * w].reshape(m, w) ** 2, axis=1))
+        on = r[r > np.percentile(r, 95) * 0.1]
+        return float(np.sqrt(np.mean(on ** 2))) if len(on) else 1e-6
+    rv = forza(voce)
+    g_piena = rv / forza(ap) * 10 ** (-1 / 20)  # sigla e chiusura: la stessa scala, come le ha scritte sigla.py
+    g_ap, g_corpo, g_pausa, g_risale = (rv / forza(tp) * 10 ** (db / 20) for db in (-13, -19, -15, -6))
+
+    def rampa(g, a, b, v0, v1):
+        a, b = max(0, int(a)), max(int(a) + 1, int(b))
+        g[a:min(b, len(g))] = np.linspace(v0, v1, b - a)[: max(0, min(b, len(g)) - a)]
+        g[min(b, len(g)):] = v1
+
+    gt = np.zeros(n, dtype=np.float32)
+    rampa(gt, t_tp, t_tp + 0.03 * rate, 0.0, g_ap)
+    fine_ap = ingresso + (marks[aperti - 1] if len(marks) >= aperti else min(len(voce), int(6 * rate)))
+    rampa(gt, fine_ap - 0.6 * rate, fine_ap + 0.6 * rate, g_ap, g_corpo)
+    risale = fine_voce + int(0.1 * rate)
+    rampa(gt, risale, risale + 0.4 * rate, g_corpo, g_risale)
+    rampa(gt, t_ch, t_ch + 0.2 * rate, g_risale, 0.0)
+    # nelle pause tra un tema e l'altro il tappeto sale un poco, come quando il conduttore passa la parola
+    for m in marks[aperti:]:
+        a, b = ingresso + m - int(PAUSE_TEMA * rate), ingresso + m
+        if a > fine_ap + 0.6 * rate and b < risale:
+            gt[a:b] *= (1 + (g_pausa / g_corpo - 1) * np.hanning(b - a)).astype(np.float32)
+    idx = (np.arange(n) - t_tp) % L
+    mix = gt * tp[idx]
+    mix[: len(ap)] += g_piena * ap[:n]
+    mix[t_ch:t_ch + len(ch)] += g_piena * ch[: n - t_ch]
+    mix[ingresso:ingresso + len(voce)] += voce
+    return mix.astype(np.float32)
 
 
 def ffmpeg():
@@ -406,7 +544,7 @@ def main(site):
     audio = None
     if key:
         try:
-            audio, rate = gemini_audio(paras, key, GEMINI_VOICE, np, sf)
+            audio, rate, marks = gemini_audio(paras, key, GEMINI_VOICE, np, sf)
             label, vid, chain = GEMINI_VOICE + ", voce sintetica di Google (Gemini)", gemini_id(GEMINI_VOICE), GEMINI_CHAIN
         except Exception as e:  # noqa: BLE001  qualunque errore del servizio: legge la voce di riserva
             print(f"::warning::audio: Gemini non ha letto il riepilogo ({type(e).__name__}: {e}); legge Kokoro")
@@ -414,10 +552,15 @@ def main(site):
                 print("L'audio di riserva per questo riepilogo c'è già: resta quello.")
                 return
     if audio is None:
-        audio, rate = kokoro_audio(paras, np)
+        audio, rate, marks = kokoro_audio(paras, np)
         label, vid, chain = "Nicola, sintesi vocale Kokoro", VOICE_ID, CHAIN
+    # la voce con la sua catena e a 48 kHz, poi sulla musica: sigla, tappeto, chiusura
+    import sigla
+    voce = filtro(audio, rate, chain, np, sf, out=sigla.SR)
+    marks = [int(round(m * sigla.SR / rate)) for m in marks]
+    audio, rate = monta(voce, sigla.SR, marks, apertura(paras), np), sigla.SR
     os.makedirs(os.path.join(site, "audio"), exist_ok=True)
-    encode(audio, rate, dest, chain, np, sf)
+    encode(audio, rate, dest, FINALE, np, sf)
     with open(dest, "rb") as f:
         tag = hashlib.sha256(f.read()).hexdigest()[:10]
     info = {"asOf": datetime.now(ZoneInfo("Europe/Rome")).isoformat(timespec="seconds"), "source": rp.get("asOf"),
@@ -445,14 +588,14 @@ def prove(site):
     done = []
     for v in voices:
         try:
-            audio, rate = gemini_audio(paras, key, v, np, sf)
+            audio, rate, _ = gemini_audio(paras, key, v, np, sf)
         except QuotaDelGiorno as e:
             print(f"::warning::prova di {v}: {e}; le altre voci domani")
             break
         except Exception as e:  # noqa: BLE001  una voce che non va non ferma le altre
             print(f"::warning::prova di {v}: {type(e).__name__}: {e}")
             continue
-        encode(audio, rate, os.path.join(out, v.lower() + ".m4a"), GEMINI_CHAIN, np, sf)
+        encode(audio, rate, os.path.join(out, v.lower() + ".m4a"), GEMINI_CHAIN + "," + FINALE, np, sf)
         done.append({"voice": v, "src": "audio/prove/" + v.lower() + ".m4a", "duration": round(len(audio) / rate)})
         print(f"  {v}: {done[-1]['duration']} s")
     with open(os.path.join(out, "prove.json"), "w", encoding="utf-8") as f:

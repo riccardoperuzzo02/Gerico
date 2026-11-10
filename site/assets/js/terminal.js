@@ -334,6 +334,13 @@ G.page("terminal", async function (P) {
   $("vals").addEventListener("click", pickTile);
   $("detail").addEventListener("click", (e) => { const b = e.target.closest("[data-inside]"); if (b) enter(b.dataset.inside, { push: true }); });
   document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+  // i tuoi interessi cambiati dal menu, qui nel Terminal: la mappa passa subito alla vista e alla Borsa dei mercati scelti
+  P.on(document, "gerico:interessi", (e) => {
+    if (e.detail && e.detail.sync) return;
+    const v = G.ls.get("gerico.mapView", "mondo") === "europa" ? "europa" : "mondo", sel = G.ls.get("gerico.mapSel", state.sel);
+    if (v !== state.view) setView(v);
+    if (sel !== state.sel && !inside.code) { state.sel = sel; drawMap(false, "select"); }
+  });
   let size = "";
   if (window.ResizeObserver) {
     let rt;
@@ -1045,6 +1052,12 @@ G.page("terminal", async function (P) {
       if (!quiet) G.seg($("gr-tabs"));
     };
     const setGroup = (k) => { grKey = k; G.ls.set("gerico.grGroup", k); markGroup(k); drawGroup(); };
+    // i tuoi interessi cambiati dal menu, qui nel Terminal: i grafici passano subito al gruppo dei mercati scelti
+    P.on(document, "gerico:interessi", (e) => {
+      if (e.detail && e.detail.sync) return;
+      const k = G.ls.get("gerico.grGroup", grKey);
+      if (k !== grKey && groups.some((g) => g.key === k)) setGroup(k);
+    });
     // swipe: il gruppo accanto sta di lato, intero e già disegnato, e arriva con il dito; l'indicatore delle schede lo segue.
     // Toccando una scheda succede lo stesso (anche verso un gruppo non vicino). I gruppi hanno altezze diverse: mentre il
     // dito trascina quello accanto è ritagliato all'altezza di quello che esce, all'arrivo lo spazio si adegua con la molla

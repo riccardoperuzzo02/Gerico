@@ -248,6 +248,21 @@ def main(dump, out):
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
         os.replace(tmp, path)
         print(f"  {fname}: {os.path.getsize(path):,} byte")
+    # le pubblicazioni non riuscite della redazione, per il gestionale: l'errore di meta/status (publishError) entra nella
+    # lista solo se è nuovo; restano gli ultimi 20 dei 30 giorni. Solo l'ora e il messaggio, nessun dato personale
+    stato_path = os.path.join(out, "stato.json")
+    stato = load(stato_path, {}) or {}
+    problemi = [x for x in stato.get("problemi") or [] if isinstance(x, dict) and x.get("at")]
+    err = meta.get("publishError")
+    if isinstance(err, dict) and err.get("at") and not any(x["at"] == err["at"] for x in problemi):
+        testo = re.sub(r"https?://\S+", "[link]", str(err.get("message") or ""))
+        problemi.append({"at": str(err["at"]), "message": testo[:300]})
+    problemi = [x for x in problemi if (parse_time(x["at"]) or now) >= now - timedelta(days=30)][-20:]
+    if {"problemi": problemi} != stato or not os.path.exists(stato_path):
+        with open(stato_path + ".tmp", "w", encoding="utf-8") as f:
+            json.dump({"problemi": problemi}, f, ensure_ascii=False, separators=(",", ":"))
+        os.replace(stato_path + ".tmp", stato_path)
+        print(f"  stato.json: {len(problemi)} pubblicazioni non riuscite negli ultimi 30 giorni")
     print(f"Storie live: {len(live)}, archiviate negli ultimi {ARCHIVE_DAYS} giorni: {len(archive)}")
     if edition:
         print("Temi caldi: " + ", ".join(t["label"] + (" (dai tag)" if t.get("auto") else "") for t in edition["themes"]))

@@ -1,7 +1,8 @@
 # GERICO, sito pubblico
 
 Le notizie del giorno in articoli scritti su tutte le fonti, con le voci di tutte le parti e la fonte di ogni dato; con il GERICO Terminal per i mercati.
-Sito statico: HTML, CSS e JavaScript senza framework e senza build. Nessun server, nessuna chiave nel repository.
+Le pagine sono file statici: HTML, CSS e JavaScript senza framework e senza build. Un piccolo Worker su Cloudflare (`worker/`)
+tiene solo gli account facoltativi, le preferenze, i conteggi delle visite e gli errori, nel database D1. Nessuna chiave nel repository.
 
 ## Struttura
 
@@ -19,6 +20,10 @@ scripts/export.py     dal database della redazione ai file di site/data
 scripts/mappe.py      la mappa sopra ogni articolo (site/img/storie), con i confini di Natural Earth in scripts/mappe
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
 pipeline/             i testi delle attività programmate su claude.ai, finché non passano su GitHub
+worker/index.js       il Worker: /api/ (account con passkey, preferenze, visite, errori) e /admin, il gestionale
+worker/webauthn.js    la verifica delle passkey (CBOR, chiavi COSE, firme ES256 e RS256 con WebCrypto)
+worker/schema.sql     lo schema del database D1, in migrazioni numerate che il Worker applica da solo
+worker/admin.html     la pagina del gestionale, che il Worker dà solo all'amministratore
 ```
 
 ## Da dove arrivano i dati
@@ -94,12 +99,21 @@ tradotto resta nella lingua originale e, per le storie, il sito lo dice («in It
 python3 -m http.server 8765 -d site
 ```
 
-poi apri http://127.0.0.1:8765/
+poi apri http://127.0.0.1:8765/ (senza account: le richieste a /api/ non rispondono). Con gli account e il gestionale:
+`npx wrangler dev` con un database D1 locale e i segreti di prova in `.dev.vars` (`ADMIN_TOKEN`, `STATS_SALT`), poi
+http://localhost:8787/ (le passkey vogliono `localhost`, non `127.0.0.1`).
 
 ## Pubblicazione su Cloudflare
 
 Compute › Workers & Pages › Create › Import a repository, repository `Gerico`, nome del progetto `gerico`.
 Build command vuoto, Deploy command `npx wrangler deploy`: `wrangler.toml` dice a Cloudflare di pubblicare la cartella `site`
-come file statici (gratis, senza limiti di traffico). Ogni push su `main` ripubblica il sito; la pipeline ne fa circa 50 al mese.
+come file statici (gratis, senza limiti di traffico) e il Worker di `worker/index.js`, che risponde solo a `/api/*` e `/admin`
+(`run_worker_first`): le altre pagine non passano dal Worker. Ogni push su `main` ripubblica il sito; la pipeline ne fa circa 50 al mese.
+
+Gli account vogliono, una volta sola: il database (Storage & Databases › D1 › Create, nome `gerico`, posizione Europa; il suo
+Database ID va in `wrangler.toml`) e due segreti del Worker (Workers & Pages › gerico › Settings › Variables and Secrets ›
+Add, tipo Secret): `ADMIN_TOKEN`, il codice che l'amministratore scrive una volta in `/admin` dopo l'accesso con la sua
+passkey (poi si può togliere), e `STATS_SALT`, una stringa casuale lunga da cui nasce il sale di ogni giorno per contare i
+visitatori unici. Le tabelle le crea il Worker alla prima richiesta (`worker/schema.sql`).
 In alternativa funziona anche Cloudflare Pages: Framework preset `None`, Build command `exit 0`, Build output directory `site`.
 Quando il sito ha il suo indirizzo: `python3 scripts/set_site_url.py https://<indirizzo>` e push.

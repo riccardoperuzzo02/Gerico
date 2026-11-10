@@ -91,6 +91,7 @@
     "Trimestrali e cedole": "Earnings and dividends", "Trimestrali": "Earnings", "Cedole": "Dividends", "Cosa mostrare": "What to show",
     "Questa pagina non c'è.": "This page doesn't exist.", "Forse la storia è stata archiviata.": "The story may have been archived.",
     "Torna alla prima pagina": "Back to the front page", "Navigazione": "Navigation", "Ascolta": "Listen",
+    "Gestionale · GERICO": "Dashboard · GERICO", "Gestionale": "Dashboard", "Carico…": "Loading…",
     // aree, paesi, temi
     "Italia": "Italy", "Stati Uniti": "United States", "Medio Oriente": "Middle East", "Ucraina e Russia": "Ukraine and Russia", "Oceania": "Oceania",
     "Giappone": "Japan", "Regno Unito": "United Kingdom", "Corea del Sud": "South Korea", "Cina": "China", "Francia": "France",
@@ -974,7 +975,7 @@
   // (avanti da destra, indietro da sinistra, tra Notizie e Terminal un cerchio dal punto toccato).
   // Se qualcosa non va, il link si apre come sempre.
   const PAGE_RE = /^\/(?:index|storia|terminal|come-funziona|privacy)?(?:\.html)?$/;
-  const SCRIPT_PAGE = { "home.js": "home", "story.js": "story", "terminal.js": "terminal", "info.js": "info" };
+  const SCRIPT_PAGE = { "home.js": "home", "story.js": "story", "terminal.js": "terminal", "info.js": "info", "admin.js": "admin" };
   const htmlEl = document.documentElement;
   const soft = !!(window.fetch && window.DOMParser && history.pushState && window.Promise);
   const MY = (() => { const s = document.querySelector('script[src*="assets/js/common.js"]'); return s ? s.getAttribute("src") : ""; })();
@@ -1588,6 +1589,7 @@
             '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Apri i Seguiti", "Open Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a></nav>";
         };
         draw();
+        G.conto.menu(menu, box);
         box.addEventListener("click", (e) => {
           const b = e.target.closest("[data-follow]");
           if (!b) return;
@@ -1610,6 +1612,7 @@
     document.querySelectorAll(".chips").forEach(G.watchRow);
     G.watchTop();
     G.tabbar.mount();
+    G.conto.pagina();
   };
 
   // ---------- titoli da seguire: lo stesso blocco in prima pagina e nel Terminal ----------
@@ -1939,10 +1942,11 @@
   G.paeseDaSlug = (slug) => G.PAESI.find((p) => p.slug === slug) || null;
   // il paese scelto resta nel browser (gerico.paese); l'Italia è quello di partenza
   G.paese = () => { const c = G.ls.get("gerico.paese", "IT"); return PAESE_DI[c] ? c : "IT"; };
-  G.setPaese = (code) => {
+  // sync: il cambio arriva dall'account (un altro dispositivo), non da un tocco qui
+  G.setPaese = (code, sync) => {
     if (!PAESE_DI[code]) return;
     G.ls.set("gerico.paese", code);
-    document.dispatchEvent(new CustomEvent("gerico:paese", { detail: { code } }));
+    document.dispatchEvent(new CustomEvent("gerico:paese", { detail: { code, sync: !!sync } }));
   };
 
   // le bandiere: disegni semplici, 30 x 20, fatti qui (nessuna immagine di altri siti). Gli stemmi sono ridotti a forme
@@ -2054,7 +2058,9 @@
 
   // il foglio per scegliere il paese: l'Italia e i paesi con gli articoli ogni giorno, poi gli altri in ordine alfabetico, con la ricerca
   const senzaAccenti = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-  G.apriPaesi = () => {
+  let ritornoPaesi = null;
+  G.apriPaesi = (opt) => {
+    ritornoPaesi = (opt && opt.ritorno) || null;
     let d = document.getElementById("paesi");
     if (!d) {
       d = document.createElement("dialog");
@@ -2077,7 +2083,12 @@
       '<p class="paesi-none" hidden>' + G.L("Nessun paese con questo nome.", "No country with this name.") + "</p></div>";
     const close = () => {
       if (!d.open || d.classList.contains("closing")) return;
-      const done = () => { d.classList.remove("closing"); d.close(); document.documentElement.classList.remove("menu-open"); const b = document.getElementById("paese-btn"); if (b) b.focus({ preventScroll: true }); };
+      const done = () => {
+        d.classList.remove("closing"); d.close();
+        if (!document.querySelector("dialog[open]")) document.documentElement.classList.remove("menu-open");
+        const b = ritornoPaesi && ritornoPaesi.isConnected ? ritornoPaesi : document.getElementById("paese-btn");
+        if (b) b.focus({ preventScroll: true });
+      };
       d.classList.add("closing");
       const anims = G.reduced() || !d.getAnimations ? [] : d.getAnimations();
       if (!anims.length) return done();
@@ -2110,4 +2121,648 @@
     const cur = d.querySelector('[data-paese="' + scelto + '"]');
     if (cur) { cur.focus({ preventScroll: true }); cur.scrollIntoView({ block: "center" }); }
   };
+
+  // ---------- i tuoi interessi: sezioni, mercati, come leggi (e i temi da seguire) ----------
+  // Restano nel browser (gerico.interessi) e, con l'account, nell'account. Cambiano il sito in modo che si veda: le sezioni
+  // scelte vengono prima nella barra; in Tutte, a parità di importanza, prima le storie delle sezioni e dei temi che ti
+  // interessano (la notizia più importante del giorno resta in cima per tutti); i mercati scelti in prima pagina; la vista
+  // e il gruppo da cui parte il Terminal; con le brevi scelte, in Tutte arrivano subito dopo la prima notizia.
+  // I temi della domanda sono i temi seguiti (gerico.follows). Ogni cambio manda l'evento gerico:interessi.
+  G.interessi = (() => {
+    const K = "gerico.interessi";
+    const L = G.L;
+    const SEZ = ["economia", "mondo", "paese", "tecnologia"];
+    const MERC = ["italia", "europa", "usa", "asia", "valute", "materie-prime", "cripto"];
+    const LETT = ["articoli", "brevi", "ascolto"];
+    const leggi = () => { const v = G.ls.get(K, null); return v && typeof v === "object" && !Array.isArray(v) ? v : {}; };
+    const lista = (v, k, ok) => (Array.isArray(v[k]) ? ok.filter((x) => v[k].includes(x)) : []);
+    const pulito = (v) => ({ sezioni: lista(v, "sezioni", SEZ), mercati: lista(v, "mercati", MERC.concat("nessuno")), lettura: lista(v, "lettura", LETT), fatto: v.fatto === true });
+    const sezioni = () => pulito(leggi()).sezioni;
+    const mercati = () => pulito(leggi()).mercati.filter((x) => x !== "nessuno");
+    const lettura = () => pulito(leggi()).lettura;
+    // il Terminal parte dai mercati scelti: la vista della mappa, la Borsa segnata, il gruppo dei grafici
+    const terminal = (m) => {
+      const ha = (x) => m.includes(x), borse = ["italia", "europa", "usa", "asia"].some(ha);
+      if (borse) {
+        G.ls.set("gerico.mapView", (ha("italia") || ha("europa")) && !ha("usa") && !ha("asia") ? "europa" : "mondo");
+        G.ls.set("gerico.mapSel", ha("italia") ? "ITA" : ha("europa") ? "DEU" : ha("usa") ? "USA" : "JPN");
+      }
+      const g = ha("valute") ? "valute" : ha("materie-prime") ? "materie" : ha("cripto") ? "cripto" : borse ? "indici" : "";
+      if (g) G.ls.set("gerico.grGroup", g);
+    };
+    // sync: arrivano dall'account (un altro dispositivo); il Terminal si riallinea solo se i mercati sono cambiati
+    const scrivi = (v, sync) => {
+      const prima = pulito(leggi()), nuovo = pulito(Object.assign({}, prima, v));
+      G.ls.set(K, nuovo);
+      if (prima.mercati.join() !== nuovo.mercati.join()) terminal(nuovo.mercati);
+      document.dispatchEvent(new CustomEvent("gerico:interessi", { detail: { sync: !!sync } }));
+    };
+    const NOMI = {
+      economia: () => L("Economia e mercati", "Economy and markets"), mondo: () => L("Mondo", "World"), paese: () => G.paeseNome(G.paese()), tecnologia: () => L("Tecnologia", "Technology"),
+      italia: () => L("Italia", "Italy"), europa: () => L("Europa", "Europe"), usa: () => L("Stati Uniti", "United States"), asia: () => "Asia",
+      valute: () => L("Valute", "Currencies"), "materie-prime": () => L("Materie prime", "Commodities"), cripto: () => L("Cripto", "Crypto"), nessuno: () => L("Non seguo i mercati", "I don't follow the markets"),
+      articoli: () => L("Articoli completi", "Full articles"), brevi: () => L("Brevi", "News in brief"), ascolto: () => L("Il riepilogo da ascoltare", "The audio briefing")
+    };
+    const nome = (k) => (NOMI[k] ? NOMI[k]() : k);
+    // in una riga: «Economia e mercati, Tecnologia · mercati: Italia, Cripto · legge: brevi»; paese: di chi sono gli
+    // interessi (nel gestionale, quello dell'iscritto), se no quello scelto qui
+    const testo = (v, paese) => {
+      const x = pulito(v || leggi()), parti = [];
+      if (x.sezioni.length) parti.push(x.sezioni.map((k) => (k === "paese" && paese ? G.paeseNome(paese) : nome(k))).join(", "));
+      if (x.mercati.length) parti.push(x.mercati.includes("nessuno") ? nome("nessuno") : L("mercati: ", "markets: ") + x.mercati.map(nome).join(", "));
+      if (x.lettura.length) parti.push(L("legge: ", "reads: ") + x.lettura.map((k) => nome(k).toLowerCase()).join(", "));
+      return parti.join(" · ");
+    };
+
+    // i temi da proporre: i temi caldi, poi i più frequenti nelle storie di questi giorni (oggi contano doppio), poi quelli
+    // che segui già
+    const temiSettimana = async () => {
+      let ed = null;
+      try { ed = await G.load("edition"); } catch (e) { ed = null; }
+      const out = [], visti = new Set();
+      const add = (t, caldo) => { const k = String(t).toLowerCase(); if (t && !visti.has(k) && out.length < 14) { visti.add(k); out.push([t, caldo]); } };
+      if (ed) {
+        (ed.themes || []).slice(0, 3).forEach((t) => t && t.label && add(t.label, true));
+        const live = new Set((ed.stories || []).map((s) => s.id)), n = {};
+        (ed.stories || []).concat(ed.archive || []).forEach((s) => s && s.scope !== "paese" && (s.tags || []).forEach((t) => { if (typeof t === "string" && t) n[t] = (n[t] || 0) + (live.has(s.id) ? 2 : 1); }));
+        Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 9).forEach((t) => add(t, false));
+      }
+      G.follows().forEach((t) => add(t, false));
+      return out;
+    };
+
+    const DOMANDE = [
+      { k: "sezioni", t: () => L("Quali sezioni ti interessano di più?", "Which sections interest you most?"), s: () => L("Vengono prima nella barra delle sezioni, e le loro storie prima in Tutte.", "They come first in the section bar, and their stories first in All."), o: () => SEZ },
+      { k: "temi", t: () => L("Quali temi vuoi seguire?", "Which topics do you want to follow?"), s: () => L("I temi di questi giorni. Le loro storie le trovi nei Seguiti, e in Tutte vengono prima.", "This week's topics. Their stories are in Following, and come first in All.") },
+      { k: "mercati", t: () => L("Segui i mercati? Quali?", "Do you follow the markets? Which ones?"), s: () => L("Li trovi in prima pagina, e il Terminal parte da lì.", "You'll see them on the front page, and the Terminal starts there."), o: () => MERC.concat("nessuno"), solo: "nessuno" },
+      { k: "lettura", t: () => L("Come preferisci leggere?", "How do you like to read?"), s: () => L("Con le brevi scelte, in Tutte le trovi subito dopo la prima notizia.", "If you pick news in brief, in All it comes right after the top story."), o: () => LETT }
+    ];
+    // le risposte di una domanda: bottoni da toccare (scelte multiple; «Non seguo i mercati» esclude le altre)
+    const scelte = async (q, attive) => {
+      if (q.k === "temi") {
+        const temi = await temiSettimana(), f = G.follows();
+        if (!temi.length) return '<p class="conto-nota">' + L("Oggi non ci sono temi da proporre: li segui in fondo a ogni storia.", "No topics to suggest today: follow them at the bottom of any story.") + "</p>";
+        return '<div class="tags int-tags" role="group" aria-label="' + G.esc(q.t()) + '">' + temi.map(([t, caldo]) => '<button type="button" class="tag" data-tema="' + G.esc(t) + '" aria-pressed="' + f.includes(t) + '">' +
+          (caldo ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + G.esc(G.tn(t)) + (caldo ? '<span class="sr-only">' + L(", tema caldo", ", hot topic") + "</span>" : "") + "</button>").join("") + "</div>";
+      }
+      return '<div class="tags int-tags" role="group" aria-label="' + G.esc(q.t()) + '">' + q.o().map((x) => '<button type="button" class="tag' + (x === q.solo ? " int-solo" : "") + '" data-int="' + q.k + '" data-v="' + x + '" aria-pressed="' + attive.includes(x) + '">' +
+        (q.k === "sezioni" && x === "paese" ? G.flag(G.paese()) : "") + G.esc(nome(x)) + "</button>").join("") + "</div>";
+    };
+    // un tocco su una risposta: subito nel browser (e nell'account), con l'effetto sulla pagina
+    const tocca = (b) => {
+      if (b.dataset.tema) {
+        G.toggleFollow(b.dataset.tema);
+        b.setAttribute("aria-pressed", String(G.follows().includes(b.dataset.tema)));
+        return;
+      }
+      const k = b.dataset.int, v = b.dataset.v, q = DOMANDE.find((x) => x.k === k), cur = pulito(leggi())[k];
+      let nuovo = cur.includes(v) ? cur.filter((x) => x !== v) : cur.concat(v);
+      if (q.solo) nuovo = v === q.solo ? (nuovo.includes(v) ? [v] : []) : nuovo.filter((x) => x !== q.solo);
+      scrivi({ [k]: nuovo });
+      b.closest(".int-tags").querySelectorAll("[data-int]").forEach((x) => x.setAttribute("aria-pressed", String(nuovo.includes(x.dataset.v))));
+    };
+
+    // dal menu: tutte le domande in un foglio, ogni scelta vale subito
+    const apri = async () => {
+      const v = pulito(leggi());
+      let corpo = '<p class="conto-p">' + L("Ogni scelta vale subito, anche sugli altri dispositivi se hai l'account. La notizia più importante del giorno resta in cima per tutti.", "Every choice applies right away, on your other devices too if you have an account. The day's top story stays on top for everyone.") + "</p>";
+      for (const q of DOMANDE) corpo += '<section class="int-q"><h3 class="opt-l">' + G.esc(q.t()) + '</h3><p class="conto-nota">' + G.esc(q.s()) + "</p>" + (await scelte(q, v[q.k] || [])) + "</section>";
+      corpo += '<div class="conto-az"><button type="button" class="conto-b primario" data-chiudi>' + L("Fatto", "Done") + '</button><button type="button" class="conto-b" data-int-via>' + L("Azzera le scelte", "Clear the choices") + "</button></div>";
+      const f = G.conto.foglio(L("I tuoi interessi", "Your interests"), corpo);
+      f.d.querySelector(".conto-in").addEventListener("click", (e) => {
+        const b = e.target.closest("[data-int], [data-tema]");
+        if (b) { tocca(b); return; }
+        if (e.target.closest("[data-int-via]")) {
+          scrivi({ sezioni: [], mercati: [], lettura: [] });
+          f.d.querySelectorAll("[data-int]").forEach((x) => x.setAttribute("aria-pressed", "false"));
+          G.toast(L("Scelte azzerate: il sito torna come per tutti.", "Choices cleared: the site is back to the default."));
+        }
+      });
+    };
+
+    // subito dopo l'iscrizione: una domanda per schermata, ognuna si può saltare
+    const dopoIscrizione = (u) => {
+      let i = 0;
+      const f = G.conto.foglio(L("Benvenuto, ", "Welcome, ") + u.nome, "", { chiusa: () => { if (!pulito(leggi()).fatto) scrivi({ fatto: true }); } });
+      const box = f.d.querySelector(".conto-in"), titolo = f.d.querySelector("#conto-t");
+      const disegna = async () => {
+        if (i >= DOMANDE.length) {
+          scrivi({ fatto: true });
+          titolo.textContent = L("Fatto", "Done");
+          box.innerHTML = '<p class="conto-ok">' + L("GERICO adesso mette prima quello che ti interessa.", "GERICO now puts what interests you first.") + "</p>" +
+            '<p class="conto-p">' + L("Lo cambi quando vuoi dal menu, in «I tuoi interessi». Dal menu vedi, scarichi o cancelli anche i tuoi dati.", "Change it whenever you like from the menu, under “Your interests”. From the menu you can also see, download or delete your data.") + "</p>" +
+            '<button type="button" class="conto-b primario" data-chiudi>' + L("Inizia a leggere", "Start reading") + "</button>";
+          box.querySelector("[data-chiudi]").focus({ preventScroll: true });
+          return;
+        }
+        const q = DOMANDE[i];
+        box.innerHTML = (i === 0 ? '<p class="conto-p">' + L("Sei dentro. Quattro domande veloci per mettere prima quello che ti interessa: tocca le risposte, o salta.", "You're in. Four quick questions to put what interests you first: tap the answers, or skip.") + "</p>" : "") +
+          '<p class="int-passo">' + L("Domanda ", "Question ") + (i + 1) + L(" di ", " of ") + DOMANDE.length + '</p><h3 class="int-t" tabindex="-1">' + G.esc(q.t()) + '</h3><p class="conto-nota">' + G.esc(q.s()) + "</p>" +
+          (await scelte(q, pulito(leggi())[q.k] || [])) +
+          '<div class="conto-az int-az">' + (i ? '<button type="button" class="conto-b" data-passo="-1">' + L("Indietro", "Back") + "</button>" : "") +
+          '<button type="button" class="conto-b" data-passo="salta">' + L("Salta", "Skip") + '</button><button type="button" class="conto-b primario" data-passo="1">' + (i === DOMANDE.length - 1 ? L("Fine", "Finish") : L("Avanti", "Next")) + "</button></div>";
+        if (i) box.querySelector(".int-t").focus({ preventScroll: true });
+      };
+      box.addEventListener("click", (e) => {
+        const b = e.target.closest("[data-int], [data-tema]");
+        if (b) { tocca(b); return; }
+        const p = e.target.closest("[data-passo]");
+        if (!p) return;
+        i = p.dataset.passo === "-1" ? Math.max(0, i - 1) : i + 1;
+        disegna();
+      });
+      disegna();
+    };
+
+    return { leggi, scrivi, pulito, sezioni, mercati, lettura, testo, nome, apri, dopoIscrizione };
+  })();
+
+  // ---------- account: passkey, preferenze su ogni dispositivo, i tuoi dati ----------
+  // Il Worker di GERICO (/api/, database D1 su Cloudflare) tiene gli account. Senza account tutto resta nel browser come
+  // prima. Con l'account il browser tiene solo un promemoria (gerico.conto: il nome, per disegnare il menu senza aspettare
+  // la rete); chi sei lo dice il cookie tecnico del Worker, che lo script non vede (HttpOnly). Temi seguiti, paese e
+  // interessi seguono l'account: al primo accesso su un dispositivo quelli del browser si uniscono a quelli dell'account,
+  // poi vale l'account. Le visite e gli errori delle pagine si contano senza cookie e senza legarli a nessuno.
+  G.CONTI = true;
+  G.conto = (() => {
+    const K = "gerico.conto", PROP = "gerico.proposta", SOSPESO = "gerico.conto.salva";
+    let io = null, primo = null, applico = false;
+    const passkeyOk = () => !!(window.PublicKeyCredential && navigator.credentials && navigator.credentials.create && window.isSecureContext);
+    const L = G.L;
+
+    const api = async (via, corpo) => {
+      const opt = corpo === undefined ? { credentials: "same-origin", cache: "no-store" }
+        : { method: "POST", credentials: "same-origin", cache: "no-store", headers: { "Content-Type": "application/json" }, body: JSON.stringify(corpo) };
+      const r = await fetch("/api/" + via, opt);
+      let d = null;
+      try { d = await r.json(); } catch (e) { d = null; }
+      if (!r.ok) { const e = new Error((d && d.errore) || "http-" + r.status); e.stato = r.status; throw e; }
+      return d;
+    };
+    const b64u = (buf) => {
+      const b = new Uint8Array(buf);
+      let t = "";
+      for (let i = 0; i < b.length; i++) t += String.fromCharCode(b[i]);
+      return btoa(t).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    };
+    const da64u = (x) => {
+      const t = atob(String(x).replace(/-/g, "+").replace(/_/g, "/") + "===".slice((x.length + 3) % 4));
+      const o = new Uint8Array(t.length);
+      for (let i = 0; i < t.length; i++) o[i] = t.charCodeAt(i);
+      return o;
+    };
+    // un errore detto in parole semplici
+    const spiega = (e) => {
+      const c = (e && e.message) || "";
+      if (e && e.name === "NotAllowedError") return L("La passkey non è arrivata: annullata o scaduta. Riprova quando vuoi.", "The passkey didn't come through: cancelled or timed out. Try again whenever you like.");
+      if (e && e.name === "InvalidStateError") return L("Su questo dispositivo c'è già una passkey di GERICO: usa «Accedi».", "This device already has a GERICO passkey: use “Sign in”.");
+      if (e && e.name === "SecurityError") return L("Le passkey funzionano solo sull'indirizzo del sito.", "Passkeys only work on the site's own address.");
+      if (e && e.name === "NotSupportedError") return L("Questo dispositivo non sa creare la passkey che serve.", "This device can't create the passkey that's needed.");
+      const m = {
+        "troppi-tentativi": L("Troppi tentativi in poco tempo: riprova tra un minuto.", "Too many attempts in a short time: try again in a minute."),
+        "passkey-sconosciuta": L("Questa passkey non è legata a nessun account GERICO: forse l'account è stato cancellato.", "This passkey isn't linked to any GERICO account: the account may have been deleted."),
+        "sfida-scaduta": L("È passato troppo tempo: riprova.", "Too much time went by: try again."),
+        nome: L("Scrivi il nome da mostrare, al massimo 40 caratteri.", "Type a display name, up to 40 characters."),
+        email: L("L'email non sembra giusta: controllala, o lasciala vuota.", "The email doesn't look right: check it, or leave it empty."),
+        "non-attivi": L("Gli account non sono ancora attivi.", "Accounts aren't switched on yet."),
+        "senza-accesso": L("La sessione è scaduta: rientra dal menu.", "Your session has expired: sign in again from the menu.")
+      };
+      if (m[c]) return m[c];
+      if (/^passkey-/.test(c)) return L("La passkey non è stata accettata: riprova.", "The passkey wasn't accepted: try again.");
+      if (e && e.stato >= 500) return L("Il server ha avuto un problema: riprova tra poco.", "The server had a problem: try again shortly.");
+      if (e instanceof TypeError) return L("Non c'è connessione: riprova quando torna la rete.", "No connection: try again when you're back online.");
+      return L("Qualcosa non è andato: riprova.", "Something went wrong: try again.");
+    };
+
+    const avvisa = () => document.dispatchEvent(new CustomEvent("gerico:conto", { detail: { utente: io } }));
+    const via = () => {
+      io = null;
+      try { localStorage.removeItem(K); localStorage.removeItem(SOSPESO); } catch (e) { /* niente */ }
+    };
+
+    // ---------- preferenze: dal browser all'account e ritorno ----------
+    let attesa = {}, timer = 0;
+    const manda = async (keep) => {
+      clearTimeout(timer);
+      const corpo = attesa;
+      attesa = {};
+      if (!io || !Object.keys(corpo).length) return;
+      try {
+        if (keep) { fetch("/api/preferenze", { method: "POST", credentials: "same-origin", keepalive: true, headers: { "Content-Type": "application/json" }, body: JSON.stringify(corpo) }).catch(() => {}); return; }
+        const d = await api("preferenze", corpo);
+        io.prefs = d.prefs;
+        if (!Object.keys(attesa).length) G.ls.set(SOSPESO, false);
+      } catch (e) {
+        if (e.stato === 401) { via(); avvisa(); }
+      }
+    };
+    const salva = (parte) => {
+      if (!io) return;
+      Object.assign(attesa, parte);
+      G.ls.set(SOSPESO, true);
+      clearTimeout(timer);
+      timer = setTimeout(manda, 700);
+    };
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && Object.keys(attesa).length) manda(true); });
+    // una scelta fatta qui va all'account; fatta mentre la pagina chiede ancora all'account chi sei, si segna come in sospeso:
+    // così la risposta dell'account non la cancella (vedi applica)
+    const cambio = (e, parte) => {
+      if (applico || (e.detail && e.detail.sync)) return;
+      if (io) salva(parte());
+      else if (G.ls.get(K, null)) G.ls.set(SOSPESO, true);
+    };
+    document.addEventListener("gerico:follows", (e) => cambio(e, () => ({ temi: G.follows() })));
+    document.addEventListener("gerico:paese", (e) => cambio(e, () => ({ paese: G.paese() })));
+    document.addEventListener("gerico:interessi", (e) => cambio(e, () => ({ interessi: G.interessi.leggi() })));
+    const uguali = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
+    // primo: primo accesso su questo dispositivo, i temi del browser si aggiungono a quelli dell'account
+    const unisci = (p, primoQui) => {
+      const loc = G.follows(), srv = Array.isArray(p.temi) ? p.temi : null;
+      const temi = srv === null ? loc : primoQui ? srv.concat(loc.filter((t) => !srv.includes(t))) : srv;
+      applico = true;
+      try {
+        if (!uguali(temi, loc)) {
+          G.ls.set("gerico.follows", temi);
+          document.dispatchEvent(new CustomEvent("gerico:follows", { detail: { sync: true } }));
+        }
+        if (p.paese && p.paese !== G.paese()) G.setPaese(p.paese, true);
+        if (p.interessi && JSON.stringify(G.interessi.pulito(p.interessi)) !== JSON.stringify(G.interessi.pulito(G.interessi.leggi()))) G.interessi.scrivi(p.interessi, true);
+      } finally { applico = false; }
+      const cambia = {};
+      if (srv === null || !uguali(temi, srv)) cambia.temi = temi;
+      if (!p.paese) cambia.paese = G.paese();
+      const mie = G.interessi.pulito(G.interessi.leggi());
+      if (!p.interessi && (mie.fatto || mie.sezioni.length || mie.mercati.length || mie.lettura.length)) cambia.interessi = mie;
+      if (Object.keys(cambia).length) salva(cambia);
+    };
+    // la risposta di /api/io: chi sei per il Worker
+    const applica = (d, primoQui) => {
+      const prima = G.ls.get(K, null);
+      if (!d || !d.utente) {
+        if (prima || io) {
+          via();
+          avvisa();
+          G.toast(L("La sessione è scaduta: rientra dal menu quando vuoi.", "Your session has expired: sign in again from the menu whenever you like."));
+        }
+        return d;
+      }
+      // l'evento parte solo se cambia qualcosa per la pagina: un accesso nuovo o un altro nome
+      const cambiato = !prima || prima.nome !== d.utente.nome;
+      io = d.utente;
+      G.ls.set(K, { nome: io.nome });
+      // modifiche fatte qui e non ancora arrivate al server: vince questo browser
+      if (G.ls.get(SOSPESO, false)) salva({ temi: G.follows(), paese: G.paese(), interessi: G.interessi.leggi() });
+      else unisci(io.prefs || {}, primoQui);
+      if (cambiato) avvisa();
+      return d;
+    };
+    // le preferenze dell'account si applicano quando la pagina ha finito di disegnarsi e ascolta i cambi (al massimo 3 s)
+    const paginaPronta = () => Promise.race([G.P.done, new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
+    const chiedi = (opt) => {
+      if (opt && opt.admin) return api("io?admin=1").then((d) => applica(d, false));
+      if (!primo) primo = api("io").then((d) => paginaPronta().then(() => applica(d, false))).catch((e) => { primo = null; throw e; });
+      return primo;
+    };
+    const entrato = (u) => {
+      io = u;
+      G.ls.set(K, { nome: u.nome });
+      unisci(u.prefs || {}, true);
+      primo = Promise.resolve({ attivo: true, utente: u });
+      avvisa();
+    };
+
+    // ---------- passkey ----------
+    const iscriviti = async (nome, email) => {
+      const o = await api("registra/opzioni", { nome, email });
+      const pk = o.publicKey;
+      const cred = await navigator.credentials.create({ publicKey: Object.assign({}, pk, { challenge: da64u(pk.challenge), user: Object.assign({}, pk.user, { id: da64u(pk.user.id) }) }) });
+      const r = cred.response;
+      const d = await api("registra/verifica", {
+        sfida: o.sfida,
+        credenziale: { id: cred.id, rawId: b64u(cred.rawId), type: cred.type, response: { clientDataJSON: b64u(r.clientDataJSON), attestationObject: b64u(r.attestationObject), transports: r.getTransports ? r.getTransports() : [] } }
+      });
+      entrato(d.utente);
+      return d.utente;
+    };
+    const accedi = async () => {
+      const o = await api("accedi/opzioni", {});
+      const pk = o.publicKey;
+      const cred = await navigator.credentials.get({ publicKey: Object.assign({}, pk, { challenge: da64u(pk.challenge) }) });
+      const r = cred.response;
+      let d;
+      try {
+        d = await api("accedi/verifica", {
+          sfida: o.sfida,
+          credenziale: { id: cred.id, rawId: b64u(cred.rawId), type: cred.type, response: { clientDataJSON: b64u(r.clientDataJSON), authenticatorData: b64u(r.authenticatorData), signature: b64u(r.signature), userHandle: r.userHandle ? b64u(r.userHandle) : null } }
+        });
+      } catch (e) {
+        // la passkey di un account cancellato: il telefono può toglierla dal suo elenco
+        if (e.message === "passkey-sconosciuta" && window.PublicKeyCredential && PublicKeyCredential.signalUnknownCredential) PublicKeyCredential.signalUnknownCredential({ rpId: location.hostname, credentialId: cred.id }).catch(() => {});
+        throw e;
+      }
+      entrato(d.utente);
+      G.toast(L("Bentornato, ", "Welcome back, ") + d.utente.nome);
+      return d.utente;
+    };
+    const esci = async () => {
+      await api("esci", {});
+      via();
+      primo = null;
+      avvisa();
+      G.toast(L("Sei uscito. Temi e paese restano in questo browser.", "You've signed out. Topics and country stay in this browser."));
+    };
+    const cancella = async () => {
+      const d = await api("cancella", {});
+      if (window.PublicKeyCredential && PublicKeyCredential.signalUnknownCredential) (d.passkey || []).forEach((id) => PublicKeyCredential.signalUnknownCredential({ rpId: location.hostname, credentialId: id }).catch(() => {}));
+      via();
+      primo = null;
+      avvisa();
+    };
+
+    // ---------- i fogli: proposta e iscrizione, i tuoi dati ----------
+    const X = '<svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+    // un foglio alla volta: se ne è già aperto uno (l'iscrizione che diventa le domande sugli interessi), il contenuto
+    // cambia al suo posto, senza chiudere e riaprire
+    let corrente = null;
+    const foglio = (titolo, corpo, opt) => {
+      let d = document.getElementById("conto-d");
+      if (!d) {
+        d = document.createElement("dialog");
+        d.id = "conto-d";
+        d.className = "menu conto-d";
+        d.setAttribute("aria-labelledby", "conto-t");
+        document.body.appendChild(d);
+      }
+      const html = document.documentElement;
+      const giaAperto = d.open && !d.classList.contains("closing") && !!corrente;
+      const ritorno = giaAperto ? corrente.ritorno : document.activeElement;
+      if (corrente) corrente.chiuso = true;
+      if (d.open && !giaAperto) { d.classList.remove("closing"); d.close(); }
+      d.innerHTML = '<div class="menu-in"><div class="grab" aria-hidden="true"></div><div class="menu-head"><h2 class="menu-t" id="conto-t" tabindex="-1">' + G.esc(titolo) +
+        '</h2><button class="menu-x" type="button" data-chiudi aria-label="' + L("Chiudi", "Close") + '">' + X + '</button></div><div class="conto-in">' + corpo + "</div></div>";
+      const stato = { d, chiuso: false, ritorno, chiudi: null };
+      corrente = stato;
+      const chiudi = (come) => {
+        if (stato.chiuso || corrente !== stato || !d.open) return;
+        stato.chiuso = true;
+        if (opt && opt.chiusa) opt.chiusa(come);
+        const fine = () => {
+          if (corrente !== stato) return;
+          corrente = null;
+          d.classList.remove("closing"); d.close();
+          if (!document.querySelector("dialog[open]")) html.classList.remove("menu-open");
+          if (ritorno && ritorno.isConnected && ritorno.focus) ritorno.focus({ preventScroll: true });
+        };
+        d.classList.add("closing");
+        const an = G.reduced() || !d.getAnimations ? [] : d.getAnimations();
+        if (!an.length) return fine();
+        Promise.all(an.map((a) => a.finished)).then(fine, fine);
+      };
+      stato.chiudi = chiudi;
+      d.oncancel = (e) => { e.preventDefault(); chiudi("x"); };
+      d.onclick = (e) => { if (e.target === d || e.target.closest("[data-chiudi]")) chiudi("x"); };
+      if (!giaAperto) {
+        d.classList.remove("closing");
+        html.classList.add("menu-open");
+        d.showModal();
+      }
+      d.querySelector("#conto-t").focus({ preventScroll: true });
+      return stato;
+    };
+
+    // proposta: il primo ingresso (con «Non ora»); nuovo: dal menu
+    const apri = (tipo, opt) => {
+      if (tipo === "dati") return apriDati(opt);
+      const proposta = tipo === "proposta";
+      if (!passkeyOk()) {
+        foglio(L("Un account GERICO", "A GERICO account"), '<p class="conto-p">' + L("Questo browser non sa usare le passkey. Prova con Safari, Chrome, Edge o Firefox aggiornati.", "This browser can't use passkeys. Try an up-to-date Safari, Chrome, Edge or Firefox.") + "</p>");
+        return;
+      }
+      let entrato_ = false;
+      const f = foglio(proposta ? L("Un account GERICO, se vuoi", "A GERICO account, if you like") : L("Crea il tuo account", "Create your account"),
+        '<p class="conto-p">' + L("Con l'account i temi che segui, il tuo paese e i tuoi interessi valgono su ogni dispositivo. Per leggere non serve.", "With an account, the topics you follow, your country and your interests work on every device. You don't need one to read.") + "</p>" +
+        '<form class="conto-form" novalidate>' +
+        '<label class="conto-campo"><span>' + L("Il nome da mostrare", "Display name") + '</span><input name="nome" required maxlength="40" autocomplete="nickname" autocapitalize="words" spellcheck="false"></label>' +
+        '<label class="conto-campo"><span>' + L("Email", "Email") + " <small>" + L("(facoltativa)", "(optional)") + '</small></span><input name="email" type="email" maxlength="160" autocomplete="email" inputmode="email" spellcheck="false"></label>' +
+        '<p class="conto-nota">' + L("L'email la vede solo Riccardo, che cura GERICO, per sapere chi è iscritto. Nessuna newsletter, nessuna email.", "Only Riccardo, who edits GERICO, sees the email, to know who has signed up. No newsletters, no emails.") + "</p>" +
+        '<button type="submit" class="conto-b primario">' + L("Crea l'account con una passkey", "Create the account with a passkey") + "</button>" +
+        '<p class="conto-err" role="alert"></p></form>' +
+        '<p class="conto-nota">' + L("Si entra con Face ID, Touch ID, l'impronta o il codice del telefono: nessuna password. ", "You sign in with Face ID, Touch ID, your fingerprint or your phone's passcode: no password. ") +
+        '<a href="privacy.html#' + L("account", "account-en") + '">' + L("Cosa salviamo", "What we store") + "</a></p>" +
+        '<div class="conto-az"><button type="button" class="conto-b" data-conto-f="accedi">' + L("Ho già un account", "I already have an account") + "</button>" +
+        (proposta ? '<button type="button" class="conto-b" data-conto-f="no">' + L("Non ora", "Not now") + "</button>" : "") + "</div>",
+        { chiusa: () => { if (proposta && !entrato_) { const p = G.ls.get(PROP, {}) || {}; G.ls.set(PROP, { ultima: Date.now(), no: (p.no || 0) + 1 }); } } });
+      const d = f.d, form = d.querySelector(".conto-form"), err = d.querySelector(".conto-err");
+      const fatto = (u) => {
+        entrato_ = true;
+        if (opt && opt.poi) opt.poi(u);
+        if (G.interessi && G.interessi.dopoIscrizione) { G.interessi.dopoIscrizione(u); return; }
+        d.querySelector(".conto-in").innerHTML = '<p class="conto-ok">' + L("Fatto, ", "Done, ") + G.esc(u.nome) + L(": sei dentro.", ": you're in.") + "</p>" +
+          '<p class="conto-p">' + L("I temi che segui e il tuo paese ora valgono su ogni dispositivo dove entri con questa passkey. Dal menu vedi, scarichi o cancelli i tuoi dati quando vuoi.",
+            "The topics you follow and your country now work on every device where you sign in with this passkey. From the menu you can see, download or delete your data whenever you like.") + "</p>" +
+          '<button type="button" class="conto-b primario" data-chiudi>' + L("Inizia a leggere", "Start reading") + "</button>";
+        d.querySelector("[data-chiudi].conto-b").focus({ preventScroll: true });
+      };
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const nome = form.nome.value.trim(), email = form.email.value.trim();
+        err.textContent = "";
+        if (!nome) { err.textContent = spiega(new Error("nome")); form.nome.focus(); return; }
+        if (email && !form.email.checkValidity()) { err.textContent = spiega(new Error("email")); form.email.focus(); return; }
+        const b = form.querySelector("[type=submit]");
+        b.disabled = true;
+        try { fatto(await iscriviti(nome, email)); }
+        catch (x) { if (err.isConnected) err.textContent = spiega(x); }
+        finally { if (b.isConnected) b.disabled = false; }
+      });
+      // l'ascoltatore sta sul contenuto di questo foglio (che il foglio dopo sostituisce), non sul dialog che resta
+      d.querySelector(".conto-in").addEventListener("click", async (e) => {
+        const b = e.target.closest("[data-conto-f]");
+        if (!b) return;
+        if (b.dataset.contoF === "no") { f.chiudi("no"); return; }
+        b.disabled = true;
+        err.textContent = "";
+        try { const u = await accedi(); entrato_ = true; if (opt && opt.poi) opt.poi(u); f.chiudi("ok"); }
+        catch (x) { if (err.isConnected) err.textContent = spiega(x); }
+        finally { if (b.isConnected) b.disabled = false; }
+      });
+    };
+
+    // i tuoi dati: tutto quello che il Worker tiene su di te, da scaricare o cancellare
+    const apriDati = async (opt) => {
+      const f = foglio(L("I tuoi dati", "Your data"), '<p class="conto-p" role="status">' + L("Carico…", "Loading…") + "</p>");
+      const d = f.d, box = d.querySelector(".conto-in");
+      let x;
+      try { x = await api("miei-dati?vedi=1"); }
+      catch (e) {
+        if (e.stato === 401) { via(); avvisa(); }
+        box.innerHTML = '<p class="conto-p">' + G.esc(spiega(e)) + "</p>";
+        return;
+      }
+      const fData = new Intl.DateTimeFormat(G.en ? "en-GB" : "it-IT", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" });
+      const q = (iso) => (iso ? fData.format(new Date(iso)) : "—");
+      const riga = (k, v) => "<div><dt>" + G.esc(k) + "</dt><dd>" + v + "</dd></div>";
+      const a = x.account, p = x.preferenze;
+      box.innerHTML = '<p class="conto-p">' + L("Questi sono tutti i dati che GERICO conserva sul tuo account. Le visite e gli errori delle pagine si contano senza legarli a te.", "This is all the data GERICO keeps on your account. Page visits and errors are counted without linking them to you.") + "</p>" +
+        '<dl class="conto-dl">' + riga(L("Nome", "Name"), G.esc(a.nome)) + riga("Email", a.email ? G.esc(a.email) : L("nessuna", "none")) +
+        riga(L("Iscritto", "Joined"), G.esc(q(a.iscritto))) + riga(L("Ultimo accesso", "Last seen"), G.esc(q(a.ultimoAccesso))) +
+        riga(L("Temi seguiti", "Followed topics"), p.temiSeguiti.length ? p.temiSeguiti.map((t) => G.esc(G.tn(t))).join(", ") : L("nessuno", "none")) +
+        riga(L("Paese", "Country"), p.paese ? G.flag(p.paese) + " " + G.esc(G.paeseNome(p.paese)) : "—") +
+        (p.interessi && G.interessi.testo(p.interessi, p.paese) ? riga(L("Interessi", "Interests"), G.esc(G.interessi.testo(p.interessi, p.paese))) : "") +
+        riga("Passkey", x.passkey.map((k) => G.esc(L("creata il ", "created ") + q(k.creata) + (k.usata ? L(", usata l'ultima volta il ", ", last used ") + q(k.usata) : "") + (k.sincronizzata ? L(" (sincronizzata tra i tuoi dispositivi)", " (synced across your devices)") : ""))).join("<br>")) +
+        riga(L("Accessi aperti", "Open sessions"), String(x.sessioni.length) + " " + G.esc(L("(uno per ogni browser dove sei entrato)", "(one for each browser you've signed in on)"))) + "</dl>" +
+        '<div class="conto-az conto-col"><a class="conto-b" href="/api/miei-dati" download="gerico-i-miei-dati.json">' + L("Scarica i tuoi dati", "Download your data") + "</a>" +
+        '<button type="button" class="conto-b rischio" data-conto-f="cancella">' + L("Cancella l'account", "Delete the account") + "</button></div>" +
+        '<div class="conto-conferma" hidden><p class="conto-p"><b>' + L("Cancelli l'account e tutto quello che GERICO ha salvato con lui", "You delete the account and everything GERICO saved with it") + "</b>: " +
+        L("nome, email, passkey, accessi, temi, paese e interessi. Subito, senza ritorno. In questo browser temi e paese restano, come prima dell'account.", "name, email, passkeys, sessions, topics, country and interests. Right away, for good. In this browser your topics and country stay, as before the account.") + "</p>" +
+        '<div class="conto-az"><button type="button" class="conto-b rischio" data-conto-f="si">' + L("Sì, cancella tutto", "Yes, delete everything") + '</button><button type="button" class="conto-b" data-conto-f="annulla">' + L("Annulla", "Cancel") + "</button></div>" +
+        '<p class="conto-err" role="alert"></p></div>';
+      const conf = box.querySelector(".conto-conferma");
+      const chiedi_ = () => { conf.hidden = false; conf.scrollIntoView({ block: "nearest" }); conf.querySelector("[data-conto-f='annulla']").focus({ preventScroll: true }); };
+      if (opt && opt.cancella) chiedi_();
+      box.addEventListener("click", async (e) => {
+        const b = e.target.closest("[data-conto-f]");
+        if (!b) return;
+        const k = b.dataset.contoF;
+        if (k === "cancella") { chiedi_(); return; }
+        if (k === "annulla") { conf.hidden = true; box.querySelector("[data-conto-f='cancella']").focus({ preventScroll: true }); return; }
+        if (k !== "si") return;
+        b.disabled = true;
+        try {
+          await cancella();
+          f.chiudi("ok");
+          G.toast(L("Account cancellato: sul server non resta niente.", "Account deleted: nothing is left on the server."));
+        } catch (x2) { const er = conf.querySelector(".conto-err"); if (er) er.textContent = spiega(x2); b.disabled = false; }
+      });
+    };
+
+    // ---------- nel menu: il tuo account in cima, il paese dopo i temi seguiti ----------
+    const menu = (m, dopo) => {
+      if (!G.CONTI || m.querySelector(".conto-menu")) return;
+      const box = document.createElement("div");
+      box.className = "opt conto-menu";
+      const head = m.querySelector(".menu-head");
+      if (head) head.after(box); else m.querySelector(".menu-in").prepend(box);
+      const ib = document.createElement("div");
+      ib.className = "opt interessi-menu";
+      box.after(ib);
+      const pa = document.createElement("div");
+      pa.className = "opt paese-menu";
+      (dopo || ib).after(pa);
+      const disegnaInteressi = () => {
+        const t = G.interessi.testo();
+        ib.innerHTML = '<p class="opt-l" id="opt-int">' + L("I tuoi interessi", "Your interests") + '</p><div class="menu-links"><button type="button" data-conto="interessi" aria-describedby="opt-int"><span class="int-r">' +
+          (t ? G.esc(t) : L("Scegli cosa mettere prima", "Choose what comes first")) + "</span></button></div>";
+      };
+      const disegnaPaese = () => {
+        const c = G.paese();
+        pa.innerHTML = '<p class="opt-l" id="opt-paese">' + L("Il tuo paese", "Your country") + '</p><div class="menu-links"><button type="button" data-conto="paese" aria-describedby="opt-paese">' +
+          G.flag(c) + '<span class="pn">' + G.esc(G.paeseNome(c)) + '</span><span class="sr-only">' + L(": cambialo", ": change it") + "</span></button></div>";
+      };
+      const disegna = () => {
+        const nota = G.ls.get(K, null);
+        if (nota && nota.nome) {
+          box.innerHTML = '<p class="opt-l" id="opt-conto">' + L("Il tuo account", "Your account") + '</p><div class="menu-links conto-links" role="group" aria-labelledby="opt-conto">' +
+            '<div class="conto-chi"><span class="conto-av" aria-hidden="true">' + G.esc((Array.from(String(nota.nome))[0] || "?").toUpperCase()) + "</span><span><b>" + G.esc(nota.nome) + "</b><small>" + L("Entrato con la passkey", "Signed in with a passkey") + "</small></span></div>" +
+            '<button type="button" data-conto="dati">' + L("I tuoi dati", "Your data") + "</button>" +
+            '<a href="/api/miei-dati" download="gerico-i-miei-dati.json">' + L("Scarica i tuoi dati", "Download your data") + "</a>" +
+            '<button type="button" data-conto="esci">' + L("Esci", "Sign out") + "</button>" +
+            '<button type="button" class="rischio" data-conto="cancella">' + L("Cancella l'account", "Delete the account") + '</button></div><p class="conto-err" role="alert"></p>';
+        } else {
+          box.innerHTML = '<p class="opt-l" id="opt-conto">' + L("Il tuo account", "Your account") + '</p><div class="conto-cell"><p class="conto-s">' +
+            (passkeyOk() ? L("Temi, paese e interessi su ogni dispositivo, con una passkey. Per leggere non serve.", "Topics, country and interests on every device, with a passkey. You don't need it to read.")
+              : L("Questo browser non sa usare le passkey: per l'account prova Safari, Chrome, Edge o Firefox aggiornati.", "This browser can't use passkeys: for an account try an up-to-date Safari, Chrome, Edge or Firefox.")) + "</p>" +
+            (passkeyOk() ? '<div class="conto-az"><button type="button" class="conto-b primario" data-conto="nuovo">' + L("Crea l'account", "Create an account") + '</button><button type="button" class="conto-b" data-conto="accedi">' + L("Accedi", "Sign in") + "</button></div>" : "") +
+            '<p class="conto-err" role="alert"></p></div>';
+        }
+      };
+      disegna();
+      disegnaPaese();
+      disegnaInteressi();
+      P.on(document, "gerico:conto", disegna);
+      P.on(document, "gerico:paese", () => { disegnaPaese(); disegnaInteressi(); });
+      P.on(document, "gerico:interessi", disegnaInteressi);
+      const chiudiMenu = () => { const x = m.querySelector("[data-close]"); if (x) x.click(); };
+      const errore = (t) => { const e = box.querySelector(".conto-err"); if (e) e.textContent = t; };
+      P.on(m, "click", async (e) => {
+        const b = e.target.closest("[data-conto]");
+        if (!b) return;
+        e.stopPropagation();
+        const k = b.dataset.conto;
+        errore("");
+        if (k === "paese") { G.apriPaesi({ ritorno: b }); return; }
+        if (k === "interessi") { G.interessi.apri(); return; }
+        if (k === "nuovo") { apri("nuovo"); return; }
+        if (k === "dati" || k === "cancella") { apri("dati", { cancella: k === "cancella" }); return; }
+        b.disabled = true;
+        try {
+          if (k === "accedi") { await accedi(); chiudiMenu(); }
+          else if (k === "esci") { await esci(); chiudiMenu(); }
+        } catch (x) { errore(spiega(x)); }
+        finally { if (b.isConnected) b.disabled = false; }
+      });
+    };
+
+    // ---------- a ogni pagina: chi sei, la proposta dell'account, il conteggio della visita ----------
+    const PAGINE = { "/": "prima-pagina", "/storia": "storia", "/terminal": "terminal", "/come-funziona": "come-funziona", "/privacy": "privacy", "/admin": "admin" };
+    const pagina_ = () => PAGINE[location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/")] || "";
+    const dispositivo = () => {
+      const tocco = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches);
+      return !tocco ? "computer" : Math.min(screen.width, screen.height) >= 600 ? "tablet" : "telefono";
+    };
+    const visita = () => {
+      const p = pagina_();
+      if (!G.CONTI || !p || p === "admin" || !navigator.sendBeacon) return;
+      try { navigator.sendBeacon("/api/visita", JSON.stringify({ p, c: G.paese(), l: G.lang, d: dispositivo() })); } catch (e) { /* niente */ }
+    };
+    // gli errori di JavaScript delle pagine di GERICO: solo messaggio, file, riga e pagina, al massimo 10 per visita
+    let errori = 0;
+    const segnala = (msg, file, riga) => {
+      if (!G.CONTI || errori >= 10 || !navigator.sendBeacon) return;
+      const m = String(msg || "").slice(0, 300);
+      if (!m || /ResizeObserver loop/.test(m)) return;
+      let f = "";
+      try { const u = new URL(file || location.href, location.href); if (u.origin !== location.origin) return; f = u.pathname; } catch (e) { return; }
+      const p = pagina_();
+      if (!p) return;
+      errori += 1;
+      try { navigator.sendBeacon("/api/errore", JSON.stringify({ m, f, r: Number(riga) || 0, p })); } catch (e) { /* niente */ }
+    };
+    window.addEventListener("error", (e) => { if (e && e.message) segnala(e.message, e.filename, e.lineno); });
+    window.addEventListener("unhandledrejection", (e) => {
+      const r = e && e.reason, st = r && r.stack ? String(r.stack) : "";
+      const at = /(https?:\/\/[^\s)]+?):(\d+):\d+/.exec(st);
+      segnala((r && r.message) || String(r), at ? at[1] : "", at ? at[2] : 0);
+    });
+    // il foglio dell'account: solo in prima pagina, mai sopra una storia; al massimo una volta alla settimana, mai più
+    // dopo tre «Non ora»
+    let proposto = false;
+    const proponi = () => {
+      if (proposto || !passkeyOk() || G.current !== "home" || G.ls.get(K, null)) return;
+      const p = G.ls.get(PROP, {}) || {};
+      if ((p.no || 0) >= 3 || Date.now() - (p.ultima || 0) < 7 * 864e5) return;
+      proposto = true;
+      G.afterIntro(() => setTimeout(async () => {
+        if (G.current !== "home" || document.querySelector("dialog[open]") || G.ls.get(K, null)) return;
+        let d;
+        try { d = await chiedi(); } catch (e) { return; }
+        if (!d || !d.attivo || d.utente || G.current !== "home" || document.querySelector("dialog[open]")) return;
+        G.ls.set(PROP, { ultima: Date.now(), no: p.no || 0 });
+        apri("proposta");
+      }, 2200));
+    };
+    const pagina = () => {
+      if (!G.CONTI) return;
+      visita();
+      if (G.ls.get(K, null)) chiedi().catch(() => {});
+      else proponi();
+    };
+
+    return {
+      api, spiega, accedi, iscriviti, esci, cancella, apri, menu, pagina, foglio,
+      io: chiedi,
+      utente: () => io,
+      salva
+    };
+  })();
 })();

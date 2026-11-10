@@ -2114,7 +2114,7 @@ html.nuova .blk.fol { padding-bottom: var(--f21); }
 .fol-menu .tags { margin-top: 0; }
 .fol .tag:not([aria-pressed="true"]), .fol-menu .tag:not([aria-pressed="true"]) { background: var(--fill); }
 .fol .tag { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.fol .tag .hot-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #C8102E; vertical-align: 0.1em; }
+.fol .tag .hot-dot, .int-tags .tag .hot-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #C8102E; vertical-align: 0.1em; }
 .fol .fol-all { background: none; box-shadow: inset 0 0 0 1px var(--rule); }
 .fol-note { margin: var(--f8, 8px) 2px 0; font-size: 0.8125rem; line-height: 1.4; color: var(--muted); }
 .fol-menu .fol-note { margin: 0 4px; font-size: 0.875rem; }
@@ -2213,3 +2213,176 @@ body.term .gr-peek { background: var(--t-bg); }
 /* i riquadri dentro le sezioni, prima più scuri del pannello, ora un filo più chiari della pagina */
 body.term .t-detail, body.term .t-vals button { background: var(--t-panel); }
 @media (min-width: 1000px) { body.term .t-board { column-gap: 40px; } }
+
+/* ---------- account (10 novembre): il foglio per iscriversi, i tuoi dati, il blocco in cima al menu ---------- */
+.conto-in { padding: 0 0 4px; }
+.conto-p { margin: 0 4px 14px; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-2); }
+.conto-ok { margin: 4px 4px 10px; font-size: 1.25rem; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; }
+.conto-form { display: grid; gap: 12px; }
+.conto-campo { display: grid; gap: 6px; }
+.conto-campo > span { margin: 0 4px; font-size: 0.875rem; font-weight: 700; color: var(--muted); }
+.conto-campo small { font-weight: 600; }
+.conto-campo input {
+  display: block; width: 100%; min-height: 48px; padding: 0 14px; border: 0; border-radius: 12px;
+  background: var(--fill); color: var(--ink); font: inherit; font-size: 1rem;
+}
+.conto-campo input:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 1px; }
+.conto-nota { margin: 0 4px; font-size: 0.8125rem; line-height: 1.45; color: var(--muted); }
+.conto-in > .conto-nota { margin-top: 14px; }
+.conto-nota a { color: var(--link); font-weight: 700; }
+.conto-b {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px;
+  border: 0; border-radius: 12px; background: var(--fill); color: var(--ink); font: inherit; font-size: 1rem; font-weight: 700;
+  text-align: center; text-decoration: none; cursor: pointer;
+}
+.conto-b.primario { background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); }
+.conto-b.rischio, .conto-links .rischio { color: var(--down); }
+.conto-b[disabled] { opacity: 0.55; cursor: progress; }
+@media (hover: hover) { .conto-b:not(.primario):hover { background: var(--press); } .conto-b.primario:hover { background: var(--accent-2, var(--palm)); } }
+.conto-az { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.conto-az > .conto-b { flex: 1 1 auto; }
+.conto-col { flex-direction: column; }
+.conto-err { margin: 0 4px; font-size: 0.875rem; line-height: 1.45; font-weight: 600; color: var(--down); }
+.conto-err:empty { display: none; }
+.conto-dl { display: grid; margin: 0; border-radius: 12px; background: var(--cell); overflow: hidden; }
+.conto-dl > div { position: relative; display: grid; gap: 2px; padding: 11px 16px; }
+.conto-dl > div + div::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; height: 1px; background: var(--hair); }
+.conto-dl dt { font-size: 0.8125rem; font-weight: 700; color: var(--muted); }
+.conto-dl dd { margin: 0; font-size: 0.9375rem; line-height: 1.45; overflow-wrap: anywhere; }
+.conto-dl .flag { display: inline-block; width: 21px; height: 14px; vertical-align: -2px; }
+.conto-conferma { margin-top: 14px; padding: 14px 12px 12px; border-radius: 12px; background: var(--cell); }
+.conto-conferma .conto-p { margin-bottom: 0; }
+.conto-conferma[hidden] { display: none; }
+/* nel menu */
+.conto-menu { margin-top: 4px; }
+.conto-menu + .menu-links { margin-top: 18px; }
+#conto-t:focus { outline: none; }
+.conto-cell { padding: 14px 16px; border-radius: 12px; background: var(--cell); }
+.conto-s { font-size: 0.9375rem; line-height: 1.45; color: var(--ink-2); }
+.conto-cell .conto-az { margin-top: 12px; }
+.conto-cell .conto-err { margin: 10px 0 0; }
+.conto-menu > .conto-err { margin-top: 8px; }
+.menu-links button {
+  position: relative; display: flex; align-items: center; gap: 12px; width: 100%; min-height: 50px; padding: 0 16px;
+  border: 0; background: none; color: var(--ink); font: inherit; font-size: 1.0625rem; font-weight: 700; text-align: left; cursor: pointer;
+}
+.menu-links button::after {
+  content: ""; flex: none; width: 8px; height: 8px; margin: 0 4px 0 auto;
+  border-top: 2px solid var(--muted); border-right: 2px solid var(--muted); transform: rotate(45deg);
+}
+.menu-links > * + button::before, .menu-links > * + a::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; height: 1px; background: var(--hair); }
+.menu-links button:focus-visible { outline-offset: -3px; }
+.menu-links button[disabled] { opacity: 0.55; cursor: progress; }
+.conto-chi { display: flex; align-items: center; gap: 12px; min-height: 62px; padding: 8px 16px; }
+.conto-chi > span:last-child { display: grid; min-width: 0; }
+.conto-chi b { font-size: 1.0625rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.conto-chi small { font-size: 0.8125rem; color: var(--muted); }
+.conto-av {
+  display: grid; place-items: center; flex: none; width: 38px; height: 38px; border-radius: 50%;
+  background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); font-size: 1.0625rem; font-weight: 800;
+}
+.paese-menu .menu-links button .flag { width: 27px; height: 18px; }
+.paese-menu .menu-links button .pn { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+/* ---------- gestionale (10 novembre): i numeri di GERICO per Riccardo ---------- */
+.admin { --ad-bar: #2E62C9; padding-bottom: 40px; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .admin { --ad-bar: #5C8FE6; } }
+html[data-theme="dark"] .admin { --ad-bar: #5C8FE6; }
+.admin .large { padding-top: 22px; }
+.admin .large h1 { font-family: var(--serif, inherit); font-size: 2.5rem; font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; }
+.ad-wait, .ad-nota { margin: 10px 2px 0; font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
+.ad-card { max-width: 560px; margin-top: 16px; padding: 20px 18px; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); }
+.ad-card h2 { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; }
+.ad-card p { margin-top: 8px; font-size: 1rem; line-height: 1.5; color: var(--ink-2); }
+.ad-card .conto-b { margin-top: 16px; }
+.ad-card .ad-nota { margin-top: 14px; }
+.ad-inline { min-height: 0; margin: 0; padding: 0; font-size: inherit; vertical-align: baseline; }
+.ad-form { display: grid; gap: 12px; margin-top: 14px; }
+.ad-form .conto-b { margin-top: 0; justify-self: start; }
+.ad-card .conto-err { margin: 12px 0 0; }
+.ad-filtri { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-top: 6px; }
+.ad-filtri .seg { flex: 0 1 auto; }
+.ad-corpo { transition: opacity var(--t-2, 0.2s) ease; }
+.ad-corpo.ad-carico { opacity: 0.55; }
+.ad-avviso { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: var(--palm-weak, var(--fill)); font-size: 0.9375rem; line-height: 1.45; }
+.ad-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+@media (min-width: 760px) { .ad-tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ad-t { padding: 14px 14px 12px; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); min-width: 0; }
+.ad-t-l { font-size: 0.8125rem; font-weight: 700; line-height: 1.3; color: var(--muted); }
+.ad-t-v { margin-top: 4px; font-size: 1.875rem; font-weight: 650; line-height: 1.1; letter-spacing: -0.01em; }
+.ad-t-n { margin-top: 4px; font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
+.ad-sec { margin-top: 30px; }
+.ad-sec > h2 { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; }
+.ad-sec h3 { margin-top: 18px; font-size: 1rem; font-weight: 700; }
+.ad-fig { margin: 12px 0 0; padding: 14px 14px 10px; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); }
+.ad-fig-t { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; margin-bottom: 12px; font-size: 0.9375rem; font-weight: 700; }
+.ad-fig-s { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.ad-cols { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; border-radius: 8px; }
+.ad-cols:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 6px; }
+.ad-y { display: flex; flex-direction: column; justify-content: space-between; height: 140px; margin: -0.45em 0; font-size: 0.75rem; line-height: 1; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.ad-plot { position: relative; display: flex; align-items: flex-end; justify-content: space-between; gap: 2px; height: 140px; touch-action: pan-y; }
+.ad-cols.fitto .ad-plot { gap: 1px; }
+.ad-g { position: absolute; left: 0; right: 0; height: 1px; margin-bottom: -1px; background: var(--rule); }
+.ad-col { position: relative; z-index: 1; flex: 1 1 0; min-width: 1px; max-width: 24px; background: var(--ad-bar); border-radius: 4px 4px 0 0; }
+.ad-cols.fitto .ad-col { border-radius: 2px 2px 0 0; }
+.ad-col.on { opacity: 0.72; }
+.ad-x { grid-column: 2; display: flex; justify-content: space-between; margin-top: 6px; font-size: 0.75rem; color: var(--muted); }
+.ad-tip {
+  position: absolute; top: -8px; z-index: 5; padding: 6px 10px; border-radius: 8px; transform: translateY(-100%);
+  background: var(--ink); color: var(--ground); font-size: 0.8125rem; line-height: 1.35; white-space: nowrap; pointer-events: none;
+}
+.ad-tip b { font-size: 0.9375rem; font-variant-numeric: tabular-nums; }
+.ad-tip span { opacity: 0.8; }
+.ad-tip[hidden] { display: none; }
+.ad-tab { margin-top: 10px; font-size: 0.875rem; }
+.ad-tab summary { min-height: 36px; display: flex; align-items: center; color: var(--link); font-weight: 700; cursor: pointer; }
+.ad-tab table { width: 100%; margin-top: 4px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.ad-tab th, .ad-tab td { padding: 6px 4px; border-top: 1px solid var(--rule); text-align: left; }
+.ad-tab th:last-child, .ad-tab td:last-child { text-align: right; }
+.ad-tab th { font-size: 0.8125rem; color: var(--muted); }
+.ad-ranks { display: grid; gap: 10px; margin-top: 10px; }
+@media (min-width: 760px) { .ad-ranks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ad-rank { padding: 14px; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); min-width: 0; }
+.ad-rank h3 { margin: 0 0 8px; font-size: 0.9375rem; }
+.ad-rl { margin: 0; padding: 0; list-style: none; }
+.ad-rl li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4px 10px; padding: 7px 0; }
+.ad-rl li + li { border-top: 1px solid var(--rule); }
+.ad-rk { display: inline-flex; align-items: center; gap: 8px; min-width: 0; font-size: 0.9375rem; font-weight: 600; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.ad-rk .flag { width: 21px; height: 14px; }
+.ad-rv { font-size: 0.9375rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ad-rv small { font-size: 0.75rem; font-weight: 600; color: var(--muted); }
+.ad-rb { grid-column: 1 / -1; display: block; height: 8px; }
+.ad-rb i { display: block; height: 100%; min-width: 2px; border-radius: 0 4px 4px 0; background: var(--ad-bar); }
+.ad-cerca { margin-top: 12px; }
+.ad-users { margin: 12px 0 0; padding: 0; list-style: none; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); overflow: hidden; }
+.ad-users li { padding: 12px 16px; }
+.ad-users li + li { border-top: 1px solid var(--rule); }
+.ad-users li[hidden] { display: none; }
+.ad-u-n { font-size: 1rem; font-weight: 700; overflow-wrap: anywhere; }
+.ad-u-e { font-size: 0.875rem; color: var(--ink-2); overflow-wrap: anywhere; }
+.ad-u-m { margin-top: 3px; font-size: 0.8125rem; line-height: 1.45; color: var(--muted); }
+.ad-u-m .flag { display: inline-block; width: 18px; height: 12px; vertical-align: -1px; }
+.ad-badge { display: inline-block; margin-left: 4px; padding: 1px 8px; border-radius: 999px; background: var(--fill); font-size: 0.75rem; font-weight: 700; vertical-align: 2px; }
+.ad-errs { margin: 8px 0 0; padding: 0; list-style: none; border-radius: var(--card-r, 16px); background: var(--group); box-shadow: var(--card-shadow, none); overflow: hidden; }
+.ad-errs li { padding: 11px 16px; }
+.ad-errs li + li { border-top: 1px solid var(--rule); }
+.ad-e-m { font-size: 0.875rem; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; }
+.ad-e-w { margin-top: 3px; font-size: 0.8125rem; line-height: 1.4; color: var(--muted); }
+
+/* ---------- i tuoi interessi (10 novembre): le domande dopo l'iscrizione e dal menu ---------- */
+.int-q { margin-top: 18px; }
+.int-q:first-of-type { margin-top: 6px; }
+.int-q .opt-l { margin-bottom: 2px; font-size: 0.9375rem; color: var(--ink); }
+.int-tags { margin-top: 10px; }
+.int-tags .tag { display: inline-flex; align-items: center; gap: 7px; background: var(--fill); }
+.int-tags .tag .hot-dot { margin-right: 0; }
+.int-tags .tag[aria-pressed="true"] { background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); }
+.int-tags .tag .flag { width: 21px; height: 14px; }
+.int-tags .int-solo { flex-basis: 100%; justify-content: center; }
+.int-passo { margin: 2px 4px 6px; font-size: 0.8125rem; font-weight: 700; color: var(--muted); }
+.int-t { margin: 0 4px 4px; font-size: 1.25rem; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; }
+.int-t:focus { outline: none; }
+.int-az { margin-top: 20px; }
+.int-az > .conto-b { flex: 1 1 0; }
+.interessi-menu .menu-links button { min-height: 54px; padding-top: 8px; padding-bottom: 8px; }
+.interessi-menu .int-r { min-width: 0; font-size: 0.9375rem; font-weight: 600; line-height: 1.4; }

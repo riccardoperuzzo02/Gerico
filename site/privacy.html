@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy · GERICO</title>
-<meta name="description" content="Quali dati usa GERICO: nessun account, nessun cookie nostro, preferenze solo nel tuo browser.">
+<meta name="description" content="Quali dati usa GERICO: l'account facoltativo con la passkey, le visite contate senza cookie e senza indirizzi IP, le preferenze nel tuo browser.">
 <meta name="theme-color" content="#F2F2F2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1428" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261110-5">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261110-6">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -45,17 +45,34 @@
 <main id="main" class="wrap" tabindex="-1">
 <div class="prose" data-only="it">
 <h1>Privacy</h1>
-<p>GERICO è un sito da leggere: non ha account, non usa cookie suoi e non raccoglie statistiche sulle visite.</p>
+<p>GERICO è un sito da leggere: per leggere non serve dare niente. Puoi creare un account, se vuoi, per avere le tue scelte su ogni dispositivo. Le visite si contano senza cookie e senza salvare indirizzi IP. Niente pubblicità, niente strumenti di altri per statistiche o profilazione.</p>
 
 <h2>Chi è responsabile</h2>
 <p>Titolare del trattamento: <span class="ph">[nome e cognome o ragione sociale]</span>, <span class="ph">[indirizzo di contatto]</span>.</p>
 
 <h2>Cosa resta nel tuo browser</h2>
-<p>Alcune scelte restano salvate solo sul tuo dispositivo, nella memoria locale del browser: lingua, tema chiaro o scuro, dimensione del testo, temi che segui e l'ora della tua ultima visita ai Seguiti (per segnare le storie nuove), il paese scelto in alto, vista della mappa del Terminal e Borsa scelta sulla mappa, gruppo scelto nei grafici del Terminal, la scelta di mostrare i prezzi in diretta e l'accenno che mostra lo scorrimento di lato tra le sezioni. Non arrivano a noi e puoi cancellarle quando vuoi dalle impostazioni del browser.</p>
+<p>Alcune scelte restano salvate solo sul tuo dispositivo, nella memoria locale del browser: lingua, tema chiaro o scuro, dimensione del testo, temi che segui e l'ora della tua ultima visita ai Seguiti (per segnare le storie nuove), il paese scelto in alto, vista della mappa del Terminal e Borsa scelta sulla mappa, gruppo scelto nei grafici del Terminal, la scelta di mostrare i prezzi in diretta, l'accenno che mostra lo scorrimento di lato tra le sezioni e quante volte hai risposto «Non ora» alla proposta dell'account. Se hai fatto l'accesso, anche il tuo nome, per disegnare il menu senza aspettare la rete. Senza account non arrivano a noi; con l'account temi, paese e interessi si salvano anche sul server (vedi sotto). Puoi cancellarle quando vuoi dalle impostazioni del browser.</p>
 <p>Nella memoria di sessione del browser restano tre cose: il titolo della storia che hai toccato, per il passaggio tra le due pagine; il fatto che l'entrata con il nome GERICO sia già stata mostrata, così la vedi a ogni nuova apertura del sito ma non a ogni pagina; il punto a cui sei arrivato nel riepilogo a voce, così dopo un ricaricamento riparte da lì. Si cancellano da sole quando chiudi la scheda.</p>
 
+<h2 id="account">L'account, se lo vuoi</h2>
+<p>Per leggere non serve. Se crei un account, i temi che segui, il paese e gli interessi valgono su ogni dispositivo dove entri.</p>
+<p><b>Cosa salviamo.</b> Il nome da mostrare che scegli; l'email, solo se la scrivi; la chiave pubblica della tua passkey, con la data in cui l'hai creata e l'ultima volta che l'hai usata; la data di iscrizione e dell'ultimo accesso; i temi che segui, il paese scelto e gli interessi, se li indichi; per ogni accesso aperto, un codice cifrato e la scadenza. Nessuna password: si entra con la passkey, cioè con Face ID, Touch ID, l'impronta o il codice del telefono. Il volto e l'impronta restano sul tuo dispositivo: GERICO non li vede mai.</p>
+<p><b>Perché.</b> Per farti entrare e per ritrovare le tue scelte su ogni dispositivo. L'email serve solo a Riccardo per sapere chi è iscritto: non mandiamo newsletter né altre email.</p>
+<p><b>Dove.</b> Nel database D1 di Cloudflare, in Europa, collegato al sito. Nessun dato personale lascia Cloudflare.</p>
+<p><b>Chi li vede.</b> Solo Riccardo, dal gestionale di GERICO: nome, email, date di iscrizione e di accesso, temi, paese e interessi. Non li diamo a nessuno.</p>
+<p><b>Per quanto.</b> Finché hai l'account. Un accesso scade dopo 60 giorni in cui non apri GERICO; se torni prima si rinnova.</p>
+<p><b>Come vederli e cancellarli.</b> Dal menu, in «Il tuo account»: «I tuoi dati» li mostra tutti, «Scarica i tuoi dati» li dà in un file, «Cancella l'account» cancella subito tutto quello che è sul server. La passkey resta nel portachiavi del tuo dispositivo finché non la togli (alcuni browser la tolgono da soli dopo la cancellazione); i temi e il paese restano nel tuo browser, come prima dell'account.</p>
+
+<h2>Il cookie tecnico</h2>
+<p>Solo se hai fatto l'accesso il sito salva un cookie, <code>__Host-gerico_s</code>. Serve a dire al server chi sei, e basta: è un codice casuale, e sul server ne teniamo solo un'impronta cifrata. È tecnico (HttpOnly: gli script delle pagine non lo leggono; Secure; SameSite=Lax), dura 60 giorni e sparisce quando esci. Chi non ha l'account non riceve nessun cookie da GERICO.</p>
+
+<h2>Visite ed errori delle pagine</h2>
+<p>Per sapere quante persone leggono GERICO e se qualcosa non funziona, ogni pagina manda al server di GERICO un messaggio piccolo, senza cookie: quale pagina è (prima pagina, storia, Terminal…), il paese scelto nel sito (non quello da cui ti colleghi), la lingua e se usi un telefono, un tablet o un computer. Si tengono solo i totali di ogni giorno, per 13 mesi.</p>
+<p>Per contare le persone diverse di un giorno il server calcola un'impronta cifrata dell'indirizzo IP e del browser con una chiave che cambia ogni giorno. L'indirizzo IP non si salva; a fine giornata le impronte si cancellano e resta solo il numero. I tentativi di accesso e di iscrizione hanno un limite per minuto, contato allo stesso modo; quelle impronte si cancellano entro un giorno.</p>
+<p>Se una pagina va in errore, il browser manda il messaggio dell'errore, il file, la riga e la pagina (al massimo dieci volte per visita), senza niente che dica chi sei. Gli errori si cancellano dopo 30 giorni. Visite ed errori li vede solo Riccardo, nel gestionale.</p>
+
 <h2>Hosting</h2>
-<p>Il sito è ospitato da Cloudflare (Workers, solo file statici). Per consegnare le pagine e proteggerle dagli abusi, Cloudflare tratta dati tecnici come l'indirizzo IP, secondo la sua <a href="https://www.cloudflare.com/it-it/privacypolicy/" rel="noopener" target="_blank">informativa</a>.</p>
+<p>Il sito è ospitato da Cloudflare (Workers): le pagine sono file statici; un piccolo programma su Cloudflare, il Worker di GERICO, gestisce solo gli account, i conteggi delle visite e gli errori. Per consegnare le pagine e proteggerle dagli abusi, Cloudflare tratta dati tecnici come l'indirizzo IP, secondo la sua <a href="https://www.cloudflare.com/it-it/privacypolicy/" rel="noopener" target="_blank">informativa</a>.</p>
 
 <h2>Caratteri</h2>
 <p>I caratteri tipografici (Atkinson Hyperlegible e Newsreader) sono ospitati sul sito: aprendo GERICO non fai richieste a Google o ad altri servizi di font.</p>
@@ -72,21 +89,38 @@
 <h2>I tuoi diritti</h2>
 <p>Per qualsiasi richiesta sui dati personali scrivi a <span class="ph">[indirizzo di contatto]</span>. Puoi anche rivolgerti al Garante per la protezione dei dati personali.</p>
 
-<p><small>Ultimo aggiornamento: 9 novembre 2026.</small></p>
+<p><small>Ultimo aggiornamento: 10 novembre 2026.</small></p>
 </div>
 <div class="prose" data-only="en">
 <h1>Privacy</h1>
-<p>GERICO is a site for reading: it has no accounts, uses no cookies of its own and collects no visitor statistics.</p>
+<p>GERICO is a site for reading: you don't have to give anything to read it. You can create an account, if you like, to have your choices on every device. Visits are counted without cookies and without storing IP addresses. No advertising, no third-party tools for statistics or profiling.</p>
 
 <h2>Who is responsible</h2>
 <p>Data controller: <span class="ph">[name or company name]</span>, <span class="ph">[contact address]</span>.</p>
 
 <h2>What stays in your browser</h2>
-<p>Some choices are saved only on your device, in the browser's local storage: language, light or dark theme, text size, the topics you follow and the time of your last visit to Following (to mark new stories), the country chosen at the top, the Terminal map view and the market chosen on the map, the group chosen in the Terminal charts, the choice to show live prices and the hint that shows sideways scrolling between sections. They never reach us and you can delete them at any time from your browser settings.</p>
+<p>Some choices are saved only on your device, in the browser's local storage: language, light or dark theme, text size, the topics you follow and the time of your last visit to Following (to mark new stories), the country chosen at the top, the Terminal map view and the market chosen on the map, the group chosen in the Terminal charts, the choice to show live prices, the hint that shows sideways scrolling between sections and how many times you answered “Not now” to the account offer. If you're signed in, also your name, to draw the menu without waiting for the network. Without an account they never reach us; with an account, topics, country and interests are also saved on the server (see below). You can delete them at any time from your browser settings.</p>
 <p>Three things stay in the browser's session storage: the headline of the story you tapped, for the transition between the two pages; whether the GERICO opening animation has already been shown, so you see it each time you open the site but not on every page; and how far you got in the audio briefing, so after a reload it starts again from there. They are deleted automatically when you close the tab.</p>
 
+<h2 id="account-en">The account, if you want one</h2>
+<p>You don't need one to read. If you create an account, the topics you follow, your country and your interests work on every device where you sign in.</p>
+<p><b>What we store.</b> The display name you choose; your email, only if you type it; your passkey's public key, with the date you created it and the last time you used it; the date you joined and your last visit; the topics you follow, your chosen country and your interests, if you give them; for each open session, an encrypted code and its expiry. No password: you sign in with the passkey, that is with Face ID, Touch ID, your fingerprint or your phone's passcode. Your face and fingerprint stay on your device: GERICO never sees them.</p>
+<p><b>Why.</b> To let you in and to give you your choices on every device. The email is only for Riccardo, to know who has signed up: we send no newsletters or other emails.</p>
+<p><b>Where.</b> In Cloudflare's D1 database, in Europe, connected to the site. No personal data leaves Cloudflare.</p>
+<p><b>Who sees it.</b> Only Riccardo, in GERICO's dashboard: name, email, dates you joined and last visited, topics, country and interests. We give it to no one.</p>
+<p><b>For how long.</b> As long as you have the account. A session expires after 60 days without opening GERICO; if you come back sooner it renews.</p>
+<p><b>How to see and delete it.</b> From the menu, under “Your account”: “Your data” shows all of it, “Download your data” gives it to you in a file, “Delete the account” immediately deletes everything on the server. The passkey stays in your device's keychain until you remove it (some browsers remove it by themselves after the deletion); your topics and country stay in your browser, as before the account.</p>
+
+<h2>The technical cookie</h2>
+<p>Only if you're signed in does the site save a cookie, <code>__Host-gerico_s</code>. It tells the server who you are, nothing else: it's a random code, and on the server we keep only an encrypted fingerprint of it. It's technical (HttpOnly: the pages' scripts can't read it; Secure; SameSite=Lax), lasts 60 days and goes away when you sign out. Without an account you get no cookie from GERICO.</p>
+
+<h2>Page visits and errors</h2>
+<p>To know how many people read GERICO and whether something is broken, each page sends GERICO's server a small message, without cookies: which page it is (front page, story, Terminal…), the country chosen on the site (not the one you're connecting from), the language, and whether you use a phone, a tablet or a computer. Only each day's totals are kept, for 13 months.</p>
+<p>To count the different people on a given day the server computes an encrypted fingerprint of the IP address and the browser with a key that changes every day. The IP address is not stored; at the end of the day the fingerprints are deleted and only the number remains. Sign-in and sign-up attempts have a per-minute limit, counted the same way; those fingerprints are deleted within a day.</p>
+<p>If a page hits an error, the browser sends the error message, the file, the line and the page (at most ten times per visit), with nothing that says who you are. Errors are deleted after 30 days. Only Riccardo sees visits and errors, in the dashboard.</p>
+
 <h2>Hosting</h2>
-<p>The site is hosted by Cloudflare (Workers, static files only). To deliver the pages and protect them from abuse, Cloudflare processes technical data such as the IP address, according to its <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank">privacy policy</a>.</p>
+<p>The site is hosted by Cloudflare (Workers): the pages are static files; a small program on Cloudflare, GERICO's Worker, handles only accounts, visit counts and errors. To deliver the pages and protect them from abuse, Cloudflare processes technical data such as the IP address, according to its <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank">privacy policy</a>.</p>
 
 <h2>Fonts</h2>
 <p>The typefaces (Atkinson Hyperlegible and Newsreader) are hosted on the site: opening GERICO makes no requests to Google or other font services.</p>
@@ -103,7 +137,7 @@
 <h2>Your rights</h2>
 <p>For any request about personal data write to <span class="ph">[contact address]</span>. You can also contact the Italian data protection authority (Garante per la protezione dei dati personali).</p>
 
-<p><small>Last updated: 9 November 2026.</small></p>
+<p><small>Last updated: 10 November 2026.</small></p>
 </div>
 
 </main>
@@ -113,7 +147,7 @@
 <p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
 </div>
 </footer>
-<script src="assets/js/common.js?v=20261110-5"></script>
-<script src="assets/js/info.js?v=20261110-5"></script>
+<script src="assets/js/common.js?v=20261110-6"></script>
+<script src="assets/js/info.js?v=20261110-6"></script>
 </body>
 </html>

@@ -185,9 +185,13 @@ REF = re.compile(r'\b(?:src|href)="([^"]+)"')
 def check_pages(site):
     versions = {}
     pages = sorted(glob.glob(os.path.join(site, "*.html")) + glob.glob(os.path.join(site, "s", "*.html")))
+    # il gestionale non sta in site/: lo manda il Worker (worker/admin.html), ma usa gli stessi file e la stessa versione
+    admin = os.path.join(os.path.dirname(os.path.abspath(site)), "worker", "admin.html")
+    if os.path.exists(admin):
+        pages.append(admin)
     for page in pages:
         html = open(page, encoding="utf-8").read()
-        base = os.path.dirname(page)
+        base = site if page == admin else os.path.dirname(page)
         for ref in REF.findall(html):
             if re.match(r"^(?:[a-z]+:|//|#)", ref, re.I):
                 continue

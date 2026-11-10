@@ -112,10 +112,20 @@ G.page("home", async function (P) {
   const seenPrev = G.ls.get("gerico.seguitiVisto", null);
   let seenMarked = false;
   const isNew = (s) => !!seenPrev && when(s) > (Date.parse(seenPrev) || Infinity);
+  // in Tutte, a parità di importanza, prima le storie delle sezioni e dei temi che ti interessano (i tuoi interessi e i
+  // temi seguiti). La prima notizia del giorno resta in cima per tutti; l'importanza è quella della redazione: le prime
+  // cinque per rank (gli articoli lunghi) restano sopra le altre, e dentro ognuno dei due gruppi vale l'ordine del rank
+  const perTe = (list) => {
+    const sez = G.interessi ? G.interessi.sezioni() : [];
+    if ((!sez.length && !state.follows.length) || list.length < 3) return list;
+    const piace = (s) => (sez.some((k) => (k === "paese" ? delPaese(s, paeseOra()) : tabDi(s.section) === k)) || follows(s) ? 1 : 0);
+    const fascia = (s) => ((s.rank || 99) <= 5 ? 0 : 1);
+    return [list[0]].concat(list.slice(1).map((s, i) => [s, i]).sort((a, b) => fascia(a[0]) - fascia(b[0]) || piace(b[0]) - piace(a[0]) || a[1] - b[1]).map((x) => x[0]));
+  };
   const visible = () => {
     const th = themeOf(state.section);
     if (th) return mie().filter((s) => inTheme(s, th));
-    if (state.section === "tutte") return mie();
+    if (state.section === "tutte") return perTe(mie());
     if (state.section === "seguiti") return followed();
     if (inPaese()) return stories.filter((s) => delPaese(s, paeseOra()));
     if (state.section === "mondo") return mie().filter(inMondo);
@@ -142,11 +152,15 @@ G.page("home", async function (P) {
   };
   function buildNav() {
     const items = [["tutte", G.L("Tutte", "All")], ["seguiti", G.L("Seguiti", "Following")]];
-    // dopo Tutte i temi caldi (con un pallino), poi le sezioni
-    themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
     const has = (k) => mie().some((s) => tabDi(s.section) === k) || brevi.some((b) => tabDi(b.section) === k);
     // la scheda del paese c'è sempre, al posto di Italia, con il nome del paese
-    TABS.forEach(([k]) => { if (k === "italia") items.push([slugOra(), G.paeseNome(paeseOra())]); else if (has(k)) items.push([k, G.SECTIONS[k]]); });
+    const tabs = [];
+    TABS.forEach(([k]) => { if (k === "italia") tabs.push([slugOra(), G.paeseNome(paeseOra()), false, "paese"]); else if (has(k)) tabs.push([k, G.SECTIONS[k], false, k]); });
+    // dopo Tutte e Seguiti le sezioni che ti interessano, poi i temi caldi (con un pallino), poi le altre sezioni
+    const scelte = G.interessi ? G.interessi.sezioni() : [];
+    tabs.filter((t) => scelte.includes(t[3])).forEach((t) => items.push(t));
+    themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
+    tabs.filter((t) => !scelte.includes(t[3])).forEach((t) => items.push(t));
     $("sections").innerHTML = items.map(([k, label, hot]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
       (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
   }
@@ -400,15 +414,16 @@ G.page("home", async function (P) {
     const all = state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section);
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
     const end = '<p class="end"><strong>' + (state.section === "tutte" ? G.L("Fine dell'edizione.", "End of the edition.") : G.L("Fine della sezione.", "End of the section.")) + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
+    const breviPrima = state.section === "tutte" && !brInSide() && bl.length && G.interessi && G.interessi.lettura().includes("brevi");
     const top = list.length
-      ? leadHTML(list[0], all) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
+      ? leadHTML(list[0], all) + (breviPrima ? breviHTML(bl, all) : "") + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       // brevi di oggi, o solo di ieri e di prima: la riga lo dice com'è, con il giorno delle ultime
       : estero ? '<p class="none">' + esc(G.cap(G.paeseDa(paeseOra())) + G.L(", oggi, le brevi delle sue testate. ", ", today: briefs from its outlets. ") + (G.paeseInfo(paeseOra()).level === 1
         ? G.L("Gli articoli di GERICO sul paese compaiono qui quando escono.", "GERICO's articles on the country appear here when they come out.")
         : G.L("GERICO scrive un articolo quando nel paese succede un fatto di rilievo.", "GERICO writes an article when something major happens in the country."))) + "</p>"
       : '<p class="none">' + (bl.some((b) => b && G.isToday(b.at)) ? G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.")
         : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>";
-    return top + (brInSide() ? "" : breviHTML(bl, all)) + titoliHTML() + pastHTML(past, all) + end;
+    return top + (brInSide() || (breviPrima && list.length) ? "" : breviHTML(bl, all)) + titoliHTML() + pastHTML(past, all) + end;
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
@@ -481,11 +496,26 @@ G.page("home", async function (P) {
 
   // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
   const QPICK = [["indici", "FTSEMIB.MI"], ["indici", "^GSPC"], ["valute", "EURUSD=X"], ["materie", "BZ=F"], ["materie", "GC=F"], ["cripto", "BTC-USD"]];
+  // i mercati che segui (i tuoi interessi): prima il primo di ognuno, poi il secondo, poi quelli di sempre, fino a sei
+  const QMERC = {
+    italia: [["indici", "FTSEMIB.MI"]], europa: [["indici", "^STOXX50E"], ["indici", "^GDAXI"]], usa: [["indici", "^GSPC"], ["indici", "^NDX"]],
+    asia: [["indici", "^N225"], ["indici", "^HSI"]], valute: [["valute", "EURUSD=X"], ["valute", "USDJPY=X"]],
+    "materie-prime": [["materie", "BZ=F"], ["materie", "GC=F"]], cripto: [["cripto", "BTC-USD"], ["cripto", "ETH-USD"]]
+  };
+  const qpick = () => {
+    const m = (G.interessi ? G.interessi.mercati() : []).filter((x) => QMERC[x]);
+    if (!m.length) return QPICK;
+    const out = [], add = (q) => { if (!out.some((x) => x[1] === q[1])) out.push(q); };
+    m.forEach((x) => add(QMERC[x][0]));
+    m.forEach((x) => QMERC[x].slice(1).forEach(add));
+    QPICK.forEach(add);
+    return out.slice(0, 6);
+  };
   function renderTicker() {
     const cells = [];
     let when = "";
     if (qt && Array.isArray(qt.groups) && G.hoursAgo(qt.asOf) < 30) {
-      QPICK.forEach(([g, sym]) => {
+      qpick().forEach(([g, sym]) => {
         const grp = qt.groups.find((x) => x.key === g), it = grp && (grp.items || []).find((x) => x.sym === sym);
         if (!it || typeof it.last !== "number") return;
         cells.push({ name: it.name, value: G.price(it.sym, it.last, true), mv: typeof it.chg === "number" ? G.pct(it.chg) : "", tone: G.tone(it) });
@@ -534,13 +564,23 @@ G.page("home", async function (P) {
     ["materie", /brent/i], ["indici", /s&p\s*500/i]
   ];
   const BACKUP = [["indici", /\bdax\b/i], ["obbligazioni", /btp/i], ["materie", /\boro\b|gold/i], ["indici", /dow/i], ["materie", /wti/i]];
+  const WMERC = {
+    italia: [["indici", /ftse\s*mib/i], ["obbligazioni", /spread/i]], europa: [["indici", /stoxx/i], ["indici", /\bdax\b/i]],
+    usa: [["indici", /s&p\s*500/i], ["indici", /nasdaq/i]], asia: [["indici", /nikkei/i], ["indici", /hang\s*seng/i]],
+    valute: [["valute", /eur.?\/?.?usd|euro.?dollaro/i], ["valute", /usd.?\/?.?jpy/i]], "materie-prime": [["materie", /brent/i], ["materie", /\boro\b|gold/i]],
+    cripto: [["cripto", /bitcoin|btc/i], ["cripto", /ether/i]]
+  };
   function pick() {
     const out = [], used = new Set();
     const find = ([key, re]) => {
+      if (out.length >= 5) return;
       const c = ((mk && mk.classes) || []).find((x) => x.key === key);
       const it = c && (c.items || []).find((x) => re.test(x.name) && (G.cleanValue(x.value) || G.move(x)));
       if (it && !used.has(it.name)) { used.add(it.name); out.push({ it, key }); }
     };
+    const m = (G.interessi ? G.interessi.mercati() : []).filter((x) => WMERC[x]);
+    m.forEach((x) => find(WMERC[x][0]));
+    m.forEach((x) => WMERC[x].slice(1).forEach(find));
     WANT.forEach(find);
     for (const b of BACKUP) { if (out.length >= 5) break; find(b); }
     return out.slice(0, 5);
@@ -649,6 +689,14 @@ G.page("home", async function (P) {
     const box = b.closest(".fol");
     refocus = box ? { blk: box.id, i: Array.from(box.querySelectorAll("[data-follow]")).indexOf(b) } : null;
     G.toggleFollow(b.dataset.follow);
+  });
+  P.on(document, "gerico:interessi", () => {
+    buildNav();
+    if (!Array.from($("sections").querySelectorAll("a")).some((a) => a.dataset.sec === state.section)) state.section = "tutte";
+    markNav();
+    renderFeed();
+    renderTicker();
+    renderSide(true);
   });
   P.on(document, "gerico:follows", () => {
     state.follows = G.follows();

@@ -1,0 +1,9 @@
+La musica del riepilogo da ascoltare, già pronta: la scrive e la rifà scripts/sigla.py (vedi lì come).
+
+apertura.flac  la sigla: levare con ticchettio e segnali orari, colpo d'orchestra, frase degli ottoni (8 s)
+tappeto.flac   il giro di otto battute che si ripete sotto la voce, senza cuciture (16 s)
+chiusura.flac  la battuta del conto alla rovescia e il colpo finale (6,5 s)
+
+Mono, 48 kHz, FLAC a 16 bit. Composizione di GERICO. Archi, ottoni e percussioni: campioni dell'orchestra
+VSCO 2 Community Edition di Versilian Studios (Sam Gossner, Simon Dalzell), pubblico dominio (CC0 1.0),
+https://github.com/sgossner/VSCO-2-CE. Suoni elettronici calcolati da sigla.py.

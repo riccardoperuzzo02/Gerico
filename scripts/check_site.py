@@ -147,6 +147,20 @@ def check_data(site):
                   and all(isinstance(x[k], (int, float)) and not isinstance(x[k], bool) for k in ("eps", "lo", "hi", "rev", "actual", "surprise") if k in x)
                   and all(isinstance(x[k], str) for k in ("when", "period", "cur", "index", "pay") if k in x))
             need(ok, f"societari.json: la voce {i} non ha la forma giusta ({str(x)[:80]})")
+    # le brevi dei paesi della scelta in alto (scripts/paesi.py): un file per paese e l'indice
+    for path in sorted(glob.glob(os.path.join(data, "paesi", "*.json"))):
+        name, d = "paesi/" + os.path.basename(path), load(path)
+        if d is None:
+            continue
+        if name == "paesi/indice.json":
+            need(isinstance(d, dict) and isinstance(d.get("countries"), dict), f"{name}: manca countries")
+            continue
+        items = d.get("items") if isinstance(d, dict) else None
+        need(isinstance(items, list) and isinstance(d.get("code"), str) and len(d["code"]) == 2, f"{name}: manca la sigla o la lista items")
+        for i, x in enumerate(items if isinstance(items, list) else []):
+            need(isinstance(x, dict) and all(isinstance(x.get(k), str) and x[k] for k in ("title", "url", "at", "source"))
+                 and re.match(r"^https?://", x["url"]) and all(isinstance(x[k], str) for k in ("it", "en") if k in x),
+                 f"{name}: la voce {i} non ha la forma giusta ({str(x)[:80]})")
     known = {"edition.json", "markets.json", "agenda.json", "terminal.json", "weights.json", "audio.json", "societari.json"} | {n for n, _ in optional}
     for path in glob.glob(os.path.join(data, "*.json")):
         if os.path.basename(path) not in known:

@@ -1,0 +1,52 @@
+name: Paesi
+
+# Le brevi dei paesi della scelta in alto: i titoli delle ultime 24 ore delle testate di ogni paese (scripts/fonti_paesi.json),
+# tradotti in italiano e in inglese con Gemini (la stessa chiave della traduzione). Scrive site/data/paesi/. Ogni due ore
+# dalle 6 alle 22 (ora italiana d'inverno; d'estate un'ora dopo). Non usa crediti Claude. Le testate le legge solo questo
+# job: il browser di chi legge non le chiama mai.
+on:
+  schedule:
+    - cron: "17 5-21/2 * * *"
+  push:
+    branches: [main]
+    paths: [scripts/paesi.py, scripts/fonti_paesi.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paesi
+  cancel-in-progress: false
+
+jobs:
+  paesi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Leggi le testate e traduci i titoli nuovi
+        timeout-minutes: 10
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GERICO_GEMINI_TESTO: ${{ vars.GERICO_GEMINI_TESTO }}
+          GERICO_TRADUZIONE_SECONDI: "300"
+        run: python3 scripts/paesi.py site/data
+      - name: Pubblica
+        run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          git add site/data/paesi
+          if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
+          git commit -q -m "Paesi del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
+          for i in 1 2 3 4; do
+            if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 15))
+          done
+          echo "::error::push non riuscito dopo 4 tentativi"
+          exit 1

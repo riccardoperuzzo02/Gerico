@@ -1,0 +1,181 @@
+{
+  "_nota": "Le testate di ogni paese per le brevi della scheda del paese (scripts/paesi.py). Per ogni paese due o tre testate nazionali o il servizio pubblico, mai siti di parte o anonimi. livello 1: articoli della redazione e brevi; livello 2: solo brevi (e articoli quando succede un fatto di rilievo). lingua: quella dei titoli del feed (it ed en non si traducono verso sé stesse). Per Russia e Bielorussia una testata vicina allo Stato e una indipendente, così si vedono le due versioni.",
+  "paesi": {
+    "IT": {"it": "Italia", "en": "Italy", "livello": 1, "feed": [
+      {"nome": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml", "lingua": "it"},
+      {"nome": "Rai News", "url": "https://www.rainews.it/rss/tutti", "lingua": "it"},
+      {"nome": "Il Post", "url": "https://www.ilpost.it/feed/", "lingua": "it"}]},
+    "US": {"it": "Stati Uniti", "en": "United States", "livello": 1, "feed": [
+      {"nome": "NPR", "url": "https://feeds.npr.org/1001/rss.xml", "lingua": "en"},
+      {"nome": "New York Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml", "lingua": "en"},
+      {"nome": "CBS News", "url": "https://www.cbsnews.com/latest/rss/us", "lingua": "en"}]},
+    "GB": {"it": "Regno Unito", "en": "United Kingdom", "livello": 1, "feed": [
+      {"nome": "BBC", "url": "https://feeds.bbci.co.uk/news/uk/rss.xml", "lingua": "en"},
+      {"nome": "The Guardian", "url": "https://www.theguardian.com/uk-news/rss", "lingua": "en"},
+      {"nome": "Sky News", "url": "https://feeds.skynews.com/feeds/rss/uk.xml", "lingua": "en"}]},
+    "FR": {"it": "Francia", "en": "France", "livello": 1, "feed": [
+      {"nome": "Le Monde", "url": "https://www.lemonde.fr/rss/une.xml", "lingua": "fr"},
+      {"nome": "franceinfo", "url": "https://www.francetvinfo.fr/titres.rss", "lingua": "fr"},
+      {"nome": "France 24", "url": "https://www.france24.com/fr/france/rss", "lingua": "fr"}]},
+    "DE": {"it": "Germania", "en": "Germany", "livello": 1, "feed": [
+      {"nome": "Tagesschau", "url": "https://www.tagesschau.de/inland/index~rss2.xml", "lingua": "de"},
+      {"nome": "Der Spiegel", "url": "https://www.spiegel.de/politik/deutschland/index.rss", "lingua": "de"},
+      {"nome": "Die Zeit", "url": "https://newsfeed.zeit.de/politik/index", "lingua": "de"}]},
+    "ES": {"it": "Spagna", "en": "Spain", "livello": 1, "feed": [
+      {"nome": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada", "lingua": "es"},
+      {"nome": "El Mundo", "url": "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml", "lingua": "es"},
+      {"nome": "RTVE", "url": "https://api2.rtve.es/rss/temas_espana.xml", "lingua": "es"},
+      {"nome": "20minutos", "url": "https://www.20minutos.es/rss/nacional/", "lingua": "es"}]},
+    "AT": {"it": "Austria", "en": "Austria", "livello": 2, "feed": [
+      {"nome": "ORF", "url": "https://rss.orf.at/news.xml", "lingua": "de"},
+      {"nome": "Der Standard", "url": "https://www.derstandard.at/rss/inland", "lingua": "de"}]},
+    "BE": {"it": "Belgio", "en": "Belgium", "livello": 2, "feed": [
+      {"nome": "VRT NWS", "url": "https://www.vrt.be/vrtnws/nl.rss.articles.xml", "lingua": "nl"},
+      {"nome": "RTBF", "url": "https://rss.rtbf.be/article/rss/highlight_rtbfinfo_info-accueil.xml", "lingua": "fr"},
+      {"nome": "The Brussels Times", "url": "https://www.brusselstimes.com/feed", "lingua": "en"}]},
+    "BG": {"it": "Bulgaria", "en": "Bulgaria", "livello": 2, "feed": [
+      {"nome": "BTA", "url": "https://www.bta.bg/en/rss/news", "lingua": "en"},
+      {"nome": "Novinite", "url": "https://www.novinite.com/rss/", "lingua": "en"},
+      {"nome": "Dnevnik", "url": "https://www.dnevnik.bg/rss/", "lingua": "bg"}]},
+    "HR": {"it": "Croazia", "en": "Croatia", "livello": 2, "feed": [
+      {"nome": "Index.hr", "url": "https://www.index.hr/rss/vijesti", "lingua": "hr"},
+      {"nome": "Jutarnji list", "url": "https://www.jutarnji.hr/feed", "lingua": "hr"},
+      {"nome": "HRT", "url": "https://vijesti.hrt.hr/rss", "lingua": "hr"}]},
+    "CY": {"it": "Cipro", "en": "Cyprus", "livello": 2, "feed": [
+      {"nome": "Cyprus Mail", "url": "https://cyprus-mail.com/feed/", "lingua": "en"},
+      {"nome": "in-cyprus", "url": "https://in-cyprus.philenews.com/feed/", "lingua": "en"}]},
+    "CZ": {"it": "Repubblica Ceca", "en": "Czech Republic", "livello": 2, "feed": [
+      {"nome": "ČT24", "url": "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy", "lingua": "cs"},
+      {"nome": "iROZHLAS", "url": "https://www.irozhlas.cz/rss/irozhlas", "lingua": "cs"},
+      {"nome": "Novinky", "url": "https://www.novinky.cz/rss", "lingua": "cs"}]},
+    "DK": {"it": "Danimarca", "en": "Denmark", "livello": 2, "feed": [
+      {"nome": "DR", "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder", "lingua": "da"},
+      {"nome": "TV 2", "url": "https://feeds.tv2.dk/nyhederne_seneste/rss", "lingua": "da"}]},
+    "EE": {"it": "Estonia", "en": "Estonia", "livello": 2, "feed": [
+      {"nome": "ERR News", "url": "https://news.err.ee/rss", "lingua": "en"},
+      {"nome": "Postimees", "url": "https://news.postimees.ee/rss", "lingua": "en"}]},
+    "FI": {"it": "Finlandia", "en": "Finland", "livello": 2, "feed": [
+      {"nome": "Yle", "url": "https://feeds.yle.fi/uutiset/v1/majorHeadlines/YLE_UUTISET.rss", "lingua": "fi"},
+      {"nome": "Yle News", "url": "https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_NEWS", "lingua": "en"},
+      {"nome": "Helsingin Sanomat", "url": "https://www.hs.fi/rss/tuoreimmat.xml", "lingua": "fi"}]},
+    "GR": {"it": "Grecia", "en": "Greece", "livello": 2, "feed": [
+      {"nome": "ERT News", "url": "https://www.ertnews.gr/feed/", "lingua": "el"},
+      {"nome": "Kathimerini", "url": "https://www.ekathimerini.com/feed/", "lingua": "en"}]},
+    "HU": {"it": "Ungheria", "en": "Hungary", "livello": 2, "feed": [
+      {"nome": "Telex", "url": "https://telex.hu/rss", "lingua": "hu"},
+      {"nome": "HVG", "url": "https://hvg.hu/rss", "lingua": "hu"},
+      {"nome": "444", "url": "https://444.hu/feed", "lingua": "hu"}]},
+    "IE": {"it": "Irlanda", "en": "Ireland", "livello": 2, "feed": [
+      {"nome": "RTÉ", "url": "https://www.rte.ie/feeds/rss/?index=/news/", "lingua": "en"},
+      {"nome": "TheJournal.ie", "url": "https://www.thejournal.ie/feed/", "lingua": "en"}]},
+    "LV": {"it": "Lettonia", "en": "Latvia", "livello": 2, "feed": [
+      {"nome": "LSM", "url": "https://eng.lsm.lv/rss/", "lingua": "en"},
+      {"nome": "Delfi", "url": "https://www.delfi.lv/rss/index.xml", "lingua": "lv"}]},
+    "LT": {"it": "Lituania", "en": "Lithuania", "livello": 2, "feed": [
+      {"nome": "LRT", "url": "https://www.lrt.lt/en/news-in-english?rss", "lingua": "en"},
+      {"nome": "15min", "url": "https://www.15min.lt/rss", "lingua": "lt"}]},
+    "LU": {"it": "Lussemburgo", "en": "Luxembourg", "livello": 2, "feed": [
+      {"nome": "RTL Today", "url": "https://today.rtl.lu/rss/headlines", "lingua": "en"},
+      {"nome": "Luxembourg Times", "url": "https://www.luxtimes.lu/rss", "lingua": "en"},
+      {"nome": "L'essentiel", "url": "https://www.lessentiel.lu/rss/fr/luxembourg", "lingua": "fr"}]},
+    "MT": {"it": "Malta", "en": "Malta", "livello": 2, "feed": [
+      {"nome": "Times of Malta", "url": "https://timesofmalta.com/rss/latest", "lingua": "en"},
+      {"nome": "MaltaToday", "url": "https://www.maltatoday.com.mt/rss/news", "lingua": "en"},
+      {"nome": "Newsbook", "url": "https://newsbook.com.mt/en/feed/", "lingua": "en"}]},
+    "NL": {"it": "Paesi Bassi", "en": "Netherlands", "livello": 2, "feed": [
+      {"nome": "NOS", "url": "https://feeds.nos.nl/nosnieuwsalgemeen", "lingua": "nl"},
+      {"nome": "NU.nl", "url": "https://www.nu.nl/rss/Algemeen", "lingua": "nl"},
+      {"nome": "NL Times", "url": "https://nltimes.nl/rss", "lingua": "en"}]},
+    "PL": {"it": "Polonia", "en": "Poland", "livello": 2, "feed": [
+      {"nome": "TVN24", "url": "https://tvn24.pl/najnowsze.xml", "lingua": "pl"},
+      {"nome": "Polsat News", "url": "https://www.polsatnews.pl/rss/wszystkie.xml", "lingua": "pl"},
+      {"nome": "Notes from Poland", "url": "https://notesfrompoland.com/feed/", "lingua": "en"}]},
+    "PT": {"it": "Portogallo", "en": "Portugal", "livello": 2, "feed": [
+      {"nome": "RTP", "url": "https://www.rtp.pt/noticias/rss/pais", "lingua": "pt"},
+      {"nome": "Público", "url": "https://feeds.feedburner.com/PublicoRSS", "lingua": "pt"},
+      {"nome": "Observador", "url": "https://observador.pt/feed/", "lingua": "pt"}]},
+    "RO": {"it": "Romania", "en": "Romania", "livello": 2, "feed": [
+      {"nome": "Digi24", "url": "https://www.digi24.ro/rss", "lingua": "ro"},
+      {"nome": "G4Media", "url": "https://www.g4media.ro/feed", "lingua": "ro"},
+      {"nome": "HotNews", "url": "https://hotnews.ro/feed", "lingua": "ro"}]},
+    "SK": {"it": "Slovacchia", "en": "Slovakia", "livello": 2, "feed": [
+      {"nome": "Aktuality", "url": "https://www.aktuality.sk/rss/", "lingua": "sk"},
+      {"nome": "Denník N", "url": "https://dennikn.sk/feed/", "lingua": "sk"}]},
+    "SI": {"it": "Slovenia", "en": "Slovenia", "livello": 2, "feed": [
+      {"nome": "RTV SLO", "url": "https://www.rtvslo.si/feeds/01.xml", "lingua": "sl"},
+      {"nome": "24ur", "url": "https://www.24ur.com/rss", "lingua": "sl"}]},
+    "SE": {"it": "Svezia", "en": "Sweden", "livello": 2, "feed": [
+      {"nome": "SVT", "url": "https://www.svt.se/nyheter/rss.xml", "lingua": "sv"},
+      {"nome": "Dagens Nyheter", "url": "https://www.dn.se/rss/", "lingua": "sv"}]},
+    "CH": {"it": "Svizzera", "en": "Switzerland", "livello": 2, "feed": [
+      {"nome": "SRF", "url": "https://www.srf.ch/news/bnf/rss/1646", "lingua": "de"},
+      {"nome": "RSI", "url": "https://www.rsi.ch/info/svizzera/?f=rss", "lingua": "it"},
+      {"nome": "NZZ", "url": "https://www.nzz.ch/schweiz.rss", "lingua": "de"}]},
+    "NO": {"it": "Norvegia", "en": "Norway", "livello": 2, "feed": [
+      {"nome": "NRK", "url": "https://www.nrk.no/toppsaker.rss", "lingua": "no"},
+      {"nome": "Aftenposten", "url": "https://www.aftenposten.no/rss", "lingua": "no"}]},
+    "IS": {"it": "Islanda", "en": "Iceland", "livello": 2, "feed": [
+      {"nome": "RÚV", "url": "https://www.ruv.is/rss/english", "lingua": "en"},
+      {"nome": "mbl.is", "url": "https://www.mbl.is/feeds/innlent/", "lingua": "is"},
+      {"nome": "Iceland Monitor", "url": "https://icelandmonitor.mbl.is/rss/", "lingua": "en"}]},
+    "AL": {"it": "Albania", "en": "Albania", "livello": 2, "feed": [
+      {"nome": "Top Channel", "url": "https://top-channel.tv/feed/", "lingua": "sq"},
+      {"nome": "BalkanWeb", "url": "https://www.balkanweb.com/feed/", "lingua": "sq"}]},
+    "BA": {"it": "Bosnia ed Erzegovina", "en": "Bosnia and Herzegovina", "livello": 2, "feed": [
+      {"nome": "N1 BiH", "url": "https://n1info.ba/feed/", "lingua": "bs"},
+      {"nome": "Klix", "url": "https://www.klix.ba/rss", "lingua": "bs"}]},
+    "XK": {"it": "Kosovo", "en": "Kosovo", "livello": 2, "feed": [
+      {"nome": "Kallxo", "url": "https://kallxo.com/feed/", "lingua": "sq"},
+      {"nome": "Prishtina Insight", "url": "https://prishtinainsight.com/feed/", "lingua": "en"},
+      {"nome": "Koha", "url": "https://www.koha.net/rss", "lingua": "sq"}]},
+    "ME": {"it": "Montenegro", "en": "Montenegro", "livello": 2, "feed": [
+      {"nome": "CdM", "url": "https://www.cdm.me/feed/", "lingua": "sr"},
+      {"nome": "Vijesti", "url": "https://www.vijesti.me/rss", "lingua": "sr"}]},
+    "MK": {"it": "Macedonia del Nord", "en": "North Macedonia", "livello": 2, "feed": [
+      {"nome": "Meta.mk", "url": "https://meta.mk/feed/", "lingua": "mk"},
+      {"nome": "Sloboden Pečat", "url": "https://www.slobodenpecat.mk/feed/", "lingua": "mk"}]},
+    "RS": {"it": "Serbia", "en": "Serbia", "livello": 2, "feed": [
+      {"nome": "N1 Srbija", "url": "https://n1info.rs/feed/", "lingua": "sr"},
+      {"nome": "Danas", "url": "https://www.danas.rs/feed/", "lingua": "sr"}]},
+    "UA": {"it": "Ucraina", "en": "Ukraine", "livello": 2, "feed": [
+      {"nome": "Ukrinform", "url": "https://www.ukrinform.net/rss/block-lastnews", "lingua": "en"},
+      {"nome": "The Kyiv Independent", "url": "https://kyivindependent.com/feed/", "lingua": "en"},
+      {"nome": "Ukrainska Pravda", "url": "https://www.pravda.com.ua/rss/", "lingua": "uk"}]},
+    "MD": {"it": "Moldavia", "en": "Moldova", "livello": 2, "feed": [
+      {"nome": "NewsMaker", "url": "https://newsmaker.md/feed/", "lingua": "ru"},
+      {"nome": "IPN", "url": "https://www.ipn.md/en/rss", "lingua": "en"}]},
+    "RU": {"it": "Russia", "en": "Russia", "livello": 2, "feed": [
+      {"nome": "Interfax", "url": "https://www.interfax.ru/rss.asp", "lingua": "ru"},
+      {"nome": "Meduza", "url": "https://meduza.io/rss/all", "lingua": "ru"}]},
+    "BY": {"it": "Bielorussia", "en": "Belarus", "livello": 2, "feed": [
+      {"nome": "BelTA", "url": "https://www.belta.by/rss", "lingua": "ru"},
+      {"nome": "Zerkalo", "url": "https://news.zerkalo.io/rss/all.rss", "lingua": "ru"}]},
+    "AD": {"it": "Andorra", "en": "Andorra", "livello": 2, "feed": [
+      {"nome": "Diari d'Andorra", "url": "https://www.diariandorra.ad/rss", "lingua": "ca"},
+      {"nome": "Altaveu", "url": "https://www.altaveu.com/rss", "lingua": "ca"}]},
+    "LI": {"it": "Liechtenstein", "en": "Liechtenstein", "livello": 2, "feed": [
+      {"nome": "Vaterland", "url": "https://www.vaterland.li/rss.xml", "lingua": "de"},
+      {"nome": "Liechtensteiner Volksblatt", "url": "https://www.volksblatt.li/rss", "lingua": "de"}]},
+    "MC": {"it": "Monaco", "en": "Monaco", "livello": 2, "feed": [
+      {"nome": "Monaco Tribune", "url": "https://www.monaco-tribune.com/feed/", "lingua": "fr"},
+      {"nome": "Monaco-Matin", "url": "https://www.monacomatin.mc/rss", "lingua": "fr"}]},
+    "SM": {"it": "San Marino", "en": "San Marino", "livello": 2, "feed": [
+      {"nome": "San Marino RTV", "url": "https://www.sanmarinortv.sm/feed/", "lingua": "it"},
+      {"nome": "Libertas", "url": "https://www.libertas.sm/feed/", "lingua": "it"},
+      {"nome": "GiornaleSM", "url": "https://www.giornalesm.com/feed/", "lingua": "it"}]},
+    "VA": {"it": "Città del Vaticano", "en": "Vatican City", "livello": 2, "feed": [
+      {"nome": "Vatican News", "url": "https://www.vaticannews.va/it.rss.xml", "lingua": "it"},
+      {"nome": "Vatican News (en)", "url": "https://www.vaticannews.va/en.rss.xml", "lingua": "en"}]},
+    "CA": {"it": "Canada", "en": "Canada", "livello": 2, "feed": [
+      {"nome": "CBC", "url": "https://www.cbc.ca/webfeed/rss/rss-canada", "lingua": "en"},
+      {"nome": "Global News", "url": "https://globalnews.ca/canada/feed/", "lingua": "en"},
+      {"nome": "CTV News", "url": "https://www.ctvnews.ca/rss/ctvnews-ca-canada-public-rss-1.822284", "lingua": "en"}]},
+    "AU": {"it": "Australia", "en": "Australia", "livello": 2, "feed": [
+      {"nome": "ABC News", "url": "https://www.abc.net.au/news/feed/51120/rss.xml", "lingua": "en"},
+      {"nome": "SBS News", "url": "https://www.sbs.com.au/news/feed", "lingua": "en"},
+      {"nome": "Guardian Australia", "url": "https://www.theguardian.com/australia-news/rss", "lingua": "en"}]},
+    "NZ": {"it": "Nuova Zelanda", "en": "New Zealand", "livello": 2, "feed": [
+      {"nome": "RNZ", "url": "https://www.rnz.co.nz/rss/national.xml", "lingua": "en"},
+      {"nome": "NZ Herald", "url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml", "lingua": "en"}]}
+  }
+}

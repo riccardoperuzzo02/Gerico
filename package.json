@@ -1,0 +1,8 @@
+{
+  "name": "gerico",
+  "private": true,
+  "description": "GERICO: le pagine sono in site/, il Worker in worker/. Wrangler serve solo alla pubblicazione su Cloudflare (npx wrangler deploy).",
+  "devDependencies": {
+    "wrangler": "4.160.0"
+  }
+}

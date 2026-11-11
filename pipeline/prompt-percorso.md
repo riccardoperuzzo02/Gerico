@@ -14,3 +14,4 @@ Tre lavori chiesti da Riccardo l'11 novembre, da pubblicare uno alla volta.
 Regole di sempre: tutto nello schermo (se no menu a tendina), caratteri ospitati sul sito, nessuna richiesta esterna,
 nessuna libreria, nessun cookie per chi non ha l'account, avviso sull'IA solo nel piè di pagina, italiano e inglese,
 controlli e prove prima di pubblicare, ?v= nuovo quando cambiano i file.
+   Stato: primo passaggio online dall'11 novembre (ombre, occhielli, cifre allineate, risposta al tocco, anello di fuoco).

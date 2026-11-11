@@ -556,6 +556,7 @@ export default {
     ctx.waitUntil(avvia(env, ms, async (messaggio, wf) => {
       try { if (env.DB) { await prepara(env.DB); await annotaErrore(env.DB, { tipo: "worker", messaggio: messaggio.slice(0, 300), file: wf, riga: 0, pagina: "orari" }, Date.now()); } } catch (x) { /* niente */ }
     }));
-    if (d.getUTCHours() === 2 && d.getUTCMinutes() === 17) ctx.waitUntil(pulizia(env));
+    // (event.cron «pulizia» serve alle prove in locale)
+    if ((d.getUTCHours() === 2 && d.getUTCMinutes() === 17) || event.cron === "pulizia") ctx.waitUntil(pulizia(env));
   }
 };

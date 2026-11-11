@@ -75,8 +75,8 @@ def musica_id():
 
 
 def gemini_id(voice):
-    # «tg2»: il montaggio da telegiornale con la sigla d'orchestra; con la musica che cambia, l'audio si rifà
-    return "gemini-38-" + voice.lower() + "-tg2-" + musica_id()
+    # «voce1»: solo la voce, senza musica; cambiando questa sigla l'audio si rifà
+    return "gemini-38-" + voice.lower() + "-voce1"
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -87,7 +87,7 @@ LANG = "it"
 # Nicola con un po' di Sara (15%): l'intonazione varia di più e la voce resta maschile; un filo più veloce, frase per frase
 VOICE_MIX = (("im_nicola", 0.85), ("if_sara", 0.15))
 SPEED = 1.1
-VOICE_ID = "kokoro-nicola85-sara15-tg2-" + musica_id()  # cambia con la voce, il montaggio o la musica: l'audio si rifà anche con lo stesso testo
+VOICE_ID = "kokoro-nicola85-sara15-voce1"  # cambia con la voce o il montaggio: l'audio si rifà anche con lo stesso testo
 # un po' di compressione e di presenza sulle medie (il volume finale lo dà FINALE)
 CHAIN = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,equalizer=f=3200:t=q:w=1.2:g=2.5"
 PAUSE_SENT, PAUSE_PARA = 0.3, PAUSE_TEMA
@@ -554,11 +554,12 @@ def main(site):
     if audio is None:
         audio, rate, marks = kokoro_audio(paras, np)
         label, vid, chain = "Nicola, sintesi vocale Kokoro", VOICE_ID, CHAIN
-    # la voce con la sua catena e a 48 kHz, poi sulla musica: sigla, tappeto, chiusura
+    # solo la voce, con la sua catena e a 48 kHz: niente sigla e niente musica sotto (11 novembre 2026); un attimo di
+    # silenzio prima e dopo. Il montaggio con la musica resta in monta(), se un giorno servisse di nuovo.
     import sigla
     voce = filtro(audio, rate, chain, np, sf, out=sigla.SR)
-    marks = [int(round(m * sigla.SR / rate)) for m in marks]
-    audio, rate = monta(voce, sigla.SR, marks, apertura(paras), np), sigla.SR
+    pausa = np.zeros(int(0.3 * sigla.SR), dtype=voce.dtype)
+    audio, rate = np.concatenate([pausa, voce, pausa]), sigla.SR
     os.makedirs(os.path.join(site, "audio"), exist_ok=True)
     encode(audio, rate, dest, FINALE, np, sf)
     with open(dest, "rb") as f:

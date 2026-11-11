@@ -2568,3 +2568,49 @@ html.nuova .lead .media svg, html.nuova .item .media svg, html.nuova .lead .medi
 html.nuova .blk, html.nuova .mk-box { border-radius: 18px; }
 html.nuova .end { border-top: 1px solid var(--rule); }
 @media (prefers-reduced-motion: reduce) { html.nuova .media > :first-child { transition: none; transform: none !important; } }
+
+/* ---------- giornale, secondo passaggio (11 novembre): niente riquadri in prima pagina, fili e rubriche ---------- */
+/* Ultim'ora: una fascia tra due fili, non una pillola; i lati sfumano nel colore del fondo vero */
+html.nuova .ultim { padding: 0; background: var(--ground); }
+html.nuova .ultim-in { gap: 14px; padding: 0; border-radius: 0; background: none; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+html.nuova .ultim-l { flex: none; padding: 0; border-radius: 0; background: none !important; color: var(--accent) !important; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; }
+html.nuova .ultim-l::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: #C8102E; vertical-align: 0.05em; }
+html.nuova .ultim-v { min-width: 0; }
+html.nuova .ultim-v::before { width: 28px; background: linear-gradient(90deg, var(--ground), transparent); }
+html.nuova .ultim-v::after { width: 40px; background: linear-gradient(270deg, var(--ground), transparent); }
+html.nuova .ultim-p { margin-right: 0; background: none; box-shadow: inset 0 0 0 1px var(--rule); }
+html.nuova .ultim-t a { font-weight: 500; }
+html.nuova .ultim-t a b { font-weight: 700; }
+
+/* la testata con il suo filo; il giorno come la data di un quotidiano */
+html.nuova .home .large { padding-top: 26px; }
+html.nuova .home .large h1 { font-size: clamp(2.75rem, 2.2rem + 2.4vw, 4rem); letter-spacing: -0.03em; }
+html.nuova .home .edition-sub { margin-top: 10px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+/* le rubriche (mercati, in breve, temi): un filo scuro sopra, il titolo, poi le righe; niente riquadro */
+html.nuova body:not(.term) .mk-box, html.nuova body:not(.term) .blk {
+  padding: 16px 0 6px; border-radius: 0; background: none; border-top: 2px solid var(--ink); box-shadow: none;
+}
+html.nuova body:not(.term) .blk { margin-top: 30px; }
+html.nuova .blk-h, html.nuova .mk-box h2 { font-size: 1.375rem; }
+/* i mercati in una riga e il riepilogo da ascoltare: tra due fili */
+html.nuova body:not(.term) .ticker, html.nuova body:not(.term) .listen { border-radius: 0; background: none; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-left: 0; padding-right: 0; }
+html.nuova body:not(.term) .ticker + .listen, html.nuova body:not(.term) .listen + .ticker { border-top: 0; margin-top: 0; }
+/* le sezioni: una riga di giornale, con il filo sotto */
+html.nuova .home .sec-nav .seg { box-shadow: inset 0 -1px 0 var(--rule); }
+html.nuova .sec-nav .seg .seg-ind { bottom: 0; }
+/* immagini dal taglio netto */
+html.nuova .lead.has-img .media { border-radius: 6px; }
+html.nuova .item.has-img > .media, html.nuova .list > .item.has-img:last-child:nth-child(odd) > .media { border-radius: 6px; }
+html.nuova .list .item:first-child { border-top: 1px solid var(--ink); }
+/* titoli: più grandi e più stretti, sommario più leggero */
+html.nuova .lead h2 { font-size: clamp(2.125rem, 1.6rem + 2.2vw, 3.25rem); line-height: 1.04; letter-spacing: -0.022em; }
+html.nuova .lead .sum { font-size: 1.25rem; line-height: 1.42; color: var(--ink-3); }
+@media (min-width: 760px) {
+  /* due colonne di notizie divise da un filo verticale */
+  html.nuova .list { column-gap: 0; }
+  html.nuova .list > .item:nth-child(odd):not(:last-child), html.nuova .list > .item:nth-child(odd):last-child:not(.has-img) { padding-right: 22px; }
+  html.nuova .list > .item:nth-child(even) { padding-left: 22px; border-left: 1px solid var(--rule); }
+  html.nuova .list > .item:nth-child(2) { border-top: 1px solid var(--ink); }
+  html.nuova .brand { font-size: 36px; }
+}

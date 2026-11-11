@@ -18,6 +18,7 @@ binding = "DB"
 database_name = "gerico"
 database_id = "4c757380-ff80-4500-be98-a01333ae2a39"
 
-# ogni notte (2:17 UTC) la pulizia: sessioni e sfide scadute, limiti vecchi, visitatori unici dei giorni passati ridotti a un numero
+# ogni minuto il Worker guarda se è l'ora di un giro (worker/orari.js: redazione, prezzi, paesi, dati del Terminal) e lo
+# avvia su GitHub; alle 2:17 UTC fa anche la pulizia del database
 [triggers]
-crons = ["17 2 * * *"]
+crons = ["* * * * *"]

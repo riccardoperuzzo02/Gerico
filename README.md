@@ -47,7 +47,11 @@ il terminale lo spezza a 80 caratteri, il workflow toglie spazi e a capo prima d
 usare solo `date` e gli script di `scripts/`; il token di GitHub lo vede solo il passo della pubblicazione. La trascrizione di
 ogni giro resta 7 giorni tra gli artifact del run; le azioni negate a Claude sono elencate nel passo «Giro». Un giro che non
 riesce a cominciare (token rifiutato, limite dell'abbonamento) non pubblica niente e il run risulta fallito. Il giro «prova»
-(Actions › Redazione › Run workflow) controlla il token e la pubblicazione senza cambiare niente. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
+(Actions › Redazione › Run workflow) controlla il token e la pubblicazione senza cambiare niente. Gli orari li tiene Cloudflare: il Worker si sveglia ogni minuto e all'ora giusta avvia il workflow su GitHub
+(`worker/orari.js`: redazione, prezzi, paesi, dati del Terminal), con il segreto `GITHUB_AVVIO` del Worker, un token di
+GitHub limitato a questo repository con il solo permesso «Actions: read and write». GitHub da solo fa partire i suoi cron
+quando può, a volte con ore di ritardo: i cron della redazione restano come riserva dieci minuti dopo, e si fermano subito se
+il giro c'è già stato o se partono con più di 4 ore di ritardo. GitHub ragiona in UTC: ogni giro ha un cron per l'ora legale e uno per l'ora solare, e
 `scripts/redazione.py giro` fa partire solo quello giusto. Due giri non partono mai insieme (`concurrency`).
 
 Fino al 10 novembre 2026 i giri erano attività programmate su claude.ai, che scrivevano nel database dell'app privata e

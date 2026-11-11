@@ -49,9 +49,9 @@ GIRI = {
 }
 # i cron sono in UTC: per ogni giro ce n'è uno per l'ora legale e uno per l'ora solare, e parte solo quello giusto
 CRON = {
-    "18 5 * * *": "notizie", "18 6 * * *": "notizie", "18 11 * * *": "notizie", "18 12 * * *": "notizie",
-    "15 16 * * 1-5": "chiusure", "15 17 * * 1-5": "chiusure",
-    "47 7 * * *": "paesi", "47 8 * * *": "paesi",
+    "28 5 * * *": "notizie", "28 6 * * *": "notizie", "28 11 * * *": "notizie", "28 12 * * *": "notizie",
+    "25 16 * * 1-5": "chiusure", "25 17 * * 1-5": "chiusure",
+    "57 7 * * *": "paesi", "57 8 * * *": "paesi",
     "2 5 * * 1-5": "titoli", "2 6 * * 1-5": "titoli",
 }
 SECTIONS = {"mondo", "italia", "economia", "mercati", "tecnologia"}

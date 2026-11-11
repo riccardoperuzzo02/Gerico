@@ -10,6 +10,7 @@
 import SCHEMA from "./schema.sql";
 import ADMIN_HTML from "./admin.html";
 import { verificaIscrizione, verificaAccesso, ErrorePasskey, ALGORITMI, b64u, casuali, sha256 } from "./webauthn.js";
+import { avvia } from "./orari.js";
 
 const COOKIE = "__Host-gerico_s";
 const SESSIONE_MS = 60 * 864e5;      // una sessione dura 60 giorni e si rinnova da sola quando ne mancano meno di 30
@@ -454,7 +455,7 @@ async function adminDati(c) {
   }
   return json({
     ora: c.ora, oggi, giorni,
-    segreti: { adminToken: !!c.env.ADMIN_TOKEN, statsSalt: !!c.env.STATS_SALT },
+    segreti: { adminToken: !!c.env.ADMIN_TOKEN, statsSalt: !!c.env.STATS_SALT, githubAvvio: !!c.env.GITHUB_AVVIO },
     iscritti: { totale: (righe(0)[0] || {}).n || 0, elenco },
     serie,
     pagine: righe(3), paesi: righe(4), lingue: righe(5), dispositivi: righe(6),
@@ -549,7 +550,12 @@ export default {
     if (p === "/api" || p.startsWith("/api/")) return api(request, env, ctx);
     return env.ASSETS.fetch(request);
   },
+  // ogni minuto: gli orari dei workflow di GitHub (worker/orari.js); alle 2:17 UTC la pulizia del database
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(pulizia(env));
+    const ms = event.scheduledTime || Date.now(), d = new Date(ms);
+    ctx.waitUntil(avvia(env, ms, async (messaggio, wf) => {
+      try { if (env.DB) { await prepara(env.DB); await annotaErrore(env.DB, { tipo: "worker", messaggio: messaggio.slice(0, 300), file: wf, riga: 0, pagina: "orari" }, Date.now()); } } catch (x) { /* niente */ }
+    }));
+    if (d.getUTCHours() === 2 && d.getUTCMinutes() === 17) ctx.waitUntil(pulizia(env));
   }
 };

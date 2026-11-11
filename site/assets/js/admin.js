@@ -238,6 +238,7 @@ G.page("admin", async function (P) {
     const avvisi = [];
     if (d.segreti.adminToken) avvisi.push(L("Il segreto ADMIN_TOKEN è ancora impostato: il tuo account è già l'amministratore, quindi puoi toglierlo (Cloudflare, Workers e Pages, gerico, Settings, Variables and Secrets).",
       "The ADMIN_TOKEN secret is still set: your account is already the administrator, so you can remove it (Cloudflare, Workers & Pages, gerico, Settings, Variables and Secrets)."));
+    if (d.segreti.githubAvvio === false) avvisi.push(L("Manca il segreto GITHUB_AVVIO: gli orari dei giri dipendono da GitHub, che a volte parte in ritardo o non parte.", "The GITHUB_AVVIO secret is missing: run times depend on GitHub, which sometimes starts late or not at all."));
     if (!d.segreti.statsSalt) avvisi.push(L("Manca il segreto STATS_SALT: le visite si contano, i visitatori unici no.", "The STATS_SALT secret is missing: visits are counted, unique visitors aren't."));
     const pubbl = stato && Array.isArray(stato.problemi) ? stato.problemi.slice().reverse() : [];
     let h = avvisi.map((a) => '<p class="ad-avviso">' + esc(a) + "</p>").join("");

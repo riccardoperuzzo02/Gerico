@@ -2680,9 +2680,9 @@ html.nuova .altre { margin-top: 34px; }
 html .top-row > .top-title { visibility: hidden; }
 
 /* ---------- forme nette (11 novembre): un solo angolo, quasi vivo, per tutto il sito ----------
-   Riquadri, pulsanti, campi, schede, barre, immagini e menu hanno lo stesso angolo di 2 px. Restano tondi solo i segni
+   Riquadri, pulsanti, campi, schede, barre, immagini e menu hanno lo stesso angolo di 4 px, appena smussato. Restano tondi solo i segni
    che sono cerchi per natura: i punti delle notizie in corso e dei temi caldi, il tasto per ascoltare. */
-html.nuova { --r: 2px; --card-r: 2px; --r-img: 2px; --r-btn: 2px; --radius: 2px; }
+html.nuova { --r: 4px; --card-r: 4px; --r-img: 4px; --r-btn: 4px; --radius: 4px; }
 html.nuova *, html.nuova *::before, html.nuova *::after { border-radius: var(--r) !important; }
 html.nuova .hot-dot, html.nuova .k-live::before, html.nuova .ultim-l::before, html.nuova .t-next.soon::before, html.nuova .t-agenda li.next.soon::before,
 html.nuova .ls-btn, html.nuova .gp-play, html.nuova .ultim-p, html.nuova .menu-x, html.nuova .mw i { border-radius: 50% !important; }

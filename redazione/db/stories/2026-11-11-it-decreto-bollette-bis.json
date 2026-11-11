@@ -1,0 +1,95 @@
+{
+  "article": "Il Consiglio dei ministri ha approvato il 9 novembre il secondo decreto sulle bollette, che introduce un tetto al prezzo del gas per le centrali termoelettriche, riferisce l'Ansa. Il ministro dell'Ambiente e della Sicurezza energetica Pichetto Fratin stima un taglio medio di circa 15 euro al megawattora a partire da gennaio 2027, per 18 mesi. Il decreto modifica l'articolo 6 di quello approvato a febbraio.\n\nSecondo Pichetto il provvedimento riduce del 4-5% il prezzo finale dell'energia e mobilita più di 3 miliardi, scrive l'Ansa. Per una famiglia media, che consuma circa due megawattora l'anno, il ministro stima un risparmio di circa 30 euro. Il Codacons, sulla base di quei numeri, calcola tra 27 e 37 euro all'anno, con il rischio che le incognite ne riducano i benefici fino a dimezzarli, riporta l'Ansa. Open scrive che il risparmio effettivo per le famiglie è di circa 20 euro l'anno. Il think tank Ecco calcola 17 euro l'anno, 1,4 euro al mese.\n\nPer le imprese, i dati diffusi dopo il Consiglio dei ministri indicano circa 280 euro per una piccola impresa artigiana che consuma 40 megawattora l'anno, circa 210.000 euro per una grande impresa alimentare con 30.000 megawattora e circa 520.000 euro per un'impresa energivora con autoproduzione. Meloni ha detto che nell'immediato gli effetti per le famiglie saranno più contenuti. Angelo Bonelli, di Alleanza Verdi e Sinistra, sostiene che le misure sono temporanee e non affrontano il problema strutturale del costo dell'energia.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Il Consiglio dei ministri ha approvato il 9 novembre il decreto bollette bis, con un tetto al prezzo del gas per le centrali termoelettriche.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Pichetto stima un taglio di circa 15 euro al megawattora da gennaio 2027 per 18 mesi e una riduzione del 4-5% del prezzo finale.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Per una famiglia media Pichetto stima circa 30 euro l'anno, il Codacons 27-37 euro, Open circa 20 euro.",
+      "who": [
+        "ANSA",
+        "Open"
+      ]
+    },
+    {
+      "text": "Per un'impresa energivora con autoproduzione il risparmio è di circa 520.000 euro, per una piccola impresa artigiana circa 280 euro.",
+      "who": [
+        "Open"
+      ]
+    },
+    {
+      "text": "Bonelli di Avs sostiene che le misure sono temporanee e non risolvono il problema strutturale.",
+      "who": [
+        "ANSA"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-11T09:22:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-11T09:22:00+01:00",
+      "text": "Prima notizia: approvato il decreto bollette bis, stime diverse sul risparmio per famiglie e imprese."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Quanto risparmieranno davvero famiglie e imprese da gennaio?",
+    "Il decreto sarà convertito dal Parlamento senza modifiche?"
+  ],
+  "places": [
+    "IT"
+  ],
+  "rank": 7,
+  "section": "economia",
+  "sources": [
+    {
+      "angle": "Il tetto al gas, la stima di Pichetto, le cifre del Codacons e le critiche.",
+      "area": "Italia",
+      "date": "2026-11-10",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/10/pichetto-dal-decreto-bollette-una-riduzione-del-4-5-del-prezzo-finale_b82bd521-c9c0-4149-a7d3-f8659452c9d7.html"
+    },
+    {
+      "angle": "Il risparmio per le famiglie, circa 20 euro l'anno.",
+      "area": "Italia",
+      "date": "2026-11-11",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/11/decreto-bollette-risparmi-famiglie-imprese/"
+    },
+    {
+      "angle": "Via libera del Consiglio dei ministri e dichiarazione di Meloni.",
+      "area": "Italia",
+      "date": "2026-11-10",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Teleborsa",
+      "url": "https://www.teleborsa.it/News/2026/11/10/decreto-bollette-via-libera-del-cdm-meloni-difendere-l-interesse-dei-cittadini-7.html"
+    }
+  ],
+  "status": "live",
+  "summary": "Il governo ha approvato il decreto bollette bis, con un tetto al prezzo del gas per le centrali. Pichetto stima un taglio del 4-5% del prezzo finale, mentre le stime sul risparmio delle famiglie vanno da 17 a 37 euro l'anno.",
+  "tags": [
+    "Energia",
+    "Governo",
+    "Bollette"
+  ],
+  "themes": [],
+  "title": "Bollette: approvato il decreto bis, stime diverse sul risparmio delle famiglie",
+  "updated": "2026-11-11T09:22:00+01:00",
+  "view": "Le cifre dipendono da chi le dà: il governo parla di un taglio del 4-5% sul prezzo finale, le associazioni dei consumatori e i centri studi di risparmi per famiglia tra 17 e 37 euro l'anno. Sono stime, non dati verificati, perché il taglio dipende dall'andamento del prezzo del gas.\n\nConta perché il decreto parte da gennaio 2027 e dura 18 mesi. Da guardare: il testo in Parlamento e i prezzi del gas nei prossimi mesi."
+}

@@ -1,6 +1,6 @@
 {
-  "article": "Il 9 novembre l'oleodotto Est-Ovest dell'Arabia Saudita, nella regione di Medina, è stato colpito di nuovo, riferisce Al Jazeera citando l'Afp. Un funzionario del ministero dell'Energia saudita dice all'agenzia di Stato Spa che c'è stato un incendio limitato, spento, e che l'attività dell'oleodotto non è stata toccata. Al Jazeera scrive che il tubo è essenziale per le esportazioni saudite perché l'Iran ha limitato lo stretto di Hormuz.\n\nOggi il portavoce della coalizione a guida saudita, il generale Turki al-Maliki, dice su X che le forze hanno intercettato un missile balistico e uno da crociera su Riad, e un secondo missile balistico sul sud del Paese. Al-Maliki attribuisce i lanci agli houthi, sostenuti dall'Iran. Afp riporta più esplosioni a Riad e un allarme sui telefoni dei residenti, poi revocato. Funzionari sauditi dicono che detriti hanno causato danni lievi alla torre Aramco di Riad; non ci sono feriti, secondo Al Jazeera. Gli houthi non avevano commentato subito. Domenica avevano detto di aver attaccato il quartiere degli affari di Riad, mentre il loro portavoce Saree nega attacchi al territorio saudita, scrive Al Jazeera. Reuters titola che l'agenzia Saba riporta raid sauditi su Sanaa.\n\nIl governo yemenita riconosciuto chiede all'Iran di smettere di armare gli houthi, riferisce Ansa: indica 21 esperti stranieri, 14 dei Guardiani della rivoluzione e 7 di Hezbollah, con una fonte indicata come Iran International. Il ministero della Salute houthi riporta 27 morti e 36 feriti in un villaggio vicino a Sanaa e accusa raid sauditi; Reuters non ha verificato il dato. Quattro fonti militari dicono a Reuters che gli houthi sono a circa 80 chilometri da Aden, il punto più vicino dal 2015, e Reuters non ha verificato un video houthi a Souq al-Rabouh. Le forze governative dicono di avanzare ad al-Jawf, un dato che Al Jazeera non ha verificato.",
-  "change": "Nuovo attacco all'oleodotto Est-Ovest e missili su Riad intercettati, dice la coalizione.",
+  "article": "Il 10 novembre il portavoce delle forze governative yemenite, Majed Abdullah al-Nuzaili, ha dichiarato che nelle ultime ore le forze hanno compiuto almeno 29 raid aerei, 39 attacchi con droni, 62 razzi e 744 attacchi di artiglieria nei governatorati di Lahij, Taiz, Marib, al-Jawf, Hajjah e al-Bayda, e che circa 190 combattenti houthi sono stati uccisi o feriti, riferisce Al Jazeera. Il portavoce houthi Yahya Saree dice invece che le forze sostenute dai sauditi hanno condotto 109 raid e attacchi missilistici, con «un gran numero di donne e bambini» uccisi o feriti, e rivendica perdite governative a Lahij e al-Jawf. Al Jazeera scrive di non poter verificare i bilanci di nessuna delle due parti. Secondo l'Oms, citata da Al Jazeera, da agosto ci sono almeno 1.771 morti, 7.959 feriti e più di 300.000 sfollati. Le forze governative, con la coalizione, hanno lanciato la controffensiva «Alba dello Yemen» per riprendere i territori persi a settembre.\n\nIl 9 novembre l'oleodotto Est-Ovest dell'Arabia Saudita, nella regione di Medina, è stato colpito di nuovo, riferisce Al Jazeera citando l'Afp. Un funzionario del ministero dell'Energia saudita dice all'agenzia di Stato Spa che c'è stato un incendio limitato, spento, e che l'attività dell'oleodotto non è stata toccata. Al Jazeera scrive che il tubo è essenziale per le esportazioni saudite perché l'Iran ha limitato lo stretto di Hormuz.\n\nOggi il portavoce della coalizione a guida saudita, il generale Turki al-Maliki, dice su X che le forze hanno intercettato un missile balistico e uno da crociera su Riad, e un secondo missile balistico sul sud del Paese. Al-Maliki attribuisce i lanci agli houthi, sostenuti dall'Iran. Afp riporta più esplosioni a Riad e un allarme sui telefoni dei residenti, poi revocato. Funzionari sauditi dicono che detriti hanno causato danni lievi alla torre Aramco di Riad; non ci sono feriti, secondo Al Jazeera. Gli houthi non avevano commentato subito. Domenica avevano detto di aver attaccato il quartiere degli affari di Riad, mentre il loro portavoce Saree nega attacchi al territorio saudita, scrive Al Jazeera. Reuters titola che l'agenzia Saba riporta raid sauditi su Sanaa.\n\nIl governo yemenita riconosciuto chiede all'Iran di smettere di armare gli houthi, riferisce Ansa: indica 21 esperti stranieri, 14 dei Guardiani della rivoluzione e 7 di Hezbollah, con una fonte indicata come Iran International. Il ministero della Salute houthi riporta 27 morti e 36 feriti in un villaggio vicino a Sanaa e accusa raid sauditi; Reuters non ha verificato il dato. Quattro fonti militari dicono a Reuters che gli houthi sono a circa 80 chilometri da Aden, il punto più vicino dal 2015, e Reuters non ha verificato un video houthi a Souq al-Rabouh. Le forze governative dicono di avanzare ad al-Jawf, un dato che Al Jazeera non ha verificato.",
+  "change": "11 novembre: il governo dà circa 190 houthi uccisi o feriti, gli houthi parlano di vittime civili; l'Oms conta 1.771 morti da agosto.",
   "divergences": [
     {
       "point": "Chi avanza sul terreno",
@@ -21,6 +21,12 @@
     }
   ],
   "facts": [
+    {
+      "text": "Il portavoce governativo al-Nuzaili dice che circa 190 combattenti houthi sono stati uccisi o feriti il 10 novembre; Saree parla di vittime civili.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
     {
       "text": "Il 9 novembre l'oleodotto Est-Ovest è stato colpito; un funzionario saudita parla di incendio limitato e attività non toccata.",
       "who": [
@@ -54,6 +60,10 @@
   ],
   "firstSeen": "2026-10-07T17:08:47+02:00",
   "history": [
+    {
+      "at": "2026-11-11T09:22:00+01:00",
+      "text": "11 novembre: bilanci contrapposti di governo e houthi; l'Oms conta 1.771 morti e 300.000 sfollati dall'agosto."
+    },
     {
       "at": "2026-11-10T13:24:29+01:00",
       "text": "Nuovo attacco all'oleodotto Est-Ovest e missili su Riad intercettati, dice la coalizione."
@@ -89,10 +99,6 @@
     {
       "at": "2026-10-27T07:24:50+01:00",
       "text": "26 ottobre: la coalizione dice di aver distrutto lanciamissili houthi a Sanaa dopo un attacco sventato su Riad."
-    },
-    {
-      "at": "2026-10-23T07:23:06+02:00",
-      "text": "22-23 ottobre: Dammam riapre dopo l'attacco (due morti per Arab News); nuovi missili su Riad e Najran; l'Egitto chiede negoziati; Onu: quasi 260.000 sfollati a Taiz."
     }
   ],
   "notCovered": [
@@ -108,7 +114,7 @@
     "SA",
     "IR"
   ],
-  "rank": 8,
+  "rank": 9,
   "section": "mondo",
   "sources": [
     {
@@ -132,14 +138,14 @@
       "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/10/saudi-led-coalition-says-it-intercepts-two-houthi-missiles-fired-towards-riyadh"
     },
     {
-      "angle": "Oleodotto colpito, missili su Riad intercettati, versione del portavoce della coalizione.",
+      "angle": "Bilanci di governo e houthi, dati Oms, oleodotto colpito, missili su Riad intercettati.",
       "area": "Medio Oriente",
-      "at": "2026-11-10T13:24:29+01:00",
+      "at": "2026-11-11T09:22:00+01:00",
       "country": "Qatar",
       "kind": "giornale",
       "name": "Al Jazeera",
       "stance": "allineata",
-      "url": "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline"
+      "url": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses"
     },
     {
       "angle": "Lo Yemen chiede all'Iran di smettere di armare gli houthi.",
@@ -153,7 +159,7 @@
     }
   ],
   "status": "live",
-  "summary": "La coalizione a guida saudita dice di aver intercettato missili su Riad e nel sud del Paese. Il 9 novembre l'oleodotto Est-Ovest è stato colpito: un funzionario saudita parla di incendio limitato.",
+  "summary": "Il governo yemenita dice che il 10 novembre circa 190 combattenti houthi sono stati uccisi o feriti, gli houthi parlano di vittime civili. Al Jazeera non può verificare i bilanci; la coalizione dice di aver intercettato missili su Riad.",
   "tags": [
     "Yemen",
     "Medio Oriente",
@@ -163,7 +169,7 @@
   "themes": [
     "iran-usa"
   ],
-  "title": "Yemen: Riad intercetta missili dopo un nuovo attacco all'oleodotto Est-Ovest",
-  "updated": "2026-11-10T13:24:29+01:00",
+  "title": "Yemen: governo e houthi danno bilanci opposti dopo un nuovo giorno di scontri",
+  "updated": "2026-11-11T09:22:00+01:00",
   "view": "È accertato che i combattimenti proseguono e che le cifre vengono dalle parti: il ministero houthi dà 27 morti, Riad non ha commentato e Reuters non può verificare. Le forze governative rivendicano avanzate, gli houthi raid sui civili; nessuna delle due versioni è confermata in modo indipendente.\n\nConta perché il fronte si lega al conflitto tra Usa e Iran e alla sicurezza dei Paesi del Golfo. Da guardare: la risposta saudita, la conferma delle avanzate governative e il ruolo della Siria."
 }

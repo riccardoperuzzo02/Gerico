@@ -1,0 +1,117 @@
+{
+  "article": "Nvidia ha perso in due sedute circa 430 miliardi di dollari di capitalizzazione, scrive Reuters, mentre aumentano le critiche sui suoi legami con la Cina e sul rapporto personale del suo amministratore delegato, Jensen Huang. Il consiglio di amministrazione ha annunciato domenica 8 novembre un'indagine indipendente per capire se Huang sia stato preso di mira da un'operazione di intelligence straniera, riferisce Al Jazeera. L'azienda dice di non avere motivo di credere che la sicurezza nazionale americana o informazioni riservate siano state compromesse.\n\nSecondo Al Jazeera, che cita Reuters, Huang, 63 anni, ha ammesso di essere stato infedele alla moglie. I media collegano la vicenda a Alice Huang, ex dirigente di una società di data center con sede a Singapore, che sarebbe accusata di lavorare per l'intelligence cinese. Il Post aveva scritto il 9 novembre che il titolo era calato in modo marcato dopo le notizie sul rapporto del manager con una presunta spia cinese. Tre presidenti repubblicani di commissioni parlamentari hanno chiesto un briefing con Huang per il 18 novembre. Il senatore repubblicano Kevin Cramer ha detto a Politico che «deve andarsene», riporta Al Jazeera.\n\nIn Borsa, il 10 novembre Nvidia ha ceduto circa il 5,5% a Wall Street per la seconda seduta consecutiva, secondo CNBC. L'Ansa, in un dato di seduta, riportava un calo del 4,3% e il sorpasso di Microsoft nella classifica delle società più capitalizzate.\n\nIn parallelo, un'inchiesta esclusiva di Reuters basata su documenti di acquisto dice che la Northwestern Polytechnical University di Xi'an, legata all'esercito cinese e inserita dagli Stati Uniti nella lista nera commerciale, ha comprato due chip H200 di Nvidia per 874.700 yuan, circa 123.000 dollari. Il documento è del 21 ottobre; i chip sono stati acquistati tramite un rivenditore, la Shaanxi Bosuan Network Technology, e non direttamente da Nvidia. Reuters ha esaminato 26 documenti cinesi di acquisto e società e ha trovato altri atenei e istituti, alcuni con legami militari, che comprano chip Nvidia soggetti a restrizioni o ne affittano la potenza di calcolo.\n\nL'amministrazione Trump ha cominciato a consentire alcune esportazioni di H200 caso per caso a gennaio, ma questo non ha tolto le restrizioni sulle organizzazioni in lista nera, scrive Al Jazeera. Huang sostiene che continuare a vendere ai clienti cinesi mantiene la leadership tecnologica americana e li lascia dipendenti da Nvidia. Alcuni parlamentari americani dicono invece che l'accesso ai chip più avanzati può accelerare lo sviluppo cinese dell'intelligenza artificiale per usi militari. Nel testo di Al Jazeera non c'è una risposta del governo cinese.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Nvidia ha perso circa 430 miliardi di dollari di capitalizzazione in due sedute.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "text": "Il consiglio ha avviato un'indagine indipendente per capire se Huang sia stato preso di mira da un'operazione di intelligence straniera.",
+      "who": [
+        "Al Jazeera"
+      ]
+    },
+    {
+      "text": "Il 10 novembre Nvidia ha ceduto circa il 5,5% a Wall Street secondo CNBC; un dato di seduta dell'Ansa parlava di meno 4,3%.",
+      "who": [
+        "CNBC",
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Un'università cinese legata all'esercito e in lista nera Usa ha comprato due chip H200 per 874.700 yuan, secondo un documento del 21 ottobre.",
+      "who": [
+        "Al Jazeera",
+        "Reuters"
+      ]
+    },
+    {
+      "text": "Tre presidenti repubblicani di commissioni hanno chiesto un briefing con Huang per il 18 novembre.",
+      "who": [
+        "Al Jazeera"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-11T09:22:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-11T09:22:00+01:00",
+      "text": "Prima notizia: Nvidia sotto esame per i legami con la Cina e per il caso Huang; Reuters sull'acquisto di chip H200 da parte di un ateneo in lista nera."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "L'indagine del consiglio troverà prove di un'operazione di intelligence?",
+    "Huang parlerà con i parlamentari il 18 novembre?",
+    "Ci saranno nuovi controlli sulle esportazioni di chip verso la Cina?"
+  ],
+  "places": [
+    "US",
+    "CN"
+  ],
+  "rank": 4,
+  "section": "tecnologia",
+  "sources": [
+    {
+      "angle": "Il titolo Nvidia scende dopo l'indagine su Huang; il Post dà il quadro del caso.",
+      "area": "Italia",
+      "date": "2026-11-09",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/09/nvidia-risultato-borsa-notizia-relazione-ceo-presunta-spia-cinese/"
+    },
+    {
+      "angle": "Acquisto di chip H200, voci di Huang, parlamentari e Cramer, indagine del consiglio.",
+      "area": "Medio Oriente",
+      "date": "2026-11-11",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show"
+    },
+    {
+      "angle": "Perdita di capitalizzazione di circa 430 miliardi in due sedute e crescenti critiche sui legami con la Cina.",
+      "area": "Europa",
+      "date": "2026-11-11",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/11/nvidia-faces-deepening-scrutiny-over-china-chip-ties-ceo-affair"
+    },
+    {
+      "angle": "Calo del titolo a Wall Street e sorpasso di Microsoft per capitalizzazione.",
+      "area": "Italia",
+      "date": "2026-11-10",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/nvidia-ancora-in-calo-a-wall-street-cede-il-43_2b788534-d289-4ff6-83c7-63c007e83753.html"
+    },
+    {
+      "angle": "Chiusura di Wall Street del 10 novembre: Nvidia in calo del 5,5%.",
+      "area": "Stati Uniti",
+      "date": "2026-11-10",
+      "country": "Stati Uniti",
+      "kind": "tv",
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html"
+    }
+  ],
+  "status": "live",
+  "summary": "Nvidia ha perso circa 430 miliardi di dollari di capitalizzazione in due sedute, dopo l'indagine del consiglio sul rapporto di Huang con una presunta spia cinese. Reuters scrive che un ateneo cinese legato all'esercito ha comprato chip H200 nonostante la lista nera Usa.",
+  "tags": [
+    "Nvidia",
+    "Intelligenza artificiale",
+    "Cina",
+    "Stati Uniti"
+  ],
+  "themes": [],
+  "title": "Nvidia: indagine su Huang e chip H200 a un ateneo cinese in lista nera",
+  "updated": "2026-11-11T09:22:00+01:00",
+  "view": "Quello che le fonti sostengono con certezza è che il consiglio ha aperto un'indagine e che Huang ha ammesso la relazione. Che la persona coinvolta lavorasse per l'intelligence cinese è per ora un'accusa riportata dai media, senza conferme ufficiali citate. L'acquisto dei chip è documentato da un atto di acquisto visto da Reuters, che non dice che Nvidia sapesse della destinazione finale.\n\nConta perché mette insieme un caso personale e il dossier delle esportazioni di chip, su cui democratici e repubblicani chiedono controlli più duri. Da guardare: il briefing del 18 novembre al Congresso, l'esito dell'indagine interna e il titolo in Borsa."
+}

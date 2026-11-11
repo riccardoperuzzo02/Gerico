@@ -1,140 +1,107 @@
 {
-  "asOf": "2026-11-10T21:10:15+01:00",
+  "asOf": "2026-11-11T09:25:00+01:00",
   "classes": [
     {
       "items": [
         {
-          "chg": 3.13,
+          "chg": 1.3,
           "name": "Nikkei 225 (Tokyo)",
-          "note": "Apertura del 10 novembre",
+          "note": "Chiusura dell'11 novembre",
           "story": "2026-11-09-wall-street-ia-chip",
-          "value": "oltre 60.000",
-          "why": "Rimbalzo dei titoli tecnologici e calo del petrolio, secondo l'Ansa."
-        },
-        {
-          "chg": 0.08,
-          "name": "Hong Kong (Hang Seng)",
-          "note": "Dato intraday delle 06:20",
           "value": "n.d.",
-          "why": ""
+          "why": "Bene il comparto tecnologico, secondo l'Ansa."
         },
         {
-          "chg": 0.37,
-          "name": "Shanghai",
-          "note": "Apertura pomeridiana delle 06:08",
-          "value": "n.d.",
-          "why": ""
-        },
-        {
-          "chg": 0.69,
+          "chg": 0.79,
           "name": "Ftse Mib",
-          "note": "Chiusura del 10 novembre (ANSA, 17:54)",
-          "value": "51.755",
-          "why": "Rialzo frenato dall'inflazione Usa sopra le attese; bene banche e Fincantieri."
+          "note": "Apertura dell'11 novembre",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "52.161",
+          "why": "Avvio in rialzo, con Technoprobe e Mediobanca in evidenza (Ansa)."
         },
         {
-          "chg": 1.9,
-          "name": "Dax",
-          "note": "Chiusura del 9 novembre",
-          "value": "n.d.",
-          "why": ""
-        },
-        {
-          "chg": 1.1,
+          "chg": 0.58,
           "name": "Cac 40",
-          "note": "Chiusura del 9 novembre",
+          "note": "Apertura dell'11 novembre",
           "value": "n.d.",
           "why": ""
         },
         {
-          "chg": 1,
+          "chg": 0.81,
           "name": "Ftse 100",
-          "note": "Chiusura del 9 novembre",
+          "note": "Apertura dell'11 novembre",
           "value": "n.d.",
           "why": ""
         },
         {
-          "chg": 0.8,
-          "name": "Aex",
-          "note": "Chiusura del 9 novembre",
-          "value": "n.d.",
-          "why": ""
-        },
-        {
-          "chg": 0.32,
-          "name": "S&P 500",
-          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "7.376,86",
-          "why": ""
-        },
-        {
-          "chg": 1.09,
-          "name": "Nasdaq",
-          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "24.579,42",
-          "why": ""
-        },
-        {
-          "chg": -0.46,
+          "chg": -0.3,
           "name": "Dow Jones",
-          "note": "Chiusura del 6 novembre; il dato del 9 novembre non è verificato",
+          "note": "Chiusura del 10 novembre",
           "story": "2026-11-09-wall-street-ia-chip",
-          "value": "51.285,73",
+          "value": "52.231,89",
+          "why": "Inflazione Usa sopra le attese e timori di un rialzo Fed a dicembre, secondo CNBC."
+        },
+        {
+          "chg": -0.38,
+          "name": "S&P 500",
+          "note": "Chiusura del 10 novembre",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "7.520,93",
           "why": ""
+        },
+        {
+          "chg": -0.74,
+          "name": "Nasdaq",
+          "note": "Chiusura del 10 novembre",
+          "story": "2026-11-09-wall-street-ia-chip",
+          "value": "25.065,87",
+          "why": "Peso di Nvidia, secondo CNBC."
         }
       ],
       "key": "indici",
       "label": "Indici",
-      "note": "Ftse Mib: chiusura del 10 novembre. Altre Borse europee: chiusure del 9 novembre (quelle di oggi non ancora verificate). Asia: dati del mattino del 10."
+      "note": "Wall Street: chiusura del 10 novembre. Europa: aperture di stamattina. Tokyo: seduta dell'11 novembre."
     },
     {
       "items": [
         {
-          "chg": 10,
-          "name": "Banco Bpm",
-          "note": "Chiusura del 9 novembre (ANSA, 17:44).",
-          "value": "n.d.",
-          "why": "Il risiko bancario spinge il titolo, secondo ANSA."
-        },
-        {
-          "chg": 5.3,
-          "name": "UniCredit",
-          "note": "Dato intraday.",
-          "value": "n.d."
-        },
-        {
-          "chg": -1.59,
-          "name": "Moncler",
-          "note": "Dato intraday.",
-          "value": "n.d."
-        },
-        {
-          "chg": -1.04,
-          "name": "Stellantis",
-          "note": "Dato intraday.",
-          "value": "n.d."
-        },
-        {
-          "chg": -6,
+          "chg": -5.5,
           "name": "Nvidia",
-          "note": "Pre-market del 9 novembre",
-          "story": "2026-11-09-wall-street-ia-chip",
+          "note": "Chiusura del 10 novembre (CNBC); l'Ansa riportava -4,3% in seduta",
+          "story": "2026-11-11-nvidia-huang-cina",
           "value": "n.d.",
-          "why": "Indagine interna sull'amministratore delegato Huang."
+          "why": "Indagine interna sull'amministratore delegato Huang e critiche sui legami con la Cina."
+        },
+        {
+          "name": "Technoprobe",
+          "note": "Dato intraday dell'11 novembre (Ansa, 09:12)",
+          "value": "n.d.",
+          "why": "Tra i titoli più forti di Piazza Affari in apertura."
+        },
+        {
+          "name": "Mediobanca",
+          "note": "Dato intraday dell'11 novembre (Ansa, 09:12)",
+          "value": "n.d.",
+          "why": "Tra i titoli più forti di Piazza Affari in apertura."
         }
       ],
       "key": "azioni",
       "label": "Azioni",
-      "note": "Banco Bpm a fine seduta; gli altri titoli sono dati delle 11:58, secondo Teleborsa."
+      "note": ""
     },
     {
       "items": [
         {
+          "bp": -1,
           "name": "Spread Btp-Bund",
-          "note": "Chiusura del 9 novembre",
-          "value": "103 pb",
+          "note": "Apertura dell'11 novembre (Ansa, 08:35)",
+          "value": "103,4 pb",
+          "why": ""
+        },
+        {
+          "name": "Btp 10 anni",
+          "note": "Apertura dell'11 novembre (Ansa, 08:35)",
+          "value": "4,33%",
           "why": ""
         }
       ],
@@ -145,39 +112,36 @@
     {
       "items": [
         {
-          "name": "USD/JPY",
-          "note": "Mattina del 10 novembre",
-          "value": "oltre 158",
-          "why": "Yen stabile sul dollaro, riferisce l'Ansa."
+          "name": "EUR/USD",
+          "note": "Mattina dell'11 novembre (Ansa, 08:03)",
+          "value": "1,1157",
+          "why": "Euro stabile in avvio di giornata."
         }
       ],
       "key": "valute",
       "label": "Valute",
-      "note": ""
+      "note": "L'Ansa dà anche euro-yen a 177,22."
     },
     {
       "items": [
         {
-          "chg": -5.6,
           "name": "Brent",
-          "note": "Rilevazione delle 20:50 del 9 novembre",
+          "note": "Mattina dell'11 novembre (Ansa, 08:01)",
           "story": "2026-10-07-hormuz-on-peace",
-          "value": "92,80 $",
-          "why": "Speranza di progressi nella trattativa Usa-Iran, secondo l'Ansa."
+          "value": "92,54 $",
+          "why": "In rialzo dopo il calo del 9 novembre."
         },
         {
-          "chg": -4.1,
           "name": "Wti",
-          "note": "Rilevazione delle 20:50 del 9 novembre",
+          "note": "Mattina dell'11 novembre (Ansa, 08:01)",
           "story": "2026-10-07-hormuz-on-peace",
-          "value": "87,10 $",
-          "why": "Speranza di progressi nella trattativa Usa-Iran, secondo l'Ansa."
+          "value": "86,67 $",
+          "why": ""
         },
         {
-          "chg": -3.9,
-          "name": "Gas TTF",
-          "note": "Rilevazione delle 18:14 del 9 novembre",
-          "value": "82,20 €/MWh",
+          "name": "Oro",
+          "note": "Mattina dell'11 novembre (Ansa, 08:01)",
+          "value": "4.063,80 $",
           "why": ""
         }
       ],
@@ -192,24 +156,28 @@
       "note": "Nessun dato verificato in questo aggiornamento"
     }
   ],
-  "label": "Chiusura delle Borse europee",
+  "label": "Chiusure di ieri e Asia stamattina",
   "sources": [
     {
-      "name": "ANSA, Milano chiude in rialzo (10 novembre)",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-milano-chiude-in-rialzo-069-con-fincantieri-bper-e-unicredit_6c437363-b253-4fde-b6db-6776b74f6369.html"
+      "name": "ANSA, inflazione Usa e Wall Street (10 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/10/linflazione-sale-a-ottobre-negli-usa-oltre-le-attese-04-mensile_582d93a0-dc0f-4f94-ab08-c2e402c01620.html"
     },
     {
-      "name": "ANSA, petrolio",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/09/il-petrolio-crolla-su-possibili-progressi-in-medio-oriente-brent-56_aabacb7b-0fb4-4a98-a0b2-2b9d0cc3627d.html"
+      "name": "CNBC, chiusura di Wall Street (10 novembre)",
+      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html"
     },
     {
-      "name": "ANSA, Tokyo",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-tokyo-guadagna-oltre-il-3-in-apertura-il-nikkei-torna-sopra-quota-60mila_ebf520f9-1660-407f-be39-9967c37cab8b.html"
+      "name": "ANSA, Milano apre in rialzo (11 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/borsa-milano-apre-in-rialzo-079_4442ba73-fc2b-46af-bb32-06e25cbbf454.html"
     },
     {
-      "name": "Teleborsa, Hong Kong",
-      "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/borsa-stabile-hong-kong-che-riporta-un-cauto-008-15_2026-11-10_TLB-1LINER.html?lang=it"
+      "name": "ANSA, Asia in rialzo (11 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/borsa-asia-in-rialzo-bene-il-comparto-tecnologico-tokyo-13_07d4b6ad-7205-41a6-a6cb-c65bf45fe33e.html"
+    },
+    {
+      "name": "ANSA, petrolio (11 novembre)",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/petrolio-in-rialzo-brent-a-9254-dollari-al-barile_0def3e9a-e7fe-4b34-912a-bd99cc708c95.html"
     }
   ],
-  "summary": "Piazza Affari chiude in rialzo dello 0,69% a 51.755 punti, lontano dai massimi della seduta dopo l'inflazione Usa sopra le attese. Bene Fincantieri, Bper e UniCredit; male Stellantis e A2a."
+  "summary": "Wall Street ha chiuso in calo il 10 novembre dopo l'inflazione Usa sopra le attese, mentre stamattina Asia ed Europa salgono: Tokyo +1,3%, Piazza Affari apre a +0,79%. Il Brent è a 92,54 dollari, l'oro a 4.063,80."
 }

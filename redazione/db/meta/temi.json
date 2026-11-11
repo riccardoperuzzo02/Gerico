@@ -1,44 +1,23 @@
 {
-  "asOf": "2026-11-09T16:58:00+01:00",
+  "asOf": "2026-11-11T09:22:00+01:00",
   "temi": [
     {
       "id": "iran-usa",
-      "keywords": [
-        "Iran",
-        "Teheran",
-        "Hormuz",
-        "Qeshm",
-        "Iron Gate",
-        "houthi"
-      ],
+      "keywords": ["Iran", "Teheran", "Hormuz", "Qeshm", "Iron Gate", "houthi"],
       "label": "Iran-Usa",
       "since": "2026-11-09"
     },
     {
       "id": "ucraina",
-      "keywords": [
-        "Ucrain",
-        "Kiev",
-        "Kyiv",
-        "Zaporizh",
-        "Cremlino",
-        "Ryabkov"
-      ],
+      "keywords": ["Ucrain", "Kiev", "Kyiv", "Zaporizh", "Cremlino", "Ryabkov"],
       "label": "Ucraina",
       "since": "2026-11-09"
     },
     {
-      "id": "voto-usa",
-      "keywords": [
-        "Democratici",
-        "Repubblicani",
-        "Camera e Senato",
-        "midterm",
-        "voto Usa",
-        "voto americano"
-      ],
-      "label": "Voto Usa",
-      "since": "2026-11-09"
+      "id": "israele-governo",
+      "keywords": ["Israele", "Eisenkot", "Netanyahu", "Knesset", "Likud", "Herzog"],
+      "label": "Israele",
+      "since": "2026-10-27"
     }
   ]
 }

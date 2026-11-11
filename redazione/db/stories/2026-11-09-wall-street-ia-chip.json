@@ -1,6 +1,6 @@
 {
-  "article": "Il 5 novembre a Wall Street i titoli dell'intelligenza artificiale e dei chip hanno registrato forti perdite. In seduta il Nasdaq perdeva oltre il 5% e l'indice dei semiconduttori Sox il 10,3%, con Nvidia a meno 8,6%, scrive Milano Finanza.\n\nMilano Finanza collega il calo ai timori di limiti allo sviluppo dell'IA dopo il voto americano, vinto dai Democratici, e ai conti di Qualcomm con guidance ridotta.\n\nIl 6 novembre c'è stato un rimbalzo parziale. Secondo Journal Arta, l'S&P 500 ha chiuso a 7.376,86 punti (più 0,32%), il Nasdaq a 24.579,42 (più 1,09%) e il Dow Jones a 51.285,73 (meno 0,46%). Le Borse europee hanno chiuso in calo lo stesso giorno, e Teleborsa cita i dati americani sul lavoro e i timori sui data center.\n\nIl 9 novembre ANSA riporta che Nvidia perde il 6% nel pre-market dopo l'avvio di un'indagine su Huang. Al Jazeera scrive che Nvidia ha aperto un'indagine sull'amministratore delegato Jensen Huang per una presunta relazione. Alle 12:43 le Borse europee salgono: il Ftse Mib guadagna l'1,94% e il Dax lo 0,95%, secondo Teleborsa.\n\nIl 10 novembre il Nikkei di Tokyo ha aperto in rialzo del 3,13% ed è tornato sopra i 60mila punti, riferisce l'Ansa, che attribuisce il movimento al rimbalzo dei titoli tecnologici e dei semiconduttori e al calo del petrolio. Secondo Teleborsa, alle 06:20 Hong Kong era a più 0,08% e alle 06:08 Shanghai a più 0,37%. Il Post scrive che il 9 novembre il titolo Nvidia è calato in modo marcato dopo le notizie sul rapporto del suo amministratore delegato con una presunta spia cinese. Per questo giro non c'è una fonte verificata sulla chiusura di Wall Street del 9 novembre.",
-  "change": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang.",
+  "article": "Wall Street ha chiuso in calo il 10 novembre dopo un dato sull'inflazione americana più alto delle attese. Secondo CNBC il Dow Jones ha perso lo 0,3% a 52.231,89 punti, lo S&P 500 lo 0,38% a 7.520,93 e il Nasdaq lo 0,74% a 25.065,87. CNBC lega il calo alle attese di un rialzo dei tassi della Fed a dicembre e al peso di Nvidia.\n\nL'indice dei prezzi al consumo di ottobre è salito dello 0,4% su base mensile, contro attese dello 0,3%, riferisce l'Ansa. A settembre l'aumento era stato dello 0,6%. L'inflazione di fondo, senza alimentari ed energia, è salita dello 0,3% contro lo 0,2% atteso, terzo rialzo consecutivo. L'Ansa precisa che l'ufficio statistico del lavoro non può calcolare il dato annuale di ottobre, perché mancano i dati del 2025 a causa dello shutdown. Teleborsa titola che nella seduta i rendimenti obbligazionari americani sono saliti.\n\nSul fronte europeo, il membro del consiglio direttivo della Bce Lane considera prudente un rialzo dei tassi a dicembre se i dati restano invariati, riferisce l'Ansa. Secondo l'Ansa, anche la Fed sarebbe orientata verso un rialzo.\n\nStamattina l'Asia è in rialzo, con i titoli tecnologici in testa e Tokyo a più 1,3%, scrive l'Ansa. Milano ha aperto in rialzo dello 0,79% intorno a 52.161 punti, Parigi sale dello 0,58% e Londra dello 0,81% in apertura. Lo spread tra Btp e Bund apre a 103,4 punti, con il rendimento del Btp decennale al 4,33%. L'inflazione tedesca di ottobre scende al 2,8%, in linea con le stime, con prezzi in calo dello 0,2% sul mese, secondo l'Ansa.\n\nSulle materie prime, sempre secondo l'Ansa, alle 8 il Brent sale a 92,54 dollari al barile e il Wti a 86,67, mentre l'oro è a 4.063,80 dollari l'oncia. L'euro è stabile a 1,1157 dollari e a 177,22 yen.",
+  "change": "11 novembre: inflazione Usa sopra le attese, Wall Street in calo, Asia ed Europa in rialzo.",
   "city": {
     "lat": 40.71,
     "lon": -74.01,
@@ -10,35 +10,35 @@
   "facts": [
     {
       "n": 1,
-      "text": "Il 5 novembre, in seduta, il Nasdaq perdeva oltre il 5% e l'indice dei semiconduttori Sox il 10,3%; Nvidia -8,6%.",
+      "text": "Il 10 novembre Dow -0,3% a 52.231,89, S&P 500 -0,38% a 7.520,93, Nasdaq -0,74% a 25.065,87.",
       "who": [
-        "Milano Finanza"
+        "CNBC"
       ]
     },
     {
       "n": 1,
-      "text": "Milano Finanza lega il calo ai timori di limiti allo sviluppo dell'IA dopo il voto e ai conti con guidance ridotta di Qualcomm.",
+      "text": "L'inflazione Usa di ottobre sale dello 0,4% sul mese contro attese dello 0,3%; quella di fondo dello 0,3% contro lo 0,2%.",
       "who": [
-        "Milano Finanza"
+        "ANSA"
       ]
     },
     {
       "n": 1,
-      "text": "Il 6 novembre l'S&P 500 chiude a 7.376,86 (+0,32%), il Nasdaq a 24.579,42 (+1,09%) e il Dow a 51.285,73 (-0,46%).",
+      "text": "Il membro Bce Lane considera prudente un rialzo dei tassi a dicembre se i dati restano invariati.",
       "who": [
-        "Journal Arta"
+        "ANSA"
       ]
     },
     {
       "n": 1,
-      "text": "Il 6 novembre le Borse europee chiudono in calo; Teleborsa cita i dati Usa sul lavoro e i timori sui data center.",
+      "text": "Milano apre a più 0,79% intorno a 52.161 punti, Parigi a più 0,58% e Londra a più 0,81%; Tokyo sale dell'1,3%.",
       "who": [
-        "Teleborsa"
+        "ANSA"
       ]
     },
     {
       "n": 1,
-      "text": "Il Nikkei apre in rialzo del 3,13% e torna sopra 60mila punti.",
+      "text": "Il Brent è a 92,54 dollari, il Wti a 86,67 e l'oro a 4.063,80; lo spread Btp-Bund apre a 103,4 punti.",
       "who": [
         "ANSA"
       ]
@@ -46,6 +46,10 @@
   ],
   "firstSeen": "2026-11-09T07:26:39+01:00",
   "history": [
+    {
+      "at": "2026-11-11T09:22:00+01:00",
+      "text": "11 novembre: inflazione Usa sopra le attese, Wall Street in calo, Asia ed Europa in rialzo, Lane apre a un rialzo Bce a dicembre."
+    },
     {
       "at": "2026-11-10T07:25:00+01:00",
       "text": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang."
@@ -57,75 +61,54 @@
   ],
   "notCovered": [],
   "open": [
-    "Il rimbalzo di venerdì reggerà?",
-    "Quali regole sull'IA proporrà il nuovo Congresso?"
+    "La Fed alzerà i tassi a dicembre?",
+    "La Bce seguirà con un rialzo a dicembre?",
+    "Quando l'ufficio statistico potrà calcolare l'inflazione annuale?"
   ],
   "places": [
     "US"
   ],
-  "rank": 6,
+  "rank": 5,
   "section": "mercati",
   "sources": [
     {
-      "angle": "Il crollo di chip e IA dopo il voto.",
+      "angle": "Dati sull'inflazione Usa, Lane, aperture di Borsa, spread, cambi e materie prime di stamattina.",
       "area": "Italia",
-      "at": "2026-11-05T22:00:00+01:00",
+      "date": "2026-11-11",
       "country": "Italia",
-      "kind": "giornale",
-      "name": "Milano Finanza",
-      "stance": "allineata",
-      "url": "https://www.milanofinanza.it/news/il-congresso-dem-affossa-l-ai-2723292"
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/10/linflazione-sale-a-ottobre-negli-usa-oltre-le-attese-04-mensile_582d93a0-dc0f-4f94-ab08-c2e402c01620.html"
     },
     {
-      "angle": "Chiusure europee del 6 novembre.",
+      "angle": "Chiusura di Wall Street del 10 novembre e attese sulla Fed.",
+      "area": "Stati Uniti",
+      "date": "2026-11-10",
+      "country": "Stati Uniti",
+      "kind": "tv",
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html"
+    },
+    {
+      "angle": "Listini americani in calo e rendimenti obbligazionari in rialzo nella seduta del 10 novembre.",
       "area": "Italia",
-      "at": "2026-11-06T18:00:00+01:00",
+      "date": "2026-11-10",
       "country": "Italia",
       "kind": "agenzia",
       "name": "Teleborsa",
-      "stance": "allineata",
-      "url": "https://www.teleborsa.it/News/2026/11/06/diffusi-ribassi-in-europa-tra-timori-su-ai-e-stretta-fed-221.html"
-    },
-    {
-      "angle": "Chiusura di Wall Street del 6 novembre.",
-      "area": "Stati Uniti",
-      "at": "2026-11-07T00:00:00+01:00",
-      "country": "",
-      "kind": "giornale",
-      "name": "Journal Arta",
-      "stance": "parziale",
-      "url": "https://journalarta.com/en/2026/11/07/wall-street-close-nasdaq-rises-1-09-and-sp-500-gains-0-32-as-dow-slips-0-46/"
-    },
-    {
-      "angle": "Apertura di Tokyo, yen e petrolio.",
-      "area": "Italia",
-      "country": "IT",
-      "date": "2026-11-10",
-      "kind": "agenzia",
-      "name": "ANSA",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/10/borsa-tokyo-guadagna-oltre-il-3-in-apertura-il-nikkei-torna-sopra-quota-60mila_ebf520f9-1660-407f-be39-9967c37cab8b.html"
-    },
-    {
-      "angle": "Il calo di Nvidia dopo le notizie su Huang.",
-      "area": "Italia",
-      "country": "IT",
-      "date": "2026-11-09",
-      "kind": "giornale",
-      "name": "Il Post",
-      "url": "https://www.ilpost.it/2026/11/09/nvidia-risultato-borsa-notizia-relazione-ceo-presunta-spia-cinese/"
+      "url": "https://www.teleborsa.it/News/2026/11/10/listini-statunitensi-ampliano-le-perdite-e-rendimenti-obbligazionari-al-rialzo-251.html"
     }
   ],
   "status": "live",
-  "summary": "Il 9 novembre Nvidia perdeva il 6% nel pre-market dopo l'indagine interna su Huang. Stamattina il Nikkei apre in rialzo del 3,13% e torna sopra 60mila punti.",
+  "summary": "Wall Street ha chiuso in calo il 10 novembre dopo un'inflazione Usa sopra le attese, con il mercato che scommette su un rialzo Fed a dicembre. Stamattina Asia ed Europa salgono.",
   "tags": [
     "Wall Street",
-    "Intelligenza artificiale",
-    "Nasdaq"
+    "Inflazione",
+    "Fed",
+    "Bce"
   ],
-  "themes": [
-    "voto-usa"
-  ],
-  "title": "Borse: Nvidia cede il 6% prima dell'apertura, Tokyo rimbalza oltre il 3%",
-  "updated": "2026-11-10T07:25:00+01:00",
-  "view": "Le fonti concordano sulla sequenza: forte vendita di titoli IA e chip il 5 novembre, rimbalzo parziale il 6. Le cause sono interpretazioni dei cronisti: regole più dure sull'IA dopo il voto, i conti Qualcomm e, per Teleborsa, i dati sul lavoro che alzano le attese su un rialzo dei tassi.\n\nConta perché i titoli IA pesano molto sugli indici Usa. Da guardare: se il rimbalzo regge e come reagiscono i rendimenti Usa."
+  "themes": [],
+  "title": "Borse: inflazione Usa sopra le attese, Wall Street cede, Asia ed Europa salgono",
+  "updated": "2026-11-11T09:22:00+01:00",
+  "view": "Il dato certo è che i prezzi Usa sono saliti più delle attese e che CNBC lega il calo di Wall Street a un possibile rialzo Fed a dicembre. Il legame tra inflazione, rendimenti e Borsa è un'interpretazione dei cronisti, e le fonti lette danno solo in parte il quadro: manca il dato annuale, che l'ufficio statistico non può calcolare.\n\nConta perché un rialzo di Fed e Bce cambierebbe il costo del denaro e il peso dei titoli tecnologici. Da guardare: gli interventi dei banchieri centrali e i prossimi dati sui prezzi."
 }

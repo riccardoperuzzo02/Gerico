@@ -1,9 +1,9 @@
 {
   "lastPublish": {
-    "at": "2026-11-10T21:10:32+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (387 parole); titoli.py: nessun titolo nel database; controlla: 1 cose da sistemare."
+    "at": "2026-11-11T09:27:24+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-10T13:24:50+01:00",
+  "lastRun": "2026-11-11T09:27:30+01:00",
   "marketsRun": {
     "at": "2026-11-10T21:10:15+01:00",
     "esito": "Aggiornato solo il Ftse Mib (chiusura 51.755, +0,69%, ANSA 17:54) in Mercati e Terminal; Dax, Cac 40, Ftse 100, Aex, Smi, spread e il resto senza un articolo di chiusura di oggi verificato, lasciati ai dati del 9 novembre."
@@ -12,22 +12,27 @@
     "ANSA",
     "Reuters",
     "Al Jazeera",
-    "Kyiv Independent"
+    "Kyiv Independent",
+    "Il Post",
+    "Open",
+    "Times of Israel",
+    "Teleborsa",
+    "CNBC"
   ],
   "paesiRun": {
     "at": "2026-11-10T13:32:00+01:00",
     "esito": "US 1 nuova (Hegseth, impeachment)/0 aggiornate/0 archiviate; ES 1 nuova (Oviedo, esplosione)/0/0; GB, FR, DE senza storie: pochi articoli apribili e nessuna seconda fonte di oggi."
   },
   "quality": {
-    "articlesDiscarded": 0,
-    "articlesRead": 6,
-    "at": "2026-11-10T13:24:50+01:00",
-    "factsChecked": 0,
-    "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 0,
-    "storiesUpdated": 2
+    "articlesDiscarded": 3,
+    "articlesRead": 26,
+    "at": "2026-11-11T09:27:30+01:00",
+    "factsChecked": 8,
+    "factsCorrected": 1,
+    "storiesArchived": 5,
+    "storiesNew": 5,
+    "storiesUpdated": 5
   },
   "runningSince": null,
-  "storiesLive": 10
+  "storiesLive": 12
 }

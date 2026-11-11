@@ -91,5 +91,9 @@
   "themes": [],
   "title": "Bollette: approvato il decreto bis, stime diverse sul risparmio delle famiglie",
   "updated": "2026-11-11T09:22:00+01:00",
-  "view": "Le cifre dipendono da chi le dà: il governo parla di un taglio del 4-5% sul prezzo finale, le associazioni dei consumatori e i centri studi di risparmi per famiglia tra 17 e 37 euro l'anno. Sono stime, non dati verificati, perché il taglio dipende dall'andamento del prezzo del gas.\n\nConta perché il decreto parte da gennaio 2027 e dura 18 mesi. Da guardare: il testo in Parlamento e i prezzi del gas nei prossimi mesi."
+  "view": "Le cifre dipendono da chi le dà: il governo parla di un taglio del 4-5% sul prezzo finale, le associazioni dei consumatori e i centri studi di risparmi per famiglia tra 17 e 37 euro l'anno. Sono stime, non dati verificati, perché il taglio dipende dall'andamento del prezzo del gas.\n\nConta perché il decreto parte da gennaio 2027 e dura 18 mesi. Da guardare: il testo in Parlamento e i prezzi del gas nei prossimi mesi.",
+  "figure": {
+    "value": "17-37 €",
+    "label": "il risparmio stimato per famiglia in un anno"
+  }
 }

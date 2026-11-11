@@ -381,6 +381,11 @@
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';
   const imgSeen = new Set();
   G.storyImg = (s, o) => {
+    // economia, mercati e tecnologia: se la redazione ha scritto il numero della notizia, l'immagine è quel numero
+    const f = s && s.figure;
+    if (f && typeof f.value === "string" && typeof f.label === "string" && ["economia", "mercati", "tecnologia"].includes(s.section)) {
+      return '<figure class="media cifra' + (o && o.cls ? " " + o.cls : "") + '"><div class="cf-in"><b class="cf-v' + (f.value.length > 8 ? " lungo" : "") + '">' + G.esc(f.value) + '</b><span class="cf-l">' + G.esc(G.tn ? G.tn(f.label) : f.label) + "</span></div></figure>";
+    }
     const im = s && s.img;
     if (!im || typeof im.src !== "string" || !/^img\/storie\/[\w.-]+\.svg(\?v=\w+)?$/.test(im.src)) return "";
     o = o || {};

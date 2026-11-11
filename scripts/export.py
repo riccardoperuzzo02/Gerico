@@ -66,6 +66,11 @@ def clean_url(u):
 
 def clean_story(raw, sid):
     s = {k: raw[k] for k in STORY_FIELDS if k in raw}
+    # il numero che riassume la notizia: sul sito diventa l'immagine delle storie di economia, mercati e tecnologia
+    fig = raw.get("figure")
+    if isinstance(fig, dict) and isinstance(fig.get("value"), str) and isinstance(fig.get("label"), str) \
+            and 0 < len(fig["value"].strip()) <= 14 and 0 < len(fig["label"].strip()) <= 70 and any(ch.isdigit() for ch in fig["value"]):
+        s["figure"] = {"value": fig["value"].strip(), "label": fig["label"].strip()}
     s["id"] = sid
     paese = str(raw.get("country") or "").strip().upper()
     if paese not in PAESI:

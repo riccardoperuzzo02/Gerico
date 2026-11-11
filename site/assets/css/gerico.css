@@ -2793,3 +2793,20 @@ html.nuova body:not(.term) .listen { overflow: visible; padding: 14px 2px 16px 4
 html.nuova .fonti-t, .fonti-t { margin-bottom: 16px; font-size: 0.8125rem; letter-spacing: 0.07em; color: var(--ink); }
 @media (prefers-reduced-motion: reduce) { .fonti-v { overflow-x: auto; -webkit-mask-image: none; mask-image: none; } }
 html.nuova .fonti { border-radius: 0 !important; }
+
+/* ---------- il numero della notizia al posto della mappa (economia, mercati, tecnologia) ---------- */
+.media.cifra { display: grid; place-items: center; aspect-ratio: 16 / 9; margin: 0; background: var(--accent, #1B2F5B); color: var(--on-accent, #FFFFFF); container-type: size; overflow: hidden; }
+.cf-in { display: grid; gap: 3cqh; justify-items: center; padding: 6cqh 6cqw; text-align: center; }
+.cf-v { font-family: var(--serif, inherit); font-size: 34cqh; font-weight: 600; line-height: 0.95; letter-spacing: -0.03em; white-space: nowrap; font-variant-numeric: lining-nums; }
+.cf-v.lungo { font-size: 26cqh; }
+.cf-l { max-width: 30ch; font-size: max(0.6875rem, 7cqh); font-weight: 700; line-height: 1.25; letter-spacing: 0.01em; opacity: 0.82; text-wrap: balance; }
+/* nella miniatura del telefono resta solo il numero */
+@container (max-width: 140px) { .cf-l { display: none; } .cf-v { font-size: 30cqw; } .cf-v.lungo { font-size: 19cqw; } }
+html.nuova .media.mossa.cifra > :first-child { transform: scale(1.04) !important; }
+
+/* dal controllo di tutte le pagine: il sommario d'apertura non si taglia a metà frase, i nomi delle testate hanno il contrasto giusto, le percentuali nei riquadri piccoli della mappa ci stanno */
+html.nuova .lead .sum { -webkit-line-clamp: 5; }
+@media (max-width: 759px) { html.nuova .lead .sum { font-size: 1.125rem; line-height: 1.45; } }
+.fonti-l li { color: var(--muted); opacity: 1; }
+@media (hover: hover) { .fonti-l li:hover { color: var(--ink); } }
+.tmap .tile.small .cg { font-size: 0.6875rem; letter-spacing: -0.03em; }

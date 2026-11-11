@@ -2976,4 +2976,84 @@
 
     return { apri, chiudi, primaVolta };
   })();
+
+  // ---------- il sito vivo: quello che entra nello schermo sale appena, il puntatore muove le cose ----------
+  // Solo movimento leggero, spento per chi ha chiesto meno movimento. Il cerchio che segue il puntatore e le immagini che
+  // si spostano con lui ci sono solo con il mouse; il puntatore vero resta sempre visibile.
+  (() => {
+    if (G.reduced()) return;
+    const html = document.documentElement;
+    // 1. entrata: riquadri e notizie che stanno sotto lo schermo salgono di poco quando ci arrivi
+    const QUALI = ".list > .item, .blk, .t-panel, .altre-l > li, .story-side > section, .next, .prose h2";
+    if (window.IntersectionObserver) {
+      const io = new IntersectionObserver((es) => {
+        es.forEach((e) => {
+          if (!e.isIntersecting) return;
+          io.unobserve(e.target);
+          e.target.classList.add("vv-in");
+          setTimeout(() => e.target.classList.remove("vv", "vv-in"), 700);
+        });
+      }, { rootMargin: "0px 0px -6% 0px" });
+      let inCoda = false;
+      const guarda = () => {
+        inCoda = false;
+        const H = window.innerHeight;
+        document.querySelectorAll(QUALI).forEach((el) => {
+          if (el._vv) return;
+          el._vv = true;
+          // solo quello che sta sotto lo schermo e non è dentro una pagina preparata per lo swipe
+          if (el.getBoundingClientRect().top < H || el.closest("[aria-hidden='true'], dialog")) return;
+          el.classList.add("vv");
+          io.observe(el);
+        });
+      };
+      const chiedi = () => { if (!inCoda) { inCoda = true; requestAnimationFrame(guarda); } };
+      new MutationObserver(chiedi).observe(document.body, { childList: true, subtree: true });
+      chiedi();
+    }
+    if (!(window.matchMedia && matchMedia("(hover: hover) and (pointer: fine)").matches)) return;
+    // 2. il cerchio che segue il puntatore: si allarga su quello che si può toccare, si stringe al clic
+    const c = document.createElement("div");
+    c.className = "punt";
+    c.setAttribute("aria-hidden", "true");
+    const sopra = !!c.showPopover;
+    if (sopra) c.setAttribute("popover", "manual");
+    document.body.appendChild(c);
+    const inCima = () => { if (!sopra) return; try { if (c.matches(":popover-open")) c.hidePopover(); c.showPopover(); } catch (e) { /* niente */ } };
+    inCima();
+    // un foglio che si apre va sopra tutto: il cerchio torna in cima
+    new MutationObserver((ms) => { if (ms.some((m) => m.target.tagName === "DIALOG" && m.target.open)) inCima(); })
+      .observe(document.body, { attributes: true, attributeFilter: ["open"], subtree: true });
+    let x = 0, y = 0, tx = 0, ty = 0, vivo = false, gira = false;
+    const passo = () => {
+      x += (tx - x) * 0.22; y += (ty - y) * 0.22;
+      c.style.transform = "translate3d(" + x.toFixed(1) + "px," + y.toFixed(1) + "px,0)";
+      if (Math.abs(tx - x) + Math.abs(ty - y) > 0.3) requestAnimationFrame(passo); else gira = false;
+    };
+    const TOCCA = "a, button, summary, label, select, [role='button'], [role='option'], [data-id]";
+    let media = null;
+    document.addEventListener("pointermove", (e) => {
+      if (e.pointerType && e.pointerType !== "mouse") return;
+      tx = e.clientX; ty = e.clientY;
+      if (!vivo) { vivo = true; x = tx; y = ty; c.classList.add("on"); }
+      if (!gira) { gira = true; requestAnimationFrame(passo); }
+      const t = e.target.closest ? e.target : null;
+      c.classList.toggle("su", !!(t && t.closest(TOCCA)));
+      c.classList.toggle("via", !!(t && t.closest("input, textarea, iframe, .tv-box")));
+      // 3. l'immagine della notizia sotto il puntatore si sposta appena verso di lui
+      const box = t && t.closest(".lead.has-img, .item.has-img, .st-media");
+      const m = box ? (box.matches(".media") ? box : box.querySelector(".media")) : null;
+      if (media && media !== m) { media.style.removeProperty("--px"); media.style.removeProperty("--py"); media.classList.remove("mossa"); }
+      media = m;
+      if (m) {
+        const r = m.getBoundingClientRect();
+        m.classList.add("mossa");
+        m.style.setProperty("--px", Math.max(-1, Math.min(1, (e.clientX - r.left - r.width / 2) / (r.width / 2))).toFixed(3));
+        m.style.setProperty("--py", Math.max(-1, Math.min(1, (e.clientY - r.top - r.height / 2) / (r.height / 2))).toFixed(3));
+      }
+    }, { passive: true });
+    document.addEventListener("pointerdown", () => c.classList.add("giu"), { passive: true });
+    document.addEventListener("pointerup", () => c.classList.remove("giu"), { passive: true });
+    html.addEventListener("pointerleave", () => { vivo = false; c.classList.remove("on"); });
+  })();
 })();

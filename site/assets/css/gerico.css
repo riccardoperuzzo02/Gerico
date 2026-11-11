@@ -2680,9 +2680,9 @@ html.nuova .altre { margin-top: 34px; }
 html .top-row > .top-title { visibility: hidden; }
 
 /* ---------- forme nette (11 novembre): un solo angolo, quasi vivo, per tutto il sito ----------
-   Riquadri, pulsanti, campi, schede, barre, immagini e menu hanno lo stesso angolo di 4 px, appena smussato. Restano tondi solo i segni
+   Riquadri, pulsanti, campi, schede, barre, immagini e menu hanno lo stesso angolo di 6 px, appena tondo. Restano tondi solo i segni
    che sono cerchi per natura: i punti delle notizie in corso e dei temi caldi, il tasto per ascoltare. */
-html.nuova { --r: 4px; --card-r: 4px; --r-img: 4px; --r-btn: 4px; --radius: 4px; }
+html.nuova { --r: 6px; --card-r: 6px; --r-img: 6px; --r-btn: 6px; --radius: 6px; }
 html.nuova *, html.nuova *::before, html.nuova *::after { border-radius: var(--r) !important; }
 html.nuova .hot-dot, html.nuova .k-live::before, html.nuova .ultim-l::before, html.nuova .t-next.soon::before, html.nuova .t-agenda li.next.soon::before,
 html.nuova .ls-btn, html.nuova .gp-play, html.nuova .ultim-p, html.nuova .menu-x, html.nuova .mw i { border-radius: 50% !important; }
@@ -2691,3 +2691,39 @@ html.nuova .flag { border-radius: 1px !important; }
 html.nuova .pc-scelte .int-tags .tag::after, html.nuova .pc-opz::after { width: 20px; height: 20px; }
 /* la barra in basso: una fascia netta */
 html.nuova .pc-bar, html.nuova .pc-bar > span { border-radius: 0 !important; }
+
+/* la colonna di destra è ferma: i mercati non scendono più sopra le brevi */
+html .mk-box { position: static; }
+
+/* ---------- il sito vivo (11 novembre) ---------- */
+/* entrata dal basso di quello che arriva nello schermo (le classi le mette lo script, solo sotto lo schermo) */
+.vv { opacity: 0; transform: translateY(16px); }
+.vv.vv-in { opacity: 1; transform: none; transition: opacity 560ms var(--ease), transform 640ms var(--ease); }
+/* il cerchio che segue il puntatore */
+.punt {
+  position: fixed; left: 0; top: 0; inset: 0 auto auto 0; width: 0; height: 0; margin: 0; padding: 0; border: 0; overflow: visible; background: none;
+  pointer-events: none; z-index: 2147483000; opacity: 0; transition: opacity var(--t-2) var(--ease);
+}
+html.nuova .punt::before, .punt::before {
+  content: ""; position: absolute; left: -15px; top: -15px; width: 30px; height: 30px; border-radius: 50% !important;
+  box-shadow: inset 0 0 0 1.5px var(--accent, var(--palm)); background: transparent; opacity: 0.55;
+  transition: transform var(--t-3) var(--ease), background-color var(--t-2) var(--ease), opacity var(--t-2) var(--ease);
+}
+.punt.on { opacity: 1; }
+.punt.su::before { transform: scale(1.7); background: color-mix(in srgb, var(--accent, var(--palm)) 12%, transparent); opacity: 0.9; }
+.punt.giu::before { transform: scale(0.75); }
+.punt.su.giu::before { transform: scale(1.3); }
+.punt.via::before { opacity: 0; }
+body.term ~ .punt::before, html.nuova:has(body.term) .punt::before { box-shadow: inset 0 0 0 1.5px #A9BDEB; }
+/* l'immagine segue il puntatore di qualche pixel */
+html.nuova .media.mossa > :first-child { transform: translate(calc(var(--px, 0) * 9px), calc(var(--py, 0) * 9px)) scale(1.06) !important; transition: transform 500ms var(--ease); }
+html.nuova .media { overflow: hidden; }
+/* i titoli delle sezioni e i link del menu: il filo si disegna da sinistra */
+@media (hover: hover) {
+  html.nuova .sec-nav .seg > a, html.nuova .more, html.nuova .foot a { background: linear-gradient(currentColor, currentColor) 0 calc(100% - 7px) / 0 1.5px no-repeat; transition: background-size var(--t-3) var(--ease), color var(--t-2) var(--ease); }
+  html.nuova .sec-nav .seg > a { background-position: 11px calc(100% - 6px); }
+  html.nuova .sec-nav .seg > a:hover:not([aria-current]) { background-size: calc(100% - 22px) 1.5px; }
+  html.nuova .more:hover, html.nuova .foot a:hover { background-size: 100% 1.5px; text-decoration: none; }
+}
+@media (prefers-reduced-motion: reduce) { .vv { opacity: 1; transform: none; } .punt { display: none; } }
+@media print { .vv { opacity: 1; transform: none; } .punt { display: none; } }

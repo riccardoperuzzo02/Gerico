@@ -2678,3 +2678,16 @@ html.nuova .altre { margin-top: 34px; }
 
 /* accanto al nome non compare più «Oggi»: il posto resta vuoto e tiene l'intestazione in ordine */
 html .top-row > .top-title { visibility: hidden; }
+
+/* ---------- forme nette (11 novembre): un solo angolo, quasi vivo, per tutto il sito ----------
+   Riquadri, pulsanti, campi, schede, barre, immagini e menu hanno lo stesso angolo di 2 px. Restano tondi solo i segni
+   che sono cerchi per natura: i punti delle notizie in corso e dei temi caldi, il tasto per ascoltare. */
+html.nuova { --r: 2px; --card-r: 2px; --r-img: 2px; --r-btn: 2px; --radius: 2px; }
+html.nuova *, html.nuova *::before, html.nuova *::after { border-radius: var(--r) !important; }
+html.nuova .hot-dot, html.nuova .k-live::before, html.nuova .ultim-l::before, html.nuova .t-next.soon::before, html.nuova .t-agenda li.next.soon::before,
+html.nuova .ls-btn, html.nuova .gp-play, html.nuova .ultim-p, html.nuova .menu-x, html.nuova .mw i { border-radius: 50% !important; }
+html.nuova .flag { border-radius: 1px !important; }
+/* nel percorso la scelta si segna con un quadrato pieno, non con un cerchio */
+html.nuova .pc-scelte .int-tags .tag::after, html.nuova .pc-opz::after { width: 20px; height: 20px; }
+/* la barra in basso: una fascia netta */
+html.nuova .pc-bar, html.nuova .pc-bar > span { border-radius: 0 !important; }

@@ -2970,18 +2970,9 @@
       return disegna();
     };
 
-    // la prima visita: una volta sola, in prima pagina, quando il nome è andato al suo posto. Chi ha già l'account o ha
-    // già risposto non lo rivede. Vero se il percorso parte (così la proposta dell'account non gli si accavalla).
-    const primaVolta = () => {
-      if (G.ls.get(FATTO, false)) return false;
-      if (C.entrato() || I.pulito(I.leggi()).fatto) { G.ls.set(FATTO, true); return false; }
-      if (G.current !== "home") return false;
-      G.afterIntro(() => setTimeout(() => {
-        if (G.current !== "home" || document.querySelector("dialog[open]") || G.ls.get(FATTO, false)) return;
-        apri("primo");
-      }, 700));
-      return true;
-    };
+    // Le domande non partono mai da sole: arrivano solo a chi crea un account nuovo (subito dopo l'iscrizione) e a chi le
+    // apre dal menu. Chi entra con un account che ha già, o legge senza account, non le vede.
+    const primaVolta = () => false;
 
     return { apri, chiudi, primaVolta };
   })();

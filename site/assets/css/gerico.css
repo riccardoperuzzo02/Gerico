@@ -2614,3 +2614,8 @@ html.nuova .lead .sum { font-size: 1.25rem; line-height: 1.42; color: var(--ink-
   html.nuova .list > .item:nth-child(2) { border-top: 1px solid var(--ink); }
   html.nuova .brand { font-size: 36px; }
 }
+
+/* il giorno dell'edizione al posto di «Oggi»; la barra delle sezioni si ferma subito sotto la fascia dell'Ultim'ora */
+html.nuova .home .large h1 { font-size: clamp(2rem, 1.55rem + 2.2vw, 3.25rem); line-height: 1.05; letter-spacing: -0.025em; text-wrap: balance; }
+html.nuova .home .sec-nav { top: calc(var(--top-h) + 40px); background: var(--ground); }
+html.nuova body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }

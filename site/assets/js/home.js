@@ -41,17 +41,16 @@ G.page("home", async function (P) {
   if (lastRun) {
     G.setEdition(lastRun);
     const edl = document.querySelector("#edition-line .ed-l");
-    // «Mercoledì 28 ottobre · ore 7:23»: sta in una riga anche sul telefono
-    if (edl) edl.textContent = edl.textContent.replace(" · edizione delle ", " · ore ").replace(" · edition of ", " · ");
-    // «Oggi» solo sopra l'edizione di oggi; per le altre il giorno (la data e l'ora sono nella riga accanto)
+    // il titolo grande è il giorno dell'edizione («Mercoledì 11 novembre»), sotto l'ora («ore 9:27»)
+    if (edl) {
+      const parti = edl.textContent.replace(" · edizione delle ", " · ore ").replace(" · edition of ", " · ").split(" · ");
+      if (parti.length > 1) { $("large-title").textContent = parti[0]; edl.textContent = parti.slice(1).join(" · "); }
+    }
+    // nella testata, quando il titolo grande è passato sotto: «Oggi» solo per l'edizione di oggi
     const age = G.dayAge(lastRun);
     if (age > 0) {
-      const name = age === 1 ? G.L("Ieri", "Yesterday") : age < 7 ? G.cap(G.weekday(lastRun)) : G.L("Ultima edizione", "Latest edition");
-      $("large-title").textContent = name;
       const tt = document.querySelector(".top-title");
-      if (tt) tt.textContent = name;
-      // con il giorno della settimana nel titolo, la riga sotto non lo ripete: «6 novembre · ore 13:23»
-      if (age > 1 && age < 7 && edl) edl.textContent = edl.textContent.replace(/^\S+\s+/, "");
+      if (tt) tt.textContent = age === 1 ? G.L("Ieri", "Yesterday") : age < 7 ? G.cap(G.weekday(lastRun)) : G.L("Ultima edizione", "Latest edition");
     }
   }
 

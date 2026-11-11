@@ -17,19 +17,34 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
-UA = "GericoFoto/1.0 (sito di notizie; scripts/foto.py)"
+UA = "GericoFoto/1.0 (https://gerico.financialnews.workers.dev/come-funziona.html; foto dei luoghi delle notizie) python-urllib"
 LIBERE = re.compile(r"^(cc[ -]?by(-sa)?([ -]\d(\.\d)?)?( [a-z]{2,3})?|cc[ -]?0( 1\.0)?|cc0|public domain|pd([ -].*)?)$", re.I)
 LARGA = 1280
+FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
 
 
 def get(url, raw=False):
+    """Con calma: una richiesta ogni secondo e mezzo; se Wikimedia dice «troppe richieste» si aspetta e si riprova."""
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*" if raw else "application/json"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        data = r.read(12 * 1024 * 1024)
-    return data if raw else json.loads(data.decode("utf-8"))
+    for prova in range(4):
+        time.sleep(1.5)
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                data = r.read(12 * 1024 * 1024)
+            return data if raw else json.loads(data.decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or prova == 3:
+                raise
+            try:
+                attesa = int(e.headers.get("Retry-After") or 0)
+            except ValueError:
+                attesa = 0
+            time.sleep(min(60, max(attesa, 8 * (prova + 1))))
 
 
 def api(host, **params):
@@ -56,10 +71,16 @@ def trova(wiki, title):
     tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in (c.get("claims") or {}).get("P31") or []]
     if "Q5" in tipi:
         return None, "la voce è di una persona: le foto delle persone non si usano"
-    if not nome:
-        return None, "la voce non c'è o non ha un'immagine principale"
-    if not re.search(r"\.(jpe?g|png|webp)$", nome, re.I):
-        return None, f"l'immagine principale non è una foto ({nome})"
+    # se l'immagine principale della voce è uno stemma o una bandiera (un disegno), si prova quella di Wikidata (P18)
+    if not nome or not FOTO.search(nome):
+        c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P18")
+        p18 = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in (c.get("claims") or {}).get("P18") or []]
+        p18 = [x for x in p18 if isinstance(x, str) and FOTO.search(x)]
+        if not p18:
+            return None, f"la voce non ha una foto (immagine principale: {nome or 'nessuna'})"
+        nome = p18[0]
+    if not pages or pages[0].get("missing"):
+        return None, "la voce non c'è"
     d = api("commons.wikimedia.org", action="query", prop="imageinfo", iiprop="url|size|mime|extmetadata", iiurlwidth=str(LARGA), titles="File:" + nome)
     pages = (d.get("query") or {}).get("pages") or []
     if not pages or pages[0].get("missing") or not pages[0].get("imageinfo"):

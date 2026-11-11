@@ -2760,3 +2760,10 @@ html.nuova .media { overflow: hidden; }
   html.nuova .pb-i:active svg { animation: cedi 320ms var(--ease); }
   html.nuova .pb-i[aria-current] svg { animation: salto 600ms var(--ease) 1; }
 }
+
+/* le fasce e le rubriche fatte solo di fili non hanno angoli: un filo arrotondato in punta sembra tagliato */
+html.nuova body:not(.term) .listen, html.nuova body:not(.term) .ticker, html.nuova .ultim-in, html.nuova .list .item, html.nuova .lead,
+html.nuova body:not(.term) .blk, html.nuova body:not(.term) .mk-box, html.nuova body.term .t-panel, html.nuova .story-side > section:first-child,
+html.nuova .linked, html.nuova .div-item, html.nuova .next a, html.nuova .prose h2, html.nuova .sec-nav .seg, html.nuova .altre-l li, html.nuova .ls-bar, html.nuova .ls-bar i { border-radius: 0 !important; }
+/* il riepilogo da ascoltare: il tasto ha il suo spazio e non viene tagliato quando si ingrandisce */
+html.nuova body:not(.term) .listen { overflow: visible; padding: 14px 2px 16px 4px; }

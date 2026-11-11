@@ -1,7 +1,7 @@
 {
   "lastPublish": {
-    "at": "2026-11-11T09:27:24+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
+    "at": "2026-11-11T10:12:27+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-11T09:27:30+01:00",
   "marketsRun": {
@@ -20,8 +20,8 @@
     "CNBC"
   ],
   "paesiRun": {
-    "at": "2026-11-10T13:32:00+01:00",
-    "esito": "US 1 nuova (Hegseth, impeachment)/0 aggiornate/0 archiviate; ES 1 nuova (Oviedo, esplosione)/0/0; GB, FR, DE senza storie: pochi articoli apribili e nessuna seconda fonte di oggi."
+    "at": "2026-11-11T10:13:00+01:00",
+    "esito": "US 0 nuove/1 aggiornata (Hegseth, impeachment bloccato)/0 archiviate; FR 1 nuova (Smic)/0/0; ES 0/0/0 (Oviedo senza novità verificabili); GB e DE senza storie: Sky, Independent, Spiegel, Tagesschau, Zeit non si aprono e nessuna seconda fonte leggibile."
   },
   "quality": {
     "articlesDiscarded": 3,

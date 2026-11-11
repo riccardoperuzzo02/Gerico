@@ -2657,3 +2657,21 @@ html.nuova .ad-card, html.nuova .ad-t, html.nuova .ad-fig, html.nuova .ad-rank, 
 /* il menu e i fogli */
 html.nuova .menu { border-radius: 16px 16px 0 0; }
 @media (min-width: 760px) { html.nuova .menu { border-radius: 12px; } }
+
+/* ---------- numeri d'ordine (11 novembre): 01, 02, 03 dove c'è una sequenza, lo stesso segno in tutto il sito ---------- */
+html.nuova .altre-n, html.nuova .pc-n, html.nuova .prose h2::before {
+  font-family: var(--sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: var(--muted);
+}
+html.nuova .pc-n { margin: 0 0 14px; }
+html.nuova .prose { counter-reset: capitolo; }
+html.nuova .prose h2 { counter-increment: capitolo; margin-top: 40px; padding-top: 16px; border-top: 2px solid var(--ink); }
+html.nuova .prose h2::before { content: counter(capitolo, decimal-leading-zero); display: block; margin-bottom: 6px; }
+/* in fondo alla storia: altre notizie, numerate */
+html.nuova .altre { margin-top: 34px; }
+.altre-l { margin: 6px 0 0; padding: 0; list-style: none; }
+.altre-l li + li { border-top: 1px solid var(--rule); }
+.altre-l a { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 16px 0; color: var(--ink); text-decoration: none; }
+.altre-c { display: grid; gap: 5px; }
+.altre-k { font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent, var(--palm)); }
+.altre-t { font-family: var(--serif, inherit); font-size: 1.1875rem; font-weight: 600; line-height: 1.22; letter-spacing: -0.01em; text-wrap: balance; }
+@media (hover: hover) { .altre-l a:hover .altre-t { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.16em; } }

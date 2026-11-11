@@ -125,7 +125,12 @@ G.page("story", async function (P) {
   const byline = '<p class="byline">' + esc(G.CURA) + ' <span class="by">' + esc(G.FIRMA) + "</span></p>";
   // l'immagine sotto il sommario, come nei quotidiani: la mappa del luogo della notizia
   const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true }) + byline + latest + (articleHTML || factsHTML);
-  const rest = divBlock + open + viewBlock + narrow + hist + nextHTML;
+  // sotto la prossima notizia, altre quattro da leggere: prima quelle della stessa sezione, poi le più importanti
+  const altre = order.filter((x) => x.id !== s.id && (!nx || x.id !== nx.id)).sort((a, b) => (b.section === s.section) - (a.section === s.section) || (a.rank || 99) - (b.rank || 99)).slice(0, 4);
+  const altreHTML = altre.length >= 2 ? '<section class="blk altre" aria-labelledby="altre-h"><h2 class="blk-h" id="altre-h">' + G.L("Potrebbe interessarti anche", "You might also like") + '</h2><ol class="altre-l">' +
+    altre.map((x, i) => '<li><a href="' + G.storyUrl(x) + '"><span class="altre-n" aria-hidden="true">' + String(i + 1).padStart(2, "0") + '</span><span class="altre-c"><span class="altre-k">' + esc(G.secLabel(x.section)) +
+      '</span><span class="altre-t">' + esc(G.headline(x)) + "</span></span></a></li>").join("") + "</ol></section>" : "";
+  const rest = divBlock + open + viewBlock + narrow + hist + nextHTML + altreHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
   const h1 = $("st-title");

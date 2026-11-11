@@ -2883,6 +2883,7 @@
           : '<span class="pc-spazio" aria-hidden="true"></span><button type="button" class="conto-b primario" data-pc="' + (st.modo === "paese" ? "chiudi" : "elenco") + '">' + L("Fatto", "Done") + "</button>";
       d.innerHTML = '<div class="pc-in"><header class="pc-alto">' + alto + '</header><div class="pc-corpo' + (verso ? " pc-" + verso : "") + '" data-passo="' + k + '">' +
         (!elenco && p.marchio ? '<p class="pc-marchio" aria-hidden="true">GERICO</p>' : "") +
+        (percorso && !p.marchio && !ultimo ? '<p class="pc-n" aria-hidden="true">' + String(i + (st.passi[0] === "benvenuto" ? 0 : 1)).padStart(2, "0") + " / " + String(n - (st.passi[0] === "benvenuto" ? 2 : 1)).padStart(2, "0") + "</p>" : "") +
         '<h2 class="pc-t" id="pc-t" tabindex="-1">' + G.esc(titolo) + '</h2><p class="pc-s">' + G.esc(sotto) + "</p>" +
         (corpo ? '<div class="pc-scelte">' + corpo + "</div>" : "") + '</div><footer class="pc-basso">' + basso + "</footer></div>";
       if (k === "paese") { const cur = d.querySelector('[data-paese][aria-pressed="true"]'); if (cur) cur.scrollIntoView({ block: "center" }); }

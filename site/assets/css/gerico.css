@@ -2779,3 +2779,10 @@ html.nuova body:not(.term) .listen { overflow: visible; padding: 14px 2px 16px 4
 @media (hover: hover) { .fonti:hover .fonti-l { animation-play-state: paused; } .fonti-l li:hover { opacity: 1; } }
 @media (max-width: 759px) { .fonti-l { gap: 36px; padding-right: 36px; } .fonti-l li { font-size: 1.125rem; } }
 @media (prefers-reduced-motion: reduce) { .fonti { -webkit-mask-image: none; mask-image: none; } .fonti-v { width: auto; overflow-x: auto; scrollbar-width: none; } .fonti-l { animation: none; } .fonti-l[aria-hidden] { display: none; } }
+
+/* la fascia delle testate è larga quanto l'intestazione e la colonna della pagina, non quanto lo schermo */
+.fonti { width: calc(100% - 2 * max(16px, env(safe-area-inset-left))); max-width: 1072px; margin: 0 auto; }
+@media (min-width: 760px) { .fonti { width: calc(100% - 48px); } }
+.fonti .fonti-t.wrap { width: auto; max-width: none; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+.fonti { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.fonti-t { -webkit-mask-image: none; }

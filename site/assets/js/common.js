@@ -1514,7 +1514,28 @@
     });
   });
 
+  // in fondo a ogni pagina: i nomi delle testate citate negli articoli di questi giorni, che scorrono in una fascia.
+  // Sono nomi scritti con il carattere di GERICO, non i loro marchi: dicono da dove vengono le notizie, non una società.
+  G.fontiPiede = async () => {
+    const foot = document.querySelector(".foot");
+    if (!foot || foot.querySelector(".fonti")) return;
+    let ed = null;
+    try { ed = await G.load("edition"); } catch (e) { return; }
+    const n = {};
+    ((ed && ed.stories) || []).concat((ed && ed.archive) || []).forEach((st) => (st.sources || []).forEach((x) => { if (x && x.name) n[x.name] = (n[x.name] || 0) + 1; }));
+    const nomi = Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 28);
+    if (nomi.length < 5 || !foot.isConnected || foot.querySelector(".fonti")) return;
+    const riga = nomi.map((x) => "<li>" + G.esc(x) + "</li>").join("");
+    const box = document.createElement("section");
+    box.className = "fonti";
+    box.setAttribute("aria-label", G.L("Le testate citate negli articoli di questi giorni", "The outlets cited in recent articles"));
+    box.innerHTML = '<p class="fonti-t wrap">' + G.L("Le testate citate in questi giorni", "Outlets cited in recent days") + '</p><div class="fonti-v" style="--n:' + nomi.length + '"><ul class="fonti-l">' + riga +
+      '</ul><ul class="fonti-l" aria-hidden="true">' + riga + "</ul></div>";
+    foot.prepend(box);
+  };
+
   G.initPrefs = () => {
+    G.fontiPiede();
     const html = document.documentElement;
     html.lang = G.lang;
     G.i18nStatic(document.body);

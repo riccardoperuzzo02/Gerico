@@ -2767,3 +2767,15 @@ html.nuova body:not(.term) .blk, html.nuova body:not(.term) .mk-box, html.nuova 
 html.nuova .linked, html.nuova .div-item, html.nuova .next a, html.nuova .prose h2, html.nuova .sec-nav .seg, html.nuova .altre-l li, html.nuova .ls-bar, html.nuova .ls-bar i { border-radius: 0 !important; }
 /* il riepilogo da ascoltare: il tasto ha il suo spazio e non viene tagliato quando si ingrandisce */
 html.nuova body:not(.term) .listen { overflow: visible; padding: 14px 2px 16px 4px; }
+
+/* ---------- in fondo alla pagina: i nomi delle testate citate scorrono in una fascia ---------- */
+.fonti { padding: 22px 0 20px; border-bottom: 1px solid var(--rule); overflow: hidden; }
+.fonti-t { margin-bottom: 14px; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+.fonti-v { display: flex; width: max-content; -webkit-mask-image: none; }
+.fonti { -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.fonti-l { display: flex; flex: none; align-items: baseline; gap: 52px; margin: 0; padding: 0 52px 0 0; list-style: none; animation: fonti-scorre calc(var(--n, 20) * 3.2s) linear infinite; }
+.fonti-l li { font-family: var(--serif, inherit); font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; color: var(--ink); opacity: 0.55; transition: opacity var(--t-2) var(--ease); }
+@keyframes fonti-scorre { to { transform: translateX(-100%); } }
+@media (hover: hover) { .fonti:hover .fonti-l { animation-play-state: paused; } .fonti-l li:hover { opacity: 1; } }
+@media (max-width: 759px) { .fonti-l { gap: 36px; padding-right: 36px; } .fonti-l li { font-size: 1.125rem; } }
+@media (prefers-reduced-motion: reduce) { .fonti { -webkit-mask-image: none; mask-image: none; } .fonti-v { width: auto; overflow-x: auto; scrollbar-width: none; } .fonti-l { animation: none; } .fonti-l[aria-hidden] { display: none; } }

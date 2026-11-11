@@ -57,7 +57,7 @@ Chi apre una sezione deve trovare le notizie di oggi: una sezione con solo notiz
 ELENCO FISSO DELLE TESTATE (controllalo a ogni giro)
 Italia: ANSA (https://www.ansa.it/sito/notizie/topnews/index.shtml e https://www.ansa.it/sito/notizie/economia/economia.shtml), Il Post (https://www.ilpost.it/), Open (https://www.open.online/), Il Sole 24 Ore (articoli singoli, trovati con la ricerca), Teleborsa (su borsaitaliana.it).
 Europa: Reuters (https://www.internazionale.it/ultime-notizie-reuters), Euronews (https://www.euronews.com/news/international).
-Stati Uniti: Axios (https://www.axios.com/), CNBC (articoli singoli via ricerca).
+Stati Uniti: Axios (https://www.axios.com/), CNBC (https://www.cnbc.com/world/ per le notizie e https://www.cnbc.com/markets/ per Wall Street e l'economia americana; se le pagine non si aprono, articoli singoli via ricerca). A ogni giro CNBC è tra le prime pagine da aprire: per le storie di economia, mercati e tecnologia americane cerca lì una delle fonti.
 Medio Oriente: Al Jazeera (https://www.aljazeera.com/news/), Times of Israel (https://www.timesofisrael.com/), Ynet (articoli via ricerca), Arab News (https://www.arabnews.com/).
 Ucraina e Russia: Kyiv Independent (https://kyivindependent.com/).
 Asia: South China Morning Post, Nikkei Asia, Japan Times, Times of India (le pagine non si aprono: usa la ricerca e considera solo risultati con data verificabile nell'indirizzo o nel titolo).

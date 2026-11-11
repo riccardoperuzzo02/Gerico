@@ -2786,3 +2786,10 @@ html.nuova body:not(.term) .listen { overflow: visible; padding: 14px 2px 16px 4
 .fonti .fonti-t.wrap { width: auto; max-width: none; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
 .fonti { -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
 .fonti-t { -webkit-mask-image: none; }
+
+/* la scritta sopra la fascia si legge: più grande, più scura e fuori dalla sfumatura dei lati (che resta solo sui nomi) */
+.fonti { -webkit-mask-image: none; mask-image: none; }
+.fonti-v { width: auto; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+html.nuova .fonti-t, .fonti-t { margin-bottom: 16px; font-size: 0.8125rem; letter-spacing: 0.07em; color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { .fonti-v { overflow-x: auto; -webkit-mask-image: none; mask-image: none; } }
+html.nuova .fonti { border-radius: 0 !important; }

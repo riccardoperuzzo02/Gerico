@@ -6,13 +6,8 @@ name: Dati del Terminal
 # dentro gli indici della mappa (scripts/indici.py). Salva i file in site/data
 # e li pubblica su main, come fanno i giri delle notizie e delle chiusure. Non usa crediti Claude.
 on:
-  schedule:
-    # orari in UTC: a Roma è un'ora in più d'inverno, due d'estate
-    - cron: "47 5 * * 1-5"    # prima dell'apertura europea
-    - cron: "17 11 * * 1-5"   # metà giornata
-    - cron: "52 16 * * 1-5"   # dopo la chiusura delle Borse europee
-    - cron: "23 21 * * 1-5"   # dopo la chiusura di Wall Street
-    - cron: "13 9 * * 6"      # sabato: cripto e notizie del venerdì sera
+  # gli orari li tiene Cloudflare (worker/orari.js), che avvia questo workflow al minuto giusto: i cron di GitHub
+  # partivano in ritardo o non partivano
   workflow_dispatch:
   # anche dopo ogni edizione pubblicata (gli orari del cron di GitHub non sono garantiti e a volte saltano)
   # e quando cambiano gli script del job; le edizioni del workflow «Redazione» lo avviano con workflow_dispatch,

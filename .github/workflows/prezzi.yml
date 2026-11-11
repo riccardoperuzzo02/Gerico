@@ -5,10 +5,8 @@ name: Prezzi
 # resto (macro, SEC, tono delle notizie, riepilogo a voce, screener) e quattro volte al giorno scarica anche lui i prezzi.
 # Un aggiornamento usa circa un minuto di GitHub Actions: 32 al giorno, circa 700 minuti al mese.
 on:
-  schedule:
-    # orari in UTC: dalle 7 alle 22:40 di Roma d'inverno (8-23:40 d'estate), ai minuti 7 e 37, lontano dall'ora piena
-    # quando i timer di GitHub ritardano di più. Copre la chiusura dell'Asia, le Borse europee e Wall Street
-    - cron: "7,37 6-21 * * 1-5"
+  # gli orari li tiene Cloudflare (worker/orari.js), che avvia questo workflow al minuto giusto: i cron di GitHub
+  # partivano in ritardo o non partivano
   workflow_dispatch:
 
 permissions:

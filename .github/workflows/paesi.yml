@@ -5,8 +5,8 @@ name: Paesi
 # dalle 6 alle 22 (ora italiana d'inverno; d'estate un'ora dopo). Non usa crediti Claude. Le testate le legge solo questo
 # job: il browser di chi legge non le chiama mai.
 on:
-  schedule:
-    - cron: "17 5-21/2 * * *"
+  # gli orari li tiene Cloudflare (worker/orari.js), che avvia questo workflow al minuto giusto: i cron di GitHub
+  # partivano in ritardo o non partivano
   push:
     branches: [main]
     paths: [scripts/paesi.py, scripts/fonti_paesi.json]

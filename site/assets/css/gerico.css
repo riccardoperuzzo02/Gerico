@@ -2699,22 +2699,6 @@ html .mk-box { position: static; }
 /* entrata dal basso di quello che arriva nello schermo (le classi le mette lo script, solo sotto lo schermo) */
 .vv { opacity: 0; transform: translateY(16px); }
 .vv.vv-in { opacity: 1; transform: none; transition: opacity 560ms var(--ease), transform 640ms var(--ease); }
-/* il cerchio che segue il puntatore */
-.punt {
-  position: fixed; left: 0; top: 0; inset: 0 auto auto 0; width: 0; height: 0; margin: 0; padding: 0; border: 0; overflow: visible; background: none;
-  pointer-events: none; z-index: 2147483000; opacity: 0; transition: opacity var(--t-2) var(--ease);
-}
-html.nuova .punt::before, .punt::before {
-  content: ""; position: absolute; left: -15px; top: -15px; width: 30px; height: 30px; border-radius: 50% !important;
-  box-shadow: inset 0 0 0 1.5px var(--accent, var(--palm)); background: transparent; opacity: 0.55;
-  transition: transform var(--t-3) var(--ease), background-color var(--t-2) var(--ease), opacity var(--t-2) var(--ease);
-}
-.punt.on { opacity: 1; }
-.punt.su::before { transform: scale(1.7); background: color-mix(in srgb, var(--accent, var(--palm)) 12%, transparent); opacity: 0.9; }
-.punt.giu::before { transform: scale(0.75); }
-.punt.su.giu::before { transform: scale(1.3); }
-.punt.via::before { opacity: 0; }
-body.term ~ .punt::before, html.nuova:has(body.term) .punt::before { box-shadow: inset 0 0 0 1.5px #A9BDEB; }
 /* l'immagine segue il puntatore di qualche pixel */
 html.nuova .media.mossa > :first-child { transform: translate(calc(var(--px, 0) * 9px), calc(var(--py, 0) * 9px)) scale(1.06) !important; transition: transform 500ms var(--ease); }
 html.nuova .media { overflow: hidden; }
@@ -2725,5 +2709,54 @@ html.nuova .media { overflow: hidden; }
   html.nuova .sec-nav .seg > a:hover:not([aria-current]) { background-size: calc(100% - 22px) 1.5px; }
   html.nuova .more:hover, html.nuova .foot a:hover { background-size: 100% 1.5px; text-decoration: none; }
 }
-@media (prefers-reduced-motion: reduce) { .vv { opacity: 1; transform: none; } .punt { display: none; } }
-@media print { .vv { opacity: 1; transform: none; } .punt { display: none; } }
+@media (prefers-reduced-motion: reduce) { .vv { opacity: 1; transform: none; } }
+@media print { .vv { opacity: 1; transform: none; } }
+
+/* ---------- tutto si muove un po' (11 novembre): nome, menu, pulsanti, frecce, punti ---------- */
+@keyframes su-piano { from { opacity: 0; transform: translateY(10px); } }
+@keyframes salto { 0%, 100% { transform: translateY(0) scale(1); } 35% { transform: translateY(-0.32em) scale(1.15); } 62% { transform: translateY(0) scale(0.92, 1.08); } 80% { transform: translateY(-0.08em); } }
+@keyframes battito { 0%, 100% { box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.45); } 60% { box-shadow: 0 0 0 6px rgba(200, 16, 46, 0); } }
+@keyframes cedi { 40% { transform: scale(0.86); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: no-preference) {
+  /* il nome: il punto salta quando ci passi o lo tocchi, e ogni tanto da solo; le lettere si stringono appena */
+  html.nuova .brand { transition: letter-spacing var(--t-3) var(--ease); }
+  html.nuova .brand::after { animation: salto 900ms var(--ease) 1.2s 1, salto 900ms var(--ease) 14s infinite; animation-composition: replace; transform-origin: 50% 100%; }
+  html.nuova .brand:hover::after, html.nuova .brand:active::after { animation: salto 700ms var(--ease) infinite; }
+  @media (hover: hover) { html.nuova .brand:hover { letter-spacing: -0.03em; } }
+  /* il menu: le voci entrano una dopo l'altra; l'icona si apre */
+  html.nuova .menu[open]:not(.closing) .menu-in > * { animation: su-piano 420ms var(--ease) backwards; }
+  html.nuova .menu[open] .menu-in > :nth-child(2) { animation-delay: 40ms; } html.nuova .menu[open] .menu-in > :nth-child(3) { animation-delay: 80ms; }
+  html.nuova .menu[open] .menu-in > :nth-child(4) { animation-delay: 120ms; } html.nuova .menu[open] .menu-in > :nth-child(5) { animation-delay: 160ms; }
+  html.nuova .menu[open] .menu-in > :nth-child(6) { animation-delay: 200ms; } html.nuova .menu[open] .menu-in > :nth-child(7) { animation-delay: 240ms; }
+  html.nuova .menu[open] .menu-in > :nth-child(8) { animation-delay: 280ms; } html.nuova .menu[open] .menu-in > :nth-child(n + 9) { animation-delay: 320ms; }
+  html.nuova .menu-btn svg { transition: transform var(--t-3) var(--ease); }
+  html.nuova .menu-btn:hover svg { transform: scaleX(1.18); }
+  html.nuova .menu-btn[aria-expanded="true"] svg { transform: rotate(90deg); }
+  html.nuova .menu-x svg { transition: transform var(--t-3) var(--ease); }
+  html.nuova .menu-x:hover svg { transform: rotate(90deg); }
+  html.nuova .menu-links > a, html.nuova .menu-links > button { transition: padding-left var(--t-2) var(--ease), background-color var(--t-1) var(--ease); }
+  @media (hover: hover) { html.nuova .menu-links > a:hover, html.nuova .menu-links > button:hover { padding-left: 18px; } }
+  /* il percorso e le tendine: le scelte entrano in fila */
+  html.nuova .pc-scelte .int-tags > *, html.nuova .pc-l > li, html.nuova .pc-elenco > li, html.nuova .tendina-l > li { animation: su-piano 380ms var(--ease) backwards; }
+  html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(2) { animation-delay: 35ms; } html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(3) { animation-delay: 70ms; }
+  html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(4) { animation-delay: 105ms; } html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(5) { animation-delay: 140ms; }
+  html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(6) { animation-delay: 175ms; } html.nuova :is(.int-tags, .pc-l, .pc-elenco, .tendina-l) > :nth-child(n + 7) { animation-delay: 210ms; }
+  /* la data in prima pagina e il titolo della storia salgono all'arrivo */
+  html.nuova .home .large h1, html.nuova .home .edition-sub, html.nuova .story-main h1 { animation: su-piano 620ms var(--ease) backwards; }
+  html.nuova .home .edition-sub { animation-delay: 90ms; }
+  /* i punti rossi battono */
+  html.nuova .ultim-l::before, html.nuova .sec-nav .hot-dot { animation: battito 2.4s ease-out infinite; }
+  /* le frecce vanno avanti, i pulsanti si alzano, il tasto per ascoltare respira */
+  html.nuova .more svg, html.nuova .more::after, html.nuova .next a svg, html.nuova .pc-voce svg, html.nuova .tk-h a svg, html.nuova .back svg { transition: transform var(--t-2) var(--ease); }
+  @media (hover: hover) {
+    html.nuova .more:hover svg, html.nuova .more:hover::after, html.nuova .next a:hover svg, html.nuova .pc-voce:hover svg, html.nuova .tk-h a:hover svg { transform: translateX(4px); }
+    html.nuova .back:hover svg { transform: translateX(-4px); }
+    html.nuova .conto-b.primario:hover, html.nuova .tags .tag:hover, html.nuova .paese-btn:hover { transform: translateY(-1px); }
+    html.nuova .ls-btn:hover, html.nuova .gp-play:hover { transform: scale(1.08); }
+  }
+  html.nuova .ls-btn, html.nuova .gp-play, html.nuova .paese-btn { transition: transform var(--t-2) var(--ease); }
+  html.nuova .ls-btn:active, html.nuova .gp-play:active { transform: scale(0.92); }
+  /* la barra in basso: l'icona toccata cede e torna */
+  html.nuova .pb-i:active svg { animation: cedi 320ms var(--ease); }
+  html.nuova .pb-i[aria-current] svg { animation: salto 600ms var(--ease) 1; }
+}

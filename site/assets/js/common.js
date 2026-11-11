@@ -386,6 +386,16 @@
     if (f && typeof f.value === "string" && typeof f.label === "string" && ["economia", "mercati", "tecnologia"].includes(s.section)) {
       return '<figure class="media cifra' + (o && o.cls ? " " + o.cls : "") + '"><div class="cf-in"><b class="cf-v' + (f.value.length > 8 ? " lungo" : "") + '">' + G.esc(f.value) + '</b><span class="cf-l">' + G.esc(G.tn ? G.tn(f.label) : f.label) + "</span></div></figure>";
     }
+    // la foto del luogo della notizia, da Wikimedia Commons, tenuta sul sito; sotto, autore e licenza
+    const ph = s && s.photo;
+    if (ph && typeof ph.src === "string" && /^img\/foto\/[\w.-]+\.jpg(\?v=\w+)?$/.test(ph.src)) {
+      o = o || {};
+      const visto = imgSeen.has(ph.src), pagina = G.safeUrl ? G.safeUrl(ph.page) : "";
+      const cred = G.L("Foto: ", "Photo: ") + (ph.author || "") + (ph.license ? ", " + ph.license : "") + G.L(", da Wikimedia Commons", ", via Wikimedia Commons");
+      return '<figure class="media foto' + (o.cls ? " " + o.cls : "") + '"><img' + (visto ? ' class="in"' : "") + ' src="' + G.esc(ph.src) + '" alt="' + G.esc(ph.alt || "") + '" width="' + (Number(ph.w) || 1280) + '" height="' + (Number(ph.h) || 720) +
+        '" decoding="' + (visto ? "sync" : "async") + '"' + (o.eager ? ' fetchpriority="high"' : visto ? "" : ' loading="lazy"') + ">" +
+        (o.credito ? '<figcaption class="m-cred">' + (pagina ? '<a href="' + G.esc(pagina) + '" target="_blank" rel="noopener noreferrer">' + G.esc(cred) + "</a>" : G.esc(cred)) + "</figcaption>" : "") + "</figure>";
+    }
     const im = s && s.img;
     if (!im || typeof im.src !== "string" || !/^img\/storie\/[\w.-]+\.svg(\?v=\w+)?$/.test(im.src)) return "";
     o = o || {};

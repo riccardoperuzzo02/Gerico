@@ -8,6 +8,7 @@ Le tue storie sono i file redazione/db/stories/<id>.json, con gli stessi campi d
 Gli altri campi:
 - id leggibile e stabile, con la data e la sigla: "2026-11-10-us-shutdown-senato".
 - title (una frase sola, al massimo 80 caratteri, niente punto e virgola: chi ha fatto cosa e dove, in modo neutro, con il paese nell'occhiello: «Germania: il Bundestag approva il bilancio 2027»), section "mondo", status ("live" | "archived").
+- photo {wiki, title}, facoltativo: il titolo esatto della voce di Wikipedia di un luogo, un edificio o un'istituzione che identifica la notizia ("Campidoglio (Washington)", "Palazzo di Westminster", "Bundestag"), wiki = "it" o "en". Mai la voce di una persona. La pubblicazione prende la foto da Wikimedia Commons se ha una licenza libera.
 - rank: un numero intero nel blocco del paese, la più importante per prima: Stati Uniti 101, 102...; Regno Unito 201...; Francia 301...; Germania 401...; Spagna 501... Così non si mescolano con le storie della redazione principale (1, 2, 3...).
 - summary (al massimo 2 frasi e 300 caratteri), article (vedi ARTICOLO), facts [{text, who}] (i 3-5 fatti principali, uno per voce, al massimo 200 caratteri; who = le fonti), view (il parere di GERICO, 2 paragrafi brevi separati da una riga vuota), open [domande precise a cui le fonti non rispondono].
 - sources [{name, kind, country, area, url, angle, at | date}]: una voce per testata; url = l'indirizzo dell'articolo, mai una prima pagina; area = dove ha sede la testata ("Stati Uniti", "Europa", "Italia"...); angle = in una riga cosa aggiunge quella fonte.

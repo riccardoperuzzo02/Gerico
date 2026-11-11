@@ -124,7 +124,7 @@ G.page("story", async function (P) {
   // la firma: «A cura di R.P.» (che gli articoli li scrive l'intelligenza artificiale lo dice il piede della pagina)
   const byline = '<p class="byline">' + esc(G.CURA) + ' <span class="by">' + esc(G.FIRMA) + "</span></p>";
   // l'immagine sotto il sommario, come nei quotidiani: la mappa del luogo della notizia
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true }) + byline + latest + (articleHTML || factsHTML);
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true, credito: true }) + byline + latest + (articleHTML || factsHTML);
   // sotto la prossima notizia, altre quattro da leggere: prima quelle della stessa sezione, poi le più importanti
   const altre = order.filter((x) => x.id !== s.id && (!nx || x.id !== nx.id)).sort((a, b) => (b.section === s.section) - (a.section === s.section) || (a.rank || 99) - (b.rank || 99)).slice(0, 4);
   const altreHTML = altre.length >= 2 ? '<section class="blk altre" aria-labelledby="altre-h"><h2 class="blk-h" id="altre-h">' + G.L("Potrebbe interessarti anche", "You might also like") + '</h2><ol class="altre-l">' +

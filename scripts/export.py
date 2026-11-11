@@ -64,9 +64,23 @@ def clean_url(u):
     return u if u.startswith("https://") or u.startswith("http://") else ""
 
 
+FOTO_DIR = os.path.join("site", "img", "foto")   # main la mette accanto alla cartella dei dati
+
+
 def clean_story(raw, sid):
     s = {k: raw[k] for k in STORY_FIELDS if k in raw}
     # il numero che riassume la notizia: sul sito diventa l'immagine delle storie di economia, mercati e tecnologia
+    # la foto presa da Wikimedia Commons (scripts/foto.py): c'è solo se il file e i suoi crediti sono sul sito
+    ph = raw.get("photo")
+    if isinstance(ph, dict) and isinstance(ph.get("title"), str):
+        base = os.path.join(FOTO_DIR, sid)
+        try:
+            cr = json.load(open(base + ".json", encoding="utf-8"))
+            if cr.get("key") == (ph.get("wiki") or "it") + ":" + ph["title"].strip() and os.path.exists(base + ".jpg"):
+                s["photo"] = {"src": "img/foto/%s.jpg?v=%d" % (sid, cr.get("bytes") or 0), "author": cr.get("author") or "", "license": cr.get("license") or "",
+                              "page": cr.get("page") or "", "alt": cr.get("title") or "", "w": cr.get("w") or 1280, "h": cr.get("h") or 720}
+        except (OSError, ValueError):
+            pass
     fig = raw.get("figure")
     if isinstance(fig, dict) and isinstance(fig.get("value"), str) and isinstance(fig.get("label"), str) \
             and 0 < len(fig["value"].strip()) <= 14 and 0 < len(fig["label"].strip()) <= 70 and any(ch.isdigit() for ch in fig["value"]):
@@ -195,6 +209,8 @@ def derive_terminal(markets):
 
 
 def main(dump, out):
+    global FOTO_DIR
+    FOTO_DIR = os.path.join(os.path.dirname(os.path.abspath(out)), "img", "foto")
     now = datetime.now(timezone.utc)
     os.makedirs(out, exist_ok=True)
     stories_dir = os.path.join(dump, "stories")

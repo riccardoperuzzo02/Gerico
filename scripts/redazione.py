@@ -46,6 +46,8 @@ GIRI = {
     "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 120},
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
+    # solo la pubblicazione del database com'è, senza Claude (dopo una correzione a mano)
+    "pubblica": {"ore": {}, "modello": "", "turni": 0},
 }
 # i cron sono in UTC: per ogni giro ce n'è uno per l'ora legale e uno per l'ora solare, e parte solo quello giusto
 CRON = {
@@ -449,7 +451,7 @@ def cmd_pubblica(giro):
         db, site = os.path.join(tmp, "db"), os.path.join(tmp, "site")
     gone = delete_old(db)
     py = sys.executable
-    steps = [("check_dump.py", [db]), ("export.py", [db, f"{site}/data"]), ("brevi.py", [db, f"{site}/data"]),
+    steps = [("check_dump.py", [db]), ("foto.py", [db, site]), ("export.py", [db, f"{site}/data"]), ("brevi.py", [db, f"{site}/data"]),
              ("riepilogo.py", [db, f"{site}/data"]), ("titoli.py", [db, f"{site}/data"]),
              ("share_pages.py", [site]), ("check_site.py", [site])]
     outputs, error = {}, None

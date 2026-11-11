@@ -2810,3 +2810,13 @@ html.nuova .lead .sum { -webkit-line-clamp: 5; }
 .fonti-l li { color: var(--muted); opacity: 1; }
 @media (hover: hover) { .fonti-l li:hover { color: var(--ink); } }
 .tmap .tile.small .cg { font-size: 0.6875rem; letter-spacing: -0.03em; }
+
+/* ---------- le foto delle notizie (da Wikimedia Commons, tenute sul sito) ---------- */
+.media.foto { background: var(--fill); }
+.media.foto img { aspect-ratio: 16 / 9; }
+/* nella storia la foto ha sotto autore e licenza */
+.st-media.foto { aspect-ratio: auto; overflow: visible; background: none; }
+.st-media.foto img { height: auto; aspect-ratio: 16 / 9; border-radius: var(--r-img, 6px); background: var(--fill); }
+.m-cred { margin-top: 7px; font-size: 0.75rem; line-height: 1.4; color: var(--muted); }
+.m-cred a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 0.15em; }
+html.nuova .st-media.foto.mossa > :first-child { transform: none !important; }

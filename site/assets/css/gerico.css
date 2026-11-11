@@ -2166,19 +2166,33 @@ html.nuova .blk.fol { padding-bottom: var(--f21); }
 .in-tendina { display: none !important; }
 .tendina { position: relative; flex: 0 0 auto; max-width: 100%; }
 .tendina[hidden] { display: none; }
-.tendina select {
-  -webkit-appearance: none; appearance: none; display: block; max-width: 100%; min-height: 44px; margin: 0;
-  padding: 0 44px 0 16px; border: 0; border-radius: 12px; background: var(--fill); color: var(--ink);
-  font: inherit; font-size: 0.9375rem; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; cursor: pointer;
+.tendina select { position: absolute; left: 0; top: 0; width: 1px; height: 1px; margin: 0; padding: 0; border: 0; opacity: 0; pointer-events: none; }
+.tendina-b {
+  display: inline-flex; align-items: center; gap: 10px; max-width: 100%; min-height: 40px; padding: 0 14px 0 16px; border: 0; border-radius: 999px;
+  background: var(--fill); color: var(--ink); font: inherit; font-size: 0.9375rem; font-weight: 700; cursor: pointer;
 }
-.tendina::after {
-  content: ""; position: absolute; top: 50%; right: 19px; width: 7px; height: 7px; margin-top: -6px;
-  border-right: 2px solid var(--ink-3); border-bottom: 2px solid var(--ink-3); transform: rotate(45deg); pointer-events: none;
+.tendina-b > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tendina-b > svg { flex: none; opacity: 0.7; transition: transform var(--t-2) var(--ease); }
+.tendina-b[aria-expanded="true"] > svg { transform: rotate(180deg); }
+.tendina-l {
+  position: absolute; left: 0; top: calc(100% + 6px); z-index: 40; display: grid; gap: 2px; min-width: max(100%, 200px); max-width: min(92vw, 440px); max-height: min(60vh, 420px);
+  margin: 0; padding: 6px; list-style: none; overflow-y: auto; border-radius: 16px; background: var(--cell); color: var(--ink);
+  box-shadow: 0 0 0 1px var(--hair), 0 18px 44px rgba(0, 0, 0, 0.22); animation: tendina-giu var(--t-2) var(--ease);
 }
-.tendina select:focus-visible { outline-offset: 2px; }
-/* le scorciatoie del Terminal: il menu prende la riga intera, come la fila che sostituisce */
+.tendina-l[hidden] { display: none; }
+.tendina-l.a-destra { left: auto; right: 0; }
+.tendina-l.due { grid-template-columns: 1fr 1fr; min-width: min(92vw, 340px); }
+.tendina-l button {
+  display: flex; align-items: center; width: 100%; min-height: 44px; padding: 0 12px; border: 0; border-radius: 10px; background: none; color: inherit;
+  font: inherit; font-size: 0.9375rem; font-weight: 600; text-align: left; white-space: nowrap; cursor: pointer;
+}
+.tendina-l button[aria-selected="true"] { background: var(--fill); font-weight: 800; }
+@media (hover: hover) { .tendina-b:hover, .tendina-l button:hover { background: var(--press); } }
+.tendina-l button:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: -2px; }
+@keyframes tendina-giu { from { opacity: 0; transform: translateY(-4px); } }
+@media (prefers-reduced-motion: reduce) { .tendina-l { animation: none; } .tendina-b > svg { transition: none; } }
+/* le scorciatoie del Terminal */
 .tendina-nav { margin: 2px 0 10px; }
-.tendina-nav select { width: 100%; border-radius: 999px; }
 .chips.compatta .fk { display: none; }
 @media (min-width: 1000px) { .chips.compatta { gap: 6px; } }
 
@@ -2515,3 +2529,42 @@ html.nuova :where(a, button, summary, [tabindex="0"]):focus-visible { outline: 2
   html.nuova .lead, html.nuova .list .item, html.nuova .next a, html.nuova .listen, html.nuova .ticker, html.nuova .conto-b, html.nuova .tag { transition: none; }
   html.nuova .lead:hover, html.nuova .list .item:hover, html.nuova .next a:hover, html.nuova .lead:active, html.nuova .list .item:active, html.nuova .next a:active, html.nuova .conto-b:active, html.nuova .tag:active { transform: none; }
 }
+
+/* ---------- intestazione sul computer (11 novembre): in fila, senza contare su :has; se la finestra è stretta niente si accavalla ---------- */
+@media (min-width: 760px) {
+  html .top-row, html body.term .top-row { display: flex; align-items: center; gap: 12px; }
+  html .top-row > * { flex: none; }
+  html .top-row > .brand + * { flex: 1 1 0; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  html .top-row > .paese-btn { max-width: 34vw; }
+}
+
+/* ---------- pagina di giornale (11 novembre): fondo bianco, notizie senza riquadro divise da un filo, riquadri solo per i servizi ---------- */
+html.nuova { --ground: #FFFFFF; --panel: #F5F5F2; --bar: rgba(255, 255, 255, 0.9); --card-shadow: none; --card-shadow-up: none; --rule: #E6E6E1; }
+@media (prefers-color-scheme: dark) { html.nuova:not([data-theme="light"]) { --ground: #0A1428; --panel: #111E38; --bar: rgba(10, 20, 40, 0.88); --rule: #1E2C48; } }
+html.nuova[data-theme="dark"] { --ground: #0A1428; --panel: #111E38; --bar: rgba(10, 20, 40, 0.88); --rule: #1E2C48; }
+html.nuova body:not(.term) .ticker, html.nuova body:not(.term) .listen, html.nuova body:not(.term) .mk-box, html.nuova body:not(.term) .blk, html.nuova .div-item,
+html.nuova .story-side > section:first-child, html.nuova .linked, html.nuova .next a, html.nuova .ultim-in, html.nuova .sk-lead, html.nuova .sk-item {
+  background: var(--panel); box-shadow: none;
+}
+html.nuova .ultim { background: var(--ground); }
+/* le notizie: niente riquadro, un filo tra l'una e l'altra */
+html.nuova .lead, html.nuova .list .item { padding-left: 0; padding-right: 0; border-radius: 0; background: none; box-shadow: none; }
+html.nuova .lead { padding-top: 0; padding-bottom: 26px; }
+html.nuova .lead.has-img .media { margin: 0 0 var(--f21); border-radius: 18px; }
+html.nuova .lead:not(.has-img) { padding-top: 8px; }
+html.nuova .list { gap: 0; margin-top: 0; }
+html.nuova .list .item { padding-top: 22px; padding-bottom: 22px; border-top: 1px solid var(--rule); }
+html.nuova .lead h2 a::after, html.nuova .item h2 a::after { border-radius: 10px; }
+html.nuova .lead:hover, html.nuova .list .item:hover, html.nuova .lead:active, html.nuova .list .item:active { transform: none; box-shadow: none; }
+@media (hover: hover) { html.nuova .lead h2 a, html.nuova .item h2 a { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1.5px; text-underline-offset: 0.16em; transition: text-decoration-color var(--t-2) var(--ease); } html.nuova .lead:hover h2 a, html.nuova .item:hover h2 a { text-decoration-color: currentColor; } }
+html.nuova .lead .media svg, html.nuova .item .media svg, html.nuova .lead .media img, html.nuova .item .media img { transition: transform var(--t-4) var(--ease); }
+@media (hover: hover) { html.nuova .lead:hover .media > :first-child, html.nuova .item:hover .media > :first-child { transform: scale(1.025); } }
+@media (min-width: 760px) {
+  html.nuova .list { column-gap: 28px; row-gap: 0; }
+  html.nuova .list .item { padding-top: 24px; padding-bottom: 26px; }
+  html.nuova .item.has-img > .media { margin: 0 0 var(--f13); border-radius: 14px; }
+  html.nuova .list > .item.has-img:last-child:nth-child(odd) > .media { height: 100%; margin: 0; border-radius: 14px; }
+}
+html.nuova .blk, html.nuova .mk-box { border-radius: 18px; }
+html.nuova .end { border-top: 1px solid var(--rule); }
+@media (prefers-reduced-motion: reduce) { html.nuova .media > :first-child { transition: none; transform: none !important; } }

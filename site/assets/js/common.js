@@ -577,8 +577,59 @@
     wrap.hidden = true;
     const sel = document.createElement("select");
     sel.setAttribute("aria-label", opt.etichetta || box.getAttribute("aria-label") || "");
+    sel.tabIndex = -1;
+    sel.setAttribute("aria-hidden", "true");
+    // il menu che si vede: un pulsante largo quanto la sua scritta e un elenco disegnato come il resto del sito (il
+    // select resta sotto, invisibile, e tiene la scelta)
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "tendina-b";
+    btn.setAttribute("aria-haspopup", "listbox");
+    btn.setAttribute("aria-expanded", "false");
+    const lista = document.createElement("ul");
+    lista.className = "tendina-l";
+    lista.setAttribute("role", "listbox");
+    lista.setAttribute("aria-label", sel.getAttribute("aria-label"));
+    lista.hidden = true;
     wrap.appendChild(sel);
+    wrap.appendChild(btn);
+    wrap.appendChild(lista);
     box.after(wrap);
+    const chiudi = (fuoco) => {
+      if (lista.hidden) return;
+      lista.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+      document.removeEventListener("pointerdown", fuori, true);
+      if (fuoco) btn.focus({ preventScroll: true });
+    };
+    const fuori = (e) => { if (!wrap.contains(e.target)) chiudi(false); };
+    const apri = () => {
+      lista.hidden = false;
+      lista.classList.remove("a-destra");
+      btn.setAttribute("aria-expanded", "true");
+      if (lista.getBoundingClientRect().right > document.documentElement.clientWidth - 8) lista.classList.add("a-destra");
+      document.addEventListener("pointerdown", fuori, true);
+      const on = lista.querySelector('[aria-selected="true"]') || lista.querySelector("button");
+      if (on) on.focus({ preventScroll: true });
+    };
+    btn.addEventListener("click", () => (lista.hidden ? apri() : chiudi(true)));
+    lista.addEventListener("click", (e) => {
+      const o = e.target.closest("button[data-i]");
+      if (!o) return;
+      chiudi(true);
+      sel.value = o.dataset.i;
+      sel.dispatchEvent(new Event("change"));
+    });
+    wrap.addEventListener("keydown", (e) => {
+      if (lista.hidden) { if ((e.key === "ArrowDown" || e.key === "ArrowUp") && e.target === btn) { e.preventDefault(); apri(); } return; }
+      const os = Array.from(lista.querySelectorAll("button")), i = os.indexOf(document.activeElement);
+      if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); chiudi(true); }
+      else if (e.key === "ArrowDown") { e.preventDefault(); (os[i + 1] || os[0]).focus(); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); (os[i - 1] || os[os.length - 1]).focus(); }
+      else if (e.key === "Home") { e.preventDefault(); os[0].focus(); }
+      else if (e.key === "End") { e.preventDefault(); os[os.length - 1].focus(); }
+      else if (e.key === "Tab") chiudi(false);
+    });
     const scelte = () => Array.from(box.querySelectorAll(":scope > a, :scope > button")).filter((b) => !b.hidden);
     const accesa = (b) => b.getAttribute("aria-pressed") === "true" || b.getAttribute("aria-current") === "page" || b.getAttribute("aria-current") === "true";
     const riempi = () => {
@@ -588,6 +639,12 @@
       if (sel._html !== html) { sel.innerHTML = html; sel._html = html; }
       const on = bs.findIndex(accesa);
       sel.value = on >= 0 ? String(on) : "";
+      const scritta = on >= 0 && !opt.invito ? nomeDi(bs[on]) : (opt.invito || (on >= 0 ? nomeDi(bs[on]) : ""));
+      const bh = '<span>' + G.esc(scritta) + '</span><svg aria-hidden="true" width="12" height="8" viewBox="0 0 12 8"><path d="M1.5 1.5 6 6l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      if (btn._html !== bh) { btn.innerHTML = bh; btn._html = bh; }
+      const lh = bs.map((b, i) => '<li role="presentation"><button type="button" role="option" data-i="' + i + '" aria-selected="' + (i === on) + '">' + G.esc(nomeDi(b)) + "</button></li>").join("");
+      if (lista._html !== lh) { lista.innerHTML = lh; lista._html = lh; }
+      lista.classList.toggle("due", bs.length >= 7);
     };
     const prova = () => {
       box.classList.remove("in-tendina", ...gradi);
@@ -596,6 +653,7 @@
       for (let i = 0; !ok && i < gradi.length; i++) { box.classList.add(gradi[i]); ok = ci_sta(); }
       if (!ok) box.classList.add("in-tendina");
       wrap.hidden = ok;
+      if (ok) chiudi(false);
       if (!ok) riempi();
       if (ok && box.classList.contains("seg")) G.seg(box, true);
     };

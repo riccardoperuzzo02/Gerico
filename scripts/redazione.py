@@ -104,6 +104,41 @@ def stories(db=DB):
 
 # ---------- giro ----------
 
+RITARDO_MAX = 4   # ore: un cron di GitHub che parte più tardi di così si salta
+# dove ogni giro segna in meta/status che è stato fatto
+SEGNO = {"notizie": ("lastRun",), "paesi": ("paesiRun", "at"), "chiusure": ("marketsRun", "at")}
+
+
+def stato_main():
+    """meta/status com'è adesso su main (un cron in ritardo può essere partito da un commit vecchio)."""
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    if repo:
+        p = subprocess.run(["gh", "api", "-H", "Accept: application/vnd.github.raw",
+                            f"repos/{repo}/contents/{DB}/meta/status.json?ref=main"],
+                           capture_output=True, text=True)
+        if p.returncode == 0:
+            try:
+                return json.loads(p.stdout)
+            except ValueError:
+                pass
+    return load(os.path.join(DB, "meta", "status.json"), {})
+
+
+def gia_fatto(giro, nominale):
+    """L'ora del giro già fatto oggi (dopo l'ora del cron meno un'ora), oppure None."""
+    chiavi = SEGNO.get(giro)
+    if not chiavi:
+        return None
+    v = stato_main()
+    for k in chiavi:
+        v = v.get(k) if isinstance(v, dict) else None
+    t = parse_time(v)
+    if not t:
+        return None
+    t = t.astimezone(ROME)
+    return t if t.date() == nominale.date() and t >= nominale - timedelta(hours=1) else None
+
+
 def cmd_giro():
     """Per il workflow: stampa giro, variante, modello e turni; niente se a quest'ora non c'è un giro da fare."""
     event = os.environ.get("GITHUB_EVENT_NAME", "")
@@ -118,9 +153,23 @@ def cmd_giro():
         minute, hour = (int(x) for x in sched.split()[:2])
         day = datetime.now(timezone.utc).date()
         local = datetime(day.year, day.month, day.day, hour, minute, tzinfo=timezone.utc).astimezone(ROME)
+        if local > now + timedelta(minutes=5):
+            local -= timedelta(days=1)   # partito dopo la mezzanotte UTC: il cron era di ieri
         variante = GIRI[giro]["ore"].get(local.hour)
         if not variante:
             print(f"Il cron «{sched}» oggi cade alle {local:%H:%M} di Roma: il giro {giro} lo fa l'altro cron.",
+                  file=sys.stderr)
+            return 0
+        # GitHub fa partire i cron quando può, a volte con ore di ritardo: troppo tardi il giro lo recupera il
+        # prossimo, e se intanto è stato fatto a mano non si rifà
+        ritardo = now - local
+        if ritardo > timedelta(hours=RITARDO_MAX):
+            print(f"Il giro {giro} delle {variante} parte con {ritardo.total_seconds() / 3600:.1f} ore di ritardo: "
+                  "lo salto, lo recupera il prossimo giro.", file=sys.stderr)
+            return 0
+        fatto = gia_fatto(giro, local)
+        if fatto:
+            print(f"Il giro {giro} delle {variante} oggi c'è già stato (alle {fatto:%H:%M}): non lo rifaccio.",
                   file=sys.stderr)
             return 0
     elif scelta in GIRI:

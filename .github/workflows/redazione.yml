@@ -53,6 +53,7 @@ jobs:
       - name: Quale giro
         id: giro
         env:
+          GH_TOKEN: ${{ github.token }}   # per leggere meta/status su main: un cron in ritardo non rifà un giro già fatto
           SCHEDULE: ${{ github.event.schedule }}
           SCELTA: ${{ inputs.giro }}
           VARIANTE: ${{ inputs.variante }}

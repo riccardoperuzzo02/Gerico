@@ -246,9 +246,21 @@ G.page("home", async function (P) {
   // sul computer le brevi stanno nella colonna di destra, sotto i mercati: accanto alle notizie, non dopo
   const wideQ = window.matchMedia ? matchMedia("(min-width: 1000px)") : null;
   const brInSide = () => !!(wideQ && wideQ.matches);
+  // sul computer anche «Nei giorni scorsi» e «Altri temi da seguire» stanno a destra, sotto le brevi (se l'elenco non li
+  // ha già: nella sezione senza notizie di oggi restano sotto il messaggio)
+  function renderSideAltro() {
+    const box = $("side-altro");
+    if (!box) return;
+    let html = "";
+    if (brInSide() && !$("feed").querySelector("#past-h")) {
+      const tutti = state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section);
+      html = pastHTML(visiblePast(), tutti) + (state.section === "seguiti" && !$("feed").querySelector("#fol-more") ? followMore() : "");
+    }
+    if (box.dataset.html !== html) { box.innerHTML = html; box.dataset.html = html; }
+  }
   function renderSideBrevi() {
     const box = $("side-brevi");
-    if (!box) return;
+    if (!box) { renderSideAltro(); return; }
     const html = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section)) : "";
     // cambiando sezione sul computer: la lista vecchia sfuma sopra la nuova e il riquadro va alla sua altezza nuova
     const old = box.dataset.shown && box.firstElementChild && box.offsetHeight && !G.reduced() && box.animate ? box.firstElementChild : null;
@@ -258,6 +270,7 @@ G.page("home", async function (P) {
     box.dataset.html = html;
     box.dataset.shown = "1";
     $("side").classList.toggle("with-brevi", !!html);
+    renderSideAltro();
     sideOpen = false;
     fitSide();
     if (!old) return;
@@ -293,7 +306,9 @@ G.page("home", async function (P) {
     const blocks = Array.from($("feed").children).filter((el) => !el.classList.contains("end") && !el.classList.contains("sr-only") && el.offsetHeight);
     const last = blocks[blocks.length - 1];
     if (!last) return;
-    const end = last.getBoundingClientRect().bottom;
+    // sotto le brevi, a destra, ci sono ancora i giorni scorsi e i temi: il loro spazio non è delle brevi
+    const altro = $("side-altro");
+    const end = last.getBoundingClientRect().bottom - (altro ? altro.offsetHeight : 0);
     const pad = sec.getBoundingClientRect().bottom - list.getBoundingClientRect().bottom;
     // lo spazio per il pulsante: circa una riga e mezza
     const btn = 52;
@@ -393,7 +408,7 @@ G.page("home", async function (P) {
       if (!state.follows.length) return followHead();
       const top = list.length ? leadHTML(list[0], true) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, true, i + 1)).join("") + "</ol>" : "")
         : '<p class="none">' + G.L("Oggi nessuna storia sui temi che segui.", "No stories today on the topics you follow.") + "</p>";
-      return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + pastHTML(past, true) + followMore() + end;
+      return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + (brInSide() ? "" : pastHTML(past, true) + followMore()) + end;
     }
     const estero = inPaese() && paeseOra() !== "IT";
     if (!list.length && !bl.length && estero) {
@@ -422,7 +437,7 @@ G.page("home", async function (P) {
         : G.L("GERICO scrive un articolo quando nel paese succede un fatto di rilievo.", "GERICO writes an article when something major happens in the country."))) + "</p>"
       : '<p class="none">' + (bl.some((b) => b && G.isToday(b.at)) ? G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.")
         : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>";
-    return top + (brInSide() || (breviPrima && list.length) ? "" : breviHTML(bl, all)) + titoliHTML() + pastHTML(past, all) + end;
+    return top + (brInSide() || (breviPrima && list.length) ? "" : breviHTML(bl, all)) + titoliHTML() + (brInSide() ? "" : pastHTML(past, all)) + end;
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------
@@ -587,7 +602,7 @@ G.page("home", async function (P) {
   // live: prezzi nuovi a pagina aperta, il riquadro cambia senza ricomparire
   function renderSide(live) {
     const rows = pick();
-    if (!rows.length) { $("side").innerHTML = '<div id="side-brevi"></div>'; renderSideBrevi(); return; }
+    if (!rows.length) { $("side").innerHTML = '<div id="side-brevi"></div><div id="side-altro"></div>'; renderSideBrevi(); return; }
     const tr = rows.map(({ it, key }) => {
       const mv = typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it);
       return '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
@@ -596,7 +611,7 @@ G.page("home", async function (P) {
     $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
       '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
       '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>" +
-      '<div id="side-brevi"></div>';
+      '<div id="side-brevi"></div><div id="side-altro"></div>';
     renderSideBrevi();
   }
   // una classe intera senza dati si dice, invece di lasciare il riquadro più corto senza spiegazione
@@ -687,6 +702,12 @@ G.page("home", async function (P) {
     if (!b) return;
     const box = b.closest(".fol");
     refocus = box ? { blk: box.id, i: Array.from(box.querySelectorAll("[data-follow]")).indexOf(b) } : null;
+    G.toggleFollow(b.dataset.follow);
+  });
+  P.on($("side"), "click", (e) => {
+    const b = e.target.closest("[data-follow]");
+    if (!b) return;
+    refocus = null;
     G.toggleFollow(b.dataset.follow);
   });
   P.on(document, "gerico:interessi", () => {

@@ -2534,7 +2534,8 @@ html.nuova :where(a, button, summary, [tabindex="0"]):focus-visible { outline: 2
 @media (min-width: 760px) {
   html .top-row, html body.term .top-row { display: flex; align-items: center; gap: 12px; }
   html .top-row > * { flex: none; }
-  html .top-row > .brand + * { flex: 1 1 0; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  html .top-row > .top-title, html .top-row > .edition { flex: 1 1 0; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  html .top-row > .brand + :not(.top-title):not(.edition) { margin-left: auto; }
   html .top-row > .paese-btn { max-width: 34vw; }
 }
 
@@ -2619,3 +2620,40 @@ html.nuova .lead .sum { font-size: 1.25rem; line-height: 1.42; color: var(--ink-
 html.nuova .home .large h1 { font-size: clamp(2rem, 1.55rem + 2.2vw, 3.25rem); line-height: 1.05; letter-spacing: -0.025em; text-wrap: balance; }
 html.nuova .home .sec-nav { top: calc(var(--top-h) + 40px); background: var(--ground); }
 html.nuova body:has(#ultim[hidden]) .home .sec-nav { top: var(--top-h); }
+
+/* ---------- una sola identità in tutto il sito (11 novembre) ----------
+   Le stesse regole ovunque: titoli con le grazie, etichette in maiuscoletto spaziato, rubriche con il filo scuro sopra e
+   senza riquadro, fili sottili tra le righe, angoli da 6 px per le immagini e 10 px per i pulsanti, nessuna ombra. */
+html.nuova { --card-r: 10px; --r-img: 6px; --r-btn: 10px; }
+/* etichette */
+html.nuova .opt-l, html.nuova .pc-g, html.nuova .pc-voce-k, html.nuova .conto-campo > span, html.nuova .tk-h b, html.nuova .tk-ev-l {
+  font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted);
+}
+html.nuova .conto-campo > span small { letter-spacing: 0; text-transform: none; }
+/* titoli */
+html.nuova .menu-t, html.nuova .pc-t, html.nuova body.term .t-panel h2, html.nuova .ad-h, html.nuova #ad h1, html.nuova #ad h2 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.012em; }
+html.nuova .menu-t { font-size: 1.625rem; }
+html.nuova .pc-t { font-weight: 600; font-size: clamp(2rem, 8vw, 2.875rem); line-height: 1.05; }
+html.nuova body.term .t-panel h2 { font-size: 1.375rem; }
+/* pulsanti e campi: lo stesso angolo */
+html.nuova .conto-b, html.nuova .pc-basso .conto-b, html.nuova .pc-form .conto-b, html.nuova .conto-campo input, html.nuova .pc-q, html.nuova .pc-voce,
+html.nuova .pc-scelte .int-tags .tag, html.nuova .pc-opz { border-radius: var(--r-btn); }
+html.nuova .tendina-l { border-radius: 12px; } html.nuova .tendina-l button { border-radius: 8px; }
+/* i temi: contorno sottile, pieni solo quando sono scelti */
+html.nuova body:not(.term) .tags:not(.int-tags) .tag { background: none; box-shadow: inset 0 0 0 1px var(--rule); font-weight: 600; }
+html.nuova body:not(.term) .tags:not(.int-tags) .tag[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); box-shadow: none; }
+/* la storia: le rubriche a lato e in fondo come in prima pagina */
+html.nuova .story-side > section:first-child, html.nuova .linked, html.nuova .div-item {
+  padding: 16px 0 6px; border-radius: 0; background: none; border-top: 2px solid var(--ink); box-shadow: none;
+}
+html.nuova .next a { padding-left: 0; padding-right: 0; border-radius: 0; background: none; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+html.nuova .next a:hover, html.nuova .next a:active { transform: none; box-shadow: none; }
+html.nuova .story-main .media, html.nuova .story .media { border-radius: var(--r-img); }
+/* il Terminal: stessi titoli, stessi fili, stessi angoli (i colori restano i suoi) */
+html.nuova body.term .t-panel { border-radius: 0; background: none; box-shadow: none; border-top: 2px solid var(--t-ink, var(--ink)); padding-left: 0; padding-right: 0; }
+html.nuova body.term .chips > button, html.nuova body.term .chips > a { border-radius: var(--r-btn); }
+/* il gestionale: riquadri tenui al posto delle ombre */
+html.nuova .ad-card, html.nuova .ad-t, html.nuova .ad-fig, html.nuova .ad-rank, html.nuova .ad-users, html.nuova .ad-errs { background: var(--panel); box-shadow: none; border-radius: var(--card-r); }
+/* il menu e i fogli */
+html.nuova .menu { border-radius: 16px 16px 0 0; }
+@media (min-width: 760px) { html.nuova .menu { border-radius: 12px; } }

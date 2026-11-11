@@ -897,6 +897,19 @@
       },
       play() { if (!info) return; closed = false; srcReady(); audio.play().catch(() => {}); },
       toggle() { if (audio.paused) api.play(); else audio.pause(); },
+      // a un punto preciso (secondi). Prima di aver premuto ascolta il punto si ricorda soltanto: l'audio partirà da lì
+      to(t) {
+        if (!info) return;
+        closed = false;
+        t = Math.max(0, Math.min(dur() || t, t));
+        if (audio.readyState >= 1) { try { audio.currentTime = t; } catch (e) { /* niente */ } }
+        else {
+          saved = t;
+          if (audio.getAttribute("src")) audio.addEventListener("loadedmetadata", () => { try { audio.currentTime = saved; } catch (e) { /* niente */ } }, { once: true });
+        }
+        save();
+        emit();
+      },
       seek(d) { if (!audio.duration) return; audio.currentTime = Math.max(0, Math.min(audio.duration, audio.currentTime + d)); },
       close() { audio.pause(); closed = true; saved = 0; try { audio.currentTime = 0; } catch (e) { /* niente */ } save(); emit(); },
       playing: () => !audio.paused,

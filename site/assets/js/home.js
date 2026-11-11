@@ -263,7 +263,8 @@ G.page("home", async function (P) {
     if (!box) { renderSideAltro(); return; }
     const html = brInSide() ? breviHTML(visibleBrevi(), state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section)) : "";
     // cambiando sezione sul computer: la lista vecchia sfuma sopra la nuova e il riquadro va alla sua altezza nuova
-    const old = box.dataset.shown && box.firstElementChild && box.offsetHeight && !G.reduced() && box.animate ? box.firstElementChild : null;
+    // (senza riquadro la lista vecchia in dissolvenza sopra la nuova si leggeva una sull'altra: la nuova entra e basta)
+    const old = null;
     const h0 = old ? box.offsetHeight : 0;
     if (old && html === box.dataset.html) return;
     box.innerHTML = html;
@@ -506,6 +507,33 @@ G.page("home", async function (P) {
     P.add(pl.on(paint));
     paint();
     pl.card(box);
+    // la riga dell'avanzamento si tocca e si trascina per andare avanti e indietro; con la tastiera, le frecce (10 secondi)
+    const bar = box.querySelector(".ls-bar");
+    if (bar && !bar._vai) {
+      bar._vai = true;
+      bar.removeAttribute("aria-hidden");
+      bar.setAttribute("role", "slider");
+      bar.setAttribute("tabindex", "0");
+      bar.setAttribute("aria-label", G.L("Posizione nel riepilogo", "Position in the briefing"));
+      bar.setAttribute("aria-valuemin", "0");
+      const dove = (e) => { const r = bar.getBoundingClientRect(); return Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)); };
+      const porta = (f) => { const d = pl.dur(); if (d) { pl.to(f * d); $("ls-prog").style.transform = "scaleX(" + f.toFixed(4) + ")"; } };
+      let giu = false;
+      bar.addEventListener("pointerdown", (e) => { giu = true; bar.classList.add("presa"); try { bar.setPointerCapture(e.pointerId); } catch (x) { /* niente */ } porta(dove(e)); e.preventDefault(); });
+      bar.addEventListener("pointermove", (e) => { if (giu) porta(dove(e)); });
+      const su = () => { giu = false; bar.classList.remove("presa"); };
+      bar.addEventListener("pointerup", su);
+      bar.addEventListener("pointercancel", su);
+      bar.addEventListener("keydown", (e) => {
+        const d = pl.dur(), p = pl.pos();
+        if (!d) return;
+        const t = e.key === "ArrowRight" || e.key === "ArrowUp" ? p + 10 : e.key === "ArrowLeft" || e.key === "ArrowDown" ? p - 10 : e.key === "Home" ? 0 : e.key === "End" ? d - 1 : null;
+        if (t === null) return;
+        e.preventDefault();
+        pl.to(Math.max(0, Math.min(d, t)));
+      });
+      P.add(pl.on(() => { const d = pl.dur(), p = pl.pos(); bar.setAttribute("aria-valuemax", String(Math.round(d || 0))); bar.setAttribute("aria-valuenow", String(Math.round(p))); bar.setAttribute("aria-valuetext", pl.mmss(p) + G.L(" di ", " of ") + pl.mmss(d || 0)); }));
+    }
   }
 
   // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------

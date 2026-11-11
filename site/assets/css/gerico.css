@@ -2820,3 +2820,17 @@ html.nuova .lead .sum { -webkit-line-clamp: 5; }
 .m-cred { margin-top: 7px; font-size: 0.75rem; line-height: 1.4; color: var(--muted); }
 .m-cred a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 0.15em; }
 html.nuova .st-media.foto.mossa > :first-child { transform: none !important; }
+
+/* ---------- la riga dell'audio si tocca e si trascina per andare avanti e indietro ---------- */
+html.nuova .listen .ls-bar, .listen .ls-bar { left: 0; right: 0; bottom: -9px; height: 18px; cursor: pointer; touch-action: none; background: none; z-index: 2; }
+.listen .ls-bar::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 4px; background: var(--rule); border-radius: 0 !important; }
+html.nuova .listen .ls-bar i, .listen .ls-bar i { position: absolute; left: 0; right: 0; top: 7px; width: auto; height: 4px; }
+@media (hover: hover) { .listen .ls-bar:hover::before, .listen .ls-bar:hover i { top: 6px; height: 6px; } }
+.listen .ls-bar.presa::before, .listen .ls-bar.presa i { top: 6px; height: 6px; }
+.listen .ls-bar.presa i { transition: none; }
+.listen .ls-bar:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 2px; }
+html.nuova body:not(.term) .listen { border-bottom-color: transparent; margin-bottom: 6px; }
+
+/* Terminal: niente filo sopra i primi riquadri (Mappa dei mercati; sul computer anche Tassi a 10 anni) */
+html.nuova body.term #map-panel { border-top: 0; }
+@media (min-width: 1000px) { html.nuova body.term #p-tassi { border-top: 0; } }

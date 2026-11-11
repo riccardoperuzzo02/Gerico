@@ -2222,59 +2222,8 @@
       b.closest(".int-tags").querySelectorAll("[data-int]").forEach((x) => x.setAttribute("aria-pressed", String(nuovo.includes(x.dataset.v))));
     };
 
-    // dal menu: tutte le domande in un foglio, ogni scelta vale subito
-    const apri = async () => {
-      const v = pulito(leggi());
-      let corpo = '<p class="conto-p">' + L("Ogni scelta vale subito, anche sugli altri dispositivi se hai l'account. La notizia più importante del giorno resta in cima per tutti.", "Every choice applies right away, on your other devices too if you have an account. The day's top story stays on top for everyone.") + "</p>";
-      for (const q of DOMANDE) corpo += '<section class="int-q"><h3 class="opt-l">' + G.esc(q.t()) + '</h3><p class="conto-nota">' + G.esc(q.s()) + "</p>" + (await scelte(q, v[q.k] || [])) + "</section>";
-      corpo += '<div class="conto-az"><button type="button" class="conto-b primario" data-chiudi>' + L("Fatto", "Done") + '</button><button type="button" class="conto-b" data-int-via>' + L("Azzera le scelte", "Clear the choices") + "</button></div>";
-      const f = G.conto.foglio(L("I tuoi interessi", "Your interests"), corpo);
-      f.d.querySelector(".conto-in").addEventListener("click", (e) => {
-        const b = e.target.closest("[data-int], [data-tema]");
-        if (b) { tocca(b); return; }
-        if (e.target.closest("[data-int-via]")) {
-          scrivi({ sezioni: [], mercati: [], lettura: [] });
-          f.d.querySelectorAll("[data-int]").forEach((x) => x.setAttribute("aria-pressed", "false"));
-          G.toast(L("Scelte azzerate: il sito torna come per tutti.", "Choices cleared: the site is back to the default."));
-        }
-      });
-    };
-
-    // subito dopo l'iscrizione: una domanda per schermata, ognuna si può saltare
-    const dopoIscrizione = (u) => {
-      let i = 0;
-      const f = G.conto.foglio(L("Benvenuto, ", "Welcome, ") + u.nome, "", { chiusa: () => { if (!pulito(leggi()).fatto) scrivi({ fatto: true }); } });
-      const box = f.d.querySelector(".conto-in"), titolo = f.d.querySelector("#conto-t");
-      const disegna = async () => {
-        if (i >= DOMANDE.length) {
-          scrivi({ fatto: true });
-          titolo.textContent = L("Fatto", "Done");
-          box.innerHTML = '<p class="conto-ok">' + L("GERICO adesso mette prima quello che ti interessa.", "GERICO now puts what interests you first.") + "</p>" +
-            '<p class="conto-p">' + L("Lo cambi quando vuoi dal menu, in «I tuoi interessi». Dal menu vedi, scarichi o cancelli anche i tuoi dati.", "Change it whenever you like from the menu, under “Your interests”. From the menu you can also see, download or delete your data.") + "</p>" +
-            '<button type="button" class="conto-b primario" data-chiudi>' + L("Inizia a leggere", "Start reading") + "</button>";
-          box.querySelector("[data-chiudi]").focus({ preventScroll: true });
-          return;
-        }
-        const q = DOMANDE[i];
-        box.innerHTML = (i === 0 ? '<p class="conto-p">' + L("Sei dentro. Quattro domande veloci per mettere prima quello che ti interessa: tocca le risposte, o salta.", "You're in. Four quick questions to put what interests you first: tap the answers, or skip.") + "</p>" : "") +
-          '<p class="int-passo">' + L("Domanda ", "Question ") + (i + 1) + L(" di ", " of ") + DOMANDE.length + '</p><h3 class="int-t" tabindex="-1">' + G.esc(q.t()) + '</h3><p class="conto-nota">' + G.esc(q.s()) + "</p>" +
-          (await scelte(q, pulito(leggi())[q.k] || [])) +
-          '<div class="conto-az int-az">' + (i ? '<button type="button" class="conto-b" data-passo="-1">' + L("Indietro", "Back") + "</button>" : "") +
-          '<button type="button" class="conto-b" data-passo="salta">' + L("Salta", "Skip") + '</button><button type="button" class="conto-b primario" data-passo="1">' + (i === DOMANDE.length - 1 ? L("Fine", "Finish") : L("Avanti", "Next")) + "</button></div>";
-        if (i) box.querySelector(".int-t").focus({ preventScroll: true });
-      };
-      box.addEventListener("click", (e) => {
-        const b = e.target.closest("[data-int], [data-tema]");
-        if (b) { tocca(b); return; }
-        const p = e.target.closest("[data-passo]");
-        if (!p) return;
-        i = p.dataset.passo === "-1" ? Math.max(0, i - 1) : i + 1;
-        disegna();
-      });
-      disegna();
-    };
-
-    return { leggi, scrivi, pulito, sezioni, mercati, lettura, testo, nome, apri, dopoIscrizione };
+    return { leggi, scrivi, pulito, sezioni, mercati, lettura, testo, nome, domande: DOMANDE, scelte, tocca,
+      apri: () => G.percorso.apri("indice"), dopoIscrizione: (u) => G.percorso.apri("dopo", { nome: u.nome }) };
   })();
 
   // ---------- account: passkey, preferenze su ogni dispositivo, i tuoi dati ----------
@@ -2407,9 +2356,9 @@
         return d;
       }
       // l'evento parte solo se cambia qualcosa per la pagina: un accesso nuovo o un altro nome
-      const cambiato = !prima || prima.nome !== d.utente.nome;
+      const cambiato = !prima || prima.nome !== d.utente.nome || !!prima.admin !== !!d.utente.admin;
       io = d.utente;
-      G.ls.set(K, { nome: io.nome });
+      G.ls.set(K, nota_(io));
       // modifiche fatte qui e non ancora arrivate al server: vince questo browser
       if (G.ls.get(SOSPESO, false)) salva({ temi: G.follows(), paese: G.paese(), interessi: G.interessi.leggi() });
       else unisci(io.prefs || {}, primoQui);
@@ -2417,6 +2366,9 @@
       return d;
     };
     // le preferenze dell'account si applicano quando la pagina ha finito di disegnarsi e ascolta i cambi (al massimo 3 s)
+    // il promemoria nel browser: il nome, e se è l'account di Riccardo (per la voce «Gestionale» del menu; chi può
+    // aprire /admin lo decide comunque il Worker)
+    const nota_ = (u) => (u.admin ? { nome: u.nome, admin: true } : { nome: u.nome });
     const paginaPronta = () => Promise.race([G.P.done, new Promise((r) => setTimeout(r, 3000))]).catch(() => {});
     const chiedi = (opt) => {
       if (opt && opt.admin) return api("io?admin=1").then((d) => applica(d, false));
@@ -2425,7 +2377,7 @@
     };
     const entrato = (u) => {
       io = u;
-      G.ls.set(K, { nome: u.nome });
+      G.ls.set(K, nota_(u));
       unisci(u.prefs || {}, true);
       primo = Promise.resolve({ attivo: true, utente: u });
       avvisa();
@@ -2556,7 +2508,8 @@
       const fatto = (u) => {
         entrato_ = true;
         if (opt && opt.poi) opt.poi(u);
-        if (G.interessi && G.interessi.dopoIscrizione) { G.interessi.dopoIscrizione(u); return; }
+        // chi non ha ancora risposto alle domande le trova adesso, a tutto schermo
+        if (!(opt && opt.senzaDomande) && !G.interessi.pulito(G.interessi.leggi()).fatto) { f.chiudi("ok"); G.interessi.dopoIscrizione(u); return; }
         d.querySelector(".conto-in").innerHTML = '<p class="conto-ok">' + L("Fatto, ", "Done, ") + G.esc(u.nome) + L(": sei dentro.", ": you're in.") + "</p>" +
           '<p class="conto-p">' + L("I temi che segui e il tuo paese ora valgono su ogni dispositivo dove entri con questa passkey. Dal menu vedi, scarichi o cancelli i tuoi dati quando vuoi.",
             "The topics you follow and your country now work on every device where you sign in with this passkey. From the menu you can see, download or delete your data whenever you like.") + "</p>" +
@@ -2664,6 +2617,7 @@
         if (nota && nota.nome) {
           box.innerHTML = '<p class="opt-l" id="opt-conto">' + L("Il tuo account", "Your account") + '</p><div class="menu-links conto-links" role="group" aria-labelledby="opt-conto">' +
             '<div class="conto-chi"><span class="conto-av" aria-hidden="true">' + G.esc((Array.from(String(nota.nome))[0] || "?").toUpperCase()) + "</span><span><b>" + G.esc(nota.nome) + "</b><small>" + L("Entrato con la passkey", "Signed in with a passkey") + "</small></span></div>" +
+            (nota.admin ? '<a href="/admin" data-gestionale>' + L("Gestionale", "Dashboard") + "</a>" : "") +
             '<button type="button" data-conto="dati">' + L("I tuoi dati", "Your data") + "</button>" +
             '<a href="/api/miei-dati" download="gerico-i-miei-dati.json">' + L("Scarica i tuoi dati", "Download your data") + "</a>" +
             '<button type="button" data-conto="esci">' + L("Esci", "Sign out") + "</button>" +
@@ -2690,7 +2644,7 @@
         e.stopPropagation();
         const k = b.dataset.conto;
         errore("");
-        if (k === "paese") { G.apriPaesi({ ritorno: b }); return; }
+        if (k === "paese") { G.percorso.apri("paese"); return; }
         if (k === "interessi") { G.interessi.apri(); return; }
         if (k === "nuovo") { apri("nuovo"); return; }
         if (k === "dati" || k === "cancella") { apri("dati", { cancella: k === "cancella" }); return; }
@@ -2755,14 +2709,221 @@
       if (!G.CONTI) return;
       visita();
       if (G.ls.get(K, null)) chiedi().catch(() => {});
-      else proponi();
+      else if (!G.percorso.primaVolta()) proponi();
     };
 
     return {
-      api, spiega, accedi, iscriviti, esci, cancella, apri, menu, pagina, foglio,
+      api, spiega, accedi, iscriviti, esci, cancella, apri, menu, pagina, foglio, passkeyOk,
+      entrato: () => !!G.ls.get(K, null),
+      rimandata: () => { const p = G.ls.get(PROP, {}) || {}; G.ls.set(PROP, { ultima: Date.now(), no: (p.no || 0) + 1 }); },
       io: chiedi,
       utente: () => io,
       salva
     };
+  })();
+
+  // ---------- il percorso: le scelte a tutto schermo, una per schermata ----------
+  // Alla prima visita (in prima pagina, dopo l'entrata del nome): benvenuto, paese, sezioni, temi, mercati, come leggi e,
+  // alla fine, l'account, che si può rimandare. Chi salta trova il sito di sempre. Dal menu lo stesso percorso si riapre
+  // già compilato: «I tuoi interessi» parte dall'elenco delle scelte (se ne cambia una senza rifare le altre), «Il tuo
+  // paese» va dritto alla sua schermata. Ogni tocco vale subito, come prima.
+  G.percorso = (() => {
+    const L = G.L, FATTO = "gerico.percorso";
+    const I = G.interessi, C = G.conto;
+    const senzaAcc = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    let stato = null;
+
+    const paesi = () => {
+      const scelto = G.paese(), coll = new Intl.Collator(G.en ? "en" : "it");
+      const primi = G.PAESI.filter((p) => p.level === 1), altri = G.PAESI.filter((p) => p.level !== 1).sort((a, b) => coll.compare(G.paeseNome(a.code), G.paeseNome(b.code)));
+      const riga = (p) => '<li><button type="button" class="pc-opz" data-paese="' + p.code + '" aria-pressed="' + (p.code === scelto) + '" data-q="' + G.esc(senzaAcc(p.it + " " + p.en)) + '">' +
+        G.flag(p.code) + "<span>" + G.esc(G.paeseNome(p.code)) + "</span></button></li>";
+      return '<input class="pc-q" type="search" autocomplete="off" spellcheck="false" placeholder="' + L("Cerca un paese", "Search for a country") + '" aria-label="' + L("Cerca un paese", "Search for a country") + '">' +
+        '<p class="pc-g">' + L("Articoli e brevi ogni giorno", "Articles and briefs every day") + '</p><ul class="pc-l">' + primi.map(riga).join("") + "</ul>" +
+        '<p class="pc-g">' + L("Le brevi delle testate del paese", "Briefs from the country's outlets") + '</p><ul class="pc-l">' + altri.map(riga).join("") + "</ul>" +
+        '<p class="pc-none" hidden>' + L("Nessun paese con questo nome.", "No country with this name.") + "</p>";
+    };
+    const account = () => '<form class="conto-form pc-form" novalidate>' +
+      '<label class="conto-campo"><span>' + L("Il nome da mostrare", "Display name") + '</span><input name="nome" required maxlength="40" autocomplete="nickname" autocapitalize="words" spellcheck="false"></label>' +
+      '<label class="conto-campo"><span>' + L("Email", "Email") + " <small>" + L("(facoltativa)", "(optional)") + '</small></span><input name="email" type="email" maxlength="160" autocomplete="email" inputmode="email" spellcheck="false"></label>' +
+      '<button type="submit" class="conto-b primario">' + L("Crea l'account con una passkey", "Create the account with a passkey") + "</button>" +
+      '<button type="button" class="conto-b" data-pc="accedi">' + L("Ho già un account", "I already have an account") + "</button>" +
+      '<p class="conto-err" role="alert"></p>' +
+      '<p class="conto-nota">' + L("Si entra con Face ID, Touch ID, l'impronta o il codice del telefono: nessuna password. L'email la vede solo Riccardo, che cura GERICO. ", "You sign in with Face ID, Touch ID, your fingerprint or your phone's passcode: no password. Only Riccardo, who edits GERICO, sees the email. ") +
+      '<a href="privacy.html#' + L("account", "account-en") + '">' + L("Cosa salviamo", "What we store") + "</a></p></form>";
+
+    // le schermate: k, titolo, riga di spiegazione, corpo
+    const PASSI = {
+      benvenuto: { t: () => L("Benvenuto su GERICO", "Welcome to GERICO"), s: () => L("Le notizie del giorno, scritte su tutte le fonti. Poche domande per mettere prima quello che ti interessa: tocca le risposte, o salta.", "The day's news, written from all the sources. A few questions to put what interests you first: tap the answers, or skip."), marchio: true },
+      paese: { t: () => L("Da dove leggi?", "Where do you read from?"), s: () => L("In prima pagina trovi la scheda del tuo paese, con le sue notizie.", "The front page has a tab for your country, with its news."), c: paesi },
+      account: { t: () => L("Un account, se vuoi", "An account, if you like"), s: () => L("Le tue scelte valgono su ogni dispositivo. Per leggere non serve.", "Your choices work on every device. You don't need one to read."), c: account },
+      fine: { t: () => L("Tutto pronto", "All set"), s: () => L("GERICO adesso mette prima quello che ti interessa. Lo cambi quando vuoi dal menu, in «I tuoi interessi».", "GERICO now puts what interests you first. Change it whenever you like from the menu, under “Your interests”.") }
+    };
+    I.domande.forEach((q) => { PASSI[q.k] = { t: q.t, s: q.s, q }; });
+    const ordine = (modo) => {
+      const base = ["paese", "sezioni", "temi", "mercati", "lettura"];
+      if (modo === "dopo") return base.concat("fine");
+      const conAccount = G.CONTI && C.passkeyOk() && !C.entrato();
+      return ["benvenuto"].concat(base, conAccount ? ["account"] : [], "fine");
+    };
+    // nell'elenco del menu: la risposta di adesso, in una riga
+    const adesso = (k) => {
+      const v = I.pulito(I.leggi());
+      if (k === "paese") return G.paeseNome(G.paese());
+      if (k === "temi") { const f = G.follows(); return f.length ? f.map((t) => G.tn(t)).join(", ") : L("Nessuno", "None"); }
+      const a = v[k] || [];
+      return a.length ? a.map((x) => I.nome(x)).join(", ") : L("Nessuna scelta", "No choice");
+    };
+    const ETICHETTE = { paese: () => L("Il tuo paese", "Your country"), sezioni: () => L("Sezioni", "Sections"), temi: () => L("Temi seguiti", "Followed topics"), mercati: () => L("Mercati", "Markets"), lettura: () => L("Come leggi", "How you read") };
+
+    const chiudi = () => {
+      const st = stato;
+      if (!st || st.chiuso) return;
+      st.chiuso = true;
+      const d = st.d, html = document.documentElement;
+      if (st.modo === "primo" || st.modo === "dopo") {
+        if (!I.pulito(I.leggi()).fatto) I.scrivi({ fatto: true });
+        if (st.modo === "primo" && st.conAccount && !C.entrato()) C.rimandata();
+      }
+      const fine = () => {
+        d.classList.remove("closing"); if (d.open) d.close();
+        if (stato === st) stato = null;
+        if (!document.querySelector("dialog[open]")) html.classList.remove("menu-open");
+        if (st.ritorno && st.ritorno.isConnected && st.ritorno.focus) st.ritorno.focus({ preventScroll: true });
+      };
+      d.classList.add("closing");
+      const an = G.reduced() || !d.getAnimations ? [] : d.getAnimations();
+      if (!an.length) return fine();
+      Promise.all(an.map((a) => a.finished)).then(fine, fine);
+    };
+
+    const disegna = async (verso) => {
+      const st = stato, d = st.d, k = st.passo;
+      const elenco = k === "elenco", p = PASSI[k], n = st.passi.length, i = st.passi.indexOf(k);
+      const percorso = st.modo === "primo" || st.modo === "dopo";
+      let corpo = "";
+      if (elenco) {
+        corpo = '<ul class="pc-elenco">' + Object.keys(ETICHETTE).map((x) => '<li><button type="button" class="pc-voce" data-pc-vai="' + x + '"><span class="pc-voce-k">' + G.esc(ETICHETTE[x]()) + '</span><span class="pc-voce-v">' +
+          (x === "paese" ? G.flag(G.paese()) : "") + G.esc(adesso(x)) + '</span><svg aria-hidden="true" width="9" height="16" viewBox="0 0 9 16"><path d="M1.5 1.5 7.5 8l-6 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>').join("") + "</ul>" +
+          '<div class="pc-extra"><button type="button" class="pc-link" data-pc="rifai">' + L("Rifai il percorso dall'inizio", "Take the tour again") + '</button><button type="button" class="pc-link" data-pc="azzera">' + L("Azzera le scelte", "Clear the choices") + "</button></div>";
+      } else if (p.q) corpo = await I.scelte(p.q, I.pulito(I.leggi())[p.q.k] || []);
+      else if (p.c) corpo = p.c();
+      if (stato !== st || st.passo !== k) return;
+      const titolo = elenco ? L("I tuoi interessi", "Your interests") : p.t();
+      const sotto = elenco ? L("Tocca una scelta per cambiarla. Vale subito, anche sugli altri dispositivi se hai l'account.", "Tap a choice to change it. It applies right away, on your other devices too if you have an account.") : p.s();
+      const ultimo = percorso && k === "fine", primo = percorso && i === 0;
+      // in alto: l'avanzamento e «Salta» nel percorso, la chiusura quando si arriva dal menu
+      const alto = percorso
+        ? '<div class="pc-bar" role="progressbar" aria-valuemin="1" aria-valuemax="' + n + '" aria-valuenow="' + (i + 1) + '" aria-label="' + L("Passo ", "Step ") + (i + 1) + L(" di ", " of ") + n + '"><span style="transform:scaleX(' + ((i + 1) / n).toFixed(4) + ')"></span></div>' +
+          (ultimo ? '<span class="pc-salta" aria-hidden="true"></span>' : '<button type="button" class="pc-salta" data-pc="salta">' + L("Salta", "Skip") + "</button>")
+        : '<span class="pc-bar pc-vuota" aria-hidden="true"></span><button type="button" class="pc-salta" data-pc="chiudi">' + L("Chiudi", "Close") + "</button>";
+      const avanti = ultimo ? L("Inizia a leggere", "Start reading") : primo && k === "benvenuto" ? L("Cominciamo", "Let's start") : k === "account" ? L("Non ora", "Not now") : L("Avanti", "Next");
+      const basso = percorso
+        ? (i > 0 && !ultimo ? '<button type="button" class="conto-b" data-pc="indietro">' + L("Indietro", "Back") + "</button>" : '<span class="pc-spazio" aria-hidden="true"></span>') +
+          '<button type="button" class="conto-b' + (k === "account" ? "" : " primario") + '" data-pc="' + (ultimo ? "chiudi" : "avanti") + '">' + avanti + "</button>"
+        : elenco ? '<span class="pc-spazio" aria-hidden="true"></span><button type="button" class="conto-b primario" data-pc="chiudi">' + L("Fatto", "Done") + "</button>"
+          : '<span class="pc-spazio" aria-hidden="true"></span><button type="button" class="conto-b primario" data-pc="' + (st.modo === "paese" ? "chiudi" : "elenco") + '">' + L("Fatto", "Done") + "</button>";
+      d.innerHTML = '<div class="pc-in"><header class="pc-alto">' + alto + '</header><div class="pc-corpo' + (verso ? " pc-" + verso : "") + '" data-passo="' + k + '">' +
+        (!elenco && p.marchio ? '<p class="pc-marchio" aria-hidden="true">GERICO</p>' : "") +
+        '<h2 class="pc-t" id="pc-t" tabindex="-1">' + G.esc(titolo) + '</h2><p class="pc-s">' + G.esc(sotto) + "</p>" +
+        (corpo ? '<div class="pc-scelte">' + corpo + "</div>" : "") + '</div><footer class="pc-basso">' + basso + "</footer></div>";
+      if (k === "paese") { const cur = d.querySelector('[data-paese][aria-pressed="true"]'); if (cur) cur.scrollIntoView({ block: "center" }); }
+      d.querySelector("#pc-t").focus({ preventScroll: true });
+    };
+    const vai = (k, verso) => { stato.passo = k; return disegna(verso); };
+
+    const tocco = async (e) => {
+      const st = stato, d = st.d;
+      const scelta = e.target.closest("[data-int], [data-tema]");
+      if (scelta) { I.tocca(scelta); return; }
+      const pa = e.target.closest("[data-paese]");
+      if (pa) {
+        if (pa.dataset.paese !== G.paese()) G.setPaese(pa.dataset.paese);
+        d.querySelectorAll("[data-paese]").forEach((x) => x.setAttribute("aria-pressed", String(x === pa)));
+        return;
+      }
+      const v = e.target.closest("[data-pc-vai]");
+      if (v) { vai(v.dataset.pcVai, "avanti"); return; }
+      const b = e.target.closest("[data-pc]");
+      if (!b) return;
+      const k = b.dataset.pc, i = st.passi.indexOf(st.passo);
+      if (k === "salta" || k === "chiudi") chiudi();
+      else if (k === "avanti") vai(st.passi[Math.min(i + 1, st.passi.length - 1)], "avanti");
+      else if (k === "indietro") vai(st.passi[Math.max(i - 1, 0)], "indietro");
+      else if (k === "elenco") vai("elenco", "indietro");
+      else if (k === "rifai") { st.modo = "primo"; st.passi = ordine("primo"); st.conAccount = false; vai(st.passi[0], "avanti"); }
+      else if (k === "azzera") {
+        I.scrivi({ sezioni: [], mercati: [], lettura: [] });
+        G.toast(L("Scelte azzerate: il sito torna come per tutti.", "Choices cleared: the site is back to the default."));
+        vai("elenco");
+      } else if (k === "accedi") {
+        const err = d.querySelector(".conto-err");
+        b.disabled = true;
+        try { await C.accedi(); if (stato === st) vai("fine", "avanti"); }
+        catch (x) { if (err && err.isConnected) err.textContent = C.spiega(x); }
+        finally { if (b.isConnected) b.disabled = false; }
+      }
+    };
+    const invio = async (e) => {
+      const form = e.target.closest(".pc-form");
+      if (!form) return;
+      e.preventDefault();
+      const st = stato, err = form.querySelector(".conto-err"), nome = form.nome.value.trim(), email = form.email.value.trim();
+      err.textContent = "";
+      if (!nome) { err.textContent = C.spiega(new Error("nome")); form.nome.focus(); return; }
+      if (email && !form.email.checkValidity()) { err.textContent = C.spiega(new Error("email")); form.email.focus(); return; }
+      const b = form.querySelector("[type=submit]");
+      b.disabled = true;
+      try { await C.iscriviti(nome, email); if (stato === st) vai("fine", "avanti"); }
+      catch (x) { if (err.isConnected) err.textContent = C.spiega(x); }
+      finally { if (b.isConnected) b.disabled = false; }
+    };
+    const cerca = (e) => {
+      if (!e.target.matches(".pc-q")) return;
+      const d = stato.d, q = senzaAcc(e.target.value.trim());
+      let n = 0;
+      d.querySelectorAll(".pc-l li").forEach((li) => { const on = !q || li.firstChild.dataset.q.includes(q); li.hidden = !on; if (on) n += 1; });
+      d.querySelectorAll(".pc-l").forEach((ul) => { const vis = Array.from(ul.children).some((li) => !li.hidden); ul.hidden = !vis; ul.previousElementSibling.hidden = !vis; });
+      d.querySelector(".pc-none").hidden = n > 0;
+    };
+
+    // modo: primo (la prima visita), dopo (appena iscritto dal menu), indice (dal menu: l'elenco), paese (dal menu)
+    const apri = (modo, opt) => {
+      let d = document.getElementById("percorso");
+      if (!d) {
+        d = document.createElement("dialog");
+        d.id = "percorso";
+        d.className = "percorso";
+        d.setAttribute("aria-labelledby", "pc-t");
+        document.body.appendChild(d);
+        d.addEventListener("cancel", (e) => { e.preventDefault(); chiudi(); });
+        d.addEventListener("click", (e) => { if (stato) tocco(e); });
+        d.addEventListener("submit", (e) => { if (stato) invio(e); });
+        d.addEventListener("input", (e) => { if (stato) cerca(e); });
+      }
+      if (stato && !stato.chiuso) stato.chiuso = true;
+      const passi = modo === "primo" || modo === "dopo" ? ordine(modo) : [];
+      stato = { d, modo, passi, passo: modo === "indice" ? "elenco" : modo === "paese" ? "paese" : passi[0], chiuso: false, ritorno: document.activeElement, conAccount: passi.includes("account"), nome: opt && opt.nome };
+      G.ls.set(FATTO, true);
+      d.classList.remove("closing");
+      document.documentElement.classList.add("menu-open");
+      if (!d.open) d.showModal();
+      return disegna();
+    };
+
+    // la prima visita: una volta sola, in prima pagina, quando il nome è andato al suo posto. Chi ha già l'account o ha
+    // già risposto non lo rivede. Vero se il percorso parte (così la proposta dell'account non gli si accavalla).
+    const primaVolta = () => {
+      if (G.ls.get(FATTO, false)) return false;
+      if (C.entrato() || I.pulito(I.leggi()).fatto) { G.ls.set(FATTO, true); return false; }
+      if (G.current !== "home") return false;
+      G.afterIntro(() => setTimeout(() => {
+        if (G.current !== "home" || document.querySelector("dialog[open]") || G.ls.get(FATTO, false)) return;
+        apri("primo");
+      }, 700));
+      return true;
+    };
+
+    return { apri, chiudi, primaVolta };
   })();
 })();

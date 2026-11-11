@@ -52,6 +52,7 @@ GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:rele
 FINALE = "loudnorm=I=-16:TP=-2.5:LRA=11"  # -2,5 dBTP: l'AAC a 64 kbps alza un po' i picchi
 PAUSE_TEMA = 0.75                      # tra un tema e l'altro, sempre questa
 PAUSA_MAX, PAUSA_FRASE = 0.45, 0.36    # dentro un tema: una pausa più lunga di PAUSA_MAX diventa PAUSA_FRASE
+INTERO_WORDS = 650                     # fino a qui il riepilogo si legge in una richiesta sola: una voce sola dall'inizio alla fine
 CHUNK_WORDS = 170                      # parole al massimo per richiesta: il riepilogo sta in tre richieste
 WPS = (2.1, 3.8)                       # parole al secondo accettate (le voci leggono a 2,7-3): fuori da qui ha saltato o aggiunto
 TRIES = 4
@@ -76,7 +77,7 @@ def musica_id():
 
 def gemini_id(voice):
     # «voce1»: solo la voce, senza musica; cambiando questa sigla l'audio si rifà
-    return "gemini-38-" + voice.lower() + "-voce1"
+    return "gemini-38-" + voice.lower() + "-voce2"
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -87,7 +88,7 @@ LANG = "it"
 # Nicola con un po' di Sara (15%): l'intonazione varia di più e la voce resta maschile; un filo più veloce, frase per frase
 VOICE_MIX = (("im_nicola", 0.85), ("if_sara", 0.15))
 SPEED = 1.1
-VOICE_ID = "kokoro-nicola85-sara15-voce1"  # cambia con la voce o il montaggio: l'audio si rifà anche con lo stesso testo
+VOICE_ID = "kokoro-nicola85-sara15-voce2"  # cambia con la voce o il montaggio: l'audio si rifà anche con lo stesso testo
 # un po' di compressione e di presenza sulle medie (il volume finale lo dà FINALE)
 CHAIN = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,equalizer=f=3200:t=q:w=1.2:g=2.5"
 PAUSE_SENT, PAUSE_PARA = 0.3, PAUSE_TEMA
@@ -306,7 +307,7 @@ def gemini_piece(text, key, voice, np, sf):
             "generation_config": {"speech_config": [{"voice": voice}]}}
     req = urllib.request.Request(GEMINI_URL, data=json.dumps(body).encode("utf-8"), method="POST",
                                  headers={"x-goog-api-key": key, "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
+    with urllib.request.urlopen(req, timeout=420) as r:
         doc = json.load(r)
     return pcm(find_audio(doc), np, sf)
 
@@ -377,9 +378,23 @@ def pieces(paras):
 def gemini_audio(paras, key, voice, np, sf):
     """Tutto il riepilogo con Gemini: i pezzi uno dopo l'altro, con le pause rimesse in ordine (ritma) e la stessa
     pausa tra un pezzo e l'altro. Torna la voce, la frequenza e dove comincia ogni tema dopo il primo."""
+    # Prima tutto in una richiesta sola: letto a pezzi, da un pezzo all'altro la voce cambiava timbro e passo e
+    # sembrava un'altra persona. Se la lettura intera non riesce, si torna ai pezzi di CHUNK_WORDS parole.
+    if sum(len(p.split()) for p in paras) <= INTERO_WORDS:
+        try:
+            return gemini_leggi(["\n\n".join(paras)], key, voice, np, sf)
+        except QuotaDelGiorno:
+            raise
+        except RuntimeError as e:
+            print(f"::warning::audio: la lettura in una richiesta sola non è riuscita ({e}); leggo a pezzi")
+            time.sleep(5)
+    return gemini_leggi(pieces(paras), key, voice, np, sf)
+
+
+def gemini_leggi(pezzi, key, voice, np, sf):
     rate = 24000
     parts, marks, size = [], [], 0
-    for i, piece in enumerate(pieces(paras)):
+    for i, piece in enumerate(pezzi):
         if i:
             time.sleep(3)  # niente raffiche: il livello gratuito conta anche le richieste al minuto
         y, rate = gemini_read("\n\n".join(per_voce(p) for p in piece.split("\n\n")), key, voice, np, sf)

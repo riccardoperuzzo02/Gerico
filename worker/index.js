@@ -13,7 +13,8 @@ import { verificaIscrizione, verificaAccesso, ErrorePasskey, ALGORITMI, b64u, ca
 import { avvia } from "./orari.js";
 
 const COOKIE = "__Host-gerico_s";
-const SESSIONE_MS = 60 * 864e5;      // una sessione dura 60 giorni e si rinnova da sola quando ne mancano meno di 30
+const SESSIONE_MS = 400 * 864e5;     // chi entra resta dentro finché non esce: l'accesso dura 400 giorni (il massimo che un browser
+                                     // tiene un cookie) e si rinnova a ogni visita, al più una volta al giorno
 const SFIDA_MS = 5 * 60 * 1000;       // una sfida delle passkey vale 5 minuti, una volta sola
 const enc = new TextEncoder();
 
@@ -185,7 +186,7 @@ async function io(c) {
   }
   const extra = {};
   const st = [];
-  if (s.scade - c.ora < SESSIONE_MS / 2) {
+  if (s.scade - c.ora < SESSIONE_MS - 864e5) {
     st.push(c.db.prepare("UPDATE sessioni SET scade = ?1 WHERE hash = ?2").bind(c.ora + SESSIONE_MS, s.hash));
     extra["Set-Cookie"] = cookieSessione(s.tok);
   }

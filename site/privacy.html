@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261111-22">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261111-23">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -60,11 +60,11 @@
 <p><b>Perché.</b> Per farti entrare e per ritrovare le tue scelte su ogni dispositivo. L'email serve solo a Riccardo per sapere chi è iscritto: non mandiamo newsletter né altre email.</p>
 <p><b>Dove.</b> Nel database D1 di Cloudflare, con i dati tenuti nell'Unione europea, collegato al sito. Nessun dato personale lascia Cloudflare.</p>
 <p><b>Chi li vede.</b> Solo Riccardo, dal gestionale di GERICO: nome, email, date di iscrizione e di accesso, temi, paese e interessi. Non li diamo a nessuno.</p>
-<p><b>Per quanto.</b> Finché hai l'account. Un accesso scade dopo 60 giorni in cui non apri GERICO; se torni prima si rinnova.</p>
+<p><b>Per quanto.</b> Finché hai l'account. Una volta entrato resti dentro finché non esci tu: l'accesso si rinnova a ogni visita e scade solo dopo 400 giorni in cui non apri GERICO.</p>
 <p><b>Come vederli e cancellarli.</b> Dal menu, in «Il tuo account»: «I tuoi dati» li mostra tutti, «Scarica i tuoi dati» li dà in un file, «Cancella l'account» cancella subito tutto quello che è sul server. La passkey resta nel portachiavi del tuo dispositivo finché non la togli (alcuni browser la tolgono da soli dopo la cancellazione); i temi e il paese restano nel tuo browser, come prima dell'account.</p>
 
 <h2>Il cookie tecnico</h2>
-<p>Solo se hai fatto l'accesso il sito salva un cookie, <code>__Host-gerico_s</code>. Serve a dire al server chi sei, e basta: è un codice casuale, e sul server ne teniamo solo un'impronta cifrata. È tecnico (HttpOnly: gli script delle pagine non lo leggono; Secure; SameSite=Lax), dura 60 giorni e sparisce quando esci. Chi non ha l'account non riceve nessun cookie da GERICO.</p>
+<p>Solo se hai fatto l'accesso il sito salva un cookie, <code>__Host-gerico_s</code>. Serve a dire al server chi sei, e basta: è un codice casuale, e sul server ne teniamo solo un'impronta cifrata. È tecnico (HttpOnly: gli script delle pagine non lo leggono; Secure; SameSite=Lax), dura 400 giorni, si rinnova a ogni visita e sparisce quando esci. Chi non ha l'account non riceve nessun cookie da GERICO.</p>
 
 <h2>Visite ed errori delle pagine</h2>
 <p>Per sapere quante persone leggono GERICO e se qualcosa non funziona, ogni pagina manda al server di GERICO un messaggio piccolo, senza cookie: quale pagina è (prima pagina, storia, Terminal…), il paese scelto nel sito (non quello da cui ti colleghi), la lingua e se usi un telefono, un tablet o un computer. Si tengono solo i totali di ogni giorno, per 13 mesi.</p>
@@ -108,11 +108,11 @@
 <p><b>Why.</b> To let you in and to give you your choices on every device. The email is only for Riccardo, to know who has signed up: we send no newsletters or other emails.</p>
 <p><b>Where.</b> In Cloudflare's D1 database, with the data kept in the European Union, connected to the site. No personal data leaves Cloudflare.</p>
 <p><b>Who sees it.</b> Only Riccardo, in GERICO's dashboard: name, email, dates you joined and last visited, topics, country and interests. We give it to no one.</p>
-<p><b>For how long.</b> As long as you have the account. A session expires after 60 days without opening GERICO; if you come back sooner it renews.</p>
+<p><b>For how long.</b> As long as you have the account. Once signed in you stay signed in until you sign out: the session renews on every visit and expires only after 400 days without opening GERICO.</p>
 <p><b>How to see and delete it.</b> From the menu, under “Your account”: “Your data” shows all of it, “Download your data” gives it to you in a file, “Delete the account” immediately deletes everything on the server. The passkey stays in your device's keychain until you remove it (some browsers remove it by themselves after the deletion); your topics and country stay in your browser, as before the account.</p>
 
 <h2>The technical cookie</h2>
-<p>Only if you're signed in does the site save a cookie, <code>__Host-gerico_s</code>. It tells the server who you are, nothing else: it's a random code, and on the server we keep only an encrypted fingerprint of it. It's technical (HttpOnly: the pages' scripts can't read it; Secure; SameSite=Lax), lasts 60 days and goes away when you sign out. Without an account you get no cookie from GERICO.</p>
+<p>Only if you're signed in does the site save a cookie, <code>__Host-gerico_s</code>. It tells the server who you are, nothing else: it's a random code, and on the server we keep only an encrypted fingerprint of it. It's technical (HttpOnly: the pages' scripts can't read it; Secure; SameSite=Lax), lasts 400 days, renews on every visit and goes away when you sign out. Without an account you get no cookie from GERICO.</p>
 
 <h2>Page visits and errors</h2>
 <p>To know how many people read GERICO and whether something is broken, each page sends GERICO's server a small message, without cookies: which page it is (front page, story, Terminal…), the country chosen on the site (not the one you're connecting from), the language, and whether you use a phone, a tablet or a computer. Only each day's totals are kept, for 13 months.</p>
@@ -147,7 +147,7 @@
 <p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
 </div>
 </footer>
-<script src="assets/js/common.js?v=20261111-22"></script>
-<script src="assets/js/info.js?v=20261111-22"></script>
+<script src="assets/js/common.js?v=20261111-23"></script>
+<script src="assets/js/info.js?v=20261111-23"></script>
 </body>
 </html>

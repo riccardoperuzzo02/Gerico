@@ -308,7 +308,7 @@ G.page("home", async function (P) {
     if (!last) return;
     // sotto le brevi, a destra, ci sono ancora i giorni scorsi e i temi: il loro spazio non è delle brevi
     const altro = $("side-altro");
-    const end = last.getBoundingClientRect().bottom - (altro ? altro.offsetHeight : 0);
+    const end = last.getBoundingClientRect().bottom - (altro && altro.offsetHeight ? altro.offsetHeight + 30 : 0);
     const pad = sec.getBoundingClientRect().bottom - list.getBoundingClientRect().bottom;
     // lo spazio per il pulsante: circa una riga e mezza
     const btn = 52;

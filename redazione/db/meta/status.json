@@ -1,9 +1,9 @@
 {
   "lastPublish": {
-    "at": "2026-11-12T09:49:02+01:00",
-    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-12T13:20:37+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-12T07:24:30+01:00",
+  "lastRun": "2026-11-12T13:20:27+01:00",
   "marketsRun": {
     "at": "2026-11-11T18:16:14+01:00",
     "esito": "Nessun aggiornamento: alle 18:15 ANSA e Teleborsa avevano solo articoli intraday dell'11 novembre (Ftse Mib circa -0,2% alle 15:48), nessun articolo di chiusura con la data di oggi. Mercati e Terminal lasciati invariati."
@@ -24,14 +24,14 @@
     "esito": "US 0 nuove/0 aggiornate/0 archiviate (Mississippi: Colom vince, ma solo CBS letta, seconda fonte di oggi non raggiungibile); GB 0/0/0 e DE 0/0/0 (Sky, Independent, Tagesschau, Zeit non si aprono, ricerca senza articoli di oggi); FR 0/0/0 (Trappes: fonti contrastanti, solo France 24); ES 0/0/1 (Oviedo archiviata, nessuna novità da oltre 36 ore)."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 14,
-    "at": "2026-11-12T07:24:30+01:00",
-    "factsChecked": 6,
-    "factsCorrected": 2,
+    "articlesDiscarded": 0,
+    "articlesRead": 6,
+    "at": "2026-11-12T13:20:27+01:00",
+    "factsChecked": 2,
+    "factsCorrected": 0,
     "storiesArchived": 0,
-    "storiesNew": 1,
-    "storiesUpdated": 4
+    "storiesNew": 0,
+    "storiesUpdated": 1
   },
   "runningSince": null,
   "storiesLive": 14

@@ -1,0 +1,102 @@
+{
+  "article": "L'11 novembre un allarme bomba via email ha raggiunto circa 6.300 scuole statali su 7.476, secondo quanto ha detto il ministro dell'Istruzione Giuseppe Valditara, riportato da Il Post; il ministero parla di circa 6.000 istituti, scrive l'Ansa, e nel corso della giornata il conteggio è salito dalle prime 300 segnalazioni. Il Post scrive che la mail è arrivata poco prima delle 10 e parlava di un sacchetto con un ordigno «con innesco a distanza», con minacce molto violente. Le scuole paritarie non sono state colpite, riferisce Il Post.\n\nTutti gli allarmi risultano infondati. Controlli e sopralluoghi delle forze dell'ordine non hanno trovato nulla, dice Il Post; la presidente del Consiglio Giorgia Meloni ha detto che «non è stato trovato nulla, in nessuna scuola». Alcune scuole hanno ripreso subito le lezioni, altre le hanno sospese, e la reazione più diffusa è stata l'evacuazione, scrive Il Post, che nota come non esistano linee guida specifiche e ogni preside decida con le forze dell'ordine.\n\nSulla provenienza, Il Post riferisce che la mail era firmata «Mikhail Andropov, leader del Vilayat di Misoginistan», e che firme simili erano comparse in falsi allarmi in Irlanda, Regno Unito e Bulgaria. Dai primi accertamenti l'account di invio appartiene a una studentessa di un'università privata di Taiwan e sarebbe stato violato, scrive lo stesso giornale. Le ipotesi sulla matrice, filorussa o iraniana, non hanno al momento riscontri, dice Il Post. Secondo Open la procura di Milano si preparerebbe ad aprire un fascicolo.\n\nValditara ha definito «inesistente» il rischio concreto; Meloni ha detto che dalle mail anonime non c'è pericolo e che l'obiettivo è creare paura e caos, riporta l'Ansa. Il ministro della Difesa Guido Crosetto ha parlato di «strategia del terrore» e ha annunciato che riferirà in Parlamento, secondo l'Ansa. Meloni ha convocato una riunione a Palazzo Chigi con i vicepremier Salvini e Tajani, i ministri Piantedosi e Crosetto, il sottosegretario Mantovano, i vertici dell'intelligence e l'Agenzia per la cybersicurezza nazionale.\n\nSecondo Valditara e fonti del ministero, citati da Il Post e dall'Ansa, le scuole riaprono il 12 novembre con lezioni regolari.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "L'11 novembre un allarme bomba via email ha raggiunto circa 6.300 scuole statali su 7.476, secondo Valditara; il ministero parla di circa 6.000.",
+      "who": [
+        "Il Post",
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Tutti gli allarmi risultano infondati: i controlli delle forze dell'ordine non hanno trovato nulla.",
+      "who": [
+        "Il Post",
+        "ANSA"
+      ]
+    },
+    {
+      "text": "La mail era firmata «Mikhail Andropov» e l'account di invio sembra appartenere a una studentessa di un'università privata di Taiwan, probabilmente violato.",
+      "who": [
+        "Il Post"
+      ]
+    },
+    {
+      "text": "Meloni ha convocato una riunione a Palazzo Chigi alle 16 con ministri, intelligence e Agenzia per la cybersicurezza.",
+      "who": [
+        "ANSA"
+      ]
+    },
+    {
+      "text": "Le scuole riaprono il 12 novembre con lezioni regolari, secondo Valditara e il ministero.",
+      "who": [
+        "Il Post",
+        "ANSA"
+      ]
+    }
+  ],
+  "firstSeen": "2026-11-12T07:24:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-12T07:24:00+01:00",
+      "text": "Prima notizia: allarmi bomba via email in circa 6.300 scuole statali, tutti infondati; le scuole riaprono il 12 novembre."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Chi ha inviato la mail e con quale scopo?",
+    "La procura aprirà un fascicolo e per quali reati?",
+    "Come sono stati ottenuti gli indirizzi delle scuole?"
+  ],
+  "places": [
+    "IT"
+  ],
+  "rank": 11,
+  "section": "italia",
+  "sources": [
+    {
+      "angle": "Numeri degli allarmi, riunione a Palazzo Chigi, dichiarazioni di Meloni e Crosetto.",
+      "area": "Italia",
+      "at": "2026-11-11T12:20:00+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/allarmi-bomba-nelle-scuole-meloni-convoca-una-riunione-alle-16_e58eabf9-137a-456d-9320-3a0b6e271cd8.html"
+    },
+    {
+      "angle": "Testo e firma della mail, account compromesso, protocolli e dichiarazioni del governo.",
+      "area": "Italia",
+      "date": "2026-11-11",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/11/allarmi-bomba-scuole-cosa-e-successo-chi-e-stato/"
+    },
+    {
+      "angle": "Possibile fascicolo della procura di Milano.",
+      "area": "Italia",
+      "date": "2026-11-12",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/12/scuola-allarmi-mail-andropov-governo-escalation/"
+    }
+  ],
+  "status": "live",
+  "summary": "Una mail con allarme bomba ha raggiunto circa 6.300 scuole statali l'11 novembre; tutti gli allarmi sono infondati e le scuole riaprono oggi. Il governo parla di un tentativo di creare paura, e la provenienza della mail è ancora da accertare.",
+  "tags": [
+    "Scuola",
+    "Sicurezza",
+    "Cybersicurezza"
+  ],
+  "themes": [],
+  "title": "Scuole: allarme bomba via email in circa 6.300 istituti, nessun ordigno trovato",
+  "updated": "2026-11-12T07:24:00+01:00",
+  "view": "È accertato che gli allarmi erano infondati e che la mail è stata inviata a un numero molto alto di scuole in poche ore. Chi l'abbia inviata resta aperto: l'account taiwanese indica solo un possibile account violato, e le ipotesi di matrice sono senza riscontri.\n\nConta perché ha fermato o interrotto le lezioni in quasi tutte le scuole statali e perché non esistono protocolli comuni. Da guardare: l'informativa di Crosetto in Parlamento, l'inchiesta della procura e le misure sugli indirizzi delle scuole.",
+  "figure": {
+    "value": "6.300",
+    "label": "le scuole statali raggiunte dall'allarme bomba"
+  }
+}

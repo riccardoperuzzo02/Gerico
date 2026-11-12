@@ -1,9 +1,9 @@
 {
   "lastPublish": {
-    "at": "2026-11-11T18:16:18+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 1 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-12T07:24:50+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-11T13:20:00+01:00",
+  "lastRun": "2026-11-12T07:24:30+01:00",
   "marketsRun": {
     "at": "2026-11-11T18:16:14+01:00",
     "esito": "Nessun aggiornamento: alle 18:15 ANSA e Teleborsa avevano solo articoli intraday dell'11 novembre (Ftse Mib circa -0,2% alle 15:48), nessun articolo di chiusura con la data di oggi. Mercati e Terminal lasciati invariati."
@@ -25,14 +25,14 @@
   },
   "quality": {
     "articlesDiscarded": 3,
-    "articlesRead": 26,
-    "at": "2026-11-11T09:27:30+01:00",
-    "factsChecked": 8,
-    "factsCorrected": 1,
-    "storiesArchived": 5,
-    "storiesNew": 5,
-    "storiesUpdated": 5
+    "articlesRead": 14,
+    "at": "2026-11-12T07:24:30+01:00",
+    "factsChecked": 6,
+    "factsCorrected": 2,
+    "storiesArchived": 0,
+    "storiesNew": 1,
+    "storiesUpdated": 4
   },
   "runningSince": null,
-  "storiesLive": 12
+  "storiesLive": 14
 }

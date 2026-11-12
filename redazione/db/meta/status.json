@@ -1,12 +1,12 @@
 {
   "lastPublish": {
-    "at": "2026-11-12T14:31:09+01:00",
-    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-12T18:47:03+01:00",
+    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-12T13:20:27+01:00",
   "marketsRun": {
-    "at": "2026-11-11T18:16:14+01:00",
-    "esito": "Nessun aggiornamento: alle 18:15 ANSA e Teleborsa avevano solo articoli intraday dell'11 novembre (Ftse Mib circa -0,2% alle 15:48), nessun articolo di chiusura con la data di oggi. Mercati e Terminal lasciati invariati."
+    "at": "2026-11-12T18:46:56+01:00",
+    "esito": "Aggiornate le chiusure del 12 novembre (Ansa): Ftse Mib -0,27%, Dax +0,41%, Cac 40 +0,34%, Ftse 100 +0,25%, spread 104,4. Mancano Aex, Smi, rendimenti, euro/dollaro, Brent e gas nelle fonti lette."
   },
   "outlets": [
     "ANSA",

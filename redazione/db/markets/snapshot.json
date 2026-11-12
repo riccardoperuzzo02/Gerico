@@ -1,153 +1,203 @@
 {
-  "asOf": "2026-11-12T07:24:00+01:00",
-  "classes": [
+ "asOf": "2026-11-12T18:46:56+01:00",
+ "classes": [
+  {
+   "items": [
     {
-      "items": [
-        {
-          "chg": 0.37,
-          "name": "Ftse Mib",
-          "note": "Chiusura dell'11 novembre",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "51.946",
-          "why": "Corsa di Technoprobe e Stm dopo i conti di CoreWeave e l'interesse per la quotazione di Anthropic, secondo l'Ansa."
-        },
-        {
-          "chg": -0.3,
-          "name": "Dow Jones",
-          "note": "Chiusura del 10 novembre; la chiusura dell'11 non è nelle fonti lette",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "52.231,89",
-          "why": "Inflazione Usa sopra le attese e timori di un rialzo Fed a dicembre, secondo CNBC."
-        },
-        {
-          "chg": -0.38,
-          "name": "S&P 500",
-          "note": "Chiusura del 10 novembre",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "7.520,93",
-          "why": ""
-        },
-        {
-          "chg": -0.74,
-          "name": "Nasdaq",
-          "note": "Chiusura del 10 novembre",
-          "story": "2026-11-09-wall-street-ia-chip",
-          "value": "25.065,87",
-          "why": "Peso di Nvidia, secondo CNBC."
-        }
-      ],
-      "key": "indici",
-      "label": "Indici",
-      "note": "Milano: chiusura dell'11 novembre. Wall Street: ultima chiusura verificata, quella del 10 novembre; l'Ansa dice che l'11 il Nasdaq era in recupero."
+     "chg": -0.27,
+     "name": "Ftse Mib",
+     "note": "Chiusura del 12 novembre (Ansa, 17:41)",
+     "story": "2026-11-09-wall-street-ia-chip",
+     "value": "51.808",
+     "why": "Pesano i titoli tecnologici dopo il calo di Nvidia, secondo l'Ansa."
     },
     {
-      "items": [
-        {
-          "chg": -7,
-          "name": "Nvidia",
-          "note": "Dopo la chiusura dell'11 novembre (Ansa, 00:30)",
-          "story": "2026-11-11-nvidia-huang-cina",
-          "value": "n.d.",
-          "why": "Notizia di un secondo rapporto dell'amministratore delegato Huang; il consiglio si riunisce sul suo futuro."
-        },
-        {
-          "chg": 7.73,
-          "name": "Technoprobe",
-          "note": "Chiusura dell'11 novembre",
-          "value": "n.d.",
-          "why": "Conti e settore tecnologico in rialzo, secondo l'Ansa."
-        },
-        {
-          "chg": 5.16,
-          "name": "Stm",
-          "note": "Chiusura dell'11 novembre",
-          "value": "n.d.",
-          "why": "Conti di CoreWeave e interesse per l'Ipo di Anthropic, secondo l'Ansa."
-        },
-        {
-          "chg": -22.27,
-          "name": "Bff Bank",
-          "note": "Chiusura dell'11 novembre",
-          "value": "n.d.",
-          "why": "Conti peggiori delle attese e timori di un aumento di capitale, secondo l'Ansa."
-        }
-      ],
-      "key": "azioni",
-      "label": "Azioni",
-      "note": ""
+     "chg": 0.41,
+     "name": "Dax",
+     "note": "Chiusura del 12 novembre (Ansa, 18:12)",
+     "value": "26.771",
+     "why": ""
     },
     {
-      "items": [],
-      "key": "obbligazioni",
-      "label": "Titoli di Stato",
-      "note": "Nessun dato verificato in questo aggiornamento"
+     "chg": 0.34,
+     "name": "Cac 40",
+     "note": "Chiusura del 12 novembre (Ansa, 18:12)",
+     "value": "8.361",
+     "why": ""
     },
     {
-      "items": [],
-      "key": "valute",
-      "label": "Valute",
-      "note": "Nessun dato verificato in questo aggiornamento"
+     "chg": 0.25,
+     "name": "Ftse 100",
+     "note": "Chiusura del 12 novembre (Ansa, 18:12)",
+     "value": "10.863",
+     "why": ""
     },
     {
-      "items": [
-        {
-          "chg": 1.39,
-          "name": "Brent",
-          "note": "12 novembre (Al Jazeera)",
-          "story": "2026-10-07-hormuz-on-peace",
-          "value": "92,76 $",
-          "why": "Rifiuto iraniano di trasferire all'estero l'uranio arricchito; smentita di colloqui con gli Usa."
-        },
-        {
-          "chg": 0.57,
-          "name": "Wti",
-          "note": "12 novembre (Al Jazeera)",
-          "story": "2026-10-07-hormuz-on-peace",
-          "value": "86,53 $",
-          "why": ""
-        },
-        {
-          "name": "Oro",
-          "note": "11 novembre (Ansa)",
-          "value": "4.064 $",
-          "why": ""
-        },
-        {
-          "name": "Gas Ttf",
-          "note": "11 novembre (Ansa)",
-          "value": "86 €/MWh",
-          "why": ""
-        }
-      ],
-      "key": "materie",
-      "label": "Materie prime",
-      "note": ""
+     "chg": -0.3,
+     "name": "Dow Jones",
+     "note": "Chiusura del 10 novembre; la chiusura dell'11 non è nelle fonti lette",
+     "story": "2026-11-09-wall-street-ia-chip",
+     "value": "52.231,89",
+     "why": "Inflazione Usa sopra le attese e timori di un rialzo Fed a dicembre, secondo CNBC."
     },
     {
-      "items": [],
-      "key": "cripto",
-      "label": "Cripto",
-      "note": "Nessun dato verificato in questo aggiornamento"
+     "chg": -0.38,
+     "name": "S&P 500",
+     "note": "Chiusura del 10 novembre",
+     "story": "2026-11-09-wall-street-ia-chip",
+     "value": "7.520,93",
+     "why": ""
+    },
+    {
+     "chg": -0.74,
+     "name": "Nasdaq",
+     "note": "Chiusura del 10 novembre",
+     "story": "2026-11-09-wall-street-ia-chip",
+     "value": "25.065,87",
+     "why": "Peso di Nvidia, secondo CNBC."
     }
-  ],
-  "label": "Chiusure di ieri e Asia stamattina",
-  "sources": [
+   ],
+   "key": "indici",
+   "label": "Indici",
+   "note": "Borse europee: chiusura del 12 novembre. Wall Street: ultima chiusura verificata, quella del 10 novembre."
+  },
+  {
+   "items": [
     {
-      "name": "ANSA, Milano chiude a ridosso dei 52.000 punti (11 novembre)",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/borsa-milano-chiude-a-ridosso-dei-52.000-punti-037-brilla-stm_24231352-450f-4939-ab85-98c82c5aef40.html"
+     "chg": -7,
+     "name": "Nvidia",
+     "note": "Dopo la chiusura dell'11 novembre (Ansa, 00:30)",
+     "story": "2026-11-11-nvidia-huang-cina",
+     "value": "n.d.",
+     "why": "Notizia di un secondo rapporto dell'amministratore delegato Huang; il consiglio si riunisce sul suo futuro."
     },
     {
-      "name": "ANSA, Nvidia a picco dopo la chiusura (12 novembre)",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/azioni-di-nvidia-di-nuovo-a-picco-dopo-la-notizia-di-un-altro-affaire-per-huang_7e88cc57-32aa-44f0-893d-3022a5366e53.html"
+     "chg": -4.73,
+     "name": "Technoprobe",
+     "note": "Chiusura del 12 novembre (Ansa, 17:41)",
+     "value": "n.d.",
+     "why": "Calo dei titoli tecnologici dopo la notizia su Nvidia, secondo l'Ansa."
     },
     {
-      "name": "CNBC, chiusura di Wall Street (10 novembre)",
-      "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html"
+     "chg": -5.29,
+     "name": "Amplifon",
+     "note": "Chiusura del 12 novembre (Ansa, 17:41)",
+     "value": "n.d.",
+     "why": ""
     },
     {
-      "name": "Al Jazeera, Iran e petrolio (12 novembre)",
-      "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack"
+     "chg": -4.33,
+     "name": "Stellantis",
+     "note": "Chiusura del 12 novembre (Ansa, 17:41)",
+     "value": "n.d.",
+     "why": ""
+    },
+    {
+     "chg": 5.16,
+     "name": "Stm",
+     "note": "Chiusura dell'11 novembre",
+     "value": "n.d.",
+     "why": "Conti di CoreWeave e interesse per l'Ipo di Anthropic, secondo l'Ansa."
+    },
+    {
+     "chg": -22.27,
+     "name": "Bff Bank",
+     "note": "Chiusura dell'11 novembre",
+     "value": "n.d.",
+     "why": "Conti peggiori delle attese e timori di un aumento di capitale, secondo l'Ansa."
     }
-  ],
-  "summary": "Piazza Affari ha chiuso l'11 novembre a 51.946 punti (più 0,37%). Nvidia perde circa il 7% dopo la chiusura Usa, e il Brent sale a 92,76 dollari."
+   ],
+   "key": "azioni",
+   "label": "Azioni",
+   "note": ""
+  },
+  {
+   "items": [
+    {
+     "name": "Spread Btp-Bund",
+     "note": "Chiusura del 12 novembre (Ansa, 18:11); in rialzo",
+     "value": "104,4 bp",
+     "why": ""
+    }
+   ],
+   "key": "obbligazioni",
+   "label": "Titoli di Stato",
+   "note": "Rendimenti di Btp e Bund non riportati nelle fonti lette"
+  },
+  {
+   "items": [],
+   "key": "valute",
+   "label": "Valute",
+   "note": "Nessun dato verificato in questo aggiornamento"
+  },
+  {
+   "items": [
+    {
+     "chg": 1.39,
+     "name": "Brent",
+     "note": "12 novembre (Al Jazeera)",
+     "story": "2026-10-07-hormuz-on-peace",
+     "value": "92,76 $",
+     "why": "Rifiuto iraniano di trasferire all'estero l'uranio arricchito; smentita di colloqui con gli Usa."
+    },
+    {
+     "chg": 0.57,
+     "name": "Wti",
+     "note": "12 novembre (Al Jazeera)",
+     "story": "2026-10-07-hormuz-on-peace",
+     "value": "86,53 $",
+     "why": ""
+    },
+    {
+     "name": "Oro",
+     "note": "11 novembre (Ansa)",
+     "value": "4.064 $",
+     "why": ""
+    },
+    {
+     "name": "Gas Ttf",
+     "note": "11 novembre (Ansa)",
+     "value": "86 €/MWh",
+     "why": ""
+    }
+   ],
+   "key": "materie",
+   "label": "Materie prime",
+   "note": ""
+  },
+  {
+   "items": [],
+   "key": "cripto",
+   "label": "Cripto",
+   "note": "Nessun dato verificato in questo aggiornamento"
+  }
+ ],
+ "label": "Chiusura delle Borse europee",
+ "sources": [
+  {
+   "name": "ANSA, Borsa: l'Europa chiude in generale rialzo (12 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/borsa-leuropa-chiude-in-generale-rialzo-francoforte-041_ed12fe9a-b95b-4684-933c-be7c17ccac6c.html"
+  },
+  {
+   "name": "ANSA, Borsa: Milano chiude a -0,27% (12 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/borsa-milano-chiude-a-027-technoprobe-giu-su-tonfo-nvidia_d4b86315-48e2-44d1-b891-169061d4b61b.html"
+  },
+  {
+   "name": "ANSA, Milano chiude a ridosso dei 52.000 punti (11 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/11/borsa-milano-chiude-a-ridosso-dei-52.000-punti-037-brilla-stm_24231352-450f-4939-ab85-98c82c5aef40.html"
+  },
+  {
+   "name": "ANSA, Nvidia a picco dopo la chiusura (12 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/azioni-di-nvidia-di-nuovo-a-picco-dopo-la-notizia-di-un-altro-affaire-per-huang_7e88cc57-32aa-44f0-893d-3022a5366e53.html"
+  },
+  {
+   "name": "CNBC, chiusura di Wall Street (10 novembre)",
+   "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html"
+  },
+  {
+   "name": "Al Jazeera, Iran e petrolio (12 novembre)",
+   "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack"
+  }
+ ],
+ "summary": "Piazza Affari ha chiuso il 12 novembre a 51.808 punti (meno 0,27%), frenata dai titoli tecnologici dopo il calo di Nvidia. Bene le altre Borse europee: Francoforte più 0,41%, Parigi più 0,34%, Londra più 0,25%; lo spread Btp-Bund chiude a 104,4 punti."
 }

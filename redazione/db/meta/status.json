@@ -1,7 +1,7 @@
 {
   "lastPublish": {
-    "at": "2026-11-12T13:20:37+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-12T14:23:54+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-12T13:20:27+01:00",
   "marketsRun": {
@@ -20,8 +20,8 @@
     "CNBC"
   ],
   "paesiRun": {
-    "at": "2026-11-12T09:49:00+01:00",
-    "esito": "US 0 nuove/0 aggiornate/0 archiviate (Mississippi: Colom vince, ma solo CBS letta, seconda fonte di oggi non raggiungibile); GB 0/0/0 e DE 0/0/0 (Sky, Independent, Tagesschau, Zeit non si aprono, ricerca senza articoli di oggi); FR 0/0/0 (Trappes: fonti contrastanti, solo France 24); ES 0/0/1 (Oviedo archiviata, nessuna novità da oltre 36 ore)."
+    "at": "2026-11-12T14:23:45+01:00",
+    "esito": "US 1 nuova (Mississippi: Colom, CNBC letta, NPR e NYT nei titoli)/0 aggiornate/0 archiviate (Hegseth invariata); GB 0/0/0, DE 0/0/0, ES 0/0/0 (Sky, Tagesschau, Zeit, Spiegel, 20minutos, El Mundo non si aprono, ricerca senza articoli di oggi); FR 0/0/0 (Bardella e piano agricolo: solo franceinfo, nessuna seconda fonte di oggi; Smic invariata)."
   },
   "quality": {
     "articlesDiscarded": 0,

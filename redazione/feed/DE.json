@@ -1,7 +1,42 @@
 {
  "code": "DE",
- "asOf": "2026-11-12T19:17:41+00:00",
+ "asOf": "2026-11-12T21:17:35+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Bayerischer Drohnenhersteller Quantum Systems meldet Cyberangriff",
+   "desc": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
+   "url": "https://www.tagesschau.de/inland/quantum-systems-cyberangriff-100.html",
+   "at": "2026-11-12T21:09:07+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Attentat in Krakau: Polen zwischen Schock und Streit",
+   "desc": "Nach dem Attentat trauert Polen und kämpft zugleich um die Deutungshoheit. Was über die Motive des Täters bekannt ist – und wie es in der Verfassungskrise weitergeht.",
+   "url": "https://www.zeit.de/video/2026-11/attentat-polen-krakau-was-jetzt-videopodcast",
+   "at": "2026-11-12T19:58:21+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Israel: Israel verbietet französischem Präsidentschaftskandidaten Einreise",
+   "desc": "Israel wirft Jean-Luc Mélenchon vor, »Ritualmordlegenden« zu verbreiten. Der französische Linkspopulist könnte kommendes Jahr in der Stichwahl gegen Marine Le Pen stehen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/israel-einreiseverbot-jean-luc-melenchon-mathilde-panot",
+   "at": "2026-11-12T19:27:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Europäische Union: EU-Parlament lehnt neue Regeln für Finanzberater ab",
+   "desc": "Im EU-Parlament ist ein Gesetz für strengere Regeln für Versicherungs- und Finanzberater gescheitert. Unter anderem sollten Finanzprodukte ohne Mehrwert verboten werden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-finanzberatung-versicherungsberatung-reform-provisionsverbot",
+   "at": "2026-11-12T19:19:32+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Istanbul-Konvention: Ungarns Regierung will Frauenschutzabkommen beitreten",
+   "desc": "Ungarns Ministerpräsident Péter Magyar strebt eine Ratifizierung der Istanbul-Konvention an. Sein Vorgänger Viktor Orbán lehnte diese als »Gender-Ideologie« ab.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/istanbul-konvention-peter-magyar-ungarn-viktor-orban",
+   "at": "2026-11-12T19:13:16+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "CDU: Die CDU kann es nicht fassen",
@@ -99,34 +134,6 @@
    "desc": "Offiziell hält Russland seine Verluste im Ukrainekrieg geheim. Nun haben Hacker Daten einer Statistikbehörde veröffentlicht. Sie zeigen das volle Ausmaß der Katastrophe.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/datenleck-russland-ukraine-soldaten-analyse-tote",
    "at": "2026-11-12T15:18:18+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Binnengrenzkontrollen: Gericht erklärt Grenzkontrollen in zwei Fällen für rechtswidrig",
-   "desc": "Das Verwaltungsgericht Dresden hat zwei Klagen gegen Kontrollen an EU-Grenzen stattgegeben. Damit widersprach es dem Bundesinnenministerium von Alexander Dobrindt.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/binnengrenzkontrollen-grenzen-polnischer-bewohner-goerlitz-ausweiskontrolle-vg-dresden",
-   "at": "2026-11-12T15:12:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Missbrauch in der Bundeswehr: Die Bundeswehr darf sexuelle Übergriffe nicht weiter verharmlosen",
-   "desc": "Bei Skandalen verweist die Truppe stets darauf, Probleme wie Rechtsradikalismus und toxische Männlichkeit seien gesellschaftliche Phänomene. Diese Ausflucht schadet nur.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/sexueller-missbrauch-bundeswehr-soldatinnen-uebergriffe",
-   "at": "2026-11-12T14:43:17+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wohnungsnot in Spanien: Spaniens Übergangsparlament beschließt mehr Mieterschutz",
-   "desc": "Seit Monaten gibt es in Spanien Proteste gegen die Wohnungskrise. Auf einen Generalstreik reagiert das Parlament nun mit einem Gesetzespaket für mehr Mieterschutz.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wohnungsnot-spanien-dekret-zwangsraeumungen-mietvertraege-geierfonds",
-   "at": "2026-11-12T14:39:26+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stromsteuer: Heftige Kritik aus der CDU nach gescheiterter Senkung der Stromsteuer",
-   "desc": "Dass die Stromsteuersenkung nicht beschlossen wurde, sorgt für Unmut in der Union. Doch Kanzler Merz könnte die Maßnahme noch durchsetzen – über den Koalitionsausschuss.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-spd-cdu-friedrich-merz-lars-klingbeil-bundeshaushalt-2027",
-   "at": "2026-11-12T14:36:03+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -239,13 +246,6 @@
    "desc": "Im Ringen um den Haushalt hat sich die Koalition auf einen Kompromiss geeinigt. So soll etwa die Einführung einer Zuckersteuer verschoben werden - zudem wird die Stromsteuer vorerst nicht gesenkt.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-haushalt-kompromiss-100.html",
    "at": "2026-11-11T23:12:02+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Köln und Düsseldorf: Meist friedlicher Karnevalsstart im Rheinland",
-   "desc": "In den Karnevalshochburgen Köln und Düsseldorf haben die Jecken die fünfte Jahreszeit eingeläutet. Laut Polizei verliefen die Feiern auf den Straßen und in den Kneipen meist friedlich. Nur das Wetter machte nicht mit.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/karneval-start-koeln-duesseldorf-100.html",
-   "at": "2026-11-11T20:29:48+00:00"
   }
  ]
 }

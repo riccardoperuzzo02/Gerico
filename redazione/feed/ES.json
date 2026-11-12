@@ -1,7 +1,133 @@
 {
  "code": "ES",
- "asOf": "2026-11-12T19:17:41+00:00",
+ "asOf": "2026-11-12T21:17:35+00:00",
  "items": [
+  {
+   "source": "El País",
+   "title": "Podemos termina su precampaña con cargas contra el PSOE y el Frente Amplio: “Tienen como proyecto que las cosas sigan como están”",
+   "desc": "Ione Belarra denuncia que el Gobierno “mandó a la policía a pegar palos” en la huelga general",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/podemos-termina-su-precampana-con-cargas-contra-el-psoe-y-el-frente-amplio-tienen-como-proyecto-que-las-cosas-sigan-como-estan.html",
+   "at": "2026-11-12T20:50:10+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Begoña Gómez se estrena en un mitin del PSOE para captar el voto de las mujeres",
+   "desc": "La esposa del presidente se convierte en el último activo electoral de los socialistas en el arranque de la campaña. “Sus insultos son nuestras medallas”, reivindica Sánchez frente a los ataques de la derecha",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/begona-gomez-se-estrena-en-un-mitin-del-psoe-para-captar-el-voto-de-las-mujeres.html",
+   "at": "2026-11-12T20:44:45+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Feijóo se presenta como “gestor” para “resolver los problemas” frente al “saqueo” de Sánchez",
+   "desc": "El candidato del PP abre su campaña en Badalona acompañado de Albiol con ataques al Gobierno y a la huelga del 11-N",
+   "url": "https://elpais.com/espana/2026-11-12/feijoo-se-presenta-como-gestor-para-resolver-los-problemas-frente-al-saqueo-de-sanchez.html",
+   "at": "2026-11-12T20:29:10+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Abascal culmina la precampaña con 22 provincias visitadas y 25 actos en dos semanas",
+   "desc": "El líder de Vox carga contra Sánchez por la intervención de Begoña Gómez en el mitin del PSOE: “No tienen ninguna vergüenza”",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/abascal-culmina-la-precampana-con-22-provincias-visitadas-y-25-actos-en-dos-semanas.html",
+   "at": "2026-11-12T20:24:58+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Consumo reclama a dos grandes plataformas de alquiler turístico que retiren más de 8.000 anuncios ilícitos",
+   "desc": "Se trata de alojamientos turísticos que se anuncian sin número de registro y otros con un número falso.",
+   "url": "https://www.20minutos.es/nacional/consumo-reclama-dos-grandes-plataformas-alquiler-turistico-que-retiren-mas-8-000-anuncios-ilicitos_7060506_0.html",
+   "at": "2026-11-12T20:02:54+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Justicia",
+   "desc": "\"La Justicia no puede ejercerse jamás bajo el yugo del miedo\", reclama el manifiesto leído ante la sede de la Audiencia Provincial Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af61660e9cf4ab40c8b4576.html",
+   "at": "2026-11-12T19:44:42+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Ultras",
+   "desc": "Se les intervino más de una veintena de armas de fuego de distintos calibres y la policía asegura que sus miembros se adiestraron en Ucrania Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5ee6721efa02e708b4591.html",
+   "at": "2026-11-12T19:42:21+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Marlaska descarta dimitir y cuestiona la proporcionalidad de las cargas policiales durante la huelga general del 11N",
+   "desc": "El ministro del Interior considera que algunas actuaciones durante la huelga general no se ajustaron aparentemente a los principios de proporcionalidad y anuncia que se tomarán decisiones tras la investigación.",
+   "url": "https://www.20minutos.es/nacional/marlaska-descarta-dimitir-cuestiona-proporcionalidad-las-cargas-policiales-durante-huelga-general-11n_7060503_0.html",
+   "at": "2026-11-12T19:30:39+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Vox denuncia a Silvia Intxaurrondo ante la Junta Electoral Central después de que RTVE la eligiera para entrevistar a los candidatos",
+   "desc": "La presentadora de La Hora de la 1 preguntó en varias ocasiones \"¿hasta qué punto tiene que tener cabida la extrema derecha en la televisión pública?\".",
+   "url": "https://www.20minutos.es/nacional/vox-denuncia-silvia-intxaurrondo-ante-junta-electoral-central-despues-que-rtve-eligiera-para-entrevistar-los-candidatos_7060494_0.html",
+   "at": "2026-11-12T19:25:17+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Colau se conjura para “desmentir” las encuestas y se compromete a conformar un Gobierno “contra la especulación”",
+   "desc": "Frente Amplio elige el distrito obrero de Puente de Vallecas, bastión histórico de la izquierda, para abrir la campaña al 29-N",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/colau-se-conjura-para-desmentir-las-encuestas-y-se-compromete-a-conformar-un-gobierno-contra-la-especulacion.html",
+   "at": "2026-11-12T19:20:34+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Feijóo sube a las redes la primera imagen de avance de su entrevista con Jordi Wild que se emite este viernes: \"Mañana...\"",
+   "desc": "El líder de la oposición sí ha acudido a una cita de la que Santiago Abascal, líder de Vox, se borró el mismo día que iba a realizar la entrevista.",
+   "url": "https://www.20minutos.es/nacional/feijoo-sube-las-redes-primera-imagen-avance-su-entrevista-con-jordi-wild-que-se-emite-este-viernes-manana_7060500_0.html",
+   "at": "2026-11-12T19:07:59+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Begoña Gómez interviene por primera vez en un mitin del PSOE: \"Me habéis dado la mano y el aliento para continuar\"",
+   "desc": "Gómez se mantiene a la espera de juicio por presuntos delitos de tráfico de influencias y malversación en un periplo legal que se prolonga ya más de dos años y medio.",
+   "url": "https://www.20minutos.es/nacional/begona-gomez-participa-por-primera-vez-un-mitin-psoe-me-habeis-dado-mano-aliento-para-continuar_7060497_0.html",
+   "at": "2026-11-12T19:02:51+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Comprobar Lotería Nacional: resultados de hoy, jueves 12 de noviembre de 2026",
+   "desc": "Los resultados de la Lotería Nacional del jueves 12 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
+   "url": "https://www.20minutos.es/nacional/comprobar-loteria-nacional-resultados-hoy-jueves-12-noviembre-2026_7060492_0.html",
+   "at": "2026-11-12T19:00:03+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Comprobar ONCE: resultados de hoy, jueves 12 de noviembre de 2026",
+   "desc": "Los resultados de la ONCE del jueves 12 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
+   "url": "https://www.20minutos.es/nacional/comprobar-once-resultados-hoy-jueves-12-noviembre-2026_7060491_0.html",
+   "at": "2026-11-12T19:00:03+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Comprobar Eurodreams: resultados de hoy jueves 12 de noviembre de 2026",
+   "desc": "Los premios del sorteo Eurodreams son pagos en diferido, siendo el principal un sueldo de 20.000 euros al mes durante 30 años. Consulta los resultados de todos los sorteos.",
+   "url": "https://www.20minutos.es/nacional/comprobar-eurodreams-resultados-hoy-jueves-12-noviembre-2026_7060493_0.html",
+   "at": "2026-11-12T19:00:03+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Comprobar Primitiva: resultados de hoy, jueves 12 de noviembre de 2026",
+   "desc": "Los resultados de La Primitiva del jueves 12 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
+   "url": "https://www.20minutos.es/nacional/comprobar-primitiva-resultados-hoy-jueves-12-noviembre-2026_7060489_0.html",
+   "at": "2026-11-12T19:00:02+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Comprobar Bonoloto: resultados de hoy, jueves 12 de noviembre de 2026",
+   "desc": "Los resultados de la Bonoloto del jueves 12 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
+   "url": "https://www.20minutos.es/nacional/comprobar-bonoloto-resultados-hoy-jueves-12-noviembre-2026_7060490_0.html",
+   "at": "2026-11-12T19:00:02+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "Cristian Corvillo fue recientemente detenido por amaño de contratos públicos -uno de ellos de Adif Alta Velocidad- y por cobro de comisiones. Sánchez negó la pasada semana conocer al imputado, que condujo para él en las primarias del PSOE de 2017 Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5ea88fc6c83c6308b45ca.html",
+   "at": "2026-11-12T18:19:46+00:00"
+  },
   {
    "source": "20minutos",
    "title": "Cinco comunidades en alerta este viernes antes de la llegada de un nuevo temporal este fin de semana",
@@ -10,11 +136,39 @@
    "at": "2026-11-12T18:18:03+00:00"
   },
   {
+   "source": "El Mundo",
+   "title": "Ficciones Parlamentarias",
+   "desc": "Pedro Sánchez se pone a garantizar el derecho a una vivienda digna. Ocho años después y sólo porque decenas de miles de personas bajaron a la calle por derecho o se sentaron en las plazas Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5ac73fdddffb6388b45a4.html",
+   "at": "2026-11-12T18:17:26+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "11-N",
+   "desc": "La capital catalana volvió a arder con escaparates reventados y algaradas contra los 'mossos' en una jornada que dejó un centenar de detenidos por toda España Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/11/6af4d97dfc6c83e1258b459e.html",
+   "at": "2026-11-12T17:48:20+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "Acepta el recurso del PP para declarar nulos los votos a las elecciones generales del 29-N en los que se tache el nombre del ex ministro de Transportes Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5f76ae85eceda458b4573.html",
+   "at": "2026-11-12T17:37:34+00:00"
+  },
+  {
    "source": "20minutos",
-   "title": "La jueza ordena el cese total de actividad a Núcleo Nacional y el cierre de sus sedes",
-   "desc": "La Policía ha intervenido numerosa parafernalia supremacista, más de veinte armas de fuego, gran cantidad de munición, multitud de armas prohibidas (armas blancas, táseres, defensas extensibles...) y objetos contundentes.",
+   "title": "Una jueza ordena el cese total de actividad a Núcleo Nacional y el cierre de sus sedes",
+   "desc": "La Policía ha intervenido parafernalia supremacista, más de veinte armas de fuego, munición y objetos contundentes.",
    "url": "https://www.20minutos.es/nacional/jueza-ordena-cese-total-actividad-nucleo-nacional-cierre-sus-sedes_7060456_0.html",
    "at": "2026-11-12T17:37:29+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Vox promete “derogar tres normas por cada una que se apruebe” y militarizar la frontera de Ceuta",
+   "desc": "La sostenibilidad de las pensiones se menciona en un único punto del programa para el 29-N y se vincula a que haya “una economía más productiva”",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/vox-derogar-tres-normas-por-cada-una-que-se-apruebe-y-militarizar-la-frontera-de-ceuta.html",
+   "at": "2026-11-12T17:35:13+00:00"
   },
   {
    "source": "20minutos",
@@ -38,11 +192,25 @@
    "at": "2026-11-12T17:18:58+00:00"
   },
   {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "La operación de la Unidad Central Operativa (UCO) de la Guardia Civil, que supuso la detención del empresario cordobés Cristian Corvillo, vinculado al PSOE, que condujo el vehíc",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5ee1ffdddffd13a8b457f.html",
+   "at": "2026-11-12T17:04:17+00:00"
+  },
+  {
    "source": "El País",
    "title": "La portavoz de Núcleo Nacional guardaba en su casa 13 armas largas y quería “ir a pegar tiros a París”",
    "desc": "Isabel Peralta almacenaba en su domicilio 10 fusiles, tres escopetas, tres pistolas, una decena de cajas de munición y un juramento a Adolf Hitler",
    "url": "https://elpais.com/espana/2026-11-12/la-portavoz-de-nucleo-nacional-guardaba-en-su-casa-13-armas-largas-y-queria-ir-a-pegar-tiros-a-paris.html",
    "at": "2026-11-12T16:53:10+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "La Policía Nacional ha detenido en Gijón a un varón de unos 40 años como presunto autor del asesinato de su expareja, han informado a Efe fuentes del cuerpo, qu",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af5ee12fc6c8364128b4596.html",
+   "at": "2026-11-12T16:49:30+00:00"
   },
   {
    "source": "20minutos",
@@ -53,17 +221,10 @@
   },
   {
    "source": "20minutos",
-   "title": "Inicio de campaña electoral, en directo | Colau lanza un mensaje a Sánchez: \"El siguiente Gobierno progresista será contra la especulación o no será\"",
-   "desc": "La campaña para las elecciones generales del 29-N arranca en unas horas y, antes, los candidatos de los principales partidos políticos celebran este jueves mítines en diferentes ciudades. PSOE, PP, Frente Amplio, Vox y Podemos realizan sus respectivos actos de inicio de campaña, en los que sus dirigentes buscan marcar las líneas de sus discursos y trasladar sus principales mensajes de cara a la cita con las urnas. La campaña comenzará oficialmente a medianoche y se prolongará hasta el 27 de noviembre. La candidata de Frente Amplio, Ada Colau, ha lanzado un mensaje directo al presidente del Gobierno, Pedro Sánchez, durante su primer mitin de campaña: \"Mi compromiso es que el siguiente Gobierno progresista en este país será contra la especulación o no será\" . Colau ha criticado las declaraciones \"triunfalistas\" del jefe del Ejecutivo sobre la marcha de la economía española y ha advertido d",
+   "title": "Sánchez augura una \"remontada épica\" el 29N y Feijóo promete \"una auditoría del saqueo\" para ver dónde ha ido cada euro",
+   "desc": "La campaña para las elecciones generales del 29-N arranca en unas horas y, antes, los candidatos de los principales partidos políticos han celebrado este jueves mítines en diferentes puntos del país. PSOE, PP, Vox, Frente Amplio y Podemos han aprovechado sus primeros mítines para movilizar a sus votantes y presentar mensajes electorales en una jornada marcada por los reproches cruzados sobre la corrupción, la vivienda y la situación económica. Desde Sevilla, el presidente del Gobierno y candidato socialista, Pedro Sánchez , ha augurado una \"participación histórica\" que permitirá al PSOE protagonizar una \"remontada épica\" y gobernar cuatro años más. Ante unos 4.000 asistentes, ha asegurado que la \"España de progreso\" volverá a derrotar a la \"involución\" en las urnas y ha comparado las propuestas de PP y Vox con las de Donald Trump, Jair Bolsonaro y Javier Milei. \"No vamos a permitir que n",
    "url": "https://www.20minutos.es/nacional/inicio-campana-electoral-directo-candidatos-29n_7060386_6.html",
    "at": "2026-11-12T16:28:26+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "‘Charles’ y ‘Bruna’ aflojan tras dejar 400 litros y rachas de 181 kilómetros, pero aún darán hoy sus últimos coletazos",
-   "desc": "La Aemet, que mantiene a 10 comunidades bajo aviso, prevé lluvias fuertes y persistentes en Galicia y litoral cantábrico, viento intenso en el este peninsular y Baleares y temporal marítimo en el Mediterráneo",
-   "url": "https://elpais.com/el-tiempo/2026-11-12/charles-afloja-pero-aun-dejara-un-dia-mas-de-temporal-con-14-comunidades-bajo-aviso.html",
-   "at": "2026-11-12T16:16:53+00:00"
   },
   {
    "source": "20minutos",
@@ -88,13 +249,6 @@
   },
   {
    "source": "El País",
-   "title": "La exabogada de Koldo García declara al juez que la web ‘Okdiario’ le pagó toda la defensa del exasesor de Ábalos",
-   "desc": "“Ninguna otra persona, física o jurídica, ha satisfecho cantidad alguna”, subraya Leticia de la Hoz",
-   "url": "https://elpais.com/espana/2026-11-12/la-exabogada-de-koldo-garcia-afirma-al-juez-que-la-web-okdiario-le-pago-toda-la-defensa-del-exasesor-de-abalos.html",
-   "at": "2026-11-12T15:31:31+00:00"
-  },
-  {
-   "source": "El País",
    "title": "El ‘error Wild’ de Vox: Abascal tropieza ante el grupo de votantes que más lo apoya",
    "desc": "El ‘youtuber’ tiene una masiva audiencia de varones veinteañeros, un sector donde Vox disfruta de su mayor intención de voto. Dos consultores políticos ven un “error” de Abascal, mientras otro cree que asume “riesgos”, pero que puede salir airoso",
    "url": "https://elpais.com/espana/2026-11-12/el-error-wild-de-vox-abascal-tropieza-ante-el-grupo-de-votantes-que-mas-lo-apoya.html",
@@ -102,8 +256,8 @@
   },
   {
    "source": "El País",
-   "title": "La borrasca no detiene la llegada de cayucos a El Hierro: casi 400 personas rescatadas en mitad de la tormenta",
-   "desc": "El miércoles, con la isla en situación de emergencia, llegaron cuatro embarcaciones. El jueves, tres cayucos más arribaron a La Restringa",
+   "title": "La borrasca no detiene la llegada de cayucos a El Hierro: 400 personas rescatadas en mitad de la tormenta",
+   "desc": "El miércoles, con la isla en situación de emergencia, llegaron cuatro embarcaciones. El jueves, cinco cayucos más arribaron a La Restringa",
    "url": "https://elpais.com/espana/2026-11-12/la-borrasca-no-detiene-la-llegada-de-cayucos-a-el-hierro-mas-de-300-personas-rescatadas-en-mitad-de-la-tormenta.html",
    "at": "2026-11-12T14:15:39+00:00"
   },
@@ -120,13 +274,6 @@
    "desc": "Comparece en la Diputación Permanente para informar de la nueva Planificación de la red de transporte de electricidad hasta 2030 que el Gobierno aprobará a las puertas del 29-N y el PP le replica: \"Usted no la va a desarrollar\".",
    "url": "https://www.20minutos.es/nacional/aagesen-defiende-congreso-que-su-nueva-planificacion-red-electrica-dara-suministro-tres-millones-viviendas_7060242_0.html",
    "at": "2026-11-12T14:04:19+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La jueza imputa al exdelegado del Gobierno en Ceuta por la entrada masiva",
-   "desc": "La magistrada María Tardón cita a declarar a Miguel Ángel Pérez Triano en plena campaña",
-   "url": "https://elpais.com/espana/2026-11-12/la-jueza-imputa-al-exdelegado-del-gobierno-en-ceuta-por-la-entrada-masiva.html",
-   "at": "2026-11-12T13:52:50+00:00"
   },
   {
    "source": "20minutos",
@@ -157,32 +304,11 @@
    "at": "2026-11-12T13:08:54+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Juan Jesús Vivas recoge el Premio 20minutos a Ciudad Destacada: \"En Ceuta tenemos coraje, valor y entereza, un caballa nunca se rinde\"",
-   "desc": "El presidente ceutí agradece el reconocimiento \"en nombre de todos los ciudadanos\" y reclama una política de Estado \"para recuperar la normalidad\" y \"evitar que se repita\" la crisis migratoria de finales de julio.",
-   "url": "https://www.20minutos.es/nacional/juan-jesus-vivas-recoge-premio-20minutos-ciudad-destacada-ceuta-tenemos-coraje-valor-entereza-un-caballa-nunca-se-rinde_7060255_0.html",
-   "at": "2026-11-12T13:03:02+00:00"
-  },
-  {
    "source": "El País",
    "title": "Abascal dice que “eliminará o reducirá drásticamente” la financiación a los sindicatos si llega al Gobierno",
    "desc": "El líder de Vox, sobre el plantón al ‘youtuber’ Jordi Wild: “No queremos someter a ningún tipo de riesgo nuestro discurso”",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/abascal-dice-que-eliminara-o-reducira-al-maximo-la-financiacion-a-los-sindicatos-si-llega-al-gobierno.html",
    "at": "2026-11-12T13:01:20+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La UCO acude al Tribunal de Cuentas por la investigación sobre los pagos en efectivo en el PSOE",
-   "desc": "Los agentes han acudido al órgano fiscalizador por orden del juez de la Audiencia Nacional Ismael Moreno",
-   "url": "https://elpais.com/espana/2026-11-12/la-uco-acude-al-tribunal-de-cuentas-por-la-investigacion-sobre-los-pagos-en-efectivo-en-el-psoe.html",
-   "at": "2026-11-12T12:57:48+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Ferraz ya confirma que Zapatero no participará en la campaña de Sánchez: \"Dijo que haría lo mejor para el partido\"",
-   "desc": "Según Ferraz, el expresidente ha trasladado que prefiere no participar en esta campaña para que se no se le utilice \"como arma arrojadiza\", no obstante, entre las filas socialistas ya trasladaban desde hace semanas que preferían que no volviese a los mítines.",
-   "url": "https://www.20minutos.es/nacional/ferraz-ya-confirma-que-zapatero-no-participara-campana-sanchez-dijo-que-haria-mejor-para-partido_7060205_0.html",
-   "at": "2026-11-12T12:49:34+00:00"
   },
   {
    "source": "20minutos",
@@ -200,20 +326,6 @@
   },
   {
    "source": "20minutos",
-   "title": "Los números feos que nadie quiere tener en la Lotería de Navidad: de los ceros a las cifras gafadas o 'malditas'",
-   "desc": "Con la Lotería de Navidad a la vuelta de la esquina, lo habitual sigue siendo que las personas descarten décimos porque su número no les parece bonito o por superstición.",
-   "url": "https://www.20minutos.es/loterias/loteria-navidad/numeros-feos-nadie-quiere-loteria-navidad-ceros-cifras-gafadas_7060161_0.html",
-   "at": "2026-11-12T12:01:49+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Una desaparición y varios coches calcinados: la larga sombra de los Kinahan vuelve a la Costa del Sol",
-   "desc": "La Policía Nacional detiene al cabecilla en Málaga de este grupo de narcotraficantes irlandeses junto a otras cuatro personas por el secuestro de un miembro de su banda",
-   "url": "https://elpais.com/espana/2026-11-12/una-desaparicion-y-varios-coches-calcinados-la-larga-sombra-de-los-kinahan-vuelve-a-la-costa-del-sol.html",
-   "at": "2026-11-12T11:55:31+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "El PP acusa a Sánchez de ser el presidente \"más dañino para las mujeres\" tras el registro de la UCO por las pulseras antimaltrato",
    "desc": "Los populares cargan contra un Gobierno que \"da lecciones de feminismo\" mientras la Fiscalía Europea investiga si \"su corrupción llegó hasta la seguridad de las mujeres maltratadas\".",
    "url": "https://www.20minutos.es/nacional/pp-acusa-sanchez-ser-presidente-mas-danino-para-las-mujeres-tras-registro-uco-por-las-pulseras-antimaltrato_7060204_0.html",
@@ -221,10 +333,10 @@
   },
   {
    "source": "20minutos",
-   "title": "La UCO acude al Tribunal de Cuentas para requerir información sobre las donaciones del PSOE por orden del juez del caso Koldo",
-   "desc": "El magistrado Ismael Moreno ha acordado esta diligencia en el marco de la pieza separada en la que se investiga la financiación del partido.",
-   "url": "https://www.20minutos.es/nacional/uco-accede-tribunal-cuentas-busca-informacion-donaciones-psoe_7060209_0.html",
-   "at": "2026-11-12T11:31:21+00:00"
+   "title": "La Diputación Permanente salva el decreto 'antidesahucios' y la prórroga de alquileres y vuelve a tumbar los contratos indefinidos",
+   "desc": "PP y Vox ven \"fraude\" en la votación de los decretos por contener muy pocos cambios con respecto a los textos rechazados a principios de octubre y por utilizar la Diputación Permanente como \"puerta de atrás\".",
+   "url": "https://www.20minutos.es/nacional/diputacion-permanente-salva-decreto-antidesahucios-prorroga-alquileres-vuelve-tumbar-los-contratos-indefinidos_7060053_0.html",
+   "at": "2026-11-12T11:38:09+00:00"
   },
   {
    "source": "El Mundo",
@@ -235,24 +347,17 @@
   },
   {
    "source": "20minutos",
+   "title": "La Fiscalía Europea manda a la UCO al Ministerio de Igualdad por un posible fraude en la compra de las pulseras antimaltrato",
+   "desc": "La investigación empezó hace un año para averiguar si se produjeron irregularidades al comprar estos dispositivos de control a agresores machistas con fondos europeos. La ministra Ana Redondo ha señalado que habrá \"colaboración\" y \"transparencia absoluta\".",
+   "url": "https://www.20minutos.es/nacional/fiscalia-europea-investiga-ministerio-igualdad-por-posible-fraude-compra-las-pulseras-antimaltrato-con-fondos-ue_7060180_0.html",
+   "at": "2026-11-12T10:56:37+00:00"
+  },
+  {
+   "source": "20minutos",
    "title": "Adif ofrece reducir el tiempo de trabajo de los controladores de circulación en los primeros contactos con sindicatos ante la huelga del 17",
    "desc": "El gestor de la infraestructura se reunió este martes por separado con CCOO, el SCF y CGT. Se valora la propuesta pero no encuentran en Adif un interlocutor válido para otras reinvidicaciones que exceden la circulación ferroviaria. Transportes y Renfe también han retomado este jueves los contactos con Semaf, CCOO y UGT para frenar la huelga.",
    "url": "https://www.20minutos.es/nacional/adif-ofrece-reducir-tiempo-trabajo-los-controladores-circulacion-los-primeros-contactos-con-sindicatos-ante-huelga-17_7060143_0.html",
    "at": "2026-11-12T10:47:07+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Abascal justifica el plantón a Jordi Wild como \"decisión estratégica\" y se disculpa con él: \"Ha sido la víctima de un error nuestro\"",
-   "desc": "El líder de Vox admite que el youtuber ha sido \"la víctima de un error\" de su partido, pero defiende que ningún portavoz de la formación volverá a ceder los derechos exclusivos de una entrevista.",
-   "url": "https://www.20minutos.es/nacional/abascal-responde-comunicado-jordi-wild-tras-cancelar-entrevista-siento-pero-es-una-decision-firme-estrategica_7060136_0.html",
-   "at": "2026-11-12T10:43:53+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Los policías rechazan que Interior prohíba el uso de gas lacrimógeno: \"Obliga a recurrir a medios contundentes de contacto directo\"",
-   "desc": "Defienden que el gas \"permite actuar manteniendo la distancia y evitando el contacto físico directo con los individuos violentos\".",
-   "url": "https://www.20minutos.es/nacional/los-policias-rechazan-que-interior-prohiba-uso-gas-lacrimogeno-obliga-recurrir-medios-contundentes-contacto-directo_7060138_0.html",
-   "at": "2026-11-12T10:35:59+00:00"
   },
   {
    "source": "20minutos",
@@ -312,66 +417,10 @@
   },
   {
    "source": "El Mundo",
-   "title": "11-N",
-   "desc": "La capital catalana volvió a arder con escaparates reventados y algaradas contra los 'mossos' en una jornada que dejó un centenar de detenidos por toda España Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/11/6af4d97dfc6c83e1258b459e.html",
-   "at": "2026-11-12T07:07:51+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Consumo estima que la prórroga del alquiler beneficiará a cinco millones de personas y permitirá al inquilino ahorrar 4.300€",
-   "desc": "Este jueves, la Diputación Permanente del Congreso debate los dos decretos de vivienda que rechazó el pleno a finales de septiembre y precipitó el adelanto electoral y la convocatoria de la huelga general de este miércoles.",
-   "url": "https://www.20minutos.es/nacional/consumo-estima-que-prorroga-alquiler-beneficiara-cinco-millones-personas-permitira-inquilino-ahorrar-4-300-euros_7059796_0.html",
-   "at": "2026-11-12T04:03:09+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Los ingenieros piden más señales de respaldo en la Madrid-Sevilla para guiar a los maquinistas en más tramos con un solo tren",
-   "desc": "En un informe de \"propuestas preliminares\" tras el accidente de Toledo, piden también dotar de más personal a la Autoridad que debe investigarlo, a la que se adscriben 15 puestos para el ámbito ferroviario de los que siete están vacantes.",
-   "url": "https://www.20minutos.es/nacional/los-ingenieros-piden-mas-senales-respaldo-madrid-sevilla-para-guiar-los-maquinistas-mas-tramos-con-un-solo-tren_7059840_0.html",
-   "at": "2026-11-12T04:02:13+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Tesh Sidi (Frente Amplio): \"Hay que atajar la privatización, hemos visto que una mala gestión de la sanidad pública mata\"",
-   "desc": "En una entrevista para 20minutos, la número dos en las listas de Frente Amplio por Madrid considera que el Estado de bienestar está en crisis por décadas de una mala gestión del PP y del PSOE y reconoce que la izquierda debe hacer \"mucha pedagogía y honestidad\" para recuperar a sus votantes.",
-   "url": "https://www.20minutos.es/nacional/tesh-sidi-frente-amplio-hay-que-atajar-privatizacion-hemos-visto-que-una-mala-gestion-sanidad-publica-mata_7059266_0.html",
-   "at": "2026-11-12T04:01:11+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Moncloa y el PSOE, desaparecidos en la celebración de una huelga que durante días han abanderado contra la oposición",
-   "desc": "La parte socialista del Gobierno optó por el silencio durante la jornada después de que el propio Sánchez animase a la población a secundarla frente a \"quienes presumen de motosierra\".",
-   "url": "https://www.20minutos.es/nacional/moncloa-psoe-desaparecidos-celebracion-una-huelga-que-durante-dias-han-abanderado-contra-oposicion_7059875_0.html",
-   "at": "2026-11-12T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La huelga general que llenó las calles pero no paralizó las ciudades: por qué el 11-N ha tenido menos impacto que la última de 2012",
-   "desc": "Las cifras del 11N, incluida la de consumo eléctrico, apuntan a un seguimiento menor que en la anterior huelga en una España en la que hay más gente trabajando que nunca, la actividad ha resistido las últimas crisis, pero donde el coste de la vida y la vivienda son un problema para millones de ciudadanos.",
-   "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/huelga-general-que-lleno-las-calles-pero-no-paralizo-las-ciudades-por-que-11-n-ha-tenido-menos-impacto-que-ultima-2012_7059992_0.html",
-   "at": "2026-11-12T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El PP tilda de \"fraude\" la aprobación del decreto 'antidesahucios' y el PSOE promete \"más mano dura\" contra la especulación",
-   "desc": "La Diputación Permanente ha salvado el decreto 'antidesahucios' y la prórroga de alquileres, pero ha vuelto a tumbar el de los contratos indefinidos.",
-   "url": "https://www.20minutos.es/nacional/decretos-vivienda-directo-congreso-aprueba-este-jueves-decreto-vivienda-que-pp-promete-derogar-si-gobierna_7059901_6.html",
-   "at": "2026-11-12T00:08:12+00:00"
-  },
-  {
-   "source": "El Mundo",
    "title": "Crónica",
    "desc": "Las 11 familias desalojadas pudieron regresar ayer a sus viviendas sobre las 20.00 horas, después de confirmarse que la explosión no había causado daños estructurales en el edificio Leer",
    "url": "https://www.elmundo.es/espana/2026/11/12/6af4d097fdddff2c4b8b45b2.html",
    "at": "2026-11-12T00:00:22+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Una noche plácida para Feijóo en ‘El hormiguero’: “Le escribí a Sánchez por WhatsApp y no me salió el doble ‘check”",
-   "desc": "El líder del PP asegura que no aceptará que un ministro sea por la mañana un hombre “y al día siguiente se vaya al registro y diga que es mujer”",
-   "url": "https://elpais.com/espana/2026-11-11/una-noche-placida-para-feijoo-en-el-hormiguero-le-escribi-a-sanchez-por-whatsapp-y-no-me-salio-el-doble-check.html",
-   "at": "2026-11-11T23:57:01+00:00"
   },
   {
    "source": "El Mundo",
@@ -421,13 +470,6 @@
    "desc": "Tras el incidente advierte contra el \"clima de odio que están imponiendo algunas organizaciones creando un caldo de cultivo peligroso\" Leer",
    "url": "https://www.elmundo.es/galicia/2026/11/11/6af4dedcfc6c83e1258b45a5.html",
    "at": "2026-11-11T21:33:58+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Política",
-   "desc": "Señalan al presidente como la mano que meció una protesta contra el futuro Ejecutivo y arremeten contra unos sindicatos plegados al poder Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/11/6af4c60021efa0de228b4591.html",
-   "at": "2026-11-11T19:48:30+00:00"
   }
  ]
 }

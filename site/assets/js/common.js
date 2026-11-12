@@ -68,7 +68,7 @@
     "Vai alle notizie": "Skip to the news", "Vai alla storia": "Skip to the story", "Vai alla mappa": "Skip to the map", "Vai al testo": "Skip to the text",
     "GERICO, prima pagina": "GERICO, front page", "Oggi": "Today", "Notizie o Terminal": "News or Terminal", "Notizie": "News",
     "Menu": "Menu", "Ultim'ora": "Latest", "Ferma lo scorrimento": "Pause the ticker", "Chiudi il menu": "Close the menu", "Pagine": "Pages",
-    "Come funziona": "How it works", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
+    "Come funziona": "How it works", "Collabora": "Collaborate", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
     "Grande": "Large", "Molto grande": "Very large", "Lingua": "Language", "Ascolta il riepilogo": "Listen to the briefing",
     "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
     "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",

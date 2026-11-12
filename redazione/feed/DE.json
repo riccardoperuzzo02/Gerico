@@ -1,24 +1,73 @@
 {
  "code": "DE",
- "asOf": "2026-11-12T13:25:18+00:00",
+ "asOf": "2026-11-12T15:17:35+00:00",
  "items": [
   {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Putin schlägt offenbar Evakuierung von Kostjantyniwka vor",
+   "desc": "Russlands Präsident bietet US-Gesandten eine »humanitäre« Mission für das ostukrainische Kostjantyniwka an. Empörung über erneute Starshield-Drosselung. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-12T14:44:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Missbrauch in der Bundeswehr: Die Bundeswehr darf sexuelle Übergriffe nicht weiter verharmlosen",
+   "desc": "Bei Skandalen verweist die Truppe stets darauf, Probleme wie Rechtsradikalismus und toxische Männlichkeit seien gesellschaftliche Phänomene. Diese Ausflucht schadet nur.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/sexueller-missbrauch-bundeswehr-soldatinnen-uebergriffe",
+   "at": "2026-11-12T14:43:17+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Wohnungsnot in Spanien: Spaniens Übergangsparlament beschließt mehr Mieterschutz",
+   "desc": "Seit Monaten gibt es in Spanien Proteste gegen die Wohnungskrise. Auf einen Generalstreik reagiert das Parlament nun mit einem Gesetzespaket für mehr Mieterschutz.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/wohnungsnot-spanien-dekret-zwangsraeumungen-mietvertraege-geierfonds",
+   "at": "2026-11-12T14:39:26+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Stromsteuer: Heftige Kritik aus der CDU nach gescheiterter Senkung der Stromsteuer",
+   "desc": "Dass die Stromsteuersenkung nicht beschlossen wurde, sorgt für Unmut in der Union. Doch Kanzler Merz könnte die Maßnahme noch durchsetzen – über den Koalitionsausschuss.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-spd-cdu-friedrich-merz-lars-klingbeil-bundeshaushalt-2027",
+   "at": "2026-11-12T14:36:03+00:00"
+  },
+  {
    "source": "Der Spiegel",
-   "title": "AfD: Und wieder verliert Tino Chrupalla gegen Alice Weidel",
-   "desc": "In der AfD gibt es Zank um die Frage, wie viel Härte es geben soll bei Abschiebungen und der Verdrängung von Menschen mit Migrationshintergrund aus Deutschland. Dahinter steckt ein Machtkampf in der Führung der Partei.",
-   "url": "https://www.spiegel.de/politik/deutschland/afd-und-wieder-verliert-tino-chrupalla-gegen-alice-weidel-a-9a3a1300-2e9a-4b20-8043-97b1d06e4149",
-   "at": "2026-11-12T13:21:00+00:00"
+   "title": "Warum Markus Söder jetzt noch breitbeiniger durch Berlin laufen dürfte",
+   "desc": "Mit Ilse Aigner hat der Kanzler eine Frau für das höchste Staatsamt vorgeschlagen, die von allen gelobt wird. Doch es ist nicht Friedrich Merz, der von dieser Personalie profitiert.",
+   "url": "https://www.spiegel.de/politik/deutschland/warum-markus-soeder-jetzt-noch-breitbeiniger-durch-berlin-laufen-duerfte-a-3f95b855-5de6-4193-8e07-5c9faf7de705",
+   "at": "2026-11-12T14:31:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Keine Senkung der Stromsteuer: Bei der Union \"hat es ordentlich geknallt\"",
+   "desc": "Die Senkung der Stromsteuer wird nun vermutlich doch nicht kommen - trotz anderslautender Versprechen. Bei der Union will man das noch nicht akzeptieren. Und die Opposition nimmt sich Kanzler Merz vor.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-kompromisse-stromsteuer-reaktionen-100.html",
+   "at": "2026-11-12T13:40:04+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Künstliche Intelligenz : Frankreich plant internationales Zentrum für Militär-KI",
+   "desc": "Frankreich pocht auf eine stärkere Positionierung Europas in der Militärtechnologie. 2027 soll in dem Land ein Zentrum für Künstliche Intelligenz in dem Sektor entstehen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/frankreich-ki-militaer-verteidigung-usa-nato",
+   "at": "2026-11-12T13:27:06+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Finanzkriminalität: Bundestag beschließt mehr Befugnisse für den Zoll",
    "desc": "Der Zoll soll Geldwäsche und organisierte Kriminalität wirksamer bekämpfen können. Künftig soll es leichter werden, Vermögen zweifelhafter Herkunft einzuziehen.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/zoll-gesetz-befugnisse-geldwaesche-organisierte-kriminalitaet",
-   "at": "2026-11-12T13:09:28+00:00"
+   "at": "2026-11-12T13:26:11+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "AfD: Streit über Abschiebungen verschärft Machtkampf in der Führung",
+   "desc": "In der AfD gibt es Zank um die Frage, wie viel Härte es geben soll bei Abschiebungen und der Verdrängung von Menschen mit Migrationshintergrund aus Deutschland. Dahinter steckt ein Machtkampf in der Führung der Partei.",
+   "url": "https://www.spiegel.de/politik/deutschland/afd-und-wieder-verliert-tino-chrupalla-gegen-alice-weidel-a-9a3a1300-2e9a-4b20-8043-97b1d06e4149",
+   "at": "2026-11-12T13:21:00+00:00"
   },
   {
    "source": "Die Zeit",
-   "title": "Italien: Hunderte Schulen in Italien melden Erahlt von Bombendrohungen",
+   "title": "Italien: Hunderte Schulen in Italien melden Erhalt von Bombendrohungen",
    "desc": "In Italien sind wiederholt Bombendrohungen an Schulen eingegangen, mehrere wurden geräumt. Die Regierung von Giorgia Meloni warnt vor einer Überreaktion.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/bombendrohungen-schulen-italien-e-mail-evakuierung-giorgia-meloni",
    "at": "2026-11-12T13:09:18+00:00"
@@ -43,13 +92,6 @@
    "desc": "August Hanning fehlen wegen eines Rechtsstreits monatlich mehrere Tausend Euro. Sein Anwalt bestreitet, dass die Pfändung das Motiv für ein »angeblich strafbares Verhalten« des Ex-BND-Chefs in der Spionageaffäre gewesen sei.",
    "url": "https://www.spiegel.de/politik/deutschland/ex-bnd-chef-august-hanning-pension-in-sechsstelliger-hoehe-gepfaendet-a-cb84e4d5-3590-4925-a78e-a0c4023ad72d",
    "at": "2026-11-12T12:00:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Keine Senkung der Stromsteuer: Bei der Union \"hat es ordentlich geknallt\"",
-   "desc": "Die Senkung der Stromsteuer wird nun vermutlich doch nicht kommen - trotz anderslautender Versprechen. Bei der Union will man das noch nicht akzeptieren. Und die Opposition nimmt sich Kanzler Merz vor.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-kompromisse-stromsteuer-reaktionen-100.html",
-   "at": "2026-11-12T11:59:14+00:00"
   },
   {
    "source": "Die Zeit",
@@ -102,13 +144,6 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Selenskyj beklagt erneute Drosselung von Starshield",
-   "desc": "Das Starshield-System werde erneut »systematisch« gedrosselt, wirft Selenskyj den USA vor. Die US-Unterhändler Witkoff und Kushner sind in Moskau. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-12T10:37:47+00:00"
-  },
-  {
-   "source": "Die Zeit",
    "title": "US-Wahlen : »Die Konfrontation mit der Klasse der Milliardäre ist entscheidend«",
    "desc": "Andrew Bard Epstein hat Zohran Mamdani beraten. Er empfiehlt linken Parteien, sich auf die Wirtschaft zu konzentrieren. Und sich mit der Polizei zu versöhnen.",
    "url": "https://www.zeit.de/politik/2026-11/andrew-bard-epstein-zohran-mamdani-usa-new-york-midterms",
@@ -155,34 +190,6 @@
    "desc": "Der US-Präsident macht Stephen Miller zum Stabschef. Ein Thema im US-Podcast. Außerdem: die Prioritäten der Demokraten nach der Wahl. Und: der Nvidia-Chef und die Spionin",
    "url": "https://www.zeit.de/politik/ausland/2026-11/stephen-miller-stabschef-donald-trump-nvidia-ok-america",
    "at": "2026-11-12T07:14:09+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundesratswahl in der Schweiz: Eine sonderbare Wahl",
-   "desc": "Die Schweizer können über alles abstimmen. Aber wer sie im Bundesrat regiert, diktieren ihnen die Parteistrategen. Schluss damit!",
-   "url": "https://www.zeit.de/2026/49/bundesratswahl-schweiz-parteien-parlament-kandidaten",
-   "at": "2026-11-12T07:10:55+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Roland Koch: »Schade, dass meine Analyse richtig war«",
-   "desc": "Der CDU-Politiker Roland Koch gilt als Vertrauter des Kanzlers. Hier spricht er über dessen unterschätzte Talente. Und sagt, was er von einer AfD-Kooperation hält.",
-   "url": "https://www.zeit.de/2026/49/roland-koch-cdu-afd-zusammenarbeit-friedrich-merz",
-   "at": "2026-11-12T07:07:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Roland Koch: »Schade, dass meine Analyse richtig war«",
-   "desc": "Der CDU-Politiker Roland Koch gilt als Vertrauter des Kanzlers. Hier spricht er über dessen unterschätzte Talente. Und sagt, was er von einer AfD-Kooperation hält.",
-   "url": "https://www.zeit.de/2026/49/roland-koch-cdu-afd-zusammenarbeit-friedrich-merz",
-   "at": "2026-11-12T07:07:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Weltklimakonferenz: Braucht es die COP oder kann sie weg?",
-   "desc": "Bei der Weltklimakonferenz besprechen die immer gleichen Menschen wichtige Themen. Es bräuchte mal ein anderes Publikum.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-antalya-regierungschefs-5vor8",
-   "at": "2026-11-12T06:59:48+00:00"
   },
   {
    "source": "Der Spiegel",

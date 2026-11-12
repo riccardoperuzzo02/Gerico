@@ -121,3 +121,11 @@ passkey (poi si può togliere), e `STATS_SALT`, una stringa casuale lunga da cui
 visitatori unici. Le tabelle le crea il Worker alla prima richiesta (`worker/schema.sql`).
 In alternativa funziona anche Cloudflare Pages: Framework preset `None`, Build command `exit 0`, Build output directory `site`.
 Quando il sito ha il suo indirizzo: `python3 scripts/set_site_url.py https://<indirizzo>` e push.
+
+## Motori di ricerca
+
+Ogni storia ha una pagina scritta in HTML, `site/s/<id>.html`, con l'articolo intero e i dati strutturati di una notizia
+(NewsArticle): è il suo indirizzo canonico, quello della sitemap e del pulsante Condividi. `scripts/share_pages.py` le rifà a ogni
+pubblicazione insieme a `sitemap.xml` (con i campi di Google News per le storie delle ultime 48 ore), a `feed.xml` (RSS) e
+all'elenco dei titoli in `index.html` per chi non esegue lo script. `storia.html?id=` resta la storia dentro l'app e indica
+come canonica la pagina in `/s/`.

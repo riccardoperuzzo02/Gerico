@@ -25,6 +25,14 @@ G.page("story", async function (P) {
   }
   const title = G.headline(s);
   document.title = title + " · GERICO";
+  // l'indirizzo canonico della storia è la sua pagina scritta in HTML (/s/<id>): è quella che va nei motori di ricerca
+  try {
+    let can = document.querySelector('link[rel="canonical"]');
+    if (!can) { can = document.createElement("link"); can.rel = "canonical"; document.head.appendChild(can); }
+    can.href = location.origin + "/s/" + encodeURIComponent(s.id);
+    const md = document.querySelector('meta[name="description"]');
+    if (md && s.summary) md.setAttribute("content", String(s.summary).slice(0, 200));
+  } catch (e) { /* niente */ }
   const md = document.querySelector('meta[name="description"]');
   if (md && s.summary) md.setAttribute("content", s.summary);
   // dati strutturati per i motori di ricerca, che leggono anche quello che scrive lo script

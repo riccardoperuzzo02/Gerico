@@ -2834,3 +2834,22 @@ html.nuova body:not(.term) .listen { border-bottom-color: transparent; margin-bo
 /* Terminal: niente filo sopra i primi riquadri (Mappa dei mercati; sul computer anche Tassi a 10 anni) */
 html.nuova body.term #map-panel { border-top: 0; }
 @media (min-width: 1000px) { html.nuova body.term #p-tassi { border-top: 0; } }
+
+/* ---------- le pagine delle storie scritte in HTML (/s/<id>): l'articolo intero, per i motori di ricerca e per chi condivide ---------- */
+.pagina-s .top-row { justify-content: flex-start; }
+.pagina-s .s-art { max-width: 720px; margin: 0 auto; padding: 26px 0 10px; }
+.pagina-s .blk, .pagina-s .altre { max-width: 720px; margin-left: auto; margin-right: auto; }
+.s-occhiello { margin-bottom: 12px; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+.s-occhiello a { color: var(--accent, var(--palm)); text-decoration: none; }
+.pagina-s .sum { margin-top: 16px; }
+.pagina-s .st-media { margin-top: 22px; }
+.s-testo { margin-top: 22px; }
+.s-testo p { margin: 0 0 1.05em; font-family: var(--serif, inherit); font-size: 1.1875rem; line-height: 1.62; color: var(--ink); text-wrap: pretty; }
+.s-lista, .s-fonti { margin: 8px 0 0; padding: 0; list-style: none; }
+.s-lista li, .s-fonti li { padding: 12px 0; border-top: 1px solid var(--rule); line-height: 1.5; }
+.s-lista li:first-child, .s-fonti li:first-child { border-top: 0; }
+.s-fonti li { display: grid; gap: 3px; }
+.s-fonti a { color: var(--link); }
+.s-fonti span { font-size: 0.9375rem; color: var(--muted); }
+.s-apri { display: grid; gap: 10px; justify-items: start; margin: 34px 0 10px; }
+.s-apri span { font-size: 0.875rem; color: var(--muted); }

@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-12-es-ceuta-exdelegado-imputado",
+  "title": "Spagna: indagato l'ex delegato del governo a Ceuta per l'ingresso di massa",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Ceuta"},
+  "rank": 501,
+  "summary": "La giudice María Tardón ha citato come indagato Miguel Ángel Pérez Triano, ex delegato del governo a Ceuta, per l'ingresso di massa di migranti. Deve presentarsi il 18 novembre, scrivono El País e 20minutos.",
+  "article": "La giudice María Tardón ha imputato Miguel Ángel Pérez Triano, ex delegato del governo a Ceuta, nell'inchiesta sull'ingresso di massa di migranti nella città autonoma spagnola. Lo scrive El País, che sottolinea come la citazione arrivi «in piena campagna» elettorale. Secondo 20minutos, la giudice lo ha convocato come indagato il 18 novembre.\n\n20minutos riferisce anche che il capo di gabinetto dell'ex delegato aveva avuto comunicazioni con il CNI, il servizio di intelligence spagnolo, sulla convocazione dell'ingresso di massa. Secondo El Mundo, il Consiglio dei ministri ha inviato alla magistrata dell'Audiencia Nacional nuovi rapporti del CNI e un altro delle Forze armate.\n\nLe fonti lette sono i titoli e i testi dei feed di El País, 20minutos e El Mundo: gli articoli non si sono potuti aprire. Restano da verificare i reati ipotizzati, la data esatta dei fatti e la posizione dell'ex delegato e del governo.",
+  "facts": [
+    {"text": "La giudice María Tardón ha imputato l'ex delegato del governo a Ceuta, Miguel Ángel Pérez Triano, per l'ingresso di massa.", "who": ["El País", "20minutos"]},
+    {"text": "È citato come indagato il 18 novembre.", "who": ["20minutos"]},
+    {"text": "Il suo capo di gabinetto ebbe comunicazioni con il CNI sulla convocazione dell'ingresso di massa.", "who": ["20minutos"]},
+    {"text": "Il Consiglio dei ministri ha inviato alla giudice dell'Audiencia Nacional nuovi rapporti del CNI e delle Forze armate.", "who": ["El Mundo"]}
+  ],
+  "view": "Si può dire con certezza che la giudice ha imputato l'ex delegato e lo ha convocato per il 18 novembre. Essere indagato non equivale a una condanna: i reati ipotizzati e le prove non sono noti dalle fonti lette.\n\nConta perché l'inchiesta tocca il rapporto tra il governo e i servizi di intelligence e arriva durante la campagna elettorale. Da guardare: la dichiarazione del 18 novembre e le reazioni del governo e dei partiti.",
+  "open": [
+    "Di quali reati è indagato Pérez Triano?",
+    "Cosa dicono i rapporti del CNI inviati dal governo alla giudice?",
+    "Quale posizione prende il governo sulla citazione?"
+  ],
+  "sources": [
+    {"name": "El País", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://elpais.com/espana/2026-11-12/la-jueza-imputa-al-exdelegado-del-gobierno-en-ceuta-por-la-entrada-masiva.html", "angle": "L'imputazione e il contesto della campagna elettorale.", "date": "2026-11-12"},
+    {"name": "20minutos", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.20minutos.es/nacional/jueza-cita-como-investigado-ex-delegado-gobierno-ceuta-18-noviembre_7060257_0.html", "angle": "La data del 18 novembre e le comunicazioni del capo di gabinetto con il CNI.", "date": "2026-11-12"},
+    {"name": "El Mundo", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.elmundo.es/espana/2026/11/12/6af58555fc6c83bd2e8b45a2.html", "angle": "I nuovi rapporti del CNI e delle Forze armate inviati dal Consiglio dei ministri.", "date": "2026-11-12"}
+  ],
+  "firstSeen": "2026-11-12T14:29:05+01:00",
+  "updated": "2026-11-12T14:29:05+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-12T14:29:05+01:00", "text": "Prima notizia: la giudice indaga l'ex delegato del governo a Ceuta."}
+  ],
+  "tags": ["Spagna", "Giustizia", "Immigrazione"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-12-fr-bardella-plainte-mediapart",
+  "title": "Francia: Bardella denuncia per falso dopo le accuse di Mediapart",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Assemblea nazionale (Francia)"},
+  "rank": 302,
+  "summary": "Jordan Bardella, presidente del Rassemblement national, ha presentato una denuncia contro ignoti per falso e uso di falso, dopo i messaggi antisemiti che Mediapart gli attribuisce. Lui nega di esserne l'autore.",
+  "article": "Jordan Bardella, il presidente del Rassemblement national, il partito di estrema destra francese, ha presentato una denuncia contro ignoti «per falso e uso di falso». Lo riferisce franceinfo, che cita la conferma della procura di Parigi; la denuncia è stata ricevuta martedì. Le Monde e France 24 danno la stessa notizia.\n\nLa denuncia segue le accuse di Mediapart, il sito di giornalismo d'inchiesta. A fine settembre Mediapart ha pubblicato messaggi antisemiti del 2013, quando Bardella era un giovane militante del Front national, che gli attribuisce. Secondo franceinfo, tra i messaggi c'è la frase «Le banche sono tutte in mano agli ebrei». A inizio ottobre il sito ha diffuso elementi per autenticarli: un'estrazione dei messaggi fatta da Meta il 16 agosto, certificata da un ufficiale giudiziario il 29 settembre.\n\nBardella nega «categoricamente» di essere l'autore dei messaggi e parla di una «barbouzerie», un complotto. Aveva già presentato a fine settembre una denuncia per diffamazione contro Mediapart. Marine Le Pen, candidata del partito alle presidenziali, lo sostiene: dice di avere «fiducia al 1.000%», riferisce franceinfo.\n\nLe fonti lette non indicano tempi né sviluppi dell'indagine. Le presidenziali francesi sono previste nel 2027.",
+  "facts": [
+    {"text": "Bardella ha presentato una denuncia contro ignoti per falso e uso di falso; la procura di Parigi ha confermato di averla ricevuta martedì.", "who": ["franceinfo", "Le Monde", "France 24"]},
+    {"text": "A fine settembre Mediapart ha pubblicato messaggi antisemiti del 2013 che attribuisce a Bardella.", "who": ["franceinfo", "France 24"]},
+    {"text": "A inizio ottobre Mediapart ha diffuso un'estrazione dei messaggi fatta da Meta il 16 agosto, certificata da un ufficiale giudiziario il 29 settembre.", "who": ["franceinfo"]},
+    {"text": "Bardella nega di essere l'autore e aveva già sporto denuncia per diffamazione contro Mediapart.", "who": ["franceinfo", "Le Monde"]},
+    {"text": "Marine Le Pen dice di avere «fiducia al 1.000%» in Bardella.", "who": ["franceinfo"]}
+  ],
+  "view": "Si può dire con certezza che Bardella ha presentato due denunce, una per diffamazione contro Mediapart e una per falso contro ignoti, e che nega di aver scritto i messaggi. Non si sa se la procura ha aperto un'indagine né cosa dicano le verifiche sull'autenticità, che finora sono quelle diffuse da Mediapart.\n\nConta perché riguarda il presidente del primo partito di opposizione a pochi mesi dalle presidenziali. Da guardare: le decisioni della procura di Parigi e un eventuale esito della causa per diffamazione.",
+  "open": [
+    "La procura di Parigi aprirà un'indagine sulla denuncia per falso?",
+    "Chi ha fatto le verifiche sull'autenticità dei messaggi, oltre a quelle diffuse da Mediapart?",
+    "Quando sarà esaminata la denuncia per diffamazione?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/politique/jordan-bardella/le-president-du-rassemblement-national-jordan-bardella-porte-plainte-pour-faux-et-usage-de-faux-apres-les-accusations-d-antisemitisme-portees-par-mediapart_8279252.html", "angle": "La denuncia, i messaggi contestati, le verifiche di Mediapart e la difesa di Bardella.", "date": "2026-11-12"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261112-france-accusations-antisemitisme-jordan-bardella-a-porte-plainte-pour-faux-et-usage-de-faux", "angle": "Conferma la denuncia contro ignoti e le accuse di Mediapart sui messaggi del 2013.", "date": "2026-11-12"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/12/ecrits-antisemites-jordan-bardella-porte-plainte-pour-faux-et-usage-de-faux_6809101_823448.html", "angle": "Conferma la denuncia per falso e la precedente denuncia per diffamazione contro Mediapart.", "date": "2026-11-12"}
+  ],
+  "firstSeen": "2026-11-12T14:29:05+01:00",
+  "updated": "2026-11-12T14:29:05+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-12T14:29:05+01:00", "text": "Prima notizia: Bardella denuncia per falso dopo le accuse di Mediapart."}
+  ],
+  "tags": ["Francia", "Politica", "Giustizia"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

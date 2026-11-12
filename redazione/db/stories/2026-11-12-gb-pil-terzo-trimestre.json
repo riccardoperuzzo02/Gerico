@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-12-gb-pil-terzo-trimestre",
+  "title": "Regno Unito: l'economia cresce dello 0,7% nel terzo trimestre",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Office for National Statistics"},
+  "rank": 201,
+  "summary": "Secondo l'istituto di statistica britannico, il Pil è cresciuto dello 0,7% tra luglio e settembre, il ritmo più alto in due anni e mezzo. Lo scrivono BBC e Guardian.",
+  "article": "L'economia britannica è cresciuta dello 0,7% nei tre mesi fino a settembre, secondo i dati ufficiali citati dalla BBC. Il Guardian precisa che è il ritmo più alto da due anni e mezzo e che a settembre il Pil è salito dello 0,2% sul mese, nonostante i prezzi alti del petrolio.\n\nSecondo il Guardian, che cita l'Office for National Statistics, l'istituto di statistica del Regno Unito, l'economia è «cresciuta con vigore» quasi interamente grazie al settore dei servizi, con in testa quello informatico. Il quotidiano attribuisce la spinta alla diffusione dei servizi di intelligenza artificiale.\n\nIl Guardian ricorda che quando John Healey è diventato cancelliere dello Scacchiere, a luglio, i previsori davano per scontato che la tenuta dell'economia di fronte alla guerra in Medio Oriente non sarebbe durata, con inflazione in aumento e crescita quasi ferma. Secondo il giornale il Regno Unito è ora sulla strada per essere la seconda economia del G7 per crescita quest'anno. Lo stesso articolo indica come rischi un rallentamento del settore tecnologico e le bollette energetiche dell'inverno.\n\nLe fonti lette sono i titoli e i testi dei feed di BBC e Guardian: restano da verificare i dettagli dei dati e le stime dei previsori per il prossimo trimestre.",
+  "facts": [
+    {"text": "Il Pil è cresciuto dello 0,7% nel trimestre fino a settembre, secondo i dati ufficiali.", "who": ["BBC", "The Guardian"]},
+    {"text": "È il ritmo più alto da due anni e mezzo; a settembre il Pil è salito dello 0,2% sul mese.", "who": ["The Guardian"]},
+    {"text": "La crescita viene quasi tutta dai servizi, con in testa il settore informatico, secondo l'Office for National Statistics.", "who": ["The Guardian"]},
+    {"text": "Il Regno Unito è sulla strada per essere la seconda economia del G7 per crescita nel 2026.", "who": ["The Guardian"]},
+    {"text": "Tra i rischi indicati ci sono un rallentamento tecnologico e le bollette energetiche dell'inverno.", "who": ["The Guardian"]}
+  ],
+  "view": "Si può dire con certezza che il Pil è salito dello 0,7% nel trimestre, un dato diffuso dall'istituto di statistica e riportato da due testate. L'attribuzione della crescita all'intelligenza artificiale e le valutazioni sui rischi sono invece del Guardian, e qui non sono verificate da altre fonti.\n\nConta perché il governo di Andy Burnham ha un dato positivo mentre prepara la politica economica dell'inverno. Da guardare: i dati di ottobre e le prossime stime sull'inflazione e sulle bollette.",
+  "open": [
+    "Quanto pesa davvero il settore informatico sulla crescita del trimestre?",
+    "Come cambiano le previsioni per il quarto trimestre?",
+    "Che effetto avranno le bollette dell'inverno sui consumi?"
+  ],
+  "sources": [
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o", "angle": "Il dato: Pil a più 0,7% nei tre mesi fino a settembre.", "date": "2026-11-12"},
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/business/2026/nov/12/uk-economy-grows-third-quarter-oil-price-ons-gdp", "angle": "Il dato mensile, il ruolo dei servizi e dell'IA, la crescita rispetto al G7 e i rischi.", "date": "2026-11-12"}
+  ],
+  "firstSeen": "2026-11-12T14:29:05+01:00",
+  "updated": "2026-11-12T14:29:05+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-12T14:29:05+01:00", "text": "Prima notizia: il Pil britannico cresce dello 0,7% nel terzo trimestre."}
+  ],
+  "tags": ["Regno Unito", "Economia", "Conti pubblici"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

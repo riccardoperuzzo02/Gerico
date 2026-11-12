@@ -1,6 +1,6 @@
 {
   "lastPublish": {
-    "at": "2026-11-12T14:23:54+01:00",
+    "at": "2026-11-12T14:31:09+01:00",
     "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (444 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-12T13:20:27+01:00",
@@ -20,8 +20,8 @@
     "CNBC"
   ],
   "paesiRun": {
-    "at": "2026-11-12T14:23:45+01:00",
-    "esito": "US 1 nuova (Mississippi: Colom, CNBC letta, NPR e NYT nei titoli)/0 aggiornate/0 archiviate (Hegseth invariata); GB 0/0/0, DE 0/0/0, ES 0/0/0 (Sky, Tagesschau, Zeit, Spiegel, 20minutos, El Mundo non si aprono, ricerca senza articoli di oggi); FR 0/0/0 (Bardella e piano agricolo: solo franceinfo, nessuna seconda fonte di oggi; Smic invariata)."
+    "at": "2026-11-12T14:30:14+01:00",
+    "esito": "US 1 nuova (Casa Bianca e indagini dei democratici, CBS letta)/0 aggiornate/0 archiviate; GB 1 nuova (Pil +0,7%, solo feed BBC e Guardian)/0/0; FR 1 nuova (Bardella, franceinfo letta)/0/0; DE 1 nuova (test linguistici nelle Kita, solo feed)/0/0; ES 1 nuova (ex delegato di Ceuta, solo feed)/0/0. Storie esistenti invariate (Colom, Hegseth, Smic)."
   },
   "quality": {
     "articlesDiscarded": 0,

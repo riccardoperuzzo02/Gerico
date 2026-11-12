@@ -1,13 +1,76 @@
 {
  "code": "DE",
- "asOf": "2026-11-12T15:17:35+00:00",
+ "asOf": "2026-11-12T17:17:36+00:00",
  "items": [
   {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Nvidia-Chef Jensen Huang tritt zurück, Startchancengesetz für Kitakinder, Hype um Grand Theft Auto 6",
+   "desc": "Der Nvidia-Chef tritt zurück. Der Bundestag beschließt ein wichtiges Kitagesetz. Und seit heute kann man das gehypteste Videospiel aller Zeiten kaufen, aber noch nicht zocken. Das ist die Lage am Donnerstagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-nvidia-chef-jensen-huang-tritt-zurueck-startchancengesetz-fuer-kitakinder-hype-um-grand-theft-auto-6-a-0b48fa44-e908-4c2c-a96b-b8e54d42e674",
+   "at": "2026-11-12T16:51:00+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Putin schlägt offenbar Evakuierung von Kostjantyniwka vor",
-   "desc": "Russlands Präsident bietet US-Gesandten eine »humanitäre« Mission für das ostukrainische Kostjantyniwka an. Empörung über erneute Starshield-Drosselung. Das Liveblog",
+   "title": "Boris Pistorius: Investiert Boris Pistorius seine Milliarden ins Falsche?",
+   "desc": "»Drohnen statt Panzer«: Warum die Bundeswehr viereinhalb Jahre nach der Zeitenwende noch immer nicht »kriegstüchtig« ist – und manche Forderung in die Irre führt.",
+   "url": "https://www.zeit.de/politik/2026-11/boris-pistorius-bundeswehr-ruestung-drohnen-panzer-politikpodcast",
+   "at": "2026-11-12T16:39:34+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt: »Die Regierung will die Bürger entlasten, aber es ist kein Geld da«",
+   "desc": "Union und SPD einigen sich im Haushaltsstreit. Doch für geplante Entlastungen fehlt der Regierung das Geld. Und: Nvidia-Chef Jensen Huang tritt zurück.",
+   "url": "https://www.zeit.de/politik/2026-11/bundeshaushalt-2027-bereinigungssitzung-nachrichtenpodcast",
+   "at": "2026-11-12T16:36:03+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Selenskyj spricht von »Gelegenheitsfenster« für Frieden mit Russland",
+   "desc": "Noch heute wollen Steve Witkoff und Jared Kushner die Europäer über ihr Treffen mit Putin informieren. Selenskyj sieht im Ergebnis der Midterms eine Chance. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-12T14:44:37+00:00"
+   "at": "2026-11-12T16:29:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Südafrika: Die Partei der Befreiung ist jetzt nur noch eine von vielen",
+   "desc": "Drei Jahrzehnte dominierte der ANC die Politik in Südafrika. Damit ist es vorbei. Die Probleme des Landes wiegen schwerer als ihr Kampf gegen das Apartheid-Regime.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/suedafrika-anc-kommunalwahl-niederlage-koalition",
+   "at": "2026-11-12T16:14:05+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Afghanistan: Taliban verbieten männlichen Ärzten die Behandlung von Frauen",
+   "desc": "Männliche Ärzte dürfen Frauen in Afghanistan offenbar vielerorts nicht mehr behandeln. Betroffene berichten von abgebrochenen Behandlungen und strengen Auflagen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/taliban-afghanistan-frauen-aerzte-verbot-gesundheit",
+   "at": "2026-11-12T16:11:26+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "\"Pflege ganz aktiv\" schafft mehr Freiraum in der Pflege",
+   "desc": "Ein Modellprojekt in Rheinland-Pfalz ermöglicht ambulante Pflege nach individuellem Zeitbudget statt starrer Vorgaben. Erste Ergebnisse sind vielversprechend. Könnte so die Zukunft der Pflege aussehen? Von Claudia Hiller.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/pflege-neues-modell-ambulant-100.html",
+   "at": "2026-11-12T15:46:43+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Konflikt zwischen Trump und Vance: Trump fordert Vance auf, sich auf die USA statt Iran zu konzentrieren",
+   "desc": "Der US-Präsident weist seinen Vize zurecht. Statt auf den Iran solle sich JD Vance auf die angebliche Korruption in demokratisch geführten US-Bundesstaaten konzentrieren.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-iran-donald-trump-jd-vance-strasse-von-hormus",
+   "at": "2026-11-12T15:38:56+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Datenleck zu russischen Verlusten: Diese Toten wollte Putin verstecken",
+   "desc": "Offiziell hält Russland seine Verluste im Ukrainekrieg geheim. Nun haben Hacker Daten einer Statistikbehörde veröffentlicht. Sie zeigen das volle Ausmaß der Katastrophe.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/datenleck-russland-ukraine-soldaten-analyse-tote",
+   "at": "2026-11-12T15:18:18+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Binnengrenzkontrollen: Gericht erklärt Grenzkontrollen in zwei Fällen für rechtswidrig",
+   "desc": "Das Verwaltungsgericht Dresden hat zwei Klagen gegen Kontrollen an EU-Grenzen stattgegeben. Damit widersprach es dem Bundesinnenministerium von Alexander Dobrindt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/binnengrenzkontrollen-grenzen-polnischer-bewohner-goerlitz-ausweiskontrolle-vg-dresden",
+   "at": "2026-11-12T15:12:45+00:00"
   },
   {
    "source": "Die Zeit",
@@ -94,39 +157,11 @@
    "at": "2026-11-12T12:00:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Sprach- und Entwicklungstests in Kitas: Bundestag beschließt Sprachtests für Kita-Kinder",
-   "desc": "Vierjährige sollen in der Kita bundesweit Sprach- und Entwicklungstests absolvieren und gezielte Förderung erhalten. Länder und Opposition kritisieren die Finanzierung.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/sprach-entwicklungstests-kitas-startchancen-qualitaetsentwicklungsgesetz-bundestag-gxe",
-   "at": "2026-11-12T11:55:03+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Neues Kita-Gesetz: Wer bessere Chancen für Kinder fordert, muss dafür auch Geld klarmachen",
    "desc": "Mit einem neuen Kitagesetz möchte Bildungsministerin Karin Prien benachteiligten Kindern helfen. Der Haken: Dafür stehen in den nächsten Jahren immer weniger Mittel bereit.",
    "url": "https://www.spiegel.de/politik/deutschland/neues-kita-gesetz-wer-bessere-chancen-fuer-kinder-fordert-muss-dafuer-auch-geld-klarmachen-a-cd84cca9-c738-48bf-82a2-448e08075968",
    "at": "2026-11-12T11:42:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Steinmeier-Nachfolge: Merz besucht nach der Nominierung Aigners erstmals CSU-Sitzung",
-   "desc": "Nach der holprigen Nominierung von Ilse Aigner als Bundespräsidentin signalisieren CDU und CSU Geschlossenheit. Merz nimmt erstmals an einer CSU-Vorstandssitzung teil.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/ilse-aigner-bundespraesidentin-csu-kandidatin-friedrich-merz-gxe",
-   "at": "2026-11-12T11:38:28+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Tod von Hubert Aiwanger: Wie ersetzt man einen Unersetzlichen?",
-   "desc": "Mit dem Tod Hubert Aiwangers verlieren die Freien Wähler ihre Identifikationsfigur. Das könnte auch für die CSU zum Problem werden.",
-   "url": "https://www.zeit.de/2026/49/hubert-aiwanger-tod-freie-waehler-nachfolge-bayern",
-   "at": "2026-11-12T11:35:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Explosion in Sankt Petersburg: Russischer Offizer bei Autoexplosion in Sankt Petersburg getötet",
-   "desc": "Erneut ist ein russischer Militärangehöriger auf russischem Boden getötet worden: In Sankt Petersburg starb ein Luftwaffenoffizier bei der Explosion eines Autos.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/sankt-petersburg-explosion-russland-militaer-auto-gxe",
-   "at": "2026-11-12T11:21:12+00:00"
   },
   {
    "source": "Tagesschau",
@@ -141,13 +176,6 @@
    "desc": "Der Bundestag hat das Startchancengesetz beschlossen, das mehr Förderung für Kita-Kinder und verbindliche Tests vorsieht. Kritik gibt es wegen geplanter Kürzungen bei den Bundesmitteln. Von Chris Berdrow.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/kita-startchancengesetz-100.html",
    "at": "2026-11-12T10:45:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "US-Wahlen : »Die Konfrontation mit der Klasse der Milliardäre ist entscheidend«",
-   "desc": "Andrew Bard Epstein hat Zohran Mamdani beraten. Er empfiehlt linken Parteien, sich auf die Wirtschaft zu konzentrieren. Und sich mit der Polizei zu versöhnen.",
-   "url": "https://www.zeit.de/politik/2026-11/andrew-bard-epstein-zohran-mamdani-usa-new-york-midterms",
-   "at": "2026-11-12T10:18:31+00:00"
   },
   {
    "source": "Tagesschau",
@@ -171,25 +199,11 @@
    "at": "2026-11-12T08:36:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Ukrainekarte aktuell: Russische Armee rückt bei Dobropillja weiter vor",
-   "desc": "Nördlich der besetzten Stadt Pokrowsk, bei Dobropillja, sind russische Truppen erneut etwas vorangekommen. Ukrainische Truppen leisten dort heftige Gegenwehr.",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
-   "at": "2026-11-12T08:15:27+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Worauf sich die Bundesregierung beim Haushalt geeinigt hat",
    "desc": "Manches kommt gar nicht, anderes später: Kurz vor den wichtigen Beratungen des Haushaltsausschusses hat sich die Bundesregierung auf Kompromisse verständigt. Was wird nun aus Strom-, Zucker- und Plastiksteuer? Ein Überblick.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundesregierung-haushalt-kompromisse-100.html",
    "at": "2026-11-12T08:12:13+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stephen Miller: Der nun harmlose Trump? Oh nein",
-   "desc": "Der US-Präsident macht Stephen Miller zum Stabschef. Ein Thema im US-Podcast. Außerdem: die Prioritäten der Demokraten nach der Wahl. Und: der Nvidia-Chef und die Spionin",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/stephen-miller-stabschef-donald-trump-nvidia-ok-america",
-   "at": "2026-11-12T07:14:09+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -239,55 +253,6 @@
    "desc": "Einkommensgrenze, statt verkürzter Zahlung: Familienministerin Prien hat einen Gesetzentwurf zum Unterhaltsvorschuss vorgelegt. Elternteile, die nicht zahlen, sollen stärker in die Pflicht genommen werden - etwa mit Fahrverboten.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/prien-unterhaltsvorschuss-gesetzentwurf-100.html",
    "at": "2026-11-11T18:01:47+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundeskabinett beschließt Aufbau einer Gasreserve",
-   "desc": "Mit einer nationalen Gasreserve will die Bundesregierung die Versorgung in Krisensituationen sichern - dabei geht es ausdrücklich nicht um hohe Preise, sondern um Ausnahmefälle wie etwa Sabotage. Auf die Gaskunden kommen dadurch Mehrkosten zu.",
-   "url": "https://www.tagesschau.de/inland/gasreserve-126.html",
-   "at": "2026-11-11T16:38:02+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Klimagipfel, Gefangenenaustausch, Wirtschaftswachstum",
-   "desc": "Der Kanzler feiert seinen Geburtstag mit der Familie statt auf der Weltklimakonferenz. Russland und die Ukraine vereinbaren einen Gefangenenaustausch. Und die Arbeitslosigkeit unter Akademikern steigt. Das ist die Lage am Mittwochabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-klimagipfel-gefangenenaustausch-wirtschaftswachstum-a-ddc8caa0-c4ab-40a7-80f5-ce6bcb8d072b",
-   "at": "2026-11-11T16:33:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Entwicklungshilfe: Prominente Kirchenvertreter warnen vor Kürzungen",
-   "desc": "Die schwarz-rote Koalition will ein weiteres Mal die Mittel für die internationale Zusammenarbeit stutzen. Damit bringt sie wichtige Kirchenvertreter gegen sich auf.",
-   "url": "https://www.spiegel.de/politik/deutschland/entwicklungshilfe-prominente-kirchenvertreter-warnen-vor-kuerzungen-a-79c79b86-fe11-4dde-90b4-be03c29a9dea",
-   "at": "2026-11-11T16:29:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Unterhaltsvorschuss: Karin Prien plant Vorschuss nur noch bis 40.000 Euro",
-   "desc": "Wenn ein Elternteil keinen Unterhalt zahlt, springt der Staat ein. Das Familienministerium will dafür nun eine Einkommensgrenze einführen. Säumige Elternteile sollen mehr in die Pflicht genommen werden.",
-   "url": "https://www.spiegel.de/politik/deutschland/unterhaltsvorschuss-karin-prien-plant-vorschuss-nur-noch-bis-40-000-euro-a-520a2ba7-effe-47f7-a4dc-a376d96a3f2e",
-   "at": "2026-11-11T15:46:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Weniger Kündigungsschutz, mehr Befristungen - das plant die Koalition",
-   "desc": "Mehr Befristungen, weniger Kündigungsschutz für Hochverdiener und mehr Spielraum für Bäckereien am Sonntag: Die Regierung will das Arbeitsrecht reformieren. Was sich ändern soll und was noch offen ist.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/arbeitsrecht-kuendigungsschutz-befristungen-reform-100.html",
-   "at": "2026-11-11T15:44:40+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "EU-Unterstützung für die Ukraine: Kein Egotrip von Merz, sondern ein wichtiger Move für Europas Sicherheit",
-   "desc": "Tschechien, Ungarn und die Slowakei wollen sich nicht an den Ukrainehilfen beteiligen, erwarten ihrerseits aber Geld von anderen EU-Ländern. Der Kanzler setzt sie jetzt unter Druck – zu Recht.",
-   "url": "https://www.spiegel.de/politik/deutschland/eu-unterstuetzung-fuer-die-ukraine-kein-ego-trip-von-merz-sondern-ein-wichtiger-move-fuer-europas-sicherheit-a-f87cb220-a91c-4abf-a54e-b7fa18a15c4b",
-   "at": "2026-11-11T15:25:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Vorstoß des Finanzministeriums: Was sich bei Steuerklassen für Paare ändern könnte",
-   "desc": "Finanzminister Klingbeil erwägt, die von Paaren genutzten Steuerklassen III und V abzuschaffen. Das Ministerium möchte dadurch Bürokratie abbauen - aber ist das Vorhaben so einfach umsetzbar? Welche Folgen hätte ein Abschaffung?",
-   "url": "https://www.tagesschau.de/inland/steuerklassen-klingbeil-100.html",
-   "at": "2026-11-11T15:24:38+00:00"
   }
  ]
 }

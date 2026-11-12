@@ -1,13 +1,202 @@
 {
  "code": "US",
- "asOf": "2026-11-12T15:17:35+00:00",
+ "asOf": "2026-11-12T17:17:36+00:00",
  "items": [
   {
+   "source": "CNBC",
+   "title": "Here's what Nvidia interim CEO Colette Kress and board chair Harvey Jones wrote to Nvidia employees",
+   "desc": "Interim CEO Colette Kress and board chair Harvey Jones emailed Nvidia employees, expressing gratitude for \"resilience, professionalism and continued dedication",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-kress-jones-employee-emails.html",
+   "at": "2026-11-12T17:17:14+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "5 Shot in Washington D.C.’s Logan Circle Neighborhood",
+   "desc": "The shooting in a busy neighborhood took place at a gym and two nearby locations. A suspect was found with a fatal gunshot wound after barricading in a building, the police said.",
+   "url": "https://www.nytimes.com/2026/11/12/us/shooting-washington-dc.html",
+   "at": "2026-11-12T17:15:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Unions helped Democrats win big in 2026. Now they want action",
+   "desc": "Unions spent millions of dollars and mobilized thousands of members to get out the vote for Democrats in the midterm election. Now they want to see action.",
+   "url": "https://www.cnbc.com/2026/11/12/democrats-unions-midterms-2026.html",
+   "at": "2026-11-12T17:14:30+00:00"
+  },
+  {
    "source": "CBS News",
-   "title": "6 people shot in D.C.'s Logan Circle neighborhood",
+   "title": "Hegseth awards medal to soldier who reprimanded group near tomb",
+   "desc": "Defense Secretary Pete Hegseth awarded a medal to the service member who reprimanded his group for making noise at the Tomb of the Unknown Soldier​.",
+   "url": "https://www.cbsnews.com/news/hegseth-medal-reprimand-tomb-of-the-unknown-soldier/",
+   "at": "2026-11-12T17:12:10+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia CEO Jensen Huang resigns in wake of affair, spy scandal",
+   "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
+   "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
+   "at": "2026-11-12T17:06:46+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang's Nvidia exit casts shadow over Wall Street’s $500 billion AI financing bet",
+   "desc": "Nvidia's leadership crisis threatens to spill over into the AI financing boom.",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html",
+   "at": "2026-11-12T17:06:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Will the Supreme Court Thwart Congressional Investigations?",
+   "desc": "Lawmakers must dodge rulings on immunity, standing and “valid legislative purpose.”",
+   "url": "https://www.nytimes.com/2026/11/12/us/politics/the-docket-supreme-court-congressional-investigations.html",
+   "at": "2026-11-12T17:05:34+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "1 killed, 4 injured in shooting in D.C.'s Logan Circle neighborhood",
    "desc": "Residents have been asked to avoid the area of 15th and P Street in Washington, D.C., as police respond to the incident.",
    "url": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/",
-   "at": "2026-11-12T15:16:08+00:00"
+   "at": "2026-11-12T17:01:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Sitting on big gains in Nvidia? Jim Cramer's advice on what to do next",
+   "desc": "Cramer has been an Nvidia bull long before the generative AI boom.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/12/sitting-on-big-gains-in-nvidia-jim-cramers-advice-on-what-to-do-next.html",
+   "at": "2026-11-12T16:59:52+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia stock pares morning losses after CEO Jensen Huang announces resignation",
+   "desc": "Chief Financial Officer Colette Kress will serve as interim CEO until a new leader is appointed.",
+   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+   "at": "2026-11-12T16:59:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang's exit from Nvidia raises critical questions about the future of AI",
+   "desc": "Nvidia CEO Jensen Huang has been a singular figure in the development of the AI industry, which suddenly has to survive without him.",
+   "url": "https://www.cnbc.com/2026/11/12/jensen-huangs-exit-from-nvidia-raises-questions-about-future-of-ai.html",
+   "at": "2026-11-12T16:43:33+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
+   "desc": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
+   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+   "at": "2026-11-12T16:43:06+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump says ‘we don’t need a deal with Iran’",
+   "desc": "Trump directed Vice President JD Vance to instead focus his attention on corruption and crime in Democratic cities and states.",
+   "url": "https://www.cnbc.com/2026/11/12/trump-iran-deal-hormuz-strait.html",
+   "at": "2026-11-12T16:36:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia CEO Jensen Huang resigns amid Chinese spy scandal",
+   "desc": "Nvidia CEO Jensen Huang resigned, the company's board of directors announced. Huang's resignation came amid an investigation into his extramarital affair with a suspected Chinese spy and a report of a second affair with an executive who reported to him. Jo Ling Kent and Kelly O'Grady report.",
+   "url": "https://www.cbsnews.com/video/nvidia-ceo-jensen-huang-resigns-amid-chinese-spy-scandal/",
+   "at": "2026-11-12T16:32:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "New federal housing rule could displace thousands, experts warn",
+   "desc": "Since 1995, mixed-status families have been permitted to live together in federally funded housing, but a revised rule changes that.",
+   "url": "https://www.cbsnews.com/news/hud-public-housing-citizenship-immigration-rule/",
+   "at": "2026-11-12T16:30:20+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "The SS United States takes its final voyage to the bottom of the Gulf of Mexico",
+   "desc": "A ship bigger than the Titanic is being sunk off the coast of Florida to make an artificial reef.",
+   "url": "https://www.npr.org/2026/11/12/g-s1-153219/the-deliberate-sinking-of-the-ss-united-states",
+   "at": "2026-11-12T16:20:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
+   "desc": "Ryan Cotton, Bain Capital's head of real estate, sits for an interview with the Property Play video podcast.",
+   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
+   "at": "2026-11-12T16:17:44+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "DC shooting leaves 1 person killed, 4 injured. Gunman dead",
+   "desc": "A gunman opened fire at a gym in Washington, D.C.'s Logan Circle Thursday morning. One person has been confirmed killed and four others injured. The gunman is dead, according to police.",
+   "url": "https://www.npr.org/2026/11/12/nx-s1-6038860/dc-logan-circle-shooting",
+   "at": "2026-11-12T16:12:53+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Cities Have a New Tactic to Block ICE Jails: Run Out the Clock",
+   "desc": "A lawsuit by San Antonio is part of a wave of legal challenges slowing the Trump administration’s effort to build immigration detention centers across the country.",
+   "url": "https://www.nytimes.com/2026/11/12/us/ice-detention-center-san-antonio.html",
+   "at": "2026-11-12T16:10:06+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Colom’s Victory Adds to Democrats’ Majority in the Senate",
+   "desc": "The victory in Mississippi gives Democrats 55 seats as they await results in the Alaska race, leaving them short of a 60-seat supermajority but cushioning their margin of control.",
+   "url": "https://www.nytimes.com/2026/11/11/us/elections/colom-mississippi-senate-democrats.html",
+   "at": "2026-11-12T16:01:54+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+   "desc": "Cosm has secured a new studio partnership with Disney that will bring \"Star Wars: A New Hope\" to its domes as part of a multiyear, multifilm collaboration.",
+   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+   "at": "2026-11-12T15:36:02+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Yankees President Randy Levine pushes college sports bill, discusses MLB labor negotiations",
+   "desc": "Yankees President Randy Levine discusses the Protect College Sports Act, and the state of MLB's labor negotiations.",
+   "url": "https://www.cnbc.com/2026/11/12/yankees-randy-levine-discusses-college-sports-bill-mlb-labor-deal.html",
+   "at": "2026-11-12T15:34:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nebius falls 16% as company expects increased 2026 capex spend, issues weak outlook",
+   "desc": "Nebius' earnings report comes after fellow neoclouds IREN and CoreWeave showed better-than-expected results in the past week.",
+   "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
+   "at": "2026-11-12T15:27:41+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+   "desc": "Jared Kushner and Steve Witkoff went to the Kremlin to brief Russian President Vladimir Putin and are scheduled to fly later to Ireland for talks with Ukrainian President Volodymyr Zelenskyy.",
+   "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+   "at": "2026-11-12T15:26:34+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "SS United States is sunk off the Florida coast to become largest artificial reef",
+   "desc": "The SS United States sank to the bottom of the ocean to become the world's largest artificial reef. Skyler Henry has more.",
+   "url": "https://www.cbsnews.com/video/ss-united-states-is-sunk-off-the-florida-coast-to-become-largest-artificial-reef/",
+   "at": "2026-11-12T15:23:36+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Says He’s Pulling Vance Off Iran Talks to Focus on Fraud Campaign",
+   "desc": "The announcement on social media deepened questions about what the president’s plan is to end the war. “We don’t need a deal with Iran,” he wrote.",
+   "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
+   "at": "2026-11-12T15:23:06+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "‘A dark day for Nvidia’: Here’s what analysts have been saying about Jensen Huang’s departure",
+   "desc": "The company's board convened Wednesday evening after reports emerged of Huang engaging in an affair with an employee.",
+   "url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html",
+   "at": "2026-11-12T15:22:38+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Death toll in NYC building collapse rises as rescuers race to find survivors",
+   "desc": "At least eight people died and over a dozen were injured after a residential building collapsed in Brooklyn, New York, officials say. Lilia Luciano has the latest.",
+   "url": "https://www.cbsnews.com/video/death-toll-in-nyc-building-collapse-rises-as-rescuers-race-to-find-survivors/",
+   "at": "2026-11-12T15:16:42+00:00"
   },
   {
    "source": "CNBC",
@@ -15,13 +204,6 @@
    "desc": "Oil prices were mixed on Thursday, after the latest comments from President Donald Trump raised worries that an end to the U.S.-Iran war was not in sight.",
    "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
    "at": "2026-11-12T15:08:45+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia CEO Jensen Huang resigns in wake of affair, spy scandal",
-   "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
-   "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
-   "at": "2026-11-12T15:07:32+00:00"
   },
   {
    "source": "CNBC",
@@ -39,24 +221,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Analysis: Jensen Huang’s exit tests Nvidia’s role as the ‘central bank of AI’",
-   "desc": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
-   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-   "at": "2026-11-12T14:55:16+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nebius falls 16% as company expects increased 2026 capex spend, issues weak outlook",
-   "desc": "Nebius' earnings report comes after fellow neoclouds IREN and CoreWeave showed better-than-expected results in the past week.",
-   "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
-   "at": "2026-11-12T14:52:17+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Five People Are Shot in Washington, D.C., Officials Say",
-   "desc": "The shooting took place outside a gym in Logan Circle, not far from the White House. A suspect was barricaded in a building, the police said.",
-   "url": "https://www.nytimes.com/2026/11/12/us/shooting-washington-dc.html",
-   "at": "2026-11-12T14:50:24+00:00"
+   "title": "Mortgage rates were 7% in 1997, too—here’s why buying a home feels more expensive today",
+   "desc": "Even at the same mortgage rate, buying a typical home today eats up a much bigger share of household income than it did 30 years ago.",
+   "url": "https://www.cnbc.com/make-it/2026/11/12/mortgage-rates-home-affordability-1997.html",
+   "at": "2026-11-12T15:00:01+00:00"
   },
   {
    "source": "CBS News",
@@ -71,27 +239,6 @@
    "desc": "Scout Motors has roughly 212,000 reservations for its Terra pickup and Traveler SUV, CEO Scott Keogh told CNBC.",
    "url": "https://www.cnbc.com/2026/11/12/scout-motors-reservations-south-carolina-plant.html",
    "at": "2026-11-12T14:40:42+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia stock falls nearly 10% as CEO Jensen Huang announces resignation",
-   "desc": "Chief Financial Officer Colette Kress will serve as interim CEO until a new leader is appointed.",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
-   "at": "2026-11-12T14:39:34+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Says He’s Pulling Vance Off Iran Talks to Focus on Fraud Campaign",
-   "desc": "The announcement on social media deepened questions about what the president’s plan is to end the war. “We don’t need a deal with Iran,” he wrote.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
-   "at": "2026-11-12T14:36:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "‘A dark day for Nvidia’: Here’s what analysts have been saying about Jensen Huang’s departure",
-   "desc": "The company's board convened Wednesday evening after reports emerged of Huang engaging in an affair with an employee.",
-   "url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html",
-   "at": "2026-11-12T14:28:58+00:00"
   },
   {
    "source": "New York Times",
@@ -115,13 +262,6 @@
    "at": "2026-11-12T14:22:37+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "10-year Treasury yield jumps back above 5% as oil gains and more Fed rate hikes expected",
-   "desc": "Treasury yields rose as bond markets reopened for the first time since Tuesday following the Veterans Day holiday.",
-   "url": "https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html",
-   "at": "2026-11-12T14:22:19+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Nvidia CEO Jensen Huang steps down amid alleged spy scandal",
    "desc": "Huang co-founded the chipmaker Nvidia, which has become one of the driving forces behind the AI boom. But reports that he may have had an affair with an alleged Chinese spy quickly sank his career.",
@@ -129,25 +269,11 @@
    "at": "2026-11-12T14:17:20+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Trump says ‘we don’t need a deal with Iran’",
-   "desc": "Trump directed Vice President JD Vance to instead focus his attention on corruption and crime in Democratic cities and states.",
-   "url": "https://www.cnbc.com/2026/11/12/trump-iran-deal-hormuz-strait.html",
-   "at": "2026-11-12T14:15:05+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "In Mississippi, Scott Colom Supporters Celebrate Historic Senate Win",
    "desc": "At Tougaloo College, supporters danced and wept over Scott Colom’s victory. He will be Mississippi’s first Black U.S. senator since the Reconstruction era.",
    "url": "https://www.nytimes.com/2026/11/12/us/elections/mississippi-colom-senate-race-black-voters.html",
    "at": "2026-11-12T14:14:44+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-   "desc": "Cosm has secured a new studio partnership with Disney that will bring \"Star Wars: A New Hope\" to its domes as part of a multiyear, multifilm collaboration.",
-   "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-   "at": "2026-11-12T14:00:01+00:00"
   },
   {
    "source": "CNBC",
@@ -161,7 +287,7 @@
    "title": "Judge Richard A. Posner Has Died. His Influence in Law Was Beyond Compare.",
    "desc": "He was the most-cited legal scholar of the latter half of the 20th century and an unapologetic iconoclast, favoring pragmatism over judicial tradition. He was 87.",
    "url": "https://www.nytimes.com/2026/11/11/us/richard-posner-dead.html",
-   "at": "2026-11-12T13:40:09+00:00"
+   "at": "2026-11-12T13:40:10+00:00"
   },
   {
    "source": "CNBC",
@@ -169,13 +295,6 @@
    "desc": "Medical bills can move onto credit cards and other borrowing, making the debt harder to track. Here's what consumers can check before financing care.",
    "url": "https://www.cnbc.com/2026/11/12/medical-bills-credit-card-debt.html",
    "at": "2026-11-12T13:15:02+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Unions helped Democrats win big in 2026. Now they want action",
-   "desc": "Unions spent millions of dollars and mobilized thousands of members to get out the vote for Democrats in the midterm election. Now they want to see action.",
-   "url": "https://www.cnbc.com/2026/11/12/democrats-unions-midterms-2026.html",
-   "at": "2026-11-12T13:09:33+00:00"
   },
   {
    "source": "CNBC",
@@ -241,18 +360,18 @@
    "at": "2026-11-12T10:00:45+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "San Antonio Fights Plan to Turn Warehouse Into ICE Detention Center",
-   "desc": "The city’s lawsuit is part of a wave of legal challenges slowing the Trump administration’s effort to build immigration detention centers across the country.",
-   "url": "https://www.nytimes.com/2026/11/12/us/ice-detention-center-san-antonio.html",
-   "at": "2026-11-12T10:00:24+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Dubious buys raise alarm over local control of opioid cash",
    "desc": "Much of the questionable opioid settlement spending in 2025 occurred at the county and city level, where decision-makers often have no background in addiction policy.",
    "url": "https://www.cbsnews.com/news/opioid-settlement-funds-questionable-local-spending/",
    "at": "2026-11-12T10:00:06+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "At least 23 states considered laws governing ICE and schools this year",
+   "desc": "When ICE agents show up at a school, educators rely on a patchwork of policies to know what to do. This year, many state legislatures tried to update those policies.",
+   "url": "https://www.npr.org/2026/11/12/nx-s1-5718547/ice-schools-state-laws-federal-immigration",
+   "at": "2026-11-12T10:00:00+00:00"
   },
   {
    "source": "NPR",
@@ -270,38 +389,10 @@
   },
   {
    "source": "NPR",
-   "title": "At least 23 states considered laws governing ICE and schools this year",
-   "desc": "When ICE agents show up at a school, educators rely on a patchwork of policies to know what to do. This year, many state legislatures tried to update those policies.",
-   "url": "https://www.npr.org/2026/11/12/nx-s1-5718547/ice-schools-state-laws-federal-immigration",
-   "at": "2026-11-12T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "Trump proposed a 'secret weapon' to police colleges. It will soon become reality",
    "desc": "In a 2023 campaign speech, Trump pledged to reclaim universities from what he called the radical left. His Education Department just finalized a rule to help him do it.",
    "url": "https://www.npr.org/2026/11/12/nx-s1-6027967/accreditation-trump-higher-education",
    "at": "2026-11-12T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
-   "desc": "The Kennedy Center's former president Richard Grenell was a paid board member of Ticketmaster's parent company at the same time the two parties were negotiating.",
-   "url": "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-ticketmaster-conflict-of-interest",
-   "at": "2026-11-12T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "How Scott Colom defied the odds to go from DA to Mississippi's Democratic U.S. Senator",
-   "desc": "In a state that hasn't had a Democrat in office since 1980 and hasn't sent a Black Senator to Washington since the 1870s, Colom's win represents a massive upset in state politics.",
-   "url": "https://www.npr.org/2026/11/12/nx-s1-6037438/scott-colom-defied-the-odds-mississippi-democratic-senator",
-   "at": "2026-11-12T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
-   "desc": "The victims included a surgeon, and dozens more were injured. Israel said it was targeting a Hamas commander and other militants.",
-   "url": "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital",
-   "at": "2026-11-12T09:29:30+00:00"
   },
   {
    "source": "New York Times",
@@ -351,13 +442,6 @@
    "desc": "Billionaires, governments, spies, and the most coveted technology in the world. Author and journalist Patrick McGee explains what we know so far about the scandal surrounding NVIDIA CEO Jensen Huang. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
    "url": "https://www.cbsnews.com/video/did-jensen-huang-just-destroy-americas-ai-advantage-great-question/",
    "at": "2026-11-12T03:25:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "CFTC investigates if Kalshi improperly self-certified event contracts",
-   "desc": "News of the probe comes after the CFTC ordered Kalshi to take down a sports-related \"mention markets\" back in August.",
-   "url": "https://www.cnbc.com/2026/11/11/cftc-investigates-if-kalshi-improperly-self-certified-event-contracts.html",
-   "at": "2026-11-12T02:43:09+00:00"
   },
   {
    "source": "New York Times",
@@ -423,20 +507,6 @@
    "at": "2026-11-12T01:05:24+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Dangerous storms break out in Midwest while winter weather hits East",
-   "desc": "An outbreak of dangerous storms hit the Midwest on Wednesday, including possible tornadoes, ahead of what will be the first blast of winter weather in the East. The storm system could dump up to 10 inches of snow in some places, bringing sub-freezing temperatures to millions. Rob Marciano has the forecast.",
-   "url": "https://www.cbsnews.com/video/dangerous-storms-midwest-while-winter-weather-hits-east/",
-   "at": "2026-11-12T01:03:13+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Unruly passenger and cabin flooding reported on 2 separate flights that landed in Chicago",
-   "desc": "A passenger became disruptive on a United Airlines flight from Tokyo to Chicago on Wednesday, officials said, while a flooding incident also forced a separate flight to make an emergency landing in Chicago. Kris Van Cleave has more details.",
-   "url": "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
-   "at": "2026-11-12T01:02:18+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "The Man at the Center of Scott Colom’s Protein Ad",
    "desc": "Russ Hudson was not expecting to become famous. But his deadpan drawl in Scott Colom’s viral protein ad made him a Mississippi sensation.",
@@ -456,13 +526,6 @@
    "desc": "In a race for a board of supervisors seat in California, a dead candidate holds a huge lead.",
    "url": "https://www.nytimes.com/2026/11/11/us/california-election-dead-candidate.html",
    "at": "2026-11-12T00:52:42+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Hegseth's group asked by soldier to maintain respect at Arlington National Cemetery",
-   "desc": "President Trump traveled to Arlington National Cemetery on Wednesday, laying a wreath in honor of fallen U.S. soldiers. But the cameras also captured a U.S. Army sentinel reprimanding a group that included Defense Secretary Pete Hegseth, demanding that they show respect. Charlie D'Agata has more.",
-   "url": "https://www.cbsnews.com/video/hegseths-group-asked-soldier-maintain-respect-arlington-national-cemetery/",
-   "at": "2026-11-12T00:52:36+00:00"
   },
   {
    "source": "CBS News",
@@ -497,7 +560,7 @@
    "title": "Democrats Face Backlash After Missing Hegseth Impeachment Vote",
    "desc": "Eleven Democrats were absent, helping Republicans shelve the charges against the defense secretary. It drew sharp criticism a week after the party’s sweeping election victories.",
    "url": "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html",
-   "at": "2026-11-12T00:21:37+00:00"
+   "at": "2026-11-12T00:21:38+00:00"
   },
   {
    "source": "New York Times",
@@ -507,32 +570,11 @@
    "at": "2026-11-12T00:17:58+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Colom’s Victory Pads Democrats’ Majority in the Senate",
-   "desc": "The victory in Mississippi gives Democrats 55 seats as they await results in the Alaska race, leaving them short of a 60-seat supermajority but cushioning their margin of control.",
-   "url": "https://www.nytimes.com/2026/11/11/us/elections/colom-mississippi-senate-democrats.html",
-   "at": "2026-11-12T00:10:34+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Ex-NFL coach Rex Ryan surrenders to Nashville police on hit-and-run charges",
    "desc": "Former NFL head coach Rex Ryan turned himself in to Nashville police on Wednesday on allegations he was involved in a hit-and-run in which authorities said he struck two pedestrians. Tom Hanson reports.",
    "url": "https://www.cbsnews.com/video/ex-nfl-coach-rex-ryan-surrenders-nashville-police-hit-and-run-charges/",
    "at": "2026-11-12T00:08:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "The biggest races Democrats won in the midterms",
-   "desc": "Democrats won pivotal races in Texas, South Carolina, Georgia, Mississippi, Michigan and elsewhere. Here are the biggest victories of the 2026 midterms.",
-   "url": "https://www.cbsnews.com/news/2026-midterm-election-results-where-democrats-won/",
-   "at": "2026-11-12T00:05:48+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia's board preparing to oust CEO Jensen Huang, sources say",
-   "desc": "The board of Nvidia, the world's largest artificial intelligence chipmaker whose stock makes up a major portion of many retirement programs, is preparing to force out its CEO after his affair with a suspected Chinese spy, sources told CBS News. Kelly O'Grady reports on the latest for the $4 trillion company.",
-   "url": "https://www.cbsnews.com/video/nvidias-board-preparing-oust-ceo-jensen-huang-sources-say/",
-   "at": "2026-11-11T23:48:52+00:00"
   },
   {
    "source": "CNBC",
@@ -577,13 +619,6 @@
    "at": "2026-11-11T22:20:58+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "JetBlue unveils new first-class seats to bring back profits",
-   "desc": "JetBlue gave reporters a look at its new first-class seats on Wednesday.",
-   "url": "https://www.cnbc.com/2026/11/11/jetblue-ceo-premium.html",
-   "at": "2026-11-11T22:10:50+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Baby found buried alive, father charged with attempted murder",
    "desc": "An infant was found alive after apparently being buried in a dog crate for about 24 hours, authorities in South Carolina said.",
@@ -596,41 +631,6 @@
    "desc": "The third grader from Haiti had been living with his uncle’s family since his father was deported last year. From a shelter where ICE sent him, “he cried and just begged to come home.”",
    "url": "https://www.nytimes.com/2026/11/11/us/ice-detains-8-year-old.html",
    "at": "2026-11-11T22:00:56+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/11: The Takeout with Major Garrett",
-   "desc": "Details on the vote count in Mississippi's Senate race; Treasury Secretary Scott Bessent moved to military base after Iran threats.",
-   "url": "https://www.cbsnews.com/video/111126-the-takeout-with-major-garrett/",
-   "at": "2026-11-11T22:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "A Diminished Justice Dept. Braces for Fresh Fights After Midterm Loss",
-   "desc": "The upheaval points to a broader dilemma spurred by the election: whether the department can carry out President Trump’s priorities as career officials eye the exits and senior department officials resign.",
-   "url": "https://www.nytimes.com/2026/11/11/us/politics/doj-trump-blanche-trump-midterms.html",
-   "at": "2026-11-11T21:59:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "SNAP proposal would increase food insecurity, critics say",
-   "desc": "Anti-hunger advocates are blasting a proposed change to SNAP rules that could cut off more than 6 million people from access to federal food aid.",
-   "url": "https://www.cbsnews.com/news/usda-proposes-snap-eligibility-rule-change-food-stamps/",
-   "at": "2026-11-11T21:21:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After Hegseth Impeachment Vote Fails, Massie Vows More Tough Votes for GOP In His Final Days",
-   "desc": "Representative Thomas Massie, the Kentucky Republican, said he would use his waning time in office to prod his party to vote for “sanity” and break with President Trump.",
-   "url": "https://www.nytimes.com/2026/11/11/us/politics/massie-trump-difficult-republican-votes.html",
-   "at": "2026-11-11T20:42:33+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Biden Calls His Disastrous 2024 Debate Performance ‘Not Very Consequential’",
-   "desc": "A debate against Donald Trump in which Mr. Biden, then the president, repeatedly lost his train of thought led to widespread Democratic pressure to end his campaign, which Mr. Biden eventually did.",
-   "url": "https://www.nytimes.com/2026/11/11/us/politics/biden-debate-trump-comments-interview.html",
-   "at": "2026-11-11T20:14:42+00:00"
   }
  ]
 }

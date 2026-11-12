@@ -1,7 +1,196 @@
 {
  "code": "FR",
- "asOf": "2026-11-12T15:17:35+00:00",
+ "asOf": "2026-11-12T17:17:36+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : suivez avec nous l'interview de Jean-Luc Mélenchon, dans le cadre de l'opération \"Nos services publics\"",
+   "desc": "Huit des principaux candidats à l'élection présidentielle 2027 répondent jeudi, au fil de la journée, aux questions des journalistes de France Télévisions et Radio France à propos de l'accès et de la qualité des services publics sur l'ensemble du territoire.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/direct-presidentielle-2027-education-sante-transports-suivez-les-interviews-de-huit-candidats-dans-le-cadre-de-l-operation-nos-services-publics_8276135.html",
+   "at": "2026-11-12T17:15:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Inondations, routes coupées : les dégâts de la dépression Charles dans les Alpes-Maritimes et le Var",
+   "desc": "La dépression Charles a touché la France et le Sud ce jeudi 12 novembre. Les intempéries ont engendré des dégâts impressionnants, avec des routes complètement inondées. Découvrez les images de nos équipes sur le terrain.",
+   "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/en-images-inondations-routes-coupees-degats-le-passage-de-la-depression-charles-dans-les-alpes-maritimes-et-le-var-3448560.html",
+   "at": "2026-11-12T17:15:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Dépression Charles dans le Sud-Est : la Haute-Corse placée en vigilance orange aux crues, deux hommes sauvés des eaux à Nice",
+   "desc": "De fortes intempéries se sont abattues sur les Alpes-Maritimes, en vigilance jaune pour pluie-inondation, orages, crues et vagues-submersion.",
+   "url": "https://www.franceinfo.fr/environnement/meteo/direct-intemperies-dans-le-sud-de-la-france-la-haute-corse-placee-en-vigilance-orange-aux-crues-un-homme-sauve-des-eaux-a-nice_8279720.html",
+   "at": "2026-11-12T17:13:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Israël interdit à Jean-Luc Mélenchon et Mathilde Panot l'entrée sur son territoire, dénonçant \"la position extrêmement anti-israélienne\" de La France insoumise",
+   "desc": "\"Je regrette que le gouvernement d'Israël me poursuive de cette manière\", a réagi sur franceinfo Jean-Luc Mélenchon, interviewé dans le cadre de l'opération \"Nos services publics\".",
+   "url": "https://www.franceinfo.fr/politique/la-france-insoumise/israel-interdit-a-jean-luc-melenchon-et-mathilde-panot-l-entree-sur-son-territoire-denoncant-la-position-extremement-anti-israelienne-de-la-france-insoumise_8279801.html",
+   "at": "2026-11-12T17:13:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Guerre en Ukraine : les émissaires américains appellent Vladimir Poutine à \"inclure les Européens\" dans les pourparlers",
+   "desc": "Après leur rencontre avec le président russe au Kremlin, Steve Witkoff et Jared Kushner doivent échanger avec le président ukrainien, Volodymyr Zelensky, jeudi à Dublin (Irlande).",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-les-emissaires-americains-sont-arrives-en-russie-pour-une-rencontre-avec-vladimir-poutine_8278706.html",
+   "at": "2026-11-12T17:07:29+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Entreprises inondées, évacuations, routes fermées, éboulements : la dépression Charles frappe la Côte d'Azur",
+   "desc": "La région est touchée par de fortes pluies ce jeudi 12 novembre suite à la dépression Charles. Les intempéries ont provoqué des perturbations sur les routes, des éboulements, des évacuations et des sauvetages, tour d'horizon.",
+   "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/embouteillages-accident-perturbations-les-degats-de-la-tempete-charles-sur-la-cote-d-azur-3448236.html",
+   "at": "2026-11-12T17:01:25+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : les territoires d’outre-mer, pièces maîtresses de la stratégie de Jean-Luc Mélenchon",
+   "desc": "Labourant depuis longtemps des circonscriptions qui lui ont été particulièrement favorables en 2022, le candidat de La France insoumise espère encore gagner du terrain, surtout dans les Antilles et en Nouvelle-Calédonie.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/12/presidentielle-2027-les-territoires-d-outre-mer-pieces-maitresses-de-la-strategie-de-jean-luc-melenchon_6809135_823448.html",
+   "at": "2026-11-12T17:00:18+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : les Européens participeront aux prochaines négociations entre l’Ukraine et la Russie, selon un des émissaires américains",
+   "desc": "« Je pense que des progrès ont été accomplis », a réagi Steve Witkoff à la suite d’une rencontre avec Vladimir Poutine au Kremlin, jeudi. « Nous avons programmé une nouvelle réunion », a-t-il poursuivi, sans préciser ni le lieu ni la date, mais assurant que des représentants européens y participeraient.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/12/en-direct-guerre-en-ukraine-les-europeens-participeront-aux-prochaines-negociations-entre-l-ukraine-et-la-russie-selon-un-des-emissaires-americains_6808609_3210.html",
+   "at": "2026-11-12T16:57:51+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Après une grève générale en Espagne, le Parlement adopte des mesures pour protéger le droit au logement",
+   "desc": "Des centaines de milliers de personnes ont manifesté dans tout le pays mercredi, pour défendre l'accès au logement et le pouvoir d'achat.",
+   "url": "https://www.franceinfo.fr/monde/espagne/apres-une-greve-generale-en-espagne-le-parlement-adopte-des-mesures-pour-proteger-le-droit-au-logement_8279756.html",
+   "at": "2026-11-12T16:50:18+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, présidentielle 2027 | Suivez le grand oral de huit candidats sur Franceinfo : Edouard Philippe dit qu’il faut « interdire la possibilité de se syndiquer dans la magistrature »",
+   "desc": "Huit candidats à l’Elysée seront interrogés, jeudi 12 novembre, sur les services publics, de l’éducation à la sécurité jusqu’à 19 heures. Edouard Philippe et Jean-Luc Mélenchon n’ont pas encore été interviewés.",
+   "url": "https://www.lemonde.fr/politique/live/2026/11/12/en-direct-presidentielle-2027-suivez-le-grand-oral-de-huit-candidats-sur-franceinfo-edouard-philippe-maintient-sa-position-je-ne-me-soumettrai-pas-a-une-primaire-de-la-droite-et-du-centre_6809070_823448.html",
+   "at": "2026-11-12T16:43:21+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'homme jugé pour avoir drogué, violé et filmé six femmes \"ne conteste pas\" les faits devant la cour criminelle du Gard",
+   "desc": "\"Je tiens à remercier l'ami [de la victime] qui a prévenu les gendarmes et ainsi permis que mes actes cessent\", a déclaré l'accusé devant la cour, jeudi, lors de son procès.",
+   "url": "https://www.franceinfo.fr/faits-divers/justice-proces/l-homme-juge-pour-avoir-drogue-viole-et-filme-six-femmes-ne-conteste-pas-les-faits-devant-la-cour-criminelle-du-gard_8279735.html",
+   "at": "2026-11-12T16:37:22+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il a perdu de sa lumière\" : l'animateur Fred Musa et le rappeur Stomy Bugsy racontent, face à la justice, la vie bouleversée de leur ami Michel Zecler",
+   "desc": "L'animateur emblématique de Skyrock et le chanteur star des années 1990 sont venus témoigner jeudi au procès des trois policiers accusés d'avoir roué de coups leur ami producteur de musique. Ils ont décrit la tristesse qui l'envahit depuis six ans.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/il-a-perdu-de-sa-lumiere-l-animateur-fred-musa-et-le-rappeur-stomy-bugsy-racontent-face-a-la-justice-la-vie-bouleversee-de-leur-ami-michel-zecler_8279567.html",
+   "at": "2026-11-12T16:34:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Elle était mauvaise, alors je l'ai renvoyée\" : le jour où Mélanie Laurent a failli ne jamais jouer dans \"Inglourious Basterds\" de Tarantino",
+   "desc": "Dans un livre consacré aux coulisses de son film sorti en 2009, le réalisateur américain révèle avoir renvoyé Mélanie Laurent après une lecture collective du scénario, avant de finalement lui rendre son rôle. Il a, en revanche, décidé de virer Isabelle Huppert.",
+   "url": "https://www.franceinfo.fr/culture/cinema/elle-etait-mauvaise-alors-je-l-ai-renvoyee-le-jour-ou-melanie-laurent-a-failli-ne-jamais-jouer-dans-inglorious-basterds-de-tarantino_8279462.html",
+   "at": "2026-11-12T16:32:13+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Hors de Londres, l’économie britannique est à bout de souffle",
+   "desc": "Le Royaume-Uni souffre d’une croissance anémique depuis près de deux décennies. Reportage à Brentwood, une communauté dans l’Essex qui symbolise ce « malaise britannique ».",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/12/hors-de-londres-l-economie-britannique-est-a-bout-de-souffle_6809129_3234.html",
+   "at": "2026-11-12T16:30:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"J'arrive avec un projet\" : Bruno Le Maire présente un programme pour \"une autre France\" mais reste flou sur une candidature à la présidentielle",
+   "desc": "L'ancien ministre de l'Economie d'Emmanuel Macron tente un retour dans le débat public et ne veut pas se résigner au scénario d'un second tour entre Jean-Luc Mélenchon et Marine Le Pen.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/j-arrive-avec-un-projet-bruno-le-maire-presente-un-programme-pour-une-autre-france-mais-reste-flou-sur-une-candidature-a-la-presidentielle_8279576.html",
+   "at": "2026-11-12T16:28:40+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un tireur fait au moins un mort et quatre blessés à Washington, annonce la police",
+   "desc": "Les coups de feu se sont produits à l'intérieur et aux alentours d'une salle de sport, dans le quartier de Logan Circle.",
+   "url": "https://www.franceinfo.fr/monde/usa/plusieurs-personnes-touchees-par-des-tirs-a-washington-la-police-evoque-une-fusillade-en-cours_8279543.html",
+   "at": "2026-11-12T16:21:59+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "LFI présente un plan d'investissement de 3,45 milliards d'euros pour le textile français",
+   "desc": "Ce plan consiste en une dizaine de mesures qui doivent enrichir le programme du parti pour la présidentielle. Il s'agit notamment d'augmenter la part de vêtements produits en France de 3% à 10% ou de développer la filière lin et chanvre.",
+   "url": "https://www.franceinfo.fr/elections/programmes-election-presidentielle-2022/info-franceinfo-lfi-presente-un-plan-d-investissement-de-3-45-milliards-d-euros-pour-le-textile-francais_8279693.html",
+   "at": "2026-11-12T16:13:44+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "France : le pays devient-il le nouvel eldorado des data centers ?",
+   "desc": "En France, 68 projets de data centers sont en cours selon les observatoires spécialisés, bien qu'un collectif d'opposant en ait décompté 110. Ces énormes centres de données utilisés surtout pour l'intelligence artificielle, sont déjà plus de 300 en France et leur présence suscite de plus en plus d'opposition, à cause du bruit et l'impact sur l'écologie.",
+   "url": "https://www.france24.com/fr/vid%C3%A9o/20261112-france-le-pays-devient-il-le-nouvel-eldorado-des-data-centers",
+   "at": "2026-11-12T16:12:15+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Marine Tondelier promet l'ouverture de 2 000 centres de santé d'ici 2030 en France",
+   "desc": "Dans le cadre de la journée évènement franceinfo consacrée aux services publics, Marine Tondelier, candidate écologiste à la présidentielle, a détaillé son programme sur cet enjeu majeur du scrutin, jeudi 12 novembre, au studio 104 de la Maison de la Radio et de la Musique.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-marine-tondelier-promet-l-ouverture-de-2-000-centres-de-sante-d-ici-2030-en-france_8279639.html",
+   "at": "2026-11-12T16:03:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Plusieurs lycées de Montpellier visés par des départs de feu \"volontaires\" jeudi matin",
+   "desc": "Un mineur de 15 ans, interpellé dans un premier temps, a finalement été relâché. Le rectorat évoque aussi une \"tentative d'intrusion\" au lycée Jean-Monnet, au nord-ouest de la ville.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/plusieurs-lycees-de-montpellier-vises-par-des-departs-de-feu-volontaires-jeudi-matin_8279672.html",
+   "at": "2026-11-12T16:03:14+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Le développement économique incarné par l’essor des data centers conduit l’humanité vers une fracture inégalitaire »",
+   "desc": "En parallèle des élections américaines de mi-mandat, les citoyens états-uniens se sont prononcés pour mettre un terme à l’expansion des centres de données, symboles d’un modèle économique déréglé, analyse Pascal Riché, journaliste au « Monde », dans sa chronique.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/12/le-developpement-economique-incarne-par-l-essor-des-data-centers-conduit-l-humanite-vers-une-fracture-inegalitaire_6809125_3232.html",
+   "at": "2026-11-12T16:00:12+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un appel lancé pour une nouvelle journée de mobilisation samedi, une convergence de différents mots d'ordre prévue",
+   "desc": "La coordination des gilets jaunes appelle, pour ce qu'elle décrit comme son \"acte 5\", à soutenir et à participer à toutes les mobilisations portées samedi. Un appel rejoint par les organisations de jeunesse.",
+   "url": "https://www.franceinfo.fr/societe/manifestations/un-appel-lance-pour-un-acte-v-de-la-mobilisation-samedi-une-convergence-de-differents-mots-d-ordre-prevue_8279621.html",
+   "at": "2026-11-12T15:58:08+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Israël, Avigdor Lieberman, l’opposant à Benyamin Nétanyahou qui se verrait bien « calife à la place du calife »",
+   "desc": "Malgré son alliance avec Gadi Eisenkot, que le chef de l’Etat a chargé de réunir une coalition pour former un gouvernement, cet insaisissable vétéran de la politique israélienne cultive les ambiguïtés et laisse planer le doute sur ses ambitions.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/12/en-israel-avigdor-lieberman-l-opposant-a-benyamin-netanyahou-qui-se-verrait-bien-calife-a-la-place-du-calife_6809123_3210.html",
+   "at": "2026-11-12T15:54:31+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Déconstruire un rapport de confrontation à l'autre\" : le travail d'une unité judiciaire à priorité éducative pour aider des mineures qui risquent la prison",
+   "desc": "Exceptionnellement, \"Envoyé spécial\" a pu suivre pendant plusieurs mois le quotidien de cinq adolescentes qui jouent leur avenir. Placées par la justice dans un centre fermé à Bergerac à la suite de faits graves, elles ont six mois pour tenter d’échapper à la prison. Rencontre avec la directrice, à la tête d'une équipe éducative très investie.",
+   "url": "https://www.franceinfo.fr/replay-magazine/france-2/envoye-special/video-aider-des-mineures-qui-risquent-la-prison-a-deconstruire-un-rapport-de-confrontation-a-l-autre-le-travail-d-une-ujpe-unite-judiciaire-a-priorite-educative_8277503.html",
+   "at": "2026-11-12T15:51:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"J'ai tout perdu\" : la mère de la \"petite martyre de l'A10\" se positionne en victime de son procès",
+   "desc": "Halima El Bakhti, la mère d'Inass Touloub, était interrogée jeudi pour la dernière fois sur la mort de sa fille, dont le corps supplicié a été retrouvé le 11 août 1987, en bordure de l'autoroute A10.",
+   "url": "https://www.franceinfo.fr/faits-divers/martyre-de-l-a10/j-ai-tout-perdu-la-mere-de-la-petite-martyre-de-l-a10-se-positionne-en-victime-de-son-proces_8279276.html",
+   "at": "2026-11-12T15:51:08+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Trois fausses alertes à la bombe signalées jeudi matin dans des établissements scolaires en France, selon le ministère de l’éducation nationale",
+   "desc": "Le ministère n’a pas précisé quels établissements étaient concernés. Selon des médias locaux, les faits se sont produits à Marseille, dans le Jura et dans l’Aisne.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/12/trois-fausses-alertes-a-la-bombe-signalees-jeudi-matin-dans-des-etablissements-scolaires-en-france-selon-le-ministere-de-l-education-nationale_6809119_3224.html",
+   "at": "2026-11-12T15:39:39+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Narchomicide en France : perpétuité requise contre quatre accusés",
+   "desc": "Dénonçant la \"barbarie poussée à l'extrême\" d'un triple narchomicide dont l'une des victimes est le frère d'Amine Kessaci, figure de la lutte anti-narcotrafic, l'accusation a requis mercredi 11 novembre la réclusion à perpétuité pour quatre des cinq co-accusés, dont deux figures du narcobanditisme marseillais. Les explications de Marie Schuster, journaliste à France 24.",
+   "url": "https://www.france24.com/fr/vid%C3%A9o/20261112-france-perp%C3%A9tuit%C3%A9-requise-contre-quatre-accus%C3%A9s-dont-deux-barons-de-la-drogue",
+   "at": "2026-11-12T15:17:47+00:00"
+  },
   {
    "source": "France 24",
    "title": "Présidentielle 2027 : le \"Made in France\", un enjeu devenu majeur dans la campagne",
@@ -17,25 +206,11 @@
    "at": "2026-11-12T15:08:40+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Guerre en Ukraine : les émissaires américains appellent Vladimir Poutine à \"inclure les Européens\" dans les pourparlers",
-   "desc": "Après leur rencontre avec le président russe au Kremlin, Steve Witkoff et Jared Kushner doivent échanger avec le président ukrainien, Volodymyr Zelensky, jeudi à Dublin (Irlande).",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-les-emissaires-americains-sont-arrives-en-russie-pour-une-rencontre-avec-vladimir-poutine_8278706.html",
-   "at": "2026-11-12T15:07:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Entre sabotages, cyberattaques, et agents au service des puissances rivales, comment l'Europe se retrouve sous la pression de la guerre hybride",
-   "desc": "Du sabotage attribué à la Russie en Europe centrale et orientale au recrutement de collaborateurs, la carte de cette guerre de l'ombre est plus vaste qu'une confrontation entre Moscou et l'Occident, explique le média public espagnol RTVE.",
-   "url": "https://www.franceinfo.fr/monde/europe/entre-sabotages-cyberattaques-et-agents-au-service-des-puissances-rivales-comment-l-europe-se-retrouve-sous-la-pression-de-la-guerre-hybride_8279402.html",
-   "at": "2026-11-12T15:03:18+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Bruno Retailleau veut \"économiser 300 000 postes\" dans la fonction publique grâce à l'intelligence artificielle",
-   "desc": "Dans le cadre de la journée évènement franceinfo consacrée aux services publics, Bruno Retailleau, candidat Les Républicains à la présidentielle, a détaillé son programme sur cet enjeu majeur du scrutin, jeudi 12 novembre, au studio 104 de la Maison de la Radio et de la Musique.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-bruno-retailleau-veut-economiser-300-000-postes-dans-la-fonction-publique-grace-a-l-intelligence-artificielle_8279522.html",
-   "at": "2026-11-12T15:01:38+00:00"
+   "source": "Le Monde",
+   "title": "Les cinq raisons pour lesquelles les IA ne sont pas (encore) un risque pour l’humanité",
+   "desc": "Avant que ne s’accomplissent les scénarios les plus pessimistes, les intelligences artificielles devront apprendre à récolter de l’argent, à se répliquer, à se débrider et à s’améliorer, estiment chercheurs et experts. Et surtout à se découvrir l’instinct de préservation qui leur manque.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/12/les-cinq-raisons-pour-lesquelles-les-ia-ne-sont-pas-encore-un-risque-pour-l-humanite_6809114_4408996.html",
+   "at": "2026-11-12T15:00:09+00:00"
   },
   {
    "source": "Le Monde",
@@ -46,17 +221,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : suivez l'interview de Marine Tondelier, sixième des huit candidats interrogés dans le cadre de l'opération \"Nos services publics\"",
-   "desc": "Huit des principaux candidats à l'élection présidentielle 2027 répondent jeudi, au fil de la journée, aux questions des journalistes de France Télévisions et Radio France à propos de l'accès et de la qualité des services publics sur l'ensemble du territoire.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/direct-presidentielle-2027-education-sante-transports-suivez-les-interviews-de-huit-candidats-dans-le-cadre-de-l-operation-nos-services-publics_8276135.html",
-   "at": "2026-11-12T14:54:49+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Centre-ville inondé, routes fermées, éboulements : la dépression Charles frappe la Côte d'Azur",
-   "desc": "La région est touchée par de fortes pluies ce jeudi 12 novembre suite à la dépression Charles. Les intempéries ont provoqué des perturbations sur les routes, des éboulements et des évacuations, tour d'horizon.",
-   "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/embouteillages-accident-perturbations-les-degats-de-la-tempete-charles-sur-la-cote-d-azur-3448236.html",
-   "at": "2026-11-12T14:49:28+00:00"
+   "title": "Trois fausses alertes à la bombe dans des établissements scolaires des Bouches-du-Rhône, de l'Aisne et du Jura, annonce le ministère de l'Education nationale",
+   "desc": "Les établissements concernés sont le lycée Don Bosco de Marseille, l’IUT de Laon (Aisne), le lycée Victor-Bérard et le collège Hyacinthe-Cazeaux de Morez (Jura).",
+   "url": "https://www.franceinfo.fr/societe/education/trois-fausses-alertes-a-la-bombe-dans-des-etablissements-scolaires-des-bouches-du-rhone-de-l-aisne-et-du-jura-annonce-le-ministere-de-l-education-nationale_8279504.html",
+   "at": "2026-11-12T14:51:25+00:00"
   },
   {
    "source": "France 24",
@@ -87,25 +255,11 @@
    "at": "2026-11-12T14:17:15+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Qui est Alice Huang, la femme mystérieuse au cœur du scandale Nvidia ?",
-   "desc": "Cette femme d'affaires chinoise est soupçonnée d'avoir facilité l'accès de Pékin à des puces électroniques américaines, en entretenant une liaison avec le patron de Nvidia. Elle reste introuvable depuis le début de l'affaire et son profil interroge.",
-   "url": "https://www.franceinfo.fr/monde/chine/qui-est-alice-huang-la-femme-mysterieuse-au-c-ur-du-scandale-nvidia_8278904.html",
-   "at": "2026-11-12T14:07:39+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "En Espagne, le Parlement vote un texte pour protéger le droit au logement, avec notamment des mesures contre les fonds « vautour »",
    "desc": "Alors que la droite promet d’abroger ces mesures si elle revient au pouvoir, le texte adopté jeudi suspend les expulsions de personnes vulnérables jusqu’en 2030 et cible les fonds dits « vautour ».",
    "url": "https://www.lemonde.fr/international/article/2026/11/12/apres-la-greve-en-espagne-le-parlement-adopte-des-mesures-pour-proteger-le-droit-au-logement_6809110_3210.html",
    "at": "2026-11-12T14:03:17+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le cake au citron et au pavot : la recette de Pascale Weeks",
-   "desc": "Ce cake, simple et délicieux, est un peu l’emblème du parcours de l’autrice culinaire, qui continue de le confectionner très souvent.",
-   "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2026/11/12/le-cake-au-citron-et-au-pavot-la-recette-de-pascale-weeks_6809108_5324493.html",
-   "at": "2026-11-12T14:00:05+00:00"
   },
   {
    "source": "Le Monde",
@@ -123,27 +277,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Avec l'intelligence artificielle, le fisc traque les abris de jardin non déclarés",
-   "desc": "La taxe est due aux impôts à trois conditions : si l'abri est fermé, qu'il fait plus de cinq mètres carrés et si la hauteur est d'au moins 1,80 m. Pour les repérer, le fisc croise les données entre photographies aériennes et cadastres.",
-   "url": "https://www.franceinfo.fr/economie/impots/avec-l-intelligence-artificielle-le-fisc-traque-les-abris-de-jardin-non-declares_8279357.html",
-   "at": "2026-11-12T13:31:49+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Quand ? Avec qui ? Comment ? A droite et au centre, l'idée d'une primaire fait encore débat à six mois de la présidentielle",
-   "desc": "L'idée, portée par l'ancien Premier ministre Gabriel Attal, séduit plusieurs de ses concurrents. Mais alors qu'Edouard Philippe refuse toujours d'y participer, les modalités d'un éventuel scrutin restent encore floues.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/quand-avec-qui-comment-a-droite-et-au-centre-l-idee-d-une-primaire-fait-encore-debat-a-six-mois-de-la-presidentielle_8277515.html",
-   "at": "2026-11-12T13:27:27+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Il a une image de gagnant\" : quel candidat à la présidentielle a le plus à craindre de la candidature de Teddy Riner ?",
-   "desc": "Revendiquant un positionnement \"ni de gauche, ni de droite\", le célèbre judoka bénéficie d'une bonne opinion mais son potentiel électoral est difficile à cerner. Si les différentes écuries présidentielles assurent ne pas être menacées par cette nouvelle candidature, le champion olympique pourrait tout de même bousculer la campagne.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/il-a-une-image-de-gagnant-quel-candidat-a-la-presidentielle-a-le-plus-a-craindre-de-la-candidature-de-teddy-riner_8277656.html",
-   "at": "2026-11-12T13:25:27+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"L'action climatique globale stagne\" : la planète avance vers un réchauffement de +2,7°C d'ici 2100, selon le Climate Action Tracker",
    "desc": "Lors de la COP21, à Paris en 2015, les Etats s'étaient engagés à maintenir la hausse des températures sous le seuil des +1,5°C d'ici la fin du siècle. Or, le dépassement de ce seuil \"apparaît désormais inévitable\", aux yeux de ce réseau scientifique indépendant.",
    "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/l-action-climatique-globale-stagne-la-planete-avance-vers-un-rechauffement-de-2-7-c-d-ici-2100-selon-le-climate-action-tracker_8279108.html",
@@ -155,13 +288,6 @@
    "desc": "Des personnalités ont revêtu maillots et crampons mercredi 11 novembre au soir à Paris pour marquer les 500 jours de détention du journaliste français Christophe Gleizes, dont la famille a été reçue au Quai d'Orsay, sur fond d'impasse diplomatique avec Alger. Les précisions de Barthélémy Gaillard, journaliste France Culture.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261112-match-de-soutien-%C3%A0-christophe-gleizes-l-espoir-d-une-gr%C3%A2ce-pr%C3%A9sidentielle",
    "at": "2026-11-12T13:16:12+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Une bijouterie de luxe braquée à Paris sans faire de blessé, les suspects armés en fuite",
-   "desc": "Une enquête en flagrance a été ouverte pour \"vol avec arme en bande organisée\", a appris franceinfo auprès du parquet de Paris.",
-   "url": "https://www.franceinfo.fr/faits-divers/une-bijouterie-de-luxe-braquee-a-paris-sans-faire-de-blesse-les-suspects-armes-en-fuite_8279318.html",
-   "at": "2026-11-12T13:06:31+00:00"
   },
   {
    "source": "franceinfo",
@@ -179,13 +305,6 @@
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : Vladimir Poutine prévient qu’une mission de maintien de la paix avec des soldats étrangers en Ukraine serait considérée comme « une cible légitime »",
-   "desc": "Après avoir plaidé auprès de Vladimir Poutine pour la participation des Européens aux pourparlers, les émissaires américains Steve Witkoff et Jared Kushner ont quitté le Kremlin et sont attendus à Dublin pour y rencontrer le président ukrainien, Volodymyr Zelensky.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/12/en-direct-guerre-en-ukraine-vladimir-poutine-a-detruit-la-securite-europeenne-apres-l-invasion-de-l-ukraine-estime-antonio-costa-president-du-conseil-europeen_6808609_3210.html",
-   "at": "2026-11-12T12:52:51+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "ENQUETE « C’est pas normal d’aller manifester et de finir avec ça dans le corps » : des blessés du mouvement social racontent",
    "desc": "Depuis le mois de septembre, des dizaines de personnes ont été blessées en manifestation. Les victimes et leurs proches témoignent auprès du « Monde ».",
    "url": "https://www.lemonde.fr/videos/video/2026/11/12/ce-n-est-pas-normal-d-aller-manifester-et-de-finir-avec-ca-dans-le-corps-des-blesses-du-mouvement-social-temoignent_6809104_1669088.html",
@@ -197,27 +316,6 @@
    "desc": "Cent millions d'euros seront consacrés à un \"guichet d'équipement\" pour aider les agriculteurs à \"protéger les animaux et les cultures contre les fortes chaleurs\".",
    "url": "https://www.franceinfo.fr/economie/emploi/metiers/agriculture/plan-de-relance-agricole-la-ministre-de-l-agriculture-promet-725-millions-d-euros-notamment-pour-l-adaptation-au-changement-climatique_8279273.html",
    "at": "2026-11-12T12:45:41+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'application de rencontre Happn et le ministère de la Justice lancent un partenariat pour faire face aux violences sexistes et sexuelles en ligne",
-   "desc": "Les utilisateurs de l'application de rencontre Happn, plébiscitée par les jeunes, verront bientôt \"dans le fil de profils et la messagerie\" un accès vers \"Je suis victime\". Il s'agit d'une plateforme de prévention des violences en ligne, éditée par le ministère de la Justice.",
-   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/l-application-de-rencontre-happn-et-le-ministere-de-la-justice-lancent-un-partenariat-pour-faire-face-aux-violences-sexistes-et-sexuelles-en-ligne_8279300.html",
-   "at": "2026-11-12T12:42:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Plus de 100 000 billets SNCF vendus en trente minutes pour les vacances d'hiver et de printemps, un record",
-   "desc": "Depuis jeudi matin, la SNCF met en vente ses billets de TGV de janvier jusqu'au début de l'été. Pour cette ouverture, il y a eu un record historique de réservations.",
-   "url": "https://www.franceinfo.fr/economie/transports/sncf/plus-de-100-000-billets-sncf-vendus-en-30-minutes-pour-les-vacances-d-hiver-et-de-printemps-un-record-historique_8279282.html",
-   "at": "2026-11-12T12:30:44+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En 2025, les flux migratoires ont augmenté en Europe du Sud, mais reculé en Amérique du Nord",
-   "desc": "Le rapport annuel de l’OCDE, publié jeudi, relève des tendances divergentes selon les pays. La forte progression de l’immigration légale au Portugal, en Italie et en Espagne, contraste avec des baisses marquées au Canada, aux Etats-Unis et au Royaume-Uni.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/12/en-2025-les-flux-migratoires-ont-augmente-en-europe-du-sud-mais-recule-en-amerique-du-nord_6809102_3210.html",
-   "at": "2026-11-12T12:30:02+00:00"
   },
   {
    "source": "Le Monde",
@@ -232,13 +330,6 @@
    "desc": "Amoindrie par les pépins physiques de Kylian Mbappé, forfait, l'équipe de France va tout de même tenter de confirmer ses bons débuts en Ligue des nations en s'offrant contre l'Italie une place en quarts de finale, jeudi 12 novembre à Milan. Avec trois victoires et un nul en quatre sorties, les Bleus de Zinédine Zidane sont dans une situation idéale pour poursuivre leur route dans cette compétition.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261112-ligue-des-nations-la-france-affronte-l-italie-sans-kylian-mbapp%C3%A9",
    "at": "2026-11-12T12:01:53+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, présidentielle 2027 | Suivez le grand oral de huit candidats sur Franceinfo : Marine Tondelier veut renforcer la justice, qui n’est pas « laxiste » mais peut être un système « deux poids, deux mesures »",
-   "desc": "Huit candidats à l’Elysée seront interrogés, jeudi 12 novembre, sur les services publics, de l’éducation à la sécurité jusqu’à 19 heures. Edouard Philippe et Jean-Luc Mélenchon n’ont pas encore été interviewés.",
-   "url": "https://www.lemonde.fr/politique/live/2026/11/12/en-direct-presidentielle-2027-suivez-le-grand-oral-de-huit-candidats-sur-les-services-publics-raphael-glucksmann-souhaite-une-refonte-et-un-sauvetage-de-l-ecole-publique-dans-son-ensemble_6809070_823448.html",
-   "at": "2026-11-12T11:50:45+00:00"
   },
   {
    "source": "France 24",
@@ -270,38 +361,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "L'actrice Nicole Kidman recevra un César d'honneur lors de la 52e cérémonie",
-   "desc": "L'Académie des César l'a annoncé dans un communiqué jeudi : l'actrice australo-américaine Nicole Kidman recevra un César d'honneur sur la scène de l'Olympia à Paris en février 2027.",
-   "url": "https://www.franceinfo.fr/culture/cinema/l-actrice-nicole-kidman-recevra-un-cesar-d-honneur-lors-de-la-52e-ceremonie_8279006.html",
-   "at": "2026-11-12T09:41:09+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Affaire Nvidia : la Chine accuse les Etats-Unis de \"fabriquer\" des \"récits d'espionnage\" pour imposer un \"blocus technologique\"",
-   "desc": "Le patron du géant américain des puces d'intelligence artificielle est ébranlé par une liaison extraconjugale qu'il a entretenue avec une Chinoise soupçonnée d'espionnage.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/mise-en-cause-dans-le-scandale-touchant-le-patron-de-nvidia-la-chine-accuse-les-etats-unis-de-fabriquer-des-recits-d-espionnage-pour-imposer-un-blocus-technologique_8278889.html",
-   "at": "2026-11-12T09:38:33+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La climatologue Valérie Masson-Delmotte \"consternée\" par la \"polarisation\" du débat politique sur le climat",
-   "desc": "À quelques mois de l'élection présidentielle de 2027, l'ancienne vice-présidente du Giec regrette un clivage entre la gauche et la droite autour des questions climatiques et dénonce un manque de \"débats d'ensemble sur les priorités d'adaptation et quasiment rien sur la biodiversité, du centre à l'extrême droite\".",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/la-climatologue-valerie-masson-delmotte-se-dit-consternee-par-la-polarisation-du-debat-politique-sur-le-climat-avant-l-election-presidentielle_8278925.html",
-   "at": "2026-11-12T08:34:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Des Kévin Tessier, il y en a des centaines\" : le maire de Trappes, Ali Rabeh, réagit à la liste de personnalités de gauche et d'extrême gauche retrouvée chez le suspect",
-   "desc": "Interrogé sur la liste de personnalités de gauche et d'extrême gauche dressée par le principal suspect de l'attentat raciste de Trappes, Ali Rabeh \"n'est pas surpris\". L'élu du parti Génération.s, fondé par Benoît Hamon était l'invité dans la matinale de franceinfo jeudi.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/des-kevin-tessier-il-y-en-a-des-centaines-reagit-le-maire-de-trappes-ali-rabeh_8278847.html",
-   "at": "2026-11-12T07:44:04+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Midterms aux Etats-Unis : les démocrates entérinent un peu plus leur large victoire en décrochant un siège au Sénat dans le Mississippi",
-   "desc": "Scott Colom devient ainsi le premier sénateur noir élu dans cet Etat du Sud en près d'un siècle et demi.",
-   "url": "https://www.franceinfo.fr/monde/usa/midterms-2018/a-l-issue-des-elections-de-mi-mandat-aux-etats-unis-exploit-des-democrates-dans-le-mississippi-qui-decrochent-un-siege-au-senat-apres-les-elections-de-mi-mandat_8278790.html",
-   "at": "2026-11-12T07:01:24+00:00"
+   "title": "\"Je veux savoir pourquoi ils lui ont fait subir ça\" : au procès des parents de \"la petite martyre de l'A10\", la salle d'audience ne désemplit pas",
+   "desc": "Chaque jour, le procès attire un public nombreux, souvent des personnes qui ont été très touchées par cette affaire il y a quarante ans. Jeudi, pour l'audition des accusés, la salle devrait encore une fois être comble.",
+   "url": "https://www.franceinfo.fr/faits-divers/martyre-de-l-a10/reportage-je-veux-savoir-pourquoi-ils-lui-ont-fait-subir-ca-au-proces-des-parents-de-la-petite-martyre-de-l-a10-la-salle-d-audience-ne-desemplit-pas_8278253.html",
+   "at": "2026-11-12T07:13:51+00:00"
   },
   {
    "source": "France 24",
@@ -311,58 +374,9 @@
    "at": "2026-11-12T06:49:05+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Plus d'énergie, en pleurs, à bout de forces\" : un éleveur qui a \"craqué\" raconte comment il s'est relevé grâce aux accompagnements mis en place",
-   "desc": "Alors que le Premier ministre Sébastien Lecornu doit détailler jeudi un \"plan de relance agricole\", franceinfo s'est rendu en Loire-Atlantique, chez un éleveur de Saint-Nazaire. Sa détresse psychologique repérée par une \"sentinelIe\", il a bénéficié des cellules d'aide mises en place pour faire face au mal-être des agriculteurs.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/temoignage-plus-d-energie-en-pleurs-a-bout-de-forces-un-eleveur-qui-a-craque-raconte-comment-il-s-est-releve-grace-aux-accompagnements-mis-en-place_8258105.html",
-   "at": "2026-11-12T06:12:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le dérèglement climatique pèse lourd sur l'inflation, notamment dans la zone euro, alerte Oxfam",
-   "desc": "Un rapport d'Oxfam publié jeudi met en évidence le lien direct entre le climat et les prix alimentaires. C'est particulièrement visible à la sortie de l'été le plus chaud jamais mesuré en France.",
-   "url": "https://www.franceinfo.fr/economie/emploi/metiers/agriculture/le-dereglement-climatique-pese-lourd-sur-l-inflation-notamment-dans-la-zone-euro-alerte-oxfam_8278283.html",
-   "at": "2026-11-12T05:31:46+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La TVA à 0% sur les produits de première nécessité a-t-elle \"fait baisser l'ensemble des prix\" en Espagne et en Pologne, comme l'affirme Sébastien Chenu ?",
-   "desc": "Le député Rassemblement national a vanté le succès de la suppression de la TVA sur les produits de première nécessité en Espagne et en Pologne comme réponse à l'inflation et à la baisse de pouvoir d'achat. Une mesure qu'il soutient mais dont l'efficacité est très limitée.",
-   "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-la-tva-a-0-sur-les-produits-de-premiere-necessite-a-t-elle-fait-baisser-l-ensemble-des-prix-en-espagne-et-en-pologne-comme-l-affirme-sebastien-chenu_8276051.html",
-   "at": "2026-11-12T05:06:47+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Ça a explosé comme un volcan\" : dans la région turque de Konya, la terre s'effondre à cause de la sécheresse et d'une agriculture trop gourmande en eau",
-   "desc": "La sécheresse est un défi pour la Turquie, qui accueille la COP31 à Antalya. Plus au nord, autour de Konya, les agriculteurs doivent faire face au phénomène des dolines, ces cratères géants agrandis par l'aridité des sols.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/reportage-ca-a-explose-comme-un-volcan-dans-la-region-turque-de-konya-la-terre-s-effondre-a-cause-de-la-secheresse-et-d-une-agriculture-trop-gourmande-en-eau_8274641.html",
-   "at": "2026-11-12T05:01:56+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Dans la mer d’Aral en voie d’assèchement, le « miracle » éphémère de la crevette artémia, ressource prisée de l’aquaculture mondiale",
-   "desc": "A l’origine immense lac partagé entre Ouzbékistan et Kazakhstan, la mer d’Aral a vu ses rives reculer sous l’effet de la culture industrielle du coton et des réaménagements hydrologiques. Ses eaux saturées de sel sont devenues le royaume exclusif d’un crustacé perçu comme une manne par la population.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/12/dans-la-mer-d-aral-en-voie-d-assechement-le-miracle-ephemere-de-la-crevette-artemia-ressource-prisee-de-l-aquaculture-mondiale_6809056_3244.html",
-   "at": "2026-11-12T05:00:28+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Comment les jobs d’appoint deviennent une nécessité pour des salariés ou chômeurs en quête de pouvoir d’achat",
-   "desc": "Les plateformes de « jobbing » séduisent de nombreux particuliers, que ce soit pour les services entre voisins (bricolage, jardinage), la livraison de courses ou le gardiennage de colis. Et ce malgré des montants faibles.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/12/le-jobbing-ce-microtravail-qui-prend-de-plus-en-plus-de-poids-pour-boucler-les-fins-de-mois_6809052_3234.html",
-   "at": "2026-11-12T05:00:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« La prison, ça a tué ma vie » : l’échec majeur des établissements pénitentiaires pour mineurs en France",
-   "desc": "En septembre, deux adolescents se sont suicidés dans des établissements pénitentiaires pour mineurs. Ces drames interviennent dans un contexte de crise pour ces structures, créées en 2002 afin de concilier incarcération et éducation. Un récent rapport de l’Observatoire international des prisons dénonce un système qui, loin de permettre la réinsertion, fragilise des jeunes déjà en rupture.",
-   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/12/la-prison-ca-a-tue-ma-vie-l-echec-majeur-des-etablissements-penitentiaires-pour-mineurs_6809044_4500055.html",
-   "at": "2026-11-12T04:00:06+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Cisjordanie occupée : un responsable des colons israélien refoulé à son arrivée en France",
-   "desc": "Yossi Dagan, qui dirige une structure représentant les colonies juives en Samarie, au nord de la Cisjordanie occupée, s'est vu refuser l'entrée sur le territoire français à cause de son \"rôle actif dans la mise en uvre de la politique de colonisation de la Cisjordanie\", selon le ministère français des Affaires étrangères.",
+   "desc": "Yossi Dagan, qui dirige une structure représentant les colonies juives en Samarie, au nord de la Cisjordanie occupée, s'est vu refuser l'entrée sur le territoire français à cause de son \"rôle actif dans la mise en œuvre de la politique de colonisation de la Cisjordanie\", selon le ministère français des Affaires étrangères.",
    "url": "https://www.france24.com/fr/france/20261111-responsable-colons-isra%C3%A9liens-cisjordanie-occup%C3%A9e-refoul%C3%A9-son-arriv%C3%A9e-france",
    "at": "2026-11-11T21:12:37+00:00"
   },
@@ -372,13 +386,6 @@
    "desc": "\"On demande simplement la grâce à Christophe\" : les parents de Christophe Gleizes, journaliste français détenu en Algérie depuis 500 jours appellent à la libération de leur fils. Retrouvez l'entretien dans son intégralité sur le site de France 24.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261111-les-parents-de-christophe-gleizes-journaliste-d%C3%A9tenu-en-alg%C3%A9rie-depuis-500-jours-sur-france-24",
    "at": "2026-11-11T18:04:24+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "11-Novembre : le Bleuet de France, symbole de mémoire",
-   "desc": "Ludovic de Foucaud, journaliste à France 24, nous en dit plus sur la signification du Bleuet de France, symbole en hommage aux Morts pour la France.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261111-11-novembre-le-bleuet-de-france-symbole-de-m%C3%A9moire",
-   "at": "2026-11-11T16:23:51+00:00"
   }
  ]
 }

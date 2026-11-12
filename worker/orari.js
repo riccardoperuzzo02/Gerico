@@ -10,7 +10,8 @@ const ROMA = [
   { wf: "redazione.yml", ore: [[7, 18]], inputs: { giro: "notizie", variante: "7:18" } },
   { wf: "redazione.yml", ore: [[9, 47]], inputs: { giro: "paesi" } },
   { wf: "redazione.yml", ore: [[13, 18]], inputs: { giro: "notizie", variante: "13:18" } },
-  { wf: "redazione.yml", ore: [[18, 15]], giorni: FERIALI, inputs: { giro: "chiusure" } }
+  // alle 19:30 il giro riparte solo se alle 18:45 gli articoli di chiusura non c'erano ancora (lo decide redazione.py)
+  { wf: "redazione.yml", ore: [[18, 45], [19, 30]], giorni: FERIALI, inputs: { giro: "chiusure" } }
 ];
 // ora UTC, come erano scritti nei workflow
 const mezzore = [];

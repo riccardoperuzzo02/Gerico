@@ -41,9 +41,9 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", 
 
 # ora di Roma del giro -> come si chiama il giro nel testo (la prima riga del messaggio a Claude)
 GIRI = {
-    "notizie": {"ore": {7: "7:18", 13: "13:18"}, "modello": "claude-sonnet-5-5", "turni": 150},
-    "chiusure": {"ore": {18: "18:15"}, "modello": "claude-sonnet-5-5", "turni": 40},
-    "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 120},
+    "notizie": {"ore": {7: "7:18", 13: "13:18"}, "modello": "claude-sonnet-5-5", "turni": 220},
+    "chiusure": {"ore": {18: "18:45"}, "modello": "claude-sonnet-5-5", "turni": 40},
+    "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 160},
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
     # solo la pubblicazione del database com'è, senza Claude (dopo una correzione a mano)
@@ -52,7 +52,7 @@ GIRI = {
 # i cron sono in UTC: per ogni giro ce n'è uno per l'ora legale e uno per l'ora solare, e parte solo quello giusto
 CRON = {
     "28 5 * * *": "notizie", "28 6 * * *": "notizie", "28 11 * * *": "notizie", "28 12 * * *": "notizie",
-    "25 16 * * 1-5": "chiusure", "25 17 * * 1-5": "chiusure",
+    "55 16 * * 1-5": "chiusure", "55 17 * * 1-5": "chiusure",
     "57 7 * * *": "paesi", "57 8 * * *": "paesi",
     "2 5 * * 1-5": "titoli", "2 6 * * 1-5": "titoli",
 }
@@ -141,6 +141,15 @@ def gia_fatto(giro, nominale):
     return t if t.date() == nominale.date() and t >= nominale - timedelta(hours=1) else None
 
 
+def chiusure_fatte(now):
+    mk = load(os.path.join(DB, "markets", "snapshot.json"), {}) or {}
+    t = parse_time(mk.get("asOf"))
+    if not t or "hiusur" not in str(mk.get("label") or ""):
+        return False
+    t = t.astimezone(ROME)
+    return t.date() == now.date() and (t.hour, t.minute) >= (17, 35)
+
+
 def cmd_giro():
     """Per il workflow: stampa giro, variante, modello e turni; niente se a quest'ora non c'è un giro da fare."""
     event = os.environ.get("GITHUB_EVENT_NAME", "")
@@ -176,6 +185,11 @@ def cmd_giro():
             return 0
     elif scelta in GIRI:
         giro = scelta
+        # le chiusure partono alle 18:45 e di nuovo alle 19:30: il secondo giro serve solo se il primo non ha trovato
+        # gli articoli di chiusura (allora Mercati non ha ancora l'etichetta della chiusura con l'ora di oggi)
+        if giro == "chiusure" and chiusure_fatte(now):
+            print("Le chiusure di oggi ci sono già: non le rifaccio.", file=sys.stderr)
+            return 0
         voluta = os.environ.get("VARIANTE", "").strip()
         if giro == "notizie":
             variante = voluta if voluta in GIRI["notizie"]["ore"].values() else ("7:18" if now.hour < 11 else "13:18")
@@ -301,6 +315,14 @@ def cmd_controlla(db=DB, quiet=False):
     for c, n in per_paese.items():
         if n > 4:
             problems.append(f"{c}: {n} storie live dei paesi (al massimo 4)")
+    # ogni storia nata oggi ha la sua immagine: il numero (figure) o la foto di un luogo (photo)
+    if os.environ.get("GIRO") in ("notizie", "paesi"):
+        oggi_ = now_rome().date()
+        for sid, s in live:
+            fs = parse_time(s.get("firstSeen"))
+            if fs and fs.astimezone(ROME).date() == oggi_ and not isinstance(s.get("photo"), dict) and not isinstance(s.get("figure"), dict):
+                if (s.get("scope") == "paese") == (os.environ.get("GIRO") == "paesi"):
+                    problems.append(f"stories/{sid}: storia nuova senza immagine (photo con un luogo, oppure figure con il numero)")
     # dopo il giro delle 7:18 ogni sezione ha le sue notizie del giorno (SEZIONI E CRONACA nel testo delle notizie)
     if os.environ.get("GIRO") == "notizie" and os.environ.get("VARIANTE") == "7:18":
         limite = datetime.now(timezone.utc) - timedelta(hours=24)
@@ -309,6 +331,10 @@ def cmd_controlla(db=DB, quiet=False):
             upd = parse_time(s.get("updated"))
             if upd and upd >= limite:
                 conta[s.get("section")] = conta.get(s.get("section"), 0) + 1
+        oggi = now_rome().date()
+        nuove = sum(1 for _sid, s in principali if (parse_time(s.get("firstSeen")) or datetime(2000, 1, 1, tzinfo=timezone.utc)).astimezone(ROME).date() == oggi)
+        if nuove < 4:
+            problems.append(f"storie nuove di oggi: {nuove} (al giro delle 7:18 ne servono almeno 4, vedi CONSUMO)")
         for sec, minimo in (("italia", 3), ("mondo", 2), ("economia", 2), ("mercati", 2), ("tecnologia", 2)):
             if conta.get(sec, 0) < minimo:
                 problems.append(f"sezione {sec}: {conta.get(sec, 0)} storie nuove o aggiornate nelle ultime 24 ore "

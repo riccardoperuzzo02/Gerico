@@ -69,8 +69,9 @@ Queste prime pagine servono a trovare le notizie: non sono fonti. Quando ne apri
 
 CONSUMO
 Ogni giro consuma crediti Claude: lavora con il minimo di letture che basta.
-- Giro delle 7:18: al massimo circa 34 pagine aperte e 14 ricerche, compresi i calendari dell'agenda. Approfondisci al massimo 9 storie, tra nuove e aggiornate, le più importanti, tenendo i minimi di SEZIONI E CRONACA.
-- Giro delle 13:18: al massimo circa 15 pagine aperte e 6 ricerche. Approfondisci al massimo 4 storie.
+- Giro delle 7:18: al massimo circa 48 pagine aperte e 20 ricerche, compresi i calendari dell'agenda. Approfondisci al massimo 13 storie, tra nuove e aggiornate, le più importanti, tenendo i minimi di SEZIONI E CRONACA.
+- L'edizione del mattino deve sembrare un giornale di oggi: al giro delle 7:18 almeno 4 storie nuove (firstSeen di oggi), prese dalle notizie della notte e della sera prima che non sono ancora storie; al giro delle 13:18 almeno 2. Aggiornare le storie di ieri non basta. Se le prime pagine non danno davvero abbastanza notizie nuove di rilievo, scrivilo nella risposta finale.
+- Giro delle 13:18: al massimo circa 26 pagine aperte e 10 ricerche. Approfondisci al massimo 7 storie.
 - Gli articoli delle storie live che ancora non ce l'hanno (vedi ARTICOLO) si scrivono a ogni giro e non contano nei limiti qui sopra: per ognuna al massimo 2 pagine in più.
 - Se nelle prime pagine non c'è nessuna novità rilevante e le storie live sono almeno 10, aggiorna solo Mercati, Agenda e brevi (o niente, se non è cambiato nulla) e chiudi; il riepilogo si scrive comunque (punto 8 bis).
 - Fra le 23:00 e le 7:00 e nel weekend i mercati europei e americani sono chiusi: non cercare dati di Borsa, aggiorna solo le cripto se trovi un articolo datato.
@@ -135,6 +136,7 @@ PROCEDURA
    - impact "alto" per decisioni e verbali di banche centrali, inflazione, mercato del lavoro, PIL e PMI delle grandi economie; "medio" per produzione industriale, vendite al dettaglio, scorte di petrolio, fiducia; "basso" per il resto. Nei giri successivi riempi actual quando il dato è uscito. Un nuovo giorno sostituisce del tutto l'agenda del giorno prima.
    - Un giorno feriale con meno di 3 voci è quasi sempre un'agenda incompleta: prima di scrivere cerca ancora, con una ricerca «calendario macro <giorno>» o con i calendari ufficiali.
 8. Scrivi i file del database. Riscrivendo un documento che esiste già tieni tutti i campi che c'erano, così non perdi campi che non conosci. Rank 1..N alle tue storie live (quelle con scope "paese" tengono il loro). Subito prima di scrivere rileggi l'ora con il comando del punto 1: è quella da scrivere in updated, history.at e asOf, mai un'ora stimata o più avanti. Controlla:
+   - ogni storia nuova o aggiornata in questo giro ha la sua immagine: figure (economia, mercati e tecnologia, quando c'è un numero che la riassume) oppure photo (tutte le altre, e anche quelle senza un numero). Per photo, se non c'è un edificio o un luogo preciso scegli la città o la regione dove succede il fatto: la voce di Wikipedia di una città ha sempre una foto. Mai una persona;
    - rank è un numero intero;
    - firstSeen, updated, history.at, asOf e lastRun hanno il fuso;
    - in ogni storia c'è una sola voce per testata e nessuna prima pagina tra le fonti;

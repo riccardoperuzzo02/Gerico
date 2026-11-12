@@ -1,7 +1,7 @@
 name: Redazione
 
 # I giri della redazione di GERICO, senza chat su Claude: notizie alle 7:18 e alle 13:18, i paesi (Stati Uniti, Regno
-# Unito, Francia, Germania, Spagna) alle 9:47, chiusure delle Borse europee alle 18:15 dei giorni feriali; i titoli da
+# Unito, Francia, Germania, Spagna) alle 9:47, chiusure delle Borse europee alle 18:45 dei giorni feriali (e alle 19:30 se alle 18:45 non c'erano ancora); i titoli da
 # seguire restano spenti finché non arriva l'ok della compliance.
 # Claude Code usa l'abbonamento Claude di Riccardo (segreto CLAUDE_CODE_OAUTH_TOKEN, creato con `claude setup-token`),
 # legge le testate e scrive il database in redazione/db; poi scripts/redazione.py lo copia in site/data con gli
@@ -19,8 +19,8 @@ on:
     - cron: "57 8 * * *"      # paesi 9:47 (ora solare)
     - cron: "28 11 * * *"     # notizie 13:18 (ora legale)
     - cron: "28 12 * * *"     # notizie 13:18 (ora solare)
-    - cron: "25 16 * * 1-5"   # chiusure 18:15 (ora legale)
-    - cron: "25 17 * * 1-5"   # chiusure 18:15 (ora solare)
+    - cron: "55 16 * * 1-5"   # chiusure 18:45 (ora legale)
+    - cron: "55 17 * * 1-5"   # chiusure 18:45 (ora solare)
   workflow_dispatch:
     inputs:
       giro:

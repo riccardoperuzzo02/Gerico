@@ -26,7 +26,9 @@ FONTI
   Spagna: RTVE (https://www.rtve.es/noticias/), El Mundo (https://www.elmundo.es/espana.html), 20minutos (https://www.20minutos.es/nacional/).
   Non si aprono: bbc.com, theguardian.com, apnews.com, npr.org, nytimes.com, lemonde.fr, elpais.com, dw.com, cnn.com. Non insistere.
 - Ogni storia nuova ha almeno due fonti indipendenti: l'articolo di una testata nazionale del paese e un altro articolo di oggi o di ieri (un'altra testata del paese, un'agenzia, una testata italiana o internazionale). Due testate che riprendono la stessa agenzia valgono una fonte sola.
-- Se hai letto per intero un solo articolo e il secondo non si apre, la storia esce lo stesso quando un'altra testata del paese dà lo stesso fatto, oggi, nel titolo di una sua breve (site/data/paesi/<SIGLA>.json): mettila tra le fonti con il suo url e angle «conferma il fatto nel titolo». In quel caso l'articolo racconta solo quello che dice la fonte letta, attribuito («secondo CBS News»), è breve (150-250 parole) e in open dici cosa resta da verificare. Mai una storia da soli titoli.
+- Quello che le testate del paese hanno scritto oggi lo trovi anche in redazione/feed/<SIGLA>.json (da leggere con Read): per ogni voce source, title, desc (il testo che la testata mette nel suo feed sotto il titolo), url e at, di tutte le testate e senza togliere i doppioni. Sono parole delle testate, quindi sono fonti: quando gli articoli non si aprono, una storia si può scrivere da lì.
+  - Con un articolo letto per intero e una seconda testata che dà lo stesso fatto nel feed: la storia esce, con le due fonti (per la seconda url della voce e angle con quello che aggiunge il suo testo).
+  - Senza nessun articolo aperto: la storia esce solo se almeno due testate diverse danno lo stesso fatto nel feed e almeno una ha un desc di qualche riga. L'articolo è breve (120-220 parole), dice solo quello che c'è in quei titoli e in quei testi, attribuito («secondo Tagesschau», «scrive Der Spiegel»), e in open dici cosa resta da verificare. Mai una storia da un titolo solo.
 - Un paese non resta senza storie se le sue brevi di oggi hanno notizie nazionali di rilievo: prima di scrivere «0 nuove» prova gli articoli dai loro url, poi le prime pagine, poi la ricerca con le parole del titolo.
 - Controlla la data di ogni articolo: la ricerca restituisce spesso pezzi vecchi con titoli simili. Ogni fatto e ogni numero viene da un articolo letto in questo giro, mai da quello che sai a memoria.
 
@@ -52,7 +54,7 @@ Ogni giro consuma crediti Claude: al massimo circa 42 pagine aperte (prime pagin
 
 PROCEDURA
 1. Controlla data e ora con il comando `TZ=Europe/Rome date -Iseconds`. Ogni orario che scrivi è l'ora vera del momento in cui scrivi: rileggila con lo stesso comando, non stimarla. Due giri non partono mai insieme: non serve segnare che stai lavorando.
-2. Leggi site/data/paesi/US.json, GB.json, FR.json, DE.json e ES.json.
+2. Leggi redazione/feed/US.json, GB.json, FR.json, DE.json e ES.json (i titoli e i testi di oggi di ogni testata; se un file non c'è, usa site/data/paesi/<SIGLA>.json, che ha solo i titoli).
 3. Trova le storie live con il comando `python3 scripts/redazione.py live` e leggi i loro file. Quelle con scope "paese" sono tue; le altre ti servono per non ripetere notizie già raccontate, e non le tocchi.
 4. Per ogni paese, nell'ordine Stati Uniti, Regno Unito, Francia, Germania, Spagna: aggiorna o archivia le tue storie live (vedi SCELTA), poi scegli le notizie nuove e scrivile (vedi FONTI e ARTICOLO). Rank nel blocco del paese, dalla più importante.
 5. Scrivi i file: le storie nuove sono file nuovi; riscrivendo una storia che esiste già tieni tutti i campi che c'erano. Subito prima di scrivere rileggi l'ora con il comando del punto 1: è quella da scrivere in firstSeen, updated e history.at. Prima di scrivere controlla:

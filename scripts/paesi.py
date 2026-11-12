@@ -144,7 +144,7 @@ def leggi_feed(data):
         t = nome(el.tag)
         if t not in ("item", "entry"):
             continue
-        titolo, link, quando, cat = "", "", None, []
+        titolo, link, quando, cat, desc = "", "", None, [], ""
         for c in el:
             n = nome(c.tag)
             if n == "title":
@@ -157,13 +157,16 @@ def leggi_feed(data):
                     link = link or testo_di(c)
             elif n in ("pubdate", "published", "updated", "date", "issued") and quando is None:
                 quando = data_di(testo_di(c))
+            elif n in ("description", "summary", "encoded", "content") and len(desc) < 80:
+                # il testo che la testata mette nel feed sotto il titolo: serve alla redazione dei paesi
+                desc = pulisci(testo_di(c)) or desc
             elif n == "category":
                 cat.append((c.get("term") or testo_di(c) or "").lower())
             elif n == "guid" and not link and (c.get("isPermaLink") or "true").lower() != "false" and testo_di(c).startswith("http"):
                 link = testo_di(c)
         link = link_pulito(link)
         if titolo and link:
-            voci.append({"title": titolo[:220], "url": link, "at": quando, "cat": cat})
+            voci.append({"title": titolo[:220], "url": link, "at": quando, "cat": cat, "desc": desc[:900]})
     return voci
 
 
@@ -288,6 +291,7 @@ def main(cartella):
 
     limite = ADESSO - timedelta(hours=ORE)
     risultati, da_tradurre = {}, {"it": {}, "en": {}}
+    letture = {}   # per la redazione dei paesi: tutte le voci di oggi, con il testo del feed, anche i doppioni tra testate
     for k, p in fonti.items():
         vecchie = {v["url"]: v for v in (prima[k].get("items") or []) if isinstance(v, dict) and v.get("url")}
         tenute = []
@@ -306,6 +310,9 @@ def main(cartella):
                     continue
                 tenute.append({"title": v["title"], "source": f["nome"], "url": v["url"],
                                "at": quando.isoformat(timespec="seconds"), "_lingua": f.get("lingua", "")})
+                if p.get("livello") == 1 and k != "IT":
+                    letture.setdefault(k, []).append({"source": f["nome"], "title": v["title"], "desc": v.get("desc") or "", "url": v["url"],
+                                                      "at": quando.isoformat(timespec="seconds")})
         # le più nuove prima; niente doppioni (stesso link o stesso fatto); al massimo MAX_TESTATA per testata
         tenute.sort(key=lambda v: v["at"], reverse=True)
         scelte, per_testata = [], {}
@@ -359,6 +366,15 @@ def main(cartella):
     for s in stato:
         if not s["ok"]:
             print(f"  {s['paese']} {s['testata']}: {s['errore']}")
+
+    # per la redazione dei paesi (redazione/paesi.md): le voci di oggi di ogni testata con il testo del feed. Non va sul sito
+    cart = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "redazione", "feed")
+    os.makedirs(cart, exist_ok=True)
+    for k, voci in letture.items():
+        voci.sort(key=lambda v: v["at"], reverse=True)
+        with open(os.path.join(cart, k + ".json"), "w", encoding="utf-8") as fo:
+            json.dump({"code": k, "asOf": ADESSO.isoformat(timespec="seconds"), "items": voci[:90]}, fo, ensure_ascii=False, indent=1)
+            fo.write("\n")
 
 
 if __name__ == "__main__":

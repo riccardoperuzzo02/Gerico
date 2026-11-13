@@ -1,18 +1,88 @@
 {
  "code": "DE",
- "asOf": "2026-11-13T15:17:38+00:00",
+ "asOf": "2026-11-13T17:17:34+00:00",
  "items": [
   {
    "source": "Die Zeit",
-   "title": "Thomas Berthold: AfD nominiert Ex-Fußballprofi Berthold für Bundespräsidentenwahl",
-   "desc": "Die AfD will offenbar Thomas Berthold für das Amt des Bundespräsidenten nominieren. Der frühere Fußball-Weltmeister wurde während der Corona-Pandemie politisch aktiv.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/afd-bundespraesident-kandidat-thomas-berthold",
-   "at": "2026-11-13T15:09:10+00:00"
+   "title": "Bundeshaushalt: Die Stromsteuer ist noch das geringste Problem",
+   "desc": "Nach dem Haushaltskompromiss ist der Finanzminister genervt und der Kanzler immer noch nicht zufrieden. Die Koalition verweigert sich den finanzpolitischen Realitäten.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-stromsteuer-bundesregierung-friedrich-merz-finanzpolitik",
+   "at": "2026-11-13T16:59:47+00:00"
   },
   {
    "source": "Die Zeit",
-   "title": "Issa Remmo: Kritik an Besuch von Clan-Chef Remmo bei Diskussion im Europaparlament",
-   "desc": "Überraschend taucht der Berliner Clan-Chef Issa Remmo bei einer Veranstaltung im Europaparlament auf. Ein Linke-Politiker fordert Aufklärung von EVP-Fraktionschef Weber.",
+   "title": "Fridays for Future: Demonstranten fordern mehr Geld für internationalen Klimaschutz",
+   "desc": "Wer die Klimakrise verursacht, muss auch für ihre Folgen zahlen: Für Forderungen nach mehr Klimaschutz gingen in Berlin laut Polizei rund 700 Menschen auf die Straße.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/fridays-for-future-demo-berlin-cop31-klimawandel-deutschland",
+   "at": "2026-11-13T16:47:35+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "AfD will Ex-Fußballprofi Berthold als Bundespräsidenten nominieren",
+   "desc": "Der ehemalige Fußballprofi Thomas Berthold soll nach ARD-Informationen für die AfD ins Rennen um das Amt des Bundespräsidenten gehen. Der Weltmeister von 1990 tat sich während der Corona-Pandemie als \"Querdenker\" hervor.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/berthold-afd-wahl-bundespraesident-100.html",
+   "at": "2026-11-13T16:37:14+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Friedrich Merz: EU-Regierungschefs unterstützen Merz’ Vorschlag zur Ukrainehilfe",
+   "desc": "Der Bundeskanzler will die Verabschiedung eines EU-Haushalts an eine gerechtere Verteilung der Ukrainehilfe koppeln. Die Premiers von Estland und Lettland stimmen ihm zu.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/friedrich-merz-ukraine-hilfen-eu-gipfel-dublin",
+   "at": "2026-11-13T16:20:15+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Störung bei Microsoft, Issa Rammo im EU-Parlament, Katherina Reiche plant Notfall-Gesetz für Gasmangel",
+   "desc": "Microsoft hat ein massives Problem, Millionen Mails blieben ungelesen. Clanboss Rammo tritt im EU-Parlament auf, und Katherina Reiche hat offenbar immer noch Schwierigkeiten mit ihrem Rollenwechsel. Das ist die Lage am Freitagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-stoerung-bei-microsoft-issa-rammo-im-eu-parlament-katherina-reiche-plant-notfall-gesetz-fuer-gasmangel-a-1c0b4764-61eb-438c-90aa-d262874a8fbf",
+   "at": "2026-11-13T16:15:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russische Behörden ermitteln wegen Explosion einer Autobombe in Moskau",
+   "desc": "Ein Ex-Regierungssprecher der Ukraine wurde in Moskau durch eine Autobombe verletzt. Berichten zufolge arbeitete er für den russischen Auslandsgeheimdienst. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-13T16:08:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt: Der nächste Kompromiss, der nächste Streit?",
+   "desc": "Der Haushaltskompromiss steht. Aber die CDU ist unzufrieden und lässt das Friedrich Merz spüren. Und: Mercedes prüft Werksschließungen in Deutschland.",
+   "url": "https://www.zeit.de/politik/2026-11/bundeshaushalt-cdu-stromsteuersenkung-friedrich-merz-nachrichtenpodcast",
+   "at": "2026-11-13T15:57:24+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Elterngeld-Reform: Kabinett beschließt Veränderungen beim Elterngeld",
+   "desc": "Das Elterngeld soll weiterhin bis zu 14 Monate lang gezahlt werden. Das Bundeskabinett billigte einen überarbeiteten Referentenentwurf des Familienministeriums.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/elterngeld-reform-bezugsdauer-vaeter-einkommen-gxe",
+   "at": "2026-11-13T15:54:29+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Kommentar zum Haushalt: Die Koalition geht auf dem Zahnfleisch",
+   "desc": "Der Bundeshaushalt für das kommende Jahr steht. Doch die Einigung ist ohne Richtung, ohne Ambition und ohne Vision, findet Sabine Henkel. Union und SPD fehlt nicht nur Geld, sondern vor allem Mut und eine Strategie.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-koalition-geht-auf-zahnfleisch-100.html",
+   "at": "2026-11-13T15:40:10+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Thomas Berthold: AfD will wohl Fußballweltmeister bei Bundespräsidentinnen-Wahl aufstellen",
+   "desc": "Ilse Aigner dürfte als kommende Bundespräsidentin so gut wie feststehen. Die AfD will trotzdem einen Gegenkandidaten ins Rennen schicken. Und scheint nun fündig geworden.",
+   "url": "https://www.spiegel.de/politik/deutschland/thomas-berthold-afd-will-wohl-fussballweltmeister-bei-bundespraesidentinnen-wahl-aufstellen-a-87d7aa66-c8f6-40d7-80eb-dd5af14f5dd7",
+   "at": "2026-11-13T15:35:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Thomas Berthold: AfD nominiert Ex-Fußballprofi Berthold für Bundespräsidentenwahl",
+   "desc": "Die AfD will offenbar Thomas Berthold für das Amt des Bundespräsidenten nominieren. Der frühere Fußball-Weltmeister wurde während der Coronapandemie politisch aktiv.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/afd-bundespraesident-kandidat-thomas-berthold",
+   "at": "2026-11-13T15:27:21+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Issa Remmo: Kritik an Besuch von Clan-Chef Rammo bei Diskussion im Europaparlament",
+   "desc": "Überraschend taucht der Berliner Clan-Chef Issa Rammo bei einer Veranstaltung im Europaparlament auf. Ein Linken-Politiker fordert Aufklärung von EVP-Fraktionschef Weber.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/issa-remmo-europaparlament-hassen-chalghoumi-celine-imart-clankriminalitaet",
    "at": "2026-11-13T15:07:48+00:00"
   },
@@ -36,13 +106,6 @@
    "desc": "Bei den aktuellen Debatten kommt das Klima chronisch zu kurz: Protestikonen drehen ab, und neue Linke kümmern sich erst einmal um »richtige« Probleme. Was für ein Irrtum!",
    "url": "https://www.zeit.de/2026-11/klimapolitik-klimastreik-fridays-for-future-greta-thunberg-linke",
    "at": "2026-11-13T14:53:19+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Elterngeld-Reform: Kabinett beschließt Veränderungen beim Elterngeld",
-   "desc": "Das Elterngeld soll doch weiterhin bis zu 14 Monate lang gezahlt werden. Das Bundeskabinett billigte einen überarbeiteten Referentenentwurf des Familienministeriums.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/elterngeld-reform-bezugsdauer-vaeter-einkommen-gxe",
-   "at": "2026-11-13T14:30:55+00:00"
   },
   {
    "source": "Die Zeit",
@@ -94,27 +157,6 @@
    "at": "2026-11-13T13:09:11+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Scott Colom: Er schreibt Geschichte",
-   "desc": "Der Bundesstaat Mississippi bekommt seinen ersten Schwarzen Senator seit 145 Jahren: Warum Scott Coloms Wahlsieg wichtiger ist als jeder andere Erfolg der Demokraten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/scott-colom-mississippi-us-senat-demokraten",
-   "at": "2026-11-13T13:02:54+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Geheimdienstreform: Bundestag beschließt weitreichende Geheimdienstreform",
-   "desc": "Die deutschen Dienste dürfen künftig operativ tätig werden – und beispielsweise hacken. Die Linken warnen vor einem »schlüsselfertigen Überwachungsapparat« für die AfD.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundestag-beschliesst-weitreichende-geheimdienstreform",
-   "at": "2026-11-13T12:56:25+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Staatsanwaltschaft Hannover: Staatsanwaltschaft beantragt Aufhebung von Steffen Krachs Immunität",
-   "desc": "Gegen den Berliner SPD-Chef war bereits vor der Abgeordnetenhauswahl ermittelt worden. Um weitere Ermittlungen zu ermöglichen, soll Krachs Immunität aufgehoben werden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/steffen-krach-spd-berlin-immunitaet-ermittlungen-hannover-gxe",
-   "at": "2026-11-13T12:22:53+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Bundeshaushalt: Die fetten Jahre sind vorbei - Kommentar",
    "desc": "Mit Ach und Krach haben sich die Haushälter auf einen Bundesetat geeinigt. Kanzler Merz sollte sich jetzt als harter Sparer profilieren – und nicht die Stromsteuer senken.",
@@ -129,13 +171,6 @@
    "at": "2026-11-13T11:43:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Jugendproteste: »Es gibt eine Entkopplung junger Menschen von der Politik«",
-   "desc": "Europaweit protestiert die Jugend – für mehr Mitsprache und gegen eine Politik, die ihr scheinbar wenig Perspektiven bietet. Beginnt ein neuer Generationenkonflikt?",
-   "url": "https://www.zeit.de/politik/2026-11/jugendproteste-europa-steffen-mau-politikpodcast",
-   "at": "2026-11-13T11:37:54+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Ilse Aigner, Angela Merkel, Ursula von der Leyen: Was konservative Frauen besser können – Kolumne",
    "desc": "Bundeskanzlerin, Bundespräsidentin, EU-Kommissionschefin: Es ist kein Zufall, dass es immer Frauen aus der Union sind, die es nach ganz oben schaffen.",
@@ -148,13 +183,6 @@
    "desc": "Der Linken wurde eine Nähe zur Organisierten Kriminalität vorgeworfen, weil Issa Rammo auf einer Wahlparty auftauchte. In Brüssel zeigt sich der Clanchef nun bei den Konservativen – und attackiert die Linken. Was steckt dahinter?",
    "url": "https://www.spiegel.de/politik/deutschland/veranstaltung-der-cdu-europapartei-und-ploetzlich-taucht-clanchef-issa-rammo-bei-der-evp-auf-a-aa11decf-c46d-414e-8c8d-421a13ae55f2",
    "at": "2026-11-13T10:59:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nvidia-Skandal: China warnt USA vor neuen Exportbeschränkungen für Halbleiter",
-   "desc": "Nach dem Skandal um Nvidia-Chef Huang befürchtet China Konsequenzen für Halbleiterimporte. Das Unternehmen hat einen hohen Marktanteil auf dem chinesischen Chipmarkt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/nvidia-skandal-jensen-huang-alice-huang-china-gxe",
-   "at": "2026-11-13T10:23:36+00:00"
   },
   {
    "source": "Tagesschau",
@@ -204,20 +232,6 @@
    "desc": "Friedrich Merz hat sich festgelegt: Die Senkung der Stromsteuer für alle soll kommen. Doch es fehlt die Finanzierung, die SPD lässt den Kanzler auflaufen. In der eigenen Partei wachsen schon wieder Wut und Frust über den Chef.",
    "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-kann-ihr-kanzler-gut-verhandeln-eher-nicht-finden-sie-in-der-cdu-a-30ef26a9-93f9-4714-84ad-8f353e28d4fc",
    "at": "2026-11-12T19:02:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Nvidia-Chef Jensen Huang tritt zurück, Startchancengesetz für Kitakinder, Hype um Grand Theft Auto 6",
-   "desc": "Der Nvidia-Chef tritt zurück. Der Bundestag beschließt ein wichtiges Kitagesetz. Und seit heute kann man das gehypteste Videospiel aller Zeiten kaufen, aber noch nicht zocken. Das ist die Lage am Donnerstagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-nvidia-chef-jensen-huang-tritt-zurueck-startchancengesetz-fuer-kitakinder-hype-um-grand-theft-auto-6-a-0b48fa44-e908-4c2c-a96b-b8e54d42e674",
-   "at": "2026-11-12T16:51:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "\"Pflege ganz aktiv\" schafft mehr Freiraum in der Pflege",
-   "desc": "Ein Modellprojekt in Rheinland-Pfalz ermöglicht ambulante Pflege nach individuellem Zeitbudget statt starrer Vorgaben. Erste Ergebnisse sind vielversprechend. Könnte so die Zukunft der Pflege aussehen? Von Claudia Hiller.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/pflege-neues-modell-ambulant-100.html",
-   "at": "2026-11-12T15:46:43+00:00"
   }
  ]
 }

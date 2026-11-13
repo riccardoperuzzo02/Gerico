@@ -843,13 +843,51 @@ G.page("terminal", async function (P) {
     $("p-tassi").hidden = all.length > 0 && all.every(treasury);
   }
 
-  // una riga dell'agenda: ora, valuta, evento con i numeri sotto, impatto
+  // una riga dell'agenda: ora, valuta, evento con i numeri sotto, impatto. Un clic apre la spiegazione dell'evento (che
+  // cosa indica, che effetti ha di solito) e il risultato confrontato con le attese; gli aperti si ricordano tra un aggiornamento e l'altro
+  const agOpen = new Set();
+  const agKey = (o) => [o.time || "", o.cur || "", o.ev || ""].join("|");
+  let agN = 0;
   function agendaRow(o) {
     const cls = [o.past ? "past" : "", o.imp === "alto" ? "hi" : "", o.next ? "next" + (o.soon ? " soon" : "") : ""].filter(Boolean).join(" ");
     const IMP = G.en ? { alto: "High", medio: "Medium", basso: "Low", festivo: "Holiday" } : {};
-    return '<li' + (cls ? ' class="' + cls + '"' : "") + '><span class="tm">' + esc(o.time || "—") + "</span><span>" + esc(o.cur || "") +
-      '</span><span class="ev">' + esc(o.ev) + (o.nums ? "<small>" + esc(o.nums) + "</small>" : "") + '</span><span class="im ' + (o.imp || "") + '">' + esc(IMP[o.imp] || G.cap(o.imp || "")) + "</span></li>";
+    const info = G.eventoInfo(o.ev, o.cur), v = G.verdetto(o.act, o.exp, o.prev), vt = G.verdettoTesto(v);
+    const key = agKey(o), open = agOpen.has(key), id = "ag-d" + (agN++);
+    const lbl = o.fcl === "fc" ? G.L("previsione ", "forecast ") : G.L("atteso ", "expected ");
+    const nums = [o.exp ? lbl + o.exp : "", o.prev ? G.L("precedente ", "previous ") + o.prev : ""].filter(Boolean).join(" · ");
+    const small = nums || o.act ? "<small>" + esc(nums) + (o.act ? (nums ? " · " : "") + '<b class="ris' + (v ? " ris-" + v.k : "") + '">' + esc(G.L("effettivo ", "actual ") + o.act + (vt ? " (" + vt + ")" : "")) + "</b>" : "") + "</small>" : "";
+    // il blocco dei numeri: solo per gli eventi che ne hanno (un discorso o una festività no)
+    const hasNums = !!(o.exp || o.prev || o.act);
+    const cell = (k, val, strong) => '<div><span>' + k + "</span><b" + (strong ? ' class="ris' + (v ? " ris-" + v.k : "") + '"' : "") + ">" + (val ? esc(val) : "—") + "</b></div>";
+    let ris = "";
+    if (hasNums || (o.past && info.kind !== "discorso" && info.kind !== "festivo" && info.kind !== "verbali")) {
+      let st = "";
+      if (o.act) {
+        st = vt ? G.L("Risultato: ", "Result: ") + vt + "." : "";
+        if (v && v.rif === "att") st += " " + (v.k === "su" ? info.s : v.k === "giu" ? info.g : G.L("Quando il dato è in linea, la reazione di solito è contenuta, perché era già nei prezzi.", "When the figure is in line, the reaction is usually muted because it was already priced in."));
+      } else if (o.past) st = G.L("Il risultato non è ancora disponibile nel Terminal.", "The result is not in the Terminal yet.");
+      else if (o.time) st = G.L("In uscita alle ", "Due at ") + o.time + G.L(" (ora italiana).", " (Italian time).");
+      ris = '<div class="ev-ris">' + cell(o.fcl === "fc" ? G.L("Previsione", "Forecast") : G.L("Atteso", "Expected"), o.exp) + cell(G.L("Precedente", "Previous"), o.prev) + cell(G.L("Effettivo", "Actual"), o.act, true) + "</div>" + (st ? '<p class="ev-st">' + esc(st.trim()) + "</p>" : "");
+    }
+    const det = '<div class="ev-det" id="' + id + '" role="region" aria-label="' + esc(o.ev) + '"' + (open ? "" : " hidden") + ">" + ris +
+      '<p><b>' + G.L("Cosa indica", "What it measures") + "</b>" + esc(info.c) + "</p>" +
+      '<p><b>' + G.L("Perché conta", "Why it matters") + "</b>" + esc(info.e) + "</p>" +
+      (info.s ? '<p><b>' + G.L("Se esce sopra le attese", "If it comes in above expectations") + "</b>" + esc(info.s) + "</p>" : "") +
+      (info.g ? '<p><b>' + G.L("Se esce sotto le attese", "If it comes in below expectations") + "</b>" + esc(info.g) + "</p>" : "") +
+      (info.cosa ? '<p><b>' + G.L("Cosa può muoversi", "What may move") + "</b>" + esc(info.cosa) + "</p>" : "") + "</div>";
+    return '<li' + (cls ? ' class="' + cls + '"' : "") + ' data-k="' + esc(key) + '"><span class="tm">' + esc(o.time || "—") + "</span><span>" + esc(o.cur || "") +
+      '</span><span class="ev"><button type="button" class="ev-b" aria-expanded="' + open + '" aria-controls="' + id + '"><span class="ev-t">' + esc(o.ev) + "</span>" + small + '</button></span><span class="im ' + (o.imp || "") + '">' + esc(IMP[o.imp] || G.cap(o.imp || "")) + "</span>" + det + "</li>";
   }
+  $("ag").addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest(".ev-b");
+    if (!b) return;
+    const li = b.closest("li"), d = li && li.querySelector(".ev-det");
+    if (!d) return;
+    const open = d.hidden;
+    d.hidden = !open;
+    b.setAttribute("aria-expanded", String(open));
+    open ? agOpen.add(li.dataset.k) : agOpen.delete(li.dataset.k);
+  });
   // Forex Factory: oggi impatto alto e medio e festività; dei giorni dopo solo l'impatto alto
   const FF_TODAY = { alto: 1, medio: 1, festivo: 1 };
   const hmMin = (t) => { const m = /^(\d{1,2}):(\d{2})$/.exec(t || ""); return m ? Number(m[1]) * 60 + Number(m[2]) : null; };
@@ -864,14 +902,14 @@ G.page("terminal", async function (P) {
     // nelle due (stessa valuta, orario entro 5 minuti) compare una volta, con le parole di GERICO e i numeri che mancano
     const rows = [];
     if (today) ag.items.forEach((it) => rows.push({ time: it.time || "", cur: it.currency || "", ev: it.event,
-      nums: [it.expected ? G.L("atteso ", "expected ") + G.numText(it.expected) : "", it.previous ? G.L("precedente ", "previous ") + G.numText(it.previous) : "", it.actual ? G.L("effettivo ", "actual ") + G.numText(it.actual) : ""].filter(Boolean).join(" · "),
+      exp: it.expected ? G.numText(it.expected) : "", prev: it.previous ? G.numText(it.previous) : "", act: it.actual ? G.numText(it.actual) : "",
       imp: ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "" }));
     const own = rows.length;
     ffToday.forEach((it) => {
-      const m = hmMin(it.time), nums = [it.forecast ? G.L("previsione ", "forecast ") + it.forecast : "", it.previous ? G.L("precedente ", "previous ") + it.previous : ""].filter(Boolean).join(" · ");
+      const m = hmMin(it.time);
       const twin = m === null ? null : rows.slice(0, own).find((r) => r.cur === it.currency && hmMin(r.time) !== null && Math.abs(hmMin(r.time) - m) <= 5);
-      if (twin) { if (!twin.nums) twin.nums = nums; if (it.impact === "alto") twin.imp = "alto"; return; }
-      rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, nums, imp: it.impact });
+      if (twin) { if (!twin.exp && !twin.prev) { twin.exp = it.forecast || ""; twin.prev = it.previous || ""; twin.fcl = "fc"; } if (it.impact === "alto") twin.imp = "alto"; return; }
+      rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, exp: it.forecast || "", prev: it.previous || "", fcl: "fc", imp: it.impact });
     });
     rows.sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     // il prossimo evento ad alto impatto di oggi (si aggiorna ogni 30 secondi)
@@ -890,24 +928,28 @@ G.page("terminal", async function (P) {
     const warn = hasAg && !today ? G.L("L'agenda di GERICO di oggi non è ancora arrivata.", "GERICO's calendar for today has not arrived yet.")
       : !ffOk && wd >= 1 && wd <= 5 && own < 3 ? G.L("Agenda forse incompleta: controlla gli orari dei dati ad alto impatto su un calendario economico.", "The calendar may be incomplete: check the times of high-impact releases on an economic calendar.") : "";
     let html = warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "";
+    // quanti dei dati importanti già usciti hanno il risultato, e come si apre la spiegazione
+    const done = rows.filter((r) => (r.imp === "alto" || r.imp === "medio") && r.time && r.time < now && (r.exp || r.prev || r.act));
+    const withAct = done.filter((r) => r.act).length;
+    if (rows.length) html += '<p class="ag-sum">' + (done.length ? G.L("Usciti oggi: ", "Out today: ") + "<b>" + done.length + "</b>" + G.L(" dati ad alto o medio impatto, ", " high- or medium-impact releases, ") + "<b>" + withAct + "</b>" + G.L(" con il risultato. ", " with the result. ") : "") + G.L("Tocca un evento per capire cosa indica e che effetti ha.", "Tap an event to see what it measures and how it can affect markets.") + "</p>";
+    agN = 0;
     html += rows.length ? '<ol class="t-agenda">' + rows.map((r) => agendaRow(Object.assign({}, r, { past: !!r.time && r.time < now, next: r === next, soon }))).join("") + "</ol>"
       : '<p class="t-na">' + (ffOk || today ? G.L("Oggi nessun evento ad alto o medio impatto.", "No high- or medium-impact events today.") : G.L("L'agenda di oggi non è ancora disponibile.", "Today's calendar is not available yet.")) + "</p>";
     if (ffWeek.length) {
-      const nums = (it) => [it.forecast ? G.L("previsione ", "forecast ") + it.forecast : "", it.previous ? G.L("precedente ", "previous ") + it.previous : ""].filter(Boolean).join(" · ");
       // la tendina dei giorni dopo resta aperta o chiusa come l'ha lasciata chi legge, anche quando l'agenda si aggiorna
       const open = !!document.querySelector("#ag .t-ff-week[open]");
       let last = "";
       const week = ffWeek.map((it) => {
         let day = "";
         if (it.date !== last) { last = it.date; day = '<li class="t-day">' + esc(G.cap(G.weekday(it.date + "T12:00:00Z")) + " " + G.dayOnly(it.date)) + "</li>"; }
-        return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, nums: nums(it), imp: it.impact });
+        return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, exp: it.forecast || "", prev: it.previous || "", fcl: "fc", imp: it.impact });
       }).join("");
       html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
     }
     // da dove viene: una nota sola per le due fonti
     const srcs = (today ? (ag.sources || []).filter((x) => x && x.url).slice(0, 2).map((x) => ext(x.url, String(x.name || "").split(",")[0])) : [])
       .concat(ffOk ? [ext("https://www.forexfactory.com/calendar", "Forex Factory") + G.L(" (letto ", " (read ") + esc(G.when(ff.asOf)) + ")"] : []);
-    html += '<p class="t-note">' + (srcs.length ? G.L("Fonti: ", "Sources: ") + srcs.join(", ") + ". " : "") + G.L("Orari in ora italiana", "Times are Italian time") + (ffOk ? G.L("; da Forex Factory solo impatto alto e medio", "; from Forex Factory only high and medium impact") : "") + "." +
+    html += '<p class="t-note">' + (srcs.length ? G.L("Fonti: ", "Sources: ") + srcs.join(", ") + ". " : "") + G.L("Orari in ora italiana", "Times are Italian time") + (ffOk ? G.L("; da Forex Factory solo impatto alto e medio", "; from Forex Factory only high and medium impact") : "") + "." + G.L(" Le spiegazioni dicono come i mercati leggono di solito questi dati: non sono previsioni né consigli.", " The explanations say how markets usually read these releases: they are not forecasts or advice.") +
       (today && ag.note ? " " + esc(ag.note) : "") + "</p>";
     $("ag").innerHTML = html;
   }

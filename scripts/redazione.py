@@ -2,7 +2,7 @@
 """Aiuti per i giri della redazione su GitHub Actions (workflow «Redazione»).
 
 Uso:
-    python3 scripts/redazione.py giro             quale giro fare adesso (notizie, paesi, chiusure, titoli, prova):
+    python3 scripts/redazione.py giro             quale giro fare adesso (notizie, paesi, chiusure, agenda, titoli, prova):
                                                   righe giro=, variante=, modello=, turni=
     python3 scripts/redazione.py live             le storie live del database: rank, id, ultimo aggiornamento, titolo
     python3 scripts/redazione.py controlla        controlla il database con le regole del punto 8 del giro delle notizie
@@ -43,6 +43,8 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", 
 GIRI = {
     "notizie": {"ore": {7: "7:18", 13: "13:18"}, "modello": "claude-sonnet-5-5", "turni": 220},
     "chiusure": {"ore": {18: "18:45"}, "modello": "claude-sonnet-5-5", "turni": 40},
+    # i risultati dei dati usciti (actual) nell'agenda del Terminal: dopo i dati europei e dopo quelli americani delle 14:30
+    "agenda": {"ore": {12: "12:10", 15: "15:40"}, "modello": "claude-sonnet-5-5", "turni": 40},
     "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 160},
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
@@ -53,6 +55,7 @@ GIRI = {
 CRON = {
     "28 5 * * *": "notizie", "28 6 * * *": "notizie", "28 11 * * *": "notizie", "28 12 * * *": "notizie",
     "55 16 * * 1-5": "chiusure", "55 17 * * 1-5": "chiusure",
+    "20 10 * * 1-5": "agenda", "20 11 * * 1-5": "agenda", "50 13 * * 1-5": "agenda", "50 14 * * 1-5": "agenda",
     "57 7 * * *": "paesi", "57 8 * * *": "paesi",
     "2 5 * * 1-5": "titoli", "2 6 * * 1-5": "titoli",
 }
@@ -108,7 +111,8 @@ def stories(db=DB):
 
 RITARDO_MAX = 4   # ore: un cron di GitHub che parte più tardi di così si salta
 # dove ogni giro segna in meta/status che è stato fatto
-SEGNO = {"notizie": ("lastRun",), "paesi": ("paesiRun", "at"), "chiusure": ("marketsRun", "at")}
+SEGNO = {"notizie": ("lastRun",), "paesi": ("paesiRun", "at"), "chiusure": ("marketsRun", "at"),
+         "agenda": ("agendaRun", "at")}
 
 
 def stato_main():
@@ -193,6 +197,8 @@ def cmd_giro():
         voluta = os.environ.get("VARIANTE", "").strip()
         if giro == "notizie":
             variante = voluta if voluta in GIRI["notizie"]["ore"].values() else ("7:18" if now.hour < 11 else "13:18")
+        elif giro == "agenda":
+            variante = "12:10" if now.hour < 14 else "15:40"
         else:
             variante = next(iter(GIRI[giro]["ore"].values()), "")
     else:
@@ -522,6 +528,7 @@ def cmd_pubblica(giro):
     t = now_rome()
     on_site = any(f.startswith(SITE + "/") for f in files)
     msg = ((f"Notizie dei paesi del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}" if giro == "paesi"
+            else f"Risultati dell'agenda del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}" if giro == "agenda"
             else f"Edizione del {t.day} {MESI[t.month - 1]} alle {t:%H:%M}") if on_site
            else f"Database della redazione del {t.day}/{t.month} alle {t:%H:%M}")
     run(["git", "-c", "user.name=GERICO", "-c", "user.email=gerico@users.noreply.github.com",

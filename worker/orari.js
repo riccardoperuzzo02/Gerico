@@ -10,6 +10,8 @@ const ROMA = [
   { wf: "redazione.yml", ore: [[7, 18]], inputs: { giro: "notizie", variante: "7:18" } },
   { wf: "redazione.yml", ore: [[9, 47]], inputs: { giro: "paesi" } },
   { wf: "redazione.yml", ore: [[13, 18]], inputs: { giro: "notizie", variante: "13:18" } },
+  // i risultati dei dati usciti nell'agenda del Terminal: dopo i dati europei di mattina e dopo quelli americani delle 14:30
+  { wf: "redazione.yml", ore: [[12, 10], [15, 40]], giorni: FERIALI, inputs: { giro: "agenda" } },
   // alle 19:30 il giro riparte solo se alle 18:45 gli articoli di chiusura non c'erano ancora (lo decide redazione.py)
   { wf: "redazione.yml", ore: [[18, 45], [19, 30]], giorni: FERIALI, inputs: { giro: "chiusure" } }
 ];

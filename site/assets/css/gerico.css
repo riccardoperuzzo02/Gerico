@@ -2853,3 +2853,35 @@ html.nuova body.term #map-panel { border-top: 0; }
 .s-fonti span { font-size: 0.9375rem; color: var(--muted); }
 .s-apri { display: grid; gap: 10px; justify-items: start; margin: 34px 0 10px; }
 .s-apri span { font-size: 0.875rem; color: var(--muted); }
+
+/* Terminal, agenda: ogni evento si apre e spiega cosa indica, che effetti ha e com'è andato il risultato */
+.ag-sum { margin: 2px 0 6px; font-size: 0.8125rem; color: var(--t-ink-2); }
+.ag-sum b { color: var(--t-ink); }
+.t-agenda .ev-b { display: block; width: 100%; padding: 0; margin: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; position: relative; padding-right: 18px; }
+.t-agenda .ev-b::after { content: ""; position: absolute; right: 2px; top: 0.42em; width: 6px; height: 6px; border-right: 2px solid var(--t-ink-3); border-bottom: 2px solid var(--t-ink-3); transform: rotate(45deg); transition: transform var(--t-2, 0.2s) var(--ease, ease); }
+.t-agenda .ev-b[aria-expanded="true"]::after { transform: rotate(-135deg); top: 0.62em; }
+.t-agenda .ev-b:hover .ev-t { text-decoration: underline; text-decoration-color: var(--t-ink-3); text-underline-offset: 3px; }
+.t-agenda .ev-b:focus-visible { outline: 2px solid var(--t-accent); outline-offset: 3px; border-radius: 4px; }
+.t-agenda .ev small .ris { color: var(--t-ink); font-weight: 700; }
+.t-agenda li.past .ev small .ris { color: var(--t-ink-2); }
+.t-agenda .ev-det { grid-column: 1 / -1; margin: 6px 0 2px; padding: 12px 14px; border: 1px solid var(--hair); border-radius: var(--r, 6px); background: rgba(255, 255, 255, 0.03); font-size: 0.875rem; line-height: 1.5; color: var(--t-ink-2); cursor: default; }
+.t-agenda li.past .ev-det { color: var(--t-ink-2); }
+.t-agenda .ev-det[hidden] { display: none; }
+.t-agenda .ev-det p { margin: 0 0 8px; }
+.t-agenda .ev-det p:last-child { margin-bottom: 0; }
+.t-agenda .ev-det p > b { display: block; margin-bottom: 1px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--t-ink-3); }
+.t-agenda .ev-ris { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.t-agenda .ev-ris > div { padding: 8px 10px; border: 1px solid var(--hair); border-radius: var(--r, 6px); }
+.t-agenda .ev-ris span { display: block; font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--t-ink-3); }
+.t-agenda .ev-ris b { display: block; margin-top: 2px; font-size: 1.0625rem; color: var(--t-ink); font-variant-numeric: tabular-nums; }
+.t-agenda .ev-ris b.ris-su, .t-agenda .ev-ris b.ris-giu { color: var(--t-accent); }
+.t-agenda .ev-st { margin: 0 0 10px; padding-left: 10px; border-left: 3px solid var(--t-accent); color: var(--t-ink); }
+@media (prefers-reduced-motion: no-preference) {
+  .t-agenda .ev-det:not([hidden]) { animation: ev-open var(--t-3, 0.3s) var(--ease, ease) both; }
+  @keyframes ev-open { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+}
+@media (max-width: 640px) {
+  .t-agenda .ev-det { grid-row: 3; }
+  .t-agenda .ev-ris { gap: 6px; }
+  .t-agenda .ev-ris > div { padding: 7px 8px; }
+}

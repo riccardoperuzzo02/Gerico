@@ -1,13 +1,125 @@
 {
  "code": "FR",
- "asOf": "2026-11-13T17:17:34+00:00",
+ "asOf": "2026-11-13T19:17:35+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "\"Il faut dire la vérité sur ce qui se passe\" : le premier syndicat des chefs d'établissement conteste les chiffres de l'Education nationale sur le nombre de lycées bloqués",
+   "desc": "Selon le ministère, seule une dizaine de lycées étaient encore bloqués vendredi matin. Le SNPDEN-Unsa juge que ce décompte est minoré depuis le retour des vacances, et appelle à inclure tous les établissements où une partie des élèves sont empêchés d'entrer.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/il-faut-dire-la-verite-sur-ce-qui-se-passe-le-premier-syndicat-des-chefs-d-etablissement-conteste-les-chiffres-du-ministere-sur-les-lycees-bloques_8281568.html",
+   "at": "2026-11-13T19:13:18+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Guerre en Ukraine : les Européens veulent être représentés par cinq pays, dont la France, lors des prochaines négociations",
+   "desc": "Ce format a été annoncé par le président du Conseil européen, vendredi à l'issue d'un sommet à Dublin. Mais Moscou a semé le doute en assurant n'avoir nullement levé son veto sur la présence des Européens.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-la-russie-veut-connaitre-les-intentions-des-europeens-avant-de-les-laisser-participer-aux-pourparlers_8280860.html",
+   "at": "2026-11-13T19:12:59+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La chroniqueuse pro-Kremlin Xenia Fedorova juge l'interdiction de territoire infligée par la Russie à deux députés et deux journalistes français \"plus mesurée\" que son expulsion par la France",
+   "desc": "Moscou a présenté les sanctions prises contre ces quatre Français comme une réponse à celles qui ont frappé Xenia Fedorova, habituée des médias du groupe Bolloré et accusée par Paris d'être \"un relais des campagnes de désinformation\" russes.",
+   "url": "https://www.franceinfo.fr/monde/russie/la-chroniqueuse-pro-kremlin-xenia-fedorova-juge-la-diplomatie-russe-plus-mesuree-que-l-etat-francais_8281559.html",
+   "at": "2026-11-13T18:59:12+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Projet de loi résilience : comment la France veut rattraper son retard en cybersécurité",
+   "desc": "Alors que les cyberattaques se multiplient en France, l’Assemblée s'apprête à adopter, mardi, la loi résilience sur le renforcement de la cybersécurité. Retardé depuis deux ans, le texte multiplie par dix le nombre d’entités régulées et impose des sanctions financières en cas de manquement aux obligations de prévention, sans prévoir de financements supplémentaires.",
+   "url": "https://www.france24.com/fr/france/20261113-projet-de-loi-r%C3%A9silience-comment-la-france-veut-rattraper-son-retard-en-cybers%C3%A9curit%C3%A9",
+   "at": "2026-11-13T18:36:52+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Marine Le Pen se dit prête à rencontrer le président ukrainien Volodymyr Zelensky à Bruxelles",
+   "desc": "Par le passé, la candidate du Rassemblement national à la présidentielle avait déclaré que, si elle était élue, elle \"maintiendrait durant six mois\" l'aide financière à l'Ukraine, envahie depuis 2022 par la Russie, \"cesserait\" ce soutien au-delà.",
+   "url": "https://www.franceinfo.fr/politique/marine-le-pen/si-je-peux-le-rencontrer-a-bruxelles-je-le-dirai-a-l-ambassadeur-d-ukraine-marine-le-pen-se-dit-prete-a-echanger-avec-volodymyr-zelensky_8281529.html",
+   "at": "2026-11-13T18:29:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'Agence internationale de l'énergie prévoit que l'offre mondiale de pétrole va dépasser la demande en fin d'année",
+   "desc": "C'est une première depuis le début de la guerre en Iran. Dans son rapport mensuel, l'Agence internationale de l'énergie note jeudi que le marché du pétrole montre des signes de rééquilibrage.",
+   "url": "https://www.franceinfo.fr/environnement/energie/energies-fossiles/l-agence-internationale-de-l-energie-prevoit-que-l-offre-mondiale-de-petrole-va-depasser-la-demande-en-fin-d-annee_8281379.html",
+   "at": "2026-11-13T18:27:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"C'est chômage technique\" : enseignants, soignants et formateurs racontent comment la panne mondiale de Microsoft affecte leur quotidien",
+   "desc": "Plusieurs millions d'utilisateurs ne peuvent pas accéder pleinement à leur messagerie Outlook et à certains services de Microsoft depuis jeudi soir.",
+   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/temoignages-c-est-chomage-technique-enseignants-soignants-et-formateurs-racontent-comment-la-panne-mondiale-de-microsoft-affecte-leur-quotidien_8281034.html",
+   "at": "2026-11-13T18:06:18+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Panne mondiale de Microsoft : l'entreprise attribue les dysfonctionnements à un \"problème technique\" et affirme que le rétablissement est en cours",
+   "desc": "Le groupe, dont les services sont perturbés depuis jeudi, assure qu'il n'est pas victime d'une IA ni d'une cyberattaque, et que l'incident est lié à une tentative de \"mise à niveau de la capacité du réseau\" qui a mal tourné.",
+   "url": "https://www.franceinfo.fr/internet/microsoft/direct-panne-mondiale-de-microsoft-des-resultats-positifs-en-matiere-de-stabilite-du-service-constates-par-le-geant-americain_8280665.html",
+   "at": "2026-11-13T18:00:55+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La lente dérive terroriste de Kevin Tessier, l’auteur de l’attentat de Trappes, vue par ses proches : « Il s’énervait devant la télé, avec des insultes racistes »",
+   "desc": "Les auditions de ses parents et d’un ami, dont « Le Monde » a pris connaissance, racontent la radicalisation du tueur, entre enfance perturbée, fragilités psychologiques, obsessions racistes liées à l’actualité et altercations violentes.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/13/la-lente-derive-terroriste-de-kevin-tessier-l-auteur-de-l-attentat-de-trappes-vue-par-ses-proches-il-s-enervait-devant-la-tele-avec-des-insultes-racistes_6809375_3224.html",
+   "at": "2026-11-13T18:00:13+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La panne de Microsoft alerte entreprises et salariés sur leur dépendance aux outils numériques : « On a tous un peu été dans le même bateau que nos clients »",
+   "desc": "L’arrêt des services du groupe américain entre jeudi 12 novembre et vendredi midi restant malgré tout limité, l’impact sur les entreprises est à relativiser.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/13/la-panne-de-microsoft-alerte-entreprises-et-salaries-sur-leur-dependance-aux-outils-numeriques-on-a-tous-un-peu-ete-dans-le-meme-bateau-que-nos-clients_6809369_3234.html",
+   "at": "2026-11-13T17:48:12+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des améliorations constatées, pas de cyberattaque d'après Microsoft… Ce que l'on sait de la panne mondiale qui touche le géant américain depuis jeudi",
+   "desc": "Plusieurs millions d'utilisateurs ne peuvent pas accéder à leurs e-mails depuis jeudi soir. La panne affecte aussi certaines fonctions des assistants d'intelligence artificielle.",
+   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/outlook-et-teams-perturbes-pas-de-cyberattaque-d-apres-microsoft-ce-que-l-on-sait-de-la-panne-mondiale-qui-touche-le-geant-americain-depuis-jeudi_8280671.html",
+   "at": "2026-11-13T17:42:07+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Sollicitée par Donald Trump, la Russie jubile à l’idée de peser sur l’architecture de sécurité européenne",
+   "desc": "Pour reprendre langue avec les Etats européens, le Kremlin leur propose, entre autres, de signer des accords bilatéraux d’assistance mutuelle, à l’image de ceux qu’il a conclus avec la Biélorussie et la Corée du Nord.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/13/sollicitee-par-donald-trump-la-russie-jubile-a-l-idee-de-peser-sur-l-architecture-de-securite-europeenne_6809368_3210.html",
+   "at": "2026-11-13T17:30:06+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Crise sociale : le gouvernement veut systématiser les sanctions disciplinaires contre les élèves impliqués dans les blocages de lycées",
+   "desc": "\"Une procédure disciplinaire doit être systématiquement et rapidement engagée à l'encontre de tout élève ayant participé à la déstabilisation de l'établissement\", écrivent les ministres Edouard Geffray et Laurent Nuñez dans un télégramme adressé aux recteurs et aux préfets.",
+   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/direct-crise-sociale-les-syndicats-de-fonctionnaires-recu-vendredi-matin-par-le-premier-ministre-pour-reclamer-de-meilleurs-salaires_8280482.html",
+   "at": "2026-11-13T17:22:31+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il faut entendre les revendications légitimes des lycéens\", estime la FCPE",
+   "desc": "Mustafa Ozcelik, vice-président de la Fédération des conseils de parents d’élèves (FCPE), répond ainsi à l'appel du ministre de l'Education national aux parents de \"parler avec leurs enfants\" pour que cessent les violences.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/il-faut-entendre-les-revendications-legitimes-des-lyceens-estime-la-fcpe_8281472.html",
+   "at": "2026-11-13T17:19:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je n'ai pas protégé mes enfants, surtout ma petite\" : à son procès, le père d'Inass Touloub, \"la petite martyre de l'A10\", raconte sa propre \"lâcheté\"",
+   "desc": "Ahmed Touloub, 74 ans, est jugé depuis le 2 novembre devant la cour d'assises du Loir-et-Cher pour complicité des actes de torture et de barbarie reprochés à son ex-femme, Halima El Bakhti.",
+   "url": "https://www.franceinfo.fr/faits-divers/martyre-de-l-a10/je-n-ai-pas-protege-mes-enfants-surtout-ma-petite-a-son-proces-le-pere-d-inass-touloub-la-petite-martyre-de-l-a10-raconte-sa-propre-lachete_8281061.html",
+   "at": "2026-11-13T17:12:36+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "La préfecture de police valide l'itinéraire commun République-Nation à Paris, déclaré par trois organisateurs distincts pour la mobilisation du 14 novembre",
    "desc": "Selon une note de la Direction du renseignement de la préfecture de police de Paris consultée par franceinfo, entre 30 000 et 60 000 manifestants sont attendus dans la capitale samedi.",
    "url": "https://www.franceinfo.fr/societe/manifestations/la-prefecture-de-police-valide-l-itineraire-commun-republique-nation-a-paris-declare-par-trois-organisateurs-distincts-pour-la-mobilisation-du-14-novembre_8281439.html",
    "at": "2026-11-13T17:07:42+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les effets de la hausse du smic sur le marché du travail suscitent des interrogations",
+   "desc": "La hausse du salaire minimum mensuel net à temps plein à 1 502 euros détruira mécaniquement des emplois. Mais l’impact est jugé limité par le gouvernement et par plusieurs économistes.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/13/les-effets-de-la-hausse-du-smic-sur-le-marche-du-travail-suscitent-des-interrogations_6809363_823448.html",
+   "at": "2026-11-13T17:04:31+00:00"
   },
   {
    "source": "franceinfo",
@@ -22,6 +134,13 @@
    "desc": "Franceinfo s'intéresse aux nouvelles méthodes d'espionnage chinois, après les dernières révélations sur Jensen Huang, le patron de Nvidia, et sa relation extraconjugale avec Alice Huang, soupçonnée d'avoir transmis illégalement des puces électroniques en Chine.",
    "url": "https://www.franceinfo.fr/internet/nvidia/direct-chine-dans-les-secrets-des-nouveaux-maitres-espions-suivez-le-documentaire-de-franceinfo-apres-le-scandale-nvidia_8281100.html",
    "at": "2026-11-13T17:00:02+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "VIDEO Présidentielle 2027 : les gauches sont-elles vraiment irréconciliables ?",
+   "desc": "Dans ce deuxième épisode du vodcast « L’Heure de la présidentielle », les journalistes Sandrine Cassini, chargée de la couverture de la gauche, et Abel Mestre, éditorialiste, décrivent de quelles divisions idéologiques internes à la gauche sont issus les candidats à l’Elysée.",
+   "url": "https://www.lemonde.fr/videos/video/2026/11/13/presidentielle-2027-les-gauches-seront-elles-vraiment-irreconciliables_6809362_1669088.html",
+   "at": "2026-11-13T17:00:00+00:00"
   },
   {
    "source": "franceinfo",
@@ -42,7 +161,7 @@
    "title": "Israël : Gadi Eisenkot dénonce une « campagne raciste » de Benyamin Nétanyahou contre la minorité arabe",
    "desc": "Les partis arabes israéliens, qui comptent 19 députés depuis les dernières élections législatives, sont au cœur des négociations pour former le futur gouvernement. La prise de position de M. Eisenkot est inhabituelle de la part d’un responsable politique juif majeur.",
    "url": "https://www.lemonde.fr/international/article/2026/11/13/israel-gadi-eisenkot-denonce-une-campagne-raciste-de-benyamin-netanyahou-contre-la-minorite-arabe_6809358_3210.html",
-   "at": "2026-11-13T16:43:03+00:00"
+   "at": "2026-11-13T16:43:02+00:00"
   },
   {
    "source": "Le Monde",
@@ -87,11 +206,11 @@
    "at": "2026-11-13T16:00:19+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Crise sociale : le gouvernement veut systématiser les sanctions disciplinaires contre les élèves impliqués dans les blocages de lycées",
-   "desc": "\"Une procédure disciplinaire doit être systématiquement et rapidement engagée à l'encontre de tout élève ayant participé à la déstabilisation de l'établissement\", écrivent les ministres Edouard Geffray et Laurent Nuñez dans un télégramme adressé aux recteurs et aux préfets.",
-   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/direct-crise-sociale-les-syndicats-de-fonctionnaires-recu-vendredi-matin-par-le-premier-ministre-pour-reclamer-de-meilleurs-salaires_8280482.html",
-   "at": "2026-11-13T15:57:52+00:00"
+   "source": "Le Monde",
+   "title": "Comment consoler son enfant lorsque le « bisou magique » ne marche plus ?",
+   "desc": "Face aux maux des ados, les parents se sentent parfois impuissants. Et trouver de l’aide peut virer au parcours du combattant, constate Clara Georges pour la newsletter « Darons daronnes ».",
+   "url": "https://www.lemonde.fr/intimites/article/2026/11/13/comment-consoler-son-enfant-lorsque-le-bisou-magique-ne-marche-plus_6809346_6190330.html",
+   "at": "2026-11-13T16:00:15+00:00"
   },
   {
    "source": "franceinfo",
@@ -108,27 +227,6 @@
    "at": "2026-11-13T15:28:23+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "De CrowdStrike à Facebook, ces grandes pannes qui ont révélé notre dépendance aux géants de la tech",
-   "desc": "La panne mondiale du service de messagerie de Microsoft rappelle plusieurs incidents survenus ces dernières années qui ont perturbé les activités des entreprises et des institutions du monde entier, de plus en plus dépendantes des outils des Gafam.",
-   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/panne-mondiale-d-outlook-de-crowdstrike-a-facebook-ces-grandes-pannes-qui-ont-revele-notre-dependance-aux-geants-de-la-tech_8281130.html",
-   "at": "2026-11-13T15:27:28+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La Cour suprême norvégienne invalide trois licences pétrolières en mer du Nord, un « jugement historique »",
-   "desc": "Si elle n’a pas d’effet immédiat sur la production, la décision de la plus haute instance de justice à Oslo contraint l’Etat à calculer les émissions totales de chacun des projets d’extraction et à en évaluer l’impact sur les températures mondiales.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/13/la-cour-supreme-norvegienne-invalide-trois-licences-petrolieres-en-mer-du-nord-un-jugement-historique_6809339_3244.html",
-   "at": "2026-11-13T15:10:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"C'est chômage technique\" : enseignants, soignants et formateurs racontent comment la panne mondiale de Microsoft affecte leur quotidien",
-   "desc": "Plusieurs millions d'utilisateurs ne peuvent pas accéder pleinement à leur messagerie Outlook et à certains services de Microsoft depuis jeudi soir.",
-   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/temoignages-c-est-chomage-technique-enseignants-soignants-et-formateurs-racontent-comment-la-panne-mondiale-de-microsoft-affecte-leur-quotidien_8281034.html",
-   "at": "2026-11-13T15:10:30+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Du Moyen-Orient à l’Asie, la grande course au stockage du pétrole",
    "desc": "La crise du détroit d’Ormuz pousse les producteurs du Golfe et les importateurs asiatiques à créer de nouvelles capacités de réserve pour mieux surmonter de futurs chocs d’approvisionnement.",
@@ -143,13 +241,6 @@
    "at": "2026-11-13T14:57:28+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : Marine Le Pen se dit prête à rencontrer Volodymyr Zelensky à Bruxelles",
-   "desc": "« La problématique de financement de l’Ukraine est une problématique qui, aujourd’hui, secoue l’Europe », a déclaré la candidate du RN à l’élection présidentielle.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/13/en-direct-guerre-en-ukraine-l-acces-au-systeme-satellitaire-starshield-toujours-restreint-pour-l-ukraine-des-elus-americains-demandent-son-retablissement_6808609_3210.html",
-   "at": "2026-11-13T14:46:44+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "\"Les Misérables\" au Théâtre du Châtelet : le grand triomphe",
    "desc": "La comédie musicale adaptée de l'œuvre éponyme de Victor Hugo, mise en scène par Ladislas Chollat, résonne fort avec l'actualité.",
@@ -162,13 +253,6 @@
    "desc": "Une note indique des risques de troubles à l’ordre public samedi, liés notamment à l’opposition au projet de loi sur la présomption d’usage légitime des armes par les forces de l’ordre qui arrive au Sénat le 19 novembre, et à la tenue du procès des policiers qui ont passé à tabac Michel Zecler.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/13/mobilisation-du-14-novembre-la-prefecture-de-police-de-paris-redoute-une-manifestation-a-forte-coloration-anti-police_6809334_3224.html",
    "at": "2026-11-13T14:37:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Guerre en Ukraine : le système satellitaire militaire américain Starshield est à nouveau perturbé, annonce Volodymyr Zelensky",
-   "desc": "L'Ukraine demande \"des éclaircissements\" à Washington et à SpaceX, l'entreprise d'Elon Musk qui commercialise ce système de localisation crucial pour l'armée ukrainienne.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-la-russie-veut-connaitre-les-intentions-des-europeens-avant-de-les-laisser-participer-aux-pourparlers_8280860.html",
-   "at": "2026-11-13T14:22:34+00:00"
   },
   {
    "source": "franceinfo",
@@ -193,20 +277,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Des améliorations constatées, pas de cyberattaque d'après Microsoft… Ce que l'on sait de la panne mondiale qui touche le géant américain depuis jeudi",
-   "desc": "Plusieurs millions d'utilisateurs ne peuvent pas accéder à leurs e-mails depuis jeudi soir. La panne affecte aussi certaines fonctions des assistants d'intelligence artificielle.",
-   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/outlook-et-teams-perturbes-pas-de-cyberattaque-d-apres-microsoft-ce-que-l-on-sait-de-la-panne-mondiale-qui-touche-le-geant-americain-depuis-jeudi_8280671.html",
-   "at": "2026-11-13T13:01:40+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : « Le champ médiatique n’est plus une autoroute à péage, mais un manège d’autos-tamponneuses »",
-   "desc": "A six mois de l’élection présidentielle, le politiste Pierre Lefébure analyse, dans un entretien au « Monde », l’« ébullition constante » du champ politique, où la multiplication concomitante du nombre d’acteurs politiques et des canaux de communication alimente une compétition féroce voire parfois illisible.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/13/presidentielle-2027-le-champ-mediatique-n-est-plus-une-autoroute-a-peage-mais-un-manege-d-autos-tamponneuses_6809325_3232.html",
-   "at": "2026-11-13T13:00:07+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"On n'a vraiment plus le choix\" : après un mois et demi de mobilisation, lycéens et enseignants s'inquiètent des conséquences sur les notes",
    "desc": "À l'approche de la fin du trimestre, les enseignants tentent de calculer une moyenne, avec très peu de notes. Chaque établissement bricole de son côté. Les élèves et les enseignants craignent des inégalités.",
    "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/on-n-a-vraiment-plus-le-choix-apres-un-mois-et-demi-de-mobilisation-lyceens-et-enseignants-s-inquietent-des-consequences-sur-les-notes_8280770.html",
@@ -218,13 +288,6 @@
    "desc": "Un \"hommage citoyen\" est organisé vendredi pour \"toutes les victimes du terrorisme\" à l'initiative de l'association Life for Paris. Son président, Arthur Dénouveaux, rescapé des attentats du 13-Novembre 2015, a déploré les difficultés à faire \"unité nationale\" après l'attentat raciste du 23 octobre à La Verrière et Trappes.",
    "url": "https://www.france24.com/fr/france/20261113-onze-ans-apr%C3%A8s-le-13-novembre-un-hommage-citoyen-%C3%A0-toutes-les-victimes-du-terrorisme",
    "at": "2026-11-13T12:45:29+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Panne mondiale de Microsoft : l'entreprise constate \"des améliorations\", notamment pour rétablir l'accès aux boîtes mail",
-   "desc": "\"Nous constatons des améliorations dans des domaines clés, notamment l'accès aux boîtes mail et le traitement des e-mails en retard\", a annoncé le géant américain vendredi à la mi-journée.",
-   "url": "https://www.franceinfo.fr/internet/microsoft/direct-panne-mondiale-de-microsoft-des-resultats-positifs-en-matiere-de-stabilite-du-service-constates-par-le-geant-americain_8280665.html",
-   "at": "2026-11-13T12:44:57+00:00"
   },
   {
    "source": "France 24",
@@ -255,46 +318,11 @@
    "at": "2026-11-13T12:01:12+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Comment voulez-vous qu'on rattrape ça ?\" : face aux blocages de leur lycée, des proviseurs parisiens racontent leur désarroi",
-   "desc": "Le syndicat SNPDEN-Unsa appelle les proviseurs à se rassembler devant leur établissement vendredi à 15 heures. Deux chefs d'établissement interrogés par franceinfo déplorent une situation \"intenable\".",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/comment-voulez-vous-qu-on-rattrape-ca-face-aux-blocages-de-leur-lycee-des-proviseurs-parisiens-racontent-leur-desarroi_8279750.html",
-   "at": "2026-11-13T11:58:58+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On entend parler d'islam tous les jours\" : à Mantes-la-Jolie, des habitants tentent de surmonter le traumatisme de l'attentat raciste de Trappes",
-   "desc": "Dans les Yvelines, le choc est encore profond après l'attentat raciste de Trappes et de la Verrière survenu le 23 octobre. À Mantes-la-Jolie, les habitants craignent d’être devenus des cibles en raison de leurs origines.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/reportage-on-entend-parler-d-islam-tous-les-jours-a-mantes-la-jolie-des-habitants-tentent-de-surmonter-le-traumatisme-de-l-attentat-raciste-de-trappes_8280035.html",
-   "at": "2026-11-13T11:27:24+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Agressions sexuelles : Gérard Depardieu, condamné, renonce à son appel juste avant son procès",
    "desc": "L'acteur Gérard Depardieu s'est désisté vendredi, trois jours avant l'ouverture de son procès en appel pour agressions sexuelles sur deux femmes lors du tournage du film \"Les Volets verts\" en 2021. L'acteur venait d'être à nouveau mis en cause par Mediapart et Le Média pour des attouchements sexuels lors du tournage du film \"Turf\" en 2013 sur une figurante.",
    "url": "https://www.france24.com/fr/france/20261113-depardieu-renonce-%C3%A0-son-appel-juste-avant-son-proc%C3%A8s-pour-agressions-sexuelles",
    "at": "2026-11-13T11:23:34+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Jensen Huang convoqué pour témoigner devant le Sénat américain en décembre",
-   "desc": "Le dirigeant américano-taïwanais de la société phare de l'intelligence artificielle (IA) a été forcé jeudi de démissionner, emporté par le scandale de ses relations extraconjugales, dont sa liaison avec une Chinoise suspectée d'espionnage.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/l-ancien-patron-de-nvidia-convoque-pour-temoigner-devant-le-senat-americain-en-decembre_8280839.html",
-   "at": "2026-11-13T10:46:02+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Ce que l’on sait de la panne d’Outlook et de Microsoft 365",
-   "desc": "Plusieurs services de Microsoft, comme Outlook, Teams ou Copilot, connaissent d’importantes perturbations vendredi, ce qui affecte entreprises et gouvernements à travers le monde. La firme américaine, qui écarte la thèse d’une cyberattaque, notait des « améliorations » en début d’après-midi.",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/13/ce-que-l-on-sait-de-la-panne-d-outlook-et-de-microsoft-365_6809312_4408996.html",
-   "at": "2026-11-13T10:42:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle : Bruno Retailleau, candidat des Républicains, n'a \"pas de prêt bancaire\" et accuse le gouvernement",
-   "desc": "En juillet dernier, l'exécutif avait entrepris de chercher avec les banques françaises une solution pour fournir des prêts aux candidats. Mais plusieurs groupes bancaires ont opposé des refus définitifs.",
-   "url": "https://www.franceinfo.fr/elections/le-candidat-des-republicains-a-la-presidentielle-bruno-retailleau-n-a-pas-de-pret-bancaire-et-accuse-le-gouvernement_8280719.html",
-   "at": "2026-11-13T10:22:37+00:00"
   },
   {
    "source": "franceinfo",
@@ -309,13 +337,6 @@
    "desc": "Les organisations de jeunesse et la coordination des gilets jaunes ont appelé à manifester samedi dans toute la France pour l'acte V du mouvement contre la \"vie chère\". À Paris, le cortège partira de la place de la République pour rejoindre Nation, avec plusieurs collectifs mobilisés autour d'autres revendications, notamment contre les violences faites aux enfants et les violences policières.",
    "url": "https://www.france24.com/fr/france/20261113-manifestations-du-14-novembre-parcours-revendications-s%C3%A9curit%C3%A9-ce-qu-il-faut-savoir",
    "at": "2026-11-13T09:43:27+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "VIDEO - 13 novembre 2015 : le récit des attentats, minute par minute",
-   "desc": "Grâce à des témoignages de premier plan, une reconstitution du Bataclan en 3D, et des documents rarement diffusés. « Le Monde » retrace cette soirée qui a changé la France.",
-   "url": "https://www.lemonde.fr/societe/video/2026/11/13/attentats-du-13-novembre-le-recit-en-video-minute-par-minute_6652780_3225.html",
-   "at": "2026-11-13T08:36:01+00:00"
   },
   {
    "source": "franceinfo",
@@ -346,32 +367,11 @@
    "at": "2026-11-13T05:45:05+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"On crée de la proximité\" : comment La France insoumise s'inspire de la campagne présidentielle de Lula sur les réseaux sociaux",
-   "desc": "En vue de 2027, les proches de Jean-Luc Mélenchon reprennent plusieurs principes d'André Janones, le stratège numérique du président du Brésil, en lançant une chaîne WhatsApp ou en tentant d'invisibiliser les contenus d'extrême droite.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/on-cree-de-la-proximite-comment-la-france-insoumise-s-inspire-de-la-campagne-presidentielle-de-lula-sur-les-reseaux-sociaux_8279390.html",
-   "at": "2026-11-13T04:51:22+00:00"
-  },
-  {
    "source": "France 24",
-   "title": "Mobilisation lycéenne : \"épuisés\", \"abîmés\", les proviseurs appelés à se rassembler",
-   "desc": "Face à la multiplication des insultes, des menaces et des agressions sur fond de mobilisation lycéenne depuis près de deux mois, les chefs d'établissement sont appelés à se rassembler vendredi. La dernière mobilisation nationale comparable remonte à 2006, selon le secrétaire général du SNPDEN-Unsa, principal syndicat des chefs d'établissement, à l'initiative de cet appel.",
+   "title": "Mobilisation lycéenne : \"épuisés\", \"abîmés\", les proviseurs mobilisés face à une \"violence\" inédite",
+   "desc": "Face à la multiplication des insultes, des menaces et des agressions sur fond de mobilisation lycéenne depuis près de deux mois, les chefs d'établissement se sont rassemblés vendredi. La dernière mobilisation nationale comparable remonte à 2006, selon le secrétaire général du SNPDEN-Unsa, principal syndicat des chefs d'établissement, à l'initiative de cet appel.",
    "url": "https://www.france24.com/fr/france/20261113-apr%C3%A8s-deux-mois-de-tensions-dans-les-lyc%C3%A9es-de-france-les-proviseurs-appel%C3%A9s-%C3%A0-se-mobiliser",
    "at": "2026-11-13T00:23:30+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"La jeunesse des quartiers populaires n'a pas le droit à l'erreur\" : 48 heures dans les quartiers nord de Marseille",
-   "desc": "Dans ce nouveau numéro de \"48 Heures\" du \"Mag du 20h\", le journaliste France Télévisions Tristan Waleckx a partagé le quotidien d'habitants des quartiers nord de Marseille.",
-   "url": "https://www.franceinfo.fr/marseille/la-jeunesse-dans-les-quartiers-populaires-elle-n-a-pas-le-droit-a-l-erreur-48-heures-dans-les-quartiers-nord-de-marseille_8280122.html",
-   "at": "2026-11-12T22:56:38+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Israël interdit l'entrée sur son territoire à Mélenchon, Paris dénonce une \"décision démagogique\"",
-   "desc": "Le leader de LFI et candidat à l'élection présidentielle en France, Jean-Luc Mélenchon, a reçu l'interdiction d'entrer en Israël, a fait savoir le ministère israélien des Affaires étrangères, accusant son parti de tenir une \"position extrêmement hostile à Israël\". Le chef de la diplomatie française, Jean-Noël Barrot a dénoncé \"une décision démagogique\".",
-   "url": "https://www.france24.com/fr/france/20261112-isra%C3%ABl-interdit-entr%C3%A9e-territoire-jean-luc-m%C3%A9lenchon-lfi-gauche-radicale-gaza-colonies",
-   "at": "2026-11-12T17:25:25+00:00"
   }
  ]
 }

@@ -1,27 +1,139 @@
 {
  "code": "US",
- "asOf": "2026-11-13T17:17:34+00:00",
+ "asOf": "2026-11-13T19:17:35+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Supreme Court takes up case over asylum access at border",
+   "desc": "The case involving President Trump's directives suspending access to the asylum system is the latest involving the president's second-term immigration agenda.",
+   "url": "https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/",
+   "at": "2026-11-13T19:15:23+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Supreme Court will hear Robinhood effort to toss IPO info omissions lawsuit",
+   "desc": "The Trump administration had urged the Supreme Court to hear an appeal by Robinhood of a lower-court's decision to revive an investors' lawsuit over the IPO.",
+   "url": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
+   "at": "2026-11-13T19:13:24+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker",
+   "desc": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family’s financial ties to the chipmaker.",
+   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+   "at": "2026-11-13T19:11:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 15)",
+   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
+   "at": "2026-11-13T19:06:59+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "What's Trump's strategy now with Iran? To keep things as they are",
+   "desc": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure",
+   "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+   "at": "2026-11-13T19:02:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
+   "desc": "Retirees who need cash for a one-time expense may look to their 401(k) or IRA, but financial advisors say there are trade-offs to weigh first.",
+   "url": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
+   "at": "2026-11-13T19:01:12+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Microsoft seeing \"continued recovery\" amid major worldwide outage",
+   "desc": "A Microsoft outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and government services",
+   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
+   "at": "2026-11-13T19:00:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
+   "desc": "OpenAI's ChatGPT Wallet partners with American Express, Mastercard and Visa, and those cardholders keep their existing credit card rewards.",
+   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
+   "at": "2026-11-13T18:56:26+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Goldman Sachs looks to cash in on Anthropic's IPO, twice. Here's how and who else wants to",
+   "desc": "While co-leading the offering, Goldman also wants a shot at managing the billions of dollars in new wealth that the deal creates. It's not the only one.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
+   "at": "2026-11-13T18:44:05+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Top doctor for Congress resigns amid misconduct allegations",
+   "desc": "Dr. Brian Monahan, the attending physician of the U.S. Capitol, has resigned from his post as lawmakers' top doctor.",
+   "url": "https://www.cbsnews.com/news/brian-monahan-resigns-congress-doctor-misconduct-allegations/",
+   "at": "2026-11-13T18:34:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A Restaurant Hosted Ramaswamy After His Attack Ad. It’s Paying a Price.",
+   "desc": "When a popular restaurant agreed to serve as a campaign stop for G.O.P. candidates ahead of Election Day, longtime customers turned against it and Medina, Ohio, was left reeling.",
+   "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
+   "at": "2026-11-13T18:31:25+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Signals New Strategy on Iran: A Waiting Game",
+   "desc": "The administration appears to be moving toward a long-term economic pressure campaign as President Trump expresses little urgency in securing a nuclear agreement.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
+   "at": "2026-11-13T18:20:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "at": "2026-11-13T18:18:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Is a bottom in for the Nasdaq-100? Charts to watch",
+   "desc": "Frank Cappelleri of CappThesis looks at several charts to help answer that question.",
+   "url": "https://www.cnbc.com/2026/11/13/is-a-bottom-in-for-the-nasdaq-100-charts-to-watch.html",
+   "at": "2026-11-13T18:00:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Brother of cartel leader \"El Mencho\" gets 22.5 years in prison",
+   "desc": "The brother of the slain prominent cartel leader known as \"El Mencho\" was sentenced on Friday to 22.5 years in prison.",
+   "url": "https://www.cbsnews.com/news/antonio-oseguera-cervantes-el-mencho-brother-22-5-years-sentenced/",
+   "at": "2026-11-13T17:54:02+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "10-year Treasury yield moves to 5.17% as traders weigh producer price report",
+   "desc": "Treasury yields moved higher as investor expectations for a December rate hike by the Federal Reserve gain strength.",
+   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "at": "2026-11-13T17:39:48+00:00"
+  },
   {
    "source": "CBS News",
    "title": "As Americans drown in medical debt, how one family found a lifeline",
    "desc": "Coy and Caty Smith are gainfully employed and have health insurance. But when illness struck, the bills piled up fast — here's how they found their way back to financial health.",
    "url": "https://www.cbsnews.com/news/medical-debt-credit-card-repayment-plan/",
-   "at": "2026-11-13T17:14:21+00:00"
+   "at": "2026-11-13T17:28:56+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-   "desc": "Jensen Huang resigned as Nvidia CEO days after admitting to an affair following scrutiny of his relationship with a woman reportedly deemed a Chinese spy.",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "at": "2026-11-13T17:06:57+00:00"
+   "source": "CBS News",
+   "title": "Criminal probe launched into cruise ship over potential \"magic pipe\"",
+   "desc": "The U.S. Coast Guard launched an investigation into a so-called \"magic pipe\" case, in which a ship transfers its oil discharge into its gray water system.",
+   "url": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/",
+   "at": "2026-11-13T17:21:45+00:00"
   },
   {
    "source": "New York Times",
-   "title": "With Huang Out, Asian Americans Lose a Star, and Fear What Comes Next",
+   "title": "Asian Americans Share Disappointment and Fear After Jensen Huang Scandal",
    "desc": "Many East Asians said that he had swagger and seemed like a superhero. Now there are worries that the spy scandal turns into hyper scrutiny against them.",
    "url": "https://www.nytimes.com/2026/11/13/us/jensen-huang-nvidia-asian-americans.html",
-   "at": "2026-11-13T17:05:46+00:00"
+   "at": "2026-11-13T17:05:47+00:00"
   },
   {
    "source": "New York Times",
@@ -29,6 +141,13 @@
    "desc": "Now there are only two practicing members of the last active Shaker community in the United States. Sister June was 88.",
    "url": "https://www.nytimes.com/2026/11/13/us/june-carpenter-dead.html",
    "at": "2026-11-13T17:02:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "After Jensen Huang’s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
+   "desc": "Advisors say investors should weigh their Nvidia exposure, time horizon and risk tolerance before reacting to the leadership change.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+   "at": "2026-11-13T17:01:26+00:00"
   },
   {
    "source": "NPR",
@@ -46,38 +165,10 @@
   },
   {
    "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 15)",
-   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-13T16:51:04+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Alex Murdaugh wants murder indictments tossed, saying agent lied",
    "desc": "Alex Murdaugh's attorneys are going back to court, this time trying to get his original murder indictments dismissed.",
    "url": "https://www.cbsnews.com/news/alex-murdaugh-wants-murder-indictments-dismissed/",
    "at": "2026-11-13T16:50:14+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Microsoft says email delivery and service availability 'improving' across more infrastructure",
-   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-13T16:49:13+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "A Restaurant Hosted Ramaswamy After His Attack Ad. It’s Paying a Price.",
-   "desc": "When a popular restaurant agreed to serve as a campaign stop for G.O.P. candidates ahead of Election Day, longtime customers turned against it and Medina, Ohio, was left reeling.",
-   "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
-   "at": "2026-11-13T16:46:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Microsoft seeing \"continued recovery\" amid major worldwide outage",
-   "desc": "A Microsoft outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and government services",
-   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
-   "at": "2026-11-13T16:39:29+00:00"
   },
   {
    "source": "NPR",
@@ -123,13 +214,6 @@
   },
   {
    "source": "CNBC",
-   "title": "10-year Treasury yield moves to 5.15% as traders weigh producer price report",
-   "desc": "Treasury yields moved higher as investor expectations for a December rate hike by the Federal Reserve gain strength.",
-   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-   "at": "2026-11-13T15:40:10+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
    "desc": "Jensen Huang’s resignation puts Nvidia’s AI financing strategy in focus as investors watch credit markets and neocloud exposure.",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
@@ -141,13 +225,6 @@
    "desc": "Billy Evans, the partner of Elizabeth Holmes, opened up about his portrayal in a hit documentary on \"CBS Sunday Morning.\"",
    "url": "https://www.cbsnews.com/news/billy-evans-elizabeth-holmes-documentary-portrayal/",
    "at": "2026-11-13T15:33:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
-   "desc": "OpenAI's ChatGPT Wallet partners with American Express, Mastercard and Visa, and those cardholders keep their existing credit card rewards.",
-   "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "at": "2026-11-13T15:31:58+00:00"
   },
   {
    "source": "CBS News",
@@ -190,20 +267,6 @@
    "desc": "Few were paying much attention to Mr. Colom for most of his Senate campaign. Then he toppled the Republican incumbent.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/scott-colom-mississippi-democrat-defied-odds.html",
    "at": "2026-11-13T15:01:10+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "We're making 3 trades to adjust our consumer exposure after an analyst downgrade",
-   "desc": "We want to take protect gains heading into earnings results next week.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/13/were-making-3-trades-to-adjust-our-consumer-exposure-after-downgrade.html",
-   "at": "2026-11-13T14:59:57+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Kennedy’s Future: Will Democrats Try to Impeach Him, or Actually Work With Him?",
-   "desc": "Most Democrats abhor the health secretary’s stance on vaccines, but some see an opportunity to win voters from his MAHA movement by joining with him on food and environmental issues.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/rfk-jr-democrats-impeach.html",
-   "at": "2026-11-13T14:38:10+00:00"
   },
   {
    "source": "CNBC",
@@ -270,7 +333,7 @@
   },
   {
    "source": "NPR",
-   "title": "Manchester United names USMNT coach Mauricio Pochettino as its manager",
+   "title": "USMNT head coach Mauricio Pochettino is leaving for Manchester United",
    "desc": "Mauricio Pochettino is out as head coach of the U.S. men's national soccer team. Pochettino led the U.S. to the round of 16 at last year's World Cup. He's departing to coach Manchester United.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6038932/mauricio-pochettino-usmnt-manchester-united",
    "at": "2026-11-13T13:32:23+00:00"
@@ -333,9 +396,9 @@
   },
   {
    "source": "NPR",
-   "title": "Jensen Huang is out. An AI expert explains what his exit could mean for the AI boom",
+   "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
    "desc": "AI expert Gary Marcus breaks down what's at stake for Nvidia and the mess its new CEO has inherited.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-jensen-huang-exit-scandal-colette-kress-ai-future",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick",
    "at": "2026-11-13T11:47:00+00:00"
   },
   {
@@ -344,13 +407,6 @@
    "desc": "In the last decade, strong support for kratom and 7-OH products have kept them federally legal. That's started to change. A crackdown for some highly potent products related to kratom is coming.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6039203/kratom-7-oh-dea-addiction-opioid",
    "at": "2026-11-13T11:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Hegseth awards medal to soldier who chastised him",
-   "desc": "Pete Hegseth was yelled at by a sentinel for poor decorum at Arlington National Cemetery. Now the Secretary of Defense has given him a medal.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him",
-   "at": "2026-11-13T10:27:08+00:00"
   },
   {
    "source": "CNBC",
@@ -365,13 +421,6 @@
    "desc": "Senator Chris Van Hollen of Maryland has emerged as a favorite of Democrats seeking an alternative to Senator Chuck Schumer, who says he has the votes to win.",
    "url": "https://www.nytimes.com/2026/11/12/us/politics/van-hollen-schumer-democrats-majority-leader.html",
    "at": "2026-11-13T04:11:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigation",
-   "desc": "The retention of Wachtell, Lipton for the Nvidia probe comes on the heels of the law firm's investigation for the NBA into the Los Angeles Clippers.",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
-   "at": "2026-11-13T04:07:44+00:00"
   },
   {
    "source": "New York Times",
@@ -438,31 +487,10 @@
   },
   {
    "source": "CBS News",
-   "title": "Drunken raccoon merch raises money for local animals that need help",
-   "desc": "Last year, a raccoon broke into a Virginia liquor store and sampled lots of spirits before passing out next to the toilet. The internet was delighted, and a local shelter turned that moment into merch, raising money for other animals in the area.",
-   "url": "https://www.cbsnews.com/video/drunken-raccoon-merch-raises-money-local-animals-need-help/",
-   "at": "2026-11-13T00:51:29+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Storm front to bring possible hail, tornadoes to Northeast",
    "desc": "A big storm that was hitting the Northeast on Thursday could bring tornadoes, hail and heavy rain to the region, which could then see a steep drop in temperature, with many areas forecast to dip well below freezing. Rob Marciano has more.",
    "url": "https://www.cbsnews.com/video/storm-front-to-bring-possible-hail-tornadoes-to-northeast/",
    "at": "2026-11-13T00:47:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Pope Leo calls on followers to \"value women\" and \"respect girls\"",
-   "desc": "Pope Leo visited Peru on Thursday, where he said he learned \"what it means to be a shepherd\" when he had lived and served in the country for several decades. He gave an emotional speech in which he denounced the culture of \"machismo\" and called on followers to \"value women.\" Chris Livesay has more.",
-   "url": "https://www.cbsnews.com/video/pope-leo-calls-followers-value-women-respect-girls/",
-   "at": "2026-11-13T00:35:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Hegseth awards medal to soldier who reprimanded his group at Arlington National Cemetery",
-   "desc": "The soldier who loudly and publicly reprimanded Defense Secretary Pete Hegseth and his guests at Arlington National Cemetery was summoned to the Pentagon on Thursday. Charlie D'Agata reports on what happened next.",
-   "url": "https://www.cbsnews.com/video/hegseth-awards-medal-soldier-reprimanded-group-arlington-national-cemetery/",
-   "at": "2026-11-13T00:33:38+00:00"
   },
   {
    "source": "CBS News",
@@ -528,20 +556,6 @@
    "at": "2026-11-12T23:14:35+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nscale updates IPO prospectus that shows widening loss",
-   "desc": "Nvidia-backed neocloud Nscale on Thursday released updated paperwork for a U.S. initial public offering showing a widening loss.",
-   "url": "https://www.cnbc.com/2026/11/12/nscale-updates-ipo-prospectus-that-shows-widening-loss.html",
-   "at": "2026-11-12T23:12:15+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Analysis: Nvidia’s leadership crisis tests the chipmaker’s role as the ‘central bank of AI’",
-   "desc": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
-   "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-   "at": "2026-11-12T23:08:50+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "USPS adds permanent postage surcharge, citing higher fuel costs",
    "desc": "Still swimming in red ink, the USPS said it will raise some postage prices in 2027 to offset elevated fuel costs.",
@@ -554,13 +568,6 @@
    "desc": "Officials still have not said what caused the building collapse at 1321 Flatbush Ave.​ that left eight people dead, including two children.",
    "url": "https://www.cbsnews.com/news/flatbush-brooklyn-building-collapse-violations/",
    "at": "2026-11-12T22:46:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "The Jensen Huang Scandal & How to Spot a Honey Trap | Straight up with Kelly and Vlad",
-   "desc": "A billionaire, affairs, and an alleged honey trap at the hands of the Chinese government. This week, Vlad and Kelly are going inside the world of honey traps, Romeos, and sexpionage. With former intelligence officer and historian, Mark Jacobson, and investigative journalist and author of \"The Game,\" Neil Strauss, they unpack how spies exploit attraction, ego, and emotions to get close to the world's most powerful people—and why sometimes the most dangerous secrets are spilled in pillow talk.",
-   "url": "https://www.cbsnews.com/video/jensen-huang-scandal-how-to-spot-honey-trap-straight-up-kelly-vlad/",
-   "at": "2026-11-12T22:38:00+00:00"
   },
   {
    "source": "CBS News",
@@ -595,7 +602,7 @@
    "title": "Black Turnout Rose in Georgia, Powered by Younger Voters",
    "desc": "Black voters under 30 outpaced young white voters for the first time since 2012, contributing to a statewide sweep by Democrats.",
    "url": "https://www.nytimes.com/2026/11/12/us/black-turnout-georgia.html",
-   "at": "2026-11-12T20:30:11+00:00"
+   "at": "2026-11-12T20:30:12+00:00"
   },
   {
    "source": "New York Times",
@@ -610,27 +617,6 @@
    "desc": "The president's son will no longer serve as an advisor at Kalshi.",
    "url": "https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html",
    "at": "2026-11-12T20:03:57+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Ken Paxton Divorce Is Finalized, His Lawyer Says",
-   "desc": "His wife, Angela Paxton, filed for divorce last year, citing adultery and “biblical grounds.”",
-   "url": "https://www.nytimes.com/2026/11/12/us/ken-paxton-divorce.html",
-   "at": "2026-11-12T19:30:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "House Passes Competing Veterans Bills in a Fight Over Funding",
-   "desc": "Legislation addressing the retirement pay of veterans with combat-related disabilities is making its way through Congress, but could collapse amid a funding clash.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/house-veterans-benefits-bill-funding.html",
-   "at": "2026-11-12T19:12:20+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-   "desc": "There will be seven voting meetings next year, with the October session set up as extra time for policy deliberation without a formal vote or post-meeting statement.",
-   "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-   "at": "2026-11-12T19:05:25+00:00"
   }
  ]
 }

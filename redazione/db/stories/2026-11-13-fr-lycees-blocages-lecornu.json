@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-13-fr-lycees-blocages-lecornu",
+  "title": "Francia: blocchi dei licei, Lecornu accusa alcuni insegnanti di «complicità»",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "Hôtel de Matignon"},
+  "rank": 303,
+  "summary": "Il primo ministro Sébastien Lecornu dice che alcuni membri del personale scolastico sono «complici» delle violenze nelle proteste dei liceali. I sindacati parlano di provocazione.",
+  "article": "Giovedì 12 novembre Sébastien Lecornu, primo ministro francese, ha detto che alcuni membri del personale dell'Education nationale (la scuola pubblica) sono «complici» delle violenze che accompagnano la mobilitazione dei liceali. Lo riporta franceinfo. Lecornu ha citato alcuni licei dove, ha detto, si organizzerebbe la consegna di mortai d'artificio.\n\nVenerdì 13 Sophie Vénétitay, segretaria generale del sindacato Snes-FSU, ha definito le parole «una forma di provocazione». Ha detto a France Inter di non conoscere queste complicità e ha chiesto al primo ministro di favorire una via d'uscita dalla crisi, secondo franceinfo. Per la CGT Education è un «attacco frontale» a una categoria, senza prove: il suo co-segretario Mickael Marcilloux dice che molti insegnanti condividono le richieste degli studenti e cercano di calmare le tensioni.\n\nBruno Bobkiewicz, segretario generale del Snpden, primo sindacato dei presidi, ha detto a France Inter che «non si era mai vissuta una situazione così violenta». Secondo lui il modo di agire dei manifestanti è cambiato ed è «ancora più pericoloso». Il sindacato ha invitato i presidi a radunarsi davanti ai loro istituti venerdì alle 15.\n\nFrance 24 scrive che le associazioni per i diritti umani denunciano l'uso di misure nate dopo gli attentati del 2015 contro i manifestanti, comprese assegnazioni a residenza per attività politica. Franceinfo segnala anche l'incontro di venerdì mattina tra i sindacati dei dipendenti pubblici e il primo ministro, prima di uno sciopero nel settore il 17 novembre.",
+  "facts": [
+    {"text": "Lecornu ha detto che alcuni membri del personale scolastico sono «complici» delle violenze nei licei.", "who": ["franceinfo"]},
+    {"text": "Lo Snes-FSU parla di «provocazione», la CGT Education di «attacco frontale».", "who": ["franceinfo"]},
+    {"text": "Per il sindacato dei presidi Snpden non c'era mai stata una situazione così violenta.", "who": ["franceinfo"]},
+    {"text": "Associazioni per i diritti umani denunciano l'uso di misure antiterrorismo del 2015 contro i manifestanti.", "who": ["France 24"]},
+    {"text": "I sindacati dei dipendenti pubblici sono ricevuti a Matignon venerdì; sciopero il 17 novembre.", "who": ["franceinfo"]}
+  ],
+  "view": "Si può dire con certezza che il primo ministro ha accusato alcuni membri del personale scolastico e che i sindacati lo contestano. Non ci sono prove pubbliche sulle presunte complicità e le fonti lette non danno numeri su blocchi e partecipanti.\n\nConta perché lo scontro tra governo e scuola si somma alla protesta sui salari pubblici. Da guardare: l'incontro a Matignon, lo sciopero del 17 novembre e le reazioni ai provvedimenti di sicurezza.",
+  "open": [
+    "Quanti licei sono bloccati e quanti studenti partecipano?",
+    "Quali elementi hanno portato Lecornu a parlare di complicità?",
+    "Cosa uscirà dall'incontro tra governo e sindacati del pubblico impiego?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/il-y-a-une-forme-de-provocation-reagit-un-syndicat-a-l-accusation-des-enseignants-de-complicite-aux-violences-lyceennes_8280518.html", "angle": "Le parole di Lecornu e le reazioni dei sindacati; i presidi e l'incontro a Matignon dai suoi articoli collegati.", "date": "2026-11-13"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261113-col%C3%A8re-sociale-l-arsenal-antiterroriste-n%C3%A9-des-attentats-de-2015-utilis%C3%A9-contre-les-manifestants", "angle": "Dal feed: misure antiterrorismo usate contro i manifestanti, secondo le associazioni.", "date": "2026-11-13"}
+  ],
+  "firstSeen": "2026-11-13T09:50:00+01:00",
+  "updated": "2026-11-13T09:50:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-13T09:50:00+01:00", "text": "Prima notizia: Lecornu accusa alcuni insegnanti di complicità nelle violenze dei licei."}
+  ],
+  "tags": ["Francia", "Scuola", "Proteste"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

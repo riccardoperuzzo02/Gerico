@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-13-us-van-hollen-schumer",
+  "title": "Stati Uniti: Van Hollen sfida Schumer per la guida dei democratici al Senato",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "United States Capitol"},
+  "rank": 103,
+  "summary": "Il senatore del Maryland Chris Van Hollen ha annunciato che sfiderà Chuck Schumer come leader dei democratici al Senato. Schumer dice di avere i voti per restare.",
+  "article": "Chris Van Hollen, senatore democratico del Maryland, ha annunciato giovedì 12 novembre che sfiderà Chuck Schumer per la guida dei democratici al Senato. Lo riportano NPR e il New York Times. Per NPR, Van Hollen, che è un progressista, ha detto che con le elezioni di metà mandato gli elettori hanno chiesto «un cambiamento rispetto allo status quo».\n\nSecondo il New York Times, Van Hollen è emerso come il favorito dei democratici che cercano un'alternativa a Schumer, il leader del gruppo. Lo stesso giornale scrive che Schumer sostiene di avere i voti per vincere. Le due testate non indicano, nei testi letti, la data della votazione interna né quanti senatori si siano già schierati.\n\nVan Hollen lega la sua candidatura al voto di metà mandato, in cui i democratici hanno vinto anche il seggio del Mississippi con Scott Colom.\n\nLe informazioni vengono dai testi dei feed di NPR e del New York Times: gli articoli completi non erano consultabili in questo giro.",
+  "facts": [
+    {"text": "Van Hollen ha annunciato che sfiderà Schumer per la guida dei democratici al Senato.", "who": ["NPR", "New York Times"]},
+    {"text": "Van Hollen dice che gli elettori hanno chiesto «un cambiamento rispetto allo status quo».", "who": ["NPR"]},
+    {"text": "Schumer dice di avere i voti per vincere.", "who": ["New York Times"]},
+    {"text": "Secondo il Times, Van Hollen è il favorito dei democratici che vogliono un'alternativa.", "who": ["New York Times"]}
+  ],
+  "view": "Si può dire con certezza che Van Hollen si è candidato contro Schumer. Non si sa quanti senatori lo sostengano né quando si voterà: le uniche stime sui numeri sono quelle, opposte, dei due campi.\n\nConta perché decide chi guiderà i democratici al Senato dopo le elezioni. Da guardare: la data del voto interno e gli annunci di appoggio dei singoli senatori.",
+  "open": [
+    "Quando si vota per la guida del gruppo democratico?",
+    "Quanti senatori hanno già dichiarato il loro appoggio a ciascuno dei due?"
+  ],
+  "sources": [
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/12/nx-s1-6039357/chris-van-hollen-chuck-schumer-senate-majority-leader", "angle": "Dal feed: la candidatura e le parole di Van Hollen sul messaggio degli elettori.", "date": "2026-11-12"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/12/us/politics/van-hollen-schumer-democrats-majority-leader.html", "angle": "Dal feed: Van Hollen favorito di chi vuole un'alternativa; Schumer dice di avere i voti.", "date": "2026-11-12"}
+  ],
+  "firstSeen": "2026-11-13T09:49:00+01:00",
+  "updated": "2026-11-13T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-13T09:49:00+01:00", "text": "Prima notizia: Van Hollen sfida Schumer per la guida dei democratici al Senato."}
+  ],
+  "tags": ["Stati Uniti", "Congresso", "Democratici"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,7 +1,7 @@
 {
   "lastPublish": {
-    "at": "2026-11-13T07:29:30+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
+    "at": "2026-11-13T09:51:09+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-13T07:29:00+01:00",
   "marketsRun": {
@@ -22,8 +22,8 @@
     "Agi"
   ],
   "paesiRun": {
-    "at": "2026-11-12T14:30:14+01:00",
-    "esito": "US 1 nuova (Casa Bianca e indagini dei democratici, CBS letta)/0 aggiornate/0 archiviate; GB 1 nuova (Pil +0,7%, solo feed BBC e Guardian)/0/0; FR 1 nuova (Bardella, franceinfo letta)/0/0; DE 1 nuova (test linguistici nelle Kita, solo feed)/0/0; ES 1 nuova (ex delegato di Ceuta, solo feed)/0/0. Storie esistenti invariate (Colom, Hegseth, Smic)."
+    "at": "2026-11-13T09:50:30+01:00",
+    "esito": "US 2 nuove (sparatoria a Washington, CBS letta; Van Hollen contro Schumer, solo feed)/0 aggiornate/1 archiviata (Hegseth); GB 2 nuove (Milburn sui sussidi, Iran e giornalisti, solo feed)/0/0; FR 1 nuova (licei e Lecornu, franceinfo letta)/0/0; DE 2 nuove (bilancio 2027, riforma dei servizi, solo feed)/0/0; ES 1 nuova (campagna elettorale, solo feed)/0/0. Tagesschau, Zeit, Sky e 20minutos non si aprono."
   },
   "quality": {
     "articlesDiscarded": 3,

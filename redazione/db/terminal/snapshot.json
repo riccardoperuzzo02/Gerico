@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-13T07:24:00+01:00",
+ "asOf": "2026-11-13T18:46:35+01:00",
  "indices": [
   {
    "chg": -0.4,
@@ -10,36 +10,44 @@
    "time": "22:00"
   },
   {
-   "chg": -0.27,
+   "chg": 0.1,
    "code": "ITA",
    "index": "FTSE MIB",
-   "note": "",
+   "note": "Chiusura del 13 novembre (Ansa)",
    "story": "2026-11-09-wall-street-ia-chip",
    "time": "17:41"
   },
   {
-   "chg": 0.41,
+   "chg": -0.2,
    "code": "DEU",
    "index": "DAX",
-   "note": "",
+   "note": "Chiusura del 13 novembre (Ansa)",
    "story": "",
-   "time": "18:12"
+   "time": "17:41"
   },
   {
-   "chg": 0.34,
+   "chg": 0.1,
    "code": "FRA",
    "index": "CAC 40",
-   "note": "",
+   "note": "Chiusura del 13 novembre (Ansa)",
    "story": "",
-   "time": "18:12"
+   "time": "17:41"
   },
   {
-   "chg": 0.25,
+   "chg": 0.3,
    "code": "GBR",
    "index": "FTSE 100",
-   "note": "",
+   "note": "Chiusura del 13 novembre (Ansa)",
    "story": "",
-   "time": "18:12"
+   "time": "17:41"
+  },
+  {
+   "chg": 0,
+   "code": "NLD",
+   "index": "AEX",
+   "note": "Chiusura del 13 novembre, invariato (Ansa)",
+   "story": "",
+   "time": "17:41"
   },
   {
    "chg": 1,
@@ -58,11 +66,15 @@
    "time": "01:00"
   }
  ],
- "label": "Chiusure di ieri e Asia stamattina",
+ "label": "Chiusura delle Borse europee",
  "sources": [
   {
-   "name": "ANSA, Borsa: l'Europa chiude in generale rialzo (12 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/borsa-leuropa-chiude-in-generale-rialzo-francoforte-041_ed12fe9a-b95b-4684-933c-be7c17ccac6c.html"
+   "name": "ANSA, Borsa: l'Europa conclude in tenuta, Londra +0,3% (13 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-leuropa-conclude-in-tenuta-londra-03_9fc40c72-8386-4006-967a-ad4a94f10600.html"
+  },
+  {
+   "name": "ANSA, Borsa: Milano chiude in lieve rialzo, Ftse Mib +0,1% (13 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-milano-chiude-in-lieve-rialzo-ftse-mib-01_94c30a0d-7a2b-4bfe-8697-65720fa90fb3.html"
   },
   {
    "name": "CNBC, Stock market today (12 novembre)",

@@ -1,41 +1,48 @@
 {
- "asOf": "2026-11-13T13:20:30+01:00",
+ "asOf": "2026-11-13T18:46:35+01:00",
  "classes": [
   {
    "items": [
     {
-     "chg": -0.27,
+     "chg": 0.1,
      "name": "Ftse Mib",
-     "note": "Chiusura del 12 novembre (Ansa)",
+     "note": "Chiusura del 13 novembre, ore 17:41 (Ansa)",
      "story": "2026-11-09-wall-street-ia-chip",
-     "value": "51.808",
-     "why": "Pesano i titoli tecnologici dopo il calo di Nvidia, secondo l'Ansa."
+     "value": "51.858",
+     "why": "Seduta marginalmente positiva, secondo l'Ansa."
     },
     {
-     "chg": 0.1,
+     "chg": -0.2,
      "name": "Dax",
-     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "note": "Chiusura del 13 novembre (Ansa)",
      "value": "n.d.",
-     "why": "Europa poco mossa, pesa la tecnologia dopo il caso Nvidia."
+     "why": "Francoforte l'unica grande Borsa in calo."
     },
     {
      "chg": 0.1,
      "name": "Cac 40",
-     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "note": "Chiusura del 13 novembre (Ansa)",
      "value": "n.d.",
-     "why": "Lusso in calo dell'1,6%, Richemont -5% dopo i conti."
+     "why": ""
     },
     {
      "chg": 0.3,
      "name": "Ftse 100",
-     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "note": "Chiusura del 13 novembre (Ansa)",
+     "value": "n.d.",
+     "why": "Londra la migliore d'Europa."
+    },
+    {
+     "chg": 0,
+     "name": "Aex",
+     "note": "Chiusura del 13 novembre, invariato (Ansa)",
      "value": "n.d.",
      "why": ""
     },
     {
      "chg": 0.1,
      "name": "Stoxx 600",
-     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "note": "Ore 11:27 del 13 novembre (Ansa); chiusura non trovata",
      "value": "n.d.",
      "why": "Energia +1,1%, tecnologia -0,6%."
     },
@@ -136,7 +143,7 @@
    "items": [
     {
      "name": "Spread Btp-Bund",
-     "note": "Ore 11:27 del 13 novembre (Ansa); in calo",
+     "note": "Chiusura del 13 novembre, poco mosso (Ansa)",
      "value": "104 bp",
      "why": ""
     },
@@ -190,9 +197,10 @@
     },
     {
      "name": "Gas Ttf",
-     "note": "Ore 11:27 del 13 novembre (Ansa); in calo",
+     "chg": -3,
+     "note": "Ore 18:11 del 13 novembre (Ansa)",
      "story": "2026-11-13-brent-trump-iran-gas",
-     "value": "92,05 €/MWh",
+     "value": "89 €/MWh",
      "why": "Ieri sera era vicino a 94 euro per le tensioni in Medio Oriente."
     },
     {
@@ -214,8 +222,16 @@
    "note": "Nessun dato verificato in questo aggiornamento"
   }
  ],
- "label": "Dati di metà giornata",
+ "label": "Chiusura delle Borse europee",
  "sources": [
+  {
+   "name": "ANSA, Borsa: l'Europa conclude in tenuta, Londra +0,3% (13 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-leuropa-conclude-in-tenuta-londra-03_9fc40c72-8386-4006-967a-ad4a94f10600.html"
+  },
+  {
+   "name": "ANSA, Borsa: Milano chiude in lieve rialzo, Ftse Mib +0,1% (13 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-milano-chiude-in-lieve-rialzo-ftse-mib-01_94c30a0d-7a2b-4bfe-8697-65720fa90fb3.html"
+  },
   {
    "name": "CNBC, Stock market today (12 novembre)",
    "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html"
@@ -241,5 +257,5 @@
    "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/il-prezzo-del-gas-corre-e-sfiora-i-94-euro-con-tensioni-medioriente_37283fb3-ab72-4cb0-bfb4-1aa473abdefa.html"
   }
  ],
- "summary": "A metà mattina le Borse europee sono poco mosse (Stoxx 600 +0,1%), con la tecnologia in calo dopo il caso Nvidia. Il Brent cede lo 0,4% a 95,44 dollari, l'oro perde l'1,4% a 3.898 dollari e lo spread Btp-Bund scende a 104 punti."
+ "summary": "Le Borse europee chiudono in tenuta: Londra +0,3%, Milano +0,1% a 51.858 punti, Parigi +0,1%, Amsterdam invariata, mentre Francoforte cede lo 0,2%. Lo spread Btp-Bund resta a 104 punti e il gas scende del 3% a 89 euro al megawattora."
 }

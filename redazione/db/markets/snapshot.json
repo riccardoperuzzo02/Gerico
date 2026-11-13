@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-13T07:24:00+01:00",
+ "asOf": "2026-11-13T13:20:30+01:00",
  "classes": [
   {
    "items": [
@@ -12,25 +12,32 @@
      "why": "Pesano i titoli tecnologici dopo il calo di Nvidia, secondo l'Ansa."
     },
     {
-     "chg": 0.41,
+     "chg": 0.1,
      "name": "Dax",
-     "note": "Chiusura del 12 novembre (Ansa)",
-     "value": "26.771",
-     "why": ""
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "n.d.",
+     "why": "Europa poco mossa, pesa la tecnologia dopo il caso Nvidia."
     },
     {
-     "chg": 0.34,
+     "chg": 0.1,
      "name": "Cac 40",
-     "note": "Chiusura del 12 novembre (Ansa)",
-     "value": "8.361",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "n.d.",
+     "why": "Lusso in calo dell'1,6%, Richemont -5% dopo i conti."
+    },
+    {
+     "chg": 0.3,
+     "name": "Ftse 100",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "n.d.",
      "why": ""
     },
     {
-     "chg": 0.25,
-     "name": "Ftse 100",
-     "note": "Chiusura del 12 novembre (Ansa)",
-     "value": "10.863",
-     "why": ""
+     "chg": 0.1,
+     "name": "Stoxx 600",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "n.d.",
+     "why": "Energia +1,1%, tecnologia -0,6%."
     },
     {
      "chg": -0.4,
@@ -77,6 +84,14 @@
   {
    "items": [
     {
+     "chg": 1.7,
+     "name": "Banco Bpm",
+     "note": "13 novembre, in seduta (Ansa)",
+     "story": "2026-11-13-banco-bpm-credit-agricole",
+     "value": "14,91 €",
+     "why": "Dopo il via del cda agli approfondimenti sulla proposta di Crédit Agricole."
+    },
+    {
      "chg": -4.3,
      "name": "Nvidia",
      "note": "Chiusura del 12 novembre (CNBC)",
@@ -121,14 +136,26 @@
    "items": [
     {
      "name": "Spread Btp-Bund",
-     "note": "Chiusura del 12 novembre (Ansa); in rialzo",
-     "value": "104,4 bp",
+     "note": "Ore 11:27 del 13 novembre (Ansa); in calo",
+     "value": "104 bp",
+     "why": ""
+    },
+    {
+     "name": "Btp 10 anni",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "4,40%",
+     "why": ""
+    },
+    {
+     "name": "Bund 10 anni",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "3,36%",
      "why": ""
     }
    ],
    "key": "obbligazioni",
    "label": "Titoli di Stato",
-   "note": "Rendimenti di Btp, Bund e Treasury non riportati nelle fonti datate di oggi"
+   "note": "Treasury non riportati nelle fonti datate di oggi"
   },
   {
    "items": [
@@ -147,24 +174,38 @@
   {
    "items": [
     {
-     "chg": 3,
+     "chg": -0.4,
      "name": "Brent",
-     "note": "Chiusura del 12 novembre, rialzo di oltre il 3% (CNBC)",
+     "note": "Ore 11:27 del 13 novembre (Ansa); ieri chiusura a 95,82 $",
      "story": "2026-11-13-brent-trump-iran-gas",
-     "value": "95,82 $",
-     "why": "Trump dice che gli Usa non hanno bisogno di un accordo con l'Iran."
+     "value": "95,44 $",
+     "why": "Dopo il rialzo di ieri legato alle parole di Trump sull'Iran."
+    },
+    {
+     "chg": -0.7,
+     "name": "Wti",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "88,11 $",
+     "why": ""
     },
     {
      "name": "Gas Ttf",
-     "note": "12 novembre sera (Ansa)",
+     "note": "Ore 11:27 del 13 novembre (Ansa); in calo",
      "story": "2026-11-13-brent-trump-iran-gas",
-     "value": "quasi 94 €/MWh",
-     "why": "Tensioni in Medio Oriente, secondo l'Ansa."
+     "value": "92,05 €/MWh",
+     "why": "Ieri sera era vicino a 94 euro per le tensioni in Medio Oriente."
+    },
+    {
+     "chg": -1.4,
+     "name": "Oro",
+     "note": "Ore 11:27 del 13 novembre (Ansa)",
+     "value": "3.898 $",
+     "why": ""
     }
    ],
    "key": "materie",
    "label": "Materie prime",
-   "note": "Wti e oro senza dato verificato di oggi"
+   "note": ""
   },
   {
    "items": [],
@@ -173,7 +214,7 @@
    "note": "Nessun dato verificato in questo aggiornamento"
   }
  ],
- "label": "Chiusure di ieri e Asia stamattina",
+ "label": "Dati di metà giornata",
  "sources": [
   {
    "name": "CNBC, Stock market today (12 novembre)",
@@ -192,9 +233,13 @@
    "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/lo-spread-tra-btp-e-bund-chiude-in-rialzo-a-1044-punti-base_fe08ba0d-ed74-4556-8577-50e1610d794f.html"
   },
   {
+   "name": "ANSA, Borsa: l'Europa poco mossa (13 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-leuropa-poco-mossa-lente-sulle-banche-centrali_c4e62533-77ac-4845-bf8f-1c8feae199b1.html"
+  },
+  {
    "name": "ANSA, gas vicino a 94 euro (12 novembre)",
    "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/il-prezzo-del-gas-corre-e-sfiora-i-94-euro-con-tensioni-medioriente_37283fb3-ab72-4cb0-bfb4-1aa473abdefa.html"
   }
  ],
- "summary": "Piazza Affari ha chiuso il 12 novembre a 51.808 punti (meno 0,27%); Wall Street ha perso circa lo 0,4% con Nvidia a meno 4,3%. Il Brent chiude a 95,82 dollari e lo yen supera quota 160 sul dollaro."
+ "summary": "A metà mattina le Borse europee sono poco mosse (Stoxx 600 +0,1%), con la tecnologia in calo dopo il caso Nvidia. Il Brent cede lo 0,4% a 95,44 dollari, l'oro perde l'1,4% a 3.898 dollari e lo spread Btp-Bund scende a 104 punti."
 }

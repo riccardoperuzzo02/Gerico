@@ -1,9 +1,9 @@
 {
   "lastPublish": {
-    "at": "2026-11-13T09:51:09+01:00",
-    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-13T13:21:34+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-13T07:29:00+01:00",
+  "lastRun": "2026-11-13T13:21:00+01:00",
   "marketsRun": {
     "at": "2026-11-12T18:46:56+01:00",
     "esito": "Aggiornate le chiusure del 12 novembre (Ansa): Ftse Mib -0,27%, Dax +0,41%, Cac 40 +0,34%, Ftse 100 +0,25%, spread 104,4. Mancano Aex, Smi, rendimenti, euro/dollaro, Brent e gas nelle fonti lette."
@@ -26,14 +26,14 @@
     "esito": "US 2 nuove (sparatoria a Washington, CBS letta; Van Hollen contro Schumer, solo feed)/0 aggiornate/1 archiviata (Hegseth); GB 2 nuove (Milburn sui sussidi, Iran e giornalisti, solo feed)/0/0; FR 1 nuova (licei e Lecornu, franceinfo letta)/0/0; DE 2 nuove (bilancio 2027, riforma dei servizi, solo feed)/0/0; ES 1 nuova (campagna elettorale, solo feed)/0/0. Tagesschau, Zeit, Sky e 20minutos non si aprono."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 34,
-    "at": "2026-11-13T07:29:00+01:00",
-    "factsChecked": 8,
-    "factsCorrected": 1,
-    "storiesArchived": 5,
-    "storiesNew": 7,
-    "storiesUpdated": 5
+    "articlesDiscarded": 2,
+    "articlesRead": 8,
+    "at": "2026-11-13T13:21:00+01:00",
+    "factsChecked": 2,
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 0,
+    "storiesUpdated": 3
   },
   "runningSince": null,
   "storiesLive": 21

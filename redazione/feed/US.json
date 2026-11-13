@@ -1,13 +1,34 @@
 {
  "code": "US",
- "asOf": "2026-11-13T05:17:34+00:00",
+ "asOf": "2026-11-13T07:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+   "desc": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
+   "at": "2026-11-13T07:15:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Widespread Microsoft outage takes down Outlook and other 365 services",
+   "desc": "A Microsoft outage on Thursday affected users of services like Outlook, Teams and 365.",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "at": "2026-11-13T06:42:27+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia on track for longest weekly losing streak since 2012 as market value sinks by $1.6 trillion",
+   "desc": "Jensen Huang's resignation added to Nvidia's market woes, with the stock already in a downward slide since early October.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+   "at": "2026-11-13T05:51:34+00:00"
+  },
   {
    "source": "New York Times",
    "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
    "desc": "The office of Stephen Miller, President Trump’s new chief of staff, outlined a new policy that seeks to show independence from special interests.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
-   "at": "2026-11-13T05:08:19+00:00"
+   "at": "2026-11-13T05:24:14+00:00"
   },
   {
    "source": "New York Times",
@@ -192,13 +213,6 @@
    "at": "2026-11-13T00:15:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-   "desc": "Oil prices were mixed on Thursday, after the latest comments from President Donald Trump raised worries that an end to the U.S.-Iran war was not in sight.",
-   "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-   "at": "2026-11-13T00:01:19+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Anthony Clark, Comic and ‘Yes, Dear’ Star, Dies at 63",
    "desc": "He first became a fixture in the Boston stand-up comedy scene before heading to Hollywood.",
@@ -302,13 +316,6 @@
    "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
    "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
    "at": "2026-11-12T22:28:15+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Widespread Microsoft outage takes down Outlook and other 365 services",
-   "desc": "A Microsoft outage on Thursday affected users of services like Outlook, Teams and 365.",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-12T22:24:12+00:00"
   },
   {
    "source": "CNBC",
@@ -575,13 +582,6 @@
    "desc": "Nebius' earnings report comes after fellow neoclouds IREN and CoreWeave showed better-than-expected results in the past week.",
    "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
    "at": "2026-11-12T17:53:31+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption'",
-   "desc": "Ryan Cotton, Bain Capital's head of real estate, sits for an interview with the Property Play video podcast.",
-   "url": "https://www.cnbc.com/2026/11/12/bain-capitals-head-of-real-estate-on-the-cocktail-of-disruption.html",
-   "at": "2026-11-12T17:50:59+00:00"
   },
   {
    "source": "CNBC",

@@ -1,7 +1,56 @@
 {
  "code": "DE",
- "asOf": "2026-11-13T07:17:34+00:00",
+ "asOf": "2026-11-13T09:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "ZDF-»Politbarometer«: AfD in Umfrage deutlicher vor Union",
+   "desc": "Wäre am Sonntag Bundestagswahl, läge die AfD laut einer Umfrage sechs Prozentpunkte vor der Union. Die Grünen kämen noch vor der SPD auf Platz drei.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/zdf-politbarometer-afd-cdu-spd-gruene-linke-bundestag-gxe",
+   "at": "2026-11-13T09:11:24+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: Iranische Revolutionsgarden melden Angriff auf US-Radaranlage",
+   "desc": "Der Iran hat eigenen Angaben zufolge ein US-Frühwarnsystem in Bahrain zerstört. Er plant weitere Angriffe auf US-Stützpunkte – auch in Europa. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-13T09:06:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Tote und Verletzte bei nächtlichen Drohnenangriffen Russlands",
+   "desc": "Die Ukraine meldet nach Drohneneinschlägen bei Sumy zwei Tote. Jared Kushner hält eine Beteiligung Europas an künftigen Verhandlungen für möglich. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-13T08:51:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt 2027: Opposition kritisiert Bundeshaushalt für das kommende Jahr",
+   "desc": "Vonseiten der Opposition gibt es deutliche Kritik an der Einigung im Haushaltsausschuss. Grünen-Fraktionschefin Haßelmann attestiert Bundeskanzler Merz Führungsschwäche.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-2027-friedrich-merz-stromsteuersenkung-zuckersteuer-gxe",
+   "at": "2026-11-13T08:48:45+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Werden die Milliarden für die Stromsteuer noch gefunden?",
+   "desc": "Bei der längsten Sitzung im Bundestag wurde in der Nacht jeder Cent umgedreht, damit der Bundesetat für 2027 steht. Gleichzeitig sucht die Regierungsspitze Milliarden für eine Stromsteuersenkung. Kann sie sie noch finden? Von Nicole Kohnert.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushalt-milliarden-100.html",
+   "at": "2026-11-13T08:36:42+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukrainekarte aktuell: Russische Truppen stoßen bei Lyman vor",
+   "desc": "In der Region Donezk halten russische Streitkräfte Stellungen nordöstlich der Stadt Lyman. Ukrainische Einheiten nahmen russische Militär- und Energieziele ins Visier",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
+   "at": "2026-11-13T08:12:55+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Geheimdienstreform: Bundestag entscheidet über Ausweitung der Befugnisse für Geheimdienste",
+   "desc": "Bundesinnenminister Dobrindt will die deutschen Nachrichtendienste zu »echten Geheimdiensten« machen. Der Bundestag befasst sich abschließend mit den Reformplänen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/geheimdienstreform-bundesregierung-nachrichtendienste-ueberwachung-gxe",
+   "at": "2026-11-13T07:16:10+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Haushaltsausschuss: Bundeshaushalt für 2027 steht",
@@ -10,24 +59,10 @@
    "at": "2026-11-13T06:40:10+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Geheimdienstreform: Bundestag entscheidet über Ausweitung der Befugnisse für Geheimdienste",
-   "desc": "Bundesinnenminister Dobrindt will die deutschen Nachrichtendienste zu »echten Geheimdiensten« machen. Der Bundestag befasst sich abschließend mit den Reformplänen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/geheimdienstreform-bundesregierung-nachrichtendienste-ueberwachung-gxe",
-   "at": "2026-11-13T06:38:28+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Werden die Milliarden für die Stromsteuer noch gefunden?",
-   "desc": "Bei der längsten Sitzung im Bundestag wird in der Nacht jeder Cent umgedreht, damit der Bundesetat für 2027 steht. Gleichzeitig sucht die Regierungsspitze Milliarden für eine Stromsteuersenkung. Kann sie sie noch finden? Von Nicole Kohnert.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushalt-milliarden-100.html",
-   "at": "2026-11-13T06:26:18+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Nachtsitzung im Haushaltsausschuss: Etat für 2027 steht",
    "desc": "Nach über 15 Stunden beendete der Haushaltsausschuss seine Beratungen - jetzt steht der Etat für das kommende Jahr. Insgesamt sind Ausgaben in Höhe von 560,9 Milliarden Euro geplant - mehr als ursprünglich vorgesehen war.",
-   "url": "https://www.tagesschau.de/inland/bundeshauhalt-2027-100.html",
+   "url": "https://www.tagesschau.de/inland/bundeshaushalt-2027-100.html",
    "at": "2026-11-13T06:26:14+00:00"
   },
   {
@@ -50,6 +85,13 @@
    "desc": "Aufstieg und Fall des Jensen Huang: Was wird nach seinem Rücktritt aus seinem Lebensprojekt Nvidia? Und: die Migrationsdebatte innerhalb der AfD",
    "url": "https://www.zeit.de/politik/2026-11/skandal-nvidia-affaeren-jensen-huang-nachrichtenpodcast",
    "at": "2026-11-13T04:59:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Russland und Europa: Putin zielt mit Trumps Hilfe auf ganz Europa",
+   "desc": "In den Verhandlungen um einen Frieden für die Ukraine fordert Russland nun eine neue Sicherheitsordnung für ganz Europa. Dahinter steckt eine gefährliche Strategie.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-europa-verhandlungen-usa-ukraine-5vor8",
+   "at": "2026-11-13T04:51:37+00:00"
   },
   {
    "source": "Die Zeit",
@@ -94,53 +136,11 @@
    "at": "2026-11-13T00:49:37+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Rutte sieht Einigkeit von USA und EU bei Ukraine-Sicherheitsgarantien",
-   "desc": "Der Nato-Generalsekretär spricht von einer Einigung bei Sicherheitsvereinbarungen zwischen EU, USA und Ukraine. Es soll keinen EU-Verhandlungsführer geben. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-12T23:35:41+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nvidia-Skandal: Singapur verbietet mutmaßlicher Spionin Alice Huang die Wiedereinreise",
-   "desc": "Jensen Huangs Affäre darf nicht mehr nach Singapur einreisen. Die Behörden ermitteln wegen möglicher Verstöße gegen Exportbeschränkungen, nicht wegen Spionage.",
-   "url": "https://www.zeit.de/politik/2026-11/alice-huang-singapur-megaspeed-einreiseverbot-server-nvidia-jensen-huang",
-   "at": "2026-11-12T21:20:34+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bayerischer Drohnenhersteller Quantum Systems meldet Cyberangriff",
    "desc": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
    "url": "https://www.tagesschau.de/inland/quantum-systems-cyberangriff-100.html",
    "at": "2026-11-12T21:09:07+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Attentat in Krakau: Polen zwischen Schock und Streit",
-   "desc": "Nach dem Attentat trauert Polen und kämpft zugleich um die Deutungshoheit. Was über die Motive des Täters bekannt ist – und wie es in der Verfassungskrise weitergeht.",
-   "url": "https://www.zeit.de/video/2026-11/attentat-polen-krakau-was-jetzt-videopodcast",
-   "at": "2026-11-12T19:58:21+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Israel: Israel verbietet französischem Präsidentschaftskandidaten Einreise",
-   "desc": "Israel wirft Jean-Luc Mélenchon vor, »Ritualmordlegenden« zu verbreiten. Der französische Linkspopulist könnte kommendes Jahr in der Stichwahl gegen Marine Le Pen stehen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/israel-einreiseverbot-jean-luc-melenchon-mathilde-panot",
-   "at": "2026-11-12T19:27:10+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Europäische Union: EU-Parlament lehnt neue Regeln für Finanzberater ab",
-   "desc": "Im EU-Parlament ist ein Gesetz für strengere Regeln für Versicherungs- und Finanzberater gescheitert. Unter anderem sollten Finanzprodukte ohne Mehrwert verboten werden.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-finanzberatung-versicherungsberatung-reform-provisionsverbot",
-   "at": "2026-11-12T19:19:32+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Istanbul-Konvention: Ungarns Regierung will Frauenschutzabkommen beitreten",
-   "desc": "Ungarns Ministerpräsident Péter Magyar strebt eine Ratifizierung der Istanbul-Konvention an. Sein Vorgänger Viktor Orbán lehnte diese als »Gender-Ideologie« ab.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/istanbul-konvention-peter-magyar-ungarn-viktor-orban",
-   "at": "2026-11-12T19:13:16+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -225,27 +225,6 @@
    "desc": "Mit dem Haushaltskompromiss zeigt sich vor allem die SPD zufrieden. Sie konnte einige Kürzungen abwenden. Bei der Union dagegen ist der Unmut nicht zu überhören. Von G. Schwarte.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-union-spd-102.html",
    "at": "2026-11-12T09:43:29+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Die Linke in Berlin: Darf eine belastete Partei die Hauptstadt regieren? - Podcast",
-   "desc": "Darf die Linke in Berlin regieren, obwohl Vorwürfe des Judenhasses die Koalition belasten? Ex-Linkenchefin Janine Wissler und Neuköllns Integrationsbeauftragte Güner Balci geraten darüber im SPIEGEL-Talk heftig aneinander.",
-   "url": "https://www.spiegel.de/politik/deutschland/die-linke-in-berlin-darf-eine-belastete-partei-die-hauptstadt-regieren-podcast-a-bd4bc612-7149-48c9-9d68-5c0cea525be3",
-   "at": "2026-11-12T08:37:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundeswehr-Flugbereitschaft: Warum so viele Regierungsmaschinen ohne Politiker herumfliegen",
-   "desc": "Die Regierungsflugzeuge sind noch immer in Köln stationiert. Das führt zu peinlichen Verspätungen und teuren Leerflügen. Erst 2036 soll die Flugbereitschaft nach Berlin umziehen – zu spät, kritisieren die Grünen.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundeswehr-flugbereitschaft-opposition-kritisiert-spaeten-umzug-nach-berlin-a-2e521026-da91-4f74-94f6-b34c587fb0e4",
-   "at": "2026-11-12T08:36:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Worauf sich die Bundesregierung beim Haushalt geeinigt hat",
-   "desc": "Manches kommt gar nicht, anderes später: Kurz vor den wichtigen Beratungen des Haushaltsausschusses hat sich die Bundesregierung auf Kompromisse verständigt. Was wird nun aus Strom-, Zucker- und Plastiksteuer? Ein Überblick.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundesregierung-haushalt-kompromisse-100.html",
-   "at": "2026-11-12T08:12:13+00:00"
   }
  ]
 }

@@ -1,20 +1,41 @@
 {
  "code": "US",
- "asOf": "2026-11-13T07:17:34+00:00",
+ "asOf": "2026-11-13T09:17:34+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
-   "desc": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
-   "at": "2026-11-13T07:15:01+00:00"
+   "title": "Nvidia stock inches higher as investors continue to weigh Jensen Huang’s departure",
+   "desc": "Jensen Huang resigned as CEO of Nvidia on Thursday after coming under scrutiny for two extramarital affairs.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
+   "at": "2026-11-13T09:12:38+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Treasury yields rise as traders strengthen Fed rate hike bets",
+   "desc": "Treasury yields moved higher as investor expectations for a December rate hike by the Federal Reserve gain strength.",
+   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "at": "2026-11-13T08:50:43+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
+   "desc": "That shift comes as Nvidia grapples with the fallout from Huang's resignation, following revelations about his multiple affairs.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
+   "at": "2026-11-13T08:27:07+00:00"
   },
   {
    "source": "CNBC",
    "title": "Widespread Microsoft outage takes down Outlook and other 365 services",
    "desc": "A Microsoft outage on Thursday affected users of services like Outlook, Teams and 365.",
    "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-13T06:42:27+00:00"
+   "at": "2026-11-13T08:05:49+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Why Singapore keeps turning up in the fight over Nvidia chips and China",
+   "desc": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
+   "at": "2026-11-13T07:15:01+00:00"
   },
   {
    "source": "CNBC",
@@ -28,7 +49,7 @@
    "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
    "desc": "The office of Stephen Miller, President Trump’s new chief of staff, outlined a new policy that seeks to show independence from special interests.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
-   "at": "2026-11-13T05:24:14+00:00"
+   "at": "2026-11-13T05:24:15+00:00"
   },
   {
    "source": "New York Times",
@@ -43,13 +64,6 @@
    "desc": "The retention of Wachtell, Lipton for the Nvidia probe comes on the heels of the law firm's investigation for the NBA into the Los Angeles Clippers.",
    "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html",
    "at": "2026-11-13T04:07:44+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "As Nvidia reels from Huang's affairs, who stands to gain?",
-   "desc": "That shift comes as Nvidia grapples with the fallout from Huang's resignation, following revelations about his multiple affairs.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
-   "at": "2026-11-13T03:59:40+00:00"
   },
   {
    "source": "NPR",
@@ -542,13 +556,6 @@
    "at": "2026-11-12T19:05:25+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jensen and Lori Huang's Nvidia fortune is jointly controlled. How that makes things complicated now that he's resigned",
-   "desc": "Jensen Huang’s $140 billion stake in Nvidia is largely held by trusts co-owned with his wife, Lori, creating added uncertainty for his financial future.",
-   "url": "https://www.cnbc.com/2026/11/12/inside-jensen-and-lori-huangs-jointly-controlled-nvidia-fortune.html",
-   "at": "2026-11-12T19:00:12+00:00"
-  },
-  {
    "source": "NPR",
    "title": "'Punch in the gut': Homes sales fall to their lowest in 16 years",
    "desc": "Existing homes sales in October declined 8.8% from a year earlier, according to the National Association of Realtors.",
@@ -575,13 +582,6 @@
    "desc": "Moderate Democrats and progressives have long feuded over who should drive their party’s economic agenda. But many newly elected members say they share the same big goals.",
    "url": "https://www.nytimes.com/2026/11/12/us/politics/democrats-majorities-economic-populism.html",
    "at": "2026-11-12T18:00:19+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nebius falls 16% as company expects increased 2026 capex spend, issues weak outlook",
-   "desc": "Nebius' earnings report comes after fellow neoclouds IREN and CoreWeave showed better-than-expected results in the past week.",
-   "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
-   "at": "2026-11-12T17:53:31+00:00"
   },
   {
    "source": "CNBC",

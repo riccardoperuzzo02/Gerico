@@ -1,7 +1,42 @@
 {
  "code": "ES",
- "asOf": "2026-11-13T07:17:34+00:00",
+ "asOf": "2026-11-13T09:17:34+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "Canarias",
+   "desc": "Un hombre de 45 años ha resultado herido por inhalación de humo y ha sido trasladado en ambulancia a Hospitales Universitarios San Roque Maspalomas Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/13/6af6d460e85ece27098b45ca.html",
+   "at": "2026-11-13T09:12:02+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La reacción de Feijóo al ver el vídeo de Anotop At que ha compartido el PP en el que la IA 'lo convierte' en rapero",
+   "desc": "El tema recupera uno de los momentos más comentados de Feijóo en la Cámara Baja, cuando trató de hacer un juego de palabras con la serie Cercas Anatomía de un instante y terminó pronunciando \"Anotop At\".",
+   "url": "https://www.20minutos.es/nacional/reaccion-feijoo-ver-video-anotop-at-que-ha-compartido-pp-que-ia-convierte-rapero_7060567_0.html",
+   "at": "2026-11-13T08:27:26+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "El presidente, que lo negó la semana pasada, sí se vio 35 minutos con Cristian Corvillo en Córdoba, una cita que fue impulsada, para sorpresa del imputado, por la propia Moncloa Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/12/6af61ead21efa0bb048b458b.html",
+   "at": "2026-11-13T07:49:28+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Sucesos",
+   "desc": "Otra mujer de 23 años que presenció el ataquetuvo que ser atendida tras sufrir una crisis convulsiva Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/13/6af6bcdee9cf4af8048b456e.html",
+   "at": "2026-11-13T07:31:45+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Si empezáramos de nuevo",
+   "desc": "Mis cuadernos tienen demasiados entierros disfrazados de poesía para alguien que quiere recalcar en su tumba que no es poeta. Escribiría sobre tus ojos, aunque sería inútil: todavía no conozco un idioma capaz de explicar de qué color son.",
+   "url": "https://www.20minutos.es/nacional/blogs/1-de-cada10/si-empezaramos-nuevo_7058327_0.html",
+   "at": "2026-11-13T06:30:00+00:00"
+  },
   {
    "source": "El País",
    "title": "Expertos y ‘think tanks’ ven riesgos para la disciplina fiscal en el programa económico del PP",
@@ -81,8 +116,8 @@
   },
   {
    "source": "20minutos",
-   "title": "Entrevistas de Jordi Wild, en directo | El 'youtuber' publica esta mañana y de forma sucesiva las entrevistas a Colau, Feijoo y Sánchez",
-   "desc": "Ada Colau abrirá la serie de entrevistas a las 8.00 horas, seguida de Alberto Núñez Feijóo a las 10.00 y Pedro Sánchez a las 12.00.",
+   "title": "Entrevistas de Jordi Wild, en directo | Ada Colau, en su entrevista con Jordi Wild: \"Me propusieron ser ministra en el Gobierno de Sánchez, y dije que no\"",
+   "desc": "Ada Colau abrirá la serie de entrevistas a las 8.00 horas, seguida de Alberto Núñez Feijóo a las 10.00 y Pedro Sánchez a las 12.00 horas de este viernes.",
    "url": "https://www.20minutos.es/nacional/entrevistas-jordi-wild-directo-youtuber-publica-esta-manana-forma-sucesiva-las-entrevistas-colau-feijoo-sanchez_7060536_6.html",
    "at": "2026-11-13T03:56:08+00:00"
   },
@@ -127,13 +162,6 @@
    "desc": "Hay 85 detenidos por intentar embarcar con documentación falsa o ajena",
    "url": "https://www.elmundo.es/espana/2026/11/12/6af61fa1e4d4d8845c8b4586.html",
    "at": "2026-11-12T22:14:43+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "El presidente, que lo negó la semana pasada, sí se vio 35 minutos con Cristian Corvillo en Córdoba, una cita que fue impulsada, para sorpresa del imputado, por la propia Moncloa Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/12/6af61ead21efa0bb048b458b.html",
-   "at": "2026-11-12T21:49:56+00:00"
   },
   {
    "source": "El Mundo",
@@ -298,6 +326,13 @@
   },
   {
    "source": "El Mundo",
+   "title": "11-N",
+   "desc": "La capital catalana volvió a arder con escaparates reventados y algaradas contra los 'mossos' en una jornada que dejó un centenar de detenidos por toda España Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/11/6af4d97dfc6c83e1258b459e.html",
+   "at": "2026-11-12T17:48:20+00:00"
+  },
+  {
+   "source": "El Mundo",
    "title": "España",
    "desc": "Acepta el recurso del PP para declarar nulos los votos a las elecciones generales del 29-N en los que se tache el nombre del ex ministro de Transportes Leer",
    "url": "https://www.elmundo.es/espana/2026/11/12/6af5f76ae85eceda458b4573.html",
@@ -316,20 +351,6 @@
    "desc": "El organismo revoca la decisión de la junta electoral provincial ya que la decisión del exministro llegó cuando las listas ya eran oficiales y no permitían modificaciones.",
    "url": "https://www.20minutos.es/nacional/junta-electoral-central-avisa-que-no-aceptara-las-papeletas-psoe-por-valladolid-con-nombre-puente-tachado_7060441_0.html",
    "at": "2026-11-12T17:30:34+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Vox propone para el 29N rebajas fiscales, EVAU y tarjeta sanitaria únicas y repatriar inmigrantes ilegales o que \"no contribuyan\"",
-   "desc": "Los de Abascal presenta su programa para las elecciones generales y apuestan por la \"prioridad nacional\" para los españoles en el acceso a servicios públicos, recuperar la energía nuclear, endurecer el acceso a la nacionalidad española y militarizar la frontera de Ceuta y Melilla.",
-   "url": "https://www.20minutos.es/nacional/vox-propone-para-29n-rebajas-fiscales-evau-tarjeta-sanitaria-unicas-repatriar-inmigrantes-ilegales-que-no-contribuyan_7060426_0.html",
-   "at": "2026-11-12T17:19:52+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El exchófer de Sánchez imputado en el caso Koldo reveló en 2023 una reunión \"a solas\" con el presidente para hablar de Ábalos",
-   "desc": "La UCO implica a Cristian Corvillo en la compra de un inmueble para la novia de Ábalos, Andrea de la Torre.",
-   "url": "https://www.20minutos.es/nacional/exchofer-sanchez-imputado-caso-koldo-revelo-2023-una-reunion-solas-con-presidente-para-hablar-abalos_7060443_0.html",
-   "at": "2026-11-12T17:18:58+00:00"
   },
   {
    "source": "El Mundo",
@@ -435,34 +456,6 @@
    "desc": "El incidente, que no dejó heridos, ocurrió a las 16:30 horas en el número 1 de la calle Federico Chueca, en Las Palmas Leer",
    "url": "https://www.elmundo.es/espana/2026/11/12/6af58298e85ece24768b459c.html",
    "at": "2026-11-12T09:24:31+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Interior ordena investigar las cargas policiales durante la huelga y prohíbe el uso de gas lacrimógeno contra manifestantes",
-   "desc": "Marlaska ha solicitado investigaciones específicas sobre las actuaciones policiales del 11N, que dejó 47 detenidos en toda España. Bolaños descarta su cese pese a admitir que algunas imágenes de las cargas no le han \"gustado\".",
-   "url": "https://www.20minutos.es/nacional/interior-ordena-investigar-las-cargas-policiales-durante-huelga-general-prohibe-uso-gas-lacrimogeno-contra-manifestantes_7060086_0.html",
-   "at": "2026-11-12T09:03:03+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Castilla-La Mancha",
-   "desc": "La utilización de este tipo de plataformas de IA permitió al investigado disponer de capacidades técnicas significativamente superiores a las que corresponderían a su formación previa, reduciendo las barreras de conocimiento tradicionalmente necesarias para desarrollar este tipo de actividades Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/12/6af57845e9cf4a3a778b457a.html",
-   "at": "2026-11-12T08:28:56+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "“Se ha cagado”: los ‘youtubers’ reaccionan al plantón de Abascal con Jordi Wild y la órbita de Vox lanza teorías conspiranoicas",
-   "desc": "El Xokas pide no votar a Vox. Ibai Llanos y AuronPlay critican al líder de extrema derecha. Y hasta el agitador ultra Vito Quiles: “Un error”",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/se-ha-cagado-los-youtubers-reaccionan-al-planton-de-abascal-con-jordi-wild-y-la-orbita-de-vox-lanza-teorias-conspiranoicas.html",
-   "at": "2026-11-12T08:11:00+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "El tiempo",
-   "desc": "Meteorología ha activado el aviso amarillo por lluvias persistentes en zonas de A Coruña, Asturias, Cantabria, Girona, Navarra, Ourense, Pontevedra, y fuertes en Gran Canaria, Fuerteventura y Lanzarote Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/12/6af56a00fc6c83ff228b4591.html",
-   "at": "2026-11-12T07:26:01+00:00"
   }
  ]
 }

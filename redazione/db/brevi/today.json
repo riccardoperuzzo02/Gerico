@@ -1,104 +1,20 @@
 {
-  "asOf": "2026-11-12T13:19:46+01:00",
-  "date": "2026-11-12",
+  "asOf": "2026-11-13T07:24:00+01:00",
+  "date": "2026-11-13",
   "items": [
-    {
-      "at": "2026-11-12T13:08:00+01:00",
-      "section": "tecnologia",
-      "source": "ANSA",
-      "title": "L'Ue si dice preoccupata per le notizie su Starshield e chiede a SpaceX di mantenere il servizio",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/ue-preoccupati-per-notizie-su-starshield-se-vero-e-inaccettabile_bcd112a6-d9d2-4f27-9320-9512919c0d3d.html"
-    },
-    {
-      "at": "2026-11-12T12:18:00+01:00",
-      "section": "mondo",
-      "source": "ANSA",
-      "title": "Von der Leyen annuncia entro novembre un 22° pacchetto di sanzioni alla Russia e opzioni di sostegno a Kiev",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/von-der-leyen-nuove-sanzioni-e-opzioni-per-sostegno-a-kiev-entro_07c60b9b-5ccc-447b-8d4c-9599eb3e350d.html"
-    },
-    {
-      "at": "2026-11-12T11:09:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Zelensky dice che la velocità di Starshield è di nuovo limitata e ostacola la difesa ucraina",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/zelenskiy-says-starshield-speed-limited-again-hampering-ukraine-s-defences"
-    },
-    {
-      "at": "2026-11-12T12:41:00+01:00",
-      "section": "italia",
-      "source": "ANSA",
-      "title": "Il governo chiede 18 milioni di danni agli imputati nel caso dei fondi ad Hamas",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/governo-chiede-18-milioni-di-euro-di-danni-agli-imputati-per-i-fondi-ad-hamas_cb0fabd6-ee16-424e-9d1d-ec0263468dfd.html"
-    },
-    {
-      "at": "2026-11-12T10:53:00+01:00",
-      "section": "economia",
-      "source": "ANSA",
-      "title": "La Bce dice che gli spread alti hanno contribuito al calo dell'euro",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/la-bce-pungola-la-francia-spread-alti-hanno-contribuito-al-calo-delleuro_1d14e36f-ac49-4b99-8887-c71708131902.html"
-    },
-    {
-      "at": "2026-11-12T12:48:00+01:00",
-      "section": "economia",
-      "source": "ANSA",
-      "title": "Terna chiude i primi nove mesi con ricavi in aumento dell'8,1%",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/terna-ricavi-in-aumento-dell81-e-investimenti-127-nei-primi-nove-mesi_ce45820a-9142-47d6-8a0b-3e1a6be3c648.html"
-    },
-    {
-      "at": "",
-      "section": "mondo",
-      "source": "Al Jazeera",
-      "title": "Un crollo parziale di un edificio a Brooklyn uccide due persone e ne ferisce più di dieci",
-      "url": "https://www.aljazeera.com/news/2026/11/12/building-collapse-in-brooklyn-kills-two-injures-more-than-a-dozen"
-    },
-    {
-      "at": "2026-11-12T12:16:00+01:00",
-      "section": "mondo",
-      "source": "ANSA",
-      "title": "Il Parlamento europeo definisce genocidio la deportazione di minori ucraini in Russia",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/eurocamera-deportazione-di-minori-ucraini-in-russia-rappresenta-genocidio_8670a044-9796-4e3e-a13b-804aa09ab7f8.html"
-    },
-    {
-      "at": "2026-11-12T07:04:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Un raid israeliano sull'ospedale Nasser, nel sud di Gaza, uccide almeno sei persone, dice la Protezione civile di Gaza",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/israeli-strike-on-southern-gaza-hospital-kills-four-gaza-civil-defence-says"
-    },
-    {
-      "at": "2026-11-12T06:12:00+01:00",
-      "section": "economia",
-      "source": "ANSA",
-      "title": "Imprese e sindacati firmano l'intesa su rappresentanza e rinnovi dei contratti",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/12/imprese-sindacati-siglata-lintesa-su-rappresentanza-e-contratti_4026ec75-1d1c-4408-aae0-37105f2b1b40.html"
-    },
-    {
-      "at": "2026-11-12T06:06:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Medici senza frontiere dicono che l'epidemia di Ebola in Congo è fuori controllo dopo sei mesi",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/congo-ebola-outbreak-still-out-of-control-after-six-months-msf-says"
-    },
-    {
-      "at": "2026-11-12T06:01:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Il vicepresidente indonesiano Gibran consegna le dimissioni al Senato",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/indonesia-vp-gibran-hands-in-his-resignation-to-upper-house"
-    },
-    {
-      "at": "2026-11-12T05:49:00+01:00",
-      "section": "mondo",
-      "source": "Reuters",
-      "title": "Xi Jinping dice che la «riunificazione» con Taiwan deve avvenire perché la storia non si può fermare",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/china-s-xi-says-taiwan-reunification-must-happen-as-history-cannot-be-stopped"
-    },
-    {
-      "at": "",
-      "section": "tecnologia",
-      "source": "Open",
-      "title": "Le autorità europee e italiane segnalano rischi di attacchi informatici per 177 infrastrutture strategiche",
-      "url": "https://www.open.online/2026/11/11/hacker-attacchi-elettrodomestici-acqua-sanita-trasporti/"
-    }
+    {"at": "", "section": "mondo", "source": "Al Jazeera", "title": "Trump dice di valutare la caduta del governo cubano prima della fine del mandato", "url": "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office"},
+    {"at": "2026-11-13T05:05:00+01:00", "section": "mondo", "source": "Reuters", "title": "La Cina fa un'esercitazione militare non annunciata nel Pacifico e intorno a Taiwan, dicono funzionari taiwanesi", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/13/china-stages-unannounced-pacific-drills-in-silent-intimidation-of-taiwan-officials-say"},
+    {"at": "", "section": "mondo", "source": "Al Jazeera", "title": "Un tribunale spagnolo sospende un gruppo di estrema destra per presunti crimini d'odio", "url": "https://www.aljazeera.com/news/2026/11/13/spanish-court-suspends-far-right-group-over-alleged-hate-crimes"},
+    {"at": "", "section": "mondo", "source": "Al Jazeera", "title": "Il Libano chiede alla Siria l'estradizione dei sospettati dell'uccisione di un ex deputato iracheno", "url": "https://www.aljazeera.com/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects"},
+    {"at": "2026-11-12T19:51:00+01:00", "section": "mondo", "source": "Il Post", "title": "Israele vieta l'ingresso a Jean-Luc Mélenchon, candidato di sinistra alle presidenziali francesi", "url": "https://www.ilpost.it/2026/11/12/israele-ha-vietato-ingresso-jean-luc-melenchon/"},
+    {"at": "2026-11-12T23:29:00+01:00", "section": "mondo", "source": "Reuters", "title": "Un uomo armato uccide una persona e ne ferisce quattro in una palestra vicino alla Casa Bianca", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/heavily-armed-police-respond-to-washington-dc-active-shooter-incident"},
+    {"at": "", "section": "mondo", "source": "Al Jazeera", "title": "Gli Houthi riprendono gli attacchi contro l'Arabia Saudita mentre l'Onu prolunga le sanzioni", "url": "https://www.aljazeera.com/news/2026/11/12/yemens-houthis-renew-strikes-on-saudi-arabia-as-unsc-extends-sanctions"},
+    {"at": "2026-11-12T20:15:00+01:00", "section": "italia", "source": "Il Post", "title": "A Ventimiglia un gruppo di migranti è travolto dalla piena del fiume Roja: otto salvati, sei dispersi", "url": "https://www.ilpost.it/2026/11/12/ventimiglia-persone-migranti-travolte-fiume/"},
+    {"at": "", "section": "italia", "source": "Open", "title": "Maltempo in Toscana: fiumi esondati, frane e circa cento sfollati a Massa", "url": "https://www.open.online/2026/11/12/maltempo-toscana-allerta-rossa-12-novembre/"},
+    {"at": "2026-11-12T18:25:00+01:00", "section": "economia", "source": "ANSA", "title": "Enel porta l'acconto sul dividendo 2026 a 0,245 euro per azione, il 7% in più dell'anno scorso", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/enel-acconto-sul-dividendo-2026-sale-a-0245-euro-per-azione_37ceeb30-e745-4f2e-ae9f-b595d4e4308b.html"},
+    {"at": "2026-11-12T19:25:00+01:00", "section": "economia", "source": "ANSA", "title": "Webuild raccoglie nuovi ordini per 11,1 miliardi da inizio anno e conferma la guidance 2026", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/webuild-nuovi-ordini-111-miliardi-da-inizio-anno-confermata-guidance-2026_a9e1e2ef-075b-42eb-9b51-6c6b4258db6a.html"},
+    {"at": "2026-11-12T19:08:00+01:00", "section": "economia", "source": "ANSA", "title": "La cinese Leapmotor produrrà auto elettriche per Stellantis a Pomigliano", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/a-pomigliano-la-cinese-leapmotor-per-le-e-car-di-stellantis_5c4014b7-dd35-40f4-92dd-2d61a3c31d30.html"},
+    {"at": "2026-11-13T05:49:00+01:00", "section": "tecnologia", "source": "Reuters", "title": "La Corea del Sud dice che Google ha tolto le coordinate coreane da Maps per un permesso di esportazione", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/13/south-korea-says-google-has-removed-korean-coordinates-from-maps-under-export-permit"},
+    {"at": "2026-11-12T22:40:00+01:00", "section": "tecnologia", "source": "Reuters", "title": "Secondo l'Fbi hacker legati alla Corea del Nord hanno rubato oltre 400 milioni di dollari in criptovalute", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/north-korean-hackers-steal-more-than-400-million-using-video-images-fbi-says"}
   ]
 }

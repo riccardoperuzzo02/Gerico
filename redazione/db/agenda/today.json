@@ -1,19 +1,20 @@
 {
-  "asOf": "2026-11-12T07:24:00+01:00",
-  "date": "2026-11-12",
+  "asOf": "2026-11-13T07:24:00+01:00",
+  "date": "2026-11-13",
   "items": [
-    {"actual": "", "country": "Regno Unito", "currency": "GBP", "event": "PIL, trimestrale", "expected": "0,7%", "impact": "alto", "previous": "0,5%", "time": "08:00"},
-    {"actual": "", "country": "Regno Unito", "currency": "GBP", "event": "Produzione industriale, annuale", "expected": "", "impact": "medio", "previous": "1,6%", "time": "08:00"},
-    {"actual": "", "country": "Regno Unito", "currency": "GBP", "event": "Bilancia commerciale dei beni", "expected": "-19,2 mld £", "impact": "basso", "previous": "-18,01 mld £", "time": "08:00"},
-    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Richieste settimanali di sussidi di disoccupazione", "expected": "195.000", "impact": "alto", "previous": "189.000", "time": "14:30"},
-    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Vendite di case esistenti", "expected": "3,98 mln", "impact": "medio", "previous": "3,99 mln", "time": "16:00"},
-    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Scorte settimanali di petrolio", "expected": "", "impact": "medio", "previous": "-865.000 barili", "time": "18:00"},
-    {"actual": "", "country": "Russia", "currency": "USD", "event": "Witkoff e Kushner a Mosca per l'incontro con Putin (le fonti non danno l'ora)", "expected": "", "impact": "medio", "previous": "", "time": ""}
+    {"actual": "", "country": "Unione Europea", "currency": "EUR", "event": "PIL, annuale", "expected": "1,3%", "impact": "alto", "previous": "1,2%", "time": "11:00"},
+    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Prezzi alla produzione (PPI), mensile", "expected": "0,4%", "impact": "alto", "previous": "1,3%", "time": "14:30"},
+    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Prezzi alla produzione (PPI), annuale", "expected": "6,6%", "impact": "alto", "previous": "6,3%", "time": "14:30"},
+    {"actual": "", "country": "Stati Uniti", "currency": "USD", "event": "Stoccaggi di gas, settimanale", "expected": "", "impact": "basso", "previous": "77 mld piedi cubi", "time": "16:30"}
   ],
   "sources": [
     {
       "name": "Teleborsa, appuntamenti macroeconomici della settimana del 9 novembre",
       "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/appuntamenti-macroeconomici-settimana-del-9-novembre-2026-13_2026-11-09_TLB-AUTO.html?lang=it"
+    },
+    {
+      "name": "CNBC, Stock market today (12 novembre)",
+      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html"
     }
   ]
 }

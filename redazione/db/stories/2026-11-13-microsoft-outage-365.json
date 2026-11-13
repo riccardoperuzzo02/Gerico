@@ -1,0 +1,78 @@
+{
+  "article": "I servizi di Microsoft 365, tra cui la posta Outlook e la piattaforma Teams, sono in disservizio da molte ore in diversi paesi, e le misure adottate finora non hanno dato i risultati attesi, ha detto l'azienda secondo l'Ansa e Il Post. Il Post riferisce che Microsoft parla di una «parziale ripresa» in alcuni paesi, senza dire quali, e che i servizi in questione sono usati da oltre 430 milioni di persone.\n\nSecondo Il Post le segnalazioni sono circa 130mila da più di 70 paesi, tra cui Stati Uniti, Canada, quasi tutti i paesi dell'Unione europea, Regno Unito, India, Giappone e Australia, come mostra la mappa di Downdetector. Al Jazeera scrive che i server sono andati offline in modo inatteso e che il disservizio ha colpito Outlook, Teams, Copilot e altri servizi; Il Post aggiunge che i problemi toccano il lavoro di molte aziende e di alcuni governi, tra cui quelli di Giappone e Singapore.\n\nSulla causa, Microsoft ha spiegato che i server gestivano un traffico molto elevato con errori di connessione e che il carico non dipendeva da un aumento di traffico, ma da server diventati indisponibili senza preavviso, che hanno sovraccaricato il resto dell'infrastruttura, riferisce Il Post. L'azienda esclude che dietro ci sia un attacco informatico. L'Ansa scrive che Microsoft sta cercando soluzioni alternative.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Outlook, Teams e altri servizi Microsoft 365 sono in disservizio in molti paesi e le misure adottate non hanno funzionato come previsto.",
+      "who": ["ANSA", "Il Post"]
+    },
+    {
+      "text": "Downdetector registra circa 130mila segnalazioni da più di 70 paesi, secondo Il Post.",
+      "who": ["Il Post"]
+    },
+    {
+      "text": "Microsoft dice che server indisponibili in modo inatteso hanno sovraccaricato l'infrastruttura e che non c'è un attacco informatico.",
+      "who": ["Il Post", "Al Jazeera"]
+    },
+    {
+      "text": "Microsoft parla di una parziale ripresa in alcuni paesi, senza indicarli.",
+      "who": ["Il Post"]
+    }
+  ],
+  "firstSeen": "2026-11-13T07:23:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-13T07:23:00+01:00",
+      "text": "Prima notizia: disservizio di Microsoft 365 in oltre 70 paesi, le misure non risolvono il problema."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Quando i servizi Microsoft 365 torneranno a funzionare in modo stabile?",
+    "Perché i server sono diventati indisponibili in modo inatteso?"
+  ],
+  "places": ["US"],
+  "rank": 8,
+  "section": "tecnologia",
+  "sources": [
+    {
+      "angle": "Misure che non funzionano come previsto, soluzioni alternative.",
+      "area": "Italia",
+      "at": "2026-11-13T06:03:00+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/13/microsoft-le-misure-per-risolvere-falle-outlook-non-funzionano-come-previsto_807396b2-0061-4372-8b7e-1575c1ebb11c.html"
+    },
+    {
+      "angle": "Numero di segnalazioni, paesi coinvolti, causa dichiarata, esclusione di un attacco.",
+      "area": "Italia",
+      "at": "2026-11-13T07:00:00+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/13/microsoft-accesso-servizi-problema/"
+    },
+    {
+      "angle": "Server offline, servizi colpiti: Outlook, Teams, Copilot.",
+      "area": "Medio Oriente",
+      "date": "2026-11-12",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users"
+    }
+  ],
+  "status": "live",
+  "summary": "I servizi Microsoft 365, tra cui Outlook e Teams, sono in disservizio in oltre 70 paesi e le misure adottate non hanno risolto il problema. Microsoft esclude un attacco informatico.",
+  "tags": ["Microsoft", "Cloud", "Cybersicurezza"],
+  "themes": [],
+  "title": "Microsoft: disservizio di Outlook e Teams in oltre 70 paesi",
+  "updated": "2026-11-13T07:23:00+01:00",
+  "view": "È accertato che il disservizio dura da ore e che Microsoft non ha ancora risolto. La causa indicata è un guasto interno ai server: è la versione dell'azienda, senza verifiche indipendenti nelle fonti lette.\n\nConta perché i servizi sono usati da aziende e amministrazioni. Da guardare: il ripristino, il resoconto tecnico di Microsoft e le conseguenze per i clienti.",
+  "figure": {
+    "value": "130mila",
+    "label": "le segnalazioni di disservizio Microsoft da oltre 70 paesi"
+  }
+}

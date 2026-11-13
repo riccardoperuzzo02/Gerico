@@ -1,0 +1,92 @@
+{
+  "article": "Il Brent ha chiuso il 12 novembre a 95,82 dollari al barile, con un rialzo di oltre il 3%, dopo che Donald Trump ha scritto che gli Stati Uniti «non hanno bisogno di un accordo con l'Iran», riferisce CNBC. L'emittente scrive che le parole del presidente hanno alimentato i timori che il conflitto tra Stati Uniti e Iran possa durare a lungo. In mattinata, secondo Al Jazeera, il greggio saliva dell'1,39% a 92,76 dollari dopo il rifiuto iraniano di trasferire all'estero le scorte di uranio arricchito.\n\nIl Times of Israel scrive che Trump ha pubblicato il messaggio su Truth Social chiedendo al vicepresidente Vance di occuparsi delle frodi interne e non dei negoziati con Teheran. Dopo le sue dichiarazioni, riferisce il giornale, il petrolio è salito e i future di Wall Street sono scesi. Il 13 mattina i Pasdaran hanno detto di aver preso di mira un radar americano in Bahrein, secondo Reuters.\n\nAnche il gas europeo è salito. L'Ansa scrive che il prezzo si è avvicinato ai 94 euro al megawattora nella serata del 12 novembre, per le tensioni in Medio Oriente; l'11 novembre era a 86 euro, secondo la stessa agenzia.\n\nSulle Borse, CNBC riporta che il Nasdaq e l'S&P 500 hanno perso circa lo 0,4% il 12 novembre e il Dow quasi 190 punti, con Nvidia in calo del 4,3% dopo le dimissioni di Huang. Gli indici restavano su un andamento settimanale tra i migliori da inizio agosto. Il 13 mattina, sempre secondo CNBC, i mercati asiatici erano in maggioranza in rialzo: il Kospi sudcoreano saliva di circa il 2,8% in apertura e il Nikkei dell'1%, mentre lo yen ha superato quota 160 sul dollaro e il ministro delle Finanze giapponese ha avvertito di un possibile intervento. CNBC indica anche, per oggi, i prezzi alla produzione Usa di ottobre, attesi in rialzo dello 0,4% sul mese.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Il Brent ha chiuso il 12 novembre a 95,82 dollari, con un rialzo di oltre il 3%, dopo le parole di Trump sull'accordo con l'Iran.",
+      "who": ["CNBC"]
+    },
+    {
+      "text": "In mattinata il Brent saliva dell'1,39% a 92,76 dollari dopo il rifiuto iraniano sull'uranio, secondo Al Jazeera.",
+      "who": ["Al Jazeera"]
+    },
+    {
+      "text": "Trump ha scritto su Truth Social che gli Usa non hanno bisogno di un accordo con l'Iran; dopo il messaggio il petrolio è salito.",
+      "who": ["Times of Israel", "CNBC"]
+    },
+    {
+      "text": "Il gas europeo si avvicina a 94 euro al megawattora per le tensioni in Medio Oriente.",
+      "who": ["ANSA"]
+    },
+    {
+      "text": "Lo yen ha superato quota 160 sul dollaro e il ministro delle Finanze giapponese avverte di un possibile intervento.",
+      "who": ["CNBC"]
+    }
+  ],
+  "firstSeen": "2026-11-13T07:23:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-13T07:23:00+01:00",
+      "text": "Prima notizia: Brent a 95,82 dollari dopo le parole di Trump sull'Iran; gas europeo vicino a 94 euro."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Il Brent resterà sopra i 95 dollari alla riapertura dei mercati?",
+    "Il Giappone interverrà sul cambio con lo yen sopra quota 160?",
+    "Come reagiranno i mercati ai prezzi alla produzione Usa di oggi?"
+  ],
+  "places": ["IR", "US"],
+  "rank": 5,
+  "section": "mercati",
+  "sources": [
+    {
+      "angle": "Chiusura del Brent a 95,82 dollari, Wall Street, Asia e yen.",
+      "area": "Stati Uniti",
+      "date": "2026-11-12",
+      "country": "Stati Uniti",
+      "kind": "tv",
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html"
+    },
+    {
+      "angle": "Il messaggio di Trump su Truth Social e la reazione del petrolio e dei future.",
+      "area": "Medio Oriente",
+      "at": "2026-11-13T07:00:00+01:00",
+      "country": "Israele",
+      "kind": "giornale",
+      "name": "Times of Israel",
+      "url": "https://www.timesofisrael.com/trump-tells-vance-to-shift-his-focus-as-us-doesnt-need-a-deal-with-iran/"
+    },
+    {
+      "angle": "Gas europeo vicino a 94 euro.",
+      "area": "Italia",
+      "date": "2026-11-12",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/il-prezzo-del-gas-corre-e-sfiora-i-94-euro-con-tensioni-medioriente_37283fb3-ab72-4cb0-bfb4-1aa473abdefa.html"
+    },
+    {
+      "angle": "Brent in rialzo dell'1,39% a 92,76 dollari in mattinata dopo il rifiuto iraniano sull'uranio.",
+      "area": "Medio Oriente",
+      "at": "2026-11-12T07:00:00+01:00",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack"
+    }
+  ],
+  "status": "live",
+  "summary": "Il Brent chiude a 95,82 dollari con un rialzo di oltre il 3% dopo che Trump ha detto che gli Usa non hanno bisogno di un accordo con l'Iran. Il gas europeo si avvicina a 94 euro e lo yen supera quota 160 sul dollaro.",
+  "tags": ["Petrolio", "Energia", "Iran", "Yen"],
+  "themes": ["iran-usa"],
+  "title": "Petrolio: il Brent chiude a 95,82 dollari dopo le parole di Trump sull'Iran",
+  "updated": "2026-11-13T07:23:00+01:00",
+  "view": "I numeri sono certi: il Brent chiude sopra 95 dollari e il gas sale. Il nesso con le parole di Trump è quello che indicano CNBC e il Times of Israel. Non è noto quanto durerà il rialzo: dipende da un negoziato su cui Washington e Teheran danno versioni opposte.\n\nConta perché il prezzo dell'energia segue ogni segnale sul negoziato con l'Iran e pesa sull'inflazione e sulle attese sui tassi. Da guardare: la riapertura dei mercati, i prezzi alla produzione Usa di oggi e l'eventuale intervento giapponese sullo yen.",
+  "figure": {
+    "value": "95,82 $",
+    "label": "la chiusura del Brent il 12 novembre"
+  }
+}

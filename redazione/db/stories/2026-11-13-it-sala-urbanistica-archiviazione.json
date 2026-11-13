@@ -1,0 +1,79 @@
+{
+  "article": "La procura di Milano ha chiesto al giudice per le indagini preliminari l'archiviazione di uno dei filoni dell'inchiesta sull'urbanistica, quello su ipotesi di falso, corruzione e induzione indebita legate alla Commissione per il paesaggio del Comune, riferisce l'Agi il 10 novembre. Tra le posizioni interessate ci sono quelle del sindaco Giuseppe Sala, dell'ex assessore Giancarlo Tancredi, dell'architetto Stefano Boeri e del ceo di Coima Manfredi Catella. Secondo Affaritaliani la richiesta riguarda sei indagati in tutto.\n\nLa richiesta non equivale a un'archiviazione definitiva: la decisione spetta al giudice, come ricorda l'Agi. Il 12 novembre il sindaco Sala ha commentato la richiesta, scrive Il Post, che non riporta nell'estratto letto il contenuto delle sue parole. Catella ha detto di prendere atto della richiesta, secondo le fonti consultate.\n\nGli indagati sono da considerare non colpevoli: non c'è alcuna sentenza.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "La procura di Milano ha chiesto l'archiviazione di un filone dell'inchiesta sull'urbanistica che coinvolge Sala, Tancredi, Boeri e Catella.",
+      "who": ["Agi", "Il Post"]
+    },
+    {
+      "text": "La richiesta riguarda ipotesi di falso, corruzione e induzione indebita sulla Commissione per il paesaggio.",
+      "who": ["Agi"]
+    },
+    {
+      "text": "La decisione spetta al giudice per le indagini preliminari.",
+      "who": ["Agi"]
+    }
+  ],
+  "firstSeen": "2026-11-13T07:23:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-13T07:23:00+01:00",
+      "text": "Prima notizia: la procura di Milano chiede l'archiviazione di un filone dell'inchiesta sull'urbanistica che coinvolge Sala."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Il giudice accoglierà la richiesta di archiviazione?",
+    "Che cosa dice Sala nel suo commento del 12 novembre?"
+  ],
+  "places": ["IT"],
+  "city": {
+    "lat": 45.46,
+    "lon": 9.19,
+    "name": "Milano"
+  },
+  "rank": 13,
+  "section": "italia",
+  "sources": [
+    {
+      "angle": "Richiesta di archiviazione, filone e posizioni interessate (10 novembre).",
+      "area": "Italia",
+      "date": "2026-11-10",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "Agi",
+      "url": "https://www.agi.it/cronaca/news/2026-11-10/milano-urbanistica-procura-archiviazione-sala-boeri-39966087/"
+    },
+    {
+      "angle": "Il commento del sindaco Sala (12 novembre).",
+      "area": "Italia",
+      "date": "2026-11-12",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/12/sala-indagato-urbanistica-richiesta-archiviazione/"
+    },
+    {
+      "angle": "L'epilogo dell'inchiesta: chiesta l'archiviazione per Sala, Catella e Boeri.",
+      "area": "Italia",
+      "date": "2026-11-12",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Avvenire",
+      "url": "https://www.avvenire.it/attualita/urbanistica-chiesta-archiviazione-per-sala-boeri-e-catella_115589"
+    }
+  ],
+  "status": "live",
+  "summary": "La procura di Milano ha chiesto l'archiviazione di un filone dell'inchiesta sull'urbanistica che coinvolge il sindaco Sala, Tancredi, Boeri e Catella. La decisione spetta al giudice.",
+  "tags": ["Milano", "Inchieste", "Urbanistica"],
+  "themes": [],
+  "title": "Milano: la procura chiede l'archiviazione di un filone sull'urbanistica",
+  "updated": "2026-11-13T07:23:00+01:00",
+  "view": "È certo che la richiesta c'è e che non vale come archiviazione. Le fonti lette non riportano la motivazione della procura né il contenuto delle parole di Sala.\n\nConta perché riguarda il sindaco della città. Da guardare: la decisione del giudice e il destino degli altri filoni.",
+  "photo": {
+    "wiki": "it",
+    "title": "Palazzo Marino"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "article": "Il crollo di un edificio di tre piani a Brooklyn, a New York, ha causato almeno otto morti, ha detto il sindaco Zohran Mamdani, riferisce Euronews; Reuters scrive che il sindaco ha ampliato l'inchiesta. Secondo i funzionari dei vigili del fuoco, citati da Euronews, circa 250 tra vigili e agenti scavano tra le macerie e le operazioni proseguono nella notte. Non è chiaro se altre persone siano ancora intrappolate.\n\nAlmeno 17 persone sono state ricoverate, quattro in condizioni critiche, secondo quanto riferito in conferenza stampa. Una donna è stata estratta viva nel tardo pomeriggio e sono stati recuperati sette bambini; le autorità non hanno detto se qualcuno di loro sia tra i morti, scrive Euronews. Un residente, Anderson Velez, ha raccontato che la moglie lo aveva chiamato durante il crollo dicendo che i loro due figli erano sepolti, e che poi ha saputo che la famiglia era in salvo.\n\nSulla causa, il commissario all'edilizia Ahmed Tigani ha detto che l'edificio è crollato mentre alcuni operai scavavano un lotto vuoto accanto per costruire un nuovo edificio, riporta Euronews. Le cause sono sotto indagine. Open aveva dato nel primo pomeriggio un bilancio provvisorio di due morti; il numero di otto è quello successivo indicato dal sindaco.",
+  "change": "",
+  "divergences": [],
+  "facts": [
+    {
+      "text": "Il crollo di un edificio di tre piani a Brooklyn ha causato almeno otto morti, secondo il sindaco Mamdani.",
+      "who": ["Euronews", "Reuters"]
+    },
+    {
+      "text": "Circa 250 tra vigili del fuoco e agenti scavano tra le macerie; almeno 17 ricoverati, quattro in condizioni critiche.",
+      "who": ["Euronews"]
+    },
+    {
+      "text": "Secondo il commissario all'edilizia Tigani l'edificio è crollato durante lavori di scavo in un lotto vuoto accanto; le cause sono sotto indagine.",
+      "who": ["Euronews"]
+    },
+    {
+      "text": "Il sindaco ha ampliato l'inchiesta sul crollo, secondo Reuters.",
+      "who": ["Reuters"]
+    }
+  ],
+  "firstSeen": "2026-11-13T07:23:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-13T07:23:00+01:00",
+      "text": "Prima notizia: crollo di un palazzo di tre piani a Brooklyn, almeno otto morti."
+    }
+  ],
+  "notCovered": [],
+  "open": [
+    "Quante persone sono ancora sotto le macerie?",
+    "Quali sono le cause del crollo e di chi sono le responsabilità?"
+  ],
+  "places": ["US"],
+  "city": {
+    "lat": 40.65,
+    "lon": -73.95,
+    "name": "Brooklyn"
+  },
+  "rank": 9,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Bilancio, soccorsi, ricoverati, causa indicata dal commissario all'edilizia.",
+      "area": "Europa",
+      "date": "2026-11-12",
+      "country": "Francia",
+      "kind": "giornale online",
+      "name": "Euronews",
+      "url": "https://www.euronews.com/2026/11/12/at-least-two-dead-while-others-are-trapped-in-the-rubble-after-a-building-collapse-in-new-"
+    },
+    {
+      "angle": "Otto morti e inchiesta ampliata dal sindaco.",
+      "area": "Europa",
+      "at": "2026-11-12T22:13:00+01:00",
+      "country": "Regno Unito",
+      "kind": "agenzia",
+      "name": "Reuters",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/new-york-city-building-collapse-kills-8-mayor-expands-probe"
+    },
+    {
+      "angle": "Primo bilancio provvisorio di due morti.",
+      "area": "Italia",
+      "date": "2026-11-12",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/12/brooklyn-crollo-palazzo-video/"
+    }
+  ],
+  "status": "live",
+  "summary": "Il crollo di un edificio di tre piani a Brooklyn ha causato almeno otto morti, secondo il sindaco Mamdani. I soccorritori scavano nella notte e le cause sono sotto indagine.",
+  "tags": ["Stati Uniti", "New York", "Incidenti"],
+  "themes": [],
+  "title": "New York: crolla un edificio a Brooklyn, almeno otto morti",
+  "updated": "2026-11-13T07:23:00+01:00",
+  "view": "Il bilancio di otto morti è quello indicato dal sindaco e può cambiare, perché le ricerche non sono finite. Sulle responsabilità esiste solo la ricostruzione del commissario all'edilizia, che parla di scavi nel lotto accanto, ancora da verificare.\n\nConta per la sicurezza dei cantieri urbani. Da guardare: il bilancio finale, l'esito dell'inchiesta e i controlli sul cantiere.",
+  "photo": {
+    "wiki": "it",
+    "title": "Brooklyn"
+  }
+}

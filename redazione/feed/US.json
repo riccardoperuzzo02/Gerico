@@ -1,13 +1,125 @@
 {
  "code": "US",
- "asOf": "2026-11-13T11:17:34+00:00",
+ "asOf": "2026-11-13T13:17:34+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "A Restaurant Hosted Ramaswamy After His Attack Ad. It’s Paying a Price.",
+   "desc": "When a popular restaurant agreed to serve as a campaign stop for G.O.P. candidates ahead of Election Day, longtime customers turned against it and Medina, Ohio, was left reeling.",
+   "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
+   "at": "2026-11-13T13:17:17+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Outlook outage continues as Microsoft flags 'encouraging recovery signals'",
+   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "at": "2026-11-13T13:11:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
+   "desc": "The most recent inflation reading for October was higher than expected, coming in at 0.4% for the month.",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
+   "at": "2026-11-13T13:04:08+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider military force",
+   "desc": "It comes as the U.S. continues to enforce a comprehensive economic embargo against Cuba.",
+   "url": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
+   "at": "2026-11-13T13:04:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+   "desc": "Jensen Huang’s resignation puts Nvidia’s AI financing strategy in focus as investors watch credit markets and neocloud exposure.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
+   "at": "2026-11-13T12:54:43+00:00"
+  },
   {
    "source": "CNBC",
    "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
    "desc": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
    "url": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
-   "at": "2026-11-13T11:07:04+00:00"
+   "at": "2026-11-13T12:47:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "I interviewed Huang at peak ‘Jensenmania.’ Three weeks later, Nvidia is grappling with a world without him",
+   "desc": "CNBC's Arjun Kharpal, who interviewed Huang just a few weeks ago at GTC Berlin, unpacks how everything came crashing down for the popular CEO.",
+   "url": "https://www.cnbc.com/2026/11/13/tech-download-jensen-huang-nvidia-departure-jensenmania.html",
+   "at": "2026-11-13T12:46:12+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
+   "desc": "Like Apple, Nvidia now faces its own transition away from a founder-led company. But experts say Jensen Huang’s central role could make replacing him difficult.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html",
+   "at": "2026-11-13T12:44:20+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Huang's exit rocks Nvidia and creates openings for rival firms",
+   "desc": "Huang was a visionary leader with deep relationships in the complex world of tech. Losing him will hurt Nvidia, according to Wall Street analysts.",
+   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-resigns-competitors/",
+   "at": "2026-11-13T12:35:42+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "D.C. gunman appeared to vent about problems with luxury condo",
+   "desc": "An X account associated with D.C. shooting suspect Matt Lambert was filled with complaints about mold, rodents and disrepair in his unit in the condo building.",
+   "url": "https://www.cbsnews.com/news/dc-shooting-gunman-social-media/",
+   "at": "2026-11-13T12:29:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+   "desc": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role. And, Sen. Chris Van Hollen says he will challenge Chuck Schumer for majority leader.",
+   "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+   "at": "2026-11-13T12:07:12+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats",
+   "desc": "Friday, November 13 is World Kindness Day. Your mission: Do something kind. Small acts of kindness definitely count!",
+   "url": "https://www.npr.org/2026/11/13/g-s1-153274/world-kindness-day-altruism-generosity",
+   "at": "2026-11-13T12:06:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Russian crude production rebounds after Trump diesel deal, IEA says as oil markets return to surplus",
+   "desc": "Russia’s crude output rose to 8.73 million barrels a day in October as recovering Gulf exports pushed global supply above demand, the IEA said.",
+   "url": "https://www.cnbc.com/2026/11/13/russia-oil-exports-iea-diesel-deal.html",
+   "at": "2026-11-13T12:05:22+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance",
+   "desc": "The DOJ said it was taking action against the North Korean government's \"schemes to fund its regime through the massive theft of cryptocurrency.\"",
+   "url": "https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html",
+   "at": "2026-11-13T12:03:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
+   "desc": "The office of Stephen Miller, President Trump’s new chief of staff, outlined a new policy that seeks to show independence from special interests.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
+   "at": "2026-11-13T11:56:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "NHL’s next media deal will test the league’s strength",
+   "desc": "How do the world's biggest media companies judge the value of non-NFL rights? The NHL is giving us our first window into a new era in media values.",
+   "url": "https://www.cnbc.com/2026/11/13/nhls-next-media-deal-will-test-the-leagues-strength.html",
+   "at": "2026-11-13T11:48:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Microsoft battling major worldwide outage",
+   "desc": "A Microsoft outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and some government operations.",
+   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
+   "at": "2026-11-13T11:32:34+00:00"
   },
   {
    "source": "NPR",
@@ -15,13 +127,6 @@
    "desc": "In the last decade, strong support for kratom and 7-OH products have kept them federally legal. That's started to change. A crackdown for some highly potent products related to kratom is coming.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6039203/kratom-7-oh-dea-addiction-opioid",
    "at": "2026-11-13T11:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Widespread Microsoft outage continues, taking down Outlook and other 365 services",
-   "desc": "A Microsoft outage on Thursday affected users of services like Outlook, Teams and 365.",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-13T10:55:10+00:00"
   },
   {
    "source": "CNBC",
@@ -38,13 +143,6 @@
    "at": "2026-11-13T10:27:08+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Microsoft battling major worldwide outage",
-   "desc": "A Microsoft outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and some government operations as the tech giant struggles to fix the issue.",
-   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
-   "at": "2026-11-13T10:15:44+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "‘I Had to Have Faith’: How a Democrat Defied Long Odds in Mississippi’s Senate Race",
    "desc": "Few were paying much attention to Scott Colom for most of his campaign. Then he toppled the Republican incumbent.",
@@ -59,32 +157,11 @@
    "at": "2026-11-13T10:03:12+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Burgers, Boycotts and the Ad That Divided an Ohio Community",
-   "desc": "When a popular restaurant agreed to serve as a campaign stop for G.O.P. candidates ahead of Election Day, longtime customers turned against it and Medina, Ohio, was left reeling.",
-   "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
-   "at": "2026-11-13T10:03:01+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Rivers in the sky are raining down on the Pacific Northwest. What are they?",
    "desc": "Atmospheric rivers are large bands of water vapor in the sky. They are dumping trillions of gallons of water on Washington and Oregon, just as high tides and winds batter shorelines.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6032777/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
    "at": "2026-11-13T10:01:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia stock inches higher as investors continue to weigh Jensen Huang’s departure",
-   "desc": "Jensen Huang resigned as CEO of Nvidia on Thursday after coming under scrutiny for two extramarital affairs.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html",
-   "at": "2026-11-13T10:00:37+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
-   "desc": "The most recent inflation reading for October had beaten expectations, coming in at 0.4% for the month.",
-   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "at": "2026-11-13T10:00:26+00:00"
   },
   {
    "source": "NPR",
@@ -98,13 +175,6 @@
    "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
    "desc": "The forthcoming move has left some parents and educators frustrated and wondering about the company's motivations.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6029408/google-ai-search-schools",
-   "at": "2026-11-13T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "These swing voters have low expectations for divided government",
-   "desc": "Key voters in North Carolina are pessimistic the blue wave flipping control of Congress will solve their economic woes. Many say President Trump will be the chief obstacle.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6035826/north-carolina-swing-voters-congress-trump",
    "at": "2026-11-13T10:00:00+00:00"
   },
   {
@@ -129,13 +199,6 @@
    "at": "2026-11-13T10:00:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "The cost of college is confusing. Some schools are trying to change that",
-   "desc": "Many Americans have soured on higher education because of how frustratingly hard it is to figure out what they will pay to attend.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6023392/real-college-costs-confusing",
-   "at": "2026-11-13T10:00:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
    "desc": "The dispute comes after Stellantis scrapped planned Jeep Compass production in Brampton and shifted future output to Illinois amid U.S. auto tariffs.",
@@ -155,13 +218,6 @@
    "desc": "Singapore said it had barred Alice Huang from re-entering the country and that U.S. authorities had provided limited help with its yearlong investigations.",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html",
    "at": "2026-11-13T07:15:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
-   "desc": "The office of Stephen Miller, President Trump’s new chief of staff, outlined a new policy that seeks to show independence from special interests.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
-   "at": "2026-11-13T05:24:15+00:00"
   },
   {
    "source": "New York Times",
@@ -197,13 +253,6 @@
    "desc": "The political climate heading into next week's Trump-Xi summit is drastically different from the last meeting in September.",
    "url": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
    "at": "2026-11-13T02:56:35+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal",
-   "desc": "Cerebras announced a new deal with Microsoft after partnering with major cloud providers Amazon and Oracle.",
-   "url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
-   "at": "2026-11-13T02:43:26+00:00"
   },
   {
    "source": "New York Times",
@@ -253,13 +302,6 @@
    "desc": "Defense Secretary Pete Hegseth awarded a medal to the service member who reprimanded his group for making noise at the Tomb of the Unknown Soldier​.",
    "url": "https://www.cbsnews.com/news/hegseth-medal-reprimand-tomb-of-the-unknown-soldier/",
    "at": "2026-11-13T01:04:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "D.C. gunman appeared to vent about problems with luxury condo",
-   "desc": "An X account associated with D.C. shooting suspect Matt Lambert was filled with complaints about mold, rodents and disrepair in his unit in the condo building.",
-   "url": "https://www.cbsnews.com/news/dc-shooting-gunman-social-media/",
-   "at": "2026-11-13T01:01:09+00:00"
   },
   {
    "source": "CBS News",
@@ -343,7 +385,7 @@
    "title": "Ex-Oklahoma death row inmate pleads guilty to lesser charge",
    "desc": "During his time on death row, courts set nine different execution dates for Richard Glossip, and he came so close to being put to death that he ate three separate last meals.",
    "url": "https://www.cbsnews.com/news/richard-glossip-ex-oklahoma-death-row-inmate-pleads-guilty-to-accessory/",
-   "at": "2026-11-12T23:34:05+00:00"
+   "at": "2026-11-12T23:34:00+00:00"
   },
   {
    "source": "CBS News",
@@ -395,11 +437,11 @@
    "at": "2026-11-12T23:07:31+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Alice Huang tied to Nvidia’s biggest Chinese competitor",
-   "desc": "The woman with whom Jensen Huang reportedly had a relationship also owned stakes in companies that provided computing power to Huawei, a key Nvidia competitor.",
-   "url": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html",
-   "at": "2026-11-12T22:47:28+00:00"
+   "source": "CBS News",
+   "title": "Brooklyn building that collapsed had 98 open violations, records show",
+   "desc": "Officials still have not said what caused the building collapse at 1321 Flatbush Ave.​ that left eight people dead, including two children.",
+   "url": "https://www.cbsnews.com/news/flatbush-brooklyn-building-collapse-violations/",
+   "at": "2026-11-12T22:46:00+00:00"
   },
   {
    "source": "CBS News",
@@ -465,13 +507,6 @@
    "at": "2026-11-12T22:00:00+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Who will succeed Jensen Huang at Nvidia? Analysts weigh in.",
-   "desc": "Analysts say the board will be on the hunt for someone who has the technological know-how to lead the world's leading chip manufacturer.",
-   "url": "https://www.cbsnews.com/news/jensen-huang-next-nvidia-ceo-candidates/",
-   "at": "2026-11-12T21:44:33+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "The Concession Call to an Election Winner Is No Longer a Given",
    "desc": "In a hyperpartisan era when norms and traditions cannot be counted on, some politicians are left waiting by the phone.",
@@ -483,7 +518,7 @@
    "title": "Pete Hegseth, a Soldier’s Scolding and a Lesson at the Tomb of Unknowns",
    "desc": "Defense Secretary Pete Hegseth’s highly cultivated brand took a hit during an encounter with an Army sentinel at Arlington Cemetery.",
    "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
-   "at": "2026-11-12T21:31:33+00:00"
+   "at": "2026-11-12T21:31:34+00:00"
   },
   {
    "source": "CNBC",
@@ -494,24 +529,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Nvidia stock closes down over 4% after CEO Jensen Huang announces resignation",
-   "desc": "Chief Financial Officer Colette Kress will serve as interim CEO until a new leader is appointed.",
-   "url": "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
-   "at": "2026-11-12T21:17:21+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Why Nvidia stock drop isn't a big deal for many ETF, mutual fund investors",
    "desc": "Nvidia stock accounts for a fairly large share of many mutual funds and ETFs. But losses in the stock don't necessarily mean big losses for the overall fund.",
    "url": "https://www.cnbc.com/2026/11/12/nvidia-stock-drop-etf-mutual-fund-investors.html",
    "at": "2026-11-12T21:16:37+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Huang's exit rocks Nvidia and creates openings for rival firms",
-   "desc": "Huang was a visionary leader with deep relationships in the complex world of tech. Losing him will hurt Nvidia, according to Wall Street analysts.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-resigns-competitors/",
-   "at": "2026-11-12T20:38:00+00:00"
   },
   {
    "source": "CNBC",
@@ -570,13 +591,6 @@
    "at": "2026-11-12T20:00:42+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "‘A dark day for Nvidia’: Here’s what analysts have been saying about Jensen Huang’s departure",
-   "desc": "The company's board convened Wednesday evening after reports emerged of Huang engaging in an affair with an employee.",
-   "url": "https://www.cnbc.com/2026/11/12/jensen-huang-nvidia-affair-ceo.html",
-   "at": "2026-11-12T19:47:57+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Trump Says He’s Pulling Vance Off Iran Talks to Focus on Fraud Campaign",
    "desc": "The announcement on social media deepened questions about what the president’s plan is to end the war. “We don’t need a deal with Iran,” he wrote.",
@@ -612,25 +626,11 @@
    "at": "2026-11-12T19:05:25+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jensen and Lori Huang's Nvidia fortune is jointly controlled. How that makes things complicated now that he's resigned",
-   "desc": "Jensen Huang’s $140 billion stake in Nvidia is largely held by trusts co-owned with his wife, Lori, creating added uncertainty for his financial future.",
-   "url": "https://www.cnbc.com/2026/11/12/inside-jensen-and-lori-huangs-jointly-controlled-nvidia-fortune.html",
-   "at": "2026-11-12T19:00:12+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Kennedy’s Future: Will Democrats Try to Impeach Him, or Actually Work With Him?",
    "desc": "Most Democrats abhor the health secretary’s stance on vaccines, but some see an opportunity to win voters from his MAHA movement by joining with him on food and environmental issues.",
    "url": "https://www.nytimes.com/2026/11/12/us/politics/rfk-jr-democrats-impeach.html",
    "at": "2026-11-12T18:18:11+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Unite on Economic Populism After Midterm Victories",
-   "desc": "Moderate Democrats and progressives have long feuded over who should drive their party’s economic agenda. But many newly elected members say they share the same big goals.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/democrats-majorities-economic-populism.html",
-   "at": "2026-11-12T18:00:19+00:00"
   }
  ]
 }

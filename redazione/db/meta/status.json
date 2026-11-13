@@ -1,7 +1,11 @@
 {
+  "agendaRun": {
+    "at": "2026-11-13T15:41:15+01:00",
+    "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
+  },
   "lastPublish": {
-    "at": "2026-11-13T13:21:34+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-13T15:41:41+01:00",
+    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-13T13:21:00+01:00",
   "marketsRun": {

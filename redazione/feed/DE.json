@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-13T13:17:34+00:00",
+ "asOf": "2026-11-13T15:17:38+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Thomas Berthold: AfD nominiert Ex-Fußballprofi Berthold für Bundespräsidentenwahl",
+   "desc": "Die AfD will offenbar Thomas Berthold für das Amt des Bundespräsidenten nominieren. Der frühere Fußball-Weltmeister wurde während der Corona-Pandemie politisch aktiv.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/afd-bundespraesident-kandidat-thomas-berthold",
+   "at": "2026-11-13T15:09:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Issa Remmo: Kritik an Besuch von Clan-Chef Remmo bei Diskussion im Europaparlament",
+   "desc": "Überraschend taucht der Berliner Clan-Chef Issa Remmo bei einer Veranstaltung im Europaparlament auf. Ein Linke-Politiker fordert Aufklärung von EVP-Fraktionschef Weber.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/issa-remmo-europaparlament-hassen-chalghoumi-celine-imart-clankriminalitaet",
+   "at": "2026-11-13T15:07:48+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Angela Merkel würde heute für die »Ehe für alle« stimmen",
+   "desc": "2017 gab sie die Abstimmung über die »Ehe für alle« frei, votierte selbst aber dagegen. Nun verriet Angela Merkel, warum sie heute anders denkt. Die obligatorische Spitze gegen Friedrich Merz verteilte sie im Interview auch.",
+   "url": "https://www.spiegel.de/politik/deutschland/angela-merkel-wuerde-heute-fuer-die-ehe-fuer-alle-stimmen-a-cbb28ada-b6d0-4d19-91a7-6c7abb9cd788",
+   "at": "2026-11-13T15:03:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Tino Chrupalla: Tino Chrupallas Trump-Kritik legt den Machtkampf in der AfD offen",
+   "desc": "AfD-Chef Tino Chrupalla hat sich mit Kritik an Donald Trump in die Defensive gebracht. Parteiinterne Gegner aus dem Weidel-Lager nutzen das aus, um ihn zu schwächen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/tino-chrupalla-afd-doppelspitze-weidel-fraktion-genz-trump-ice",
+   "at": "2026-11-13T14:55:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Klimapolitik: Selbst Greta Thunberg macht sich nun über Klimademos lustig",
+   "desc": "Bei den aktuellen Debatten kommt das Klima chronisch zu kurz: Protestikonen drehen ab, und neue Linke kümmern sich erst einmal um »richtige« Probleme. Was für ein Irrtum!",
+   "url": "https://www.zeit.de/2026-11/klimapolitik-klimastreik-fridays-for-future-greta-thunberg-linke",
+   "at": "2026-11-13T14:53:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Elterngeld-Reform: Kabinett beschließt Veränderungen beim Elterngeld",
+   "desc": "Das Elterngeld soll doch weiterhin bis zu 14 Monate lang gezahlt werden. Das Bundeskabinett billigte einen überarbeiteten Referentenentwurf des Familienministeriums.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/elterngeld-reform-bezugsdauer-vaeter-einkommen-gxe",
+   "at": "2026-11-13T14:30:55+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Mutterschutzgesetz: Bundesregierung will Arbeitsverbote für Mütter kürzen",
+   "desc": "Nachtschichten sind für junge Mütter verboten, Feiertagsschichten nur mit ihrer ausdrücklichen Zustimmung erlaubt. Diese Regeln will die Regierung jetzt lockern.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/mutterschutzgesetz-aenderung-beschaeftigungsverbot-stillen-fehlgeburt",
+   "at": "2026-11-13T14:24:49+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt 2027: »Dieser Haushalt ist ein Kraftakt«",
+   "desc": "Bundesfinanzminister Lars Klingbeil verteidigt die hohe Schuldenaufnahme im Haushalt 2027. Über die Stromsteuer soll im Koalitionsausschuss erneut beraten werden.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-2027-lars-klingbeil-spd-schulden-neuverschuldung",
+   "at": "2026-11-13T13:54:10+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Kritik auch aus der Union an ausbleibender Stromsteuer-Senkung",
+   "desc": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Stromsteuersenkung reicht es aber weiterhin nicht. Die Kritik ist massiv, nicht nur bei der Opposition. Nun äußerte sich Kanzler Merz.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
+   "at": "2026-11-13T13:20:56+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Bundestag beschließt Reform: Mehr Befugnisse für die Nachrichtendienste",
@@ -11,7 +74,7 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Ukrainekrieg: Merz sieht deutsche Teilnahme bei Ukraine-Friedensgesprächen »gesetzt«",
+   "title": "Ukrainekrieg: Merz geht von deutscher Teilnahme an Ukraine-Friedensgesprächen aus",
    "desc": "Möglicherweise wird sich die EU an Ukraine-Gesprächen beteiligen. Der Bundeskanzler sieht Deutschlands Teilnahme als gesetzt, die EU-Außenbeauftragte mahnt zur Vorsicht.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/verhandlungen-ukraine-russland-europa-kaja-kallas-ursula-von-der-leyen-gxe",
    "at": "2026-11-13T13:10:48+00:00"
@@ -60,7 +123,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Steffen Krach: Staatsanwaltschaft Hannover beantragt Aufhebung von Immunität",
+   "title": "Steffen Krach: Staatsanwaltschaft will Immunität von SPD-Fraktionschef aufheben",
    "desc": "Seit dem Einzug von Steffen Krach ins Berliner Abgeordnetenhaus genießt der SPD-Politiker Immunität, Ermittlungen unter anderem wegen Vorteilsannahme gegen ihn ruhen. Die Staatsanwaltschaft Hannover geht dagegen nun vor.",
    "url": "https://www.spiegel.de/politik/deutschland/steffen-krach-staatsanwaltschaft-hannover-beantragt-aufhebung-von-immunitaet-a-98592b7b-82b5-403b-ac18-f169ab2d8e2c",
    "at": "2026-11-13T11:43:00+00:00"
@@ -73,13 +136,6 @@
    "at": "2026-11-13T11:37:54+00:00"
   },
   {
-   "source": "Tagesschau",
-   "title": "Kritik auch aus der Union an ausbleibender Stromsteuer-Senkung",
-   "desc": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Senkung der Stromsteuer reicht es - Stand jetzt - aber nicht. Die Kritik ist massiv, nicht nur bei der Opposition.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
-   "at": "2026-11-13T11:09:28+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Ilse Aigner, Angela Merkel, Ursula von der Leyen: Was konservative Frauen besser können – Kolumne",
    "desc": "Bundeskanzlerin, Bundespräsidentin, EU-Kommissionschefin: Es ist kein Zufall, dass es immer Frauen aus der Union sind, die es nach ganz oben schaffen.",
@@ -88,7 +144,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Veranstaltung der CDU-Europapartei: Und plötzlich taucht Clanchef Issa Rammo bei der EVP auf",
+   "title": "CDU-Europapartei: Clanchef Issa Rammo taucht bei EVP-Veranstaltung auf",
    "desc": "Der Linken wurde eine Nähe zur Organisierten Kriminalität vorgeworfen, weil Issa Rammo auf einer Wahlparty auftauchte. In Brüssel zeigt sich der Clanchef nun bei den Konservativen – und attackiert die Linken. Was steckt dahinter?",
    "url": "https://www.spiegel.de/politik/deutschland/veranstaltung-der-cdu-europapartei-und-ploetzlich-taucht-clanchef-issa-rammo-bei-der-evp-auf-a-aa11decf-c46d-414e-8c8d-421a13ae55f2",
    "at": "2026-11-13T10:59:00+00:00"
@@ -101,34 +157,6 @@
    "at": "2026-11-13T10:23:36+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russische Behörden ermitteln wegen Explosion einer Autobombe in Moskau",
-   "desc": "Laut Berichten wurde ein Ex-Regierungssprecher der Ukraine durch eine Autobombe verletzt. Die Beteiligung Europas an Verhandlungen wird wahrscheinlicher. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-13T09:50:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "ZDF-»Politbarometer«: AfD in Umfrage wieder deutlicher vor Union",
-   "desc": "Wäre am Sonntag Bundestagswahl, läge die AfD laut einer Umfrage sechs Prozentpunkte vor der Union. Die Grünen kämen noch vor der SPD auf Platz drei.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/zdf-politbarometer-afd-cdu-spd-gruene-linke-bundestag-gxe",
-   "at": "2026-11-13T09:31:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "ZDF-»Politbarometer«: AfD in Umfrage wieder deutlicher vor Union",
-   "desc": "Wäre am Sonntag Bundestagswahl, läge die AfD laut einer Umfrage sechs Prozentpunkte vor der Union. Die Grünen kämen noch vor der SPD auf Platz drei.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/zdf-politbarometer-afd-cdu-spd-gruene-linke-bundestag-gxe",
-   "at": "2026-11-13T09:31:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Irankrieg: Iranische Revolutionsgarden melden Angriff auf US-Radaranlage",
-   "desc": "Der Iran hat eigenen Angaben zufolge ein US-Frühwarnsystem in Bahrain zerstört. Er plant weitere Angriffe auf US-Stützpunkte – auch in Europa. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-13T09:29:11+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Handys im Straßenverkehr: Wie weit darf Überwachung gehen?",
    "desc": "Bislang gibt es \"Handy-Blitzer\" nur in Rheinland-Pfalz. Bundesverkehrsminister Bilger will sie bundesweit einführen, um Unfälle zu verhindern. Kritiker warnen vor einem unverhältnismäßigen Eingriff in die Privatsphäre. Von Oliver Bemelmann.",
@@ -136,32 +164,11 @@
    "at": "2026-11-13T09:21:11+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Bundeshaushalt 2027: Opposition kritisiert Bundeshaushalt für das kommende Jahr",
-   "desc": "Vonseiten der Opposition gibt es deutliche Kritik an der Einigung im Haushaltsausschuss. Grünen-Fraktionschefin Haßelmann attestiert Bundeskanzler Merz Führungsschwäche.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-2027-friedrich-merz-stromsteuersenkung-zuckersteuer-gxe",
-   "at": "2026-11-13T08:48:45+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Werden die Milliarden für die Stromsteuer noch gefunden?",
    "desc": "Bei der längsten Sitzung im Bundestag wurde in der Nacht jeder Cent umgedreht, damit der Bundesetat für 2027 steht. Gleichzeitig sucht die Regierungsspitze Milliarden für eine Stromsteuersenkung. Kann sie sie noch finden? Von Nicole Kohnert.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushalt-milliarden-100.html",
    "at": "2026-11-13T08:36:42+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Ukrainekarte aktuell: Russische Truppen stoßen bei Lyman vor",
-   "desc": "In der Region Donezk halten russische Streitkräfte Stellungen nordöstlich der Stadt Lyman. Ukrainische Einheiten nahmen russische Militär- und Energieziele ins Visier",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
-   "at": "2026-11-13T08:12:55+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Geheimdienstreform: Bundestag entscheidet über Ausweitung der Befugnisse für Geheimdienste",
-   "desc": "Bundesinnenminister Dobrindt will die deutschen Nachrichtendienste zu »echten Geheimdiensten« machen. Der Bundestag befasst sich abschließend mit den Reformplänen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/geheimdienstreform-bundesregierung-nachrichtendienste-ueberwachung-gxe",
-   "at": "2026-11-13T07:16:10+00:00"
   },
   {
    "source": "Tagesschau",
@@ -211,27 +218,6 @@
    "desc": "Ein Modellprojekt in Rheinland-Pfalz ermöglicht ambulante Pflege nach individuellem Zeitbudget statt starrer Vorgaben. Erste Ergebnisse sind vielversprechend. Könnte so die Zukunft der Pflege aussehen? Von Claudia Hiller.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/pflege-neues-modell-ambulant-100.html",
    "at": "2026-11-12T15:46:43+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Warum Markus Söder jetzt noch breitbeiniger durch Berlin laufen dürfte",
-   "desc": "Mit Ilse Aigner hat der Kanzler eine Frau für das höchste Staatsamt vorgeschlagen, die von allen gelobt wird. Doch es ist nicht Friedrich Merz, der von dieser Personalie profitiert.",
-   "url": "https://www.spiegel.de/politik/deutschland/warum-markus-soeder-jetzt-noch-breitbeiniger-durch-berlin-laufen-duerfte-a-3f95b855-5de6-4193-8e07-5c9faf7de705",
-   "at": "2026-11-12T14:31:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Keine Senkung der Stromsteuer: Bei der Union \"hat es ordentlich geknallt\"",
-   "desc": "Die Senkung der Stromsteuer wird nun vermutlich doch nicht kommen - trotz anderslautender Versprechen. Bei der Union will man das noch nicht akzeptieren. Und die Opposition nimmt sich Kanzler Merz vor.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-kompromisse-stromsteuer-reaktionen-100.html",
-   "at": "2026-11-12T13:40:04+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "AfD: Streit über Abschiebungen verschärft Machtkampf in der Führung",
-   "desc": "In der AfD gibt es Zank um die Frage, wie viel Härte es geben soll bei Abschiebungen und der Verdrängung von Menschen mit Migrationshintergrund aus Deutschland. Dahinter steckt ein Machtkampf in der Führung der Partei.",
-   "url": "https://www.spiegel.de/politik/deutschland/afd-und-wieder-verliert-tino-chrupalla-gegen-alice-weidel-a-9a3a1300-2e9a-4b20-8043-97b1d06e4149",
-   "at": "2026-11-12T13:21:00+00:00"
   }
  ]
 }

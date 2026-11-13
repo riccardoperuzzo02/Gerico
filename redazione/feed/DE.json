@@ -1,27 +1,62 @@
 {
  "code": "DE",
- "asOf": "2026-11-13T09:17:34+00:00",
+ "asOf": "2026-11-13T11:17:34+00:00",
  "items": [
   {
+   "source": "Tagesschau",
+   "title": "Kritik auch aus der Union an ausbleibender Stromsteuer-Senkung",
+   "desc": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Senkung der Stromsteuer reicht es - Stand jetzt - aber nicht. Die Kritik ist massiv, nicht nur bei der Opposition.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
+   "at": "2026-11-13T11:09:28+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "ZDF-»Politbarometer«: AfD in Umfrage deutlicher vor Union",
+   "title": "Weltklimakonferenz: Fridays for Future ruft deutschlandweit zu Demos auf",
+   "desc": "Parallel zur Weltklimakonferenz in der Türkei plant Fridays for Future heute Proteste in mehr als 70 deutschen Städten. Die Regierung solle ihre Klimaschulden bezahlen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/fridays-for-future-proteste-klimaschutz-cop31-antalya-gxe",
+   "at": "2026-11-13T11:06:47+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Veranstaltung der CDU-Europapartei: Und plötzlich taucht Clanchef Issa Rammo bei der EVP auf",
+   "desc": "Der Linken wurde eine Nähe zur Organisierten Kriminalität vorgeworfen, weil Issa Rammo auf einer Wahlparty auftauchte. In Brüssel zeigt sich der Clanchef nun bei den Konservativen – und attackiert die Linken. Was steckt dahinter?",
+   "url": "https://www.spiegel.de/politik/deutschland/veranstaltung-der-cdu-europapartei-und-ploetzlich-taucht-clanchef-issa-rammo-bei-der-evp-auf-a-aa11decf-c46d-414e-8c8d-421a13ae55f2",
+   "at": "2026-11-13T10:59:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nvidia-Skandal: China warnt USA vor neuen Exportbeschränkungen für Halbleiter",
+   "desc": "Nach dem Skandal um Nvidia-Chef Huang befürchtet China Konsequenzen für Halbleiterimporte. Das Unternehmen hat einen hohen Marktanteil auf dem chinesischen Chipmarkt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/nvidia-skandal-jensen-huang-alice-huang-china-gxe",
+   "at": "2026-11-13T10:23:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russische Behörden ermitteln wegen Explosion einer Autobombe in Moskau",
+   "desc": "Laut Berichten wurde ein Ex-Regierungssprecher der Ukraine durch eine Autobombe verletzt. Die Beteiligung Europas an Verhandlungen wird wahrscheinlicher. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-13T09:50:29+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "ZDF-»Politbarometer«: AfD in Umfrage wieder deutlicher vor Union",
    "desc": "Wäre am Sonntag Bundestagswahl, läge die AfD laut einer Umfrage sechs Prozentpunkte vor der Union. Die Grünen kämen noch vor der SPD auf Platz drei.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/zdf-politbarometer-afd-cdu-spd-gruene-linke-bundestag-gxe",
-   "at": "2026-11-13T09:11:24+00:00"
+   "at": "2026-11-13T09:31:45+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Irankrieg: Iranische Revolutionsgarden melden Angriff auf US-Radaranlage",
    "desc": "Der Iran hat eigenen Angaben zufolge ein US-Frühwarnsystem in Bahrain zerstört. Er plant weitere Angriffe auf US-Stützpunkte – auch in Europa. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-13T09:06:45+00:00"
+   "at": "2026-11-13T09:29:11+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Tote und Verletzte bei nächtlichen Drohnenangriffen Russlands",
-   "desc": "Die Ukraine meldet nach Drohneneinschlägen bei Sumy zwei Tote. Jared Kushner hält eine Beteiligung Europas an künftigen Verhandlungen für möglich. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-13T08:51:33+00:00"
+   "source": "Tagesschau",
+   "title": "Handys im Straßenverkehr: Wie weit darf Überwachung gehen?",
+   "desc": "Bislang gibt es \"Handy-Blitzer\" nur in Rheinland-Pfalz. Bundesverkehrsminister Bilger will sie bundesweit einführen, um Unfälle zu verhindern. Kritiker warnen vor einem unverhältnismäßigen Eingriff in die Privatsphäre. Von Oliver Bemelmann.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/handy-blitzer-kontrolle-ueberwachung-100.html",
+   "at": "2026-11-13T09:21:11+00:00"
   },
   {
    "source": "Die Zeit",
@@ -122,20 +157,6 @@
    "at": "2026-11-13T03:31:17+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Migrationspolitik der USA: US-Einwanderungsbehörde meldet Höchstwert an Abschiebungen",
-   "desc": "Die US-Regierung hat nach eigenen Angaben binnen eines Jahres fast eine halbe Million Menschen abgeschoben. Es gibt jedoch Zweifel an der Transparenz der Daten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/abschiebungen-usa-ice-donald-trump",
-   "at": "2026-11-13T02:34:11+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "EU-Emissionshandel: Industrie in der EU soll weniger für Emissionen bezahlen müssen",
-   "desc": "Unternehmen in der EU sollen zeitlich begrenzt mehr kostenlose Emissionszertifikate bekommen. Das soll die Industrie finanziell entlasten und Abwanderung vermeiden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/emissionshandel-eu-industrie-ets-kostenlose-zertifikate",
-   "at": "2026-11-13T00:49:37+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bayerischer Drohnenhersteller Quantum Systems meldet Cyberangriff",
    "desc": "Der bayerische Rüstungskonzern Quantum Systems ist nach eigenen Angaben Opfer eines Cyberangriffs geworden. Der Vorfall fand im Oktober statt. Laut einem Medienbericht hat die Bundeswehr bereits reagiert.",
@@ -200,31 +221,17 @@
   },
   {
    "source": "Der Spiegel",
+   "title": "Ilse Aigner, Angela Merkel, Ursula von der Leyen: Was konservative Frauen besser können – Kolumne",
+   "desc": "Bundeskanzlerin, Bundespräsidentin, EU-Kommissionschefin: Es ist kein Zufall, dass es immer Frauen aus der Union sind, die es nach ganz oben schaffen.",
+   "url": "https://www.spiegel.de/politik/deutschland/ilse-aigner-angela-merkel-ursula-von-der-leyen-was-konservative-frauen-besser-koennen-kolumne-a-5e73c08b-61f5-4cca-aaa4-06d1f74b6d8f",
+   "at": "2026-11-12T12:00:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
    "title": "Neues Kita-Gesetz: Wer bessere Chancen für Kinder fordert, muss dafür auch Geld klarmachen",
    "desc": "Mit einem neuen Kitagesetz möchte Bildungsministerin Karin Prien benachteiligten Kindern helfen. Der Haken: Dafür stehen in den nächsten Jahren immer weniger Mittel bereit.",
    "url": "https://www.spiegel.de/politik/deutschland/neues-kita-gesetz-wer-bessere-chancen-fuer-kinder-fordert-muss-dafuer-auch-geld-klarmachen-a-cd84cca9-c738-48bf-82a2-448e08075968",
    "at": "2026-11-12T11:42:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Warum Minister beim Haushalt lieber pünktlich sind",
-   "desc": "Beim Haushalt 2027 sind noch viele Baustellen offen. Meist bis in die frühen Morgenstunden feilt der Haushaltsausschuss am Etat. Für die Minister gilt: Pünktlichkeit ist essenziell, sonst drohen Abzüge, sagt Ausschussvorsitzende Paus. Von P. Eckstein.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-bereinigungssitzung-finanzen-100.html",
-   "at": "2026-11-12T11:08:50+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kita-Startchancengesetz: Mehr Förderung mit weniger Geld?",
-   "desc": "Der Bundestag hat das Startchancengesetz beschlossen, das mehr Förderung für Kita-Kinder und verbindliche Tests vorsieht. Kritik gibt es wegen geplanter Kürzungen bei den Bundesmitteln. Von Chris Berdrow.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/kita-startchancengesetz-100.html",
-   "at": "2026-11-12T10:45:20+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kompromisse beim Haushalt: Zufriedene SPD, Grummeln in der Union",
-   "desc": "Mit dem Haushaltskompromiss zeigt sich vor allem die SPD zufrieden. Sie konnte einige Kürzungen abwenden. Bei der Union dagegen ist der Unmut nicht zu überhören. Von G. Schwarte.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-union-spd-102.html",
-   "at": "2026-11-12T09:43:29+00:00"
   }
  ]
 }

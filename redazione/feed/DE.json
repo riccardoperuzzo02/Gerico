@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-14T15:17:35+00:00",
+ "asOf": "2026-11-14T17:17:37+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Luftverkehr in den USA: US-Regierung fordert nach Flugstopp Milliarden für Flugsicherung",
+   "desc": "Für die Modernisierung der Flugsicherung fordert die US-Regierung 30 Milliarden Dollar. Der US-Verkehrsminister warnt vor weiteren Störungen in der Zukunft.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/us-flugsicherung-faa-sean-duffy-kongress",
+   "at": "2026-11-14T17:11:39+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Datenschutz: Italien verhängt 805 Millionen Euro Strafe gegen Meta",
+   "desc": "Meta soll ohne Zustimmung auf Fotos und Videos von 20 Millionen Nutzern in Italien zugegriffen haben. Die Datenschutzbehörde ordnete nun ein Bußgeld und Auflagen an.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/meta-strafe-italien-datenschutz-facebook-app-garante",
+   "at": "2026-11-14T17:07:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Erneuerbare Energie Gesetz: Union und SPD weiter uneins bei Reform der Ökostromförderung",
+   "desc": "Die SPD verkündet den Erhalt der Einspeisevergütung für Solarstrom. Die Union widerspricht: Ohne Einigung beim Gesamtpaket wackelt auch noch die Einspeisevergütung.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/eeg-reform-einspeiseverguetung-solaranlagen-netzpaket-spd-cdu-gxe",
+   "at": "2026-11-14T16:00:30+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Lars Klingbeil: Will ihn die SPD noch?",
+   "desc": "Lars Klingbeil versucht bei der SPD-Basis in Potsdam herauszufinden, ob er nochmal als Parteichef kandidieren sollte. Das hängt entscheidend von einer Frau ab.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/lars-klingbeil-spd-chef-basis-wahl",
+   "at": "2026-11-14T15:41:27+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Pläne für höhere Abzüge bei vorgezogener Rente",
+   "desc": "Die Einsparungen der Regierung treffen die Rentenversicherung mehr als geplant - und damit stellt sich die Frage, wie die Einbußen ausgeglichen werden können. Die CSU bringt nun höhere Abschläge bei Frührentnern ins Spiel. Von F. Aischmann.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-versicherung-abschlaege-100.html",
+   "at": "2026-11-14T15:37:32+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "BSW und AfD: Auf dem Magdeburger Weg ins Nirgendwo",
+   "desc": "Das BSW in Sachsen-Anhalt will weiter mit der AfD kooperieren, sich bei der Wahl eines Regierungschefs aber enthalten. Alternativen? Nicht in Sicht.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-afd-zusammenarbeit-parteitag-sachsen-anhalt-magdeburg-ministerpraesident",
+   "at": "2026-11-14T15:23:42+00:00"
+  },
   {
    "source": "Der Spiegel",
    "title": "Schleswig-Holstein: Daniel Günther erneut CDU-Spitzenkandidat bei Landtagswahl 2027",
@@ -81,6 +123,13 @@
   },
   {
    "source": "Die Zeit",
+   "title": "Nato-Beitritt der Ukraine: USA schlagen laut Selenskyj Nato-Beitritt gegen Gebietsabtritt vor",
+   "desc": "Tauscht die Ukraine Gebiete gegen eine Nato-Perspektive? Wolodymyr Selenskyj zufolge haben die USA diesen Vorschlag gemacht. Die Frage sei erstmals gestellt worden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/nato-beitritt-ukraine-usa-wolodymyr-selenskyj-gebietsverzicht-gxe",
+   "at": "2026-11-14T10:45:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
    "title": "Krieg gegen die Ukraine: USA sehen laut Selenskyj Nato-Beitritt gegen Gebietsabtritt als Option",
    "desc": "Ein Nato-Beitritt der Ukraine ist wohl Thema bei den Friedensverhandlungen. Im Gegenzug hätten die USA einen Verzicht auf den Donbass ins Gespräch gebracht. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
@@ -94,13 +143,6 @@
    "at": "2026-11-14T10:25:28+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Korruptionsermittlungen in Ungarn: 17,7 Millionen Euro bei Ex-Minister der Orbán-Regierung sichergestellt",
-   "desc": "Bei Ermittlungen gegen ein Mitglied des Kabinetts Orbán sind große Summen Bargeld gefunden worden. Ziel war ein Ex-Minister, der Schmiergelder angenommen haben soll.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/ungarn-korruption-nvvh-miklos-sesztak-bargeld-viktor-orban-gxe",
-   "at": "2026-11-14T10:22:11+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bahn zieht positive Bilanz zu Alkoholverbot an Bahnhöfen",
    "desc": "Seit einem Monat ist bundesweit der Konsum von Alkohol an Bahnhöfen untersagt. Die Deutsche Bahn zeigt sich in einer ersten Bilanz zufrieden. Weniger Müll, weniger Konflikte - die Situation habe sich für Reisende und Mitarbeitende verbessert.",
@@ -108,46 +150,11 @@
    "at": "2026-11-14T10:07:05+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Kuba und die USA: Kuba bereitet sich laut Präsident Díaz-Canel auf einen US-Angriff vor",
-   "desc": "Eine »ausländische Militäraggression« werde man abwehren, sagte Kubas Präsident Miguel Díaz-Canel. Zuvor hatte US-Präsident Donald Trump dem Inselstaat erneut gedroht.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/kuba-usa-militaer-angriff-donald-trump-miguel-diaz-canel-gxe",
-   "at": "2026-11-14T09:49:08+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Chemnitz 2025: Schön war die Zeit",
-   "desc": "Als Kulturhauptstadt Europas hat Chemnitz Millionen Touristen beeindruckt und sich selbst neu entdeckt. Ein Jahr später fragt man sich, was davon übrig bleibt.",
-   "url": "https://www.zeit.de/2026/49/chemnitz-2025-kulturhauptstadt-legacy-kulturszene-rechtsextremismus",
-   "at": "2026-11-14T09:12:03+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Dominique de Villepin: »Europa hängt krankhaft an den USA«",
-   "desc": "Dominique de Villepin tritt als Kandidat bei der Präsidentenwahl an, mit einem dezidiert europäischen Programm. Er findet, dass die EU sich den USA zu stark anbiedert.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/dominique-de-villepin-frankreich-praesidentschaftswahl",
-   "at": "2026-11-14T09:05:34+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "SPD-Parteivorsitz: SPD-Arbeitsgruppen wollen Wiederwahl von Klingbeil offenbar verhindern",
-   "desc": "Mehrere Gruppen innerhalb der SPD mobilisieren laut einem Medienbericht gegen Lars Klingbeil. In der aktuellen Situation seien Ministeramt und Vorsitz nicht vereinbar.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/spd-parteivorsitz-lars-klingbeil-buendnis-antraege-gxe",
-   "at": "2026-11-14T08:36:23+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Kassenärzte-Chef erwartet mehr Selbstzahler-Termine für gesetzlich Versicherte",
    "desc": "Wer längere Wartezeiten als gesetzlich Versicherter vermeiden will, muss künftig Behandlungen auch aus der eigenen Tasche zahlen - so die Einschätzung des Kassenärzte-Chefs. Grund seien die kürzlich beschlossenen Honorarkürzungen.",
    "url": "https://www.tagesschau.de/inland/gesetzlich-versicherte-behandlung-selbstzahler-100.html",
    "at": "2026-11-14T08:15:06+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Autobiografie von Joachim Sauer: »Wir haben natürlich über alles gesprochen, wenn Zeit war«",
-   "desc": "Joachim Sauer ist der Mann von Angela Merkel. Solange sie regierte, schwieg er öffentlich. Nun erzählt er von seiner Zeit in der DDR – und von Journalisten ohne Anstand.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/autobiografie-joachim-sauer-angela-merkel-ddr-mein-richtiges-leben",
-   "at": "2026-11-14T08:00:56+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -176,34 +183,6 @@
    "desc": "Deutschland wird die selbst gesteckten Klimaziele für 2030 und 2040 verfehlen. Umwelt- und Naturschutzverbände werfen vor allem Kanzler Merz und Wirtschaftsministerin Reiche einen Rollback beim Klimaschutz vor. Von Susanne Henn.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/klimaschutz-klimaziele-deutschland-100.html",
    "at": "2026-11-14T04:40:44+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "AfD will Ex-Fußballprofi Berthold als Bundespräsidenten nominieren",
-   "desc": "Der ehemalige Fußballprofi Thomas Berthold soll nach ARD-Informationen für die AfD ins Rennen um das Amt des Bundespräsidenten gehen. Der Weltmeister von 1990 tat sich während der Corona-Pandemie als \"Querdenker\" hervor.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/berthold-afd-wahl-bundespraesident-100.html",
-   "at": "2026-11-13T16:37:14+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Störung bei Microsoft, Issa Rammo im EU-Parlament, Katherina Reiche plant Notfall-Gesetz für Gasmangel",
-   "desc": "Microsoft hat ein massives Problem, Millionen Mails blieben ungelesen. Clanboss Rammo tritt im EU-Parlament auf, und Katherina Reiche hat offenbar immer noch Schwierigkeiten mit ihrem Rollenwechsel. Das ist die Lage am Freitagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-stoerung-bei-microsoft-issa-rammo-im-eu-parlament-katherina-reiche-plant-notfall-gesetz-fuer-gasmangel-a-1c0b4764-61eb-438c-90aa-d262874a8fbf",
-   "at": "2026-11-13T16:15:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kommentar zum Haushalt: Die Koalition geht auf dem Zahnfleisch",
-   "desc": "Der Bundeshaushalt für das kommende Jahr steht. Doch die Einigung ist ohne Richtung, ohne Ambition und ohne Vision, findet Sabine Henkel. Union und SPD fehlt nicht nur Geld, sondern vor allem Mut und eine Strategie.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/haushalt-koalition-geht-auf-zahnfleisch-100.html",
-   "at": "2026-11-13T15:40:10+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "AfD will wohl Thomas Berthold bei Bundespräsidentinnen-Wahl aufstellen",
-   "desc": "Ilse Aigner dürfte als kommende Bundespräsidentin so gut wie feststehen. Die AfD will trotzdem einen Gegenkandidaten ins Rennen schicken. Und scheint nun fündig geworden.",
-   "url": "https://www.spiegel.de/politik/deutschland/thomas-berthold-afd-will-wohl-fussballweltmeister-bei-bundespraesidentinnen-wahl-aufstellen-a-87d7aa66-c8f6-40d7-80eb-dd5af14f5dd7",
-   "at": "2026-11-13T15:35:00+00:00"
   }
  ]
 }

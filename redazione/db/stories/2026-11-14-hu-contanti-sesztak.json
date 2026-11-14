@@ -1,0 +1,38 @@
+{
+  "title": "Ungheria: trovati 20 milioni di dollari in contanti nell'inchiesta su Sesztak",
+  "section": "mondo",
+  "rank": 19,
+  "status": "live",
+  "summary": "L'ufficio ungherese per il recupero dei beni dice di aver trovato circa 19,5 milioni di dollari in contanti, in parte sepolti nei boschi, nell'inchiesta sull'ex ministro Miklos Sesztak. Sesztak nega ogni illecito.",
+  "article": "L'Ufficio nazionale per il recupero e la protezione dei beni ha annunciato venerdì sera di aver trovato circa 19,5 milioni di dollari in contanti nell'inchiesta su Miklos Sesztak, ministro dello Sviluppo del governo di Viktor Orbán dal 2014 al 2018. Lo riferiscono Reuters e Al Jazeera. Le perquisizioni si sono svolte il 12 e il 13 novembre a Budapest e in altre tre zone del paese, secondo Al Jazeera.\n\nIl denaro era in parte sepolto nei boschi, in parte nascosto in edifici agricoli, magazzini, un'abitazione e una cassaforte. Reuters indica 5,07 miliardi di fiorini (15,33 milioni di dollari), 2,66 milioni di euro e 1,26 milioni di dollari. Il ministro delle Finanze Andras Karman dice che una dozzina di dipendenti del Tesoro ha impiegato otto ore a contarlo.\n\nSecondo Al Jazeera, Sesztak è sospettato di aver ricevuto oltre 37,2 milioni di dollari di tangenti legate all'acquisto di autobus usati a prezzi gonfiati da una società statale di trasporti e a progetti edilizi pubblici. È stato arrestato a settembre e nega ogni illecito. Il suo avvocato non ha risposto a Reuters.\n\nIl primo ministro Peter Magyar, che ad aprile ha battuto Orbán dopo 16 anni di governo, ha scritto su Facebook che il ritrovamento segna la fine della «mafia» del Fidesz e dei suoi alleati. Orbán, ora all'opposizione, aveva accusato il governo di usare le indagini per spingerlo fuori dalla politica, ricorda Al Jazeera. Reuters scrive che due ex ministri e l'ex governatore della banca centrale Gyorgy Matolcsy sono in stato di arresto in indagini separate e che tutti negano. Il fratello di Orbán è stato fermato in un caso di traffico di migranti, che Orbán ha definito «vendetta politica».\n\nUn sondaggio Median per il sito HVG, citato da Al Jazeera e da Reuters, indica che il 70% degli intervistati considera molto importante l'operazione anticorruzione. Reuters aggiunge, sempre dal sondaggio, che il sostegno al Fidesz sarebbe sceso al 16%.",
+  "facts": [
+    {"text": "L'ufficio ungherese per il recupero dei beni dice di aver trovato circa 19,5 milioni di dollari in contanti, in parte sepolti nei boschi.", "who": ["Reuters", "Al Jazeera"]},
+    {"text": "Il denaro è in fiorini, euro e dollari: 5,07 miliardi di fiorini, 2,66 milioni di euro e 1,26 milioni di dollari.", "who": ["Reuters"]},
+    {"text": "Miklos Sesztak, ministro dello Sviluppo dal 2014 al 2018, è sospettato di tangenti per oltre 37,2 milioni di dollari, arrestato a settembre e nega.", "who": ["Al Jazeera"]},
+    {"text": "Il premier Magyar parla della fine della «mafia» del Fidesz; Orbán ha accusato il governo di usare le indagini contro di lui.", "who": ["Al Jazeera", "Reuters"]}
+  ],
+  "view": "È accertato che l'ufficio ha annunciato il ritrovamento e che Sesztak è sospettato e nega; il collegamento tra il denaro e le presunte tangenti è per ora la tesi degli investigatori, riferita dalle testate. Non è chiaro se il contante appartenga a lui.\n\nConta perché l'inchiesta fa parte di una campagna anticorruzione più ampia contro l'ex governo, con arresti di ex ministri. Da guardare: le accuse formali, la risposta di Fidesz e i prossimi arresti.",
+  "open": [
+    "La somma ritrovata è collegata dagli investigatori alle tangenti attribuite a Sesztak?",
+    "Quali accuse formali verranno presentate e quando?",
+    "Chi ha nascosto il denaro nei boschi e nelle altre località?"
+  ],
+  "sources": [
+    {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/hungary-recovers-20-million-cash-in-probe-of-orban-minister", "angle": "Importi per valuta, Operazione Purgatorio, altri arresti, sondaggio Median, commento del politologo Gabor Torok.", "at": "2026-11-14T08:22:00+01:00"},
+    {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/14/hungarian-investigators-uncover-19-5m-hidden-in-forests-and-buildings", "angle": "Luoghi e date delle perquisizioni, accuse a Sesztak, reazioni di Magyar e di Orbán.", "date": "2026-11-14"}
+  ],
+  "firstSeen": "2026-11-14T13:21:00+01:00",
+  "updated": "2026-11-14T13:21:00+01:00",
+  "change": "",
+  "tags": ["Ungheria", "Corruzione", "Europa"],
+  "themes": [],
+  "places": ["HU"],
+  "city": {"name": "Budapest", "lat": 47.50, "lon": 19.04},
+  "figure": {"value": "19,5 mln $", "label": "i contanti trovati dagli investigatori ungheresi"},
+  "photo": {"wiki": "it", "title": "Budapest"},
+  "history": [
+    {"at": "2026-11-14T13:21:00+01:00", "text": "Prima notizia: trovati contanti per circa 19,5 milioni di dollari nell'inchiesta su Sesztak."}
+  ],
+  "divergences": [],
+  "notCovered": []
+}

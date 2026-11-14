@@ -4,10 +4,10 @@
     "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
   },
   "lastPublish": {
-    "at": "2026-11-14T09:52:21+01:00",
-    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-14T13:22:42+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-14T07:24:56+01:00",
+  "lastRun": "2026-11-14T13:22:30+01:00",
   "marketsRun": {
     "at": "2026-11-13T18:46:35+01:00",
     "esito": "Aggiornate le chiusure del 13 novembre (Ansa): Ftse Mib +0,1% a 51.858, Dax -0,2%, Cac 40 +0,1%, Ftse 100 +0,3%, Aex invariato, spread 104, gas 89 €/MWh. Mancano Smi, rendimenti, euro/dollaro, Brent. Agenda: Pil Ue non trovato."
@@ -31,14 +31,14 @@
   },
   "quality": {
     "articlesDiscarded": 2,
-    "articlesRead": 14,
-    "at": "2026-11-14T07:24:56+01:00",
+    "articlesRead": 12,
+    "at": "2026-11-14T13:22:30+01:00",
     "factsChecked": 4,
-    "factsCorrected": 1,
-    "storiesArchived": 1,
-    "storiesNew": 6,
-    "storiesUpdated": 8
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 2,
+    "storiesUpdated": 2
   },
   "runningSince": null,
-  "storiesLive": 33
+  "storiesLive": 37
 }

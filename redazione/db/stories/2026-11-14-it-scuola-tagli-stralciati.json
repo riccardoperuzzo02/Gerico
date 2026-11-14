@@ -1,0 +1,66 @@
+{
+  "article": "Il governo ha tolto dalla legge di bilancio la norma che riduceva il personale scolastico, scrive Il Post: lo ha annunciato la presidente del Consiglio Giorgia Meloni in un video. Dopo l'incontro a Palazzo Chigi con i sindacati, la Uil ha detto che il taglio alla scuola è stato ritirato, riporta Open.\n\nSecondo Il Post, la legge di bilancio precedente aveva già eliminato 5.660 posti di docenti e 2.174 di personale Ata. La norma per il 2027 ne avrebbe aggiunti 4.925 di docenti e 2.049 di Ata, per un totale di 14.808 dipendenti pubblici in meno. Meloni ha detto che non erano previsti tagli diretti: il personale che andava in pensione non sarebbe stato sostituito, con una riduzione graduale dell'organico, riferisce Il Post. Il governo motivava la misura con il calo delle nascite e degli iscritti.\n\nSindacati, presidi e studenti avevano criticato la norma, e secondo Il Post c'erano stati malumori anche nella maggioranza. Il ministro dell'Istruzione Giuseppe Valditara aveva detto che avrebbe lavorato per eliminare i tagli durante l'esame parlamentare, scrive il giornale. Open riferisce che i sindacati restano comunque insoddisfatti della manovra e che la Cgil conferma lo sciopero generale del 20 novembre.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {
+      "text": "Meloni ha annunciato la rimozione dalla legge di bilancio della norma sul blocco delle assunzioni nelle scuole.",
+      "who": ["Il Post", "Open"]
+    },
+    {
+      "text": "La norma avrebbe tolto 4.925 posti di docenti e 2.049 di Ata, per un totale di 14.808 con quelli già tagliati, secondo Il Post.",
+      "who": ["Il Post"]
+    },
+    {
+      "text": "La Uil dice che il taglio è stato ritirato dopo l'incontro a Palazzo Chigi.",
+      "who": ["Open"]
+    },
+    {
+      "text": "La Cgil conferma lo sciopero generale del 20 novembre.",
+      "who": ["Open"]
+    }
+  ],
+  "firstSeen": "2026-11-14T07:21:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-14T07:21:00+01:00",
+      "text": "Prima notizia: il governo stralcia dalla manovra i tagli al personale scolastico."
+    }
+  ],
+  "open": [
+    "Con quale testo sarà formalizzato lo stralcio negli emendamenti?",
+    "Quali altre voci della manovra cambieranno prima del 17 novembre?"
+  ],
+  "places": ["IT"],
+  "rank": 12,
+  "section": "italia",
+  "sources": [
+    {
+      "angle": "Annuncio di Meloni, numeri dei posti, motivazioni del governo, critiche e malumori nella maggioranza.",
+      "area": "Italia",
+      "date": "2026-11-13",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/13/il-governo-ci-ha-ripensato-sui-tagli-al-personale-scolastico/"
+    },
+    {
+      "angle": "Incontro con i sindacati, la Uil sul ritiro, sciopero Cgil del 20 novembre.",
+      "area": "Italia",
+      "date": "2026-11-13",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/13/legge-bilancio-26-governo-sindacati/"
+    }
+  ],
+  "status": "live",
+  "summary": "Meloni annuncia che la norma sui tagli al personale scolastico è stata tolta dalla legge di bilancio. La Uil conferma il ritiro, mentre la Cgil mantiene lo sciopero generale del 20 novembre.",
+  "tags": ["Manovra", "Scuola", "Sindacati"],
+  "themes": [],
+  "title": "Scuola: il governo toglie dalla manovra i tagli al personale",
+  "updated": "2026-11-14T07:21:00+01:00",
+  "view": "È certo l'annuncio di Meloni, confermato dalla Uil. Il testo dello stralcio non risulta nelle fonti lette, e non è chiaro se i posti vengano mantenuti o rinviati.\n\nConta perché arriva alla vigilia della scadenza degli emendamenti e dello sciopero Cgil. Da guardare: gli emendamenti del 17 novembre e le coperture.",
+  "photo": {"wiki": "it", "title": "Palazzo Chigi"}
+}

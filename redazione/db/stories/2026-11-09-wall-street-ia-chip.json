@@ -1,6 +1,6 @@
 {
-  "article": "Piazza Affari ha chiuso il 12 novembre a 51.808 punti, in calo dello 0,27%, frenata dai titoli tecnologici dopo la caduta di Nvidia, riporta l'Ansa. Technoprobe ha perso il 4,73%, Amplifon il 5,29% e Stellantis il 4,33%. Le altre Borse europee hanno chiuso in rialzo: Francoforte più 0,41%, Parigi più 0,34% e Londra più 0,25%. Lo spread tra Btp e Bund è salito a 104,4 punti base, secondo l'Ansa.\n\nA Wall Street il Nasdaq e l'S&P 500 hanno perso circa lo 0,4% e il Dow quasi 190 punti, riferisce CNBC. Nvidia ha ceduto il 4,3% dopo le dimissioni dell'amministratore delegato Jensen Huang. CNBC scrive che gli indici restano su un andamento settimanale tra i migliori da inizio agosto e che i future erano in rialzo in serata. Il 10 novembre, secondo CNBC, il Dow aveva chiuso a 52.231,89 punti, l'S&P 500 a 7.520,93 e il Nasdaq a 25.065,87, dopo un dato sull'inflazione americana sopra le attese.\n\nSul petrolio, secondo CNBC il Brent ha chiuso a 95,82 dollari, con un rialzo di oltre il 3%, dopo le parole di Trump sull'accordo con l'Iran. Questa mattina, sempre secondo CNBC, l'Asia è in maggioranza in rialzo: il Kospi sale di circa il 2,8% in apertura e il Nikkei dell'1%, mentre lo yen ha superato quota 160 sul dollaro e il ministro delle Finanze giapponese avverte di un possibile intervento.\n\nSul fronte dei tassi, l'Ansa riferiva l'11 novembre che il membro della Bce Lane considera prudente un rialzo a dicembre se i dati restano invariati, e CNBC scrive che Goldman Sachs vede un rialzo della Fed a dicembre o a marzo. Oggi alle 14:30 escono i prezzi alla produzione Usa di ottobre, attesi in rialzo dello 0,4% sul mese secondo il calendario di Teleborsa e CNBC.",
-  "change": "13 novembre: Milano chiude a 51.808 punti (meno 0,27%), Wall Street in calo dello 0,4%, Nvidia a meno 4,3%; oggi i prezzi alla produzione Usa.",
+  "article": "Il 13 novembre Piazza Affari ha chiuso in lieve rialzo, con il Ftse Mib a 51.858 punti (più 0,1%), riporta l'Ansa; Londra ha guadagnato lo 0,3%, Parigi lo 0,1% e Francoforte ha perso lo 0,2%. Lo spread tra Btp e Bund è rimasto a 104 punti base e il gas è sceso del 3% a 89 euro al megawattora, secondo l'Ansa. A Wall Street, secondo Open, il Nasdaq ha chiuso in calo dello 0,82%, l'S&P 500 dello 0,45% e il Dow Jones è salito dello 0,08%, con Microsoft a meno 1,48% dopo il disservizio di Outlook e Nvidia in calo. Open scrive che il Brent era a 96,93 dollari e il Wti a 89,52. CNBC aggiunge che il Nasdaq ha comunque chiuso la settimana con il miglior andamento da agosto.\n\nPiazza Affari ha chiuso il 12 novembre a 51.808 punti, in calo dello 0,27%, frenata dai titoli tecnologici dopo la caduta di Nvidia, riporta l'Ansa. Technoprobe ha perso il 4,73%, Amplifon il 5,29% e Stellantis il 4,33%. Le altre Borse europee hanno chiuso in rialzo: Francoforte più 0,41%, Parigi più 0,34% e Londra più 0,25%. Lo spread tra Btp e Bund è salito a 104,4 punti base, secondo l'Ansa.\n\nA Wall Street il Nasdaq e l'S&P 500 hanno perso circa lo 0,4% e il Dow quasi 190 punti, riferisce CNBC. Nvidia ha ceduto il 4,3% dopo le dimissioni dell'amministratore delegato Jensen Huang. CNBC scrive che gli indici restano su un andamento settimanale tra i migliori da inizio agosto e che i future erano in rialzo in serata. Il 10 novembre, secondo CNBC, il Dow aveva chiuso a 52.231,89 punti, l'S&P 500 a 7.520,93 e il Nasdaq a 25.065,87, dopo un dato sull'inflazione americana sopra le attese.\n\nSul petrolio, secondo CNBC il Brent ha chiuso a 95,82 dollari, con un rialzo di oltre il 3%, dopo le parole di Trump sull'accordo con l'Iran. Questa mattina, sempre secondo CNBC, l'Asia è in maggioranza in rialzo: il Kospi sale di circa il 2,8% in apertura e il Nikkei dell'1%, mentre lo yen ha superato quota 160 sul dollaro e il ministro delle Finanze giapponese avverte di un possibile intervento.\n\nSul fronte dei tassi, l'Ansa riferiva l'11 novembre che il membro della Bce Lane considera prudente un rialzo a dicembre se i dati restano invariati, e CNBC scrive che Goldman Sachs vede un rialzo della Fed a dicembre o a marzo. Oggi alle 14:30 escono i prezzi alla produzione Usa di ottobre, attesi in rialzo dello 0,4% sul mese secondo il calendario di Teleborsa e CNBC.",
+  "change": "13 novembre: Milano chiude a 51.858 punti (più 0,1%); Wall Street: Nasdaq meno 0,82%, S&P 500 meno 0,45%, Dow più 0,08% (Open).",
   "city": {
     "lat": 40.71,
     "lon": -74.01,
@@ -32,6 +32,10 @@
   "firstSeen": "2026-11-09T07:26:39+01:00",
   "history": [
     {
+      "at": "2026-11-14T07:22:00+01:00",
+      "text": "13 novembre: Milano +0,1% a 51.858; Nasdaq -0,82%, S&P 500 -0,45%, Dow +0,08% secondo Open."
+    },
+    {
       "at": "2026-11-13T07:23:00+01:00",
       "text": "13 novembre: Milano chiude a 51.808 punti (meno 0,27%), Wall Street in calo dello 0,4% con Nvidia a meno 4,3%; yen oltre 160 sul dollaro."
     },
@@ -59,9 +63,18 @@
     "Il Giappone interverrà sul cambio con lo yen?"
   ],
   "places": ["US", "IT"],
-  "rank": 6,
+  "rank": 7,
   "section": "mercati",
   "sources": [
+    {
+      "angle": "Chiusura di Wall Street e di Milano del 13 novembre, Microsoft, Nvidia, Brent e Wti.",
+      "area": "Italia",
+      "date": "2026-11-13",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/13/borse-blackout-microsoft-nvidia-nasdaq-wall-street/"
+    },
     {
       "angle": "Chiusura di Piazza Affari del 12 novembre, titoli più mossi.",
       "area": "Italia",
@@ -91,11 +104,11 @@
     }
   ],
   "status": "live",
-  "summary": "Piazza Affari ha chiuso il 12 novembre a 51.808 punti (meno 0,27%), frenata dai titoli tecnologici; a Wall Street Nasdaq e S&P 500 perdono circa lo 0,4% con Nvidia a meno 4,3%. Oggi escono i prezzi alla produzione Usa.",
+  "summary": "Piazza Affari ha chiuso il 13 novembre a 51.858 punti (più 0,1%); a Wall Street il Nasdaq ha perso lo 0,82% e l'S&P 500 lo 0,45%, secondo Open. Il weekend i mercati sono chiusi.",
   "tags": ["Wall Street", "Inflazione", "Fed", "Bce"],
   "themes": [],
-  "title": "Borse: Milano chiude a 51.808 punti, Wall Street in calo con Nvidia",
-  "updated": "2026-11-13T07:23:00+01:00",
+  "title": "Borse: Milano chiude a 51.858 punti, Wall Street in calo con il Nasdaq",
+  "updated": "2026-11-14T07:22:00+01:00",
   "view": "I dati di chiusura sono certi. Il legame tra Nvidia e il calo dei titoli tecnologici europei è quello indicato dall'Ansa; le attese sui tassi sono stime di Goldman Sachs e di un membro della Bce, non decisioni.\n\nConta perché un rialzo di Fed e Bce cambierebbe il costo del denaro e il peso dei titoli tecnologici. Da guardare: i prezzi alla produzione Usa delle 14:30, lo yen e il petrolio.",
   "photo": {
     "wiki": "it",

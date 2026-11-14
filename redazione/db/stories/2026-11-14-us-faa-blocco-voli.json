@@ -1,0 +1,99 @@
+{
+  "article": "Venerdì 13 novembre la Faa, l'autorità americana dell'aviazione civile, ha bloccato tutti i decolli negli Stati Uniti per «circostanze straordinarie e motivi di sicurezza», scrive Al Jazeera. Il blocco è cominciato alle 15:54 a New York (le 21:54 in Italia) ed è stato revocato in serata: il segretario ai Trasporti Sean Duffy ha indicato la riapertura dello spazio aereo alle 20:15 a New York, cioè all'1:15 di sabato in Italia. Open e Il Post parlano di circa quattro ore, Al Jazeera di cinque.\n\nLa causa indicata è un'interruzione delle telecomunicazioni che ha coinvolto i centri di controllo del traffico aereo in rotta, secondo Al Jazeera. Duffy ha spiegato che switch e router sovraccarichi di dati sono andati in tilt, senza perdita totale di comunicazioni o radar. Il segretario alla Sicurezza interna Mullin ha detto che non c'è un attacco informatico né un pericolo per il pubblico, e che non si tratta di «un nuovo 11 settembre», ma secondo l'Ansa ha anche detto che sulle cause non si può escludere nulla. L'Fbi esclude un attacco informatico o un reato, riporta l'Ansa. Microsoft ha detto di non avere indicazioni di un legame con il proprio disservizio di Outlook, secondo la stessa agenzia.\n\nI numeri differiscono secondo la fonte. Secondo FlightRadar24, citato da Al Jazeera, i voli cancellati venerdì sono più di 4.700 e i ritardi circa 10.000, con altri 700 voli già cancellati per sabato. La Cnn, citata dall'Ansa, parla di oltre 3.000 voli cancellati e circa 700 aerei ancora in volo nella notte. Secondo Cirium, riporta Al Jazeera, almeno 827 voli sono stati dirottati. Eurocontrol ha sospeso per un periodo i voli europei diretti negli Stati Uniti su richiesta della Faa, scrive l'Ansa.\n\nDuffy prevede un ritorno alla piena operatività per il Ringraziamento, tra meno di due settimane, e ha chiesto 50 miliardi di dollari per ammodernare il sistema, riferisce Al Jazeera. L'emittente ricorda che un rapporto del Gao di settembre aveva segnalato cavi di rame vecchi di decenni e modifiche tecniche pianificate male. Per l'esperto Todd Curtis, citato da Al Jazeera, per riallineare voli e aerei potrebbero servire più di 24 ore.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {
+      "text": "La Faa ha bloccato tutti i decolli negli Usa venerdì dalle 15:54 a New York; la riapertura è stata indicata alle 20:15.",
+      "who": ["Al Jazeera", "Open", "Il Post"]
+    },
+    {
+      "text": "La causa indicata è un'interruzione delle telecomunicazioni nei centri di controllo del traffico aereo, senza attacco informatico secondo Mullin e l'Fbi.",
+      "who": ["Al Jazeera", "ANSA"]
+    },
+    {
+      "text": "Secondo FlightRadar24 i voli cancellati venerdì sono più di 4.700; la Cnn parla di oltre 3.000.",
+      "who": ["Al Jazeera", "ANSA"]
+    },
+    {
+      "text": "Duffy prevede il pieno ritorno alla normalità per il Ringraziamento e chiede 50 miliardi di dollari per il sistema.",
+      "who": ["Al Jazeera"]
+    },
+    {
+      "text": "Microsoft dice di non avere indicazioni di un legame con il proprio disservizio.",
+      "who": ["ANSA"]
+    }
+  ],
+  "firstSeen": "2026-11-14T07:21:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-14T07:21:00+01:00",
+      "text": "Prima notizia: blocco nazionale dei decolli negli Usa per un guasto alle telecomunicazioni, poi revocato."
+    }
+  ],
+  "open": [
+    "Quale componente del sistema di telecomunicazioni si è guastato e perché?",
+    "Quanti voli resteranno cancellati o in ritardo nei prossimi giorni?",
+    "Un'inchiesta ufficiale indicherà responsabilità?"
+  ],
+  "places": ["US"],
+  "rank": 4,
+  "section": "mondo",
+  "sources": [
+    {
+      "angle": "Orari, causa, dichiarazioni di Duffy e Mullin, numeri di FlightRadar24 e Cirium, rapporto Gao.",
+      "area": "Medio Oriente",
+      "date": "2026-11-14",
+      "country": "Qatar",
+      "kind": "tv",
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next"
+    },
+    {
+      "angle": "Esclusione di un attacco informatico, Eurocontrol, dati Cnn, nessun legame con Microsoft.",
+      "area": "Italia",
+      "at": "2026-11-14T01:17:00+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/cnn-ancora-700-aerei-nei-cieli-usa-piu-di-3.000-voli_cf62a829-7ddc-469c-b598-8c5597381881.html"
+    },
+    {
+      "angle": "Blocco di circa quattro ore, causa indicata: infrastruttura obsoleta, attacco hacker escluso.",
+      "area": "Italia",
+      "date": "2026-11-14",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/14/blocco-voli-stati-uniti-faa-guasto-telecomunicazioni-cosa-e-successo/"
+    },
+    {
+      "angle": "Ripresa del traffico dopo un blocco di quattro ore.",
+      "area": "Italia",
+      "date": "2026-11-14",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/14/voli-stati-uniti-ripresi/"
+    },
+    {
+      "angle": "Primo blocco nazionale delle partenze dal gennaio 2023.",
+      "area": "Ucraina e Russia",
+      "at": "2026-11-14T04:34:00+01:00",
+      "country": "Ucraina",
+      "kind": "giornale",
+      "name": "Kyiv Independent",
+      "url": "https://kyivindependent.com/faa-orders-nationwide-ground-stop-for-all-us-flight-departures/"
+    }
+  ],
+  "status": "live",
+  "summary": "La Faa ha bloccato per circa quattro o cinque ore tutti i decolli negli Stati Uniti per un guasto alle telecomunicazioni dei centri di controllo. Le autorità escludono un attacco informatico; i voli cancellati sono più di 3.000 secondo la Cnn e più di 4.700 secondo FlightRadar24.",
+  "tags": ["Stati Uniti", "Trasporto aereo", "Infrastrutture"],
+  "themes": [],
+  "title": "Stati Uniti: la Faa blocca tutti i decolli per un guasto alle telecomunicazioni",
+  "updated": "2026-11-14T07:21:00+01:00",
+  "view": "Sono accertati il blocco, la sua revoca e la causa dichiarata dalle autorità: un guasto di telecomunicazioni. Restano aperti il componente guasto e le responsabilità, e la possibilità di un attacco è esclusa da Fbi e Mullin ma non in modo assoluto nelle parole di quest'ultimo.\n\nConta perché è il primo blocco nazionale dal gennaio 2023 e arriva dopo un rapporto del Gao sull'obsolescenza della rete. Da guardare: il ripristino dei voli nel weekend, la richiesta di 50 miliardi e un'eventuale inchiesta.",
+  "figure": {"value": "4.700", "label": "i voli cancellati venerdì secondo FlightRadar24"},
+  "photo": {"wiki": "it", "title": "Federal Aviation Administration"}
+}

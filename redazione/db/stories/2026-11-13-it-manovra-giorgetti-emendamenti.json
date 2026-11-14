@@ -1,6 +1,6 @@
 {
-  "article": "Il ministro dell'Economia Giancarlo Giorgetti ha detto in audizione che per la manovra «i giochi non sono fatti» ma che ogni modifica deve essere coperta, e che i saldi restano invariati, riporta l'Ansa. Giorgetti ha spiegato che non si è potuto coprire tutto e che si è scelto per priorità: famiglia e lavoratori, giovani, investimenti, sicurezza, decarbonizzazione. Ha sostenuto che il contributo chiesto a banche e assicurazioni non mira a indebolirle e che le risorse per il servizio sanitario non sono state ridotte.\n\nGli emendamenti vanno presentati in commissione alla Camera entro martedì 17, scrive l'Ansa. La maggioranza punta a un pacchetto concordato su sanità, pensioni, scuola e università. Tra le ipotesi citate dall'agenzia ci sono il rinvio o il ridimensionamento dei tagli alla scuola, circa 7mila posti, al 2029, un allentamento sulle rivalutazioni delle pensioni, una soglia più alta per l'exit tax e l'estensione della flat tax all'1% per i giovani.\n\nL'Ufficio parlamentare di bilancio critica gli interventi di sostegno frammentati e l'uso di tutti gli spazi di bilancio, scrive l'Ansa. Sul taglio dell'Irpef, secondo l'Upb, il beneficio medio è di 444 euro per i dirigenti, 52 per gli impiegati e 4 per gli operai. Il Cnel dice che molti interventi hanno importi limitati. L'amministratore delegato di Intesa Sanpaolo Carlo Messina ha definito la manovra «sudamericana», riporta l'Ansa, e Il Post ricorda le sue critiche tra i temi dei giornali di oggi. Open scrive che l'effetto sulle famiglie va da 600 euro in meno a 200 euro in più, secondo il confronto che pubblica.",
-  "change": "",
+  "article": "Il 13 novembre la presidente del Consiglio Giorgia Meloni ha annunciato lo stralcio dalla manovra della norma sui tagli al personale scolastico, riporta Il Post; dopo l'incontro a Palazzo Chigi i sindacati restano insoddisfatti e la Cgil conferma lo sciopero generale del 20 novembre, scrive Open. Secondo Il Post l'inflazione farà tornare il «fiscal drag», cioè più tasse a parità di reddito, che secondo l'Istat renderebbe inefficaci le misure della legge di bilancio.\n\nIl ministro dell'Economia Giancarlo Giorgetti ha detto in audizione che per la manovra «i giochi non sono fatti» ma che ogni modifica deve essere coperta, e che i saldi restano invariati, riporta l'Ansa. Giorgetti ha spiegato che non si è potuto coprire tutto e che si è scelto per priorità: famiglia e lavoratori, giovani, investimenti, sicurezza, decarbonizzazione. Ha sostenuto che il contributo chiesto a banche e assicurazioni non mira a indebolirle e che le risorse per il servizio sanitario non sono state ridotte.\n\nGli emendamenti vanno presentati in commissione alla Camera entro martedì 17, scrive l'Ansa. La maggioranza punta a un pacchetto concordato su sanità, pensioni, scuola e università. Tra le ipotesi citate dall'agenzia ci sono il rinvio o il ridimensionamento dei tagli alla scuola, circa 7mila posti, al 2029, un allentamento sulle rivalutazioni delle pensioni, una soglia più alta per l'exit tax e l'estensione della flat tax all'1% per i giovani.\n\nL'Ufficio parlamentare di bilancio critica gli interventi di sostegno frammentati e l'uso di tutti gli spazi di bilancio, scrive l'Ansa. Sul taglio dell'Irpef, secondo l'Upb, il beneficio medio è di 444 euro per i dirigenti, 52 per gli impiegati e 4 per gli operai. Il Cnel dice che molti interventi hanno importi limitati. L'amministratore delegato di Intesa Sanpaolo Carlo Messina ha definito la manovra «sudamericana», riporta l'Ansa, e Il Post ricorda le sue critiche tra i temi dei giornali di oggi. Open scrive che l'effetto sulle famiglie va da 600 euro in meno a 200 euro in più, secondo il confronto che pubblica.",
+  "change": "Stralciati i tagli alla scuola; sciopero Cgil il 20 novembre; Istat sul fiscal drag.",
   "divergences": [],
   "facts": [
     {
@@ -23,6 +23,10 @@
   "firstSeen": "2026-11-13T07:23:00+01:00",
   "history": [
     {
+      "at": "2026-11-14T07:22:00+01:00",
+      "text": "14 novembre: stralcio dei tagli alla scuola, sciopero Cgil il 20 novembre, fiscal drag secondo l'Istat."
+    },
+    {
       "at": "2026-11-13T07:23:00+01:00",
       "text": "Prima notizia: Giorgetti apre a modifiche coperte alla manovra; Upb e Messina critici."
     }
@@ -33,7 +37,7 @@
     "Con quali coperture saranno finanziate le modifiche su pensioni e scuola?"
   ],
   "places": ["IT"],
-  "rank": 10,
+  "rank": 11,
   "section": "economia",
   "sources": [
     {
@@ -69,7 +73,7 @@
   "tags": ["Manovra", "Conti pubblici", "Italia"],
   "themes": [],
   "title": "Manovra: Giorgetti apre a modifiche coperte, critiche da Upb e Messina",
-  "updated": "2026-11-13T07:23:00+01:00",
+  "updated": "2026-11-14T07:22:00+01:00",
   "view": "È certo il calendario: emendamenti entro il 17 novembre. Le modifiche in discussione sono ipotesi riportate dall'Ansa e non risulta un testo concordato; non è chiaro con quali coperture.\n\nConta perché le critiche vengono da un'istituzione di bilancio e dalla prima banca del paese, mentre il governo difende la prudenza sui conti. Da guardare: gli emendamenti della maggioranza e il voto in commissione.",
   "figure": {
     "value": "444 €",

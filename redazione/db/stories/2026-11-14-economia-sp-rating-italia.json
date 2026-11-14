@@ -1,0 +1,66 @@
+{
+  "article": "L'agenzia di rating S&P Global ha confermato i giudizi BBB+ e A-2 sul debito dell'Italia, con outlook positivo, riferiscono l'Ansa e Open. La conferma è arrivata dopo la chiusura dei mercati del 13 novembre, secondo l'Ansa alle 22:37.\n\nSecondo Open, S&P prevede per l'Italia una crescita superiore alle stime precedenti.\n\nIl giudizio sul debito è un dato a cui guardano gli investitori nel valutare i Btp. Lo spread tra Btp e Bund ha chiuso il 13 novembre a 104 punti base, poco mosso, secondo l'Ansa. Gli stessi dati Eurostat diffusi ieri indicano per l'Italia una crescita del Pil ferma a zero nel terzo trimestre, mentre per l'area euro è +0,4%, riporta l'Ansa.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {
+      "text": "S&P conferma i rating BBB+ e A-2 sull'Italia, con outlook positivo.",
+      "who": ["ANSA", "Open"]
+    },
+    {
+      "text": "Secondo Open S&P prevede una crescita superiore alle stime precedenti.",
+      "who": ["Open"]
+    },
+    {
+      "text": "Lo spread Btp-Bund ha chiuso il 13 novembre a 104 punti base.",
+      "who": ["ANSA"]
+    },
+    {
+      "text": "Per Eurostat il Pil italiano è fermo a zero nel terzo trimestre, quello dell'area euro cresce dello 0,4%.",
+      "who": ["ANSA"]
+    }
+  ],
+  "firstSeen": "2026-11-14T07:21:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-14T07:21:00+01:00",
+      "text": "Prima notizia: S&P conferma BBB+ per l'Italia con outlook positivo."
+    }
+  ],
+  "open": [
+    "Quali stime di crescita e deficit ha pubblicato S&P?",
+    "Il rating sarà alzato alla prossima revisione?"
+  ],
+  "places": ["IT"],
+  "rank": 13,
+  "section": "economia",
+  "sources": [
+    {
+      "angle": "Conferma di BBB+ e A-2 con outlook positivo.",
+      "area": "Italia",
+      "at": "2026-11-13T22:37:00+01:00",
+      "country": "Italia",
+      "kind": "agenzia",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/13/sp-conferma-i-rating-bbba-2-sullitalia-outlook-positivo_8ad34fca-71b2-4518-909e-982a777b3e00.html"
+    },
+    {
+      "angle": "Crescita prevista superiore alle stime precedenti, commento di Giorgetti.",
+      "area": "Italia",
+      "date": "2026-11-13",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/13/sp-rating-italia-13-nov-giorgetti/"
+    }
+  ],
+  "status": "live",
+  "summary": "S&P conferma il rating BBB+ dell'Italia con outlook positivo. Secondo Open l'agenzia prevede una crescita superiore alle stime precedenti.",
+  "tags": ["Rating", "Titoli di Stato", "Conti pubblici"],
+  "themes": [],
+  "title": "Italia: S&P conferma il rating BBB+ con outlook positivo",
+  "updated": "2026-11-14T07:21:00+01:00",
+  "view": "È certa la conferma con outlook positivo. I dettagli sulle stime di S&P vengono da un solo articolo e non sono stati verificati su altre fonti.\n\nConta perché il rating pesa sul costo del debito. Da guardare: le prossime revisioni delle agenzie e lo spread.",
+  "figure": {"value": "BBB+", "label": "il rating confermato da S&P sull'Italia"}
+}

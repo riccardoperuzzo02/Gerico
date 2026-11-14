@@ -1,0 +1,63 @@
+{
+  "article": "La Corte d'appello dell'Aquila ha respinto il ricorso dei genitori contro la decisione di settembre sui tre figli della cosiddetta «famiglia nel bosco»: i bambini non possono tornare subito a casa, riportano Il Post e Open. Restano in una casa famiglia a Vasto, in Abruzzo, frequentano la scuola pubblica e secondo Open hanno rientri graduali con i genitori, nei fine settimana e un giorno in settimana.\n\nSecondo Il Post devono seguire il piano di rientro graduale fissato dal tribunale per i minorenni dell'Aquila. L'articolo non riporta le motivazioni della Corte. L'avvocato dei genitori, Simone Pillon, ex senatore della Lega, ha detto che ricorrerà in Cassazione, scrive Il Post.\n\nIl caso è diventato nazionale nel 2025, quando i bambini sono stati allontanati dalla casa di Palmoli, giudicata inadatta dal tribunale: una piccola casa di campagna con problemi strutturali e senza bagni interni, e i figli seguivano l'istruzione a casa, ricorda Il Post. Esponenti politici di destra hanno criticato le decisioni, presentandole come un attacco all'unità della famiglia. A marzo il tribunale per i minorenni aveva separato anche la madre dai figli, citando relazioni della struttura di accoglienza che ne descrivevano un comportamento ostile e poco collaborativo, riferisce Il Post.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {
+      "text": "La Corte d'appello dell'Aquila ha respinto il ricorso dei genitori: i tre bambini non tornano subito a casa.",
+      "who": ["Il Post", "Open"]
+    },
+    {
+      "text": "I bambini restano in una casa famiglia a Vasto con rientri graduali dai genitori.",
+      "who": ["Il Post", "Open"]
+    },
+    {
+      "text": "L'avvocato dei genitori, Simone Pillon, annuncia il ricorso in Cassazione.",
+      "who": ["Il Post"]
+    }
+  ],
+  "firstSeen": "2026-11-14T07:21:00+01:00",
+  "history": [
+    {
+      "at": "2026-11-14T07:21:00+01:00",
+      "text": "Prima notizia: la Corte d'appello dell'Aquila respinge il ricorso dei genitori della «famiglia nel bosco»."
+    }
+  ],
+  "open": [
+    "Quali sono le motivazioni della Corte d'appello?",
+    "Quando la Cassazione esaminerà il ricorso?"
+  ],
+  "places": ["IT"],
+  "city": {"name": "L'Aquila", "lat": 42.35, "lon": 13.4},
+  "rank": 15,
+  "section": "italia",
+  "sources": [
+    {
+      "angle": "Decisione della Corte, piano di rientro, ricorso in Cassazione annunciato dal legale, contesto del caso.",
+      "area": "Italia",
+      "at": "2026-11-13T14:46:00+01:00",
+      "country": "Italia",
+      "kind": "giornale",
+      "name": "Il Post",
+      "url": "https://www.ilpost.it/2026/11/13/famiglia-nel-bosco-respinto-ricorso-genitori/"
+    },
+    {
+      "angle": "Bambini in casa famiglia con rientri graduali.",
+      "area": "Italia",
+      "date": "2026-11-13",
+      "country": "Italia",
+      "kind": "giornale online",
+      "name": "Open",
+      "url": "https://www.open.online/2026/11/13/famiglia-nel-bosco-respinto-il-ricorso-dei-genitori-i-bambini-restano-in-casa-famiglia-con-rientri-graduali/"
+    }
+  ],
+  "status": "live",
+  "summary": "La Corte d'appello dell'Aquila respinge il ricorso dei genitori: i tre bambini restano in una casa famiglia con rientri graduali. L'avvocato dei genitori annuncia il ricorso in Cassazione.",
+  "tags": ["Giustizia", "Minori"],
+  "themes": [],
+  "title": "L'Aquila: respinto il ricorso dei genitori della «famiglia nel bosco»",
+  "updated": "2026-11-14T07:21:00+01:00",
+  "view": "È certa la decisione e il ricorso annunciato. Le motivazioni non sono nelle fonti lette.\n\nConta perché il caso è seguito in tutto il paese e ha avuto un seguito politico. Da guardare: il deposito delle motivazioni e il ricorso in Cassazione.",
+  "photo": {"wiki": "it", "title": "L'Aquila"}
+}

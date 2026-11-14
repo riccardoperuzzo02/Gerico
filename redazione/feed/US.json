@@ -1,27 +1,104 @@
 {
  "code": "US",
- "asOf": "2026-11-14T19:17:36+00:00",
+ "asOf": "2026-11-14T21:17:35+00:00",
  "items": [
   {
-   "source": "CBS News",
-   "title": "Travelers stranded, flights canceled after ground stop. Here's what we know",
-   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-14T19:12:13+00:00"
+   "source": "New York Times",
+   "title": "Democrats push back on Duffy’s demand for $50 billion to upgrade air traffic systems.",
+   "desc": "Sean Duffy, the transportation secretary, requested $50 billion from Congress to overhaul the American air traffic system.",
+   "url": "https://www.nytimes.com/live/2026/11/14/us/faa-nationwide-ground-stop-flights/democrats-congress-faa",
+   "at": "2026-11-14T21:15:09+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Bomb found at industrial plant in Peoria, Illinois; rendered safe",
-   "desc": "Police said the device had been rendered safe but they are still searching the industrial area.",
-   "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/",
-   "at": "2026-11-14T19:08:05+00:00"
+   "title": "This week on \"Sunday Morning\" (Nov. 15)",
+   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
+   "at": "2026-11-14T21:14:52+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX plans to try first-ever catch of Starship rocket from orbit",
+   "desc": "Starship Test Flight 15 marks the first time Elon Musk's company has tried to catch both the booster and upper stage of the rocket.",
+   "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
+   "at": "2026-11-14T21:14:46+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s Why It Could Take Days for Flights to Return to Normal",
+   "desc": "With hundreds of planes out of position and crews out of hours, restarting the nation’s flight system is no easy task.",
+   "url": "https://www.nytimes.com/2026/11/14/us/faa-groundstop-flights-restarting.html",
+   "at": "2026-11-14T20:48:54+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
+   "desc": "Residents in a one-mile radius of the plant in Peoria, Ill., can return to their homes. No additional devices were found.",
+   "url": "https://www.nytimes.com/2026/11/14/us/bomb-ethanol-plant-peoria-illinois.html",
+   "at": "2026-11-14T20:44:43+00:00"
   },
   {
    "source": "New York Times",
    "title": "Travel Nightmare Continues for Stranded Passengers Awaiting Flights",
    "desc": "After a night of fitful sleep on airport floors, some travelers are still stuck amid thousands of flight cancellations following Friday’s ground stop.",
    "url": "https://www.nytimes.com/2026/11/14/us/travel-nightmare-continues-for-stranded-passengers-awaiting-flights.html",
-   "at": "2026-11-14T19:00:05+00:00"
+   "at": "2026-11-14T20:44:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Hosting Ex-Convicts at Their Oakland Home Has Largely Gone Off Without a Hitch",
+   "desc": "A husband and wife in Oakland, Calif., has welcomed into their home 24 men recently released from prison sentences for crimes like murder and robbery, part of a program to ease reintegration into society.",
+   "url": "https://www.nytimes.com/2026/11/14/us/ex-convicts-halfway-house-oakland.html",
+   "at": "2026-11-14T20:23:41+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Ground Stop Highlights Chronic Vulnerabilities in Air Traffic System",
+   "desc": "The Federal Aviation Administration’s aging air traffic control infrastructure has had several disruptive failures in recent months, as officials have sought to make upgrades.",
+   "url": "https://www.nytimes.com/2026/11/14/us/politics/ground-stop-air-traffic-faa.html",
+   "at": "2026-11-14T20:22:04+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Bomb found near ethanol plant in central Illinois forces evacuations",
+   "desc": "The bomb was discovered Friday afternoon at the BioUrja Renewables plant in Peoria. Officials say the bomb has been \"rendered safe,\" but called it a \"credible threat.\" The FBI is investigating.",
+   "url": "https://www.npr.org/2026/11/14/g-s1-153781/bomb-ethanol-plant-peoria-illinois-evacuations",
+   "at": "2026-11-14T20:12:34+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "‘Democrat’ in Alaska’s House Race Is Doing Time in a New York Prison",
+   "desc": "While Republicans accuse Democrats of dirty tricks in the ongoing Alaska Senate race, the lone House contest in the state has the hallmarks of similar “ballot stacking” shenanigans.",
+   "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-house-race-felon-eric-hafner.html",
+   "at": "2026-11-14T20:10:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Dramatic video shows river boats colliding",
+   "desc": "All aboard were accounted for after a cargo tanker crashed into a river cruise in New Orleans. CBS News' Skyler Henry reports.",
+   "url": "https://www.cbsnews.com/video/dramatic-video-shows-river-boats-colliding/",
+   "at": "2026-11-14T20:02:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Evacuation lifted after bomb threat near industrial plant in Illinois",
+   "desc": "Police said the device had been rendered safe and residents were allowed to return to their homes.",
+   "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/",
+   "at": "2026-11-14T19:57:11+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Travelers stranded, flights canceled after ground stop. Here's what we know",
+   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "at": "2026-11-14T19:42:40+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "'We can't let them down' -- After midterm wins, Democrats turn to charting path ahead",
+   "desc": "Democrats from across the country descended on Denver for a two-day conference to chart the course of their party after sweeping victories in the midterm elections.",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
+   "at": "2026-11-14T19:13:54+00:00"
   },
   {
    "source": "New York Times",
@@ -36,13 +113,6 @@
    "desc": "Despite the turbulence, the S&P 500 secured a weekly gain of 2.5%, while the tech-heavy Nasdaq added 2.3%.",
    "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
    "at": "2026-11-14T18:48:39+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 15)",
-   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-14T18:39:50+00:00"
   },
   {
    "source": "New York Times",
@@ -73,13 +143,6 @@
    "at": "2026-11-14T17:56:43+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Here’s Why It Could Take Days for Flights to Return to Normal",
-   "desc": "With hundreds of planes out of position and crews out of hours, restarting the nation’s flight system is no easy task.",
-   "url": "https://www.nytimes.com/2026/11/14/us/faa-groundstop-flights-restarting.html",
-   "at": "2026-11-14T17:46:56+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
    "desc": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
@@ -99,13 +162,6 @@
    "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
    "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
    "at": "2026-11-14T16:42:15+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Ground Stop Highlights Chronic Vulnerabilities in Air Traffic System",
-   "desc": "The Federal Aviation Administration’s aging air traffic control infrastructure has had several disruptive failures in recent months, as officials have sought to make upgrades.",
-   "url": "https://www.nytimes.com/2026/11/14/us/politics/ground-stop-air-traffic-faa.html",
-   "at": "2026-11-14T16:36:36+00:00"
   },
   {
    "source": "CBS News",
@@ -227,13 +283,6 @@
    "at": "2026-11-14T14:02:39+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "All Accounted for After Tanker Crashes Into Docked New Orleans Riverboat",
-   "desc": "Gov. Jeff Landry of Louisiana called it a “literal miracle on the Mississippi” that all of the nearly 200 people aboard the riverboat were rescued.",
-   "url": "https://www.nytimes.com/2026/11/13/us/new-orleans-cruise-ship-crash.html",
-   "at": "2026-11-14T14:00:53+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "11/14: CBS Saturday Morning",
    "desc": "Air travel chaos after a nationwide ground stop. Plus, Lady Gaga's parents run a New York City trattoria and cabaret. All this and more.",
@@ -298,31 +347,10 @@
   },
   {
    "source": "New York Times",
-   "title": "‘Democrat’ in Alaska’s House Race Is Doing Time in a New York Prison",
-   "desc": "While Republicans accuse Democrats of dirty tricks in the ongoing Alaska Senate race, the lone House contest in the state has the hallmarks of similar “ballot stacking” shenanigans.",
-   "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-house-race-felon-eric-hafner.html",
-   "at": "2026-11-14T10:02:13+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Top Democrat Eyes Filibuster-Proof Budget Bill to Unlock Affordability Agenda",
    "desc": "The lawmaker set to lead the House Budget Committee outlined Democrats’ options for forcing a negotiation with President Trump on an economic package to bring down living costs.",
    "url": "https://www.nytimes.com/2026/11/14/us/politics/house-democrats-affordability-costs-budget.html",
    "at": "2026-11-14T10:01:49+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Hosting Ex-Convicts at Their Oakland Home Has Largely Gone Off Without a Hitch",
-   "desc": "A couple in Oakland, Calif., has welcomed into their home 24 men recently released from prison sentences for violent crimes, part of a program to ease reintegration into society.",
-   "url": "https://www.nytimes.com/2026/11/14/us/ex-convicts-halfway-house-oakland.html",
-   "at": "2026-11-14T10:00:13+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "As Democrats win big, thirst traps of male candidates take social media by storm",
-   "desc": "It's everywhere on social media: Democrats celebrating the attractive men voters elected in the midterms. But it's bigger than a meme and says a lot about politics of masculinity in the age of Trump.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
-   "at": "2026-11-14T10:00:00+00:00"
   },
   {
    "source": "NPR",
@@ -339,11 +367,11 @@
    "at": "2026-11-14T10:00:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
-   "desc": "Residents in a one-mile radius of the plant were advised to evacuate after the device was located at an industrial site along the Illinois River.",
-   "url": "https://www.nytimes.com/2026/11/14/us/bomb-ethanol-plant-peoria-illinois.html",
-   "at": "2026-11-14T09:10:40+00:00"
+   "source": "NPR",
+   "title": "As Democrats win big, thirst traps of male candidates take social media by storm",
+   "desc": "It's everywhere on social media: Democrats celebrating the attractive men voters elected in the midterms. But it's bigger than a meme and says a lot about politics of masculinity in the age of Trump.",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+   "at": "2026-11-14T10:00:00+00:00"
   },
   {
    "source": "CNBC",
@@ -479,18 +507,11 @@
    "at": "2026-11-14T01:22:56+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "SpaceX launches Starship in key test flight of massive rocket",
-   "desc": "The test flight is SpaceX's first attempt to ​catch both the Super Heavy booster and upper stage spacecraft of the rocket at its launch site in Starbase, Texas.",
-   "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html",
-   "at": "2026-11-14T01:18:51+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Mullin Says Nationwide Ground Stop Is a Telecommunication Outage",
    "desc": "Markwayne Mullin, the homeland security secretary, speaking to reporters at the White House on Friday.",
    "url": "https://www.nytimes.com/2026/11/13/us/markwayne-mullin-faa-ground-stop.html",
-   "at": "2026-11-14T01:10:31+00:00"
+   "at": "2026-11-14T01:10:32+00:00"
   },
   {
    "source": "New York Times",
@@ -563,20 +584,6 @@
    "at": "2026-11-13T22:53:50+00:00"
   },
   {
-   "source": "NPR",
-   "title": "DHS head Markwayne Mullin says there is not a threat to the U.S. amid FAA ground stop",
-   "desc": "Department of Homeland Security Secretary Markwayne Mullin spoke to at the White House on Friday afternoon after the FAA issues a total ground stop. NPR was there for the briefing.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6040418/dhs-head-markwayne-mullin-says-there-is-not-a-threat-to-the-u-s-amid-faa-ground-stop",
-   "at": "2026-11-13T22:36:46+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Stuck on the tarmac without information: Travelers share their ground stop experiences",
-   "desc": "Passengers stuck on airplanes on tarmacs across the country during the FAA ground stop on Friday share their stories.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6040397/stuck-on-the-tarmac-without-information-travelers-share-their-ground-stop-experiences",
-   "at": "2026-11-13T22:36:45+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "No Criminal Charges for Driver of Truck That Plowed Into Crowd in Kansas",
    "desc": "A district attorney called the crash a tragedy but said that it did not meet the criteria for criminal prosecution.",
@@ -584,32 +591,11 @@
    "at": "2026-11-13T22:35:12+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Lauren Boebert Loses Re-election Bid in Colorado House Race to Eileen Laubacher",
-   "desc": "Ms. Boebert’s loss to Eileen Laubacher in a conservative House district represents a significant victory for Democrats.",
-   "url": "https://www.nytimes.com/2026/11/09/us/lauren-boebert-colorado-house-election.html",
-   "at": "2026-11-13T22:32:23+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
-   "desc": "Eileen Laubacher, a retired rear admiral, defeated one of the highest-profile supporters of President Trump in a deep-red district that she knows will be tough to hold.",
-   "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
-   "at": "2026-11-13T22:24:47+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Nvidia stock suffers longest weekly losing streak since 2012 as market value sinks by $1.7 trillion",
    "desc": "Jensen Huang's resignation added to Nvidia's market woes, with the stock already in a downward slide since early October.",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
    "at": "2026-11-13T22:18:43+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Russia Revives Demand That NATO Retrench to Secure Ukraine Deal",
-   "desc": "The hard-line position of Russian officials in closed-door negotiations about ending the war thrusts European security into the heart of the talks.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/russia-demand-nato-ukraine.html",
-   "at": "2026-11-13T22:18:02+00:00"
   },
   {
    "source": "CBS News",
@@ -626,11 +612,25 @@
    "at": "2026-11-13T22:06:55+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Richard Glossip, Ex-Oklahoma Death Row Prisoner, Pleads to Lesser Charge",
-   "desc": "By pleading guilty to accessory to murder after the fact, Richard Glossip will avoid a retrial of the first-degree murder charge.",
-   "url": "https://www.nytimes.com/2026/11/13/us/richard-glossip-guilty-plea-oklahoma.html",
-   "at": "2026-11-13T22:04:26+00:00"
+   "source": "CBS News",
+   "title": "11/13: The Takeout with Major Garrett",
+   "desc": "The FAA issues a nationwide ground stop, with DHS Secretary Markwayne Mullin saying it's due to a telecommunications outage.",
+   "url": "https://www.cbsnews.com/video/111326-the-takeout-with-major-garrett/",
+   "at": "2026-11-13T22:00:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Never bought Nvidia stock? Its slide could still hit your 401(k).",
+   "desc": "Millions of Americans are exposed to Nvidia shares through their retirement plans. That's not as bad as it sounds (really!).",
+   "url": "https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds/",
+   "at": "2026-11-13T21:32:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+   "desc": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
+   "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+   "at": "2026-11-13T21:18:30+00:00"
   }
  ]
 }

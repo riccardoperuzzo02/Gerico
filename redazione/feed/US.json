@@ -1,7 +1,42 @@
 {
  "code": "US",
- "asOf": "2026-11-14T05:17:39+00:00",
+ "asOf": "2026-11-14T07:17:36+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
+   "desc": "Residents in a one-mile radius of the plant were advised to evacuate after the device was located at an industrial site along the Illinois River.",
+   "url": "https://www.nytimes.com/2026/11/14/us/bomb-ethanol-plant-peoria-illinois.html",
+   "at": "2026-11-14T07:03:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What to Know About Friday’s Nationwide Ground Stop",
+   "desc": "The air traffic control system’s overloaded, antiquated telecommunications equipment sustained its latest widespread failure, prompting a call for more money to fuel faster upgrades.",
+   "url": "https://www.nytimes.com/2026/11/13/us/faa-ground-stop-flights-what-to-know.html",
+   "at": "2026-11-14T06:54:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
+   "desc": "Ecuador is planning to channel funds into its biodiversity, but faces a key challenge: its reliance on oil.",
+   "url": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
+   "at": "2026-11-14T06:00:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Alaska Senate Race Between Dan Sullivan and Mary Peltola Still Counting Votes",
+   "desc": "The race between Senator Dan S. Sullivan and Ms. Peltola, a former congresswoman, is the only Senate contest that hasn’t been called.",
+   "url": "https://www.nytimes.com/2026/11/14/us/alaska-senate-race-ranked-choice-tabulation.html",
+   "at": "2026-11-14T05:31:11+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Democrat Jonathan Kreiss-Tomkins wins race for Alaska governor, replaces a Republican",
+   "desc": "Kreiss-Tomkins, a former state legislator, ran a campaign emphasizing bipartisanship in the the state that usually votes Republican. At 37, he'll be the youngest governor in the state's history.",
+   "url": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins",
+   "at": "2026-11-14T05:12:43+00:00"
+  },
   {
    "source": "New York Times",
    "title": "A Democrat Wins the Alaska Governor’s Race for the First Time Since 1998",
@@ -25,17 +60,10 @@
   },
   {
    "source": "New York Times",
-   "title": "What to Know About Friday’s Nationwide Ground Stop",
-   "desc": "The air traffic control system’s overloaded, antiquated telecommunications equipment sustained its latest widespread failure, prompting a call for more money to fuel faster upgrades.",
-   "url": "https://www.nytimes.com/2026/11/13/us/faa-ground-stop-flights-what-to-know.html",
-   "at": "2026-11-14T04:47:30+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Even High-Flying Democrats Found Themselves Grounded in the Mile High City",
    "desc": "After a nationwide ground stop, several governors and the former secretary of transportation were among those stranded in a Denver hotel bar.",
    "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flights-democrats-denver.html",
-   "at": "2026-11-14T04:03:03+00:00"
+   "at": "2026-11-14T04:03:04+00:00"
   },
   {
    "source": "CBS News",
@@ -63,7 +91,7 @@
    "title": "Flight Canceled During the FAA Ground Stop? Here’s What to Do.",
    "desc": "Travelers are entitled to refunds if their flights are canceled, regardless of the reason, but airlines won’t guarantee other amenities, such as a hotel room or meal vouchers.",
    "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flight-delays-cancellations-tips.html",
-   "at": "2026-11-14T03:07:26+00:00"
+   "at": "2026-11-14T03:07:27+00:00"
   },
   {
    "source": "CBS News",
@@ -168,7 +196,7 @@
    "title": "All Accounted for After Tanker Crashes Into Docked New Orleans Riverboat",
    "desc": "Gov. Jeff Landry of Louisiana called it a “literal miracle on the Mississippi” that all of the nearly 200 people aboard the riverboat were rescued.",
    "url": "https://www.nytimes.com/2026/11/13/us/new-orleans-cruise-ship-crash.html",
-   "at": "2026-11-14T01:17:23+00:00"
+   "at": "2026-11-14T01:17:24+00:00"
   },
   {
    "source": "New York Times",
@@ -197,13 +225,6 @@
    "desc": "A Microsoft outage involving services like Outlook and Teams has impacted many users, companies and government services.",
    "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
    "at": "2026-11-14T00:15:53+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
-   "desc": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
-   "at": "2026-11-13T23:54:36+00:00"
   },
   {
    "source": "CNBC",
@@ -280,7 +301,7 @@
    "title": "Lauren Boebert Loses Re-election Bid in Colorado House Race to Eileen Laubacher",
    "desc": "Ms. Boebert’s loss to Eileen Laubacher in a conservative House district represents a significant victory for Democrats.",
    "url": "https://www.nytimes.com/2026/11/09/us/lauren-boebert-colorado-house-election.html",
-   "at": "2026-11-13T22:32:22+00:00"
+   "at": "2026-11-13T22:32:23+00:00"
   },
   {
    "source": "NPR",
@@ -605,32 +626,11 @@
    "at": "2026-11-13T16:54:40+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Does Europe regret its bet on U.S. defense?",
-   "desc": "Europe bet big on American defense technology and they're now paying the price. Years-long backlogs are underway due to production delays and the U.S. own military needs.",
-   "url": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-   "at": "2026-11-13T16:17:43+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Women are taking pay cuts and 'white-knuckling it' to manage menopause and work: 'I feel like I'm sitting on the sidelines'",
    "desc": "Women, and some trans and non-binary people, often experience career setbacks stemming from menopause that can hurt them financially and professionally.",
    "url": "https://www.cnbc.com/make-it/2026/11/13/menopause-career-setbacks.html",
    "at": "2026-11-13T16:00:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Major AI developers can't control their own tech, lawsuit alleges",
-   "desc": "Companies including Anthropic, Meta and OpenAI are knowingly building technology that poses catastrophic risks to humanity, nonprofit groups claim in a lawsuit.",
-   "url": "https://www.cbsnews.com/news/advocacy-groups-sue-ai-companies/",
-   "at": "2026-11-13T15:49:57+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-   "desc": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
-   "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-   "at": "2026-11-13T15:44:16+00:00"
   }
  ]
 }

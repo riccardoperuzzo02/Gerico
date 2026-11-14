@@ -1,34 +1,398 @@
 {
  "code": "US",
- "asOf": "2026-11-13T21:17:35+00:00",
+ "asOf": "2026-11-14T05:17:39+00:00",
  "items": [
   {
-   "source": "CNBC",
-   "title": "FAA issues nationwide ground stop",
-   "desc": "The Federal Aviation Administration issued a nationwide ground stop on Friday afternoon, \"due to extraordinary circumstances and for reasons of safety.\"",
-   "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-   "at": "2026-11-13T21:15:29+00:00"
+   "source": "New York Times",
+   "title": "A Democrat Wins the Alaska Governor’s Race for the First Time Since 1998",
+   "desc": "Jonathan Kreiss-Tomkins made a name for himself as a coalition builder willing to raise alarms about his state’s dire fiscal straits.",
+   "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-governor-winner-kreiss-tomkins-jkt.html",
+   "at": "2026-11-14T05:08:59+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Goldman Sachs looks to cash in on big IPOs twice. Anthropic’s historic deal is its next chance",
-   "desc": "While co-leading the offering, Goldman also wants a shot at managing the billions of dollars in new wealth that the deal creates. It's not the only one.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
-   "at": "2026-11-13T21:15:03+00:00"
+   "title": "FAA lifts ground stop after more than four hours, but flight cancellations will stretch into the weekend",
+   "desc": "The Federal Aviation Administration issued a nationwide ground stop on Friday afternoon, disrupting thousands of departing of flights.",
+   "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
+   "at": "2026-11-14T05:08:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Hear How Air Traffic Controllers Grappled With the Ground Stoppage Chaos",
+   "desc": "Radio conversations gave a glimpse of how air traffic controllers handled the stoppage of air travel across the United States.",
+   "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-air-traffic-control-pilots.html",
+   "at": "2026-11-14T05:02:06+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What to Know About Friday’s Nationwide Ground Stop",
+   "desc": "The air traffic control system’s overloaded, antiquated telecommunications equipment sustained its latest widespread failure, prompting a call for more money to fuel faster upgrades.",
+   "url": "https://www.nytimes.com/2026/11/13/us/faa-ground-stop-flights-what-to-know.html",
+   "at": "2026-11-14T04:47:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Even High-Flying Democrats Found Themselves Grounded in the Mile High City",
+   "desc": "After a nationwide ground stop, several governors and the former secretary of transportation were among those stranded in a Denver hotel bar.",
+   "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flights-democrats-denver.html",
+   "at": "2026-11-14T04:03:03+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Tanker hits river cruise boat in New Orleans, rescues underway",
-   "desc": "A tanker struck a river cruise on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
+   "title": "FAA lifts nationwide ground stop that disrupted thousands of flights",
+   "desc": "The rare nationwide ground stop lasted about five hours Friday. Sources told CBS News an update to the network connecting the air traffic control system caused a reboot, crash and outage.",
+   "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
+   "at": "2026-11-14T04:03:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Passengers rescued after tanker hit river cruise in New Orleans",
+   "desc": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
    "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
-   "at": "2026-11-13T21:13:22+00:00"
+   "at": "2026-11-14T04:03:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Pilots and Controllers Kept Communicating During Outage",
+   "desc": "Transportation Secretary Sean Duffy said during the intermittent outage, controllers could still reach pilots.",
+   "url": "https://www.nytimes.com/2026/11/13/us/faa-ground-stop-outage-plane-landings.html",
+   "at": "2026-11-14T03:33:11+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Flight Canceled During the FAA Ground Stop? Here’s What to Do.",
+   "desc": "Travelers are entitled to refunds if their flights are canceled, regardless of the reason, but airlines won’t guarantee other amenities, such as a hotel room or meal vouchers.",
+   "url": "https://www.nytimes.com/2026/11/13/us/ground-stop-flight-delays-cancellations-tips.html",
+   "at": "2026-11-14T03:07:26+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "How \"Banana Man\" took a small Indiana town by storm",
+   "desc": "Banana Man began popping up around Linton, Indiana, a few months ago. Videos that also began circulating on social media appeared to show a boy biking all over town in a banana suit.",
+   "url": "https://www.cbsnews.com/news/banana-man-linton-indiana-superhero/",
+   "at": "2026-11-14T02:29:27+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
+   "desc": "The president plans to also discuss the war against Iran, but is not expected to bring up Russia’s war in Ukraine or the scandal that has engulfed Jensen Huang.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-putin-xi-china-nuclear-proliferation.html",
+   "at": "2026-11-14T02:24:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Administration Delays Enforcement of Medicaid Work Requirement",
+   "desc": "The federal government had planned to require poor adults to prove they were working or lose insurance coverage starting Jan. 1. Now, it will let states wait until July.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/medicaid-work-requirement-delay.html",
+   "at": "2026-11-14T02:22:25+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "House Democrats Open Inquiry After Incoming Lawmaker Accused of Sexual Harassment",
+   "desc": "The House Democratic campaign arm is looking into an allegation against Representative-elect Brian Poindexter of Ohio. His campaign says he “gave what he thought was an innocuous compliment to a volunteer.”",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/house-democrats-poindexter-investigation.html",
+   "at": "2026-11-14T02:15:50+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Lutnick agrees to testify as Bessent blames him for chip sales",
+   "desc": "Commerce Secretary Howard Lutnick has agreed to testify before the Senate Banking Committee on Dec. 10, according to a U.S. official.",
+   "url": "https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/",
+   "at": "2026-11-14T02:02:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How the University of North Carolina Tried to Avoid Trump’s Wrath",
+   "desc": "The University of North Carolina’s chancellor tried to protect the school from the Trump administration. Work on cancer, suicide, AIDS and coronaviruses was hit anyway.",
+   "url": "https://www.nytimes.com/2026/11/13/us/university-north-carolina-science-research-cuts-trump.html",
+   "at": "2026-11-14T02:00:19+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Man whose wife, son were injured in building collapse wants answers",
+   "desc": "The world crumbled around Anderson Velez's family on Wednesday when the multi-use Brooklyn building where they resided collapsed.",
+   "url": "https://www.cbsnews.com/news/brooklyn-building-collapse-residents-want-answers/",
+   "at": "2026-11-14T01:53:49+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "West Coast braces for storm system that could unleash 50-foot waves",
+   "desc": "The West Coast is bracing for severe weather over the weekend after the East Coast saw tornadoes this week. Rob Marciano has more.",
+   "url": "https://www.cbsnews.com/video/west-coast-braces-for-storm-system-that-could-unleash-50-foot-waves/",
+   "at": "2026-11-14T01:40:07+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Father whose wife and sons were inside Brooklyn building during collapse shares his story",
+   "desc": "Anderson Velez, who lived in the Brooklyn building that collapsed on Wednesday while his wife and two children were inside, tells Lilia Luciano what he thought when he saw video of the moment the building came down.",
+   "url": "https://www.cbsnews.com/video/father-whose-wife-and-sons-were-inside-brooklyn-building-during-collapse-shares-his-story/",
+   "at": "2026-11-14T01:37:36+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
+   "desc": "Nvidia CEO Jensen Huang resigned this week after reports of multiple affairs, including one with a suspected Chinese spy, Alice Huang.",
+   "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
+   "at": "2026-11-14T01:34:11+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "No fatalities after tanker hits river cruise ship in New Orleans, officials say",
+   "desc": "Authorities said at least 32 people were treated at local hospitals after a tanker struck a river cruise ship on the Mississippi River near the port of New Orleans. All passengers have been accounted for. Skyler Henry has more.",
+   "url": "https://www.cbsnews.com/video/no-fatalities-after-tanker-hits-river-cruise-ship-in-new-orleans-officials-say/",
+   "at": "2026-11-14T01:33:26+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Latest developments on FAA's national ground stop",
+   "desc": "The Federal Aviation Administration ordered a national ground stop on Friday, with officials citing \"extraordinary circumstances\" and safety concerns. Kris Van Cleave reports.",
+   "url": "https://www.cbsnews.com/video/latest-developments-on-faas-national-ground-stop/",
+   "at": "2026-11-14T01:31:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Nvidia Scandal Prompts Questions of What It Means to Be a Spy",
+   "desc": "U.S. intelligence agencies believe a woman who had an affair with Jensen Huang was a Chinese asset. But there is much more that they are still assessing about her role.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/nvidia-alice-huang-spy-china.html",
+   "at": "2026-11-14T01:22:56+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX launches Starship in key test flight of massive rocket",
+   "desc": "The test flight is SpaceX's first attempt to ​catch both the Super Heavy booster and upper stage spacecraft of the rocket at its launch site in Starbase, Texas.",
+   "url": "https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html",
+   "at": "2026-11-14T01:18:51+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "All Accounted for After Tanker Crashes Into Docked New Orleans Riverboat",
+   "desc": "Gov. Jeff Landry of Louisiana called it a “literal miracle on the Mississippi” that all of the nearly 200 people aboard the riverboat were rescued.",
+   "url": "https://www.nytimes.com/2026/11/13/us/new-orleans-cruise-ship-crash.html",
+   "at": "2026-11-14T01:17:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Mullin Says Nationwide Ground Stop Is a Telecommunication Outage",
+   "desc": "Markwayne Mullin, the homeland security secretary, speaking to reporters at the White House on Friday.",
+   "url": "https://www.nytimes.com/2026/11/13/us/markwayne-mullin-faa-ground-stop.html",
+   "at": "2026-11-14T01:10:31+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Airports Fill Up With Stuck Families and Stranded Travelers",
+   "desc": "Travelers waiting for delayed flights at San Francisco International Airport on Friday.",
+   "url": "https://www.nytimes.com/2026/11/13/us/airports-stranded-travelers.html",
+   "at": "2026-11-14T00:45:14+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Democrats strategize on how to deliver on midterm mandate",
+   "desc": "Democrats gathered in Denver this week for a conference on what comes next as they prepare to take control of Congress.",
+   "url": "https://www.cbsnews.com/news/democrats-post-election-voters-economy-trump-factor/",
+   "at": "2026-11-14T00:43:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Microsoft seeing \"continued recovery\" amid major worldwide outage",
+   "desc": "A Microsoft outage involving services like Outlook and Teams has impacted many users, companies and government services.",
+   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
+   "at": "2026-11-14T00:15:53+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+   "desc": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+   "at": "2026-11-13T23:54:36+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
+   "desc": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family's financial ties to the chipmaker.",
+   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+   "at": "2026-11-13T23:42:18+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/13: CBS Evening News",
+   "desc": "Latest on FAA's national ground stop; No fatalities in New Orleans ship collision.",
+   "url": "https://www.cbsnews.com/video/111326-cbs-evening-news/",
+   "at": "2026-11-13T23:30:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Last Ground Stop, in 2023, Came After a Pilot Warning System Went Down",
+   "desc": "Travelers lined up to check in at Newark Liberty International Airport in 2023.",
+   "url": "https://www.nytimes.com/2026/11/13/us/2023-ground-stop-faa-pilot-warning-system.html",
+   "at": "2026-11-13T23:21:07+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Numbers Behind Scott Colom’s Stunning Upset in the Mississippi Senate Race",
+   "desc": "To win a Senate seat in a highly polarized, deeply Republican state, Scott Colom needed a perfect storm. He got it.",
+   "url": "https://www.nytimes.com/2026/11/13/us/elections/scott-colom-senate-upset-history-mississippi.html",
+   "at": "2026-11-13T23:18:08+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Officials Press Congress to Renew Spying Law in Lame-Duck Session",
+   "desc": "The request to extend a high-profile warrantless surveillance law would add a thorny issue during waning Republican control.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-congress-section-702-surveillance.html",
+   "at": "2026-11-13T23:10:36+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "5 Takeaways from Joe Biden’s Memoir: The Debate, Dropping Out and Advice From Romney",
+   "desc": "The 46th president defends his decision to run for re-election, which many in his party now regard as a mistake, and revisits the disastrous debate that forced him to end his campaign.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/joe-biden-new-memoir-takeaways.html",
+   "at": "2026-11-13T23:01:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Vie for Support in Race for Top Senate Job",
+   "desc": "Senator Chris Van Hollen of Maryland said he wouldn’t run for president to focus on his leadership challenge to Senator Chuck Schumer, who remained confident he would prevail.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/democrats-senate-leader.html",
+   "at": "2026-11-13T22:53:50+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "DHS head Markwayne Mullin says there is not a threat to the U.S. amid FAA ground stop",
+   "desc": "Department of Homeland Security Secretary Markwayne Mullin spoke to at the White House on Friday afternoon after the FAA issues a total ground stop. NPR was there for the briefing.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040418/dhs-head-markwayne-mullin-says-there-is-not-a-threat-to-the-u-s-amid-faa-ground-stop",
+   "at": "2026-11-13T22:36:46+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Stuck on the tarmac without information: Travelers share their ground stop experiences",
+   "desc": "Passengers stuck on airplanes on tarmacs across the country during the FAA ground stop on Friday share their stories.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040397/stuck-on-the-tarmac-without-information-travelers-share-their-ground-stop-experiences",
+   "at": "2026-11-13T22:36:45+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "No Criminal Charges for Driver of Truck That Plowed Into Crowd in Kansas",
+   "desc": "A district attorney called the crash a tragedy but said that it did not meet the criteria for criminal prosecution.",
+   "url": "https://www.nytimes.com/2026/11/13/us/wichita-kansas-soccer-field-crash-charges.html",
+   "at": "2026-11-13T22:35:12+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Lauren Boebert Loses Re-election Bid in Colorado House Race to Eileen Laubacher",
+   "desc": "Ms. Boebert’s loss to Eileen Laubacher in a conservative House district represents a significant victory for Democrats.",
+   "url": "https://www.nytimes.com/2026/11/09/us/lauren-boebert-colorado-house-election.html",
+   "at": "2026-11-13T22:32:22+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "What we know about the FAA nationwide ground stop",
+   "desc": "The Federal Aviation Administration took an extraordinary step Friday afternoon by issuing a nationwide ground stop. No planes are taking off at any airport and millions of passengers are stranded.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040388/what-we-know-about-the-faa-nationwide-ground-stop",
+   "at": "2026-11-13T22:27:38+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
+   "desc": "Eileen Laubacher, a retired rear admiral, defeated one of the highest-profile supporters of President Trump in a deep-red district that she knows will be tough to hold.",
+   "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
+   "at": "2026-11-13T22:24:47+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "GOP state officials push to revive Trump's mail voting restrictions for 2028 election",
+   "desc": "Some Republican state officials are reviving a bid for mail-in voting restrictions for the 2028 election by appealing a court order blocking the Postal Service from carrying out a revised ballot rule.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040409/trump-mail-in-voting",
+   "at": "2026-11-13T22:18:55+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia stock suffers longest weekly losing streak since 2012 as market value sinks by $1.7 trillion",
+   "desc": "Jensen Huang's resignation added to Nvidia's market woes, with the stock already in a downward slide since early October.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html",
+   "at": "2026-11-13T22:18:43+00:00"
   },
   {
    "source": "New York Times",
    "title": "Russia Revives Demand That NATO Retrench to Secure Ukraine Deal",
    "desc": "The hard-line position of Russian officials in closed-door negotiations about ending the war thrusts European security into the heart of the talks.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/russia-demand-nato-ukraine.html",
-   "at": "2026-11-13T21:12:33+00:00"
+   "at": "2026-11-13T22:18:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "New congressman faces sexual harassment allegation",
+   "desc": "House Democrats are investigating an allegation of sexual harassment against Brian Poindexter, who defeated embattled GOP Rep. Max Miller.",
+   "url": "https://www.cbsnews.com/news/democrats-investigating-sexual-harassment-allegation-brian-poindexter/",
+   "at": "2026-11-13T22:08:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Hackers stole $6.3 billion from Binance—2 habits that take 'a few seconds' can help you avoid similar traps",
+   "desc": "Researchers from the Digital Inquiry Group say that two habits that take just \"a few seconds up front\" can help keep you from being \"duped\" online.",
+   "url": "https://www.cnbc.com/make-it/2026/11/13/binance-hack-2-online-habits-that-can-help-you-avoid-scams-.html",
+   "at": "2026-11-13T22:06:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Richard Glossip, Ex-Oklahoma Death Row Prisoner, Pleads to Lesser Charge",
+   "desc": "By pleading guilty to accessory to murder after the fact, Richard Glossip will avoid a retrial of the first-degree murder charge.",
+   "url": "https://www.nytimes.com/2026/11/13/us/richard-glossip-guilty-plea-oklahoma.html",
+   "at": "2026-11-13T22:04:26+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/13: The Takeout with Major Garrett",
+   "desc": "The FAA issues a nationwide ground stop, with DHS Secretary Markwayne Mullin saying it's due to a telecommunications outage.",
+   "url": "https://www.cbsnews.com/video/111326-the-takeout-with-major-garrett/",
+   "at": "2026-11-13T22:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Old tech blamed for the ground stop that caused flight chaos: 'It got overloaded'",
+   "desc": "The nationwide ground stop that paralyzed the U.S. aviation system on Friday has ended, according to Federal Aviation Administration.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040403/faa-nationwide-groundstop-airports",
+   "at": "2026-11-13T21:55:13+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Goldman Sachs looks to cash in on big IPOs twice. Anthropic’s historic deal is its next chance",
+   "desc": "While co-leading the offering, Goldman also wants a shot at managing the billions of dollars in new wealth that the deal creates. It's not the only one.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
+   "at": "2026-11-13T21:44:07+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Never bought Nvidia stock? Its slide could still hit your 401(k).",
+   "desc": "Millions of Americans are exposed to Nvidia shares through their retirement plans. That's not as bad as it sounds (really!).",
+   "url": "https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds/",
+   "at": "2026-11-13T21:32:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Hakeem Jeffries Pushes to Lock Down House Speakership, With No Challenger Emerging",
+   "desc": "Facing resistance from the left but no challenger, the Democratic leader is sewing up support from key coalitions as his allies say he deserves a unanimous vote.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/jeffries-house-speaker-democrats.html",
+   "at": "2026-11-13T21:28:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 15)",
+   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
+   "at": "2026-11-13T21:24:52+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+   "desc": "Jensen Huang’s resignation puts Nvidia’s AI financing strategy in focus as investors watch credit markets and neocloud exposure.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
+   "at": "2026-11-13T21:19:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
+   "desc": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
+   "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
+   "at": "2026-11-13T21:18:30+00:00"
   },
   {
    "source": "CNBC",
@@ -38,25 +402,25 @@
    "at": "2026-11-13T21:08:20+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 15)",
-   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-13T21:07:48+00:00"
-  },
-  {
    "source": "CNBC",
-   "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
-   "desc": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
-   "at": "2026-11-13T21:04:43+00:00"
+   "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
+   "desc": "Corporate security firms train companies and their employees on strategies for being vigilant against honeypots, and other social engineering attacks.",
+   "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
+   "at": "2026-11-13T21:06:25+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Microsoft seeing \"continued recovery\" amid major worldwide outage",
-   "desc": "A Microsoft outage involving services like Outlook and Teams has dragged on for hours and impacted many users, companies and government services",
-   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
-   "at": "2026-11-13T20:59:11+00:00"
+   "source": "NPR",
+   "title": "With his challenge to Schumer, Van Hollen forces a debate over Democrats' mandate",
+   "desc": "Democrats say they have a mandate to deliver change, but as the party gets ready to retake the majority in both the House and Senate, there are divides over who should lead it.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6040044/dem-senate-leader-fight",
+   "at": "2026-11-13T21:06:09+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "The government says it will close a beloved D.C. park Sunday. Will a judge step in?",
+   "desc": "Federal judge Ana Reyes grilled the government on Friday about its plans for East Potomac Park, and indicated she could order it to remain open despite President Trump's renovation wishes.",
+   "url": "https://www.npr.org/2026/11/13/nx-s1-6039273/east-po-hearing-nov-13",
+   "at": "2026-11-13T21:06:05+00:00"
   },
   {
    "source": "CBS News",
@@ -74,13 +438,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Cargo Ship Crashes Into Docked Riverboat in New Orleans",
-   "desc": "Search and rescue operations were continuing after the riverboat, which was docked and had 129 people aboard, was struck by a cargo ship on Friday afternoon, the authorities said.",
-   "url": "https://www.nytimes.com/2026/11/13/us/new-orleans-cruise-ship-crash.html",
-   "at": "2026-11-13T20:41:41+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Supreme Court Set to Hear Trump’s Ban on Asylum Claims at Border",
    "desc": "Lower courts have ruled against the policy, which has effectively shut down avenues for people seeking asylum protections and to remain in the United States.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/supreme-court-trump-asylum-border.html",
@@ -88,10 +445,10 @@
   },
   {
    "source": "CBS News",
-   "title": "Democrats have flipped over 40 House seats. Here's the breakdown.",
+   "title": "Democrats have flipped 45 House seats. Here's the breakdown.",
    "desc": "Democrats won control of the House by flipping more than 40 Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
    "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
-   "at": "2026-11-13T20:37:10+00:00"
+   "at": "2026-11-13T20:37:00+00:00"
   },
   {
    "source": "CNBC",
@@ -99,20 +456,6 @@
    "desc": "National Economic Council Director Kevin Hassett poured cold water on a report that he's expected to leave the White House in the coming weeks.",
    "url": "https://www.cnbc.com/2026/11/13/kevin-hassett-white-house-nec.html",
    "at": "2026-11-13T20:27:47+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Hakeem Jeffries Pushes to Lock Down House Speakership, With No Challenger Emerging",
-   "desc": "Facing resistance from the left but no challenger, the Democratic leader is sewing up support from key coalitions as his allies say he deserves a unanimous vote.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/jeffries-house-speaker-democrats.html",
-   "at": "2026-11-13T20:22:38+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Lauren Boebert Loses Re-election Bid in Colorado House Race to Eileen Laubacher",
-   "desc": "Ms. Boebert’s loss to Eileen Laubacher in a conservative House district represents a significant victory for Democrats.",
-   "url": "https://www.nytimes.com/2026/11/09/us/lauren-boebert-colorado-house-election.html",
-   "at": "2026-11-13T20:21:44+00:00"
   },
   {
    "source": "CBS News",
@@ -123,31 +466,10 @@
   },
   {
    "source": "CNBC",
-   "title": "CFTC Chair Selig tells CNBC crypto industry is embracing agency rules as legislation hopes fade",
-   "desc": "The top U.S. commodities regulator in October announced proposed crypto rules to assert its jurisdiction over the asset class.",
-   "url": "https://www.cnbc.com/2026/11/13/cftc-chair-selig-crypto-industry-opting-into-agencys-crypto-rules-.html",
-   "at": "2026-11-13T20:07:30+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Meet Eileen Laubacher, the Navy Veteran Who Beat Lauren Boebert",
-   "desc": "Eileen Laubacher, a retired rear admiral, defeated one of the highest-profile supporters of President Trump in a deep-red district that she knows will be tough to hold.",
-   "url": "https://www.nytimes.com/2026/11/13/us/elections/eileen-laubacher-defeated-lauren-boebert.html",
-   "at": "2026-11-13T20:06:16+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "After Jensen Huang’s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
    "desc": "Advisors say investors should weigh their Nvidia exposure, time horizon and risk tolerance before reacting to the leadership change.",
    "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
    "at": "2026-11-13T19:53:38+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Richard Glossip, Ex-Oklahoma Death Row Prisoner, Pleads to Lesser Charge",
-   "desc": "By pleading guilty to accessory to murder after the fact, Richard Glossip will avoid a retrial of the first-degree murder charge.",
-   "url": "https://www.nytimes.com/2026/11/13/us/richard-glossip-guilty-plea-oklahoma.html",
-   "at": "2026-11-13T19:43:09+00:00"
   },
   {
    "source": "CNBC",
@@ -178,13 +500,6 @@
    "at": "2026-11-13T19:15:23+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker",
-   "desc": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family’s financial ties to the chipmaker.",
-   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-   "at": "2026-11-13T19:11:13+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "TSA agent finds live snakes in luggage at California airport",
    "desc": "X-ray images of the luggage showed what appeared to be a rope but turned out to be two live snakes concealed in a pillowcase.",
@@ -194,7 +509,7 @@
   {
    "source": "NPR",
    "title": "What's Trump's strategy now with Iran? To keep things as they are",
-   "desc": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure",
+   "desc": "President Trump says the \"status quo\" is what Gulf Arab allies want as the Iran war hits a stalemate and the U.S. midterms force a pivot from threats of attacks to economic pressure.",
    "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
    "at": "2026-11-13T19:02:04+00:00"
   },
@@ -263,7 +578,7 @@
   },
   {
    "source": "CBS News",
-   "title": "Criminal probe launched into cruise ship over potential \"magic pipe\"",
+   "title": "Criminal probe into cruise ship over potential \"magic pipe\"",
    "desc": "The U.S. Coast Guard launched an investigation into a so-called \"magic pipe\" case, in which a ship transfers its oil discharge into its gray water system.",
    "url": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/",
    "at": "2026-11-13T17:21:00+00:00"
@@ -312,325 +627,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Nvidia scandal draws in Commerce Secretary Lutnick, who reportedly agrees to testify about China chip sales",
-   "desc": "Commerce Secretary Lutnick will testify before the Senate Banking Committee following revelations about Jensen Huang's affair with an alleged Chinese spy.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html",
-   "at": "2026-11-13T15:49:11+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "How Sen. Chris Van Hollen plans to flex Democratic power on the foreign aid front",
-   "desc": "He's the ranking member of the Senate Foreign Relations Subcommittee that oversees health aid and he's just announced he's running for Majority Leader. He spoke to NPR about his foreign aid vision.",
-   "url": "https://www.npr.org/2026/11/13/g-s1-153350/senator-chris-van-hollen-global-health-development-aid",
-   "at": "2026-11-13T15:46:35+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
    "desc": "The producer price index was expected to increase 0.4% in October, according to the Dow Jones consensus.",
    "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
    "at": "2026-11-13T15:44:16+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
-   "desc": "Jensen Huang’s resignation puts Nvidia’s AI financing strategy in focus as investors watch credit markets and neocloud exposure.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html",
-   "at": "2026-11-13T15:34:48+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Billy Evans calls his portrayal in Elizabeth Holmes documentary \"crazy\"",
-   "desc": "Billy Evans, the partner of Elizabeth Holmes, opened up about his portrayal in a hit documentary on \"CBS Sunday Morning.\"",
-   "url": "https://www.cbsnews.com/news/billy-evans-elizabeth-holmes-documentary-portrayal/",
-   "at": "2026-11-13T15:33:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Arctic air, hail, rare November tornado blast the Northeast U.S.",
-   "desc": "Severe weather brought hail, rain, snow and more to the Northeast U.S. Rob Marciano has more.",
-   "url": "https://www.cbsnews.com/video/arctic-air-hail-rare-november-tornado-blast-the-northeast-us/",
-   "at": "2026-11-13T15:22:12+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
-   "desc": "The office of Stephen Miller, President Trump’s new chief of staff, outlined a new policy that seeks to show independence from special interests.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
-   "at": "2026-11-13T15:20:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Lutnick agrees to testify as Bessent blames him for chip sales",
-   "desc": "Commerce Secretary Howard Lutnick has agreed to testify before the Senate Banking Committee on Dec. 10, according to a U.S. official.",
-   "url": "https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/",
-   "at": "2026-11-13T15:13:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "NHL’s next TV deal will test the league’s strength while media companies prepare for NFL rights increase",
-   "desc": "How do the world's biggest media companies judge the value of non-NFL rights? The NHL is giving us our first window into a new era in media values.",
-   "url": "https://www.cnbc.com/2026/11/13/nhls-next-media-deal-will-test-the-leagues-strength.html",
-   "at": "2026-11-13T15:04:10+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
-   "desc": "Like Apple, Nvidia now faces its own transition away from a founder-led company. But experts say Jensen Huang’s central role could make replacing him difficult.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html",
-   "at": "2026-11-13T15:03:10+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Even Scott Colom’s Backers Were Skeptical. Here’s How He Won in Mississippi.",
-   "desc": "Few were paying much attention to Mr. Colom for most of his Senate campaign. Then he toppled the Republican incumbent.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/scott-colom-mississippi-democrat-defied-odds.html",
-   "at": "2026-11-13T15:01:10+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "‘We will sue them’: Canada threatens Stellantis as Trump trade war reshapes Jeep production plans",
-   "desc": "The dispute comes after Stellantis scrapped planned Jeep Compass production in Brampton and shifted future output to Illinois amid U.S. auto tariffs.",
-   "url": "https://www.cnbc.com/2026/11/13/canada-stellantis-auto-trump-tariffs-jeep.html",
-   "at": "2026-11-13T14:24:57+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
-   "desc": "The policymaker expressed concern about the latest inflation data, telling CNBC that the central bank likely will need to take action.",
-   "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
-   "at": "2026-11-13T14:22:07+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "‘We Squandered an Opportunity’: The Christian Right on Its Election Rout",
-   "desc": "The midterm election results were a stinging setback for the movement, setting off a scramble among activists to regroup ahead of the 2028 presidential contest.",
-   "url": "https://www.nytimes.com/2026/11/13/us/christian-right-collapse.html",
-   "at": "2026-11-13T14:20:51+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "1 killed, 5 injured in shooting in D.C.; suspect is dead",
-   "desc": "The suspect, identified as a 55-year-old doctor, was found dead in his apartment from a self-inflicted gunshot wound, police said.",
-   "url": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/",
-   "at": "2026-11-13T14:05:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Howard Lutnick Took Softer Line on Nvidia as Calls for Tougher Controls Grew",
-   "desc": "Critics say Howard Lutnick, the commerce secretary, and his department have shielded Nvidia as concerns have grown over A.I. chip sales to firms like Megaspeed.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/lutnick-nvidia-commerce-china-chips.html",
-   "at": "2026-11-13T14:02:13+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "D.C. gunman appeared to vent about problems with luxury condo",
-   "desc": "An X account associated with D.C. shooting suspect Matt Lambert was filled with complaints about mold, rodents and disrepair in his unit in the condo building.",
-   "url": "https://www.cbsnews.com/news/dc-shooting-gunman-social-media/",
-   "at": "2026-11-13T14:02:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang scandal casts doubt on Nvidia’s AI dominance — how we got here",
-   "desc": "Nvidia is facing its biggest crisis in its 33 year history, with founder Jensen Huang resigning as CEO. Here's the story of the rise and fall of Jensen Huang.",
-   "url": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
-   "at": "2026-11-13T14:01:24+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Remembering singer and actor Peggy King",
-   "desc": "King, who died Oct. 25, got her start singing in big bands in the 1950s. She had a string of hits, a contract with MGM and was a popular fixture on TV variety shows. Originally broadcast in 1983.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6038917/remembering-singer-and-actor-peggy-king",
-   "at": "2026-11-13T13:35:22+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "USMNT head coach Mauricio Pochettino is leaving for Manchester United",
-   "desc": "Mauricio Pochettino is out as head coach of the U.S. men's national soccer team. Pochettino led the U.S. to the round of 16 at last year's World Cup. He's departing to coach Manchester United.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6038932/mauricio-pochettino-usmnt-manchester-united",
-   "at": "2026-11-13T13:32:23+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump says he wants to ‘get Cuba done’ before leaving office, would consider military force",
-   "desc": "It comes as the U.S. continues to enforce a comprehensive economic embargo against Cuba.",
-   "url": "https://www.cnbc.com/2026/11/13/trump-cuba-us-military-force-iran.html",
-   "at": "2026-11-13T13:04:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "CNBC's Official NHL Team Valuations 2026: How the 32 franchises stack up",
-   "desc": "The average NHL team is worth $2.71 billion, 23% more than a year ago.",
-   "url": "https://www.cnbc.com/2026/11/13/cnbcs-official-nhl-team-valuations-2026-how-the-32-clubs-stack-up.html",
-   "at": "2026-11-13T12:47:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Huang's exit rocks Nvidia and creates openings for rival firms",
-   "desc": "Huang was a visionary leader with deep relationships in the complex world of tech. Losing him will hurt Nvidia, according to Wall Street analysts.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-resigns-competitors/",
-   "at": "2026-11-13T12:35:42+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
-   "desc": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role. And, Sen. Chris Van Hollen says he will challenge Chuck Schumer for majority leader.",
-   "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
-   "at": "2026-11-13T12:07:12+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Happy World Kindness Day! Check out our kind photos of kindness to humans -- and cats",
-   "desc": "Friday, November 13 is World Kindness Day. Your mission: Do something kind. Small acts of kindness definitely count!",
-   "url": "https://www.npr.org/2026/11/13/g-s1-153274/world-kindness-day-altruism-generosity",
-   "at": "2026-11-13T12:06:28+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Russian crude production rebounds after Trump diesel deal, IEA says as oil markets return to surplus",
-   "desc": "Russia’s crude output rose to 8.73 million barrels a day in October as recovering Gulf exports pushed global supply above demand, the IEA said.",
-   "url": "https://www.cnbc.com/2026/11/13/russia-oil-exports-iea-diesel-deal.html",
-   "at": "2026-11-13T12:05:22+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. seizes $1.2 billion in cryptocurrency stolen from Binance",
-   "desc": "The DOJ said it was taking action against the North Korean government's \"schemes to fund its regime through the massive theft of cryptocurrency.\"",
-   "url": "https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html",
-   "at": "2026-11-13T12:03:24+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Colette Kress becomes Nvidia's interim CEO after Jensen Huang resigns",
-   "desc": "Nvidia's CEO Jensen Huang is out, and the company's chief financial officer Colette Kress is taking over as interim CEO. She'll have to guide the company through an exceptionally challenging time.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6038889/colette-kress-becomes-nvidias-interim-ceo-after-jensen-huang-resigns",
-   "at": "2026-11-13T11:47:38+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
-   "desc": "AI expert Gary Marcus breaks down what's at stake for Nvidia and the mess its new CEO has inherited.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick",
-   "at": "2026-11-13T11:47:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia’s turmoil is prompting a rotation across chip stocks. Here's what we know",
-   "desc": "That shift comes as Nvidia grapples with the fallout from Huang's resignation, following revelations about his multiple affairs.",
-   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-affairs-amd-broadcom-tsmc.html",
-   "at": "2026-11-13T08:27:07+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Chris Van Hollen Set to Challenge Chuck Schumer for Senate Majority Leader",
-   "desc": "Senator Chris Van Hollen of Maryland has emerged as a favorite of Democrats seeking an alternative to Senator Chuck Schumer, who says he has the votes to win.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/van-hollen-schumer-democrats-majority-leader.html",
-   "at": "2026-11-13T04:11:39+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Had Urged Nvidia’s Jensen Huang to Fight for His Job",
-   "desc": "The president called the Nvidia chief on Tuesday, continuing a pattern of supporting him even as the spy scandal was intensifying.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-jensen-huang-nvidia.html",
-   "at": "2026-11-13T03:27:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "GOP lawmakers press Huang and Lutnick to testify over Nvidia",
-   "desc": "Republicans on Capitol Hill are negotiating for now-resigned Nvidia CEO Jensen Huang​ to appear before Congress.",
-   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-congress-testify/",
-   "at": "2026-11-13T02:59:50+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Republican Setbacks Swell in the South With Stinging Loss in Mississippi",
-   "desc": "The Democrat Scott Colom’s stunning Senate upset punctuated a dismal midterm showing for the G.O.P. in a region they had dominated for years.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/republican-defeats-south-mississippi-midterms.html",
-   "at": "2026-11-13T02:23:48+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "No charges for driver who plowed truck into field during Kansas youth soccer game, killing 2",
-   "desc": "A district attorney in Kansas said he will not be pressing criminal charges against a woman who drove a pickup truck into spectators and bystanders on the sidelines of a youth soccer match last month. Two people were killed, including a 6-year-old. Tom Hanson has more.",
-   "url": "https://www.cbsnews.com/video/no-charges-driver-plowed-truck-field-during-kansas-youth-soccer-game-killing-2/",
-   "at": "2026-11-13T01:54:37+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Rescue Ends in Brooklyn After 8 Die in Building Collapse",
-   "desc": "The Fire Department said the search for victims on Flatbush Avenue was over, while city investigators began looking into an excavation occurring next door.",
-   "url": "https://www.nytimes.com/2026/11/12/us/brooklyn-building-collapse-deaths.html",
-   "at": "2026-11-13T01:11:13+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Hegseth awards medal to soldier who reprimanded group near tomb",
-   "desc": "Defense Secretary Pete Hegseth awarded a medal to the service member who reprimanded his group for making noise at the Tomb of the Unknown Soldier​.",
-   "url": "https://www.cbsnews.com/news/hegseth-medal-reprimand-tomb-of-the-unknown-soldier/",
-   "at": "2026-11-13T01:04:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Storm front to bring possible hail, tornadoes to Northeast",
-   "desc": "A big storm that was hitting the Northeast on Thursday could bring tornadoes, hail and heavy rain to the region, which could then see a steep drop in temperature, with many areas forecast to dip well below freezing. Rob Marciano has more.",
-   "url": "https://www.cbsnews.com/video/storm-front-to-bring-possible-hail-tornadoes-to-northeast/",
-   "at": "2026-11-13T00:47:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Cruise ship detained by Coast Guard in Miami cleared to sail",
-   "desc": "The MSC Poesia was detained in Miami earlier this month after the Coast Guard \"identified deficiencies with systems on board the vessel.\"",
-   "url": "https://www.cbsnews.com/news/cruise-ship-msc-poesia-detained-by-coast-guard-in-miami-cleared-to-sail/",
-   "at": "2026-11-13T00:32:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Ex-Oklahoma death row inmate pleads guilty to lesser charge",
-   "desc": "During his time on death row, courts set nine different execution dates for Richard Glossip, and he came so close to being put to death that he ate three separate last meals.",
-   "url": "https://www.cbsnews.com/news/richard-glossip-ex-oklahoma-death-row-inmate-pleads-guilty-to-accessory/",
-   "at": "2026-11-12T23:34:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/12: CBS Evening News",
-   "desc": "Suspected D.C. shooter identified as a doctor; Hailstorm could hit East Coast cities.",
-   "url": "https://www.cbsnews.com/video/111226-cbs-evening-news/",
-   "at": "2026-11-12T23:30:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Holscher Wins Kansas Governor Race, Retaining Seat for Democrats",
-   "desc": "State Senator Cindy Holscher won the race. Though Kansas is reliably Republican in presidential elections, its voters often break for Democrats in midterms.",
-   "url": "https://www.nytimes.com/2026/11/12/us/kansas-governor-democrat-holscher-wins.html",
-   "at": "2026-11-12T23:16:10+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "What Does 2026 Mean for the Map in 2028?",
-   "desc": "Mississippi and other states have created new uncertainty about what, exactly, a red state is.",
-   "url": "https://www.nytimes.com/2026/11/12/us/politics/midterm-elections-2028-presidential-map.html",
-   "at": "2026-11-12T23:14:35+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "USPS adds permanent postage surcharge, citing higher fuel costs",
-   "desc": "Still swimming in red ink, the USPS said it will raise some postage prices in 2027 to offset elevated fuel costs.",
-   "url": "https://www.cbsnews.com/news/usps-permanent-postage-fuel-surcharge-2027/",
-   "at": "2026-11-12T23:07:31+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Brooklyn building that collapsed had 98 open violations, records show",
-   "desc": "Officials still have not said what caused the building collapse at 1321 Flatbush Ave.​ that left eight people dead, including two children.",
-   "url": "https://www.cbsnews.com/news/flatbush-brooklyn-building-collapse-violations/",
-   "at": "2026-11-12T22:46:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "What men should know about new prostate cancer screening guidelines",
-   "desc": "The American Cancer Society is recommending routine prostate cancer screening for more middle-aged men, in a major change to its guidelines.",
-   "url": "https://www.cbsnews.com/news/prostate-cancer-screening-guidelines/",
-   "at": "2026-11-12T22:13:00+00:00"
   }
  ]
 }

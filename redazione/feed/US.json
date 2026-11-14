@@ -1,7 +1,77 @@
 {
  "code": "US",
- "asOf": "2026-11-14T09:17:35+00:00",
+ "asOf": "2026-11-14T11:17:35+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "What’s Behind the Trump-Huang Relationship?",
+   "desc": "President Trump’s show of support for Jensen Huang as he was under fire was a remarkable moment in a relationship that barely existed two years ago. Our White House correspondent Maggie Haberman explains how Mr. Trump came to see Mr. Huang as a modern-day Henry Ford.",
+   "url": "https://www.nytimes.com/video/us/politics/100000011272223/whats-behind-the-trump-huang-relationship.html",
+   "at": "2026-11-14T10:52:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s the latest.",
+   "desc": "",
+   "url": "https://www.nytimes.com/live/2026/11/14/us/faa-nationwide-ground-stop-flights/heres-the-latest",
+   "at": "2026-11-14T10:45:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. flights resume after FAA ground stop, but travel disruption continues",
+   "desc": "U.S. flights are resuming after the FAA ground stop, but delays and cancellations are still piling up.",
+   "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "at": "2026-11-14T10:04:43+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "As Congress Plans Investigations, White House Prepares Ferocious Response",
+   "desc": "The Trump administration has quietly been laying the groundwork for an aggressive all-out effort to thwart newly empowered Democrats’ attempts at oversight.",
+   "url": "https://www.nytimes.com/2026/11/14/us/politics/congress-trump-investigations.html",
+   "at": "2026-11-14T10:02:21+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "‘Democrat’ in Alaska’s House Race Is Doing Time in a New York Prison",
+   "desc": "While Republicans accuse Democrats of dirty tricks in the ongoing Alaska Senate race, the lone House contest in the state has the hallmarks of similar “ballot stacking” shenanigans.",
+   "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-house-race-felon-eric-hafner.html",
+   "at": "2026-11-14T10:02:13+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Top Democrat Eyes Filibuster-Proof Budget Bill to Unlock Affordability Agenda",
+   "desc": "The lawmaker set to lead the House Budget Committee outlined Democrats’ options for forcing a negotiation with President Trump on an economic package to bring down living costs.",
+   "url": "https://www.nytimes.com/2026/11/14/us/politics/house-democrats-affordability-costs-budget.html",
+   "at": "2026-11-14T10:01:49+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Ex-Convict? Come Live With Memi and Scott.",
+   "desc": "A couple in Oakland, Calif., has welcomed into their home 24 men recently released from prison sentences for violent crimes, part of a program to ease reintegration into society.",
+   "url": "https://www.nytimes.com/2026/11/14/us/ex-convicts-halfway-house-oakland.html",
+   "at": "2026-11-14T10:00:12+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Hegseth's failed impeachment was a warning to Democrats. Where will they go from here?",
+   "desc": "Democrats have been given a huge opportunity with majorities in both the House and Senate — but the balance of priorities, timing, messaging and discipline are all going to be major tests.",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6040299/hegseth-impeachment-democrats-house-test",
+   "at": "2026-11-14T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "An organ transplant controversy tests 'the dead donor rule'",
+   "desc": "New guidelines are supposed to protect organ donors in a retrieval procedure that keeps blood flowing through livers, kidneys, lungs and hearts. But bioethicists have troubling questions.",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6032604/organ-transplant-donor-dead-ethics",
+   "at": "2026-11-14T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "As Democrats win big, thirst traps of male candidates take social media by storm",
+   "desc": "It's everywhere on social media: Democrats celebrating the attractive men voters elected in the midterms. But it's bigger than a meme and says a lot about politics of masculinity in the age of Trump.",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6040507/democrats-male-candidates-masculinity-trump",
+   "at": "2026-11-14T10:00:00+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
@@ -64,13 +134,6 @@
    "desc": "Jonathan Kreiss-Tomkins made a name for himself as a coalition builder willing to raise alarms about his state’s dire fiscal straits.",
    "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-governor-winner-kreiss-tomkins-jkt.html",
    "at": "2026-11-14T05:08:59+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "FAA lifts ground stop after more than four hours, but flight cancellations will stretch into the weekend",
-   "desc": "The Federal Aviation Administration issued a nationwide ground stop on Friday afternoon, disrupting thousands of departing of flights.",
-   "url": "https://www.cnbc.com/2026/11/13/faa-ground-stop.html",
-   "at": "2026-11-14T05:08:24+00:00"
   },
   {
    "source": "New York Times",
@@ -239,6 +302,13 @@
    "desc": "Democrats gathered in Denver this week for a conference on what comes next as they prepare to take control of Congress.",
    "url": "https://www.cbsnews.com/news/democrats-post-election-voters-economy-trump-factor/",
    "at": "2026-11-14T00:43:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia is done with Jensen Huang. The fallout in Washington is just beginning",
+   "desc": "The Republican-led Congress wants to see Jensen Huang in Washington before Democrats take control in January.",
+   "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-washington-congress.html",
+   "at": "2026-11-13T23:54:36+00:00"
   },
   {
    "source": "CNBC",
@@ -444,13 +514,6 @@
    "at": "2026-11-13T21:06:09+00:00"
   },
   {
-   "source": "NPR",
-   "title": "The government says it will close a beloved D.C. park Sunday. Will a judge step in?",
-   "desc": "Federal judge Ana Reyes grilled the government on Friday about its plans for East Potomac Park, and indicated she could order it to remain open despite President Trump's renovation wishes.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6039273/east-po-hearing-nov-13",
-   "at": "2026-11-13T21:06:05+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Family Dollar to pay $63M after FTC says it overcharged customers",
    "desc": "The discount retailer failed to honor prices displayed on store shelves, on price tags and in ads, the FTC and multiple states alleged.",
@@ -535,13 +598,6 @@
    "at": "2026-11-13T19:11:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "What's Trump's strategy now with Iran? To keep things as they are",
-   "desc": "President Trump says the \"status quo\" is what Gulf Arab allies want as the Iran war hits a stalemate and the U.S. midterms force a pivot from threats of attacks to economic pressure.",
-   "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
-   "at": "2026-11-13T19:02:04+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
    "desc": "Retirees who need cash for a one-time expense may look to their 401(k) or IRA, but financial advisors say there are trade-offs to weigh first.",
@@ -564,13 +620,6 @@
   },
   {
    "source": "New York Times",
-   "title": "A Restaurant Hosted Ramaswamy After His Attack Ad. It’s Paying a Price.",
-   "desc": "When a popular restaurant agreed to serve as a campaign stop for G.O.P. candidates ahead of Election Day, longtime customers turned against it and Medina, Ohio, was left reeling.",
-   "url": "https://www.nytimes.com/2026/11/13/us/medina-ohio-boycott-restaurant-ramaswamy.html",
-   "at": "2026-11-13T18:31:26+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Trump Signals New Strategy on Iran: A Waiting Game",
    "desc": "The administration appears to be moving toward a long-term economic pressure campaign as President Trump expresses little urgency in securing a nuclear agreement.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
@@ -582,55 +631,6 @@
    "desc": "Frank Cappelleri of CappThesis looks at several charts to help answer that question.",
    "url": "https://www.cnbc.com/2026/11/13/is-a-bottom-in-for-the-nasdaq-100-charts-to-watch.html",
    "at": "2026-11-13T18:00:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Brother of cartel leader \"El Mencho\" gets 22.5 years in prison",
-   "desc": "The brother of the slain prominent cartel leader known as \"El Mencho\" was sentenced on Friday to 22 and a half years in prison.",
-   "url": "https://www.cbsnews.com/news/antonio-oseguera-cervantes-el-mencho-brother-22-5-years-sentenced/",
-   "at": "2026-11-13T17:54:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "As Americans drown in medical debt, how one family found a lifeline",
-   "desc": "Coy and Caty Smith are gainfully employed and have health insurance. But when illness struck, the bills piled up fast — here's how they found their way back to financial health.",
-   "url": "https://www.cbsnews.com/news/medical-debt-credit-card-repayment-plan/",
-   "at": "2026-11-13T17:28:56+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Criminal probe into cruise ship over potential \"magic pipe\"",
-   "desc": "The U.S. Coast Guard launched an investigation into a so-called \"magic pipe\" case, in which a ship transfers its oil discharge into its gray water system.",
-   "url": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/",
-   "at": "2026-11-13T17:21:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Asian Americans Share Disappointment and Fear After Jensen Huang Scandal",
-   "desc": "Many East Asians said that he had swagger and seemed like a superhero. Now there are worries that the spy scandal turns into hyper scrutiny against them.",
-   "url": "https://www.nytimes.com/2026/11/13/us/jensen-huang-nvidia-asian-americans.html",
-   "at": "2026-11-13T17:05:47+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "The Trump administration's voter roll crusade could continue",
-   "desc": "Election officials are preparing for the Trump administration's pressure tactics over potential noncitizens on state voter rolls to continue, though recent court rulings pose new obstacles.",
-   "url": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california",
-   "at": "2026-11-13T17:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
-   "desc": "Not one utility CEO we spoke with at the EEI conference is anticipating a slowdown in electricity growth expectations.",
-   "url": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
-   "at": "2026-11-13T16:54:40+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Women are taking pay cuts and 'white-knuckling it' to manage menopause and work: 'I feel like I'm sitting on the sidelines'",
-   "desc": "Women, and some trans and non-binary people, often experience career setbacks stemming from menopause that can hurt them financially and professionally.",
-   "url": "https://www.cnbc.com/make-it/2026/11/13/menopause-career-setbacks.html",
-   "at": "2026-11-13T16:00:01+00:00"
   }
  ]
 }

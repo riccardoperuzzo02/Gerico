@@ -1,13 +1,34 @@
 {
  "code": "US",
- "asOf": "2026-11-14T07:17:36+00:00",
+ "asOf": "2026-11-14T09:17:35+00:00",
  "items": [
   {
    "source": "New York Times",
    "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
    "desc": "Residents in a one-mile radius of the plant were advised to evacuate after the device was located at an industrial site along the Illinois River.",
    "url": "https://www.nytimes.com/2026/11/14/us/bomb-ethanol-plant-peoria-illinois.html",
-   "at": "2026-11-14T07:03:10+00:00"
+   "at": "2026-11-14T09:10:40+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
+   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
+   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
+   "at": "2026-11-14T08:11:28+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Microsoft says it \"restored service\" after major worldwide outage",
+   "desc": "A Microsoft outage involving services like Outlook and Teams impacted many users, companies and government services.",
+   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
+   "at": "2026-11-14T07:32:05+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Analysis: Companies love a ‘rockstar’ CEO. Until they depend on one",
+   "desc": "Jensen Huang’s exit tests Nvidia’s succession planning and governance, and offers lessons for companies that elevate their CEOs to rockstar status.",
+   "url": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
+   "at": "2026-11-14T07:08:45+00:00"
   },
   {
    "source": "New York Times",
@@ -28,7 +49,7 @@
    "title": "Alaska Senate Race Between Dan Sullivan and Mary Peltola Still Counting Votes",
    "desc": "The race between Senator Dan S. Sullivan and Ms. Peltola, a former congresswoman, is the only Senate contest that hasn’t been called.",
    "url": "https://www.nytimes.com/2026/11/14/us/alaska-senate-race-ranked-choice-tabulation.html",
-   "at": "2026-11-14T05:31:11+00:00"
+   "at": "2026-11-14T05:31:12+00:00"
   },
   {
    "source": "NPR",
@@ -67,16 +88,16 @@
   },
   {
    "source": "CBS News",
-   "title": "FAA lifts nationwide ground stop that disrupted thousands of flights",
-   "desc": "The rare nationwide ground stop lasted about five hours Friday. Sources told CBS News an update to the network connecting the air traffic control system caused a reboot, crash and outage.",
-   "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
+   "title": "Passengers rescued after tanker hit river cruise in New Orleans",
+   "desc": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
+   "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
    "at": "2026-11-14T04:03:00+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Passengers rescued after tanker hit river cruise in New Orleans",
-   "desc": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
-   "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
+   "title": "FAA lifts nationwide ground stop that disrupted thousands of flights",
+   "desc": "The rare nationwide ground stop lasted about five hours Friday. Sources told CBS News an update to the network connecting the air traffic control system caused a reboot, crash and outage.",
+   "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
    "at": "2026-11-14T04:03:00+00:00"
   },
   {
@@ -218,13 +239,6 @@
    "desc": "Democrats gathered in Denver this week for a conference on what comes next as they prepare to take control of Congress.",
    "url": "https://www.cbsnews.com/news/democrats-post-election-voters-economy-trump-factor/",
    "at": "2026-11-14T00:43:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Microsoft seeing \"continued recovery\" amid major worldwide outage",
-   "desc": "A Microsoft outage involving services like Outlook and Teams has impacted many users, companies and government services.",
-   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
-   "at": "2026-11-14T00:15:53+00:00"
   },
   {
    "source": "CNBC",
@@ -417,13 +431,6 @@
   },
   {
    "source": "CNBC",
-   "title": "10-year Treasury yield moves to 5.17% as traders weigh producer price report",
-   "desc": "Treasury yields moved higher as investor expectations for a December rate hike by the Federal Reserve gain strength.",
-   "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-   "at": "2026-11-13T21:08:20+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
    "desc": "Corporate security firms train companies and their employees on strategies for being vigilant against honeypots, and other social engineering attacks.",
    "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
@@ -568,13 +575,6 @@
    "desc": "The administration appears to be moving toward a long-term economic pressure campaign as President Trump expresses little urgency in securing a nuclear agreement.",
    "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-iran-strategy.html",
    "at": "2026-11-13T18:20:50+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
-   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-13T18:18:28+00:00"
   },
   {
    "source": "CNBC",

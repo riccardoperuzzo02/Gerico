@@ -1,20 +1,62 @@
 {
  "code": "DE",
- "asOf": "2026-11-14T13:17:35+00:00",
+ "asOf": "2026-11-14T15:17:35+00:00",
  "items": [
   {
+   "source": "Der Spiegel",
+   "title": "Schleswig-Holstein: Daniel Günther erneut CDU-Spitzenkandidat bei Landtagswahl 2027",
+   "desc": "Zum dritten Mal auf Platz eins: Die CDU Schleswig-Holstein hat Daniel Günther als Spitzenkandidaten wiedergewählt. Der 53-Jährige ist seit 2017 Ministerpräsident – er will seinen Posten bei der Landtagswahl im April verteidigen.",
+   "url": "https://www.spiegel.de/politik/deutschland/schleswig-holstein-daniel-guenther-erneut-cdu-spitzenkandidat-bei-landtagswahl-2027-a-19a20388-dc35-46f9-8d09-20c1aaf83358",
+   "at": "2026-11-14T15:03:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Lange Nacht des Impfens in Dresden: »Vielleicht sagt man jetzt Nein, weil man sich überhaupt entscheiden darf«",
+   "desc": "Zwischen Schrundensalbe und Badesalz: Über 1400 Apotheken nehmen in Deutschland an der Langen Nacht des Impfens teil. Ein Vorsorge-Happening gegen Grippe und Covid-19, das seit vier Jahren wächst. Und in Sachsen so?",
+   "url": "https://www.spiegel.de/politik/deutschland/lange-nacht-des-impfens-in-dresden-vielleicht-sagt-man-jetzt-nein-weil-man-sich-ueberhaupt-entscheiden-darf-a-f02dc236-c24b-4ccf-b3f3-dfb011a6e704",
+   "at": "2026-11-14T14:45:00+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Friedrich Merz: Merz verspricht klare Abgrenzung zur AfD in Sachsen-Anhalt",
-   "desc": "Ulrich Siegmund könnte in Sachsen-Anhalt der erste AfD-Ministerpräsident werden. Friedrich Merz schließt eine Zusammenarbeit klar aus. Es gebe »keine Gemeinsamkeiten«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/friedrich-merz-cdu-afd-abgrenzung-neonazis-sachsen-anhalt-gxe",
-   "at": "2026-11-14T12:54:16+00:00"
+   "title": "Sozialausgaben: CSU-Landesgruppenchef Hoffmann kündigt höhere Rentenabschläge an",
+   "desc": "Wer vorzeitig in Rente geht, soll laut CSU mit größeren Einschnitten rechnen. Schon ab 2027 könnten die Abschläge erhöht werden.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenabschlag-vorzeitiger-ruhestand-csu-rente-gxe",
+   "at": "2026-11-14T14:39:50+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gaza: EU fordert sofortigen Zugang für Hilfsorganisationen zum Gazastreifen",
+   "desc": "Um die katastrophale humanitäre Lage im Gazastreifen zu verbessern, fordert die EU Zugang für Hilfsorganisationen. Fünf Menschen sterben nach heftigem Regen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
+   "at": "2026-11-14T14:33:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gouverneurswahl in Alaska: Alaska wählt erstmals seit 1998 einen Demokraten zum Gouverneur",
+   "desc": "Der Demokrat Jonathan Kreiss-Tomkins hat die Gouverneurswahl in Alaska gewonnen. Mehr als die Hälfte der Gouverneursposten sind damit künftig demokratisch besetzt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/gouverneurswahl-alaska-jonathan-kreiss-tomkins-demokraten-donald-trump-gxe",
+   "at": "2026-11-14T13:38:57+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Mecklenburg-Vorpommern: Weg frei für rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern",
    "desc": "Nach der Linken haben in Mecklenburg-Vorpommern auch Grüne und SPD dem Koalitionsvertrag zugestimmt. Am Abend soll die Vereinbarung in Greifswald unterschrieben werden.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/rot-rot-gruen-mecklenburg-vorpommern-koalitionsvertrag-spd-manuela-schwesig-gxe",
-   "at": "2026-11-14T12:50:39+00:00"
+   "at": "2026-11-14T13:25:51+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Trauerakt in München: Große Anteilnahme bei Abschied von Aiwanger",
+   "desc": "Der bayerische Vize-Ministerpräsident und Freie-Wähler-Chef Aiwanger ist mit einem Trauerstaatsakt gewürdigt worden. Die Anteilnahme war groß. Zu der Zeremonie in der Frauenkirche kamen mehr als 1.000 Trauergäste.",
+   "url": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
+   "at": "2026-11-14T13:22:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Friedrich Merz: Merz verspricht klare Abgrenzung zur AfD in Sachsen-Anhalt",
+   "desc": "Ulrich Siegmund könnte in Sachsen-Anhalt der erste AfD-Ministerpräsident werden. Friedrich Merz schließt eine Zusammenarbeit klar aus. Es gebe »keine Gemeinsamkeiten«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/friedrich-merz-cdu-afd-abgrenzung-neonazis-sachsen-anhalt-gxe",
+   "at": "2026-11-14T12:54:16+00:00"
   },
   {
    "source": "Die Zeit",
@@ -29,13 +71,6 @@
    "desc": "Koalition und Medien sind sich einig, dass Ilse Aigner die ideale Kandidatin für das Schloss Bellevue ist. Wie kann ein ganzes Land so irren?",
    "url": "https://www.spiegel.de/politik/deutschland/ilse-aigner-csu-als-bundespraesidentin-ein-grosses-missverstaendnis-kolumne-a-9a10a4b5-917f-4872-aa69-7b3b1e7c208c",
    "at": "2026-11-14T11:12:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Trauerakt in München: Große Anteilnahme bei Abschied von Aiwanger",
-   "desc": "In München haben zahlreiche Menschen am Trauerakt für den bayerischen Vize-Ministerpräsidenten und Freie-Wähler-Chef Aiwanger teilgenommen. Kardinal Marx sprach von einem \"Schock\". Er würdigte Aiwanger als \"außergewöhnliche Persönlichkeit\".",
-   "url": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
-   "at": "2026-11-14T11:11:58+00:00"
   },
   {
    "source": "Die Zeit",
@@ -53,8 +88,8 @@
   },
   {
    "source": "Die Zeit",
-   "title": "München: Mehr als 1.000 Gäste nehmen Abschied von Hubert Aiwanger",
-   "desc": "Mit einem Requiem und einem Staatsakt wird der kürzlich gestorbene bayerische Wirtschaftsminister Hubert Aiwanger gewürdigt. Zu dem Trauerakt kamen mehr als 1.000 Gäste.",
+   "title": "Staatsakt: Mehr als 1.000 Gäste nehmen Abschied von Hubert Aiwanger",
+   "desc": "Mit einem Requiem und einem Staatsakt wurde der kürzlich gestorbene bayerische Wirtschaftsminister Hubert Aiwanger gewürdigt. Zu dem Trauerakt kamen mehr als 1.000 Gäste.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/hubert-aiwanger-beerdigung-trauerfeier-muenchen-requiem-gxe",
    "at": "2026-11-14T10:25:28+00:00"
   },
@@ -122,27 +157,6 @@
    "at": "2026-11-14T07:59:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Dreiergipfel in China: USA kündigen Dreiertreffen von Trump mit Xi und Putin an",
-   "desc": "Donald Trump will sich am Donnerstag erstmals zu einem Dreiergespräch mit Xi Jinping und Wladimir Putin treffen. Dabei soll es unter anderem um Atomwaffenbestände gehen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-xi-jinping-wladimir-putin-china-apec-gipfel-atomwaffen",
-   "at": "2026-11-14T07:50:30+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundeshaushalt: Bundesrechnungshof mahnt Union und SPD zu härterem Sparkurs",
-   "desc": "Ansgar Heveling drängt auf eine wirksame Schuldenregel. Der Chef des Bundesrechnungshofs kritisiert, Deutschland lebe »offenkundig über seine Verhältnisse«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesrechnungshof-ansgar-heveling-cdu-bundeshaushalt-schuldenregel",
-   "at": "2026-11-14T07:31:27+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stromsteuer: SPD-Fraktionschef sieht Bewegung bei Debatte über Stromsteuersenkung",
-   "desc": "Die Stromsteuersenkung dürfte Union und SPD im Koalitionsausschuss am Dienstag beschäftigen. Im Vorfeld sieht der SPD-Fraktionschef Bewegung in den Verhandlungen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-senkung-spd-matthias-miersch-cdu-koalitionsausschuss-gxe",
-   "at": "2026-11-14T07:20:55+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "SPD-Parteitag: Genossen planen Anti-Klingbeil-Antrag",
    "desc": "Noch hat Lars Klingbeil die Frage nicht beantwortet, ob er ein weiteres Mal für den SPD-Vorsitz kandidiert. Geht es nach einem Bündnis aus Arbeitsgemeinschaften und Parteinachwuchs, ist die Antwort klar.",
@@ -190,20 +204,6 @@
    "desc": "Ilse Aigner dürfte als kommende Bundespräsidentin so gut wie feststehen. Die AfD will trotzdem einen Gegenkandidaten ins Rennen schicken. Und scheint nun fündig geworden.",
    "url": "https://www.spiegel.de/politik/deutschland/thomas-berthold-afd-will-wohl-fussballweltmeister-bei-bundespraesidentinnen-wahl-aufstellen-a-87d7aa66-c8f6-40d7-80eb-dd5af14f5dd7",
    "at": "2026-11-13T15:35:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Angela Merkel würde heute für die »Ehe für alle« stimmen",
-   "desc": "2017 gab sie die Abstimmung über die »Ehe für alle« frei, votierte selbst aber dagegen. Nun verriet Angela Merkel, warum sie heute anders denkt. Die obligatorische Spitze gegen Friedrich Merz verteilte sie im Interview auch.",
-   "url": "https://www.spiegel.de/politik/deutschland/angela-merkel-wuerde-heute-fuer-die-ehe-fuer-alle-stimmen-a-cbb28ada-b6d0-4d19-91a7-6c7abb9cd788",
-   "at": "2026-11-13T15:03:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kritik auch aus der Union an ausbleibender Stromsteuer-Senkung",
-   "desc": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Stromsteuersenkung reicht es aber weiterhin nicht. Die Kritik ist massiv, nicht nur bei der Opposition. Nun äußerte sich Kanzler Merz.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
-   "at": "2026-11-13T13:20:56+00:00"
   }
  ]
 }

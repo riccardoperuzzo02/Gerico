@@ -1,20 +1,90 @@
 {
  "code": "FR",
- "asOf": "2026-11-14T17:17:37+00:00",
+ "asOf": "2026-11-14T19:17:36+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Après les élections, Benyamin Nétanyahou réaffirme que seul un gouvernement d'union nationale peut \"garantir la sécurité d'Israël\"",
+   "desc": "Le gouvernement d'union nationale prôné par le Premier ministre israélien sortant rassemblerait les principaux partis juifs sionistes, de la droite au centre, et exclurait les formations arabes israéliennes.",
+   "url": "https://www.franceinfo.fr/monde/israel/elections-legislatives-en-israel/apres-les-elections-benyamin-netanyahou-reaffirme-que-seul-un-gouvernement-d-union-nationale-peut-garantir-la-securite-d-israel_8282762.html",
+   "at": "2026-11-14T19:05:38+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Manifestations du 14 novembre : la mobilisation est restée \"globalement maîtrisée\", malgré 219 interpellations et 10 policiers légèrement blessés, selon le ministère de l'Intérieur",
+   "desc": "A Paris, la manifestation s'est déroulée \"sans incident\", selon la préfecture de police.",
+   "url": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-du-14-novembre-suivez-la-journee-de-mobilisation-a-l-appel-de-gilets-jaunes-et-d-organisations-de-jeunesse_8281187.html",
+   "at": "2026-11-14T18:57:22+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des milliers de Portugais manifestent contre la crise du logement",
+   "desc": "Cette mobilisation a été lancée à la suite de l'adoption par le Parlement portugais d'un projet de réforme visant notamment à simplifier et accélérer les expulsions de locataires.",
+   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/logement/des-milliers-de-portugais-manifestent-contre-la-crise-du-logement_8282765.html",
+   "at": "2026-11-14T18:23:08+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Présidentielle 2027 : Gérard Larcher veut réunir les candidats de droite et du centre pour arrêter \"une méthode de départage\" vers une candidature unique",
    "desc": "Le président du Sénat veut ainsi rassembler à la même table Bruno Retailleau, David Lisnard, Gabriel Attal et Edouard Philippe.",
    "url": "https://www.franceinfo.fr/elections/presidentielle-2027-raphael-glucksmann-et-teddy-riner-attendus-au-salon-du-made-in-france_8282213.html",
-   "at": "2026-11-14T17:17:03+00:00"
+   "at": "2026-11-14T17:59:14+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "Manifestations du 14 novembre : entre 106 000 et 200 000 personnes ont défilé en France, selon les estimations du ministère de l'Intérieur et de l'intersyndicale de la jeunesse",
-   "desc": "A Paris, la manifestation s'est déroulée \"sans incident\", selon la préfecture de police.",
-   "url": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-du-14-novembre-suivez-la-journee-de-mobilisation-a-l-appel-de-gilets-jaunes-et-d-organisations-de-jeunesse_8281187.html",
-   "at": "2026-11-14T16:58:31+00:00"
+   "title": "Manifestations du 14 novembre : une équipe de BFMTV agressée en marge de la mobilisation à Lyon",
+   "desc": "Le préfet a condamné \"avec la plus grande fermeté les agressions commises aujourd'hui à l'encontre de journalistes\", rappelant que \"la liberté de la presse et le droit d'informer sont des piliers fondamentaux de notre démocratie\".",
+   "url": "https://www.franceinfo.fr/societe/manifestations/manifestations-du-14-novembre-une-equipe-de-bfmtv-agressee-en-marge-de-la-mobilisation-a-lyon_8282714.html",
+   "at": "2026-11-14T17:58:24+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je ne suis pas un macroniste\", affirme Teddy Riner, qualifiant de \"baiser empoisonné\" les félicitations du chef de l'Etat pour sa candidature à la présidentielle",
+   "desc": "Son positionnement, \"ni de droite ni de gauche\", a conduit une partie de ses concurrents et des commentateurs à le présenter comme un héritier du chef de l'Etat.",
+   "url": "https://www.franceinfo.fr/elections/je-ne-suis-pas-un-macroniste-affirme-teddy-riner-qualifiant-les-felicitations-du-president-pour-sa-candidature-de-baiser-empoisonne_8282699.html",
+   "at": "2026-11-14T17:47:21+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La chanteuse Carmelle offre la victoire aux Philippines pour la première édition du concours Eurovision d'Asie",
+   "desc": "Contrairement à l'édition européenne organisée par des diffuseurs publics, le concours asiatique est géré par des chaînes de télévision privées et les spectateurs ne pouvaient pas voter pour leur propre pays.",
+   "url": "https://www.franceinfo.fr/culture/musique/la-chanteuse-carmelle-offre-la-victoire-aux-philippines-pour-la-premiere-edition-du-concours-eurovision-d-asie_8282693.html",
+   "at": "2026-11-14T17:44:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Que faut-il attendre du sommet inédit entre Xi Jinping, Vladimir Poutine et Donald Trump, prévu jeudi en Chine ?",
+   "desc": "Selon la présidence américaine, les dirigeants de la Chine, de la Russie et des Etats-Unis se retrouveront à Shenzhen. Au-delà du symbole, les experts ne s'attendent pas à des annonces importantes.",
+   "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/que-faut-il-attendre-du-sommet-inedit-entre-xi-jinping-vladimir-poutine-et-donald-trump-attendu-jeudi-en-chine_8282519.html",
+   "at": "2026-11-14T17:38:22+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Un souffle collectif pour la quarantième édition de D’Jazz Nevers Festival",
+   "desc": "Signe, peut-être, de temps difficiles, l’édition 2026 a accueilli peu d’artistes américains. Au profit de talents français, confirmés et émergents, comme Catherine Delaunay, Louis Sclavis, Henri Texier, Camille Maussion et Jessica Simon.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/14/un-souffle-collectif-pour-la-quarantieme-edition-de-d-jazz-nevers-festival_6810457_3246.html",
+   "at": "2026-11-14T17:00:26+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Avec le « Legend Tour » de Guillaume Pley, l’armée française s’offre une vitrine auprès de la jeunesse",
+   "desc": "En associant ses moyens à la tournée du producteur du podcast suivi par des millions d’internautes, l’institution militaire veut séduire un public jeune et susciter des vocations. Une stratégie de communication qui interroge, alors que l’animateur est visé par des accusations d’échanges à caractère sexuel avec des mineures, qu’il conteste.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/14/avec-le-legend-tour-de-guillaume-pley-l-armee-francaise-s-offre-une-vitrine-aupres-de-la-jeunesse_6810456_823448.html",
+   "at": "2026-11-14T17:00:16+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les « nouveaux Tanguy », ces jeunes adultes qui tiennent à conserver l’alternance entre chez papa et chez maman",
+   "desc": "Depuis la séparation de leurs parents, ils vivent en résidence alternée. Un rythme auquel ils sont attachés, même devenus majeurs… au grand dam de leurs géniteurs. Car la cohabitation à temps partiel avec un jeune adulte qui suit ses propres règles s’avère délicate.",
+   "url": "https://www.lemonde.fr/intimites/article/2026/11/14/les-nouveaux-tanguy-ces-jeunes-adultes-qui-tiennent-a-conserver-l-alternance-entre-chez-papa-et-chez-maman_6810454_6190330.html",
+   "at": "2026-11-14T17:00:10+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "The FinalSlam, un show de catch entre influenceurs qui crispe certains passionnés",
+   "desc": "Aidé de catcheurs, le streameur AmineMaTue organise, samedi, à 20 heures, sur Twitch et à la Pléenitude Arena, à Nanterre (Hauts-de-Seine), des combats auxquels prendront part des stars d’Internet comme Squeezie, Inoxtag et Kaatsup.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/14/the-finalslam-un-show-de-catch-entre-influenceurs-qui-crispe-certains-passionnes_6810455_4408996.html",
+   "at": "2026-11-14T17:00:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -26,7 +96,7 @@
   {
    "source": "Le Monde",
    "title": "Manifestations du 14 novembre : 106 000 personnes ont défilé samedi dans toute la France, selon le ministère de l’intérieur ; 200 000, selon l’intersyndicale de la jeunesse",
-   "desc": "Le gouvernement a déployé autant de forces de l’ordre que lors des trois derniers samedis, soit quelque 70 000 policiers et gendarmes. A Paris, les « gilets jaunes » ont rejoint le cortège associatif, syndical et étudiant qui est arrivé, en majeure partie, place de la Nation, peu avant 17 heures.",
+   "desc": "Des manifestations se sont tenues samedi dans toute la France, avec des revendications multiples, contre la vie chère, contre la proposition de loi sur la présomption d’usage légitime des armes par les forces de l’ordre, pour la protection des enfants ou encore en faveur de moyens supplémentaires dans l’éducation.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/14/manifestations-du-14-novembre-106-000-personnes-ont-defile-samedi-dans-toute-la-france-selon-le-ministere-de-l-interieur-contre-la-vie-chere-pour-la-protection-des-enfants-ou-davantage-de-moyens-pour-l-education_6809818_823449.html",
    "at": "2026-11-14T16:29:53+00:00"
   },
@@ -50,13 +120,6 @@
    "desc": "Le site aux 18 millions de « fanfictions », des déclinaisons littéraires d’œuvres existantes rédigées par des fans, est inaccessible depuis le 29 octobre. En cause, un « incident de sécurité » qui laisse ses utilisateurs désœuvrés et réveille des tensions au sein de cette communauté centrale de la culture Web.",
    "url": "https://www.lemonde.fr/pixels/article/2026/11/14/la-panne-du-site-de-fanfictions-ao3-victime-d-un-incident-de-securite-genere-mobilisation-et-tensions_6810449_4408996.html",
    "at": "2026-11-14T16:00:21+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Lunettes connectées : « Où est donc l’Europe, qui aime tant se présenter comme la championne mondiale de la protection de la vie privée ? »",
-   "desc": "Les usages prétendument récréatifs des lunettes munies de caméras et de microphones ne justifient pas de faire peser sur l’ensemble de la population le risque d’une surveillance diffuse, dénonce un collectif de chercheurs dans une tribune au « Monde ».",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/14/lunettes-connectees-ou-est-donc-l-europe-qui-aime-tant-se-presenter-comme-la-championne-mondiale-de-la-protection-de-la-vie-privee_6810448_3232.html",
-   "at": "2026-11-14T16:00:18+00:00"
   },
   {
    "source": "Le Monde",
@@ -103,23 +166,9 @@
   {
    "source": "Le Monde",
    "title": "Suspension des vols aux Etats-Unis : plus de 16 000 vols annulés vendredi et samedi alors que des perturbations persistent",
-   "desc": "Vendredi, les autorités américaines de l’aviation ont interdit tout décollage des avions à partir des aéroports américains de 15 h 54 (à New York) jusqu’à 20 h 15. « Les opérations retournent progressivement à la normale [samedi] matin » malgré quelques retards persistants, a fait savoir le ministre des transports.",
+   "desc": "Les autorités américaines de l’aviation avaient interdit tout décollage des avions à partir des aéroports américains de 15 h 54 (à New York) jusqu’à 20 h 15. « Les opérations retournent progressivement à la normale [samedi] matin » malgré quelques retards persistants, a fait savoir le ministre des transports.",
    "url": "https://www.lemonde.fr/international/article/2026/11/14/suspension-des-vols-aux-etats-unis-des-annulations-et-des-retards-de-vols-persistent-samedi_6810445_3210.html",
    "at": "2026-11-14T15:31:00+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le maire de Dreux, Abdel-Kader Guerza, est mort à l'âge de 69 ans",
-   "desc": "Le maire de Dreux (Eure-et-Loir), Abdel-Kader Guerza (69 ans) est décédé ce samedi 14 novembre 2026, annonce la mairie dans un communiqué. Il avait été hospitalisé à Dreux le 3 novembre dernier, des suites possiblement d'un accident vasculaire cérébral.",
-   "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/eure-et-loir/dreux/disparition-le-maire-de-dreux-abdel-kader-guerza-est-mort-apres-10-jours-d-hospitalisation-3449679.html",
-   "at": "2026-11-14T15:27:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Raphaël Glucksmann va diffuser ce week-end un tract présentant dix propositions pour \"sortir de la crise\"",
-   "desc": "Souvent placé à la troisième place dans les sondages, mais assez loin derrière Marine Le Pen et Jean-Luc Mélenchon, le candidat PS-Place Publique doit maintenant combler son retard sur le candidat LFI. Un tract sera largement diffusé ce week-end, contenant dix propositions phares de son programme.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-brief-politique/info-franceinfo-raphael-glucksmann-va-diffuser-ce-week-end-un-tract-presentant-dix-propositions-pour-sortir-de-la-crise_8261228.html",
-   "at": "2026-11-14T15:14:25+00:00"
   },
   {
    "source": "France 24",
@@ -151,20 +200,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "L'autoroute A14 vers la Normandie gratuite à partir de lundi pour compenser la fermeture de l'A13",
-   "desc": "Le péage de Montesson (Yvelines) sera gratuit en semaine dans le sens Paris-Normandie du 16 novembre au 31 août, et du 28 juin au 31 août dans le sens Normandie-Paris.",
-   "url": "https://www.franceinfo.fr/economie/transports/l-autoroute-a14-vers-la-normandie-gratuite-a-partir-de-lundi-pour-compenser-la-fermeture-de-l-a13_8282435.html",
-   "at": "2026-11-14T14:38:39+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A la recherche du meilleur jeune chef d’orchestre : « Il faut un truc, un charisme particulier. Savoir être un leader sans être un dictateur »",
-   "desc": "Pour sa 80ᵉ édition, le concours international de musique de Genève a organisé une compétition de direction d’orchestre, une première depuis plus de trente ans. Les qualités recherchées chez ces musiciens à part ont évolué.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/14/a-la-recherche-du-meilleur-jeune-chef-d-orchestre-il-faut-avoir-un-truc-un-charisme-particulier_6810319_3246.html",
-   "at": "2026-11-14T14:38:06+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Wu Tang Clan, Oasis, Iron Maiden, Sade, Joy Division et New Order parmi les artistes intronisés au Rock and Roll Hall of Fame",
    "desc": "Queen Latifah, Celia Cruz ou encore Fela Kuti seront également honorés samedi pour leur \"influence précoce\" dans l'industrie musicale lors de la soirée de gala à Los Angeles.",
    "url": "https://www.franceinfo.fr/culture/musique/wu-tang-clan-oasis-iron-maiden-sade-joy-division-et-new-order-parmi-les-artistes-intronises-au-rock-and-roll-hall-of-fame_8282540.html",
@@ -186,13 +221,6 @@
   },
   {
    "source": "Le Monde",
-   "title": "Inondations à Gaza : l’UE exhorte Israël à garantir un accès humanitaire « immédiat » et « sans entrave »",
-   "desc": "Depuis la fin de semaine dernière, des intempéries ont entraîné l’inondation de dizaines de milliers de tentes de personnes déplacées, et ont provoqué la mort d’au moins cinq personnes, selon les secours palestiniens.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/14/gaza-l-union-europeenne-exhorte-israel-a-garantir-un-acces-immediat-et-sans-entrave-a-l-enclave-apres-des-inondations-importantes_6810313_3210.html",
-   "at": "2026-11-14T13:42:04+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Arnaud Viviant, chroniqueur du « Masque et la Plume », quitte l’émission en accusant France Inter de lui avoir « interdit de conseiller » le livre de Rima Hassan",
    "desc": "Le critique annonce son départ de l’émission, « la mort dans l’âme, après vingt-six ans ». « Pas de promotion pour les livres écrits par des élus en fonction », a réagi la radio, en condamnant les menaces et insultes envers la productrice de l’émission, Rebecca Manzoni.",
    "url": "https://www.lemonde.fr/actualite-medias/article/2026/11/14/arnaud-viviant-chroniqueur-du-masque-et-la-plume-annonce-quitter-l-emission-de-france-inter_6810280_3236.html",
@@ -211,13 +239,6 @@
    "desc": "L’armée ukrainienne a mis au point un système de brouillage GPS pour détourner les missiles et les drones russes. Mais les faux signaux émis perturbent aussi les applications mobiles des habitants.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/reportage-mon-appli-me-dit-que-je-suis-a-lima-en-ukraine-le-brouillage-gps-pour-detourner-les-missiles-russes-s-invite-dans-le-quotidien-des-habitants_8282297.html",
    "at": "2026-11-14T12:55:35+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Prix littéraires : l’hégémonie de Gallimard fait grincer des dents dans l’édition",
-   "desc": "Le Goncourt, le Renaudot, le Femina et le Médicis ont couronné, en 2026, des auteurs de Madrigall, la maison mère de Gallimard, ce qui irrite les éditeurs concurrents, qui critiquent la composition des jurys.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/14/prix-litteraires-l-hegemonie-de-gallimard-fait-grincer-des-dents-dans-l-edition_6810249_3234.html",
-   "at": "2026-11-14T12:54:18+00:00"
   },
   {
    "source": "franceinfo",
@@ -242,13 +263,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Violences du 17 octobre : jusqu'à 500 millions d'euros de dégâts estimés par des assureurs",
-   "desc": "Le président du conseil d'administration de Covéa (maison mère de la MAAF, MMA et la GMF) juge, sur France Inter, \"très élevé\" le chiffre avancé par CCI France, qui évalue pour sa part les dégâts à 1,2 milliard d'euros.",
-   "url": "https://www.franceinfo.fr/societe/mobilisation-du-17-octobre/violences-du-17-octobre-jusqu-a-500-millions-d-euros-de-degats-estimes-par-les-assureurs_8282438.html",
-   "at": "2026-11-14T12:02:41+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Guerre en Ukraine : les Etats-Unis ont proposé des concessions territoriales en échange d'une adhésion de Kiev à l'Otan, selon Volodymyr Zelensky",
    "desc": "Le président ukrainien a également annoncé vendredi que son pays était en pourparlers pour obtenir \"des garanties de sécurité spécifiques de la part de l'Otan et de l'UE\".",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-volodymy-zelensky-affirme-que-les-etats-unis-ont-propose-des-concessions-territoriales-en-echange-d-une-adhesion-de-kiev-a-l-otan_8282333.html",
@@ -270,10 +284,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Appel à témoins, reconstitution ADN… Trente ans après la disparition de Marion Wagon, l'enquête relancée",
-   "desc": "Cette petite fille s'est volatilisée à l'âge de 10 ans, le 14 novembre 1996, à Agen. L'identification de son profil génétique ainsi qu'un appel à témoins ravivent l'espoir d'élucider ce mystère, qui figure parmi les affaires de disparition d'enfants les plus marquantes en France.",
-   "url": "https://www.franceinfo.fr/faits-divers/appel-a-temoins-reconstitution-adn-trente-ans-apres-la-disparition-de-marion-wagon-l-enquete-relancee_8280797.html",
-   "at": "2026-11-14T07:55:33+00:00"
+   "title": "L'ex-ministre de la Santé François Braun se \"met en retrait\" de la campagne présidentielle de Teddy Riner",
+   "desc": "Le médecin, ancien membre du gouvernement d'Elisabeth Borne, avait affiché son soutien au judoka.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle-2027-a-peine-entre-en-campagne-teddy-riner-perd-le-soutien-de-l-ex-ministre-de-la-sante-francois-braun-qui-se-met-en-retrait_8282237.html",
+   "at": "2026-11-14T10:48:05+00:00"
   },
   {
    "source": "France 24",
@@ -304,11 +318,11 @@
    "at": "2026-11-14T05:18:15+00:00"
   },
   {
-   "source": "France 24",
-   "title": "Projet de loi résilience : comment la France veut rattraper son retard en cybersécurité",
-   "desc": "Alors que les cyberattaques se multiplient en France, l’Assemblée s'apprête à adopter, mardi, la loi résilience sur le renforcement de la cybersécurité. Retardé depuis deux ans, le texte multiplie par dix le nombre d’entités régulées et impose des sanctions financières en cas de manquement aux obligations de prévention, sans prévoir de financements supplémentaires.",
-   "url": "https://www.france24.com/fr/france/20261113-projet-de-loi-r%C3%A9silience-comment-la-france-veut-rattraper-son-retard-en-cybers%C3%A9curit%C3%A9",
-   "at": "2026-11-13T18:36:52+00:00"
+   "source": "Le Monde",
+   "title": "« Je suis retournée au travail du sexe pour payer les factures » : dans les campagnes, une prostitution de la « débrouille » se banalise",
+   "desc": "Si on l’imagine urbaine, la prostitution existe aussi dans les espaces ruraux, démunis en services publics et marqués par un difficile accès à l’emploi. Du Centre-Bretagne au Tarn, des femmes ont recours au travail du sexe pour compléter leurs revenus ou surmonter des accidents de la vie.",
+   "url": "https://www.lemonde.fr/m-perso/article/2026/11/14/je-suis-retournee-au-travail-du-sexe-pour-payer-les-factures-dans-les-campagnes-la-prostitution-de-la-debrouille-gagne-du-terrain_6809693_4497916.html",
+   "at": "2026-11-14T05:00:42+00:00"
   }
  ]
 }

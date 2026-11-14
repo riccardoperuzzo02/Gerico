@@ -1,20 +1,90 @@
 {
  "code": "US",
- "asOf": "2026-11-14T17:17:37+00:00",
+ "asOf": "2026-11-14T19:17:36+00:00",
  "items": [
   {
    "source": "CBS News",
    "title": "Travelers stranded, flights canceled after ground stop. Here's what we know",
    "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
    "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-14T17:13:53+00:00"
+   "at": "2026-11-14T19:12:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Bomb found at industrial plant in Peoria, Illinois; rendered safe",
+   "desc": "Police said the device had been rendered safe but they are still searching the industrial area.",
+   "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/",
+   "at": "2026-11-14T19:08:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Travel Nightmare Continues for Stranded Passengers Awaiting Flights",
+   "desc": "After a night of fitful sleep on airport floors, some travelers are still stuck amid thousands of flight cancellations following Friday’s ground stop.",
+   "url": "https://www.nytimes.com/2026/11/14/us/travel-nightmare-continues-for-stranded-passengers-awaiting-flights.html",
+   "at": "2026-11-14T19:00:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Repair That Triggered Air Traffic Meltdown Was Expected to be ‘Routine’",
+   "desc": "Officials said that the upgrade to antiquated communications equipment at a remote facility overloaded other parts of the national air traffic system.",
+   "url": "https://www.nytimes.com/2026/11/14/us/repair-that-triggered-air-traffic-meltdown-was-expected-to-be-routine.html",
+   "at": "2026-11-14T18:53:48+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
+   "desc": "Despite the turbulence, the S&P 500 secured a weekly gain of 2.5%, while the tech-heavy Nasdaq added 2.3%.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+   "at": "2026-11-14T18:48:39+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 15)",
+   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
+   "at": "2026-11-14T18:39:50+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
+   "desc": "The president plans to also discuss the war against Iran, but is not expected to bring up Russia’s war in Ukraine or the scandal that has engulfed Jensen Huang.",
+   "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-putin-xi-china-nuclear-proliferation.html",
+   "at": "2026-11-14T18:36:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "desc": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
+   "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "at": "2026-11-14T18:32:47+00:00"
   },
   {
    "source": "New York Times",
    "title": "Here’s the latest.",
    "desc": "",
    "url": "https://www.nytimes.com/live/2026/11/14/us/faa-nationwide-ground-stop-flights/heres-the-latest",
-   "at": "2026-11-14T17:06:50+00:00"
+   "at": "2026-11-14T18:14:54+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Port of New Orleans sues tanker that hit riverboat cruise for $1 million",
+   "desc": "The port asked a judge to seize and sell the tanker that hit a riverboat cruise to cover the costs of repairs.",
+   "url": "https://www.cbsnews.com/news/port-of-new-orleans-sues-tanker-riverboat-crash/",
+   "at": "2026-11-14T17:56:43+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s Why It Could Take Days for Flights to Return to Normal",
+   "desc": "With hundreds of planes out of position and crews out of hours, restarting the nation’s flight system is no easy task.",
+   "url": "https://www.nytimes.com/2026/11/14/us/faa-groundstop-flights-restarting.html",
+   "at": "2026-11-14T17:46:56+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+   "desc": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
+   "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+   "at": "2026-11-14T17:46:06+00:00"
   },
   {
    "source": "NPR",
@@ -22,13 +92,6 @@
    "desc": "Transportation Secretary Sean Duffy said initial investigations pointed to an issue with contractor L3Harris updating old tech at a remote location.",
    "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
    "at": "2026-11-14T16:53:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Ground stop followed updates to older L3Harris communication system: DOT’s Duffy",
-   "desc": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said Saturday.",
-   "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "at": "2026-11-14T16:46:11+00:00"
   },
   {
    "source": "CBS News",
@@ -101,13 +164,6 @@
    "at": "2026-11-14T15:25:47+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Bomb found at industrial plant in Peoria, Illinois; rendered safe",
-   "desc": "Police said the device had been rendered safe but they are still searching the industrial area.",
-   "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/",
-   "at": "2026-11-14T15:18:18+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Rising rents draw Wall Street money to industrial outdoor storage lot investments across the U.S.",
    "desc": "A real estate investment in markets across the U.S. called 'industrial outdoor storage' is attracting Wall Street giants including Brookfield and Blackstone.",
@@ -176,6 +232,13 @@
    "desc": "Gov. Jeff Landry of Louisiana called it a “literal miracle on the Mississippi” that all of the nearly 200 people aboard the riverboat were rescued.",
    "url": "https://www.nytimes.com/2026/11/13/us/new-orleans-cruise-ship-crash.html",
    "at": "2026-11-14T14:00:53+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/14: CBS Saturday Morning",
+   "desc": "Air travel chaos after a nationwide ground stop. Plus, Lady Gaga's parents run a New York City trattoria and cabaret. All this and more.",
+   "url": "https://www.cbsnews.com/video/111426-cbs-saturday-morning/",
+   "at": "2026-11-14T14:00:00+00:00"
   },
   {
    "source": "New York Times",
@@ -358,13 +421,6 @@
    "desc": "Banana Man began popping up around Linton, Indiana, a few months ago. Videos that also began circulating on social media appeared to show a boy biking all over town in a banana suit.",
    "url": "https://www.cbsnews.com/news/banana-man-linton-indiana-superhero/",
    "at": "2026-11-14T02:29:27+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
-   "desc": "The president plans to also discuss the war against Iran, but is not expected to bring up Russia’s war in Ukraine or the scandal that has engulfed Jensen Huang.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-putin-xi-china-nuclear-proliferation.html",
-   "at": "2026-11-14T02:24:24+00:00"
   },
   {
    "source": "New York Times",
@@ -575,62 +631,6 @@
    "desc": "By pleading guilty to accessory to murder after the fact, Richard Glossip will avoid a retrial of the first-degree murder charge.",
    "url": "https://www.nytimes.com/2026/11/13/us/richard-glossip-guilty-plea-oklahoma.html",
    "at": "2026-11-13T22:04:26+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/13: The Takeout with Major Garrett",
-   "desc": "The FAA issues a nationwide ground stop, with DHS Secretary Markwayne Mullin saying it's due to a telecommunications outage.",
-   "url": "https://www.cbsnews.com/video/111326-the-takeout-with-major-garrett/",
-   "at": "2026-11-13T22:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Goldman Sachs looks to cash in on big IPOs twice. Anthropic’s historic deal is its next chance",
-   "desc": "While co-leading the offering, Goldman also wants a shot at managing the billions of dollars in new wealth that the deal creates. It's not the only one.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/13/goldman-sachs-looks-to-cash-in-on-anthropics-ipo-twice-heres-how-and-who-else-wants-to.html",
-   "at": "2026-11-13T21:44:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Never bought Nvidia stock? Its slide could still hit your 401(k).",
-   "desc": "Millions of Americans are exposed to Nvidia shares through their retirement plans. That's not as bad as it sounds (really!).",
-   "url": "https://www.cbsnews.com/news/nvidia-stock-slide-401k-index-funds/",
-   "at": "2026-11-13T21:32:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Hakeem Jeffries Pushes to Lock Down House Speakership, With No Challenger Emerging",
-   "desc": "Facing resistance from the left but no challenger, the Democratic leader is sewing up support from key coalitions as his allies say he deserves a unanimous vote.",
-   "url": "https://www.nytimes.com/2026/11/13/us/politics/jeffries-house-speaker-democrats.html",
-   "at": "2026-11-13T21:28:36+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 15)",
-   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-13T21:24:52+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "AI risks are the biggest threat to the financial system, Fed survey finds",
-   "desc": "The report comes with Wall Street on edge over high-flying AI hyperscalers, while communities are on alert for the rapid spread of data centers.",
-   "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html",
-   "at": "2026-11-13T21:18:30+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "They train people to avoid 'honeypot' scams—here are the common red flags they spot: 'It feels so good to be wanted'",
-   "desc": "Corporate security firms train companies and their employees on strategies for being vigilant against honeypots, and other social engineering attacks.",
-   "url": "https://www.cnbc.com/make-it/2026/11/13/honeypot-scam-red-flags.html",
-   "at": "2026-11-13T21:06:25+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Family Dollar to pay $63M after FTC says it overcharged customers",
-   "desc": "The discount retailer failed to honor prices displayed on store shelves, on price tags and in ads, the FTC and multiple states alleged.",
-   "url": "https://www.cbsnews.com/news/family-dollar-stores-price-transparency-settlement/",
-   "at": "2026-11-13T20:57:42+00:00"
   }
  ]
 }

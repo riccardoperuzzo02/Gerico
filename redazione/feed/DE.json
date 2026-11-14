@@ -1,7 +1,56 @@
 {
  "code": "DE",
- "asOf": "2026-11-14T17:17:37+00:00",
+ "asOf": "2026-11-14T19:17:36+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "SPD-Vorsitz: Früherer Arbeitsminister Hubertus Heil kandidiert für den SPD-Vorsitz",
+   "desc": "Der frühere Arbeitsminister Hubertus Heil will SPD-Parteichef werden. Seine Bewerbung nutzte er für einen Angriff auf den aktuellen Vorsitzenden Lars Klingbeil.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/frueherer-arbeitsminister-hubertus-heil-kandidiert-fuer-den-spd-vorsitz",
+   "at": "2026-11-14T19:06:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Mecklenburg-Vorpommern: SPD, Linke und Grüne unterschreiben Koalitionsvertrag in Greifswald",
+   "desc": "In Mecklenburg-Vorpommern haben SPD, Grüne und Linke den Koalitionsvertrag unterschrieben. Die rot-rot-grüne Landesregierung ist damit besiegelt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalitionsvertrag-mecklenburg-vorpommern-spd-linke-gruene-manuela-schwesig",
+   "at": "2026-11-14T18:39:39+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "SPD: Hubertus Heil will für Parteivorsitz kandidieren",
+   "desc": "Bei der SPD zeichnet sich ein Machtkampf ab: Ex-Arbeitsminister Hubertus Heil will sich beim Bundesparteitag im Januar zum Chef der Sozialdemokraten wählen lassen. Damit wächst der Druck auf Amtsinhaber Lars Klingbeil.",
+   "url": "https://www.spiegel.de/politik/deutschland/spd-hubertus-heil-will-fuer-parteivorsitz-kandidieren-a-f9209fb9-0404-43be-b66d-b2207e7e6aaa",
+   "at": "2026-11-14T18:28:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Ex-Arbeitsminister Hubertus Heil kandidiert für SPD-Vorsitz",
+   "desc": "Mitte Januar wird auf einem Bundesparteitag die komplette Führung der SPD neu gewählt. Ex-Arbeitsminister Heil hat laut ARD-Hauptstadtstudio jetzt als Erster offiziell seine Kandidatur für den Vorsitz angekündigt. Von Moritz Rödle.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-vorsitz-kandidatur-100.html",
+   "at": "2026-11-14T18:12:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Greenpeace-Aktion: Protest gegen Schleppnetze gefährdet geplanten Offshore-Windpark",
+   "desc": "Umweltschützer haben Felsblöcke in der Nordsee versenkt, um Schleppnetzfischer zu stoppen. Die Steine liegen nun im Weg eines Windparkprojekts der britischen Regierung.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/greenpeace-nordsee-boulder-vorfahr-norfolk-vanguard-bottom-trawling",
+   "at": "2026-11-14T17:46:56+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Erneuerbare-Energien-Gesetz: Union und SPD weiter uneins bei Reform der Ökostromförderung",
+   "desc": "Die SPD verkündet den Erhalt der Einspeisevergütung für Solarstrom. Die Union widerspricht: Die Vereinbarung sei abhängig vom gesamten Netzpaket, das noch nicht steht.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/eeg-reform-einspeiseverguetung-solaranlagen-netzpaket-spd-cdu-gxe",
+   "at": "2026-11-14T17:25:56+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Friedrich Merz in Schleswig-Holstein: Der Kanzler meidet das S-Wort",
+   "desc": "Friedrich Merz drückt sich bei der CDU in Schleswig-Holstein um den Streit über die Stromsteuer herum. Umso deutlicher macht der Gastgeber, Ministerpräsident Daniel Günther, was die Partei erwartet.",
+   "url": "https://www.spiegel.de/politik/deutschland/der-kanzler-meidet-das-s-wort-a-966f29df-ce02-4236-b554-4ecedae37898",
+   "at": "2026-11-14T17:17:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Luftverkehr in den USA: US-Regierung fordert nach Flugstopp Milliarden für Flugsicherung",
@@ -15,13 +64,6 @@
    "desc": "Meta soll ohne Zustimmung auf Fotos und Videos von 20 Millionen Nutzern in Italien zugegriffen haben. Die Datenschutzbehörde ordnete nun ein Bußgeld und Auflagen an.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/meta-strafe-italien-datenschutz-facebook-app-garante",
    "at": "2026-11-14T17:07:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Erneuerbare Energie Gesetz: Union und SPD weiter uneins bei Reform der Ökostromförderung",
-   "desc": "Die SPD verkündet den Erhalt der Einspeisevergütung für Solarstrom. Die Union widerspricht: Ohne Einigung beim Gesamtpaket wackelt auch noch die Einspeisevergütung.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/eeg-reform-einspeiseverguetung-solaranlagen-netzpaket-spd-cdu-gxe",
-   "at": "2026-11-14T16:00:30+00:00"
   },
   {
    "source": "Die Zeit",
@@ -46,7 +88,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Schleswig-Holstein: Daniel Günther erneut CDU-Spitzenkandidat bei Landtagswahl 2027",
+   "title": "Schleswig-Holstein: Daniel Günther tritt erneut als CDU-Spitzenkandidat an",
    "desc": "Zum dritten Mal auf Platz eins: Die CDU Schleswig-Holstein hat Daniel Günther als Spitzenkandidaten wiedergewählt. Der 53-Jährige ist seit 2017 Ministerpräsident – er will seinen Posten bei der Landtagswahl im April verteidigen.",
    "url": "https://www.spiegel.de/politik/deutschland/schleswig-holstein-daniel-guenther-erneut-cdu-spitzenkandidat-bei-landtagswahl-2027-a-19a20388-dc35-46f9-8d09-20c1aaf83358",
    "at": "2026-11-14T15:03:00+00:00"
@@ -120,27 +162,6 @@
    "desc": "Tauscht die Ukraine Gebiete gegen eine Nato-Perspektive? Wolodymyr Selenskyj zufolge haben die USA diesen Vorschlag gemacht. Die Frage sei erstmals gestellt worden.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/nato-beitritt-ukraine-usa-wolodymyr-selenskyj-gebietsverzicht-gxe",
    "at": "2026-11-14T10:45:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nato-Beitritt der Ukraine: USA schlagen laut Selenskyj Nato-Beitritt gegen Gebietsabtritt vor",
-   "desc": "Tauscht die Ukraine Gebiete gegen eine Nato-Perspektive? Wolodymyr Selenskyj zufolge haben die USA diesen Vorschlag gemacht. Die Frage sei erstmals gestellt worden.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/nato-beitritt-ukraine-usa-wolodymyr-selenskyj-gebietsverzicht-gxe",
-   "at": "2026-11-14T10:45:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: USA sehen laut Selenskyj Nato-Beitritt gegen Gebietsabtritt als Option",
-   "desc": "Ein Nato-Beitritt der Ukraine ist wohl Thema bei den Friedensverhandlungen. Im Gegenzug hätten die USA einen Verzicht auf den Donbass ins Gespräch gebracht. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-14T10:36:24+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Staatsakt: Mehr als 1.000 Gäste nehmen Abschied von Hubert Aiwanger",
-   "desc": "Mit einem Requiem und einem Staatsakt wurde der kürzlich gestorbene bayerische Wirtschaftsminister Hubert Aiwanger gewürdigt. Zu dem Trauerakt kamen mehr als 1.000 Gäste.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/hubert-aiwanger-beerdigung-trauerfeier-muenchen-requiem-gxe",
-   "at": "2026-11-14T10:25:28+00:00"
   },
   {
    "source": "Tagesschau",

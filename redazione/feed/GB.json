@@ -1,13 +1,48 @@
 {
  "code": "GB",
- "asOf": "2026-11-14T11:17:35+00:00",
+ "asOf": "2026-11-14T13:17:35+00:00",
  "items": [
   {
+   "source": "BBC",
+   "title": "Young people should have legal guarantee of job or training, Milburn tells BBC",
+   "desc": "The author of a major review on youth unemployment, due next week, acknowledges the change would mean some young people losing out on benefits.",
+   "url": "https://www.bbc.co.uk/news/articles/c69vwp09d7vvo",
+   "at": "2026-11-14T12:39:41+00:00"
+  },
+  {
    "source": "The Guardian",
-   "title": "Microsoft says services fully restored after global outage",
-   "desc": "Tech company says services now restored to all customers and regions hit by one of worst IT failures in years Microsoft has said its service is fully restored after a massive outage that caused widespread disruption to governments, businesses and public services around the world . The technology company said on Saturday morning it had restored service to the remaining customers affected by one of the worst IT failures in years. On its Microsoft 365 status page, the US-based firm said: “We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions. Continue reading...",
+   "title": "Interest rate rises likely in coming months, Bank of England’s chief economist says",
+   "desc": "‘We have further to go,’ says Huw Pill after increase to 4% last month as Bank seeks to tackle rising inflation The Bank of England will probably need to raise interest rates next month and again in early 2027 to combat rising inflation, its chief economist has said. Signalling a sharp rise in mortgage payments for an estimated 2.3 million homeowners who will have to refinance their loans next year, Huw Pill said that while the decision to nudge interest rates from 3.75% to 4% earlier this month was a “significant step” towards getting monetary policy into a better place, “we ⁠have further to go”. Continue reading...",
+   "url": "https://www.theguardian.com/business/2026/nov/14/interest-rate-rises-inflation-bank-of-england-chief-economist",
+   "at": "2026-11-14T12:33:58+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Burnham suggests Welsh Labour lost sight of devolution as review criticises ex-first minister",
+   "desc": "The prime minister said it was \"hard\" to accept the party was no longer in power after 27 years of running the Welsh government.",
+   "url": "https://www.bbc.co.uk/news/articles/cmgj340w6g8yo",
+   "at": "2026-11-14T12:06:36+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Microsoft says services fully restored after global outage hits governments",
+   "desc": "Tech company says operations restored to all customers and regions affected by one of worst IT failures in years Microsoft has said its service has been fully restored after a massive outage that saw widespread disruption to governments, businesses and public services around the world. The technology company said on Saturday morning it had restored service to the remaining customers affected by one of the worst IT failures in years. On its Microsoft 365 status page, the US-based firm said: “We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions. Continue reading...",
    "url": "https://www.theguardian.com/technology/2026/nov/14/microsoft-says-services-fully-restored-after-global-outage",
-   "at": "2026-11-14T11:05:01+00:00"
+   "at": "2026-11-14T11:54:31+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "I never thought I'd make it as an actor but now I'm up for a Bafta",
+   "desc": "Scott Ellis Watson, 16, portrayed John Davidson's teenage experience with Tourette's in the hit film I Swear.",
+   "url": "https://www.bbc.co.uk/news/articles/cqrmgwkv7kjxo",
+   "at": "2026-11-14T11:48:23+00:00"
+  },
+  {
+   "source": "Sky News",
+   "title": "Fifteen people taken to hospital after 'wilful' fire in Glasgow",
+   "desc": "Fifteen people have been taken to hospital after a fire suspected to have been lit deliberately in Glasgow.",
+   "url": "https://news.sky.com/story/fifteen-people-taken-to-hospital-after-wilful-fire-in-glasgow-13612157",
+   "at": "2026-11-14T11:11:00+00:00"
   },
   {
    "source": "The Guardian",
@@ -31,6 +66,13 @@
    "at": "2026-11-14T10:14:07+00:00"
   },
   {
+   "source": "Sky News",
+   "title": "Reynolds to hold further talks with Poundland owners amid rescue talks",
+   "desc": "Jonathan Reynolds, the business secretary, is to hold further talks with Poundland's owner and its management team amid a race to save the discount retailer from collapse.",
+   "url": "https://news.sky.com/story/reynolds-to-hold-further-talks-with-poundland-owners-amid-rescue-talks-13612143",
+   "at": "2026-11-14T10:09:00+00:00"
+  },
+  {
    "source": "The Guardian",
    "title": "Guardian to follow lives of eight young people in their search for work",
    "desc": "How long will it take? What challenges will they face? Series to shine light on one of biggest crises facing UK ‘The social contract is broken’: young people on feeling shut out of careers Britain is at risk of creating a lost generation. Across the country, almost a million young people – one in eight – are struggling to make the leap from school to the world of work on a lasting basis. Before the landmark Alan Milburn review , which is expected on Tuesday, the Guardian is launching a new series to chronicle the lives of eight young people battling to get a start on the career ladder. Continue reading...",
@@ -46,10 +88,10 @@
   },
   {
    "source": "BBC",
-   "title": "Young people should have legal guarantee of job or training, Milburn tells BBC",
-   "desc": "The author of a major review on youth unemployment, due next week, acknowledges the change would mean some young people losing out on benefits.",
-   "url": "https://www.bbc.co.uk/news/articles/c69vwp09d7vvo",
-   "at": "2026-11-14T09:05:48+00:00"
+   "title": "Fifteen taken to hospital after deliberate fire at Glasgow flats",
+   "desc": "The four-storey building on Copland Street in Ibrox was evacuated after the blaze broke out on Friday afternoon.",
+   "url": "https://www.bbc.co.uk/news/articles/cq782d1e8lkvo",
+   "at": "2026-11-14T09:55:55+00:00"
   },
   {
    "source": "The Guardian",
@@ -81,13 +123,6 @@
   },
   {
    "source": "BBC",
-   "title": "Andy Burnham urges Welsh Labour to listen after historic Senedd election defeat",
-   "desc": "The prime minister will pledge to \"do things differently\" at the Welsh Labour conference on Saturday.",
-   "url": "https://www.bbc.co.uk/news/articles/cmgj340w6g8yo",
-   "at": "2026-11-14T07:29:42+00:00"
-  },
-  {
-   "source": "BBC",
    "title": "'I'm lucky to be alive': Woman's warning over black market weight-loss jabs",
    "desc": "Kay Roscoe was rushed to hospital after taking what she thought was the weight-loss drug retatrutide.",
    "url": "https://www.bbc.co.uk/news/articles/cmp3g0p0z9dgo",
@@ -108,18 +143,18 @@
    "at": "2026-11-14T07:00:37+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "UK tells blind Nigerian pensioner to go to India for medical treatment",
-   "desc": "Woman who has lived in UK for 26 years refused indefinite leave to remain under Home Office’s new settlement rules A blind Nigerian pensioner who has lived in the UK for 26 years has been told by the Home Office she can safely go to India, a country she has never visited, for medical treatment. Comfort*, 67, arrived in the UK in 2000, and shortly after suddenly went blind due to acute glaucoma. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/14/uk-tells-blind-nigerian-pensioner-to-go-home-to-india",
-   "at": "2026-11-14T06:00:37+00:00"
+   "source": "BBC",
+   "title": "Bluetongue virus confirmed on County Down farm",
+   "desc": "Officials from the Department of Agriculture, Environment and Rural Affairs said the virus had been detected in three sheep.",
+   "url": "https://www.bbc.co.uk/news/articles/cmr4gxvrxd9yo",
+   "at": "2026-11-14T06:56:58+00:00"
   },
   {
-   "source": "BBC",
-   "title": "'Police launch investigation' into Walliams and Piddington asylum 'betrayal'",
-   "desc": "An investigation into David Walliams over reports of \"alleged serious sexual offences\" leads a number of Saturday's papers.",
-   "url": "https://www.bbc.co.uk/news/articles/cx4gn4y1q906o",
-   "at": "2026-11-14T05:00:09+00:00"
+   "source": "Sky News",
+   "title": "Murder investigation launched after man, 27, stabbed to death",
+   "desc": "A 27-year-old man was stabbed to death in a north Manchester suburb in the early hours of Saturday morning.",
+   "url": "https://news.sky.com/story/murder-investigation-launched-after-man-27-stabbed-to-death-greater-manchester-police-say-13612104",
+   "at": "2026-11-14T06:20:00+00:00"
   },
   {
    "source": "BBC",
@@ -183,6 +218,13 @@
    "desc": "Emergency crews were called to reports of an incident at FirstStage in Leith.",
    "url": "https://www.bbc.co.uk/news/articles/cqr7g5l4z9zeo",
    "at": "2026-11-13T21:23:46+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Any Questions?",
+   "desc": "Alex Forsyth presents political debate from Yelvertoft in Northamptonshire.",
+   "url": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm",
+   "at": "2026-11-13T20:55:00+00:00"
   },
   {
    "source": "The Guardian",
@@ -379,20 +421,6 @@
    "desc": "Major airports and intelligence services are unaffected, while the government is still assessing the impact.",
    "url": "https://www.bbc.co.uk/news/articles/c6vg2ljjpj32o",
    "at": "2026-11-13T13:41:25+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Temperatures drop to -6C with cold weather alert in force in some areas",
-   "desc": "Temperatures dropped below -6C overnight as parts of the country remain under a cold weather health alert.",
-   "url": "https://news.sky.com/story/uk-sees-chilliest-night-of-autumn-as-cold-weather-alert-in-force-in-some-areas-13611885",
-   "at": "2026-11-13T12:30:00+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Jeffrey Donaldson's wife Eleanor placed on sex offenders' register after his rape conviction",
-   "desc": "Eleanor Donaldson, the wife of disgraced former DUP leader Jeffrey Donaldson, has been placed on the sex offenders' register.",
-   "url": "https://news.sky.com/story/jeffrey-donaldsons-wife-eleanor-placed-on-sex-offenders-register-after-his-rape-conviction-13611873",
-   "at": "2026-11-13T11:55:00+00:00"
   }
  ]
 }

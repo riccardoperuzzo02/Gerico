@@ -1,7 +1,28 @@
 {
  "code": "DE",
- "asOf": "2026-11-14T11:17:35+00:00",
+ "asOf": "2026-11-14T13:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Friedrich Merz: Merz verspricht klare Abgrenzung zur AfD in Sachsen-Anhalt",
+   "desc": "Ulrich Siegmund könnte in Sachsen-Anhalt der erste AfD-Ministerpräsident werden. Friedrich Merz schließt eine Zusammenarbeit klar aus. Es gebe »keine Gemeinsamkeiten«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/friedrich-merz-cdu-afd-abgrenzung-neonazis-sachsen-anhalt-gxe",
+   "at": "2026-11-14T12:54:16+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Mecklenburg-Vorpommern: Weg frei für rot-rot-grüne Landesregierung in Mecklenburg-Vorpommern",
+   "desc": "Nach der Linken haben in Mecklenburg-Vorpommern auch Grüne und SPD dem Koalitionsvertrag zugestimmt. Am Abend soll die Vereinbarung in Greifswald unterschrieben werden.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rot-rot-gruen-mecklenburg-vorpommern-koalitionsvertrag-spd-manuela-schwesig-gxe",
+   "at": "2026-11-14T12:50:39+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Spritpreisdeckel: SPD kritisiert Reiches Vorschlag zum Spritpreisdeckel als unzureichend",
+   "desc": "Katherina Reiches Vorschlag zum Spritpreisdeckel würde aktuell nicht greifen, bemängelt SPD-Fraktionschef Miersch. Er forderte Nachbesserungen bis Mitte Dezember.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/spritpreisdeckel-katherina-reiche-cdu-spd-tankrabatt-gxe",
+   "at": "2026-11-14T11:41:44+00:00"
+  },
   {
    "source": "Der Spiegel",
    "title": "Ilse Aigner (CSU) als Bundespräsidentin: Ein großes Missverständnis – Kolumne",
@@ -19,7 +40,7 @@
   {
    "source": "Die Zeit",
    "title": "Nato-Beitritt der Ukraine: USA schlagen laut Selenskyj Nato-Beitritt gegen Gebietsabtritt vor",
-   "desc": "Tauscht die Ukraine Gebiete gegen eine Natoperspektive? Wolodymyr Selenskyj zufolge haben die USA diesen Vorschlag gemacht. Die Frage sei erstmals gestellt worden.",
+   "desc": "Tauscht die Ukraine Gebiete gegen eine Nato-Perspektive? Wolodymyr Selenskyj zufolge haben die USA diesen Vorschlag gemacht. Die Frage sei erstmals gestellt worden.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/nato-beitritt-ukraine-usa-wolodymyr-selenskyj-gebietsverzicht-gxe",
    "at": "2026-11-14T10:45:38+00:00"
   },
@@ -122,27 +143,6 @@
    "at": "2026-11-14T07:20:55+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Luftverkehr in den USA: Startverbot legt US-Luftverkehr über mehrere Stunden lahm",
-   "desc": "In den USA konnten wegen IT-Problemen mehrere Stunden lang keine Flugzeuge starten. Tausende Verbindungen wurden gestrichen. Die Folgen könnten Europa treffen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-flugverkehr-stopp-faa-luftfahrtbehoerde",
-   "at": "2026-11-14T06:27:39+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Luftverkehr in den USA: Startverbot legt US-Luftverkehr über mehrere Stunden lahm",
-   "desc": "In den USA konnten wegen IT-Problemen mehrere Stunden lang keine Flugzeuge starten. Tausende Verbindungen wurden gestrichen. Die Folgen könnten Europa treffen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-flugverkehr-stopp-faa-luftfahrtbehoerde",
-   "at": "2026-11-14T06:27:39+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Luftverkehr in den USA: Startverbot legt US-Luftverkehr über mehrere Stunden lahm",
-   "desc": "In den USA konnten wegen IT-Problemen mehrere Stunden lang keine Flugzeuge starten. Tausende Verbindungen wurden gestrichen. Die Folgen könnten Europa treffen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-flugverkehr-stopp-faa-luftfahrtbehoerde",
-   "at": "2026-11-14T06:27:39+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "SPD-Parteitag: Genossen planen Anti-Klingbeil-Antrag",
    "desc": "Noch hat Lars Klingbeil die Frage nicht beantwortet, ob er ein weiteres Mal für den SPD-Vorsitz kandidiert. Geht es nach einem Bündnis aus Arbeitsgemeinschaften und Parteinachwuchs, ist die Antwort klar.",
@@ -204,27 +204,6 @@
    "desc": "Der Bund darf 2027 sehr viel Geld ausgeben: Geplant sind mehr als 560 Milliarden Euro im Haushalt. Für eine Stromsteuersenkung reicht es aber weiterhin nicht. Die Kritik ist massiv, nicht nur bei der Opposition. Nun äußerte sich Kanzler Merz.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-haushalt-kritik-merz-100.html",
    "at": "2026-11-13T13:20:56+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundestag beschließt Reform: Mehr Befugnisse für die Nachrichtendienste",
-   "desc": "Heimlich Wohnungen betreten, Hackerangriffe, Falschinformationen: Deutsche Nachrichtendienste bekommen mehr Befugnisse. Der Bundestag hat die Reform nun beschlossen. Damit reagiert die Koalition auf die verschärfte Bedrohung.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienst-reform-beschlossen-100.html",
-   "at": "2026-11-13T13:11:16+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundeshaushalt: Die fetten Jahre sind vorbei - Kommentar",
-   "desc": "Mit Ach und Krach haben sich die Haushälter auf einen Bundesetat geeinigt. Kanzler Merz sollte sich jetzt als harter Sparer profilieren – und nicht die Stromsteuer senken.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundeshaushalt-die-fetten-jahre-sind-vorbei-kommentar-a-8f09d010-dbf4-498c-bdc2-540348405685",
-   "at": "2026-11-13T12:12:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Steffen Krach: Staatsanwaltschaft will Immunität von SPD-Fraktionschef aufheben",
-   "desc": "Seit dem Einzug von Steffen Krach ins Berliner Abgeordnetenhaus genießt der SPD-Politiker Immunität, Ermittlungen unter anderem wegen Vorteilsannahme gegen ihn ruhen. Die Staatsanwaltschaft Hannover geht dagegen nun vor.",
-   "url": "https://www.spiegel.de/politik/deutschland/steffen-krach-staatsanwaltschaft-hannover-beantragt-aufhebung-von-immunitaet-a-98592b7b-82b5-403b-ac18-f169ab2d8e2c",
-   "at": "2026-11-13T11:43:00+00:00"
   }
  ]
 }

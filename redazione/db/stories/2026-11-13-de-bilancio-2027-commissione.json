@@ -8,13 +8,15 @@
   "photo": {"wiki": "de", "title": "Bundestag"},
   "rank": 402,
   "summary": "Dopo oltre 15 ore la commissione Bilancio del Bundestag ha chiuso il bilancio 2027: spese per 560,9 miliardi di euro. Resta aperta la questione della riduzione dell'imposta sull'elettricità.",
-  "article": "La commissione Bilancio del Bundestag, il parlamento federale tedesco, ha chiuso nella notte il bilancio federale per il 2027 dopo una seduta di oltre 15 ore. Lo scrivono Tagesschau e Die Zeit. Secondo Tagesschau, le spese previste sono di 560,9 miliardi di euro, più di quanto previsto in origine. Die Zeit parla di spese record e precisa che il bilancio è per ora provvisorio.\n\nResta aperto il capitolo dell'imposta sull'elettricità. Secondo Tagesschau, i vertici del governo cercano miliardi per ridurla. Die Zeit scrive che l'Unione (Cdu e Csu) spinge per il taglio ma alla coalizione mancano i soldi. Lars Klingbeil, vicecancelliere e ministro delle Finanze della Spd, è sostenuto da esponenti locali del suo partito: il sindaco di Brema Andreas Bovenschulte, citato da Zeit, ritiene necessaria una copertura seria.\n\nDer Spiegel scrive che Friedrich Merz, il cancelliere, si è impegnato a ridurre l'imposta per tutti, ma che la Spd lo lascia «sbattere contro il muro» e che nella Cdu cresce il malumore verso di lui.\n\nLe fonti sono i testi dei feed: gli articoli completi non erano consultabili, quindi restano da verificare il deficit previsto e la data del voto finale in aula.",
+  "article": "La commissione Bilancio del Bundestag, il parlamento federale tedesco, ha chiuso nella notte il bilancio federale per il 2027 dopo una seduta di oltre 15 ore. Lo scrivono Tagesschau e Die Zeit. Secondo Tagesschau, le spese previste sono di 560,9 miliardi di euro, più di quanto previsto in origine. Die Zeit parla di spese record e precisa che il bilancio è per ora provvisorio.\n\nResta aperto il capitolo dell'imposta sull'elettricità. Secondo Tagesschau, i vertici del governo cercano miliardi per ridurla. Die Zeit scrive che l'Unione (Cdu e Csu) spinge per il taglio ma alla coalizione mancano i soldi. Lars Klingbeil, vicecancelliere e ministro delle Finanze della Spd, è sostenuto da esponenti locali del suo partito: il sindaco di Brema Andreas Bovenschulte, citato da Zeit, ritiene necessaria una copertura seria.\n\nDer Spiegel scrive che Friedrich Merz, il cancelliere, si è impegnato a ridurre l'imposta per tutti, ma che la Spd lo lascia «sbattere contro il muro» e che nella Cdu cresce il malumore verso di lui.\n\nSviluppi di sabato 14 novembre. Secondo Die Zeit, la riduzione dell'imposta sull'elettricità sarà al centro del comitato di coalizione di martedì 17 novembre, e Matthias Miersch, capogruppo della Spd, vede «movimento» nelle trattative. Sempre Die Zeit scrive che Ansgar Heveling, presidente della Corte dei conti federale, chiede a Unione e Spd una linea più dura sui risparmi e dice che la Germania vive «evidentemente al di sopra dei suoi mezzi».\n\nLe fonti sono i testi dei feed: gli articoli completi non erano consultabili, quindi restano da verificare il deficit previsto e la data del voto finale in aula.",
   "facts": [
     {"text": "La commissione Bilancio ha chiuso il bilancio 2027 dopo oltre 15 ore di seduta.", "who": ["Tagesschau", "Die Zeit"]},
     {"text": "Le spese previste sono di 560,9 miliardi di euro, più del previsto in origine.", "who": ["Tagesschau"]},
     {"text": "Il governo cerca miliardi per ridurre l'imposta sull'elettricità; la coalizione non ha i fondi.", "who": ["Tagesschau", "Die Zeit"]},
     {"text": "Esponenti locali della Spd sostengono Klingbeil: serve una copertura seria.", "who": ["Die Zeit"]},
-    {"text": "Nella Cdu cresce il malumore verso Merz sul taglio dell'imposta.", "who": ["Der Spiegel"]}
+    {"text": "Nella Cdu cresce il malumore verso Merz sul taglio dell'imposta.", "who": ["Der Spiegel"]},
+    {"text": "Il taglio dell'imposta sull'elettricità sarà discusso nel comitato di coalizione di martedì; Miersch (Spd) vede movimento.", "who": ["Die Zeit"]},
+    {"text": "Il presidente della Corte dei conti Heveling chiede più risparmi: la Germania vive al di sopra dei suoi mezzi.", "who": ["Die Zeit"]}
   ],
   "view": "Si può dire con certezza che il bilancio 2027 è stato chiuso in commissione con spese di 560,9 miliardi. Come verrà finanziato il taglio dell'imposta sull'elettricità non è chiaro, e dal feed non emerge il livello del nuovo debito.\n\nConta perché il bilancio mostra le divisioni nella coalizione tra Unione e Spd. Da guardare: il voto finale del Bundestag e la soluzione sul taglio dell'imposta.",
   "open": [
@@ -28,9 +30,10 @@
     {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-kann-ihr-kanzler-gut-verhandeln-eher-nicht-finden-sie-in-der-cdu-a-30ef26a9-93f9-4714-84ad-8f353e28d4fc", "angle": "Dal feed: Merz e il malumore nella Cdu.", "date": "2026-11-12"}
   ],
   "firstSeen": "2026-11-13T09:50:00+01:00",
-  "updated": "2026-11-13T09:50:00+01:00",
-  "change": "",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "Il taglio dell'imposta sull'elettricità va al comitato di coalizione di martedì; la Corte dei conti chiede più risparmi.",
   "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Il taglio dell'imposta sull'elettricità va al comitato di coalizione del 17 novembre; la Corte dei conti chiede più risparmi."},
     {"at": "2026-11-13T09:50:00+01:00", "text": "Prima notizia: la commissione Bilancio chiude il bilancio 2027 con spese per 560,9 miliardi."}
   ],
   "tags": ["Germania", "Conti pubblici", "Bundestag"],

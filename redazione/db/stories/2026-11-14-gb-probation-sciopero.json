@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-14-gb-probation-sciopero",
+  "title": "Regno Unito: gli agenti di libertà vigilata votano per l'azione sindacale",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Ministry of Justice (United Kingdom)"},
+  "rank": 201,
+  "summary": "Il personale della probation in Inghilterra e Galles ha votato per l'azione sindacale su stipendi e carichi di lavoro. Il voto complica il piano del governo di liberare presto migliaia di detenuti.",
+  "article": "Gli agenti della probation, il servizio che segue in Inghilterra e Galles chi esce dal carcere o sconta pene fuori, hanno votato venerdì 13 novembre per l'azione sindacale su stipendi e carichi di lavoro. Lo scrivono Guardian, BBC e Sky News.\n\nSecondo il Guardian, i soci del sindacato Napo hanno approvato limiti agli straordinari e altre forme di protesta che non sono lo sciopero. Il quotidiano scrive che probabilmente cominceranno il 23 novembre e che è in preparazione uno sciopero vero e proprio in una fase successiva. Sky News parla di «seria rabbia» tra il personale della probation e dei tribunali per le famiglie, che ha votato a favore dello sciopero.\n\nPer il Guardian il voto è un colpo ai piani del governo di liberare in anticipo migliaia di detenuti per ridurre il sovraffollamento delle carceri. La BBC scrive che il voto arriva mentre le carceri si preparano a rilasciare più detenuti nei prossimi mesi.\n\nLe informazioni vengono dai titoli e dai testi dei feed di Guardian, BBC e Sky News: gli articoli completi non sono stati letti. Restano da verificare i numeri del voto e la risposta del governo.",
+  "facts": [
+    {"text": "Il personale della probation in Inghilterra e Galles ha votato per l'azione sindacale su stipendi e carichi di lavoro.", "who": ["The Guardian", "BBC", "Sky News"]},
+    {"text": "I soci di Napo hanno approvato limiti agli straordinari; l'azione comincerà probabilmente il 23 novembre.", "who": ["The Guardian"]},
+    {"text": "Uno sciopero vero e proprio è in preparazione per una fase successiva.", "who": ["The Guardian"]},
+    {"text": "Il voto complica il piano di liberare in anticipo migliaia di detenuti.", "who": ["The Guardian", "BBC"]}
+  ],
+  "view": "Si può dire con certezza che il personale ha votato per l'azione sindacale e che la prima fase sono i limiti agli straordinari. La data del 23 novembre è del solo Guardian, e il numero dei votanti non è nelle fonti lette.\n\nConta perché le carceri dipendono dalla probation per rilasciare i detenuti in anticipo. Da guardare: la risposta del ministero della Giustizia e la data dello sciopero.",
+  "open": [
+    "Quanti iscritti hanno votato e con quale maggioranza?",
+    "Cosa risponde il governo alle richieste su stipendi e carichi di lavoro?",
+    "Quando comincerebbe lo sciopero vero e proprio?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/society/2026/nov/13/probation-officers-in-england-and-wales-vote-for-strike-action-over-pay-and-workloads", "angle": "Dal feed: Napo, limiti agli straordinari dal 23 novembre e effetti sul piano delle scarcerazioni.", "date": "2026-11-13"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/probation-staff-vote-for-strike-action-in-serious-anger-over-pay-and-workloads-13612013", "angle": "Dal feed: il voto di probation e tribunali per le famiglie e la «seria rabbia».", "date": "2026-11-13"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/c6pv92pl02kpo", "angle": "Dal feed: il voto arriva mentre le carceri si preparano a liberare più detenuti.", "date": "2026-11-13"}
+  ],
+  "firstSeen": "2026-11-14T09:48:20+01:00",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: gli agenti della probation votano per l'azione sindacale."}
+  ],
+  "tags": ["Regno Unito", "Lavoro", "Giustizia"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

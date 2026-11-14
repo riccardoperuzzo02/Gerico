@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-14-es-oviedo-bomba-allarmi",
+  "title": "Spagna: dopo la bomba di Oviedo nuovi allarmi per valigie sospette",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "photo": {"wiki": "es", "title": "Oviedo"},
+  "rank": 503,
+  "summary": "Dopo l'esplosione a Oviedo che questa settimana ha ucciso un agente, venerdì ci sono stati allarmi per zaini e valigie sospette in sette comunità. L'autore della bomba non è stato arrestato.",
+  "article": "Venerdì 13 novembre sono arrivati nuovi avvisi per valigie e zaini sospetti in luoghi pubblici in sette comunità autonome spagnole, tra cui Andalusia, Catalogna, Madrid e Murcia, secondo 20minutos. Il quotidiano cita una fonte secondo cui i cittadini «sono più attenti dopo Oviedo».\n\nEl Mundo scrive che nella settimana una bomba a Oviedo ha ucciso un agente e che il suo autore non è stato ancora arrestato. Fonti di polizia, riferisce El Mundo, ritengono che alla psicosi per l'attentato si aggiunga l'ondata di falsi allarmi che interessa l'Europa. Nei testi letti non c'è una spiegazione ufficiale della dinamica a Oviedo né del movente.\n\nLe informazioni vengono dai titoli e dai testi dei feed di 20minutos ed El Mundo: gli articoli completi non sono stati letti. Restano da verificare il bilancio completo dell'esplosione a Oviedo, lo stato dell'indagine e i dettagli sugli allarmi di venerdì.",
+  "facts": [
+    {"text": "Venerdì nuovi avvisi per zaini e valigie sospette in sette comunità autonome.", "who": ["20minutos"]},
+    {"text": "Una bomba a Oviedo ha ucciso un agente questa settimana; l'autore non è stato arrestato.", "who": ["El Mundo"]},
+    {"text": "Fonti di polizia vedono una possibile psicosi legata ai falsi allarmi che interessano l'Europa.", "who": ["El Mundo"]}
+  ],
+  "view": "Si può dire con certezza che ci sono stati nuovi allarmi e che la morte dell'agente a Oviedo è riportata da El Mundo; l'autore non risulta arrestato. Non è provato alcun legame tra gli allarmi e l'esplosione.\n\nConta perché l'allerta arriva in piena campagna elettorale. Da guardare: gli sviluppi dell'indagine su Oviedo e il numero di allarmi nei prossimi giorni.",
+  "open": [
+    "Chi ha messo la bomba a Oviedo e perché?",
+    "Quanti allarmi risultano falsi e quanti sono stati verificati?",
+    "Ci sono collegamenti tra Oviedo e l'ondata di allarmi in Europa?"
+  ],
+  "sources": [
+    {"name": "20minutos", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.20minutos.es/nacional/nueva-oleada-avisos-siete-comunidades-por-maletas-sospechosas-los-ciudadanos-estan-mas-alerta-despues-oviedo_7060851_0.html", "angle": "Dal feed: gli avvisi in sette comunità.", "date": "2026-11-13"},
+    {"name": "El Mundo", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.elmundo.es/espana/2026/11/13/6af6f56a21efa0e33c8b458e.html", "angle": "Dal feed: la bomba di Oviedo, l'autore non arrestato e la psicosi.", "date": "2026-11-13"}
+  ],
+  "firstSeen": "2026-11-14T09:48:20+01:00",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: dopo la bomba di Oviedo nuovi allarmi per valigie sospette."}
+  ],
+  "tags": ["Spagna", "Sicurezza", "Cronaca"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

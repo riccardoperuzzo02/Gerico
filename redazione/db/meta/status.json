@@ -4,8 +4,8 @@
     "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
   },
   "lastPublish": {
-    "at": "2026-11-14T07:26:00+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database; cancellate 3 storie archiviate da più di 7 giorni."
+    "at": "2026-11-14T09:52:21+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-14T07:24:56+01:00",
   "marketsRun": {
@@ -26,8 +26,8 @@
     "Agi"
   ],
   "paesiRun": {
-    "at": "2026-11-13T09:50:30+01:00",
-    "esito": "US 2 nuove (sparatoria a Washington, CBS letta; Van Hollen contro Schumer, solo feed)/0 aggiornate/1 archiviata (Hegseth); GB 2 nuove (Milburn sui sussidi, Iran e giornalisti, solo feed)/0/0; FR 1 nuova (licei e Lecornu, franceinfo letta)/0/0; DE 2 nuove (bilancio 2027, riforma dei servizi, solo feed)/0/0; ES 1 nuova (campagna elettorale, solo feed)/0/0. Tagesschau, Zeit, Sky e 20minutos non si aprono."
+    "at": "2026-11-14T09:51:00+01:00",
+    "esito": "Tutto dai feed, nessun articolo aperto. US 2 nuove (Corte suprema e asilo, Alaska)/0 aggiornate/2 archiviate; GB 2 nuove (probation, Piddington)/1 aggiornata (Milburn)/1 archiviata; FR 2 nuove (manifestazioni del 14, pubblico impiego)/0/2 archiviate; DE 1 nuova (Berthold)/1 aggiornata (bilancio 2027)/1 archiviata; ES 2 nuove (Sánchez-Corvillo, Oviedo)/1 aggiornata (campagna)/1 archiviata."
   },
   "quality": {
     "articlesDiscarded": 2,

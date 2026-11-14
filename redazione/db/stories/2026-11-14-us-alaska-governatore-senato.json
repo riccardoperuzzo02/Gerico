@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-14-us-alaska-governatore-senato",
+  "title": "Stati Uniti: in Alaska un democratico vince la carica di governatore",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Alaska State Capitol"},
+  "rank": 102,
+  "summary": "Il democratico Jonathan Kreiss-Tomkins ha vinto la corsa a governatore dell'Alaska. Il seggio al Senato tra Sullivan e Peltola è l'unico ancora da assegnare.",
+  "article": "Jonathan Kreiss-Tomkins, democratico ed ex deputato statale, ha vinto le elezioni per la carica di governatore dell'Alaska, al posto di un repubblicano. Lo scrivono NPR e il New York Times. Secondo il Times, è la prima vittoria democratica nella corsa a governatore dello Stato dal 1998.\n\nNPR riferisce che Kreiss-Tomkins ha fatto una campagna incentrata sulla collaborazione tra i partiti, in uno Stato che di solito vota repubblicano. Ha 37 anni e sarà il governatore più giovane nella storia dell'Alaska. Il Times scrive che si è fatto conoscere come costruttore di coalizioni e che ha lanciato l'allarme sulla grave situazione dei conti dello Stato.\n\nResta aperta la sfida per il Senato tra il repubblicano uscente Dan Sullivan e Mary Peltola, ex deputata democratica. Secondo il Times è l'unica corsa al Senato non ancora assegnata, e i voti sono ancora in conteggio con il sistema del voto ordinato per preferenza.\n\nLe informazioni vengono dai titoli e dai testi che NPR e il New York Times pubblicano nei loro feed: gli articoli completi non sono stati letti.",
+  "facts": [
+    {"text": "Kreiss-Tomkins, democratico, ha vinto la corsa a governatore dell'Alaska, sostituendo un repubblicano.", "who": ["NPR", "New York Times"]},
+    {"text": "Ha 37 anni e sarà il governatore più giovane nella storia dello Stato.", "who": ["NPR"]},
+    {"text": "È la prima vittoria democratica nella corsa a governatore dal 1998.", "who": ["New York Times"]},
+    {"text": "Il Senato tra Sullivan e Peltola è l'unica corsa al Senato non ancora assegnata; i voti sono in conteggio.", "who": ["New York Times"]}
+  ],
+  "view": "Si può dire con certezza che Kreiss-Tomkins ha vinto in Alaska, perché lo scrivono due testate. L'esito della corsa al Senato non è noto e dipende dal conteggio dei voti.\n\nConta perché l'Alaska è uno Stato abituato a votare repubblicano e il Senato non ha ancora una composizione definitiva. Da guardare: la conclusione del conteggio per Sullivan e Peltola.",
+  "open": [
+    "Chi vince il seggio al Senato tra Sullivan e Peltola?",
+    "Quando finirà il conteggio con il voto per preferenza?",
+    "Quale programma sui conti dello Stato porterà il nuovo governatore?"
+  ],
+  "sources": [
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/14/g-s1-151719/midterms-alaska-governor-kreiss-tomkins", "angle": "Dal feed: la vittoria, la campagna sulla collaborazione tra partiti e l'età di Kreiss-Tomkins.", "date": "2026-11-14"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-governor-winner-kreiss-tomkins-jkt.html", "angle": "Dal feed: primo democratico dal 1998; il Senato resta in conteggio.", "date": "2026-11-14"}
+  ],
+  "firstSeen": "2026-11-14T09:48:20+01:00",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: Kreiss-Tomkins vince la corsa a governatore dell'Alaska."}
+  ],
+  "tags": ["Stati Uniti", "Elezioni", "Congresso"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

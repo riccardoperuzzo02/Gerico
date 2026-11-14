@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-14-fr-manifestazioni-14-novembre",
+  "title": "Francia: quinto sabato di manifestazioni di giovani e gilet gialli",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Place de la République"},
+  "rank": 301,
+  "summary": "Oggi, sabato 14 novembre, sono previste in Francia manifestazioni di organizzazioni giovanili e gilet gialli contro il carovita. Il governo mobilita circa 70.000 agenti.",
+  "article": "Sabato 14 novembre si tiene in Francia la quinta giornata di mobilitazione contro la «vita cara», su appello delle organizzazioni giovanili e del coordinamento dei gilet gialli. Lo scrivono franceinfo e France 24.\n\nSecondo franceinfo, il ministro dell'Interno prevede «50 o 60 cortei» sul territorio. Le autorità stimano a Parigi tra 30.000 e 60.000 manifestanti e hanno mobilitato circa 70.000 tra poliziotti e gendarmi. France 24 riferisce che il corteo parigino parte alle 14 da place de la République e arriva a Nation; la prefettura di polizia ha approvato un percorso comune a tre organizzatori. Le richieste sono diverse: protezione di bambini e adolescenti, opposizione al «permesso di uccidere», più mezzi per la scuola.\n\nL'Union syndicale lycéenne, sindacato degli studenti, dice a franceinfo che il governo «gioca la strategia del marciume». Sempre franceinfo ha contato 219 ordinanze prese dalla prefettura di polizia di Parigi dal 1° ottobre per le mobilitazioni dei liceali e contro il carovita: divieti di manifestare, coprifuoco, percorsi fuori dai centri.\n\nLe informazioni vengono dai testi dei feed di franceinfo e France 24; restano da verificare la partecipazione reale e gli incidenti.",
+  "facts": [
+    {"text": "Sabato 14 novembre è prevista la quinta giornata di mobilitazione contro il carovita, a cui aderiscono giovani e gilet gialli.", "who": ["franceinfo", "France 24"]},
+    {"text": "Il ministro dell'Interno prevede 50-60 cortei; a Parigi sono attesi 30.000-60.000 manifestanti e sono mobilitati circa 70.000 tra poliziotti e gendarmi.", "who": ["franceinfo"]},
+    {"text": "Il corteo di Parigi parte alle 14 da place de la République verso Nation, su un percorso comune approvato dalla prefettura.", "who": ["France 24", "franceinfo"]},
+    {"text": "Dal 1° ottobre la prefettura di polizia di Parigi ha preso 219 ordinanze legate alle mobilitazioni.", "who": ["franceinfo"]}
+  ],
+  "view": "Si può dire con certezza che la mobilitazione è convocata, con un dispositivo di sicurezza molto ampio. Le cifre sui partecipanti sono stime delle autorità e non dati finali.\n\nConta perché è la quinta giornata di fila e unisce richieste diverse, dal carovita alla scuola. Da guardare: l'affluenza, eventuali incidenti e la risposta del governo, con lo sciopero del pubblico impiego il 17 novembre.",
+  "open": [
+    "Quanti manifestanti ci saranno davvero a Parigi e nel resto del Paese?",
+    "Ci saranno incidenti o arresti?",
+    "Il governo cambierà approccio dopo la giornata?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-du-14-novembre-suivez-la-journee-de-mobilisation-a-l-appel-de-gilets-jaunes-et-d-organisations-de-jeunesse_8281187.html", "angle": "Dal feed: cortei previsti, manifestanti attesi e 70.000 agenti; le ordinanze dei prefetti.", "date": "2026-11-14"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261114-manifestations-du-14-novembre-en-direct-des-revendications-diverses-en-amont-de-l-acte-v", "angle": "Dal feed: percorso parigino e richieste diverse.", "date": "2026-11-14"}
+  ],
+  "firstSeen": "2026-11-14T09:48:20+01:00",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: quinto sabato di manifestazioni di giovani e gilet gialli in Francia."}
+  ],
+  "tags": ["Francia", "Proteste", "Potere d'acquisto"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

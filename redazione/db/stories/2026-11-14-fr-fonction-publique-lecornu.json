@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-14-fr-fonction-publique-lecornu",
+  "title": "Francia: i sindacati del pubblico impiego scioperano il 17 novembre",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Hôtel Matignon"},
+  "rank": 302,
+  "summary": "Dopo l'incontro a Matignon, la Cfdt si unisce all'appello allo sciopero del 17 novembre nel pubblico impiego. Il primo ministro Lecornu ha aperto una discussione di un mese sui bassi salari.",
+  "article": "Il primo ministro francese Sébastien Lecornu ha ricevuto venerdì 13 novembre i sindacati del pubblico impiego e ha annunciato una discussione di un mese, con cinque cantieri, tra cui la «rivalutazione dei bassi salari». Lo riferisce France 24.\n\nL'intersindacale, secondo France 24, ha giudicato l'annuncio insufficiente e ha confermato lo sciopero e la mobilitazione di martedì 17 novembre. La Cfdt, il sindacato riformista, ha deciso di aderire all'appello. Le Monde scrive che Lecornu ha subìto l'ira della Cfdt al termine dei colloqui e che «fatica a uscire dalla crisi», tra concessioni e toni duri.\n\nIl quotidiano collega la vicenda alle proteste contro il carovita: sabato 14 novembre è prevista la quinta giornata di mobilitazione, con migliaia di manifestanti attesi.\n\nIl governo ha già anticipato al 1° dicembre l'aumento dello Smic, il salario minimo.\n\nLe informazioni vengono dai testi dei feed di France 24 e Le Monde: gli articoli completi non sono stati letti. Restano da verificare le proposte concrete sui salari e l'adesione allo sciopero.",
+  "facts": [
+    {"text": "Lecornu ha aperto una discussione di un mese su cinque cantieri, tra cui la rivalutazione dei bassi salari.", "who": ["France 24"]},
+    {"text": "L'intersindacale giudica l'annuncio insufficiente e chiama allo sciopero il 17 novembre.", "who": ["France 24"]},
+    {"text": "La Cfdt aderisce all'appello allo sciopero.", "who": ["France 24", "Le Monde"]},
+    {"text": "Le Monde scrive che Lecornu fatica a uscire dalla crisi sociale.", "who": ["Le Monde"]}
+  ],
+  "view": "Si può dire con certezza che il governo ha aperto un mese di trattative e che i sindacati le ritengono insufficienti e scioperano il 17 novembre. L'esito del negoziato e la partecipazione allo sciopero non sono noti.\n\nConta perché l'adesione della Cfdt allarga il fronte sindacale mentre continuano le proteste di piazza. Da guardare: lo sciopero del 17 novembre e le proposte del governo sui salari.",
+  "open": [
+    "Quali proposte concrete porterà il governo sui bassi salari?",
+    "Quanti dipendenti pubblici scioperano il 17 novembre?",
+    "Il governo concederà di più prima dello sciopero?"
+  ],
+  "sources": [
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261113-fonction-publique-lecornu-ouvre-mois-discussions-cinq-chantiers-bas-salaires", "angle": "Dal feed: il mese di discussioni, i cinque cantieri e l'adesione della Cfdt allo sciopero.", "date": "2026-11-13"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/14/mobilisations-sociales-sebastien-lecornu-peine-a-sortir-de-la-crise_6809785_823448.html", "angle": "Dal feed: l'ira della Cfdt e la difficoltà di Lecornu a uscire dalla crisi.", "date": "2026-11-14"}
+  ],
+  "firstSeen": "2026-11-14T09:48:20+01:00",
+  "updated": "2026-11-14T09:48:20+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: i sindacati del pubblico impiego scioperano il 17 novembre."}
+  ],
+  "tags": ["Francia", "Lavoro", "Governo"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,7 +1,77 @@
 {
  "code": "DE",
- "asOf": "2026-11-15T15:17:35+00:00",
+ "asOf": "2026-11-15T17:17:35+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "Streit um Berliner Linke: Bodo Ramelow wirft Vanessa Emde Vertrauensbruch vor",
+   "desc": "Der Druck auf die umstrittene Berliner Linkenpolitikerin Vanessa Emde wächst: Auch Parteigenosse Bodo Ramelow drägt Emde dazu, die Fraktion im Abgeordnetenhaus der Hauptstadt zu verlassen.",
+   "url": "https://www.spiegel.de/politik/deutschland/streit-um-berliner-linke-bodo-ramelow-wirft-vanessa-emde-vertrauensbruch-vor-a-67d8cd65-ef4e-4350-a7e6-d3282ce950ec",
+   "at": "2026-11-15T17:06:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Union und SPD: Der nächste Showdown steht schon bevor",
+   "desc": "Der Haushalt steht – aber große Teile der Union wollen sich mit dem Ergebnis nicht abfinden. Es geht unter anderem um die Stromsteuer, die nicht gesenkt wird. Wird die Entscheidung am Dienstag umgeworfen?",
+   "url": "https://www.spiegel.de/politik/deutschland/union-und-spd-der-naechste-showdown-steht-schon-bevor-a-94ccfbd7-9b7a-44a4-912d-22ff94e88a6c",
+   "at": "2026-11-15T16:42:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Luftverkehr in den USA: Sean Duffy geht von schneller Normalisierung im US-Flugverkehr aus",
+   "desc": "Der US-Verkehrsminister rechnet mit Rückkehr zum regulären Flugbetrieb ab Montag. Donald Trump fordert Geld vom Kongress für die Modernisierung des Flugsicherungssystems.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/us-flugstopp-sean-duffy-flugsicherung-system-ausfall-gxe",
+   "at": "2026-11-15T16:34:32+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Innensenatorin: Bremen beendet Kampagne gegen Islamismus vorzeitig",
+   "desc": "Mit Bildern von einem Wolf im Schafspelz hatte der Verfassungsschutz vor Islamisten gewarnt. Bremens Innensenatorin sagt nun: Das Ziel der Kampagne war richtig, die Umsetzung aber nicht.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bremen-beendet-kampagne-gegen-islamismus-vorzeitig-100.html",
+   "at": "2026-11-15T16:16:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Sabotagevorwurf: Estland schließt nach Anschlagsversuch Grenzübergänge zu Russland",
+   "desc": "Estland beschuldigt russische Geheimdienste, hinter einem Anschlag auf eine Drohnenfabrik zu stehen. Ab Dezember sollen alle drei Grenzübergänge geschlossen werden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/estland-grenzschliessung-russland-brandanschlag-drohnenfabrik",
+   "at": "2026-11-15T16:00:05+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Kriegsmaterialgesetz der Schweiz: Worauf zielen sie?",
+   "desc": "Ist ein Land im Krieg, erhält es keine Waffen aus der Schweiz. Das soll sich nun ändern. Wer profitiert davon?",
+   "url": "https://www.zeit.de/2026/49/kriegsmaterialgesetz-schweiz-abstimmung-waffenexport-ruestungsindustrie",
+   "at": "2026-11-15T15:42:30+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Volkstrauertag: Van der Bellen dringt am Volkstrauertag auf Empathie",
+   "desc": "Alexander Van der Bellen appelliert zu Gedenken an die Opfer der beiden Weltkriege daran, Mitgefühl zu zeigen. Das sei das Fundament der Humanität.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/volkstrauertag-alexander-van-der-bellen-rede-bundestag-gxe",
+   "at": "2026-11-15T15:39:38+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Mobile Notaufnahme im Saarland: Nicht mehr in die Klinik",
+   "desc": "Klinikaufenthalte werden von vielen älteren Menschen gefürchtet, auch wenn sie nur der Untersuchung dienen. Im Saarland läuft deshalb seit September ein Modellprojekt, bei dem ein Diagnostik-Lkw Pflegeheime anfährt. Von Emil Mura.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/mobile-notaufnahme-saarland-100.html",
+   "at": "2026-11-15T15:37:17+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Bundesweites Gedenken zum Volkstrauertag - auch im Bundestag",
+   "desc": "Der Volkstrauertag ist kein gesetzlicher Feiertag, aber ein staatlicher Gedenktag. Im ganzen Land wird heute an Kriegsopfer erinnert. In diesem Jahr zusammen mit dem österreichischem Bundespräsidenten Van der Bellen. Er rief zu mehr Mitgefühl auf.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/volkstrauertag-bundestag-104.html",
+   "at": "2026-11-15T15:24:11+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Tschechien: Demonstration in Prag gegen geplante Abschaffung der Rundfunkgebühr",
+   "desc": "Tschechiens Regierung will dem öffentlich-rechtlichen Rundfunk die Mittel massiv kürzen. Zehntausende protestieren in Prag gegen die Pläne von Regierungschef Babiš.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/tschechien-prag-rundfunkgebuehr-andrej-babis",
+   "at": "2026-11-15T15:12:39+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Krieg gegen die Ukraine: Russische Angriffe durch Starshield-Drosselung häufiger erfolgreich",
@@ -115,13 +185,6 @@
    "at": "2026-11-15T08:44:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Javier Milei: Argentiniens Präsident Javier Milei will sich zur Wiederwahl stellen",
-   "desc": "Bei der Präsidentenwahl in Argentinien im Oktober 2027 will der amtierende Präsident Javier Milei wieder antreten. Er steht für eine marktradikale »Kettensägen-Politik«.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/javier-milei-praesident-argentinien-wiederwahl-gxe",
-   "at": "2026-11-15T07:56:46+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Kita: Städtetag warnt vor Qualitätsverlust durch neues Startchancengesetz",
    "desc": "Der Bund plant bessere Kitas, bezahlen sollen die Städte. Deren Chef warnt: Mehr Qualität mit weniger Geld funktioniere nicht. Nun droht Streit im Bundesrat über das neue Kita-Startchancengesetz.",
@@ -129,39 +192,11 @@
    "at": "2026-11-15T07:24:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Irankrieg: Iran beschießt erneut US-Stützpunkt in Bahrain",
-   "desc": "Die iranische Revolutionsgarde hat zum zweiten Mal eine US-Radaranlage in Bahrain angegriffen. Saudi-Arabien wehrt Raketenangriff auf Riad ab. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-15T07:04:41+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gaza: Israel tötet hochrangigen Hamas-Kommandeur",
-   "desc": "Der 53-jährige Samir Abu Junis leitete einen bewaffneten Arm der Terrororganisation Hamas. Bei einem israelischen Luftangriff im Gazastreifen wurde er getötet.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/gaza-samir-abu-junis-tot-hamas-kommandeur-luftangriff-israel-rafah-chan-junis",
-   "at": "2026-11-15T06:43:00+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "News: Hunderttausende Gefallene im Angriffskrieg gegen die Ukraine",
    "desc": "Hunderttausende Russen sind im Angriffskrieg gegen die Ukraine gefallen. Jeder Tote reißt eine Lücke. Das ist die Lage am Sonntag.",
    "url": "https://www.spiegel.de/politik/deutschland/news-hunderttausende-gefallene-im-angriffskrieg-gegen-die-ukraine-a-1c97ff6a-6d6e-443d-994b-b3ad716bb9b6",
    "at": "2026-11-15T06:35:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Israel: Eisenkot lehnt Netanjahus erneute Forderung nach Einheitsregierung ab",
-   "desc": "Benjamin Netanjahu will mit Israels Oppositionsführer ein Bündnis der »nationalen Einheit« bilden. »Diese Tricks ziehen bei mir nicht«, sagt Gadi Eisenkot.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/benjamin-netanjahu-gadi-eisenkot-regierungsbildung-israel",
-   "at": "2026-11-15T06:28:36+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Luftverkehr in den USA: »Uralte« Kabel und Router sollen US-Flugchaos verursacht haben",
-   "desc": "Für den Flugausfall waren weder Hacker noch KI verantwortlich, sondern veraltete Systeme, sagt der US-Verkehrsminister. Eine Modernisierung würde Milliarden kosten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/us-flugsicherung-faa-sean-duffy-kongress",
-   "at": "2026-11-15T05:19:50+00:00"
   },
   {
    "source": "Tagesschau",
@@ -183,20 +218,6 @@
    "desc": "Mitte Januar wird auf einem Bundesparteitag die komplette Führung der SPD neu gewählt. Ex-Arbeitsminister Heil hat laut ARD-Hauptstadtstudio jetzt als Erster offiziell seine Kandidatur für den Vorsitz angekündigt. Von Moritz Rödle.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-vorsitz-kandidatur-100.html",
    "at": "2026-11-14T18:12:45+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz in Schleswig-Holstein: Der Kanzler meidet das S-Wort",
-   "desc": "Friedrich Merz drückt sich bei der CDU in Schleswig-Holstein um den Streit über die Stromsteuer herum. Umso deutlicher macht der Gastgeber, Ministerpräsident Daniel Günther, was die Partei erwartet.",
-   "url": "https://www.spiegel.de/politik/deutschland/der-kanzler-meidet-das-s-wort-a-966f29df-ce02-4236-b554-4ecedae37898",
-   "at": "2026-11-14T17:17:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Pläne für höhere Abzüge bei vorgezogener Rente",
-   "desc": "Die Einsparungen der Regierung treffen die Rentenversicherung mehr als geplant - und damit stellt sich die Frage, wie die Einbußen ausgeglichen werden können. Die CSU bringt nun höhere Abschläge bei Frührentnern ins Spiel. Von F. Aischmann.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-versicherung-abschlaege-100.html",
-   "at": "2026-11-14T15:37:32+00:00"
   }
  ]
 }

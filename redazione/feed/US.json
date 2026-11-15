@@ -1,13 +1,90 @@
 {
  "code": "US",
- "asOf": "2026-11-15T15:17:35+00:00",
+ "asOf": "2026-11-15T17:17:35+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Embattled Federal Employees Look to a Democratic Congress for a Lifeline",
+   "desc": "Former and current workers have found a sympathetic ear among Democrats set to take over the House and Senate. But any reversal of President Trump’s cuts is unlikely to happen immediately.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/federal-employees-democratic-congress-lifeline.html",
+   "at": "2026-11-15T17:09:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Judge temporarily blocks closing of historic D.C. golf course",
+   "desc": "U.S. District Judge Ana Reyes ruled that the Trump administration cannot close East Potomac Park in Washington, D.C., for now.",
+   "url": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/",
+   "at": "2026-11-15T17:03:40+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
+   "desc": "Trump blamed the Biden administration for the FAA’s aging system after a nationwide ground stop disrupted air travel and urged Congress to approve more funding.",
+   "url": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
+   "at": "2026-11-15T16:56:40+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Ground stop shows \"we have to get off old network,\" Duffy says",
+   "desc": "Transportation Secretary Sean Duffy said that \"we have to get off old network, old telecom\" after a telecommunication outage led to a nationwide ground stop on Friday.",
+   "url": "https://www.cbsnews.com/news/ground-stop-faa-telecom-network-sean-duffy-face-the-nation/",
+   "at": "2026-11-15T16:52:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+   "desc": "Bessent has criticized Howard Lutnick’s department over suspected chip diversion to China while defending President Donald Trump’s handling of the matter.",
+   "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+   "at": "2026-11-15T16:49:11+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Sean Duffy Offers New Details on How One Fix Spiraled Into Nationwide Ground Stop",
+   "desc": "When asked, the transportation secretary could not guarantee on Sunday that a similar air traffic meltdown would not occur again.",
+   "url": "https://www.nytimes.com/2026/11/15/us/sean-duffy-ground-stop-trump-faa.html",
+   "at": "2026-11-15T16:46:19+00:00"
+  },
   {
    "source": "CBS News",
    "title": "This week on \"Sunday Morning\" (Nov. 15)",
    "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
    "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-15T15:15:47+00:00"
+   "at": "2026-11-15T16:38:14+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "‘I Love Being a Girl’: Inside the Life of a Sorority Influencer",
+   "desc": "Many young adults want to be influencers. And why not? It’s fun. But it also means that the camera is always on.",
+   "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-sorority-influencer-college.html",
+   "at": "2026-11-15T16:31:27+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Two Planes Collide on a Taxiway at Miami International Airport",
+   "desc": "The wingtip of a Copa Airlines Boeing 737 struck the nose of a UPS Boeing 767, a day after a nationwide ground stop disrupted air travel.",
+   "url": "https://www.nytimes.com/2026/11/15/us/miami-airport-plane-collision-copa-ups.html",
+   "at": "2026-11-15T16:29:46+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What to Know About Continued Flight Disruptions",
+   "desc": "After a nationwide ground stop Friday, travelers are still encountering snags, and it could take several days for flight schedules to return to normal.",
+   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
+   "at": "2026-11-15T15:44:26+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nature: Sea lions in La Jolla, Calif.",
+   "desc": "We leave you this Sunday morning in the company of sea lions who call the waters off La Jolla, Calif., their home. Videographer: Carl Mrozek.",
+   "url": "https://www.cbsnews.com/video/nature-sea-lions-in-la-jolla-calif/",
+   "at": "2026-11-15T15:30:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "3 big things we're watching in the stock market in the week ahead",
+   "desc": "Nvidia and Anthropic will share the spotlight in a pivotal week for the AI trade.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/15/3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+   "at": "2026-11-15T15:26:20+00:00"
   },
   {
    "source": "New York Times",
@@ -21,7 +98,7 @@
    "title": "Flights expected to normalize by tonight after ground stop. Here's what to know",
    "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
    "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-15T15:00:40+00:00"
+   "at": "2026-11-15T15:00:00+00:00"
   },
   {
    "source": "CBS News",
@@ -94,11 +171,11 @@
    "at": "2026-11-15T14:15:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "What to Know About Continued Flight Disruptions",
-   "desc": "After a nationwide ground stop Friday, travelers are still encountering snags, and it could take several days for flight schedules to return to normal.",
-   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
-   "at": "2026-11-15T13:53:06+00:00"
+   "source": "CBS News",
+   "title": "11/15: Sunday Morning",
+   "desc": "Hosted by Jane Pauley. Featured: Did the mob kill JFK?; U2 at 50; Billy Evans on \"You Can See Everything\"; author Min Jin Lee; artist Mary Whyte; and the history of the Macy's Thanksgiving Day Parade.",
+   "url": "https://www.cbsnews.com/video/111526-sunday-morning/",
+   "at": "2026-11-15T14:00:00+00:00"
   },
   {
    "source": "CNBC",
@@ -132,7 +209,7 @@
    "source": "New York Times",
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business",
    "desc": "The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former firm.",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-nvidia-cantor-fitzgerald.html",
    "at": "2026-11-15T10:02:05+00:00"
   },
   {
@@ -141,13 +218,6 @@
    "desc": "Politicians, donors and campaign strategists are already imagining a large and contentious field of presidential contenders.",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/democrats-2028-presidential-candidates.html",
    "at": "2026-11-15T10:01:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Embattled Federal Employees Look to a Democratic Congress for a Lifeline",
-   "desc": "Former and current workers have found a sympathetic ear among Democrats set to take over the House and Senate. But any reversal of President Trump’s cuts are unlikely to happen immediately.",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/federal-employees-democratic-congress-lifeline.html",
-   "at": "2026-11-15T10:00:59+00:00"
   },
   {
    "source": "New York Times",
@@ -164,20 +234,6 @@
    "at": "2026-11-15T10:00:42+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "‘I Love Being a Girl’: Inside the Life of a Sorority Influencer",
-   "desc": "Many young adults want to be influencers. And why not? It’s fun. But it also means that the camera is always on.",
-   "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-sorority-influencer-college.html",
-   "at": "2026-11-15T10:00:30+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
-   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
-   "at": "2026-11-15T10:00:00+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
    "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
@@ -192,11 +248,11 @@
    "at": "2026-11-15T10:00:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
-   "desc": "The Singapore-based cloud computing company has faced heightened scrutiny since reports linked Nvidia's Jensen Huang to former Megaspeed executive Alice Huang.",
-   "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
-   "at": "2026-11-15T08:34:46+00:00"
+   "source": "NPR",
+   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+   "at": "2026-11-15T10:00:00+00:00"
   },
   {
    "source": "CBS News",
@@ -211,13 +267,6 @@
    "desc": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
    "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
    "at": "2026-11-15T06:00:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Two Planes Collide on a Taxiway at Miami International Airport",
-   "desc": "The wingtip of a Copa Airlines Boeing 737 struck the nose of a UPS Boeing 767, a day after a nationwide ground stop disrupted air travel.",
-   "url": "https://www.nytimes.com/2026/11/15/us/miami-airport-plane-collision-copa-ups.html",
-   "at": "2026-11-15T05:47:33+00:00"
   },
   {
    "source": "NPR",
@@ -239,13 +288,6 @@
    "desc": "Koah Sharp, nearly 1, was rescued alive this week in a rural patch of central South Carolina. In her first interview, Koah’s mother explains what happened.",
    "url": "https://www.nytimes.com/2026/11/14/us/south-carolina-boy-buried-alive.html",
    "at": "2026-11-15T02:59:46+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Federal judge blocks Trump from closing historic D.C. golf course, for now",
-   "desc": "U.S. District Judge Ana Reyes ruled that the Trump administration cannot close East Potomac Park in Washington, D.C., for now.",
-   "url": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/",
-   "at": "2026-11-15T02:57:07+00:00"
   },
   {
    "source": "CNBC",
@@ -288,13 +330,6 @@
    "desc": "A new Florida law that prohibits taxpayer dollars from going toward diversity initiatives has prompted Delray Beach to cancel its St. Patrick's Day parade after a nearly 60-year run.",
    "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
    "at": "2026-11-15T00:03:52+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Ground Stop Highlights Chronic Vulnerabilities in Air Traffic System",
-   "desc": "The Federal Aviation Administration’s aging air traffic control infrastructure has had several disruptive failures in recent months, as officials have sought to make upgrades.",
-   "url": "https://www.nytimes.com/2026/11/14/us/politics/ground-stop-air-traffic-faa.html",
-   "at": "2026-11-14T23:14:32+00:00"
   },
   {
    "source": "CNBC",
@@ -409,13 +444,6 @@
    "at": "2026-11-14T18:53:48+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nvidia's leadership crisis rattles the AI trade. Here's how we're adjusting our portfolio",
-   "desc": "Despite the turbulence, the S&P 500 secured a weekly gain of 2.5%, while the tech-heavy Nasdaq added 2.3%.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
-   "at": "2026-11-14T18:48:39+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Port of New Orleans sues tanker that hit riverboat cruise for $1 million",
    "desc": "The port asked a judge to seize and sell the tanker that hit a riverboat cruise to cover the costs of repairs.",
@@ -423,46 +451,11 @@
    "at": "2026-11-14T17:56:43+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "U.S. loses measles elimination status as cases surge nationwide",
-   "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
-   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
-   "at": "2026-11-14T16:42:15+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Drone delivers Gatorade, bananas to chimp stranded by Florida floodwaters",
-   "desc": "After floodwaters left a rescue chimpanzee stranded on a small island at Save the Chimps sanctuary in Florida, caretakers used a drone to deliver food and drinks to the ape.",
-   "url": "https://www.cbsnews.com/video/drone-delivers-gatorade-bananas-to-chimp-stranded-by-florida-floodwaters/",
-   "at": "2026-11-14T16:24:36+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Investigators probe cause of deadly NYC building collapse",
-   "desc": "New York City investigators are looking into whether anything criminal contributed to the deadly collapse of a building in Brooklyn.",
-   "url": "https://www.cbsnews.com/video/investigators-probe-cause-of-deadly-nyc-building-collapse/",
-   "at": "2026-11-14T16:10:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "New Orleans river cruise collision sounded like \"tons of steel crunching,\" witness says",
-   "desc": "Shocking video shows the moment when a tanker and a paddlewheel river cruise collided in New Orleans. Luckily, no one died. Skyler Henry has more.",
-   "url": "https://www.cbsnews.com/video/new-orleans-river-cruise-collision-sounded-like-tons-of-steel-crunching-witness-says/",
-   "at": "2026-11-14T16:06:58+00:00"
-  },
-  {
    "source": "CNBC",
-   "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
-   "desc": "ETF experts say Nvidia’s leadership turmoil and Democratic control of Congress could shift AI demand to the benefit of other Big Tech stocks, rival chipmakers.",
-   "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-   "at": "2026-11-14T15:50:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Air travel chaos after national ground stop lifted",
-   "desc": "Thousands of travelers are still dealing with flight delays and cancellations after the FAA lifted a national ground stop order. The ground stop highlighted a worsening air traffic network crisis, former NTSB chair Robert Sumwalt explains.",
-   "url": "https://www.cbsnews.com/video/air-travel-chaos-after-national-ground-stop-lifted/",
-   "at": "2026-11-14T15:31:00+00:00"
+   "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+   "desc": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
+   "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+   "at": "2026-11-14T17:46:06+00:00"
   }
  ]
 }

@@ -1,20 +1,34 @@
 {
  "code": "US",
- "asOf": "2026-11-15T05:17:34+00:00",
+ "asOf": "2026-11-15T07:17:34+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Oregon community suspects foul play when beloved shopkeeper disappears",
+   "desc": "When Susan \"Phoenix\" Lane and her two dogs went missing from Welches, Oregon, in the foothills of Mount Hood, her friends and family suspected foul play almost immediately.",
+   "url": "https://www.cbsnews.com/news/susan-phoenix-lane-fournier-mount-hood-oregon-murder-48-hours/",
+   "at": "2026-11-15T07:05:03+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Could Budapest be the next digital nomad hotspot?",
+   "desc": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
+   "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+   "at": "2026-11-15T06:00:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Two Planes Collide on a Taxiway at Miami International Airport",
+   "desc": "The wingtip of a Copa Airlines Boeing 737 struck the nose of a UPS Boeing 767, a day after a nationwide ground stop disrupted air travel.",
+   "url": "https://www.nytimes.com/2026/11/15/us/miami-airport-plane-collision-copa-ups.html",
+   "at": "2026-11-15T05:47:32+00:00"
+  },
   {
    "source": "NPR",
    "title": "Judge temporarily blocks Trump from moving ahead on Washington public golf course redevelopment",
    "desc": "A federal judge on Saturday ordered a two-week delay to any work at a historic Washington public golf course not far from the White House.",
    "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
    "at": "2026-11-15T04:28:45+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Oregon community suspects foul play when beloved shopkeeper disappears",
-   "desc": "When Susan \"Phoenix\" Lane and her two dogs went missing from Welches, Oregon, in the foothills of Mount Hood, her friends and family suspected foul play almost immediately.",
-   "url": "https://www.cbsnews.com/news/susan-phoenix-lane-fournier-mount-hood-oregon-murder-48-hours/",
-   "at": "2026-11-15T04:02:24+00:00"
   },
   {
    "source": "CBS News",
@@ -200,13 +214,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Bomb Found at Ethanol Plant in Peoria, Ill., Mayor Says",
-   "desc": "Residents in a one-mile radius of the plant in Peoria, Ill., can return to their homes. No additional devices were found.",
-   "url": "https://www.nytimes.com/2026/11/14/us/bomb-ethanol-plant-peoria-illinois.html",
-   "at": "2026-11-14T20:44:44+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Travel Nightmare Continues for Stranded Passengers Awaiting Flights",
    "desc": "After a night of fitful sleep on airport floors, some travelers are still stuck amid thousands of flight cancellations following Friday’s ground stop.",
    "url": "https://www.nytimes.com/2026/11/14/us/travel-nightmare-continues-for-stranded-passengers-awaiting-flights.html",
@@ -389,13 +396,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Alaska Senate Race Between Dan Sullivan and Mary Peltola Still Counting Votes",
-   "desc": "The race between Senator Dan S. Sullivan and Ms. Peltola, a former representative, is the only Senate contest that hasn’t been called.",
-   "url": "https://www.nytimes.com/2026/11/14/us/alaska-senate-race-ranked-choice-tabulation.html",
-   "at": "2026-11-14T13:30:56+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "What’s Behind the Trump-Huang Relationship?",
    "desc": "President Trump’s show of support for Jensen Huang as he was under fire was a remarkable moment in a relationship that barely existed two years ago. Our White House correspondent Maggie Haberman explains how Mr. Trump came to see Mr. Huang as a modern-day Henry Ford.",
    "url": "https://www.nytimes.com/video/us/politics/100000011272223/whats-behind-the-trump-huang-relationship.html",
@@ -449,20 +449,6 @@
    "desc": "A Microsoft outage involving services like Outlook and Teams impacted many users, companies and government services.",
    "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
    "at": "2026-11-14T07:32:05+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Analysis: Companies love a ‘rockstar’ CEO. Until they depend on one",
-   "desc": "Jensen Huang’s exit tests Nvidia’s succession planning and governance, and offers lessons for companies that elevate their CEOs to rockstar status.",
-   "url": "https://www.cnbc.com/2026/11/14/nvidia-jensen-huang-ceo-succession-risk.html",
-   "at": "2026-11-14T07:08:45+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Ecuador wants to monetize its biodiversity — while still drilling for oil",
-   "desc": "Ecuador is planning to channel funds into its biodiversity, but faces a key challenge: its reliance on oil.",
-   "url": "https://www.cnbc.com/2026/11/14/ecuador-biodiversity-green-finance-oil.html",
-   "at": "2026-11-14T06:00:01+00:00"
   }
  ]
 }

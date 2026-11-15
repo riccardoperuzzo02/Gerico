@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-15-de-heil-candidatura-spd",
+  "title": "Germania: Hubertus Heil si candida alla guida della Spd contro Klingbeil",
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "photo": {"wiki": "de", "title": "Willy-Brandt-Haus"},
+  "rank": 401,
+  "summary": "L'ex ministro del Lavoro Hubertus Heil ha annunciato la candidatura alla presidenza della Spd, il partito socialdemocratico. Il congresso di metà gennaio rinnova tutta la dirigenza.",
+  "article": "Hubertus Heil, ex ministro del Lavoro, ha annunciato che vuole diventare presidente della Spd, il partito socialdemocratico tedesco. Lo scrivono Tagesschau, Der Spiegel e Die Zeit. Il voto è al congresso federale di metà gennaio, dove viene rinnovata tutta la dirigenza. Secondo Tagesschau, che cita lo studio della Ard a Berlino, è il primo a candidarsi ufficialmente.\n\nIl presidente in carica è Lars Klingbeil, anche vicecancelliere. Per Der Spiegel la candidatura aumenta la pressione su di lui e fa emergere uno scontro di potere nel partito. Secondo Die Zeit, Heil ha usato l'annuncio per attaccare Klingbeil.\n\nDie Zeit riporta anche che esponenti federali difendono il presidente: il ministro dell'Ambiente Carsten Schneider considera inutile un cambio, mentre il capogruppo Matthias Miersch avverte di non riporre false speranze in un uomo nuovo.\n\nLe informazioni vengono dai testi dei feed delle tre testate, non da articoli letti per intero.",
+  "facts": [
+    {"text": "Hubertus Heil, ex ministro del Lavoro, ha annunciato la candidatura alla presidenza della Spd.", "who": ["Tagesschau", "Der Spiegel", "Die Zeit"]},
+    {"text": "Il congresso federale di metà gennaio rinnova tutta la dirigenza del partito.", "who": ["Tagesschau", "Der Spiegel"]},
+    {"text": "Heil è il primo a candidarsi ufficialmente, secondo lo studio Ard di Berlino.", "who": ["Tagesschau"]},
+    {"text": "Carsten Schneider e Matthias Miersch difendono Klingbeil.", "who": ["Die Zeit"]}
+  ],
+  "view": "Si può dire con certezza che Heil si è candidato e che il voto è a metà gennaio. Non è noto se Klingbeil si ricandiderà né se altri entreranno in corsa.\n\nConta perché Klingbeil è anche vicecancelliere nel governo con la Cdu. Da guardare: la risposta di Klingbeil, le prese di posizione delle federazioni regionali e altre candidature.",
+  "open": [
+    "Klingbeil si ricandiderà alla presidenza?",
+    "Ci saranno altri candidati prima del congresso?",
+    "Quali federazioni regionali appoggiano Heil?"
+  ],
+  "sources": [
+    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Europa", "url": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-vorsitz-kandidatur-100.html", "angle": "Dal feed: primo candidato ufficiale, congresso di metà gennaio.", "at": "2026-11-14T18:12:45+00:00"},
+    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/spd-hubertus-heil-will-fuer-parteivorsitz-kandidieren-a-f9209fb9-0404-43be-b66d-b2207e7e6aaa", "angle": "Dal feed: scontro di potere e pressione su Klingbeil.", "at": "2026-11-14T18:28:00+00:00"},
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/deutschland/2026-11/frueherer-arbeitsminister-hubertus-heil-kandidiert-fuer-den-spd-vorsitz", "angle": "Dal feed: attacco a Klingbeil; difese di Schneider e Miersch.", "at": "2026-11-14T19:44:16+00:00"}
+  ],
+  "firstSeen": "2026-11-15T09:48:31+01:00",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: Hubertus Heil si candida alla presidenza della Spd."}
+  ],
+  "tags": ["Germania", "Partiti", "Spd"],
+  "themes": [],
+  "places": ["DE"],
+  "divergences": [],
+  "notCovered": []
+}

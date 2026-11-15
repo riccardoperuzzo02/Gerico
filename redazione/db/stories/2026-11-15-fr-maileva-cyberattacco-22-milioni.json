@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-15-fr-maileva-cyberattacco-22-milioni",
+  "title": "Francia: cyberattacco a Maileva, rubati i dati di 22 milioni di persone",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "La Poste (entreprise française)"},
+  "rank": 303,
+  "summary": "Maileva, filiale del gruppo La Poste, ha annunciato il furto di dati di 22 milioni di persone in un attacco informatico di metà settembre. Sono state avvisate la Cnil e la giustizia.",
+  "article": "Maileva, piattaforma di invio di documenti professionali controllata dal gruppo La Poste, ha annunciato sabato 14 novembre un furto di dati personali che riguarda 22 milioni di persone. Lo scrivono franceinfo, France 24 e Le Monde. L'attacco informatico risale a metà settembre.\n\nSecondo franceinfo, che cita il sito cyberattaque.org e La Poste, i dati rubati sono nomi, cognomi e indirizzi postali. Sono coinvolte diverse migliaia di aziende clienti, soprattutto nell'edilizia sociale, nella sanità e nei servizi pubblici. Maileva spedisce buste paga, raccomandate, fatture e convocazioni per piccole e medie imprese; dichiara oltre 70.000 utenti e 180 milioni di documenti inviati nel 2024. Franceinfo scrive che l'articolo non dice se siano stati sottratti dati bancari.\n\nLa Poste precisa che Maileva ha notificato l'incidente alla Commission nationale de l'informatique et des libertés (Cnil), l'autorità francese sulla privacy, e ha presentato denuncia: «un'inchiesta giudiziaria è in corso». Le aziende clienti sono state informate. France 24 ricorda che l'anno scorso un altro attacco, rivendicato da hacker filorussi, aveva colpito La Poste a pochi giorni da Natale.",
+  "facts": [
+    {"text": "I dati di 22 milioni di persone sono stati rubati in un attacco a Maileva di metà settembre.", "who": ["franceinfo", "France 24", "Le Monde"]},
+    {"text": "Sono stati rubati nomi, cognomi e indirizzi postali, secondo cyberattaque.org citato da La Poste.", "who": ["franceinfo"]},
+    {"text": "Maileva ha avvisato la Cnil e presentato denuncia; è in corso un'inchiesta giudiziaria.", "who": ["franceinfo", "Le Monde"]},
+    {"text": "Sono coinvolte diverse migliaia di aziende clienti, in particolare edilizia sociale, sanità e servizi pubblici.", "who": ["franceinfo"]}
+  ],
+  "view": "Si può dire con certezza che l'attacco c'è stato e che La Poste ne indica la portata in 22 milioni di persone. Non è chiaro se oltre a nomi e indirizzi siano stati sottratti altri dati, né chi sia l'autore.\n\nConta perché i documenti inviati sono professionali e sensibili, e i dati possono servire a truffe mirate. Da guardare: le comunicazioni della Cnil, l'avanzamento dell'inchiesta e le informazioni date agli interessati.",
+  "open": [
+    "Sono stati sottratti anche dati diversi da nome e indirizzo?",
+    "Chi ha rivendicato o compiuto l'attacco?",
+    "Come saranno avvisati i 22 milioni di persone interessate?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/victime-d-une-cyberattaque-maileva-une-filiale-du-groupe-la-poste-annonce-un-vol-de-donnees-touchant-22-millions-de-personnes_8282825.html", "angle": "Articolo letto: dati rubati, clienti coinvolti, dichiarazioni di La Poste.", "at": "2026-11-14T20:15:18+00:00"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261114-la-cyberattaque-d-une-filiale-de-la-poste-entra%C3%AEne-un-vol-de-donn%C3%A9es-touchant-22-millions-de-personnes", "angle": "Dal feed: il precedente attacco a La Poste dell'anno scorso.", "at": "2026-11-14T20:50:52+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/pixels/article/2026/11/14/cyberattaque-maileva-filiale-du-groupe-la-poste-annonce-un-vol-de-donnees-touchant-22-millions-de-personnes_6810545_4408996.html", "angle": "Dal feed: denuncia e inchiesta giudiziaria in corso.", "at": "2026-11-14T20:05:18+00:00"}
+  ],
+  "firstSeen": "2026-11-15T09:48:31+01:00",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: Maileva, filiale di La Poste, annuncia il furto di dati di 22 milioni di persone."}
+  ],
+  "tags": ["Francia", "Cybersicurezza", "Privacy"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

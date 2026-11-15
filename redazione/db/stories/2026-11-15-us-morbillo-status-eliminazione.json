@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-15-us-morbillo-status-eliminazione",
+  "title": "Stati Uniti: perso lo status di paese libero dal morbillo",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Centers for Disease Control and Prevention"},
+  "rank": 104,
+  "summary": "Gli Stati Uniti hanno perso lo status di paese che ha eliminato il morbillo, per la prima volta in 26 anni, secondo ricercatori vicini alla Pan American Health Organization. Nel 2026 la Cdc ha contato 5.412 casi.",
+  "article": "Gli Stati Uniti hanno perso lo status di paese libero dal morbillo, scrivono NPR e CBS News. È la prima volta in 26 anni. La notizia viene da ricercatori a conoscenza delle decisioni della Pan American Health Organization (Paho), l'ufficio regionale dell'Organizzazione mondiale della sanità per le Americhe. Non c'è ancora un annuncio ufficiale: secondo CBS la Paho terrà una conferenza stampa martedì.\n\nIl criterio dell'Oms dice che un paese perde lo status se ha infezioni trasmesse localmente per 12 mesi o più. Secondo CBS, che cita i dati dei Centers for Disease Control and Prevention (Cdc), le agenzie sanitarie federali, nel 2026 i casi sono 5.412, contro i 2.242 del 2025. Ci sono più di 590 ricoveri e almeno sei morti, con casi in 45 stati e a Washington. Il 96% dei contagiati non era vaccinato o non sa se lo fosse.\n\nCBS riporta il parere della medica Céline Gounder, che avverte del rischio per i non vaccinati e ricorda che le regole sulle vaccinazioni a scuola sono competenza degli stati: nel 2025 nove stati hanno reso più facili le esenzioni. La Paho indica nel 95% di copertura vaccinale la soglia per mantenere lo status. Le assemblee legislative degli stati si riuniscono a gennaio e decideranno le regole per il prossimo anno scolastico.",
+  "facts": [
+    {"text": "Gli Stati Uniti hanno perso lo status di paese libero dal morbillo per la prima volta in 26 anni.", "who": ["NPR", "CBS News"]},
+    {"text": "Nel 2026 la Cdc ha contato 5.412 casi, contro 2.242 nel 2025.", "who": ["CBS News"]},
+    {"text": "Ci sono più di 590 ricoveri e almeno sei morti; il 96% dei contagiati non era vaccinato o non sa se lo fosse.", "who": ["CBS News"]},
+    {"text": "La Paho terrà una conferenza stampa martedì; non c'è ancora un annuncio ufficiale.", "who": ["CBS News"]}
+  ],
+  "view": "Si può dire con certezza che la notizia viene da fonti vicine alla Paho e non da un annuncio ufficiale, e che i numeri di casi sono quelli della Cdc. Le conseguenze pratiche dipendono dalle scelte dei singoli stati sulle vaccinazioni.\n\nConta perché il morbillo si diffonde se la copertura scende sotto il 95% e gli Stati Uniti potrebbero esportare il virus. Da guardare: la conferenza della Paho di martedì, la risposta della Cdc e le leggi statali sulle esenzioni a gennaio.",
+  "open": [
+    "Cosa dirà la Paho nella conferenza stampa di martedì?",
+    "Come risponderanno il governo federale e la Cdc?",
+    "Quali stati cambieranno le regole sulle esenzioni a gennaio?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/", "angle": "Articolo letto: numeri della Cdc, criterio Oms, pareri di esperti.", "at": "2026-11-14T16:42:15+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho", "angle": "Dal feed: la notizia viene da ricercatori vicini alle decisioni della Paho.", "at": "2026-11-14T22:15:02+00:00"}
+  ],
+  "firstSeen": "2026-11-15T09:48:31+01:00",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: gli Stati Uniti perdono lo status di paese libero dal morbillo."}
+  ],
+  "tags": ["Stati Uniti", "Sanità", "Vaccini"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

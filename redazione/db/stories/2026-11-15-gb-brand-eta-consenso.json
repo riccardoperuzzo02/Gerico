@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-15-gb-brand-eta-consenso",
+  "title": "Regno Unito: il governo valuta di cambiare l'età del consenso dopo il caso Brand",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Palace of Westminster"},
+  "rank": 205,
+  "summary": "Il vice primo ministro dice che cambiare l'età del consenso merita «una considerazione attenta». Una donna ha rinunciato all'anonimato per accusare Russell Brand di averla violentata a 16 anni.",
+  "article": "Il governo britannico dice che esaminerà le richieste di cambiare l'età del consenso, oggi a 16 anni. Lo scrivono Guardian e Sky News. Il vice primo ministro ha detto che un cambiamento sarebbe «un passo molto grande», ma «merita una considerazione e un esame attenti».\n\nLa richiesta arriva da Mia Latter, 37 anni, che ha rinunciato all'anonimato per dire pubblicamente di essere stata violentata da Russell Brand quando aveva 16 anni e lui 30. Lo riporta il Guardian; la Bbc scrive che Latter vuole un'età del consenso graduale. Brand, comico, è stato condannato lunedì a più di 10 anni di carcere per lo stupro di una donna e le aggressioni sessuali a tre altre, secondo il Guardian. Non sono diffusi dettagli su una proposta di legge.\n\nSecondo la Bbc, domenica i giornali britannici continuano a dedicare le prime pagine al caso.\n\nLe informazioni vengono dai testi dei feed di Guardian, Sky News e Bbc, non da articoli letti per intero.",
+  "facts": [
+    {"text": "Il governo valuterà le richieste di cambiare l'età del consenso, oggi a 16 anni.", "who": ["The Guardian", "Sky News"]},
+    {"text": "Mia Latter, 37 anni, ha rinunciato all'anonimato per accusare Russell Brand di violenza sessuale a 16 anni.", "who": ["The Guardian", "BBC"]},
+    {"text": "Brand è stato condannato lunedì a più di 10 anni per uno stupro e tre aggressioni sessuali.", "who": ["The Guardian"]},
+    {"text": "Latter chiede un'età del consenso graduale.", "who": ["BBC"]}
+  ],
+  "view": "Si può dire con certezza che il governo ha solo aperto a una valutazione: non c'è un testo né un calendario. Le fonti non spiegano cosa significhi in concreto un'età «graduale».\n\nConta perché il tema passa da un caso giudiziario a una possibile modifica di legge. Da guardare: se il governo annuncia una consultazione e come reagiscono opposizione e associazioni.",
+  "open": [
+    "Il governo avvierà una consultazione formale?",
+    "Cosa prevede esattamente la proposta di un'età del consenso graduale?",
+    "Cosa dicono l'opposizione e le associazioni per le vittime?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/law/2026/nov/15/uk-government-to-consider-changing-age-of-consent-after-allegations-against-russell-brand", "angle": "Dal feed: parole del vice primo ministro, accusa di Latter, condanna di Brand.", "at": "2026-11-15T00:17:14+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/minister-says-changing-age-of-consent-deserves-proper-consideration-after-brand-allegations-13612375", "angle": "Dal feed: il governo valuterà la modifica.", "at": "2026-11-14T23:47:00+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cm3rgx9p583zo", "angle": "Dal feed: Latter chiede un'età del consenso graduale.", "at": "2026-11-14T22:37:14+00:00"}
+  ],
+  "firstSeen": "2026-11-15T09:48:31+01:00",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: il governo britannico valuta di cambiare l'età del consenso dopo le accuse a Russell Brand."}
+  ],
+  "tags": ["Regno Unito", "Giustizia", "Diritti"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

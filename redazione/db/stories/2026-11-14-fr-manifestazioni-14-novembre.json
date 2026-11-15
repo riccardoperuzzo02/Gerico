@@ -7,28 +7,32 @@
   "scope": "paese",
   "photo": {"wiki": "it", "title": "Place de la République"},
   "rank": 301,
-  "summary": "Oggi, sabato 14 novembre, sono previste in Francia manifestazioni di organizzazioni giovanili e gilet gialli contro il carovita. Il governo mobilita circa 70.000 agenti.",
-  "article": "Sabato 14 novembre si tiene in Francia la quinta giornata di mobilitazione contro la «vita cara», su appello delle organizzazioni giovanili e del coordinamento dei gilet gialli. Lo scrivono franceinfo e France 24.\n\nSecondo franceinfo, il ministro dell'Interno prevede «50 o 60 cortei» sul territorio. Le autorità stimano a Parigi tra 30.000 e 60.000 manifestanti e hanno mobilitato circa 70.000 tra poliziotti e gendarmi. France 24 riferisce che il corteo parigino parte alle 14 da place de la République e arriva a Nation; la prefettura di polizia ha approvato un percorso comune a tre organizzatori. Le richieste sono diverse: protezione di bambini e adolescenti, opposizione al «permesso di uccidere», più mezzi per la scuola.\n\nL'Union syndicale lycéenne, sindacato degli studenti, dice a franceinfo che il governo «gioca la strategia del marciume». Sempre franceinfo ha contato 219 ordinanze prese dalla prefettura di polizia di Parigi dal 1° ottobre per le mobilitazioni dei liceali e contro il carovita: divieti di manifestare, coprifuoco, percorsi fuori dai centri.\n\nLe informazioni vengono dai testi dei feed di franceinfo e France 24; restano da verificare la partecipazione reale e gli incidenti.",
+  "summary": "Sabato 14 novembre hanno sfilato in Francia tra 106.000 e 200.000 persone, secondo Interno e organizzazioni giovanili: affluenza in calo. I gilet gialli chiamano un sesto atto il 21 novembre.",
+  "article": "Sabato 14 novembre, quinta giornata di mobilitazione contro la «vita cara», hanno sfilato in Francia tra 106.000 e 200.000 persone. La prima cifra è del ministero dell'Interno, la seconda degli organizzatori, tra cui l'intersindacale giovanile, scrivono franceinfo e France 24. Il ministero parla di una situazione «globalmente sotto controllo»; France 24 segnala un'affluenza in calo rispetto alle giornate precedenti.\n\nLe Monde descrive cortei eterogenei a Parigi e a Lione, dominati dal rifiuto del progetto di legge definito «permesso di uccidere», che introduce la presunzione di legittima difesa per polizia e gendarmeria. France 24 parla di qualche incidente e di giornalisti aggrediti; franceinfo riporta che una squadra di BFMTV è stata aggredita a Lione e che il prefetto ha condannato «con la massima fermezza» le aggressioni. Secondo Die Zeit, più di 200 persone sono state fermate.\n\nFranceinfo scrive che i gilet gialli, presenti anche alla manifestazione del 17 novembre che segna gli otto anni del movimento, hanno convocato un sesto atto per sabato 21 novembre perché «le rivendicazioni non sono soddisfatte». Il 17 novembre scioperano anche i sindacati del pubblico impiego.\n\nDal 1° ottobre la prefettura di polizia di Parigi ha preso 219 ordinanze legate alle mobilitazioni di liceali e contro il carovita, secondo il conteggio di franceinfo.",
   "facts": [
-    {"text": "Sabato 14 novembre è prevista la quinta giornata di mobilitazione contro il carovita, a cui aderiscono giovani e gilet gialli.", "who": ["franceinfo", "France 24"]},
-    {"text": "Il ministro dell'Interno prevede 50-60 cortei; a Parigi sono attesi 30.000-60.000 manifestanti e sono mobilitati circa 70.000 tra poliziotti e gendarmi.", "who": ["franceinfo"]},
-    {"text": "Il corteo di Parigi parte alle 14 da place de la République verso Nation, su un percorso comune approvato dalla prefettura.", "who": ["France 24", "franceinfo"]},
-    {"text": "Dal 1° ottobre la prefettura di polizia di Parigi ha preso 219 ordinanze legate alle mobilitazioni.", "who": ["franceinfo"]}
+    {"text": "Il 14 novembre hanno manifestato 106.000 persone secondo il ministero dell'Interno e 200.000 secondo gli organizzatori.", "who": ["franceinfo", "France 24"]},
+    {"text": "I cortei di Parigi e Lione sono stati dominati dal rifiuto del progetto di legge sulla presunzione di legittima difesa per le forze dell'ordine.", "who": ["Le Monde"]},
+    {"text": "Una squadra di BFMTV è stata aggredita a Lione a margine della mobilitazione; il prefetto ha condannato le aggressioni ai giornalisti.", "who": ["franceinfo", "France 24"]},
+    {"text": "I gilet gialli chiamano un sesto atto per sabato 21 novembre e saranno presenti il 17 novembre.", "who": ["franceinfo"]},
+    {"text": "Più di 200 persone sono state fermate.", "who": ["Die Zeit"]}
   ],
-  "view": "Si può dire con certezza che la mobilitazione è convocata, con un dispositivo di sicurezza molto ampio. Le cifre sui partecipanti sono stime delle autorità e non dati finali.\n\nConta perché è la quinta giornata di fila e unisce richieste diverse, dal carovita alla scuola. Da guardare: l'affluenza, eventuali incidenti e la risposta del governo, con lo sciopero del pubblico impiego il 17 novembre.",
+  "view": "Si può dire con certezza che la giornata c'è stata e che le cifre divergono di quasi il doppio: sono stime delle parti, non un conteggio indipendente. L'affluenza è più bassa delle volte precedenti, ma le richieste restano molte e diverse.\n\nConta perché il movimento prosegue da cinque sabati e ha già altre date fissate. Da guardare: lo sciopero del 17 novembre, il sesto atto del 21 e la risposta del governo sul testo sulla legittima difesa.",
   "open": [
-    "Quanti manifestanti ci saranno davvero a Parigi e nel resto del Paese?",
-    "Ci saranno incidenti o arresti?",
-    "Il governo cambierà approccio dopo la giornata?"
+    "Quanti sono stati i fermati e quanti gli incidenti, secondo dati ufficiali?",
+    "Il governo cambierà il testo sulla legittima difesa?",
+    "Il calo di affluenza continuerà il 17 e il 21 novembre?"
   ],
   "sources": [
-    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-du-14-novembre-suivez-la-journee-de-mobilisation-a-l-appel-de-gilets-jaunes-et-d-organisations-de-jeunesse_8281187.html", "angle": "Dal feed: cortei previsti, manifestanti attesi e 70.000 agenti; le ordinanze dei prefetti.", "date": "2026-11-14"},
-    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261114-manifestations-du-14-novembre-en-direct-des-revendications-diverses-en-amont-de-l-acte-v", "angle": "Dal feed: percorso parigino e richieste diverse.", "date": "2026-11-14"}
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/societe/manifestations/manifestations-du-14-novembre-106-000-personnes-ont-defile-en-france-selon-l-interieur-200-000-d-apres-les-organisateurs_8282837.html", "angle": "Dal feed: le cifre dell'Interno e degli organizzatori; aggressione a BFMTV; gilet gialli il 21.", "date": "2026-11-14"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261114-acte-v-du-mouvement-social-des-revendications-vari%C3%A9es-une-affluence-en-baisse", "angle": "Dal feed: affluenza in calo, incidenti e giornalisti aggrediti.", "date": "2026-11-14"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/societe/article/2026/11/15/manifestations-du-14-novembre-a-paris-comme-a-lyon-des-corteges-heteroclites-mais-determines_6810709_3224.html", "angle": "Dal feed: il rifiuto del «permesso di uccidere» domina i cortei.", "date": "2026-11-15"},
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-frankreich-paris-schueler-polizei", "angle": "Dal feed: oltre 200 fermati.", "date": "2026-11-14"}
   ],
   "firstSeen": "2026-11-14T09:48:20+01:00",
-  "updated": "2026-11-14T09:48:20+01:00",
-  "change": "",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "Bilancio del quinto sabato: 106.000-200.000 manifestanti, affluenza in calo; sesto atto il 21 novembre.",
   "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Bilancio del 14 novembre: 106.000-200.000 manifestanti, affluenza in calo; i gilet gialli convocano il 21 novembre."},
     {"at": "2026-11-14T09:48:20+01:00", "text": "Prima notizia: quinto sabato di manifestazioni di giovani e gilet gialli in Francia."}
   ],
   "tags": ["Francia", "Proteste", "Potere d'acquisto"],

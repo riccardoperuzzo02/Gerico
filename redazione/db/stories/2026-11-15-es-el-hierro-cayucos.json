@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-15-es-el-hierro-cayucos",
+  "title": "Spagna: oltre 6.000 migranti arrivati a El Hierro in novembre",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "El Hierro"},
+  "rank": 504,
+  "summary": "Secondo El País più di 6.000 persone sono arrivate in novembre al porto di La Restinga, a El Hierro, un record. El Mundo parla di 834 arrivi tra venerdì sera e sabato.",
+  "article": "L'isola di El Hierro, nelle Canarie, vive un afflusso di barche di migranti senza precedenti, scrivono El País ed El Mundo. Secondo El País più di 6.000 persone sono arrivate in novembre al porto di La Restinga, un dato che supera tutte le cifre precedenti. Vengono trasferite nella Penisola.\n\nEl Mundo riferisce che due cayucos, imbarcazioni di legno, con 834 persone sono arrivati a La Restinga tra la notte di venerdì e sabato 14 novembre. A bordo c'erano 24 donne e 21 persone che potrebbero essere minorenni.\n\nEl País racconta i primi messaggi dei migranti alle famiglie appena sbarcati.\n\nLe informazioni vengono dai testi dei feed delle due testate, non da articoli letti per intero: le cifre sono dei giornali e non è indicata la fonte ufficiale dei dati.",
+  "facts": [
+    {"text": "Più di 6.000 persone sono arrivate a La Restinga, El Hierro, in novembre, oltre ogni cifra precedente.", "who": ["El País"]},
+    {"text": "Due cayucos con 834 persone, tra cui 24 donne e 21 possibili minorenni, sono arrivati tra venerdì sera e sabato.", "who": ["El Mundo"]},
+    {"text": "I migranti vengono trasferiti nella Penisola.", "who": ["El País"]}
+  ],
+  "view": "Si può dire con certezza che gli arrivi a El Hierro sono molto alti, con due fonti concordi sul fatto. Le cifre non hanno una fonte ufficiale nei testi letti e restano da confermare.\n\nConta perché gli arrivi coincidono con la campagna elettorale per le politiche del 29 novembre e mettono sotto pressione l'accoglienza nelle isole. Da guardare: i dati del ministero dell'Interno e come i partiti usano il tema.",
+  "open": [
+    "Qual è il dato ufficiale del ministero dell'Interno sugli arrivi di novembre?",
+    "Quanti minorenni sono arrivati e dove saranno accolti?",
+    "Come risponde il governo all'emergenza di accoglienza a El Hierro?"
+  ],
+  "sources": [
+    {"name": "El País", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://elpais.com/espana/2026-11-15/mensajes-al-bajar-del-cayuco-mama-soy-modou-cogi-un-barco-llegue-a-espana.html", "angle": "Dal feed: più di 6.000 arrivi in novembre e trasferimenti nella Penisola.", "at": "2026-11-15T04:30:01+00:00"},
+    {"name": "El Mundo", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.elmundo.es/espana/2026/11/14/6af82fc5e9cf4ab47b8b457c.html", "angle": "Dal feed: 834 persone su due cayucos in 24 ore.", "at": "2026-11-14T19:24:35+00:00"}
+  ],
+  "firstSeen": "2026-11-15T09:48:31+01:00",
+  "updated": "2026-11-15T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: più di 6.000 migranti arrivati a El Hierro in novembre."}
+  ],
+  "tags": ["Spagna", "Immigrazione", "Canarie"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

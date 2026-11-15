@@ -1,0 +1,62 @@
+{
+  "title": "Gaza: Israele dice di aver ucciso il comandante della brigata Rafah di Hamas",
+  "section": "mondo",
+  "rank": 21,
+  "status": "live",
+  "summary": "L'esercito israeliano e lo Shin Bet dicono di aver colpito con un drone un alto comandante di Hamas a Khan Younis. Hamas conferma la morte di un membro di alto rango dell'ala militare.",
+  "article": "L'esercito israeliano e lo Shin Bet hanno detto in una nota congiunta di aver colpito con un drone un alto comandante militare di Hamas ad Al-Mawasi, nell'area di Khan Younis, nel sud di Gaza, riferisce Al Jazeera. Il Times of Israel scrive che l'Idf ha identificato l'uomo in Samir Abu Younis, ultimo comandante della brigata Rafah di Hamas, ucciso in un attacco notturno. Reuters riporta che Hamas ha confermato la morte di un alto comandante, che secondo l'agenzia avrebbe avuto un ruolo nella pianificazione dell'attacco del 7 ottobre 2023.\n\nSecondo Al Jazeera, Hamas ha definito l'ucciso «un membro di alto rango della sua ala militare». L'attacco ha colpito una tenda che ospitava sfollati e ha ferito altre due persone, portate al complesso medico Nasser, secondo la stessa fonte.\n\nIl ministero della Salute di Gaza, citato da Al Jazeera, indica 16 morti e 68 feriti nelle ultime 48 ore. Dal cessate il fuoco dell'11 ottobre 2025 il ministero conta almeno 1.643 morti e 5.964 feriti, e dall'ottobre 2023 almeno 74.695 morti e 176.093 feriti. Al-Mawasi era stata indicata come zona umanitaria ed è stata colpita più volte, scrive Al Jazeera.\n\nSabato 14 novembre l'Unione europea ha chiesto un accesso umanitario immediato a Gaza e ha invitato Israele a consentire il lavoro dell'Onu e delle sue agenzie, riferisce Al Jazeera.",
+  "facts": [
+    {"text": "Idf e Shin Bet dicono di aver colpito con un drone un alto comandante di Hamas ad Al-Mawasi, vicino a Khan Younis.", "who": ["Al Jazeera", "Reuters"]},
+    {"text": "Per il Times of Israel l'ucciso è Samir Abu Younis, comandante della brigata Rafah.", "who": ["Times of Israel"]},
+    {"text": "Hamas conferma la morte di un membro di alto rango dell'ala militare.", "who": ["Al Jazeera", "Reuters"]},
+    {"text": "Per il ministero della Salute di Gaza dal cessate il fuoco dell'11 ottobre 2025 i morti sono almeno 1.643.", "who": ["Al Jazeera"]}
+  ],
+  "view": "È confermato dalle due parti che un alto comandante è morto; l'identità precisa viene per ora dal Times of Israel e dall'Idf. I bilanci di Gaza sono del ministero della Salute locale e non hanno verifica indipendente nelle fonti lette.\n\nConta perché l'attacco cade in una tregua formalmente in vigore e mentre i negoziati regionali sull'Iran sono delicati. Da guardare: la risposta di Hamas, il bilancio dei prossimi giorni e le mosse dell'Ue sull'accesso umanitario.",
+  "open": [
+    "Hamas dirà chi sostituisce il comandante ucciso?",
+    "Quante persone sono state ferite o uccise oltre al comandante?",
+    "Quali conseguenze avrà il raid sulla tregua in vigore dall'ottobre 2025?"
+  ],
+  "sources": [
+    {
+      "name": "Al Jazeera",
+      "kind": "tv",
+      "country": "Qatar",
+      "area": "Medio Oriente",
+      "url": "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza",
+      "angle": "Versione di Idf e Shin Bet, di Hamas, bilanci del ministero della Salute di Gaza.",
+      "date": "2026-11-15"
+    },
+    {
+      "name": "Times of Israel",
+      "kind": "giornale",
+      "country": "Israele",
+      "area": "Medio Oriente",
+      "url": "https://www.timesofisrael.com/liveblog_entry/idf-confirms-hamass-rafah-brigade-commander-killed-in-overnight-strike/",
+      "angle": "L'Idf identifica l'ucciso come Samir Abu Younis, comandante della brigata Rafah.",
+      "date": "2026-11-15"
+    },
+    {
+      "name": "Reuters",
+      "kind": "agenzia",
+      "country": "Regno Unito",
+      "area": "Europa",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/15/israeli-military-says-it-struck-senior-commander-in-hamas-military-wing",
+      "angle": "Conferma di Hamas e ruolo attribuito nell'attacco del 7 ottobre 2023.",
+      "at": "2026-11-15T07:07:00+01:00"
+    }
+  ],
+  "firstSeen": "2026-11-15T07:21:00+01:00",
+  "updated": "2026-11-15T07:21:00+01:00",
+  "change": "",
+  "tags": ["Gaza", "Israele", "Hamas"],
+  "themes": [],
+  "places": ["PS", "IL"],
+  "city": {"name": "Khan Younis", "lat": 31.35, "lon": 34.3},
+  "photo": {"wiki": "it", "title": "Khan Yunis"},
+  "history": [
+    {"at": "2026-11-15T07:21:00+01:00", "text": "Prima notizia: Israele dice di aver ucciso un alto comandante di Hamas a Khan Younis."}
+  ],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,6 +1,6 @@
 {
-  "article": "Donald Trump, Xi Jinping e Vladimir Putin terranno il primo vertice a tre a Shenzhen, in Cina, a margine del vertice Apec, scrive Al Jazeera. La Casa Bianca lo ha annunciato nella notte, riferisce l'Ansa; il New York Post, citato da Reuters, parlava di un incontro giovedì. L'Apec è in programma il 18 e 19 novembre, secondo l'Ansa.\n\nSecondo la Casa Bianca, al centro dei colloqui ci saranno l'Iran e il controllo degli armamenti nucleari, non la guerra in Ucraina, riferiscono Ansa, Kyiv Independent e Reuters. Un alto funzionario dell'amministrazione ha detto a Reuters di non aspettarsi un accordo e ha descritto l'incontro come l'avvio di un dialogo, scrive Al Jazeera. Trump ha parlato della possibilità di un'intesa sugli arsenali atomici dei tre paesi, sempre secondo Al Jazeera. Elon Musk accompagnerà Trump in Cina ma non parteciperà all'incontro.\n\nIl portavoce del Cremlino Dmitry Peskov ha respinto il paragone con la conferenza di Yalta del 1945, dicendo che eventuali intese non potranno essere imposte ad altri, e ha definito l'incontro «estremamente significativo», riporta Al Jazeera. Il giorno prima il consigliere del Cremlino Yuri Ushakov aveva detto a Kyiv Independent che Trump e Putin avrebbero discusso a Shenzhen anche l'accordo sull'Ucraina. L'articolo di Al Jazeera non riporta dichiarazioni ufficiali di Pechino. Il presidente ucraino Volodymyr Zelensky teme, secondo la stessa fonte, che il vertice diventi la sede per discutere un accordo sull'Ucraina alle spalle di Kiev.\n\nIl trattato New START tra Stati Uniti e Russia è scaduto a febbraio 2026, ricorda Al Jazeera: Trump ha respinto la proposta russa di prorogarlo di un anno e ha chiesto un nuovo accordo che includa anche la Cina. Per la prima volta in oltre 50 anni, scrive l'emittente, le due maggiori potenze nucleari non hanno limiti vincolanti ai rispettivi arsenali.",
-  "change": "",
+  "article": "Il Cremlino ha confermato il vertice a tre e ne ha indicato la data: il portavoce Dmitry Peskov ha detto, secondo la Tass citata dall'Ansa, che è stato raggiunto un accordo per un incontro trilaterale il 19 novembre a Shenzhen. L'agenda non è stata indicata nell'articolo dell'Ansa.\n\nDonald Trump, Xi Jinping e Vladimir Putin terranno il primo vertice a tre a Shenzhen, in Cina, a margine del vertice Apec, scrive Al Jazeera. La Casa Bianca lo ha annunciato nella notte, riferisce l'Ansa; il New York Post, citato da Reuters, parlava di un incontro giovedì. L'Apec è in programma il 18 e 19 novembre, secondo l'Ansa.\n\nSecondo la Casa Bianca, al centro dei colloqui ci saranno l'Iran e il controllo degli armamenti nucleari, non la guerra in Ucraina, riferiscono Ansa, Kyiv Independent e Reuters. Un alto funzionario dell'amministrazione ha detto a Reuters di non aspettarsi un accordo e ha descritto l'incontro come l'avvio di un dialogo, scrive Al Jazeera. Trump ha parlato della possibilità di un'intesa sugli arsenali atomici dei tre paesi, sempre secondo Al Jazeera. Elon Musk accompagnerà Trump in Cina ma non parteciperà all'incontro.\n\nIl portavoce del Cremlino Dmitry Peskov ha respinto il paragone con la conferenza di Yalta del 1945, dicendo che eventuali intese non potranno essere imposte ad altri, e ha definito l'incontro «estremamente significativo», riporta Al Jazeera. Il giorno prima il consigliere del Cremlino Yuri Ushakov aveva detto a Kyiv Independent che Trump e Putin avrebbero discusso a Shenzhen anche l'accordo sull'Ucraina. L'articolo di Al Jazeera non riporta dichiarazioni ufficiali di Pechino. Il presidente ucraino Volodymyr Zelensky teme, secondo la stessa fonte, che il vertice diventi la sede per discutere un accordo sull'Ucraina alle spalle di Kiev.\n\nIl trattato New START tra Stati Uniti e Russia è scaduto a febbraio 2026, ricorda Al Jazeera: Trump ha respinto la proposta russa di prorogarlo di un anno e ha chiesto un nuovo accordo che includa anche la Cina. Per la prima volta in oltre 50 anni, scrive l'emittente, le due maggiori potenze nucleari non hanno limiti vincolanti ai rispettivi arsenali.",
+  "change": "Il Cremlino conferma il vertice a tre il 19 novembre a Shenzhen.",
   "divergences": [],
   "notCovered": [],
   "facts": [
@@ -28,12 +28,16 @@
   "firstSeen": "2026-11-14T07:21:00+01:00",
   "history": [
     {
+      "at": "2026-11-15T07:21:00+01:00",
+      "text": "Il Cremlino, tramite Peskov, conferma l'incontro trilaterale il 19 novembre a Shenzhen."
+    },
+    {
       "at": "2026-11-14T07:21:00+01:00",
       "text": "Prima notizia: la Casa Bianca annuncia il vertice Trump-Xi-Putin a Shenzhen a margine dell'Apec."
     }
   ],
   "open": [
-    "Quando si terrà esattamente l'incontro e in quale formato?",
+    "Quale sarà il formato dell'incontro del 19 novembre?",
     "Pechino confermerà la partecipazione e i temi?",
     "L'Ucraina sarà discussa, come dice il Cremlino, o esclusa, come dice la Casa Bianca?"
   ],
@@ -80,11 +84,11 @@
     }
   ],
   "status": "live",
-  "summary": "La Casa Bianca annuncia il primo vertice a tre tra Trump, Xi e Putin a Shenzhen, a margine dell'Apec. Secondo Washington si parlerà di Iran e armi nucleari, non di Ucraina.",
+  "summary": "Il Cremlino conferma il primo vertice a tre tra Trump, Xi e Putin a Shenzhen il 19 novembre. Secondo la Casa Bianca si parlerà di Iran e armi nucleari, non di Ucraina.",
   "tags": ["Stati Uniti", "Cina", "Russia", "Armi nucleari"],
   "themes": ["iran-usa", "ucraina"],
   "title": "Cina: Trump, Xi e Putin si vedranno a Shenzhen a margine dell'Apec",
-  "updated": "2026-11-14T07:21:00+01:00",
+  "updated": "2026-11-15T07:21:00+01:00",
   "view": "È certo l'annuncio della Casa Bianca e il luogo. Data precisa e agenda restano in parte aperte: Washington esclude l'Ucraina dai temi, il Cremlino ne parla, e Pechino non risulta aver detto nulla nelle fonti lette.\n\nConta perché mette allo stesso tavolo le tre maggiori potenze nucleari senza limiti vincolanti dopo la scadenza del New START. Da guardare: conferme di Pechino, l'ordine del giorno e la reazione europea e ucraina.",
   "photo": {"wiki": "it", "title": "Shenzhen"}
 }

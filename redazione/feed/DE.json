@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-15T07:17:34+00:00",
+ "asOf": "2026-11-15T09:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Jugendproteste: Grünen-Chef Banaszak fordert ernsthaften Umgang mit Jugendprotesten",
+   "desc": "Junge Menschen dürfen nicht als Chaoten abgestempelt werden, sagt der Grünen-Vorsitzende Felix Banaszak. Wer das tue, dürfe sich nicht über Politikverdrossenheit wundern.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/felix-banaszak-bildungsproteste-jugend-ausschreitungen-gxe",
+   "at": "2026-11-15T09:11:11+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Heils Kandidatur für SPD-Vorsitz aktiviert Klingbeils Fürsprecher",
+   "desc": "Der Erste wagt sich aus der Deckung: Ex-Arbeitsminister Heil will die SPD führen. Was macht Parteichef Klingbeil? Tritt er beim Parteitag im Januar erneut für den Vorsitz an? Nun sprachen sich weitere namhafte SPD-Politiker für ihn aus.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/spd-spitze-klingbeil-heil-100.html",
+   "at": "2026-11-15T09:09:58+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krankenkassenreform: SPD und Grüne lehnen vermehrte Selbstzahlertermine in Arztpraxen ab",
+   "desc": "Durch die Krankenkassenreform müssten mehr Patienten selbst für Termine zahlen, warnen Ärzte. Die SPD verweist auf Termingarantien, auch von den Grünen kommt Kritik.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/selbstzahler-termine-arztpraxen-kassenpatienten-spd-lars-klingbeil-gxe",
+   "at": "2026-11-15T08:56:10+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Fraktionschef Matthias Miersch: »Schallende Ohrfeige« – nur drei Prozent junger Wähler halten zur SPD",
+   "desc": "Nur noch drei Prozent der jungen Menschen halten die SPD für ihre Partei. Fraktionschef Miersch übt Selbstkritik und zeigt Verständnis für die Gen-Z-Proteste.",
+   "url": "https://www.spiegel.de/politik/deutschland/fraktionschef-matthias-miersch-schallende-ohrfeige-nur-drei-prozent-junger-waehler-halten-zur-spd-a-9758ede1-e55f-4dc7-939a-f37c3920d657",
+   "at": "2026-11-15T08:44:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Javier Milei: Argentiniens Präsident Javier Milei will sich zur Wiederwahl stellen",
+   "desc": "Bei der Präsidentenwahl in Argentinien im Oktober 2027 will der amtierende Präsident Javier Milei wieder antreten. Er steht für eine marktradikale »Kettensägen-Politik«.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/javier-milei-praesident-argentinien-wiederwahl-gxe",
+   "at": "2026-11-15T07:56:46+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Kita: Städtetag warnt vor Qualitätsverlust durch neues Startchancengesetz",
+   "desc": "Der Bund plant bessere Kitas, bezahlen sollen die Städte. Deren Chef warnt: Mehr Qualität mit weniger Geld funktioniere nicht. Nun droht Streit im Bundesrat über das neue Kita-Startchancengesetz.",
+   "url": "https://www.spiegel.de/politik/deutschland/kita-staedtetag-warnt-vor-qualitaetsverlust-durch-neues-startchancengesetz-a-b36952d9-c7fa-4c96-96de-7f549279a26d",
+   "at": "2026-11-15T07:24:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Irankrieg: Iran beschießt erneut US-Stützpunkt in Bahrain",
@@ -101,15 +143,8 @@
    "at": "2026-11-14T19:29:28+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Abtreibungsverbot in Liechtenstein: »Darf ich noch meine letzte Frage stellen? Ich rede sehr schnell«",
-   "desc": "In Liechtenstein sind Abtreibungen verboten. Der Erbprinz unterbindet jeden Versuch der Legalisierung. Warum? Unser Autor bekam drei Minuten Zeit für ein Interview.",
-   "url": "https://www.zeit.de/politik/2026-11/abtreibungsverbot-liechtenstein-erbprinz-alois-veto",
-   "at": "2026-11-14T19:29:28+00:00"
-  },
-  {
    "source": "Der Spiegel",
-   "title": "SPD: Hubertus Heil will für Parteivorsitz kandidieren",
+   "title": "SPD: Hubertus Heil kündigt Kandidatur für Parteivorsitz an",
    "desc": "Bei der SPD zeichnet sich ein Machtkampf ab: Ex-Arbeitsminister Hubertus Heil will sich beim Bundesparteitag im Januar zum Chef der Sozialdemokraten wählen lassen. Damit wächst der Druck auf Amtsinhaber Lars Klingbeil.",
    "url": "https://www.spiegel.de/politik/deutschland/spd-hubertus-heil-will-fuer-parteivorsitz-kandidieren-a-f9209fb9-0404-43be-b66d-b2207e7e6aaa",
    "at": "2026-11-14T18:28:00+00:00"
@@ -120,20 +155,6 @@
    "desc": "Mitte Januar wird auf einem Bundesparteitag die komplette Führung der SPD neu gewählt. Ex-Arbeitsminister Heil hat laut ARD-Hauptstadtstudio jetzt als Erster offiziell seine Kandidatur für den Vorsitz angekündigt. Von Moritz Rödle.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-vorsitz-kandidatur-100.html",
    "at": "2026-11-14T18:12:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Greenpeace-Aktion: Protest gegen Schleppnetze gefährdet geplanten Offshore-Windpark",
-   "desc": "Umweltschützer haben Felsblöcke in der Nordsee versenkt, um Schleppnetzfischer zu stoppen. Die Steine liegen nun im Weg eines Windparkprojekts der britischen Regierung.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/greenpeace-nordsee-boulder-vorfahr-norfolk-vanguard-bottom-trawling",
-   "at": "2026-11-14T17:46:56+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Erneuerbare-Energien-Gesetz: Union und SPD weiter uneins bei Reform der Ökostromförderung",
-   "desc": "Die SPD verkündet den Erhalt der Einspeisevergütung für Solarstrom. Die Union widerspricht: Die Vereinbarung sei abhängig vom gesamten Netzpaket, das noch nicht steht.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/eeg-reform-einspeiseverguetung-solaranlagen-netzpaket-spd-cdu-gxe",
-   "at": "2026-11-14T17:25:56+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -183,20 +204,6 @@
    "desc": "Seit einem Monat ist bundesweit der Konsum von Alkohol an Bahnhöfen untersagt. Die Deutsche Bahn zeigt sich in einer ersten Bilanz zufrieden. Weniger Müll, weniger Konflikte - die Situation habe sich für Reisende und Mitarbeitende verbessert.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/bahn-alkohol-verbot-bilanz-100.html",
    "at": "2026-11-14T10:07:05+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kassenärzte-Chef erwartet mehr Selbstzahler-Termine für gesetzlich Versicherte",
-   "desc": "Wer längere Wartezeiten als gesetzlich Versicherter vermeiden will, muss künftig Behandlungen auch aus der eigenen Tasche zahlen - so die Einschätzung des Kassenärzte-Chefs. Grund seien die kürzlich beschlossenen Honorarkürzungen.",
-   "url": "https://www.tagesschau.de/inland/gesetzlich-versicherte-behandlung-selbstzahler-100.html",
-   "at": "2026-11-14T08:15:06+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ben Berndt und sein Podcast »ungeskriptet«: »Ob das alles stimmt, steht auf einem anderen Blatt«",
-   "desc": "Ben Berndt verspricht Gespräche ohne Tabus und alternative Sichtweisen jenseits klassischer Medien. Millionen hören zu. Doch wo alles infrage gestellt werden darf, muss am Ende auch nichts mehr stimmen.",
-   "url": "https://www.spiegel.de/politik/deutschland/ben-berndt-und-sein-podcast-ungescriptet-ob-das-alles-stimmt-steht-auf-einem-anderen-blatt-a-be50afde-179c-4244-ac1b-b6378053361c",
-   "at": "2026-11-14T07:59:00+00:00"
   }
  ]
 }

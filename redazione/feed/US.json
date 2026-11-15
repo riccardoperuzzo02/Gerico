@@ -1,7 +1,14 @@
 {
  "code": "US",
- "asOf": "2026-11-15T07:17:34+00:00",
+ "asOf": "2026-11-15T09:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+   "desc": "The Singapore-based cloud computing company has faced heightened scrutiny since reports linked Nvidia's Jensen Huang to former Megaspeed executive Alice Huang.",
+   "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+   "at": "2026-11-15T08:34:46+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Oregon community suspects foul play when beloved shopkeeper disappears",
@@ -435,20 +442,6 @@
    "desc": "The lawmaker set to lead the House Budget Committee outlined Democrats’ options for forcing a negotiation with President Trump on an economic package to bring down living costs.",
    "url": "https://www.nytimes.com/2026/11/14/us/politics/house-democrats-affordability-costs-budget.html",
    "at": "2026-11-14T10:01:49+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Microsoft apologizes for massive outage that took down Outlook and other 365 services",
-   "desc": "A Microsoft outage on Thursday and Friday affected users of services like Outlook, Teams and 365.",
-   "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html",
-   "at": "2026-11-14T08:11:28+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Microsoft says it \"restored service\" after major worldwide outage",
-   "desc": "A Microsoft outage involving services like Outlook and Teams impacted many users, companies and government services.",
-   "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/",
-   "at": "2026-11-14T07:32:05+00:00"
   }
  ]
 }

@@ -1,13 +1,69 @@
 {
  "code": "FR",
- "asOf": "2026-11-15T07:17:34+00:00",
+ "asOf": "2026-11-15T09:17:34+00:00",
  "items": [
   {
+   "source": "Le Monde",
+   "title": "« Sans les thermes, Royat est morte » : le possible déremboursement des cures thermales menace un modèle déjà fragilisé",
+   "desc": "Dans la petite ville du Puy-de-Dôme, comme dans les autres stations, le thermalisme est essentiel aux hôtels et aux commerces. En proposant de transférer 200 millions d’euros de prise en charge des cures aux complémentaires de santé, le gouvernement a provoqué une fronde chez les professionnels et les communes concernés.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/15/sans-les-thermes-royat-est-morte-le-possible-deremboursement-des-cures-thermales-menace-un-modele-deja-fragilise_6811001_3234.html",
+   "at": "2026-11-15T09:00:17+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Nonna Mayer, politiste : « Le contexte électoral est particulièrement dramatique sur les plans intérieur et international »",
+   "desc": "Les candidats à l’élection présidentielle de 2027 vont devoir se positionner face aux nombreux enjeux qui préoccupent les Français : pouvoir d’achat, système social, insécurité, bouleversements climatiques, observe la politiste dans un entretien au « Monde ».",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/15/nonna-mayer-politiste-le-contexte-electoral-est-particulierement-dramatique-sur-les-plans-interieur-et-international_6811000_3232.html",
+   "at": "2026-11-15T09:00:17+00:00"
+  },
+  {
    "source": "franceinfo",
-   "title": "Le président veut \"maintenir l'Ukraine en situation de donner des coups\", alors que \"les Américains s'occupent de l'enfoncer\", affirme l'entourage d'Emmanuel Macron",
-   "desc": "Les Américains \"se prétendent être des médiateurs\", mais ils ne travaillent pas en ce sens, observe l'entourage d'Emmanuel Macron auprès de France Inter.",
+   "title": "Les revalorisations annoncées pour les plus bas salaires coûteront \"un peu plus d'un milliard d'euros\" aux finances publiques, déclare le ministre David Amiel",
+   "desc": "David Amiel confirme, dans le \"8h30 franceinfo\" dimanche, une augmentation \"pour les plus bas salaires de la fonction publique\" représentant \"350 euros brut par an\".",
+   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/il-y-aura-bien-une-hausse-des-points-pour-les-plus-bas-salaires-de-la-fonction-publique-confirme-le-ministre-david-amiel_8283254.html",
+   "at": "2026-11-15T08:49:24+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le gouvernement interdit la vente de mortiers d'artifice jusqu'au 27 novembre",
+   "desc": "L'exécutif invoque la prévention des \"risques de troubles graves à l'ordre public lors des blocages en cours devant des lycées et des universités, ainsi qu'à l'occasion des manifestations\".",
+   "url": "https://www.franceinfo.fr/faits-divers/le-gouvernement-interdit-la-vente-de-mortiers-d-artifice-jusqu-au-27-novembre_8283236.html",
+   "at": "2026-11-15T08:29:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une septuagénaire portée disparue à Candillargues après les intempéries dans l'Hérault",
+   "desc": "Les sapeurs-pompiers ont effectué une centaine d'interventions en raison des fortes pluies qui ont secoué l'est du département.",
+   "url": "https://www.franceinfo.fr/faits-divers/une-septuagenaire-disparue-a-candillargues-apres-les-intemperies-dans-l-herault_8283239.html",
+   "at": "2026-11-15T07:59:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Pour le président, la position de Marine Le Pen sur l'Ukraine \"est antipatriotique et irréaliste\", déclare l'entourage d'Emmanuel Macron",
+   "desc": "Le chef de l'Etat dénonce des \"candidats qui passent leur temps à vomir les Européens, à dénoncer les Ukrainiens\", a déclaré l'entourage d'Emmanuel Macron à France Inter.",
    "url": "https://www.franceinfo.fr/politique/emmanuel-macron/le-president-veut-maintenir-l-ukraine-en-situation-de-donner-des-coups-alors-que-les-americains-s-occupent-de-l-enfoncer-affirme-l-entourage-d-emmanuel-macron_8283194.html",
-   "at": "2026-11-15T06:37:50+00:00"
+   "at": "2026-11-15T07:48:43+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Sommet de la francophonie : Emmanuel Macron appelle à l’« unité » et au « consensus » face aux tensions entre la RDC et le Rwanda",
+   "desc": "Après huit ans et deux mandats de Louise Mushikiwabo, Kinshasa, qui accuse Kigali de soutenir le groupe armé rebelle du M23 dans ses provinces de l’Est, s’oppose à la reconduction de la Rwandaise à la tête de l’Organisation internationale de la francophonie.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/15/somment-de-la-francophonie-emmanuel-macron-appelle-a-l-unite-et-au-consensus-face-aux-tensions-entre-la-rdc-et-le-rwanda_6810995_3210.html",
+   "at": "2026-11-15T07:45:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Que faut-il attendre du sommet inédit entre Xi Jinping, Vladimir Poutine et Donald Trump, prévu jeudi en Chine ?",
+   "desc": "Selon les présidences américaine et russe, les dirigeants de la Chine, de la Russie et des Etats-Unis se retrouveront à Shenzhen. Au-delà du symbole, les experts ne s'attendent pas à des annonces importantes.",
+   "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/que-faut-il-attendre-du-sommet-inedit-entre-xi-jinping-vladimir-poutine-et-donald-trump-attendu-jeudi-en-chine_8282519.html",
+   "at": "2026-11-15T07:24:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des câbles en cuivre vétustes à l'origine des perturbations de milliers de vols aux Etats-Unis, selon l'administration Trump",
+   "desc": "Le remplacement de câbles vétustes a \"provoqué des problèmes dans la communication avec les avions\" et aussi sur des radars, a détaillé samedi le ministre des Transports américain.",
+   "url": "https://www.franceinfo.fr/monde/usa/des-cables-en-cuivre-vetustes-a-l-origine-des-perturbations-de-milliers-de-vols-aux-etats-unis-selon-l-administration-trump_8283218.html",
+   "at": "2026-11-15T07:14:19+00:00"
   },
   {
    "source": "franceinfo",
@@ -15,6 +71,13 @@
    "desc": "Jared Kushner, gendre de Donald Trump et émissaire de Washington sur la guerre en Ukraine, a simplement affirmé sur X que \"plusieurs nouvelles idées ont émergé\" après deux jours de pourparlers entre l'Ukraine et la Russie à Abou Dhabi, sous l'égide des Etats-Unis.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-volodymy-zelensky-affirme-que-les-etats-unis-ont-propose-des-concessions-territoriales-en-echange-d-une-adhesion-de-kiev-a-l-otan_8282333.html",
    "at": "2026-11-15T06:19:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Les Nations unies vont-elles se vendre au plus offrant ? »",
+   "desc": "La campagne des Emirats arabes unis pour s’emparer de la direction de l’ONU menace les fondements mêmes du multilatéralisme, estime Jean-Pierre Filiu dans sa chronique.",
+   "url": "https://www.lemonde.fr/un-si-proche-orient/article/2026/11/15/les-nations-unies-vont-elles-se-vendre-au-plus-offrant_6810991_6116995.html",
+   "at": "2026-11-15T06:00:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -32,17 +95,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "L’Arabie saoudite, un royaume pris en étau entre deux guerres, débordé par l’escalade des rivalités régionales",
-   "desc": "Cible des représailles iraniennes et rattrapée par la guerre au Yémen, l’Arabie saoudite voit sa sécurité et ses appétits économiques mis à mal. Face à une protection américaine devenue incertaine et à la nouvelle dimension stratégique et militaire d’Israël, Riyad cherche à s’extraire de l’arc des conflits moyen-orientaux, mais peine à trouver les alliés nécessaires.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/15/l-arabie-saoudite-un-royaume-pris-en-etau-entre-deux-guerres-deborde-par-l-escalade-des-rivalites-regionales_6810988_3210.html",
-   "at": "2026-11-15T05:30:01+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Le lent déclin économique de la France face au reste de l’Europe",
    "desc": "L’Hexagone affiche l’une des plus faibles croissances européennes cette année. Un phénomène qui accentue la chute du pays dans le classement européen en PIB par habitant, désormais en dessous de la moyenne.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/15/le-lent-declin-economique-de-la-france-face-au-reste-de-l-europe_6810984_3234.html",
    "at": "2026-11-15T05:15:07+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Les élections au Brésil, aux Etats-Unis et en Israël ont vu la défaite des partis qui ont misé sur la provocation sur les réseaux sociaux »",
+   "desc": "Si les récentes campagnes électorales ont vu la multiplication d’attaques en ligne et de contenus générés par IA, les résultats électoraux ont démontré que tout l’activisme du monde sur les réseaux ne compense pas un mauvais programme ou un bilan catastrophique, observe, dans sa chronique, Damien Leloup, journaliste au service Pixels du « Monde ».",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/15/les-elections-au-bresil-aux-etats-unis-et-en-israel-ont-vu-la-defaite-des-partis-qui-ont-mise-sur-la-provocation-sur-les-reseaux-sociaux_6810983_3232.html",
+   "at": "2026-11-15T05:15:06+00:00"
   },
   {
    "source": "franceinfo",
@@ -50,6 +113,20 @@
    "desc": "La critique culturelle Christelle Bakima-Poundza livre un \"portrait d'une France aux rêves illimités\".",
    "url": "https://www.franceinfo.fr/culture/livres/aya-pour-l-exemple-un-essai-hybride-passionnant-sur-aya-nakamura-et-les-cultures-qui-lui-ont-ouvert-la-voie-en-france_8274251.html",
    "at": "2026-11-15T05:05:02+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« La cueillette est désastreuse » : les champignons, affaiblis par la sécheresse, sont de plus en plus rares",
+   "desc": "Dans la forêt domaniale de Hez-Froidmont, dans l’Oise, des mycologues amateurs s’inquiètent d’une raréfaction des champignons. Le déclin affecte ceux dont la partie sous terre est profonde, comme les trompettes-de-la-mort, les chanterelles en tube ou les pieds-de-mouton.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/15/la-cueillette-est-desastreuse-les-champignons-affaiblis-par-la-secheresse-sont-de-plus-en-plus-rares_6810979_3244.html",
+   "at": "2026-11-15T05:00:21+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Pourquoi Claude Monet est-il un peintre incontournable ?",
+   "desc": "A l’occasion d’une exposition consacrée à l’artiste français au Musée de l’Orangerie, retour sur ce qui fait de Claude Monet un des plus grands noms de la peinture, cent ans après sa mort.",
+   "url": "https://www.lemonde.fr/videos/video/2026/11/15/pourquoi-claude-monet-est-il-un-peintre-incontournable_6810978_1669088.html",
+   "at": "2026-11-15T05:00:18+00:00"
   },
   {
    "source": "Le Monde",
@@ -71,20 +148,6 @@
    "desc": "Le judoka a passé son samedi après-midi au salon du Made in France alors que sa campagne connaît déjà des premières turbulences. Au milieu d’une forêt de micros et caméras, le tout récent candidat a tenu à se démarquer du « macronisme ».",
    "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/15/presidentielle-2027-teddy-riner-decouvre-le-combat-politique-entre-popularite-et-agacement_6810907_6205049.html",
    "at": "2026-11-15T04:15:01+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Un commandant de la branche militaire du Hamas tué dans une frappe dans le sud de la bande de Gaza",
-   "desc": "Israël a dit avoir frappé un responsable des brigades Ezzedine Al-Qassam sans le nommer, mais la branche militaire du mouvement islamiste palestinien a confirmé la mort Samir Abu Younis.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/15/un-commandant-de-la-branche-militaire-du-hamas-tue-dans-une-frappe-dans-le-sud-de-la-bande-de-gaza_6810874_3210.html",
-   "at": "2026-11-15T03:57:46+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Au Cap-Vert, modèle de stabilité démocratique, le président sortant José Maria Neves vise un second mandat",
-   "desc": "Parmi les six candidats en lice pour le premier tour, dimanche, le chef de l’Etat part favori face à sa principale rivale, l’ancienne ministre de la justice Joana Rosa Amado, première femme candidate à la présidence de la République du pays.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/15/au-cap-vert-modele-de-stabilite-democratique-le-president-sortant-jose-maria-neves-vise-un-second-mandat_6810808_3212.html",
-   "at": "2026-11-15T01:53:33+00:00"
   },
   {
    "source": "Le Monde",
@@ -136,25 +199,11 @@
    "at": "2026-11-14T20:10:34+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Cyberattaque : Maileva, filiale du groupe La Poste, annonce un vol de données touchant 22 millions de personnes",
-   "desc": "Le groupe a annoncé avoir déposé plainte après cette cyberattaque qui s’est produite mi-septembre. Une enquête judiciaire est en cours.",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/14/cyberattaque-maileva-filiale-du-groupe-la-poste-annonce-un-vol-de-donnees-touchant-22-millions-de-personnes_6810545_4408996.html",
-   "at": "2026-11-14T20:05:18+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Macron dénonce \"ceux qui veulent rationner\" l’aide à l’Ukraine et \"l’obliger à une paix injuste\"",
    "desc": "Dans un message publié sur son compte X, Emmanuel Macron a estimé samedi que \"rationner les moyens de l'Ukraine\" était \"la recette pour la guerre d'après\". Le président de la République a appelé à ne pas diminuer les aides à l'Ukraine, comme la candidate du Rassemblement national Marine Le Pen l'a précédemment envisagé, si elle est élue.",
    "url": "https://www.france24.com/fr/france/20261114-macron-d%C3%A9nonce-ceux-qui-veulent-rationner-l-aide-%C3%A0-l-ukraine-et-l-obliger-%C3%A0-une-paix-injuste",
    "at": "2026-11-14T20:02:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Manifestations du 14 novembre : 106 000 personnes ont défilé en France selon l'Intérieur, 200 000 d'après les organisateurs",
-   "desc": "\"La situation sur le territoire national est demeurée globalement maîtrisée\", a noté le ministère de l'Intérieur.",
-   "url": "https://www.franceinfo.fr/societe/manifestations/manifestations-du-14-novembre-106-000-personnes-ont-defile-en-france-selon-l-interieur-200-000-d-apres-les-organisateurs_8282837.html",
-   "at": "2026-11-14T19:56:35+00:00"
   },
   {
    "source": "franceinfo",
@@ -164,39 +213,11 @@
    "at": "2026-11-14T19:46:22+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "En Israël, Gadi Eisenkot dénonce les « ruses » de Benyamin Nétanyahou, qui plaide pour la formation d’un gouvernement d’union",
-   "desc": "Aux yeux du premier ministre israélien sortant, seul un gouvernement d’union nationale avec Gadi Eisenkot permettra de « garantir la sécurité d’Israël » face à l’Iran, dont il promet d’éliminer la menace « une fois pour toutes ».",
-   "url": "https://www.lemonde.fr/international/article/2026/11/14/en-israel-gadi-eisenkot-denonce-les-ruses-de-benyamin-netanyahou-qui-plaide-pour-la-formation-d-un-gouvernement-d-union_6810511_3210.html",
-   "at": "2026-11-14T19:33:52+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Manifestations du 14 novembre : une équipe de BFMTV agressée en marge de la mobilisation à Lyon",
    "desc": "Le préfet a condamné \"avec la plus grande fermeté les agressions commises aujourd'hui à l'encontre de journalistes\", rappelant que \"la liberté de la presse et le droit d'informer sont des piliers fondamentaux de notre démocratie\".",
    "url": "https://www.franceinfo.fr/societe/manifestations/manifestations-du-14-novembre-une-equipe-de-bfmtv-agressee-en-marge-de-la-mobilisation-a-lyon_8282714.html",
    "at": "2026-11-14T19:22:47+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Antalya, en marge de la COP, des milliers de manifestants en colère contre les atteintes à l’environnement : « Nous ne croyons plus en ceux qui nous dirigent »",
-   "desc": "Près de 10 000 personnes ont défilé, samedi, sous une pluie fine, dans le calme et une ambiance bon enfant, derrière une large banderole écrite en turc : « Contre la COP31, nous défendons la vie ! ».",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/14/a-antalya-en-marge-de-la-cop-des-milliers-de-manifestants-en-colere-contre-les-atteintes-a-l-environnement-nous-ne-croyons-plus-en-ceux-qui-nous-dirigent_6810478_3244.html",
-   "at": "2026-11-14T19:18:06+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Après les élections, Benyamin Nétanyahou réaffirme que seul un gouvernement d'union nationale peut \"garantir la sécurité d'Israël\"",
-   "desc": "Le gouvernement d'union nationale prôné par le Premier ministre israélien sortant rassemblerait les principaux partis juifs sionistes, de la droite au centre, et exclurait les formations arabes israéliennes.",
-   "url": "https://www.franceinfo.fr/monde/israel/elections-legislatives-en-israel/apres-les-elections-benyamin-netanyahou-reaffirme-que-seul-un-gouvernement-d-union-nationale-peut-garantir-la-securite-d-israel_8282762.html",
-   "at": "2026-11-14T19:05:38+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Des milliers de Portugais manifestent contre la crise du logement",
-   "desc": "Cette mobilisation a été lancée à la suite de l'adoption par le Parlement portugais d'un projet de réforme visant notamment à simplifier et accélérer les expulsions de locataires.",
-   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/logement/des-milliers-de-portugais-manifestent-contre-la-crise-du-logement_8282765.html",
-   "at": "2026-11-14T18:23:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -214,31 +235,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Que faut-il attendre du sommet inédit entre Xi Jinping, Vladimir Poutine et Donald Trump, prévu jeudi en Chine ?",
-   "desc": "Selon la présidence américaine, les dirigeants de la Chine, de la Russie et des Etats-Unis se retrouveront à Shenzhen. Au-delà du symbole, les experts ne s'attendent pas à des annonces importantes.",
-   "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/que-faut-il-attendre-du-sommet-inedit-entre-xi-jinping-vladimir-poutine-et-donald-trump-attendu-jeudi-en-chine_8282519.html",
-   "at": "2026-11-14T17:38:22+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Les « nouveaux Tanguy », ces jeunes adultes qui tiennent à conserver l’alternance entre chez papa et chez maman",
-   "desc": "Depuis la séparation de leurs parents, ils vivent en résidence alternée. Un rythme auquel ils sont attachés, même devenus majeurs… au grand dam de leurs géniteurs. Car la cohabitation à temps partiel avec un jeune adulte qui suit ses propres règles s’avère délicate.",
-   "url": "https://www.lemonde.fr/intimites/article/2026/11/14/les-nouveaux-tanguy-ces-jeunes-adultes-qui-tiennent-a-conserver-l-alternance-entre-chez-papa-et-chez-maman_6810454_6190330.html",
-   "at": "2026-11-14T17:00:08+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Panne du système de communication, centaines de milliers de passagers touchés… Ce que l'on sait de la suspension massive et rarissime des vols aux Etats-Unis",
    "desc": "Les avions ont été cloués au sol pendant plusieurs heures vendredi. La faute, selon les autorités, à un système de communication vétuste, qui utilise encore des disquettes pour des informations cruciales.",
    "url": "https://www.franceinfo.fr/monde/usa/panne-du-systeme-de-communication-centaines-de-milliers-de-passagers-touches-ce-que-l-on-sait-de-la-suspension-massive-et-rarissime-des-vols-aux-etats-unis_8282207.html",
    "at": "2026-11-14T16:20:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Les revendications ne sont pas satisfaites\" : les gilets jaunes appellent à une nouvelle journée de mobilisation samedi 21 novembre",
-   "desc": "Les gilets jaunes seront également présents lors de la manifestation du 17 novembre qui marque, entre autres, les 8 ans de ce mouvement social spontané lancé en 2018.",
-   "url": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/les-revendications-ne-sont-pas-satisfaites-les-gilets-jaunes-appellent-a-un-acte-vi-de-mobilisation-samedi-21-novembre_8282648.html",
-   "at": "2026-11-14T16:20:18+00:00"
   },
   {
    "source": "France 24",
@@ -298,24 +298,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"On a beaucoup manqué d'eau\" : frappés par la sécheresse, les producteurs de pommes espèrent maintenir leurs prix malgré des fruits plus petits",
-   "desc": "Sur les étals, la plupart des pommes sont plus petites que d'habitude. Une conséquence directe de la sécheresse et de l'été caniculaire.",
-   "url": "https://www.franceinfo.fr/economie/emploi/metiers/agriculture/reportage-on-a-beaucoup-manque-d-eau-frappes-par-la-secheresse-les-producteurs-de-pommes-esperent-maintenir-leurs-prix-malgre-des-fruits-plus-petits_8281583.html",
-   "at": "2026-11-14T12:21:34+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Interdictions de manifestations, couvre-feux, parcours hors des centres-villes… Comment les préfets multiplient les mesures administratives en amont des mobilisations",
    "desc": "Depuis le 1er octobre, 219 arrêtés concernant le mouvement lycéen ou les manifestations contre la vie chère ont été pris par la préfecture de police de Paris, d'après le décompte de franceinfo.",
    "url": "https://www.franceinfo.fr/societe/manifestations/interdictions-de-manifestations-couvre-feux-parcours-hors-des-centres-villes-comment-les-prefets-multiplient-les-mesures-administratives-en-amont-des-mobilisations_8274263.html",
    "at": "2026-11-14T12:03:26+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un vice-président de l'université de Versailles-Saint-Quentin agressé à l'arme blanche",
-   "desc": "L'agression a eu lieu vendredi soir dans un couloir de l'université fermée. Le pronostic vital de la victime n'est pas engagé. Le suspect est toujours recherché.",
-   "url": "https://www.franceinfo.fr/faits-divers/le-vice-president-d-une-universite-en-ile-de-france-agresse-a-l-arme-blanche_8281703.html",
-   "at": "2026-11-14T11:04:54+00:00"
   }
  ]
 }

@@ -1,13 +1,48 @@
 {
  "code": "US",
- "asOf": "2026-11-15T11:17:37+00:00",
+ "asOf": "2026-11-15T13:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Rivian, Lucid, Scout CEOs aren’t counting on Democrats to restore EV federal support after midterm wins",
+   "desc": "EV makers have had to contend with flip-flopping regulatory support from Washington over the years.",
+   "url": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
+   "at": "2026-11-15T13:00:02+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'We slept here.' Flight delays linger as airlines scramble to recover from ground stop",
+   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
+   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
+   "at": "2026-11-15T12:51:28+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Flights expected to normalize by tonight after ground stop. Here's what to know",
+   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "at": "2026-11-15T12:19:42+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What to Know About Continued Flight Disruptions",
+   "desc": "After a nationwide ground stop Friday, travelers are still encountering snags, and it could take several days for flight schedules to return to normal.",
+   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
+   "at": "2026-11-15T12:17:49+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
+   "desc": "Anthropic's IPO has outsized importance in the tech industry, which is heavily invested in the AI lab and is desperate for some positive momentum.",
+   "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+   "at": "2026-11-15T12:00:01+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business",
    "desc": "The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former firm.",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
-   "at": "2026-11-15T10:02:04+00:00"
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html",
+   "at": "2026-11-15T10:02:05+00:00"
   },
   {
    "source": "New York Times",
@@ -41,8 +76,8 @@
    "source": "New York Times",
    "title": "‘I Love Being a Girl’: Inside the Life of a Sorority Influencer",
    "desc": "Many young adults want to be influencers. And why not? It’s fun. But it also means that the camera is always on.",
-   "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-influencer-college.html",
-   "at": "2026-11-15T10:00:29+00:00"
+   "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-sorority-influencer-college.html",
+   "at": "2026-11-15T10:00:30+00:00"
   },
   {
    "source": "NPR",
@@ -130,13 +165,6 @@
   },
   {
    "source": "New York Times",
-   "title": "What to Know About Continued Flight Disruptions",
-   "desc": "After a nationwide ground stop Friday, travelers are still encountering snags, and it could take several days for flight schedules to return to normal.",
-   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
-   "at": "2026-11-15T02:52:23+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Judge Blocks Immediate Closure of East Potomac Park for Trump Golf Project",
    "desc": "Judge Ana C. Reyes, who has been overseeing combative litigation, said the Trump administration would not be responsible for operating the course while the case proceeded.",
    "url": "https://www.nytimes.com/2026/11/14/us/politics/trump-east-potomac-golf-course.html",
@@ -183,13 +211,6 @@
    "desc": "A new Florida law that prohibits taxpayer dollars from going toward diversity initiatives has prompted Delray Beach to cancel its St. Patrick's Day parade after a nearly 60-year run.",
    "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
    "at": "2026-11-15T00:03:52+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Travelers stranded, flights canceled after ground stop. Here's what we know",
-   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-14T23:49:31+00:00"
   },
   {
    "source": "New York Times",
@@ -414,27 +435,6 @@
    "desc": "Air travel chaos after a nationwide ground stop. Plus, Lady Gaga's parents run a New York City trattoria and cabaret. All this and more.",
    "url": "https://www.cbsnews.com/video/111426-cbs-saturday-morning/",
    "at": "2026-11-14T14:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Retailers are turning to entertainment to win shoppers’ attention",
-   "desc": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
-   "url": "https://www.cnbc.com/2026/11/14/retailers-invest-entertainment.html",
-   "at": "2026-11-14T13:00:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Meet the seven co-founders of Anthropic",
-   "desc": "Four researchers, a former journalist, a public policymaker, and an engineer founded Anthropic in 2021. They're now poised to become multi-billionaires.",
-   "url": "https://www.cnbc.com/2026/11/14/meet-the-seven-co-founders-of-anthropic.html",
-   "at": "2026-11-14T12:15:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-   "desc": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
-   "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-   "at": "2026-11-14T12:00:01+00:00"
   }
  ]
 }

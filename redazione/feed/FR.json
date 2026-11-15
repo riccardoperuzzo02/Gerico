@@ -1,7 +1,91 @@
 {
  "code": "FR",
- "asOf": "2026-11-15T13:17:34+00:00",
+ "asOf": "2026-11-15T15:17:35+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Le ministre de l'Education nationale se rend à Nantes lundi pour la réouverture du lycée Nelson-Mandela, en partie incendié le 1er octobre",
+   "desc": "L'établissement avait été en partie endommagé lors d'un blocage pendant le mouvement lycéen dont le sinistre est devenu l'un des premiers symboles des débordements survenus en marge de la mobilisation.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/le-ministre-de-l-education-nationale-se-rend-a-nantes-lundi-pour-la-reouverture-du-lycee-nelson-mandela-en-partie-incendie-le-1er-octobre_8283644.html",
+   "at": "2026-11-15T15:11:34+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La France et le Cambodge scellent leur \"partenariat renouvelé\" avec 29 accords",
+   "desc": "Les domaines de la santé, de la culture, du patrimoine, de la défense, mais aussi de l'énergie et de l'agroalimentaire sont concernés.",
+   "url": "https://www.franceinfo.fr/monde/asie/la-france-et-le-cambodge-scellent-leur-partenariat-renouvele-avec-29-accords_8283617.html",
+   "at": "2026-11-15T15:06:22+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"Cette primaire, je n'y participerai pas\", répète Edouard Philippe après l'appel de Gérard Larcher",
+   "desc": "Le président du Sénat a proposé aux candidats de la droite et du centre de \"se retrouver dans les meilleurs délais\" pour évoquer \"la méthode de départage\" permettant d'aboutir à une candidature unique à la présidentielle.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-l-entourage-d-emmanuel-macron-etrille-les-candidats-qui-veulent-baisser-l-aide-financiere-a-l-ukraine-dont-marine-le-pen_8283293.html",
+   "at": "2026-11-15T14:57:41+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'Iran fait état de deux pétroliers en feu dans le détroit d'Ormuz",
+   "desc": "L'un des deux navires, \"un superpétrolier transportant plus de 2 millions de barils de pétrole brut\", a coulé.",
+   "url": "https://www.franceinfo.fr/monde/iran/crise-dans-le-detroit-d-ormuz/l-iran-fait-etat-de-deux-petroliers-en-feu-dans-le-detroit-d-ormuz_8283602.html",
+   "at": "2026-11-15T14:57:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"J'ai fait des kilomètres dans l'eau\", piégée par les intempéries, une femme de 73 ans retrouvée saine et sauve à Montpellier",
+   "desc": "Des centaines d'automobilistes ont été piégés par la montée des eaux, dans la soirée du samedi 14 au dimanche 15 novembre 2026 à Montpellier soumis à de nouvelles précipitations intenses. Une conductrice de 73 ans, disparue au volant de sa voiture, activement recherchée ce dimanche, a été retrouvée saine et sauve.",
+   "url": "https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/une-septuagenaire-disparue-au-volant-de-sa-voiture-activement-recherchee-a-montpellier-apres-les-orages-de-la-nuit-une-centaine-d-automobilistes-mis-en-securite-3449907.html",
+   "at": "2026-11-15T14:38:23+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Des courriers ont pu être lus\" : ce que l'on sait de la cyberattaque contre Maileva, filiale de La Poste, qui a conduit au vol de données de 22 millions de personnes",
+   "desc": "La brigade de lutte contre la cybercriminalité a été chargée de l'enquête, a confirmé dimanche le parquet de Paris. Les investigations ont été ouvertes pour \"atteinte à un système de traitement automatisé de données\" par la section cybercriminalité du parquet parisien.",
+   "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/des-courriers-ont-pu-etre-lus-ce-que-l-on-sait-de-la-cyberattaque-contre-maileva-filiale-de-la-poste-qui-a-conduit-au-vol-de-donnees-de-22-millions-de-personnes_8283266.html",
+   "at": "2026-11-15T14:33:41+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Confrontée à un El Niño historique, l’Amazonie brésilienne en état d’urgence environnemental",
+   "desc": "L’Etat du Para et cinquante villes de l’Etat de l’Amazonas ont été placés en état d’urgence afin de mobiliser tous les moyens pour combattre les feux de forêt et venir en aide aux quelque 161 000 familles touchées.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/15/confrontee-a-un-el-nino-historique-l-amazonie-bresilienne-en-etat-d-urgence-environnemental_6811024_3244.html",
+   "at": "2026-11-15T14:30:40+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Tout savoir sur la fermeture de l’autoroute A13 entre Paris et Caen : durée des travaux, itinéraire de substitution et craintes de congestion",
+   "desc": "Une portion de cette autoroute qui relie Paris à Caen doit fermer durant huit mois, dès lundi 16 novembre, pour permettre de consolider un tunnel.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/15/fermeture-de-l-a13-derriere-les-travaux-indispensables-la-crainte-de-congestion-sur-les-routes-des-hauts-de-seine_6811023_3234.html",
+   "at": "2026-11-15T14:06:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Après l'attentat raciste à Trappes, Sandrine Rousseau accuse le gouvernement de \"sous-estimer la menace venant de l'extrême droite\"",
+   "desc": "La députée écologiste de Paris a demandé dimanche à l'exécutif \"d'arrêter\" la \"complaisance\" vis-à-vis \"des violences issues du camp de l'extrême droite\", sur BFMTV.",
+   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/attentat-raciste-a-trappes-sandrine-rousseau-accuse-le-gouvernement-de-sous-estimer-la-menace-venant-de-l-extreme-droite_8283533.html",
+   "at": "2026-11-15T13:56:47+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les chimpanzés aussi apprennent de leurs aînés pour produire des signaux sonores",
+   "desc": "Une étude internationale révèle que les capacités de communication de ces primates ne sont pas uniquement innées. Certaines de leurs vocalisations sont associées à des contextes précis et peuvent être apprises par imitation, deux caractéristiques longtemps considérées comme propres au langage humain.",
+   "url": "https://www.lemonde.fr/sciences/article/2026/11/15/les-chimpanzes-aussi-apprennent-de-leurs-aines-pour-produire-des-signaux-sonores_6811020_1650684.html",
+   "at": "2026-11-15T13:29:29+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Guerre en Ukraine : Emmanuel Macron s’en prend « à ceux qui veulent rationner les moyens » de Kiev ; Marine Le Pen le renvoie à « sa propre turpitude »",
+   "desc": "Le chef de l’Etat ne cite pas Marine Le Pen, mais la candidate du RN a déjà annoncé que, si elle était élue, elle couperait l’aide financière à l’Ukraine après une période de six mois.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/15/guerre-en-ukraine-emmanuel-macron-s-en-prend-a-ceux-qui-veulent-rationner-les-moyens-de-kiev-marine-le-pen-le-renvoie-a-sa-propre-turpitude_6811019_3210.html",
+   "at": "2026-11-15T13:22:32+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "40 affirmations-chocs des candidats à la présidentielle de 2027 et de leurs soutiens fact-checkées",
+   "desc": "Les Décodeurs du « Monde » confrontent, dans cette base de données évolutive, les arguments des politiques aux données indépendantes disponibles.",
+   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/15/presidentielle-2027-40-declarations-des-candidats-et-de-leurs-soutiens-passees-au-crible_6811018_4355770.html",
+   "at": "2026-11-15T13:19:59+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Dans les Deux-Sèvres, le collectif Bassines Non Merci appelle à un nouveau rassemblement pour rejoindre le site de Sainte-Soline le 29 novembre",
@@ -11,10 +95,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Manifestations du 14 novembre : un total de 404 personnes interpellées dans toute la France, dont plusieurs dizaines de mineurs",
-   "desc": "Dans la capitale, la mobilisation de samedi s'est déroulée \"globalement dans le calme\", affirme dimanche la préfecture de police.",
-   "url": "https://www.franceinfo.fr/societe/manifestations/manifestation-du-14-novembre-a-paris-108-personnes-placees-en-garde-a-vue-dont-38-mineurs_8283458.html",
-   "at": "2026-11-15T13:06:13+00:00"
+   "title": "Pourquoi la maladie de Parkinson est en forte augmentation en France et touche particulièrement certains départements",
+   "desc": "Cette maladie neurodégénérative touche près de 300 000 personnes en France. Elle augmente fortement en raison principalement du vieillissement de la population mais aussi de la présence des métaux lourds et des pesticides dans l'environnement.",
+   "url": "https://www.franceinfo.fr/sante/pourquoi-la-maladie-de-parkinson-est-en-forte-augmentation-en-france-et-touche-particulierement-certains-departements_8279975.html",
+   "at": "2026-11-15T13:01:53+00:00"
   },
   {
    "source": "franceinfo",
@@ -24,18 +108,11 @@
    "at": "2026-11-15T12:59:19+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Attentat raciste à Trappes : Sandrine Rousseau accuse le gouvernement de \"sous-estimer la menace venant de l'extrême droite\"",
-   "desc": "La députée écologiste de Paris a demandé dimanche à l'exécutif \"d'arrêter d'avoir cette complaisance\" vis-à-vis \"des violences issues du camp de l'extrême droite\", sur BFMTV.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/attentat-raciste-a-trappes-sandrine-rousseau-accuse-le-gouvernement-de-sous-estimer-la-menace-venant-de-l-extreme-droite_8283533.html",
-   "at": "2026-11-15T12:53:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : la députée écologiste Sandrine Rousseau appelle Marine Tondelier \"à se retirer\"",
-   "desc": "Invitée de BFMTV dimanche, la parlementaire de Paris a de nouveau appelé son parti à rejoindre Jean-Luc Mélenchon.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-l-entourage-d-emmanuel-macron-etrille-les-candidats-qui-veulent-baisser-l-aide-financiere-a-l-ukraine-dont-marine-le-pen_8283293.html",
-   "at": "2026-11-15T12:47:22+00:00"
+   "source": "Le Monde",
+   "title": "« GTA Online » : à quelques jours de la sortie de « GTA VI », les joueurs du mode en ligne se préparent à « la dernière danse »",
+   "desc": "« Grand Theft Auto V » s’est imposé comme l’un des jeux les plus vendus de l’histoire grâce à son mode multijoueur en ligne, dont la popularité ne va pas immédiatement s’évanouir : la fonctionnalité sera absente de « GTA VI » à sa sortie, jeudi 19 novembre.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/15/a-quelques-jours-de-la-sortie-de-gta-vi-les-joueurs-de-gta-online-entre-nostalgie-et-excitation-chaque-moment-passe-en-jeu-est-peut-etre-le-dernier_6811016_4408996.html",
+   "at": "2026-11-15T12:54:55+00:00"
   },
   {
    "source": "franceinfo",
@@ -46,24 +123,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Ça ne rattrapera pas un bon samedi\" : les commerçants lyonnais peu convaincus par les ouvertures dominicales supplémentaires",
-   "desc": "Après les dégradations du 17 octobre et les manifestations organisées tous les samedis, le préfet du Rhône autorise les commerces lyonnais à ouvrir trois dimanches supplémentaires. Mais les commerçants savent que les pertes seront difficiles à rattraper.",
-   "url": "https://www.franceinfo.fr/economie/commerce/ca-ne-rattrapera-pas-un-bon-samedi-les-commercants-lyonnais-peu-convaincus-par-les-ouvertures-dominicales-supplementaires_8283347.html",
-   "at": "2026-11-15T12:06:49+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Wu-Tang Clan et Phil Collins au Rock and Roll Hall of Fame, Oasis a séché la cérémonie à Los Angeles",
    "desc": "Les frères Gallagher réconciliés, qui ont récemment annoncé une nouvelle tournée mondiale d'Oasis pour 2027, avaient décliné l'invitation",
    "url": "https://www.franceinfo.fr/culture/musique/wu-tang-clan-et-phil-collins-au-rock-and-roll-hall-of-fame-oasis-a-seche-la-ceremonie-a-los-angeles_8283500.html",
    "at": "2026-11-15T11:50:34+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J'ai fait des kilomètres dans l'eau\", piégée par les intempéries, une femme de 73 ans retrouvée saine et sauve à Montpellier",
-   "desc": "Des centaines d'automobilistes ont été piégés par la montée des eaux, dans la soirée du samedi 14 au dimanche 15 novembre 2026 à Montpellier soumis à de nouvelles précipitations intenses. Une conductrice de 73 ans, disparue au volant de sa voiture, activement recherchée ce dimanche, a été retrouvée saine et sauve.",
-   "url": "https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/une-septuagenaire-disparue-au-volant-de-sa-voiture-activement-recherchee-a-montpellier-apres-les-orages-de-la-nuit-une-centaine-d-automobilistes-mis-en-securite-3449907.html",
-   "at": "2026-11-15T11:26:46+00:00"
   },
   {
    "source": "franceinfo",
@@ -85,13 +148,6 @@
    "desc": "Le département de l'Hérault était en vigilance orange pluie-inondation jusqu'à dimanche matin.",
    "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/il-y-avait-de-l-eau-partout-raconte-le-maire-de-perols-apres-les-intemperies-dans-l-herault_8283443.html",
    "at": "2026-11-15T11:01:38+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Sandra Wollner, réalisatrice d’« Everytime », une redoutable conteuse et artiste touche-à-tout",
-   "desc": "Après le sulfureux « The Trouble With Being Born », en 2020, la cinéaste autrichienne présente son troisième long-métrage, scrutant le deuil d’une mère sous un nouveau jour.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/15/sandra-wollner-realisatrice-d-everytime-une-redoutable-conteuse-et-artiste-touche-a-tout_6811011_3246.html",
-   "at": "2026-11-15T11:00:10+00:00"
   },
   {
    "source": "Le Monde",
@@ -122,15 +178,8 @@
    "at": "2026-11-15T10:24:22+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Inside Gaza\" de la réalisatrice Hélène Lam Trong prix du meilleur documentaire au festival Cinemania",
-   "desc": "Ce documentaire sur le quotidien des reporters de l'AFP à Gaza a déjà été primé au festival Doc Edge en Nouvelle-Zélande et a remporté en France le Grand prix du 33e Festival international du grand reportage d'actualité et du documentaire de société.",
-   "url": "https://www.franceinfo.fr/culture/cinema/inside-gaza-de-la-realisatrice-helene-lam-trong-prix-du-meilleur-documentaire-au-festival-cinemania_8283296.html",
-   "at": "2026-11-15T10:12:27+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "La hausse de 1,6 % du smic et des « bas salaires » des fonctionnaires coûteront « un peu plus de 1 milliard d’euros », selon le gouvernement",
+   "title": "La hausse de 1,6 % du smic et des « bas salaires » des fonctionnaires coûtera « un peu plus de 1 milliard d’euros », selon le gouvernement",
    "desc": "L’exécutif avait annoncé cette semaine, en pleines mobilisations sociales, la revalorisation du salaire minimal de 1,6 % à partir du 1ᵉʳ décembre et celle des « bas salaires » de plus d’un million d’agents de la fonction publique.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/15/les-revalorisations-du-smic-et-des-bas-salaires-des-fonctionnaires-couteront-un-peu-plus-de-1-milliard-d-euros-aux-finances-publiques-selon-le-gouvernement_6811009_823448.html",
    "at": "2026-11-15T10:09:57+00:00"
@@ -141,41 +190,6 @@
    "desc": "Le remplacement de câbles vétustes a \"provoqué des problèmes dans la communication avec les avions\" ainsi que sur des radars, a détaillé samedi le ministre des Transports américain.",
    "url": "https://www.franceinfo.fr/monde/usa/des-cables-en-cuivre-vetustes-a-l-origine-des-perturbations-de-milliers-de-vols-aux-etats-unis-selon-l-administration-trump_8283218.html",
    "at": "2026-11-15T10:05:14+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Michel Destot, ancien maire PS de Grenoble et député de l'Isère, est mort à l'âge de 80ans",
-   "desc": "Michel Destot s'est éteint ce samedi 14 novembre, à l'âge de 80 ans. Figure du Parti socialiste, il a été député de la troisième circonscription de l'Isère de 1988 à 2017 et maire de Grenoble de 1995 à 2014.",
-   "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/isere/grenoble/michel-destot-ancien-maire-de-grenoble-est-mort-c-etait-un-passionne-un-homme-de-projet-un-pragmatique-3449853.html",
-   "at": "2026-11-15T10:00:32+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : les restrictions d’accès à Starshield persistent et empêchent Kiev de se protéger des attaques russes, dit Volodymyr Zelensky",
-   "desc": "Selon le président ukrainien, la Russie avait utilisé « plus de 2 300 drones d’attaque, 1 590 bombes aériennes et 15 missiles de différents types » au cours de la semaine passée. « De nombreuses de ces attaques sont possibles en raison des limitations de vitesse des terminaux Starshield le long de la ligne de front », a-t-il ajouté, demandant aux Etats-Unis et à SpaceX de rétablir l’accès au système satellitaire militaire.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/15/en-direct-guerre-en-ukraine-l-emissaire-americain-jared-kushner-regrette-la-diffusion-de-positions-maximalistes-apres-les-negociations-avec-l-ukraine-et-la-russie_6810982_3210.html",
-   "at": "2026-11-15T09:59:59+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un homme de 19 ans tué par balle dans le quartier Montaudran à Toulouse",
-   "desc": "Une enquête pour homicide volontaire ouverte. Le jeune homme \"était connu pour trafic de stupéfiants\", a indiqué le parquet.",
-   "url": "https://www.franceinfo.fr/faits-divers/un-homme-de-19-ans-tue-par-balle-dans-le-quartier-montaudran-a-toulouse_8283344.html",
-   "at": "2026-11-15T09:54:40+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Pourquoi les jeunes souffrent-ils de plus en plus d’anxiété sociale ? Comprendre en trois minutes",
-   "desc": "En France, l’anxiété sociale, définie comme une peur intense des situations sociales soumises au jugement ou à l’observation des autres, croît parmi les moins de 30 ans.",
-   "url": "https://www.lemonde.fr/comprendre-en-3-minutes/video/2026/11/15/pourquoi-les-jeunes-souffrent-ils-de-plus-en-plus-d-anxiete-sociale-comprendre-en-trois-minutes_6811005_6176282.html",
-   "at": "2026-11-15T09:52:38+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Lucie Castets, maire du XIIᵉ arrondissement de Paris: « L’enjeu central de l’élection de 2027 est de définir qui devra payer l’ardoise du pouvoir sortant »",
-   "desc": "La politique économique et budgétaire de la France a été bâtie sur la promesse d’un retour fiscal qui ne s’est jamais matérialisée, fragilisant la crédibilité financière que le gouvernement prétendait défendre, juge la maire (Ecologiste et social) du XIIᵉ arrondissement de Paris, Lucie Castets, dans une tribune au « Monde ».",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/15/lucie-castets-maire-du-xii-arrondissement-de-paris-l-enjeu-central-de-l-election-est-de-definir-qui-devra-payer-l-ardoise-du-pouvoir-sortant_6811004_3232.html",
-   "at": "2026-11-15T09:52:04+00:00"
   },
   {
    "source": "franceinfo",
@@ -199,25 +213,11 @@
    "at": "2026-11-15T09:25:59+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Sans les thermes, Royat est morte » : le possible déremboursement des cures thermales menace un modèle déjà fragilisé",
-   "desc": "Dans la petite ville du Puy-de-Dôme, comme dans les autres stations, le thermalisme est essentiel aux hôtels et aux commerces. En proposant de transférer 200 millions d’euros de prise en charge des cures aux complémentaires de santé, le gouvernement a provoqué une fronde chez les professionnels et les communes concernés.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/15/sans-les-thermes-royat-est-morte-le-possible-deremboursement-des-cures-thermales-menace-un-modele-deja-fragilise_6811001_3234.html",
-   "at": "2026-11-15T09:00:10+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Les revalorisations annoncées pour les plus bas salaires coûteront \"un peu plus d'un milliard d'euros\" aux finances publiques, déclare le ministre David Amiel",
    "desc": "David Amiel confirme, dans le \"8h30 franceinfo\" dimanche, une augmentation \"pour les plus bas salaires de la fonction publique\" représentant \"350 euros brut par an\".",
    "url": "https://www.franceinfo.fr/economie/pouvoir-achat/il-y-aura-bien-une-hausse-des-points-pour-les-plus-bas-salaires-de-la-fonction-publique-confirme-le-ministre-david-amiel_8283254.html",
    "at": "2026-11-15T08:49:24+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Louis Vuitton présente l'exposition photographique \"La Valise\" de Bruno Aveillan : dans son viseur, un objet intemporel au cœur de treize ans de voyage",
-   "desc": "\"La Valise\" de Bruno Aveillan, c'est un projet photographique, un livre et une exposition mettant en scène, à la LV Dream, la valise Alzer de la maison Louis Vuitton utilisée par le réalisateur lors de ses voyages.",
-   "url": "https://www.franceinfo.fr/culture/arts-expos/photographie/louis-vuitton-presente-l-exposition-photographique-la-valise-de-bruno-aveillan-dans-son-viseur-un-objet-intemporel-au-c-ur-de-treize-ans-de-voyage_8269346.html",
-   "at": "2026-11-15T08:00:21+00:00"
   },
   {
    "source": "franceinfo",
@@ -241,18 +241,11 @@
    "at": "2026-11-15T05:50:36+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Ce n'est pas un simple jeu vidéo\" : comment les fans se préparent à la sortie de \"GTA VI\" après treize ans d'attente",
-   "desc": "La franchise culte \"Grand Theft Auto\" a marqué de nombreux joueurs depuis sa création en 1997 par l'éditeur américain Rockstar Games. Pour profiter au mieux du nouvel opus, disponible jeudi, beaucoup ont investi et même pris des jours de congés.",
-   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/temoignages-ce-n-est-pas-un-simple-jeu-video-comment-les-fans-se-preparent-a-la-sortie-de-gta-vi-apres-treize-ans-d-attente_8265593.html",
-   "at": "2026-11-15T05:49:52+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "Le lent déclin économique de la France face au reste de l’Europe",
-   "desc": "L’Hexagone affiche l’une des plus faibles croissances européennes cette année. Un phénomène qui accentue la chute du pays dans le classement européen en PIB par habitant, désormais en dessous de la moyenne.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/15/le-lent-declin-economique-de-la-france-face-au-reste-de-l-europe_6810984_3234.html",
-   "at": "2026-11-15T05:15:04+00:00"
+   "title": "Six mois d’épidémie d’Ebola en RDC : ils racontent leur vie en première ligne face au virus",
+   "desc": "Depuis la déclaration officielle de l’épidémie le 15 mai, plus de 5 400 personnes en sont mortes en République démocratique du Congo. « Le Monde » est allé à la rencontre d’humanitaires, d’infirmiers, de victimes qui, chaque jour, font face à ce fléau invisible.",
+   "url": "https://www.lemonde.fr/afrique/article/2026/11/15/six-mois-d-epidemie-d-ebola-en-rdc-ils-racontent-leur-vie-en-premiere-ligne-face-au-virus_6810987_3212.html",
+   "at": "2026-11-15T05:30:01+00:00"
   },
   {
    "source": "Le Monde",
@@ -316,20 +309,6 @@
    "desc": "Comme chaque semaine, Judith Grimaldi reçoit un invité dans son podcast \"Avec Judith\". Cette fois-ci, c'est Philippe Aghion, économiste français, prix Nobel d'économie 2025.",
    "url": "https://www.france24.com/fr/%C3%A9missions/avec-judith/20261114-de-communiste-%C3%A0-conseiller-de-macron-le-parcours-de-l-%C3%A9conomiste-philippe-aghion",
    "at": "2026-11-14T15:50:57+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Suspension des vols aux Etats-Unis : plus de 18 400 vols annulés vendredi et samedi alors que des perturbations persistent",
-   "desc": "Après l’annulation de 12 000 vols vendredi, ce sont plus de 6 400 trajets qui ont connu le même sort samedi. Les autorités, qui imputent la panne à des travaux sur des infrastructures vétustes, s’attendent à un retour à la normale d’ici à dimanche soir.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/14/suspension-des-vols-aux-etats-unis-des-annulations-et-des-retards-de-vols-persistent-samedi_6810445_3210.html",
-   "at": "2026-11-14T15:31:00+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Teddy Riner réfute être macroniste et qualifie de \"baiser empoisonné\" les félicitations de Macron",
-   "desc": "Le judoka et désormais candidat à la présidentielle Teddy Riner s'est défendu samedi d'être macroniste, lors de son déplacement au salon du \"Made in France\". Le sportif de haut niveau a, en outre, qualifié de \"baiser empoisonné\" les félicitations d'Emmanuel Macron.",
-   "url": "https://www.france24.com/fr/france/20261114-teddy-riner-r%C3%A9fute-%C3%AAtre-macroniste-qualifie-baiser-empoisonn%C3%A9-f%C3%A9licitations-macron",
-   "at": "2026-11-14T15:12:57+00:00"
   }
  ]
 }

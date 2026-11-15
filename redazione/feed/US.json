@@ -1,7 +1,70 @@
 {
  "code": "US",
- "asOf": "2026-11-15T09:17:34+00:00",
+ "asOf": "2026-11-15T11:17:37+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Lutnick Pushed to Weaken Chip Rules That Overlap With His Family Business",
+   "desc": "The commerce secretary has been writing new rules that would affect Southeast Asian data centers, some of which are clients of his former firm.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+   "at": "2026-11-15T10:02:04+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After Midterms Triumph, Democrats Look Quickly and Eagerly Ahead to 2028",
+   "desc": "Politicians, donors and campaign strategists are already imagining a large and contentious field of presidential contenders.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/democrats-2028-presidential-candidates.html",
+   "at": "2026-11-15T10:01:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Embattled Federal Employees Look to a Democratic Congress for a Lifeline",
+   "desc": "Former and current workers have found a sympathetic ear among Democrats set to take over the House and Senate. But any reversal of President Trump’s cuts are unlikely to happen immediately.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/federal-employees-democratic-congress-lifeline.html",
+   "at": "2026-11-15T10:00:59+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Reward for Black Women’s Work in Georgia: Leaders Who Look Like Them",
+   "desc": "Diligent ground-level efforts by Black women helped make Democrats competitive again in Georgia. Now they’ll hold seven of the top eight elected leadership roles in the state.",
+   "url": "https://www.nytimes.com/2026/11/15/us/black-women-georgia-leaders.html",
+   "at": "2026-11-15T10:00:54+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A Campus Sexual Assault Lawsuit Tests an Unusual Legal Strategy",
+   "desc": "Frustrated by Texas Christian University’s handling of her sexual assault case, a former student from Virginia is suing under her home state’s consumer protection laws.",
+   "url": "https://www.nytimes.com/2026/11/15/us/sexual-assault-lawsuit-texas-christian-university-consumer-protection.html",
+   "at": "2026-11-15T10:00:42+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "‘I Love Being a Girl’: Inside the Life of a Sorority Influencer",
+   "desc": "Many young adults want to be influencers. And why not? It’s fun. But it also means that the camera is always on.",
+   "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-influencer-college.html",
+   "at": "2026-11-15T10:00:29+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+   "at": "2026-11-15T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
+   "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+   "at": "2026-11-15T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "A new generation of disability rights activists carry on Judy Heumann's legacy",
+   "desc": "The film Being Heumann tells the lesser-known story of the mother of the disability rights movement. A new generation of activists share how they \"carry the torch\" today.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
+   "at": "2026-11-15T10:00:00+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
@@ -102,13 +165,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Hosting Ex-Convicts at Their Oakland Home Has Largely Gone Off Without a Hitch",
-   "desc": "A husband and wife in Oakland, Calif., have welcomed into their home 24 men recently released from prison sentences for crimes like murder and robbery, part of a program to ease reintegration into society.",
-   "url": "https://www.nytimes.com/2026/11/14/us/ex-convicts-halfway-house-oakland.html",
-   "at": "2026-11-15T00:45:28+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Unlike Other Countries, America’s Government Funds Its Air Infrastructure",
    "desc": "Despite handling the most flights in the world, the United States’ air traffic systems rely on 1980s-era computer equipment.",
    "url": "https://www.nytimes.com/2026/11/14/us/unlike-other-countries-americas-government-funds-its-air-infrastructure.html",
@@ -155,6 +211,13 @@
    "desc": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
    "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
    "at": "2026-11-14T23:05:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'Root cause’ of nationwide ground stop is unknown, FAA says",
+   "desc": "Routers and networking equipment may be involved in the problems that led to the ground stop, but a definitive cause has not been established, officials said.",
+   "url": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html",
+   "at": "2026-11-14T22:54:47+00:00"
   },
   {
    "source": "NPR",
@@ -234,25 +297,11 @@
    "at": "2026-11-14T20:12:34+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "‘Democrat’ in Alaska’s House Race Is Doing Time in a New York Prison",
-   "desc": "While Republicans accuse Democrats of dirty tricks in the ongoing Alaska Senate race, the lone House contest in the state has the hallmarks of similar “ballot stacking” shenanigans.",
-   "url": "https://www.nytimes.com/2026/11/14/us/elections/alaska-house-race-felon-eric-hafner.html",
-   "at": "2026-11-14T20:10:02+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Dramatic video shows river boats colliding",
    "desc": "All aboard were accounted for after a cargo tanker crashed into a river cruise in New Orleans. CBS News' Skyler Henry reports.",
    "url": "https://www.cbsnews.com/video/dramatic-video-shows-river-boats-colliding/",
    "at": "2026-11-14T20:02:36+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "'We can't let them down' -- After midterm wins, Democrats turn to charting path ahead",
-   "desc": "Democrats from across the country descended on Denver for a two-day conference to chart the course of their party after sweeping victories in the midterm elections.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6037777/democrats-midterms-whats-next-conference",
-   "at": "2026-11-14T19:13:54+00:00"
   },
   {
    "source": "New York Times",
@@ -269,32 +318,11 @@
    "at": "2026-11-14T18:48:39+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Here’s the latest.",
-   "desc": "",
-   "url": "https://www.nytimes.com/live/2026/11/14/us/faa-nationwide-ground-stop-flights/heres-the-latest",
-   "at": "2026-11-14T18:14:54+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Port of New Orleans sues tanker that hit riverboat cruise for $1 million",
    "desc": "The port asked a judge to seize and sell the tanker that hit a riverboat cruise to cover the costs of repairs.",
    "url": "https://www.cbsnews.com/news/port-of-new-orleans-sues-tanker-riverboat-crash/",
    "at": "2026-11-14T17:56:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-   "desc": "Two Nvidia investors with about $2.13 billion of stock disclosed as of June 30 are calling for a deliberate leadership search after Huang’s resignation.",
-   "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-   "at": "2026-11-14T17:46:06+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
-   "desc": "Transportation Secretary Sean Duffy said initial investigations pointed to an issue with contractor L3Harris updating old tech at a remote location.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
-   "at": "2026-11-14T16:53:04+00:00"
   },
   {
    "source": "CBS News",
@@ -325,25 +353,11 @@
    "at": "2026-11-14T16:06:58+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Fuel crisis and protests pressure Chile's far-right president",
-   "desc": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
-   "at": "2026-11-14T16:05:12+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
    "desc": "ETF experts say Nvidia’s leadership turmoil and Democratic control of Congress could shift AI demand to the benefit of other Big Tech stocks, rival chipmakers.",
    "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
    "at": "2026-11-14T15:50:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump doesn’t plan to raise Nvidia, spy issue during China trip: U.S. officials",
-   "desc": "Nvidia CEO Jensen Huang resigned this week after reports of multiple affairs, including one with a suspected Chinese spy, Alice Huang.",
-   "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html",
-   "at": "2026-11-14T15:36:47+00:00"
   },
   {
    "source": "CBS News",
@@ -402,13 +416,6 @@
    "at": "2026-11-14T14:00:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "What’s Behind the Trump-Huang Relationship?",
-   "desc": "President Trump’s show of support for Jensen Huang as he was under fire was a remarkable moment in a relationship that barely existed two years ago. Our White House correspondent Maggie Haberman explains how Mr. Trump came to see Mr. Huang as a modern-day Henry Ford.",
-   "url": "https://www.nytimes.com/video/us/politics/100000011272223/whats-behind-the-trump-huang-relationship.html",
-   "at": "2026-11-14T13:27:10+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Retailers are turning to entertainment to win shoppers’ attention",
    "desc": "Retailers are increasingly investing in and building out entertainment studios as the race for audience attention speeds up.",
@@ -428,20 +435,6 @@
    "desc": "Eric Trump-backed robot startup Foundation Future Industries has run low on cash and missed payroll, as CEO Sankaet Pathak faces scrutiny over a $4.6 million company loan.",
    "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
    "at": "2026-11-14T12:00:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "As Congress Plans Investigations, White House Prepares Ferocious Response",
-   "desc": "The Trump administration has quietly been laying the groundwork for an aggressive all-out effort to thwart newly empowered Democrats’ attempts at oversight.",
-   "url": "https://www.nytimes.com/2026/11/14/us/politics/congress-trump-investigations.html",
-   "at": "2026-11-14T10:02:21+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Top Democrat Eyes Filibuster-Proof Budget Bill to Unlock Affordability Agenda",
-   "desc": "The lawmaker set to lead the House Budget Committee outlined Democrats’ options for forcing a negotiation with President Trump on an economic package to bring down living costs.",
-   "url": "https://www.nytimes.com/2026/11/14/us/politics/house-democrats-affordability-costs-budget.html",
-   "at": "2026-11-14T10:01:49+00:00"
   }
  ]
 }

@@ -1,13 +1,41 @@
 {
  "code": "DE",
- "asOf": "2026-11-15T09:17:34+00:00",
+ "asOf": "2026-11-15T11:17:37+00:00",
  "items": [
   {
+   "source": "Tagesschau",
+   "title": "Sachsen-Anhalt: Weggehen dürfen, wenn es gefährlich wird",
+   "desc": "In rund einem Monat will sich der AfD-Politiker Siegmund in Sachsen-Anhalt zum Ministerpräsidenten wählen lassen. Viele Migranten überlegen, wegzuziehen. Doch was gilt für Asylsuchende bei einer Wohnsitzauflage? Von L. Pfeuffer-Rooschüz.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/sachsen-anhalt-afd-migranten-residenzpflicht-100.html",
+   "at": "2026-11-15T11:10:03+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Jugendproteste: Grünen-Chef Banaszak fordert ernsthaften Umgang mit Jugendprotesten",
-   "desc": "Junge Menschen dürfen nicht als Chaoten abgestempelt werden, sagt der Grünen-Vorsitzende Felix Banaszak. Wer das tue, dürfe sich nicht über Politikverdrossenheit wundern.",
+   "title": "Jugendproteste: Grünenchef Banaszak fordert ernsthaften Umgang mit Jugendprotesten",
+   "desc": "Junge Menschen dürfen nicht als Chaoten abgestempelt werden, sagt der Grünenvorsitzende Felix Banaszak. Wer das tue, dürfe sich nicht über Politikverdrossenheit wundern.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/felix-banaszak-bildungsproteste-jugend-ausschreitungen-gxe",
-   "at": "2026-11-15T09:11:11+00:00"
+   "at": "2026-11-15T10:35:34+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Vanessa Emde: Die frühen Gedichte der Skandal-Linken",
+   "desc": "Vanessa Emde, die israelfeindliche Aktivistin aus Neukölln, dominiert seit Wochen die Berliner Koalitionsgespräche. Früher inszenierte sie am Theater und schrieb Lyrik. Was verrät ihr Werk über sie?",
+   "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-die-fruehen-gedichte-der-skandal-linken-a-33089a48-bd29-4ed2-b624-03370da8e383",
+   "at": "2026-11-15T10:10:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "China: Peking verbietet privaten Besitz von Drohnen",
+   "desc": "Menschen in Peking dürfen privat keine Drohnen mehr besitzen. Sowohl die Lagerung als auch der Bau und Transport von unbemannten Flugobjekten sind betroffen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/drohnenverbot-peking-china-unbemannte-fluggeraete-gxe",
+   "at": "2026-11-15T09:55:12+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gipfel zwischen China, Russland und den USA: Warum Xi Jinping der Dreiergipfel mit Trump und Putin so kalt lässt",
+   "desc": "Kommende Woche treffen sich Trump, Xi und Putin zum historischen Dreiergipfel. Chinas Staatschef wird dann ein symbolträchtiges Foto genügen, er hat andere Interessen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-russland-china-usa-treffen-staatschefs",
+   "at": "2026-11-15T09:22:26+00:00"
   },
   {
    "source": "Tagesschau",
@@ -82,7 +110,7 @@
   {
    "source": "Die Zeit",
    "title": "Abschiebezentren in Ruanda: Wie weit darf Deutschland bei Abschiebungen gehen?",
-   "desc": "Deutschland und mehrere EU-Staaten planen Abschiebezentren in Ruanda. Was bedeutet das für Asylsuchende? Und: Tschechien vor dem größten Protest seiner Geschichte",
+   "desc": "Deutschland und mehrere EU-Staaten planen Abschiebezentren in Ruanda. Ist das Land der richtige Partner dafür? Und: Tschechien vor dem größten Protest seiner Geschichte",
    "url": "https://www.zeit.de/politik/2026-11/abschiebezentren-ruanda-eu-asyl-nachrichtenpodcast",
    "at": "2026-11-15T05:19:34+00:00"
   },
@@ -127,20 +155,6 @@
    "desc": "Der frühere Arbeitsminister Hubertus Heil will SPD-Parteichef werden. Seine Bewerbung nutzte er für einen Angriff auf den aktuellen Vorsitzenden Lars Klingbeil.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/frueherer-arbeitsminister-hubertus-heil-kandidiert-fuer-den-spd-vorsitz",
    "at": "2026-11-14T19:44:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Mecklenburg-Vorpommern: SPD, Linke und Grüne unterschreiben Koalitionsvertrag",
-   "desc": "In Mecklenburg-Vorpommern haben SPD, Grüne und Linke den Koalitionsvertrag unterschrieben. Die rot-rot-grüne Landesregierung ist damit besiegelt.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalitionsvertrag-mecklenburg-vorpommern-spd-linke-gruene-manuela-schwesig",
-   "at": "2026-11-14T19:39:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Abtreibungsverbot in Liechtenstein: »Darf ich noch meine letzte Frage stellen? Ich rede sehr schnell«",
-   "desc": "In Liechtenstein sind Abtreibungen verboten. Der Erbprinz unterbindet jeden Versuch der Legalisierung. Warum? Unser Autor bekam drei Minuten Zeit für ein Interview.",
-   "url": "https://www.zeit.de/politik/2026-11/abtreibungsverbot-liechtenstein-erbprinz-alois-veto",
-   "at": "2026-11-14T19:29:28+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -190,20 +204,6 @@
    "desc": "Der bayerische Vize-Ministerpräsident und Freie-Wähler-Chef Aiwanger ist mit einem Trauerstaatsakt gewürdigt worden. Die Anteilnahme war groß. Zu der Zeremonie in der Frauenkirche kamen mehr als 1.000 Trauergäste.",
    "url": "https://www.tagesschau.de/inland/aiwanger-trauerfeier-100.html",
    "at": "2026-11-14T13:22:33+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ilse Aigner (CSU) als Bundespräsidentin: Ein großes Missverständnis – Kolumne",
-   "desc": "Koalition und Medien sind sich einig, dass Ilse Aigner die ideale Kandidatin für das Schloss Bellevue ist. Wie kann ein ganzes Land so irren?",
-   "url": "https://www.spiegel.de/politik/deutschland/ilse-aigner-csu-als-bundespraesidentin-ein-grosses-missverstaendnis-kolumne-a-9a10a4b5-917f-4872-aa69-7b3b1e7c208c",
-   "at": "2026-11-14T11:12:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bahn zieht positive Bilanz zu Alkoholverbot an Bahnhöfen",
-   "desc": "Seit einem Monat ist bundesweit der Konsum von Alkohol an Bahnhöfen untersagt. Die Deutsche Bahn zeigt sich in einer ersten Bilanz zufrieden. Weniger Müll, weniger Konflikte - die Situation habe sich für Reisende und Mitarbeitende verbessert.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/bahn-alkohol-verbot-bilanz-100.html",
-   "at": "2026-11-14T10:07:05+00:00"
   }
  ]
 }

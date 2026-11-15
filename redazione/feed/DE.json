@@ -1,7 +1,28 @@
 {
  "code": "DE",
- "asOf": "2026-11-15T19:17:34+00:00",
+ "asOf": "2026-11-15T21:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Gaza: Vier Staaten fordern Israel zum Stopp der Blockade von Gaza-Hilfe auf",
+   "desc": "Israel solle Durchlass für humanitäre Hilfe nach Gaza geben, verlangen vier Staaten. Im Westjordanland hat Israels Armee einen AFP-Journalisten festgenommen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
+   "at": "2026-11-15T20:43:47+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Proteste in Tschechien: Sie rufen: »Nie wieder 4:36 Uhr!«",
+   "desc": "Hunderttausende Tschechen demonstrieren gegen ihre Regierung. Es geht um Angriffe auf die Medien, linientreue Kultur – und klandestine nächtliche Parlamentssitzungen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/tschechien-proteste-rechtspopulismus-rundfunk",
+   "at": "2026-11-15T20:00:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nvidia-Skandal: Mutmaßliche Spionin Alice Huang soll nicht mehr bei Megaspeed arbeiten",
+   "desc": "Die Affäre des Ex-Nvidia-Chefs soll am Umgehen von Exportverboten durch die Firma Megaspeed beteiligt gewesen sein. Nach Firmenangaben spielt sie dort »keine Rolle« mehr.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/alice-huang-megaspeed-spionage-nvidia-china-gxe",
+   "at": "2026-11-15T19:31:31+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Heil zum angestrebten SPD-Vorsitz: \"Habe viel Zuspruch aus der Partei\"",
@@ -15,13 +36,6 @@
    "desc": "Der 53-jährige Samir Abu Junis leitete einen bewaffneten Arm der Terrororganisation Hamas. Bei einem israelischen Luftangriff im Gazastreifen wurde er getötet.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/gaza-samir-abu-junis-tot-hamas-kommandeur-luftangriff-israel-rafah-chan-junis",
    "at": "2026-11-15T18:43:23+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nvidia-Skandal: Mutmaßliche Spionin Alice Huang soll nicht mehr bei Megaspeed arbeiten",
-   "desc": "Die Affäre des Ex-Nvidia-Chefs soll am Umgehen von Exportverboten durch die Firma Megaspeed beteiligt gewesen sein. Nach Firmenangaben spielt sie dort »keine Rolle« mehr.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/alice-huang-megaspeed-spionage-nvidia-china-gxe",
-   "at": "2026-11-15T18:40:16+00:00"
   },
   {
    "source": "Die Zeit",
@@ -47,7 +61,7 @@
   {
    "source": "Der Spiegel",
    "title": "Linke in Berlin: Bodo Ramelow wirft Vanessa Emde Vertrauensbruch vor",
-   "desc": "Der Druck auf die umstrittene Berliner Linkenpolitikerin Vanessa Emde wächst: Auch Parteigenosse Bodo Ramelow drägt Emde dazu, die Fraktion im Abgeordnetenhaus der Hauptstadt zu verlassen.",
+   "desc": "Der Druck auf die umstrittene Berliner Linkenpolitikerin Vanessa Emde wächst: Auch Parteigenosse Bodo Ramelow drängt Emde dazu, die Fraktion im Abgeordnetenhaus der Hauptstadt zu verlassen.",
    "url": "https://www.spiegel.de/politik/deutschland/streit-um-berliner-linke-bodo-ramelow-wirft-vanessa-emde-vertrauensbruch-vor-a-67d8cd65-ef4e-4350-a7e6-d3282ce950ec",
    "at": "2026-11-15T17:06:00+00:00"
   },
@@ -157,20 +171,6 @@
    "at": "2026-11-15T12:42:46+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Wolodymyr Selenskyj kritisiert erneut Starshield-Einschränkungen",
-   "desc": "Russische Angriffe auf Energie- und Bahnanlagen würden durch Starshield-Einschränkungen begünstigt, sagt Selenskyj. Russland meldet Abwehr Hunderter Drohnen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-15T12:28:08+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krankenkassenreform: SPD und Grüne lehnen vermehrte Selbstzahlertermine in Arztpraxen ab",
-   "desc": "Durch die Krankenkassenreform müssten mehr Patienten selbst für Termine zahlen, warnen Ärzte. Die SPD verweist auf Termingarantien, auch von den Grünen kommt Kritik.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/selbstzahler-termine-arztpraxen-kassenpatienten-spd-lars-klingbeil-gxe",
-   "at": "2026-11-15T12:27:38+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Sachsen-Anhalt: Weggehen dürfen, wenn es gefährlich wird",
    "desc": "In rund einem Monat will sich der AfD-Politiker Siegmund in Sachsen-Anhalt zum Ministerpräsidenten wählen lassen. Viele Migranten überlegen, wegzuziehen. Doch was gilt für Asylsuchende mit einer Wohnsitzauflage? Von L. Pfeuffer-Rooschüz.",
@@ -204,13 +204,6 @@
    "desc": "Hunderttausende Russen sind im Angriffskrieg gegen die Ukraine gefallen. Jeder Tote reißt eine Lücke. Das ist die Lage am Sonntag.",
    "url": "https://www.spiegel.de/politik/deutschland/news-hunderttausende-gefallene-im-angriffskrieg-gegen-die-ukraine-a-1c97ff6a-6d6e-443d-994b-b3ad716bb9b6",
    "at": "2026-11-15T06:35:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Selbstzahlen oder lange Wartezeit? Kritik an Kassenärzte-Chef",
-   "desc": "Schneller zum Facharzt, wenn man den Termin selbst zahlt? Wegen der anstehenden Honorarkürzungen hält Kassenärzte-Chef Gassen das für wahrscheinlich. Er handelte sich damit deutliche Kritik ein.",
-   "url": "https://www.tagesschau.de/inland/reaktionen-selbstzahler-arzttermine-100.html",
-   "at": "2026-11-14T19:45:01+00:00"
   }
  ]
 }

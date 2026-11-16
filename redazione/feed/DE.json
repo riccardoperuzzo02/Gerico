@@ -1,13 +1,69 @@
 {
  "code": "DE",
- "asOf": "2026-11-15T21:17:35+00:00",
+ "asOf": "2026-11-16T05:17:36+00:00",
  "items": [
   {
+   "source": "Tagesschau",
+   "title": "Pläne der Bundesregierung: Juristen zweifeln an Gesetz gegen Vergesellschaftung",
+   "desc": "Die Bundesregierung will Ländern die Vergesellschaftung großer Wohnungsbestände erschweren. Ein Gutachten im Auftrag der Linken kommt jedoch zu dem Schluss: Das geplante Investitionsschutzgesetz könnte in Karlsruhe scheitern. Von Alexander Budweg.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/investitionsschutzgesetz-dobrindt-gutachten-verfassungswidrig-100.html",
+   "at": "2026-11-16T05:03:11+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Gaza: Vier Staaten fordern Israel zum Stopp der Blockade von Gaza-Hilfe auf",
-   "desc": "Israel solle Durchlass für humanitäre Hilfe nach Gaza geben, verlangen vier Staaten. Im Westjordanland hat Israels Armee einen AFP-Journalisten festgenommen. Das Liveblog",
+   "title": "SPD-Parteiführung: Hubertus Heil will an die Spitze der SPD. Aber will das auch die SPD?",
+   "desc": "Hubertus Heil will Parteichef werden und hat seine Kandidatur verkündet. Hat er Chancen? Außerdem: Die Lage in Gaza nach den Überschwemmungen",
+   "url": "https://www.zeit.de/politik/2026-11/spd-parteifuehrung-hubertus-heil-baerbel-bas-nachrichtenpodcast",
+   "at": "2026-11-16T04:56:30+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russland meldet Abschuss von 139 Drohnen nahe Moskau",
+   "desc": "Drohnen steuerten Russlands Hauptstadt an und setzten eine Industrieanlage in Krasnodar in Brand. Wolodymyr Selenskyj kritisiert Starshield-Beschränkungen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-16T04:52:27+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Friedrich Merz besucht CSU, Hubertus Heil will Lars Klingbeil ablösen, Anthropic geht an die Börse",
+   "desc": "Der Kanzler reist nach München zu den Mütterfreunden von der CSU. Hubertus Heil will Lars Klingbeil als SPD-Chef ablösen. Und der Anthropic-Börsengang ist so verlockend wie risikoreich. Das ist die Lage am Montagmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-friedrich-merz-besucht-csu-hubertus-heil-will-lars-klingbeil-abloesen-anthropic-geht-an-die-boerse-a-1e22ff34-6373-4a3f-a6f3-aec46134b9ea",
+   "at": "2026-11-16T04:44:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Präsidentschaftswahl in Frankreich: Der Kandidat der Matte",
+   "desc": "Judo-Olympiasieger Teddy Riner will französischer Präsident werden. Emmanuel Macron findet das prima, Marine Le Pen schweigt. Muss man Riners Ambitionen ernst nehmen?",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/praesidentschaftswahl-frankreich-2027-teddy-riner-5vor8",
+   "at": "2026-11-16T04:34:07+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: Dritter US-Flugzeugträger offenbar im Nahen Osten angekommen",
+   "desc": "Medienberichten zufolge ist der Flugzeugträger »Theodore Roosevelt« im Nahen Osten eingetroffen. Der Iran pocht weiter auf sein Recht zur Urananreicherung. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-16T03:09:54+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gaza: Vier Staaten fordern Israel zum Stopp der Blockade von Gazahilfe auf",
+   "desc": "Zum Winterbeginn werden die Rufe nach mehr Hilfe für die Menschen in Gaza lauter. Im Westjordanland hat Israels Armee einen AFP-Journalisten festgenommen. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
-   "at": "2026-11-15T20:43:47+00:00"
+   "at": "2026-11-16T02:41:18+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Haushaltsentwurf: Söder will Stromsteuersenkung ohne Kürzung der Mütterrente",
+   "desc": "Der CSU-Chef hält die von der Union versprochene Senkung der Stromsteuer für finanzierbar. Die Ausweitung der Mütterrente solle dafür nicht herhalten, sagt Markus Söder.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/muetterrente-csu-markus-soeder-stromsteuer",
+   "at": "2026-11-15T21:30:40+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Proteste in Tschechien: Sie rufen: »Nie wieder 4:36 Uhr!«",
+   "desc": "Hunderttausende Tschechen demonstrieren gegen ihre Regierung. Es geht um Angriffe auf die Medien, linientreue Kultur – und klandestine nächtliche Parlamentssitzungen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/tschechien-proteste-rechtspopulismus-rundfunk",
+   "at": "2026-11-15T20:00:20+00:00"
   },
   {
    "source": "Die Zeit",
@@ -94,20 +150,6 @@
    "at": "2026-11-15T16:00:05+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Kriegsmaterialgesetz der Schweiz: Worauf zielen sie?",
-   "desc": "Ist ein Land im Krieg, erhält es keine Waffen aus der Schweiz. Das soll sich nun ändern. Wer profitiert davon?",
-   "url": "https://www.zeit.de/2026/49/kriegsmaterialgesetz-schweiz-abstimmung-waffenexport-ruestungsindustrie",
-   "at": "2026-11-15T15:42:30+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Volkstrauertag: Van der Bellen dringt am Volkstrauertag auf Empathie",
-   "desc": "Alexander Van der Bellen appelliert zu Gedenken an die Opfer der beiden Weltkriege daran, Mitgefühl zu zeigen. Das sei das Fundament der Humanität.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/volkstrauertag-alexander-van-der-bellen-rede-bundestag-gxe",
-   "at": "2026-11-15T15:39:38+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Mobile Notaufnahme im Saarland: Nicht mehr in die Klinik",
    "desc": "Klinikaufenthalte werden von vielen älteren Menschen gefürchtet, auch wenn sie nur der Untersuchung dienen. Im Saarland läuft deshalb seit September ein Modellprojekt, bei dem ein Diagnostik-Lkw Pflegeheime anfährt. Von Emil Mura.",
@@ -122,27 +164,6 @@
    "at": "2026-11-15T15:24:11+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Tschechien: Demonstration in Prag gegen geplante Abschaffung der Rundfunkgebühr",
-   "desc": "Tschechiens Regierung will dem öffentlich-rechtlichen Rundfunk die Mittel massiv kürzen. Zehntausende protestieren in Prag gegen die Pläne von Regierungschef Babiš.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/tschechien-prag-rundfunkgebuehr-andrej-babis",
-   "at": "2026-11-15T15:12:39+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russische Angriffe durch Starshield-Drosselung häufiger erfolgreich",
-   "desc": "Ukrainische Abfangdrohnen können nach Angaben aus Kyjiw nur eingeschränkt genutzt werden. Wolodymyr Selenskyj macht erneute Drosselungen von Starshield verantwortlich.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/starshield-spacex-satelliteninternet-ukraine-usa-wolodymyr-selenskyj-gxe",
-   "at": "2026-11-15T15:04:23+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Jemen: Regierungstruppen Jemens ziehen sich von Meerenge Bab al-Mandab zurück",
-   "desc": "Um die Stadt Aden zu sichern, zieht die jemenitische Armee von der Meerenge Bab al-Mandab ab. Damit erhält die Huthis-Miliz Einfluss auf eine wichtige Schiffsroute.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/bab-al-mandab-jemen-huthis-aden-gxe",
-   "at": "2026-11-15T13:48:52+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Heils Kandidatur für SPD-Vorsitz aktiviert Klingbeils Fürsprecher",
    "desc": "Der Erste wagt sich aus der Deckung: Ex-Arbeitsminister Heil will die SPD führen. Was macht Parteichef Klingbeil? Tritt er beim Parteitag im Januar erneut für den Vorsitz an? Nun sprachen sich weitere namhafte SPD-Politiker für ihn aus.",
@@ -155,13 +176,6 @@
    "desc": "Auf Bildschirmen wurde ein Wolf im Schafsfell gezeigt. So wollte Bremen auf die Gefahren des Islamismus aufmerksam machen. Nun wurde die Aktion nach Beschwerden aus der muslimischen Gemeinde abgebrochen.",
    "url": "https://www.spiegel.de/politik/deutschland/wolf-im-schafsfell-bremen-stoppt-eine-umstrittene-kampagne-gegen-islamisten-a-f8f51f70-598f-4adc-84d4-70cfff11f0a2",
    "at": "2026-11-15T13:24:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "SPD-Parteivorsitz: Niedersachsens Ministerpräsident warnt SPD vor »Selbstbeschäftigung«",
-   "desc": "Die SPD brauche eine geschlossene Führung auf Bundesebene, sagt Olaf Lies. Zugleich wächst der Widerstand gegen die Ämterhäufung an der Parteispitze.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/spd-parteivorsitz-hubertus-heil-olaf-lies-lars-klingbeil-gxe",
-   "at": "2026-11-15T12:56:14+00:00"
   },
   {
    "source": "Tagesschau",

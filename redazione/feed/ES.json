@@ -1,7 +1,161 @@
 {
  "code": "ES",
- "asOf": "2026-11-15T21:17:35+00:00",
+ "asOf": "2026-11-16T05:17:36+00:00",
  "items": [
+  {
+   "source": "El País",
+   "title": "Vox se queda a medias en sus esfuerzos por suavizar su discurso para no dar miedo",
+   "desc": "Abascal rebaja su tono sobre género, derechos LGTBIQ+ y Estado autonómico, pero extrema su retórica insultante, llega en su nativismo donde no llegan ni Le Pen ni Meloni, se alía con supremacistas blancos y promociona a un exdirigente neonazi",
+   "url": "https://elpais.com/espana/2026-11-16/vox-se-queda-a-medias-en-sus-esfuerzos-por-suavizar-su-discurso-para-no-dar-miedo.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El PSOE remonta pero no altera la mayoría de la derecha",
+   "desc": "El cuarto ‘tracking’ de 40dB. sitúa a los socialistas en su mejor resultado de toda la legislatura",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/el-psoe-remonta-pero-no-altera-la-mayoria-de-la-derecha.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Un parking, un viaje a Portugal y los cordones de un zapato: la investigación que dio con los ‘topos’ del CNI",
+   "desc": "El agente 7691 fue detenido después de que los servicios de inteligencia lo grabaran en su despacho, sacando supuestamente información clasificada",
+   "url": "https://elpais.com/espana/2026-11-16/un-parking-un-viaje-a-portugal-y-los-cordones-de-un-zapato-la-investigacion-que-dio-con-los-topos-del-cni.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Simulacros, huellas, planos y zapatillas: siete expediciones a Montserrat para aclarar la muerte de Isak Andic",
+   "desc": "Los especialistas de los Mossos recrearon caídas en el camino donde falleció el fundador de Mango, pero no han podido determinar si fue homicida o accidental",
+   "url": "https://elpais.com/espana/catalunya/2026-11-16/simulacros-huellas-planos-y-bambas-las-siete-expediciones-a-la-montana-de-montserrat-que-no-aclararon-la-muerte-de-isak-andic.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Euskadi pone a prueba el crecimiento de Bildu",
+   "desc": "La papeleta vasca se decanta mayoritariamente por el bloque de la investidura. El PNV retrocede",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/euskadi-pone-a-prueba-el-crecimiento-de-bildu.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El dinero que va de las películas al circuito legal",
+   "desc": "El 25% de los billetes falsos intervenidos en España son reproducciones de atrezo, usadas en el cine o videoclips, según la Policía",
+   "url": "https://elpais.com/espana/2026-11-16/el-dinero-que-va-de-las-peliculas-al-circuito-legal.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Esquerra gastó 4,5 millones en asesoría jurídica y acompañamiento a encausados por el ‘procés’",
+   "desc": "Los recursos destinados desde 2017 equivalen a dos veces el coste de su actual campaña electoral para el 29-N",
+   "url": "https://elpais.com/espana/catalunya/2026-11-16/esquerra-gasto-45-millones-en-asesoria-juridica-y-acompanamiento-a-encausados-por-el-proces.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Las diversas caras de la alta participación ante el 29-N",
+   "desc": "Los estudios demoscópicos abren la puerta a que la afluencia a las urnas pueda superar el 75%, porcentaje que los socialistas consideran clave",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/las-diversas-caras-de-la-alta-participacion-ante-el-29-n.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "David Summers: “Yo voto poco. Y cuando lo hago sé que me van a decepcionar”",
+   "desc": "“Una de las cosas más urgentes es volver a querernos los españoles, volver a ser amigos. Ser de izquierdas, de derechas o de lo que sea, ¡qué más da! Llevarse bien resuelve muchos problemas”, sostiene el líder de los Hombres G",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/david-summers-yo-voto-poco-y-cuando-lo-hago-se-que-me-van-a-decepcionar.html",
+   "at": "2026-11-16T04:30:01+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Y los programas vieron la luz",
+   "desc": "A todos los partidos les ha interesado entrar lo más tarde posible en la letra pequeña porque hemos estado ante una campaña de percepciones, no de ideas.",
+   "url": "https://www.20minutos.es/nacional/los-programas-vieron-luz_7061390_3.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Sánchez reproduce en su programa medidas de Sumar y se envuelve en la bandera para intentar pescar votos a izquierda y derecha",
+   "desc": "El programa recoge la prestación por crianza y una tasa a jets y yates, ambas iniciativas de Sumar en la anterior legislatura sobre las que el PSOE votó en contra. En su tercer día de campaña, desde Alcorcón, el presidente también pidió el voto a la gente \"moderada y constitucionalista\".",
+   "url": "https://www.20minutos.es/nacional/sanchez-reproduce-su-programa-medidas-sumar-se-envuelve-bandera-para-intentar-pescar-votos-izquierda-derecha_7061354_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Políticos enrollados",
+   "desc": "Los candidatos van al pódcast de moda para que los jóvenes los escuchen, pero no siempre parecen tan interesados en escucharlos a ellos",
+   "url": "https://www.20minutos.es/nacional/politicos-enrollados_7061325_3.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Cómo los timadores aprovechan para engañarte en periodo de elecciones: del mensaje para \"confirmar el voto\" al falso aviso a la mesa electoral",
+   "desc": "Los ciberdelincuentes suplantan a organismos oficiales para robar datos personales y cuentas de WhatsApp mediante falsos trámites electorales. Los expertos recomiendan verificar siempre los mensajes.",
+   "url": "https://www.20minutos.es/nacional/como-los-timadores-aprovechan-para-enganarte-periodo-elecciones-mensaje-para-confirmar-voto-falso-aviso-mesa-electoral_7060977_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Aagesen evita aportar hasta después del 29-N el informe 'secreto' de Red Eléctrica sobre la prórroga de la central nuclear de Almaraz",
+   "desc": "Desde que empezó el proceso para conceder autorización para operar durante dos o tres años más, Transición Ecológica insistió en que no era necesaria la valoración del operador, que Corredor negó apenas un mes antes. Pero el informe existe, estimó la aportación de la central y el Ministerio aplaza dos meses y medio su difusión.",
+   "url": "https://www.20minutos.es/nacional/aagesen-evita-aportar-hasta-despues-29-n-informe-secreto-red-electrica-sobre-prorroga-central-nuclear-almaraz_7060721_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Infertilidad masculina, un problema en auge de causas desconocidas: \"Nos cuesta contarlo porque parece que ya no eres macho\"",
+   "desc": "La infertilidad masculina sigue rodeada de tabúes pese al deterioro de la calidad seminal. Jonathan relata su experiencia y reclama más pruebas y atención para los hombres.",
+   "url": "https://www.20minutos.es/nacional/infertilidad-masculina-un-problema-auge-causas-desconocidas-nos-cuesta-contarlo-porque-parece-que-ya-no-eres-macho_7060391_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los jóvenes despegan en la construcción: un 10% más de trabajadores menores de 30 en un año y un 59% más de alumnos de FP en cinco",
+   "desc": "A pesar de la incipiente recuperación, el sector denuncia que el ritmo de incorporación de jóvenes es todavía \"insuficiente\" para cubrir la falta de mano de obra y asegurar el relevo generacional.",
+   "url": "https://www.20minutos.es/nacional/los-jovenes-despegan-construccion-un-10-mas-trabajadores-menores-30-un-ano-un-59-mas-alumnos-fp-cinco_7058184_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Inmigración",
+   "desc": "Unos 8.000 adultos han pedido asilo, pero la inmensa mayoría ya no se presenta a la entrevista con la Policía por si se lo deniegan Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/16/6af99024e85ece6b048b457f.html",
+   "at": "2026-11-16T00:18:48+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España|Tierra de nadie",
+   "desc": "El 16 de noviembre de 1976 se inició en las Cortes el debate de la Ley para la Reforma Política, la norma que enterró el franquismo para instaurar una democracia en España. Medio siglo más tarde, hoy se vuelve a negar la alternancia en el poder y se extiende la idea de que sobran personas en política Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/16/6af9cfd0fc6c83fe0e8b457c.html",
+   "at": "2026-11-16T00:18:42+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "El Mentidero de las Salesas",
+   "desc": "La Guardia Civil cree que la fiscalización llevada a cabo por el órgano supervisor ha sido muy laxa Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/16/6afa0cf3fc6c83a70f8b456e.html",
+   "at": "2026-11-16T00:01:29+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Entrevista",
+   "desc": "La elección de la alcaldesa de Valencia como número uno del PP al Congreso por esta provincia fue toda una sorpresa, pero demuestra que es la gran esperanza de Génova para dejar atrás definitivamente la crisis de la dana Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6af9e07ee9cf4a2f498b457f.html",
+   "at": "2026-11-15T23:10:53+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "29-N",
+   "desc": "Los socialistas confían en subir de sus 10 escaños actuales a 12-14 y aspiran a ser primer fuerza en esta región: \"Hacía mucho tiempo que no teníamos una proyección así\" Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6afa00f4e4d4d88a2b8b457e.html",
+   "at": "2026-11-15T23:10:52+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Tellado pide a votantes socialistas que \"se queden en casa\" para \"no ser cómplices\" de PSOE y su corrupción",
+   "desc": "El secretario general del PP dice que está \"seguro que ningún votante socialista se siente cómodo con lo que ha pasado en España\".",
+   "url": "https://www.20minutos.es/nacional/tellado-pide-votantes-socialistas-queden-casa-no-complices-corrupcion-psoe_7061384_0.html",
+   "at": "2026-11-15T21:18:08+00:00"
+  },
   {
    "source": "20minutos",
    "title": "Figaredo insiste en que Vox y BNG pelean un escaño por A Coruña y bromea con que no hay protestas por ser domingo",
@@ -11,17 +165,17 @@
   },
   {
    "source": "El Mundo",
+   "title": "29-N",
+   "desc": "El presidente de Brasil llegará acompañado de André Janones, creador de un canal de WhatsApp con más de diez millones de miembros que fue esencial para que el veterano líder de la izquierda brasileña convirtiera en victoria su previsible derrota Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6afa1a6be9cf4afa148b457c.html",
+   "at": "2026-11-15T20:50:47+00:00"
+  },
+  {
+   "source": "El Mundo",
    "title": "España",
    "desc": "El fin de semana han llegado a la isla 3.161 personas. Sólo el sábado fueron 1.327, el 84% de las 1.580 que desembarcaron ese día en el archipiélago, récord de la ruta Canaria Leer",
    "url": "https://www.elmundo.es/espana/2026/11/15/6af9fde221efa063298b457e.html",
    "at": "2026-11-15T20:31:00+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Sánchez y Chelo García Cortés para las campanadas de La Séptima o ‘La Peter’ en ‘Fuera de Control’",
-   "desc": "El presidente del Gobierno habla de su papel como suegro y de cómo conoció a su esposa, Begoña Gómez",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/sanchez-y-chelo-garcia-cortes-para-las-campanadas-de-la-septima-o-la-peter-en-fuera-de-control.html",
-   "at": "2026-11-15T19:56:07+00:00"
   },
   {
    "source": "El País",
@@ -59,11 +213,11 @@
    "at": "2026-11-15T19:00:03+00:00"
   },
   {
-   "source": "El País",
-   "title": "Feijóo hará campaña en Gipuzkoa tras la agresión a jóvenes de Nuevas Generaciones en Hernani",
-   "desc": "El líder del PP reitera su propuesta de no pagar el IRPF durante el primer año del primer empleo",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/feijoo-hara-campana-en-guipuzcoa-tras-la-agresion-a-jovenes-de-nuevas-generaciones-en-hernani.html",
-   "at": "2026-11-15T18:48:56+00:00"
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Hará parada en esta provincia vasca con Jon Echeverría tras lo ocurrido ayer en Hernani, cuando un grupo de jóvenes lanzó petardos, huevos y piedras al candidato 'popular' Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6af98b45fdddff16668b457e.html",
+   "at": "2026-11-15T18:36:25+00:00"
   },
   {
    "source": "20minutos",
@@ -143,20 +297,6 @@
    "at": "2026-11-15T14:14:00+00:00"
   },
   {
-   "source": "El País",
-   "title": "Frente Amplio echa el resto para revalidar su escaño por Zaragoza: “Puede ser decisivo y se juega aquí”",
-   "desc": "Colau se lanza a por el voto de los autónomos: propone hacer indefinida la tarifa plana para aquellos que ingresen menos del salario mínimo anual y medidas para reducir la burocracia",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/frente-amplio-echa-el-resto-para-revalidar-su-escano-por-zaragoza-puede-ser-decisivo-y-se-juega-aqui.html",
-   "at": "2026-11-15T14:13:58+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Abascal vincula inmigración y delincuencia con datos falsos sobre la población extranjera de Cornellà",
-   "desc": "El líder de Vox asegura en un mitin que “los españoles son minoría” en la ciudad, cuando según las estadísticas representan el 81% de los vecinos",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/abascal-vincula-inmigracion-y-delincuencia-con-datos-falsos-sobre-la-poblacion-extranjera-de-cornella.html",
-   "at": "2026-11-15T14:10:56+00:00"
-  },
-  {
    "source": "20minutos",
    "title": "Las predicciones sobre El Gordo de Navidad que se hicieron realidad: todos los videntes que lograron 'adivinar' el número",
    "desc": "Acertar la cifra exacta es una probabilidad entre 100.000 décimos posibles. Sin embargo, todos los años decenas de mentalistas prometen números para ganar alguno de los premios.",
@@ -192,25 +332,11 @@
    "at": "2026-11-15T12:32:18+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Ayuso censura a los manifestantes que van \"de pancarta en pancarta\" para obtener \"una subvención\"",
-   "desc": "La presidenta madrileña ha criticado durante un mitin en Móstoles a los manifestantes que protestaban en defensa de la educación pública y ha acusado a algunos de anteponer la ideología al interés común.",
-   "url": "https://www.20minutos.es/nacional/ayuso-censura-los-manifestantes-que-van-pancarta-pancarta-para-obtener-una-subvencion_7061290_0.html",
-   "at": "2026-11-15T12:30:40+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Inmigración",
    "desc": "En total, el viernes hubo ocho llegadas con 843 personas desembarcadas, que sumadas a las 1.488 desembarcadas de doce cayucos este sábado, eleva el balance a 2.331 los inmigrantes en 22 cayucos en los dos días Leer",
    "url": "https://www.elmundo.es/espana/2026/11/15/6af97162fdddff6c338b4599.html",
    "at": "2026-11-15T12:28:57+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Irene Montero, en Sevilla: PP y Vox quieren tener esclavos \"negros, latinos y andaluces trabajadores\"",
-   "desc": "Durante un mitin en Sevilla, la candidata de Podemos ha denunciado la precariedad laboral, el racismo y los problemas de acceso a la vivienda, y ha defendido una izquierda estatal fuerte.",
-   "url": "https://www.20minutos.es/nacional/irene-montero-sevilla-pp-vox-quieren-tener-esclavos-negros-latinos-andaluces-trabajadores_7061289_0.html",
-   "at": "2026-11-15T12:21:06+00:00"
   },
   {
    "source": "El Mundo",
@@ -241,53 +367,11 @@
    "at": "2026-11-15T11:32:38+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Un año de la condena a García Ortiz: un indulto \"en la mesa\" del Gobierno y el TC estudiará su amparo después del 29N",
-   "desc": "Ejerce en el Supremo después de que la Fiscalía interpretara que la inhabilitación solo se aplica al cargo de fiscal general",
-   "url": "https://www.20minutos.es/nacional/un-ano-condena-garcia-ortiz-un-indulto-mesa-gobierno-tc-estudiara-su-amparo-despues-29n_7061275_0.html",
-   "at": "2026-11-15T11:32:35+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "CCOO anuncia una huelga en el transporte de mercancías por carretera en plena Navidad: paros convocados el 23 y 24 de diciembre",
-   "desc": "La protesta se produce por el retraso del Gobierno en la aprobación de los coeficientes reductores que permitirán a los trabajadores del sector jubilarse anticipadamente sin penalización.",
-   "url": "https://www.20minutos.es/nacional/ccoo-anuncia-una-huelga-transporte-mercancias-por-carretera-plena-navidad-paros-convocados-23-24-diciembre_7061254_0.html",
-   "at": "2026-11-15T10:44:48+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "¿Puedo votar a Gabriel Rufián (ERC), EH Bildu o PNV... en las elecciones generales si vivo en Madrid?",
-   "desc": "A menos de dos días para la celebración de las elecciones generales, son muchos quienes aún no tienen claro su voto y se calcula que, aproximadamente el...",
-   "url": "https://www.20minutos.es/nacional/puedo-votar-gabriel-rufian-erc-eh-bildu-pnv-elecciones-generales-madrid_5149744_0.html",
-   "at": "2026-11-15T10:23:41+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El PP cuelga su programa electoral en Spotify: \"No es una lista de canciones para distraer de los problemas de España\"",
-   "desc": "El PP ha defendido que su campaña electoral debe centrarse en las propuestas y en las soluciones a los problemas del país.",
-   "url": "https://www.20minutos.es/nacional/pp-cuelga-su-programa-electoral-spotify-no-es-una-lista-canciones-para-distraer-los-problemas-espana_7061249_0.html",
-   "at": "2026-11-15T10:16:11+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "España",
    "desc": "Coordinadora de Barrios señala que el Gobierno de la ciudad autónoma se ha negado a ejecutar su traslado a la Península como \"medida de presión\" Leer",
    "url": "https://www.elmundo.es/espana/2026/11/15/6af9817ae85ece35098b458d.html",
    "at": "2026-11-15T10:09:01+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El Gobierno lamenta que no haya acuerdo pesquero UE-Mauritania y pide seguir negociando fuera de plazo",
-   "desc": "Una treintena de buques españoles deberá abandonar aguas mauritanas y desplazarse temporalmente a caladeros de Portugal y Guinea-Bisáu mientras continúan las negociaciones.",
-   "url": "https://www.20minutos.es/nacional/gobierno-lamenta-que-no-haya-acuerdo-pesquero-ue-mauritania-pide-seguir-negociando-fuera-plazo_7061246_0.html",
-   "at": "2026-11-15T10:01:55+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Ada Colau defiende a Jordi Wild de las críticas por sus palabras sobre violencia machista: \"Estoy segura de que esa no era su intención\"",
-   "desc": "La candidata de Frente Amplio ha aprovechado para pedirle a Jordi Wild que utilice su \"altavoz\" para seguir \"hablando de esto, que no normalicemos esos asesinatos machistas\".",
-   "url": "https://www.20minutos.es/nacional/ada-colau-defiende-jordi-wild-criticas-palabras-violencia-machista-segura-no-era-intencion_7061242_0.html",
-   "at": "2026-11-15T10:00:48+00:00"
   },
   {
    "source": "El Mundo",
@@ -302,90 +386,6 @@
    "desc": "El Frente Atlántico continuará instalado en el país y dejará un nuevo descenso de las temperaturas Leer",
    "url": "https://www.elmundo.es/espana/2026/11/15/6af951c6e4d4d8896a8b458c.html",
    "at": "2026-11-15T07:36:45+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Mensajes al bajar del cayuco: “Mamá, soy Modou. Cogí un barco, llegué a España”",
-   "desc": "El Hierro, la isla canaria menos poblada, vive un aluvión de cayucos en sus costas, superando todas las cifras anteriores. Más de 6.000 personas han llegado en noviembre al puerto de La Restinga, y están siendo trasladadas a la Península",
-   "url": "https://elpais.com/espana/2026-11-15/mensajes-al-bajar-del-cayuco-mama-soy-modou-cogi-un-barco-llegue-a-espana.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Hacer campaña con tanques o con drones",
-   "desc": "Lo más interesante de este nuevo escenario es el efecto bucle y la hibridación que se establece entre medios tradicionales, redes sociales y las plataformas de los ‘influencers’",
-   "url": "https://elpais.com/opinion/2026-11-15/hacer-campana-con-tanques-o-con-drones.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "PSOE y PP recrudecen la pelea por el primer puesto en la recta final hacia el 29-N",
-   "desc": "Sánchez apuesta por su política social y el miedo a la ultraderecha y Feijóo por la España hundida en la corrupción y su perfil de gestor",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/psoe-y-pp-recrudecen-la-pelea-por-el-primer-puesto-en-la-recta-final-hacia-el-29-n.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La estrategia de Núcleo Nacional: reclutar jóvenes, agitar la calle y quedarse en la sombra",
-   "desc": "La investigación atribuye a la asociación neonazi la creación de una “esfera de odio” para criminalizar a colectivos vulnerables y la captación de menores para adoctrinarlos",
-   "url": "https://elpais.com/espana/2026-11-15/la-estrategia-de-nucleo-nacional-reclutar-jovenes-agitar-la-calle-y-quedarse-en-la-sombra.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "El PSOE gana por la izquierda lo que pierde por la derecha, según el tercer ‘tracking’ de la campaña",
-   "desc": "Los socialistas mejoran sus posiciones entre el electorado de centro, pero están en riesgo de perder un millón de sufragios por el flanco conservador",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/el-psoe-gana-por-la-izquierda-lo-que-pierde-por-la-derecha-segun-el-tercer-tracking-de-la-campana.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Miriam Nogueras, candidata de Junts: “No me presento para poner o quitar presidentes españoles”",
-   "desc": "La cabeza de lista de la formación reivindica los éxitos que le ha dado la presión a Pedro Sánchez, pero veta al actual presidente para una eventual reelección",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/miriam-nogueras-candidata-de-junts-no-me-presento-para-poner-o-quitar-presidentes-espanoles.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Cataluña, el granero socialista y un reto para el avance del PP",
-   "desc": "Girona se ha convertido históricamente en un termómetro para las posiblidades de éxito del Partido Popular a escala nacional",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/cataluna-el-granero-socialista-y-un-reto-para-el-avance-del-pp.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La brújula infalible de Sigüés apunta a la derecha",
-   "desc": "Desde 1977, el partido que gana las elecciones generales en el pequeño pueblo aragonés es el que se impone en toda España. “No es descontento, es decepción”, coinciden exvotantes socialistas",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/la-brujula-infalible-de-sigues-apunta-a-la-derecha.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Todos los caminos a La Moncloa pasan por el ‘podcast’: “¿Eres más pija o más quinqui?”",
-   "desc": "Por primera vez, una campaña a las generales en España se vive en estos formatos. Sánchez ya lleva tres y su equipo no descarta más: “Lo cerramos en el último momento”",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/todos-los-caminos-a-la-moncloa-pasan-por-el-podcast.html",
-   "at": "2026-11-15T04:30:01+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "29-N|Aquí se juega la campaña (5)",
-   "desc": "Vox rompió el tradicional reparto de escaños en Extremadura entre PSOE y PP en las anteriores generales al lograr uno por Badajoz. Las encuestas le auguran otro más el 29-N en Cáceres Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6af89bc9fc6c83a60b8b45a3.html",
-   "at": "2026-11-14T23:00:03+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Libre de marca",
-   "desc": "\"Cuando Bildu toma la calle, la sociedad vasca corre las cortinas\"",
-   "url": "https://www.elmundo.es/espana/2026/11/15/6af8a2e821efa0a51a8b4583.html",
-   "at": "2026-11-14T23:00:02+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "España",
-   "desc": "El peso de la estética \"como reclamo\", el gusto por \"la violencia por la violencia\", la dinámica \"de acción y reacción en la calle\", y el hecho de que \"no son todos brutos de gimnasio, sino también hay gente leída\": un análisis policial real del grupo neonazi detenido Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/14/6af75bd2fdddffb36c8b45ad.html",
-   "at": "2026-11-14T21:26:52+00:00"
   }
  ]
 }

@@ -1,7 +1,182 @@
 {
  "code": "US",
- "asOf": "2026-11-15T21:17:35+00:00",
+ "asOf": "2026-11-16T05:17:36+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "International Students Are Turning Away From U.S. Universities",
+   "desc": "For a second year, Trump administration policies appear to be scaring away international students, disrupting the finances of the American colleges that depend on them.",
+   "url": "https://www.nytimes.com/2026/11/16/us/international-student-college-enrollment-declines.html",
+   "at": "2026-11-16T05:01:06+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
+   "desc": "The talks are expected to focus on issues including nuclear non-proliferation, the Middle East war, trade policies and, possibly, the Ukraine war.",
+   "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+   "at": "2026-11-16T04:34:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Flights normalizing after ground stop. Here's what to know",
+   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "at": "2026-11-16T04:30:25+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
+   "desc": "A deepening reliance on external demand leaves China more exposed to shocks abroad as domestic momentum fades, analysts say.",
+   "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+   "at": "2026-11-16T03:53:59+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What to Know About Continued Flight Disruptions",
+   "desc": "After a nationwide ground stop, flight schedules are returning to normal after tens of thousands of travelers encountered delays and cancellations over the weekend.",
+   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
+   "at": "2026-11-16T03:48:46+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+   "desc": "Calls for Jensen Huang's return as Nvidia CEO are growing, with tech executives and major shareholders backing a potential comeback following his resignation.",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
+   "at": "2026-11-16T03:35:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+   "desc": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war.",
+   "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+   "at": "2026-11-16T02:56:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How Could a Router Lead to a Nationwide Ground Stop?",
+   "desc": "Aviation experts and federal officials said the network outage began after a new piece of networking equipment began flooding the rest of the system with data. The underlying cause is unclear.",
+   "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
+   "at": "2026-11-16T02:28:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "$180 million Van Gogh tests the art market and collector confidence",
+   "desc": "The art auctions in New York next week could top $2 billion, as a treasure trove of masterpieces comes to the market for the first time in decades.",
+   "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+   "at": "2026-11-16T02:22:04+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Taking a ride in a flying car",
+   "desc": "Flying cars have been parked in our imagination for more than a century, but a Bay Area startup, Alef, has spent 11 years trying to get the idea off the ground. Itay Hod takes a ride, getting a bird's-eye view of the future.",
+   "url": "https://www.cbsnews.com/video/taking-ride-flying-car/",
+   "at": "2026-11-16T02:12:03+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Siblings of man run over by ICE agent say incident was \"intentional\"",
+   "desc": "Miguel Parra Hernandez was hit by Immigration and Customs Enforcement agent Mario Alberto Morales in Houston on Oct. 10.",
+   "url": "https://www.cbsnews.com/news/ice-agent-siblings-man-run-over-incident-texas/",
+   "at": "2026-11-16T01:54:30+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Siblings of man run over by ICE agent allege that \"it was not an accident\"",
+   "desc": "Last month, an Immigration and Customs Enforcement agent in an unmarked SUV struck and injured a Mexican construction worker. Now, his siblings are speaking with Camilo Montoya-Galvez about the incident, alleging that \"it was not an accident.\"",
+   "url": "https://www.cbsnews.com/video/siblings-man-run-over-ice-agent-allege-not-accident/",
+   "at": "2026-11-16T01:51:28+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump officials ask for $50 billion for air traffic control after ground stop",
+   "desc": "President Trump broke his silence on the travel turmoil, triggered by Friday's nationwide ground stop. Taurean Small reports from the White House.",
+   "url": "https://www.cbsnews.com/video/trump-officials-ask-50-billion-air-traffic-control-ground-stop/",
+   "at": "2026-11-16T01:48:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Ripple effects of nationwide ground stop still felt at airports: \"Exhausted, frustrated\"",
+   "desc": "The ripple effects of Friday's nationwide ground stop were still felt on Sunday, with 2,000 canceled flights and more than 8,000 delays. Gwen Baumgardner reports from Los Angeles International Airport.",
+   "url": "https://www.cbsnews.com/video/ripple-effects-nationwide-ground-stop-felt-airports-exhausted-frustrated/",
+   "at": "2026-11-16T01:45:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Flight disruptions expected to last into Monday",
+   "desc": "Congress recently gave the Department of Transportation $12.5 billion to upgrade the aging air traffic control system. President Trump wants more.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6041683/flight-disruptions-expected-to-last-into-monday",
+   "at": "2026-11-16T01:19:28+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 15)",
+   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
+   "at": "2026-11-16T00:32:59+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/15/2026: The Cost of War; Kratom; John Malkovich",
+   "desc": "First, hear from families of U.S. soldiers killed in Iran war. Then, Kratom: Addictive, or herbal supplement? And John Malkovich: The 60 Minutes Interview.",
+   "url": "https://www.cbsnews.com/video/60minutes-2026-11-15/",
+   "at": "2026-11-16T00:00:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/15: CBS Weekend News",
+   "desc": "Travelers face more chaos as airlines scramble; Trump officials ask for $50 billion to overhaul air traffic control.",
+   "url": "https://www.cbsnews.com/video/111526-cbs-weekend-news/",
+   "at": "2026-11-15T23:30:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Chris Van Hollen Says His Majority Leader Challenge to Chuck Schumer Is Gaining Support",
+   "desc": "Senator Chris Van Hollen of Maryland said on Sunday that he has a “wide-open” path to unseat Chuck Schumer, the long-serving Senate Democratic leader.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/van-hollen-schumer-democrats-majority-leader.html",
+   "at": "2026-11-15T23:02:15+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Nvidia Fallout Looms Over Trump-Xi Meeting",
+   "desc": "So far, President Trump has indicated that he does not plan to press the Chinese leader about U.S. intelligence findings that a Chinese spy targeted Jensen Huang.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/nvidia-trump-huang-china-xi.html",
+   "at": "2026-11-15T22:54:41+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Far from home. Voyager 1 is now farther than anything man has sent into space",
+   "desc": "NASA's Voyager 1, which is the furthest man-made object from Earth, is set to reach a new milestone this week. On Wednesday, the probe will be roughly 16 billion miles from Earth.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
+   "at": "2026-11-15T22:41:22+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'We slept here': Flight delays linger but schedule is back on track for Monday",
+   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
+   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
+   "at": "2026-11-15T22:33:26+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "8 Takeaways From a Big Democratic Gathering in Denver: Democrats in Array",
+   "desc": "More than a half-dozen potential Democratic presidential candidates made early pitches for themselves and their visions at what amounted to a party-wide post-election victory party.",
+   "url": "https://www.nytimes.com/2026/11/15/us/politics/democrats-denver-gathering-takeaways.html",
+   "at": "2026-11-15T22:10:03+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Who makes Sydney Sweeney's American Eagle jeans — and under what conditions?",
+   "desc": "Sydney Sweeney has great jeans, American Eagle Outfitters tells us. But who made them? And what are working conditions like in the garment factories of Pakistan and Bangladesh?",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry",
+   "at": "2026-11-15T22:07:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Flight Delays and Cancellations Persist as System Recovers From Ground Stop",
+   "desc": "Operations are returning to normal after air traffic was shut down for more than 4 hours on Friday following a maintenance upgrade that crippled communications.",
+   "url": "https://www.nytimes.com/2026/11/15/us/faa-groundstop-flights-status-delays-canceled.html",
+   "at": "2026-11-15T22:06:59+00:00"
+  },
   {
    "source": "New York Times",
    "title": "A Campus Sexual Assault Lawsuit Tests an Unusual Legal Strategy",
@@ -17,18 +192,18 @@
    "at": "2026-11-15T20:04:57+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
+   "desc": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family's financial ties to the chipmaker.",
+   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+   "at": "2026-11-15T19:58:21+00:00"
+  },
+  {
    "source": "New York Times",
    "title": "After Her Baby Was Buried Alive, a South Carolina Mother Wonders Why",
    "desc": "Koah Sharp, nearly 1, was rescued alive this week in a rural patch of central South Carolina. In her first interview, Koah’s mother explains what happened.",
    "url": "https://www.nytimes.com/2026/11/14/us/south-carolina-boy-buried-alive.html",
    "at": "2026-11-15T19:46:02+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "What to Know About Continued Flight Disruptions",
-   "desc": "After a nationwide ground stop, travelers are still encountering snags with thousands of flights delayed or canceled on Sunday.",
-   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
-   "at": "2026-11-15T19:40:08+00:00"
   },
   {
    "source": "CBS News",
@@ -45,34 +220,6 @@
    "at": "2026-11-15T18:53:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Chris Van Hollen Says His Majority Leader Challenge to Chuck Schumer Is Gaining Support",
-   "desc": "Senator Chris Van Hollen of Maryland said on Sunday that he has a “wide-open” path to unseat Chuck Schumer, the long-serving Senate Democratic leader.",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/van-hollen-schumer-democrats-majority-leader.html",
-   "at": "2026-11-15T18:50:25+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "8 Takeaways From a Big Democratic Gathering in Denver: Democrats in Array",
-   "desc": "More than a half-dozen potential Democratic presidential candidates made early pitches for themselves and their visions at what amounted to a party-wide post-election victory party.",
-   "url": "https://www.nytimes.com/2026/11/15/us/politics/democrats-denver-gathering-takeaways.html",
-   "at": "2026-11-15T18:46:52+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "'We slept here': Flight delays linger but schedule is back on track for Monday",
-   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
-   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
-   "at": "2026-11-15T18:22:23+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Flight Delays and Cancellations Persist as System Recovers From Ground Stop",
-   "desc": "Operations are returning to normal after air traffic was shut down for more than 4 hours on Friday following a maintenance upgrade that crippled communications.",
-   "url": "https://www.nytimes.com/2026/11/15/us/faa-groundstop-flights-status-delays-canceled.html",
-   "at": "2026-11-15T18:17:24+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "DOT Sec. Duffy ties router in southern Arkansas to issues that led to nationwide ground stop",
    "desc": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said.",
@@ -84,14 +231,7 @@
    "title": "‘I Love Being a Girl’: Inside the Life of a Sorority Influencer",
    "desc": "Many young adults want to be influencers. And why not? It’s fun. But it also means that the camera is always on.",
    "url": "https://www.nytimes.com/2026/11/15/us/haley-dekreek-sorority-influencer-college.html",
-   "at": "2026-11-15T18:14:11+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-   "desc": "Bessent has criticized Howard Lutnick’s department over suspected chip diversion to China while defending President Donald Trump’s handling of the matter.",
-   "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
-   "at": "2026-11-15T18:10:18+00:00"
+   "at": "2026-11-15T18:14:12+00:00"
   },
   {
    "source": "New York Times",
@@ -106,6 +246,13 @@
    "desc": "Officials are seeking at least $1 million in damages from the owners of the tanker that hit a cruise ship last week. The incident was dubbed \"the miracle on the Mississippi\" after no one was killed.",
    "url": "https://www.npr.org/2026/11/15/nx-s1-6041677/new-orleans-port-sues-miracle-mississippi-cruise-ship",
    "at": "2026-11-15T17:45:27+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What I know and respect about Colette Kress, the person now leading Nvidia",
+   "desc": "Colette Kress is the steady hand that Nvidia needs in charge during this turbulent time.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/15/jim-cramer-nvidia-colette-kress-jensen-huang.html",
+   "at": "2026-11-15T17:14:17+00:00"
   },
   {
    "source": "New York Times",
@@ -134,13 +281,6 @@
    "desc": "Transportation Secretary Sean Duffy said that \"we have to get off old network, old telecom\" after a telecommunication outage led to a nationwide ground stop on Friday.",
    "url": "https://www.cbsnews.com/news/ground-stop-faa-telecom-network-sean-duffy-face-the-nation/",
    "at": "2026-11-15T16:52:34+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 15)",
-   "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-15-2026/",
-   "at": "2026-11-15T16:38:14+00:00"
   },
   {
    "source": "New York Times",
@@ -176,13 +316,6 @@
    "desc": "Judge Ana C. Reyes, who has been overseeing combative litigation, said the Trump administration would not be responsible for operating the course while the case proceeded.",
    "url": "https://www.nytimes.com/2026/11/14/us/politics/trump-east-potomac-golf-course.html",
    "at": "2026-11-15T15:04:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Flights expected to normalize by tonight after ground stop. Here's what to know",
-   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-15T15:00:00+00:00"
   },
   {
    "source": "CBS News",
@@ -344,111 +477,6 @@
    "desc": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
    "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
    "at": "2026-11-15T06:00:01+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump blasts judge for halting his Washington golf project and says he will appeal",
-   "desc": "A federal judge on Saturday ordered a two-week delay to any work at a historic Washington public golf course not far from the White House.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6041152/judge-trump-golf-course-blocks",
-   "at": "2026-11-15T04:28:45+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "How Trump administration responded to FAA ground stop",
-   "desc": "President Trump was informed within 30 minutes after the Federal Aviation Administration imposed a nationwide ground stop Friday afternoon, according to U.S. officials.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-trump-admin-response/",
-   "at": "2026-11-15T03:16:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Evacuation lifted after bomb threat near industrial plant in Illinois",
-   "desc": "Police said the device had been rendered safe and residents were allowed to return to their homes.",
-   "url": "https://www.cbsnews.com/news/peoria-illinois-bomb-threat-evacuation/",
-   "at": "2026-11-15T01:28:38+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "FAA ground stop disrupts college football",
-   "desc": "Some college football games were delayed a few hours on Saturday or postponed to Sunday. And in Oklahoma at least, there will be perks for fans to make up for the inconvenience, including cheap beers.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6041115/faa-ground-stop-college-football-delays",
-   "at": "2026-11-15T01:13:59+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Unlike Other Countries, America’s Government Funds Its Air Infrastructure",
-   "desc": "Despite handling the most flights in the world, the United States’ air traffic systems rely on 1980s-era computer equipment.",
-   "url": "https://www.nytimes.com/2026/11/14/us/unlike-other-countries-americas-government-funds-its-air-infrastructure.html",
-   "at": "2026-11-15T00:41:29+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Stranded by planes, travelers turned to trains and automobiles.",
-   "desc": "People trying to find new ways to get to their destinations still encountered obstacles at the rental car counter and on Amtrak’s booking system.",
-   "url": "https://www.nytimes.com/live/2026/11/14/us/faa-nationwide-ground-stop-flights/travelers-alternatives-trains-automobiles",
-   "at": "2026-11-15T00:17:18+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Florida city cancels St. Patrick's Day parade, citing new anti-DEI law",
-   "desc": "A new Florida law that prohibits taxpayer dollars from going toward diversity initiatives has prompted Delray Beach to cancel its St. Patrick's Day parade after a nearly 60-year run.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6041093/st-patricks-day-parade-canceled-florida-dei",
-   "at": "2026-11-15T00:03:52+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "SpaceX catches upper stage of Starship rocket in historic first",
-   "desc": "Starship Test Flight 15 marked the first time Elon Musk's company tried to catch both the booster and upper stage of the rocket.",
-   "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
-   "at": "2026-11-14T23:10:14+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Passengers rescued after tanker hit river cruise in New Orleans",
-   "desc": "A tanker struck a river cruise ship on the Mississippi River near the Port of New Orleans Friday, partially submerging the passenger boat.",
-   "url": "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/",
-   "at": "2026-11-14T23:05:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "'Root cause’ of nationwide ground stop is unknown, FAA says",
-   "desc": "Routers and networking equipment may be involved in the problems that led to the ground stop, but a definitive cause has not been established, officials said.",
-   "url": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html",
-   "at": "2026-11-14T22:54:47+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Maintenance gone awry caused nation-wide ground stop, says Transportation Secretary",
-   "desc": "Transportation Secretary Sean Duffy points blame toward contractor in explaining Friday's nation-wide aviation ground stop.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6040942/maintenance-gone-awry-caused-nation-wide-ground-stop-says-transportation-secretary",
-   "at": "2026-11-14T22:48:38+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "$180 million Van Gogh tests the art market and collector confidence",
-   "desc": "The art auctions in New York next week could top $2 billion, as a treasure trove of masterpieces comes to the market for the first time in decades.",
-   "url": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
-   "at": "2026-11-14T22:34:07+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "US has lost measles elimination status, global health authorities say",
-   "desc": "The U.S. has lost its status as a country where measles is eliminated, according to researchers with direct knowledge of the deliberations at the Pan American Health Organization.",
-   "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
-   "at": "2026-11-14T22:15:02+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Kept Out of Sight as F.A.A. Issued Flight Ground Stop",
-   "desc": "The F.A.A. called a rare halt on flights nationwide, but the president stayed away from cameras and issued social media posts on the entertainment industry and California’s Democratic governor.",
-   "url": "https://www.nytimes.com/2026/11/14/us/politics/trump-flights-air-traffic-social-media.html",
-   "at": "2026-11-14T22:10:43+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Defense Contractor L3Harris Was Behind Upgrade That Led to Ground Stop",
-   "desc": "The little-known defense giant does a lot of work for the Federal Aviation Administration and owns the equipment for the agency’s telecommunications network.",
-   "url": "https://www.nytimes.com/2026/11/14/us/l3harris-ground-stop.html",
-   "at": "2026-11-14T22:08:07+00:00"
   }
  ]
 }

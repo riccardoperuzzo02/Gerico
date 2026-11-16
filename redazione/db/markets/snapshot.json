@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-16T07:28:37+01:00",
+ "asOf": "2026-11-16T18:46:49+01:00",
  "classes": [
   {
    "items": [
@@ -27,33 +27,33 @@
      "why": ""
     },
     {
-     "chg": 0.1,
+     "chg": -0.65,
      "name": "Ftse Mib",
-     "note": "Chiusura del 13 novembre (Ansa)",
+     "note": "Chiusura del 16 novembre, ore 17:37 (Ansa)",
      "story": "2026-11-09-wall-street-ia-chip",
-     "value": "51.858",
-     "why": "Seduta marginalmente positiva, secondo l'Ansa."
+     "value": "51.520",
+     "why": "Milano chiude in calo, con Technoprobe e Stellantis tra i titoli più deboli, secondo l'Ansa."
+    },
+    {
+     "chg": -0.6,
+     "name": "Dax",
+     "note": "Chiusura del 16 novembre (Ansa)",
+     "value": "n.d.",
+     "why": "Francoforte tra le piazze più deboli d'Europa."
     },
     {
      "chg": -0.2,
-     "name": "Dax",
-     "note": "Chiusura del 13 novembre (Ansa)",
-     "value": "n.d.",
-     "why": "Francoforte l'unica grande Borsa europea in calo."
-    },
-    {
-     "chg": 0.1,
      "name": "Cac 40",
-     "note": "Chiusura del 13 novembre (Ansa)",
+     "note": "Chiusura del 16 novembre (Ansa)",
      "value": "n.d.",
      "why": ""
     },
     {
-     "chg": 0.3,
+     "chg": -0.2,
      "name": "Ftse 100",
-     "note": "Chiusura del 13 novembre (Ansa)",
+     "note": "Chiusura del 16 novembre (Ansa)",
      "value": "n.d.",
-     "why": "Londra la migliore d'Europa."
+     "why": "Chiusura in lieve ribasso."
     },
     {
      "chg": -0.45,
@@ -82,7 +82,7 @@
    ],
    "key": "indici",
    "label": "Indici",
-   "note": "Europa e Wall Street: chiusure di venerdì 13 novembre. Asia: dati di stamattina."
+   "note": "Europa: chiusure di lunedì 16 novembre. Wall Street: chiusura del 13 novembre. Asia: dati di stamattina."
   },
   {
    "items": [
@@ -117,8 +117,8 @@
    "items": [
     {
      "name": "Spread Btp-Bund",
-     "note": "Chiusura del 13 novembre, poco mosso (Ansa)",
-     "value": "104 bp",
+     "note": "Chiusura del 16 novembre, ore 18:01, in rialzo (Ansa)",
+     "value": "106 bp",
      "why": ""
     }
    ],
@@ -155,11 +155,11 @@
      "why": ""
     },
     {
-     "chg": -3,
+     "chg": -7,
      "name": "Gas Ttf",
-     "note": "Ore 18:11 del 13 novembre (Ansa)",
-     "value": "89 €/MWh",
-     "why": "Giovedì sera era vicino a 94 euro per le tensioni in Medio Oriente."
+     "note": "Ore 18:12 del 16 novembre (Ansa)",
+     "value": "sotto 84 €/MWh",
+     "why": "Forte calo rispetto a venerdì, quando era a 89 euro."
     },
     {
      "chg": -1.4,
@@ -187,8 +187,24 @@
    "note": "Ether senza dato verificato"
   }
  ],
- "label": "Chiusure di ieri e Asia stamattina",
+ "label": "Chiusura delle Borse europee",
  "sources": [
+  {
+   "name": "ANSA, Borsa: l'Europa conclude in lieve ribasso, Londra -0,2% (16 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_276559ab-82ca-4957-8fcf-940b004727b6.html"
+  },
+  {
+   "name": "ANSA, Borsa: Milano chiude in calo, Ftse Mib -0,65% (16 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-milano-chiude-in-calo-ftse-mib-065_520bf599-a2c6-48a3-a1c8-658b018e7e39.html"
+  },
+  {
+   "name": "ANSA, spread Btp-Bund a 106 punti base (16 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/lo-spread-tra-btp-e-bund-chiude-in-rialzo-a-106-punti-base_c36c80c7-844f-4e45-aae7-01287c0faa98.html"
+  },
+  {
+   "name": "ANSA, gas in forte calo sotto gli 84 euro (16 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/il-gas-in-forte-calo-7-sotto-gli-84-euro-al-megawattora_4f124b1f-bd5c-4f44-a96a-90f7cb393ff0.html"
+  },
   {
    "name": "CNBC, Stock market today (16 novembre)",
    "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"
@@ -214,5 +230,5 @@
    "url": "https://www.open.online/2026/11/13/borse-blackout-microsoft-nvidia-nasdaq-wall-street/"
   }
  ],
- "summary": "L'Asia apre la settimana in calo sui chip: Nikkei -2,04% e Kospi -3,48%, secondo CNBC; i future americani sono in ribasso. Venerdì Milano ha chiuso a 51.858 punti (+0,1%); il bitcoin è a circa 62.000 dollari."
+ "summary": "Le Borse europee chiudono la seduta in lieve ribasso: Milano -0,65% a 51.520 punti, Francoforte -0,6%, Parigi e Londra -0,2%. Lo spread Btp-Bund sale a 106 punti base e il gas cala del 7%, sotto gli 84 euro al megawattora."
 }

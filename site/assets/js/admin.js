@@ -91,9 +91,16 @@ G.page("admin", async function (P) {
       L("Sei entrato come ", "You're signed in as ") + "<b>" + esc(u.nome) + "</b>. " + L("Esci dal menu ed entra con l'account dell'amministratore.", "Sign out from the menu and sign in with the administrator's account.") + "</p></section>";
   };
 
+  // ---------- le visite dell'amministratore: su questo dispositivo si contano o no ----------
+  const nonContate = () => G.ls.get("gerico.nonContare", false) === true;
+  const mieTesto = () => (nonContate() ? L("Le visite di questo dispositivo non si contano.", "Visits from this device are not counted.") : L("Le visite di questo dispositivo si contano.", "Visits from this device are counted."));
+  const mieBottone = () => (nonContate() ? L("Contale", "Count them") : L("Non contarle", "Don't count them"));
+
   // ---------- il pannello ----------
   const pannello = async () => {
     box.classList.add("ad-on");
+    // il primo arrivo qui da amministratore toglie questo dispositivo dai conti delle visite (si può cambiare sotto)
+    if (G.ls.get("gerico.nonContare", null) === null) G.ls.set("gerico.nonContare", true);
     box.innerHTML = '<div class="ad-filtri"><div class="seg" id="ad-periodo" role="group" aria-label="' + L("Periodo", "Period") + '">' +
       PERIODI.map((g) => '<button type="button" data-giorni="' + g + '" aria-pressed="' + (g === giorni) + '">' + g + L(" giorni", " days") + "</button>").join("") +
       '</div><button type="button" class="btn-text" id="ad-agg">' + L("Aggiorna", "Refresh") + '</button></div><div id="ad-corpo" class="ad-corpo"></div>';
@@ -138,6 +145,12 @@ G.page("admin", async function (P) {
     corpo.querySelectorAll(".ad-cols").forEach(grafico);
     const cerca = $("ad-cerca");
     if (cerca) cerca.addEventListener("input", () => filtra(cerca.value));
+    const mie = $("ad-mie");
+    if (mie) mie.addEventListener("click", () => {
+      G.ls.set("gerico.nonContare", !nonContate());
+      $("ad-mie-t").textContent = mieTesto();
+      mie.textContent = mieBottone();
+    });
     sub.textContent = L("Aggiornato alle ", "Updated at ") + new Intl.DateTimeFormat(LOC, { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" }).format(new Date(d.ora)) +
       L(" · ultimi ", " · last ") + d.giorni + L(" giorni", " days");
   };
@@ -255,7 +268,8 @@ G.page("admin", async function (P) {
       classifica(L("Paese scelto", "Chosen country"), d.paesi, (k) => G.flag(k) + " " + esc(G.paeseNome(k))) +
       classifica(L("Lingua", "Language"), d.lingue, (k) => esc(LINGUA[k] || k)) +
       classifica(L("Dispositivo", "Device"), d.dispositivi, (k) => esc(DISP[k] || k)) +
-      '</div><p class="ad-nota">' + L("Le visite si contano senza cookie e senza salvare indirizzi IP; i visitatori unici con un hash che cambia ogni giorno.", "Visits are counted without cookies and without storing IP addresses; unique visitors with a hash that changes every day.") + "</p></section>";
+      '</div><p class="ad-nota">' + L("Le visite si contano senza cookie e senza salvare indirizzi IP; i visitatori unici con un hash che cambia ogni giorno.", "Visits are counted without cookies and without storing IP addresses; unique visitors with a hash that changes every day.") + "</p>" +
+      '<p class="ad-nota ad-mie"><span id="ad-mie-t">' + mieTesto() + '</span> <button type="button" class="btn-text" id="ad-mie">' + mieBottone() + "</button></p></section>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-isc"><h2 id="ad-h-isc">' + L("Iscritti", "Members") + "</h2>" +
       colonne(d.serie, "iscritti", L("Nuovi iscritti al giorno", "New members per day"), L("iscritti", "members")) +
       (d.iscritti.elenco.length > 8 ? '<input class="paesi-q ad-cerca" id="ad-cerca" type="search" autocomplete="off" spellcheck="false" placeholder="' + L("Cerca per nome o email", "Search by name or email") + '" aria-label="' + L("Cerca per nome o email", "Search by name or email") + '">' : "") +

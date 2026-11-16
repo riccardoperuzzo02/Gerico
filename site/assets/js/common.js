@@ -2774,9 +2774,13 @@
       const tocco = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches);
       return !tocco ? "computer" : Math.min(screen.width, screen.height) >= 600 ? "tablet" : "telefono";
     };
+    // i dispositivi dell'amministratore non si contano: la scelta sta nella pagina admin (gerico.nonContare), e vale
+    // anche su ogni dispositivo dove è entrato con l'account dell'amministratore
+    // (se nella pagina admin ha scelto «Contale», su quel dispositivo si contano anche da amministratore)
+    const nonContare = () => { const v = G.ls.get("gerico.nonContare", null); return v === true || (v === null && !!(G.ls.get("gerico.conto", null) || {}).admin); };
     const visita = () => {
       const p = pagina_();
-      if (!G.CONTI || !p || p === "admin" || !navigator.sendBeacon) return;
+      if (!G.CONTI || !p || p === "admin" || !navigator.sendBeacon || nonContare()) return;
       try { navigator.sendBeacon("/api/visita", JSON.stringify({ p, c: G.paese(), l: G.lang, d: dispositivo() })); } catch (e) { /* niente */ }
     };
     // gli errori di JavaScript delle pagine di GERICO: solo messaggio, file, riga e pagina, al massimo 10 per visita

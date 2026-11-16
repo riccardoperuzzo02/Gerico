@@ -708,11 +708,12 @@ G.page("home", async function (P) {
     const el = $("tk-ev");
     if (!el) return;
     const day = G.dayKey(new Date()), now = G.romeNow().hm, list = [];
-    if (ff && Array.isArray(ff.items) && G.hoursAgo(ff.asOf) < 8 * 24) {
-      ff.items.forEach((it) => { if (it.impact === "alto" && (it.date > day || (it.date === day && it.time >= now))) list.push({ date: it.date, time: it.time, cur: it.currency, ev: it.title }); });
-    }
+    // prima l'agenda di GERICO: a parità di orario vince il suo nome in italiano ("Inflazione (mensile)") su quello di Forex Factory ("CPI m/m")
     if (ag && Array.isArray(ag.items) && String(ag.date || "").slice(0, 10) === day) {
       ag.items.forEach((it) => { if (it.impact === "alto" && it.time && it.time >= now) list.push({ date: day, time: it.time, cur: it.currency || "", ev: it.event || "" }); });
+    }
+    if (ff && Array.isArray(ff.items) && G.hoursAgo(ff.asOf) < 8 * 24) {
+      ff.items.forEach((it) => { if (it.impact === "alto" && (it.date > day || (it.date === day && it.time >= now))) list.push({ date: it.date, time: it.time, cur: it.currency, ev: it.title }); });
     }
     list.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     const n = list[0];

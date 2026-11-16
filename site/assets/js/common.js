@@ -394,7 +394,11 @@
       o = o || {};
       const visto = imgSeen.has(ph.src), pagina = G.safeUrl ? G.safeUrl(ph.page) : "";
       const cred = G.L("Foto: ", "Photo: ") + (ph.author || "") + (ph.license ? ", " + ph.license : "") + G.L(", da Wikimedia Commons", ", via Wikimedia Commons");
-      return '<figure class="media foto' + (o.cls ? " " + o.cls : "") + '"><img' + (visto ? ' class="in"' : "") + ' src="' + G.esc(ph.src) + '" alt="' + G.esc(ph.alt || "") + '" width="' + (Number(ph.w) || 1280) + '" height="' + (Number(ph.h) || 720) +
+      // la versione piccola (480 px) per le miniature: il browser sceglie quella che basta per lo spazio e lo schermo
+      const piccola = typeof ph.s === "string" && /^img\/foto\/[\w.-]+-s\.jpg(\?v=\w+)?$/.test(ph.s) ? ph.s : "";
+      const set = piccola ? ' srcset="' + G.esc(piccola) + " " + (Number(ph.sw) || 480) + "w, " + G.esc(ph.src) + " " + (Number(ph.w) || 1200) + 'w" sizes="' +
+        (o.sizes || (o.eager ? "(max-width: 759px) 100vw, 720px" : "(max-width: 759px) 88px, 340px")) + '"' : "";
+      return '<figure class="media foto' + (o.cls ? " " + o.cls : "") + '"><img' + (visto ? ' class="in"' : "") + ' src="' + G.esc(ph.src) + '"' + set + ' alt="' + G.esc(ph.alt || "") + '" width="' + (Number(ph.w) || 1280) + '" height="' + (Number(ph.h) || 720) +
         '" decoding="' + (visto ? "sync" : "async") + '"' + (o.eager ? ' fetchpriority="high"' : visto ? "" : ' loading="lazy"') + ">" +
         (o.credito ? '<figcaption class="m-cred">' + (pagina ? '<a href="' + G.esc(pagina) + '" target="_blank" rel="noopener noreferrer">' + G.esc(cred) + "</a>" : G.esc(cred)) + "</figcaption>" : "") + "</figure>";
     }
@@ -1716,16 +1720,20 @@
         const box = document.createElement("div");
         box.className = "opt fol-menu";
         links.after(box);
+        // un tema caldo si segue con il nome italiano: in inglese si mostra con il nome tradotto dalla mappa della lingua
+        let trMap = null;
+        const nomeTema = (t) => (trMap && typeof trMap[G.hash(t)] === "string" ? trMap[G.hash(t)] : G.tn(t));
         const draw = () => {
           const f = G.follows();
           box.innerHTML = '<p class="opt-l" id="opt-fol">' + G.L("Temi seguiti", "Followed topics") + "</p>" +
-            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<a class="tag tag-l" href="./#seguiti" data-fol-tema="' + G.esc(t) + '">' + G.esc(G.tn(t)) + "</a>").join("") +
+            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<a class="tag tag-l" href="./#seguiti" data-fol-tema="' + G.esc(t) + '">' + G.esc(nomeTema(t)) + "</a>").join("") +
               '</div><p class="fol-note">' + G.L("Tocca un tema per leggere le sue notizie.", "Tap a topic to read its news.") + "</p>"
               : '<p class="fol-note">' + G.L("Non segui ancora nessun tema.", "You don't follow any topics yet.") + "</p>") +
             '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Tutti i Seguiti", "All of Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a>" +
             (f.length ? '<a href="./#seguiti" data-fol-gest="1">' + G.L("Aggiungi o togli temi", "Add or remove topics") + "</a>" : "") + "</nav>";
         };
         draw();
+        if (G.en) G.load("tr/" + G.lang).then((m) => { if (m && typeof m === "object") { trMap = m; draw(); } });
         G.conto.menu(menu, box);
         // un tema del menu apre i Seguiti su quel tema, «Tutti i Seguiti» su tutti, «Aggiungi o togli temi» con la modifica
         // aperta: lo dice alla prima pagina (se è questa) e lo lascia in memoria di sessione per quando ci si arriva da

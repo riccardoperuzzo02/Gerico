@@ -393,7 +393,8 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100svh - var(--t
 .tmap button.tile { cursor: pointer; }
 .tmap .tile[aria-pressed="true"] { outline: 3px solid #F0B44C; outline-offset: -3px; z-index: 1; }
 .tmap .tile .a { position: absolute; left: 10px; top: 9px; right: 8px; }
-.tmap .tile .b { position: absolute; left: 10px; bottom: 9px; right: 8px; }
+/* la variazione può arrivare a 4 px dal bordo del quadrato (è la misura che usa terminal.js), non oltre il suo riquadro */
+.tmap .tile .b { position: absolute; left: 10px; bottom: 9px; right: 4px; }
 .tmap .tile .nm { display: block; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tmap .tile .ix { display: block; margin-top: 2px; font-size: 0.75rem; color: #DCE3EC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tmap .tile .cg { display: block; font-weight: 750; white-space: nowrap; }
@@ -515,6 +516,8 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .t-agenda li.hi .tm { color: var(--t-accent); }
 .t-agenda li.next { margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 10px; background: rgba(240, 180, 76, 0.1); border-top-color: transparent; }
 .t-agenda li.next + li { border-top-color: transparent; }
+/* sugli schermi stretti il pannello ha meno margine: la riga evidenziata non ne esce */
+@media (max-width: 359px) { .t-agenda li.next { margin: 0 -6px; padding-left: 6px; padding-right: 6px; } }
 .t-agenda li.next.soon { position: relative; }
 .t-agenda li.next.soon::before { content: ""; position: absolute; left: 0; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; background: var(--t-accent); }
 .t-next.soon::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; background: var(--t-accent); vertical-align: 1px; }
@@ -1674,9 +1677,10 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 .t-inhead h3 { font-size: 1rem; font-weight: 700; color: var(--t-ink); }
 .t-inhead .t-sort { flex: 0 1 320px; }
 @media (max-width: 759px) { .t-inhead .t-sort { flex: 1 1 100%; } }
-.q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 76px 76px; }
+/* la colonna della variazione ha posto anche per «−11,12%» */
+.q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 76px 84px; }
 .q-row.st .q-n small { color: var(--t-ink-3); }
-@media (max-width: 420px) { .q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 66px 70px; } }
+@media (max-width: 420px) { .q-head.st, .q-row.st { grid-template-columns: minmax(0, 1fr) 62px 78px; } }
 .t-morebtn:empty { display: none; }
 .t-morebtn, .t-backrow { margin-top: var(--f13, 13px); }
 .t-inmethod { margin-top: var(--f21, 21px); line-height: 1.5; }
@@ -1806,7 +1810,7 @@ html.nuova .item h2 { display: block; -webkit-line-clamp: none; overflow: visibl
 .t-pick { min-height: 36px; height: auto; padding: 6px 12px; text-align: left; }
 .t-pick span { white-space: normal; overflow: visible; text-overflow: clip; }
 /* la riga dell'evento sotto i mercati: sugli schermi stretti va su due righe, non si taglia */
-@media (max-width: 400px) { .tk-ev { white-space: normal; overflow: visible; text-overflow: clip; } }
+@media (max-width: 759px) { .tk-ev { white-space: normal; overflow: visible; text-overflow: clip; } }
 /* «Dentro l'indice»: il numero dei titoli e la freccia restano insieme quando il pulsante va a capo */
 .t-inbtn .nw { display: inline-flex; align-items: baseline; gap: 8px; white-space: nowrap; }
 /* il link «Vai alla mappa» per chi usa la tastiera: nel Terminal era chiaro su chiaro */
@@ -1958,6 +1962,7 @@ html.nuova .blk.fol { padding-bottom: var(--f21); }
   background: var(--fill); color: var(--ink); font: inherit; font-size: 0.9375rem; font-weight: 700; cursor: pointer;
 }
 .tendina-b > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (pointer: coarse) { .tendina-b { min-height: 44px; } }
 .tendina-b > svg { flex: none; opacity: 0.7; transition: transform var(--t-2) var(--ease); }
 .tendina-b[aria-expanded="true"] > svg { transform: rotate(180deg); }
 .tendina-l {
@@ -2633,6 +2638,10 @@ html.nuova body.term #map-panel { border-top: 0; }
 .t-agenda .ev-b[aria-expanded="true"]::after { transform: rotate(-135deg); top: 0.62em; }
 .t-agenda .ev-b:hover .ev-t { text-decoration: underline; text-decoration-color: var(--t-ink-3); text-underline-offset: 3px; }
 .t-agenda .ev-b:focus-visible { outline: 2px solid var(--t-accent); outline-offset: 3px; border-radius: 4px; }
+@media (pointer: coarse) {
+  .t-agenda .ev-b::before { content: ""; position: absolute; left: 0; right: 0; top: -11px; bottom: -11px; }
+  .t-agenda .ev-b[aria-expanded="true"]::before { bottom: -5px; }
+}
 .t-agenda .ev small .ris { color: var(--t-ink); font-weight: 700; }
 .t-agenda li.past .ev small .ris { color: var(--t-ink-2); }
 .t-agenda .ev-det { grid-column: 1 / -1; margin: 6px 0 2px; padding: 12px 14px; border: 1px solid var(--hair); border-radius: var(--r, 6px); background: rgba(255, 255, 255, 0.03); font-size: 0.875rem; line-height: 1.5; color: var(--t-ink-2); cursor: default; }
@@ -2727,3 +2736,4 @@ html.nuova .sec-nav .nav-n { border-radius: 9px !important; }
 .tagbox .fol-note { margin: 6px 0 0; }
 .tagbox .tag-vai { margin-top: 12px; }
 .tagbox .tag-vai[hidden] { display: none; }
+

@@ -15,6 +15,10 @@ attribuzione) ed è grande abbastanza; la salva in <sito>/img/foto/<id>.jpg (lar
 autore, licenza e pagina del file: export.py li mette nella storia, il sito li mostra sotto la foto.
 Se nessuna voce va bene (voce che non c'è, solo stemmi o loghi, immagine non libera o troppo piccola, rete giù) la storia
 resta con la mappa.
+Con Pillow (il workflow lo installa prima della pubblicazione) ogni foto si alleggerisce: una foto verticale diventa il
+quadrato centrale (il sito le mostra sempre larghe o quadrate, con il centro in vista), la grande è larga al massimo
+1200 px e accanto c'è <id>-s.jpg, larga 480 px, per le miniature: sul telefono si scarica quella. Le foto già prese si
+alleggeriscono alla prima pubblicazione, senza riscaricarle.
 Le foto delle storie che non sono più nel database si cancellano.
 """
 import html
@@ -35,6 +39,36 @@ LINGUA = re.compile(r"^[a-z]{2,3}$")
 ALTRE = ["en", "it", "fr", "es", "de"]
 LARGA = 1280
 FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
+GRANDE, PICCOLA, OTT = 1200, 480, 2   # OTT: la versione dell'alleggerimento (cambiandola si rifanno tutte)
+
+
+def alleggerisci(path):
+    """La foto in `path` diventa leggera (quadrato centrale se verticale, larga al massimo GRANDE, JPEG progressivo) e
+    accanto si scrive la piccola (-s.jpg, larga PICCOLA). Torna le misure {w, h, sw, sh, bytes, sbytes}, oppure None se
+    Pillow non c'è o il file non si legge (allora la foto resta com'è e il sito usa solo quella)."""
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        return None
+    try:
+        im = Image.open(path)
+        im = ImageOps.exif_transpose(im).convert("RGB")
+    except Exception:  # noqa: BLE001
+        return None
+    w, h = im.size
+    if h > w:
+        t = (h - w) // 2
+        im = im.crop((0, t, w, t + w))
+        w, h = im.size
+    grande = im.resize((GRANDE, round(h * GRANDE / w)), Image.LANCZOS) if w > GRANDE else im
+    piccola = im.resize((PICCOLA, round(h * PICCOLA / w)), Image.LANCZOS) if w > PICCOLA else im
+    base = path[:-4]
+    grande.save(base + ".tmp.jpg", "JPEG", quality=74, optimize=True, progressive=True)
+    piccola.save(base + "-s.tmp.jpg", "JPEG", quality=72, optimize=True, progressive=True)
+    os.replace(base + ".tmp.jpg", base + ".jpg")
+    os.replace(base + "-s.tmp.jpg", base + "-s.jpg")
+    return {"w": grande.size[0], "h": grande.size[1], "sw": piccola.size[0], "sh": piccola.size[1],
+            "bytes": os.path.getsize(base + ".jpg"), "sbytes": os.path.getsize(base + "-s.jpg"), "ott": OTT}
 
 
 def get(url, raw=False):
@@ -165,7 +199,7 @@ def voci(s, ph):
 def main(db, site):
     cartella = os.path.join(site, "img", "foto")
     os.makedirs(cartella, exist_ok=True)
-    vive, fatte, saltate = set(), 0, []
+    vive, fatte, saltate, leggere = set(), 0, [], 0
     sdir = os.path.join(db, "stories")
     for name in sorted(os.listdir(sdir)) if os.path.isdir(sdir) else []:
         if not name.endswith(".json"):
@@ -184,7 +218,16 @@ def main(db, site):
         try:
             prima = json.load(open(side, encoding="utf-8"))
             if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")):
-                continue   # già presa
+                # già presa: si alleggerisce una volta sola, dal file che c'è (senza riscaricarla)
+                if prima.get("ott") != OTT or not os.path.exists(os.path.join(cartella, sid + "-s.jpg")):
+                    mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
+                    if mis:
+                        prima.update(mis)
+                        with open(side, "w", encoding="utf-8") as f:
+                            json.dump(prima, f, ensure_ascii=False, indent=1)
+                            f.write("\n")
+                        leggere += 1
+                continue
             # già cercata da poco senza trovare niente: si riprova dopo 12 ore, non a ogni pubblicazione
             if prima.get("key") == chiave and prima.get("miss") and time.time() - float(prima.get("at") or 0) < 12 * 3600:
                 saltate.append(f"{sid}: già cercata alle {time.strftime('%H:%M', time.gmtime(float(prima['at'])))} UTC senza trovare una foto")
@@ -211,6 +254,9 @@ def main(db, site):
             with open(os.path.join(cartella, sid + ".jpg"), "wb") as f:
                 f.write(data)
             info.update(key=chiave, title=titolo, bytes=len(data))
+            mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
+            if mis:
+                info.update(mis)
             with open(side, "w", encoding="utf-8") as f:
                 json.dump(info, f, ensure_ascii=False, indent=1)
                 f.write("\n")
@@ -219,10 +265,13 @@ def main(db, site):
             saltate.append(f"{sid}: {str(e)[:120]}")
     tolte = 0
     for f in os.listdir(cartella):
-        if f.rsplit(".", 1)[0] not in vive:
+        base = f.rsplit(".", 1)[0]
+        if base.endswith(".tmp"):
+            base = base[:-4]
+        if not (base in vive or (base.endswith("-s") and base[:-2] in vive)):
             os.remove(os.path.join(cartella, f))
             tolte += 1
-    print(f"foto: {fatte} nuove, {len(vive)} storie con la foto chiesta, {tolte} file tolti")
+    print(f"foto: {fatte} nuove, {leggere} alleggerite, {len(vive)} storie con la foto chiesta, {tolte} file tolti")
     for x in saltate:
         print("  senza foto " + x)
     return 0

@@ -79,6 +79,9 @@ def clean_story(raw, sid):
             if cr.get("key") == (ph.get("wiki") or "it") + ":" + ph["title"].strip() and os.path.exists(base + ".jpg"):
                 s["photo"] = {"src": "img/foto/%s.jpg?v=%d" % (sid, cr.get("bytes") or 0), "author": cr.get("author") or "", "license": cr.get("license") or "",
                               "page": cr.get("page") or "", "alt": cr.get("title") or "", "w": cr.get("w") or 1280, "h": cr.get("h") or 720}
+                # la versione piccola (larga 480 px) per le miniature, se c'è: il sito sceglie quale scaricare
+                if cr.get("sbytes") and os.path.exists(base + "-s.jpg"):
+                    s["photo"].update(s="img/foto/%s-s.jpg?v=%d" % (sid, cr["sbytes"]), sw=cr.get("sw") or 480)
         except (OSError, ValueError):
             pass
     fig = raw.get("figure")

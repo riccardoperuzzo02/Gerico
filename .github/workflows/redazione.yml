@@ -141,6 +141,12 @@ jobs:
           retention-days: 7
           if-no-files-found: ignore
 
+      # Pillow alleggerisce le foto prese da Wikimedia (scripts/foto.py): senza, le foto restano come arrivano
+      - name: Pillow per le foto
+        if: always() && steps.giro.outputs.giro != ''
+        continue-on-error: true
+        run: python3 -c "import PIL" 2>/dev/null || python3 -m pip install --quiet --user pillow || python3 -m pip install --quiet --user --break-system-packages pillow
+
       # anche un giro interrotto pubblica quello che ha scritto nel database; uno che non è partito no
       - name: Pubblica
         id: pubblica

@@ -1,13 +1,55 @@
 {
  "code": "DE",
- "asOf": "2026-11-16T17:17:36+00:00",
+ "asOf": "2026-11-16T19:17:34+00:00",
  "items": [
   {
    "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russland meldet ukrainischen Angriff auf Krim-Brücke",
+   "desc": "Die Ukraine hat Russland in der Nacht in mehreren Regionen mit Drohnen angegriffen. Der Verkehr auf der wichtigen Krim-Brücke wurde eingestellt. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-16T19:09:05+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Abschiebezentrum geplant: Was steckt hinter den Ruanda-Plänen?",
+   "desc": "Abgelehnte Asylbewerber sollen in Zukunft nach Ruanda gebracht werden können - auch wenn sie keine Verbindung zu dem Land haben. Innenminister Dobrindt will das zusammen mit vier anderen EU-Staaten und Ruanda möglich machen. Von Alena Lagmöller.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/ruanda-return-hub-abschiebezentrum-100.html",
+   "at": "2026-11-16T18:59:11+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg in der Ukraine: EU-Außenminister weisen Russlands Forderung an Nato zurück",
+   "desc": "Die EU-Außenbeaufragte Kallas hat Russlands Forderung, Nato-Truppen aus Europa abzuziehen, als »völlig absurd« bezeichnet. Europa brauche keine neue Sicherheitsordnung.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-europaeische-sicherheitsordnung-kaja-kallas-nato-ukraine",
+   "at": "2026-11-16T18:39:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Cyberangriffe auf Supermärkte: EU will Iran wegen Hackerangriffen auf Supermärkte sanktionieren",
+   "desc": "Die Europäische Union schreibt die jüngsten Cyberattacken auf Supermärkte dem Iran zu. Auf die Angriffe reagiert die EU mit neuen Sanktionsplänen gegen das Regime.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/cyberangriffe-supermaerkte-iran-eu-sanktionen-kaja-kallas",
+   "at": "2026-11-16T18:08:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
    "title": "Jensen Huang: Trump offen für mögliche Rückkehr von Jensen Huang als Nvidia-CEO",
-   "desc": "Vor seiner Reise nach China hat US-Präsident Trump geäußert, dass er nichts gegen eine Rückkehr von Jensen Huang zu Nvidia habe. Er habe »eine wichtige Lektion gelernt«.",
+   "desc": "Vor seiner Reise nach China hat US-Präsident Trump gesagt, er habe nichts gegen eine Rückkehr von Jensen Huang zu Nvidia. Dieser habe »eine wichtige Lektion gelernt«.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/jensen-huang-nvidia-ruecktritt-china-spionage",
-   "at": "2026-11-16T17:06:27+00:00"
+   "at": "2026-11-16T17:39:34+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Abschiebung nach Ruanda: Darum geht es bei Alexander Dobrindts Abschiebeplan mit Ruanda",
+   "desc": "Mit vier EU-Partnern will der Bundesinnenminister künftig abgelehnte Asylsuchende nach Ruanda abschieben. In den Behörden sind die Hoffnungen groß. Zu Recht?",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/abschiebung-ruanda-eu-alexander-dobrindt-menschenrechte",
+   "at": "2026-11-16T17:34:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "US-Handelspolitik: USA führen erneut strengere Exportregeln für KI-Chips ein",
+   "desc": "Dem US-Handelsministerium wird in der Spionageaffäre um Ex-Nvidiachef Huang Sorglosigkeit vorgeworfen. Nun verschärft das Ministerium die Exportregeln für KI-Chips.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-exportkontrollen-ki-chips-china-howard-lutnick",
+   "at": "2026-11-16T17:24:25+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -29,13 +71,6 @@
    "desc": "Die SPD zittert vor einer Schwesig-Absage. Alexander Dobrindt treibt seinen Ruanda-Plan voran. Und: Deutschland spielt zum letzten Mal in drei Streifen. Das ist die Lage am Montagabend.",
    "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-schwesig-zoegert-dobrindt-plant-ruanda-abkommen-dfb-team-im-umbruch-a-5dd9ac8a-06e6-4cb0-8777-2172ec7f3c0f",
    "at": "2026-11-16T17:02:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "US-Handelspolitik: USA führen erneut strengere Exportregeln für KI-Chips ein",
-   "desc": "Dem US-Handelsministerium wird in der Spionageaffäre um Ex-Nvidiachef Huang Sorglosigkeit vorgeworfen. Nun verschärft das Ministerium die Exportregeln für KI-Chips.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/usa-exportkontrollen-ki-chips-china-howard-lutnick",
-   "at": "2026-11-16T16:52:26+00:00"
   },
   {
    "source": "Die Zeit",
@@ -150,39 +185,11 @@
    "at": "2026-11-16T11:59:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Friedrich Merz: Brandenburger CDU-Ortsverband Großbeeren fordert Rücktritt von Merz",
-   "desc": "Einstimmig hat der CDU-Ortsverband Großbeeren beschlossen, den Rücktritt von Friedrich Merz zu fordern. Auslöser ist der Streit um die Senkung der Stromsteuer.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/cdu-grossbeeren-friedrich-merz-ruecktritt-adrian-hepp-stromsteuer-gxe",
-   "at": "2026-11-16T11:58:49+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Ruanda: Sind die von Alexander Dobrindt geplanten Abschiebezentren erlaubt?",
    "desc": "CSU-Innenminister Dobrindt will gemeinsam mit vier EU-Partnern abgelehnte Asylbewerber ausfliegen lassen, am liebsten nach Ruanda. Großbritannien war mit einem eigenen Ruanda-Plan gescheitert. Was steckt hinter der Idee?",
    "url": "https://www.spiegel.de/politik/deutschland/return-hub-in-ruanda-sind-alexander-dobrindts-geplante-abschiebezentren-erlaubt-a-76d37dd4-0662-4e2c-bf9a-a9922102bb07",
    "at": "2026-11-16T11:36:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Regierungsbildung in Israel: Netanjahus Gegner haben nicht viel Zeit",
-   "desc": "Gadi Eisenkot soll eine neue israelische Regierung bilden, im Parlament entsteht ein neues Machtzentrum. Doch Benjamin Netanjahu ist noch lange nicht am Ende.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/regierungsbildung-israel-gadi-eisenkot-benjamin-netanjahu-parlament",
-   "at": "2026-11-16T11:15:19+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krim-Brücke: Russland stellt Verkehr auf Krim-Brücke nach ukrainischem Angriff ein",
-   "desc": "Die Ukraine hat Russland in der Nacht mit zahlreichen Drohnen angegriffen. Dabei wurde auch die Krim-Brücke getroffen. Der Verkehr wurde vorübergehend eingestellt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/krim-bruecke-angriff-ukraine-russland-sergej-aksjonow-gxe",
-   "at": "2026-11-16T10:55:53+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stromsteuer: Alexander Dobrindt hält Stromsteuersenkung für »dringend notwendig«",
-   "desc": "Bundesinnenminister Dobrindt hat sich dafür ausgesprochen, die Senkung der Stromsteuer doch noch durchzusetzen. Die Bürger müssten »dringend« entlastet werden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-alexander-dobrindt-csu-friedrich-merz-cdu-entlastung-gxe",
-   "at": "2026-11-16T10:43:44+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -225,13 +232,6 @@
    "desc": "Der Kanzler reist nach München zu den Mütterfreunden von der CSU. Hubertus Heil will Lars Klingbeil als SPD-Chef ablösen. Und der Anthropic-Börsengang ist so verlockend wie risikoreich. Das ist die Lage am Montagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-friedrich-merz-besucht-csu-hubertus-heil-will-lars-klingbeil-abloesen-anthropic-geht-an-die-boerse-a-1e22ff34-6373-4a3f-a6f3-aec46134b9ea",
    "at": "2026-11-16T04:44:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Heil zum angestrebten SPD-Vorsitz: \"Habe viel Zuspruch aus der Partei\"",
-   "desc": "Die SPD sucht eine neue Parteispitze. Erster Bewerber ist Hubertus Heil. Er bekomme viel Zuspruch aus der Partei, sagte er im Bericht aus Berlin. Auch zu Vizekanzler Klingbeil äußerte er sich. Offen ließ Heil, mit welcher Frau er kandidieren will.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/heil-spd-kandidatur-100.html",
-   "at": "2026-11-15T18:44:55+00:00"
   }
  ]
 }

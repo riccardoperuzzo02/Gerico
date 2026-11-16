@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-16-gb-lords-resilienza-governo",
+  "title": "Regno Unito: i Lord accusano il governo di «compiacimento» sui rischi",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Camera dei lord", "alt": ["Londra"]},
+  "rank": 203,
+  "summary": "Una commissione della Camera dei lord dice che il governo sottovaluta rischi come attacchi informatici, sabotaggi e maltempo estremo. Chiede più preparazione, anche con permessi retribuiti per la formazione.",
+  "article": "Una commissione della Camera dei lord, la camera alta del parlamento britannico, accusa il governo di essere «compiacente» di fronte a rischi gravi e collegati tra loro. Lo scrivono Guardian, BBC e Sky News, lunedì 16 novembre.\n\nSecondo il Guardian, il rapporto cita attacchi informatici, sabotaggi, danni ai cavi sottomarini ed eventi naturali come il maltempo e le alluvioni. Il giornale scrive che i ministri devono agire in fretta per rafforzare la resilienza del Paese e che la maggior parte dei cittadini non conosce l'entità delle minacce. Il governo ha da poco lanciato la campagna «Be Ready», che invita le famiglie a tenere scorte di cibo e acqua. Sky News scrive che il governo di Andy Burnham appare «compiacente» sulla possibilità di «rischi catastrofici» e che il Paese è impreparato.\n\nLa BBC riferisce che i lord propongono permessi retribuiti ai lavoratori per prepararsi a crisi come guerra, blackout e attacchi informatici.\n\nLe informazioni vengono dai testi dei feed di Guardian, BBC e Sky News: il rapporto non è stato letto per intero. Restano da verificare la risposta del governo e i costi delle proposte.",
+  "facts": [
+    {"text": "Una commissione dei lord accusa il governo di «compiacimento» sui rischi per la sicurezza e la resilienza.", "who": ["The Guardian", "Sky News"]},
+    {"text": "Tra i rischi citati: attacchi informatici, sabotaggi, danni ai cavi sottomarini, maltempo e alluvioni.", "who": ["The Guardian"]},
+    {"text": "La maggior parte dei cittadini non conosce la scala delle minacce, dice il rapporto.", "who": ["The Guardian"]},
+    {"text": "I lord propongono permessi retribuiti per la formazione dei lavoratori in caso di crisi.", "who": ["BBC"]}
+  ],
+  "view": "Si può dire con certezza che il rapporto dei lord critica il governo e propone più preparazione. Non sono nelle fonti lette la risposta dei ministri né una stima dei costi, e la tesi della scarsa conoscenza dei cittadini viene dal solo Guardian.\n\nConta perché il rapporto arriva mentre il governo promuove la campagna per le scorte familiari. Da guardare: la replica ufficiale e l'eventuale dibattito in aula.",
+  "open": [
+    "Cosa risponde il governo al rapporto?",
+    "Chi pagherebbe i permessi retribuiti per la formazione?",
+    "Il governo accoglierà le raccomandazioni dei lord?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/society/2026/nov/16/uk-exposed-to-polycrisis-of-threats-amid-government-complacency", "angle": "Dal feed: i rischi elencati, la campagna Be Ready e la scarsa consapevolezza dei cittadini.", "at": "2026-11-16T06:30:35+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cq8j4yn1vjymo", "angle": "Dal feed: permessi retribuiti per la formazione dei lavoratori.", "at": "2026-11-16T06:04:24+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/government-accused-of-complacency-over-catastrophic-security-risks-to-uk-13612651", "angle": "Dal feed: il governo Burnham «compiacente» sui rischi catastrofici.", "at": "2026-11-16T00:28:00+00:00"}
+  ],
+  "firstSeen": "2026-11-16T09:48:29+01:00",
+  "updated": "2026-11-16T09:48:29+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-16T09:48:29+01:00", "text": "Prima notizia: i lord accusano il governo di compiacimento sui rischi per il Paese."}
+  ],
+  "tags": ["Regno Unito", "Sicurezza", "Parlamento"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

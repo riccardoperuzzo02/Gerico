@@ -4,8 +4,8 @@
     "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
   },
   "lastPublish": {
-    "at": "2026-11-16T07:31:32+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database; cancellate 3 storie archiviate da più di 7 giorni."
+    "at": "2026-11-16T09:53:47+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database; controlla: 7 cose da sistemare."
   },
   "lastRun": "2026-11-16T07:29:53+01:00",
   "marketsRun": {
@@ -25,8 +25,8 @@
     "Teleborsa"
   ],
   "paesiRun": {
-    "at": "2026-11-15T09:50:00+01:00",
-    "esito": "Letti 2 articoli (CBS), il resto dai feed. US 2 nuove (East Potomac, morbillo)/0 aggiornate/2 archiviate; GB 1 nuova (età del consenso)/0/1 archiviata; FR 1 nuova (Maileva)/1 aggiornata (manifestazioni)/1 archiviata; DE 1 nuova (Heil, Spd)/0/1 archiviata; ES 1 nuova (El Hierro)/0/0."
+    "at": "2026-11-16T09:50:22+01:00",
+    "esito": "Nessun articolo aperto, tutto dai feed. US 1 nuova (Lutnick e chip)/0 aggiornate/2 archiviate; GB 2 nuove (Brexit, rapporto dei Lord)/1 aggiornata (Milburn)/2 archiviate; FR 0 nuove/2 aggiornate (manifestazioni, pubblico impiego)/0; DE 0 nuove/2 aggiornate (Heil, bilancio)/1 archiviata; ES 1 nuova (programma Psoe)/2 aggiornate (campagna, El Hierro)/2 archiviate."
   },
   "quality": {
     "articlesDiscarded": 3,

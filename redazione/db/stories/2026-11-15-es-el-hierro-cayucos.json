@@ -8,7 +8,7 @@
   "photo": {"wiki": "it", "title": "El Hierro"},
   "rank": 504,
   "summary": "Secondo El País più di 6.000 persone sono arrivate in novembre al porto di La Restinga, a El Hierro, un record. El Mundo parla di 834 arrivi tra venerdì sera e sabato.",
-  "article": "L'isola di El Hierro, nelle Canarie, vive un afflusso di barche di migranti senza precedenti, scrivono El País ed El Mundo. Secondo El País più di 6.000 persone sono arrivate in novembre al porto di La Restinga, un dato che supera tutte le cifre precedenti. Vengono trasferite nella Penisola.\n\nEl Mundo riferisce che due cayucos, imbarcazioni di legno, con 834 persone sono arrivati a La Restinga tra la notte di venerdì e sabato 14 novembre. A bordo c'erano 24 donne e 21 persone che potrebbero essere minorenni.\n\nEl País racconta i primi messaggi dei migranti alle famiglie appena sbarcati.\n\nLe informazioni vengono dai testi dei feed delle due testate, non da articoli letti per intero: le cifre sono dei giornali e non è indicata la fonte ufficiale dei dati.",
+  "article": "L'isola di El Hierro, nelle Canarie, vive un afflusso di barche di migranti senza precedenti, scrivono El País ed El Mundo. Secondo El País più di 6.000 persone sono arrivate in novembre al porto di La Restinga, un dato che supera tutte le cifre precedenti. Vengono trasferite nella Penisola.\n\nEl Mundo riferisce che due cayucos, imbarcazioni di legno, con 834 persone sono arrivati a La Restinga tra la notte di venerdì e sabato 14 novembre. A bordo c'erano 24 donne e 21 persone che potrebbero essere minorenni.\n\nEl País racconta i primi messaggi dei migranti alle famiglie appena sbarcati.\n\nSviluppi di domenica 15 novembre. El Mundo scrive che nel fine settimana sono arrivate sull'isola 3.161 persone: sabato 1.327, l'84% delle 1.580 sbarcate quel giorno nell'arcipelago, un record della rotta canaria. Il Pp, scrive 20minutos, chiede il dispiegamento «urgente» di Frontex, l'agenzia europea di frontiera, dopo l'ingresso di 1.235 migranti su 12 cayucos in un solo giorno, e più mezzi di polizia, militari e sanitari. La situazione è «insostenibile», dice il partito.\n\nLe informazioni vengono dai testi dei feed delle due testate, non da articoli letti per intero: le cifre sono dei giornali e non è indicata la fonte ufficiale dei dati.",
   "facts": [
     {"text": "Più di 6.000 persone sono arrivate a La Restinga, El Hierro, in novembre, oltre ogni cifra precedente.", "who": ["El País"]},
     {"text": "Due cayucos con 834 persone, tra cui 24 donne e 21 possibili minorenni, sono arrivati tra venerdì sera e sabato.", "who": ["El Mundo"]},
@@ -25,9 +25,10 @@
     {"name": "El Mundo", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.elmundo.es/espana/2026/11/14/6af82fc5e9cf4ab47b8b457c.html", "angle": "Dal feed: 834 persone su due cayucos in 24 ore.", "at": "2026-11-14T19:24:35+00:00"}
   ],
   "firstSeen": "2026-11-15T09:48:31+01:00",
-  "updated": "2026-11-15T09:48:31+01:00",
-  "change": "",
+  "updated": "2026-11-16T09:48:29+01:00",
+  "change": "3.161 arrivi nel fine settimana secondo El Mundo; il Pp chiede Frontex.",
   "history": [
+    {"at": "2026-11-16T09:48:29+01:00", "text": "Nel fine settimana 3.161 arrivi a El Hierro secondo El Mundo; il Pp chiede l'intervento di Frontex."},
     {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: più di 6.000 migranti arrivati a El Hierro in novembre."}
   ],
   "tags": ["Spagna", "Immigrazione", "Canarie"],

@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-16-gb-burnham-brexit-discorso-ue",
+  "title": "Regno Unito: Burnham dice che la Brexit «non ha funzionato»",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "10 Downing Street", "alt": ["Londra"]},
+  "rank": 201,
+  "summary": "Il primo ministro Andy Burnham parlerà oggi della Brexit e del vertice con l'Ue di venerdì. Dirà che la Brexit data al Paese «non ha funzionato».",
+  "article": "Andy Burnham, il primo ministro britannico, dirà lunedì 16 novembre in un discorso che la Brexit «non ha funzionato» e che firmerà un nuovo accordo con l'Unione europea. Lo scrivono Guardian, BBC e Sky News, che hanno anticipato il testo. Il discorso precede il vertice tra Regno Unito e Ue di venerdì.\n\nSecondo il Guardian, Burnham sosterrà che gli accordi in preparazione «potrebbero far crescere il Pil dello 0,4%». Il giornale scrive che il primo ministro aveva già detto sabato, alla conferenza dei laburisti gallesi, che il Paese ha «perso più di quanto ha guadagnato» uscendo dall'Ue. Sky News aggiunge che Burnham fisserà le condizioni per un futuro accordo.\n\nLa BBC riferisce che Hamish Falconer, il ministro per l'Europa, ha spiegato che il Regno Unito avrebbe una «voce» ma nessun voto sulle regole alimentari europee. La BBC scrive anche che alcuni giornali di lunedì aprono con la reazione: l'ex premier Boris Johnson dice che «la Gran Bretagna voterebbe di nuovo per la Brexit».\n\nLe informazioni vengono dai testi dei feed di Guardian, BBC e Sky News: gli articoli completi non sono stati letti. Restano da verificare il testo del discorso e il contenuto degli accordi.",
+  "facts": [
+    {"text": "Burnham dirà lunedì che la Brexit «non ha funzionato» e che firmerà un nuovo accordo con l'Ue.", "who": ["The Guardian", "BBC", "Sky News"]},
+    {"text": "Gli accordi in preparazione potrebbero far crescere il Pil dello 0,4%.", "who": ["The Guardian"]},
+    {"text": "Il vertice tra Regno Unito e Ue è venerdì.", "who": ["Sky News"]},
+    {"text": "Sulle regole alimentari Ue il Regno Unito avrebbe una voce ma nessun voto, dice il ministro Falconer.", "who": ["BBC"]},
+    {"text": "Boris Johnson dice che la Gran Bretagna voterebbe di nuovo per la Brexit.", "who": ["BBC"]}
+  ],
+  "view": "Si può dire con certezza che il discorso è annunciato e che il vertice con l'Ue è venerdì. Il testo completo e le condizioni poste da Burnham non sono nelle fonti lette, e la stima dello 0,4% è del solo Guardian.\n\nConta perché il governo laburista rimette in discussione i rapporti con l'Europa su un tema che divide partito ed elettorato. Da guardare: il contenuto degli accordi di venerdì e le reazioni dei deputati laburisti.",
+  "open": [
+    "Quali condizioni pone Burnham per un accordo con l'Ue?",
+    "Cosa prevedono gli accordi che saranno firmati al vertice?",
+    "Come reagiranno i deputati laburisti e l'opposizione?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu", "angle": "Dal feed: discorso di lunedì, stima dello 0,4% di Pil e parole di sabato alla conferenza dei laburisti gallesi.", "at": "2026-11-16T07:00:38+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/crp3e1n5kezpo", "angle": "Dal feed: «la Brexit che ci hanno dato non ha funzionato»; regole alimentari e reazione di Johnson.", "at": "2026-11-16T06:56:15+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/pm-to-say-brexit-hasnt-worked-and-set-out-conditions-for-future-eu-deal-in-major-speech-13612600", "angle": "Dal feed: le condizioni per un futuro accordo e il vertice di venerdì.", "at": "2026-11-15T21:33:00+00:00"}
+  ],
+  "firstSeen": "2026-11-16T09:48:29+01:00",
+  "updated": "2026-11-16T09:48:29+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-16T09:48:29+01:00", "text": "Prima notizia: Burnham dirà che la Brexit non ha funzionato, vertice con l'Ue venerdì."}
+  ],
+  "tags": ["Regno Unito", "Brexit", "Governo"],
+  "themes": [],
+  "places": ["GB", "EU"],
+  "divergences": [],
+  "notCovered": []
+}

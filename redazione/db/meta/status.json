@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato (Pil Giappone, dati Cina di ottobre non reperiti). Completata l'agenda con il calendario (Canada, Usa, Area euro, Australia) e tolto il falso «negativo» dal Pil giapponese."
   },
   "lastPublish": {
-    "at": "2026-11-16T12:11:30+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-16T13:21:18+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-16T07:29:53+01:00",
+  "lastRun": "2026-11-16T13:20:42+01:00",
   "marketsRun": {
     "at": "2026-11-13T18:46:35+01:00",
     "esito": "Aggiornate le chiusure del 13 novembre (Ansa): Ftse Mib +0,1% a 51.858, Dax -0,2%, Cac 40 +0,1%, Ftse 100 +0,3%, Aex invariato, spread 104, gas 89 €/MWh. Mancano Smi, rendimenti, euro/dollaro, Brent. Agenda: Pil Ue non trovato."
@@ -29,15 +29,15 @@
     "esito": "Nessun articolo aperto, tutto dai feed. US 1 nuova (Lutnick e chip)/0 aggiornate/2 archiviate; GB 2 nuove (Brexit, rapporto dei Lord)/1 aggiornata (Milburn)/2 archiviate; FR 0 nuove/2 aggiornate (manifestazioni, pubblico impiego)/0; DE 0 nuove/2 aggiornate (Heil, bilancio)/1 archiviata; ES 1 nuova (programma Psoe)/2 aggiornate (campagna, El Hierro)/2 archiviate."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 30,
-    "at": "2026-11-16T07:29:53+01:00",
+    "articlesDiscarded": 0,
+    "articlesRead": 10,
+    "at": "2026-11-16T13:20:42+01:00",
     "factsChecked": 4,
-    "factsCorrected": 1,
-    "storiesArchived": 10,
-    "storiesNew": 6,
-    "storiesUpdated": 9
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 2,
+    "storiesUpdated": 0
   },
   "runningSince": null,
-  "storiesLive": 38
+  "storiesLive": 40
 }

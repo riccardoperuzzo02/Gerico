@@ -1,0 +1,37 @@
+{
+  "title": "Russia: Mosca dice di aver abbattuto 1.336 droni ucraini, colpito il ponte",
+  "section": "mondo",
+  "rank": 22,
+  "status": "live",
+  "summary": "Il ministero della Difesa russo dice di aver abbattuto nella notte 1.336 droni ucraini, il numero più alto dall'inizio della guerra. Il governatore filorusso della Crimea dice che è stato colpito il ponte con la Russia, il Cremlino parla di danni lievi.",
+  "article": "Il ministero della Difesa russo dice di aver abbattuto nella notte del 16 novembre 1.336 droni ucraini, il numero più alto dall'inizio dell'invasione su larga scala, riferisce Reuters. Il record precedente era di 1.254 droni, il 29 ottobre. Secondo Kyiv Independent, che indica 15 regioni, e Reuters, che ne indica 16, i droni sono stati intercettati anche sulla Crimea e sui mari d'Azov e Nero. Le cifre sono russe: Kyiv Independent dice di non averle potute verificare e che le forze armate ucraine non hanno commentato.\n\nIl sindaco di Mosca Sergey Sobyanin dice che circa 600 droni erano diretti verso la regione della capitale e che la maggior parte è stata abbattuta, con 191 intercettati in avvicinamento a Mosca. Non ha dato dettagli su danni o vittime, secondo Kyiv Independent.\n\nSul ponte di Crimea, Reuters riporta che il governatore filorusso della Crimea Sergei Aksyonov dice che l'Ucraina ha colpito il ponte stradale e ferroviario con il territorio di Krasnodar. Il Cremlino parla di danni lievi. Il traffico stradale è stato fermato per breve tempo per le riparazioni, mentre quello ferroviario è proseguito normalmente, secondo il ministero dei Trasporti russo citato da Reuters. Il canale ucraino Crimean Wind scrive che un arco della campata navigabile è stato colpito alle 5:38 ora locale e che sono in corso ispezioni; Kyiv Independent precisa che la notizia non è confermata in modo indipendente.\n\nSempre secondo canali di monitoraggio ucraini citati da Kyiv Independent, un deposito di carburante ad Azov, nella regione di Rostov, è in fiamme: anche questo dato non è verificato. Reuters ricorda che dalla fine di ottobre l'Ucraina ha aumentato i colpi alle raffinerie russe e che Zelensky ha detto domenica che hanno messo fuori uso oltre metà della capacità di raffinazione, un'affermazione che Reuters non ha potuto verificare.",
+  "facts": [
+    {"text": "Il ministero della Difesa russo dice di aver abbattuto 1.336 droni ucraini nella notte, il record dall'inizio della guerra.", "who": ["Reuters", "Kyiv Independent"]},
+    {"text": "Sobyanin dice che circa 600 droni erano diretti verso Mosca e la maggior parte è stata abbattuta.", "who": ["Kyiv Independent"]},
+    {"text": "Il governatore filorusso della Crimea dice che il ponte con la Russia è stato colpito; il Cremlino parla di danni lievi.", "who": ["Reuters"]},
+    {"text": "Il traffico stradale sul ponte è stato fermato per poco, quello ferroviario è proseguito, secondo il ministero dei Trasporti russo.", "who": ["Reuters"]}
+  ],
+  "view": "Sono accertate le cifre date dalla Difesa russa, non verificate da fonti indipendenti, e la sospensione temporanea del traffico sul ponte. L'entità dei danni al ponte e ai depositi resta nelle mani di fonti di parte.\n\nConta perché l'attacco arriva mentre sono in corso i contatti diplomatici e il vertice di Shenzhen. Da guardare: le immagini satellitari del ponte e la risposta russa sulle infrastrutture ucraine.",
+  "open": [
+    "Quanto è grave il danno al ponte di Crimea?",
+    "Quanti droni hanno colpito davvero obiettivi in Russia?",
+    "Come risponderà Mosca all'attacco?"
+  ],
+  "sources": [
+    {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/ukraine-launches-biggest-drone-attack-on-russia-since-war-began-defence-ministry-data-shows", "angle": "Cifre della Difesa russa, record precedente, ponte e raffinerie.", "at": "2026-11-16T11:33:00+01:00"},
+    {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/record-number-of-ukrainian-drones-launched-at-russia-moscow-oblast-among-main-targets/", "angle": "Sobyanin sui 600 droni diretti a Mosca, Crimean Wind, deposito ad Azov; dati non verificati.", "date": "2026-11-16"}
+  ],
+  "firstSeen": "2026-11-16T13:20:00+01:00",
+  "updated": "2026-11-16T13:20:00+01:00",
+  "change": "",
+  "tags": ["Ucraina", "Russia", "Droni"],
+  "themes": ["ucraina"],
+  "places": ["RU", "UA"],
+  "city": {"name": "Kerch", "lat": 45.36, "lon": 36.47},
+  "photo": {"wiki": "it", "title": "Ponte di Crimea", "alt": ["Kerč"]},
+  "history": [
+    {"at": "2026-11-16T13:20:00+01:00", "text": "Prima notizia: record di droni ucraini secondo Mosca, ponte di Crimea colpito."}
+  ],
+  "divergences": [],
+  "notCovered": []
+}

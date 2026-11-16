@@ -1,13 +1,48 @@
 {
  "date": "2026-11-16",
- "asOf": "2026-11-16T07:28:37+01:00",
+ "asOf": "2026-11-16T13:21:00+01:00",
  "items": [
   {
-   "title": "Il presidente di Capo Verde José Maria Neves ottiene un secondo mandato presidenziale secondo i risultati provvisori.",
+   "title": "L'Ue sanziona una fabbrica di troll del Cremlino e un gruppo di hacker legati alla disinformazione russa.",
+   "section": "mondo",
+   "source": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/nuove-sanzioni-ue-nel-mirino-disinformazione-russa-e-gruppo-di-hacker_6726e95c-06aa-45ac-a318-0b50f5f9bb8b.html",
+   "at": "2026-11-16T13:03:00+01:00"
+  },
+  {
+   "title": "Ocse: nel secondo trimestre il reddito reale pro capite in Italia scende dell'1%.",
+   "section": "economia",
+   "source": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/ocse-pesa-inflazione-nel-ii-trimestre-in-italia-reddito-reale-procapite-1_20552919-1585-4cfe-b689-7c8cc5775b61.html",
+   "at": "2026-11-16T12:57:00+01:00"
+  },
+  {
+   "title": "Cop31: la bozza di decisione chiede di eliminare i combustibili fossili e i relativi sussidi.",
+   "section": "mondo",
+   "source": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/cop31-bozza-decisione-sollecita-leliminazione-dei-combustibili-fossili_1cac7463-629e-41e8-965a-0862ec53989a.html",
+   "at": "2026-11-16T12:44:00+01:00"
+  },
+  {
+   "title": "Nuovo mail bombing alle scuole italiane firmato Andropov, nessuna evacuazione.",
+   "section": "italia",
+   "source": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/nuova-mail-bombing-alle-scuole-italiane-nessuna-evacuazione_7351f037-082a-4aa4-a246-370d941c20e2.html",
+   "at": "2026-11-16T12:41:00+01:00"
+  },
+  {
+   "title": "Il premier ungherese Magyar chiede ai deputati di Fidesz di dimettersi dopo l'inchiesta sul denaro contante.",
    "section": "mondo",
    "source": "Reuters",
-   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/cape-verde-president-neves-wins-second-term-provisional-election-results-show",
-   "at": "2026-11-16T07:08:00+01:00"
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/hungary-pm-magyar-urges-fidesz-lawmakers-to-quit-over-cash-haul-in-graft-probe",
+   "at": "2026-11-16T12:47:00+01:00"
+  },
+  {
+   "title": "La Giordania blocca Telegram per motivi di sicurezza nazionale.",
+   "section": "tecnologia",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/16/jordan-bans-telegram-messing-app-over-national-security-concerns",
+   "at": ""
   },
   {
    "title": "Incendio in un edificio commerciale a Phuket: 11 morti e 16 feriti, dice la polizia.",
@@ -22,27 +57,6 @@
    "source": "Reuters",
    "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/martine-moise-widow-of-haiti-s-slain-president-registers-as-presidential-candidate",
    "at": "2026-11-16T03:14:00+01:00"
-  },
-  {
-   "title": "Morto a 80 anni Miguel Angel Felix Gallardo, fondatore del cartello di Guadalajara.",
-   "section": "mondo",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/11/16/founder-of-guadalajara-cartel-dies-in-hospital-after-decades-in-prison",
-   "at": ""
-  },
-  {
-   "title": "Secondo l'Ntsb un guasto allo sterzo ha causato l'urto della petroliera con la crociera fluviale a New Orleans.",
-   "section": "mondo",
-   "source": "Reuters",
-   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/tanker-in-new-orleans-ship-collision-suffered-steering-casualty-ntsb-says",
-   "at": "2026-11-16T00:56:00+01:00"
-  },
-  {
-   "title": "L'Amministrazione Trump chiede miliardi per rinnovare il controllo del traffico aereo dopo il blocco dei voli.",
-   "section": "mondo",
-   "source": "Euronews",
-   "url": "https://www.euronews.com/2026/11/16/trump-presses-for-50bn-to-fix-air-traffic-control-after-nationwide-grounding",
-   "at": ""
   },
   {
    "title": "Un razzo Vulcan fallisce in volo e distrugge il carico di satelliti Amazon, riferisce Reuters.",
@@ -66,13 +80,6 @@
    "at": "2026-11-15T21:18:00+01:00"
   },
   {
-   "title": "Papa Leone XIV condanna dal Perù gli omicidi di leader indigeni e la deforestazione dell'Amazzonia.",
-   "section": "mondo",
-   "source": "Al Jazeera",
-   "url": "https://www.aljazeera.com/news/2026/11/16/pope-condemns-murders-of-perus-indigenous-leaders-deforestation-of-amazon",
-   "at": ""
-  },
-  {
    "title": "Milano: fermati due giovani di 19 e 22 anni per la morte di un 92enne, il gip decide oggi sulla convalida.",
    "section": "italia",
    "source": "Open",
@@ -84,13 +91,6 @@
    "section": "italia",
    "source": "Il Post",
    "url": "https://www.ilpost.it/2026/11/15/genova-caso-ospedale-galliera-infermieri/",
-   "at": ""
-  },
-  {
-   "title": "Dal 16 novembre una settimana di perturbazioni atlantiche con piogge, temporali e neve sulle Alpi.",
-   "section": "italia",
-   "source": "Open",
-   "url": "https://www.open.online/2026/11/13/meteo-settimana-16-novembre-pioggia-abbasamento-temperature-neve-alpi/",
    "at": ""
   },
   {

@@ -2388,6 +2388,9 @@
   G.CONTI = true;
   G.conto = (() => {
     const K = "gerico.conto", PROP = "gerico.proposta", SOSPESO = "gerico.conto.salva";
+    // GIA: su questo dispositivo qualcuno è già entrato con un account (resta anche dopo l'uscita); GIORNI: in quanti giorni
+    // diversi GERICO è stato aperto da qui (solo per decidere se proporre l'account)
+    const GIA = "gerico.giaEntrato", GIORNI = "gerico.giorni";
     let io = null, primo = null, applico = false;
     const passkeyOk = () => !!(window.PublicKeyCredential && navigator.credentials && navigator.credentials.create && window.isSecureContext);
     const L = G.L;
@@ -2504,7 +2507,9 @@
         if (prima || io) {
           via();
           avvisa();
-          G.toast(L("La sessione è scaduta: rientra dal menu quando vuoi.", "Your session has expired: sign in again from the menu whenever you like."));
+          // l'accesso dura 400 giorni e si rinnova a ogni visita: se non c'è più, di solito l'ha cancellato il browser.
+          // Un tocco e si rientra con la passkey
+          G.toast(L("Su questo browser non sei più dentro.", "You're no longer signed in on this browser."), { label: L("Rientra", "Sign in"), fn: () => { accedi().catch((e) => G.toast(spiega(e))); } });
         }
         return d;
       }
@@ -2512,6 +2517,7 @@
       const cambiato = !prima || prima.nome !== d.utente.nome || !!prima.admin !== !!d.utente.admin;
       io = d.utente;
       G.ls.set(K, nota_(io));
+      G.ls.set(GIA, true);
       // modifiche fatte qui e non ancora arrivate al server: vince questo browser
       if (G.ls.get(SOSPESO, false)) salva({ temi: G.follows(), paese: G.paese(), interessi: G.interessi.leggi() });
       else unisci(io.prefs || {}, primoQui);
@@ -2531,6 +2537,7 @@
     const entrato = (u) => {
       io = u;
       G.ls.set(K, nota_(u));
+      G.ls.set(GIA, true);
       unisci(u.prefs || {}, true);
       primo = Promise.resolve({ attivo: true, utente: u });
       avvisa();
@@ -2845,28 +2852,39 @@
       const at = /(https?:\/\/[^\s)]+?):(\d+):\d+/.exec(st);
       segnala((r && r.message) || String(r), at ? at[1] : "", at ? at[2] : 0);
     });
-    // il foglio dell'account: solo in prima pagina, mai sopra una storia; al massimo una volta alla settimana, mai più
-    // dopo tre «Non ora»
+    // il foglio che propone l'account: solo in prima pagina, mai sopra una storia, una volta sola per dispositivo e solo a
+    // chi apre GERICO da qui da almeno tre giorni diversi. Mai alla prima visita, mai a chi su questo dispositivo è già
+    // entrato con un account, mai in un browser che cancella i dati del sito a ogni uscita (lì i giorni non si sommano).
+    // Chiuso in qualsiasi modo non torna: crearlo o entrare resta sempre nel menu
+    const contaGiorno = () => {
+      const oggi = G.dayKey(new Date()), g = G.ls.get(GIORNI, null) || {};
+      if (g.ultimo !== oggi) G.ls.set(GIORNI, { ultimo: oggi, n: (Number(g.n) || 0) + 1 });
+    };
     let proposto = false;
     const proponi = () => {
-      if (proposto || !passkeyOk() || G.current !== "home" || G.ls.get(K, null)) return;
-      const p = G.ls.get(PROP, {}) || {};
-      if ((p.no || 0) >= 3 || Date.now() - (p.ultima || 0) < 7 * 864e5) return;
+      if (proposto || !passkeyOk() || G.current !== "home" || G.ls.get(K, null) || G.ls.get(GIA, false) || G.ls.get(PROP, null)) return;
+      if ((Number((G.ls.get(GIORNI, null) || {}).n) || 0) < 3) return;
       proposto = true;
       G.afterIntro(() => setTimeout(async () => {
         if (G.current !== "home" || document.querySelector("dialog[open]") || G.ls.get(K, null)) return;
         let d;
         try { d = await chiedi(); } catch (e) { return; }
         if (!d || !d.attivo || d.utente || G.current !== "home" || document.querySelector("dialog[open]")) return;
-        G.ls.set(PROP, { ultima: Date.now(), no: p.no || 0 });
+        G.ls.set(PROP, { ultima: Date.now(), no: 0 });
         apri("proposta");
       }, 2200));
     };
     const pagina = () => {
       if (!G.CONTI) return;
+      contaGiorno();
       visita();
-      if (G.ls.get(K, null)) chiedi().catch(() => {});
-      else if (!G.percorso.primaVolta()) proponi();
+      if (G.ls.get(K, null)) { chiedi().catch(() => {}); return; }
+      // senza il promemoria nel browser si chiede lo stesso al server, una volta per scheda: se il cookie dell'accesso c'è
+      // ancora, si resta dentro senza rifare l'accesso
+      let chiesto = false;
+      try { chiesto = sessionStorage.getItem("gerico.chiSei") === "1"; sessionStorage.setItem("gerico.chiSei", "1"); } catch (e) { /* niente */ }
+      if (!chiesto) chiedi().catch(() => {});
+      if (!G.percorso.primaVolta()) proponi();
     };
 
     return {

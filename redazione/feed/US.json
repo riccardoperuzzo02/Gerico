@@ -1,7 +1,42 @@
 {
  "code": "US",
- "asOf": "2026-11-16T07:17:35+00:00",
+ "asOf": "2026-11-16T09:17:35+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "‘Standing on one leg’: IMF chief warns about global economy as AI circular financing hits $1 trillion",
+   "desc": "Kristalina Georgieva says circular financing among AI companies has grown to just over $1 trillion, two-thirds of it debt, as investor enthusiasm cools",
+   "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+   "at": "2026-11-16T09:14:46+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Airline schedules returning to normal after ground stop, FAA says",
+   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "at": "2026-11-16T09:05:40+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
+   "desc": "The talks are expected to focus on issues including nuclear non-proliferation, the Middle East war, trade policies and, possibly, the Ukraine war.",
+   "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
+   "at": "2026-11-16T08:38:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "4 NFL officials work 2 games each, a rarity due to ground stop",
+   "desc": "Four NFL officials worked two games Sunday — a rarity stemming from Friday's nationwide ground stop ordered by the FAA that threw airlines' schedules into complete disarray.",
+   "url": "https://www.cbsnews.com/news/4-nfl-officials-2-games-each-rarity-faa-ground-stop/",
+   "at": "2026-11-16T08:11:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+   "desc": "Calls for Jensen Huang's return as Nvidia CEO are growing, with tech executives and major shareholders backing a potential comeback following his resignation.",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
+   "at": "2026-11-16T08:05:10+00:00"
+  },
   {
    "source": "CNBC",
    "title": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
@@ -25,20 +60,6 @@
   },
   {
    "source": "CNBC",
-   "title": "China confirms Xi-Trump-Putin historic summit. What will be on the agenda?",
-   "desc": "The talks are expected to focus on issues including nuclear non-proliferation, the Middle East war, trade policies and, possibly, the Ukraine war.",
-   "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
-   "at": "2026-11-16T04:34:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Flights normalizing after ground stop. Here's what to know",
-   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-16T04:30:25+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
    "desc": "A deepening reliance on external demand leaves China more exposed to shocks abroad as domestic momentum fades, analysts say.",
    "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
@@ -50,13 +71,6 @@
    "desc": "After a nationwide ground stop, flight schedules are returning to normal after tens of thousands of travelers encountered delays and cancellations over the weekend.",
    "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
    "at": "2026-11-16T03:48:46+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
-   "desc": "Calls for Jensen Huang's return as Nvidia CEO are growing, with tech executives and major shareholders backing a potential comeback following his resignation.",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
-   "at": "2026-11-16T03:35:09+00:00"
   },
   {
    "source": "CNBC",
@@ -452,16 +466,16 @@
   },
   {
    "source": "NPR",
-   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
-   "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
    "at": "2026-11-15T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
-   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
+   "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
    "at": "2026-11-15T10:00:00+00:00"
   },
   {

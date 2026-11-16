@@ -1,20 +1,104 @@
 {
  "code": "FR",
- "asOf": "2026-11-16T07:17:35+00:00",
+ "asOf": "2026-11-16T09:17:35+00:00",
  "items": [
   {
+   "source": "franceinfo",
+   "title": "Crise sociale : le lycée Nelson-Mandela rouvre ses portes à Nantes, six semaines après l'incendie qui a touché l'établissement",
+   "desc": "Le ministre de l'Education nationale s'est rendu lundi sur place, alors que le gouvernement durcit le ton face aux blocages des établissements scolaires notamment à Paris.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mouvement-lyceen-le-lycee-nelson-mandela-rouvre-ses-portes-a-nantes-six-semaines-apres-l-incendie-dont-il-a-ete-victime_8284130.html",
+   "at": "2026-11-16T09:03:36+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je me suis longtemps caché derrière la provocation et la grivoiserie\" : Gérard Depardieu \"adresse ses excuses\" après avoir renoncé à son procès en appel pour agressions sexuelles",
+   "desc": "L'acteur devait être jugé en appel à partir de lundi pour deux agressions sexuelles commises lors du tournage du film \"Les Volets verts\".",
+   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/je-me-suis-longtemps-cache-derriere-la-provocation-et-la-grivoiserie-gerard-depardieu-adresse-ses-excuses-apres-avoir-renonce-a-son-proces-en-appel-pour-agressions-sexuelles_8284445.html",
+   "at": "2026-11-16T09:01:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Petite martyre de l'A10\" : la tombe d'Inass Touloub plus fleurie que jamais depuis le début du procès de ses parents",
+   "desc": "Alors que le procès des parents d'Inass Touloub touche à sa fin, au palais de justice de Blois, la sépulture de la \"petite martyre de l'A10\" n'a jamais été aussi fleurie à Suèvres. Dans la commune où elle a été retrouvée morte, les habitants restent très attachés à cette petite fille, restée longtemps sans identité.",
+   "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loir-cher/blois/petite-martyre-de-l-a10-la-tombe-d-inass-touloub-plus-fleurie-que-jamais-depuis-le-debut-du-proces-de-ses-parents-3450144.html",
+   "at": "2026-11-16T08:59:21+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Gérard Depardieu renonce à faire appel et « assume » sa condamnation pour agressions sexuelles",
+   "desc": "« J’ai été reconnu coupable. Je l’entends et j’assume cette condamnation », écrit l’acteur, qui présente des « excuses, profondes et sincères » à celles et à ceux qui ont « pu en souffrir ».",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/16/gerard-depardieu-renonce-a-faire-appel-et-assume-sa-condamnation-pour-agressions-sexuelles_6811634_3224.html",
+   "at": "2026-11-16T08:30:29+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'Ukraine a frappé contre le pont reliant la Russie à la Crimée, et lancé plus 600 drones dans la région de Moscou",
+   "desc": "Le ministère de la Défense russe a affirmé que les forces aériennes avaient intercepté et détruit dans la nuit 1 336 drones ukrainiens dans plusieurs régions, y compris celle de Moscou, ainsi qu'au-dessus de la mer Noire et de la mer d'Azov.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/l-ukraine-a-frappe-contre-le-pont-reliant-la-russie-a-la-crimee-et-lance-plus-600-drones-dans-la-region-de-moscou_8284412.html",
+   "at": "2026-11-16T08:13:38+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Faux sites de précommande, téléchargements piégés… Attention aux arnaques avant la sortie du jeu GTA 6",
+   "desc": "À quelques jours de la sortie très attendue de GTA 6, prévue jeudi 19 novembre, les escrocs profitent de l'impatience des joueurs. De faux sites de vente et de prétendues versions gratuites du jeu cherchent notamment à dérober leurs données personnelles et bancaires.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/vrai-ou-faux-faux-sites-de-precommande-telechargements-pieges-attention-aux-arnaques-avant-la-sortie-du-jeu-gta-6_8263358.html",
+   "at": "2026-11-16T07:53:16+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un courrier sur la fertilité est envoyé à partir de lundi à tous les Français de 29 ans pour les informer sur la santé reproductive",
+   "desc": "Ce courrier aborde notamment le sujet de la contraception pour ceux qui ne veulent pas d’enfant mais aussi les consultations spécialisées de fertilité pour les couples.",
+   "url": "https://www.franceinfo.fr/sante/le-courrier-sur-la-fertilite-est-envoye-a-tous-les-francais-de-29-ans-pour-les-informer-sur-la-sante-reproductive_8284199.html",
+   "at": "2026-11-16T07:51:56+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Prendre les médias pour cible, c'est vouloir bâillonner le débat public\", dénonce le directeur général de la chaîne LCI",
+   "desc": "Guillaume Debré s'est exprimé lundi sur France Inter, après les agressions de journalistes en marge de manifestations. Il demande une protection supplémentaire et apporte son soutien aux journalistes agressés.",
+   "url": "https://www.franceinfo.fr/economie/medias/prendre-les-medias-pour-cible-c-est-vouloir-baillonner-le-debat-public-denonce-le-directeur-general-de-la-chaine-lci_8284409.html",
+   "at": "2026-11-16T07:47:19+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La situation autour du budget 2027 \"devient intenable\", préviennent des présidents de départements avant leur rendez-vous avec le Premier ministre",
+   "desc": "\"C'est au moins la troisième année consécutive\" que le gouvernement demande un effort budgétaire aux départements, déplore notamment auprès de France Culture le président LR de Saône-et-Loire.",
+   "url": "https://www.franceinfo.fr/economie/budget/la-situation-autour-du-budget-2027-devient-intenable-previennent-des-presidents-de-departements-avant-leur-rendez-vous-avec-le-premier-ministre_8284391.html",
+   "at": "2026-11-16T07:38:02+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des résultats prometteurs pour une thérapie qui permet de freiner les symptômes du syndrome de Rett",
+   "desc": "Cette maladie génétique rare affectent généralement les jeunes filles et provoque un handicap mental ainsi que des atteintes motrices. La perspective de ce nouveau traitement ouvre la voie à une guérison des malades, et le retour à une vie normale.",
+   "url": "https://www.franceinfo.fr/sante/info-radio-france-des-resultats-prometteurs-pour-une-therapie-qui-permet-de-freiner-les-symptomes-du-syndrome-de-rett_8284385.html",
+   "at": "2026-11-16T07:36:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La Chine confirme un sommet trilatéral entre Xi Jinping, Donald Trump et Vladimir Poutine jeudi pour discuter \"de la paix mondiale\"",
+   "desc": "La guerre en Ukraine ne devrait pas être au menu des discussions alors que le président américain aimerait aborder la réduction des arsenaux d'armes nucléaires dans le monde.",
+   "url": "https://www.franceinfo.fr/monde/chine/la-chine-confirme-un-sommet-trilateral-entre-xi-jinping-donald-trump-et-vladimir-poutine-jeudi-sans-en-preciser-l-ordre-du-jour_8284367.html",
+   "at": "2026-11-16T07:33:26+00:00"
+  },
+  {
    "source": "France 24",
-   "title": "La Francophonie se dirige vers un vote à haut risque pour l'élection de son secrétaire général",
-   "desc": "L'élection du secrétaire général de l'Organisation internationale de la Francophonie doit se dérouler lundi à Phnom Penh, au Cambodge. Après deux mandats de Louise Mushikiwabo, la République démocratique du Congo, qui accuse le Rwanda de soutenir le groupe armé rebelle du M23 dans ses provinces de l'Est, s'oppose à une reconduction de la Rwandaise à la tête de l'OIF.",
+   "title": "Francophonie : l'élection du secrétaire général reportée, Macron salue un \"compromis\"",
+   "desc": "L'élection du secrétaire général de l'Organisation internationale de la Francophonie a été reportée d'un an lundi à Phnom Penh, au Cambodge. Après deux mandats de Louise Mushikiwabo, la République démocratique du Congo, qui accuse le Rwanda de soutenir le groupe armé rebelle du M23 dans ses provinces de l'Est, s'opposait à une reconduction de la Rwandaise à la tête de l'OIF. Emmanuel Macron a salué un \"compromis\" à l'issue du vote.",
    "url": "https://www.france24.com/fr/france/20261116-francophonie-oif-vote-%C3%A9lection-secr%C3%A9taire-g%C3%A9n%C3%A9ral-louise-mushikiwabo-rwanda-rd-congo-juliana-lumumba-dacian-ciolos-coumba-ba",
    "at": "2026-11-16T07:01:33+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "Le plus puissant baron mexicain de la drogue, Miguel Ángel Félix Gallardo, est mort après 37 ans d'emprisonnement",
-   "desc": "Il avait été à l'origine de la fondation du cartel de Guadalajara, premier modèle de la criminalité organisée au Mexique.",
+   "title": "Au Mexique, le plus puissant baron de la drogue, Miguel Angel Félix Gallardo, est mort après 37 ans d'emprisonnement",
+   "desc": "A la fin des années 1970, il avait notamment été l'un des fondateurs du cartel de Guadalajara, considéré comme la première grande organisation criminelle du pays et qui a établi les bases du mode opératoire des bandes actuelles.",
    "url": "https://www.franceinfo.fr/societe/drogue/le-plus-puissant-baron-mexicain-de-la-drogue-miguel-angel-felix-gallardo-est-mort-apres-37-ans-d-emprisonnement_8284346.html",
    "at": "2026-11-16T06:54:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "A Prague, 400 000 manifestants dénoncent une réforme de l’audiovisuel public tchèque",
+   "desc": "Par crainte que l’indépendance des médias publics soit remise en cause par une loi supprimant son financement par la redevance, une foule immense s’est rassemblée dimanche lors de la plus grande manifestation jamais organisée en République tchèque depuis 1989.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/16/a-prague-400-000-manifestants-denoncent-une-reforme-de-l-audiovisuel-public-tcheque_6811567_3210.html",
+   "at": "2026-11-16T06:52:30+00:00"
   },
   {
    "source": "franceinfo",
@@ -25,10 +109,38 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"L'ascenseur social est un peu en panne\" : trouver un stage de seconde ou de 3e, est encore compliqué pour les adolescents les moins favorisés",
+   "title": "Tensions inédites au 20e sommet de la francophonie qui se clôture lundi au Cambodge",
+   "desc": "L'Organisation internationale de la francophonie (OIF) va élire, lundi, son prochain secrétaire général. Une échéance marquée par des tensions, alors que la langue française perd du terrain et que la France réduit sa contribution financière.",
+   "url": "https://www.franceinfo.fr/replay-radio/d-un-monde-a-l-autre/tensions-inedites-au-20e-sommet-de-la-francophonie-qui-se-cloture-lundi-au-cambodge_8263343.html",
+   "at": "2026-11-16T06:42:52+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "En Israël, l'opposant Gadi Eisenkot estime que Benyamin Nétanyahou est \"une menace pour la démocratie\", après un reportage dénonçant une manipulation lors des élections",
+   "desc": "La chaîne 12 a affirmé dimanche soir que la veille des législatives du 27 octobre, le chef de cabinet du chef du gouvernement avait transmis au chef de la police des informations infondées visant des militants du parti arabe Raam.",
+   "url": "https://www.franceinfo.fr/monde/israel/elections-legislatives-en-israel/benyamin-netanyahou-dont-l-entourage-est-soupconne-de-manipulations-electorales-ne-peut-pas-rester-une-minute-de-plus-en-poste-pour-gadi-eisenkot_8284325.html",
+   "at": "2026-11-16T06:30:23+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "IA militaire : comment la France tente d’entrouvrir la porte à une régulation",
+   "desc": "Alors que doit avoir lieu, à Genève, du 16 au 20 novembre, la 7ᵉ Conférence d’examen de la Convention sur certaines armes classiques, plusieurs capitales européennes, dont Paris, aimeraient qu’un instrument de contrôle des systèmes d’armes autonomes soit adopté. Un défi dans un contexte de course aux armements.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/16/ia-militaire-comment-la-france-tente-d-entrouvrir-la-porte-a-une-regulation_6811534_3210.html",
+   "at": "2026-11-16T06:30:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"L'ascenseur social est un peu en panne\" : trouver un stage dans une grande entreprise est encore compliqué pour les élèves issus de milieux défavorisés",
    "desc": "Une étude du ministère de l'Éducation nationale dévoilée fin octobre souligne l'inégalité des chances persistante entre lycéens et collégiens issus de milieux sociaux différents même si certaines associations tentent de changer la tendance, à leur échelle.",
    "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-l-ascenseur-social-est-un-peu-en-panne-trouver-un-stage-de-seconde-ou-de-3e-est-encore-complique-pour-les-adolescents-les-moins-favorises_8263367.html",
    "at": "2026-11-16T06:27:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Ça facilite grandement le travail de nos soldats\" : les robots de combat ukrainiens deviennent incontournables sur le front et permettent de reprendre du terrain aux Russes",
+   "desc": "En Ukraine, ces robots de combat ont notamment été au cœur de l'opération Vivaldi, une offensive qui a récemment permis à Kiev de récupérer près de 280 km2 de son territoire, d’après l'armée ukrainienne, dans la région du Donbass. franceinfo a pu observer sur le terrain le fonctionnement de ces robots.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/reportage-ca-facilite-grandement-le-travail-de-nos-soldats-les-robots-de-combat-ukrainiens-deviennent-incontournables-sur-le-front-et-permettent-de-reprendre-du-terrain-aux-russes_8284292.html",
+   "at": "2026-11-16T06:17:25+00:00"
   },
   {
    "source": "franceinfo",
@@ -38,25 +150,18 @@
    "at": "2026-11-16T06:10:54+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le courrier sur la fertilité est envoyé à partir de lundi à tous les Français de 29 ans pour les informer sur la santé reproductive",
-   "desc": "Ce courrier aborde notamment le sujet de la contraception pour ceux qui ne veulent pas d’enfant mais aussi les consultations spécialisées de fertilité pour les couples.",
-   "url": "https://www.franceinfo.fr/sante/le-courrier-sur-la-fertilite-est-envoye-a-tous-les-francais-de-29-ans-pour-les-informer-sur-la-sante-reproductive_8284199.html",
-   "at": "2026-11-16T05:52:32+00:00"
+   "source": "Le Monde",
+   "title": "Le plan d’épargne-retraite monte en puissance",
+   "desc": "Promu par les pouvoirs publics dès son lancement, en 2019, comme la solution retraite pour tous, le PER s’est depuis fait une place privilégiée dans le portefeuille des Français. Nombre d’entre eux demeurent toutefois réticents à l’idée de souscrire ce produit au fonctionnement complexe.",
+   "url": "https://www.lemonde.fr/argent/article/2026/11/16/le-plan-d-epargne-retraite-monte-en-puissance_6811502_1657007.html",
+   "at": "2026-11-16T06:00:11+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : le pont reliant la Russie à la Crimée attaqué cette nuit ; près de 200 drones neutralisés à l’approche de Moscou",
+   "title": "EN DIRECT, guerre en Ukraine : le pont reliant la Russie à la Crimée attaqué dans la nuit ; près de 200 drones neutralisés à l’approche de Moscou",
    "desc": "Plus de 1 300 drones ukrainiens ont été « interceptés et détruits » au cours de la nuit en Russie, en Crimée et au-dessus de la mer d’Azov et de la mer Noire, selon le ministère de la défense russe.",
    "url": "https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-pres-de-200-drones-neutralises-a-l-approche-de-moscou-selon-le-maire-de-la-capitale-russe_6810982_3210.html",
    "at": "2026-11-16T05:52:17+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Crise sociale : le lycée Nelson-Mandela rouvre ses portes à Nantes, six semaines après l'incendie qui a touché l'établissement",
-   "desc": "Le ministre de l'Education nationale doit se rendre lundi sur place, alors que le gouvernement durcit le ton face aux blocages des établissements scolaires notamment à Paris.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mouvement-lyceen-le-lycee-nelson-mandela-rouvre-ses-portes-a-nantes-six-semaines-apres-l-incendie-dont-il-a-ete-victime_8284130.html",
-   "at": "2026-11-16T05:51:04+00:00"
   },
   {
    "source": "franceinfo",
@@ -67,10 +172,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "En Suisse, l’inculpation inédite d’un journaliste via la loi sur les banques nourrit des inquiétudes",
-   "desc": "Le journaliste suisse Lukas Hässig, dont les articles ont permis de dévoiler un important scandale bancaire, a été inculpé à la mi-octobre. L’utilisation de la loi suisse sur les banques contre les journalistes d’investigation pourrait constituer une menace contre la liberté de la presse.",
+   "title": "En Suisse, l’inculpation inédite d’un journaliste du fait d’une loi sur les banques nourrit des inquiétudes",
+   "desc": "Lukas Hässig, dont les articles ont permis de dévoiler un important scandale bancaire, a été inculpé à la mi-octobre. L’utilisation de la loi suisse sur les banques contre les journalistes d’investigation pourrait constituer une menace contre la liberté de la presse.",
    "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/16/en-suisse-l-inculpation-inedite-d-un-journaliste-via-la-loi-sur-les-banques-nourrit-des-inquietudes_6811403_4355770.html",
-   "at": "2026-11-16T05:00:08+00:00"
+   "at": "2026-11-16T05:00:06+00:00"
   },
   {
    "source": "Le Monde",
@@ -95,8 +200,8 @@
   },
   {
    "source": "Le Monde",
-   "title": "Le maïs, indispensable au modèle agricole français, menacé par le dérèglement climatique",
-   "desc": "La sécheresse et les canicules ont fait chuter la récolte de maïs grain de 50 % et celle de maïs pour le fourrage de plus de 30 % cette année. Des résultats qui posent la question de l’avenir de cette culture, sur laquelle repose l’alimentation d’une grande partie du bétail français.",
+   "title": "Agriculture : la dépendance au maïs percutée par le dérèglement climatique",
+   "desc": "En France, la sécheresse et les canicules ont fait chuter la récolte de maïs grain de 50 % et celle de maïs pour le fourrage de plus de 30 % cette année. Des résultats qui posent la question de l’avenir de cette culture, sur laquelle repose l’alimentation d’une grande partie du bétail.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/16/le-mais-indispensable-au-modele-agricole-francais-menace-par-le-dereglement-climatique_6811339_3234.html",
    "at": "2026-11-16T04:30:00+00:00"
   },
@@ -109,31 +214,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Miguel Angel Félix Gallardo, l’un des narcotrafiquants mexicains les plus puissants, est mort après trente-sept ans passés en prison",
-   "desc": "Ce baron de la drogue est mort, dimanche à l’hôpital, à l’âge de 80 ans, alors qu’il purgeait des peines de soixante-dix-sept ans de prison. Il a marqué l’histoire criminelle du Mexique en posant les fondations des cartels modernes, jusqu’à inspirer la série Netflix « Narcos : Mexico ».",
-   "url": "https://www.lemonde.fr/disparitions/article/2026/11/16/miguel-angel-felix-gallardo-l-un-des-narcotrafiquants-mexicains-les-plus-reputes-est-mort-apres-trente-sept-ans-passes-en-prison_6811303_3382.html",
-   "at": "2026-11-16T04:17:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "COP 31 : Ilona Mayerau-Lonné fait entendre la voix de la jeunesse calédonienne",
-   "desc": "Étudiante à Paris, Ilona Mayerau-Lonné porte la voix de la jeunesse calédonienne au sein d’un réseau européen depuis 2022. Présente à la conférence des Nations unies sur le climat grâce au programme Green overseas, elle défend une meilleure prise en compte des territoires insulaires.",
-   "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/cop-31-ilona-mayerau-lonne-fait-entendre-la-voix-de-la-jeunesse-caledonienne-1758147.html",
-   "at": "2026-11-16T04:14:10+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Pourquoi la Silicon Valley veut-elle fabriquer des bébés génétiquement modifiés ?",
-   "desc": "Dans cet épisode, Alexandre Piquard, journaliste au service Economie du « Monde », chargé du suivi des géants de la tech et de l’intelligence artificielle, décrit la pente eugéniste induite par de récentes innovations technologiques dans ce secteur.",
-   "url": "https://www.lemonde.fr/podcasts/article/2026/11/16/pourquoi-la-silicon-valley-veut-elle-fabriquer-des-bebes-genetiquement-modifies_6811237_5463015.html",
-   "at": "2026-11-16T04:00:07+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Coup dur pour Amazon avec la perte de 40 satellites due à l’échec de la fusée Vulcan",
    "desc": "Le lanceur a subi une anomalie ⁠environ dix minutes après le décollage, perdant les satellites qu’il transportait. Il s’agissait du premier vol parmi les dizaines qui ont été achetés au groupe United Launch Alliance par la société de Jeff Bezos pour le développement de son réseau Internet.",
    "url": "https://www.lemonde.fr/sciences/article/2026/11/16/coup-dur-pour-amazon-avec-la-perte-de-40-satellites-due-a-l-echec-de-la-fusee-vulcan_6811204_1650684.html",
    "at": "2026-11-16T03:11:01+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Maroc, Casablanca, sous pression immobilière, veut préserver ses immeubles Art déco",
+   "desc": "L’Etat marocain accélère depuis ces dernières années sa politique de protection du patrimoine architectural hérité du protectorat français mais aussi des années qui ont suivi l’indépendance.",
+   "url": "https://www.lemonde.fr/afrique/article/2026/11/16/au-maroc-casablanca-sous-pression-immobiliere-veut-preserver-ses-immeubles-art-deco_6811171_3212.html",
+   "at": "2026-11-16T03:00:10+00:00"
   },
   {
    "source": "Le Monde",
@@ -150,16 +241,9 @@
    "at": "2026-11-15T20:45:27+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Alimentation : que sait-on vraiment du \"turbo poulet\", cette volaille qui domine les rayons des supermarchés ?",
-   "desc": "Plébiscité par les consommateurs pour son prix attractif, le poulet standard représente plus de la moitié des ventes en France. Mais derrière ce succès se cache une race à croissance ultra-rapide, surnommée le \"turbo poulet\". Conditions d'élevage, problèmes de santé, qualité nutritionnelle : que sait-on vraiment de cette volaille qui domine les rayons ?",
-   "url": "https://www.franceinfo.fr/sante/alimentation/alimentation-que-sait-on-vraiment-du-turbo-poulet-cette-volaille-qui-domine-les-rayons-des-supermarches_8283914.html",
-   "at": "2026-11-15T20:34:15+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Les rassemblements autour de certains lycées et universités interdits à Paris",
-   "desc": "Publié dimanche, un arrêté préfectoral prévoit l'interdiction de tout rassemblement ou cortège non déclaré \"dans un rayon de 100 mètres\" autour de dix lycées et cinq sites universitaires de Paris. La mesure, qui s'applique de lundi à vendredi inclus, est justifiée par \"les nombreux débordements et blocages\", assure le préfet de police Patrice Faure.",
+   "desc": "Publié dimanche, un arrêté préfectoral prévoit l'interdiction de tout rassemblement ou cortège non déclaré \"dans un rayon de 100 mètres\" autour de dix lycées et cinq sites universitaires de Paris. Le syndicat étudiant Unef a exigé son \"retrait immédiat\" et annoncé saisir le tribunal administratif en référé.",
    "url": "https://www.france24.com/fr/france/20261115-les-rassemblements-autour-de-certains-lyc%C3%A9es-et-universit%C3%A9s-interdits-%C3%A0-paris",
    "at": "2026-11-15T20:19:27+00:00"
   },
@@ -172,101 +256,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Mortiers d'artifice : malgré le décret du gouvernement, des vendeurs continuent de les proposer",
-   "desc": "Les mortiers d'artifice sont de plus en plus utilisés à des fins dangereuses, notamment lors de manifestations ou aux abords d'établissements scolaires. Face à la multiplication des incidents, le gouvernement a décidé d'interdire leur vente aux particuliers jusqu'au 27 novembre. Pourtant, malgré cette mesure, ces engins pyrotechniques restent accessibles dans certains commerces et sur les réseaux sociaux.",
-   "url": "https://www.franceinfo.fr/societe/mortiers-d-artifice-malgre-le-decret-du-gouvernement-des-vendeurs-continuent-de-les-proposer_8283896.html",
-   "at": "2026-11-15T20:08:26+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La CFDT rejoint la mobilisation du 17 novembre parce que \"nos revendications n'ont pas abouti\", explique le syndicat",
-   "desc": "Lors de la réunion avec l'intersyndicale de la fonction publique vendredi, le Premier ministre a annoncé l'ouverture d'une discussion d'un mois pour revaloriser les bas salaires, des mesures \"qui ne répondent pas à l'urgence\" de la situation, rappellent les syndicats.",
-   "url": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/la-cfdt-rejoint-la-mobilisation-du-17-novembre-parce-que-nos-revendications-n-ont-pas-abouti-explique-le-syndicat_8283890.html",
-   "at": "2026-11-15T19:44:28+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : la pauvreté requiert des \"solutions structurelles\", affirme le président des Restos du cœur",
-   "desc": "Cinq candidats à la présidentielle débattront lundi des enjeux de solidarité, de pouvoir d'achat et de lutte contre la pauvreté, à la veille du lancement de la 42e campagne de l'association fondée par Coluche, qui veut \"remettre la lutte contre la pauvreté au cœur\" de la campagne.",
-   "url": "https://www.franceinfo.fr/societe/pauvrete/presidentielle-2027-la-pauvrete-requiert-des-solutions-structurelles-selon-les-restos-du-coeur_8283881.html",
-   "at": "2026-11-15T19:40:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un homme a été mis en examen et écroué dans les Yvelines, après la séquestration d'un couple forcé à virer 900 000 euros en bitcoins",
-   "desc": "Début mars, un homme et une femme d'une cinquantaine d'années avaient été séquestrés à leur domicile au Chesnay (Yvelines) et forcés à virer la somme à leurs agresseurs.",
-   "url": "https://www.franceinfo.fr/economie/bitcoin/un-homme-a-ete-mis-en-examen-et-ecroue-dans-les-yvelines-apres-un-crypto-rapt-a-900-000-euros_8283848.html",
-   "at": "2026-11-15T19:26:01+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un policier municipal placé en garde à vue à Paris \"pour menace de mort en raison de la race, l’ethnie, la nation la religion\"",
-   "desc": "Le suspect a été interpellé dans la capitale par la BRI dans un \"état alcoolisé\" selon le parquet de Parquet, sans précisions supplémentaires concernant les menaces ou les cibles de l'individu.",
-   "url": "https://www.franceinfo.fr/faits-divers/police/un-policier-municipal-place-en-garde-a-vue-pour-menace-de-mort-en-raison-de-la-race-l-ethnie-la-nation-la-religion-selon-le-parquet-de-paris_8283857.html",
-   "at": "2026-11-15T19:17:44+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Au Yémen, le camp gouvernemental masse des renforts autour d'Aden, menacée par les houthis",
-   "desc": "Le gouvernement reconnu par la communauté internationale s'est replié à Aden après la prise, en 2014 par les houthis, de la capitale Sanaa et de grands pans du nord du pays, les plus peuplés.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/yemen/au-yemen-le-camp-gouvernemental-masse-des-renforts-autour-d-aden-menacee-par-les-houthis_8283851.html",
-   "at": "2026-11-15T18:47:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Des militants d'extrême droite ont été agressés dans un bar à Marseille",
-   "desc": "Le maire RN du secteur a dénoncé les agissements d'une \"milice d'extrême gauche\".",
-   "url": "https://www.franceinfo.fr/marseille/des-militants-d-extreme-droite-ont-ete-agresses-dans-un-bar-a-marseille_8283776.html",
-   "at": "2026-11-15T18:02:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'Estonie va fermer sa frontière avec la Russie à partir du 1er décembre, après une nouvelle tentative de sabotage",
-   "desc": "L'Estonie dit avoir déjoué de justesse une nouvelle tentative d'incendie d'une usine de drones orchestrée, selon elle, par le renseignement militaire russe.",
-   "url": "https://www.franceinfo.fr/monde/russie/l-estonie-va-fermer-sa-frontiere-avec-la-russie-a-partir-du-1er-decembre-apres-une-nouvelle-tentative-de-sabotage_8283728.html",
-   "at": "2026-11-15T17:56:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les Tchèques manifestent en masse contre la réforme du financement des médias publics",
-   "desc": "Selon les critiques, cette réforme risque d'accroître la dépendance des médias publics à l'égard du pouvoir politique.",
-   "url": "https://www.franceinfo.fr/monde/europe/les-tcheques-manifestent-en-masse-contre-la-reforme-du-financement-des-medias-publics_8283761.html",
-   "at": "2026-11-15T17:54:41+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Au Cambodge, Emmanuel Macron appelle à l'\"unité\" de l'Organisation internationale de la francophonie, secouée par une rivalité entre la RDC et le Rwanda",
-   "desc": "Les deux pays africains s'affrontent autour du nom du prochain secrétaire général de l'institution qui œuvre notamment pour la promotion de la langue française, reléguant des enjeux politiques au second plan.",
-   "url": "https://www.franceinfo.fr/culture/patrimoine/francophonie/au-cambodge-emmanuel-macron-appelle-a-l-unite-de-l-organisation-internationale-de-la-francophonie-secouee-par-une-rivalite-entre-la-rdc-et-le-rwanda_8283593.html",
-   "at": "2026-11-15T17:48:41+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Une centaine de personnes réunies pour une marche blanche en hommage à Pengo Bossio Wangi, tué dans l'attentat raciste de Trappes",
-   "desc": "Derrière la large banderole noire floquée du portrait de son neveu, un des oncles de la victime a voulu organiser cette marche blanche \"pour faire porter la voix\" de son proche décédé.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/une-centaine-de-personnes-reunies-pour-une-marche-blanche-en-hommage-a-pengo-bossio-wangi-tue-dans-l-attaque-raciste-de-trappes_8283689.html",
-   "at": "2026-11-15T16:36:04+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Mobilisation lycéenne : le proviseur de Paul Éluard, qui avait autorisé une intervention policière dans son établissement, a quitté ses fonctions",
+   "title": "Mobilisation lycéenne : le proviseur du lycée Paul-Eluard de Saint-Denis, qui avait autorisé une intervention policière dans son établissement, a quitté ses fonctions",
    "desc": "Ce vendredi 15 novembre, les représentants des personnels du lycée Paul-Éluard, à Saint-Denis, ont annoncé via un communiqué, le départ du proviseur. Plus de 80 personnels de l'établissement avaient voté une grève reconductible \"jusqu'au départ du proviseur\", après l'intervention de la BAC au sein du lycée il y a tout pile un mois.",
    "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/seine-saint-denis/saint-denis/mobilisation-lyceenne-le-proviseur-de-paul-eluard-qui-avait-autorise-une-intervention-policiere-dans-son-etablissement-a-quitte-ses-fonctions-3450087.html",
    "at": "2026-11-15T16:21:48+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Elections législatives : le chantier sans cesse repoussé du redécoupage électoral",
-   "desc": "Si des élections législatives sont organisées en 2027 après la présidentielle, elles reposeront sur une carte électorale qui n’a plus été retouchée depuis 2009. Alors que les autorités politiques tardent à se lancer dans ce chantier à haut risque, une commission dédiée s’est remise au travail.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/15/elections-legislatives-le-chantier-sans-cesse-repousse-du-redecoupage-electoral_6811034_823448.html",
-   "at": "2026-11-15T16:08:57+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Grièvement brûlée par son conjoint, une femme est morte près de Bordeaux",
-   "desc": "L'homme est mort dans l'incendie du domicile à Saint-Denis-de-Pile et la victime avait d'abord été \"évacuée en urgence\" au centre hospitalier de Bordeaux, avant de succomber à ses blessures.",
-   "url": "https://www.franceinfo.fr/societe/feminicides/grievement-brulee-par-son-conjoint-une-femme-est-morte-pres-de-bordeaux_8283656.html",
-   "at": "2026-11-15T15:41:35+00:00"
   },
   {
    "source": "franceinfo",
@@ -277,17 +270,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Pourquoi la maladie de Parkinson est en forte augmentation en France et touche particulièrement certains départements",
-   "desc": "Cette maladie neurodégénérative touche près de 300 000 personnes en France. Elle augmente fortement en raison principalement du vieillissement de la population mais aussi de la présence des métaux lourds et des pesticides dans l'environnement.",
-   "url": "https://www.franceinfo.fr/sante/pourquoi-la-maladie-de-parkinson-est-en-forte-augmentation-en-france-et-touche-particulierement-certains-departements_8279975.html",
-   "at": "2026-11-15T13:01:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On voyait que l'eau était en train de monter\" : des automobilistes racontent leur nuit piégés par les intempéries dans l'Hérault",
-   "desc": "Après de violents orages dans la nuit du samedi 14 novembre, le département de l'Hérault s'est retrouvé sous les eaux. Au sud de Montpellier, des dizaines d'automobilistes ont été piégés par les inondations. Une femme de 73 ans, emportée dans sa voiture, a finalement été secourue par hélicoptère.",
-   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/herault-apres-les-violents-orages-des-automobilistes-temoignent-de-leur-nuit-pieges-par-les-eaux_8283527.html",
-   "at": "2026-11-15T12:36:55+00:00"
+   "title": "Déviations, horaires, gratuité de l'A14... Tout ce qu'il faut savoir sur le chantier de l'autoroute A13, entre Paris et la Normandie, qui commence ce matin",
+   "desc": "Du 16 novembre 2026 jusqu'en août 2027, l'autoroute A13 sera fermée dans le sens Paris-province, pour des travaux de renforcement du tunnel de Saint-Cloud. Itinéraires bis, gratuité de l'A14... Dès demain, des mesures seront mises en place pour éviter des embouteillages notamment sur le périphérique de l'ouest parisien.",
+   "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/fermeture-de-l-a13-deviations-horaires-gratuite-de-l-a14-tout-ce-qu-il-faut-savoir-sur-le-chantier-de-l-autoroute-qui-relie-paris-et-la-normandie-3449949.html",
+   "at": "2026-11-15T10:39:07+00:00"
   },
   {
    "source": "France 24",

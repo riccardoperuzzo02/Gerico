@@ -29,7 +29,7 @@ import urllib.request
 
 UA = "GericoFoto/1.0 (https://gerico.financialnews.workers.dev/come-funziona.html; foto dei luoghi delle notizie) python-urllib"
 LIBERE = re.compile(r"^(cc[ -]?by(-sa)?([ -]\d(\.\d)?)?([ -][a-z]{2,3})?([ -]migrated)?|cc[ -]?0( 1\.0)?|cc0|public domain( mark)?|pd([ -].*)?"
-                    r"|attribution|copyrighted free use|no restrictions)$", re.I)
+                    r"|attribution|copyrighted free use|no restrictions|ogl( v?\d(\.\d)?)?)$", re.I)
 LINGUA = re.compile(r"^[a-z]{2,3}$")
 # dove cercare la stessa voce quando quella scelta non ha una foto
 ALTRE = ["en", "it", "fr", "es", "de"]
@@ -87,10 +87,12 @@ def file_ok(nome):
 def trova(wiki, title):
     """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché)."""
     host = (wiki if isinstance(wiki, str) and LINGUA.match(wiki) else "it") + ".wikipedia.org"
-    d = api(host, action="query", prop="pageimages|pageprops", piprop="name", ppprop="wikibase_item", titles=title, redirects="1")
+    d = api(host, action="query", prop="pageimages|pageprops", piprop="name", ppprop="wikibase_item|disambiguation", titles=title, redirects="1")
     pages = (d.get("query") or {}).get("pages") or []
     if not pages or pages[0].get("missing"):
         return None, f"la voce non c'è su {host}"
+    if "disambiguation" in (pages[0].get("pageprops") or {}):
+        return None, f"su {host} è una pagina di disambiguazione: serve il titolo preciso"
     # mai la foto di una persona: se la voce è di un essere umano (Wikidata: istanza di Q5) non si prende niente
     item = (pages[0].get("pageprops") or {}).get("wikibase_item")
     if not item:
@@ -145,6 +147,8 @@ def voci(s, ph):
     for a in (alt if isinstance(alt, list) else [alt] if alt else []):
         if isinstance(a, str) and a.strip():
             out.append((wiki, a.strip()))
+            if wiki != "it":
+                out.append(("it", a.strip()))   # la riserva è spesso il nome italiano della città
         elif isinstance(a, dict) and isinstance(a.get("title"), str) and a["title"].strip():
             w = a.get("wiki") if isinstance(a.get("wiki"), str) and LINGUA.match(a.get("wiki")) else wiki
             out.append((w, a["title"].strip()))

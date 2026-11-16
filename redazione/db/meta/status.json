@@ -1,11 +1,11 @@
 {
   "agendaRun": {
-    "at": "2026-11-13T15:41:15+01:00",
-    "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
+    "at": "2026-11-16T12:13:00+01:00",
+    "esito": "Nessun risultato trovato (Pil Giappone, dati Cina di ottobre non reperiti). Completata l'agenda con il calendario (Canada, Usa, Area euro, Australia) e tolto il falso «negativo» dal Pil giapponese."
   },
   "lastPublish": {
-    "at": "2026-11-16T10:09:05+01:00",
-    "esito": "Giro pubblica su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database; controlla: 7 cose da sistemare."
+    "at": "2026-11-16T12:11:30+01:00",
+    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-16T07:29:53+01:00",
   "marketsRun": {

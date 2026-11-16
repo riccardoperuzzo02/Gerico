@@ -2659,12 +2659,14 @@ html.nuova body.term #map-panel { border-top: 0; }
 
 /* ---------- Seguiti: i tuoi temi (16 novembre 2026) ----------
    In cima ai Seguiti i temi stanno in fila, uno per tasto: un tocco mostra solo le storie di quel tema, con quante sono
-   oggi e un punto se ce ne sono di nuove. «Gestisci» apre la ricerca e l'elenco per aggiungere e togliere.
+   oggi e un punto se ce ne sono di nuove; in fondo alla fila «Aggiungi». «Modifica» trasforma la fila: ogni tema ha la
+   sua ×, sotto ci sono la ricerca e i temi da seguire.
    Dappertutto lo stesso segno: «+» davanti a un tema da seguire, «✓» davanti a un tema che segui (anche sulle notizie). */
 .tag[data-follow][aria-pressed="false"]::before { content: "+ "; font-weight: 500; opacity: 0.65; }
 .tag .tag-n, .fol-f .n { margin-left: 7px; font-size: 0.8125rem; font-weight: 600; font-variant-numeric: tabular-nums; opacity: 0.7; }
-.tag.tag-nuovo { background: none; box-shadow: inset 0 0 0 1.5px var(--accent, var(--palm)); }
+.tag.tag-nuovo { display: inline-flex; align-items: center; flex-wrap: wrap; height: auto; min-height: 40px; padding-top: 6px; padding-bottom: 6px; background: none; box-shadow: inset 0 0 0 1.5px var(--accent, var(--palm)); text-align: left; }
 .tag.tag-nuovo[aria-pressed="false"]::before { content: none; }
+.tag-nuovo .tag-sub { flex-basis: 100%; font-size: 0.75rem; font-weight: 500; color: var(--muted); }
 a.tag-l { display: inline-flex; align-items: center; text-decoration: none; }
 .fol-menu a.tag-l { background: var(--fill); }
 .fol-testa { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -2675,27 +2677,43 @@ a.tag-l { display: inline-flex; align-items: center; text-decoration: none; }
   background: none; box-shadow: inset 0 0 0 1px var(--rule); color: var(--ink); font: inherit; font-size: 0.9375rem; font-weight: 650;
   white-space: nowrap; cursor: pointer;
 }
-.fol-f > span:not(.n):not(.hot-dot):not(.fol-nuovo):not(.sr-only) { overflow: hidden; text-overflow: ellipsis; }
+.fol-f > span:not(.n):not(.fol-nuovo):not(.sr-only) { overflow: hidden; text-overflow: ellipsis; }
 .fol-f[aria-pressed="true"] { background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); box-shadow: none; }
-.fol-f .hot-dot { display: inline-block; flex: none; width: 7px; height: 7px; margin-right: 7px; background: #C8102E; }
 .fol-nuovo { flex: none; width: 7px; height: 7px; margin-left: 8px; background: var(--accent, var(--palm)); }
 .fol-f[aria-pressed="true"] .fol-nuovo { background: currentColor; }
-html.nuova .fol-nuovo, html.nuova .fol-f .hot-dot { border-radius: 50% !important; }
-@media (hover: hover) { .fol-f:not([aria-pressed="true"]):hover { background: var(--fill); } }
+html.nuova .fol-nuovo { border-radius: 50% !important; }
+/* «Aggiungi», l'ultimo della fila: tratteggiato, con il più */
+.fol-f.fol-add { box-shadow: none; outline: 1px dashed var(--rule); outline-offset: -1px; color: var(--muted); }
+.fol-f.fol-add::before { content: "+"; margin-right: 6px; font-size: 1.0625rem; font-weight: 500; line-height: 1; }
+@media (hover: hover) { .fol-f:not([aria-pressed="true"]):hover { background: var(--fill); } .fol-f.fol-add:hover { color: var(--ink); } }
 @media (max-width: 759px) {
   /* sul telefono una riga sola che scorre di lato, come le sezioni */
-  .fol-filtri { flex-wrap: nowrap; margin-left: calc(-1 * var(--f21, 21px)); margin-right: calc(-1 * var(--f21, 21px)); padding: 1px var(--f21, 21px); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .fol-filtri { flex-wrap: nowrap; margin-left: calc(-1 * var(--f21, 21px)); margin-right: calc(-1 * var(--f21, 21px)); padding: 1px var(--f21, 21px); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
   .fol-filtri::-webkit-scrollbar { display: none; }
 }
-.fol-gest { margin-top: var(--f21, 21px); padding-top: var(--f21, 21px); border-top: 1px solid var(--rule); }
-.fol-top-vuoto .fol-gest, #fol-top > .blk-sub + .fol-gest { margin-top: var(--f13, 13px); padding-top: 0; border-top: 0; }
+@media (prefers-reduced-motion: reduce) { .fol-filtri { scroll-behavior: auto; } }
+/* la modifica: i tuoi temi con la ×, poi la ricerca e i temi da seguire */
+.fol-mod .fol-miei { margin-top: var(--f13, 13px); }
+.tag.tag-via { display: inline-flex; align-items: center; }
+.tag.tag-via::before { content: none; }
+.tag.tag-via .x { position: relative; flex: none; width: 10px; height: 10px; margin-left: 9px; opacity: 0.8; }
+.tag.tag-via .x::before, .tag.tag-via .x::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.6px; margin: -0.8px 0 0 -6px; background: currentColor; transform: rotate(45deg); }
+.tag.tag-via .x::after { transform: rotate(-45deg); }
+.fol-agg { margin-top: var(--f21, 21px); }
+#fol-top > .blk-sub + .fol-agg { margin-top: var(--f13, 13px); }
+.fol-mod .fol-agg { padding-top: var(--f21, 21px); border-top: 1px solid var(--rule); }
 .fol .fol-ris { margin-top: 10px; }
 .fol .fol-ris:empty { display: none; }
-.fol-gest > .fol-l:first-of-type { margin-top: var(--f13, 13px); }
+.fol-agg > .fol-l:first-of-type { margin-top: var(--f13, 13px); }
 .fol-q:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 1px; }
+.tag.fol-altri { background: none; box-shadow: none; color: var(--accent, var(--palm)); text-decoration: underline; text-underline-offset: 3px; }
 .fol-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 4px 0 var(--f13, 13px); }
 .fol-bar p { flex: 1 1 240px; font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
 .fol-bar .tag { flex: none; }
+/* l'avviso con «Annulla» */
+.toast.az { display: flex; align-items: center; gap: 4px; width: max-content; max-width: calc(100vw - 32px); padding-right: 6px; }
+.toast.az.on { pointer-events: auto; }
+.toast-b { min-height: 32px; margin: -4px 0; padding: 0 12px; border: 0; background: none; color: inherit; font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 /* accanto a «Seguiti»: quante storie nuove */
 .sec-nav .nav-n {
   display: inline-flex; align-items: center; justify-content: center; flex: none; min-width: 18px; height: 18px; margin-left: 6px; padding: 0 5px;

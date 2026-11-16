@@ -159,6 +159,8 @@
       return out;
     };
     const out = walk(data, "");
+    // i temi caldi tengono anche il nome italiano: è quello che si salva tra i temi seguiti, in ogni lingua
+    if (out && Array.isArray(out.themes) && Array.isArray(data.themes)) out.themes.forEach((t, i) => { if (t && data.themes[i]) t.labelIt = data.themes[i].label; });
     // le storie non ancora tradotte si segnano: la pagina dice che sono in italiano
     if (out && Array.isArray(out.stories)) {
       const mark = (list, orig) => (list || []).forEach((s, i) => { if (orig[i] && s.title === orig[i].title) s.untranslated = true; });
@@ -478,25 +480,48 @@
   };
 
   // ---------- avviso breve in basso («Link copiato») ----------
-  G.toast = (msg) => {
+  // un avviso breve in basso; con `azione` ({ label, fn }) ha anche un tasto (per esempio «Annulla») e resta di più
+  G.toast = (msg, azione) => {
     let t = document.querySelector(".toast");
     if (!t) { t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); document.body.appendChild(t); }
-    t.textContent = msg;
+    t.textContent = "";
+    const m = document.createElement("span");
+    m.textContent = msg;
+    t.appendChild(m);
+    t.classList.toggle("az", !!(azione && azione.fn));
+    if (azione && azione.fn) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "toast-b";
+      b.textContent = azione.label;
+      b.addEventListener("click", () => { clearTimeout(t._h); t.classList.remove("on"); azione.fn(); });
+      t.appendChild(b);
+    }
     requestAnimationFrame(() => t.classList.add("on"));
     clearTimeout(t._h);
-    t._h = setTimeout(() => t.classList.remove("on"), 2200);
+    t._h = setTimeout(() => t.classList.remove("on"), azione && azione.fn ? 6000 : 2200);
   };
 
   // ---------- temi seguiti ----------
   // restano nel browser (gerico.follows); ogni cambio lo sanno la pagina e il menu (evento gerico:follows)
   G.follows = () => { const f = G.ls.get("gerico.follows", []); return Array.isArray(f) ? f.filter((x, i) => typeof x === "string" && x && f.indexOf(x) === i) : []; };
-  G.toggleFollow = (t) => {
+  // `nome`, se c'è, è come il tema si chiama sulla pagina (un tema caldo nel sito in inglese)
+  G.toggleFollow = (t, nome) => {
     const f = G.follows(), k = String(t).toLowerCase();
     // «iran» e «Iran» sono lo stesso tema
-    const on = !f.some((x) => x.toLowerCase() === k);
+    const i = f.findIndex((x) => x.toLowerCase() === k), on = i < 0;
     const n = on ? f.concat(t) : f.filter((x) => x.toLowerCase() !== k);
     G.ls.set("gerico.follows", n);
-    G.toast(on ? G.L("Ora segui «", "Now following “") + G.tn(t) + (location.hash === "#seguiti" ? G.L("»", "”") : G.L("»: lo trovi nei Seguiti", "”: find it in Following")) : G.L("Non segui più «", "No longer following “") + G.tn(t) + G.L("»", "”"));
+    // smettere di seguire si può annullare: il tema torna al suo posto
+    const annulla = on ? null : { label: G.L("Annulla", "Undo"), fn: () => {
+      const g = G.follows();
+      if (g.some((x) => x.toLowerCase() === k)) return;
+      g.splice(Math.min(i, g.length), 0, f[i]);
+      G.ls.set("gerico.follows", g);
+      G.toast(G.L("Segui di nuovo «", "Following “") + (nome || G.tn(f[i])) + G.L("»", "” again"));
+      document.dispatchEvent(new CustomEvent("gerico:follows", { detail: { tag: f[i], on: true, annullato: true } }));
+    } };
+    G.toast(on ? G.L("Ora segui «", "Now following “") + (nome || G.tn(t)) + (location.hash === "#seguiti" ? G.L("»", "”") : G.L("»: lo trovi nei Seguiti", "”: find it in Following")) : G.L("Non segui più «", "No longer following “") + (nome || G.tn(f[i])) + G.L("»", "”"), annulla);
     document.dispatchEvent(new CustomEvent("gerico:follows", { detail: { tag: t, on } }));
     return n;
   };
@@ -1697,18 +1722,23 @@
             (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<a class="tag tag-l" href="./#seguiti" data-fol-tema="' + G.esc(t) + '">' + G.esc(G.tn(t)) + "</a>").join("") +
               '</div><p class="fol-note">' + G.L("Tocca un tema per leggere le sue notizie.", "Tap a topic to read its news.") + "</p>"
               : '<p class="fol-note">' + G.L("Non segui ancora nessun tema.", "You don't follow any topics yet.") + "</p>") +
-            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Tutti i Seguiti", "All of Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a></nav>";
+            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Tutti i Seguiti", "All of Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a>" +
+            (f.length ? '<a href="./#seguiti" data-fol-gest="1">' + G.L("Aggiungi o togli temi", "Add or remove topics") + "</a>" : "") + "</nav>";
         };
         draw();
         G.conto.menu(menu, box);
-        // un tema del menu apre i Seguiti su quel tema: lo dice alla prima pagina (se è questa) e lo lascia in memoria
-        // di sessione per quando ci si arriva da un'altra pagina; «Tutti i Seguiti» toglie la scelta
+        // un tema del menu apre i Seguiti su quel tema, «Tutti i Seguiti» su tutti, «Aggiungi o togli temi» con la modifica
+        // aperta: lo dice alla prima pagina (se è questa) e lo lascia in memoria di sessione per quando ci si arriva da
+        // un'altra pagina (la prima pagina tiene il tema scelto per tutta la visita)
         box.addEventListener("click", (e) => {
           const a = e.target.closest('a[href="./#seguiti"]');
           if (!a) return;
-          const tema = a.dataset.folTema || "";
-          try { if (tema) sessionStorage.setItem("gerico.seguitiTema", tema); else sessionStorage.removeItem("gerico.seguitiTema"); } catch (err) { /* niente */ }
-          document.dispatchEvent(new CustomEvent("gerico:seguiti-tema", { detail: { tema } }));
+          const tema = a.dataset.folTema || "", gest = !!a.dataset.folGest;
+          try {
+            if (tema) sessionStorage.setItem("gerico.seguitiFiltro", tema); else sessionStorage.removeItem("gerico.seguitiFiltro");
+            if (gest) sessionStorage.setItem("gerico.seguitiGest", "1"); else sessionStorage.removeItem("gerico.seguitiGest");
+          } catch (err) { /* niente */ }
+          document.dispatchEvent(new CustomEvent("gerico:seguiti-tema", { detail: { tema, gest } }));
         });
         P.on(document, "gerico:follows", draw);
       }
@@ -2289,9 +2319,9 @@
       let ed = null;
       try { ed = await G.load("edition"); } catch (e) { ed = null; }
       const out = [], visti = new Set();
-      const add = (t, caldo) => { const k = String(t).toLowerCase(); if (t && !visti.has(k) && out.length < 14) { visti.add(k); out.push([t, caldo]); } };
+      const add = (t, caldo, vis) => { const k = String(t).toLowerCase(); if (t && !visti.has(k) && out.length < 14) { visti.add(k); out.push([t, caldo, vis]); } };
       if (ed) {
-        (ed.themes || []).slice(0, 3).forEach((t) => t && t.label && add(t.label, true));
+        (ed.themes || []).slice(0, 3).forEach((t) => t && t.label && add(t.labelIt || t.label, true, t.label));
         const live = new Set((ed.stories || []).map((s) => s.id)), n = {};
         (ed.stories || []).concat(ed.archive || []).forEach((s) => s && s.scope !== "paese" && (s.tags || []).forEach((t) => { if (typeof t === "string" && t) n[t] = (n[t] || 0) + (live.has(s.id) ? 2 : 1); }));
         Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 9).forEach((t) => add(t, false));
@@ -2311,8 +2341,8 @@
       if (q.k === "temi") {
         const temi = await temiSettimana(), f = G.follows();
         if (!temi.length) return '<p class="conto-nota">' + L("Oggi non ci sono temi da proporre: li segui in fondo a ogni storia.", "No topics to suggest today: follow them at the bottom of any story.") + "</p>";
-        return '<div class="tags int-tags" role="group" aria-label="' + G.esc(q.t()) + '">' + temi.map(([t, caldo]) => '<button type="button" class="tag" data-tema="' + G.esc(t) + '" aria-pressed="' + f.includes(t) + '">' +
-          (caldo ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + G.esc(G.tn(t)) + (caldo ? '<span class="sr-only">' + L(", tema caldo", ", hot topic") + "</span>" : "") + "</button>").join("") + "</div>";
+        return '<div class="tags int-tags" role="group" aria-label="' + G.esc(q.t()) + '">' + temi.map(([t, caldo, vis]) => '<button type="button" class="tag" data-tema="' + G.esc(t) + '" data-nome="' + G.esc(vis || G.tn(t)) + '" aria-pressed="' + f.includes(t) + '">' +
+          (caldo ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + G.esc(vis || G.tn(t)) + (caldo ? '<span class="sr-only">' + L(", tema caldo", ", hot topic") + "</span>" : "") + "</button>").join("") + "</div>";
       }
       return '<div class="tags int-tags" role="group" aria-label="' + G.esc(q.t()) + '">' + q.o().map((x) => '<button type="button" class="tag' + (x === q.solo ? " int-solo" : "") + '" data-int="' + q.k + '" data-v="' + x + '" aria-pressed="' + attive.includes(x) + '">' +
         (q.k === "sezioni" && x === "paese" ? G.flag(G.paese()) : "") + G.esc(nome(x)) + "</button>").join("") + "</div>";
@@ -2320,7 +2350,7 @@
     // un tocco su una risposta: subito nel browser (e nell'account), con l'effetto sulla pagina
     const tocca = (b) => {
       if (b.dataset.tema) {
-        G.toggleFollow(b.dataset.tema);
+        G.toggleFollow(b.dataset.tema, b.dataset.nome);
         b.setAttribute("aria-pressed", String(G.follows().includes(b.dataset.tema)));
         return;
       }

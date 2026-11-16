@@ -1,0 +1,35 @@
+{
+  "article": "Le Regioni giudicano insufficienti i 500 milioni aggiuntivi per la sanità cercati nella manovra e chiedono di non contribuire con fondi propri. Lo dice Massimo Fabi, coordinatore della commissione salute della Conferenza delle Regioni, in un'intervista all'Ansa del 15 novembre: lo stanziamento è per lui «palesemente insufficiente» e le Regioni sono «già allo stremo».\n\nFabi chiede di destinare al Fondo sanitario nazionale gli 1,6 miliardi previsti per il voucher agli over 75, che definisce un «importante segnale politico». Sostiene che il voucher alimenterebbe la sanità privata e considera inammissibile un prelievo sulle Regioni. Nelle fonti lette non ci sono dichiarazioni del governo su questa richiesta.\n\nIl bonus è una carta da 300 euro per spese sanitarie non coperte dal servizio pubblico, scrive Il Post: farmaci, visite ed esami privati. Spetta a chi ha almeno 75 anni nel 2027 e un reddito lordo da pensione fino a 28.000 euro nel 2025; la relazione tecnica stima circa 5,5 milioni di beneficiari. Costa 1,6 miliardi, stanziati solo per il 2027, e i decreti attuativi dei ministeri di Lavoro ed Economia non sono ancora scritti.\n\nL'Ufficio parlamentare di bilancio, citato da Il Post, dice che il criterio è iniquo perché ignora gli altri redditi, che l'importo è uguale per tutti e che la misura sostiene la domanda privata e non l'offerta del servizio pubblico. Luciano Fassari, direttore di Quotidiano Sanità, osserva che le risorse non assumono personale né riducono le liste d'attesa. Il governo, scrive Il Post, considera il bonus una delle principali misure sanitarie del prossimo anno.\n\nIl Post riporta anche i dati citati dall'Upb: nel 2024 la spesa sanitaria privata delle famiglie era il 23% del finanziamento complessivo in Italia, contro una media Ue del 15%. L'Ansa scrive che gli emendamenti alla manovra vanno depositati in commissione Bilancio alla Camera entro le 18 di martedì 17 novembre.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "Le Regioni giudicano insufficienti i 500 milioni per la sanità e chiedono di non pagare con fondi propri.", "who": ["ANSA"]},
+    {"text": "Fabi chiede di destinare al Fondo sanitario gli 1,6 miliardi del voucher per gli over 75.", "who": ["ANSA"]},
+    {"text": "Il bonus è di 300 euro per chi ha almeno 75 anni e pensione lorda fino a 28.000 euro; platea stimata 5,5 milioni.", "who": ["Il Post"]},
+    {"text": "L'Upb critica il criterio e dice che il bonus sostiene la domanda privata e non l'offerta pubblica.", "who": ["Il Post"]}
+  ],
+  "firstSeen": "2026-11-16T07:23:00+01:00",
+  "history": [
+    {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: le Regioni dicono che 500 milioni per la sanità non bastano e chiedono di rivedere il bonus da 300 euro per gli anziani."}
+  ],
+  "open": [
+    "Il governo cambierà il bonus o aggiungerà risorse al Fondo sanitario?",
+    "Con quali coperture saranno trovati i 500 milioni?"
+  ],
+  "places": ["IT"],
+  "rank": 15,
+  "section": "economia",
+  "sources": [
+    {"angle": "Intervista a Massimo Fabi: 500 milioni insufficienti, richiesta di riconvertire il voucher.", "area": "Italia", "at": "2026-11-15T19:22:00+01:00", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/15/regioni-pochi-500-milioni-alla-sanita-non-si-prendano-da-noi_f6a4e71b-fac4-40d3-98fa-4931baf30c7c.html"},
+    {"angle": "Requisiti, costo e critiche di Upb e Fassari sul bonus da 300 euro.", "area": "Italia", "date": "2026-11-15", "country": "Italia", "kind": "giornale", "name": "Il Post", "url": "https://www.ilpost.it/2026/11/15/bonus-sanitario-300-euro-anziani/"}
+  ],
+  "status": "live",
+  "summary": "Le Regioni dicono che i 500 milioni per la sanità nella manovra sono insufficienti e chiedono di usare per il Fondo sanitario gli 1,6 miliardi del voucher per gli over 75. L'Upb critica il bonus da 300 euro.",
+  "tags": ["Manovra", "Sanità", "Regioni"],
+  "themes": [],
+  "title": "Manovra: le Regioni dicono che 500 milioni per la sanità non bastano",
+  "updated": "2026-11-16T07:23:00+01:00",
+  "view": "Sono certe le cifre dello stanziamento e le critiche dell'Upb. La proposta di spostare i fondi del voucher al Fondo sanitario è una richiesta delle Regioni e non risulta accolta dal governo nelle fonti lette.\n\nConta perché la sanità è tra i capitoli su cui la maggioranza dovrebbe intervenire con gli emendamenti. Da guardare: gli emendamenti in commissione Bilancio e i decreti attuativi del bonus.",
+  "photo": {"wiki": "it", "title": "Ministero della salute (Italia)"}
+}

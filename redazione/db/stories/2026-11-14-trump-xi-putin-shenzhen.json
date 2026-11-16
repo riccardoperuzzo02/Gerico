@@ -1,94 +1,140 @@
 {
-  "article": "Il Cremlino ha confermato il vertice a tre e ne ha indicato la data: il portavoce Dmitry Peskov ha detto, secondo la Tass citata dall'Ansa, che è stato raggiunto un accordo per un incontro trilaterale il 19 novembre a Shenzhen. L'agenda non è stata indicata nell'articolo dell'Ansa.\n\nDonald Trump, Xi Jinping e Vladimir Putin terranno il primo vertice a tre a Shenzhen, in Cina, a margine del vertice Apec, scrive Al Jazeera. La Casa Bianca lo ha annunciato nella notte, riferisce l'Ansa; il New York Post, citato da Reuters, parlava di un incontro giovedì. L'Apec è in programma il 18 e 19 novembre, secondo l'Ansa.\n\nSecondo la Casa Bianca, al centro dei colloqui ci saranno l'Iran e il controllo degli armamenti nucleari, non la guerra in Ucraina, riferiscono Ansa, Kyiv Independent e Reuters. Un alto funzionario dell'amministrazione ha detto a Reuters di non aspettarsi un accordo e ha descritto l'incontro come l'avvio di un dialogo, scrive Al Jazeera. Trump ha parlato della possibilità di un'intesa sugli arsenali atomici dei tre paesi, sempre secondo Al Jazeera. Elon Musk accompagnerà Trump in Cina ma non parteciperà all'incontro.\n\nIl portavoce del Cremlino Dmitry Peskov ha respinto il paragone con la conferenza di Yalta del 1945, dicendo che eventuali intese non potranno essere imposte ad altri, e ha definito l'incontro «estremamente significativo», riporta Al Jazeera. Il giorno prima il consigliere del Cremlino Yuri Ushakov aveva detto a Kyiv Independent che Trump e Putin avrebbero discusso a Shenzhen anche l'accordo sull'Ucraina. L'articolo di Al Jazeera non riporta dichiarazioni ufficiali di Pechino. Il presidente ucraino Volodymyr Zelensky teme, secondo la stessa fonte, che il vertice diventi la sede per discutere un accordo sull'Ucraina alle spalle di Kiev.\n\nIl trattato New START tra Stati Uniti e Russia è scaduto a febbraio 2026, ricorda Al Jazeera: Trump ha respinto la proposta russa di prorogarlo di un anno e ha chiesto un nuovo accordo che includa anche la Cina. Per la prima volta in oltre 50 anni, scrive l'emittente, le due maggiori potenze nucleari non hanno limiti vincolanti ai rispettivi arsenali.",
-  "change": "Il Cremlino conferma il vertice a tre il 19 novembre a Shenzhen.",
-  "divergences": [],
-  "notCovered": [],
-  "facts": [
-    {
-      "text": "Trump, Xi e Putin terranno il primo vertice a tre a Shenzhen, a margine dell'Apec del 18 e 19 novembre.",
-      "who": ["Al Jazeera", "ANSA", "Reuters"]
-    },
-    {
-      "text": "Secondo la Casa Bianca i temi saranno l'Iran e il controllo degli armamenti nucleari, non l'Ucraina.",
-      "who": ["ANSA", "Kyiv Independent", "Reuters"]
-    },
-    {
-      "text": "Un alto funzionario Usa ha detto a Reuters di non aspettarsi un accordo ma l'avvio di un dialogo.",
-      "who": ["Al Jazeera"]
-    },
-    {
-      "text": "Peskov respinge il paragone con Yalta e dice che le intese non potranno essere imposte ad altri.",
-      "who": ["Al Jazeera"]
-    },
-    {
-      "text": "Il Cremlino aveva detto che a Shenzhen si sarebbe parlato anche dell'accordo sull'Ucraina.",
-      "who": ["Kyiv Independent"]
-    }
-  ],
-  "firstSeen": "2026-11-14T07:21:00+01:00",
-  "history": [
-    {
-      "at": "2026-11-15T07:21:00+01:00",
-      "text": "Il Cremlino, tramite Peskov, conferma l'incontro trilaterale il 19 novembre a Shenzhen."
-    },
-    {
-      "at": "2026-11-14T07:21:00+01:00",
-      "text": "Prima notizia: la Casa Bianca annuncia il vertice Trump-Xi-Putin a Shenzhen a margine dell'Apec."
-    }
-  ],
-  "open": [
-    "Quale sarà il formato dell'incontro del 19 novembre?",
-    "Pechino confermerà la partecipazione e i temi?",
-    "L'Ucraina sarà discussa, come dice il Cremlino, o esclusa, come dice la Casa Bianca?"
-  ],
-  "places": ["CN", "US", "RU"],
-  "city": {"name": "Shenzhen", "lat": 22.54, "lon": 114.06},
-  "rank": 3,
-  "section": "mondo",
-  "sources": [
-    {
-      "angle": "Temi, aspettative di un funzionario Usa, reazione di Peskov, timori di Zelensky, contesto New START.",
-      "area": "Medio Oriente",
-      "date": "2026-11-14",
-      "country": "Qatar",
-      "kind": "tv",
-      "name": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china"
-    },
-    {
-      "angle": "Annuncio della Casa Bianca: colloqui trilaterali a Shenzhen, Iran al centro, Apec il 18 e 19 novembre.",
-      "area": "Italia",
-      "at": "2026-11-14T00:50:00+01:00",
-      "country": "Italia",
-      "kind": "agenzia",
-      "name": "ANSA",
-      "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/casa-bianca-trump-xi-e-putin-terranno-colloqui-trilaterali-a-shenzhen_1e1dfadf-250d-40b1-b71a-67870c9e5c13.html"
-    },
-    {
-      "angle": "La Casa Bianca dice che il vertice non si concentrerà sull'Ucraina; il Cremlino parla di accordo sull'Ucraina.",
-      "area": "Ucraina e Russia",
-      "at": "2026-11-14T04:04:00+01:00",
-      "country": "Ucraina",
-      "kind": "giornale",
-      "name": "Kyiv Independent",
-      "url": "https://kyivindependent.com/historic-first-summit-among-trump-xi-putin-will-not-focus-on-ukraine-white-house-says/"
-    },
-    {
-      "angle": "Riduzione degli armamenti nucleari tra i temi, secondo la Casa Bianca; incontro giovedì.",
-      "area": "Europa",
-      "at": "2026-11-14T02:37:00+01:00",
-      "country": "Regno Unito",
-      "kind": "agenzia",
-      "name": "Reuters",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/trump-to-meet-putin-and-xi-in-china-white-house-says"
-    }
-  ],
-  "status": "live",
-  "summary": "Il Cremlino conferma il primo vertice a tre tra Trump, Xi e Putin a Shenzhen il 19 novembre. Secondo la Casa Bianca si parlerà di Iran e armi nucleari, non di Ucraina.",
-  "tags": ["Stati Uniti", "Cina", "Russia", "Armi nucleari"],
-  "themes": ["iran-usa", "ucraina"],
-  "title": "Cina: Trump, Xi e Putin si vedranno a Shenzhen a margine dell'Apec",
-  "updated": "2026-11-15T07:21:00+01:00",
-  "view": "È certo l'annuncio della Casa Bianca e il luogo. Data precisa e agenda restano in parte aperte: Washington esclude l'Ucraina dai temi, il Cremlino ne parla, e Pechino non risulta aver detto nulla nelle fonti lette.\n\nConta perché mette allo stesso tavolo le tre maggiori potenze nucleari senza limiti vincolanti dopo la scadenza del New START. Da guardare: conferme di Pechino, l'ordine del giorno e la reazione europea e ucraina.",
-  "photo": {"wiki": "it", "title": "Shenzhen"}
+ "article": "La Cina ha confermato il vertice a tre, scrive CNBC il 16 novembre, mentre l'agenda resta poco chiara. Reuters scrive che Trump parte per l'Asia questa settimana dopo la sconfitta del suo partito alle elezioni di metà mandato e in mezzo a uno scandalo di spionaggio. Da Manila, dove si tiene il vertice Asean, il premier cinese Li Qiang ha definito «straordinari» i rapporti tra Cina e Asean in vista della visita di Trump, riferisce Reuters; Al Jazeera riporta che Asean e Cina non hanno raggiunto un accordo sul codice di condotta nel Mar Cinese Meridionale. Il New York Times, citato dall'Ansa, scrive che il segretario al Commercio Howard Lutnick sarà in Cina con Trump e che avrebbe allentato regole sui chip in contrasto con attività della sua famiglia.\n\nIl Cremlino ha confermato il vertice a tre e ne ha indicato la data: il portavoce Dmitry Peskov ha detto, secondo la Tass citata dall'Ansa, che è stato raggiunto un accordo per un incontro trilaterale il 19 novembre a Shenzhen. L'agenda non è stata indicata nell'articolo dell'Ansa.\n\nDonald Trump, Xi Jinping e Vladimir Putin terranno il primo vertice a tre a Shenzhen, in Cina, a margine del vertice Apec, scrive Al Jazeera. La Casa Bianca lo ha annunciato nella notte, riferisce l'Ansa; il New York Post, citato da Reuters, parlava di un incontro giovedì. L'Apec è in programma il 18 e 19 novembre, secondo l'Ansa.\n\nSecondo la Casa Bianca, al centro dei colloqui ci saranno l'Iran e il controllo degli armamenti nucleari, non la guerra in Ucraina, riferiscono Ansa, Kyiv Independent e Reuters. Un alto funzionario dell'amministrazione ha detto a Reuters di non aspettarsi un accordo e ha descritto l'incontro come l'avvio di un dialogo, scrive Al Jazeera. Trump ha parlato della possibilità di un'intesa sugli arsenali atomici dei tre paesi, sempre secondo Al Jazeera. Elon Musk accompagnerà Trump in Cina ma non parteciperà all'incontro.\n\nIl portavoce del Cremlino Dmitry Peskov ha respinto il paragone con la conferenza di Yalta del 1945, dicendo che eventuali intese non potranno essere imposte ad altri, e ha definito l'incontro «estremamente significativo», riporta Al Jazeera. Il giorno prima il consigliere del Cremlino Yuri Ushakov aveva detto a Kyiv Independent che Trump e Putin avrebbero discusso a Shenzhen anche l'accordo sull'Ucraina. L'articolo di Al Jazeera non riporta dichiarazioni ufficiali di Pechino. Il presidente ucraino Volodymyr Zelensky teme, secondo la stessa fonte, che il vertice diventi la sede per discutere un accordo sull'Ucraina alle spalle di Kiev.\n\nIl trattato New START tra Stati Uniti e Russia è scaduto a febbraio 2026, ricorda Al Jazeera: Trump ha respinto la proposta russa di prorogarlo di un anno e ha chiesto un nuovo accordo che includa anche la Cina. Per la prima volta in oltre 50 anni, scrive l'emittente, le due maggiori potenze nucleari non hanno limiti vincolanti ai rispettivi arsenali.",
+ "change": "La Cina conferma il vertice (CNBC); Trump parte per l'Asia dopo la sconfitta alle elezioni di metà mandato.",
+ "divergences": [],
+ "notCovered": [],
+ "facts": [
+  {
+   "text": "Trump, Xi e Putin terranno il primo vertice a tre a Shenzhen, a margine dell'Apec del 18 e 19 novembre.",
+   "who": [
+    "Al Jazeera",
+    "ANSA",
+    "Reuters"
+   ]
+  },
+  {
+   "text": "Secondo la Casa Bianca i temi saranno l'Iran e il controllo degli armamenti nucleari, non l'Ucraina.",
+   "who": [
+    "ANSA",
+    "Kyiv Independent",
+    "Reuters"
+   ]
+  },
+  {
+   "text": "Un alto funzionario Usa ha detto a Reuters di non aspettarsi un accordo ma l'avvio di un dialogo.",
+   "who": [
+    "Al Jazeera"
+   ]
+  },
+  {
+   "text": "Peskov respinge il paragone con Yalta e dice che le intese non potranno essere imposte ad altri.",
+   "who": [
+    "Al Jazeera"
+   ]
+  },
+  {
+   "text": "Il Cremlino aveva detto che a Shenzhen si sarebbe parlato anche dell'accordo sull'Ucraina.",
+   "who": [
+    "Kyiv Independent"
+   ]
+  }
+ ],
+ "firstSeen": "2026-11-14T07:21:00+01:00",
+ "history": [
+  {
+   "at": "2026-11-16T07:28:37+01:00",
+   "text": "16 novembre: la Cina conferma il vertice (CNBC); Trump parte per l'Asia dopo la sconfitta alle elezioni di metà mandato (Reuters)."
+  },
+  {
+   "at": "2026-11-15T07:21:00+01:00",
+   "text": "Il Cremlino, tramite Peskov, conferma l'incontro trilaterale il 19 novembre a Shenzhen."
+  },
+  {
+   "at": "2026-11-14T07:21:00+01:00",
+   "text": "Prima notizia: la Casa Bianca annuncia il vertice Trump-Xi-Putin a Shenzhen a margine dell'Apec."
+  }
+ ],
+ "open": [
+  "Quale sarà il formato dell'incontro del 19 novembre?",
+  "Pechino confermerà la partecipazione e i temi?",
+  "L'Ucraina sarà discussa, come dice il Cremlino, o esclusa, come dice la Casa Bianca?"
+ ],
+ "places": [
+  "CN",
+  "US",
+  "RU"
+ ],
+ "city": {
+  "name": "Shenzhen",
+  "lat": 22.54,
+  "lon": 114.06
+ },
+ "rank": 3,
+ "section": "mondo",
+ "sources": [
+  {
+   "angle": "Temi, aspettative di un funzionario Usa, reazione di Peskov, timori di Zelensky, contesto New START.",
+   "area": "Medio Oriente",
+   "date": "2026-11-14",
+   "country": "Qatar",
+   "kind": "tv",
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china"
+  },
+  {
+   "angle": "La Cina conferma il vertice storico; agenda ancora da chiarire (16 novembre).",
+   "area": "Stati Uniti",
+   "date": "2026-11-16",
+   "country": "Stati Uniti",
+   "kind": "tv",
+   "name": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html"
+  },
+  {
+   "angle": "Annuncio della Casa Bianca: colloqui trilaterali a Shenzhen, Iran al centro, Apec il 18 e 19 novembre.",
+   "area": "Italia",
+   "at": "2026-11-14T00:50:00+01:00",
+   "country": "Italia",
+   "kind": "agenzia",
+   "name": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/14/casa-bianca-trump-xi-e-putin-terranno-colloqui-trilaterali-a-shenzhen_1e1dfadf-250d-40b1-b71a-67870c9e5c13.html"
+  },
+  {
+   "angle": "La Casa Bianca dice che il vertice non si concentrerà sull'Ucraina; il Cremlino parla di accordo sull'Ucraina.",
+   "area": "Ucraina e Russia",
+   "at": "2026-11-14T04:04:00+01:00",
+   "country": "Ucraina",
+   "kind": "giornale",
+   "name": "Kyiv Independent",
+   "url": "https://kyivindependent.com/historic-first-summit-among-trump-xi-putin-will-not-focus-on-ukraine-white-house-says/"
+  },
+  {
+   "angle": "Riduzione degli armamenti nucleari tra i temi, secondo la Casa Bianca; incontro giovedì.",
+   "area": "Europa",
+   "at": "2026-11-14T02:37:00+01:00",
+   "country": "Regno Unito",
+   "kind": "agenzia",
+   "name": "Reuters",
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/trump-to-meet-putin-and-xi-in-china-white-house-says"
+  }
+ ],
+ "status": "live",
+ "summary": "Cina e Cremlino confermano il primo vertice a tre tra Trump, Xi e Putin a Shenzhen il 19 novembre. Secondo la Casa Bianca si parlerà di Iran e armi nucleari, non di Ucraina.",
+ "tags": [
+  "Stati Uniti",
+  "Cina",
+  "Russia",
+  "Armi nucleari"
+ ],
+ "themes": [
+  "iran-usa",
+  "ucraina"
+ ],
+ "title": "Cina: Trump, Xi e Putin si vedranno a Shenzhen a margine dell'Apec",
+ "updated": "2026-11-16T07:28:37+01:00",
+ "view": "È certo l'annuncio della Casa Bianca e il luogo. Data precisa e agenda restano in parte aperte: Washington esclude l'Ucraina dai temi, il Cremlino ne parla, e Pechino non risulta aver detto nulla nelle fonti lette.\n\nConta perché mette allo stesso tavolo le tre maggiori potenze nucleari senza limiti vincolanti dopo la scadenza del New START. Da guardare: conferme di Pechino, l'ordine del giorno e la reazione europea e ucraina.",
+ "photo": {
+  "wiki": "it",
+  "title": "Shenzhen"
+ }
 }

@@ -1,0 +1,37 @@
+{
+  "article": "Cinque paesi europei devono annunciare oggi, lunedì 16 novembre, un piano per inviare in Ruanda i richiedenti asilo respinti, riferisce Reuters. Secondo l'Afp, citata da Open, sono Germania, Danimarca, Grecia, Austria e Paesi Bassi, e l'annuncio è previsto in una conferenza stampa a Vienna.\n\nPer l'Afp i «return hub» in Ruanda dovrebbero aprire dal 2027. Il progetto partirebbe in forma sperimentale con circa 20 persone per paese, probabilmente uomini adulti fermati alla frontiera. Fonti citate da Open dicono che le strutture non sarebbero centri di detenzione chiusi: il Ruanda le chiama centri di accoglienza e potrebbe offrire formazione professionale, mentre l'Organizzazione internazionale per le migrazioni potrebbe dare assistenza sul posto. Se la sperimentazione funziona, i cinque paesi vogliono estendere il modello ad altri stati, tra cui Uganda e Uzbekistan.\n\nUfficialmente i governi non avevano ancora nominato il paese ospitante: il cancelliere austriaco Christian Stocker ha detto che si vedrà la settimana prossima a Vienna. Che sia il Ruanda lo dicono diplomatici e fonti vicine ai colloqui, in forma anonima, secondo Open. Una delegazione ruandese è attesa a Vienna per una conferenza sulla migrazione.\n\nHuman Rights Watch richiama la storia di repressione e detenzioni arbitrarie del Ruanda. Ong e parte della sinistra criticano il piano per il trattamento dei migranti, e sono annunciati ricorsi giudiziari. Emmanuel Macron aveva definito il concetto poco efficace e non coerente con i valori dell'Ue, riferisce Open. Il piano è stato concepito circa un anno e mezzo fa in coordinamento con la Commissione europea, secondo la stessa fonte.\n\nIl Regno Unito aveva annunciato nel 2022 un piano simile, poi abbandonato dal governo laburista di Keir Starmer per ostacoli legali, ricorda Open; il premier Andy Burnham, secondo la stessa fonte, dice di seguire l'iniziativa europea con interesse. Le fonti non indicano cosa riceverebbe il Ruanda in cambio né come avverrebbero i trasferimenti.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "Cinque paesi europei annunciano oggi un piano per mandare in Ruanda i richiedenti asilo respinti.", "who": ["Reuters", "Open"]},
+    {"text": "Secondo l'Afp sono Germania, Danimarca, Grecia, Austria e Paesi Bassi; i primi hub dal 2027 con circa 20 persone per paese.", "who": ["Open"]},
+    {"text": "I governi non avevano nominato ufficialmente il Ruanda; lo dicono diplomatici in forma anonima.", "who": ["Open"]},
+    {"text": "Human Rights Watch richiama la storia di repressione del Ruanda; Macron aveva criticato l'idea.", "who": ["Open"]}
+  ],
+  "firstSeen": "2026-11-16T07:23:00+01:00",
+  "history": [
+    {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: cinque paesi europei annunciano oggi hub in Ruanda per i richiedenti asilo respinti."}
+  ],
+  "open": [
+    "Quali accordi economici o politici ci sono con il Ruanda?",
+    "Come saranno gestiti i trasferimenti e l'assistenza sanitaria?",
+    "Quali ricorsi saranno presentati e davanti a quali giudici?"
+  ],
+  "places": ["AT", "RW", "DE", "DK", "GR", "NL"],
+  "city": {"name": "Vienna", "lat": 48.21, "lon": 16.37},
+  "rank": 9,
+  "section": "mondo",
+  "sources": [
+    {"angle": "I cinque paesi dovrebbero annunciare il piano lunedì.", "area": "Europa", "at": "2026-11-16T06:03:00+01:00", "country": "Regno Unito", "kind": "agenzia", "name": "Reuters", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/five-eu-countries-to-announce-rwanda-deportation-hub-scheme"},
+    {"angle": "Dettagli dell'Afp: paesi, 2027, 20 persone per paese, reazioni di Hrw, Ong e Macron.", "area": "Italia", "date": "2026-11-16", "country": "Italia", "kind": "giornale online", "name": "Open", "url": "https://www.open.online/2026/11/16/ruanda-paesi-europei-hub-migranti/"}
+  ],
+  "status": "live",
+  "summary": "Cinque paesi europei devono annunciare a Vienna un piano per mandare in Ruanda i richiedenti asilo respinti, con una fase pilota nel 2027. Ong e Human Rights Watch criticano il progetto; i governi non hanno ancora confermato ufficialmente il Ruanda.",
+  "tags": ["Migranti", "Ruanda", "Unione europea"],
+  "themes": [],
+  "title": "Ue: cinque paesi annunciano hub in Ruanda per i richiedenti asilo respinti",
+  "updated": "2026-11-16T07:23:00+01:00",
+  "view": "È certo che l'annuncio è atteso oggi e che le Ong lo criticano. Elenco dei paesi, tempi e numeri vengono per ora da una sola agenzia, l'Afp, rilanciata da Open; il Ruanda non è stato nominato ufficialmente dai governi.\n\nConta perché porta in Europa un modello già tentato dal Regno Unito e fermato dai tribunali. Da guardare: il testo dell'annuncio di Vienna, i ricorsi e la posizione della Commissione.",
+  "photo": {"wiki": "it", "title": "Vienna"}
+}

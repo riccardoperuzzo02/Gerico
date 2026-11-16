@@ -1,0 +1,36 @@
+{
+  "article": "L'offerta pubblica iniziale di Anthropic è attesa questa settimana al Nasdaq. Secondo l'Ansa, che cita Bloomberg, il prezzo sarà annunciato mercoledì 18 novembre e le contrattazioni inizieranno il giorno dopo; l'offerta è guidata da Goldman Sachs e Morgan Stanley, con altre 20 banche.\n\nCNBC scrive che la società punta a una valutazione di circa 1.400 miliardi di dollari, con azioni attese tra 70 e 78 dollari. L'articolo dell'Ansa non indica valutazione né prezzo; una didascalia dell'agenzia parla di un'operazione fino a 100 miliardi.\n\nGli investitori istituzionali con sede nella Cina continentale e a Hong Kong non possono presentare ordini, riferisce l'Ansa citando Bloomberg. Alcuni cercano ancora il modo di partecipare, ma diverse banche hanno rifiutato gli ordini o ritengono improbabile che ricevano azioni. Secondo l'Ansa i limiti dipendono in parte dalle norme americane Itar sui prodotti legati alla difesa; la stessa agenzia ricorda un caso simile con l'Ipo di SpaceX da 86,2 miliardi, i cui investitori cinesi potevano comprare solo dopo la quotazione. I prodotti di Anthropic non sono disponibili in Cina e Hong Kong, e la società ha bloccato l'accesso a chi viaggia in quei territori, scrive l'Ansa.\n\nL'operazione arriva nella settimana in cui Nvidia presenta i conti, martedì dopo la chiusura di Wall Street, secondo CNBC; i future americani sono in calo prima dell'apertura.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "Prezzo atteso mercoledì 18 novembre e contrattazioni dal giorno dopo, secondo l'Ansa che cita Bloomberg.", "who": ["ANSA"]},
+    {"text": "Valutazione intorno a 1.400 miliardi di dollari e azioni tra 70 e 78 dollari, secondo CNBC.", "who": ["CNBC"]},
+    {"text": "Gli investitori istituzionali di Cina continentale e Hong Kong non possono presentare ordini.", "who": ["ANSA"]},
+    {"text": "L'offerta è guidata da Goldman Sachs e Morgan Stanley con altre 20 banche.", "who": ["ANSA"]}
+  ],
+  "firstSeen": "2026-11-16T07:23:00+01:00",
+  "history": [
+    {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: Ipo di Anthropic attesa questa settimana, esclusi gli investitori di Cina e Hong Kong."}
+  ],
+  "open": [
+    "A quale prezzo sarà collocata l'offerta?",
+    "Quanto raccoglierà l'operazione?"
+  ],
+  "places": ["US", "CN"],
+  "rank": 16,
+  "section": "tecnologia",
+  "sources": [
+    {"angle": "Calendario dell'Ipo, banche, esclusione di Cina e Hong Kong (da Bloomberg).", "area": "Italia", "date": "2026-11-14", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/14/ipo-di-anthropic-vietata-agli-investitori-di-cina-e-hong-kong_45b7ce41-d15a-441e-ae8c-a3d9a846bdf8.html"},
+    {"angle": "Valutazione di circa 1.400 miliardi e forchetta di prezzo, future in calo.", "area": "Stati Uniti", "date": "2026-11-16", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"}
+  ],
+  "status": "live",
+  "summary": "L'Ipo di Anthropic al Nasdaq è attesa questa settimana: prezzo mercoledì e contrattazioni giovedì, secondo l'Ansa. CNBC scrive di una valutazione di circa 1.400 miliardi di dollari.",
+  "tags": ["Anthropic", "Intelligenza artificiale", "Ipo"],
+  "themes": [],
+  "title": "Anthropic: l'Ipo al Nasdaq attesa questa settimana, esclusi i fondi cinesi",
+  "updated": "2026-11-16T07:23:00+01:00",
+  "view": "Sono certi il calendario riportato dall'Ansa e la forchetta di prezzo di CNBC; l'importo raccolto non risulta confermato nelle fonti lette. L'esclusione di Cina e Hong Kong viene da Bloomberg, rilanciata dall'Ansa.\n\nConta perché è una delle maggiori quotazioni del settore dell'intelligenza artificiale e cade nella settimana dei conti di Nvidia. Da guardare: il prezzo di mercoledì e il primo giorno di scambi.",
+  "figure": {"value": "1.400 mld $", "label": "la valutazione cercata da Anthropic nell'Ipo, secondo CNBC"},
+  "photo": {"wiki": "it", "title": "Nasdaq"}
+}

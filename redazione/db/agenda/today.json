@@ -1,6 +1,56 @@
 {
- "asOf": "2026-11-15T07:22:00+01:00",
- "date": "2026-11-15",
- "items": [],
- "sources": []
+ "asOf": "2026-11-16T07:28:37+01:00",
+ "date": "2026-11-16",
+ "items": [
+  {
+   "time": "03:00",
+   "country": "Cina",
+   "currency": "CNY",
+   "event": "Produzione industriale (annuale) di ottobre",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "03:00",
+   "country": "Cina",
+   "currency": "CNY",
+   "event": "Vendite al dettaglio (annuale) di ottobre",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "03:00",
+   "country": "Cina",
+   "currency": "CNY",
+   "event": "Tasso di disoccupazione di ottobre",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "00:50",
+   "country": "Giappone",
+   "currency": "JPY",
+   "event": "Pil del terzo trimestre (trimestrale): contrazione oltre le attese secondo CNBC",
+   "expected": "",
+   "previous": "",
+   "actual": "negativo",
+   "impact": "alto"
+  }
+ ],
+ "sources": [
+  {
+   "name": "Teleborsa, agenda del 16 novembre 2026",
+   "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-16-novembre-2026-1_2026-11-16_TLB-BIT.html"
+  },
+  {
+   "name": "CNBC, Stock market today (16 novembre)",
+   "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"
+  }
+ ]
 }

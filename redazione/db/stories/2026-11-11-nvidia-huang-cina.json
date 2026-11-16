@@ -1,132 +1,159 @@
 {
-  "article": "Il 13 novembre Nvidia ha perso altro terreno a Wall Street: secondo Open il titolo ha ceduto circa il 2,6% in chiusura, dopo un calo del 12% nella settimana, mentre l'Ansa nel pomeriggio lo dava a meno 4,6% in seduta. CNBC scrive che il Nasdaq è sceso per le vendite su Nvidia ma ha chiuso la settimana con il miglior andamento da agosto.\n\nJensen Huang si è dimesso il 12 novembre da amministratore delegato di Nvidia, dopo oltre trent'anni alla guida dell'azienda, riportano Il Post, Euronews, Al Jazeera e CNBC. Le dimissioni arrivano dopo le notizie sul suo rapporto con una donna che i media indicano come una presunta spia cinese e su un secondo rapporto con una dirigente dell'azienda, rivelato dal New York Times. Secondo CNBC, la direttrice finanziaria Colette Kress guiderà la società ad interim mentre il consiglio cerca un successore. Il Post scrive che Huang lascia anche il consiglio di amministrazione.\n\nIn Borsa il titolo ha ceduto il 4,3% nella seduta del 12 novembre, secondo CNBC; l'Ansa aveva riportato un calo del 10,56% nel pre-market, e Nvidia scende al terzo posto tra le società più capitalizzate. Il Post scrive che il caso è costato all'azienda oltre 450 miliardi di dollari di valore; Reuters ne contava circa 430 miliardi in due sedute. Gli analisti sentiti da CNBC dicono che l'uscita potrebbe innescare una correzione del 20% del titolo. Fondi che scommettono contro Nvidia sono saliti del 7-9%, secondo la stessa emittente.\n\nSul versante politico, Il Post riferisce che il senatore repubblicano Tim Scott ha chiesto a Huang di presentarsi volontariamente davanti alla commissione del Senato il 3 dicembre, minacciando un ordine di comparizione. Tre presidenti repubblicani di commissioni parlamentari avevano chiesto un briefing per il 18 novembre, scrive Al Jazeera. Secondo Ansa e Il Post anche il segretario al Commercio Howard Lutnick sarà ascoltato dal Congresso sulla vicenda; le fonti non spiegano il motivo della convocazione. Al Jazeera aggiunge che è emersa una terza accusa su una relazione extraconiugale.\n\nSulla sicurezza nazionale il consiglio aveva annunciato l'8 novembre un'indagine indipendente per capire se Huang fosse stato preso di mira da un'operazione di intelligence straniera. L'azienda dice di non avere motivo di credere che informazioni riservate siano state compromesse. Secondo la Cnn, citata dall'Ansa, i servizi americani non sono sicuri che la donna fosse una spia cinese. Huang ha ammesso di essere stato infedele alla moglie, riferiva Al Jazeera citando Reuters.\n\nSul fronte dei chip, un'inchiesta di Reuters dice che un ateneo cinese legato all'esercito e in lista nera Usa ha comprato due chip H200 per 874.700 yuan tramite un rivenditore. Huang sostiene che vendere ai clienti cinesi mantiene la leadership tecnologica americana; alcuni parlamentari Usa dicono invece che i chip avanzati possono accelerare l'intelligenza artificiale militare cinese.",
-  "change": "13 novembre: il titolo cede un altro 2,6% in chiusura secondo Open, meno 12% nella settimana.",
-  "divergences": [],
-  "facts": [
-    {
-      "text": "Huang si è dimesso il 12 novembre da amministratore delegato di Nvidia dopo oltre trent'anni.",
-      "who": ["Il Post", "Euronews", "CNBC"]
-    },
-    {
-      "text": "La direttrice finanziaria Colette Kress guida l'azienda ad interim mentre il consiglio cerca un successore.",
-      "who": ["CNBC"]
-    },
-    {
-      "text": "Il titolo Nvidia ha ceduto il 4,3% il 12 novembre, secondo CNBC; pre-market a meno 10,56% secondo l'Ansa.",
-      "who": ["CNBC", "ANSA"]
-    },
-    {
-      "text": "Il senatore Tim Scott chiede a Huang di presentarsi in commissione il 3 dicembre; anche Lutnick sarà ascoltato.",
-      "who": ["Il Post", "ANSA"]
-    },
-    {
-      "text": "I servizi Usa non sono sicuri che la donna fosse una spia cinese, secondo la Cnn.",
-      "who": ["ANSA"]
-    }
-  ],
-  "firstSeen": "2026-11-11T09:22:00+01:00",
-  "history": [
-    {
-      "at": "2026-11-14T07:22:00+01:00",
-      "text": "13 novembre: Nvidia cede un altro 2,6% in chiusura (Open), meno 12% nella settimana; Nasdaq in calo."
-    },
-    {
-      "at": "2026-11-13T07:23:00+01:00",
-      "text": "13 novembre: Huang si dimette da amministratore delegato, Kress guida ad interim, titolo a meno 4,3%; Scott lo convoca il 3 dicembre."
-    },
-    {
-      "at": "2026-11-12T07:22:00+01:00",
-      "text": "12 novembre: nuova notizia su un secondo rapporto di Huang, titolo a meno 7% dopo la chiusura; il consiglio si riunisce sul suo futuro (Wall Street Journal via Reuters)."
-    },
-    {
-      "at": "2026-11-11T09:22:00+01:00",
-      "text": "Prima notizia: Nvidia sotto esame per i legami con la Cina e per il caso Huang; Reuters sull'acquisto di chip H200 da parte di un ateneo in lista nera."
-    }
-  ],
-  "notCovered": [],
-  "open": [
-    "Chi sarà il nuovo amministratore delegato di Nvidia?",
-    "Huang si presenterà davanti al Senato il 3 dicembre?",
-    "L'indagine del consiglio troverà prove di un'operazione di intelligence?",
-    "Perché Lutnick è stato convocato dal Congresso?"
-  ],
-  "places": ["US", "CN"],
-  "rank": 8,
-  "section": "tecnologia",
-  "sources": [
-    {
-      "angle": "Chiusura di Wall Street del 13 novembre: Nvidia a meno 2,6%, meno 12% nella settimana.",
-      "area": "Italia",
-      "date": "2026-11-13",
-      "country": "Italia",
-      "kind": "giornale online",
-      "name": "Open",
-      "url": "https://www.open.online/2026/11/13/borse-blackout-microsoft-nvidia-nasdaq-wall-street/"
-    },
-    {
-      "angle": "Dimissioni, convocazione di Scott il 3 dicembre, Lutnick, perdita di valore.",
-      "area": "Italia",
-      "at": "2026-11-13T07:00:00+01:00",
-      "country": "Italia",
-      "kind": "giornale",
-      "name": "Il Post",
-      "url": "https://www.ilpost.it/2026/11/13/jensen-huang-ordine-testimonianza-commissione-senato/"
-    },
-    {
-      "angle": "Titolo a meno 4,3%, Kress amministratrice ad interim, giudizio degli analisti.",
-      "area": "Stati Uniti",
-      "date": "2026-11-12",
-      "country": "Stati Uniti",
-      "kind": "tv",
-      "name": "CNBC",
-      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html"
-    },
-    {
-      "angle": "Aggiornamenti in diretta: terza accusa, testimonianza al Congresso.",
-      "area": "Medio Oriente",
-      "date": "2026-11-12",
-      "country": "Qatar",
-      "kind": "tv",
-      "name": "Al Jazeera",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns"
-    },
-    {
-      "angle": "Huang lascia dopo 33 anni per il rapporto con una presunta spia cinese.",
-      "area": "Europa",
-      "date": "2026-11-12",
-      "country": "Francia",
-      "kind": "giornale online",
-      "name": "Euronews",
-      "url": "https://www.euronews.com/2026/11/12/nvidias-jensen-huang-resigns-over-relationship-with-suspected-chinese-spy"
-    },
-    {
-      "angle": "Pre-market a meno 10,56% dopo l'uscita di Huang.",
-      "area": "Italia",
-      "date": "2026-11-12",
-      "country": "Italia",
-      "kind": "agenzia",
-      "name": "ANSA",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/nvidia-crolla-del-1056-nel-pre-market-dopo-luscita-di-huang_7feafa1d-432b-4558-9ebb-0e51ace53501.html"
-    },
-    {
-      "angle": "Il consiglio si riunisce sul futuro di Huang, secondo il Wall Street Journal (12 novembre).",
-      "area": "Europa",
-      "at": "2026-11-12T03:21:00+01:00",
-      "country": "Regno Unito",
-      "kind": "agenzia",
-      "name": "Reuters",
-      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports"
-    }
-  ],
-  "status": "live",
-  "summary": "Jensen Huang si è dimesso da amministratore delegato di Nvidia dopo le notizie sui suoi rapporti con una presunta spia cinese e con una dirigente; il titolo ha ceduto il 4,3% il 12 novembre. Il senatore Tim Scott gli chiede di presentarsi in commissione il 3 dicembre.",
-  "tags": ["Nvidia", "Intelligenza artificiale", "Cina", "Stati Uniti"],
-  "themes": [],
-  "title": "Nvidia: Jensen Huang si dimette da amministratore delegato",
-  "updated": "2026-11-14T07:22:00+01:00",
-  "view": "È accertato che Huang ha lasciato e che Kress guida l'azienda ad interim. Che la prima donna lavorasse per l'intelligence cinese resta un'accusa riportata dai media, e la Cnn scrive che i servizi Usa non ne sono sicuri; l'indagine del consiglio non ha ancora un esito pubblico.\n\nConta perché cambia la guida della società più seguita del settore chip, mentre il Congresso lega il caso alle esportazioni verso la Cina. Da guardare: il nome del successore, l'audizione del 3 dicembre, la testimonianza di Lutnick e il titolo alla riapertura di Wall Street.",
-  "figure": {
-    "value": "-4,3%",
-    "label": "il calo di Nvidia a Wall Street dopo le dimissioni di Huang"
+ "article": "Jensen Huang starebbe valutando il ritorno alla guida di Nvidia: lo scrive il Financial Times, citato dall'Ansa e da CNBC, secondo cui ne avrebbe parlato con persone vicine. Un alleato ha detto al giornale che i sostenitori stanno costruendo una «war room» di dirigenti della Silicon Valley e cercheranno l'appoggio della Casa Bianca, con il sostegno di Huang. CNBC riferisce che la petizione «Stand with Jensen» ha superato 160.000 firme, secondo il suo sito che non verifica le qualifiche dei firmatari, e che Elon Musk l'ha firmata. Gli analisti non concordano: Dan Ives di Yorkville Ives & Co. scrive che non vede «nessuna possibilità» di un ritorno come amministratore delegato.\n\nIl consiglio continua l'indagine indipendente e valuta candidati interni ed esterni; un portavoce dice a CNBC che sta scegliendo una società di ricerca e non ha contattato formalmente nessuno. Sempre secondo il Financial Times, il consiglio ha sondato Rene Haas, amministratore delegato di Arm. Al Jazeera riporta che il segretario al Tesoro Scott Bessent ha chiesto un amministratore esterno e ha dato al consiglio dieci giorni per dimostrare di rispettare i controlli sulle esportazioni; CNBC, nell'articolo letto, non cita né Bessent né il termine. Megaspeed, azienda al centro del caso, dice che Alice Huang ha lasciato nel 2025, scrive Al Jazeera. Nvidia presenta i conti trimestrali martedì dopo la chiusura di Wall Street e il titolo ha perso il 13% la settimana scorsa, secondo CNBC; il New York Times scrive inoltre, citato dall'Ansa, che il segretario al Commercio Howard Lutnick avrebbe allentato regole sui chip in contrasto con attività della sua famiglia.\n\nIl 13 novembre Nvidia ha perso altro terreno a Wall Street: secondo Open il titolo ha ceduto circa il 2,6% in chiusura, dopo un calo del 12% nella settimana, mentre l'Ansa nel pomeriggio lo dava a meno 4,6% in seduta. CNBC scrive che il Nasdaq è sceso per le vendite su Nvidia ma ha chiuso la settimana con il miglior andamento da agosto.\n\nJensen Huang si è dimesso il 12 novembre da amministratore delegato di Nvidia, dopo oltre trent'anni alla guida dell'azienda, riportano Il Post, Euronews, Al Jazeera e CNBC. Le dimissioni arrivano dopo le notizie sul suo rapporto con una donna che i media indicano come una presunta spia cinese e su un secondo rapporto con una dirigente dell'azienda, rivelato dal New York Times. Secondo CNBC, la direttrice finanziaria Colette Kress guiderà la società ad interim mentre il consiglio cerca un successore. Il Post scrive che Huang lascia anche il consiglio di amministrazione.\n\nIn Borsa il titolo ha ceduto il 4,3% nella seduta del 12 novembre, secondo CNBC; l'Ansa aveva riportato un calo del 10,56% nel pre-market, e Nvidia scende al terzo posto tra le società più capitalizzate. Il Post scrive che il caso è costato all'azienda oltre 450 miliardi di dollari di valore; Reuters ne contava circa 430 miliardi in due sedute. Gli analisti sentiti da CNBC dicono che l'uscita potrebbe innescare una correzione del 20% del titolo. Fondi che scommettono contro Nvidia sono saliti del 7-9%, secondo la stessa emittente.\n\nSul versante politico, Il Post riferisce che il senatore repubblicano Tim Scott ha chiesto a Huang di presentarsi volontariamente davanti alla commissione del Senato il 3 dicembre, minacciando un ordine di comparizione. Tre presidenti repubblicani di commissioni parlamentari avevano chiesto un briefing per il 18 novembre, scrive Al Jazeera. Secondo Ansa e Il Post anche il segretario al Commercio Howard Lutnick sarà ascoltato dal Congresso sulla vicenda; le fonti non spiegano il motivo della convocazione. Al Jazeera aggiunge che è emersa una terza accusa su una relazione extraconiugale.\n\nSulla sicurezza nazionale il consiglio aveva annunciato l'8 novembre un'indagine indipendente per capire se Huang fosse stato preso di mira da un'operazione di intelligence straniera. L'azienda dice di non avere motivo di credere che informazioni riservate siano state compromesse. Secondo la Cnn, citata dall'Ansa, i servizi americani non sono sicuri che la donna fosse una spia cinese. Huang ha ammesso di essere stato infedele alla moglie, riferiva Al Jazeera citando Reuters.\n\nSul fronte dei chip, un'inchiesta di Reuters dice che un ateneo cinese legato all'esercito e in lista nera Usa ha comprato due chip H200 per 874.700 yuan tramite un rivenditore. Huang sostiene che vendere ai clienti cinesi mantiene la leadership tecnologica americana; alcuni parlamentari Usa dicono invece che i chip avanzati possono accelerare l'intelligenza artificiale militare cinese.",
+ "change": "Il Financial Times: Huang valuta il ritorno; Bessent chiede un ceo esterno; conti martedì.",
+ "divergences": [],
+ "facts": [
+  {
+   "text": "Huang si è dimesso il 12 novembre da amministratore delegato di Nvidia dopo oltre trent'anni.",
+   "who": [
+    "Il Post",
+    "Euronews",
+    "CNBC"
+   ]
+  },
+  {
+   "text": "La direttrice finanziaria Colette Kress guida l'azienda ad interim mentre il consiglio cerca un successore.",
+   "who": [
+    "CNBC"
+   ]
+  },
+  {
+   "text": "Il senatore Tim Scott chiede a Huang di presentarsi in commissione il 3 dicembre; anche Lutnick sarà ascoltato.",
+   "who": [
+    "Il Post",
+    "ANSA"
+   ]
+  },
+  {
+   "text": "Secondo il Financial Times Huang valuta di tornare alla guida di Nvidia; gli analisti sono divisi.",
+   "who": [
+    "ANSA",
+    "CNBC"
+   ]
+  },
+  {
+   "text": "I servizi Usa non sono sicuri che la donna fosse una spia cinese, secondo la Cnn.",
+   "who": [
+    "ANSA"
+   ]
   }
+ ],
+ "firstSeen": "2026-11-11T09:22:00+01:00",
+ "history": [
+  {
+   "at": "2026-11-16T07:28:37+01:00",
+   "text": "16 novembre: il Financial Times scrive che Huang valuta il ritorno; Bessent chiede un amministratore esterno (Al Jazeera); conti martedì."
+  },
+  {
+   "at": "2026-11-14T07:22:00+01:00",
+   "text": "13 novembre: Nvidia cede un altro 2,6% in chiusura (Open), meno 12% nella settimana; Nasdaq in calo."
+  },
+  {
+   "at": "2026-11-13T07:23:00+01:00",
+   "text": "13 novembre: Huang si dimette da amministratore delegato, Kress guida ad interim, titolo a meno 4,3%; Scott lo convoca il 3 dicembre."
+  },
+  {
+   "at": "2026-11-12T07:22:00+01:00",
+   "text": "12 novembre: nuova notizia su un secondo rapporto di Huang, titolo a meno 7% dopo la chiusura; il consiglio si riunisce sul suo futuro (Wall Street Journal via Reuters)."
+  },
+  {
+   "at": "2026-11-11T09:22:00+01:00",
+   "text": "Prima notizia: Nvidia sotto esame per i legami con la Cina e per il caso Huang; Reuters sull'acquisto di chip H200 da parte di un ateneo in lista nera."
+  }
+ ],
+ "notCovered": [],
+ "open": [
+  "Chi sarà il nuovo amministratore delegato di Nvidia, e Huang tornerà?",
+  "Cosa dirà Nvidia nei conti di martedì?",
+  "Huang si presenterà davanti al Senato il 3 dicembre?",
+  "L'indagine del consiglio troverà prove di un'operazione di intelligence?",
+  "Perché Lutnick è stato convocato dal Congresso?"
+ ],
+ "places": [
+  "US",
+  "CN"
+ ],
+ "rank": 8,
+ "section": "tecnologia",
+ "sources": [
+  {
+   "angle": "Chiusura di Wall Street del 13 novembre: Nvidia a meno 2,6%, meno 12% nella settimana.",
+   "area": "Italia",
+   "date": "2026-11-13",
+   "country": "Italia",
+   "kind": "giornale online",
+   "name": "Open",
+   "url": "https://www.open.online/2026/11/13/borse-blackout-microsoft-nvidia-nasdaq-wall-street/"
+  },
+  {
+   "angle": "Dimissioni, convocazione di Scott il 3 dicembre, Lutnick, perdita di valore.",
+   "area": "Italia",
+   "at": "2026-11-13T07:00:00+01:00",
+   "country": "Italia",
+   "kind": "giornale",
+   "name": "Il Post",
+   "url": "https://www.ilpost.it/2026/11/13/jensen-huang-ordine-testimonianza-commissione-senato/"
+  },
+  {
+   "angle": "Petizione per il ritorno di Huang, report del Financial Times, consiglio, conti di martedì, titolo a meno 13% in settimana.",
+   "area": "Stati Uniti",
+   "date": "2026-11-16",
+   "country": "Stati Uniti",
+   "kind": "tv",
+   "name": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+  },
+  {
+   "angle": "Bessent chiede un ceo esterno e dà dieci giorni al consiglio; Megaspeed dice che Alice Huang ha lasciato nel 2025.",
+   "area": "Medio Oriente",
+   "date": "2026-11-15",
+   "country": "Qatar",
+   "kind": "tv",
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia"
+  },
+  {
+   "angle": "Huang lascia dopo 33 anni per il rapporto con una presunta spia cinese.",
+   "area": "Europa",
+   "date": "2026-11-12",
+   "country": "Francia",
+   "kind": "giornale online",
+   "name": "Euronews",
+   "url": "https://www.euronews.com/2026/11/12/nvidias-jensen-huang-resigns-over-relationship-with-suspected-chinese-spy"
+  },
+  {
+   "angle": "Il Financial Times: Huang pensa al ritorno e cerca il sostegno della Casa Bianca.",
+   "area": "Italia",
+   "at": "2026-11-15T20:39:00+01:00",
+   "country": "Italia",
+   "kind": "agenzia",
+   "name": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/15/ft-jensen-huang-pensa-a-un-clamoroso-ritorno-alla-guida-di-nvidia_267caa16-dd06-4dd4-bc66-610ce6540aa6.html"
+  },
+  {
+   "angle": "Il consiglio si riunisce sul futuro di Huang, secondo il Wall Street Journal (12 novembre).",
+   "area": "Europa",
+   "at": "2026-11-12T03:21:00+01:00",
+   "country": "Regno Unito",
+   "kind": "agenzia",
+   "name": "Reuters",
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/12/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports"
+  }
+ ],
+ "status": "live",
+ "summary": "Secondo il Financial Times Jensen Huang, dimessosi da amministratore delegato di Nvidia, valuta il ritorno; Bessent chiede un ceo esterno, riferisce Al Jazeera. Nvidia presenta i conti martedì dopo un calo del 13% in settimana.",
+ "tags": [
+  "Nvidia",
+  "Intelligenza artificiale",
+  "Cina",
+  "Stati Uniti"
+ ],
+ "themes": [],
+ "title": "Nvidia: Jensen Huang si dimette da amministratore delegato",
+ "updated": "2026-11-16T07:28:37+01:00",
+ "view": "È accertato che Huang ha lasciato e che Kress guida l'azienda ad interim. Che la prima donna lavorasse per l'intelligence cinese resta un'accusa riportata dai media, e la Cnn scrive che i servizi Usa non ne sono sicuri; l'indagine del consiglio non ha ancora un esito pubblico.\n\nConta perché cambia la guida della società più seguita del settore chip, mentre il Congresso lega il caso alle esportazioni verso la Cina. Da guardare: il nome del successore, l'audizione del 3 dicembre, la testimonianza di Lutnick e il titolo alla riapertura di Wall Street.",
+ "figure": {
+  "value": "-13%",
+  "label": "il calo di Nvidia in una settimana, secondo CNBC"
+ }
 }

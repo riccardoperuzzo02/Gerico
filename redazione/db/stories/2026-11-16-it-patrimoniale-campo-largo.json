@@ -1,0 +1,35 @@
+{
+  "article": "Nel centrosinistra circolano tre proposte per tassare i grandi patrimoni e le rendite finanziarie, e secondo la segretaria del Pd Elly Schlein un accordo nel campo largo «per ora» non c'è. Lo riferiscono Open, che ricostruisce le tre ipotesi il 16 novembre, e l'Ansa, che il 15 novembre ha raccolto le dichiarazioni di Schlein a «L'Italia di Domani».\n\nAvs propone una patrimoniale progressiva sui patrimoni netti, immobili compresi, sopra i 5,4 milioni di euro. Secondo Open riguarderebbe circa 50mila contribuenti, lo 0,1% più ricco, con un gettito stimato dal partito in quasi 16 miliardi l'anno. Secondo Repubblica, citata da Open, Avs dice: «Sulla patrimoniale non cediamo, la si può chiamare come si vuole».\n\nIl Movimento 5 stelle ha un disegno di legge del senatore Mario Turco che alza progressivamente le imposte sui grandi profitti finanziari, oggi tassati allo 0,2% annuo, fino all'1% sopra i 5 milioni, con un prelievo anche sul trading ad alta frequenza. Giuseppe Conte dice di voler tassare «la speculazione finanziaria» e rifiuta la patrimoniale. Il Pd, scrive Open, fa propria la proposta dell'economista Gabriel Zucman: una tassa minima annuale del 2% sui patrimoni oltre i 100 milioni.\n\nSchlein dice all'Ansa di essere favorevole a una tassa sui super ricchi, che «si può fare benissimo anche a livello nazionale», e di essere fiduciosa nella sintesi. Indica come spunto la exit tax inserita dal governo nella manovra, con soglia a 800mila euro, e accusa il governo Meloni di aver alzato le tasse al ceto medio: «Noi non le alzeremo». Conte muove la stessa accusa al governo.\n\nNelle fonti lette non ci sono risposte del governo o della maggioranza alla proposta. Gettito e aliquote di Pd e M5s non sono quantificati negli articoli.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "Avs propone una patrimoniale sopra 5,4 milioni di euro, con un gettito stimato dal partito di quasi 16 miliardi l'anno.", "who": ["Open"]},
+    {"text": "Il Pd fa propria la proposta Zucman: tassa minima del 2% sui patrimoni oltre 100 milioni.", "who": ["Open"]},
+    {"text": "Il M5s propone di portare dallo 0,2% all'1% la tassa sui grandi profitti finanziari oltre 5 milioni.", "who": ["Open"]},
+    {"text": "Schlein dice che nel campo largo un accordo per ora non c'è ma è fiduciosa nella sintesi.", "who": ["ANSA", "Open"]}
+  ],
+  "firstSeen": "2026-11-16T07:23:00+01:00",
+  "history": [
+    {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: tre proposte nel centrosinistra per tassare patrimoni e rendite; Schlein: nessun accordo per ora."}
+  ],
+  "open": [
+    "Quale proposta sceglierà il campo largo e con quale gettito?",
+    "Come risponderanno governo e maggioranza?"
+  ],
+  "places": ["IT"],
+  "rank": 10,
+  "section": "italia",
+  "sources": [
+    {"angle": "Le tre proposte di Avs, M5s e Pd, cifre, posizione di Conte.", "area": "Italia", "date": "2026-11-16", "country": "Italia", "kind": "giornale online", "name": "Open", "url": "https://www.open.online/2026/11/16/campo-largo-tassa-patrimoniale-m5s-pd-avs/"},
+    {"angle": "Schlein: tassa sui super ricchi anche a livello nazionale, nessun accordo per ora.", "area": "Italia", "at": "2026-11-15T19:17:00+01:00", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/15/schlein-io-per-tassa-sui-super-ricchi-il-ceto-medio-lo-tassa-meloni_4e959b24-c086-4997-b982-5c106cbb64b1.html"}
+  ],
+  "status": "live",
+  "summary": "Pd, M5s e Avs hanno tre proposte diverse per tassare grandi patrimoni e rendite finanziarie; Schlein dice che un accordo non c'è ancora. Il governo non ha risposto nelle fonti lette.",
+  "tags": ["Fisco", "Pd", "Opposizioni"],
+  "themes": [],
+  "title": "Opposizioni: tre proposte diverse per tassare i grandi patrimoni",
+  "updated": "2026-11-16T07:23:00+01:00",
+  "view": "È certo che le proposte sono tre, con soglie e aliquote molto diverse, e che la segretaria del Pd parla di mancanza di accordo. Il gettito è una stima di Avs, non verificata nelle fonti lette.\n\nConta perché il fisco sui grandi patrimoni diventa un tema di programma dell'opposizione mentre la manovra è in Parlamento. Da guardare: un'eventuale proposta comune e la reazione della maggioranza.",
+  "photo": {"wiki": "it", "title": "Palazzo Madama (Roma)"}
+}

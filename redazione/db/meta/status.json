@@ -4,10 +4,10 @@
     "esito": "Trovato il Ppi Usa di ottobre (Bls): mensile 0,3%, annuale 6,5%, precedente mensile rivisto a 1,4%. Pil Ue annuale non trovato."
   },
   "lastPublish": {
-    "at": "2026-11-15T13:20:29+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-16T07:31:32+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database; cancellate 3 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-15T13:19:40+01:00",
+  "lastRun": "2026-11-16T07:29:53+01:00",
   "marketsRun": {
     "at": "2026-11-13T18:46:35+01:00",
     "esito": "Aggiornate le chiusure del 13 novembre (Ansa): Ftse Mib +0,1% a 51.858, Dax -0,2%, Cac 40 +0,1%, Ftse 100 +0,3%, Aex invariato, spread 104, gas 89 €/MWh. Mancano Smi, rendimenti, euro/dollaro, Brent. Agenda: Pil Ue non trovato."
@@ -22,23 +22,22 @@
     "Times of Israel",
     "Euronews",
     "CNBC",
-    "Teleborsa",
-    "Agi"
+    "Teleborsa"
   ],
   "paesiRun": {
     "at": "2026-11-15T09:50:00+01:00",
     "esito": "Letti 2 articoli (CBS), il resto dai feed. US 2 nuove (East Potomac, morbillo)/0 aggiornate/2 archiviate; GB 1 nuova (età del consenso)/0/1 archiviata; FR 1 nuova (Maileva)/1 aggiornata (manifestazioni)/1 archiviata; DE 1 nuova (Heil, Spd)/0/1 archiviata; ES 1 nuova (El Hierro)/0/0."
   },
   "quality": {
-    "articlesDiscarded": 1,
-    "articlesRead": 14,
-    "at": "2026-11-15T07:23:00+01:00",
-    "factsChecked": 3,
-    "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 4,
-    "storiesUpdated": 6
+    "articlesDiscarded": 3,
+    "articlesRead": 30,
+    "at": "2026-11-16T07:29:53+01:00",
+    "factsChecked": 4,
+    "factsCorrected": 1,
+    "storiesArchived": 10,
+    "storiesNew": 6,
+    "storiesUpdated": 9
   },
   "runningSince": null,
-  "storiesLive": 41
+  "storiesLive": 38
 }

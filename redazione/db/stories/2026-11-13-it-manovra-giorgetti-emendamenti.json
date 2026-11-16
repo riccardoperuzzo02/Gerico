@@ -1,86 +1,105 @@
 {
-  "article": "Il 14 novembre Giorgia Meloni e Carlo Messina, amministratore delegato di Intesa Sanpaolo, hanno avuto una telefonata definita «di chiarimento» dopo le critiche del banchiere alla manovra, riferisce l'Ansa, che cita anticipazioni di Repubblica e Il Foglio. Secondo l'Ansa lo scontro riguardava le norme su superbonus ed ecobonus, che Meloni ha rivendicato come scelta «di giustizia».\n\nIl 13 novembre la presidente del Consiglio Giorgia Meloni ha annunciato lo stralcio dalla manovra della norma sui tagli al personale scolastico, riporta Il Post; dopo l'incontro a Palazzo Chigi i sindacati restano insoddisfatti e la Cgil conferma lo sciopero generale del 20 novembre, scrive Open. Secondo Il Post l'inflazione farà tornare il «fiscal drag», cioè più tasse a parità di reddito, che secondo l'Istat renderebbe inefficaci le misure della legge di bilancio.\n\nIl ministro dell'Economia Giancarlo Giorgetti ha detto in audizione che per la manovra «i giochi non sono fatti» ma che ogni modifica deve essere coperta, e che i saldi restano invariati, riporta l'Ansa. Giorgetti ha spiegato che non si è potuto coprire tutto e che si è scelto per priorità: famiglia e lavoratori, giovani, investimenti, sicurezza, decarbonizzazione. Ha sostenuto che il contributo chiesto a banche e assicurazioni non mira a indebolirle e che le risorse per il servizio sanitario non sono state ridotte.\n\nGli emendamenti vanno presentati in commissione alla Camera entro martedì 17, scrive l'Ansa. La maggioranza punta a un pacchetto concordato su sanità, pensioni, scuola e università. Tra le ipotesi citate dall'agenzia ci sono il rinvio o il ridimensionamento dei tagli alla scuola, circa 7mila posti, al 2029, un allentamento sulle rivalutazioni delle pensioni, una soglia più alta per l'exit tax e l'estensione della flat tax all'1% per i giovani.\n\nL'Ufficio parlamentare di bilancio critica gli interventi di sostegno frammentati e l'uso di tutti gli spazi di bilancio, scrive l'Ansa. Sul taglio dell'Irpef, secondo l'Upb, il beneficio medio è di 444 euro per i dirigenti, 52 per gli impiegati e 4 per gli operai. Il Cnel dice che molti interventi hanno importi limitati. L'amministratore delegato di Intesa Sanpaolo Carlo Messina ha definito la manovra «sudamericana», riporta l'Ansa, e Il Post ricorda le sue critiche tra i temi dei giornali di oggi. Open scrive che l'effetto sulle famiglie va da 600 euro in meno a 200 euro in più, secondo il confronto che pubblica.",
-  "change": "Telefonata di chiarimento tra Meloni e Messina.",
-  "divergences": [],
-  "facts": [
-    {
-      "text": "Giorgetti dice che i giochi non sono fatti ma che ogni modifica alla manovra deve essere coperta.",
-      "who": ["ANSA"]
-    },
-    {
-      "text": "Gli emendamenti vanno presentati in commissione alla Camera entro martedì 17 novembre.",
-      "who": ["ANSA"]
-    },
-    {
-      "text": "L'Upb critica gli interventi frammentati; sul taglio Irpef il beneficio medio è di 444 euro per i dirigenti e 4 euro per gli operai.",
-      "who": ["ANSA"]
-    },
-    {
-      "text": "Il Ceo di Intesa Sanpaolo Messina ha definito la manovra «sudamericana».",
-      "who": ["ANSA", "Il Post"]
-    }
-  ],
-  "firstSeen": "2026-11-13T07:23:00+01:00",
-  "history": [
-    {
-      "at": "2026-11-15T07:21:00+01:00",
-      "text": "14 novembre: telefonata di «chiarimento» tra Meloni e Messina (Ansa)."
-    },
-    {
-      "at": "2026-11-14T07:22:00+01:00",
-      "text": "14 novembre: stralcio dei tagli alla scuola, sciopero Cgil il 20 novembre, fiscal drag secondo l'Istat."
-    },
-    {
-      "at": "2026-11-13T07:23:00+01:00",
-      "text": "Prima notizia: Giorgetti apre a modifiche coperte alla manovra; Upb e Messina critici."
-    }
-  ],
-  "notCovered": [],
-  "open": [
-    "Quali emendamenti concordati presenterà la maggioranza entro il 17 novembre?",
-    "Con quali coperture saranno finanziate le modifiche su pensioni e scuola?"
-  ],
-  "places": ["IT"],
-  "rank": 11,
-  "section": "economia",
-  "sources": [
-    {
-      "angle": "Audizione di Giorgetti, emendamenti, rilievi di Upb e Cnel, Messina.",
-      "area": "Italia",
-      "date": "2026-11-12",
-      "country": "Italia",
-      "kind": "agenzia",
-      "name": "ANSA",
-      "url": "https://www.ansa.it/sito/notizie/economia/2026/11/12/giorgetti-apre-sulla-manovra-i-giochi-non-sono-fatti-ma-trovate-le-coperture_ba7f7462-173e-4722-85ec-2383cb73ecfd.html"
-    },
-    {
-      "angle": "Chi ci perde e chi ci guadagna con la manovra.",
-      "area": "Italia",
-      "date": "2026-11-12",
-      "country": "Italia",
-      "kind": "giornale online",
-      "name": "Open",
-      "url": "https://www.open.online/2026/11/12/legge-di-bilancio-chi-ci-perde-guadagna-famiglie/"
-    },
-    {
-      "angle": "Le critiche di Messina alla manovra tra i temi delle prime pagine.",
-      "area": "Italia",
-      "at": "2026-11-13T07:00:00+01:00",
-      "country": "Italia",
-      "kind": "giornale",
-      "name": "Il Post",
-      "url": "https://www.ilpost.it/2026/11/13/le-prime-pagine-di-oggi-4733/"
-    }
-  ],
-  "status": "live",
-  "summary": "Giorgetti dice che sulla manovra i giochi non sono fatti, ma ogni modifica deve avere la copertura; gli emendamenti vanno presentati entro il 17 novembre. L'Upb e il Ceo di Intesa Sanpaolo Messina criticano la legge di bilancio.",
-  "tags": ["Manovra", "Conti pubblici", "Italia"],
-  "themes": [],
-  "title": "Manovra: Giorgetti apre a modifiche coperte, critiche da Upb e Messina",
-  "updated": "2026-11-15T07:21:00+01:00",
-  "view": "È certo il calendario: emendamenti entro il 17 novembre. Le modifiche in discussione sono ipotesi riportate dall'Ansa e non risulta un testo concordato; non è chiaro con quali coperture.\n\nConta perché le critiche vengono da un'istituzione di bilancio e dalla prima banca del paese, mentre il governo difende la prudenza sui conti. Da guardare: gli emendamenti della maggioranza e il voto in commissione.",
-  "figure": {
-    "value": "444 €",
-    "label": "il beneficio medio del taglio Irpef per i dirigenti, secondo l'Upb"
+ "article": "Un nuovo vertice di maggioranza con Giorgia Meloni e Giancarlo Giorgetti non ha ancora una data: dovrebbe tenersi lunedì o martedì, più probabilmente martedì, scrive l'Ansa il 15 novembre. Entro le 18 di martedì 17 i partiti devono presentare gli emendamenti in commissione Bilancio alla Camera; l'agenzia ricorda che erano stati 5.700 l'anno scorso e 4.500 l'anno prima. Lo Spi Cgil è in piazza da oggi in vista dello sciopero generale del 20 novembre.\n\nTra le modifiche in discussione l'Ansa cita il taglio di quasi 7mila posti tra docenti e personale Ata (non è chiaro se il comma sarà eliminato o rinviato al 2029), circa 500 milioni in più per la sanità, che le Regioni giudicano insufficienti, i tagli alla rivalutazione delle pensioni e la norma che spalma su dieci anni 20 miliardi di crediti del superbonus, molto criticata. Si valuta anche di alzare la soglia dell'exit tax, oggi a 800mila euro, fino a 4-5 milioni. La Lega, secondo l'Ansa, vuole vincolare il fondo da 850 milioni per la flessibilità in uscita alle pensioni a 64 anni; Fratelli d'Italia preferirebbe usarlo per i lavoratori usuranti. Le opposizioni preparano proposte unitarie su sanità, salario minimo, congedi e pensioni.\n\nIl 14 novembre Giorgia Meloni e Carlo Messina, amministratore delegato di Intesa Sanpaolo, hanno avuto una telefonata definita «di chiarimento» dopo le critiche del banchiere alla manovra, riferisce l'Ansa, che cita anticipazioni di Repubblica e Il Foglio. Secondo l'Ansa lo scontro riguardava le norme su superbonus ed ecobonus, che Meloni ha rivendicato come scelta «di giustizia».\n\nIl 13 novembre la presidente del Consiglio Giorgia Meloni ha annunciato lo stralcio dalla manovra della norma sui tagli al personale scolastico, riporta Il Post; dopo l'incontro a Palazzo Chigi i sindacati restano insoddisfatti e la Cgil conferma lo sciopero generale del 20 novembre, scrive Open. Secondo Il Post l'inflazione farà tornare il «fiscal drag», cioè più tasse a parità di reddito, che secondo l'Istat renderebbe inefficaci le misure della legge di bilancio.\n\nIl ministro dell'Economia Giancarlo Giorgetti ha detto in audizione che per la manovra «i giochi non sono fatti» ma che ogni modifica deve essere coperta, e che i saldi restano invariati, riporta l'Ansa. Giorgetti ha spiegato che non si è potuto coprire tutto e che si è scelto per priorità: famiglia e lavoratori, giovani, investimenti, sicurezza, decarbonizzazione. Ha sostenuto che il contributo chiesto a banche e assicurazioni non mira a indebolirle e che le risorse per il servizio sanitario non sono state ridotte.\n\nGli emendamenti vanno presentati in commissione alla Camera entro martedì 17, scrive l'Ansa. La maggioranza punta a un pacchetto concordato su sanità, pensioni, scuola e università. Tra le ipotesi citate dall'agenzia ci sono il rinvio o il ridimensionamento dei tagli alla scuola, circa 7mila posti, al 2029, un allentamento sulle rivalutazioni delle pensioni, una soglia più alta per l'exit tax e l'estensione della flat tax all'1% per i giovani.\n\nL'Ufficio parlamentare di bilancio critica gli interventi di sostegno frammentati e l'uso di tutti gli spazi di bilancio, scrive l'Ansa. Sul taglio dell'Irpef, secondo l'Upb, il beneficio medio è di 444 euro per i dirigenti, 52 per gli impiegati e 4 per gli operai. Il Cnel dice che molti interventi hanno importi limitati. L'amministratore delegato di Intesa Sanpaolo Carlo Messina ha definito la manovra «sudamericana», riporta l'Ansa, e Il Post ricorda le sue critiche tra i temi dei giornali di oggi. Open scrive che l'effetto sulle famiglie va da 600 euro in meno a 200 euro in più, secondo il confronto che pubblica.",
+ "change": "Nuovo vertice di maggioranza atteso, emendamenti entro le 18 di martedì; ipotesi su scuola, sanità, pensioni, superbonus.",
+ "divergences": [],
+ "facts": [
+  {
+   "text": "Giorgetti dice che i giochi non sono fatti ma che ogni modifica alla manovra deve essere coperta.",
+   "who": [
+    "ANSA"
+   ]
+  },
+  {
+   "text": "Gli emendamenti vanno presentati in commissione alla Camera entro martedì 17 novembre.",
+   "who": [
+    "ANSA"
+   ]
+  },
+  {
+   "text": "L'Upb critica gli interventi frammentati; sul taglio Irpef il beneficio medio è di 444 euro per i dirigenti e 4 euro per gli operai.",
+   "who": [
+    "ANSA"
+   ]
+  },
+  {
+   "text": "Il Ceo di Intesa Sanpaolo Messina ha definito la manovra «sudamericana».",
+   "who": [
+    "ANSA",
+    "Il Post"
+   ]
   }
+ ],
+ "firstSeen": "2026-11-13T07:23:00+01:00",
+ "history": [
+  {
+   "at": "2026-11-16T07:28:37+01:00",
+   "text": "16 novembre: vertice di maggioranza atteso, emendamenti entro le 18 di martedì; ipotesi su scuola, sanità, pensioni, superbonus ed exit tax (Ansa)."
+  },
+  {
+   "at": "2026-11-15T07:21:00+01:00",
+   "text": "14 novembre: telefonata di «chiarimento» tra Meloni e Messina (Ansa)."
+  },
+  {
+   "at": "2026-11-14T07:22:00+01:00",
+   "text": "14 novembre: stralcio dei tagli alla scuola, sciopero Cgil il 20 novembre, fiscal drag secondo l'Istat."
+  },
+  {
+   "at": "2026-11-13T07:23:00+01:00",
+   "text": "Prima notizia: Giorgetti apre a modifiche coperte alla manovra; Upb e Messina critici."
+  }
+ ],
+ "notCovered": [],
+ "open": [
+  "Quali emendamenti concordati presenterà la maggioranza entro il 17 novembre?",
+  "Con quali coperture saranno finanziate le modifiche su pensioni e scuola?"
+ ],
+ "places": [
+  "IT"
+ ],
+ "rank": 11,
+ "section": "economia",
+ "sources": [
+  {
+   "angle": "Vertice di maggioranza, modifiche in discussione, posizioni di Lega e FdI; in precedenza l'audizione di Giorgetti e i rilievi di Upb e Cnel.",
+   "area": "Italia",
+   "date": "2026-11-15",
+   "country": "Italia",
+   "kind": "agenzia",
+   "name": "ANSA",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/15/la-manovra-alla-prova-delle-modifiche-nuovo-vertice-di-maggioranza_5b6e09c6-e0a6-433f-8aa7-8b55e44afcff.html"
+  },
+  {
+   "angle": "Chi ci perde e chi ci guadagna con la manovra.",
+   "area": "Italia",
+   "date": "2026-11-12",
+   "country": "Italia",
+   "kind": "giornale online",
+   "name": "Open",
+   "url": "https://www.open.online/2026/11/12/legge-di-bilancio-chi-ci-perde-guadagna-famiglie/"
+  },
+  {
+   "angle": "Le critiche di Messina alla manovra tra i temi delle prime pagine.",
+   "area": "Italia",
+   "at": "2026-11-13T07:00:00+01:00",
+   "country": "Italia",
+   "kind": "giornale",
+   "name": "Il Post",
+   "url": "https://www.ilpost.it/2026/11/13/le-prime-pagine-di-oggi-4733/"
+  }
+ ],
+ "status": "live",
+ "summary": "Giorgetti dice che sulla manovra i giochi non sono fatti, ma ogni modifica deve avere la copertura; gli emendamenti vanno presentati entro il 17 novembre. L'Upb e il Ceo di Intesa Sanpaolo Messina criticano la legge di bilancio.",
+ "tags": [
+  "Manovra",
+  "Conti pubblici",
+  "Italia"
+ ],
+ "themes": [],
+ "title": "Manovra: Giorgetti apre a modifiche coperte, critiche da Upb e Messina",
+ "updated": "2026-11-16T07:28:37+01:00",
+ "view": "È certo il calendario: emendamenti entro il 17 novembre. Le modifiche in discussione sono ipotesi riportate dall'Ansa e non risulta un testo concordato; non è chiaro con quali coperture.\n\nConta perché le critiche vengono da un'istituzione di bilancio e dalla prima banca del paese, mentre il governo difende la prudenza sui conti. Da guardare: gli emendamenti della maggioranza e il voto in commissione.",
+ "figure": {
+  "value": "444 €",
+  "label": "il beneficio medio del taglio Irpef per i dirigenti, secondo l'Upb"
+ }
 }

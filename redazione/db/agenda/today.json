@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-16T12:12:00+01:00",
+ "asOf": "2026-11-16T15:41:31+01:00",
  "date": "2026-11-16",
  "items": [
   {
@@ -28,7 +28,7 @@
    "currency": "CNY",
    "event": "Tasso di disoccupazione di ottobre",
    "expected": "5,2%",
-   "previous": "",
+   "previous": "5,2%",
    "actual": "",
    "impact": "basso"
   },

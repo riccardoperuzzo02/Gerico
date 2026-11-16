@@ -1,11 +1,11 @@
 {
   "agendaRun": {
-    "at": "2026-11-16T12:13:00+01:00",
-    "esito": "Nessun risultato trovato (Pil Giappone, dati Cina di ottobre non reperiti). Completata l'agenda con il calendario (Canada, Usa, Area euro, Australia) e tolto il falso «negativo» dal Pil giapponese."
+    "at": "2026-11-16T15:41:31+01:00",
+    "esito": "Nessun risultato trovato (inflazione Canada, Pil Giappone, dati Cina non reperiti in 3 ricerche). Agenda già completa; aggiunto solo il precedente della disoccupazione cinese."
   },
   "lastPublish": {
-    "at": "2026-11-16T13:21:18+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-16T15:41:39+01:00",
+    "esito": "Giro agenda su GitHub; check_dump.py: 2 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (445 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-16T13:20:42+01:00",
   "marketsRun": {

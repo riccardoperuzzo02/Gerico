@@ -1,13 +1,181 @@
 {
  "code": "US",
- "asOf": "2026-11-16T13:17:34+00:00",
+ "asOf": "2026-11-16T15:17:36+00:00",
  "items": [
   {
    "source": "CNBC",
    "title": "Nvidia stock falls as investors price in fallout from Jensen Huang's resignation",
-   "desc": "The company was 2.7% down in premarket trading on Monday.",
+   "desc": "Nvidia's stock continued to slide on Monday following the resignation of CEO Jensen Huang.",
    "url": "https://www.cnbc.com/2026/11/16/nvidia-stock-price-jensen-huang.html",
-   "at": "2026-11-16T13:15:24+00:00"
+   "at": "2026-11-16T15:16:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Will Wield Enormous Power in Statehouses. What Will They Do?",
+   "desc": "While attention has focused on the incoming Democratic Congress, the real change could happen in state capitals where Democrats will control a dozen new statehouse chambers.",
+   "url": "https://www.nytimes.com/2026/11/16/us/politics/democrats-state-government-control-priorities.html",
+   "at": "2026-11-16T15:16:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "International student enrollment drops sharply, putting more U.S. colleges in financial jeopardy",
+   "desc": "Higher costs and new immigration rules have contributed to a sharp decline in the number of international students studying on U.S. college campuses this year.",
+   "url": "https://www.cnbc.com/2026/11/16/international-student-enrollment-decline-us-colleges.html",
+   "at": "2026-11-16T15:16:07+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump says Nvidia scandal did not put U.S. national security ‘at risk,’ defends Lutnick",
+   "desc": "President Trump told reporters before departing for a trip to Asia that former Nvidia CEO Jensen Huang's affair did not put U.S. national security at risk.",
+   "url": "https://www.cnbc.com/2026/11/16/trump-lutnick-nvidia-national-security-jensen-huant.html",
+   "at": "2026-11-16T15:14:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump says he may meet with North Korea's Kim Jong Un in China",
+   "desc": "President Trump said he may meet with North Korean leader Kim Jong Un on his China trip this week.",
+   "url": "https://www.cbsnews.com/news/trump-says-may-meet-kim-jong-un-china/",
+   "at": "2026-11-16T15:11:50+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Watch Live: Lindsay Clancy to be retried on first-degree murder charges",
+   "desc": "Prosecutors plan to retry Lindsay Clancy on first-degree murder charges, after her first Massachusetts murder trial ended in a mistrial.",
+   "url": "https://www.cbsnews.com/news/lindsay-clancy-hearing/",
+   "at": "2026-11-16T15:11:05+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia fallout: Commerce cracks down on third-country loophole that allowed China to use computing power",
+   "desc": "The rule was written by the Treasury Department and the National Security Council after criticism of Commerce Secretary Howard Lutnick.",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "at": "2026-11-16T15:01:57+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Novo says Wegovy injection lowers BMI and obesity rates in children in trial",
+   "desc": "Wegovy is already approved to treat obesity in children ages 12 and older, but there are currently no approved medications for those under 12.",
+   "url": "https://www.cnbc.com/2026/11/16/novo-wegovy-obesity-children-trial.html",
+   "at": "2026-11-16T15:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+   "desc": "Following the donations, the chairman emeritus of Berkshire still owns 182,140 Class A shares -- roughly $162 billion.",
+   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+   "at": "2026-11-16T14:56:21+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'We slept here': Flight delays linger as airlines recover from ground stop, but schedule improves Monday",
+   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
+   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
+   "at": "2026-11-16T14:52:31+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Raye leads the 2027 Grammy nominations. See the list.",
+   "desc": "English singer-songwriter Raye is up for 11 awards at the 2027 Grammys, followed by Spanish singer Rosalía​ with nine nominations.",
+   "url": "https://www.cbsnews.com/news/grammy-awards-2027-nominations-list/",
+   "at": "2026-11-16T14:51:20+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "High court rejects challenge to Maryland gun ban in sensitive places",
+   "desc": "The Supreme Court left in place a lower court decision that upheld the measure banning guns in sensitive places.",
+   "url": "https://www.cbsnews.com/news/supreme-court-maryland-gun-laws-sensitive-places/",
+   "at": "2026-11-16T14:49:41+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Administration Moves to Close A.I. Chip Loophole Ahead of China Trip",
+   "desc": "The rules, a topic of fierce debate in the administration, could cut back on Nvidia’s sales to foreign data centers serving Chinese companies.",
+   "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-china-ai-chip-loophole.html",
+   "at": "2026-11-16T14:42:21+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Billy Evans says he would do \"You Can See Everything\" all over again",
+   "desc": "Elizabeth Holmes' partner Billy Evans sat down with Matt Gutman on \"CBS Sunday Morning\" to discuss the viral documentary \"You Can See Everything,\" and explain why he'd do it all over again.",
+   "url": "https://www.cbsnews.com/video/billy-evans-says-he-would-do-you-can-see-everything-all-over-again/",
+   "at": "2026-11-16T14:39:52+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Civilian U.S. medics in Kuwait attack describe drone strike chaos, lack of preparation",
+   "desc": "Norah O'Donnell spoke with U.S. civilian medics for \"60 Minutes\" about the deadly drone strike on a U.S. base in Kuwait at the start of the Iran war. They described a lack of preparation ahead of the attack.",
+   "url": "https://www.cbsnews.com/video/civilian-u-s-medics-kuwait-attack-drone-strike-chaos-lack-of-preparation/",
+   "at": "2026-11-16T14:31:43+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly",
+   "desc": "Bitcoin's ongoing weakness has pushed it below key technical support levels, triggering the cascade of long liquidations into the weekend.",
+   "url": "https://www.cnbc.com/2026/11/16/bitcoin-slides-to-62000-following-liquidation-cascade-then-rebounds-slightly.html",
+   "at": "2026-11-16T14:29:19+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Rescue stories emerge from tanker collision with cruise boat in New Orleans",
+   "desc": "Details are emerging about the tanker that crashed into a river cruise boat in New Orleans on Friday. Jason Allen reports.",
+   "url": "https://www.cbsnews.com/video/rescue-stories-emerge-from-tanker-collision-with-cruise-boat-in-new-orleans/",
+   "at": "2026-11-16T14:24:20+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jim Cramer's top 10 things to watch in the stock market Monday",
+   "desc": "Nvidia is leading the Nasdaq and other AI stocks lower this morning.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/16/jim-cramers-top-10-things-to-watch-in-the-stock-market-monday.html",
+   "at": "2026-11-16T14:14:58+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Musk, Nvidia workers call for Huang return at Nvidia in petition",
+   "desc": "An online petition to bring back Jensen Huang, who resigned last week as CEO, has drawn more than 170,000 signatures, including almost 9,000 current Nvidia employees.",
+   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-reinstatement-petition/",
+   "at": "2026-11-16T14:11:49+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Dad charged for twins' viral party speaks out, says older teens were trespassing and crashing",
+   "desc": "Aubrey Vaughn, one of the parents facing charges for throwing his 13-year-old twins a party that grew out of control, spoke with Lilia Luciano about the incident as police bodycam footage shows the scene.",
+   "url": "https://www.cbsnews.com/video/dad-charged-for-twins-viral-party-speaks-out-says-older-teens-were-trespassing-and-crashing/",
+   "at": "2026-11-16T14:10:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "International Students Are Turning Away From U.S. Universities",
+   "desc": "For a second year, Trump administration policies appear to be scaring away international students, disrupting the finances of the American colleges that depend on them.",
+   "url": "https://www.nytimes.com/2026/11/16/us/international-student-college-enrollment-declines.html",
+   "at": "2026-11-16T14:10:11+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What Nithya Raman Plans to Do First as L.A. Mayor",
+   "desc": "Once she takes office, she pledges to use metrics to deliver “a city that works” after a pandemic, wildfires and clashes with Trump. But budget constraints and more stand in the way.",
+   "url": "https://www.nytimes.com/2026/11/16/us/raman-la-mayor-priorities.html",
+   "at": "2026-11-16T14:08:12+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "FAA battles backlash after nationwide ground stop",
+   "desc": "The FAA is still troubleshooting after Friday's nationwide ground stop that canceled nearly 18,000 flights and delayed around 28,000 more. Kris Van Cleave reports.",
+   "url": "https://www.cbsnews.com/video/faa-battles-backlash-after-nationwide-ground-stop/",
+   "at": "2026-11-16T14:01:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "A major NFT marketplace is shutting down—5 years after the boom, there's a lesson for investors",
+   "desc": "Five years after NFTs took off, a major marketplace is shutting down—here's what the boom and bust can teach investors about risky investments.",
+   "url": "https://www.cnbc.com/make-it/2026/11/16/5-years-after-the-nft-boom-theres-a-lesson-for-investors-.html",
+   "at": "2026-11-16T14:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
+   "desc": "\"Grand Theft Auto VI\" launches Nov. 19 with huge expectations. Its impact could reach creators, streaming, music, workplace time off, food delivery and tourism.",
+   "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+   "at": "2026-11-16T13:24:20+00:00"
   },
   {
    "source": "CBS News",
@@ -15,27 +183,6 @@
    "desc": "The population of one of the world's rarest whales has fallen after trending upward in recent years, worrying scientists who fear the animal could still be at risk of extinction.",
    "url": "https://www.cbsnews.com/news/right-whale-population-drops-reversing-recent-trend-alarming-scientists/",
    "at": "2026-11-16T13:07:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "'We slept here': Flight delays linger as airlines recover from ground stop, but schedule improves Monday",
-   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
-   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
-   "at": "2026-11-16T12:57:46+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Watch Live: Lindsay Clancy hearing on possible retrial and on what charges",
-   "desc": "Lindsay Clancy is due back in court Monday and prosecutors are expected to announce how they plan to proceed with her case following her mistrial.",
-   "url": "https://www.cbsnews.com/news/lindsay-clancy-hearing/",
-   "at": "2026-11-16T12:27:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "desc": "Following the donations, the chairman emeritus of Berkshire still owns 182,140 Class A shares -- roughly $162 billion.",
-   "url": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "at": "2026-11-16T12:16:29+00:00"
   },
   {
    "source": "CNBC",
@@ -80,11 +227,18 @@
    "at": "2026-11-16T11:48:36+00:00"
   },
   {
+   "source": "NPR",
+   "title": "Chris Van Hollen says he can beat Chuck Schumer. Here's his case",
+   "desc": "Sen. Chris Van Hollen told NPR's Morning Edition why he believes he can defeat Chuck Schumer and what he would change about Senate Democratic leadership.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6041687/chris-van-hollen-chuck-schumer-senate-leader",
+   "at": "2026-11-16T11:39:14+00:00"
+  },
+  {
    "source": "New York Times",
    "title": "‘Steering Failure’ Likely Caused Tanker’s Collision With Riverboat, N.T.S.B. Says",
    "desc": "A tanker struck a docked passenger ship in New Orleans on Friday, causing it to capsize. Investigators emphasized that their findings were preliminary.",
    "url": "https://www.nytimes.com/2026/11/16/us/new-orleans-cruise-ship-steering-failure.html",
-   "at": "2026-11-16T11:38:58+00:00"
+   "at": "2026-11-16T11:38:59+00:00"
   },
   {
    "source": "CBS News",
@@ -115,32 +269,11 @@
    "at": "2026-11-16T10:44:02+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Could Budapest be the next digital nomad hotspot?",
-   "desc": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
-   "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
-   "at": "2026-11-16T10:33:31+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Judge Could Set New Trial Date for Lindsay Clancy",
    "desc": "The judge who oversaw Ms. Clancy’s first trial that ended in a deadlocked jury is holding a hearing on Monday to determine how to proceed.",
    "url": "https://www.nytimes.com/2026/11/16/us/lindsay-clancy-trial-hearing.html",
    "at": "2026-11-16T10:03:40+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Raman Has Lots of Plans. Los Angeles Has Lots of Obstacles.",
-   "desc": "Mayor-elect Nithya Raman pledges to use metrics to deliver “a city that works” after a pandemic, wildfires and clashes with Trump. Budget constraints and more stand in the way.",
-   "url": "https://www.nytimes.com/2026/11/16/us/raman-la-mayor-priorities.html",
-   "at": "2026-11-16T10:02:36+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Will Wield Enormous Power in Statehouses. What Will They Do?",
-   "desc": "While attention has focused on the incoming Democratic Congress, the real change could happen in state capitals where Democrats will control a dozen new statehouse chambers.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/democrats-state-government-control-priorities.html",
-   "at": "2026-11-16T10:02:11+00:00"
   },
   {
    "source": "New York Times",
@@ -165,13 +298,6 @@
   },
   {
    "source": "NPR",
-   "title": "As millions lose food aid nationwide, this SNAP office is doubling up as a food pantry",
-   "desc": "The cuts and changes to SNAP have been difficult for government workers who take pride in helping others. In San Diego, workers said they couldn't sit back while their neighbors went hungry.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6034048/snap-san-diego-food-assistance",
-   "at": "2026-11-16T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "NPR's Student Podcast Challenge is back for 2027",
    "desc": "The annual audio competition for grades four through 12 returns in January. Now in its ninth year, the contest has involved more than 90,000 students around the country.",
    "url": "https://www.npr.org/2026/11/16/nx-s1-6028826/student-podcast-challenge-2027-information-deadline",
@@ -182,6 +308,13 @@
    "title": "Why sleep matters when it comes to weight gain and loss",
    "desc": "Sleep can have a powerful impact on weight. Research shows it can affect appetite. There is also a two-way relationship between sleep quality and diet.",
    "url": "https://www.npr.org/2026/11/16/nx-s1-6037761/sleep-weight-gain-loss",
+   "at": "2026-11-16T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "They saw people losing food benefits. So they started handing out free groceries",
+   "desc": "The cuts and changes to SNAP have been difficult for government workers who take pride in helping others. In San Diego, workers said they couldn't sit back while their neighbors went hungry.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6034048/snap-san-diego-food-assistance",
    "at": "2026-11-16T10:00:00+00:00"
   },
   {
@@ -197,6 +330,13 @@
    "desc": "Childcare costs have surged, putting a major financial burden on U.S. families. Advocates say the subject once on the fringes of political debate became a major issue during the midterms.",
    "url": "https://www.npr.org/2026/11/13/nx-s1-6034941/affordability-childcare-midterms",
    "at": "2026-11-16T09:45:55+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "New Mexico wanted free childcare for all. There's just one drawback",
+   "desc": "About a year ago, New Mexico became the first state to offer free childcare to every eligible family, regardless of income. One catch: The state doesn't have the capacity to meet the demand.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-5819524/new-mexico-wanted-free-childcare-for-all-theres-just-one-drawback",
+   "at": "2026-11-16T09:45:49+00:00"
   },
   {
    "source": "CNBC",
@@ -232,27 +372,6 @@
    "desc": "Aviation experts and federal officials said the network outage began after a new piece of networking equipment began flooding the rest of the system with data. The underlying cause is unclear.",
    "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
    "at": "2026-11-16T05:25:25+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "International Students Are Turning Away From U.S. Universities",
-   "desc": "For a second year, Trump administration policies appear to be scaring away international students, disrupting the finances of the American colleges that depend on them.",
-   "url": "https://www.nytimes.com/2026/11/16/us/international-student-college-enrollment-declines.html",
-   "at": "2026-11-16T05:01:07+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
-   "desc": "A deepening reliance on external demand leaves China more exposed to shocks abroad as domestic momentum fades, analysts say.",
-   "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
-   "at": "2026-11-16T03:53:59+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "What to Know About Continued Flight Disruptions",
-   "desc": "After a nationwide ground stop, flight schedules are returning to normal after tens of thousands of travelers encountered delays and cancellations over the weekend.",
-   "url": "https://www.nytimes.com/2026/11/14/us/flight-delays-cancelations-what-to-know.html",
-   "at": "2026-11-16T03:48:46+00:00"
   },
   {
    "source": "CNBC",
@@ -304,13 +423,6 @@
    "at": "2026-11-16T01:45:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Flight disruptions expected to last into Monday",
-   "desc": "Congress recently gave the Department of Transportation $12.5 billion to upgrade the aging air traffic control system. President Trump wants more.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6041683/flight-disruptions-expected-to-last-into-monday",
-   "at": "2026-11-16T01:19:28+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "This week on \"Sunday Morning\" (Nov. 15)",
    "desc": "A look at the features for this week's broadcast of the Emmy-winning program, hosted by Jane Pauley.",
@@ -346,13 +458,6 @@
    "at": "2026-11-15T22:54:41+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Far from home. Voyager 1 is now farther than anything man has sent into space",
-   "desc": "NASA's Voyager 1, which is the furthest man-made object from Earth, is set to reach a new milestone this week. On Wednesday, the probe will be roughly 16 billion miles from Earth.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6041716/a-long-long-ways-from-home-voyager-1-is-now-farther-than-anything-man-has-sent-into-space",
-   "at": "2026-11-15T22:41:22+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "8 Takeaways From a Big Democratic Gathering in Denver: Democrats in Array",
    "desc": "More than a half-dozen potential Democratic presidential candidates made early pitches for themselves and their visions at what amounted to a party-wide post-election victory party.",
@@ -382,24 +487,10 @@
   },
   {
    "source": "CBS News",
-   "title": "Full transcript of \"Face the Nation with Margaret Brennan,\" Nov. 15, 2026",
-   "desc": "On this \"Face the Nation with Margaret Brennan\" broadcast, Transportation Secretary Sean Duffy and Sen. Bill Cassidy join Margaret Brennan.",
-   "url": "https://www.cbsnews.com/news/face-the-nation-full-transcript-11-15-2026/",
-   "at": "2026-11-15T19:00:22+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "U.S. loses measles elimination status as cases surge nationwide",
    "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
    "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
    "at": "2026-11-15T18:53:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "DOT Sec. Duffy ties router in southern Arkansas to issues that led to nationwide ground stop",
-   "desc": "The FAA ground stop came after updates to an older communication system managed by L3Harris Technologies, Transportation Secretary Sean Duffy said.",
-   "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "at": "2026-11-15T18:15:14+00:00"
   },
   {
    "source": "New York Times",
@@ -423,25 +514,11 @@
    "at": "2026-11-15T18:06:21+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "What I know and respect about Colette Kress, the person now leading Nvidia",
-   "desc": "Colette Kress is the steady hand that Nvidia needs in charge during this turbulent time.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/15/jim-cramer-nvidia-colette-kress-jensen-huang.html",
-   "at": "2026-11-15T17:14:17+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Embattled Federal Employees Look to a Democratic Congress for a Lifeline",
    "desc": "Former and current workers have found a sympathetic ear among Democrats set to take over the House and Senate. But any reversal of President Trump’s cuts is unlikely to happen immediately.",
    "url": "https://www.nytimes.com/2026/11/15/us/politics/federal-employees-democratic-congress-lifeline.html",
    "at": "2026-11-15T17:09:23+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Judge temporarily blocks closing of historic D.C. golf course",
-   "desc": "U.S. District Judge Ana Reyes ruled that the Trump administration cannot close East Potomac Park in Washington, D.C., for now.",
-   "url": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/",
-   "at": "2026-11-15T17:03:40+00:00"
   },
   {
    "source": "CBS News",
@@ -459,73 +536,10 @@
   },
   {
    "source": "CBS News",
-   "title": "Nature: Sea lions in La Jolla, Calif.",
-   "desc": "We leave you this Sunday morning in the company of sea lions who call the waters off La Jolla, Calif., their home. Videographer: Carl Mrozek.",
-   "url": "https://www.cbsnews.com/video/nature-sea-lions-in-la-jolla-calif/",
-   "at": "2026-11-15T15:30:15+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "11/15: Face The Nation",
    "desc": "This week on \"Face the Nation with Margaret Brennan,\" as the effects of Friday's nationwide ground stop are still being felt, Transportation Secretary Sean Duffy joins. Plus, as the U.S. loses its measles elimination status, Sen. Bill Cassidy, the chairman of the Senate Health Committee, joins.",
    "url": "https://www.cbsnews.com/video/111526-face-the-nation/",
    "at": "2026-11-15T15:30:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Billy Evans calls his portrayal in Elizabeth Holmes documentary \"crazy\"",
-   "desc": "Billy Evans, the partner of Elizabeth Holmes, opened up about his portrayal in a hit documentary on \"CBS Sunday Morning.\"",
-   "url": "https://www.cbsnews.com/news/billy-evans-elizabeth-holmes-documentary-portrayal/",
-   "at": "2026-11-15T15:00:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Here's how Jensen Huang's abrupt resignation unfolded at Nvidia",
-   "desc": "Jensen Huang's shocking exit as CEO of Nvidia unspooled suddenly, yet signs of trouble had emerged much earlier.",
-   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/",
-   "at": "2026-11-15T14:52:34+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Outcome of Alaska Senate race could take weeks to determine",
-   "desc": "The Senate race in Alaska, which has garnered widespread attention with two candidates named Dan Sullivan, remains in limbo.",
-   "url": "https://www.cbsnews.com/news/senate-race-unresolved-in-alaska-as-candidates-expect-weekslong-process/",
-   "at": "2026-11-15T14:39:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Social Security and the blue wave: What could happen to payroll taxes and senior tax breaks",
-   "desc": "Democrats advocated taxing high earners to shore up Social Security in the runup to the midterms. Plus, a senior deduction is slated to expire in two years.",
-   "url": "https://www.cnbc.com/2026/11/15/social-security-tax-changes-midterm-election.html",
-   "at": "2026-11-15T14:30:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "The sinking of the SS United States",
-   "desc": "Last Wednesday, the SS United States was sent to the bottom of the Gulf of Mexico, to become the largest artificial reef in the world.",
-   "url": "https://www.cbsnews.com/video/the-sinking-of-the-ss-united-states/",
-   "at": "2026-11-15T14:28:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Aiding veterans with the healing arts",
-   "desc": "With her in-person and virtual painting workshops and online tutorials, artist Mary Whyte teaches veterans to use art to deal with isolation and trauma through her \"watercolor boot camps.\"",
-   "url": "https://www.cbsnews.com/news/aiding-veterans-with-the-healing-arts/",
-   "at": "2026-11-15T14:27:09+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Aiding veterans with the healing arts",
-   "desc": "With her in-person and virtual painting workshops and online tutorials, artist Mary Whyte teaches veterans to use art to deal with isolation and trauma through her \"watercolor boot camps.\" Correspondent Martha Teichner reports on an arts program, now in 48 states, that helps veterans' self-expression, and allows them to reconnect with fellow vets, their communities – and themselves.",
-   "url": "https://www.cbsnews.com/video/aiding-veterans-with-the-healing-arts/",
-   "at": "2026-11-15T14:26:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/15: Sunday Morning",
-   "desc": "Hosted by Jane Pauley. Featured: Did the mob kill JFK?; U2 at 50; Billy Evans on \"You Can See Everything\"; author Min Jin Lee; artist Mary Whyte; and the history of the Macy's Thanksgiving Day Parade.",
-   "url": "https://www.cbsnews.com/video/111526-sunday-morning/",
-   "at": "2026-11-15T14:00:00+00:00"
   }
  ]
 }

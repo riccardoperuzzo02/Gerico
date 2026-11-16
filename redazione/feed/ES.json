@@ -1,7 +1,14 @@
 {
  "code": "ES",
- "asOf": "2026-11-16T05:17:36+00:00",
+ "asOf": "2026-11-16T07:17:35+00:00",
  "items": [
+  {
+   "source": "20minutos",
+   "title": "Otro dolor: el duelo queer investigado por Francisco Javier Olivas",
+   "desc": "Cada pérdida tiene su propia geografía: ninguna persona recorre el mismo duelo dos veces.",
+   "url": "https://www.20minutos.es/nacional/blogs/1-de-cada10/otro-dolor-duelo-queer-investigado-por-francisco-javier-olivas_7061113_0.html",
+   "at": "2026-11-16T06:30:00+00:00"
+  },
   {
    "source": "El País",
    "title": "Vox se queda a medias en sus esfuerzos por suavizar su discurso para no dar miedo",
@@ -67,13 +74,6 @@
   },
   {
    "source": "20minutos",
-   "title": "Y los programas vieron la luz",
-   "desc": "A todos los partidos les ha interesado entrar lo más tarde posible en la letra pequeña porque hemos estado ante una campaña de percepciones, no de ideas.",
-   "url": "https://www.20minutos.es/nacional/los-programas-vieron-luz_7061390_3.html",
-   "at": "2026-11-16T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Sánchez reproduce en su programa medidas de Sumar y se envuelve en la bandera para intentar pescar votos a izquierda y derecha",
    "desc": "El programa recoge la prestación por crianza y una tasa a jets y yates, ambas iniciativas de Sumar en la anterior legislatura sobre las que el PSOE votó en contra. En su tercer día de campaña, desde Alcorcón, el presidente también pidió el voto a la gente \"moderada y constitucionalista\".",
    "url": "https://www.20minutos.es/nacional/sanchez-reproduce-su-programa-medidas-sumar-se-envuelve-bandera-para-intentar-pescar-votos-izquierda-derecha_7061354_0.html",
@@ -81,23 +81,16 @@
   },
   {
    "source": "20minutos",
-   "title": "Políticos enrollados",
-   "desc": "Los candidatos van al pódcast de moda para que los jóvenes los escuchen, pero no siempre parecen tan interesados en escucharlos a ellos",
-   "url": "https://www.20minutos.es/nacional/politicos-enrollados_7061325_3.html",
-   "at": "2026-11-16T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Cómo los timadores aprovechan para engañarte en periodo de elecciones: del mensaje para \"confirmar el voto\" al falso aviso a la mesa electoral",
-   "desc": "Los ciberdelincuentes suplantan a organismos oficiales para robar datos personales y cuentas de WhatsApp mediante falsos trámites electorales. Los expertos recomiendan verificar siempre los mensajes.",
-   "url": "https://www.20minutos.es/nacional/como-los-timadores-aprovechan-para-enganarte-periodo-elecciones-mensaje-para-confirmar-voto-falso-aviso-mesa-electoral_7060977_0.html",
-   "at": "2026-11-16T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Aagesen evita aportar hasta después del 29-N el informe 'secreto' de Red Eléctrica sobre la prórroga de la central nuclear de Almaraz",
+   "title": "El Gobierno evita aportar el informe 'secreto' de Red Eléctrica sobre la prórroga de Almaraz hasta después del 29-N",
    "desc": "Desde que empezó el proceso para conceder autorización para operar durante dos o tres años más, Transición Ecológica insistió en que no era necesaria la valoración del operador, que Corredor negó apenas un mes antes. Pero el informe existe, estimó la aportación de la central y el Ministerio aplaza dos meses y medio su difusión.",
    "url": "https://www.20minutos.es/nacional/aagesen-evita-aportar-hasta-despues-29-n-informe-secreto-red-electrica-sobre-prorroga-central-nuclear-almaraz_7060721_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los jóvenes despegan en la construcción: un 10% más de trabajadores menores de 30 en un año y un 59% más de alumnos de FP en cinco",
+   "desc": "A pesar de la incipiente recuperación, el sector denuncia que el ritmo de incorporación de jóvenes es todavía \"insuficiente\" para cubrir la falta de mano de obra y asegurar el relevo generacional.",
+   "url": "https://www.20minutos.es/nacional/los-jovenes-despegan-construccion-un-10-mas-trabajadores-menores-30-un-ano-un-59-mas-alumnos-fp-cinco_7058184_0.html",
    "at": "2026-11-16T04:00:00+00:00"
   },
   {
@@ -109,9 +102,23 @@
   },
   {
    "source": "20minutos",
-   "title": "Los jóvenes despegan en la construcción: un 10% más de trabajadores menores de 30 en un año y un 59% más de alumnos de FP en cinco",
-   "desc": "A pesar de la incipiente recuperación, el sector denuncia que el ritmo de incorporación de jóvenes es todavía \"insuficiente\" para cubrir la falta de mano de obra y asegurar el relevo generacional.",
-   "url": "https://www.20minutos.es/nacional/los-jovenes-despegan-construccion-un-10-mas-trabajadores-menores-30-un-ano-un-59-mas-alumnos-fp-cinco_7058184_0.html",
+   "title": "Cómo los timadores aprovechan para engañarte en periodo de elecciones: del mensaje para \"confirmar el voto\" al falso aviso a la mesa electoral",
+   "desc": "Los ciberdelincuentes suplantan a organismos oficiales para robar datos personales y cuentas de WhatsApp mediante falsos trámites electorales. Los expertos recomiendan verificar siempre los mensajes.",
+   "url": "https://www.20minutos.es/nacional/como-los-timadores-aprovechan-para-enganarte-periodo-elecciones-mensaje-para-confirmar-voto-falso-aviso-mesa-electoral_7060977_0.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Y los programas vieron la luz",
+   "desc": "A todos los partidos les ha interesado entrar lo más tarde posible en la letra pequeña porque hemos estado ante una campaña de percepciones, no de ideas.",
+   "url": "https://www.20minutos.es/nacional/los-programas-vieron-luz_7061390_3.html",
+   "at": "2026-11-16T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Políticos enrollados",
+   "desc": "Los candidatos van al pódcast de moda para que los jóvenes los escuchen, pero no siempre parecen tan interesados en escucharlos a ellos",
+   "url": "https://www.20minutos.es/nacional/politicos-enrollados_7061325_3.html",
    "at": "2026-11-16T04:00:00+00:00"
   },
   {
@@ -316,13 +323,6 @@
    "desc": "\"La experiencia acumulada en la gestión de crisis institucionales de máxima tensión ofrece enseñanzas vitales para la alta dirección corporativa\".",
    "url": "https://www.20minutos.es/nacional/alta-direccion-ante-fuego-lecciones-politica-para-crisis-gran-empresa_7061300_3.html",
    "at": "2026-11-15T13:27:48+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez vuelve a prometer una prestación por crianza y propone subir los impuestos a los grandes propietarios con viviendas vacías",
-   "desc": "Reivindica la bandera española para la izquierda desde Alcorcón, donde el PSOE presenta su programa electoral. Promete retribuir un permiso pendiente desde 2023 tras resistirse a la prestación universal que reclamaban sus socios.",
-   "url": "https://www.20minutos.es/nacional/sanchez-vuelve-prometer-una-prestacion-por-crianza-propone-subir-los-impuestos-los-grandes-propietarios-con-viviendas-vacias_7061297_0.html",
-   "at": "2026-11-15T13:19:30+00:00"
   },
   {
    "source": "El Mundo",

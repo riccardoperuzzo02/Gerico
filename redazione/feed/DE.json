@@ -1,7 +1,42 @@
 {
  "code": "DE",
- "asOf": "2026-11-16T05:17:36+00:00",
+ "asOf": "2026-11-16T07:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Abschiebungen nach Ruanda: SPD-Abgeordnete kritisieren Pläne für Abschiebezentrum in Ruanda",
+   "desc": "Aus der SPD kommt Kritik an dem möglichen Vorhaben, abgelehnte Asylsuchende unabhängig von ihrer Herkunft nach Ruanda abzuschieben. Dies sei nicht mit der SPD abgestimmt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/abschiebungen-ruanda-return-hubs-asylbewerber-spd-alexander-dobrindt-gxe",
+   "at": "2026-11-16T06:59:06+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt: Rechnungshofpräsident rät zu Milliardeneinsparungen bei Subventionen",
+   "desc": "Der Rechnungshofpräsident sieht großes Potenzial für Einsparungen im Bundeshaushalt. Allein der Abbau klimaschädlicher Subventionen könne 17 Milliarden Euro bringen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/ansgar-heveling-bundesrechnungshof-subventionen-bundeshaushalt-gxe",
+   "at": "2026-11-16T06:50:54+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: Dritter US-Flugzeugträger offenbar im Nahen Osten angekommen",
+   "desc": "Medienberichten zufolge ist der Flugzeugträger »Theodore Roosevelt« im Nahen Osten eingetroffen. Der Iran pocht weiter auf sein Recht zur Urananreicherung. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-16T06:49:32+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Besoldung in Sachsen-Anhalt: Verfassungsgericht prüft Beamtenbesoldung in Sachsen-Anhalt",
+   "desc": "Werden Beamte in Sachsen-Anhalt zu schlecht bezahlt? Das Bundesverfassungsgericht prüft die Gehälter. In anderen Bundesländern waren ähnliche Klagen erfolgreich.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/besoldung-sachsen-anhalt-bundesverfassungsgericht-beamte-richter",
+   "at": "2026-11-16T06:00:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russland meldet Abschuss von 139 Drohnen nahe Moskau",
+   "desc": "Drohnen steuerten Russlands Hauptstadt an und setzten eine Industrieanlage in Krasnodar in Brand. Wolodymyr Selenskyj kritisiert Starshield-Beschränkungen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-16T05:37:58+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Pläne der Bundesregierung: Juristen zweifeln an Gesetz gegen Vergesellschaftung",
@@ -17,13 +52,6 @@
    "at": "2026-11-16T04:56:30+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russland meldet Abschuss von 139 Drohnen nahe Moskau",
-   "desc": "Drohnen steuerten Russlands Hauptstadt an und setzten eine Industrieanlage in Krasnodar in Brand. Wolodymyr Selenskyj kritisiert Starshield-Beschränkungen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-16T04:52:27+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "News: Friedrich Merz besucht CSU, Hubertus Heil will Lars Klingbeil ablösen, Anthropic geht an die Börse",
    "desc": "Der Kanzler reist nach München zu den Mütterfreunden von der CSU. Hubertus Heil will Lars Klingbeil als SPD-Chef ablösen. Und der Anthropic-Börsengang ist so verlockend wie risikoreich. Das ist die Lage am Montagmorgen.",
@@ -36,13 +64,6 @@
    "desc": "Judo-Olympiasieger Teddy Riner will französischer Präsident werden. Emmanuel Macron findet das prima, Marine Le Pen schweigt. Muss man Riners Ambitionen ernst nehmen?",
    "url": "https://www.zeit.de/politik/ausland/2026-11/praesidentschaftswahl-frankreich-2027-teddy-riner-5vor8",
    "at": "2026-11-16T04:34:07+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Irankrieg: Dritter US-Flugzeugträger offenbar im Nahen Osten angekommen",
-   "desc": "Medienberichten zufolge ist der Flugzeugträger »Theodore Roosevelt« im Nahen Osten eingetroffen. Der Iran pocht weiter auf sein Recht zur Urananreicherung. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-16T03:09:54+00:00"
   },
   {
    "source": "Die Zeit",
@@ -108,13 +129,6 @@
    "at": "2026-11-15T17:50:49+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Exil-Iraner in Deutschland: »Unser Schmerz wird verdrängt«",
-   "desc": "Wie geht es der Opposition im Iran? Nach der Verleihung eines Freiheitspreises an das iranische Volk sprechen Deutsch-Iraner über ihre Angst um Freunde und Verwandte.",
-   "url": "https://www.zeit.de/2026/49/exil-iraner-deutschland-proteste-freiheitspreis-reza-pahlavi",
-   "at": "2026-11-15T17:15:07+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Linke in Berlin: Bodo Ramelow wirft Vanessa Emde Vertrauensbruch vor",
    "desc": "Der Druck auf die umstrittene Berliner Linkenpolitikerin Vanessa Emde wächst: Auch Parteigenosse Bodo Ramelow drängt Emde dazu, die Fraktion im Abgeordnetenhaus der Hauptstadt zu verlassen.",
@@ -129,25 +143,11 @@
    "at": "2026-11-15T16:42:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Luftverkehr in den USA: Sean Duffy geht von schneller Normalisierung im US-Flugverkehr aus",
-   "desc": "Der US-Verkehrsminister rechnet mit Rückkehr zum regulären Flugbetrieb ab Montag. Donald Trump fordert Geld vom Kongress für die Modernisierung des Flugsicherungssystems.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/us-flugstopp-sean-duffy-flugsicherung-system-ausfall-gxe",
-   "at": "2026-11-15T16:34:32+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Innensenatorin: Bremen beendet Kampagne gegen Islamismus vorzeitig",
    "desc": "Mit Bildern von einem Wolf im Schafspelz hatte der Verfassungsschutz vor Islamisten gewarnt. Bremens Innensenatorin sagt nun: Das Ziel der Kampagne war richtig, die Umsetzung aber nicht.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bremen-beendet-kampagne-gegen-islamismus-vorzeitig-100.html",
    "at": "2026-11-15T16:16:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sabotagevorwurf: Estland schließt nach Anschlagsversuch Grenzübergänge zu Russland",
-   "desc": "Estland beschuldigt russische Geheimdienste, hinter einem Anschlag auf eine Drohnenfabrik zu stehen. Ab Dezember sollen alle drei Grenzübergänge geschlossen werden.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/estland-grenzschliessung-russland-brandanschlag-drohnenfabrik",
-   "at": "2026-11-15T16:00:05+00:00"
   },
   {
    "source": "Tagesschau",
@@ -211,13 +211,6 @@
    "desc": "Der Bund plant bessere Kitas, bezahlen sollen die Städte. Deren Chef warnt: Mehr Qualität mit weniger Geld funktioniere nicht. Nun droht Streit im Bundesrat über das neue Kita-Startchancengesetz.",
    "url": "https://www.spiegel.de/politik/deutschland/kita-staedtetag-warnt-vor-qualitaetsverlust-durch-neues-startchancengesetz-a-b36952d9-c7fa-4c96-96de-7f549279a26d",
    "at": "2026-11-15T07:24:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Hunderttausende Gefallene im Angriffskrieg gegen die Ukraine",
-   "desc": "Hunderttausende Russen sind im Angriffskrieg gegen die Ukraine gefallen. Jeder Tote reißt eine Lücke. Das ist die Lage am Sonntag.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-hunderttausende-gefallene-im-angriffskrieg-gegen-die-ukraine-a-1c97ff6a-6d6e-443d-994b-b3ad716bb9b6",
-   "at": "2026-11-15T06:35:00+00:00"
   }
  ]
 }

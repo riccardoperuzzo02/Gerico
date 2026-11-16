@@ -1,7 +1,21 @@
 {
  "code": "US",
- "asOf": "2026-11-16T05:17:36+00:00",
+ "asOf": "2026-11-16T07:17:35+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
+   "desc": "Europe's banks are using AI to cut routine work, redeploy staff and hire more technical talent.",
+   "url": "https://www.cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html",
+   "at": "2026-11-16T06:20:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How Could a Router Lead to a Nationwide Ground Stop?",
+   "desc": "Aviation experts and federal officials said the network outage began after a new piece of networking equipment began flooding the rest of the system with data. The underlying cause is unclear.",
+   "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
+   "at": "2026-11-16T05:25:25+00:00"
+  },
   {
    "source": "New York Times",
    "title": "International Students Are Turning Away From U.S. Universities",
@@ -50,13 +64,6 @@
    "desc": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war.",
    "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
    "at": "2026-11-16T02:56:24+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "How Could a Router Lead to a Nationwide Ground Stop?",
-   "desc": "Aviation experts and federal officials said the network outage began after a new piece of networking equipment began flooding the rest of the system with data. The underlying cause is unclear.",
-   "url": "https://www.nytimes.com/2026/11/15/us/router-network-faa-airline-ground-stop.html",
-   "at": "2026-11-16T02:28:59+00:00"
   },
   {
    "source": "CNBC",
@@ -445,16 +452,16 @@
   },
   {
    "source": "NPR",
-   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
-   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
+   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
+   "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
    "at": "2026-11-15T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Midterm voters ended the long-running GOP dominance in state legislatures",
-   "desc": "In several states, Democrats took control of legislatures that had been divided and they weakened GOP dominance in others. Issues on the agenda: More access to health care, new limits on school vouchers.",
-   "url": "https://www.npr.org/2026/11/15/nx-s1-6039175/midterms-legislatures-states-democrats-gop",
+   "title": "New Mexico wanted free childcare for all. This is what's worked — and what hasn't",
+   "desc": "A year ago in November, New Mexico became the first state to offer free childcare to every eligible family, regardless of income.",
+   "url": "https://www.npr.org/2026/11/15/nx-s1-6040194/new-mexico-free-universal-childcare-families",
    "at": "2026-11-15T10:00:00+00:00"
   },
   {
@@ -463,20 +470,6 @@
    "desc": "The film Being Heumann tells the lesser-known story of the mother of the disability rights movement. A new generation of activists share how they \"carry the torch\" today.",
    "url": "https://www.npr.org/2026/11/15/nx-s1-6002935/being-heumann-new-generation-disability-rights",
    "at": "2026-11-15T10:00:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Oregon community suspects foul play when beloved shopkeeper disappears",
-   "desc": "When Susan \"Phoenix\" Lane and her two dogs went missing from Welches, Oregon, in the foothills of Mount Hood, her friends and family suspected foul play almost immediately.",
-   "url": "https://www.cbsnews.com/news/susan-phoenix-lane-fournier-mount-hood-oregon-murder-48-hours/",
-   "at": "2026-11-15T07:05:03+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Could Budapest be the next digital nomad hotspot?",
-   "desc": "With its mix of sights, cafés and culture, Hungary's capital Budapest has become popular with those embracing the \"work from anywhere\" trend.",
-   "url": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
-   "at": "2026-11-15T06:00:01+00:00"
   }
  ]
 }

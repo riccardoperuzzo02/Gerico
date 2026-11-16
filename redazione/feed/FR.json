@@ -1,7 +1,63 @@
 {
  "code": "FR",
- "asOf": "2026-11-16T05:17:36+00:00",
+ "asOf": "2026-11-16T07:17:35+00:00",
  "items": [
+  {
+   "source": "France 24",
+   "title": "La Francophonie se dirige vers un vote à haut risque pour l'élection de son secrétaire général",
+   "desc": "L'élection du secrétaire général de l'Organisation internationale de la Francophonie doit se dérouler lundi à Phnom Penh, au Cambodge. Après deux mandats de Louise Mushikiwabo, la République démocratique du Congo, qui accuse le Rwanda de soutenir le groupe armé rebelle du M23 dans ses provinces de l'Est, s'oppose à une reconduction de la Rwandaise à la tête de l'OIF.",
+   "url": "https://www.france24.com/fr/france/20261116-francophonie-oif-vote-%C3%A9lection-secr%C3%A9taire-g%C3%A9n%C3%A9ral-louise-mushikiwabo-rwanda-rd-congo-juliana-lumumba-dacian-ciolos-coumba-ba",
+   "at": "2026-11-16T07:01:33+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le plus puissant baron mexicain de la drogue, Miguel Ángel Félix Gallardo, est mort après 37 ans d'emprisonnement",
+   "desc": "Il avait été à l'origine de la fondation du cartel de Guadalajara, premier modèle de la criminalité organisée au Mexique.",
+   "url": "https://www.franceinfo.fr/societe/drogue/le-plus-puissant-baron-mexicain-de-la-drogue-miguel-angel-felix-gallardo-est-mort-apres-37-ans-d-emprisonnement_8284346.html",
+   "at": "2026-11-16T06:54:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"C'est la reconnaissance de cette culture fromagère\" : le comté 24 mois du Fort des Rousses dans le Jura élu meilleur fromage du monde",
+   "desc": "Parmi plus de 5 000 fromages, un comté 24 mois du Jura s'est distingué lors du World Cheese Awards, ce qui récompense l'ensemble de la filière fromagère qui \"existe depuis des siècles et même des millénaires\".",
+   "url": "https://www.franceinfo.fr/culture/cuisine-et-gastronomie/c-est-la-reconnaissance-de-cette-culture-fromagere-le-comte-24-mois-du-fort-des-rousses-dans-le-jura-elu-meilleur-fromage-du-monde_8284337.html",
+   "at": "2026-11-16T06:47:57+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"L'ascenseur social est un peu en panne\" : trouver un stage de seconde ou de 3e, est encore compliqué pour les adolescents les moins favorisés",
+   "desc": "Une étude du ministère de l'Éducation nationale dévoilée fin octobre souligne l'inégalité des chances persistante entre lycéens et collégiens issus de milieux sociaux différents même si certaines associations tentent de changer la tendance, à leur échelle.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-l-ascenseur-social-est-un-peu-en-panne-trouver-un-stage-de-seconde-ou-de-3e-est-encore-complique-pour-les-adolescents-les-moins-favorises_8263367.html",
+   "at": "2026-11-16T06:27:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les rassemblements et cortèges sont interdits autour de plusieurs lycées et universités à Paris et en région parisienne",
+   "desc": "L'arrêté de la préfecture de police de Paris, publié dimanche, précise que cette interdiction s'applique dans un \"rayon de 100 mètres\" autour des établissements. Une mesure justifiée pour éviter notamment des \"incidents entrainent des dégradations de biens publics, des incendies\".",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/les-rassemblements-et-corteges-sont-interdits-autour-de-plusieurs-lycees-et-universites-a-paris-et-en-region-parisienne_8284295.html",
+   "at": "2026-11-16T06:10:54+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le courrier sur la fertilité est envoyé à partir de lundi à tous les Français de 29 ans pour les informer sur la santé reproductive",
+   "desc": "Ce courrier aborde notamment le sujet de la contraception pour ceux qui ne veulent pas d’enfant mais aussi les consultations spécialisées de fertilité pour les couples.",
+   "url": "https://www.franceinfo.fr/sante/le-courrier-sur-la-fertilite-est-envoye-a-tous-les-francais-de-29-ans-pour-les-informer-sur-la-sante-reproductive_8284199.html",
+   "at": "2026-11-16T05:52:32+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : le pont reliant la Russie à la Crimée attaqué cette nuit ; près de 200 drones neutralisés à l’approche de Moscou",
+   "desc": "Plus de 1 300 drones ukrainiens ont été « interceptés et détruits » au cours de la nuit en Russie, en Crimée et au-dessus de la mer d’Azov et de la mer Noire, selon le ministère de la défense russe.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-pres-de-200-drones-neutralises-a-l-approche-de-moscou-selon-le-maire-de-la-capitale-russe_6810982_3210.html",
+   "at": "2026-11-16T05:52:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Crise sociale : le lycée Nelson-Mandela rouvre ses portes à Nantes, six semaines après l'incendie qui a touché l'établissement",
+   "desc": "Le ministre de l'Education nationale doit se rendre lundi sur place, alors que le gouvernement durcit le ton face aux blocages des établissements scolaires notamment à Paris.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mouvement-lyceen-le-lycee-nelson-mandela-rouvre-ses-portes-a-nantes-six-semaines-apres-l-incendie-dont-il-a-ete-victime_8284130.html",
+   "at": "2026-11-16T05:51:04+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Guerre de territoire, \"barbarie\", aveux surprises... Ce que l'on a appris au procès de l'assassinat du frère d'Amine Kessaci",
@@ -11,10 +67,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "La vente aux enchères des Hospices de Beaunes récolte près de 14 millions d’euros malgré de maigres vendanges",
-   "desc": "Loin du record de 29 millions d’euros de 2022, le montant total obtenu dimanche lors de cette vente caritative reste satisfaisant au regard de la baisse des récoltes.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/16/la-vente-aux-encheres-des-hospices-de-beaunes-recolte-pres-de-14-millions-d-euros-malgre-de-maigres-vendanges_6811402_3234.html",
-   "at": "2026-11-16T04:56:55+00:00"
+   "title": "En Suisse, l’inculpation inédite d’un journaliste via la loi sur les banques nourrit des inquiétudes",
+   "desc": "Le journaliste suisse Lukas Hässig, dont les articles ont permis de dévoiler un important scandale bancaire, a été inculpé à la mi-octobre. L’utilisation de la loi suisse sur les banques contre les journalistes d’investigation pourrait constituer une menace contre la liberté de la presse.",
+   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/16/en-suisse-l-inculpation-inedite-d-un-journaliste-via-la-loi-sur-les-banques-nourrit-des-inquietudes_6811403_4355770.html",
+   "at": "2026-11-16T05:00:08+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Nos albums coups de cœur : Dominique A, Angèle, Fontaines D.C., Pet Shop Boys…",
+   "desc": "Le lundi, le service Culture du « Monde » propose aux lecteurs de La Matinale ses choix en matière de musique. Aujourd’hui, une sélection de disques parus en octobre pour ne pas voir passer l’hiver.",
+   "url": "https://www.lemonde.fr/musiques/article/2026/11/16/nos-albums-coups-de-c-ur-dominique-a-angele-fontaines-d-c-pet-shop-boys_6811369_1654986.html",
+   "at": "2026-11-16T04:45:12+00:00"
   },
   {
    "source": "franceinfo",
@@ -28,14 +91,14 @@
    "title": "COP31 : quels pays doivent régler la facture de la lutte contre la catastrophe climatique ?",
    "desc": "La France a fait de l’élargissement du cercle des Etats tenus d’aider financièrement les pays en développement « une priorité » de la COP31, qui se poursuit en Turquie.",
    "url": "https://www.lemonde.fr/planete/article/2026/11/16/cop31-quels-pays-doivent-regler-la-facture-de-la-lutte-contre-la-catastrophe-climatique_6811341_3244.html",
-   "at": "2026-11-16T04:30:15+00:00"
+   "at": "2026-11-16T04:30:11+00:00"
   },
   {
    "source": "Le Monde",
    "title": "Le maïs, indispensable au modèle agricole français, menacé par le dérèglement climatique",
-   "desc": "La sécheresse et les canicules ont fait chuter la récolte de maïs grain de 50 %, et celle de maïs pour le fourrage de plus de 30 % cette année. Des résultats qui posent la question de l’avenir de cette culture, sur laquelle repose l’alimentation d’une grande partie du bétail français.",
+   "desc": "La sécheresse et les canicules ont fait chuter la récolte de maïs grain de 50 % et celle de maïs pour le fourrage de plus de 30 % cette année. Des résultats qui posent la question de l’avenir de cette culture, sur laquelle repose l’alimentation d’une grande partie du bétail français.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/16/le-mais-indispensable-au-modele-agricole-francais-menace-par-le-dereglement-climatique_6811339_3234.html",
-   "at": "2026-11-16T04:30:06+00:00"
+   "at": "2026-11-16T04:30:00+00:00"
   },
   {
    "source": "Le Monde",
@@ -52,51 +115,37 @@
    "at": "2026-11-16T04:17:11+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "COP 31 : Ilona Mayerau-Lonné fait entendre la voix de la jeunesse calédonienne",
+   "desc": "Étudiante à Paris, Ilona Mayerau-Lonné porte la voix de la jeunesse calédonienne au sein d’un réseau européen depuis 2022. Présente à la conférence des Nations unies sur le climat grâce au programme Green overseas, elle défend une meilleure prise en compte des territoires insulaires.",
+   "url": "https://la1ere.franceinfo.fr/nouvellecaledonie/cop-31-ilona-mayerau-lonne-fait-entendre-la-voix-de-la-jeunesse-caledonienne-1758147.html",
+   "at": "2026-11-16T04:14:10+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Pourquoi la Silicon Valley veut-elle fabriquer des bébés génétiquement modifiés ?",
+   "desc": "Dans cet épisode, Alexandre Piquard, journaliste au service Economie du « Monde », chargé du suivi des géants de la tech et de l’intelligence artificielle, décrit la pente eugéniste induite par de récentes innovations technologiques dans ce secteur.",
+   "url": "https://www.lemonde.fr/podcasts/article/2026/11/16/pourquoi-la-silicon-valley-veut-elle-fabriquer-des-bebes-genetiquement-modifies_6811237_5463015.html",
+   "at": "2026-11-16T04:00:07+00:00"
+  },
+  {
    "source": "Le Monde",
    "title": "Coup dur pour Amazon avec la perte de 40 satellites due à l’échec de la fusée Vulcan",
-   "desc": "Le lanceur a subi une anomalie ⁠environ dix minutes après le décollage, perdant les satellites qu’il transportait. Il s’agissait du premier de plusieurs dizaines de vols achetés au groupe United Launch Alliance par la société de Jeff Bezos pour le développement de son réseau Internet.",
+   "desc": "Le lanceur a subi une anomalie ⁠environ dix minutes après le décollage, perdant les satellites qu’il transportait. Il s’agissait du premier vol parmi les dizaines qui ont été achetés au groupe United Launch Alliance par la société de Jeff Bezos pour le développement de son réseau Internet.",
    "url": "https://www.lemonde.fr/sciences/article/2026/11/16/coup-dur-pour-amazon-avec-la-perte-de-40-satellites-due-a-l-echec-de-la-fusee-vulcan_6811204_1650684.html",
    "at": "2026-11-16T03:11:01+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "En Amazonie péruvienne, Léon XIV alerte sur la déforestation et dénonce l’abandon des peuples autochtones",
-   "desc": "« Le cri de la terre et le cri des pauvres s’élèvent ensemble », a déclaré, dimanche, le souverain pontife, lors d’une nouvelle étape de sa tournée en Amérique latine. Il a notamment dénoncé « l’exploitation » des ressources et l’assassinat de chefs autochtones qui défendent leurs terres.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/16/en-amazonie-peruvienne-leon-xiv-alerte-sur-la-deforestation-et-denonce-l-abandon-des-peuples-autochtones_6811105_3210.html",
-   "at": "2026-11-16T01:23:44+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky annonce la préparation d’une réunion de la coalition des volontaires, « qui pourrait s’avérer historique »",
-   "desc": "L’objectif présenté par le président ukrainien est de définir la position européenne dans de futurs pourparlers avec Moscou. Par ailleurs, l’Estonie a annoncé la fermeture de ses frontières avec la Russie à compter du 1er décembre, après une nouvelle tentative de sabotage.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-volodymyr-zelensky-annonce-la-preparation-d-une-reunion-de-la-coalition-des-volontaires-qui-pourrait-s-averer-historique_6810982_3210.html",
-   "at": "2026-11-16T00:20:00+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Au Cap-Vert, José Maria Neves réélu président dès le premier tour",
-   "desc": "Le président sortant, favori pour un deuxième mandat de suite, l’a emporté dès le premier tour, dimanche, avec plus de 63 % des voix dans cet archipel lusophone réputé pour sa stabilité démocratique.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/16/au-cap-vert-jose-maria-neves-reelu-president-des-le-premier-tour_6811072_3212.html",
-   "at": "2026-11-16T00:03:59+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Plus de 157 000 signataires, dont Elon Musk, demandent le retour de Jensen Huang à la tête de Nvidia",
-   "desc": "Une lettre, dont 7 500 signataires se déclarent salariés de l’entreprise, réclame la réintégration de l’ancien patron du géant américain des semi-conducteurs, au moins le temps de se défendre face aux allégations de relations extraconjugales qui ont provoqué sa chute.",
+   "desc": "Une lettre, dont 7 500 signataires se déclarent salariés de l’entreprise, réclame la réintégration de l’ancien patron de la multinationale américaine des semi-conducteurs, au moins le temps qu’il se défende contre les allégations de relations extraconjugales qui ont provoqué sa chute.",
    "url": "https://www.lemonde.fr/pixels/article/2026/11/16/plus-de-157-000-signataires-dont-elon-musk-demandent-le-retour-de-jensen-huang-a-la-tete-de-nvidia_6811065_4408996.html",
    "at": "2026-11-15T23:22:46+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Benyamin Nétanyahou ne peut pas rester « une minute de plus » à la tête du gouvernement israélien, estime Gadi Eisenkot",
-   "desc": "Selon un reportage diffusé dimanche soir, le chef de cabinet du premier ministre sortant a transmis à la police, la veille des législatives, une plainte concernant des militants du parti arabe Raam qui s’est avérée infondée.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/15/benyamin-netanyahou-ne-peut-pas-rester-une-minute-de-plus-a-la-tete-du-gouvernement-israelien-estime-gadi-eisenkot_6811061_3210.html",
-   "at": "2026-11-15T21:27:40+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "A Paris, les rassemblements interdits de lundi à vendredi autour de certains lycées et universités",
-   "desc": "Le préfet de police estime que les blocages sont « le plus souvent » le fait d’une minorité d’élèves, mais « entravent pour tous les autres le droit fondamental à recevoir des enseignements » et attisent la colère de certains parents d’élèves.",
+   "desc": "Le préfet de police estime que les blocages sont « le plus souvent » le fait d’une minorité d’élèves, mais qu’ils « entravent pour tous les autres le droit fondamental à recevoir des enseignements » et attisent la colère de certains parents d’élèves.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/15/a-paris-les-rassemblements-interdits-de-lundi-a-vendredi-autour-de-certains-lycees-et-universites_6811050_3224.html",
    "at": "2026-11-15T20:45:27+00:00"
   },
@@ -123,6 +172,13 @@
   },
   {
    "source": "franceinfo",
+   "title": "Mortiers d'artifice : malgré le décret du gouvernement, des vendeurs continuent de les proposer",
+   "desc": "Les mortiers d'artifice sont de plus en plus utilisés à des fins dangereuses, notamment lors de manifestations ou aux abords d'établissements scolaires. Face à la multiplication des incidents, le gouvernement a décidé d'interdire leur vente aux particuliers jusqu'au 27 novembre. Pourtant, malgré cette mesure, ces engins pyrotechniques restent accessibles dans certains commerces et sur les réseaux sociaux.",
+   "url": "https://www.franceinfo.fr/societe/mortiers-d-artifice-malgre-le-decret-du-gouvernement-des-vendeurs-continuent-de-les-proposer_8283896.html",
+   "at": "2026-11-15T20:08:26+00:00"
+  },
+  {
+   "source": "franceinfo",
    "title": "La CFDT rejoint la mobilisation du 17 novembre parce que \"nos revendications n'ont pas abouti\", explique le syndicat",
    "desc": "Lors de la réunion avec l'intersyndicale de la fonction publique vendredi, le Premier ministre a annoncé l'ouverture d'une discussion d'un mois pour revaloriser les bas salaires, des mesures \"qui ne répondent pas à l'urgence\" de la situation, rappellent les syndicats.",
    "url": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/la-cfdt-rejoint-la-mobilisation-du-17-novembre-parce-que-nos-revendications-n-ont-pas-abouti-explique-le-syndicat_8283890.html",
@@ -130,15 +186,15 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : la pauvreté requiert des \"solutions structurelles\", selon les Restos du Coeur",
-   "desc": "\"La réponse que Les Restos du coeur apportent à la précarité en France est essentielle, mais elle atteint ses limites\", affirme leur président, Jean-Michel Richard.",
+   "title": "Présidentielle 2027 : la pauvreté requiert des \"solutions structurelles\", affirme le président des Restos du cœur",
+   "desc": "Cinq candidats à la présidentielle débattront lundi des enjeux de solidarité, de pouvoir d'achat et de lutte contre la pauvreté, à la veille du lancement de la 42e campagne de l'association fondée par Coluche, qui veut \"remettre la lutte contre la pauvreté au cœur\" de la campagne.",
    "url": "https://www.franceinfo.fr/societe/pauvrete/presidentielle-2027-la-pauvrete-requiert-des-solutions-structurelles-selon-les-restos-du-coeur_8283881.html",
    "at": "2026-11-15T19:40:21+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "Un homme a été mis en examen et écroué dans les Yvelines, après un crypto-rapt à 900 000 euros",
-   "desc": "Début mars, un homme et une femme d'une cinquantaine d'années avaient été séquestrés à leur domicile au Chesnay (Yvelines) et forcés à virer 900 000 euros en bitcoins à leurs agresseurs.",
+   "title": "Un homme a été mis en examen et écroué dans les Yvelines, après la séquestration d'un couple forcé à virer 900 000 euros en bitcoins",
+   "desc": "Début mars, un homme et une femme d'une cinquantaine d'années avaient été séquestrés à leur domicile au Chesnay (Yvelines) et forcés à virer la somme à leurs agresseurs.",
    "url": "https://www.franceinfo.fr/economie/bitcoin/un-homme-a-ete-mis-en-examen-et-ecroue-dans-les-yvelines-apres-un-crypto-rapt-a-900-000-euros_8283848.html",
    "at": "2026-11-15T19:26:01+00:00"
   },
@@ -151,15 +207,8 @@
   },
   {
    "source": "franceinfo",
-   "title": "Tirs en rafale aux Abymes : un mort et plusieurs blessés, dont un grièvement atteint",
-   "desc": "Scène de crime aux Abymes, la nuit dernière : une personne a été tuée et plusieurs autres sont blessées, après des tirs en rafale sur la foule.",
-   "url": "https://la1ere.franceinfo.fr/guadeloupe/tirs-en-rafale-aux-abymes-un-mort-et-trois-blesses-dont-un-grievement-atteint-1758009.html",
-   "at": "2026-11-15T18:58:48+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Au Yémen, le camp gouvernemental masse des renforts autour d'Aden, menacée par les Houthis",
-   "desc": "Le gouvernement internationalement reconnu s'est replié à Aden après la prise, en 2014 par les Houthis, de la capitale Sanaa et de grands pans du nord du pays, les plus peuplés.",
+   "title": "Au Yémen, le camp gouvernemental masse des renforts autour d'Aden, menacée par les houthis",
+   "desc": "Le gouvernement reconnu par la communauté internationale s'est replié à Aden après la prise, en 2014 par les houthis, de la capitale Sanaa et de grands pans du nord du pays, les plus peuplés.",
    "url": "https://www.franceinfo.fr/monde/proche-orient/yemen/au-yemen-le-camp-gouvernemental-masse-des-renforts-autour-d-aden-menacee-par-les-houthis_8283851.html",
    "at": "2026-11-15T18:47:11+00:00"
   },
@@ -192,18 +241,18 @@
    "at": "2026-11-15T17:48:41+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Au Cambodge, pays hôte du sommet de la francophonie, le lent déclin de la langue française",
-   "desc": "Phnom Penh accueille jusqu’au 16 novembre le XXᵉ sommet de la francophonie. Dans l’ancien protectorat français, la langue de Molière recule pourtant face à l’anglais et au chinois. Elle se maintient dans quelques filières universitaires et dans le vocabulaire khmer du quotidien.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/15/au-cambodge-qui-organise-le-sommet-de-l-organisation-internationale-de-la-francophonie-le-long-declin-de-la-langue-francaise_6811037_3210.html",
-   "at": "2026-11-15T17:00:07+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Une centaine de personnes réunies pour une marche blanche en hommage à Pengo Bossio Wangi, tué dans l'attentat raciste de Trappes",
    "desc": "Derrière la large banderole noire floquée du portrait de son neveu, un des oncles de la victime a voulu organiser cette marche blanche \"pour faire porter la voix\" de son proche décédé.",
    "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/une-centaine-de-personnes-reunies-pour-une-marche-blanche-en-hommage-a-pengo-bossio-wangi-tue-dans-l-attaque-raciste-de-trappes_8283689.html",
    "at": "2026-11-15T16:36:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Mobilisation lycéenne : le proviseur de Paul Éluard, qui avait autorisé une intervention policière dans son établissement, a quitté ses fonctions",
+   "desc": "Ce vendredi 15 novembre, les représentants des personnels du lycée Paul-Éluard, à Saint-Denis, ont annoncé via un communiqué, le départ du proviseur. Plus de 80 personnels de l'établissement avaient voté une grève reconductible \"jusqu'au départ du proviseur\", après l'intervention de la BAC au sein du lycée il y a tout pile un mois.",
+   "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/seine-saint-denis/saint-denis/mobilisation-lyceenne-le-proviseur-de-paul-eluard-qui-avait-autorise-une-intervention-policiere-dans-son-etablissement-a-quitte-ses-fonctions-3450087.html",
+   "at": "2026-11-15T16:21:48+00:00"
   },
   {
    "source": "Le Monde",
@@ -221,31 +270,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Le ministre de l'Education nationale se rend à Nantes lundi pour la réouverture du lycée Nelson-Mandela, en partie incendié le 1er octobre",
-   "desc": "L'établissement avait été en partie endommagé lors d'un blocage pendant le mouvement lycéen dont le sinistre est devenu l'un des premiers symboles des débordements survenus en marge de la mobilisation.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/le-ministre-de-l-education-nationale-se-rend-a-nantes-lundi-pour-la-reouverture-du-lycee-nelson-mandela-en-partie-incendie-le-1er-octobre_8283644.html",
-   "at": "2026-11-15T15:11:34+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"Des courriers ont pu être lus\" : ce que l'on sait de la cyberattaque contre Maileva, filiale de La Poste, qui a conduit au vol de données de 22 millions de personnes",
    "desc": "La brigade de lutte contre la cybercriminalité a été chargée de l'enquête, a confirmé dimanche le parquet de Paris. Les investigations ont été ouvertes pour \"atteinte à un système de traitement automatisé de données\" par la section cybercriminalité du parquet parisien.",
    "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/des-courriers-ont-pu-etre-lus-ce-que-l-on-sait-de-la-cyberattaque-contre-maileva-filiale-de-la-poste-qui-a-conduit-au-vol-de-donnees-de-22-millions-de-personnes_8283266.html",
    "at": "2026-11-15T14:33:41+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Tout savoir sur la fermeture de l’autoroute A13 entre Paris et Caen : durée des travaux, itinéraire de substitution et craintes de congestion",
-   "desc": "Une portion de cette autoroute qui relie Paris à Caen doit fermer durant huit mois, dès lundi 16 novembre, pour permettre de consolider un tunnel.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/15/fermeture-de-l-a13-derriere-les-travaux-indispensables-la-crainte-de-congestion-sur-les-routes-des-hauts-de-seine_6811023_3234.html",
-   "at": "2026-11-15T14:06:48+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Après l'attentat raciste à Trappes, Sandrine Rousseau accuse le gouvernement de \"sous-estimer la menace venant de l'extrême droite\"",
-   "desc": "La députée écologiste de Paris a demandé dimanche à l'exécutif \"d'arrêter\" la \"complaisance\" vis-à-vis \"des violences issues du camp de l'extrême droite\", sur BFMTV.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/attentat-raciste-a-trappes-sandrine-rousseau-accuse-le-gouvernement-de-sous-estimer-la-menace-venant-de-l-extreme-droite_8283533.html",
-   "at": "2026-11-15T13:56:47+00:00"
   },
   {
    "source": "franceinfo",
@@ -262,25 +290,11 @@
    "at": "2026-11-15T12:36:55+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Hunger Games : lever de soleil sur la moisson\" : un nouveau préquel coloré au casting rafraîchissant",
-   "desc": "Ce volet, tiré du roman éponyme de Suzanne Collins paru en 2025, raconte la jeunesse d'Haymitch Abernathy, mentor de l'héroïne des premiers épisodes de la saga.",
-   "url": "https://www.franceinfo.fr/culture/cinema/hunger-games-lever-de-soleil-sur-la-moisson-un-nouveau-prequel-colore-au-casting-rafraichissant_8267603.html",
-   "at": "2026-11-15T10:55:51+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Présidentielle 2027 : Teddy Riner affronte son premier sondage, David Lisnard gagne des points",
    "desc": "Le candidat tout juste déclaré Teddy Riner est crédité de 4,5 % des intentions de vote dans un sondage pour BFMTV et La Tribune Dimanche. Selon cette enquête, le maire de Cannes, David Lisnard, fait un bon de quatre points au détriment de Bruno Retailleau. Marine Le Pen reste en tête des intentions de vote, suivie par Jean-Luc Mélenchon, qui s'installe à la deuxième place.",
    "url": "https://www.france24.com/fr/france/20261115-pr%C3%A9sidentielle-2027-teddy-riner-cr%C3%A9dit%C3%A9-de-4-5-dans-un-sondage-david-lisnard-gagne-des-points",
    "at": "2026-11-15T09:35:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les revalorisations annoncées pour les plus bas salaires coûteront \"un peu plus d'un milliard d'euros\" aux finances publiques, déclare le ministre David Amiel",
-   "desc": "David Amiel confirme, dans le \"8h30 franceinfo\" dimanche, une augmentation \"pour les plus bas salaires de la fonction publique\" représentant \"350 euros brut par an\".",
-   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/il-y-aura-bien-une-hausse-des-points-pour-les-plus-bas-salaires-de-la-fonction-publique-confirme-le-ministre-david-amiel_8283254.html",
-   "at": "2026-11-15T08:49:24+00:00"
   }
  ]
 }

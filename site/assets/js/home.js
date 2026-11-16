@@ -14,7 +14,7 @@ G.page("home", async function (P) {
   const slugOra = () => G.paeseInfo(paeseOra()).slug;
   const datiPaese = {};
   const caricaPaese = async (code) => { if (!(code in datiPaese)) datiPaese[code] = await G.load("paesi/" + code); return datiPaese[code]; };
-  const [ed, mk0, qt0, br, au, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
+  const [ed, mk0, qt0, br, au0, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
     G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda"), caricaPaese(paeseOra())]);
   // i numeri dei mercati: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
   // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, più sotto)
@@ -487,13 +487,14 @@ G.page("home", async function (P) {
   // il lettore è uno solo per tutto il sito (G.player): qui la scheda lo comanda e ne mostra l'avanzamento
   function renderListen() {
     const box = $("listen");
+    const au = G.audioInfo(au0);
     if (!au || !au.src || G.hoursAgo(au.asOf) > 30) { box.hidden = true; return; }
     const pl = G.player, btn = $("ls-btn");
     pl.set(au);
     const when = au.source || au.asOf;
     $("ls-t").textContent = pl.title();
     // la durata sta già a destra (il tempo che manca): qui solo cosa c'è dentro e di quando è
-    $("ls-s").textContent = G.L("Notizie e mercati, con l'aggiornamento delle ", "News and markets in Italian, from the update at ") + G.hm(when);
+    $("ls-s").textContent = G.L("Notizie e mercati, con l'aggiornamento delle ", au.lang === "en" ? "News and markets, from the update at " : "News and markets in Italian, from the update at ") + G.hm(when);
     box.classList.remove("wait");
     btn.disabled = false;
     btn.addEventListener("click", () => pl.toggle());

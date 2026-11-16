@@ -117,6 +117,10 @@ def check_data(site):
         d = load(path)
         src = str((d or {}).get("src") or "").split("?")[0]
         need(bool(src) and os.path.exists(os.path.join(site, src)), f"audio.json: il file audio {src or '(vuoto)'} non c'è")
+        en = (d or {}).get("en")
+        if en is not None:
+            src = str((en or {}).get("src") or "").split("?")[0]
+            need(isinstance(en, dict) and bool(src) and os.path.exists(os.path.join(site, src)), f"audio.json: il file audio inglese {src or '(vuoto)'} non c'è")
     optional = optional + (("riepilogo.json", None),)
     for name, _ in optional[-1:]:
         path = os.path.join(data, name)

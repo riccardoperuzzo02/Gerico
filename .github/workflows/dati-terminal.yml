@@ -84,7 +84,9 @@ jobs:
           for f in quotes macro sec sentiment audio calendario societari; do
             if [ -f "site/data/$f.json" ]; then git add "site/data/$f.json"; fi
           done
-          if [ -f site/audio/riepilogo.m4a ]; then git add site/audio/riepilogo.m4a; fi
+          for f in site/audio/riepilogo.m4a site/audio/riepilogo-en.m4a site/audio/riepilogo-en.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if [ -d site/data/indici ]; then git add site/data/indici; fi
           for f in screener/candidati.json site/data/titoli-storico.json; do
             if [ -f "$f" ]; then git add "$f"; fi

@@ -839,6 +839,8 @@
   // L'audio vive fuori dalla pagina: cambiando pagina continua, e anche in un'altra scheda o a schermo bloccato.
   // Una barra in basso lo comanda da ogni pagina; la posizione resta in memoria di sessione:
   // dopo un ricaricamento si riprende da lì con un tocco (iOS non fa ripartire l'audio da solo).
+  // il riepilogo nella lingua del sito: in inglese, se c'è la versione inglese dello stesso riepilogo; se no l'italiano
+  G.audioInfo = (au) => (G.en && au && au.en && au.en.src && au.en.source === au.source ? Object.assign({ lang: "en" }, au.en) : au);
   G.player = (() => {
     const audio = new Audio();
     audio.preload = "none";
@@ -848,7 +850,8 @@
     const emit = () => { subs.forEach((f) => { try { f(); } catch (e) { /* niente */ } }); paint(); };
     const mmss = (s) => Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0");
     const when = () => info && (info.source || info.asOf);
-    const title = () => (info ? (G.isToday(when()) ? G.L("Il riepilogo di oggi", "Today's briefing (in Italian)") : G.L("Il riepilogo di ", "Briefing of ") + G.weekday(when()) + G.L("", " (in Italian)")) : "");
+    const ita = () => (info && info.lang === "en" ? "" : " (in Italian)");
+    const title = () => (info ? (G.isToday(when()) ? G.L("Il riepilogo di oggi", "Today's briefing" + ita()) : G.L("Il riepilogo di ", "Briefing of ") + G.weekday(when()) + G.L("", ita())) : "");
     const dur = () => audio.duration || (info && info.duration) || 0;
     const pos = () => audio.currentTime || saved || 0;
     const started = () => !!info && (!audio.paused || pos() > 0);
@@ -992,7 +995,7 @@
   })();
   // dopo un ricaricamento, se il riepilogo era a metà, la barra lo ripropone da dove eri
   try {
-    if (sessionStorage.getItem("gerico.audio")) G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) < 30) G.player.set(au); });
+    if (sessionStorage.getItem("gerico.audio")) G.load("audio").then((a) => { const au = G.audioInfo(a); if (au && au.src && G.hoursAgo(au.asOf) < 30) G.player.set(au); });
   } catch (e) { /* niente */ }
 
   // ---------- barra in basso a pillola (grafica nuova, 7 novembre) ----------
@@ -1044,7 +1047,7 @@
         // la voce del riepilogo compare quando c'è quello del giorno
         if (!asked) {
           asked = true;
-          G.load("audio").then((au) => { if (au && au.src && G.hoursAgo(au.asOf) <= 30 && !G.player.info()) G.player.set(au); paint(); }).catch(() => {});
+          G.load("audio").then((a) => { const au = G.audioInfo(a); if (au && au.src && G.hoursAgo(au.asOf) <= 30 && !G.player.info()) G.player.set(au); paint(); }).catch(() => {});
         }
         paint();
       }

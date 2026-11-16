@@ -6,7 +6,8 @@ Uso:
     python3 scripts/audio.py site --prove    i primi due temi letti con più voci, in site/audio/prove/
 
 Gira nel job «Dati del Terminal». Se il riepilogo non c'è, o l'audio è già quello del riepilogo attuale con la
-stessa voce, non fa niente.
+stessa voce, non fa niente. Fa anche la versione inglese, per chi legge il sito in inglese: il riepilogo tradotto da
+Gemini (site/audio/riepilogo-en.json) e letto dalla stessa voce in site/audio/riepilogo-en.m4a; in audio.json sta sotto «en».
 
 Si sente come un telegiornale: la sigla (segnali orari, il colpo dell'orchestra, la frase degli ottoni), la voce
 che entra sulla battuta dopo mentre la musica resta sotto (un po' più presente sul saluto e sui titoli e nelle pause
@@ -47,6 +48,8 @@ GEMINI_VOICE = os.environ.get("GERICO_VOCE", "").strip() or "Iapetus"  # maschil
 # lo stile sta fuori dal testo (il testo si legge parola per parola) ed è una riga breve e sempre uguale:
 # le indicazioni lunghe fanno cambiare la voce da un pezzo all'altro
 STYLE = os.environ.get("GERICO_STILE", "").strip() or "Conduttore del telegiornale in diretta: sicuro, autorevole e partecipe, dizione chiara, ritmo deciso."
+# la versione inglese: lo stesso riepilogo tradotto da Gemini e letto dalla stessa voce, con lo stile in inglese
+STYLE_EN = os.environ.get("GERICO_STILE_EN", "").strip() or "Live TV news anchor: confident, authoritative and engaged, clear diction, brisk pace. British English."
 # la voce prima di andare sulla musica (il volume finale lo dà FINALE, sul montaggio intero)
 GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:release=120:makeup=1.5"
 FINALE = "loudnorm=I=-16:TP=-2.5:LRA=11"  # -2,5 dBTP: l'AAC a 64 kbps alza un po' i picchi
@@ -75,9 +78,9 @@ def musica_id():
     return h.hexdigest()[:6]
 
 
-def gemini_id(voice):
+def gemini_id(voice, lingua="it"):
     # «voce1»: solo la voce, senza musica; cambiando questa sigla l'audio si rifà
-    return "gemini-38-" + voice.lower() + "-voce2"
+    return "gemini-38-" + voice.lower() + "-voce2" + ("-en" if lingua == "en" else "")
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -89,6 +92,8 @@ LANG = "it"
 VOICE_MIX = (("im_nicola", 0.85), ("if_sara", 0.15))
 SPEED = 1.1
 VOICE_ID = "kokoro-nicola85-sara15-voce2"  # cambia con la voce o il montaggio: l'audio si rifà anche con lo stesso testo
+# la riserva per l'inglese: George, voce britannica di Kokoro (il testo tradotto è in inglese britannico)
+VOICE_MIX_EN, LANG_EN, VOICE_ID_EN = (("bm_george", 1.0),), "en-gb", "kokoro-george-voce2-en"
 # un po' di compressione e di presenza sulle medie (il volume finale lo dà FINALE)
 CHAIN = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,equalizer=f=3200:t=q:w=1.2:g=2.5"
 PAUSE_SENT, PAUSE_PARA = 0.3, PAUSE_TEMA
@@ -196,6 +201,13 @@ def per_voce(text):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def per_voce_en(text):
+    """Il testo inglese per la voce: com'è, senza le virgolette basse; il nome si legge all'italiana."""
+    t = text.replace("’", "'").replace("–", ", ").replace("—", ", ").replace("«", "").replace("»", "")
+    t = re.sub(r"\bGERICO\b", "Gerico", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def find_audio(doc):
     """I dati dell'audio nella risposta: l'ultimo blocco audio dei passi del modello (API interactions); per sicurezza
     anche la forma di generateContent (inlineData)."""
@@ -299,10 +311,10 @@ def ritma(y, rate, np, testi):
     return np.concatenate(out).astype(np.float32), sorted(marks)
 
 
-def gemini_piece(text, key, voice, np, sf):
+def gemini_piece(text, key, voice, np, sf, style=STYLE):
     body = {"model": GEMINI_MODEL,
             "input": [{"type": "user_input", "content": [{"type": "text", "text": text,
-                                                          "annotations": [{"type": "speech_metadata", "style": STYLE}]}]}],
+                                                          "annotations": [{"type": "speech_metadata", "style": style}]}]}],
             "response_format": {"type": "audio"},
             "generation_config": {"speech_config": [{"voice": voice}]}}
     req = urllib.request.Request(GEMINI_URL, data=json.dumps(body).encode("utf-8"), method="POST",
@@ -327,7 +339,7 @@ def retry_wait(e, body, attempt):
     return 10.0 * (attempt + 1)
 
 
-def gemini_read(text, key, voice, np, sf):
+def gemini_read(text, key, voice, np, sf, style=STYLE):
     """Un pezzo letto da Gemini, con i controlli: durata giusta per il numero di parole, niente silenzio vuoto.
     Gli errori di quota al minuto e del servizio aspettano e riprovano; finita la quota del giorno, o con chiave o modello
     sbagliati, si ferma subito."""
@@ -335,7 +347,7 @@ def gemini_read(text, key, voice, np, sf):
     last = None
     for attempt in range(TRIES):
         try:
-            y, rate = gemini_piece(text, key, voice, np, sf)
+            y, rate = gemini_piece(text, key, voice, np, sf, style)
             y = trim(y, rate, np)
             dur = len(y) / rate
             if dur < 0.5 or float(np.max(np.abs(y))) < 0.01:
@@ -375,30 +387,31 @@ def pieces(paras):
     return out
 
 
-def gemini_audio(paras, key, voice, np, sf):
+def gemini_audio(paras, key, voice, np, sf, lingua="it"):
     """Tutto il riepilogo con Gemini: i pezzi uno dopo l'altro, con le pause rimesse in ordine (ritma) e la stessa
     pausa tra un pezzo e l'altro. Torna la voce, la frequenza e dove comincia ogni tema dopo il primo."""
     # Prima tutto in una richiesta sola: letto a pezzi, da un pezzo all'altro la voce cambiava timbro e passo e
     # sembrava un'altra persona. Se la lettura intera non riesce, si torna ai pezzi di CHUNK_WORDS parole.
     if sum(len(p.split()) for p in paras) <= INTERO_WORDS:
         try:
-            return gemini_leggi(["\n\n".join(paras)], key, voice, np, sf)
+            return gemini_leggi(["\n\n".join(paras)], key, voice, np, sf, lingua)
         except QuotaDelGiorno:
             raise
         except RuntimeError as e:
             print(f"::warning::audio: la lettura in una richiesta sola non è riuscita ({e}); leggo a pezzi")
             time.sleep(5)
-    return gemini_leggi(pieces(paras), key, voice, np, sf)
+    return gemini_leggi(pieces(paras), key, voice, np, sf, lingua)
 
 
-def gemini_leggi(pezzi, key, voice, np, sf):
+def gemini_leggi(pezzi, key, voice, np, sf, lingua="it"):
+    prep, style = (per_voce_en, STYLE_EN) if lingua == "en" else (per_voce, STYLE)
     rate = 24000
     parts, marks, size = [], [], 0
     for i, piece in enumerate(pezzi):
         if i:
             time.sleep(3)  # niente raffiche: il livello gratuito conta anche le richieste al minuto
-        y, rate = gemini_read("\n\n".join(per_voce(p) for p in piece.split("\n\n")), key, voice, np, sf)
-        y, dentro = ritma(y, rate, np, [per_voce(p) for p in piece.split("\n\n")])
+        y, rate = gemini_read("\n\n".join(prep(p) for p in piece.split("\n\n")), key, voice, np, sf, style)
+        y, dentro = ritma(y, rate, np, [prep(p) for p in piece.split("\n\n")])
         if i:
             parts.append(np.zeros(int(rate * PAUSE_TEMA), dtype=np.float32))
             size += int(rate * PAUSE_TEMA)
@@ -409,10 +422,11 @@ def gemini_leggi(pezzi, key, voice, np, sf):
     return np.concatenate(parts), rate, marks
 
 
-def kokoro_audio(paras, np):
+def kokoro_audio(paras, np, lingua="it"):
     k = model()
     style = lambda v: k.get_voice_style(v) if hasattr(k, "get_voice_style") else k.voices[v]
-    voice = sum(w * style(v) for v, w in VOICE_MIX)
+    mix, lang, prep = (VOICE_MIX_EN, LANG_EN, per_voce_en) if lingua == "en" else (VOICE_MIX, LANG, speakable)
+    voice = sum(w * style(v) for v, w in mix)
     rate = 24000
     parts, marks = [], []
     # frase per frase: ogni frase ha la sua intonazione; pausa breve tra le frasi, più lunga tra un tema e l'altro (riga vuota)
@@ -420,8 +434,8 @@ def kokoro_audio(paras, np):
         if i:
             parts[-1] = np.zeros(int(rate * PAUSE_PARA), dtype=np.float32)
             marks.append(sum(len(x) for x in parts))
-        for s in sentences(speakable(para)):
-            phonemes = FLAG.sub("", k.tokenizer.phonemize(s, lang=LANG))
+        for s in sentences(prep(para)):
+            phonemes = FLAG.sub("", k.tokenizer.phonemize(s, lang=lang))
             samples, rate = k.create(phonemes, voice=voice, speed=SPEED, is_phonemes=True)
             parts.extend([samples.astype(np.float32), np.zeros(int(rate * PAUSE_SENT), dtype=np.float32)])
     return np.concatenate(parts[:-1]), rate, marks
@@ -532,6 +546,123 @@ def paragraphs(text):
     return [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
 
 
+def pubblica(audio, rate, chain, dest, np, sf):
+    """Solo la voce, con la sua catena e a 48 kHz: niente sigla e niente musica sotto (11 novembre 2026); un attimo di
+    silenzio prima e dopo. Il montaggio con la musica resta in monta(), se un giorno servisse di nuovo.
+    Torna la durata in secondi e l'impronta del file (per l'indirizzo, così il browser non tiene quello vecchio)."""
+    import sigla
+    voce = filtro(audio, rate, chain, np, sf, out=sigla.SR)
+    pausa = np.zeros(int(0.3 * sigla.SR), dtype=voce.dtype)
+    audio, rate = np.concatenate([pausa, voce, pausa]), sigla.SR
+    os.makedirs(os.path.dirname(dest), exist_ok=True)
+    encode(audio, rate, dest, FINALE, np, sf)
+    with open(dest, "rb") as f:
+        tag = hashlib.sha256(f.read()).hexdigest()[:10]
+    return round(len(audio) / rate), tag
+
+
+def adesso():
+    return datetime.now(ZoneInfo("Europe/Rome")).isoformat(timespec="seconds")
+
+
+def italiano(site, rp, old, key, np, sf):
+    """L'audio italiano: torna le sue informazioni per audio.json (quelle di prima se non c'era niente da rifare)."""
+    dest = os.path.join(site, "audio", "riepilogo.m4a")
+    base = {k: v for k, v in old.items() if k != "en"}
+    want = gemini_id(GEMINI_VOICE) if key else VOICE_ID
+    same_text = old.get("source") == rp.get("asOf") and os.path.exists(dest)
+    if same_text and old.get("voiceId") == want:
+        print("L'audio italiano è già quello del riepilogo attuale.")
+        return base
+    t0 = time.time()
+    paras = paragraphs(rp["text"])
+    audio = None
+    if key:
+        try:
+            audio, rate, marks = gemini_audio(paras, key, GEMINI_VOICE, np, sf)
+            label, vid, chain = GEMINI_VOICE + ", voce sintetica di Google (Gemini)", gemini_id(GEMINI_VOICE), GEMINI_CHAIN
+        except Exception as e:  # noqa: BLE001  qualunque errore del servizio: legge la voce di riserva
+            print(f"::warning::audio: Gemini non ha letto il riepilogo ({type(e).__name__}: {e}); legge Kokoro")
+            if same_text and old.get("voiceId") == VOICE_ID:
+                print("L'audio di riserva per questo riepilogo c'è già: resta quello.")
+                return base
+    if audio is None:
+        audio, rate, marks = kokoro_audio(paras, np)
+        label, vid, chain = "Nicola, sintesi vocale Kokoro", VOICE_ID, CHAIN
+    durata, tag = pubblica(audio, rate, chain, dest, np, sf)
+    info = {"asOf": adesso(), "source": rp.get("asOf"), "date": rp.get("date"), "title": rp.get("title") or "Il riepilogo di GERICO",
+            "duration": durata, "src": "audio/riepilogo.m4a?v=" + tag, "voice": label, "voiceId": vid}
+    print(f"::notice::audio: riepilogo italiano letto da {label} in {durata} s di audio, {os.path.getsize(dest) // 1024} KB, in {time.time() - t0:.0f} s")
+    return info
+
+
+def traduzione(rp, cache):
+    """Il riepilogo in inglese, tradotto da Gemini con le regole delle traduzioni del sito (scripts/traduci.py) e
+    tenuto in site/audio/riepilogo-en.json: si traduce una volta sola per riepilogo."""
+    try:
+        with open(cache, encoding="utf-8") as f:
+            c = json.load(f)
+        if c.get("source") == rp.get("asOf") and c.get("text"):
+            return c
+    except (OSError, ValueError):
+        pass
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import traduci
+    lotto = {"title": rp.get("title") or "Il riepilogo di GERICO", "text": rp["text"]}
+    for modello in traduci.modelli():
+        try:
+            out = traduci.traduci_lotto(lotto, "en", modello)
+        except Exception as e:  # noqa: BLE001  un modello che non va: si prova il successivo
+            print(f"  traduzione con {modello} non riuscita: {type(e).__name__}: {str(e)[:160]}")
+            continue
+        testo = (out.get("text") or "").strip()
+        # la traduzione deve avere tutti i paragrafi e una lunghezza simile all'originale, se no si prova un altro modello
+        if testo and len(paragraphs(testo)) == len(paragraphs(rp["text"])) and 0.6 < len(testo) / max(1, len(rp["text"])) < 1.5:
+            c = {"source": rp.get("asOf"), "date": rp.get("date"), "asOf": adesso(), "model": modello,
+                 "title": (out.get("title") or "GERICO's briefing").strip(), "text": testo}
+            os.makedirs(os.path.dirname(cache), exist_ok=True)
+            with open(cache, "w", encoding="utf-8") as f:
+                json.dump(c, f, ensure_ascii=False, indent=1)
+                f.write("\n")
+            return c
+        print(f"  traduzione con {modello} incompleta: provo il modello dopo")
+    return None
+
+
+def inglese(site, rp, old_en, key, np, sf):
+    """L'audio inglese, per chi legge il sito in inglese: il riepilogo tradotto e letto dalla stessa voce (Kokoro di
+    riserva, con una voce britannica). Senza chiave di Gemini non si traduce: chi legge in inglese ascolta l'italiano."""
+    if not key:
+        return None
+    dest = os.path.join(site, "audio", "riepilogo-en.m4a")
+    want = gemini_id(GEMINI_VOICE, "en")
+    same_text = old_en.get("source") == rp.get("asOf") and os.path.exists(dest)
+    if same_text and old_en.get("voiceId") == want:
+        print("L'audio inglese è già quello del riepilogo attuale.")
+        return old_en
+    t0 = time.time()
+    tr = traduzione(rp, os.path.join(site, "audio", "riepilogo-en.json"))
+    if not tr:
+        print("::warning::audio: il riepilogo non si è potuto tradurre in inglese; chi legge in inglese ascolta l'italiano")
+        return old_en if same_text else None
+    paras = paragraphs(tr["text"])
+    audio = None
+    try:
+        audio, rate, marks = gemini_audio(paras, key, GEMINI_VOICE, np, sf, lingua="en")
+        label, vid, chain = GEMINI_VOICE + ", Google synthetic voice (Gemini)", want, GEMINI_CHAIN
+    except Exception as e:  # noqa: BLE001
+        print(f"::warning::audio: Gemini non ha letto il riepilogo inglese ({type(e).__name__}: {e}); legge Kokoro")
+        if same_text and old_en.get("voiceId") == VOICE_ID_EN:
+            return old_en
+    if audio is None:
+        audio, rate, marks = kokoro_audio(paras, np, "en")
+        label, vid, chain = "George, Kokoro speech synthesis", VOICE_ID_EN, CHAIN
+    durata, tag = pubblica(audio, rate, chain, dest, np, sf)
+    print(f"::notice::audio: riepilogo inglese letto da {label} in {durata} s di audio, in {time.time() - t0:.0f} s")
+    return {"asOf": adesso(), "source": rp.get("asOf"), "date": rp.get("date"), "title": tr["title"], "duration": durata,
+            "src": "audio/riepilogo-en.m4a?v=" + tag, "voice": label, "voiceId": vid}
+
+
 def main(site):
     data = os.path.join(site, "data")
     try:
@@ -545,46 +676,21 @@ def main(site):
             old = json.load(f)
     except (OSError, ValueError):
         old = {}
-    dest = os.path.join(site, "audio", "riepilogo.m4a")
     key = os.environ.get("GEMINI_API_KEY", "").strip()
-    want = gemini_id(GEMINI_VOICE) if key else VOICE_ID
-    same_text = old.get("source") == rp.get("asOf") and os.path.exists(dest)
-    if same_text and old.get("voiceId") == want:
-        print("L'audio è già quello del riepilogo attuale.")
-        return
     import numpy as np
     import soundfile as sf
-    t0 = time.time()
-    paras = paragraphs(rp["text"])
-    audio = None
-    if key:
-        try:
-            audio, rate, marks = gemini_audio(paras, key, GEMINI_VOICE, np, sf)
-            label, vid, chain = GEMINI_VOICE + ", voce sintetica di Google (Gemini)", gemini_id(GEMINI_VOICE), GEMINI_CHAIN
-        except Exception as e:  # noqa: BLE001  qualunque errore del servizio: legge la voce di riserva
-            print(f"::warning::audio: Gemini non ha letto il riepilogo ({type(e).__name__}: {e}); legge Kokoro")
-            if same_text and old.get("voiceId") == VOICE_ID:
-                print("L'audio di riserva per questo riepilogo c'è già: resta quello.")
-                return
-    if audio is None:
-        audio, rate, marks = kokoro_audio(paras, np)
-        label, vid, chain = "Nicola, sintesi vocale Kokoro", VOICE_ID, CHAIN
-    # solo la voce, con la sua catena e a 48 kHz: niente sigla e niente musica sotto (11 novembre 2026); un attimo di
-    # silenzio prima e dopo. Il montaggio con la musica resta in monta(), se un giorno servisse di nuovo.
-    import sigla
-    voce = filtro(audio, rate, chain, np, sf, out=sigla.SR)
-    pausa = np.zeros(int(0.3 * sigla.SR), dtype=voce.dtype)
-    audio, rate = np.concatenate([pausa, voce, pausa]), sigla.SR
-    os.makedirs(os.path.join(site, "audio"), exist_ok=True)
-    encode(audio, rate, dest, FINALE, np, sf)
-    with open(dest, "rb") as f:
-        tag = hashlib.sha256(f.read()).hexdigest()[:10]
-    info = {"asOf": datetime.now(ZoneInfo("Europe/Rome")).isoformat(timespec="seconds"), "source": rp.get("asOf"),
-            "date": rp.get("date"), "title": rp.get("title") or "Il riepilogo di GERICO",
-            "duration": round(len(audio) / rate), "src": "audio/riepilogo.m4a?v=" + tag, "voice": label, "voiceId": vid}
-    with open(os.path.join(data, "audio.json"), "w", encoding="utf-8") as f:
-        json.dump(info, f, ensure_ascii=False, separators=(",", ":"))
-    print(f"::notice::audio.json: riepilogo letto da {label} in {info['duration']} s di audio, {os.path.getsize(dest) // 1024} KB, in {time.time() - t0:.0f} s")
+    info = italiano(site, rp, old, key, np, sf)
+    # l'inglese dopo l'italiano e per conto suo: se non riesce, l'audio italiano esce lo stesso
+    try:
+        en = inglese(site, rp, old.get("en") or {}, key, np, sf)
+    except Exception as e:  # noqa: BLE001
+        print(f"::warning::audio inglese: {type(e).__name__}: {e}")
+        en = old.get("en") if (old.get("en") or {}).get("source") == rp.get("asOf") else None
+    if en:
+        info["en"] = en
+    if info and info != old:
+        with open(os.path.join(data, "audio.json"), "w", encoding="utf-8") as f:
+            json.dump(info, f, ensure_ascii=False, separators=(",", ":"))
 
 
 def prove(site):

@@ -6,10 +6,32 @@
   "summary": "La commissione elettorale del Sud Sudan sposta le elezioni presidenziali e parlamentari dal 22 dicembre 2026 all'11 febbraio 2027. Non ha dato motivi del rinvio.",
   "article": "La Commissione elettorale nazionale del Sud Sudan ha spostato le elezioni presidenziali e parlamentari all'11 febbraio 2027. Prima erano fissate per il 22 dicembre 2026, riferiscono Reuters e Al Jazeera, che cita l'agenzia AFP. Il voto sarebbe il primo dall'indipendenza del 2011.\n\nSecondo Al Jazeera, la registrazione degli elettori va dal 14 al 28 novembre e la campagna elettorale dal 27 dicembre al 9 febbraio. La commissione, presieduta da Gabriel Bol Deng, non ha dato spiegazioni del rinvio, scrivono entrambe le testate.\n\nLa commissaria e portavoce Josephine Achiro Fortelo ha detto a Reuters che il calendario nasce da «una consultazione approfondita con le parti interessate». A settembre la Commissione Onu sui diritti umani in Sud Sudan aveva detto, riferisce Reuters, che nel paese mancano le garanzie e le condizioni per elezioni pacifiche e credibili.\n\nIl voto era previsto in origine per il 2022 ed è stato rinviato almeno tre volte, secondo Al Jazeera. Reuters ricorda che il paese è formalmente in pace dall'accordo del 2018, che chiuse cinque anni di conflitto, ma che gli scontri tra comunità rivali continuano. Al Jazeera cita le tensioni etniche e politiche e gli scontri tra forze governative e seguaci dell'ex vicepresidente Riek Machar. In ottobre la presidente della Commissione Onu Yasmin Sooka aveva parlato di «colpo di stato costituzionale» attraverso riforme legislative, dopo lo scioglimento del governo di unità nazionale da parte del presidente Kiir.",
   "facts": [
-    {"text": "La commissione elettorale sposta il voto presidenziale e parlamentare dal 22 dicembre 2026 all'11 febbraio 2027.", "who": ["Reuters", "Al Jazeera"]},
-    {"text": "La commissione non ha dato motivi del rinvio.", "who": ["Reuters", "Al Jazeera"]},
-    {"text": "A settembre la Commissione Onu sui diritti umani aveva detto che mancano le condizioni per un voto pacifico e credibile.", "who": ["Reuters"]},
-    {"text": "Il voto, previsto in origine per il 2022, è stato rinviato almeno tre volte.", "who": ["Al Jazeera"]}
+    {
+      "text": "La commissione elettorale sposta il voto presidenziale e parlamentare dal 22 dicembre 2026 all'11 febbraio 2027.",
+      "who": [
+        "Reuters",
+        "Al Jazeera"
+      ]
+    },
+    {
+      "text": "La commissione non ha dato motivi del rinvio.",
+      "who": [
+        "Reuters",
+        "Al Jazeera"
+      ]
+    },
+    {
+      "text": "A settembre la Commissione Onu sui diritti umani aveva detto che mancano le condizioni per un voto pacifico e credibile.",
+      "who": [
+        "Reuters"
+      ]
+    },
+    {
+      "text": "Il voto, previsto in origine per il 2022, è stato rinviato almeno tre volte.",
+      "who": [
+        "Al Jazeera"
+      ]
+    }
   ],
   "view": "È accertata la nuova data; le ragioni non sono state dichiarate. Le fonti collegano il contesto alle tensioni politiche e ai combattimenti, ma il nesso con il rinvio non è stato indicato dalla commissione.\n\nConta perché sarebbe il primo voto nazionale del paese. Da guardare: la registrazione degli elettori fino al 28 novembre, le reazioni dell'opposizione e dell'Onu.",
   "open": [
@@ -18,19 +40,51 @@
     "Il calendario dell'11 febbraio sarà rispettato?"
   ],
   "sources": [
-    {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/south-sudan-delays-election-to-february-11-2027", "angle": "Dichiarazione della portavoce della commissione e posizione dell'Onu di settembre.", "at": "2026-11-14T09:32:00+01:00"},
-    {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/14/south-sudan-postpones-first-ever-national-elections-until-february", "angle": "Calendario di registrazione e campagna, precedenti rinvii, tensioni e critiche dell'Onu.", "date": "2026-11-14"}
+    {
+      "name": "Reuters",
+      "kind": "agenzia",
+      "country": "Regno Unito",
+      "area": "Europa",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/14/south-sudan-delays-election-to-february-11-2027",
+      "angle": "Dichiarazione della portavoce della commissione e posizione dell'Onu di settembre.",
+      "at": "2026-11-14T09:32:00+01:00"
+    },
+    {
+      "name": "Al Jazeera",
+      "kind": "tv",
+      "country": "Qatar",
+      "area": "Medio Oriente",
+      "url": "https://www.aljazeera.com/news/2026/11/14/south-sudan-postpones-first-ever-national-elections-until-february",
+      "angle": "Calendario di registrazione e campagna, precedenti rinvii, tensioni e critiche dell'Onu.",
+      "date": "2026-11-14"
+    }
   ],
   "firstSeen": "2026-11-14T13:21:00+01:00",
   "updated": "2026-11-14T13:21:00+01:00",
   "change": "",
-  "tags": ["Sud Sudan", "Africa", "Elezioni"],
+  "tags": [
+    "Sud Sudan",
+    "Africa",
+    "Elezioni"
+  ],
   "themes": [],
-  "places": ["SS"],
-  "city": {"name": "Giuba", "lat": 4.85, "lon": 31.58},
-  "photo": {"wiki": "it", "title": "Giuba"},
+  "places": [
+    "SS"
+  ],
+  "city": {
+    "name": "Giuba",
+    "lat": 4.85,
+    "lon": 31.58
+  },
+  "photo": {
+    "wiki": "en",
+    "title": "Juba"
+  },
   "history": [
-    {"at": "2026-11-14T13:21:00+01:00", "text": "Prima notizia: elezioni rinviate all'11 febbraio 2027."}
+    {
+      "at": "2026-11-14T13:21:00+01:00",
+      "text": "Prima notizia: elezioni rinviate all'11 febbraio 2027."
+    }
   ],
   "divergences": [],
   "notCovered": []

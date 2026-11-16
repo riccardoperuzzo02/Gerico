@@ -243,6 +243,14 @@ def main(dump, out):
                    "themes": temi_caldi(dump, [x for x in live if x.get("scope") != "paese"]), "stories": live, "archive": archive}
     markets = load(os.path.join(dump, "markets", "snapshot.json"))
     agenda = load(os.path.join(dump, "agenda", "today.json"))
+    # nell'agenda atteso, precedente ed effettivo sono numeri: una parola («negativo», «in calo») sul sito non si confronta
+    # con niente e sembrerebbe un dato; si toglie e resta il posto vuoto, che il giro dopo riempie con il numero
+    for it in (agenda or {}).get("items") or []:
+        for k in ("expected", "previous", "actual"):
+            v = it.get(k) if isinstance(it, dict) else None
+            if isinstance(v, str) and v.strip() and not re.search(r"\d", v):
+                print(f"  agenda.json: {k} «{v}» di «{it.get('event')}» non è un numero, lo tolgo")
+                it[k] = ""
     terminal = load(os.path.join(dump, "terminal", "snapshot.json"))
     if terminal is None and markets is not None:
         terminal = derive_terminal(markets)

@@ -31,12 +31,13 @@ worker/admin.html     la pagina del gestionale, che il Worker dà solo all'ammin
 La redazione gira su GitHub Actions, nel workflow «Redazione» (`.github/workflows/redazione.yml`): ogni giorno alle 7:18
 l'edizione completa e alle 13:18 l'aggiornamento di metà giornata, alle 9:47 le notizie nazionali di Stati Uniti, Regno
 Unito, Francia, Germania e Spagna (storie con scope «paese», che vede solo chi ha scelto quel paese), nei giorni feriali alle
-12:10 e alle 15:40 i risultati dei dati usciti nell'agenda del Terminal (`agenda.md`, solo `actual`) e alle
+12:10 e alle 15:40 l'agenda del Terminal (`agenda.md`: completa gli eventi del giorno con il calendario di Forex Factory in
+`site/data/calendario.json` e scrive i risultati usciti in `actual`, solo numeri) e alle
 18:45 le chiusure delle Borse europee. Ogni giro avvia Claude Code con il suo testo in `redazione/` (`notizie.md`,
 `paesi.md`, `agenda.md`, `chiusure.md`, `titoli.md`): legge le
 testate e scrive il database, che è la cartella `redazione/db`, un file JSON per documento (`stories/<id>.json`,
 `markets/snapshot.json`, `agenda/today.json`, `meta/status.json`, ...). Poi `python3 scripts/redazione.py pubblica <giro>`
-cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (`check_dump.py`, `export.py`, `brevi.py`,
+cancella le storie archiviate da più di 7 giorni, esegue gli script di sempre (`check_dump.py`, `foto.py`, `export.py`, `brevi.py`,
 `riepilogo.py`, `titoli.py`, `share_pages.py`, `check_site.py`), scrive l'esito in `meta/status.json` (`lastPublish` o
 `publishError`) e fa commit e push su main. Se è cambiato il riepilogo, avvia «Dati del Terminal», che lo legge con la voce
 sintetica di Gemini (segreto `GEMINI_API_KEY`, livello gratuito; la voce si sceglie con la variabile `GERICO_VOCE` dopo il

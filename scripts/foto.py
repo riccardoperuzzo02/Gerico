@@ -4,12 +4,17 @@
 Uso:
     python3 scripts/foto.py <cartella_db> <cartella_sito>
 
-La redazione scrive in una storia il campo photo = {"wiki": "it" | "en", "title": "Casa Bianca"}: il titolo della voce di
-Wikipedia di un luogo, un edificio, un'istituzione o un oggetto che identifica la notizia. Mai una persona.
-Per ogni storia live con photo lo script prende l'immagine principale di quella voce, solo se sta su Wikimedia Commons con
-una licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio), la salva in <sito>/img/foto/<id>.jpg (larga 1280 px) e scrive
-accanto <id>.json con autore, licenza e pagina del file: export.py li mette nella storia, il sito li mostra sotto la foto.
-Se qualcosa non torna (voce che non c'è, immagine non libera, file troppo piccolo, rete giù) la storia resta con la mappa.
+La redazione scrive in una storia il campo photo = {"wiki": "it", "title": "Casa Bianca", "alt": ["Washington"]}: il
+titolo della voce di Wikipedia di un luogo, un edificio, un'istituzione o un oggetto che identifica la notizia, nella lingua
+della voce ("it", "en", "fr", "es", "de"...). Mai una persona. alt, facoltativo, sono voci di riserva (di solito la città),
+come titoli nella stessa lingua oppure {"wiki", "title"}; dopo di loro si prova anche city.name della storia.
+Per ogni storia live con photo lo script prende la foto della voce: l'immagine principale, se è una foto, poi quella di
+Wikidata (P18), poi l'immagine principale della stessa voce su Wikipedia in inglese, italiano, francese, spagnolo e tedesco.
+Vale la prima che sta su Wikimedia Commons con una licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio, sola
+attribuzione) ed è grande abbastanza; la salva in <sito>/img/foto/<id>.jpg (larga 1280 px) e scrive accanto <id>.json con
+autore, licenza e pagina del file: export.py li mette nella storia, il sito li mostra sotto la foto.
+Se nessuna voce va bene (voce che non c'è, solo stemmi o loghi, immagine non libera o troppo piccola, rete giù) la storia
+resta con la mappa.
 Le foto delle storie che non sono più nel database si cancellano.
 """
 import html
@@ -23,7 +28,11 @@ import urllib.parse
 import urllib.request
 
 UA = "GericoFoto/1.0 (https://gerico.financialnews.workers.dev/come-funziona.html; foto dei luoghi delle notizie) python-urllib"
-LIBERE = re.compile(r"^(cc[ -]?by(-sa)?([ -]\d(\.\d)?)?( [a-z]{2,3})?|cc[ -]?0( 1\.0)?|cc0|public domain|pd([ -].*)?)$", re.I)
+LIBERE = re.compile(r"^(cc[ -]?by(-sa)?([ -]\d(\.\d)?)?([ -][a-z]{2,3})?([ -]migrated)?|cc[ -]?0( 1\.0)?|cc0|public domain( mark)?|pd([ -].*)?"
+                    r"|attribution|copyrighted free use|no restrictions)$", re.I)
+LINGUA = re.compile(r"^[a-z]{2,3}$")
+# dove cercare la stessa voce quando quella scelta non ha una foto
+ALTRE = ["en", "it", "fr", "es", "de"]
 LARGA = 1280
 FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
 
@@ -57,30 +66,8 @@ def pulito(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def trova(wiki, title):
-    """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché)."""
-    host = ("it" if wiki not in ("it", "en") else wiki) + ".wikipedia.org"
-    d = api(host, action="query", prop="pageimages|pageprops", piprop="name", ppprop="wikibase_item", titles=title, redirects="1")
-    pages = (d.get("query") or {}).get("pages") or []
-    nome = pages[0].get("pageimage") if pages and not pages[0].get("missing") else None
-    # mai la foto di una persona: se la voce è di un essere umano (Wikidata: istanza di Q5) non si prende niente
-    item = ((pages[0].get("pageprops") or {}).get("wikibase_item") if pages else None)
-    if not item:
-        return None, "la voce non ha una scheda Wikidata: non si può controllare che non sia una persona"
-    c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P31")
-    tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in (c.get("claims") or {}).get("P31") or []]
-    if "Q5" in tipi:
-        return None, "la voce è di una persona: le foto delle persone non si usano"
-    # se l'immagine principale della voce è uno stemma o una bandiera (un disegno), si prova quella di Wikidata (P18)
-    if not nome or not FOTO.search(nome):
-        c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P18")
-        p18 = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in (c.get("claims") or {}).get("P18") or []]
-        p18 = [x for x in p18 if isinstance(x, str) and FOTO.search(x)]
-        if not p18:
-            return None, f"la voce non ha una foto (immagine principale: {nome or 'nessuna'})"
-        nome = p18[0]
-    if not pages or pages[0].get("missing"):
-        return None, "la voce non c'è"
+def file_ok(nome):
+    """(indirizzo a 1280 px, crediti) del file di Commons se è libero e grande abbastanza, altrimenti (None, perché)."""
     d = api("commons.wikimedia.org", action="query", prop="imageinfo", iiprop="url|size|mime|extmetadata", iiurlwidth=str(LARGA), titles="File:" + nome)
     pages = (d.get("query") or {}).get("pages") or []
     if not pages or pages[0].get("missing") or not pages[0].get("imageinfo"):
@@ -95,6 +82,80 @@ def trova(wiki, title):
     autore = pulito((meta.get("Artist") or {}).get("value"))[:80] or "autore non indicato"
     return ii.get("thumburl") or ii.get("url"), {"author": autore, "license": licenza, "page": ii.get("descriptionurl") or "", "file": nome,
                                                  "w": ii.get("thumbwidth") or ii.get("width"), "h": ii.get("thumbheight") or ii.get("height")}
+
+
+def trova(wiki, title):
+    """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché)."""
+    host = (wiki if isinstance(wiki, str) and LINGUA.match(wiki) else "it") + ".wikipedia.org"
+    d = api(host, action="query", prop="pageimages|pageprops", piprop="name", ppprop="wikibase_item", titles=title, redirects="1")
+    pages = (d.get("query") or {}).get("pages") or []
+    if not pages or pages[0].get("missing"):
+        return None, f"la voce non c'è su {host}"
+    # mai la foto di una persona: se la voce è di un essere umano (Wikidata: istanza di Q5) non si prende niente
+    item = (pages[0].get("pageprops") or {}).get("wikibase_item")
+    if not item:
+        return None, "la voce non ha una scheda Wikidata: non si può controllare che non sia una persona"
+    c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P31")
+    tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in (c.get("claims") or {}).get("P31") or []]
+    if "Q5" in tipi:
+        return None, "la voce è di una persona: le foto delle persone non si usano"
+    # le foto candidate, in ordine: l'immagine principale della voce se è una foto (non uno stemma, una bandiera o un logo),
+    # quella di Wikidata (P18), poi l'immagine principale della stessa voce nelle altre Wikipedia
+    nomi, visti, perche = [], set(), "nessuna foto"
+    principale = pages[0].get("pageimage")
+    if principale and FOTO.search(principale):
+        nomi.append(principale)
+    c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P18")
+    nomi += [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in (c.get("claims") or {}).get("P18") or []]
+
+    def prova(lista):
+        nonlocal perche
+        for nome in lista:
+            if not isinstance(nome, str) or not FOTO.search(nome) or nome in visti:
+                continue
+            visti.add(nome)
+            url, info = file_ok(nome)
+            if url:
+                return url, info
+            perche = f"{nome}: {info}"
+        return None
+
+    r = prova(nomi)
+    if r:
+        return r
+    e = api("www.wikidata.org", action="wbgetentities", ids=item, props="sitelinks")
+    links = (((e.get("entities") or {}).get(item) or {}).get("sitelinks") or {})
+    for lang in ALTRE:
+        t = (links.get(lang + "wiki") or {}).get("title")
+        if not t or (lang + ".wikipedia.org" == host):
+            continue
+        d = api(lang + ".wikipedia.org", action="query", prop="pageimages", piprop="name", titles=t)
+        pp = (d.get("query") or {}).get("pages") or []
+        r = prova([pp[0].get("pageimage")] if pp else [])
+        if r:
+            return r
+    return None, f"la voce non ha una foto utilizzabile (immagine principale: {principale or 'nessuna'}; ultima prova: {perche})"
+
+
+def voci(s, ph):
+    """Le voci da provare per una storia, in ordine: photo, poi photo.alt, poi la città della storia (city.name)."""
+    wiki = ph.get("wiki") if isinstance(ph.get("wiki"), str) and LINGUA.match(ph.get("wiki")) else "it"
+    out = [(wiki, ph["title"].strip())]
+    alt = ph.get("alt")
+    for a in (alt if isinstance(alt, list) else [alt] if alt else []):
+        if isinstance(a, str) and a.strip():
+            out.append((wiki, a.strip()))
+        elif isinstance(a, dict) and isinstance(a.get("title"), str) and a["title"].strip():
+            w = a.get("wiki") if isinstance(a.get("wiki"), str) and LINGUA.match(a.get("wiki")) else wiki
+            out.append((w, a["title"].strip()))
+    city = s.get("city")
+    if isinstance(city, dict) and isinstance(city.get("name"), str) and city["name"].strip():
+        out.append(("it", city["name"].strip()))
+    uniche = []
+    for v in out:
+        if v not in uniche:
+            uniche.append(v)
+    return uniche
 
 
 def main(db, site):
@@ -117,14 +178,27 @@ def main(db, site):
         chiave = (ph.get("wiki") or "it") + ":" + ph["title"].strip()
         side = os.path.join(cartella, sid + ".json")
         try:
-            if json.load(open(side, encoding="utf-8")).get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")):
+            prima = json.load(open(side, encoding="utf-8"))
+            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")):
                 continue   # già presa
-        except (OSError, ValueError):
+            # già cercata da poco senza trovare niente: si riprova dopo 12 ore, non a ogni pubblicazione
+            if prima.get("key") == chiave and prima.get("miss") and time.time() - float(prima.get("at") or 0) < 12 * 3600:
+                saltate.append(f"{sid}: già cercata alle {time.strftime('%H:%M', time.gmtime(float(prima['at'])))} UTC senza trovare una foto")
+                continue
+        except (OSError, ValueError, TypeError):
             pass
         try:
-            url, info = trova(ph.get("wiki") or "it", ph["title"].strip())
+            url, info, motivi = None, None, []
+            for wiki, titolo in voci(s, ph):
+                url, info = trova(wiki, titolo)
+                if url:
+                    break
+                motivi.append(f"{wiki}:{titolo} → {info}")
             if not url:
-                saltate.append(f"{sid}: {info}")
+                saltate.append(f"{sid}: " + " | ".join(motivi))
+                with open(side, "w", encoding="utf-8") as f:
+                    json.dump({"key": chiave, "miss": True, "at": int(time.time()), "why": motivi[-1:]}, f, ensure_ascii=False)
+                    f.write("\n")
                 continue
             data = get(url, raw=True)
             if len(data) < 20000 or not (data[:3] == b"\xff\xd8\xff" or data[:8] == b"\x89PNG\r\n\x1a\n" or data[:4] == b"RIFF"):
@@ -132,7 +206,7 @@ def main(db, site):
                 continue
             with open(os.path.join(cartella, sid + ".jpg"), "wb") as f:
                 f.write(data)
-            info.update(key=chiave, title=ph["title"].strip(), bytes=len(data))
+            info.update(key=chiave, title=titolo, bytes=len(data))
             with open(side, "w", encoding="utf-8") as f:
                 json.dump(info, f, ensure_ascii=False, indent=1)
                 f.write("\n")

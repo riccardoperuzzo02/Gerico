@@ -361,6 +361,31 @@ def cmd_controlla(db=DB, quiet=False):
                 problems.append(f"agenda/today: «{it.get('event')}» è ad alto impatto e non ha l'orario HH:MM")
             elif t and not re.match(r"^\d{2}:\d{2}$", t):
                 problems.append(f"agenda/today: orario «{t}» di «{it.get('event')}» non è HH:MM")
+            for campo in ("expected", "previous", "actual"):
+                v = str(it.get(campo) or "").strip()
+                if v and not re.search(r"\d", v):
+                    problems.append(f"agenda/today: {campo} «{v}» di «{it.get('event')}» non è un numero "
+                                    "(solo il numero con la sua unità, oppure vuoto)")
+            if len(str(it.get("event") or "")) > 65:
+                problems.append(f"agenda/today: il nome «{str(it.get('event'))[:50]}…» è troppo lungo "
+                                "(solo il nome del dato, senza commenti)")
+        # gli eventi ad alto impatto del calendario di Forex Factory devono esserci (stessa valuta, orario entro 5 minuti)
+        oggi_iso = now_rome().date().isoformat()
+        cal = load(os.path.join(SITE, "data", "calendario.json"), {}) or {}
+        if str(agenda.get("date") or "")[:10] == oggi_iso and isinstance(cal.get("items"), list):
+            def minuti(t):
+                m = re.match(r"^(\d{1,2}):(\d{2})$", str(t or ""))
+                return int(m.group(1)) * 60 + int(m.group(2)) if m else None
+            mie = [(str(it.get("currency") or "").upper(), minuti(it.get("time"))) for it in agenda.get("items") or []
+                   if it.get("impact") == "alto"]
+            for x in cal["items"]:
+                if not isinstance(x, dict) or x.get("date") != oggi_iso or x.get("impact") != "alto":
+                    continue
+                m = minuti(x.get("time"))
+                if m is not None and not any(c == x.get("currency") and mm is not None and abs(mm - m) <= 5 for c, mm in mie):
+                    problems.append(f"agenda/today: manca «{x.get('title')}» ({x.get('currency')}, {x.get('time')}), "
+                                    "ad alto impatto nel calendario di Forex Factory (site/data/calendario.json): "
+                                    "aggiungilo, o segna impact \"alto\" se c'è già")
         check_time(agenda.get("asOf"), "agenda/today.asOf", problems)
 
     brevi = load(os.path.join(db, "brevi", "today.json"))

@@ -905,11 +905,20 @@ G.page("terminal", async function (P) {
       exp: it.expected ? G.numText(it.expected) : "", prev: it.previous ? G.numText(it.previous) : "", act: it.actual ? G.numText(it.actual) : "",
       imp: ["alto", "medio", "basso"].includes(it.impact) ? it.impact : "" }));
     const own = rows.length;
+    // lo stesso evento nelle due liste: stessa valuta, orario entro 5 minuti e stesso tipo (inflazione, PIL, discorso...);
+    // se in quel momento c'è un evento solo per parte, uno dei due nomi non si riconosce e l'impatto è lo stesso, è lui anche
+    // con nomi diversi (meglio una riga in più che un dato importante nascosto sotto un altro)
+    const kind = (t) => G.eventoInfo(t, "").kind;
+    const slot = (list, cur, m) => list.filter((r) => r.cur === cur && hmMin(r.time) !== null && Math.abs(hmMin(r.time) - m) <= 5);
     ffToday.forEach((it) => {
       const m = hmMin(it.time);
-      const twin = m === null ? null : rows.slice(0, own).find((r) => r.cur === it.currency && hmMin(r.time) !== null && Math.abs(hmMin(r.time) - m) <= 5);
-      if (twin) { if (!twin.exp && !twin.prev) { twin.exp = it.forecast || ""; twin.prev = it.previous || ""; twin.fcl = "fc"; } if (it.impact === "alto") twin.imp = "alto"; return; }
-      rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, exp: it.forecast || "", prev: it.previous || "", fcl: "fc", imp: it.impact });
+      const mine = m === null ? [] : slot(rows.slice(0, own), it.currency, m);
+      const theirs = m === null ? [] : slot(ffToday.map((x) => ({ cur: x.currency, time: x.time })), it.currency, m);
+      const k = kind(it.title), k0 = mine.length === 1 ? kind(mine[0].ev) : "";
+      const twin = mine.find((r) => kind(r.ev) === k) ||
+        (mine.length === 1 && theirs.length === 1 && (k === "generico" || k0 === "generico") && (k === k0 || mine[0].imp === it.impact) ? mine[0] : null);
+      if (twin) { if (!twin.exp && !twin.prev) { twin.exp = G.ffNum(it.forecast); twin.prev = G.ffNum(it.previous); twin.fcl = "fc"; } if (it.impact === "alto") twin.imp = "alto"; return; }
+      rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, exp: G.ffNum(it.forecast), prev: G.ffNum(it.previous), fcl: "fc", imp: it.impact });
     });
     rows.sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
     // il prossimo evento ad alto impatto di oggi (si aggiorna ogni 30 secondi)
@@ -942,7 +951,7 @@ G.page("terminal", async function (P) {
       const week = ffWeek.map((it) => {
         let day = "";
         if (it.date !== last) { last = it.date; day = '<li class="t-day">' + esc(G.cap(G.weekday(it.date + "T12:00:00Z")) + " " + G.dayOnly(it.date)) + "</li>"; }
-        return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, exp: it.forecast || "", prev: it.previous || "", fcl: "fc", imp: it.impact });
+        return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, exp: G.ffNum(it.forecast), prev: G.ffNum(it.previous), fcl: "fc", imp: it.impact });
       }).join("");
       html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
     }

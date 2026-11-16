@@ -195,9 +195,17 @@
     let n = parseFloat(s);
     if (!isFinite(n)) return null;
     const rest = String(v).replace(/\s/g, "").slice(String(v).replace(/\s/g, "").indexOf(m[0]) + m[0].length);
-    const mult = /^([KkMmBbTt])(?![a-z])/.exec(rest);
-    if (mult) n *= { k: 1e3, m: 1e6, b: 1e9, t: 1e12 }[mult[1].toLowerCase()];
+    const mult = /^(mila|mln|mld|[KkMmBbTt])(?![a-z])/i.exec(rest);
+    if (mult) n *= { k: 1e3, m: 1e6, b: 1e9, t: 1e12, mila: 1e3, mln: 1e6, mld: 1e9 }[mult[1].toLowerCase()];
     return n;
+  };
+
+  // un numero di Forex Factory (formato inglese: «0.3%», «1,234», «225K», «19.2B») come si scrive in italiano
+  G.ffNum = (v) => {
+    const t = String(v == null ? "" : v).trim();
+    if (!t || G.en) return t;
+    return t.replace(/\d[\d.,]*\d/g, (m) => m.replace(/[.,]/g, (c) => (c === "." ? "," : ".")))
+      .replace(/(\d)K\b/g, "$1 mila").replace(/(\d)M\b/g, "$1 mln").replace(/(\d)B\b/g, "$1 mld");
   };
 
   // risultato contro attese (o, se mancano, contro il precedente): { k: "su" | "giu" | "pari", rif: "att" | "prec" }

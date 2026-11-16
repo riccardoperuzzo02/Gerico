@@ -122,6 +122,10 @@ QUOTES = [
         ("^FTSE", "Ftse 100"), ("^IBEX", "Ibex 35"), ("^SSMI", "Smi"), ("^AEX", "Aex"),
         ("^N225", "Nikkei 225"), ("^HSI", "Hang Seng"), ("000300.SS", "Csi 300"), ("000001.SS", "Shanghai Composite"), ("^KS11", "Kospi"),
         ("^TWII", "Taiex"), ("^NSEI", "Nifty 50"), ("^GSPTSE", "S&P/TSX"), ("^BVSP", "Bovespa")]),
+    # i future sugli indici americani si scambiano quasi tutto il giorno: prima che apra Wall Street dicono come aprirà
+    # (la scheda «Future Usa» in prima pagina e nei grafici del Terminal)
+    ("future", "Future Usa", [
+        ("ES=F", "Future S&P 500"), ("NQ=F", "Future Nasdaq 100"), ("YM=F", "Future Dow Jones")]),
     ("valute", "Valute", [
         ("EURUSD=X", "EUR/USD"), ("GBPUSD=X", "GBP/USD"), ("USDJPY=X", "USD/JPY"), ("AUDUSD=X", "AUD/USD"),
         ("USDCHF=X", "USD/CHF"), ("USDCAD=X", "USD/CAD"), ("NZDUSD=X", "NZD/USD"), ("EURGBP=X", "EUR/GBP"),

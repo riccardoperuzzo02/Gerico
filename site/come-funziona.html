@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261116-7">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261116-8">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -90,7 +90,7 @@
 <p>I prezzi in diretta, se li chiedi, arrivano dal widget gratuito di TradingView e hanno un ritardo diverso per ogni mercato.</p>
 <p>Gli altri pannelli del Terminal li prepara un programma che gira sui server di GitHub, non nel tuo browser: la pagina legge solo i file di GERICO.</p>
 <ul>
-<li><strong>Prezzi e grafici</strong>: da Yahoo Finance, con la libreria yfinance. Una chiusura al giorno per tre mesi; i prezzi possono avere qualche minuto di ritardo.</li>
+<li><strong>Prezzi e grafici</strong>: da Yahoo Finance, con la libreria yfinance. Una chiusura al giorno per tre mesi; i prezzi possono avere qualche minuto di ritardo. Ci sono anche i future sugli indici americani, che si scambiano quasi tutto il giorno e prima dell'apertura dicono come può partire Wall Street. In prima pagina gli stessi prezzi stanno in riquadri divisi per gruppo (Europa, Usa, future, Asia, tassi, valute, materie prime, cripto): verde se sale, rosso se scende, con la variazione e l'ora del dato. Per i rendimenti dei titoli di Stato il rosso vuol dire che salgono, cioè che i prezzi dei titoli scendono. Un tocco su un riquadro apre il suo grafico nel Terminal.</li>
 <li><strong>Macro</strong>: tassi, inflazione e lavoro dalla banca dati FRED della Fed di St. Louis. L'inflazione è la variazione sullo stesso mese dell'anno prima.</li>
 <li><strong>Tono delle notizie</strong>: i titoli di Yahoo Finance degli ultimi tre giorni, letti da FinBERT, un modello per testi finanziari in inglese. Dice se un titolo suona positivo, neutro o negativo per i mercati; sbaglia spesso con ironia e domande e non dice dove andrà un prezzo.</li>
 <li><strong>Calendario economico</strong>: oltre all'agenda di GERICO, il calendario della settimana di Forex Factory, con gli orari in ora italiana: oggi gli eventi ad alto e medio impatto e le festività, poi quelli ad alto impatto dei giorni dopo. In prima pagina, in fondo al riquadro dei mercati, c'è il prossimo dato ad alto impatto.</li>
@@ -156,7 +156,7 @@
 <p>Live prices, if you ask for them, come from TradingView's free widget and have a different delay for each market.</p>
 <p>The other Terminal panels are prepared by a program that runs on GitHub's servers, not in your browser: the page only reads GERICO's files.</p>
 <ul>
-<li><strong>Prices and charts</strong>: from Yahoo Finance, with the yfinance library. One close per day for three months; prices may be a few minutes late.</li>
+<li><strong>Prices and charts</strong>: from Yahoo Finance, with the yfinance library. One close per day for three months; prices may be a few minutes late. They include US index futures, which trade almost around the clock and before the open show how Wall Street may start. On the front page the same prices sit in tiles grouped by market (Europe, US, futures, Asia, rates, currencies, commodities, crypto): green if up, red if down, with the change and the time of the price. For government bond yields red means they are rising, which means bond prices are falling. Tapping a tile opens its chart in the Terminal.</li>
 <li><strong>Macro</strong>: rates, inflation and jobs from the St. Louis Fed's FRED database. Inflation is the change on the same month a year earlier.</li>
 <li><strong>News tone</strong>: Yahoo Finance headlines from the last three days, read by FinBERT, a model for financial texts in English. It says whether a headline sounds positive, neutral or negative for the markets; it often gets irony and questions wrong and does not say where a price will go.</li>
 <li><strong>Economic calendar</strong>: besides GERICO's calendar, the Forex Factory calendar for the week, in Italian time: today's high- and medium-impact events and holidays, then the high-impact events of the following days. On the front page, at the bottom of the markets box, is the next high-impact release.</li>
@@ -186,7 +186,7 @@
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261116-7"></script>
-<script src="assets/js/info.js?v=20261116-7"></script>
+<script src="assets/js/common.js?v=20261116-8"></script>
+<script src="assets/js/info.js?v=20261116-8"></script>
 </body>
 </html>

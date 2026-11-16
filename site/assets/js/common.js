@@ -71,7 +71,7 @@
     "Come funziona": "How it works", "Collabora": "Collaborate", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
     "Grande": "Large", "Molto grande": "Very large", "Lingua": "Language", "Ascolta il riepilogo": "Listen to the briefing",
     "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
-    "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
+    "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Gruppi di mercati": "Market groups", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
     "Nessun consiglio di investimento": "Not investment advice", "Prima pagina": "Front page", "Condividi": "Share",
     "Articoli scritti con l'intelligenza artificiale": "Articles written with artificial intelligence",
     "Carico la storia…": "Loading the story…", "Fonti e temi": "Sources and topics", "Sezioni del Terminal": "Terminal sections",
@@ -109,7 +109,8 @@
     "Argento": "Silver", "Rame": "Copper", "Gas TTF": "TTF gas", "Gas Henry Hub": "Henry Hub gas", "Wti": "WTI",
     "Treasury 3 mesi": "3-month Treasury", "Treasury 5 anni": "5-year Treasury", "Treasury 10 anni": "10-year Treasury",
     "Treasury 30 anni": "30-year Treasury", "Btp 10 anni": "10-year BTP", "Bund 10 anni": "10-year Bund", "Oat 10 anni": "10-year OAT",
-    "Spread Btp-Bund": "BTP-Bund spread", "Borsa Usa": "US stocks", "Dollaro": "Dollar", "Nikkei 225 (Tokyo)": "Nikkei 225 (Tokyo)"
+    "Spread Btp-Bund": "BTP-Bund spread", "Borsa Usa": "US stocks", "Dollaro": "Dollar", "Nikkei 225 (Tokyo)": "Nikkei 225 (Tokyo)",
+    "Future Usa": "US futures", "Future S&P 500": "S&P 500 futures", "Future Nasdaq 100": "Nasdaq 100 futures", "Future Dow Jones": "Dow Jones futures"
   };
   G.tn = (s) => (G.en && s && Object.prototype.hasOwnProperty.call(EN, s) ? EN[s] : s);
   // le scritte fisse delle pagine (intestazione, menu, titoli dei pannelli): in inglese dal dizionario. I blocchi lunghi
@@ -1124,6 +1125,10 @@
     return { name: "plain", src: "" };
   };
   const loaded = new Set();
+  // gli altri script di una pagina, prima del suo (nel Terminal eventi.js, con le spiegazioni dell'agenda): un passaggio
+  // senza ricaricare deve caricarli tutti, o la pagina si ferma a metà
+  const extraScripts = (doc, main) => Array.from(doc.querySelectorAll("script[src]")).map((s) => s.getAttribute("src") || "")
+    .filter((src) => /assets\/js\/[a-z]+\.js/.test(src) && src !== main && src !== MY && !/assets\/js\/common\.js/.test(src));
   const loadScript = (src) => new Promise((res, rej) => {
     if (loaded.has(src)) return res();
     const s = document.createElement("script");
@@ -1204,6 +1209,7 @@
       G.shownBefore = was;
       G.soft = true;
       G.current = pg.name;
+      for (const src of extraScripts(doc, pg.src)) { try { await loadScript(src); } catch (e) { location.href = url; return; } }
       if (G.pages[pg.name]) startPage(pg.name);
       else if (pg.src) { try { await loadScript(pg.src); } catch (e) { location.href = url; return; } }
       else { G.initPrefs(); P.done = Promise.resolve(); }
@@ -1280,7 +1286,7 @@
         if (url.pathname === location.pathname) return;
         fetchPage(url.href).then((text) => {
           const doc = new DOMParser().parseFromString(text, "text/html"), pg = pageOf(doc);
-          if (pg.src && !loaded.has(pg.src)) fetch(new URL(pg.src, url).href, { credentials: "same-origin" }).catch(() => {});
+          [pg.src].concat(extraScripts(doc, pg.src)).forEach((src) => { if (src && !loaded.has(src)) fetch(new URL(src, url).href, { credentials: "same-origin" }).catch(() => {}); });
         }).catch(() => {});
       });
     };

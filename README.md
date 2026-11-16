@@ -76,7 +76,9 @@ di `redazione/`.
 
 I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora
 nelle ore di mercato dei giorni feriali e scarica solo `quotes.json` con yfinance (Yahoo Finance): indici di tutte le Borse
-della mappa, valute, tassi Usa, materie prime e cripto, con apertura, chiusura precedente e Borsa aperta o chiusa. Dura circa un
+della mappa, future sugli indici Usa, valute, tassi Usa, materie prime e cripto, con apertura, chiusura precedente e Borsa
+aperta o chiusa. In prima pagina diventano i riquadri dei mercati, a gruppi (`renderTicker` e `renderSide` in `home.js`); un
+riquadro porta al suo grafico nel Terminal con `terminal?q=<simbolo>`. Dura circa un
 minuto. Lo stesso file lo scrive anche «Dati del Terminal» quattro volte al giorno, che fa anche il resto (macro, SEC, tono delle
 notizie, riepilogo a voce, screener); i due non girano mai insieme. Sul sito i numeri di `quotes.json` hanno la precedenza su
 quelli della redazione quando sono più recenti (`G.withQuotes` e `G.mapItems` in `common.js`): della redazione restano le

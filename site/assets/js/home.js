@@ -662,7 +662,13 @@ G.page("home", async function (P) {
     }
   }
 
-  // ---------- striscia dei mercati: quattro numeri (sei sul computer), tocchi e si apre il Terminal ----------
+  // ---------- mercati: un riquadro colorato per strumento, a gruppi ----------
+  // Schede per gruppo (Principali, Europa, Usa, Future Usa, Asia, Tassi, Valute, Materie prime, Cripto); ogni riquadro
+  // ha l'ultimo prezzo, la freccia con la variazione in punti e in percentuale e l'ora del dato. Verde se sale, rosso
+  // se scende, grigio se è fermo o la variazione non c'è. Per i rendimenti un rialzo vuol dire prezzi dei titoli in
+  // calo: rosso, come nel Terminal. Un tocco apre il grafico dello strumento nel Terminal. Gli stessi riquadri stanno
+  // nella striscia sotto la data (telefono e tablet: scorrono di lato) e nella colonna di destra del computer (due per
+  // riga). La scheda scelta resta per tutta la visita.
   const QPICK = [["indici", "FTSEMIB.MI"], ["indici", "^GSPC"], ["valute", "EURUSD=X"], ["materie", "BZ=F"], ["materie", "GC=F"], ["cripto", "BTC-USD"]];
   // i mercati che segui (i tuoi interessi): prima il primo di ognuno, poi il secondo, poi quelli di sempre, fino a sei
   const QMERC = {
@@ -679,34 +685,157 @@ G.page("home", async function (P) {
     QPICK.forEach(add);
     return out.slice(0, 6);
   };
-  function renderTicker() {
-    const cells = [];
-    let when = "";
-    if (qt && Array.isArray(qt.groups) && G.hoursAgo(qt.asOf) < 30) {
-      qpick().forEach(([g, sym]) => {
-        const grp = qt.groups.find((x) => x.key === g), it = grp && (grp.items || []).find((x) => x.sym === sym);
-        if (!it || typeof it.last !== "number") return;
-        cells.push({ name: it.name, value: G.price(it.sym, it.last, true), mv: typeof it.chg === "number" ? G.pct(it.chg) : "", tone: G.tone(it) });
+  // al massimo sei riquadri per scheda: sul computer sono tre righe da due
+  const MK_TABS = [
+    { k: "principali", n: ["Principali", "Key"] },
+    { k: "europa", n: ["Europa", "Europe"], s: ["FTSEMIB.MI", "^STOXX50E", "^GDAXI", "^FCHI", "^FTSE", "^IBEX"] },
+    { k: "usa", n: ["Usa", "US"], s: ["^GSPC", "^NDX", "^DJI", "^IXIC"] },
+    { k: "future", n: ["Future Usa", "US futures"], s: ["ES=F", "NQ=F", "YM=F"] },
+    { k: "asia", n: ["Asia", "Asia"], s: ["^N225", "^HSI", "000001.SS", "^KS11", "^TWII", "^NSEI"] },
+    { k: "tassi", n: ["Tassi", "Rates"], s: ["^TNX", "^TYX", "^FVX", "^IRX"] },
+    { k: "valute", n: ["Valute", "FX"], s: ["EURUSD=X", "USDJPY=X", "GBPUSD=X", "EURGBP=X", "USDCHF=X", "DX-Y.NYB"] },
+    { k: "materie", n: ["Materie prime", "Commodities"], s: ["BZ=F", "CL=F", "TTF=F", "GC=F", "SI=F", "HG=F"] },
+    { k: "cripto", n: ["Cripto", "Crypto"], s: ["BTC-USD", "ETH-USD"] }
+  ];
+  // i nomi corti dei riquadri (italiano, inglese); gli altri come nel resto del sito
+  const MK_NOME = {
+    "Nasdaq Composite": ["Nasdaq Comp.", "Nasdaq Comp."], "Shanghai Composite": ["Shanghai", "Shanghai"], "Indice del dollaro": ["Indice dollaro", "Dollar index"],
+    "Treasury 10 anni": ["Usa 10 anni", "US 10-year"], "Treasury 30 anni": ["Usa 30 anni", "US 30-year"], "Treasury 5 anni": ["Usa 5 anni", "US 5-year"],
+    "Treasury 3 mesi": ["Usa 3 mesi", "US 3-month"], "Future S&P 500": ["S&P 500 fut.", "S&P 500 fut."], "Future Nasdaq 100": ["Nasdaq 100 fut.", "Nasdaq 100 fut."],
+    "Future Dow Jones": ["Dow Jones fut.", "Dow Jones fut."]
+  };
+  const MK_NOTA = {
+    tassi: ["Rendimenti dei titoli di Stato: rosso quando salgono, perché i prezzi dei titoli scendono.", "Government bond yields: red when they rise, because bond prices fall."],
+    future: ["I future sugli indici si scambiano quasi tutto il giorno: prima dell'apertura dicono come può partire Wall Street.", "Index futures trade almost around the clock: before the open they show how Wall Street may start."]
+  };
+  const RATES = /^\^(TNX|TYX|FVX|IRX)$/, CONT = /=X$|=F$|-USD$|^DX-Y/;
+  // i prezzi del job valgono anche nel fine settimana (sono le chiusure di venerdì, ogni riquadro dice di quando);
+  // oltre quattro giorni il job è fermo e restano i numeri della redazione
+  const qOk = () => !!(qt && Array.isArray(qt.groups) && G.hoursAgo(qt.asOf) < 96);
+  // di quando è il dato: Borsa aperta o strumento che si scambia sempre, l'ora dell'ultimo prezzo; Borsa chiusa,
+  // la chiusura (l'ora se è di oggi, se no il giorno)
+  const mkQuando = (q) => {
+    if (q.stale) return G.L("Fermo al ", "Stuck at ") + G.dayOnly(q.date);
+    const cont = CONT.test(q.sym) || RATES.test(q.sym);
+    if (q.at && G.isToday(q.at)) return (!cont && q.state === "chiusa" ? G.L("Chiusura ", "Close ") : G.L("Ultimo ", "Last ")) + G.hm(q.at);
+    return (cont ? G.L("Ultimo ", "Last ") : G.L("Chiusura ", "Close ")) + G.dayOnly(q.date || q.at);
+  };
+  const mkTileQ = (q) => {
+    if (!q || typeof q.last !== "number" || !isFinite(q.last)) return null;
+    const r = RATES.test(q.sym), d = r ? q.bp : q.chg;
+    const dir = typeof d === "number" && d !== 0 ? Math.sign(d) : 0;
+    const dec = r ? 3 : /=X$/.test(q.sym) && !/JPY/.test(q.sym) ? 4 : 2;
+    return {
+      id: q.sym, name: MK_NOME[q.name] ? MK_NOME[q.name][G.en ? 1 : 0] : G.tn(q.name), value: G.num(q.last, dec) + (r ? "%" : ""),
+      abs: !r && dir && typeof q.prev === "number" ? G.signed(q.last - q.prev, dec) : "", mv: typeof d !== "number" ? "" : r ? G.bps(d) : G.pct(d),
+      dir, tone: !dir ? "" : (r ? -dir : dir) > 0 ? "up" : "down", meta: mkQuando(q), href: "terminal?q=" + encodeURIComponent(q.sym)
+    };
+  };
+  // un numero della redazione (lo spread Btp-Bund, o tutto quando il job dei prezzi è fermo): il valore com'è scritto,
+  // la variazione se c'è, e di quando è dalla sua nota («Chiusura del 13 novembre»)
+  const mkTileM = (it, key) => {
+    const value = G.cleanValue(it.value);
+    if (!value || !/\d/.test(value)) return null;
+    const d = typeof it.bp === "number" ? (key === "obbligazioni" ? -it.bp : it.bp) : it.chg;
+    const dir = typeof it.bp === "number" ? Math.sign(it.bp) : typeof it.chg === "number" ? Math.sign(it.chg) : 0;
+    return {
+      id: "m:" + it.name, name: G.tn(G.shortName(it.name)), value, abs: "", mv: G.move(it), dir, tone: typeof d === "number" && d ? (d > 0 ? "up" : "down") : "",
+      meta: String(it.note || "").split(/[(;,]/)[0].trim(), href: key === "obbligazioni" ? "terminal?q=tassi" : "terminal"
+    };
+  };
+  function mkTabs() {
+    const out = [], nome = (t) => t.n[G.en ? 1 : 0];
+    if (qOk()) {
+      const by = {};
+      qt.groups.forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) by[q.sym] = q; }));
+      // i titoli di Stato europei li scrive la redazione (lo spread Btp-Bund): stanno prima dei Treasury
+      const obb = mk0 && G.hoursAgo(mk0.asOf) < 96 ? ((mk0.classes || []).find((c) => c.key === "obbligazioni") || {}).items || [] : [];
+      MK_TABS.forEach((t) => {
+        let tiles = (t.s || qpick().map((x) => x[1])).map((s) => mkTileQ(by[s]));
+        if (t.k === "tassi") tiles = obb.filter((it) => !/treasury/i.test(it.name || "")).map((it) => mkTileM(it, "obbligazioni")).concat(tiles);
+        tiles = tiles.filter(Boolean).slice(0, 6);
+        if (tiles.length && (t.k !== "principali" || tiles.length >= 3)) out.push({ k: t.k, n: nome(t), tiles });
       });
-      when = G.when(qt.asOf);
     }
-    if (cells.length < 4 && mk) {
-      cells.length = 0;
-      pick().forEach(({ it, key }) => cells.push({ name: G.shortName(it.name), value: G.cleanValue(it.value), mv: G.move(it).replace(/ (pb|bp)$/, ""), tone: G.tone(it, key) }));
-      when = mk.asOf ? G.when(mk.asOf) : "";
+    if (!out.some((t) => t.k === "principali") && mk) {
+      const tiles = pick().map(({ it, key }) => mkTileM(it, key)).filter(Boolean);
+      if (tiles.length) out.unshift({ k: "principali", n: nome(MK_TABS[0]), tiles });
     }
-    if (!cells.length) { $("ticker").hidden = true; return; }
-    $("tk-w").textContent = when ? " · " + when : "";
-    $("tk-row").innerHTML = cells.slice(0, 6).map((c) => '<span class="tk"><span class="tk-n">' + esc(G.tn(c.name)) + '</span><span class="tk-v">' + esc(c.value) +
-      '</span><span class="tk-c ' + (c.tone || "") + '">' + esc(c.mv || "—") + "</span></span>").join("");
+    return out;
+  }
+  let mkSel = (() => { try { return sessionStorage.getItem("gerico.mkTab") || "principali"; } catch (e) { return "principali"; } })();
+  let mkData = [], mkFlash = new Set();
+  // i valori già mostrati: con i prezzi nuovi a pagina aperta il riquadro che cambia lampeggia una volta
+  const mkPrev = new Map();
+  // le schede con i loro riquadri, una volta per ogni aggiornamento; live: prezzi nuovi a pagina aperta
+  function mkCompute(live) {
+    mkData = mkTabs();
+    if (!mkData.some((t) => t.k === mkSel)) mkSel = mkData.length ? mkData[0].k : "principali";
+    mkFlash = new Set();
+    mkData.forEach((t) => t.tiles.forEach((x) => {
+      if (live && mkPrev.has(x.id) && mkPrev.get(x.id) !== x.value) mkFlash.add(x.id);
+      mkPrev.set(x.id, x.value);
+    }));
+  }
+  const mkArrow = (dir) => (dir ? '<svg class="mk-a" viewBox="0 0 10 8" aria-hidden="true" focusable="false"><path d="' + (dir > 0 ? "M5 0l5 8H0z" : "M0 0h10L5 8z") + '"/></svg>' : "");
+  const mkTileHTML = (t, flash) =>
+    '<a class="mk-t' + (t.tone ? " " + t.tone : "") + (flash ? " nuovo" : "") + '" href="' + esc(t.href) + '" data-reveal aria-label="' +
+    esc([t.name + ": " + t.value, t.mv, t.meta].filter(Boolean).join(", ")) + '"><span class="mk-n">' + esc(t.name) + '</span><span class="mk-v">' + esc(t.value) + "</span>" +
+    '<span class="mk-c">' + mkArrow(t.dir) + (t.abs ? '<span class="mk-p">' + esc(t.abs) + "</span>" : "") + "<span>" + esc(t.mv || "—") + "</span></span>" +
+    '<span class="mk-m">' + esc(t.meta || "") + "</span></a>";
+  // una scheda dentro un riquadro dei mercati (la striscia o la colonna di destra); flash: i riquadri cambiati lampeggiano
+  function mkFill(root, flash) {
+    if (!root || !mkData.length) return;
+    const tabs = root.querySelector(".mk-tabs"), row = root.querySelector(".mk-row"), nota = root.querySelector(".mk-nota");
+    const sig = mkData.map((t) => t.k).join(",");
+    if (tabs.dataset.sig !== sig) {
+      tabs.innerHTML = mkData.map((t) => '<button type="button" data-mk="' + t.k + '" aria-pressed="false">' + esc(t.n) + "</button>").join("");
+      tabs.dataset.sig = sig;
+    }
+    tabs.querySelectorAll("[data-mk]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mk === mkSel)));
+    const tab = mkData.find((t) => t.k === mkSel) || mkData[0];
+    // chi stava su un riquadro con la tastiera ci resta, anche se i riquadri si rifanno
+    const fi = Array.prototype.indexOf.call(row.children, document.activeElement);
+    row.innerHTML = tab.tiles.map((t) => mkTileHTML(t, flash && mkFlash.has(t.id))).join("");
+    if (fi >= 0 && row.children[Math.min(fi, row.children.length - 1)]) row.children[Math.min(fi, row.children.length - 1)].focus({ preventScroll: true });
+    const n = MK_NOTA[tab.k];
+    nota.textContent = n ? n[G.en ? 1 : 0] : "";
+    nota.hidden = !n;
+  }
+  function renderTicker(live) {
+    mkCompute(live);
+    if (!mkData.length) { $("ticker").hidden = true; return; }
+    $("ticker").hidden = false;
+    $("tk-w").textContent = qOk() ? " · " + G.when(qt.asOf) : mk && mk.asOf ? " · " + G.when(mk.asOf) : "";
+    mkFill($("ticker"), live);
     $("ticker").classList.remove("sk-tk");
   }
+  // cambio di scheda: in tutti e due i riquadri; la fila torna all'inizio e la scheda scelta resta in vista
+  P.on(document, "click", (e) => {
+    const b = e.target.closest && e.target.closest("[data-mk]");
+    if (!b || b.dataset.mk === mkSel) return;
+    mkSel = b.dataset.mk;
+    try { sessionStorage.setItem("gerico.mkTab", mkSel); } catch (err) { /* niente */ }
+    document.querySelectorAll(".mk").forEach((root) => {
+      if (root.closest("[inert], [aria-hidden='true']")) return;
+      mkFill(root, false);
+      const row = root.querySelector(".mk-row"), tabs = root.querySelector(".mk-tabs");
+      row.scrollLeft = 0;
+      if (!G.reduced()) { row.classList.remove("entra"); void row.offsetWidth; row.classList.add("entra"); }
+      const on = tabs.querySelector('[aria-pressed="true"]');
+      if (on && tabs.scrollWidth > tabs.clientWidth + 1) {
+        const to = Math.max(0, Math.min(tabs.scrollWidth - tabs.clientWidth, on.offsetLeft + on.offsetWidth / 2 - tabs.clientWidth / 2));
+        tabs.scrollTo({ left: to, behavior: G.reduced() ? "auto" : "smooth" });
+      }
+    });
+    if ($("side").querySelector(".mk")) fitSide();
+  });
 
   // ---------- il prossimo dato ad alto impatto, in fondo al riquadro dei mercati ----------
   // da Forex Factory (orari già in ora italiana) e dall'agenda di GERICO: il primo che deve ancora uscire, oggi o nei giorni dopo
   function renderNext() {
-    const el = $("tk-ev");
-    if (!el) return;
+    const els = document.querySelectorAll(".tk-ev");
+    if (!els.length) return;
     const day = G.dayKey(new Date()), now = G.romeNow().hm, list = [];
     // prima l'agenda di GERICO: a parità di orario vince il suo nome in italiano ("Inflazione (mensile)") su quello di Forex Factory ("CPI m/m")
     if (ag && Array.isArray(ag.items) && String(ag.date || "").slice(0, 10) === day) {
@@ -717,14 +846,15 @@ G.page("home", async function (P) {
     }
     list.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
     const n = list[0];
-    if (!n) { el.innerHTML = '<span class="tk-ev-l">' + G.L("Calendario", "Calendar") + "</span> " + G.L("nessun dato ad alto impatto in arrivo questa settimana", "no high-impact release due this week"); return; }
+    const put = (html) => els.forEach((el) => { el.innerHTML = html; });
+    if (!n) { put('<span class="tk-ev-l">' + G.L("Calendario", "Calendar") + "</span> " + G.L("nessun dato ad alto impatto in arrivo questa settimana", "no high-impact release due this week")); return; }
     let when = n.time;
     if (n.date !== day) when = G.weekday(n.date + "T12:00:00Z") + " " + n.time;
     else {
       const [hh, mm] = n.time.split(":").map(Number), mins = hh * 60 + mm - G.romeNow().min;
       if (mins < 60) when = n.time + " (" + (mins <= 0 ? G.L("adesso", "now") : G.L("tra ", "in ") + mins + " min") + ")";
     }
-    el.innerHTML = '<span class="tk-ev-l">' + G.L("Alto impatto", "High impact") + "</span> <b>" + esc(when + " " + n.cur) + "</b> " + esc(n.ev);
+    put('<span class="tk-ev-l">' + G.L("Alto impatto", "High impact") + "</span> <b>" + esc(when + " " + n.cur) + "</b> " + esc(n.ev));
   }
 
   // ---------- mercati: un riquadro con 5 numeri ----------
@@ -754,27 +884,27 @@ G.page("home", async function (P) {
     for (const b of BACKUP) { if (out.length >= 5) break; find(b); }
     return out.slice(0, 5);
   }
+  // la colonna di destra del computer: gli stessi riquadri, due per riga, e sotto il prossimo dato ad alto impatto.
   // live: prezzi nuovi a pagina aperta, il riquadro cambia senza ricomparire
   function renderSide(live) {
-    const rows = pick();
-    if (!rows.length) { $("side").innerHTML = '<div id="side-brevi"></div><div id="side-altro"></div>'; renderSideBrevi(); return; }
-    const tr = rows.map(({ it, key }) => {
-      const mv = typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it);
-      return '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
-        '</td><td class="mv ' + G.tone(it, key) + '">' + esc(mv) + "</td></tr>";
-    }).join("");
-    $("side").innerHTML = '<section class="mk-box' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
+    if (!mkData.length) mkCompute(false);
+    const side = $("side"), box = side.querySelector(".mk-side");
+    if (!mkData.length) { side.innerHTML = '<div id="side-brevi"></div><div id="side-altro"></div>'; renderSideBrevi(); return; }
+    if (live && box) {
+      box.querySelector(".when").textContent = G.mkWhen(mk);
+      mkFill(box, true);
+      renderNext();
+      return;
+    }
+    side.innerHTML = '<section class="mk-box mk mk-side' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
       '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
-      '<table><tbody>' + tr + "</tbody></table>" + gapNote() + '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>" +
+      '<div class="mk-tabs" role="group" aria-label="' + G.L("Gruppi di mercati", "Market groups") + '"></div><div class="mk-row"></div><p class="mk-nota" hidden></p>' +
+      '<a class="tk-ev" href="terminal?q=agenda" data-reveal>&nbsp;</a>' +
+      '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>" +
       '<div id="side-brevi"></div><div id="side-altro"></div>';
+    mkFill(side.querySelector(".mk-side"), live);
+    renderNext();
     renderSideBrevi();
-  }
-  // una classe intera senza dati si dice, invece di lasciare il riquadro più corto senza spiegazione
-  function gapNote() {
-    const want = G.en ? { obbligazioni: "government bonds", valute: "currencies", materie: "commodities" } : { obbligazioni: "i titoli di Stato", valute: "le valute", materie: "le materie prime" };
-    const miss = Object.keys(want).filter((k) => { const c = (mk.classes || []).find((x) => x.key === k); return !c || !(c.items || []).length; }).map((k) => want[k]);
-    if (!miss.length) return "";
-    return '<p class="mk-gap">' + G.L("In questo aggiornamento mancano ", "Missing from this update: ") + esc(miss.length > 1 ? miss.slice(0, -1).join(", ") + G.L(" e ", " and ") + miss[miss.length - 1] : miss[0]) + ".</p>";
   }
 
   // ---------- eventi ----------
@@ -1129,7 +1259,7 @@ G.page("home", async function (P) {
   // contengono il riquadro) si rifanno
   G.liveQuotes(P, qt0 && qt0.asOf, (q) => {
     qt = q; mk = G.withQuotes(mk0, q);
-    renderTicker(); renderSide(true);
+    renderTicker(true); renderSide(true);
     feedVer += 1; prepareSoon();
   });
 

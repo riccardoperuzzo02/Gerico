@@ -1022,8 +1022,8 @@ G.page("terminal", async function (P) {
   };
 
   // prezzi e grafici: un gruppo alla volta, ogni riga si apre sul grafico grande di tre mesi
-  const GROUP = G.en ? { indici: "Indices", valute: "Currencies", tassi: "US rates", materie: "Commodities", cripto: "Crypto" }
-    : { indici: "Indici", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
+  const GROUP = G.en ? { indici: "Indices", future: "US futures", valute: "Currencies", tassi: "US rates", materie: "Commodities", cripto: "Crypto" }
+    : { indici: "Indici", future: "Future Usa", valute: "Valute", tassi: "Tassi Usa", materie: "Materie prime", cripto: "Cripto" };
   const ND = G.L("n.d.", "n/a"), BP = G.L(" pb", " bp");
   let quotes = null, grKey = G.ls.get("gerico.grGroup", "valute"), grPrep = null, grVer = 0;
   function quoteRow(it, rates) {
@@ -1534,6 +1534,21 @@ G.page("terminal", async function (P) {
   // arrivando da un'altra pagina, i pannelli sotto (grafici, macro, notizie della SEC) si disegnano a passaggio finito:
   // mentre le pagine si spingono il telefono non ha altro da fare
   const settled = window.gericoVT && window.gericoVT.finished ? window.gericoVT.finished.catch(() => {}) : Promise.resolve();
+  // arrivando da un riquadro dei mercati della prima pagina (terminal?q=EURUSD%3DX, terminal?q=agenda) si apre il grafico
+  // di quello strumento, o quella sezione: a passaggio finito e con i pannelli già disegnati
+  const qLink = (() => { try { return new URLSearchParams(location.search).get("q") || ""; } catch (e) { return ""; } })();
+  const apriLink = (c) => {
+    if (G.current !== "terminal" || !$("p-grafici")) return;
+    const q = !$("p-grafici").hidden && findQuote(c);
+    if (q) {
+      if (q.g !== grKey) { grKey = q.g; $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey))); G.seg($("gr-tabs"), true); }
+      drawGroup(q.it.sym);
+      go("p-grafici");
+      return;
+    }
+    const k = String(c).trim().toUpperCase();
+    if (PANELS[k] && $(PANELS[k]) && !$(PANELS[k]).hidden) go(PANELS[k]);
+  };
   Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico"), G.load("societari"), settled]).then(([qt, mc, se, sc, ti, th, soc]) => {
     if (G.titoliFresh(ti)) {
       $("ti").innerHTML = G.titoliHTML(ti, th);
@@ -1544,6 +1559,9 @@ G.page("terminal", async function (P) {
     [[renderQuotes, qt], [renderMacro, mc], [renderSentiment, se], [renderSec, sc], [renderSoc, soc]].forEach(([fn, d]) => {
       try { fn(d); } catch (e) { /* un pannello rotto non ferma gli altri */ }
     });
+    // si va dopo che il passaggio dalla prima pagina ha rimesso la pagina in cima (G.go, al più tardi dopo 400 ms) e
+    // dopo che i pannelli appena disegnati si sono messi al loro posto
+    if (qLink) Promise.race([P.done, new Promise((r) => setTimeout(r, 450))]).then(() => P.later(() => apriLink(qLink), 80));
   });
   renderStatus();
   G.afterIntro(() => countUp(document.body));

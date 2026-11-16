@@ -2656,3 +2656,56 @@ html.nuova body.term #map-panel { border-top: 0; }
   .t-agenda .ev-ris { gap: 6px; }
   .t-agenda .ev-ris > div { padding: 7px 8px; }
 }
+
+/* ---------- Seguiti: i tuoi temi (16 novembre 2026) ----------
+   In cima ai Seguiti i temi stanno in fila, uno per tasto: un tocco mostra solo le storie di quel tema, con quante sono
+   oggi e un punto se ce ne sono di nuove. «Gestisci» apre la ricerca e l'elenco per aggiungere e togliere.
+   Dappertutto lo stesso segno: «+» davanti a un tema da seguire, «✓» davanti a un tema che segui (anche sulle notizie). */
+.tag[data-follow][aria-pressed="false"]::before { content: "+ "; font-weight: 500; opacity: 0.65; }
+.tag .tag-n, .fol-f .n { margin-left: 7px; font-size: 0.8125rem; font-weight: 600; font-variant-numeric: tabular-nums; opacity: 0.7; }
+.tag.tag-nuovo { background: none; box-shadow: inset 0 0 0 1.5px var(--accent, var(--palm)); }
+.tag.tag-nuovo[aria-pressed="false"]::before { content: none; }
+a.tag-l { display: inline-flex; align-items: center; text-decoration: none; }
+.fol-menu a.tag-l { background: var(--fill); }
+.fol-testa { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.fol-testa .btn-text { flex: none; margin: -10px 0; }
+.fol-filtri { display: flex; flex-wrap: wrap; gap: 8px; margin-top: var(--f13, 13px); }
+.fol-f {
+  display: inline-flex; align-items: center; flex: none; max-width: 100%; min-height: 40px; padding: 0 14px; border: 0;
+  background: none; box-shadow: inset 0 0 0 1px var(--rule); color: var(--ink); font: inherit; font-size: 0.9375rem; font-weight: 650;
+  white-space: nowrap; cursor: pointer;
+}
+.fol-f > span:not(.n):not(.hot-dot):not(.fol-nuovo):not(.sr-only) { overflow: hidden; text-overflow: ellipsis; }
+.fol-f[aria-pressed="true"] { background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); box-shadow: none; }
+.fol-f .hot-dot { display: inline-block; flex: none; width: 7px; height: 7px; margin-right: 7px; background: #C8102E; }
+.fol-nuovo { flex: none; width: 7px; height: 7px; margin-left: 8px; background: var(--accent, var(--palm)); }
+.fol-f[aria-pressed="true"] .fol-nuovo { background: currentColor; }
+html.nuova .fol-nuovo, html.nuova .fol-f .hot-dot { border-radius: 50% !important; }
+@media (hover: hover) { .fol-f:not([aria-pressed="true"]):hover { background: var(--fill); } }
+@media (max-width: 759px) {
+  /* sul telefono una riga sola che scorre di lato, come le sezioni */
+  .fol-filtri { flex-wrap: nowrap; margin-left: calc(-1 * var(--f21, 21px)); margin-right: calc(-1 * var(--f21, 21px)); padding: 1px var(--f21, 21px); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .fol-filtri::-webkit-scrollbar { display: none; }
+}
+.fol-gest { margin-top: var(--f21, 21px); padding-top: var(--f21, 21px); border-top: 1px solid var(--rule); }
+.fol-top-vuoto .fol-gest, #fol-top > .blk-sub + .fol-gest { margin-top: var(--f13, 13px); padding-top: 0; border-top: 0; }
+.fol .fol-ris { margin-top: 10px; }
+.fol .fol-ris:empty { display: none; }
+.fol-gest > .fol-l:first-of-type { margin-top: var(--f13, 13px); }
+.fol-q:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 1px; }
+.fol-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 4px 0 var(--f13, 13px); }
+.fol-bar p { flex: 1 1 240px; font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
+.fol-bar .tag { flex: none; }
+/* accanto a «Seguiti»: quante storie nuove */
+.sec-nav .nav-n {
+  display: inline-flex; align-items: center; justify-content: center; flex: none; min-width: 18px; height: 18px; margin-left: 6px; padding: 0 5px;
+  background: var(--accent, var(--palm)); color: var(--on-accent, #FFFFFF); font-size: 0.6875rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1;
+}
+html.nuova .sec-nav .nav-n { border-radius: 9px !important; }
+/* sulle notizie: il tema che segui */
+.k-fol { color: var(--accent, var(--palm)); font-weight: 650; }
+.k-fol::before { content: "✓"; margin-right: 4px; }
+/* in fondo alla storia */
+.tagbox .fol-note { margin: 6px 0 0; }
+.tagbox .tag-vai { margin-top: 12px; }
+.tagbox .tag-vai[hidden] { display: none; }

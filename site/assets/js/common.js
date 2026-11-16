@@ -491,9 +491,10 @@
   // restano nel browser (gerico.follows); ogni cambio lo sanno la pagina e il menu (evento gerico:follows)
   G.follows = () => { const f = G.ls.get("gerico.follows", []); return Array.isArray(f) ? f.filter((x, i) => typeof x === "string" && x && f.indexOf(x) === i) : []; };
   G.toggleFollow = (t) => {
-    const f = G.follows();
-    const on = !f.includes(t);
-    const n = on ? f.concat(t) : f.filter((x) => x !== t);
+    const f = G.follows(), k = String(t).toLowerCase();
+    // «iran» e «Iran» sono lo stesso tema
+    const on = !f.some((x) => x.toLowerCase() === k);
+    const n = on ? f.concat(t) : f.filter((x) => x.toLowerCase() !== k);
     G.ls.set("gerico.follows", n);
     G.toast(on ? G.L("Ora segui «", "Now following “") + G.tn(t) + (location.hash === "#seguiti" ? G.L("»", "”") : G.L("»: lo trovi nei Seguiti", "”: find it in Following")) : G.L("Non segui più «", "No longer following “") + G.tn(t) + G.L("»", "”"));
     document.dispatchEvent(new CustomEvent("gerico:follows", { detail: { tag: t, on } }));
@@ -1684,7 +1685,7 @@
         const a = e.target.closest("a[href]");
         if (a && clean(new URL(a.href, location.href).pathname) === clean(location.pathname)) close();
       });
-      // i temi seguiti, anche nel menu: un tocco smette di seguirli; sotto, il link alla sezione Seguiti
+      // i temi seguiti, anche nel menu: un tocco apre i Seguiti su quel tema; sotto, il link a tutti i Seguiti
       const links = menu.querySelector(".menu-links");
       if (links && !menu.querySelector(".fol-menu")) {
         const box = document.createElement("div");
@@ -1693,23 +1694,21 @@
         const draw = () => {
           const f = G.follows();
           box.innerHTML = '<p class="opt-l" id="opt-fol">' + G.L("Temi seguiti", "Followed topics") + "</p>" +
-            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<button type="button" class="tag" data-follow="' + G.esc(t) + '" aria-pressed="true">' + G.esc(G.tn(t)) + "</button>").join("") +
-              '</div><p class="fol-note">' + G.L("Tocca un tema per smettere di seguirlo.", "Tap a topic to stop following it.") + "</p>"
+            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<a class="tag tag-l" href="./#seguiti" data-fol-tema="' + G.esc(t) + '">' + G.esc(G.tn(t)) + "</a>").join("") +
+              '</div><p class="fol-note">' + G.L("Tocca un tema per leggere le sue notizie.", "Tap a topic to read its news.") + "</p>"
               : '<p class="fol-note">' + G.L("Non segui ancora nessun tema.", "You don't follow any topics yet.") + "</p>") +
-            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Apri i Seguiti", "Open Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a></nav>";
+            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Tutti i Seguiti", "All of Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a></nav>";
         };
         draw();
         G.conto.menu(menu, box);
+        // un tema del menu apre i Seguiti su quel tema: lo dice alla prima pagina (se è questa) e lo lascia in memoria
+        // di sessione per quando ci si arriva da un'altra pagina; «Tutti i Seguiti» toglie la scelta
         box.addEventListener("click", (e) => {
-          const b = e.target.closest("[data-follow]");
-          if (!b) return;
-          // il tocco resta nel menu: il tasto sparisce subito e la pagina sotto non deve leggerlo una seconda volta
-          e.stopPropagation();
-          // il fuoco va al tema dopo (o a quello prima, o al link): con la tastiera si continua da lì
-          const all = Array.from(box.querySelectorAll("[data-follow]")), i = all.indexOf(b);
-          G.toggleFollow(b.dataset.follow);
-          const next = box.querySelectorAll("[data-follow]")[Math.min(i, box.querySelectorAll("[data-follow]").length - 1)] || box.querySelector("a");
-          if (next) next.focus({ preventScroll: true });
+          const a = e.target.closest('a[href="./#seguiti"]');
+          if (!a) return;
+          const tema = a.dataset.folTema || "";
+          try { if (tema) sessionStorage.setItem("gerico.seguitiTema", tema); else sessionStorage.removeItem("gerico.seguitiTema"); } catch (err) { /* niente */ }
+          document.dispatchEvent(new CustomEvent("gerico:seguiti-tema", { detail: { tema } }));
         });
         P.on(document, "gerico:follows", draw);
       }

@@ -99,18 +99,50 @@ G.page("home", async function (P) {
   // un tema seguito è un tag delle storie oppure un tema caldo: questo, per le sue parole chiave, vale anche per le brevi
   // e per le storie dei giorni scorsi
   const hotOf = (f) => themes.find((t) => String(t.label).toLowerCase() === String(f).toLowerCase());
-  const follows = (s) => state.follows.some((f) => (s.tags || []).includes(f) || (!!hotOf(f) && inTheme(s, hotOf(f))));
+  const low = (x) => String(x || "").toLowerCase();
+  // il tema nominato in un titolo, come parola intera. Un tema che la redazione usa già (tagNoti) si cerca scritto
+  // com'è, con la maiuscola: nei titoli italiani la portano i nomi propri («Iran», «Nvidia»), non le parole comuni
+  // («governo»), che lì vogliono dire altro. Un tema scritto a mano da chi legge si cerca senza badare alle maiuscole.
+  const RX = new Map();
+  const wordRx = (t, esatto) => {
+    const k = (esatto ? "=" : "~") + t;
+    if (!RX.has(k)) RX.set(k, new RegExp("(^|[^\\p{L}\\p{N}])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "($|[^\\p{L}\\p{N}])", esatto ? "u" : "iu"));
+    return RX.get(k);
+  };
+  let tagNoti = null;
+  const noto = (f) => {
+    if (!tagNoti) { tagNoti = new Set(); stories.concat(archive).forEach((s) => (s.tags || []).forEach((t) => tagNoti.add(low(t)))); themes.forEach((t) => tagNoti.add(low(t.label))); }
+    return tagNoti.has(low(f));
+  };
+  const nelTitolo = (txt, f) => (G.en ? wordRx(f).test(txt) || (G.tn(f) !== f && wordRx(G.tn(f)).test(txt)) : wordRx(f, noto(f)).test(txt));
+  // una storia è di un tema seguito se lo ha tra i suoi temi, se è del tema caldo con quel nome, o se lo nomina nel titolo
+  const delTema = (s, f) => { const h = hotOf(f); return (s.tags || []).some((t) => low(t) === low(f)) || (!!h && inTheme(s, h)) || nelTitolo(String(s.title || ""), f); };
+  const temiDi = (s) => state.follows.filter((f) => delTema(s, f));
+  const follows = (s) => state.follows.some((f) => delTema(s, f));
+  // nei Seguiti si può guardare un tema solo (folTema): vale per le storie, le brevi e i giorni scorsi
+  let folTema = null;
+  try { folTema = sessionStorage.getItem("gerico.seguitiTema"); sessionStorage.removeItem("gerico.seguitiTema"); } catch (e) { /* niente */ }
+  const folOra = () => (folTema && state.follows.find((f) => low(f) === low(folTema))) || null;
+  const neiSeguiti = (s) => (folOra() ? delTema(s, folOra()) : follows(s));
   // le storie dei temi seguiti, le più nuove prima (l'ora con il fuso: si confrontano gli istanti, non i testi)
   const when = (s) => Date.parse(s.updated || s.firstSeen || "") || 0;
-  const followed = () => mie().filter(follows).sort((a, b) => when(b) - when(a));
-  // una breve è di un tema seguito se lo nomina nel titolo (parola intera, maiuscole o no)
-  const RX = new Map();
-  const wordRx = (t) => { if (!RX.has(t)) RX.set(t, new RegExp("(^|[^\\p{L}\\p{N}])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "($|[^\\p{L}\\p{N}])", "iu")); return RX.get(t); };
-  const followsBreve = (b) => state.follows.some((f) => (hotOf(f) ? kwIn(b.title, hotOf(f)) : wordRx(f).test(String(b.title || ""))));
+  const followed = () => mie().filter(neiSeguiti).sort((a, b) => when(b) - when(a));
+  // una breve non ha temi: è di un tema seguito se lo nomina nel titolo (per un tema caldo, una delle sue parole chiave)
+  const breveDi = (b, f) => (hotOf(f) ? kwIn(b.title, hotOf(f)) : nelTitolo(String(b.title || ""), f));
+  const followsBreve = (b) => (folOra() ? breveDi(b, folOra()) : state.follows.some((f) => breveDi(b, f)));
   // l'ultima visita ai Seguiti: «Nuovo» sulle storie cambiate dopo. Vale per tutta la visita di adesso
   const seenPrev = G.ls.get("gerico.seguitiVisto", null);
   let seenMarked = false;
   const isNew = (s) => !!seenPrev && when(s) > (Date.parse(seenPrev) || Infinity);
+  // per la scheda «Seguiti»: le storie dei tuoi temi uscite o cambiate dopo l'ultima visita (alla prima, tutte)
+  const nuoveSeguiti = () => (seenMarked || state.section === "seguiti" || !state.follows.length ? 0
+    : mie().filter((s) => follows(s) && (!seenPrev || when(s) > (Date.parse(seenPrev) || 0))).length);
+  const toglieNuove = () => {
+    const box = $("sections"), n = box && box.querySelectorAll(".nav-n, .nav-n-t");
+    if (!n || !n.length) return;
+    n.forEach((x) => x.remove());
+    if (G.seg) G.seg(box);
+  };
   // in Tutte, a parità di importanza, prima le storie delle sezioni e dei temi che ti interessano (i tuoi interessi e i
   // temi seguiti). La prima notizia del giorno resta in cima per tutti; l'importanza è quella della redazione: le prime
   // cinque per rank (gli articoli lunghi) restano sopra le altre, e dentro ognuno dei due gruppi vale l'ordine del rank
@@ -147,7 +179,7 @@ G.page("home", async function (P) {
     if (th) return archive.filter((s) => perMe(s) && inTheme(s, th)).slice(0, 8);
     if (inPaese()) return archive.filter((s) => delPaese(s, paeseOra())).slice(0, 8);
     if (state.section === "mondo") return archive.filter(inMondo).slice(0, 8);
-    return archive.filter((s) => perMe(s) && (state.section === "tutte" || (state.section === "seguiti" ? follows(s) : inTab(s.section)))).slice(0, 8);
+    return archive.filter((s) => perMe(s) && (state.section === "tutte" || (state.section === "seguiti" ? neiSeguiti(s) : inTab(s.section)))).slice(0, 8);
   };
   function buildNav() {
     const items = [["tutte", G.L("Tutte", "All")], ["seguiti", G.L("Seguiti", "Following")]];
@@ -160,8 +192,11 @@ G.page("home", async function (P) {
     tabs.filter((t) => scelte.includes(t[3])).forEach((t) => items.push(t));
     themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
     tabs.filter((t) => !scelte.includes(t[3])).forEach((t) => items.push(t));
+    // accanto a «Seguiti», quante storie dei tuoi temi sono nuove dall'ultima volta che li hai aperti
+    const nn = nuoveSeguiti();
+    const nuove = (k) => (k === "seguiti" && nn ? '<span class="nav-n" aria-hidden="true">' + nn + '</span><span class="sr-only nav-n-t">' + G.L(nn === 1 ? ", una storia nuova" : ", " + nn + " storie nuove", nn === 1 ? ", one new story" : ", " + nn + " new stories") + "</span>" : "");
     $("sections").innerHTML = items.map(([k, label, hot]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
-      (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
+      (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + nuove(k) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
   }
   // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
   function markNav(k, quiet) {
@@ -185,6 +220,11 @@ G.page("home", async function (P) {
     if (n) parts.push('<span class="k-src">' + esc(n) + "</span>");
     // nel sito in inglese, una storia non ancora tradotta lo dice
     if (G.en && s.untranslated) parts.push('<span class="k-src">in Italian</span>');
+    // la storia è di un tema che segui: lo dice (non nei Seguiti con un tema solo, né nel tema caldo che stai guardando)
+    if (state.follows.length && !(state.section === "seguiti" && (folOra() || state.follows.length === 1))) {
+      const th = themeOf(state.section), miei = temiDi(s).filter((f) => !th || low(f) !== low(th.label)).slice(0, 2);
+      if (miei.length) parts.push('<span class="k-fol"><span class="sr-only">' + G.L("Tema che segui: ", "Topic you follow: ") + "</span>" + miei.map((f) => esc(G.tn(f))).join(", ") + "</span>");
+    }
     return parts.length ? '<p class="kick">' + parts.join("") + "</p>" : "";
   }
   const link = (s) => '<a href="' + G.storyUrl(s) + '" data-id="' + esc(s.id) + '" data-sec="' + esc(G.secLabel(s.section)) + '">' + esc(G.headline(s)) + "</a>";
@@ -352,7 +392,7 @@ G.page("home", async function (P) {
     feed.innerHTML = feedMarkup();
     G.showImgs(feed);
     first = false;
-    if (state.section === "seguiti" && !seenMarked) { seenMarked = true; G.ls.set("gerico.seguitiVisto", new Date().toISOString()); }
+    if (state.section === "seguiti" && !seenMarked) { seenMarked = true; G.ls.set("gerico.seguitiVisto", new Date().toISOString()); toglieNuove(); }
     feedVer += 1;
     renderSideBrevi();
     prepareSoon();
@@ -363,38 +403,86 @@ G.page("home", async function (P) {
     state.section = sec; first = false;
     try { return feedMarkup(); } finally { state.section = was; first = f; }
   }
-  // da seguire: i temi caldi, poi i temi più frequenti nelle storie di questi giorni (quelle di oggi contano doppio)
-  const isFollowed = (t) => state.follows.some((f) => f.toLowerCase() === String(t).toLowerCase());
-  function suggestions() {
-    const hot = themes.filter((t) => !isFollowed(t.label)).map((t) => [t.label, true]);
+  // ---------- Seguiti: i tuoi temi ----------
+  const isFollowed = (t) => state.follows.some((f) => low(f) === low(t));
+  const storieDi = (f) => mie().filter((s) => delTema(s, f));
+  // quante storie ha ogni tema usato dalla redazione in questi giorni (quelle di oggi contano doppio)
+  function pesi() {
     const n = {};
     mie().concat(archive.filter(perMe)).forEach((s) => (s.tags || []).forEach((t) => { if (typeof t === "string" && t) n[t] = (n[t] || 0) + (live.has(s.id) ? 2 : 1); }));
-    const tags = Object.keys(n).filter((t) => !isFollowed(t) && !hotOf(t)).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 8);
-    return hot.concat(tags.map((t) => [t, false]));
+    return n;
   }
-  const tagBtn = (t, on, hot) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + on + '">' +
-    (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(G.tn(t)) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</button>";
-  const FEW = 12;
-  let folAll = false;
-  const moreTags = () => '<div class="tags">' + suggestions().map(([t, hot]) => tagBtn(t, false, hot)).join("") + "</div>";
-  // in cima: i temi che segui (un tocco smette); senza temi, come si segue e i temi da seguire
+  // un tema già dentro un tema caldo («Iran» nel tema caldo Iran-Usa) non si propone a parte
+  const nelCaldo = (t) => themes.some((h) => low(h.label) !== low(t) && kwIn(t, h));
+  // da seguire: i temi caldi che hanno storie, poi i temi più frequenti; ognuno con le sue storie di oggi
+  function suggestions() {
+    const hot = themes.filter((t) => !isFollowed(t.label) && mie().some((s) => inTheme(s, t))).map((t) => [t.label, true, storieDi(t.label).length]);
+    const n = pesi();
+    const tags = Object.keys(n).filter((t) => !isFollowed(t) && !hotOf(t) && !nelCaldo(t)).sort((a, b) => n[b] - n[a] || a.localeCompare(b)).slice(0, 8);
+    return hot.concat(tags.map((t) => [t, false, storieDi(t).length]));
+  }
+  // un tema da seguire o da lasciare: «+ Tema» e «✓ Tema» (il segno lo mette il CSS), con le storie di oggi
+  const tagBtn = (t, on, hot, n) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + on + '">' +
+    (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(G.tn(t)) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") +
+    (n ? '<span class="tag-n" aria-hidden="true">' + n + '</span><span class="sr-only">' + G.L(n === 1 ? ", una storia oggi" : ", " + n + " storie oggi", n === 1 ? ", one story today" : ", " + n + " stories today") + "</span>" : "") + "</button>";
+  // la ricerca: i temi della redazione che contengono quello che scrivi; se non c'è, lo puoi seguire com'è scritto
+  const senzaAcc = (x) => String(x || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const pulito = (q) => { const t = String(q || "").replace(/[<>"«»]/g, " ").replace(/\s+/g, " ").trim().slice(0, 40).trim(); return t ? t.charAt(0).toUpperCase() + t.slice(1) : ""; };
+  let folGest = false, folQ = "";
+  function trovati(q) {
+    const k = senzaAcc(pulito(q));
+    if (k.length < 2) return [];
+    const n = pesi(), tutti = themes.map((t) => t.label).concat(Object.keys(n).filter((t) => !hotOf(t)));
+    state.follows.forEach((f) => { if (!tutti.some((t) => low(t) === low(f))) tutti.push(f); });
+    const dentro = (t) => senzaAcc(t).includes(k) || senzaAcc(G.tn(t)).includes(k);
+    const comincia = (t) => (senzaAcc(t).startsWith(k) || senzaAcc(G.tn(t)).startsWith(k) ? 0 : 1);
+    const hit = tutti.filter(dentro).sort((a, b) => comincia(a) - comincia(b) || (n[b] || 0) - (n[a] || 0) || a.localeCompare(b)).slice(0, 8);
+    const out = hit.map((t) => ({ t, hot: !!hotOf(t), n: storieDi(t).length }));
+    if (!tutti.some((t) => senzaAcc(t) === k || senzaAcc(G.tn(t)) === k)) out.push({ t: pulito(q), nuovo: true });
+    return out;
+  }
+  const trovatiHTML = () => trovati(folQ).map((x) => (x.nuovo
+    ? '<button type="button" class="tag tag-nuovo" data-follow="' + esc(x.t) + '" aria-pressed="false">' + G.L("Segui «", "Follow “") + esc(x.t) + G.L("»", "”") + "</button>"
+    : tagBtn(x.t, isFollowed(x.t), x.hot, x.n))).join("");
+  // cercare, aggiungere e togliere: aperto da «Gestisci», e da solo quando non segui ancora niente
+  function gestHTML() {
+    const mine = state.follows, sug = suggestions(), cerca = G.L("Cerca un tema o scrivine uno", "Search for a topic or type one");
+    return '<div class="fol-gest" id="fol-gest"><label class="sr-only" for="fol-q">' + cerca + "</label>" +
+      '<input class="paesi-q fol-q" id="fol-q" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" maxlength="40" placeholder="' + cerca + '" value="' + esc(folQ) + '">' +
+      '<div class="tags fol-ris" id="fol-ris" role="group" aria-label="' + G.L("Temi trovati", "Topics found") + '">' + trovatiHTML() + "</div>" +
+      (mine.length ? '<p class="fol-l" id="fol-miei-l">' + G.L("Temi che segui", "Topics you follow") + '</p><div class="tags fol-miei" role="group" aria-labelledby="fol-miei-l">' + mine.map((t) => tagBtn(t, true, !!hotOf(t))).join("") +
+        '</div><p class="fol-note">' + G.L("Tocca un tema per smettere di seguirlo.", "Tap a topic to stop following it.") + "</p>" : "") +
+      (sug.length ? '<p class="fol-l" id="fol-sug-l">' + G.L("Da seguire", "Suggested") + '</p><div class="tags fol-sug" role="group" aria-labelledby="fol-sug-l">' + sug.map(([t, hot, n]) => tagBtn(t, false, hot, n)).join("") + "</div>" : "") + "</div>";
+  }
+  // in cima ai Seguiti: i tuoi temi, uno per tasto. Un tocco mostra solo le storie di quel tema, con quante sono oggi e
+  // un punto se ce ne sono di nuove; «Gestisci» apre la ricerca e l'elenco per aggiungere e togliere
   function followHead() {
-    const mine = state.follows, cut = folAll || mine.length <= FEW + 1 ? mine : mine.slice(0, FEW);
-    let h = '<section class="blk fol" id="fol-top" aria-labelledby="fol-h"><h2 class="blk-h" id="fol-h">' + (mine.length ? G.L("I temi che segui", "Topics you follow") : G.L("Segui i temi che ti interessano", "Follow the topics you care about")) + "</h2>";
+    const mine = state.follows, ora = folOra();
     if (!mine.length) {
-      h += '<p class="blk-sub">' + G.L("Qui trovi le notizie dei temi che segui, le più nuove prima. Tocca un tema qui sotto, oppure seguilo in fondo a ogni storia.",
-        "Here you find the news on the topics you follow, newest first. Tap a topic below, or follow it at the bottom of any story.") + "</p>";
-      if (suggestions().length) h += '<p class="fol-l">' + G.L("Da seguire", "Suggested") + "</p>" + moreTags();
-    } else {
-      h += '<div class="tags">' + cut.map((t) => tagBtn(t, true)).join("") +
-        (cut.length < mine.length ? '<button type="button" class="tag fol-all" data-fol-all>' + G.L("Tutti i " + mine.length + " temi", "All " + mine.length + " topics") + "</button>" : "") +
-        '</div><p class="fol-note">' + G.L("Tocca un tema per smettere di seguirlo.", "Tap a topic to stop following it.") + "</p>";
+      return '<section class="blk fol" id="fol-top" aria-labelledby="fol-h"><h2 class="blk-h" id="fol-h">' + G.L("Segui i temi che ti interessano", "Follow the topics you care about") + "</h2>" +
+        '<p class="blk-sub">' + G.L("Scegli i temi: qui trovi le loro notizie, le più nuove prima. Puoi seguirne uno anche in fondo a ogni storia.",
+          "Choose your topics: their news appears here, newest first. You can also follow one at the bottom of any story.") + "</p>" + gestHTML() + "</section>";
     }
-    return h + "</section>";
+    const conta = {};
+    mine.forEach((t) => { conta[t] = storieDi(t); });
+    const tasto = (t, label, n, nuovo, on, hot) => '<button type="button" class="fol-f" data-fol-f="' + esc(t) + '" aria-pressed="' + on + '">' +
+      (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + "<span>" + esc(label) + "</span>" + (n ? '<span class="n">' + n + "</span>" : "") +
+      (nuovo ? '<span class="fol-nuovo" aria-hidden="true"></span><span class="sr-only">' + G.L(", con storie nuove", ", with new stories") + "</span>" : "") + "</button>";
+    // prima i temi che oggi hanno storie, nell'ordine in cui li hai scelti
+    const ordine = mine.filter((t) => conta[t].length).concat(mine.filter((t) => !conta[t].length));
+    return '<section class="blk fol" id="fol-top" aria-labelledby="fol-h"><div class="fol-testa"><h2 class="blk-h" id="fol-h">' + G.L("I tuoi temi", "Your topics") + "</h2>" +
+      '<button type="button" class="btn-text fol-gest-b" data-fol-gest aria-expanded="' + folGest + '" aria-controls="fol-gest">' + (folGest ? G.L("Fatto", "Done") : G.L("Gestisci", "Manage")) + "</button></div>" +
+      '<div class="fol-filtri" role="group" aria-label="' + G.L("Guarda un tema solo", "View a single topic") + '">' +
+      (mine.length > 1 ? tasto("", G.L("Tutti", "All"), mie().filter(follows).length, false, !ora) : "") +
+      ordine.map((t) => tasto(t, G.tn(t), conta[t].length, conta[t].some(isNew), mine.length === 1 || (!!ora && low(t) === low(ora)), !!hotOf(t))).join("") + "</div>" +
+      (folGest ? gestHTML() : "") + "</section>";
   }
   // in fondo, quando segui già qualcosa: gli altri temi da seguire (le notizie restano in alto)
-  const followMore = () => (state.follows.length && suggestions().length ? '<section class="blk fol" id="fol-more" aria-labelledby="fol-m"><h2 class="blk-h" id="fol-m">' +
-    G.L("Altri temi da seguire", "More topics to follow") + "</h2>" + moreTags() + "</section>" : "");
+  const followMore = () => (state.follows.length && !folGest && suggestions().length ? '<section class="blk fol" id="fol-more" aria-labelledby="fol-m"><h2 class="blk-h" id="fol-m">' +
+    G.L("Altri temi da seguire", "More topics to follow") + '</h2><div class="tags">' + suggestions().map(([t, hot, n]) => tagBtn(t, false, hot, n)).join("") + "</div></section>" : "");
+  // nella scheda di un tema caldo: seguirlo da lì
+  const temaBar = (th) => '<div class="fol fol-bar" id="fol-bar"><p>' + (isFollowed(th.label) ? G.L("Segui questo tema: le sue notizie sono anche nei Seguiti.", "You follow this topic: its news is in Following too.")
+    : G.L("Un tema caldo di questi giorni. Seguilo per ritrovare le sue notizie nei Seguiti.", "A hot topic of these days. Follow it to find its news in Following.")) + "</p>" + tagBtn(th.label, isFollowed(th.label), false) + "</div>";
   // il giorno delle notizie più recenti tra queste ore: «di ieri», «di sabato 7 novembre»
   function lastDay(isos) {
     const t = isos.map((x) => Date.parse(x || "")).filter((x) => x > 0);
@@ -407,8 +495,10 @@ G.page("home", async function (P) {
     if (state.section === "seguiti") {
       const end = '<p class="end"><strong>' + G.L("Fine della sezione.", "End of the section.") + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
       if (!state.follows.length) return followHead();
+      const ora = folOra(), dopo = bl.length || past.length;
       const top = list.length ? leadHTML(list[0], true) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, true, i + 1)).join("") + "</ol>" : "")
-        : '<p class="none">' + G.L("Oggi nessuna storia sui temi che segui.", "No stories today on the topics you follow.") + "</p>";
+        : '<p class="none">' + (ora ? G.L("Oggi nessuna storia su «", "No stories today on “") + esc(G.tn(ora)) + G.L("».", "”.") : G.L("Oggi nessuna storia sui temi che segui.", "No stories today on the topics you follow.")) +
+          (dopo ? " " + (brInSide() ? G.L("Qui accanto trovi le brevi e le storie dei giorni scorsi.", "Alongside are the news in brief and the stories from recent days.") : G.L("Qui sotto trovi le brevi e le storie dei giorni scorsi.", "Below are the news in brief and the stories from recent days.")) : "") + "</p>";
       return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + (brInSide() ? "" : pastHTML(past, true) + followMore()) + end;
     }
     const estero = inPaese() && paeseOra() !== "IT";
@@ -430,14 +520,15 @@ G.page("home", async function (P) {
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
     const end = '<p class="end"><strong>' + (state.section === "tutte" ? G.L("Fine dell'edizione.", "End of the edition.") : G.L("Fine della sezione.", "End of the section.")) + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
     const breviPrima = state.section === "tutte" && !brInSide() && bl.length && G.interessi && G.interessi.lettura().includes("brevi");
-    const top = list.length
+    const caldo = themeOf(state.section);
+    const top = (caldo ? temaBar(caldo) : "") + (list.length
       ? leadHTML(list[0], all) + (breviPrima ? breviHTML(bl, all) : "") + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       // brevi di oggi, o solo di ieri e di prima: la riga lo dice com'è, con il giorno delle ultime
       : estero ? '<p class="none">' + esc(G.cap(G.paeseDa(paeseOra())) + G.L(", oggi, le brevi delle sue testate. ", ", today: briefs from its outlets. ") + (G.paeseInfo(paeseOra()).level === 1
         ? G.L("Gli articoli di GERICO sul paese compaiono qui quando escono.", "GERICO's articles on the country appear here when they come out.")
         : G.L("GERICO scrive un articolo quando nel paese succede un fatto di rilievo.", "GERICO writes an article when something major happens in the country."))) + "</p>"
       : '<p class="none">' + (bl.some((b) => b && G.isToday(b.at)) ? G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.")
-        : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>";
+        : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>");
     return top + (brInSide() || (breviPrima && list.length) ? "" : breviHTML(bl, all)) + titoliHTML() + (brInSide() ? "" : pastHTML(past, all)) + end;
   }
 
@@ -725,18 +816,69 @@ G.page("home", async function (P) {
   // seguire e smettere di seguire un tema, dai Seguiti, dal menu o da una storia: i Seguiti si rifanno subito,
   // senza dissolvenza, e il fuoco resta sul tema toccato
   let refocus = null;
+  // i Seguiti si rifanno senza dissolvenza e senza salti: il riquadro `blk` resta dov'era sullo schermo, il fuoco va su `fuoco`
+  function rifaiSeguiti(blk, fuoco) {
+    const el0 = blk && $(blk), a0 = el0 ? el0.getBoundingClientRect().top : null, y0 = scrollY;
+    renderFeed(true);
+    const el1 = blk && $(blk);
+    scrollKeep(el1 && a0 !== null ? y0 + el1.getBoundingClientRect().top - a0 : y0);
+    const el = fuoco && $("feed").querySelector(fuoco);
+    if (el) el.focus({ preventScroll: true });
+    return el1;
+  }
   P.on($("feed"), "click", (e) => {
-    if (e.target.closest("[data-fol-all]")) { folAll = true; renderFeed(true); const b = $("feed").querySelector("#fol-top .tag:nth-child(" + (FEW + 1) + ")"); if (b) b.focus({ preventScroll: true }); return; }
+    // un tema solo, oppure di nuovo tutti (anche toccando una seconda volta il tema scelto)
+    const f = e.target.closest("[data-fol-f]");
+    if (f) {
+      if (state.follows.length < 2) return;
+      const t = f.dataset.folF;
+      folTema = t && low(t) !== low(folOra() || "") ? t : null;
+      rifaiSeguiti("fol-top", '.fol-f[aria-pressed="true"]');
+      announce("seguiti");
+      return;
+    }
+    // «Gestisci» apre e chiude la ricerca e l'elenco dei temi
+    if (e.target.closest("[data-fol-gest]")) {
+      folGest = !folGest;
+      folQ = "";
+      rifaiSeguiti("fol-top", "[data-fol-gest]");
+      return;
+    }
     const b = e.target.closest("[data-follow]");
     if (!b) return;
     const box = b.closest(".fol");
-    refocus = box ? { blk: box.id, i: Array.from(box.querySelectorAll("[data-follow]")).indexOf(b) } : null;
+    // dalla ricerca: il tema va tra i tuoi, il campo si svuota e resta pronto per il prossimo
+    const cerca = !!b.closest(".fol-ris");
+    if (cerca) folQ = "";
+    refocus = box ? { blk: box.id, i: Array.from(box.querySelectorAll("[data-follow]")).indexOf(b), cerca } : null;
     G.toggleFollow(b.dataset.follow);
+  });
+  // la ricerca dei temi: i trovati cambiano mentre scrivi (il resto della pagina resta fermo); Invio segue il primo
+  P.on($("feed"), "input", (e) => {
+    if (e.target.id !== "fol-q") return;
+    folQ = e.target.value;
+    const box = $("fol-ris");
+    if (box) box.innerHTML = trovatiHTML();
+  });
+  P.on($("feed"), "keydown", (e) => {
+    if (e.target.id !== "fol-q" || e.key !== "Enter") return;
+    e.preventDefault();
+    const b = $("fol-ris") && $("fol-ris").querySelector('[data-follow][aria-pressed="false"]');
+    if (b) b.click();
+  });
+  // dal menu: «apri i Seguiti su questo tema» (arrivando da un'altra pagina lo dice la memoria di sessione, letta sopra)
+  P.on(document, "gerico:seguiti-tema", (e) => {
+    try { sessionStorage.removeItem("gerico.seguitiTema"); } catch (err) { /* niente */ }
+    folTema = (e.detail && e.detail.tema) || null;
+    if (state.section === "seguiti") { rifaiSeguiti(null, null); window.scrollTo({ top: Math.min(scrollY, sectionTop().scroll === null ? scrollY : sectionTop().scroll), behavior: "instant" }); announce("seguiti"); }
+    else { feedVer += 1; prepareSoon(); }
   });
   P.on($("side"), "click", (e) => {
     const b = e.target.closest("[data-follow]");
     if (!b) return;
-    refocus = null;
+    // nella colonna di destra la pagina resta ferma; il fuoco va al tema che prende il posto di quello toccato
+    const box = b.closest(".fol");
+    refocus = box ? { blk: box.id, i: Array.from(box.querySelectorAll("[data-follow]")).indexOf(b), fermo: true } : null;
     G.toggleFollow(b.dataset.follow);
   });
   P.on(document, "gerico:interessi", () => {
@@ -749,18 +891,27 @@ G.page("home", async function (P) {
   });
   P.on(document, "gerico:follows", () => {
     state.follows = G.follows();
-    if (state.section !== "seguiti") { feedVer += 1; prepareSoon(); refocus = null; return; }
-    // la pagina non salta: il riquadro toccato resta dov'era sullo schermo (le storie del tema nuovo entrano sopra)
-    const r = refocus, el0 = r && $(r.blk), a0 = el0 ? el0.getBoundingClientRect().top : null, y0 = scrollY;
+    if (!state.follows.length) { folGest = false; folQ = ""; }
+    const r = refocus;
     refocus = null;
-    renderFeed(true);
+    // la pagina non salta: il riquadro toccato resta dov'era sullo schermo (le storie del tema nuovo entrano sopra)
+    rifaiSeguiti(r && !r.fermo ? r.blk : null, null);
     const el1 = r && $(r.blk);
-    scrollKeep(el1 && a0 !== null ? y0 + el1.getBoundingClientRect().top - a0 : y0);
-    // il fuoco resta nello stesso riquadro, sul tema al posto di quello toccato (o sul primo dei temi seguiti)
+    if (state.section !== "seguiti") {
+      // fuori dai Seguiti cambiano il segno sulle notizie del tema e il numero accanto a «Seguiti»
+      buildNav();
+      markNav();
+      const b = r && r.blk === "fol-bar" && $("feed").querySelector("#fol-bar [data-follow]");
+      if (b) b.focus({ preventScroll: true });
+      return;
+    }
     if (!r) return;
+    // dalla ricerca il fuoco torna al campo; altrimenti resta nello stesso riquadro, sul tema al posto di quello toccato
+    const q = r.cerca && $("fol-q");
+    if (q) { q.focus({ preventScroll: true }); return; }
     const tags = el1 ? el1.querySelectorAll("[data-follow]") : [];
-    const next = tags.length ? tags[Math.min(r.i, tags.length - 1)] : $("feed").querySelector("#fol-top [data-follow], #fol-top .blk-h");
-    if (next) { if (!next.matches("button")) next.setAttribute("tabindex", "-1"); next.focus({ preventScroll: true }); }
+    const next = tags.length ? tags[Math.min(r.i, tags.length - 1)] : $("feed").querySelector("#fol-top [data-fol-gest], #fol-top .fol-q, #fol-top .blk-h");
+    if (next) { if (!next.matches("button, input")) next.setAttribute("tabindex", "-1"); next.focus({ preventScroll: true }); }
   });
   // «Torna a tutte le notizie» nella sezione vuota
   P.on($("feed"), "click", (e) => {
@@ -805,7 +956,8 @@ G.page("home", async function (P) {
   // per chi usa un lettore di schermo: la lista cambia, la riga di stato lo dice
   function announce(sec) {
     const n = visible().length, st = $("sec-status");
-    if (st) st.textContent = (sec === "tutte" ? G.L("Tutte le notizie", "All the news") : sec === "seguiti" ? G.L("Temi seguiti", "Followed topics") : sec === slugOra() ? G.paeseNome(paeseOra()) : G.SECTIONS[sec]) + ": " + n + (n === 1 ? G.L(" notizia", " story") : G.L(" notizie", " stories"));
+    const th = themeOf(sec);
+    if (st) st.textContent = (sec === "tutte" ? G.L("Tutte le notizie", "All the news") : sec === "seguiti" ? (folOra() ? G.tn(folOra()) : G.L("Temi seguiti", "Followed topics")) : sec === slugOra() ? G.paeseNome(paeseOra()) : th ? G.tn(th.label) : G.SECTIONS[sec]) + ": " + n + (n === 1 ? G.L(" notizia", " story") : G.L(" notizie", " stories"));
   }
   // porta la pagina a «y» dopo aver cambiato sezione. Se la sezione nuova è troppo corta per arrivarci, l'elenco si
   // allunga di quel che manca (spazio vuoto in fondo): altrimenti il browser fermerebbe la pagina più in alto e tutto

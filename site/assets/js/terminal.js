@@ -1487,8 +1487,8 @@ G.page("terminal", async function (P) {
     { proName: "TVC:UKOIL", title: "Brent" },
     { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" }
   ];
-  // il nastro dei prezzi in diretta sta in cima alla pagina, sempre aperto: si può nascondere dal pannello dei grafici
-  // (la scelta resta). Trasparente e scuro, sul colore dei pannelli del Terminal
+  // il nastro dei prezzi in diretta sta in cima alla pagina, sempre aperto. Trasparente e scuro, sul colore dei pannelli
+  // del Terminal
   const tvTop = $("tv-top");
   if (tvTop) {
     tvTop.querySelector(".tv-lab span").textContent = G.L("Prezzi in diretta", "Live prices");
@@ -1499,9 +1499,6 @@ G.page("terminal", async function (P) {
   function loadTV() {
     const box = $("tv");
     if (!box) return;
-    tvTop.hidden = false;
-    $("live-btn").textContent = G.L("Nascondi i prezzi in diretta", "Hide live prices");
-    $("live-btn").setAttribute("aria-expanded", "true");
     if (box.childElementCount) return;
     const nastro = box.parentElement;
     nastro.classList.remove("pronto");
@@ -1529,17 +1526,9 @@ G.page("terminal", async function (P) {
     guarda.observe(wrap, { childList: true, subtree: true });
     setTimeout(() => { guarda.disconnect(); pronto(); }, 6000);
   }
-  function unloadTV() {
-    $("tv").innerHTML = "";
-    tvTop.hidden = true;
-    $("live-btn").textContent = G.L("Mostra i prezzi in diretta", "Show live prices");
-    $("live-btn").setAttribute("aria-expanded", "false");
-  }
-  $("live-btn").addEventListener("click", () => {
-    if (!tvTop.hidden) { unloadTV(); G.ls.set("gerico.live", false); }
-    else { loadTV(); G.ls.set("gerico.live", true); }
-  });
-  if (G.ls.get("gerico.live", true) !== false) loadTV(); else unloadTV();
+  // il nastro c'è sempre (la vecchia scelta di nasconderlo non vale più)
+  try { localStorage.removeItem("gerico.live"); } catch (e) { /* storage non disponibile */ }
+  loadTV();
   // l'intestazione cambia altezza (nastro acceso o spento, scorciatoie su una riga o nel menu): i pannelli si fermano
   // sempre appena sotto
   const testa = document.querySelector(".top");

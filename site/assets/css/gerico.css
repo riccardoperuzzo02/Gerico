@@ -447,7 +447,6 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
   border: 0; border-radius: 12px; color: var(--t-ink); font-family: var(--sans); font-size: 0.9375rem;
 }
 .t-cmd input::placeholder { color: #7F8BA0; }
-.t-live { flex: 1 1 320px; }
 .t-btn {
   min-height: 44px; padding: 0 18px; background: var(--fill); border: 0; border-radius: 999px;
   color: var(--t-ink); font-family: var(--sans); font-size: 0.9375rem; font-weight: 700; cursor: pointer; white-space: nowrap;
@@ -466,9 +465,21 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
   min-width: 0; border-radius: var(--radius); background: var(--t-panel);
   scroll-margin-top: calc(var(--top-h) + 70px);
 }
-.t-panel.flash { animation: t-flash 1200ms ease-out both; }
-@keyframes t-flash { 0% { box-shadow: 0 0 0 2px rgba(169, 189, 235, 0); } 18%, 62% { box-shadow: 0 0 0 2px var(--t-accent); } 100% { box-shadow: 0 0 0 2px rgba(169, 189, 235, 0); } }
-@media (prefers-reduced-motion: reduce) { .t-panel.flash { animation: none; box-shadow: 0 0 0 2px var(--t-accent); } }
+/* la sezione dove si arriva (Mappa, Indici, F1…F9, «Vai a»): niente riquadro attorno, si illumina per un attimo il
+   titolo, e il filo in cima prende lo stesso colore */
+.t-panel[tabindex="-1"]:focus, .t-panel[tabindex="-1"]:focus-visible { outline: none; }
+.t-panel.flash h2 { animation: t-titolo 1200ms ease-out both; }
+.t-panel.flash::before { animation: t-filo 1200ms ease-out both; }
+@keyframes t-titolo {
+  0% { color: var(--t-ink); text-shadow: 0 0 0 rgba(169, 189, 235, 0); }
+  20%, 55% { color: #FFFFFF; text-shadow: 0 0 14px rgba(169, 189, 235, 0.85), 0 0 2px rgba(169, 189, 235, 0.6); }
+  100% { color: var(--t-ink); text-shadow: 0 0 0 rgba(169, 189, 235, 0); }
+}
+@keyframes t-filo { 0%, 100% { background: var(--t-ink); } 20%, 55% { background: var(--t-accent); } }
+@media (prefers-reduced-motion: reduce) {
+  .t-panel.flash h2 { animation: none; color: var(--t-accent); }
+  html.nuova body.term .t-panel.flash::before, .t-panel.flash::before { animation: none; background: var(--t-accent); }
+}
 .t-panel h2 { font-size: 1.125rem; letter-spacing: -0.01em; color: var(--t-ink); }
 .t-headrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; }
 .t-seg { flex: 0 0 200px; }
@@ -1686,8 +1697,6 @@ html.nuova .t-vals { margin-top: var(--f13); }
 .t-vals:empty { display: none; }
 html.nuova .t-detail { margin-top: var(--f13); padding: var(--f13) 16px; }
 /* prezzi in diretta: in fondo a «Prezzi e grafici», dove servono */
-.t-live { display: flex; flex-wrap: wrap; align-items: center; gap: var(--f8, 8px) var(--f13, 13px); margin-top: var(--f21, 21px); padding-top: var(--f13, 13px); border-top: 1px solid var(--hair); }
-.t-live p { flex: 1 1 220px; margin: 0; font-size: 0.8125rem; line-height: 1.45; color: var(--t-ink-3); }
 html.nuova .tv { margin-top: var(--f13); padding-top: 0; }
 /* agenda: una lista sola, poi i giorni dopo */
 html.nuova .t-ff-week { margin-top: var(--f8); }
@@ -3143,9 +3152,6 @@ html.nuova body.term .t-detail { padding: var(--f13, 13px) var(--f21, 21px); }
 html.nuova body.term .m-card { padding: 12px 14px; }
 /* tabelle: il valore che manca è un trattino, non un vuoto */
 .t-table td.mv:empty::before { content: "–"; font-weight: 400; color: var(--t-ink-3); }
-/* «Nascondi / Mostra i prezzi in diretta»: un comando secondario, non un pulsante acceso */
-body.term .t-live .t-btn, body.term .t-live .t-btn[aria-expanded="true"] { background: var(--fill); color: var(--t-ink); }
-@media (hover: hover) { body.term .t-live .t-btn:hover { background: #1C2C4B; } }
 /* «Vai a»: alla stessa distanza dal nastro e dalle sezioni */
 @media (min-width: 1000px) { .t-tools { padding-top: var(--f13, 13px); } }
 /* agenda: il prossimo evento è una fascia appena più chiara che sborda di 6 px (quanto il margine del pannello), con un

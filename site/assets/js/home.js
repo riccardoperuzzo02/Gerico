@@ -549,6 +549,7 @@ G.page("home", async function (P) {
   // sul telefono la fila dei temi scorre di lato: il tema scelto deve restare in vista
   function mostraFiltro() {
     const row = $("feed").querySelector(".fol-filtri"), b = row && row.querySelector('[aria-pressed="true"]');
+    G.bordi(row);
     if (!b || row.scrollWidth <= row.clientWidth + 1) return;
     const r = row.getBoundingClientRect(), x = b.getBoundingClientRect();
     if (x.left < r.left + 8 || x.right > r.right - 8) row.scrollLeft += x.left - r.left - 21;
@@ -814,6 +815,7 @@ G.page("home", async function (P) {
   function mkFill(root, flash) {
     if (!root || !mkData.length) return;
     const tabs = root.querySelector(".mk-tabs"), row = root.querySelector(".mk-row"), nota = root.querySelector(".mk-nota");
+    G.bordi(row);
     const sig = mkData.map((t) => t.k).join(",");
     if (tabs.dataset.sig !== sig) {
       tabs.innerHTML = mkData.map((t) => '<button type="button" data-mk="' + t.k + '" aria-pressed="false">' + esc(t.n) + "</button>").join("");
@@ -1033,7 +1035,7 @@ G.page("home", async function (P) {
   const pBtn = $("paese-btn");
   const disegnaPaese = () => {
     if (!pBtn) return;
-    pBtn.innerHTML = G.flag(paese) + '<span class="pb-n">' + esc(G.paeseNome(paese)) + '</span><svg class="pb-v" aria-hidden="true" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    pBtn.innerHTML = G.flag(paese) + '<span class="pb-n">' + esc(G.paeseNome(paese)) + '</span><svg class="pb-v" aria-hidden="true" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     pBtn.setAttribute("aria-label", G.L("Il tuo paese: ", "Your country: ") + G.paeseNome(paese) + G.L(". Cambialo", ". Change it"));
     pBtn.hidden = false;
   };

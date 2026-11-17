@@ -13,7 +13,8 @@ G.page("terminal", async function (P) {
   // legenda: una barra sola da −1% a +1%, i colori sono quelli dei quadrati (non dipende dai dati: subito, senza salti).
   // Dentro un indice i titoli si muovono di più: la stessa barra va da −2% a +2%
   const stops = G.BANDS.map(([c], k) => c + " " + ((2 * k + 1) * 100 / 12).toFixed(2) + "%").join(", ");
-  const legendHTML = (k) => '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ')"></i>' +
+  // la sfumatura si interpola in OKLCH (non passa dal grigio a metà); dove non si può, quella di prima
+  const legendHTML = (k) => '<span class="t-grad" aria-hidden="true"><i style="background:linear-gradient(90deg, ' + stops + ');background:linear-gradient(90deg in oklch, ' + stops + ')"></i>' +
     '<span class="t-ticks"><span style="left:16.67%">−' + k + '%</span><span style="left:50%">0</span><span style="left:83.33%">+' + k + "%</span></span></span>" +
     '<span class="t-nd"><i style="background:' + G.NO_DATA + '"></i>' + G.L("nessun dato", "no data") + "</span>" +
     '<span class="sr-only">' + (k === 1 ? G.L("Rosso se la Borsa è scesa, verde se è salita: più è intenso, più è ampia la variazione, fino a 1% o più. Grigio se oggi non c'è il dato.",

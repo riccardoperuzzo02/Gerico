@@ -575,6 +575,23 @@
     row._fade();
   };
 
+  // righe che scorrono di lato (mercati, temi dei Seguiti): i bordi sfumano con una maschera, solo dal lato dove c'è altro
+  // da vedere (classi piu-sx e piu-dx, CSS .bordi). Si rifà quando la riga scorre, cambia larghezza o cambia contenuto
+  G.bordi = (el) => {
+    if (!el) return;
+    if (el._bordi) { el._bordi(); return; }
+    el.classList.add("bordi");
+    el._bordi = () => {
+      const max = el.scrollWidth - el.clientWidth;
+      el.classList.toggle("piu-sx", max > 2 && el.scrollLeft > 4);
+      el.classList.toggle("piu-dx", max > 2 && max - el.scrollLeft > 4);
+    };
+    el.addEventListener("scroll", el._bordi, { passive: true });
+    if ("ResizeObserver" in window) new ResizeObserver(el._bordi).observe(el);
+    if ("MutationObserver" in window) new MutationObserver(el._bordi).observe(el, { childList: true });
+    el._bordi();
+  };
+
   // controllo segmentato: un indicatore scivola sotto la scelta attiva.
   // Si animano solo transform e opacity: per la larghezza si usa FLIP (si parte scalati e si torna a scala 1).
   // dove portare il binario perché una scheda (x, w) stia al centro, senza andare oltre i bordi
@@ -714,7 +731,7 @@
       const on = bs.findIndex(accesa);
       sel.value = on >= 0 ? String(on) : "";
       const scritta = on >= 0 && !opt.invito ? nomeDi(bs[on]) : (opt.invito || (on >= 0 ? nomeDi(bs[on]) : ""));
-      const bh = '<span>' + G.esc(scritta) + '</span><svg aria-hidden="true" width="12" height="8" viewBox="0 0 12 8"><path d="M1.5 1.5 6 6l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      const bh = '<span>' + G.esc(scritta) + '</span><svg aria-hidden="true" width="12" height="8" viewBox="0 0 12 8"><path d="M1.5 1.5 6 6l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>';
       if (btn._html !== bh) { btn.innerHTML = bh; btn._html = bh; }
       const lh = bs.map((b, i) => '<li role="presentation"><button type="button" role="option" data-i="' + i + '" aria-selected="' + (i === on) + '">' + G.esc(nomeDi(b)) + "</button></li>").join("");
       if (lista._html !== lh) { lista.innerHTML = lh; lista._html = lh; }
@@ -1131,7 +1148,7 @@
   // resta nella pagina da un passaggio all'altro: cambia solo la voce accesa
   G.tabbar = (() => {
     let bar = null, asked = false;
-    const svg = (body, cls) => '<svg' + (cls ? ' class="' + cls + '"' : "") + ' aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + body + "</svg>";
+    const svg = (body, cls) => '<svg' + (cls ? ' class="' + cls + '"' : "") + ' aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + body + "</svg>";
     const ICON = {
       notizie: svg('<rect x="3.5" y="4.5" width="17" height="15" rx="3"/><path d="M7.5 9h9M7.5 12.5h9M7.5 16h5"/>'),
       terminal: svg('<path d="M3.5 17l5.2-5.6 3.8 3.3 7.5-8.2"/><path d="M15.2 6.5h4.8v4.8"/>'),
@@ -1833,7 +1850,7 @@
         if (head && !menu.querySelector(".cerca-menu")) {
           const c = document.createElement("div");
           c.className = "opt cerca-menu";
-          c.innerHTML = '<button type="button" class="cerca-b" data-cerca><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>' +
+          c.innerHTML = '<button type="button" class="cerca-b" data-cerca><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>' +
             G.L("Cerca tra le notizie", "Search the news") + "</span></button>";
           head.after(c);
           c.addEventListener("click", (e) => { if (e.target.closest("[data-cerca]")) { e.stopPropagation(); G.cerca.apri(); } });
@@ -1940,12 +1957,18 @@
     CHN: ["Cina", "CSI 300"], FRA: ["Francia", "CAC 40"], CHE: ["Svizzera", "SMI"], DEU: ["Germania", "DAX"],
     IND: ["India", "Nifty 50"], NLD: ["Paesi Bassi", "AEX"], ITA: ["Italia", "FTSE MIB"], BRA: ["Brasile", "Bovespa"]
   };
-  G.NO_DATA = "#4A505C";
+  // i colori dei quadrati, costruiti in OKLCH: a ogni gradino rosso e verde hanno la stessa luminosità e quasi la stessa
+  // intensità, così un −0,7% e un +0,7% pesano uguale a occhio. Dove OKLCH non c'è, gli stessi gradini in esadecimale
+  const OKLCH = !!(window.CSS && CSS.supports && CSS.supports("color", "oklch(0.5 0.1 150)"));
+  const col = (ok, hex) => (OKLCH ? ok : hex);
+  G.NO_DATA = col("oklch(0.43 0.02 260)", "#4A505C");
+  const B = [col("oklch(0.52 0.18 27)", "#B3261E"), col("oklch(0.43 0.145 26)", "#8C1F1A"), col("oklch(0.34 0.095 25)", "#56201C"),
+    col("oklch(0.34 0.08 152)", "#1B4A33"), col("oklch(0.43 0.115 152)", "#0D5F32"), col("oklch(0.52 0.145 150)", "#0F7A3F")];
   G.BANDS = [
-    ["#B3261E", G.L("−1% o meno", "−1% or less")], ["#8C1F1A", G.L("da −1 a −0,5", "−1 to −0.5")], ["#56201C", G.L("da −0,5 a 0", "−0.5 to 0")],
-    ["#1B4A33", G.L("da 0 a +0,5", "0 to +0.5")], ["#0D5F32", G.L("da +0,5 a +1", "+0.5 to +1")], ["#0F7A3F", G.L("+1% o più", "+1% or more")]
+    [B[0], G.L("−1% o meno", "−1% or less")], [B[1], G.L("da −1 a −0,5", "−1 to −0.5")], [B[2], G.L("da −0,5 a 0", "−0.5 to 0")],
+    [B[3], G.L("da 0 a +0,5", "0 to +0.5")], [B[4], G.L("da +0,5 a +1", "+0.5 to +1")], [B[5], G.L("+1% o più", "+1% or more")]
   ];
-  G.band = (c) => (typeof c !== "number" ? G.NO_DATA : c >= 1 ? "#0F7A3F" : c >= 0.5 ? "#0D5F32" : c >= 0 ? "#1B4A33" : c > -0.5 ? "#56201C" : c > -1 ? "#8C1F1A" : "#B3261E");
+  G.band = (c) => (typeof c !== "number" ? G.NO_DATA : c >= 1 ? B[5] : c >= 0.5 ? B[4] : c >= 0 ? B[3] : c > -0.5 ? B[2] : c > -1 ? B[1] : B[0]);
 
   G.squarify = (items, W, H) => {
     const total = items.reduce((s, i) => s + i.value, 0) || 1;
@@ -3473,7 +3496,7 @@
       let corpo = "";
       if (elenco) {
         corpo = '<ul class="pc-elenco">' + Object.keys(ETICHETTE).map((x) => '<li><button type="button" class="pc-voce" data-pc-vai="' + x + '"><span class="pc-voce-k">' + G.esc(ETICHETTE[x]()) + '</span><span class="pc-voce-v">' +
-          (x === "paese" ? G.flag(G.paese()) : "") + G.esc(adesso(x)) + '</span><svg aria-hidden="true" width="9" height="16" viewBox="0 0 9 16"><path d="M1.5 1.5 7.5 8l-6 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>').join("") + "</ul>" +
+          (x === "paese" ? G.flag(G.paese()) : "") + G.esc(adesso(x)) + '</span><svg aria-hidden="true" width="9" height="16" viewBox="0 0 9 16"><path d="M1.5 1.5 7.5 8l-6 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></li>').join("") + "</ul>" +
           '<div class="pc-extra"><button type="button" class="pc-link" data-pc="rifai">' + L("Rifai il percorso dall'inizio", "Take the tour again") + '</button><button type="button" class="pc-link" data-pc="azzera">' + L("Azzera le scelte", "Clear the choices") + "</button></div>";
       } else if (p.q) corpo = await I.scelte(p.q, I.pulito(I.leggi())[p.q.k] || []);
       else if (p.c) corpo = p.c();

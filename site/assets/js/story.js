@@ -5,8 +5,8 @@ G.page("story", async function (P) {
   const $ = (id) => document.getElementById(id);
   G.initPrefs();
 
-  const CHEV = '<svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg>';
-  const back = '<a class="back" id="back" href="index.html" data-dir="back"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>' + G.L("Prima pagina", "Front page") + "</a>";
+  const CHEV = '<svg class="chev" aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l4 4 4-4"/></svg>';
+  const back = '<a class="back" id="back" href="index.html" data-dir="back"><svg aria-hidden="true" width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2 2 8l6 6"/></svg>' + G.L("Prima pagina", "Front page") + "</a>";
   const topBar = '<div class="story-top">' + back + '<button type="button" class="share" id="share">' + G.L("Condividi", "Share") + "</button></div>";
   const id = new URLSearchParams(location.search).get("id") || "";
   const [ed, mk0, qt] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes")]);

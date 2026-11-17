@@ -3175,3 +3175,120 @@ html.nuova body.term .t-agenda li.next.soon::before { left: 0; top: 10px; bottom
 .tv-revoca { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
 .tv-revoca [data-tv-stato]:empty { display: none; }
 .tv-revoca [data-tv-stato] { font-size: 0.875rem; color: var(--muted); }
+
+/* ==========================================================================================================
+   Regole di disegno (17 novembre), per tutto il sito
+   ========================================================================================================== */
+
+/* 1. Angoli annidati: l'angolo di dentro è quello di fuori meno lo spazio tra i due. Binari delle schede e interruttore
+      Notizie/Terminal (spazio 2 px), barra in basso (4 px), elenco dei menu a tendina (4 px) */
+html.nuova .seg > a, html.nuova .seg > button, html.nuova .seg-ind,
+html.nuova .mode > a, html.nuova .mode .seg-ind { border-radius: max(0px, calc(var(--r) - 2px)) !important; }
+html.nuova .sec-nav .seg > a, html.nuova .sec-nav .seg-ind { border-radius: 0 !important; }
+html.nuova .tendina-l { padding: 4px; }
+html.nuova .tendina-l button { border-radius: max(0px, calc(var(--r) - 4px)) !important; }
+@media (max-width: 759px) { html.nuova .pb-i { border-radius: max(0px, calc(var(--r) - 4px)) !important; } }
+
+/* 2. Bordi con il colore in trasparenza: si fondono con qualsiasi fondo (blu chiaro sul blu notte, blu inchiostro sul
+      bianco) */
+html.nuova { --rule: rgb(18 29 54 / 0.1); }
+@media (prefers-color-scheme: dark) { html.nuova:not([data-theme="light"]) { --rule: rgb(170 195 255 / 0.12); } }
+html.nuova[data-theme="dark"] { --rule: rgb(170 195 255 / 0.12); }
+html.nuova body.term {
+  --t-rule: rgb(170 195 255 / 0.12); --t-rule-2: rgb(170 195 255 / 0.075); --t-line: rgb(170 195 255 / 0.24);
+  --t-box-line: rgb(170 195 255 / 0.12); --rule: var(--t-rule);
+}
+.tmap .tile { border-color: rgb(4 8 18 / 0.85); }
+html.nuova body.term .t-agenda .im.basso { border-color: rgb(255 255 255 / 0.12); }
+
+/* 3. Colori costruiti in OKLCH: a parità di luminosità rosso e verde pesano uguale (salita e discesa, i quadrati dei
+      mercati, il tono delle notizie). Dove OKLCH non c'è restano i colori di prima */
+@supports (color: oklch(0 0 0)) {
+  :root { --up: oklch(0.5 0.13 152); --down: oklch(0.5 0.17 27); --mk-up: oklch(0.5 0.13 152); --mk-down: oklch(0.5 0.17 27); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --up: oklch(0.78 0.15 155); --down: oklch(0.78 0.12 27); } }
+  :root[data-theme="dark"] { --up: oklch(0.78 0.15 155); --down: oklch(0.78 0.12 27); }
+  body.term { --t-up: oklch(0.78 0.15 155); --t-down: oklch(0.78 0.12 27); }
+  .s-bar .b-neu { background: oklch(0.46 0.035 265); }
+  .s-lab.l-pos { background: oklch(0.78 0.15 155 / 0.16); }
+  .s-lab.l-neg { background: oklch(0.78 0.12 27 / 0.16); }
+}
+
+/* 4. Sfumature interpolate in OKLCH: non passano dal grigio a metà */
+@supports (background: linear-gradient(in oklch, red, blue)) {
+  html.nuova .ultim-v::before { background: linear-gradient(90deg in oklch, var(--ground), transparent); }
+  html.nuova .ultim-v::after { background: linear-gradient(270deg in oklch, var(--ground), transparent); }
+  .sk i::after { background: linear-gradient(90deg in oklch, transparent, rgba(255, 255, 255, 0.45), transparent); }
+}
+
+/* 5. Icone: il tratto è spesso quanto le aste del testo accanto (misurate sul carattere del sito, peso e corpo
+      compresi). Le frecce delle righe del menu, «Più notizie», «Prossima notizia» stanno accanto a testo nero a 16-17 px */
+.menu-links a::after, .menu-links button::after, .more::after, .next a::after {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 14'%3E%3Cpath d='M1.6 1.6 6.4 7l-4.8 5.4' fill='none' stroke='%23000' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 14'%3E%3Cpath d='M1.6 1.6 6.4 7l-4.8 5.4' fill='none' stroke='%23000' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+/* agenda: la freccia della riga sta accanto al nome dell'evento (testo normale), quella di «Già usciti» al testo nero */
+.t-agenda .ev-b::after {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'%3E%3Cpath d='M1.6 1.6 7 6.4l5.4-4.8' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'%3E%3Cpath d='M1.6 1.6 7 6.4l5.4-4.8' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.t-ff-week > summary::before {
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'%3E%3Cpath d='M1.6 1.6 7 6.4l5.4-4.8' fill='none' stroke='%23000' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'%3E%3Cpath d='M1.6 1.6 7 6.4l5.4-4.8' fill='none' stroke='%23000' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* 6. Righe che scorrono di lato: i bordi sfumano con una maschera (dal 15% e dall'85%), solo dal lato dove c'è altro da
+      vedere. Barra delle sezioni, mercati in prima pagina, temi dei Seguiti (classe .bordi, la mette G.bordi) */
+.home .sec-nav .sn-velo { display: none; }
+.home .sec-nav.piu-sx #sections, .bordi.piu-sx {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%); mask-image: linear-gradient(90deg, transparent, #000 15%);
+}
+.home .sec-nav.piu-dx #sections, .bordi.piu-dx {
+  -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent);
+}
+.home .sec-nav.piu-sx.piu-dx #sections, .bordi.piu-sx.piu-dx {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent); mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent);
+}
+/* i nastri che scorrono da soli: sfumati sempre ai due lati, nelle stesse proporzioni. L'ultim'ora resta con i veli del
+   suo colore (una maschera su una fascia che si muove si ridisegna a ogni fotogramma), larghi uguale */
+.tv-tape, .tv-card .tv-tape {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent); mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent);
+}
+.tv-card.tv-chiede .tv-tape { -webkit-mask-image: none; mask-image: none; }
+.fonti-v { -webkit-mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent); mask-image: linear-gradient(90deg, transparent, #000 15% 85%, transparent); }
+@media (prefers-reduced-motion: reduce) { .fonti-v { -webkit-mask-image: none; mask-image: none; } }
+html.nuova .ultim-v::before, html.nuova .ultim-v::after { width: 15%; }
+
+/* 7. Icone che si scambiano (riproduci e pausa, l'orecchio e le barre che ballano): quella che esce sfuma, si sfoca e
+      rimpicciolisce, quella che entra fa il contrario */
+.ls-btn > svg, .gp-play > svg, .ultim-p > svg { grid-area: 1 / 1; display: block; }
+.ls-btn .i-pause, .listen.playing .ls-btn .i-play, .gp .i-pause, .gp.playing .i-play, .ultim-p .i-play, .ultim.paused .ultim-p .i-pause {
+  display: block; opacity: 0; filter: blur(4px); transform: scale(0.6);
+}
+.listen.playing .ls-btn .i-pause, .gp.playing .i-pause, .ultim.paused .ultim-p .i-play { opacity: 1; filter: none; transform: none; }
+@media (max-width: 759px) {
+  html.nuova .pb-i .pb-eq { display: block; position: absolute; top: 8px; left: 50%; margin-left: -11px; opacity: 0; filter: blur(4px); transform: scale(0.6); }
+  html.nuova .pb-i.playing .pb-ear { display: block; opacity: 0; filter: blur(4px); transform: scale(0.6); }
+  html.nuova .pb-i.playing .pb-eq { opacity: 1; filter: none; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ls-btn > svg, .gp-play > svg, .ultim-p > svg, html.nuova .pb-i .pb-ear, html.nuova .pb-i .pb-eq {
+    transition: opacity 200ms var(--ease), filter 200ms var(--ease), transform 260ms var(--ease);
+  }
+}
+
+/* 8. Al buio la profondità la danno le superfici più chiare, non le ombre (che quasi non si vedono): menu a tendina un
+      gradino più chiaro, fogli con un filo di luce sul bordo alto, riquadri del Terminal più chiari del fondo */
+@media (prefers-color-scheme: dark) {
+  html.nuova:not([data-theme="light"]) .tendina-l { background: var(--fill); box-shadow: 0 0 0 1px rgb(170 195 255 / 0.14), 0 12px 32px rgba(0, 0, 0, 0.35); }
+  html.nuova:not([data-theme="light"]) .menu { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), var(--sheet-shadow); }
+}
+html.nuova[data-theme="dark"] .tendina-l, html.nuova body.term .tendina-l { background: var(--fill); box-shadow: 0 0 0 1px rgb(170 195 255 / 0.14), 0 12px 32px rgba(0, 0, 0, 0.35); }
+html.nuova[data-theme="dark"] .menu, html.nuova body.term .menu { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08), var(--sheet-shadow); }
+body.term { --t-box: #13203B; }
+@media (hover: hover) { html.nuova body.term a.m-card:hover, html.nuova body.term .t-vals button:hover { background: #1A2A4A; } }
+
+/* 9. Altezze a tutto schermo con dvh (l'altezza vera, anche quando Safari mostra o nasconde le sue barre) */
+main { min-height: calc(100vh - var(--top-h)); min-height: calc(100dvh - var(--top-h)); }
+.tendina-l { max-height: min(60vh, 420px); max-height: min(60dvh, 420px); }
+.pc-corpo { padding-top: clamp(20px, 7dvh, 72px); }
+.pc-marchio { margin-bottom: clamp(20px, 6dvh, 56px); }

@@ -22,9 +22,10 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261116-9">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261117-1">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -45,7 +46,7 @@
 <div class="menu-in">
 <div class="grab" aria-hidden="true"></div>
 <div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-<nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a></nav>
+<nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="glossario">Glossario</a><a href="archivio">Archivio</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a></nav>
 <div class="opt"><p class="opt-l" id="opt-lang">Lingua</p><div class="seg seg-fill" role="group" aria-labelledby="opt-lang"><button type="button" data-lang-set="it" lang="it">Italiano</button><button type="button" data-lang-set="en" lang="en">English</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-theme">Tema</p><div class="seg seg-fill" role="group" aria-labelledby="opt-theme"><button type="button" data-theme-set="light">Chiaro</button><button type="button" data-theme-set="dark">Scuro</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
@@ -66,12 +67,12 @@
 
 <footer class="foot">
 <div class="wrap">
-<p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+<p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="archivio">Archivio</a><a href="glossario">Glossario</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
 </div>
 </footer>
 
 <!--storie--><noscript><div class="wrap prose"><h2>Le notizie di oggi</h2><ul><li><a href="/s/2026-10-07-hormuz-on-peace">Iran-Usa: terza portaerei americana nell&#x27;area, Teheran non aspetterà l&#x27;attacco</a></li><li><a href="/s/2026-10-07-ucraina-allarme">Ucraina: Zelensky dice che colpito il 55% della raffinazione russa</a></li><li><a href="/s/2026-11-14-trump-xi-putin-shenzhen">Cina: Trump, Xi e Putin si vedranno a Shenzhen a margine dell&#x27;Apec</a></li><li><a href="/s/2026-11-17-ye-houthi-aden-comandante-saudita">Yemen: Houthi a 60 km da Aden, Riad cambia il comandante della coalizione</a></li><li><a href="/s/2026-10-27-israele-elezioni">Israele: Eisenkot cerca i 61 seggi, gli ultraortodossi chiedono garanzie</a></li><li><a href="/s/2026-11-16-ee-confine-russia-chiuso">Estonia: chiude i valichi con la Russia dopo l&#x27;attacco a un&#x27;azienda di droni</a></li><li><a href="/s/2026-11-09-wall-street-ia-chip">Borse: Wall Street cala del 2% con Nvidia, in ribasso anche l&#x27;Asia</a></li><li><a href="/s/2026-11-11-nvidia-huang-cina">Nvidia: Jensen Huang si dimette da amministratore delegato</a></li><li><a href="/s/2026-11-16-ue-ruanda-hub-rimpatri">Ue: cinque paesi annunciano hub in Ruanda per i richiedenti asilo respinti</a></li><li><a href="/s/2026-11-16-it-patrimoniale-campo-largo">Opposizioni: tre proposte diverse per tassare i grandi patrimoni</a></li><li><a href="/s/2026-11-13-it-manovra-giorgetti-emendamenti">Manovra: Giorgetti apre a modifiche coperte, critiche da Upb e Messina</a></li><li><a href="/s/2026-11-14-it-scuola-tagli-stralciati">Scuola: il governo toglie dalla manovra i tagli al personale</a></li><li><a href="/s/2026-11-13-brent-trump-iran-gas">Petrolio: Brent a 96,93 dollari venerdì, energetici in testa a Wall Street</a></li><li><a href="/s/2026-11-16-cz-praga-media-pubblici">Praga: in piazza per i media pubblici contro la riforma del governo Babiš</a></li><li><a href="/s/2026-11-16-it-manovra-sanita-regioni-bonus">Manovra: le Regioni dicono che 500 milioni per la sanità non bastano</a></li><li><a href="/s/2026-11-16-anthropic-ipo-nasdaq">Anthropic: l&#x27;Ipo al Nasdaq attesa questa settimana, esclusi i fondi cinesi</a></li><li><a href="/s/2026-11-17-it-de-gennaro-depistaggio-via-damelio">Caltanissetta: De Gennaro indagato per i depistaggi sulla strage di via D&#x27;Amelio</a></li><li><a href="/s/2026-11-17-us-chip-accesso-remoto-cina">Stati Uniti: nuove regole contro l&#x27;accesso remoto della Cina ai chip avanzati</a></li><li><a href="/s/2026-11-17-it-allarmi-bomba-scuole-mail">Italia: nuovi allarmi bomba via mail alle scuole, nessuna evacuazione</a></li><li><a href="/s/2026-11-17-us-banche-guasto-jpmorgan-united">Stati Uniti: guasti ai conti online delle grandi banche e ai sistemi di United</a></li><li><a href="/s/2026-11-16-it-revolut-amministrazione-giudiziaria">Milano: il tribunale mette Revolut Bank sotto amministrazione giudiziaria</a></li><li><a href="/s/2026-11-16-ua-record-droni-ponte-crimea">Kiev: colpiti due ponti sul Dnipro, Mosca dice di aver subito attacchi</a></li></ul></div></noscript><!--/storie-->
-<script src="assets/js/common.js?v=20261116-9"></script>
-<script src="assets/js/home.js?v=20261116-9"></script>
+<script src="assets/js/common.js?v=20261117-1"></script>
+<script src="assets/js/home.js?v=20261117-1"></script>
 </body>
 </html>

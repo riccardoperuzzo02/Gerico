@@ -63,12 +63,12 @@
     // pagine
     "GERICO · Le notizie del giorno, scritte su tutte le fonti": "GERICO · The day's news, written from every source",
     "GERICO Terminal · I mercati a colpo d'occhio": "GERICO Terminal · Markets at a glance",
-    "Una storia · GERICO": "A story · GERICO", "Come funziona · GERICO": "How it works · GERICO", "Privacy · GERICO": "Privacy · GERICO",
+    "Una storia · GERICO": "A story · GERICO", "Come funziona · GERICO": "How it works · GERICO", "Privacy · GERICO": "Privacy · GERICO", "Glossario · GERICO": "Glossary · GERICO",
     "Pagina non trovata · GERICO": "Page not found · GERICO",
     "Vai alle notizie": "Skip to the news", "Vai alla storia": "Skip to the story", "Vai alla mappa": "Skip to the map", "Vai al testo": "Skip to the text",
     "GERICO, prima pagina": "GERICO, front page", "Oggi": "Today", "Notizie o Terminal": "News or Terminal", "Notizie": "News",
     "Menu": "Menu", "Ultim'ora": "Latest", "Ferma lo scorrimento": "Pause the ticker", "Chiudi il menu": "Close the menu", "Pagine": "Pages",
-    "Come funziona": "How it works", "Collabora": "Collaborate", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
+    "Come funziona": "How it works", "Collabora": "Collaborate", "Archivio": "Archive", "Glossario": "Glossary", "Tema": "Theme", "Chiaro": "Light", "Scuro": "Dark", "Testo": "Text", "Normale": "Normal",
     "Grande": "Large", "Molto grande": "Very large", "Lingua": "Language", "Ascolta il riepilogo": "Listen to the briefing",
     "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
     "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Gruppi di mercati": "Market groups", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
@@ -145,7 +145,7 @@
     en: {
       edition: ["title", "summary", "article", "view", "change", "open", "text", "point", "says", "angle", "label"],
       brevi: ["title"], markets: ["summary", "label", "note", "why"], agenda: ["event", "note"], terminal: ["label", "note"],
-      titoli: ["why", "risk", "signal", "note"]
+      titoli: ["why", "risk", "signal", "note"], archivio: ["t", "s"]
     },
     it: { calendario: ["title"], sentiment: ["title"] }
   };
@@ -1741,6 +1741,29 @@
         draw();
         if (G.en) G.load("tr/" + G.lang).then((m) => { if (m && typeof m === "object") { trMap = m; draw(); } });
         G.conto.menu(menu, box);
+        // la ricerca in cima al menu: ha l'aspetto di un campo e apre il foglio della ricerca
+        const head = menu.querySelector(".menu-head");
+        if (head && !menu.querySelector(".cerca-menu")) {
+          const c = document.createElement("div");
+          c.className = "opt cerca-menu";
+          c.innerHTML = '<button type="button" class="cerca-b" data-cerca><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>' +
+            G.L("Cerca tra le notizie", "Search the news") + "</span></button>";
+          head.after(c);
+          c.addEventListener("click", (e) => { if (e.target.closest("[data-cerca]")) { e.stopPropagation(); G.cerca.apri(); } });
+        }
+        // «Installa GERICO» in fondo alle pagine del menu, solo se il browser lo permette e il sito non è già installato
+        const pagine = menu.querySelector("nav.menu-links");
+        if (pagine && !pagine.querySelector("[data-app]")) {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.dataset.app = "1";
+          b.textContent = G.L("Installa GERICO", "Install GERICO");
+          const vedi = () => { b.hidden = !G.app.puo(); };
+          vedi();
+          pagine.appendChild(b);
+          P.on(document, "gerico:app", vedi);
+          b.addEventListener("click", (e) => { e.stopPropagation(); G.app.installa(); });
+        }
         // un tema del menu apre i Seguiti su quel tema, «Tutti i Seguiti» su tutti, «Aggiungi o togli temi» con la modifica
         // aperta: lo dice alla prima pagina (se è questa) e lo lascia in memoria di sessione per quando ci si arriva da
         // un'altra pagina (la prima pagina tiene il tema scelto per tutta la visita)
@@ -2275,6 +2298,21 @@
     if (cur) { cur.focus({ preventScroll: true }); cur.scrollIntoView({ block: "center" }); }
   };
 
+  // ---------- i Principali: la prima scheda dei mercati in prima pagina, con i mercati scelti da chi legge (fino a sei,
+  // nell'ordine in cui li ha scelti). Restano nel browser (gerico.principali) e, con l'account, nell'account. Senza una
+  // scelta la scheda la fa GERICO (con i mercati dei tuoi interessi). Ogni cambio manda l'evento gerico:principali ----------
+  G.principali = (() => {
+    const K = "gerico.principali", OK = /^[A-Za-z0-9^=.\-]{1,20}$/;
+    const pulito = (v) => (Array.isArray(v) ? Array.from(new Set(v.filter((x) => typeof x === "string" && OK.test(x)))).slice(0, 6) : []);
+    const leggi = () => { const v = pulito(G.ls.get(K, null)); return v.length ? v : null; };
+    const scrivi = (v, sync) => {
+      const x = pulito(v);
+      G.ls.set(K, x.length ? x : null);
+      document.dispatchEvent(new CustomEvent("gerico:principali", { detail: { sync: !!sync } }));
+    };
+    return { leggi, scrivi, pulito, MAX: 6 };
+  })();
+
   // ---------- i tuoi interessi: sezioni, mercati, come leggi (e i temi da seguire) ----------
   // Restano nel browser (gerico.interessi) e, con l'account, nell'account. Cambiano il sito in modo che si veda: le sezioni
   // scelte vengono prima nella barra; in Tutte, a parità di importanza, prima le storie delle sezioni e dei temi che ti
@@ -2479,6 +2517,7 @@
     document.addEventListener("gerico:follows", (e) => cambio(e, () => ({ temi: G.follows() })));
     document.addEventListener("gerico:paese", (e) => cambio(e, () => ({ paese: G.paese() })));
     document.addEventListener("gerico:interessi", (e) => cambio(e, () => ({ interessi: G.interessi.leggi() })));
+    document.addEventListener("gerico:principali", (e) => cambio(e, () => ({ principali: G.principali.leggi() || [] })));
     const uguali = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
     // primo: primo accesso su questo dispositivo, i temi del browser si aggiungono a quelli dell'account
     const unisci = (p, primoQui) => {
@@ -2492,12 +2531,14 @@
         }
         if (p.paese && p.paese !== G.paese()) G.setPaese(p.paese, true);
         if (p.interessi && JSON.stringify(G.interessi.pulito(p.interessi)) !== JSON.stringify(G.interessi.pulito(G.interessi.leggi()))) G.interessi.scrivi(p.interessi, true);
+        if (Array.isArray(p.principali) && !uguali(G.principali.pulito(p.principali), G.principali.leggi() || [])) G.principali.scrivi(p.principali, true);
       } finally { applico = false; }
       const cambia = {};
       if (srv === null || !uguali(temi, srv)) cambia.temi = temi;
       if (!p.paese) cambia.paese = G.paese();
       const mie = G.interessi.pulito(G.interessi.leggi());
       if (!p.interessi && (mie.fatto || mie.sezioni.length || mie.mercati.length || mie.lettura.length)) cambia.interessi = mie;
+      if (!Array.isArray(p.principali) && G.principali.leggi()) cambia.principali = G.principali.leggi();
       if (Object.keys(cambia).length) salva(cambia);
     };
     // la risposta di /api/io: chi sei per il Worker
@@ -2519,7 +2560,7 @@
       G.ls.set(K, nota_(io));
       G.ls.set(GIA, true);
       // modifiche fatte qui e non ancora arrivate al server: vince questo browser
-      if (G.ls.get(SOSPESO, false)) salva({ temi: G.follows(), paese: G.paese(), interessi: G.interessi.leggi() });
+      if (G.ls.get(SOSPESO, false)) salva({ temi: G.follows(), paese: G.paese(), interessi: G.interessi.leggi(), principali: G.principali.leggi() || [] });
       else unisci(io.prefs || {}, primoQui);
       if (cambiato) avvisa();
       return d;
@@ -2722,12 +2763,13 @@
         riga(L("Temi seguiti", "Followed topics"), p.temiSeguiti.length ? p.temiSeguiti.map((t) => G.esc(G.tn(t))).join(", ") : L("nessuno", "none")) +
         riga(L("Paese", "Country"), p.paese ? G.flag(p.paese) + " " + G.esc(G.paeseNome(p.paese)) : "—") +
         (p.interessi && G.interessi.testo(p.interessi, p.paese) ? riga(L("Interessi", "Interests"), G.esc(G.interessi.testo(p.interessi, p.paese))) : "") +
+        (Array.isArray(p.principali) && p.principali.length ? riga(L("I tuoi Principali", "Your key markets"), G.esc(p.principali.join(", "))) : "") +
         riga("Passkey", x.passkey.map((k) => G.esc(L("creata il ", "created ") + q(k.creata) + (k.usata ? L(", usata l'ultima volta il ", ", last used ") + q(k.usata) : "") + (k.sincronizzata ? L(" (sincronizzata tra i tuoi dispositivi)", " (synced across your devices)") : ""))).join("<br>")) +
         riga(L("Accessi aperti", "Open sessions"), String(x.sessioni.length) + " " + G.esc(L("(uno per ogni browser dove sei entrato)", "(one for each browser you've signed in on)"))) + "</dl>" +
         '<div class="conto-az conto-col"><a class="conto-b" href="/api/miei-dati" download="gerico-i-miei-dati.json">' + L("Scarica i tuoi dati", "Download your data") + "</a>" +
         '<button type="button" class="conto-b rischio" data-conto-f="cancella">' + L("Cancella l'account", "Delete the account") + "</button></div>" +
         '<div class="conto-conferma" hidden><p class="conto-p"><b>' + L("Cancelli l'account e tutto quello che GERICO ha salvato con lui", "You delete the account and everything GERICO saved with it") + "</b>: " +
-        L("nome, email, passkey, accessi, temi, paese e interessi. Subito, senza ritorno. In questo browser temi e paese restano, come prima dell'account.", "name, email, passkeys, sessions, topics, country and interests. Right away, for good. In this browser your topics and country stay, as before the account.") + "</p>" +
+        L("nome, email, passkey, accessi, temi, paese, interessi e mercati scelti. Subito, senza ritorno. In questo browser temi e paese restano, come prima dell'account.", "name, email, passkeys, sessions, topics, country, interests and chosen markets. Right away, for good. In this browser your topics and country stay, as before the account.") + "</p>" +
         '<div class="conto-az"><button type="button" class="conto-b rischio" data-conto-f="si">' + L("Sì, cancella tutto", "Yes, delete everything") + '</button><button type="button" class="conto-b" data-conto-f="annulla">' + L("Annulla", "Cancel") + "</button></div>" +
         '<p class="conto-err" role="alert"></p></div>';
       const conf = box.querySelector(".conto-conferma");
@@ -2818,7 +2860,7 @@
     };
 
     // ---------- a ogni pagina: chi sei, la proposta dell'account, il conteggio della visita ----------
-    const PAGINE = { "/": "prima-pagina", "/storia": "storia", "/terminal": "terminal", "/come-funziona": "come-funziona", "/privacy": "privacy", "/admin": "admin" };
+    const PAGINE = { "/": "prima-pagina", "/storia": "storia", "/terminal": "terminal", "/come-funziona": "come-funziona", "/privacy": "privacy", "/glossario": "glossario", "/admin": "admin" };
     const pagina_ = () => PAGINE[location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/")] || "";
     const dispositivo = () => {
       const tocco = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches);
@@ -2828,10 +2870,22 @@
     // anche su ogni dispositivo dove è entrato con l'account dell'amministratore
     // (se nella pagina admin ha scelto «Contale», su quel dispositivo si contano anche da amministratore)
     const nonContare = () => { const v = G.ls.get("gerico.nonContare", null); return v === true || (v === null && !!(G.ls.get("gerico.conto", null) || {}).admin); };
+    // con la visita: da dove arriva (solo il nome del sito, solo alla prima pagina della visita in questa scheda) e, nelle
+    // storie, quale storia. Niente di chi legge
     const visita = () => {
       const p = pagina_();
       if (!G.CONTI || !p || p === "admin" || !navigator.sendBeacon || nonContare()) return;
-      try { navigator.sendBeacon("/api/visita", JSON.stringify({ p, c: G.paese(), l: G.lang, d: dispositivo() })); } catch (e) { /* niente */ }
+      const dati = { p, c: G.paese(), l: G.lang, d: dispositivo() };
+      try {
+        if (!sessionStorage.getItem("gerico.arrivo")) {
+          sessionStorage.setItem("gerico.arrivo", "1");
+          let r = "";
+          try { const u = new URL(document.referrer); r = u.origin === location.origin ? null : u.hostname; } catch (e) { r = ""; }
+          if (r !== null) dati.r = r;
+        }
+      } catch (e) { /* niente */ }
+      if (p === "storia") { const id = new URLSearchParams(location.search).get("id"); if (id && /^[a-z0-9][a-z0-9-]{0,150}$/.test(id)) dati.s = id; }
+      try { navigator.sendBeacon("/api/visita", JSON.stringify(dati)); } catch (e) { /* niente */ }
     };
     // gli errori di JavaScript delle pagine di GERICO: solo messaggio, file, riga e pagina, al massimo 10 per visita
     let errori = 0;
@@ -2895,6 +2949,224 @@
       utente: () => io,
       salva
     };
+  })();
+
+  // ---------- la ricerca tra le storie: l'indice dell'archivio (data/archivio.json, con l'edizione di oggi), tutto nel
+  // browser, senza mandare a nessuno quello che si cerca. Ogni parola deve esserci (nel titolo, nei temi o nel sommario);
+  // prima il titolo, poi i temi, poi il sommario, a parità la storia più recente. Anche le voci del glossario ----------
+  G.cerca = (() => {
+    const L = G.L;
+    const norm = (s) => String(s == null ? "" : s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    const parole = (q) => norm(q).split(/[^a-z0-9%€$]+/).filter((w) => w.length > 1 || /\d/.test(w)).slice(0, 8);
+    // l'inizio di una parola vale più di un pezzo nel mezzo («iran» trova Iran prima di Tirana)
+    const dentro = (testo, w) => {
+      const i = testo.indexOf(w);
+      if (i < 0) return 0;
+      if (i === 0 || !/[a-z0-9]/.test(testo[i - 1])) return 2;
+      const re = new RegExp("(^|[^a-z0-9])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+      return re.test(testo) ? 2 : 1;
+    };
+    // le parole trovate si segnano nel titolo: si cerca sul testo senza accenti, si segna sul testo vero
+    const segna = (testo, ws) => {
+      const orig = String(testo || ""), chars = Array.from(orig);
+      let n = "";
+      const da = [];
+      chars.forEach((c, i) => { const x = norm(c); for (let k = 0; k < x.length; k++) da.push(i); n += x; });
+      const su = new Array(chars.length).fill(false);
+      ws.forEach((w) => {
+        let i = n.indexOf(w);
+        while (i >= 0) { for (let k = i; k < i + w.length; k++) su[da[k]] = true; i = n.indexOf(w, i + w.length); }
+      });
+      let out = "", aperto = false;
+      chars.forEach((c, i) => {
+        if (su[i] && !aperto) { out += "<mark>"; aperto = true; }
+        if (!su[i] && aperto) { out += "</mark>"; aperto = false; }
+        out += G.esc(c);
+      });
+      return out + (aperto ? "</mark>" : "");
+    };
+    let indice = null;
+    const carica = () => indice || (indice = Promise.all([G.load("archivio"), G.load("edition"), G.load("glossario")]).then(([a, ed, gl]) => {
+      const oggi = new Set(((ed && ed.stories) || []).map((s) => s && s.id));
+      const temi = (a && a.temi) || {};
+      const storie = ((a && a.storie) || []).filter((x) => x && x.id && x.t).map((x) => ({
+        x, oggi: oggi.has(x.id), t: norm(x.t), s: norm(x.s),
+        g: norm((x.tags || []).map((t) => t + " " + G.tn(t)).concat((x.th || []).map((k) => temi[k] || "")).join(" ") + " " + G.secLabel(x.sec))
+      }));
+      const voci = ((gl && gl.voci) || []).filter((v) => v && v.id && v.it).map((v) => {
+        const lato = (G.en && v.en) || v.it;
+        return { v: lato, id: v.id, n: norm([lato.t].concat(lato.alt || [], v.it.t, v.it.alt || []).join(" ")) };
+      });
+      return { storie, voci };
+    }, () => { indice = null; return { storie: [], voci: [] }; }));
+    const trova = (ix, q) => {
+      const ws = parole(q);
+      if (!ws.length) return { ws, storie: [], voci: [] };
+      const storie = [];
+      ix.storie.forEach((r) => {
+        let p = 0;
+        for (const w of ws) {
+          const a = dentro(r.t, w), b = dentro(r.g, w), c = dentro(r.s, w);
+          if (!a && !b && !c) return;
+          p += a * 5 + b * 3 + c;
+        }
+        storie.push({ r, p });
+      });
+      storie.sort((m, n) => n.p - m.p || String(n.r.x.d || "").localeCompare(String(m.r.x.d || "")));
+      const voci = ix.voci.filter((v) => ws.every((w) => dentro(v.n, w) === 2)).slice(0, 2);
+      return { ws, storie: storie.slice(0, 30), voci };
+    };
+    const quando = (iso) => (G.isToday(iso) ? L("Oggi", "Today") : G.dayAge(iso) === 1 ? L("Ieri", "Yesterday") : G.day(iso));
+    const riga = (h, ws) => {
+      const x = h.r.x, url = h.r.oggi ? G.storyUrl(x) : "/s/" + encodeURIComponent(x.id);
+      return '<li><a href="' + url + '"><span class="cr-k">' + G.esc(G.secLabel(x.sec)) + (x.d ? " · " + G.esc(quando(x.d)) : "") +
+        '</span><span class="cr-t">' + segna(x.t, ws) + "</span></a></li>";
+    };
+    const apri = () => {
+      const f = G.conto.foglio(L("Cerca", "Search"),
+        '<form class="cerca-f" role="search" action="#" novalidate><input class="paesi-q cerca-q" type="search" name="q" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="' +
+        L("Parole, persone, paesi o temi", "Words, people, countries or topics") + '" aria-label="' + L("Cerca tra le notizie", "Search the news") + '" aria-describedby="cerca-n"></form>' +
+        '<p class="cerca-n" id="cerca-n" role="status">' + L("Cerca tra tutte le storie di GERICO, anche quelle dei giorni scorsi.", "Search every GERICO story, including those from past days.") + "</p>" +
+        '<div class="cerca-r"></div><p class="cerca-a"><a href="/archivio">' + L("Tutto l'archivio, giorno per giorno", "The whole archive, day by day") + "</a></p>");
+      const d = f.d, q = d.querySelector(".cerca-q"), nota = d.querySelector(".cerca-n"), box = d.querySelector(".cerca-r");
+      const base = nota.textContent;
+      let t = 0, giro = 0;
+      const mostra = async () => {
+        const mio = ++giro, testo = q.value.trim();
+        if (!testo) { box.innerHTML = ""; nota.textContent = base; return; }
+        const ix = await carica();
+        if (mio !== giro || f.chiuso) return;
+        const r = trova(ix, testo);
+        if (!r.ws.length) { box.innerHTML = ""; nota.textContent = L("Scrivi almeno due lettere.", "Type at least two letters."); return; }
+        const n = r.storie.length;
+        nota.textContent = n ? (n === 30 ? L("Le 30 storie più vicine a quello che cerchi.", "The 30 stories closest to your search.") : n === 1 ? L("Una storia.", "One story.") : n + L(" storie.", " stories."))
+          : r.voci.length ? L("Nessuna storia, ma c'è nel glossario.", "No stories, but it's in the glossary.") : L("Nessuna storia con queste parole. Prova con meno parole o con un nome.", "No stories with these words. Try fewer words or a name.");
+        box.innerHTML = (r.voci.length ? '<ul class="cerca-l cerca-gl">' + r.voci.map((v) => '<li><a href="glossario#' + G.esc(v.id) + '"><span class="cr-k">' + L("Glossario", "Glossary") +
+          '</span><span class="cr-t">' + G.esc(v.v.t) + '</span><span class="cr-s">' + G.esc(v.v.d) + "</span></a></li>").join("") + "</ul>" : "") +
+          (n ? '<ul class="cerca-l">' + r.storie.map((h) => riga(h, r.ws)).join("") + "</ul>" : "");
+      };
+      q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(mostra, 120); });
+      d.querySelector(".cerca-f").addEventListener("submit", (e) => { e.preventDefault(); clearTimeout(t); mostra(); q.blur(); });
+      // un risultato chiude il foglio: la storia di oggi si apre nel sito, le altre nella loro pagina
+      box.addEventListener("click", (e) => { if (e.target.closest("a[href]")) f.chiudi("vai"); });
+      carica();
+      requestAnimationFrame(() => q.focus());
+      return f;
+    };
+    // «/» apre la ricerca dalla tastiera, fuori dai campi di testo
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey || e.defaultPrevented) return;
+      const el = document.activeElement;
+      if (el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName))) return;
+      if (document.querySelector("dialog[open]")) return;
+      e.preventDefault();
+      apri();
+    });
+    return { apri, trova, norm };
+  })();
+
+  // ---------- il glossario (data/glossario.json): negli articoli la prima volta che compare una parola del glossario è
+  // sottolineata, al massimo sei per articolo; un tocco apre la spiegazione in un foglio, con il link alla pagina ----------
+  G.glossario = (() => {
+    const L = G.L;
+    let voci = {};
+    const forme = (gl) => {
+      const lato = G.en ? "en" : "it";
+      return ((gl && gl.voci) || []).map((v) => {
+        const x = v && v[lato];
+        if (!x || !x.t) return null;
+        voci[v.id] = x;
+        const f = (Array.isArray(x.m) ? x.m : [x.t].concat(x.alt || [])).filter((y) => typeof y === "string" && y).sort((a, b) => b.length - a.length);
+        if (!f.length) return null;
+        const alt = f.map((y) => y.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+        try {
+          return { id: v.id, re: new RegExp("(^|[^\\p{L}\\p{N}_])(" + alt + ")(?![\\p{L}\\p{N}_])", "gu" + (v.cs ? "" : "i")), no: (x.no || []).map((n) => String(n).toLowerCase()) };
+        } catch (e) { return null; }
+      }).filter(Boolean);
+    };
+    const collega = (root, gl, max) => {
+      if (!root || !gl) return 0;
+      const ps = Array.from(root.querySelectorAll("p")).filter((p) => p.childNodes.length === 1 && p.firstChild.nodeType === 3);
+      const trovati = [];
+      forme(gl).forEach((f) => {
+        for (let pi = 0; pi < ps.length; pi++) {
+          const t = ps[pi].textContent;
+          f.re.lastIndex = 0;
+          let m;
+          while ((m = f.re.exec(t))) {
+            const a = m.index + m[1].length, b = a + m[2].length, giro = t.slice(Math.max(0, a - 25), b + 25).toLowerCase();
+            if (!f.no.some((n) => giro.includes(n))) { trovati.push({ pi, a, b, id: f.id }); return; }
+          }
+        }
+      });
+      trovati.sort((x, y) => x.pi - y.pi || x.a - y.a);
+      const scelti = [];
+      for (const x of trovati) {
+        if (scelti.length >= (max || 6)) break;
+        if (!scelti.some((y) => y.pi === x.pi && x.a < y.b && y.a < x.b)) scelti.push(x);
+      }
+      // in ogni paragrafo da destra a sinistra: il primo pezzo di testo resta quello con le posizioni giuste
+      scelti.sort((x, y) => x.pi - y.pi || y.a - x.a).forEach((x) => {
+        const node = ps[x.pi].firstChild;
+        if (!node || node.nodeType !== 3 || node.length < x.b) return;
+        node.splitText(x.b);
+        const parola = node.splitText(x.a);
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "gl-w";
+        b.dataset.gl = x.id;
+        b.setAttribute("aria-haspopup", "dialog");
+        b.textContent = parola.data;
+        parola.replaceWith(b);
+      });
+      return scelti.length;
+    };
+    const apri = (id) => {
+      const x = voci[id];
+      if (!x) return;
+      G.conto.foglio(x.t, '<p class="conto-p gl-d">' + G.esc(x.d) + '</p><p class="cerca-a"><a href="glossario#' + G.esc(id) + '">' + L("Tutto il glossario", "The whole glossary") + "</a></p>");
+    };
+    document.addEventListener("click", (e) => {
+      const b = e.target.closest && e.target.closest("button[data-gl]");
+      if (b) apri(b.dataset.gl);
+    });
+    return { collega, apri };
+  })();
+
+  // ---------- il sito installabile: il service worker (sw.js) tiene sul dispositivo una copia di quello che si è letto,
+  // per riaprirlo senza connessione. «Installa GERICO» sta solo nel menu e solo quando il browser lo permette: nessun
+  // invito a schermo ----------
+  G.app = (() => {
+    const L = G.L;
+    let invito = null;
+    const avvisa = () => document.dispatchEvent(new CustomEvent("gerico:app"));
+    const installata = () => !!((window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true);
+    const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    // Chrome ed Edge: il loro invito in basso non compare, l'installazione parte solo dal menu
+    window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); invito = e; avvisa(); });
+    window.addEventListener("appinstalled", () => { invito = null; avvisa(); });
+    const registra = () => {
+      if (!("serviceWorker" in navigator) || location.protocol !== "https:" || G.ls.get("gerico.noSW", false)) return;
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    };
+    const dopo = () => setTimeout(registra, 2500);
+    if (document.readyState === "complete") dopo(); else window.addEventListener("load", dopo, { once: true });
+    const puo = () => !installata() && (!!invito || ios);
+    const installa = async () => {
+      if (invito) {
+        const e = invito;
+        invito = null;
+        try { await e.prompt(); await e.userChoice; } catch (x) { /* niente */ }
+        avvisa();
+        return;
+      }
+      // Safari e gli altri browser su iPhone e iPad: si aggiunge dalla condivisione
+      G.conto.foglio(L("Installa GERICO", "Install GERICO"),
+        '<p class="conto-p">' + L("Su iPhone e iPad GERICO si aggiunge alla schermata Home e si apre come un'app, anche senza connessione per le pagine già lette.", "On iPhone and iPad you can add GERICO to the Home Screen and open it like an app, even offline for pages you've already read.") + "</p>" +
+        '<ol class="app-passi"><li>' + L("Tocca il pulsante Condividi del browser (il quadrato con la freccia in su).", "Tap the browser's Share button (the square with the up arrow).") + "</li><li>" +
+        L("Scegli «Aggiungi alla schermata Home».", "Choose \u201cAdd to Home Screen\u201d.") + "</li><li>" + L("Tocca «Aggiungi».", "Tap \u201cAdd\u201d.") + "</li></ol>");
+    };
+    return { puo, installa, installata };
   })();
 
   // ---------- il percorso: le scelte a tutto schermo, una per schermata ----------

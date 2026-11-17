@@ -138,6 +138,7 @@ QUOTES = [
     ("cripto", "Cripto", [("BTC-USD", "Bitcoin"), ("ETH-USD", "Ether")]),
 ]
 SPARK = 66  # circa tre mesi di sedute
+INTRA = 60  # punti della linea della giornata, nei riquadri dei mercati in prima pagina
 
 
 def history(yf, sym):
@@ -161,6 +162,37 @@ def history(yf, sym):
             last = e
         time.sleep(4 * (i + 1))
     raise last
+
+
+def intraday(t):
+    """la linea dell'ultima seduta: i prezzi ogni cinque minuti, a ritroso dall'ultimo finché non c'è un buco di oltre
+    un'ora e mezza (la notte, il fine settimana), al massimo 24 ore (i future e le cripto si scambiano quasi sempre),
+    ridotti a INTRA punti. None se Yahoo non li dà: il riquadro resta senza linea"""
+    try:
+        h = t.history(period="5d", interval="5m", auto_adjust=False, actions=False, prepost=False)
+    except Exception:
+        return None
+    if h is None or h.empty or "Close" not in h:
+        return None
+    h = h.dropna(subset=["Close"])
+    pts = []
+    for ts, c in zip(h.index, h["Close"].tolist()):
+        try:
+            pts.append((float(ts.timestamp()), float(c)))
+        except (TypeError, ValueError, AttributeError):
+            continue
+    if len(pts) < 3:
+        return None
+    i = len(pts) - 1
+    while i > 0 and pts[i][0] - pts[i - 1][0] <= 5400 and pts[-1][0] - pts[i - 1][0] <= 86400:
+        i -= 1
+    run = pts[i:]
+    if len(run) < 3:
+        return None
+    if len(run) > INTRA:
+        run = [run[round(k * (len(run) - 1) / (INTRA - 1))] for k in range(INTRA)]
+    return {"intra": [num(c, 5) for _, c in run],
+            "intraDa": iso(dt.datetime.fromtimestamp(run[0][0], UTC)), "intraA": iso(dt.datetime.fromtimestamp(run[-1][0], UTC))}
 
 
 def market_time(ts):
@@ -223,6 +255,9 @@ def one_quote(yf, sym, name, key):
         item.update(chg=pct(1), chg1w=pct(5), chg1m=pct(21), chg3m=pct(63))
     sp = closes[-SPARK:]
     item.update(spark=[num(c, 5) for c in sp], sparkFrom=dates[-len(sp)], hi=num(max(sp)), lo=num(min(sp)))
+    day = intraday(t)
+    if day:
+        item.update(day)
     return item
 
 

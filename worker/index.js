@@ -322,6 +322,12 @@ function validaPreferenze(b) {
     }
     out.interessi = o;
   }
+  // i Principali dei mercati in prima pagina: i simboli scelti, al massimo sei (la pagina ne mostra sei)
+  if ("principali" in b) {
+    const v = b.principali;
+    if (!Array.isArray(v) || v.length > 12 || !v.every((x) => typeof x === "string" && /^[A-Za-z0-9^=.\-]{1,20}$/.test(x))) throw new Fallito(400, "principali");
+    out.principali = Array.from(new Set(v)).slice(0, 6);
+  }
   return out;
 }
 async function preferenze(c) {
@@ -347,7 +353,7 @@ async function mieiDati(c) {
     sito: c.origine,
     scaricati: iso(c.ora),
     account: { nome: p.nome, email: p.email || null, iscritto: iso(p.creato), ultimoAccesso: iso(p.ultimo) },
-    preferenze: { temiSeguiti: p.prefs.temi || [], paese: p.prefs.paese || null, interessi: p.prefs.interessi || null, aggiornate: iso(p.prefs.aggiornate) },
+    preferenze: { temiSeguiti: p.prefs.temi || [], paese: p.prefs.paese || null, interessi: p.prefs.interessi || null, principali: p.prefs.principali || null, aggiornate: iso(p.prefs.aggiornate) },
     passkey: (cr.results || []).map((r) => {
       let tr = [];
       try { tr = JSON.parse(r.trasporti); } catch (e) { tr = []; }
@@ -361,7 +367,24 @@ async function mieiDati(c) {
 }
 
 // ---------- conteggi: visite e errori delle pagine, senza cookie e senza IP ----------
-const PAGINE = new Set(["prima-pagina", "storia", "terminal", "come-funziona", "privacy"]);
+const PAGINE = new Set(["prima-pagina", "storia", "terminal", "come-funziona", "privacy", "glossario"]);
+const STORIA = /^[a-z0-9][a-z0-9-]{0,150}$/;
+// da dove arriva una visita: il nome del sito di provenienza (solo quello, mai l'indirizzo intero), raggruppato. «diretto»:
+// senza provenienza (indirizzo scritto, preferiti, app che non la dicono, come WhatsApp)
+const FONTI = [
+  [/(^|\.)news\.google\./, "google-news"], [/(^|\.)google\./, "google"], [/(^|\.)bing\.com$/, "bing"], [/(^|\.)duckduckgo\.com$/, "duckduckgo"],
+  [/(^|\.)yahoo\./, "yahoo"], [/(^|\.)ecosia\.org$/, "ecosia"], [/(^|\.)qwant\.com$/, "qwant"], [/(^|\.)instagram\.com$/, "instagram"],
+  [/(^|\.)(facebook\.com|fb\.me|messenger\.com)$/, "facebook"], [/(^|\.)(whatsapp\.com|wa\.me)$/, "whatsapp"], [/(^|\.)(t\.co|x\.com|twitter\.com)$/, "x"],
+  [/(^|\.)(linkedin\.com|lnkd\.in)$/, "linkedin"], [/(^|\.)(t\.me|telegram\.org)$/, "telegram"], [/(^|\.)reddit\.com$/, "reddit"],
+  [/(^|\.)threads\.(net|com)$/, "threads"], [/(^|\.)(chatgpt\.com|openai\.com)$/, "chatgpt"], [/(^|\.)perplexity\.ai$/, "perplexity"], [/(^|\.)claude\.ai$/, "claude"]
+];
+const fonteDi = (r) => {
+  const h = String(r || "").toLowerCase().replace(/^www\./, "");
+  if (!h) return "diretto";
+  if (!/^[a-z0-9.-]{1,80}$/.test(h) || !h.includes(".")) return "";
+  for (const [re, k] of FONTI) if (re.test(h)) return k;
+  return h.slice(0, 60);
+};
 const DISPOSITIVI = new Set(["telefono", "tablet", "computer"]);
 // un tetto per indirizzo e minuto, tenuto solo nella memoria di questo processo: nessuna scrittura in più nel database
 const finestre = new Map();
@@ -383,6 +406,14 @@ async function visita(c) {
   if (!tetto("v" + chi, 60)) return vuota();
   const st = [c.db.prepare("INSERT INTO visite (giorno, pagina, paese, lingua, dispositivo, n) VALUES (?1, ?2, ?3, ?4, ?5, 1) ON CONFLICT (giorno, pagina, paese, lingua, dispositivo) DO UPDATE SET n = n + 1")
     .bind(giorno, p, paese, lingua, disp)];
+  // la provenienza arriva solo con la prima pagina di una visita; la storia, con le pagine delle storie
+  if (typeof b.r === "string") {
+    const fonte = fonteDi(b.r);
+    if (fonte) st.push(c.db.prepare("INSERT INTO provenienze (giorno, fonte, n) VALUES (?1, ?2, 1) ON CONFLICT (giorno, fonte) DO UPDATE SET n = n + 1").bind(giorno, fonte));
+  }
+  if (p === "storia" && typeof b.s === "string" && STORIA.test(b.s)) {
+    st.push(c.db.prepare("INSERT INTO letture (giorno, storia, n) VALUES (?1, ?2, 1) ON CONFLICT (giorno, storia) DO UPDATE SET n = n + 1").bind(giorno, b.s));
+  }
   if (c.env.STATS_SALT) st.push(c.db.prepare("INSERT OR IGNORE INTO unici (giorno, hash) VALUES (?1, ?2)").bind(giorno, chi));
   await c.db.batch(st);
   if (c.ora - ultimaPulizia > 3600000) { ultimaPulizia = c.ora; c.ctx.waitUntil(pulizia(c.env).catch(() => {})); }
@@ -402,6 +433,31 @@ async function errore(c) {
   if (!tetto("e" + chi, 20)) return vuota();
   await annotaErrore(c.db, { tipo: "js", messaggio, file, riga, pagina }, c.ora);
   return vuota();
+}
+
+// ---------- segnalazioni: chi legge dice che in una storia c'è un errore. Solo il testo, la storia e la lingua: niente
+// account, niente IP, niente email. Le legge Riccardo nel gestionale; dopo 180 giorni si cancellano ----------
+async function segnala(c) {
+  await c.limite("segnala", 5);
+  await c.limite("segnala", 60, true);
+  const b = await c.corpo(4000);
+  const storia = String(b.s || ""), testo = pulisci(b.t), lingua = b.l === "en" ? "en" : "it";
+  if (!STORIA.test(storia)) throw new Fallito(400, "storia");
+  if (testo.length < 5 || testo.length > 1000) throw new Fallito(400, "testo");
+  await c.db.prepare("INSERT INTO segnalazioni (storia, testo, lingua, creata) VALUES (?1, ?2, ?3, ?4)").bind(storia, testo, lingua, c.ora).run();
+  return json({ ricevuta: true });
+}
+
+async function adminSegnalazione(c) {
+  await c.serveAdmin();
+  const b = await c.corpo(500);
+  const id = Number(b.id);
+  if (!Number.isInteger(id) || id < 1) throw new Fallito(400, "id");
+  if (b.azione === "letta") await c.db.prepare("UPDATE segnalazioni SET letta = 1 WHERE id = ?1").bind(id).run();
+  else if (b.azione === "da-leggere") await c.db.prepare("UPDATE segnalazioni SET letta = 0 WHERE id = ?1").bind(id).run();
+  else if (b.azione === "cancella") await c.db.prepare("DELETE FROM segnalazioni WHERE id = ?1").bind(id).run();
+  else throw new Fallito(400, "azione");
+  return json({ fatto: true });
 }
 
 // ---------- gestionale ----------
@@ -434,7 +490,10 @@ async function adminDati(c) {
     q("SELECT dispositivo AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY dispositivo ORDER BY n DESC", dal),
     q("SELECT giorno, unici FROM giorni WHERE giorno >= ?1", dal),
     q("SELECT COUNT(*) AS n FROM unici WHERE giorno = ?1", oggi),
-    q("SELECT tipo, messaggio, file, riga, pagina, n, primo, ultimo FROM errori ORDER BY ultimo DESC LIMIT 200")
+    q("SELECT tipo, messaggio, file, riga, pagina, n, primo, ultimo FROM errori ORDER BY ultimo DESC LIMIT 200"),
+    q("SELECT fonte AS k, SUM(n) AS n FROM provenienze WHERE giorno >= ?1 GROUP BY fonte ORDER BY n DESC LIMIT 40", dal),
+    q("SELECT storia AS k, SUM(n) AS n FROM letture WHERE giorno >= ?1 GROUP BY storia ORDER BY n DESC LIMIT 25", dal),
+    q("SELECT id, storia, testo, lingua, creata, letta FROM segnalazioni ORDER BY letta, creata DESC LIMIT 200")
   ]);
   const righe = (i) => r[i].results || [];
   const iscrittiGiorno = {};
@@ -460,7 +519,7 @@ async function adminDati(c) {
     iscritti: { totale: (righe(0)[0] || {}).n || 0, elenco },
     serie,
     pagine: righe(3), paesi: righe(4), lingue: righe(5), dispositivi: righe(6),
-    errori: righe(9)
+    errori: righe(9), provenienze: righe(10), letture: righe(11), segnalazioni: righe(12)
   });
 }
 
@@ -504,6 +563,9 @@ async function pulizia(env) {
     env.DB.prepare("DELETE FROM unici WHERE giorno < ?1").bind(oggi),
     env.DB.prepare("DELETE FROM errori WHERE ultimo < ?1").bind(ora - 30 * 864e5),
     env.DB.prepare("DELETE FROM visite WHERE giorno < ?1").bind(vecchio),
+    env.DB.prepare("DELETE FROM provenienze WHERE giorno < ?1").bind(vecchio),
+    env.DB.prepare("DELETE FROM letture WHERE giorno < ?1").bind(vecchio),
+    env.DB.prepare("DELETE FROM segnalazioni WHERE creata < ?1").bind(ora - 180 * 864e5),
     env.DB.prepare("DELETE FROM giorni WHERE giorno < ?1").bind(vecchio)
   ]);
 }
@@ -521,6 +583,8 @@ const ROTTE = {
   "GET /api/miei-dati": mieiDati,
   "POST /api/visita": visita,
   "POST /api/errore": errore,
+  "POST /api/segnala": segnala,
+  "POST /api/admin/segnalazione": adminSegnalazione,
   "POST /api/admin/attiva": adminAttiva,
   "GET /api/admin/dati": adminDati
 };

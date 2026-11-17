@@ -728,7 +728,8 @@ G.page("home", async function (P) {
     return {
       id: q.sym, name: MK_NOME[q.name] ? MK_NOME[q.name][G.en ? 1 : 0] : G.tn(q.name), value: G.num(q.last, dec) + (r ? "%" : ""),
       abs: !r && dir && typeof q.prev === "number" ? G.signed(q.last - q.prev, dec) : "", mv: typeof d !== "number" ? "" : r ? G.bps(d) : G.pct(d),
-      dir, tone: !dir ? "" : (r ? -dir : dir) > 0 ? "up" : "down", meta: mkQuando(q), href: "terminal?q=" + encodeURIComponent(q.sym)
+      dir, tone: !dir ? "" : (r ? -dir : dir) > 0 ? "up" : "down", meta: mkQuando(q), href: "terminal?q=" + encodeURIComponent(q.sym),
+      line: Array.isArray(q.intra) ? q.intra : null, base: typeof q.prev === "number" && isFinite(q.prev) ? q.prev : null
     };
   };
   // un numero della redazione (lo spread Btp-Bund, o tutto quando il job dei prezzi è fermo): il valore com'è scritto,
@@ -750,11 +751,12 @@ G.page("home", async function (P) {
       qt.groups.forEach((g) => (g.items || []).forEach((q) => { if (q && q.sym) by[q.sym] = q; }));
       // i titoli di Stato europei li scrive la redazione (lo spread Btp-Bund): stanno prima dei Treasury
       const obb = mk0 && G.hoursAgo(mk0.asOf) < 96 ? ((mk0.classes || []).find((c) => c.key === "obbligazioni") || {}).items || [] : [];
+      const mie = G.principali.leggi();
       MK_TABS.forEach((t) => {
-        let tiles = (t.s || qpick().map((x) => x[1])).map((s) => mkTileQ(by[s]));
+        let tiles = (t.s || mie || qpick().map((x) => x[1])).map((s) => mkTileQ(by[s]));
         if (t.k === "tassi") tiles = obb.filter((it) => !/treasury/i.test(it.name || "")).map((it) => mkTileM(it, "obbligazioni")).concat(tiles);
         tiles = tiles.filter(Boolean).slice(0, 6);
-        if (tiles.length && (t.k !== "principali" || tiles.length >= 3)) out.push({ k: t.k, n: nome(t), tiles });
+        if (tiles.length && (t.k !== "principali" || tiles.length >= 3 || mie)) out.push({ k: t.k, n: nome(t), tiles });
       });
     }
     if (!out.some((t) => t.k === "principali") && mk) {
@@ -777,12 +779,25 @@ G.page("home", async function (P) {
       mkPrev.set(x.id, x.value);
     }));
   }
+  // la linea della giornata: i prezzi dell'ultima seduta (per future e cripto le ultime 24 ore) e, tratteggiata, la
+  // chiusura di prima, da cui si conta la variazione. Senza dati la riga resta vuota, così i riquadri restano alti uguali
+  const mkLine = (t) => {
+    const v = (Array.isArray(t.line) ? t.line : []).filter((x) => typeof x === "number" && isFinite(x));
+    if (v.length < 3) return '<span class="mk-l" aria-hidden="true"></span>';
+    const tutti = t.base !== null && t.base !== undefined ? v.concat(t.base) : v;
+    let lo = Math.min.apply(null, tutti), hi = Math.max.apply(null, tutti);
+    if (hi - lo < 1e-9) { hi += 1; lo -= 1; }
+    const y = (x) => (2 + ((hi - x) / (hi - lo)) * 20).toFixed(2);
+    const d = v.map((x, i) => (i ? "L" : "M") + ((i * 100) / (v.length - 1)).toFixed(2) + " " + y(x)).join("");
+    return '<svg class="mk-l" viewBox="0 0 100 24" preserveAspectRatio="none" aria-hidden="true" focusable="false">' +
+      (t.base !== null && t.base !== undefined ? '<path class="mk-l-b" d="M0 ' + y(t.base) + 'H100"/>' : "") + '<path class="mk-l-p" d="' + d + '"/></svg>';
+  };
   const mkArrow = (dir) => (dir ? '<svg class="mk-a" viewBox="0 0 10 8" aria-hidden="true" focusable="false"><path d="' + (dir > 0 ? "M5 0l5 8H0z" : "M0 0h10L5 8z") + '"/></svg>' : "");
   const mkTileHTML = (t, flash) =>
     '<a class="mk-t' + (t.tone ? " " + t.tone : "") + (flash ? " nuovo" : "") + '" href="' + esc(t.href) + '" data-reveal aria-label="' +
     esc([t.name + ": " + t.value, t.mv, t.meta].filter(Boolean).join(", ")) + '"><span class="mk-n">' + esc(t.name) + '</span><span class="mk-v">' + esc(t.value) + "</span>" +
     '<span class="mk-c">' + mkArrow(t.dir) + (t.abs ? '<span class="mk-p">' + esc(t.abs) + "</span>" : "") + "<span>" + esc(t.mv || "—") + "</span></span>" +
-    '<span class="mk-m">' + esc(t.meta || "") + "</span></a>";
+    mkLine(t) + '<span class="mk-m">' + esc(t.meta || "") + "</span></a>";
   // una scheda dentro un riquadro dei mercati (la striscia o la colonna di destra); flash: i riquadri cambiati lampeggiano
   function mkFill(root, flash) {
     if (!root || !mkData.length) return;
@@ -799,9 +814,61 @@ G.page("home", async function (P) {
     row.innerHTML = tab.tiles.map((t) => mkTileHTML(t, flash && mkFlash.has(t.id))).join("");
     if (fi >= 0 && row.children[Math.min(fi, row.children.length - 1)]) row.children[Math.min(fi, row.children.length - 1)].focus({ preventScroll: true });
     const n = MK_NOTA[tab.k];
+    // sotto i Principali (con i prezzi del job) il pulsante per sceglierli
+    if (tab.k === "principali" && qOk()) {
+      nota.innerHTML = '<button type="button" class="mk-scegli" data-mk-scegli>' + (G.principali.leggi() ? G.L("Cambia i tuoi Principali", "Change your key markets") : G.L("Scegli i tuoi Principali", "Choose your key markets")) + "</button>";
+      nota.hidden = false;
+      return;
+    }
     nota.textContent = n ? n[G.en ? 1 : 0] : "";
     nota.hidden = !n;
   }
+  // il foglio per scegliere i Principali: tutti gli strumenti del job, a gruppi; un tocco aggiunge in fondo o toglie,
+  // e la prima pagina cambia subito
+  const MK_GRUPPI = { indici: ["Borse", "Stock markets"], future: ["Future Usa", "US futures"], valute: ["Valute", "Currencies"], tassi: ["Rendimenti Usa", "US yields"], materie: ["Materie prime", "Commodities"], cripto: ["Cripto", "Crypto"] };
+  function mkScegli() {
+    if (!qOk()) return;
+    const L = G.L, MAX = G.principali.MAX;
+    let scelti = (G.principali.leggi() || qpick().map((x) => x[1])).slice(0, MAX);
+    const nomeQ = (q) => (MK_NOME[q.name] ? MK_NOME[q.name][G.en ? 1 : 0] : G.tn(q.name));
+    const gruppi = qt.groups.map((g) => {
+      const voci = (g.items || []).filter((q) => q && q.sym && typeof q.last === "number");
+      if (!voci.length) return "";
+      return '<p class="opt-l paesi-g">' + esc((MK_GRUPPI[g.key] || [g.label, g.label])[G.en ? 1 : 0]) + '</p><ul class="paesi-l pr-l">' +
+        voci.map((q) => '<li><button type="button" data-pr="' + esc(q.sym) + '" aria-pressed="false"><span class="pn">' + esc(nomeQ(q)) + '</span><span class="pr-n" aria-hidden="true"></span></button></li>').join("") + "</ul>";
+    }).join("");
+    const f = G.conto.foglio(L("I tuoi Principali", "Your key markets"),
+      '<p class="paesi-sub">' + L("Fino a sei mercati per la prima scheda, nell'ordine in cui li tocchi. Restano su questo dispositivo e, con l'account, anche sugli altri.", "Up to six markets for the first tab, in the order you tap them. They stay on this device and, with an account, on your others too.") + "</p>" +
+      '<p class="pr-stato" role="status" aria-live="polite"></p>' + gruppi +
+      '<div class="conto-az pr-az"><button type="button" class="conto-b primario" data-chiudi>' + L("Fatto", "Done") + '</button><button type="button" class="conto-b" data-pr-via>' + L("Quelli di GERICO", "GERICO's picks") + "</button></div>");
+    const d = f.d, stato = d.querySelector(".pr-stato");
+    const disegna = (msg) => {
+      d.querySelectorAll("[data-pr]").forEach((b) => {
+        const i = scelti.indexOf(b.dataset.pr);
+        b.setAttribute("aria-pressed", String(i >= 0));
+        b.querySelector(".pr-n").textContent = i >= 0 ? String(i + 1) : "";
+      });
+      stato.textContent = msg || (G.principali.leggi() ? L("Scelti ", "Chosen ") + scelti.length + L(" su sei.", " of six.") : L("Adesso li sceglie GERICO, anche dai tuoi interessi.", "GERICO picks them now, also from your interests."));
+    };
+    disegna();
+    d.querySelector(".conto-in").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-pr]");
+      if (b) {
+        const sym = b.dataset.pr, i = scelti.indexOf(sym);
+        if (i >= 0) scelti.splice(i, 1);
+        else if (scelti.length >= MAX) { disegna(L("Al massimo sei: prima togline uno.", "Six at most: remove one first.")); return; }
+        else scelti.push(sym);
+        G.principali.scrivi(scelti);
+        if (!scelti.length) scelti = qpick().map((x) => x[1]);
+        disegna();
+        return;
+      }
+      if (e.target.closest("[data-pr-via]")) { G.principali.scrivi(null); scelti = qpick().map((x) => x[1]); disegna(); }
+    });
+  }
+  P.on(document, "click", (e) => { if (e.target.closest && e.target.closest("[data-mk-scegli]")) mkScegli(); });
+  // i Principali cambiati (qui, in un'altra scheda del browser o dall'account): la scheda si rifà
+  P.on(document, "gerico:principali", () => { renderTicker(); renderSide(true); });
   function renderTicker(live) {
     mkCompute(live);
     if (!mkData.length) { $("ticker").hidden = true; return; }

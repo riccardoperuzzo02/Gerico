@@ -232,8 +232,14 @@ def check_csp(site):
         name = os.path.basename(page)
         url = "/" if name == "index.html" else "/" + name
         csp = next((h.split(":", 1)[1] for h in rules.get(url, []) if h.lower().startswith("content-security-policy:")), None)
+        # le regole con l'asterisco di Cloudflare (/archivio-*): valgono per tutte le pagine che cominciano così
+        if csp is None:
+            csp = next((h.split(":", 1)[1] for k, hs in rules.items() if k.endswith("*") and k != "/*" and url.startswith(k[:-1])
+                        for h in hs if h.lower().startswith("content-security-policy:")), None)
         scripts = re.findall(r"<script>(.*?)</script>", open(page, encoding="utf-8").read(), re.S)
         if csp is None:
+            if name.startswith("google") and name.endswith(".html"):  # il file di verifica di Google Search Console
+                continue
             warnings.append(f"{name}: nessuna CSP in _headers per {url}")
             continue
         for body in scripts:

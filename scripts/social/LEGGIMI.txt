@@ -1,0 +1,12 @@
+Caratteri dell'immagine del giorno per Instagram (scripts/social.py)
+
+Sono istanze fisse (un solo peso) dei caratteri variabili del sito, fatte con fontTools (varLib.instancer)
+dai file in site/assets/fonts. Pillow non legge i caratteri variabili in woff2.
+
+Newsreader-Display-SemiBold.ttf    Newsreader, peso 600, dimensione ottica 72
+Newsreader-Display-ExtraBold.ttf   Newsreader, peso 800, dimensione ottica 72
+  Licenza SIL Open Font License 1.1: vedi OFL-newsreader.txt.
+
+AtkinsonNext-ExtraBold.ttf         Atkinson Hyperlegible Next (con lo zero senza barra di GERICO), peso 800
+AtkinsonNext-Medium.ttf            Atkinson Hyperlegible Next (con lo zero senza barra di GERICO), peso 500
+  Licenza SIL Open Font License 1.1: vedi OFL-atkinson-hyperlegible-next.txt.

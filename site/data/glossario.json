@@ -1,0 +1,864 @@
+{
+ "voci": [
+  {
+   "id": "spread",
+   "g": "mercati",
+   "it": {
+    "t": "Spread",
+    "d": "La differenza tra i rendimenti dei titoli di Stato di due paesi. In Italia di solito è quella tra il Btp e il Bund tedesco a dieci anni, in punti base: più è alta, più l'Italia paga per farsi prestare soldi rispetto alla Germania.",
+    "alt": [
+     "spread Btp-Bund",
+     "differenziale di rendimento"
+    ]
+   },
+   "en": {
+    "t": "Spread",
+    "d": "The difference between the yields on two countries' government bonds. In Italy it usually means the gap between the 10-year BTP and the German Bund, in basis points: the higher it is, the more Italy pays to borrow compared with Germany.",
+    "alt": [
+     "BTP-Bund spread"
+    ]
+   }
+  },
+  {
+   "id": "btp",
+   "g": "mercati",
+   "it": {
+    "t": "Btp",
+    "d": "Buono del Tesoro poliennale: il titolo di Stato italiano a medio e lungo termine, che paga una cedola ogni sei mesi. Il Btp a dieci anni è il riferimento per il costo del debito italiano.",
+    "alt": [
+     "buoni del Tesoro poliennali",
+     "buono del Tesoro poliennale"
+    ]
+   },
+   "en": {
+    "t": "BTP",
+    "d": "Buono del Tesoro poliennale: Italy's medium and long-term government bond, which pays a coupon every six months. The 10-year BTP is the benchmark for the cost of Italian debt.",
+    "alt": [
+     "BTPs"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "bund",
+   "g": "mercati",
+   "it": {
+    "t": "Bund",
+    "d": "Il titolo di Stato tedesco a lungo termine. Il Bund a dieci anni è considerato tra i più sicuri dell'area euro ed è il termine di paragone per lo spread."
+   },
+   "en": {
+    "t": "Bund",
+    "d": "Germany's long-term government bond. The 10-year Bund is seen as one of the safest in the euro area and is the yardstick for the spread."
+   },
+   "cs": true
+  },
+  {
+   "id": "rendimento",
+   "g": "mercati",
+   "it": {
+    "t": "Rendimento",
+    "d": "Quanto rende in un anno, in percentuale, un titolo comprato oggi. Per le obbligazioni va al contrario del prezzo: se il prezzo scende, il rendimento sale.",
+    "alt": [
+     "rendimenti"
+    ]
+   },
+   "en": {
+    "t": "Yield",
+    "d": "What a bond pays per year, as a percentage, if bought today. It moves opposite to the price: when the price falls, the yield rises.",
+    "alt": [
+     "yields"
+    ]
+   }
+  },
+  {
+   "id": "punto-base",
+   "g": "mercati",
+   "it": {
+    "t": "Punto base",
+    "d": "Un centesimo di punto percentuale: 100 punti base fanno l'1%. Si usa per tassi, rendimenti e spread.",
+    "alt": [
+     "punti base"
+    ]
+   },
+   "en": {
+    "t": "Basis point",
+    "d": "One hundredth of a percentage point: 100 basis points make 1%. It is used for interest rates, yields and spreads.",
+    "alt": [
+     "basis points"
+    ]
+   }
+  },
+  {
+   "id": "treasury",
+   "g": "mercati",
+   "it": {
+    "t": "Treasury",
+    "d": "Il titolo di Stato degli Stati Uniti. Il rendimento del Treasury a dieci anni pesa sui mutui americani e sui mercati di tutto il mondo.",
+    "alt": [
+     "Treasury"
+    ]
+   },
+   "en": {
+    "t": "Treasury",
+    "d": "A US government bond. The 10-year Treasury yield weighs on American mortgage rates and on markets around the world.",
+    "alt": [
+     "Treasuries"
+    ],
+    "m": [
+     "Treasuries",
+     "Treasury yield",
+     "Treasury yields",
+     "10-year Treasury",
+     "Treasury bonds"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "indice-borsa",
+   "g": "mercati",
+   "it": {
+    "t": "Indice di Borsa",
+    "d": "Un numero che riassume l'andamento di un gruppo di azioni. Il Ftse Mib segue le 40 società principali di Piazza Affari, l'S&P 500 cinquecento grandi società americane.",
+    "alt": [
+     "indice azionario",
+     "indici di Borsa"
+    ],
+    "m": [
+     "indice di Borsa",
+     "indici di Borsa",
+     "indice azionario",
+     "indici azionari"
+    ]
+   },
+   "en": {
+    "t": "Stock index",
+    "d": "A number that sums up how a group of shares is doing. The FTSE MIB follows the 40 main companies in Milan, the S&P 500 five hundred large US companies.",
+    "alt": [
+     "stock market index"
+    ],
+    "m": [
+     "stock index",
+     "stock indices",
+     "stock market index"
+    ]
+   }
+  },
+  {
+   "id": "ftse-mib",
+   "g": "mercati",
+   "it": {
+    "t": "Ftse Mib",
+    "d": "L'indice delle 40 società più grandi e più scambiate della Borsa di Milano.",
+    "alt": [
+     "FTSE MIB"
+    ]
+   },
+   "en": {
+    "t": "FTSE MIB",
+    "d": "The index of the 40 largest and most traded companies on the Milan stock exchange.",
+    "alt": [
+     "Ftse Mib"
+    ]
+   }
+  },
+  {
+   "id": "sp-500",
+   "g": "mercati",
+   "it": {
+    "t": "S&P 500",
+    "d": "L'indice di 500 grandi società quotate negli Stati Uniti, pesate per il loro valore in Borsa: il riferimento più seguito per Wall Street."
+   },
+   "en": {
+    "t": "S&P 500",
+    "d": "The index of 500 large companies listed in the United States, weighted by their market value: the most followed benchmark for Wall Street."
+   },
+   "cs": true
+  },
+  {
+   "id": "nasdaq",
+   "g": "mercati",
+   "it": {
+    "t": "Nasdaq",
+    "d": "La Borsa americana dove sono quotate molte società tecnologiche. Il Nasdaq 100 raccoglie le cento più grandi, senza le finanziarie."
+   },
+   "en": {
+    "t": "Nasdaq",
+    "d": "The US stock exchange where many technology companies are listed. The Nasdaq 100 gathers the hundred largest, excluding financial companies."
+   },
+   "cs": true
+  },
+  {
+   "id": "future",
+   "g": "mercati",
+   "it": {
+    "t": "Future",
+    "d": "Un contratto per comprare o vendere qualcosa (un indice, il petrolio, l'oro) a un prezzo fissato oggi per una data futura. I future sugli indici americani si scambiano quasi tutto il giorno: prima dell'apertura dicono come può partire Wall Street.",
+    "alt": [
+     "futures"
+    ]
+   },
+   "en": {
+    "t": "Futures",
+    "d": "A contract to buy or sell something (an index, oil, gold) at a price set today for a future date. US index futures trade almost around the clock: before the open they show how Wall Street may start.",
+    "alt": [
+     "futures contract"
+    ]
+   }
+  },
+  {
+   "id": "volatilita",
+   "g": "mercati",
+   "it": {
+    "t": "Volatilità",
+    "d": "Quanto e quanto in fretta si muove un prezzo. Alta volatilità vuol dire oscillazioni ampie, in su e in giù."
+   },
+   "en": {
+    "t": "Volatility",
+    "d": "How much and how fast a price moves. High volatility means wide swings, up and down."
+   }
+  },
+  {
+   "id": "brent",
+   "g": "mercati",
+   "it": {
+    "t": "Brent",
+    "d": "Il petrolio del Mare del Nord usato come riferimento per il prezzo del greggio in Europa e in gran parte del mondo, in dollari al barile. Il riferimento americano è il Wti."
+   },
+   "en": {
+    "t": "Brent",
+    "d": "North Sea oil used as the benchmark for crude prices in Europe and much of the world, in dollars per barrel. The US benchmark is WTI."
+   },
+   "cs": true
+  },
+  {
+   "id": "gas-ttf",
+   "g": "mercati",
+   "it": {
+    "t": "Gas TTF",
+    "d": "Il prezzo di riferimento del gas naturale in Europa, scambiato sulla piattaforma olandese Title Transfer Facility, in euro al megawattora.",
+    "alt": [
+     "TTF"
+    ]
+   },
+   "en": {
+    "t": "TTF gas",
+    "d": "The benchmark price for natural gas in Europe, traded on the Dutch Title Transfer Facility, in euros per megawatt hour.",
+    "alt": [
+     "TTF"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "bene-rifugio",
+   "g": "mercati",
+   "it": {
+    "t": "Bene rifugio",
+    "d": "Quello che chi ha paura tende a comprare nei momenti di crisi, come l'oro, il franco svizzero o i titoli di Stato tedeschi e americani.",
+    "alt": [
+     "beni rifugio"
+    ]
+   },
+   "en": {
+    "t": "Safe haven",
+    "d": "What worried investors tend to buy in times of crisis, such as gold, the Swiss franc or German and US government bonds.",
+    "alt": [
+     "safe-haven",
+     "safe havens"
+    ]
+   }
+  },
+  {
+   "id": "dividendo",
+   "g": "mercati",
+   "it": {
+    "t": "Dividendo",
+    "d": "La parte degli utili che una società distribuisce ai suoi azionisti, una o più volte l'anno.",
+    "alt": [
+     "dividendi"
+    ]
+   },
+   "en": {
+    "t": "Dividend",
+    "d": "The share of profits a company pays out to its shareholders, once or several times a year.",
+    "alt": [
+     "dividends"
+    ]
+   }
+  },
+  {
+   "id": "trimestrale",
+   "g": "mercati",
+   "it": {
+    "t": "Trimestrale",
+    "d": "I conti che una società quotata pubblica ogni tre mesi: ricavi, utili, previsioni. Le sorprese rispetto alle attese degli analisti muovono le azioni.",
+    "alt": [
+     "trimestrali",
+     "conti trimestrali",
+     "risultati trimestrali"
+    ]
+   },
+   "en": {
+    "t": "Quarterly results",
+    "d": "The accounts a listed company publishes every three months: revenue, profit, guidance. Surprises compared with analysts' expectations move the shares.",
+    "alt": [
+     "quarterly earnings",
+     "earnings"
+    ]
+   }
+  },
+  {
+   "id": "opa",
+   "g": "mercati",
+   "it": {
+    "t": "Opa",
+    "d": "Offerta pubblica di acquisto: chi la lancia propone a tutti gli azionisti di una società quotata di comprare le loro azioni a un prezzo fissato. Se si paga con azioni invece che in contanti si chiama Ops.",
+    "alt": [
+     "offerta pubblica di acquisto",
+     "Ops"
+    ]
+   },
+   "en": {
+    "t": "Takeover bid",
+    "d": "A public offer to buy the shares of a listed company from all its shareholders at a set price (in Italy “Opa”). When it is paid in shares instead of cash it is an exchange offer.",
+    "alt": [
+     "tender offer",
+     "takeover offer"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "ipo",
+   "g": "mercati",
+   "it": {
+    "t": "Ipo",
+    "d": "La prima offerta delle azioni di una società al pubblico, con cui la società entra in Borsa.",
+    "alt": [
+     "quotazione in Borsa"
+    ]
+   },
+   "en": {
+    "t": "IPO",
+    "d": "A company's first offer of its shares to the public, through which it lists on the stock exchange.",
+    "alt": [
+     "initial public offering"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "bitcoin",
+   "g": "mercati",
+   "it": {
+    "t": "Bitcoin",
+    "d": "La prima e più grande criptovaluta: una moneta digitale senza banca centrale, registrata su una rete pubblica di computer, la blockchain. Il prezzo oscilla molto."
+   },
+   "en": {
+    "t": "Bitcoin",
+    "d": "The first and largest cryptocurrency: a digital currency with no central bank, recorded on a public network of computers, the blockchain. Its price swings a lot."
+   },
+   "cs": true
+  },
+  {
+   "id": "tassi",
+   "g": "economia",
+   "it": {
+    "t": "Tassi d'interesse",
+    "d": "Il prezzo del denaro preso in prestito, in percentuale all'anno. Quando la banca centrale alza i suoi tassi, mutui e prestiti di solito costano di più e l'economia rallenta; quando li abbassa, succede il contrario.",
+    "alt": [
+     "tasso d'interesse",
+     "tassi di interesse",
+     "tasso di interesse",
+     "taglio dei tassi",
+     "tagli dei tassi",
+     "rialzo dei tassi",
+     "rialzi dei tassi"
+    ]
+   },
+   "en": {
+    "t": "Interest rates",
+    "d": "The price of borrowed money, as a yearly percentage. When the central bank raises its rates, mortgages and loans usually cost more and the economy slows; when it cuts them, the opposite happens.",
+    "alt": [
+     "interest rate",
+     "rate cut",
+     "rate cuts",
+     "rate hike",
+     "rate hikes"
+    ]
+   }
+  },
+  {
+   "id": "bce",
+   "g": "economia",
+   "it": {
+    "t": "Bce",
+    "d": "La Banca centrale europea, a Francoforte: decide i tassi d'interesse dei paesi dell'euro, con l'obiettivo di tenere l'inflazione vicina al 2% nel medio periodo.",
+    "alt": [
+     "Banca centrale europea"
+    ]
+   },
+   "en": {
+    "t": "ECB",
+    "d": "The European Central Bank, in Frankfurt: it sets interest rates for the euro countries, aiming to keep inflation close to 2% over the medium term.",
+    "alt": [
+     "European Central Bank"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "fed",
+   "g": "economia",
+   "it": {
+    "t": "Fed",
+    "d": "La Federal Reserve, la banca centrale degli Stati Uniti. Fissa la forchetta del tasso sui fondi federali e ha due obiettivi: prezzi stabili e massima occupazione.",
+    "alt": [
+     "Federal Reserve"
+    ]
+   },
+   "en": {
+    "t": "Fed",
+    "d": "The Federal Reserve, the US central bank. It sets the target range for the federal funds rate and has two goals: stable prices and maximum employment.",
+    "alt": [
+     "Federal Reserve"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "inflazione",
+   "g": "economia",
+   "it": {
+    "t": "Inflazione",
+    "d": "L'aumento generale dei prezzi, misurato di solito rispetto allo stesso mese dell'anno prima. Con il 3% di inflazione, quello che costava 100 euro un anno fa ne costa 103."
+   },
+   "en": {
+    "t": "Inflation",
+    "d": "The general rise in prices, usually measured against the same month a year earlier. With 3% inflation, what cost 100 euros a year ago now costs 103."
+   }
+  },
+  {
+   "id": "inflazione-di-fondo",
+   "g": "economia",
+   "it": {
+    "t": "Inflazione di fondo",
+    "d": "L'inflazione senza i prezzi che si muovono di più, l'energia e gli alimentari freschi. Le banche centrali la guardano per capire la tendenza dei prezzi.",
+    "alt": [
+     "inflazione core"
+    ]
+   },
+   "en": {
+    "t": "Core inflation",
+    "d": "Inflation without the prices that move the most, energy and fresh food. Central banks watch it to see the underlying trend in prices.",
+    "alt": [
+     "underlying inflation"
+    ]
+   }
+  },
+  {
+   "id": "stagflazione",
+   "g": "economia",
+   "it": {
+    "t": "Stagflazione",
+    "d": "Inflazione alta insieme a un'economia ferma o in calo. È la situazione più difficile per una banca centrale, perché alzare i tassi frena ancora di più la crescita."
+   },
+   "en": {
+    "t": "Stagflation",
+    "d": "High inflation together with a stagnant or shrinking economy. It is the hardest situation for a central bank, because raising rates slows growth even more."
+   }
+  },
+  {
+   "id": "pil",
+   "g": "economia",
+   "it": {
+    "t": "Pil",
+    "d": "Il prodotto interno lordo: il valore di tutti i beni e servizi prodotti in un paese in un periodo. Se cresce l'economia si espande; due trimestri di fila in calo si chiamano recessione tecnica.",
+    "alt": [
+     "prodotto interno lordo"
+    ]
+   },
+   "en": {
+    "t": "GDP",
+    "d": "Gross domestic product: the value of all goods and services produced in a country over a period. If it grows the economy is expanding; two quarters of decline in a row are called a technical recession.",
+    "alt": [
+     "gross domestic product"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "recessione",
+   "g": "economia",
+   "it": {
+    "t": "Recessione",
+    "d": "Un periodo in cui l'economia si contrae: produzione, redditi e lavoro calano. La definizione più usata è due trimestri di fila con il Pil in calo.",
+    "alt": [
+     "recessione tecnica"
+    ]
+   },
+   "en": {
+    "t": "Recession",
+    "d": "A period in which the economy shrinks: output, income and jobs fall. The most common definition is two quarters in a row of falling GDP.",
+    "alt": [
+     "technical recession"
+    ]
+   }
+  },
+  {
+   "id": "payroll",
+   "g": "economia",
+   "it": {
+    "t": "Payroll",
+    "d": "Il dato mensile sui nuovi posti di lavoro negli Stati Uniti fuori dall'agricoltura, di solito il primo venerdì del mese. È tra i numeri che muovono di più i mercati.",
+    "alt": [
+     "non farm payrolls",
+     "nonfarm payrolls"
+    ]
+   },
+   "en": {
+    "t": "Payrolls",
+    "d": "The monthly figure for new US jobs outside agriculture, usually out on the first Friday of the month. It is among the numbers that move markets the most.",
+    "alt": [
+     "nonfarm payrolls",
+     "non-farm payrolls"
+    ]
+   }
+  },
+  {
+   "id": "debito-pubblico",
+   "g": "economia",
+   "it": {
+    "t": "Debito pubblico",
+    "d": "Tutto quello che lo Stato deve ai suoi creditori, soprattutto sotto forma di titoli di Stato. Si misura in rapporto al Pil.",
+    "alt": [
+     "debito dello Stato"
+    ]
+   },
+   "en": {
+    "t": "Public debt",
+    "d": "Everything the state owes its creditors, mostly in the form of government bonds. It is measured as a share of GDP.",
+    "alt": [
+     "government debt"
+    ]
+   }
+  },
+  {
+   "id": "deficit",
+   "g": "economia",
+   "it": {
+    "t": "Deficit",
+    "d": "Quanto lo Stato spende in un anno più di quanto incassa. Le regole europee chiedono di tenerlo sotto il 3% del Pil.",
+    "alt": [
+     "disavanzo"
+    ],
+    "no": [
+     "deficit commerciale",
+     "deficit della bilancia"
+    ]
+   },
+   "en": {
+    "t": "Deficit",
+    "d": "How much more the state spends in a year than it takes in. EU rules ask countries to keep it below 3% of GDP.",
+    "alt": [
+     "budget deficit"
+    ],
+    "no": [
+     "trade deficit",
+     "current account deficit"
+    ]
+   }
+  },
+  {
+   "id": "manovra",
+   "g": "economia",
+   "it": {
+    "t": "Manovra",
+    "d": "La legge di bilancio: il governo la presenta in autunno e il Parlamento deve approvarla entro il 31 dicembre. Decide tasse e spese dell'anno dopo.",
+    "alt": [
+     "legge di bilancio"
+    ],
+    "no": [
+     "manovra tattica",
+     "manovre tattiche",
+     "manovra militare",
+     "manovre militari",
+     "manovra navale",
+     "manovre navali",
+     "manovra aerea",
+     "manovra diversiva",
+     "manovra di avvicinamento"
+    ]
+   },
+   "en": {
+    "t": "Budget law",
+    "d": "Italy's annual budget law, the “manovra”: the government presents it in the autumn and Parliament must pass it by 31 December. It sets taxes and spending for the following year.",
+    "alt": [
+     "budget bill"
+    ]
+   }
+  },
+  {
+   "id": "rating",
+   "g": "economia",
+   "it": {
+    "t": "Rating",
+    "d": "Il voto che le agenzie (S&P, Moody's, Fitch e altre) danno alla capacità di uno Stato o di un'azienda di ripagare i debiti. Un voto più alto di solito vuol dire interessi più bassi."
+   },
+   "en": {
+    "t": "Credit rating",
+    "d": "The grade agencies (S&P, Moody's, Fitch and others) give to a state's or company's ability to repay its debts. A higher grade usually means lower interest costs.",
+    "alt": [
+     "rating"
+    ]
+   }
+  },
+  {
+   "id": "dazi",
+   "g": "economia",
+   "it": {
+    "t": "Dazi",
+    "d": "Tasse sulle merci che arrivano da un altro paese. Le paga chi importa e spesso finiscono nei prezzi per chi compra.",
+    "alt": [
+     "dazio"
+    ]
+   },
+   "en": {
+    "t": "Tariffs",
+    "d": "Taxes on goods coming from another country. Importers pay them, and they often end up in the prices buyers pay.",
+    "alt": [
+     "tariff"
+    ]
+   }
+  },
+  {
+   "id": "pnrr",
+   "g": "economia",
+   "it": {
+    "t": "Pnrr",
+    "d": "Il Piano nazionale di ripresa e resilienza: i fondi europei di Next Generation Eu per l'Italia, in parte a prestito e in parte a fondo perduto, legati a riforme e investimenti con scadenza nel 2026.",
+    "alt": [
+     "Piano nazionale di ripresa e resilienza"
+    ]
+   },
+   "en": {
+    "t": "PNRR",
+    "d": "Italy's National Recovery and Resilience Plan: the EU Next Generation EU funds for Italy, partly loans and partly grants, tied to reforms and investments due in 2026.",
+    "alt": [
+     "National Recovery and Resilience Plan"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "decreto-legge",
+   "g": "politica",
+   "it": {
+    "t": "Decreto legge",
+    "d": "Un atto con forza di legge che il governo può adottare in casi di necessità e urgenza. Vale subito, ma decade se il Parlamento non lo converte in legge entro 60 giorni.",
+    "alt": [
+     "decreto-legge",
+     "decreti legge"
+    ]
+   },
+   "en": {
+    "t": "Decree-law",
+    "d": "An act with the force of law that the Italian government can adopt in cases of necessity and urgency. It takes effect at once, but lapses if Parliament does not convert it into law within 60 days.",
+    "alt": [
+     "decree law"
+    ]
+   }
+  },
+  {
+   "id": "questione-di-fiducia",
+   "g": "politica",
+   "it": {
+    "t": "Questione di fiducia",
+    "d": "Il governo lega l'approvazione di un testo alla sua sopravvivenza: se il voto va male, deve dimettersi. Serve anche a far cadere gli emendamenti e ad accorciare i tempi.",
+    "alt": [
+     "voto di fiducia"
+    ]
+   },
+   "en": {
+    "t": "Confidence vote",
+    "d": "The government ties the approval of a text to its own survival: if it loses the vote, it must resign. It is also used to sweep away amendments and speed things up.",
+    "alt": [
+     "vote of confidence"
+    ]
+   }
+  },
+  {
+   "id": "corte-costituzionale",
+   "g": "politica",
+   "it": {
+    "t": "Corte costituzionale",
+    "d": "Il tribunale che decide se le leggi rispettano la Costituzione e, se non la rispettano, le cancella. In Italia ha 15 giudici e siede al Palazzo della Consulta, a Roma: per questo si chiama anche Consulta.",
+    "alt": [
+     "Consulta"
+    ]
+   },
+   "en": {
+    "t": "Constitutional Court",
+    "d": "The court that decides whether laws respect the Constitution and strikes them down if they do not. In Italy it has 15 judges and sits in the Palazzo della Consulta in Rome, hence its nickname."
+   },
+   "cs": true
+  },
+  {
+   "id": "commissione-europea",
+   "g": "politica",
+   "it": {
+    "t": "Commissione europea",
+    "d": "Il governo dell'Unione europea: propone le leggi, controlla che gli Stati le rispettino e gestisce il bilancio comune. Le leggi le approvano il Parlamento europeo e il Consiglio dei governi.",
+    "alt": [
+     "Commissione Ue"
+    ]
+   },
+   "en": {
+    "t": "European Commission",
+    "d": "The executive of the European Union: it proposes laws, checks that member states respect them and runs the common budget. Laws are passed by the European Parliament and the Council of governments.",
+    "alt": [
+     "EU Commission"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "impeachment",
+   "g": "politica",
+   "it": {
+    "t": "Impeachment",
+    "d": "La procedura con cui un parlamento mette sotto accusa un presidente o un alto funzionario per rimuoverlo. Negli Stati Uniti la Camera vota l'accusa, il Senato fa il processo e per condannare servono i due terzi."
+   },
+   "en": {
+    "t": "Impeachment",
+    "d": "The process by which a parliament charges a president or a senior official in order to remove them. In the United States the House votes the charges, the Senate holds the trial and a conviction needs two thirds."
+   }
+  },
+  {
+   "id": "midterm",
+   "g": "politica",
+   "it": {
+    "t": "Elezioni di metà mandato",
+    "d": "Le elezioni americane a metà dei quattro anni del presidente: si rinnovano tutta la Camera e un terzo del Senato.",
+    "alt": [
+     "midterm",
+     "elezioni di metà mandato"
+    ]
+   },
+   "en": {
+    "t": "Midterm elections",
+    "d": "US elections halfway through the president's four-year term: the whole House and a third of the Senate are up for election.",
+    "alt": [
+     "midterms",
+     "midterm"
+    ]
+   }
+  },
+  {
+   "id": "nato",
+   "g": "politica",
+   "it": {
+    "t": "Nato",
+    "d": "L'alleanza militare tra Stati Uniti, Canada e 30 paesi europei. L'articolo 5 del trattato dice che un attacco contro uno è un attacco contro tutti.",
+    "alt": [
+     "Alleanza atlantica"
+    ]
+   },
+   "en": {
+    "t": "NATO",
+    "d": "The military alliance of the United States, Canada and 30 European countries. Article 5 of the treaty says an attack on one is an attack on all.",
+    "alt": [
+     "Nato"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "g7",
+   "g": "politica",
+   "it": {
+    "t": "G7",
+    "d": "Il gruppo delle sette grandi economie avanzate (Stati Uniti, Giappone, Germania, Regno Unito, Francia, Italia e Canada), con l'Unione europea. Il G20 aggiunge le principali economie emergenti.",
+    "alt": [
+     "G20"
+    ]
+   },
+   "en": {
+    "t": "G7",
+    "d": "The group of seven large advanced economies (the United States, Japan, Germany, the United Kingdom, France, Italy and Canada), with the European Union. The G20 adds the main emerging economies.",
+    "alt": [
+     "G20"
+    ]
+   },
+   "cs": true
+  },
+  {
+   "id": "sanzioni",
+   "g": "politica",
+   "it": {
+    "t": "Sanzioni",
+    "d": "Misure con cui uno o più paesi colpiscono un altro paese, aziende o persone: blocchi del commercio, dei pagamenti o dei beni all'estero, divieti di viaggio.",
+    "m": [
+     "sanzioni contro",
+     "sanzioni alla",
+     "sanzioni al",
+     "sanzioni alle",
+     "sanzioni ai",
+     "sanzioni americane",
+     "sanzioni europee",
+     "sanzioni occidentali",
+     "sanzioni Usa",
+     "sanzioni Ue",
+     "pacchetto di sanzioni",
+     "nuove sanzioni"
+    ]
+   },
+   "en": {
+    "t": "Sanctions",
+    "d": "Measures by which one or more countries target another country, companies or people: blocks on trade, payments or assets abroad, travel bans.",
+    "m": [
+     "sanctions on",
+     "sanctions against",
+     "US sanctions",
+     "EU sanctions",
+     "Western sanctions",
+     "sanctions package",
+     "new sanctions"
+    ]
+   }
+  },
+  {
+   "id": "cessate-il-fuoco",
+   "g": "politica",
+   "it": {
+    "t": "Cessate il fuoco",
+    "d": "Un accordo per fermare i combattimenti, per un tempo stabilito o senza scadenza. Non è ancora la pace, che richiede un accordo sulle questioni aperte.",
+    "alt": [
+     "tregua"
+    ]
+   },
+   "en": {
+    "t": "Ceasefire",
+    "d": "An agreement to stop the fighting, for a set time or with no end date. It is not yet peace, which needs a deal on the open issues.",
+    "alt": [
+     "truce"
+    ]
+   }
+  }
+ ],
+ "gruppi": {
+  "mercati": [
+   "Mercati e finanza",
+   "Markets and finance"
+  ],
+  "economia": [
+   "Economia e conti pubblici",
+   "Economy and public finances"
+  ],
+  "politica": [
+   "Politica e istituzioni",
+   "Politics and institutions"
+  ]
+ }
+}

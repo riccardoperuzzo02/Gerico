@@ -11,7 +11,9 @@ site/                 la cartella pubblicata da Cloudflare
   index.html          prima pagina (sezioni con #mondo, #italia, ... e #seguiti)
   storia.html?id=...  una notizia: l'articolo di GERICO, cosa non si sa ancora, parere, cronologia, fonti
   terminal.html       GERICO Terminal: mappa a quadrati, indici, valute, tassi, materie prime, agenda, notizie
-  come-funziona.html, privacy.html, 404.html
+  come-funziona.html, privacy.html, glossario.html, 404.html
+  archivio.html, archivio-AAAA-MM.html, tema/<tema>.html   l'archivio delle storie (pagine statiche, da share_pages.py)
+  manifest.webmanifest, sw.js, offline.html   il sito installabile e la lettura senza connessione
   assets/             css, js, font (Atkinson Hyperlegible e Newsreader, licenza OFL) e immagini
   data/               i dati dell'edizione, scritti dalla pipeline
 redazione/            i testi dei giri (notizie, chiusure europee, titoli da seguire) e il database in redazione/db
@@ -19,6 +21,7 @@ scripts/redazione.py  quale giro fare, controllo del database, pubblicazione (wo
 scripts/export.py     dal database della redazione ai file di site/data
 scripts/mappe.py      la mappa sopra ogni articolo (site/img/storie), con i confini di Natural Earth in scripts/mappe
 scripts/set_site_url.py  scrive l'indirizzo pubblico nelle anteprime di condivisione
+scripts/social.py     l'immagine del giorno per Instagram (site/img/social) e la didascalia (data/social.json)
 pipeline/             i testi delle attività programmate su claude.ai, finché non passano su GitHub
 worker/index.js       il Worker: /api/ (account con passkey, preferenze, visite, errori) e /admin, il gestionale
 worker/webauthn.js    la verifica delle passkey (CBOR, chiavi COSE, firme ES256 e RS256 con WebCrypto)
@@ -77,8 +80,9 @@ di `redazione/`.
 I prezzi arrivano dalla Borsa, non dalle testate. Il workflow «Prezzi» (`.github/workflows/prezzi.yml`) gira ogni mezz'ora
 nelle ore di mercato dei giorni feriali e scarica solo `quotes.json` con yfinance (Yahoo Finance): indici di tutte le Borse
 della mappa, future sugli indici Usa, valute, tassi Usa, materie prime e cripto, con apertura, chiusura precedente e Borsa
-aperta o chiusa. In prima pagina diventano i riquadri dei mercati, a gruppi (`renderTicker` e `renderSide` in `home.js`); un
-riquadro porta al suo grafico nel Terminal con `terminal?q=<simbolo>`. Dura circa un
+aperta o chiusa, e la linea della giornata (`intra`: l'ultima seduta ogni cinque minuti, al massimo 60 punti). In prima pagina
+diventano i riquadri dei mercati, a gruppi (`renderTicker` e `renderSide` in `home.js`); la scheda Principali la sceglie chi legge
+(`G.principali`, anche nell'account); un riquadro porta al suo grafico nel Terminal con `terminal?q=<simbolo>`. Dura circa un
 minuto. Lo stesso file lo scrive anche «Dati del Terminal» quattro volte al giorno, che fa anche il resto (macro, SEC, tono delle
 notizie, riepilogo a voce, screener); i due non girano mai insieme. Sul sito i numeri di `quotes.json` hanno la precedenza su
 quelli della redazione quando sono più recenti (`G.withQuotes` e `G.mapItems` in `common.js`): della redazione restano le
@@ -133,3 +137,9 @@ Ogni storia ha una pagina scritta in HTML, `site/s/<id>.html`, con l'articolo in
 pubblicazione insieme a `sitemap.xml` (con i campi di Google News per le storie delle ultime 48 ore), a `feed.xml` (RSS) e
 all'elenco dei titoli in `index.html` per chi non esegue lo script. `storia.html?id=` resta la storia dentro l'app e indica
 come canonica la pagina in `/s/`.
+
+Le storie restano anche quando escono dall'edizione: `share_pages.py` tiene l'indice `data/archivio.json` (le storie con una
+pagina in `/s/`, i temi) e ne fa l'archivio statico, un mese per pagina e una pagina per ogni tema con almeno tre storie, tutti
+nella sitemap. Lo stesso indice serve alla ricerca del menu, che si fa tutta nel browser. Il glossario sta in
+`data/glossario.json`: `share_pages.py` ne scrive la pagina (`glossario.html`, tra i segni `<!--glossario-->`) e collega la prima
+volta di ogni parola negli articoli di `/s/`; nell'app lo fa `G.glossario` in `common.js`.

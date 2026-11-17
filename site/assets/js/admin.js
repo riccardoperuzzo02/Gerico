@@ -21,7 +21,13 @@ G.page("admin", async function (P) {
   if (!PERIODI.includes(giorni)) giorni = 30;
   let turno = 0;
 
-  const PAGINA = { "prima-pagina": L("Prima pagina", "Front page"), storia: L("Storie", "Stories"), terminal: "Terminal", "come-funziona": L("Come funziona", "How it works"), privacy: "Privacy" };
+  const PAGINA = { "prima-pagina": L("Prima pagina", "Front page"), storia: L("Storie", "Stories"), terminal: "Terminal", "come-funziona": L("Come funziona", "How it works"), privacy: "Privacy", glossario: L("Glossario", "Glossary") };
+  // da dove arrivano le visite: i nomi dei siti raggruppati dal Worker; gli altri siti col loro nome
+  const FONTE = {
+    diretto: L("Diretto o da un'app", "Direct or from an app"), google: "Google", "google-news": "Google News", bing: "Bing", duckduckgo: "DuckDuckGo", yahoo: "Yahoo",
+    ecosia: "Ecosia", qwant: "Qwant", instagram: "Instagram", facebook: "Facebook", whatsapp: "WhatsApp", x: "X", linkedin: "LinkedIn", telegram: "Telegram",
+    reddit: "Reddit", threads: "Threads", chatgpt: "ChatGPT", perplexity: "Perplexity", claude: "Claude"
+  };
   const LINGUA = { it: "Italiano", en: "English" };
   const DISP = { telefono: L("Telefono", "Phone"), tablet: "Tablet", computer: L("Computer", "Computer") };
   const ERR = {
@@ -124,11 +130,13 @@ G.page("admin", async function (P) {
     const mio = ++turno;
     corpo.classList.add("ad-carico");
     corpo.setAttribute("aria-busy", "true");
-    let d, stato;
+    let d, stato, arch, social;
     try {
-      [d, stato] = await Promise.all([
+      [d, stato, arch, social] = await Promise.all([
         G.conto.api("admin/dati?giorni=" + giorni),
-        fetch("data/stato.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)
+        fetch("data/stato.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+        fetch("data/archivio.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+        fetch("data/social.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)
       ]);
     } catch (e) {
       if (mio !== turno) return;
@@ -139,10 +147,24 @@ G.page("admin", async function (P) {
       return;
     }
     if (mio !== turno) return;
-    corpo.innerHTML = disegna(d, stato);
+    titoli = {};
+    ((arch && arch.storie) || []).forEach((x) => { if (x && x.id) titoli[x.id] = x.t; });
+    corpo.innerHTML = disegna(d, stato, social);
     corpo.classList.remove("ad-carico");
     corpo.removeAttribute("aria-busy");
     corpo.querySelectorAll(".ad-cols").forEach(grafico);
+    corpo.querySelectorAll("[data-segn]").forEach((b) => b.addEventListener("click", async () => {
+      const li = b.closest("[data-sid]");
+      b.disabled = true;
+      try { await G.conto.api("admin/segnalazione", { id: Number(li.dataset.sid), azione: b.dataset.segn }); await aggiorna(); }
+      catch (e) { b.disabled = false; G.toast(messaggio(e)); }
+    }));
+    const copia = $("ad-copia");
+    if (copia) copia.addEventListener("click", async () => {
+      const t = $("ad-didascalia");
+      try { await navigator.clipboard.writeText(t.value); G.toast(L("Didascalia copiata", "Caption copied")); }
+      catch (e) { t.focus(); t.select(); G.toast(L("Selezionata: copiala con il menu", "Selected: copy it from the menu")); }
+    });
     const cerca = $("ad-cerca");
     if (cerca) cerca.addEventListener("input", () => filtra(cerca.value));
     const mie = $("ad-mie");
@@ -156,6 +178,8 @@ G.page("admin", async function (P) {
   };
 
   // ---------- pezzi del pannello ----------
+  let titoli = {};
+  const titolo = (k) => titoli[k] || k;
   const tessera = (etichetta, valore, nota) => '<div class="ad-t"><p class="ad-t-l">' + esc(etichetta) + '</p><p class="ad-t-v">' + esc(valore) + "</p>" + (nota ? '<p class="ad-t-n">' + esc(nota) + "</p>" : "") + "</div>";
 
   // un grafico a colonne: una serie, i giorni in fila, la scala con numeri tondi
@@ -243,11 +267,28 @@ G.page("admin", async function (P) {
     "<b>" + n(e.n) + (e.n === 1 ? L(" volta", " time") : L(" volte", " times")) + "</b> · " + L("l'ultima ", "last ") + esc(quando(e.ultimo)) + (e.n > 1 ? L(", la prima ", ", first ") + esc(quando(e.primo)) : "") + "</p></li>").join("") + "</ul>"
     : '<p class="ad-nota">' + esc(vuoto) + "</p>");
 
-  const disegna = (d, stato) => {
+  // le segnalazioni di errori nelle storie: prima quelle da leggere
+  const segnalazioni = (lista) => (lista.length ? '<ul class="ad-errs ad-segn">' + lista.map((x) => '<li data-sid="' + x.id + '"' + (x.letta ? ' class="letta"' : "") + '><p class="ad-e-m">' + esc(x.testo) + "</p>" +
+    '<p class="ad-e-w"><a href="/s/' + esc(x.storia) + '">' + esc(titolo(x.storia)) + "</a> · " + esc(quando(x.creata)) + (x.lingua === "en" ? " · English" : "") + (x.letta ? " · " + L("fatta", "done") : "") + "</p>" +
+    '<p class="ad-segn-az"><button type="button" class="btn-text" data-segn="' + (x.letta ? "da-leggere" : "letta") + '">' + (x.letta ? L("Rimetti da leggere", "Mark as unread") : L("Fatta", "Done")) + "</button>" +
+    '<button type="button" class="btn-text rischio" data-segn="cancella">' + L("Cancella", "Delete") + "</button></p></li>").join("") + "</ul>"
+    : '<p class="ad-nota">' + L("Nessuna segnalazione.", "No reports.") + "</p>");
+  // l'immagine e la didascalia per Instagram dell'ultima edizione (scripts/social.py)
+  const kitSocial = (k) => {
+    if (!k || !k.immagine) return '<p class="ad-nota">' + L("L'immagine arriva con la prossima pubblicazione della redazione.", "The image comes with the newsroom's next publication.") + "</p>";
+    return '<div class="ad-social"><img src="' + esc(k.immagine) + '" alt="' + esc(L("L'immagine per Instagram di ", "The Instagram image of ") + (k.giorno || "")) + '" width="270" height="338" loading="lazy">' +
+      '<div class="ad-social-t"><p class="ad-nota">' + esc(L("Fatta ", "Made ") + (k.quando && Date.parse(k.quando) ? quando(Date.parse(k.quando)) : k.giorno || "")) + "</p>" +
+      '<a class="conto-b primario" href="' + esc(k.immagine) + '" download="' + esc("gerico-" + (k.giorno || "oggi") + ".png") + '">' + L("Scarica l'immagine", "Download the image") + "</a>" +
+      '<label class="conto-campo"><span>' + L("Didascalia", "Caption") + '</span><textarea id="ad-didascalia" rows="9" readonly>' + esc(k.didascalia || "") + "</textarea></label>" +
+      '<button type="button" class="conto-b" id="ad-copia">' + L("Copia la didascalia", "Copy the caption") + "</button></div></div>";
+  };
+
+  const disegna = (d, stato, social) => {
     const oggi = d.serie[d.serie.length - 1] || {}, periodo = d.serie.reduce((a, x) => a + x.visite, 0);
     const nuovi = d.serie.reduce((a, x) => a + x.iscritti, 0);
     const js = d.errori.filter((e) => e.tipo === "js"), wk = d.errori.filter((e) => e.tipo !== "js");
     const recenti = d.errori.filter((e) => d.ora - e.ultimo < 864e5).length;
+    const segn = d.segnalazioni || [], daLeggere = segn.filter((x) => !x.letta).length;
     const avvisi = [];
     if (d.segreti.adminToken) avvisi.push(L("Il segreto ADMIN_TOKEN è ancora impostato: il tuo account è già l'amministratore, quindi puoi toglierlo (Cloudflare, Workers e Pages, gerico, Settings, Variables and Secrets).",
       "The ADMIN_TOKEN secret is still set: your account is already the administrator, so you can remove it (Cloudflare, Workers & Pages, gerico, Settings, Variables and Secrets)."));
@@ -259,7 +300,8 @@ G.page("admin", async function (P) {
       tessera(L("Iscritti", "Members"), n(d.iscritti.totale), nuovi ? "+" + n(nuovi) + L(" negli ultimi ", " in the last ") + d.giorni + L(" giorni", " days") : L("nessuno nuovo nel periodo", "none new in the period")) +
       tessera(L("Visite oggi", "Visits today"), n(oggi.visite), n(periodo) + L(" nel periodo", " in the period")) +
       tessera(L("Visitatori unici oggi", "Unique visitors today"), oggi.unici === null || oggi.unici === undefined ? "—" : n(oggi.unici), oggi.unici === null || oggi.unici === undefined ? L("serve STATS_SALT", "needs STATS_SALT") : L("persone diverse, più o meno", "different people, roughly")) +
-      tessera(L("Problemi nelle ultime 24 ore", "Problems in the last 24 hours"), n(recenti), recenti ? L("errori diversi", "distinct errors") : L("nessun errore", "no errors")) + "</div>";
+      tessera(L("Problemi nelle ultime 24 ore", "Problems in the last 24 hours"), n(recenti), recenti ? L("errori diversi", "distinct errors") : L("nessun errore", "no errors")) +
+      tessera(L("Segnalazioni da leggere", "Reports to read"), n(daLeggere), segn.length ? n(segn.length) + L(" in tutto", " in total") : L("nessuna", "none")) + "</div>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-aff"><h2 id="ad-h-aff">' + L("Affluenza", "Traffic") + "</h2>" +
       colonne(d.serie, "visite", L("Visite al giorno", "Visits per day"), L("visite", "visits")) +
       (d.segreti.statsSalt ? colonne(d.serie, "unici", L("Visitatori unici al giorno", "Unique visitors per day"), L("visitatori", "visitors")) : "") +
@@ -268,8 +310,12 @@ G.page("admin", async function (P) {
       classifica(L("Paese scelto", "Chosen country"), d.paesi, (k) => G.flag(k) + " " + esc(G.paeseNome(k))) +
       classifica(L("Lingua", "Language"), d.lingue, (k) => esc(LINGUA[k] || k)) +
       classifica(L("Dispositivo", "Device"), d.dispositivi, (k) => esc(DISP[k] || k)) +
+      classifica(L("Da dove arrivano", "Where they come from"), d.provenienze || [], (k) => esc(FONTE[k] || k)) +
+      classifica(L("Le storie più lette", "Most read stories"), d.letture || [], (k) => '<a href="/s/' + esc(k) + '">' + esc(titolo(k)) + "</a>") +
       '</div><p class="ad-nota">' + L("Le visite si contano senza cookie e senza salvare indirizzi IP; i visitatori unici con un hash che cambia ogni giorno.", "Visits are counted without cookies and without storing IP addresses; unique visitors with a hash that changes every day.") + "</p>" +
       '<p class="ad-nota ad-mie"><span id="ad-mie-t">' + mieTesto() + '</span> <button type="button" class="btn-text" id="ad-mie">' + mieBottone() + "</button></p></section>";
+    h += '<section class="ad-sec" aria-labelledby="ad-h-seg"><h2 id="ad-h-seg">' + L("Segnalazioni di errori", "Error reports") + "</h2>" + segnalazioni(segn) + "</section>";
+    h += '<section class="ad-sec" aria-labelledby="ad-h-soc"><h2 id="ad-h-soc">' + L("Per Instagram", "For Instagram") + "</h2>" + kitSocial(social) + "</section>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-isc"><h2 id="ad-h-isc">' + L("Iscritti", "Members") + "</h2>" +
       colonne(d.serie, "iscritti", L("Nuovi iscritti al giorno", "New members per day"), L("iscritti", "members")) +
       (d.iscritti.elenco.length > 8 ? '<input class="paesi-q ad-cerca" id="ad-cerca" type="search" autocomplete="off" spellcheck="false" placeholder="' + L("Cerca per nome o email", "Search by name or email") + '" aria-label="' + L("Cerca per nome o email", "Search by name or email") + '">' : "") +

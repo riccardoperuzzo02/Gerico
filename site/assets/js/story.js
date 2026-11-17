@@ -20,7 +20,17 @@ G.page("story", async function (P) {
   }
   const s = (ed.stories || []).concat(ed.archive || []).find((x) => x.id === id);
   if (!s) {
-    $("story").innerHTML = back + '<div class="empty"><h1>' + G.L("Questa storia non c'è più.", "This story is no longer here.") + "</h1><p>" + G.L("GERICO tiene le storie per una settimana.", "GERICO keeps stories for a week.") + ' <a href="index.html">' + G.L("Torna alla prima pagina", "Back to the front page") + "</a>.</p></div>";
+    // uscita dall'edizione: se è nell'archivio, la sua pagina c'è ancora
+    const arch = await G.load("archivio");
+    const x = arch && Array.isArray(arch.storie) ? arch.storie.find((y) => y.id === id) : null;
+    if (x) {
+      document.title = x.t + " · GERICO";
+      $("story").innerHTML = back + '<div class="empty arch-vec"><p class="meta">' + esc(G.secLabel(x.sec)) + (x.d ? " · " + esc(G.dayOnly(x.d)) : "") + "</p><h1>" + esc(x.t) + "</h1>" +
+        (x.s ? '<p class="sum">' + esc(x.s) + "</p>" : "") + "<p>" + G.L("La storia non è più nell'edizione di oggi: si legge intera nell'archivio.", "The story is no longer in today's edition: you can read it in full in the archive.") + "</p>" +
+        '<p><a class="conto-b primario" href="/s/' + esc(x.id) + '">' + G.L("Leggi la storia nell'archivio", "Read the story in the archive") + '</a></p><p><a href="/archivio">' + G.L("Tutto l'archivio", "The whole archive") + "</a></p></div>";
+      return;
+    }
+    $("story").innerHTML = back + '<div class="empty"><h1>' + G.L("Questa storia non c'è più.", "This story is no longer here.") + "</h1><p>" + G.L("Non è nell'edizione di oggi né nell'archivio.", "It's neither in today's edition nor in the archive.") + ' <a href="index.html">' + G.L("Torna alla prima pagina", "Back to the front page") + "</a>.</p></div>";
     return;
   }
   const title = G.headline(s);
@@ -141,7 +151,9 @@ G.page("story", async function (P) {
   const altreHTML = altre.length >= 2 ? '<section class="blk altre" aria-labelledby="altre-h"><h2 class="blk-h" id="altre-h">' + G.L("Potrebbe interessarti anche", "You might also like") + '</h2><ol class="altre-l">' +
     altre.map((x, i) => '<li><a href="' + G.storyUrl(x) + '"><span class="altre-n" aria-hidden="true">' + String(i + 1).padStart(2, "0") + '</span><span class="altre-c"><span class="altre-k">' + esc(G.secLabel(x.section)) +
       '</span><span class="altre-t">' + esc(G.headline(x)) + "</span></span></a></li>").join("") + "</ol></section>" : "";
-  const rest = divBlock + open + viewBlock + narrow + hist + nextHTML + altreHTML;
+  // un errore nella storia: chi legge lo dice in due righe, arriva nel gestionale
+  const segnalaHTML = '<p class="segnala"><button type="button" class="btn-text" id="segnala">' + G.L("Hai trovato un errore? Segnalalo", "Spotted a mistake? Report it") + "</button></p>";
+  const rest = divBlock + open + viewBlock + narrow + hist + segnalaHTML + nextHTML + altreHTML;
 
   // se il titolo è già al suo posto (arrivo dalla prima pagina) resta lo stesso elemento
   const h1 = $("st-title");
@@ -154,6 +166,11 @@ G.page("story", async function (P) {
     $("story").innerHTML = topBar + '<p class="meta" id="st-meta">' + metaHTML + '</p><h1 id="st-title">' + esc(title) + '</h1><div id="st-body"' + (G.soft ? "" : ' class="reveal"') + ">" + body + "</div>";
   }
   G.showImgs($("st-body"));
+  // le parole del glossario nell'articolo: la prima volta che compaiono, al massimo sei
+  G.load("glossario").then((gl) => {
+    const a = gl && $("st-body") && $("st-body").querySelector(".article");
+    if (a && !a.querySelector(".gl-w")) G.glossario.collega(a, gl, 6);
+  });
   // il resto della storia (sotto lo schermo) arriva a passaggio animato finito: mentre il titolo vola, la pagina non ha altro da fare
   const fill = () => {
     $("st-body").insertAdjacentHTML("beforeend", rest);
@@ -225,8 +242,38 @@ G.page("story", async function (P) {
   P.on(document, "click", (e) => {
     if (fromHome && e.target.closest("#back") && !e.button && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey) { e.preventDefault(); history.back(); }
   }, { capture: true });
+  // il foglio della segnalazione: solo il testo, niente account e niente dati di chi la manda
+  function segnala() {
+    const L = G.L;
+    const f = G.conto.foglio(L("Segnala un errore", "Report a mistake"),
+      '<p class="conto-p">' + L("Cosa non torna in questa storia? Un numero, un nome, una data, una frase che le fonti non dicono. Se puoi, scrivi anche dove l'hai letto giusto.",
+        "What's wrong in this story? A number, a name, a date, a sentence the sources don't say. If you can, also say where you read it right.") + "</p>" +
+      '<form class="conto-form segnala-f" novalidate><label class="conto-campo"><span>' + L("La tua segnalazione", "Your report") + '</span><textarea name="t" rows="5" maxlength="1000" required spellcheck="true"></textarea></label>' +
+      '<p class="conto-nota">' + L("Arriva solo a Riccardo, che cura GERICO, e si cancella dopo sei mesi. Non serve l'account e non salviamo chi la manda: non scrivere dati personali.",
+        "It reaches only Riccardo, who edits GERICO, and is deleted after six months. You don't need an account and we don't store who sends it: don't write personal data.") + "</p>" +
+      '<button type="submit" class="conto-b primario">' + L("Manda la segnalazione", "Send the report") + '</button><p class="conto-err" role="alert"></p></form>');
+    const form = f.d.querySelector(".segnala-f"), err = f.d.querySelector(".conto-err");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const t = form.t.value.trim();
+      err.textContent = "";
+      if (t.length < 5) { err.textContent = L("Scrivi cosa non torna, almeno qualche parola.", "Say what's wrong, at least a few words."); form.t.focus(); return; }
+      const b = form.querySelector("[type=submit]");
+      b.disabled = true;
+      try {
+        await G.conto.api("segnala", { s: id, t, l: G.lang });
+        f.d.querySelector(".conto-in").innerHTML = '<p class="conto-ok">' + L("Grazie, la segnalazione è arrivata.", "Thanks, the report has arrived.") + "</p>" +
+          '<p class="conto-p">' + L("Riccardo la legge e, se c'è un errore, la storia si corregge.", "Riccardo reads it and, if there is a mistake, the story gets corrected.") + "</p>" +
+          '<button type="button" class="conto-b primario" data-chiudi>' + L("Chiudi", "Close") + "</button>";
+        f.d.querySelector("[data-chiudi].conto-b").focus({ preventScroll: true });
+      } catch (x) {
+        if (err.isConnected) err.textContent = x && x.message === "testo" ? L("Scrivi cosa non torna, tra qualche parola e mille caratteri.", "Say what's wrong, between a few words and a thousand characters.") : G.conto.spiega(x);
+      } finally { if (b.isConnected) b.disabled = false; }
+    });
+  }
   P.on(document, "click", (e) => {
     if (e.target.closest("#share")) { share(); return; }
+    if (e.target.closest("#segnala")) { segnala(); return; }
     const na = e.target.closest(".next a[data-id]");
     if (na) {
       handoff(true);

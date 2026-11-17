@@ -510,7 +510,7 @@ def cmd_pubblica(giro):
     py = sys.executable
     steps = [("check_dump.py", [db]), ("foto.py", [db, site]), ("export.py", [db, f"{site}/data"]), ("brevi.py", [db, f"{site}/data"]),
              ("riepilogo.py", [db, f"{site}/data"]), ("titoli.py", [db, f"{site}/data"]),
-             ("share_pages.py", [site]), ("check_site.py", [site])]
+             ("share_pages.py", [site]), ("social.py", [site]), ("check_site.py", [site])]
     outputs, error = {}, None
     for name, args in steps:
         if not os.path.exists(os.path.join("scripts", name)):

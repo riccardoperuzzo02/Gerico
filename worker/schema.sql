@@ -74,3 +74,26 @@ CREATE TABLE IF NOT EXISTS errori (
   primo INTEGER NOT NULL,
   ultimo INTEGER NOT NULL
 );
+
+-- migrazione 2: da dove arrivano le visite, le storie lette, le segnalazioni di errori nelle storie
+CREATE TABLE IF NOT EXISTS provenienze (
+  giorno TEXT NOT NULL,
+  fonte TEXT NOT NULL,
+  n INTEGER NOT NULL,
+  PRIMARY KEY (giorno, fonte)
+);
+CREATE TABLE IF NOT EXISTS letture (
+  giorno TEXT NOT NULL,
+  storia TEXT NOT NULL,
+  n INTEGER NOT NULL,
+  PRIMARY KEY (giorno, storia)
+);
+CREATE TABLE IF NOT EXISTS segnalazioni (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  storia TEXT NOT NULL,
+  testo TEXT NOT NULL,
+  lingua TEXT NOT NULL DEFAULT 'it',
+  creata INTEGER NOT NULL,
+  letta INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS segnalazioni_creata ON segnalazioni (creata);

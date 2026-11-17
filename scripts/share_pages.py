@@ -11,7 +11,13 @@ meta. È l'indirizzo canonico della storia: quello che finisce su Google e quell
 link porta alla storia dentro GERICO (storia.html?id=), con mappa, temi e aggiornamenti.
 Le pagine delle storie uscite dall'edizione restano com'erano: un link vecchio porta comunque a qualcosa.
 Scrive anche:
-- site/sitemap.xml, con le storie e i campi di Google News per quelle delle ultime 48 ore;
+- site/data/archivio.json, l'indice di tutte le storie uscite (anche quelle già fuori dall'edizione): titolo, sommario,
+  sezione, temi, date. Lo usano la ricerca del sito e le pagine qui sotto;
+- l'archivio: site/archivio.html (i mesi e i temi) e site/archivio-<anno-mese>.html (le storie del mese, giorno per giorno;
+  un file accanto e non una cartella archivio/, che con archivio.html renderebbe ambiguo l'indirizzo /archivio);
+- una pagina per tema, site/tema/<nome>.html, con tutte le storie del tema: i temi caldi della redazione e i temi delle
+  storie che ne hanno almeno tre;
+- site/sitemap.xml, con tutte le storie, l'archivio, i temi e i campi di Google News per le storie delle ultime 48 ore;
 - site/feed.xml, il feed RSS delle ultime storie;
 - in index.html, tra i segni <!--storie--> e <!--/storie-->, l'elenco dei titoli di oggi per chi non esegue lo script;
 - la riga Sitemap di robots.txt.
@@ -21,14 +27,18 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 
 SAFE_ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,150}$")
 FALLBACK = "https://gerico.financialnews.workers.dev"
-PAGES = ["", "terminal", "come-funziona"]
+PAGES = ["", "terminal", "come-funziona", "glossario"]
 SEZIONI = {"mondo": "Mondo", "italia": "Italia", "economia": "Economia", "mercati": "Mercati", "tecnologia": "Tecnologia"}
 MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+SLUG = re.compile(r"^[a-z0-9][a-z0-9-]{0,60}$")
+MIN_TEMA = 3  # una pagina per un tema delle storie solo da tre storie in su
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2}|Z)$")
 E = html.escape
 
@@ -55,6 +65,7 @@ PAGINA = """<!doctype html>
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1428" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="GERICO" href="/feed.xml">
 <link rel="stylesheet" href="/assets/css/gerico.css{v}">
 <script type="application/ld+json">{jsonld}</script>
@@ -73,12 +84,54 @@ PAGINA = """<!doctype html>
 </div>
 {open}
 {fonti}
+{temi}
 <p class="s-apri"><a class="conto-b primario" href="/storia.html?id={id}">Apri la storia in GERICO</a><span>con la mappa, i temi da seguire e gli aggiornamenti</span></p>
 </article>
 {altre}
 </main>
 <footer class="foot"><div class="wrap">
-<p class="foot-line"><a href="/">Prima pagina</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+</div></footer>
+</body>
+</html>
+"""
+
+# l'archivio e i temi: pagine statiche come quelle delle storie, per chi legge e per i motori di ricerca
+LISTA = """<!doctype html>
+<html lang="it" class="nuova">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{title} · GERICO</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{base}{path}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GERICO">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{base}{path}">
+<meta property="og:image" content="{base}/assets/img/og-gerico.png">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1428" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="GERICO" href="/feed.xml">
+<link rel="stylesheet" href="/assets/css/gerico.css{v}">
+<script type="application/ld+json">{jsonld}</script>
+</head>
+<body class="pagina-s pagina-lista">
+<header class="top no-line"><div class="wrap top-row"><a class="brand" href="/" aria-label="GERICO, prima pagina">GERICO</a></div></header>
+<main id="main" class="wrap">
+<div class="lista-in">
+<nav class="briciole" aria-label="Dove sei">{briciole}</nav>
+<h1>{h1}</h1>
+<p class="sum">{intro}</p>
+{corpo}
+</div>
+</main>
+<footer class="foot"><div class="wrap">
+<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
 </div></footer>
 </body>
 </html>
@@ -125,7 +178,110 @@ def url_ok(u):
     return u if u.startswith("https://") or u.startswith("http://") else ""
 
 
-def pagina(s, base, v, altre):
+# ---------------------------------------------------------------- glossario
+
+def carica_glossario(site):
+    try:
+        gl = json.load(open(os.path.join(site, "data", "glossario.json"), encoding="utf-8"))
+        return gl if isinstance(gl.get("voci"), list) else None
+    except (OSError, ValueError, AttributeError):
+        return None
+
+
+def forme_glossario(gl):
+    """per ogni voce: l'id, l'espressione che trova le sue forme negli articoli in italiano, le frasi da lasciare stare"""
+    out = []
+    for v in (gl or {}).get("voci") or []:
+        x = v.get("it") if isinstance(v, dict) else None
+        if not x or not x.get("t") or not SLUG.match(str(v.get("id") or "")):
+            continue
+        forme = x.get("m") if isinstance(x.get("m"), list) else [x["t"]] + list(x.get("alt") or [])
+        forme = sorted({f for f in forme if isinstance(f, str) and f}, key=len, reverse=True)
+        if forme:
+            rx = re.compile(r"(?<![\w])(" + "|".join(re.escape(f) for f in forme) + r")(?![\w])", 0 if v.get("cs") else re.IGNORECASE)
+            out.append((v["id"], rx, [str(n).lower() for n in x.get("no") or []]))
+    return out
+
+
+def collega_glossario(paragrafi, forme, quanti=6):
+    """i paragrafi in HTML, con la prima volta di ogni parola del glossario che porta alla sua voce (al massimo «quanti»)"""
+    trovati = []
+    for gid, rx, no in forme:
+        fatto = False
+        for pi, t in enumerate(paragrafi):
+            for m in rx.finditer(t):
+                giro = t[max(0, m.start() - 25):m.end() + 25].lower()
+                if not any(n in giro for n in no):
+                    trovati.append((pi, m.start(), m.end(), gid))
+                    fatto = True
+                    break
+            if fatto:
+                break
+    trovati.sort()
+    scelti = []
+    for x in trovati:
+        if len(scelti) >= quanti:
+            break
+        if not any(y[0] == x[0] and x[1] < y[2] and y[1] < x[2] for y in scelti):
+            scelti.append(x)
+    out = []
+    for pi, t in enumerate(paragrafi):
+        pezzi, da = [], 0
+        for _, a, b, gid in sorted(y for y in scelti if y[0] == pi):
+            pezzi.append(E(t[da:a]) + f'<a class="gl-a" href="/glossario#{gid}">{E(t[a:b])}</a>')
+            da = b
+        out.append("".join(pezzi) + E(t[da:]))
+    return out
+
+
+def pagina_glossario(site, base, gl):
+    """la pagina del glossario: le voci in italiano e in inglese (si vede la lingua scelta), a gruppi, in ordine alfabetico"""
+    path = os.path.join(site, "glossario.html")
+    try:
+        pag = open(path, encoding="utf-8").read()
+    except OSError:
+        return
+    if not gl or "<!--glossario-->" not in pag:
+        return
+    gruppi = gl.get("gruppi") or {}
+    voci = [v for v in gl.get("voci") or [] if isinstance(v, dict) and SLUG.match(str(v.get("id") or "")) and (v.get("it") or {}).get("t") and (v.get("en") or {}).get("t")]
+    chiave = lambda v: unicodedata.normalize("NFD", v["it"]["t"]).encode("ascii", "ignore").decode().lower()
+    parti = ['<div class="prose gl">',
+             '<h1><span data-only="it">Glossario</span><span data-only="en">Glossary</span></h1>',
+             '<p class="sum" data-only="it">Le parole dell\'economia, dei mercati e della politica che tornano più spesso nelle notizie, spiegate in poche righe. '
+             'Negli articoli, la prima volta che ne compare una è sottolineata: un tocco e si legge la spiegazione.</p>',
+             '<p class="sum" data-only="en">The words of economics, markets and politics that keep coming back in the news, explained in a few lines. '
+             'In the articles, the first time one appears it is underlined: tap it to read the explanation.</p>']
+    nav = []
+    for k, (n_it, n_en) in gruppi.items():
+        if any(v.get("g") == k for v in voci):
+            nav.append(f'<a href="#gruppo-{E(k)}"><span data-only="it">{E(n_it)}</span><span data-only="en">{E(n_en)}</span></a>')
+    if nav:
+        parti.append('<nav class="gl-ind" aria-label="Gruppi">' + "".join(nav) + "</nav>")
+    ld = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Il glossario di GERICO", "url": base + "/glossario", "inLanguage": "it", "hasDefinedTerm": []}
+    for k, (n_it, n_en) in gruppi.items():
+        lista = sorted((v for v in voci if v.get("g") == k), key=chiave)
+        if not lista:
+            continue
+        # in inglese le voci si rimettono in ordine alfabetico con il loro nome inglese (order di CSS)
+        ordine_en = {v["id"]: i for i, v in enumerate(sorted(lista, key=lambda v: v["en"]["t"].lower()))}
+        parti.append(f'<section class="gl-g" aria-labelledby="gruppo-{E(k)}"><h2 id="gruppo-{E(k)}"><span data-only="it">{E(n_it)}</span><span data-only="en">{E(n_en)}</span></h2><dl class="gl-l">')
+        for v in lista:
+            it, en = v["it"], v["en"]
+            parti.append(f'<div class="gl-v" id="{E(v["id"])}" style="--en:{ordine_en[v["id"]]}"><dt><span data-only="it">{E(it["t"])}</span><span data-only="en" lang="en">{E(en["t"])}</span></dt>'
+                         f'<dd><span data-only="it">{E(it["d"])}</span><span data-only="en" lang="en">{E(en["d"])}</span></dd></div>')
+            ld["hasDefinedTerm"].append({"@type": "DefinedTerm", "name": it["t"], "description": it["d"], "url": f'{base}/glossario#{v["id"]}'})
+        parti.append("</dl></section>")
+    parti.append('<p class="gl-piede" data-only="it">Manca una parola? Scrivila nella segnalazione sotto una storia.</p>'
+                 '<p class="gl-piede" data-only="en">Missing a word? Write it in the report form under any story.</p>')
+    parti.append("</div>")
+    parti.append('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>")
+    blocco = "<!--glossario-->\n" + "\n".join(parti) + "\n<!--/glossario-->"
+    nuova = re.sub(r"<!--glossario-->.*?<!--/glossario-->", lambda _: blocco, pag, flags=re.S)
+    scrivi_se_cambia(path, nuova)
+
+
+def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi", gloss=None):
     sid = s["id"]
     titolo = " ".join(str(s["title"]).split())
     sezione = SEZIONI.get(s.get("section"), "Notizie")
@@ -145,7 +301,8 @@ def pagina(s, base, v, altre):
     else:
         media = ""
     testo = str(s.get("article") or "").strip() or str(s.get("summary") or "")
-    articolo = "\n".join(f"<p>{E(' '.join(p.split()))}</p>" for p in re.split(r"\n\s*\n", testo) if p.strip())
+    paragrafi = [" ".join(p.split()) for p in re.split(r"\n\s*\n", testo) if p.strip()]
+    articolo = "\n".join(f"<p>{p}</p>" for p in (collega_glossario(paragrafi, gloss) if gloss and s.get("article") else [E(p) for p in paragrafi]))
     aperte = [x for x in (s.get("open") or []) if isinstance(x, str) and x.strip()]
     open_html = ('<section class="blk"><h2 class="blk-h">Cosa non si sa ancora</h2><ul class="s-lista">' + "".join(f"<li>{E(x)}</li>" for x in aperte) + "</ul></section>") if aperte else ""
     fonti = [x for x in (s.get("sources") or []) if isinstance(x, dict) and x.get("name")]
@@ -156,7 +313,7 @@ def pagina(s, base, v, altre):
         righe.append(f"<li><b>{nome}</b>" + (f"<span>{E(str(x['angle']))}</span>" if x.get("angle") else "") + "</li>")
     fonti_html = (f'<section class="blk"><h2 class="blk-h">Le {len(fonti)} fonti</h2><ul class="s-fonti">' + "".join(righe) + "</ul></section>") if len(fonti) > 1 else \
         ('<section class="blk"><h2 class="blk-h">La fonte</h2><ul class="s-fonti">' + "".join(righe) + "</ul></section>" if fonti else "")
-    altre_html = ('<section class="blk altre"><h2 class="blk-h">Le altre notizie di oggi</h2><ol class="altre-l">' +
+    altre_html = ('<section class="blk altre"><h2 class="blk-h">' + E(altre_titolo) + '</h2><ol class="altre-l">' +
                   "".join(f'<li><a href="/s/{E(a["id"])}"><span class="altre-n" aria-hidden="true">{i + 1:02d}</span><span class="altre-c"><span class="altre-k">{E(SEZIONI.get(a.get("section"), "Notizie"))}</span>'
                           f'<span class="altre-t">{E(" ".join(str(a["title"]).split()))}</span></span></a></li>' for i, a in enumerate(altre)) + "</ol></section>") if altre else ""
     ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": titolo[:110], "description": short(s.get("summary"), 300),
@@ -173,7 +330,204 @@ def pagina(s, base, v, altre):
     return PAGINA.format(title=E(short(titolo, 120)), title_full=E(titolo), desc=E(short(s.get("summary"))), summary=E(" ".join(str(s.get("summary") or "").split())),
                          base=base, id=sid, image=E(immagine), published=E(pub or ""), modified=E(mod or ""), section=E(sezione), sec_id=E(str(s.get("section") or "")),
                          quando=E(quando(mod) or ""), v=v, media=media, article=articolo, open=open_html, fonti=fonti_html, altre=altre_html,
+                         temi=temi_storia(s, temi or {}),
                          jsonld=json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"))
+
+
+def slug(testo):
+    """«Intelligenza artificiale» → «intelligenza-artificiale»: il nome di un tema nell'indirizzo della sua pagina"""
+    t = unicodedata.normalize("NFKD", str(testo)).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:60]
+
+
+def giorno_di(iso):
+    """la data (a Roma, com'è scritta nella storia) di un'ora ISO: «2026-11-17»"""
+    return str(iso or "")[:10] if re.match(r"^\d{4}-\d{2}-\d{2}", str(iso or "")) else ""
+
+
+def giorno_lungo(g):
+    try:
+        d = datetime.strptime(g, "%Y-%m-%d")
+        return f"{GIORNI[d.weekday()]} {d.day} {MESI[d.month - 1]} {d.year}"
+    except ValueError:
+        return g
+
+
+def voce(s):
+    """una storia nell'indice dell'archivio: quello che serve alla ricerca, all'archivio e alle pagine dei temi"""
+    pub = s.get("firstSeen") if ISO.match(str(s.get("firstSeen") or "")) else ""
+    mod = s.get("updated") if ISO.match(str(s.get("updated") or "")) else pub
+    v = {"id": s["id"], "t": " ".join(str(s["title"]).split()), "s": short(s.get("summary"), 220), "sec": str(s.get("section") or ""),
+         "d": pub or mod, "u": mod or pub}
+    tags = [" ".join(t.split()) for t in (s.get("tags") or []) if isinstance(t, str) and t.strip()][:8]
+    if tags:
+        v["tags"] = tags
+    th = [t for t in (s.get("themes") or []) if isinstance(t, str) and SLUG.match(t)][:4]
+    if th:
+        v["th"] = th
+    if s.get("scope") == "paese" and re.match(r"^[A-Z]{2}$", str(s.get("country") or "")):
+        v["p"] = s["country"]
+    return v
+
+
+def temi_pagine(indice):
+    """i temi che hanno una pagina: {slug: (nome, [storie])}. I temi caldi della redazione (per id) e i temi delle
+    storie con almeno MIN_TEMA storie; un tema delle storie con lo stesso nome di un tema caldo si unisce a lui"""
+    storie = indice.get("storie") or []
+    out = {}
+    for tid, nome in (indice.get("temi") or {}).items():
+        lista = [x for x in storie if tid in (x.get("th") or [])]
+        if lista and SLUG.match(tid):
+            out[tid] = (nome, lista)
+    # un tema delle storie con lo stesso nome di un tema caldo («Israele» e il tema caldo «Israele») è lo stesso tema
+    per_nome = {slug(n): k for k, (n, _l) in out.items()}
+    conta = {}
+    for x in storie:
+        for t in x.get("tags") or []:
+            k = per_nome.get(slug(t), slug(t))
+            if x not in conta.setdefault(k, (t, []))[1]:
+                conta[k][1].append(x)
+    for sl, (nome, lista) in conta.items():
+        if not SLUG.match(sl) or len(lista) < MIN_TEMA:
+            continue
+        if sl in out:
+            ids = {x["id"] for x in out[sl][1]}
+            out[sl] = (out[sl][0], out[sl][1] + [x for x in lista if x["id"] not in ids])
+        else:
+            out[sl] = (nome, lista)
+    return {k: (n, sorted(l, key=lambda x: x.get("d") or "", reverse=True)) for k, (n, l) in out.items()}
+
+
+def temi_storia(s, temi):
+    """sotto una storia: i link alle pagine dei suoi temi"""
+    voci = []
+    for k in [t for t in (s.get("themes") or []) if isinstance(t, str)] + [slug(t) for t in (s.get("tags") or []) if isinstance(t, str)]:
+        if k in temi and k not in [x[0] for x in voci]:
+            voci.append((k, temi[k][0]))
+    if not voci:
+        return ""
+    return ('<nav class="s-temi" aria-label="Temi della storia"><span>Tutte le storie su</span>' +
+            "".join(f'<a href="/tema/{E(k)}">{E(n)}</a>' for k, n in voci[:6]) + "</nav>")
+
+
+def aggiorna_archivio(site, buone, themes):
+    """l'indice di tutte le storie: quelle dell'edizione si aggiornano, quelle uscite restano come erano"""
+    path = os.path.join(site, "data", "archivio.json")
+    try:
+        prima = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        prima = {}
+    per_id = {x["id"]: x for x in (prima.get("storie") or []) if isinstance(x, dict) and SAFE_ID.match(str(x.get("id") or ""))}
+    for s in buone:
+        per_id[s["id"]] = voce(s)
+    temi = dict(prima.get("temi") or {})
+    for t in themes or []:
+        if isinstance(t, dict) and SLUG.match(str(t.get("id") or "")) and t.get("label"):
+            temi[t["id"]] = " ".join(str(t["label"]).split())
+    # solo le storie che hanno la loro pagina: un link dell'archivio non porta mai a una pagina che non c'è
+    storie = sorted([x for x in per_id.values() if os.path.exists(os.path.join(site, "s", x["id"] + ".html"))],
+                    key=lambda x: (x.get("d") or "", x["id"]), reverse=True)
+    indice = {"temi": dict(sorted(temi.items())), "storie": storie}
+    corpo = json.dumps(indice, ensure_ascii=False, separators=(",", ":"))
+    if json.dumps({"temi": prima.get("temi") or {}, "storie": prima.get("storie") or []}, ensure_ascii=False, separators=(",", ":")) != corpo:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(json.dumps(dict(indice, aggiornato=datetime.now(timezone.utc).isoformat(timespec="seconds")), ensure_ascii=False, separators=(",", ":")) + "\n")
+    return indice
+
+
+def riga_lista(x, con_giorno=True):
+    sez = SEZIONI.get(x.get("sec"), "Notizie")
+    g = giorno_di(x.get("d"))
+    meta = (E(giorno_lungo(g)) + " · " if con_giorno and g else "") + E(sez)
+    return (f'<li><a href="/s/{E(x["id"])}"><span class="arch-k">{meta}</span><span class="arch-t">{E(x["t"])}</span>' +
+            (f'<span class="arch-s">{E(x["s"])}</span>' if x.get("s") else "") + "</a></li>")
+
+
+def pagina_lista(base, v, path, title, desc, h1, intro, corpo, briciole, elenco):
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": base + path, "inLanguage": "it",
+          "isPartOf": {"@type": "WebSite", "name": "GERICO", "url": base + "/"},
+          "mainEntity": {"@type": "ItemList", "numberOfItems": len(elenco),
+                         "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{base}/s/{x['id']}"} for i, x in enumerate(elenco[:100])]}}
+    bric = "".join(f'<a href="{E(u)}">{E(n)}</a>' if u else f'<span aria-current="page">{E(n)}</span>' for n, u in briciole)
+    return LISTA.format(title=E(title), desc=E(desc), base=base, path=path, v=v, h1=E(h1), intro=E(intro), corpo=corpo, briciole=bric,
+                        jsonld=json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"))
+
+
+def pagine_archivio(site, base, v, indice):
+    """l'archivio (mesi e temi), un mese per pagina e una pagina per tema; restituisce gli indirizzi per la sitemap"""
+    storie = indice.get("storie") or []
+    temi = temi_pagine(indice)
+    mesi = {}
+    for x in storie:
+        g = giorno_di(x.get("d"))
+        if g:
+            mesi.setdefault(g[:7], []).append(x)
+    indirizzi = []
+    os.makedirs(os.path.join(site, "tema"), exist_ok=True)
+    nome_mese = lambda m: f"{MESI[int(m[5:7]) - 1].capitalize()} {m[:4]}"
+    for m, lista in mesi.items():
+        giorni = {}
+        for x in lista:
+            giorni.setdefault(giorno_di(x["d"]), []).append(x)
+        corpo = "".join(f'<section class="arch-g"><h2 class="blk-h">{E(giorno_lungo(g).capitalize())}</h2><ul class="arch-l">' +
+                        "".join(riga_lista(x, False) for x in giorni[g]) + "</ul></section>" for g in sorted(giorni, reverse=True))
+        n = len(lista)
+        testo = pagina_lista(base, v, f"/archivio-{m}", f"Archivio di {nome_mese(m).lower()}", f"Le {n} storie di GERICO di {nome_mese(m).lower()}, giorno per giorno.",
+                             nome_mese(m), f"Le {n} storie del mese, giorno per giorno, dalla più recente.", corpo,
+                             [("Prima pagina", "/"), ("Archivio", "/archivio"), (nome_mese(m), "")], lista)
+        scrivi_se_cambia(os.path.join(site, "archivio-" + m + ".html"), testo)
+        indirizzi.append(f"/archivio-{m}")
+    for k, (nome, lista) in temi.items():
+        corpo = '<ul class="arch-l">' + "".join(riga_lista(x) for x in lista) + "</ul>"
+        n = len(lista)
+        testo = pagina_lista(base, v, f"/tema/{k}", f"{nome}, tutte le storie", f"Le storie di GERICO su {nome}, dalla più recente, ognuna scritta confrontando le testate.",
+                             nome, (f"Le {n} storie" if n > 1 else "La storia") + " di GERICO su questo tema, dalla più recente. Ognuna è scritta confrontando quello che dicono le testate.",
+                             corpo, [("Prima pagina", "/"), ("Archivio", "/archivio"), (nome, "")], lista)
+        scrivi_se_cambia(os.path.join(site, "tema", k + ".html"), testo)
+        indirizzi.append(f"/tema/{k}")
+    # l'archivio: i mesi, i temi e gli ultimi sette giorni
+    ultimi = {}
+    for x in storie:
+        g = giorno_di(x.get("d"))
+        if g and (g in ultimi or len(ultimi) < 7):
+            ultimi.setdefault(g, []).append(x)
+    temi_ord = sorted(temi.items(), key=lambda kv: (-len(kv[1][1]), kv[1][0].lower()))
+    corpo = ('<section class="arch-g"><h2 class="blk-h">I mesi</h2><ul class="arch-mesi">' +
+             "".join(f'<li><a href="/archivio-{m}"><b>{E(nome_mese(m))}</b><span>{len(mesi[m])} storie</span></a></li>' for m in sorted(mesi, reverse=True)) + "</ul></section>" +
+             ('<section class="arch-g"><h2 class="blk-h">I temi</h2><ul class="arch-temi">' +
+              "".join(f'<li><a href="/tema/{E(k)}">{E(n)}<span>{len(l)}</span></a></li>' for k, (n, l) in temi_ord) + "</ul></section>" if temi else "") +
+             "".join(f'<section class="arch-g"><h2 class="blk-h">{E(giorno_lungo(g).capitalize())}</h2><ul class="arch-l">' +
+                     "".join(riga_lista(x, False) for x in ultimi[g]) + "</ul></section>" for g in sorted(ultimi, reverse=True)))
+    testo = pagina_lista(base, v, "/archivio", "Archivio", f"Tutte le {len(storie)} storie di GERICO, mese per mese e tema per tema.", "Archivio",
+                         f"Tutte le {len(storie)} storie uscite su GERICO, anche quelle che non sono più in prima pagina: per mese, per tema e, qui sotto, gli ultimi giorni.",
+                         corpo, [("Prima pagina", "/"), ("Archivio", "")], storie)
+    scrivi_se_cambia(os.path.join(site, "archivio.html"), testo)
+    return ["/archivio"] + indirizzi, temi
+
+
+def ripara_foto(site, in_edizione, v=""):
+    """le pagine delle storie uscite dall'edizione restano, ma la loro foto può essere stata tolta (foto.py tiene solo
+    quelle delle storie in corso): via il riquadro della foto e, come immagine dell'anteprima, quella di GERICO.
+    Prendono anche la versione del foglio di stile di adesso e il manifest del sito installabile"""
+    cartella, base = os.path.join(site, "s"), site_base(site)
+    n = 0
+    for f in os.listdir(cartella):
+        if not f.endswith(".html") or f[:-5] in in_edizione:
+            continue
+        path = os.path.join(cartella, f)
+        t = t2 = open(path, encoding="utf-8").read()
+        m = re.search(r'src="/(img/foto/[\w.-]+\.jpg)', t)
+        if m and not os.path.exists(os.path.join(site, m.group(1))):
+            t2 = re.sub(r'<figure class="media foto st-media">.*?</figure>', "", t2, flags=re.S)
+            t2 = re.sub(r'(https?://[^"\s]+)?/img/foto/[\w.-]+\.jpg(\?v=\w+)?', base + "/assets/img/og-gerico.png", t2)
+        if v:
+            t2 = re.sub(r'(/assets/css/gerico\.css)\?v=[\w-]+', lambda x: x.group(1) + v, t2)
+        if 'rel="manifest"' not in t2 and "noindex" not in t2:
+            t2 = t2.replace('<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n',
+                            '<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n<link rel="manifest" href="/manifest.webmanifest">\n', 1)
+        if t2 != t:
+            n += scrivi_se_cambia(path, t2)
+    return n
 
 
 def scrivi_se_cambia(path, testo):
@@ -199,10 +553,27 @@ def main(site):
     buone = [s for s in stories if SAFE_ID.match(str(s.get("id") or "")) and s.get("title")]
     skipped = [str(s.get("id") or "(senza id)") for s in stories if s not in buone]
     prime = sorted([s for s in live if s in buone and s.get("scope") != "paese"], key=lambda s: s.get("rank") or 99)
+    # i temi con una pagina, dall'indice con le storie di adesso: le pagine delle storie hanno i link ai loro temi
+    indice = {"temi": {}, "storie": []}
+    try:
+        indice = json.load(open(os.path.join(site, "data", "archivio.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        pass
+    per_id = {x["id"]: x for x in (indice.get("storie") or []) if isinstance(x, dict) and x.get("id")}
+    per_id.update({s["id"]: voce(s) for s in buone})
+    temi_ora = dict(indice.get("temi") or {})
+    temi_ora.update({t["id"]: t["label"] for t in (ed.get("themes") or []) if isinstance(t, dict) and t.get("id") and t.get("label")})
+    temi_prima = temi_pagine({"temi": temi_ora, "storie": list(per_id.values())})
+    gl = carica_glossario(site)
+    gloss = forme_glossario(gl)
+    pagina_glossario(site, base, gl)
     written = 0
     for s in buone:
         altre = [a for a in prime if a["id"] != s["id"]][:6]
-        written += scrivi_se_cambia(os.path.join(out, s["id"] + ".html"), pagina(s, base, v, altre))
+        written += scrivi_se_cambia(os.path.join(out, s["id"] + ".html"), pagina(s, base, v, altre, temi_prima, gloss=gloss))
+    ripara_foto(site, {s["id"] for s in buone}, v)
+    indice = aggiorna_archivio(site, buone, ed.get("themes"))
+    extra, _temi = pagine_archivio(site, base, v, indice)
 
     # ---------- sitemap, con i campi di Google News per le storie delle ultime 48 ore ----------
     when = ed.get("generatedAt") or ""
@@ -213,6 +584,17 @@ def main(site):
         mod = when if p == "" and ISO.match(when) else ""
         lines.append(f"<url><loc>{E(base + '/' + p)}</loc>" + (f"<lastmod>{mod}</lastmod>" if mod else "") + "</url>")
     n_urls = len(PAGES)
+    for p in extra:
+        lines.append(f"<url><loc>{E(base + p)}</loc></url>")
+        n_urls += 1
+    # le storie uscite dall'edizione restano nella sitemap: la loro pagina c'è ancora (le date dall'indice)
+    in_edizione = {s["id"] for s in buone}
+    for x in indice.get("storie") or []:
+        if x["id"] in in_edizione:
+            continue
+        mod = str(x.get("u") or "")
+        lines.append(f"<url><loc>{E(base + '/s/' + x['id'])}</loc>" + (f"<lastmod>{mod}</lastmod>" if ISO.match(mod) else "") + "</url>")
+        n_urls += 1
     for s in buone:
         mod = str(s.get("updated") or "")
         riga = f"<url><loc>{E(base + '/s/' + s['id'])}</loc>" + (f"<lastmod>{mod}</lastmod>" if ISO.match(mod) else "")

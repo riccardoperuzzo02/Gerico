@@ -3052,6 +3052,12 @@ html.nuova .tv-dot, html.nuova .tv-dot::after, .tv-dot, .tv-dot::after { border-
 /* il widget in «regular» è alto 58 px: il riquadro è alto uguale, e nastro, titolo e nome stanno sulla stessa linea */
 .tv-top .tradingview-widget-container, .tv-top .tradingview-widget-container__widget { display: flex; align-items: center; }
 .tv-top .tradingview-widget-container__widget { flex: 1 1 auto; min-width: 0; }
+/* dentro il widget i prezzi stanno nella parte alta dei suoi 58 px (sotto resta una fascia vuota): l'iframe scende un
+   poco, così la riga dei prezzi sta sulla stessa linea di «Prezzi in diretta» e di «TradingView»; la fascia vuota esce
+   dal riquadro e non si vede */
+.tv-top { --tv-giu: 6px; }
+.tv-tape { overflow: hidden; }
+.tv-top .tradingview-widget-container iframe { transform: translateY(var(--tv-giu)); }
 .tv-top .tradingview-widget-container iframe { display: block; }
 /* il Terminal è scuro (color-scheme: dark) e la pagina del widget no: con schemi diversi il browser dipinge l'iframe con
    un fondo bianco pieno, e il nastro «trasparente» diventa una striscia bianca. Con lo stesso schema resta trasparente */

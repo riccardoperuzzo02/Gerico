@@ -4,13 +4,13 @@
     "esito": "Nessun risultato trovato: due ricerche sulle vendite al dettaglio Usa non hanno dato nessun dato ufficiale di oggi. Agenda già completa dal giro delle 12:10."
   },
   "lastPublish": {
-    "at": "2026-11-17T15:41:19+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 2 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
+    "at": "2026-11-17T18:46:59+01:00",
+    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-17T13:20:30+01:00",
   "marketsRun": {
-    "at": "2026-11-16T18:46:49+01:00",
-    "esito": "Aggiornate le chiusure del 16 novembre (Ansa): Ftse Mib -0,65% a 51.520, Dax -0,6%, Cac 40 -0,2%, Ftse 100 -0,2%, Aex -0,6%, spread 106, gas -7% sotto 84 €/MWh. Mancano Smi, rendimenti, euro/dollaro, Brent. Agenda: nessun dato ufficiale trovato."
+    "at": "2026-11-17T18:46:48+01:00",
+    "esito": "Aggiornate le chiusure del 17 novembre (Ansa): Ftse Mib -1,31% a 50.845, Dax -2,08%, Cac 40 -1,62%, Ftse 100 -1,76%, spread 105, Btp 10 anni 4,42%. Mancano Aex, Smi, Bund, euro/dollaro, Brent, gas. Agenda: nessun dato ufficiale trovato nelle pagine aperte."
   },
   "outlets": [
     "ANSA",

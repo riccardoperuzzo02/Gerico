@@ -1487,10 +1487,15 @@ G.page("terminal", async function (P) {
     { proName: "TVC:UKOIL", title: "Brent" },
     { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" }
   ];
-  // il nastro dei prezzi in diretta sta nell'intestazione, sempre in vista: si può nascondere dal pannello dei grafici (la
-  // scelta resta). Trasparente e scuro, prende il colore del Terminal
+  // il nastro dei prezzi in diretta sta in cima alla pagina, sempre aperto: si può nascondere dal pannello dei grafici
+  // (la scelta resta). Trasparente e scuro, sul colore dei pannelli del Terminal
   const tvTop = $("tv-top");
-  if (tvTop) tvTop.setAttribute("aria-label", G.L("Prezzi in diretta", "Live prices"));
+  if (tvTop) {
+    tvTop.querySelector(".tv-lab span").textContent = G.L("Prezzi in diretta", "Live prices");
+    const cred = $("tv-cred");
+    cred.href = "https://" + G.L("it", "www") + ".tradingview.com/";
+    cred.setAttribute("aria-label", G.L("Prezzi forniti da TradingView (si apre in un'altra scheda)", "Prices by TradingView (opens in a new tab)"));
+  }
   function loadTV() {
     const box = $("tv");
     if (!box) return;
@@ -1498,21 +1503,29 @@ G.page("terminal", async function (P) {
     $("live-btn").textContent = G.L("Nascondi i prezzi in diretta", "Hide live prices");
     $("live-btn").setAttribute("aria-expanded", "true");
     if (box.childElementCount) return;
+    const nastro = box.parentElement;
+    nastro.classList.remove("pronto");
     const wrap = document.createElement("div");
     wrap.className = "tradingview-widget-container";
     const inner = document.createElement("div");
     inner.className = "tradingview-widget-container__widget";
     wrap.appendChild(inner);
-    const copy = document.createElement("div");
-    copy.className = "tradingview-widget-copyright";
-    copy.innerHTML = '<a href="https://' + G.L("it", "www") + '.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="tv-lungo">' + G.L("Prezzi forniti da ", "Prices by ") + "</span>TradingView</a>";
-    wrap.appendChild(copy);
     const sc = document.createElement("script");
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
     sc.async = true;
     sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: G.L("it", "en") });
     wrap.appendChild(sc);
     box.appendChild(wrap);
+    // quando il nastro c'è, l'attesa sparisce (e comunque dopo qualche secondo)
+    const pronto = () => nastro.classList.add("pronto");
+    const guarda = new MutationObserver(() => {
+      const f = wrap.querySelector("iframe");
+      if (!f) return;
+      guarda.disconnect();
+      f.addEventListener("load", () => setTimeout(pronto, 300), { once: true });
+    });
+    guarda.observe(wrap, { childList: true, subtree: true });
+    setTimeout(() => { guarda.disconnect(); pronto(); }, 6000);
   }
   function unloadTV() {
     $("tv").innerHTML = "";

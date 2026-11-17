@@ -214,17 +214,14 @@ G.page("home", async function (P) {
       (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + nuove(k) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
     if (navLati) navLati();
   }
-  // la barra delle sezioni scorre di lato: ai due capi un velo quando c'è altro da vedere e, con il mouse, una freccia
-  // per farla scorrere (sul telefono basta il dito)
+  // la barra delle sezioni scorre di lato: ai due capi un velo quando c'è altro da vedere. Sul telefono basta il dito;
+  // con il mouse la si trascina (un trascinamento non apre la sezione sotto il puntatore)
   let navLati = null;
   (() => {
     const nav = document.querySelector(".home .sec-nav"), row = $("sections");
     if (!nav || !row) return;
-    const ico = (d) => '<svg aria-hidden="true" width="8" height="14" viewBox="0 0 8 14"><path d="' + (d > 0 ? "M1.6 1.6 6.4 7l-4.8 5.4" : "M6.4 1.6 1.6 7l4.8 5.4") +
-      '" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    if (!nav.querySelector(".sn-fr")) {
-      nav.insertAdjacentHTML("beforeend", '<span class="sn-velo sx" aria-hidden="true"></span><span class="sn-velo dx" aria-hidden="true"></span>' +
-        '<button type="button" class="sn-fr sx" tabindex="-1" aria-hidden="true">' + ico(-1) + '</button><button type="button" class="sn-fr dx" tabindex="-1" aria-hidden="true">' + ico(1) + "</button>");
+    if (!nav.querySelector(".sn-velo")) {
+      nav.insertAdjacentHTML("beforeend", '<span class="sn-velo sx" aria-hidden="true"></span><span class="sn-velo dx" aria-hidden="true"></span>');
     }
     navLati = () => {
       const max = row.scrollWidth - row.clientWidth;
@@ -233,9 +230,23 @@ G.page("home", async function (P) {
     };
     P.on(row, "scroll", navLati, { passive: true });
     P.on(window, "resize", navLati);
-    nav.querySelectorAll(".sn-fr").forEach((b) => P.on(b, "click", () => {
-      row.scrollBy({ left: (b.classList.contains("dx") ? 1 : -1) * Math.round(row.clientWidth * 0.66), behavior: G.reduced() ? "auto" : "smooth" });
-    }));
+    let presa = null, mosso = false;
+    P.on(row, "pointerdown", (e) => {
+      if (e.pointerType !== "mouse" || e.button !== 0 || row.scrollWidth - row.clientWidth < 3) return;
+      presa = { x: e.clientX, l: row.scrollLeft, id: e.pointerId };
+      mosso = false;
+    });
+    P.on(row, "pointermove", (e) => {
+      if (!presa || e.pointerId !== presa.id) return;
+      const dx = e.clientX - presa.x;
+      if (!mosso && Math.abs(dx) < 6) return;
+      if (!mosso) { mosso = true; row.setPointerCapture(presa.id); row.classList.add("trascina"); }
+      row.scrollLeft = presa.l - dx;
+    });
+    const lascia = () => { presa = null; row.classList.remove("trascina"); };
+    P.on(row, "pointerup", lascia);
+    P.on(row, "pointercancel", lascia);
+    P.on(row, "click", (e) => { if (mosso) { e.preventDefault(); e.stopPropagation(); mosso = false; } }, true);
   })();
   // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
   function markNav(k, quiet) {

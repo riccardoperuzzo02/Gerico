@@ -1763,15 +1763,15 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
   .t-board > .t-l { grid-column: 1; }
   .t-board > .t-r { grid-column: 2; }
   .t-board.packed { grid-auto-rows: 4px; row-gap: 0; }
-  /* in fondo, larghi quanto la pagina: trimestrali e cedole, titoli, macro, SEC */
-  .t-board > #p-societa, .t-board > #p-titoli, .t-board > #p-sec { grid-column: 1 / -1; }
-  /* la macro sta nella colonna larga, sotto i grafici, con tre serie per riga */
-  html.nuova .t-board #p-macro .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  /* dentro un indice la mappa prende tutta la larghezza, gli altri pannelli continuano sotto; la macro va nella colonna
-     larga, con tre serie per riga */
+  /* in fondo, larghi quanto la pagina: la macro (quattro serie per riga), trimestrali e cedole, titoli, SEC. Sopra, a
+     sinistra mappa, prezzi e tassi; a destra agenda, notizie e tono: le due colonne finiscono quasi insieme */
+  .t-board > #p-macro, .t-board > #p-societa, .t-board > #p-titoli, .t-board > #p-sec { grid-column: 1 / -1; }
+  html.nuova .t-board #p-macro .m-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  /* dentro un indice la mappa prende tutta la larghezza, gli altri pannelli continuano sotto */
   .t-board.inside > #map-panel { grid-column: 1 / -1; }
-  .t-board.inside > #p-macro { grid-column: 1; }
-  html.nuova .t-board.inside #p-macro .m-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* ogni titolo di sezione occupa la stessa altezza delle schede che può avere accanto: i titoli delle due colonne stanno
+     alla stessa altezza, e tra il filo e il contenuto c'è sempre lo stesso spazio */
+  html.nuova body.term .t-panel h2 { display: flex; align-items: center; min-height: 48px; }
 }
 /* notizie: l'ultima scheda dispari prende tutta la riga; sul computer le brevi nella colonna dei mercati */
 @media (min-width: 760px) { html.nuova .list > .item:last-child:nth-child(odd) { grid-column: 1 / -1; } }
@@ -2756,9 +2756,6 @@ html.gp-on body { padding-bottom: calc(90px + env(safe-area-inset-bottom)); }
 .listen .ls-bar:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 2px; }
 html.nuova body:not(.term) .listen { border-bottom-color: transparent; margin-bottom: 6px; }
 
-/* Terminal: niente filo sopra i primi riquadri (Mappa dei mercati; sul computer anche Tassi a 10 anni) */
-html.nuova body.term #map-panel { border-top: 0; }
-@media (min-width: 1000px) { html.nuova body.term #p-tassi { border-top: 0; } }
 
 /* ---------- le pagine delle storie scritte in HTML (/s/<id>): l'articolo intero, per i motori di ricerca e per chi condivide ---------- */
 .pagina-s .top-row { justify-content: flex-start; }
@@ -3008,8 +3005,8 @@ html.nuova .menu-links a::after, html.nuova .menu-links button::after, html.nuov
 .menu-links a[aria-current="page"]::after { background: currentColor; }
 
 /* ---------- la barra delle sezioni in prima pagina ----------
-   le sezioni insieme, poi un filo e i temi caldi; ai capi un velo del colore della pagina quando c'è altro da vedere e,
-   con il mouse, una freccia tonda per scorrere. I veli si fermano sopra la riga in fondo, che resta intera */
+   le sezioni insieme, poi un filo e i temi caldi; ai capi un velo del colore della pagina quando c'è altro da vedere
+   (niente frecce). I veli si fermano sopra la riga in fondo, che resta intera */
 .home .sec-nav .sn-div { flex: none; align-self: center; width: 1px; height: 18px; margin: 0 8px; background: var(--rule); }
 .home .sec-nav .hot-dot { width: 6px; height: 6px; margin-right: 6px; }
 .home .sec-nav .sn-velo {
@@ -3019,43 +3016,71 @@ html.nuova .menu-links a::after, html.nuova .menu-links button::after, html.nuov
 .home .sec-nav .sn-velo.sx { left: 0; background: linear-gradient(90deg, var(--ground) 25%, rgba(255, 255, 255, 0)); background: linear-gradient(90deg, var(--ground) 25%, color-mix(in srgb, var(--ground) 0%, transparent)); }
 .home .sec-nav .sn-velo.dx { right: 0; background: linear-gradient(270deg, var(--ground) 25%, rgba(255, 255, 255, 0)); background: linear-gradient(270deg, var(--ground) 25%, color-mix(in srgb, var(--ground) 0%, transparent)); }
 .home .sec-nav.piu-sx .sn-velo.sx, .home .sec-nav.piu-dx .sn-velo.dx { opacity: 1; }
-.home .sec-nav .sn-fr { display: none; }
-@media (hover: hover) and (pointer: fine) {
-  .home .sec-nav .sn-fr {
-    position: absolute; top: 50%; z-index: 3; display: grid; place-items: center; width: 32px; height: 32px; margin-top: -16px; padding: 0;
-    border: 1px solid var(--rule); border-radius: 50% !important; background: var(--ground); color: var(--ink);
-    box-shadow: 0 2px 10px rgba(10, 20, 40, 0.1); cursor: pointer;
-    opacity: 0; transform: scale(0.85); pointer-events: none;
-    transition: opacity 160ms ease, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 120ms ease;
-  }
-  .home .sec-nav .sn-fr.sx { left: 2px; }
-  .home .sec-nav .sn-fr.dx { right: 2px; }
-  .home .sec-nav.piu-sx .sn-fr.sx, .home .sec-nav.piu-dx .sn-fr.dx { opacity: 1; transform: none; pointer-events: auto; }
-  .home .sec-nav .sn-fr:hover { background: var(--fill); }
-  .home .sec-nav .sn-fr:active { transform: scale(0.92); }
-}
-@media (prefers-reduced-motion: reduce) { .home .sec-nav .sn-velo, .home .sec-nav .sn-fr { transition: none; } }
+/* con il mouse la barra si trascina */
+.home .sec-nav #sections.trascina { cursor: grabbing; user-select: none; scroll-snap-type: none; }
+.home .sec-nav #sections.trascina a { cursor: grabbing; }
+@media (prefers-reduced-motion: reduce) { .home .sec-nav .sn-velo { transition: none; } }
 .menu-in > .opt.conto-menu { margin-top: 18px; }
 
-/* ---------- Terminal: il nastro dei prezzi in diretta, sempre in vista nell'intestazione (TradingView, trasparente sul
-   blu del Terminal). L'altezza è tenuta da subito, così quando il nastro arriva la pagina non salta ---------- */
-.tv-top { position: relative; min-height: 46px; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); overflow: hidden; }
+/* ---------- Terminal: il nastro dei prezzi in diretta, in cima alla pagina (non segue lo scorrimento) ----------
+   Un riquadro come i pannelli: a sinistra «Prezzi in diretta» con un punto che pulsa, in mezzo il nastro di TradingView
+   (trasparente, scuro) che entra ed esce sfumando ai due lati, a destra il nome di TradingView. L'altezza è tenuta da
+   subito, così quando il nastro arriva la pagina non salta */
+.tv-top { padding-top: var(--f13, 13px); }
 .tv-top[hidden] { display: none; }
-.tv-top .tv, html.nuova .tv-top .tv { margin: 0; padding: 0; }
-.tv-top .tradingview-widget-container { position: relative; min-height: 46px; }
-/* il nome di TradingView resta (lo chiedono i termini del widget), a destra, con il nastro che ci scorre sotto */
-.tv-top .tradingview-widget-copyright {
-  position: absolute; top: 0; right: 0; bottom: 0; z-index: 1; display: flex; align-items: center;
-  padding-left: 36px; background: linear-gradient(90deg, transparent, var(--ground) 30px);
-  font-size: 0.6875rem; line-height: 1; white-space: nowrap;
+.tv-card {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: stretch; min-height: 52px;
+  background: var(--t-panel); border: 1px solid var(--t-rule); border-radius: var(--radius); overflow: hidden;
 }
-.tv-top .tradingview-widget-copyright a { color: var(--t-ink-3); text-decoration: none; }
-.tv-top .tradingview-widget-copyright a:hover { color: var(--t-ink); }
-@media (max-width: 759px) { .tv-top .tv-lungo { display: none; } }
-/* mentre il nastro arriva: una riga che respira appena, alta quanto il nastro */
-.tv-top .tv:empty::before { content: ""; display: block; height: 46px; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent); }
-/* i pannelli si fermano sotto l'intestazione intera (riga in alto, sezioni e nastro): l'altezza la misura terminal.js */
-body.term .t-panel { scroll-margin-top: calc(var(--term-top, calc(var(--top-h) + 116px)) + 12px); }
+.tv-lab {
+  display: flex; align-items: center; gap: 9px; margin: 0; padding: 0 16px; border-right: 1px solid var(--t-rule);
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; color: var(--t-ink-2);
+}
+/* le celle dentro il riquadro hanno i filetti dritti (l'arrotondamento di tutto il sito li piegherebbe) */
+html.nuova .tv-lab, html.nuova .tv-tape, html.nuova .tv-cred, html.nuova .tv-top .tv, html.nuova .tv-top .tradingview-widget-container,
+html.nuova .tv-top .tradingview-widget-container * { border-radius: 0 !important; }
+.tv-dot { position: relative; flex: none; width: 7px; height: 7px; background: var(--t-up); }
+html.nuova .tv-dot, html.nuova .tv-dot::after, .tv-dot, .tv-dot::after { border-radius: 50% !important; }
+.tv-dot::after { content: ""; position: absolute; inset: 0; background: var(--t-up); opacity: 0; }
+@media (prefers-reduced-motion: no-preference) { .tv-dot::after { animation: tv-onda 2.4s cubic-bezier(0.2, 0.7, 0.3, 1) infinite; } }
+@keyframes tv-onda { 0% { transform: scale(1); opacity: 0.5; } 70%, 100% { transform: scale(3.2); opacity: 0; } }
+/* il nastro: sfuma ai due lati invece di finire tagliato */
+.tv-tape {
+  position: relative; display: flex; align-items: center; min-width: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
+.tv-top .tv, html.nuova .tv-top .tv { flex: 1 1 auto; min-width: 0; margin: 0; padding: 0; }
+.tv-top .tradingview-widget-container { width: 100%; }
+.tv-top .tradingview-widget-container iframe { display: block; }
+/* il Terminal è scuro (color-scheme: dark) e la pagina del widget no: con schemi diversi il browser dipinge l'iframe con
+   un fondo bianco pieno, e il nastro «trasparente» diventa una striscia bianca. Con lo stesso schema resta trasparente */
+.tv-top iframe { color-scheme: light; }
+/* mentre il nastro arriva: tre righe che respirano appena, al posto dei prezzi */
+.tv-tape::before {
+  content: ""; position: absolute; left: 24px; right: 24px; top: 50%; height: 10px; margin-top: -5px; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 120px, transparent 120px 150px); transition: opacity var(--t-2, 0.2s) ease;
+}
+.tv-tape.pronto::before { opacity: 0; }
+@media (prefers-reduced-motion: no-preference) { .tv-tape:not(.pronto)::before { animation: tv-attesa 1.4s ease-in-out infinite alternate; } }
+@keyframes tv-attesa { to { opacity: 0.45; } }
+.tv-cred {
+  display: flex; align-items: center; padding: 0 16px; border-left: 1px solid var(--t-rule);
+  font-size: 0.75rem; font-weight: 700; white-space: nowrap; text-decoration: none;
+}
+body.term .tv-cred { color: var(--t-ink-3); }
+body.term .tv-cred:hover { color: var(--t-ink); }
+/* telefono: del titolo resta il punto, il nastro ha più spazio */
+@media (max-width: 599px) {
+  .tv-top { padding-top: var(--f8, 8px); }
+  .tv-card { min-height: 48px; }
+  .tv-lab { padding: 0 13px; }
+  .tv-lab span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .tv-cred { padding: 0 12px; font-size: 0.6875rem; }
+  .tv-tape { -webkit-mask-image: linear-gradient(90deg, transparent, #000 16px, #000 calc(100% - 16px), transparent); mask-image: linear-gradient(90deg, transparent, #000 16px, #000 calc(100% - 16px), transparent); }
+}
+/* i pannelli si fermano sotto l'intestazione: l'altezza la misura terminal.js */
+body.term .t-panel { scroll-margin-top: calc(var(--term-top, calc(var(--top-h) + 70px)) + 12px); }
 @media print { .tv-top { display: none !important; } }
 
 /* ---------- Terminal: le frecce delle righe che si aprono, nette ---------- */
@@ -3084,3 +3109,42 @@ html.nuova .t-agenda .im.alto, html.nuova .t-agenda .im.medio, html.nuova .t-age
 /* «Trimestrali | Cedole» (in inglese «Earnings | Dividends»): largo quanto le due scritte, così sul telefono resta un
    interruttore e non diventa un menu */
 #so-seg { flex: 0 1 auto; min-width: 200px; }
+
+/* ---------- Terminal: riquadri e proporzioni (17 novembre) ----------
+   - un bordo solo: il contenuto delle sezioni sta sugli stessi bordi dell'intestazione, del nastro e di «Vai a» (prima
+     sbordava di 6 px). Il pannello resta largo 6 px in più per lato, così il contorno di quello che ha il fuoco non si
+     taglia, ma ha 6 px di margine interno
+   - ogni sezione ha lo stesso filo in cima, anche la prima di ogni colonna: le due colonne partono alla stessa altezza
+   - i riquadri dentro le sezioni (dettaglio della mappa, valori dei paesi, macro, nastro) hanno tutti lo stesso fondo,
+     lo stesso contorno sottile e lo stesso angolo; i comandi (schede, pulsanti, campi) restano pieni */
+html.nuova body.term .t-panel { position: relative; border-top: 0; padding-left: 6px; padding-right: 6px; padding-top: calc(var(--f21, 21px) + 2px); }
+html.nuova body.term .t-panel::before { content: ""; position: absolute; top: 0; left: 6px; right: 6px; height: 2px; background: var(--t-ink); pointer-events: none; }
+body.term { --t-box: #0E1A31; --t-box-line: #1E2C48; }
+html.nuova body.term .t-detail, html.nuova body.term .t-vals button, html.nuova body.term .m-card, html.nuova body.term .tv-card {
+  background: var(--t-box); border: 0; box-shadow: inset 0 0 0 1px var(--t-box-line); border-radius: var(--r-btn, 6px);
+}
+html.nuova body.term .t-vals button[aria-pressed="true"] { box-shadow: inset 0 0 0 2px #F0B44C; }
+@media (hover: hover) {
+  html.nuova body.term a.m-card:hover, html.nuova body.term .t-vals button:hover { background: #13213D; box-shadow: inset 0 0 0 1px var(--t-line); }
+}
+html.nuova body.term .t-detail { padding: var(--f13, 13px) var(--f21, 21px); }
+/* macro: in ogni riga dei riquadri il nome, il valore, la data e il grafico stanno alla stessa altezza */
+@supports (grid-template-rows: subgrid) {
+  html.nuova body.term .m-grid { grid-auto-rows: auto; row-gap: var(--f8, 8px); }
+  html.nuova body.term .m-card { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 3px; align-content: start; }
+  html.nuova body.term .m-card .m-v { margin-top: 2px; }
+  html.nuova body.term .m-card .m-sp { margin-top: 0; align-self: end; }
+}
+html.nuova body.term .m-card { padding: 12px 14px; }
+/* tabelle: il valore che manca è un trattino, non un vuoto */
+.t-table td.mv:empty::before { content: "–"; font-weight: 400; color: var(--t-ink-3); }
+/* «Nascondi / Mostra i prezzi in diretta»: un comando secondario, non un pulsante acceso */
+body.term .t-live .t-btn, body.term .t-live .t-btn[aria-expanded="true"] { background: var(--fill); color: var(--t-ink); }
+@media (hover: hover) { body.term .t-live .t-btn:hover { background: #1C2C4B; } }
+/* «Vai a»: alla stessa distanza dal nastro e dalle sezioni */
+@media (min-width: 1000px) { .t-tools { padding-top: var(--f13, 13px); } }
+/* agenda: il prossimo evento è una fascia appena più chiara che sborda di 6 px (quanto il margine del pannello), con un
+   filo acceso a sinistra che pulsa quando manca poco; le scritte restano allineate alle altre righe */
+html.nuova body.term .t-agenda li.next { margin: 0 -6px; padding-left: 6px; padding-right: 6px; }
+html.nuova body.term .t-agenda li.next.soon::before { left: 0; top: 10px; bottom: 10px; width: 2px; height: auto; margin-top: 0; border-radius: 2px !important; }
+@media (prefers-reduced-motion: no-preference) { html.nuova body.term .t-agenda li.next.soon::before { animation: live-dot 1.6s ease-in-out infinite; } }

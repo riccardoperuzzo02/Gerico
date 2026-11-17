@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato (Nuova Zelanda, retribuzioni e disoccupazione britanniche, Zew non ancora reperibili in 3 ricerche). Aggiunti 3 eventi Usa (Adp, utilizzo capacità, scorte)."
   },
   "lastPublish": {
-    "at": "2026-11-17T12:11:35+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-17T13:20:45+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-17T07:26:00+01:00",
+  "lastRun": "2026-11-17T13:20:30+01:00",
   "marketsRun": {
     "at": "2026-11-16T18:46:49+01:00",
     "esito": "Aggiornate le chiusure del 16 novembre (Ansa): Ftse Mib -0,65% a 51.520, Dax -0,6%, Cac 40 -0,2%, Ftse 100 -0,2%, Aex -0,6%, spread 106, gas -7% sotto 84 €/MWh. Mancano Smi, rendimenti, euro/dollaro, Brent. Agenda: nessun dato ufficiale trovato."
@@ -29,14 +29,14 @@
     "esito": "Aperti 5 articoli (CBS x2, franceinfo, Public Sénat), il resto dai feed. US 2 nuove (Corte suprema, Faa)/1 aggiornata (morbillo)/1 archiviata (golf); GB 1 nuova (asilo)/1 aggiornata (Milburn)/1 archiviata (età del consenso); FR 1 nuova (Senato, pensioni)/1 aggiornata (sciopero 17 novembre)/1 archiviata (Maileva); DE 1 nuova (vertice di coalizione)/1 aggiornata (Heil)/0; ES 1 nuova (Feijóo, Echeverría)/0/0."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 24,
-    "at": "2026-11-17T07:26:00+01:00",
-    "factsChecked": 6,
+    "articlesDiscarded": 2,
+    "articlesRead": 3,
+    "at": "2026-11-17T13:20:30+01:00",
+    "factsChecked": 2,
     "factsCorrected": 0,
-    "storiesArchived": 5,
-    "storiesNew": 5,
-    "storiesUpdated": 2
+    "storiesArchived": 0,
+    "storiesNew": 0,
+    "storiesUpdated": 1
   },
   "runningSince": null,
   "storiesLive": 37

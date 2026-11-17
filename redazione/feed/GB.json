@@ -1,13 +1,62 @@
 {
  "code": "GB",
- "asOf": "2026-11-17T15:17:35+00:00",
+ "asOf": "2026-11-17T17:17:35+00:00",
  "items": [
+  {
+   "source": "BBC",
+   "title": "Ex-Reform Wales leader Dan Thomas faces no further police action after assault arrest",
+   "desc": "Reform's former leader in Wales says he faces no further action from police following his arrest.",
+   "url": "https://www.bbc.co.uk/news/articles/cq98xl8jgp0go",
+   "at": "2026-11-17T17:15:12+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Burnham makes Milburn head of unit to implement new jobs and welfare approach for young people – live",
+   "desc": "Author of Neets report will be in charge of ‘unblocking delivery and driving progress’ Full story: Milburn says plan will save only £200m a year Explainer: what’s in the report? This chart, from the Milburn report, shows what is likely to happen to the Neet rate, with or without the Milburn policies. The Alan Milburn report has now formally been published. It should be online here very soon. Continue reading...",
+   "url": "https://www.theguardian.com/politics/live/2026/nov/17/alan-milburn-youth-unempolyment-neets-economy-welfare-brexit-latest-news-updates",
+   "at": "2026-11-17T17:07:17+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "British Airways plane veers off Heathrow taxiway",
+   "desc": "The Boeing 787 Dreamliner bound for Lagos is delayed after its front wheel becomes stuck in grass.",
+   "url": "https://www.bbc.co.uk/news/articles/cqx2wnwzmd8mo",
+   "at": "2026-11-17T17:04:48+00:00"
+  },
   {
    "source": "BBC",
    "title": "Henry Nowak killer applies to appeal against conviction",
    "desc": "Vicrum Digwa, who fatally stabbed Nowak in Southampton in 2015, is also seeking a sentence review.",
    "url": "https://www.bbc.co.uk/news/articles/cm93080xj8xgo",
-   "at": "2026-11-17T15:11:59+00:00"
+   "at": "2026-11-17T16:34:52+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "What is the polar vortex, why has it flipped and will it bring the UK snow?",
+   "desc": "We look at what is happening over the Arctic and what it might mean for winter weather in the northern hemisphere The polar vortex has flipped direction, signalling the earliest “major sudden stratospheric warming” ever observed. We examine how it is likely to affect you and whether it will bring snow. Continue reading...",
+   "url": "https://www.theguardian.com/world/2026/nov/17/polar-vortex-flipped-uk-snow-explainer",
+   "at": "2026-11-17T16:16:06+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "‘They learn the job doing the job’: the project helping UK’s Neets into work",
+   "desc": "Labour’s plan to get young unemployed people into work involves overhaul of welfare support, but for those with disabilities, specialist help is crucial When Rory Bowman finished school he joined the cohort of almost a million Neets – young people not in education, employment or training – around the country. The 21-year-old has autism and said he was exhausted after struggling for support in mainstream education for years. He didn’t think he could manage university, but couldn’t find a job or training that would accommodate his neurodivergence. Continue reading...",
+   "url": "https://www.theguardian.com/society/2026/nov/17/helping-neets-into-work-project",
+   "at": "2026-11-17T16:00:15+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "UK sanctions firms over Israeli West Bank settlements",
+   "desc": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
+   "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
+   "at": "2026-11-17T15:59:47+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Ministers vow to create new welfare system for young people as they back Milburn report",
+   "desc": "Government promises spending cuts to pay for the proposals, described by prime minister as ‘watershed moment’ UK politics live – latest updates Neet ideas: what’s in Milburn’s report? Ministers have promised to create an entirely new welfare system for young people as they gave their backing to Alan Milburn’s 278-page report , promising spending cuts next year to help pay for his proposals and giving him a government role to push them through. Andy Burnham, the prime minister, told his cabinet colleagues on Tuesday morning the report was a “watershed moment” and offered a “comprehensive vision” as he invited its author to address the meeting. Continue reading...",
+   "url": "https://www.theguardian.com/society/2026/nov/17/alan-milburn-report-young-people-work-neets-job-support-savingsalan-milburn-plan-young-people-work-neets-savings-200m-a-year",
+   "at": "2026-11-17T15:35:09+00:00"
   },
   {
    "source": "The Guardian",
@@ -38,18 +87,25 @@
    "at": "2026-11-17T15:00:14+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "Burnham makes Milburn head of unit to implement new jobs and welfare approach for young people – live",
-   "desc": "Author of Neets report will be in charge of ‘unblocking delivery and driving progress’ Full story: Milburn says plan will save only £200m a year Explainer: what’s in the report? This chart, from the Milburn report, shows what is likely to happen to the Neet rate, with or without the Milburn policies. The Alan Milburn report has now formally been published. It should be online here very soon. Continue reading...",
-   "url": "https://www.theguardian.com/politics/live/2026/nov/17/alan-milburn-youth-unempolyment-neets-economy-welfare-brexit-latest-news-updates",
-   "at": "2026-11-17T14:48:03+00:00"
-  },
-  {
    "source": "Sky News",
    "title": "Charles Bronson refused parole for ninth time",
    "desc": "Charles Bronson, one of Britain's most notorious inmates, has been denied parole for the ninth time.",
    "url": "https://news.sky.com/story/charles-bronson-refused-parole-for-ninth-time-13613277",
    "at": "2026-11-17T14:37:00+00:00"
+  },
+  {
+   "source": "Sky News",
+   "title": "Rockstar Games sacked workers to prevent union gaining 'leverage or power', tribunal told",
+   "desc": "The company behind the Grand Theft Auto video games sacked a group of employees to prevent a trade union gaining \"leverage or power\", an employment tribunal heard.",
+   "url": "https://news.sky.com/story/rockstar-games-sacked-workers-to-prevent-union-gaining-leverage-or-power-tribunal-told-13613262",
+   "at": "2026-11-17T14:25:00+00:00"
+  },
+  {
+   "source": "Sky News",
+   "title": "British Airways flight veers off runway before take-off",
+   "desc": "A British Airways passenger plane veered off the runway at Heathrow Airport as it was due to take-off.",
+   "url": "https://news.sky.com/story/british-airways-flight-veers-off-runway-before-take-off-13613270",
+   "at": "2026-11-17T14:20:00+00:00"
   },
   {
    "source": "BBC",
@@ -101,13 +157,6 @@
    "at": "2026-11-17T13:15:38+00:00"
   },
   {
-   "source": "BBC",
-   "title": "UK sanctions firms over Israeli West Bank settlements",
-   "desc": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory.",
-   "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o",
-   "at": "2026-11-17T13:10:06+00:00"
-  },
-  {
    "source": "The Guardian",
    "title": "Santander allows staff to count holidays and sick leave as days worked in office",
    "desc": "News of Spanish-owned lender’s policy emerges as other banks are toughening their stance on working from home Business live – latest updates Staff at the high street bank Santander have been permitted to log holiday and sick leave as days worked in the office, helping them to meet workplace attendance requirements. Back-office staff at the Spanish-owned lender have been expected to spend at least 12 working days each month in what the company calls a “head office location”, although this does not apply to staff working in bank branches. Continue reading...",
@@ -155,13 +204,6 @@
    "desc": "BBC News speaks to four of the million young people aged 16 to 24 who are not in work, education or training.",
    "url": "https://www.bbc.co.uk/news/articles/cj75pkgrv151o",
    "at": "2026-11-17T11:55:25+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Alan Milburn says his plan to get young people into work will save only £200m a year",
-   "desc": "Author of long-awaited report says money saved in benefit cuts will mostly be used to fund new job support system UK politics live – latest updates Neet ideas: what’s in Milburn’s report? Alan Milburn has said his plan to get more young people into work will save the government only £200m a year as the cost of job support swallows up almost all of the anticipated cuts to benefits. The former health secretary unveiled his long-awaited report into youth unemployment on Tuesday morning, urging ministers to cut disability and sickness payments for under-25s and invest the money in back-to-work schemes. Figures contained in the report show that his plan will not deliver significant overall savings. Continue reading...",
-   "url": "https://www.theguardian.com/society/2026/nov/17/alan-milburn-report-young-people-work-neets-job-support-savingsalan-milburn-plan-young-people-work-neets-savings-200m-a-year",
-   "at": "2026-11-17T11:30:35+00:00"
   },
   {
    "source": "The Guardian",
@@ -325,13 +367,6 @@
    "at": "2026-11-17T05:00:04+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "Burnham says Brexit has dramatically diminished Britain’s global standing",
-   "desc": "Prime minister signals Labour could drop its Brexit red lines in major foreign policy speech Britain’s global standing has diminished in the decade since Brexit, Andy Burnham has said, as he again signalled that Labour could drop its red lines on Europe in its next manifesto. In a foreign policy speech, Burnham said that after a major Brussels summit this week he would begin new discussions with the EU about options for “our long-term relationship”. Continue reading...",
-   "url": "https://www.theguardian.com/politics/2026/nov/17/burnham-says-brexit-has-dramatically-diminished-britains-global-standing",
-   "at": "2026-11-17T05:00:03+00:00"
-  },
-  {
    "source": "Sky News",
    "title": "Snow warning in place for parts of UK this morning",
    "desc": "A yellow alert for snow is in force for parts of the UK, with forecasters warning of possible travel disruption.",
@@ -361,20 +396,6 @@
   },
   {
    "source": "The Guardian",
-   "title": "How Milburn won over Labour on tackling rising youth unemployment",
-   "desc": "Labour grandee seems to have assuaged MPs’ nerves on need for welfare reform to tackle youth unemployment crisis In a boxing gym in Peterborough almost a year ago, Alan Milburn, freshly appointed to run a government review into the nearly 1 million young people out of work and education, said he would be “unafraid to shine a light on uncomfortable truths”. The Labour grandee, who held three cabinet jobs under Tony Blair, warned there was a “downward escalator” taking young people into a “world of benefits” and vowed to provide radical solutions. Continue reading...",
-   "url": "https://www.theguardian.com/society/2026/nov/16/how-milburn-won-over-labour-tackling-rising-youth-unemployment",
-   "at": "2026-11-16T19:16:19+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Water companies told to act over fears drought will extend into next year",
-   "desc": "Water firms have been told to do more over fears the current drought will extend into next year.",
-   "url": "https://news.sky.com/story/water-companies-told-to-act-over-fears-drought-will-extend-into-next-year-13612971",
-   "at": "2026-11-16T18:39:00+00:00"
-  },
-  {
-   "source": "The Guardian",
    "title": "Woman accusing David Walliams of grooming her backs staggered age of consent call",
    "desc": "Comments come after Mia Latter, who alleged she was raped by Russell Brand, had said she wanted a change in law A woman who has accused David Walliams of grooming her has said she supports a staggered age of consent. Walliams, 55, has been accused of using his power and celebrity status to prey on young women and teenagers for sex, a joint investigation by the Guardian and ITV News has found. Support for anyone affected by sexual abuse issues is available in the UK from Rape Crisis on 0808 500 2222 in England and Wales, 0808 801 0302 in Scotland , or 0800 0246 991 in Northern Ireland . The National Association for People Abused in Childhood ( Napac ) offers support for adult survivors on 0808 801 0331. Samaritans can be contacted on freephone 116 123. Other international helplines are available for people affected by sexual abuse , childhood abuse , and people in crisis . The ITV News do",
    "url": "https://www.theguardian.com/tv-and-radio/2026/nov/16/woman-accusing-david-walliams-grooming-backs-staggered-age-of-consent-call",
@@ -382,24 +403,10 @@
   },
   {
    "source": "BBC",
-   "title": "UK budget leaves NI underfunded, O'Dowd says",
-   "desc": "Northern Ireland's public funding has worsened relative to rest of the UK as a result of the Westminster budget, Stormont's Finance Minister has claimed.",
-   "url": "https://www.bbc.co.uk/news/articles/cmqj5z71y7qeo",
-   "at": "2026-11-16T18:29:26+00:00"
-  },
-  {
-   "source": "BBC",
    "title": "Russell Brand prison message 'appalling' and being investigated, No 10 says",
    "desc": "Brand's wife read out comments from the comedian on their podcast in which the convicted rapist said he was \"not guilty of the offences I have been jailed for\".",
    "url": "https://www.bbc.co.uk/news/articles/cm9d7pe8y559o",
    "at": "2026-11-16T18:22:22+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Emma Barnett to leave Radio 4's Today for new BBC show",
-   "desc": "Barnett, who has presented Today and Woman's Hour, will front a multiplatform show in the New Year.",
-   "url": "https://www.bbc.co.uk/news/articles/c6rrgw2p52l5o",
-   "at": "2026-11-16T17:46:12+00:00"
   },
   {
    "source": "The Guardian",
@@ -421,27 +428,6 @@
    "desc": "Robert Pattinson has been announced as the next James Bond, becoming the seventh actor to take up the mantle of 007.",
    "url": "https://www.bbc.co.uk/news/videos/cmd91xjd9zk2o",
    "at": "2026-11-16T17:18:54+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "The 'crayon test' and the wrong plastic: Read this before buying your next olive oil",
-   "desc": "Olive oil has become a kitchen staple in the UK - but how many of us actually know what we're looking for?",
-   "url": "https://news.sky.com/story/the-crayon-test-and-the-wrong-plastic-read-this-before-buying-your-next-olive-oil-13612936",
-   "at": "2026-11-16T17:09:00+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Newscast",
-   "desc": "Alan Milburn’s long-awaited report into getting young people into work to be published",
-   "url": "https://www.bbc.co.uk/sounds/play/p0pn98vd",
-   "at": "2026-11-16T17:01:00+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Will Burnham put a ‘brake’ on push to rejoin EU? – podcast",
-   "desc": "It is a big week for Andy Burnham as two of his big policy priorities enter the spotlight. On Tuesday, the Milburn review of welfare for under-25s is published, which could ignite old Labour tensions over benefit cuts. Then, later this week, Burnham will be in Brussels for the UK-EU summit to discuss a potential new deal. But, as Pippa has signalled, cabinet ministers have told Burnham to put the brake on some of the discussions to ensure the government is not out of step with the public. Is it too little too late? You can read Rowena Mason’s article on benefits for under-25s here . You can watch episodes of Politics Weekly on our YouTube channel here . Send your questions to Pippa and Kiran on politicsweeklyuk@theguardian.com Continue reading...",
-   "url": "https://www.theguardian.com/politics/audio/2026/nov/16/burnham-told-to-put-brake-on-calls-for-new-eu-deal-podcast",
-   "at": "2026-11-16T16:30:57+00:00"
   }
  ]
 }

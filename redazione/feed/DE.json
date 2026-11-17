@@ -1,13 +1,111 @@
 {
  "code": "DE",
- "asOf": "2026-11-17T15:17:35+00:00",
+ "asOf": "2026-11-17T17:17:35+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Deutsche Bank, Angriff auf die Krimbrücke, Glücksatlas",
+   "desc": "Ein riesiges Datenleck gibt Einblicke in das Geschäftsgebaren der Deutschen Bank. Die Ukraine zerstört Putins Krimbrücke. Und: Was der deutsche Glücksatlas über Sachsen-Anhalt verrät. Das ist die Lage am Dienstagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-deutsche-bank-angriff-auf-die-krimbruecke-gluecksatlas-a-54b6649a-6b11-44b8-bf5d-637e3ff64120",
+   "at": "2026-11-17T17:10:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "BSW und Bundestagswahl: Karlsruhe entscheidet über Neuauszählung",
+   "desc": "Das BSW verpasste den Einzug in den Bundestag, am Ende fehlten nur knapp 10.000 Stimmen. Die Wagenknecht-Partei sah sich hintergangen. Jetzt entscheidet das Bundesverfassungsgericht, ob die Wahl gültig ist.",
+   "url": "https://www.spiegel.de/politik/deutschland/bsw-und-bundestagswahl-karlsruhe-entscheidet-ueber-neuauszaehlung-a-852c3f4f-1f36-40ff-bd91-b88e3486b93a",
+   "at": "2026-11-17T17:07:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Showdown im Koalitionsausschuss: Bekommt der Kanzler seinen Willen?",
+   "desc": "In einer Nachtsitzung suchen die Koalitionsspitzen Milliarden, um die Stromsteuer senken zu können. Zuvor hatte sich Kanzler Merz weit aus dem Fenster gelehnt. Setzt er sein Versprechen durch? Von N. Kohnert.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-stromsteuer-merz-100.html",
+   "at": "2026-11-17T16:52:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Steuervereinfachungsgesetz: Bundesfinanzministerium will Steuerregeln vereinfachen",
+   "desc": "Das Finanzministerium plant eine Reihe von Änderungen bei den Steuern. Kleinere Abfindungen sollen steuerfrei werden, die Steuererklärung soll nur noch digital erfolgen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/steuervereinfachung-werbungskosten-arbeitszeitpauschale-arbeitnehmerpauschbetrag-lars-klingbeil",
+   "at": "2026-11-17T16:47:41+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Schwarz-rote Koalition: Linnemann wirbt vor Koalitionsausschuss für Geschlossenheit",
+   "desc": "Der Koalitionsausschuss ringt um Wege, die Stromsteuer für alle zu senken. Im Fokus müsse der Wille stehen, das Leben der Menschen zu verbessern, mahnt Carsten Linnemann.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalition-cdu-csu-spd-carsten-linnemann-stromsteuer",
+   "at": "2026-11-17T16:35:11+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Baden-Württemberg: Boris Palmer gibt Posten als Bürokratieberater auf",
+   "desc": "Wegen der gegen ihn erhobenen Belästigungsvorwürfe wird Boris Palmer seinen Job als Berater der baden-württembergischen Landesregierung nicht wieder aufnehmen. Die Situation belaste ihn »erheblich«.",
+   "url": "https://www.spiegel.de/politik/deutschland/baden-wuerttemberg-boris-palmer-gibt-posten-als-buerokratieberater-auf-a-fe212fa5-7438-4e63-90e1-f19d579c5a42",
+   "at": "2026-11-17T16:28:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Linkenfraktion in Berlin: Berliner Linkenspitze beantragt Ausschluss von Vanessa Emde",
+   "desc": "Wie angekündigt hat der Linken-Fraktionsvorstand in Berlin den Ausschluss der umstrittenen Abgeordneten Vanessa Emde beantragt. Abgestimmt wird wohl in einer Woche.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-berlin-abgeordnete-ausschluss",
+   "at": "2026-11-17T16:23:08+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Vanessa Emde: Berliner Linke stellt Antrag auf Ausschluss aus Fraktion",
+   "desc": "Nun ist es offiziell: Die Linke in Berlin beantragt den Ausschluss der israelkritischen Abgeordneten Vanessa Emde aus der Fraktion. Damit könnte es in einer Woche zum Showdown kommen.",
+   "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-berliner-linke-stellt-antrag-auf-ausschluss-aus-fraktion-a-40af4329-48da-41c7-bd30-0e461b4a6649",
+   "at": "2026-11-17T16:20:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Deutsche Bank : Epstein, Trump und die Geschäfte der Deutschen Bank",
+   "desc": "Ein Datenleck enthüllt interne Dokumente der Deutschen Bank. Was zeigen sie über die Geschäftsbeziehungen zu Epstein und Trump? Und: Triumph für die Nationalmannschaft.",
+   "url": "https://www.zeit.de/politik/2026-11/deutsche-bank-jeffrey-epstein-donald-trump-nachrichtenpodcast",
+   "at": "2026-11-17T16:14:03+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Zarte Hoffnung nach der Brandkatastrophe im Hürtgenwald",
+   "desc": "Hunderte Einsatzkräfte kämpften im August gegen die Flammen im Hürtgenwald. Zurück blieb eine verwüstete Landschaft. Doch es gibt Hoffnung: Erste Pflanzen keimen und deuten auf eine Erholung der Natur hin. Von Jan Koch.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/klimawandel-huertgenwald-zukunft-100.html",
+   "at": "2026-11-17T15:53:57+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Festnahme in Brandenburg: Wie ein Ukrainer für Russland spioniert haben soll",
+   "desc": "Mitte Oktober ließ der Generalbundesanwalt in Eisenhüttenstadt einen Ukrainer festnehmen, der für einen russischen Geheimdienst spioniert haben soll. Recherchen von ARD-Hauptstadtstudio und SWR verdeutlichen den Umfang des mutmaßlichen Verrats.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/spion-russland-festnahme-brandenburg-100.html",
+   "at": "2026-11-17T15:53:40+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Elif Eralp: Polizeigewerkschaft GdP wirft ihr »blanken Polizeihass« vor",
+   "desc": "In einem Video bezeichnete die Linke Elif Eralp die Polizei einst als »massives Sicherheitsrisiko«, man müsse sie »einstampfen«. Die ebenfalls von ihr kritisierte Gewerkschaft GdP reagiert.",
+   "url": "https://www.spiegel.de/politik/deutschland/elif-eralp-polizeigewerkschaft-gdp-wirft-ihr-blanken-polizeihass-vor-a-5296761c-f586-47cc-8a34-7e555d7bf8d8",
+   "at": "2026-11-17T15:39:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Israel: Großbritannien sanktioniert israelische Firmen wegen Siedlungsbaus",
+   "desc": "Die britische Regierung verhängt Sanktionen gegen Firmen, die am Siedlungsbau im Westjordanland mitwirken. Sie wirft ihnen vor, »unumkehrbare Spaltungen« zu schaffen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/grossbritannien-sanktionen-israel-siedlungen-westjordanland-ed-miliband",
+   "at": "2026-11-17T15:34:46+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Krieg gegen die Ukraine: Witkoff und Kushner sollen an Ukraine-Gipfel in Berlin teilnehmen",
-   "desc": "Die US-Ukrainegesandten kommen am Donnerstag offenbar zu einem Treffen der Koalition der Willigen. Deutschland finanziert Flugabwehrwaffen für die Ukraine. Das Liveblog",
+   "desc": "Die US-Ukraine-Gesandten kommen am Donnerstag offenbar zu einem Treffen der Koalition der Willigen. Deutschland finanziert Flugabwehrwaffen für die Ukraine. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-17T15:05:25+00:00"
+   "at": "2026-11-17T15:15:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundestagswahl: Entscheidung über BSW-Einspruch gegen Ergebnis der Bundestagswahl naht",
+   "desc": "Das Bundesverfassungsgericht verkündet seinen Beschluss über die Beschwerde des BSW gegen das Bundestagswahlergebnis. Die Entscheidung könnte weitreichende Folgen haben.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/wahlpruefungsbeschwerde-bsw-bundesverfassungsgericht-bundestagswahl-2025",
+   "at": "2026-11-17T15:13:20+00:00"
   },
   {
    "source": "Die Zeit",
@@ -25,7 +123,7 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Deutsche Bank: Trump reagiert auf Berichte über Deutsche-Bank-Leak seiner Kondodaten",
+   "title": "Deutsche Bank: Trump reagiert auf Berichte über Deutsche-Bank-Leak seiner Kontodaten",
    "desc": "Vom Datenleck der Deutschen Bank sind auch Dokumente von Donald Trump betroffen. Der US‑Präsident kritisierte die Bank und beteuerte, viele Steuern gezahlt zu haben.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/deutsche-bank-donald-trump-steuerunterlagen-konten-russland",
    "at": "2026-11-17T14:38:02+00:00"
@@ -80,34 +178,6 @@
    "at": "2026-11-17T13:07:22+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Wahlsieg der Studentenbewegung: Serbiens neues Parlament nimmt seine Arbeit auf",
-   "desc": "Die Studentenbewegung verfügt im serbischen Parlament über die absolute Mehrheit. Eine Regierung könnte bis Jahresende stehen, sagt Spitzenkandidat Ilija Srdanović.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/studentenbewegung-serbien-parlamentswahl-ilija-srdanovic-aleksandar-vucic",
-   "at": "2026-11-17T13:06:18+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Abschiebungen nach Ruanda: Wachsende Kritik an Abschiebeplänen nach Ruanda",
-   "desc": "Menschenrechtler fordern Deutschland und vier weitere EU-Länder zur Abkehr von geplanten Abschiebungen nach Ruanda auf. Asylsuchende seien nicht rechtlos, sagt Pro Asyl.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/abschiebungen-ruanda-asyl-rueckkehrzentrum-pro-asyl-karl-kopp-gxe",
-   "at": "2026-11-17T13:02:31+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Debatte über Wehrpflicht: Bundeswehr hat Personalziel für 2026 bereits übertroffen",
-   "desc": "Mit 190.600 Soldaten hat die Bundeswehr das Personalziel für 2026 bereits erreicht. Die Rekrutierung könnte laut Boris Pistorius auch künftig freiwillig bleiben.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeswehr-personalstaerke-soldaten-wehrpflicht-reservisten",
-   "at": "2026-11-17T12:44:58+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "SPD-Parteivorsitz: Franziska Giffey will nicht für Bundesvorsitz der SPD kandidieren",
-   "desc": "Nach dem Rücktritt von Bärbel Bas sucht die SPD eine neue Spitze. Hubertus Heil kandidiert – Franziska Giffey dementiert Berichte, wonach sie sich ihm anschließen will.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/spd-parteivorsitz-franziska-giffey-hubertus-heil-lars-klingbeil-manuela-schwesig",
-   "at": "2026-11-17T12:31:38+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "AfD: Führende BSW-Politiker stemmen sich gegen »Schmusekurs«",
    "desc": "In Sachsen-Anhalt arbeitet das BSW mit der rechtsextremen AfD zusammen, Parteigründerin Wagenknecht ist sehr dafür. Doch im BSW-Vorstand kriselt es. Nun gibt es einen Brandbrief führender Köpfe.",
@@ -122,25 +192,11 @@
    "at": "2026-11-17T12:08:32+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Abschiebezentrum in Ruanda: Der nächste teure Irrtum europäischer Migrationspolitik",
-   "desc": "Ruanda soll abgelehnte Asylsuchende aus fünf EU-Staaten aufnehmen. Ein solcher Deal ist keine Lösung, er gaukelt Handlungsmacht nur vor – und wird niemanden abschrecken.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/abschiebezentrum-ruanda-eu-migration-kosten",
-   "at": "2026-11-17T11:37:42+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Kritik in Deutschland an Plänen für Abschiebezentrum in Ruanda",
    "desc": "Die Pläne von Deutschland und vier anderen EU-Staaten, abgelehnte Asylbewerber nach Ruanda zu bringen, sorgen weiter für Kritik - unter anderem bei Kirchen und Menschenrechtlern. Auch innerhalb der Bundesregierung ist das Vorhaben umstritten.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/reaktionen-ruanda-abschiebezentren-100.html",
    "at": "2026-11-17T11:32:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "BSW: »Die Brandmauer abzulehnen, heißt nicht, ins Feuer zu springen«",
-   "desc": "Führende Gründungsmitglieder des BSW wenden sich gegen Sahra Wagenknecht und die Fraktion in Sachsen-Anhalt: Eine Annäherung an die AfD gefährde die Existenz der Partei.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-afd-annaeherung-sahra-wagenknecht-sachsen-anhalt",
-   "at": "2026-11-17T11:07:53+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -190,34 +246,6 @@
    "desc": "Abgelehnte Asylbewerber sollen in Zukunft nach Ruanda gebracht werden können - auch wenn sie keine Verbindung zu dem Land haben. Innenminister Dobrindt will das zusammen mit vier anderen EU-Staaten und Ruanda möglich machen. Von Alena Lagmöller.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/ruanda-return-hub-abschiebezentrum-100.html",
    "at": "2026-11-16T18:59:11+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Manuela Schwesig: Was der SPD droht, wenn sie nicht für den Parteivorsitz antritt",
-   "desc": "Die SPD sucht eine neue Führung – und die Blicke richten sich auf Manuela Schwesig. Doch was passiert, wenn die Ministerpräsidentin von Mecklenburg-Vorpommern doch nicht antritt?",
-   "url": "https://www.spiegel.de/politik/deutschland/manuela-schwesig-was-der-spd-droht-wenn-sie-nicht-fuer-den-parteivorsitz-antritt-a-74da2199-752f-4b1e-9c87-327b0e773fe8",
-   "at": "2026-11-16T17:03:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Schwesig zögert, Dobrindt plant Ruanda-Abkommen, DFB-Team im Umbruch",
-   "desc": "Die SPD zittert vor einer Schwesig-Absage. Alexander Dobrindt treibt seinen Ruanda-Plan voran. Und: Deutschland spielt zum letzten Mal in drei Streifen. Das ist die Lage am Montagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-schwesig-zoegert-dobrindt-plant-ruanda-abkommen-dfb-team-im-umbruch-a-5dd9ac8a-06e6-4cb0-8777-2172ec7f3c0f",
-   "at": "2026-11-16T17:02:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ruanda: Deutschland und weitere EU-Länder einigen sich auf Abschiebezentrum",
-   "desc": "In Wien haben sich fünf EU-Länder auf eine gemeinsame Abschiebeinitiative geeinigt. Nun steht auch der afrikanische Partner fest: Schon 2027 soll in Ruanda ein erstes Abschiebezentrum entstehen.",
-   "url": "https://www.spiegel.de/politik/deutschland/deutschland-und-weitere-eu-laender-einigen-sich-auf-abschiebezentrum-in-ruanda-a-3a25bbe9-f973-4f75-be7c-1827d06f46cc",
-   "at": "2026-11-16T15:54:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Volkstrauertag: Wie die AfD-Jugend das Gedenken an die Kriegstoten verdreht",
-   "desc": "Mit dem Volkstrauertag soll der Kriegstoten gedacht und für Frieden gemahnt werden. Die AfD-Jugend nutzte den Termin stattdessen für eine Romantisierung von NS-Größen. Auch Björn Höcke setzte auf politische Inszenierung.",
-   "url": "https://www.spiegel.de/politik/deutschland/volkstrauertag-afd-wie-die-afd-jugend-das-gedenken-an-die-kriegstoten-verdreht-a-f8576f2a-6e89-444b-98d0-a6d1ee38ae31",
-   "at": "2026-11-16T15:32:00+00:00"
   }
  ]
 }

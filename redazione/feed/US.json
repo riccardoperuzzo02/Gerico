@@ -1,13 +1,34 @@
 {
  "code": "US",
- "asOf": "2026-11-17T05:17:35+00:00",
+ "asOf": "2026-11-17T07:17:33+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Third U.S. carrier arrives, stoking concerns about renewed conflicts with Iran",
+   "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+   "desc": "The U.S. Commerce Department is making moves to tighten export controls.",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "at": "2026-11-17T07:07:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
+   "desc": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024.",
+   "url": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
+   "at": "2026-11-17T06:59:42+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Major U.S. banks report widespread service outages",
+   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
+   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+   "at": "2026-11-17T06:53:56+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
    "desc": "Iran has ratcheted up threats against U.S. forces as a third American aircraft carrier arrived in the Gulf, stoking fears of a resumption of military tensions.",
    "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
-   "at": "2026-11-17T04:50:19+00:00"
+   "at": "2026-11-17T05:51:13+00:00"
   },
   {
    "source": "New York Times",
@@ -50,13 +71,6 @@
    "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters.",
    "url": "https://www.nytimes.com/2026/11/16/us/sea-turtles-california.html",
    "at": "2026-11-17T01:36:39+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Major U.S. banks report widespread service outages",
-   "desc": "Customers at JPMorgan Chase U.S. Bank and other major financial institutions reported difficulty accessing their accounts.",
-   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "at": "2026-11-17T01:09:38+00:00"
   },
   {
    "source": "CBS News",
@@ -382,13 +396,6 @@
   },
   {
    "source": "CNBC",
-   "title": "There's a growing 'property tax revolt' as homeowners face rising costs. How it could impact your bill",
-   "desc": "There's a movement to cut property taxes as Americans wrestle with high housing costs. Here's what it means for homeowners.",
-   "url": "https://www.cnbc.com/2026/11/16/property-tax-relief-homeowners-bills.html",
-   "at": "2026-11-16T19:15:18+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60%",
    "desc": "The odds have climbed to 62% from 27% since Thursday, amid growing speculation that Musk's two companies will integrate.",
    "url": "https://www.cnbc.com/2026/11/16/prediction-market-odds-for-tesla-spacex-merger-by-april-2027-top-60percent.html",
@@ -542,13 +549,6 @@
    "at": "2026-11-16T15:16:11+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Novo says Wegovy injection lowers BMI and obesity rates in children in trial",
-   "desc": "Wegovy is already approved to treat obesity in children ages 12 and older, but there are currently no approved medications for those under 12.",
-   "url": "https://www.cnbc.com/2026/11/16/novo-wegovy-obesity-children-trial.html",
-   "at": "2026-11-16T15:00:01+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "What Nithya Raman Plans to Do First as L.A. Mayor",
    "desc": "Once she takes office, she pledges to use metrics to deliver “a city that works” after a pandemic, wildfires and clashes with Trump. But budget constraints and more stand in the way.",
@@ -613,16 +613,16 @@
   },
   {
    "source": "NPR",
-   "title": "These birds fly 17,000 miles every year. Climate change could make it harder",
-   "desc": "Migratory birds cross the entire globe, carefully timing their journeys with the seasons. In a hotter climate, that timing is increasingly out of sync.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
+   "title": "They saw people losing food benefits. So they started handing out free groceries",
+   "desc": "The cuts and changes to SNAP have been difficult for government workers who take pride in helping others. In San Diego, workers said they couldn't sit back while their neighbors went hungry.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6034048/snap-san-diego-food-assistance",
    "at": "2026-11-16T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "NPR's Student Podcast Challenge is back for 2027",
-   "desc": "The annual audio competition for grades four through 12 returns in January. Now in its ninth year, the contest has involved more than 90,000 students around the country.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6028826/student-podcast-challenge-2027-information-deadline",
+   "title": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
+   "desc": "The trip to China marks Trump's second time this year, and comes as the president and his party faced widespread backlash from voters in the recent midterm elections.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
    "at": "2026-11-16T10:00:00+00:00"
   }
  ]

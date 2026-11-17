@@ -1,7 +1,21 @@
 {
  "code": "ES",
- "asOf": "2026-11-17T05:17:35+00:00",
+ "asOf": "2026-11-17T07:17:33+00:00",
  "items": [
+  {
+   "source": "20minutos",
+   "title": "El armario también tiene historia",
+   "desc": "En las primeras décadas del siglo XX, el término inglés coming out se utilizaba en determinados ambientes homosexuales para referirse a la incorporación a sus círculos de sociabilidad.",
+   "url": "https://www.20minutos.es/nacional/blogs/1-de-cada10/armario-tambien-tiene-historia_7058344_0.html",
+   "at": "2026-11-17T06:30:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Luis de los Santos: \"Adelante es un proyecto netamente andalucista que representa los intereses de la clase trabajadora\"",
+   "desc": "El cabeza de lista por Sevilla de Adelante Andalucía se muestra optimista con el resultado de los comicios. Entre sus propuestas para mejorar la vida de los ciudadanos: \"El salario mínimo interprofesional tiene que subir conforme al IPC real, la jornada laboral tiene que disminuir y los alquileres tienen que bajar\".",
+   "url": "https://www.20minutos.es/nacional/elecciones-generales/luis-los-santos-adelante-es-un-proyecto-netamente-andalucista-que-representa-los-intereses-clase-trabajadora_7059487_0.html",
+   "at": "2026-11-17T05:31:18+00:00"
+  },
   {
    "source": "El País",
    "title": "La batalla por el voto útil reabre las brechas del bloque de izquierdas",
@@ -46,7 +60,7 @@
   },
   {
    "source": "El País",
-   "title": "Primera cita electoral en la Comunidad Valenciana tras la riada que acabó con la vida de 234 personas: ¿habrá un efecto Dana?",
+   "title": "Primera cita electoral en la Comunidad Valenciana tras la riada que acabó con la vida de 234 personas: ¿habrá un efecto dana?",
    "desc": "La estimación de EL PAÍS prevé 20 escaños de PP y Vox frente a 13 del bloque de izquierdas. Abascal cerrará la campaña en la plaza de Toros de Valencia, con capacidad para 12.000 personas",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/primera-cita-electoral-en-la-comunidad-valenciana-tras-la-dana-las-encuestas-dan-una-amplia-mayoria-a-la-derecha.html",
    "at": "2026-11-17T04:30:01+00:00"
@@ -67,9 +81,9 @@
   },
   {
    "source": "20minutos",
-   "title": "El brindis de Estopa",
-   "desc": "Los hermanos Muñoz cuentan que en el bar de su padre discutían parroquianos de todos los partidos y luego se arreglaban con un quinto de cerveza.",
-   "url": "https://www.20minutos.es/nacional/brindis-estopa_7061893_3.html",
+   "title": "Gabriel Rufián: \"La gente está mucho más cerca de ser desahuciada que de ser ocupada\"",
+   "desc": "El candidato de ERC al 29N responde a las preguntas de 20minutos y advierte a Junts: \"Cuando te sitúas en el centro entre el fascismo y el antifascismo, acabas siendo colaboracionista del fascismo\".",
+   "url": "https://www.20minutos.es/cataluna/rufian-erc-gente-esta-mucho-mas-cerca-ser-desahuciada-que-ser-ocupada_7060845_0.html",
    "at": "2026-11-17T04:00:00+00:00"
   },
   {
@@ -81,16 +95,30 @@
   },
   {
    "source": "20minutos",
-   "title": "Eva y la vivienda",
-   "desc": "La perspectiva de género en el urbanismo no es un capricho ideológico, sino una herramienta para diseñar ciudades más seguras y adaptadas a las necesidades de toda la población.",
-   "url": "https://www.20minutos.es/nacional/eva-vivienda_7061605_3.html",
+   "title": "Jon Echeverría, tras la agresión en Hernani: \"Esto lo alienta Bildu, justifican la violencia y les legitima el Gobierno\"",
+   "desc": "\"[Este ataque] refuerza las ganas de seguir adelante para enfrentar a esos violentos, porque en el fondo lo que les molesta es que defendemos un modelo de sociedad distinto\", afirma en declaraciones a 20minutos.",
+   "url": "https://www.20minutos.es/pais-vasco/guipuzcoa/jon-echeverria-tras-agresion-hernani-esto-alienta-bildu-justifican-violencia-son-un-partido-legitimado-por-gobierno_7061812_0.html",
    "at": "2026-11-17T04:00:00+00:00"
   },
   {
    "source": "20minutos",
-   "title": "Santiago Abascal, el líder que halló un nicho en la derecha descontenta y aspira ahora a un papel relevante en el Gobierno post-29N",
+   "title": "Abascal, el líder que halló un nicho en la derecha descontenta y aspira ahora a un papel relevante en el Gobierno post-29N",
    "desc": "Tras una juventud amenazada por ETA y una vida ligada a la política, el líder de VOX podría ser el próximo vicepresidente porque las encuestas sitúan a su partido como tercera fuerza política.",
    "url": "https://www.20minutos.es/nacional/santiago-abascal-lider-que-hallo-un-nicho-derecha-descontenta-aspira-ahora-un-papel-relevante-gobierno-post-29n_7058035_0.html",
+   "at": "2026-11-17T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El brindis de Estopa",
+   "desc": "Los hermanos Muñoz cuentan que en el bar de su padre discutían parroquianos de todos los partidos y luego se arreglaban con un quinto de cerveza.",
+   "url": "https://www.20minutos.es/nacional/brindis-estopa_7061893_3.html",
+   "at": "2026-11-17T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Eva y la vivienda",
+   "desc": "La perspectiva de género en el urbanismo no es un capricho ideológico, sino una herramienta para diseñar ciudades más seguras y adaptadas a las necesidades de toda la población.",
+   "url": "https://www.20minutos.es/nacional/eva-vivienda_7061605_3.html",
    "at": "2026-11-17T04:00:00+00:00"
   },
   {
@@ -102,8 +130,8 @@
   },
   {
    "source": "20minutos",
-   "title": "Huelga de trenes, en directo | España afronta este martes una huelga ferroviaria de 24 horas con cerca de 7.000 maquinistas llamados al paro",
-   "desc": "España afronta una nueva jornada de huelga en el sector ferroviario. El paro de 24 horas —convocado por el Sindicato de Circulación Ferroviaria (SCF) para este martes 17 de noviembre— afecta a Adif, Renfe, Ouigo e Iryo . De acuerdo con el sindicato, la huelga ha sido convocada para protestar por una mayor seguridad en las vías ferroviarias españolas tras los accidentes de Urda y Adamuz, en los que fallecieron 115 personas. Los sindicatos valoraron este lunes los avances producidos en la última semana en las negociaciones con el Ministerio de Transportes sobre las medidas de seguridad, pero los consideraron insuficientes para desconvocar la huelga de este martes.",
+   "title": "Huelga de trenes, en directo | Renfe denuncia el incumplimiento de los servicios mínimos en Cercanías de Madrid y Barcelona en el arranque de la huelga de trenes de 24 horas",
+   "desc": "Última hora de la huelga de trenes convocada las 24 horas de este martes que afecta a Adif, Renfe, Ouigo e Iryo: incidencias, servicios mínimos y reacciones.",
    "url": "https://www.20minutos.es/nacional/huelga-trenes-directo-espana-afronta-este-martes-una-nueva-jornada-paros-24-horas-sector-ferroviario_7061734_6.html",
    "at": "2026-11-17T00:59:12+00:00"
   },
@@ -316,20 +344,6 @@
    "desc": "El diario 20minutos ha celebrado este jueves su jornada más especial con la IV edición de sus premios durante una gala en el Teatro Real en la que ha reconocido la entereza de un pueblo ante las dificultades, el compromiso social y la banda sonora de toda una generación. Y es que este año han sido reconocidos la ciudad autónoma de Ceuta por su resiliencia ante la entrada masiva de inmigrantes que padeció a finales del pasado julio; la asociación Atades, que ha obtenido el Premio Acción Social por su trabajo para que las personas con discapacidad intelectual puedan vivir con mayor autonomía y participar plenamente en la sociedad; y el grupo musical Estopa, Premio 20minutos por sus 27 años de trayectoria y su contribución a la cultura popular española.La ceremonia, conducida por la periodista Elena Salamanca e impulsada por Henneo gracias a la colaboración de Caixabank, que señaló que \"es ",
    "url": "https://www.20minutos.es/nacional/premios-20minutos-antonio-leoncio-caballero-director-area-negocio-ceuta-melilla-malaga-interior-caixabank-es-muy-relevante-reconocimiento-ceuta_7060376_2.html",
    "at": "2026-11-16T14:05:57+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Premios 20minutos | Bettina Karsch, vicepresidenta ejecutiva de People, Organization and Culture de Moeve: \"Las personas se inspiran con un mensaje positivo",
-   "desc": "El diario 20minutos ha celebrado este jueves su jornada más especial con la IV edición de sus premios durante una gala en el Teatro Real en la que ha reconocido la entereza de un pueblo ante las dificultades, el compromiso social y la banda sonora de toda una generación. Y es que este año han sido reconocidos la ciudad autónoma de Ceuta por su resiliencia ante la entrada masiva de inmigrantes que padeció a finales del pasado julio; la asociación Atades, que ha obtenido el Premio Acción Social por su trabajo para que las personas con discapacidad intelectual puedan vivir con mayor autonomía y participar plenamente en la sociedad; y el grupo musical Estopa, Premio 20minutos por sus 27 años de trayectoria y su contribución a la cultura popular española.La ceremonia, conducida por la periodista Elena Salamanca e impulsada por Henneo gracias a la colaboración de Moeve, que señaló que \"las per",
-   "url": "https://www.20minutos.es/nacional/premios-20minutos-bettina-karsch-vicepresidenta-ejecutiva-people-organization-and-culture-moeve-las-personas-se-inspiran-con-un-mensaje-positivo_7060370_2.html",
-   "at": "2026-11-16T14:05:43+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Premios 20minutos | Ana Porto, Directora Global de Comunicación Corporativa de Telefónica: \"Tenemos la responsabilidad de apoyar las grandes causas sociales\"",
-   "desc": "El diario 20minutos ha celebrado este jueves su jornada más especial con la IV edición de sus premios durante una gala en el Teatro Real en la que ha reconocido la entereza de un pueblo ante las dificultades, el compromiso social y la banda sonora de toda una generación. Y es que este año han sido reconocidos la ciudad autónoma de Ceuta por su resiliencia ante la entrada masiva de inmigrantes que padeció a finales del pasado julio; la asociación Atades, que ha obtenido el Premio Acción Social por su trabajo para que las personas con discapacidad intelectual puedan vivir con mayor autonomía y participar plenamente en la sociedad; y el grupo musical Estopa, Premio 20minutos por sus 27 años de trayectoria y su contribución a la cultura popular española.La ceremonia, conducida por la periodista Elena Salamanca e impulsada por Henneo gracias a la colaboración de Telefónica, que señaló que \"te",
-   "url": "https://www.20minutos.es/nacional/premios-20minutos-ana-porto-directora-global-comunicacion-corporativa-telefonica-tenemos-responsabilidad-apoyar-las-grandes-causas-sociales_7060360_2.html",
-   "at": "2026-11-16T14:05:22+00:00"
   },
   {
    "source": "El Mundo",

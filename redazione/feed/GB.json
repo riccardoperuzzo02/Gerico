@@ -1,7 +1,63 @@
 {
  "code": "GB",
- "asOf": "2026-11-17T05:17:35+00:00",
+ "asOf": "2026-11-17T07:17:33+00:00",
  "items": [
+  {
+   "source": "BBC",
+   "title": "How predatory Met detective's behaviour became increasingly extreme",
+   "desc": "The Metropolitan Police repeatedly missed opportunities to stop det insp Warren Arter, BBC Panorama has found.",
+   "url": "https://www.bbc.co.uk/news/videos/cqlymxe49g30o",
+   "at": "2026-11-17T07:10:08+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Simply telling the AA about my minor no-fault, no-claim prang doubled my insurance quote",
+   "desc": "A recent £364 renewal quote suddenly increased to an extortionate £796 My car was involved in a minor no-fault accident. The other driver admitted responsibility and said they would pay for repairs without involving insurers. I informed my insurer, the AA, without making a claim. It had recently sent a renewal quote for £364, but after reporting the accident I was sent a revised figure of £796.86. I was told by a call handler that any insurance company would do the same. However, they eventually lowered the quote to £452.31. This seems extortionate for a no-fault, no-claim prang. Continue reading...",
+   "url": "https://www.theguardian.com/money/2026/nov/17/no-fault-no-claim-minor-car-accident-doubled-insurance-renewal-quote",
+   "at": "2026-11-17T07:00:08+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Millionaire factory: Anthropic IPO set to fuel AI gold rush in London’s high-end property market",
+   "desc": "New tech wealth, amassed with remarkable speed, is now washing up on British shores Sporting hoodies and white trainers rather than the gilets of London’s banker and lawyer class, tech bros can struggle to be taken seriously by the capital’s luxury property agents. “We worked with a young tech entrepreneur with a substantial budget, who agents assumed was looking to rent a one-bedroom flat,” says Jo Eccles, a buying agent who sources off-market properties for ultra-wealthy clients. But this week’s float by Anthropic, the AI developer behind the chatbot Claude, promises to bring even more credibility for the growing cohort of tech millionaires, which could breathe life into London’s ailing high-end property market . Its IPO on Thursday, expected to value the company at $1.4tn (£1.1m), is likely to turn more than 4,000 of its staff into millionaires as their stock options vest. Continue re",
+   "url": "https://www.theguardian.com/business/2026/nov/17/millionaire-factory-anthropic-ipo-set-to-fuel-ai-gold-rush-in-londons-high-end-property-market",
+   "at": "2026-11-17T07:00:07+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "The Papers: 'No savings for a decade' and 'The name's Pattinson'",
+   "desc": "The expected release of Alan Milburn's long-awaited report into youth unemployment dominates UK headlines today.",
+   "url": "https://www.bbc.co.uk/news/articles/c6x29ypw59n5o",
+   "at": "2026-11-17T06:57:20+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Met Office yellow warning in place as snow could disrupt Tuesday morning travel",
+   "desc": "Snow could bring some transport disruption to the hills of northern England and southern Scotland, as Chris Fawkes explains.",
+   "url": "https://www.bbc.co.uk/weather/articles/ck5y1g0rnx02o",
+   "at": "2026-11-17T06:34:56+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "How Met failed to stop rape-unit detective who abused women",
+   "desc": "Warren Arter used his position - running a team investigating sexual assaults - to target women.",
+   "url": "https://www.bbc.co.uk/news/articles/c6kgq8d779lro",
+   "at": "2026-11-17T06:02:28+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "European-made pesticides named in 1,605 poisoning reports in Brazil last year",
+   "desc": "About a third of cases involved chemicals banned for use on EU farms, according to investigation by Unearthed and Public Eye Pesticides sold by European chemical companies were named in more than 1,600 poisoning reports in Brazil last year, an investigation has found. About a third of the cases involved chemicals banned from use on farms in the EU because of the risks they pose to people and the environment. But European companies are not banned from manufacturing these chemicals, as long as they export them overseas to countries where they are legally allowed to be used. Continue reading...",
+   "url": "https://www.theguardian.com/environment/2026/nov/17/european-made-pesticides-named-1605-brazil-poisoning-reports",
+   "at": "2026-11-17T06:00:05+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Is £750m a week the real cost of rejoining the EU – or the Brexit bus myth all over again?",
+   "desc": "A new analysis from some of the architects of the Vote Leave campaign is very selective with its figures A new analysis from some of the architects of the Vote Leave campaign has claimed rejoining the EU would cost Britain £750m a week. How did they arrive at these figures – and are they any more reliable than the ones on the side of the bus? Continue reading...",
+   "url": "https://www.theguardian.com/politics/2026/nov/17/cost-of-rejoining-eu-vote-leave-brexit-bus-myth-again",
+   "at": "2026-11-17T06:00:05+00:00"
+  },
   {
    "source": "The Guardian",
    "title": "Invest in international rail services to boost UK-EU reset, Burnham urged",
@@ -39,13 +95,6 @@
   },
   {
    "source": "BBC",
-   "title": "The Papers: 'No savings for a decade' and 'The name's Pattinson'",
-   "desc": "The expected release of Alan Milburn's long-awaited report into youth unemployment dominates UK headlines today.",
-   "url": "https://www.bbc.co.uk/news/articles/c6x29ypw59n5o",
-   "at": "2026-11-17T01:48:58+00:00"
-  },
-  {
-   "source": "BBC",
    "title": "Failed asylum seekers face removal without five-day notice period",
    "desc": "Under proposed new rules, the Home Office would have six months in which to remove a person without telling them in advance.",
    "url": "https://www.bbc.co.uk/news/articles/cq20xnp2egm8o",
@@ -60,17 +109,10 @@
   },
   {
    "source": "Sky News",
-   "title": "Americans urged to 'keep a low profile' in UK amid terror threat",
+   "title": "Americans urged to 'keep a low profile' in UK amid terror threat over festive season",
    "desc": "US citizens in the UK have been warned to \"keep a low profile\" and remain vigilant to potential terror attacks during the festive period.",
    "url": "https://news.sky.com/story/americans-urged-to-keep-a-low-profile-in-uk-amid-terror-threat-13613060",
    "at": "2026-11-17T00:50:00+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Met Office yellow warning in place as snow could disrupt Tuesday morning travel",
-   "desc": "Snow could bring some transport disruption to the hills of northern England and southern Scotland, as Chris Fawkes explains.",
-   "url": "https://www.bbc.co.uk/weather/articles/ck5y1g0rnx02o",
-   "at": "2026-11-17T00:09:54+00:00"
   },
   {
    "source": "BBC",
@@ -78,13 +120,6 @@
    "desc": "BBC News speaks to four of the million young people aged 16 to 24 who are not in work, education or training.",
    "url": "https://www.bbc.co.uk/news/articles/cj75pkgrv151o",
    "at": "2026-11-17T00:06:34+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "'Complete system reset' needed to get 440,000 young people into work, says major review",
-   "desc": "Alan Milburn's review will call for sweeping reforms to the education, work and welfare systems.",
-   "url": "https://www.bbc.co.uk/news/articles/c38xzy980924o",
-   "at": "2026-11-16T22:32:47+00:00"
   },
   {
    "source": "The Guardian",
@@ -144,24 +179,10 @@
   },
   {
    "source": "The Guardian",
-   "title": "Man appears in court over deaths of two people in Leeds police pursuit crash",
-   "desc": "Leigh Ross, 39, charged with causing death by dangerous driving of Cameron Bell, 22, and Jade Langton, 23 A man has appeared in court charged with causing the deaths of two people in a car crash in Leeds. Leigh Ross, 39, was charged in connection with an incident in which Cameron Bell, 22, and Jade Langton, 23, were killed in the early hours of Sunday. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/16/man-charged-after-two-people-die-in-leeds-police-pursuit-crash",
-   "at": "2026-11-16T18:55:14+00:00"
-  },
-  {
-   "source": "The Guardian",
    "title": "The man with the golden touch: James Bond franchise is a money-spinner",
    "desc": "Big-screen debut of Ian Fleming’s creation in 1962, with Sean Connery as lead in Dr No, was start of marketing dream New James Bond announced ... and the name’s Pattinson, Robert Pattinson Share your thoughts on the casting Peter Bradshaw’s take Robert Pattinson’s journey to James Bond James Bond may be 73 years old but the superspy holds a licence to print money, at the centre of an evergreen multibillion-pound franchise spanning blockbuster films, merchandise, licensing deals and sponsorship. The announcement that the Twilight and Batman actor Robert Pattinson is the next Bond comes seven years after Daniel Craig revealed that No Time To Die would be his last outing as 007. Continue reading...",
    "url": "https://www.theguardian.com/film/2026/nov/16/man-with-golden-touch-james-bond-franchise-money-spinner",
    "at": "2026-11-16T18:47:38+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Devon police renewed shotgun licence of known abuser who later killed his wife",
-   "desc": "Ex-marine John Perkins, who also killed himself, had been violent to Kathryn Perkins over 42-year marriage, Exeter inquests hear A “controlling and violent” former Royal Marine who shot his wife dead after she told him she was leaving was allowed to keep two licensed shotguns despite police knowing he had a history of domestic abuse. John Perkins shot Kathryn Perkins at their home in Devon with a double-barrelled shotgun before killing himself with his second weapon. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/16/domestic-abuser-john-perkins-shotguns-kathryn-devon-police",
-   "at": "2026-11-16T18:46:53+00:00"
   },
   {
    "source": "Sky News",
@@ -277,13 +298,6 @@
   },
   {
    "source": "BBC",
-   "title": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
-   "desc": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
-   "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo",
-   "at": "2026-11-16T15:40:16+00:00"
-  },
-  {
-   "source": "BBC",
    "title": "Street cricket with a legend then metro ride as William and Kate begin India visit",
    "desc": "The Prince and Princess of Wales are visiting Mumbai for the Earthshot Prize this week, but started their trip with some fun outings.",
    "url": "https://www.bbc.co.uk/news/videos/crkgvnl51w1vo",
@@ -347,13 +361,6 @@
   },
   {
    "source": "The Guardian",
-   "title": "Boots to begin prescribing medical cannabis in UK",
-   "desc": "Online service will be offered to patients with eligible conditions, in a first for a British high street pharmacy Boots is to start prescribing medical cannabis, it has announced, in a first for a UK high street pharmacy. The online service is being offered to patients in the UK aged 25 and older who have an eligible condition such as chronic pain, anxiety or insomnia. Continue reading...",
-   "url": "https://www.theguardian.com/business/2026/nov/16/boots-pharmacy-begin-prescribing-medical-cannabis-uk",
-   "at": "2026-11-16T10:32:50+00:00"
-  },
-  {
-   "source": "The Guardian",
    "title": "Barristers could be barred from practice over use of rape myths, warns justice secretary",
    "desc": "Move follows Russell Brand trial, in which his barrister argued comedian could not be a rapist because his accusers had not ‘resisted’ UK politics live – latest updates Barristers could be barred from practice if they perpetuate rape myths to defend clients, the justice secretary has said after Russell Brand’s trial. Alex Norris has written to the body that regulates barristers amid concern over the tactics deployed by the comedian’s counsel. In his letter to the Bar Standards Board (BSB), Norris said it was “unacceptable” for the profession to “perpetuate myths” about rape victims in court, and warned that those who broke the rules could face disciplinary action. Continue reading...",
    "url": "https://www.theguardian.com/law/2026/nov/16/barristers-barred-practice-rape-myths-russell-brand-trial",
@@ -393,41 +400,6 @@
    "desc": "Most of the engagements the royal couple will attend are related to the Earthshot Prize, which Prince William founded.",
    "url": "https://www.bbc.co.uk/news/articles/c5lyk0e3n1jxo",
    "at": "2026-11-16T07:19:11+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "UK blood services issue urgent appeal for donations as winter approaches",
-   "desc": "Supplies are low and reserves of certain types are half of what the UK needs, officials say UK blood services have issued an urgent appeal for 150,000 donations to help the NHS cope with the increase in demand that occurs during the winter. Supplies of blood have run particularly low, with reserves of certain blood types only half of what is considered necessary, officials say. Continue reading...",
-   "url": "https://www.theguardian.com/society/2026/nov/16/uk-blood-services-urgent-appeal-donations-winter",
-   "at": "2026-11-16T07:00:36+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Clyde ready for 'heavy metal football' as rock band sponsors club",
-   "desc": "Metalcore act Bleed From Within have also co-designed the new third kit for the Bully Wee, who now play in the band's home town of Hamilton.",
-   "url": "https://www.bbc.co.uk/news/articles/cx9871qeq59jo",
-   "at": "2026-11-16T06:48:40+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Man in court after two killed in police chase collision",
-   "desc": "A man charged with causing death by dangerous driving after two people were killed when a car being chased by police collided with their vehicle has appeared in court.",
-   "url": "https://news.sky.com/story/man-charged-with-causing-death-by-dangerous-driving-after-two-killed-in-police-chase-collision-13610989",
-   "at": "2026-11-16T06:11:00+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Workers should get paid time off to train for crises, say peers",
-   "desc": "A House of Lords committee says more preparation is needed for war, power cuts, and cyber-attacks.",
-   "url": "https://www.bbc.co.uk/news/articles/cq8j4yn1vjymo",
-   "at": "2026-11-16T06:04:24+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "'It felt like I was dying': Why some teenagers don't go to school",
-   "desc": "Teenagers speak to the BBC about struggling with school anxiety ahead of a landmark report on youth unemployment.",
-   "url": "https://www.bbc.co.uk/news/videos/cqe9kgegd2y4o",
-   "at": "2026-11-16T06:02:44+00:00"
   }
  ]
 }

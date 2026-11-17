@@ -1,7 +1,77 @@
 {
  "code": "FR",
- "asOf": "2026-11-17T19:17:34+00:00",
+ "asOf": "2026-11-17T21:17:34+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "iCloud, App Store... Des \"pannes\" perturbent l'accès à plusieurs services d'Apple",
+   "desc": "Des \"problèmes\" touchent notamment le service de stockage en ligne iCloud depuis mardi en fin d'après-midi. \"Ce service peut être lent ou indisponible\", rapporte l'entreprise, qui ne précise pas la cause de ces dysfonctionnements.",
+   "url": "https://www.franceinfo.fr/internet/icloud-appstore-des-pannes-perturbent-l-acces-a-plusieurs-services-d-apple_8287028.html",
+   "at": "2026-11-17T21:08:16+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Produits défrisants accusés de causer des cancers : L’Oréal conclut un accord avec quatre plaignantes aux Etats-Unis",
+   "desc": "Le montant de l’indemnisation de ces quatre femmes afro-américaines n’a pas été rendu public. Le groupe français, qui défend la sûreté de ses produits supposés lisser les cheveux, fait face à de nombreuses plaintes de clientes américaines.",
+   "url": "https://www.lemonde.fr/sante/article/2026/11/17/produits-defrisants-accuses-de-causer-des-cancers-l-oreal-conclut-un-accord-avec-quatre-plaignantes-aux-etats-unis_6813045_1651302.html",
+   "at": "2026-11-17T20:49:57+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Logement : l’Assemblée vote un amendement du RN supprimant toutes les interdictions de location liées au DPE",
+   "desc": "Les députés sont allés plus loin que le texte initial, qui prévoyait déjà un assouplissement de la réglementation sur les passoires énergétiques, en supprimant toutes les interdictions de louer liées au diagnostic de performance énergétique.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/logement-l-assemblee-vote-un-amendement-du-rn-supprimant-toutes-les-interdictions-de-location-liees-au-dpe_6813044_823448.html",
+   "at": "2026-11-17T20:46:06+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un rapport parlementaire sur la prostitution des mineurs appelle à \"renverser la charge de la preuve\" pour mieux lutter contre ce phénomène qui \"ne cesse d'augmenter\"",
+   "desc": "Le texte de la Délégation aux droits des enfants suggère de modifier la loi afin que les clients aient à établir qu'ils ne connaissaient pas l'âge de la personne prostituée.",
+   "url": "https://www.franceinfo.fr/societe/prostitution/un-rapport-parlementaire-sur-la-prostitution-des-mineurs-appelle-a-renverser-la-charge-de-la-preuve-pour-mieux-lutter-contre-ce-phenomene-qui-ne-cesse-d-augmenter_8287169.html",
+   "at": "2026-11-17T20:35:15+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Manifestations du 17 novembre : de Paris à Lyon, un mouvement qui regarde vers la présidentielle, « on envoie un message au prochain locataire de l’Elysée »",
+   "desc": "Mardi, les cortèges ont rassemblé 146 000 personnes dans différentes villes de France, selon le ministère de l’intérieur, plus de 500 000 selon la CGT. Alors que la mobilisation semble s’essouffler, les regards se tournent peu à peu vers le scrutin présidentiel d’avril 2027.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/manifestations-du-17-novembre-de-paris-a-lyon-un-mouvement-qui-regarde-vers-la-presidentielle-on-envoie-un-message-au-prochain-locataire-de-l-elysee_6813043_823448.html",
+   "at": "2026-11-17T20:29:39+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’évocation de la vie privée de la militante Anne-Cécile Mailfert en direct sur Franceinfo vire au débat politique ; la chaîne présente des excuses et plaide la transparence",
+   "desc": "Lundi, à la fin d’un débat consacré à Gérard Depardieu et à la question des violences sexuelles, une journaliste a invoqué la charte déontologique de la chaîne publique pour rappeler qu’Anne-Cécile Mailfert est la compagne d’un dirigeant de France Télévisions.",
+   "url": "https://www.lemonde.fr/actualite-medias/article/2026/11/17/l-evocation-de-la-vie-privee-de-la-militante-anne-cecile-mailfert-en-direct-sur-franceinfo-vire-au-debat-politique-la-chaine-presente-des-excuses-et-plaide-la-transparence_6813039_3236.html",
+   "at": "2026-11-17T19:53:35+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un avion de transport militaire s'est écrasé en Sibérie faisant 19 morts",
+   "desc": "L'appareil, qui effectuait \"un vol régulier\", s'est crashé dans \"une zone inhabitée\" dans la région de Kemerovo, selon le ministère de la Défense russe.",
+   "url": "https://www.franceinfo.fr/monde/russie/un-avion-de-transport-militaire-s-est-ecrase-en-siberie-faisant-19-morts_8287073.html",
+   "at": "2026-11-17T19:51:33+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Ligue des droits de l’homme, qualifiée par Marine Le Pen de « ramassis de gauchistes », accuse la candidate RN de vouloir « supprimer tous les contre-pouvoirs »",
+   "desc": "Lundi soir, lors d’un débat sur la pauvreté coorganisé par Les Restos du cœur, la candidate d’extrême droite a dit vouloir « arrêter de subventionner les associations politisées » en cas de victoire en 2027, citant la Ligue des droits de l’homme.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/17/la-ligue-des-droits-de-l-homme-qualifiee-par-marine-le-pen-de-ramassis-de-gauchistes-accuse-la-candidate-rn-de-vouloir-supprimer-tous-les-contre-pouvoirs_6813037_3224.html",
+   "at": "2026-11-17T19:25:47+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "\"Fractures françaises\" : jusqu'où ?",
+   "desc": "La mobilisation se poursuit en France : les fonctionnaires ont battu le pavé dans plusieurs villes du pays pour réclamer une hausse des salaires face à l’inflation. Des lycéens et des étudiants étaient également présents dans les cortèges. Selon la CGT, 500 000 personnes ont manifesté à travers la France, dont 175 000 à Paris. De son côté, le ministère de l’Intérieur estime le nombre de manifestants à 146 000, dont 28 000 dans la capitale.",
+   "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261117-fractures-fran%C3%A7aises-jusqu-o%C3%B9",
+   "at": "2026-11-17T19:20:47+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je serais honoré de reprendre mes fonctions de PDG\" : l'ex-patron de Nvidia, Jensen Huang, se dit ouvert à un retour à la tête de l'entreprise, cinq jours après sa démission",
+   "desc": "Le patron du géant américain des puces a annoncé jeudi sa démission après l'éclatement d'un scandale d'adultère et de contrebande de puces IA vers la Chine.",
+   "url": "https://www.franceinfo.fr/internet/nvidia/je-serais-honore-de-reprendre-mes-fonctions-de-pdg-l-ex-patron-de-nvidia-jensen-huang-se-dit-ouvert-a-un-retour-a-la-tete-de-l-entreprise-cinq-jours-apres-sa-demission_8286938.html",
+   "at": "2026-11-17T19:19:33+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Guerre en Ukraine : la France n'est \"évidemment pas cobelligérante\" et n'a \"pas l'intention de l'être\", assure le ministre Jean-Noël Barrot",
@@ -17,18 +87,18 @@
    "at": "2026-11-17T19:07:58+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Royaume-Uni : une réforme « radicale » pour remettre dans l’emploi « une génération perdue »",
+   "desc": "Un rapport a été publié, mardi, qui propose des mesures pour les près d’un million de jeunes Britanniques âgés de 16 à 24 ans qui ne sont ni en emploi, ni en études, ni en formation. Le gouvernement s’en inspirera pour présenter ses propositions en 2027.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/17/royaume-uni-une-reforme-radicale-pour-remettre-dans-l-emploi-une-generation-perdue_6813035_3210.html",
+   "at": "2026-11-17T18:48:40+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Pourquoi la Russie accuse la France de \"participer directement\" à la guerre en Ukraine",
    "desc": "Radio France internationale a révélé l'existence d'un détachement de l'armée française sur le sol ukrainien. Le gouvernement français assure que ces militaires ne participent pas aux combats.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/pourquoi-la-russie-accuse-la-france-de-participer-directement-a-la-guerre-en-ukraine_8286422.html",
    "at": "2026-11-17T18:47:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Nicolas Thierry récompensé par le prix Earthshot pour son combat contre les PFAS en France",
-   "desc": "Fils et petit-fils de viticulteurs, l’élu de Gironde a fait de la lutte contre la pollution chimique le fil conducteur de son engagement. Sa campagne contre les PFAS a abouti en 2025 à une loi restreignant leur utilisation.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/17/nicolas-thierry-recompense-par-le-prix-earthshot-pour-son-combat-contre-les-pfas-en-france_6813033_3244.html",
-   "at": "2026-11-17T18:45:25+00:00"
   },
   {
    "source": "Le Monde",
@@ -49,7 +119,7 @@
    "title": "Après des attentats meurtriers, la Jordanie multiplie les interdictions d’utilisation des réseaux sociaux",
    "desc": "Le royaume a décidé de prohiber le réseau Telegram. Il avait déjà mis au ban la plateforme TikTok et interdit l’utilisation de la messagerie WhatsApp pour passer des appels.",
    "url": "https://www.lemonde.fr/international/article/2026/11/17/apres-des-attentats-meurtriers-la-jordanie-multiplie-les-interdictions-d-utilisation-des-reseaux-sociaux_6813030_3210.html",
-   "at": "2026-11-17T18:28:45+00:00"
+   "at": "2026-11-17T18:28:44+00:00"
   },
   {
    "source": "franceinfo",
@@ -73,18 +143,18 @@
    "at": "2026-11-17T18:07:52+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Je serais honoré de reprendre mes fonctions de PDG\" : l'ex-patron de Nvidia, Jensen Huang, se dit ouvert à un retour à la tête de l'entreprise, cinq jours après sa démission",
-   "desc": "Le patron du géant américain des puces a annoncé jeudi sa démission après l'éclatement d'un scandale d'adultère et de contrebande de puces IA vers la Chine.",
-   "url": "https://www.franceinfo.fr/internet/nvidia/je-serais-honore-de-reprendre-mes-fonctions-de-pdg-l-ex-patron-de-nvidia-jensen-huang-se-dit-ouvert-a-un-retour-a-la-tete-de-l-entreprise-cinq-jours-apres-sa-demission_8286938.html",
-   "at": "2026-11-17T18:04:13+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "A Paris, la mairie anticipe des fermetures d’écoles dans le cadre d’une « sectorisation bioclimatique »",
    "desc": "Cinq écoles du 14ᵉ arrondissement pourraient être fermées à cause de la baisse démographique et des finances exsangues de la Ville de Paris face aux besoins de rénovation du bâti. Une méthode bientôt étendue à toute la capitale.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/17/a-paris-la-mairie-anticipe-des-fermetures-d-ecoles-dans-le-cadre-d-une-sectorisation-bioclimatique_6813027_823448.html",
    "at": "2026-11-17T18:02:40+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Jupiter » : la vertigineuse solitude du président face à l’arme nucléaire, incarné à l’écran par Denis Ménochet",
+   "desc": "Le réalisateur Alexandre Smia fait monter la pression dans un huis clos au sein duquel le chef de l’Etat français doit décider d’utiliser ou non la bombe atomique contre la Russie.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/17/jupiter-la-vertigineuse-solitude-du-president-face-a-l-arme-nucleaire-incarne-a-l-ecran-par-denis-menochet_6813026_3246.html",
+   "at": "2026-11-17T18:00:09+00:00"
   },
   {
    "source": "Le Monde",
@@ -99,13 +169,6 @@
    "desc": "\"C'est une victoire pour la jeunesse et un camouflet pour le gouvernement\", a réagi l'Unef, qui a contesté la mesure devant la justice.",
    "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-justice-suspend-l-interdiction-de-rassemblements-autour-de-certains-lycees-et-universites-en-region-parisienne_8286860.html",
    "at": "2026-11-17T17:45:42+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En Belgique, une œuvre représentant un cochon au volant d’une fourgonnette de police fait polémique",
-   "desc": "Alors qu’à Bruxelles les étudiants manifestent à nouveau le mardi 17 novembre, une pièce exposée au musée municipal de Gand représentant un porc aux manettes d’un véhicule de patrouille déclenche une bataille politique.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/17/en-belgique-une-uvre-representant-un-cochon-au-volant-d-une-fourgonnette-de-police-fait-polemique_6813022_3210.html",
-   "at": "2026-11-17T17:45:07+00:00"
   },
   {
    "source": "franceinfo",
@@ -127,13 +190,6 @@
    "desc": "Alors que la moitié des skippers a déjà rallié Pointe-à-Pitre, de nombreuses voix s'élèvent pour tenter de faire entendre la mémoire de l'esclavage. Pour certains descendants de personnes mises en esclavage, le narratif de la course sportive passe sous silence une grande partie de leurs souffrances.",
    "url": "https://la1ere.franceinfo.fr/faire-du-folklore-sur-notre-souffrance-quelle-place-occupe-la-memoire-de-l-esclavage-durant-la-route-du-rhum-1747257.html",
    "at": "2026-11-17T17:24:58+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’arrêt très attendu de la Cour internationale de justice sur la question du génocide des Rohingya",
-   "desc": "La CIJ dira, jeudi 19 novembre, si la Birmanie a commis un génocide contre la minorité musulmane. Alors que la décision devrait préciser les contours de la définition juridique du génocide, les tentatives américaines d’intimidation contre ses juges se multiplient.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/17/l-arret-tres-attendu-de-la-cour-internationale-de-justice-sur-la-question-du-genocide-des-rohingya_6813016_3210.html",
-   "at": "2026-11-17T17:15:07+00:00"
   },
   {
    "source": "franceinfo",
@@ -185,32 +241,18 @@
    "at": "2026-11-17T16:58:45+00:00"
   },
   {
+   "source": "France 24",
+   "title": "Mouvement social en France : une mobilisation qui tient malgré des chiffres en baisse",
+   "desc": "Selon les sources, entre 500 000 et 146 000 personnes, lycéens, étudiants, retraités, salariés du privé ont battu le pavé en France, mardi, autour d'un large éventail de revendications, à l'appel des syndicats d'agents publics pour obtenir de meilleures rémunérations, alors que de nouvelles mobilisations se profilent.",
+   "url": "https://www.france24.com/fr/france/20261117-mouvement-social-en-france-une-mobilisation-qui-tient-malgr%C3%A9-des-chiffres-en-baisse",
+   "at": "2026-11-17T16:51:31+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Expulsés fin octobre, Patrick et Isabelle Balkany vont finalement pouvoir réintégrer leur moulin de Giverny, après un accord avec l'Etat",
    "desc": "Expulsés fin octobre 2026 de leur moulin de Giverny (Eure), Patrick et Isabelle Balkany vont pouvoir revenir dans leur demeure après un accord avec l'agence de l'État qui l'avait saisie.",
    "url": "https://france3-regions.franceinfo.fr/normandie/eure/le-couple-balkany-va-pouvoir-reintegrer-son-moulin-de-giverny-3451356.html",
    "at": "2026-11-17T16:49:23+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Masculinisme : 34 membres d’une chaîne Telegram baptisée « Femmeblancherie » devant la justice pour leurs propos haineux",
-   "desc": "Prévus en plusieurs sessions, les procès de ces hommes s’ouvrent mercredi 18 novembre au tribunal correctionnel de Paris. Ils comparaissent pour une multiplicité de délits : injures contre les femmes, appels au meurtre et au viol, mais aussi diatribes racistes et antisémites.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/masculinisme-34-membres-d-une-chaine-telegram-baptisee-femmeblancherie-devant-la-justice-pour-leurs-propos-haineux_6813009_3224.html",
-   "at": "2026-11-17T16:30:12+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, manifestations du 17 novembre : entre 146 000, selon le gouvernement, et 500 000 personnes, selon la CGT, ont défilé en France contre la vie chère",
-   "desc": "A Paris, le cortège qui a relié la place de la Nation à la place d’Italie a réuni 28 000 personnes, mardi, selon la Préfecture de police, et 175 000, selon la CGT.",
-   "url": "https://www.lemonde.fr/politique/live/2026/11/17/en-direct-manifestations-du-17-novembre-a-paris-une-manifestation-calme-a-17-heures-ayant-rassemble-28-000-personnes-selon-la-prefecture-de-police_6812905_823448.html",
-   "at": "2026-11-17T16:28:59+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Patrick et Isabelle Balkany retrouvent leur moulin de Giverny, dont ils avaient été expulsés fin octobre, après un accord avec l’Etat",
-   "desc": "Les époux Balkany avaient été expulsés le 29 octobre de leur moulin de Cossy à Giverny, dont ils avaient perdu l’usufruit en conséquence de leur condamnation pour blanchiment de fraude fiscale en 2023.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/patrick-et-isabelle-balkany-retrouvent-leur-moulin-de-giverny-dont-ils-avaient-ete-expulses-fin-octobre-apres-un-accord-avec-l-etat_6813006_3224.html",
-   "at": "2026-11-17T16:13:29+00:00"
   },
   {
    "source": "franceinfo",
@@ -227,32 +269,11 @@
    "at": "2026-11-17T15:55:22+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Le directeur de la prison d’Aix-Luynes en garde à vue pour détention d’images pédocriminelles",
-   "desc": "Le ministère de la justice a suspendu le fonctionnaire « à titre conservatoire » et annonce une procédure de révocation « si les faits sont avérés ».",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/le-directeur-de-la-prison-d-aix-luynes-en-garde-a-vue-pour-detention-d-images-pedocriminelles_6812999_3224.html",
-   "at": "2026-11-17T15:50:41+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Réforme des retraites de Marine Le Pen : départ à 60 ou 62 ans, capitalisation et conditions durcies",
    "desc": "La candidate du Rassemblement national à l’élection présidentielle de 2027, Marine Le Pen, a présenté mardi son projet de réforme du système de retraites, avec la promesse d'un retour aux 62 ans, voire 60 ans, financé par davantage de travail et une dose de capitalisation obligatoire. Mais sans garantir le retour à l'équilibre financier du système.",
    "url": "https://www.france24.com/fr/france/20261117-france-presidentielle-2027-reforme-des-retraites-marine-le-pen-depart-a-60-ou-62-ans-capitalisation-conditions-durcies",
    "at": "2026-11-17T15:31:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'armée israélienne a utilisé la technologie de reconnaissance faciale d'Amazon pour surveiller les Palestiniens, selon \"The Guardian\"",
-   "desc": "Une unité militaire de l'Etat hébreu a fourni au cloud d'Amazon plusieurs millions de photos, notamment de Palestiniens, pour les analyser à l'aide d'un outil d'intelligence artificielle, début 2024.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/guerre/l-armee-israelienne-a-utilise-la-technologie-de-reconnaissance-faciale-d-amazon-pour-surveiller-les-palestiniens-selon-le-guardian_8286383.html",
-   "at": "2026-11-17T15:11:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Donald Trump prend \"très au sérieux\" une possible menace d'attaque iranienne contre la ville de Washington, l'Iran dénonce des informations \"fabriquées\"",
-   "desc": "Selon CNN, les services de renseignement disposeraient d'informations selon lesquelles Téhéran préparerait une attaque par \"bombe sale\" contre la capitale américaine.",
-   "url": "https://www.franceinfo.fr/monde/iran/guerre-entre-les-etats-unis-israel-et-l-iran/donald-trump-prend-tres-au-serieux-une-possible-menace-d-attaque-iranienne-contre-la-ville-de-washington-l-iran-denonce-des-informations-fabriquees_8286563.html",
-   "at": "2026-11-17T15:00:34+00:00"
   },
   {
    "source": "Le Monde",
@@ -277,20 +298,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"On a besoin de s'entraîner\" : en Pologne, un exercice inédit mobilise des soutiens de l'Ukraine, dont des Français, pour apprendre à se déployer ensemble",
-   "desc": "Parmi les 2 800 soldats mobilisés, presque la moitié sont français. L'opération \"Koalicja\" leur permet de s'organiser plus vite et plus efficacement, pour une mobilisation possible face aux forces russes.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/reportage-on-a-besoin-de-s-entrainer-en-pologne-un-exercice-inedit-mobilise-des-militaires-de-la-coalition-des-volontaires-pour-defendre-l-ukraine_8286437.html",
-   "at": "2026-11-17T13:44:51+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Dans quelles conditions franceinfo canal 16 a-t-elle précisé à l'antenne le lien conjugal d'une de ses invités ?",
-   "desc": "Anne-Cécile Mailfert, présidente de la Fondation des femmes, invitée de franceinfo canal 16 le lundi 16 novembre, a été surprise de l'indication à l'antenne de son lien avec Stéphane Sitbon-Gomez, n°2 de France Télévisions. Pourquoi cette information a-t-elle été donnée ? Au nom de quel principe ?",
-   "url": "https://www.franceinfo.fr/une-information-transparente-franceinfo/transparence-dans-quelles-conditions-franceinfo-canal-16-a-t-elle-indique-a-l-antenne-le-lien-conjugal-d-une-de-ses-invites_8286473.html",
-   "at": "2026-11-17T13:35:31+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"J'ai le choix entre payer les études de mes enfants et m'habiller\" : dans les manifestations, des fonctionnaires racontent la baisse de leur pouvoir d'achat",
    "desc": "En tête de cortège mardi 17 novembre, des fonctionnaires, dont le pouvoir d'achat a baissé depuis 2017, demandent le dégel et la revalorisation de l'indice des salaires de la fonction publique.",
    "url": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/il-y-a-des-choses-qu-on-ne-peut-pas-faire-les-fonctionnaires-manifestent-pour-leur-pouvoir-d-achat_8286554.html",
@@ -311,16 +318,9 @@
    "at": "2026-11-17T12:57:25+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Jean-Luc Mélenchon va dîner mardi soir avec des grands patrons français dont Bernard Arnault et Patrick Pouyanné",
-   "desc": "Le leader de La France insoumise répond à l'invitation d'une association patronale qui avait reçu Marine Le Pen au printemps.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/candidats/jean-luc-melenchon-candidat-a-la-presidentielle-va-diner-avec-des-grands-patrons-francais-dont-bernard-arnault-et-patrick-pouyanne_8286248.html",
-   "at": "2026-11-17T10:23:56+00:00"
-  },
-  {
    "source": "France 24",
-   "title": "Mobilisation en direct : 500 000 manifestants en France selon la CGT, 146 000 selon Beauvau",
-   "desc": "Les syndicats ont appelé les agents de la fonction publique à une nouvelle journée d'action mardi pour protester contre la vie chère. Selon la CGT, 500 000 personnes ont manifesté en France, dont 175 000 à Paris. Le ministère de l'Intérieur évalue de son côté le nombre de manifestants à 146 000 dont 28 000 dans la capitale. Suivez notre direct.",
+   "title": "Mobilisation sociale : 500 000 manifestants en France selon la CGT, 146 000 selon Beauvau",
+   "desc": "Lycéens, étudiants, fonctionnaires ou salariés du privé ont de nouveau défilé mardi en France, à l'appel des syndicats pour protester contre la vie chère. Selon la CGT, ils étaient 500 000 à travers le pays, dont 175 000 à Paris. Le ministère de l'Intérieur évalue de son côté le nombre de manifestants à 146 000 dont 28 000 dans la capitale. Le fil du 17 novembre.",
    "url": "https://www.france24.com/fr/france/20261117-en-direct-nouvelle-journ%C3%A9e-mobilisation-gr%C3%A8ve-fonction-publique-gilets-jaunes-pouvoir-achat-%C3%A9tudiants-lyc%C3%A9ens",
    "at": "2026-11-17T06:57:54+00:00"
   },

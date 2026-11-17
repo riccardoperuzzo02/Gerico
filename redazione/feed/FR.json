@@ -1,13 +1,188 @@
 {
  "code": "FR",
- "asOf": "2026-11-16T21:17:35+00:00",
+ "asOf": "2026-11-17T05:17:35+00:00",
  "items": [
   {
+   "source": "franceinfo",
+   "title": "Procès de l'assassinat du frère d'Amine Kessaci : deux figures du narcobanditisme marseillais condamnées à la perpétuité",
+   "desc": "Brahim Chabane, demi-frère du militant engagé contre le narcotrafic Amine Kessaci, est l'une des victimes d'un triple homicide à Marseille en décembre 2020.",
+   "url": "https://www.franceinfo.fr/faits-divers/justice-proces/proces-de-l-assassinat-du-frere-d-amine-kessaci-deux-figures-du-narcobanditisme-marseillais-condamnees-a-la-perpetuite_8285081.html",
+   "at": "2026-11-17T05:03:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Cette enfant aura été plus aimée morte que vivante\" : après onze jours de procès, la courte vie de la petite martyre de l'A10 se dessine en pointillés",
+   "desc": "Malgré la ténacité des différentes parties, la cour a peu appris sur les quatre années d'existence d'Inass Touloub, la fillette retrouvée suppliciée en 1987 le long de l'autoroute A10.",
+   "url": "https://www.franceinfo.fr/faits-divers/martyre-de-l-a10/cette-enfant-aura-ete-plus-aimee-morte-que-vivante-apres-onze-jours-de-proces-la-courte-vie-de-la-petite-martyre-de-l-a10-se-dessine-en-pointilles_8284622.html",
+   "at": "2026-11-17T04:45:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Un véritable changement de paradigme\" : ce que contient le projet de loi relatif à la résilience des infrastructures critiques, qui doit renforcer la cybersécurité en France",
+   "desc": "Le texte prévoit de durcir les obligations de sécurité informatique pour de nombreuses entreprises et administrations, et doit renforcer les pouvoirs du \"cyber-pompier\" français.",
+   "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/un-veritable-changement-de-paradigme-ce-que-contient-le-projet-de-loi-relatif-a-la-resilience-des-infrastructures-critiques-qui-doit-renforcer-la-cybersecurite-en-france_8284760.html",
+   "at": "2026-11-17T04:41:37+00:00"
+  },
+  {
    "source": "Le Monde",
-   "title": "Le projet de cinq pays européens d’ouvrir un centre de retour au Rwanda traduit la bascule de la politique européenne en matière d’immigration",
+   "title": "Impôts, logement, smic… Ce qu’il faut retenir du débat entre candidats à la présidentielle",
+   "desc": "Gabriel Attal, Raphaël Glucksmann, Marine Le Pen, Jean-Luc Mélenchon et Bruno Retailleau ont échangé, lundi, pendant un peu moins de trois heures, sur la vie chère et le pouvoir d’achat, préoccupation majeure des Françaises et Français, lors d’un débat organisé sur TF1 puis LCI.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/impots-logement-smic-ce-qu-il-faut-retenir-du-debat-entre-candidats-a-la-presidentielle_6812895_823448.html",
+   "at": "2026-11-17T04:33:10+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "A Lyon, Toulouse, Lille ou Rennes, les ressorts d’une révolte sociale qui s’est ancrée au fil des semaines",
+   "desc": "Une nouvelle journée d’action nationale est prévue mardi. Parti des lycéens mi-septembre, relayé par les étudiants, les parents puis les syndicats, le mouvement gagne les associations.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/a-lyon-toulouse-lille-ou-rennes-les-ressorts-d-une-revolte-sociale-qui-s-est-ancree-au-fil-des-semaines_6812893_823448.html",
+   "at": "2026-11-17T04:30:22+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Infractions routières : les recettes des amendes redémarrent après des années de stagnation",
+   "desc": "Le gouvernement vient de revoir à la hausse son estimation des recettes liées aux infractions routières. Elles devraient frôler 2,3 milliards d’euros en 2026, puis poursuivre leur progression grâce notamment à la multiplication des radars.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/infractions-routieres-les-recettes-des-amendes-redemarrent-apres-des-annees-de-stagnation_6812890_823448.html",
+   "at": "2026-11-17T04:30:05+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Cisjordanie : une femme palestinienne tuée par un colon après une embuscade d’assaillants palestiniens",
+   "desc": "Par ailleurs, cinq Palestiniens ont été blessés lundi après avoir été renversés par un colon israélien dans le sud de la Cisjordanie.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/17/cisjordanie-une-femme-palestinienne-tuee-par-un-colon-apres-une-embuscade-d-assaillants-palestiniens_6812889_3210.html",
+   "at": "2026-11-17T04:20:28+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Deux ans de prison requis contre Pierre Ménès, jugé pour agressions sexuelles et harcèlement moral",
+   "desc": "L’ancien journaliste a reconnu un « langage très fleuri », des propos « pas très élégants » et une « ambiance potache », mais a nié toute violence sexuelle et affirmé que « c’était une autre époque ».",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/17/deux-ans-de-prison-requis-contre-pierre-menes-juge-pour-agressions-sexuelles-et-harcelement-moral_6812755_3224.html",
+   "at": "2026-11-17T00:19:49+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : des frappes russes ont touché deux importants ponts de Kiev, annonce le maire, Vitali Klitschko",
+   "desc": "« A la suite de l’attaque ennemie, des systèmes d’infrastructures critiques ont été endommagés », a fait savoir, lundi soir, le maire de la capitale ukrainienne, faisant état de frappes russes ayant « touché les ponts Nord et Sud » de la ville.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/17/en-direct-guerre-en-ukraine-des-frappes-russes-ont-touche-deux-ponts-importants-de-kiev-annonce-le-maire-vitali-klitschko_6810982_3210.html",
+   "at": "2026-11-17T00:13:59+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au procès de l’interpellation violente de Michel Zecler par des policiers : « Les vidéos parlent d’elles-mêmes, c’est impardonnable, ce n’est même pas de l’amateurisme »",
+   "desc": "Trois agents sont jugés pour avoir roué de coups le producteur de musique, à Paris, en 2020, et « faux en écriture publique ». Sept fonctionnaires de police, appelés en renfort par les accusés ont livré leur témoignage.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/17/au-proces-de-l-interpellation-violente-de-michel-zecler-par-des-policiers-les-videos-parlent-d-elles-memes-c-est-impardonnable-ce-n-est-meme-pas-de-l-amateurisme_6812689_3224.html",
+   "at": "2026-11-16T23:36:09+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Francophonie : l'avenir du français se joue-t-il en Afrique ?",
+   "desc": "Au Cambodge, le sommet de la Francophonie s’est achevé ce lundi sur le report d’un an de l’élection à la tête de l’organisation. En cause notamment : les tensions entre la République démocratique du Congo et le Rwanda. La secrétaire générale, la Rwandaise Louise Mushikiwabo, reste donc en poste jusqu’au prochain scrutin. L'occasion de parler de la francophonie et de son avenir qui se joue d'ailleurs principalement sur le continent africain.",
+   "url": "https://www.france24.com/fr/%C3%A9missions/les-cl%C3%A9s-de-l-info/20261116-francophonie-l-avenir-du-fran%C3%A7ais-se-joue-t-il-en-afrique",
+   "at": "2026-11-16T23:11:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Marine Le Pen critiquée en plein débat de la présidentielle pour sa volonté de couper les subventions des associations \"politisées\"",
+   "desc": "Sur LCI, un front allant de Jean-Luc Mélenchon à Gabriel Attal et passant par Raphaël Glucksmann s'est dressé face à la candidate RN.",
+   "url": "https://www.franceinfo.fr/elections/marine-le-pen-critiquee-en-plein-debat-de-la-presidentielle-pour-sa-volonte-de-couper-les-subventions-des-associations-politisees_8285558.html",
+   "at": "2026-11-16T23:08:36+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"C'est pire que d'habitude\", \"Ça va être un bazar\"… La fermeture de l'A13 pour neuf mois provoque déjà des bouchons en Île-de-France et inquiète les communes",
+   "desc": "Trouver un autre chemin pour aller travailler, c’est le casse-tête qui commence pour les habitués de l’A13, fermée depuis lundi 16 novembre matin à la sortie de Paris, en direction de la Normandie, jusqu’à fin août 2027. Les bouchons étaient déjà nombreux ce lundi, et les communes voisines veulent éviter de récupérer les voitures dans leurs rues. Certains maires ont même sollicité les applications GPS.",
+   "url": "https://www.franceinfo.fr/economie/transports/c-est-pire-que-d-habitude-ca-va-etre-un-bazar-la-fermeture-de-l-a13-pour-neuf-mois-provoque-deja-des-bouchons-en-ile-de-france-et-inquiete-les-communes_8285477.html",
+   "at": "2026-11-16T22:44:34+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Deux ans de prison, dont un ferme, requis contre Pierre Ménès, jugé pour agressions sexuelles et harcèlement moral",
+   "desc": "Dans son réquisitoire, la procureure de la République a insisté sur la \"gravité\" des faits pour lesquels l'ex-chroniqueur sportif de Canal+ comparaît.",
+   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/deux-ans-de-prison-dont-un-ferme-requis-contre-pierre-menes-juge-pour-agressions-sexuelles-et-harcelement-moral_8285549.html",
+   "at": "2026-11-16T22:42:00+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Impôts, logement, Smic... les candidats à la présidentielle débattent de leurs propositions",
+   "desc": "Les candidats à la présidentielle française Marine Le Pen, Jean-Luc Mélenchon, Raphaël Glucksmann, Bruno Retailleau et Gabriel Attal ont débattu lundi sur les inégalités, le pouvoir d’achat et la solidarité, lors d’un débat organisé en région parisienne dans un entrepôt des Restos du Cœur en l’absence d’Édouard Philippe.",
+   "url": "https://www.france24.com/fr/france/20261116-imp%C3%B4ts-logement-smic-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9battent-de-leurs-propositions",
+   "at": "2026-11-16T22:39:30+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Un juge fédéral américain annule les limites de séjour des étudiants et des journalistes étrangers imposées par Donald Trump",
+   "desc": "Dans une réglementation de juillet 2026, l’administration Trump avait décidé que les ressortissants étrangers détenteurs d’un visa étudiant ne seraient pas autorisés à rester plus de quatre ans sur le territoire américain tandis que les journalistes étrangers seraient limités à des séjours d’environ huit mois.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/16/un-juge-federal-americain-annule-les-limites-de-sejour-des-etudiants-et-journalistes-etrangers-imposees-par-donald-trump_6812623_3210.html",
+   "at": "2026-11-16T22:30:16+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le XXᵉ Sommet de la francophonie paralysé par les tensions diplomatiques​",
+   "desc": "Les 53 Etats membres de l’Organisation internationale de la francophonie ont reporté d’un an, lundi au Cambodge, la désignation de leur secrétaire général, faute de consensus. Une première, sur fond d’affrontement entre Kinshasa et Kigali autour d’un troisième mandat de la Rwandaise Louise Mushikiwabo.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/16/une-crise-inedite-au-sommet-de-la-francophonie-paralysee-par-les-tensions-diplomatiques_6812590_3210.html",
+   "at": "2026-11-16T22:21:42+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Cinq pays dévoilent leur projet de \"hub de retour\" au Rwanda, pour des personnes migrantes expulsées de l'Union européenne",
+   "desc": "L'initiative, dénoncée par les défenseurs des droits humains, a été présentée lors d'une conférence de presse en Autriche.",
+   "url": "https://www.franceinfo.fr/monde/europe/migrants/cinq-pays-devoilent-leur-projet-de-hub-de-retour-au-rwanda-pour-des-personnes-migrantes-expulsees-de-l-union-europeenne_8285039.html",
+   "at": "2026-11-16T22:06:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Qu'est-ce que le \"Rhum Express\", ce phénomène qui va arroser abondamment la Bretagne et balayer le territoire en plein novembre ?",
+   "desc": "Il va falloir garder le parapluie à portée de main cette semaine : jusqu’à 50 litres d’eau par mètre carré sont attendus localement en Bretagne d’ici mardi matin. Les pluies vont ensuite traverser une grande partie du pays. Cette humidité nous arrive des Antilles, portée par un phénomène surnommé le \"Rhum Express\". Comment fonctionne-t-il, et jusqu’à quand va-t-il nous concerner ?",
+   "url": "https://www.franceinfo.fr/environnement/meteo/qu-est-ce-que-le-rhum-express-ce-phenomene-qui-va-arroser-abondamment-la-bretagne-et-balayer-le-territoire-en-plein-novembre_8285528.html",
+   "at": "2026-11-16T21:52:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'Assemblée adopte un texte soutenu par le gouvernement pour faciliter le déblocage de l'épargne salariale",
+   "desc": "La proposition de loi doit désormais faire l'objet d'un compromis entre députés et sénateurs lors d'une prochaine commission mixte paritaire.",
+   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/l-assemblee-adopte-un-texte-soutenu-par-le-gouvernement-pour-faciliter-le-deblocage-de-l-epargne-salariale_8285510.html",
+   "at": "2026-11-16T21:46:35+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Ukraine : Marine Le Pen confirme à l'ambassadeur la fin de l'aide financière si elle est élue",
+   "desc": "Los d'une rencontre lundi avec l'ambassadeur d'Ukraine à Paris, Marine Le Pen a réaffirmé que si elle était élue à l'Élysée \"l'état des finances publiques de la France ne permett(rait) plus d'aider financièrement l'Ukraine dans les prochains mois\", selon un communiqué du Rassemblement national.",
+   "url": "https://www.france24.com/fr/france/20261116-ukraine-marine-le-pen-confirme-%C3%A0-l-ambassadeur-la-fin-de-l-aide-financi%C3%A8re-si-elle-est-%C3%A9lue",
+   "at": "2026-11-16T21:46:15+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Un troisième porte-avions américain, le « Theodore-Roosevelt », est arrivé au Moyen-Orient",
+   "desc": "En plein regain des tensions dans la région, le « Theodore-Roosevelt » rejoint deux autres porte-avions déjà positionnés dans la région, le « George-H.-W.-Bush » et le « George-Washington », respectivement déployés depuis avril et août.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/16/un-troisieme-porte-avions-americain-le-theodore-roosevelt-est-arrive-au-moyen-orient_6812491_3210.html",
+   "at": "2026-11-16T21:23:33+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Statue de la Vierge vandalisée à Porto-Vecchio : des peines de prison ferme requises",
+   "desc": "Deux jeunes travailleurs saisonniers, l’un ayant simulé des actes sexuels sur le monument et l’autre ayant filmé et publié la vidéo sur les réseaux sociaux, comparaissaient ce lundi en visioconférence devant le tribunal d’Ajaccio.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/16/en-corse-une-peine-de-prison-ferme-requise-pour-la-degradation-de-la-statue-de-la-vierge-a-porto-vecchio_6812458_3224.html",
+   "at": "2026-11-16T21:12:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Marine Le Pen réitère auprès de l'ambassadeur ukrainien que la France ne pourrait \"plus aider financièrement\" Kiev si elle est élue",
+   "desc": "La candidate du RN à la présidentielle a cependant assuré qu'elle \"tiendrait les engagements pris jusqu'à présent par la France\".",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/marine-le-pen-reitere-aupres-de-l-ambassadeur-ukrainien-que-la-france-ne-pourrait-plus-aider-financierement-kiev-si-elle-est-elue_8285462.html",
+   "at": "2026-11-16T21:09:09+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les agents des services publics \"ont vraiment besoin d'être reconnus et revalorisés\", souligne la CFDT Education avant la mobilisation du 17 novembre",
+   "desc": "Face à la hausse du coût de la vie, Laetitia Aresu, secrétaire générale de la CFDT Education, demande \"une revalorisation du point d'indice\" et \"une revalorisation de leur rémunération\".",
+   "url": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/les-agents-des-services-publics-ont-vraiment-besoin-d-etre-reconnus-et-revalorises-souligne-la-cfdt-education-avant-la-mobilisation-du-17-novembre_8285489.html",
+   "at": "2026-11-16T21:07:45+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le projet de cinq pays de l’UE d’ouvrir un centre de retour au Rwanda traduit la bascule de la politique européenne en matière d’immigration",
    "desc": "L’Allemagne, l’Autriche, le Danemark, la Grèce et les Pays-Bas ont annoncé, lundi 16 novembre, la création d’une plateforme au Rwanda, où pourront être renvoyés les demandeurs d’asile déboutés.",
    "url": "https://www.lemonde.fr/international/article/2026/11/16/le-projet-de-cinq-pays-europeens-d-ouvrir-un-centre-de-retour-au-rwanda-traduit-la-bascule-de-la-politique-europeenne-en-matiere-d-immigration_6812426_3210.html",
-   "at": "2026-11-16T20:52:39+00:00"
+   "at": "2026-11-16T20:52:34+00:00"
   },
   {
    "source": "franceinfo",
@@ -18,24 +193,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Au procès des parents de l’inconnue de l’A10, un réquisitoire sobre, subtil et pédagogue",
+   "title": "Au procès des parents de l’« inconnue de l’A10 », un réquisitoire sobre, subtil et pédagogue",
    "desc": "Les deux représentants de l’accusation ont requis vingt ans de réclusion criminelle contre Halima El Bakhti et quatorze ans contre Ahmed Touloub.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/16/au-proces-des-parents-de-l-inconnue-de-l-a10-un-requisitoire-sobre-subtil-et-pedagogue_6812394_3224.html",
    "at": "2026-11-16T20:19:08+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Mobilisation du 17 novembre : des trains et des ports seront perturbés en raison d’un appel à la grève",
-   "desc": "Certaines lignes des réseaux TER en Auvergne-Rhône-Alpes, Bourgogne-Franche-Comté, Bretagne, Centre-Val de Loire, Hauts-de-France, Nouvelle-Aquitaine, Occitanie et Pays de la Loire seront concernées par les perturbations, mardi, selon la SNCF.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/16/mobilisation-du-17-novembre-des-trains-et-des-ports-seront-perturbes-en-raison-d-un-appel-a-la-greve_6812393_3234.html",
-   "at": "2026-11-16T20:08:58+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Renault va supprimer plus d’un millier de postes en France pour être plus compétitif face à la concurrence chinoise",
-   "desc": "Le groupe automobile français a annoncé un plan de départs volontaires concernant 1 000 personnes ainsi que 2 000 créations de postes d’ici à deux à trois ans. Une dizaine de sites seront concernés par ce double mouvement, partout en France.",
+   "desc": "Le groupe automobile français a annoncé un plan de départs volontaires concernant 1 000 personnes ainsi que 2 000 créations de postes d’ici deux à trois ans. Une dizaine de sites seront concernés par ce double mouvement, partout dans l’Hexagone.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/16/renault-va-supprimer-plus-d-un-millier-de-postes-en-france-pour-etre-plus-competitif-face-a-la-concurrence-chinoise_6812360_3234.html",
-   "at": "2026-11-16T19:59:33+00:00"
+   "at": "2026-11-16T19:59:32+00:00"
   },
   {
    "source": "franceinfo",
@@ -53,13 +221,6 @@
   },
   {
    "source": "Le Monde",
-   "title": "Comment l’Allemagne a renoncé à sa politique d’accueil : du « nous y arriverons » d’Angela Merkel au projet d’expulser des réfugiés vers le Rwanda",
-   "desc": "Le pays, qui a accueilli près d’un million de Syriens depuis 2015, participe à une initiative, pour créer un « centre de retour » au Rwanda, où renvoyer les demandeurs d’asile déboutés.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/16/comment-l-allemagne-a-renonce-a-sa-politique-d-accueil-du-nous-y-arriverons-d-angela-merkel-au-projet-d-expulser-des-refugies-vers-le-rwanda_6812359_3210.html",
-   "at": "2026-11-16T19:53:33+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Narcobanditisme : pourquoi Amine Oualane et Karim Harrat sont condamnés à la réclusion criminelle à perpétuité",
    "desc": "Les deux hommes sont reconnus coupables d’avoir organisé l’assassinat de trois concurrents, dont le frère du militant Amine Kessaci, qui voit dans le verdict « un message à la narcocratie ».",
    "url": "https://www.lemonde.fr/societe/article/2026/11/16/narcobanditisme-pourquoi-amine-oualane-et-karim-harrat-sont-condamnes-a-la-reclusion-criminelle-a-perpetuite_6812326_3224.html",
@@ -73,32 +234,11 @@
    "at": "2026-11-16T19:29:40+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Mobilisation de la jeunesse : 20 % des établissements du supérieur et 25 lycées franciliens perturbés lundi",
-   "desc": "A la veille d’une nouvelle journée de mobilisation nationale, le gouvernement durcit le ton face à la contestation, en interdisant notamment la vente de mortiers d’artifice et les rassemblements autour de certains établissements parisiens.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/16/mobilisation-de-la-jeunesse-20-des-etablissements-du-superieur-et-25-lycees-franciliens-perturbes-lundi_6812298_3224.html",
-   "at": "2026-11-16T19:06:05+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Adolescent mortellement fauché dans le Puy-de-Dôme : deux hommes mis en examen",
    "desc": "Deux hommes de 22 et 19 ans, soupçonnés d'être impliqués dans l'homicide routier vendredi à Gerzat (Puy-de-Dôme), ont été mis en examen, indique le parquet de Clermont-Ferrand dans un communiqué ce lundi soir.",
    "url": "https://www.franceinfo.fr/faits-divers/adolescent-mortellement-fauche-dans-le-puy-de-dome-deux-hommes-mis-en-examen_8285369.html",
    "at": "2026-11-16T19:03:14+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky affirme que la Corée du Nord livre à la Russie chaque mois « des dizaines de missiles balistiques » et demande aux Européens plus de missiles pour Kiev",
-   "desc": "Le président ukrainien a aussi appelé, lundi, les Européens à reprendre les discussions sur les moyens de neutraliser les lanceurs balistiques russes.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/16/en-direct-guerre-en-ukraine-volodymyr-zelensky-affirme-que-la-coree-du-nord-livre-a-la-russie-chaque-mois-des-dizaines-de-missiles-balistiques-et-demande-aux-europeens-plus-de-missiles-pour-kiev_6810982_3210.html",
-   "at": "2026-11-16T19:02:37+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Alerte sur l’« aggravation historique » de l’état de la plupart des récifs coralliens, herbiers et mangroves des territoires d’outre-mer",
-   "desc": "L’Initiative française pour les récifs coralliens a publié, lundi 16 novembre, un bilan des écosystèmes marins français d’outre-mer.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/16/alerte-sur-l-aggravation-historique-de-l-etat-de-la-plupart-des-recifs-coralliens-herbiers-et-mangroves-des-territoires-d-outre-mer_6812295_3244.html",
-   "at": "2026-11-16T19:00:10+00:00"
   },
   {
    "source": "France 24",
@@ -108,20 +248,6 @@
    "at": "2026-11-16T18:35:29+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Nvidia : les Etats-Unis cherchent à bloquer l’accès de la Chine aux puces américaines par le biais de pays tiers",
-   "desc": "Les règles mises en place récemment par le gouvernement Trump instaurent notamment une nouvelle autorisation nécessaire pour l’exportation de semi-conducteurs américains en Indonésie, en Malaisie, en Thaïlande, au Brésil et à Singapour.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/16/nvidia-les-etats-unis-cherchent-a-bloquer-l-acces-de-la-chine-aux-puces-americaines-par-le-biais-de-pays-tiers_6812260_3210.html",
-   "at": "2026-11-16T18:30:08+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, débat de la présidentielle 2027 sur LCI : baisse de la CSG, de la TVA, blocage des marges, taxation des méga héritages… les cinq candidats confrontent leurs mesures sur le pouvoir d’achat et la précarité",
-   "desc": "Gabriel Attal, Raphaël Glucksmann, Marine Le Pen, Jean-Luc Mélenchon et Bruno Retailleau débattent depuis 20 h 20 sur TF1 puis LCI. « Financement magique », « foire aux taxes », « cadeaux fiscaux aux plus riches »… Tous s’accusent notamment de ne pas financer leurs propositions.",
-   "url": "https://www.lemonde.fr/election-presidentielle-2027/live/2026/11/16/en-direct-presidentielle-2027-suivez-dans-notre-live-le-debat-entre-gabriel-attal-raphael-glucksmann-marine-le-pen-jean-luc-melenchon-et-bruno-retailleau-sur-la-vie-chere_6811633_6205049.html",
-   "at": "2026-11-16T18:05:33+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "\"On a massacré son innocence\" : au procès de \"la petite martyre de l'A10\", vingt ans et quatorze ans de prison requis contre la mère et le père d'Inass Touloub",
    "desc": "Halima El Bakhti et Ahmed Touloub sont jugés depuis deux semaines devant la cour d'assises du Loir-et-Cher, respectivement pour \"actes de torture et de barbarie ayant entraîné la mort sans intention de la donner\" et \"complicité\" de ces mêmes faits.",
@@ -129,18 +255,11 @@
    "at": "2026-11-16T18:02:31+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le renoncement de Gérard Depardieu à son procès en appel est \"un mélange de frustration et de soulagement\", selon l'avocate d'une des deux victimes de l'acteur",
-   "desc": "L'acteur \"n'est pas condamné pour grivoiserie et provocation, mais pour agression sexuelle\", rappelle Maître Michelin, alors que ce dernier a indiqué dans le communiqué où il présente ses excuses qu'il s'était \"longtemps caché derrière la provocation et la grivoiserie\".",
-   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/le-renoncement-de-gerard-depardieu-a-son-proces-en-appel-est-un-melange-de-frustration-et-de-soulagement-selon-l-avocate-d-une-des-deux-victimes-de-l-acteur_8285288.html",
-   "at": "2026-11-16T18:02:25+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "« J’ai piqué ma fourchette dans la nappe, j’ai senti mon visage se déformer et je lui ai déblatéré toute ma haine » : le jour où la colère les a submergés",
    "desc": "« Nos émotions : la colère ». Qui n’a jamais hurlé d’exaspération sur ses enfants ou jeté un objet au milieu d’une dispute ? Si la société est dans un état de « colère endémique », chaque individu a aussi en lui une part de fureur qui s’exprime parfois de manière incontrôlable. Des moments qui marquent et, parfois, libèrent.",
    "url": "https://www.lemonde.fr/intimites/article/2026/11/16/j-ai-pique-ma-fourchette-dans-la-nappe-j-ai-senti-mon-visage-se-deformer-et-je-lui-ai-deblatere-toute-ma-haine-le-jour-ou-la-colere-les-a-submerges_6812233_6190330.html",
-   "at": "2026-11-16T18:00:08+00:00"
+   "at": "2026-11-16T18:00:06+00:00"
   },
   {
    "source": "France 24",
@@ -158,24 +277,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Un garçon de 16 ans poignardé en Gironde, son pronostic vital engagé",
-   "desc": "D'après la gendarmerie, une altercation à l'arme blanche a éclaté entre deux personnes à La Réole, lundi, vers 10h30.",
-   "url": "https://www.franceinfo.fr/faits-divers/un-garcon-de-16-ans-poignarde-pres-de-bordeaux-l-adolescent-en-urgence-absolue_8284967.html",
-   "at": "2026-11-16T17:54:19+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Comment le Premier ministre espagnol Pedro Sanchez, affaibli sur la scène intérieure, a su faire de la politique étrangère un point fort",
    "desc": "Le dirigeant socialiste s'est imposé comme une voix progressiste, notamment sur la question palestinienne et le multilatéralisme. Mais ses positions lui valent un isolement croissant au sein de l'UE et vis-à-vis des Etats-Unis, et n'effacent pas ses difficultés à l'approche des législatives, analyse le média public espagnol RTVE dans cet article.",
    "url": "https://www.franceinfo.fr/monde/espagne/comment-le-premier-ministre-espagnol-pedro-sanchez-affaibli-sur-la-scene-interieure-a-su-faire-de-la-politique-etrangere-un-point-fort_8284973.html",
    "at": "2026-11-16T17:46:17+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Crise sociale : un recours de l'Unef examiné après l'interdiction de rassemblements et cortèges près de lycées et d'universités en région parisienne",
-   "desc": "Des rassemblements et cortèges non déclarés sont interdits \"dans un rayon de 100 mètres autour de certains lycées et établissements d'enseignement supérieur\" de la région, a annoncé la préfecture de police de Paris dimanche.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mouvement-lyceen-le-lycee-nelson-mandela-rouvre-ses-portes-a-nantes-six-semaines-apres-l-incendie-dont-il-a-ete-victime_8284130.html",
-   "at": "2026-11-16T17:45:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -214,52 +319,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Procès de l'assassinat du frère d'Amine Kessaci : deux figures du narcobanditisme marseillais condamnées à la perpétuité",
-   "desc": "Brahim Chabane, demi-frère du militant engagé contre le narcotrafic Amine Kessaci, est l'une des victimes d'un triple homicide à Marseille en décembre 2020.",
-   "url": "https://www.franceinfo.fr/faits-divers/justice-proces/proces-de-l-assassinat-du-frere-d-amine-kessaci-deux-figures-du-narcobanditisme-marseillais-condamnees-a-la-perpetuite_8285081.html",
-   "at": "2026-11-16T17:13:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Cyberattaques : pourquoi la France est-elle autant ciblée par les pirates informatiques ?",
-   "desc": "L'attaque contre Maileva, filiale de La Poste, est l'une des cyberattaques les plus importantes en France. Après les réfrigérateurs de supermarchés ou encore le Crédit Mutuel Arkéa, la semaine dernière, comment la France peut-elle se prémunir contre ces piratages potentiellement liés au grand banditisme ?",
-   "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaques-pourquoi-la-france-est-elle-autant-ciblee-par-les-pirates-informatiques_8284895.html",
-   "at": "2026-11-16T17:00:26+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : à Metz, à Nice ou en Ariège, LFI et ses réunions publiques à la conquête des territoires",
-   "desc": "L’organisation de nombreux échanges animés par les cadres de La France insoumise lui permet de multiplier les démonstrations de force pour s’imposer à gauche, de mailler le territoire et de consolider toujours plus sa base électorale. Très tôt dans la campagne, le parti mobilise ainsi fortement ses sympathisants et électeurs.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/16/presidentielle-2027-a-metz-a-nice-ou-en-ariege-lfi-et-ses-reunions-publiques-a-la-conquete-des-territoires_6812171_823448.html",
-   "at": "2026-11-16T16:30:00+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On les abandonne\" : des centaines de réfugiés afghans bloqués au Pakistan malgré une promesse d'accueil de l'Allemagne",
-   "desc": "Des organisations humanitaires - composés de militants des droits humains, de journalistes, d'acteurs culturels - s'insurgent contre l'arrêt envisagé des programmes d'accueil pour les Afghans en Allemagne. Certains exilés ont déjà tout quitté parce qu'ils avaient la promesse d'être accueillis.",
-   "url": "https://www.franceinfo.fr/societe/immigration/on-les-abandonne-des-centaines-d-afghanistan-bloques-au-pakistan-malgre-une-promesse-d-accueil-de-l-allemagne_8284925.html",
-   "at": "2026-11-16T16:17:20+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "À Saint-Etienne, deux élèves et la proviseure d'un lycée légèrement blessés en marge de la mobilisation lycéenne, les suspects arrêtés",
    "desc": "Les trois victimes ont été blessées par des tirs de mortiers d'artifice, les suspects \"ont été formellement identifiés par les personnels de l'établissement\", annonce la préfecture de la Loire.",
    "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/a-saint-etienne-deux-eleves-et-la-proviseure-d-un-lycee-legerement-blesses-en-marge-de-la-mobilisation-lyceenne-les-suspects-arretes_8285009.html",
    "at": "2026-11-16T16:13:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Si l'acquéreur ne trouve pas de financement, c'est lui qui a le vrai prix\" : à Rennes, des vendeurs doivent réduire leurs exigences face aux difficultés d'accès au crédit immobilier",
-   "desc": "Comment relancer durablement le marché de l'immobilier ? C'est tout l'enjeu du projet de loi examiné à partir de lundi à l'Assemblée nationale, qui prévoit notamment d'assouplir les règles pour construire et louer davantage. En attendant, la chute des prix s'accélère, en raison de la hausse des taux d'emprunts, comme à Rennes (Ille-et-Vilaine).",
-   "url": "https://www.franceinfo.fr/economie/immobilier/prix-immobilier/la-hausse-des-taux-aujourd-hui-c-est-le-critere-principal-des-acquereurs-a-rennes-des-prix-de-vente-revus-a-la-baisse-face-aux-taux-d-emprunt-qui-grimpent-en-fleche_8284949.html",
-   "at": "2026-11-16T16:13:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Cinq pays dévoilent leur projet de \"hub de retour\" au Rwanda, pour des personnes migrantes expulsées de l'Union européenne",
-   "desc": "L'initiative, dénoncée par les défenseurs des droits humains, a été présentée lors d'une conférence de presse à Vienne (Autriche).",
-   "url": "https://www.franceinfo.fr/monde/europe/migrants/cinq-pays-devoilent-leur-projet-de-hub-de-retour-au-rwanda-pour-des-personnes-migrantes-expulsees-de-l-union-europeenne_8285039.html",
-   "at": "2026-11-16T16:08:24+00:00"
   },
   {
    "source": "France 24",
@@ -281,13 +344,6 @@
    "desc": "Gérard Depardieu a renoncé, lundi 16 novembre, à son procès en appel pour agressions sexuelles lors du tournage du film \"Les Volets verts\", présentant des \"excuses profondes et sincères\" aux plaignantes et rendant définitive sa peine de 18 mois de prison avec sursis. La fin d'une ère d'omerta pour les victimes qui restent perplexes : \"j'aurais aimé que les excuses arrivent plus tôt (...) ça aurait été mieux qu'il soit là\" déclare Amélie, une des deux victimes ayant remporté le procès.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261116-france-depardieu-condamn%C3%A9-pour-agressions-sexuelles-les-victimes-soulag%C3%A9es-mais-perplexes",
    "at": "2026-11-16T15:55:12+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Cyberattaque contre des réfrigérateurs de supermarché : le jour où la France a dénoncé l’Iran",
-   "desc": "Dans la nuit du 11 au 12 octobre, une attaque informatique attribuée à la République islamique a visé les systèmes de réfrigération de 700 supermarchés. Si Paris n’est guère coutumier de la stratégie du « name and shame », la dénonciation publique, la gravité de l’agression a justifié un changement de posture.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/16/cyberattaque-contre-des-refrigerateurs-de-supermarches-le-jour-ou-la-france-a-denonce-l-iran_6812161_3210.html",
-   "at": "2026-11-16T15:50:19+00:00"
   },
   {
    "source": "franceinfo",
@@ -319,24 +375,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"La République, ce n'est pas l'impunité\", déclare le ministre de l'Education, Edouard Geffray, pour la réouverture du lycée Nelson-Mandela à Nantes",
-   "desc": "L'établissement avait été en partie incendié lors d'un blocage. L'arrivée du ministre sur place, lundi matin, a été marquée par des huées.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/la-republique-ce-n-est-pas-l-impunite-declare-le-ministre-de-l-education-nationale-edouard-geffray-lors-de-la-reouverture-du-lycee-nelson-mandela-a-nantes_8284928.html",
-   "at": "2026-11-16T15:03:39+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Un quart des Français adhèrent encore à des préjugés antisémites, alerte une étude",
    "desc": "Selon un sondage de l'Ifop et de la Fondapol pour l'American Jewish Committee, paru lundi, 24% des Français pensent que les juifs ont \"trop de pouvoir dans le domaine des médias\" ou \"dans le domaine de l'économie et de la finance\". Des niveaux comparables à ceux d'il y a douze ans.",
    "url": "https://www.franceinfo.fr/societe/antisemitisme/un-quart-des-francais-adhere-encore-a-des-prejuges-antisemites-alerte-une-etude_8284583.html",
    "at": "2026-11-16T14:33:47+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Anouk Grinberg affirme que \"le plus important, c'est qu'un homme, enfin, reconnaisse le mal qu'il a fait\", au moment où Gérard Depardieu renonce à son procès en appel",
-   "desc": "Avec son désistement dans l'affaire des agressions sexuelles commises sur deux femmes lors du tournage du film \"Les Volets verts\" en 2021, la condamnation à 18 mois de prison avec sursis, prononcée en mai 2025 est désormais définitive pour le comédien français.",
-   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/anouk-grinberg-affirme-que-le-plus-important-c-est-qu-un-homme-enfin-reconnaisse-le-mal-qu-il-a-fait-au-moment-ou-gerard-depardieu-renonce-a-son-proces-en-appel_8284964.html",
-   "at": "2026-11-16T14:25:02+00:00"
   },
   {
    "source": "France 24",
@@ -374,6 +416,13 @@
    "at": "2026-11-16T10:32:27+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "\"Petite martyre de l'A10\" : les frères et sœurs d'Inass Touloub demandent à une association de lutte contre les violences faites aux enfants de ne plus utiliser les photos de la petite fille",
+   "desc": "Mouv'Enfants a annoncé avoir été mis en demeure par les frères et sœurs d'Inass Touloub, connue comme \"la petite martyre de l'A10\". Le courrier exige la suppression des publications de l'association de l'image de la petite fille mutilée, laissée morte sur le bord de l'autoroute. Alors même que le procès des parents de la petite fille est en cours, 39 ans après les faits.",
+   "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loir-cher/blois/petite-martyre-de-l-a10-les-freres-et-s-urs-d-inass-touloub-demandent-a-une-association-de-lutte-contre-les-violences-faites-aux-enfants-de-ne-plus-utiliser-les-photos-de-la-petite-fille-3450105.html",
+   "at": "2026-11-16T10:15:30+00:00"
+  },
+  {
    "source": "France 24",
    "title": "Depardieu se désiste de son procès en appel pour agressions sexuelles et présente ses \"excuses\"",
    "desc": "Dans un communiqué intitulé \"J'entends\" et publié lundi, Gérard Depardieu a annoncé \"assumer\" sa condamnation à 18 mois de prison avec sursis prononcée en mai 2025 pour deux agressions sexuelles commises sur le tournage d'un film. L'acteur présente également des \"excuses, profondes et sincères\", à celles et ceux qui ont \"pu en souffrir\".",
@@ -386,13 +435,6 @@
    "desc": "L'élection du secrétaire général de l'Organisation internationale de la Francophonie a été reportée d'un an lundi à Phnom Penh, au Cambodge. Après deux mandats de Louise Mushikiwabo, la République démocratique du Congo, qui accuse le Rwanda de soutenir le groupe armé rebelle du M23 dans ses provinces de l'Est, s'opposait à une reconduction de la Rwandaise à la tête de l'OIF. Emmanuel Macron a salué un \"compromis\" à l'issue du vote.",
    "url": "https://www.france24.com/fr/france/20261116-francophonie-oif-vote-%C3%A9lection-secr%C3%A9taire-g%C3%A9n%C3%A9ral-louise-mushikiwabo-rwanda-rd-congo-juliana-lumumba-dacian-ciolos-coumba-ba",
    "at": "2026-11-16T07:01:33+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Salomé Saqué, essayiste : « Il est temps de faire des douleurs des femmes un enjeu politique qui concerne aussi les hommes »",
-   "desc": "La journaliste souffre depuis l’adolescence de plusieurs maladies féminines, dont l’endométriose. Elle évoque, dans un entretien au « Monde », les inégalités subies par les femmes en matière de recherche et de traitements médicaux, auxquelles elle consacre une enquête.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/16/salome-saque-essayiste-il-est-temps-de-faire-des-douleurs-des-femmes-un-enjeu-politique-qui-concerne-aussi-les-hommes_6811435_3232.html",
-   "at": "2026-11-16T05:30:03+00:00"
   }
  ]
 }

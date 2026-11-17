@@ -257,6 +257,10 @@ def one_quote(yf, sym, name, key):
     item.update(spark=[num(c, 5) for c in sp], sparkFrom=dates[-len(sp)], hi=num(max(sp)), lo=num(min(sp)))
     day = intraday(t)
     if day:
+        # l'ultima barra da cinque minuti può arrivare prima della chiusura ufficiale: la linea finisce sull'ultimo prezzo
+        if at and day["intraA"] < at and day["intra"][-1] != item["last"]:
+            day["intra"].append(item["last"])
+            day["intraA"] = at
         item.update(day)
     return item
 

@@ -1,0 +1,36 @@
+{
+  "title": "Stati Uniti: guasti ai conti online delle grandi banche e ai sistemi di United",
+  "section": "tecnologia",
+  "rank": 20,
+  "status": "live",
+  "summary": "Lunedì migliaia di clienti di JPMorgan Chase, Wells Fargo, Bank of America e U.S. Bank non hanno potuto accedere ai conti online per ore. United Airlines ha segnalato un guasto separato ai suoi sistemi.",
+  "article": "Lunedì 16 novembre migliaia di clienti di diverse grandi banche americane non hanno potuto accedere ai conti online né usare servizi di pagamento per alcune ore, riporta Il Post. L'Ansa cita Chase, Bank of America, Wells Fargo e U.S. Bank, con migliaia di segnalazioni su Downdetector e problemi di accesso da web e app e nei trasferimenti di denaro.\n\nJPMorgan Chase, la maggiore banca del paese e la più colpita, ha parlato di un errore di software e di un «problema temporaneo», non sistemico, che potrebbe aver toccato anche altre banche, scrive Il Post. La banca dice di non avere prove di un attacco informatico, senza dare altri dettagli. L'Ansa riferisce che Chase aveva confermato un «problema tecnico» alle piattaforme di banking online. Secondo Il Post i sistemi funzionavano di nuovo in serata; l'Ansa, nel suo primo testo delle 19:55, non indicava i tempi di ripristino.\n\nNella stessa giornata United Airlines ha segnalato un'interruzione nei sistemi che ha trattenuto per ore i voli in partenza, riporta l'Ansa, e la compagnia si è scusata con i clienti. Il Post ricorda che tra venerdì e sabato un blocco aveva fermato il traffico aereo americano per quattro ore, con migliaia di voli cancellati o in ritardo, e che un guasto di Microsoft è durato oltre 24 ore in più di 70 paesi. Le fonti lette non collegano gli episodi tra loro.",
+  "facts": [
+    {"text": "Lunedì migliaia di clienti di Chase, Bank of America, Wells Fargo e U.S. Bank non hanno potuto accedere ai conti online.", "who": ["Il Post", "ANSA"]},
+    {"text": "JPMorgan parla di un errore di software e di un problema temporaneo, e dice di non avere prove di un attacco informatico.", "who": ["Il Post"]},
+    {"text": "I sistemi funzionavano di nuovo in serata, secondo Il Post.", "who": ["Il Post"]},
+    {"text": "United Airlines ha segnalato un'interruzione dei sistemi che ha ritardato i voli in partenza.", "who": ["ANSA", "Il Post"]}
+  ],
+  "view": "È certo che i servizi sono stati interrotti per ore; la causa indicata da JPMorgan, un errore di software, non è verificata da altre fonti e le fonti non collegano i guasti tra loro.\n\nConta perché in pochi giorni si sono fermati aviazione, software Microsoft e banche. Da guardare: le spiegazioni ufficiali delle altre banche e di United e un'eventuale indagine delle autorità.",
+  "open": [
+    "Quale errore ha causato il guasto di JPMorgan e delle altre banche?",
+    "I guasti dei giorni scorsi sono collegati?",
+    "Quanti clienti sono stati colpiti in tutto?"
+  ],
+  "sources": [
+    {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/16/banche-stati-uniti-problemi/", "angle": "Dichiarazione di JPMorgan, ripristino in serata, guasti dei giorni precedenti.", "at": "2026-11-16T20:30:00+01:00"},
+    {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/problemi-daccesso-e-disservizi-per-le-principali-banche-usa_da63146e-df26-4601-aa07-4a9cc3e6f6cd.html", "angle": "Banche coinvolte, segnalazioni su Downdetector, problema tecnico di Chase.", "at": "2026-11-16T19:55:00+01:00"}
+  ],
+  "firstSeen": "2026-11-17T07:26:00+01:00",
+  "updated": "2026-11-17T07:26:00+01:00",
+  "change": "",
+  "tags": ["Banche", "Cybersicurezza", "Stati Uniti"],
+  "themes": [],
+  "places": ["US"],
+  "photo": {"wiki": "it", "title": "New York"},
+  "history": [
+    {"at": "2026-11-17T07:26:00+01:00", "text": "Prima notizia: guasto ai conti online delle grandi banche Usa e ai sistemi di United."}
+  ],
+  "divergences": [],
+  "notCovered": []
+}

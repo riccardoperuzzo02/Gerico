@@ -1,234 +1,71 @@
 {
- "asOf": "2026-11-16T18:46:49+01:00",
+ "asOf": "2026-11-17T07:26:00+01:00",
+ "label": "Chiusure di ieri e Asia stamattina",
+ "summary": "Wall Street ha chiuso lunedì in forte calo, con il Nasdaq a meno 2,5% e Nvidia a meno 4,1%. Stamattina l'Asia scende: Tokyo meno 1,45%, Seul meno 1,93%.",
  "classes": [
   {
-   "items": [
-    {
-     "chg": -2.04,
-     "name": "Nikkei 225",
-     "note": "Seduta del 16 novembre (CNBC)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "n.d.",
-     "why": "Il Pil giapponese del terzo trimestre si è contratto contro le attese e i titoli dei chip sono in forte calo, secondo CNBC."
-    },
-    {
-     "chg": -3.48,
-     "name": "Kospi",
-     "note": "Seduta del 16 novembre (CNBC)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "n.d.",
-     "why": "Vendite sui chip: SK Hynix oltre -5,6%, secondo CNBC."
-    },
-    {
-     "chg": 0.84,
-     "name": "Hang Seng",
-     "note": "Mattina del 16 novembre, in corso di seduta (Teleborsa)",
-     "value": "n.d.",
-     "why": ""
-    },
-    {
-     "chg": -0.65,
-     "name": "Ftse Mib",
-     "note": "Chiusura del 16 novembre, ore 17:37 (Ansa)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "51.520",
-     "why": "Milano chiude in calo, con Technoprobe e Stellantis tra i titoli più deboli, secondo l'Ansa."
-    },
-    {
-     "chg": -0.6,
-     "name": "Dax",
-     "note": "Chiusura del 16 novembre (Ansa)",
-     "value": "n.d.",
-     "why": "Francoforte tra le piazze più deboli d'Europa."
-    },
-    {
-     "chg": -0.2,
-     "name": "Cac 40",
-     "note": "Chiusura del 16 novembre (Ansa)",
-     "value": "n.d.",
-     "why": ""
-    },
-    {
-     "chg": -0.2,
-     "name": "Ftse 100",
-     "note": "Chiusura del 16 novembre (Ansa)",
-     "value": "n.d.",
-     "why": "Chiusura in lieve ribasso."
-    },
-    {
-     "chg": -0.45,
-     "name": "S&P 500",
-     "note": "Chiusura del 13 novembre (Open); future in calo di 0,37% stamattina (CNBC)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "n.d.",
-     "why": "Vendite sui titoli tecnologici, Nvidia e Microsoft, secondo Open."
-    },
-    {
-     "chg": -0.82,
-     "name": "Nasdaq",
-     "note": "Chiusura del 13 novembre (Open); future Nasdaq-100 in calo di 0,77% stamattina (CNBC)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "n.d.",
-     "why": "Calo di Microsoft dopo il disservizio e di Nvidia, secondo Open."
-    },
-    {
-     "chg": 0.08,
-     "name": "Dow Jones",
-     "note": "Chiusura del 13 novembre (Open)",
-     "story": "2026-11-09-wall-street-ia-chip",
-     "value": "n.d.",
-     "why": ""
-    }
-   ],
    "key": "indici",
    "label": "Indici",
-   "note": "Europa: chiusure di lunedì 16 novembre. Wall Street: chiusura del 13 novembre. Asia: dati di stamattina."
+   "items": [
+    {"name": "Nikkei 225", "chg": -1.45, "value": "n.d.", "note": "Seduta del 17 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "why": "Scivolano i titoli legati ai chip dopo il calo di Wall Street."},
+    {"name": "Kospi", "chg": -1.93, "value": "n.d.", "note": "Seduta del 17 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "why": ""},
+    {"name": "Hang Seng", "chg": -0.77, "value": "n.d.", "note": "Seduta del 17 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "why": ""},
+    {"name": "Ftse Mib", "chg": -0.65, "value": "51.520", "note": "Chiusura del 16 novembre (Ansa)", "story": "2026-11-09-wall-street-ia-chip", "why": "Technoprobe e Stellantis tra i titoli più deboli, secondo l'Ansa."},
+    {"name": "Dax", "chg": -0.6, "value": "n.d.", "note": "Chiusura del 16 novembre (Ansa)", "why": ""},
+    {"name": "Cac 40", "chg": -0.2, "value": "n.d.", "note": "Chiusura del 16 novembre (Ansa)", "why": ""},
+    {"name": "Ftse 100", "chg": -0.2, "value": "n.d.", "note": "Chiusura del 16 novembre (Ansa)", "why": ""},
+    {"name": "S&P 500", "chg": -1.92, "value": "n.d.", "note": "Chiusura del 16 novembre (Al Jazeera; CNBC: -1,9%)", "story": "2026-11-09-wall-street-ia-chip", "why": "Vendite sui titoli dell'intelligenza artificiale, Nvidia in testa, secondo CNBC."},
+    {"name": "Nasdaq", "chg": -2.49, "value": "n.d.", "note": "Chiusura del 16 novembre (Al Jazeera; CNBC: -2,5%)", "story": "2026-11-09-wall-street-ia-chip", "why": "Peggior seduta dal 5 novembre, secondo CNBC."},
+    {"name": "Dow Jones", "chg": -1.4, "value": "n.d.", "note": "Chiusura del 16 novembre (CNBC), oltre 700 punti", "story": "2026-11-09-wall-street-ia-chip", "why": ""}
+   ],
+   "note": "Wall Street e Europa: chiusure di lunedì 16 novembre. Asia: sedute di stamattina."
   },
   {
-   "items": [
-    {
-     "chg": -2.6,
-     "name": "Nvidia",
-     "note": "Chiusura del 13 novembre, circa (Open); -13% in settimana (CNBC)",
-     "story": "2026-11-11-nvidia-huang-cina",
-     "value": "n.d.",
-     "why": "Dopo le dimissioni dell'amministratore delegato Jensen Huang; conti martedì dopo la chiusura di Wall Street."
-    },
-    {
-     "chg": -1.48,
-     "name": "Microsoft",
-     "note": "Chiusura del 13 novembre (Open)",
-     "value": "515,27 $",
-     "why": "Disservizio di Outlook e Teams."
-    },
-    {
-     "chg": 1.6,
-     "name": "Eni",
-     "note": "13 novembre (Open)",
-     "value": "n.d.",
-     "why": "Con il rialzo del petrolio, secondo Open."
-    }
-   ],
    "key": "azioni",
    "label": "Azioni",
+   "items": [
+    {"name": "Nvidia", "chg": -4.1, "value": "n.d.", "note": "Chiusura del 16 novembre (CNBC)", "story": "2026-11-11-nvidia-huang-cina", "why": "Dopo le dimissioni dell'amministratore delegato Huang; i conti escono martedì dopo la chiusura di Wall Street."}
+   ],
    "note": ""
   },
   {
-   "items": [
-    {
-     "name": "Spread Btp-Bund",
-     "note": "Chiusura del 16 novembre, ore 18:01, in rialzo (Ansa)",
-     "value": "106 bp",
-     "why": ""
-    }
-   ],
    "key": "obbligazioni",
    "label": "Titoli di Stato",
+   "items": [
+    {"name": "Spread Btp-Bund", "value": "106 bp", "note": "Chiusura del 16 novembre, in rialzo (Ansa)", "why": ""}
+   ],
    "note": "Treasury, Bund e Btp non riportati nelle fonti datate di oggi"
   },
   {
-   "items": [
-    {
-     "name": "USD/JPY",
-     "note": "13 novembre (CNBC)",
-     "value": "oltre 160",
-     "why": "Il ministro delle Finanze giapponese avverte di un possibile intervento, secondo CNBC."
-    }
-   ],
    "key": "valute",
    "label": "Valute",
-   "note": "Altri cambi senza dato verificato di oggi"
+   "items": [],
+   "note": "Nessun dato verificato in questo aggiornamento"
   },
   {
-   "items": [
-    {
-     "name": "Brent",
-     "note": "13 novembre (Open); giovedì chiusura a 95,82 $ (CNBC)",
-     "story": "2026-10-07-hormuz-on-peace",
-     "value": "96,93 $",
-     "why": "Tensioni legate all'Iran, secondo Open; stamattina arriva una terza portaerei Usa nell'area."
-    },
-    {
-     "name": "Wti",
-     "note": "13 novembre (Open)",
-     "value": "89,52 $",
-     "why": ""
-    },
-    {
-     "chg": -7,
-     "name": "Gas Ttf",
-     "note": "Ore 18:12 del 16 novembre (Ansa)",
-     "value": "sotto 84 €/MWh",
-     "why": "Forte calo rispetto a venerdì, quando era a 89 euro."
-    },
-    {
-     "chg": -1.4,
-     "name": "Oro",
-     "note": "Ore 11:27 del 13 novembre (Ansa)",
-     "value": "3.898 $",
-     "why": ""
-    }
-   ],
    "key": "materie",
    "label": "Materie prime",
-   "note": "Dati di venerdì 13 novembre: nessun dato datato di oggi."
+   "items": [
+    {"name": "Gas Ttf", "chg": -7, "value": "sotto 84 €/MWh", "note": "Ore 18:12 del 16 novembre (Ansa)", "why": "Forte calo rispetto a venerdì, quando era a 89 euro."}
+   ],
+   "note": "Brent, Wti e oro senza dato verificato di ieri sera"
   },
   {
-   "items": [
-    {
-     "name": "Bitcoin",
-     "note": "15 novembre, ore 9:40 (Ansa)",
-     "value": "circa 62.000 $",
-     "why": "Minimi da quattro mesi; il 13 novembre era sceso sotto i 70.000 dollari per la prima volta da agosto."
-    }
-   ],
    "key": "cripto",
    "label": "Cripto",
+   "items": [
+    {"name": "Bitcoin", "value": "circa 62.000 $", "note": "15 novembre (Ansa)", "why": "Minimi da quattro mesi."}
+   ],
    "note": "Ether senza dato verificato"
   }
  ],
- "label": "Chiusura delle Borse europee",
  "sources": [
-  {
-   "name": "ANSA, Borsa: l'Europa conclude in lieve ribasso, Londra -0,2% (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_276559ab-82ca-4957-8fcf-940b004727b6.html"
-  },
-  {
-   "name": "ANSA, Borsa: Milano chiude in calo, Ftse Mib -0,65% (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-milano-chiude-in-calo-ftse-mib-065_520bf599-a2c6-48a3-a1c8-658b018e7e39.html"
-  },
-  {
-   "name": "ANSA, spread Btp-Bund a 106 punti base (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/lo-spread-tra-btp-e-bund-chiude-in-rialzo-a-106-punti-base_c36c80c7-844f-4e45-aae7-01287c0faa98.html"
-  },
-  {
-   "name": "ANSA, gas in forte calo sotto gli 84 euro (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/il-gas-in-forte-calo-7-sotto-gli-84-euro-al-megawattora_4f124b1f-bd5c-4f44-a96a-90f7cb393ff0.html"
-  },
-  {
-   "name": "CNBC, Stock market today (16 novembre)",
-   "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"
-  },
-  {
-   "name": "Teleborsa, agenda del 16 novembre (Asia)",
-   "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-16-novembre-2026-1_2026-11-16_TLB-BIT.html"
-  },
-  {
-   "name": "ANSA, bitcoin a 62.000 dollari (15 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/15/bitcoin-scende-a-62.000-dollari-tocca-i-minimi-da-4-mesi_29642167-4c39-40cf-9461-942d78d582a3.html"
-  },
-  {
-   "name": "ANSA, Borsa: Milano chiude in lieve rialzo, Ftse Mib +0,1% (13 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/borsa-milano-chiude-in-lieve-rialzo-ftse-mib-01_94c30a0d-7a2b-4bfe-8697-65720fa90fb3.html"
-  },
-  {
-   "name": "ANSA, spread Btp-Bund (13 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/13/lo-spread-tra-btp-e-bund-chiude-poco-mosso-a-104-punti-base_afb5e3a1-e8bb-4da9-b684-bbb34a0424ba.html"
-  },
-  {
-   "name": "Open, Borse, blackout Microsoft e Nvidia (13 novembre)",
-   "url": "https://www.open.online/2026/11/13/borse-blackout-microsoft-nvidia-nasdaq-wall-street/"
-  }
- ],
- "summary": "Le Borse europee chiudono la seduta in lieve ribasso: Milano -0,65% a 51.520 punti, Francoforte -0,6%, Parigi e Londra -0,2%. Lo spread Btp-Bund sale a 106 punti base e il gas cala del 7%, sotto gli 84 euro al megawattora."
+  {"name": "CNBC, Stock market today (16 novembre)", "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"},
+  {"name": "Al Jazeera, chip Usa e Borse asiatiche (17 novembre)", "url": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"},
+  {"name": "ANSA, Borsa: l'Europa conclude in lieve ribasso, Londra -0,2% (16 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_2b274cd5-9ff3-42a2-975d-d07294bb9176.html"},
+  {"name": "ANSA, Milano chiude in calo, Ftse Mib -0,65% (16 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/borsa-milano-chiude-in-calo-ftse-mib-065_8e4c7e7d-14e7-4698-bc96-ef321ef7700b.html"},
+  {"name": "ANSA, spread Btp-Bund a 106 punti base (16 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/lo-spread-tra-btp-e-bund-chiude-in-rialzo-a-106-punti-base_46797eb2-5c3f-423a-a2f8-efc9dcf9619a.html"},
+  {"name": "ANSA, gas in forte calo sotto gli 84 euro (16 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/il-gas-in-forte-calo-7-sotto-gli-84-euro-al-megawattora_95855878-4fef-4866-b620-8a0c0baba7c2.html"},
+  {"name": "ANSA, bitcoin a 62.000 dollari (15 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/criptovalute/2026/11/15/bitcoin-scende-a-62.000-dollari-tocca-i-minimi-da-4-mesi_cd0f101b-7573-4d8b-9bd7-6713995391f2.html"}
+ ]
 }

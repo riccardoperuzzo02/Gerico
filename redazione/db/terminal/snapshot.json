@@ -1,80 +1,18 @@
 {
- "asOf": "2026-11-16T18:46:49+01:00",
+ "asOf": "2026-11-17T07:26:00+01:00",
+ "label": "Chiusure di ieri e Asia stamattina",
  "indices": [
-  {
-   "chg": -0.45,
-   "code": "USA",
-   "index": "S&P 500",
-   "note": "Chiusura del 13 novembre (Open)",
-   "story": "2026-11-09-wall-street-ia-chip",
-   "time": "22:00"
-  },
-  {
-   "chg": -2.04,
-   "code": "JPN",
-   "index": "Nikkei 225",
-   "note": "Seduta del 16 novembre (CNBC)",
-   "story": "2026-11-09-wall-street-ia-chip",
-   "time": ""
-  },
-  {
-   "chg": -3.48,
-   "code": "KOR",
-   "index": "Kospi",
-   "note": "Seduta del 16 novembre (CNBC)",
-   "story": "2026-11-09-wall-street-ia-chip",
-   "time": ""
-  },
-  {
-   "chg": -0.65,
-   "code": "ITA",
-   "index": "FTSE MIB",
-   "note": "Chiusura del 16 novembre (Ansa)",
-   "story": "2026-11-09-wall-street-ia-chip",
-   "time": "17:37"
-  },
-  {
-   "chg": -0.6,
-   "code": "DEU",
-   "index": "DAX",
-   "note": "Chiusura del 16 novembre (Ansa)",
-   "story": "",
-   "time": "17:44"
-  },
-  {
-   "chg": -0.2,
-   "code": "FRA",
-   "index": "CAC 40",
-   "note": "Chiusura del 16 novembre (Ansa)",
-   "story": "",
-   "time": "17:44"
-  },
-  {
-   "chg": -0.2,
-   "code": "GBR",
-   "index": "FTSE 100",
-   "note": "Chiusura del 16 novembre (Ansa)",
-   "story": "",
-   "time": "17:44"
-  },
-  {
-   "chg": -0.6,
-   "code": "NLD",
-   "index": "AEX",
-   "note": "Chiusura del 16 novembre (Ansa)",
-   "story": "",
-   "time": "17:44"
-  }
+  {"chg": -1.92, "code": "USA", "index": "S&P 500", "note": "Chiusura del 16 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "time": "22:00"},
+  {"chg": -1.45, "code": "JPN", "index": "Nikkei 225", "note": "Seduta del 17 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "time": ""},
+  {"chg": -1.93, "code": "KOR", "index": "Kospi", "note": "Seduta del 17 novembre (Al Jazeera)", "story": "2026-11-09-wall-street-ia-chip", "time": ""},
+  {"chg": -0.65, "code": "ITA", "index": "FTSE MIB", "note": "Chiusura del 16 novembre (Ansa)", "story": "2026-11-09-wall-street-ia-chip", "time": "17:37"},
+  {"chg": -0.6, "code": "DEU", "index": "DAX", "note": "Chiusura del 16 novembre (Ansa)", "story": "", "time": "17:44"},
+  {"chg": -0.2, "code": "FRA", "index": "CAC 40", "note": "Chiusura del 16 novembre (Ansa)", "story": "", "time": "17:44"},
+  {"chg": -0.2, "code": "GBR", "index": "FTSE 100", "note": "Chiusura del 16 novembre (Ansa)", "story": "", "time": "17:44"},
+  {"chg": -0.6, "code": "NLD", "index": "AEX", "note": "Chiusura del 16 novembre (Ansa)", "story": "", "time": "17:44"}
  ],
- "label": "Chiusura delle Borse europee",
  "sources": [
-  {
-   "name": "ANSA, Borsa: l'Europa conclude in lieve ribasso, Londra -0,2% (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_276559ab-82ca-4957-8fcf-940b004727b6.html"
-  },
-  {
-   "name": "ANSA, Borsa: Milano chiude in calo, Ftse Mib -0,65% (16 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/16/borsa-milano-chiude-in-calo-ftse-mib-065_520bf599-a2c6-48a3-a1c8-658b018e7e39.html"
-  }
+  {"name": "Al Jazeera (17 novembre)", "url": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"},
+  {"name": "ANSA, Borsa: l'Europa conclude in lieve ribasso, Londra -0,2% (16 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_2b274cd5-9ff3-42a2-975d-d07294bb9176.html"}
  ]
 }

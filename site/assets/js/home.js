@@ -655,8 +655,7 @@ G.page("home", async function (P) {
     const when = au.source || au.asOf;
     $("ls-t").textContent = pl.title();
     // la durata sta già a destra (il tempo che manca): qui solo cosa c'è dentro e di quando è
-    // la voce è sintetica e il testo scritto con l'IA: lo si dice prima di premere «Ascolta» (AI Act, art. 50)
-    $("ls-s").textContent = G.L("Notizie e mercati delle ", au.lang === "en" ? "News and markets from " : "News and markets in Italian from ") + G.hm(when) + G.L(" · voce sintetica", " · synthetic voice");
+    $("ls-s").textContent = G.L("Notizie e mercati, con l'aggiornamento delle ", au.lang === "en" ? "News and markets, from the update at " : "News and markets in Italian, from the update at ") + G.hm(when);
     box.classList.remove("wait");
     btn.disabled = false;
     btn.addEventListener("click", () => pl.toggle());

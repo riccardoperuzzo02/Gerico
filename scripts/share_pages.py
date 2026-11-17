@@ -90,7 +90,7 @@ PAGINA = """<!doctype html>
 {altre}
 </main>
 <footer class="foot"><div class="wrap">
-<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale, voce sintetica</span></p>
 </div></footer>
 </body>
 </html>
@@ -131,7 +131,7 @@ LISTA = """<!doctype html>
 </div>
 </main>
 <footer class="foot"><div class="wrap">
-<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+<p class="foot-line"><a href="/">Prima pagina</a><a href="/archivio">Archivio</a><a href="/glossario">Glossario</a><a href="/come-funziona.html">Come funziona</a><a href="/privacy.html">Privacy</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale, voce sintetica</span></p>
 </div></footer>
 </body>
 </html>
@@ -507,7 +507,10 @@ def pagine_archivio(site, base, v, indice):
     return ["/archivio"] + indirizzi, temi
 
 
-BYLINE = '<p class="byline">A cura di <span class="by">R.P.</span><span class="sep" aria-hidden="true">·</span><span class="ia">Scritto con l\'intelligenza artificiale</span></p>'
+BYLINE = '<p class="byline">A cura di <span class="by">R.P.</span></p>'
+BYLINE_IA = '<p class="byline">A cura di <span class="by">R.P.</span><span class="sep" aria-hidden="true">·</span><span class="ia">Scritto con l\'intelligenza artificiale</span></p>'
+PIEDE_IA = "<span>Articoli scritti con l'intelligenza artificiale</span>"
+PIEDE = "<span>Articoli scritti con l'intelligenza artificiale, voce sintetica</span>"
 
 
 def ripara_foto(site, in_edizione, v=""):
@@ -527,8 +530,11 @@ def ripara_foto(site, in_edizione, v=""):
             t2 = re.sub(r'(https?://[^"\s]+)?/img/foto/[\w.-]+\.jpg(\?v=\w+)?', base + "/assets/img/og-gerico.png", t2)
         if v:
             t2 = re.sub(r'(/assets/css/gerico\.css)\?v=[\w-]+', lambda x: x.group(1) + v, t2)
-        # la firma dichiara che il testo è scritto con l'intelligenza artificiale (AI Act, art. 50), anche nelle pagine vecchie
-        t2 = t2.replace('<p class="byline">A cura di <span class="by">R.P.</span></p>', BYLINE, 1)
+        # la firma resta «A cura di R.P.»: che il testo è scritto con l'intelligenza artificiale lo dice il piede (anche nelle
+        # pagine vecchie)
+        t2 = t2.replace(BYLINE_IA, BYLINE, 1)
+        if PIEDE not in t2:
+            t2 = t2.replace(PIEDE_IA, PIEDE)
         if 'rel="manifest"' not in t2 and "noindex" not in t2:
             t2 = t2.replace('<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n',
                             '<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n<link rel="manifest" href="/manifest.webmanifest">\n', 1)

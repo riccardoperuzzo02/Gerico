@@ -1829,10 +1829,6 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 .c-by { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: var(--f8, 8px); font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
 .c-desk { font-weight: 650; color: var(--ink-3); }
 .c-cura { font-weight: 400; color: var(--muted); }
-/* «Scritto con l'intelligenza artificiale»: accanto alla firma, nello stesso grigio, dopo un puntino */
-.c-ia { font-weight: 400; color: var(--muted); }
-.c-ia::before { content: "·"; margin-right: 8px; }
-.byline .ia { color: var(--muted); }
 html.nuova .lead .c-by { margin-top: var(--f13); }
 /* apertura: l'immagine larga in cima alla scheda, da bordo a bordo */
 html.nuova .lead.has-img .media {

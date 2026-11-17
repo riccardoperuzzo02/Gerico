@@ -103,7 +103,7 @@
     "Il riepilogo di oggi": "Today's briefing", "Notizie e mercati, con l'aggiornamento di oggi": "News and markets, from today's update",
     "Mercati": "Markets", "Apri il Terminal": "Open the Terminal", "Gruppi di mercati": "Market groups", "Sezioni": "Sections", "Carico l'edizione…": "Loading the edition…",
     "Nessun consiglio di investimento": "Not investment advice", "Prima pagina": "Front page", "Condividi": "Share",
-    "Articoli scritti con l'intelligenza artificiale": "Articles written with artificial intelligence",
+    "Articoli scritti con l'intelligenza artificiale, voce sintetica": "Articles written with artificial intelligence, synthetic voice",
     "Carico la storia…": "Loading the story…", "Fonti e temi": "Sources and topics", "Sezioni del Terminal": "Terminal sections",
     "Mappa": "Map", "Indici": "Indices", "Valute": "Currencies", "Tassi": "Rates", "Materie prime": "Commodities", "Agenda": "Calendar",
     "Macro": "Macro", "Sentiment": "Sentiment", "Titoli": "Stocks", "Vai a": "Go to", "Vai": "Go",
@@ -401,15 +401,12 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  // la firma di tutti gli articoli: «A cura di R.P.», e accanto che il testo è scritto con l'intelligenza artificiale.
-  // AI Act, articolo 50, paragrafo 4 (dal 2 agosto 2026): i testi pubblicati per informare il pubblico e generati con l'IA
-  // si dichiarano in modo chiaro al più tardi quando si leggono, se nessuno li rivede prima. Il piede della pagina non
-  // basta: la dicitura sta nella firma di ogni articolo e nella prima notizia in prima pagina
+  // la firma di tutti gli articoli: «A cura di R.P.». Che sono scritti con l'intelligenza artificiale (e che la voce del
+  // riepilogo è sintetica) lo dice il piede di ogni pagina: scelta di Riccardo, niente dicitura nella firma
   G.FIRMA = "R.P.";
   G.CURA = G.L("A cura di", "Edited by");
-  G.IA = G.L("Scritto con l'intelligenza artificiale", "Written with artificial intelligence");
   G.desk = () => G.CURA + " " + G.FIRMA;
-  G.cardBy = () => '<p class="c-by"><span class="c-desk"><span class="c-cura">' + G.esc(G.CURA) + "</span> " + G.esc(G.FIRMA) + '</span><span class="c-ia">' + G.esc(G.IA) + "</span></p>";
+  G.cardBy = () => '<p class="c-by"><span class="c-desk"><span class="c-cura">' + G.esc(G.CURA) + "</span> " + G.esc(G.FIRMA) + "</span></p>";
   // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
   // Solo file del sito (img/storie/...): niente immagini da altri siti
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';

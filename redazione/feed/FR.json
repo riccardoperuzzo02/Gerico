@@ -1,18 +1,144 @@
 {
  "code": "FR",
- "asOf": "2026-11-17T09:17:38+00:00",
+ "asOf": "2026-11-17T11:17:38+00:00",
  "items": [
   {
+   "source": "Le Monde",
+   "title": "L’Etat poussé à revoir le financement des collectivités locales pour corriger les réformes Macron",
+   "desc": "Tandis que les départements éprouvent des difficultés à boucler leur budget, le Conseil des prélèvements obligatoires tire un bilan critique des réformes menées par Emmanuel Macron, dont l’emblématique suppression de la taxe d’habitation. Une nouvelle refonte du système est jugée inéluctable.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/17/l-etat-pousse-a-revoir-le-financement-des-collectivites-locales-pour-corriger-les-reformes-macron_6812961_823448.html",
+   "at": "2026-11-17T11:03:36+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Commission européenne resserre l’étau sur Temu, le géant chinois de l’e-commerce, pour non respect des normes de l’UE",
+   "desc": "La plateforme de vente en ligne distribue toujours, selon Bruxelles, des produits illégaux et dangereux, sans chercher à en limiter l’accès aux consommateurs.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/17/la-commission-europeenne-resserre-l-etau-sur-temu-le-geant-chinois-de-l-e-commerce-pour-non-respect-des-normes-de-l-ue_6812960_3234.html",
+   "at": "2026-11-17T11:00:06+00:00"
+  },
+  {
    "source": "franceinfo",
-   "title": "Manifestations du 17 novembre : le trafic des trains régionaux perturbé et des stations de métro fermées à partir de 11 heures à Paris",
+   "title": "Le maire de Limoges exprime \"un vrai soulagement\" d'avoir obtenu un financement par l'État pour reconstruire la mairie ravagée par un incendie",
+   "desc": "Un mois après l'incendie de l'édifice en marge en marge des manifestations du 17 octobre, Guillaume Guérin se satisfait de la participation de l'État à 80% pour la reconstruction. Les 20% restants seront à la charge \"des assurances, de la Fondation du patrimoine.\"",
+   "url": "https://www.franceinfo.fr/faits-divers/incendie/le-maire-de-limoges-exprime-un-vrai-soulagement-d-avoir-obtenu-un-financement-par-l-etat-pour-reconstruire-la-mairie-ravagee-par-un-incendie_8286374.html",
+   "at": "2026-11-17T10:48:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Volodymyr Zelensky salue une \"opération sans précédent\" après l'attaque ukrainienne contre le pont de Crimée",
+   "desc": "Dmitri Peskov, porte-parole du Kremkin, a déclaré que l'ouvrage sera réparé et qu'il \"sera encore mieux qu'avant\", après des frappes contre cette infrastructure-clé de la péninsule annexée.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/deux-ponts-de-kiev-sont-fermes-a-la-circulation-apres-des-attaques-russes-alors-que-de-son-cote-l-ukraine-cible-la-crimee_8286059.html",
+   "at": "2026-11-17T10:45:14+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Beaucoup de nuages s'accumulent à l'horizon\" avec l'inflation et l'élection présidentielle de 2027, alerte l'association des Restos du cœur",
+   "desc": "Yves Mérillon, le porte-parole des Restos du cœur estime que les dépenses de denrées et de logistique ont quasiment doublé en cinq ans. \"Il est évident qu'on ne pourra pas continuer comme ça\", prévient-il.",
+   "url": "https://www.franceinfo.fr/societe/pauvrete/beaucoup-de-nuages-s-accumulent-a-l-horizon-avec-l-inflation-et-l-election-presidentielle-de-2027-alerte-l-association-des-restos-du-c-ur_8286329.html",
+   "at": "2026-11-17T10:32:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La pétition contre CNews définitivement classée, mais l'Assemblée nationale va débattre du pluralisme dans les médias",
+   "desc": "Les instances du Palais-Bourbon ont voté pour qu'un débat se tienne sur la liberté d'expression, mais il ne portera pas seulement sur la chaîne d'information en continu du groupe Bolloré, spécifiquement visée par le texte qui a recueilli plus d'un million de signatures.",
+   "url": "https://www.franceinfo.fr/economie/medias/info-franceinfo-l-assemblee-nationale-va-debattre-du-pluralisme-dans-les-medias-meme-si-la-petition-contre-cnews-ne-sera-pas-examinee-dans-l-hemicycle_8286251.html",
+   "at": "2026-11-17T10:28:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Jean-Luc Mélenchon, candidat LFI à la présidentielle, va dîner avec des grands patrons français dont Bernard Arnault et Patrick Pouyanné",
+   "desc": "Le leader de La France insoumise répond à l'invitation d'une association patronale qui avait reçu Marine Le Pen au printemps.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/candidats/jean-luc-melenchon-candidat-a-la-presidentielle-va-diner-avec-des-grands-patrons-francais-dont-bernard-arnault-et-patrick-pouyanne_8286248.html",
+   "at": "2026-11-17T10:23:56+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Manuel Bompard dénonce les \"méthodes trumpistes\" et les \"accusations fallacieuses\" du gouvernement face à la mobilisation lycéenne",
+   "desc": "Des accusations visant la communauté éducative et la France insoumise, selon Manuel Bompard, coordinateur de LFI. Invité du 8h30 franceinfo, il répond notamment aux accusations de \"complicités\" lancées par le gouvernement.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/manuel-bompard-denonce-les-methodes-trumpistes-et-les-accusations-fallacieuses-du-gouvernement-face-a-la-mobilisation-lyceenne_8286122.html",
+   "at": "2026-11-17T10:14:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Fernando Alonso fera son retour sur le Dakar en 2027 chez Aston Martin",
+   "desc": "L'actuel pilote de Formule 1 a décidé de revenir au rallye-raid, sept ans après sa première participation. Le Français Sébastien Loeb sera aussi aligné sur le Dakar chez Aston Martin, tout comme le Brésilien Lucas Moraes, champion du monde en titre de rallye-raid.",
+   "url": "https://www.franceinfo.fr/dakar/fernando-alonso-fera-son-retour-sur-le-dakar-en-2027-chez-aston-martin_8224909.html",
+   "at": "2026-11-17T10:03:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Ce que l'on sait du \"hub de retour\" européen prévu au Rwanda pour expulser des étrangers déboutés du droit d'asile",
+   "desc": "Cinq pays de l'Union européenne ont annoncé l'ouverture de ce centre pour 2027. Les personnes migrantes expulsées de l'UE, d'abord des hommes célibataires, recevraient notamment un permis de séjour au Rwanda. Des ONG dénoncent \"un risque de violations graves des droits de l'homme\", et certains dirigeants européens, dont Emmanuel Macron, ont critiqué le projet.",
+   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/ce-que-l-on-sait-du-hub-de-retour-europeen-prevu-au-rwanda-pour-expulser-des-etrangers-deboutes-du-droit-d-asile_8286134.html",
+   "at": "2026-11-17T10:02:13+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Commission européenne confirme le décrochage de la France dans ses prévisions économiques d’automne",
+   "desc": "En 2026, la croissance de l’UE a mieux résisté que ne l’attendaient les experts de la Commission, sauf dans l’Hexagone, qui fait pâle figure. Quant à l’inflation, elle va continuer à grever le pouvoir d’achat dans toute l’UE en 2027.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/17/la-commission-europeenne-confirme-le-decrochage-de-la-france-dans-ses-previsions-economiques-d-automne_6812945_3234.html",
+   "at": "2026-11-17T10:00:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Prix des carburants : une baisse dans plus de 90 % des stations-service, selon Mathieu Lefèvre, ministre délégué à la transition écologique",
+   "desc": "Le gouvernement a commencé le 1ᵉʳ novembre à vendre à prix coûtant des barils de gazole issus des stocks stratégiques, une opération qui s’étalera pendant trois mois.",
+   "url": "https://www.lemonde.fr/economie-francaise/article/2026/11/17/carburant-une-baisse-du-prix-dans-plus-de-90-des-stations-service-selon-mathieu-lefevre_6812943_1656968.html",
+   "at": "2026-11-17T09:58:12+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Cinq adolescents de Gironde jugés pour violences aggravées et séquestration après avoir tendu un guet-apens à un autre jeune",
+   "desc": "En promettant une \"surprise\" à la victime, le jeune de 17 ans est emmené dans une cave où trois autres individus se trouvent. Il se trouve menacé avec une arme et frappé à plusieurs reprises pour l'obliger à retirer de l'argent dans un distributeur.",
+   "url": "https://www.franceinfo.fr/faits-divers/cinq-adolescents-de-gironde-juges-pour-violences-aggravees-et-sequestration-apres-avoir-tendu-un-guet-apens-a-un-autre-jeune_8286263.html",
+   "at": "2026-11-17T09:51:57+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La mise aux enchères d'un Van Gogh maintenue malgré la contestation d'héritiers du vendeur du tableau",
+   "desc": "Les ayants droit de l'ancien propriétaire assurent que la vente s'est faite en 1936 dans un climat de contrainte économique sous le régime nazi.",
+   "url": "https://www.franceinfo.fr/culture/arts-expos/peinture/la-mise-aux-encheres-d-un-van-gogh-maintenue-malgre-la-contestation-d-heritiers-du-vendeur-du-tableau_8286191.html",
+   "at": "2026-11-17T09:51:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il ne faut pas avoir de tabou\" sur l'expulsion de migrants vers des \"centres de retour\" au Rwanda, estime Benjamin Haddad, ministre chargé de l'Europe",
+   "desc": "Benjamin Haddad, ministre chargé de l'Europe, était l'invité des \"4 Vérités\", mardi. Il est revenu sur la création de centres au Rwanda où cinq pays de l'UE comptent expulser des personnes déboutées de leurs demandes d'asile, exprimant son ouverture à ce principe pourtant rejeté par Emmanuel Macron.",
+   "url": "https://www.franceinfo.fr/politique/marine-le-pen-a-toujours-ete-alignee-sur-les-positions-du-kremlin-estime-benjamin-haddad-ministre-charge-de-l-europe_8286116.html",
+   "at": "2026-11-17T09:43:47+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le pape Léon XIV rassure sur son état de santé, à l’issue de son périple latino-américain",
+   "desc": "Dans l’avion qui le ramenait d’Amérique latine, après un périple éprouvant d’une dizaine de jours entre l’Uruguay, l’Argentine et le Pérou, lundi 16 novembre, Léon XIV a parlé de son « endurance » mais a admis « ne pas être à 100 % ».",
+   "url": "https://www.lemonde.fr/international/article/2026/11/17/le-pape-leon-xiv-rassure-sur-son-etat-de-sante-a-l-issue-de-son-periple-latino-americain_6812936_3210.html",
+   "at": "2026-11-17T09:34:55+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, grève du 17 novembre | Interdiction d’une AG à Marseille, perturbations dans les transports parisiens… suivez la journée avec nos envoyés spéciaux partout en France",
+   "desc": "L’ensemble des organisations syndicales dans la fonction publique appellent à se mobiliser ce mardi pour exiger des augmentations immédiates de salaires. Nos correspondants sont sur place à Paris, Marseille, Lyon, Toulouse, en Bretagne et dans le Nord.",
+   "url": "https://www.lemonde.fr/politique/live/2026/11/17/en-direct-greve-du-17-novembre-suivez-la-journee-avec-nos-envoyes-speciaux-a-paris-marseille-lyon-toulouse-en-bretagne-et-dans-le-nord_6812905_823448.html",
+   "at": "2026-11-17T09:16:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Manifestations du 17 novembre : le trafic des trains régionaux perturbé, des stations de métro fermées à Paris",
    "desc": "L'intersyndicale appelle les agents de la fonction publique à une nouvelle journée d'action pour réclamer une hausse des salaires face à l'inflation",
    "url": "https://www.franceinfo.fr/societe/manifestations/direct-greve-et-manifestations-du-17-novembre-suivez-la-journee-de-mobilisation_8285927.html",
    "at": "2026-11-17T09:14:14+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : une enquête pénale ouverte en Russie après le bombardement du pont de Crimée ; deux ponts majeurs de Kiev fermés à ma suite de frappes russes",
-   "desc": "Le Comité d’enquête de la Fédération de Russie a annoncé l’ouverture une procédure pénale pour « acte de terrorisme en raison des attaques des forces armées ukrainiennes contre le pont de Crimée ». Les ponts Sud et Nord de la capitale ukrainienne ont été fermés à la circulation, ce matin, après avoir été touchés par des bombardements russes dans la nuit.",
+   "title": "Olala, le premier modèle d’IA de l’entreprise française OVHcloud",
+   "desc": "OVHcloud va devoir trouver sa place au sein d’un écosystème dominé par des géants américains, talonnés par un florilège d’entreprises chinoises proposant des IA ouvertes à bas coûts.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/17/l-entreprise-francaise-ovhcloud-devoile-son-premier-modele-d-ia-baptise-olala_6812932_4408996.html",
+   "at": "2026-11-17T09:12:33+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky revendique l’attaque du pont de Crimée, la Russie promet de le « restaurer »",
+   "desc": "« Aujourd’hui, chacun peut voir les conséquences sur le principal point de passage militaire reliant le territoire de la Russie à notre Crimée ukrainienne », a dit le président ukrainien. Le Comité d’enquête de la Fédération de Russie a annoncé l’ouverture d’une procédure pénale pour « acte de terrorisme en raison des attaques des forces armées ukrainiennes contre le pont de Crimée ».",
    "url": "https://www.lemonde.fr/international/live/2026/11/17/en-direct-guerre-en-ukraine-une-enquete-penale-ouverte-en-russie-apres-le-bombardement-du-pont-de-crimee-deux-ponts-majeurs-de-kiev-fermes-apres-des-frappes-russes_6810982_3210.html",
    "at": "2026-11-17T09:06:32+00:00"
   },
@@ -24,32 +150,18 @@
    "at": "2026-11-17T09:01:29+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Au Yémen, les forces gouvernementales abandonnent le détroit de Bab Al-Mandab pour protéger la ville d’Aden",
+   "desc": "Le retrait du camp anti-houthistes des dernières zones qu’elles contrôlaient aux abords du détroit, afin de se replier vers Aden, offre aux rebelles yéménites l’occasion de consolider leur emprise sur ce passage clé du commerce maritime mondial.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/17/au-yemen-les-forces-gouvernementales-abandonnent-le-detroit-de-bab-al-mandab-pour-proteger-aden_6812930_3210.html",
+   "at": "2026-11-17T09:00:04+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Un bâtiment administratif de Bastia visé dans la nuit par un \"attentat\" à l'explosif",
    "desc": "Il n'y a pas de blessé indique la préfecture de Haute-Corse. Ce bâtiment regroupe plusieurs services de l'état dont l'Agence régionale de santé. La grille d'entrée a été légèrement endommagée.",
    "url": "https://www.franceinfo.fr/faits-divers/un-batiment-administratif-de-bastia-vise-dans-la-nuit-par-un-attentat-a-l-explosif_8286206.html",
    "at": "2026-11-17T08:56:12+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le pont de Crimée ciblé pour la deuxième nuit consécutive par l'Ukraine, des frappes russes sur deux ponts de Kiev",
-   "desc": "Le gouvernement russe a annoncé la tenue d'une commission gouvernementale, afin de \"gérer les conséquences\" de cette attaque.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/deux-ponts-de-kiev-sont-fermes-a-la-circulation-apres-des-attaques-russes-alors-que-de-son-cote-l-ukraine-cible-la-crimee_8286059.html",
-   "at": "2026-11-17T08:50:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Ce n'est pas un dîner, c'est une présentation de programme\", explique Manuel Bompard alors que Jean-Luc Mélenchon rencontre des grands patrons",
-   "desc": "Le chef de file de LFI et candidat à la présidentielle rencontre mardi soir des grands patrons afin d'expliquer le programme du parti : \"mettre davantage à contribution les grandes entreprises et les grands groupes\".",
-   "url": "https://www.franceinfo.fr/politique/la-france-insoumise/ce-n-est-pas-un-diner-c-est-une-presentation-de-programme-explique-manuel-bompard-alors-que-jean-luc-melenchon-rencontre-des-grands-patrons_8286200.html",
-   "at": "2026-11-17T08:45:36+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Je me réveille à 2 heures du matin pour prendre ma douche\" : en Roumanie, une ville privée d'eau depuis des mois",
-   "desc": "À Târgu Neamț, dans le nord-est de la Roumanie, les habitants subissent depuis l'été une grave pénurie d'eau. Entre sécheresse et canalisations défaillantes, certains doivent attendre le milieu de la nuit pour se laver ou faire leur lessive. Une situation qui rappelle aussi la fragilité des réseaux de distribution d'eau en France.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-monde-et-vous/je-me-reveille-a-2-heures-du-matin-pour-prendre-ma-douche-en-roumanie-une-ville-privee-d-eau-depuis-des-mois_8265059.html",
-   "at": "2026-11-17T08:31:42+00:00"
   },
   {
    "source": "Le Monde",
@@ -60,31 +172,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Marine Le Pen \"a toujours été alignée sur les positions du Kremlin\", estime Benjamin Haddad, ministre chargé de l'Europe",
-   "desc": "Benjamin Haddad, ministre chargé de l'Europe, était l'invité des \"4 Vérités\", mardi 17 novembre. Il est revenu sur le projet de Marine Le Pen d'arrêter de soutenir financièrement l'Ukraine si elle était élue. Selon lui, ce soutien garantit la sécurité de la France et de l'Europe.",
-   "url": "https://www.franceinfo.fr/politique/marine-le-pen-a-toujours-ete-alignee-sur-les-positions-du-kremlin-estime-benjamin-haddad-ministre-charge-de-l-europe_8286116.html",
-   "at": "2026-11-17T07:57:00+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Les fonctionnaires ont-ils vraiment perdu 15% de pouvoir d’achat depuis 2017, comme l'affirme Clémentine Autain ?",
    "desc": "Alors que les agents de la fonction publique sont appelés à se mobiliser mardi, pour réclamer des hausses de salaires, la députée Clémentine Autain affirme qu'ils ont perdu 15% de pouvoir d'achat depuis 2017. C'est vrai.",
    "url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/vrai-ou-faux-les-fonctionnaires-ont-ils-vraiment-perdu-15-de-pouvoir-d-achat-depuis-2017-comme-l-affirme-clementine-autain_8265086.html",
    "at": "2026-11-17T07:52:36+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Budget 2027 : le Sénat et le gouvernement à la recherche d’un compromis sur la mise à contribution des retraités",
-   "desc": "Lundi, les élus du Palais du Luxembourg ont supprimé l’article du PLFSS qui freine la revalorisation des pensions. Pour compenser les économies perdues du fait de ce vote, la droite et le centre droit proposent de mettre fin à une niche fiscale. L’exécutif s’est déclaré ouvert à ce scénario.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/17/budget-2027-le-senat-et-le-gouvernement-a-la-recherche-d-un-compromis-sur-la-mise-a-contribution-des-retraites_6812925_823448.html",
-   "at": "2026-11-17T07:48:03+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Procès de l’attaque d’un bar à Brest : « Vous dites vouloir casser des gauchos. C’est qui, les gauchos ? »",
-   "desc": "Suspectés d’appartenir à l’ultradroite, douze hommes étaient jugés pour l’attaque des clients d’un bar réputé de gauche, en septembre 2025. Habitués des tribunes du Stade brestois, les prévenus nient la motivation politique de l’agression, qui « ne fait aucun doute », selon la procureure.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/proces-de-l-attaque-d-un-bar-a-brest-vous-dites-vouloir-casser-des-gauchos-c-est-qui-les-gauchos_6812923_3224.html",
-   "at": "2026-11-17T07:39:25+00:00"
   },
   {
    "source": "franceinfo",
@@ -110,7 +201,7 @@
   {
    "source": "Le Monde",
    "title": "L’utilisation de l’IA a fait disparaître 100 000 offres d’emploi en 2026, et cela ne concerne pas forcément que les débutants, selon une étude",
-   "desc": "Le Coface et l’Observatoire des emplois menacés et émergents montre que le déploiement de l’intelligence artificielle dans les entreprises ne se traduit pas encore par des licenciements dans les métiers les plus facilement automatisables mais contribue à raréfier les offres d’emploi. Un phénomène qui ne se limite pas aux postes d’entrée de carrière.",
+   "desc": "Le Coface et l’Observatoire des emplois menacés et émergents montre que le déploiement de l’intelligence artificielle dans les entreprises ne se traduit pas encore par des licenciements dans les métiers les plus facilement automatisables mais contribue à raréfier les offres d’emploi.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/17/l-essor-de-l-ia-ralentit-les-recrutements-des-metiers-les-plus-automatisables-au-dela-des-postes-juniors_6812918_3234.html",
    "at": "2026-11-17T06:30:09+00:00"
   },
@@ -136,39 +227,11 @@
    "at": "2026-11-17T06:14:04+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le Sénat rejette la désindexation des retraites sur l'inflation prévue dans le budget de la Sécurité sociale",
-   "desc": "Les sénateurs ont adopté des amendements supprimant entièrement cette mesure susceptible de rapporter environ 4 milliards d'euros. La majorité de droite et du centre a toutefois promis d'accepter une part d'effort des retraités pour freiner le déficit.",
-   "url": "https://www.franceinfo.fr/economie/budget/le-senat-rejette-la-desindexation-des-retraites-sur-l-inflation-prevue-dans-le-budget-de-la-securite-sociale_8286014.html",
-   "at": "2026-11-17T06:04:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On espère une interdiction à l'échelle nationale\" : la Chine peine à maîtriser l'explosion de l'usage des sacs plastiques jetables",
-   "desc": "La Chine, qui reste le premier émetteur mondial de gaz à effet de serre, est en train d’inverser la tendance en matière d'émissions de CO2. Par contre, le bilan est beaucoup plus critique concernant le plastique.",
-   "url": "https://www.franceinfo.fr/monde/chine/on-espere-une-interdiction-a-l-echelle-nationale-la-chine-peine-a-maitriser-l-explosion-de-l-usage-des-sacs-plastiques-jetables_8285426.html",
-   "at": "2026-11-17T06:03:09+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Des millions de petits leaders\" : en Serbie, après la surprise de la victoire de la liste des étudiants, la question du gouvernement collégial",
-   "desc": "La Liste étudiante a créé la surprise aux élections législatives anticipées du 25 octobre. Elle est maintenant attendue au tournant par les Serbes, face à l'immense défi des changements à venir.",
-   "url": "https://www.franceinfo.fr/monde/europe/des-millions-de-petits-leaders-en-serbie-apres-la-surprise-de-la-victoire-de-la-liste-des-etudiants-la-question-du-gouvernement-collegial_8281205.html",
-   "at": "2026-11-17T06:02:49+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "« Inside Deutsche Bank » : les secrets inavouables du géant bancaire révélés par 15 millions de documents confidentiels",
-   "desc": "Des oligarques russes sous sanctions à Jeffrey Epstein, en passant par la vente d’armes et le blanchiment d’argent, une enquête internationale démontre que la banque allemande a sciemment ignoré ses propres dispositifs d’alerte pour préserver des marchés ultra-lucratifs.",
-   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/17/inside-deutsche-bank-les-secrets-inavouables-du-geant-bancaire-reveles-par-15-millions-de-documents-confidentiels_6812911_4355770.html",
-   "at": "2026-11-17T05:58:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les équipes de Gabriel Attal, Bruno Retailleau et David Lisnard négocient les modalités d'une potentielle primaire de la droite et du centre",
-   "desc": "Le sujet agite la droite et le centre en ce moment, en vue de l'élection présidentielle. Edouard Philippe répète qu'il n'y participera pas, mais les trois autres candidats appelés par Gérard Larcher semblent s'y préparer.",
-   "url": "https://www.franceinfo.fr/elections/primaire-ou-pas-primaire-gabriel-attal-bruno-retailleau-et-david-lisnard-semblent-favorables_8285471.html",
-   "at": "2026-11-17T05:44:29+00:00"
+   "title": "« Inside Deutsche Bank » : malgré les scandales et la guerre en Ukraine, la banque a tenté de préserver son activité avec les Russes",
+   "desc": "Pour l’établissement bancaire, la Russie représente un marché historique et fructueux alimenté par une clientèle de sociétés publiques aux pratiques douteuses et par des oligarques au profil sulfureux. Avec ses « clients les plus sensibles », il a perduré malgré un désengagement à partir de 2014.",
+   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/17/inside-deutsche-bank-malgre-les-scandales-et-la-guerre-en-ukraine-la-banque-a-tente-de-preserver-son-activite-avec-les-russes_6812915_4355770.html",
+   "at": "2026-11-17T06:00:15+00:00"
   },
   {
    "source": "franceinfo",
@@ -178,53 +241,18 @@
    "at": "2026-11-17T05:35:04+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Génocide des Tutsi : devant la cour d’assises de Paris, le procès du Rwandais Madjaliwa Safari et des tueries aux « barrières »",
-   "desc": "Arrêté à Tours en 2023, le commerçant de 61 ans est poursuivi pour les faits imprescriptibles de « génocide » et « crimes contre l’humanité ». D’après plusieurs témoins, il aurait ordonné des meurtres et participé à des massacres de Tutsi en 1994.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/17/genocide-des-tutsi-devant-la-cour-d-assises-de-paris-le-proces-du-rwandais-madjaliwa-safari-et-des-tueries-aux-barrieres_6812910_3212.html",
-   "at": "2026-11-17T05:30:14+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A la COP31, un premier projet de « décision finale » témoigne de l’ampleur des désaccords entre les pays",
-   "desc": "Les ministres de nombreux Etats, arrivés en Turquie pour la deuxième semaine de la conférence mondiale sur le climat, doivent permettre de faire avancer les négociations.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/17/a-la-cop31-un-premier-projet-de-decision-finale-temoigne-de-l-ampleur-des-desaccords-entre-les-pays_6812908_3244.html",
-   "at": "2026-11-17T05:30:08+00:00"
-  },
-  {
    "source": "franceinfo",
-   "title": "\"Le sexisme ordinaire est à tous les étages\" : les femmes encore très minoritaires dans les métiers du numérique",
-   "desc": "A l'occasion de l'événement \"Demain mon job\", organisé mardi à la Maison de la radio et de la musique, franceinfo se penche sur cette disparité femmes-hommes persistante dans les professions liées aux nouvelles technologies.",
-   "url": "https://www.franceinfo.fr/economie/emploi/carriere/vie-professionnelle/emploi-des-femmes/temoignages-le-sexisme-ordinaire-est-a-tous-les-etages-les-femmes-encore-tres-minoritaires-dans-les-metiers-du-numerique_8271524.html",
-   "at": "2026-11-17T05:06:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Bienvenue au Service secret de sa Majesté, M. Bond\" : le nouveau visage de 007 adoubé par la famille royale britannique",
+   "title": "\"Bienvenue aux Services secrets de sa Majesté, M. Bond\" : le nouveau visage de 007 adoubé par la famille royale britannique",
    "desc": "Les premières réactions au choix de Robert Pattinson sont globalement enthousiastes, notamment du côté de ses compatriotes.",
    "url": "https://www.franceinfo.fr/culture/cinema/bienvenue-au-service-secret-de-sa-majeste-m-bond-le-nouveau-visage-de-007-adoube-par-la-famille-royale-britannique_8285393.html",
    "at": "2026-11-17T05:00:19+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "De \"Twilight\" à James Bond, en passant par le cinéma indépendant, l'ambitieux parcours de Robert Pattinson",
-   "desc": "Après avoir évolué dans des genres et univers variés, il aura le redoutable privilège de succéder à Daniel Craig, l'une des incarnations les plus marquantes de l'agent 007 entre 2006 et 2021.",
-   "url": "https://www.franceinfo.fr/culture/cinema/de-twilight-a-james-bond-en-passant-par-le-cinema-independant-l-ambitieux-parcours-de-robert-pattinson_8285045.html",
-   "at": "2026-11-17T05:00:16+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Quelles sont les démarches administratives à faire après le décès d’un proche ?",
-   "desc": "Les semaines qui suivent la disparition de son conjoint ou d’un parent sont jalonnées d’étapes administratives fastidieuses, mais indispensables.",
-   "url": "https://www.lemonde.fr/argent/article/2026/11/17/succession-quelles-sont-les-demarches-a-accomplir-au-deces-d-un-proche_6812903_1657007.html",
-   "at": "2026-11-17T05:00:11+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J'ai tout gâché\" : dans ses mémoires, Joe Biden se confie sur son renoncement à la présidentielle 2024 face à Donald Trump",
-   "desc": "L'ex-président démocrate publie mardi un livre autobiographique intitulé \"Promise me, America\". Il y étrille son successeur républicain.",
-   "url": "https://www.franceinfo.fr/monde/usa/joe-biden/j-ai-tout-gache-dans-ses-memoires-joe-biden-se-confie-sur-son-renoncement-a-la-presidentielle-2024-face-a-donald-trump_8284565.html",
-   "at": "2026-11-17T04:46:49+00:00"
+   "title": "\"Les Braves\" : Lukas Dhont cherche à convaincre avec une histoire d'amour durant la Grande Guerre",
+   "desc": "Le troisième long-métrage du réalisateur belge, une ode à l'amitié et à l'amour, est porté par deux jeunes acteurs inspirés qui ont obtenu, ex æquo le prix d'interprétation masculine à Cannes.",
+   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/les-braves-coward-lukas-dhont-cherche-a-convaincre-avec-une-histoire-d-amour-durant-la-grande-guerre_8270798.html",
+   "at": "2026-11-17T05:00:15+00:00"
   },
   {
    "source": "franceinfo",
@@ -235,10 +263,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Inquiets des effets des gaz lacrymogènes sur la santé des femmes, des élus et des médecins, demandent leur interdiction",
-   "desc": "Les témoignages de près de 10 000 femmes exposées à des gaz lacrymogènes depuis le début du mouvement lycéen et de la mobilisation sociale doivent être présentés, mardi, à l’Assemblée nationale. Ils mettent en évidence de nombreux troubles gynécologiques.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/17/gaz-lacrymogenes-pourquoi-des-elus-et-des-medecins-inquiets-de-leurs-effets-sur-la-sante-des-femmes-demandent-leur-interdiction_6812897_3244.html",
-   "at": "2026-11-17T04:42:21+00:00"
+   "title": "Comment on a renaturé une friche polluée en créant des emplois",
+   "desc": "Avec la série « On avance », « Le Monde » part à la rencontre de personnes qui agissent collectivement pour le climat et la biodiversité. A l’Ile-Saint-Denis (Seine-Saint-Denis), un ancien site industriel accueille une ferme florale, des salariés en insertion et des scientifiques.",
+   "url": "https://www.lemonde.fr/chaleur-humaine/article/2026/11/17/comment-on-a-renature-une-friche-polluee-en-creant-des-emplois_6812898_6125299.html",
+   "at": "2026-11-17T04:45:02+00:00"
   },
   {
    "source": "franceinfo",
@@ -256,31 +284,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Antibiotiques : les prescriptions et la consommation diminuent, notamment chez les enfants, mais les risques de l’antibiorésistance demeurent",
-   "desc": "Santé publique France souligne une « baisse notable » en secteur de ville en 2025, par rapport à 2024, selon des données publiées mardi 17 novembre. Une tendance nécessitant de prendre le « temps de la pédagogie » pour les médecins traitants.",
-   "url": "https://www.lemonde.fr/sante/article/2026/11/17/antibiotiques-les-prescriptions-et-la-consommation-diminuent-notamment-chez-les-enfants-mais-les-risques-de-l-antibioresistance-demeurent_6812891_1651302.html",
-   "at": "2026-11-17T04:30:03+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Les séries de la semaine : « La Comtesse de Monte-Cristo », « Beforeigners », « The Greatest » et « Les Anneaux de pouvoir »",
    "desc": "Chaque mardi, La Matinale du « Monde » propose une sélection de séries à découvrir sur petit écran. Aujourd’hui, notamment, une superproduction française avec Audrey Fleurot en tête d’affiche.",
    "url": "https://www.lemonde.fr/culture/article/2026/11/17/les-series-de-la-semaine-la-comtesse-de-monte-cristo-beforeigners-the-greatest-et-les-anneaux-de-pouvoir_6812821_3246.html",
-   "at": "2026-11-17T03:30:05+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Deux ans de prison requis contre Pierre Ménès, jugé pour agressions sexuelles et harcèlement moral",
-   "desc": "L’ancien journaliste a reconnu un « langage très fleuri », des propos « pas très élégants » et une « ambiance potache », mais a nié toute violence sexuelle et affirmé que « c’était une autre époque ».",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/deux-ans-de-prison-requis-contre-pierre-menes-juge-pour-agressions-sexuelles-et-harcelement-moral_6812755_3224.html",
-   "at": "2026-11-17T00:19:49+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Au procès de l’interpellation violente de Michel Zecler par des policiers : « Les vidéos parlent d’elles-mêmes, c’est impardonnable, ce n’est même pas de l’amateurisme »",
-   "desc": "Trois agents sont jugés pour avoir roué de coups le producteur de musique, à Paris, en 2020, et pour « faux en écriture publique ». Sept fonctionnaires de police, appelés en renfort par les accusés ce soir-là, ont livré leur témoignage.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/17/au-proces-de-l-interpellation-violente-de-michel-zecler-par-des-policiers-les-videos-parlent-d-elles-memes-c-est-impardonnable-ce-n-est-meme-pas-de-l-amateurisme_6812689_3224.html",
-   "at": "2026-11-16T23:36:06+00:00"
+   "at": "2026-11-17T03:30:03+00:00"
   },
   {
    "source": "France 24",
@@ -291,17 +298,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Marine Le Pen critiquée en plein débat de la présidentielle pour sa volonté de couper les subventions des associations \"politisées\"",
-   "desc": "Sur LCI, un front allant de Jean-Luc Mélenchon à Gabriel Attal et passant par Raphaël Glucksmann s'est dressé face à la candidate RN.",
+   "title": "Marine Le Pen critiquée lors d'un débat sur la pauvreté pour vouloir couper les subventions des \"associations politisées\"",
+   "desc": "Sur LCI, un front allant de Jean-Luc Mélenchon à Gabriel Attal, en passant par Raphaël Glucksmann, s'est dressé face à la candidate RN.",
    "url": "https://www.franceinfo.fr/elections/marine-le-pen-critiquee-en-plein-debat-de-la-presidentielle-pour-sa-volonte-de-couper-les-subventions-des-associations-politisees_8285558.html",
    "at": "2026-11-16T23:08:36+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Deux ans de prison, dont un ferme, requis contre Pierre Ménès, jugé pour agressions sexuelles et harcèlement moral",
-   "desc": "Interrogé lundi à la barre sur les faits qui lui sont reprochés et sur d'autres, prescrits, notamment un baiser imposé à la journaliste Isabelle Moreau, Pierre Ménès en a minimisé certains et contesté d'autres. \"C'était une autre époque\", a-t-il affirmé.",
-   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/deux-ans-de-prison-dont-un-ferme-requis-contre-pierre-menes-juge-pour-agressions-sexuelles-et-harcelement-moral_8285549.html",
-   "at": "2026-11-16T22:42:00+00:00"
   },
   {
    "source": "France 24",
@@ -318,13 +318,6 @@
    "at": "2026-11-16T21:46:15+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Le « Theodore-Roosevelt », troisième porte-avions des Etats-Unis déployé au Moyen-Orient",
-   "desc": "En plein regain des tensions dans la région, le « Theodore-Roosevelt » rejoint deux autres porte-avions déjà positionnés dans la région, le « George-H.-W.-Bush » et le « George-Washington », respectivement déployés depuis avril et août.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/16/un-troisieme-porte-avions-americain-le-theodore-roosevelt-est-arrive-au-moyen-orient_6812491_3210.html",
-   "at": "2026-11-16T21:23:33+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Guerre en Ukraine : plusieurs dizaines de militaires français déployés secrètement dans le pays",
    "desc": "Plusieurs dizaines de militaires français seraient déployés secrètement en Ukraine dans le cadre d'une mission confidentielle baptisée \"Volia\". Officiellement, Paris communique sur la mission \"Gerfaut\", consacrée à la formation de soldats ukrainiens en Pologne. Mais derrière cette opération se cacherait une autre réalité, révélée par Radio France Internationale et confirmée par nos informations.",
@@ -337,13 +330,6 @@
    "desc": "Les syndicats appellent les agents de la fonction publique, de l'Education nationale ou encore des transports à faire grève mardi. Des dizaines de manifestations sont annoncées, auxquelles doivent se joindre lycéens, étudiants et gilets jaunes.",
    "url": "https://www.franceinfo.fr/societe/manifestations/greves-dans-la-fonction-publique-mouvement-lyceen-manifestations-a-quoi-s-attendre-pour-la-mobilisation-du-17-novembre_8284415.html",
    "at": "2026-11-16T19:54:31+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J'ai fait de mon mieux\" : à six mois de la fin de son mandat, Emmanuel Macron reconnaît \"des erreurs\" au cours de ses dix ans au pouvoir",
-   "desc": "Le président de la République s'est exprimé lundi sur X à l'occasion des dix ans de l'annonce de sa première candidature à la présidentielle.",
-   "url": "https://www.franceinfo.fr/elections/j-ai-fait-de-mon-mieux-a-six-mois-de-la-fin-de-son-mandat-emmanuel-macron-reconnait-des-erreurs-au-cours-de-ses-dix-ans-au-pouvoir_8285318.html",
-   "at": "2026-11-16T19:53:52+00:00"
   },
   {
    "source": "France 24",
@@ -421,20 +407,6 @@
    "desc": "Le lycée Nelson-Mandela de Nantes, en partie incendié début octobre en marge de la mobilisation lycéenne, a rouvert ses portes lundi 16 novembre au matin pour une reprise partielle des cours, tandis que les travaux se poursuivent sur la partie des bâtiments encore endommagée. Le ministre de l'Éducation, Édouard Geffray, venu pour la réouverture des portes du lycée, a été hué par des élèves lors de son arrivée, ces derniers étant consternés par le manque d'écoute de leurs revendications.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261116-france-le-lyc%C3%A9e-neslon-mandela-rouvre-ses-portes-%C3%A0-nantes",
    "at": "2026-11-16T11:33:00+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Sommet de l'OIF : la Francophonie c'est quoi ?",
-   "desc": "Le sommet de l'Organisation internationale de la Francophonie (OIF) prend place tous les deux ans. L'objectif principal : promouvoir la langue française et son apprentissage. Les chefs d'État et de gouvernement des 90 membres de l'organisation, parmi lesquels le président français et le Premier ministre canadien Mark Carney, sont donc réunis depuis le 15 novembre jusqu'à ce lundi 16 au soir, à Phnom Penh, au Cambodge.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261116-sommet-de-l-oif-la-francophonie-c-est-quoi",
-   "at": "2026-11-16T10:32:27+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Depardieu se désiste de son procès en appel pour agressions sexuelles et présente ses \"excuses\"",
-   "desc": "Dans un communiqué intitulé \"J'entends\" et publié lundi, Gérard Depardieu a annoncé \"assumer\" sa condamnation à 18 mois de prison avec sursis prononcée en mai 2025 pour deux agressions sexuelles commises sur le tournage d'un film. L'acteur présente également des \"excuses, profondes et sincères\", à celles et ceux qui ont \"pu en souffrir\".",
-   "url": "https://www.france24.com/fr/france/20261116-g%C3%A9rard-depardieu-se-d%C3%A9siste-proc%C3%A8s-appel-agressions-sexuelles-pr%C3%A9sente-excuses",
-   "at": "2026-11-16T10:11:54+00:00"
   }
  ]
 }

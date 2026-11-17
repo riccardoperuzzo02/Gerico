@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-17-gb-asilo-espulsioni-senza-preavviso",
+  "title": "Regno Unito: asilo, i respinti potranno essere espulsi senza preavviso",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Palazzo di Westminster", "alt": ["Londra"]},
+  "rank": 206,
+  "summary": "Il Home Office vuole togliere i cinque giorni di preavviso a chi ha perso l'appello sull'asilo. Le associazioni per i rifugiati criticano la misura.",
+  "article": "Il governo britannico vuole eliminare il periodo di cinque giorni di preavviso per i richiedenti asilo respinti. Lo scrivono Guardian e Bbc. Chi ha esaurito i ricorsi potrebbe essere fermato ed espulso senza avviso.\n\nSecondo il Guardian, la ministra dell'Interno Shabana Mahmood modificherà un disegno di legge ora in Parlamento, permettendo agli agenti dell'immigrazione di fermare ed espellere chi ha perso l'appello contro il rifiuto della domanda. La Bbc spiega che, con le nuove regole proposte, il Home Office avrebbe sei mesi per rimuovere una persona senza avvisarla prima.\n\nLe associazioni per i rifugiati, secondo il Guardian, condannano il piano perché causerà stress e ansia inutili. Il governo non è citato dalle fonti con una giustificazione. Il Guardian scrive inoltre che martedì parte l'ultimo volo dell'accordo «uno dentro, uno fuori» tra Regno Unito e Francia; molti passeggeri sarebbero persone già rimandate in Francia una volta e tornate nel Regno Unito.\n\nLe informazioni vengono dai testi dei feed di Guardian e Bbc, non da articoli letti per intero: restano da verificare il testo dell'emendamento, i tempi del voto e il numero di persone coinvolte.",
+  "facts": [
+    {"text": "I richiedenti asilo respinti perderebbero il preavviso di cinque giorni prima dell'espulsione.", "who": ["The Guardian", "BBC"]},
+    {"text": "Mahmood modificherà un disegno di legge in Parlamento per consentire fermo ed espulsione senza avviso.", "who": ["The Guardian"]},
+    {"text": "Con le nuove regole il Home Office avrebbe sei mesi per rimuovere una persona senza avvisarla.", "who": ["BBC"]},
+    {"text": "Le associazioni per i rifugiati dicono che il piano causerà stress e ansia inutili.", "who": ["The Guardian"]}
+  ],
+  "view": "Si può dire con certezza che il governo propone di togliere il preavviso e che le associazioni si oppongono. Il testo dell'emendamento, il calendario parlamentare e la risposta del governo alle critiche non sono nelle fonti lette.\n\nConta perché cambia le garanzie per chi ha perso l'ultimo ricorso, in un momento di pressione sull'immigrazione. Da guardare: il voto sull'emendamento e eventuali ricorsi in tribunale.",
+  "open": [
+    "Quando voterà il Parlamento l'emendamento?",
+    "Quante persone sarebbero coinvolte ogni anno?",
+    "Cosa risponde il governo alle critiche delle associazioni?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/uk-news/2026/nov/16/failed-uk-asylum-seekers-to-lose-five-day-grace-period-and-face-immediate-removal", "angle": "Dal feed: l'emendamento di Mahmood e le critiche delle associazioni.", "at": "2026-11-16T20:06:24+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cq20xnp2egm8o", "angle": "Dal feed: sei mesi per la rimozione senza preavviso.", "at": "2026-11-17T01:24:49+00:00"}
+  ],
+  "firstSeen": "2026-11-17T09:49:09+01:00",
+  "updated": "2026-11-17T09:49:09+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-17T09:49:09+01:00", "text": "Prima notizia: il governo vuole eliminare il preavviso di cinque giorni per i richiedenti asilo respinti."}
+  ],
+  "tags": ["Regno Unito", "Immigrazione", "Governo"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-17-us-faa-tiger-team-blocco-voli",
+  "title": "Stati Uniti: la Casa Bianca crea una squadra dopo il blocco nazionale dei voli",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Federal Aviation Administration", "alt": ["Washington"]},
+  "rank": 105,
+  "summary": "Dopo il blocco di quattro ore dei voli di venerdì, la Casa Bianca ha formato una «tiger team» per evitarne un altro. Secondo la Faa all'origine c'è la sostituzione di un router in Arkansas.",
+  "article": "Lunedì 16 novembre la Casa Bianca ha tenuto la prima riunione di una «tiger team», un gruppo di lavoro creato per evitare un altro blocco nazionale dei voli. Lo scrive CBS News. Ne fanno parte funzionari della Faa, l'agenzia federale dell'aviazione, dell'Ufficio del direttore dell'intelligence nazionale, del Dipartimento della Difesa e di quello dei Trasporti.\n\nVenerdì 13 novembre la Faa aveva fermato tutti i voli in partenza dal paese per più di quattro ore, secondo CNBC. Per CBS il blocco è iniziato poco dopo le 15,30 ed è costato migliaia di voli cancellati; circa 3.500 aerei erano in volo. Secondo NPR, lunedì i ritardi continuavano: il segretario ai Trasporti Sean Duffy ha detto che la situazione poteva tornare normale a fine giornata.\n\nSecondo CBS, un'indagine preliminare della Faa indica la sostituzione di un router in Arkansas. I servizi di intelligence hanno escluso in via preliminare attività dolose, ma restano domande aperte sulla causa. Duffy ha detto di non poter escludere un altro blocco mentre il sistema viene aggiornato: «Dobbiamo lasciare la vecchia rete». Il presidente Donald Trump ha parlato di «attrezzature molto vecchie».\n\nDuffy chiede al Congresso 50 miliardi di dollari per ammodernare il sistema. CBS ricorda un rapporto di settembre del Government Accountability Office, l'organo di controllo del Congresso, secondo cui la Faa non ha una stima complessiva dei costi né un calendario unico dei progetti. Lunedì anche United Airlines ha risolto un guasto ai suoi sistemi, scrivono CBS e CNBC.",
+  "facts": [
+    {"text": "La Casa Bianca ha creato una tiger team con funzionari di Faa, intelligence, Difesa e Trasporti; prima riunione lunedì.", "who": ["CBS News"]},
+    {"text": "Il blocco di venerdì è durato più di quattro ore; circa 3.500 aerei erano in volo.", "who": ["CNBC", "CBS News"]},
+    {"text": "Un'indagine preliminare della Faa indica la sostituzione di un router in Arkansas; l'intelligence esclude per ora attività dolose.", "who": ["CBS News"]},
+    {"text": "Duffy chiede al Congresso 50 miliardi di dollari per aggiornare il sistema.", "who": ["CBS News"]}
+  ],
+  "view": "Si può dire con certezza che il blocco è stato preceduto da un cambio di apparecchiature e che le prime verifiche escludono un attacco. La causa precisa e il motivo di un intervento il venerdì pomeriggio non sono chiariti dalle fonti.\n\nConta perché mette in discussione l'affidabilità del traffico aereo e porta la richiesta di 50 miliardi davanti al Congresso. Da guardare: i risultati dell'indagine della Faa, il lavoro della squadra e la risposta dei parlamentari.",
+  "open": [
+    "Qual è la causa esatta del blocco di venerdì?",
+    "Perché il router è stato sostituito di venerdì alle 16?",
+    "Il Congresso approverà i 50 miliardi richiesti?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/white-house-tiger-team-ground-stop/", "angle": "Articolo letto: tiger team, causa preliminare, richiesta di fondi.", "at": "2026-11-16T23:58:00+00:00"},
+    {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html", "angle": "Dal feed: blocco di oltre quattro ore e ritardi che continuano.", "at": "2026-11-16T15:56:39+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip", "angle": "Dal feed: Duffy prevede il ritorno alla normalità a fine lunedì.", "at": "2026-11-16T12:08:14+00:00"}
+  ],
+  "firstSeen": "2026-11-17T09:49:09+01:00",
+  "updated": "2026-11-17T09:49:09+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-17T09:49:09+01:00", "text": "Prima notizia: la Casa Bianca crea una tiger team dopo il blocco nazionale dei voli."}
+  ],
+  "tags": ["Stati Uniti", "Trasporti", "Infrastrutture"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

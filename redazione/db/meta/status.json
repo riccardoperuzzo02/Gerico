@@ -4,8 +4,8 @@
     "esito": "Nessun risultato trovato (inflazione Canada, Pil Giappone, dati Cina non reperiti in 3 ricerche). Agenda già completa; aggiunto solo il precedente della disoccupazione cinese."
   },
   "lastPublish": {
-    "at": "2026-11-17T07:27:08+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
+    "at": "2026-11-17T09:52:18+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
   },
   "lastRun": "2026-11-17T07:26:00+01:00",
   "marketsRun": {
@@ -25,8 +25,8 @@
     "Teleborsa"
   ],
   "paesiRun": {
-    "at": "2026-11-16T09:50:22+01:00",
-    "esito": "Nessun articolo aperto, tutto dai feed. US 1 nuova (Lutnick e chip)/0 aggiornate/2 archiviate; GB 2 nuove (Brexit, rapporto dei Lord)/1 aggiornata (Milburn)/2 archiviate; FR 0 nuove/2 aggiornate (manifestazioni, pubblico impiego)/0; DE 0 nuove/2 aggiornate (Heil, bilancio)/1 archiviata; ES 1 nuova (programma Psoe)/2 aggiornate (campagna, El Hierro)/2 archiviate."
+    "at": "2026-11-17T09:50:55+01:00",
+    "esito": "Aperti 5 articoli (CBS x2, franceinfo, Public Sénat), il resto dai feed. US 2 nuove (Corte suprema, Faa)/1 aggiornata (morbillo)/1 archiviata (golf); GB 1 nuova (asilo)/1 aggiornata (Milburn)/1 archiviata (età del consenso); FR 1 nuova (Senato, pensioni)/1 aggiornata (sciopero 17 novembre)/1 archiviata (Maileva); DE 1 nuova (vertice di coalizione)/1 aggiornata (Heil)/0; ES 1 nuova (Feijóo, Echeverría)/0/0."
   },
   "quality": {
     "articlesDiscarded": 3,

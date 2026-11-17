@@ -26,9 +26,10 @@
     {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho", "angle": "Dal feed: la notizia viene da ricercatori vicini alle decisioni della Paho.", "at": "2026-11-14T22:15:02+00:00"}
   ],
   "firstSeen": "2026-11-15T09:48:31+01:00",
-  "updated": "2026-11-15T09:48:31+01:00",
-  "change": "",
+  "updated": "2026-11-17T09:49:09+01:00",
+  "change": "CBS News titola che gli Stati Uniti hanno perso lo status ufficiale; la conferenza Paho è attesa oggi.",
   "history": [
+    {"at": "2026-11-17T09:49:09+01:00", "text": "CBS News scrive che gli Stati Uniti hanno perso lo status ufficiale di paese libero dal morbillo, per la prima volta in 26 anni."},
     {"at": "2026-11-15T09:48:31+01:00", "text": "Prima notizia: gli Stati Uniti perdono lo status di paese libero dal morbillo."}
   ],
   "tags": ["Stati Uniti", "Sanità", "Vaccini"],

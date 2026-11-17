@@ -52,18 +52,41 @@
   G.lang = (() => {
     try {
       const q = new URLSearchParams(location.search).get("lang");
-      if (q === "en" || q === "it") localStorage.setItem("gerico.lang", JSON.stringify(q));
+      if (q === "en" || q === "it") {
+        localStorage.setItem("gerico.lang", JSON.stringify(q));
+        // la scelta è salvata: l'indirizzo torna pulito (resta l'ancora, come #seguiti)
+        const u = new URL(location.href);
+        u.searchParams.delete("lang");
+        history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+      }
+      // arrivo da un cambio di lingua in un browser senza transizioni tra pagine: la pagina entra sfumando
+      if (sessionStorage.getItem("gerico.cambioLingua") === "1" && !("onpageswap" in window)) document.documentElement.classList.add("lingua-entra");
+      sessionStorage.removeItem("gerico.cambioLingua");
     } catch (e) { /* niente */ }
     return G.ls.get("gerico.lang", "it") === "en" ? "en" : "it";
   })();
   G.en = G.lang === "en";
-  // la pagina di nuovo, nella lingua appena scelta: senza ?lang= nell'indirizzo (vincerebbe sulla scelta). Con lo stesso
-  // indirizzo serve reload: location.replace con un'ancora (#mondo) non ricarica, salta solo all'ancora
-  G.ricarica = () => {
+  // la pagina di nuovo, nella lingua appena scelta: si va allo stesso indirizzo con ?lang= (un indirizzo nuovo carica
+  // davvero la pagina anche con un'ancora come #mondo, e lo script nell'head mette subito la lingua giusta; poi
+  // l'indirizzo torna pulito). Dove il browser sa fare le transizioni tra pagine, la pagina vecchia sfuma in quella
+  // nuova (solo per il cambio di lingua: vedi pageswap); altrove la pagina sfuma prima di ricaricarsi
+  G.ricarica = (lingua) => {
     const u = new URL(location.href);
-    if (u.searchParams.has("lang")) { u.searchParams.delete("lang"); location.replace(u.href); }
-    else location.reload();
+    u.searchParams.set("lang", lingua || (G.ls.get("gerico.lang", "it") === "en" ? "en" : "it"));
+    try { sessionStorage.setItem("gerico.cambioLingua", "1"); } catch (e) { /* niente */ }
+    const vai = () => location.replace(u.href);
+    if ("onpageswap" in window || G.reduced()) { vai(); return; }
+    document.documentElement.classList.add("lingua-esce");
+    setTimeout(vai, 180);
   };
+  // le transizioni tra pagine intere (CSS @view-transition) servono solo al cambio di lingua: gli altri passaggi tra
+  // pagine li fa già G.go, e una pagina statica (archivio, /s/) si apre come sempre
+  window.addEventListener("pageswap", (e) => {
+    if (!e.viewTransition) return;
+    let lingua = false;
+    try { lingua = sessionStorage.getItem("gerico.cambioLingua") === "1"; } catch (x) { /* niente */ }
+    if (!lingua || G.reduced()) e.viewTransition.skipTransition();
+  });
   G.L = (it, en) => (G.en ? en : it);
   document.documentElement.lang = G.lang;
   const EN = {
@@ -91,7 +114,8 @@
     "Tocca un quadrato per vedere il dettaglio.": "Tap a square to see the details.", "Tassi a 10 anni": "10-year yields",
     "Agenda di oggi": "Today's calendar", "Prezzi e grafici": "Prices and charts", "Gruppo di strumenti": "Instrument group",
     "Prezzi in diretta": "Live prices", "Nascondi i prezzi in diretta": "Hide live prices",
-    "Dal widget gratuito di TradingView, con ritardi diversi per mercato. Si carica solo se lo chiedi e usa cookie di TradingView.": "From TradingView's free widget, with different delays for each market. It loads only if you ask, and uses TradingView cookies.",
+    "Il nastro in alto è il widget gratuito di TradingView, con ritardi diversi per mercato, e usa cookie di TradingView.": "The tape at the top is TradingView's free widget, with different delays for each market, and it uses TradingView cookies.",
+    "Mostra i prezzi in diretta": "Show live prices",
     "Notizie sui mercati": "Market news", "Tono delle notizie": "News tone", "Titoli da seguire": "Stocks to watch",
     "Un segnale sui prezzi e una notizia che possono muoverli nei prossimi giorni.": "A price signal and a news item that could move them in the coming days.",
     "Macro: Stati Uniti ed eurozona": "Macro: United States and euro area", "Documenti SEC": "SEC filings",
@@ -1687,7 +1711,7 @@
       b.addEventListener("click", () => {
         if (b.dataset.langSet === G.lang) return;
         G.ls.set("gerico.lang", b.dataset.langSet);
-        G.ricarica();
+        G.ricarica(b.dataset.langSet);
       });
     });
     G.intro();
@@ -1828,6 +1852,36 @@
           links.appendChild(b);
           P.on(document, "gerico:app", vedi);
           b.addEventListener("click", (e) => { e.stopPropagation(); G.app.installa(); });
+        }
+        // l'ordine del menu: cercare; leggere (Seguiti, Archivio, Glossario); le tue scelte (paese, interessi); l'account;
+        // come si vede il sito (lingua, tema, testo); in fondo GERICO (come funziona, collabora, privacy, l'app)
+        const inner = menu.querySelector(".menu-in");
+        if (inner && !inner.querySelector(".menu-leggi")) {
+          const gruppo = (cls, id, titolo, nav) => {
+            const d = document.createElement("div");
+            d.className = "opt " + cls;
+            const p = document.createElement("p");
+            p.className = "opt-l";
+            p.id = id;
+            p.textContent = titolo;
+            nav.removeAttribute("aria-label");
+            nav.setAttribute("aria-labelledby", id);
+            d.append(p, nav);
+            return d;
+          };
+          const nl = document.createElement("nav");
+          nl.className = "menu-links";
+          [links.querySelector("[data-seguiti]"), links.querySelector('a[href="archivio"]'), links.querySelector('a[href="glossario"]')].forEach((x) => { if (x) nl.appendChild(x); });
+          const leggi = gruppo("menu-leggi", "opt-leggi", G.L("Leggi", "Read"), nl);
+          [links.querySelector('a[href="come-funziona.html"]'), links.querySelector('a[href="collabora"]'), links.querySelector('a[href="privacy.html"]'), links.querySelector("[data-app]")]
+            .forEach((x) => { if (x) links.appendChild(x); });
+          const info = gruppo("menu-info", "opt-gerico", "GERICO", links);
+          const opz = (sel) => { const x = inner.querySelector(sel); return x ? x.closest(".opt") : null; };
+          const ordine = [inner.querySelector(":scope > .grab"), inner.querySelector(":scope > .menu-head"), inner.querySelector(":scope > .cerca-menu"), leggi,
+            inner.querySelector(":scope > .paese-menu"), inner.querySelector(":scope > .interessi-menu"), inner.querySelector(":scope > .conto-menu"),
+            opz("[data-lang-set]"), opz("[data-theme-set]"), opz("[data-size-set]"), info].filter(Boolean);
+          const altri = Array.from(inner.children).filter((x) => !ordine.includes(x));
+          ordine.concat(altri).forEach((x) => inner.appendChild(x));
         }
       }
     }
@@ -2185,7 +2239,7 @@
     // scelta del paese, le domande del percorso); il menu sotto di loro no, si chiude con la pagina
     const rifai = () => {
       if (document.querySelector("dialog[open]:not(#menu)")) { setTimeout(rifai, 200); return; }
-      G.ricarica();
+      G.ricarica(lingua);
     };
     setTimeout(rifai, 50);
   };

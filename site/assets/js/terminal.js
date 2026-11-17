@@ -879,6 +879,15 @@ G.page("terminal", async function (P) {
       '</span><span class="ev"><button type="button" class="ev-b" aria-expanded="' + open + '" aria-controls="' + id + '"><span class="ev-t">' + esc(o.ev) + "</span>" + small + '</button></span><span class="im ' + (o.imp || "") + '">' + esc(IMP[o.imp] || G.cap(o.imp || "")) + "</span>" + det + "</li>";
   }
   $("ag").addEventListener("click", (e) => {
+    const f = e.target.closest && e.target.closest("[data-agf]");
+    if (f) {
+      if (f.getAttribute("aria-pressed") === "true") return;
+      G.ls.set("gerico.agFiltro", f.dataset.agf);
+      renderAgenda();
+      const nf = $("ag").querySelector('[data-agf="' + f.dataset.agf + '"]');
+      if (nf) nf.focus({ preventScroll: true });
+      return;
+    }
     const b = e.target.closest && e.target.closest(".ev-b");
     if (!b) return;
     const li = b.closest("li"), d = li && li.querySelector(".ev-det");
@@ -937,13 +946,32 @@ G.page("terminal", async function (P) {
     const warn = hasAg && !today ? G.L("L'agenda di GERICO di oggi non è ancora arrivata.", "GERICO's calendar for today has not arrived yet.")
       : !ffOk && wd >= 1 && wd <= 5 && own < 3 ? G.L("Agenda forse incompleta: controlla gli orari dei dati ad alto impatto su un calendario economico.", "The calendar may be incomplete: check the times of high-impact releases on an economic calendar.") : "";
     let html = warn ? '<p class="t-na t-warn">' + esc(warn) + "</p>" : "";
-    // quanti dei dati importanti già usciti hanno il risultato, e come si apre la spiegazione
-    const done = rows.filter((r) => (r.imp === "alto" || r.imp === "medio") && r.time && r.time < now && (r.exp || r.prev || r.act));
-    const withAct = done.filter((r) => r.act).length;
-    if (rows.length) html += '<p class="ag-sum">' + (done.length ? G.L("Usciti oggi: ", "Out today: ") + "<b>" + done.length + "</b>" + G.L(" dati ad alto o medio impatto, ", " high- or medium-impact releases, ") + "<b>" + withAct + "</b>" + G.L(" con il risultato. ", " with the result. ") : "") + G.L("Tocca un evento per capire cosa indica e che effetti ha.", "Tap an event to see what it measures and how it can affect markets.") + "</p>";
+    // come si apre la spiegazione
+    if (rows.length) html += '<p class="ag-sum">' + G.L("Tocca un evento per capire cosa indica e che effetti ha.", "Tap an event to see what it measures and how it can affect markets.") + "</p>";
     agN = 0;
-    html += rows.length ? '<ol class="t-agenda">' + rows.map((r) => agendaRow(Object.assign({}, r, { past: !!r.time && r.time < now, next: r === next, soon }))).join("") + "</ol>"
-      : '<p class="t-na">' + (ffOk || today ? G.L("Oggi nessun evento ad alto o medio impatto.", "No high- or medium-impact events today.") : G.L("L'agenda di oggi non è ancora disponibile.", "Today's calendar is not available yet.")) + "</p>";
+    // prima quello che deve ancora uscire (il prossimo ad alto impatto in evidenza), poi, chiusi in una tendina, i dati
+    // già usciti con i loro risultati. Sopra, la scelta tra tutti gli eventi e solo quelli ad alto impatto (resta)
+    if (rows.length) {
+      const filtro = G.ls.get("gerico.agFiltro", "tutti") === "alto" ? "alto" : "tutti";
+      const vede = (r) => filtro === "tutti" || r.imp === "alto";
+      const passato = (r) => !!r.time && r.time < now;
+      const prossimi = rows.filter((r) => !passato(r) && vede(r)), usciti = rows.filter((r) => passato(r) && vede(r));
+      const apertiPrima = document.querySelector("#ag .ag-usciti");
+      const usciOpen = apertiPrima ? apertiPrima.open : !prossimi.length;
+      html += '<div class="seg seg-fill t-seg ag-filtro" role="group" aria-label="' + G.L("Quali eventi", "Which events") + '">' +
+        '<button type="button" data-agf="tutti" aria-pressed="' + (filtro === "tutti") + '">' + G.L("Tutti", "All") + "</button>" +
+        '<button type="button" data-agf="alto" aria-pressed="' + (filtro === "alto") + '">' + G.L("Alto impatto", "High impact") + "</button></div>";
+      html += prossimi.length ? '<h3 class="ag-h3">' + G.L("In arrivo", "Coming up") + '</h3><ol class="t-agenda">' + prossimi.map((r) => agendaRow(Object.assign({}, r, { past: false, next: r === next, soon }))).join("") + "</ol>"
+        : '<p class="t-na">' + G.L("Per oggi non ci sono altri dati in arrivo", "No more releases due today") + (filtro === "alto" ? G.L(" ad alto impatto", " with high impact") : "") + ".</p>";
+      if (usciti.length) {
+        const conRis = usciti.filter((r) => r.act).length;
+        html += '<details class="t-ff-week ag-usciti"' + (usciOpen ? " open" : "") + "><summary>" + G.L("Già usciti oggi (", "Already out today (") + usciti.length + ")" +
+          (conRis ? '<span class="ag-ris">' + conRis + G.L(" con il risultato", " with the result") + "</span>" : "") +
+          '</summary><ol class="t-agenda">' + usciti.map((r) => agendaRow(Object.assign({}, r, { past: true, next: false, soon }))).join("") + "</ol></details>";
+      }
+    } else {
+      html += '<p class="t-na">' + (ffOk || today ? G.L("Oggi nessun evento ad alto o medio impatto.", "No high- or medium-impact events today.") : G.L("L'agenda di oggi non è ancora disponibile.", "Today's calendar is not available yet.")) + "</p>";
+    }
     if (ffWeek.length) {
       // la tendina dei giorni dopo resta aperta o chiusa come l'ha lasciata chi legge, anche quando l'agenda si aggiorna
       const open = !!document.querySelector("#ag .t-ff-week[open]");
@@ -956,11 +984,18 @@ G.page("terminal", async function (P) {
       html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
     }
     // da dove viene: una nota sola per le due fonti
-    const srcs = (today ? (ag.sources || []).filter((x) => x && x.url).slice(0, 2).map((x) => ext(x.url, String(x.name || "").split(",")[0])) : [])
-      .concat(ffOk ? [ext("https://www.forexfactory.com/calendar", "Forex Factory") + G.L(" (letto ", " (read ") + esc(G.when(ff.asOf)) + ")"] : []);
+    // il nome corto della fonte, una volta sola: Forex Factory compare sia nell'agenda del giorno sia nella settimana
+    const nomeFonte = (x) => (/forexfactory\./.test(x.url) ? "Forex Factory" : String(x.name || "").split(/[,(]/)[0].trim());
+    const visti = new Set();
+    const srcs = (today ? (ag.sources || []).filter((x) => x && x.url).slice(0, 2) : [])
+      .concat(ffOk ? [{ url: "https://www.forexfactory.com/calendar", name: "Forex Factory" }] : [])
+      .filter((x) => { const n = nomeFonte(x); if (!n || visti.has(n)) return false; visti.add(n); return true; })
+      .map((x) => ext(x.url, nomeFonte(x)) + (ffOk && nomeFonte(x) === "Forex Factory" ? G.L(" (letto ", " (read ") + esc(G.when(ff.asOf)) + ")" : ""));
     html += '<p class="t-note">' + (srcs.length ? G.L("Fonti: ", "Sources: ") + srcs.join(", ") + ". " : "") + G.L("Orari in ora italiana", "Times are Italian time") + (ffOk ? G.L("; da Forex Factory solo impatto alto e medio", "; from Forex Factory only high and medium impact") : "") + "." + G.L(" Le spiegazioni dicono come i mercati leggono di solito questi dati: non sono previsioni né consigli.", " The explanations say how markets usually read these releases: they are not forecasts or advice.") +
       (today && ag.note ? " " + esc(ag.note) : "") + "</p>";
     $("ag").innerHTML = html;
+    const fs = $("ag").querySelector(".ag-filtro");
+    if (fs && G.seg) G.seg(fs, true);
   }
 
   // solo le storie legate ai mercati: citate dai dati di mercato o nelle sezioni Mercati ed Economia, al massimo 3
@@ -1379,6 +1414,20 @@ G.page("terminal", async function (P) {
     el.focus({ preventScroll: true });
     el.classList.add("flash");
     setTimeout(() => el.classList.remove("flash"), 1200);
+    // quello che sta sopra può cambiare di qualche pixel mentre si scorre (le righe dei prezzi si disegnano quando
+    // entrano in vista): alla fine il pannello si rimette appena sotto l'intestazione. Solo una correzione piccola e
+    // subito dopo, mai se nel frattempo chi legge ha scorso altrove
+    const t0 = Date.now();
+    const aggiusta = () => {
+      if (Date.now() - t0 > 2500) return;
+      const testa = document.querySelector(".top");
+      const d = el.getBoundingClientRect().top - ((testa ? testa.getBoundingClientRect().bottom : 0) + 12);
+      const fondo = scrollY >= document.documentElement.scrollHeight - innerHeight - 1;
+      if (Math.abs(d) > 2 && Math.abs(d) < 60 && !(d > 0 && fondo)) window.scrollBy({ top: d, behavior: "auto" });
+    };
+    if (reduce) requestAnimationFrame(aggiusta);
+    else if ("onscrollend" in window) window.addEventListener("scrollend", aggiusta, { once: true });
+    else setTimeout(aggiusta, 900);
   }
   // il gruppo si cambia prima di scorrere: quello che cambia altezza sta sotto il punto d'arrivo e niente si sposta
   function openGroup(k) {
@@ -1438,8 +1487,16 @@ G.page("terminal", async function (P) {
     { proName: "TVC:UKOIL", title: "Brent" },
     { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" }
   ];
+  // il nastro dei prezzi in diretta sta nell'intestazione, sempre in vista: si può nascondere dal pannello dei grafici (la
+  // scelta resta). Trasparente e scuro, prende il colore del Terminal
+  const tvTop = $("tv-top");
+  if (tvTop) tvTop.setAttribute("aria-label", G.L("Prezzi in diretta", "Live prices"));
   function loadTV() {
     const box = $("tv");
+    if (!box) return;
+    tvTop.hidden = false;
+    $("live-btn").textContent = G.L("Nascondi i prezzi in diretta", "Hide live prices");
+    $("live-btn").setAttribute("aria-expanded", "true");
     if (box.childElementCount) return;
     const wrap = document.createElement("div");
     wrap.className = "tradingview-widget-container";
@@ -1448,7 +1505,7 @@ G.page("terminal", async function (P) {
     wrap.appendChild(inner);
     const copy = document.createElement("div");
     copy.className = "tradingview-widget-copyright";
-    copy.innerHTML = '<a href="https://' + G.L("it", "www") + '.tradingview.com/" rel="noopener nofollow" target="_blank">' + G.L("Prezzi forniti da TradingView", "Prices by TradingView") + "</a>";
+    copy.innerHTML = '<a href="https://' + G.L("it", "www") + '.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="tv-lungo">' + G.L("Prezzi forniti da ", "Prices by ") + "</span>TradingView</a>";
     wrap.appendChild(copy);
     const sc = document.createElement("script");
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
@@ -1456,16 +1513,24 @@ G.page("terminal", async function (P) {
     sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: G.L("it", "en") });
     wrap.appendChild(sc);
     box.appendChild(wrap);
-    $("live-btn").textContent = G.L("Nascondi i prezzi in diretta", "Hide live prices");
-    $("live-btn").setAttribute("aria-expanded", "true");
   }
-  function unloadTV() { $("tv").innerHTML = ""; $("live-btn").textContent = G.L("Prezzi in diretta", "Live prices"); $("live-btn").setAttribute("aria-expanded", "false"); }
+  function unloadTV() {
+    $("tv").innerHTML = "";
+    tvTop.hidden = true;
+    $("live-btn").textContent = G.L("Mostra i prezzi in diretta", "Show live prices");
+    $("live-btn").setAttribute("aria-expanded", "false");
+  }
   $("live-btn").addEventListener("click", () => {
-    if ($("tv").childElementCount) { unloadTV(); G.ls.set("gerico.live", false); }
+    if (!tvTop.hidden) { unloadTV(); G.ls.set("gerico.live", false); }
     else { loadTV(); G.ls.set("gerico.live", true); }
   });
-  $("live-btn").setAttribute("aria-expanded", "false");
-  if (G.ls.get("gerico.live", false)) loadTV();
+  if (G.ls.get("gerico.live", true) !== false) loadTV(); else unloadTV();
+  // l'intestazione cambia altezza (nastro acceso o spento, scorciatoie su una riga o nel menu): i pannelli si fermano
+  // sempre appena sotto
+  const testa = document.querySelector(".top");
+  const misuraTesta = () => { if (testa) document.documentElement.style.setProperty("--term-top", testa.offsetHeight + "px"); };
+  misuraTesta();
+  if (testa && "ResizeObserver" in window) new ResizeObserver(misuraTesta).observe(testa);
 
   // ---------- avvio ----------
   if (location.hash === "#europa") state.view = "europa";

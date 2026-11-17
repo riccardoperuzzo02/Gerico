@@ -200,17 +200,43 @@ G.page("home", async function (P) {
     // la scheda del paese c'è sempre, al posto di Italia, con il nome del paese
     const tabs = [];
     TABS.forEach(([k]) => { if (k === "italia") tabs.push([slugOra(), G.paeseNome(paeseOra()), false, "paese"]); else if (has(k)) tabs.push([k, G.SECTIONS[k], false, k]); });
-    // dopo Tutte e Seguiti le sezioni che ti interessano, poi i temi caldi (con un pallino), poi le altre sezioni
+    // dopo Tutte e Seguiti le sezioni, prima quelle che ti interessano; poi, separati da un filo, i temi caldi (con un
+    // pallino): le sezioni restano insieme, i temi del momento in un gruppo loro
     const scelte = G.interessi ? G.interessi.sezioni() : [];
     tabs.filter((t) => scelte.includes(t[3])).forEach((t) => items.push(t));
-    themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
     tabs.filter((t) => !scelte.includes(t[3])).forEach((t) => items.push(t));
+    themes.forEach((t) => { if (mie().some((s) => inTheme(s, t))) items.push(["t-" + t.id, G.tn(t.label), true]); });
     // accanto a «Seguiti», quante storie dei tuoi temi sono nuove dall'ultima volta che li hai aperti
     const nn = nuoveSeguiti();
     const nuove = (k) => (k === "seguiti" && nn ? '<span class="nav-n" aria-hidden="true">' + nn + '</span><span class="sr-only nav-n-t">' + G.L(nn === 1 ? ", una storia nuova" : ", " + nn + " storie nuove", nn === 1 ? ", one new story" : ", " + nn + " new stories") + "</span>" : "");
-    $("sections").innerHTML = items.map(([k, label, hot]) => '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
+    $("sections").innerHTML = items.map(([k, label, hot], i) => (hot && !(items[i - 1] || [])[2] ? '<span class="sn-div" aria-hidden="true"></span>' : "") +
+      '<a href="' + (k === "tutte" ? "#" : "#" + k) + '" data-sec="' + k + '"' + (hot ? ' class="hot"' : "") + ">" +
       (hot ? '<span class="hot-dot" aria-hidden="true"></span>' : "") + esc(label) + nuove(k) + (hot ? '<span class="sr-only">' + G.L(", tema caldo", ", hot topic") + "</span>" : "") + "</a>").join("");
+    if (navLati) navLati();
   }
+  // la barra delle sezioni scorre di lato: ai due capi un velo quando c'è altro da vedere e, con il mouse, una freccia
+  // per farla scorrere (sul telefono basta il dito)
+  let navLati = null;
+  (() => {
+    const nav = document.querySelector(".home .sec-nav"), row = $("sections");
+    if (!nav || !row) return;
+    const ico = (d) => '<svg aria-hidden="true" width="8" height="14" viewBox="0 0 8 14"><path d="' + (d > 0 ? "M1.6 1.6 6.4 7l-4.8 5.4" : "M6.4 1.6 1.6 7l4.8 5.4") +
+      '" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    if (!nav.querySelector(".sn-fr")) {
+      nav.insertAdjacentHTML("beforeend", '<span class="sn-velo sx" aria-hidden="true"></span><span class="sn-velo dx" aria-hidden="true"></span>' +
+        '<button type="button" class="sn-fr sx" tabindex="-1" aria-hidden="true">' + ico(-1) + '</button><button type="button" class="sn-fr dx" tabindex="-1" aria-hidden="true">' + ico(1) + "</button>");
+    }
+    navLati = () => {
+      const max = row.scrollWidth - row.clientWidth;
+      nav.classList.toggle("piu-sx", max > 2 && row.scrollLeft > 4);
+      nav.classList.toggle("piu-dx", max > 2 && max - row.scrollLeft > 4);
+    };
+    P.on(row, "scroll", navLati, { passive: true });
+    P.on(window, "resize", navLati);
+    nav.querySelectorAll(".sn-fr").forEach((b) => P.on(b, "click", () => {
+      row.scrollBy({ left: (b.classList.contains("dx") ? 1 : -1) * Math.round(row.clientWidth * 0.66), behavior: G.reduced() ? "auto" : "smooth" });
+    }));
+  })();
   // quiet: indicatore e binario li sta già muovendo lo swipe (G.segFollow)
   function markNav(k, quiet) {
     const on = k || state.section, box = $("sections");

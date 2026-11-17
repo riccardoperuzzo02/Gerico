@@ -128,7 +128,12 @@ G.page("home", async function (P) {
   // apre la modifica dei temi (gerico.seguitiGest, letto una volta)
   const FILTRO = "gerico.seguitiFiltro";
   let folTema = null, gestDalMenu = false;
-  try { folTema = sessionStorage.getItem(FILTRO); gestDalMenu = sessionStorage.getItem("gerico.seguitiGest") === "1"; sessionStorage.removeItem("gerico.seguitiGest"); } catch (e) { /* niente */ }
+  // vaiTemi: arrivo dalla voce Seguiti del menu, la pagina scende fino a «I tuoi temi»
+  let vaiTemi = false;
+  try {
+    folTema = sessionStorage.getItem(FILTRO); gestDalMenu = sessionStorage.getItem("gerico.seguitiGest") === "1"; sessionStorage.removeItem("gerico.seguitiGest");
+    vaiTemi = sessionStorage.getItem("gerico.seguitiVai") === "1"; sessionStorage.removeItem("gerico.seguitiVai");
+  } catch (e) { /* niente */ }
   const salvaFiltro = () => { try { if (folTema) sessionStorage.setItem(FILTRO, folTema); else sessionStorage.removeItem(FILTRO); } catch (e) { /* niente */ } };
   const folOra = () => (folTema && state.follows.find((f) => low(f) === low(folTema))) || null;
   const neiSeguiti = (s) => (folOra() ? delTema(s, folOra()) : follows(s));
@@ -302,7 +307,7 @@ G.page("home", async function (P) {
     let html = "";
     if (brInSide() && !$("feed").querySelector("#past-h")) {
       const tutti = state.section === "tutte" || state.section === "seguiti" || !!themeOf(state.section);
-      html = pastHTML(visiblePast(), tutti) + (state.section === "seguiti" && !$("feed").querySelector("#fol-more") ? followMore() : "");
+      html = pastHTML(visiblePast(), tutti);
     }
     if (box.dataset.html !== html) { box.innerHTML = html; box.dataset.html = html; }
   }
@@ -473,8 +478,8 @@ G.page("home", async function (P) {
         (vis.length < sug.length ? '<button type="button" class="tag fol-altri" data-fol-altri>' + G.L("Altri temi", "More topics") + "</button>" : "") + "</div>" : "") + "</div>";
   }
   // in cima ai Seguiti. Di solito: i tuoi temi in fila, uno per tasto (un tocco mostra solo le storie di quel tema, con
-  // quante sono oggi e un punto se ce ne sono di nuove) e «Aggiungi» in fondo alla fila. «Modifica» trasforma la fila:
-  // ogni tema si toglie con un tocco (e si rimette con «Annulla»), sotto c'è la ricerca con i temi da seguire
+  // quante sono oggi e un punto se ce ne sono di nuove) e subito sotto la ricerca con i temi da seguire. «Modifica»
+  // trasforma la fila: ogni tema si toglie con un tocco (e si rimette con «Annulla»)
   function followHead() {
     const mine = state.follows, ora = folOra();
     if (!mine.length) {
@@ -501,8 +506,8 @@ G.page("home", async function (P) {
     return '<section class="blk fol" id="fol-top" aria-labelledby="fol-h">' + testa +
       '<div class="fol-filtri" role="group" aria-label="' + G.L("Guarda un tema solo", "View a single topic") + '">' +
       (mine.length > 1 ? tasto("", G.L("Tutti", "All"), mie().filter(follows).length, false, !ora) : "") +
-      ordine.map((t) => tasto(t, nome(t), conta[t].length, conta[t].some(isNew), mine.length === 1 || (!!ora && low(t) === low(ora)))).join("") +
-      '<button type="button" class="fol-f fol-add" data-fol-add aria-controls="fol-top"><span>' + G.L("Aggiungi", "Add") + "</span></button></div></section>";
+      ordine.map((t) => tasto(t, nome(t), conta[t].length, conta[t].some(isNew), mine.length === 1 || (!!ora && low(t) === low(ora)))).join("") + "</div>" +
+      aggiungiHTML() + "</section>";
   }
   // sul telefono la fila dei temi scorre di lato: il tema scelto deve restare in vista
   function mostraFiltro() {
@@ -511,9 +516,6 @@ G.page("home", async function (P) {
     const r = row.getBoundingClientRect(), x = b.getBoundingClientRect();
     if (x.left < r.left + 8 || x.right > r.right - 8) row.scrollLeft += x.left - r.left - 21;
   }
-  // in fondo, quando segui già qualcosa: gli altri temi da seguire (le notizie restano in alto)
-  const followMore = () => (state.follows.length && !folGest && suggestions().length ? '<section class="blk fol" id="fol-more" aria-labelledby="fol-m"><h2 class="blk-h" id="fol-m">' +
-    G.L("Altri temi da seguire", "More topics to follow") + '</h2><div class="tags">' + suggestions().slice(0, 8).map(([t, , n]) => tagBtn(t, false, n)).join("") + "</div></section>" : "");
   // nella scheda di un tema caldo: seguirlo da lì
   const temaBar = (th) => '<div class="fol fol-bar" id="fol-bar"><p>' + (isFollowed(tKey(th)) ? G.L("Segui questo tema: le sue notizie sono anche nei Seguiti.", "You follow this topic: its news is in Following too.")
     : G.L("Un tema caldo di questi giorni. Seguilo per ritrovare le sue notizie nei Seguiti.", "A hot topic of these days. Follow it to find its news in Following.")) + "</p>" + tagBtn(tKey(th), isFollowed(tKey(th))) + "</div>";
@@ -533,7 +535,7 @@ G.page("home", async function (P) {
       const top = list.length ? leadHTML(list[0], true) + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, true, i + 1)).join("") + "</ol>" : "")
         : '<p class="none">' + (ora ? G.L("Oggi nessuna storia su «", "No stories today on “") + esc(nome(ora)) + G.L("».", "”.") : G.L("Oggi nessuna storia sui temi che segui.", "No stories today on the topics you follow.")) +
           (dopo ? " " + (brInSide() ? G.L("Qui accanto trovi le brevi e le storie dei giorni scorsi.", "Alongside are the news in brief and the stories from recent days.") : G.L("Qui sotto trovi le brevi e le storie dei giorni scorsi.", "Below are the news in brief and the stories from recent days.")) : "") + "</p>";
-      return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + (brInSide() ? "" : pastHTML(past, true) + followMore()) + end;
+      return followHead() + top + (brInSide() ? "" : breviHTML(bl, true)) + (brInSide() ? "" : pastHTML(past, true)) + end;
     }
     const estero = inPaese() && paeseOra() !== "IT";
     if (!list.length && !bl.length && estero) {
@@ -627,39 +629,15 @@ G.page("home", async function (P) {
       const on = pl.playing(), d = pl.dur(), p = pl.pos();
       box.classList.toggle("playing", on);
       btn.setAttribute("aria-label", on ? G.L("Metti in pausa il riepilogo", "Pause the briefing") : p > 0 ? G.L("Riprendi il riepilogo", "Resume the briefing") : G.L("Ascolta il riepilogo", "Listen to the briefing"));
-      $("ls-prog").style.transform = "scaleX(" + (d ? Math.min(1, p / d) : 0).toFixed(4) + ")";
+      if (!box.querySelector(".ls-bar.presa")) $("ls-prog").style.transform = "scaleX(" + (d ? Math.min(1, p / d) : 0).toFixed(4) + ")";
       $("ls-time").textContent = d ? pl.mmss(Math.max(0, d - p)) : "";
     };
     P.add(pl.on(paint));
     paint();
     pl.card(box);
-    // la riga dell'avanzamento si tocca e si trascina per andare avanti e indietro; con la tastiera, le frecce (10 secondi)
+    // la riga dell'avanzamento si tocca e si trascina per andare avanti e indietro (G.player.scorri)
     const bar = box.querySelector(".ls-bar");
-    if (bar && !bar._vai) {
-      bar._vai = true;
-      bar.removeAttribute("aria-hidden");
-      bar.setAttribute("role", "slider");
-      bar.setAttribute("tabindex", "0");
-      bar.setAttribute("aria-label", G.L("Posizione nel riepilogo", "Position in the briefing"));
-      bar.setAttribute("aria-valuemin", "0");
-      const dove = (e) => { const r = bar.getBoundingClientRect(); return Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)); };
-      const porta = (f) => { const d = pl.dur(); if (d) { pl.to(f * d); $("ls-prog").style.transform = "scaleX(" + f.toFixed(4) + ")"; } };
-      let giu = false;
-      bar.addEventListener("pointerdown", (e) => { giu = true; bar.classList.add("presa"); try { bar.setPointerCapture(e.pointerId); } catch (x) { /* niente */ } porta(dove(e)); e.preventDefault(); });
-      bar.addEventListener("pointermove", (e) => { if (giu) porta(dove(e)); });
-      const su = () => { giu = false; bar.classList.remove("presa"); };
-      bar.addEventListener("pointerup", su);
-      bar.addEventListener("pointercancel", su);
-      bar.addEventListener("keydown", (e) => {
-        const d = pl.dur(), p = pl.pos();
-        if (!d) return;
-        const t = e.key === "ArrowRight" || e.key === "ArrowUp" ? p + 10 : e.key === "ArrowLeft" || e.key === "ArrowDown" ? p - 10 : e.key === "Home" ? 0 : e.key === "End" ? d - 1 : null;
-        if (t === null) return;
-        e.preventDefault();
-        pl.to(Math.max(0, Math.min(d, t)));
-      });
-      P.add(pl.on(() => { const d = pl.dur(), p = pl.pos(); bar.setAttribute("aria-valuemax", String(Math.round(d || 0))); bar.setAttribute("aria-valuenow", String(Math.round(p))); bar.setAttribute("aria-valuetext", pl.mmss(p) + G.L(" di ", " of ") + pl.mmss(d || 0)); }));
-    }
+    if (bar && !bar._scorri) { const via = pl.scorri(bar, $("ls-prog")); if (via) P.add(via); }
   }
 
   // ---------- mercati: un riquadro colorato per strumento, a gruppi ----------
@@ -1120,6 +1098,20 @@ G.page("home", async function (P) {
     salvaFiltro();
     folGest = !!d.gest;
     folQ = "";
+    if (d.vai) {
+      // il menu si chiude, poi la pagina scivola fino ai tuoi temi. Il segno per la pagina dopo (gerico.seguitiVai) si
+      // toglie solo quando si scende qui: se il link fa rifare la pagina, lo legge lei
+      const giu = () => { try { sessionStorage.removeItem("gerico.seguitiVai"); } catch (err) { /* niente */ } vaiAiTemi(true); };
+      if (state.section === "seguiti") { rifaiSeguiti(null, null); P.later(giu, 260); announce("seguiti"); }
+      else {
+        feedVer += 1; prepareSoon();
+        // la scheda Seguiti arriva con il cambio dell'indirizzo, a menu chiuso: si aspetta che ci sia
+        let n = 0;
+        const quando = () => { if (state.section === "seguiti") P.later(giu, 120); else if (++n < 12) P.later(quando, 150); };
+        P.later(quando, 300);
+      }
+      return;
+    }
     if (state.section === "seguiti") {
       rifaiSeguiti(null, null);
       window.scrollTo({ top: Math.min(scrollY, sectionTop().scroll === null ? scrollY : sectionTop().scroll), behavior: "instant" });
@@ -1227,6 +1219,16 @@ G.page("home", async function (P) {
   // dove comincia una sezione sullo schermo: dove sta adesso l'elenco o, se la pagina è già scesa oltre il suo inizio,
   // subito sotto la barra delle sezioni ferma in alto (scroll: dove portare la pagina). Cambiando sezione si riparte
   // dall'inizio della nuova, come in un'app.
+  // i Seguiti dal menu: la pagina scende fin dove la barra delle sezioni resta ferma in alto, e sotto c'è «I tuoi temi»
+  function vaiAiTemi(liscio) {
+    const nav = document.querySelector(".home .sec-nav");
+    let el = nav && nav.previousElementSibling;
+    while (el && !el.offsetHeight) el = el.previousElementSibling;
+    if (!el || state.section !== "seguiti") return;
+    const gap = Math.max(parseFloat(getComputedStyle(el).marginBottom) || 0, parseFloat(getComputedStyle(nav).marginTop) || 0);
+    const y = Math.max(0, Math.round(el.getBoundingClientRect().bottom + gap + scrollY - (parseFloat(getComputedStyle(nav).top) || 0)));
+    window.scrollTo({ top: y, behavior: liscio && !G.reduced() ? "smooth" : "instant" });
+  }
   function sectionTop() {
     const feed = $("feed"), nav = document.querySelector(".home .sec-nav"), fr = feed.getBoundingClientRect();
     if (!nav) return { top: fr.top, scroll: null };
@@ -1298,6 +1300,13 @@ G.page("home", async function (P) {
 
   state.section = sectionFromHash();
   buildNav(); markNav(); renderFeed(true); renderSide(); renderTicker(); renderNext(); renderUltim(); renderListen();
+  // arrivo dalla voce Seguiti del menu: a pagina disegnata (dopo il passaggio animato, se c'è) giù fino ai tuoi temi
+  if (vaiTemi && state.section === "seguiti") {
+    const vt = window.gericoVT;
+    if (vt && vt.finished) vt.finished.then(() => vaiAiTemi(true), () => vaiAiTemi(true));
+    else if (G.soft) P.later(() => vaiAiTemi(true), 480);
+    else requestAnimationFrame(() => vaiAiTemi(false));
+  }
   // tornando da una storia, il suo titolo e la sua immagine rifanno il percorso al contrario fino alla scheda
   try {
     const m = G.shownBefore && /\/storia(?:\.html)?\?(?:.*&)?id=([^&#]+)/.exec(G.shownBefore);

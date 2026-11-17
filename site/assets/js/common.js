@@ -57,13 +57,20 @@
     return G.ls.get("gerico.lang", "it") === "en" ? "en" : "it";
   })();
   G.en = G.lang === "en";
+  // la pagina di nuovo, nella lingua appena scelta: senza ?lang= nell'indirizzo (vincerebbe sulla scelta). Con lo stesso
+  // indirizzo serve reload: location.replace con un'ancora (#mondo) non ricarica, salta solo all'ancora
+  G.ricarica = () => {
+    const u = new URL(location.href);
+    if (u.searchParams.has("lang")) { u.searchParams.delete("lang"); location.replace(u.href); }
+    else location.reload();
+  };
   G.L = (it, en) => (G.en ? en : it);
   document.documentElement.lang = G.lang;
   const EN = {
     // pagine
     "GERICO · Le notizie del giorno, scritte su tutte le fonti": "GERICO · The day's news, written from every source",
     "GERICO Terminal · I mercati a colpo d'occhio": "GERICO Terminal · Markets at a glance",
-    "Una storia · GERICO": "A story · GERICO", "Come funziona · GERICO": "How it works · GERICO", "Privacy · GERICO": "Privacy · GERICO", "Glossario · GERICO": "Glossary · GERICO",
+    "Una storia · GERICO": "A story · GERICO", "Come funziona · GERICO": "How it works · GERICO", "Privacy · GERICO": "Privacy · GERICO", "Glossario · GERICO": "Glossary · GERICO", "Collabora · GERICO": "Collaborate · GERICO",
     "Pagina non trovata · GERICO": "Page not found · GERICO",
     "Vai alle notizie": "Skip to the news", "Vai alla storia": "Skip to the story", "Vai alla mappa": "Skip to the map", "Vai al testo": "Skip to the text",
     "GERICO, prima pagina": "GERICO, front page", "Oggi": "Today", "Notizie o Terminal": "News or Terminal", "Notizie": "News",
@@ -957,7 +964,73 @@
         P.keep(o);
         P.add(() => { cardSeen = false; paint(); });
       },
-      mount() { if (bar && !bar.isConnected) document.body.appendChild(bar); cardSeen = false; paint(); }
+      mount() { if (bar && !bar.isConnected) document.body.appendChild(bar); cardSeen = false; paint(); },
+      // una riga del tempo che si tocca e si trascina, liberamente avanti e indietro: la riga segue il dito, sopra c'è il
+      // minuto a cui si arriva, e l'audio salta lì quando si lascia. Con la tastiera le frecce (10 secondi), Inizio e Fine
+      scorri(el, prog) {
+        if (!el || !prog || el._scorri) return;
+        el._scorri = true;
+        el.removeAttribute("aria-hidden");
+        el.setAttribute("role", "slider");
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("aria-label", G.L("Posizione nel riepilogo", "Position in the briefing"));
+        el.setAttribute("aria-valuemin", "0");
+        el.setAttribute("data-noswipe", "");
+        const bolla = document.createElement("span");
+        bolla.className = "tempo-bolla";
+        bolla.setAttribute("aria-hidden", "true");
+        const pomello = document.createElement("span");
+        pomello.className = "pomello";
+        pomello.setAttribute("aria-hidden", "true");
+        el.append(pomello, bolla);
+        let giu = false, f = 0;
+        const dove = (e) => { const r = el.getBoundingClientRect(); return r.width ? Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) : 0; };
+        const segui = () => {
+          prog.style.transform = "scaleX(" + f.toFixed(4) + ")";
+          pomello.style.left = (f * 100).toFixed(2) + "%";
+          bolla.textContent = mmss(f * dur());
+          // il minuto resta dentro la riga anche ai due capi
+          const w = el.clientWidth, mezza = bolla.offsetWidth / 2;
+          bolla.style.left = Math.round(Math.max(mezza, Math.min(w - mezza, f * w))) + "px";
+        };
+        el.addEventListener("pointerdown", (e) => {
+          if (!info || !dur() || (e.pointerType === "mouse" && e.button)) return;
+          giu = true;
+          el.classList.add("presa");
+          try { el.setPointerCapture(e.pointerId); } catch (x) { /* niente */ }
+          f = dove(e);
+          segui();
+          e.preventDefault();
+          e.stopPropagation();
+        });
+        el.addEventListener("pointermove", (e) => { if (giu) { f = dove(e); segui(); } });
+        const lascia = (vai) => {
+          if (!giu) return;
+          giu = false;
+          el.classList.remove("presa");
+          if (vai) api.to(f * dur()); else emit();
+        };
+        el.addEventListener("pointerup", () => lascia(true));
+        el.addEventListener("pointercancel", () => lascia(false));
+        el.addEventListener("lostpointercapture", () => lascia(true));
+        el.addEventListener("keydown", (e) => {
+          const d = dur(), p = pos();
+          if (!d) return;
+          const t = e.key === "ArrowRight" || e.key === "ArrowUp" ? p + 10 : e.key === "ArrowLeft" || e.key === "ArrowDown" ? p - 10 : e.key === "Home" ? 0 : e.key === "End" ? d - 1 : null;
+          if (t === null) return;
+          e.preventDefault();
+          api.to(Math.max(0, Math.min(d, t)));
+        });
+        const valori = () => {
+          const d = dur(), p = pos();
+          if (!giu) pomello.style.left = (d ? Math.min(1, p / d) * 100 : 0).toFixed(2) + "%";
+          el.setAttribute("aria-valuemax", String(Math.round(d || 0)));
+          el.setAttribute("aria-valuenow", String(Math.round(p)));
+          el.setAttribute("aria-valuetext", mmss(p) + G.L(" di ", " of ") + mmss(d || 0));
+        };
+        valori();
+        return api.on(valori);
+      }
     };
     audio.addEventListener("play", () => { session(); emit(); });
     audio.addEventListener("pause", () => { save(); emit(); });
@@ -988,6 +1061,7 @@
         '<button type="button" class="gp-sk" data-d="15" aria-label="' + G.L("Avanti di 15 secondi", "Forward 15 seconds") + '">+15</button>' +
         '<button type="button" class="gp-x" aria-label="' + G.L("Chiudi il riepilogo", "Close the briefing") + '"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>' +
         '<span class="gp-bar" aria-hidden="true"><i></i></span>';
+      api.scorri(bar.querySelector(".gp-bar"), bar.querySelector(".gp-bar i"));
       bar.querySelector(".gp-play").addEventListener("click", () => api.toggle());
       bar.querySelectorAll(".gp-sk").forEach((b) => b.addEventListener("click", () => api.seek(Number(b.dataset.d))));
       bar.querySelector(".gp-x").addEventListener("click", () => api.close());
@@ -1020,7 +1094,8 @@
       bar.querySelector(".gp-play").setAttribute("aria-label", on ? G.L("Metti in pausa il riepilogo", "Pause the briefing") : G.L("Riprendi il riepilogo", "Resume the briefing"));
       bar.querySelector(".gp-t").textContent = title();
       bar.querySelector(".gp-s").textContent = d ? (on ? G.L("Mancano ", "Left ") : G.L("In pausa · mancano ", "Paused · left ")) + mmss(Math.max(0, d - pos())) : "";
-      bar.querySelector(".gp-bar i").style.transform = "scaleX(" + (d ? Math.min(1, pos() / d) : 0).toFixed(4) + ")";
+      // mentre si trascina la riga la posizione è quella del dito
+      if (!bar.querySelector(".gp-bar.presa")) bar.querySelector(".gp-bar i").style.transform = "scaleX(" + (d ? Math.min(1, pos() / d) : 0).toFixed(4) + ")";
     }
     return api;
   })();
@@ -1333,7 +1408,7 @@
   //   commit(d): il cambio vero, senza animazioni, quando la pagina vicina è arrivata al suo posto;
   //   progress(p, d, anim): per l'indicatore delle schede (p da 0 a 1 verso la scheda vicina);
   //   senza peek, next(reset, off, anim) e prev(...): la storia vicina arriva con la transizione di pagina.
-  const NOSWIPE = "input, textarea, select, [contenteditable], .ultim, [data-noswipe]";
+  const NOSWIPE = "input, textarea, select, [contenteditable], .ultim, [data-noswipe], .gp";
   const SWIPE_GAP = 28;
   // Il passaggio dopo il rilascio è una molla senza rimbalzo: parte alla velocità del dito (v in px/ms verso l'arrivo),
   // accelera o rallenta in modo continuo e si posa piano. La curva è scritta a punti con linear(); dove il browser non la
@@ -1612,9 +1687,7 @@
       b.addEventListener("click", () => {
         if (b.dataset.langSet === G.lang) return;
         G.ls.set("gerico.lang", b.dataset.langSet);
-        const u = new URL(location.href);
-        u.searchParams.delete("lang");
-        location.replace(u.href);
+        G.ricarica();
       });
     });
     G.intro();
@@ -1720,27 +1793,20 @@
         const a = e.target.closest("a[href]");
         if (a && clean(new URL(a.href, location.href).pathname) === clean(location.pathname)) close();
       });
-      // i temi seguiti, anche nel menu: un tocco apre i Seguiti su quel tema; sotto, il link a tutti i Seguiti
-      const links = menu.querySelector(".menu-links");
-      if (links && !menu.querySelector(".fol-menu")) {
-        const box = document.createElement("div");
-        box.className = "opt fol-menu";
-        links.after(box);
-        // un tema caldo si segue con il nome italiano: in inglese si mostra con il nome tradotto dalla mappa della lingua
-        let trMap = null;
-        const nomeTema = (t) => (trMap && typeof trMap[G.hash(t)] === "string" ? trMap[G.hash(t)] : G.tn(t));
-        const draw = () => {
-          const f = G.follows();
-          box.innerHTML = '<p class="opt-l" id="opt-fol">' + G.L("Temi seguiti", "Followed topics") + "</p>" +
-            (f.length ? '<div class="tags" role="group" aria-labelledby="opt-fol">' + f.map((t) => '<a class="tag tag-l" href="./#seguiti" data-fol-tema="' + G.esc(t) + '">' + G.esc(nomeTema(t)) + "</a>").join("") +
-              '</div><p class="fol-note">' + G.L("Tocca un tema per leggere le sue notizie.", "Tap a topic to read its news.") + "</p>"
-              : '<p class="fol-note">' + G.L("Non segui ancora nessun tema.", "You don't follow any topics yet.") + "</p>") +
-            '<nav class="menu-links" aria-label="' + G.L("Temi seguiti", "Followed topics") + '"><a href="./#seguiti">' + (f.length ? G.L("Tutti i Seguiti", "All of Following") : G.L("Scegli i temi da seguire", "Choose topics to follow")) + "</a>" +
-            (f.length ? '<a href="./#seguiti" data-fol-gest="1">' + G.L("Aggiungi o togli temi", "Add or remove topics") + "</a>" : "") + "</nav>";
-        };
-        draw();
-        if (G.en) G.load("tr/" + G.lang).then((m) => { if (m && typeof m === "object") { trMap = m; draw(); } });
-        G.conto.menu(menu, box);
+      // i Seguiti nel menu: una voce sola, in cima alle pagine. Porta alla scheda Seguiti della prima pagina, su «I tuoi
+      // temi», con tutti i temi (non quello scelto l'ultima volta) e senza la modifica aperta
+      const links = menu.querySelector("nav.menu-links");
+      if (links && !menu.querySelector("[data-seguiti]")) {
+        const a = document.createElement("a");
+        a.href = "./#seguiti";
+        a.dataset.seguiti = "1";
+        a.textContent = G.L("Seguiti", "Following");
+        links.prepend(a);
+        a.addEventListener("click", () => {
+          try { sessionStorage.removeItem("gerico.seguitiFiltro"); sessionStorage.removeItem("gerico.seguitiGest"); sessionStorage.setItem("gerico.seguitiVai", "1"); } catch (err) { /* niente */ }
+          document.dispatchEvent(new CustomEvent("gerico:seguiti-tema", { detail: { tema: "", gest: false, vai: true } }));
+        });
+        G.conto.menu(menu, links);
         // la ricerca in cima al menu: ha l'aspetto di un campo e apre il foglio della ricerca
         const head = menu.querySelector(".menu-head");
         if (head && !menu.querySelector(".cerca-menu")) {
@@ -1752,32 +1818,17 @@
           c.addEventListener("click", (e) => { if (e.target.closest("[data-cerca]")) { e.stopPropagation(); G.cerca.apri(); } });
         }
         // «Installa GERICO» in fondo alle pagine del menu, solo se il browser lo permette e il sito non è già installato
-        const pagine = menu.querySelector("nav.menu-links");
-        if (pagine && !pagine.querySelector("[data-app]")) {
+        if (!links.querySelector("[data-app]")) {
           const b = document.createElement("button");
           b.type = "button";
           b.dataset.app = "1";
           b.textContent = G.L("Installa GERICO", "Install GERICO");
           const vedi = () => { b.hidden = !G.app.puo(); };
           vedi();
-          pagine.appendChild(b);
+          links.appendChild(b);
           P.on(document, "gerico:app", vedi);
           b.addEventListener("click", (e) => { e.stopPropagation(); G.app.installa(); });
         }
-        // un tema del menu apre i Seguiti su quel tema, «Tutti i Seguiti» su tutti, «Aggiungi o togli temi» con la modifica
-        // aperta: lo dice alla prima pagina (se è questa) e lo lascia in memoria di sessione per quando ci si arriva da
-        // un'altra pagina (la prima pagina tiene il tema scelto per tutta la visita)
-        box.addEventListener("click", (e) => {
-          const a = e.target.closest('a[href="./#seguiti"]');
-          if (!a) return;
-          const tema = a.dataset.folTema || "", gest = !!a.dataset.folGest;
-          try {
-            if (tema) sessionStorage.setItem("gerico.seguitiFiltro", tema); else sessionStorage.removeItem("gerico.seguitiFiltro");
-            if (gest) sessionStorage.setItem("gerico.seguitiGest", "1"); else sessionStorage.removeItem("gerico.seguitiGest");
-          } catch (err) { /* niente */ }
-          document.dispatchEvent(new CustomEvent("gerico:seguiti-tema", { detail: { tema, gest } }));
-        });
-        P.on(document, "gerico:follows", draw);
       }
     }
 
@@ -2118,11 +2169,25 @@
   G.paeseDaSlug = (slug) => G.PAESI.find((p) => p.slug === slug) || null;
   // il paese scelto resta nel browser (gerico.paese); l'Italia è quello di partenza
   G.paese = () => { const c = G.ls.get("gerico.paese", "IT"); return PAESE_DI[c] ? c : "IT"; };
-  // sync: il cambio arriva dall'account (un altro dispositivo), non da un tocco qui
+  // la lingua segue il paese: italiano per l'Italia, San Marino e il Vaticano, inglese per tutti gli altri (dal menu si
+  // può sempre cambiare)
+  G.linguaDi = (code) => (["IT", "SM", "VA"].includes(code) ? "it" : "en");
+  // sync: il cambio arriva dall'account (un altro dispositivo), non da un tocco qui: allora la lingua di questo
+  // dispositivo non cambia
   G.setPaese = (code, sync) => {
     if (!PAESE_DI[code]) return;
     G.ls.set("gerico.paese", code);
     document.dispatchEvent(new CustomEvent("gerico:paese", { detail: { code, sync: !!sync } }));
+    const lingua = G.linguaDi(code);
+    if (sync || lingua === G.lang) return;
+    G.ls.set("gerico.lang", lingua);
+    // i testi tradotti sono altri file: la pagina si rifà nella lingua nuova appena si chiudono i fogli aperti (la
+    // scelta del paese, le domande del percorso); il menu sotto di loro no, si chiude con la pagina
+    const rifai = () => {
+      if (document.querySelector("dialog[open]:not(#menu)")) { setTimeout(rifai, 200); return; }
+      G.ricarica();
+    };
+    setTimeout(rifai, 50);
   };
 
   // le bandiere: disegni semplici, 30 x 20, fatti qui (nessuna immagine di altri siti). Gli stemmi sono ridotti a forme
@@ -2252,7 +2317,7 @@
     d.innerHTML = '<div class="menu-in"><div class="grab" aria-hidden="true"></div>' +
       '<div class="menu-head"><h2 class="menu-t" id="paesi-t">' + G.L("Il tuo paese", "Your country") + '</h2><button class="menu-x" type="button" data-close aria-label="' + G.L("Chiudi", "Close") + '">' +
       '<svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>' +
-      '<p class="paesi-sub">' + G.L("In prima pagina la scheda del tuo paese prende il posto di Italia, con le sue notizie principali.", "On the front page your country's tab takes the place of Italy, with its main news.") + "</p>" +
+      '<p class="paesi-sub">' + G.L("In prima pagina la scheda del tuo paese prende il posto di Italia, con le sue notizie principali. La lingua segue il paese: italiano per l'Italia, inglese per gli altri.", "On the front page your country's tab takes the place of Italy, with its main news. The language follows the country: Italian for Italy, English for the others.") + "</p>" +
       '<input class="paesi-q" type="search" autocomplete="off" spellcheck="false" placeholder="' + G.L("Cerca un paese", "Search for a country") + '" aria-label="' + G.L("Cerca un paese", "Search for a country") + '">' +
       '<p class="opt-l paesi-g">' + G.L("Articoli e brevi ogni giorno", "Articles and briefs every day") + '</p><ul class="paesi-l">' + primi.map(riga).join("") + "</ul>" +
       '<p class="opt-l paesi-g">' + G.L("Le brevi delle testate del paese", "Briefs from the country's outlets") + '</p><ul class="paesi-l">' + altri.map(riga).join("") + "</ul>" +
@@ -2860,7 +2925,7 @@
     };
 
     // ---------- a ogni pagina: chi sei, la proposta dell'account, il conteggio della visita ----------
-    const PAGINE = { "/": "prima-pagina", "/storia": "storia", "/terminal": "terminal", "/come-funziona": "come-funziona", "/privacy": "privacy", "/glossario": "glossario", "/admin": "admin" };
+    const PAGINE = { "/": "prima-pagina", "/storia": "storia", "/terminal": "terminal", "/come-funziona": "come-funziona", "/privacy": "privacy", "/glossario": "glossario", "/collabora": "collabora", "/admin": "admin" };
     const pagina_ = () => PAGINE[location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/")] || "";
     const dispositivo = () => {
       const tocco = !!(window.matchMedia && matchMedia("(pointer: coarse)").matches);
@@ -3065,17 +3130,20 @@
     return { apri, trova, norm };
   })();
 
-  // ---------- il glossario (data/glossario.json): negli articoli la prima volta che compare una parola del glossario è
-  // sottolineata, al massimo sei per articolo; un tocco apre la spiegazione in un foglio, con il link alla pagina ----------
+  // ---------- il glossario (data/glossario.json): negli articoli la prima volta che compare una parola molto tecnica
+  // (le voci con tec) è in grassetto, al massimo sei per articolo. Con il mouse, passandoci sopra si apre una nota sopra la
+  // parola che la spiega; un clic porta alla voce del glossario. Sul telefono il primo tocco apre la nota, un tocco sulla
+  // nota (o di nuovo sulla parola) porta al glossario. Con la tastiera la nota compare sulla parola che ha il fuoco ----------
   G.glossario = (() => {
     const L = G.L;
-    let voci = {};
+    const voci = {};
     const forme = (gl) => {
       const lato = G.en ? "en" : "it";
       return ((gl && gl.voci) || []).map((v) => {
         const x = v && v[lato];
         if (!x || !x.t) return null;
         voci[v.id] = x;
+        if (!v.tec) return null;
         const f = (Array.isArray(x.m) ? x.m : [x.t].concat(x.alt || [])).filter((y) => typeof y === "string" && y).sort((a, b) => b.length - a.length);
         if (!f.length) return null;
         const alt = f.map((y) => y.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
@@ -3111,26 +3179,116 @@
         if (!node || node.nodeType !== 3 || node.length < x.b) return;
         node.splitText(x.b);
         const parola = node.splitText(x.a);
-        const b = document.createElement("button");
-        b.type = "button";
-        b.className = "gl-w";
-        b.dataset.gl = x.id;
-        b.setAttribute("aria-haspopup", "dialog");
-        b.textContent = parola.data;
-        parola.replaceWith(b);
+        const a = document.createElement("a");
+        a.className = "gl-w";
+        a.href = "glossario#" + x.id;
+        a.dataset.gl = x.id;
+        a.textContent = parola.data;
+        parola.replaceWith(a);
       });
       return scelti.length;
     };
-    const apri = (id) => {
-      const x = voci[id];
-      if (!x) return;
-      G.conto.foglio(x.t, '<p class="conto-p gl-d">' + G.esc(x.d) + '</p><p class="cerca-a"><a href="glossario#' + G.esc(id) + '">' + L("Tutto il glossario", "The whole glossary") + "</a></p>");
+
+    // ---- la nota: una sola, sopra la parola (sotto se sopra non c'è posto), con la freccia verso la parola ----
+    let nota = null, su = null, tMostra = 0, tNascondi = 0, tocco = false;
+    const crea = () => {
+      if (nota && nota.isConnected) return nota;
+      nota = document.createElement("div");
+      nota.className = "gl-nota";
+      nota.id = "gl-nota";
+      nota.setAttribute("role", "tooltip");
+      nota.hidden = true;
+      document.body.appendChild(nota);
+      // a nota sparita non resta niente da leggere per chi usa un lettore di schermo
+      nota.addEventListener("transitionend", (e) => { if (e.propertyName === "opacity" && !nota.classList.contains("on")) nota.hidden = true; });
+      nota.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") clearTimeout(tNascondi); });
+      nota.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") nascondi(140); });
+      nota.addEventListener("click", () => { if (su) su.click(); });
+      return nota;
     };
-    document.addEventListener("click", (e) => {
-      const b = e.target.closest && e.target.closest("button[data-gl]");
-      if (b) apri(b.dataset.gl);
+    const posiziona = (a, x) => {
+      const n = crea(), rs = Array.from(a.getClientRects());
+      // una parola può andare a capo: la riga sotto il puntatore, se no la prima
+      const r = (x != null && rs.find((q) => x >= q.left - 1 && x <= q.right + 1)) || rs[0] || a.getBoundingClientRect();
+      const box = (a.closest(".article") || a.parentElement).getBoundingClientRect();
+      const sx = Math.max(12, box.left - 8), dx = Math.min(innerWidth - 12, box.right + 8);
+      const w = Math.min(340, dx - sx);
+      n.style.width = w + "px";
+      const cx = x != null ? x : r.left + r.width / 2;
+      const left = Math.round(Math.max(sx, Math.min(cx - w / 2, dx - w)));
+      const h = n.offsetHeight, alto = (document.querySelector(".top") || {}).offsetHeight || 0;
+      const sopra = r.top - h - 14 > alto;
+      n.dataset.lato = sopra ? "sopra" : "sotto";
+      n.style.left = left + scrollX + "px";
+      n.style.top = Math.round((sopra ? r.top - h - 12 : r.bottom + 12) + scrollY) + "px";
+      n.style.setProperty("--freccia", Math.round(Math.min(Math.max(cx - left, 18), w - 18)) + "px");
+    };
+    const mostra = (a, x) => {
+      clearTimeout(tNascondi);
+      const v = voci[a.dataset.gl];
+      if (!v) return;
+      const n = crea(), gia = !!su && n.classList.contains("on") && su !== a;
+      if (su && su !== a) su.removeAttribute("aria-describedby");
+      su = a;
+      n.innerHTML = '<b class="gln-t">' + G.esc(v.t) + '</b><span class="gln-d">' + G.esc(v.d) + '</span><span class="gln-a">' +
+        (tocco ? L("Tocca la nota per aprire il glossario", "Tap the note to open the glossary") : L("Clicca sulla parola per aprire il glossario", "Click the word to open the glossary")) + "</span>";
+      // da una parola all'altra la nota scivola al posto nuovo invece di sparire e ricomparire
+      n.classList.toggle("sposta", gia);
+      n.hidden = false;
+      posiziona(a, x);
+      a.setAttribute("aria-describedby", "gl-nota");
+      a.classList.add("gl-su");
+      if (!n.classList.contains("on")) { void n.offsetWidth; n.classList.add("on"); }
+      document.querySelectorAll(".gl-w.gl-su").forEach((y) => { if (y !== a) y.classList.remove("gl-su"); });
+    };
+    const nascondi = (ms) => {
+      clearTimeout(tMostra);
+      clearTimeout(tNascondi);
+      tNascondi = setTimeout(() => {
+        if (!nota) return;
+        nota.classList.remove("on", "sposta");
+        if (G.reduced()) nota.hidden = true;
+        if (su) { su.removeAttribute("aria-describedby"); su.classList.remove("gl-su"); }
+        su = null;
+      }, ms || 0);
+    };
+    const parola = (e) => e.target && e.target.closest && e.target.closest("a.gl-w");
+    document.addEventListener("pointerdown", (e) => { tocco = e.pointerType !== "mouse"; }, true);
+    document.addEventListener("pointerover", (e) => {
+      if (e.pointerType !== "mouse") return;
+      const a = parola(e);
+      if (!a) return;
+      clearTimeout(tNascondi);
+      clearTimeout(tMostra);
+      tocco = false;
+      if (su === a) return;
+      const x = e.clientX;
+      // un attimo di attesa: passando sopra il testo per caso la nota non lampeggia
+      tMostra = setTimeout(() => mostra(a, x), su ? 0 : 160);
     });
-    return { collega, apri };
+    document.addEventListener("pointerout", (e) => {
+      if (e.pointerType !== "mouse") return;
+      const a = parola(e);
+      if (!a || (e.relatedTarget && (a.contains(e.relatedTarget) || (nota && nota.contains(e.relatedTarget))))) return;
+      clearTimeout(tMostra);
+      if (su) nascondi(140);
+    });
+    // al tocco: il primo apre la nota, il secondo sulla stessa parola porta al glossario (il passaggio lo fa G.go)
+    document.addEventListener("click", (e) => {
+      const a = parola(e);
+      if (a) {
+        if (tocco && su !== a) { e.preventDefault(); mostra(a, null); return; }
+        nascondi(0);
+        return;
+      }
+      if (su && !(nota && nota.contains(e.target))) nascondi(0);
+    }, true);
+    document.addEventListener("focusin", (e) => { const a = parola(e); if (a && a.matches(":focus-visible")) { tocco = false; mostra(a, null); } });
+    document.addEventListener("focusout", (e) => { if (parola(e) && su) nascondi(120); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && su) nascondi(0); });
+    window.addEventListener("scroll", () => { if (su && tocco) nascondi(0); }, { passive: true });
+    window.addEventListener("resize", () => { if (su) nascondi(0); });
+    return { collega };
   })();
 
   // ---------- il sito installabile: il service worker (sw.js) tiene sul dispositivo una copia di quello che si è letto,
@@ -3202,7 +3360,7 @@
     // le schermate: k, titolo, riga di spiegazione, corpo
     const PASSI = {
       benvenuto: { t: () => L("Benvenuto su GERICO", "Welcome to GERICO"), s: () => L("Le notizie del giorno, scritte su tutte le fonti. Poche domande per mettere prima quello che ti interessa: tocca le risposte, o salta.", "The day's news, written from all the sources. A few questions to put what interests you first: tap the answers, or skip."), marchio: true },
-      paese: { t: () => L("Da dove leggi?", "Where do you read from?"), s: () => L("In prima pagina trovi la scheda del tuo paese, con le sue notizie.", "The front page has a tab for your country, with its news."), c: paesi },
+      paese: { t: () => L("Da dove leggi?", "Where do you read from?"), s: () => L("In prima pagina trovi la scheda del tuo paese, con le sue notizie. La lingua segue il paese: italiano per l'Italia, inglese per gli altri.", "The front page has a tab for your country, with its news. The language follows the country: Italian for Italy, English for the others."), c: paesi },
       account: { t: () => L("Un account, se vuoi", "An account, if you like"), s: () => L("Le tue scelte valgono su ogni dispositivo. Per leggere non serve.", "Your choices work on every device. You don't need one to read."), c: account },
       fine: { t: () => L("Tutto pronto", "All set"), s: () => L("GERICO adesso mette prima quello che ti interessa. Lo cambi quando vuoi dal menu, in «I tuoi interessi».", "GERICO now puts what interests you first. Change it whenever you like from the menu, under “Your interests”.") }
     };

@@ -367,7 +367,7 @@ async function mieiDati(c) {
 }
 
 // ---------- conteggi: visite e errori delle pagine, senza cookie e senza IP ----------
-const PAGINE = new Set(["prima-pagina", "storia", "terminal", "come-funziona", "privacy", "glossario"]);
+const PAGINE = new Set(["prima-pagina", "storia", "terminal", "come-funziona", "privacy", "glossario", "collabora"]);
 const STORIA = /^[a-z0-9][a-z0-9-]{0,150}$/;
 // da dove arriva una visita: il nome del sito di provenienza (solo quello, mai l'indirizzo intero), raggruppato. «diretto»:
 // senza provenienza (indirizzo scritto, preferiti, app che non la dicono, come WhatsApp)

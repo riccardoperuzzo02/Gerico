@@ -33,7 +33,7 @@ from email.utils import format_datetime
 
 SAFE_ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,150}$")
 FALLBACK = "https://gerico.financialnews.workers.dev"
-PAGES = ["", "terminal", "come-funziona", "glossario"]
+PAGES = ["", "terminal", "come-funziona", "glossario", "collabora"]
 SEZIONI = {"mondo": "Mondo", "italia": "Italia", "economia": "Economia", "mercati": "Mercati", "tecnologia": "Tecnologia"}
 MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
@@ -193,20 +193,22 @@ def forme_glossario(gl):
     out = []
     for v in (gl or {}).get("voci") or []:
         x = v.get("it") if isinstance(v, dict) else None
-        if not x or not x.get("t") or not SLUG.match(str(v.get("id") or "")):
+        # negli articoli solo le parole davvero tecniche (tec), in grassetto con la loro nota
+        if not x or not x.get("t") or not v.get("tec") or not SLUG.match(str(v.get("id") or "")):
             continue
         forme = x.get("m") if isinstance(x.get("m"), list) else [x["t"]] + list(x.get("alt") or [])
         forme = sorted({f for f in forme if isinstance(f, str) and f}, key=len, reverse=True)
         if forme:
             rx = re.compile(r"(?<![\w])(" + "|".join(re.escape(f) for f in forme) + r")(?![\w])", 0 if v.get("cs") else re.IGNORECASE)
-            out.append((v["id"], rx, [str(n).lower() for n in x.get("no") or []]))
+            out.append((v["id"], rx, [str(n).lower() for n in x.get("no") or []], " ".join(str(x.get("d") or "").split())))
     return out
 
 
 def collega_glossario(paragrafi, forme, quanti=6):
     """i paragrafi in HTML, con la prima volta di ogni parola del glossario che porta alla sua voce (al massimo «quanti»)"""
     trovati = []
-    for gid, rx, no in forme:
+    definizioni = {f[0]: f[3] for f in forme}
+    for gid, rx, no, _d in forme:
         fatto = False
         for pi, t in enumerate(paragrafi):
             for m in rx.finditer(t):
@@ -228,7 +230,7 @@ def collega_glossario(paragrafi, forme, quanti=6):
     for pi, t in enumerate(paragrafi):
         pezzi, da = [], 0
         for _, a, b, gid in sorted(y for y in scelti if y[0] == pi):
-            pezzi.append(E(t[da:a]) + f'<a class="gl-a" href="/glossario#{gid}">{E(t[a:b])}</a>')
+            pezzi.append(E(t[da:a]) + f'<a class="gl-a" href="/glossario#{gid}" data-d="{E(definizioni.get(gid, ""))}">{E(t[a:b])}</a>')
             da = b
         out.append("".join(pezzi) + E(t[da:]))
     return out
@@ -249,9 +251,9 @@ def pagina_glossario(site, base, gl):
     parti = ['<div class="prose gl">',
              '<h1><span data-only="it">Glossario</span><span data-only="en">Glossary</span></h1>',
              '<p class="sum" data-only="it">Le parole dell\'economia, dei mercati e della politica che tornano più spesso nelle notizie, spiegate in poche righe. '
-             'Negli articoli, la prima volta che ne compare una è sottolineata: un tocco e si legge la spiegazione.</p>',
+             'Negli articoli le più tecniche sono in grassetto: passandoci sopra si legge la spiegazione, cliccandoci si arriva qui.</p>',
              '<p class="sum" data-only="en">The words of economics, markets and politics that keep coming back in the news, explained in a few lines. '
-             'In the articles, the first time one appears it is underlined: tap it to read the explanation.</p>']
+             'In the articles the most technical ones are in bold: hover over one to read the explanation, click it to come here.</p>']
     nav = []
     for k, (n_it, n_en) in gruppi.items():
         if any(v.get("g") == k for v in voci):

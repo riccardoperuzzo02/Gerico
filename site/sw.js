@@ -4,12 +4,12 @@
 //  - dati (/data): prima la rete, poi la copia
 //  - file del sito con la versione (?v=) e caratteri: la copia, che non cambia mai (una versione nuova ha un indirizzo nuovo)
 //  - immagini: la copia se c'è, altrimenti la rete (e se ne tiene un numero limitato)
-const V = "20261117-1";
+const V = "20261117-2";
 const STATICI = "gerico-statici-" + V, CARATTERI = "gerico-caratteri", PAGINE = "gerico-pagine", DATI = "gerico-dati", IMMAGINI = "gerico-immagini";
 const TENUTE = [STATICI, CARATTERI, PAGINE, DATI, IMMAGINI];
 const PRIMA = ["/", "/storia", "/offline.html", "/assets/css/gerico.css?v=" + V, "/assets/js/common.js?v=" + V, "/assets/js/home.js?v=" + V, "/assets/js/story.js?v=" + V];
 // le pagine dell'app sono gusci: la storia è nell'indirizzo (?id=), il contenuto nei dati
-const GUSCI = new Set(["/", "/storia", "/terminal", "/come-funziona", "/privacy", "/glossario"]);
+const GUSCI = new Set(["/", "/storia", "/terminal", "/come-funziona", "/privacy", "/glossario", "/collabora"]);
 const MAX = { [PAGINE]: 80, [IMMAGINI]: 150 };
 
 self.addEventListener("install", (e) => {

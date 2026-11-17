@@ -21,7 +21,7 @@ G.page("admin", async function (P) {
   if (!PERIODI.includes(giorni)) giorni = 30;
   let turno = 0;
 
-  const PAGINA = { "prima-pagina": L("Prima pagina", "Front page"), storia: L("Storie", "Stories"), terminal: "Terminal", "come-funziona": L("Come funziona", "How it works"), privacy: "Privacy", glossario: L("Glossario", "Glossary") };
+  const PAGINA = { "prima-pagina": L("Prima pagina", "Front page"), storia: L("Storie", "Stories"), terminal: "Terminal", "come-funziona": L("Come funziona", "How it works"), privacy: "Privacy", glossario: L("Glossario", "Glossary"), collabora: L("Collabora", "Collaborate") };
   // da dove arrivano le visite: i nomi dei siti raggruppati dal Worker; gli altri siti col loro nome
   const FONTE = {
     diretto: L("Diretto o da un'app", "Direct or from an app"), google: "Google", "google-news": "Google News", bing: "Bing", duckduckgo: "DuckDuckGo", yahoo: "Yahoo",

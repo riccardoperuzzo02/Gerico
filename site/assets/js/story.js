@@ -119,12 +119,12 @@ G.page("story", async function (P) {
     linked.map(({ it, c }) => '<tr><th scope="row">' + esc(G.tn(G.shortName(it.name))) + "</th><td>" + esc(G.cleanValue(it.value)) +
       '</td><td class="mv ' + G.tone(it, c.key) + '">' + esc(typeof it.bp === "number" ? G.bpsLong(it.bp) : G.move(it)) + "</td></tr>").join("") +
     '</tbody></table><p class="when">' + esc(G.mkWhen(mk)) + '</p><a class="more" href="terminal.html">' + G.L("Tutti i mercati", "All markets") + "</a></section>" : "";
-  // i temi della storia: un tocco li segue («+ Tema» diventa «✓ Tema»); quando ne segui almeno uno, il link ai Seguiti
+  // i temi della storia: un tocco li segue («+ Tema» diventa «✓ Tema»)
   const seguito = (t) => G.follows().some((f) => f.toLowerCase() === String(t).toLowerCase());
   const tagsHTML = (s.tags || []).length ? '<section class="tagbox" aria-label="' + G.L("Temi", "Topics") + '"><h2>' + G.L("Segui i temi di questa storia", "Follow this story's topics") + "</h2>" +
     '<p class="fol-note">' + G.L("Le notizie dei temi che segui le trovi nei Seguiti, in prima pagina.", "News on the topics you follow is in Following, on the front page.") + '</p><div class="tags">' +
     s.tags.map((t) => '<button type="button" class="tag" data-follow="' + esc(t) + '" aria-pressed="' + seguito(t) + '">' + esc(G.tn(t)) + "</button>").join("") +
-    '</div><a class="more tag-vai" href="./#seguiti"' + (G.follows().length ? "" : " hidden") + ">" + G.L("Apri i tuoi Seguiti", "Open your Following") + "</a></section>" : "";
+    "</div></section>" : "";
 
   // sul telefono le fonti stanno nel testo, chiuse; sul computer nella colonna di destra
   const narrow = (nSrc ? disclosure("srcs-n", srcTitle, srcIntro + srcList, "srcbox only-narrow") : "") + '<div class="only-narrow">' + linkedHTML + tagsHTML + "</div>";
@@ -289,6 +289,5 @@ G.page("story", async function (P) {
   // seguito o lasciato da qui o dal menu: i temi in fondo alla storia si aggiornano
   P.on(document, "gerico:follows", () => {
     document.querySelectorAll(".tagbox [data-follow]").forEach((x) => x.setAttribute("aria-pressed", String(seguito(x.dataset.follow))));
-    document.querySelectorAll(".tagbox .tag-vai").forEach((x) => { x.hidden = !G.follows().length; });
   });
 });

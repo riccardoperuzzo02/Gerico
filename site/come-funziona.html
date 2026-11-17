@@ -22,7 +22,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261117-1">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261117-2">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -38,7 +38,7 @@
 <div class="menu-in">
 <div class="grab" aria-hidden="true"></div>
 <div class="menu-head"><h2 class="menu-t" id="menu-t">Menu</h2><button class="menu-x" type="button" data-close aria-label="Chiudi il menu"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="15" fill="currentColor" opacity=".1"/><path d="M10.5 10.5l9 9m0-9-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-<nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="glossario">Glossario</a><a href="archivio">Archivio</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a></nav>
+<nav class="menu-links" aria-label="Pagine"><a href="come-funziona.html">Come funziona</a><a href="glossario">Glossario</a><a href="archivio">Archivio</a><a href="privacy.html">Privacy</a><a href="collabora">Collabora</a></nav>
 <div class="opt"><p class="opt-l" id="opt-lang">Lingua</p><div class="seg seg-fill" role="group" aria-labelledby="opt-lang"><button type="button" data-lang-set="it" lang="it">Italiano</button><button type="button" data-lang-set="en" lang="en">English</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-theme">Tema</p><div class="seg seg-fill" role="group" aria-labelledby="opt-theme"><button type="button" data-theme-set="light">Chiaro</button><button type="button" data-theme-set="dark">Scuro</button></div></div>
 <div class="opt"><p class="opt-l" id="opt-size">Testo</p><div class="seg seg-fill" role="group" aria-labelledby="opt-size"><button type="button" data-size-set="0">Normale</button><button type="button" data-size-set="1">Grande</button><button type="button" data-size-set="2">Molto grande</button></div></div>
@@ -50,8 +50,8 @@
 <h1>Come funziona GERICO</h1>
 <p>Ogni giorno GERICO legge testate italiane e straniere, agenzie e fonti ufficiali e, per ogni notizia importante, scrive un articolo suo. Non è il riassunto di un giornale: è costruito su tutte le fonti lette, con le posizioni di tutte le parti in causa e, per ogni dato, chi lo dice.</p>
 <p>Gli articoli escono «a cura di R.P.», le iniziali di chi cura GERICO, e sono scritti con l'intelligenza artificiale: un modello linguistico, Claude di Anthropic, legge le fonti e scrive seguendo le regole qui sotto. Lo dice la riga in fondo a ogni pagina, e le fonti di ogni articolo sono in fondo all'articolo.</p>
-<p>In prima pagina, dopo Tutte, la scheda Seguiti raccoglie le notizie dei temi che segui, le più nuove prima: accanto al nome c'è quante sono uscite dopo la tua ultima visita. In cima i tuoi temi stanno in fila e un tocco mostra solo le notizie di uno; con «Aggiungi» cerchi un tema, o scrivi una parola da seguire, come il nome di un'azienda, e trovi le notizie che la nominano nel titolo. Un tema si segue anche con un tocco in fondo a ogni storia o nella scheda di un tema caldo; nelle altre sezioni le notizie dei tuoi temi hanno il segno ✓ con il nome del tema. Smettere di seguire si annulla con un tocco. I temi restano nel tuo browser, e nell'account se ne hai uno. Accanto, tre schede seguono i temi caldi del momento, come una guerra o un'elezione. Li sceglie la redazione e restano finché la vicenda è in corso, anche per settimane.</p>
-<p>In alto scegli il tuo paese: tutti i paesi europei, gli Stati Uniti, il Canada, l'Australia e la Nuova Zelanda. La scheda del paese prende il posto di Italia, con le sue notizie principali; le notizie dell'Italia, per chi sceglie un altro paese, stanno in Mondo. Per ogni paese, ogni due ore dalle 6 alle 22, un programma sui server di GitHub legge i titoli di due o tre testate nazionali o del servizio pubblico, toglie sport, gossip e pubblicità e i doppioni, e li fa tradurre in italiano e in inglese da Gemini, il modello di Google: sono le brevi del paese, con il link all'articolo originale. Il tuo browser non chiama mai quelle testate, e il paese scelto resta solo nel tuo browser.</p>
+<p>In prima pagina, dopo Tutte, la scheda Seguiti raccoglie le notizie dei temi che segui, le più nuove prima: accanto al nome c'è quante sono uscite dopo la tua ultima visita. In cima i tuoi temi stanno in fila e un tocco mostra solo le notizie di uno; subito sotto cerchi un tema, o scrivi una parola da seguire, come il nome di un'azienda, e trovi le notizie che la nominano nel titolo, con i temi da seguire di questi giorni. Dal menu, «Seguiti» porta dritto qui. Un tema si segue anche con un tocco in fondo a ogni storia o nella scheda di un tema caldo; nelle altre sezioni le notizie dei tuoi temi hanno il segno ✓ con il nome del tema. Smettere di seguire si annulla con un tocco. I temi restano nel tuo browser, e nell'account se ne hai uno. Accanto, tre schede seguono i temi caldi del momento, come una guerra o un'elezione. Li sceglie la redazione e restano finché la vicenda è in corso, anche per settimane.</p>
+<p>In alto scegli il tuo paese: tutti i paesi europei, gli Stati Uniti, il Canada, l'Australia e la Nuova Zelanda. La scheda del paese prende il posto di Italia, con le sue notizie principali; le notizie dell'Italia, per chi sceglie un altro paese, stanno in Mondo. La lingua segue il paese: italiano per l'Italia, San Marino e il Vaticano, inglese per tutti gli altri; dal menu si può sempre cambiare. Per ogni paese, ogni due ore dalle 6 alle 22, un programma sui server di GitHub legge i titoli di due o tre testate nazionali o del servizio pubblico, toglie sport, gossip e pubblicità e i doppioni, e li fa tradurre in italiano e in inglese da Gemini, il modello di Google: sono le brevi del paese, con il link all'articolo originale. Il tuo browser non chiama mai quelle testate, e il paese scelto resta solo nel tuo browser.</p>
 <p>L'immagine sopra ogni articolo è una mappa del luogo della notizia, disegnata da GERICO: il paese in chiaro, quelli coinvolti in azzurro, il punto preciso in rosso quando c'è. I confini vengono da Natural Earth, dati di pubblico dominio. Non usiamo foto di agenzia: hanno diritti d'autore, e caricarle da un altro sito farebbe sapere a terzi chi legge GERICO.</p>
 
 <h2>Le regole</h2>
@@ -87,7 +87,7 @@
 
 <h2>Archivio, ricerca, glossario</h2>
 <p>Le storie restano anche quando escono dalla prima pagina. L'<a href="archivio">archivio</a> le raccoglie mese per mese e tema per tema, e ogni tema con almeno tre storie ha la sua pagina. Nel menu, «Cerca tra le notizie» trova una storia per parole, persone, paesi o temi, anche dei giorni scorsi; dalla tastiera del computer si apre anche con il tasto /.</p>
-<p>Il <a href="glossario">glossario</a> spiega in poche righe le parole dell'economia, dei mercati e della politica che tornano più spesso, dallo spread al decreto legge. Negli articoli la prima volta che ne compare una è sottolineata: un tocco e si legge la spiegazione.</p>
+<p>Il <a href="glossario">glossario</a> spiega in poche righe le parole dell'economia, dei mercati e della politica che tornano più spesso, dallo spread al decreto legge. Negli articoli le parole più tecniche sono in grassetto: passandoci sopra con il mouse compare una nota che le spiega, con un clic si apre la loro voce nel glossario. Sul telefono il primo tocco apre la nota, un tocco sulla nota porta al glossario.</p>
 <p>GERICO si può installare come un'app: sul telefono dal menu, con «Installa GERICO», o su iPhone dalla condivisione con «Aggiungi alla schermata Home». Le pagine e le storie già aperte si rileggono anche senza connessione.</p>
 
 <h2>Il Terminal</h2>
@@ -114,15 +114,14 @@
 
 <h2>I limiti</h2>
 <p>GERICO lavora solo su fonti pubbliche e può sbagliare. Ogni fonte è linkata, così ogni dato si può controllare all'origine. Sotto ogni storia c'è «Hai trovato un errore? Segnalalo»: la segnalazione arriva a Riccardo, senza bisogno dell'account. Per una rettifica puoi anche scrivere a <a href="mailto:riccardoperuzzo02@gmail.com">riccardoperuzzo02@gmail.com</a>.</p>
-<h2 id="collabora">Collabora</h2>
-<p>GERICO è un progetto aperto alle collaborazioni: giornalisti e redazioni, sviluppatori, chi lavora sui dati e sui mercati, testate che vogliono essere lette meglio o corrette, chi ha un'idea per farlo crescere. Scrivi a Riccardo Peruzzo, che lo cura: <a href="mailto:riccardoperuzzo02@gmail.com?subject=Collaborazione%20con%20GERICO">riccardoperuzzo02@gmail.com</a>.</p>
+<p id="collabora">Per collaborare con GERICO c'è la pagina <a href="collabora">Collabora</a>.</p>
 </div>
 <div class="prose" data-only="en">
 <h1>How GERICO works</h1>
 <p>Every day GERICO reads Italian and foreign news outlets, news agencies and official sources and, for every important story, writes an article of its own. It is not a summary of one newspaper: it is built on all the sources read, with the positions of every party involved and, for each piece of data, who says it.</p>
 <p>Articles appear «edited by R.P.», the initials of the person who runs GERICO, and are written with artificial intelligence: a language model, Anthropic's Claude, reads the sources and writes by the rules below. The line at the bottom of every page says so, and the sources of each article are at the end of the article.</p>
-<p>On the front page, after All, the Following tab gathers the news on the topics you follow, newest first: next to its name is how many came out since your last visit. At the top your topics sit in a row and one tap shows only that topic's news; with “Add” you search for a topic, or type a word to follow, such as a company's name, and get the news that mentions it in the headline. You can also follow a topic with one tap at the bottom of any story or in a hot topic's tab; in the other sections the news on your topics carries a ✓ with the topic's name. Unfollowing can be undone with one tap. Topics stay in your browser, and in your account if you have one. Next to it, three tabs follow the hot topics of the moment, such as a war or an election. The newsroom picks them and they stay while the story goes on, even for weeks.</p>
-<p>At the top you choose your country: every European country, the United States, Canada, Australia and New Zealand. The country's tab takes the place of Italy, with its main news; for those who choose another country, Italy's news is in World. For every country, every two hours from 6am to 10pm, a program on GitHub's servers reads the headlines of two or three national outlets or the public broadcaster, removes sport, gossip, advertising and duplicates, and has Gemini, Google's model, translate them into Italian and English: these are the country's briefs, with the link to the original article. Your browser never contacts those outlets, and the chosen country stays only in your browser.</p>
+<p>On the front page, after All, the Following tab gathers the news on the topics you follow, newest first: next to its name is how many came out since your last visit. At the top your topics sit in a row and one tap shows only that topic's news; right below you search for a topic, or type a word to follow, such as a company's name, and get the news that mentions it in the headline, with the suggested topics of these days. In the menu, “Following” takes you straight here. You can also follow a topic with one tap at the bottom of any story or in a hot topic's tab; in the other sections the news on your topics carries a ✓ with the topic's name. Unfollowing can be undone with one tap. Topics stay in your browser, and in your account if you have one. Next to it, three tabs follow the hot topics of the moment, such as a war or an election. The newsroom picks them and they stay while the story goes on, even for weeks.</p>
+<p>At the top you choose your country: every European country, the United States, Canada, Australia and New Zealand. The country's tab takes the place of Italy, with its main news; for those who choose another country, Italy's news is in World. The language follows the country: Italian for Italy, San Marino and Vatican City, English for all the others; you can always change it from the menu. For every country, every two hours from 6am to 10pm, a program on GitHub's servers reads the headlines of two or three national outlets or the public broadcaster, removes sport, gossip, advertising and duplicates, and has Gemini, Google's model, translate them into Italian and English: these are the country's briefs, with the link to the original article. Your browser never contacts those outlets, and the chosen country stays only in your browser.</p>
 <p>The image above each article is a map of where the story happens, drawn by GERICO: the country in light colour, the countries involved in blue, the exact place in red when there is one. The borders come from Natural Earth, public domain data. We do not use agency photos: they are copyrighted, and loading them from another site would tell third parties who reads GERICO.</p>
 
 <h2>The rules</h2>
@@ -158,7 +157,7 @@
 
 <h2>Archive, search, glossary</h2>
 <p>Stories stay on the site after they leave the front page. The <a href="archivio">archive</a> collects them month by month and topic by topic, and every topic with at least three stories has its own page (in Italian). In the menu, “Search the news” finds a story by words, people, countries or topics, including past days; on a computer keyboard the / key opens it too.</p>
-<p>The <a href="glossario">glossary</a> explains in a few lines the words of economics, markets and politics that come up most often, from the spread to the decree-law. In the articles the first time one appears it is underlined: tap it to read the explanation.</p>
+<p>The <a href="glossario">glossary</a> explains in a few lines the words of economics, markets and politics that come up most often, from the spread to the decree-law. In the articles the most technical words are in bold: hover over one with the mouse and a note explains it, click it to open its entry in the glossary. On a phone the first tap opens the note, a tap on the note takes you to the glossary.</p>
 <p>GERICO can be installed like an app: on a phone from the menu, with “Install GERICO”, or on iPhone from the share sheet with “Add to Home Screen”. Pages and stories you have already opened can be read again offline.</p>
 
 <h2>The Terminal</h2>
@@ -185,19 +184,18 @@
 
 <h2>The limits</h2>
 <p>GERICO works only from public sources and can make mistakes. Every source is linked, so every figure can be checked at its origin. Under every story there is “Spotted a mistake? Report it”: the report reaches Riccardo, no account needed. For a correction you can also write to <a href="mailto:riccardoperuzzo02@gmail.com">riccardoperuzzo02@gmail.com</a>.</p>
-<h2 id="collaborate">Collaborate</h2>
-<p>GERICO is open to collaboration: journalists and newsrooms, developers, people who work with data and markets, outlets that want to be read better or corrected, anyone with an idea to help it grow. Write to Riccardo Peruzzo, who edits it: <a href="mailto:riccardoperuzzo02@gmail.com?subject=Collaboration%20with%20GERICO">riccardoperuzzo02@gmail.com</a>.</p>
+<p id="collaborate">To collaborate with GERICO, see the <a href="collabora">Collaborate</a> page.</p>
 </div>
 
 </main>
 
 <footer class="foot">
 <div class="wrap">
-<p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="archivio">Archivio</a><a href="glossario">Glossario</a><a href="privacy.html">Privacy</a><a href="come-funziona.html#collabora">Collabora</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
+<p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="archivio">Archivio</a><a href="glossario">Glossario</a><a href="privacy.html">Privacy</a><a href="collabora">Collabora</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale</span></p>
 </div>
 </footer>
 
-<script src="assets/js/common.js?v=20261117-1"></script>
-<script src="assets/js/info.js?v=20261117-1"></script>
+<script src="assets/js/common.js?v=20261117-2"></script>
+<script src="assets/js/info.js?v=20261117-2"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ site/                 la cartella pubblicata da Cloudflare
   index.html          prima pagina (sezioni con #mondo, #italia, ... e #seguiti)
   storia.html?id=...  una notizia: l'articolo di GERICO, cosa non si sa ancora, parere, cronologia, fonti
   terminal.html       GERICO Terminal: mappa a quadrati, indici, valute, tassi, materie prime, agenda, notizie
-  come-funziona.html, privacy.html, glossario.html, 404.html
+  come-funziona.html, collabora.html, privacy.html, glossario.html, 404.html
   archivio.html, archivio-AAAA-MM.html, tema/<tema>.html   l'archivio delle storie (pagine statiche, da share_pages.py)
   manifest.webmanifest, sw.js, offline.html   il sito installabile e la lettura senza connessione
   assets/             css, js, font (Atkinson Hyperlegible e Newsreader, licenza OFL) e immagini

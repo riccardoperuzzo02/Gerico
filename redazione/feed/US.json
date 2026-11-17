@@ -1,34 +1,181 @@
 {
  "code": "US",
- "asOf": "2026-11-17T17:17:35+00:00",
+ "asOf": "2026-11-17T19:17:34+00:00",
  "items": [
   {
+   "source": "CNBC",
+   "title": "Trump has arrived in Asia. Here’s what he said about Iran and Deutsche Bank",
+   "desc": "Trump threatens Iran and responds to a tax leak report as his Asia trip begins.",
+   "url": "https://www.cnbc.com/2026/11/17/trump-iran-asia-trip-china.html",
+   "at": "2026-11-17T19:16:20+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "We’re watching Cramer’s favorite market indicator for a signal to buy stocks",
+   "desc": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/were-watching-cramers-favorite-indicator-for-a-signal-to-buy-stocks.html",
+   "at": "2026-11-17T19:15:27+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A Death Along Lake Superior Revives Memories of ‘the Gales of November’",
+   "desc": "A 62-year-old man was found drowned in a cove this month, evoking the lake’s stormy history.",
+   "url": "https://www.nytimes.com/2026/11/17/us/lake-superior-drowning-gales-of-november.html",
+   "at": "2026-11-17T19:02:54+00:00"
+  },
+  {
    "source": "CBS News",
-   "title": "Groups raise concerns over DOJ's new Civil Rights Division chief",
-   "desc": "Eighteen civil rights organizations asked President Trump to withdraw his appointment of Craig Trainor as the new acting head of the Justice Department's Civil Rights Division.",
-   "url": "https://www.cbsnews.com/news/craig-trainor-justice-department-civil-rights-division/",
-   "at": "2026-11-17T17:13:55+00:00"
+   "title": "Nvidia forms export control panel amid concerns over China sales",
+   "desc": "Chipmaker creates new committee amid growing concerns that it has allowed restricted products to reach China.",
+   "url": "https://www.cbsnews.com/news/nvidia-export-control-committee-china-chips/",
+   "at": "2026-11-17T18:52:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "FAA pauses installation of new routers after ground stop",
+   "desc": "Problems with the overwhelmed technology led the agency to issue a rare nationwide ground stop on Friday.",
+   "url": "https://www.cnbc.com/2026/11/17/faa-ground-stop-routers.html",
+   "at": "2026-11-17T18:48:33+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Anthropic files for IPO as it competes for AI dominance",
+   "desc": "Anthropic, which developed the Claude chatbot, is barreling ahead with its public offering despite mounting concerns about AI going rogue.",
+   "url": "https://www.cbsnews.com/news/anthropic-ipo-plans-ai-safety/",
+   "at": "2026-11-17T18:41:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "I.R.S. Opens Criminal Probes as Part of Trump’s Pursuit of Left-Wing Groups",
+   "desc": "An internal I.R.S. memo viewed by The New York Times reveals how the agency is carrying out President Trump’s orders to investigate “domestic terrorism.”",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/irs-criminal-investigations.html",
+   "at": "2026-11-17T18:38:33+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Hegseth Nominates His Former Aide to Lead the Army",
+   "desc": "After months of delay, Defense Secretary Pete Hegseth and the White House have sent Gen. Christopher LaNeve’s nomination for Army chief of staff to the Senate.",
+   "url": "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
+   "at": "2026-11-17T18:38:03+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Duffy Outlines Request for $50 Billion for Air Traffic Improvements",
+   "desc": "The one-page explanation, which will be laid out for Republican members of Congress Tuesday, was thin on specifics.",
+   "url": "https://www.nytimes.com/2026/11/17/us/duffy-hill-ground-stop-faa.html",
+   "at": "2026-11-17T18:37:02+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
+   "desc": "Iran fired drones on Tuesday at a U.S. radar facility in Bahrain, its third attack in recent days on American military targets in the Gulf island kingdom after a roughly two-month lull in fighting.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain",
+   "at": "2026-11-17T18:34:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic IPO: For hundreds of billions of dollars flowing into AI startups, a big debut is a must",
+   "desc": "Venture investors are sitting on big gains from the AI buildout. Anthropic's IPO could set the stage for many smaller AI startups seeking exits.",
+   "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-ai-venture-capital.html",
+   "at": "2026-11-17T18:34:06+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "NSA's classified internal network goes down, sources say",
+   "desc": "Two U.S. officials tell CBS News that so far there is no evidence of a cyberattack.",
+   "url": "https://www.cbsnews.com/news/nsa-network-down-classified-fort-meade/",
+   "at": "2026-11-17T18:30:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Kalshi takes down controversial Trump 'mention' markets at CFTC's request",
+   "desc": "Some Trump-related Kalshi mention contracts have been taken down as the CFTC warns the contract type carries heightened manipulation risk.",
+   "url": "https://www.cnbc.com/2026/11/17/kalshi-takes-down-trump-mention-markets.html",
+   "at": "2026-11-17T18:27:03+00:00"
   },
   {
    "source": "CNBC",
    "title": "Former Nvidia CEO Jensen Huang says he’s open to returning in first statement since resignation",
-   "desc": "He said he had seen support from investors and employees was willing to come back as CEO.",
+   "desc": "He said he had seen support from investors and employees and was willing to come back as CEO.",
    "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-statement.html",
-   "at": "2026-11-17T17:13:02+00:00"
+   "at": "2026-11-17T18:21:03+00:00"
   },
   {
    "source": "New York Times",
-   "title": "Transportation Secretary Details Request for $50 Billion for Air Traffic Improvements",
-   "desc": "The one-page explanation, which will be laid out for Republican members of Congress Tuesday, was thin on specifics.",
-   "url": "https://www.nytimes.com/2026/11/17/us/duffy-hill-ground-stop-faa.html",
-   "at": "2026-11-17T17:11:04+00:00"
+   "title": "Classified N.S.A. Network Goes Down, Causing Work Disruptions",
+   "desc": "There are currently no signs that the outage is the result of a cyberattack or other nefarious activity, according to people familiar with the matter.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/nsa-down-network-outage-nsanet.html",
+   "at": "2026-11-17T18:20:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Measles Is Officially Back in the United States. What Now?",
+   "desc": "It may take years for the country to regain elimination status. In the meantime, communities will need to adopt numerous strategies to protect people.",
+   "url": "https://www.nytimes.com/2026/11/17/us/measles-us-whats-next.html",
+   "at": "2026-11-17T18:12:14+00:00"
   },
   {
    "source": "CNBC",
    "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
    "desc": "The director of PAHO made the final call that measles is endemic — or always present — in the U.S. following 12 months of continuous transmission.",
    "url": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
-   "at": "2026-11-17T17:09:09+00:00"
+   "at": "2026-11-17T18:10:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Chase Home Lending CEO says he plans to 'go on offense' against non-bank lenders",
+   "desc": "Sean Grzebin, the CEO of Chase Home Lending, the nation's largest bank mortgage lender, said he's hiring and bent on increasing market share.",
+   "url": "https://www.cnbc.com/2026/11/17/chase-home-lending-ceo-says-hes-going-on-offense.html",
+   "at": "2026-11-17T18:06:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Man Indicted in Bomb Threat at Illinois Ethanol Plant",
+   "desc": "A federal grand jury in Peoria charged the man, who may have worked at the BioUrja plant, with threatening to detonate an explosive device last week.",
+   "url": "https://www.nytimes.com/2026/11/17/us/peoria-illinois-bomb-threat-indictment.html",
+   "at": "2026-11-17T18:05:38+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
+   "desc": "\"This is why they can't have a nuclear weapon,\" Trump added, reiterating his main rationale for launching the Iran war.",
+   "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
+   "at": "2026-11-17T17:49:45+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. identifies remains of 6 soldiers killed in Korean War, including teens",
+   "desc": "The identifications are part of an ongoing effort to locate and identify the remains of U.S. soldiers killed in the Korean War.",
+   "url": "https://www.cbsnews.com/news/korean-war-us-soldiers-remains-identified/",
+   "at": "2026-11-17T17:41:53+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Huang says he'd be \"honored\" to return to Nvidia as he agrees to testify to Congress",
+   "desc": "The former Nvidia CEO's comments come as some in Silicon Valley have tried to argue that Huang was pushed out of the company too quickly amid a swirl of national security scandals.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6044213/jensen-huang-nvidia-congress",
+   "at": "2026-11-17T17:36:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "7 smart reasons to sell a stock—and my ‘golden rule’ for offloading shares, says hedge fund CEO",
+   "desc": "\"You need a clear, disciplined plan for when to sell,\" says Karen Finerman. Here are seven smart reasons to sell — and when not to sell.",
+   "url": "https://www.cnbc.com/2026/11/17/when-to-sell-a-stock.html",
+   "at": "2026-11-17T17:33:05+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. officially loses measles elimination status: \"What a tragedy\"",
+   "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
+   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+   "at": "2026-11-17T17:18:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Groups raise concerns over DOJ's new Civil Rights Division chief",
+   "desc": "Eighteen civil rights organizations asked President Trump to withdraw his appointment of Craig Trainor as the new acting head of the Justice Department's Civil Rights Division.",
+   "url": "https://www.cbsnews.com/news/craig-trainor-justice-department-civil-rights-division/",
+   "at": "2026-11-17T17:13:55+00:00"
   },
   {
    "source": "New York Times",
@@ -46,10 +193,10 @@
   },
   {
    "source": "CNBC",
-   "title": "FAA pauses installation of new routers after ground stop",
-   "desc": "Problems with the overwhelmed technology led the agency to issue a rare nationwide ground stop on Friday.",
-   "url": "https://www.cnbc.com/2026/11/17/faa-ground-stop-routers.html",
-   "at": "2026-11-17T17:00:57+00:00"
+   "title": "Jensen Huang's Nvidia exit exposes succession and governance risks for companies and boards",
+   "desc": "The resignation of Jensen Huang as Nvidia's CEO spotlights the missteps of its board and why companies built around one powerful leader creates outsized risk.",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-succession-board-lessons.html",
+   "at": "2026-11-17T17:00:01+00:00"
   },
   {
    "source": "CBS News",
@@ -57,20 +204,6 @@
    "desc": "Huang addressed a petition, signed by 190,000 people, including thousands of Nvidia employees, calling for his reinstatement.",
    "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-return-statement/",
    "at": "2026-11-17T16:59:55+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Classified N.S.A. Network Goes Down, Causing Work Disruptions",
-   "desc": "There are currently no signs that the outage is the result of a cyberattack or other nefarious activity, according to people familiar with the matter.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/nsa-down-network-outage-nsanet.html",
-   "at": "2026-11-17T16:58:47+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Measles Is Officially Back in the United States. What Now?",
-   "desc": "It may take years for the country to regain elimination status. In the meantime, communities will need to adopt numerous strategies to protect people.",
-   "url": "https://www.nytimes.com/2026/11/17/us/measles-us-whats-next.html",
-   "at": "2026-11-17T16:50:04+00:00"
   },
   {
    "source": "CNBC",
@@ -81,52 +214,17 @@
   },
   {
    "source": "CNBC",
-   "title": "Trump on Iran's reported DC dirty bomb plan: 'We take it very seriously'",
-   "desc": "\"This is why they can't have a nuclear weapon,\" Trump added, reiterating his main defense for launching the Iran war.",
-   "url": "https://www.cnbc.com/2026/11/17/trump-iran-dirty-bomb-washington.html",
-   "at": "2026-11-17T16:47:52+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "U.S. officially loses measles elimination status: \"What a tragedy\"",
-   "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
-   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
-   "at": "2026-11-17T16:43:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang breaks his silence ahead of Nvidia earnings — plus, 1 stock to buy on weakness",
-   "desc": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/17/jensen-huang-breaks-his-silence-ahead-of-nvidia-earnings-plus-1-stock-to-buy.html",
-   "at": "2026-11-17T16:42:21+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Disney beats fourth-quarter estimates, targets $3 billion in savings through cost-cutting efforts",
    "desc": "Investors will be looking for more insight into CEO Josh D'Amaro's strategy following several rounds of layoffs.",
    "url": "https://www.cnbc.com/2026/11/17/disney-dis-earnings-q-2026.html",
    "at": "2026-11-17T16:40:25+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Trump has arrived in Asia. Here’s what he said about Iran and Deutsche Bank",
-   "desc": "Trump threatens Iran and responds to a tax leak report as his Asia trip begins.",
-   "url": "https://www.cnbc.com/2026/11/17/trump-iran-asia-trip-china.html",
-   "at": "2026-11-17T16:39:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Property Play: Chase Home Lending CEO says he plans to 'go on offense' against non-bank lenders",
-   "desc": "Sean Grzebin, the CEO of Chase Home Lending, the nation's largest bank mortgage lender, said he's hiring and bent on increasing market share.",
-   "url": "https://www.cnbc.com/2026/11/17/chase-home-lending-ceo-says-hes-going-on-offense.html",
-   "at": "2026-11-17T16:38:56+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "An Artist Nearly Died in a Crash. Strangers Helped Him Draw Again.",
    "desc": "Paul Madonna, a San Francisco artist known for his drawings of the city’s landmarks, has recovered enough to have his own art exhibition four years after a head-on car collision.",
    "url": "https://www.nytimes.com/2026/11/17/us/san-francisco-artist-paul-madonna-show.html",
-   "at": "2026-11-17T16:15:17+00:00"
+   "at": "2026-11-17T16:15:18+00:00"
   },
   {
    "source": "CNBC",
@@ -134,20 +232,6 @@
    "desc": "Cook's attorney sounded more hostile than ever in his first known letter to be sent in the matter since the GOP's drubbing in the Nov. 3 midterm elections.",
    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
    "at": "2026-11-17T16:03:38+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Kalshi takes down controversial Trump 'mention' markets at CFTC's request",
-   "desc": "Some Trump-related Kalshi mention contracts have been taken down as the CFTC warns the contract type carries heightened manipulation risk.",
-   "url": "https://www.cnbc.com/2026/11/17/kalshi-takes-down-trump-mention-markets.html",
-   "at": "2026-11-17T16:00:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia forms export control panel amid concerns over China sales",
-   "desc": "Chipmaker creates new committee amid growing concerns that it has allowed restricted products to reach China.",
-   "url": "https://www.cbsnews.com/news/nvidia-export-control-committee-china-chips/",
-   "at": "2026-11-17T15:56:05+00:00"
   },
   {
    "source": "CBS News",
@@ -178,18 +262,11 @@
    "at": "2026-11-17T15:22:45+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "7 smart reasons to sell a stock—and my ‘golden rule’ for offloading shares, says hedge fund CEO",
-   "desc": "\"You need a clear, disciplined plan for when to sell,\" says Karen Finerman. Here are seven smart reasons to sell — and when not to sell.",
-   "url": "https://www.cnbc.com/2026/11/17/when-to-sell-a-stock.html",
-   "at": "2026-11-17T15:05:01+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Widespread service outages at major U.S. banks appear to be over",
    "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
    "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "at": "2026-11-17T14:44:16+00:00"
+   "at": "2026-11-17T14:44:00+00:00"
   },
   {
    "source": "CNBC",
@@ -269,13 +346,6 @@
    "at": "2026-11-17T13:40:54+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Anthropic IPO: For hundreds of billions of dollars flowing into AI startups, a big debut is a must",
-   "desc": "Venture investors are sitting on big gains from the AI buildout. Anthropic's IPO could set the stage for many smaller AI startups seeking exits.",
-   "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-ai-venture-capital.html",
-   "at": "2026-11-17T13:35:18+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Banking outage rattles U.S.",
    "desc": "Several U.S. banks reported a bug Monday that impacted customer transactions. Jo Ling Kent reports.",
@@ -291,24 +361,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Nvidia has lost $2 trillion in value. Here's what options traders expect from earnings",
-   "desc": "Nvidia options are pricing in a bigger move than usual.",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-has-lost-2-trillion-in-value-heres-what-options-traders-expect-from-earnings.html",
-   "at": "2026-11-17T13:16:43+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Roth 401(k) matches are 'surging,' report finds. What workers should know",
    "desc": "More employers are adding Roth 401(k) matching options. Here’s how the tax treatment differs from a traditional 401(k) match.",
    "url": "https://www.cnbc.com/2026/11/17/roth-401k-employer-match.html",
    "at": "2026-11-17T13:15:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Challenging Consensus, Scientist Says Epstein Autopsy Photos Show Homicide",
-   "desc": "Investigations have found most evidence in Jeffrey Epstein’s death points to suicide. Michael Freeman, a forensic scientist who studies homicides, got rare access to the autopsy file and disagrees.",
-   "url": "https://www.nytimes.com/2026/11/16/us/jeffrey-epstein-autopsy-michael-freeman.html",
-   "at": "2026-11-17T13:13:55+00:00"
   },
   {
    "source": "CNBC",
@@ -382,16 +438,16 @@
   },
   {
    "source": "NPR",
-   "title": "More people are getting the flu. Should you get a flu shot before you travel?",
-   "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
+   "title": "She went to college to become a social worker. Now she's joined the skilled trades",
+   "desc": "While the rise of AI continues to fuel the debate over whether college is worth the cost, apprenticeships in the skilled trades are having a moment, drawing in people of all backgrounds including college graduates.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
    "at": "2026-11-17T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "She went to college to become a social worker. Now she's joined the skilled trades",
-   "desc": "While the rise of AI continues to fuel the debate over whether college is worth the cost, apprenticeships in the skilled trades are having a moment, drawing in people of all backgrounds including college graduates.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
+   "title": "More people are getting the flu. Should you get a flu shot before you travel?",
+   "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
    "at": "2026-11-17T10:00:00+00:00"
   },
   {
@@ -400,20 +456,6 @@
    "desc": "A new study of school cellphone bans finds they may help students make up for some of the learning they've lost since 2013 – a divergence from earlier study results.",
    "url": "https://www.npr.org/2026/11/17/nx-s1-6035684/school-cellphone-ban-learning-loss-yondr-research",
    "at": "2026-11-17T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Ukraine strikes major Russian bridge with drones and missiles as aerial attacks escalate",
-   "desc": "A Ukrainian drone and missile attack prepared over several weeks struck a vital Russian rail and road bridge to the occupied Crimean Peninsula, Ukrainian President Volodymyr Zelenskyy said Tuesday.",
-   "url": "https://www.npr.org/2026/11/17/g-s1-153946/russia-ukraine-war",
-   "at": "2026-11-17T09:50:45+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Morning news brief",
-   "desc": "The FAA says it will rethink how it upgrades its aging system after nationwide ground stop, Trump to hold joint summit with leaders of China and Russia, Silicon Valley reacts to Nvidia scandal.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6042259/morning-news-brief",
-   "at": "2026-11-17T09:46:54+00:00"
   },
   {
    "source": "New York Times",
@@ -508,24 +550,10 @@
   },
   {
    "source": "CBS News",
-   "title": "Robert Pattinson lands coveted James Bond role",
-   "desc": "Going back more than 60 years, only six actors have played James Bond, the British secret agent code-named 007. After years of speculation, Amazon MGM Studios cast 40-year-old Robert Pattinson as the leading man. Tom Hanson has the story.",
-   "url": "https://www.cbsnews.com/video/robert-pattinson-lands-coveted-james-bond-role/",
-   "at": "2026-11-17T00:53:23+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Pacific Coast sees monster waves, a dread for some, but a delight for the surfers",
    "desc": "Some of the biggest waves in years continued to hit the Pacific Coast shoreline on Monday. Carter Evans takes a look at the monster waves.",
    "url": "https://www.cbsnews.com/video/pacific-coast-sees-monster-waves-dread-some-delight-surfers/",
    "at": "2026-11-17T00:51:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Doctor says U.S. losing measles elimination status is a \"huge public health failure\"",
-   "desc": "The United States is expected to officially lose its status as a country that has eliminated measles after reporting the highest case total in more than 30 years. CBS News chief medical correspondent Dr. Jon LaPook puts it into perspective.",
-   "url": "https://www.cbsnews.com/video/doctor-says-us-losing-measles-elimination-status-huge-public-health-failure/",
-   "at": "2026-11-17T00:48:52+00:00"
   },
   {
    "source": "New York Times",
@@ -577,39 +605,11 @@
    "at": "2026-11-16T22:46:09+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "11/16: The Takeout with Major Garrett",
-   "desc": "What we know about the cause of Friday's nationwide ground stop; Trump to meet with Putin and Xi during Asia trip.",
-   "url": "https://www.cbsnews.com/video/111626-the-takeout-with-major-garrett/",
-   "at": "2026-11-16T22:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Person in Custody in Illinois Bomb Case, Officials Say",
-   "desc": "Significant portions of Peoria and East Peoria were evacuated on Friday night after officials found and deactivated an explosive at an ethanol plant.",
-   "url": "https://www.nytimes.com/2026/11/16/us/peoria-bomb-threat-arrest.html",
-   "at": "2026-11-16T19:58:19+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Supreme Court Rejects Trump Bid to Revive University Research Cuts",
    "desc": "The justices left in place a lower-court decision to block the administration from cutting millions in grants to University of California researchers over perceived ties to diversity initiatives.",
    "url": "https://www.nytimes.com/2026/11/16/us/politics/supreme-court-trump-university-of-california.html",
    "at": "2026-11-16T19:19:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Epstein's death may not have been suicide, new analysis suggests",
-   "desc": "Forensics expert Dr. Michael Freeman says multiple images and overlooked details about Jeffrey Epstein's death contradict the conclusion that he died by suicide.",
-   "url": "https://www.cbsnews.com/news/jeffrey-epstein-death-suicide-forensics-expert-analysis/",
-   "at": "2026-11-16T18:59:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Says He’s Open to Reinstatement of Jensen Huang as Nvidia Chief",
-   "desc": "As he prepared for a visit to China, the president played down the fallout from Mr. Huang’s affair with a woman officials have identified as an intelligence asset for Beijing.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html",
-   "at": "2026-11-16T17:48:36+00:00"
   }
  ]
 }

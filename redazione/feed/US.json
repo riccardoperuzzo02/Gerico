@@ -1,7 +1,28 @@
 {
  "code": "US",
- "asOf": "2026-11-17T07:17:33+00:00",
+ "asOf": "2026-11-17T09:17:38+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Treasury yields are broadly flat as investors await retail sales data",
+   "desc": "U.S. Treasury yields were little changed on Tuesday morning as investors awaited economic data and comments from Federal Reserve officials later in the session.",
+   "url": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html",
+   "at": "2026-11-17T08:23:51+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Widespread service outages at major U.S. banks appear to be over",
+   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
+   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+   "at": "2026-11-17T08:12:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "El Niño Draws Sea Turtles to California’s Coast for the First Time",
+   "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters.",
+   "url": "https://www.nytimes.com/2026/11/16/us/sea-turtles-california.html",
+   "at": "2026-11-17T08:06:57+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
@@ -15,13 +36,6 @@
    "desc": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024.",
    "url": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
    "at": "2026-11-17T06:59:42+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Major U.S. banks report widespread service outages",
-   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
-   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "at": "2026-11-17T06:53:56+00:00"
   },
   {
    "source": "CNBC",
@@ -64,13 +78,6 @@
    "desc": "After technical problems grounded flights nationwide and Microsoft products failed, the banking issues added to a sense of doom about the systems underpinning daily life.",
    "url": "https://www.nytimes.com/2026/11/16/us/bank-outages-down.html",
    "at": "2026-11-17T02:02:57+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "El Niño Draws Sea Turtles to California’s Coast for the First Time",
-   "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters.",
-   "url": "https://www.nytimes.com/2026/11/16/us/sea-turtles-california.html",
-   "at": "2026-11-17T01:36:39+00:00"
   },
   {
    "source": "CBS News",
@@ -281,13 +288,6 @@
    "desc": "Trump’s accounts sold up to $1 million in Nvidia stock five days after he was briefed on Jensen Huang’s relationship with a suspected Chinese spy.",
    "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
    "at": "2026-11-16T22:37:45+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "desc": "Oil prices are falling as forecasts project a surplus in oil in the fourth quarter",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "at": "2026-11-16T22:19:02+00:00"
   },
   {
    "source": "CNBC",
@@ -613,16 +613,16 @@
   },
   {
    "source": "NPR",
-   "title": "They saw people losing food benefits. So they started handing out free groceries",
-   "desc": "The cuts and changes to SNAP have been difficult for government workers who take pride in helping others. In San Diego, workers said they couldn't sit back while their neighbors went hungry.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6034048/snap-san-diego-food-assistance",
+   "title": "These birds fly 17,000 miles every year. Climate change could make it harder",
+   "desc": "Migratory birds cross the entire globe, carefully timing their journeys with the seasons. In a hotter climate, that timing is increasingly out of sync.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
    "at": "2026-11-16T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
-   "desc": "The trip to China marks Trump's second time this year, and comes as the president and his party faced widespread backlash from voters in the recent midterm elections.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
+   "title": "NPR's Student Podcast Challenge is back for 2027",
+   "desc": "The annual audio competition for grades four through 12 returns in January. Now in its ninth year, the contest has involved more than 90,000 students around the country.",
+   "url": "https://www.npr.org/2026/11/16/nx-s1-6028826/student-podcast-challenge-2027-information-deadline",
    "at": "2026-11-16T10:00:00+00:00"
   }
  ]

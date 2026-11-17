@@ -70,8 +70,19 @@ async function saleDi(env, giorno) {
   saleCache = { giorno, chiave: sale };
   return sale;
 }
+// per contare le visite l'indirizzo si accorcia prima di tutto (come chiede il Garante per le statistiche senza consenso):
+// IPv4 senza l'ultimo numero, IPv6 solo i primi tre gruppi. I limiti contro gli abusi usano l'indirizzo intero
+function mascheraIp(ip) {
+  if (/^\d{1,3}(\.\d{1,3}){3}$/.test(ip)) return ip.replace(/\.\d{1,3}$/, ".0");
+  if (ip.includes(":")) {
+    const g = ip.split("::")[0].split(":").filter(Boolean);
+    return g.slice(0, 3).join(":") + "::";
+  }
+  return "";
+}
 async function impronta(request, env, giorno, conAgent) {
-  const ip = request.headers.get("CF-Connecting-IP") || "";
+  const intero = request.headers.get("CF-Connecting-IP") || "";
+  const ip = conAgent ? mascheraIp(intero) : intero;
   const ua = conAgent ? request.headers.get("User-Agent") || "" : "";
   const sale = await saleDi(env, giorno);
   const resto = enc.encode("|" + ip + "|" + ua.slice(0, 200));

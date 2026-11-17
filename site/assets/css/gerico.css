@@ -1829,6 +1829,10 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 .c-by { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: var(--f8, 8px); font-size: 0.8125rem; line-height: 1.35; color: var(--muted); }
 .c-desk { font-weight: 650; color: var(--ink-3); }
 .c-cura { font-weight: 400; color: var(--muted); }
+/* «Scritto con l'intelligenza artificiale»: accanto alla firma, nello stesso grigio, dopo un puntino */
+.c-ia { font-weight: 400; color: var(--muted); }
+.c-ia::before { content: "·"; margin-right: 8px; }
+.byline .ia { color: var(--muted); }
 html.nuova .lead .c-by { margin-top: var(--f13); }
 /* apertura: l'immagine larga in cima alla scheda, da bordo a bordo */
 html.nuova .lead.has-img .media {
@@ -3096,6 +3100,18 @@ body.term .tv-cred:hover { color: var(--t-ink); }
 /* i pannelli si fermano sotto l'intestazione: l'altezza la misura terminal.js */
 body.term .t-panel { scroll-margin-top: calc(var(--term-top, calc(var(--top-h) + 70px)) + 12px); }
 @media print { .tv-top { display: none !important; } }
+/* prima del sì: una riga che spiega e il pulsante per mostrare i prezzi; niente sfumature ai lati, niente attesa */
+.tv-card.tv-chiede .tv-tape { -webkit-mask-image: none; mask-image: none; }
+.tv-card.tv-chiede .tv-tape::before { display: none; }
+.tv-chiedi { display: flex; align-items: center; justify-content: space-between; gap: 8px 16px; min-height: 58px; padding: 7px 16px; }
+.tv-chiedi p { margin: 0; font-size: 0.8125rem; line-height: 1.35; color: var(--t-ink-2); }
+.tv-chiedi a { color: var(--t-accent); }
+.tv-chiedi .t-btn { flex: none; min-height: 40px; padding: 0 16px; font-size: 0.875rem; }
+@media (max-width: 599px) {
+  .tv-card.tv-chiede .tv-cred { display: none; }
+  .tv-chiedi { padding: 7px 12px; }
+  .tv-chiedi p { font-size: 0.75rem; }
+}
 
 /* ---------- Terminal: le frecce delle righe che si aprono, nette ---------- */
 .t-agenda .ev-b::after, .t-ff-week > summary::before {
@@ -3159,3 +3175,7 @@ html.nuova body.term .m-card { padding: 12px 14px; }
 html.nuova body.term .t-agenda li.next { margin: 0 -6px; padding-left: 6px; padding-right: 6px; }
 html.nuova body.term .t-agenda li.next.soon::before { left: 0; top: 10px; bottom: 10px; width: 2px; height: auto; margin-top: 0; border-radius: 2px !important; }
 @media (prefers-reduced-motion: no-preference) { html.nuova body.term .t-agenda li.next.soon::before { animation: live-dot 1.6s ease-in-out infinite; } }
+/* pagina Privacy: il pulsante per togliere il consenso a TradingView e la riga che dice com'è */
+.tv-revoca { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.tv-revoca [data-tv-stato]:empty { display: none; }
+.tv-revoca [data-tv-stato] { font-size: 0.875rem; color: var(--muted); }

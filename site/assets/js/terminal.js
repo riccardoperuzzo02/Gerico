@@ -1526,9 +1526,28 @@ G.page("terminal", async function (P) {
     guarda.observe(wrap, { childList: true, subtree: true });
     setTimeout(() => { guarda.disconnect(); pronto(); }, 6000);
   }
-  // il nastro c'è sempre (la vecchia scelta di nasconderlo non vale più)
+  // il nastro c'è sempre, ma il widget di TradingView si carica solo dopo il sì di chi legge: aprendolo il browser si
+  // collega a TradingView, che può usare i suoi cookie (regole sui cookie e linee guida del Garante: per i contenuti di
+  // altri che tracciano serve il consenso prima). Il sì resta nel browser (gerico.tv) e si toglie dalla pagina Privacy.
+  // Fino al sì, al posto dei prezzi una riga che lo spiega e il pulsante per mostrarli
   try { localStorage.removeItem("gerico.live"); } catch (e) { /* storage non disponibile */ }
-  loadTV();
+  const TV_SI = "gerico.tv";
+  function chiediTV() {
+    const box = $("tv"), card = tvTop.querySelector(".tv-card");
+    card.classList.add("tv-chiede");
+    box.parentElement.classList.add("pronto");
+    box.innerHTML = '<div class="tv-chiedi"><p>' + G.L("I prezzi in diretta li dà TradingView, che può usare i suoi cookie. ", "Live prices come from TradingView, which may use its own cookies. ") +
+      '<a href="' + G.L("privacy.html#tradingview", "privacy.html#tradingview-en") + '">' + G.L("Privacy", "Privacy") + '</a></p><button type="button" class="t-btn tv-si">' + G.L("Mostra i prezzi", "Show prices") + "</button></div>";
+    box.querySelector(".tv-si").addEventListener("click", () => {
+      G.ls.set(TV_SI, true);
+      box.innerHTML = "";
+      card.classList.remove("tv-chiede");
+      loadTV();
+      const b = tvTop.querySelector(".tv-cred");
+      if (b) b.focus({ preventScroll: true });
+    });
+  }
+  if (tvTop) { if (G.ls.get(TV_SI, false) === true) loadTV(); else chiediTV(); }
   // l'intestazione cambia altezza (nastro acceso o spento, scorciatoie su una riga o nel menu): i pannelli si fermano
   // sempre appena sotto
   const testa = document.querySelector(".top");

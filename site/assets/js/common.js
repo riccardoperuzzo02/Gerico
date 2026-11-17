@@ -401,12 +401,15 @@
     : { mondo: "Mondo", italia: "Italia", economia: "Economia", mercati: "Mercati", tecnologia: "Tecnologia" };
   G.secLabel = (k) => G.SECTIONS[k] || G.L("Notizie", "News");
   G.storyUrl = (s) => "storia.html?id=" + encodeURIComponent(s.id);
-  // la firma di tutti gli articoli: «A cura di R.P.». Che sono scritti con l'intelligenza artificiale lo dice il piede di ogni pagina
-  // (AI Act, articolo 50: i testi d'informazione generati con l'IA si dichiarano)
+  // la firma di tutti gli articoli: «A cura di R.P.», e accanto che il testo è scritto con l'intelligenza artificiale.
+  // AI Act, articolo 50, paragrafo 4 (dal 2 agosto 2026): i testi pubblicati per informare il pubblico e generati con l'IA
+  // si dichiarano in modo chiaro al più tardi quando si leggono, se nessuno li rivede prima. Il piede della pagina non
+  // basta: la dicitura sta nella firma di ogni articolo e nella prima notizia in prima pagina
   G.FIRMA = "R.P.";
   G.CURA = G.L("A cura di", "Edited by");
+  G.IA = G.L("Scritto con l'intelligenza artificiale", "Written with artificial intelligence");
   G.desk = () => G.CURA + " " + G.FIRMA;
-  G.cardBy = () => '<p class="c-by"><span class="c-desk"><span class="c-cura">' + G.esc(G.CURA) + "</span> " + G.esc(G.FIRMA) + "</span></p>";
+  G.cardBy = () => '<p class="c-by"><span class="c-desk"><span class="c-cura">' + G.esc(G.CURA) + "</span> " + G.esc(G.FIRMA) + '</span><span class="c-ia">' + G.esc(G.IA) + "</span></p>";
   // l'immagine della storia: la mappa del luogo, disegnata da GERICO (scripts/mappe.py), con il luogo scritto sopra.
   // Solo file del sito (img/storie/...): niente immagini da altri siti
   const PIN = '<svg aria-hidden="true" width="10" height="13" viewBox="0 0 10 13"><path d="M5 0a5 5 0 0 0-5 5c0 3.6 5 8 5 8s5-4.4 5-8a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="currentColor"/></svg>';
@@ -1883,6 +1886,18 @@
       }
     }
 
+    // pagina Privacy: togliere il consenso ai prezzi in diretta di TradingView (lo si dà nel Terminal, con «Mostra i prezzi»)
+    document.querySelectorAll("[data-tv-revoca]").forEach((b) => {
+      const stato = b.parentElement.querySelector("[data-tv-stato]");
+      b.hidden = G.ls.get("gerico.tv", false) !== true;
+      if (b.hidden && stato) stato.textContent = G.L("Non hai dato il consenso: il nastro di TradingView non si carica.", "You haven't given consent: the TradingView tape doesn't load.");
+      b.addEventListener("click", () => {
+        try { localStorage.removeItem("gerico.tv"); } catch (e) { /* storage non disponibile */ }
+        b.hidden = true;
+        if (stato) { stato.textContent = G.L("Fatto: il nastro di TradingView non si carica più, finché non premi di nuovo «Mostra i prezzi» nel Terminal.", "Done: the TradingView tape won't load again until you press «Show prices» in the Terminal again."); stato.setAttribute("role", "status"); }
+      });
+    });
+
     // interruttore Notizie / Terminal: la pillola va subito al suo posto; tra le due pagine la fa scivolare il passaggio (CSS)
     const mode = document.querySelector(".mode");
     if (mode) G.seg(mode, true);
@@ -2542,9 +2557,8 @@
   G.CONTI = true;
   G.conto = (() => {
     const K = "gerico.conto", PROP = "gerico.proposta", SOSPESO = "gerico.conto.salva";
-    // GIA: su questo dispositivo qualcuno è già entrato con un account (resta anche dopo l'uscita); GIORNI: in quanti giorni
-    // diversi GERICO è stato aperto da qui (solo per decidere se proporre l'account)
-    const GIA = "gerico.giaEntrato", GIORNI = "gerico.giorni";
+    // GIA: su questo dispositivo qualcuno è già entrato con un account (resta anche dopo l'uscita)
+    const GIA = "gerico.giaEntrato";
     let io = null, primo = null, applico = false;
     const passkeyOk = () => !!(window.PublicKeyCredential && navigator.credentials && navigator.credentials.create && window.isSecureContext);
     const L = G.L;
@@ -3023,17 +3037,15 @@
       segnala((r && r.message) || String(r), at ? at[1] : "", at ? at[2] : 0);
     });
     // il foglio che propone l'account: solo in prima pagina, mai sopra una storia, una volta sola per dispositivo e solo a
-    // chi apre GERICO da qui da almeno tre giorni diversi. Mai alla prima visita, mai a chi su questo dispositivo è già
-    // entrato con un account, mai in un browser che cancella i dati del sito a ogni uscita (lì i giorni non si sommano).
-    // Chiuso in qualsiasi modo non torna: crearlo o entrare resta sempre nel menu
-    const contaGiorno = () => {
-      const oggi = G.dayKey(new Date()), g = G.ls.get(GIORNI, null) || {};
-      if (g.ultimo !== oggi) G.ls.set(GIORNI, { ultimo: oggi, n: (Number(g.n) || 0) + 1 });
-    };
+    // chi segue almeno un tema (l'account serve proprio a ritrovarli su ogni dispositivo). Mai a chi su questo dispositivo è
+    // già entrato con un account. Chiuso in qualsiasi modo non torna: crearlo o entrare resta sempre nel menu.
+    // Non si conta niente di chi legge (prima si contavano i giorni di visita: una memoria nel browser che al sito non
+    // serve, e che le regole sui cookie vogliono solo con il consenso); il vecchio conteggio si cancella
+    try { localStorage.removeItem("gerico.giorni"); } catch (e) { /* storage non disponibile */ }
     let proposto = false;
     const proponi = () => {
       if (proposto || !passkeyOk() || G.current !== "home" || G.ls.get(K, null) || G.ls.get(GIA, false) || G.ls.get(PROP, null)) return;
-      if ((Number((G.ls.get(GIORNI, null) || {}).n) || 0) < 3) return;
+      if (!G.follows().length) return;
       proposto = true;
       G.afterIntro(() => setTimeout(async () => {
         if (G.current !== "home" || document.querySelector("dialog[open]") || G.ls.get(K, null)) return;
@@ -3044,9 +3056,13 @@
         apri("proposta");
       }, 2200));
     };
+    // chi comincia a seguire un tema dalla prima pagina: la proposta arriva poco dopo, una volta sola
+    document.addEventListener("gerico:follows", (e) => {
+      const d = (e && e.detail) || {};
+      if (d.on && !d.sync && !d.annullato && G.CONTI && !G.percorso.primaVolta()) proponi();
+    });
     const pagina = () => {
       if (!G.CONTI) return;
-      contaGiorno();
       visita();
       if (G.ls.get(K, null)) { chiedi().catch(() => {}); return; }
       // senza il promemoria nel browser si chiede lo stesso al server, una volta per scheda: se il cookie dell'accesso c'è

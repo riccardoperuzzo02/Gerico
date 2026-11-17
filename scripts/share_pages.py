@@ -78,7 +78,7 @@ PAGINA = """<!doctype html>
 <h1>{title_full}</h1>
 <p class="sum">{summary}</p>
 {media}
-<p class="byline">A cura di <span class="by">R.P.</span></p>
+{byline}
 <div class="s-testo">
 {article}
 </div>
@@ -332,7 +332,7 @@ def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi"
     return PAGINA.format(title=E(short(titolo, 120)), title_full=E(titolo), desc=E(short(s.get("summary"))), summary=E(" ".join(str(s.get("summary") or "").split())),
                          base=base, id=sid, image=E(immagine), published=E(pub or ""), modified=E(mod or ""), section=E(sezione), sec_id=E(str(s.get("section") or "")),
                          quando=E(quando(mod) or ""), v=v, media=media, article=articolo, open=open_html, fonti=fonti_html, altre=altre_html,
-                         temi=temi_storia(s, temi or {}),
+                         temi=temi_storia(s, temi or {}), byline=BYLINE,
                          jsonld=json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"))
 
 
@@ -507,6 +507,9 @@ def pagine_archivio(site, base, v, indice):
     return ["/archivio"] + indirizzi, temi
 
 
+BYLINE = '<p class="byline">A cura di <span class="by">R.P.</span><span class="sep" aria-hidden="true">·</span><span class="ia">Scritto con l\'intelligenza artificiale</span></p>'
+
+
 def ripara_foto(site, in_edizione, v=""):
     """le pagine delle storie uscite dall'edizione restano, ma la loro foto può essere stata tolta (foto.py tiene solo
     quelle delle storie in corso): via il riquadro della foto e, come immagine dell'anteprima, quella di GERICO.
@@ -524,6 +527,8 @@ def ripara_foto(site, in_edizione, v=""):
             t2 = re.sub(r'(https?://[^"\s]+)?/img/foto/[\w.-]+\.jpg(\?v=\w+)?', base + "/assets/img/og-gerico.png", t2)
         if v:
             t2 = re.sub(r'(/assets/css/gerico\.css)\?v=[\w-]+', lambda x: x.group(1) + v, t2)
+        # la firma dichiara che il testo è scritto con l'intelligenza artificiale (AI Act, art. 50), anche nelle pagine vecchie
+        t2 = t2.replace('<p class="byline">A cura di <span class="by">R.P.</span></p>', BYLINE, 1)
         if 'rel="manifest"' not in t2 and "noindex" not in t2:
             t2 = t2.replace('<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n',
                             '<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">\n<link rel="manifest" href="/manifest.webmanifest">\n', 1)

@@ -1,20 +1,90 @@
 {
  "code": "US",
- "asOf": "2026-11-17T11:17:38+00:00",
+ "asOf": "2026-11-17T13:17:34+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
-   "desc": "Home Depot named Richard McPhail as its new CEO effective next week.",
-   "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
-   "at": "2026-11-17T11:08:26+00:00"
+   "title": "Nvidia has lost $2 trillion in value. Here's what options traders expect from earnings",
+   "desc": "Nvidia options are pricing in a bigger move than usual.",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-has-lost-2-trillion-in-value-heres-what-options-traders-expect-from-earnings.html",
+   "at": "2026-11-17T13:16:43+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Ukraine damages Putin’s prized Crimea bridge as Russia strikes vital Kyiv crossings",
+   "title": "Disney beats fourth-quarter estimates, targets $3 billion in savings through cost-cutting efforts",
+   "desc": "Investors will be looking for more insight into CEO Josh D'Amaro's strategy following several rounds of layoffs.",
+   "url": "https://www.cnbc.com/2026/11/17/disney-dis-earnings-q-2026.html",
+   "at": "2026-11-17T13:14:48+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'Big Short' investor Steve Eisman to discuss Nvidia, Anthropic and AI bull on CNBC",
+   "desc": "Steve Eisman is appearing on \"Squawk Box\" on Tuesday.",
+   "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
+   "at": "2026-11-17T13:13:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Investors look to Nvidia's earnings and Anthropic's IPO to refresh the tech rally",
+   "desc": "How the market set-up is more favorable for the Anthropic IPO than the lead-up to SpaceX's debut.",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-earnings-anthropic-ipo-tech-rally.html",
+   "at": "2026-11-17T13:11:40+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Challenging Consensus, Scientist Says Epstein Autopsy Photos Show Homicide",
+   "desc": "Investigations have found most evidence in Jeffrey Epstein’s death points to suicide. Michael Freeman, a forensic scientist who studies homicides, got rare access to the autopsy file and disagrees.",
+   "url": "https://www.nytimes.com/2026/11/16/us/jeffrey-epstein-autopsy-michael-freeman.html",
+   "at": "2026-11-17T13:10:10+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Ukraine damages Putin’s prized Crimea bridge as Zelenskyy lauds ‘unprecedented operation’",
    "desc": "Ukraine attacked the Kerch Bridge linking Russia to occupied Crimea for a second consecutive day, delivering a symbolic blow to President Vladimir Putin.",
    "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
-   "at": "2026-11-17T11:05:20+00:00"
+   "at": "2026-11-17T12:48:14+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump has arrived in Asia. Here’s what he said about Iran and Deutsche Bank",
+   "desc": "Trump threatens Iran and responds to a tax leak report as his Asia trip begins.",
+   "url": "https://www.cnbc.com/2026/11/17/trump-iran-asia-trip-china.html",
+   "at": "2026-11-17T12:35:58+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+   "desc": "Trump says he plans to discuss Ukraine during his Asia trip, which contradicts what the White House previously announced. And, Silicon Valley leaders are pushing for Jensen Huang's return to Nvidia.",
+   "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy",
+   "at": "2026-11-17T12:20:57+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
+   "desc": "Nike is hosting an investor day at its Oregon headquarters as the company tries to prove to investors that its turnaround is working.",
+   "url": "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
+   "at": "2026-11-17T12:00:01+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Can Google win the AI race without killing its cash cow?",
+   "desc": "In late October, Google had the worst stock day in its history as a public company. The Planet Money newsletter asks: has Google been caught in \"the innovator's dilemma\"?",
+   "url": "https://www.npr.org/sections/planet-money/2026/11/17/g-s1-153933/can-google-win-the-ai-race-without-killing-its-cash-cow",
+   "at": "2026-11-17T11:30:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Widespread service outages at major U.S. banks appear to be over",
+   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
+   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+   "at": "2026-11-17T11:24:27+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
+   "desc": "Iran has ratcheted up threats against U.S. forces as a third American aircraft carrier arrived in the Gulf, stoking fears of a resumption of military tensions.",
+   "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
+   "at": "2026-11-17T11:22:54+00:00"
   },
   {
    "source": "NPR",
@@ -59,6 +129,13 @@
    "at": "2026-11-17T10:22:54+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
+   "desc": "Trump’s accounts sold up to $1 million in Nvidia stock five days after he was briefed on Jensen Huang’s relationship with a suspected Chinese spy.",
+   "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+   "at": "2026-11-17T10:08:32+00:00"
+  },
+  {
    "source": "CBS News",
    "title": "This teen had no place to go, so a hospital became his home",
    "desc": "A young survivor of gun violence lived on the third floor of a St. Louis children's hospital, moving through the halls in a wheelchair, on and off for over three years. He said it became his home when he had nowhere safe to go.",
@@ -67,16 +144,16 @@
   },
   {
    "source": "NPR",
-   "title": "More people are getting the flu. Should you get a flu shot before you travel?",
-   "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
+   "title": "She went to college to become a social worker. Now she's joined the skilled trades",
+   "desc": "While the rise of AI continues to fuel the debate over whether college is worth the cost, apprenticeships in the skilled trades are having a moment, drawing in people of all backgrounds including college graduates.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
    "at": "2026-11-17T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "She went to college to become a social worker. Now she's joined the skilled trades",
-   "desc": "While the rise of AI continues to fuel the debate over whether college is worth the cost, apprenticeships in the skilled trades are having a moment, drawing in people of all backgrounds including college graduates.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
+   "title": "More people are getting the flu. Should you get a flu shot before you travel?",
+   "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season.",
+   "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
    "at": "2026-11-17T10:00:00+00:00"
   },
   {
@@ -88,8 +165,8 @@
   },
   {
    "source": "NPR",
-   "title": "Russia downs over 1,400 Ukrainian drones as Kyiv hits a key bridge in Crimea",
-   "desc": "Ukraine's forces targeted a key rail and road bridge between Russia and the Crimean Peninsula for a second day. Moscow's forces, meanwhile, fired ballistic missiles and drones at Kyiv.",
+   "title": "Ukraine strikes major Russian bridge with drones and missiles as aerial attacks escalate",
+   "desc": "A Ukrainian drone and missile attack prepared over several weeks struck a vital Russian rail and road bridge to the occupied Crimean Peninsula, Ukrainian President Volodymyr Zelenskyy said Tuesday.",
    "url": "https://www.npr.org/2026/11/17/g-s1-153946/russia-ukraine-war",
    "at": "2026-11-17T09:50:45+00:00"
   },
@@ -115,13 +192,6 @@
    "at": "2026-11-17T08:52:45+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Widespread service outages at major U.S. banks appear to be over",
-   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
-   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "at": "2026-11-17T08:12:00+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "El Niño Draws Sea Turtles to California’s Coast for the First Time",
    "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters.",
@@ -141,20 +211,6 @@
    "desc": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024.",
    "url": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
    "at": "2026-11-17T06:59:42+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
-   "desc": "Iran has ratcheted up threats against U.S. forces as a third American aircraft carrier arrived in the Gulf, stoking fears of a resumption of military tensions.",
-   "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
-   "at": "2026-11-17T05:51:13+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Here's what to expect when Disney reports earnings before the bell",
-   "desc": "Investors will be looking for more insight into CEO Josh D'Amaro's strategy following a series of company-wide layoffs.",
-   "url": "https://www.cnbc.com/2026/11/17/disney-dis-earnings-q-2026.html",
-   "at": "2026-11-17T05:01:01+00:00"
   },
   {
    "source": "New York Times",
@@ -431,13 +487,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Robert Pattinson cast as next James Bond",
-   "desc": "Pattinson has been in major films this year, including Christopher Nolan's \"The Odyssey,\" and will soon appear in \"Dune: Part Three.\"",
-   "url": "https://www.cnbc.com/2026/11/16/robert-pattinson-james-bond.html",
-   "at": "2026-11-16T21:03:36+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
    "desc": "Anthropic's upcoming IPO is putting finance chief Krishna Rao into the limelight.",
    "url": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
@@ -456,13 +505,6 @@
    "desc": "The Supreme Court left in place a lower court decision that upheld the measure banning guns in sensitive places.",
    "url": "https://www.cbsnews.com/news/supreme-court-maryland-gun-laws-sensitive-places/",
    "at": "2026-11-16T20:10:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Challenging Consensus, Scientist Says Epstein Autopsy Photos Show Homicide",
-   "desc": "Investigations have found most evidence in Jeffrey Epstein’s death points to suicide. Michael Freeman, a forensic scientist who studies homicides, got rare access to the autopsy file and disagrees.",
-   "url": "https://www.nytimes.com/2026/11/16/us/jeffrey-epstein-autopsy-michael-freeman.html",
-   "at": "2026-11-16T20:08:10+00:00"
   },
   {
    "source": "CNBC",
@@ -493,13 +535,6 @@
    "at": "2026-11-16T19:19:17+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "This Anthropic proxy play is getting traders' attention – here's where they see it going",
-   "desc": "There are bullish signs surrounding the Anthropic IPO in the derivatives market.",
-   "url": "https://www.cnbc.com/2026/11/16/anthropic-proxy-destiny-tech100-fund.html",
-   "at": "2026-11-16T19:06:11+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Epstein's death may not have been suicide, new analysis suggests",
    "desc": "Forensics expert Dr. Michael Freeman says multiple images and overlooked details about Jeffrey Epstein's death contradict the conclusion that he died by suicide.",
@@ -512,20 +547,6 @@
    "desc": "The legislation would allow families of individuals harmed by tech products to take their claims to court even if they agreed to the company's terms of service for private arbitration.",
    "url": "https://www.cbsnews.com/news/roblox-bill-josh-hawley-dick-durbin/",
    "at": "2026-11-16T18:58:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Market's Nvidia obsession obscuring an opportunity in this name",
-   "desc": "Investors might be overlooking Disney earnings.",
-   "url": "https://www.cnbc.com/2026/11/16/disney-options-trade-before-earnings.html",
-   "at": "2026-11-16T18:56:49+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "U.S. tightens controls on remote access to AI technology amid Nvidia fallout",
-   "desc": "The new rule closes a loophole that existed that allowed Chinese companies to still access advanced AI chips remotely, despite U.S. restrictions on their physical sale to China.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
-   "at": "2026-11-16T18:49:26+00:00"
   },
   {
    "source": "CNBC",
@@ -547,13 +568,6 @@
    "desc": "According to a source directly familiar with the Nvidia board's thinking, the company is not interested bringing Jensen Huang back to the company as CEO or in any other position.",
    "url": "https://www.cbsnews.com/news/trump-nvidia-jensen-huang/",
    "at": "2026-11-16T18:25:11+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
-   "desc": "Countries are meeting in Geneva to negotiate rules on weapons that can select and kill targets without human intervention. But with the U.S., Russia and Israel resisting legally binding controls, campaigners fear the window to act is closing.",
-   "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
-   "at": "2026-11-16T18:04:50+00:00"
   },
   {
    "source": "New York Times",
@@ -584,13 +598,6 @@
    "at": "2026-11-16T16:20:59+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "'We slept here': Flight delays linger as airlines recover from ground stop, but schedule improves Monday",
-   "desc": "Flight disruptions lingered two days after the Federal Aviation Administration grounded departures nationwide for more than four hours.",
-   "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
-   "at": "2026-11-16T15:56:39+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Supreme Court rejects case on Trump's bid to cut grants related to DEI",
    "desc": "Two federal agencies had moved to cancel grants to researchers at the University of California that they said did not align with President Trump's policies on DEI.",
@@ -610,20 +617,6 @@
    "desc": "Once she takes office, she pledges to use metrics to deliver “a city that works” after a pandemic, wildfires and clashes with Trump. But budget constraints and more stand in the way.",
    "url": "https://www.nytimes.com/2026/11/16/us/raman-la-mayor-priorities.html",
    "at": "2026-11-16T14:08:13+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit",
-   "desc": "Less than a week after Jensen Huang's abrupt departure, Nvidia interim CEO Colette Kress faces a major test with earnings.",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
-   "at": "2026-11-16T13:42:43+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "‘Steering Failure’ Likely Caused Tanker’s Collision With Riverboat, N.T.S.B. Says",
-   "desc": "A tanker struck a docked passenger ship in New Orleans on Friday, causing it to capsize. Investigators emphasized that their findings were preliminary.",
-   "url": "https://www.nytimes.com/2026/11/16/us/new-orleans-cruise-ship-steering-failure.html",
-   "at": "2026-11-16T11:38:59+00:00"
   }
  ]
 }

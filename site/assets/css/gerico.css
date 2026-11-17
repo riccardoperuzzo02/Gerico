@@ -2893,9 +2893,6 @@ html.nuova .fol-nuovo { border-radius: 50% !important; }
 .fol-agg > .fol-l:first-of-type { margin-top: var(--f13, 13px); }
 .fol-q:focus-visible { outline: 2px solid var(--accent, var(--palm)); outline-offset: 1px; }
 .tag.fol-altri { background: none; box-shadow: none; color: var(--accent, var(--palm)); text-decoration: underline; text-underline-offset: 3px; }
-.fol-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 4px 0 var(--f13, 13px); }
-.fol-bar p { flex: 1 1 240px; font-size: 0.875rem; line-height: 1.45; color: var(--muted); }
-.fol-bar .tag { flex: none; }
 /* l'avviso con «Annulla» */
 .toast.az { display: flex; align-items: center; gap: 4px; width: max-content; max-width: calc(100vw - 32px); padding-right: 6px; }
 .toast.az.on { pointer-events: auto; }
@@ -3029,7 +3026,7 @@ html.nuova .menu-links a::after, html.nuova .menu-links button::after, html.nuov
 .tv-top { padding-top: var(--f13, 13px); }
 .tv-top[hidden] { display: none; }
 .tv-card {
-  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: stretch; min-height: 52px;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: stretch; min-height: 58px;
   background: var(--t-panel); border: 1px solid var(--t-rule); border-radius: var(--radius); overflow: hidden;
 }
 .tv-lab {
@@ -3052,6 +3049,9 @@ html.nuova .tv-dot, html.nuova .tv-dot::after, .tv-dot, .tv-dot::after { border-
 }
 .tv-top .tv, html.nuova .tv-top .tv { flex: 1 1 auto; min-width: 0; margin: 0; padding: 0; }
 .tv-top .tradingview-widget-container { width: 100%; }
+/* il widget in «regular» è alto 58 px: il riquadro è alto uguale, e nastro, titolo e nome stanno sulla stessa linea */
+.tv-top .tradingview-widget-container, .tv-top .tradingview-widget-container__widget { display: flex; align-items: center; }
+.tv-top .tradingview-widget-container__widget { flex: 1 1 auto; min-width: 0; }
 .tv-top .tradingview-widget-container iframe { display: block; }
 /* il Terminal è scuro (color-scheme: dark) e la pagina del widget no: con schemi diversi il browser dipinge l'iframe con
    un fondo bianco pieno, e il nastro «trasparente» diventa una striscia bianca. Con lo stesso schema resta trasparente */
@@ -3073,7 +3073,6 @@ body.term .tv-cred:hover { color: var(--t-ink); }
 /* telefono: del titolo resta il punto, il nastro ha più spazio */
 @media (max-width: 599px) {
   .tv-top { padding-top: var(--f8, 8px); }
-  .tv-card { min-height: 48px; }
   .tv-lab { padding: 0 13px; }
   .tv-lab span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .tv-cred { padding: 0 12px; font-size: 0.6875rem; }

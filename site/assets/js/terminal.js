@@ -1513,7 +1513,9 @@ G.page("terminal", async function (P) {
     const sc = document.createElement("script");
     sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
     sc.async = true;
-    sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "adaptive", colorTheme: "dark", locale: G.L("it", "en") });
+    // «regular»: una riga sola alta 58 px a ogni larghezza («adaptive» sotto i 767 px passa a due righe alte 84 px, e il
+    // riquadro cambiava altezza da uno schermo all'altro). Senza la scritta di TradingView sotto, che sta già a destra
+    sc.textContent = JSON.stringify({ symbols: TV_SYMBOLS, showSymbolLogo: false, isTransparent: true, displayMode: "regular", colorTheme: "dark", locale: G.L("it", "en") });
     wrap.appendChild(sc);
     box.appendChild(wrap);
     // quando il nastro c'è, l'attesa sparisce (e comunque dopo qualche secondo)

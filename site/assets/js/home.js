@@ -553,9 +553,6 @@ G.page("home", async function (P) {
     const r = row.getBoundingClientRect(), x = b.getBoundingClientRect();
     if (x.left < r.left + 8 || x.right > r.right - 8) row.scrollLeft += x.left - r.left - 21;
   }
-  // nella scheda di un tema caldo: seguirlo da lì
-  const temaBar = (th) => '<div class="fol fol-bar" id="fol-bar"><p>' + (isFollowed(tKey(th)) ? G.L("Segui questo tema: le sue notizie sono anche nei Seguiti.", "You follow this topic: its news is in Following too.")
-    : G.L("Un tema caldo di questi giorni. Seguilo per ritrovare le sue notizie nei Seguiti.", "A hot topic of these days. Follow it to find its news in Following.")) + "</p>" + tagBtn(tKey(th), isFollowed(tKey(th))) + "</div>";
   // il giorno delle notizie più recenti tra queste ore: «di ieri», «di sabato 7 novembre»
   function lastDay(isos) {
     const t = isos.map((x) => Date.parse(x || "")).filter((x) => x > 0);
@@ -593,8 +590,8 @@ G.page("home", async function (P) {
     // l'edizione ha una fine: si sa quando arrivano le prossime notizie
     const end = '<p class="end"><strong>' + (state.section === "tutte" ? G.L("Fine dell'edizione.", "End of the edition.") : G.L("Fine della sezione.", "End of the section.")) + "</strong> " + G.L("Prossimo aggiornamento delle notizie ", "Next news update ") + esc(G.nextUpdate(true)) + ".</p>";
     const breviPrima = state.section === "tutte" && !brInSide() && bl.length && G.interessi && G.interessi.lettura().includes("brevi");
-    const caldo = themeOf(state.section);
-    const top = (caldo ? temaBar(caldo) : "") + (list.length
+    // nella scheda di un tema caldo le notizie partono subito (i temi si seguono dai Seguiti e dagli articoli)
+    const top = (list.length
       ? leadHTML(list[0], all) + (breviPrima ? breviHTML(bl, all) : "") + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       // brevi di oggi, o solo di ieri e di prima: la riga lo dice com'è, con il giorno delle ultime
       : estero ? '<p class="none">' + esc(G.cap(G.paeseDa(paeseOra())) + G.L(", oggi, le brevi delle sue testate. ", ", today: briefs from its outlets. ") + (G.paeseInfo(paeseOra()).level === 1
@@ -1185,8 +1182,6 @@ G.page("home", async function (P) {
       // fuori dai Seguiti cambiano il segno sulle notizie del tema e il numero accanto a «Seguiti»
       buildNav();
       markNav();
-      const b = r && r.blk === "fol-bar" && $("feed").querySelector("#fol-bar [data-follow]");
-      if (b) b.focus({ preventScroll: true });
       return;
     }
     if (!r) return;

@@ -1,20 +1,69 @@
 {
  "code": "DE",
- "asOf": "2026-11-18T09:17:35+00:00",
+ "asOf": "2026-11-18T11:17:40+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Senkung der Stromsteuer: Kritik aus der Koalition trotz Einigung auf Stromsteuersenkung",
+   "desc": "Die Stromsteuer wird gesenkt – doch die Diskussionen gehen weiter. In der CDU wird der Arbeitsstil der SPD kritisiert, in der SPD der fehlende Mut des Kanzlers.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-cdu-spd-paul-ziemiak-thorsten-rudolph-anke-rehlinger-gxe",
+   "at": "2026-11-18T10:46:44+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Unions-Fraktionsvize sieht Nachholbedarf bei Politik für junge Menschen",
+   "desc": "Ende Oktober hatte es am Rande von \"Gen Z\"-Demos massive Gewalt gegeben, danach gab es Forderungen nach Demo-Verboten. Für Freitag sind neue Kundgebungen geplant. Aus Parteien kommt nun demonstrative Unterstützung - auch aus der Union.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/gen-z-proteste-union-100.html",
+   "at": "2026-11-18T10:32:57+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundesverfassungsgericht: BSW scheitert mit Beschwerde zur Bundestagswahl",
+   "desc": "Das Bundesverfassungsgericht hat die Beschwerde des BSW zur Bundestagswahl 2025 als unzulässig zurückgewiesen. Sahra Wagenknecht spricht von einem »Fehlurteil«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-scheitert-mit-verfassungsbeschwerde-zur-bundestagswahl-2025",
+   "at": "2026-11-18T10:30:22+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Stromsteuer : Und dann verlässt der Kanzler den Raum",
+   "desc": "In der Nacht soll Merz mit dem Abbruch der Verhandlungen gedroht haben – und hat die kurzzeitige Stromsteuersenkung durchgesetzt. Viel gewonnen hat er damit nicht.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-koalitionsausschuss-merz-klingbeil",
+   "at": "2026-11-18T10:19:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Shenzhen: Xi Jinping empfängt Donald Trump persönlich in Shenzhen",
+   "desc": "Donald Trump ist zum Apec-Gipfel in China eingetroffen. Anders als bisher angekündigt, will er dort mit Xi und Putin über ein Ende des Ukrainekriegs sprechen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-china-apec-gipfel-xi-jinping-wladimir-putin-gxe",
+   "at": "2026-11-18T10:18:53+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Uno: Was Svenja Schulze als mögliche Unicef-Chefin plant",
+   "desc": "Die Bundesregierung will die frühere Bundesministerin Svenja Schulze zur Unicef-Chefin machen. Hier verrät die Sozialdemokratin, was sie mit dem Amt vorhat.",
+   "url": "https://www.spiegel.de/politik/deutschland/uno-was-svenja-schulze-als-moegliche-unicef-chefin-plant-a-585de9da-800b-4690-880a-5a62917e5b0b",
+   "at": "2026-11-18T10:05:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Pistorius bezeichnet Kritik der USA an Ukraine als »ziemlich dumm«",
+   "desc": "Der Verteidigungsminister hat die US-Kritik an ukrainischen Angriffen auf Russland zurückgewiesen. Frankreich bestätigt Ausbildungseinsatz in der Ukraine. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-18T09:43:48+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Wohnungsbau: Zahl der Baugenehmigungen deutlich gesunken",
+   "desc": "Nach zuletzt starken Zuwächsen ist die Zahl der Baugenehmigungen im September um fast 15 Prozent gesunken. Es war der stärkste Rückgang seit fast zwei Jahren.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/baugenehmigungen-deutschland-wohnungsbau-wohnungsmangel-gxe",
+   "at": "2026-11-18T09:36:13+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Ruanda: Wie Ruanda sein Image poliert",
    "desc": "Sport, Tourismus, Investitionen – und jetzt Wunschpartner europäischer Abschiebungspolitik: Ruandas Image überdeckt Menschenrechtsverletzungen und kriegerische Akte.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/ruanda-kigali-image-tourismus-werbung-europa-menschenrechte",
    "at": "2026-11-18T09:06:52+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundesverfassungsgericht: BSW scheitert mit Beschwerde zur Bundestagswahl",
-   "desc": "Das BSW wollte eine Neuauszählung der Stimmen für die Bundestagswahl 2025 erwirken. Das Bundesverfassungsgericht wies die Beschwerde als unzulässig zurück.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-scheitert-mit-verfassungsbeschwerde-zur-bundestagswahl-2025",
-   "at": "2026-11-18T09:01:12+00:00"
   },
   {
    "source": "Tagesschau",
@@ -25,17 +74,17 @@
   },
   {
    "source": "Tagesschau",
+   "title": "Bundesverfassungsgericht: BSW scheitert mit Wahlbeschwerde",
+   "desc": "Das BSW war bei der Bundestagswahl sehr knapp gescheitert und wollte, dass neu ausgezählt wird. Damit scheiterte die Partei nun auch endgültig vor dem Bundesverfassungsgericht. BSW-Politiker kritisierten das scharf.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
+   "at": "2026-11-18T08:55:02+00:00"
+  },
+  {
+   "source": "Tagesschau",
    "title": "Stromsteuersenkung und Spritpreisdeckel: Was die Entlastungen im Alltag bringen könnten",
    "desc": "Ab Januar wollen Union und SPD die Stromsteuer für ein Jahr auf das europäische Mindestniveau senken. Auch ein Spritpreisdeckel ist vereinbart. Was wurde konkret beschlossen und wie viel Entlastung könnte das im Alltag bringen?",
    "url": "https://www.tagesschau.de/inland/innenpolitik/was-bringt-stromsteuer-senkung-koalitionsausschuss-100.html",
    "at": "2026-11-18T08:26:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wohnungsbau: Zahl der Baugenehmigungen deutlich gesunken",
-   "desc": "Nach zuletzt starken Zuwächsen ist die Zahl der Baugenehmigungen im September um fast 15 Prozent gesunken. Es war der stärkste Rückgang seit fast zwei Jahren.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/baugenehmigungen-deutschland-wohnungsbau-wohnungsmangel-gxe",
-   "at": "2026-11-18T08:14:09+00:00"
   },
   {
    "source": "Die Zeit",
@@ -46,14 +95,14 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Pistorius bezeichnet Kritik der USA an Ukraine als »ziemlich dumm«",
-   "desc": "Der Verteidigungsminister hat die US-Kritik an ukrainischen Angriffen auf Russland zurückgewiesen. Frankreich bestätigt Ausbildungseinsatz in der Ukraine. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-18T07:19:15+00:00"
+   "title": "Stromsteuersenkung: Koalition einigt sich auf Senkung der Stromsteuer für ein Jahr",
+   "desc": "Die Spitzen von Union und SPD haben sich auf eine Stromsteuersenkung ab Januar geeinigt. Die Finanzierung steht jedoch nur für ein Jahr. Auch der Spritpreisdeckel kommt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalition-einigt-sich-auf-senkung-der-stromsteuer-fuer-ein-jahr",
+   "at": "2026-11-18T07:37:17+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "Koalition einigt sich auf Senkung der Stromsteuer und Spritpreisdeckel",
+   "title": "Stromsteuer: CDU, CSU und SPD einigen sich auf Senkung",
    "desc": "Bis zwei Uhr morgens tagte der Koalitionsausschuss: Nun haben sich Merz, Klingbeil und Söder auf eine Senkung der Stromsteuer für alle Verbraucher verständigt, auch die Spritpreise sollen günstiger werden. Beide Maßnahmen sind zeitlich begrenzt.",
    "url": "https://www.spiegel.de/politik/deutschland/koalition-einigt-sich-auf-senkung-der-stromsteuer-vorerst-nur-2027-a-69144e3f-1de4-4fec-a38d-ee695e64d899",
    "at": "2026-11-18T06:37:00+00:00"
@@ -129,39 +178,11 @@
    "at": "2026-11-18T04:31:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Apec-Gipfel in Shenzhen: Xi Jinping warnt vor Handelsschranken",
-   "desc": "Chinas Staatschef ruft vor dem Treffen mit Donald Trump und Wladimir Putin zu mehr Freihandel auf. Der russische Staatschef sieht großes Potenzial in dem Dreiergipfel.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-xi-jinping-freihandel-china",
-   "at": "2026-11-18T04:00:44+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Senatswahl in Alaska: Demokratin nimmt Republikanern Senatssitz in Alaska ab",
-   "desc": "Die US-Demokraten haben sich eine Mehrheit von 56 zu 44 Sitzen im Senat gesichert. Mehrere US-Medien erklärten die Indigene Mary Peltola in Alaska zur Siegerin.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/senatswahl-alaska-mary-peltola-dan-sullivan-demokraten",
-   "at": "2026-11-18T03:59:40+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Koalitionsausschuss: Spitzen von CDU, CSU, SPD beraten über Stromsteuer, Rente, Spritpreisbremse",
    "desc": "Gegen 2 Uhr nachts verließen Merz, Klingbeil, Söder und anderen Koalitionäre das Kanzleramt. Dort hatten sie vor allem nach einer Lösung im Streit über die Stromsteuer gesucht. Ob sie erfolgreich waren, ist noch nicht bekannt.",
    "url": "https://www.spiegel.de/politik/deutschland/koalitionsausschuss-spitzen-von-cdu-csu-spd-beraten-ueber-stromsteuer-rente-spritpreisbremse-a-fee3177e-e386-42fd-98d7-37b8b344904b",
    "at": "2026-11-18T03:40:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wettmärkte: US-Aufsicht stoppt Wetten auf Trumps Aussagen bei Kalshi",
-   "desc": "Beim Onlinewettanbieter Kalshi dürfen Nutzer nicht mehr Geld darauf setzen, was der US-Präsident sagt. Die US-Handelsaufsicht prüft Manipulationsrisiken.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/kalshi-cftc-donald-trump-wetten-gabriel-perez",
-   "at": "2026-11-18T02:33:50+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Koalitionsausschuss: Koalition beendet Stromsteuergespräche tief in der Nacht",
-   "desc": "Nach mehr als acht Stunden haben die Spitzenpolitiker von Union und SPD ihre Verhandlungen im Koalitionsausschuss beendet. Ergebnisse wollen sie erst später mitteilen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalitionsausschuss-cdu-csu-spd-stromsteuer-friedrich-merz-lars-klingbeil-markus-soeder",
-   "at": "2026-11-18T02:08:51+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -274,20 +295,6 @@
    "desc": "Die Pläne von Deutschland und vier anderen EU-Staaten, abgelehnte Asylbewerber nach Ruanda zu bringen, sorgen weiter für Kritik - unter anderem bei Kirchen und Menschenrechtlern. Auch innerhalb der Bundesregierung ist das Vorhaben umstritten.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/reaktionen-ruanda-abschiebezentren-100.html",
    "at": "2026-11-17T11:32:45+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz lobt ausländische Medien für ein »deutlich positiveres« Deutschland-Bild",
-   "desc": "Friedrich Merz lobt die Darstellung Deutschlands, die internationale Journalisten verbreiten. Der Kanzler spekulierte zugleich darüber, warum die Berichterstattung im Inland deutlich weniger positiv ausfällt.",
-   "url": "https://www.spiegel.de/politik/deutschland/deutschland-friedrich-merz-lobt-auslaendische-medien-fuer-ein-deutlich-positiveres-deutschlandbild-a-37e0819d-1ecd-487b-bdd4-21bb7c353c9f",
-   "at": "2026-11-17T09:26:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Berlin: Senatsverwaltung verbietet Verein Hisbollah-Unterstützung – Razzien am Morgen",
-   "desc": "Die Berliner Senatsverwaltung verbietet einen mutmaßlich Hisbollah-nahen Moscheeverein. Er soll islamistische Milizen mit Geld und Propaganda unterstützt haben. Auch strafrechtlich wird ermittelt.",
-   "url": "https://www.spiegel.de/politik/deutschland/berlin-senatsverwaltung-verbietet-verein-hisbollah-unterstuetzung-razzien-am-morgen-a-df361c89-5b4c-4fa0-9492-508b576d138e",
-   "at": "2026-11-17T09:18:00+00:00"
   }
  ]
 }

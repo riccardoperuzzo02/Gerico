@@ -2,7 +2,7 @@ name: Dati del Terminal
 
 # Scarica prezzi e grafici (yfinance), serie economiche (FRED), documenti SEC (EDGAR), il calendario economico (Forex Factory)
 # e le notizie di Yahoo Finance con il tono calcolato da FinBERT; legge ad alta voce il riepilogo del giorno (voce di Gemini, Kokoro di riserva);
-# calcola i segnali dello screener dei titoli (in screener/, non pubblico) e come sono andati i titoli pubblicati; aggiorna i titoli
+# calcola i segnali dello screener dei titoli (in screener/, mai nel repository, che è pubblico) e come sono andati i titoli pubblicati; aggiorna i titoli
 # dentro gli indici della mappa (scripts/indici.py). Salva i file in site/data
 # e li pubblica su main, come fanno i giri delle notizie e delle chiusure. Non usa crediti Claude.
 on:
@@ -88,7 +88,8 @@ jobs:
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if [ -d site/data/indici ]; then git add site/data/indici; fi
-          for f in screener/candidati.json site/data/titoli-storico.json; do
+          # i candidati dello screener (screener/candidati.json) non si pubblicano: il repository è pubblico
+          for f in site/data/titoli-storico.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi

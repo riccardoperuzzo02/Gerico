@@ -5,3 +5,5 @@ _preview/
 .dev.vars
 .wrangler/
 node_modules/
+# i segnali dello screener non si pubblicano
+screener/

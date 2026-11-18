@@ -1,0 +1,112 @@
+{
+ "riepilogo": "2026-11-18T07:27:00+01:00",
+ "voce": "Iapetus, voce sintetica di Google (Gemini)",
+ "modello": "large-v3",
+ "uguali": 0.958,
+ "punti": [
+  {
+   "secondo": 3.8,
+   "testo": "gerico",
+   "sentito": "jericho",
+   "sicurezza": 0.7,
+   "prima": "e il riepilogo di",
+   "dopo": "partiamo dal golfo tra"
+  },
+  {
+   "secondo": 13.4,
+   "testo": "qeshm",
+   "sentito": "qeshem",
+   "sicurezza": 0.72,
+   "prima": "sull isola iraniana di",
+   "dopo": "in risposta a un"
+  },
+  {
+   "secondo": 15.1,
+   "testo": "bahrein",
+   "sentito": "bahrain",
+   "sicurezza": 0.66,
+   "prima": "a un attacco al",
+   "dopo": "l iran sostiene di"
+  },
+  {
+   "secondo": 19.2,
+   "testo": "bahrein",
+   "sentito": "bahrain",
+   "sicurezza": 0.64,
+   "prima": "base americana in kuwait",
+   "dopo": "e kuwait parlano di"
+  },
+  {
+   "secondo": 20.6,
+   "testo": "attacchi",
+   "sentito": "astacchi",
+   "sicurezza": 0.89,
+   "prima": "e kuwait parlano di",
+   "dopo": "intercettati passiamo alla cina"
+  },
+  {
+   "secondo": 71.9,
+   "testo": "esse e pi",
+   "sentito": "sp",
+   "sicurezza": 0.72,
+   "prima": "sei per cento l",
+   "dopo": "cinquecento l uno per"
+  },
+  {
+   "secondo": 74.9,
+   "testo": "",
+   "sentito": "per cento",
+   "sicurezza": 0.88,
+   "prima": "lo zero virgola sette",
+   "dopo": "a pesare sono nvidia"
+  },
+  {
+   "secondo": 76.2,
+   "testo": "nvidia",
+   "sentito": "invidia",
+   "sicurezza": 0.85,
+   "prima": "sette a pesare sono",
+   "dopo": "e gli altri titoli"
+  },
+  {
+   "secondo": 80.3,
+   "testo": "nvidia",
+   "sentito": "invidia",
+   "sicurezza": 0.86,
+   "prima": "dopo la chiusura pero",
+   "dopo": "ha battuto le attese"
+  },
+  {
+   "secondo": 90.3,
+   "testo": "huang",
+   "sentito": "wong",
+   "sicurezza": 0.83,
+   "prima": "il ritorno di jensen",
+   "dopo": "come amministratore delegato in"
+  },
+  {
+   "secondo": 111.7,
+   "testo": "ftse mib",
+   "sentito": "fuzzimib",
+   "sicurezza": 0.8,
+   "prima": "virgola trentuno con il",
+   "dopo": "a cinquantamilaottocentoquarantacinque punti lo"
+  },
+  {
+   "secondo": 120.7,
+   "testo": "e",
+   "sentito": "virgola",
+   "sicurezza": 0.79,
+   "prima": "e stabile a centocinquantanove",
+   "dopo": "cinquanta sul dollaro per"
+  },
+  {
+   "secondo": 129.4,
+   "testo": "ap",
+   "sentito": "app",
+   "sicurezza": 0.73,
+   "prima": "sul petrolio l agenzia",
+   "dopo": "scrive solo che ieri"
+  }
+ ]
+}

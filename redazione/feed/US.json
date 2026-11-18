@@ -1,27 +1,139 @@
 {
  "code": "US",
- "asOf": "2026-11-18T19:17:34+00:00",
+ "asOf": "2026-11-18T21:17:34+00:00",
  "items": [
   {
+   "source": "New York Times",
+   "title": "Ground Stop Came as Duffy Pushed to Rapidly Upgrade Aviation Systems",
+   "desc": "Current and former officials say that Transportation Secretary Sean Duffy’s push to quickly finish modernization during President Trump’s second term could continue to disrupt air travel.",
+   "url": "https://www.nytimes.com/2026/11/18/us/sean-duffy-ground-stop-faa-trump.html",
+   "at": "2026-11-18T21:12:44+00:00"
+  },
+  {
    "source": "CNBC",
-   "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
-   "desc": "Recent disruptions include a nationwide ground stop, Microsoft Outlook outage and a reported blackout of the National Security Agency's communications network.",
-   "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
-   "at": "2026-11-18T19:17:13+00:00"
+   "title": "Nvidia sinks after earnings, dragging down neoclouds CoreWeave, Iren",
+   "desc": "Nvidia's earnings come at a tumultuous time for the company.",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html",
+   "at": "2026-11-18T21:06:49+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "U.S. Catholic Bishops Are Discussing A.I. at Annual Meeting",
+   "desc": "At their annual fall meeting, the bishops are discussing how to address the negative impacts of A.I., even as some struggle to navigate the fast-evolving technology.",
+   "url": "https://www.nytimes.com/2026/11/18/us/us-catholic-bishops-meeting-ai.html",
+   "at": "2026-11-18T21:05:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "House Democrats Cast Wide Net as They Prepare Trump Investigations",
+   "desc": "The inquiries would focus on President Trump, his family and top officials in his administration and would include a look at Commerce Secretary Howard Lutnick and policies related to Nvidia.",
+   "url": "https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html",
+   "at": "2026-11-18T21:03:47+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A Massachusetts Town Revolts Against Amazon’s Delivery Drones",
+   "desc": "Amazon wants to offer faster delivery. Residents want quiet skies. A Massachusetts suburb wages an epic battle for control of its airspace.",
+   "url": "https://www.nytimes.com/2026/11/18/us/politics/amazon-delivery-drones-massachusetts.html",
+   "at": "2026-11-18T21:02:20+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Senator Bill Cassidy Blocks Trump Pick to Head Science Agency",
+   "desc": "A venture capitalist and Peter Thiel acolyte, Jim O’Neill faced bipartisan concern over whether he would stand up for science.",
+   "url": "https://www.nytimes.com/2026/11/18/us/politics/bill-cassidy-jim-oneill-science.html",
+   "at": "2026-11-18T20:41:54+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. indicts alleged Russian agent for spying on defense firm",
+   "desc": "A Russian man was indicted for allegedly surveilling and collecting information about employees of a Silicon Valley defense company.",
+   "url": "https://www.cbsnews.com/news/russia-agent-charges-spying-silicon-valley/",
+   "at": "2026-11-18T20:35:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "What to know about Trump's meeting with Xi in China",
+   "desc": "President Trump is holding a high-stakes meeting with Chinese President Xi Jinping on Thursday against the backdrop of a widening scandal.",
+   "url": "https://www.cbsnews.com/news/trump-xi-meet-china-chips-ai/",
+   "at": "2026-11-18T20:23:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Boxing world champion Jorge Linares detained by ICE in Texas",
+   "desc": "Jorge Linares, a Venezuelan professional boxer, was detained by ICE in Texas, according to federal officials and his attorneys.",
+   "url": "https://www.cbsnews.com/news/boxing-world-champion-jorge-linares-detained-ice/",
+   "at": "2026-11-18T20:20:37+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic IPO: AI lab considers increasing the offering as investor demand surges, sources say",
+   "desc": "Anthropic stock is set to begin trading on the Nasdaq under the ticker symbol ANT on Thursday.",
+   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+   "at": "2026-11-18T20:20:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump, Xi and Putin Will Sit Down for the First Time. It Won’t Be Like Yalta.",
+   "desc": "While the three leaders would like to project the image that they are guiding the world order, they are unlikely to settle major issues at their gathering in Shenzhen, China.",
+   "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-putin-summit-yalta.html",
+   "at": "2026-11-18T20:12:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia reverses, metals crash ahead of Anthropic IPO",
+   "desc": "Big moves have options traders wondering if Anthropic's IPO is spurring a rotation trade.",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-reverses-metals-crash-ahead-of-anthropic-ipo-options-action-live.html",
+   "at": "2026-11-18T20:10:07+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "New Members Get a Congress Crash Course With Grade School Vibes",
+   "desc": "Newly elected House members are attending freshman orientation on Capitol Hill, where their introduction to Congress feels a lot like the first days of school.",
+   "url": "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
+   "at": "2026-11-18T20:04:41+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+   "at": "2026-11-18T19:47:05+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Why Anthropic's hot IPO is bringing out sellers — plus, a silver lining of the down market",
+   "desc": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/18/why-anthropics-hot-ipo-is-bringing-out-sellers-plus-a-down-market-silver-lining.html",
+   "at": "2026-11-18T19:46:12+00:00"
   },
   {
    "source": "CNBC",
    "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
    "desc": "The Federal Reserve on Wednesday released minutes from its October policy meeting at which it voted to hold its benchmark interest rate in a range between 3.75%-4%.",
    "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-   "at": "2026-11-18T19:16:08+00:00"
+   "at": "2026-11-18T19:41:59+00:00"
   },
   {
    "source": "CNBC",
    "title": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
    "desc": "Nvidia's interim CEO Colette Kress urges staff forward and offers pay raises after Jensen Huang exit.",
    "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
-   "at": "2026-11-18T19:15:02+00:00"
+   "at": "2026-11-18T19:21:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
+   "desc": "Recent disruptions include a nationwide ground stop, Microsoft Outlook outage and a reported blackout of the National Security Agency's communications network.",
+   "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
+   "at": "2026-11-18T19:17:27+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Epstein's death may not have been suicide, new analysis suggests",
+   "desc": "Forensics expert Dr. Michael Freeman says multiple images and overlooked details about Jeffrey Epstein's death contradict the conclusion that he died by suicide.",
+   "url": "https://www.cbsnews.com/news/jeffrey-epstein-death-suicide-forensics-expert-analysis/",
+   "at": "2026-11-18T19:16:47+00:00"
   },
   {
    "source": "CBS News",
@@ -31,25 +143,11 @@
    "at": "2026-11-18T19:08:52+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nvidia's earnings report had something for the bulls, bears and everyone in between",
-   "desc": "Nvidia's commentary on its buyback and AI ecosystem support was encouraging. But it's not a shock to see the stock down Wednesday.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/18/nvidias-earnings-report-had-something-for-the-bulls-bears-and-everyone-in-between.html",
-   "at": "2026-11-18T19:07:39+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Largest U.S. data centers use as much power as some countries",
    "desc": "Hyperscale data centers used almost 2% of all U.S. electricity between 2024 and 2025, a Harvard study shows.",
    "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/",
    "at": "2026-11-18T19:05:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia reverses, metals crash ahead of Anthropic IPO: Options Action Live",
-   "desc": "Big moves have options traders wondering if Anthropic's IPO is spurring a rotation trade.",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-reverses-metals-crash-ahead-of-anthropic-ipo-options-action-live.html",
-   "at": "2026-11-18T19:01:42+00:00"
   },
   {
    "source": "New York Times",
@@ -67,7 +165,7 @@
   },
   {
    "source": "CBS News",
-   "title": "Company struggled to find location of outage during ground stop",
+   "title": "FAA contractor struggled to find location of outage during ground stop",
    "desc": "It took several hours for contractor L3Harris to pinpoint the source of an outage that caused last Friday's nationwide ground stop​.",
    "url": "https://www.cbsnews.com/news/ground-stop-l3harris-system-outage/",
    "at": "2026-11-18T18:36:00+00:00"
@@ -150,25 +248,11 @@
    "at": "2026-11-18T17:50:37+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "A Massachusetts Town Revolts Against Amazon’s Delivery Drones",
-   "desc": "Amazon wants to offer faster delivery. Residents want quiet skies. A Massachusetts suburb wages an epic battle for control of its airspace.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/amazon-delivery-drones-massachusetts.html",
-   "at": "2026-11-18T17:48:49+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Gamers, start your engines. Grand Theft Auto 6 is ready to roll.",
    "desc": "The latest, long-awaited version of the hit video game franchise launches at midnight local time on Nov. 19 in countries worldwide. Here's what to know about GTA 6.",
    "url": "https://www.cbsnews.com/news/grand-theft-auto-6-release-date-price-what-to-know/",
    "at": "2026-11-18T17:48:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Senator Bill Cassidy Blocks Trump Pick to Head Science Agency",
-   "desc": "A venture capitalist and Peter Thiel acolyte, Jim O’Neill faced bipartisan concern over whether he would stand up for science.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/bill-cassidy-jim-oneill-science.html",
-   "at": "2026-11-18T17:47:25+00:00"
   },
   {
    "source": "New York Times",
@@ -178,25 +262,11 @@
    "at": "2026-11-18T17:41:42+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nvidia sinks after earnings, dragging down neoclouds CoreWeave, Iren",
-   "desc": "Nvidia's earnings come at a tumultuous time for the company.",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html",
-   "at": "2026-11-18T17:35:27+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Anthropic's IPO set for blastoff this week in key test for AI boom",
    "desc": "Anthropic's stock is poised to start trading on Nasdaq Thursday in one of the largest IPOs of all time. The AI world is watching.",
    "url": "https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/",
    "at": "2026-11-18T17:29:33+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Anthropic IPO: AI lab considers increasing the offering as investor demand surges, sources say",
-   "desc": "Anthropic stock is set to begin trading on the Nasdaq under the ticker symbol ANT on Thursday.",
-   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-   "at": "2026-11-18T17:17:44+00:00"
   },
   {
    "source": "New York Times",
@@ -253,13 +323,6 @@
    "desc": "Some students are refusing to use A.I., and others are starting petitions to limit it across entire campuses. Colleges have taken notice.",
    "url": "https://www.nytimes.com/2026/11/18/us/anti-ai-protests-petitions-colleges.html",
    "at": "2026-11-18T16:16:31+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
-   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-   "at": "2026-11-18T16:14:10+00:00"
   },
   {
    "source": "NPR",
@@ -346,25 +409,11 @@
    "at": "2026-11-18T14:20:11+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "House Democrats Cast Wide Net as They Prepare Trump Investigations",
-   "desc": "The inquiries would focus on President Trump, his family and top officials in his administration and would include a look at Commerce Secretary Howard Lutnick and policies related to Nvidia.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/democrats-cast-investigative-net.html",
-   "at": "2026-11-18T14:17:26+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Mortgage demand turns lower, as interest rates shoot back up to the highest level in three weeks",
    "desc": "Mortgage rates moved sharply higher last week, causing demand for both mortgage refinances and home purchase loans to drop. Rates hit the highest in 3 weeks.",
    "url": "https://www.cnbc.com/2026/11/18/mortgage-demand-turns-lower-as-interest-rates-shoot-back-up-to-the-highest-level-in-three-weeks.html",
    "at": "2026-11-18T14:17:18+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "U.S. Catholic Bishops Are Discussing A.I. at Annual Meeting",
-   "desc": "At their annual fall meeting, the bishops are discussing how to address the negative impacts of A.I., even as some struggle to navigate the fast-evolving technology.",
-   "url": "https://www.nytimes.com/2026/11/18/us/us-catholic-bishops-meeting-ai.html",
-   "at": "2026-11-18T14:03:13+00:00"
   },
   {
    "source": "CNBC",
@@ -452,16 +501,16 @@
   },
   {
    "source": "NPR",
-   "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
-   "desc": "An inspired synthesis of violent satire and contemplative storytelling, Grand Theft Auto VI is more mature and ambitious than any prior game in the record-breaking franchise.",
-   "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
+   "title": "Greetings from a Berlin square, where an artist's statue watches over children at play",
+   "desc": "Children frolic around the ever-watchful and calm Käthe Kollwitz cast in bronze, in a square named after the German artist, whose work often depicted children in the wake of World War I.",
+   "url": "https://www.npr.org/2026/11/18/nx-s1-6043021/berlin-kollwitzplatz-statue",
    "at": "2026-11-18T11:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Greetings from a Berlin square, where an artist's statue watches over children at play",
-   "desc": "Children frolic around the ever-watchful and calm Käthe Kollwitz cast in bronze, in a square named after the German artist, whose work often depicted children in the wake of World War I.",
-   "url": "https://www.npr.org/2026/11/18/nx-s1-6043021/berlin-kollwitzplatz-statue",
+   "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
+   "desc": "An inspired synthesis of violent satire and contemplative storytelling, Grand Theft Auto VI is more mature and ambitious than any prior game in the record-breaking franchise.",
+   "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
    "at": "2026-11-18T11:00:00+00:00"
   },
   {
@@ -514,13 +563,6 @@
    "at": "2026-11-18T07:43:35+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Democrats have flipped 46 House seats. Here's the breakdown.",
-   "desc": "Democrats won control of the House by flipping more than 40 Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
-   "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
-   "at": "2026-11-18T04:17:38+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "For Democrats, a Leadership Fight Is Marring an Electoral Triumph",
    "desc": "The contest between Senators Chuck Schumer and Chris Van Hollen to be majority leader is sowing party divisions and putting them on public display.",
@@ -571,13 +613,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Airline schedules returning to normal after ground stop, FAA says",
-   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
-   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
-   "at": "2026-11-18T02:35:35+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Trump FDA nominee Heidi Overton struggling to win GOP support",
    "desc": "Heidi Overton, Trump's pick to be FDA commissioner, is having trouble finding enough Republican support to advance her nomination, which could be pulled if she falls short.",
    "url": "https://www.cbsnews.com/news/trump-fda-nominee-heidi-overton-confirmation-struggle/",
@@ -596,41 +631,6 @@
    "desc": "The move came after California’s Department of Motor Vehicles ordered the cars off the state’s freeways, citing an “imminent hazard to public safety.”",
    "url": "https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html",
    "at": "2026-11-18T00:29:23+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Third grader detained by federal officials is returned to family",
-   "desc": "An 8-year-old born in Haiti was sent to a Texas facility after an immigration check-in last week. On Monday, he was reunited with his family members back in San Diego.",
-   "url": "https://www.cbsnews.com/video/third-grader-detained-ice-returned-family/",
-   "at": "2026-11-18T00:24:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Outcome of Alaska Senate race could take weeks to determine",
-   "desc": "The Senate race in Alaska, which has garnered widespread attention with two candidates named Dan Sullivan, remains in limbo.",
-   "url": "https://www.cbsnews.com/news/senate-race-unresolved-in-alaska-as-candidates-expect-weekslong-process/",
-   "at": "2026-11-18T00:08:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
-   "desc": "The discovery by security company Calif shows A.I.’s ability to find gaping security holes in popular software. The Java flaw pointed to vulnerabilities in systems used by nearly all Fortune 500 companies.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
-   "at": "2026-11-18T00:06:20+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop",
-   "desc": "“We still gotta live our lives,” said the homeland security secretary, who is required to use government planes for personal travel. His department said he paid.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/mullin-lsu-football-plane.html",
-   "at": "2026-11-17T23:38:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/17: CBS Evening News",
-   "desc": "At least eight major technology outages hit the U.S. in the last week; the FAA paused the installation of new routers after the ground stop.",
-   "url": "https://www.cbsnews.com/video/111726-cbs-evening-news/",
-   "at": "2026-11-17T23:30:00+00:00"
   }
  ]
 }

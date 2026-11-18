@@ -1,13 +1,62 @@
 {
  "code": "US",
- "asOf": "2026-11-18T18:58:15+00:00",
+ "asOf": "2026-11-18T19:17:34+00:00",
  "items": [
   {
+   "source": "CNBC",
+   "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
+   "desc": "Recent disruptions include a nationwide ground stop, Microsoft Outlook outage and a reported blackout of the National Security Agency's communications network.",
+   "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
+   "at": "2026-11-18T19:17:13+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
+   "desc": "The Federal Reserve on Wednesday released minutes from its October policy meeting at which it voted to hold its benchmark interest rate in a range between 3.75%-4%.",
+   "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
+   "at": "2026-11-18T19:16:08+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
+   "desc": "Nvidia's interim CEO Colette Kress urges staff forward and offers pay raises after Jensen Huang exit.",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-kress-addresses-staff-after-jensen-huang-exit-.html",
+   "at": "2026-11-18T19:15:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump expected to press Xi on Americans detained in China",
+   "desc": "President Trump is expected to again press Chinese President Xi Jinping to release two Americans wrongfully detained in China when the leaders meet, their families say.",
+   "url": "https://www.cbsnews.com/news/trump-xi-detained-americans/",
+   "at": "2026-11-18T19:08:52+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia's earnings report had something for the bulls, bears and everyone in between",
+   "desc": "Nvidia's commentary on its buyback and AI ecosystem support was encouraging. But it's not a shock to see the stock down Wednesday.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/18/nvidias-earnings-report-had-something-for-the-bulls-bears-and-everyone-in-between.html",
+   "at": "2026-11-18T19:07:39+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Largest U.S. data centers use as much power as some countries",
+   "desc": "Hyperscale data centers used almost 2% of all U.S. electricity between 2024 and 2025, a Harvard study shows.",
+   "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/",
+   "at": "2026-11-18T19:05:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia reverses, metals crash ahead of Anthropic IPO: Options Action Live",
+   "desc": "Big moves have options traders wondering if Anthropic's IPO is spurring a rotation trade.",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-reverses-metals-crash-ahead-of-anthropic-ipo-options-action-live.html",
+   "at": "2026-11-18T19:01:42+00:00"
+  },
+  {
    "source": "New York Times",
-   "title": "Trump Arrives in China Focused on Friendship, Not Spy Scandal",
+   "title": "Trump Arrives in China Focused on Friendship With Xi, Not Nvidia Spy Scandal",
    "desc": "President Xi Jinping of China offered a hug and a red-carpet welcome as President Trump avoided discussing the espionage case that brought down Nvidia’s Jensen Huang.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-shenzhen-spy-scandal.html",
-   "at": "2026-11-18T18:52:03+00:00"
+   "at": "2026-11-18T18:52:04+00:00"
   },
   {
    "source": "CNBC",
@@ -18,10 +67,10 @@
   },
   {
    "source": "CBS News",
-   "title": "L3Harris struggled to find location of outage during ground stop",
+   "title": "Company struggled to find location of outage during ground stop",
    "desc": "It took several hours for contractor L3Harris to pinpoint the source of an outage that caused last Friday's nationwide ground stop​.",
    "url": "https://www.cbsnews.com/news/ground-stop-l3harris-system-outage/",
-   "at": "2026-11-18T18:36:40+00:00"
+   "at": "2026-11-18T18:36:00+00:00"
   },
   {
    "source": "CBS News",
@@ -88,24 +137,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Off-price retailer TJX keeps its promise and the stock soars. We’re satisfied, for now",
-   "desc": "TJX Companies is in rally mode.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/18/off-price-retailer-tjx-keeps-its-promise-and-the-stock-soars-were-satisfied-for-now.html",
-   "at": "2026-11-18T18:06:59+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Target shares rise 7% as retailer posts best sales growth in five years, hikes guidance",
    "desc": "Target beat third-quarter sales expectations and raised its guidance as it continues a turnaround effort.",
    "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html",
    "at": "2026-11-18T17:56:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Largest U.S. data centers use as much power as some countries",
-   "desc": "Hyperscale data centers used almost 2% of all U.S. electricity between 2024 and 2025, a Harvard study shows.",
-   "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/",
-   "at": "2026-11-18T17:53:18+00:00"
   },
   {
    "source": "CNBC",
@@ -169,13 +204,6 @@
    "desc": "The tension comes at a critical juncture for the vice president, who is considering whether to run for president in 2028.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/vance-trump-iran-2028-election-rubio.html",
    "at": "2026-11-18T17:15:08+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Vance scraps schedule to address tech outages as Trump admin insists incidents aren't linked",
-   "desc": "Recent disruptions include a nationwide ground stop, Microsoft Outlook outage and a reported blackout of the National Security Agency's communications network.",
-   "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html",
-   "at": "2026-11-18T17:11:11+00:00"
   },
   {
    "source": "NPR",
@@ -374,13 +402,6 @@
    "at": "2026-11-18T13:55:59+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Worried about the AI bubble popping? How investing pros say to adjust your strategy",
-   "desc": "Tech concentration and AI-stock volatility are rattling investors. Experts explain how to diversify without abandoning long-term stock exposure.",
-   "url": "https://www.cnbc.com/make-it/2026/11/18/how-to-diversify-your-portfolio-amid-ai-bubble-fears.html",
-   "at": "2026-11-18T13:19:31+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Apple restores services after internal update caused outages",
    "desc": "The company's system status shows that all Apple services, including iCloud sign-in, have been restored after experiencing issues earlier Tuesday.",
@@ -451,13 +472,6 @@
    "at": "2026-11-18T10:49:37+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "China’s military seeks Nvidia’s advanced chips for AI capabilities, commission says",
-   "desc": "A congressional commission issued its findings as Nvidia has been rocked by its CEO's resignation after reports he had an affair with a suspected Chinese spy.",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-chips-china-military-ai.html",
-   "at": "2026-11-18T10:45:01+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Trump lands in China with key meetings with Xi and Putin on the agenda",
    "desc": "Xi paid Trump a special honor by greeting him on the tarmac after Air Force One arrived in Shenzhen, reciprocating a gesture made by the U.S. president during Xi's visit to Washington in September.",
@@ -498,13 +512,6 @@
    "desc": "Mary Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
    "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
    "at": "2026-11-18T07:43:35+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount",
-   "desc": "Iran said its army targeted U.S. drone and missile installations at Kuwait's Ali Al Salem air base, extending a run of attacks on Gulf states.",
-   "url": "https://www.cnbc.com/2026/11/18/trump-iran-war-hormuz-oil-.html",
-   "at": "2026-11-18T05:24:54+00:00"
   },
   {
    "source": "CBS News",
@@ -582,13 +589,6 @@
    "desc": "Federal officials said they believed that a router made by Juniper Networks caused a data overload that disrupted communications.",
    "url": "https://www.nytimes.com/2026/11/17/us/faa-routers-ground-stop.html",
    "at": "2026-11-18T01:27:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Strangers team up to drive from Chicago to Nashville during last week's ground stop",
-   "desc": "On Friday, over 1 million passengers were stranded at airports, but one group of strangers teamed up to make a break for it. They drove eight hours from Chicago's Midway Airport to Nashville. Matt Gutman has the story.",
-   "url": "https://www.cbsnews.com/video/strangers-team-up-drive-chicago-nashville-last-weeks-ground-stop/",
-   "at": "2026-11-18T00:43:07+00:00"
   },
   {
    "source": "New York Times",

@@ -46,6 +46,8 @@ G.page("home", async function (P) {
       const parti = edl.textContent.replace(" · edizione delle ", " · ore ").replace(" · edition of ", " · ").split(" · ");
       if (parti.length > 1) { $("large-title").textContent = parti[0]; edl.textContent = parti.slice(1).join(" · "); }
     }
+    // l'aggiornamento atteso non è uscito: accanto all'ora, l'etichetta «in ritardo»
+    $("edition-line").insertAdjacentHTML("beforeend", G.ritardoNotiziePill(lastRun));
     // nella testata, quando il titolo grande è passato sotto: «Oggi» solo per l'edizione di oggi
     const age = G.dayAge(lastRun);
     if (age > 0) {
@@ -816,6 +818,7 @@ G.page("home", async function (P) {
     if (!root || !mkData.length) return;
     const tabs = root.querySelector(".mk-tabs"), row = root.querySelector(".mk-row"), nota = root.querySelector(".mk-nota");
     G.bordi(row);
+    G.bordi(tabs);  // anche le schede: sul telefono non ci stanno tutte, e il bordo sfuma invece di tagliare una parola
     const sig = mkData.map((t) => t.k).join(",");
     if (tabs.dataset.sig !== sig) {
       tabs.innerHTML = mkData.map((t) => '<button type="button" data-mk="' + t.k + '" aria-pressed="false">' + esc(t.n) + "</button>").join("");
@@ -888,6 +891,11 @@ G.page("home", async function (P) {
     if (!mkData.length) { $("ticker").hidden = true; return; }
     $("ticker").hidden = false;
     $("tk-w").textContent = qOk() ? " · " + G.when(qt.asOf) : mk && mk.asOf ? " · " + G.when(mk.asOf) : "";
+    // prezzi fermi nelle ore di Borsa: l'etichetta «in ritardo» accanto all'ora
+    const top = $("ticker").querySelector(".tk-top"), old = top && top.querySelector(":scope > .ritardo");
+    const pill = G.ritardoPrezziPill(qOk() ? qt.asOf : mk && mk.asOf);
+    if (old && !pill) { old.remove(); const n = top.nextElementSibling; if (n && n.classList.contains("ritardo-nota")) n.remove(); }
+    if (top && pill && !old) top.querySelector(".tk-h").insertAdjacentHTML("afterend", pill);
     mkFill($("ticker"), live);
     $("ticker").classList.remove("sk-tk");
   }
@@ -972,13 +980,13 @@ G.page("home", async function (P) {
     const side = $("side"), box = side.querySelector(".mk-side");
     if (!mkData.length) { side.innerHTML = '<div id="side-brevi"></div><div id="side-altro"></div>'; renderSideBrevi(); return; }
     if (live && box) {
-      box.querySelector(".when").textContent = G.mkWhen(mk);
+      box.querySelector(".when").innerHTML = esc(G.mkWhen(mk)) + G.ritardoPrezziPill(mk && mk.asOf);
       mkFill(box, true);
       renderNext();
       return;
     }
     side.innerHTML = '<section class="mk-box mk mk-side' + (live ? "" : " reveal") + '" style="--i:3" aria-labelledby="mk-h"><h2 id="mk-h">' + G.L("Mercati", "Markets") + "</h2>" +
-      '<p class="when">' + esc(G.mkWhen(mk)) + "</p>" +
+      '<p class="when">' + esc(G.mkWhen(mk)) + G.ritardoPrezziPill(mk && mk.asOf) + "</p>" +
       '<div class="mk-tabs" role="group" aria-label="' + G.L("Gruppi di mercati", "Market groups") + '"></div><div class="mk-row"></div><p class="mk-nota" hidden></p>' +
       '<a class="tk-ev" href="terminal?q=agenda" data-reveal>&nbsp;</a>' +
       '<a class="more" href="terminal.html">' + G.L("Tutti i mercati e l'agenda", "All markets and the calendar") + "</a></section>" +

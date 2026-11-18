@@ -433,9 +433,9 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .chips .fk { display: none; margin-right: 6px; font-size: 0.75rem; font-weight: 400; color: var(--t-ink-3); }
 @media (min-width: 1000px) {
   .chips .fk { display: inline; }
-  /* con «Trimestrali» le scorciatoie sono dieci: un po' più strette, così sul computer stanno tutte in una riga */
+  /* le scorciatoie sono dieci, da F1 a F10: un po' più strette, così sul computer stanno tutte in una riga */
   .chips { gap: 6px; }
-  .chips button { padding: 0 13px; }
+  .chips button { padding: 0 12px; }
 }
 
 .t-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; }
@@ -516,10 +516,9 @@ body.term .menu-links a[aria-current="page"] { color: var(--t-accent); }
 .t-agenda li.past { color: var(--t-ink-3); }
 .t-agenda .tm { font-weight: 700; }
 .t-agenda li.hi .tm { color: var(--t-accent); }
-.t-agenda li.next { margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 10px; background: rgba(240, 180, 76, 0.1); border-top-color: transparent; }
+.t-agenda li.next { margin: 0; padding-left: 8px; padding-right: 8px; grid-template-columns: calc(3.2rem - 8px) 2.8rem minmax(0, 1fr) auto; border-radius: 10px; background: rgba(240, 180, 76, 0.1); border-top-color: transparent; }
 .t-agenda li.next + li { border-top-color: transparent; }
-/* sugli schermi stretti il pannello ha meno margine: la riga evidenziata non ne esce */
-@media (max-width: 359px) { .t-agenda li.next { margin: 0 -6px; padding-left: 6px; padding-right: 6px; } }
+/* la riga evidenziata resta dentro la colonna: la prima colonna si stringe quanto il margine, così le altre restano in fila */
 .t-agenda li.next.soon { position: relative; }
 .t-agenda li.next.soon::before { content: ""; position: absolute; left: 0; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; background: var(--t-accent); }
 .t-next.soon::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; background: var(--t-accent); vertical-align: 1px; }
@@ -715,7 +714,7 @@ body.term .sk-row { height: 18px !important; margin-top: 32px !important; }
   .chips { margin: 0 -12px; padding-left: 12px; padding-right: 12px; }
   .mk-box td, .linked td { padding-left: 6px; white-space: normal; }
   .t-seg { flex: 1 1 100%; }
-  .t-agenda li { grid-template-columns: auto minmax(0, 1fr) auto; row-gap: 2px; }
+  .t-agenda li, .t-agenda li.next { grid-template-columns: auto minmax(0, 1fr) auto; row-gap: 2px; }
   .t-agenda .ev { grid-column: 1 / -1; grid-row: 2; }
   .t-agenda .im { grid-column: 3; grid-row: 1; }
 }
@@ -1831,10 +1830,12 @@ html:not([lang="en"]) [data-only="en"], html[lang="en"] [data-only="it"] { displ
 .c-cura { font-weight: 400; color: var(--muted); }
 html.nuova .lead .c-by { margin-top: var(--f13); }
 /* apertura: l'immagine larga in cima alla scheda, da bordo a bordo */
+/* più bassa che larga: sul telefono il titolo dell'apertura si vede senza scorrere */
 html.nuova .lead.has-img .media {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
 }
-@media (min-width: 760px) { html.nuova .lead.has-img .media { aspect-ratio: 2.2 / 1; } }
+html.nuova .lead.has-img .media.foto img { aspect-ratio: auto; height: 100%; }
+@media (min-width: 760px) { html.nuova .lead.has-img .media { aspect-ratio: 2.6 / 1; } }
 /* telefono: l'occhiello in cima, poi il titolo con la miniatura a destra, poi la firma. Il titolo resta intero */
 @media (max-width: 759px) {
   html.nuova .list .item.has-img { display: grid; grid-template-columns: minmax(0, 1fr) 88px; grid-template-areas: "k k" "t m" "b b"; column-gap: var(--f13); align-items: start; }
@@ -1865,8 +1866,8 @@ html.nuova .lead.has-img .media {
   html.nuova .list > .item.has-img:last-child:nth-child(odd) > .c-by { grid-area: b; align-self: end; }
 }
 /* lo scheletro dell'apertura ha già il posto dell'immagine: niente salto quando arriva l'edizione */
-html.nuova .sk-lead .m { height: auto; margin: calc(-1 * var(--f21)) calc(-1 * var(--f21)) var(--f21); aspect-ratio: 16 / 9; border-radius: var(--card-r) var(--card-r) 0 0; }
-@media (min-width: 760px) { html.nuova .sk-lead .m { aspect-ratio: 2.2 / 1; } }
+html.nuova .sk-lead .m { height: auto; margin: calc(-1 * var(--f21)) calc(-1 * var(--f21)) var(--f21); aspect-ratio: 2 / 1; border-radius: var(--card-r) var(--card-r) 0 0; }
+@media (min-width: 760px) { html.nuova .sk-lead .m { aspect-ratio: 2.6 / 1; } }
 /* nella storia: la mappa sotto il sommario, prima della firma */
 .st-media { margin-top: var(--f21, 21px); aspect-ratio: 16 / 9; border-radius: 16px; }
 .st-media + .byline { margin-top: var(--f13, 13px); }
@@ -3168,7 +3169,7 @@ html.nuova body.term .m-card { padding: 12px 14px; }
 @media (min-width: 1000px) { .t-tools { padding-top: var(--f13, 13px); } }
 /* agenda: il prossimo evento è una fascia appena più chiara che sborda di 6 px (quanto il margine del pannello), con un
    filo acceso a sinistra che pulsa quando manca poco; le scritte restano allineate alle altre righe */
-html.nuova body.term .t-agenda li.next { margin: 0 -6px; padding-left: 6px; padding-right: 6px; }
+html.nuova body.term .t-agenda li.next { margin: 0; padding-left: 8px; padding-right: 8px; }
 html.nuova body.term .t-agenda li.next.soon::before { left: 0; top: 10px; bottom: 10px; width: 2px; height: auto; margin-top: 0; border-radius: 2px !important; }
 @media (prefers-reduced-motion: no-preference) { html.nuova body.term .t-agenda li.next.soon::before { animation: live-dot 1.6s ease-in-out infinite; } }
 /* pagina Privacy: il pulsante per togliere il consenso a TradingView e la riga che dice com'è */
@@ -3292,3 +3293,54 @@ main { min-height: calc(100vh - var(--top-h)); min-height: calc(100dvh - var(--t
 .tendina-l { max-height: min(60vh, 420px); max-height: min(60dvh, 420px); }
 .pc-corpo { padding-top: clamp(20px, 7dvh, 72px); }
 .pc-marchio { margin-bottom: clamp(20px, 6dvh, 56px); }
+
+/* ---------- «in ritardo»: l'aggiornamento atteso non è arrivato (G.ritardoHTML) ----------
+   Un'etichetta piccola e calda accanto all'ora, con un punto che respira; toccandola si apre sotto la spiegazione.
+   Ambra in OKLCH (esadecimali di riserva), bordo in trasparenza, al buio più chiara e senza ombre. */
+:root {
+  --rit-ink: #8A5A00; --rit-bg: rgba(214, 158, 46, 0.14); --rit-edge: rgba(176, 120, 20, 0.28); --rit-dot: #C9860C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --rit-ink: #F2C46B; --rit-bg: rgba(242, 196, 107, 0.12); --rit-edge: rgba(242, 196, 107, 0.26); --rit-dot: #F2C46B; }
+}
+:root[data-theme="dark"], html.nuova body.term { --rit-ink: #F2C46B; --rit-bg: rgba(242, 196, 107, 0.12); --rit-edge: rgba(242, 196, 107, 0.26); --rit-dot: #F2C46B; }
+@supports (color: oklch(0.5 0.1 70)) {
+  :root { --rit-ink: oklch(0.5 0.11 70); --rit-bg: oklch(0.78 0.13 78 / 0.15); --rit-edge: oklch(0.62 0.12 72 / 0.3); --rit-dot: oklch(0.66 0.15 70); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --rit-ink: oklch(0.85 0.11 82); --rit-bg: oklch(0.85 0.11 82 / 0.12); --rit-edge: oklch(0.85 0.11 82 / 0.26); --rit-dot: oklch(0.85 0.12 80); }
+  }
+  :root[data-theme="dark"], html.nuova body.term { --rit-ink: oklch(0.85 0.11 82); --rit-bg: oklch(0.85 0.11 82 / 0.12); --rit-edge: oklch(0.85 0.11 82 / 0.26); --rit-dot: oklch(0.85 0.12 80); }
+}
+.ritardo {
+  display: inline-flex; align-items: center; gap: 6px; height: 22px; margin-left: 8px; padding: 0 9px 0 8px; vertical-align: 1px;
+  border: 1px solid var(--rit-edge); border-radius: 999px; background: var(--rit-bg); color: var(--rit-ink);
+  font: inherit; font-family: var(--sans); font-size: 0.6875rem; font-weight: 700; line-height: 1; letter-spacing: 0.05em; text-transform: uppercase;
+  white-space: nowrap; cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--t-2, 160ms) var(--ease, ease), transform var(--t-2, 160ms) var(--ease, ease);
+}
+.ritardo i { flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--rit-dot); }
+.ritardo span { font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; color: inherit !important; }
+.ritardo[aria-expanded="true"] { background: var(--rit-edge); }
+@media (hover: hover) { .ritardo:hover { background: var(--rit-edge); } }
+.ritardo:active { transform: scale(0.96); }
+.ritardo:focus-visible { outline: 2px solid var(--rit-dot); outline-offset: 2px; }
+/* il tocco: almeno 44 px d'altezza, senza ingrandire l'etichetta */
+.ritardo { position: relative; }
+.ritardo::after { content: ""; position: absolute; inset: -11px -4px; }
+@media (prefers-reduced-motion: no-preference) {
+  .ritardo i { animation: rit-respira 2.4s ease-in-out infinite; }
+  .ritardo-nota { animation: rit-apri 260ms var(--ease-sheet) both; }
+}
+@keyframes rit-respira { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(0.7); } }
+@keyframes rit-apri { from { opacity: 0; transform: translateY(-4px); } }
+.ritardo-nota {
+  max-width: 38rem; margin: 8px 0 4px; padding: 9px 12px; border: 1px solid var(--rit-edge); border-radius: 10px;
+  background: var(--rit-bg); color: var(--ink, inherit); font-family: var(--sans); font-size: 0.8125rem; font-weight: 400; line-height: 1.45;
+  letter-spacing: 0; text-transform: none;
+}
+body.term .ritardo-nota { color: var(--t-ink-2); }
+/* nella striscia dei mercati del telefono: l'etichetta subito dopo «Mercati · alle 12:37», il link resta a destra */
+.tk-top > .ritardo { margin: 0 auto 0 -4px; }
+.tk-top > .tk-h { flex: 0 1 auto; }
+@media (max-width: 374px) { .tk-top > .ritardo span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .tk-top > .ritardo { padding: 0 7px; } }
+.edition-sub .ritardo { vertical-align: 0; }

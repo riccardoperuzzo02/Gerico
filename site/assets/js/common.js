@@ -297,6 +297,56 @@
     return G.en ? "Data from " + (G.dayAge(asOf) === 1 ? "yesterday" : G.day(asOf)) + ", " + G.hm(asOf)
       : "Dati " + (G.dayAge(asOf) === 1 ? "di ieri" : "del " + G.day(asOf)) + ", ore " + G.hm(asOf);
   };
+  // ---------- aggiornamenti in ritardo ----------
+  // Le notizie escono dopo i giri delle 7:18 e delle 13:18, i prezzi ogni mezz'ora nei giorni di Borsa. Quando uno
+  // atteso non è arrivato, accanto all'ora compare un'etichetta discreta («in ritardo»); toccandola si legge perché.
+  const giroDi = (now, min, ieri) => new Date(Date.now() - ((now.min - min) + (ieri ? 1440 : 0)) * 60000);
+  const hhmm = (m) => Math.floor(m / 60) + ":" + String(m % 60).padStart(2, "0");
+  // l'ora del giro che manca («13:18»), o null: un giro conta un'ora dopo la partenza (la pubblicazione ne vuole una ventina di minuti)
+  G.ritardoNotizie = (iso) => {
+    const d = valid(iso), now = G.romeNow();
+    if (!d) return null;
+    for (const [m, ieri] of [[798, false], [438, false], [798, true]]) {
+      if (!ieri && now.min < m + 60) continue;
+      return d < giroDi(now, m, ieri) ? hhmm(m) : null;
+    }
+    return null;
+  };
+  // i prezzi: nei giorni feriali dalle 8:30 alle 22:45, più di 75 minuti senza un aggiornamento
+  G.ritardoPrezzi = (iso) => {
+    const d = valid(iso), now = G.romeNow();
+    return !!d && now.wd >= 1 && now.wd <= 5 && now.min >= 510 && now.min <= 1365 && Date.now() - d > 75 * 60000;
+  };
+  G.ritardoHTML = (nota) => '<button type="button" class="ritardo" aria-expanded="false" data-nota="' + G.esc(nota) + '">' +
+    '<i aria-hidden="true"></i><span>' + G.L("in ritardo", "delayed") + "</span></button>";
+  G.ritardoNotiziePill = (iso) => {
+    const giro = G.ritardoNotizie(iso);
+    return giro ? G.ritardoHTML(G.L("L'aggiornamento delle " + giro + " non è ancora uscito: qui trovi l'ultima edizione pubblicata. Appena arriva, lo vedi ricaricando la pagina.",
+      "The " + giro + " update has not come out yet: this is the latest edition published. Once it arrives, reload the page to see it.")) : "";
+  };
+  G.ritardoPrezziPill = (iso) => G.ritardoPrezzi(iso) ? G.ritardoHTML(G.L("I prezzi arrivano ogni mezz'ora nelle ore di Borsa, ma l'ultimo aggiornamento è " + G.when(iso) + ". Quando arriva il prossimo, la pagina lo mostra da sola.",
+    "Prices come every half hour during market hours, but the latest update is " + G.when(iso) + ". When the next one arrives, the page shows it by itself.")) : "";
+  // toccando l'etichetta, sotto la riga si apre (e si richiude) la spiegazione
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest(".ritardo");
+    if (!b) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const riga = b.closest("p, h2, .tk-top, .t-asofrow") || b.parentElement;
+    let n = riga.nextElementSibling;
+    if (n && n.classList.contains("ritardo-nota")) {
+      b.setAttribute("aria-expanded", "false");
+      n.remove();
+      return;
+    }
+    n = document.createElement("p");
+    n.className = "ritardo-nota";
+    n.id = "rn-" + Math.random().toString(36).slice(2, 8);
+    n.textContent = b.dataset.nota;
+    riga.after(n);
+    b.setAttribute("aria-controls", n.id);
+    b.setAttribute("aria-expanded", "true");
+  }, true);
   G.romeNow = () => {
     const p = {};
     new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false })

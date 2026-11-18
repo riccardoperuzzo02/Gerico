@@ -1,4 +1,4 @@
-/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F9) e comandi, prezzi in diretta al clic. */
+/* GERICO Terminal: mappa a quadrati, pannelli, scorciatoie da tastiera (F1-F10) e comandi, prezzi in diretta al clic. */
 G.page("terminal", async function (P) {
   "use strict";
   const esc = G.esc;
@@ -1030,6 +1030,8 @@ G.page("terminal", async function (P) {
         : stale ? "Dati del " + G.day(asOf) + ", non ancora aggiornati"
         : /^alle /.test(w) ? "Dati delle " + w.slice(5) : /^il /.test(w) ? "Dati del " + w.slice(3) : "Dati di " + w;
       $("asof").classList.toggle("stale", stale);
+      // prezzi fermi nelle ore di Borsa: l'etichetta «in ritardo» accanto all'ora (se l'ora è dei prezzi del job)
+      if (!stale && qt0 && asOf === qt0.asOf) $("asof").insertAdjacentHTML("beforeend", G.ritardoPrezziPill(asOf));
     }
   }
 
@@ -1468,7 +1470,7 @@ G.page("terminal", async function (P) {
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
   G.adatta($("keys"), { gradi: ["compatta"], classe: "tendina-nav", invito: G.L("Vai a una sezione", "Go to a section"),
     etichetta: G.L("Sezioni del Terminal", "Terminal sections") });
-  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "MACRO", F9: "SENTIMENT" };
+  const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "MACRO", F9: "SENTIMENT", F10: "TRIMESTRALI" };
   P.on(document, "keydown", (e) => {
     const t = e.target;
     if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;

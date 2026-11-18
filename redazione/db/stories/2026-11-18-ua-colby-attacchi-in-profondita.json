@@ -1,0 +1,37 @@
+{
+  "article": "Elbridge Colby, sottosegretario alla Difesa americano, ha detto martedì 17 novembre alla riunione del Gruppo di contatto sulla difesa dell'Ucraina, nella sede della Nato a Bruxelles, che gli attacchi ucraini in profondità in territorio russo non funzionano, scrivono Kyiv Independent ed Euronews. Secondo Colby non hanno aiutato a chiudere la guerra né rallentato l'avanzata russa al fronte. Ha aggiunto che colpire infrastrutture civili, come i magazzini di Wildberries, ha probabilmente «irrigidito la determinazione» dell'opinione pubblica russa e aumentato la disponibilità del Cremlino a intensificare, e che gli aiuti occidentali dovrebbero puntare sulla difesa della linea del fronte. Per Kyiv Independent ha precisato che l'Ucraina non deve essere costretta a combattere «con le mani legate».\n\nIl ministro della Difesa tedesco Boris Pistorius ha respinto la valutazione, definendola «una cosa piuttosto stupida», e ha chiesto di guardare piuttosto agli attacchi russi notturni contro le infrastrutture ucraine dell'energia, dell'acqua e del riscaldamento. Il segretario alla Difesa britannico Wes Streeting ha detto di non avere «dubbi» che i raid a lungo raggio abbiano indebolito la capacità militare russa, guadagnato tempo e salvato vite.\n\nIl presidente ucraino Volodymyr Zelensky, collegato in video, non ha risposto direttamente a Colby, secondo Euronews. Ha chiesto agli alleati di non ritardare le consegne di intercettori Patriot e Iris-T e altri 40 caccia F-16, scrive Kyiv Independent. Euronews ricorda che Donald Trump aveva già chiesto a Kiev di fermare i raid sulle raffinerie russe, che a suo dire fanno salire il prezzo del diesel. Nella notte, secondo Kyiv Independent, droni hanno colpito due raffinerie nel Krasnodar.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "Elbridge Colby dice che gli attacchi ucraini in profondità non hanno aiutato a chiudere la guerra né rallentato l'avanzata russa.", "who": ["Kyiv Independent", "Euronews"]},
+    {"text": "Pistorius definisce la valutazione «una cosa piuttosto stupida».", "who": ["Kyiv Independent", "Euronews"]},
+    {"text": "Streeting dice che i raid a lungo raggio hanno indebolito la Russia e salvato vite.", "who": ["Kyiv Independent", "Euronews"]},
+    {"text": "Zelensky chiede altri 40 F-16 e consegne puntuali di intercettori.", "who": ["Kyiv Independent"]}
+  ],
+  "firstSeen": "2026-11-18T07:26:30+01:00",
+  "history": [
+    {"at": "2026-11-18T07:26:30+01:00", "text": "Prima notizia: il sottosegretario Usa Colby critica gli attacchi ucraini in profondità; Germania e Regno Unito li difendono."}
+  ],
+  "open": [
+    "La critica di Colby riflette la posizione di Trump e della Casa Bianca?",
+    "Gli Stati Uniti cambieranno gli aiuti a Kiev?",
+    "Come risponderà il governo ucraino a Colby?"
+  ],
+  "places": ["UA", "RU", "US", "DE", "GB"],
+  "city": {"name": "Bruxelles", "lat": 50.85, "lon": 4.35},
+  "rank": 6,
+  "section": "mondo",
+  "sources": [
+    {"angle": "Cosa ha detto Colby, risposte di Pistorius e Streeting, richieste di Zelensky, raffinerie colpite nella notte.", "area": "Ucraina e Russia", "date": "2026-11-18", "country": "Ucraina", "kind": "giornale", "name": "Kyiv Independent", "url": "https://kyivindependent.com/germany-uk-push-back-after-us-criticizes-ukraines-deep-strikes-into-russia/"},
+    {"angle": "Critica di Colby, risposte europee, contesto delle richieste di Trump sulle raffinerie.", "area": "Europa", "date": "2026-11-17", "country": "Francia", "kind": "tv", "name": "Euronews", "url": "https://www.euronews.com/2026/11/17/us-criticises-ukraines-deep-strike-campaign-against-russia"}
+  ],
+  "status": "live",
+  "summary": "Il sottosegretario alla Difesa Usa Colby dice che gli attacchi ucraini in profondità in Russia non aiutano a chiudere la guerra. Il tedesco Pistorius e il britannico Streeting li difendono.",
+  "tags": ["Ucraina", "Stati Uniti", "Russia", "Nato"],
+  "themes": ["ucraina"],
+  "title": "Nato: un alto funzionario Usa critica gli attacchi ucraini in Russia",
+  "updated": "2026-11-18T07:26:30+01:00",
+  "view": "Sono accertate le parole di Colby e le risposte di Germania e Regno Unito. Non è chiaro se la critica anticipi un cambio di linea di Washington: nelle fonti lette non ci sono commenti della Casa Bianca né una risposta diretta di Kiev.\n\nConta perché mostra una distanza tra Stati Uniti ed europei sul tipo di aiuto da dare all'Ucraina, nella settimana del vertice di Shenzhen. Da guardare: le dichiarazioni della Casa Bianca e le consegne di intercettori chieste da Zelensky.",
+  "photo": {"wiki": "it", "title": "Quartier generale della NATO", "alt": ["Bruxelles"]}
+}

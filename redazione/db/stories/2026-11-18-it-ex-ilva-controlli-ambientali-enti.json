@@ -1,0 +1,36 @@
+{
+  "article": "Nell'inchiesta della procura di Taranto sull'ex Ilva gli investigatori guardano per la prima volta anche alle possibili omissioni degli enti pubblici incaricati dei controlli ambientali, scrive Il Post il 17 novembre. Secondo i pubblici ministeri i dirigenti di ArcelorMittal, che hanno gestito lo stabilimento dal 2018 al febbraio 2024, avrebbero certificato dati falsi sulle emissioni inquinanti, con effetti sui controlli dell'Ispra, l'agenzia nazionale per l'ambiente. Gli altiforni sono stati fermati di recente e la produzione è sospesa, aggiunge Il Post; l'inchiesta sui dirigenti dell'azienda continua.\n\nTra le persone per cui la procura ha chiesto misure cautelari c'è Francesco Astorri, capo del gruppo ispettivo dell'Ispra, accusato dai pubblici ministeri di aver sminuito violazioni e ostacolato controlli chiesti dall'Arpa Puglia. Il Post ricostruisce gli episodi di contrasto tra Arpa e Ispra contestati dall'accusa, dal 2016 al 2023, tra cui una visita del 2020 classificata come semplice ispezione senza campionamenti. L'Euronews italiano aveva riferito il 26 ottobre la richiesta di arresti domiciliari per l'ex amministratrice delegata Lucia Morselli e per altri due dirigenti.\n\nSono accuse e ricostruzioni della procura: nulla è stato accertato in un processo e gli indagati sono presunti innocenti. Nelle fonti lette non ci sono repliche dell'Ispra.",
+  "change": "",
+  "divergences": [],
+  "notCovered": [],
+  "facts": [
+    {"text": "La procura di Taranto indaga anche sulle possibili omissioni degli enti pubblici nei controlli ambientali sull'ex Ilva.", "who": ["Il Post"]},
+    {"text": "Secondo i pm i dirigenti di ArcelorMittal avrebbero certificato dati falsi sulle emissioni.", "who": ["Il Post"]},
+    {"text": "La procura ha chiesto misure cautelari per Francesco Astorri, capo del gruppo ispettivo dell'Ispra.", "who": ["Il Post"]},
+    {"text": "A ottobre la procura aveva chiesto i domiciliari per Lucia Morselli e altri due dirigenti.", "who": ["Euronews"]}
+  ],
+  "firstSeen": "2026-11-18T07:26:30+01:00",
+  "history": [
+    {"at": "2026-11-18T07:26:30+01:00", "text": "Prima notizia: nell'inchiesta sull'ex Ilva si indaga anche sulle omissioni dei controlli pubblici (Il Post)."}
+  ],
+  "open": [
+    "Il giudice accoglierà le richieste di misure cautelari?",
+    "Cosa risponde l'Ispra alle contestazioni sui controlli?"
+  ],
+  "places": ["IT"],
+  "city": {"name": "Taranto", "lat": 40.47, "lon": 17.24},
+  "rank": 14,
+  "section": "italia",
+  "sources": [
+    {"angle": "Le accuse sui controlli dell'Ispra, gli episodi di contrasto con l'Arpa, la fermata degli altiforni.", "area": "Italia", "date": "2026-11-17", "country": "Italia", "kind": "giornale", "name": "Il Post", "url": "https://www.ilpost.it/2026/11/17/ex-ilva-controlli-ambientali-ispra/"},
+    {"angle": "Contesto del 26 ottobre: la richiesta di domiciliari per Morselli e altri due dirigenti.", "area": "Europa", "date": "2026-10-26", "country": "Francia", "kind": "tv", "name": "Euronews", "url": "https://it.euronews.com/2026/10/26/ex-ilva-di-taranto-la-procura-chiede-i-domiciliari-per-morselli-e-altri-due-dirigenti"}
+  ],
+  "status": "live",
+  "summary": "Nell'inchiesta di Taranto sull'ex Ilva i pm guardano anche alle omissioni degli enti di controllo, secondo Il Post. La procura ha chiesto misure cautelari per un dirigente dell'Ispra.",
+  "tags": ["Ex Ilva", "Giustizia", "Ambiente"],
+  "themes": [],
+  "title": "Taranto: nell'inchiesta sull'ex Ilva sotto esame anche i controlli pubblici",
+  "updated": "2026-11-18T07:26:30+01:00",
+  "view": "È certo che la procura estende l'attenzione ai controlli pubblici; si tratta di accuse non ancora vagliate in un processo, e l'Ispra non risulta aver risposto nelle fonti lette.\n\nConta perché l'inchiesta riguarda anche chi doveva vigilare sulle emissioni dello stabilimento. Da guardare: la decisione del giudice sulle misure e la posizione dell'Ispra.",
+  "photo": {"wiki": "it", "title": "Stabilimento ex Ilva di Taranto", "alt": ["Taranto"]}
+}

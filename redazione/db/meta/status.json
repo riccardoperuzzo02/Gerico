@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: due ricerche sulle vendite al dettaglio Usa non hanno dato nessun dato ufficiale di oggi. Agenda già completa dal giro delle 12:10."
   },
   "lastPublish": {
-    "at": "2026-11-17T18:46:59+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-18T07:29:54+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-17T13:20:30+01:00",
+  "lastRun": "2026-11-18T07:28:30+01:00",
   "marketsRun": {
     "at": "2026-11-17T18:46:48+01:00",
     "esito": "Aggiornate le chiusure del 17 novembre (Ansa): Ftse Mib -1,31% a 50.845, Dax -2,08%, Cac 40 -1,62%, Ftse 100 -1,76%, spread 105, Btp 10 anni 4,42%. Mancano Aex, Smi, Bund, euro/dollaro, Brent, gas. Agenda: nessun dato ufficiale trovato nelle pagine aperte."
@@ -29,15 +29,15 @@
     "esito": "Aperti 5 articoli (CBS x2, franceinfo, Public Sénat), il resto dai feed. US 2 nuove (Corte suprema, Faa)/1 aggiornata (morbillo)/1 archiviata (golf); GB 1 nuova (asilo)/1 aggiornata (Milburn)/1 archiviata (età del consenso); FR 1 nuova (Senato, pensioni)/1 aggiornata (sciopero 17 novembre)/1 archiviata (Maileva); DE 1 nuova (vertice di coalizione)/1 aggiornata (Heil)/0; ES 1 nuova (Feijóo, Echeverría)/0/0."
   },
   "quality": {
-    "articlesDiscarded": 2,
-    "articlesRead": 3,
-    "at": "2026-11-17T13:20:30+01:00",
-    "factsChecked": 2,
+    "articlesDiscarded": 4,
+    "articlesRead": 34,
+    "at": "2026-11-18T07:28:30+01:00",
+    "factsChecked": 8,
     "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 0,
-    "storiesUpdated": 1
+    "storiesArchived": 6,
+    "storiesNew": 5,
+    "storiesUpdated": 6
   },
   "runningSince": null,
-  "storiesLive": 37
+  "storiesLive": 39
 }

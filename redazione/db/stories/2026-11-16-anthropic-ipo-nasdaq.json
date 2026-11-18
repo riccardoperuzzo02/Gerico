@@ -1,36 +1,39 @@
 {
-  "article": "L'offerta pubblica iniziale di Anthropic è attesa questa settimana al Nasdaq. Secondo l'Ansa, che cita Bloomberg, il prezzo sarà annunciato mercoledì 18 novembre e le contrattazioni inizieranno il giorno dopo; l'offerta è guidata da Goldman Sachs e Morgan Stanley, con altre 20 banche.\n\nCNBC scrive che la società punta a una valutazione di circa 1.400 miliardi di dollari, con azioni attese tra 70 e 78 dollari. L'articolo dell'Ansa non indica valutazione né prezzo; una didascalia dell'agenzia parla di un'operazione fino a 100 miliardi.\n\nGli investitori istituzionali con sede nella Cina continentale e a Hong Kong non possono presentare ordini, riferisce l'Ansa citando Bloomberg. Alcuni cercano ancora il modo di partecipare, ma diverse banche hanno rifiutato gli ordini o ritengono improbabile che ricevano azioni. Secondo l'Ansa i limiti dipendono in parte dalle norme americane Itar sui prodotti legati alla difesa; la stessa agenzia ricorda un caso simile con l'Ipo di SpaceX da 86,2 miliardi, i cui investitori cinesi potevano comprare solo dopo la quotazione. I prodotti di Anthropic non sono disponibili in Cina e Hong Kong, e la società ha bloccato l'accesso a chi viaggia in quei territori, scrive l'Ansa.\n\nL'operazione arriva nella settimana in cui Nvidia presenta i conti, martedì dopo la chiusura di Wall Street, secondo CNBC; i future americani sono in calo prima dell'apertura.",
-  "change": "",
+  "article": "Anthropic fissa oggi, mercoledì 18 novembre, il prezzo della sua offerta pubblica iniziale al Nasdaq, scrive Euronews: 825 milioni di azioni a un prezzo indicativo tra 70 e 78 dollari, secondo la documentazione depositata dalla società. Il Wall Street Journal, citato da Euronews, scrive che la forte domanda potrebbe spingere il prezzo oltre gli 80 dollari. Al prezzo massimo l'operazione varrebbe circa 64,4 miliardi di dollari, comprese azioni di soci esistenti, con una valutazione di circa 1.400 miliardi.\n\nLe contrattazioni inizieranno giovedì con il simbolo ANT, secondo Euronews; l'Ansa, che cita Bloomberg, conferma l'avvio il giorno dopo l'annuncio del prezzo. L'offerta è guidata da Goldman Sachs e Morgan Stanley con altre 20 banche, riferisce l'Ansa. Gli investitori al dettaglio di nove paesi dello Spazio economico europeo, tra cui Francia, Germania e Spagna, possono aderire tramite i broker, con scadenza degli ordini alle 16 di mercoledì, secondo il prospetto europeo citato da Euronews.\n\nGli investitori istituzionali della Cina continentale e di Hong Kong non possono presentare ordini, riferisce l'Ansa citando Bloomberg; alcune banche hanno rifiutato gli ordini, e i limiti dipendono in parte dalle norme americane Itar. L'articolo di Euronews non parla di restrizioni per gli investitori cinesi. Il Post scrive che la quotazione è un test per tutto il settore dell'intelligenza artificiale dopo le recenti turbolenze. Il Ceo di Amazon, Andy Jassy, ha detto a CNBC che Amazon si aspetta di restare azionista di Anthropic «a lungo».",
+  "change": "Forchetta di prezzo 70-78 dollari e debutto giovedì; prezzo definitivo oggi.",
   "divergences": [],
   "notCovered": [],
   "facts": [
-    {"text": "Prezzo atteso mercoledì 18 novembre e contrattazioni dal giorno dopo, secondo l'Ansa che cita Bloomberg.", "who": ["ANSA"]},
-    {"text": "Valutazione intorno a 1.400 miliardi di dollari e azioni tra 70 e 78 dollari, secondo CNBC.", "who": ["CNBC"]},
-    {"text": "Gli investitori istituzionali di Cina continentale e Hong Kong non possono presentare ordini.", "who": ["ANSA"]},
-    {"text": "L'offerta è guidata da Goldman Sachs e Morgan Stanley con altre 20 banche.", "who": ["ANSA"]}
+    {"text": "Offerta di 825 milioni di azioni a un prezzo indicativo di 70-78 dollari; prezzo definitivo oggi.", "who": ["Euronews"]},
+    {"text": "Al prezzo massimo l'operazione varrebbe circa 64,4 miliardi e la società 1.400 miliardi di dollari.", "who": ["Euronews"]},
+    {"text": "Debutto al Nasdaq giovedì con il simbolo ANT.", "who": ["Euronews", "ANSA"]},
+    {"text": "Gli investitori istituzionali di Cina continentale e Hong Kong non possono presentare ordini, secondo Bloomberg.", "who": ["ANSA"]}
   ],
   "firstSeen": "2026-11-16T07:23:00+01:00",
   "history": [
+    {"at": "2026-11-18T07:26:30+01:00", "text": "18 novembre: oggi il prezzo definitivo, forchetta 70-78 dollari, 825 milioni di azioni, debutto giovedì (Euronews)."},
     {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: Ipo di Anthropic attesa questa settimana, esclusi gli investitori di Cina e Hong Kong."}
   ],
   "open": [
-    "A quale prezzo sarà collocata l'offerta?",
-    "Quanto raccoglierà l'operazione?"
+    "A quale prezzo sarà collocata l'offerta, dentro o sopra la forchetta?",
+    "Come reagirà il titolo al debutto di giovedì?"
   ],
   "places": ["US", "CN"],
-  "rank": 16,
+  "rank": 15,
   "section": "tecnologia",
   "sources": [
     {"angle": "Calendario dell'Ipo, banche, esclusione di Cina e Hong Kong (da Bloomberg).", "area": "Italia", "date": "2026-11-14", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/14/ipo-di-anthropic-vietata-agli-investitori-di-cina-e-hong-kong_45b7ce41-d15a-441e-ae8c-a3d9a846bdf8.html"},
-    {"angle": "Valutazione di circa 1.400 miliardi e forchetta di prezzo, future in calo.", "area": "Stati Uniti", "date": "2026-11-16", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"}
+    {"angle": "Prezzo indicativo, azioni offerte, valore dell'operazione, debutto giovedì, ordini degli investitori europei.", "area": "Europa", "date": "2026-11-18", "country": "Francia", "kind": "tv", "name": "Euronews", "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know"},
+    {"angle": "La quotazione come test per tutto il settore dell'intelligenza artificiale.", "area": "Italia", "date": "2026-11-17", "country": "Italia", "kind": "giornale", "name": "Il Post", "url": "https://www.ilpost.it/2026/11/17/anthropic-quotazione-in-borsa-record/"},
+    {"angle": "Valutazione cercata e forchetta di prezzo, commenti di Jassy e di un direttore degli investimenti.", "area": "Stati Uniti", "date": "2026-11-17", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/video/2026/11/17/amazon-ceo-andy-jassy-we-expect-to-be-holders-of-anthropic-stock-for-a-long-time.html"}
   ],
   "status": "live",
-  "summary": "L'Ipo di Anthropic al Nasdaq è attesa questa settimana: prezzo mercoledì e contrattazioni giovedì, secondo l'Ansa. CNBC scrive di una valutazione di circa 1.400 miliardi di dollari.",
+  "summary": "Anthropic fissa oggi il prezzo dell'Ipo al Nasdaq, con azioni indicate tra 70 e 78 dollari, secondo Euronews. Il debutto è atteso giovedì; gli investitori istituzionali di Cina e Hong Kong sono esclusi, dice l'Ansa.",
   "tags": ["Anthropic", "Intelligenza artificiale", "Ipo"],
   "themes": [],
-  "title": "Anthropic: l'Ipo al Nasdaq attesa questa settimana, esclusi i fondi cinesi",
-  "updated": "2026-11-16T07:23:00+01:00",
-  "view": "Sono certi il calendario riportato dall'Ansa e la forchetta di prezzo di CNBC; l'importo raccolto non risulta confermato nelle fonti lette. L'esclusione di Cina e Hong Kong viene da Bloomberg, rilanciata dall'Ansa.\n\nConta perché è una delle maggiori quotazioni del settore dell'intelligenza artificiale e cade nella settimana dei conti di Nvidia. Da guardare: il prezzo di mercoledì e il primo giorno di scambi.",
-  "figure": {"value": "1.400 mld $", "label": "la valutazione cercata da Anthropic nell'Ipo, secondo CNBC"},
+  "title": "Anthropic: oggi il prezzo dell'Ipo al Nasdaq, debutto giovedì",
+  "updated": "2026-11-18T07:26:30+01:00",
+  "view": "Sono certi forchetta, numero di azioni e calendario, che vengono dai documenti della società riportati da Euronews. L'ipotesi di un prezzo sopra gli 80 dollari è una stima del Wall Street Journal, e l'esclusione di Cina e Hong Kong viene da Bloomberg rilanciata dall'Ansa, mentre Euronews non la menziona.\n\nConta perché è una delle maggiori quotazioni del settore e cade dopo i conti di Nvidia e un calo dei titoli dell'intelligenza artificiale. Da guardare: il prezzo di oggi e il primo giorno di scambi.",
+  "figure": {"value": "64,4 mld $", "label": "il valore dell'offerta al prezzo massimo, secondo Euronews"},
   "photo": {"wiki": "it", "title": "Nasdaq"}
 }

@@ -1,17 +1,17 @@
 {
- "article": "Wall Street ha chiuso lunedì 16 novembre in forte calo: il Nasdaq ha perso il 2,5%, il peggior ribasso giornaliero dal 5 novembre, l'S&P 500 l'1,9% e il Dow Jones oltre 700 punti, pari all'1,4%, riporta CNBC. Al Jazeera dà per il Nasdaq un calo del 2,49% e per l'S&P 500 dell'1,92%. Teleborsa segnala che Nasdaq e S&P 500 hanno perso oltre il 2% durante la seduta.\n\nIl calo è guidato dai titoli dell'intelligenza artificiale. Nvidia ha ceduto il 4,1%, secondo CNBC, e Al Jazeera scrive che il titolo ha perso oltre il 30% in un mese (CNBC indica quasi il 24%: le due testate usano periodi di calcolo non indicati). Sono scesi anche AMD, Micron e Sandisk. Un analista citato da CNBC parla di un «AI premium» che si sta sciogliendo. Il titolo risente delle dimissioni dell'amministratore delegato Jensen Huang, di giovedì scorso, dopo notizie sulle sue relazioni extraconiugali; secondo una fonte citata da CNBC il consiglio non vuole riportarlo alla guida. L'Ansa riferisce che Nvidia ha aperto in calo del 4,68% dopo l'ipotesi di un suo ritorno. I conti trimestrali dell'azienda sono attesi nella giornata di martedì, dopo la chiusura di Wall Street.\n\nIn Asia la giornata è negativa. Secondo Al Jazeera il Nikkei 225 perde l'1,45%, il Kospi sudcoreano l'1,93% e l'Hang Seng lo 0,77%. Teleborsa riporta a metà mattina Tokyo a meno 1,18% e Shanghai a meno 0,89% nel pomeriggio cinese.\n\nIn Europa le Borse avevano chiuso lunedì in lieve ribasso, secondo l'Ansa: Milano meno 0,65%, con Technoprobe e Stellantis tra i titoli più deboli, Londra meno 0,2%. Lo spread tra Btp e Bund è salito a 106 punti base e il gas è sceso del 7% sotto gli 84 euro al megawattora.\n\nAl Jazeera aggiunge che gli Stati Uniti hanno annunciato nuove regole contro l'accesso remoto della Cina ai chip avanzati. Il bitcoin, scrive l'Ansa, era sceso il 15 novembre a circa 62.000 dollari, minimo da quattro mesi.",
- "change": "Wall Street chiude lunedì in forte calo (Nasdaq -2,5%, S&P 500 -1,9%, Dow -1,4%) con Nvidia -4,1%; Asia in ribasso.",
+ "article": "Wall Street ha chiuso martedì 17 novembre in calo per il secondo giorno: il Dow Jones ha perso 848,75 punti, l'1,6%, a 50.759,42, l'S&P 500 l'1% a 7.340,53 e il Nasdaq lo 0,7% a 24.328,38, secondo l'elenco degli indici diffuso da La Nación. L'Ap, citata dalla stessa fonte, lega le perdite a Nvidia e ad altri titoli dell'intelligenza artificiale, con un peso anche dei finanziari; il rendimento dei Treasury è sceso e il petrolio è salito. CNBC titola che il Dow ha registrato la chiusura più bassa da giugno, mentre l'indice della volatilità è salito.\n\nDopo la chiusura Nvidia ha presentato i conti: ricavi di 115,84 miliardi di dollari contro 109,10 attesi e utile per azione di 2,68 dollari, secondo CNBC. Il titolo è salito del 2,3% nel dopo Borsa secondo l'Ansa. Stamattina la Borsa di Tokyo ha aperto in rialzo dello 0,25%, a 59.085,20 punti, dice l'Ansa, che lega il rimbalzo ai conti di Nvidia e alla speranza di una ripresa dei titoli dei chip; lo yen è a 159,50 sul dollaro. Alle 6:20 Hong Kong perdeva il 2,22% e Shanghai lo 0,9%, secondo Teleborsa.\n\nIn Europa martedì le Borse avevano chiuso in forte calo, riferisce l'Ansa: Francoforte meno 2,08%, Londra meno 1,76%, Parigi meno 1,62% e Milano meno 1,31%, a 50.845 punti. Lo spread tra Btp e Bund è a 105 punti base e il Btp decennale rende il 4,42%, sempre secondo l'Ansa. L'Ansa riferisce anche che il bitcoin è sceso a circa 62.000 dollari, il minimo da quattro mesi.\n\nSul fronte politico, il 16 novembre gli Stati Uniti hanno annunciato nuove regole contro l'accesso remoto della Cina ai chip avanzati, riporta Al Jazeera.",
+ "change": "Wall Street chiude martedì in calo (Dow -1,6%, S&P 500 -1%, Nasdaq -0,7%); conti Nvidia sopra le attese, Tokyo apre in rialzo.",
  "city": {"lat": 40.71, "lon": -74.01, "name": "New York"},
  "divergences": [],
  "facts": [
-  {"text": "Lunedì 16 novembre il Nasdaq ha perso il 2,5%, l'S&P 500 l'1,9% e il Dow Jones oltre 700 punti (1,4%).", "who": ["CNBC", "Al Jazeera"]},
-  {"text": "Nvidia ha ceduto il 4,1% e il settore dell'intelligenza artificiale è in calo, con AMD, Micron e Sandisk.", "who": ["CNBC"]},
-  {"text": "Nikkei 225 -1,45%, Kospi -1,93% e Hang Seng -0,77% nella seduta di martedì.", "who": ["Al Jazeera"]},
-  {"text": "Milano ha chiuso lunedì a meno 0,65% e lo spread Btp-Bund è salito a 106 punti base.", "who": ["ANSA"]},
-  {"text": "I conti di Nvidia sono attesi martedì dopo la chiusura di Wall Street.", "who": ["CNBC", "ANSA"]}
+  {"text": "Martedì 17 novembre il Dow Jones ha perso l'1,6%, l'S&P 500 l'1% e il Nasdaq lo 0,7%.", "who": ["La Nación", "CNBC"]},
+  {"text": "Nvidia ha battuto le attese con ricavi di 115,84 miliardi di dollari; il titolo sale dopo la chiusura.", "who": ["CNBC", "ANSA"]},
+  {"text": "Tokyo ha aperto in rialzo dello 0,25% a 59.085 punti; Hong Kong perde oltre il 2% a metà mattina.", "who": ["ANSA", "Teleborsa"]},
+  {"text": "Milano ha chiuso martedì a meno 1,31% e lo spread Btp-Bund è a 105 punti base.", "who": ["ANSA"]}
  ],
  "firstSeen": "2026-11-09T07:26:39+01:00",
  "history": [
+  {"at": "2026-11-18T07:26:30+01:00", "text": "18 novembre: Wall Street chiude in calo per il secondo giorno (Dow -1,6%); conti Nvidia sopra le attese; Tokyo apre in rialzo, Hong Kong in forte calo."},
   {"at": "2026-11-17T07:26:00+01:00", "text": "17 novembre: Wall Street chiude in forte calo (Nasdaq -2,5%, S&P 500 -1,9%, Dow -1,4%), Nvidia -4,1%; Asia in ribasso."},
   {"at": "2026-11-16T07:28:37+01:00", "text": "16 novembre: Nikkei -2,04% e Kospi -3,48% sui chip, future Usa in calo prima dei conti Nvidia, bitcoin a 62.000 dollari."},
   {"at": "2026-11-14T07:22:00+01:00", "text": "13 novembre: Milano +0,1% a 51.858; Nasdaq -0,82%, S&P 500 -0,45%, Dow +0,08% secondo Open."},
@@ -23,26 +23,26 @@
  ],
  "notCovered": [],
  "open": [
-  "I conti di Nvidia di stasera fermeranno il calo dei titoli dell'intelligenza artificiale?",
-  "Il consiglio di Nvidia riporterà Huang alla guida?",
-  "Il Giappone interverrà sul cambio con lo yen?"
+  "Il rimbalzo di Nvidia dopo i conti si estenderà ai titoli dei chip alla riapertura di Wall Street?",
+  "Il Giappone interverrà sul cambio con lo yen, vicino a 160 sul dollaro?",
+  "Le Borse europee recupereranno dopo il calo di martedì?"
  ],
  "places": ["US", "JP"],
  "rank": 7,
  "section": "mercati",
  "sources": [
-  {"angle": "Chiusura di Wall Street del 16 novembre, Nvidia, analisti sul calo dei titoli IA.", "area": "Stati Uniti", "date": "2026-11-16", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html"},
-  {"angle": "Variazioni di Nasdaq e S&P 500, Nvidia, Borse asiatiche di martedì, nuove regole Usa sui chip.", "area": "Medio Oriente", "date": "2026-11-17", "country": "Qatar", "kind": "tv", "name": "Al Jazeera", "url": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"},
-  {"angle": "Chiusure europee del 16 novembre, spread a 106, gas -7%, Nvidia in apertura.", "area": "Italia", "date": "2026-11-16", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/borsa-leuropa-conclude-in-lieve-ribasso-londra-02_2b274cd5-9ff3-42a2-975d-d07294bb9176.html"},
-  {"angle": "Andamento di Wall Street e dei titoli Nvidia nella seduta, Borse asiatiche in mattinata.", "area": "Italia", "date": "2026-11-17", "country": "Italia", "kind": "agenzia", "name": "Teleborsa", "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-17-novembre-2026-1_2026-11-17_TLB-BIT.html"}
+  {"angle": "Chiusura di Wall Street del 17 novembre: livelli e variazioni di Dow, S&P 500, Nasdaq, Russell 2000.", "area": "Stati Uniti", "date": "2026-11-17", "country": "Argentina", "kind": "giornale", "name": "La Nación (Ap)", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-11172026-nid17112026/"},
+  {"angle": "Conti di Nvidia, titolo dopo la chiusura, Dow ai minimi da giugno.", "area": "Stati Uniti", "date": "2026-11-17", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"},
+  {"angle": "Apertura di Tokyo, yen a 159,50, chiusure europee, spread, bitcoin.", "area": "Italia", "date": "2026-11-18", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/18/borsa-tokyo-apertura-in-lieve-rialzo-025_d8cf74ed-5459-46fc-b06d-63f454681383.html"},
+  {"angle": "Hong Kong a meno 2,22%, Shanghai e Tokyo in mattinata.", "area": "Italia", "date": "2026-11-18", "country": "Italia", "kind": "agenzia", "name": "Teleborsa", "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-18-novembre-2026-1_2026-11-18_TLB-BIT.html"}
  ],
  "status": "live",
- "summary": "Wall Street ha chiuso lunedì in forte calo, con il Nasdaq a meno 2,5% e Nvidia a meno 4,1%, secondo CNBC. Stamattina l'Asia scende e i conti di Nvidia arrivano stasera.",
+ "summary": "Wall Street ha chiuso martedì in calo per il secondo giorno, con il Dow Jones a meno 1,6%, secondo l'Ap. Dopo la chiusura Nvidia ha battuto le attese e Tokyo apre in rialzo.",
  "tags": ["Wall Street", "Nvidia", "Intelligenza artificiale"],
  "themes": [],
- "title": "Borse: Wall Street cala del 2% con Nvidia, in ribasso anche l'Asia",
- "updated": "2026-11-17T07:26:00+01:00",
- "view": "Sono certe le chiusure di lunedì. Le cause indicate, le dimissioni di Huang e il timore su una bolla dell'intelligenza artificiale, sono letture di CNBC e di un analista citato, non fatti accertati; le due testate calcolano il calo di Nvidia su periodi diversi.\n\nConta perché i titoli dell'intelligenza artificiale pesano molto sugli indici americani. Da guardare: i conti di Nvidia di stasera e l'apertura dei listini europei.",
+ "title": "Borse: Wall Street cala ancora, Nvidia batte le attese dopo la chiusura",
+ "updated": "2026-11-18T07:26:30+01:00",
+ "view": "Sono certe le chiusure di martedì e i numeri dei conti di Nvidia. Le cause dei cali citate dall'Ap, il nervosismo sui titoli dell'intelligenza artificiale, sono una lettura dell'agenzia e non un fatto accertato; il rimbalzo asiatico è stato misto, con Hong Kong in forte calo.\n\nConta perché i titoli dell'intelligenza artificiale pesano molto sugli indici americani. Da guardare: la reazione di Wall Street ai conti di Nvidia, le Borse europee all'apertura e l'Ipo di Anthropic di giovedì.",
  "photo": {"wiki": "it", "title": "Borsa di New York"},
- "figure": {"value": "-2,5%", "label": "il calo del Nasdaq lunedì 16 novembre"}
+ "figure": {"value": "-1,6%", "label": "il calo del Dow Jones martedì 17 novembre"}
 }

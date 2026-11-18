@@ -1,13 +1,265 @@
 {
  "code": "ES",
- "asOf": "2026-11-18T11:17:40+00:00",
+ "asOf": "2026-11-18T18:58:15+00:00",
  "items": [
+  {
+   "source": "20minutos",
+   "title": "Irene Montero, la última gran carta de Podemos para el 29N que busca que la política vuelva a preocuparse de \"lo básico\"",
+   "desc": "La candidata de la formación morada afronta las elecciones con las encuestas otorgándole, en el más óptimo de los escenarios, uno o dos escaños.",
+   "url": "https://www.20minutos.es/nacional/irene-montero-ultima-gran-carta-podemos-para-29n-que-busca-que-politica-vuelva-preocuparse-basico_7054127_0.html",
+   "at": "2026-11-18T18:25:03+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Alberto Núñez Feijóo, el gallego de las mayorías que reunificó al PP y aspira a conquistar la Moncloa a la segunda",
+   "desc": "El candidato del PP a la Presidencia afronta unas elecciones decisivas para comprobar si su apuesta por la gestión y la moderación puede llevarle finalmente a La Moncloa.",
+   "url": "https://www.20minutos.es/nacional/alberto-nunez-feijoo-gallego-las-mayorias-que-reunifico-pp-aspira-conquistar-moncloa-segunda_7059827_0.html",
+   "at": "2026-11-18T18:11:37+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "\"Soy gay\": el vídeo que Marlaska ha subido a las redes subrayando su homosexualidad a diez días de las elecciones generales",
+   "desc": "El ministro de Interior afirma que el PSOE \"lleva tiempo abriendo el camino\" y responsabiliza a PP y Vox de ser contrarios a medidas como la Ley Trans o la del Matrimonio igualitario.",
+   "url": "https://www.20minutos.es/nacional/soy-gay-video-que-marlaska-ha-subido-las-redes-subrayando-su-homosexualidad-diez-dias-las-elecciones-generales_7062795_0.html",
+   "at": "2026-11-18T17:34:13+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El Congreso aprueba siete decretos sociales con un amplísimo respaldo pero entre críticas de campaña",
+   "desc": "La Diputación Permanente convalida medidas para Ceuta, las danas, los accidentes ferroviarios, las familias monomarentales y más dependencia",
+   "url": "https://elpais.com/espana/2026-11-18/el-congreso-aprueba-siete-decretos-sociales-con-un-amplisimo-respaldo-pero-entre-criticas-de-campana.html",
+   "at": "2026-11-18T17:10:51+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Podemos reivindica poder participar en los debates como \"tercera opción\" para el 29N",
+   "desc": "La candidata de Podemos a la Presidencia del Gobierno, Irene Montero, ha señalado que aún no tiene respuesta de la Junta Electoral Central (JEC) sobre si podrá participar en el encuentro del 26 de noviembre.",
+   "url": "https://www.20minutos.es/nacional/podemos-reivindica-poder-participar-los-debates-como-tercera-opcion-para-29n_7062787_0.html",
+   "at": "2026-11-18T16:57:38+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los países que pueden influir más en las elecciones generales del 29N con el voto CERA",
+   "desc": "Argentina, Francia y Estados Unidos concentran el mayor número de españoles residentes en el extranjero con derecho a voto.",
+   "url": "https://www.20minutos.es/nacional/paises-pueden-influir-mas-elecciones-generales-voto-cera_7062724_0.html",
+   "at": "2026-11-18T16:38:48+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Cómo será el cara a cara entre Sánchez y Feijóo: sin dispositivos electrónicos y con árbitros de baloncesto midiendo el tiempo",
+   "desc": "Todo ha tenido que sortearse en la preparación del único debate entre los candidatos más favorecidos por las encuestas",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/como-sera-el-cara-a-cara-entre-sanchez-y-feijoo-sin-dispositivos-electronicos-y-con-arbitros-de-baloncesto-midiendo-el-tiempo.html",
+   "at": "2026-11-18T16:24:29+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Mateo y Sofía siguen liderando la lista: los nombres más elegidos para los recién nacidos en España",
+   "desc": "El INE ha actualizado la clasificación de los nombres más utilizados para niños y niñas en el último año.",
+   "url": "https://www.20minutos.es/nacional/mateo-sofia-siguen-liderando-lista-nombres-mas-elegidos-recien-nacidos-espana_7062714_0.html",
+   "at": "2026-11-18T16:16:28+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El Congreso convalida el título de familias monoparentales, que beneficiará a 760.000 hogares",
+   "desc": "La medida también amplía la categoría especial del título de familia numerosa a partir del cuarto hijo, y no el quinto como ahora.",
+   "url": "https://www.20minutos.es/nacional/congreso-convalida-titulo-familias-monoparentales-mas-apoyos-760-000-hogares_7062731_0.html",
+   "at": "2026-11-18T15:44:30+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El Congreso recupera la prohibición de disparar el precio de los viajes tras una emergencia y aprueba las ayudas por Urda",
+   "desc": "La Diputación Permanente convalida por unanimidad el decreto que contempla 30 millones en ayudas para las víctimas y familiares del accidente de Urda, anticipos de indemnizaciones y bajas laborales por incapacidad temporal.",
+   "url": "https://www.20minutos.es/nacional/congreso-recupera-prohibicion-disparar-precio-los-viajes-tras-una-emergencia-aprueba-las-ayudas-por-urda_7062536_0.html",
+   "at": "2026-11-18T15:38:09+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Más de 1.400 mujeres tienen pulseras antimaltrato con orden de alejamiento inferior a la distancia segura recomendada",
+   "desc": "Un informe registra un total de 5.817 expedientes abiertos y detalla que 25 dispositivos tienen establecida una distancia inferior a los 100 metros.",
+   "url": "https://www.20minutos.es/nacional/mas-1-400-mujeres-tienen-pulseras-antimaltrato-con-orden-alejamiento-inferior-distancia-segura-recomendada_7062706_0.html",
+   "at": "2026-11-18T15:26:52+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La lluvia da paso a un desplome de las temperaturas este jueves antes de la llegada de un río atmosférico",
+   "desc": "Los termómetros bajarán hasta los 6 ºC en provincias como Ávila, Burgos y Teruel y las máximas no superarán los 13 ºC en León, Lugo, Burgos, Palencia, Salamanca, Soria, Ávila, Segovia, Valladolid y Zamora.",
+   "url": "https://www.20minutos.es/nacional/lluvia-da-paso-un-desplome-las-temperaturas-este-jueves-antes-llegada-un-rio-atmosferico_7062682_0.html",
+   "at": "2026-11-18T15:25:52+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La Audiencia Nacional rechaza anular el registro de la casa de Ábalos y descarta que se vulnerasen sus derechos",
+   "desc": "El juez desestima el incidente de nulidad presentado por el exministro, que alegaba vulneraciones de sus derechos durante el registro del pasado 5 de noviembre.",
+   "url": "https://www.20minutos.es/nacional/audiencia-nacional-rechaza-anular-registro-casa-abalos-descarta-que-se-vulnerasen-sus-derechos_7062717_0.html",
+   "at": "2026-11-18T15:25:13+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El juez del caso Forestalia deja la instrucción en manos del encargado de investigar las cloacas del PSOE en la Audiencia Nacional",
+   "desc": "El titular del Juzgado de Instrucción número 1 de Teruel ha acordado inhibirse en favor del magistrado Santiago Pedraz y cederle la causa contra Forestalia y el socio de Santos Cerdán, Joseba Antxon Alonso.",
+   "url": "https://www.20minutos.es/nacional/juez-caso-forestalia-deja-instruccion-manos-encargado-investigar-las-cloacas-psoe-audiencia-nacional_7062707_0.html",
+   "at": "2026-11-18T15:20:55+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "CC OO acudirá a los tribunales por la actuación policial en la huelga general: “Buena parte de las personas golpeadas son de nuestro sindicato”",
+   "desc": "“Pedimos responsabilidades, cabezas o dimisiones”, ha reclamado el secretario general Unai Sordo",
+   "url": "https://elpais.com/espana/2026-11-18/cc-oo-acudira-a-los-tribunales-por-la-actuacion-policial-en-la-huelga-general-buena-parte-de-las-personas-golpeadas-son-de-nuestro-sindicato.html",
+   "at": "2026-11-18T15:16:27+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Congreso",
+   "desc": "Incluyen medidas para Ceuta, ayudas por la dana Adam, mejoras para las parejas de hecho, indemnizaciones a las víctimas de Urda, protección para las familias monoparentales y refuerzos para la dependencia. La oposición acusa al Gobierno de tratar de \"comprar votos\" Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/18/6afd9de8e4d4d8893b8b457d.html",
+   "at": "2026-11-18T15:10:40+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Extremadura",
+   "desc": "La víctima, de 69 años, iba caminando junto a su mujer y recibió cuatro disparos desde una moto con dos ocupantes que se dieron a la fuga Leer",
+   "url": "https://www.elmundo.es/espana/extremadura/2026/11/18/6afd89d8e85ece966e8b45b1.html",
+   "at": "2026-11-18T14:17:17+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "El Ministerio Público señala que pese a que se reconocen los \"indicios de desvinculación de la violencia terrorista\", no se \"justifica todavía el acceso al régimen de semilibertad propio del tercer grado\" Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/18/6afdaa1ae4d4d836208b45b5.html",
+   "at": "2026-11-18T14:07:10+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Frente Amplio centra en siete provincias la pelea por el escaño con el PP y Vox",
+   "desc": "La coalición de izquierdas se marca como objetivo crecer hasta el 10% para lograr representación en 17 circunscripciones",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/frente-amplio-centra-en-siete-provincias-la-pelea-por-el-escano-con-el-pp-y-vox.html",
+   "at": "2026-11-18T13:54:59+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Rufián tacha de \"pornográfico\" que Abascal critique \"las paguitas\" mientras su familia cobra ayudas públicas",
+   "desc": "El candidato de ERC considera \"hábil\" la entrevista de Sánchez en 'Lecturas', aunque reclama al PSOE propuestas concretas en materia de vivienda. También critica el plan de varios países europeos para trasladar a Ruanda a solicitantes de asilo rechazados.",
+   "url": "https://www.20minutos.es/nacional/rufian-tacha-pornografico-que-abascal-critique-las-paguitas-mientras-su-familia-cobra-ayudas-publicas_7062670_0.html",
+   "at": "2026-11-18T13:54:47+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales|Calendario judicial",
+   "desc": "El juez José María escribano accede a la petición de la ministra, citada en plena campaña electoral. Antes del 29-N, hay programadas hasta 15 declaraciones relacionadas con casos que afectan al Gobierno o al PSOE Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/18/6afda20b21efa0e3378b4589.html",
+   "at": "2026-11-18T13:53:56+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El Supremo ratifica que los hijos de los nacionalizados por la ley de nietos podrán votar el 29N",
+   "desc": "El Tribunal Supremo ha confirmado este miércoles que los hijos e hijas de quienes previamente obtuvieron la nacionalidad española mediante la conocida como ley de nietos, que son alrededor de 190.000 personas , sí podrán votar en las elecciones generales del próximo 29 de noviembre. La Sala de lo Contencioso Administrativo ha desestimado por mayoría el recurso de reposición de Vox contra la decisión del Supremo de no suspender el derecho a voto para el 29N a los hijos e hijas de quienes previamente obtuvieron la nacionalidad mediante la norma. El auto cuenta con un voto discrepante y otro concurrente. Por tanto, y a diferencia de sus padres, a quienes el Supremo suspendió cautelarmente el derecho a voto salvo que acreditasen ser descendientes de exiliados , sus hijos sí podrán votar. La Abogacía del Estado ha trasladado al Tribunal Supremo que de los 163.355 nacionalizados por la ley de ",
+   "url": "https://www.20minutos.es/nacional/supremo-ratifica-que-los-hijos-los-nacionalizados-por-ley-nietos-podran-votar-29n_7062664_0.html",
+   "at": "2026-11-18T13:32:23+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Estados Unidos admite errores “sustanciales” en la traducción de la documentación para reclamar al millonario propalestino Chambers",
+   "desc": "La defensa denuncia que Washington introdujo términos para acusar de violencia al activista",
+   "url": "https://elpais.com/espana/2026-11-18/estados-unidos-admite-errores-sustanciales-en-la-traduccion-de-la-documentacion-para-reclamar-al-millonario-propalestino-chambers.html",
+   "at": "2026-11-18T13:12:32+00:00"
+  },
   {
    "source": "El Mundo",
    "title": "España",
    "desc": "Limita lo aportado a Pedraz a una tabla con los abogados contratados, una descripción \"genérica\" del servicio y las facturas Leer",
    "url": "https://www.elmundo.es/espana/2026/11/18/6afd840ce9cf4aeb368b4570.html",
-   "at": "2026-11-18T10:55:14+00:00"
+   "at": "2026-11-18T12:46:23+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "España registró por primera vez este año más nacimientos de mujeres menores de 25 años que de mayores de 40",
+   "desc": "El INE refleja que en septiembre hubo 2.767 nacimientos de mujeres menores de 25, frente a 2.701 de mayores de 40. España registra 241.647 nacimientos hasta septiembre, casi 67.000 menos que hace 10 años.",
+   "url": "https://www.20minutos.es/nacional/espana-registro-por-primera-vez-este-ano-mas-nacimientos-mujeres-menores-25-anos-que-mayores-40_7062636_0.html",
+   "at": "2026-11-18T12:45:03+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Núcleo Nacional anuncia la muerte de su dirigente Enrique Lemus",
+   "desc": "El líder del grupo neonazi fallece a los 63 años tras sufrir un infarto hace cinco días",
+   "url": "https://elpais.com/espana/2026-11-18/nucleo-nacional-anuncia-la-muerte-de-su-fundador-enrique-lemus.html",
+   "at": "2026-11-18T12:28:08+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Álvarez de Toledo compara a Sánchez con Delcy Rodríguez: “Su tiempo ya pasó”",
+   "desc": "La candidata popular convierte un acto junto a la opositora venezolana María Corina Machado en un alegato contra el Gobierno español",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/alvarez-de-toledo-compara-a-sanchez-con-delcy-rodriguez-su-tiempo-ya-paso.html",
+   "at": "2026-11-18T12:12:01+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Cuerpo apunta a nuevos contactos \"hoy mismo\" para evitar la única huelga en pie, de maquinistas de Renfe el lunes que viene",
+   "desc": "CCOO, UGT y SCF firmaron anoche un acuerdo por el que los controladores de Adif desconvocan la huelga de este jueves, pero el Semaf mantiene el paro de maquinistas de Renfe el 23 de noviembre y \"nuevas fechas\" si no se atienden sus reivindicaciones. Este miércoles están convocados para intentar un acuerdo sobre emergencias climatológicas.",
+   "url": "https://www.20minutos.es/nacional/cuerpo-apunta-nuevos-contactos-hoy-mismo-para-evitar-unica-huelga-pie-maquinistas-renfe-lunes-que-viene_7062599_0.html",
+   "at": "2026-11-18T11:49:05+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Irene Montero y Vito Quiles o cómo una misma escena se convierte en dos vídeos antagónicos con millones de visitas",
+   "desc": "El agitador ultra publica unas imágenes en redes que contrastan con las mismas que publica la candidata. “Él manda a un tipo a vigilarnos para saber siempre dónde estamos”, cuentan fuentes de Podemos",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/irene-montero-y-vito-quiles-o-como-una-misma-escena-se-convierte-en-dos-videos-antagonicos-con-millones-de-visitas.html",
+   "at": "2026-11-18T11:46:48+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Abascal ve a Sánchez \"puto desesperado\" y lo compara con el asesino José Bretón y el Joker: \"Pasa de la risa loca al rictus serio\"",
+   "desc": "Abascal vio a Sánchez incómodo en su entrevista en Telecinco: \"Le gustan más los masajes que le hacen en TVE o en La Séptima\".",
+   "url": "https://www.20minutos.es/nacional/abascal-ve-sanchez-puto-desesperado-compara-con-asesino-jose-breton-joker-pasa-risa-loca-rictus-serio_7062588_0.html",
+   "at": "2026-11-18T11:29:57+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "País Vasco",
+   "desc": "El antiguo \"pacifista\" y ex dirigente de Izquierda Unida, que llegó a condenar los atentados de la organización terrorista, se aliena con las tesis de la izquierda 'abertzale'. \"Un estorbo es una silla en medio de un pasillo\", le echa en cara Sagastizabal Leer",
+   "url": "https://www.elmundo.es/pais-vasco/2026/11/18/6afd839efc6c83c7538b457a.html",
+   "at": "2026-11-18T11:29:26+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Política",
+   "desc": "El actual portavoz del Grupo Socialista en la Asamblea, Sebastián Guerrero, y el diputado y vicepresidente de la Asamblea, Melchor León, han recibido la notificación de su expulsión después de que el pasado 10 de noviembre apoyaran al Gobierno de Juan Jesús Vivas (PP) en la votación de las cuentas de la ciudad autónoma Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/18/6afd8bc0e85ece38508b45b4.html",
+   "at": "2026-11-18T11:28:02+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Horario del debate electoral entre Pedro Sánchez y Alberto Núñez Feijóo y dónde ver online y por televisión en directo",
+   "desc": "El debate se estructurará en cinco apartados: vivienda, economía, política social y servicios públicos, lucha contra la corrupción y migración.",
+   "url": "https://www.20minutos.es/nacional/horario-debate-electoral-pedro-sanchez-alberto-nunez-feijoo-elecciones-generales-donde-ver_7061066_0.html",
+   "at": "2026-11-18T11:23:51+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Región de Murcia",
+   "desc": "El presidente de la Región de Murcia descarta asumir un futuro 'Ministerio del Agua' si Feijoó le reclamara para ello: \"Mi sitio está aquí\" Leer",
+   "url": "https://www.elmundo.es/murcia/2026/11/18/6afd70ea21efa0154a8b45b6.html",
+   "at": "2026-11-18T11:23:24+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El Supremo confirma cinco años de prisión al expresidente de la Diputación de Valencia Alfonso Rus por contrataciones irregulares",
+   "desc": "La Sala Penal recalca que “no había instaurado un procedimiento reglado, ni había relación de puestos de trabajo”",
+   "url": "https://elpais.com/espana/comunidad-valenciana/2026-11-18/el-supremo-confirma-la-condena-de-cinco-anos-de-carcel-del-expresidente-de-la-diputacion-de-valencia-alfonso-rus.html",
+   "at": "2026-11-18T11:19:16+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Álvarez de Toledo acusa a Sánchez de \"legitimar la violencia política\" con sus pactos con Bildu y la amnistía",
+   "desc": "La número dos del PP por Madrid reclama una movilización masiva el próximo 29-N para lograr \"una mayoría sólida\" que permita \"hacer todo lo que hace falta\" para la reconstrucción nacional que abanderan los populares.",
+   "url": "https://www.20minutos.es/nacional/alvarez-toledo-acusa-sanchez-legitimar-violencia-politica-con-sus-pactos-con-bildu-amnistia_7062515_0.html",
+   "at": "2026-11-18T10:51:26+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Calendario de las huelgas en Renfe: estas son las fechas de los próximos paros",
+   "desc": "Los controladores de Adif han desconvocado la huelga prevista para este jueves, pero el sindicato de maquinistas mantiene la del próximo lunes.",
+   "url": "https://www.20minutos.es/nacional/calendario-huelgas-renfe-estas-fechas-proximos-paros_7062509_0.html",
+   "at": "2026-11-18T10:44:51+00:00"
   },
   {
    "source": "El Mundo",
@@ -15,6 +267,13 @@
    "desc": "La Fiscalía del Tribunal de Cuentas respalda la causa pese a la oposición de la Diputación de Badajoz Leer",
    "url": "https://www.elmundo.es/espana/2026/11/18/6afd74dbe4d4d829508b4592.html",
    "at": "2026-11-18T10:33:53+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "29-N",
+   "desc": "EL MUNDO viaja con el candidato del PP a Guipúzcoa y a Vizcaya: \"Los que tienen que tener miedo son los violentos; endureceré el Código Penal contra la 'kale borroka'\" Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afca35ce4d4d8b81f8b45ab.html",
+   "at": "2026-11-18T10:24:17+00:00"
   },
   {
    "source": "El Mundo",
@@ -50,13 +309,6 @@
    "desc": "Aimar Bretos modera el debate entre la ministra de Vivienda y Agenda Urbana y el vicesecretario de Economía de los populares en ‘Hoy por Hoy’",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/debate-sobre-la-vivienda-cara-a-cara-entre-isabel-rodriguez-psoe-y-juan-bravo-pp.html",
    "at": "2026-11-18T09:35:28+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Sánchez defiende en ‘Lecturas’ la “fortaleza y humanidad” de Begoña Gómez: “Es un privilegio tenerla a mi lado”",
-   "desc": "El presidente confiesa que “no ha sido fácil” conciliar su carrera política con la crianza de sus hijas: “He tenido que renunciar a muchos momentos con ellas”",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-18/sanchez-defiende-en-lecturas-la-fortaleza-y-humanidad-de-begona-gomez-es-un-privilegio-tenerla-a-mi-lado.html",
-   "at": "2026-11-18T09:17:22+00:00"
   },
   {
    "source": "20minutos",
@@ -122,27 +374,6 @@
    "at": "2026-11-18T04:30:01+00:00"
   },
   {
-   "source": "El País",
-   "title": "Madrid, examen final para Pedro Sánchez",
-   "desc": "El candidato del PSOE mide su tirón en el escenario de mayor polarización, con Isabel Díaz Ayuso como referente de la derecha, en la provincia que más escaños da",
-   "url": "https://elpais.com/espana/madrid/2026-11-18/madrid-examen-final-para-pedro-sanchez.html",
-   "at": "2026-11-18T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Javier Coronas: “De un mitin la gente no sale pensando: ‘No me ha gustado hoy, no lo voy a votar”",
-   "desc": "“Los guiñoles fueron la mejor comedia que se ha hecho sobre el mundo de la política en España. Daban hostias a diestro y siniestro”, dice el presentador y humorista",
-   "url": "https://elpais.com/espana/2026-11-18/javier-coronas-de-un-mitin-la-gente-no-sale-pensando-no-me-ha-gustado-hoy-no-lo-voy-a-votar.html",
-   "at": "2026-11-18T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Pensiones: la derecha evita hablar de sus dudas sobre el sistema y la izquierda promete reforzarlo pese a la tensión de las cuentas",
-   "desc": "Los programas de PP, PSOE y Frente Amplio garantizan la revalorización de las prestaciones con la evolución de los precios. El de Vox no la menciona",
-   "url": "https://elpais.com/economia/2026-11-18/pensiones-la-derecha-evita-hablar-de-sus-dudas-sobre-el-sistema-y-la-izquierda-promete-reforzarlo-pese-a-la-tension-de-las-cuentas.html",
-   "at": "2026-11-18T04:30:01+00:00"
-  },
-  {
    "source": "20minutos",
    "title": "Así será mañana el cara a cara entre Sánchez y Feijóo: el debate más esperado de la campaña electoral",
    "desc": "Los candidatos de PSOE y PP se enfrentarán en un debate organizado por la Academia de Televisión y centrado en vivienda, economía, corrupción y política migratoria.",
@@ -193,10 +424,17 @@
   },
   {
    "source": "El Mundo",
-   "title": "Sucesos",
-   "desc": "El joven, de 27 años, fue intubado y trasladado al Gregorio Marañón. La Policía Nacional investiga el ataque y su posible relación con un enfrentamiento entre bandas latinas Leer",
-   "url": "https://www.elmundo.es/madrid/2026/11/18/6afce0eae9cf4a62708b457a.html",
-   "at": "2026-11-17T23:39:28+00:00"
+   "title": "Justicia",
+   "desc": "Limitará el papel del Tribunal Constitucional, hará que los jueces elijan al CGPJ y atajará el cambio continuo de cromos en la cúpula judicial Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/18/6afcaec5e9cf4a73318b459b.html",
+   "at": "2026-11-18T00:53:11+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Vox también se muestra a favor de \"establecer centros de deportaciones en terceros países\" Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/18/6afcb65e21efa0f6078b45b6.html",
+   "at": "2026-11-18T00:53:10+00:00"
   },
   {
    "source": "El Mundo",
@@ -207,6 +445,13 @@
   },
   {
    "source": "El Mundo",
+   "title": "Aquí se juega la campaña (8)|Ripoll",
+   "desc": "Con casi un 22% de inmigración, la provincia de Gerona constituye el bastión de Aliança, pero el partido, que ya podría ser segunda fuerza en Cataluña, no se presenta a las generales del 29-N Leer",
+   "url": "https://www.elmundo.es/cataluna/2026/11/17/6afc9cce21efa0983c8b4597.html",
+   "at": "2026-11-17T21:51:40+00:00"
+  },
+  {
+   "source": "El Mundo",
    "title": "Columna desviada",
    "desc": "\"Cuanto más se igualan los salarios por abajo, más fácil le resulta al Gobierno capturar el voto de sus beneficiarios\" Leer",
    "url": "https://www.elmundo.es/espana/2026/11/17/6afca97521efa01c438b45ba.html",
@@ -214,227 +459,17 @@
   },
   {
    "source": "El Mundo",
+   "title": "Accidente ferroviario",
+   "desc": "Pagó medio millón de euros por el material que un ex trabajador de la cantera de donde procedía ha denunciado a la juez que es defectuoso Leer",
+   "url": "https://www.elmundo.es/andalucia/2026/11/17/6afc4531fdddff025c8b4587.html",
+   "at": "2026-11-17T21:50:43+00:00"
+  },
+  {
+   "source": "El Mundo",
    "title": "España",
    "desc": "La muerte se produce diez días después de su detención en la operación policial que llevó a la desarticulación de la asociación neonazi, en la que fue investigado por delitos de asociación ilícita y odio Leer",
    "url": "https://www.elmundo.es/espana/2026/11/17/6afcbdfefdddffe2408b457d.html",
    "at": "2026-11-17T20:50:13+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Pedro Sánchez se aferra de nuevo a la bandera: “Estamos muy orgullosos de España”",
-   "desc": "El presidente reivindica la enseña “frente a quienes piensan que es de ellos” en un acto en el que García-Page fue el gran ausente",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/pedro-sanchez-se-aferra-de-nuevo-a-la-bandera-estamos-muy-orgullosos-de-espana.html",
-   "at": "2026-11-17T20:38:45+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez dice que el \"cambio\" no puede ser volver al \"pasado\" y alerta frente a Vox: \"No es que sea facha, es pura fachada\"",
-   "desc": "En el mitin de Albacete, celebrado sin la presencia de Page pero con José Bono y un despliegue de banderas españolas, Sánchez ha centrado sus críticas en Abascal. Lo ha hecho en una provincia donde algunos sondeos apuntan a que Vox podría lograr un escaño.",
-   "url": "https://www.20minutos.es/nacional/sanchez-dice-que-cambio-no-puede-ser-volver-pasado-alerta-frente-vox-no-es-que-sea-facha-es-pura-fachada_7062363_0.html",
-   "at": "2026-11-17T20:30:07+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "Asegura que desarrolló una adicción a las máquinas tragaperras a causa de las tareas que debía desempeñar en su trabajo. La Justicia ha denegado su petición al recordar que la ludopatía no figura en el catálogo de enfermedades profesionales Leer",
-   "url": "https://www.elmundo.es/galicia/2026/11/17/6afc974ee85ece8d6c8b456d.html",
-   "at": "2026-11-17T20:29:29+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Elecciones 29-N",
-   "desc": "El líder del PSOE ironiza con las carencias culturales que presupone a Feijóo y Abascal y señala que lo único que les pide es que \"aprueben educación para la ciudadanía\" Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afc9889e9cf4ae5698b45c8.html",
-   "at": "2026-11-17T20:25:40+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez menciona en un mitin su entrevista en 'Lecturas': \"En ella hablo mucho de mis padres\"",
-   "desc": "El presidente del Gobierno, Pedro Sánchez , se ha referido este martes en un mitin celebrado en Albacete a la entrevista que concedió a la revista Lecturas , en la que habla de su lado más personal. \"Sabéis que me han hecho una entrevista en la revista Lecturas y venía echándole un vistazo. En ella hablo mucho de mis padres \", ha expresado el candidato socialista a las elecciones generales del próximo 29 de noviembre. Tras recordar que su padre nació en el municipio de Anchura, ubicado en la comarca de los Montes de Toledo (Ciudad Real), el presidente ha explicado lo que aprendió de su padre y de su abuelo. \"De mi padre aprendí muchas cosas. De mi abuelo también. De mi padre aprendí algo que tenéis los castellanomanchegos muy importante, que es la perseverancia \", ha continuado Sánchez durante el mitin al que no ha acudido el presidente de Castilla-La Mancha, Emiliano García-Page. \"El su",
-   "url": "https://www.20minutos.es/nacional/sanchez-menciona-un-mitin-su-entrevista-lecturas-ella-hablo-mucho-mis-padres_7062358_0.html",
-   "at": "2026-11-17T19:54:33+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Memoria democrática \"para cerrar heridas\"",
-   "desc": "Recordar significa \"volver a pasar por el corazón\". Y eso fue, con discursos, música y danza, lo que me pasó. Ha sido un acto ciertamente emocionante. Víctimas directas y descendientes de víctimas han recogido entre aplausos sus certificados de reconocimiento y homenaje correspondientes. El Gobierno cumple así, un año más, con los principios del derecho internacional humanitario de Verdad, Justicia, Reparación y Deber de Memoria como garantía de No repetición.",
-   "url": "https://www.20minutos.es/nacional/blogs/se-nos-vio-el-plumero/memoria-democratica-para-cerrar-heridas_7062359_0.html",
-   "at": "2026-11-17T19:43:35+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La Aemet alerta: la llegada de nuevos frentes deja 11 comunidades autónomas en aviso por lluvia, viento y oleaje este miércoles",
-   "desc": "La Aemet ha avanzado que se mantendrá una situación de inestabilidad en casi todo el país.",
-   "url": "https://www.20minutos.es/nacional/llegada-nuevos-frentes-deja-once-comunidades-alerta-por-lluvia-viento-oleaje-este-miercoles_7062335_0.html",
-   "at": "2026-11-17T19:05:44+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar ONCE: resultados de hoy, martes 17 de noviembre de 2026",
-   "desc": "Los resultados de la ONCE del martes 17 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
-   "url": "https://www.20minutos.es/nacional/comprobar-once-resultados-hoy-martes-17-noviembre-2026_7062348_0.html",
-   "at": "2026-11-17T19:00:02+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar Bonoloto: resultados de hoy, martes 17 de noviembre de 2026",
-   "desc": "Los resultados de la Bonoloto del martes 17 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
-   "url": "https://www.20minutos.es/nacional/comprobar-bonoloto-resultados-hoy-martes-17-noviembre-2026_7062347_0.html",
-   "at": "2026-11-17T19:00:02+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar Euromillones: resultados de hoy, martes 17 de noviembre de 2026",
-   "desc": "Los resultados del Euromillones del martes 17 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
-   "url": "https://www.20minutos.es/nacional/comprobar-euromillones-resultados-hoy-martes-17-noviembre-2026_7062346_0.html",
-   "at": "2026-11-17T19:00:01+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Muere Enrique Lemus, uno de los fundadores de Núcleo Nacional, detenido hace diez días",
-   "desc": "Enrique Lemus, uno de los fundadores de Núcleo Nacional, la asociación neonazi objetivo de la macro operación policial que llevó a su detención hace diez días junto con otros trece integrantes del grupo, ha muerto este martes en un hospital de Valladolid tras sufrir un infarto hace unos días. Así lo han confirmado a Efe fuentes próximas a la investigación que llevó a la desarticulación de Núcleo Nacional por orden de una jueza de Gijón que ha decretado el cese total de actividad y el cierre de sus sedes en Madrid, Burgos y Valladolid, así como el bloqueo del contenido digital de sus perfiles en redes sociales tras la detención de 14 de sus miembros el 6 de noviembre. Las fuentes han revelado que Lemus, con una edad en torno a los sesenta años, es uno de los principales investigados en la causa , y quedó como el resto de arrestados en libertad imputado por delitos de asociación ilícita y ",
-   "url": "https://www.20minutos.es/nacional/muere-enrique-lemus-uno-los-fundadores-nucleo-nacional-detenido-hace-diez-dias_7062342_0.html",
-   "at": "2026-11-17T18:55:58+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Castilla y León",
-   "desc": "El detenido tiene pendiente una orden de ingreso en prisión por agresión sexual, si bien no se sabe aún el motivo del ataque Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afca070e85ece11058b45dd.html",
-   "at": "2026-11-17T18:46:06+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La huelga ferroviaria se salta servicios mínimos, para Cercanías y anula trenes por toda España para exigir mejoras en seguridad",
-   "desc": "Los maquinistas mantienen la huelga de Renfe para el lunes 23 y este jueves volverán a parar los controladores. Los sindicatos siguen reclamando más personal, mejor formación y más protocolos de seguridad. El Congreso vota este miércoles la convalidación de los decretos de ayudas a las víctimas y con las primeras medidas mientras Cuerpo da una semana a los expertos para un primer \"plan de acción\".",
-   "url": "https://www.20minutos.es/nacional/huelga-ferroviaria-se-salta-servicios-minimos-para-cercanias-anula-trenes-por-toda-espana-para-exigir-mejoras-seguridad_7062222_0.html",
-   "at": "2026-11-17T17:55:55+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Así es el programa electoral de Podemos para el 29N: de bajar los alquileres un 40 % a la jornada de 30 horas, consulta las 442 medidas",
-   "desc": "El partido también plantea reservar al menos la mitad de las nuevas viviendas al alquiler social, crear una banca pública y que España salga de la OTAN.",
-   "url": "https://www.20minutos.es/nacional/programa-electoral-podemos-29n-bajar-alquileres-jornada-30-horas-consulta-442-medidas_7062203_0.html",
-   "at": "2026-11-17T17:08:08+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El gasto asociado a la vivienda crece un 61% desde 2018 y empuja hasta los 835 euros el coste de criar a un hijo",
-   "desc": "Una de cada dos familias necesita destinar al menos el 48% de sus ingresos a la crianza de los hijos y cerca de 847.000 hogares con menores no disponen de ingresos suficientes para cubrir el coste.",
-   "url": "https://www.20minutos.es/nacional/gasto-asociado-vivienda-crece-un-61-desde-2018-empuja-hasta-los-835-euros-coste-criar-un-hijo_7062166_0.html",
-   "at": "2026-11-17T16:54:37+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Moncloa no prevé aprobar antes del 29-N el registro horario y la prestación por crianza pese a incluir ambas medidas en su programa",
-   "desc": "Yolanda Díaz ha presionado al PSOE desde la mesa del Consejo de Ministros para que apruebe dos medidas que incluye en su programa, mientras Frente Amplio le reprocha que las haya \"copiado\" tras años de bloqueo.",
-   "url": "https://www.20minutos.es/nacional/moncloa-no-preve-aprobar-antes-29-n-registro-horario-prestacion-por-crianza-pese-incluir-ambas-medidas-su-programa_7062246_0.html",
-   "at": "2026-11-17T16:49:26+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "Vuelve a citar al ex número dos del delegado del Gobierno en Ceuta, Gonzalo Sanz, y aplaza al próximo 1 de diciembre la declaración de su ex jefe, Miguel Ángel Pérez Triano, prevista para este miércoles Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afc792ce4d4d86a2e8b45a8.html",
-   "at": "2026-11-17T16:45:40+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Salamanca",
-   "desc": "Los 'familiares' del fallecido no lo reconocían y atribuían el problema al deterioro y la medicación. La hija del hospitalizado estaba convencida de que no era su padre y nadie la daba una explicación convincente Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afc816afc6c83b9018b45bc.html",
-   "at": "2026-11-17T16:35:36+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Macrooperación de la UCO contra la explotación sexual en A Coruña, Zaragoza y Alicante: hay al menos dos detenidos",
-   "desc": "La UCO lleva a cabo una operación contra la explotación sexual en A Coruña, Zaragoza y Alicante",
-   "url": "https://www.20minutos.es/nacional/macrooperacion-uco-contra-explotacion-sexual-coruna-zaragoza-alicante-hay-menos-dos-detenidos_7062249_0.html",
-   "at": "2026-11-17T16:34:08+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "29-N",
-   "desc": "El Alto Tribunal exige a la directora general de Política Interior que certifique si se han realizado los controles de seguridad exigidos Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afc8148e85ece1c778b4584.html",
-   "at": "2026-11-17T16:31:06+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La Policía halla 97 conexiones entre agentes de Marruecos e impulsores de la entrada masiva a Ceuta",
-   "desc": "El CENIF conecta a los impulsores de la convocatoria online para cruzar la frontera con miembros de los servicios de Inteligencia marroquíes, unidades de la Gendarmería Real, efectivos de la seguridad de Palacios Reales y unidades de Tráfico.",
-   "url": "https://www.20minutos.es/nacional/policia-halla-97-conexiones-entre-agentes-marruecos-impulsores-entrada-masiva-ceuta_7062263_0.html",
-   "at": "2026-11-17T16:26:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La Policía revela 97 “conexiones” entre miembros de seguridad de Marruecos y las redes detrás del asalto a Ceuta",
-   "desc": "La jueza aplaza al 1 de diciembre la declaración del exdelegado del Gobierno en Ceuta y cita como testigo al cónsul de España en Tetuán y al que fuera jefe de gabinete del entonces delegado del Gobierno de nuevo",
-   "url": "https://elpais.com/espana/2026-11-17/la-jueza-aplaza-la-declaracion-del-exdelegado-del-gobierno-en-ceuta-al-30-de-noviembre.html",
-   "at": "2026-11-17T16:25:08+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Los mensajes de odio en redes caen un 33% pero suben los dirigidos contra migrantes",
-   "desc": "Durante el mes de octubre se registraron un total de 64.625 mensajes de este tipo y narrativas discriminatorias frente a los 96.270 de septiembre.",
-   "url": "https://www.20minutos.es/nacional/los-mensajes-odio-redes-caen-un-33-pero-suben-los-dirigidos-contra-migrantes_7062238_0.html",
-   "at": "2026-11-17T16:00:01+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Inmigración",
-   "desc": "En la isla solo quedan 500 subsaharianos \"gracias a la respuesta coordinada y rigurosa, con dispositivos y la respuesta solidiaria en el conjunto del territorio\", según el Ejecutivo Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afc43effc6c8332048b4595.html",
-   "at": "2026-11-17T14:46:57+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "Los magistrados estiman un recurso presentado por Samuel Vázquez, también miembro del cuerpo, y aprecian que \"las diligencias de instrucción sí permiten conformar unos hechos que indiciariamente pueden colmar los tipos delictivos denunciados\" Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afc5413fdddffb3438b45a8.html",
-   "at": "2026-11-17T13:58:57+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La Abogacía cifra en 113.326 los nacionalizados por la ‘ley de nietos’ afectados por la suspensión de voto del Supremo",
-   "desc": "Los servicios jurídicos del Estado reducen el número tras excluir a menores, inscritos en el censo de España y registros duplicados",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/la-abogacia-cifra-en-113326-los-nacionalizados-por-la-ley-de-nietos-afectados-por-la-suspension-de-voto-del-supremo.html",
-   "at": "2026-11-17T13:12:17+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Elecciones generales 2026",
-   "desc": "El líder del PP afea a Sánchez que no condene las agresiones al PP: \"Un presidente digno de serlo ha de descolgar el teléfono y trasladar su solidaridad\" Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afc3a88e85ece1a3b8b458b.html",
-   "at": "2026-11-17T12:12:51+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "“Yo sí te voy a votar”: Adrián, el cocinero valenciano que compuso la canción viral de Sánchez en TikTok y no recibió respuesta del PSOE",
-   "desc": "Óscar Puente, la exdelegada del Gobierno en Valencia Pilar Bernabé y usuarios anónimos se suman a esta composición creada en respuesta a una frase de la portavoz del PP Ester Muñoz",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/yo-te-voy-a-votar-adrian-el-cocinero-valenciano-que-compuso-la-cancion-viral-de-sanchez-en-tiktok-y-no-recibio-respuesta-del-psoe.html",
-   "at": "2026-11-17T11:57:02+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Así era el 'juramento del militante' de Núcleo Nacional: \"No mantener relaciones sexuales con personas que no sean de raza europea\"",
-   "desc": "La Policía encontró el documento durante el registro de 'El Nido', la sede de la organización ultraderechista.",
-   "url": "https://www.20minutos.es/nacional/asi-era-juramento-militante-nucleo-nacional-no-mantener-relaciones-sexuales-con-personas-que-no-sean-raza-europea_7062034_0.html",
-   "at": "2026-11-17T11:53:50+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Zapatero pide al juez realizar su propio informe de las joyas para buscar posibles contradicciones con la tasación oficial",
-   "desc": "La última tasación acordada por el juez Calama sitúa el valor de las alhajas en 1.023.320 euros.",
-   "url": "https://www.20minutos.es/nacional/zapatero-sigue-cuestionando-las-tasaciones-las-joyas-encontradas-su-oficina-encarga-un-informe-pericial-propio_7062088_0.html",
-   "at": "2026-11-17T11:44:22+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "El ex subdirector de Gestión Administrativa de Adif Ignacio Zaldívar ha negado ante el juez que ejerciera presiones para lograr la contratación de Jésic",
-   "url": "https://www.elmundo.es/espana/2026/11/17/6afc289ce4d4d8cf2d8b457b.html",
-   "at": "2026-11-17T11:42:37+00:00"
   }
  ]
 }

@@ -152,6 +152,7 @@ def trascrivi(site, out):
     testo_rapporto = rapporto(punti, quota, MODELLO_WHISPER, durata)
     with open(os.path.join(out, "rapporto.md"), "w", encoding="utf-8") as f:
         f.write(testo_rapporto)
+    print(testo_rapporto)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
             f.write(testo_rapporto)

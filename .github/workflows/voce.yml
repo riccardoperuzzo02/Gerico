@@ -2,8 +2,9 @@ name: Controllo della voce
 
 # Trascrive il riepilogo audio di oggi con whisperX e lo confronta con il testo, per trovare le parole lette male
 # (rapporto nel riassunto del run). Poi legge lo stesso minuto con Gemini (tagliato dall'audio vero), Kokoro e
-# Chatterbox Multilingual, per confrontare le voci. Si avvia a mano (Actions › Controllo della voce › Run workflow),
-# non usa segreti e non pubblica niente: i file stanno negli artifact del run per 7 giorni.
+# Chatterbox Multilingual, per confrontare le voci. Si avvia a mano (Actions › Controllo della voce › Run workflow) e
+# non usa segreti. Il rapporto e i tre minuti finiscono in site/audio/prove/voce/, per ascoltarli dal telefono
+# (gerico.financialnews.workers.dev/audio/prove/voce/...); poi la cartella si può cancellare.
 on:
   workflow_dispatch:
     inputs:
@@ -13,7 +14,7 @@ on:
         default: true
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   trascrivi:
@@ -77,3 +78,33 @@ jobs:
           name: voce-chatterbox
           path: voce/
           retention-days: 7
+
+  pubblica:
+    needs: [trascrivi, chatterbox]
+    if: ${{ always() && needs.trascrivi.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - uses: actions/download-artifact@v4
+        with:
+          path: ${{ runner.temp }}/voce
+          merge-multiple: true
+      - name: Pubblica le prove
+        run: |
+          git config user.name "GERICO"
+          git config user.email "gerico@users.noreply.github.com"
+          for i in 1 2 3 4; do
+            git fetch -q --depth 1 origin "$GITHUB_REF_NAME" && git reset -q --hard FETCH_HEAD
+            rm -rf site/audio/prove/voce && mkdir -p site/audio/prove/voce
+            cp "$RUNNER_TEMP"/voce/*.m4a "$RUNNER_TEMP"/voce/*.md "$RUNNER_TEMP"/voce/*.json "$RUNNER_TEMP"/voce/*.txt site/audio/prove/voce/ 2>/dev/null || true
+            git add -A site/audio/prove/voce
+            if git diff --cached --quiet; then echo "Niente di nuovo."; exit 0; fi
+            git commit -q -m "Controllo della voce del $(TZ=Europe/Rome date '+%-d/%-m alle %H:%M')"
+            if git push -q origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            sleep $((i * 10))
+          done
+          echo "::error::Push non riuscito dopo 4 tentativi"
+          exit 1

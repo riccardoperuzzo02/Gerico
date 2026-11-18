@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-18T05:17:35+00:00",
+ "asOf": "2026-11-18T07:17:36+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Stromsteuersenkung: Koalition einigt sich auf Senkung der Stromsteuer für ein Jahr",
+   "desc": "Die Spitzen von Union und SPD haben sich auf eine Stromsteuersenkung ab Januar geeinigt. Die Finanzierung steht jedoch nur für ein Jahr. Auch der Spritpreisdeckel kommt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalition-einigt-sich-auf-senkung-der-stromsteuer-fuer-ein-jahr",
+   "at": "2026-11-18T07:04:08+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Stromsteuer und Spritpreisdeckel kommen - zeitlich begrenzt",
+   "desc": "Die Spitzen von Union und SPD haben sich im Koalitionsausschuss auf eine Senkung der Stromsteuer für alle geeinigt. Die Finanzierung steht allerdings nur für 2027. Auch ein Spritpreisdeckel soll zeitlich begrenzt kommen.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/eilmeldung-koalitionsausschuss-einigung-100.html",
+   "at": "2026-11-18T06:58:49+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Koalition einigt sich auf Senkung der Stromsteuer und Spritpreisdeckel",
+   "desc": "Bis zwei Uhr morgens tagte der Koalitionsausschuss: Nun haben sich Merz, Klingbeil und Söder auf eine Senkung der Stromsteuer für alle Verbraucher verständigt, auch die Spritpreise sollen günstiger werden. Beide Maßnahmen sind zeitlich begrenzt.",
+   "url": "https://www.spiegel.de/politik/deutschland/koalition-einigt-sich-auf-senkung-der-stromsteuer-vorerst-nur-2027-a-69144e3f-1de4-4fec-a38d-ee695e64d899",
+   "at": "2026-11-18T06:37:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
+   "desc": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
+   "at": "2026-11-18T06:20:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Russische Verluste im Krieg: Diese geheimen Daten zeigen, wie Putin in der Ukraine scheitert",
+   "desc": "Geleakte Daten des russischen Statistikamtes belegen: Mindestens 441.000 Russen starben im Krieg gegen die Ukraine. Wir zeigen, was sie noch über Putins Armee verraten.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russische-verluste-krieg-soldaten-daten",
+   "at": "2026-11-18T05:59:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Energienetze in der EU: EU will Genehmigungen für Stromnetze und Speicher beschleunigen",
+   "desc": "Die Europäische Union will die Elektrifizierung vorantreiben. Deshalb sollen bürokratische Hürden bei Ökostromprojekten, Stromnetzen und Speicheranlagen fallen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-energienetze-stromnetze-oekostrom-genehmigungen-ausbau",
+   "at": "2026-11-18T05:10:23+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Bundestagswahl 2025: Karlsruhe entscheidet über BSW-Wahlbeschwerde",
@@ -47,7 +89,7 @@
   {
    "source": "Die Zeit",
    "title": "Apec-Gipfel in Shenzhen: Xi Jinping warnt vor Handelsschranken",
-   "desc": "Chinas Staatschef ruft vor seinem Treffen mit US-Präsident Donald Trump zu einem Ausbau des Freihandels auf. Er wolle den riesigen chinesischen Markt weiter öffnen.",
+   "desc": "Chinas Staatschef ruft vor dem Treffen mit Donald Trump und Wladimir Putin zu mehr Freihandel auf. Der russische Staatschef sieht großes Potenzial in dem Dreiergipfel.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-xi-jinping-freihandel-china",
    "at": "2026-11-18T04:00:44+00:00"
   },
@@ -80,11 +122,11 @@
    "at": "2026-11-18T02:33:50+00:00"
   },
   {
-   "source": "Tagesschau",
-   "title": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
-   "desc": "Die Spitzen von CDU, CSU und SPD haben ihre Beratungen im Kanzleramt am frühen Mittwochmorgen beendet - ohne eine Einigung zur Stromsteuersenkung zu verkünden. Die Details sollen am frühen Morgen bekanntgegeben werden.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
-   "at": "2026-11-18T02:12:36+00:00"
+   "source": "Die Zeit",
+   "title": "Koalitionsausschuss: Koalition beendet Stromsteuergespräche tief in der Nacht",
+   "desc": "Nach mehr als acht Stunden haben die Spitzenpolitiker von Union und SPD ihre Verhandlungen im Koalitionsausschuss beendet. Ergebnisse wollen sie erst später mitteilen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalitionsausschuss-cdu-csu-spd-stromsteuer-friedrich-merz-lars-klingbeil-markus-soeder",
+   "at": "2026-11-18T02:08:51+00:00"
   },
   {
    "source": "Die Zeit",
@@ -115,22 +157,8 @@
    "at": "2026-11-18T00:02:59+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Slowakei: Zehntausende protestieren in der Slowakei gegen Fico-Regierung",
-   "desc": "Zum Jahrestag der Samtenen Revolution haben in Bratislava rund 25.000 Menschen demonstriert. Sie kritisierten die Russlandverbindungen von Ministerpräsident Fico.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-slowakei-bratislava-robert-fico-ukraine-russland",
-   "at": "2026-11-17T22:32:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Cyberabwehr: Nato erwirbt Zugang zu Cybersicherheits-Plattform von OpenAI",
-   "desc": "Die Nato und der KI-Konzern OpenAI haben ein Abkommen zur Abwehr von Cyberangriffen vereinbart. Das Militärbündnis darf künftig die KI-Plattform Daybreak nutzen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/openai-nato-abkommen-kuenstliche-intelligenz-cyberangriffe-daybreak",
-   "at": "2026-11-17T19:14:30+00:00"
-  },
-  {
    "source": "Der Spiegel",
-   "title": "Gerald Knaus über Return Hubs in Ruanda: »Den Tausenden, die jeden Monat kommen, muss die Überfahrt sinnlos erscheinen«",
+   "title": "Ruanda: Gerald Knaus verteidigt Abschiebeabkommen gegen moralische Kritik",
    "desc": "Können Abschiebungen ins ferne Ruanda Europas Problem mit irregulärer Migration lösen? Der Experte Gerald Knaus befürwortet ein Abkommen mit dem afrikanischen Land. Moralische Bedenken lässt er nicht gelten.",
    "url": "https://www.spiegel.de/politik/deutschland/gerald-knaus-ueber-return-hubs-in-ruanda-den-tausenden-die-jeden-monat-kommen-muss-die-ueberfahrt-sinnlos-erscheinen-a-47546ef9-905c-47d7-95b9-4d0eb1f4b6bb",
    "at": "2026-11-17T19:06:00+00:00"
@@ -148,20 +176,6 @@
    "desc": "Deutschland plant, sich um den Chefposten des Uno-Kinderhilfswerks zu bewerben. Über die Kandidatur der ehemaligen Ministerin soll SPIEGEL-Informationen zufolge das Kabinett entscheiden.",
    "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-will-svenja-schulze-als-unicef-chefin-a-e3c254e2-b095-4a71-94bd-df8aad89d560",
    "at": "2026-11-17T18:06:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Brücke zur Krim: Angriff auf Putins Prestigeobjekt",
-   "desc": "Der Ukraine gelingt ein Schlag gegen die Brücke zur Krim. Das geht weit über die symbolische Ebene hinaus – und verschärft die Versorgungskrise auf der Halbinsel.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/bruecke-krim-strasse-von-kertsch-logistik-russland",
-   "at": "2026-11-17T18:02:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Brücke zur Krim: Angriff auf Putins Prestigeobjekt",
-   "desc": "Der Ukraine gelingt ein Schlag gegen die Brücke zur Krim. Das geht weit über die symbolische Ebene hinaus – und verschärft die Versorgungskrise auf der Halbinsel.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/bruecke-krim-strasse-von-kertsch-logistik-russland",
-   "at": "2026-11-17T18:02:16+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -186,7 +200,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Baden-Württemberg: Boris Palmer gibt Posten als Bürokratieberater auf",
+   "title": "Boris Palmer: Tübingens OB legt Berateramt für Landesregierung dauerhaft nieder",
    "desc": "Wegen der gegen ihn erhobenen Belästigungsvorwürfe wird Boris Palmer seinen Job als Berater der baden-württembergischen Landesregierung nicht wieder aufnehmen. Die Situation belaste ihn »erheblich«.",
    "url": "https://www.spiegel.de/politik/deutschland/baden-wuerttemberg-boris-palmer-gibt-posten-als-buerokratieberater-auf-a-fe212fa5-7438-4e63-90e1-f19d579c5a42",
    "at": "2026-11-17T16:28:00+00:00"
@@ -214,7 +228,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Elif Eralp: Polizeigewerkschaft GdP wirft ihr »blanken Polizeihass« vor",
+   "title": "Elif Eralp: Polizeigewerkschaft wirft ihr »blanken Polizeihass« vor",
    "desc": "In einem Video bezeichnete die Linke Elif Eralp die Polizei einst als »massives Sicherheitsrisiko«, man müsse sie »einstampfen«. Die ebenfalls von ihr kritisierte Gewerkschaft GdP reagiert.",
    "url": "https://www.spiegel.de/politik/deutschland/elif-eralp-polizeigewerkschaft-gdp-wirft-ihr-blanken-polizeihass-vor-a-5296761c-f586-47cc-8a34-7e555d7bf8d8",
    "at": "2026-11-17T15:39:00+00:00"
@@ -274,13 +288,6 @@
    "desc": "Stromsteuersenkung, Rentenreform, Ausgleich der Kalten Progression: Die Spitzen der schwarz-roten Koalition wollen heute Abend über viele Knackpunkte entscheiden. Es geht um viel Geld, aber auch um die Glaubwürdigkeit des Kanzlers. Von M. Ulrich.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html",
    "at": "2026-11-17T09:07:23+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundespräsidentenwahl: SPD schickt Sänger Mickie Krause zur Abstimmung",
-   "desc": "Die nordrhein-westfälische SPD hat ihre Wahlleute für die Bundesversammlung nominiert: Mit dabei sind Sänger Mickie Krause und der »Hundeflüsterer« Martin Rütter, aber auch eine bekannte Juristin.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundespraesidentenwahl-2027-spd-schickt-saenger-mickie-krause-zur-abstimmung-a-ee33a4f3-d944-4ba4-a1da-528f2d4c469d",
-   "at": "2026-11-17T07:12:00+00:00"
   }
  ]
 }

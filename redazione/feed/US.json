@@ -1,13 +1,62 @@
 {
  "code": "US",
- "asOf": "2026-11-18T05:17:35+00:00",
+ "asOf": "2026-11-18T07:17:36+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
+   "desc": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country.",
+   "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+   "at": "2026-11-18T07:17:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+   "desc": "The U.S. Commerce Department is making moves to tighten export controls.",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "at": "2026-11-18T07:16:14+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Claim 56 Senate Seats After Mary Peltola Wins in Alaska",
+   "desc": "Mary Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
+   "at": "2026-11-18T07:10:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Emergency alerts and $75,000 rewards: South Korea fights high-tech exam cheating",
+   "desc": "South Korea moves to crack down on exam cheating with emergency alerts and $75,000 rewards.",
+   "url": "https://www.cnbc.com/2026/11/18/south-korea-exam-cheating-.html",
+   "at": "2026-11-18T07:00:39+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
+   "desc": "JPMorgan and Hyundai Card are looking to expand the use of AI agents in financial transactions.",
+   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+   "at": "2026-11-18T06:18:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Three things to watch as Trump, Xi and Putin meet in China",
+   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are set to meet in Shenzhen alongside an APEC leaders' meeting.",
+   "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
+   "at": "2026-11-18T06:04:39+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount",
+   "desc": "Iran said its army targeted U.S. drone and missile installations at Kuwait's Ali Al Salem air base, extending a run of attacks on Gulf states.",
+   "url": "https://www.cnbc.com/2026/11/18/trump-iran-war-hormuz-oil-.html",
+   "at": "2026-11-18T05:24:54+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Trump Administration Presses Ahead in Legal Battle Over U.S. Attorneys",
    "desc": "A judge has ruled that Bill Essayli was acting “unlawfully” as U.S. attorney in Los Angeles. He is one of three prosecutors appointed by the Trump administration through a unique process.",
    "url": "https://www.nytimes.com/2026/11/18/us/trump-administration-presses-ahead-in-legal-battle-over-us-attorneys.html",
-   "at": "2026-11-18T05:14:55+00:00"
+   "at": "2026-11-18T05:19:50+00:00"
   },
   {
    "source": "New York Times",
@@ -15,27 +64,6 @@
    "desc": "The digital outages that began on Thursday may not be linked, but they have left Americans with a sense that the nation is off-kilter, with no one ready to fix it.",
    "url": "https://www.nytimes.com/2026/11/17/us/politics/outages-flights-banks-tech.html",
    "at": "2026-11-18T04:59:05+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "'Who and what comes next': Analysts expect Nvidia investor uncertainty despite earnings beat",
-   "desc": "Nvidia’s Q3 results should help ease short-term concerns, but uncertainty remains around long-term leadership.",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-earnings-market-analysis.html",
-   "at": "2026-11-18T04:40:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
-   "desc": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country.",
-   "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
-   "at": "2026-11-18T04:27:45+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Claim 56 Senate Seats After Mary Peltola Wins in Alaska",
-   "desc": "Ms. Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
-   "at": "2026-11-18T04:18:13+00:00"
   },
   {
    "source": "CNBC",
@@ -92,20 +120,6 @@
    "desc": "The Senate health committee was scheduled to vote on her nomination Wednesday morning after wrestling with concerns about her stance on abortion and vaccines.",
    "url": "https://www.nytimes.com/2026/11/17/us/overton-fda-nomination-withdrawn.html",
    "at": "2026-11-18T03:26:28+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Three things to watch as Trump, Xi and Putin meet in China",
-   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are set to meet in Shenzhen alongside an APEC leaders' meeting.",
-   "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
-   "at": "2026-11-18T03:25:32+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
-   "desc": "JPMorgan and Hyundai Card are looking to expand the use of AI agents in financial transactions.",
-   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
-   "at": "2026-11-18T03:17:55+00:00"
   },
   {
    "source": "CNBC",
@@ -585,24 +599,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Investor Steve Eisman says the AI neocloud stocks are in 'big trouble' from Nvidia fallout",
-   "desc": "Steve Eisman is appearing on \"Squawk Box\" on Tuesday.",
-   "url": "https://www.cnbc.com/2026/11/17/big-short-investor-steve-eisman-to-discuss-nvidia-anthropic-and-ai-bull-on-cnbc.html",
-   "at": "2026-11-17T15:22:45+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
    "desc": "Anthropic is slated to list on the Nasdaq under the ticker symbol \"ANT\" and start trading on Nov. 19.",
    "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
    "at": "2026-11-17T14:34:48+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-   "desc": "The forecast represents one of the most hawkish views among policymakers.",
-   "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
-   "at": "2026-11-17T13:40:54+00:00"
   },
   {
    "source": "NPR",

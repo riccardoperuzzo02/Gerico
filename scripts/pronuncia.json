@@ -1,0 +1,286 @@
+{
+ "come": "Ogni regola cambia il testo prima della sintesi: «da» è un'espressione regolare (Python), «a» il testo da leggere, «voci» le voci a cui vale (gemini, kokoro, chatterbox). Le regole si applicano in ordine: quelle più lunghe prima (S&P 500 prima di S&P). Le parole lette male le trova il workflow «Controllo della voce».",
+ "regole": [
+  {
+   "da": "\\bGERICO\\b",
+   "a": "Gèrico",
+   "voci": [
+    "gemini"
+   ],
+   "nota": "accento sulla prima e"
+  },
+  {
+   "da": "S&P\\s*500",
+   "a": "esse e pi cinquecento",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "S&P",
+   "a": "esse e pi",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bFTSE\\b|\\bFtse\\b",
+   "a": "Futsi",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bEUR/USD\\b",
+   "a": "euro dollaro",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bGBP/USD\\b",
+   "a": "sterlina dollaro",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bUSD/JPY\\b",
+   "a": "dollaro yen",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bUSD/CHF\\b",
+   "a": "dollaro franco",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bAUD/USD\\b",
+   "a": "dollaro australiano",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bUSD/CAD\\b",
+   "a": "dollaro canadese",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bWti\\b|\\bWTI\\b",
+   "a": "W T I",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bTTF\\b|\\bTtf\\b",
+   "a": "T T F",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bBtp\\b|\\bBTP\\b",
+   "a": "Btp",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bPil\\b|\\bPIL\\b",
+   "a": "Pil",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bpb\\b",
+   "a": "punti base",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bp\\.p\\.",
+   "a": "punti percentuali",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bmld\\b",
+   "a": "miliardi",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bmln\\b",
+   "a": "milioni",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bBCE\\b|\\bBce\\b",
+   "a": "bi ci e",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\b([lL])'(?:UE|Ue)\\b",
+   "a": "\\1'Unione europea",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bUE\\b|\\bUe\\b",
+   "a": "Unione europea",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bFMI\\b|\\bFmi\\b",
+   "a": "effe emme i",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bFBI\\b|\\bFbi\\b",
+   "a": "effe bi ai",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bETF\\b|\\bEtf\\b",
+   "a": "e ti effe",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bCEO\\b|\\b[Cc]eo\\b",
+   "a": "amministratore delegato",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bchips?\\b",
+   "a": "cip",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bspread\\b",
+   "a": "sprèd",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bStoxx\\b|\\bSTOXX\\b",
+   "a": "Stox",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bTreasury\\b",
+   "a": "Trèsciuri",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bReuters\\b",
+   "a": "Ròiters",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bBloomberg\\b",
+   "a": "Blùmberg",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bJPMorgan\\b|\\bJP Morgan\\b",
+   "a": "Gei Pi Morgan",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bSachs\\b",
+   "a": "Saks",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bNvidia\\b",
+   "a": "Envìdia",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bASML\\b",
+   "a": "a esse emme elle",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bTrump\\b",
+   "a": "Tramp",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bVance\\b",
+   "a": "Vens",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bPowell\\b",
+   "a": "Pàuel",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bBinance\\b",
+   "a": "Bàinans",
+   "voci": [
+    "kokoro"
+   ]
+  },
+  {
+   "da": "\\bEisenkot\\b",
+   "a": "Àisenkot",
+   "voci": [
+    "kokoro"
+   ]
+  }
+ ]
+}

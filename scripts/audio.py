@@ -98,20 +98,9 @@ VOICE_MIX_EN, LANG_EN, VOICE_ID_EN = (("bm_george", 1.0),), "en-gb", "kokoro-geo
 CHAIN = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=5:release=80:makeup=2,equalizer=f=3200:t=q:w=1.2:g=2.5"
 PAUSE_SENT, PAUSE_PARA = 0.3, PAUSE_TEMA
 
-# come si leggono sigle, nomi e simboli che la voce sbaglierebbe (controllati con i fonemi di espeak per l'italiano)
-SAY = [
-    (r"S&P\s*500", "esse e pi cinquecento"), (r"S&P", "esse e pi"), (r"\bFTSE\b|\bFtse\b", "Futsi"),
-    (r"\bEUR/USD\b", "euro dollaro"), (r"\bGBP/USD\b", "sterlina dollaro"), (r"\bUSD/JPY\b", "dollaro yen"),
-    (r"\bUSD/CHF\b", "dollaro franco"), (r"\bAUD/USD\b", "dollaro australiano"), (r"\bUSD/CAD\b", "dollaro canadese"),
-    (r"\bWti\b|\bWTI\b", "W T I"), (r"\bTTF\b|\bTtf\b", "T T F"), (r"\bBtp\b|\bBTP\b", "Btp"), (r"\bPil\b|\bPIL\b", "Pil"),
-    (r"\bpb\b", "punti base"), (r"\bp\.p\.", "punti percentuali"), (r"\bmld\b", "miliardi"), (r"\bmln\b", "milioni"),
-    (r"\bBCE\b|\bBce\b", "bi ci e"), (r"\b([lL])'(?:UE|Ue)\b", r"\1'Unione europea"), (r"\bUE\b|\bUe\b", "Unione europea"),
-    (r"\bFMI\b|\bFmi\b", "effe emme i"), (r"\bFBI\b|\bFbi\b", "effe bi ai"), (r"\bETF\b|\bEtf\b", "e ti effe"),
-    (r"\bCEO\b|\b[Cc]eo\b", "amministratore delegato"), (r"\bchips?\b", "cip"), (r"\bspread\b", "sprèd"),
-    (r"\bStoxx\b|\bSTOXX\b", "Stox"), (r"\bTreasury\b", "Trèsciuri"), (r"\bReuters\b", "Ròiters"), (r"\bBloomberg\b", "Blùmberg"),
-    (r"\bJPMorgan\b|\bJP Morgan\b", "Gei Pi Morgan"), (r"\bSachs\b", "Saks"), (r"\bNvidia\b", "Envìdia"), (r"\bASML\b", "a esse emme elle"),
-    (r"\bTrump\b", "Tramp"), (r"\bVance\b", "Vens"), (r"\bPowell\b", "Pàuel"), (r"\bBinance\b", "Bàinans"), (r"\bEisenkot\b", "Àisenkot"),
-]
+# come si leggono sigle, nomi e simboli che la voce sbaglierebbe: il dizionario sta in scripts/pronuncia.json
+# (per Kokoro le grafie sono controllate con i fonemi di espeak per l'italiano)
+import pronuncia  # noqa: E402
 # espeak segna le parole che legge in inglese con (en) ... (it): la voce leggerebbe i segni come lettere, quindi si tolgono
 FLAG = re.compile(r"\([a-z]{2,3}(?:-[a-z0-9]+)*\)")
 
@@ -140,18 +129,17 @@ def words(n):
 
 def speakable(text):
     t = text.replace("’", "'").replace("–", ", ").replace("—", ", ").replace("«", "").replace("»", "")
-    for a, b in SAY:
-        t = re.sub(a, b, t)
+    t = pronuncia.prepara(t, "kokoro")
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)            # 3.956 -> 3956: la voce non legge il punto delle migliaia
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)
     # l'1,4 e dell'8: davanti alle cifre la voce leggerebbe l'apostrofo come «elle», quindi il numero va in lettere
     t = re.sub(r"\b([A-Za-zÀ-ÿ]*')(\d+)(?:,(\d+))?",
                lambda m: m.group(1) + words(int(m.group(2))) + (" virgola " + m.group(3) if m.group(3) else ""), t)
     t = re.sub(r"\s*%", " per cento", t)
-    t = re.sub(r"\$\s*(\d[\d.,]*)", r"\1 dollari", t)
-    t = re.sub(r"(\d[\d.,]*)\s*\$", r"\1 dollari", t)
-    t = re.sub(r"€\s*(\d[\d.,]*)", r"\1 euro", t)
-    t = re.sub(r"(\d[\d.,]*)\s*€", r"\1 euro", t)
+    t = re.sub(r"\$\s*(\d(?:[\d.,]*\d)?)", r"\1 dollari", t)
+    t = re.sub(r"(\d(?:[\d.,]*\d)?)\s*\$", r"\1 dollari", t)
+    t = re.sub(r"€\s*(\d(?:[\d.,]*\d)?)", r"\1 euro", t)
+    t = re.sub(r"(\d(?:[\d.,]*\d)?)\s*€", r"\1 euro", t)
     t = re.sub(r"(\d)[.:](\d{2})\b(?!\d)", r"\1 e \2", t)  # 14:30 -> 14 e 30
     return re.sub(r"\s+", " ", t).strip()
 
@@ -186,17 +174,18 @@ def sentences(text):
     return out
 
 
-def per_voce(text):
-    """Il testo per Gemini: com'è, con i simboli in parole. Niente grafie fonetiche: questa voce legge bene i nomi veri."""
+def per_voce(text, voce="gemini"):
+    """Il testo per Gemini: com'è, con i simboli in parole. Grafie fonetiche solo per le parole che il controllo della
+    voce ha trovato lette male (scripts/pronuncia.json): questa voce legge bene quasi tutti i nomi veri."""
     t = text.replace("’", "'").replace("–", ", ").replace("—", ", ").replace("«", "").replace("»", "")
-    t = re.sub(r"\bGERICO\b", "Gèrico", t)
+    t = pronuncia.prepara(t, voce)
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)
     t = re.sub(r"(\d)\.(\d{3})\b", r"\1\2", t)
     t = re.sub(r"\s*%", " per cento", t)
-    t = re.sub(r"\$\s*(\d[\d.,]*)", r"\1 dollari", t)
-    t = re.sub(r"(\d[\d.,]*)\s*\$", r"\1 dollari", t)
-    t = re.sub(r"€\s*(\d[\d.,]*)", r"\1 euro", t)
-    t = re.sub(r"(\d[\d.,]*)\s*€", r"\1 euro", t)
+    t = re.sub(r"\$\s*(\d(?:[\d.,]*\d)?)", r"\1 dollari", t)
+    t = re.sub(r"(\d(?:[\d.,]*\d)?)\s*\$", r"\1 dollari", t)
+    t = re.sub(r"€\s*(\d(?:[\d.,]*\d)?)", r"\1 euro", t)
+    t = re.sub(r"(\d(?:[\d.,]*\d)?)\s*€", r"\1 euro", t)
     t = re.sub(r"(\d)[.:](\d{2})\b(?!\d)", r"\1 e \2", t)  # 14:30 -> 14 e 30
     return re.sub(r"\s+", " ", t).strip()
 

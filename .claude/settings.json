@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./site/img/**)",
+      "Read(./site/audio/**)",
+      "Read(./site/s/**)",
+      "Read(./site/tema/**)",
+      "Read(./site/archivio-*.html)",
+      "Read(./site/data/tr/**)",
+      "Read(./site/data/indici/**)",
+      "Read(./site/assets/fonts/**)",
+      "Read(./scripts/mappe/**)",
+      "Read(./scripts/sigla/**)",
+      "Read(./node_modules/**)",
+      "Read(./.wrangler/**)",
+      "Read(./screener/**)",
+      "Read(./.dev.vars)"
+    ]
+  }
+}

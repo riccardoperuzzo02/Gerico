@@ -1,23 +1,176 @@
 {
  "date": "2026-11-18",
- "asOf": "2026-11-18T07:26:30+01:00",
+ "asOf": "2026-11-18T12:11:15+01:00",
  "items": [
-  {"time": "08:00", "country": "Regno Unito", "currency": "GBP", "event": "Inflazione al consumo (annuale)", "expected": "3,6%", "previous": "3,5%", "actual": "", "impact": "alto"},
-  {"time": "08:00", "country": "Regno Unito", "currency": "GBP", "event": "Inflazione core (annuale)", "expected": "2,8%", "previous": "2,8%", "actual": "", "impact": "basso"},
-  {"time": "08:30", "country": "Regno Unito", "currency": "GBP", "event": "Intervento del governatore della Bank of England Bailey", "expected": "", "previous": "", "actual": "", "impact": "medio"},
-  {"time": "10:00", "country": "Area euro", "currency": "EUR", "event": "Rapporto della Bce sulla stabilità finanziaria", "expected": "", "previous": "", "actual": "", "impact": "medio"},
-  {"time": "11:00", "country": "Area euro", "currency": "EUR", "event": "Inflazione al consumo, dato finale (annuale)", "expected": "4,0%", "previous": "4,0%", "actual": "", "impact": "basso"},
-  {"time": "11:00", "country": "Area euro", "currency": "EUR", "event": "Inflazione core, dato finale (annuale)", "expected": "2,5%", "previous": "2,5%", "actual": "", "impact": "basso"},
-  {"time": "14:30", "country": "Stati Uniti", "currency": "USD", "event": "Permessi di costruzione", "expected": "1,38 mln", "previous": "1,40 mln", "actual": "", "impact": "basso"},
-  {"time": "14:30", "country": "Stati Uniti", "currency": "USD", "event": "Nuovi cantieri residenziali", "expected": "1,25 mln", "previous": "1,22 mln", "actual": "", "impact": "basso"},
-  {"time": "15:25", "country": "Area euro", "currency": "EUR", "event": "Intervento della presidente della Bce Lagarde", "expected": "", "previous": "", "actual": "", "impact": "medio"},
-  {"time": "16:00", "country": "Regno Unito", "currency": "GBP", "event": "Intervento del governatore della Bank of England Bailey", "expected": "", "previous": "", "actual": "", "impact": "alto"},
-  {"time": "16:00", "country": "Stati Uniti", "currency": "USD", "event": "Vendite di case in attesa (mensile)", "expected": "-2,0%", "previous": "-7,3%", "actual": "", "impact": "basso"},
-  {"time": "16:30", "country": "Stati Uniti", "currency": "USD", "event": "Scorte settimanali di petrolio", "expected": "0,4 mln", "previous": "4,7 mln", "actual": "", "impact": "medio"},
-  {"time": "20:00", "country": "Stati Uniti", "currency": "USD", "event": "Verbali dell'ultima riunione della Fed", "expected": "", "previous": "", "actual": "", "impact": "alto"}
+  {
+   "time": "08:00",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Inflazione al consumo (annuale)",
+   "expected": "3,6%",
+   "previous": "3,5%",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "08:00",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Inflazione core (annuale)",
+   "expected": "2,8%",
+   "previous": "2,8%",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "08:30",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Intervento del governatore della Bank of England Bailey",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "10:00",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Rapporto della Bce sulla stabilità finanziaria",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "11:00",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Inflazione al consumo, dato finale (annuale)",
+   "expected": "4,0%",
+   "previous": "4,0%",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "11:00",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Inflazione core, dato finale (annuale)",
+   "expected": "2,5%",
+   "previous": "2,5%",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "14:30",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Permessi di costruzione",
+   "expected": "1,38 mln",
+   "previous": "1,40 mln",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "14:30",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Nuovi cantieri residenziali",
+   "expected": "1,25 mln",
+   "previous": "1,22 mln",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "15:25",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Intervento della presidente della Bce Lagarde",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "16:00",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Intervento del governatore della Bank of England Bailey",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "16:00",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Vendite di case in attesa (mensile)",
+   "expected": "-2,0%",
+   "previous": "-7,3%",
+   "actual": "",
+   "impact": "basso"
+  },
+  {
+   "time": "16:30",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Scorte settimanali di petrolio",
+   "expected": "0,4 mln",
+   "previous": "4,7 mln",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "20:00",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Verbali dell'ultima riunione della Fed",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "01:30",
+   "country": "Australia",
+   "currency": "AUD",
+   "event": "Indice dei salari (trimestrale)",
+   "expected": "1,0%",
+   "previous": "0,8%",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "19:00",
+   "country": "Nuova Zelanda",
+   "currency": "NZD",
+   "event": "Intervento della governatrice della RBNZ Breman",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "22:00",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Acquisti di titoli a lungo termine (TIC)",
+   "expected": "160,7 mld",
+   "previous": "279,2 mld",
+   "actual": "",
+   "impact": "basso"
+  }
  ],
  "sources": [
-  {"name": "Calendario Forex Factory della settimana (orari in ora italiana)", "url": "https://www.forexfactory.com/calendar"},
-  {"name": "Teleborsa, notizie di mercato del 18 novembre", "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-18-novembre-2026-1_2026-11-18_TLB-BIT.html"}
+  {
+   "name": "Calendario Forex Factory della settimana (orari in ora italiana)",
+   "url": "https://www.forexfactory.com/calendar"
+  },
+  {
+   "name": "Teleborsa, notizie di mercato del 18 novembre",
+   "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-18-novembre-2026-1_2026-11-18_TLB-BIT.html"
+  }
  ]
 }

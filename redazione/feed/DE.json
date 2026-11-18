@@ -1,13 +1,125 @@
 {
  "code": "DE",
- "asOf": "2026-11-17T21:17:34+00:00",
+ "asOf": "2026-11-18T05:17:35+00:00",
  "items": [
   {
+   "source": "Tagesschau",
+   "title": "Bundestagswahl 2025: Karlsruhe entscheidet über BSW-Wahlbeschwerde",
+   "desc": "Bei der Bundestagswahl 2025 fehlten dem BSW weniger als 10.000 Stimmen für den Einzug ins Parlament. Im Streit um eine Neuauszählung steht jetzt eine Entscheidung aus Karlsruhe an. Von K. Hempel und T. Zachäus.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/muss-bundestagswahl-neu-ausgezaehlt-werden-bsw-100.html",
+   "at": "2026-11-18T05:05:41+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Frankreich bestätigt Präsenz von Ausbildern in der Ukraine",
-   "desc": "Die französische Regierung spricht von einem »begrenzten« Ausbildungseinsatz in der Ukraine. Russlands Vorwurf einer Kriegsbeteiligung weist sie zurück. Das Liveblog",
+   "title": "Dreiergipfel: Welchen Kurs schlagen die USA im Irankrieg ein?",
+   "desc": "Erstmals treffen sich die Staatschefs Chinas, Russlands und der USA. Bei dem Gespräch soll es auch um den Irankrieg gehen. Und: Raumsonde Voyager 1 bricht einen Rekord.",
+   "url": "https://www.zeit.de/politik/2026-11/dreiergipfel-china-usa-russland-nachrichtenpodcast",
+   "at": "2026-11-18T04:56:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Der US-Überblick am Morgen: Demokraten gewinnen in Alaska, NSA-Kommunikationsnetz ausgefallen",
+   "desc": "Mehrere Medien erklären Mary Peltola zur Siegerin der Senatswahl in Alaska. Ein Kommunikationsnetzwerk des Geheimdienstes NSA ist ausgefallen. Der US-Überblick am Morgen",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/kalshi-cftc-wetten-donald-trump-rede-usa",
+   "at": "2026-11-18T04:48:46+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Bundesverfassungsgericht zu BSW-Beschwerde, Alexander Zverev wird verklagt, GTA 6 und Zeitzonen",
+   "desc": "Das Verfassungsgericht entscheidet über die Neuauszählung der Bundestagswahl. Alexander Zverev soll nichts Falsches sagen. Und Kiribati ist uns weit voraus. Das ist die Lage am Mittwochmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-bundesverfassungsgericht-zu-bsw-beschwerde-alexander-zverev-wird-verklagt-gta-6-und-zeitzonen-a-b16b71f4-1d22-4f8a-a9f7-4a1a879a77c6",
+   "at": "2026-11-18T04:38:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Hybride Angriffe: Erst fürchteten sie das Internet. Dann machten sie es zur Waffe",
+   "desc": "Der Iran soll für Cyberangriffe auf Supermärkte in Europa verantwortlich sein. Wie die digitale Macht des Regimes entstand – und was sie für seine Gegner bedeutet.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/hybride-angriffe-iran-logistik-infrastruktur-europa",
+   "at": "2026-11-18T04:34:56+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "\"Heimatreport\": Viel Zufriedenheit, aber auch Sorge wegen der Zukunft",
+   "desc": "Der erste \"Heimatreport\" des Bundeslandwirtschaftsministeriums zeigt: Viele Deutsche sind zufrieden und fühlen sich mit Wohnort und Region verbunden. Sorgen gibt es, dass sich die Lebensbedingungen verschlechtern. Von Eva Huber.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/stimmungslage-deutschland-heimatreport-100.html",
+   "at": "2026-11-18T04:31:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Apec-Gipfel in Shenzhen: Xi Jinping warnt vor Handelsschranken",
+   "desc": "Chinas Staatschef ruft vor seinem Treffen mit US-Präsident Donald Trump zu einem Ausbau des Freihandels auf. Er wolle den riesigen chinesischen Markt weiter öffnen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-xi-jinping-freihandel-china",
+   "at": "2026-11-18T04:00:44+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Senatswahl in Alaska: Demokratin nimmt Republikanern Senatssitz in Alaska ab",
+   "desc": "Die US-Demokraten haben sich eine Mehrheit von 56 zu 44 Sitzen im Senat gesichert. Mehrere US-Medien erklärten die Indigene Mary Peltola in Alaska zur Siegerin.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/senatswahl-alaska-mary-peltola-dan-sullivan-demokraten",
+   "at": "2026-11-18T03:59:40+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Pistorius bezeichnet Kritik der USA an Ukraine als »ziemlich dumm«",
+   "desc": "Der Verteidigungsminister hat die US-Kritik an ukrainischen Angriffen auf Russland zurückgewiesen. Frankreich bestätigt Ausbildungseinsatz in der Ukraine. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-17T20:53:16+00:00"
+   "at": "2026-11-18T03:56:20+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Koalitionsausschuss: Spitzen von CDU, CSU, SPD beraten über Stromsteuer, Rente, Spritpreisbremse",
+   "desc": "Gegen 2 Uhr nachts verließen Merz, Klingbeil, Söder und anderen Koalitionäre das Kanzleramt. Dort hatten sie vor allem nach einer Lösung im Streit über die Stromsteuer gesucht. Ob sie erfolgreich waren, ist noch nicht bekannt.",
+   "url": "https://www.spiegel.de/politik/deutschland/koalitionsausschuss-spitzen-von-cdu-csu-spd-beraten-ueber-stromsteuer-rente-spritpreisbremse-a-fee3177e-e386-42fd-98d7-37b8b344904b",
+   "at": "2026-11-18T03:40:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Wettmärkte: US-Aufsicht stoppt Wetten auf Trumps Aussagen bei Kalshi",
+   "desc": "Beim Onlinewettanbieter Kalshi dürfen Nutzer nicht mehr Geld darauf setzen, was der US-Präsident sagt. Die US-Handelsaufsicht prüft Manipulationsrisiken.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/kalshi-cftc-donald-trump-wetten-gabriel-perez",
+   "at": "2026-11-18T02:33:50+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
+   "desc": "Die Spitzen von CDU, CSU und SPD haben ihre Beratungen im Kanzleramt am frühen Mittwochmorgen beendet - ohne eine Einigung zur Stromsteuersenkung zu verkünden. Die Details sollen am frühen Morgen bekanntgegeben werden.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
+   "at": "2026-11-18T02:12:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Koalitionsausschuss: Koalition beendet Stromsteuergespräche tief in der Nacht",
+   "desc": "Nach mehr als acht Stunden haben die Spitzenpolitiker von Union und SPD ihre Verhandlungen im Koalitionsausschuss beendet. Ergebnisse wollen sie erst später mitteilen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalitionsausschuss-cdu-csu-spd-stromsteuer-friedrich-merz-lars-klingbeil-markus-soeder",
+   "at": "2026-11-18T02:08:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Parlamentspräsident in Israel: Knesset wählt Eisenkot-Verbündeten zum Parlamentspräsidenten",
+   "desc": "Das israelische Parlament hat Matan Kahana zu seinem neuen Präsidenten gewählt. Auf ihn hatten sich die Gegner von Ministerpräsident Benjamin Netanjahu geeinigt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/matan-kahana-parlamentspraesident-knesset-israel-benjamin-netanjahu",
+   "at": "2026-11-18T00:47:29+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Wahl zum SPD-Chef: Heil will auch ohne Unterstützung der Parteispitze kandidieren",
+   "desc": "Der frühere Bundesarbeitsminister ist bereit, auch gegen den Willen des Vorstands für den SPD-Parteivorsitz zu kandidieren. Dies sei »innerparteiliche Demokratie«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/hubertus-heil-spd-vorsitz-lars-klingbeil-manuela-schwesig",
+   "at": "2026-11-18T00:32:49+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Abschiebungen nach Ruanda: Ruanda-Abschiebeplan lässt Ausreisepflichtige aus dem Land außer Acht",
+   "desc": "Bundesinnenminister Dobrindt will 20 abgelehnte Asylsuchende nach Ruanda abschieben, die von anderswo stammen. Aus Ruanda gibt es laut Bamf 367 Ausreisepflichtige.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/abschiebezentrum-ruanda-asyl-alexander-dobrindt",
+   "at": "2026-11-18T00:02:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Slowakei: Zehntausende protestieren in der Slowakei gegen Fico-Regierung",
+   "desc": "Zum Jahrestag der Samtenen Revolution haben in Bratislava rund 25.000 Menschen demonstriert. Sie kritisierten die Russlandverbindungen von Ministerpräsident Fico.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-slowakei-bratislava-robert-fico-ukraine-russland",
+   "at": "2026-11-17T22:32:37+00:00"
   },
   {
    "source": "Die Zeit",
@@ -46,17 +158,10 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Französische Präsidentschaftswahl: Marine Le Pen will Erhöhung des Rentenalters verhindern",
-   "desc": "Die Erhöhung des Rentenalters in Frankreich auf 64 wurde im vergangenen Jahr ausgesetzt. Präsidentschaftskandidatin Le Pen will die Reform komplett rückgängig machen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/marine-le-pen-rente-rentenalter-frankreich",
-   "at": "2026-11-17T17:49:05+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Jensen Huang: Zurückgetretener Nvidia-Chef Huang soll vor US-Kongress aussagen",
-   "desc": "Ob Jensen Huang die nationale Sicherheit gefährdet hat, soll eine Befragung im US-Kongress klären. Der ehemalige Nvidia-Chef würde gern an die Konzernspitze zurückkehren.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/jensen-huang-nvidia-spionage-china-us-kongress",
-   "at": "2026-11-17T17:23:54+00:00"
+   "title": "Brücke zur Krim: Angriff auf Putins Prestigeobjekt",
+   "desc": "Der Ukraine gelingt ein Schlag gegen die Brücke zur Krim. Das geht weit über die symbolische Ebene hinaus – und verschärft die Versorgungskrise auf der Halbinsel.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/bruecke-krim-strasse-von-kertsch-logistik-russland",
+   "at": "2026-11-17T18:02:16+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -80,20 +185,6 @@
    "at": "2026-11-17T16:52:59+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Steuervereinfachungsgesetz: Bundesfinanzministerium will Steuerregeln vereinfachen",
-   "desc": "Das Finanzministerium plant eine Reihe von Änderungen bei den Steuern. Kleinere Abfindungen sollen steuerfrei werden, die Steuererklärung soll nur noch digital erfolgen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/steuervereinfachung-werbungskosten-arbeitszeitpauschale-arbeitnehmerpauschbetrag-lars-klingbeil",
-   "at": "2026-11-17T16:47:41+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Schwarz-rote Koalition: Linnemann wirbt vor Koalitionsausschuss für Geschlossenheit",
-   "desc": "Der Koalitionsausschuss ringt um Wege, die Stromsteuer für alle zu senken. Im Fokus müsse der Wille stehen, das Leben der Menschen zu verbessern, mahnt Carsten Linnemann.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/koalition-cdu-csu-spd-carsten-linnemann-stromsteuer",
-   "at": "2026-11-17T16:35:11+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Baden-Württemberg: Boris Palmer gibt Posten als Bürokratieberater auf",
    "desc": "Wegen der gegen ihn erhobenen Belästigungsvorwürfe wird Boris Palmer seinen Job als Berater der baden-württembergischen Landesregierung nicht wieder aufnehmen. Die Situation belaste ihn »erheblich«.",
@@ -101,25 +192,11 @@
    "at": "2026-11-17T16:28:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Linkenfraktion in Berlin: Berliner Linkenspitze beantragt Ausschluss von Vanessa Emde",
-   "desc": "Wie angekündigt hat der Linken-Fraktionsvorstand in Berlin den Ausschluss der umstrittenen Abgeordneten Vanessa Emde beantragt. Abgestimmt wird wohl in einer Woche.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-berlin-abgeordnete-ausschluss",
-   "at": "2026-11-17T16:23:08+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Vanessa Emde: Berliner Linke stellt Antrag auf Ausschluss aus Fraktion",
    "desc": "Nun ist es offiziell: Die Linke in Berlin beantragt den Ausschluss der israelkritischen Abgeordneten Vanessa Emde aus der Fraktion. Damit könnte es in einer Woche zu einer Entscheidung kommen.",
    "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-berliner-linke-stellt-antrag-auf-ausschluss-aus-fraktion-a-40af4329-48da-41c7-bd30-0e461b4a6649",
    "at": "2026-11-17T16:20:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Deutsche Bank : Epstein, Trump und die Geschäfte der Deutschen Bank",
-   "desc": "Ein Datenleck enthüllt interne Dokumente der Deutschen Bank. Was zeigen sie über die Geschäftsbeziehungen zu Epstein und Trump? Und: Triumph für die Nationalmannschaft.",
-   "url": "https://www.zeit.de/politik/2026-11/deutsche-bank-jeffrey-epstein-donald-trump-nachrichtenpodcast",
-   "at": "2026-11-17T16:14:03+00:00"
   },
   {
    "source": "Tagesschau",
@@ -141,48 +218,6 @@
    "desc": "In einem Video bezeichnete die Linke Elif Eralp die Polizei einst als »massives Sicherheitsrisiko«, man müsse sie »einstampfen«. Die ebenfalls von ihr kritisierte Gewerkschaft GdP reagiert.",
    "url": "https://www.spiegel.de/politik/deutschland/elif-eralp-polizeigewerkschaft-gdp-wirft-ihr-blanken-polizeihass-vor-a-5296761c-f586-47cc-8a34-7e555d7bf8d8",
    "at": "2026-11-17T15:39:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Israel: Großbritannien sanktioniert israelische Firmen wegen Siedlungsbaus",
-   "desc": "Die britische Regierung verhängt Sanktionen gegen Firmen, die am Siedlungsbau im Westjordanland mitwirken. Sie wirft ihnen vor, »unumkehrbare Spaltungen« zu schaffen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/grossbritannien-sanktionen-israel-siedlungen-westjordanland-ed-miliband",
-   "at": "2026-11-17T15:34:46+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundestagswahl: Entscheidung über BSW-Einspruch gegen Ergebnis der Bundestagswahl naht",
-   "desc": "Das Bundesverfassungsgericht verkündet seinen Beschluss über die Beschwerde des BSW gegen das Bundestagswahlergebnis. Die Entscheidung könnte weitreichende Folgen haben.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/wahlpruefungsbeschwerde-bsw-bundesverfassungsgericht-bundestagswahl-2025",
-   "at": "2026-11-17T15:13:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sachsen: Sachsens Justizministerin regt Gebühren auf Sozialgerichtsklagen an",
-   "desc": "Die Sozialgerichte in Sachsen erreichen wegen KI mehr als doppelt so viele Eilanträge wie im Vorjahr, sagt Justizministerin Geiert. Sie erwägt eine Gebühr auf Klagen.",
-   "url": "https://www.zeit.de/politik/2026-11/justiz-sachsen-constanze-geiert-cdu-sozialgerichte-klagen-gebuehr-ki",
-   "at": "2026-11-17T15:01:36+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Boris Palmer: Boris Palmer gibt Posten als Berater der Landesregierung ab",
-   "desc": "Palmer ließ sein Berateramt in Baden-Württembergs Regierung Anfang November wegen privater Vorwürfe ruhen. Jetzt gibt der ehemalige Grünenpolitiker das Amt komplett ab.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/boris-palmer-ehrenamt-ruecktritt-cem-oezdemir-baden-wuerttemberg",
-   "at": "2026-11-17T14:46:31+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Deutsche Bank: Trump reagiert auf Berichte über Deutsche-Bank-Leak seiner Kontodaten",
-   "desc": "Vom Datenleck der Deutschen Bank sind auch Dokumente von Donald Trump betroffen. Der US‑Präsident kritisierte die Bank und beteuerte, viele Steuern gezahlt zu haben.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/deutsche-bank-donald-trump-steuerunterlagen-konten-russland",
-   "at": "2026-11-17T14:38:02+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg im Sudan: Mehr als 1.600 Zivilisten bei Drohnenangriffen im Sudan getötet",
-   "desc": "Die UN haben 2026 im Sudan insgesamt mehr als 2.230 zivile Tote dokumentiert, viele wurden von Drohnen getroffen. Die tatsächliche Zahl dürfte noch deutlich höher liegen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/sudan-krieg-drohnenangriffe-zivilisten-un",
-   "at": "2026-11-17T14:34:00+00:00"
   },
   {
    "source": "Tagesschau",
@@ -246,20 +281,6 @@
    "desc": "Die nordrhein-westfälische SPD hat ihre Wahlleute für die Bundesversammlung nominiert: Mit dabei sind Sänger Mickie Krause und der »Hundeflüsterer« Martin Rütter, aber auch eine bekannte Juristin.",
    "url": "https://www.spiegel.de/politik/deutschland/bundespraesidentenwahl-2027-spd-schickt-saenger-mickie-krause-zur-abstimmung-a-ee33a4f3-d944-4ba4-a1da-528f2d4c469d",
    "at": "2026-11-17T07:12:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz: Marcel Fratzscher kritisiert Plan, die Stromsteuer noch zu senken",
-   "desc": "Union und SPD konnten sich nicht auf eine Senkung der Stromsteuer einigen. Der Kanzler drängt weiter darauf. DIW-Chef Marcel Fratzscher hält das für einen Fehler.",
-   "url": "https://www.spiegel.de/politik/deutschland/marcel-fratzscher-kritisiert-friedrich-merz-fuer-plan-die-stromsteuer-noch-zu-senken-a-446a0dce-88c1-41fc-a0a7-177eae446dd3",
-   "at": "2026-11-17T05:01:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Koalitionsausschuss und Stromsteuer, Opfer und Kosten des Klimawandels, SPIEGEL Buchpreis 2026 an Tony Tulathimutte",
-   "desc": "Die Senkung der Stromsteuer würde Merz entlasten. Der Klimawandel hat jetzt schon Hunderttausende das Leben gekostet. Und der SPIEGEL hat seinen diesjährigen Buchpreis verliehen. Das ist die Lage am Dienstagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-koalitionsausschuss-und-stromsteuer-opfer-und-kosten-des-klimawandels-spiegel-buchpreis-2026-an-tony-tulathimutte-a-3178b21e-b95a-4538-bf34-bfe0c3e5c8e6",
-   "at": "2026-11-17T05:01:00+00:00"
   }
  ]
 }

@@ -1,13 +1,419 @@
 {
  "code": "US",
- "asOf": "2026-11-17T21:17:34+00:00",
+ "asOf": "2026-11-18T05:17:35+00:00",
  "items": [
   {
    "source": "New York Times",
+   "title": "Trump Administration Presses Ahead in Legal Battle Over U.S. Attorneys",
+   "desc": "A judge has ruled that Bill Essayli was acting “unlawfully” as U.S. attorney in Los Angeles. He is one of three prosecutors appointed by the Trump administration through a unique process.",
+   "url": "https://www.nytimes.com/2026/11/18/us/trump-administration-presses-ahead-in-legal-battle-over-us-attorneys.html",
+   "at": "2026-11-18T05:14:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After Days of Digital Outages, Americans Wonder if the Country Is Breaking",
+   "desc": "The digital outages that began on Thursday may not be linked, but they have left Americans with a sense that the nation is off-kilter, with no one ready to fix it.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/outages-flights-banks-tech.html",
+   "at": "2026-11-18T04:59:05+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "'Who and what comes next': Analysts expect Nvidia investor uncertainty despite earnings beat",
+   "desc": "Nvidia’s Q3 results should help ease short-term concerns, but uncertainty remains around long-term leadership.",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-earnings-market-analysis.html",
+   "at": "2026-11-18T04:40:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
+   "desc": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country.",
+   "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+   "at": "2026-11-18T04:27:45+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Claim 56 Senate Seats After Mary Peltola Wins in Alaska",
+   "desc": "Ms. Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
+   "at": "2026-11-18T04:18:13+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Democrat Mary Peltola wins Alaska Senate election",
+   "desc": "Peltola's defeat of incumbent Republican Dan Sullivan gives Democrats a solid majority of 56 seats in the Senate as of January.",
+   "url": "https://www.cnbc.com/2026/11/18/alaska-senate-mary-peltola-wins-election.html",
+   "at": "2026-11-18T04:18:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Democrats have flipped 46 House seats. Here's the breakdown.",
+   "desc": "Democrats won control of the House by flipping more than 40 Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
+   "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
+   "at": "2026-11-18T04:17:38+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "For Democrats, a Leadership Fight Is Marring an Electoral Triumph",
+   "desc": "The contest between Senators Chuck Schumer and Chris Van Hollen to be majority leader is sowing party divisions and putting them on public display.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/democrats-leadership-battle-schumer-van-hollen.html",
+   "at": "2026-11-18T04:11:30+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Mary Peltola wins Alaska Senate race, flipping seat for Dems",
+   "desc": "Peltola, 53, became the first Democrat to represent Alaska in the House in 50 years in 2022.",
+   "url": "https://www.cbsnews.com/news/alaska-2026-senate-sullivan-peltola/",
+   "at": "2026-11-18T03:47:12+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Assail RFK Jr. After U.S. Loses Measles Elimination Status",
+   "desc": "Incoming senators and prospective presidential candidates blamed the health secretary’s history of vaccine skepticism for the rise of measles in the country.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/rfk-jr-measles-democrats.html",
+   "at": "2026-11-18T03:33:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
+   "desc": "Xi opened the APEC summit in Shenzhen by calling for lower trade and investment barriers, pledging broader access to China’s market and manufacturing sector.",
+   "url": "https://www.cnbc.com/2026/11/18/china-xi-trade-investment-barriers.html",
+   "at": "2026-11-18T03:30:51+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Mary Peltola flips Alaska's Senate seat into Democrats' column",
+   "desc": "Former Democratic Rep. Mary Peltola has narrowly won Alaska's U.S. Senate race, toppling the Republican incumbent, according to a race call by The Associated Press.",
+   "url": "https://www.npr.org/2026/11/17/g-s1-151567/alaska-senate-results-peltola-sullivan",
+   "at": "2026-11-18T03:27:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "White House Withdraws Nomination of Heidi Overton to Be F.D.A. Commissioner",
+   "desc": "The Senate health committee was scheduled to vote on her nomination Wednesday morning after wrestling with concerns about her stance on abortion and vaccines.",
+   "url": "https://www.nytimes.com/2026/11/17/us/overton-fda-nomination-withdrawn.html",
+   "at": "2026-11-18T03:26:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Three things to watch as Trump, Xi and Putin meet in China",
+   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are set to meet in Shenzhen alongside an APEC leaders' meeting.",
+   "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
+   "at": "2026-11-18T03:25:32+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
+   "desc": "JPMorgan and Hyundai Card are looking to expand the use of AI agents in financial transactions.",
+   "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+   "at": "2026-11-18T03:17:55+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Zelenskyy says Starshield speed curbs still in place over 'occupied territories' of Ukraine",
+   "desc": "Ukraine's charge d'affaires to the U.S., Denys Sienik, said that Starshield had been speed-limited for seven days already in Ukraine.",
+   "url": "https://www.cnbc.com/2026/11/18/ukraine-starshield-starlink-musk-spacex.html",
+   "at": "2026-11-18T02:50:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Rubio says there's \"zero evidence\" recent tech outages are related",
+   "desc": "Secretary of State Marco Rubio acknowledged that people are fearful and uncertain, saying he wanted to be clear that the United States is not under systemic attack.",
+   "url": "https://www.cbsnews.com/news/marco-rubio-tech-outages-not-connected/",
+   "at": "2026-11-18T02:43:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A.I. Mistook a Bag of Chips for a Gun, Teenagers’ Lawsuit Says",
+   "desc": "Four students of a high school in Baltimore are suing after the police handcuffed and searched them because an artificial intelligence gun-detection system wrongly alerted a bag of Doritos.",
+   "url": "https://www.nytimes.com/2026/11/17/us/baltimore-school-chips-gun-alert.html",
+   "at": "2026-11-18T02:37:34+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Airline schedules returning to normal after ground stop, FAA says",
+   "desc": "Officials attributed the ground stop to aging system infrastructure and legacy technology.",
+   "url": "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+   "at": "2026-11-18T02:35:35+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "8-year-old detained by ICE in San Diego released from custody",
+   "desc": "The Department of Homeland Security previously confirmed that ICE agents placed the child in federal care after he attended a check-in appointment with a man the agency said claimed to be the boy's uncle.",
+   "url": "https://www.cbsnews.com/news/8-year-old-detained-ice-released-custody/",
+   "at": "2026-11-18T02:10:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "LeBron James sues startup over viral AI ad allegedly exploiting his likeness",
+   "desc": "LeBron James sued an AI-powered sports betting startup over alleged unauthorized use of his likeness.",
+   "url": "https://www.cnbc.com/2026/11/18/lebron-james-startup-ai-lawsuit.html",
+   "at": "2026-11-18T02:02:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump FDA nominee Heidi Overton struggling to win GOP support",
+   "desc": "Heidi Overton, Trump's pick to be FDA commissioner, is having trouble finding enough Republican support to advance her nomination, which could be pulled if she falls short.",
+   "url": "https://www.cbsnews.com/news/trump-fda-nominee-heidi-overton-confirmation-struggle/",
+   "at": "2026-11-18T01:50:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "OpenAI bugging case defendant Alfozan set for trial in January",
+   "desc": "Abdulrahman Alfozan has been held without bail since his arrest in October, after prosecutors said he planted a listening device in an OpenAI conference room.",
+   "url": "https://www.cnbc.com/2026/11/17/openai-spy-alfozan-trial-saudi.html",
+   "at": "2026-11-18T01:31:37+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "F.A.A. Shelves Routers Like the One Linked to the Nationwide Ground Stop",
+   "desc": "Federal officials said they believed that a router made by Juniper Networks caused a data overload that disrupted communications.",
+   "url": "https://www.nytimes.com/2026/11/17/us/faa-routers-ground-stop.html",
+   "at": "2026-11-18T01:27:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia takes positive step forward with stronger sales outlook. Here’s our thoughts on the stock",
+   "desc": "",
+   "url": "https://www.cnbc.com/investingclub/2026/11/17/nvidia-takes-positive-step-forward-with-stronger-sales-outlook-heres-our-thoughts-on-the-stock.html",
+   "at": "2026-11-18T01:18:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Strangers team up to drive from Chicago to Nashville during last week's ground stop",
+   "desc": "On Friday, over 1 million passengers were stranded at airports, but one group of strangers teamed up to make a break for it. They drove eight hours from Chicago's Midway Airport to Nashville. Matt Gutman has the story.",
+   "url": "https://www.cbsnews.com/video/strangers-team-up-drive-chicago-nashville-last-weeks-ground-stop/",
+   "at": "2026-11-18T00:43:07+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Terrifying close call between students and pickup truck at bus stop caught on camera",
+   "desc": "A Virginia mom said she is still losing sleep over a close call between two of her children and a speeding pickup truck. It happened when her kids were crossing the road to board a school bus last week. Skyler Henry has more.",
+   "url": "https://www.cbsnews.com/video/terrifying-close-call-between-students-pickup-truck-bus-stop-caught-camera/",
+   "at": "2026-11-18T00:38:21+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Japan exports in October surge 20.5%, beating estimates on robust chip shipments",
+   "desc": "Semiconductor shipments spiked almost 50% year on year.",
+   "url": "https://www.cnbc.com/2026/11/18/japan-exports-october-imports-chips.html",
+   "at": "2026-11-18T00:35:31+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "911 call released in ESPN analyst Rex Ryan's alleged hit-and-run",
+   "desc": "911 audio obtained by the New York Post details a Nashville attorney's call describing the moment he and his wife were allegedly hit by former NFL coach Rex Ryan's pickup truck. Tom Hanson reports.",
+   "url": "https://www.cbsnews.com/video/911-call-released-espn-analyst-rex-ryans-alleged-hit-run/",
+   "at": "2026-11-18T00:30:50+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Waymo Pulls Its Driverless Taxis From All U.S. Freeways Temporarily",
+   "desc": "The move came after California’s Department of Motor Vehicles ordered the cars off the state’s freeways, citing an “imminent hazard to public safety.”",
+   "url": "https://www.nytimes.com/2026/11/17/us/waymo-ban-california-freeway.html",
+   "at": "2026-11-18T00:29:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Mountain of trash explodes in Los Angeles County: \"Absolutely our worst nightmare\"",
+   "desc": "What looked like a volcanic eruption in Los Angeles County was actually a high-pressure explosion from a mountain of trash. Carter Evans has the latest updates.",
+   "url": "https://www.cbsnews.com/video/mountain-trash-explodes-los-angeles-county-worst-nightmare/",
+   "at": "2026-11-18T00:28:27+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia sees strong growth in first earnings report without Huang",
+   "desc": "Nvidia's latest earnings are the first time the chipmaker has reported financial results without founder and former CEO Jensen Huang at the helm.",
+   "url": "https://www.cbsnews.com/news/nvidia-earnings-jensen-huang-colette-kress/",
+   "at": "2026-11-18T00:25:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Third grader detained by ICE returned to family",
+   "desc": "An eight-year-old born in Haiti was detained by ICE agents last week and was sent to a Texas facility. On Monday, he was reunited with his family back in San Diego.",
+   "url": "https://www.cbsnews.com/video/third-grader-detained-ice-returned-family/",
+   "at": "2026-11-18T00:24:09+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump says \"we're looking into\" report that Iran may use dirty bomb on D.C.",
+   "desc": "President Trump responded to a CNN report about possible plans by Iran for a devastating attack in Washington, D.C. Weijia Jiang reports from the Philippines, the president's first stop on his historic Asia trip.",
+   "url": "https://www.cbsnews.com/video/trump-says-were-looking-report-iran-may-use-dirty-bomb-dc/",
+   "at": "2026-11-18T00:23:31+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "NSA's classified internal network goes down, sources say",
+   "desc": "Two U.S. officials tell CBS News that so far there is no evidence of a cyberattack.",
+   "url": "https://www.cbsnews.com/news/nsa-network-down-classified-fort-meade/",
+   "at": "2026-11-18T00:22:51+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia earnings report beats expectations, raising predictions for next year",
+   "desc": "Nvidia, the company whose chips power much of the AI revolution, released its first earnings report since CEO Jensen Huang resigned last week over his extramarital affairs, including one with a suspected Chinese spy. Huang offered to return to the company on Tuesday, but the board dismissed that idea. Kelly O'Grady has more.",
+   "url": "https://www.cbsnews.com/video/nvidia-earnings-report-beats-expectations-raising-predictions-for-next-year/",
+   "at": "2026-11-18T00:20:21+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Duffy says \"I can't guarantee\" that the FAA telecom network will work indefinitely",
+   "desc": "The Federal Aviation Administration has halted the system upgrade linked to Friday's national ground stop, but officials are not willing to promise that the problems are behind us. Kris Van Cleave reports.",
+   "url": "https://www.cbsnews.com/video/duffy-says-cant-guarantee-faa-telecom-network-work-indefinitely/",
+   "at": "2026-11-18T00:17:39+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Tech outage at U.S. spy agency hampered its ability to communicate internally",
+   "desc": "The U.S. has experienced eight major outages in one week, including Tuesday's outages at Apple, Google and the National Security Agency. Both government and corporate officials say there is no evidence of a cyberattack, despite concerns. Jo Ling Kent has more.",
+   "url": "https://www.cbsnews.com/video/tech-outage-us-spy-agency-hampered-ability-communicate-internally/",
+   "at": "2026-11-18T00:16:55+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Outcome of Alaska Senate race could take weeks to determine",
+   "desc": "The Senate race in Alaska, which has garnered widespread attention with two candidates named Dan Sullivan, remains in limbo.",
+   "url": "https://www.cbsnews.com/news/senate-race-unresolved-in-alaska-as-candidates-expect-weekslong-process/",
+   "at": "2026-11-18T00:08:46+00:00"
+  },
+  {
+   "source": "New York Times",
    "title": "A.I. Helps Find Major Security Bug in Java, a Software Platform Vital to the Internet",
-   "desc": "The discovery by security company Calif shows A.I.’s ability to find gaping security holes in popular software. The Java flaw could affect systems used by nearly all Fortune 500 companies.",
+   "desc": "The discovery by security company Calif shows A.I.’s ability to find gaping security holes in popular software. The Java flaw pointed to vulnerabilities in systems used by nearly all Fortune 500 companies.",
    "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html",
-   "at": "2026-11-17T21:14:59+00:00"
+   "at": "2026-11-18T00:06:20+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Republicans Recoil as Duffy Outlines $50 Billion Request for Air Traffic Improvements",
+   "desc": "The one-page explanation, which he discussed with Republican senators, was thin on details and included many items outside air traffic control.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/duffy-hill-ground-stop-faa.html",
+   "at": "2026-11-18T00:03:19+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop",
+   "desc": "“We still gotta live our lives,” said the homeland security secretary, who is required to use government planes for personal travel. His department said he paid.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/mullin-lsu-football-plane.html",
+   "at": "2026-11-17T23:38:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/17: CBS Evening News",
+   "desc": "At least eight major technology outages hit the U.S. in the last week; the FAA paused the installation of new routers after the ground stop.",
+   "url": "https://www.cbsnews.com/video/111726-cbs-evening-news/",
+   "at": "2026-11-17T23:30:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Hakeem Jeffries Embraces Medicare Expansion on Eve of Speaker Vote",
+   "desc": "The top House Democrat endorsed lowering the eligibility age, covering all children and adding vision, hearing and dental services, proposals seen as precursors to Medicare for All.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/jeffries-medicare-expansion.html",
+   "at": "2026-11-17T23:25:32+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Iran Is Emboldened After Trump and GOP’s Election Losses, Officials Say",
+   "desc": "Iran’s negotiating position has hardened since the midterms, U.S. and other Western officials say. An American lawmaker warned that Iran felt “strategically empowered.”",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/iran-trump-midterms.html",
+   "at": "2026-11-17T23:11:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Apple restores services after internal update caused outages",
+   "desc": "The company's system status shows that all Apple services, including iCloud sign-in, have been restored after experiencing issues earlier Tuesday.",
+   "url": "https://www.cbsnews.com/news/apple-outage-icloud-apple-pay-services/",
+   "at": "2026-11-17T22:59:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Man with ax destroys $60M U.S. military plane, prosecutors say",
+   "desc": "Daithi O'Corrain, 48, is charged in the U.S. with destruction of U.S. government property in connection with the April incident at Shannon Airport.",
+   "url": "https://www.cbsnews.com/news/us-military-plane-irish-airport/",
+   "at": "2026-11-17T22:54:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Jensen Huang says he \"would be honored\" to return as Nvidia CEO",
+   "desc": "Huang addressed a petition, signed by 190,000 people, including thousands of Nvidia employees, calling for his reinstatement.",
+   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-return-statement/",
+   "at": "2026-11-17T22:48:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Administration Says It Will Not Use Ships to Deport Migrants",
+   "desc": "The Homeland Security Department told Congress of the decision after The New York Times reported last month that it was considering deportations by sea.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/boat-deport-golden-bear.html",
+   "at": "2026-11-17T22:40:32+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nike lays out financial goals ahead of first investor day in 9 years",
+   "desc": "Nike is hosting an investor day at its Oregon headquarters as the company tries to prove to investors that its turnaround is working.",
+   "url": "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
+   "at": "2026-11-17T22:17:44+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Anthropic's IPO set for blastoff this week in key test for AI boom",
+   "desc": "Anthropic's stock is poised to start trading on Nasdaq Thursday in one of the largest IPOs of all time. The AI world is watching.",
+   "url": "https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/",
+   "at": "2026-11-17T22:10:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Classified N.S.A. Network Goes Down, Causing Work Disruptions",
+   "desc": "There are currently no signs that the outage is the result of a cyberattack or other nefarious activity, according to people familiar with the matter.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/nsa-down-network-outage-nsanet.html",
+   "at": "2026-11-17T22:08:36+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
+   "desc": "Major outages showcase the risks of interconnected tech in the age of AI.",
+   "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
+   "at": "2026-11-17T22:03:57+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
+   "desc": "The director of PAHO made the final call that measles is endemic — or always present — in the U.S. following 12 months of continuous transmission.",
+   "url": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
+   "at": "2026-11-17T22:02:05+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/17: The Takeout with Major Garrett",
+   "desc": "More tech issues hit the U.S. after a week of disruptions; Trump gets ready to meet with Xi and Putin.",
+   "url": "https://www.cbsnews.com/video/111726-the-takeout-with-major-garrett/",
+   "at": "2026-11-17T22:00:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Duffy pitches Senate GOP on $50 billion for FAA after ground stop",
+   "desc": "Senate Republicans appeared skeptical after Transportation Secretary Sean Duffy made the case for tens of billions of more dollars for the Federal Aviation Administration.",
+   "url": "https://www.cbsnews.com/news/sean-duffy-senate-republicans-faa-ground-stop/",
+   "at": "2026-11-17T21:50:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "His Body Was Crushed in a Car Accident. His Artistry Brought Him Back.",
+   "desc": "Paul Madonna, known for his drawings of San Francisco landmarks, has recovered enough to have his own art exhibition four years after nearly dying in a head-on collision.",
+   "url": "https://www.nytimes.com/2026/11/17/us/san-francisco-artist-paul-madonna-show.html",
+   "at": "2026-11-17T21:31:26+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. officially loses measles elimination status: \"What a tragedy\"",
+   "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
+   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+   "at": "2026-11-17T21:24:45+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Professional misconduct complaints against DOJ officials are rising",
+   "desc": "The number of professional misconduct complaints filed against Justice Department officials has increased by more than 50% over a two-year period, according to the department's inspector general.",
+   "url": "https://www.cbsnews.com/news/professional-misconduct-complaints-justice-department-officials/",
+   "at": "2026-11-17T21:19:34+00:00"
   },
   {
    "source": "New York Times",
@@ -17,13 +423,6 @@
    "at": "2026-11-17T21:11:19+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Family Seeks Hate Crime Charge in Near-Fatal Attack on Somali Uber Driver",
-   "desc": "Mohamed Yusuf, a married father of five, was assaulted by a passenger early Saturday morning outside Minneapolis, according to police and his family.",
-   "url": "https://www.nytimes.com/2026/11/16/us/somali-uber-driver-assault-minnesota.html",
-   "at": "2026-11-17T21:07:45+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Nvidia closes lower ahead of earnings as company reels from Huang resignation",
    "desc": "Investors have been weighing the fallout from former CEO Jensen Huang's resignation.",
@@ -31,25 +430,11 @@
    "at": "2026-11-17T21:05:24+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Apple says internal update caused outage as services recover",
-   "desc": "The company's system status shows that some Apple services, including iCloud sign-in, are still experiencing issues.",
-   "url": "https://www.cbsnews.com/news/apple-outage-icloud-apple-pay-services/",
-   "at": "2026-11-17T21:00:57+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "FAA pauses installation of new routers after ground stop",
    "desc": "Problems with the overwhelmed technology led the agency to issue a rare nationwide ground stop on Friday.",
    "url": "https://www.cnbc.com/2026/11/17/faa-ground-stop-routers.html",
    "at": "2026-11-17T20:53:24+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Widespread outages hit banks, air travel, the NSA and Apple, disrupting seemingly everything",
-   "desc": "Major outages showcase the risks of interconnected tech in the age of AI.",
-   "url": "https://www.cnbc.com/2026/11/17/apple-microsoft-faa-jpmorgan-outages.html",
-   "at": "2026-11-17T20:52:58+00:00"
   },
   {
    "source": "New York Times",
@@ -94,32 +479,11 @@
    "at": "2026-11-17T20:23:15+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Anthropic's IPO set for blastoff this week in key test for AI boom",
-   "desc": "Anthropic's stock is poised to start trading on Nasdaq Thursday in one of the largest IPOs of all time. The AI world is watching.",
-   "url": "https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/",
-   "at": "2026-11-17T20:15:48+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Home Depot names Richard McPhail as new CEO, beats earnings expectations",
    "desc": "Home Depot named Richard McPhail as its new CEO effective next week.",
    "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html",
    "at": "2026-11-17T20:01:12+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After an Artist Nearly Died, Strangers Helped Him Learn How to Draw Again",
-   "desc": "Paul Madonna, an artist known for his drawings of San Francisco landmarks, has recovered enough to have his own art exhibition four years after a head-on car collision.",
-   "url": "https://www.nytimes.com/2026/11/17/us/san-francisco-artist-paul-madonna-show.html",
-   "at": "2026-11-17T19:56:37+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Justice Alito Warns Court Overhaul Could Threaten Judicial Independence",
-   "desc": "The conservative justice connected proposals to alter the court’s composition to what he characterized as a campaign to intimidate the court.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/supreme-court-alito.html",
-   "at": "2026-11-17T19:51:57+00:00"
   },
   {
    "source": "New York Times",
@@ -130,24 +494,10 @@
   },
   {
    "source": "CBS News",
-   "title": "NSA's classified internal network goes down, sources say",
-   "desc": "Two U.S. officials tell CBS News that so far there is no evidence of a cyberattack.",
-   "url": "https://www.cbsnews.com/news/nsa-network-down-classified-fort-meade/",
-   "at": "2026-11-17T19:40:25+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "American soldier accused of spying in U.S. custody after U.K. arrest",
    "desc": "Federal Bureau of Investigation director Kash Patel said that the soldier was \"a potential threat to national security.\"",
    "url": "https://www.cbsnews.com/news/american-soldier-spying-suspect-russia-united-kingdom-us-custody/",
    "at": "2026-11-17T19:40:06+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Cruz announces deal on stalled airline safety bill",
-   "desc": "The measure would require all planes in busy airspace to be broadcasting their location, according to GOP Sen. Ted Cruz.",
-   "url": "https://www.cbsnews.com/news/airline-safety-bill-deal-ted-cruz/",
-   "at": "2026-11-17T19:34:54+00:00"
   },
   {
    "source": "CBS News",
@@ -165,45 +515,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Classified N.S.A. Network Goes Down, Causing Work Disruptions",
-   "desc": "There are currently no signs that the outage is the result of a cyberattack or other nefarious activity, according to people familiar with the matter.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/nsa-down-network-outage-nsanet.html",
-   "at": "2026-11-17T19:25:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "7 smart reasons to sell a stock—and my ‘golden rule’ for offloading shares, says hedge fund CEO",
-   "desc": "\"You need a clear, disciplined plan for when to sell,\" says Karen Finerman. Here are seven smart reasons to sell — and when not to sell.",
-   "url": "https://www.cnbc.com/2026/11/17/when-to-sell-a-stock.html",
-   "at": "2026-11-17T19:24:46+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump has arrived in Asia. Here’s what he said about Iran and Deutsche Bank",
-   "desc": "Trump threatens Iran and responds to a tax leak report as his Asia trip begins.",
-   "url": "https://www.cnbc.com/2026/11/17/trump-iran-asia-trip-china.html",
-   "at": "2026-11-17T19:16:20+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "A Death Along Lake Superior Revives Memories of ‘the Gales of November’",
    "desc": "A 62-year-old man was found drowned in a cove this month, evoking the lake’s stormy history.",
    "url": "https://www.nytimes.com/2026/11/17/us/lake-superior-drowning-gales-of-november.html",
    "at": "2026-11-17T19:02:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia forms export control panel amid concerns over China sales",
-   "desc": "Chipmaker creates new committee amid growing concerns that it has allowed restricted products to reach China.",
-   "url": "https://www.cbsnews.com/news/nvidia-export-control-committee-china-chips/",
-   "at": "2026-11-17T18:52:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Anthropic files for IPO as it competes for AI dominance",
-   "desc": "Anthropic, which developed the Claude chatbot, is barreling ahead with its public offering despite mounting concerns about AI going rogue.",
-   "url": "https://www.cbsnews.com/news/anthropic-ipo-plans-ai-safety/",
-   "at": "2026-11-17T18:41:01+00:00"
   },
   {
    "source": "New York Times",
@@ -211,13 +526,6 @@
    "desc": "After months of delay, Defense Secretary Pete Hegseth and the White House have sent Gen. Christopher LaNeve’s nomination for Army chief of staff to the Senate.",
    "url": "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html",
    "at": "2026-11-17T18:38:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Duffy Outlines Request for $50 Billion for Air Traffic Improvements",
-   "desc": "The one-page explanation, which will be laid out for Republican members of Congress Tuesday, was thin on specifics.",
-   "url": "https://www.nytimes.com/2026/11/17/us/duffy-hill-ground-stop-faa.html",
-   "at": "2026-11-17T18:37:02+00:00"
   },
   {
    "source": "NPR",
@@ -231,14 +539,7 @@
    "title": "Measles Is Officially Back in the United States. What Now?",
    "desc": "It may take years for the country to regain elimination status. In the meantime, communities will need to adopt numerous strategies to protect people.",
    "url": "https://www.nytimes.com/2026/11/17/us/measles-us-whats-next.html",
-   "at": "2026-11-17T18:12:14+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. officially loses measles elimination status amid ongoing outbreaks",
-   "desc": "The director of PAHO made the final call that measles is endemic — or always present — in the U.S. following 12 months of continuous transmission.",
-   "url": "https://www.cnbc.com/2026/11/17/us-measles-elimination-status.html",
-   "at": "2026-11-17T18:10:16+00:00"
+   "at": "2026-11-17T18:12:15+00:00"
   },
   {
    "source": "CNBC",
@@ -255,39 +556,11 @@
    "at": "2026-11-17T17:49:45+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "U.S. identifies remains of 6 soldiers killed in Korean War, including teens",
-   "desc": "The identifications are part of an ongoing effort to locate and identify the remains of U.S. soldiers killed in the Korean War.",
-   "url": "https://www.cbsnews.com/news/korean-war-us-soldiers-remains-identified/",
-   "at": "2026-11-17T17:41:53+00:00"
-  },
-  {
    "source": "NPR",
-   "title": "Huang says he'd be \"honored\" to return to Nvidia as he agrees to testify to Congress",
-   "desc": "The former Nvidia CEO's comments come as some in Silicon Valley have tried to argue that Huang was pushed out of the company too quickly amid a swirl of national security scandals.",
+   "title": "Nvidia board says it does not intend to reinstate Jensen Huang as CEO",
+   "desc": "The former Nvidia CEO said he would be \"honored\" to return if the board allowed. But the board says it has no intention of reinstating him.",
    "url": "https://www.npr.org/2026/11/17/nx-s1-6044213/jensen-huang-nvidia-congress",
    "at": "2026-11-17T17:36:31+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "U.S. officially loses measles elimination status: \"What a tragedy\"",
-   "desc": "The United States has lost its official measles elimination status for the first time in 26 years. Here's what to know.",
-   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
-   "at": "2026-11-17T17:18:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Groups raise concerns over DOJ's new Civil Rights Division chief",
-   "desc": "Eighteen civil rights organizations asked President Trump to withdraw his appointment of Craig Trainor as the new acting head of the Justice Department's Civil Rights Division.",
-   "url": "https://www.cbsnews.com/news/craig-trainor-justice-department-civil-rights-division/",
-   "at": "2026-11-17T17:13:55+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nike lays out financial goals ahead of first investor day in 9 years",
-   "desc": "Nike is hosting an investor day at its Oregon headquarters as the company tries to prove to investors that its turnaround is working.",
-   "url": "https://www.cnbc.com/2026/11/17/nike-investor-day-elliott-hill.html",
-   "at": "2026-11-17T17:02:34+00:00"
   },
   {
    "source": "CNBC",
@@ -297,32 +570,11 @@
    "at": "2026-11-17T17:00:01+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Jensen Huang says he \"would be honored\" to return as Nvidia CEO",
-   "desc": "Huang addressed a petition, signed by 190,000 people, including thousands of Nvidia employees, calling for his reinstatement.",
-   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-ceo-return-statement/",
-   "at": "2026-11-17T16:59:55+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Disney beats fourth-quarter estimates, targets $3 billion in savings through cost-cutting efforts",
-   "desc": "Investors will be looking for more insight into CEO Josh D'Amaro's strategy following several rounds of layoffs.",
-   "url": "https://www.cnbc.com/2026/11/17/disney-dis-earnings-q-2026.html",
-   "at": "2026-11-17T16:40:25+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
    "desc": "Cook's attorney sounded more hostile than ever in his first known letter to be sent in the matter since the GOP's drubbing in the Nov. 3 midterm elections.",
    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html",
    "at": "2026-11-17T16:03:38+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Hawley, Durbin introduce Roblox safety bill ahead of hearing",
-   "desc": "The legislation would allow families of individuals harmed by tech products to take their claims to court even if they agreed to the company's terms of service for private arbitration.",
-   "url": "https://www.cbsnews.com/news/roblox-bill-josh-hawley-dick-durbin/",
-   "at": "2026-11-17T15:55:38+00:00"
   },
   {
    "source": "CNBC",
@@ -339,13 +591,6 @@
    "at": "2026-11-17T15:22:45+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Widespread service outages at major U.S. banks appear to be over",
-   "desc": "Customers at JPMorgan Chase, Bank of America and other major financial institutions reported difficulty accessing their accounts.",
-   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
-   "at": "2026-11-17T14:44:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Anthropic likely to price IPO above the current range of $70 to $78, sources tell CNBC",
    "desc": "Anthropic is slated to list on the Nasdaq under the ticker symbol \"ANT\" and start trading on Nov. 19.",
@@ -353,109 +598,11 @@
    "at": "2026-11-17T14:34:48+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Cybersecurity expert breaks down recent outages",
-   "desc": "Chris Krebs, the former director of the Cybersecurity and Infrastructure Security Agency, joins \"CBS Mornings\" to break down the recent travel and banking outages.",
-   "url": "https://www.cbsnews.com/video/cybersecurity-expert-breaks-down-recent-outages/",
-   "at": "2026-11-17T14:25:49+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Deutsche Bank shares sink as whistleblowers reveal Epstein payments, Trump tax leak, Russia bets",
-   "desc": "A 15-million-file leak details alleged control failures at Deutsche Bank, including Epstein-linked payments and a Trump tax blunder.",
-   "url": "https://www.cnbc.com/2026/11/17/deutsche-bank-leak-epstein-trump.html",
-   "at": "2026-11-17T14:24:10+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Roblox hearings on sexual abuse to begin",
-   "desc": "Sexual abuse survivors are set to testify before a Senate committee over the safety of children's gaming platforms like Roblox. Jo Ling Kent reports.",
-   "url": "https://www.cbsnews.com/video/roblox-hearings-on-sexual-abuse-to-begin/",
-   "at": "2026-11-17T14:11:22+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Jeffrey Epstein's death may not have been suicide, forensic expert says",
-   "desc": "Dr. Michael Freeman, a forensics expert who analyzed Jeffrey Epstein's death, tells the CBS News Investigative Unit that his death may have been a homicide.",
-   "url": "https://www.cbsnews.com/video/jeffrey-epsteins-death-may-not-have-been-suicide-forensic-expert-says/",
-   "at": "2026-11-17T14:06:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Missing plane with 3 on board found crashed in Grand Canyon",
-   "desc": "A small plane was found in the Grand Canyon's remote North Rim after crashing with three people on board Sunday night. No one survived.",
-   "url": "https://www.cbsnews.com/news/missing-plane-found-crashed-grand-canyon/",
-   "at": "2026-11-17T14:02:37+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Republicans outspent Democrats for first time in over a decade in record 2026 midterm election political ad blitz",
-   "desc": "Republicans slightly outspent Democrats for the first time as Democrats swept national and state elections.",
-   "url": "https://www.cnbc.com/2026/11/17/2026-election-political-ad-spending.html",
-   "at": "2026-11-17T14:00:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Lindsay Clancy judge sets date for retrial",
-   "desc": "The judge in the Lindsay Clancy case set her retrial date for March 29, 2027, after her first trial ended with a hung jury. Caroline Polisi has more.",
-   "url": "https://www.cbsnews.com/video/lindsay-clancy-judge-sets-date-for-retrial/",
-   "at": "2026-11-17T13:58:35+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Demis Hassabis’ AI company raises $5 billion, months after he left as Google DeepMind CEO",
-   "desc": "Isomorphic Labs is looking to develop new medicines using AI.",
-   "url": "https://www.cnbc.com/2026/11/17/isomorphic-labs-series-c-ai-drug-discovery-.html",
-   "at": "2026-11-17T13:58:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Video shows ICE agents pepper-spraying pregnant woman at protest",
-   "desc": "Video shows ICE agents pepper-spraying a pregnant woman and forcing her to the ground at a protest in California last week. Camilo Montoya-Galvez reports.",
-   "url": "https://www.cbsnews.com/video/video-shows-ice-agents-pepper-spraying-pregnant-woman-at-protest/",
-   "at": "2026-11-17T13:46:13+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
    "desc": "The forecast represents one of the most hawkish views among policymakers.",
    "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html",
    "at": "2026-11-17T13:40:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Banking outage rattles U.S.",
-   "desc": "Several U.S. banks reported a bug Monday that impacted customer transactions. Jo Ling Kent reports.",
-   "url": "https://www.cbsnews.com/video/banking-outage-rattles-us/",
-   "at": "2026-11-17T13:30:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Airlines rush to recover after outages",
-   "desc": "United Airlines suffered a brief outage Monday on the heels of a nationwide FAA ground stop as airlines rush to recover ahead of Thanksgiving holiday travel. Kris Van Cleave reports.",
-   "url": "https://www.cbsnews.com/video/airlines-rush-to-recover-after-outages/",
-   "at": "2026-11-17T13:24:28+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Roth 401(k) matches are 'surging,' report finds. What workers should know",
-   "desc": "More employers are adding Roth 401(k) matching options. Here’s how the tax treatment differs from a traditional 401(k) match.",
-   "url": "https://www.cnbc.com/2026/11/17/roth-401k-employer-match.html",
-   "at": "2026-11-17T13:15:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Investors look to Nvidia's earnings and Anthropic's IPO to refresh the tech rally",
-   "desc": "How the market set-up is more favorable for the Anthropic IPO than the lead-up to SpaceX's debut.",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-earnings-anthropic-ipo-tech-rally.html",
-   "at": "2026-11-17T13:11:40+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Ukraine damages Putin’s prized Crimea bridge as Zelenskyy lauds ‘unprecedented operation’",
-   "desc": "Ukraine attacked the Kerch Bridge linking Russia to occupied Crimea for a second consecutive day, delivering a symbolic blow to President Vladimir Putin.",
-   "url": "https://www.cnbc.com/2026/11/17/kerch-bridge-ukraine-russia-putin-kyiv.html",
-   "at": "2026-11-17T12:48:14+00:00"
   },
   {
    "source": "NPR",
@@ -484,153 +631,6 @@
    "desc": "Has your doctor asked whether they can use artificial intelligence to take notes during an exam? It's very popular, and here's how to think through the pros and the cons of the new technology.",
    "url": "https://www.npr.org/2026/11/17/nx-s1-6037556/medicine-ai-doctor-notetaker-scribe",
    "at": "2026-11-17T11:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump arrives in Philippines to kick off Asia trip",
-   "desc": "Manila is President Trump's first stop on a three-day trip that will later take him to China for historic three-way nuclear talks with Chinese President Xi Jinping and Russian President Vladimir Putin.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6043702/trump-arrives-philippines",
-   "at": "2026-11-17T10:43:55+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "As Trump Goes to China, A.I. Tensions Surge Amid Spying and Safety Fears",
-   "desc": "The espionage concerns that led to Jensen Huang’s ouster at Nvidia highlight a core challenge to diplomacy between Washington and Beijing on A.I. advancement.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/trump-china-ai-tensions.html",
-   "at": "2026-11-17T10:22:54+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
-   "desc": "Trump’s accounts sold up to $1 million in Nvidia stock five days after he was briefed on Jensen Huang’s relationship with a suspected Chinese spy.",
-   "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
-   "at": "2026-11-17T10:08:32+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This teen had no place to go, so a hospital became his home",
-   "desc": "A young survivor of gun violence lived on the third floor of a St. Louis children's hospital, moving through the halls in a wheelchair, on and off for over three years. He said it became his home when he had nowhere safe to go.",
-   "url": "https://www.cbsnews.com/news/hospital-boarding-st-louis-teen-home/",
-   "at": "2026-11-17T10:00:10+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "She went to college to become a social worker. Now she's joined the skilled trades",
-   "desc": "While the rise of AI continues to fuel the debate over whether college is worth the cost, apprenticeships in the skilled trades are having a moment, drawing in people of all backgrounds including college graduates.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6012818/skilled-trades-apprenticeship-college-data-centers-jobs",
-   "at": "2026-11-17T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "More people are getting the flu. Should you get a flu shot before you travel?",
-   "desc": "Thanksgiving is just around the corner, just as millions of Americans are expected to travel for the holidays. Another thing that's upon us? Cold and flu season.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6043086/thanksgiving-travel-cold-flu-vaccine-shot-booster",
-   "at": "2026-11-17T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Does locking up a student's cell phone improve test scores? A new study suggests so",
-   "desc": "A new study of school cellphone bans finds they may help students make up for some of the learning they've lost since 2013 – a divergence from earlier study results.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6035684/school-cellphone-ban-learning-loss-yondr-research",
-   "at": "2026-11-17T10:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "El Niño Draws Sea Turtles to California’s Coast for the First Time",
-   "desc": "The California coast has seen an influx of olive ridley sea turtles, which are the smallest such reptiles and are normally found in tropical waters.",
-   "url": "https://www.nytimes.com/2026/11/16/us/sea-turtles-california.html",
-   "at": "2026-11-17T08:06:57+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
-   "desc": "The U.S. Commerce Department is making moves to tighten export controls.",
-   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
-   "at": "2026-11-17T07:07:35+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
-   "desc": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024.",
-   "url": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
-   "at": "2026-11-17T06:59:42+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Administration Divide on China Policy Breaks Into Public View",
-   "desc": "The airing of a fight over advanced A.I. chips shows how much the Nvidia scandal has deepened fissures inside the government, just as President Trump heads to a critical meeting with his Chinese counterpart.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-china-ai-chip-policy.html",
-   "at": "2026-11-17T03:48:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Can We Still Trust American Air Travel?",
-   "desc": "The FAA grounded every departing flight in the U.S. on Friday, only the second nationwide ground stop since 9/11. CBS News senior transportation correspondent Kris Van Cleave on why anyone would swap out equipment at 4 p.m. on a Friday, what doesn't add up in the official story, and why he's still flying. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
-   "url": "https://www.cbsnews.com/video/can-we-still-trust-american-air-travel/",
-   "at": "2026-11-17T02:11:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "What Pete Buttigieg’s Bet in the 2026 Midterms Could Mean for 2028",
-   "desc": "No longer a fresh face, he is arguing that his party needs moderate red-state whisperers.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/pete-buttigieg-2028.html",
-   "at": "2026-11-17T02:03:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Top federal prosecutor in Houston accused of breaking ethics rules",
-   "desc": "A nonprofit watchdog group filed an ethics complaint on Monday against the top federal prosecutor in Houston, alleging he has violated professional conduct rules by threatening to prosecute Democratic lawmakers.",
-   "url": "https://www.cbsnews.com/news/watchdog-group-ethics-complaint-top-federal-prosecutor-houston/",
-   "at": "2026-11-17T00:56:42+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "New James Bond is announced after rampant speculation",
-   "desc": "After rampant online speculation about who would take over the iconic spy character from Daniel Craig, the franchise announced who the new 007 will be.",
-   "url": "https://www.cbsnews.com/news/james-bond-007-robert-pattinson/",
-   "at": "2026-11-17T00:54:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Victim Advocates Sue Newsom Over Attempt to Empty California’s Death Row",
-   "desc": "Gov. Gavin Newsom is trying to spare the lives of 548 prisoners on California’s death row. Prosecutors and victims’ families say that it amounts to an abuse of power.",
-   "url": "https://www.nytimes.com/2026/11/16/us/newsom-sued-death-penalty-commuations-california.html",
-   "at": "2026-11-17T00:46:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "\"Tiger team\" formed to head off another nationwide ground stop",
-   "desc": "Members of the new tiger team include officials from the FAA, Office of the Director of National Intelligence, Defense Department and Transportation Department.",
-   "url": "https://www.cbsnews.com/news/white-house-tiger-team-ground-stop/",
-   "at": "2026-11-16T23:58:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Administration Sought LinkedIn Data in Effort to Identify New York Times Sources",
-   "desc": "The court filing confirms that the Trump administration has sought on two parallel fronts to identify the sources for an article as part of one overarching investigation.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/trump-linkedin-data-nyt-sources.html",
-   "at": "2026-11-16T23:44:56+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/16: CBS Evening News",
-   "desc": "Outages hit major U.S. banks, including Chase and Bank of America; United Airlines experienced a \"widespread system outage.\"",
-   "url": "https://www.cbsnews.com/video/111626-cbs-evening-news/",
-   "at": "2026-11-16T23:30:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Aschenbrenner’s Situational Awareness made AI bets again before October rout",
-   "desc": "Leopold Aschenbrenner's hedge fund, which almost collapsed over the summer, bought AI stocks before shares began tumbling.",
-   "url": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
-   "at": "2026-11-16T23:05:12+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Bessent Takes Hawkish Turn in White House Debate on China",
-   "desc": "The Treasury secretary who sought to de-escalate tariff wars is taking a tougher approach to exports of sensitive U.S. technology.",
-   "url": "https://www.nytimes.com/2026/11/16/us/politics/bessent-lutnick-china.html",
-   "at": "2026-11-16T22:46:09+00:00"
   }
  ]
 }

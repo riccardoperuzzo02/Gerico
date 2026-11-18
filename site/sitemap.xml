@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-18T11:11:20+00:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-18T19:01:24+00:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/terminal</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/come-funziona</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/glossario</loc></url>
@@ -12,6 +12,7 @@
 <url><loc>https://gerico.financialnews.workers.dev/tema/israele-governo</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/ucraina</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/voto-usa</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/medio-oriente</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/stati-uniti</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/congresso</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/elezioni</loc></url>
@@ -41,7 +42,6 @@
 <url><loc>https://gerico.financialnews.workers.dev/tema/titoli-di-stato</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/petrolio</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/iran</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/medio-oriente</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-11-fr-smic-hausse-decembre</loc><lastmod>2026-11-11T10:11:26+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-11-svimez-rapporto-sud</loc><lastmod>2026-11-11T09:22:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-11-it-garlasco-sempio-concussione</loc><lastmod>2026-11-11T09:22:00+01:00</lastmod></url>
@@ -65,9 +65,9 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-27-brasile-lula-bolsonaro</loc><lastmod>2026-11-02T07:26:43+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-yemen-aden-riad</loc><lastmod>2026-11-11T09:22:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-titoli-di-stato</loc><lastmod>2026-10-29T07:27:28+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-hormuz-on-peace</loc><lastmod>2026-11-18T07:24:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-hormuz-on-peace</loc><lastmod>2026-11-18T19:59:35+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-ucraina-allarme</loc><lastmod>2026-11-16T07:28:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-trump-xi-putin-shenzhen</loc><lastmod>2026-11-18T07:26:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-trump-xi-putin-shenzhen</loc><lastmod>2026-11-18T19:59:35+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-ye-houthi-aden-comandante-saudita</loc><lastmod>2026-11-17T07:26:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-17T07:26:00+01:00</news:publication_date><news:title>Yemen: Houthi a 60 km da Aden, Riad cambia il comandante della coalizione</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-27-israele-elezioni</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-ua-colby-attacchi-in-profondita</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T07:26:30+01:00</news:publication_date><news:title>Nato: un alto funzionario Usa critica gli attacchi ucraini in Russia</news:title></news:news></url>
@@ -75,7 +75,7 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-11-nvidia-huang-cina</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-it-social-under-13-emendamento</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T07:26:30+01:00</news:publication_date><news:title>Italia: la maggioranza vuole vietare i social ai minori di 13 anni</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-it-antisemitismo-ddl-approvato</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T07:26:30+01:00</news:publication_date><news:title>Camera: approvato in via definitiva il ddl sull&#x27;antisemitismo</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-13-it-manovra-giorgetti-emendamenti</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-13-it-manovra-giorgetti-emendamenti</loc><lastmod>2026-11-18T19:59:35+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-de-deutsche-bank-inchiesta-file</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T07:26:30+01:00</news:publication_date><news:title>Germania: Deutsche Bank cala del 6% dopo l&#x27;inchiesta sui documenti interni</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-13-brent-trump-iran-gas</loc><lastmod>2026-11-16T07:29:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-it-ex-ilva-controlli-ambientali-enti</loc><lastmod>2026-11-18T07:26:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T07:26:30+01:00</news:publication_date><news:title>Taranto: nell&#x27;inchiesta sull&#x27;ex Ilva sotto esame anche i controlli pubblici</news:title></news:news></url>
@@ -84,8 +84,9 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-us-chip-accesso-remoto-cina</loc><lastmod>2026-11-17T07:26:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-17T07:26:00+01:00</news:publication_date><news:title>Stati Uniti: nuove regole contro l&#x27;accesso remoto della Cina ai chip avanzati</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-it-allarmi-bomba-scuole-mail</loc><lastmod>2026-11-17T07:26:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-17T07:26:00+01:00</news:publication_date><news:title>Italia: nuovi allarmi bomba via mail alle scuole, nessuna evacuazione</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-us-banche-guasto-jpmorgan-united</loc><lastmod>2026-11-17T07:26:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-17T07:26:00+01:00</news:publication_date><news:title>Stati Uniti: guasti ai conti online delle grandi banche e ai sistemi di United</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-it-revolut-amministrazione-giudiziaria</loc><lastmod>2026-11-16T13:20:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-16T13:20:00+01:00</news:publication_date><news:title>Milano: il tribunale mette Revolut Bank sotto amministrazione giudiziaria</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-ua-record-droni-ponte-crimea</loc><lastmod>2026-11-17T13:20:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-16T13:20:00+01:00</news:publication_date><news:title>Ucraina: colpito per il secondo giorno il ponte di Crimea, Mosca colpisce Kiev</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-it-revolut-amministrazione-giudiziaria</loc><lastmod>2026-11-16T13:20:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-ua-record-droni-ponte-crimea</loc><lastmod>2026-11-17T13:20:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-gaza-offensiva-centrale</loc><lastmod>2026-11-18T19:59:35+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T19:59:35+01:00</news:publication_date><news:title>Gaza: Israele avvia un&#x27;operazione di terra nel centro della Striscia</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-us-senato-alaska-peltola</loc><lastmod>2026-11-18T09:49:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-18T09:49:00+01:00</news:publication_date><news:title>Stati Uniti: i democratici vincono in Alaska e salgono a 56 seggi al Senato</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-us-corte-suprema-fondi-universita-california</loc><lastmod>2026-11-17T09:49:09+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-17T09:49:09+01:00</news:publication_date><news:title>Stati Uniti: la Corte suprema respinge il ricorso di Trump sui fondi ricerca</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-us-morbillo-status-eliminazione</loc><lastmod>2026-11-17T09:49:09+01:00</lastmod></url>

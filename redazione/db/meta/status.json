@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: due ricerche sull'inflazione britannica di ottobre non hanno dato il dato ufficiale di oggi. Aggiunte all'agenda 3 voci da Forex Factory (salari Australia, Breman RBNZ, acquisti TIC)."
   },
   "lastPublish": {
-    "at": "2026-11-18T12:11:25+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database; cancellate 2 storie archiviate da più di 7 giorni."
+    "at": "2026-11-18T20:01:34+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-18T07:28:30+01:00",
+  "lastRun": "2026-11-18T20:00:39+01:00",
   "marketsRun": {
     "at": "2026-11-17T18:46:48+01:00",
     "esito": "Aggiornate le chiusure del 17 novembre (Ansa): Ftse Mib -1,31% a 50.845, Dax -2,08%, Cac 40 -1,62%, Ftse 100 -1,76%, spread 105, Btp 10 anni 4,42%. Mancano Aex, Smi, Bund, euro/dollaro, Brent, gas. Agenda: nessun dato ufficiale trovato nelle pagine aperte."
@@ -29,15 +29,15 @@
     "esito": "Aperti 5 articoli (CBS, CNBC, France 24 x2, franceinfo x2), Tagesschau, Spiegel, Zeit, Sky e 20minutos non si aprono: DE, GB e ES dai feed. US 1 nuova (Alaska)/0/1 archiviata (Lutnick); GB 1 nuova (soldato Usa)/2 aggiornate (Milburn, Burnham-Ue)/1 archiviata (Lord); FR 2 nuove (pensioni Le Pen, primaria)/1 aggiornata (sciopero)/1 archiviata (manifestazioni); DE 1 nuova (Ruanda)/1 aggiornata (accordo Stromsteuer)/1 archiviata (bilancio 2027); ES 1 nuova (Ceuta)/1 aggiornata (dibattito)/2 archiviate (Psoe, El Hierro)."
   },
   "quality": {
-    "articlesDiscarded": 4,
-    "articlesRead": 34,
-    "at": "2026-11-18T07:28:30+01:00",
-    "factsChecked": 8,
+    "articlesDiscarded": 0,
+    "articlesRead": 11,
+    "at": "2026-11-18T20:00:39+01:00",
+    "factsChecked": 4,
     "factsCorrected": 0,
-    "storiesArchived": 6,
-    "storiesNew": 5,
-    "storiesUpdated": 6
+    "storiesArchived": 0,
+    "storiesNew": 1,
+    "storiesUpdated": 3
   },
   "runningSince": null,
-  "storiesLive": 39
+  "storiesLive": 40
 }

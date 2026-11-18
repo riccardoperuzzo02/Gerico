@@ -1,0 +1,38 @@
+{
+ "article": "L'esercito israeliano ha avviato mercoledì 18 novembre un'operazione di terra nella Gaza centrale, con carri armati lungo la strada Salah al-Din, scrivono Reuters e Al Jazeera. Secondo Reuters è la prima avanzata di questo tipo oltre la «Linea Gialla» dal cessate il fuoco dell'ottobre 2025, come dicono alcuni residenti. Al Jazeera la definisce la prima offensiva di terra ampia dalla tregua.\n\nIl portavoce militare israeliano parla, secondo Reuters, di un'operazione contro infrastrutture di Hamas a ovest della Linea Gialla. Secondo Al Jazeera l'esercito dice di voler eliminare una minaccia alle sue forze nella zona e rivendica il diritto di agire ovunque serva. Al Jazeera riferisce che Israele non ha emesso ordini di evacuazione per l'area.\n\nSul bilancio i soccorritori palestinesi parlano, secondo Reuters, di un morto in un attacco aereo vicino al luogo del raid e di due morti in altri episodi, a Deir al-Balah e a Gaza City; l'esercito dice di non conoscere il primo caso e di aver colpito un militante nel secondo. Al Jazeera, citando fonti ospedaliere, conta tre palestinesi uccisi nell'operazione. Il ministero della Salute di Gaza riferisce sette morti e 15 feriti nelle ultime 24 ore. Decine di sfollati sono fuggiti da tende e rifugi, anche da Bureij e Maghazi, secondo le due testate.\n\nHamas definisce l'operazione una violazione dell'accordo e una pericolosa escalation. Secondo Al Jazeera sostiene che gli ordini di evacuazione forzata siano un crimine di guerra e ritiene responsabili Israele e Stati Uniti. Israele, scrive Reuters, non ha risposto subito.\n\nReuters riporta che le autorità sanitarie di Gaza contano almeno 1.600 palestinesi uccisi dall'entrata in vigore della tregua, mentre l'esercito israeliano dichiara cinque soldati uccisi. L'organismo sostenuto dagli Stati Uniti che supervisiona la tregua accusa sia Israele sia Hamas di non rispettare gli impegni, e secondo Al Jazeera il Board of Peace ha avvertito l'Onu del rischio di un collasso imminente dell'intesa.",
+ "change": "",
+ "divergences": [],
+ "notCovered": [],
+ "facts": [
+  {"text": "L'esercito israeliano ha avviato un'operazione di terra nella Gaza centrale, lungo la strada Salah al-Din.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Per Reuters è la prima avanzata oltre la Linea Gialla dalla tregua dell'ottobre 2025, secondo alcuni residenti.", "who": ["Reuters"]},
+  {"text": "Israele parla di operazione contro infrastrutture di Hamas; Hamas la definisce una violazione del cessate il fuoco.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Secondo Al Jazeera, fonti ospedaliere contano tre palestinesi uccisi; secondo Reuters i soccorritori parlano di un morto vicino al raid e due in altri episodi.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "Le autorità sanitarie di Gaza contano almeno 1.600 morti dalla tregua; l'esercito israeliano dichiara cinque soldati uccisi.", "who": ["Reuters"]}
+ ],
+ "firstSeen": "2026-11-18T19:59:35+01:00",
+ "history": [
+  {"at": "2026-11-18T19:59:35+01:00", "text": "Prima notizia: Israele avvia un'operazione di terra nella Gaza centrale, Hamas parla di violazione della tregua."}
+ ],
+ "open": [
+  "L'operazione si fermerà alla zona vicina alla Linea Gialla o si estenderà?",
+  "Come risponderanno i mediatori e il Board of Peace?",
+  "Quale sarà il bilancio definitivo dell'operazione?"
+ ],
+ "places": ["PS", "IL"],
+ "city": {"name": "Nuseirat", "lat": 31.45, "lon": 34.39},
+ "rank": 22,
+ "section": "mondo",
+ "sources": [
+  {"angle": "Dichiarazioni del portavoce militare israeliano, bilancio dei soccorritori, posizione di Hamas, dati sulla tregua.", "area": "Europa", "at": "2026-11-18T18:20:00+01:00", "country": "Regno Unito", "kind": "agenzia", "name": "Reuters", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/18/israeli-military-begins-a-new-thrust-in-gaza-kills-three-people"},
+  {"angle": "Cronaca dal posto, fonti ospedaliere, evacuazioni, accuse di Hamas.", "area": "Medio Oriente", "date": "2026-11-18", "country": "Qatar", "kind": "tv", "name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/18/palestinians-flee-refugee-camp-as-israel-begins-operation-in-central-gaza"}
+ ],
+ "status": "live",
+ "summary": "L'esercito israeliano ha avviato un'operazione di terra nella Gaza centrale, oltre la Linea Gialla secondo Reuters. Hamas parla di violazione della tregua, Israele di un'azione contro infrastrutture di Hamas.",
+ "tags": ["Gaza", "Israele", "Medio Oriente"],
+ "themes": [],
+ "title": "Gaza: Israele avvia un'operazione di terra nel centro della Striscia",
+ "updated": "2026-11-18T19:59:35+01:00",
+ "view": "È accertato che l'esercito opera con mezzi di terra nella Gaza centrale e che ci sono morti, ma i bilanci differiscono e non c'è una verifica indipendente. Israele e Hamas danno versioni opposte sullo scopo dell'operazione.\n\nConta perché mette alla prova una tregua che il Board of Peace dice a rischio. Da guardare: l'estensione dell'operazione, la risposta dei mediatori e i bilanci dei prossimi giorni.",
+ "photo": {"wiki": "it", "title": "Nuseirat"}
+}

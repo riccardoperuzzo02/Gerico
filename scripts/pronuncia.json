@@ -10,6 +10,16 @@
    "nota": "accento sulla prima e"
   },
   {
+   "da": "\\bA[Pp]\\b(?!\\s*-)",
+   "a": "Associated Press",
+   "voci": [
+    "gemini",
+    "kokoro",
+    "chatterbox"
+   ],
+   "nota": "Gemini leggeva «app» in «l'agenzia Ap» (controllo della voce, 18 novembre 2026)"
+  },
+  {
    "da": "S&P\\s*500",
    "a": "esse e pi cinquecento",
    "voci": [
@@ -237,8 +247,11 @@
    "da": "\\bNvidia\\b",
    "a": "Envìdia",
    "voci": [
-    "kokoro"
-   ]
+    "gemini",
+    "kokoro",
+    "chatterbox"
+   ],
+   "nota": "Gemini leggeva «invidia» (controllo della voce, 18 novembre 2026)"
   },
   {
    "da": "\\bASML\\b",

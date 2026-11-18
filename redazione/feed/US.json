@@ -1,13 +1,48 @@
 {
  "code": "US",
- "asOf": "2026-11-18T07:17:36+00:00",
+ "asOf": "2026-11-18T09:17:35+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
+   "title": "Trump lands in China for historic meeting with Xi, Putin",
+   "desc": "President Donald Trump has landed in Shenzhen for historic trilateral talks with Chinese leader Xi Jinping and Russia's Vladimir Putin.",
+   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-china-apec.html",
+   "at": "2026-11-18T09:11:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Putin says EU is losing industry, falling behind competition, ahead of meeting with Trump and Xi",
    "desc": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country.",
    "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
-   "at": "2026-11-18T07:17:11+00:00"
+   "at": "2026-11-18T08:29:35+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Rubio says there's 'zero' information that U.S. outages are caused by a malign actor",
+   "desc": "Secretary of State Marco Rubio sought to calm Americans as he traveled with President Trump and they prepared for key meetings with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+   "url": "https://www.npr.org/2026/11/18/nx-s1-6045411/rubio-outages-malign-actor",
+   "at": "2026-11-18T08:27:50+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Administration Presses Ahead in Legal Battle Over U.S. Attorneys",
+   "desc": "A judge has ruled that Bill Essayli was acting “unlawfully” as U.S. attorney in Los Angeles. He is one of three prosecutors appointed by the Trump administration through a unique process.",
+   "url": "https://www.nytimes.com/2026/11/18/us/trump-administration-presses-ahead-in-legal-battle-over-us-attorneys.html",
+   "at": "2026-11-18T08:21:49+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Claim 56 Senate Seats After Mary Peltola Wins in Alaska",
+   "desc": "Mary Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
+   "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
+   "at": "2026-11-18T07:43:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Senators press acting U.S. Navy Secretary on Iran war costs, sailor health in confirmation hearing",
+   "desc": "Acting Navy Secretary Hung Cao told senators the Navy recoded and used munitions he called expired as the Iran war strains weapons stocks and naval deployments.",
+   "url": "https://www.cnbc.com/2026/11/18/us-iran-navy-hormuz-war-cao.html",
+   "at": "2026-11-18T07:24:06+00:00"
   },
   {
    "source": "CNBC",
@@ -15,13 +50,6 @@
    "desc": "The U.S. Commerce Department is making moves to tighten export controls.",
    "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
    "at": "2026-11-18T07:16:14+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Claim 56 Senate Seats After Mary Peltola Wins in Alaska",
-   "desc": "Mary Peltola defeated Senator Dan S. Sullivan, a two-term incumbent, to become the first Democrat to represent the conservative state in the Senate since 2015.",
-   "url": "https://www.nytimes.com/2026/11/17/us/politics/alaska-senate-sullivan-peltola.html",
-   "at": "2026-11-18T07:10:15+00:00"
   },
   {
    "source": "CNBC",
@@ -39,24 +67,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Three things to watch as Trump, Xi and Putin meet in China",
-   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are set to meet in Shenzhen alongside an APEC leaders' meeting.",
-   "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
-   "at": "2026-11-18T06:04:39+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Iran says army targets U.S. drone and missile sites in Kuwait as Gulf attacks mount",
    "desc": "Iran said its army targeted U.S. drone and missile installations at Kuwait's Ali Al Salem air base, extending a run of attacks on Gulf states.",
    "url": "https://www.cnbc.com/2026/11/18/trump-iran-war-hormuz-oil-.html",
    "at": "2026-11-18T05:24:54+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Administration Presses Ahead in Legal Battle Over U.S. Attorneys",
-   "desc": "A judge has ruled that Bill Essayli was acting “unlawfully” as U.S. attorney in Los Angeles. He is one of three prosecutors appointed by the Trump administration through a unique process.",
-   "url": "https://www.nytimes.com/2026/11/18/us/trump-administration-presses-ahead-in-legal-battle-over-us-attorneys.html",
-   "at": "2026-11-18T05:19:50+00:00"
   },
   {
    "source": "New York Times",
@@ -99,13 +113,6 @@
    "desc": "Incoming senators and prospective presidential candidates blamed the health secretary’s history of vaccine skepticism for the rise of measles in the country.",
    "url": "https://www.nytimes.com/2026/11/17/us/politics/rfk-jr-measles-democrats.html",
    "at": "2026-11-18T03:33:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
-   "desc": "Xi opened the APEC summit in Shenzhen by calling for lower trade and investment barriers, pledging broader access to China’s market and manufacturing sector.",
-   "url": "https://www.cnbc.com/2026/11/18/china-xi-trade-investment-barriers.html",
-   "at": "2026-11-18T03:30:51+00:00"
   },
   {
    "source": "NPR",
@@ -624,13 +631,6 @@
    "desc": "In late October, Google had the worst stock day in its history as a public company. The Planet Money newsletter asks: has Google been caught in \"the innovator's dilemma\"?",
    "url": "https://www.npr.org/sections/planet-money/2026/11/17/g-s1-153933/can-google-win-the-ai-race-without-killing-its-cash-cow",
    "at": "2026-11-17T11:30:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "I'm a human doctor with human intelligence. But I sure do like my AI notetaker",
-   "desc": "Has your doctor asked whether they can use artificial intelligence to take notes during an exam? It's very popular, and here's how to think through the pros and the cons of the new technology.",
-   "url": "https://www.npr.org/2026/11/17/nx-s1-6037556/medicine-ai-doctor-notetaker-scribe",
-   "at": "2026-11-17T11:00:00+00:00"
   }
  ]
 }

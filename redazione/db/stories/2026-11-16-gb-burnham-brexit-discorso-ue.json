@@ -1,36 +1,37 @@
 {
   "id": "2026-11-16-gb-burnham-brexit-discorso-ue",
-  "title": "Regno Unito: Burnham dice che la Brexit «non ha funzionato»",
+  "title": "Regno Unito: Burnham presenterà a dicembre le opzioni sui rapporti con l'Ue",
   "section": "mondo",
   "status": "live",
   "country": "GB",
   "scope": "paese",
   "photo": {"wiki": "en", "title": "10 Downing Street", "alt": ["Londra"]},
   "rank": 201,
-  "summary": "Il primo ministro Andy Burnham parlerà oggi della Brexit e del vertice con l'Ue di venerdì. Dirà che la Brexit data al Paese «non ha funzionato».",
-  "article": "Andy Burnham, il primo ministro britannico, dirà lunedì 16 novembre in un discorso che la Brexit «non ha funzionato» e che firmerà un nuovo accordo con l'Unione europea. Lo scrivono Guardian, BBC e Sky News, che hanno anticipato il testo. Il discorso precede il vertice tra Regno Unito e Ue di venerdì.\n\nSecondo il Guardian, Burnham sosterrà che gli accordi in preparazione «potrebbero far crescere il Pil dello 0,4%». Il giornale scrive che il primo ministro aveva già detto sabato, alla conferenza dei laburisti gallesi, che il Paese ha «perso più di quanto ha guadagnato» uscendo dall'Ue. Sky News aggiunge che Burnham fisserà le condizioni per un futuro accordo.\n\nLa BBC riferisce che Hamish Falconer, il ministro per l'Europa, ha spiegato che il Regno Unito avrebbe una «voce» ma nessun voto sulle regole alimentari europee. La BBC scrive anche che alcuni giornali di lunedì aprono con la reazione: l'ex premier Boris Johnson dice che «la Gran Bretagna voterebbe di nuovo per la Brexit».\n\nLe informazioni vengono dai testi dei feed di Guardian, BBC e Sky News: gli articoli completi non sono stati letti. Restano da verificare il testo del discorso e il contenuto degli accordi.",
+  "summary": "Dopo aver detto che la Brexit «non ha funzionato», Burnham rinvia a dicembre le opzioni per un rapporto più stretto con l'Ue. Le imprese chiedono meno vincoli sui viaggi di lavoro.",
+  "article": "Andy Burnham, il primo ministro britannico, ha detto che la Brexit «non ha funzionato» e vuole un accordo più stretto con l'Unione europea. Secondo la Bbc, presenterà il mese prossimo le opzioni per la relazione di lungo periodo con l'Ue, insieme al suo piano economico decennale. Il Guardian scrive che l'annuncio è stato rinviato a dicembre e che il premier vuole aprire un dibattito nazionale sul tema.\n\nSecondo il Guardian, Burnham aveva sostenuto che gli accordi in preparazione «potrebbero far crescere il Pil dello 0,4%» e, sabato, alla conferenza dei laburisti gallesi, che il Paese ha «perso più di quanto ha guadagnato» uscendo dall'Ue. Hamish Falconer, ministro per l'Europa, ha spiegato alla Bbc che sulle regole alimentari europee il Regno Unito avrebbe una «voce» ma nessun voto.\n\nLa Cbi, la confindustria britannica, chiede a Burnham e ai leader europei di mettere le restrizioni sui viaggi di lavoro tra le priorità del 2027, dopo il vertice di Bruxelles di questa settimana: secondo il Guardian frenano investimenti e scambi. La Bbc scrive che l'Ue con cui Burnham vuole avvicinarsi è molto diversa da quella lasciata dalla Gran Bretagna.\n\nLe informazioni vengono dai testi dei feed di Guardian, Bbc e Sky News: gli articoli completi non sono stati letti. Restano da verificare il contenuto delle opzioni e quello degli accordi del vertice.",
   "facts": [
-    {"text": "Burnham dirà lunedì che la Brexit «non ha funzionato» e che firmerà un nuovo accordo con l'Ue.", "who": ["The Guardian", "BBC", "Sky News"]},
+    {"text": "Burnham dice che la Brexit «non ha funzionato» e vuole un accordo più stretto con l'Ue.", "who": ["The Guardian", "BBC", "Sky News"]},
+    {"text": "Le opzioni per la relazione di lungo periodo saranno presentate il mese prossimo, con il piano economico decennale.", "who": ["BBC"]},
     {"text": "Gli accordi in preparazione potrebbero far crescere il Pil dello 0,4%.", "who": ["The Guardian"]},
-    {"text": "Il vertice tra Regno Unito e Ue è venerdì.", "who": ["Sky News"]},
-    {"text": "Sulle regole alimentari Ue il Regno Unito avrebbe una voce ma nessun voto, dice il ministro Falconer.", "who": ["BBC"]},
-    {"text": "Boris Johnson dice che la Gran Bretagna voterebbe di nuovo per la Brexit.", "who": ["BBC"]}
+    {"text": "La Cbi chiede di rendere prioritario l'allentamento delle regole sui viaggi di lavoro.", "who": ["The Guardian"]},
+    {"text": "Sulle regole alimentari Ue il Regno Unito avrebbe una voce ma nessun voto, dice il ministro Falconer.", "who": ["BBC"]}
   ],
-  "view": "Si può dire con certezza che il discorso è annunciato e che il vertice con l'Ue è venerdì. Il testo completo e le condizioni poste da Burnham non sono nelle fonti lette, e la stima dello 0,4% è del solo Guardian.\n\nConta perché il governo laburista rimette in discussione i rapporti con l'Europa su un tema che divide partito ed elettorato. Da guardare: il contenuto degli accordi di venerdì e le reazioni dei deputati laburisti.",
+  "view": "Si può dire con certezza che Burnham ha cambiato tono sull'Europa e ha rinviato le scelte concrete a dicembre. Contenuto delle opzioni e degli accordi non è nelle fonti lette, e la stima dello 0,4% è del solo Guardian.\n\nConta perché il governo laburista rimette in discussione i rapporti con l'Ue su un tema che divide partito ed elettorato. Da guardare: il piano economico di dicembre, la reazione dei deputati laburisti e dell'opposizione.",
   "open": [
-    "Quali condizioni pone Burnham per un accordo con l'Ue?",
-    "Cosa prevedono gli accordi che saranno firmati al vertice?",
+    "Quali opzioni presenterà Burnham a dicembre?",
+    "Cosa prevedono gli accordi discussi al vertice di Bruxelles?",
     "Come reagiranno i deputati laburisti e l'opposizione?"
   ],
   "sources": [
-    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/politics/2026/nov/16/andy-burnham-brexit-has-not-worked-sign-new-deal-with-eu", "angle": "Dal feed: discorso di lunedì, stima dello 0,4% di Pil e parole di sabato alla conferenza dei laburisti gallesi.", "at": "2026-11-16T07:00:38+00:00"},
-    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/crp3e1n5kezpo", "angle": "Dal feed: «la Brexit che ci hanno dato non ha funzionato»; regole alimentari e reazione di Johnson.", "at": "2026-11-16T06:56:15+00:00"},
-    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/pm-to-say-brexit-hasnt-worked-and-set-out-conditions-for-future-eu-deal-in-major-speech-13612600", "angle": "Dal feed: le condizioni per un futuro accordo e il vertice di venerdì.", "at": "2026-11-15T21:33:00+00:00"}
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/world/2026/nov/18/brexit-work-travel-rules-urgent-improvement-cbi", "angle": "Dal feed: la Cbi chiede meno vincoli sui viaggi di lavoro; il rinvio a dicembre dell'annuncio.", "at": "2026-11-18T00:01:25+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cwm2j3nyd44ko", "angle": "Dal feed: Burnham presenterà il mese prossimo le opzioni, con il piano decennale.", "at": "2026-11-17T23:40:58+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/pm-to-say-brexit-hasnt-worked-and-set-out-conditions-for-future-eu-deal-in-major-speech-13612600", "angle": "Dal feed: le condizioni per un futuro accordo.", "at": "2026-11-15T21:33:00+00:00"}
   ],
   "firstSeen": "2026-11-16T09:48:29+01:00",
-  "updated": "2026-11-16T09:48:29+01:00",
-  "change": "",
+  "updated": "2026-11-18T09:49:00+01:00",
+  "change": "Burnham rinvia a dicembre le opzioni sui rapporti con l'Ue; la Cbi chiede meno vincoli sui viaggi di lavoro.",
   "history": [
+    {"at": "2026-11-18T09:49:00+01:00", "text": "Burnham presenterà a dicembre le opzioni sull'Ue; la Cbi chiede meno vincoli sui viaggi di lavoro."},
     {"at": "2026-11-16T09:48:29+01:00", "text": "Prima notizia: Burnham dirà che la Brexit non ha funzionato, vertice con l'Ue venerdì."}
   ],
   "tags": ["Regno Unito", "Brexit", "Governo"],

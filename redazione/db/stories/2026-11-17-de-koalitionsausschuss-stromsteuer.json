@@ -1,35 +1,37 @@
 {
   "id": "2026-11-17-de-koalitionsausschuss-stromsteuer",
-  "title": "Germania: vertice di coalizione sul taglio dell'imposta sull'elettricità",
+  "title": "Germania: la coalizione si accorda sul taglio dell'imposta sull'elettricità",
   "section": "mondo",
   "status": "live",
   "country": "DE",
   "scope": "paese",
   "photo": {"wiki": "de", "title": "Bundeskanzleramt (Berlin)", "alt": ["Berlino"]},
   "rank": 403,
-  "summary": "Oggi i vertici di Cdu-Csu e Spd decidono su taglio dell'imposta sull'elettricità, riforma delle pensioni e fiscal drag. Il cancelliere Merz si dice certo di un accordo.",
-  "article": "Martedì 17 novembre il comitato di coalizione, cioè i vertici di Cdu-Csu e Spd, si riunisce a Berlino per decidere su più nodi: taglio dell'imposta sull'elettricità, riforma delle pensioni e compensazione del fiscal drag, l'aumento delle tasse dovuto all'inflazione. Lo scrive Tagesschau, secondo cui in gioco ci sono molti miliardi e la credibilità del cancelliere.\n\nLunedì Friedrich Merz, il cancelliere tedesco, si è detto sicuro di un accordo sulla Stromsteuer, scrivono Tagesschau e Der Spiegel. Il tema è bloccato perché non era chiaro come coprire il costo. Secondo Der Spiegel, al ministero delle Finanze del vicecancelliere Lars Klingbeil non ne sapevano nulla. Markus Söder, il leader della Csu, ritiene ancora possibile un taglio e indica dove trovare i miliardi, ma non vuole toccare un tema che Tagesschau non specifica nel testo del feed.\n\nLe posizioni divergono. Peter Adrian, presidente delle camere di commercio (Dihk), chiede il taglio, che a suo dire avrebbe effetti rilevanti, scrive Die Zeit. Marcel Fratzscher, capo dell'istituto Diw, lo ritiene un errore, secondo Der Spiegel. Pascal Reddig, capo dei giovani dell'Unione, avverte di una crisi di credibilità: chi annuncia un taglio deve realizzarlo.\n\nLe informazioni vengono dai testi dei feed di Tagesschau, Der Spiegel e Die Zeit, non da articoli letti per intero. Resta da verificare l'esito della riunione.",
+  "summary": "Dopo otto ore di trattative i vertici di Cdu-Csu e Spd hanno concordato un taglio della Stromsteuer per tutti dal gennaio, finanziato solo per il 2027, e un tetto temporaneo ai prezzi dei carburanti.",
+  "article": "I vertici di Cdu, Csu e Spd si sono accordati nel comitato di coalizione su un taglio dell'imposta sull'elettricità (Stromsteuer) per tutti i consumatori. Lo scrivono Tagesschau, Der Spiegel e Die Zeit. La riunione al Cancellierato, con Friedrich Merz, il cancelliere, il vicecancelliere Lars Klingbeil (Spd) e Markus Söder, il leader della Csu, è durata più di otto ore e si è chiusa verso le due di notte.\n\nSecondo Die Zeit il taglio parte da gennaio, ma la copertura finanziaria esiste solo per un anno. Tagesschau e Spiegel confermano che il finanziamento riguarda solo il 2027. La coalizione ha deciso anche un tetto ai prezzi dei carburanti, anch'esso a tempo limitato. Le fonti lette non dicono quanto costerà la misura né da dove verranno i miliardi.\n\nIl nodo era politico: Merz aveva promesso il taglio e, secondo Tagesschau, era in gioco la credibilità del cancelliere. Prima della riunione Peter Adrian, presidente delle camere di commercio (Dihk), aveva chiesto la riduzione, mentre l'economista Marcel Fratzscher, dell'istituto Diw, la riteneva un errore, scrivevano Die Zeit e Der Spiegel.\n\nIn agenda c'erano anche la riforma delle pensioni e la compensazione del fiscal drag, l'aumento delle tasse dovuto all'inflazione. Gli esiti su questi punti non risultano ancora dai testi letti.\n\nLe informazioni vengono dai testi dei feed di Tagesschau, Der Spiegel e Die Zeit, non da articoli letti per intero.",
   "facts": [
-    {"text": "Il comitato di coalizione decide oggi su Stromsteuer, pensioni e compensazione del fiscal drag.", "who": ["Tagesschau"]},
-    {"text": "Merz si dice sicuro di un accordo sul taglio dell'imposta sull'elettricità.", "who": ["Tagesschau", "Der Spiegel"]},
-    {"text": "Il ministero delle Finanze di Klingbeil non sapeva di una soluzione, scrive Der Spiegel.", "who": ["Der Spiegel"]},
-    {"text": "Il Dihk chiede il taglio; l'economista Fratzscher lo giudica un errore.", "who": ["Die Zeit", "Der Spiegel"]}
+    {"text": "Union e Spd concordano un taglio della Stromsteuer per tutti, da gennaio.", "who": ["Die Zeit", "Tagesschau"]},
+    {"text": "Il finanziamento è garantito solo per il 2027.", "who": ["Tagesschau", "Der Spiegel", "Die Zeit"]},
+    {"text": "Previsto anche un tetto temporaneo ai prezzi dei carburanti.", "who": ["Tagesschau", "Der Spiegel"]},
+    {"text": "La riunione è durata più di otto ore, fino alle due di notte.", "who": ["Der Spiegel", "Die Zeit"]},
+    {"text": "Il Dihk voleva il taglio; l'economista Fratzscher lo giudicava un errore.", "who": ["Die Zeit", "Der Spiegel"]}
   ],
-  "view": "Si può dire con certezza che la riunione è oggi e che Merz si aspetta un accordo. Come sarebbe coperto il costo e se la Spd è d'accordo non è chiaro dalle fonti.\n\nConta perché il taglio è una promessa del cancelliere e il risultato incide sulla sua credibilità e sul bilancio. Da guardare: l'esito del vertice, la copertura finanziaria e le reazioni della Spd.",
+  "view": "Si può dire con certezza che la coalizione ha trovato un accordo sull'imposta e sul tetto ai carburanti, entrambi a tempo. Costo, copertura e decisioni su pensioni e fiscal drag non sono nelle fonti lette.\n\nConta perché il taglio era una promessa del cancelliere e il finanziamento limitato al 2027 lascia aperto cosa accadrà dopo. Da guardare: i numeri ufficiali sul costo, le reazioni degli economisti e le decisioni sulle pensioni.",
   "open": [
-    "Quanto costerebbe il taglio e come sarebbe coperto?",
-    "La Spd accetta le proposte di Söder per trovare i miliardi?",
-    "Quali decisioni sulle pensioni arrivano oggi?"
+    "Quanto costa la misura e come è coperta?",
+    "Che cosa succede alla Stromsteuer dopo il 2027?",
+    "Che decisioni sono state prese su pensioni e fiscal drag?"
   ],
   "sources": [
-    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Europa", "url": "https://www.tagesschau.de/inland/innenpolitik/rente-stromsteuer-wahlrecht-knackpunkte-koalition-100.html", "angle": "Dal feed: i nodi del vertice e la credibilità del cancelliere.", "at": "2026-11-17T05:44:10+00:00"},
-    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/stromsteuer-friedrich-merz-erwartet-einigung-im-koalitionsausschuss-a-f168982c-79b8-49e6-9ab2-dc870587a27c", "angle": "Dal feed: il ministero delle Finanze non sa di una soluzione.", "at": "2026-11-16T12:07:00+00:00"},
-    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuersenkung-peter-adrian-dihk-union-spd-unternehmen-gxe", "angle": "Dal feed: la richiesta delle camere di commercio.", "at": "2026-11-17T06:12:24+00:00"}
+    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Europa", "url": "https://www.tagesschau.de/inland/innenpolitik/eilmeldung-koalitionsausschuss-einigung-100.html", "angle": "Dal feed: taglio per tutti, finanziamento solo per il 2027, tetto ai carburanti.", "at": "2026-11-18T06:58:49+00:00"},
+    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/koalition-einigt-sich-auf-senkung-der-stromsteuer-vorerst-nur-2027-a-69144e3f-1de4-4fec-a38d-ee695e64d899", "angle": "Dal feed: la riunione fino alle due di notte con Merz, Klingbeil e Söder.", "at": "2026-11-18T06:37:00+00:00"},
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/deutschland/2026-11/koalition-einigt-sich-auf-senkung-der-stromsteuer-fuer-ein-jahr", "angle": "Dal feed: il taglio parte da gennaio, finanziamento per un anno.", "at": "2026-11-18T07:04:08+00:00"}
   ],
   "firstSeen": "2026-11-17T09:49:09+01:00",
-  "updated": "2026-11-17T09:49:09+01:00",
-  "change": "",
+  "updated": "2026-11-18T09:49:00+01:00",
+  "change": "La coalizione si accorda sul taglio della Stromsteuer da gennaio, finanziato per un anno, e su un tetto ai carburanti.",
   "history": [
+    {"at": "2026-11-18T09:49:00+01:00", "text": "Accordo nel comitato di coalizione: taglio della Stromsteuer da gennaio, finanziato per il 2027, e tetto temporaneo ai carburanti."},
     {"at": "2026-11-17T09:49:09+01:00", "text": "Prima notizia: vertice di coalizione sul taglio dell'imposta sull'elettricità."}
   ],
   "tags": ["Germania", "Governo", "Conti pubblici"],

@@ -4,8 +4,8 @@
     "esito": "Nessun risultato trovato: due ricerche sulle vendite al dettaglio Usa non hanno dato nessun dato ufficiale di oggi. Agenda già completa dal giro delle 12:10."
   },
   "lastPublish": {
-    "at": "2026-11-18T07:29:54+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-18T09:53:16+01:00",
+    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (435 parole); titoli.py: nessun titolo nel database; cancellate 5 storie archiviate da più di 7 giorni."
   },
   "lastRun": "2026-11-18T07:28:30+01:00",
   "marketsRun": {
@@ -25,8 +25,8 @@
     "Teleborsa"
   ],
   "paesiRun": {
-    "at": "2026-11-17T09:50:55+01:00",
-    "esito": "Aperti 5 articoli (CBS x2, franceinfo, Public Sénat), il resto dai feed. US 2 nuove (Corte suprema, Faa)/1 aggiornata (morbillo)/1 archiviata (golf); GB 1 nuova (asilo)/1 aggiornata (Milburn)/1 archiviata (età del consenso); FR 1 nuova (Senato, pensioni)/1 aggiornata (sciopero 17 novembre)/1 archiviata (Maileva); DE 1 nuova (vertice di coalizione)/1 aggiornata (Heil)/0; ES 1 nuova (Feijóo, Echeverría)/0/0."
+    "at": "2026-11-18T09:53:00+01:00",
+    "esito": "Aperti 5 articoli (CBS, CNBC, France 24 x2, franceinfo x2), Tagesschau, Spiegel, Zeit, Sky e 20minutos non si aprono: DE, GB e ES dai feed. US 1 nuova (Alaska)/0/1 archiviata (Lutnick); GB 1 nuova (soldato Usa)/2 aggiornate (Milburn, Burnham-Ue)/1 archiviata (Lord); FR 2 nuove (pensioni Le Pen, primaria)/1 aggiornata (sciopero)/1 archiviata (manifestazioni); DE 1 nuova (Ruanda)/1 aggiornata (accordo Stromsteuer)/1 archiviata (bilancio 2027); ES 1 nuova (Ceuta)/1 aggiornata (dibattito)/2 archiviate (Psoe, El Hierro)."
   },
   "quality": {
     "articlesDiscarded": 4,

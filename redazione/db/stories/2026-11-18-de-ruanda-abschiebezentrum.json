@@ -1,0 +1,42 @@
+{
+  "id": "2026-11-18-de-ruanda-abschiebezentrum",
+  "title": "Germania: piano con quattro paesi per i respinti in un centro in Ruanda",
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Berlino", "alt": ["Germania"]},
+  "rank": 404,
+  "summary": "Germania, Austria, Danimarca, Grecia e Paesi Bassi vogliono trasferire in Ruanda richiedenti asilo con ricorsi respinti. Il piano è criticato da chiese e organizzazioni per i diritti umani.",
+  "article": "Cinque paesi europei, Germania, Austria, Danimarca, Grecia e Paesi Bassi, hanno presentato un progetto per trasferire in Ruanda richiedenti asilo i cui ricorsi sono stati respinti in via definitiva. Lo scrive Le Monde. Secondo Die Zeit, Alexander Dobrindt, il ministro federale dell'Interno, vuole mandare in un primo momento 20 persone con asilo negato provenienti da paesi terzi.\n\nIl giornale osserva che il piano lascia fuori i cittadini ruandesi: secondo il Bamf, l'ufficio federale per la migrazione, i ruandesi obbligati a lasciare la Germania sono 367. Tagesschau scrive che le critiche arrivano da chiese e difensori dei diritti umani e che il progetto è controverso anche dentro il governo federale. Human Rights Watch lo definisce, secondo Le Monde, «un abbandono flagrante di responsabilità e di umanità».\n\nGerald Knaus, esperto di migrazione, difende invece l'accordo, scrive Der Spiegel: per lui le obiezioni morali non reggono e a chi arriva ogni mese bisogna far apparire inutile la traversata.\n\nLe informazioni vengono dai testi dei feed di Die Zeit, Tagesschau, Der Spiegel e Le Monde, non da articoli letti per intero. Restano da verificare tempi, costi e quadro giuridico.",
+  "facts": [
+    {"text": "Germania, Austria, Danimarca, Grecia e Paesi Bassi presentano un progetto per trasferire in Ruanda richiedenti asilo respinti.", "who": ["Le Monde"]},
+    {"text": "Dobrindt vuole trasferire 20 persone con asilo negato provenienti da altri paesi.", "who": ["Die Zeit"]},
+    {"text": "Secondo il Bamf i ruandesi tenuti a lasciare la Germania sono 367.", "who": ["Die Zeit"]},
+    {"text": "Le critiche arrivano da chiese e organizzazioni per i diritti umani; il piano è controverso anche nel governo.", "who": ["Tagesschau"]},
+    {"text": "Human Rights Watch parla di abbandono di responsabilità; Knaus difende l'accordo.", "who": ["Le Monde", "Der Spiegel"]}
+  ],
+  "view": "Si può dire con certezza che il piano esiste ed è contestato da più parti, anche dentro la coalizione. Tempi, costi e base giuridica non sono nelle fonti lette.\n\nConta perché rilancia in Germania il tema dei trasferimenti verso paesi terzi. Da guardare: la discussione nel governo e le prime decisioni operative.",
+  "open": [
+    "Quando partirebbero i primi trasferimenti e a che costo?",
+    "Su quale base giuridica sarebbero fatti?",
+    "Cosa dice la Spd, partner di governo?"
+  ],
+  "sources": [
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/deutschland/2026-11/abschiebezentrum-ruanda-asyl-alexander-dobrindt", "angle": "Dal feed: i 20 respinti di Dobrindt e i 367 ruandesi del Bamf.", "at": "2026-11-18T00:02:59+00:00"},
+    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Europa", "url": "https://www.tagesschau.de/inland/innenpolitik/reaktionen-ruanda-abschiebezentren-100.html", "angle": "Dal feed: critiche di chiese e diritti umani, divisioni nel governo.", "at": "2026-11-17T11:32:45+00:00"},
+    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/gerald-knaus-ueber-return-hubs-in-ruanda-den-tausenden-die-jeden-monat-kommen-muss-die-ueberfahrt-sinnlos-erscheinen-a-47546ef9-905c-47d7-95b9-4d0eb1f4b6bb", "angle": "Dal feed: Knaus difende l'accordo.", "at": "2026-11-17T19:06:00+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/international/article/2026/11/18/un-abandon-flagrant-de-responsabilite-et-d-humanite-hrw-denonce-le-projet-de-cinq-pays-europeens-d-expulser-des-migrants-vers-le-rwanda_6813055_3210.html", "angle": "Dal feed: i cinque paesi e la critica di Hrw.", "at": "2026-11-18T01:06:57+00:00"}
+  ],
+  "firstSeen": "2026-11-18T09:49:00+01:00",
+  "updated": "2026-11-18T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-18T09:49:00+01:00", "text": "Prima notizia: cinque paesi europei, Germania inclusa, vogliono trasferire respinti in Ruanda."}
+  ],
+  "tags": ["Germania", "Immigrazione", "Asilo"],
+  "themes": [],
+  "places": ["DE", "RW"],
+  "divergences": [],
+  "notCovered": []
+}

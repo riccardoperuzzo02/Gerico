@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-18-fr-le-pen-riforma-pensioni",
+  "title": "Francia: Marine Le Pen presenta la riforma delle pensioni del Rn",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "Assemblée nationale (France)", "alt": ["Parigi"]},
+  "rank": 303,
+  "summary": "Marine Le Pen promette di abolire la riforma delle pensioni dal 1° gennaio 2028 e di riportare l'età a 60-62 anni, con una quota obbligatoria di capitalizzazione.",
+  "article": "Marine Le Pen, candidata del Rassemblement national (Rn) alle presidenziali del 2027, ha presentato martedì 17 novembre il suo progetto sulle pensioni. Promette di abolire il 1° gennaio 2028 la riforma che porta l'età legale a 64 anni, sospesa nel 2025, scrivono France 24 e franceinfo.\n\nL'età di uscita tornerebbe a 62 anni e scenderebbe fino a 60 per chi comincia a lavorare presto. Secondo France 24, chi entra nel lavoro prima dei 20 anni andrebbe via a 60 con 160 trimestri; da 23 anni in poi, a 62 con 168. Franceinfo aggiunge che un trimestre sarebbe valido con almeno un mezzo tempo, senza soglia di stipendio, e che i criteri di penosità sarebbero eliminati. Le due testate danno cifre diverse sulla penalità per i trimestri mancanti: 2,5% per France 24, 5% per franceinfo, entrambe con tetto al 50%.\n\nNovità è un pilastro di capitalizzazione obbligatorio. Secondo il dossier del Rn citato da France 24, darebbe circa 340 euro al mese in più a una carriera intera al salario minimo. Franceinfo stima 12 miliardi di euro l'anno, gestiti dalla Caisse des dépôts, con rendimento del 4-6%, e un costo della riforma di 10,1 miliardi. Le Monde scrive che il finanziamento penalizza i precari e il fondo per gli alloggi.\n\nLe Pen non esclude un referendum se non avrà la maggioranza assoluta all'Assemblea. Secondo France 24 il testo non garantisce il pareggio del sistema; Jean-Philippe Tanguy, del Rn, giudica «irragionevoli» le previsioni a lungo termine.",
+  "facts": [
+    {"text": "Il Rn promette di abolire la riforma delle pensioni il 1° gennaio 2028: età a 62 anni, fino a 60 per le carriere lunghe.", "who": ["France 24", "franceinfo"]},
+    {"text": "Pilastro di capitalizzazione obbligatorio: 12 miliardi di euro l'anno, rendimento 4-6%, gestito dalla Caisse des dépôts.", "who": ["franceinfo"]},
+    {"text": "Il costo della riforma è stimato in 10,1 miliardi di euro.", "who": ["franceinfo"]},
+    {"text": "La penalità per trimestre mancante è del 2,5% per France 24 e del 5% per franceinfo, con tetto al 50%.", "who": ["France 24", "franceinfo"]},
+    {"text": "Le Pen non esclude un referendum se non avrà la maggioranza assoluta all'Assemblea.", "who": ["France 24", "franceinfo"]}
+  ],
+  "view": "Si può dire con certezza che il Rn ha presentato un programma che anticipa l'uscita ma stringe le condizioni su trimestri e pensioni minime. Le due fonti non coincidono su alcune cifre e il testo completo non è stato letto.\n\nConta perché le pensioni sono il tema che ha spaccato il paese e ora entrano nella campagna per il 2027. Da guardare: le risposte degli altri candidati e i calcoli indipendenti sul costo.",
+  "open": [
+    "Quale è la penalità esatta per trimestre mancante, 2,5% o 5%?",
+    "Quali stime indipendenti ci sono sul costo e sul finanziamento?",
+    "Come rispondono gli altri candidati?"
+  ],
+  "sources": [
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261117-france-presidentielle-2027-reforme-des-retraites-marine-le-pen-depart-a-60-ou-62-ans-capitalisation-conditions-durcies", "angle": "Soglie per età di ingresso nel lavoro, capitalizzazione e assenza di garanzia sul pareggio.", "date": "2026-11-17"},
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/age-de-depart-part-de-capitalisation-referendum-que-propose-le-rassemblement-national-pour-reformer-les-retraites_8286419.html", "angle": "Costo di 10,1 miliardi, validazione dei trimestri e penalità del 5%.", "date": "2026-11-17"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/18/le-rn-compte-financer-son-avantageuse-reforme-des-retraites-et-un-debut-de-capitalisation-au-detriment-des-precaires-et-de-la-politique-du-logement_6813066_823448.html", "angle": "Dal feed: il finanziamento pesa su precari e fondo per gli alloggi.", "at": "2026-11-18T04:41:47+00:00"}
+  ],
+  "firstSeen": "2026-11-18T09:49:00+01:00",
+  "updated": "2026-11-18T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-18T09:49:00+01:00", "text": "Prima notizia: Le Pen presenta la riforma delle pensioni del Rn."}
+  ],
+  "tags": ["Francia", "Pensioni", "Presidenziali"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

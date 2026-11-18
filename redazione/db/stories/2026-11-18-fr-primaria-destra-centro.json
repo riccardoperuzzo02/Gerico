@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-18-fr-primaria-destra-centro",
+  "title": "Francia: Attal, Retailleau e Lisnard concordano una primaria a gennaio",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Parigi", "alt": ["Francia"]},
+  "rank": 305,
+  "summary": "Le squadre di Attal, Retailleau e Lisnard hanno concordato una primaria in due turni a fine gennaio per la destra e il centro. Édouard Philippe rifiuta di partecipare.",
+  "article": "Le squadre di tre candidati alle presidenziali 2027, Gabriel Attal (Renaissance), Bruno Retailleau (Les Républicains) e David Lisnard (Nouvelle Énergie), si sono accordate martedì 17 novembre sul principio di una primaria della destra e del centro in due turni a fine gennaio. Lo scrive France 24, che cita Renaissance.\n\nSecondo franceinfo, che riporta l'entourage di Attal, le date possibili sono il 17 e il 24 gennaio oppure il 24 e il 31. La partecipazione costerebbe 2 euro, contro i 15 della primaria della sinistra. Il voto sarebbe soprattutto elettronico, con alcuni seggi fisici. I candidati dovrebbero impegnarsi a rifiutare «ogni alleanza con gli estremi», e Renaissance esclude i candidati dei partiti «estremi». Restano da fissare il numero di firme necessarie, i valori e i dibattiti, che saranno discussi giovedì o venerdì.\n\nÉdouard Philippe, ex primo ministro e leader di Horizons, ha rifiutato categoricamente di partecipare, scrive franceinfo. Un dirigente di Horizons ha detto a France 24: «Non andremo». Renaissance spera ancora nella sua adesione; per Les Républicains la primaria potrebbe svolgersi anche senza di lui. Franceinfo racconta che Philippe è in calo nei sondaggi, che non gli darebbero più il secondo turno.\n\nLe Monde scrive che Gérald Darmanin, ministro della Giustizia, chiede a Retailleau e Attal di farsi da parte dietro Philippe, senza primaria.",
+  "facts": [
+    {"text": "Primaria in due turni a fine gennaio, date possibili 17-24 o 24-31 gennaio.", "who": ["France 24", "franceinfo"]},
+    {"text": "Partecipazione a 2 euro, voto soprattutto elettronico, impegno a rifiutare alleanze con gli estremi.", "who": ["franceinfo"]},
+    {"text": "Édouard Philippe rifiuta di partecipare; un dirigente di Horizons dice «non andremo».", "who": ["franceinfo", "France 24"]},
+    {"text": "Darmanin chiede a Retailleau e Attal di farsi da parte dietro Philippe.", "who": ["Le Monde"]}
+  ],
+  "view": "Si può dire con certezza che tre squadre hanno concordato il principio di una primaria e le prime regole, e che Philippe non ci sarà. Le modalità definitive e la firma dei candidati non sono nelle fonti lette.\n\nConta perché decide se il campo della destra e del centro si presenta unito al primo turno. Da guardare: la riunione di giovedì o venerdì e la posizione di Philippe.",
+  "open": [
+    "Quante firme serviranno per candidarsi?",
+    "Philippe cambierà posizione?",
+    "Quale delle due serie di date sarà scelta?"
+  ],
+  "sources": [
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261117-equipes-attal-retailleau-lisnard-avancent-sur-une-primaire-droite-centre-sans-edouard-philippe-presidentielle-2027-election-candidats-lr-nouvelle-energie-renaissance", "angle": "L'accordo tra le tre squadre e la posizione di Horizons.", "at": "2026-11-17T23:04:52+00:00"},
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/elections/refus-d-alliance-avec-les-extremes-participation-a-deux-euros-les-premieres-modalites-de-la-primaire-de-la-droite-et-du-centre-devoilees_8286980.html", "angle": "Le prime modalità: date, 2 euro, voto elettronico, charta contro le alleanze con gli estremi.", "at": "2026-11-17T18:25:46+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/18/presidentielle-2027-gerald-darmanin-appelle-bruno-retailleau-et-gabriel-attal-a-s-effacer-derriere-edouard-philippe-pour-barrer-la-route-a-jean-luc-melenchon_6813056_823448.html", "angle": "Dal feed: Darmanin chiede di farsi da parte dietro Philippe.", "at": "2026-11-18T01:08:49+00:00"}
+  ],
+  "firstSeen": "2026-11-18T09:49:00+01:00",
+  "updated": "2026-11-18T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-18T09:49:00+01:00", "text": "Prima notizia: accordo di principio sulla primaria della destra e del centro a gennaio."}
+  ],
+  "tags": ["Francia", "Presidenziali", "Partiti"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

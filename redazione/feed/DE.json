@@ -1,20 +1,55 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T13:17:34+00:00",
+ "asOf": "2026-11-19T15:17:35+00:00",
  "items": [
   {
+   "source": "Der Spiegel",
+   "title": "Jürgen Chrobog: Ex-Diplomat ist tot",
+   "desc": "Er führte Verhandlungen zur Freilassung von Geiseln in der Sahara, später wurden er und seine Familie selbst im Jemen entführt: Der frühere Topdiplomat Jürgen Chrobog ist im Alter von 86 Jahren gestorben.",
+   "url": "https://www.spiegel.de/politik/deutschland/juergen-chrobog-ex-diplomat-ist-tot-a-47ab9194-2d87-47d6-b944-49c48ce7d098",
+   "at": "2026-11-19T15:06:00+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Selenskyj, Kushner und Witkoff in Berlin eingetroffen",
-   "desc": "Unmittelbar nach dem Gipfel von Trump, Putin und Xi trifft sich in Berlin die Koalition der Willigen. Der ukrainische Präsident ist bereits in der Stadt. Das Liveblog",
+   "title": "Krieg gegen die Ukraine: Wladimir Putin schlägt Treffen mit Vertretern Europas in Moskau vor",
+   "desc": "Auf Forderungen einer Beteiligung Europas an Ukrainegesprächen reagiert Putin mit einer Einladung nach Moskau. Wem die Einladung konkret gilt, ließ er offen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/putin-donald-trump-xi-jinping-shenzhen-ukraine-gipfel",
+   "at": "2026-11-19T14:54:50+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Kushner spricht von »sehr produktivem« Treffen mit Merz",
+   "desc": "Die US-Gesandten haben in Berlin mit Kanzler Merz über die Ukraine gesprochen. Putin will die Zerstörung von Teilen der Krimbrücke »schmerzhaft vergelten«. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-19T12:54:25+00:00"
+   "at": "2026-11-19T14:54:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Schwarz-rote Koalition: »Der Kanzler saß oben allein und hat Chips gegessen«",
+   "desc": "Trotz Zwist über die Stromsteuer ist die Koalition gerettet – vorerst. Nicht nur der Haushalt lastet schwer auf ihr. Wie angezählt sind Kanzler und Vize tatsächlich?",
+   "url": "https://www.zeit.de/politik/2026-11/schwarz-rote-koalition-stromsteuer-bundeshaushalt-politikpodcast",
+   "at": "2026-11-19T14:23:21+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "EU-Methanverordnung: EU verschiebt Klimaschutzregeln wegen Energiekrise um zwei Jahre",
    "desc": "Die Europäische Union hat sich auf Klimaschutzregeln für Methan geeinigt. Doch deren Inkrafttreten soll verschoben werden, um die Energiepreise zu stabilisieren.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/methan-eu-verordnung-import-oel-gas-klimaschutz",
-   "at": "2026-11-19T12:45:15+00:00"
+   "at": "2026-11-19T13:43:23+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Ina Scharrenbach: Mitarbeitende rechnen mit NRW-Heimatministerin ab",
+   "desc": "Ist die CDU-Politikerin eine schlechte Chefin? Ina Scharrenbach gilt als umstrittenstes Kabinettsmitglied in NRW. Dem SPIEGEL liegen jetzt Ergebnisse einer anonymen Mitarbeiterbefragung in dem Ministerium vor.",
+   "url": "https://www.spiegel.de/politik/deutschland/ina-scharrenbach-mitarbeitende-rechnen-mit-nrw-heimatministerin-ab-a-a59a3b1a-35c5-4a1b-8ea5-96e912fd2eae",
+   "at": "2026-11-19T13:31:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Internationaler Gerichtshof: Myanmar laut UN-Gericht verantwortlich für Völkermord an Rohingya",
+   "desc": "2017 tötete das Militär in Myanmar etwa 10.000 Angehörige der überwiegend muslimischen Rohingya. Der IGH stuft dieses Verbrechen als Völkermord ein.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/myanmar-laut-un-gericht-verantwortlich-fuer-voelkermord-an-rohingya",
+   "at": "2026-11-19T13:18:23+00:00"
   },
   {
    "source": "Die Zeit",
@@ -50,13 +85,6 @@
    "desc": "Die USA dürfen zwei Militärstützpunkte auf Grönland errichten. Das dänische Parlament hat dem Abkommen einstimmig zugestimmt. Auch Grönland hat es bereits ratifiziert.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/sicherheitsabkommen-usa-daenemark-groenland-gxe",
    "at": "2026-11-19T11:28:15+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Internationaler Gerichtshof: Myanmar laut UN-Gericht verantwortlich für Völkermord an Rohingya",
-   "desc": "2017 tötete das Militär in Myanmar etwa 10.000 Angehörige der überwiegend muslimischen Rohingya. Der IGH stuft dieses Verbrechen als Völkermord ein.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/myanmar-laut-un-gericht-verantwortlich-fuer-voelkermord-an-rohingya",
-   "at": "2026-11-19T11:26:42+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -95,7 +123,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Sachsen-Anhalt: Ulrich Siegmund will sich womöglich früher als Ministerpräsident zur Wahl stellen",
+   "title": "AfD: Ulrich Siegmund will sich womöglich früher als Ministerpräsident zur Wahl stellen",
    "desc": "Ursprünglich sollte der Magdeburger Landtag Mitte Dezember einen neuen Ministerpräsidenten wählen. Nun plant die AfD nach SPIEGEL-Informationen einen eiligeren Termin. Hinter den Überlegungen steckt Kalkül – und Sorge.",
    "url": "https://www.spiegel.de/politik/deutschland/sachsen-anhalt-ulrich-siegmund-will-sich-womoeglich-frueher-als-ministerpraesident-zur-wahl-stellen-a-bf8a38d0-a303-407d-805c-5b288c41d7dc",
    "at": "2026-11-19T10:07:00+00:00"
@@ -136,22 +164,8 @@
    "at": "2026-11-19T08:37:51+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Deutsche Bank: Sicherheitspolitiker fordern Konsequenzen aus Deutsche-Bank-Leak",
-   "desc": "Die Grünen warnen nach dem Datenleak bei der Deutschen Bank vor einem möglicherweise unzureichenden Geheimschutz. Auch aus der Union kommt Besorgnis.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/datenleck-deutsche-bank-konstantin-von-notz-nationaler-sicherheitsrat-gxe",
-   "at": "2026-11-19T07:35:10+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Apec-Gipfel in Shenzhen: Trump und Putin sprechen vor Dreiergipfel über Ukrainekrieg",
-   "desc": "Ein bilaterales Treffen von Donald Trump und Wladimir Putin ist nach russischen Angaben »exzellent« verlaufen. Auch China sieht das Verhältnis zu den USA verbessert.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
-   "at": "2026-11-19T07:18:10+00:00"
-  },
-  {
    "source": "Der Spiegel",
-   "title": "Bundesregierung: Michael Kretschmer rügt Koalition für Umgang mit Stromsteuer-Streit",
+   "title": "Stromsteuer: Michael Kretschmer rügt Koalition für Umgang mit Streit",
    "desc": "Sachsens Ministerpräsident Kretschmer lobt die Senkung der Stromsteuer, wirft der Koalition aber vor, den Streit darüber schlecht gelöst zu haben. Es gehe um das Vertrauen in die Demokratie.",
    "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-michael-kretschmer-ruegt-koalition-fuer-umgang-mit-stromsteuer-streit-a-3dc6a8c7-65fa-4056-92a1-8c4571bba0b2",
    "at": "2026-11-19T06:48:00+00:00"
@@ -211,27 +225,6 @@
    "desc": "Wenn Elternteile keinen Unterhalt zahlen, springt oft der Staat ein. Das Kabinett will dafür jetzt eine Einkommensgrenze einführen. Säumigen Zahlern sollen dafür härtere Strafen drohen - bis hin zu Fahrverboten.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/kabinett-unterhaltszahlung-verschaerfung-100.html",
    "at": "2026-11-18T15:37:39+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "DAK-Auswertung: Jugendliche konsumieren immer mehr Nikotinbeutel",
-   "desc": "Kein Rauchen, kein Dampfen: Nikotinbeutel sind unauffällig. Doch der konzentrierte Suchtstoff bereitet Gesundheitsexperten Sorgen - sie warnen vor einer möglichen Legalisierung. Denn Teenager greifen schon jetzt oft zu.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/nikotinbeutel-jugendliche-100.html",
-   "at": "2026-11-18T14:24:48+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "EEG: Reform von Energiegesetzen droht im Chaos zu versinken",
-   "desc": "Schwarz-Rot muss bis Jahresende die Förderung erneuerbarer Energien neu regeln. Doch SPD und Union können sich nicht einmal darauf einigen, worüber sie sich bisher geeinigt haben. Und dann mischt sich auch noch Wirtschaftsministerin Reiche ein.",
-   "url": "https://www.spiegel.de/politik/deutschland/eeg-reform-von-energiegesetzen-droht-im-chaos-zu-versinken-a-9a9326cb-c732-40a6-95fe-52a3ae8dcb10",
-   "at": "2026-11-18T14:00:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Stromsteuersenkung und Spritpreisdeckel: Was die Entlastungen im Alltag bringen könnten",
-   "desc": "Ab Januar wollen Union und SPD die Stromsteuer für ein Jahr auf das europäische Mindestniveau senken. Auch ein Spritpreisdeckel ist vereinbart. Was wurde konkret beschlossen und wie viel Entlastung könnte das im Alltag bringen?",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/was-bringt-stromsteuer-senkung-koalitionsausschuss-100.html",
-   "at": "2026-11-18T13:36:45+00:00"
   }
  ]
 }

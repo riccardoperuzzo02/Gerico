@@ -1,13 +1,90 @@
 {
  "code": "US",
- "asOf": "2026-11-19T09:17:37+00:00",
+ "asOf": "2026-11-19T11:17:35+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
+   "desc": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
+   "at": "2026-11-19T10:54:07+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Denmark ratifies Trump security deal over Greenland after months of diplomatic tensions",
+   "desc": "It follows months of tensions after President Donald Trump repeatedly said the U.S. should take control of Greenland for national security reasons.",
+   "url": "https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html",
+   "at": "2026-11-19T10:41:32+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Trump says U.S., China, Russia ‘uniquely positioned’ to discuss reducing nuclear weapons at historic meeting",
    "desc": "The leaders of the U.S., China and Russia met in Shenzhen on Thursday for a rare trilateral gathering.",
    "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "at": "2026-11-19T09:08:41+00:00"
+   "at": "2026-11-19T10:38:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Data center electricity use could double by 2030, IEA says",
+   "desc": "Global electricity use by data centers could double by 2030 as the AI boom adds pressure to power grids across the world, according to the IEA.",
+   "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
+   "at": "2026-11-19T10:22:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "In Bending to Trump, Law Firm Did $11.8 Million of Free Work for Administration",
+   "desc": "The firm Kirkland & Ellis has quietly disclosed that as part of the deal it reached with the Trump administration, it has done about 6,491 hours of free work.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/kirkland-ellis-law-firm-trump.html",
+   "at": "2026-11-19T10:03:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Boston’s Beloved Citgo Sign Returns After Rebuild, 30 Feet Higher",
+   "desc": "The beloved landmark will be lit again on Thursday night after it was rebuilt and moved 120 feet to the east, its latest incarnation in a city transformed by development.",
+   "url": "https://www.nytimes.com/2026/11/19/us/boston-citgo-sign-fenway-park.html",
+   "at": "2026-11-19T10:03:09+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Three MAGA Women Who Defined an Era in Congress Are Exiting",
+   "desc": "Representatives Marjorie Taylor Greene, Lauren Boebert and Nancy Mace embodied a combative, attention-seeking brand of politics that defined the Republican Congress.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/three-maga-women-who-defined-an-era-in-congress-are-exiting.html",
+   "at": "2026-11-19T10:02:53+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Anthropic Employees Work Hard, but Don’t Expect Them to Play Hard",
+   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound wealth from the company’s initial public offering.",
+   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
+   "at": "2026-11-19T10:02:46+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "AI giant Anthropic raises more than $100 billion in record-setting IPO",
+   "desc": "Shares in the maker of the popular Claude artificial intelligence model will start trading on the Nasdaq Thursday.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
+   "at": "2026-11-19T10:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Novartis raises blockbuster drug forecasts to $18 billion as it seeks to prove growth can last",
+   "desc": "The drugmaker cited strong demand for its blockbuster drugs as it upgraded peak sales forecasts for multiple sclerosis, leukemia, and cholesterol medicines.",
+   "url": "https://www.cnbc.com/2026/11/19/novartis-stock-cmd-2026-ceo.html",
+   "at": "2026-11-19T09:57:53+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Morning news brief",
+   "desc": "President Trump meets with China's Xi and Russia's Putin, House Democrats nominate Hakeem Jeffries as next speaker of the House, AI giant Anthropic raises more than $100 billion in record-setting IPO.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6042289/morning-news-brief",
+   "at": "2026-11-19T09:46:29+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Trump, Xi and Putin meet as global alliances hang in the balance",
+   "desc": "President Trump, Xi and Putin have met in Shenzhen for a historic trilateral meeting, with Ukraine, Iran and nuclear disarmament on the agenda.",
+   "url": "https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa",
+   "at": "2026-11-19T09:44:40+00:00"
   },
   {
    "source": "CNBC",
@@ -32,17 +109,17 @@
   },
   {
    "source": "CNBC",
-   "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
-   "desc": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
-   "at": "2026-11-19T07:32:56+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Musk accuses Zelenskyy of lying about Starshield restrictions in Ukraine",
    "desc": "Elon Musk was asked about Zelenskyy claims over the Starshield network, and he said, \"I don't want to blow your mind, but Zelenskyy is not always truthful.\"",
    "url": "https://www.cnbc.com/2026/11/19/elon-musk-zelenskyy-starshield-ukraine.html",
    "at": "2026-11-19T06:07:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Walmart is set to report earnings before the bell. Here's what to expect",
+   "desc": "Walmart is expected to offer color on consumer spending ahead of the holiday season as customers lean into value and convenience.",
+   "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
+   "at": "2026-11-19T05:01:01+00:00"
   },
   {
    "source": "NPR",
@@ -64,13 +141,6 @@
    "desc": "Costco shoppers are stocking up on emergency items following a string of tech snafus, according to a Wall Street analyst.",
    "url": "https://www.cbsnews.com/news/costco-panic-buying-tech-outages-generators/",
    "at": "2026-11-19T03:49:51+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "'Parasite' backer and other South Korean media, gaming and travel stocks rally on China trade deal",
-   "desc": "Korean media, gaming and travel stocks surged on hopes of greater access to China.",
-   "url": "https://www.cnbc.com/2026/11/19/china-south-korea-trade-deal-films-gaming.html",
-   "at": "2026-11-19T03:43:38+00:00"
   },
   {
    "source": "New York Times",
@@ -143,6 +213,13 @@
    "at": "2026-11-19T01:31:00+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "Palo Alto stock surges as all signs point to how important cybersecurity is in the AI age",
+   "desc": "The need for all-encompassing, rapid-response cybersecurity platforms has never been greater.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/18/palo-alto-surges-as-all-signs-point-to-cybersecurity-need-in-the-ai-age.html",
+   "at": "2026-11-19T01:29:06+00:00"
+  },
+  {
    "source": "New York Times",
    "title": "Trump Grows Frustrated With Vance Over Iran War Critique",
    "desc": "The tension comes at a critical juncture for the vice president, who is considering whether to run for president in 2028.",
@@ -158,10 +235,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
-   "desc": "Anthropic stock is set to begin trading on the Nasdaq under the ticker symbol ANT on Thursday.",
-   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-   "at": "2026-11-19T01:13:20+00:00"
+   "title": "Intel signs first external customer for advanced 18A chips",
+   "desc": "Intel CEO Lip-Bu Tan said Wednesday that the company signed its first outside customer for its 18A chips.",
+   "url": "https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html",
+   "at": "2026-11-19T01:05:25+00:00"
   },
   {
    "source": "CBS News",
@@ -172,10 +249,10 @@
   },
   {
    "source": "CNBC",
-   "title": "One of the world's most contested seas is proving too much for Asia's leaders to resolve",
-   "desc": "The ASEAN summit in the Philippines failed to conclude the Code of Conduct for the South China Sea despite Manila pledging it would happen this year.",
-   "url": "https://www.cnbc.com/2026/11/19/south-china-sea-china-asean-coc.html",
-   "at": "2026-11-19T00:31:00+00:00"
+   "title": "Microsoft CEO Satya Nadella calls Outlook outage a 'perfect storm.' Here's what went wrong",
+   "desc": "Microsoft shares have dropped nearly 9% since closing at a record high on Nov. 4.",
+   "url": "https://www.cnbc.com/2026/11/18/microsoft-put-the-ai-threat-to-software-behind-it-then-came-the-outage.html",
+   "at": "2026-11-19T00:18:28+00:00"
   },
   {
    "source": "New York Times",
@@ -339,32 +416,11 @@
    "at": "2026-11-18T21:50:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Fans Flock to the Hollywood Sign. Neighbors Say, Get Off My Road.",
-   "desc": "The residents of the Hollywood Hills have sued Los Angeles, saying the city has not done enough to address the dangerous conditions created by tourists vying for a glimpse of the iconic Hollywood sign.",
-   "url": "https://www.nytimes.com/2026/11/18/us/hollywood-sign-lawsuit.html",
-   "at": "2026-11-18T21:43:14+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "CEO turned informant: How the FDA built a case against executives promising cheap medications",
    "desc": "The FDA's unprecedented criminal case against an alternative funding program hinged on the cooperation of a peer CEO, according to a court record.",
    "url": "https://www.cnbc.com/2026/11/18/fda-canarx-case-informant.html",
    "at": "2026-11-18T21:07:14+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "U.S. Catholic Bishops Are Discussing A.I. at Annual Meeting",
-   "desc": "At their annual fall meeting, the bishops are discussing how to address the negative impacts of A.I., even as some struggle to navigate the fast-evolving technology.",
-   "url": "https://www.nytimes.com/2026/11/18/us/us-catholic-bishops-meeting-ai.html",
-   "at": "2026-11-18T21:05:30+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "House Democrats Cast Wide Net as They Prepare Trump Investigations",
-   "desc": "The inquiries would focus on President Trump, his family and top officials in his administration and would include a look at Commerce Secretary Howard Lutnick and policies related to Nvidia.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html",
-   "at": "2026-11-18T21:03:47+00:00"
   },
   {
    "source": "New York Times",
@@ -400,13 +456,6 @@
    "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
    "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
    "at": "2026-11-18T19:47:05+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Why Anthropic's hot IPO is bringing out sellers — plus, a silver lining of the down market",
-   "desc": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/18/why-anthropics-hot-ipo-is-bringing-out-sellers-plus-a-down-market-silver-lining.html",
-   "at": "2026-11-18T19:46:12+00:00"
   },
   {
    "source": "CNBC",
@@ -459,27 +508,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Jeffries wins Democratic House speaker race, on track to make history in January",
-   "desc": "Jeffries will still need to win a floor vote in January to officially become House speaker.",
-   "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
-   "at": "2026-11-18T18:32:39+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "As overdose deaths fall, White House makes misleading claims about who deserves credit",
-   "desc": "In a statement celebrating the historic drop in drug deaths, the White House pointed to successes since President Trump took office. In fact, the biggest progress happened under the Biden administration.",
-   "url": "https://www.npr.org/2026/11/18/nx-s1-6044209/drug-deaths-overdose-drop-trump-biden-fentanyl",
-   "at": "2026-11-18T18:18:16+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Karl Kani dressed hip-hop royalty for decades. Now he's telling his own story",
-   "desc": "On NPR's Morning Edition , fashion designer Karl Kani talks about his new memoir, dressing some of hip-hop's biggest stars and why skinny jeans aren't for everyone.",
-   "url": "https://www.npr.org/2026/11/18/g-s1-154227/karl-kani-a-life-by-design",
-   "at": "2026-11-18T18:15:59+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Read Jim Cramer’s full interview with Nvidia’s Colette Kress: Demand, buybacks and China",
    "desc": "Interim CEO Kress sat down with CNBC’s Jim Cramer Tuesday evening shortly after the AI chip giant delivered a quarterly beat and strong guidance.",
    "url": "https://www.cnbc.com/2026/11/18/nvidia-interim-ceo-colette-kress-talks-earnings-china-transcript.html",
@@ -494,13 +522,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Nvidia’s Kress faces a divided workforce as some employees push for Huang’s return",
-   "desc": "Nvidia's interim CEO Colette Kress calmed investors. Now she has to calm employees.",
-   "url": "https://www.cnbc.com/2026/11/18/nvidia-kress-jensen-huang-return.html",
-   "at": "2026-11-18T18:11:41+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Is Apple the safe haven investors think it is? Here's a way to trade it with less risk",
    "desc": "Traders have flocked to Apple's perceived safety in the wake of Nvidia's scandal. It may not be so safe, says Mike Khouw",
    "url": "https://www.cnbc.com/2026/11/18/is-apple-the-safe-haven-investors-think-it-is-heres-a-way-to-trade-it-with-less-risk.html",
@@ -512,13 +533,6 @@
    "desc": "The latest, long-awaited version of the hit video game franchise launches at midnight local time on Nov. 19 in countries worldwide. Here's what to know about GTA 6.",
    "url": "https://www.cbsnews.com/news/grand-theft-auto-6-release-date-price-what-to-know/",
    "at": "2026-11-18T17:48:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Got a canceled flight? 7 clever ways to get rebooked fast",
-   "desc": "Flying somewhere for Thanksgiving or the holidays? Travel insiders explain what to do if your flight gets canceled or delayed — so you can quickly get to your destination.",
-   "url": "https://www.npr.org/2026/11/18/nx-s1-6045636/got-a-canceled-flight-7-clever-ways-to-get-rebooked-fast",
-   "at": "2026-11-18T17:10:44+00:00"
   },
   {
    "source": "CNBC",
@@ -540,13 +554,6 @@
    "desc": "The vote put Representative Hakeem Jeffries of New York in line to become the first Black lawmaker to win the post second in line to the presidency.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html",
    "at": "2026-11-18T16:42:44+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Tech outages are causing people to panic-buy. Costco is benefiting, Mizuho says",
-   "desc": "Shoppers are spending more at Costco as tech outages turn into a race to get emergency goods.",
-   "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
-   "at": "2026-11-18T16:33:14+00:00"
   },
   {
    "source": "New York Times",
@@ -617,20 +624,6 @@
    "desc": "Beleaguered by high fuel costs and wary of overfishing, Alaskans were drawn to the Democrat’s hyperlocal pitch.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/peltola-victory-alaska-senate.html",
    "at": "2026-11-18T12:28:52+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says",
-   "desc": "President Trump plans to discuss Ukraine with the leaders of Russia and China. He has halted some sanctions on Russia and announced that the United States will buy Russian diesel.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-putin-ukraine-war.html",
-   "at": "2026-11-18T10:03:56+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "American A.I. Models Have Potential to Be Turned Against U.S., Study Finds",
-   "desc": "An investigation by the Government Accountability Office found that researchers were able to prod chatbots into generating data that could be used in planning or conducting mass-casualty attacks.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/audit-ai-terrorist-attack-plans.html",
-   "at": "2026-11-18T10:03:50+00:00"
   }
  ]
 }

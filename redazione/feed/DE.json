@@ -1,7 +1,91 @@
 {
  "code": "DE",
- "asOf": "2026-11-18T21:17:34+00:00",
+ "asOf": "2026-11-19T05:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Nvidia: Der Präsident, der Amerikas innere Sicherheit verrät",
+   "desc": "Donald Trump versucht, den Nvidia-Skandal kleinzureden. Ein Thema im US-Podcast. Außerdem: Welche Optionen bleiben im Irankrieg? Und: Scott Coloms Erfolg in Mississippi",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/nvidia-skandal-donald-trump-irankrieg-ok-america",
+   "at": "2026-11-19T05:05:07+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Trump trifft Xi und Putin, Merz empfängt Koalition der Willigen, Anthropic geht an die Börse",
+   "desc": "In Shenzhen sitzen Trump, Xi und Putin beisammen. In Berlin lädt der Kanzler zur großen Gegenveranstaltung. Und in New York geht der KI-Anbieter Anthropic an die Börse. Das ist die Lage am Donnerstagmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-trump-trifft-xi-und-putin-merz-empfaengt-koalition-der-willigen-anthropic-geht-an-die-boerse-a-4c15941b-08a7-4b39-ae47-deaa8acdefb3",
+   "at": "2026-11-19T04:51:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "USA: Elon Musk bedauert Wahlkampfspenden an Republikaner",
+   "desc": "Fast 500 Millionen US-Dollar hat Elon Musk vor den Midterms an Trumps Partei gespendet. Im Nachhinein kommt sich der Techunternehmer »ziemlich dumm« vor.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/elon-musk-us-zwischenwahlen-republikaner-spenden-greg-abbott",
+   "at": "2026-11-19T04:43:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Apec-Gipfel in Shenzhen: Trump und Putin wollen in China bilaterales Treffen abhalten",
+   "desc": "Der US-Präsident will seinen russischen Amtskollegen am Rande des Apec-Gipfels in China treffen. Es wäre das erste Treffen seit den Alaska-Gesprächen im vergangenen Jahr.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
+   "at": "2026-11-19T04:41:47+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EVP-Chef: Manfred Weber räumt Falschaussage über FPÖ ein",
+   "desc": "Der EVP-Chef hatte der österreichischen FPÖ vorgeworfen, Geld aus Russland zu erhalten. Nach einem Rechtsstreit musste er seine Aussage bei Markus Lanz widerrufen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/manfred-weber-markus-lanz-fpoe-russland-finanzierung-widerruf",
+   "at": "2026-11-19T04:26:26+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Datenleck bei russischer Statistikbehörde: Putin ist zu schwach, um Bedingungen zu stellen",
+   "desc": "In China trifft Putin auf Xi und Trump und sieht sich auf Augenhöhe mit Großmächten. Doch die riesigen russischen Verluste in der Ukraine zeigen: Er gehört nicht dazu.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/datenleck-russische-statistikbehoerde-rosstat-soldaten-tod",
+   "at": "2026-11-19T03:53:35+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukrainekrieg: Krim-Brücke nach drittem Angriff in einer Woche erneut gesperrt",
+   "desc": "Ein Luftangriff hat die Brücke zur von Russland annektierten Halbinsel Krim weiter beschädigt. Der Zugverkehr auf der Brücke wurde vorübergehend eingestellt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/krim-bruecke-kertsch-bruecke-russland-ukraine-angriffe",
+   "at": "2026-11-19T03:19:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Stromsteuersenkung: Sozialverband hält Stromsteuersenkung für nicht ausreichend",
+   "desc": "Die Chefin des Sozialverbands Deutschland fordert weitergehende Entlastungen für Geringverdiener. Die Stromsteuersenkung sei keine langfristige Lösung.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-senkung-bundesregierung-private-haushalte-energiepreise",
+   "at": "2026-11-19T00:45:55+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Zugverkehr auf Krim-Brücke nach erneutem Angriff eingestellt",
+   "desc": "Ein dritter Angriff hat die Brücke zur annektierten Halbinsel Krim weiter beschädigt. US-Präsident Donald Trump und Wladimir Putin planen Zweiertreffen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-19T00:06:06+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: USA reduzieren Präsenz im Nahen Osten auf zwei Flugzeugträger",
+   "desc": "Die »USS George Washington« verlässt Nahost. Zwei US-Flugzeugträger bleiben in der Region. Aus der Straße von Hormus werden erneut Explosionen gemeldet. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-18T23:36:06+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Polen: Immunität von oberstem polnischen Verfassungsrichter aufgehoben",
+   "desc": "Der suspendierte Gerichtspräsident Bogdan Święczkowski verliert seine Immunität. Die Entscheidung ist Teil des Machtkampfs um das polnische Verfassungsgericht.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/polnisches-verfassungsgericht-bogdan-swieczkowski-immunitaet",
+   "at": "2026-11-18T23:19:34+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Frauke Brosius-Gersdorf im SPIEGEL-Talk: »Herr Spahn und ich sind aus den gleichen Gründen gescheitert«",
+   "desc": "Sie wollte Verfassungsrichterin werden und wurde Ziel einer Kampagne: Hier spricht Frauke Brosius-Gersdorf über Entschuldigungen aus der Union, Hürden für ein AfD-Verbot und die Vergesellschaftung großer Wohnungskonzerne.",
+   "url": "https://www.spiegel.de/politik/deutschland/frauke-brosius-gersdorf-im-spiegel-talk-herr-spahn-und-ich-sind-aus-den-gleichen-gruenden-gescheitert-a-421fd180-53be-4018-822e-af20b3567893",
+   "at": "2026-11-18T22:50:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "US-Repräsentantenhaus: Jeffries soll erster schwarzer Chef des Repräsentantenhauses werden",
@@ -52,32 +136,11 @@
    "at": "2026-11-18T16:31:41+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Koalitionsausschuss: Stromsteuersenkung – wie zukunftsfähig ist die Einigung?",
-   "desc": "Stromsteuersenkung und Spritpreisdeckel: Was bedeutet die Einigung im Koalitionsausschuss? Und: Bundesregierung will stärkere Kontrolle der Deutschen Bahn",
-   "url": "https://www.zeit.de/politik/2026-11/koalitionsausschuss-stromsteuer-spritpreisdeckel-bundesregierung-nachrichtenpodcast",
-   "at": "2026-11-18T16:14:23+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "EU-Sanktionen gegen Russland: EU will Handelssanktionen gegen Russland vereinheitlichen",
-   "desc": "Die einzelnen EU-Länder setzen beschlossene Handelssanktionen gegen Russland nicht einheitlich um. Ein neu gegründetes EU-Sanktionsbüro soll die Durchsetzung überwachen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-sanktionen-russland-sanktionsbuero-kommission-umsetzung",
-   "at": "2026-11-18T16:09:33+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Einigung über Stromsteuersenkung: Die Koalition ist in eine neue Phase eingetreten",
    "desc": "Union und SPD haben sich auf eine Senkung der Stromsteuer geeinigt. Doch die Verhandlungen liefen Teilnehmern zufolge teils ruppig. Wie es zur Einigung kam und warum sie ein Vorgeschmack auf die kommenden Monate sein könnte. Von Tina Handel.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/stromsteuer-spritpreisdeckel-einigung-koalition-100.html",
    "at": "2026-11-18T15:45:55+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wahl von Landtagspräsident: LKA ermittelt wegen möglicher Nötigung bei CDU in Sachsen-Anhalt",
-   "desc": "CDU‑Abgeordnete in Sachsen-Anhalt sollten eidesstattlich versichern, den AfD-Landtagspräsidenten Tobias Rausch nicht gewählt zu haben. Dazu ermittelt jetzt das LKA.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/lka-sachsen-anhalt-cdu-afd-eidesstattliche-versicherung-noetigung",
-   "at": "2026-11-18T15:44:16+00:00"
   },
   {
    "source": "Tagesschau",
@@ -87,13 +150,6 @@
    "at": "2026-11-18T15:37:39+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Nordkoreas Atomprogramm: Nordkorea baut Anlage zur Urananreicherung offenbar weiter aus",
-   "desc": "Nordkorea erweitert nach Angaben der Internationalen Atomenergiebehörde seine Atomanlagen. Die Organisation warnt vor einer wachsenden Produktion von Atomwaffenmaterial.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/nordkorea-urananreicherung-yongbyon-atomkomplex-iaeo-gxe",
-   "at": "2026-11-18T15:02:46+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "DAK-Auswertung: Jugendliche konsumieren immer mehr Nikotinbeutel",
    "desc": "Kein Rauchen, kein Dampfen: Nikotinbeutel sind unauffällig. Doch der konzentrierte Suchtstoff bereitet Gesundheitsexperten Sorgen - sie warnen vor einer möglichen Legalisierung. Denn Teenager greifen schon jetzt oft zu.",
@@ -101,25 +157,11 @@
    "at": "2026-11-18T14:24:48+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Religionsfreiheit: Bundesregierung wirft Russland Unterdrückung Gläubiger in Ukraine vor",
-   "desc": "Das Auswärtige Amt sieht die Glaubensfreiheit in der Ukraine durch den Krieg stark gefährdet. Russland greife gezielt Kirchen an. Auf der Krim litten besonders Muslime.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/religionsfreiheit-russland-ukraine-krimtataren-muslime-gxe",
-   "at": "2026-11-18T14:14:50+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "EEG: Reform von Energiegesetzen droht im Chaos zu versinken",
    "desc": "Schwarz-Rot muss bis Jahresende die Förderung erneuerbarer Energien neu regeln. Doch SPD und Union können sich nicht einmal darauf einigen, worüber sie sich bisher geeinigt haben. Und dann mischt sich auch noch Wirtschaftsministerin Reiche ein.",
    "url": "https://www.spiegel.de/politik/deutschland/eeg-reform-von-energiegesetzen-droht-im-chaos-zu-versinken-a-9a9326cb-c732-40a6-95fe-52a3ae8dcb10",
    "at": "2026-11-18T14:00:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Chipexporte nach China: Mit Sex und Chips zum Handelskrieg",
-   "desc": "Die Affäre hat ein Nachspiel: Wie der Seitensprung des Nvidia-Chefs den fragilen Handelskompromiss zwischen den USA und China bedroht. War die Geliebte gar keine Spionin?",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/chip-exporte-china-usa-handelskonflikt-nvidia-jensen-huang-affaere",
-   "at": "2026-11-18T13:45:20+00:00"
   },
   {
    "source": "Tagesschau",
@@ -136,13 +178,6 @@
    "at": "2026-11-18T12:59:46+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Arbeitsmarktreformen: Regierung beschließt Lockerung von Befristungsregeln im Job",
-   "desc": "Arbeitsverträge sollen laut einem Kabinettsbeschluss bald doppelt so lange befristet sein können wie bisher. Topverdiener sollen zudem leichter entlassen werden können.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/arbeitsmarktreformen-befristung-arbeitsvertrag-sonntagsarbeit-alexander-schweitzer-gxe",
-   "at": "2026-11-18T12:53:40+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "\"Kleiner Hüpfer\", \"überfällig\", \"abenteuerlich\" - Reaktionen auf Stromsteuersenkung",
    "desc": "Sie kommt also, die vom Kanzler versprochene Stromsteuersenkung - zumindest für 2027. Die Maßnahme selbst stößt auf ein weitgehend positives Echo. Doch es gibt auch viel Kritik - daran, dass die Entlastung nicht dauerhaft ist.",
@@ -157,13 +192,6 @@
    "at": "2026-11-18T12:35:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Shenzhen: Xi Jinping empfängt Donald Trump persönlich in Shenzhen",
-   "desc": "Donald Trump ist zum Apec-Gipfel in China eingetroffen. Anders als bisher angekündigt, will er dort mit Xi und Putin über ein Ende des Ukrainekriegs sprechen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-china-apec-gipfel-xi-jinping-wladimir-putin-gxe",
-   "at": "2026-11-18T12:08:02+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Keine Neuauszählung: BSW scheitert mit Wahlprüfungsbeschwerde",
    "desc": "Zu wenige Stimmen und Belege: Das Bundesverfassungsgericht lehnt eine Klage des BSW auf Neuauszählung der Stimmen bei der Bundestagswahl ab. Nun erwägt die Union eine Reform der Wahlprüfung. Von Max Bauer.",
@@ -171,25 +199,11 @@
    "at": "2026-11-18T11:55:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Sorge- und Umgangsrecht: Neues Sorgerecht soll Kinder vor gewalttätigem Elternteil schützen",
-   "desc": "Wer Gewalt gegen seinen Partner oder seine Partnerin ausübt, kann künftig das Umgangsrecht mit Kindern verlieren. Das Parlament muss dem Gesetzentwurf noch zustimmen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/sorge-umgangsrecht-reform-haeusliche-gewalt-familiengerichte-kinderrechte-bundesregierung-gxe",
-   "at": "2026-11-18T11:46:59+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Sorgerechtsreform: Kein Umgangsrecht mehr für gewalttätigen Elternteil",
    "desc": "Wie können Kinder besser geschützt werden, wenn es zwischen den Eltern zu Gewalt kommt? Die Regierung hat dafür eine Gesetzesreform auf den Weg gebracht - mit klar geregelten Sanktionen für Eltern und mehr Mitbestimmungsrechten für Kinder.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/gesetzentwurf-sorgerecht-100.html",
    "at": "2026-11-18T11:19:09+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Senkung der Stromsteuer: Kritik aus der Koalition trotz Einigung auf Stromsteuersenkung",
-   "desc": "Die Stromsteuer wird gesenkt – doch die Diskussionen gehen weiter. In der CDU wird der Arbeitsstil der SPD kritisiert, in der SPD der fehlende Mut des Kanzlers.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-cdu-spd-paul-ziemiak-thorsten-rudolph-anke-rehlinger-gxe",
-   "at": "2026-11-18T10:46:44+00:00"
   },
   {
    "source": "Tagesschau",
@@ -232,34 +246,6 @@
    "desc": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
    "at": "2026-11-18T06:20:31+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundestagswahl 2025: Karlsruhe entscheidet über BSW-Wahlbeschwerde",
-   "desc": "Bei der Bundestagswahl 2025 fehlten dem BSW weniger als 10.000 Stimmen für den Einzug ins Parlament. Im Streit um eine Neuauszählung steht jetzt eine Entscheidung aus Karlsruhe an. Von K. Hempel und T. Zachäus.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/muss-bundestagswahl-neu-ausgezaehlt-werden-bsw-100.html",
-   "at": "2026-11-18T05:05:41+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Bundesverfassungsgericht zu BSW-Beschwerde, Alexander Zverev wird verklagt, GTA 6 und Zeitzonen",
-   "desc": "Das Verfassungsgericht entscheidet über die Neuauszählung der Bundestagswahl. Alexander Zverev soll nichts Falsches sagen. Und Kiribati ist uns weit voraus. Das ist die Lage am Mittwochmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-bundesverfassungsgericht-zu-bsw-beschwerde-alexander-zverev-wird-verklagt-gta-6-und-zeitzonen-a-b16b71f4-1d22-4f8a-a9f7-4a1a879a77c6",
-   "at": "2026-11-18T04:38:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "\"Heimatreport\": Viel Zufriedenheit, aber auch Sorgen",
-   "desc": "Der erste \"Heimatreport\" des Bundeslandwirtschaftsministeriums zeigt: Viele Deutsche sind zufrieden und fühlen sich mit Wohnort und Region verbunden. Sorgen gibt es, dass sich die Lebensbedingungen verschlechtern. Von Eva Huber.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/stimmungslage-deutschland-heimatreport-100.html",
-   "at": "2026-11-18T04:31:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Koalitionsausschuss: Spitzen von CDU, CSU, SPD beraten über Stromsteuer, Rente, Spritpreisbremse",
-   "desc": "Gegen 2 Uhr nachts verließen Merz, Klingbeil, Söder und anderen Koalitionäre das Kanzleramt. Dort hatten sie vor allem nach einer Lösung im Streit über die Stromsteuer gesucht. Ob sie erfolgreich waren, ist noch nicht bekannt.",
-   "url": "https://www.spiegel.de/politik/deutschland/koalitionsausschuss-spitzen-von-cdu-csu-spd-beraten-ueber-stromsteuer-rente-spritpreisbremse-a-fee3177e-e386-42fd-98d7-37b8b344904b",
-   "at": "2026-11-18T03:40:00+00:00"
   }
  ]
 }

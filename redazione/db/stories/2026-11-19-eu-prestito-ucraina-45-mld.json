@@ -1,0 +1,37 @@
+{
+ "title": "Ue: la Commissione propone un nuovo prestito di 45 miliardi all'Ucraina",
+ "section": "economia",
+ "rank": 27,
+ "status": "live",
+ "summary": "La Commissione europea propone un prestito di 45 miliardi di euro all'Ucraina per il 2027, con debito comune dell'Unione. Serve il sì di Parlamento europeo e Consiglio; quattro paesi hanno detto che non aderiranno, secondo Euronews.",
+ "article": "La Commissione europea ha proposto un nuovo prestito fino a 45 miliardi di euro per l'Ucraina, destinato al 2027, scrivono Il Post ed Euronews. Si aggiunge ai 90 miliardi già approvati per il 2026 e il 2027. Secondo Il Post il governo ucraino dice che con i costi in aumento servono altri 70 miliardi per il 2027; Euronews scrive che l'Ue coprirebbe due terzi di quel disavanzo e che gli alleati come Regno Unito, Norvegia, Canada, Giappone e Australia dovrebbero fornire i restanti 25 miliardi.\n\nDei 45 miliardi circa 25 sono per l'acquisto di armi e circa 20 per spese civili come scuole e ospedali, riferisce Il Post. Il prestito sarebbe finanziato con debito comune: la Commissione emetterebbe obbligazioni a nome di tutti gli Stati membri, scrive Euronews. Funzionari della Commissione, citati da Euronews, stimano interessi per circa 6 miliardi l'anno sul totale dei prestiti, che gli Stati membri coprirebbero con sussidi perché non gravino sull'Ucraina.\n\nSlovacchia, Repubblica Ceca, Ungheria e Bulgaria hanno indicato che non parteciperanno, e il premier slovacco Robert Fico è contrario, scrive Euronews. Il cancelliere tedesco Friedrich Merz ha minacciato di porre il veto sul prossimo bilancio Ue se i 27 non appoggiano il prestito, sempre secondo Euronews. La Commissione offre ai quattro paesi di aderire alla parte civile da 20 miliardi e di restare fuori da quella militare da 25.\n\nL'Ucraina rimborserebbe solo se la Russia accettasse riparazioni di guerra in un futuro accordo di pace, scrive Euronews; fino ad allora l'Ue rinnoverebbe il prestito. L'Ue si riserva di usare i beni russi congelati, circa 210 miliardi, per il rimborso. La proposta è preliminare e deve essere approvata da Parlamento europeo e Consiglio, riferisce Il Post. Il Kyiv Independent aveva anticipato la proposta come esclusiva.",
+ "facts": [
+  {"text": "La Commissione propone un prestito fino a 45 miliardi di euro all'Ucraina per il 2027.", "who": ["Il Post", "Euronews"]},
+  {"text": "Circa 25 miliardi sarebbero per armi e circa 20 per spese civili.", "who": ["Il Post"]},
+  {"text": "Slovacchia, Repubblica Ceca, Ungheria e Bulgaria hanno indicato che non parteciperanno.", "who": ["Euronews"]},
+  {"text": "L'Ucraina rimborserebbe solo se la Russia pagasse riparazioni; l'Ue può usare i beni russi congelati.", "who": ["Euronews", "Il Post"]}
+ ],
+ "view": "Sono certi importo e struttura della proposta, che però è preliminare. Non si sa se i governi la approveranno, né come cambierà dopo i veti annunciati.\n\nConta perché decide chi finanzia la difesa e il bilancio ucraino nel 2027 e per quanto il debito comune resterebbe a carico degli Stati membri. Da guardare: la posizione dei leader al prossimo Consiglio europeo e il ruolo dei beni russi congelati.",
+ "open": [
+  "Il Consiglio approverà il prestito senza i quattro paesi che non partecipano?",
+  "I partner extra Ue daranno davvero i 25 miliardi?"
+ ],
+ "sources": [
+  {"name": "Euronews", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/19/eu-plans-a-new-45bn-loan-to-ukraine-how-much-will-it-cost-and-will-it-be-repaid", "angle": "Struttura del prestito, costi, paesi che non aderiscono, rimborso e beni russi.", "date": "2026-11-19"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/18/commissione-europea-prestito-ucraina/", "angle": "Importo, uso dei fondi, necessità di approvazione di Parlamento e Consiglio.", "at": "2026-11-18T20:18:00+01:00"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/exclusive-eu-proposes-additional-45-billion-euros-for-ukraine-seeks-to-incentivize-allies-to-step-up/", "angle": "Anticipazione della proposta.", "date": "2026-11-18"}
+ ],
+ "firstSeen": "2026-11-19T07:25:00+01:00",
+ "updated": "2026-11-19T07:25:00+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Unione europea", "Debito comune"],
+ "themes": ["ucraina"],
+ "places": ["EU", "UA"],
+ "figure": {"value": "45 mld €", "label": "il prestito proposto dalla Commissione per il 2027"},
+ "photo": {"wiki": "it", "title": "Palazzo Berlaymont", "alt": ["Bruxelles"]},
+ "history": [
+  {"at": "2026-11-19T07:25:00+01:00", "text": "Prima notizia: la Commissione propone 45 miliardi di prestito all'Ucraina."}
+ ],
+ "divergences": [],
+ "notCovered": []
+}

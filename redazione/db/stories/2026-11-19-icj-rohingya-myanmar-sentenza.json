@@ -1,0 +1,36 @@
+{
+ "title": "L'Aia: oggi la Corte dell'Onu decide sul genocidio dei Rohingya in Myanmar",
+ "section": "mondo",
+ "rank": 24,
+ "status": "live",
+ "summary": "La Corte internazionale di giustizia emette oggi la sentenza sul caso presentato dal Gambia contro il Myanmar. Il Myanmar nega il genocidio.",
+ "article": "La Corte internazionale di giustizia emette oggi, giovedì 19 novembre, la sentenza nel caso del Gambia contro il Myanmar per il genocidio dei Rohingya, scrivono Reuters e Al Jazeera. Secondo Al Jazeera la lettura comincia alle 10 all'Aia e dura fino a 90 minuti. Reuters ricorda che la data è stata annunciata il 3 novembre e che le udienze sul merito sono cominciate il 12 gennaio 2026. Al Jazeera scrive che potrebbe essere la prima volta che la Corte stabilisce che uno Stato ha commesso un genocidio. La sentenza è definitiva e non si può appellare.\n\nIl Gambia, paese a maggioranza musulmana dell'Africa occidentale, ha presentato il ricorso nel novembre 2019 con il sostegno dell'Organizzazione della cooperazione islamica, riferisce Al Jazeera. Alla Corte ha detto che il Myanmar «ha preso di mira per la distruzione» i Rohingya, secondo Reuters.\n\nIl Myanmar nega il genocidio. Dice che le sue forze hanno risposto in modo legittimo agli attacchi di gruppi armati e che non ci sono prove dirette dell'intento di distruggere i Rohingya, secondo Al Jazeera. Contesta anche che il Gambia possa chiedere riparazioni per loro conto. Nel gennaio 2026 ha detto alla Corte che il Gambia non ha dimostrato l'accusa, riferisce Reuters.\n\nL'offensiva militare del 2017 ha spinto almeno 730.000 Rohingya in Bangladesh, scrive Al Jazeera. Secondo l'Onu, citata da Reuters, in Bangladesh vivono oltre un milione di rifugiati Rohingya, soprattutto a Cox's Bazar. Nel dicembre 2017 Medici senza frontiere stimò almeno 6.700 Rohingya uccisi in un mese, secondo Reuters. Al Jazeera dice che circa 550.000 Rohingya restano in Myanmar con restrizioni su movimenti e cure.",
+ "facts": [
+  {"text": "La Corte internazionale di giustizia emette oggi la sentenza sul caso del Gambia contro il Myanmar.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Il Myanmar nega il genocidio e dice di aver risposto ad attacchi di gruppi armati.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "L'offensiva del 2017 ha spinto almeno 730.000 Rohingya in Bangladesh, secondo Al Jazeera.", "who": ["Al Jazeera"]},
+  {"text": "Medici senza frontiere stimò almeno 6.700 Rohingya uccisi tra agosto e settembre 2017.", "who": ["Reuters"]}
+ ],
+ "view": "Si sa quando e dove la Corte leggerà la sentenza e quali sono le posizioni dichiarate delle parti. Il contenuto della decisione non è noto.\n\nConta perché sarebbe la prima volta che la Corte si pronuncia nel merito su un genocidio di questo tipo, in un caso portato da uno Stato non direttamente coinvolto. Da guardare: il dispositivo, le misure ordinate al Myanmar e la risposta del governo di Naypyidaw.",
+ "open": [
+  "La Corte riconoscerà il genocidio, in tutto o in parte?",
+  "Il Myanmar rispetterà la sentenza?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/19/from-2017-crackdown-to-un-court-a-decade-of-the-rohingya-crisis", "angle": "Cronologia della crisi dal 2017, posizioni di Gambia e Myanmar, stime di Msf.", "at": "2026-11-19T06:52:00+01:00"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/19/icj-to-rule-on-rohingya-genocide-case-against-myanmar", "angle": "Orario della lettura, posizioni delle parti, numeri dei rifugiati e dei Rohingya rimasti.", "date": "2026-11-19"}
+ ],
+ "firstSeen": "2026-11-19T07:25:00+01:00",
+ "updated": "2026-11-19T07:25:00+01:00",
+ "change": "",
+ "tags": ["Myanmar", "Rohingya", "Diritti umani"],
+ "themes": [],
+ "places": ["MM", "GM", "BD"],
+ "city": {"name": "L'Aia", "lat": 52.08, "lon": 4.3},
+ "photo": {"wiki": "it", "title": "Palazzo della Pace", "alt": ["L'Aia"]},
+ "history": [
+  {"at": "2026-11-19T07:25:00+01:00", "text": "Prima notizia: oggi la sentenza della Corte internazionale di giustizia sul caso Gambia contro Myanmar."}
+ ],
+ "divergences": [],
+ "notCovered": []
+}

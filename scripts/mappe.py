@@ -376,7 +376,8 @@ def km2(r):
 
 
 def disegna(sigle, city=None):
-    """L'SVG della mappa e il punto del luogo usato (o None). sigle: il primo paese è il principale."""
+    """L'SVG della mappa, il punto del luogo usato (o None) e il fuoco: dove sta il luogo della notizia nel riquadro,
+    in percentuale (x, y), oppure None. sigle: il primo paese è il principale."""
     sigle = [s for s in sigle if s]
     if "EU" in sigle:
         i = sigle.index("EU")
@@ -582,7 +583,24 @@ def disegna(sigle, city=None):
         out.append('<circle cx="%s" cy="%s" r="13" fill="%s" fill-opacity=".28"/>' % (num(x), num(y), PUNTO))
         out.append('<circle cx="%s" cy="%s" r="5.5" fill="%s" stroke="#fff" stroke-width="2"/>' % (num(x), num(y), PUNTO))
     out.append("</svg>")
-    return "".join(out), punto
+    # il fuoco: il luogo preciso se c'è, altrimenti il centro del paese principale. Il sito ritaglia la mappa (quadrata
+    # nelle miniature, larga e bassa in apertura) tenendo in vista questo punto
+    fuoco = None
+    if punto:
+        fuoco = px(*punto)
+    elif chiavi and not eu:
+        xs, ys = [], []
+        for p in nucleo(tutte[chiavi[0]]):
+            for piece in pr.pezzi(p[0]):
+                for lon, lat in piece:
+                    x, y = px(lon, lat)
+                    xs.append(x)
+                    ys.append(y)
+        if xs:
+            fuoco = ((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2)
+    if fuoco:
+        fuoco = (round(100 * min(max(fuoco[0] / W, 0), 1)), round(100 * min(max(fuoco[1] / H, 0), 1)))
+    return "".join(out), punto, fuoco
 
 
 # ---------- dalla storia ----------
@@ -633,10 +651,10 @@ def didascalia(sigle, punto, city):
 
 def immagine(s, cartella, rel):
     """Scrive la mappa della storia in <cartella>/<id>.svg (solo se è cambiata) e dà il campo img per il sito:
-    {"src": "<rel>/<id>.svg?v=<impronta>", "label": didascalia, "alt": testo per chi non vede}."""
+    {"src": "<rel>/<id>.svg?v=<impronta>", "label": didascalia, "kind": "map", "fx", "fy": il fuoco in percentuale}."""
     sigle = sigle_storia(s)
     city = s.get("city") if isinstance(s.get("city"), dict) else None
-    svg, punto = disegna(sigle, city)
+    svg, punto, fuoco = disegna(sigle, city)
     os.makedirs(cartella, exist_ok=True)
     path = os.path.join(cartella, s["id"] + ".svg")
     data = svg.encode("utf-8")
@@ -649,7 +667,10 @@ def immagine(s, cartella, rel):
             f.write(data)
     v = hashlib.sha1(data).hexdigest()[:8]
     lab = didascalia(sigle, punto, city)
-    return {"src": rel + "/" + s["id"] + ".svg?v=" + v, "label": lab, "kind": "map"}
+    img = {"src": rel + "/" + s["id"] + ".svg?v=" + v, "label": lab, "kind": "map"}
+    if fuoco:
+        img.update(fx=fuoco[0], fy=fuoco[1])
+    return img
 
 
 def main(argv):
@@ -664,10 +685,10 @@ def main(argv):
             continue
         sigle.append(argv[i].upper())
         i += 1
-    svg, punto = disegna(sigle, city)
+    svg, punto, fuoco = disegna(sigle, city)
     with open(out, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(out, len(svg), "byte", "punto:", punto, "didascalia:", didascalia(sigle, punto, city))
+    print(out, len(svg), "byte", "punto:", punto, "fuoco:", fuoco, "didascalia:", didascalia(sigle, punto, city))
 
 
 if __name__ == "__main__":

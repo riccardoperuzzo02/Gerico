@@ -486,7 +486,9 @@
     o = o || {};
     // un'immagine già arrivata in questa visita c'è subito, senza dissolvenza: tornando a una pagina la si ritrova com'era
     const seen = imgSeen.has(im.src);
-    return '<figure class="media' + (o.cls ? " " + o.cls : "") + '"><img' + (seen ? ' class="in"' : "") + ' src="' + G.esc(im.src) + '" alt="" width="640" height="360" decoding="' + (seen ? "sync" : "async") + '"' +
+    // la mappa si ritaglia (quadrata nelle miniature, larga e bassa in apertura) tenendo in vista il luogo della notizia
+    const fuoco = Number.isFinite(im.fx) && Number.isFinite(im.fy) ? ' style="object-position:' + Math.round(im.fx) + "% " + Math.round(im.fy) + '%"' : "";
+    return '<figure class="media' + (o.cls ? " " + o.cls : "") + '"><img' + (seen ? ' class="in"' : "") + ' src="' + G.esc(im.src) + '" alt="" width="640" height="360"' + fuoco + ' decoding="' + (seen ? "sync" : "async") + '"' +
       (o.eager ? ' fetchpriority="high"' : seen ? "" : ' loading="lazy"') + ">" +
       (o.cap !== false && im.label ? '<figcaption class="m-cap">' + PIN + "<span>" + G.esc(im.label) + "</span></figcaption>" : "") + "</figure>";
   };

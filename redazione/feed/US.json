@@ -1,20 +1,139 @@
 {
  "code": "US",
- "asOf": "2026-11-19T17:17:34+00:00",
+ "asOf": "2026-11-19T19:17:35+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Photos, videos show devastating South Florida flooding",
+   "desc": "Significant flooding devastated some South Florida communities this week.",
+   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
+   "at": "2026-11-19T19:12:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Diapers are often cited in child injury reports, but not recalled",
+   "desc": "Despite hundreds of rash reports and a handful of lawsuits against different brands, the Consumer Product Safety Commission has never announced a diaper recall and does not have dedicated standards for diapers.",
+   "url": "https://www.cbsnews.com/news/diapers-child-injury-reports-no-recalls/",
+   "at": "2026-11-19T19:09:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Amid recent banking outages, should you start carrying cash again? Top advisors weigh in",
+   "desc": "Recent outages are prompting a rethink of cash. At the very least, your money should be diversified, top advisors say.",
+   "url": "https://www.cnbc.com/2026/11/19/banking-outages-emergency-cash.html",
+   "at": "2026-11-19T19:06:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "South Florida severe weather and flooding live updates",
+   "desc": "After more than 15 inches of rain flooded parts of South Florida, schools remain closed and roads underwater Thursday as another round of heavy rain threatens to worsen conditions.",
+   "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/",
+   "at": "2026-11-19T18:56:47+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "As Sanofi's Pompe drug shortage drags on, some patients struggle to access treatments",
+   "desc": "An ongoing shortage of Sanofi’s Pompe disease treatment is forcing some patients to miss critical doses. They worry their health is at risk.",
+   "url": "https://www.cnbc.com/2026/11/19/as-pompe-drug-shortage-drags-on-patients-struggle-to-get-treatments.html",
+   "at": "2026-11-19T18:55:57+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Bay Area Wonders: What Will Anthropic Workers Do With Their Wealth?",
+   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound affluence from the company’s initial public offering.",
+   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
+   "at": "2026-11-19T18:55:40+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic's historic IPO is a boon to these 12 portfolio stocks. Here's how they benefit",
+   "desc": "From chips to industrials and banks, we have companies that stand to gain from Anthropic's blockbuster debut.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/19/anthropics-historic-ipo-is-a-boon-to-these-12-portfolio-stocks-heres-how-they-benefit.html",
+   "at": "2026-11-19T18:48:29+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Ally Arranged for Russian Flag to Be Displayed on an Arch in Atlanta",
+   "desc": "Rodney Mims Cook Jr., chairman of the U.S. Commission of Fine Arts, sought to pay tribute to Russia’s ambassador to United States, whose death was announced on Nov. 11.",
+   "url": "https://www.nytimes.com/2026/11/18/us/atlanta-arch-russia-flag-trump.html",
+   "at": "2026-11-19T18:48:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang's — and Nvidia's — legal exposure balloons",
+   "desc": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney.",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
+   "at": "2026-11-19T18:44:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Netflix, Amazon, Fox to bid for 2030 men's World Cup rights; Disney out",
+   "desc": "Netflix, Amazon and Fox are among those bidding on the 2030 men's World Cup media rights. Disney has decided not to bid, sources told CNBC.",
+   "url": "https://www.cnbc.com/2026/11/19/netflix-amazon-fox-bid-for-2030-mens-world-cup-rights-disney-out.html",
+   "at": "2026-11-19T18:30:51+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "The 'Magic Six': How to strengthen your marriage in midlife",
+   "desc": "How do we maintain healthy romantic relationships as we age? Allison Aubrey and Scott Detrow talk about about the science of healthy, later-in-life relationships.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-5996688/magic-6-marriage-tips-nina-totenberg-relationships",
+   "at": "2026-11-19T18:28:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Top Massachusetts Court to Weigh Lindsay Clancy’s Motion to Dismiss",
+   "desc": "Her lawyers plan to argue in January that the first-degree murder charges against her should be dropped following her mistrial.",
+   "url": "https://www.nytimes.com/2026/11/19/us/lindsay-clancy-trial-juror-appeal.html",
+   "at": "2026-11-19T18:27:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AMD dives on short-seller report of alleged China exposure",
+   "desc": "AMD was slumping after a short-seller alleged that its firmware showed up at a blacklisted Chinese company. The company said it complies with U.S. law.",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "at": "2026-11-19T18:24:54+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Amazon launches in-app push against Mamdani-backed delivery bill in New York City",
+   "desc": "Amazon has lobbied heavily against the proposed legislation, while New York City Mayor Zohran Mamdani backed the bill earlier this year.",
+   "url": "https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html",
+   "at": "2026-11-19T18:03:03+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Woman runs 7 marathons while pregnant this year: \"I am very stubborn\"",
+   "desc": "Deirdre Keane, a 38-year-old nurse and management consultant, achieved her goal of completing all seven World Marathon Majors while pregnant with her first child.",
+   "url": "https://www.cbsnews.com/news/deirdre-keane-world-marathon-majors-pregnant/",
+   "at": "2026-11-19T18:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
+   "desc": "President Trump disclosed purchases of Nvidia stock, SpaceX debt and Tesla shares in September, alongside millions of dollars in other investments.",
+   "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html",
+   "at": "2026-11-19T17:59:04+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Anthropic shares soar in Nasdaq trading debut, surging 39%",
    "desc": "Anthropic raised a record $81.3 billion, catapulting it past SpaceX, which raised $75 billion​ when it went public in June.",
    "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/",
-   "at": "2026-11-19T17:16:34+00:00"
+   "at": "2026-11-19T17:38:49+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "We're adding to a consumer stock as the market enters oversold territory",
-   "desc": "The S&P Oscillator officially moved into oversold territory after Wednesday's session.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/19/were-adding-to-a-consumer-stock-as-the-market-enters-oversold-territory.html",
-   "at": "2026-11-19T17:12:46+00:00"
+   "source": "CBS News",
+   "title": "Putin says Russia won't negotiate with Ukraine after bridge strike",
+   "desc": "Russian President Vladimir Putin said Russia will not negotiate any limited ceasefire now with Ukraine, citing a Ukrainian strike on a highly symbolic bridge this week.",
+   "url": "https://www.cbsnews.com/news/putin-russia-ukraine-bridge-strike/",
+   "at": "2026-11-19T17:22:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump, Xi and Putin sit down for a rare 3-way meeting in China",
+   "desc": "Russia says Putin, Trump and China's Xi agreed during a rare meeting to boost gas and oil production, and \"reaffirmed that there can be no winners in a nuclear war.\"",
+   "url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
+   "at": "2026-11-19T17:18:00+00:00"
   },
   {
    "source": "CBS News",
@@ -46,17 +165,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Trump Seeks to Project Power Abroad While Forced to Share It at Home",
+   "title": "At Summit With Xi and Putin, Trump Seeks to Project Power Abroad While Sharing It at Home",
    "desc": "Weakened by the midterm elections, President Trump offered hugs, arm pats and smiles to autocrats from Russia and China in contrast to the threats he is making to ascendant Democrats in Washington.",
    "url": "https://www.nytimes.com/2026/11/19/us/politics/trump-summit-power.html",
-   "at": "2026-11-19T17:05:17+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Ally Arranged for Russian Flag to Be Displayed on an Arch in Atlanta",
-   "desc": "Rodney Mims Cook Jr., chairman of the U.S. Commission of Fine Arts, sought to pay tribute to Russia’s ambassador to United States, whose death was announced on Nov. 11.",
-   "url": "https://www.nytimes.com/2026/11/18/us/atlanta-arch-russia-flag-trump.html",
-   "at": "2026-11-19T17:04:10+00:00"
+   "at": "2026-11-19T17:05:18+00:00"
   },
   {
    "source": "NPR",
@@ -80,18 +192,11 @@
    "at": "2026-11-19T16:58:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "AMD falls on short-seller report of alleged China exposure",
-   "desc": "AMD was slumping Wednesday after a short-seller alleged that its firmware showed up at blacklisted Chinese company",
-   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-   "at": "2026-11-19T16:53:47+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "DOJ taps prosecutor for probes into Mar-a-Lago raid, docs case",
    "desc": "The Justice Department has tapped the top federal prosecutor in Los Angeles to work on probes into the FBI's raid on Mar-a-Lago and the Trump documents case.",
    "url": "https://www.cbsnews.com/news/bill-essayli-justice-department-mar-a-lago-trump-documents-case/",
-   "at": "2026-11-19T16:49:24+00:00"
+   "at": "2026-11-19T16:49:00+00:00"
   },
   {
    "source": "New York Times",
@@ -140,14 +245,7 @@
    "title": "Meet Anthropic's 7 co-founders, now worth about $20 billion each",
    "desc": "Dario Amodei and the company's other six co-founders instantly joined the ranks of America's richest citizens with the AI giant's initial public offering.",
    "url": "https://www.cbsnews.com/news/anthropic-ipo-founders-net-worth/",
-   "at": "2026-11-19T16:21:06+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Amazon launches in-app push against Mamdani-backed delivery bill in New York City",
-   "desc": "Amazon has lobbied heavily against the proposed legislation, while New York City Mayor Zohran Mamdani backed the bill earlier this year.",
-   "url": "https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html",
-   "at": "2026-11-19T16:15:40+00:00"
+   "at": "2026-11-19T16:21:00+00:00"
   },
   {
    "source": "NPR",
@@ -178,13 +276,6 @@
    "at": "2026-11-19T15:31:23+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Photos, videos show devastating South Florida flooding",
-   "desc": "Significant flooding devastated some South Florida communities this week.",
-   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
-   "at": "2026-11-19T15:06:25+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Anthropic IPO, AI wealth spawn a new, leaner kind of family office",
    "desc": "The Anthropic IPO and a flood of AI wealth are spurring the creation of new family offices built for the era of artificial intelligence.",
@@ -197,13 +288,6 @@
    "desc": "The beloved Citgo sign will be lit again on Thursday night after it was rebuilt and moved 120 feet to the east, its latest incarnation in a city transformed by development.",
    "url": "https://www.nytimes.com/2026/11/19/us/boston-citgo-sign-fenway-park.html",
    "at": "2026-11-19T14:57:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "South Florida severe weather and flooding live updates",
-   "desc": "After more than 15 inches of rain flooded parts of South Florida, schools remain closed and roads underwater Thursday as another round of heavy rain threatens to worsen conditions.",
-   "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/",
-   "at": "2026-11-19T14:48:04+00:00"
   },
   {
    "source": "New York Times",
@@ -283,13 +367,6 @@
    "at": "2026-11-19T12:26:01+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Anthropic Employees Work Hard, but Don’t Expect Them to Play Hard",
-   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound wealth from the company’s initial public offering.",
-   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
-   "at": "2026-11-19T12:11:09+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Nvidia interim CEO Kress tells employees ‘let’s move forward’ at first all-hands meeting since Jensen Huang exit",
    "desc": "Nvidia's interim CEO Colette Kress urges staff forward and offers pay raises after Jensen Huang exit.",
@@ -318,24 +395,17 @@
    "at": "2026-11-19T11:20:42+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
-   "desc": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
-   "at": "2026-11-19T10:54:07+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Investors scramble for a piece of AI giant Anthropic in blockbuster IPO",
-   "desc": "Shares in the maker of the popular Claude artificial intelligence model will start trading on the Nasdaq Thursday.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
-   "at": "2026-11-19T10:00:00+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Muslims will outnumber Christians worldwide by 2035, report says",
    "desc": "By 2070, the Democratic Republic of the Congo will surpass the United States as the country with the largest total number of Christians.",
    "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2035-report-says",
+   "at": "2026-11-19T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Investors scramble for a piece of AI giant Anthropic in blockbuster IPO",
+   "desc": "Shares in the maker of the popular Claude artificial intelligence model leapt in first day of trading on the Nasdaq Thursday.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
    "at": "2026-11-19T10:00:00+00:00"
   },
   {
@@ -351,13 +421,6 @@
    "desc": "President Trump meets with China's Xi and Russia's Putin, House Democrats nominate Hakeem Jeffries as next speaker of the House, AI giant Anthropic raises more than $100 billion in record-setting IPO.",
    "url": "https://www.npr.org/2026/11/19/nx-s1-6042289/morning-news-brief",
    "at": "2026-11-19T09:46:29+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
-   "desc": "Iran takes the offensive with attacks on ships in the Strait of Hormuz and airstrikes on several countries around the Persian Gulf.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6044206/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
-   "at": "2026-11-19T09:46:24+00:00"
   },
   {
    "source": "CNBC",
@@ -424,24 +487,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Trump Arrives in China Focused on Friendship With Xi, Not Nvidia Spy Scandal",
-   "desc": "President Xi Jinping of China offered a hug and a red-carpet welcome as President Trump avoided discussing the espionage case that brought down Nvidia’s Jensen Huang.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-shenzhen-spy-scandal.html",
-   "at": "2026-11-19T02:55:54+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Obama Tells Incoming House Democrats to Keep Up Outreach in Red Areas",
    "desc": "The former president told the newly elected lawmakers that the country was going through a moment of “generational change.” He also praised Representative Hakeem Jeffries, the likely next speaker.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/barack-obama-house-democrats.html",
    "at": "2026-11-19T02:54:47+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Musk says Jensen Huang is irreplaceable, regrets midterm spending",
-   "desc": "Elon Musk spoke about Jensen Huang, his U.S. midterms spending and overlaps between SpaceX and Tesla at the Dealbook Summit.",
-   "url": "https://www.cnbc.com/2026/11/19/elon-musk-jensen-huang-midterms.html",
-   "at": "2026-11-19T02:49:35+00:00"
   },
   {
    "source": "CBS News",
@@ -529,13 +578,6 @@
   },
   {
    "source": "CBS News",
-   "title": "How Did Political Corruption Get So Bad?",
-   "desc": "Nine in ten voters called government corruption a major factor in the midterms. But much of what they're angry about isn't illegal. Former federal prosecutor Leo Wise explains how four decades of Supreme Court rulings narrowed what counts as a crime, and what Congress could do to fix it. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
-   "url": "https://www.cbsnews.com/video/how-did-political-corruption-get-so-bad/",
-   "at": "2026-11-18T22:03:36+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "11/18: The Takeout with Major Garrett",
    "desc": "President Trump in China for talks with Chinese President Xi Jinping and Russian President Vladimir Putin; Hakeem Jeffries wins Democratic nomination for House speaker.",
    "url": "https://www.cbsnews.com/video/111826-the-takeout-with-major-garrett/",
@@ -556,20 +598,6 @@
    "at": "2026-11-18T21:07:14+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Senator Bill Cassidy Blocks Trump Pick to Head Science Agency",
-   "desc": "A venture capitalist and Peter Thiel acolyte, Jim O’Neill faced bipartisan concern over whether he would stand up for science.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/bill-cassidy-jim-oneill-science.html",
-   "at": "2026-11-18T20:41:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Alleged Russian agent accused of spying on U.S. defense firm",
-   "desc": "A Russian man was indicted for allegedly surveilling and collecting information about employees of a Silicon Valley defense company.",
-   "url": "https://www.cbsnews.com/news/russia-agent-charges-spying-silicon-valley/",
-   "at": "2026-11-18T20:35:00+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Boxing world champion detained by ICE in Texas",
    "desc": "Jorge Linares, a Venezuelan professional boxer, was detained by ICE in Texas, according to federal officials and his attorneys.",
@@ -582,55 +610,6 @@
    "desc": "Newly elected House members are attending freshman orientation on Capitol Hill, where their introduction to Congress feels a lot like the first days of school.",
    "url": "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
    "at": "2026-11-18T20:04:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-   "desc": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
-   "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-   "at": "2026-11-18T19:47:05+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
-   "desc": "The Federal Reserve on Wednesday released minutes from its October policy meeting at which it voted to hold its benchmark interest rate in a range between 3.75%-4%.",
-   "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-   "at": "2026-11-18T19:41:59+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Epstein's death may not have been suicide, new analysis suggests",
-   "desc": "Forensics expert Dr. Michael Freeman says multiple images and overlooked details about Jeffrey Epstein's death contradict the conclusion that he died by suicide.",
-   "url": "https://www.cbsnews.com/news/jeffrey-epstein-death-suicide-forensics-expert-analysis/",
-   "at": "2026-11-18T19:16:47+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Largest U.S. data centers use as much power as some countries",
-   "desc": "Hyperscale data centers used almost 2% of all U.S. electricity between 2024 and 2025, a Harvard study shows.",
-   "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/",
-   "at": "2026-11-18T19:05:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "FAA contractor struggled to find location of outage during ground stop",
-   "desc": "It took several hours for contractor L3Harris to pinpoint the source of an outage that caused last Friday's nationwide ground stop​.",
-   "url": "https://www.cbsnews.com/news/ground-stop-l3harris-system-outage/",
-   "at": "2026-11-18T18:36:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "\"No indication\" outages are related to cyberattacks, officials say",
-   "desc": "Officials are testifying at a House committee hearing on worldwide threats as a series of network outages, including Microsoft Outlook and several banking institutions, have rattled Americans.",
-   "url": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/",
-   "at": "2026-11-18T18:35:28+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Investigators make progress in hunt for cause of FAA ground stop",
-   "desc": "Engineers and analysts are still searching for the root cause of the issue, which led to a four-hour ground stop on Friday.",
-   "url": "https://www.cnbc.com/2026/11/18/faa-ground-stop-router-investigation.html",
-   "at": "2026-11-18T18:13:25+00:00"
   }
  ]
 }

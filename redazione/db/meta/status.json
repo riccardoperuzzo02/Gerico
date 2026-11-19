@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: tre ricerche (occupati e disoccupazione Australia, partite correnti area euro) non hanno dato il dato ufficiale di oggi. Aggiunta all'agenda 1 voce da Forex Factory (mutui in ritardo negli Usa)."
   },
   "lastPublish": {
-    "at": "2026-11-19T12:11:31+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-19T13:21:19+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-19T07:26:00+01:00",
+  "lastRun": "2026-11-19T13:21:30+01:00",
   "marketsRun": {
     "at": "2026-11-18T20:11:00+01:00",
     "esito": "Aggiornate le chiusure del 18 novembre (Ansa, Teleborsa): Ftse Mib -1,32% a 50.173, Dax -1,19%, Cac 40 -0,85%, Ftse 100 -1,3%, spread 105, Btp 10 anni 4,43%, euro/dollaro -0,27%, Wti e oro. Mancano Aex, Smi, Bund, Brent, gas. Agenda: nessun dato ufficiale trovato."
@@ -30,13 +30,13 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 25,
-    "at": "2026-11-19T07:26:00+01:00",
-    "factsChecked": 6,
+    "articlesRead": 14,
+    "at": "2026-11-19T13:21:30+01:00",
+    "factsChecked": 4,
     "factsCorrected": 0,
     "storiesArchived": 0,
-    "storiesNew": 5,
-    "storiesUpdated": 6
+    "storiesNew": 0,
+    "storiesUpdated": 3
   },
   "runningSince": null,
   "storiesLive": 45

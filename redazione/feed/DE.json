@@ -1,7 +1,56 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T19:17:35+00:00",
+ "asOf": "2026-11-19T21:17:33+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: USA beziffern Kriegskosten auf fast 50 Milliarden Dollar",
+   "desc": "Für die im Iran eingesetzten Waffen sowie deren Ersatz gaben die USA 48 Milliarden Dollar aus. Beschränkung von Trumps Kriegsbefugnissen scheitert im Senat. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-19T20:51:03+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Donald Trump: Und dann platzt der Anruf des US-Präsidenten in den Berliner Ukraine-Gipfel",
+   "desc": "Kanzler Merz hat 40 Regierungen zum Unterstützergipfel für die Ukraine versammelt. Da meldet sich US-Präsident Trump aus der »Air Force One«. Zuvor hatte er in China mit dem russischen Machthaber Putin verhandelt.",
+   "url": "https://www.spiegel.de/politik/deutschland/donald-trump-und-dann-platzt-der-anruf-des-us-praesidenten-in-den-berliner-ukraine-gipfel-a-e17f1422-851e-42e5-95b7-fbbd0c8db3b8",
+   "at": "2026-11-19T20:33:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukraine-Gipfel in Berlin: Sogar die USA loben Europa",
+   "desc": "Friedrich Merz empfängt die Ukraine-Unterstützer in Berlin. Die zeigen sich beeindruckt von der »Stärke« Europas. Ist das ein Wendepunkt im Ringen um Frieden?",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/ukraine-gipfel-berlin-koalition-der-willigen-friedrich-merz-wolodymyr-selenskyj",
+   "at": "2026-11-19T20:18:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nvidia ohne Jensen Huang: Wackelt jetzt der KI-Boom?",
+   "desc": "Jensen Huang ist weg, Nvidia übertrifft trotzdem die Erwartungen. Wie stabil ist ein KI-Boom, der an einem Konzern hängt? In »Was jetzt? – Die Woche«.",
+   "url": "https://www.zeit.de/politik/2026-11/jensen-huang-nvidia-chips-ki-megaspeed-trump-usa-china-was-jetzt-videopodcast",
+   "at": "2026-11-19T20:06:47+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "SPD: Niedersachsens Justizministerin Kathrin Wahlmann tritt zurück",
+   "desc": "Die CDU hatte die niedersächsische Justizministerin wiederholt kritisiert. Nach der jüngsten Kritik an wahrheitswidrigen Aussagen des Ministeriums trat sie zurück.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/kathrin-wahlmann-spd-ruecktritt-justizministerin-niedersachsen",
+   "at": "2026-11-19T19:50:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "IGH-Urteil gegen Myanmar: Warum das Rohingya-Urteil ein wichtiges Signal ist",
+   "desc": "Der IGH spricht Myanmar des Völkermords an den Rohingya schuldig. Es ist ein Urteil, das auch in Gaza genau beobachtet wird – und das ein Dilemma für Deutschland birgt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/igh-urteil-myanmar-voelkermord-rohingya-israel",
+   "at": "2026-11-19T19:29:33+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
+   "desc": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
+   "at": "2026-11-19T19:22:45+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Krieg gegen die Ukraine: Ukraine-Unterstützer fordern Energie-Waffenruhe im Winter",
@@ -22,13 +71,6 @@
    "desc": "Die Teilnehmer des Ukrainegipfels in Berlin weisen Putins Forderungen nach einer Aufteilung Europas zurück. Merz schlägt Verhandlungen darüber »auf neutralem Boden« vor.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/friedensgespraeche-ukraine-russland-europa-friedrich-merz",
    "at": "2026-11-19T18:30:55+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Merz will baldige Gespräche mit Russland auf neutralem Boden",
-   "desc": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
-   "at": "2026-11-19T18:22:57+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -94,6 +136,13 @@
    "at": "2026-11-19T15:22:58+00:00"
   },
   {
+   "source": "Die Zeit",
+   "title": "Wladimir Putin beim Dreiergipfel: Und am Ende steht er mit leeren Händen da",
+   "desc": "Der Gipfel in China sollte ein großer Triumph für Wladimir Putin werden. Doch Russland befindet sich nicht in der Position, die internationale Ordnung neu zu schreiben.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/wladimir-putin-dreiergipfel-china-donald-trump-xi-jinping",
+   "at": "2026-11-19T15:22:58+00:00"
+  },
+  {
    "source": "Der Spiegel",
    "title": "Jürgen Chrobog: Ex-Diplomat ist tot",
    "desc": "Er führte Verhandlungen zur Freilassung von Geiseln in der Sahara, später wurden er und seine Familie selbst im Jemen entführt: Der frühere Topdiplomat Jürgen Chrobog ist im Alter von 86 Jahren gestorben.",
@@ -108,53 +157,11 @@
    "at": "2026-11-19T14:54:50+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "EU-Methanverordnung: EU verschiebt Klimaschutzregeln wegen Energiekrise um zwei Jahre",
-   "desc": "Die Europäische Union hat sich auf Klimaschutzregeln für Methan geeinigt. Doch deren Inkrafttreten soll verschoben werden, um die Energiepreise zu stabilisieren.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/methan-eu-verordnung-import-oel-gas-klimaschutz",
-   "at": "2026-11-19T13:43:23+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Ina Scharrenbach: Mitarbeitende rechnen mit NRW-Heimatministerin ab",
    "desc": "Ist die CDU-Politikerin eine schlechte Chefin? Ina Scharrenbach gilt als umstrittenstes Kabinettsmitglied in NRW. Dem SPIEGEL liegen jetzt Ergebnisse einer anonymen Mitarbeiterbefragung in dem Ministerium vor.",
    "url": "https://www.spiegel.de/politik/deutschland/ina-scharrenbach-mitarbeitende-rechnen-mit-nrw-heimatministerin-ab-a-a59a3b1a-35c5-4a1b-8ea5-96e912fd2eae",
    "at": "2026-11-19T13:31:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Internationaler Gerichtshof: Myanmar laut UN-Gericht verantwortlich für Völkermord an Rohingya",
-   "desc": "2017 tötete das Militär in Myanmar etwa 10.000 Angehörige der überwiegend muslimischen Rohingya. Der IGH stuft dieses Verbrechen als Völkermord ein.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/myanmar-laut-un-gericht-verantwortlich-fuer-voelkermord-an-rohingya",
-   "at": "2026-11-19T13:18:23+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nato-Verteidigung: Bundeswehr schließt Aufstellung der Litauen-Brigade ab",
-   "desc": "Die letzten Einheiten der Panzerbrigade 45 sind in Dienst gestellt worden. Bis Ende 2027 sollen rund 4.800 Soldaten in Litauen stationiert und voll einsatzbereit sein.",
-   "url": "https://www.zeit.de/politik/2026-11/litauen-brigade-bundeswehr-panzerbrigade-45-boris-pistorius",
-   "at": "2026-11-19T12:20:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Dreiergipfel in Shenzhen: Russland, USA und China vereinbaren Gespräche über Atomwaffen",
-   "desc": "In einer »Friedenserklärung« zu ihrem Dreiergipfel warnen Trump, Xi und Putin vor einem Atomkrieg. Angekündigt wird ein Dialog, um »atomare Risiken« zu reduzieren.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/dreiergipfel-shenzhen-china-russland-usa-xi-jinping-wladimir-putin-donald-trump-friedenserklaerung-atomkrieg",
-   "at": "2026-11-19T12:09:19+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gaza: Israelische Armee meldet Ende vom Bodeneinsatz im Gazastreifen",
-   "desc": "Der Einsatz, bei dem Israels Armee einen Hamas-Tunnel zerstören wollte, ist nach einem Tag beendet. Der Vorstoß fand trotz geltender Waffenruhe statt. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
-   "at": "2026-11-19T11:45:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Russische Tu-95-Bomber: Russische Militärflieger nähern sich erneut Taiwan",
-   "desc": "Zum zweiten Mal innerhalb weniger Tage meldet Taiwan russische Militärflugzeuge in seiner Luftverteidigungszone. Der Vorfall ereignete sich während Putins Chinabesuch.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/tu-95-russland-taiwan-adiz-bomber-gxe",
-   "at": "2026-11-19T11:43:12+00:00"
   },
   {
    "source": "Der Spiegel",

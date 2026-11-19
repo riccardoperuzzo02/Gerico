@@ -1,7 +1,77 @@
 {
  "code": "ES",
- "asOf": "2026-11-19T15:17:35+00:00",
+ "asOf": "2026-11-19T17:17:34+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "Londres",
+   "desc": "Protestaba por la detención en España de 'Fergie' Chambers, un militante comunista propalestino cuya extradición ha sido pedida por Estados Unidos Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/19/6aff273dfdddff565e8b456d.html",
+   "at": "2026-11-19T16:49:03+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Por qué el debate es solo entre Pedro Sánchez y Alberto Núñez Feijóo y qué otros encuentros electorales habrá",
+   "desc": "Además de este cara a cara, los principales partidos políticos tendrán otras oportunidades para enfrentar sus propuestas para el 29N.",
+   "url": "https://www.20minutos.es/nacional/por-que-debate-solo-entre-pedro-sanchez-alberto-nunez-feijoo-otros-encuentros-electorales-habra_7063240_0.html",
+   "at": "2026-11-19T16:23:25+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La Policía apunta a una \"planificación previa\" en la entrada masiva de inmigrantes a Ceuta al constatar que se usaron 10.000 flotadores",
+   "desc": "La Policía subraya que \"no parece posible\" que los migrantes adquiriesen los flotadores en tiendas o a través de internet, ni que los portasen desde fuera de Castillejos, por lo que concluye la existencia de \"un componente logístico\".",
+   "url": "https://www.20minutos.es/nacional/policia-apunta-una-planificacion-previa-entrada-masiva-inmigrantes-ceuta-constatar-que-se-usaron-10-000-flotadores_7063252_0.html",
+   "at": "2026-11-19T16:03:21+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Qué propone cada partido sobre vivienda y alquiler para el 29N: las medidas clave de sus programas",
+   "desc": "Desde bajar los impuestos, liberar el suelo o expandir el parque público de vivienda hasta expropiar a los grandes tenedores, los partidos ya han hecho sus promesas electorales.",
+   "url": "https://www.20minutos.es/nacional/que-propone-cada-partido-sobre-vivienda-alquiler-para-29n-las-medidas-clave-sus-programas_7063170_0.html",
+   "at": "2026-11-19T16:02:07+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los sindicatos de inquilinas convocan movilizaciones este fin de semana en España dentro de una ola de protestas en Europa",
+   "desc": "Las protestas se celebrarán de forma coordinada en varios países europeos para reclamar cambios en las políticas de vivienda y denunciar la actuación policial durante la huelga del 11 de noviembre.",
+   "url": "https://www.20minutos.es/nacional/los-sindicatos-inquilinas-convocan-movilizaciones-este-fin-semana-espana-dentro-una-ola-protestas-europa_7063233_0.html",
+   "at": "2026-11-19T15:52:46+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Pagos desde Marruecos y esperas en las playas de La Línea, así funcionaba la última red de pase de migrantes de Ceuta",
+   "desc": "La Policía trunca la llegada irregular a Cádiz de una embarcación neúmatica y arresta a cuatro personas vinculadas a una red de tráfico de personas que usaba una vivienda en la barriada de El Príncipe",
+   "url": "https://elpais.com/espana/2026-11-19/pagos-desde-marruecos-y-esperas-en-las-playas-de-la-linea-asi-funcionaba-la-ultima-red-de-pase-de-migrantes-de-ceuta.html",
+   "at": "2026-11-19T15:44:08+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Un cubo con papeles decide hasta el último detalle del cara a cara entre Sánchez y Feijóo",
+   "desc": "El líder del PP será el primero en llegar, el del PSOE cerrará el debate y desde Génova reconocen que sí valoraron levantarse de la mesa ante la negativa a que hubiera un bloque dedicado a la corrupción.",
+   "url": "https://www.20minutos.es/nacional/un-cubo-con-papeles-decide-hasta-ultimo-detalle-cara-cara-entre-sanchez-feijoo_7063223_0.html",
+   "at": "2026-11-19T15:23:24+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Recupera el discurso que equipara las políticas de PP y PSOE tras protestar por la celebración de un debate a dos Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6aff127afdddff42268b45c7.html",
+   "at": "2026-11-19T15:18:37+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Quién habla primero, quién cierra y cómo se controlan los tiempos en el cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo",
+   "desc": "El debate electoral empezará a las 22:00 horas y estará estructurado en cinco bloques de 16 minutos cada uno, además de un minuto y medio inicial y otro final.",
+   "url": "https://www.20minutos.es/nacional/quien-habla-primero-quien-cierra-como-controlan-tiempos-cara-cara-pedro-sanchez-alberto-nunez-feijoo_7063148_0.html",
+   "at": "2026-11-19T15:08:14+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La líder del 'narcoclan' Los Rocho pide ser escoltada en su declaración ante el juez del caso de las cloacas del PSOE",
+   "desc": "Cintia Rocho está llamada a declarar el próximo martes ante el juez de la Audiencia Nacional Santiago Pedraz.",
+   "url": "https://www.20minutos.es/nacional/lider-narcoclan-los-rocho-pide-ser-escoltada-su-declaracion-ante-juez-caso-las-cloacas-psoe_7063232_0.html",
+   "at": "2026-11-19T15:04:33+00:00"
+  },
   {
    "source": "El Mundo",
    "title": "Tribunales",
@@ -67,8 +137,8 @@
   },
   {
    "source": "El País",
-   "title": "“No es una simple provocación, es una amenaza real”: así el PSOE decidió personarse en la causa contra Núcleo Nacional",
-   "desc": "Los socialistas creen que el grupo neonazi, cuya dirigente Isabel Peralta amenazó con “volar la cabeza a Sánchez”, pone en riesgo “la paz pública, la dignidad de la persona, la igualdad y el pluralismo político”",
+   "title": "“Volarle la cabeza a Sánchez”: la conversación que convenció al PSOE de personarse en la causa contra Núcleo Nacional",
+   "desc": "Los socialistas creen que el grupo neonazi, cuya dirigente Isabel Peralta amenazó al presidente, pone en riesgo “la paz pública, la dignidad de la persona, la igualdad y el pluralismo político”",
    "url": "https://elpais.com/espana/2026-11-19/no-es-una-simple-provocacion-es-una-amenaza-real-asi-el-psoe-decidio-personarse-en-la-causa-contra-nucleo-nacional.html",
    "at": "2026-11-19T12:58:21+00:00"
   },
@@ -183,13 +253,6 @@
    "desc": "Quienes quieran ejercer su derecho a voto pero no puedan acudir a su colegio electoral el próximo 29 de noviembre, deben solicitar su voto por correo hoy.",
    "url": "https://www.20minutos.es/nacional/ultimo-dia-solicitar-voto-correo-partir-este-dia-acudir-colegio-electoral_7061783_0.html",
    "at": "2026-11-19T09:58:52+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Pagos desde Marruecos y esperas en las playas de La Línea, así funcionaba la última red de pase de migrantes de Ceuta",
-   "desc": "La Policía trunca la llegada irregular a Cádiz de una embarcación neúmatica y arresta a cuatro personas vinculadas a una red de tráfico de personas que usaba una vivienda en la barriada de El Príncipe",
-   "url": "https://elpais.com/espana/2026-11-19/pagos-desde-marruecos-y-esperas-en-las-playas-de-la-linea-asi-funcionaba-la-ultima-red-de-pase-de-migrantes-de-ceuta.html",
-   "at": "2026-11-19T09:52:08+00:00"
   },
   {
    "source": "20minutos",
@@ -336,13 +399,6 @@
    "title": "Tachar candidatos, votar por dos partidos... cuidado con los consejos virales sobre las papeletas del 29N porque tu voto será nulo",
    "desc": "Ante las inminentes elecciones generales del 29 de noviembre, las redes sociales se convierten en un escenario de desinformación.",
    "url": "https://www.20minutos.es/nacional/tachar-candidatos-votar-dos-partidos-bulos-virales-papeletas-electorales-que-convertirian-voto-nulo_7062497_0.html",
-   "at": "2026-11-19T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Aturdidos por la campaña",
-   "desc": "Se diría que el tamaño de la multitud que se logra reunir en un mitin ha dejado de ser relevante, no puntúa.",
-   "url": "https://www.20minutos.es/nacional/aturdidos-por-campana_7062860_3.html",
    "at": "2026-11-19T04:00:00+00:00"
   },
   {

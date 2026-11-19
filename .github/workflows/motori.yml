@@ -1,0 +1,21 @@
+name: Motori di ricerca
+
+# Segnala a IndexNow (Bing e gli altri motori che lo usano) tutte le pagine del sito. Serve la prima volta e dopo un
+# cambio di indirizzo: nei giorni normali ci pensa il workflow «Redazione», che segnala solo le pagine nuove.
+# Si avvia a mano (Actions › Motori di ricerca › Run workflow). Non usa segreti e non cambia niente nel repository.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  segnala:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - name: Segnala tutte le pagine
+        run: python3 scripts/indexnow.py site tutte

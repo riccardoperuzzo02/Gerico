@@ -3,6 +3,7 @@
 
 Uso:
     python3 scripts/indexnow.py site <commit di partenza>
+    python3 scripts/indexnow.py site tutte                  tutte le pagine (la prima volta, o dopo un cambio di indirizzo)
 
 Gira nel workflow «Redazione» dopo la pubblicazione: confronta i file del sito tra il commit di partenza e quello
 pubblicato, prende le pagine HTML cambiate (articoli in /s/, temi, archivio, prima pagina) e le manda a IndexNow.
@@ -40,7 +41,8 @@ def cambiate(site, inizio):
     for riga in righe:
         stato, f = riga.split("\t", 1)
         rel = os.path.relpath(f, site)
-        if not rel.endswith(".html") or rel in ("404.html", "offline.html") or not os.path.exists(f):
+        # fuori le pagine di servizio: errore, senza rete, il guscio dell'app per le storie, la verifica di Google
+        if not rel.endswith(".html") or rel in ("404.html", "offline.html", "storia.html") or rel.startswith("google") or not os.path.exists(f):
             continue
         with open(f, encoding="utf-8") as h:
             testo = h.read()
@@ -54,7 +56,7 @@ def cambiate(site, inizio):
             if nuova and vecchia and nuova.group(1) == vecchia.group(1):
                 continue  # stesso articolo, cambiati solo i dintorni
         path = "" if rel == "index.html" else rel[:-5]
-        urls.append(base + "/" + path)
+        urls.append((base + "/" + path, f))
     return base, urls
 
 
@@ -74,16 +76,28 @@ def online(url, segno):
 
 
 def main(site, inizio):
-    base, urls = cambiate(site, inizio)
+    if inizio == "tutte":
+        inizio = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"  # l'albero vuoto di git: tutte le pagine risultano nuove
+    base, pagine = cambiate(site, inizio)
+    urls = [u for u, _ in pagine]
     if not urls:
         print("IndexNow: nessuna pagina nuova da segnalare.")
         return
-    # la versione dei file del sito cambia a ogni pubblicazione: quando la prima pagina online ha il commit nuovo
-    # (la data dell'edizione nella sitemap), Cloudflare ha finito
+    # Prima Cloudflare deve aver messo online la versione nuova. Il segno è la data di modifica del primo articolo
+    # nuovo o aggiornato, cercata nella sua pagina online; senza articoli, la data dell'edizione nella sitemap
+    dove, segno = base + "/sitemap.xml", ""
     with open(os.path.join(site, "sitemap.xml"), encoding="utf-8") as f:
         sm = f.read()
-    segno = sm.split("<lastmod>", 1)[1].split("</lastmod>", 1)[0] if "<lastmod>" in sm else ""
-    if segno and not online(base + "/sitemap.xml", segno):
+    if "<lastmod>" in sm:
+        segno = sm.split("<lastmod>", 1)[1].split("</lastmod>", 1)[0]
+    for u, f in pagine:
+        if "/s/" in u:
+            with open(f, encoding="utf-8") as h:
+                m = DATA_MOD.search(h.read())
+            if m:
+                dove, segno = u, m.group(1)
+                break
+    if segno and not online(dove, segno):
         print("::warning::IndexNow: la versione nuova non è ancora online dopo 4 minuti; segnalo lo stesso")
     host = base.split("://", 1)[1].split("/", 1)[0]
     body = {"host": host, "key": KEY, "keyLocation": base + "/" + KEY + ".txt", "urlList": urls[:10000]}

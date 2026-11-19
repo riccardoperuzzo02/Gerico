@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-19-us-jeffries-speaker-indagini",
+  "title": "Stati Uniti: i democratici scelgono Jeffries per la guida della Camera",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Campidoglio degli Stati Uniti", "alt": ["Washington"]},
+  "rank": 103,
+  "summary": "I deputati democratici hanno nominato Hakeem Jeffries come candidato alla presidenza della Camera. Intanto preparano le inchieste sull'amministrazione Trump, che partiranno a gennaio.",
+  "article": "Mercoledì 18 novembre i deputati democratici hanno nominato Hakeem Jeffries, di New York, come candidato alla presidenza della Camera dei rappresentanti. Secondo CNBC il voto interno è stato 251 a 11, dato che la testata attribuisce a una persona informata rimasta anonima. I democratici dovrebbero avere almeno 257 seggi nel nuovo Congresso, dopo le elezioni di metà mandato.\n\nJeffries, oggi leader della minoranza, dovrà essere eletto dall'aula a gennaio, quando si riunirà il nuovo Congresso. Se avrà i voti, scrivono CNBC e il New York Times, sarà il primo presidente della Camera afroamericano.\n\nI democratici stanno già preparando le inchieste sul governo. Secondo CBS News, Robert Garcia, che dovrebbe guidare la commissione Oversight, la commissione di controllo della Camera, ha mandato 12 lettere a persone vicine a Donald Trump, tra cui Donald Trump Jr., Eric Trump, Jared Kushner e Stephen Miller. Le lettere chiedono di conservare i documenti su temi come l'impresa di criptovalute della famiglia Trump, la gestione dei file sul caso Epstein, le operazioni contro l'immigrazione irregolare e le donazioni per la nuova sala da ballo della Casa Bianca. Il New York Times scrive che le inchieste toccheranno anche il segretario al Commercio Howard Lutnick e le politiche sui chip di Nvidia.\n\nLa Casa Bianca ha risposto. Sempre secondo CBS, il consigliere legale Will Scharf ha scritto a Garcia che le indagini potrebbero «superare il limite» e diventare di natura penale. Garcia ha replicato che il Congresso ha ampia libertà d'azione. CBS riferisce anche che il procuratore federale Aaron Reitz ha inviato avvisi di conservazione dei documenti ad almeno cinque parlamentari democratici.",
+  "facts": [
+    {"text": "I deputati democratici hanno votato 251 a 11 per Jeffries come candidato alla presidenza della Camera.", "who": ["CNBC"]},
+    {"text": "L'elezione in aula è prevista a gennaio, quando si riunirà il nuovo Congresso.", "who": ["CNBC", "New York Times"]},
+    {"text": "Robert Garcia ha inviato 12 lettere a persone vicine a Trump perché conservino i documenti in vista delle inchieste.", "who": ["CBS News"]},
+    {"text": "Le inchieste includeranno anche Howard Lutnick e le politiche sui chip di Nvidia.", "who": ["New York Times"]},
+    {"text": "Il consigliere legale della Casa Bianca avverte che le indagini potrebbero «superare il limite».", "who": ["CBS News"]}
+  ],
+  "view": "Si può dire con certezza che i democratici hanno scelto Jeffries e che le inchieste sono già in preparazione. Il voto di 251 a 11 viene da una sola fonte anonima, e le lettere di Garcia sono avvisi di conservazione dei documenti, non ancora citazioni in giudizio.\n\nConta perché da gennaio la Camera passa all'opposizione e avrà il potere di convocare testimoni e chiedere atti. Da guardare: il voto in aula a gennaio, le prime citazioni della commissione Oversight e la risposta legale della Casa Bianca.",
+  "open": [
+    "Quanti voti avrà Jeffries nell'elezione in aula a gennaio?",
+    "Quali inchieste partiranno per prime e con quali citazioni?",
+    "Come risponderà la Casa Bianca alle richieste di documenti?"
+  ],
+  "sources": [
+    {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html", "angle": "Articolo letto: il voto 251 a 11 e il percorso verso l'elezione di gennaio.", "at": "2026-11-18T18:32:39+00:00"},
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/robert-garcia-letters-trump-house-oversight-and-government-reform-committee-investigations/", "angle": "Articolo letto: le 12 lettere di Garcia e la risposta della Casa Bianca.", "at": "2026-11-18T16:59:32+00:00"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/18/us/politics/house-democrats-trump-investigation.html", "angle": "Dal feed: le inchieste toccheranno anche Lutnick e le politiche su Nvidia.", "at": "2026-11-18T21:03:47+00:00"}
+  ],
+  "firstSeen": "2026-11-19T09:48:35+01:00",
+  "updated": "2026-11-19T09:48:35+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-19T09:48:35+01:00", "text": "Prima notizia: i democratici nominano Jeffries per la presidenza della Camera e preparano le inchieste su Trump."}
+  ],
+  "tags": ["Stati Uniti", "Congresso", "Governo"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

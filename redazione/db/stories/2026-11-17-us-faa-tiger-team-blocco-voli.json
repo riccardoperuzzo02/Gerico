@@ -1,38 +1,41 @@
 {
   "id": "2026-11-17-us-faa-tiger-team-blocco-voli",
-  "title": "Stati Uniti: la Casa Bianca crea una squadra dopo il blocco nazionale dei voli",
+  "title": "Stati Uniti: guasti a catena, per il governo non ci sono attacchi informatici",
   "section": "mondo",
   "status": "live",
   "country": "US",
   "scope": "paese",
   "photo": {"wiki": "it", "title": "Federal Aviation Administration", "alt": ["Washington"]},
   "rank": 105,
-  "summary": "Dopo il blocco di quattro ore dei voli di venerdì, la Casa Bianca ha formato una «tiger team» per evitarne un altro. Secondo la Faa all'origine c'è la sostituzione di un router in Arkansas.",
-  "article": "Lunedì 16 novembre la Casa Bianca ha tenuto la prima riunione di una «tiger team», un gruppo di lavoro creato per evitare un altro blocco nazionale dei voli. Lo scrive CBS News. Ne fanno parte funzionari della Faa, l'agenzia federale dell'aviazione, dell'Ufficio del direttore dell'intelligence nazionale, del Dipartimento della Difesa e di quello dei Trasporti.\n\nVenerdì 13 novembre la Faa aveva fermato tutti i voli in partenza dal paese per più di quattro ore, secondo CNBC. Per CBS il blocco è iniziato poco dopo le 15,30 ed è costato migliaia di voli cancellati; circa 3.500 aerei erano in volo. Secondo NPR, lunedì i ritardi continuavano: il segretario ai Trasporti Sean Duffy ha detto che la situazione poteva tornare normale a fine giornata.\n\nSecondo CBS, un'indagine preliminare della Faa indica la sostituzione di un router in Arkansas. I servizi di intelligence hanno escluso in via preliminare attività dolose, ma restano domande aperte sulla causa. Duffy ha detto di non poter escludere un altro blocco mentre il sistema viene aggiornato: «Dobbiamo lasciare la vecchia rete». Il presidente Donald Trump ha parlato di «attrezzature molto vecchie».\n\nDuffy chiede al Congresso 50 miliardi di dollari per ammodernare il sistema. CBS ricorda un rapporto di settembre del Government Accountability Office, l'organo di controllo del Congresso, secondo cui la Faa non ha una stima complessiva dei costi né un calendario unico dei progetti. Lunedì anche United Airlines ha risolto un guasto ai suoi sistemi, scrivono CBS e CNBC.",
+  "summary": "Dopo il blocco dei voli di venerdì sono arrivati altri guasti, tra cui la rete della Nsa. Funzionari davanti alla Camera dicono che non ci sono prove di attacchi informatici.",
+  "article": "Dopo il blocco nazionale dei voli di venerdì 13 novembre, negli Stati Uniti si sono susseguiti altri guasti: il servizio di posta Outlook di Microsoft, alcune banche e la rete di comunicazioni della Nsa, l'agenzia di intelligence. Lo scrivono CBS News e CNBC. Mercoledì 18 novembre, davanti a una commissione della Camera, alcuni funzionari hanno detto a CBS che non c'è «nessuna indicazione» di attacchi informatici.\n\nSecondo CBS il direttore dell'intelligence nazionale e altre fonti attribuiscono il guasto della Nsa all'applicazione di correzioni a vulnerabilità del linguaggio PHP. Per il blocco dei voli, durato più di quattro ore, CBS scrive che l'appaltatore L3Harris ha impiegato diverse ore a individuare l'origine del problema. Una prima indagine della Faa, l'agenzia federale dell'aviazione, indicava la sostituzione di un router in Arkansas; CNBC riferisce che gli investigatori hanno fatto progressi ma cercano ancora la causa.\n\nIl vicepresidente JD Vance ha cancellato la sua agenda per occuparsi dei guasti, scrive CNBC, mentre l'amministrazione insiste che gli episodi non sono collegati. Il New York Times riporta che parlamentari ed esperti di sicurezza informatica ritengono che i tagli al personale della Cisa, l'agenzia per la sicurezza informatica, e del Consiglio di sicurezza nazionale possano ostacolare la risposta del governo. Sempre il New York Times scrive che il segretario ai Trasporti Sean Duffy sta spingendo per completare in fretta l'ammodernamento dei sistemi dell'aviazione, e che alcuni funzionari temono nuove interruzioni.\n\nLunedì la Casa Bianca aveva creato una squadra di lavoro tra Faa, intelligence, Difesa e Trasporti. Duffy chiede al Congresso 50 miliardi di dollari per aggiornare il sistema, secondo CBS.",
   "facts": [
-    {"text": "La Casa Bianca ha creato una tiger team con funzionari di Faa, intelligence, Difesa e Trasporti; prima riunione lunedì.", "who": ["CBS News"]},
-    {"text": "Il blocco di venerdì è durato più di quattro ore; circa 3.500 aerei erano in volo.", "who": ["CNBC", "CBS News"]},
-    {"text": "Un'indagine preliminare della Faa indica la sostituzione di un router in Arkansas; l'intelligence esclude per ora attività dolose.", "who": ["CBS News"]},
-    {"text": "Duffy chiede al Congresso 50 miliardi di dollari per aggiornare il sistema.", "who": ["CBS News"]}
+    {"text": "Funzionari alla Camera dicono che non c'è «nessuna indicazione» di attacchi informatici dietro i guasti.", "who": ["CBS News"]},
+    {"text": "Il guasto della rete Nsa deriva da correzioni a vulnerabilità del linguaggio PHP, secondo il direttore dell'intelligence nazionale.", "who": ["CBS News"]},
+    {"text": "L3Harris ha impiegato diverse ore a trovare l'origine del blocco dei voli di venerdì.", "who": ["CBS News"]},
+    {"text": "Parlamentari ed esperti collegano i guasti ai tagli di personale alla Cisa e al Consiglio di sicurezza nazionale.", "who": ["New York Times"]},
+    {"text": "Duffy chiede al Congresso 50 miliardi di dollari per ammodernare il sistema.", "who": ["CBS News"]}
   ],
-  "view": "Si può dire con certezza che il blocco è stato preceduto da un cambio di apparecchiature e che le prime verifiche escludono un attacco. La causa precisa e il motivo di un intervento il venerdì pomeriggio non sono chiariti dalle fonti.\n\nConta perché mette in discussione l'affidabilità del traffico aereo e porta la richiesta di 50 miliardi davanti al Congresso. Da guardare: i risultati dell'indagine della Faa, il lavoro della squadra e la risposta dei parlamentari.",
+  "view": "Si può dire con certezza che nell'ultima settimana ci sono stati più guasti importanti e che i funzionari sentiti dal Congresso non vedono attacchi. La causa del blocco dei voli non è ancora chiarita e il legame con i tagli di personale è un'opinione di parlamentari ed esperti, non un fatto accertato.\n\nConta perché i guasti toccano trasporti, banche e agenzie di sicurezza e portano al Congresso la richiesta di 50 miliardi. Da guardare: le conclusioni dell'indagine della Faa, le audizioni sui tagli e la risposta del Congresso ai fondi.",
   "open": [
-    "Qual è la causa esatta del blocco di venerdì?",
-    "Perché il router è stato sostituito di venerdì alle 16?",
-    "Il Congresso approverà i 50 miliardi richiesti?"
+    "Qual è la causa esatta del blocco dei voli di venerdì?",
+    "I guasti hanno cause comuni o sono episodi separati?",
+    "Il Congresso approverà i 50 miliardi richiesti da Duffy?"
   ],
   "sources": [
-    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/white-house-tiger-team-ground-stop/", "angle": "Articolo letto: tiger team, causa preliminare, richiesta di fondi.", "at": "2026-11-16T23:58:00+00:00"},
-    {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html", "angle": "Dal feed: blocco di oltre quattro ore e ritardi che continuano.", "at": "2026-11-16T15:56:39+00:00"},
-    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip", "angle": "Dal feed: Duffy prevede il ritorno alla normalità a fine lunedì.", "at": "2026-11-16T12:08:14+00:00"}
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/", "angle": "Dal feed: nessuna indicazione di attacchi informatici; guasto della Nsa e ritardi di L3Harris.", "at": "2026-11-18T18:35:28+00:00"},
+    {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/18/trump-tech-outages-nsa-faa-microsoft.html", "angle": "Dal feed: Vance cancella l'agenda, l'amministrazione dice che i guasti non sono collegati.", "at": "2026-11-18T19:17:27+00:00"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/18/us/politics/tech-outages-trump-national-security.html", "angle": "Dal feed: i tagli di personale alla Cisa e al Consiglio di sicurezza nazionale.", "at": "2026-11-19T01:16:32+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip", "angle": "Dal feed: Duffy prevedeva il ritorno alla normalità a fine lunedì.", "at": "2026-11-16T12:08:14+00:00"}
   ],
   "firstSeen": "2026-11-17T09:49:09+01:00",
-  "updated": "2026-11-17T09:49:09+01:00",
-  "change": "",
+  "updated": "2026-11-19T09:48:35+01:00",
+  "change": "Altri guasti (Nsa, banche, Outlook); i funzionari non vedono attacchi informatici; polemica sui tagli di personale.",
   "history": [
+    {"at": "2026-11-19T09:48:35+01:00", "text": "Altri guasti oltre al blocco dei voli: per i funzionari nessun attacco, polemica sui tagli di personale."},
     {"at": "2026-11-17T09:49:09+01:00", "text": "Prima notizia: la Casa Bianca crea una tiger team dopo il blocco nazionale dei voli."}
   ],
-  "tags": ["Stati Uniti", "Trasporti", "Infrastrutture"],
+  "tags": ["Stati Uniti", "Trasporti", "Sicurezza informatica"],
   "themes": [],
   "places": ["US"],
   "divergences": [],

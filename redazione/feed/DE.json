@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T05:17:35+00:00",
+ "asOf": "2026-11-19T07:17:33+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Gaza: Israels Armee meldet neuen Vorstoß im Gazastreifen",
+   "desc": "Israels Bodentruppen gehen nach Militärangaben im Gazastreifen gegen einen »Terrortunnel« vor. Australien verhängt Sanktionen gegen israelische Siedlungen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
+   "at": "2026-11-19T06:58:16+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rechtsextremismus: Schüler aus NRW soll Terroranschlag auf Moschee geplant haben",
+   "desc": "Mit Waffen aus dem 3D-Drucker wollte ein 18-Jähriger aus dem Sauerland offenbar einen Anschlag auf Muslime in Deutschland verüben. Er sitzt in Untersuchungshaft.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/anschlag-moschee-muslime-eslohe-rechtsextremismus-3d-drucker-waffen-gxe",
+   "at": "2026-11-19T06:54:17+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bundesregierung: Michael Kretschmer rügt Koalition für Umgang mit Stromsteuer-Streit",
+   "desc": "Sachsens Ministerpräsident Kretschmer lobt die Senkung der Stromsteuer, wirft der Koalition aber vor, den Streit darüber schlecht gelöst zu haben. Es gehe um das Vertrauen in die Demokratie.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-michael-kretschmer-ruegt-koalition-fuer-umgang-mit-stromsteuer-streit-a-3dc6a8c7-65fa-4056-92a1-8c4571bba0b2",
+   "at": "2026-11-19T06:48:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Apec-Gipfel in Shenzhen: Trump und Putin sprechen vor Dreiergipfel über Ukrainekrieg",
+   "desc": "Ein bilaterales Treffen von Donald Trump und Wladimir Putin ist nach russischen Angaben »exzellent« verlaufen. Auch China sieht das Verhältnis zu den USA verbessert.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
+   "at": "2026-11-19T06:39:22+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Afrika: Hey Europäer, hier liegt die Zukunft!",
+   "desc": "In Afrika entsteht ein Ballungszentrum mit mindestens 200 Millionen Menschen – jung, chaotisch, kreativ. Was das für das vergreisende Europa bedeuten könnte.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/grossstaedte-afrika-lagos-coutonou-accra-abidjan-europa-5vor8",
+   "at": "2026-11-19T06:36:08+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Koalition der Willigen: Verbündete der Ukraine treffen sich zu Gesprächen in Berlin",
+   "desc": "Während sich Trump in Shenzhen mit Putin und Xi trifft, holt Merz die Unterstützer der Ukraine nach Berlin. Für Deutschland ist es ein historischer Gipfel.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/koalition-der-willigen-gipfel-berlin-ukraine-friedrich-merz-gxe",
+   "at": "2026-11-19T06:12:13+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Deutsche Bank: »Man sollte Diktaturen nicht zu stark umarmen«",
+   "desc": "Harold James erforschte die Nazivergangenheit der Deutschen Bank. Im Umgang mit Trump, Putin und Xi erkennt der Historiker alte Muster: Der Konzern habe bis heute zu wenig aus seiner Geschichte gelernt.",
+   "url": "https://www.spiegel.de/politik/deutschland/deutsche-bank-man-sollte-diktaturen-nicht-zu-stark-umarmen-a-6a5d76df-19f2-4c09-b4c9-1dbb49e4855a",
+   "at": "2026-11-19T06:00:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Ukraine-Krieg: Friedrich Merz empfängt zum Gegengipfel in Berlin",
+   "desc": "US-Präsident Trump trifft in China auch Russlands Machthaber Putin und will über die Ukraine reden. In Berlin versammelt Kanzler Merz die Unterstützer des angegriffenen Landes. Die Botschaft: keine Deals zulasten Kyjiws oder der Europäer.",
+   "url": "https://www.spiegel.de/politik/deutschland/ukraine-krieg-friedrich-merz-empfaengt-zum-gegengipfel-in-berlin-a-35a421cf-63a1-4e57-a38a-1bd3dde077b7",
+   "at": "2026-11-19T05:56:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Videospiel: Was ist dran am Hype um »GTA VI«?",
+   "desc": "Nach 13 Jahren Wartezeit kann seit heute »GTA VI« gespielt werden: Wie politisch ist das Videospiel? Und: Ukrainegipfel der Koalition der Willigen in Berlin",
+   "url": "https://www.zeit.de/politik/2026-11/hype-videospiel-gta-vi-nachrichtenpodcast",
+   "at": "2026-11-19T05:14:42+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Nvidia: Der Präsident, der Amerikas innere Sicherheit verrät",
@@ -22,13 +85,6 @@
    "desc": "Fast 500 Millionen US-Dollar hat Elon Musk vor den Midterms an Trumps Partei gespendet. Im Nachhinein kommt sich der Techunternehmer »ziemlich dumm« vor.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/elon-musk-us-zwischenwahlen-republikaner-spenden-greg-abbott",
    "at": "2026-11-19T04:43:25+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Apec-Gipfel in Shenzhen: Trump und Putin wollen in China bilaterales Treffen abhalten",
-   "desc": "Der US-Präsident will seinen russischen Amtskollegen am Rande des Apec-Gipfels in China treffen. Es wäre das erste Treffen seit den Alaska-Gesprächen im vergangenen Jahr.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
-   "at": "2026-11-19T04:41:47+00:00"
   },
   {
    "source": "Die Zeit",
@@ -87,20 +143,6 @@
    "at": "2026-11-18T22:50:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "US-Repräsentantenhaus: Jeffries soll erster schwarzer Chef des Repräsentantenhauses werden",
-   "desc": "Die US-Demokraten haben ihren Fraktionschef Hakeem Jeffries als Vorsitzenden des Unterhauses nominiert. Im linken Parteiflügel gibt es allerdings Vorbehalte gegen ihn.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/us-repraesentantenhaus-speaker-hakeem-jeffries-demokraten-schwarzer",
-   "at": "2026-11-18T19:32:25+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Venezuela: USA und Venezuela unterzeichnen Abkommen zur militärischen Kooperation",
-   "desc": "Anfang dieses Jahres haben US-Streitkräfte den damaligen venezolanischen Staatschef Maduro entführt. Jetzt schließen beide Länder eine Verteidigungspartnerschaft.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/pete-hegseth-venezuela-delcy-rodriguez-abkommen-militaer",
-   "at": "2026-11-18T19:30:49+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Frauke Brosius-Gersdorf im SPIEGEL-Talk: »Herr Spahn und ich sind aus den gleichen Gründen gescheitert«",
    "desc": "Sie wollte Verfassungsrichterin werden und wurde Ziel einer Kampagne: Hier spricht Frauke Brosius-Gersdorf über Entschuldigungen aus der Union, Hürden für ein AfD-Verbot und die Vergesellschaftung großer Wohnungskonzerne.",
@@ -108,32 +150,11 @@
    "at": "2026-11-18T19:07:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Türkei: Gericht verhängt Politikverbot gegen Erdoğan-Rivalen İmamoğlu",
-   "desc": "Gegen den inhaftierten ehemaligen Bürgermeister von Istanbul gibt es ein neues Urteil. Dieses könnte verhindern, dass Ekrem İmamoğlu bei der Präsidentschaftswahl antritt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/ekrem-imamoglu-politikverbot-prozess-chp-oezguer-oezel",
-   "at": "2026-11-18T18:41:15+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "CDU: Auf den Kanzler kommt es nicht an",
-   "desc": "In der Union sorgt der Kompromiss zur Stromsteuer bestenfalls für eine Atempause. Die Unzufriedenheit mit Friedrich Merz bleibt. Aber einer profitiert: Markus Söder.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/cdu-koalitionsausshuss-stromsteuer-konflikt-reaktion",
-   "at": "2026-11-18T18:03:17+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "News des Tages: Merz verlässt genervt Koalitionsausschuss, Trump, Xi und Putin beim Asiengipfel, Alois Rainers Heimatreport",
    "desc": "Die Koalition quält sich in einer wilden Nacht zur Senkung der Stromsteuer. Xi Jinping umarmt Donald Trump. Und: Was macht eigentlich der Heimatminister? Das ist die Lage am Mittwochabend.",
    "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-merz-verlaesst-genervt-koalitionsausschuss-trump-xi-und-putin-beim-asiengipfel-alois-rainers-heimatreport-a-ce310360-980e-4e9f-bf82-d17273f4149e",
    "at": "2026-11-18T16:55:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Alexander Stubb: »Sprich leise und habe einen großen Stock dabei«",
-   "desc": "Alexander Stubb ist einer der wenigen Europäer, die kürzlich mit Putin gesprochen haben. Was hat er ihm gesagt? Und: Wie könnte eine Lösung im Ukrainekrieg aussehen?",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/alexander-stubb-finnland-ukraine-krieg-wladimir-putin",
-   "at": "2026-11-18T16:31:41+00:00"
   },
   {
    "source": "Tagesschau",
@@ -232,20 +253,6 @@
    "desc": "Das BSW war bei der Bundestagswahl sehr knapp gescheitert und wollte, dass neu ausgezählt wird. Damit scheiterte die Partei nun auch endgültig vor dem Bundesverfassungsgericht. BSW-Politiker kritisierten das scharf.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
    "at": "2026-11-18T08:55:02+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Stromsteuer: CDU, CSU und SPD einigen sich auf Senkung",
-   "desc": "Bis zwei Uhr morgens tagte der Koalitionsausschuss: Nun haben sich Merz, Klingbeil und Söder auf eine Senkung der Stromsteuer für alle Verbraucher verständigt, auch die Spritpreise sollen günstiger werden. Beide Maßnahmen sind zeitlich begrenzt.",
-   "url": "https://www.spiegel.de/politik/deutschland/koalition-einigt-sich-auf-senkung-der-stromsteuer-vorerst-nur-2027-a-69144e3f-1de4-4fec-a38d-ee695e64d899",
-   "at": "2026-11-18T06:37:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Mögliche Stromsteuersenkung: Verhandlung beendet - Verkündung am Morgen",
-   "desc": "Nach acht Stunden haben die Spitzen von CDU, CSU und SPD ihre Beratungen in der Nacht beendet - haben sie sich auf eine Stromsteuersenkung geeinigt? Die Details aus dem Koalitionsausschuss sollen am Morgen bekannt gegeben werden.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/koalition-beendet-verhandlungen-100.html",
-   "at": "2026-11-18T06:20:31+00:00"
   }
  ]
 }

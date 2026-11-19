@@ -158,6 +158,15 @@ jobs:
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           python3 scripts/redazione.py pubblica "$GIRO"
 
+      # Bing e gli altri motori che usano IndexNow sanno subito delle pagine nuove (Google legge la sitemap)
+      - name: Avvisa i motori di ricerca
+        if: always() && steps.pubblica.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 6
+        env:
+          INIZIO: ${{ github.sha }}
+        run: python3 scripts/indexnow.py site "$INIZIO"
+
       - name: Dati del Terminal e audio del riepilogo
         if: always() && steps.pubblica.outputs.terminal == 'si'
         env:

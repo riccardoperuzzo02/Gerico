@@ -6,15 +6,17 @@ Uso:
 
 La redazione scrive in una storia il campo photo = {"wiki": "it", "title": "Casa Bianca", "alt": ["Washington"]}: il
 titolo della voce di Wikipedia di un luogo, un edificio, un'istituzione o un oggetto che identifica la notizia, nella lingua
-della voce ("it", "en", "fr", "es", "de"...). Mai una persona. alt, facoltativo, sono voci di riserva (di solito la città),
-come titoli nella stessa lingua oppure {"wiki", "title"}; dopo di loro si prova anche city.name della storia.
+della voce ("it", "en", "fr", "es", "de"...). Mai una persona. alt, facoltativo, sono voci di riserva (un'altra cosa
+precisa), come titoli nella stessa lingua oppure {"wiki", "title"}.
+Mai nemmeno una città, una regione o un paese: la loro foto è un panorama che non dice niente della notizia. Lì la
+copertina della storia è la mappa che GERICO disegna (scripts/mappe.py), con il luogo segnato.
 Per ogni storia live con photo lo script prende la foto della voce: l'immagine principale, se è una foto, poi quella di
 Wikidata (P18), poi l'immagine principale della stessa voce su Wikipedia in inglese, italiano, francese, spagnolo e tedesco.
 Vale la prima che sta su Wikimedia Commons con una licenza libera (CC BY, CC BY-SA, CC0, pubblico dominio, sola
 attribuzione) ed è grande abbastanza; la salva in <sito>/img/foto/<id>.jpg (larga 1280 px) e scrive accanto <id>.json con
 autore, licenza e pagina del file: export.py li mette nella storia, il sito li mostra sotto la foto.
-Se nessuna voce va bene (voce che non c'è, solo stemmi o loghi, immagine non libera o troppo piccola, rete giù) la storia
-resta con la mappa.
+Se nessuna voce va bene (voce che non c'è, voce di un territorio, solo stemmi o loghi, immagine non libera o troppo
+piccola) la storia resta con la mappa.
 Con Pillow (il workflow lo installa prima della pubblicazione) ogni foto si alleggerisce: una foto verticale diventa il
 quadrato centrale (il sito le mostra sempre larghe o quadrate, con il centro in vista), la grande è larga al massimo
 1200 px e accanto c'è <id>-s.jpg, larga 480 px, per le miniature: sul telefono si scarica quella. Le foto già prese si
@@ -42,6 +44,11 @@ ALTRE = ["en", "it", "fr", "es", "de"]
 LARGA = 1280
 FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
 GRANDE, PICCOLA, OTT = 1200, 480, 2   # OTT: la versione dell'alleggerimento (cambiandola si rifanno tutte)
+REGOLA = 2   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+# I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
+# (P1082) è comunque un territorio, e sono quasi tutte
+LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
+          "Q1093829", "Q200250", "Q174844", "Q208511", "Q22865", "Q2074737", "Q3957", "Q532", "Q15284"}
 
 
 def alleggerisci(path):
@@ -139,18 +146,20 @@ def trova(wiki, title, escluse=()):
     item = (pages[0].get("pageprops") or {}).get("wikibase_item")
     if not item:
         return None, "la voce non ha una scheda Wikidata: non si può controllare che non sia una persona"
-    c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P31")
-    tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in (c.get("claims") or {}).get("P31") or []]
+    claims = api("www.wikidata.org", action="wbgetclaims", entity=item).get("claims") or {}
+    tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in claims.get("P31") or []]
     if "Q5" in tipi:
         return None, "la voce è di una persona: le foto delle persone non si usano"
+    # mai il panorama di una città, di una regione o di un paese: lì la copertina è la mappa
+    if LUOGHI.intersection(tipi) or claims.get("P1082"):
+        return None, "la voce è di una città, una regione o un paese: lì la copertina è la mappa"
     # le foto candidate, in ordine: l'immagine principale della voce se è una foto (non uno stemma, una bandiera o un logo),
     # quella di Wikidata (P18), poi l'immagine principale della stessa voce nelle altre Wikipedia
     nomi, visti, perche = [], set(), "nessuna foto"
     principale = pages[0].get("pageimage")
     if principale and FOTO.search(principale):
         nomi.append(principale)
-    c = api("www.wikidata.org", action="wbgetclaims", entity=item, property="P18")
-    nomi += [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in (c.get("claims") or {}).get("P18") or []]
+    nomi += [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P18") or []]
 
     def prova(lista):
         nonlocal perche
@@ -185,7 +194,8 @@ def trova(wiki, title, escluse=()):
 
 
 def voci(s, ph):
-    """Le voci da provare per una storia, in ordine: photo, poi photo.alt, poi la città della storia (city.name)."""
+    """Le voci da provare per una storia, in ordine: photo, poi photo.alt. La città della storia non si prova più:
+    la sua foto sarebbe un panorama, e al suo posto c'è la mappa."""
     wiki = ph.get("wiki") if isinstance(ph.get("wiki"), str) and LINGUA.match(ph.get("wiki")) else "it"
     out = [(wiki, ph["title"].strip())]
     alt = ph.get("alt")
@@ -197,9 +207,6 @@ def voci(s, ph):
         elif isinstance(a, dict) and isinstance(a.get("title"), str) and a["title"].strip():
             w = a.get("wiki") if isinstance(a.get("wiki"), str) and LINGUA.match(a.get("wiki")) else wiki
             out.append((w, a["title"].strip()))
-    city = s.get("city")
-    if isinstance(city, dict) and isinstance(city.get("name"), str) and city["name"].strip():
-        out.append(("it", city["name"].strip()))
     uniche = []
     for v in out:
         if v not in uniche:
@@ -210,7 +217,7 @@ def voci(s, ph):
 def main(db, site):
     cartella = os.path.join(site, "img", "foto")
     os.makedirs(cartella, exist_ok=True)
-    vive, fatte, saltate, leggere = set(), 0, [], 0
+    vive, fatte, saltate, leggere, confermate = set(), 0, [], 0, 0
     sdir = os.path.join(db, "stories")
     storie = []
     for name in sorted(os.listdir(sdir)) if os.path.isdir(sdir) else []:
@@ -232,10 +239,11 @@ def main(db, site):
         vive.add(sid)
         chiave = (ph.get("wiki") or "it") + ":" + ph["title"].strip()
         side = os.path.join(cartella, sid + ".json")
+        prima = {}
         try:
             prima = json.load(open(side, encoding="utf-8"))
             doppia = prima.get("key") == chiave and bool(prima.get("file")) and usate.get(stesso(prima["file"]), sid) != sid
-            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")) and not doppia:
+            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")) and not doppia and prima.get("regola") == REGOLA:
                 if prima.get("file"):
                     usate[stesso(prima["file"])] = sid
                 # già presa: si alleggerisce una volta sola, dal file che c'è (senza riscaricarla)
@@ -271,13 +279,22 @@ def main(db, site):
                     json.dump({"key": chiave, "miss": True, "at": int(time.time()), "why": motivi[-1:]}, f, ensure_ascii=False)
                     f.write("\n")
                 continue
+            # la stessa foto di prima, ricontrollata con la regola nuova: resta com'è, senza riscaricarla
+            if prima.get("key") == chiave and stesso(prima.get("file")) == stesso(info.get("file")) and os.path.exists(os.path.join(cartella, sid + ".jpg")):
+                prima["regola"] = REGOLA
+                usate[stesso(prima["file"])] = sid
+                with open(side, "w", encoding="utf-8") as f:
+                    json.dump(prima, f, ensure_ascii=False, indent=1)
+                    f.write("\n")
+                confermate += 1
+                continue
             data = get(url, raw=True)
             if len(data) < 20000 or not (data[:3] == b"\xff\xd8\xff" or data[:8] == b"\x89PNG\r\n\x1a\n" or data[:4] == b"RIFF"):
                 saltate.append(f"{sid}: il file scaricato non è un'immagine valida")
                 continue
             with open(os.path.join(cartella, sid + ".jpg"), "wb") as f:
                 f.write(data)
-            info.update(key=chiave, title=titolo, bytes=len(data))
+            info.update(key=chiave, title=titolo, bytes=len(data), regola=REGOLA)
             usate[stesso(info.get("file"))] = sid
             mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
             if mis:
@@ -296,7 +313,7 @@ def main(db, site):
         if not (base in vive or (base.endswith("-s") and base[:-2] in vive)):
             os.remove(os.path.join(cartella, f))
             tolte += 1
-    print(f"foto: {fatte} nuove, {leggere} alleggerite, {len(vive)} storie con la foto chiesta, {tolte} file tolti")
+    print(f"foto: {fatte} nuove, {confermate} ricontrollate, {leggere} alleggerite, {len(vive)} storie con la foto chiesta, {tolte} file tolti")
     for x in saltate:
         print("  senza foto " + x)
     return 0

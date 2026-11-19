@@ -170,7 +170,13 @@ G.page("home", async function (P) {
   };
   const visible = () => {
     const th = themeOf(state.section);
-    if (th) return mie().filter((s) => inTheme(s, th));
+    // nella scheda di un tema caldo vengono prima le storie che parlano proprio di quel tema (lo hanno nel titolo o tra i
+    // temi); quelle che lo toccano soltanto, come un vertice dove se ne discute, vengono dopo anche se in prima pagina
+    // sono più in alto: così ogni scheda apre con la sua notizia, non con l'apertura di Tutte
+    if (th) {
+      const lista = mie().filter((s) => inTheme(s, th)), sua = (s) => kwIn([s.title].concat(s.tags || []).join(" "), th);
+      return lista.filter(sua).concat(lista.filter((s) => !sua(s)));
+    }
     if (state.section === "tutte") return perTe(mie());
     if (state.section === "seguiti") return followed();
     if (inPaese()) return stories.filter((s) => delPaese(s, paeseOra()));

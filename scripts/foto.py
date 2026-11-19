@@ -19,6 +19,8 @@ Con Pillow (il workflow lo installa prima della pubblicazione) ogni foto si alle
 quadrato centrale (il sito le mostra sempre larghe o quadrate, con il centro in vista), la grande è larga al massimo
 1200 px e accanto c'è <id>-s.jpg, larga 480 px, per le miniature: sul telefono si scarica quella. Le foto già prese si
 alleggeriscono alla prima pubblicazione, senza riscaricarle.
+Una foto vale per una storia sola: se due storie chiedono la stessa, la tiene la più importante e l'altra prova le
+voci di riserva (se non trova un'altra foto resta con la mappa).
 Le foto delle storie che non sono più nel database si cancellano.
 """
 import html
@@ -118,8 +120,14 @@ def file_ok(nome):
                                                  "w": ii.get("thumbwidth") or ii.get("width"), "h": ii.get("thumbheight") or ii.get("height")}
 
 
-def trova(wiki, title):
-    """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché)."""
+def stesso(nome):
+    """Il nome di un file di Commons scritto sempre allo stesso modo (spazi, non trattini bassi), per i confronti."""
+    return str(nome or "").replace("_", " ").strip()
+
+
+def trova(wiki, title, escluse=()):
+    """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché). `escluse`: i file già usati da un'altra
+    storia, che non si riprendono (due notizie con la stessa foto sembrano la stessa notizia)."""
     host = (wiki if isinstance(wiki, str) and LINGUA.match(wiki) else "it") + ".wikipedia.org"
     d = api(host, action="query", prop="pageimages|pageprops", piprop="name", ppprop="wikibase_item|disambiguation", titles=title, redirects="1")
     pages = (d.get("query") or {}).get("pages") or []
@@ -150,6 +158,9 @@ def trova(wiki, title):
             if not isinstance(nome, str) or not FOTO.search(nome) or nome in visti:
                 continue
             visti.add(nome)
+            if stesso(nome) in escluse:
+                perche = f"{nome}: è già la foto di un'altra storia"
+                continue
             url, info = file_ok(nome)
             if url:
                 return url, info
@@ -201,14 +212,20 @@ def main(db, site):
     os.makedirs(cartella, exist_ok=True)
     vive, fatte, saltate, leggere = set(), 0, [], 0
     sdir = os.path.join(db, "stories")
+    storie = []
     for name in sorted(os.listdir(sdir)) if os.path.isdir(sdir) else []:
         if not name.endswith(".json"):
             continue
-        sid = name[:-5]
         try:
-            s = json.load(open(os.path.join(sdir, name), encoding="utf-8"))
+            storie.append((name[:-5], json.load(open(os.path.join(sdir, name), encoding="utf-8"))))
         except (OSError, ValueError):
             continue
+    # Una foto vale per una storia sola. Le storie si guardano in ordine d'importanza (prima le live, poi per rank):
+    # se due chiedono la stessa foto la tiene la più importante, l'altra prova le voci di riserva e, se non trova
+    # un'altra foto, resta con la mappa
+    storie.sort(key=lambda x: (x[1].get("status") != "live", x[1].get("rank") if isinstance(x[1].get("rank"), (int, float)) else 999, x[0]))
+    usate = {}
+    for sid, s in storie:
         ph = s.get("photo")
         if not (isinstance(ph, dict) and isinstance(ph.get("title"), str) and ph["title"].strip()) or not re.fullmatch(r"[\w.-]+", sid):
             continue
@@ -217,7 +234,10 @@ def main(db, site):
         side = os.path.join(cartella, sid + ".json")
         try:
             prima = json.load(open(side, encoding="utf-8"))
-            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")):
+            doppia = prima.get("key") == chiave and bool(prima.get("file")) and usate.get(stesso(prima["file"]), sid) != sid
+            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")) and not doppia:
+                if prima.get("file"):
+                    usate[stesso(prima["file"])] = sid
                 # già presa: si alleggerisce una volta sola, dal file che c'è (senza riscaricarla)
                 if prima.get("ott") != OTT or not os.path.exists(os.path.join(cartella, sid + "-s.jpg")):
                     mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
@@ -229,7 +249,7 @@ def main(db, site):
                         leggere += 1
                 continue
             # già cercata da poco senza trovare niente: si riprova dopo 12 ore, non a ogni pubblicazione
-            if prima.get("key") == chiave and prima.get("miss") and time.time() - float(prima.get("at") or 0) < 12 * 3600:
+            if prima.get("key") == chiave and prima.get("miss") and not doppia and time.time() - float(prima.get("at") or 0) < 12 * 3600:
                 saltate.append(f"{sid}: già cercata alle {time.strftime('%H:%M', time.gmtime(float(prima['at'])))} UTC senza trovare una foto")
                 continue
         except (OSError, ValueError, TypeError):
@@ -237,12 +257,16 @@ def main(db, site):
         try:
             url, info, motivi = None, None, []
             for wiki, titolo in voci(s, ph):
-                url, info = trova(wiki, titolo)
+                url, info = trova(wiki, titolo, set(usate))
                 if url:
                     break
                 motivi.append(f"{wiki}:{titolo} → {info}")
             if not url:
                 saltate.append(f"{sid}: " + " | ".join(motivi))
+                # la foto che aveva era la stessa di un'altra storia: si toglie, la storia resta con la mappa
+                for vecchia in (sid + ".jpg", sid + "-s.jpg"):
+                    if os.path.exists(os.path.join(cartella, vecchia)):
+                        os.remove(os.path.join(cartella, vecchia))
                 with open(side, "w", encoding="utf-8") as f:
                     json.dump({"key": chiave, "miss": True, "at": int(time.time()), "why": motivi[-1:]}, f, ensure_ascii=False)
                     f.write("\n")
@@ -254,6 +278,7 @@ def main(db, site):
             with open(os.path.join(cartella, sid + ".jpg"), "wb") as f:
                 f.write(data)
             info.update(key=chiave, title=titolo, bytes=len(data))
+            usate[stesso(info.get("file"))] = sid
             mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
             if mis:
                 info.update(mis)

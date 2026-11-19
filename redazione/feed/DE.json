@@ -1,20 +1,76 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T11:17:35+00:00",
+ "asOf": "2026-11-19T13:17:34+00:00",
  "items": [
   {
-   "source": "Der Spiegel",
-   "title": "Gaspreise: Deutschland droht im Winter ein Energiepreisschock",
-   "desc": "Die Gaspreise steigen rasant und treiben auch die Strompreise nach oben. Politiker und Experten fürchten im Winter einen Anstieg, den die Regierung nicht mehr abfedern kann.",
-   "url": "https://www.spiegel.de/politik/deutschland/gaspreise-deutschland-droht-im-winter-ein-energiepreisschock-a-3a10d30e-8bb6-4568-8b9d-ff6b984a3d05",
-   "at": "2026-11-19T11:12:00+00:00"
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Selenskyj, Kushner und Witkoff in Berlin eingetroffen",
+   "desc": "Unmittelbar nach dem Gipfel von Trump, Putin und Xi trifft sich in Berlin die Koalition der Willigen. Der ukrainische Präsident ist bereits in der Stadt. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-19T12:54:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EU-Methanverordnung: EU verschiebt Klimaschutzregeln wegen Energiekrise um zwei Jahre",
+   "desc": "Die Europäische Union hat sich auf Klimaschutzregeln für Methan geeinigt. Doch deren Inkrafttreten soll verschoben werden, um die Energiepreise zu stabilisieren.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/methan-eu-verordnung-import-oel-gas-klimaschutz",
+   "at": "2026-11-19T12:45:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nato-Verteidigung: Bundeswehr schließt Aufstellung der Litauen-Brigade ab",
+   "desc": "Die letzten Einheiten der Panzerbrigade 45 sind in Dienst gestellt worden. Bis Ende 2027 sollen rund 4.800 Soldaten in Litauen stationiert und voll einsatzbereit sein.",
+   "url": "https://www.zeit.de/politik/2026-11/litauen-brigade-bundeswehr-panzerbrigade-45-boris-pistorius",
+   "at": "2026-11-19T12:20:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Dreiergipfel in Shenzhen: Russland, USA und China vereinbaren Gespräche über Atomwaffen",
+   "desc": "In einer »Friedenserklärung« zu ihrem Dreiergipfel warnen Trump, Xi und Putin vor einem Atomkrieg. Angekündigt wird ein Dialog, um »atomare Risiken« zu reduzieren.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/dreiergipfel-shenzhen-china-russland-usa-xi-jinping-wladimir-putin-donald-trump-friedenserklaerung-atomkrieg",
+   "at": "2026-11-19T12:09:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gaza: Israelische Armee meldet Ende vom Bodeneinsatz im Gazastreifen",
+   "desc": "Der Einsatz, bei dem Israels Armee einen Hamas-Tunnel zerstören wollte, ist nach einem Tag beendet. Der Vorstoß fand trotz geltender Waffenruhe statt. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
+   "at": "2026-11-19T11:45:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Russische Tu-95-Bomber: Russische Militärflieger nähern sich erneut Taiwan",
+   "desc": "Zum zweiten Mal innerhalb weniger Tage meldet Taiwan russische Militärflugzeuge in seiner Luftverteidigungszone. Der Vorfall ereignete sich während Putins Chinabesuch.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/tu-95-russland-taiwan-adiz-bomber-gxe",
+   "at": "2026-11-19T11:43:12+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Grönland: Dänemark stimmt Sicherheitsabkommen mit USA und Grönland zu",
    "desc": "Die USA dürfen zwei Militärstützpunkte auf Grönland errichten. Das dänische Parlament hat dem Abkommen einstimmig zugestimmt. Auch Grönland hat es bereits ratifiziert.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/sicherheitsabkommen-usa-daenemark-groenland-gxe",
-   "at": "2026-11-19T11:06:47+00:00"
+   "at": "2026-11-19T11:28:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Internationaler Gerichtshof: Myanmar laut UN-Gericht verantwortlich für Völkermord an Rohingya",
+   "desc": "2017 tötete das Militär in Myanmar etwa 10.000 Angehörige der überwiegend muslimischen Rohingya. Der IGH stuft dieses Verbrechen als Völkermord ein.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/myanmar-laut-un-gericht-verantwortlich-fuer-voelkermord-an-rohingya",
+   "at": "2026-11-19T11:26:42+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Wie Claudia Roth den Nahost-Kompromiss der Grünen ins Wanken bringt",
+   "desc": "Mit ihren Israel-Äußerungen hat Claudia Roth bei den Grünen neuen Streit über Nahost entfacht. Die Ex-Kulturstaatsministerin gerät unter Druck: Der Zentralrat stellt zentrale Aussagen der Politikerin infrage.",
+   "url": "https://www.spiegel.de/politik/deutschland/wie-claudia-roth-den-nahost-kompromiss-der-gruenen-ins-wanken-bringt-a-18852ba5-283b-44e3-8046-c2e3c1c5a384",
+   "at": "2026-11-19T11:26:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Gaspreise: Deutschland droht im Winter ein Energiepreisschock",
+   "desc": "Die Gaspreise steigen rasant und treiben auch die Strompreise nach oben. Politiker und Experten fürchten im Winter einen Anstieg, den die Regierung nicht mehr abfedern kann.",
+   "url": "https://www.spiegel.de/politik/deutschland/gaspreise-deutschland-droht-im-winter-ein-energiepreisschock-a-3a10d30e-8bb6-4568-8b9d-ff6b984a3d05",
+   "at": "2026-11-19T11:12:00+00:00"
   },
   {
    "source": "Tagesschau",
@@ -29,27 +85,6 @@
    "desc": "Die AfD erwägt einen neuen Zeitplan für ihre geplante Machtübernahme in Sachsen-Anhalt. Die Wahl des Ministerpräsidenten soll im Landtag früher stattfinden als geplant.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/ministerpraesidentenwahl-sachsen-anhalt-afd-ulrich-siegmund-cdu-bsw-gxe",
    "at": "2026-11-19T10:56:46+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Internationaler Gerichtshof: Myanmar laut UN-Gericht verantwortlich für Völkermord an Rohingya",
-   "desc": "2017 tötete das Militär in Myanmar etwa 10.000 Angehörige der überwiegend muslimischen Rohingya. Der IGH stuft dieses Verbrechen als Völkermord ein.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/myanmar-laut-un-gericht-verantwortlich-fuer-voelkermord-an-rohingya",
-   "at": "2026-11-19T10:52:26+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Xi Jinping, Wladimir Putin und Donald Trump beenden Dreiergipfel",
-   "desc": "Nach mehr als einer Stunde haben Xi, Trump und Putin ihr Treffen in Shenzhen beendet. Die Koalition der Willigen trifft sich mit US-Unterhändler Kushner. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-19T10:49:34+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Russische Tu-95-Bomber: Russische Militärflieger nähern sich erneut Taiwan",
-   "desc": "Zum zweiten Mal innerhalb weniger Tage meldet Taiwan russische Militärflugzeuge in seiner Luftverteidigungszone. Der Vorfall ereignete sich während Putins China-Besuch.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/tu-95-russland-taiwan-adiz-bomber-gxe",
-   "at": "2026-11-19T10:38:21+00:00"
   },
   {
    "source": "Die Zeit",
@@ -115,39 +150,11 @@
    "at": "2026-11-19T07:18:10+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Irankrieg: USA reduzieren Präsenz im Nahen Osten auf zwei Flugzeugträger",
-   "desc": "Die »USS George Washington« verlässt Nahost. Zwei US-Flugzeugträger bleiben in der Region. Aus der Straße von Hormus werden erneut Explosionen gemeldet. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-19T07:13:22+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gaza: Israels Armee meldet neuen Vorstoß im Gazastreifen",
-   "desc": "Israels Bodentruppen gehen nach Militärangaben im Gazastreifen gegen einen »Terrortunnel« vor. Australien verhängt Sanktionen gegen israelische Siedlungen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2025-10/krieg-gaza-israel-hamas-liveblog",
-   "at": "2026-11-19T06:58:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rechtsextremismus: Schüler aus NRW soll Terroranschlag auf Moschee geplant haben",
-   "desc": "Mit Waffen aus dem 3D-Drucker wollte ein 18-Jähriger aus dem Sauerland offenbar einen Anschlag auf Muslime in Deutschland verüben. Er sitzt in Untersuchungshaft.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/anschlag-moschee-muslime-eslohe-rechtsextremismus-3d-drucker-waffen-gxe",
-   "at": "2026-11-19T06:54:17+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Bundesregierung: Michael Kretschmer rügt Koalition für Umgang mit Stromsteuer-Streit",
    "desc": "Sachsens Ministerpräsident Kretschmer lobt die Senkung der Stromsteuer, wirft der Koalition aber vor, den Streit darüber schlecht gelöst zu haben. Es gehe um das Vertrauen in die Demokratie.",
    "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-michael-kretschmer-ruegt-koalition-fuer-umgang-mit-stromsteuer-streit-a-3dc6a8c7-65fa-4056-92a1-8c4571bba0b2",
    "at": "2026-11-19T06:48:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Afrika: Hey Europäer, hier liegt die Zukunft!",
-   "desc": "In Afrika entsteht ein Ballungszentrum mit mindestens 200 Millionen Menschen – jung, chaotisch, kreativ. Was das für das vergreisende Europa bedeuten könnte.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/grossstaedte-afrika-lagos-coutonou-accra-abidjan-europa-5vor8",
-   "at": "2026-11-19T06:36:08+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -225,41 +232,6 @@
    "desc": "Ab Januar wollen Union und SPD die Stromsteuer für ein Jahr auf das europäische Mindestniveau senken. Auch ein Spritpreisdeckel ist vereinbart. Was wurde konkret beschlossen und wie viel Entlastung könnte das im Alltag bringen?",
    "url": "https://www.tagesschau.de/inland/innenpolitik/was-bringt-stromsteuer-senkung-koalitionsausschuss-100.html",
    "at": "2026-11-18T13:36:45+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Sturm und Regen in Deutschland - viele Einsätze von Polizei und Feuerwehr",
-   "desc": "Mancherorts sind bereits 50 Liter Regen binnen 24 Stunden runtergekommen - kombiniert mit heftigem Wind. Das bleibt zunächst auch so. Für fast ganz Deutschland gelten Unwetterwarnungen. Bislang war vor allem NRW betroffen.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/sturm-deutschland-106.html",
-   "at": "2026-11-18T12:59:46+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "\"Kleiner Hüpfer\", \"überfällig\", \"abenteuerlich\" - Reaktionen auf Stromsteuersenkung",
-   "desc": "Sie kommt also, die vom Kanzler versprochene Stromsteuersenkung - zumindest für 2027. Die Maßnahme selbst stößt auf ein weitgehend positives Echo. Doch es gibt auch viel Kritik - daran, dass die Entlastung nicht dauerhaft ist.",
-   "url": "https://www.tagesschau.de/inland/stromsteuer-reaktionen-100.html",
-   "at": "2026-11-18T12:40:24+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz und die Stromsteuer: Plötzlich steht der Kanzler auf und geht genervt zur Tür",
-   "desc": "Kurz vor Mitternacht drohen die Verhandlungen über die Stromsteuer zu scheitern. Nach SPIEGEL-Informationen verlässt Friedrich Merz zeitweise die Spitzenrunde von Union und SPD. Die Rekonstruktion.",
-   "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-wie-es-zum-eklat-im-koalitionsausschuss-kam-a-19224f50-63a2-4c09-92b8-0c2ead8e291d",
-   "at": "2026-11-18T12:35:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Keine Neuauszählung: BSW scheitert mit Wahlprüfungsbeschwerde",
-   "desc": "Zu wenige Stimmen und Belege: Das Bundesverfassungsgericht lehnt eine Klage des BSW auf Neuauszählung der Stimmen bei der Bundestagswahl ab. Nun erwägt die Union eine Reform der Wahlprüfung. Von Max Bauer.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bsw-beschwerde-abgelehnt-bundestagswahl-100.html",
-   "at": "2026-11-18T11:55:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Sorgerechtsreform: Kein Umgangsrecht mehr für gewalttätigen Elternteil",
-   "desc": "Wie können Kinder besser geschützt werden, wenn es zwischen den Eltern zu Gewalt kommt? Die Regierung hat dafür eine Gesetzesreform auf den Weg gebracht - mit klar geregelten Sanktionen für Eltern und mehr Mitbestimmungsrechten für Kinder.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/gesetzentwurf-sorgerecht-100.html",
-   "at": "2026-11-18T11:19:09+00:00"
   }
  ]
 }

@@ -1,27 +1,139 @@
 {
  "code": "FR",
- "asOf": "2026-11-19T11:17:35+00:00",
+ "asOf": "2026-11-19T13:17:34+00:00",
  "items": [
   {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : une campagne « course à l’échalote » pour tenter de répondre aux colères françaises",
+   "desc": "Alors qu’une majorité de l’opinion se dit défiante à l’égard de l’Etat et revendique le divorce avec les élites, les candidats de la droite et du centre s’essayent à un registre plus populiste, tandis que Marine Le Pen poursuit sa stratégie de normalisation.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/19/presidentielle-2027-une-campagne-course-a-l-echalote-pour-tenter-de-repondre-aux-coleres-francaises_6813302_823448.html",
+   "at": "2026-11-19T13:00:08+00:00"
+  },
+  {
    "source": "franceinfo",
-   "title": "La Haute Autorité de santé présente 60 recommandations officielles pour encadrer la pratique de l'aide à mourir",
-   "desc": "L'autorité publique indépendante préconise notamment l'usage d'un nombre limité de produits à usage létal, disponibles dans \"des kits prêts à l'emploi\".",
-   "url": "https://www.franceinfo.fr/societe/euthanasie/la-haute-autorite-de-sante-presente-60-recommandations-officielles-pour-encadrer-la-pratique-de-l-aide-a-mourir_8289761.html",
-   "at": "2026-11-19T11:10:40+00:00"
+   "title": "La Commission européenne annonce avoir été la cible d'une cyberattaque assistée par l'intelligence artificielle en octobre",
+   "desc": "Un porte-parole de la Commission a précisé jeudi qu'à ce stade, la Commission n'avait pas la preuve de vol de données personnelles.",
+   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/la-commission-europeenne-annonce-avoir-ete-la-cible-d-une-cyberattaque-assistee-par-l-intelligence-artificielle-en-octobre_8289959.html",
+   "at": "2026-11-19T12:59:55+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un bassin de rétention d'eau déborde dans le Pas-de-Calais, une école avec 17 élèves évacués puis mis \"en sécurité\"",
+   "desc": "Jeudi 19 novembre vers 10h, les pompiers ont été appelés pour une inondation conséquente à Bréxent-Énocq (Pas-de-Calais). Un bassin de rétention d'eau a débordé. Le plan Orsec a été déclenché par la préfecture.",
+   "url": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/touquet/un-bassin-de-retention-d-eau-deborde-une-ecole-avec-17-eleves-evacues-puis-mis-en-securite-3452310.html",
+   "at": "2026-11-19T12:51:34+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "France Assureurs estime à \"plus de 200 millions d'euros\" le coût des dégâts engendrés par les violences urbaines et les pillages des 17 et 18 octobre",
+   "desc": "Ce montant \"est particulièrement élevé au regard de la brièveté des événements\", a déclaré jeudi la présidente de la fédération, Florence Lustman.",
+   "url": "https://www.franceinfo.fr/societe/mobilisation-du-17-octobre/france-assureurs-estime-a-plus-de-200-millions-d-euros-le-cout-des-degats-engendres-par-les-violences-urbaines-et-les-pillages-des-17-et-18-octobre_8290007.html",
+   "at": "2026-11-19T12:40:01+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« L’IA redessine les règles du jeu à une vitesse que nous n’avions jamais connue » : des responsables de la cybersécurité de l’Etat sonnent l’alarme",
+   "desc": "A Rennes, les plus hauts responsables français ont diffusé un message inédit sur les dangers de l’intelligence artificielle, alors que Sébastien Lecornu a convoqué jeudi une réunion interministérielle classifiée sur la cybersécurité.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/19/l-ia-redessine-les-regles-du-jeu-a-une-vitesse-que-nous-n-avions-jamais-connue-des-responsables-de-la-cybersecurite-de-l-etat-sonnent-l-alarme_6813298_4408996.html",
+   "at": "2026-11-19T12:30:07+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Bertrand Meheut, le dirigeant « analytique et stratégique » qui avait redressé Canal+, est mort",
+   "desc": "Nommé en 2003 président du groupe audiovisuel alors en pleine perdition, d’abord accueilli avec méfiance, il avait reconquis les abonnés et finalement emporté l’adhésion de nombreux collaborateurs, qui témoignent. Il est mort le 18 novembre.",
+   "url": "https://www.lemonde.fr/disparitions/article/2026/11/19/bertrand-meheut-le-dirigeant-analytique-et-strategique-qui-avait-redresse-canal_6813297_3382.html",
+   "at": "2026-11-19T12:30:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La Birmanie a commis un génocide à l'encontre des Rohingyas, statue la Cour internationale de justice dans un arrêt historique",
+   "desc": "La plus haute juridiction de l'ONU, a établi que les soldats birmans ont tué des \"milliers de civils rohingyas\", avec \"l'intention de détruire une partie substantielle\" de cette population.",
+   "url": "https://www.franceinfo.fr/monde/asie/rohingyas/la-birmanie-a-commis-un-genocide-a-l-encontre-des-rohingyas-statue-la-cour-internationale-de-justice-dans-un-arret-historique_8289806.html",
+   "at": "2026-11-19T12:15:35+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le fondateur d'Anthropic \"est persuadé d'avoir le sort du monde sur ses épaules\"",
+   "desc": "Qui est Dario Amodei, le fondateur d'Anthropic ? Alors que son entreprise vient d'entrer en Bourse, Thibault Prévost, auteur du livre \"Les prophètes de l'IA\", décrypte les convictions \"techno-apocalyptiques\" de son dirigeant.",
+   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/entretien-le-fondateur-d-anthropic-est-persuade-d-avoir-le-sort-du-monde-sur-ses-epaules_8289752.html",
+   "at": "2026-11-19T12:09:29+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Eloy Spinnler, un chef facétieux et engagé pour la Gen Z",
+   "desc": "Très populaire sur les réseaux sociaux, le jeune cuisinier parisien a bâti un petit empire culinaire, avec lequel il ambitionne de changer en profondeur le modèle de la restauration.",
+   "url": "https://www.lemonde.fr/m-styles/article/2026/11/19/eloy-spinnler-un-chef-facetieux-et-engage-pour-la-gen-z_6813292_4497319.html",
+   "at": "2026-11-19T12:00:03+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Procès de l’interpellation violente de Michel Zecler : jusqu’à six ans de prison ferme requis contre les trois policiers, assortis d’une interdiction définitive d’exercer",
+   "desc": "Le 21 novembre 2020, Michel Zecler avait été interpellé par une patrouille policière devant son studio de musique parisien puis avait été roué de coups. Les policiers sont aussi accusés d’avoir menti sur procès-verbal.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/19/proces-de-l-interpellation-violente-de-michel-zecler-jusqu-a-cinq-ans-de-prison-ferme-requis-contre-les-trois-policiers-assortis-d-une-interdiction-definitive-d-exercer_6813291_3224.html",
+   "at": "2026-11-19T11:53:24+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Birmanie a commis un génocide à l’encontre de la minorité rohingya, statue la Cour internationale de justice",
+   "desc": "Les violences avaient contraint des centaines de milliers de personnes à fuir leur foyer. Des témoignages ont fait état de viols collectifs, d’exécutions de masse et, de manière plus générale, d’une cruauté inimaginable envers les familles et les enfants.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/19/la-birmanie-a-commis-un-genocide-a-l-encontre-de-la-minorite-rohingya-statue-la-cour-internationale-de-justice_6813288_3210.html",
+   "at": "2026-11-19T11:42:12+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des dizaines de sculptures représentant des divinités mayas découvertes dans une cité antique au Guatemala",
+   "desc": "Enfouis sous la végétation de la jungle guatémaltèque, cette quarantaine d'ouvrages représentant des divinités mayas viennent éclairer l'histoire d'El Mirador, l'une des plus anciennes et des plus importantes cités précolombiennes.",
+   "url": "https://www.franceinfo.fr/culture/patrimoine/archeologie/des-dizaines-de-sculptures-representant-des-divinites-mayas-decouvertes-dans-une-cite-antique-au-guatemala_8289668.html",
+   "at": "2026-11-19T11:40:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des peines de quatre ans à six ans de prison ferme requises contre les trois policiers accusés d'avoir roué de coups Michel Zecler",
+   "desc": "Les trois hommes sont jugés depuis dix jours pour violences aggravées et faux en écriture publique. Le verdict est attendu vendredi.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-peines-de-quatre-ans-a-six-ans-de-prison-ferme-requises-contre-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8288789.html",
+   "at": "2026-11-19T11:39:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Deux enseignants et onze élèves blessés ou choqués dans des lycées d'Île-de-France en marge des mobilisations lycéennes",
+   "desc": "À Argenteuil, les blessés ont été accompagnés dans la salle des lycéens et pris en charge par un médecin. La région recense des tirs de mortiers dans certains établissements avec des évacuations.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/deux-enseignants-et-onze-eleves-blesses-ou-choques-dans-des-lycees-d-ile-de-france-en-marge-des-mobilisations-lyceennes_8289917.html",
+   "at": "2026-11-19T11:37:33+00:00"
   },
   {
    "source": "franceinfo",
    "title": "Rencontre entre Trump, Poutine et Xi : les trois dirigeants ont adopté \"une déclaration de paix\" à l'issue d'un sommet inédit, rapportent le Kremlin et les médias chinois",
    "desc": "Les chefs d'Etat américain, russe et chinois se sont réunis pour un sommet tripartite pour \"préserver la paix mondiale\".",
    "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/direct-rencontre-donald-trump-vladimir-poutine-xi-jinping-suivez-l-entretien-inedit-entre-les-trois-presidents-en-chine_8288564.html",
-   "at": "2026-11-19T11:02:45+00:00"
+   "at": "2026-11-19T11:37:20+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "La Haute autorité de santé publie le « mode d’emploi » de l’aide à mourir",
-   "desc": "La HAS a défini dans un document, publié jeudi, les protocoles médicaux permettant en pratique une aide à mourir pour des patients en fin de vie. Ces recommandations feront l’objet d’un décret en Conseil d’Etat début 2027.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/la-haute-autorite-de-sante-publie-le-mode-d-emploi-de-l-aide-a-mourir_6813279_3224.html",
-   "at": "2026-11-19T10:54:29+00:00"
+   "title": "Ce qu’il faut retenir des déclarations de Donald Trump, Xi Jinping et Vladimir Poutine lors de leur rencontre historique à Shenzhen",
+   "desc": "Les trois dirigeants ont évoqué différents sujets, parmi lesquels la paix mondiale, la guerre en Ukraine, les armes nucléaires, mais aussi l’intelligence artificielle.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/19/ce-qu-il-faut-retenir-des-declarations-de-donald-trump-xi-jinping-et-vladimir-poutine-lors-de-leur-rencontre-historique-a-shenzhen_6813287_3210.html",
+   "at": "2026-11-19T11:34:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un nombre de produits limités, des recours en cas de complications... La Haute Autorité de santé présente 60 recommandations pour encadrer l'aide à mourir",
+   "desc": "L'autorité publique indépendante avait notamment été chargée de définir quels produits létaux devaient être utilisés. Elle préconise de rendre leur administration la plus simple possible via \"des kits prêts à l'emploi\".",
+   "url": "https://www.franceinfo.fr/societe/euthanasie/la-haute-autorite-de-sante-presente-60-recommandations-officielles-pour-encadrer-la-pratique-de-l-aide-a-mourir_8289761.html",
+   "at": "2026-11-19T11:33:16+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "À Santa Monica, le Club France s'offre un spot de rêve pour les Jeux olympiques de Los Angeles 2028",
+   "desc": "Le Comité national olympique et sportif français a présenté, mercredi, le club France qui sera le lieu de retrouvailles des athlètes français et des célébrations de leurs médailles aux Jeux de 2028, à Los Angeles.",
+   "url": "https://www.franceinfo.fr/les-jeux-olympiques/los-angeles-2028/a-santa-monica-le-club-france-s-offre-un-spot-de-reve-pour-les-jeux-olympiques-de-los-angeles-2028_8289809.html",
+   "at": "2026-11-19T11:16:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"Elle a choisi de tourner le dos à la tradition écologiste\", réagit Raphaël Glucksmann après le rapprochement initié par Marine Tondelier avec LFI",
+   "desc": "La secrétaire nationale des Ecologistes envisage une coalition avec Jean-Luc Mélenchon, ce qui l'amènerait à renoncer à sa candidature à l'élection présidentielle.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-je-le-regrette-reagit-le-socialiste-olivier-faure-au-rapprochement-initie-par-l-ecologiste-marine-tondelier-vers-jean-luc-melenchon_8289440.html",
+   "at": "2026-11-19T11:15:04+00:00"
   },
   {
    "source": "franceinfo",
@@ -33,9 +145,9 @@
   {
    "source": "Le Monde",
    "title": "La députée RN Laure Lavalette accusée d’avoir cautionné des écrits antisémites, l’élue invoque des faits vieux de « trente ans »",
-   "desc": "A travers des archives, « Les Jours » ont retracé les années 1996 à 1998, période pendant laquelle l’une des portes porte-parole de campagne de Marine Le Pen dirigeait l’antenne bordelaise du Renouveau étudiant, un syndicat étudiant affilié au Front national qui publiait des écrits antisémites.",
+   "desc": "A travers des archives, « Les Jours » ont retracé les années 1996 à 1998, période pendant laquelle l’une des porte-parole de campagne de Marine Le Pen dirigeait l’antenne bordelaise du Renouveau étudiant, un syndicat étudiant affilié au Front national qui publiait des écrits antisémites.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/19/la-deputee-rn-laure-lavalette-accusee-d-avoir-cautionne-des-ecrits-antisemites-l-elue-invoque-des-faits-vieux-de-trente-ans_6813278_823448.html",
-   "at": "2026-11-19T10:40:20+00:00"
+   "at": "2026-11-19T10:40:19+00:00"
   },
   {
    "source": "franceinfo",
@@ -45,60 +157,18 @@
    "at": "2026-11-19T10:33:07+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Groenland : le Parlement danois ratifie l’accord de sécurité avec les Etats-Unis et le territoire autonome",
-   "desc": "Les 109 députés présents ont voté en faveur du texte, qui a été adopté sans opposition ni abstention.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/19/groenland-le-parlement-danois-ratifie-l-accord-de-securite-avec-les-etats-unis-et-le-territoire-autonome_6813273_3210.html",
-   "at": "2026-11-19T10:20:29+00:00"
-  },
-  {
    "source": "franceinfo",
-   "title": "Pourquoi Anthropic interdit désormais les insultes contre son IA Claude",
-   "desc": "Alors qu'elle entre en Bourse ce jeudi, la société a décidé d'interdire les comportements insultants et répétés envers son IA, au nom de son bien-être. Une justification qui laisse les chercheurs sceptiques, alors que derrière cette mesure se cachent des enjeux économiques.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/pourquoi-anthropic-interdit-desormais-les-insultes-contre-son-ia-claude_8289599.html",
-   "at": "2026-11-19T10:08:23+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Plus de 2 100 mineurs isolés étrangers vivent \"en errance en France\" précise une enquête d'Utopia 56",
-   "desc": "Ces jeunes sans solution d'hébergement, recensés par l'association Utopia 56, vivent dans la rue, dans des squats ou alors dans des campements. Le chiffre est en diminution depuis quelques années.",
-   "url": "https://www.franceinfo.fr/societe/plus-de-2-100-mineurs-isoles-etrangers-vivent-en-errance-en-france-precise-une-enquete-d-utopia-56_8289737.html",
-   "at": "2026-11-19T10:03:55+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Après l’élection présidentielle 2027, le rôle très stratégique du secrétariat général du gouvernement en cas de menace pour l’Etat de droit",
-   "desc": "Ni contre-pouvoir ni simple exécutant, l’organisme rattaché à Matignon occupe une position singulière, à la frontière du politique et du juridique, depuis quatre-vingt-dix ans.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/19/apres-l-election-presidentielle-2027-le-role-tres-strategique-du-secretariat-general-du-gouvernement-en-cas-de-menace-pour-l-etat-de-droit_6813269_3232.html",
-   "at": "2026-11-19T10:00:11+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’emploi accompagné, un outil d’insertion pour les travailleurs handicapés, qui « permet d’anticiper les difficultés »",
-   "desc": "Léa, Valérie ou Jessee sont soutenus par un « job coach », pour trouver ou conserver un emploi classique qui prendra en compte leurs besoins spécifiques liés à leur handicap.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/l-emploi-accompagne-un-outil-d-insertion-pour-les-travailleurs-handicapes-qui-permet-d-anticiper-les-difficultes_6813268_3224.html",
-   "at": "2026-11-19T10:00:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La justice saisie pour des propos \"discriminatoires\" de policiers municipaux à Toulouse",
-   "desc": "Des discussions revêtant \"un caractère raciste, sexiste ou xénophobe\" auraient été échangées lors de discussions privées sur des messageries",
+   "title": "La mairie de Toulouse saisit la justice pour des propos de policiers municipaux \"susceptibles de présenter un caractère raciste, sexiste et homophobe\"",
+   "desc": "\"Le service des ressources humaines examine actuellement les suites disciplinaires à donner à cette affaire\", a précisé la municipalité jeudi dans un communiqué.",
    "url": "https://www.franceinfo.fr/societe/justice/la-justice-saisie-pour-des-propos-discriminatoires-de-policiers-municipaux-a-toulouse_8289725.html",
    "at": "2026-11-19T09:59:04+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : le sommet entre Xi Jinping, Donald Trump et Vladimir Poutine est terminé",
-   "desc": "Les présidents chinois, américain et russe se sont réunis jeudi à Shenzhen, en Chine, pour un sommet inédit, qui fait craindre des arrangements aux dépens d’autres acteurs internationaux, comme l’Ukraine et l’Europe.",
+   "title": "EN DIRECT, guerre en Ukraine : les émissaires américains se rendent à Berlin pour la réunion de la coalition des volontaires",
+   "desc": "Steve Witkoff et Jared Kushner participeront, jeudi, à Berlin, à la réunion de la coalition des volontaires. Ils assisteront également à la conférence de presse qui suivra, en compagnie du chancelier allemand, Friedrich Merz, des présidents ukrainien et français, Volodymyr Zelensky et Emmanuel Macron, et du premier ministre britannique, Andy Burnham.",
    "url": "https://www.lemonde.fr/international/live/2026/11/19/en-direct-guerre-en-ukraine-etats-unis-chine-et-russie-dans-une-position-unique-pour-reduire-les-arsenaux-nucleaires-affirme-donald-tump_6810982_3210.html",
    "at": "2026-11-19T09:54:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Châtaigniers en fleurs\" de Van Gogh vendu 190,4 millions de dollars, un record pour le peintre",
-   "desc": "Il s'agit de la quatrième œuvre la plus chère jamais vendue aux enchères.",
-   "url": "https://www.franceinfo.fr/culture/arts-expos/peinture/chataigniers-en-fleurs-de-van-gogh-vendu-190-4-millions-de-dollars-un-record-pour-le-peintre_8289611.html",
-   "at": "2026-11-19T09:52:35+00:00"
   },
   {
    "source": "franceinfo",
@@ -106,13 +176,6 @@
    "desc": "La Somme, le Pas-de-Calais et la Seine-Maritime restent en vigilance orange pluie-inondations jusqu'à jeudi soir. A Nibas, les habitants se sont réveillés mercredi avec des rues inondées et des maisons cernées par la boue. Jusqu'à 40 cm ont été relevés par endroits.",
    "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/garages-retournes-voitures-englouties-des-communes-de-la-somme-envahies-par-la-boue_8288888.html",
    "at": "2026-11-19T09:48:54+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Dans les camps de réfugiés au Bangladesh, la situation des Rohingya se détériore en raison de la crise de financement",
-   "desc": "Alors que la Cour internationale de justice doit déterminer, jeudi 19 novembre, si les autorités birmanes ont commis un génocide contre les Rohingya en 2017, les conditions de vie du plus d’un million de réfugiés installés au Bangladesh ne cesse de se dégrader.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/19/dans-les-camps-de-refugies-au-bangladesh-la-situation-des-rohingya-se-deteriore-en-raison-de-la-crise-de-financement_6813265_3210.html",
-   "at": "2026-11-19T09:30:10+00:00"
   },
   {
    "source": "franceinfo",
@@ -123,10 +186,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Budget de la « Sécu » pour 2027 : la question clé de l’effort demandé aux retraités",
-   "desc": "Adopté, mercredi, au Sénat, le projet de loi de financement de la Sécurité sociale devrait être examiné, fin novembre, en commission mixte paritaire afin d’essayer de concilier les positions des deux chambres du Parlement. Jusqu’à présent, elles ont divergé sur la mise à contribution des retraités pour redresser les finances publiques.",
+   "title": "Budget de la « Sécu » pour 2027 : la question-clé de l’effort demandé aux retraités",
+   "desc": "Adopté, mercredi, au Sénat, le projet de loi de financement de la Sécurité sociale devrait être examiné, fin novembre, en commission mixte paritaire afin d’essayer de concilier les positions des deux Chambres du Parlement. Jusqu’à présent, elles ont divergé sur la mise à contribution des retraités pour redresser les finances publiques.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/19/budget-de-la-secu-pour-2027-la-question-cle-de-l-effort-demande-aux-retraites_6813262_823448.html",
-   "at": "2026-11-19T09:07:48+00:00"
+   "at": "2026-11-19T09:07:47+00:00"
   },
   {
    "source": "franceinfo",
@@ -136,39 +199,11 @@
    "at": "2026-11-19T09:05:16+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "INFO FRANCE 3. \"Je suis choqué par les taux\" : une étude inédite révèle la surexposition aux PFAS des salariés au sud de Lyon",
-   "desc": "Les salariés d’Arkema et Daikin, près de Lyon, ainsi que de Salindres, dans le Gard, sont surexposés aux polluants éternels. C’est ce que révèle une étude inédite menée par une équipe de scientifiques indépendants à laquelle ICI Rhône-Alpes et Reporterre ont eu accès en exclusivité.",
-   "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/exclu-france-3-je-suis-choque-par-les-taux-une-etude-inedite-revele-la-surexposition-aux-pfas-des-salaries-au-sud-de-lyon-3452016.html",
-   "at": "2026-11-19T09:02:36+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "« J’ai jugé que je ne pouvais plus rester anonyme » : la jeune femme qui a déposé une plainte pour violences sexistes et sexuelles contre l’architecte Matthieu Poitevin témoigne",
-   "desc": "Passée par l’Ecole nationale d’architecture de Marseille où enseignait l’architecte, Cécile Michaux témoigne auprès du « Monde » des agissements de cette figure du milieu, organisateur du festival Possibles !. Celui-ci conteste « catégoriquement l’ensemble de ces allégations ».",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/j-ai-juge-que-je-ne-pouvais-plus-rester-anonyme-la-jeune-femme-qui-a-porte-plainte-contre-l-architecte-matthieu-poitevin-pour-violences-sexistes-et-sexuelles-temoigne_6813259_3224.html",
-   "at": "2026-11-19T09:00:13+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Rassemblement national figure parmi les partis les plus à droite de l'extrême droite européenne, selon une étude de Terra Nova",
-   "desc": "450 000 positions de vote au Parlement européen ont été analysées par le cercle de réflexion progressiste. L'étude montre par exemple que le RN est proche de la ligne de l'AFD, parti d'extrême droite allemand, malgré des liens rompus.",
-   "url": "https://www.franceinfo.fr/politique/front-national/le-rassemblement-national-figure-parmi-les-partis-les-plus-a-droite-de-l-extreme-droite-europeenne-selon-une-etude-de-terra-nova_8289614.html",
-   "at": "2026-11-19T08:39:09+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'économiste Gabriel Zucman veut alerter sur \"les milliardaires\" qui \"menacent nos démocraties\" dans un nouveau manifeste",
-   "desc": "\"L'extrême richesse, c'est toujours un extrême pouvoir\", dénonce Gabriel Zucman sur France Inter. Ce nouveau livre propose toujours une taxe sur les très hauts patrimoines mais aussi un nouvel impôt de \"régularisation des impayés passés\".",
-   "url": "https://www.franceinfo.fr/economie/l-economiste-gabriel-zucman-veut-alerter-sur-les-milliardaires-qui-menacent-nos-democraties-dans-un-nouveau-manifeste_8289578.html",
-   "at": "2026-11-19T08:15:36+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : \"Elle a choisi de tourner le dos à la tradition écologiste\", réagit Raphaël Glucksmann après le rapprochement initié par Marine Tondelier avec LFI",
-   "desc": "La secrétaire nationale des Ecologistes envisage une coalition avec Jean-Luc Mélenchon, ce qui l'amènerait à renoncer à sa candidature à l'élection présidentielle.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-je-le-regrette-reagit-le-socialiste-olivier-faure-au-rapprochement-initie-par-l-ecologiste-marine-tondelier-vers-jean-luc-melenchon_8289440.html",
-   "at": "2026-11-19T08:02:08+00:00"
+   "title": "« Dès le début, je crois qu’il y a eu un petit malentendu entre ma cheffe et moi » : Lila, 28 ans, agent artistique",
+   "desc": "« Mon boss et moi ». Chaque semaine, un jeune actif raconte sa relation, parfois complexe, avec son supérieur hiérarchique et le monde du travail. A 28 ans, Lila raconte l’histoire de son premier CDI dans une petite structure et la dégradation rapide de ses rapports avec sa cheffe.",
+   "url": "https://www.lemonde.fr/campus/article/2026/11/19/des-le-debut-je-crois-qu-il-y-a-eu-un-petit-malentendu-entre-ma-cheffe-et-moi-lila-28-ans-agent-artistique_6813258_4401467.html",
+   "at": "2026-11-19T09:00:02+00:00"
   },
   {
    "source": "franceinfo",
@@ -178,13 +213,6 @@
    "at": "2026-11-19T07:32:28+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Bertrand Meheut, ancien patron de Canal+, est mort à l’âge de 75 ans",
-   "desc": "A la tête de Canal+ de 2002 à 2015, il y avait conduit un vaste plan de restructuration. Maxime Saada, actuel président du directoire du groupe privé, salue un dirigeant qui a « profondément marqué l’histoire » de l’entreprise.",
-   "url": "https://www.lemonde.fr/disparitions/article/2026/11/19/bertrand-meheut-ancien-patron-de-canal-est-mort-a-l-age-de-75-ans_6813249_3382.html",
-   "at": "2026-11-19T07:23:26+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Accusée d'avoir cautionné des écrits antisémites, la députée RN Laure Lavalette invoque des faits vieux de \"30 ans, dans un climat tout à fait différent\"",
    "desc": "Le média en ligne Les Jours a dévoilé des articles et une caricature antisémites parus dans une revue du syndicat étudiant que présidait la porte-parole de Marine Le Pen dans les années 90.",
@@ -192,22 +220,8 @@
    "at": "2026-11-19T07:15:07+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Anthropic, créateur de l'IA Claude, entre en bourse avec une valorisation astronomique, un test pour le secteur",
-   "desc": "Créateur de l'intelligence artificielle Claude, Anthropic fait son entrée à Wall Street avec une valorisation de 1 500 milliards de dollars. Une opération hors norme qui suscite l'enthousiasme des investisseurs, malgré les inquiétudes autour d'une possible bulle de l'IA.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/veritable-test-pour-le-secteur-de-l-ia-anthropic-createur-de-l-ia-claude-entre-en-bourse-avec-une-valorisation-astronomique_8268659.html",
-   "at": "2026-11-19T07:05:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"La différence n'empêche pas la compétence\", martèle une association pour l'insertion professionnelle des personnes handicapées",
-   "desc": "\"Démystifier, simplifier et accompagner\", c'est le slogan cette année, de la 30e semaine européenne pour l’emploi des personnes handicapées. \"Aucun poste n'est incompatible avec une personne en situation de handicap\", rappelle, à cette occasion l'Agefiph.",
-   "url": "https://www.franceinfo.fr/sante/handicap/la-difference-n-empeche-pas-la-competence-martele-une-association-pour-l-insertion-professionnelle-des-personnes-handicapees_8289515.html",
-   "at": "2026-11-19T07:02:20+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "EN DIRECT, sortie de « GTA VI » : très peu de bugs dans le jeu, salué pour son réalisme",
+   "title": "EN DIRECT, sortie de « GTA VI » : un réalisme qui change les équilibres habituels de la série",
    "desc": "« Grand Theft Auto VI », le dernier titre du studio Rockstar Games, est accessible sur PlayStation 5 et Xbox Series. Suivez toute la journée les premières impressions des joueurs et du service « Pixels » du « Monde ».",
    "url": "https://www.lemonde.fr/pixels/live/2026/11/19/en-direct-sortie-de-gta-vi-les-premieres-impressions-et-reactions_6813247_4408996.html",
    "at": "2026-11-19T07:00:05+00:00"
@@ -220,32 +234,18 @@
    "at": "2026-11-19T06:58:41+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Pluie-inondation : dans le Pas-de-Calais frappé par les inondations, le plan Orsec pour organiser les secours a été déclenché",
+   "desc": "Deux écoles ont été évacuées jeudi matin dans le Pas-de-Calais, où les inondations touchent une vingtaine de communes. Les pluies doivent se poursuivre jusqu’à vendredi midi. Les départements de la Somme, de la Seine-Maritime et des Landes sont également placés en vigilance orange.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/19/pluie-inondation-la-somme-le-pas-de-calais-la-seine-maritime-et-les-landes-places-en-vigilance-orange_6813246_3244.html",
+   "at": "2026-11-19T06:56:50+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Des membres du personnel de l'Education nationale sont-ils complices des violences commises en marge des mobilisations lycéennes, comme l'affirme le gouvernement ?",
    "desc": "Cette accusation a été portée par le Premier ministre, Sébastien Lecornu, ainsi que par les ministres de l'Intérieur, Laurent Nuñez, et de l'Education, Edouard Geffray. Or, les quelques cas signalés par les autorités judiciaires n'ont aucun lien avec la fourniture de mortiers d'artifice à des élèves et concernent des enseignants qui ne sont plus en exercice ou ont agi hors du cadre du lycée.",
    "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-des-membres-du-personnel-de-l-education-nationale-sont-ils-complices-des-violences-commises-en-marge-des-mobilisations-lyceennes-comme-l-affirme-le-gouvernement_8286719.html",
    "at": "2026-11-19T06:56:06+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Dès que le terrain va bouger, la conduite va casser\" : la France doit changer les vieilles canalisations d'eau fragilisées par le réchauffement climatique",
-   "desc": "Avec les intempéries qui succèdent aux sécheresses, les sols argileux bougent. Cela fragilise les grandes canalisations enterrées qui conduisent l'eau jusqu'aux robinets des grandes villes. D'importants travaux ont lieu en amont de Paris, dans la campagne normande.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/des-que-le-terrain-va-bouger-la-conduite-va-casser-la-france-doit-changer-les-vieilles-canalisations-d-eau-fragilisees-par-le-rechauffement-climatique_8288849.html",
-   "at": "2026-11-19T05:25:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "A Salindres dans le Gard, le TFA mesuré pour la première fois dans le sang de salariés de l'usine Solvay qui produisait des PFAS",
-   "desc": "Une étude inédite et indépendante a dosé le TFA dans le sang des salariés de Solvay, à Salindres (Gard). Comparés aux rares données scientifiques disponibles, les niveaux de ce polluant éternel longtemps produit sur le site sont parmi les plus élevés.",
-   "url": "https://france3-regions.franceinfo.fr/occitanie/gard/nimes/info-france-3-a-salindres-le-tfa-mesure-pour-la-premiere-fois-dans-le-sang-de-salaries-de-l-usine-solvay-qui-produisait-des-pfas-3451992.html",
-   "at": "2026-11-19T05:00:36+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La crise dans le détroit d’Ormuz favorise une « étroite convergence entre sécurité énergétique et objectifs climatiques », selon le directeur de l’AIE, Fatih Birol",
-   "desc": "L’Agence internationale de l’énergie devait publier son rapport annuel, jeudi 19 novembre. Le directeur exécutif de l’organisation souligne, dans un entretien au « Monde », comment la guerre au Moyen-Orient accélère le développement des renouvelables, du nucléaire et de l’électrification.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/19/la-crise-du-detroit-d-ormuz-favorise-une-etroite-convergence-entre-securite-energetique-et-objectifs-climatiques-selon-le-directeur-de-l-aie-fatih-birol_6813236_3234.html",
-   "at": "2026-11-19T05:00:28+00:00"
   },
   {
    "source": "Le Monde",
@@ -256,31 +256,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Qui est Fire Point, l'entreprise ukrainienne dont les drones et missiles ont joué un rôle dans l'attaque contre le pont de Crimée ?",
-   "desc": "Cette opération complexe, minutieusement préparée pendant des semaines, a nécessité l'emploi d'une douzaine d'armes différentes. La firme, fer de lance de l'industrie ukrainienne de la défense, a largement commenté ce succès.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/qui-est-fire-point-l-entreprise-ukrainienne-dont-les-drones-et-missiles-ont-joue-un-role-dans-l-attaque-contre-le-pont-de-crimee_8287982.html",
-   "at": "2026-11-19T04:34:31+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Microsoft, des aéroports, la banque JPMorgan, Apple… Comment les Etats-Unis ont été touchés par des pannes informatiques en série",
-   "desc": "Depuis une semaine, des pannes informatiques d'ampleur se répètent outre-Atlantique, avec des répercussions pour des millions d'utilisateurs dans le monde entier. Bien que le gouvernement américain assure que ces incidents ne sont pas liés, leur chronologie interroge.",
-   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/microsoft-des-aeroports-la-banque-jpmorgan-apple-comment-les-etats-unis-ont-ete-touches-par-des-pannes-informatiques-en-serie_8287973.html",
-   "at": "2026-11-19T04:33:38+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "L'électrification mondiale, un objectif phare mais encore incertain de la COP31",
    "desc": "Plusieurs dizaines de pays se sont engagés, comme souhaité par la Turquie, à porter à 35% la part de l'électricité dans la consommation finale et mondiale d'énergie d'ici à 2035.",
    "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/l-electrification-mondiale-un-objectif-phare-mais-encore-incertain-de-la-cop31_8286284.html",
    "at": "2026-11-19T04:32:56+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : Marine Tondelier tente de forcer la main des Ecologistes en se disant prête à rallier Jean-Luc Mélenchon",
-   "desc": "Sur France 2, mercredi, la secrétaire nationale des Ecologistes a ouvert la voie à son retrait de la présidentielle, alors que le parti ne s’est pas encore prononcé sur une candidature propre, une alliance avec La France insoumise ou un rapprochement avec Raphaël Glucksmann.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/19/presidentielle-2027-marine-tondelier-tente-de-forcer-la-main-des-ecologistes-en-se-disant-prete-a-rallier-jean-luc-melenchon_6813213_823448.html",
-   "at": "2026-11-18T23:49:22+00:00"
   },
   {
    "source": "France 24",
@@ -298,10 +277,24 @@
   },
   {
    "source": "franceinfo",
+   "title": "Présomption de légitime défense pour les forces de l'ordre : \"Ce que j'ai vécu fait que cette loi me fait extrêmement peur\", témoigne le producteur Michel Zecler",
+   "desc": "La loi sur la présomption de légitime défense pour les forces de l'ordre doit être étudiée par le Sénat à partir de ce jeudi, après avoir été adoptée à l'Assemblée nationale en juillet dernier.",
+   "url": "https://www.franceinfo.fr/faits-divers/police/violences-policieres/presomption-de-legitime-defense-pour-les-forces-de-l-ordre-ce-que-j-ai-vecu-fait-que-cette-loi-me-fait-extremement-peur-temoigne-le-producteur-michel-zecler-qui-se-dit-horrifie_8288912.html",
+   "at": "2026-11-18T21:36:14+00:00"
+  },
+  {
+   "source": "franceinfo",
    "title": "Budget, préventes, musique… Cinq chiffres vertigineux autour de \"GTA VI\", qui est sorti à minuit après treize ans d'attente",
    "desc": "Le nouvel épisode de la franchise \"Grand Theft Auto\" sort jeudi. L'éditeur américain Rockstar Games espère reproduire le succès du précédent opus, un des jeux vidéo les plus vendus de l'histoire.",
    "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/budget-preventes-musique-cinq-chiffres-vertigineux-autour-de-gta-vi-qui-sort-apres-treize-ans-d-attente_8267372.html",
    "at": "2026-11-18T20:32:27+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Une volonté de se protéger\" : au procès du tabassage de Michel Zecler, un policier reconnaît des \"mensonges\", les autres des \"erreurs\" dans le procès-verbal d'interpellation",
+   "desc": "En plus des violences aggravées sur le producteur de musique, les trois fonctionnaires de police, accusés d'avoir \"falsifié de façon évidente la réalité\", sont jugés pour faux en écriture publique par un dépositaire de l'autorité publique, une infraction criminelle.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/une-volonte-de-se-proteger-au-proces-du-tabassage-de-michel-zecler-un-policier-reconnait-des-mensonges-les-autres-des-erreurs-dans-le-proces-verbal-d-interpellation_8288621.html",
+   "at": "2026-11-18T18:05:03+00:00"
   },
   {
    "source": "France 24",
@@ -358,20 +351,6 @@
    "desc": "Le candidat Horizons à l'élection présidentielle de 2027, Édouard Philippe, a présenté mercredi de nouvelles mesures \"radicales\" pour relancer une campagne qui patine. Celles-ci mettent l'accent sur le retour de l'ordre dans les comptes publics et dans la rue, mais en respectant l'État de droit, promet l'ancien Premier ministre d'Emmanuel Macron, qui refuse toujours de participer à une primaire de la droite et du centre.",
    "url": "https://www.france24.com/fr/france/20261118-france-presidentielle-2027-pour-relancer-campagne-edouard-philippe-promet-retablir-ordre-comptes-rues",
    "at": "2026-11-18T13:56:19+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Édouard Philippe \"financé par McKinsey\" ? Un média sénégalais reprend une intox russe",
-   "desc": "Lundi, le média sénégalais SeneNews a repris sur son site pendant quelques heures l'intox russe selon laquelle Édouard Philippe aurait reçu 30 millions d'euros du cabinet de conseil McKinsey. Une enquête des Observateurs de France 24 avait révélé en mars comment des médias ouest-africains reprenaient des narratifs russes, parfois contre rémunération.",
-   "url": "https://www.france24.com/fr/france/20261118-%C3%A9douard-philippe-financ%C3%A9-mckinsey-m%C3%A9dia-s%C3%A9n%C3%A9galais-reprend-intox-russe",
-   "at": "2026-11-18T13:16:42+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Vous allez voir qu'il est de gauche !\" : un mois après la primaire, Raphaël Glucksmann veut donner des gages à son camp",
-   "desc": "En déplacement dans la banlieue lyonnaise, le candidat PS-Place publique à la présidentielle tente de relancer sa campagne après un mois de \"faux plat\".",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/vous-allez-voir-qu-il-est-de-gauche-un-mois-apres-la-primaire-raphael-glucksmann-veut-donner-des-gages-a-son-camp_8288081.html",
-   "at": "2026-11-18T11:44:49+00:00"
   }
  ]
 }

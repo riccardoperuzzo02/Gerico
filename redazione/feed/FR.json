@@ -1,13 +1,146 @@
 {
  "code": "FR",
- "asOf": "2026-11-19T07:17:33+00:00",
+ "asOf": "2026-11-19T09:17:37+00:00",
  "items": [
   {
    "source": "franceinfo",
-   "title": "Rencontre entre Trump, Poutine, et Xi : suivez l'entretien inédit entre les trois présidents en Chine",
-   "desc": "Les chefs d'Etat américain, russe et chinois se réunissent pour un sommet tripartite consacré aux crises internationales.",
+   "title": "Les deux départements corses placés en vigilance orange \"vent\", les Landes, la Seine-Maritime, la Somme et le Pas-de-Calais en alerte orange \"pluie-inondation\"",
+   "desc": "Météo-France prévoit de fortes précipitations dans le quart nord-ouest du pays notamment dans la nuit de jeudi à vendredi. La Haute-Corse et le Pas-de-Calais sont pour leur part placés en alerte orange pour un risque de crues.",
+   "url": "https://www.franceinfo.fr/environnement/meteo/les-landes-et-la-seine-maritime-rejoignent-le-pas-de-calais-et-la-somme-places-en-vigilance-orange-pour-pluie-inondation-pour-la-journee-de-jeudi_8289359.html",
+   "at": "2026-11-19T09:15:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"C'est grandiose, on se sent pris dans le jeu !\" : les premières impressions d'une fan qui découvre \"GTA VI\"",
+   "desc": "À minuit, dans la nuit de mercredi à jeudi, Constance, 24 ans, découvre enfin GTA VI, le jeu vidéo le plus attendu de l'année. Entre excitation, premières missions et courses-poursuites, elle partage avec franceinfo ses premières minutes de jeu.",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/temoignage-c-est-grandiose-on-se-sent-pris-dans-le-jeu-les-premieres-impressions-d-une-fan-qui-decouvre-gta-vi_8289533.html",
+   "at": "2026-11-19T09:05:16+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "INFO ICI. \"Je suis choqué par les taux\" : une étude inédite révèle la surexposition aux PFAS des salariés au sud de Lyon",
+   "desc": "Les salariés d’Arkema et Daikin, près de Lyon, ainsi que de Salindres, dans le Gard, sont surexposés aux polluants éternels. C’est ce que révèle une étude inédite menée par une équipe de scientifiques indépendants à laquelle ICI Rhône-Alpes et Reporterre ont eu accès en exclusivité.",
+   "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/exclu-france-3-je-suis-choque-par-les-taux-une-etude-inedite-revele-la-surexposition-aux-pfas-des-salaries-au-sud-de-lyon-3452016.html",
+   "at": "2026-11-19T09:02:36+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« J’ai jugé que je ne pouvais plus rester anonyme » : la jeune femme qui a porté plainte contre l’architecte Matthieu Poitevin pour violences sexistes et sexuelles témoigne",
+   "desc": "Passée par l’Ecole nationale d’architecture de Marseille où enseignait l’architecte, Cécile Michaux témoigne auprès du « Monde » des agissements de cette figure du milieu, organisateur du festival Possibles !. Celui-ci conteste « catégoriquement l’ensemble de ces allégations ».",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/19/j-ai-juge-que-je-ne-pouvais-plus-rester-anonyme-la-jeune-femme-qui-a-porte-plainte-contre-l-architecte-matthieu-poitevin-pour-violences-sexistes-et-sexuelles-temoigne_6813259_3224.html",
+   "at": "2026-11-19T09:00:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Rencontre entre Trump, Poutine et Xi : \"Ensemble nous écrivons l'histoire\", déclare le président américain, qui annonce une discussion sur la guerre en Ukraine",
+   "desc": "Les chefs d'Etat américain, russe et chinois se réunissent pour un sommet tripartite pour \"préserver la paix mondiale\".",
    "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/direct-rencontre-donald-trump-vladimir-poutine-xi-jinping-suivez-l-entretien-inedit-entre-les-trois-presidents-en-chine_8288564.html",
-   "at": "2026-11-19T07:04:32+00:00"
+   "at": "2026-11-19T08:54:52+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le Rassemblement national figure parmi les partis les plus à droite de l'extrême droite européenne, selon une étude de Terra Nova",
+   "desc": "450 000 positions de vote au Parlement européen ont été analysées par le cercle de réflexion progressiste. L'étude montre par exemple que le RN est proche de la ligne de l'AFD, parti d'extrême droite allemand, malgré des liens rompus.",
+   "url": "https://www.franceinfo.fr/politique/front-national/le-rassemblement-national-figure-parmi-les-partis-les-plus-a-droite-de-l-extreme-droite-europeenne-selon-une-etude-de-terra-nova_8289614.html",
+   "at": "2026-11-19T08:39:09+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’extension des aéroports de Roissy-Charles-de-Gaulle et d’Orly validée, sous réserve, par le régulateur des transports",
+   "desc": "L’autorité indépendante a donné son feu vert au contrat de régulation économique signé entre l’Etat et le groupe ADP. Cela ouvre la voie à une hausse de la capacité des aéroports franciliens, de 110 millions de voyageurs en 2026 à 130 millions en 2034. Montant des investissements prévus : 8,2 milliards d’euros.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/19/l-extension-des-aeroports-de-roissy-charles-de-gaulle-et-d-orly-validee-sous-reserve-par-le-regulateur-des-transports_6813252_3234.html",
+   "at": "2026-11-19T08:28:38+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"La colère des élus est très forte\" : face à la baisse de dotation prévue, des maires placent un ruban noir sur les panneaux de leur ville",
+   "desc": "Les parlementaires débattent en ce moment du budget de l'État pour l'année 2027. Le texte prévoit cinq milliards d'euros d'économie pour les collectivités : la présidente de l’Association des maires du Cher appelle à une baisse des dotations \"proportionnée\", \"prévisible\" et \"juste.\"",
+   "url": "https://www.franceinfo.fr/economie/budget/la-colere-des-elus-est-tres-forte-face-a-la-baisse-de-dotation-prevue-des-maires-placent-un-ruban-noir-sur-les-panneaux-de-leur-ville_8289602.html",
+   "at": "2026-11-19T08:25:52+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'économiste Gabriel Zucman veut alerter sur \"les milliardaires\" qui \"menacent nos démocraties\" dans un nouveau manifeste",
+   "desc": "\"L'extrême richesse, c'est toujours un extrême pouvoir\", dénonce Gabriel Zucman sur France Inter. Ce nouveau livre propose toujours une taxe sur les très hauts patrimoines mais aussi un nouvel impôt de \"régularisation des impayés passés\".",
+   "url": "https://www.franceinfo.fr/economie/l-economiste-gabriel-zucman-veut-alerter-sur-les-milliardaires-qui-menacent-nos-democraties-dans-un-nouveau-manifeste_8289578.html",
+   "at": "2026-11-19T08:15:36+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"Elle a choisi de tourner le dos à la tradition écologiste\", réagit Raphaël Glucksmann après le rapprochement initié par Marine Tondelier avec LFI",
+   "desc": "La secrétaire nationale des Ecologistes envisage une coalition avec Jean-Luc Mélenchon, ce qui l'amènerait à renoncer à sa candidature à l'élection présidentielle.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-je-le-regrette-reagit-le-socialiste-olivier-faure-au-rapprochement-initie-par-l-ecologiste-marine-tondelier-vers-jean-luc-melenchon_8289440.html",
+   "at": "2026-11-19T08:02:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"'GTA', c'est un catalyseur de tout ce qui se fait de mieux dans la pop culture\", salue le seul journaliste français à s'être rendu dans les studios du jeu",
+   "desc": "GTA IV, le jeu sorti dans la nuit de mercredi à jeudi, est un \"récit\", \"une narration qui nous porte\" estime Etienne Rouillon. \"C'est le meilleur film et c'est peut-être aussi le meilleur album\", poursuit-il.",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/gta-c-est-un-catalyseur-de-tout-ce-qui-se-fait-de-mieux-dans-la-pop-culture-salue-le-seul-journaliste-francais-a-s-etre-rendu-dans-les-studios-du-jeu_8289566.html",
+   "at": "2026-11-19T07:46:26+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Tous les autres pays européens\" ont-ils repoussé l'âge de départ à la retraite à 66 ou 67 ans, comme l'affirme le patron du Medef ?",
+   "desc": "Selon le président du Medef, la France devrait passer à un âge légal à 65 ans, pour s'aligner sur ses voisins européens qui sont tous passés à 66 ou 67 ans. En réalité, c'est une exagération.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/vrai-ou-faux-tous-les-autres-pays-europeens-ont-ils-repousse-l-age-de-depart-a-la-retraite-a-66-ou-67-ans-comme-l-affirme-patrick-martin_8268653.html",
+   "at": "2026-11-19T07:32:28+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Arabie saoudite : le quartier financier de Riyad de nouveau attaqué, la tour du fonds souverain endommagée",
+   "desc": "« Des débris sont tombés et les dégâts matériels sont en cours d’évaluation », a reconnu la coalition menée par l’Arabie saoudite, quelques heures après avoir annoncé avoir intercepté un missile tiré par les houthistes.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/19/arabie-saoudite-le-quartier-financier-de-riyad-de-nouveau-attaque-la-tour-du-fonds-souverain-endommagee_6813250_3210.html",
+   "at": "2026-11-19T07:23:48+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Bertrand Meheut, ancien patron de Canal+, est mort à l’âge de 75 ans",
+   "desc": "A la tête de Canal+ de 2002 à 2015, il y avait conduit un vaste plan de restructuration. Maxime Saada, actuel président du directoire du groupe privé, salue un dirigeant qui a « profondément marqué l’histoire » de l’entreprise.",
+   "url": "https://www.lemonde.fr/disparitions/article/2026/11/19/bertrand-meheut-ancien-patron-de-canal-est-mort-a-l-age-de-75-ans_6813249_3382.html",
+   "at": "2026-11-19T07:23:26+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Cet outil ne va pas tout faire à la place de l'élève\" : en Estonie, une version spécifique de ChatGPT fait son entrée dans les salles de classe",
+   "desc": "En Estonie, depuis la rentrée 2026, les lycéens ont tous accès à une version sur mesure de ChatGPT. Plutôt que d’interdire l'intelligence artificielle, le gouvernement veut en faire un outil pédagogique. Une expérimentation inédite qui pourrait transformer l’école, mais dont l'issue reste incertaine.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/cet-outil-ne-va-pas-tout-faire-a-la-place-de-l-eleve-en-estonie-une-version-specifique-de-chatgpt-fait-son-entree-dans-les-salles-de-classe_8268662.html",
+   "at": "2026-11-19T07:19:11+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"L'épisode de pluie n'est pas terminé\", prévient le préfet du Pas-de-Calais après une nuit \"plutôt calme\"",
+   "desc": "Toujours en vigilance orange pluie-inondation et crues, les cumuls de précipitations dans le département pourraient atteindre jusqu'à 170 mm localement. François-Xavier Lauch appelle \"tout le monde à faire attention\".",
+   "url": "https://www.franceinfo.fr/environnement/meteo/l-episode-de-pluie-n-est-pas-termine-previent-le-prefet-du-pas-de-calais-apres-une-nuit-plutot-calme_8289551.html",
+   "at": "2026-11-19T07:16:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Accusée d'avoir cautionné des écrits antisémites, la députée RN Laure Lavalette invoque des faits vieux de \"30 ans, dans un climat tout à fait différent\"",
+   "desc": "Le média en ligne Les Jours a dévoilé des articles et une caricature antisémites parus dans une revue du syndicat étudiant que présidait la porte-parole de Marine Le Pen dans les années 90.",
+   "url": "https://www.franceinfo.fr/elections/accusee-d-avoir-cautionne-des-ecrits-antisemites-la-deputee-rn-laure-lavalette-invoque-des-faits-vieux-de-30-ans_8289503.html",
+   "at": "2026-11-19T07:15:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Anthropic, créateur de l'IA Claude, entre en bourse avec une valorisation astronomique, un test pour le secteur",
+   "desc": "Créateur de l'intelligence artificielle Claude, Anthropic fait son entrée à Wall Street avec une valorisation de 1 500 milliards de dollars. Une opération hors norme qui suscite l'enthousiasme des investisseurs, malgré les inquiétudes autour d'une possible bulle de l'IA.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/veritable-test-pour-le-secteur-de-l-ia-anthropic-createur-de-l-ia-claude-entre-en-bourse-avec-une-valorisation-astronomique_8268659.html",
+   "at": "2026-11-19T07:05:02+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, sortie de « GTA VI » : « le jeu le plus beau que j’ai jamais vu »",
+   "desc": "« Grand Theft Auto VI », le dernier titre du studio Rockstar Games, est accessible sur PlayStation 5 et Xbox Series. Suivez toute la journée les premières impressions des joueurs et du service « Pixels » du « Monde ».",
+   "url": "https://www.lemonde.fr/pixels/live/2026/11/19/en-direct-sortie-de-gta-vi-les-premieres-impressions-et-reactions_6813247_4408996.html",
+   "at": "2026-11-19T07:00:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Donald Trump, Vladimir Poutine et Xi Jinping réunis à Pékin pour un \"Yalta bis\", un nouveau \"partage du monde\" ?",
+   "desc": "C'est un rendez-vous sans précédent qui a débuté jeudi dans la matinée, avec les rencontres entre les présidents américain, russe et chinois. La veille déjà le ton était donné, avec un Donald Trump qui a eu les honneurs de Xi Jinping pour une réunion qui se veut historique.",
+   "url": "https://www.franceinfo.fr/replay-radio/d-un-monde-a-l-autre/donald-trump-vladimir-poutine-et-xi-jinping-reunis-a-pekin-pour-un-yalta-bis-un-nouveau-partage-du-monde_8268638.html",
+   "at": "2026-11-19T06:58:41+00:00"
   },
   {
    "source": "franceinfo",
@@ -17,32 +150,46 @@
    "at": "2026-11-19T06:56:06+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "\"Il a laissé une empreinte durable\" : Bertrand Méheut, ancien président du groupe Canal+ est décédé",
+   "desc": "Bertrand Méheut a été président du groupe Canal+ de 2002 à 2015. Maxime Saada, actuel président du directoire du groupe Canal+, salue un dirigeant qui a \"profondément marqué l'histoire\" de l'entreprise.",
+   "url": "https://www.franceinfo.fr/economie/medias/il-a-laisse-une-empreinte-durable-bertrand-meheut-ancien-president-du-groupe-canal-est-decede_8289518.html",
+   "at": "2026-11-19T06:50:51+00:00"
+  },
+  {
    "source": "Le Monde",
    "title": "Trains de nuit : l’Etat renonce à commander des rames neuves et opte pour la rénovation des voitures Corail",
    "desc": "Le ministre des transports a confirmé que l’Etat commanderait 27 nouvelles locomotives mais pas de nouvelles rames, leur coût dépassant le budget prévu. La SNCF devra rénover 180 voitures Corail, dont certaines ont plus de 50 ans.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/19/trains-de-nuit-l-etat-renonce-a-commander-des-rames-neuves-et-opte-pour-la-renovation-des-voitures-corail_6813244_3234.html",
-   "at": "2026-11-19T06:40:17+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les Landes rejoignent le Pas-de-Calais, la Seine-Maritime et la Somme en vigilance orange \"pluie-inondation\"",
-   "desc": "Météo-France prévoit de fortes précipitations dans le quart nord-ouest du pays notamment dans la nuit de jeudi à vendredi. La Haute-Corse et le Pas-de-Calais sont pour leur part placés en alerte orange pour un risque de crues.",
-   "url": "https://www.franceinfo.fr/environnement/meteo/les-landes-et-la-seine-maritime-rejoignent-le-pas-de-calais-et-la-somme-places-en-vigilance-orange-pour-pluie-inondation-pour-la-journee-de-jeudi_8289359.html",
-   "at": "2026-11-19T06:26:41+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le niveau de risque pour la grippe aviaire relevé à \"élevé\" sur l'ensemble du territoire métropolitain",
-   "desc": "Cela constitue le plus haut des trois niveaux prévus par la réglementation. Il prévoit notamment des mesures de surveillance et de prévention supplémentaires, alors que le risque augmente dans plusieurs pays voisins.",
-   "url": "https://www.franceinfo.fr/sante/maladie/grippe-aviaire/le-niveau-de-risque-pour-la-grippe-aviaire-releve-a-eleve-sur-l-ensemble-du-territoire-metropolitain_8289491.html",
-   "at": "2026-11-19T06:15:05+00:00"
+   "at": "2026-11-19T06:40:14+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Indivision : le concubin violent écarté du logement peut réclamer une indemnité d’occupation à sa victime",
-   "desc": "La protection qu’offre le droit de la famille à une femme victime de violences conjugales se heurte au droit des biens, au profit de l’homme coupable.",
-   "url": "https://www.lemonde.fr/argent/article/2026/11/19/indivision-le-concubin-violent-ecarte-du-logement-peut-reclamer-une-indemnite-d-occupation-a-sa-victime_6813237_1657007.html",
-   "at": "2026-11-19T05:35:06+00:00"
+   "title": "Perturbateurs endocriniens : une « menace globale et croissante », selon les Nations unies et l’Organisation mondiale de la santé",
+   "desc": "Le coût des dégâts sanitaires provoqués par les substances chimiques de cette catégorie est d’au moins 1 100 milliards de dollars par an à l’échelle mondiale, estiment les experts des deux organisations internationales.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/19/perturbateurs-endocriniens-une-menace-globale-et-croissante-selon-les-nations-unies-et-l-organisation-mondiale-de-la-sante_6813243_3244.html",
+   "at": "2026-11-19T06:30:02+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Inside Deutsche Bank » : derrière la façade verte, les coulisses du « greenwashing » de la banque allemande",
+   "desc": "Après l’accord de Paris en 2015, la banque a multiplié les annonces pour réduire son empreinte sur le climat. La fuite de données « Inside Deutsche Bank » montre que le groupe a contourné ou ignoré ses propres promesses à plusieurs reprises.",
+   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/19/inside-deutsche-bank-derriere-la-facade-verte-les-coulisses-du-greenwashing-de-la-banque-allemande_6813239_4355770.html",
+   "at": "2026-11-19T05:58:07+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : le sommet inédit entre Xi Jinping, Donald Trump et Vladimir Poutine débute",
+   "desc": "En amont, les présidents américain et russe ont discuté pendant environ quarante minutes à Shenzhen, sans que l’on sache quels ont été les thèmes abordés. Donald Trump s’est également entretenu avec Xi Jinping, affirmant qu’ils souhaitent tous les deux apporter leur « aide » pour mettre fin à la guerre en Ukraine.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/19/en-direct-guerre-en-ukraine-peu-avant-leur-rencontre-tripartite-en-chine-donald-trump-s-entretient-separement-avec-vladimir-poutine-et-xi-jinping_6810982_3210.html",
+   "at": "2026-11-19T05:52:41+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La déléguée à la protection des enfants à l'école appelle à améliorer la \"culture\" du signalement à la suite du scandale dans le périscolaire",
+   "desc": "Cristelle Gillard rend un rapport jeudi avec ses premières observations sur près de 200 dossiers étudiés. Avec ce rapport, elle veut \"contribuer à l’amélioration de la chaîne de protection des enfants confrontés aux violences subies ou révélées à l’école\".",
+   "url": "https://www.franceinfo.fr/societe/education/violences-dans-le-periscolaire/la-deleguee-a-la-protection-des-enfants-a-l-ecole-appelle-a-ameliorer-la-culture-du-signalement-a-la-suite-du-scandale-dans-le-periscolaire_8289422.html",
+   "at": "2026-11-19T05:44:30+00:00"
   },
   {
    "source": "franceinfo",
@@ -50,13 +197,6 @@
    "desc": "Avec les intempéries qui succèdent aux sécheresses, les sols argileux bougent. Cela fragilise les grandes canalisations enterrées qui conduisent l'eau jusqu'aux robinets des grandes villes. D'importants travaux ont lieu en amont de Paris, dans la campagne normande.",
    "url": "https://www.franceinfo.fr/environnement/crise-climatique/des-que-le-terrain-va-bouger-la-conduite-va-casser-la-france-doit-changer-les-vieilles-canalisations-d-eau-fragilisees-par-le-rechauffement-climatique_8288849.html",
    "at": "2026-11-19T05:25:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les femmes travaillent \"gratuitement\" à partir de jeudi à 10h51 jusqu'à la fin de l'année, selon Les Glorieuses",
-   "desc": "Même si cette date arrive douze jours plus tard en dix ans, les inégalités salariales entre femmes et hommes sont toujours présentes. La lettre d'information des Glorieuses précise aussi qu'il existe des écarts de patrimoine et sur les placements financiers.",
-   "url": "https://www.franceinfo.fr/economie/disparites-salariales/les-femmes-travaillent-gratuitement-a-partir-de-jeudi-a-10h51-jusqu-a-la-fin-de-l-annee-selon-les-glorieuses_8289371.html",
-   "at": "2026-11-19T05:22:52+00:00"
   },
   {
    "source": "franceinfo",
@@ -71,20 +211,6 @@
    "desc": "La saga a marqué les esprits par son utilisation de la musique, omniprésente. D'énormes tubes sont disséminés tout au long des aventures, au point d'en devenir indissociables. Ce nouvel opus, sorti dans la nuit de mercredi à jeudi, a attiré les plus grandes stars.",
    "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/ca-a-toujours-ete-selectionne-avec-beaucoup-de-soins-en-quoi-la-bande-son-de-la-saga-gta-est-elle-novatrice_8288672.html",
    "at": "2026-11-19T05:19:17+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« GTA VI », le sixième épisode du jeu vidéo phénomène, une matière sensible pour le monde politique",
-   "desc": "A gauche comme à droite, partis et candidats ont multiplié les clins d’œil à la sortie du jeu vidéo. Oubliant parfois les rapports contrariés de leur famille politique avec la saga.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/19/gta-vi-le-sixieme-episode-du-jeu-video-phenomene-une-matiere-sensible-pour-le-monde-politique_6813235_823448.html",
-   "at": "2026-11-19T05:00:40+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Violences à l’école et dans le périscolaire : un rapport appelle à un accompagnement sur le long terme des élèves victimes",
-   "desc": "Après six mois d’exercice, la déléguée à la protection des enfants à l’école rend un rapport issu des premières saisines qu’elle a traitées. Elle prône le développement d’une culture du signalement et une meilleure coordination des acteurs.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/violences-a-l-ecole-et-dans-le-periscolaire-un-rapport-appelle-a-un-accompagnement-sur-le-long-terme-des-eleves-victimes_6813234_3224.html",
-   "at": "2026-11-19T05:00:37+00:00"
   },
   {
    "source": "Le Monde",
@@ -109,13 +235,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Microsoft, des aéroports, la banque JPMorgan, Apple… Comment les Etats-Unis ont été touchés par des pannes informatiques en série",
-   "desc": "Depuis une semaine, des pannes informatiques d'ampleur se répètent outre-Atlantique, avec des répercussions pour des millions d'utilisateurs dans le monde entier. Bien que le gouvernement américain assure que ces incidents ne sont pas liés, leur chronologie interroge.",
-   "url": "https://www.franceinfo.fr/internet/panne-informatique-mondiale/microsoft-des-aeroports-la-banque-jpmorgan-apple-comment-les-etats-unis-ont-ete-touches-par-des-pannes-informatiques-en-serie_8287973.html",
-   "at": "2026-11-19T04:33:38+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "L'électrification mondiale, un objectif phare mais encore incertain de la COP31",
    "desc": "Plusieurs dizaines de pays se sont engagés, comme souhaité par la Turquie, à porter à 35% la part de l'électricité dans la consommation finale et mondiale d'énergie d'ici à 2035.",
    "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/l-electrification-mondiale-un-objectif-phare-mais-encore-incertain-de-la-cop31_8286284.html",
@@ -130,43 +249,22 @@
   },
   {
    "source": "Le Monde",
-   "title": "Au procès de l’explosion de la rue de Trévise, le patron du syndic de copropriété « ne voit pas la faute »",
-   "desc": "Le tribunal a interrogé mercredi le dirigeant de la société Cipa, poursuivie en tant que personne morale pour ne pas avoir eu recours à une procédure d’urgence afin de réparer une fuite sur un collecteur d’eaux usées. Fuite qui, selon les expertises, serait à l’origine du processus ayant entraîné l’explosion du 12 janvier 2019.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/au-proces-de-l-explosion-de-la-rue-de-trevise-le-patron-du-syndic-de-copropriete-ne-voit-pas-la-faute_6813224_3224.html",
-   "at": "2026-11-19T04:30:00+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Notre sélection de livres cette semaine : « Le Miroir des limbes », « L’Enclos des esclaves », « Rouges-Truites »…",
-   "desc": "Chaque jeudi, la rédaction du « Monde des livres » vous propose ses choix littéraires. Aujourd’hui, notamment, outre le cinquantenaire de la mort d’André Malraux qui nous offre de plonger dans ses Mémoires, un palpitant thriller jurassien, signé Pierric Bailly.",
-   "url": "https://www.lemonde.fr/livres/article/2026/11/19/notre-selection-de-livres-cette-semaine-le-miroir-des-limbes-l-enclos-des-esclaves-rouges-truites_6813221_3260.html",
-   "at": "2026-11-19T04:00:13+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Procès de l’interpellation violente de Michel Zecler par des policiers : dans sa plaidoirie, l’avocat du producteur remet la question du racisme au centre des débats",
-   "desc": "Si le caractère illégitime de la brutalité dont ont fait preuve les trois agents fait peu de doutes, Mᵉ Serge Money a exhorté la cour à reconnaître comme circonstance aggravante l’existence de biais racistes à l’origine du contrôle du producteur de musique et de son passage à tabac.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/19/proces-de-l-interpellation-violente-de-michel-zecler-par-des-policiers-dans-sa-plaidoirie-l-avocat-du-producteur-remet-la-question-du-racisme-au-centre-des-debats_6813219_3224.html",
-   "at": "2026-11-19T04:00:07+00:00"
+   "title": "En Espagne, les candidats font campagne chez les youtubeurs",
+   "desc": "A l’approche des élections législatives du 29 novembre, les principaux responsables politiques espagnols multiplient les entretiens avec des créateurs de contenu. Des conversations à bâtons rompus, parfois très intimes, qui leur permettent de toucher un public éloigné des médias traditionnels.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/19/en-espagne-les-candidats-font-campagne-chez-les-youtubeurs_6813223_3210.html",
+   "at": "2026-11-19T04:30:04+00:00"
   },
   {
    "source": "Le Monde",
    "title": "Interdire le commerce avec les colonies israéliennes : des députés veulent placer la France face à ses engagements",
-   "desc": "Une proposition de loi du Parti socialiste, examinée jeudi 19 novembre à l’Assemblée, veut interdire le commerce avec les colonies israéliennes, y compris les services financiers, alors que deux mois après avoir annoncé des sanctions, le gouvernement n’agit pas.",
+   "desc": "Une proposition de loi du Parti socialiste, examinée jeudi 19 novembre à l’Assemblée nationale, veut mettre fin aux relations économiques avec les colonies israéliennes, y compris les services financiers, alors que, deux mois après avoir annoncé des sanctions, le gouvernement n’agit pas.",
    "url": "https://www.lemonde.fr/international/article/2026/11/19/interdire-le-commerce-avec-les-colonies-israeliennes-des-deputes-veulent-placer-la-france-face-a-ses-engagements_6813220_3210.html",
    "at": "2026-11-19T04:00:05+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Le tableau de Van Gogh « Châtaigniers en fleurs » vendu 190,4 millions de dollars, un record pour le peintre",
-   "desc": "La maison de vente aux enchères Sotheby’s avait annoncé, mardi, qu’un accord avait été trouvé avec une famille qui contestait la mise en vente de l’œuvre, mettant en avant les conditions de son acquisition sous le régime nazi.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/19/le-tableau-de-van-gogh-chataigniers-en-fleurs-vendu-190-4-millions-de-dollars-un-record-pour-le-peintre_6813214_3246.html",
-   "at": "2026-11-19T00:09:23+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Présidentielle 2027 : Marine Tondelier tente de forcer la main des Ecologistes en se disant prête à rallier Jean-Luc Mélenchon",
-   "desc": "Sur France 2, la secrétaire nationale des Ecologistes a ouvert la voie à son retrait de la présidentielle, alors que le parti ne s’est pas encore prononcé sur une candidature propre, une alliance avec La France insoumise ou un rapprochement avec Raphaël Glucksmann.",
+   "desc": "Sur France 2, mercredi, la secrétaire nationale des Ecologistes a ouvert la voie à son retrait de la présidentielle, alors que le parti ne s’est pas encore prononcé sur une candidature propre, une alliance avec La France insoumise ou un rapprochement avec Raphaël Glucksmann.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/19/presidentielle-2027-marine-tondelier-tente-de-forcer-la-main-des-ecologistes-en-se-disant-prete-a-rallier-jean-luc-melenchon_6813213_823448.html",
    "at": "2026-11-18T23:49:22+00:00"
   },
@@ -178,60 +276,11 @@
    "at": "2026-11-18T23:18:12+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le pont de Crimée de nouveau attaqué, deux jours après des frappes ukrainiennes qui ont endommagé l'infrastructure",
-   "desc": "La circulation sur l'ouvrage, qui relie la Crimée annexée à la Russie, \"est temporairement interrompue\", a annoncé mercredi soir un responsable local russe.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/le-pont-de-crimee-a-de-nouveau-ete-nouveau-attaque-deux-jours-apres-des-frappes-ukrainiennes-ayant-serieusement-endommage-l-infrastructure_8289056.html",
-   "at": "2026-11-18T23:14:23+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La vaccination face à la grippe permet d'éviter 9 000 hospitalisations chez les plus de 65 ans chaque année, selon Santé publique France",
-   "desc": "La grippe est responsable de 44 000 hospitalisations par an chez les personnes âgées de plus de 65 ans, essentiellement chez les plus de 75 ans,",
-   "url": "https://www.franceinfo.fr/economie/disparites-salariales/la-vaccination-face-a-la-grippe-permet-d-eviter-9-000-hospitalisations-chez-les-plus-de-65-ans-chaque-annee-selon-sante-publique-france_8288957.html",
-   "at": "2026-11-18T23:05:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L214 accuse un élevage dans le Finistère qui fournit le groupe Leclerc de violences sur des porcelets",
-   "desc": "L'association de protection animale annonce porter plainte contre cet élevage situé à Poullaouen. L'association accuse l'élevage de castrer des porcelets à vif.",
-   "url": "https://www.franceinfo.fr/environnement/biodiversite/animaux/bien-etre-animal/maltraitance-dans-les-abattoirs/l214-accuse-un-elevage-dans-le-finistere-qui-fournit-le-groupe-leclerc-de-violences-sur-des-porcelets_8288975.html",
-   "at": "2026-11-18T23:00:01+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Trois \"revenantes\" françaises condamnées à des peines de cinq à douze ans de prison pour avoir rejoint l'organisation Etat islamique en Syrie",
-   "desc": "Deux ex-épouses d'Adrien Guihal, haut cadre de l'EI qui avait revendiqué en 2016 les attentats de Nice et de Magnanville, ont notamment été condamnées par la cour d'assises spéciale de Paris.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/offensive-jihadiste-en-irak/trois-revenantes-francaises-condamnees-a-des-peines-de-cinq-a-douze-ans-de-prison-pour-avoir-rejoint-l-organisation-etat-islamique-en-syrie_8289047.html",
-   "at": "2026-11-18T22:50:36+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Présidentielle : Marine Tondelier \"prête à travailler à une coalition\" autour de Jean-Luc Mélenchon",
-   "desc": "Qualifiant la dynamique de campagne de Jean-Luc Mélenchon d'\"indéniable\", la candidate des Écologistes à la présidentielle, Marine Tondelier, a dit, mercredi sur France 2, être \"prête\" à \"travailler à une coalition\" avec l'Insoumis. Dans les sondages, elle est créditée de 2 à 4 % des intentions de vote alors que Jean-Luc Mélenchon est donné au second tour.",
+   "desc": "Qualifiant la dynamique de campagne de Jean-Luc Mélenchon d'\"indéniable\", la candidate écologiste à la présidentielle, Marine Tondelier, a dit, mercredi sur France 2, être \"prête\" à \"travailler à une coalition\" avec l'insoumis. Dans les sondages, elle est créditée de 2 à 4 % des intentions de vote alors que Jean-Luc Mélenchon est donné au second tour.",
    "url": "https://www.france24.com/fr/france/20261118-presidentielle-2027-election-marine-tondelier-ecologistes-prete-travailler-coalition-autour-jean-luc-melenchon-la-france-insoumise-soutien",
    "at": "2026-11-18T22:39:24+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Mayotte frappée par une panne d'électricité généralisée après de fortes pluies",
-   "desc": "Suite à de fortes pluies et orages qui touchent l'île ce mercredi après-midi, une coupure générale d'électricité s'est déclarée aux alentours de 16h, à cause de la foudre.",
-   "url": "https://la1ere.franceinfo.fr/mayotte/vigilance-jaune-panne-generale-sur-le-territoire-1759059.html",
-   "at": "2026-11-18T22:21:19+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Pour relancer les trains de nuit, l'Etat va louer des locomotives neuves et rénover les vieux Corail de la SNCF",
-   "desc": "Le gouvernement a passé un accord avec Alpha Trains pour 27 locomotives et a demandé à une \"refonte complète\" de 180 voitures Corail qui datent des années 1980.",
-   "url": "https://www.franceinfo.fr/economie/transports/pour-relancer-les-trains-de-nuit-l-etat-va-louer-des-locomotives-neuves-et-renover-les-vieux-corail-de-la-sncf_8289017.html",
-   "at": "2026-11-18T22:17:15+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Produits importés des colonies israéliennes : scandale dans nos rayons ?",
-   "desc": "\"Fabriqué en Israël\" c’est ce qu’on peut lire sur certains des produits vendus en supermarché. Mais les équipes de L’Œil du 20 heures nous révèlent d’où ils viennent. Elles ont retrouvé les usines où sont fabriqués certains d’entre eux. Des usines situées dans des colonies israéliennes en territoire occupé.",
-   "url": "https://www.franceinfo.fr/replay-jt/france-2/20-heures/produits-importes-des-colonies-israeliennes-scandale-dans-nos-rayons_8288924.html",
-   "at": "2026-11-18T22:05:01+00:00"
   },
   {
    "source": "franceinfo",
@@ -242,6 +291,13 @@
   },
   {
    "source": "franceinfo",
+   "title": "En Corée du Sud, la triche d'un étudiant à ses examens déclenche une traque nationale pour l'équivalent du bac",
+   "desc": "En Corée du Sud, jeudi, les surveillants inspecteront les lunettes, les montres et jusqu’aux boutons de chemise. Plus de 550 000 candidats passent l’examen d’entrée à l’université, et les autorités redoutent la triche à l’intelligence artificielle. Il y a quelques jours, le premier reçu à un concours de comptables a reconnu avoir utilisé une caméra miniature pour faire répondre une IA à sa place.",
+   "url": "https://www.franceinfo.fr/monde/coree-du-sud/en-coree-du-sud-la-triche-d-un-etudiant-a-ses-examens-declenche-une-traque-nationale-pour-l-equivalent-du-bac_8289002.html",
+   "at": "2026-11-18T21:35:06+00:00"
+  },
+  {
+   "source": "franceinfo",
    "title": "\"C'est une bonne nouvelle qui renforce la possibilité d'une victoire populaire\", réagit Manuel Bompard après la main tendue de Marine Tondelier à La France insoumise",
    "desc": "La secrétaire nationale des Ecologistes s'est dit \"prête à travailler à une coalition autour de la candidature de Jean-Luc Mélenchon\" pour la présidentielle 2027.",
    "url": "https://www.franceinfo.fr/elections/c-est-une-bonne-nouvelle-qui-renforce-la-possibilite-d-une-victoire-populaire-reagit-manuel-bompard-apres-la-main-tendue-de-marine-tondelier-a-la-france-insoumise_8288990.html",
@@ -249,31 +305,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Un garagiste mis en examen et écroué pour féminicide en Seine-Saint-Denis",
-   "desc": "Le corps sans vie d'une femme avait été découvert samedi dans une camionnette. Au cours son audition, l'homme âgé de 51 ans \"a reconnu être à l'origine du décès de la victime\", selon le parquet.",
-   "url": "https://www.franceinfo.fr/societe/violences-faites-aux-femmes/un-garagiste-mis-en-examen-et-ecroue-pour-feminicide-en-seine-saint-denis_8288963.html",
-   "at": "2026-11-18T21:10:37+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Budget, préventes, musique… Cinq chiffres vertigineux autour de \"GTA VI\", qui est sorti à minuit après treize ans d'attente",
    "desc": "Le nouvel épisode de la franchise \"Grand Theft Auto\" sort jeudi. L'éditeur américain Rockstar Games espère reproduire le succès du précédent opus, un des jeux vidéo les plus vendus de l'histoire.",
    "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/budget-preventes-musique-cinq-chiffres-vertigineux-autour-de-gta-vi-qui-sort-apres-treize-ans-d-attente_8267372.html",
    "at": "2026-11-18T20:32:27+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : Edouard Philippe met en musique une partie de son programme pour s’extirper du débat sur la primaire et de l’étau RN-LFI",
-   "desc": "L’ancien premier ministre, à la peine dans les sondages, rêve toujours d’imposer son agenda. Sans dévoiler de nouvelles mesures, il a mis en scène la première partie de son projet tout en refusant à nouveau l’idée d’une primaire de la droite et du centre.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/18/presidentielle-2027-edouard-philippe-met-en-musique-une-partie-de-son-programme-pour-s-extirper-du-debat-sur-la-primaire-et-de-l-etau-rn-lfi_6813202_823448.html",
-   "at": "2026-11-18T19:21:15+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Sénat adopte en première lecture le projet de budget de la Sécurité sociale pour 2027",
-   "desc": "Les députés et les sénateurs vont désormais tenter de s'accorder sur un texte commun en commission mixte paritaire.",
-   "url": "https://www.franceinfo.fr/economie/budget/le-senat-adopte-en-premiere-lecture-le-projet-de-budget-de-la-securite-sociale-pour-2027_8288699.html",
-   "at": "2026-11-18T18:55:50+00:00"
   },
   {
    "source": "Le Monde",
@@ -290,13 +325,6 @@
    "at": "2026-11-18T18:05:03+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Rencontre en Chine : entre Xi, Trump, et Poutine, à chacun ses intérêts",
-   "desc": "Trois chefs d'Etat, troi agendas différents. Xi Jinping, Donald Trump et Vladimir Poutine, une rencontre historique à Shenzhen en Chine à l'occasion du sommet de l'Apec. Chacun y a un objectif et un intérêt différent.",
-   "url": "https://www.franceinfo.fr/monde/chine/rencontre-en-chine-xi-trump-poutine-a-chacun-ses-interets_8288681.html",
-   "at": "2026-11-18T18:00:03+00:00"
-  },
-  {
    "source": "France 24",
    "title": "\"Les taxes, ils les boufferont\" : Mélenchon et le controversé dîner avec des grands patrons",
    "desc": "Le candidat de la France insoumise à l'élection présidentielle française de 2027, Jean-Luc Mélenchon, a dîné, mardi, avec les 13 plus grands patrons français. Un événement qui étonne pour le leader de la gauche radicale en rupture avec le capitalisme et fervent critique des ultra-riches.",
@@ -304,25 +332,11 @@
    "at": "2026-11-18T17:09:31+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Vladimir Poutine savoure son retour au cœur de la diplomatie mondiale, aux côtés de Donald Trump et Xi Jinping à Shenzhen",
-   "desc": "Le président russe doit rencontrer ses homologues chinois et américain, jeudi, en marge du sommet de la Coopération économique pour l’Asie-Pacifique. Alors que le chef du Kremlin est visé par un mandat d’arrêt de la Cour pénale internationale, ce sommet fait craindre que l’avenir de l’Ukraine soit discuté entre les trois hommes, sans considération pour les intérêts des Européens.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/18/vladimir-poutine-savoure-son-retour-au-c-ur-de-la-diplomatie-mondiale-aux-cotes-de-donald-trump-et-xi-jinping-a-shenzhen_6813174_3210.html",
-   "at": "2026-11-18T17:00:08+00:00"
-  },
-  {
    "source": "France 24",
-   "title": "France : le comté du Fort des Rousses élu meilleure fromage du monde",
+   "title": "France : le comté du Fort des Rousses élu meilleur fromage du monde",
    "desc": "Le meilleur fromage du monde a été désigné hier parmi les 5 000 produits en lice, une la quarantaine de pays en compétition. La médaille d'or a été décernée à un fromage français : le comté du fort des Rousses, petite commune près de la frontière suisse. Une consécration qui fait la fierté de toute la région.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261118-france-le-comt%C3%A9-du-fort-des-rousses-%C3%A9lu-meilleure-fromage-du-monde",
    "at": "2026-11-18T16:42:17+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un procès requis à l'encontre du comédien Philippe Caubère pour viols et agressions sexuelles aggravés, proxénétisme et corruption de mineure",
-   "desc": "L'une de ses victimes, Agathe Pujol, avait raconté que le comédien l'avait \"faite violer\" pendant des années, en postant des annonces sur des sites internet pour des rencontres tarifées.",
-   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/un-proces-requis-a-l-encontre-du-comedien-philippe-caubere-pour-viols-et-agressions-sexuelles-aggraves-proxenetisme-et-corruption-de-mineure_8288639.html",
-   "at": "2026-11-18T16:35:12+00:00"
   },
   {
    "source": "France 24",
@@ -353,13 +367,6 @@
    "at": "2026-11-18T14:41:33+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Premiers entretiens, accolade, banquet… Vladimir Poutine et Donald Trump sont arrivés en Chine avant leur réunion tripartie avec Xi Jinping",
-   "desc": "La rencontre entre les trois présidents américain, russe et chinois retient toute l'attention lors de ce sommet de la région Asie-Pacifique. Et Xi Jinping a réservé un accueil tout particulier à son homologue américain.",
-   "url": "https://www.franceinfo.fr/monde/chine/premiers-entretiens-accolade-banquet-vladimir-poutine-et-donald-trump-sont-arrives-en-chine-avant-leur-reunion-tripartie-avec-xi-jinping_8288336.html",
-   "at": "2026-11-18T14:09:10+00:00"
-  },
-  {
    "source": "France 24",
    "title": "En France, la police manifeste pour demander une revalorisation de la prime de risque",
    "desc": "Des policiers ont manifesté, mercredi, à Paris, pour demander une revalorisation de leur prime de risque. Ils se sont rendus devant le ministère de l'Intérieur, où une délégation a été reçue. Ils réclament également des effectifs plus importants, alors que les mobilisations lycéennes et sociales se tiennent depuis plusieurs semaines en France.",
@@ -381,13 +388,6 @@
    "at": "2026-11-18T13:16:42+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Vous allez voir qu'il est de gauche !\" : un mois après la primaire, Raphaël Glucksmann veut donner des gages à son camp",
-   "desc": "En déplacement dans la banlieue lyonnaise, le candidat PS-Place publique à la présidentielle tente de relancer sa campagne après un mois de \"faux plat\".",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/vous-allez-voir-qu-il-est-de-gauche-un-mois-apres-la-primaire-raphael-glucksmann-veut-donner-des-gages-a-son-camp_8288081.html",
-   "at": "2026-11-18T11:44:49+00:00"
-  },
-  {
    "source": "France 24",
    "title": "La France dans le monde : des moyens réduits pour la diplomatie ?",
    "desc": "De l'argent pour les armes, pas pour la diplomatie. La France nourrit de grandes ambitions internationales mais elle ne s'en donne pas les moyens. Pire, elle supprime des postes et diminue le budget du ministère des Affaires étrangères. Et ce au moment où la diplomatie reste indispensable pour faire face aux bouleversements géopolitiques et géoéconomiques du monde.",
@@ -407,13 +407,6 @@
    "desc": "Au lendemain de la mobilisation du 17 novembre, on relève que les cortèges étaient plutôt calmes : 146 000 personnes ont manifesté selon le ministère de l'Intérieur, plus de 500 000 pour la CGT. À force d’encadrer ces manifestations, des CRS se disent à bout : manque de repos, fatigue physique, prime de risque jugée insuffisante, la colère monte et le syndicat appelle à une \"journée noire\" le 26 novembre.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261118-mobilisations-en-france-la-police-au-bord-de-l-%C3%A9puisement-professionnel",
    "at": "2026-11-18T10:41:43+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Le premier procès d'ampleur du masculinisme s'ouvre à Paris, sept hommes jugés",
-   "desc": "Sept hommes faisant partie de la mouvance masculiniste comparaissent mercredi et jeudi devant le tribunal judiciaire de Paris pour des publications en ligne relayant des propos misogynes, racistes, antisémites ainsi que des références nazies. Ce premier procès d'ampleur du masculinisme doit être suivi de plusieurs autres audiences jusqu'en janvier pour juger au total 34 membres d'un canal Telegram.",
-   "url": "https://www.france24.com/fr/france/20261118-premier-proc%C3%A8s-ampleur-masculinisme-s-ouvre-paris-sept-hommes-jug%C3%A9s",
-   "at": "2026-11-18T07:51:25+00:00"
   }
  ]
 }

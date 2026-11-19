@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T07:17:33+00:00",
+ "asOf": "2026-11-19T09:17:37+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "KI: Bundesamt stuft Cyber-Sicherheitslage auf »angespannt bis kritisch« hoch",
+   "desc": "Das Bundesamt für Sicherheit in der Informationstechnik warnt vor einer »kritischen Dynamik« bei der Sicherheit im Netz. Firmen und Verbraucher in Deutschland seien viel zu sorglos: »Angegriffen wird, wer ein leichtes Ziel ist.«",
+   "url": "https://www.spiegel.de/politik/deutschland/ki-bundesamt-stuft-cyber-sicherheitslage-auf-angespannt-bis-kritisch-hoch-a-9ec10551-a80c-432b-963b-d15afefac513",
+   "at": "2026-11-19T09:00:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "SF6: Deutschland startet Initiative gegen Treibhausgas",
+   "desc": "SF6 steckt in fast jedem Stromnetz und ist sehr klimaschädlich. Oft gelangt es durch Lecks in die Atmosphäre. Mit anderen Staaten will Deutschland die Emissionen senken.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/schwefelhexafluorid-sf6-emissionen-treibhausgas-schaltanlagen-cop31-gxe",
+   "at": "2026-11-19T08:47:34+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "China: Historischer Dreiergipfel von Xi, Trump und Putin hat begonnen",
+   "desc": "Erstmals kommen die Staatschefs der Atommächte USA, Russland und China zu einem privaten Gespräch zusammen. Trump will »alle Probleme der Welt« ansprechen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/historischer-dreiergipfel-von-xi-trump-und-putin-hat-begonnen",
+   "at": "2026-11-19T08:37:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Deutsche Bank: Sicherheitspolitiker fordern Konsequenzen aus Deutsche-Bank-Leak",
+   "desc": "Die Grünen warnen nach dem Datenleak bei der Deutschen Bank vor einem möglicherweise unzureichenden Geheimschutz. Auch aus der Union kommt Besorgnis.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/datenleck-deutsche-bank-konstantin-von-notz-nationaler-sicherheitsrat-gxe",
+   "at": "2026-11-19T07:35:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Apec-Gipfel in Shenzhen: Trump und Putin sprechen vor Dreiergipfel über Ukrainekrieg",
+   "desc": "Ein bilaterales Treffen von Donald Trump und Wladimir Putin ist nach russischen Angaben »exzellent« verlaufen. Auch China sieht das Verhältnis zu den USA verbessert.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
+   "at": "2026-11-19T07:18:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: USA reduzieren Präsenz im Nahen Osten auf zwei Flugzeugträger",
+   "desc": "Die »USS George Washington« verlässt Nahost. Zwei US-Flugzeugträger bleiben in der Region. Aus der Straße von Hormus werden erneut Explosionen gemeldet. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-19T07:13:22+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Gaza: Israels Armee meldet neuen Vorstoß im Gazastreifen",
@@ -22,13 +64,6 @@
    "desc": "Sachsens Ministerpräsident Kretschmer lobt die Senkung der Stromsteuer, wirft der Koalition aber vor, den Streit darüber schlecht gelöst zu haben. Es gehe um das Vertrauen in die Demokratie.",
    "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-michael-kretschmer-ruegt-koalition-fuer-umgang-mit-stromsteuer-streit-a-3dc6a8c7-65fa-4056-92a1-8c4571bba0b2",
    "at": "2026-11-19T06:48:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Apec-Gipfel in Shenzhen: Trump und Putin sprechen vor Dreiergipfel über Ukrainekrieg",
-   "desc": "Ein bilaterales Treffen von Donald Trump und Wladimir Putin ist nach russischen Angaben »exzellent« verlaufen. Auch China sieht das Verhältnis zu den USA verbessert.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/apec-gipfel-shenzhen-donald-trump-wladimir-putin-xi-jinping",
-   "at": "2026-11-19T06:39:22+00:00"
   },
   {
    "source": "Die Zeit",
@@ -102,38 +137,10 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Ukrainekrieg: Krim-Brücke nach drittem Angriff in einer Woche erneut gesperrt",
-   "desc": "Ein Luftangriff hat die Brücke zur von Russland annektierten Halbinsel Krim weiter beschädigt. Der Zugverkehr auf der Brücke wurde vorübergehend eingestellt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/krim-bruecke-kertsch-bruecke-russland-ukraine-angriffe",
-   "at": "2026-11-19T03:19:59+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stromsteuersenkung: Sozialverband hält Stromsteuersenkung für nicht ausreichend",
-   "desc": "Die Chefin des Sozialverbands Deutschland fordert weitergehende Entlastungen für Geringverdiener. Die Stromsteuersenkung sei keine langfristige Lösung.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-senkung-bundesregierung-private-haushalte-energiepreise",
-   "at": "2026-11-19T00:45:55+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Zugverkehr auf Krim-Brücke nach erneutem Angriff eingestellt",
-   "desc": "Ein dritter Angriff hat die Brücke zur annektierten Halbinsel Krim weiter beschädigt. US-Präsident Donald Trump und Wladimir Putin planen Zweiertreffen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-19T00:06:06+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Irankrieg: USA reduzieren Präsenz im Nahen Osten auf zwei Flugzeugträger",
-   "desc": "Die »USS George Washington« verlässt Nahost. Zwei US-Flugzeugträger bleiben in der Region. Aus der Straße von Hormus werden erneut Explosionen gemeldet. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-18T23:36:06+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Polen: Immunität von oberstem polnischen Verfassungsrichter aufgehoben",
-   "desc": "Der suspendierte Gerichtspräsident Bogdan Święczkowski verliert seine Immunität. Die Entscheidung ist Teil des Machtkampfs um das polnische Verfassungsgericht.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/polnisches-verfassungsgericht-bogdan-swieczkowski-immunitaet",
-   "at": "2026-11-18T23:19:34+00:00"
+   "title": "Datenleck bei russischer Statistikbehörde: Putin ist zu schwach, um Bedingungen zu stellen",
+   "desc": "In China trifft Putin auf Xi und Trump und sieht sich auf Augenhöhe mit Großmächten. Doch die riesigen russischen Verluste in der Ukraine zeigen: Er gehört nicht dazu.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/datenleck-russische-statistikbehoerde-rosstat-soldaten-tod",
+   "at": "2026-11-19T03:53:35+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -239,20 +246,6 @@
    "desc": "Die Bundesregierung will die frühere Bundesministerin Svenja Schulze zur Unicef-Chefin machen. Hier verrät die Sozialdemokratin, was sie mit dem Amt vorhat.",
    "url": "https://www.spiegel.de/politik/deutschland/uno-was-svenja-schulze-als-moegliche-unicef-chefin-plant-a-585de9da-800b-4690-880a-5a62917e5b0b",
    "at": "2026-11-18T10:05:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Stromsteuersenkung und Spritpreisdeckel - zeitlich begrenzt",
-   "desc": "Die Spitzen von Union und SPD haben sich im Koalitionsausschuss auf eine Senkung der Stromsteuer für alle geeinigt. Die Finanzierung steht allerdings nur für 2027. Auch ein Spritpreisdeckel soll zeitlich begrenzt kommen.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html",
-   "at": "2026-11-18T08:55:03+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundesverfassungsgericht: BSW scheitert mit Wahlbeschwerde",
-   "desc": "Das BSW war bei der Bundestagswahl sehr knapp gescheitert und wollte, dass neu ausgezählt wird. Damit scheiterte die Partei nun auch endgültig vor dem Bundesverfassungsgericht. BSW-Politiker kritisierten das scharf.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bsw-wahlpruefung-100.html",
-   "at": "2026-11-18T08:55:02+00:00"
   }
  ]
 }

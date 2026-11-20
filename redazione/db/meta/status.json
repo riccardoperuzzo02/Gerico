@@ -1,11 +1,11 @@
 {
   "agendaRun": {
-    "at": "2026-11-20T12:11:05+01:00",
-    "esito": "Nessun risultato trovato: tre ricerche (Giappone inflazione core, vendite al dettaglio Regno Unito due volte) non hanno dato il dato ufficiale di oggi. Agenda già completa con il calendario, nessuna voce nuova."
+    "at": "2026-11-20T15:41:11+01:00",
+    "esito": "Trovato 1 risultato: vendite al dettaglio Regno Unito di ottobre +0,7% (ONS), precedente rivisto a -0,6%. Inflazione core del Giappone non trovata (solo il dato di Tokyo). Agenda già completa con il calendario."
   },
   "lastPublish": {
-    "at": "2026-11-20T13:22:42+01:00",
-    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni; controlla: 7 cose da sistemare."
+    "at": "2026-11-20T15:41:19+01:00",
+    "esito": "Giro agenda su GitHub; check_dump.py: 2 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; controlla: 7 cose da sistemare."
   },
   "lastRun": "2026-11-20T13:22:00+01:00",
   "marketsRun": {

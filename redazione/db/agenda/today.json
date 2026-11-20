@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "asOf": "2026-11-20T12:11:05+01:00",
+ "asOf": "2026-11-20T15:41:11+01:00",
  "items": [
   {
    "time": "00:30",
@@ -18,8 +18,8 @@
    "currency": "GBP",
    "event": "Vendite al dettaglio, su base mensile",
    "expected": "0,0%",
-   "previous": "-0,4%",
-   "actual": "",
+   "previous": "-0,6%",
+   "actual": "0,7%",
    "impact": "medio"
   },
   {
@@ -107,6 +107,10 @@
   {
    "name": "Calendario Forex Factory della settimana (orari in ora italiana)",
    "url": "https://www.forexfactory.com/calendar"
+  },
+  {
+   "name": "ONS, vendite al dettaglio di ottobre 2026",
+   "url": "https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/october2026"
   },
   {
    "name": "Teleborsa, notizie del 20 novembre",

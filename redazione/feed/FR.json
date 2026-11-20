@@ -1,7 +1,203 @@
 {
  "code": "FR",
- "asOf": "2026-11-19T21:17:33+00:00",
+ "asOf": "2026-11-20T05:17:35+00:00",
  "items": [
+  {
+   "source": "Le Monde",
+   "title": "Vaisselle, poubelles, draps... Les nouvelles règles d’Airbnb suscitent la colère des petits propriétaires",
+   "desc": "Des dizaines de milliers d’hôtes dénoncent l’encadrement des consignes sur les tâches ménagères et la modification des commissions. Certains quittent la plateforme, accusée de se rapprocher du modèle hôtelier.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/20/vaisselle-poubelles-draps-les-nouvelles-regles-d-airbnb-suscitent-la-colere-des-petits-proprietaires_6813590_3234.html",
+   "at": "2026-11-20T05:03:14+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Royaume-Uni, Andy Burnham ravive le débat sur le Brexit, plus de cinq ans après sa mise en œuvre effective",
+   "desc": "Alors que les Européens et le Royaume-Uni doivent discuter de leur relation, vendredi 20 novembre, le sujet reste complexe outre-Manche. S’il martèle vouloir resserrer les liens avec l’Union, le premier ministre britannique entretient le flou sur la nature du rapprochement qu’il envisage.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/20/au-royaume-uni-andy-burnham-ravive-le-debat-sur-le-brexit-plus-de-cinq-ans-apres-sa-mise-en-uvre-effective_6813589_3210.html",
+   "at": "2026-11-20T05:00:30+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Deux mois après l’exécution ratée de Christa Pike, la longue mise à mort d’un détenu de 70 ans au Texas",
+   "desc": "Alors que la peine de mort fait l’objet d’un regain d’attention aux Etats-Unis après l’échec de l’exécution de Christa Pike, en septembre, dans le Tennessee, celle de Reinaldo Dennes, jeudi, a duré plus d’une heure. Le condamné s’est plaint de douleurs tout au long de la procédure.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/20/deux-mois-apres-l-execution-ratee-de-christa-pike-la-longue-mise-a-mort-de-reinaldo-dennes-au-texas_6813583_3210.html",
+   "at": "2026-11-20T04:54:49+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Salvador : le président Bukele profite de sa réforme constitutionnelle pour se présenter à un troisième mandat",
+   "desc": "Le chef de l’Etat de 45 ans a officialisé sa candidature, jeudi, après avoir fait modifier la Constitution, en 2025, pour lui permettre de se présenter de nouveau lors du scrutin de février 2027. Ses méthodes de lutte contre les gangs lui offrent une forte popularité mais suscitent également de nombreuses critiques.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/20/salvador-le-president-bukele-profite-de-sa-reforme-constitutionnelle-pour-se-presenter-a-un-troisieme-mandat_6813581_3210.html",
+   "at": "2026-11-20T04:45:27+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Nous avons perdu plus que nous avons gagné\" : dix ans après le Brexit, le Royaume-Uni veut à nouveau se rapprocher de l'Union européenne",
+   "desc": "Londres et les 27 Etats membres comptent annoncer plusieurs accords, vendredi, à l'occasion d'un sommet à Bruxelles. Une nouvelle étape dans l'approfondissement des relations souhaité par le Premier ministre britannique, Andy Burnham.",
+   "url": "https://www.franceinfo.fr/monde/royaume-uni/nous-avons-perdu-plus-que-nous-avons-gagne-dix-ans-apres-le-brexit-le-royaume-uni-veut-a-nouveau-se-rapprocher-de-l-union-europeenne_8288675.html",
+   "at": "2026-11-20T04:43:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "De l'Espagne à l'Albanie en passant par la France, une jeunesse européenne unie par des causes communes descend dans la rue",
+   "desc": "Des classes surpeuplées en France, un logement hors de prix en Espagne et en Grèce, des demandes de changement politique en Albanie ou en Serbie... Les jeunes Européens ont pris d'assaut les rues du continent ces dernières semaines. Malgré les différentes contextes politiques, ils expriment des préoccupations partagées : peuvent-ils construire les futurs qu'ils souhaitent, et leurs gouvernements écoutent-ils ?",
+   "url": "https://www.franceinfo.fr/monde/europe/de-l-espagne-a-l-albanie-en-passant-par-la-france-une-jeunesse-europeenne-unie-par-des-causes-communes-descend-dans-la-rue_8290049.html",
+   "at": "2026-11-20T04:42:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Vu à quel niveau sont les autres, on n'est pas si loin\" : Dominique de Villepin se lance dans la course présidentielle malgré les embûches",
+   "desc": "L'ancien Premier ministre de Jacques Chirac prépare son retour en politique depuis de longs mois, se posant en recours face aux extrêmes, malgré un espace déjà saturé de candidats et des intentions de vote très modestes dans les enquêtes d'opinion.",
+   "url": "https://www.franceinfo.fr/elections/vu-a-quel-niveau-sont-les-autres-on-n-est-pas-si-loin-dominique-de-villepin-se-lance-dans-la-course-presidentielle-malgre-les-embuches_8288267.html",
+   "at": "2026-11-20T04:41:20+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Qui est concerné par les nouvelles règles sur le découvert autorisé, qui entrent en vigueur vendredi ?",
+   "desc": "Les nouvelles dispositions vont aligner les conditions pour les découverts de moins de 200 euros et ceux remboursables dans un délai de moins d'un mois sur celles des crédits à la consommation, plus restrictives.",
+   "url": "https://www.franceinfo.fr/economie/qui-est-concerne-par-les-nouvelles-regles-sur-le-decouvert-autorise-qui-entrent-en-vigueur-vendredi_8289839.html",
+   "at": "2026-11-20T04:40:27+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Une action climatique fondée sur la science est plus cruciale que jamais\" : à la COP31, les experts du Giec au centre d'un bras de fer",
+   "desc": "Plusieurs pays s'opposent sur la date de publication du prochain rapport du Groupe d'experts intergouvernemental sur l'évolution du climat, qui devrait éclairer une étape majeure des conférences de l'ONU sur le climat dans deux ans.",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/une-action-climatique-fondee-sur-la-science-est-plus-cruciale-que-jamais-a-la-cop31-les-experts-du-giec-au-centre-d-un-bras-de-fer_8289713.html",
+   "at": "2026-11-20T04:39:46+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Guerre en Ukraine : à Berlin, la réunion des alliés de Kiev, miroir inversé de la rencontre de Shenzhen entre Xi, Trump et Poutine",
+   "desc": "Les membres de la coalition des volontaires, réunis jeudi en Allemagne, se sont engagés à honorer l’intégralité de l’aide promise en 2026 et à maintenir ce soutien en 2027, quand le président russe a mis en scène, en Chine, l’« amitié » que lui porte le chef de la Maison Blanche.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/20/guerre-en-ukraine-a-berlin-la-reunion-des-allies-de-kiev-miroir-inverse-de-la-rencontre-de-shenzhen-entre-xi-trump-et-poutine_6813557_3210.html",
+   "at": "2026-11-20T04:30:15+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Mouvement lycéen : l’impossible débat sur le « maintien de l’ordre à la française »",
+   "desc": "La multiplication d’images de pratiques policières violentes lors des mobilisations des lycéens, pose la question de la pertinence de la doctrine de « contact », en vigueur depuis le milieu des années 2010.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/20/mouvement-lyceen-l-impossible-debat-sur-le-maintien-de-l-ordre-a-la-francaise_6813554_3224.html",
+   "at": "2026-11-20T04:26:30+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : le Parti socialiste stoppe les discussions avec les Ecologistes après le ralliement de Tondelier à Mélenchon",
+   "desc": "Raphaël Glucksmann, le candidat du Parti socialiste et de Place publique, a accusé, jeudi 19 novembre, la secrétaire nationale des Ecologistes d’avoir « tourné le dos » à la « tradition profondément proeuropéenne » de sa formation politique. Yannick Jadot et d’autres annoncent quitter les Ecologistes.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/20/presidentielle-2027-le-parti-socialiste-stoppe-les-discussions-avec-les-ecologistes-apres-le-ralliement-de-tondelier-a-melenchon_6813548_823448.html",
+   "at": "2026-11-20T04:00:11+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La circulation du Covid-19 repart à la hausse, mais l'impact sur les hopitaux du virus reste faible",
+   "desc": "Les différents indicateurs compilés par le service d'enquête numérique de Radio France montrent une importante circulation du Covid-19 ces derniers jours. En revanche, les autorités sanitaires précisent que, pour l'instant, l'impact reste \"limité sur le recours aux soins.",
+   "url": "https://www.franceinfo.fr/sante/maladie/coronavirus/la-circulation-du-covid-19-repart-a-la-hausse-mais-l-impact-sur-les-hopitaux-du-virus-reste-faible_8290619.html",
+   "at": "2026-11-20T04:00:03+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "INFO CELLULE INVESTIGATION DE RADIO FRANCE. Médicaments, alcool et drogue retrouvés dans le corps de Christophe M., manifestant mort à Paris le 17 octobre",
+   "desc": "Christophe M., 59 ans, est mort à Paris, le 17 octobre, en marge de la manifestation de la place de la République. Sa famille mettait en cause les gaz lacrymogènes mais des analyses révèlent la présence d’alcool et de cocaïne dans son sang ainsi qu’une dose toxique de méthadone.",
+   "url": "https://www.franceinfo.fr/enquetes-franceinfo/info-cellule-investigation-de-radio-france-medicaments-alcool-et-drogue-retrouves-dans-le-corps-de-christophe-m-manifestant-mort-a-paris-le-17-octobre_8288645.html",
+   "at": "2026-11-20T04:00:02+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les députés votent une « petite avancée » contre la vie chère en outre-mer",
+   "desc": "La proposition de loi portée par le sénateur Victorin Lurel et le député Christian Baptiste a été adoptée à l’unanimité à l’Assemblée nationale jeudi, en attendant le grand texte promis par le gouvernement.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/20/les-deputes-votent-une-petite-avancee-contre-la-vie-chere-en-outre-mer_6813481_823448.html",
+   "at": "2026-11-20T00:08:13+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Intelligence artificielle : l’action Anthropic finit sa première journée en hausse de 17 % et valorise l’entreprise à 1 280 milliards de dollars",
+   "desc": "L’introduction en Bourse spectaculaire du leader de l’IA n’a pas empêché Wall Street de finir en forte baisse jeudi, sur fond de mouvement anti-IA et d’interrogations sur le modèle économique de ces sociétés.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/20/intelligence-artificielle-l-action-anthropic-finit-sa-premiere-journee-en-hausse-de-17-et-valorise-l-entreprise-a-1-280-milliards-de-dollars_6813415_3234.html",
+   "at": "2026-11-19T23:30:58+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le procès de l’explosion de la rue de Trévise met au jour un fonctionnement informel et peu rigoureux des services de la Mairie de Paris",
+   "desc": "Les auditions des responsables des services de la voirie et de la propreté et de l’eau ont révélé des lacunes de traçabilité dans l’administration et une absence de culture de l’écrit pour rendre compte des interventions.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/20/le-proces-de-l-explosion-de-la-rue-de-trevise-met-au-jour-un-fonctionnement-informel-et-peu-rigoureux-des-services-de-la-mairie-de-paris_6813387_3224.html",
+   "at": "2026-11-19T23:10:11+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Si l’on accepte que trois policiers mentent, le lien social est rompu » : prison ferme requise au procès de l’interpellation violente de Michel Zecler",
+   "desc": "Retenant la circonstance aggravante de racisme, l’avocate générale a demandé des peines de quatre à six ans de prison ferme contre les trois policiers accusés d’avoir molesté le producteur, puis menti dans leurs procès-verbaux. Leur défense plaide la « peur » ressentie par les fonctionnaires.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/20/si-l-on-accepte-que-trois-policiers-mentent-le-lien-social-est-rompu-prison-ferme-requise-au-proces-de-l-interpellation-violente-de-michel-zecler_6813386_3224.html",
+   "at": "2026-11-19T23:06:34+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Yannick Jadot quitte les Écologistes après la main tendue de Marine Tondelier à Jean-Luc Mélenchon",
+   "desc": "Les fractures deviennent apparentes chez les Écologistes, au lendemain de la main tendue de Marine Tondelier à Jean-Luc Mélenchon : Yannick Jadot, sénateur et ex-candidat écologiste à la présidentielle, a annoncé qu'il quittait le parti, tout comme le député Jérémie Iordanoff. Tous les deux préfèrent soutenir Raphaël Glucksmann.",
+   "url": "https://www.france24.com/fr/france/20261119-france-presidentielle-yannick-jadot-quitte-les-ecologistes-marine-tondelier-jean-luc-melenchon-glucksmann",
+   "at": "2026-11-19T23:04:16+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'entreprise américaine d'intelligence artificielle Anthropic signe une entrée en Bourse historique en détrônant SpaceX",
+   "desc": "Les débuts d'Anthropic \"pourraient redonner confiance aux investisseurs\" dans l'IA, récemment boudée par les marchés, estime Dan Ives, analyste de Yorkville Ives & Co.",
+   "url": "https://www.franceinfo.fr/economie/bourse/l-entreprise-americaine-d-intelligence-artificielle-anthropic-signe-une-entree-en-bourse-historique-en-detronant-spacex_8290763.html",
+   "at": "2026-11-19T22:53:30+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Primaire, racisme, référendums, IA… Ce qu'il faut retenir de l'interview de Gabriel Attal dans l'émission \"L'Heure de vérité\" sur France 2",
+   "desc": "Le candidat Renaissance à la présidentielle était l'invité jeudi de l'émission politique de France 2. Voici les passages marquants à retenir de cette interview de plus de deux heures.",
+   "url": "https://www.franceinfo.fr/politique/gabriel-attal/primaire-racisme-referendums-ia-ce-qu-il-faut-retenir-de-l-interview-de-gabriel-attal-dans-l-emission-l-heure-de-verite-sur-france-2_8290544.html",
+   "at": "2026-11-19T22:46:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un quart des enfants du monde vivent dans une zone de conflit, alerte l'ONG Save The Children",
+   "desc": "Parmi ces zones figurent notamment l'Afrique subsaharienne, quelques régions du Mexique, le Yémen, l'Ukraine, la Birmanie, l'Afghanistan ou encore l'Irak et la Syrie.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/un-quart-des-enfants-du-monde-vivent-dans-une-zone-de-conflit-alerte-l-ong-save-the-children_8290703.html",
+   "at": "2026-11-19T22:20:54+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Yannick Jadot quitte Les Ecologistes après la main tendue de Marine Tondelier à Jean-Luc Mélenchon",
+   "desc": "\"Pendant des années, j’ai porté ce mouvement politique, aujourd’hui c’est un fiasco, mais ma famille politique c’est l’écologie politique, incontestablement\", a déclaré Yannick Jadot.",
+   "url": "https://www.franceinfo.fr/politique/yannick-jadot/yannick-jadot-quitte-les-ecologistes-apres-la-main-tendue-de-marine-tondelier-a-jean-luc-melenchon_8290748.html",
+   "at": "2026-11-19T22:16:18+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Dans la Somme, il est tombé l'équivalent \"d'un mois et demi de pluie\" en trois jours, selon le directeur de Météo Climat Pro",
+   "desc": "La préfecture de la Somme comptabilise 17 communes sinistrées ce jeudi soir en raison d'inondations et de routes submergées.",
+   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/dans-la-somme-il-est-tombe-l-equivalent-d-un-mois-et-demi-de-pluie-en-trois-jours-selon-le-directeur-de-meteo-climat-pro_8290751.html",
+   "at": "2026-11-19T21:56:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Face au développement de l'intelligence artificielle, Meta \"réévalue\" son objectif de zéro émission nette à l'horizon 2030",
+   "desc": "Les émissions nettes rapportées par le géant américain pour 2025 se sont envolées de 45% par rapport à l'année précédente, selon les données communiquées dans leur rapport.",
+   "url": "https://www.franceinfo.fr/environnement/face-au-developpement-de-l-intelligence-artificielle-meta-reevalue-son-objectif-de-zero-emission-nette-a-l-horizon-2030_8290646.html",
+   "at": "2026-11-19T21:38:43+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Guadeloupe placée en « état d’alerte sécheresse » en fin de saison des pluies",
+   "desc": "Le département français a connu un trimestre de juillet, août et septembre parmi les plus secs et chauds depuis 1991, selon Météo-France. La préfecture appelle l’ensemble des citoyens au « civisme » en réduisant leur consommation d’eau.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/19/la-guadeloupe-placee-en-etat-d-alerte-secheresse-en-fin-de-saison-des-pluies_6813383_3244.html",
+   "at": "2026-11-19T21:32:31+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'ex-anesthésiste Frédéric Péchier dépose une troisième demande de remise en liberté, examinée le 3 décembre prochain",
+   "desc": "Frédéric Péchier condamné fin 2025 à la réclusion criminelle à perpétuité pour 30 empoisonnements, dont 12 mortels a fait appel du verdict.",
+   "url": "https://www.franceinfo.fr/faits-divers/l-ex-anesthesiste-frederic-pechier-depose-une-troisieme-demande-de-remise-en-liberte-examinee-le-3-decembre-prochain_8290733.html",
+   "at": "2026-11-19T21:26:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Professeure d'économie convoquée après un devoir sur le mouvement lycéen : \"Notre collègue n'a fait que son travail\", selon le Snes-FSU",
+   "desc": "Plusieurs familles ont saisi la proviseure du lycée Louise-Michel de Grenoble au sujet d'un devoir en sciences économiques et sociales sur le mouvement lycéen.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/professeure-d-economie-convoquee-apres-un-devoir-sur-le-mouvement-lyceen-notre-collegue-n-a-fait-que-son-travail-selon-le-snes-fsu_8290724.html",
+   "at": "2026-11-19T21:17:37+00:00"
+  },
   {
    "source": "France 24",
    "title": "Procès du canal \"Femmeblancherie\" : de la prison ferme requise contre des masculinistes",
@@ -15,20 +211,6 @@
    "desc": "Le parquet de Paris a ouvert une information judiciaire pour violation du secret professionnel et violation du secret de l'enquête. Les soupçons s'orientent vers Hugues Moutouh, préfet du Loiret et secrétaire général du ministère de l'Intérieur entre avril 2025 et mai 2026.",
    "url": "https://www.franceinfo.fr/faits-divers/un-prefet-soupconne-d-avoir-renseigne-le-rassemblement-national-sur-des-affaires-en-cours_8290550.html",
    "at": "2026-11-19T21:09:38+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J’assume de demander des efforts\", reconnaît Gabriel Attal dans \"L'Heure de vérité\"",
-   "desc": "Le candidat de Renaissance à la présidentielle est l'invité de l'émission politique de France 2.",
-   "url": "https://www.franceinfo.fr/replay-magazine/france-2/l-heure-de-verite/direct-presidentielle-2027-gabriel-attal-est-l-invite-de-l-heure-de-verite-a-partir-de-20h40_8288690.html",
-   "at": "2026-11-19T21:08:56+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le président du Sénat Gérard Larcher demande à changer les dates de l'élection présidentielle",
-   "desc": "Les dates entérinées le 1er juillet par l'exécutif prévoient un premier tour le 18 avril, et un second tour le 2 mai.",
-   "url": "https://www.franceinfo.fr/elections/le-president-du-senat-gerard-larcher-demande-a-changer-les-dates-de-l-election-presidentielle_8290685.html",
-   "at": "2026-11-19T20:33:56+00:00"
   },
   {
    "source": "franceinfo",
@@ -46,13 +228,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : l'alliance avec Marine Tondelier \"devrait pouvoir se faire\", estime Jean-Luc Mélenchon",
-   "desc": "\"Il faut maintenant que ça discute, que ça avance. Ça devrait pouvoir aboutir positivement\", a déclaré Jean-Luc Mélenchon à RTL et l'AFP.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-je-le-regrette-reagit-le-socialiste-olivier-faure-au-rapprochement-initie-par-l-ecologiste-marine-tondelier-vers-jean-luc-melenchon_8289440.html",
-   "at": "2026-11-19T19:55:47+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Au procès des masculinistes de Telegram, un créateur \"plaqué\" par sa fiancée, des contributeurs en manque de \"lien social\" et des réquisitions exemplaires",
    "desc": "Sept prévenus ont comparu mercredi et jeudi devant le tribunal correctionnel de Paris, jugés pour des messages haineux visant les femmes, les personnes noires, juives et LGBT+. Le parquet a requis contre eux entre 18 mois de sursis et deux ans de prison ferme.",
    "url": "https://www.franceinfo.fr/faits-divers/justice-proces/au-proces-des-masculinistes-de-telegram-un-createur-plaque-par-sa-fiancee-des-contributeurs-en-manque-de-lien-social-et-des-requisitions-exemplaires_8289575.html",
@@ -64,27 +239,6 @@
    "desc": "\"Ça va s'intensifier, le niveau de la menace va croître en volume\", a ajouté Vincent Strubel, le directeur de l'Agence nationale de la sécurité des systèmes d'information (Anssi).",
    "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cyberattaques-le-niveau-de-menace-est-sans-precedent-et-va-s-intensifier-previennent-sebastien-lecornu-et-vincent-strubel-le-directeur-de-l-anssi_8290514.html",
    "at": "2026-11-19T19:33:33+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : les créateurs de contenu auront des obligations de pluralisme dans leur traitement de l’élection",
-   "desc": "L’Autorité de régulation de la communication audiovisuelle et numérique a annoncé, jeudi 19 novembre, que les influenceurs et podcasteurs qui reçoivent des personnalités politiques devront, comme les télévisions et les radios, se soumettre à des règles de temps de parole et de déontologie.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/19/presidentielle-2027-les-createurs-de-contenu-auront-des-obligations-de-pluralisme-dans-leur-traitement-de-l-election_6813376_3234.html",
-   "at": "2026-11-19T19:30:08+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Je vais t'égorger à la Samuel Paty\" : un adolescent en garde à vue après des menaces de mort proférées contre un professeur lors d'un cours virtuel",
-   "desc": "Un professeur d'histoire-géographie du lycée Edgar-Quinet à Paris a été menacé vendredi lors d'un cours en ligne par un \"individu ayant eu accès a priori au lien de visio-conférence\", a expliqué la procureure.",
-   "url": "https://www.franceinfo.fr/faits-divers/police/je-vais-t-egorger-a-la-samuel-paty-un-adolescent-en-garde-a-vue-apres-des-menaces-de-mort-proferees-contre-un-professeur-lors-d-un-cours-virtuel_8290568.html",
-   "at": "2026-11-19T19:30:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Une professeure d'économie de Grenoble convoquée le 26 novembre au rectorat \"pour recueillir son point de vue\", après un devoir faisant écho au mouvement lycéen",
-   "desc": "Une enseignante de sciences économiques et sociales (SES) de Grenoble est convoquée au rectorat après que plusieurs familles ont saisi la proviseure du lycée Louise-Michel de Grenoble au sujet d'un devoir facultatif faisant écho au mouvement lycéen.",
-   "url": "https://www.franceinfo.fr/societe/education/une-professeure-d-economie-de-grenoble-convoquee-le-26-novembre-au-rectorat-pour-recueillir-son-point-de-vue-apres-un-devoir-faisant-echo-au-mouvement-lyceen_8290589.html",
-   "at": "2026-11-19T19:21:56+00:00"
   },
   {
    "source": "franceinfo",
@@ -106,20 +260,6 @@
    "desc": "Depuis 2023, plus de 6 millions d’Afghans sont rentrés d’Iran et du Pakistan, souvent sous la contrainte. Ces familles peinent à retrouver un emploi, un logement et des conditions de vie dignes.",
    "url": "https://www.lemonde.fr/international/article/2026/11/19/pour-les-afghans-expulses-d-iran-un-retour-difficile-dans-leur-pays-certaines-nuits-nous-dormons-le-ventre-vide_6813373_3210.html",
    "at": "2026-11-19T19:00:12+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : les Européens réaffirment leur soutien à Kiev et évoquent leur participation à de futures négociations avec les Russes et les Américains",
-   "desc": "A l’issue d’une ‌réunion ‌des membres de la coalition des volontaires, Emmanuel Macron a avancé l’idée de « rouvrir la question de l’adhésion à l’OTAN ». L’émissaire américain a déclaré que les Etats-Unis seraient disposés à accorder à l’Ukraine une protection de type OTAN.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/19/en-direct-guerre-en-ukraine-les-europeens-reaffirment-leur-soutien-a-kiev-et-evoquent-leur-participation-a-de-futures-negociations-avec-les-russes-et-les-americains_6810982_3210.html",
-   "at": "2026-11-19T18:40:11+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "589 millions d’enfants dans le monde vivent dans une zone de guerre, un chiffre « record », selon l’ONG Save the Children",
-   "desc": "La part d’enfants vivant dans des zones de conflit a plus que doublé, passant de 10 % au milieu des années 1990 à 23,4 % en 2025, soit près d’un quart, selon ce rapport.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/19/pres-d-un-quart-des-enfants-du-monde-vivent-dans-une-zone-de-conflit-selon-l-ong-save-the-children_6813367_3210.html",
-   "at": "2026-11-19T18:29:43+00:00"
   },
   {
    "source": "franceinfo",
@@ -150,46 +290,11 @@
    "at": "2026-11-19T18:07:37+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Il ne s’agit plus seulement d’exciser, certaines filles sont également cousues » : en Gambie, un puissant mouvement conservateur tente de réhabiliter l’excision",
-   "desc": "Dans un pays où près des trois quarts des femmes âgées de 15 à 49 ans sont des victimes de mutilations génitales, une coalition de figures religieuses, de chefs coutumiers et d’élus conservateurs tente d’abroger la loi de 2015 qui criminalise ces actes.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/19/il-ne-s-agit-plus-seulement-d-exciser-certaines-filles-sont-egalement-cousues-en-gambie-un-puissant-mouvement-conservateur-tente-de-rehabiliter-l-excision_6813366_3212.html",
-   "at": "2026-11-19T18:00:17+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Anne Le Hénanff, ministre déléguée au numérique au « Monde » : en matière de cybersécurité, « il y a urgence pour la résilience de la Nation »",
-   "desc": "Après l’adoption à l’Assemblée d’une loi sur la cybersécurité très attendue, la ministre du numérique prévient que les 20 000 entreprises et entités publiques concernées par de nouvelles obligations en matière de sécurité auront deux ans pour les mettre en œuvre.",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/19/anne-le-henanff-en-matiere-de-cybersecurite-il-y-a-urgence-pour-la-resilience-de-la-nation_6813364_4408996.html",
-   "at": "2026-11-19T18:00:10+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« GTA VI » : en vidéo, notre journaliste découvre le jeu",
-   "desc": "Pierre Trouvé, journaliste spécialiste des jeux vidéo au « Monde » a testé le nouveau « Grand Theft Auto » dès le lancement du jeu, et donne ses premières impressions en vidéo.",
-   "url": "https://www.lemonde.fr/videos/video/2026/11/19/gta-vi-en-video-notre-journaliste-decouvre-le-jeu_6813360_1669088.html",
-   "at": "2026-11-19T17:48:44+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Le RN visé par une nouvelle enquête autour de fuites impliquant un préfet",
    "desc": "À quelques mois de la présidentielle, le siège du Rassemblement national, ainsi que le ministère de l'Intérieur, ont été perquisitionnés par des juges d'instruction dans le cadre d'une nouvelle affaire judiciaire liée à des soupçons de fuites d'informations vers le RN, impliquant un préfet.",
    "url": "https://www.france24.com/fr/france/20261119-le-rn-vis%C3%A9-par-une-nouvelle-enqu%C3%AAte-autour-de-fuites-impliquant-un-pr%C3%A9fet",
    "at": "2026-11-19T17:40:23+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’ancien patron de Haribo et du lobby de l’industrie agroalimentaire a été nommé pour copiloter l’action de l’Etat sur l’alimentation",
-   "desc": "Reconverti dans le conseil aux entreprises après avoir pris sa retraite, Jean-Philippe André a été nommé par la ministre de l’agriculture coprésident du comité de suivi de la Stratégie nationale pour l’alimentation, la nutrition et le climat.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/19/l-ancien-patron-de-haribo-et-du-lobby-de-l-industrie-agroalimentaire-a-ete-nomme-pour-copiloter-l-action-de-l-etat-sur-l-alimentation_6813355_3244.html",
-   "at": "2026-11-19T17:25:20+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Municipales 2026 : 105 maires de grandes villes se voient refuser le remboursement de leurs frais de campagne",
-   "desc": "Pour avoir déposé leur déclaration de situation patrimoniale hors délai, 105 maires élus en mars se voient refuser le remboursement de leurs dépenses de campagne. Selon les informations du « Monde », le tiers des maires des villes de plus de 100 000 habitants sont concernés. Pour pallier cette situation, Sébastien Lecornu s’est engagé à faire modifier la loi.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/19/municipales-2026-105-maires-de-grandes-villes-se-voient-refuser-le-remboursement-de-leurs-frais-de-campagne_6813354_823448.html",
-   "at": "2026-11-19T17:14:41+00:00"
   },
   {
    "source": "franceinfo",
@@ -200,122 +305,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "« Avant Daft Punk, il y avait Space » : Didier Marouani, pionnier retrouvé de l’électro française",
-   "desc": "L’auteur du tube international « Magic Fly », publié en 1977, vient de sortir une compilation réunissant 12 titres extraits des trois premiers albums de son groupe Space.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/19/avant-daft-punk-il-y-avait-space-didier-marouani-pionnier-retrouve-de-l-electro-francaise_6813349_3246.html",
-   "at": "2026-11-19T17:00:10+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La Manche et le Calvados placés à leur tour en vigilance orange pluie-inondation à partir de jeudi soir, huit départements en alerte au total",
-   "desc": "Les deux départements normands seront en alerte dès 22 heures, en raison des fortes précipitations attendues.",
-   "url": "https://www.franceinfo.fr/environnement/meteo/la-manche-et-le-calvados-places-a-leur-tour-en-vigilance-orange-pluie-inondation-a-partir-de-jeudi-soir-huit-departements-en-alerte-au-total_8290205.html",
-   "at": "2026-11-19T16:56:37+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les principaux créateurs de contenus devront désormais respecter le pluralisme dans leur traitement de l'élection présidentielle",
-   "desc": "Ce type de règles s'imposait jusqu'à présent aux télévisions et aux radios. \"Il y a un phénomène nouveau, il est là et il est massif\", a justifié Martin Ajdari, le président de l'Arcom.",
-   "url": "https://www.franceinfo.fr/internet/les-principaux-createurs-de-contenus-devront-desormais-respecter-le-pluralisme-dans-leur-traitement-de-l-election-presidentielle_8290187.html",
-   "at": "2026-11-19T16:54:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Cybersécurité : le gouvernement va consacrer 200 millions d'euros pour mieux utiliser l'intelligence artificielle dans la lutte contre les cyberattaques",
-   "desc": "Les attaques informatiques se sont multipliées ces derniers mois, à la fois contre des entreprises et des organismes publics.",
-   "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/direct-sebastien-lecornu-preside-une-reunion-interministerielle-relative-a-la-cybersecurite-avant-une-conference-de-presse_8290133.html",
-   "at": "2026-11-19T16:47:53+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "David Habib, député des Pyrénées-Atlantiques et ancien vice-président de l’Assemblée, est mort à 65 ans",
-   "desc": "Député des Pyrénées-Atlantiques depuis 2002, David Habib est mort jeudi 19 novembre. Il avait quitté le Parti socialiste en 2022, en condamnant des accords noués avec La France insoumise à l’occasion des élections législatives.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/19/le-depute-des-pyrenees-atlantiques-david-habib-ancien-vice-president-de-l-assemblee-est-mort_6813345_823448.html",
-   "at": "2026-11-19T16:37:47+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Pic du pétrole vers 2030, boom des renouvelables, impact de la guerre au Moyen-Orient... Ce qu'il faut retenir du rapport de l'Agence internationale de l'énergie",
-   "desc": "Alors que la COP31 se déroule en Turquie, ces experts prévoient une électrification massive des usages, soutenue par les énergies renouvelables... mais toujours à un niveau insuffisant pour limiter le réchauffement climatique.",
-   "url": "https://www.franceinfo.fr/environnement/energie/pic-du-petrole-vers-2030-boom-des-renouvelables-impact-de-la-guerre-au-moyen-orient-ce-qu-il-faut-retenir-du-rapport-de-l-agence-internationale-de-l-energie_8289644.html",
-   "at": "2026-11-19T16:16:55+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Une part de nous reste en pause\" : trois ans après le meurtre de Thomas à Crépol, ses parents s'expriment pour la première fois dans une lettre",
-   "desc": "Dans cette affaire, des juges d’instruction ont ordonné un procès devant une cour d’assises des mineurs pour onze accusés, retenant notamment la circonstance aggravante de racisme envers \"la race blanche et la nation française\".",
-   "url": "https://www.franceinfo.fr/faits-divers/meurtre-de-thomas-a-crepol/trois-ans-apres-le-meurtre-de-thomas-a-crepol-ses-parents-s-expriment-pour-la-premiere-fois-dans-une-lettre-une-part-de-nous-reste-en-pause_8290277.html",
-   "at": "2026-11-19T16:15:47+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le directeur de la prison d'Aix-Luynes mis en examen et écroué pour détention, offre et mise à disposition d'images pédopornographiques",
-   "desc": "Le directeur de la prison a été identifié après avoir téléchargé \"un fichier cible violent à partir du début de l'année 2026\" selon le parquet de Nîmes.",
-   "url": "https://www.franceinfo.fr/societe/pedocriminalite/le-directeur-de-la-prison-d-aix-luynes-mis-en-examen-et-ecroue-pour-detention-offre-et-mise-a-disposition-d-images-pedocriminelles_8290181.html",
-   "at": "2026-11-19T16:06:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Mèmes, montages vidéo et propositions électorales… Quand les politiques s'emparent de la sortie de \"GTA VI\"",
-   "desc": "A l'image de Gabriel Attal, Eric Zemmour ou Fabien Roussel, plusieurs candidats à la présidentielle ont profité de la sortie du jeu culte pour diffuser des messages.",
-   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/mmes-montages-video-et-propositions-electorales-quand-les-politiques-s-emparent-de-la-sortie-de-gta-vi_8289689.html",
-   "at": "2026-11-19T16:04:57+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Shenzhen, Xi Jinping et « l’ami » Vladimir Poutine ont endormi Donald Trump sous les fastes",
-   "desc": "Les chefs d’Etat des trois grandes puissances ont profité du sommet en Chine pour entretenir une fausse proximité, qui ne dit rien de leurs désaccords sur des sujets comme l’intelligence artificielle ou les arsenaux nucléaires.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/19/a-shenzhen-xi-jinping-et-l-ami-vladimir-ont-endormi-donald-trump-sous-les-fastes_6813336_3210.html",
-   "at": "2026-11-19T15:50:36+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Xi Jinping, Vladimir Poutine et Donald Trump adoptent une \"déclaration de paix\" après un sommet inédit",
-   "desc": "Les trois dirigeants, réunis à Shenzhen (Chine) jeudi, \"se sont engagés à préserver la stabilité stratégique et la sécurité internationale\", est-il écrit dans leur déclaration.",
-   "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/xi-jinping-vladimir-poutine-et-donald-trump-adoptent-une-declaration-de-paix-apres-un-sommet-inedit_8290064.html",
-   "at": "2026-11-19T15:46:17+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Une enquête ouverte sur des fuites en provenance du ministère de l’intérieur vers le RN",
-   "desc": "Selon les informations du « Monde », une information judiciaire a été ouverte pour « violation du secret professionnel », « violation du secret de l’enquête » et « recel » de ces délits. La justice soupçonne des fuites d’éléments liés à des enquêtes en cours concernant le RN. Des perquisitions ont été menées au siège du parti et au ministère de l’intérieur. Au moins un ancien haut cadre de Beauvau, le préfet Hugues Moutouh, est soupçonné.",
+   "desc": "Selon les informations du « Monde », une information judiciaire a été ouverte pour « violation du secret professionnel », « violation du secret de l’enquête » et « recel » de ces délits. La justice soupçonne des fuites d’éléments liés à des enquêtes en cours concernant le Rassemblement national. Des perquisitions ont été menées au siège du parti et au ministère de l’intérieur. Au moins un ancien haut cadre de Beauvau, le préfet Hugues Moutouh, est soupçonné.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/19/une-enquete-ouverte-sur-des-fuites-en-provenance-du-ministere-de-l-interieur-vers-le-rn_6813316_3224.html",
    "at": "2026-11-19T14:31:38+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"La gravité nécessite l'emprisonnement\" : des peines de quatre ans à six ans de prison ferme requises contre les trois policiers accusés d'avoir roué de coups Michel Zecler",
-   "desc": "L'avocate générale a aussi demandé à la cour de retenir la circonstance aggravante de racisme, à l'encontre des trois accusés, jugés depuis dix jours pour violences aggravées et faux en écriture publique. Le verdict est attendu vendredi.",
-   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-peines-de-quatre-ans-a-six-ans-de-prison-ferme-requises-contre-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8288789.html",
-   "at": "2026-11-19T14:31:38+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Rencontre entre Trump, Poutine et Xi : le président russe affirme avoir eu une discussion \"ouverte\" et \"très utile\" avec ses homologues",
-   "desc": "Les chefs d'Etat américain, russe et chinois se sont réunis jeudi pour un sommet tripartite pour \"préserver la paix mondiale\".",
-   "url": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/direct-rencontre-donald-trump-vladimir-poutine-xi-jinping-suivez-l-entretien-inedit-entre-les-trois-presidents-en-chine_8288564.html",
-   "at": "2026-11-19T13:51:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La Commission européenne annonce avoir été la cible d'une cyberattaque assistée par l'intelligence artificielle en octobre",
-   "desc": "Un porte-parole a précisé jeudi qu'à ce stade, la Commission européenne n'avait pas la preuve de vol de données personnelles.",
-   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/la-commission-europeenne-annonce-avoir-ete-la-cible-d-une-cyberattaque-assistee-par-l-intelligence-artificielle-en-octobre_8289959.html",
-   "at": "2026-11-19T13:38:26+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On a envie de boire des vins plus souples\" : après le déclin, le retour en grâce du Beaujolais nouveau ?",
-   "desc": "Le Beaujolais nouveau a perdu de son engouement depuis son âge d'or des années 1990. Mais ce vin semble retrouver une place auprès des consommateurs, qui seraient séduits par des vins plus légers et fruités.",
-   "url": "https://www.franceinfo.fr/economie/on-a-envie-de-boire-des-vins-plus-souples-apres-le-declin-le-retour-en-grace-du-beaujolais-nouveau_8289986.html",
-   "at": "2026-11-19T13:37:46+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J'ai l'impression d'avoir vu ça dans un film\" : comment la saga GTA s'inspire du cinéma, et réciproquement",
-   "desc": "Le sixième épisode du jeu vidéo évènement \"GTA\" est disponible depuis ce jeudi. Depuis le troisième opus, sorti en 2001, la saga \"Grand Theft Auto\" puise notamment son inspiration dans certains films. Lesquels ? Et comment ces œuvres ont-elles influencé les dernières versions du jeu ?",
-   "url": "https://www.franceinfo.fr/culture/jeux-video/j-ai-l-impression-d-avoir-vu-ca-dans-un-film-comment-la-saga-gta-s-inspire-du-cinema-et-reciproquement_8289821.html",
-   "at": "2026-11-19T13:32:38+00:00"
   },
   {
    "source": "franceinfo",
@@ -323,34 +316,6 @@
    "desc": "Sur le site spécialisé Metacritic, qui agrège les évaluations, le dernier opus de la franchise \"Grand Theft Auto\", attendu par les fans pendant treize ans, décroche la note mirobolante de 99/100, du jamais-vu pour un jeu vidéo depuis vingt-huit ans.",
    "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/je-n-ai-jamais-joue-a-un-jeu-aussi-marquant-le-jeu-video-gta-vi-recoit-les-eloges-de-la-presse-specialisee-du-monde-entier_8289947.html",
    "at": "2026-11-19T13:04:22+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La Birmanie a commis un génocide à l'encontre des Rohingyas, statue la Cour internationale de justice dans un arrêt historique",
-   "desc": "La plus haute juridiction de l'ONU, a établi que les soldats birmans ont tué des \"milliers de civils rohingyas\", avec \"l'intention de détruire une partie substantielle\" de cette population.",
-   "url": "https://www.franceinfo.fr/monde/asie/rohingyas/la-birmanie-a-commis-un-genocide-a-l-encontre-des-rohingyas-statue-la-cour-internationale-de-justice-dans-un-arret-historique_8289806.html",
-   "at": "2026-11-19T12:15:35+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Entre le Royaume-Uni et l’UE, des retrouvailles complexes lors d’un sommet à Bruxelles",
-   "desc": "Malgré la volonté affichée du premier ministre britannique, Andy Burnham, de renforcer les relations économiques et politiques avec l’Union européenne, les deux parties sont encore loin d’un consensus sur les dossiers qui seront abordés.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/19/entre-le-royaume-uni-et-l-union-europeenne-des-retrouvailles-complexes_6813267_3210.html",
-   "at": "2026-11-19T10:00:03+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "\"Femmeblancherie\" : le procès de la haine des femmes",
-   "desc": "Ce mercredi s’est ouvert le procès de sept membres du canal Telegram \"Femmeblancherie\" au tribunal judiciaire de Paris. Appels aux féminicides et aux viols, fichages racistes et homophobes, plusieurs dizaines d’abonnés sont accusés d’une trentaine de crimes et délits, dont \"provocation publique à commettre un crime\". Un procès qui découle d’une idéologie très en vogue chez les jeunes, notamment sur les réseaux sociaux : le masculinisme.",
-   "url": "https://www.france24.com/fr/%C3%A9missions/les-cl%C3%A9s-de-l-info/20261118-femmeblancherie-le-proc%C3%A8s-de-la-haine-des-femmes",
-   "at": "2026-11-18T23:18:12+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Présidentielle : Marine Tondelier \"prête à travailler à une coalition\" autour de Jean-Luc Mélenchon",
-   "desc": "Qualifiant la dynamique de campagne de Jean-Luc Mélenchon d'\"indéniable\", la candidate écologiste à la présidentielle, Marine Tondelier, a dit mercredi soir sur France 2 être \"prête\" à \"travailler à une coalition\" avec l'insoumis. Le candidat Raphaël Glucksmann a jugé qu'elle \"[tournait] le dos\" à \"la tradition profondément proeuropéenne\" des écologistes.",
-   "url": "https://www.france24.com/fr/france/20261118-presidentielle-2027-election-marine-tondelier-ecologistes-prete-travailler-coalition-autour-jean-luc-melenchon-la-france-insoumise-soutien",
-   "at": "2026-11-18T22:39:24+00:00"
   }
  ]
 }

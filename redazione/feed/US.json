@@ -1,55 +1,314 @@
 {
  "code": "US",
- "asOf": "2026-11-19T21:17:33+00:00",
+ "asOf": "2026-11-20T05:17:35+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
-   "desc": "Brokerage firms may put future IPO limits in place for investors who sell their Anthropic stake too soon.",
-   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
-   "at": "2026-11-19T21:16:41+00:00"
+   "title": "U.K.-India trade deal faces a stiff test over Scotch whisky import taxes",
+   "desc": "In the global spirits markets, while the U.S., Europe, and China are facing volume contraction, India will add nearly 100 million consumers in the next five years.",
+   "url": "https://www.cnbc.com/2026/11/20/uk-india-trade-scotch-whisky-tariffs.html",
+   "at": "2026-11-20T05:09:52+00:00"
   },
   {
    "source": "CNBC",
-   "title": "AMD dives on short-seller report of alleged China exposure",
-   "desc": "AMD closed down over 7% after a short-seller alleged that its firmware showed up at a blacklisted Chinese company. The company said it complies with U.S. law.",
-   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
-   "at": "2026-11-19T21:14:46+00:00"
+   "title": "Anthropic IPO 'exactly what the markets need,' but analysts warn of volatility",
+   "desc": "The Anthropic IPO is \"what the markets need.\" However, analysts say its shares will be volatile in the coming weeks.",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-stocks-market.html",
+   "at": "2026-11-20T04:51:28+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Photos, videos show devastating South Florida flooding",
-   "desc": "Significant flooding devastated some South Florida communities this week.",
-   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
-   "at": "2026-11-19T21:12:11+00:00"
+   "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
+   "desc": "The U.S. Army has delayed plans to detonate unstable explosives at a munition plant in Iowa, amid concerns about the risks of a plume of dust containing toxic lead particles that could spread across parts of Iowa and Illinois.",
+   "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/",
+   "at": "2026-11-20T04:16:14+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
+   "desc": "The permitting bill's Senate passage is a key step to it becoming law, but it would also need to clear the House before heading to President Trump's desk.",
+   "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+   "at": "2026-11-20T03:56:17+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Fiona the hippo has died, Cincinnati Zoo says",
-   "desc": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
-   "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
-   "at": "2026-11-19T21:09:00+00:00"
+   "title": "DOJ moves to dismiss lawsuit over Alaska Senate race",
+   "desc": "The Trump administration is moving to effectively drop its legal challenge to Democrat Mary Peltola's win in Alaska's Senate race.",
+   "url": "https://www.cbsnews.com/news/trump-administration-dismiss-alaska-senate-lawsuit/",
+   "at": "2026-11-20T03:55:45+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Justice Department Gives Up on Alaska Senate Lawsuit",
+   "desc": "The Trump administration had sought to block certification of election results if Senator Dan Sullivan, a Republican, lost narrowly in his bid for re-election. Critics had called the suit meritless.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/justice-department-gives-up-on-alaska-senate-lawsuit.html",
+   "at": "2026-11-20T03:47:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Top White House Cybersecurity Official Is Replaced",
+   "desc": "The departure of Sean Cairncross comes after a series of technological outages affected U.S. companies and federal agencies in the past week.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/white-house-cyber-director-departs.html",
+   "at": "2026-11-20T03:31:41+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+   "desc": "The declines in Asia come after the tech-heavy Nasdaq Composite fell more than 2% overnight following Anthropic's highly anticipated Wall Street debut.",
+   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html",
+   "at": "2026-11-20T03:30:34+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Fiona the Hippo, Star of Cincinnati Zoo and Beyond, Dies After Eating Child’s Hat",
+   "desc": "The beloved Nile hippopotamus became ill after eating a children’s hat that accidentally ended up in her enclosure.",
+   "url": "https://www.nytimes.com/2026/11/19/us/fiona-hippo-dead-cincinnati-zoo.html",
+   "at": "2026-11-20T03:25:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "California Thieves Carried Out String of Train Heists, Prosecutors Say",
+   "desc": "A crew of 14 men boarded moving trains in Southern California, forced them to stop and made away with sneakers, electronics and power tools, according to an indictment unsealed on Thursday.",
+   "url": "https://www.nytimes.com/2026/11/19/us/california-train-robberies-indictment.html",
+   "at": "2026-11-20T03:08:13+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Agriculture Secretary’s Christian Messages to Staff Went ‘Too Far,’ Judge Says",
+   "desc": "A federal judge ordered limits on Brooke Rollins’s promotion of her religious beliefs, saying her emails to her department had violated the First Amendment.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/rollins-christian-messages.html",
+   "at": "2026-11-20T02:52:59+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Marine Corps hero under federal investigation",
+   "desc": "Retired Sgt. Maj. Bradley Kasal, whose bloodied visage was depicted in an iconic Iraq War photo, is under investigation stemming from his tenure as a high school JROTC instructor.",
+   "url": "https://www.cbsnews.com/news/marine-corps-hero-brad-kasal-federal-investigation/",
+   "at": "2026-11-20T02:40:45+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Technology Promised Ease. Outages Are Making Many Americans Uneasy.",
+   "desc": "The recent spate of tech disruptions has forced Americans to reckon with how dependent they have become on worldwide computer networks.",
+   "url": "https://www.nytimes.com/2026/11/19/us/tech-outages-computer-networks.html",
+   "at": "2026-11-20T01:52:38+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Japan core inflation soars to highest this year as energy subsidy expiry pushes up consumer prices",
+   "desc": "The core inflation figure — which strips out prices of food — was lower than the 2.3% expected by Reuters-polled economists.",
+   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html",
+   "at": "2026-11-20T01:49:03+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "2-year-old who went missing in desert found by volunteer",
+   "desc": "Jay Stewart was overcome with emotion during a news conference as he recalled the moment he found a missing 2-year-old curled up under a bush just after midnight on Wednesday.",
+   "url": "https://www.cbsnews.com/news/missing-2-year-old-found-arizona-desert/",
+   "at": "2026-11-20T01:06:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Video shows moments after missing 2-year-old girl found in remote Arizona desert",
+   "desc": "A 2-year-old girl was rescued after spending seven hours alone in the Arizona desert. Carter Evans reports.",
+   "url": "https://www.cbsnews.com/video/video-shows-moments-after-missing-2-year-old-girl-found-in-remote-arizona-desert/",
+   "at": "2026-11-20T01:01:21+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Here are the GTA 6 songs you'll hear cruising around Vice City",
+   "desc": "Grand Theft Auto 6 players carry out missions to songs by artists such as Cardi B, Lana Del Rey and Travis Scott.",
+   "url": "https://www.cbsnews.com/news/gta-6-soundtrack-songs-vice-city/",
+   "at": "2026-11-20T01:00:18+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "GTA 6 already on track to become best-selling video game of all time",
+   "desc": "Grand Theft Auto 6 was released Thursday to mass enthusiasm from fans, with billions in sales projected during its first week. Matt Gutman reports.",
+   "url": "https://www.cbsnews.com/video/gta-6-already-on-track-to-become-best-selling-video-game-of-all-time/",
+   "at": "2026-11-20T00:58:20+00:00"
   },
   {
    "source": "CNBC",
    "title": "Commerce approved sales of more than 879,000 AI chips to Chinese companies, Rep. Mast says",
    "desc": "Members of Congress have pushed in the wake of the Jensen Huang scandal for legislation to tighten export controls on chip sales to China.",
    "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-   "at": "2026-11-19T21:08:45+00:00"
+   "at": "2026-11-20T00:53:55+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Fiona the Hippo, Whose Stardom Extended Well Beyond Cincinnati, Has Died",
-   "desc": "The beloved Nile hippopotamus became ill after eating a children’s hat that accidentally ended up in her enclosure.",
-   "url": "https://www.nytimes.com/2026/11/19/us/fiona-hippo-dead-cincinnati-zoo.html",
-   "at": "2026-11-19T21:01:27+00:00"
+   "source": "CBS News",
+   "title": "Dangerous flooding continues in Florida, many areas hit with over a foot of rain",
+   "desc": "Incessant rain is swamping multiple areas in Florida, prompting rescues and school closures. Rob Marciano has more.",
+   "url": "https://www.cbsnews.com/video/dangerous-flooding-continues-in-florida-many-areas-hit-with-over-a-foot-of-rain/",
+   "at": "2026-11-20T00:47:19+00:00"
   },
   {
    "source": "New York Times",
    "title": "No Charges Filed in Wisconsin Police Shooting That Led to Protests",
    "desc": "Demonstrators blocked traffic for days last summer after a Madison police officer shot and killed a man during a confrontation.",
    "url": "https://www.nytimes.com/2026/11/19/us/madison-police-shooting-charges-corey-ruiz.html",
-   "at": "2026-11-19T21:01:15+00:00"
+   "at": "2026-11-20T00:31:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic IPO: Investors who flip the stock may face brokerage penalty",
+   "desc": "Brokerage firms may put future IPO limits in place for investors who sell their Anthropic stake too soon.",
+   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-flipping-rules.html",
+   "at": "2026-11-20T00:16:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Former Biden Chief, With Help From Alex Soros, Will Gather Aides of 2028 Hopefuls",
+   "desc": "Jen O’Malley Dillon, who led the former president’s last two White House bids, is inviting top Democratic operatives to a gathering funded in part by the megadonor Alex Soros.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/alex-soros-jen-omalley-dillon-2028-democratic-presidential-race.html",
+   "at": "2026-11-20T00:16:06+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AMD dives on short seller report of alleged China exposure",
+   "desc": "AMD closed down over 7% after a short seller alleged that its firmware showed up at a blacklisted Chinese company. AMD said it complies with U.S. law.",
+   "url": "https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html",
+   "at": "2026-11-20T00:08:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic was supposed to save the AI trade. What went wrong?",
+   "desc": "Technology stocks tanked despite one of the most hotly anticipated tech IPOs in years. Why Anthropic couldn't revive AI animal spirits.",
+   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html",
+   "at": "2026-11-20T00:00:38+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Elon Musk Backs Away From MAGA and the Trump Presidency He Shaped",
+   "desc": "The man who helped elect President Trump in 2024 and led DOGE is trying to rewrite history.",
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/elon-musk-maga-trump.html",
+   "at": "2026-11-19T23:45:20+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "AI fueling \"disturbingly high\" inflation, Chicago Fed president says",
+   "desc": "A boom in data center construction across the U.S. and broader investment in AI are contributing to hot inflation, according to Chicago Fed President Austan Goolsbee.",
+   "url": "https://www.cbsnews.com/news/ai-boom-inflation-chicago-fed-goolsbee/",
+   "at": "2026-11-19T23:40:06+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/19: CBS Evening News",
+   "desc": "Dangerous flooding batters Florida; Market down as Anthropic goes public.",
+   "url": "https://www.cbsnews.com/video/111926-cbs-evening-news/",
+   "at": "2026-11-19T23:30:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
+   "desc": "The investigation by California Attorney General Rob Bonta comes on the heels of the resignation of Nvidia CEO Jensen Huang.",
+   "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
+   "at": "2026-11-19T23:21:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "South Florida severe weather and flooding live updates",
+   "desc": "After more than 15 inches of rain flooded parts of South Florida, a flood watch has been extended into Friday morning as schools announce reopening plans.",
+   "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/",
+   "at": "2026-11-19T23:12:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "at": "2026-11-19T22:56:57+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Beloved hippo Fiona dies days after swallowing hat",
+   "desc": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
+   "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
+   "at": "2026-11-19T22:51:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Consumers stock doomsday pantries as tech outages cause jitters",
+   "desc": "Companies such as Costco and Walmart are seeing a surge in sales for generators, canned goods and other disaster-preparedness staples.",
+   "url": "https://www.cbsnews.com/news/doomsday-prepping-scenarios-walmart-costco-technology-outages/",
+   "at": "2026-11-19T22:39:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump pardons deceased MLB slugger Pete Rose",
+   "desc": "President Trump said Thursday he has granted a \"Complete and Total Pardon\" to Pete Rose, MLB's late all-time hits leader who was banned from the league for gambling.",
+   "url": "https://www.cbsnews.com/news/pete-rose-pardoned-by-trump/",
+   "at": "2026-11-19T22:35:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Bay Area Wonders: What Will Anthropic Workers Do With Their Wealth?",
+   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound affluence from the company’s initial public offering.",
+   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
+   "at": "2026-11-19T22:25:19+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Congress passes bill to protect older investors from financial fraud",
+   "desc": "Both chambers of Congress have now approved the Financial Exploitation Prevention Act of 2025, which is aimed at protecting vulnerable investors from fraud.",
+   "url": "https://www.cnbc.com/2026/11/19/financial-exploitation-prevention-act-older-investors-fraud.html",
+   "at": "2026-11-19T22:23:29+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/19: The Takeout with Major Garrett",
+   "desc": "Trump meets with Putin and Xi in historic summit; Anthropic goes public with record IPO.",
+   "url": "https://www.cbsnews.com/video/111926-the-takeout-with-major-garrett/",
+   "at": "2026-11-19T22:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
+   "desc": "Intuit is offloading a segment that has slowed down revenue growth, for less than a third of what it paid to acquire Mailchimp in 2021.",
+   "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
+   "at": "2026-11-19T21:40:31+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Fire at Railroad Tie Plant in Alabama Closes Schools and Prompts Evacuations",
+   "desc": "The authorities in Attalla ordered residents within a mile radius to leave because of the fire at the Omaha Track, a railroad tie recycling facility.",
+   "url": "https://www.nytimes.com/2026/11/19/us/alabama-fire-railroad-tie-recycling-plant.html",
+   "at": "2026-11-19T21:40:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What Ron Johnson's 'Ponzi scheme' label gets wrong about Social Security, experts say",
+   "desc": "Social Security's trust funds face a looming shortfall. But AARP says Sen. Ron Johnson's description of the program as a \"legal Ponzi scheme\" is inaccurate.",
+   "url": "https://www.cnbc.com/2026/11/19/social-security-ponzi-scheme-ron-johnson.html",
+   "at": "2026-11-19T21:35:46+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Stocks plunge as investors take cover amid growing uncertainty",
+   "desc": "The Dow tumbled 1,100 points, while other stock markets also swooned, as Wall Street frets over AI growth and other market risks.",
+   "url": "https://www.cbsnews.com/news/dow-tumbles-wall-street-ai-fears/",
+   "at": "2026-11-19T21:25:11+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Top Massachusetts Court to Weigh Lindsay Clancy’s Motion to Dismiss",
+   "desc": "Her lawyers plan to argue in January that the first-degree murder charges against her should be dropped following her mistrial.",
+   "url": "https://www.nytimes.com/2026/11/19/us/lindsay-clancy-trial-juror-appeal.html",
+   "at": "2026-11-19T21:20:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Anthropic shares jump in Nasdaq trading debut after record IPO",
+   "desc": "Anthropic raised a record $81.3 billion, catapulting it past SpaceX, which raised $75 billion​ when it went public in June.",
+   "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/",
+   "at": "2026-11-19T21:18:04+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Photos, videos show devastating South Florida flooding",
+   "desc": "Significant flooding devastated some South Florida communities this week.",
+   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
+   "at": "2026-11-19T21:12:00+00:00"
   },
   {
    "source": "CNBC",
@@ -59,13 +318,6 @@
    "at": "2026-11-19T21:00:57+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Anthropic shares jump in Nasdaq trading debut after record IPO",
-   "desc": "Anthropic raised a record $81.3 billion, catapulting it past SpaceX, which raised $75 billion​ when it went public in June.",
-   "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/",
-   "at": "2026-11-19T20:56:07+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Amazon app warns New York of higher costs if Mamdani delivery law passes",
    "desc": "Amazon has lobbied heavily against the proposed legislation, while New York City Mayor Zohran Mamdani backed the bill earlier this year.",
@@ -73,39 +325,11 @@
    "at": "2026-11-19T20:46:23+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Iowa residents asked to evacuate Friday ahead of Army detonation",
-   "desc": "The Army plans to detonate 68 barrels of degraded lead azide in Middletown, Iowa, at noon Friday. Forecasts show a dust plume moving north and staying west of the Chicago area, but sampling will determine where lead lands.",
-   "url": "https://www.cbsnews.com/news/army-lead-azide-detonation-iowa-toxic-dust-plume/",
-   "at": "2026-11-19T20:44:22+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Congress passes bill to protect older investors from financial fraud",
-   "desc": "Both chambers of Congress have now approved the Financial Exploitation Prevention Act of 2025, which is aimed at protecting vulnerable investors from fraud.",
-   "url": "https://www.cnbc.com/2026/11/19/financial-exploitation-prevention-act-older-investors-fraud.html",
-   "at": "2026-11-19T20:36:48+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "What Ron Johnson's 'Ponzi scheme' label gets wrong about Social Security, experts say",
-   "desc": "Social Security's trust funds face a looming shortfall. But AARP says Sen. Ron Johnson's description of the program as a \"legal Ponzi scheme\" is inaccurate.",
-   "url": "https://www.cnbc.com/2026/11/19/social-security-ponzi-scheme-ron-johnson.html",
-   "at": "2026-11-19T20:34:35+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Kraken parent's acquisition of Tribe Capital flags new chapter in evolution of crypto exchanges",
    "desc": "Payward, the owner of crypto exchange Kraken, is pushing into private markets with its purchase of venture capital and asset management provider Tribe Capital.",
    "url": "https://www.cnbc.com/2026/11/19/acquisition-of-tribe-capital-flags-new-chapter-in-evolution-of-crypto-exchanges.html",
    "at": "2026-11-19T20:33:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "South Florida severe weather and flooding live updates",
-   "desc": "After more than 15 inches of rain flooded parts of South Florida, a flood watch has been extended into Friday morning as schools announce reopening plans.",
-   "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/",
-   "at": "2026-11-19T20:26:17+00:00"
   },
   {
    "source": "New York Times",
@@ -134,13 +358,6 @@
    "desc": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
    "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
    "at": "2026-11-19T19:58:30+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fire at Railroad Tie Plant in Alabama Closes Schools and Prompts Evacuations",
-   "desc": "The authorities in Attalla ordered residents within a mile radius to leave because of the fire at the Omaha Track, a railroad tie recycling facility.",
-   "url": "https://www.nytimes.com/2026/11/19/us/alabama-fire-railroad-tie-recycling-plant.html",
-   "at": "2026-11-19T19:54:52+00:00"
   },
   {
    "source": "CBS News",
@@ -206,20 +423,6 @@
    "at": "2026-11-19T19:06:56+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "The Bay Area Wonders: What Will Anthropic Workers Do With Their Wealth?",
-   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound affluence from the company’s initial public offering.",
-   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
-   "at": "2026-11-19T18:55:40+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Ally Arranged for Russian Flag to Be Displayed on an Arch in Atlanta",
-   "desc": "Rodney Mims Cook Jr., chairman of the U.S. Commission of Fine Arts, sought to pay tribute to Russia’s ambassador to United States, whose death was announced on Nov. 11.",
-   "url": "https://www.nytimes.com/2026/11/18/us/atlanta-arch-russia-flag-trump.html",
-   "at": "2026-11-19T18:48:11+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Jensen Huang's — and Nvidia's — legal exposure balloons",
    "desc": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney.",
@@ -239,20 +442,6 @@
    "desc": "How do we maintain healthy romantic relationships as we age? Allison Aubrey and Scott Detrow talk about about the science of healthy, later-in-life relationships.",
    "url": "https://www.npr.org/2026/11/19/nx-s1-5996688/magic-6-marriage-tips-nina-totenberg-relationships",
    "at": "2026-11-19T18:28:23+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Top Massachusetts Court to Weigh Lindsay Clancy’s Motion to Dismiss",
-   "desc": "Her lawyers plan to argue in January that the first-degree murder charges against her should be dropped following her mistrial.",
-   "url": "https://www.nytimes.com/2026/11/19/us/lindsay-clancy-trial-juror-appeal.html",
-   "at": "2026-11-19T18:27:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Woman runs 7 marathons while pregnant this year: \"I am very stubborn\"",
-   "desc": "Deirdre Keane, a 38-year-old nurse and management consultant, achieved her goal of completing all seven World Marathon Majors while pregnant with her first child.",
-   "url": "https://www.cbsnews.com/news/deirdre-keane-world-marathon-majors-pregnant/",
-   "at": "2026-11-19T18:00:00+00:00"
   },
   {
    "source": "CBS News",
@@ -311,46 +500,11 @@
    "at": "2026-11-19T17:01:41+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Meet the 19 new senators set to be sworn in to Congress",
-   "desc": "From a former wheelchair basketball Paralympian to a Methodist pastor and one senator returning after defeat, the new class hails from different backgrounds and parts of the country.",
-   "url": "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/",
-   "at": "2026-11-19T16:58:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "DOJ taps prosecutor for probes into Mar-a-Lago raid, docs case",
-   "desc": "The Justice Department has tapped the top federal prosecutor in Los Angeles to work on probes into the FBI's raid on Mar-a-Lago and the Trump documents case.",
-   "url": "https://www.cbsnews.com/news/bill-essayli-justice-department-mar-a-lago-trump-documents-case/",
-   "at": "2026-11-19T16:49:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Ericka Lomick’s Texas House Win Faces Challenge in State Supreme Court",
-   "desc": "The Texas electoral wave carried one Democrat to victory even after she had suspended her campaign. Republicans want her declared ineligible.",
-   "url": "https://www.nytimes.com/2026/11/18/us/texas-house-election-ericka-lomick.html",
-   "at": "2026-11-19T16:46:28+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Heavy floods devastate Florida and California",
-   "desc": "Schools in Florida are closed after heavy rain caused major flooding. Meanwhile, severe storms slammed Northern California. Rob Marciano reports.",
-   "url": "https://www.cbsnews.com/video/heavy-floods-devastate-florida-and-california/",
-   "at": "2026-11-19T16:45:38+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Gold's bad year is getting worse. Why its price keeps falling",
    "desc": "Gold has fallen sharply from its January record as higher interest rates and a stronger dollar change the investment case for the precious metal.",
    "url": "https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html",
    "at": "2026-11-19T16:29:52+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Meet Anthropic's 7 co-founders, now worth about $20 billion each",
-   "desc": "Dario Amodei and the company's other six co-founders instantly joined the ranks of America's richest citizens with the AI giant's initial public offering.",
-   "url": "https://www.cbsnews.com/news/anthropic-ipo-founders-net-worth/",
-   "at": "2026-11-19T16:21:00+00:00"
   },
   {
    "source": "NPR",
@@ -374,13 +528,6 @@
    "at": "2026-11-19T15:33:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Anthropic IPO, AI wealth spawn a new, leaner kind of family office",
-   "desc": "The Anthropic IPO and a flood of AI wealth are spurring the creation of new family offices built for the era of artificial intelligence.",
-   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-wealth-spawn-a-new-leaner-kind-of-family-office.html",
-   "at": "2026-11-19T14:57:38+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Boston’s Beloved Citgo Sign Returns After Rebuild, 30 Feet Higher",
    "desc": "The beloved Citgo sign will be lit again on Thursday night after it was rebuilt and moved 120 feet to the east, its latest incarnation in a city transformed by development.",
@@ -395,46 +542,18 @@
    "at": "2026-11-19T14:38:55+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Americans remain skeptical after wave of outages",
-   "desc": "Americans remain skeptical after a wave of tech outages over the last week, despite the Trump administration's insistence that there are no cybersecurity threats. Jo Ling Kent reports.",
-   "url": "https://www.cbsnews.com/video/americans-remain-skeptical-after-wave-of-outages/",
-   "at": "2026-11-19T14:17:33+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Kash Patel skips House hearing after Mar-a-Lago gala with $50,000 access",
-   "desc": "Kash Patel missed a congressional hearing after appearing the night before at a Mar-a-Lago gala offering donors of $50,000 access to top officials.",
-   "url": "https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html",
-   "at": "2026-11-19T14:15:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Details emerge on South Carolina \"stand your ground\" murder case",
-   "desc": "New details are emerging in a South Carolina shooting case where two men are claiming self-defense under the state's \"stand your ground\" law. Tom Hanson reports.",
-   "url": "https://www.cbsnews.com/video/details-emerge-on-south-carolina-stand-your-ground-murder-case/",
-   "at": "2026-11-19T14:13:35+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "A Paramedic Rushed to a Fatal Accident. The Dead Man Was Her Son.",
    "desc": "The paramedic in rural Utah realized a man pinned under a car was her son after she began treating him, the authorities said.",
    "url": "https://www.nytimes.com/2026/11/19/us/paramedic-accident-son-utah.html",
-   "at": "2026-11-19T14:12:17+00:00"
+   "at": "2026-11-19T14:12:18+00:00"
   },
   {
    "source": "New York Times",
    "title": "Three MAGA Women Who Defined an Era in Congress Are Exiting",
    "desc": "Representatives Marjorie Taylor Greene, Lauren Boebert and Nancy Mace embodied a combative, attention-seeking brand of politics that defined the Republican Congress.",
-   "url": "https://www.nytimes.com/2026/11/19/us/politics/three-maga-women-who-defined-an-era-in-congress-are-exiting.html",
-   "at": "2026-11-19T13:27:13+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Family offices move more money into stocks, hedge AI risk, according to CNBC Family Office Portfolio Tracker",
-   "desc": "Family offices continued to boost their stock holdings, but they hedged the AI trade with financials, according to the CNBC Family Office Portfolio Tracker.",
-   "url": "https://www.cnbc.com/2026/11/19/family-offices-moved-more-money-into-stocks-but-hedged-ai-risk.html",
-   "at": "2026-11-19T12:46:28+00:00"
+   "url": "https://www.nytimes.com/2026/11/19/us/politics/maga-women-congress-greene-boebert-mace.html",
+   "at": "2026-11-19T13:27:14+00:00"
   },
   {
    "source": "NPR",
@@ -465,13 +584,6 @@
    "at": "2026-11-19T12:02:08+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Data center electricity use could double by 2030, IEA says",
-   "desc": "Global electricity use by data centers could double by 2030 as the AI boom adds pressure to power grids across the world, according to the IEA.",
-   "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
-   "at": "2026-11-19T11:34:24+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Incoming House majority leader Katherine Clark stresses Democratic unity",
    "desc": "As Democrats prepare to take control of the House, incoming majority leader Katherine Clark discusses the party's ambitious agenda and divisions within its ranks.",
@@ -486,137 +598,18 @@
    "at": "2026-11-19T11:20:37+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
+   "desc": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
+   "at": "2026-11-19T10:54:07+00:00"
+  },
+  {
    "source": "NPR",
-   "title": "Investors scramble for a piece of AI giant Anthropic in blockbuster IPO",
-   "desc": "Shares in the maker of the popular Claude artificial intelligence model leapt in first day of trading on the Nasdaq Thursday.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
+   "title": "Muslims will outnumber Christians worldwide by 2035, report says",
+   "desc": "By 2070, the Democratic Republic of the Congo will surpass the United States as the country with the largest total number of Christians.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2035-report-says",
    "at": "2026-11-19T10:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Novartis raises blockbuster drug forecasts to $18 billion as it seeks to prove growth can last",
-   "desc": "The drugmaker cited strong demand for its blockbuster drugs as it upgraded peak sales forecasts for multiple sclerosis, leukemia, and cholesterol medicines.",
-   "url": "https://www.cnbc.com/2026/11/19/novartis-stock-cmd-2026-ceo.html",
-   "at": "2026-11-19T09:57:53+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump praises ‘great relationship’ with Putin after meeting, as Ukraine war takes center stage",
-   "desc": "U.S. President Donald Trump met individually on Thursday with Russian President Vladimir Putin, as well as Chinese President Xi Jinping.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
-   "at": "2026-11-19T09:02:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "‘GTA Flu’ Has Schools and Jobs Bracing for Sick Days",
-   "desc": "The highly anticipated release of Grand Theft Auto VI is expected to prompt a wave of students and employees to stay home on Thursday.",
-   "url": "https://www.nytimes.com/2026/11/18/us/gta-6-sick-work-school.html",
-   "at": "2026-11-19T08:53:03+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Takaichi gets chilly reception in China on first Japan leader visit since 2019",
-   "desc": "Takaichi received a subdued welcome on her trip to attend the APEC summit, as Beijing shows limited appetite for repairing ties strained by Taiwan dispute.",
-   "url": "https://www.cnbc.com/2026/11/19/japan-china-trump-takaichi-taiwan-.html",
-   "at": "2026-11-19T07:38:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Musk accuses Zelenskyy of lying about Starshield restrictions in Ukraine",
-   "desc": "Elon Musk was asked about Zelenskyy claims over the Starshield network, and he said, \"I don't want to blow your mind, but Zelenskyy is not always truthful.\"",
-   "url": "https://www.cnbc.com/2026/11/19/elon-musk-zelenskyy-starshield-ukraine.html",
-   "at": "2026-11-19T06:07:29+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Costco sees surge in panic buying after tech outages, report says",
-   "desc": "Costco shoppers are stocking up on emergency items following a string of tech snafus, according to a Wall Street analyst.",
-   "url": "https://www.cbsnews.com/news/costco-panic-buying-tech-outages-generators/",
-   "at": "2026-11-19T03:49:51+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fight Over Deportation Protections for Venezuelans Escalates With Request to Supreme Court",
-   "desc": "The justices previously allowed the Trump administration to lift protections for Venezuelans covered by the program known as Temporary Protected Status.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/supreme-court-trump-deportation-venezuelans.html",
-   "at": "2026-11-19T03:27:28+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "What to know about Trump's meeting with Xi in China",
-   "desc": "President Trump is holding a high-stakes meeting with Chinese President Xi Jinping on Thursday against the backdrop of a widening scandal.",
-   "url": "https://www.cbsnews.com/news/trump-xi-meet-china-chips-ai/",
-   "at": "2026-11-19T03:18:55+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Alaska Republican Narrowly Defeats Independent House Candidate",
-   "desc": "Representative Nick Begich III overcame an independent challenger in a year in which Democrats made historic gains but third-party candidates had little success.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/alaska-nick-begich-wins-house-race.html",
-   "at": "2026-11-19T03:14:28+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "With Alaska’s Senate Vote Counted, What Comes Next in the Last Frontier?",
-   "desc": "The race is scheduled to be certified next week, but the Justice Department is investigating after Republicans lodged cheating allegations against the eventual winner, Mary Peltola.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/alaska-senate-count.html",
-   "at": "2026-11-19T02:58:29+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Obama Tells Incoming House Democrats to Keep Up Outreach in Red Areas",
-   "desc": "The former president told the newly elected lawmakers that the country was going through a moment of “generational change.” He also praised Representative Hakeem Jeffries, the likely next speaker.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/barack-obama-house-democrats.html",
-   "at": "2026-11-19T02:54:48+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Widespread Tech Outages Put Focus on Trump’s National Security Cuts",
-   "desc": "Lawmakers and cyberdefense experts said diminished staffing at the Cybersecurity and Infrastructure Security Agency and National Security Council could be hobbling the administration’s response.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/tech-outages-trump-national-security.html",
-   "at": "2026-11-19T01:16:32+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Intel signs first external customer for advanced 18A chips",
-   "desc": "Intel CEO Lip-Bu Tan said Wednesday that the company signed its first outside customer for its 18A chips.",
-   "url": "https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html",
-   "at": "2026-11-19T01:05:25+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Microsoft CEO Satya Nadella calls Outlook outage a 'perfect storm.' Here's what went wrong",
-   "desc": "Microsoft shares have dropped nearly 9% since closing at a record high on Nov. 4.",
-   "url": "https://www.cnbc.com/2026/11/18/microsoft-put-the-ai-threat-to-software-behind-it-then-came-the-outage.html",
-   "at": "2026-11-19T00:18:28+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/18: CBS Evening News",
-   "desc": "Trump to meet with Xi and Putin; Severe flooding hits Florida.",
-   "url": "https://www.cbsnews.com/video/111826-cbs-evening-news/",
-   "at": "2026-11-18T23:30:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Weighs New Strikes on Iran as Israel Presses for Action, Officials Say",
-   "desc": "Warnings that Iran is rebuilding its missile stockpile and advancing biological and chemical programs have divided the Trump administration.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-israel-iran-war.html",
-   "at": "2026-11-18T23:13:05+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Judge Extends Block on Building Trump’s Triumphal Arch",
-   "desc": "Judge Tanya Chutkan barred the government from beginning work on the project for another two weeks.",
-   "url": "https://www.nytimes.com/2026/11/18/us/politics/judge-block-trump-arch.html",
-   "at": "2026-11-18T22:34:26+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Cornyn blocks Trump's nominee to federal district court in Texas",
-   "desc": "President Trump nominated T. Elliot Gaiser, who heads the Justice Department's Office of Legal Counsel, to serve on the U.S. district court in the Dallas area.",
-   "url": "https://www.cbsnews.com/news/john-cornyn-trump-elliot-gaiser-justice-department-federal-judge/",
-   "at": "2026-11-18T21:50:00+00:00"
   }
  ]
 }

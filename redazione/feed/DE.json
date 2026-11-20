@@ -1,13 +1,76 @@
 {
  "code": "DE",
- "asOf": "2026-11-19T21:17:33+00:00",
+ "asOf": "2026-11-20T05:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "COP31 in Antalya: Weltklimakonferenz – doch kein fossiler Ausstieg?",
+   "desc": "Heute endet die 31. Weltklimakonferenz in Antalya. Was steht im Entwurf der Abschlusserklärung? Und noch viel wichtiger: Was nicht? Und: Andy Burnhams Brexit-Umkehr",
+   "url": "https://www.zeit.de/politik/2026-11/cop31-antalya-weltklimakonferenz-abschluss-nachrichtenpodcast",
+   "at": "2026-11-20T05:00:15+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Klimakonferenz endet, Jugend demonstriert, Bundesrat beschließt digitale Geldbörse",
+   "desc": "In Antalya dümpelt die Klimakonferenz ihrem Ende entgegen. In ganz Deutschland wollen junge Leute protestieren. Und mit dem Smartphone soll bald vieles viel einfacher gehen. Das ist die Lage am Freitagmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-klimakonferenz-endet-jugend-demonstriert-bundesrat-beschliesst-digitale-geldboerse-a-aedaefe0-00a1-4105-8774-4a5de8dde5f4",
+   "at": "2026-11-20T04:43:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Geld in der US-Politik: Der Angriff auf »big money«",
+   "desc": "Elon Musk und andere Tech-Milliardäre sind gewohnt, mit ihren Spenden sogar Wahlergebnisse kaufen zu können. Das wollen die Demokraten ändern. Aber es gibt Hürden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/us-politik-geld-midterms-demokraten",
+   "at": "2026-11-20T04:23:50+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Donald Trump: Richter lässt Trumps Milliarden-Klage gegen »New York Times« zu",
+   "desc": "Der US-Präsident verlangt von der »New York Times« und Penguin Random House 15 Milliarden US-Dollar. Er wirft Journalisten Verleumdung im Wahlkampf 2024 vor.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-klage-new-york-times-penguin-random-house-verleumdung",
+   "at": "2026-11-20T04:10:21+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "In Dutzenden Städten: Jugendproteste in ganz Deutschland",
+   "desc": "In Dutzenden Städten sind Proteste angekündigt. Unter anderem die Bundesschülerkonferenz, \"Schulstreik gegen die Wehrpflicht\", \"Gen Z regelt\" und Fridays For Future haben heute bundesweit zu Demonstrationen aufgerufen.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-110.html",
+   "at": "2026-11-20T03:16:02+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "USA: Trumps Cyberdirektor verlässt Posten nach Technik-Pannen",
+   "desc": "Nach Ausfällen bei Flugaufsicht und Banken tritt Trumps Cyberberater Sean Cairncross zurück. Nachfolgerin soll Kirsten Davies aus dem Verteidigungsministerium werden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/sean-cairncross-nationaler-cyber-direktor-weisses-haus-rucktritt",
+   "at": "2026-11-20T02:54:44+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Verteidigungsabkommen mit Polen: Boris Pistorius will Militärpakt mit Polen ausbauen",
+   "desc": "In Warschau kündigt der Verteidigungsminister mehr Kooperation in der Rüstungsindustrie an. Nach seinem Besuch in Auschwitz warnt Pistorius vor Rechtsextremen in Europa.",
+   "url": "https://www.zeit.de/politik/2026-11/verteidigungsabkommen-polen-deutschland-russland-nato-ostflanke",
+   "at": "2026-11-19T23:33:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Irankrieg: USA beziffern Kriegskosten auf fast 50 Milliarden Dollar",
    "desc": "Für die im Iran eingesetzten Waffen sowie deren Ersatz gaben die USA 48 Milliarden Dollar aus. Beschränkung von Trumps Kriegsbefugnissen scheitert im Senat. Das Liveblog",
    "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-19T20:51:03+00:00"
+   "at": "2026-11-19T23:29:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Haiti: Polizei in Haiti tötet 34 mutmaßliche Bandenmitglieder",
+   "desc": "In Port-au-Prince haben Sicherheitskräfte im Kampf gegen Verbrecherbanden mehrere Verdächtige getötet. Menschenrechtsorganisationen warnen vor einer Eskalation in Haiti.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/haiti-banden-martissant-port-au-prince",
+   "at": "2026-11-19T22:16:27+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Elon Musk: Donald Trump warnt Musk vor Distanzierung von der Maga-Bewegung",
+   "desc": "Elon Musk hat sich nach den Midterms von seiner Unterstützung für die Republikaner distanziert. »Wenn Leute davon abweichen, läuft es für sie nicht so gut«, sagt Trump.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/elon-musk-maga-donald-trump-midterms-spenden",
+   "at": "2026-11-19T21:48:24+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -94,27 +157,6 @@
    "at": "2026-11-19T16:59:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Treffen in China: Xi, Trump und Putin erklären der Welt … den Frieden?",
-   "desc": "Erstmals haben sich die Staatschefs der drei größten Atommächte getroffen. Was das für die Welt heißt. Und: IGH stuft Myanmars Verbrechen an den Rohingya als Genozid ein.",
-   "url": "https://www.zeit.de/politik/2026-11/treffen-china-usa-russland-nachrichtenpodcast",
-   "at": "2026-11-19T16:41:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Schwarz-rote Koalition: »Der Kanzler saß oben allein und hat Chips gegessen«",
-   "desc": "Trotz Zwist über die Stromsteuer ist die Koalition gerettet – vorerst. Nicht nur der Haushalt lastet schwer auf ihr. Wie angezählt sind Kanzler und Vize tatsächlich?",
-   "url": "https://www.zeit.de/politik/2026-11/schwarz-rote-koalition-stromsteuer-bundeshaushalt-politikpodcast",
-   "at": "2026-11-19T16:12:09+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Weimarer Dreieck: Deutschland, Frankreich und Polen wollen Infrastruktur besser schützen",
-   "desc": "Cyberangriffe und Sabotage bedrohen Europas Verkehrsnetze. Deutschland will mit zwei Nachbarstaaten enger zusammenarbeiten und wichtige Verbindungen besser schützen.",
-   "url": "https://www.zeit.de/politik/2026-11/weimarer-dreieck-verkehrsminister-infrastruktur-resilienz-hybride-bedrohungen",
-   "at": "2026-11-19T16:01:34+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Wie Parteien die »GTA 6«-Veröffentlichung für peinliche Eigenwerbung nutzen",
    "desc": "Die Politik bespielt den »GTA«-Release und verknüpft ihn im Netz mit Selbstlob, Häme und Feminismus. Die wenigsten Beiträge sind originell, aber die Parteien haben längst einen virtuellen Streetfight begonnen.",
@@ -122,39 +164,11 @@
    "at": "2026-11-19T15:48:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "FDP: »Es ist daher zu klären, wo die neuen Wähler zu finden sind«",
-   "desc": "Die FDP möchte sich nach vielen Niederlagen neu erfinden. Aber so einfach ist das nicht. Das zeigen interne Papiere, die der ZEIT vorliegen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/fdp-partei-strategie-waehlerpotenzial",
-   "at": "2026-11-19T15:33:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wladimir Putin beim Dreiergipfel: Und am Ende steht er mit leeren Händen da",
-   "desc": "Der Gipfel in China sollte ein großer Triumph für Wladimir Putin werden. Doch Russland befindet sich nicht in der Position, die internationale Ordnung neu zu schreiben.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wladimir-putin-dreiergipfel-china-donald-trump-xi-jinping",
-   "at": "2026-11-19T15:22:58+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wladimir Putin beim Dreiergipfel: Und am Ende steht er mit leeren Händen da",
-   "desc": "Der Gipfel in China sollte ein großer Triumph für Wladimir Putin werden. Doch Russland befindet sich nicht in der Position, die internationale Ordnung neu zu schreiben.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wladimir-putin-dreiergipfel-china-donald-trump-xi-jinping",
-   "at": "2026-11-19T15:22:58+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Jürgen Chrobog: Ex-Diplomat ist tot",
    "desc": "Er führte Verhandlungen zur Freilassung von Geiseln in der Sahara, später wurden er und seine Familie selbst im Jemen entführt: Der frühere Topdiplomat Jürgen Chrobog ist im Alter von 86 Jahren gestorben.",
    "url": "https://www.spiegel.de/politik/deutschland/juergen-chrobog-ex-diplomat-ist-tot-a-47ab9194-2d87-47d6-b944-49c48ce7d098",
    "at": "2026-11-19T15:06:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Wladimir Putin schlägt Treffen mit Vertretern Europas in Moskau vor",
-   "desc": "Auf Forderungen nach einer Beteiligung Europas an Ukraine-Gesprächen reagiert Putin mit einer Einladung nach Moskau. Wem die Einladung konkret gilt, ließ er offen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/putin-donald-trump-xi-jinping-shenzhen-ukraine-gipfel",
-   "at": "2026-11-19T14:54:50+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -225,20 +239,6 @@
    "desc": "US-Präsident Trump trifft in China auch Russlands Machthaber Putin und will über die Ukraine reden. In Berlin versammelt Kanzler Merz die Unterstützer des angegriffenen Landes. Die Botschaft: keine Deals zulasten Kyjiws oder der Europäer.",
    "url": "https://www.spiegel.de/politik/deutschland/ukraine-krieg-friedrich-merz-empfaengt-zum-gegengipfel-in-berlin-a-35a421cf-63a1-4e57-a38a-1bd3dde077b7",
    "at": "2026-11-19T05:56:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Trump trifft Xi und Putin, Merz empfängt Koalition der Willigen, Anthropic geht an die Börse",
-   "desc": "In Shenzhen sitzen Trump, Xi und Putin beisammen. In Berlin lädt der Kanzler zur großen Gegenveranstaltung. Und in New York geht der KI-Anbieter Anthropic an die Börse. Das ist die Lage am Donnerstagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-trump-trifft-xi-und-putin-merz-empfaengt-koalition-der-willigen-anthropic-geht-an-die-boerse-a-4c15941b-08a7-4b39-ae47-deaa8acdefb3",
-   "at": "2026-11-19T04:51:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Frauke Brosius-Gersdorf im SPIEGEL-Talk: »Herr Spahn und ich sind aus den gleichen Gründen gescheitert«",
-   "desc": "Sie wollte Verfassungsrichterin werden und wurde Ziel einer Kampagne: Hier spricht Frauke Brosius-Gersdorf über Entschuldigungen aus der Union, Hürden für ein AfD-Verbot und die Vergesellschaftung großer Wohnungskonzerne.",
-   "url": "https://www.spiegel.de/politik/deutschland/frauke-brosius-gersdorf-im-spiegel-talk-herr-spahn-und-ich-sind-aus-den-gleichen-gruenden-gescheitert-a-421fd180-53be-4018-822e-af20b3567893",
-   "at": "2026-11-18T22:50:00+00:00"
   }
  ]
 }

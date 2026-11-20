@@ -1,7 +1,42 @@
 {
  "code": "ES",
- "asOf": "2026-11-20T07:17:35+00:00",
+ "asOf": "2026-11-20T09:17:35+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "Política",
+   "desc": "Teresa Jiménez-Becerril sustituye a Ángel Gabilondo, cuyo mandato finalizó el miércoles. La ministra Ana Redondo pide su dimisión Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/20/6b000749fc6c83d7128b459b.html",
+   "at": "2026-11-20T09:04:02+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Sucesos",
+   "desc": "El fuego se produjo, por causas que se desconocen, en una vivienda situada en la calle Plaza Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/20/6b0006effc6c83e91f8b4596.html",
+   "at": "2026-11-20T08:49:47+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El cara a cara Sánchez-Feijóo, en frases: de \"el PIB no se come\" al \"perdón a las víctimas de los accidentes ferroviarios\"",
+   "desc": "CRÓNICA | Feijóo apeló a la \"decencia\" y a la gestión ante un Sánchez que pidió \"no retroceder\".",
+   "url": "https://www.20minutos.es/nacional/cara-cara-sanchez-feijoo-frases-pib-no-se-come-perdon-las-victimas-los-accidentes-ferroviarios_7063483_0.html",
+   "at": "2026-11-20T08:23:13+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El PP da los buenos días con una foto de Feijóo paseando a un perro en un guiño a Sánchez tras el debate cara a cara",
+   "desc": "El PP hace una referencia implícita al mote de 'Perro Sanxe' tras el debate entre Feijóo y Sánchez.",
+   "url": "https://www.20minutos.es/nacional/pp-da-los-buenos-dias-con-una-foto-feijoo-paseando-un-perro_7063477_0.html",
+   "at": "2026-11-20T08:17:56+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Putin cumple su amenaza a Ucrania: al menos tres muertos en un \"ataque masivo\" contra Kiev que daña tres puentes",
+   "desc": "El bombardeo ruso es la respuesta de Putin a los ataques ucranianos contra el puente de Crimea.",
+   "url": "https://www.20minutos.es/nacional/putin-cumple-su-amenaza-ucrania-menos-tres-muertos-un-ataque-masivo-contra-kiev-que-dana-tres-puentes_7063446_0.html",
+   "at": "2026-11-20T07:24:20+00:00"
+  },
   {
    "source": "20minutos",
    "title": "Mi partido político",
@@ -200,24 +235,10 @@
   },
   {
    "source": "20minutos",
-   "title": "Un acertante de La Primitiva gana más de un millón de euros",
-   "desc": "En el próximo sorteo, un único ganador de Primera Categoría con Categoría Especial podría ganar 2.300.000 euros.",
-   "url": "https://www.20minutos.es/nacional/un-acertante-primitiva-gana-mas-un-millon-euros_7063403_0.html",
-   "at": "2026-11-19T21:41:41+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "\"Ábalos, Jessica, orgías...\": el momento en que Feijóo enumera los escándalos del PSOE y pide para España un \"presidente decente\"",
    "desc": "El líder del PP ha arrancado el debate electoral valorando la legislatura del PSOE, en la que ha mencionado algunas de las polémicas que han rodeado al partido socialista.",
    "url": "https://www.20minutos.es/nacional/abalos-jessica-orgias-momento-que-feijoo-enumera-los-escandalos-psoe-pide-para-espana-un-presidente-decente_7063401_0.html",
    "at": "2026-11-19T21:33:18+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "España pide una regulación flexible para incorporar los aerotaxis, los drones y la inteligencia artificial al transporte aéreo",
-   "desc": "El Gobierno defiende que la llegada de estas tecnologías debe ir acompañada de mecanismos de control que garanticen la seguridad.",
-   "url": "https://www.20minutos.es/nacional/espana-pide-una-regulacion-flexible-para-incorporar-los-aerotaxis-los-drones-inteligencia-artificial-transporte-aereo_7063398_0.html",
-   "at": "2026-11-19T21:21:34+00:00"
   },
   {
    "source": "20minutos",
@@ -234,18 +255,18 @@
    "at": "2026-11-19T20:22:55+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Así ha sido la llegada al cara a cara de Sánchez y Feijóo, uno de los debates más esperados del 29N",
-   "desc": "El debate dará comienzo a las 22.00 horas y este encuentro es el único cara a cara previsto entre los dos principales candidatos para las elecciones del 29N.",
-   "url": "https://www.20minutos.es/nacional/asi-ha-sido-llegada-cara-cara-sanchez-feijoo-uno-los-debates-mas-esperados-29n_7063372_0.html",
-   "at": "2026-11-19T19:49:12+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Tribunales",
    "desc": "El ex magistrado del Constitucional recibe el Premio Pelayo y pide ante Conde-Pumpido acabar con el \"mero reparto por cuotas políticas\" en la designación del TC Leer",
    "url": "https://www.elmundo.es/espana/2026/11/19/6aff47a7fc6c833b218b45ab.html",
    "at": "2026-11-19T19:31:19+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "El primer cruce",
+   "desc": "No se puede negar que Puigdemont es un fanático: tiene sus creencias y las defiende con tenacidad Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6aff2ce7fdddff42268b45d8.html",
+   "at": "2026-11-19T19:07:44+00:00"
   },
   {
    "source": "El Mundo",

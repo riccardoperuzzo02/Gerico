@@ -305,6 +305,10 @@ def cmd_controlla(db=DB, quiet=False):
             if tt:
                 problems.append(f"{where}.{k}: nomina come fonte {', '.join(tt)} (le testate stanno solo nel piè di pagina: "
                                 "attribuisci alla fonte primaria, vedi STILE DI GERICO)")
+        # le formule da schema che si notano subito (redazione/stile.md, LINGUA)
+        formule = re.findall(r"(?:^|\n\n|\. )(Conta perch[eé]|[ÈE] importante perch[eé]|La notizia è rilevante perch[eé]|Questo significa che)", str(s.get("article") or ""))
+        if formule:
+            problems.append(f"{where}.article: comincia una frase con «{formule[0]}»: la portata si dice con i fatti, senza annunciarla (STILE DI GERICO)")
         # gli sviluppi di un giorno nuovo sono storie nuove con prev (SVILUPPI DI UN GIORNO NUOVO)
         fs, up = parse_time(s.get("firstSeen")), parse_time(s.get("updated"))
         h0 = (s.get("history") or [{}])[0] if isinstance((s.get("history") or [{}])[0], dict) else {}

@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-20T15:17:34+00:00",
+ "asOf": "2026-11-20T17:17:34+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Brexit, EU, Großbritannien, Gender-Pay-Gap, Gehalt, Frauen, Gen Z regelt",
+   "desc": "Großbritanniens Premier Andy Burnham tastet sich an die EU heran. Frauen in Europa arbeiten den Rest des Jahres quasi umsonst. Und: Die Gen Z geht wieder auf die Straße. Das ist die Lage am Freitagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-brexit-eu-grossbritannien-gender-pay-gap-gehalt-frauen-gen-z-regelt-a-36f1b0f0-e6db-4398-b6be-d3a36d98604d",
+   "at": "2026-11-20T17:12:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Wladimir Putin: Ja, natürlich will er reden. Aber nicht bloß über die Ukraine.",
+   "desc": "Die Einladung Putins an die Europäer klingt nach Dialog. Dahinter verbirgt sich jedoch eine Reihe unannehmbarer Forderungen des Kremls. Wie kommt man da wieder raus?",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/wladimir-putin-europa-ukraine-einladung-sicherheitsarchitektur-trump",
+   "at": "2026-11-20T17:07:08+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "SPD-Landeschef Steffen Krach: Der Buhmann von Berlin",
+   "desc": "Der Sozialdemokrat Steffen Krach hat die Wahl in der Hauptstadt verloren, seine Fraktion ist gespalten. Nun muss er eine Koalition verhandeln, die hochrangige SPD-Leute ablehnen. Warum tut er sich das an?",
+   "url": "https://www.spiegel.de/politik/deutschland/spd-landeschef-steffen-krach-der-buhmann-von-berlin-a-c4658a19-bf41-4f07-a323-e689049b10f2",
+   "at": "2026-11-20T16:47:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Gen Z regelt: Jugendliche protestieren für Bildung, Klima und bezahlbares Leben",
+   "desc": "Es geht um Bildung, Wehrpflicht, bezahlbares Leben, Klima: Tausende Jugendliche demonstrieren in vielen deutschen Städten. Eindrücke aus Berlin.",
+   "url": "https://www.spiegel.de/politik/deutschland/gen-z-regelt-jugendliche-protestieren-fuer-bildung-klima-und-bezahlbares-leben-a-e88fe963-e880-4004-9043-c7d84ca70e6e",
+   "at": "2026-11-20T16:32:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Pistorius in Polen: Eine Reise im Zeichen der Erinnerungsarbeit",
+   "desc": "Deutschland und Polen wollen mehr Verantwortung für die Sicherheit in Europa übernehmen. Bei seiner Polen-Reise erinnert Verteidigungsminister Pistorius an die deutsche Verantwortung für die Vergangenheit. Von C. Buckenmaier.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/pistorius-polen-gedenken-100.html",
+   "at": "2026-11-20T16:22:44+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Manuela Schwesig wird an der Galle operiert",
+   "desc": "Manuela Schwesig wird kommende Woche keine Termine wahrnehmen. Die SPD-Politikerin muss sich einer Operation unterziehen. Sie habe mit dem Eingriff bis nach der Regierungsbildung in Mecklenburg-Vorpommern gewartet.",
+   "url": "https://www.spiegel.de/politik/deutschland/manuela-schwesig-wird-an-der-galle-operiert-a-9b402c57-fbbd-426f-8fda-ea2a869fdc60",
+   "at": "2026-11-20T16:20:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Schülerproteste: Die Gen Z protestiert weiter – wie berechtigt sind ihre Forderungen?",
+   "desc": "Im ganzen Land demonstrieren junge Menschen für eine bessere Zukunft. Doch ist ihr Frust berechtigt? Und: Russische Marschflugkörper stürzen in Polen ab.",
+   "url": "https://www.zeit.de/politik/2026-11/schuelerproteste-gen-z-regelt-jugend-zukunft-nachrichtenpodcast",
+   "at": "2026-11-20T16:05:08+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Prien verteidigt Kürzungen bei \"Demokratie leben!\"",
+   "desc": "Bundesfamilienministerin Prien weist gegenüber dem ARD-Hauptstadtstudio den Vorwurf zurück, bei Projekten gegen Antisemitismus zu sparen. Dennoch verlören einzelne Projekte die Förderung. Von Sarah Beham und Markus Langenstraß.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/prien-demokratiefoerderung-100.html",
+   "at": "2026-11-20T15:49:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Jemen: Militärkoalition greift erneut Ziele der Huthi-Miliz im Jemen an",
+   "desc": "Das von Saudi-Arabien geführte Militärbündnis hat Ziele in mehreren Städten im Jemen angegriffen. Die Huthi-Miliz feuert Drohnen und Raketen in Richtung Saudi-Arabien.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/saudi-arabien-huthi-jemen-angriffe-hudaida-zivilisten",
+   "at": "2026-11-20T15:49:25+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Bundesrat stoppt \"Startchancengesetz\" vorerst",
@@ -74,6 +137,13 @@
   },
   {
    "source": "Die Zeit",
+   "title": "Deutsche Bank: Koalitionspolitiker fordern nach Datenleck Reform der Erbschaftsteuer",
+   "desc": "Das Datenleck der Deutschen Bank zeigt, wie die Erbschaftsteuer legal umgangen wird. Es sei ein »Skandal mit Ansage«, sagt SPD-Generalsekretär Klüssendorf.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/deutsche-bank-datenleck-erbschaftsteuer-schenkungssteuer-ausnahmen-gxe",
+   "at": "2026-11-20T12:40:12+00:00"
+  },
+  {
+   "source": "Die Zeit",
    "title": "Gipfel von EU und Großbritannien: EU und Großbritannien wollen wieder enger zusammenarbeiten",
    "desc": "Der britische Premierminister Andy Burnham hofft, mit einer Wiederannäherung an die EU die britische Wirtschaft anzukurbeln. Sie teilten gemeinsame Werte und Interessen.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/eu-grossbritannien-brexit-lebensmittelhandel-jugendmobilitaet-gxe",
@@ -113,34 +183,6 @@
    "desc": "Russland hat drei Brücken in Kyjiw bombardiert. Ukrainische Atomkraftwerke müssen nach Attacken auf Eniergieanlagen ihre Stromproduktion drosseln.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/raketenangriffe-kyjiw-lwiw-infrastruktur-wladimir-putin-gxe",
    "at": "2026-11-20T11:03:13+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Frühstartrente: Bundesrat beschließt Frühstartrente für Kinder",
-   "desc": "Nach der Zustimmung des Bundesrats startet die Frühstartrente rückwirkend zum 1. Januar. Alle Sechsjährigen bekommen ein staatlich gefördertes Depot zur Altersvorsorge.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/fruehstartrente-kinder-altersvorsorge-kapital-gedeckte-rente-gxe",
-   "at": "2026-11-20T10:41:43+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Ulrich Siegmund: Die neue Taktik der AfD: Überrumpelung",
-   "desc": "Die AfD in Sachsen-Anhalt zieht die Wahl zum Ministerpräsidenten vor. Doch wie Ulrich Siegmund ins Amt kommen will, weiß niemand so recht. Wohl nicht einmal er selbst.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/ulrich-siegmund-afd-sachsen-anhalt-ministerpraesident-landesregierung",
-   "at": "2026-11-20T10:21:21+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Verteidigungsminister in Polen: Ein Mann weist den Weg",
-   "desc": "Langsam schließt auch die SPD Deutschlands beliebtesten Politiker ins Herz: Boris Pistorius wird zum Kompass für eine Partei, die nicht mehr weiß, wofür sie stehen soll.",
-   "url": "https://www.zeit.de/politik/2026-11/boris-pistorius-verteidigungsminister-polen-auschwitz-mahnung",
-   "at": "2026-11-20T09:55:41+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Urteil des Internationalen Gerichtshofs: Myanmar weist Völkermordurteil der UN als »ungerecht« zurück",
-   "desc": "Das Urteil des Internationalen Gerichtshofs zu Myanmars Verantwortung für den Völkermord an den Rohingya stößt in dem Land auf Kritik. Die Regierung nannte es ungerecht.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/internationaler-gerichtshof-myanmar-rohingya-voelkermord-gxe",
-   "at": "2026-11-20T09:15:19+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -246,20 +288,6 @@
    "desc": "Große Inszenierung, wenig Ergebnisse: Xi, Trump und Putin zelebrieren ihren historischen Gipfel. Der Kanzler kontert mit einem Aufmarsch der Ukraineunterstützer. Und: Wie gut ist »GTA 6«? Das ist die Lage am Donnerstagabend.",
    "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-gipfel-mit-xi-putin-und-trump-ukraine-unterstuetzer-in-berlin-gta-6-a-9c7016e8-931c-4e2e-988f-9a72b168b248",
    "at": "2026-11-19T17:33:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Niedersachsen: SPD-Justizministerin Kathrin Wahlmann tritt zurück",
-   "desc": "Hat Kathrin Wahlmann Einfluss auf ein Verfahren gegen einen korrupten Staatsanwalt genommen? Niedersachsens Justizministerin stand zuletzt unter Druck, konnte Vorwürfe nicht entkräften. Nun legt die SPD-Politikerin ihr Amt nieder.",
-   "url": "https://www.spiegel.de/politik/deutschland/niedersachsen-spd-justizministerin-kathrin-wahlmann-tritt-zurueck-a-21bfe8d2-63a7-46c0-9aad-ec1df55bbf7e",
-   "at": "2026-11-19T16:59:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Wie Parteien die »GTA 6«-Veröffentlichung für peinliche Eigenwerbung nutzen",
-   "desc": "Die Politik bespielt den »GTA«-Release und verknüpft ihn im Netz mit Selbstlob, Häme und Feminismus. Die wenigsten Beiträge sind originell, aber die Parteien haben längst einen virtuellen Streetfight begonnen.",
-   "url": "https://www.spiegel.de/politik/deutschland/wie-parteien-die-gta-vi-veroeffentlichung-fuer-peinliche-eigenwerbung-nutzen-a-eccd751d-83c4-4ef9-8998-ab247a449bf2",
-   "at": "2026-11-19T15:48:00+00:00"
   }
  ]
 }

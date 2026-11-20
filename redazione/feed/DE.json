@@ -1,7 +1,63 @@
 {
  "code": "DE",
- "asOf": "2026-11-20T13:17:34+00:00",
+ "asOf": "2026-11-20T15:17:34+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Bundesrat stoppt \"Startchancengesetz\" vorerst",
+   "desc": "Der Bundesrat will beim \"Startchancengesetz\" nachbessern. Für andere lebensnahe Vorhaben wie die \"Frühstartrente\", die Reform der Notfallversorgung oder die digitale Brieftasche gab die Länderkammer hingegen grünes Licht.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bundesrat-startchancengesetz-fruehstartrente-notfallreform-100.html",
+   "at": "2026-11-20T15:03:38+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Kritik an Ausnahmen bei Erbschaftsteuer nach Recherchen über Döpfner-Schenkung",
+   "desc": "Springer-Chef Döpfner hat im Jahr 2020 von Verlegerin Friede Springer ein Milliarden-Aktienpaket übertragen bekommen - aber wohl kaum Schenkungsteuern gezahlt. Politiker von SPD und CDU fordern nun Änderungen.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/doepfner-erbschaftssteuer-100.html",
+   "at": "2026-11-20T14:58:12+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Jugendliche erneut zu Tausenden auf den Straßen",
+   "desc": "Die Generation Z demonstriert wieder: Junge Menschen gehen bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen. Einige Kundgebungen begannen am Mittag, andere sollen am Abend folgen.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-114.html",
+   "at": "2026-11-20T14:47:44+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russische Marschflugkörper stürzen in Polen ab",
+   "desc": "Bei russischen Luftangriffen auf die Ukraine sind offenbar zwei Marschflugkörper und eine Drohne auf polnischem Gebiet abgestürzt. Polen spricht von einer »Provokation«.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-raketen-luftraumverletzung-polen-ukraine-gxe",
+   "at": "2026-11-20T14:44:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Hendrik Wüst: Schluss mit Rumpelstilzchen",
+   "desc": "Hendrik Wüst setzt als neuer Bundesratspräsident auf Kompromiss statt Lautstärke. Die Kritik an Bundeskanzler Friedrich Merz ist bei seinem Auftritt kaum zu überhören.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/hendrik-wuest-bundesrat-friedrich-merz",
+   "at": "2026-11-20T14:33:11+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "AfD in Sachsen-Anhalt: Was steckt hinter Ulrich Siegmunds neuem Wahlplan?",
+   "desc": "AfD-Mann Ulrich Siegmund will die Wahl zum Ministerpräsidenten im Landtag von Sachsen-Anhalt um eine Woche vorverlegen. Dafür gibt es vor allem einen Grund.",
+   "url": "https://www.spiegel.de/politik/deutschland/afd-in-sachsen-anhalt-was-steckt-hinter-ulrich-siegmunds-neuem-wahlplan-a-8eade0e5-c554-4c1d-907a-e34c3845ac8f",
+   "at": "2026-11-20T13:43:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Verhandlungen im Ukrainekrieg: Worüber Russland und die Ukraine verhandeln",
+   "desc": "Annexion, Neutralität, Truppenstärke, Sicherheitsgarantien: So haben sich die Themen der russisch-ukrainischen Verhandlungen in fünf Jahren entwickelt. Eine Chronologie",
+   "url": "https://www.zeit.de/politik/ausland/2026-10/verhandlungen-ukraine-krieg-russland-politik-militaer-chronologie",
+   "at": "2026-11-20T13:42:13+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gesetzesreformen: Bundesrat billigt Reformen zu Führerschein, Cyberabwehr und Notfällen",
+   "desc": "Weniger Kosten beim Führerschein, Entlastung für Notaufnahmen: Der Bundesrat hat mehrere Gesetze gebilligt. Ein Vorhaben muss in den Vermittlungsausschuss. Der Überblick",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesrat-reformen-fuehrerschein-cyberabwehr-notfallversorgung-altersvorsorge-kinder-sprachtests-kitas-gxe",
+   "at": "2026-11-20T13:09:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Parlamentswahl in Spanien: Sánchez’ riskantes Pokerspiel",
@@ -11,24 +67,10 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russische Marschflugkörper stürzen in Polen ab",
-   "desc": "Bei russischen Luftangriffen auf die Ukraine sind offenbar zwei Marschflugkörper und eine Drohne auf polnischem Gebiet abgestürzt. Polen spricht von einer »Provokation«.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-raketen-luftraumverletzung-polen-ukraine-gxe",
-   "at": "2026-11-20T12:45:05+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Deutsche Bank: Union und SPD fordern nach Datenleck Reform der Erbschaftsteuer",
+   "title": "Deutsche Bank: Koalitionspolitiker fordern nach Datenleck Reform der Erbschaftsteuer",
    "desc": "Das Datenleck der Deutschen Bank zeigt, wie die Erbschaftsteuer legal umgangen wird. Es sei ein »Skandal mit Ansage«, sagt SPD-Generalsekretär Klüssendorf.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/deutsche-bank-datenleck-erbschaftsteuer-schenkungssteuer-ausnahmen-gxe",
    "at": "2026-11-20T12:40:12+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundesrat stoppt \"Startchancengesetz\" vorerst",
-   "desc": "Der Bundesrat will beim \"Startchancengesetz\" nachbessern. Für andere lebensnahe Vorhaben wie die \"Frühstartrente\", die Reform der Notfallversorgung oder die digitale Brieftasche gab die Länderkammer hingegen grünes Licht.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundesrat-startchancengesetz-fruehstartrente-notfallreform-100.html",
-   "at": "2026-11-20T12:36:45+00:00"
   },
   {
    "source": "Die Zeit",
@@ -115,13 +157,6 @@
    "at": "2026-11-20T08:11:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russland greift Brücken und Infrastruktur in Kyjiw an",
-   "desc": "Mindestens zwei Brücken in Kyjiw sind beschädigt, der Verkehr ist unterbrochen. Die nächtlichen schweren Angriffe Russlands töteten mindestens drei Menschen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-20T07:51:56+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "SPD: Franziska Giffey kritisiert progressiven Kurs ihrer eigenen Partei",
    "desc": "Die Berliner SPD-Politikerin Franziska Giffey geht mit ihrer eigenen Partei ins Gericht: Kritik übt die Wirtschaftssenatorin am Linkskurs der Sozialdemokraten, und sie warnt davor, Unternehmen als Feinde zu betrachten.",
@@ -136,25 +171,11 @@
    "at": "2026-11-20T06:50:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Hackerangriffe auf Infrastruktur: Wie uns Solarpanels besser vor Putin schützen könnten",
-   "desc": "Ein Blackout in der Ukraine und ein Stromnetz in Spanien zeigen: Dezentrale Energie kann unsere Sicherheit stärken. Solche Innovationen könnten auch Deutschland nützen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/hackerangriffe-infrastruktur-erneuerbare-energien-dezentrale-versorgung-5vor8",
-   "at": "2026-11-20T06:48:51+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "WG-Mieten steigen stark: Kann sich die Gen Z Wohnen noch leisten?",
    "desc": "Heute demonstrieren erneut junge Menschen unter dem Motto \"Gen Z regelt\". Es geht ihnen auch um ein bezahlbares Leben. Denn inzwischen entscheiden auch Mietpreise darüber, wer wo studieren kann. Von Alexander C. Mühlhausen.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/wg-zimmer-gen-z-proteste-wohnungskrise-100.html",
    "at": "2026-11-20T06:48:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Brexit: Zurück? Really?",
-   "desc": "Der britische Premier Andy Burnham hat die Brexitdebatte neu entfacht. Ist das wirklich klug von ihm? Im Land droht ihm harter Widerstand.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/brexit-debatte-andy-burnham-grossbritannien",
-   "at": "2026-11-20T06:45:53+00:00"
   },
   {
    "source": "Tagesschau",
@@ -239,20 +260,6 @@
    "desc": "Die Politik bespielt den »GTA«-Release und verknüpft ihn im Netz mit Selbstlob, Häme und Feminismus. Die wenigsten Beiträge sind originell, aber die Parteien haben längst einen virtuellen Streetfight begonnen.",
    "url": "https://www.spiegel.de/politik/deutschland/wie-parteien-die-gta-vi-veroeffentlichung-fuer-peinliche-eigenwerbung-nutzen-a-eccd751d-83c4-4ef9-8998-ab247a449bf2",
    "at": "2026-11-19T15:48:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Jürgen Chrobog: Ex-Diplomat ist tot",
-   "desc": "Er führte Verhandlungen zur Freilassung von Geiseln in der Sahara, später wurden er und seine Familie selbst im Jemen entführt: Der frühere Topdiplomat Jürgen Chrobog ist im Alter von 86 Jahren gestorben.",
-   "url": "https://www.spiegel.de/politik/deutschland/juergen-chrobog-ex-diplomat-ist-tot-a-47ab9194-2d87-47d6-b944-49c48ce7d098",
-   "at": "2026-11-19T15:06:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ina Scharrenbach: Mitarbeitende rechnen mit NRW-Heimatministerin ab",
-   "desc": "Ist die CDU-Politikerin eine schlechte Chefin? Ina Scharrenbach gilt als umstrittenstes Kabinettsmitglied in NRW. Dem SPIEGEL liegen jetzt Ergebnisse einer anonymen Mitarbeiterbefragung in dem Ministerium vor.",
-   "url": "https://www.spiegel.de/politik/deutschland/ina-scharrenbach-mitarbeitende-rechnen-mit-nrw-heimatministerin-ab-a-a59a3b1a-35c5-4a1b-8ea5-96e912fd2eae",
-   "at": "2026-11-19T13:31:00+00:00"
   }
  ]
 }

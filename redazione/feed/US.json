@@ -1,20 +1,48 @@
 {
  "code": "US",
- "asOf": "2026-11-20T05:17:35+00:00",
+ "asOf": "2026-11-20T07:17:35+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Photos, videos show devastating South Florida flooding",
+   "desc": "Significant flooding devastated some South Florida communities this week.",
+   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
+   "at": "2026-11-20T07:16:30+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "‘More than just a game’: How GTA VI’s blockbuster launch fuels a booming content economy",
+   "desc": "GTA VI’s blockbuster launch is creating a wider economy around livestreams, social clips and high-volume content farms as millions tune in to watch others play.",
+   "url": "https://www.cnbc.com/2026/11/20/gta-vi-launch-streaming-content-economy.html",
+   "at": "2026-11-20T07:08:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Beloved hippo Fiona dies days after swallowing hat",
+   "desc": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
+   "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
+   "at": "2026-11-20T06:57:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
+   "desc": "Iceland’s famed Blue Lagoon geothermal spa is going public in a $110 million IPO, tapping investor interest in tourism and the booming wellness industry.",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
+   "at": "2026-11-20T06:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AI is changing software engineering — and some developers miss the struggle",
+   "desc": "AI coding tools are making software engineers faster, but developers tell CNBC the work has lost its \"sense of joy and fun.\"",
+   "url": "https://www.cnbc.com/2026/11/20/ai-coding-tools-software-engineers.html",
+   "at": "2026-11-20T06:00:01+00:00"
+  },
   {
    "source": "CNBC",
    "title": "U.K.-India trade deal faces a stiff test over Scotch whisky import taxes",
    "desc": "In the global spirits markets, while the U.S., Europe, and China are facing volume contraction, India will add nearly 100 million consumers in the next five years.",
    "url": "https://www.cnbc.com/2026/11/20/uk-india-trade-scotch-whisky-tariffs.html",
    "at": "2026-11-20T05:09:52+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Anthropic IPO 'exactly what the markets need,' but analysts warn of volatility",
-   "desc": "The Anthropic IPO is \"what the markets need.\" However, analysts say its shares will be volatile in the coming weeks.",
-   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-stocks-market.html",
-   "at": "2026-11-20T04:51:28+00:00"
   },
   {
    "source": "CBS News",
@@ -221,13 +249,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Beloved hippo Fiona dies days after swallowing hat",
-   "desc": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
-   "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
-   "at": "2026-11-19T22:51:00+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Consumers stock doomsday pantries as tech outages cause jitters",
    "desc": "Companies such as Costco and Walmart are seeing a surge in sales for generators, canned goods and other disaster-preparedness staples.",
    "url": "https://www.cbsnews.com/news/doomsday-prepping-scenarios-walmart-costco-technology-outages/",
@@ -302,13 +323,6 @@
    "desc": "Anthropic raised a record $81.3 billion, catapulting it past SpaceX, which raised $75 billion​ when it went public in June.",
    "url": "https://www.cbsnews.com/news/anthropic-ipo-nasdaq-debut-claude-ai/",
    "at": "2026-11-19T21:18:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Photos, videos show devastating South Florida flooding",
-   "desc": "Significant flooding devastated some South Florida communities this week.",
-   "url": "https://www.cbsnews.com/news/photos-videos-devastating-south-florida-flooding-schools-closed-evacuations/",
-   "at": "2026-11-19T21:12:00+00:00"
   },
   {
    "source": "CNBC",
@@ -445,6 +459,13 @@
   },
   {
    "source": "CBS News",
+   "title": "Woman runs 7 marathons while pregnant this year: \"I am very stubborn\"",
+   "desc": "Deirdre Keane, a 38-year-old nurse and management consultant, achieved her goal of completing all seven World Marathon Majors while pregnant with her first child.",
+   "url": "https://www.cbsnews.com/news/deirdre-keane-world-marathon-majors-pregnant/",
+   "at": "2026-11-19T18:00:00+00:00"
+  },
+  {
+   "source": "CBS News",
    "title": "Putin says Russia won't negotiate with Ukraine after bridge strike",
    "desc": "Russian President Vladimir Putin said Russia will not negotiate any limited ceasefire now with Ukraine, citing a Ukrainian strike on a highly symbolic bridge this week.",
    "url": "https://www.cbsnews.com/news/putin-russia-ukraine-bridge-strike/",
@@ -493,11 +514,11 @@
    "at": "2026-11-19T17:03:11+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-   "desc": "The leaders of the U.S., China and Russia met in Shenzhen, China on Thursday for a rare trilateral gathering.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
-   "at": "2026-11-19T17:01:41+00:00"
+   "source": "CBS News",
+   "title": "Meet the 19 new senators set to be sworn in to Congress",
+   "desc": "From a former wheelchair basketball Paralympian to a Methodist pastor and one senator returning after defeat, the new class hails from different backgrounds and parts of the country.",
+   "url": "https://www.cbsnews.com/news/meet-the-new-senators-120th-congress/",
+   "at": "2026-11-19T16:58:00+00:00"
   },
   {
    "source": "CNBC",
@@ -577,13 +598,6 @@
    "at": "2026-11-19T12:26:01+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Denmark ratifies Trump security deal over Greenland after months of diplomatic tensions",
-   "desc": "It follows months of tensions after President Donald Trump repeatedly said the U.S. should take control of Greenland for national security reasons.",
-   "url": "https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html",
-   "at": "2026-11-19T12:02:08+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Incoming House majority leader Katherine Clark stresses Democratic unity",
    "desc": "As Democrats prepare to take control of the House, incoming majority leader Katherine Clark discusses the party's ambitious agenda and divisions within its ranks.",
@@ -606,9 +620,9 @@
   },
   {
    "source": "NPR",
-   "title": "Muslims will outnumber Christians worldwide by 2035, report says",
-   "desc": "By 2070, the Democratic Republic of the Congo will surpass the United States as the country with the largest total number of Christians.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2035-report-says",
+   "title": "Investors scramble for a piece of AI giant Anthropic in blockbuster IPO",
+   "desc": "Shares in the maker of the popular Claude artificial intelligence model leapt in first day of trading on the Nasdaq Thursday.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion",
    "at": "2026-11-19T10:00:00+00:00"
   }
  ]

@@ -1,7 +1,77 @@
 {
  "code": "DE",
- "asOf": "2026-11-20T05:17:35+00:00",
+ "asOf": "2026-11-20T07:17:35+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "SPD: Franziska Giffey kritisiert den progressiven Kurs ihrer eigenen Partei",
+   "desc": "Die Berliner SPD-Politikerin Franziska Giffey geht mit ihrer eigenen Partei ins Gericht: Kritik übt die Wirtschaftssenatorin am Linkskurs der Sozialdemokraten und warnt davor, Unternehmen als Feinde zu betrachten.",
+   "url": "https://www.spiegel.de/politik/deutschland/spd-franziska-giffey-kritisiert-den-progressiven-kurs-ihrer-eigenen-partei-a-fff8cf2f-d453-4cba-98d6-4c9b97650de8",
+   "at": "2026-11-20T07:15:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Masern in Deutschland: Karl Lauterbach warnt vor Impflücke",
+   "desc": "Die Vereinigten Staaten gelten offiziell nicht länger als masernfrei. Auch in Deutschland sei die Impfquote nicht ideal, mahnt Ex-Gesundheitsminister Lauterbach.",
+   "url": "https://www.spiegel.de/politik/deutschland/masern-in-deutschland-karl-lauterbach-warnt-vor-impfluecke-a-a6c307f8-5993-4965-810f-64b59e63265f",
+   "at": "2026-11-20T06:50:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Hackerangriffe auf Infrastruktur: Wie uns Solarpanels besser vor Putin schützen könnten",
+   "desc": "Ein Blackout in der Ukraine und ein Stromnetz in Spanien zeigen: Dezentrale Energie kann unsere Sicherheit stärken. Solche Innovationen könnten auch Deutschland nützen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/hackerangriffe-infrastruktur-erneuerbare-energien-dezentrale-versorgung-5vor8",
+   "at": "2026-11-20T06:48:51+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "WG-Mieten steigen stark: Kann sich die Gen Z Wohnen noch leisten?",
+   "desc": "Heute demonstrieren erneut junge Menschen unter dem Motto \"Gen Z regelt\". Es geht ihnen auch um ein bezahlbares Leben. Denn inzwischen entscheiden auch Mietpreise darüber, wer wo studieren kann. Von Alexander C. Mühlhausen.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/wg-zimmer-gen-z-proteste-wohnungskrise-100.html",
+   "at": "2026-11-20T06:48:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Brexit: Zurück? Really?",
+   "desc": "Der britische Premier Andy Burnham hat die Brexitdebatte neu entfacht. Ist das wirklich klug von ihm? Im Land droht ihm harter Widerstand.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/brexit-debatte-andy-burnham-grossbritannien",
+   "at": "2026-11-20T06:45:53+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russland greift Brücken und Infrastruktur in Kyjiw an",
+   "desc": "Mindestens zwei Brücken in Kyjiw sind beschädigt, der Verkehr ist unterbrochen. Die nächtlichen schweren Angriffe Russlands töteten mindestens drei Menschen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-20T06:43:07+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Jugendliche wollen wieder deutschlandweit protestieren",
+   "desc": "Die Generation Z demonstriert wieder: Heute gehen erneut junge Menschen für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straße. Ganz unterschiedliche Jugendbewegungen haben zu Protesten aufgerufen.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-110.html",
+   "at": "2026-11-20T06:42:49+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Irankrieg: USA beziffern Kriegskosten auf fast 50 Milliarden Dollar",
+   "desc": "Für die im Iran eingesetzten Waffen sowie deren Ersatz gaben die USA 48 Milliarden Dollar aus. Beschränkung von Trumps Kriegsbefugnissen scheitert im Senat. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
+   "at": "2026-11-20T06:39:53+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Erbschaftsteuer: CDU und SPD fordern schärfere Regeln für Steuerschlupflöcher",
+   "desc": "»Skandal mit Ansage«, »absurde Ausnahmen«: Neue Erkenntnisse über das Steuergeschenk für Springer-Chef Döpfner schrecken Koalitionspolitiker auf. Christ- und Sozialdemokraten fordern: Die Regeln müssen verschärft werden.",
+   "url": "https://www.spiegel.de/politik/deutschland/erbschaftsteuer-cdu-und-spd-fordern-schaerfere-regeln-fuer-steuerschlupfloecher-a-61bda154-e21b-4e27-b33b-d9d8433ea4d6",
+   "at": "2026-11-20T05:57:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "China und Deutschland: Wie gefährlich ist Pekings Spionage für die Bundesrepublik",
+   "desc": "China will zur größten Macht der Welt werden. Dafür sammelt Peking Informationen in Wirtschaft, Wissenschaft und Politik. Wie groß die Gefahr für Deutschland ist – und wie wir uns wehren können.",
+   "url": "https://www.spiegel.de/politik/deutschland/china-und-deutschland-wie-gefaehrlich-ist-pekings-spionage-fuer-die-bundesrepublik-a-1e42422e-9b9e-49c4-b43e-473fe7a343b5",
+   "at": "2026-11-20T05:16:00+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "COP31 in Antalya: Weltklimakonferenz – doch kein fossiler Ausstieg?",
@@ -31,13 +101,6 @@
    "at": "2026-11-20T04:10:21+00:00"
   },
   {
-   "source": "Tagesschau",
-   "title": "In Dutzenden Städten: Jugendproteste in ganz Deutschland",
-   "desc": "In Dutzenden Städten sind Proteste angekündigt. Unter anderem die Bundesschülerkonferenz, \"Schulstreik gegen die Wehrpflicht\", \"Gen Z regelt\" und Fridays For Future haben heute bundesweit zu Demonstrationen aufgerufen.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-110.html",
-   "at": "2026-11-20T03:16:02+00:00"
-  },
-  {
    "source": "Die Zeit",
    "title": "USA: Trumps Cyberdirektor verlässt Posten nach Technik-Pannen",
    "desc": "Nach Ausfällen bei Flugaufsicht und Banken tritt Trumps Cyberberater Sean Cairncross zurück. Nachfolgerin soll Kirsten Davies aus dem Verteidigungsministerium werden.",
@@ -50,13 +113,6 @@
    "desc": "In Warschau kündigt der Verteidigungsminister mehr Kooperation in der Rüstungsindustrie an. Nach seinem Besuch in Auschwitz warnt Pistorius vor Rechtsextremen in Europa.",
    "url": "https://www.zeit.de/politik/2026-11/verteidigungsabkommen-polen-deutschland-russland-nato-ostflanke",
    "at": "2026-11-19T23:33:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Irankrieg: USA beziffern Kriegskosten auf fast 50 Milliarden Dollar",
-   "desc": "Für die im Iran eingesetzten Waffen sowie deren Ersatz gaben die USA 48 Milliarden Dollar aus. Beschränkung von Trumps Kriegsbefugnissen scheitert im Senat. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-19T23:29:31+00:00"
   },
   {
    "source": "Die Zeit",
@@ -82,7 +138,7 @@
   {
    "source": "Die Zeit",
    "title": "Ukraine-Gipfel in Berlin: Sogar die USA loben Europa",
-   "desc": "Friedrich Merz empfängt die Ukraine-Unterstützer in Berlin. Die zeigen sich beeindruckt von der »Stärke« Europas. Ist das ein Wendepunkt im Ringen um Frieden?",
+   "desc": "Friedrich Merz empfängt die Ukraine-Unterstützer in Berlin. Die US-Vertreter zeigen sich beeindruckt von der Stärke Europas. Ist das ein Wendepunkt im Ringen um Frieden?",
    "url": "https://www.zeit.de/politik/ausland/2026-11/ukraine-gipfel-berlin-koalition-der-willigen-friedrich-merz-wolodymyr-selenskyj",
    "at": "2026-11-19T20:18:25+00:00"
   },
@@ -113,27 +169,6 @@
    "desc": "Die \"Koalition der Willigen\" verspricht, der Ukraine \"so lange wie nötig\" zu helfen. Nach dem Gipfel in Berlin rief Kanzler Merz Russlands Präsident Putin auf, die Waffen niederzulegen. Einen Frieden könne es nur mit Beteiligung Europas geben.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/gipfel-koalition-willige-ukraine-100.html",
    "at": "2026-11-19T19:22:45+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Ukraine-Unterstützer fordern Energie-Waffenruhe im Winter",
-   "desc": "Deutschland und weitere Länder wollen, dass Russland die auf das ukrainische Stromnetz stoppt. Auch fordern sie eine Waffenruhe im Schwarzen Meer. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-19T19:10:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Parlamentarisches Kontrollgremium: AfD-Politiker in Kontrollgremium für Verfassungsschutz gewählt",
-   "desc": "Im Kontrollgremium des Verfassungsschutzes in Sachsen-Anhalt sind künftig auch zwei Abgeordnete der AfD. Der Landesverband gilt als gesichert rechtsextremistisch.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/parlamentarisches-kontrollgremium-sachsen-anhalt-verfassungsschutz-afd-bsw-cdu",
-   "at": "2026-11-19T18:48:54+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Ukrainegipfel in Berlin: Koalition der Willigen weist russische Maximalforderungen zurück",
-   "desc": "Die Teilnehmer des Ukrainegipfels in Berlin weisen Putins Forderungen nach einer Aufteilung Europas zurück. Merz schlägt Verhandlungen darüber »auf neutralem Boden« vor.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/friedensgespraeche-ukraine-russland-europa-friedrich-merz",
-   "at": "2026-11-19T18:30:55+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -218,27 +253,6 @@
    "desc": "Das Bundesamt für Sicherheit in der Informationstechnik warnt vor einer »kritischen Dynamik« bei der Sicherheit im Netz. Firmen und Verbraucher in Deutschland seien viel zu sorglos: »Angegriffen wird, wer ein leichtes Ziel ist.«",
    "url": "https://www.spiegel.de/politik/deutschland/ki-bundesamt-stuft-cyber-sicherheitslage-auf-angespannt-bis-kritisch-hoch-a-9ec10551-a80c-432b-963b-d15afefac513",
    "at": "2026-11-19T09:00:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Stromsteuer: Michael Kretschmer rügt Koalition für Umgang mit Streit",
-   "desc": "Sachsens Ministerpräsident Kretschmer lobt die Senkung der Stromsteuer, wirft der Koalition aber vor, den Streit darüber schlecht gelöst zu haben. Es gehe um das Vertrauen in die Demokratie.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundesregierung-michael-kretschmer-ruegt-koalition-fuer-umgang-mit-stromsteuer-streit-a-3dc6a8c7-65fa-4056-92a1-8c4571bba0b2",
-   "at": "2026-11-19T06:48:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Deutsche Bank: »Man sollte Diktaturen nicht zu stark umarmen«",
-   "desc": "Harold James erforschte die Nazivergangenheit der Deutschen Bank. Im Umgang mit Trump, Putin und Xi erkennt der Historiker alte Muster: Der Konzern habe bis heute zu wenig aus seiner Geschichte gelernt.",
-   "url": "https://www.spiegel.de/politik/deutschland/deutsche-bank-man-sollte-diktaturen-nicht-zu-stark-umarmen-a-6a5d76df-19f2-4c09-b4c9-1dbb49e4855a",
-   "at": "2026-11-19T06:00:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ukraine-Krieg: Friedrich Merz empfängt zum Gegengipfel in Berlin",
-   "desc": "US-Präsident Trump trifft in China auch Russlands Machthaber Putin und will über die Ukraine reden. In Berlin versammelt Kanzler Merz die Unterstützer des angegriffenen Landes. Die Botschaft: keine Deals zulasten Kyjiws oder der Europäer.",
-   "url": "https://www.spiegel.de/politik/deutschland/ukraine-krieg-friedrich-merz-empfaengt-zum-gegengipfel-in-berlin-a-35a421cf-63a1-4e57-a38a-1bd3dde077b7",
-   "at": "2026-11-19T05:56:00+00:00"
   }
  ]
 }

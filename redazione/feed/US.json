@@ -1,7 +1,98 @@
 {
  "code": "US",
- "asOf": "2026-11-20T09:17:35+00:00",
+ "asOf": "2026-11-20T11:17:35+00:00",
  "items": [
+  {
+   "source": "NPR",
+   "title": "Senate passes bipartisan energy bill amid environmental concerns",
+   "desc": "As Americans struggle with rising energy costs and increased demand driven by AI, the Senate passed a bipartisan bill that will speed up the approval process for data centers and power plants.",
+   "url": "https://www.npr.org/2026/11/20/g-s1-154579/senate-bipartisan-energy-bill",
+   "at": "2026-11-20T11:00:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic defies the odds, holding record IPO despite ‘massively disruptive’ market",
+   "desc": "Anthropic faced a market selloff, raging anti-AI sentiment and a crisis at Nvidia in pulling off the largest IPO on record.",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-defies-odds-holding-ipo-despite-massively-disruptive-market.html",
+   "at": "2026-11-20T11:00:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Can Democrats force an end to the Iran war when they take Congress?",
+   "desc": "With Democrats set to take decisive House and Senate majorities, some members want to pressure the Trump administration to end the Iran war. The exact plan is not clear.",
+   "url": "https://www.cbsnews.com/news/iran-war-democrats-congress-trump/",
+   "at": "2026-11-20T11:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "White House replaces cyber director Sean Cairncross amid widespread tech outages",
+   "desc": "Sean Cairncross will be replaced by Pentagon chief information officer Kirsten Davies.",
+   "url": "https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html",
+   "at": "2026-11-20T10:59:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Ron DeSantis Ponders a Presidential Run in a Post-Trump World",
+   "desc": "In a wide-ranging interview, the governor of Florida talked about the potential timing of a presidential run. “I haven’t made any decisions,” he said.",
+   "url": "https://www.nytimes.com/2026/11/20/us/politics/ron-desantis-florida-2028.html",
+   "at": "2026-11-20T10:03:57+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "These Underdogs Were Just Elected. No One Is More Surprised Than They Are.",
+   "desc": "An Arkansas dairy farmer’s Democratic victory in a race for county assessor was one of many unlikely down-ballot wins that showed the depth of the blue wave.",
+   "url": "https://www.nytimes.com/2026/11/20/us/democrats-unexpected-winning-candidates-midterms.html",
+   "at": "2026-11-20T10:02:31+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "New Ph.D. Enrollment in the Sciences Dropped 10 Percent Under Trump",
+   "desc": "Falling international enrollment drove most of the decline, but there were also fewer American students starting doctoral programs in 2025.",
+   "url": "https://www.nytimes.com/2026/11/20/us/phd-enrollment-sciences-declines.html",
+   "at": "2026-11-20T10:02:26+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "How exactly did Trump get so rich on crypto? We explain",
+   "desc": "President Trump has made billions of dollars in his second term — most of it in cryptocurrencies. Democrats are vowing to probe his businesses as they gear up to take over Congress next year.",
+   "url": "https://www.npr.org/2026/11/20/nx-s1-6038969/trump-crypto-profits-corruption-meme-coin-world-liberty-explainer",
+   "at": "2026-11-20T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "New York City unveils a bold plan to move its jails off Rikers Island",
+   "desc": "New York City officials are moving forward with plans to close Rikers, the city's main jail complex, after years of discussion. The jail has been plagued by assaults and inmate deaths.",
+   "url": "https://www.npr.org/2026/11/20/nx-s1-5981356/new-york-city-rikers-jail-plans-germany-prison-model",
+   "at": "2026-11-20T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Critics are calling what brand-new release a masterpiece? The quiz knows",
+   "desc": "Plus: Are you up to date on your James Bond news? If so, you'll get at least one question right.",
+   "url": "https://www.npr.org/2026/11/20/g-s1-154337/florida-starship-bond-schumer-ai-flu-alaska-news-quiz",
+   "at": "2026-11-20T10:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Kushner says Russia 'comfortable' with idea of NATO-like security guarantees for Ukraine",
+   "desc": "Kushner said President Donald Trump is open to such a guarantee, but its form and whether Russia and Ukraine would accept it remain unclear.",
+   "url": "https://www.cnbc.com/2026/11/20/kushner-ukraine-nato-russia-trump-putin.html",
+   "at": "2026-11-20T09:56:03+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Putin scores ‘massive win’ at first trilateral meeting, rebuilding standing as Ukraine war grinds on",
+   "desc": "Putin was positioned as an equal beside the leaders of the U.S. and China, handing a win to the authoritarian leader bogged down in a multi-year war.",
+   "url": "https://www.cnbc.com/2026/11/20/putin-xi-china-trump-russia-ukraine-.html",
+   "at": "2026-11-20T09:26:45+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "The U.K. and EU hold a rare summit to strengthen ties",
+   "desc": "A decade after the people of Britain voted to leave the European Union, top EU officials are meeting with Prime Minister Andy Burnham on Friday, looking to mend more fences.",
+   "url": "https://www.npr.org/2026/11/20/g-s1-154576/uk-eu-summit",
+   "at": "2026-11-20T09:14:41+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Meet Anthropic's 7 co-founders, now worth about $20 billion each",
@@ -59,6 +150,13 @@
    "at": "2026-11-20T05:09:52+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "Anthropic IPO 'exactly what the markets need,' but analysts warn of volatility",
+   "desc": "The Anthropic IPO is \"what the markets need.\" However, analysts say its shares will be volatile in the coming weeks.",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-stocks-market.html",
+   "at": "2026-11-20T04:51:28+00:00"
+  },
+  {
    "source": "CBS News",
    "title": "Army delays detonation in Iowa that could send toxic dust into Illinois",
    "desc": "The U.S. Army has delayed plans to detonate unstable explosives at a munition plant in Iowa, amid concerns about the risks of a plume of dust containing toxic lead particles that could spread across parts of Iowa and Illinois.",
@@ -85,6 +183,13 @@
    "desc": "The Trump administration had sought to block certification of election results if Senator Dan Sullivan, a Republican, lost narrowly in his bid for re-election. Critics had called the suit meritless.",
    "url": "https://www.nytimes.com/2026/11/19/us/politics/justice-department-gives-up-on-alaska-senate-lawsuit.html",
    "at": "2026-11-20T03:47:05+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Texas execution took over an hour as staff struggled to find vein",
+   "desc": "Texas execution takes over an hour amid complications.",
+   "url": "https://www.cbsnews.com/news/texas-execution-delayed-over-an-hour-november-2026/",
+   "at": "2026-11-20T03:42:00+00:00"
   },
   {
    "source": "New York Times",
@@ -207,10 +312,17 @@
   },
   {
    "source": "CNBC",
-   "title": "Anthropic was supposed to save the AI trade. What went wrong?",
-   "desc": "Technology stocks tanked despite one of the most hotly anticipated tech IPOs in years. Why Anthropic couldn't revive AI animal spirits.",
-   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html",
-   "at": "2026-11-20T00:00:38+00:00"
+   "title": "Gap names new Athleta CEO, lowers full-year guidance",
+   "desc": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
+   "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
+   "at": "2026-11-19T23:54:20+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Lumentum CEO defends Marvell deal after stock plunge: 'We've got work to do' with shareholders",
+   "desc": "Lumentum CEO defended the planned Marvell merger despite stock sell-off.",
+   "url": "https://www.cnbc.com/2026/11/19/lumentum-marvell-deal-ceo-shareholders-cramer.html",
+   "at": "2026-11-19T23:47:42+00:00"
   },
   {
    "source": "New York Times",
@@ -232,13 +344,6 @@
    "desc": "Dangerous flooding batters Florida; Market down as Anthropic goes public.",
    "url": "https://www.cbsnews.com/video/111926-cbs-evening-news/",
    "at": "2026-11-19T23:30:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "California attorney general issues Nvidia subpoena in probe of China chip diversion",
-   "desc": "The investigation by California Attorney General Rob Bonta comes on the heels of the resignation of Nvidia CEO Jensen Huang.",
-   "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html",
-   "at": "2026-11-19T23:21:23+00:00"
   },
   {
    "source": "CBS News",
@@ -269,13 +374,6 @@
    "at": "2026-11-19T22:35:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "The Bay Area Wonders: What Will Anthropic Workers Do With Their Wealth?",
-   "desc": "San Francisco isn’t preparing for an Anthropic shopping spree after employees gain newfound affluence from the company’s initial public offering.",
-   "url": "https://www.nytimes.com/2026/11/19/us/anthropic-ipo-spending-wealth-san-francisco.html",
-   "at": "2026-11-19T22:25:19+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Congress passes bill to protect older investors from financial fraud",
    "desc": "Both chambers of Congress have now approved the Financial Exploitation Prevention Act of 2025, which is aimed at protecting vulnerable investors from fraud.",
@@ -290,6 +388,13 @@
    "at": "2026-11-19T22:00:00+00:00"
   },
   {
+   "source": "NPR",
+   "title": "Why the U.S. air traffic control system still relies on an 'antique' network",
+   "desc": "The FAA says the telecom outage that led to Friday's nationwide ground stop began with an upgrade to fiber-optic cables. Industry experts say the work is long overdue.",
+   "url": "https://www.npr.org/2026/11/19/nx-s1-6045773/faa-air-traffic-control-system-modernization-challenges",
+   "at": "2026-11-19T21:59:57+00:00"
+  },
+  {
    "source": "CNBC",
    "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
    "desc": "Intuit is offloading a segment that has slowed down revenue growth, for less than a third of what it paid to acquire Mailchimp in 2021.",
@@ -302,13 +407,6 @@
    "desc": "The authorities in Attalla ordered residents within a mile radius to leave because of the fire at the Omaha Track, a railroad tie recycling facility.",
    "url": "https://www.nytimes.com/2026/11/19/us/alabama-fire-railroad-tie-recycling-plant.html",
    "at": "2026-11-19T21:40:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "What Ron Johnson's 'Ponzi scheme' label gets wrong about Social Security, experts say",
-   "desc": "Social Security's trust funds face a looming shortfall. But AARP says Sen. Ron Johnson's description of the program as a \"legal Ponzi scheme\" is inaccurate.",
-   "url": "https://www.cnbc.com/2026/11/19/social-security-ponzi-scheme-ron-johnson.html",
-   "at": "2026-11-19T21:35:46+00:00"
   },
   {
    "source": "CBS News",
@@ -374,13 +472,6 @@
    "at": "2026-11-19T20:10:21+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Walmart hikes outlook as CEO tells CNBC retailer aims to keep prices low despite soaring fuel costs",
-   "desc": "Walmart said it saw strength with store-fulfilled pickup and delivery in its fiscal third quarter.",
-   "url": "https://www.cnbc.com/2026/11/19/walmart-wmt-q3-2026-earnings.html",
-   "at": "2026-11-19T19:58:30+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Gamers, start your engines. Grand Theft Auto 6 is ready to roll.",
    "desc": "The latest, long-awaited version of the hit video game franchise launches at midnight local time on Nov. 19 in countries worldwide. Here's what to know about GTA 6.",
@@ -423,13 +514,6 @@
    "at": "2026-11-19T19:43:08+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "As Sanofi's Pompe drug shortage drags on, some patients struggle to access treatments",
-   "desc": "An ongoing shortage of Sanofi’s Pompe disease treatment is forcing some patients to miss critical doses. They worry their health is at risk.",
-   "url": "https://www.cnbc.com/2026/11/19/as-pompe-drug-shortage-drags-on-patients-struggle-to-get-treatments.html",
-   "at": "2026-11-19T19:38:33+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Diapers are often cited in child injury reports, but not recalled",
    "desc": "Despite hundreds of rash reports and a handful of lawsuits against different brands, the Consumer Product Safety Commission has never announced a diaper recall and does not have dedicated standards for diapers.",
@@ -449,13 +533,6 @@
    "desc": "\"It's not going to get any better for Jensen Huang; it's going to get far worse,\" said Salvatore Graziano, a New York securities litigation attorney.",
    "url": "https://www.cnbc.com/2026/11/19/nvidia-jensen-huang-legal.html",
    "at": "2026-11-19T18:44:34+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Netflix, Amazon, Fox to bid for 2030 men's World Cup rights; Disney out",
-   "desc": "Netflix, Amazon and Fox are among those bidding on the 2030 men's World Cup media rights. Disney has decided not to bid, sources told CNBC.",
-   "url": "https://www.cnbc.com/2026/11/19/netflix-amazon-fox-bid-for-2030-mens-world-cup-rights-disney-out.html",
-   "at": "2026-11-19T18:30:51+00:00"
   },
   {
    "source": "NPR",
@@ -484,13 +561,6 @@
    "desc": "The U.S., Chinese and Russian presidents said they agreed during a rare meeting to boost oil production and \"reaffirmed that there can be no winners in a nuclear war.\"",
    "url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/",
    "at": "2026-11-19T17:18:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Law firm that cut deal with Trump has done $11.8M in pro bono work",
-   "desc": "A lawyer representing the law firm Kirkland & Ellis said it has provided nearly $12 million in free legal services for the Trump administration.",
-   "url": "https://www.cbsnews.com/news/kirkland-ellis-law-firm-trump-deal-12-million-free-legal-work/",
-   "at": "2026-11-19T17:11:00+00:00"
   },
   {
    "source": "New York Times",
@@ -528,13 +598,6 @@
    "at": "2026-11-19T16:58:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Gold's bad year is getting worse. Why its price keeps falling",
-   "desc": "Gold has fallen sharply from its January record as higher interest rates and a stronger dollar change the investment case for the precious metal.",
-   "url": "https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html",
-   "at": "2026-11-19T16:29:52+00:00"
-  },
-  {
    "source": "NPR",
    "title": "The midterms were the largest win for either party in 50 years",
    "desc": "Some 56% of people cast votes for Democrats in House races, compared to 42% who voted Republican. That 14-point spread is the widest win for either party in 50 years, since after Watergate.",
@@ -549,88 +612,11 @@
    "at": "2026-11-19T15:49:36+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Anthropic's IPO set for blastoff in key test for AI boom",
-   "desc": "Anthropic's stock is poised to start trading on Nasdaq Thursday in one of the largest IPOs of all time. The AI world is watching.",
-   "url": "https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/",
-   "at": "2026-11-19T15:33:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Boston’s Beloved Citgo Sign Returns After Rebuild, 30 Feet Higher",
-   "desc": "The beloved Citgo sign will be lit again on Thursday night after it was rebuilt and moved 120 feet to the east, its latest incarnation in a city transformed by development.",
-   "url": "https://www.nytimes.com/2026/11/19/us/boston-citgo-sign-fenway-park.html",
-   "at": "2026-11-19T14:57:07+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "In Bending to Trump, Law Firm Did $11.8 Million of Free Work for Administration",
-   "desc": "The firm Kirkland & Ellis has quietly disclosed that as part of the deal it reached with the Trump administration, it has done about 6,491 hours of free work.",
-   "url": "https://www.nytimes.com/2026/11/19/us/politics/kirkland-ellis-law-firm-trump.html",
-   "at": "2026-11-19T14:38:55+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "A Paramedic Rushed to a Fatal Accident. The Dead Man Was Her Son.",
    "desc": "The paramedic in rural Utah realized a man pinned under a car was her son after she began treating him, the authorities said.",
    "url": "https://www.nytimes.com/2026/11/19/us/paramedic-accident-son-utah.html",
    "at": "2026-11-19T14:12:18+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Three MAGA Women Who Defined an Era in Congress Are Exiting",
-   "desc": "Representatives Marjorie Taylor Greene, Lauren Boebert and Nancy Mace embodied a combative, attention-seeking brand of politics that defined the Republican Congress.",
-   "url": "https://www.nytimes.com/2026/11/19/us/politics/maga-women-congress-greene-boebert-mace.html",
-   "at": "2026-11-19T13:27:14+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "The U.N.'s top court rules Myanmar committed genocide against the Rohingya",
-   "desc": "The International Court of Justice found that Myanmar security forces \"acted with genocidal intent\" against the Rohingya during military operations in the northern Rakhine state in 2017.",
-   "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya",
-   "at": "2026-11-19T12:29:41+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "World Toilet Day is a funny idea with a serious goal: A world awash in toilets",
-   "desc": "Yahoo for the loo! November 19 marks the 25th anniversary of World Toilet Day. The theme this year: \"Sanitation and Gender Equality: Safe Toilets, Equal Futures.\"",
-   "url": "https://www.npr.org/2026/11/19/g-s1-154159/world-toilet-day-gender-equality-menstruation",
-   "at": "2026-11-19T12:26:31+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Anthropic raises more than $100B in IPO. And, Dems nominate Jeffries for House speaker",
-   "desc": "Despite growing concern over a possible AI bubble, Anthropic had a record-breaking initial public offering. And, Hakeem Jeffries could become the first Black Speaker of the House.",
-   "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic",
-   "at": "2026-11-19T12:26:01+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Incoming House majority leader Katherine Clark stresses Democratic unity",
-   "desc": "As Democrats prepare to take control of the House, incoming majority leader Katherine Clark discusses the party's ambitious agenda and divisions within its ranks.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6045750/katherine-clark-hakeem-jeffries-house-democrats",
-   "at": "2026-11-19T11:20:42+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Top House Democrat questions what Trump accomplished in Xi-Putin summit",
-   "desc": "Rep. Gregory Meeks raises concerns about U.S. alliances after Trump's summit with Xi and Putin. He also discusses Chinese espionage amid the Nvidia scandal.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6046487/gregory-meeks-trump-xi-putin-summit",
-   "at": "2026-11-19T11:20:37+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "APEC final day in photos: Trump, Xi and Putin shake hands; Takaichi kept at a distance",
-   "desc": "Leaders gathered Thursday for the second day of the economic summit, ahead of a historic trilateral meeting between the U.S., Russia and China.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-photos-us-china-russia-trilateral-.html",
-   "at": "2026-11-19T10:54:07+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Muslims will outnumber Christians worldwide by 2035, report says",
-   "desc": "By 2070, the Democratic Republic of the Congo will surpass the United States as the country with the largest total number of Christians.",
-   "url": "https://www.npr.org/2026/11/19/nx-s1-6043018/muslims-will-outnumber-christians-worldwide-by-2035-report-says",
-   "at": "2026-11-19T10:00:00+00:00"
   }
  ]
 }

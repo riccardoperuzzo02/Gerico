@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: tre ricerche (Giappone inflazione core, vendite al dettaglio Regno Unito due volte) non hanno dato il dato ufficiale di oggi. Agenda già completa con il calendario, nessuna voce nuova."
   },
   "lastPublish": {
-    "at": "2026-11-20T12:38:14+01:00",
-    "esito": "Giro pensiero su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; controlla: 7 cose da sistemare."
+    "at": "2026-11-20T13:22:42+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni; controlla: 7 cose da sistemare."
   },
-  "lastRun": "2026-11-20T07:27:30+01:00",
+  "lastRun": "2026-11-20T13:22:00+01:00",
   "marketsRun": {
     "at": "2026-11-19T18:46:47+01:00",
     "esito": "Aggiornate le chiusure del 19 novembre (Ansa): Ftse Mib -0,46% a 49.941, Dax circa -1%, Cac 40 -0,8%, Ftse 100 -0,9%, Aex -0,6%, spread 107, Btp 10 anni 4,47%, gas Ttf +4% a 84 euro. Mancano Smi, Bund, Brent, euro/dollaro di oggi. Agenda: nessun dato ufficiale nuovo trovato, non toccata."
@@ -30,18 +30,18 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 26,
-    "at": "2026-11-20T07:27:30+01:00",
-    "factsChecked": 5,
+    "articlesRead": 14,
+    "at": "2026-11-20T13:22:00+01:00",
+    "factsChecked": 4,
     "factsCorrected": 0,
-    "storiesArchived": 12,
-    "storiesNew": 6,
-    "storiesUpdated": 5
+    "storiesArchived": 0,
+    "storiesNew": 1,
+    "storiesUpdated": 2
   },
   "riscrittura": {
     "at": "2026-11-20T11:11:27+01:00",
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 35
+  "storiesLive": 30
 }

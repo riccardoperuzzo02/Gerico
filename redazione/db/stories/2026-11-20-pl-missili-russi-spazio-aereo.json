@@ -1,0 +1,37 @@
+{
+ "title": "Polonia: missili e drone russi cadono sul territorio, per Tusk è provocazione",
+ "section": "mondo",
+ "rank": 22,
+ "status": "live",
+ "summary": "Il governo polacco dice che due missili e un drone di origine russa sono caduti in tre località vicino al confine ucraino. Varsavia parla di provocazione e chiede più sostegno alla Nato.",
+ "article": "Due missili e un drone sono caduti sul territorio polacco durante l'attacco russo all'Ucraina della notte tra il 19 e il 20 novembre. Lo dice il ministro della Difesa Władysław Kosiniak-Kamysz, che ha identificato uno dei missili come un Kh-101 e il terzo oggetto come un probabile drone a reazione. Non ci sono feriti.\n\nI punti di caduta sono Nowy Lipowiec, Rudnik nad Sanem e Molodycz, nel sud-est del paese. A Nowy Lipowiec, secondo il sindaco Andrzej Borowiec, un oggetto di circa sette metri è caduto e ha prodotto fumo nero. A Rudnik nad Sanem il ministro delle Infrastrutture Dariusz Klimczak dice che si è sentito un forte boato vicino a installazioni ferroviarie, senza danni visibili. A Molodycz la polizia ha trovato detriti in un campo non coltivato. All'aeroporto di Rzeszów i controllori del traffico sono stati evacuati.\n\nIl comando operativo delle forze armate polacche ha attivato la difesa aerea intorno alle 3:30 e sono scattati gli allarmi nelle regioni di Lublino e Precarpazia. Un portavoce militare dice che aerei polacchi e alleati erano in volo.\n\nIl premier Donald Tusk ha convocato ministri, vertici militari e responsabili della sicurezza. Dice che non ci sono dubbi sull'origine russa degli oggetti e parla di «provocazione intenzionale». Kosiniak-Kamysz sostiene che i tempi non siano casuali, perché in Polonia sono in corso esercitazioni della Coalizione dei volenterosi con truppe britanniche e francesi. L'ambasciata russa a Varsavia non ha risposto subito alle richieste di commento.\n\nLa Polonia vuole chiedere alla Nato più sostegno per difendere il fianco orientale. Droni russi sono finiti più volte nello spazio aereo di paesi Nato dall'invasione dell'Ucraina del febbraio 2022.",
+ "facts": [
+  {"text": "Due missili, tra cui un Kh-101, e un probabile drone a reazione sono caduti in Polonia, dice il ministro della Difesa Kosiniak-Kamysz.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "Gli oggetti sono caduti a Nowy Lipowiec, Rudnik nad Sanem e Molodycz, senza feriti.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "Il premier Tusk parla di provocazione intenzionale e dice che non ci sono dubbi sull'origine russa.", "who": ["Reuters"]},
+  {"text": "La Polonia intende chiedere alla Nato più sostegno per il fianco orientale.", "who": ["Reuters"]}
+ ],
+ "view": "Le fonti concordano sui luoghi di caduta e sull'assenza di feriti, ma l'origine e l'intenzione degli oggetti sono per ora affermazioni del governo polacco. Non è chiaro se i missili siano stati deviati o diretti sul territorio polacco.\n\nÈ uno dei casi più gravi di violazione dello spazio aereo di un paese Nato dall'inizio della guerra. Da guardare: la risposta di Mosca, le richieste di Varsavia all'Alleanza e l'eventuale ricorso ai meccanismi di consultazione.",
+ "open": [
+  "I missili erano diretti sulla Polonia o sono stati deviati?",
+  "Che cosa risponderà la Russia?",
+  "La Polonia chiederà consultazioni formali alla Nato?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/polish-army-investigates-report-of-unknown-objects-near-ukraine-border", "angle": "Dichiarazioni di Tusk e del ministro della Difesa, danni nei tre siti, richiesta alla Nato.", "at": "2026-11-20T12:32:00+01:00"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/poland-reports-airspace-violation-during-russian-attack-on-ukraine-investigates-debris-crash/", "angle": "Località di caduta, orari dell'allarme, contesto dei rapporti tra Polonia e Ucraina.", "at": "2026-11-20T10:11:00+01:00"}
+ ],
+ "firstSeen": "2026-11-20T13:21:54+01:00",
+ "updated": "2026-11-20T13:21:54+01:00",
+ "change": "",
+ "tags": ["Polonia", "Nato", "Russia", "Ucraina"],
+ "themes": ["ucraina"],
+ "places": ["PL", "RU", "UA"],
+ "city": {"name": "Rzeszów", "lat": 50.04, "lon": 22.0},
+ "photo": {"wiki": "en", "title": "Rzeszów–Jasionka Airport"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-20T13:21:54+01:00", "text": "Prima notizia: due missili e un drone russi cadono in Polonia, Varsavia parla di provocazione."}
+ ]
+}

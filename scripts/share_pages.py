@@ -58,6 +58,7 @@ PAGINA = """<!doctype html>
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{base}/s/{id}">
 <meta property="og:image" content="{image}">
+<meta property="og:image:alt" content="{title}">
 <meta property="article:published_time" content="{published}">
 <meta property="article:modified_time" content="{modified}">
 <meta property="article:section" content="{section}">
@@ -79,11 +80,13 @@ PAGINA = """<!doctype html>
 <p class="sum">{summary}</p>
 {media}
 {byline}
+{seguito}
 <div class="s-testo">
 {article}
 </div>
-{open}
 {fonti}
+{puntate}
+{open}
 {temi}
 <p class="s-apri"><a class="conto-b primario" href="/storia.html?id={id}">Apri la storia in GERICO</a><span>con la mappa, i temi da seguire e gli aggiornamenti</span></p>
 </article>
@@ -283,7 +286,18 @@ def pagina_glossario(site, base, gl):
     scrivi_se_cambia(path, nuova)
 
 
-def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi", gloss=None):
+def puntate(sid, indice):
+    """(le puntate precedenti della vicenda, dalla più recente; la puntata che viene dopo, o None) dall'indice dell'archivio."""
+    prima, visti, cur = [], {sid}, (indice.get(sid) or {}).get("prev")
+    while cur and cur not in visti and cur in indice and len(prima) < 8:
+        visti.add(cur)
+        prima.append(indice[cur])
+        cur = indice[cur].get("prev")
+    dopo = sorted([x for x in indice.values() if x.get("prev") == sid], key=lambda x: x.get("d") or "", reverse=True)
+    return prima, (dopo[0] if dopo else None)
+
+
+def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi", gloss=None, og=None, indice=None):
     sid = s["id"]
     titolo = " ".join(str(s["title"]).split())
     sezione = SEZIONI.get(s.get("section"), "Notizie")
@@ -292,7 +306,8 @@ def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi"
     ph = s.get("photo") if isinstance(s.get("photo"), dict) else None
     fig = s.get("figure") if isinstance(s.get("figure"), dict) else None
     foto = ph and re.match(r"^img/foto/[\w.-]+\.jpg(\?v=\w+)?$", str(ph.get("src") or ""))
-    immagine = f"{base}/{ph['src']}" if foto else f"{base}/assets/img/og-gerico.png"
+    # senza foto, l'anteprima disegnata da GERICO (scripts/anteprime.py): titolo e mappa o numero
+    immagine = f"{base}/{ph['src']}" if foto else f"{base}/{og}" if og else f"{base}/assets/img/og-gerico.png"
     if foto:
         cred = "Foto: " + str(ph.get("author") or "") + (", " + ph["license"] if ph.get("license") else "") + ", da Wikimedia Commons"
         pag = url_ok(ph.get("page"))
@@ -313,8 +328,15 @@ def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi"
         u = url_ok(x.get("url"))
         nome = f'<a href="{E(u)}" rel="noopener">{E(str(x["name"]))}</a>' if u else E(str(x["name"]))
         righe.append(f"<li><b>{nome}</b>" + (f"<span>{E(str(x['angle']))}</span>" if x.get("angle") else "") + "</li>")
-    fonti_html = (f'<section class="blk"><h2 class="blk-h">Le {len(fonti)} fonti</h2><ul class="s-fonti">' + "".join(righe) + "</ul></section>") if len(fonti) > 1 else \
-        ('<section class="blk"><h2 class="blk-h">La fonte</h2><ul class="s-fonti">' + "".join(righe) + "</ul></section>" if fonti else "")
+    # le testate non stanno nel testo: sono il piè di pagina dell'articolo, come in un quotidiano
+    fonti_html = ('<section class="blk s-piede-fonti"><h2 class="blk-h">Fonti</h2><ul class="s-fonti">' + "".join(righe) + "</ul></section>") if fonti else ""
+    # la vicenda a puntate: un articolo per giorno, legati da prev
+    prima, dopo = puntate(sid, indice or {})
+    seguito_html = (f'<p class="s-seguito">La vicenda è andata avanti: <a href="/s/{E(dopo["id"])}">{E(dopo.get("t") or "")}</a>'
+                    + (f' <span>({E(quando(dopo.get("d")) or "")})</span>' if dopo.get("d") else "") + "</p>") if dopo else ""
+    puntate_html = ('<section class="blk"><h2 class="blk-h">Le puntate precedenti</h2><ol class="s-puntate">' +
+                    "".join(f'<li><a href="/s/{E(x["id"])}"><time datetime="{E(x.get("d") or "")}">{E(giorno_lungo(giorno_di(x.get("d"))) if x.get("d") else "")}</time>'
+                            f'<span>{E(x.get("t") or "")}</span></a></li>' for x in prima) + "</ol></section>") if prima else ""
     altre_html = ('<section class="blk altre"><h2 class="blk-h">' + E(altre_titolo) + '</h2><ol class="altre-l">' +
                   "".join(f'<li><a href="/s/{E(a["id"])}"><span class="altre-n" aria-hidden="true">{i + 1:02d}</span><span class="altre-c"><span class="altre-k">{E(SEZIONI.get(a.get("section"), "Notizie"))}</span>'
                           f'<span class="altre-t">{E(" ".join(str(a["title"]).split()))}</span></span></a></li>' for i, a in enumerate(altre)) + "</ol></section>") if altre else ""
@@ -329,10 +351,12 @@ def pagina(s, base, v, altre, temi=None, altre_titolo="Le altre notizie di oggi"
         ld["dateModified"] = mod
     if fonti:
         ld["citation"] = [url_ok(x.get("url")) for x in fonti if url_ok(x.get("url"))][:12]
+    if prima:
+        ld["isBasedOn"] = f"{base}/s/{prima[0]['id']}"
     return PAGINA.format(title=E(short(titolo, 120)), title_full=E(titolo), desc=E(short(s.get("summary"))), summary=E(" ".join(str(s.get("summary") or "").split())),
                          base=base, id=sid, image=E(immagine), published=E(pub or ""), modified=E(mod or ""), section=E(sezione), sec_id=E(str(s.get("section") or "")),
                          quando=E(quando(mod) or ""), v=v, media=media, article=articolo, open=open_html, fonti=fonti_html, altre=altre_html,
-                         temi=temi_storia(s, temi or {}), byline=BYLINE,
+                         temi=temi_storia(s, temi or {}), byline=BYLINE, seguito=seguito_html, puntate=puntate_html,
                          jsonld=json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"))
 
 
@@ -369,6 +393,8 @@ def voce(s):
         v["th"] = th
     if s.get("scope") == "paese" and re.match(r"^[A-Z]{2}$", str(s.get("country") or "")):
         v["p"] = s["country"]
+    if SAFE_ID.match(str(s.get("prev") or "")):
+        v["prev"] = s["prev"]
     return v
 
 
@@ -528,6 +554,9 @@ def ripara_foto(site, in_edizione, v=""):
         if m and not os.path.exists(os.path.join(site, m.group(1))):
             t2 = re.sub(r'<figure class="media foto st-media">.*?</figure>', "", t2, flags=re.S)
             t2 = re.sub(r'(https?://[^"\s]+)?/img/foto/[\w.-]+\.jpg(\?v=\w+)?', base + "/assets/img/og-gerico.png", t2)
+        m = re.search(r'/(img/og/[\w.-]+\.jpg)', t2)
+        if m and not os.path.exists(os.path.join(site, m.group(1))):
+            t2 = re.sub(r'(https?://[^"\s]+)?/img/og/[\w.-]+\.jpg(\?v=\w+)?', base + "/assets/img/og-gerico.png", t2)
         if v:
             t2 = re.sub(r'(/assets/css/gerico\.css)\?v=[\w-]+', lambda x: x.group(1) + v, t2)
         # la firma resta «A cura di R.P.»: che il testo è scritto con l'intelligenza artificiale lo dice il piede (anche nelle
@@ -580,10 +609,19 @@ def main(site):
     gl = carica_glossario(site)
     gloss = forme_glossario(gl)
     pagina_glossario(site, base, gl)
+    # le anteprime per chi condivide (scripts/anteprime.py): si tengono quelle delle storie degli ultimi 30 giorni
+    limite = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+    recenti = {i for i, x in per_id.items() if str(x.get("d") or "") >= limite[:10]} | {s["id"] for s in buone}
+    try:
+        import anteprime
+        og = anteprime.anteprime(site, buone, recenti)
+    except Exception as e:  # noqa: BLE001  senza anteprime le pagine usano l'immagine di GERICO
+        print(f"anteprime: {type(e).__name__}: {e}")
+        og = {}
     written = 0
     for s in buone:
         altre = [a for a in prime if a["id"] != s["id"]][:6]
-        written += scrivi_se_cambia(os.path.join(out, s["id"] + ".html"), pagina(s, base, v, altre, temi_prima, gloss=gloss))
+        written += scrivi_se_cambia(os.path.join(out, s["id"] + ".html"), pagina(s, base, v, altre, temi_prima, gloss=gloss, og=og.get(s["id"]), indice=per_id))
     ripara_foto(site, {s["id"] for s in buone}, v)
     indice = aggiorna_archivio(site, buone, ed.get("themes"))
     extra, _temi = pagine_archivio(site, base, v, indice)

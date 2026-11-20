@@ -3344,3 +3344,30 @@ body.term .ritardo-nota { color: var(--t-ink-2); }
 .tk-top > .tk-h { flex: 0 1 auto; }
 @media (max-width: 374px) { .tk-top > .ritardo span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } .tk-top > .ritardo { padding: 0 7px; } }
 .edition-sub .ritardo { vertical-align: 0; }
+
+/* ---------- articolo: le fonti a piè di pagina e la vicenda a puntate (20 novembre) ----------
+   Le testate non si nominano nel testo: chiudono l'articolo, come nei quotidiani. Un articolo per giorno: in fondo la
+   puntata precedente, in alto (se c'è) il seguito. Filetti in trasparenza, testo piccolo e tranquillo. */
+.art-fonti, .art-prev {
+  margin: var(--f21, 21px) 0 0; padding-top: var(--f13, 13px); border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 0.875rem; line-height: 1.6; color: var(--muted);
+}
+.art-prev { border-top: 0; margin-top: var(--f8, 8px); padding-top: 0; }
+.art-fonti-l { margin-right: 6px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); }
+.art-fonti a, .art-prev a, .s-seguito a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+@media (hover: hover) { .art-fonti a:hover, .art-prev a:hover, .s-seguito a:hover { text-decoration-color: currentColor; } }
+.art-prev span:not(.art-fonti-l) { color: var(--muted); }
+body.term .art-fonti-l { color: var(--t-ink); }
+.s-seguito {
+  margin: var(--f13, 13px) 0 0; padding: 10px 14px; border: 1px solid var(--rule); border-radius: 10px;
+  font-family: var(--sans); font-size: 0.875rem; line-height: 1.5; color: var(--muted); background: var(--fill, transparent);
+}
+.s-seguito a { font-weight: 700; }
+.s-piede-fonti .s-fonti li span { font-size: 0.8125rem; color: var(--muted); }
+.s-puntate { margin: 8px 0 0; padding: 0; list-style: none; }
+.s-puntate li { border-top: 1px solid var(--rule); }
+.s-puntate li:first-child { border-top: 0; }
+.s-puntate a { display: grid; gap: 2px; padding: 12px 0; color: var(--ink); text-decoration: none; }
+.s-puntate time { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.s-puntate span { font-family: var(--serif, inherit); font-size: 1.0625rem; line-height: 1.35; }
+@media (hover: hover) { .s-puntate a:hover span { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule); } }

@@ -27,7 +27,7 @@ except Exception as e:  # senza le mappe l'edizione esce lo stesso, con le sched
     mappe = None
 
 STORY_FIELDS = ["id", "title", "section", "rank", "status", "summary", "article", "facts", "divergences", "view", "open",
-                "sources", "firstSeen", "updated", "change", "tags", "themes", "history", "notCovered"]
+                "sources", "firstSeen", "updated", "change", "tags", "themes", "history", "notCovered", "prev"]
 # il paese della storia (sigla ISO dei paesi della scelta in alto) e, per le notizie nazionali di un paese estero scritte
 # per la sua scheda, scope "paese": quelle si vedono solo da chi ha scelto quel paese
 PAESI = set(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonti_paesi.json"), encoding="utf-8"))["paesi"])

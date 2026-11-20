@@ -71,6 +71,18 @@ G.page("story", async function (P) {
   // ---------- l'articolo di GERICO, scritto su tutte le fonti ----------
   const art = G.paras(s.article);
   const articleHTML = art.length ? '<div class="article">' + art.map((p) => "<p>" + esc(p) + "</p>").join("") + "</div>" : "";
+  // il piè di pagina dell'articolo: le testate da cui vengono le informazioni (nel testo non si nominano)
+  const piedeFonti = art.length && (s.sources || []).length ? '<p class="art-fonti"><span class="art-fonti-l">' + G.L("Fonti", "Sources") + "</span> " +
+    G.outlets(s.sources).map((x) => { const u = G.safeUrl(x.url);
+      return u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(x.name) + "</a>" : esc(x.name); }).join(", ") + "</p>" : "";
+  // la vicenda a puntate: un articolo per giorno, legati da prev
+  const tutte = (ed.stories || []).concat(ed.archive || []);
+  const prima = s.prev ? tutte.find((x) => x.id === s.prev) : null;
+  const dopo = tutte.filter((x) => x.prev === s.id).sort((a, b) => String(b.firstSeen || "").localeCompare(String(a.firstSeen || "")))[0];
+  const seguitoHTML = dopo ? '<p class="s-seguito">' + G.L("La vicenda è andata avanti: ", "This story has moved on: ") + '<a href="' + G.storyUrl(dopo) + '">' + esc(G.headline(dopo)) + "</a></p>" : "";
+  const puntataHTML = s.prev ? '<p class="art-prev"><span class="art-fonti-l">' + G.L("La puntata precedente", "The previous instalment") + "</span> " +
+    (prima ? '<a href="' + G.storyUrl(prima) + '">' + esc(G.headline(prima)) + "</a>" + (prima.firstSeen ? " <span>(" + esc(G.day(prima.firstSeen)) + ")</span>" : "")
+      : '<a href="/s/' + esc(s.prev) + '">' + G.L("leggila nell'archivio", "read it in the archive") + "</a>") + "</p>" : "";
   // le storie scritte prima del formato nuovo non hanno l'articolo: i fatti in fila, ognuno con le sue fonti,
   // e le versioni diverse quando ci sono
   const facts = art.length ? [] : s.facts || [];
@@ -145,7 +157,7 @@ G.page("story", async function (P) {
   // la firma: «A cura di R.P.» (che gli articoli li scrive l'intelligenza artificiale lo dice il piede della pagina)
   const byline = '<p class="byline">' + esc(G.CURA) + ' <span class="by">' + esc(G.FIRMA) + "</span></p>";
   // l'immagine sotto il sommario, come nei quotidiani: la mappa del luogo della notizia
-  const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true, credito: true }) + byline + latest + (articleHTML || factsHTML);
+  const body = '<p class="sum">' + esc(s.summary) + "</p>" + G.storyImg(s, { cls: "st-media", eager: true, credito: true }) + byline + seguitoHTML + latest + (articleHTML || factsHTML) + piedeFonti + puntataHTML;
   // sotto la prossima notizia, altre quattro da leggere: prima quelle della stessa sezione, poi le più importanti
   const altre = order.filter((x) => x.id !== s.id && (!nx || x.id !== nx.id)).sort((a, b) => (b.section === s.section) - (a.section === s.section) || (a.rank || 99) - (b.rank || 99)).slice(0, 4);
   const altreHTML = altre.length >= 2 ? '<section class="blk altre" aria-labelledby="altre-h"><h2 class="blk-h" id="altre-h">' + G.L("Potrebbe interessarti anche", "You might also like") + '</h2><ol class="altre-l">' +

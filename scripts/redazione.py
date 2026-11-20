@@ -47,6 +47,8 @@ GIRI = {
     "agenda": {"ore": {12: "12:10", 15: "15:40"}, "modello": "claude-sonnet-5-5", "turni": 40},
     "paesi": {"ore": {9: "9:47"}, "modello": "claude-sonnet-5-5", "turni": 160},
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
+    # una volta, a mano: riscrive nello stile nuovo (redazione/stile.md) gli articoli delle storie live, senza notizie nuove
+    "riscrivi": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 200},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
     # solo la pubblicazione del database com'è, senza Claude (dopo una correzione a mano)
     "pubblica": {"ore": {}, "modello": "", "turni": 0},
@@ -232,6 +234,35 @@ def check_time(value, where, problems):
         problems.append(f"{where}: «{value}» non è un orario ISO 8601 con il fuso")
 
 
+# le testate che non si nominano nel testo (stanno nel piè di pagina «Fonti»): queste più quelle tra le fonti della storia
+TESTATE = ["ANSA", "Adnkronos", "AGI", "LaPresse", "Reuters", "Associated Press", "AP", "AFP", "France Presse", "Bloomberg",
+           "Il Post", "Open", "Il Sole 24 Ore", "Sole 24 Ore", "Corriere della Sera", "Corriere", "Repubblica", "La Stampa",
+           "Teleborsa", "Milano Finanza", "Domani", "Avvenire", "Il Fatto Quotidiano", "Euronews", "Al Jazeera", "Times of Israel",
+           "Ynet", "Haaretz", "Arab News", "Kyiv Independent", "CNBC", "Axios", "CNN", "Cnn", "BBC", "Bbc", "Guardian", "Financial Times",
+           "Wall Street Journal", "New York Times", "Washington Post", "Politico", "South China Morning Post", "Nikkei", "Japan Times",
+           "Times of India", "CBS", "CBS News", "The Hill", "Sky News", "Independent", "franceinfo", "France 24", "20 Minutes",
+           "Tagesschau", "Spiegel", "Der Spiegel", "Zeit", "Die Zeit", "RTVE", "El Mundo", "20minutos", "El País", "Le Monde"]
+# «secondo Reuters», «riferisce l'Ansa», «scrive il Post», «citando la Cnn», «per Times of Israel», «(Reuters)»
+VERBI_FONTE = (r"(?:secondo|riferisce|riferiscono|riferito|riporta|riportano|riportato|riportata|scrive|scrivono|scritto|"
+               r"citando|cita|citato|citata|citati|citate|rilanciat[aoie]|ripres[aoie]|riprende|rivela|rivelato|annuncia|"
+               r"per|fonte|fonti|stando a|come (?:scrive|riporta|riferisce))")
+
+
+def testate_nel_testo(testo, nomi):
+    """I nomi di testata usati come attribuzione nel testo («secondo Reuters», «riferisce l'Ansa», «(Reuters)»)."""
+    trovate = []
+    # chi parla a un giornale («in un'intervista alla Cnn», «ha detto all'Ansa») fa una dichiarazione: non è una fonte
+    testo = re.sub(r"\b(?:intervist\w*|ha detto|ha dichiarato|ha spiegato|ha raccontato|ha confermato)\s+(?:concessa\s+)?(?:a|al|alla|allo|all'|all’)\s*",
+                   "", testo, flags=re.I)
+    for n in sorted({x for x in nomi if x and len(x) >= 2}, key=len, reverse=True):
+        nome = re.escape(n)
+        rx = re.compile(r"(?:\b" + VERBI_FONTE + r"\s+(?:da\s+|dal\s+|dalla\s+|dall'|dall’)?(?:l'|l’|il\s+|la\s+|lo\s+|i\s+|le\s+|gli\s+|the\s+)?"
+                        + nome + r"\b|\(" + nome + r"\)|\b(?:dall'|dall’|dalla\s+|dal\s+)" + nome + r"\b)", re.I if len(n) > 3 else 0)
+        if rx.search(testo):
+            trovate.append(n)
+    return trovate
+
+
 def cmd_controlla(db=DB, quiet=False):
     problems = []
     today = now_rome().date().isoformat()
@@ -267,6 +298,24 @@ def cmd_controlla(db=DB, quiet=False):
         for k in ("title", "summary", "article", "view"):
             if re.search("[—–]", str(s.get(k) or "")):
                 problems.append(f"{where}.{k}: c'è una lineetta («—» o «–»): virgola, punto, due punti o parentesi")
+        # le testate non si nominano nel testo: stanno nel piè di pagina «Fonti» (redazione/stile.md)
+        nomi = TESTATE + [str(x.get("name") or "").strip() for x in s.get("sources") or [] if isinstance(x, dict)]
+        for k in ("title", "summary", "article", "view"):
+            tt = testate_nel_testo(str(s.get(k) or ""), nomi)
+            if tt:
+                problems.append(f"{where}.{k}: nomina come fonte {', '.join(tt)} (le testate stanno solo nel piè di pagina: "
+                                "attribuisci alla fonte primaria, vedi STILE DI GERICO)")
+        # gli sviluppi di un giorno nuovo sono storie nuove con prev (SVILUPPI DI UN GIORNO NUOVO)
+        fs, up = parse_time(s.get("firstSeen")), parse_time(s.get("updated"))
+        h0 = (s.get("history") or [{}])[0] if isinstance((s.get("history") or [{}])[0], dict) else {}
+        h0t = parse_time(h0.get("at"))
+        if fs and up and h0t and fs.astimezone(ROME).date().isoformat() < today == up.astimezone(ROME).date().isoformat() \
+                and h0t.astimezone(ROME).date().isoformat() == today and not str(h0.get("text") or "").startswith("Correzione"):
+            problems.append(f"{where}: nata il {fs.astimezone(ROME):%d/%m} e riscritta oggi con una novità: lo sviluppo di oggi "
+                            "è una storia nuova con prev, e questa va archiviata (SVILUPPI DI UN GIORNO NUOVO)")
+        if s.get("prev") is not None and not (isinstance(s.get("prev"), str) and (os.path.exists(os.path.join(db, "stories", s["prev"] + ".json"))
+                                                                              or os.path.exists(os.path.join(SITE, "s", s["prev"] + ".html")))):
+            problems.append(f"{where}: prev «{s.get('prev')}» non è l'id di una storia che esiste")
         if not isinstance(s.get("themes"), list):
             problems.append(f"{where}: manca themes (gli id dei temi caldi, anche [])")
         # i paesi e il luogo della mappa sopra l'articolo

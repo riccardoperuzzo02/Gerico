@@ -30,7 +30,7 @@ on:
       giro:
         description: Giro da fare
         type: choice
-        options: [prova, notizie, paesi, chiusure, agenda, titoli, pubblica]
+        options: [prova, notizie, paesi, chiusure, agenda, titoli, riscrivi, pubblica]
         default: prova
       variante:
         description: "Per le notizie: giro delle 7:18 o delle 13:18 (auto: 7:18 prima delle 11)"
@@ -113,7 +113,9 @@ jobs:
           if [ "$GIRO" = prova ]; then
             echo "Rispondi solo con la parola: pronto" > "$RUNNER_TEMP/prompt.md"
           else
-            { printf 'Questo è il giro delle %s.\n\n' "$VARIANTE"; cat "redazione/$GIRO.md"; } > "$RUNNER_TEMP/prompt.md"
+            # i giri che scrivono articoli hanno in fondo la guida di stile comune (redazione/stile.md)
+            { if [ -n "$VARIANTE" ]; then printf 'Questo è il giro delle %s.\n\n' "$VARIANTE"; fi; cat "redazione/$GIRO.md"
+              case "$GIRO" in notizie|paesi|riscrivi) cat redazione/stile.md ;; esac; } > "$RUNNER_TEMP/prompt.md"
           fi
           # Claude scrive solo nel database e usa solo questi comandi: niente git, niente altro sul runner
           # (ogni regola dei comandi nelle due forme, «comando *» e la vecchia «comando:*»; le regole Edit valgono anche
@@ -145,7 +147,10 @@ jobs:
       - name: Pillow per le foto
         if: always() && steps.giro.outputs.giro != ''
         continue-on-error: true
-        run: python3 -c "import PIL" 2>/dev/null || python3 -m pip install --quiet --user pillow || python3 -m pip install --quiet --user --break-system-packages pillow
+        # Pillow per le foto e le anteprime, cairosvg per mettere la mappa nelle anteprime (scripts/anteprime.py)
+        run: |
+          python3 -c "import PIL" 2>/dev/null || python3 -m pip install --quiet --user pillow || python3 -m pip install --quiet --user --break-system-packages pillow
+          python3 -c "import cairosvg" 2>/dev/null || python3 -m pip install --quiet --user cairosvg || python3 -m pip install --quiet --user --break-system-packages cairosvg || true
 
       # anche un giro interrotto pubblica quello che ha scritto nel database; uno che non è partito no
       - name: Pubblica

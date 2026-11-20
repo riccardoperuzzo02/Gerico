@@ -1,7 +1,21 @@
 {
  "code": "GB",
- "asOf": "2026-11-20T19:17:41+00:00",
+ "asOf": "2026-11-20T21:17:33+00:00",
  "items": [
+  {
+   "source": "BBC",
+   "title": "Burnham rejects calls for devolution of powers in letter to Welsh FM",
+   "desc": "The prime minister says he is \"not persuaded\" by the argument that devolution would benefit Wales.",
+   "url": "https://www.bbc.co.uk/news/articles/ck9874vydr83o",
+   "at": "2026-11-20T19:41:30+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "JP Morgan boss says he will find ways to offset ‘unfair’ rise in UK tax on banks",
+   "desc": "Jamie Dimon says he is ‘setting an example’ in seeking to claw back Labour’s increase in surcharge, from 3% to 6% Jamie Dimon, the chief executive of JP Morgan, has said he will find ways to offset the chancellor’s tax rise for banks, calling the increase unfair. Speaking at an event in London on Thursday, Dimon said he would seek to claw back the increase and was “setting an example so that [governments] understand the trade-offs of these unfair penalties”. Continue reading...",
+   "url": "https://www.theguardian.com/business/2026/nov/20/jp-morgan-jamie-dimon-uk-tax-hike-bank-surcharge",
+   "at": "2026-11-20T19:38:59+00:00"
+  },
   {
    "source": "The Guardian",
    "title": "Police arrest teacher who missed sentencing after indecent assault conviction",
@@ -10,18 +24,18 @@
    "at": "2026-11-20T19:00:11+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "Andy Burnham and EU ready to love again – but question of tuition fees glossed over",
-   "desc": "Nigel Farage trashes new romance and reinvents reality to suit himself Forget the smell. You could almost taste the Madeleines. Those late nights in Brussels from 10 years ago when time had lost all meaning. So it seemed it might be on Friday. A press conference scheduled for 12.30pm pushed back a quarter of an hour. And then another 15 minutes. Yet another 15 minutes. There are few things the EU does better than taking negotiations down to the wire. But there the similarities ended. Because when the presser eventually started about an hour later than planned, everything was sweetness and light. António Costa, president of the European Council, Ursula von der Leyen, president of the European Commission, and Andy Burnham presented themselves as the perfect throuple. It had been love at first sight, and they couldn’t wait for their next tryst. They could barely take their eyes off one anot",
-   "url": "https://www.theguardian.com/politics/2026/nov/20/andy-burnham-and-eu-ready-to-love-again-but-question-of-tuition-fees-glossed-over",
-   "at": "2026-11-20T18:53:21+00:00"
-  },
-  {
    "source": "Sky News",
    "title": "White supremacist convicted of plotting to firebomb migrant hotel",
    "desc": "A 24-year-old white supremacist has been convicted of plotting to firebomb a migrant hotel and kill as many occupants as possible.",
    "url": "https://news.sky.com/story/white-supremacist-convicted-of-plotting-to-firebomb-migrant-hotel-13614434",
    "at": "2026-11-20T18:46:00+00:00"
+  },
+  {
+   "source": "Sky News",
+   "title": "Man jailed for murder of British woman he groomed on fetish website",
+   "desc": "A sadistic predator has been sentenced to life in prison after being found guilty of the kidnap and first-degree murder of a vulnerable British woman.",
+   "url": "https://news.sky.com/story/alpha-sadist-jailed-for-life-for-murder-of-british-woman-he-groomed-on-fetish-website-13614463",
+   "at": "2026-11-20T18:39:00+00:00"
   },
   {
    "source": "The Guardian",
@@ -143,13 +157,6 @@
    "at": "2026-11-20T16:53:00+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "White supremacist convicted of planning bomb attack on asylum seekers in Hull",
-   "desc": "Mikka Anderson stockpiled weapons and tried to recruit accomplice for attack on Royal Hotel A white supremacist has been found guilty of planning a firebomb terror attack on asylum seekers in Hull. Mikka Anderson, 24, stockpiled weapons including napalm, knives and a crossbow for an assault designed to kill as many people as possible, Newcastle crown court heard. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/20/white-supremacist-mikka-anderson-convicted-planning-bomb-attack-asylum-seekers-hull",
-   "at": "2026-11-20T16:48:31+00:00"
-  },
-  {
    "source": "BBC",
    "title": "Newscast",
    "desc": "A new deal is reached, but talks continue over the sticking point of student tuition fees",
@@ -169,6 +176,13 @@
    "desc": "A grandmother died after a part of an air conditioning duct and ceiling collapsed onto guests.",
    "url": "https://www.bbc.co.uk/news/articles/cw7829emdvxro",
    "at": "2026-11-20T16:33:30+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Anthropic shares slump on second day of trading as markets reel from AI sell-off",
+   "desc": "Nasdaq erases 2026 gains and Asian markets record worst week since 2020 as investors question huge sums being poured into AI buildout Who are Anthropic’s seven co-founders, now worth $180bn? Anthropic’s shares fell at the start of its second day of trading, as its record-breaking IPO failed to stem a sell-off in AI-linked companies. As they dropped, the wider stock market fell with them, with the Nasdaq Composite erasing all its gains for 2026. The Dow Jones Industrial Average and S&P 500 briefly entered correction territory. Continue reading...",
+   "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+   "at": "2026-11-20T16:26:07+00:00"
   },
   {
    "source": "Sky News",
@@ -211,6 +225,13 @@
    "desc": "Poundland's boss has told thousands of employees at the discount chain of his \"hurt\" at the parlous position in which it finds itself, days before it faces collapsing into administration.",
    "url": "https://news.sky.com/story/poundland-chief-shares-pain-with-staff-amid-last-ditch-rescue-talks-13614407",
    "at": "2026-11-20T15:32:00+00:00"
+  },
+  {
+   "source": "Sky News",
+   "title": "Care workers conspired together to abuse and rape vulnerable men they cared for",
+   "desc": "Two senior support workers have admitted conspiring together to abuse and rape highly vulnerable men left in their care.",
+   "url": "https://news.sky.com/story/fife-care-workers-conspired-together-to-abuse-and-rape-vulnerable-men-they-cared-for-13614339",
+   "at": "2026-11-20T15:08:00+00:00"
   },
   {
    "source": "Sky News",
@@ -269,6 +290,13 @@
    "at": "2026-11-20T11:23:17+00:00"
   },
   {
+   "source": "The Guardian",
+   "title": "Home Office tells woman born and raised in London she is not British",
+   "desc": "Woman, 24, says she cannot work and faces destitution after it was found her mother had no right to UK passport A 24-year-old woman who was born and raised in London believing she was a UK citizen has been left in a state of shock after authorities told her she was not British. After the Home Office discovered that the woman’s mother, who is from Jamaica, had no right to a British passport, she received a letter informing her her UK passport was being revoked. Continue reading...",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/20/home-office-tells-woman-born-london-she-is-not-british",
+   "at": "2026-11-20T11:22:17+00:00"
+  },
+  {
    "source": "BBC",
    "title": "Babydoll singer Jamie Miller covers Christmas classic",
    "desc": "It's Beginning To Look A Lot Like Christmas for the number one hitmaker from Cardiff.",
@@ -313,7 +341,7 @@
   {
    "source": "The Guardian",
    "title": "What impact has Brexit had on the UK and EU economies?",
-   "desc": "As talks are held in Brussels over closer relations, we examine the economic context and the challenges ahead UK-EU summit live: latest news updates The UK and EU will hold the second summit since Brexit on Friday against a volatile economic backdrop. Taking place in Brussels as the war in the Middle East hits the global economy, the prime minister, Andy Burnham, will meet the head of the European Commission, Ursula von der Leyen , and the president of the European Council, António Costa. Continue reading...",
+   "desc": "As talks are held in Brussels over closer relations, we examine the economic context and the challenges ahead The UK and EU will hold the second summit since Brexit on Friday against a volatile economic backdrop. Taking place in Brussels as the war in the Middle East hits the global economy, the prime minister, Andy Burnham, will meet the head of the European Commission, Ursula von der Leyen , and the president of the European Council, António Costa. Continue reading...",
    "url": "https://www.theguardian.com/business/2026/nov/20/what-impact-brexit-uk-eu-economies",
    "at": "2026-11-20T07:00:26+00:00"
   },
@@ -353,13 +381,6 @@
    "at": "2026-11-20T03:00:19+00:00"
   },
   {
-   "source": "Sky News",
-   "title": "Man accused of killing British woman sent knife with her blood on to friend",
-   "desc": "A man accused of murdering a British woman he met on a fetish website sent a knife with her blood on it to a friend, a US court has heard.",
-   "url": "https://news.sky.com/story/man-accused-of-murdering-british-woman-sent-knife-with-her-blood-on-to-friend-us-court-told-13614220",
-   "at": "2026-11-20T02:48:00+00:00"
-  },
-  {
    "source": "BBC",
    "title": "Does our ethnicity change how we experience dying?",
    "desc": "Death is the one certainty we all share - but could our ethnicity change how we go through it?",
@@ -386,41 +407,6 @@
    "desc": "Supermarkets, warehouses, restaurants and stadiums have been scrambling to make their devices safe.",
    "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
    "at": "2026-11-20T00:02:07+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Anti-monarchy group hands over 'evidence' on Andrew as it calls for investigation",
-   "desc": "An anti-monarchy campaign group says it has given police and the Crown Prosecution Service \"evidence\" on Andrew Mountbatten-Windsor.",
-   "url": "https://news.sky.com/story/republic-hands-over-evidence-on-andrew-mountbatten-windsor-to-police-and-cps-as-it-calls-for-investigation-13614007",
-   "at": "2026-11-19T23:00:00+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "UK conducting offensive cyber ops against Russia, China, Iran and North Korea, says top commander",
-   "desc": "The UK is conducting offensive cyber operations against Russia, China, Iran and North Korea, a top military commander has for the first time revealed.",
-   "url": "https://news.sky.com/story/uk-conducting-offensive-cyber-ops-against-russia-china-iran-and-north-korea-top-commander-reveals-13614163",
-   "at": "2026-11-19T20:35:00+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Grand Theft Auto fans skip work and pull all-nighters to play new instalment",
-   "desc": "Hotly anticipated Bonnie and Clyde-inspired adventure GTA VI has gamers glued to their screens around the world Grand Theft Auto fans around the world pulled all-nighters, skipped work and school, and attended overnight launch parties to vicariously embark on police chases and coordinate robberies as the latest instalment of the eagerly anticipated series arrived. GTA VI, a Bonnie and Clyde-inspired crime adventure game set in the fictional US state of Leonida, was launched at midnight on Wednesday after a 13-year wait. Continue reading...",
-   "url": "https://www.theguardian.com/games/2026/nov/19/grand-theft-auto-six-fans-skip-work-pull-all-nighters",
-   "at": "2026-11-19T20:07:23+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "‘Silence is not an option’: Joanne Young makes statement outside court – video",
-   "desc": "After the conviction of four men for sexually assaulting and raping her at the invitation of her husband, Philip Young, Joanne Young – who waived her anonymity before the prosecution – read a statement outside Winchester crown court. In it, she reflected on her belief that the case held a wider message about how the law deals with consent, and what the prosecution might mean for other women who are the victims of abuse by men Woman raped by strangers after being drugged by husband calls for consent law changes Spiked nightcaps and invitations to strangers: how Philip Young sexually abused his wife for 15 years Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/video/2026/nov/19/option-joanne-young-statement-outside-court-video",
-   "at": "2026-11-19T19:44:07+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "‘Welsh can tell any story’: Cymraeg dub of Star Wars premieres in Cardiff",
-   "desc": "Actors Mark Lewis Jones and Osian Morgan, who voiced characters in dub of 1977 film, among guests on red carpet It has been a memorable few days for Wales. At the weekend, the men’s rugby team secured a historic win against New Zealand – their first victory over the All Blacks in more than 70 years. Then on Thursday evening came another culturally significant moment when Cardiff rolled out the red carpet to celebrate the first Welsh-language dub of the Star Wars franchise. Stars of stage and screen who voiced the words of Luke Skywalker, Darth Vader, C-3PO et al in Welsh (Cymraeg) over the original 1977 Star Wars film took the plaudits at the Cineworld Cardiff screening. Continue reading...",
-   "url": "https://www.theguardian.com/film/2026/nov/19/welsh-cymraeg-dub-star-wars-cardiff",
-   "at": "2026-11-19T19:33:00+00:00"
   }
  ]
 }

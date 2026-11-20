@@ -1,16 +1,17 @@
 {
- "article": "Mercoledì 18 novembre le Borse europee hanno chiuso in calo: Milano ha perso l'1,32% a 50.173 punti, secondo l'Ansa, e Francoforte l'1,19%, Londra l'1,3% e Parigi lo 0,85%, secondo Teleborsa. Sempre Teleborsa riferisce che alle 18 lo spread tra Btp e Bund era a 108,29 punti, e i rendimenti decennali erano al 4,87% per la Francia, al 3,94% per la Spagna e al 5,31% per il Regno Unito. Il petrolio Wti ha ceduto il 4,03% a 82,54 dollari e l'oro il 2,64% a 3.747,40 dollari, secondo Teleborsa. L'Ansa scrive che il bitcoin è sceso a circa 62.000 dollari, il minimo da quattro mesi. Le fonti lette non danno ancora la chiusura di Wall Street di mercoledì.\n\nWall Street ha chiuso martedì 17 novembre in calo per il secondo giorno: il Dow Jones ha perso 848,75 punti, l'1,6%, a 50.759,42, l'S&P 500 l'1% a 7.340,53 e il Nasdaq lo 0,7% a 24.328,38, secondo l'elenco degli indici diffuso da La Nación. L'Ap, citata dalla stessa fonte, lega le perdite a Nvidia e ad altri titoli dell'intelligenza artificiale, con un peso anche dei finanziari; il rendimento dei Treasury è sceso e il petrolio è salito. CNBC titola che il Dow ha registrato la chiusura più bassa da giugno, mentre l'indice della volatilità è salito.\n\nDopo la chiusura Nvidia ha presentato i conti: ricavi di 115,84 miliardi di dollari contro 109,10 attesi e utile per azione di 2,68 dollari, secondo CNBC. Il titolo è salito del 2,3% nel dopo Borsa secondo l'Ansa. Stamattina la Borsa di Tokyo ha aperto in rialzo dello 0,25%, a 59.085,20 punti, dice l'Ansa, che lega il rimbalzo ai conti di Nvidia e alla speranza di una ripresa dei titoli dei chip; lo yen è a 159,50 sul dollaro. Alle 6:20 Hong Kong perdeva il 2,22% e Shanghai lo 0,9%, secondo Teleborsa.\n\nIn Europa martedì le Borse avevano chiuso in forte calo, riferisce l'Ansa: Francoforte meno 2,08%, Londra meno 1,76%, Parigi meno 1,62% e Milano meno 1,31%, a 50.845 punti. Lo spread tra Btp e Bund è a 105 punti base e il Btp decennale rende il 4,42%, sempre secondo l'Ansa. L'Ansa riferisce anche che il bitcoin è sceso a circa 62.000 dollari, il minimo da quattro mesi.\n\nSul fronte politico, il 16 novembre gli Stati Uniti hanno annunciato nuove regole contro l'accesso remoto della Cina ai chip avanzati, riporta Al Jazeera.",
- "change": "Le Borse europee chiudono in calo il 18 novembre; Wti -4%, oro -2,6%.",
+ "article": "Wall Street ha chiuso giovedì 19 novembre in forte calo per la sesta seduta di fila. Il Dow Jones ha perso il 2,19% scendendo sotto i 50.000 punti, il Nasdaq il 2,25% e l'S&P 500 il 2,02%, la serie negativa più lunga dal 2024, scrive l'Ansa. Al Jazeera riporta per il Nasdaq un calo del 2,3% e per l'S&P 500 del 2%.\n\nLa Borsa di Milano aveva chiuso giovedì in calo dello 0,46% a 49.941 punti, secondo l'Ansa, con Londra a meno 0,9%, Parigi a meno 0,8% e Amsterdam a meno 0,6%. Lo spread tra Btp e Bund si è chiuso a 107 punti base e il gas Ttf è salito del 4% a 84 euro al megawattora, riferisce l'Ansa.\n\nStamattina le Borse asiatiche sono in forte calo. Secondo Al Jazeera, nel corso degli scambi il Nikkei di Tokyo perdeva fino al 4,9%, il Kospi di Seul il 5,4%, il Taiex di Taipei oltre il 6,8% e l'Hang Seng di Hong Kong oltre il 2%. Sono valori in corso di seduta, non chiusure.\n\nAl Jazeera lega il calo ai timori su una bolla dell'intelligenza artificiale, che il debutto di Anthropic al Nasdaq non ha attenuato. Carlos Casanova, economista di Union Bancaire Privée, parla di «crollo di fiducia» nella tesi di investimento sull'intelligenza artificiale. Rajat Agarwal, di Société Générale, indica il rallentamento della crescita legata all'intelligenza artificiale. Il presidente della Fed Kevin Warsh ha detto, secondo l'Ansa, che l'intelligenza artificiale può aumentare la produttività ma comporta rischi di instabilità e che i rendimenti degli investimenti non sono garantiti.",
+ "change": "Wall Street chiude giovedì in calo di oltre il 2% per la sesta seduta; l'Asia crolla in mattinata.",
  "city": {"lat": 40.71, "lon": -74.01, "name": "New York"},
  "divergences": [],
  "facts": [
-  {"text": "Martedì 17 novembre il Dow Jones ha perso l'1,6%, l'S&P 500 l'1% e il Nasdaq lo 0,7%.", "who": ["La Nación", "CNBC"]},
-  {"text": "Nvidia ha battuto le attese con ricavi di 115,84 miliardi di dollari; il titolo sale dopo la chiusura.", "who": ["CNBC", "ANSA"]},
-  {"text": "Tokyo ha aperto in rialzo dello 0,25% a 59.085 punti; Hong Kong perde oltre il 2% a metà mattina.", "who": ["ANSA", "Teleborsa"]},
-  {"text": "Milano ha chiuso martedì a meno 1,31% e lo spread Btp-Bund è a 105 punti base.", "who": ["ANSA"]}
+  {"text": "Giovedì il Dow Jones ha perso il 2,19% scendendo sotto i 50.000 punti, il Nasdaq il 2,25% e l'S&P 500 il 2,02%, sesto calo consecutivo.", "who": ["ANSA", "Al Jazeera"]},
+  {"text": "Milano ha chiuso giovedì a meno 0,46% a 49.941 punti.", "who": ["ANSA"]},
+  {"text": "Stamattina Nikkei, Kospi e Taiex perdono in seduta tra il 4,9% e il 6,8%.", "who": ["Al Jazeera"]},
+  {"text": "Al Jazeera lega il calo ai timori su una bolla dell'intelligenza artificiale.", "who": ["Al Jazeera"]}
  ],
  "firstSeen": "2026-11-09T07:26:39+01:00",
  "history": [
+  {"at": "2026-11-20T07:23:03+01:00", "text": "20 novembre: Wall Street chiude giovedì in calo di oltre il 2% per la sesta seduta (Ansa); Asia in forte calo in mattinata, Nikkei fino a -4,9% (Al Jazeera)."},
   {"at": "2026-11-19T07:25:00+01:00", "text": "19 novembre: le Borse europee chiudono in calo il 18 (Milano -1,32%); Wti -4%, oro -2,6%; bitcoin a 62.000 dollari."},
   {"at": "2026-11-18T07:26:30+01:00", "text": "18 novembre: Wall Street chiude in calo per il secondo giorno (Dow -1,6%); conti Nvidia sopra le attese; Tokyo apre in rialzo, Hong Kong in forte calo."},
   {"at": "2026-11-17T07:26:00+01:00", "text": "17 novembre: Wall Street chiude in forte calo (Nasdaq -2,5%, S&P 500 -1,9%, Dow -1,4%), Nvidia -4,1%; Asia in ribasso."},
@@ -19,31 +20,27 @@
   {"at": "2026-11-13T07:23:00+01:00", "text": "13 novembre: Milano chiude a 51.808 punti (meno 0,27%), Wall Street in calo dello 0,4% con Nvidia a meno 4,3%; yen oltre 160 sul dollaro."},
   {"at": "2026-11-12T07:24:00+01:00", "text": "11 novembre sera: Milano chiude a 51.946 punti (più 0,37%); Nvidia perde circa il 7% dopo la chiusura Usa (Ansa)."},
   {"at": "2026-11-11T09:22:00+01:00", "text": "11 novembre: inflazione Usa sopra le attese, Wall Street in calo, Asia ed Europa in rialzo, Lane apre a un rialzo Bce a dicembre."},
-  {"at": "2026-11-10T07:25:00+01:00", "text": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang."},
-  {"at": "2026-11-09T07:26:39+01:00", "text": "Prima notizia: titoli IA e chip in forte calo a Wall Street, rimbalzo parziale venerdì."}
+  {"at": "2026-11-10T07:25:00+01:00", "text": "10 novembre: Tokyo rimbalza oltre il 3%; Nvidia in calo dopo le notizie su Huang."}
  ],
  "notCovered": [],
  "open": [
-  "Il rimbalzo di Nvidia dopo i conti si estenderà ai titoli dei chip alla riapertura di Wall Street?",
-  "Il Giappone interverrà sul cambio con lo yen, vicino a 160 sul dollaro?",
-  "Le Borse europee recupereranno dopo il calo di martedì?"
+  "Le Borse asiatiche chiuderanno con le stesse perdite viste in seduta?",
+  "Le Borse europee seguiranno l'Asia all'apertura?",
+  "Wall Street interromperà la serie di sei cali consecutivi?"
  ],
  "places": ["US", "JP"],
  "rank": 7,
  "section": "mercati",
  "sources": [
-  {"angle": "Chiusura di Wall Street del 17 novembre: livelli e variazioni di Dow, S&P 500, Nasdaq, Russell 2000.", "area": "Stati Uniti", "date": "2026-11-17", "country": "Argentina", "kind": "giornale", "name": "La Nación (Ap)", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-tuesday-11172026-nid17112026/"},
-  {"angle": "Conti di Nvidia, titolo dopo la chiusura, Dow ai minimi da giugno.", "area": "Stati Uniti", "date": "2026-11-17", "country": "Stati Uniti", "kind": "tv", "name": "CNBC", "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"},
-  {"angle": "Apertura di Tokyo, yen a 159,50, chiusure europee, spread, bitcoin.", "area": "Italia", "date": "2026-11-18", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/18/borsa-tokyo-apertura-in-lieve-rialzo-025_d8cf74ed-5459-46fc-b06d-63f454681383.html"},
-  {"angle": "Hong Kong a meno 2,22%, Shanghai e Tokyo in mattinata.", "area": "Italia", "date": "2026-11-18", "country": "Italia", "kind": "agenzia", "name": "Teleborsa", "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/agenda-del-18-novembre-2026-1_2026-11-18_TLB-BIT.html"}
- ],
+  {"angle": "Chiusura di Wall Street di giovedì, serie di sei cali, Anthropic, parole di Warsh.", "area": "Italia", "date": "2026-11-19", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/19/esordio-col-botto-per-anthropic-a-wall-street-a-11150-dollari-34_f4eebc5e-1ae4-4922-8a55-eaee32ab7ab8.html"},
+  {"angle": "Crollo delle Borse asiatiche in mattinata, commenti degli analisti sulla bolla dell'intelligenza artificiale.", "area": "Medio Oriente", "date": "2026-11-20", "country": "Qatar", "kind": "tv", "name": "Al Jazeera", "url": "https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears"} ],
  "status": "live",
- "summary": "Le Borse europee hanno chiuso mercoledì in calo: Milano meno 1,32%, secondo l'Ansa. Wti e oro cedono più del 2%, dice Teleborsa; Wall Street aveva chiuso martedì con il Dow a meno 1,6%.",
- "tags": ["Wall Street", "Nvidia", "Intelligenza artificiale"],
+ "summary": "Wall Street ha chiuso giovedì in calo di oltre il 2% per la sesta seduta di fila, dice l'Ansa. Stamattina le Borse asiatiche perdono fino al 6,8% in corso di seduta, secondo Al Jazeera.",
+ "tags": ["Wall Street", "Intelligenza artificiale", "Borse"],
  "themes": [],
- "title": "Borse: l'Europa chiude in calo, Milano a meno 1,32%",
- "updated": "2026-11-19T07:25:00+01:00",
- "view": "Sono certe le chiusure di martedì e i numeri dei conti di Nvidia. Le cause dei cali citate dall'Ap, il nervosismo sui titoli dell'intelligenza artificiale, sono una lettura dell'agenzia e non un fatto accertato; il rimbalzo asiatico è stato misto, con Hong Kong in forte calo.\n\nConta perché i titoli dell'intelligenza artificiale pesano molto sugli indici americani. Da guardare: la reazione di Wall Street ai conti di Nvidia, le Borse europee all'apertura e l'Ipo di Anthropic di giovedì.",
+ "title": "Borse: Wall Street chiude in calo di oltre il 2%, Asia in forte ribasso",
+ "updated": "2026-11-20T07:23:03+01:00",
+ "view": "Sono certe le chiusure di giovedì a Wall Street e a Milano. I valori asiatici sono di metà seduta e possono cambiare; il legame con i timori sull'intelligenza artificiale è la lettura di Al Jazeera e dei suoi analisti.\n\nConta perché il calo coinvolge insieme Stati Uniti e Asia ed è il sesto di fila a New York. Da guardare: le chiusure asiatiche, l'apertura delle Borse europee e i dati di oggi.",
  "photo": {"wiki": "it", "title": "Borsa di New York"},
- "figure": {"value": "-1,6%", "label": "il calo del Dow Jones martedì 17 novembre"}
+ "figure": {"value": "-2,19%", "label": "il calo del Dow Jones giovedì 19 novembre"}
 }

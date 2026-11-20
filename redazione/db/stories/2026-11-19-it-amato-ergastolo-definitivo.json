@@ -1,0 +1,34 @@
+{
+ "title": "Bologna: la Cassazione rende definitivo l'ergastolo a Giampaolo Amato",
+ "section": "italia",
+ "rank": 10,
+ "status": "live",
+ "summary": "La Cassazione ha respinto il ricorso e confermato l'ergastolo per Giampaolo Amato, condannato per la morte della moglie e della suocera a Bologna nel 2021.",
+ "article": "La Corte di Cassazione ha reso definitiva la condanna all'ergastolo per Giampaolo Amato, medico oftalmologo di Bologna, condannato per le morti della moglie e della suocera, avvenute nel 2021, riferiscono l'Ansa e Il Post il 19 novembre. La Corte ha respinto il ricorso della difesa, come aveva chiesto la procura, scrive Il Post.\n\nAmato era già stato condannato in primo e in secondo grado. Secondo Il Post il processo si è basato soprattutto su analisi scientifiche, e i consulenti dell'accusa e della difesa hanno dato interpretazioni opposte degli esami tossicologici.\n\nLe fonti lette non riportano dichiarazioni di Amato o della sua difesa oltre al ricorso presentato in Cassazione.",
+ "facts": [
+  {"text": "La Cassazione ha reso definitiva la condanna all'ergastolo per Giampaolo Amato.", "who": ["ANSA", "Il Post"]},
+  {"text": "La Corte ha respinto il ricorso della difesa, come chiesto dalla procura.", "who": ["Il Post"]},
+  {"text": "Il processo si è basato soprattutto su analisi scientifiche, con consulenti di accusa e difesa su posizioni opposte.", "who": ["Il Post"]}
+ ],
+ "view": "Con la sentenza della Cassazione la condanna è definitiva e non ci sono altri gradi di giudizio ordinari.\n\nSul piano del processo restano utili le motivazioni, che si conosceranno con il deposito. Da guardare: eventuali dichiarazioni della difesa.",
+ "open": [
+  "Quando saranno depositate le motivazioni della sentenza?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/19/uccise-moglie-e-suocera-ergastolo-definitivo-per-amato_769dde5b-339a-4514-a48c-6a7951a7b120.html", "angle": "La Cassazione rende definitiva la condanna all'ergastolo.", "at": "2026-11-19T21:38:00+01:00"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/19/giampaolo-amato-condanna-definitiva/", "angle": "Ricorso respinto, processo basato su analisi scientifiche.", "date": "2026-11-19"}
+ ],
+ "firstSeen": "2026-11-20T07:21:38+01:00",
+ "updated": "2026-11-20T07:21:38+01:00",
+ "change": "",
+ "tags": ["Cronaca", "Giustizia", "Bologna"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Bologna", "lat": 44.49, "lon": 11.34},
+ "photo": {"wiki": "it", "title": "Palazzo di Giustizia (Roma)"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-20T07:21:38+01:00", "text": "Prima notizia: ergastolo definitivo per Giampaolo Amato (Ansa, Il Post)."}
+ ]
+}

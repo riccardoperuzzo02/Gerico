@@ -1,40 +1,41 @@
 {
-  "article": "Anthropic ha collocato la sua offerta pubblica iniziale a 83 dollari per azione e ha raccolto 81,3 miliardi di dollari, la più grande quotazione di sempre, scrive Al Jazeera. Le azioni vendute sono 980 milioni, offerte da Anthropic e dai suoi sette cofondatori, contro i 825 milioni e la forchetta di 70-78 dollari indicati prima. La valutazione è di circa 1.500 miliardi di dollari, dice Al Jazeera; l'Ansa parla di un'offerta ampliata a 81 miliardi, più grande di quella di SpaceX.\n\nOltre all'offerta pubblica, secondo Al Jazeera Anthropic ha raccolto 26 miliardi con un collocamento privato, per un totale di 107,3 miliardi. Le contrattazioni al Nasdaq cominciano oggi, giovedì 19 novembre, con il simbolo ANT. Il Post scrive che l'offerta è la più alta di sempre.\n\nJay Ritter, esperto di quotazioni dell'Università della Florida, ha detto ad Al Jazeera che l'intelligenza artificiale è «la prossima grande cosa». Dan Ives, di Yorkville Ives, ha detto che la quotazione è una «grande vittoria a breve» per il settore tecnologico e dovrebbe aiutare a ripristinare la fiducia degli investitori.\n\nPrima del collocamento, l'Ansa citando Bloomberg aveva riferito che gli investitori istituzionali di Cina continentale e Hong Kong non potevano presentare ordini. L'operazione arriva dopo i conti di Nvidia e un calo dei titoli dell'intelligenza artificiale, scrive Il Post.",
-  "change": "Prezzo definitivo a 83 dollari, 81,3 miliardi raccolti; debutto oggi al Nasdaq.",
+  "article": "Anthropic ha debuttato giovedì 19 novembre al Nasdaq con il simbolo ANT. Il titolo ha aperto a 111,50 dollari, il 34% sopra il prezzo di collocamento di 83 dollari, e ha chiuso a 97,17 dollari, in rialzo del 17%, secondo l'Ansa. Il valore di mercato alla chiusura è di circa 1.300 miliardi di dollari, o 1.760 miliardi su base diluita, scrive sempre l'Ansa; Il Post indica una valutazione di circa 1.770 miliardi.\n\nL'offerta aveva raccolto 81,3 miliardi di dollari con 980 milioni di azioni, la più grande quotazione di sempre, scrive Al Jazeera. Secondo l'Ansa i sette cofondatori valgono ciascuno più di 20 miliardi di dollari e le commissioni alle banche sono circa 550 milioni, con Morgan Stanley e Goldman Sachs a circa 110 milioni a testa.\n\nL'amministratore delegato Dario Amodei ha detto alla campana di apertura, riporta l'Ansa, che l'azienda non cederà alle pressioni commerciali né a quelle politiche. Elon Musk ha elogiato Anthropic, dicendo che nessuno dei suoi dipendenti ha fatto scattare il suo «rilevatore del male».\n\nIl debutto è arrivato in una giornata negativa: i principali indici di Wall Street hanno chiuso in calo di oltre il 2%, per la sesta seduta consecutiva. Al Jazeera scrive oggi che il debutto non ha attenuato i timori di una bolla dell'intelligenza artificiale, che hanno fatto crollare le Borse asiatiche.",
+  "change": "Debutto al Nasdaq: apertura a 111,50 dollari, chiusura a 97,17 (+17% sul prezzo dell'Ipo).",
   "divergences": [],
   "notCovered": [],
   "facts": [
-    {"text": "Anthropic ha collocato 980 milioni di azioni a 83 dollari e raccolto 81,3 miliardi, la più grande Ipo di sempre.", "who": ["Al Jazeera", "ANSA"]},
-    {"text": "La valutazione è di circa 1.500 miliardi di dollari.", "who": ["Al Jazeera", "ANSA"]},
-    {"text": "Con un collocamento privato da 26 miliardi il totale raccolto è di 107,3 miliardi.", "who": ["Al Jazeera"]},
-    {"text": "Il debutto al Nasdaq è oggi, con il simbolo ANT.", "who": ["Al Jazeera", "Il Post"]}
+    {"text": "Anthropic ha chiuso il primo giorno al Nasdaq a 97,17 dollari, il 17% sopra il prezzo dell'Ipo di 83.", "who": ["ANSA"]},
+    {"text": "Il titolo ha aperto a 111,50 dollari, più 34% sul prezzo di collocamento.", "who": ["ANSA"]},
+    {"text": "L'offerta aveva raccolto 81,3 miliardi con 980 milioni di azioni, la più grande Ipo di sempre.", "who": ["Al Jazeera"]},
+    {"text": "Amodei ha detto che l'azienda non cederà alle pressioni commerciali né politiche.", "who": ["ANSA"]}
   ],
   "firstSeen": "2026-11-16T07:23:00+01:00",
   "history": [
+    {"at": "2026-11-20T07:23:03+01:00", "text": "20 novembre: debutto al Nasdaq, apertura a 111,50 dollari e chiusura a 97,17 (+17%); Wall Street chiude in calo di oltre il 2% (Ansa)."},
     {"at": "2026-11-19T07:25:00+01:00", "text": "19 novembre: prezzo definitivo a 83 dollari, 81,3 miliardi raccolti, valutazione di circa 1.500 miliardi; debutto oggi (Al Jazeera, Ansa)."},
     {"at": "2026-11-18T07:26:30+01:00", "text": "18 novembre: oggi il prezzo definitivo, forchetta 70-78 dollari, 825 milioni di azioni, debutto giovedì (Euronews)."},
     {"at": "2026-11-16T07:23:00+01:00", "text": "Prima notizia: Ipo di Anthropic attesa questa settimana, esclusi gli investitori di Cina e Hong Kong."}
   ],
   "open": [
-    "Come reagirà il titolo al debutto di oggi?",
+    "Come si muoverà il titolo nelle prossime sedute, con i mercati in calo?",
     "Gli investitori di Cina e Hong Kong resteranno esclusi anche sul mercato secondario?"
   ],
   "places": ["US", "CN"],
-  "rank": 15,
+  "rank": 13,
   "section": "tecnologia",
   "sources": [
-    {"angle": "Prezzo di 83 dollari, 980 milioni di azioni, 81,3 miliardi raccolti, valutazione, commenti di Ritter e Ives.", "area": "Medio Oriente", "date": "2026-11-19", "country": "Qatar", "kind": "tv", "name": "Al Jazeera", "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time"},
-    {"angle": "Offerta ampliata a 81 miliardi, confronto con SpaceX.", "area": "Italia", "at": "2026-11-19T02:07:00+01:00", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/19/anthropic-amplia-la-sua-ipo-a-81-miliardi-batte-quella-di-spacex-di-musk_b426c2fd-bd23-4965-a19e-0d17b6b400ad.html"},
-    {"angle": "La quotazione più alta di sempre, azioni a 83 dollari.", "area": "Italia", "date": "2026-11-19", "country": "Italia", "kind": "giornale online", "name": "Il Post", "url": "https://www.ilpost.it/2026/11/19/ipo-anthropic-piu-alta-di-sempre/"},
+    {"angle": "Apertura a 111,50 dollari, chiusura a 97,17, valore di mercato, commissioni, parole di Amodei e Musk.", "area": "Italia", "date": "2026-11-19", "country": "Italia", "kind": "agenzia", "name": "ANSA", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/19/esordio-col-botto-per-anthropic-a-wall-street-a-11150-dollari-34_f4eebc5e-1ae4-4922-8a55-eaee32ab7ab8.html"},
+    {"angle": "Prezzo di 83 dollari, 980 milioni di azioni, 81,3 miliardi raccolti.", "area": "Medio Oriente", "date": "2026-11-19", "country": "Qatar", "kind": "tv", "name": "Al Jazeera", "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time"},
+    {"angle": "Prima azienda di intelligenza artificiale quotata, valutazione di circa 1.770 miliardi.", "area": "Italia", "date": "2026-11-19", "country": "Italia", "kind": "giornale online", "name": "Il Post", "url": "https://www.ilpost.it/2026/11/19/anthropic-quotazione-nasdaq-intelligenza-artificiale/"},
     {"angle": "Forchetta di prezzo iniziale, azioni offerte, ordini degli investitori europei.", "area": "Europa", "date": "2026-11-18", "country": "Francia", "kind": "tv", "name": "Euronews", "url": "https://www.euronews.com/2026/11/18/anthropics-ipo-price-is-due-today-what-should-investors-know"}
   ],
   "status": "live",
-  "summary": "Anthropic ha fissato il prezzo dell'Ipo a 83 dollari per azione e ha raccolto 81,3 miliardi, la più grande quotazione di sempre, dice Al Jazeera. Il debutto al Nasdaq è oggi.",
+  "summary": "Anthropic ha debuttato al Nasdaq: apertura a 111,50 dollari, chiusura a 97,17, il 17% sopra il prezzo dell'Ipo, dice l'Ansa. I mercati sono in calo.",
   "tags": ["Anthropic", "Intelligenza artificiale", "Ipo"],
   "themes": [],
-  "title": "Anthropic: Ipo a 83 dollari per azione, raccolti 81 miliardi, debutto oggi",
-  "updated": "2026-11-19T07:25:00+01:00",
-  "view": "Sono certi prezzo, numero di azioni e importo raccolto, dichiarati dalla società e riportati da Al Jazeera. Il valore di circa 1.500 miliardi è una valutazione di mercato al prezzo di collocamento, non un dato di bilancio.\n\nConta perché è la maggiore quotazione di sempre e arriva dopo un periodo di calo dei titoli dell'intelligenza artificiale. Da guardare: l'andamento del titolo nel primo giorno di scambi.",
-  "figure": {"value": "81,3 mld $", "label": "raccolti con l'offerta pubblica, la più grande di sempre"},
+  "title": "Anthropic: debutto al Nasdaq, chiude a 97,17 dollari, più 17% sull'Ipo",
+  "updated": "2026-11-20T07:23:03+01:00",
+  "view": "Sono certi i prezzi di apertura e chiusura del primo giorno. Le valutazioni cambiano secondo la fonte, da 1.300 a 1.770 miliardi di dollari, perché alcune contano le azioni diluite.\n\nConta perché è la maggiore quotazione di sempre e arriva in una fase di calo dei titoli dell'intelligenza artificiale. Da guardare: l'andamento del titolo nelle prossime sedute.",
+  "figure": {"value": "+17%", "label": "il rialzo di Anthropic al debutto sul prezzo dell'Ipo"},
   "photo": {"wiki": "it", "title": "Nasdaq"}
 }

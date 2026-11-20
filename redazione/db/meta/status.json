@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: tre ricerche (occupati e disoccupazione Australia, Philadelphia Fed e sussidi Usa) non hanno dato il dato ufficiale di oggi. Nessuna voce nuova da aggiungere dal calendario."
   },
   "lastPublish": {
-    "at": "2026-11-19T18:46:57+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 3 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-20T07:31:59+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 3 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-19T13:21:30+01:00",
+  "lastRun": "2026-11-20T07:27:30+01:00",
   "marketsRun": {
     "at": "2026-11-19T18:46:47+01:00",
     "esito": "Aggiornate le chiusure del 19 novembre (Ansa): Ftse Mib -0,46% a 49.941, Dax circa -1%, Cac 40 -0,8%, Ftse 100 -0,9%, Aex -0,6%, spread 107, Btp 10 anni 4,47%, gas Ttf +4% a 84 euro. Mancano Smi, Bund, Brent, euro/dollaro di oggi. Agenda: nessun dato ufficiale nuovo trovato, non toccata."
@@ -19,10 +19,10 @@
     "Kyiv Independent",
     "Il Post",
     "Open",
-    "Times of Israel",
     "Euronews",
-    "CNBC",
-    "Teleborsa"
+    "Teleborsa",
+    "Milano Finanza",
+    "Il Sole 24 Ore"
   ],
   "paesiRun": {
     "at": "2026-11-19T09:50:06+01:00",
@@ -30,14 +30,14 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 14,
-    "at": "2026-11-19T13:21:30+01:00",
-    "factsChecked": 4,
+    "articlesRead": 26,
+    "at": "2026-11-20T07:27:30+01:00",
+    "factsChecked": 5,
     "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 0,
-    "storiesUpdated": 3
+    "storiesArchived": 12,
+    "storiesNew": 6,
+    "storiesUpdated": 5
   },
   "runningSince": null,
-  "storiesLive": 45
+  "storiesLive": 35
 }

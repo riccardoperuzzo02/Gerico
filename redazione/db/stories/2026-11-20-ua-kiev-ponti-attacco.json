@@ -1,0 +1,40 @@
+{
+ "title": "Ucraina: attacco russo su Kiev, colpiti tre ponti sul Dnipro, tre morti",
+ "section": "mondo",
+ "rank": 5,
+ "status": "live",
+ "summary": "Un attacco russo su Kiev nella notte ha colpito tre ponti sul Dnipro e causato almeno tre morti, dice il sindaco Klitschko. Putin aveva promesso una risposta all'attacco ucraino al ponte di Crimea.",
+ "article": "Un attacco russo con missili e droni ha colpito Kiev nella notte tra il 19 e il 20 novembre. Il sindaco Vitali Klitschko ha scritto su Telegram che sono stati danneggiati tre ponti sul Dnipro, il Podilsko-Voskresenskyi, il Darnytskyi e il Pivdennyi, e che il traffico è chiuso o limitato, riferisce Reuters. Secondo Reuters sono i colpi più gravi ai collegamenti tra le due sponde della capitale dall'inizio della guerra; l'agenzia non ha potuto confermare la notizia in modo indipendente.\n\nSul bilancio le fonti danno cifre diverse. Klitschko parla di tre morti e circa 15 feriti, riferisce Reuters. Il Kyiv Independent scrive che i morti sono almeno tre dipendenti dell'azienda idrica della città. L'Ansa, nel primo aggiornamento della mattina, riporta tre morti e due feriti secondo l'amministrazione militare della capitale, che ha pubblicato il dato su Telegram.\n\nSecondo il Kyiv Independent le esplosioni sono andate avanti per ondate tra l'1:25 e le 6:30 circa, e l'aeronautica ucraina aveva avvertito che i missili balistici erano diretti verso Kiev. La testata scrive anche che nel distretto di Pechersk sono mancati riscaldamento, elettricità e acqua dopo il colpo a un impianto di infrastruttura critica, e che altri incendi sono scoppiati in palazzi residenziali nei distretti di Obolonskyi e Podilskyi. Il numero di missili e droni lanciati non è indicato nelle fonti lette.\n\nAltri attacchi nella notte: secondo Reuters cinque persone sono rimaste ferite nella regione di Dnipropetrovsk, quattro a Kharkiv, dove un drone russo ha colpito un ospedale, e una a Zaporizhzhia. Reuters ricorda che Russia e Ucraina negano di colpire deliberatamente i civili.\n\nIl Kyiv Independent collega l'attacco alle parole di Putin, che dopo il terzo colpo ucraino in una settimana al ponte di Crimea ha promesso una risposta «molto più dolorosa» e ha detto che non negozierà una tregua sull'energia e sul commercio marittimo. Il giorno prima la Coalizione dei volenterosi, con Germania, Francia, Regno Unito e Ucraina, aveva chiesto a Mosca di accettare una tregua energetica per l'inverno. Zelensky ha detto ai giornalisti: «Se volete fermare la guerra, fermate il commercio con la Russia».\n\nLa notte precedente un lungo raid di droni su Kiev aveva ucciso una persona e danneggiato le ambasciate dei Paesi Bassi e dell'Austria e la cattedrale di San Volodymyr, scrivono il Kyiv Independent e Il Post. Il Kyiv Independent precisa che non è chiaro se il drone mirasse al quartiere delle ambasciate o sia stato abbattuto sopra la zona.",
+ "facts": [
+  {"text": "Secondo il sindaco Klitschko sono stati colpiti i ponti Podilsko-Voskresenskyi, Darnytskyi e Pivdennyi sul Dnipro.", "who": ["Reuters", "Kyiv Independent"]},
+  {"text": "Klitschko dice tre morti e circa 15 feriti; l'amministrazione militare, citata dall'Ansa, dice tre morti e due feriti.", "who": ["Reuters", "ANSA"]},
+  {"text": "Il Kyiv Independent scrive che le vittime sono almeno tre dipendenti dell'azienda idrica di Kiev.", "who": ["Kyiv Independent"]},
+  {"text": "Putin ha promesso una risposta all'attacco ucraino al ponte di Crimea e ha escluso una tregua su energia e commercio marittimo.", "who": ["Kyiv Independent"]},
+  {"text": "La notte prima un raid di droni su Kiev aveva danneggiato le ambasciate di Paesi Bassi e Austria e la cattedrale di San Volodymyr.", "who": ["Kyiv Independent", "Il Post"]}
+ ],
+ "view": "È accertato, dalle fonti lette, che tre ponti sono stati danneggiati e che ci sono almeno tre morti. Restano diverse le cifre dei feriti, il numero di armi usate e l'entità dei danni ai ponti, che Reuters non ha potuto verificare da sola.\n\nConta perché i ponti sono i collegamenti principali di una città di circa tre milioni di abitanti e perché l'attacco arriva dopo le minacce di Putin sul ponte di Crimea. Da guardare: il bilancio definitivo, la riapertura dei ponti e la risposta di Kiev.",
+ "open": [
+  "Quanti sono i feriti e quali danni hanno subito i tre ponti?",
+  "Quanti missili e droni ha lanciato la Russia nella notte?",
+  "L'Ucraina risponderà con nuovi colpi al ponte di Crimea?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/fire-broke-out-in-ukraine-s-kyiv-after-missile-strike-mayor-says", "angle": "Bilancio di Klitschko, nomi dei tre ponti, attacchi a Kharkiv, Dnipro e Zaporizhzhia.", "at": "2026-11-20T06:40:00+01:00"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/russia-launches-mass-missile-attack-against-ukraine-after-putin-vows-revenge/", "angle": "Cronologia dell'attacco, vittime tra i dipendenti dell'azienda idrica, parole di Putin e Zelensky.", "date": "2026-11-20"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/20/tre-morti-e-due-feriti-a-kiev-per-gli-attacchi-russi-della_34ddfa88-f333-4a2d-9fa5-8a1a3f882d20.html", "angle": "Bilancio dell'amministrazione militare di Kiev: tre morti e due feriti.", "at": "2026-11-20T06:30:00+01:00"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/19/kyiv-attacco-ambasciate-austria-paesi-bassi/", "angle": "Il raid del 19 novembre che ha danneggiato le ambasciate di Austria e Paesi Bassi.", "date": "2026-11-19"}
+ ],
+ "firstSeen": "2026-11-20T07:21:38+01:00",
+ "updated": "2026-11-20T07:21:38+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Russia", "Kiev"],
+ "themes": ["ucraina"],
+ "places": ["UA", "RU"],
+ "city": {"name": "Kiev", "lat": 50.45, "lon": 30.52},
+ "photo": {"wiki": "en", "title": "Pivdennyi Bridge"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-20T07:21:38+01:00", "text": "Prima notizia: attacco russo su Kiev, colpiti tre ponti sul Dnipro, almeno tre morti (Reuters, Kyiv Independent, Ansa)."}
+ ]
+}

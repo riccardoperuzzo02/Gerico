@@ -1,0 +1,35 @@
+{
+ "title": "Genova: aeroporto chiuso due ore per il sospetto avvistamento di droni",
+ "section": "italia",
+ "rank": 9,
+ "status": "live",
+ "summary": "Giovedì sera lo scalo Cristoforo Colombo di Genova è rimasto chiuso circa due ore per possibili droni nello spazio aereo. Un volo ITA Airways per Roma è rimasto fermo in pista.",
+ "article": "L'aeroporto Cristoforo Colombo di Genova è stato chiuso per circa due ore giovedì 19 novembre sera per il sospetto avvistamento di droni, riferiscono l'Ansa e Il Post. Secondo l'Ansa il divieto di volo nello spazio aereo intorno allo scalo è scattato alle 20:10 ed è stato tolto poco dopo le 22, a controlli conclusi.\n\nUn volo ITA Airways diretto a Roma Fiumicino è rimasto in pista senza autorizzazione al decollo, scrive l'Ansa. I passeggeri sono scesi dall'aereo e poi sono risaliti a bordo. Le segnalazioni, sempre secondo l'Ansa, riguardavano possibili droni a est e a ovest della pista.\n\nLe fonti lette non dicono chi abbia pilotato i droni, se siano stati davvero individuati né se ci siano indagini aperte.",
+ "facts": [
+  {"text": "L'aeroporto di Genova è stato chiuso circa due ore giovedì sera per il sospetto avvistamento di droni.", "who": ["ANSA", "Il Post"]},
+  {"text": "Il divieto di volo è durato dalle 20:10 a poco dopo le 22.", "who": ["ANSA"]},
+  {"text": "Un volo ITA Airways per Fiumicino è rimasto in pista e i passeggeri sono scesi e risaliti.", "who": ["ANSA"]}
+ ],
+ "view": "È certo che lo scalo è stato chiuso per circa due ore. Non è accertato che i droni ci fossero: le fonti parlano di sospetto avvistamento e di segnalazioni.\n\nConta perché i voli sono stati sospesi per un motivo di sicurezza. Da guardare: eventuali accertamenti delle autorità e nuove segnalazioni.",
+ "open": [
+  "I droni sono stati individuati e da chi erano pilotati?",
+  "Sono state aperte indagini sull'episodio?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/19/droni-sullaeroporto-di-genova-scalo-chiuso-per-due-ore_dea70ae7-5225-4a9e-8394-c28e5e7202d0.html", "angle": "Orari del divieto di volo, volo ITA fermo in pista.", "at": "2026-11-19T23:51:00+01:00"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/19/aeroporto-genova-chiuso-sospetti-droni/", "angle": "Scalo bloccato due ore per il presunto avvistamento.", "date": "2026-11-19"}
+ ],
+ "firstSeen": "2026-11-20T07:21:38+01:00",
+ "updated": "2026-11-20T07:21:38+01:00",
+ "change": "",
+ "tags": ["Droni", "Aeroporti", "Genova"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Genova", "lat": 44.41, "lon": 8.93},
+ "photo": {"wiki": "it", "title": "Aeroporto di Genova-Sestri"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-20T07:21:38+01:00", "text": "Prima notizia: aeroporto di Genova chiuso due ore per sospetti droni (Ansa, Il Post)."}
+ ]
+}

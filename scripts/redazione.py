@@ -49,6 +49,8 @@ GIRI = {
     "titoli": {"ore": {7: "7:02"}, "modello": "claude-opus-5-5", "turni": 60},
     # una volta, a mano: riscrive nello stile nuovo (redazione/stile.md) gli articoli delle storie live, senza notizie nuove
     "riscrivi": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 200},
+    # il commento del giorno (redazione/pensiero.md), dopo l'edizione delle 7:18
+    "pensiero": {"ore": {8: "8:40"}, "modello": "claude-opus-5-5", "turni": 60},
     "prova": {"ore": {}, "modello": "claude-sonnet-5-5", "turni": 1},
     # solo la pubblicazione del database com'è, senza Claude (dopo una correzione a mano)
     "pubblica": {"ore": {}, "modello": "", "turni": 0},
@@ -562,7 +564,7 @@ def cmd_pubblica(giro):
     gone = delete_old(db)
     py = sys.executable
     steps = [("check_dump.py", [db]), ("foto.py", [db, site]), ("export.py", [db, f"{site}/data"]), ("brevi.py", [db, f"{site}/data"]),
-             ("riepilogo.py", [db, f"{site}/data"]), ("titoli.py", [db, f"{site}/data"]),
+             ("riepilogo.py", [db, f"{site}/data"]), ("titoli.py", [db, f"{site}/data"]), ("pensiero.py", [db, site]),
              ("share_pages.py", [site]), ("social.py", [site]), ("check_site.py", [site])]
     outputs, error = {}, None
     for name, args in steps:

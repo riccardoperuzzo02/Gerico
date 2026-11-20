@@ -8,6 +8,8 @@ const FERIALI = [1, 2, 3, 4, 5];
 // ora di Roma (cambia da sola con l'ora legale)
 const ROMA = [
   { wf: "redazione.yml", ore: [[7, 18]], inputs: { giro: "notizie", variante: "7:18" } },
+  // il pensiero del giorno, dopo l'edizione delle 7:18 (redazione/pensiero.md)
+  { wf: "redazione.yml", ore: [[8, 40]], inputs: { giro: "pensiero" } },
   { wf: "redazione.yml", ore: [[9, 47]], inputs: { giro: "paesi" } },
   { wf: "redazione.yml", ore: [[13, 18]], inputs: { giro: "notizie", variante: "13:18" } },
   // i risultati dei dati usciti nell'agenda del Terminal: dopo i dati europei di mattina e dopo quelli americani delle 14:30

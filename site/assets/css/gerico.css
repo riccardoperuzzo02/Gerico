@@ -3371,3 +3371,28 @@ body.term .art-fonti-l { color: var(--t-ink); }
 .s-puntate time { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .s-puntate span { font-family: var(--serif, inherit); font-size: 1.0625rem; line-height: 1.35; }
 @media (hover: hover) { .s-puntate a:hover span { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule); } }
+
+/* ---------- il pensiero del giorno (20 novembre) ----------
+   Il commento di GERICO sotto l'apertura: una carta tranquilla, riconoscibile come opinione. Bordo in trasparenza,
+   angoli annidati (14 px fuori, il contenuto senza raggio), al buio una superficie più chiara al posto dell'ombra. */
+.pz-card {
+  display: grid; gap: 6px; margin: var(--f21, 21px) 0 0; padding: 18px 20px 18px 22px; position: relative;
+  border: 1px solid rgb(0 0 0 / 0.1); border-radius: 14px; background: var(--group, #fff); color: var(--ink); text-decoration: none;
+  transition: background-color var(--t-2, 160ms) var(--ease, ease), transform var(--t-2, 160ms) var(--ease, ease);
+}
+.pz-card::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 3px; border-radius: 0 3px 3px 0; background: var(--accent, #1B2F5B); }
+.pz-k { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent, #1B2F5B); }
+.pz-t { font-family: var(--serif, Georgia, serif); font-size: 1.375rem; font-weight: 600; line-height: 1.22; letter-spacing: -0.005em; }
+.pz-s { font-family: var(--serif, Georgia, serif); font-size: 1rem; line-height: 1.45; color: var(--muted); }
+.pz-m { margin-top: 2px; font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+@media (hover: hover) { .pz-card:hover { background: var(--fill); } .pz-card:hover .pz-t { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; } }
+.pz-card:active { transform: scale(0.99); }
+@media (prefers-reduced-motion: reduce) { .pz-card { transition: none; } .pz-card:active { transform: none; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pz-card { border-color: rgb(255 255 255 / 0.1); background: rgb(255 255 255 / 0.05); } }
+:root[data-theme="dark"] .pz-card { border-color: rgb(255 255 255 / 0.1); background: rgb(255 255 255 / 0.05); }
+@media (min-width: 760px) { .pz-t { font-size: 1.5rem; } }
+/* la pagina del pensiero */
+.pensiero .pz-tema { margin: 10px 0 0; font-family: var(--sans); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent, var(--ink)); }
+.pensiero .pz-nota { margin-top: var(--f21, 21px); padding-top: var(--f13, 13px); border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
+.pz-nav { display: grid; gap: 12px; }
+@media (min-width: 760px) { .pz-nav { grid-template-columns: 1fr 1fr; } }

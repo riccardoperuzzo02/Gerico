@@ -30,7 +30,7 @@ on:
       giro:
         description: Giro da fare
         type: choice
-        options: [prova, notizie, paesi, chiusure, agenda, titoli, riscrivi, pubblica]
+        options: [prova, notizie, paesi, chiusure, agenda, titoli, pensiero, riscrivi, pubblica]
         default: prova
       variante:
         description: "Per le notizie: giro delle 7:18 o delle 13:18 (auto: 7:18 prima delle 11)"

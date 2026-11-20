@@ -14,8 +14,8 @@ G.page("home", async function (P) {
   const slugOra = () => G.paeseInfo(paeseOra()).slug;
   const datiPaese = {};
   const caricaPaese = async (code) => { if (!(code in datiPaese)) datiPaese[code] = await G.load("paesi/" + code); return datiPaese[code]; };
-  const [ed, mk0, qt0, br, au0, tit, tsh, ff, ag] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
-    G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda"), caricaPaese(paeseOra())]);
+  const [ed, mk0, qt0, br, au0, tit, tsh, ff, ag, pz] = await Promise.all([G.load("edition"), G.load("markets"), G.load("quotes"), G.load("brevi"), G.load("audio"),
+    G.load("titoli"), G.load("titoli-storico"), G.load("calendario"), G.load("agenda"), G.load("pensiero"), caricaPaese(paeseOra())]);
   // i numeri dei mercati: quelli del job dei prezzi quando sono più freschi di quelli della redazione (G.withQuotes).
   // Cambiano a pagina aperta quando escono prezzi nuovi (G.liveQuotes, più sotto)
   let qt = qt0, mk = G.withQuotes(mk0, qt);
@@ -601,7 +601,7 @@ G.page("home", async function (P) {
     const breviPrima = state.section === "tutte" && !brInSide() && bl.length && G.interessi && G.interessi.lettura().includes("brevi");
     // nella scheda di un tema caldo le notizie partono subito (i temi si seguono dai Seguiti e dagli articoli)
     const top = (list.length
-      ? leadHTML(list[0], all) + (breviPrima ? breviHTML(bl, all) : "") + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
+      ? leadHTML(list[0], all) + (state.section === "tutte" ? pensieroHTML() : "") + (breviPrima ? breviHTML(bl, all) : "") + (list.length > 1 ? '<ol class="list">' + list.slice(1).map((s, i) => itemHTML(s, all, i + 1)).join("") + "</ol>" : "")
       // brevi di oggi, o solo di ieri e di prima: la riga lo dice com'è, con il giorno delle ultime
       : estero ? '<p class="none">' + esc(G.cap(G.paeseDa(paeseOra())) + G.L(", oggi, le brevi delle sue testate. ", ", today: briefs from its outlets. ") + (G.paeseInfo(paeseOra()).level === 1
         ? G.L("Gli articoli di GERICO sul paese compaiono qui quando escono.", "GERICO's articles on the country appear here when they come out.")
@@ -609,6 +609,16 @@ G.page("home", async function (P) {
       : '<p class="none">' + (bl.some((b) => b && G.isToday(b.at)) ? G.L("Oggi in questa sezione ci sono solo brevi.", "Today this section has only news in brief.")
         : G.L("Oggi in questa sezione non ci sono ancora notizie. Le ultime brevi, qui sotto, sono ", "No news in this section yet today. The latest news in brief, below, are ") + (lastDay(bl.map((b) => b.at)) || G.L("dei giorni scorsi", "from recent days")) + ".") + "</p>");
     return top + (brInSide() || (breviPrima && list.length) ? "" : breviHTML(bl, all)) + titoliHTML() + (brInSide() ? "" : pastHTML(past, all)) + end;
+  }
+
+  // ---------- il pensiero del giorno: il commento di GERICO, sotto l'apertura (scripts/pensiero.py) ----------
+  // si mostra il pensiero di oggi o di ieri; è un'opinione e lo dice
+  function pensieroHTML() {
+    const u = pz && pz.ultimo;
+    if (!u || !u.title || !/^pensiero\/\d{4}-\d{2}-\d{2}$/.test(String(u.url || "")) || G.dayAge(u.date + "T12:00:00+01:00") > 1) return "";
+    return '<a class="pz-card" href="' + esc(u.url) + '"><span class="pz-k">' + G.L("Il pensiero del giorno", "Today's opinion") + "</span>" +
+      '<span class="pz-t">' + esc(u.title) + "</span>" + (u.summary ? '<span class="pz-s">' + esc(u.summary) + "</span>" : "") +
+      '<span class="pz-m">' + esc([u.tema, G.L("Opinione di GERICO", "GERICO's opinion")].filter(Boolean).join(" · ")) + "</span></a>";
   }
 
   // ---------- ultim'ora: le notizie delle ultime ore scorrono in una fascia, come nei canali all-news ----------

@@ -638,6 +638,14 @@ def main(site):
     for p in extra:
         lines.append(f"<url><loc>{E(base + p)}</loc></url>")
         n_urls += 1
+    # il pensiero del giorno: l'elenco e una pagina per giorno (scripts/pensiero.py)
+    if os.path.exists(os.path.join(site, "pensiero.html")):
+        lines.append(f"<url><loc>{E(base + '/pensiero')}</loc></url>")
+        n_urls += 1
+    for f in sorted(os.listdir(os.path.join(site, "pensiero"))) if os.path.isdir(os.path.join(site, "pensiero")) else []:
+        if re.match(r"^\d{4}-\d{2}-\d{2}\.html$", f):
+            lines.append(f"<url><loc>{E(base + '/pensiero/' + f[:-5])}</loc><lastmod>{f[:-5]}</lastmod></url>")
+            n_urls += 1
     # le storie uscite dall'edizione restano nella sitemap: la loro pagina c'è ancora (le date dall'indice)
     in_edizione = {s["id"] for s in buone}
     for x in indice.get("storie") or []:

@@ -1,13 +1,62 @@
 {
  "code": "ES",
- "asOf": "2026-11-20T17:17:34+00:00",
+ "asOf": "2026-11-20T19:17:41+00:00",
  "items": [
+  {
+   "source": "El País",
+   "title": "El Supremo mantiene suspendido el voto a 163.000 nacionalizados por la ‘ley de nietos’ aunque ahora vivan en España",
+   "desc": "Los jueces exigen a la Junta Electoral que garantice que los afectados no figuren en el censo",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-20/el-supremo-mantiene-suspendido-el-voto-a-163000-nacionalizados-por-la-ley-de-nietos-aunque-ahora-vivan-en-espana.html",
+   "at": "2026-11-20T18:08:50+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Ayuso: \"Sánchez es el malo de la película y no hay que fiarse de él hasta el final\"",
+   "desc": "Durante un mitin en Ceuta, la presidenta madrileña ha llamado a movilizar el voto el 29N y ha acusado al Gobierno de acumular escándalos de corrupción.",
+   "url": "https://www.20minutos.es/nacional/ayuso-sanchez-es-malo-pelicula-no-hay-que-fiarse-hasta-final_7063890_0.html",
+   "at": "2026-11-20T18:07:11+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Aitor Esteban (PNV): \"El debate de Sánchez y Feijóo mostró que hay dos mundos, Euskadi y España\"",
+   "desc": "El líder del PNV reprocha que ninguno de los candidatos mencionara a Euskadi y defiende la necesidad de contar con una representación propia y fuerte en el Congreso.",
+   "url": "https://www.20minutos.es/nacional/aitor-esteban-pnv-debate-sanchez-feijoo-mostro-que-hay-dos-mundos-euskadi-espana_7063884_0.html",
+   "at": "2026-11-20T17:58:21+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El Gobierno defiende que el decreto de centros de datos evita 5.000 millones más a consumidores",
+   "desc": "Establece que el 80% de la energía consumida por los centros de datos deberá proceder de nuevas fuentes renovables y fija requisitos de sostenibilidad y soberanía digital.",
+   "url": "https://www.20minutos.es/nacional/gobierno-defiende-que-decreto-centros-datos-evita-5-000-millones-mas-consumidores_7063874_0.html",
+   "at": "2026-11-20T17:46:09+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La resaca del cara a cara Sánchez-Feijóo cierra la primera semana de campaña 29N y anticipa los \"platos fuertes\" del fin de semana",
+   "desc": "PSOE y PP se atribuyen la victoria en el debate, mientras Vox marca distancias con Feijóo y las izquierdas intensifican sus críticas en la recta final hacia el 29N.",
+   "url": "https://www.20minutos.es/nacional/resaca-cara-cara-sanchez-feijoo-cierra-primera-semana-campana-29n-anticipa-los-platos-fuertes-fin-semana_7063872_0.html",
+   "at": "2026-11-20T17:39:07+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Cerca de 90.000 alumnos de España acuden al colegio en pijama para visibilizar la situación de los niños tutelados",
+   "desc": "La iniciativa, titulada 'El día del pijama' e impulsada por la Asociación Estatal de Acogimiento Familiar (ASEAF) ha alcanzado este año su mayor participación.",
+   "url": "https://www.20minutos.es/nacional/cerca-90-000-alumnos-espana-acuden-colegio-pijama-para-visibilizar-situacion-los-ninos-tutelados_7063860_0.html",
+   "at": "2026-11-20T17:04:15+00:00"
+  },
   {
    "source": "El País",
    "title": "Detenido en Burgos con un arsenal de armas de fuego y machetes un instigador de la organización ciberterrorista NoName057(16)",
    "desc": "El arrestado, que ha quedado en libertad, llamaba a “tirotear” a ciudadanos ucranios desde los balcones y alentaba a “hablar de tú a tú” en la calle con los antidisturbios",
    "url": "https://elpais.com/espana/2026-11-20/detenido-en-burgos-con-un-arsenal-de-armas-de-fuego-y-machetes-un-instigador-de-la-organizacion-ciberterrorista-noname05716.html",
    "at": "2026-11-20T17:01:48+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Gonzalo Bernardos, economista, sobre por qué cree que Feijóo ganó el cara a cara: \"Sánchez no sabe debatir\"",
+   "desc": "Según el profesor de la Universidad de Barcelona, califica de \"delirante\" la teoría de que \"Sánchez perdió el debate porque siempre dice la verdad y Feijóo siempre miente\".",
+   "url": "https://www.20minutos.es/nacional/gonzalo-bernardos-economista-sobre-por-que-cree-feijoo-gano-cara-sanchez-no-sabe-debatir_7063836_0.html",
+   "at": "2026-11-20T16:54:20+00:00"
   },
   {
    "source": "20minutos",
@@ -46,7 +95,7 @@
   },
   {
    "source": "20minutos",
-   "title": "Feijóo, en su primer mitin tras el cara a cara, promete reformar la ley para devolver a sus familias a los menores migrantes",
+   "title": "Feijóo, en El Hierro tras el cara a cara, promete reformar la ley para devolver a sus familias a los menores migrantes",
    "desc": "El líder del PP acusa al Gobierno de Sánchez de provocar un \"efecto llamada\" y anuncia que condicionará los fondos de cooperación al control de la inmigración irregular si llega a la Moncloa.",
    "url": "https://www.20minutos.es/nacional/feijoo-promete-un-mando-unico-inmigracion-reformar-ley-para-devolver-sus-familias-los-menores-migrantes_7063784_0.html",
    "at": "2026-11-20T15:26:54+00:00"
@@ -64,13 +113,6 @@
    "desc": "El líder popular acusa al Gobierno de “frivolidad” en su primera visita a la isla y dice que la política migratoria “ha sido un verdadero fracaso”",
    "url": "https://elpais.com/espana/2026-11-20/feijoo-promete-en-la-restinga-fronteras-y-seguridad-y-condicionar-la-ayuda-al-desarrollo-al-control-migratorio.html",
    "at": "2026-11-20T15:01:16+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "El Supremo mantiene suspendido el voto a 163.000 nacionalizados por la ‘ley de nietos’ aunque ahora vivan en España",
-   "desc": "Los jueces exigen a la Junta Electoral que garantice que los afectados no figuren en el censo",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-20/el-supremo-mantiene-suspendido-el-voto-a-163000-nacionalizados-por-la-ley-de-nietos-aunque-ahora-vivan-en-espana.html",
-   "at": "2026-11-20T14:51:27+00:00"
   },
   {
    "source": "20minutos",
@@ -253,13 +295,6 @@
    "desc": "La compañía no descarta que terceras personas intenten \"obtener datos bancarios u otra información personal\" de los viajeros.",
    "url": "https://www.20minutos.es/nacional/renfe-advierte-que-hackers-podrian-intentar-obtener-datos-bancarios-los-viajeros-tras-ciberataque-sufrido-septiembre_7063558_0.html",
    "at": "2026-11-20T10:43:50+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Por qué aparece Óscar Puente en las listas del PSOE de las elecciones generales si dimitió y anunció que no se presentaría",
-   "desc": "La JEC confirma que Óscar Puente aparecerá en las listas del PSOE por Valladolid debido a los plazos legales de la LOREG pese a su dimisión.",
-   "url": "https://www.20minutos.es/nacional/por-que-aparece-oscar-puente-listas-psoe-elecciones-generales-si-dimitio-anuncio-que-no-se-presentaria_7062020_0.html",
-   "at": "2026-11-20T10:16:39+00:00"
   },
   {
    "source": "El Mundo",
@@ -456,27 +491,6 @@
    "desc": "El ex magistrado del Constitucional recibe el Premio Pelayo y pide ante Conde-Pumpido acabar con el \"mero reparto por cuotas políticas\" en la designación del TC Leer",
    "url": "https://www.elmundo.es/espana/2026/11/19/6aff47a7fc6c833b218b45ab.html",
    "at": "2026-11-19T19:31:19+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "El primer cruce",
-   "desc": "No se puede negar que Puigdemont es un fanático: tiene sus creencias y las defiende con tenacidad Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6aff2ce7fdddff42268b45d8.html",
-   "at": "2026-11-19T19:07:44+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Entrevista",
-   "desc": "El líder de Junts per Catalunya explica en exclusiva a EL MUNDO qué pasaría si el Partido Popular y Vox les necesitaran a su partido para conformar una mayoría Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/19/6aff350ae85ece75168b4594.html",
-   "at": "2026-11-19T18:01:34+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Entrevista",
-   "desc": "El líder de Junts per Catalunya relata por primera vez en exclusiva a EL MUNDO cómo el Gobierno le propuso inmortalizarse con el líder del PSOE de una manera que pareciera casual y cómo rechazó de plano la oferta Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/19/6aff26e3e85ece240e8b4592.html",
-   "at": "2026-11-19T18:01:30+00:00"
   }
  ]
 }

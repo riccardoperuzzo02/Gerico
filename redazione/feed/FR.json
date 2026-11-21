@@ -1,13 +1,48 @@
 {
  "code": "FR",
- "asOf": "2026-11-21T13:17:33+00:00",
+ "asOf": "2026-11-21T15:17:34+00:00",
  "items": [
   {
    "source": "franceinfo",
-   "title": "Mobilisation du 21 novembre : le cortège s'élance de la place de la République à Paris, pour le sixième samedi de manifestation",
-   "desc": "Ces rassemblements s'inscrivent dans le cadre d'un appel européen de syndicats et associations de défense du droit au logement à des actions coordonnées sur trois jours, de vendredi à dimanche.",
+   "title": "Mobilisation du 21 novembre : Une quarantaine de rassemblements recensés par le ministère de l'Intérieur en début d'après-midi",
+   "desc": "Ces actions s'inscrivent dans le cadre d'un appel européen de syndicats et associations de défense du droit au logement à des actions coordonnées sur trois jours, de vendredi à dimanche.",
    "url": "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html",
-   "at": "2026-11-21T13:13:57+00:00"
+   "at": "2026-11-21T14:44:55+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La Finlande soupçonne un hélicoptère russe d'avoir violé son espace aérien",
+   "desc": "L'appareil a pénétré jusqu'à 4,1 km à l'intérieur du territoire finlandais, a précisé le ministère de la Défense.",
+   "url": "https://www.franceinfo.fr/monde/russie/la-finlande-soupconne-un-helicoptere-russe-d-avoir-viole-son-espace-aerien_8293799.html",
+   "at": "2026-11-21T14:37:26+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : la Finlande soupçonne un hélicoptère russe d’être entré dans son espace aérien, quelques heures après une attaque au drone d’un cargo russe en mer Baltique",
+   "desc": "« Cette violation présumée de l’espace aérien pourrait être liée à des opérations de sauvetage ou de surveillance menées à la suite des dommages subis par un navire cargo dans le golfe de Finlande », a déclaré le ministre de la défense finlandais, Antti Häkkänen.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/21/en-direct-guerre-en-ukraine-la-finlande-soupconne-un-helicoptere-russe-d-etre-entre-dans-son-espace-aerien-quelques-heures-apres-une-attaque-de-drone-sur-un-cargo-russe-en-mer-baltique_6810982_3210.html",
+   "at": "2026-11-21T14:35:11+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Quand Elon Musk alertait sur les dangers de l’IA",
+   "desc": "L’entrepreneur de la tech, qui fait l’objet d’un documentaire à charge actuellement en salle aux Etats-Unis, vante aujourd’hui les mérites de l’intelligence artificielle. En 2017 pourtant, il partageait ses craintes en s’appuyant sur le film « Le Cerveau d’acier », dont il est fan.",
+   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/21/quand-elon-musk-alertait-sur-les-dangers-de-l-ia_6814022_4500055.html",
+   "at": "2026-11-21T14:00:11+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"My Rock Stars\" : le photographe Hassan Hajjaj immortalise ses stars de la musique",
+   "desc": "Au Musée de la musique à Paris, c'est l'histoire familiale du photographe, son inclination pour la musique gnawa et son attirance pour les musiciens en général que l'on découvre dans l'exposition qui lui est consacrée jusqu'en avril 2027.",
+   "url": "https://www.franceinfo.fr/culture/arts-expos/en-images-my-rock-stars-le-photographehassan-hajjaj-immortalise-ses-stars-de-la-musique_8289029.html",
+   "at": "2026-11-21T13:21:26+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Nous nous sentons ici chez nous\" : une brigade allemande de 5 000 soldats s'apprête à mener des exercices pendant un mois en Lituanie",
+   "desc": "Des renforts venus d’Allemagne participent à ces entraînements aux côtés du bataillon multinational de l’Otan, installé dans le pays depuis 2017.",
+   "url": "https://www.franceinfo.fr/monde/otan/nous-nous-sentons-ici-chez-nous-une-brigade-allemande-de-5-000-soldats-s-apprete-a-mener-des-exercices-pendant-un-mois-en-lituanie_8293721.html",
+   "at": "2026-11-21T13:20:20+00:00"
   },
   {
    "source": "franceinfo",
@@ -15,6 +50,34 @@
    "desc": "L'\"Abeille Bretagne\", le bateau remorqueur, est attendu sur zone samedi, mais ne pourra pas s'approcher à moins de 900 mètres, en raison des faibles fonds marins.",
    "url": "https://www.franceinfo.fr/faits-divers/le-remorquage-du-cargo-echoue-dans-les-landes-pourrait-prendre-plusieurs-jours-selon-la-prefecture_8293727.html",
    "at": "2026-11-21T13:06:49+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Florian Sitbon, adjoint à la culture au maire de Paris, veut « mettre l’artiste au cœur de la ville »",
+   "desc": "L’ancien metteur en scène, nommé en mars auprès d’Emmanuel Grégoire, prévoit la mise en place d’un guichet pour aider artistes et programmateurs qui voient leur liberté de création mise à mal.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/21/florian-sitbon-adjoint-a-la-culture-au-maire-de-paris-veut-mettre-l-artiste-au-c-ur-de-la-ville_6814019_3246.html",
+   "at": "2026-11-21T13:00:19+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le boom des embauches dans le secteur médico-social cache les fragilités de l’économie sociale et solidaire",
+   "desc": "Sans les créations d’emplois nécessaires pour accompagner le vieillissement de la population et le soin aux personnes âgées, l’ESS aurait perdu des postes sur un an.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/21/le-boom-des-embauches-dans-le-secteur-medico-social-cache-les-fragilites-de-l-economie-sociale-et-solidaire_6814018_3234.html",
+   "at": "2026-11-21T13:00:16+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Santé mentale : « Une société qui n’écoute pas la souffrance des enfants prépare les difficultés de demain »",
+   "desc": "La protection des enfants et des adolescents victimes de violences physiques et psychiques doit être une priorité pour quiconque entend gouverner la France, affirment, dans une tribune au « Monde », des scientifiques et des responsables politiques.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/21/sante-mentale-une-societe-qui-n-ecoute-pas-la-souffrance-des-enfants-prepare-les-difficultes-de-demain_6814017_3232.html",
+   "at": "2026-11-21T13:00:11+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Brésil, une nouvelle génération de gauche s’apprête à faire son entrée au Parlement",
+   "desc": "Lors des législatives du 4 octobre, les électeurs ont voté pour de jeunes députés progressistes. Alors que le gouvernement de Lula propose des économies budgétaires, ces élus veulent veiller à ce qu’il respecte ses promesses de campagne.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/21/au-bresil-une-nouvelle-generation-de-gauche-s-apprete-a-faire-son-entree-au-parlement_6814016_3210.html",
+   "at": "2026-11-21T13:00:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -31,11 +94,25 @@
    "at": "2026-11-21T12:57:06+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "Jusqu'à deux ans de prison ferme et le caractère raciste des violences retenu pour les trois policiers accusés d'avoir roué de coups Michel Zecler",
+   "desc": "La cour criminelle de Paris a rendu son verdict très attendu, vendredi soir, face à un public venu en nombre. Elle a finalement retenu la circonstance aggravante de racisme. Les peines vont de un an sous bracelet électronique à deux ans de prison ferme.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-condamnations-allant-d-un-an-a-deux-ans-de-prison-ferme-pour-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8292287.html",
+   "at": "2026-11-21T12:49:59+00:00"
+  },
+  {
    "source": "Le Monde",
-   "title": "Le Mexique arrête Fausto Isidro Meza, alias « Chapo Isidro », un puissant chef de cartel recherché par le FBI",
-   "desc": "Le narcotrafiquant a été arrêté au Mexique, vendredi, ce qui a déclenché de violents affrontements. Il opérait dans le nord de l’Etat de Sinaloa, et les Etats-Unis offraient une récompense de 5 millions de dollars pour son arrestation.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/21/le-mexique-arrete-fausto-isidro-meza-alias-chapo-isidro-un-puissant-chef-de-cartel-recherche-par-le-fbi_6814013_3210.html",
-   "at": "2026-11-21T12:49:49+00:00"
+   "title": "A Genève, la communauté internationale échoue à interdire les robots tueurs",
+   "desc": "Alors que la menace des systèmes d’armes létales autonomes, désormais assistées par l’intelligence artificielle, se fait chaque jour plus précise dans les zones de combat, la Russie, les Etats-Unis et Israël se sont opposés à l’ouverture de négociations pour un traité international sur ce type d’armes.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/21/a-geneve-la-communaute-internationale-echoue-a-interdire-les-robots-tueurs_6814012_3210.html",
+   "at": "2026-11-21T12:36:49+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un directeur d'école maternelle de Montpellier mis en examen pour viol et agression sexuelle",
+   "desc": "L’homme a été placé sous contrôle judiciaire et a interdiction d'exercer une fonction au contact d'enfants.",
+   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/un-directeur-d-ecole-maternelle-de-montpellier-mis-en-examen-pour-viol-et-agression-sexuelle_8293025.html",
+   "at": "2026-11-21T12:32:30+00:00"
   },
   {
    "source": "franceinfo",
@@ -50,13 +127,6 @@
    "desc": "D’abord scénariste pour des séries comme « Le Bureau des légendes », le cinéaste signe, à 45 ans, son premier long-métrage, qui montre le président français face au dilemme d’utiliser ou non l’arme nucléaire.",
    "url": "https://www.lemonde.fr/culture/article/2026/11/21/alexandre-smia-realisateur-de-jupiter-specialiste-des-histoires-a-haute-tension_6814011_3246.html",
    "at": "2026-11-21T12:00:09+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un mathématicien annonce la résolution de l'hypothèse de Riemann, l'un des plus célèbres problèmes du monde, avec l'aide d'une IA d'Anthropic",
-   "desc": "Levent Alpöge n'a publié qu'un récit de ces travaux sur son site personnel et non la démonstration intégrale, qui fait plus de 250 000 pages selon lui et n'a pu être vérifiée par aucun autre mathématicien.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/un-mathematicien-annonce-la-resolution-d-un-des-plus-celebres-problemes-du-monde-avec-l-aide-d-une-ia-d-anthropic_8293547.html",
-   "at": "2026-11-21T11:59:30+00:00"
   },
   {
    "source": "franceinfo",
@@ -94,13 +164,6 @@
    "at": "2026-11-21T11:25:29+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Budget de l’UE : Antonio Costa, le président du Conseil européen, propose 204 milliards d’euros d’économies et une taxe numérique",
-   "desc": "La France a rejeté la nouvelle proposition du dirigeant européen. M. Costa soumettra sa proposition de compromis aux dirigeants de l’Union européenne lors d’un sommet organisé jeudi et vendredi à Bruxelles.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/21/budget-de-l-ue-antonio-costa-le-president-du-conseil-europeen-propose-204-milliards-d-euros-d-economies-et-une-taxe-numerique_6813983_3234.html",
-   "at": "2026-11-21T11:01:50+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "\"Je crois que raconter l’histoire des mafias, notamment à travers le cinéma, est extrêmement utile\" : Roberto Saviano est l'invité exceptionnel du Festival du film d'Histoire de Pessac",
    "desc": "L’écrivain italien qui a dénoncé la Camorra fait l'objet d'un documentaire, \"Gomorra, Manifeste antimafia\", et nous parle de ses goûts de cinéphile.",
@@ -136,13 +199,6 @@
    "at": "2026-11-21T10:08:31+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Thomas Piketty : « Le projet de convention fiscale de l’ONU a le potentiel de changer la face du monde »",
-   "desc": "Les négociations aux Nations unies autour d’une convention-cadre sur la coopération fiscale reprennent à Nairobi le 30 novembre. Les Occidentaux seraient bien inspirés de s’y intéresser, faute de quoi ils risquent de passer à côté de l’histoire, explique l’économiste dans sa chronique.",
-   "url": "https://www.lemonde.fr/la-chronique-de-thomas-piketty/article/2026/11/21/thomas-piketty-le-projet-de-convention-fiscale-de-l-onu-a-le-potentiel-de-changer-la-face-du-monde_6813978_6649149.html",
-   "at": "2026-11-21T10:00:13+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Préfet soupçonné de fuites vers le RN : \"Il doit être mis à pied\", estime la députée écologiste Sandrine Rousseau",
    "desc": "Sandrine Rousseau appelle le ministre de l'Intérieur Laurent Nuñez à mettre à pied “immédiatement” le préfet du Loiret Hugues Moutouh, accusé d’avoir organisé des fuites depuis le ministère de l’Intérieur vers le Rassemblement national. La députée écologiste était l’invitée de franceinfo, samedi 21 novembre.",
@@ -157,13 +213,6 @@
    "at": "2026-11-21T09:51:43+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Pas question de mettre mon père en contact d’urgence, le temps qu’il décroche, je serai déjà morte… »",
-   "desc": "Dans sa chronique, Guillemette Faure met en lumière les transformations invisibles de notre époque. Cette semaine, le choix cornélien de celui ou celle à avertir en cas de pépin.",
-   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/21/pas-question-de-mettre-mon-pere-en-contact-d-urgence-le-temps-qu-il-decroche-je-serai-deja-morte_6813958_4500055.html",
-   "at": "2026-11-21T09:00:09+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Christine Lagarde, un recours pour la droite et le centre à l’élection présidentielle ?",
    "desc": "Certains dans l'ombre observent les mouvements dans les sondages des candidats actuellement déclarés, voulant à tout prix à éviter un duel final entre Marine Le Pen et Jean-Luc Mélenchon. Ils testent même de nouveaux noms, cherchant le candidat ou la candidate pourrait sauver le \"bloc central\".",
@@ -172,8 +221,8 @@
   },
   {
    "source": "France 24",
-   "title": "Manifestations en direct : nouvelle journée de mobilisation pour la jeunesse et contre la vie chère",
-   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et Gilets jaunes appellent à protester contre la vie chère, dans un contexte de colère sociale devenue européenne mais qui commence à s'essouffler en France. Des manifestations contre les violences faites aux femmes sont également attendues à dans toute la France. Suivez notre direct.",
+   "title": "En direct : le cortège s'élance à Paris pour un sixième samedi de manifestation",
+   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et Gilets jaunes manifestent contre la vie chère, dans un contexte de colère sociale devenue européenne mais qui commence à s'essouffler en France. Des manifestations contre les violences faites aux femmes sont également attendues dans tout le pays. Suivez notre direct.",
    "url": "https://www.france24.com/fr/france/20261121-en-direct-acte-vi-de-la-mobilisation-pour-la-jeunesse-et-contre-la-vie-ch%C3%A8re",
    "at": "2026-11-21T08:23:49+00:00"
   },
@@ -185,25 +234,11 @@
    "at": "2026-11-21T08:08:46+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Serge Money, avocat de Michel Zecler, salue une \"décision historique\" mais les peines \"laissent un petit goût amer\"",
-   "desc": "C'est une \"décision historique\", a réagi sur franceinfo Serge Money, l'avocat de Michel Zecler, après la condamnation des trois policiers vendredi.",
-   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/serge-money-avocat-de-michel-zecler-salue-une-decision-historique-mais-les-peines-laissent-un-petit-gout-amer_8293472.html",
-   "at": "2026-11-21T07:56:43+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Inondations dans le Pas-de-Calais : deux cours d’eau en vigilance orange ; près de 800 évacuations depuis jeudi, selon la préfecture",
    "desc": "En Normandie, Vigicrues a prévenu que le niveau maximum de la Vire, placée en vigilance jaune, « est en passe d’être atteint ce [samedi] matin » dans le secteur de Saint-Lô et qu’il est « susceptible de générer des débordements localisés ».",
    "url": "https://www.lemonde.fr/planete/article/2026/11/21/inondations-dans-le-pas-de-calais-la-canche-reste-en-vigilance-orange-pres-de-800-evacuations-depuis-jeudi-selon-la-prefecture_6813953_3244.html",
    "at": "2026-11-21T07:01:53+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En Catalogne, l’éventuel retour des phoques moines sur la Costa Brava inquiète déjà les pêcheurs",
-   "desc": "Une étude va être lancée en 2027 pour réinstaller une colonie de mammifères marins sur le littoral catalan où le dernier représentant de l’espèce est mort en 1973. Les pêcheurs craignent de voir leurs prises diminuer en raison de la prédation des phoques.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/21/en-catalogne-l-eventuel-retour-des-phoques-moines-sur-la-costa-brava-inquiete-deja-les-pecheurs_6813951_3244.html",
-   "at": "2026-11-21T06:30:01+00:00"
   },
   {
    "source": "franceinfo",
@@ -235,17 +270,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Téléphonie mobile par satellite : le chemin tortueux des opérateurs européens vers une constellation souveraine",
-   "desc": "Face à Starlink, Orange, Deutsche Telekom, Telefonica et Vodafone veulent créer un service mobile par satellite européen et souverain. Mais les délais, le coût et le manque de solutions disponibles compliquent leur projet.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/21/telephonie-mobile-par-satellite-le-chemin-tortueux-des-operateurs-europeens-vers-une-constellation-souveraine_6813948_3234.html",
+   "title": "A Agen, les irréductibles opposants à la ligne à grande vitesse Bordeaux-Toulouse : « On a un pays qui est superbe et ils vont venir le massacrer. Qu’est-ce qu’on va laisser à nos enfants ? »",
+   "desc": "Dans le Lot-et-Garonne, les déboisements préalables au chantier de la ligne à grande vitesse Bordeaux-Toulouse sont sur le point de commencer. Autour d’Agen, les opposants à ce projet, lancé en 2009, balaient les arguments d’attractivité économique et de gain de temps pour dénoncer son coût exorbitant et son impact désastreux sur l’environnement.",
+   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/21/a-agen-les-irreductibles-opposants-a-la-ligne-a-grande-vitesse-bordeaux-toulouse-on-a-un-pays-qui-est-superbe-et-ils-vont-venir-le-massacrer-qu-est-ce-qu-on-va-laisser-a-nos-enfants_6813947_4500055.html",
    "at": "2026-11-21T06:00:05+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : « L’Ukraine a le droit de riposter contre l’agresseur », déclare le premier ministre finlandais, à la suite de l’attaque d’un cargo russe dont l’origine n’est pas encore connue",
-   "desc": "Plus tôt, Alexandre Drozdenko, le gouverneur de l’oblast de Leningrad, écrivait sur son compte Telegram qu’un « cargo en route vers la ville de Kaliningrad a été attaqué à l’aide de deux drones », et ce « à trois milles marins de la frontière avec la Fédération de Russie ».",
-   "url": "https://www.lemonde.fr/international/live/2026/11/21/en-direct-guerre-en-ukraine-deux-morts-et-47-blesses-dans-des-frappes-russes-sur-kryvy-rih-ville-natale-de-volodymyr-zelensky_6810982_3210.html",
-   "at": "2026-11-21T05:38:14+00:00"
   },
   {
    "source": "Le Monde",
@@ -267,6 +295,13 @@
    "desc": "Les images d'un cargo, qui s'est échoué non loin de la plage du Cap de l'Homy, à Lit et Mixe, dans les Landes, impressionnent. Les membres d'équipage, 19 marins, qui prenaient la direction du port de Rouen, ont pu être hélitreuillés. L'Abeille Bretagne, remorqueur de haute mer, se rend sur place afin d'évaluer la situation.",
    "url": "https://www.franceinfo.fr/france/nouvelle-aquitaine/landes/cargo-echoue-sur-une-plage-des-landes-comment-va-se-passer-la-remise-a-flot-de-l-enorme-navire_8292887.html",
    "at": "2026-11-20T22:57:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Guerre en Ukraine : Emmanuel Macron dénonce un \"agenda agressif\" de la Russie, après une série d'\"incidents graves\", notamment en Pologne et au Danemark",
+   "desc": "Des missiles russes sont tombés vendredi en Pologne, non loin de la frontière ukrainienne, sans faire de blessé.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-un-missile-russe-tombe-dans-le-sud-est-de-la-pologne-sans-faire-de-blesse_8292080.html",
+   "at": "2026-11-20T22:54:33+00:00"
   },
   {
    "source": "France 24",
@@ -297,6 +332,13 @@
    "at": "2026-11-20T19:02:24+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "Le Danemark soupçonne la Russie d'avoir planifié l'assassinat d'un rappeur ukrainien sur son sol",
+   "desc": "Les faits remontent au 25 septembre et la cible présumée a été identifiée par la presse danoise comme le rappeur Kyivstoner.",
+   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/le-danemark-soupconne-la-russie-d-avoir-planifie-l-assassinat-d-un-ukrainien-sur-son-sol_8292689.html",
+   "at": "2026-11-20T17:41:08+00:00"
+  },
+  {
    "source": "France 24",
    "title": "Fuites au ministère de l'Intérieur : comment le RN a progressivement séduit les hauts fonctionnaires",
    "desc": "Le parquet de Paris soupçonne l'ancien secrétaire général de Beauvau et actuel préfet du Loiret et de la région Centre-Val de Loire, Hugues Moutouh, d'avoir informé le Rassemblement national sur des enquêtes judiciaires visant le parti. Une affaire qui illustre l'influence grandissante du parti lepéniste dans les hautes sphères de l'État.",
@@ -309,20 +351,6 @@
    "desc": "La sécheresse s'installe durablement en Outre-mer. Le manque d'eau fragilise les cultures et menace les récoltes aux Antilles et à La Réunion. La situation est également très préoccupante en Guyane, où le niveau du fleuve continue de baisser.",
    "url": "https://www.france24.com/fr/%C3%A9missions/outre-mer/20261120-de-l-oc%C3%A9an-indien-aux-cara%C3%AFbes-la-s%C3%A9cheresse-frappe-plusieurs-territoires-d-outre-mer",
    "at": "2026-11-20T15:36:16+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Les féminicides, la partie émergée du contrôle coercitif",
-   "desc": "Les féminicides font aussi des victimes invisibles : les proches des femmes assassinées, confrontées à un deuil impossible et à des embûches judiciaires. Dans 75 % des cas, le féminicide survient sans violences physiques préalables, mais au terme d'une période de contrôle coercitif : une prison invisible faite d'emprise et de violences psychologiques, explique l'historienne Christelle Taraud, qui décrit des victimes \"zombifiées\" par leur tortionnaire.",
-   "url": "https://www.france24.com/fr/%C3%A9missions/actuelles/20261120-les-f%C3%A9minicides-la-partie-%C3%A9merg%C3%A9e-du-contr%C3%B4le-coercitif",
-   "at": "2026-11-20T14:46:33+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Gérard Depardieu et Michel Houellebecq accusés de viol en réunion et d'agressions sexuelles",
-   "desc": "Gérard Depardieu est de nouveau accusé de viol – en réunion cette fois, avec la complicité supposée de l'écrivain Michel Houellebecq, selon des sources proches du dossier, confirmant vendredi des révélations de Mediapart. Les faits, dénoncés par une comédienne, remonteraient au tournage du film \"Thalasso\" en 2018.",
-   "url": "https://www.france24.com/fr/france/20261120-g%C3%A9rard-depardieu-et-michel-houellebecq-accus%C3%A9s-de-viol-en-r%C3%A9union-et-d-agressions-sexuelles",
-   "at": "2026-11-20T14:38:36+00:00"
   }
  ]
 }

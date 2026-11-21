@@ -1,7 +1,21 @@
 {
  "code": "US",
- "asOf": "2026-11-21T07:17:34+00:00",
+ "asOf": "2026-11-21T09:17:34+00:00",
  "items": [
+  {
+   "source": "NPR",
+   "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+   "desc": "Efforts to establish rules for AI-powered killer robots and drones have run aground. U.N.-backed talks in Geneva ended Saturday with an agreement to extend discussions for two more years.",
+   "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+   "at": "2026-11-21T08:08:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "New Ph.D. Enrollment in the Sciences Dropped 10 Percent Under Trump",
+   "desc": "Falling international enrollment drove most of the decline, but there were also fewer American students starting doctoral programs in 2025.",
+   "url": "https://www.nytimes.com/2026/11/20/us/phd-enrollment-sciences-declines.html",
+   "at": "2026-11-21T07:47:27+00:00"
+  },
   {
    "source": "CNBC",
    "title": "How China is using summits to expand its global influence",
@@ -28,7 +42,7 @@
    "title": "Federal Court Halts Pregnant Workers’ Protection Law",
    "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
-   "at": "2026-11-21T05:53:08+00:00"
+   "at": "2026-11-21T05:53:09+00:00"
   },
   {
    "source": "New York Times",
@@ -357,7 +371,7 @@
    "title": "Texas Prisoner Moaned as Drugs Flowed During Execution, Witnesses Say",
    "desc": "Prison personnel placed needles in the neck and foot of Reinaldo Dennes, who was convicted of killing a diamond broker 30 years ago. The lethal injection routine took more than an hour.",
    "url": "https://www.nytimes.com/2026/11/20/us/texas-execution-lethal-injection-reinaldo-dennes.html",
-   "at": "2026-11-20T20:17:01+00:00"
+   "at": "2026-11-20T20:17:02+00:00"
   },
   {
    "source": "New York Times",
@@ -378,7 +392,7 @@
    "title": "Ron DeSantis Ponders a Presidential Run in a Post-Trump World",
    "desc": "In a wide-ranging interview, the governor of Florida talked about the potential timing of a presidential run. “I haven’t made any decisions,” he said.",
    "url": "https://www.nytimes.com/2026/11/20/us/politics/ron-desantis-florida-2028.html",
-   "at": "2026-11-20T20:02:43+00:00"
+   "at": "2026-11-20T20:02:44+00:00"
   },
   {
    "source": "CNBC",
@@ -448,7 +462,7 @@
    "title": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
    "desc": "The president suggested he would tax the same companies, though it was not clear how he would carry out the plan unveiled at a news conference.",
    "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
-   "at": "2026-11-20T18:51:22+00:00"
+   "at": "2026-11-20T18:51:23+00:00"
   },
   {
    "source": "NPR",
@@ -598,13 +612,6 @@
    "at": "2026-11-20T13:29:50+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Texas execution took over an hour as staff struggled to find vein; Reinaldo Dennes moaned about pain",
-   "desc": "The same day Dennes was given lethal injection, Florida carried out a record-breaking 20th execution of the year.",
-   "url": "https://www.npr.org/2026/11/20/nx-s1-6048461/texas-execution-dennes-moaned-pain",
-   "at": "2026-11-20T12:24:40+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "A24 is having a great year at the box office. That could give HBO Max a streaming edge",
    "desc": "A24 films \"Backrooms,\" \"The Drama\" and the Elizabeth Holmes documentary, \"You Can See Everything,\" are fueling a banner year at the box office.",
@@ -617,13 +624,6 @@
    "desc": "With Democrats set to take decisive House and Senate majorities, some members want to pressure the Trump administration to end the Iran war. The exact plan is not clear.",
    "url": "https://www.cbsnews.com/news/iran-war-democrats-congress-trump/",
    "at": "2026-11-20T11:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "New Ph.D. Enrollment in the Sciences Dropped 10 Percent Under Trump",
-   "desc": "Falling international enrollment drove most of the decline, but there were also fewer American students starting doctoral programs in 2025.",
-   "url": "https://www.nytimes.com/2026/11/20/us/phd-enrollment-sciences-declines.html",
-   "at": "2026-11-20T10:02:26+00:00"
   }
  ]
 }

@@ -1,7 +1,56 @@
 {
  "code": "FR",
- "asOf": "2026-11-21T07:17:34+00:00",
+ "asOf": "2026-11-21T09:17:34+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Un policier condamné à 18 mois de prison ferme pour un tir mortel sur un automobiliste noir en Seine-Saint-Denis",
+   "desc": "\"Après visionnage réitéré\" des images de vidéosurveillance de la ville de Sevran, la cour a exclu que ce membre de la BAC ait agi dans le cadre de la légitime défense invoquée.",
+   "url": "https://www.franceinfo.fr/faits-divers/justice-proces/un-policier-condamne-a-18-mois-de-prison-ferme-pour-un-tir-mortel-sur-un-automobiliste-noir-en-seine-saint-denis_8293448.html",
+   "at": "2026-11-21T08:42:06+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Christine Lagarde, un recours pour la droite et le centre à l’élection présidentielle ?",
+   "desc": "Certains dans l'ombre observent les mouvements dans les sondages des candidats actuellement déclarés, voulant à tout prix à éviter un duel final entre Marine Le Pen et Jean-Luc Mélenchon. Ils testent même de nouveaux noms, cherchant le candidat ou la candidate pourrait sauver le \"bloc central\".",
+   "url": "https://www.franceinfo.fr/replay-radio/le-brief-politique/christine-lagarde-un-recours-pour-la-droite-et-le-centre-a-l-election-presidentielle_8271749.html",
+   "at": "2026-11-21T08:41:41+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "En direct : Acte VI de la mobilisation pour la jeunesse et contre la vie chère",
+   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et gilets jaunes appellent à protester dans la rue contre la vie chère, dans un contexte de grogne sociale devenue européenne mais qui commence à s'essouffler en France. Des manifestations contre les violences faites aux femmes sont également attendues à partir de samedi dans toute la France. Suivez notre direct sur cette page.",
+   "url": "https://www.france24.com/fr/france/20261121-en-direct-acte-vi-de-la-mobilisation-pour-la-jeunesse-et-contre-la-vie-ch%C3%A8re",
+   "at": "2026-11-21T08:23:49+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il aurait fallu réagir avant\" : dans le Pas-de-Calais, des habitants fatigués et en colère face à des crues à répétition",
+   "desc": "Face à l'intensification des épisodes de fortes pluies, les habitants du secteur de Montreuil-sur-Mer s'interrogent sur les réponses apportées depuis les inondations de 2023 et sur l'adaptation de leur territoire au changement climatique.",
+   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/il-aurait-fallu-reagir-avant-dans-le-pas-de-calais-des-habitants-fatigues-et-en-colere-face-a-des-crues-a-repetition_8293445.html",
+   "at": "2026-11-21T08:08:46+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Serge Money, avocat de Michel Zecler, salue une \"décision historique\" mais les peines \"laissent un petit goût amer\"",
+   "desc": "C'est une \"décision historique\", a réagi sur franceinfo Serge Money, l'avocat de Michel Zecler, après la condamnation des trois policiers vendredi.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/serge-money-avocat-de-michel-zecler-salue-une-decision-historique-mais-les-peines-laissent-un-petit-gout-amer_8293472.html",
+   "at": "2026-11-21T07:56:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Pyrénées-Atlantiques : le mari de Laure Zacchello, disparue depuis deux ans, est désormais mis en examen pour assassinat",
+   "desc": "Le mari de Laure Zacchello, disparue depuis deux ans, est désormais mis en examen pour assassinat, et non plus pour meurtre sur conjoint.",
+   "url": "https://www.franceinfo.fr/faits-divers/pyrenees-atlantiques-le-mari-de-laure-zacchello-disparue-depuis-deux-ans-est-desormais-mis-en-examen-pour-assassinat_8293466.html",
+   "at": "2026-11-21T07:09:56+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présomption d’usage légal des armes par les forces de l’ordre : \"Ce n'est en aucun cas un permis de tuer\", estime le syndicat Unsa Police",
+   "desc": "\"Ce n'est en aucun cas un permis de tuer\", explique ce samedi sur franceinfo, Rudy Manna, délégué national du syndicat Unsa Police au sujet de la présomption d’usage légal des armes par les forces de l’ordre qui a été définitivement adoptée vendredi soir par le Parlement. \"Ce n'est pas une présomption générale de légitime défense\", assure-t-il.",
+   "url": "https://www.franceinfo.fr/faits-divers/police/presomption-d-usage-legal-des-armes-par-les-forces-de-l-ordre-ce-n-est-en-aucun-cas-un-permis-de-tuer-estime-le-syndicat-unsa-police_8293457.html",
+   "at": "2026-11-21T07:03:27+00:00"
+  },
   {
    "source": "Le Monde",
    "title": "Inondations dans le Pas-de-Calais : la Canche reste en vigilance orange ; près de 800 évacuations depuis jeudi, selon la préfecture",
@@ -81,6 +130,13 @@
   },
   {
    "source": "Le Monde",
+   "title": "En Corée du Sud, la paranoïa autour de la triche à l’IA déclenche une chasse aux fraudeurs d’examens",
+   "desc": "Alors que la pression s’accentue sur les élèves passant le fameux « Suneung », de nouvelles méthodes de triche à l’IA, plus efficaces et dures à détecter, mettent le gouvernement sud-coréen en alerte. Les fouilles et les demandes d’aveux publics se multiplient, parfois jusqu’au drame.",
+   "url": "https://www.lemonde.fr/campus/article/2026/11/21/en-coree-du-sud-la-paranoia-autour-de-la-triche-a-l-ia-declenche-une-chasse-aux-fraudeurs-d-examens_6813944_4401467.html",
+   "at": "2026-11-21T05:30:03+00:00"
+  },
+  {
+   "source": "Le Monde",
    "title": "« L’explosion de l’extrême richesse constitue le fait social majeur de notre temps » : le manifeste de plus de 110 intellectuels contre l’oligarchie",
    "desc": "Pour contrer le club des milliardaires dont la puissance ne cesse de croître, et à l’heure où se tient à Paris un colloque sur le sujet, des penseurs dont quatre Prix Nobel (Daron Acemoglu, Esther Duflo, Paul Krugman et Joseph Stiglitz) appellent, dans une tribune au « Monde », à créer une « internationale démocratique ».",
    "url": "https://www.lemonde.fr/idees/article/2026/11/21/l-explosion-de-l-extreme-richesse-constitue-le-fait-social-majeur-de-notre-temps-le-manifeste-de-plus-de-110-intellectuels-contre-l-oligarchie_6813943_3232.html",
@@ -92,6 +148,13 @@
    "desc": "Chaque samedi, « Le Goût du Monde » vous propose sa sélection de rendez-vous et d’adresses, à Paris et partout en France. Cette semaine, à Paris, l’humour contre le racisme avec l’exposition photo « Being there » à Barbès, le sacre de la peintre Mary Cassat au musée d’Orsay, et, à Bruxelles, la renaissance du Kanal-Centre Pompidou.",
    "url": "https://www.lemonde.fr/m-styles/article/2026/11/21/que-faire-que-voir-ou-aller-l-agenda-culturel-et-lifestyle-a-partir-du-21-novembre_6813922_4497319.html",
    "at": "2026-11-21T05:00:22+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Quelles précautions prendre quand on prête une somme d’argent à un proche ?",
+   "desc": "Il est prudent d’établir un contrat, explique Stéphane Jacquin, responsable de l’ingénierie patrimoniale chez Lazard Frères Gestion.",
+   "url": "https://www.lemonde.fr/argent/article/2026/11/21/quelles-precautions-prendre-quand-on-prete-une-somme-d-argent-a-un-proche_6813921_1657007.html",
+   "at": "2026-11-21T05:00:21+00:00"
   },
   {
    "source": "franceinfo",
@@ -123,8 +186,8 @@
   },
   {
    "source": "Le Monde",
-   "title": "Au procès de l’interpellation de Michel Zecler, le caractère raciste des violences retenu, trois policiers condamnés à des peines de prison ferme et l’espoir d’une « jurisprudence »",
-   "desc": "Contrôlé en 2020 devant son studio de musique, le producteur avait été tabassé par les agents, qui avaient ensuite prétendu sur procès-verbal qu’il les avait agressés. Vendredi 20 novembre, la cour criminelle de Paris a rendu sa décision, à l’issue de deux semaines de procès.",
+   "title": "Au procès des auteurs de l’interpellation de Michel Zecler, le caractère raciste des violences retenu, trois policiers condamnés à des peines de prison ferme et l’espoir d’une « jurisprudence »",
+   "desc": "Contrôlé en 2020 devant son studio de musique, le producteur avait été tabassé par les agents qui avaient ensuite prétendu dans leur procès-verbal qu’il les avait agressés. Vendredi, la cour criminelle de Paris a rendu sa décision à l’issue de deux semaines de procès.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/21/au-proces-de-l-interpellation-de-michel-zecler-le-caractere-raciste-des-violences-retenu-trois-policiers-condamnes-a-des-peines-de-prison-ferme-et-l-espoir-d-une-jurisprudence_6813718_3224.html",
    "at": "2026-11-20T23:46:35+00:00"
   },
@@ -141,6 +204,13 @@
    "desc": "Après le faux départ de 2012, l’ancien premier ministre entend bien être présent au premier tour en avril 2027. A 73 ans, il se frottera peut-être pour la première fois au suffrage universel. Il a dévoilé vendredi ses premières propositions et livré un réquisitoire implacable contre les différents partis.",
    "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/20/presidentielle-2027-dominique-de-villepin-officialise-sa-candidature-entre-geste-gaullien-et-reference-revolutionnaire_6813715_6205049.html",
    "at": "2026-11-20T22:25:47+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Procès Michel Zecler : les trois policiers condamnés à un à deux ans de prison ferme",
+   "desc": "Procès Michel Zecler : les trois policiers jugés pour avoir roué de coups le producteur de musique en novembre 2020 ont été condamnés, vendredi 20 novembre, à des peines allant d'un à deux ans de prison ferme. La cour criminelle de Paris a retenu la circonstance aggravante de racisme. Les trois policiers ont également été définitivement interdits d'exercer leur fonction, avec exécution provisoire.",
+   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/proces-michel-zecler-les-trois-policiers-condamnes-a-un-a-deux-ans-de-prison-ferme_8293016.html",
+   "at": "2026-11-20T22:09:27+00:00"
   },
   {
    "source": "franceinfo",
@@ -164,13 +234,6 @@
    "at": "2026-11-20T21:35:30+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Dix personnes mises en examen pour avoir escroqué des propriétaires de cryptomonnaies et d’or",
-   "desc": "Les malfaiteurs étaient très organisés. Un commanditaire ciblait les bases de données à voler, tandis que des \"callers\" contactaient les victimes pour les inciter à transférer leurs fonds avant que d'autres individus se rendent chez les victimes pour dérober leurs actifs.",
-   "url": "https://www.franceinfo.fr/faits-divers/dix-personnes-mises-en-examen-pour-avoir-escroque-des-cryptomonnaies-et-des-metaux-precieux-apres-des-piratages-informatiques-de-societes-specialisees_8292965.html",
-   "at": "2026-11-20T21:29:29+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Johann Chapoutot : \"la dédiabolisation du RN est véritablement un mythe\"",
    "desc": "A 5 mois de la présidentielle en France, le RN domine toujours dans les sondages. Longtemps considéré comme anti républicain, infréquentable, il est désormais aux portes du pouvoir. Comment comprendre cette progression? Quelle est la responsabilité de la classe politique dans cette évolution? Quelles conséquences sur notre démocratie? Johann Chapoutot, Professeur d'Histoire contemporaine, auteur de \"La bascule, Allemagne 1933\" (éditions Gallimard), était l'Invité d'Au Coeur de l'Info.",
@@ -179,8 +242,8 @@
   },
   {
    "source": "Le Monde",
-   "title": "Génocide des Rohingya : la Cour internationale de justice « confirme qu’elle est indubitablement la boussole du droit international »",
-   "desc": "En reconnaissant le génocide des Rohingya commis par la Birmanie, la plus haute Cour de l’ONU établit pour la première fois la responsabilité d’un Etat dans « le crime des crimes ». Alors que l’Afrique du Sud a saisi l’institution contre Israël, accusant l’Etat hébreu d’un génocide contre les Palestiniens de Gaza, cet arrêt pourrait faire jurisprudence.",
+   "title": "Génocide des Rohingya : la Cour internationale de justice rend un arrêt pour l’histoire",
+   "desc": "La plus haute Cour de l’ONU établit pour la première fois la responsabilité d’un Etat, la Birmanie, dans « le crime des crimes ». Alors que l’Afrique du Sud a saisi l’institution contre Israël, accusant l’Etat hébreu d’un génocide contre les Palestiniens de Gaza, l’arrêt prononcé jeudi pourrait faire jurisprudence.",
    "url": "https://www.lemonde.fr/international/article/2026/11/20/genocide-des-rohingya-la-cour-internationale-de-justice-confirme-qu-elle-est-indubitablement-la-boussole-du-droit-international_6813702_3210.html",
    "at": "2026-11-20T20:38:52+00:00"
   },
@@ -200,13 +263,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Le lycéen poignardé lundi à La Réole, en Gironde, s'est infligé lui-même le coup de couteau",
-   "desc": "Le parquet avait ouvert une enquête pour tentative de meurtre après la découverte de l'adolescent dans une rue résidentielle de la commune.",
-   "url": "https://www.franceinfo.fr/faits-divers/le-lyceen-poignarde-lundi-a-la-reole-en-gironde-s-est-inflige-lui-meme-le-coup-de-couteau_8292896.html",
-   "at": "2026-11-20T19:30:38+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Le Parlement adopte définitivement la présomption d'usage légal des armes par les forces de l'ordre",
    "desc": "La proposition de loi, soutenue par le centre, la droite et l'extrême droite, a été adoptée à 205 voix pour et 110 contre au Sénat.",
    "url": "https://www.franceinfo.fr/faits-divers/police/le-parlement-adopte-definitivement-la-presomption-d-usage-legal-des-armes-par-les-forces-de-l-ordre_8292845.html",
@@ -220,25 +276,11 @@
    "at": "2026-11-20T19:24:41+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Organisations présentes, dispositif de sécurité... A quoi faut-il s'attendre pour les manifestations du samedi 21 novembre ?",
-   "desc": "Le ministre de l'Intérieur a demandé aux préfets d'être \"particulièrement vigilants\" samedi, nouvelle journée de mobilisation sociale en France qui coïncide avec le huitième anniversaire du mouvement des gilets jaunes.",
-   "url": "https://www.franceinfo.fr/economie/greve/organisations-presentes-dispositif-de-securite-a-quoi-faut-il-s-attendre-pour-les-manifestations-du-samedi-21-novembre_8292461.html",
-   "at": "2026-11-20T19:11:44+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Police : la loi sur la présomption de légitime défense définitivement adoptée par le Parlement",
    "desc": "Vivement combattue dans la rue par ses opposants qui l'assimilent à un \"permis de tuer\", l'instauration d'une présomption d'usage légal des armes par les forces de l'ordre a été définitivement adoptée au Parlement vendredi soir, à la veille d'une nouvelle journée de mobilisation sociale.",
    "url": "https://www.france24.com/fr/france/20261120-police-la-loi-sur-la-pr%C3%A9somption-de-l%C3%A9gitime-d%C3%A9fense-d%C3%A9finitivement-adopt%C3%A9e-par-le-parlement",
    "at": "2026-11-20T19:02:24+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La loi sur la présomption de légitime défense pour les forces de l’ordre définitivement adoptée par le Parlement, ayant été approuvée au Sénat",
-   "desc": "La gauche sénatoriale a d’ores et déjà annoncé qu’elle saisirait en commun le Conseil constitutionnel pour faire barrage à la promulgation de ce qu’elle considère comme l’instauration d’un « permis de tuer » pour les policiers.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/20/la-loi-sur-la-presomption-de-legitime-defense-pour-les-forces-de-l-ordre-definitivement-adoptee-par-le-parlement-ayant-ete-approuvee-au-senat_6813692_3224.html",
-   "at": "2026-11-20T18:46:18+00:00"
   },
   {
    "source": "franceinfo",
@@ -266,7 +308,14 @@
    "title": "Minerais critiques : au Kenya, un consortium américain met la main sur un site prometteur",
    "desc": "Le ministère des mines kényan a choisi, jeudi 19 novembre, le consortium Frontier Minerals pour exploiter le site de Mrima Hill. Une victoire pour Washington, qui cherche à pallier la restriction des exportations chinoises en minerais.",
    "url": "https://www.lemonde.fr/afrique/article/2026/11/20/minerais-critiques-au-kenya-un-consortium-americain-met-la-main-sur-un-site-prometteur_6813689_3212.html",
-   "at": "2026-11-20T18:00:27+00:00"
+   "at": "2026-11-20T18:00:18+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Bernabé Malacalza, géopolitologue : « Il existe une construction narrative complotiste autour de l’influence chinoise en Amérique latine »",
+   "desc": "La rivalité entre Washington et Pékin se joue dans le contrôle des flux, des ressources, des infrastructures et de l’accès aux données. Dans un entretien au « Monde », le chercheur argentin décrypte les ressorts de cette ingérence dans sa région du monde et les concessions faites aux géants de la tech qui mettent en jeu la souveraineté des Etats.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/20/bernabe-malacalza-geopolitologue-il-existe-une-construction-narrative-complotiste-autour-de-l-influence-chinoise-en-amerique-latine_6813679_3210.html",
+   "at": "2026-11-20T17:21:08+00:00"
   },
   {
    "source": "Le Monde",
@@ -283,39 +332,11 @@
    "at": "2026-11-20T17:12:25+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "On vous explique les nouvelles règles de pluralisme que l'Arcom veut appliquer aux influenceurs comme HugoDécrypte ou Guillaume Pley pour la présidentielle",
-   "desc": "Le gendarme de l'audiovisuel souhaite que les principaux créateurs de contenus en ligne, comme HugoDécrypte ou Guillaume Pley, respectent des règles de temps de parole et de déontologie durant la campagne présidentielle 2027.",
-   "url": "https://www.franceinfo.fr/economie/medias/on-vous-presente-les-nouvelles-regles-de-pluralisme-que-l-arcom-veut-appliquer-aux-influenceurs-comme-hugodecrypte-ou-guillaume-pley-pour-la-presidentielle_8292011.html",
-   "at": "2026-11-20T16:48:54+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "COP31 : dans la dernière ligne droite des négociations, les énergies fossiles et les financements au centre du jeu",
-   "desc": "Les pourparlers de la 31ᵉ conférence mondiale sur le climat, à Antalya, en Turquie, étaient censés s’achever vendredi 20 novembre. Ils jouaient les prolongations faute d’accord sur des sujets-clés, comme les énergies fossiles et les financements.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/20/cop31-dans-la-derniere-ligne-droite-des-negociations-les-energies-fossiles-et-les-financements-au-centre-du-jeu_6813663_3244.html",
-   "at": "2026-11-20T16:28:48+00:00"
-  },
-  {
    "source": "France 24",
    "title": "De l'océan Indien aux Caraïbes, la sécheresse frappe plusieurs territoires d'Outre-mer",
    "desc": "La sécheresse s'installe durablement en Outre-mer. Le manque d'eau fragilise les cultures et menace les récoltes aux Antilles et à La Réunion. La situation est également très préoccupante en Guyane, où le niveau du fleuve continue de baisser.",
    "url": "https://www.france24.com/fr/%C3%A9missions/outre-mer/20261120-de-l-oc%C3%A9an-indien-aux-cara%C3%AFbes-la-s%C3%A9cheresse-frappe-plusieurs-territoires-d-outre-mer",
    "at": "2026-11-20T15:36:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Plusieurs pays dont la France exigent une décision finale de la COP31 incluant \"une transition claire hors des énergies fossiles\"",
-   "desc": "Le projet de décision de la COP, diffusé jeudi, ne contient aucune mention des énergies fossiles ni la précision que l'électricité doit être \"propre\".",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/plusieurs-pays-dont-la-france-exigent-une-decision-finale-de-la-cop31-incluant-une-transition-claire-hors-des-energies-fossiles_8292470.html",
-   "at": "2026-11-20T15:24:17+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Plusieurs pays dont la France exigent une décision finale de la COP31 incluant \"une transition claire hors des énergies fossiles\"",
-   "desc": "Le projet de décision de la COP, diffusé jeudi, ne contient aucune mention des énergies fossiles ni la précision que l'électricité doit être \"propre\".",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/plusieurs-pays-dont-la-france-exigent-une-decision-finale-de-la-cop31-incluant-une-transition-claire-hors-des-energies-fossiles_8292470.html",
-   "at": "2026-11-20T15:24:17+00:00"
   },
   {
    "source": "France 24",
@@ -339,25 +360,11 @@
    "at": "2026-11-20T11:42:32+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Perquisition, enquête ouverte, préfet mis en cause… Ce que l'on sait des soupçons de fuites d'informations dont aurait bénéficié le Rassemblement national",
-   "desc": "Le parti d'extrême droite est soupçonné d'avoir bénéficié de fuites sur des affaires en cours, avec des informations normalement couvertes par le secret de l'enquête. La participation d'un préfet est étudiée, selon plusieurs médias.",
-   "url": "https://www.franceinfo.fr/politique/front-national/perquisition-enquete-ouverte-prefet-mis-en-cause-ce-que-l-on-sait-des-soupcons-de-fuites-d-informations-dont-aurait-beneficie-le-rassemblement-national_8291804.html",
-   "at": "2026-11-20T09:32:08+00:00"
-  },
-  {
    "source": "France 24",
    "title": "La députée RN Laure Lavalette se défend d'être antisémite, se dédouane d'écrits vieux de \"30 ans\"",
    "desc": "Selon une enquête publiée mercredi par le média Les Jours, la députée du Rassemblement national du Var Laure Lavalette aurait présidé, lors de ses années d'études, un syndicat étudiant dont la revue publiait des écrits antisémites. L'élue a balayé les accusations dans une interview sur BFMTV, arguant de faits vieux de \"30 ans\".",
    "url": "https://www.france24.com/fr/france/20261120-accusations-antis%C3%A9mitisme-d%C3%A9put%C3%A9e-rn-laure-lavalette-invoque-faits-vieux-de-30-ans",
    "at": "2026-11-20T09:26:06+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Des rumeurs et des accusations sans fondement\", réagit Jean-Philippe Tanguy dans l'affaire du préfet soupçonné d'avoir renseigné le RN sur des affaires en cours",
-   "desc": "Le député RN de la Somme s'exprime sur France Inter après les accusations visant Huges Moutouh d'avoir transmis des informations sensibles au Rassemblement national.",
-   "url": "https://www.franceinfo.fr/politique/front-national/des-rumeurs-et-des-accusations-sans-fondement-reagit-jean-philippe-tanguy-dans-l-affaire-du-prefet-soupconne-d-avoir-renseigne-le-rn-sur-des-affaires-en-cours_8291828.html",
-   "at": "2026-11-20T08:04:55+00:00"
   }
  ]
 }

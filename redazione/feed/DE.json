@@ -1,7 +1,21 @@
 {
  "code": "DE",
- "asOf": "2026-11-21T07:17:34+00:00",
+ "asOf": "2026-11-21T09:17:34+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Liquiditätshilfen für Schweinehalter: \"Nur ein Tropfen auf den heißen Stein\"",
+   "desc": "Schweinehaltung in Deutschland ist ein Verlustgeschäft - Liquiditätshilfen in Höhe von 25 Millionen Euro sollen jetzt den Betrieben helfen. Doch das Notfallprogramm allein wird nicht ausreichen, warnen Landwirte und Opposition. Von T. Lehning.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/schweinezucht-deutschland-exporte-100.html",
+   "at": "2026-11-21T08:26:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Sabotageakte von Russland: Wo Russland Deutschland angreift",
+   "desc": "Mordpläne, Drohnen, Brandanschläge, Operation Doppelgänger und Storm-1516: Putins Regime eskaliert seine Aggression. Dies sind die bislang schwersten Fälle.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/sabotageakte-russland-hybrider-krieg-desinformation-spionage",
+   "at": "2026-11-21T08:03:47+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "USA: Donald Trump schränkt Unternehmensauskünfte für US-Kongress ein",
@@ -39,8 +53,8 @@
   },
   {
    "source": "Tagesschau",
-   "title": "Jugendliche erneut zu Tausenden auf den Straßen",
-   "desc": "Zehntausende junge Menschen haben am Freitag friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
+   "title": "\"Gen Z regelt\": Jugendliche erneut zu Tausenden auf den Straßen",
+   "desc": "Zehntausende junge Menschen haben friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
    "at": "2026-11-21T02:38:36+00:00"
   },
@@ -192,32 +206,11 @@
    "at": "2026-11-20T13:09:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Parlamentswahl in Spanien: Sánchez’ riskantes Pokerspiel",
-   "desc": "Nach kurzem Wahlkampf wählt Spanien ein neues Parlament. Pedro Sánchez hofft auf ein starkes linkes Mandat, doch die Rechtsextremen haben bessere Chancen. Eine Übersicht",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/parlamentswahl-spanien-sozialisten-konservative-faq",
-   "at": "2026-11-20T12:58:19+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Protest von \"Gen Z regelt\": Eine zersplitterte Bewegung",
    "desc": "Die Protestbewegung \"Gen Z regelt\" fordert von der Politik, viele verschiedene Lebens- und Gerechtigkeitsfragen für die junge Generation zu lösen. Hat sie damit Erfolg? Von Jan Koch.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/gen-z-regelt-proteste-106.html",
    "at": "2026-11-20T11:40:48+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ukraine: Boris Pistorius zeigt sich offen für Gespräche mit Wladimir Putin",
-   "desc": "Boris Pistorius warnt davor, Gesprächsangebote aus Moskau auszuschlagen. Nur Reden führe zu Ergebnissen, sagte der Verteidigungsminister. Zugleich knüpfte er einen Austausch mit Putin an eine Bedingung.",
-   "url": "https://www.spiegel.de/politik/deutschland/ukrainekrieg-boris-pistorius-zeigt-sich-offen-fuer-gespraeche-mit-putin-a-d56940e3-68a6-4602-b1bf-edadd333cdc1",
-   "at": "2026-11-20T09:12:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Wie viel Macht bleibt Donald Trump noch? - Podcast",
-   "desc": "Was bedeutet der Sieg der US-Demokraten bei den Midterms für Donald Trump? SPIEGEL-Chefredakteur Dirk Kurbjuweit im Gespräch mit Verteidigungspolitikerin Marie-Agnes Strack-Zimmermann und dem USA-Experten Christian Lammert.",
-   "url": "https://www.spiegel.de/politik/deutschland/das-trump-finale-wie-viel-macht-bleibt-dem-us-praesidenten-noch-a-4a4c8bc7-b3b7-4e1c-b3fb-a7e73acf7bb3",
-   "at": "2026-11-20T08:11:00+00:00"
   }
  ]
 }

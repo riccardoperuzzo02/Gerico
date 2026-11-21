@@ -1,20 +1,62 @@
 {
  "code": "DE",
- "asOf": "2026-11-21T15:17:34+00:00",
+ "asOf": "2026-11-21T17:17:35+00:00",
  "items": [
   {
-   "source": "Der Spiegel",
-   "title": "Franziska Brantner: Grünenchefin kritisiert »Söder-Geschenke« zulasten Jugend",
-   "desc": "Grünenchefin Brantner hat sich an die Seite der protestierenden Jugendlichen gestellt. Der Regierungskoalition warf sie eine »grausame Politik« vor und forderte mehr Geld für Schulen.",
-   "url": "https://www.spiegel.de/politik/deutschland/franziska-brantner-gruenenchefin-kritisiert-soeder-geschenke-zulasten-jugend-a-a69c41bb-868d-4c29-bc4c-4fa4860f82fc",
-   "at": "2026-11-21T15:07:00+00:00"
+   "source": "Die Zeit",
+   "title": "Preise für Tickets: Haben Fans ein Recht auf faire Ticketpreise?",
+   "desc": "Die Bundesjustizministerin will den Ticketmarkt regulieren. Dagegen gibt es Widerstand. Ein Ex-Verfassungsrichter hält die Pläne sogar für verfassungswidrig.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/preise-konzerte-tickets-justizministerium-verfassungsgericht",
+   "at": "2026-11-21T16:59:06+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Russische Flugkörper in Polen: Nato-Chef Mark Rutte will »jeden Zentimeter« Polens verteidigen",
+   "desc": "Der Nato-Generalsekretär ist nach Warschau gereist, nachdem mehrere russische Flugkörper in Polen abgestürzt waren. Rutte sprach von einem »gefährlichen Vorfall«.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-flugobjekte-polen-nato-mark-rutte-krieg-ukraine-verteidigung",
+   "at": "2026-11-21T16:27:14+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Altersvorsorgedepot: Staatliches Depot für Zusatzrente verzögert sich wohl bis Sommer 2027",
+   "desc": "In wenigen Wochen startet das geförderte Altersvorsorgedepot. Doch die vom Staat angebotene Basisvariante kommt laut Bundesfinanzministerium wohl erst deutlich später.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/altersvorsorgedepot-rente-banken-fonds-gxe",
+   "at": "2026-11-21T16:01:39+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Ministerium will Autobahntankstellen vom Spritpreisdeckel ausnehmen",
+   "desc": "Ab Januar soll der Preisdeckel für Benzin und Diesel gelten. Wirtschaftsministerin Reiche plant offenbar, Autobahntankstellen davon ausnehmen. Ihr neuer Gesetzentwurf ist noch in der Abstimmung zwischen den Ministerien.",
+   "url": "https://www.tagesschau.de/inland/spritpreis-autobahntankstellen-ausnahme-100.html",
+   "at": "2026-11-21T15:55:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "»Braver New World« von John Kampfner: Nur Mut!",
+   "desc": "Viele politische Akteure wirken erschöpft und blicken ängstlich auf die Umfragewerte. Ein neues Buch könnte ihnen (und uns) neue Hoffnung geben.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/braver-new-world-john-kampfner-politiker-mut-hoffnung",
+   "at": "2026-11-21T15:32:02+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "UN-Klimakonferenz: Inselstaat Tuvalu dringt auf Abkehr von fossilen Brennstoffen",
    "desc": "Die Weltklimakonferenz steckt seit einem Tag in der Verlängerung fest, eine Einigung ist nicht in Sicht. Tuvalu will den Ausstieg aus Kohle, Öl und Gas im Abschlusstext.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-tuvalu-forderung-ausstieg-abschlusserklaerung",
-   "at": "2026-11-21T14:53:12+00:00"
+   "at": "2026-11-21T15:29:05+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Drohnenangriff auf »Sparta 2«: Finnland bestätigt Drohnenangriff auf russisches Schiff in der Ostsee",
+   "desc": "Ein russisches Frachtschiff ist im Finnischen Meerbusen von einer Drohne angegriffen worden und in Brand geraten. Wer hinter der Attacke steckt, ist bislang unklar.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/drohnenangriff-sparta-2-russisches-frachtschiff-ostsee-gogland-gxe",
+   "at": "2026-11-21T15:26:08+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Franziska Brantner: Grünenchefin kritisiert »Söder-Geschenke« zulasten Jugend",
+   "desc": "Grünenchefin Brantner hat sich an die Seite der protestierenden Jugendlichen gestellt. Der Regierungskoalition warf sie eine »grausame Politik« vor und forderte mehr Geld für Schulen.",
+   "url": "https://www.spiegel.de/politik/deutschland/franziska-brantner-gruenenchefin-kritisiert-soeder-geschenke-zulasten-jugend-a-a69c41bb-868d-4c29-bc4c-4fa4860f82fc",
+   "at": "2026-11-21T15:07:00+00:00"
   },
   {
    "source": "Die Zeit",
@@ -33,7 +75,7 @@
   {
    "source": "Die Zeit",
    "title": "Streit um EU-Haushalt: Merz wertet neuen Vorschlag für EU-Haushalt als »zu hoch«",
-   "desc": "EU-Ratspräsident Antonio Costa hat den Vorschlag für den EU-Haushalt überarbeitet. Für Bundeskanzler Friedrich Merz ist auch dieser nicht akzeptabel.",
+   "desc": "EU-Ratspräsident António Costa hat den Vorschlag für den EU-Haushalt überarbeitet. Für Bundeskanzler Friedrich Merz ist auch dieser nicht akzeptabel.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/streit-eu-haushalt-antonio-costa-vorschlag-friedrich-merz",
    "at": "2026-11-21T14:09:32+00:00"
   },
@@ -43,13 +85,6 @@
    "desc": "Großbritannien und die EU wollen ihre Beziehungen wieder enger gestalten, Außenminister Miliband hält »alle Optionen« für möglich. Auch einen Wiedereintritt.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/grossbritannien-eu-ed-miliband-brexit-wiedereintritt-gxe",
    "at": "2026-11-21T13:52:40+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Drohnenangriff auf »Sparta 2«: Finnland bestätigt Drohnenangriff auf russisches Schiff in der Ostsee",
-   "desc": "Ein russisches Frachtschiff ist im Finnischen Meerbusen von einer Drohne angegriffen worden und in Brand geraten. Wer hinter der Attacke steckt, ist bislang unklar.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/drohnenangriff-sparta-2-russisches-frachtschiff-ostsee-gogland-gxe",
-   "at": "2026-11-21T13:39:51+00:00"
   },
   {
    "source": "Die Zeit",
@@ -101,39 +136,11 @@
    "at": "2026-11-21T10:59:36+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Abschiebezentren in Ruanda: Juristen verweisen auf rechtliche Hürden für Abschiebungen nach Ruanda",
-   "desc": "Die rechtliche Klärung auf EU‑Ebene reicht der Bundesregierung für Abschiebungen nach Ruanda womöglich nicht aus. Juristen zufolge muss auch der Bundestag zustimmen.",
-   "url": "https://www.zeit.de/politik/2026-11/abschiebezentren-ruanda-eu-rueckkehrverordnung-bundestag-gutachten-gxe",
-   "at": "2026-11-21T10:43:59+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Memoiren von Joe Biden: 480 Seiten und null Einsicht",
-   "desc": "Joe Biden hat seine Memoiren veröffentlicht. Sie zeugen nicht nur von der Verbitterung des ehemaligen US-Präsidenten. Sondern auch von Gefahren, die seiner Partei drohen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/memoiren-joe-biden-us-demokraten-promise-me-america",
-   "at": "2026-11-21T09:38:16+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Liquiditätshilfen für Schweinehalter: \"Nur ein Tropfen auf den heißen Stein\"",
    "desc": "Schweinehaltung in Deutschland ist ein Verlustgeschäft - Liquiditätshilfen in Höhe von 25 Millionen Euro sollen jetzt den Betrieben helfen. Doch das Notfallprogramm allein wird nicht ausreichen, warnen Landwirte und Opposition. Von T. Lehning.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/schweinezucht-deutschland-exporte-100.html",
    "at": "2026-11-21T08:26:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sabotageakte von Russland: Wo Russland Deutschland angreift",
-   "desc": "Mordpläne, Drohnen, Brandanschläge, Operation Doppelgänger und Storm-1516: Putins Regime eskaliert seine Aggression. Dies sind die bislang schwersten Fälle.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/sabotageakte-russland-hybrider-krieg-desinformation-spionage",
-   "at": "2026-11-21T08:03:47+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "USA: Donald Trump schränkt Unternehmensauskünfte für US-Kongress ein",
-   "desc": "Unternehmen mit Regierungsaufträgen sollen künftig dem Präsidenten Bescheid sagen, bevor sie mit den Abgeordneten sprechen. Das verfügte Donald Trump.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-dekret-bundesauftragnehmer-kongress-weissem-haus-gxe",
-   "at": "2026-11-21T07:12:10+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -155,48 +162,6 @@
    "desc": "Die Generation Z demonstriert wieder: Junge Menschen sind heute bundesweit für bessere Bildung, mehr Klimaschutz und gegen eine mögliche Wehrpflicht auf die Straßen gegangen. Meist blieb es friedlich.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-114.html",
    "at": "2026-11-20T18:54:49+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Brexit, EU, Großbritannien, Gender-Pay-Gap, Gehalt, Frauen, Gen Z regelt",
-   "desc": "Großbritanniens Premier Andy Burnham tastet sich an die EU heran. Frauen in Europa arbeiten den Rest des Jahres quasi umsonst. Und: Die Gen Z geht wieder auf die Straße. Das ist die Lage am Freitagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-brexit-eu-grossbritannien-gender-pay-gap-gehalt-frauen-gen-z-regelt-a-36f1b0f0-e6db-4398-b6be-d3a36d98604d",
-   "at": "2026-11-20T17:12:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "SPD-Landeschef Steffen Krach: Der Buhmann von Berlin",
-   "desc": "Der Sozialdemokrat Steffen Krach hat die Wahl in der Hauptstadt verloren, seine Fraktion ist gespalten. Nun muss er eine Koalition verhandeln, die hochrangige SPD-Leute ablehnen. Warum tut er sich das an?",
-   "url": "https://www.spiegel.de/politik/deutschland/spd-landeschef-steffen-krach-der-buhmann-von-berlin-a-c4658a19-bf41-4f07-a323-e689049b10f2",
-   "at": "2026-11-20T16:47:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Gen Z regelt: »Wir möchten mitreden, wir möchten, dass man uns zuhört«",
-   "desc": "Es geht um Bildung, Wehrpflicht, bezahlbares Leben, Klima: Tausende Jugendliche demonstrieren in vielen deutschen Städten. Eindrücke aus Berlin.",
-   "url": "https://www.spiegel.de/politik/deutschland/gen-z-regelt-jugendliche-protestieren-fuer-bildung-klima-und-bezahlbares-leben-a-e88fe963-e880-4004-9043-c7d84ca70e6e",
-   "at": "2026-11-20T16:32:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Pistorius in Polen: Eine Reise im Zeichen der Erinnerungsarbeit",
-   "desc": "Deutschland und Polen wollen mehr Verantwortung für die Sicherheit in Europa übernehmen. Bei seiner Polen-Reise erinnert Verteidigungsminister Pistorius an die deutsche Verantwortung für die Vergangenheit. Von C. Buckenmaier.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/pistorius-polen-gedenken-100.html",
-   "at": "2026-11-20T16:22:44+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Manuela Schwesig wird an der Galle operiert",
-   "desc": "Manuela Schwesig wird kommende Woche keine Termine wahrnehmen. Die SPD-Politikerin muss sich einer Operation unterziehen. Sie habe mit dem Eingriff bis nach der Regierungsbildung in Mecklenburg-Vorpommern gewartet.",
-   "url": "https://www.spiegel.de/politik/deutschland/manuela-schwesig-wird-an-der-galle-operiert-a-9b402c57-fbbd-426f-8fda-ea2a869fdc60",
-   "at": "2026-11-20T16:20:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Prien verteidigt Kürzungen bei \"Demokratie leben!\"",
-   "desc": "Bundesfamilienministerin Prien weist gegenüber dem ARD-Hauptstadtstudio den Vorwurf zurück, bei Projekten gegen Antisemitismus zu sparen. Dennoch verlören einzelne Projekte die Förderung. Von Sarah Beham und Markus Langenstraß.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/prien-demokratiefoerderung-100.html",
-   "at": "2026-11-20T15:49:38+00:00"
   }
  ]
 }

@@ -1,0 +1,42 @@
+{
+  "id": "2026-11-21-gb-accordo-ue-burnham",
+  "title": "Regno Unito: concluso l'accordo con l'Ue, aperta la questione delle rette",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "prev": "2026-11-16-gb-burnham-brexit-discorso-ue",
+  "photo": {"wiki": "it", "title": "Palazzo Berlaymont"},
+  "city": {"name": "Bruxelles", "lat": 50.8503, "lon": 4.3517},
+  "rank": 201,
+  "summary": "Il governo britannico dice che i negoziati sono conclusi. Cibo, emissioni e scambi giovanili sono nel testo, mentre le tasse per gli studenti europei restano il punto aperto.",
+  "article": "Venerdì 20 novembre il governo britannico ha annunciato di aver concluso a Bruxelles i negoziati con l'Unione europea. «L'accordo è fatto», si legge in un comunicato di Downing Street, diffuso poco dopo l'arrivo del primo ministro Andy Burnham alla sede del vertice, dove lo hanno accolto Ursula von der Leyen, la presidente della Commissione europea, e António Costa, presidente del Consiglio europeo.\n\nLe due parti hanno concordato una dichiarazione di 12 pagine con i prossimi passi. Il testo riguarda alimentari e bevande, il sistema di scambio delle emissioni e uno schema di esperienze giovanili che consentirà a chi ha tra 18 e 31 anni di viaggiare, lavorare o studiare nell'Ue fino a tre anni. Burnham dice che il piano può aggiungere lo 0,5 per cento di crescita annua all'economia britannica.\n\nResta aperta la questione delle tasse universitarie per gli studenti europei nel Regno Unito. Fonti di Bruxelles hanno fatto sapere che l'Ue potrebbe non applicare l'intero accordo finché le rette non saranno ridotte, e che la decisione sulle tasse è rinviata di sei mesi. Il ministro Ed Miliband ha detto sabato che l'intesa non dipende da un accordo sulle rette. Downing Street riconosce che il punto non è risolto.\n\nCosta ha detto che l'Ue «resta aperta a una relazione più stretta possibile» con il Regno Unito.",
+  "facts": [
+    {"text": "Downing Street dice che i negoziati con l'Ue sono conclusi: «L'accordo è fatto».", "who": ["Downing Street"]},
+    {"text": "La dichiarazione di 12 pagine copre alimentari e bevande, scambio di emissioni e schema giovanile per chi ha 18-31 anni.", "who": ["Governo britannico", "Unione europea"]},
+    {"text": "Le tasse universitarie per gli studenti Ue restano irrisolte; fonti Ue parlano di un legame con l'applicazione dell'accordo.", "who": ["Fonti Ue"]},
+    {"text": "Il ministro Ed Miliband dice che l'accordo non dipende dalle rette.", "who": ["Ed Miliband"]},
+    {"text": "Burnham dice che il piano può aggiungere lo 0,5% di crescita annua.", "who": ["Andy Burnham"]}
+  ],
+  "view": "Si può dire con certezza che il governo britannico considera chiusi i negoziati e che una dichiarazione di 12 pagine è stata concordata. Non c'è accordo tra Londra e Bruxelles su un punto: se l'applicazione di cibo e bevande dipenda dalle rette universitarie.\n\nLa vicenda sposta il confronto interno sui rapporti con l'Ue. Da guardare: la decisione sulle tasse universitarie entro sei mesi, la trattativa parallela sull'inclusione nelle regole europee sulle forniture e le reazioni di conservatori e Reform.",
+  "open": [
+    "L'Ue applicherà l'accordo su cibo e bevande prima di un'intesa sulle rette?",
+    "Quando entrerà in vigore lo schema giovanile?",
+    "Quanto varrà davvero l'effetto sulla crescita indicato da Burnham?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/politics/2026/nov/20/what-is-in-deal-between-uk-eu-explainer", "angle": "Dal feed: dichiarazione di 12 pagine, contenuti, comunicato di Downing Street, dubbi Ue sulle rette.", "at": "2026-11-20T18:19:53+00:00"},
+    {"name": "BBC", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o", "angle": "Dal feed: Miliband dice che l'accordo non dipende dalle rette; fonti Ue avevano sostenuto il contrario.", "at": "2026-11-21T06:00:09+00:00"}
+  ],
+  "firstSeen": "2026-11-21T09:50:00+01:00",
+  "updated": "2026-11-21T09:50:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-21T09:50:00+01:00", "text": "Prima notizia: concluso a Bruxelles l'accordo Regno Unito-Ue, aperta la questione delle rette."}
+  ],
+  "tags": ["Regno Unito", "Unione europea", "Governo"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

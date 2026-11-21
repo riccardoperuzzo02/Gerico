@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-21-fr-zecler-poliziotti-condannati",
+  "title": "Francia: tre poliziotti condannati per il pestaggio di Michel Zecler",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "Palais de justice de Paris"},
+  "city": {"name": "Parigi", "lat": 48.8566, "lon": 2.3522},
+  "rank": 301,
+  "summary": "La corte criminale di Parigi ha riconosciuto l'aggravante razzista e condannato tre agenti a pene tra uno e due anni di carcere effettivo, con radiazione definitiva. La sentenza si può ancora impugnare.",
+  "article": "Venerdì 20 novembre la corte criminale di Parigi ha condannato tre poliziotti per il pestaggio di Michel Zecler, un produttore musicale nero, avvenuto nel 2020 davanti al suo studio. La corte ha riconosciuto che le violenze avevano un'aggravante razzista.\n\nI tre agenti sono stati giudicati colpevoli di violenze volontarie aggravate da insulti razzisti e di falso in atto pubblico. Ognuno ha avuto cinque anni, in parte con la condizionale: due anni effettivi per chi è stato ritenuto l'iniziatore del controllo e autore del verbale falso, un anno e mezzo e un anno per gli altri due, quest'ultimo eseguibile con il braccialetto elettronico. La corte ha disposto anche la radiazione definitiva dalla polizia, con effetto immediato. La procura aveva chiesto pene tra quattro e sei anni di carcere.\n\nLa corte ha motivato il riconoscimento del razzismo con il fatto che Zecler ha sempre riferito gli insulti subiti, dal momento dell'aggressione fino all'ospedale. Il verbale redatto dagli agenti sosteneva che fosse stato lui ad aggredirli. La corte ha sottolineato anche la gravità dei danni fisici, psicologici e professionali subiti dalla vittima.\n\nL'avvocato di Zecler, Serge Money, ha detto che le pene non sono «all'altezza», ma che «è comunque un successo», e ha parlato di una «giurisprudenza Michel Zecler». Gli imputati e la procura hanno dieci giorni per presentare ricorso. Finché la sentenza non è definitiva, la condanna resta di primo grado.",
+  "facts": [
+    {"text": "Venerdì 20 novembre la corte criminale di Parigi ha condannato tre poliziotti, riconoscendo l'aggravante razzista.", "who": ["Corte criminale di Parigi"]},
+    {"text": "Le pene vanno da un anno (con braccialetto elettronico) a due anni di carcere effettivo, con radiazione definitiva dalla polizia.", "who": ["Corte criminale di Parigi"]},
+    {"text": "La procura aveva chiesto pene tra quattro e sei anni di carcere.", "who": ["Procura di Parigi"]},
+    {"text": "Il verbale degli agenti sosteneva che Zecler li avesse aggrediti.", "who": ["Corte criminale di Parigi"]},
+    {"text": "Imputati e procura hanno dieci giorni per fare ricorso.", "who": ["Corte criminale di Parigi"]}
+  ],
+  "view": "Si può dire con certezza che la corte ha riconosciuto l'aggravante razzista e il falso nel verbale, e che le pene sono inferiori a quelle chieste dalla procura. La sentenza è di primo grado e resta aperta la possibilità di un appello.\n\nIl riconoscimento del razzismo in una condanna di agenti è un precedente a cui l'avvocato di Zecler fa esplicito riferimento. Da guardare: se la procura o la difesa faranno ricorso entro dieci giorni e come la polizia darà seguito alla radiazione.",
+  "open": [
+    "La procura farà ricorso contro le pene più basse di quelle chieste?",
+    "Cosa dice la difesa degli agenti sulla sentenza?",
+    "Michel Zecler commenterà la decisione?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-condamnations-allant-d-un-an-a-deux-ans-de-prison-ferme-pour-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8292287.html", "angle": "Articolo aperto: pene, motivazioni della corte, reazioni dell'avvocato, termini per il ricorso.", "at": "2026-11-21T00:26:28+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/societe/article/2026/11/21/au-proces-de-l-interpellation-de-michel-zecler-le-caractere-raciste-des-violences-retenu-trois-policiers-condamnes-a-des-peines-de-prison-ferme-et-l-espoir-d-une-jurisprudence_6813718_3224.html", "angle": "Dal feed: controllo del 2020, falso verbale, due settimane di processo, la speranza di una giurisprudenza.", "at": "2026-11-20T23:46:35+00:00"}
+  ],
+  "firstSeen": "2026-11-21T09:50:00+01:00",
+  "updated": "2026-11-21T09:50:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-21T09:50:00+01:00", "text": "Prima notizia: condannati tre poliziotti per il pestaggio di Michel Zecler, riconosciuto il razzismo."}
+  ],
+  "tags": ["Francia", "Giustizia", "Polizia"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

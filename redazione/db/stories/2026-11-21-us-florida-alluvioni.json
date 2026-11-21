@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-21-us-florida-alluvioni",
+  "title": "Stati Uniti: alluvioni nel Sud della Florida, scuole chiuse a Broward",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Fort Lauderdale–Hollywood International Airport"},
+  "city": {"name": "Hollywood (Florida)", "lat": 26.0112, "lon": -80.1495},
+  "rank": 102,
+  "summary": "Tra martedì e venerdì piogge record hanno allagato le contee di Broward e Miami-Dade, con oltre 110 salvataggi a Hollywood. Le scuole di Broward riaprono il 30 novembre e restano attese maree eccezionali.",
+  "article": "Piogge torrenziali tra martedì 17 e venerdì 20 novembre hanno allagato il Sud della Florida, soprattutto le contee di Broward e Miami-Dade. Quartieri sono finiti sott'acqua e molte strade sono rimaste impraticabili. Le zone più colpite sono Hollywood, Davie, Dania Beach e Fort Lauderdale.\n\nNelle prime ore di mercoledì tra Dania Beach e Hollywood sono caduti oltre 35 centimetri di pioggia. Secondo le misurazioni del Servizio meteorologico nazionale, a Hollywood se ne sono accumulati circa 39 in 72 ore. A Hollywood i soccorritori hanno compiuto oltre 110 salvataggi in acqua, un dato che non ha una seconda conferma.\n\nLe scuole della contea di Broward sono rimaste chiuse e gli studenti torneranno in classe il 30 novembre; circa 30 istituti hanno avuto allagamenti o danni. Quelle di Miami-Dade hanno riaperto venerdì. Lo stato della Florida ha mobilitato centinaia di soldati della Guardia nazionale, più di 200 agenti della polizia stradale, 235 ufficiali della commissione per la fauna e 50 veicoli per l'alta acqua. Il sindaco di Hollywood, Josh Levy, ha chiesto ai residenti di documentare i danni per poter accedere a eventuali aiuti statali e federali. Il treno Brightline tra Orlando e West Palm Beach è rimasto sospeso venerdì e ha ripreso sabato.\n\nIl Servizio meteorologico nazionale prevede maree eccezionali dal 22 al 28 novembre. Una sola fonte riferisce che nella contea di Brevard, più a nord, i soccorsi in acqua sono stati quasi 100 e che il fiume St. Johns ha superato il livello record del 1953.",
+  "facts": [
+    {"text": "Oltre 35 centimetri di pioggia in poche ore tra Dania Beach e Hollywood nella notte tra martedì e mercoledì.", "who": ["Servizio meteorologico nazionale"]},
+    {"text": "A Hollywood oltre 110 salvataggi in acqua (dato non confermato da una seconda fonte).", "who": ["Autorità di Hollywood"]},
+    {"text": "Le scuole di Broward riaprono il 30 novembre; circa 30 istituti hanno subito danni.", "who": ["Distretto scolastico di Broward"]},
+    {"text": "Lo stato ha mobilitato centinaia di soldati della Guardia nazionale e oltre 200 agenti della polizia stradale.", "who": ["Stato della Florida"]},
+    {"text": "Maree eccezionali previste dal 22 al 28 novembre.", "who": ["Servizio meteorologico nazionale"]}
+  ],
+  "view": "Si può dire con certezza che le piogge hanno superato i 35 centimetri in poche ore nell'area di Hollywood e che le scuole di Broward restano chiuse fino al 30 novembre. Non ci sono bilanci verificati dei danni economici né dei feriti nei testi letti, e il dato sui salvataggi viene da una sola fonte.\n\nLe maree eccezionali di fine mese possono rallentare lo smaltimento dell'acqua nelle zone più basse. Da guardare: le stime dei danni, le richieste di aiuti statali e federali e la data di riapertura di tutte le scuole.",
+  "open": [
+    "Quanti sono i feriti e gli sfollati?",
+    "A quanto ammontano i danni stimati?",
+    "Lo stato o il governo federale dichiareranno l'emergenza per gli aiuti?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/", "angle": "Articolo aperto: misurazioni, salvataggi, scuole e mobilitazione dello stato.", "at": "2026-11-21T02:42:51+00:00"},
+    {"name": "WLRN", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.wlrn.org/2026-11-18/more-than-14-inches-of-rain-triggers-severe-flooding-across-broward-county-as-additional-downpours-threaten-south-florida", "angle": "Articolo aperto: oltre 14 pollici di pioggia tra Dania Beach e Hollywood e previsioni del Servizio meteorologico.", "date": "2026-11-18"}
+  ],
+  "firstSeen": "2026-11-21T09:50:00+01:00",
+  "updated": "2026-11-21T09:50:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-21T09:50:00+01:00", "text": "Prima notizia: alluvioni nel Sud della Florida, scuole di Broward chiuse fino al 30 novembre."}
+  ],
+  "tags": ["Stati Uniti", "Maltempo", "Emergenze"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

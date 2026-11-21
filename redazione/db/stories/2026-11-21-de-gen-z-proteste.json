@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-21-de-gen-z-proteste",
+  "title": "Germania: decine di migliaia di giovani in piazza, qualche disordine",
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Porta di Brandeburgo"},
+  "city": {"name": "Berlino", "lat": 52.52, "lon": 13.405},
+  "rank": 401,
+  "summary": "Venerdì i giovani sono tornati a manifestare in molte città per istruzione, clima, costo della vita e contro un possibile servizio militare obbligatorio. Disordini solo in alcune località.",
+  "article": "Venerdì 20 novembre decine di migliaia di giovani hanno manifestato in molte città tedesche, in gran parte senza incidenti. Le proteste, legate al movimento «Gen Z regelt», chiedono più istruzione, più tutela del clima, una vita più accessibile e dicono no a un possibile servizio militare obbligatorio.\n\nÈ la seconda tornata di cortei dopo quelli di Halloween, quando ci furono scontri più gravi. Dopo la fine delle manifestazioni «Gen Z regelt» in alcune località ci sono stati comunque disordini, ma nessuna escalation paragonabile a quella di allora. Le cronache non indicano un numero preciso di partecipanti né di fermati.\n\nA Berlino i ragazzi intervistati dai cronisti dicono di volere «mitreden», cioè partecipare alle decisioni, e di voler essere ascoltati. Il dibattito pubblico è diviso: alcuni commentatori giudicano giustificata la rabbia dei giovani, altri si chiedono quanto siano fondate le loro richieste. Le fonti lette non riportano una risposta del governo federale ai cortei.",
+  "facts": [
+    {"text": "Venerdì decine di migliaia di giovani hanno manifestato in molte città tedesche.", "who": ["Tagesschau", "Der Spiegel", "Die Zeit"]},
+    {"text": "Le richieste: istruzione, clima, costo della vita e no a un possibile servizio militare obbligatorio.", "who": ["Tagesschau", "Der Spiegel"]},
+    {"text": "In alcune località ci sono stati disordini dopo la fine dei cortei, senza escalation come a Halloween.", "who": ["Tagesschau"]}
+  ],
+  "view": "Si può dire con certezza che i cortei sono stati ampi e in gran parte pacifici. Mancano numeri precisi sui partecipanti e sui disordini, e le fonti lette non riportano la posizione del governo.\n\nLa questione del servizio militare obbligatorio unisce le richieste dei giovani a un tema politico aperto. Da guardare: nuove date di protesta, eventuali risposte del governo e l'evoluzione del dibattito sulla leva.",
+  "open": [
+    "Quanti giovani hanno partecipato e quante persone sono state fermate?",
+    "Cosa risponde il governo federale alle richieste?",
+    "Ci saranno altri cortei nelle prossime settimane?"
+  ],
+  "sources": [
+    {"name": "Tagesschau", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html", "angle": "Dal feed: decine di migliaia in piazza, disordini in alcune località, nessuna escalation come a Halloween.", "at": "2026-11-21T02:38:36+00:00"},
+    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/gen-z-regelt-jugendliche-protestieren-fuer-bildung-klima-und-bezahlbares-leben-a-e88fe963-e880-4004-9043-c7d84ca70e6e", "angle": "Dal feed: richieste su istruzione, leva, costo della vita e clima; impressioni da Berlino.", "at": "2026-11-20T16:32:00+00:00"},
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/2026-11/schuelerproteste-gen-z-regelt-jugend-zukunft-nachrichtenpodcast", "angle": "Dal feed: proteste in tutto il paese e discussione sulla fondatezza delle richieste.", "at": "2026-11-20T16:05:08+00:00"}
+  ],
+  "firstSeen": "2026-11-21T09:50:00+01:00",
+  "updated": "2026-11-21T09:50:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-21T09:50:00+01:00", "text": "Prima notizia: nuovi cortei dei giovani in molte città tedesche."}
+  ],
+  "tags": ["Germania", "Giovani", "Scuola"],
+  "themes": [],
+  "places": ["DE"],
+  "divergences": [],
+  "notCovered": []
+}

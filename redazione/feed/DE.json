@@ -1,7 +1,35 @@
 {
  "code": "DE",
- "asOf": "2026-11-20T21:17:33+00:00",
+ "asOf": "2026-11-21T05:17:37+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "AfD in Sachsen-Anhalt: Sachsen-Anhalt: Warum die AfD die Siegmund-Wahl vorziehen will",
+   "desc": "Im Dezember will die AfD in Sachsen-Anhalt Ulrich Siegmund zum Ministerpräsidenten wählen lassen. Aber mit welchen Stimmen? Und: Wie abhängig ist Europa von Elon Musk?",
+   "url": "https://www.zeit.de/politik/2026-11/afd-sachsen-anhalt-ulrich-siegmund-ministerpraesident-wahl-dezember",
+   "at": "2026-11-21T04:55:13+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Trumps Pressekonferenz: Und dann fragt Trump Stephen Miller, ob er Präsident werden wolle",
+   "desc": "Zur Pressekonferenz nach seiner Asienreise lässt sich der US-Präsident von seinen potenziellen Erben Vance und Rubio begleiten. Dabei macht er klar, wessen Meinung zählt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-pressekonferenz-jd-vance-marco-rubio",
+   "at": "2026-11-21T04:21:14+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Jugendliche erneut zu Tausenden auf den Straßen",
+   "desc": "Zehntausende junge Menschen haben am Freitag friedlich für die Anliegen ihrer Generation demonstriert. Nach dem Ende der \"Gen Z regelt\"-Demos gab es mancherorts zwar doch noch Krawalle, eine Eskalation wie an Halloween blieb aber aus.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/jugendproteste-krawalle-gen-z-100.html",
+   "at": "2026-11-21T02:38:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundesregierung: Juso-Chef Türmer kritisiert Koalition wegen Stromsteuersenkung",
+   "desc": "Philipp Türmer sieht in der Stromsteuersenkung eine »Entlastungsmaßnahme für den Kanzler«. Der Juso-Chef hätte lieber eine Verkürzung der gesetzlichen Arbeitszeit.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuersenkung-koalition-philipp-tuermer-cdu-privathaushalte",
+   "at": "2026-11-20T23:17:49+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Jugendliche erneut zu Tausenden auf den Straßen",
@@ -46,7 +74,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Gen Z regelt: Jugendliche protestieren für Bildung, Klima und bezahlbares Leben",
+   "title": "Gen Z regelt: »Wir möchten mitreden, wir möchten, dass man uns zuhört«",
    "desc": "Es geht um Bildung, Wehrpflicht, bezahlbares Leben, Klima: Tausende Jugendliche demonstrieren in vielen deutschen Städten. Eindrücke aus Berlin.",
    "url": "https://www.spiegel.de/politik/deutschland/gen-z-regelt-jugendliche-protestieren-fuer-bildung-klima-und-bezahlbares-leben-a-e88fe963-e880-4004-9043-c7d84ca70e6e",
    "at": "2026-11-20T16:32:00+00:00"
@@ -92,6 +120,13 @@
    "desc": "Der Bundesrat will beim \"Startchancengesetz\" nachbessern. Für andere lebensnahe Vorhaben wie die \"Frühstartrente\", die Reform der Notfallversorgung oder die digitale Brieftasche gab die Länderkammer hingegen grünes Licht.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundesrat-startchancengesetz-fruehstartrente-notfallreform-100.html",
    "at": "2026-11-20T15:03:38+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Gen Z-Proteste: Danke für nichts, Boomer! Ihr habt das Land und unsere Zukunft ruiniert.",
+   "desc": "Die größte Generation hinterlässt uns einen Scherbenhaufen und wundert sich auch noch selbstgefällig, dass die Gen Z auf die Straße geht. Die jungen Menschen sind noch gar nicht wütend genug.",
+   "url": "https://www.spiegel.de/politik/deutschland/gen-z-proteste-danke-fuer-nichts-boomer-ihr-habt-das-land-und-unsere-zukunft-ruiniert-a-956ca15b-b03c-4757-876e-a5f7a8a7227b",
+   "at": "2026-11-20T15:00:00+00:00"
   },
   {
    "source": "Tagesschau",
@@ -157,32 +192,11 @@
    "at": "2026-11-20T12:40:12+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Gipfel von EU und Großbritannien: EU und Großbritannien wollen wieder enger zusammenarbeiten",
-   "desc": "Der britische Premierminister Andy Burnham hofft, mit einer Wiederannäherung an die EU die britische Wirtschaft anzukurbeln. Sie teilten gemeinsame Werte und Interessen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-grossbritannien-brexit-lebensmittelhandel-jugendmobilitaet-gxe",
-   "at": "2026-11-20T11:53:16+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Protest von \"Gen Z regelt\": Eine zersplitterte Bewegung",
    "desc": "Die Protestbewegung \"Gen Z regelt\" fordert von der Politik, viele verschiedene Lebens- und Gerechtigkeitsfragen für die junge Generation zu lösen. Hat sie damit Erfolg? Von Jan Koch.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/gen-z-regelt-proteste-106.html",
    "at": "2026-11-20T11:40:48+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "New York: Zohran Mamdani will berüchtigtes Gefängnis Rikers Island schließen",
-   "desc": "Seit Jahrzehnten steht Rikers Island wegen schlechter Versorgung und Gewalt in der Kritik. Bürgermeister Mamdani will es schließen lassen, fünf Jahre später als geplant.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/rikers-island-gefaengnis-new-york-schliessung-zohran-mamdani-gxe",
-   "at": "2026-11-20T11:33:52+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Startchancengesetz: Bundesrat stoppt Gesetz zu Sprachtests für Kitakinder",
-   "desc": "Die Länder kritisieren, dass der Bund neue Aufgaben für Kitas plant, zugleich aber weniger Geld bereitstellen will. Der Vermittlungsausschuss soll eine Lösung finden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/startchancengesetz-bundesrat-fruehkindliche-bildung-karin-prien-gxe",
-   "at": "2026-11-20T11:25:20+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -232,27 +246,6 @@
    "desc": "»Skandal mit Ansage«, »absurde Ausnahmen«: Neue Erkenntnisse über das Steuergeschenk für Springer-Chef Döpfner schrecken Koalitionspolitiker auf. Christ- und Sozialdemokraten fordern: Die Regeln müssen verschärft werden.",
    "url": "https://www.spiegel.de/politik/deutschland/erbschaftsteuer-cdu-und-spd-fordern-schaerfere-regeln-fuer-steuerschlupfloecher-a-61bda154-e21b-4e27-b33b-d9d8433ea4d6",
    "at": "2026-11-20T05:57:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "China und Deutschland: Wie gefährlich ist Pekings Spionage für die Bundesrepublik",
-   "desc": "China will zur größten Macht der Welt werden. Dafür sammelt Peking Informationen in Wirtschaft, Wissenschaft und Politik. Wie groß die Gefahr für Deutschland ist – und wie wir uns wehren können.",
-   "url": "https://www.spiegel.de/politik/deutschland/china-und-deutschland-wie-gefaehrlich-ist-pekings-spionage-fuer-die-bundesrepublik-a-1e42422e-9b9e-49c4-b43e-473fe7a343b5",
-   "at": "2026-11-20T05:16:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Klimakonferenz, Jugend demonstriert, Bundesrat beschließt digitale Geldbörse",
-   "desc": "In Antalya dümpelt die Klimakonferenz ihrem Ende entgegen. In ganz Deutschland wollen junge Leute protestieren. Und mit dem Smartphone soll bald vieles viel einfacher gehen. Das ist die Lage am Freitagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-klimakonferenz-endet-jugend-demonstriert-bundesrat-beschliesst-digitale-geldboerse-a-aedaefe0-00a1-4105-8774-4a5de8dde5f4",
-   "at": "2026-11-20T04:43:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Nato-Ostflanke: Deutschland und Polen planen engere militärische Zusammenarbeit",
-   "desc": "Patriot und Eurofighter: Die Verteidigung der Nato-Ostflanke wird zur gemeinsamen Aufgabe. Berlin und Warschau wollen dafür enger zusammenrücken. In Polen stößt das nicht überall auf Beifall.",
-   "url": "https://www.spiegel.de/politik/deutschland/nato-ostflanke-berlin-und-warschau-planen-engere-militaerische-zusammenarbeit-a-45a623db-265e-415f-b96b-fe4f441a96e9",
-   "at": "2026-11-20T01:33:00+00:00"
   }
  ]
 }

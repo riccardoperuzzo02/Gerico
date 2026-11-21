@@ -1,0 +1,38 @@
+{
+ "title": "COP31 ad Antalya: nessun accordo, la bozza non cita i combustibili fossili",
+ "section": "mondo",
+ "rank": 7,
+ "status": "live",
+ "summary": "La conferenza sul clima di Antalya non ha chiuso venerdì come previsto: la bozza non menziona più i combustibili fossili. Panama minaccia di non firmare, un nuovo testo è atteso sabato.",
+ "article": "La conferenza dell'Onu sul clima COP31, ad Antalya in Turchia, non si è chiusa venerdì 20 novembre come previsto: quasi 200 paesi non hanno trovato un accordo su una bozza che non cita più i combustibili fossili. I lavori dovevano finire alle 16 e proseguono nel fine settimana. Una sessione serale ha approvato solo alcune questioni tecniche. Un nuovo testo è atteso sabato.\n\nLa prima bozza, di 18 pagine e 144 punti, presentata lunedì dalla presidenza turco-australiana, parlava di abbandonare gradualmente i combustibili fossili. Giovedì è arrivata una sintesi lunga circa la metà, senza quel riferimento, dopo le obiezioni dell'Arabia Saudita e di altri grandi produttori di petrolio e gas, secondo le ricostruzioni lette. Turchia e Australia dicono di aver tolto molti impegni per cercare il consenso più ampio.\n\nIl nuovo testo ridimensiona anche l'obiettivo di portare l'elettricità al 35% dei consumi energetici finali entro il 2035, lasciandolo alla discrezione dei singoli paesi, e non cita più i 120 miliardi di dollari l'anno per l'adattamento dei paesi poveri. Resta il quadro di un fondo da 300 miliardi di dollari l'anno entro il 2035, senza accordo su come finanziarlo.\n\nL'Unione europea ha avvertito che la bozza «rischia di trasformare questa Cop sul clima in un vertice sui fossili». Il ministro dell'Ambiente di Panama, Juan Carlos Navarro, ha scritto alle presidenze che il suo paese non accetterà un testo senza azioni e impegni concreti; Panama è tra i paesi che hanno firmato una lettera per una transizione chiara dai fossili. Il ministro dell'Ambiente del Ghana ha detto: «Non siamo venuti qui a mendicare». Mohamed Adow, di Power Shift Africa, ha definito questa la «peggiore Cop di sempre».\n\nLe decisioni devono essere prese per consenso, quindi l'opposizione di un solo paese può bloccarle. Gli Stati Uniti sono assenti per il secondo anno, dopo la decisione di Donald Trump di interrompere la cooperazione sul clima. Un rapporto dell'Onu dice che il mondo supererà il limite di 1,5 gradi di riscaldamento fissato dall'accordo di Parigi.",
+ "facts": [
+  {"text": "La COP31 non si è chiusa venerdì 20 novembre e prosegue nel fine settimana.", "who": ["Al Jazeera", "Il Post"]},
+  {"text": "La bozza di giovedì non cita più i combustibili fossili, presente nella prima versione di lunedì.", "who": ["Al Jazeera", "Il Post"]},
+  {"text": "L'Unione europea dice che il testo rischia di trasformare la Cop in un vertice sui fossili.", "who": ["Al Jazeera"]},
+  {"text": "Il ministro di Panama Navarro dice che il suo paese non accetterà un testo senza impegni concreti.", "who": ["Il Post", "Al Jazeera"]},
+  {"text": "Un nuovo testo è atteso sabato.", "who": ["Al Jazeera"]}
+ ],
+ "view": "È certo che il testo in discussione non menziona i combustibili fossili e che il consenso manca. Non si sa se la conferenza chiuderà con un documento finale o senza.\n\nLa regola del consenso dà ai singoli paesi un potere di veto in entrambe le direzioni: i produttori di petrolio e gas sul testo, Panama e i paesi vulnerabili sulla sua debolezza. Da guardare: la terza bozza di sabato e la posizione dell'Unione europea.",
+ "open": [
+  "La conferenza chiuderà con un documento finale?",
+  "La terza bozza reintrodurrà un riferimento ai combustibili fossili?",
+  "Come sarà finanziato il fondo da 300 miliardi di dollari l'anno?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/20/fossil-fuel-talks-deadlock-pushes-cop31-climate-summit-into-overtime", "angle": "Le posizioni di Ue, Panama, Ghana e delle organizzazioni ambientaliste, i punti contesi.", "date": "2026-11-20"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/20/cop31-combustibili-fossi-bozza/", "angle": "Cosa cambia tra la prima bozza e la sintesi di giovedì, la posizione di Panama e i tempi.", "date": "2026-11-20"}
+ ],
+ "firstSeen": "2026-11-21T07:21:27+01:00",
+ "updated": "2026-11-21T07:21:27+01:00",
+ "change": "",
+ "tags": ["Clima", "COP31", "Energia"],
+ "themes": [],
+ "places": ["TR", "AU", "PA"],
+ "city": {"name": "Antalya", "lat": 36.9, "lon": 30.7},
+ "figure": {"value": "300 mld $", "label": "l'anno entro il 2035 nel quadro del fondo per il clima"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-21T07:21:27+01:00", "text": "Prima notizia: la COP31 va oltre la scadenza, la bozza non cita i combustibili fossili."}
+ ]
+}

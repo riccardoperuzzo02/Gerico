@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-11-13T07:25:00+01:00",
+  "asOf": "2026-11-21T07:21:27+01:00",
   "temi": [
     {
       "id": "iran-usa",
@@ -14,10 +14,10 @@
       "since": "2026-11-09"
     },
     {
-      "id": "israele-governo",
-      "keywords": ["Israele", "Eisenkot", "Netanyahu", "Knesset", "Likud", "Herzog"],
-      "label": "Israele",
-      "since": "2026-10-27"
+      "id": "borse-ia",
+      "keywords": ["Nvidia", "Nasdaq", "Wall Street", "Anthropic", "intelligenza artificiale", "Borse"],
+      "label": "Borse e Ia",
+      "since": "2026-11-09"
     }
   ]
 }

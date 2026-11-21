@@ -1,0 +1,37 @@
+{
+ "title": "Nvidia: la Sec esamina la contabilità, il titolo perde il 13% in Borsa",
+ "section": "tecnologia",
+ "rank": 6,
+ "status": "live",
+ "summary": "Secondo due fonti, la Sec sta esaminando le pratiche contabili di Nvidia, e il titolo ha perso circa il 13% venerdì. Trump chiede un ritorno di Jensen Huang, il consiglio dice di non volerlo.",
+ "article": "La Securities and Exchange Commission, l'autorità di vigilanza sulla Borsa americana, sta esaminando le pratiche contabili di Nvidia. Lo dicono due persone informate, secondo un'anticipazione che né l'autorità né l'azienda hanno confermato: un portavoce della Sec ha rifiutato di commentare e Nvidia non ha risposto subito. Non è noto quando sia iniziata l'indagine né quali questioni contabili siano sotto esame.\n\nVenerdì il titolo ha perso circa il 13%, secondo i dati Lseg, dopo un calo di oltre il 6% prima della notizia. Martedì la stampa americana aveva scritto che la Sec indaga sul gruppo, senza chiarire l'oggetto dell'inchiesta. Un'indagine non è una prova di irregolarità e molte si chiudono senza sanzioni.\n\nLa vicenda si intreccia con l'uscita del fondatore. Jensen Huang si è dimesso da amministratore delegato il 12 novembre, dopo le notizie su una sua relazione con Alice Huang, che le autorità americane sospettano di essere una spia di Pechino: la Cina lo nega. Alice Huang ha guidato Megaspeed, cliente di Nvidia a Singapore, che dal 2024 è oggetto di indagini americane su possibili violazioni dei controlli sulle esportazioni di chip verso la Cina. Megaspeed dice di aver svolto «attività lecite».\n\nDonald Trump ha detto che sarebbe felice di vedere Huang avere «una seconda possibilità»: lo definisce «un brav'uomo» che «ha preso decisioni sbagliate» e gli chiede di scusarsi. Il presidente del consiglio di amministrazione, Harvey Jones, dice che i consiglieri hanno accettato all'unanimità le dimissioni e non pensano di reintegrarlo.\n\nL'amministratrice delegata ad interim, Colette Kress, ha detto martedì che Nvidia sarà molto più selettiva sui finanziamenti alle aziende di intelligenza artificiale. Il dipartimento della Giustizia sta intanto esaminando l'acquisizione di Hugging Face da 12,9 miliardi di dollari.",
+ "facts": [
+  {"text": "Due persone informate dicono che la Sec esamina le pratiche contabili di Nvidia; l'autorità non commenta.", "who": ["Reuters"]},
+  {"text": "Il titolo Nvidia ha perso circa il 13% venerdì, secondo i dati Lseg.", "who": ["Reuters"]},
+  {"text": "Jensen Huang si è dimesso il 12 novembre dopo le notizie su una relazione con Alice Huang, sospettata dalle autorità americane di essere una spia cinese.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Trump chiede una seconda possibilità per Huang; il presidente del consiglio Harvey Jones dice che non sarà reintegrato.", "who": ["Al Jazeera"]},
+  {"text": "Kress dice che Nvidia sarà più selettiva sui finanziamenti ad aziende di intelligenza artificiale.", "who": ["Reuters"]}
+ ],
+ "view": "È certo il calo del titolo e che la Sec non ha commentato. L'oggetto dell'indagine, e la sua esistenza formale, restano affidati a fonti anonime.\n\nPer il settore conta il legame con i timori sui finanziamenti circolari nell'intelligenza artificiale, cioè accordi in cui Nvidia sostiene i clienti che comprano i suoi chip. Da guardare: una conferma ufficiale, le mosse del consiglio sulla guida del gruppo e l'esito dei controlli sull'export in Cina.",
+ "open": [
+  "Quali pratiche contabili esamina la Sec e da quando?",
+  "Il consiglio di Nvidia confermerà la guida ad interim di Kress?",
+  "Come si chiuderanno le indagini su Megaspeed?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/exclusive-nvidia-s-accounting-is-a-focus-of-us-sec-investigation-sources-say", "angle": "L'indagine della Sec sulla contabilità, il calo del titolo, Megaspeed e la guida ad interim.", "date": "2026-11-20"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/21/trump-calls-for-nvidia-to-reinstate-brilliant-jensen-huang", "angle": "Le parole di Trump su Huang e la posizione del presidente del consiglio di amministrazione.", "date": "2026-11-21"}
+ ],
+ "firstSeen": "2026-11-21T07:21:27+01:00",
+ "updated": "2026-11-21T07:21:27+01:00",
+ "change": "",
+ "tags": ["Nvidia", "Intelligenza artificiale", "Stati Uniti"],
+ "themes": ["borse-ia"],
+ "places": ["US", "CN"],
+ "figure": {"value": "-13%", "label": "il calo di Nvidia in Borsa venerdì 20 novembre"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-21T07:21:27+01:00", "text": "Prima notizia: indagine della Sec sulla contabilità di Nvidia, titolo a meno 13%."}
+ ]
+}

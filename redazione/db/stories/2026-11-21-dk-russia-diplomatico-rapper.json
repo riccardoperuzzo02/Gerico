@@ -1,0 +1,38 @@
+{
+ "title": "Danimarca: espulso un diplomatico russo per un presunto piano di omicidio",
+ "section": "mondo",
+ "rank": 8,
+ "status": "live",
+ "summary": "La Danimarca espelle l'addetto alla Difesa russo, che deve lasciare il paese entro sette giorni. I servizi di sicurezza danesi accusano l'intelligence russa di aver organizzato un attentato a un rapper ucraino; Mosca nega.",
+ "article": "Venerdì la Danimarca ha annunciato l'espulsione dell'addetto alla Difesa russo, che deve lasciare il paese entro sette giorni. Il ministro degli Esteri, Lars Løkke Rasmussen, ha convocato l'ambasciatore russo, Vladimir Barbin, e ha detto: «Stiamo dicendo apertamente: siete stati scoperti». Copenaghen non rompe del tutto i rapporti con Mosca.\n\nIl capo del servizio di sicurezza danese Pet, Rasmus Kieffer-Kristensen, parla di una «valutazione chiara»: l'intelligence russa avrebbe pianificato l'uccisione del rapper ucraino Albert Vasiliev, noto come Kyivstoner, durante un concerto previsto il 25 settembre in un sobborgo di Copenaghen, con l'aiuto di una banda danese. Secondo la polizia, la banda sospettata è Loyal to Familia, vietata dal 2021.\n\nLa polizia ha fermato alcune persone in un'auto a Hellerup, vicino alla sala, pochi minuti prima dell'inizio del concerto, che è stato annullato. Secondo le ricostruzioni, nell'auto c'erano armi da fuoco e coltelli, e uno dei sospetti aveva comprato un biglietto il 5 settembre. Due cittadini danesi sono accusati di aver aiutato un servizio di intelligence straniero e di tentato omicidio; negano di aver fatto qualcosa di illecito. Altre due persone fermate non sono accusate.\n\nLa portavoce del ministero degli Esteri russo, Maria Zakharova, ha detto che Mosca darà una «risposta adeguata». L'ambasciata russa a Copenaghen definisce l'espulsione «vendicativa» e dice che la Danimarca non ha presentato prove di un coinvolgimento russo. La Russia nega di essere dietro operazioni simili in Europa.\n\nLa premier danese, Mette Frederiksen, ha detto che Mosca è «messa all'angolo» e che il paese deve continuare a sostenere l'Ucraina. Il presidente del Consiglio europeo, António Costa, ha definito il piano «inaccettabile». Copenaghen valuta di sospendere i visti Schengen per i russi.\n\nAd agosto, secondo le autorità polacche, un cittadino russo era stato fermato in Polonia con l'accusa di preparare l'uccisione di un cittadino ucraino-americano a Varsavia; i media polacchi indicano come obiettivo lo stesso rapper. Il Servizio di sicurezza federale russo accusa Vasiliev di aver aiutato l'intelligence ucraina a organizzare un attacco con droni, cosa che lui nega.",
+ "facts": [
+  {"text": "La Danimarca espelle l'addetto alla Difesa russo, che ha sette giorni per lasciare il paese.", "who": ["Al Jazeera", "Kyiv Independent"]},
+  {"text": "Il servizio di sicurezza Pet dice che l'intelligence russa pianificava di uccidere il rapper Kyivstoner a un concerto il 25 settembre.", "who": ["Al Jazeera", "Kyiv Independent"]},
+  {"text": "Due cittadini danesi sono accusati di tentato omicidio e di aver aiutato un servizio di intelligence straniero; negano.", "who": ["Al Jazeera", "Kyiv Independent"]},
+  {"text": "L'ambasciata russa chiama l'espulsione vendicativa e dice che non ci sono prove; Zakharova promette una risposta.", "who": ["Al Jazeera"]},
+  {"text": "Copenaghen valuta di sospendere i visti Schengen per i russi.", "who": ["Al Jazeera", "Kyiv Independent"]}
+ ],
+ "view": "Sono accertati l'espulsione e le accuse formali a due cittadini danesi. Le prove sul ruolo dell'intelligence russa non sono state rese pubbliche e Mosca le contesta.\n\nÈ l'ultimo di una serie di episodi che i paesi europei attribuiscono a Mosca e che questa nega. Da guardare: la risposta russa, la decisione sui visti e l'esito del procedimento in Danimarca.",
+ "open": [
+  "Quali prove ha presentato Copenaghen sul ruolo dell'intelligence russa?",
+  "Come risponderà Mosca all'espulsione?",
+  "Quanti sono i fermati e quali accuse hanno?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/21/denmark-expels-russian-diplomat-over-alleged-plot-to-kill-ukrainian-rapper", "angle": "Le accuse, le reazioni di Mosca, della premier danese e di Costa.", "date": "2026-11-21"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/denmark-expels-russian-diplomat-over-alleged-assassination-plot-on-ukrainian-rapper-kyivstoner/", "angle": "Le parole del capo del Pet, gli arresti a Hellerup e il precedente in Polonia.", "date": "2026-11-20"}
+ ],
+ "firstSeen": "2026-11-21T07:21:27+01:00",
+ "updated": "2026-11-21T07:21:27+01:00",
+ "change": "",
+ "tags": ["Danimarca", "Russia", "Ucraina"],
+ "themes": ["ucraina"],
+ "places": ["DK", "RU", "UA"],
+ "city": {"name": "Copenaghen", "lat": 55.68, "lon": 12.57},
+ "figure": {"value": "7 giorni", "label": "il tempo dato all'addetto russo per lasciare la Danimarca"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-21T07:21:27+01:00", "text": "Prima notizia: la Danimarca espelle un diplomatico russo per un presunto piano di omicidio."}
+ ]
+}

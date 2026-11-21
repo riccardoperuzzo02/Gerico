@@ -1,7 +1,70 @@
 {
  "code": "US",
- "asOf": "2026-11-21T11:17:34+00:00",
+ "asOf": "2026-11-21T13:17:33+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
+   "desc": "Warren Buffett more than quadrupled his Thanksgiving donations to four family foundations this year to $5.5 billion.",
+   "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
+   "at": "2026-11-21T13:01:44+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tech outages are fueling a new doomsday economy",
+   "desc": "Recent technology outages have left some worried about AI cyberattacks and the U.S. electricity grid. The doomsday economy is heating up as a result.",
+   "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
+   "at": "2026-11-21T13:00:01+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Perspective: Defining 'human'",
+   "desc": "The Cambridge Dictionary has chosen the word \"human\" as its Word of the Year. Why ever might a word that entered the English language over 500 years ago be so honored?",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6041585/perspective-defining-human",
+   "at": "2026-11-21T13:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
+   "desc": "Colder weather and low wind speeds could strain Europe’s gas market, where storage started winter at its lowest level in more than a decade.",
+   "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
+   "at": "2026-11-21T12:47:25+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Senate permitting bill speeds up renewables, divides greens over oil and gas",
+   "desc": "A permitting reform bill in the Senate could help speed the development of renewable energy projects, but it's splitting environmentalists over other provisions that help the oil and gas industry.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6046482/senate-permitting-bill-speeds-up-renewables-divides-greens-over-oil-and-gas",
+   "at": "2026-11-21T12:40:17+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+   "desc": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a Holy Grail of math problems with the help of the company's AI tool Claude. It marks the second time in recent months that an AI company or someone linked to one claims to have cracked a famed unsolved math problem.",
+   "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
+   "at": "2026-11-21T12:30:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
+   "desc": "A federal court indefinitely suspended the U.S. Army's plans to detonate 68 drums of lead azide in Iowa after communities raised concerns.",
+   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
+   "at": "2026-11-21T12:00:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
+   "desc": "Airlines are opting to build giant business-class cabins with ever-more luxurious suites.",
+   "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
+   "at": "2026-11-21T12:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "S&P 500 correction: Five forces behind the market sell-off",
+   "desc": "The S&P 500 and Dow Jones Industrial Average closed in correction territory, off 10% from their records. The Nasdaq Composite lost its gain for the year.",
+   "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+   "at": "2026-11-21T11:29:25+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post",
@@ -46,13 +109,6 @@
   },
   {
    "source": "NPR",
-   "title": "The AI boom had a really bad week — and it's raising loud alarms",
-   "desc": "AI stocks — and the broader markets — got pummeled this week, raising major concerns about the financial system and the wider economy. Here's what to know.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
-   "at": "2026-11-21T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
    "desc": "A national effort to ensure that only winners of the popular vote become president could reach a critical milestone soon.",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6044237/electoral-college-national-popular-vote-interstate-compact",
@@ -63,6 +119,13 @@
    "title": "Anthropic says it will put humanity first. Will its IPO change that?",
    "desc": "Critics say now that the AI giant is a public company, its commitment to put safety ahead of commercial success will be tested.",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6048678/anthropic-ipo-mission-ai-safety",
+   "at": "2026-11-21T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "The AI boom had a really bad week — and it's raising loud alarms",
+   "desc": "AI stocks — and the broader markets — got pummeled this week, raising major concerns about the financial system and the wider economy. Here's what to know.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
    "at": "2026-11-21T10:00:00+00:00"
   },
   {
@@ -81,13 +144,6 @@
   },
   {
    "source": "CNBC",
-   "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
-   "desc": "Colder weather and low wind speeds could strain Europe’s gas market, where storage started winter at its lowest level in more than a decade.",
-   "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
-   "at": "2026-11-21T06:00:02+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Europe's cyber weak spot is the everyday businesses nobody thought to protect",
    "desc": "Known vulnerabilities are leaving everyday businesses increasingly exposed to cyber sabotage, as AI enables cybercriminals to work better and faster.",
    "url": "https://www.cnbc.com/2026/11/21/cyber-attacks-fridges-cybersecurity.html",
@@ -99,6 +155,13 @@
    "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
    "at": "2026-11-21T05:53:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Why Anthropic's blockbuster IPO couldn't escape the market correction",
+   "desc": "Anthropic's IPO was a big public market success for the company, but Friday's selloff shows that valuing the AI stock will remain volatile for investors.",
+   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
+   "at": "2026-11-21T05:30:09+00:00"
   },
   {
    "source": "New York Times",
@@ -353,27 +416,6 @@
    "at": "2026-11-20T21:38:21+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Rising seas have forced this Quinault village to relocate",
-   "desc": "The Quinault Indian Nation has moved its largest village away from rising seas and tsunamis",
-   "url": "https://www.npr.org/2026/11/20/nx-s1-6046485/rising-seas-have-forced-this-quinault-village-to-relocate",
-   "at": "2026-11-20T21:38:13+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump's impact on an Ohio steel plant",
-   "desc": "The giant steel plant in Middletown, Ohio planned to switch away from using coke, a refined form of coal. The switch would have cut hazardous air pollution -- and greenhouse gas emissions. But that plan has changed under President Trump",
-   "url": "https://www.npr.org/2026/11/20/nx-s1-5860971/trumps-impact-on-ohio-steel-plant",
-   "at": "2026-11-20T21:38:11+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "MLK's handwritten draft of iconic speech on display for the first time",
-   "desc": "The only known handwritten draft of The Reverend Martin Luther King Jr.'s 'I Have a Dream' speech is on display in his hometown. The iconic phrase, however, never made it on the page.",
-   "url": "https://www.npr.org/2026/11/20/nx-s1-6039337/mlk-i-have-a-dream-speech-draft-public-display",
-   "at": "2026-11-20T21:38:05+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor",
    "desc": "Cybersecurity companies have been hunting for acquisitions in the AI era.",
@@ -514,13 +556,6 @@
    "at": "2026-11-20T18:51:23+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Bitcoin's regulation bull case is played out. What could drive crypto gains moving forward",
-   "desc": "Crypto investors are looking beyond Congress for the next catalyst after the Senate failed to advance the Clarity Act in September.",
-   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-catalysts-tokenization-regulation.html",
-   "at": "2026-11-20T18:07:18+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Maps and charts show record number of measles cases in U.S. this year",
    "desc": "CBS News has been tracking a record number of measles cases and outbreaks around the country in 2026. The majority of cases are among those who haven't been vaccinated.",
@@ -547,13 +582,6 @@
    "desc": "The demand for large data centers in the U.S. this year, driven by AI needs, grew beyond the supply of powered land and the labor to build these structures.",
    "url": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
    "at": "2026-11-20T16:52:08+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Cathie Wood’s Ark Invest was a big buyer of Anthropic as she tells CNBC she’s ‘quite optimistic’",
-   "desc": "Wood's firm bought $90.8 million worth of Anthropic in six funds, according to a trade notification from the firm.",
-   "url": "https://www.cnbc.com/2026/11/20/cathie-woods-ark-invest-was-a-big-buyer-of-anthropic-during-debut.html",
-   "at": "2026-11-20T16:18:04+00:00"
   },
   {
    "source": "CBS News",
@@ -603,34 +631,6 @@
    "desc": "With Anthropic now public, investors are watching to see whether bitcoin and ether find a floor, and if institutional demand returns.",
    "url": "https://www.cnbc.com/2026/11/20/bitcoin-pre-ipo-selloff-pattern-anthropic-spacex.html",
    "at": "2026-11-20T14:34:14+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "The bull market has a new problem. The 'smart money' is selling",
-   "desc": "Companies are shifting from share buybacks to stock issuance, adding new supply. Anthropic’s $81 billion IPO puts that demand to the test.",
-   "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
-   "at": "2026-11-20T14:15:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "SpaceX’s subsidiary Cursor tells lawmakers it's considering phasing out Chinese AI models",
-   "desc": "SpaceX's Cursor is considering phasing out Chinese-developed open-weight AI models over geopolitical risk, according to a House report reviewed by CNBC.",
-   "url": "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html",
-   "at": "2026-11-20T14:07:24+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-   "desc": "Analysts note few concrete outcomes from the high-profile trilateral and other meetings for APEC in Shenzhen this week.",
-   "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
-   "at": "2026-11-20T13:29:50+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "A24 is having a great year at the box office. That could give HBO Max a streaming edge",
-   "desc": "A24 films \"Backrooms,\" \"The Drama\" and the Elizabeth Holmes documentary, \"You Can See Everything,\" are fueling a banner year at the box office.",
-   "url": "https://www.cnbc.com/2026/11/20/a24-box-office-hbo-max.html",
-   "at": "2026-11-20T12:00:02+00:00"
   }
  ]
 }

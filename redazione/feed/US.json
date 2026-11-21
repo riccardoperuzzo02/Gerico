@@ -1,7 +1,56 @@
 {
  "code": "US",
- "asOf": "2026-11-21T17:17:35+00:00",
+ "asOf": "2026-11-21T19:17:36+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Lock of George Washington's hair sells at auction for $4,000",
+   "desc": "South Carolina-based auction house Richmond Auctions said George Washington's lock of hair was sold for $4,000.",
+   "url": "https://www.cbsnews.com/news/george-washington-lock-of-hair-auction/",
+   "at": "2026-11-21T19:12:45+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Tech Outages Are Only the Beginning. A.I. Will Bring More Disruptions.",
+   "desc": "Cybersecurity has been an afterthought since the early days of the internet. Now A.I. is uncovering dormant problems, making the bill come due for decades of vulnerable code.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/tech-outages-ai-disruptions.html",
+   "at": "2026-11-21T19:11:51+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A Chicago Park Is Infested With Rats. Is a Wealthy Couple to Blame?",
+   "desc": "People keep spreading nuts in a Chicago park, attracting rodents and neighbors’ fury. Officials are not sure how to stop it.",
+   "url": "https://www.nytimes.com/2026/11/21/us/chicago-lincoln-park-rats.html",
+   "at": "2026-11-21T18:50:48+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump vows to work with Democrats to cap credit card interest rates",
+   "desc": "President Trump says he will work with the incoming Democratic Congress to cap credit card interest rates.",
+   "url": "https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics/",
+   "at": "2026-11-21T18:27:57+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Storms expected on both coasts threatens Thanksgiving travel",
+   "desc": "The mayor of San Francisco is asking people in the city not to travel unless \"absolutely essential.\" Meanwhile, a storm moving up the Eastern seaboard could also cause travel delays ahead of Thanksgiving.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+   "at": "2026-11-21T18:22:46+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
+   "desc": "Fausto Isidro Meza Flores, better known as \"El Chapo Isidro,\" was one of the FBI's most wanted fugitives. His arrest in northwest Mexico on Saturday has sparked violence in the region.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
+   "at": "2026-11-21T18:08:55+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "at": "2026-11-21T17:54:42+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
@@ -15,13 +64,6 @@
    "desc": "Anthropic held its historic Nasdaq debut a day before Nvidia's stock closed out its longest weekly losing streak since 2008.",
    "url": "https://www.cnbc.com/2026/11/21/anthropic-ipo-tech-selloff.html",
    "at": "2026-11-21T16:40:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "at": "2026-11-21T16:21:27+00:00"
   },
   {
    "source": "CBS News",
@@ -122,6 +164,13 @@
    "at": "2026-11-21T14:05:40+00:00"
   },
   {
+   "source": "CBS News",
+   "title": "11/21: CBS Saturday Morning",
+   "desc": "The stock market sees its lowest week of 2026. Plus, the magical migration of monarch butterflies. All this and more.",
+   "url": "https://www.cbsnews.com/video/112126-cbs-saturday-morning/",
+   "at": "2026-11-21T14:00:00+00:00"
+  },
+  {
    "source": "NPR",
    "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
    "desc": "Prosecutors argued the defendant, 30-year-old Jonathan Rinderknecht, had been \"mad at everything\" in the days leading up to the January 2025 fire, which killed 12 people.",
@@ -199,13 +248,6 @@
    "at": "2026-11-21T10:02:28+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "A Chicago Park Is Infested With Rats. Is a Wealthy Couple to Blame?",
-   "desc": "People keep spreading nuts in a Chicago park, attracting rodents and neighbors’ fury. Officials are not sure how to stop it.",
-   "url": "https://www.nytimes.com/2026/11/21/us/chicago-lincoln-park-rats.html",
-   "at": "2026-11-21T10:01:59+00:00"
-  },
-  {
    "source": "NPR",
    "title": "5 ways to turn off your 'work brain' after the day ends",
    "desc": "Don't let your work troubles follow you home. Psychologist Guy Winch shares techniques to help you stop ruminating about your nine-to-five, so you can focus on what really matters.",
@@ -221,13 +263,6 @@
   },
   {
    "source": "NPR",
-   "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
-   "desc": "A national effort to ensure that only winners of the popular vote become president could reach a critical milestone soon.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6044237/electoral-college-national-popular-vote-interstate-compact",
-   "at": "2026-11-21T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "Anthropic says it will put humanity first. Will its IPO change that?",
    "desc": "Critics say now that the AI giant is a public company, its commitment to put safety ahead of commercial success will be tested.",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6048678/anthropic-ipo-mission-ai-safety",
@@ -235,17 +270,10 @@
   },
   {
    "source": "NPR",
-   "title": "The AI boom had a really bad week — and it's raising loud alarms",
-   "desc": "AI stocks — and the broader markets — got pummeled this week, raising major concerns about the financial system and the wider economy. Here's what to know.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+   "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
+   "desc": "A national effort to ensure that only winners of the popular vote become president could reach a critical milestone soon.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6044237/electoral-college-national-popular-vote-interstate-compact",
    "at": "2026-11-21T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
-   "desc": "Efforts to establish rules for AI-powered killer robots and drones have run aground. U.N.-backed talks in Geneva ended Saturday with an agreement to extend discussions for two more years.",
-   "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
-   "at": "2026-11-21T08:08:01+00:00"
   },
   {
    "source": "CNBC",
@@ -267,13 +295,6 @@
    "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
    "at": "2026-11-21T05:53:09+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Alice Huang, Accused of Spying on Nvidia’s CEO, Is Linked to Firms With Ties to China’s Military",
-   "desc": "Companies linked to Alice Huang, the woman at the heart of the Nvidia scandal, are part of a network of Chinese tech firms and defense contractors that need advanced computing power.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
-   "at": "2026-11-21T05:13:03+00:00"
   },
   {
    "source": "CBS News",
@@ -444,13 +465,6 @@
    "at": "2026-11-20T22:59:33+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "3.9-magnitude earthquake rattles Los Angeles area",
-   "desc": "According to the U.S. Geological Survey, the earthquake struck about a half mile north-northwest of Commerce, California, which is about 7 miles from downtown Los Angeles.",
-   "url": "https://www.cbsnews.com/news/earthquake-los-angeles-11-20-2026/",
-   "at": "2026-11-20T22:42:44+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
    "desc": "Trump said he discussed Jensen Huang with China's Xi. Bessent said the ousted Nvidia CEO didn't come up in talks he had while in China.",
@@ -514,32 +528,11 @@
    "at": "2026-11-20T20:38:24+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Can Anthropic win hearts and minds by curing hearts and minds?",
-   "desc": "Anthropic says Claude Science can drive breakthroughs in drug discovery. It could also open lucrative commercial opportunities, experts say.",
-   "url": "https://www.cbsnews.com/news/anthropic-drug-discovery-claude-science-ipo/",
-   "at": "2026-11-20T20:37:16+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "People Are Anxious About Major Tech Failures. Preppers Are Cashing In.",
-   "desc": "Emergency preparedness aficionados are eager to give advice about how to survive when society breaks down. They’re also willing to make a buck.",
-   "url": "https://www.nytimes.com/2026/11/20/us/prepper-influencers-profit-tech-anxiety.html",
-   "at": "2026-11-20T20:08:10+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
    "desc": "Odds that the S&P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.",
    "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
    "at": "2026-11-20T19:59:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "L.A. Aims to Fence Off Park That’s Become Symbol of City’s Struggles",
-   "desc": "MacArthur Park near downtown Los Angeles has long been a disquieting example of the city’s inability to address drug sales, homelessness and people dealing with mental health issues.",
-   "url": "https://www.nytimes.com/2026/11/20/us/los-angeles-macarthur-park-fence.html",
-   "at": "2026-11-20T19:54:55+00:00"
   },
   {
    "source": "CNBC",
@@ -561,34 +554,6 @@
    "desc": "Dozens of House members didn't show up to vote this week. They're still getting paid.",
    "url": "https://www.cbsnews.com/news/johnson-house-republican-absences/",
    "at": "2026-11-20T19:28:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Beloved hippo Fiona dies days after swallowing hat",
-   "desc": "Fiona the hippo, who survived being born prematurely and rose to global fame, has died, the Cincinnati Zoo & Botanical Garden announced Thursday.",
-   "url": "https://www.cbsnews.com/news/fiona-the-hippo-dies-cincinnati-zoo/",
-   "at": "2026-11-20T19:26:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Strengthen the Legal Line With Attorneys General Triumphs",
-   "desc": "Once considered vulnerable to local issues, Democratic candidates for attorneys general romped on Tuesday, with the final contests called against Republican attorneys general in Kansas and Ohio.",
-   "url": "https://www.nytimes.com/2026/11/20/us/elections/democrats-attorney-general.html",
-   "at": "2026-11-20T19:03:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump touts Asia trip, meeting with Putin and Xi at news conference",
-   "desc": "President Trump touted his trip to Asia this week and his meetings with China's Xi Jinping and Russia's Vladimir Putin at a press conference at the White House.",
-   "url": "https://www.cbsnews.com/live-updates/trump-press-conference-live-stream-2026-11-20/",
-   "at": "2026-11-20T19:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Threatens to Bar U.S. Tech Firms From Building Data Centers Abroad",
-   "desc": "The president suggested he would tax the same companies, though it was not clear how he would carry out the plan unveiled at a news conference.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-data-centers-ban.html",
-   "at": "2026-11-20T18:51:23+00:00"
   }
  ]
 }

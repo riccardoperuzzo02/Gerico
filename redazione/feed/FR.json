@@ -1,13 +1,97 @@
 {
  "code": "FR",
- "asOf": "2026-11-21T09:17:34+00:00",
+ "asOf": "2026-11-21T11:17:34+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Les négociations se prolongent samedi à la COP31, faute d'accord sur les textes les plus discutés",
+   "desc": "\"Nous sommes proches de la ligne d'arrivée mais nous n'y sommes pas encore tout à fait\", a reconnu le président de la COP, le Turc Murat Kurum.",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/les-negociations-se-prolongent-samedi-a-la-cop31-faute-d-accord-sur-les-textes-les-plus-disputes_8293427.html",
+   "at": "2026-11-21T11:01:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je crois que raconter l’histoire des mafias, notamment à travers le cinéma, est extrêmement utile\" : Roberto Saviano est l'invité exceptionnel du Festival du film d'Histoire de Pessac",
+   "desc": "L’écrivain italien qui a dénoncé la Camorra fait l'objet d'un documentaire, \"Gomorra, Manifeste antimafia\", et nous parle de ses goûts de cinéphile.",
+   "url": "https://www.franceinfo.fr/culture/cinema/je-crois-que-raconter-l-histoire-des-mafias-notamment-a-travers-le-cinema-est-extremement-utile-roberto-saviano-est-l-invite-exceptionnel-du-festival-du-film-d-histoire-de-pessac_8289596.html",
+   "at": "2026-11-21T10:49:07+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Un policier condamné à 18 mois de prison ferme pour un tir mortel sur un automobiliste noir en Seine-Saint-Denis",
    "desc": "\"Après visionnage réitéré\" des images de vidéosurveillance de la ville de Sevran, la cour a exclu que ce membre de la BAC ait agi dans le cadre de la légitime défense invoquée.",
    "url": "https://www.franceinfo.fr/faits-divers/justice-proces/un-policier-condamne-a-18-mois-de-prison-ferme-pour-un-tir-mortel-sur-un-automobiliste-noir-en-seine-saint-denis_8293448.html",
-   "at": "2026-11-21T08:42:06+00:00"
+   "at": "2026-11-21T10:44:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Quand un gourou condamné coule des jours tranquilles au bord de sa piscine : \"Affaires sensibles\" revient sur le fiasco judiciaire de la secte OKC",
+   "desc": "Comment un gourou condamné en Belgique et poursuivi en France pour séquestration et viols sur mineurs, entre autres chefs d'accusation, peut-il couler une vieillesse paisible en Espagne, au bord de sa piscine de Marbella ? C'est l'histoire d'un fiasco judiciaire sur lequel revient un numéro d\"Affaires sensibles\" consacré aux enfants martyrs de la communauté bouddhiste OKC.",
+   "url": "https://www.franceinfo.fr/replay-magazine/france-2/affaires-sensibles/video-quand-un-gourou-condamne-coule-des-jours-tranquilles-au-bord-de-sa-piscine-affaires-sensibles-revient-sur-le-fiasco-judiciaire-de-la-secte-okc_8290778.html",
+   "at": "2026-11-21T10:31:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'association Droit au logement appelle à \"renforcer l'encadrement des loyers\" et à \"produire du logement social\"",
+   "desc": "Encadrement des loyers, construction de logements sociaux et lutte contre les passoires thermiques : l'association Droit au logement entend faire du logement une revendication centrale de l'\"Acte VI\" de la mobilisation contre la vie chère. Son porte-parole, Jean-Baptiste Eyraud, dénonce notamment un amendement sur les passoires thermiques, qu'il juge \"criminel\".",
+   "url": "https://www.franceinfo.fr/societe/manifestations/l-association-droit-au-logement-appelle-a-renforcer-l-encadrement-des-loyers-et-a-produire-du-logement-social_8293607.html",
+   "at": "2026-11-21T10:24:55+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une conférence de l'ONU ouvre à la voie à un possible encadrement international des \"robots tueurs\"",
+   "desc": "Les armes autonomes soulèvent de nombreuses préoccupations, notamment quant au risque de frappes sans discernement, à l'absence de responsabilité humaine et au respect des règles de la guerre.",
+   "url": "https://www.franceinfo.fr/societe/armee-securite-defense/une-conference-de-l-onu-ouvre-a-la-voie-a-un-possible-encadrement-international-des-robots-tueurs_8293439.html",
+   "at": "2026-11-21T10:22:26+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : Eric Zemmour lance sa campagne avec un meeting à Toulon",
+   "desc": "Le rassemblement doit débuter à 15h30 au Zénith, en présence notamment de Sarah Knafo, autre figure du parti Reconquête.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/direct-eric-zemmour-lance-sa-campagne-pour-l-election-presidentielle-avec-un-meeting-a-toulon_8293517.html",
+   "at": "2026-11-21T10:19:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Bulldozer\", \"super shérif\" et \"serviteur de l'Etat\" : qui est Hugues Moutouh, le préfet soupçonné d'avoir fait fuiter des informations au RN ?",
+   "desc": "Le haut fonctionnaire, qui a été le numéro deux du ministère de l'Intérieur entre avril 2025 et mai 2026, a été convoqué vendredi par Laurent Nuñez après l'ouverture d'une enquête pour \"violation du secret professionnel, violation du secret de l'enquête et recel de ces délits\".",
+   "url": "https://www.franceinfo.fr/politique/front-national/bulldozer-super-sherif-et-serviteur-de-l-etat-qui-est-hugues-moutouh-le-prefet-soupconne-d-avoir-fait-fuiter-des-informations-au-rn_8292374.html",
+   "at": "2026-11-21T10:08:31+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Mobilisation du 21 novembre : syndicats et gilets jaunes appellent à manifester pour la jeunesse et contre la vie chère, pour le sixième samedi d'affilée",
+   "desc": "Ces rassemblements s'inscrivent dans le cadre d'un appel européen de syndicats et associations de défense du droit au logement à des actions coordonnées sur trois jours, de vendredi à dimanche.",
+   "url": "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html",
+   "at": "2026-11-21T10:04:30+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Préfet soupçonné de fuites vers le RN : \"Il doit être mis à pied\", estime la députée écologiste Sandrine Rousseau",
+   "desc": "Sandrine Rousseau appelle le ministre de l'Intérieur Laurent Nuñez à mettre à pied “immédiatement” le préfet du Loiret Hugues Moutouh, accusé d’avoir organisé des fuites depuis le ministère de l’Intérieur vers le Rassemblement national. La députée écologiste était l’invitée de franceinfo, samedi 21 novembre.",
+   "url": "https://www.franceinfo.fr/france/centre-val-de-loire/loiret/prefet-soupconne-de-fuites-vers-le-rn-il-doit-etre-mis-a-pied-estime-la-depute-ecologiste-sandrine-rousseau_8293574.html",
+   "at": "2026-11-21T09:51:44+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je vais aller brûler un cierge\" : à Lyon, les commerçants de la place Bellecour s'inquiètent du retour des cortèges en centre-ville",
+   "desc": "La préfecture du Rhône a interdit les manifestations dans le centre-ville de Lyon, alors que les gilets jaunes ont annoncé une sixième journée de mobilisation, samedi 21 novembre. Trois rassemblements sont prévus, en évitant la place Bellecour, la plus grande place de la ville. Mais les commerçants s'inquiètent de la fin des cortèges.",
+   "url": "https://www.franceinfo.fr/societe/manifestations/reportage-je-vais-aller-bruler-un-cierge-a-lyon-les-commercants-de-la-place-bellecour-s-inquietent-du-retour-des-corteges-en-centre-ville_8292824.html",
+   "at": "2026-11-21T09:51:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un mathématicien annonce la résolution de l'hypothèse de Riemann, l'un des plus célèbres problèmes du monde, avec l'aide d'une IA d'Anthropic",
+   "desc": "Levent Alpöge n'a publié qu'un récit de ces travaux sur son site personnel et non la démonstration intégrale, qui fait plus de 250 000 pages selon lui et n'a pu être vérifiée par aucun autre mathématicien.",
+   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/un-mathematicien-annonce-la-resolution-d-un-des-plus-celebres-problemes-du-monde-avec-l-aide-d-une-ia-d-anthropic_8293547.html",
+   "at": "2026-11-21T09:45:38+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : comment l’argument du « barrage » anime la campagne de premier tour, au risque de l’affaiblir au second",
+   "desc": "A cinq mois de l’élection présidentielle, de gauche à droite, on relativise le barrage républicain, tout en espérant in fine en bénéficier dans un éventuel second tour contre le Rassemblement national.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/21/presidentielle-2027-comment-l-argument-du-barrage-anime-la-campagne-de-premier-tour-au-risque-de-l-affaiblir-au-second_6813960_823448.html",
+   "at": "2026-11-21T09:00:07+00:00"
   },
   {
    "source": "franceinfo",
@@ -18,8 +102,8 @@
   },
   {
    "source": "France 24",
-   "title": "En direct : Acte VI de la mobilisation pour la jeunesse et contre la vie chère",
-   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et gilets jaunes appellent à protester dans la rue contre la vie chère, dans un contexte de grogne sociale devenue européenne mais qui commence à s'essouffler en France. Des manifestations contre les violences faites aux femmes sont également attendues à partir de samedi dans toute la France. Suivez notre direct sur cette page.",
+   "title": "Manifestations en direct : nouvelle journée de mobilisation pour la jeunesse et contre la vie chère",
+   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et Gilets jaunes appellent à protester contre la vie chère, dans un contexte de colère sociale devenue européenne mais qui commence à s'essouffler en France. Des manifestations contre les violences faites aux femmes sont également attendues à dans toute la France. Suivez notre direct.",
    "url": "https://www.france24.com/fr/france/20261121-en-direct-acte-vi-de-la-mobilisation-pour-la-jeunesse-et-contre-la-vie-ch%C3%A8re",
    "at": "2026-11-21T08:23:49+00:00"
   },
@@ -60,31 +144,17 @@
   },
   {
    "source": "franceinfo",
-   "title": "Le Pas-de-Calais maintenu en vigilance orange aux crues samedi, la Canche a atteint son maximum",
-   "desc": "Vigicrues a par ailleurs prévenu que la Vire, en Normandie, atteindrait \"les seuils de premiers débordements\" dans la matinée. Le cours d'eau est placé en vigilance jaune.",
-   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-pas-de-calais-maintenu-en-vigilance-orange-aux-crues-samedi-la-canche-a-atteint-son-maximum_8293436.html",
-   "at": "2026-11-21T06:53:06+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"Les médias ont clairement été le déclencheur\" : en République tchèque, une réforme de l'audiovisuel public à l'origine d'une vaste mobilisation",
    "desc": "Des centaines de milliers de personnes ont manifesté dimanche dernier dans les rues de Prague pour protester contre le projet de réforme du financement des médias publics. La manifestation a toutefois dépassé la seule question des médias pour incarner le rejet du gouvernement d'Andrej Babiš.",
    "url": "https://www.franceinfo.fr/monde/europe/reportage-les-medias-ont-clairement-ete-le-declencheur-en-republique-tcheque-une-reforme-de-l-audiovisuel-public-a-l-origine-d-une-vaste-mobilisation_8292938.html",
    "at": "2026-11-21T06:46:51+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Les négociations se prolongent samedi à la COP31, faute d'accord sur les textes les plus disputés",
-   "desc": "\"Nous sommes proches de la ligne d'arrivée mais nous n'y sommes pas encore tout à fait\", a reconnu le président de la COP, le Turc Murat Kurum.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/les-negociations-se-prolongent-samedi-a-la-cop31-faute-d-accord-sur-les-textes-les-plus-disputes_8293427.html",
-   "at": "2026-11-21T06:36:26+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Une bulle dans le quotidien\" : comment le \"splunch\", mi-spa, mi lunch, relance la fréquentation de l'hôtellerie de luxe",
-   "desc": "De plus en plus d'hôtels haut de gamme proposent différentes expériences pour remplir leurs établissements non pas la nuit, mais en journée. Une façon pour eux de rentabiliser leurs installations dans un contexte économique incertain.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-une-bulle-dans-le-quotidien-comment-le-splunch-mi-spa-mi-lunch-relance-la-frequentation-de-l-hotellerie-de-luxe_8271737.html",
-   "at": "2026-11-21T06:20:05+00:00"
+   "source": "Le Monde",
+   "title": "En Catalogne, l’éventuel retour des phoques moines sur la Costa Brava inquiète déjà les pêcheurs",
+   "desc": "Une étude va être lancée en 2027 pour réinstaller une colonie de mammifères marins sur le littoral catalan où le dernier représentant de l’espèce est mort en 1973. Les pêcheurs craignent de voir leurs prises diminuer en raison de la prédation des phoques.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/21/en-catalogne-l-eventuel-retour-des-phoques-moines-sur-la-costa-brava-inquiete-deja-les-pecheurs_6813951_3244.html",
+   "at": "2026-11-21T06:30:01+00:00"
   },
   {
    "source": "franceinfo",
@@ -92,13 +162,6 @@
    "desc": "Les progrès de l'intelligence artificielle servent aussi les cybercriminels, qui l'utilisent comme un \"multiplicateur de force\" afin de mener des piratages dans le monde entier.",
    "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/des-campagnes-d-attaques-de-plus-en-plus-automatisees-comment-les-cybercriminels-ont-place-l-intelligence-artificielle-au-c-ur-de-leurs-operations_8292092.html",
    "at": "2026-11-21T06:18:32+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Bulldozer\", \"super shérif\" et \"serviteur de l'Etat\" : qui est Hugues Moutouh, le préfet soupçonné d'avoir fait fuiter des informations au RN ?",
-   "desc": "Le haut fonctionnaire, qui a été le numéro deux du ministère de l'Intérieur entre avril 2025 et mai 2026, a été convoqué vendredi par Laurent Nuñez après l'ouverture d'une enquête pour \"violation du secret professionnel, violation du secret de l'enquête et recel de ces délits\".",
-   "url": "https://www.franceinfo.fr/politique/front-national/bulldozer-super-sherif-et-serviteur-de-l-etat-qui-est-hugues-moutouh-le-prefet-soupconne-d-avoir-fait-fuiter-des-informations-au-rn_8292374.html",
-   "at": "2026-11-21T06:18:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -117,14 +180,21 @@
   {
    "source": "France 24",
    "title": "Sixième samedi de manifestation contre la vie chère, premier round contre les violences sexistes",
-   "desc": "Pour la sixième semaine d'affilée, des syndicats, organisations de jeunesse et gilets jaunes appellent à protester samedi dans la rue contre la vie chère, dans un contexte de grogne sociale devenue européenne mais qui commence à se tasser les samedis en France. Des manifestations sont aussi prévues cette semaine dans l'Hexagone pour dénoncer les violences faites aux femmes et réclamer le vote de la loi intégrale.",
+   "desc": "Pour la sixième semaine d'affilée, des syndicats, organisations de jeunesse et Gilets jaunes appellent à manifester, samedi, contre la vie chère, malgré une baisse de la mobilisation. Des rassemblements sont aussi prévus cette semaine dans l'Hexagone pour dénoncer les violences faites aux femmes et réclamer le vote de la loi intégrale.",
    "url": "https://www.france24.com/fr/france/20261121-sixi%C3%A8me-samedi-de-manifestation-contre-la-vie-ch%C3%A8re-premier-round-contre-les-violences-sexistes",
    "at": "2026-11-21T06:16:30+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : deux morts et 47 blessés dans des frappes russes sur Kryvy Rih, ville natale de Volodymyr Zelensky",
-   "desc": "Un enfant de 7 ans et une infirmière âgée de 20 ans ont été tués lors de cette série d’attaques dans le sud-est de l’Ukraine. « Une soirée et une nuit tragiques », déplore Oleksandr Vilkoul, chef du conseil de défense de Kryvy Rih.",
+   "title": "Téléphonie mobile par satellite : le chemin tortueux des opérateurs européens vers une constellation souveraine",
+   "desc": "Face à Starlink, Orange, Deutsche Telekom, Telefonica et Vodafone veulent créer un service mobile par satellite européen et souverain. Mais les délais, le coût et le manque de solutions disponibles compliquent leur projet.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/21/telephonie-mobile-par-satellite-le-chemin-tortueux-des-operateurs-europeens-vers-une-constellation-souveraine_6813948_3234.html",
+   "at": "2026-11-21T06:00:05+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : Ursula von der Leyen condamne la tentative d’assassinat au Danemark attribuée à Moscou",
+   "desc": "La présidente de la ‌Commission européenne a exprimé samedi sa « solidarité totale » avec le Danemark à la suite d’une ​tentative d’assassinat d’un rappeur américano-ukrainien ‌officiellement attribuée par Copenhague à la Russie.",
    "url": "https://www.lemonde.fr/international/live/2026/11/21/en-direct-guerre-en-ukraine-deux-morts-et-47-blesses-dans-des-frappes-russes-sur-kryvy-rih-ville-natale-de-volodymyr-zelensky_6810982_3210.html",
    "at": "2026-11-21T05:38:14+00:00"
   },
@@ -144,45 +214,31 @@
   },
   {
    "source": "Le Monde",
-   "title": "Que faire, que voir, où aller ? L’agenda culturel et lifestyle à partir du 21 novembre",
-   "desc": "Chaque samedi, « Le Goût du Monde » vous propose sa sélection de rendez-vous et d’adresses, à Paris et partout en France. Cette semaine, à Paris, l’humour contre le racisme avec l’exposition photo « Being there » à Barbès, le sacre de la peintre Mary Cassat au musée d’Orsay, et, à Bruxelles, la renaissance du Kanal-Centre Pompidou.",
-   "url": "https://www.lemonde.fr/m-styles/article/2026/11/21/que-faire-que-voir-ou-aller-l-agenda-culturel-et-lifestyle-a-partir-du-21-novembre_6813922_4497319.html",
-   "at": "2026-11-21T05:00:22+00:00"
+   "title": "« L’argentique était mort. Je me suis dit “il y a un truc à faire !” » : avec ces passionnés qui ressuscitent la photographie d’avant",
+   "desc": "Ils réparent et vendent de vieux appareils analogiques, animent des ateliers et des espaces d’échange, organisent expositions, concours et festivals… Gros plan sur ces passionnés de la photographie sans pixels qui fédèrent la communauté des « néo-argentiques ».",
+   "url": "https://www.lemonde.fr/m-perso/article/2026/11/21/l-argentique-etait-mort-je-me-suis-dit-il-y-a-un-truc-a-faire-avec-ces-passionnes-qui-ressuscitent-la-photographie-d-avant_6813923_4497916.html",
+   "at": "2026-11-21T05:00:24+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Quelles précautions prendre quand on prête une somme d’argent à un proche ?",
-   "desc": "Il est prudent d’établir un contrat, explique Stéphane Jacquin, responsable de l’ingénierie patrimoniale chez Lazard Frères Gestion.",
-   "url": "https://www.lemonde.fr/argent/article/2026/11/21/quelles-precautions-prendre-quand-on-prete-une-somme-d-argent-a-un-proche_6813921_1657007.html",
-   "at": "2026-11-21T05:00:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Jupiter\", \"Hunger Games\", \"Gabin\"... Quels sont les films à voir (ou pas) cette semaine au cinéma ?",
-   "desc": "Découvrez les critiques de notre sélection des films sortis en salles le mercredi 18 novembre 2026.",
-   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/jupiter-hunger-games-gabin-quels-sont-les-films-a-voir-ou-pas-cette-semaine-au-cinema_8290559.html",
-   "at": "2026-11-21T05:00:06+00:00"
+   "title": "Mobilisation lycéenne : les introuvables « complicités » de violences parmi les enseignants dénoncées par Matignon",
+   "desc": "Le premier ministre et son cabinet ont alimenté auprès de la presse l’idée de complicités au sein du personnel de l’éducation nationale dans les heurts qui ont eu lieu dans et aux abords des lycées. « Le Monde » a contacté plusieurs chefs d’établissement qui livrent un tout autre récit tandis que les parquets ne font pas état de procédures de cette nature.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/21/mobilisation-lyceenne-les-introuvables-complicites-de-violences-parmi-les-enseignants-denoncees-par-matignon_6813920_3224.html",
+   "at": "2026-11-21T05:00:03+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Sixième samedi de manifestations contre la vie chère en France, dans un contexte de baisse de la mobilisation",
-   "desc": "L’ampleur de cette nouvelle journée de protestation reste difficile à anticiper. Cet « acte VI » s’inscrit aussi dans le cadre d’un appel européen de syndicats et associations de défense du droit au logement à des actions coordonnées sur trois jours, de vendredi à dimanche.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/21/sixieme-samedi-de-manifestations-contre-la-vie-chere-en-france-dans-un-contexte-de-baisse-de-la-mobilisation_6813913_3224.html",
-   "at": "2026-11-21T04:30:08+00:00"
+   "title": "Anaïs Barbeau-Lavalette, écrivaine et réalisatrice québécoise : « Le fait que je sois mortelle m’habite. C’est très vivifiant et ça fait de moi une femme qui prend des risques »",
+   "desc": "Connue en France pour son roman « La femme qui fuit », la documentariste et militante écologiste et féministe remporte actuellement au Québec un franc succès en avec son film « Pauline Julien, femme pays », portrait d’une figure du mouvement souverainiste, qui a le vent en poupe dans la belle province.",
+   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/21/l-ecrivaine-et-realisatrice-quebecoise-anais-barbeau-lavalette-le-fait-que-je-sois-mortelle-m-habite-c-est-tres-vivifiant-et-ca-fait-de-moi-une-femme-qui-prend-des-risques_6813917_4500055.html",
+   "at": "2026-11-21T04:30:19+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Aux Etats-Unis, Wall Street en déroute après la dégringolade des sociétés liées à l’IA",
-   "desc": "Les inquiétudes sur le modèle économique des entreprises d’intelligence artificielle, les incertitudes sur l’avenir des data centers et les déboires du champion Nvidia ont effacé des milliards de dollars de capitalisation. La Bourse américaine a vécu l’une de ses pires semaines depuis la crise liée à la pandémie de Covid-19.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/21/aux-etats-unis-wall-street-en-deroute-apres-la-degringolade-des-societes-liees-a-l-intelligence-artificielle_6813811_3234.html",
-   "at": "2026-11-21T00:33:30+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Jusqu'à deux ans de prison ferme et le caractère raciste des violences retenu pour les trois policiers accusés d'avoir roué de coups Michel Zecler",
-   "desc": "La cour criminelle de Paris a rendu son verdict très attendu, vendredi soir, face à un public venu en nombre, et a finalement retenu la circonstance aggravante de racisme. Les peines vont de un an sous bracelet électronique à deux ans de prison ferme.",
-   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-condamnations-allant-d-un-an-a-deux-ans-de-prison-ferme-pour-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8292287.html",
-   "at": "2026-11-21T00:26:28+00:00"
+   "title": "Quatre recettes à base de poulet sans perdre de plumes",
+   "desc": "Curry de poulet, poulet au citron ou au panais, salade de poulet à l’estragon : trois personnalités ont confié au Goût du Monde leur recette, une invitation à se régaler d’une savoureuse volaille qui gagne à être accompagnée d’épices et de légumes.",
+   "url": "https://www.lemonde.fr/les-recettes-du-monde/article/2026/11/21/quatre-recettes-a-base-de-poulet-sans-perdre-de-plumes_6813914_5324493.html",
+   "at": "2026-11-21T04:30:13+00:00"
   },
   {
    "source": "Le Monde",
@@ -193,31 +249,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Guerre en Ukraine : Emmanuel Macron dénonce un \"agenda agressif\" de la Russie, après une série d'\"incidents graves\", notamment en Pologne et au Danemark",
-   "desc": "Des missiles russes sont tombés vendredi en Pologne, non loin de la frontière ukrainienne, sans faire de blessé.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-un-missile-russe-tombe-dans-le-sud-est-de-la-pologne-sans-faire-de-blesse_8292080.html",
-   "at": "2026-11-20T22:54:33+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : Dominique de Villepin officialise sa candidature, entre geste gaullien et référence révolutionnaire",
-   "desc": "Après le faux départ de 2012, l’ancien premier ministre entend bien être présent au premier tour en avril 2027. A 73 ans, il se frottera peut-être pour la première fois au suffrage universel. Il a dévoilé vendredi ses premières propositions et livré un réquisitoire implacable contre les différents partis.",
-   "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/20/presidentielle-2027-dominique-de-villepin-officialise-sa-candidature-entre-geste-gaullien-et-reference-revolutionnaire_6813715_6205049.html",
-   "at": "2026-11-20T22:25:47+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Procès Michel Zecler : les trois policiers condamnés à un à deux ans de prison ferme",
-   "desc": "Procès Michel Zecler : les trois policiers jugés pour avoir roué de coups le producteur de musique en novembre 2020 ont été condamnés, vendredi 20 novembre, à des peines allant d'un à deux ans de prison ferme. La cour criminelle de Paris a retenu la circonstance aggravante de racisme. Les trois policiers ont également été définitivement interdits d'exercer leur fonction, avec exécution provisoire.",
-   "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/proces-michel-zecler-les-trois-policiers-condamnes-a-un-a-deux-ans-de-prison-ferme_8293016.html",
-   "at": "2026-11-20T22:09:27+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'auteur du tir de mortier d'artifice contre la députée LFI Farida Amrani a été condamné à 10 mois de bracelet électronique",
-   "desc": "Le 7 novembre, un individu masqué était entré dans un salon de coiffure d'Evry-Courcouronnes (Essonne) où se trouvait l'élue. Elle avait été légèrement blessée.",
-   "url": "https://www.franceinfo.fr/faits-divers/l-auteur-du-tir-de-mortier-d-artifice-contre-la-deputee-lfi-farida-amrani-a-ete-condamne-a-10mois-de-bracelet-electronique_8293004.html",
-   "at": "2026-11-20T21:55:57+00:00"
+   "title": "Cargo échoué sur une plage des Landes : comment va se passer la remise à flot de l'énorme navire ?",
+   "desc": "Les images d'un cargo, qui s'est échoué non loin de la plage du Cap de l'Homy, à Lit et Mixe, dans les Landes, impressionnent. Les membres d'équipage, 19 marins, qui prenaient la direction du port de Rouen, ont pu être hélitreuillés. L'Abeille Bretagne, remorqueur de haute mer, se rend sur place afin d'évaluer la situation.",
+   "url": "https://www.franceinfo.fr/france/nouvelle-aquitaine/landes/cargo-echoue-sur-une-plage-des-landes-comment-va-se-passer-la-remise-a-flot-de-l-enorme-navire_8292887.html",
+   "at": "2026-11-20T22:57:10+00:00"
   },
   {
    "source": "France 24",
@@ -225,13 +260,6 @@
    "desc": "Les trois policiers ayant passé à tabac le producteur de musique noir Michel Zecler en 2020 ont été condamnés à des peines de un à deux ans de prison ferme. L'accusation avait de son côté requis, jeudi, entre quatre et six ans de prison ferme.",
    "url": "https://www.france24.com/fr/france/20261120-proc%C3%A8s-zecler-les-trois-policiers-condamn%C3%A9s-%C3%A0-des-peines-de-un-%C3%A0-deux-ans-de-prison-ferme",
    "at": "2026-11-20T21:54:13+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Députés et sénateurs parviennent à un accord sur le projet de budget de \"fin de gestion\" pour 2026, avant une possible adoption définitive mardi",
-   "desc": "Le texte, qui procède aux derniers ajustements budgétaires de l'année en cours, a fait l'objet d'un accord en commission mixte paritaire.",
-   "url": "https://www.franceinfo.fr/economie/budget/deputes-et-senateurs-parviennent-a-un-accord-sur-le-projet-de-budget-de-fin-de-gestion-pour-2026-avant-une-possible-adoption-definitive-mardi_8292914.html",
-   "at": "2026-11-20T21:35:30+00:00"
   },
   {
    "source": "France 24",
@@ -256,24 +284,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Le logement est le premier poste de dépense qui \"ampute le pouvoir d'achat\" des Français, souligne Christophe Robert, de la Fondation pour le logement des défavorisés",
-   "desc": "À cinq mois de l'élection présidentielle, la Fondation pour le logement des défavorisés appelle à mettre la question du logement au cœur des débats et alerte, sur France Inter, sur la situation précaire des mal-logés.",
-   "url": "https://www.franceinfo.fr/elections/le-logement-est-le-premier-poste-de-depense-qui-ampute-le-pouvoir-d-achat-des-francais-souligne-christophe-robert-de-la-fondation-pour-le-logement-des-defavorises_8292908.html",
-   "at": "2026-11-20T20:08:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Parlement adopte définitivement la présomption d'usage légal des armes par les forces de l'ordre",
-   "desc": "La proposition de loi, soutenue par le centre, la droite et l'extrême droite, a été adoptée à 205 voix pour et 110 contre au Sénat.",
-   "url": "https://www.franceinfo.fr/faits-divers/police/le-parlement-adopte-definitivement-la-presomption-d-usage-legal-des-armes-par-les-forces-de-l-ordre_8292845.html",
-   "at": "2026-11-20T19:26:13+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Une information judiciaire ouverte contre Gérard Depardieu et Michel Houellebecq, accusés de viol en réunion et d’agressions sexuelles lors d’un tournage",
-   "desc": "L’ouverture d’une « information judiciaire sur plainte » d’une comédienne ayant tourné dans un film en 2018 avec l’acteur et l’écrivain, a été confirmée par le parquet, vendredi.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/20/une-information-judiciaire-ouverte-contre-gerard-depardieu-et-michel-houellebecq-accuses-de-viol-en-reunion-et-d-agressions-sexuelles-lors-d-un-tournage_6813698_3224.html",
-   "at": "2026-11-20T19:24:41+00:00"
+   "title": "Organisations présentes, dispositif de sécurité... A quoi faut-il s'attendre pour les manifestations du samedi 21 novembre ?",
+   "desc": "Le ministre de l'Intérieur a demandé aux préfets d'être \"particulièrement vigilants\" samedi, nouvelle journée de mobilisation sociale en France qui coïncide avec le huitième anniversaire du mouvement des gilets jaunes.",
+   "url": "https://www.franceinfo.fr/economie/greve/organisations-presentes-dispositif-de-securite-a-quoi-faut-il-s-attendre-pour-les-manifestations-du-samedi-21-novembre_8292461.html",
+   "at": "2026-11-20T19:11:44+00:00"
   },
   {
    "source": "France 24",
@@ -283,46 +297,11 @@
    "at": "2026-11-20T19:02:24+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Près de la moitié des maires excluent de parrainer un candidat à la présidentielle 2027, principalement par peur d'être étiquetés politiquement",
-   "desc": "Quelque 48,3% des maires refuseraient aujourd'hui d'accorder leur parrainage à un ou une candidate qui les solliciterait, révèle une étude publiée par l'Association des maires de France et le Cevipof.",
-   "url": "https://www.franceinfo.fr/elections/pres-de-la-moitie-des-maires-excluent-de-parrainer-un-candidat-a-la-presidentielle-2027-principalement-par-peur-d-etre-etiquetes-politiquement_8292749.html",
-   "at": "2026-11-20T18:25:32+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Budget : députés et sénateurs s’entendent sur un premier texte malgré l’enlisement politique",
-   "desc": "La commission mixte paritaire réunie vendredi 19 novembre a trouvé un accord sur le projet de loi de fin de gestion pour 2026. Trouver un compromis sur le budget 2027, rejeté à l’Assemblée et jugé « suicidaire » au Sénat, s’annonce plus ardu.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/20/budget-deputes-et-senateurs-s-entendent-sur-un-premier-texte-malgre-l-enlisement-politique_6813691_823448.html",
-   "at": "2026-11-20T18:24:10+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Je ne savais pas qu'il était encore là\", réagit Marine Tondelier après le départ de Yannick Jadot des Ecologistes",
-   "desc": "Yannick Jadot a annoncé quitter les Ecologistes après la main tendue de Marine Tondelier à Jean-Luc Mélenchon pour la présidentielle 2027. Le désormais ex-membre du parti était déjà suspendu pour avoir rejoint Raphaël Glucksmann.",
-   "url": "https://www.franceinfo.fr/elections/je-ne-savais-pas-qu-il-etait-encore-la-reagit-marine-tondelier-apres-le-depart-de-yannick-jadot-des-ecologistes_8292785.html",
-   "at": "2026-11-20T18:01:22+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Minerais critiques : au Kenya, un consortium américain met la main sur un site prometteur",
-   "desc": "Le ministère des mines kényan a choisi, jeudi 19 novembre, le consortium Frontier Minerals pour exploiter le site de Mrima Hill. Une victoire pour Washington, qui cherche à pallier la restriction des exportations chinoises en minerais.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/20/minerais-critiques-au-kenya-un-consortium-americain-met-la-main-sur-un-site-prometteur_6813689_3212.html",
-   "at": "2026-11-20T18:00:18+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Bernabé Malacalza, géopolitologue : « Il existe une construction narrative complotiste autour de l’influence chinoise en Amérique latine »",
    "desc": "La rivalité entre Washington et Pékin se joue dans le contrôle des flux, des ressources, des infrastructures et de l’accès aux données. Dans un entretien au « Monde », le chercheur argentin décrypte les ressorts de cette ingérence dans sa région du monde et les concessions faites aux géants de la tech qui mettent en jeu la souveraineté des Etats.",
    "url": "https://www.lemonde.fr/international/article/2026/11/20/bernabe-malacalza-geopolitologue-il-existe-une-construction-narrative-complotiste-autour-de-l-influence-chinoise-en-amerique-latine_6813679_3210.html",
    "at": "2026-11-20T17:21:08+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Ribeauvillé, le maire refuse la pose d’un pavé de mémoire pour un ancien habitant juif",
-   "desc": "La ville du Haut-Rhin appuie son refus en se défendant de ne pas vouloir favoriser une catégorie de victimes du nazisme. Des arguments sur lesquels s’interrogent la famille et l’association.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/20/a-ribeauville-le-maire-refuse-la-pose-d-un-pave-de-memoire-pour-un-ancien-habitant-juif_6813678_3224.html",
-   "at": "2026-11-20T17:19:06+00:00"
   },
   {
    "source": "France 24",
@@ -358,13 +337,6 @@
    "desc": "Dominique de Villepin a officialisé vendredi 20 novembre sa candidature à l'élection présidentielle de 2027. L'ex-Premier ministre se présente comme une alternative au macronisme, à La France insoumise et au Rassemblement national.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261120-pr%C3%A9sidentielle-2027-l-ancien-premier-ministre-dominique-de-villepin-annonce-sa-candidature",
    "at": "2026-11-20T11:42:32+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "La députée RN Laure Lavalette se défend d'être antisémite, se dédouane d'écrits vieux de \"30 ans\"",
-   "desc": "Selon une enquête publiée mercredi par le média Les Jours, la députée du Rassemblement national du Var Laure Lavalette aurait présidé, lors de ses années d'études, un syndicat étudiant dont la revue publiait des écrits antisémites. L'élue a balayé les accusations dans une interview sur BFMTV, arguant de faits vieux de \"30 ans\".",
-   "url": "https://www.france24.com/fr/france/20261120-accusations-antis%C3%A9mitisme-d%C3%A9put%C3%A9e-rn-laure-lavalette-invoque-faits-vieux-de-30-ans",
-   "at": "2026-11-20T09:26:06+00:00"
   }
  ]
 }

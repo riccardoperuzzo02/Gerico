@@ -1,7 +1,35 @@
 {
  "code": "DE",
- "asOf": "2026-11-21T09:17:34+00:00",
+ "asOf": "2026-11-21T11:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Klimaschutz: EU-Klimakommissar schließt Scheitern der UN-Klimakonferenz nicht aus",
+   "desc": "Ob die UN-Klimakonferenz mit einer Vereinbarung endet, ist der Europäischen Union zufolge nicht sicher. Die EU werde ihr »Äußerstes« geben, sagt der Klimakommissar.",
+   "url": "https://www.zeit.de/politik/2026-11/un-klimakonferenz-cop31-antalya-tuerkei-wopke-hoekstra-gxe",
+   "at": "2026-11-21T11:08:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gen Z: Was darf Protest? Und was kann er?",
+   "desc": "In Europa geht die Gen Z auf die Straße. Wogegen sich die Demos richten, welche Vorbilder sie haben und wann Protest in Gewalt umschlägt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/jugendproteste-gen-z-regelt-europa-frankreich-gewalt",
+   "at": "2026-11-21T10:59:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Abschiebezentren in Ruanda: Juristen verweisen auf rechtliche Hürden für Abschiebungen nach Ruanda",
+   "desc": "Die rechtliche Klärung auf EU‑Ebene reicht der Bundesregierung für Abschiebungen nach Ruanda womöglich nicht aus. Juristen zufolge muss auch der Bundestag zustimmen.",
+   "url": "https://www.zeit.de/politik/2026-11/abschiebezentren-ruanda-eu-rueckkehrverordnung-bundestag-gutachten-gxe",
+   "at": "2026-11-21T10:43:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Memoiren von Joe Biden: 480 Seiten und null Einsicht",
+   "desc": "Joe Biden hat seine Memoiren veröffentlicht. Sie zeugen nicht nur von der Verbitterung des ehemaligen US-Präsidenten. Sondern auch von Gefahren, die seiner Partei drohen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/memoiren-joe-biden-us-demokraten-promise-me-america",
+   "at": "2026-11-21T09:38:16+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Liquiditätshilfen für Schweinehalter: \"Nur ein Tropfen auf den heißen Stein\"",
@@ -25,7 +53,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "News: Boris Pistorius patzt, Hilfen für die Ukraine, AfD auf Kurssuche, Donald Trump lobt Stephen Miller",
+   "title": "News: Boris Pistorius, Ukraine, AfD auf Kurssuche, Donald Trump lobt Stephen Miller",
    "desc": "Verteidigungsminister Boris Pistorius patzt. Ex-CDU-Chefin Annegret Kramp-Karrenbauer mahnt zur Solidarität mit der Ukraine. AfD-Landesverbände stimmen über Programm und Personal ab. Das ist die Lage am Samstagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-boris-pistorius-patzt-hilfen-fuer-die-ukraine-afd-auf-kurssuche-donald-trump-lobt-stephen-miller-a-cb84b583-511a-4850-9455-833a6e8d92a7",
    "at": "2026-11-21T05:46:00+00:00"
@@ -43,6 +71,13 @@
    "desc": "Im Dezember will die AfD in Sachsen-Anhalt Ulrich Siegmund zum Ministerpräsidenten wählen lassen. Aber mit welchen Stimmen? Und: Wie abhängig ist Europa von Elon Musk?",
    "url": "https://www.zeit.de/politik/2026-11/afd-sachsen-anhalt-ulrich-siegmund-ministerpraesident-wahl-dezember",
    "at": "2026-11-21T04:55:13+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Trumps Pressekonferenz: Und dann fragt Trump Stephen Miller, ob er Präsident werden wolle",
+   "desc": "Zur Pressekonferenz nach seiner Asienreise lässt sich der US-Präsident von seinen potenziellen Erben Vance und Rubio begleiten. Dabei macht er klar, wessen Meinung zählt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-pressekonferenz-jd-vance-marco-rubio",
+   "at": "2026-11-21T04:21:14+00:00"
   },
   {
    "source": "Die Zeit",
@@ -143,13 +178,6 @@
    "at": "2026-11-20T15:49:38+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Jemen: Militärkoalition greift erneut Ziele der Huthi-Miliz im Jemen an",
-   "desc": "Das von Saudi-Arabien geführte Militärbündnis hat Ziele in mehreren Städten im Jemen angegriffen. Die Huthi-Miliz feuert Drohnen und Raketen in Richtung Saudi-Arabien.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/saudi-arabien-huthi-jemen-angriffe-hudaida-zivilisten",
-   "at": "2026-11-20T15:49:25+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bundesrat stoppt \"Startchancengesetz\" vorerst",
    "desc": "Der Bundesrat will beim \"Startchancengesetz\" nachbessern. Für andere lebensnahe Vorhaben wie die \"Frühstartrente\", die Reform der Notfallversorgung oder die digitale Brieftasche gab die Länderkammer hingegen grünes Licht.",
@@ -171,39 +199,11 @@
    "at": "2026-11-20T14:58:12+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russische Marschflugkörper stürzen in Polen ab",
-   "desc": "Bei russischen Luftangriffen auf die Ukraine sind offenbar zwei Marschflugkörper und eine Drohne auf polnischem Gebiet abgestürzt. Polen spricht von einer »Provokation«.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-raketen-luftraumverletzung-polen-ukraine-gxe",
-   "at": "2026-11-20T14:44:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Hendrik Wüst: Schluss mit Rumpelstilzchen",
-   "desc": "Hendrik Wüst setzt als neuer Bundesratspräsident auf Kompromiss statt Lautstärke. Die Kritik an Bundeskanzler Friedrich Merz ist bei seinem Auftritt kaum zu überhören.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/hendrik-wuest-bundesrat-friedrich-merz",
-   "at": "2026-11-20T14:33:11+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "AfD in Sachsen-Anhalt: Was steckt hinter Ulrich Siegmunds neuem Wahlplan?",
    "desc": "AfD-Mann Ulrich Siegmund will die Wahl zum Ministerpräsidenten im Landtag von Sachsen-Anhalt um eine Woche vorverlegen. Dafür gibt es vor allem einen Grund.",
    "url": "https://www.spiegel.de/politik/deutschland/afd-in-sachsen-anhalt-was-steckt-hinter-ulrich-siegmunds-neuem-wahlplan-a-8eade0e5-c554-4c1d-907a-e34c3845ac8f",
    "at": "2026-11-20T13:43:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Verhandlungen im Ukrainekrieg: Worüber Russland und die Ukraine verhandeln",
-   "desc": "Annexion, Neutralität, Truppenstärke, Sicherheitsgarantien: So haben sich die Themen der russisch-ukrainischen Verhandlungen in fünf Jahren entwickelt. Eine Chronologie",
-   "url": "https://www.zeit.de/politik/ausland/2026-10/verhandlungen-ukraine-krieg-russland-politik-militaer-chronologie",
-   "at": "2026-11-20T13:42:13+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gesetzesreformen: Bundesrat billigt Reformen zu Führerschein, Cyberabwehr und Notfällen",
-   "desc": "Weniger Kosten beim Führerschein, Entlastung für Notaufnahmen: Der Bundesrat hat mehrere Gesetze gebilligt. Ein Vorhaben muss in den Vermittlungsausschuss. Der Überblick",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesrat-reformen-fuehrerschein-cyberabwehr-notfallversorgung-altersvorsorge-kinder-sprachtests-kitas-gxe",
-   "at": "2026-11-20T13:09:00+00:00"
   },
   {
    "source": "Tagesschau",

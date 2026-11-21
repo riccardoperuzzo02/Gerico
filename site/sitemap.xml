@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-21T08:52:22+00:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-21T12:21:56+00:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/terminal</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/come-funziona</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/glossario</loc></url>
@@ -13,12 +13,12 @@
 <url><loc>https://gerico.financialnews.workers.dev/tema/israele-governo</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/ucraina</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/voto-usa</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/giustizia</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/stati-uniti</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/regno-unito</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/unione-europea</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/governo</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/francia</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/giustizia</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/spagna</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/elezioni</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/germania</loc></url>
@@ -50,6 +50,8 @@
 <url><loc>https://gerico.financialnews.workers.dev/pensiero</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/pensiero/2026-11-20</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/pensiero/2026-11-21</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-ss-elezioni-rinvio</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-hu-contanti-sesztak</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-corte-suprema-asilo-confine</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-alaska-governatore-senato</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-gb-probation-sciopero</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
@@ -100,9 +102,9 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-27-brasile-lula-bolsonaro</loc><lastmod>2026-11-02T07:26:43+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-yemen-aden-riad</loc><lastmod>2026-11-11T09:22:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-titoli-di-stato</loc><lastmod>2026-10-29T07:27:28+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-iran-usa-diplomazia-sanzioni</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Iran-Usa: Teheran cerca ancora la diplomazia, Trump rifiuta le condizioni</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-iran-usa-diplomazia-sanzioni</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Iran-Usa: petroliere colpite a Hormuz mentre la trattativa resta ferma</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-wall-street-nasdaq-crollo</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Wall Street: venerdì il Nasdaq perde il 5,4%, il Dow Jones il 2%</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-ua-kryvyi-rih-doppio-attacco</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Ucraina: doppio attacco russo a Kryvyi Rih, due morti e 52 feriti</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-ua-kryvyi-rih-doppio-attacco</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Ucraina: doppio attacco russo a Kryvyi Rih, due morti e 58 feriti</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-trump-xi-putin-shenzhen</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-ye-houthi-aden-comandante-saudita</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-nvidia-sec-contabilita</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Nvidia: la Sec esamina la contabilità, il titolo perde il 13% in Borsa</news:title></news:news></url>
@@ -117,6 +119,7 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-anthropic-ipo-nasdaq</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-eu-porto-marghera-materie-prime</loc><lastmod>2026-11-20T07:27:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:27:00+01:00</news:publication_date><news:title>Ue: via libera al sito di Porto Marghera per le materie prime critiche</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-it-avio-iceye-opa</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Avio: il gruppo finlandese Iceye lancia un&#x27;opa da 2 miliardi di euro</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-it-de-gennaro-morto</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T13:21:30+01:00</news:publication_date><news:title>Roma: morto Gianni De Gennaro, ex capo della polizia indagato per via D&#x27;Amelio</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-us-senato-alaska-peltola</loc><lastmod>2026-11-20T09:49:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-florida-alluvioni</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Stati Uniti: alluvioni nel Sud della Florida, scuole chiuse a Broward</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-gb-accordo-ue-burnham</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Regno Unito: concluso l&#x27;accordo con l&#x27;Ue, aperta la questione delle rette</news:title></news:news></url>
@@ -187,6 +190,4 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-faa-blocco-voli</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-gaza-hamas-comandante-rafah</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-tech-starship-cattura</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-hu-contanti-sesztak</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-ss-elezioni-rinvio</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
 </urlset>

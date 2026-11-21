@@ -1,0 +1,39 @@
+{
+ "title": "Roma: morto Gianni De Gennaro, ex capo della polizia indagato per via D'Amelio",
+ "section": "italia",
+ "rank": 18,
+ "status": "live",
+ "summary": "L'ex capo della polizia Gianni De Gennaro è morto a 78 anni. Pochi giorni fa la procura di Caltanissetta lo aveva indagato per i depistaggi sulla strage di via D'Amelio.",
+ "article": "Gianni De Gennaro, capo della polizia dal 2000 al 2007, è morto a 78 anni. La notizia è arrivata sabato mattina, dopo che i familiari, non riuscendo a contattarlo, avevano dato l'allarme. I media italiani riferiscono che si sarebbe tolto la vita; le autorità non hanno dato altri dettagli nelle fonti lette.\n\nDe Gennaro era stato per decenni uno dei volti dell'antimafia. Aveva lavorato con il giudice Giovanni Falcone, aveva diretto la Direzione investigativa antimafia e poi il dipartimento che coordina i servizi di intelligence. Nel 2001 guidò la sicurezza del vertice G8 di Genova, segnato da scontri violenti, e fu poi assolto in un procedimento collegato. Dal 2013 al 2020 è stato presidente di Finmeccanica, poi Leonardo.\n\nLunedì 16 novembre la procura di Caltanissetta gli aveva notificato un avviso di garanzia per depistaggio sulla strage di via D'Amelio, in cui nel 1992 morirono il magistrato Paolo Borsellino e cinque agenti della scorta. Secondo indiscrezioni di stampa i pubblici ministeri avrebbero chiesto per lui gli arresti domiciliari. De Gennaro respingeva ogni addebito e nessun giudice si era pronunciato: era indagato, non condannato.\n\nLa presidente del Consiglio, Giorgia Meloni, si è detta «profondamente scioccata» e ha espresso vicinanza alla famiglia e al fratello, che guida la Guardia di Finanza. Il vicepremier Antonio Tajani ha parlato di «un servitore dello Stato, un grande poliziotto» e ha detto che De Gennaro è stato vittima di un processo condotto fuori dai tribunali. Il sottosegretario Alfredo Mantovano ha espresso shock per la morte di un «pubblico servitore».\n\nL'inchiesta di Caltanissetta, che riguarda anche alcuni collaboratori di De Gennaro, prosegue: le fonti lette non dicono che cosa cambi per la sua posizione.",
+ "facts": [
+  {"text": "Gianni De Gennaro, ex capo della polizia, è morto sabato 21 novembre a 78 anni.", "who": ["Reuters", "Il Post", "ANSA"]},
+  {"text": "Il 16 novembre la procura di Caltanissetta lo aveva indagato per depistaggio sulla strage di via D'Amelio.", "who": ["Il Post", "Reuters"]},
+  {"text": "Meloni, Tajani e Mantovano hanno espresso cordoglio e shock.", "who": ["ANSA", "Reuters"]},
+  {"text": "Secondo indiscrezioni i pm avevano chiesto gli arresti domiciliari; De Gennaro negava ogni illecito.", "who": ["Reuters"]}
+ ],
+ "view": "È certa la morte di De Gennaro e che fosse indagato; non c'è alcun accertamento di responsabilità, perché nessun giudice si era pronunciato. Le circostanze della morte non sono state chiarite dalle fonti ufficiali.\n\nLa morte può cambiare il corso dell'inchiesta sulla sua posizione, non le domande sulla strage del 1992. Da guardare: le comunicazioni della procura e il dibattito politico sul rapporto tra indagini e giudizio pubblico.",
+ "open": [
+  "Che cosa dicono le autorità sulle circostanze della morte?",
+  "Che cosa succede alla sua posizione nell'inchiesta di Caltanissetta?",
+  "I pm avevano davvero chiesto gli arresti domiciliari?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/21/former-italian-police-chief-de-gennaro-takes-own-life-amid-mafia-probe", "angle": "La carriera, l'indagine di Caltanissetta, la richiesta di domiciliari secondo indiscrezioni, le reazioni del governo.", "date": "2026-11-21"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/21/tajani-sconvolto-da-morte-de-gennaro-vittima-di-un-processo-fuori-dal-tribunale_83df300f-c10d-4731-94e9-f863ea8007b1.html", "angle": "Le parole di Tajani e il cordoglio di Meloni, la telefonata al fratello della Guardia di Finanza.", "date": "2026-11-21"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/21/gianni-de-gennaro-morto-ucciso-via-damelio/", "angle": "La morte e il collegamento con l'indagine sulla strage di via D'Amelio.", "date": "2026-11-21"}
+ ],
+ "firstSeen": "2026-11-21T13:21:30+01:00",
+ "updated": "2026-11-21T13:21:30+01:00",
+ "change": "",
+ "tags": ["Giustizia", "Mafia", "Strage di via D'Amelio"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Caltanissetta", "lat": 37.49, "lon": 14.06},
+ "photo": {"wiki": "it", "title": "Palazzo del Viminale"},
+ "divergences": [],
+ "notCovered": [],
+ "prev": "2026-11-17-it-de-gennaro-depistaggio-via-damelio",
+ "history": [
+  {"at": "2026-11-21T13:21:30+01:00", "text": "Prima notizia: morto Gianni De Gennaro, indagato per via D'Amelio."}
+ ]
+}

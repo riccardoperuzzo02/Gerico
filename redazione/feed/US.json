@@ -1,7 +1,42 @@
 {
  "code": "US",
- "asOf": "2026-11-21T19:17:36+00:00",
+ "asOf": "2026-11-21T21:17:40+00:00",
  "items": [
+  {
+   "source": "NPR",
+   "title": "Bayer reaches Roundup settlement that could cost the company billions",
+   "desc": "The money will go to thousands of people who have been or will be diagnosed with non-Hodgkin lymphoma – a blood cancer linked to the herbicide.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
+   "at": "2026-11-21T20:37:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Moves to Restrict Congressional Oversight of Contractors",
+   "desc": "The president’s executive order is the latest effort to blunt Democratic plans to investigate the administration’s actions.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
+   "at": "2026-11-21T20:20:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "2-Year-Old Girl Wearing Only a Diaper Is Rescued After Hours in the Desert",
+   "desc": "“It was a life-changing moment,” said a searcher who found the girl, Vella Campillo, early on Wednesday in a remote area of Arizona after she had been missing for more than seven hours.",
+   "url": "https://www.nytimes.com/2026/11/21/us/missing-2-year-old-arizona-desert.html",
+   "at": "2026-11-21T20:02:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "International Student Enrollment Plunged. Schools Are Bracing for More Losses.",
+   "desc": "A blitz of new Trump administration policies are set to upend the lives of international students again, making it harder for them to live and work in the United States.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/international-student-enrollment-plunged.html",
+   "at": "2026-11-21T19:58:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Violence breaks out in Mexico after capture of drug kingpin wanted by FBI",
+   "desc": "Fausto Isidro Meza-Flores is allegedly the leader of a cartel responsible for drug distribution and importation.",
+   "url": "https://www.cbsnews.com/news/mexico-drug-kingpin-arrest-fausto-isidro-meza-flores-sinaloa/",
+   "at": "2026-11-21T19:58:01+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Lock of George Washington's hair sells at auction for $4,000",
@@ -129,13 +164,6 @@
    "at": "2026-11-21T14:30:02+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Violence breaks out in Mexico after capture of drug kingpin wanted by FBI",
-   "desc": "Fausto Isidro Meza-Flores is allegedly the leader of a cartel responsible for drug distribution and importation.",
-   "url": "https://www.cbsnews.com/news/mexico-drug-kingpin-arrest-fausto-isidro-meza-flores-sinaloa/",
-   "at": "2026-11-21T14:24:28+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "During Wall Street's worst week in over a year, we put money to work. What we're buying",
    "desc": "The brutal sell-off is creating opportunities for us to put cash to work.",
@@ -255,20 +283,6 @@
    "at": "2026-11-21T10:01:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "International Student Enrollment Plunged. Schools Are Bracing for More Losses.",
-   "desc": "A blitz of new Trump administration policies are set to upend the lives of international students again, making it harder for them to live and work in the United States.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/international-student-enrollment-plunged.html",
-   "at": "2026-11-21T10:00:31+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Anthropic says it will put humanity first. Will its IPO change that?",
-   "desc": "Critics say now that the AI giant is a public company, its commitment to put safety ahead of commercial success will be tested.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6048678/anthropic-ipo-mission-ai-safety",
-   "at": "2026-11-21T10:00:00+00:00"
-  },
-  {
    "source": "NPR",
    "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
    "desc": "A national effort to ensure that only winners of the popular vote become president could reach a critical milestone soon.",
@@ -308,7 +322,7 @@
    "title": "Bobby Ray Inman, Intelligence Official Under Carter and Reagan, Dies at 95",
    "desc": "An admiral who was a well-regarded director of the National Security Agency and deputy director of central intelligence, he turned down a nomination from President Bill Clinton to be secretary of defense.",
    "url": "https://www.nytimes.com/2026/11/20/us/bobby-ray-inman-dead.html",
-   "at": "2026-11-21T02:40:42+00:00"
+   "at": "2026-11-21T02:40:43+00:00"
   },
   {
    "source": "CBS News",
@@ -491,69 +505,6 @@
    "desc": "Cybersecurity companies have been hunting for acquisitions in the AI era.",
    "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
    "at": "2026-11-20T21:35:24+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
-   "desc": "Fed officials have been rushing to the microphones lately while the Fed chairman stays on the sidelines.",
-   "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
-   "at": "2026-11-20T21:10:48+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Gap names new Athleta CEO, says Old Navy turnaround is seeing signs of progress",
-   "desc": "Gap on Thursday announced Ashley Kechter as the new CEO of Athleta. The retailer also reported mixed fiscal third-quarter earnings.",
-   "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html",
-   "at": "2026-11-20T21:04:48+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump says he still has confidence in Lutnick",
-   "desc": "President Donald Trump, when asked by CNBC's Eamon Javers, said he has not lost confidence in Commerce Secretary Howard Lutnick.",
-   "url": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
-   "at": "2026-11-20T20:52:08+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump vows to stop U.S. companies from building data centers abroad, threatens 'tremendous tax'",
-   "desc": "Trump spoke at the White House after meeting with Chinese President Xi Jinping and Russian President Vladimir Putin for a historic trilateral summit in China.",
-   "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html",
-   "at": "2026-11-20T20:47:58+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fact-Checking Trump’s News Conference After His Asia Trip",
-   "desc": "President Trump repeated and revised a number of falsehoods and exaggerations during a news conference.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/trumps-asia-fact-check.html",
-   "at": "2026-11-20T20:38:24+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
-   "desc": "Odds that the S&P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.",
-   "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
-   "at": "2026-11-20T19:59:03+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang to testify publicly before Senate banking panel, Chairman Scott says",
-   "desc": "Former Nvidia CEO Jensen Huang has faced a flurry of criticism on Capitol Hill in the wake of his involvement with a suspected Chinese spy.",
-   "url": "https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html",
-   "at": "2026-11-20T19:42:53+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "A massive bearish trade just happened in the chip stocks",
-   "desc": "Options traders place big bets that semiconductor stocks have further to fall",
-   "url": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
-   "at": "2026-11-20T19:33:31+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Too many House Republicans are missing work, Mike Johnson says",
-   "desc": "Dozens of House members didn't show up to vote this week. They're still getting paid.",
-   "url": "https://www.cbsnews.com/news/johnson-house-republican-absences/",
-   "at": "2026-11-20T19:28:16+00:00"
   }
  ]
 }

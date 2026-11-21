@@ -1,7 +1,35 @@
 {
  "code": "US",
- "asOf": "2026-11-21T05:17:37+00:00",
+ "asOf": "2026-11-21T07:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "How China is using summits to expand its global influence",
+   "desc": "Chinese President Xi Jinping has helped coordinate yet another photo-op of global significance.",
+   "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
+   "at": "2026-11-21T06:00:02+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
+   "desc": "Colder weather and low wind speeds could strain Europe’s gas market, where storage started winter at its lowest level in more than a decade.",
+   "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
+   "at": "2026-11-21T06:00:02+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Europe's cyber weak spot is the everyday businesses nobody thought to protect",
+   "desc": "Known vulnerabilities are leaving everyday businesses increasingly exposed to cyber sabotage, as AI enables cybercriminals to work better and faster.",
+   "url": "https://www.cnbc.com/2026/11/21/cyber-attacks-fridges-cybersecurity.html",
+   "at": "2026-11-21T06:00:02+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Federal Court Halts Pregnant Workers’ Protection Law",
+   "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
+   "at": "2026-11-21T05:53:08+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Alice Huang, Accused of Spying on Nvidia’s CEO, Is Linked to Firms With Ties to China’s Military",
@@ -444,13 +472,6 @@
    "at": "2026-11-20T17:49:57+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Bitcoin sell-off: Crypto is failing the 'digital gold' test again as it sinks with stocks",
-   "desc": "Bitcoin’s sell-off is tracking risk assets again as experts weigh rates, ETF flows, politics and whether the crypto can function as a market hedge.",
-   "url": "https://www.cnbc.com/2026/11/20/bitcoin-price-gold-market-hedge.html",
-   "at": "2026-11-20T17:25:19+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "NWSL Championship to bring fans \"the best soccer in the world\"",
    "desc": "The next frontier in growing women's soccer in the U.S. is where the players train and play their games.",
@@ -498,13 +519,6 @@
    "desc": "The Pentagon's latest batch of UFO files includes a report from a government contractor detailing plans for an underground vault to store \"exotic material or tissue\" it was seeking.",
    "url": "https://www.cbsnews.com/news/ufo-files-pentagon-contractor/",
    "at": "2026-11-20T15:57:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "White House replaces cyber director Sean Cairncross amid widespread tech outages",
-   "desc": "Sean Cairncross will be replaced by Pentagon chief information officer Kirsten Davies.",
-   "url": "https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html",
-   "at": "2026-11-20T15:52:45+00:00"
   },
   {
    "source": "CNBC",
@@ -578,13 +592,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Some FHA borrowers pay mortgage insurance for a decade or more. There's an industry push to change the rules",
-   "desc": "Mortgage industry groups want the rules applying to mortgage insurance for FHA loans to be changed to bring down the cost for borrowers.",
-   "url": "https://www.cnbc.com/2026/11/20/fha-mortgage-insurance-cuts-cancellation.html",
-   "at": "2026-11-20T13:35:01+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
    "desc": "Analysts note few concrete outcomes from the high-profile trilateral and other meetings for APEC in Shenzhen this week.",
    "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
@@ -605,13 +612,6 @@
    "at": "2026-11-20T12:00:02+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Rejecting cheap fabrics, higher prices: Why shoppers are asking for better clothes",
-   "desc": "Retailers are charging higher prices for clothing made with cheaper materials. Shoppers are taking notice and experts say it could shift how they spend.",
-   "url": "https://www.cnbc.com/2026/11/20/clothing-prices-polyester-cotton-quality.html",
-   "at": "2026-11-20T12:00:02+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Can Democrats force an end to the Iran war when they take Congress?",
    "desc": "With Democrats set to take decisive House and Senate majorities, some members want to pressure the Trump administration to end the Iran war. The exact plan is not clear.",
@@ -624,13 +624,6 @@
    "desc": "Falling international enrollment drove most of the decline, but there were also fewer American students starting doctoral programs in 2025.",
    "url": "https://www.nytimes.com/2026/11/20/us/phd-enrollment-sciences-declines.html",
    "at": "2026-11-20T10:02:26+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
-   "desc": "Iceland’s famed Blue Lagoon geothermal spa is going public in a $110 million IPO, tapping investor interest in tourism and the booming wellness industry.",
-   "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-iceland-blue-lagoon.html",
-   "at": "2026-11-20T06:00:01+00:00"
   }
  ]
 }

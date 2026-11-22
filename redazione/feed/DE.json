@@ -1,7 +1,35 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T15:17:34+00:00",
+ "asOf": "2026-11-22T17:17:36+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "COP31: Die Klimakonferenz ist tot. Zeit, etwas anderes zu probieren",
+   "desc": "Das Scheitern der Weltklimakonferenz in Antalya zeigt: Einstimmig wird der Ausstieg aus den Fossilen nicht klappen. Die EU müsste dafür ihre Scheinheiligkeit ablegen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-klimakonferenz-klimaschutz-abschlusserklaerung-debatte",
+   "at": "2026-11-22T16:14:13+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Pressefreiheit in der Türkei: Tausende protestieren gegen Schließung oppositioneller Medien",
+   "desc": "In Istanbul demonstrieren Tausende Menschen für die Pressefreiheit. Die Regierung hatte zuletzt mehrere regierungskritische Medien zur Schließung gezwungen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-istanbul-pressefreiheit-tuerkei-halk-tv-sozcu-tv-yeni-gxe",
+   "at": "2026-11-22T15:52:18+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Ausgleich der kalten Progression: Droht schon der nächste Koalitionsstreit?",
+   "desc": "Nur mit Mühe verständigte sich die Koalition zuletzt auf die Stromsteuersenkung. Nun drängt CSU-Chef Markus Söder auf weitere Maßnahmen. Unterstützung kommt von der CDU. Doch die SPD und einige Länder halten dagegen.",
+   "url": "https://www.spiegel.de/politik/deutschland/ausgleich-der-kalten-progression-droht-schon-der-naechste-koalitionsstreit-a-68edb092-41fd-4ae8-9494-01ebc13ee219",
+   "at": "2026-11-22T15:47:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "UN-Klimakonferenz : Politiker zeigen sich nach gescheiterter Klimakonferenz enttäuscht",
+   "desc": "Die Weltklimakonferenz in Antalya ist an einer gemeinsamen Abschlusserklärung gescheitert. UN-Generalsekretär António Guterres kritisiert die fossile Brennstoffindustrie.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-greenpeace-martin-kaiser-eu-gxe",
+   "at": "2026-11-22T15:12:15+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Sozialverband: VdK lehnt Gebühr gegen KI-Schriftsätze vor Sozialgerichten ab",
@@ -15,13 +43,6 @@
    "desc": "Ständig versprechen Politiker, das Leben für Bürger und Unternehmer einfacher zu machen. Dabei sind viele Gesetze und Regelungen unverzichtbar.",
    "url": "https://www.spiegel.de/politik/deutschland/buerokratie-in-deutschland-warum-viele-regeln-unverzichtbar-bleiben-meinung-a-629821a3-ef85-4bed-8d72-1fabc074250d",
    "at": "2026-11-22T15:05:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "UN-Klimakonferenz : Politiker zeigen sich nach gescheiterter Klimakonferenz enttäuscht",
-   "desc": "Die Weltklimakonferenz in Antalya ist an einer gemeinsamen Abschlusserklärung gescheitert. UN-Generalsekretär António Guterres kritisiert die fossile Brennstoffindustrie.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-greenpeace-martin-kaiser-eu-gxe",
-   "at": "2026-11-22T14:58:35+00:00"
   },
   {
    "source": "Die Zeit",
@@ -143,25 +164,11 @@
    "at": "2026-11-22T09:00:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Josef Schuster: Zentralratspräsident fordert klare Abgrenzung von Extremisten",
-   "desc": "Jüdisches Leben hat aus Sicht von Josef Schuster eine Zukunft in Deutschland. Eine Regierungsbeteiligung extremistischer Parteien könne das jedoch grundlegend verändern.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/josef-schuster-zentralrat-juden-antisemitismus-deutschland-gxe",
-   "at": "2026-11-22T08:50:15+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Wie Armut Kinder in Deutschland krank macht",
    "desc": "Kinder aus armutsgefährdeten Familien haben ein höheres Risiko, krank zu werden - körperlich und psychisch. Dabei gibt es in Deutschland viele Hilfen. Warum kommen sie oft nicht an? Von Katharina Spreier.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/armut-kinder-familien-100.html",
    "at": "2026-11-22T08:26:52+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Künstliche Intelligenz: Lauterbach kritisiert Regierung für zu wenig Ehrgeiz bei KI-Förderung",
-   "desc": "Deutschland spiele bei der künstlichen Intelligenz »nirgendwo wirklich führend und entscheidend« mit, kritisiert Karl Lauterbach. Er fordert mehr finanzielle Förderung.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/kuenstliche-intelligenz-karl-lauterbach-spd-deutschland-usa-china-gxe",
-   "at": "2026-11-22T08:10:29+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -197,20 +204,6 @@
    "desc": "Ex-Gesundheitsminister Karl Lauterbach hat gerade die wichtigsten KI-Labore in den USA und China besucht. Jetzt schlägt er Alarm: Deutschland dürfe sich nicht weiter abhängen lassen. Doch etwas macht ihm Hoffnung.",
    "url": "https://www.spiegel.de/politik/deutschland/karl-lauterbach-dass-ki-die-menschheit-ausloescht-halte-ich-fuer-unsinn-a-89b982ec-a41a-4dbc-9a4c-3834629fa058",
    "at": "2026-11-21T20:13:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Ministerium will Autobahntankstellen vom Spritpreisdeckel ausnehmen",
-   "desc": "Ab Januar soll der Preisdeckel für Benzin und Diesel gelten. Wirtschaftsministerin Reiche plant offenbar, Autobahntankstellen davon ausnehmen. Ihr neuer Gesetzentwurf ist noch in der Abstimmung zwischen den Ministerien.",
-   "url": "https://www.tagesschau.de/inland/spritpreis-autobahntankstellen-ausnahme-100.html",
-   "at": "2026-11-21T15:55:59+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Björn Höcke als AfD-Landeschef in Thüringen wiedergewählt",
-   "desc": "Björn Höcke bleibt Chef der Thüringer AfD und sich treu: In einer Rede attackierte der radikale Politiker den Verfassungsschutz und die Reform der Geheimdienste.",
-   "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-wiederwahl-als-thueringer-afd-chef-a-e44dee38-ea82-4269-8b15-eb3406dfe402",
-   "at": "2026-11-21T15:27:00+00:00"
   }
  ]
 }

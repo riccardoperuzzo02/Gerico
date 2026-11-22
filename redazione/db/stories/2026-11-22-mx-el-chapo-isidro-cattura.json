@@ -1,0 +1,39 @@
+{
+ "title": "Messico: catturato Fausto Isidro Meza Flores, tra i dieci latitanti dell'Fbi",
+ "section": "mondo",
+ "rank": 6,
+ "status": "live",
+ "summary": "Le forze di sicurezza hanno arrestato a Guasave, nel Sinaloa, il capo del cartello noto come El Chapo Isidro. Negli scontri sono morte almeno 11 persone, tra cui quattro soldati.",
+ "article": "Le forze di sicurezza messicane hanno catturato venerdì sera a Guasave, nello stato di Sinaloa, Fausto Isidro Meza Flores, detto «El Chapo Isidro», capo di un cartello della droga e uno dei dieci latitanti più ricercati dall'Fbi. Sabato mattina era a Città del Messico, consegnato alla procura specializzata sulla criminalità organizzata. Gli Stati Uniti offrivano una ricompensa di 5 milioni di dollari per informazioni che portassero all'arresto.\n\nLa cattura è costata vite. Secondo il ministero della Difesa messicano, sono morti quattro soldati e sette presunti uomini armati del cartello, e otto sospetti sono stati arrestati. Nella notte a Guasave ci sono stati scontri a fuoco, blocchi stradali e veicoli incendiati; sabato le autorità statali hanno detto che la situazione era sotto controllo, ma molti negozi sono rimasti chiusi e i residenti in casa. Un funzionario federale ha spiegato che l'estrazione del capo è avvenuta solo alle 4 di sabato a causa della violenza. Alcuni abitanti riferiscono di elicotteri militari che hanno sparato su diverse zone della città.\n\nSono stati arrestati anche un suo cugino, indicato come numero due dell'organizzazione, e un cognato, che ne gestiva le finanze. Il ministro della Sicurezza, Omar García Harfuch, ha elencato le armi sequestrate: un fucile calibro 50, un lanciagranate e due granate. L'operazione è stata condotta da forze speciali dell'esercito e della Guardia nazionale, in coordinamento con agenzie di intelligence messicane e americane.\n\nSecondo il dipartimento di Stato americano, Meza Flores e la sua organizzazione hanno introdotto negli Stati Uniti eroina, metanfetamine, cocaina e marijuana per oltre vent'anni. Ha guidato il cartello dei Beltrán Leyva e poi una propria organizzazione, alleata con i Los Mayos, una fazione del cartello di Sinaloa che Washington ha designato come organizzazione terroristica. L'ambasciatore americano in Messico, Ronald Johnson, ha detto che lo scambio di informazioni strategiche tra i due paesi ha reso possibile l'operazione.\n\nGli esperti avvertono che la cattura di un capo può innescare nuove violenze in una regione già divisa tra fazioni rivali. Il presidente americano Donald Trump ha minacciato azioni militari unilaterali in Messico se il governo non farà di più contro i cartelli.",
+ "facts": [
+  {"text": "Fausto Isidro Meza Flores è stato catturato venerdì sera a Guasave, nel Sinaloa, ed è a Città del Messico.", "who": ["Reuters", "Al Jazeera", "Euronews"]},
+  {"text": "Il ministero della Difesa messicano riferisce la morte di quattro soldati e sette presunti uomini armati, e otto arresti.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Sono stati arrestati anche un cugino e un cognato, indicati come numero due e responsabile finanziario.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "L'Fbi lo aveva tra i dieci latitanti più ricercati; la ricompensa era di 5 milioni di dollari.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "L'ambasciatore americano Ronald Johnson dice che lo scambio di intelligence ha reso possibile l'operazione.", "who": ["Reuters", "Al Jazeera"]}
+ ],
+ "view": "È certo l'arresto e che negli scontri sono morte almeno 11 persone secondo il ministero della Difesa. Non si sa se il bilancio comprenda altre vittime civili, né se l'arresto sia l'inizio di un conflitto più ampio tra fazioni.\n\nPer il Messico è un risultato da presentare agli Stati Uniti mentre Trump minaccia interventi. Da guardare: la violenza nel Sinaloa nei prossimi giorni e l'eventuale richiesta di estradizione.",
+ "open": [
+  "Il bilancio di 11 morti include vittime civili?",
+  "Gli Stati Uniti chiederanno l'estradizione di Meza Flores?",
+  "La cattura provocherà nuove violenze tra le fazioni del Sinaloa?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/21/mexico-captures-top-drug-lord-el-chapo-isidro-latest-in-string-of-captures", "angle": "Dove e come è avvenuto l'arresto, il bilancio della Difesa, le armi sequestrate e il contesto delle catture di narcotrafficanti.", "date": "2026-11-21"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/22/eleven-killed-in-burst-of-violence-during-mexican-cartel-leaders-capture", "angle": "Le testimonianze dei residenti, il bilancio di 11 morti, il parere degli esperti sul rischio di nuova violenza.", "date": "2026-11-22"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/21/video-shows-mexican-forces-capturing-el-chapo-isidro-fbi-most-wanted-cartel-boss", "angle": "Il video della cattura.", "date": "2026-11-21"}
+ ],
+ "firstSeen": "2026-11-22T07:24:00+01:00",
+ "updated": "2026-11-22T07:24:00+01:00",
+ "change": "",
+ "tags": ["Messico", "Narcotraffico", "Stati Uniti"],
+ "themes": [],
+ "places": ["MX", "US"],
+ "city": {"name": "Guasave", "lat": 25.57, "lon": -108.47},
+ "figure": {"value": "11 morti", "label": "il bilancio degli scontri a Guasave"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: catturato in Sinaloa Meza Flores, tra i dieci latitanti più ricercati dall'Fbi."}
+ ]
+}

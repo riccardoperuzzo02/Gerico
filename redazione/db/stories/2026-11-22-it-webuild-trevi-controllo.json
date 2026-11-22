@@ -1,0 +1,36 @@
+{
+ "title": "Webuild arriva al 90,6% di Trevi alla chiusura dell'offerta in contanti",
+ "section": "economia",
+ "rank": 12,
+ "status": "live",
+ "summary": "Venerdì si è chiusa l'Opa di Webuild sul gruppo di fondazioni Trevi, in contanti a 4,5 euro per azione. Icop, che aveva offerto azioni, non ha rilanciato.",
+ "article": "Webuild, il più grande gruppo italiano di costruzioni, ha preso il controllo di Trevi, azienda di Cesena specializzata in fondazioni e lavori nel sottosuolo: venerdì 20 novembre si è chiusa l'offerta pubblica di acquisto e, secondo i dati resi noti dopo la chiusura, Webuild possiede ora il 90,6% del capitale.\n\nL'offerta era in contanti, a 4,5 euro per azione. A fine ottobre Webuild era salita al 34,58% del capitale e aveva superato la soglia che rende obbligatoria l'offerta totalitaria, con un esborso massimo di circa 221,6 milioni di euro in caso di adesione totale.\n\nSulla società si era scontrata un'altra offerta, quella della friulana Icop, in scambio di azioni, che valutava ogni azione Trevi 5,17 euro dopo un rilancio. Webuild ha proposto un valore più basso ma in denaro, che gli azionisti hanno percepito come meno rischioso. Icop non ha rilanciato; secondo le ricostruzioni aveva cercato anche l'appoggio della Cassa depositi e prestiti, che non si è esposta. Cdp è tra gli azionisti di Webuild, con il 16,4%, e ha anche una quota di Trevi.\n\nNel 2025 Webuild ha avuto ricavi per 13,6 miliardi di euro, in crescita del 15%, e 83.000 dipendenti nel mondo. Il gruppo vuole portare dentro l'azienda fasi di lavoro ad alto valore aggiunto, oggi affidate a imprese esterne. Non sono indicate altre scadenze.",
+ "facts": [
+  {"text": "Alla chiusura dell'Opa del 20 novembre Webuild possiede il 90,6% di Trevi, secondo i dati resi noti.", "who": ["Il Post"]},
+  {"text": "L'offerta era in contanti a 4,5 euro per azione.", "who": ["Il Post", "Teleborsa"]},
+  {"text": "A fine ottobre Webuild era al 34,58% e l'Opa era diventata obbligatoria.", "who": ["Teleborsa"]},
+  {"text": "Icop, con un'offerta in azioni, non ha rilanciato.", "who": ["Il Post"]}
+ ],
+ "view": "È certo che l'offerta si è chiusa e che Webuild è largamente sopra la maggioranza; la quota esatta viene da una sola fonte e va confermata dai comunicati ufficiali. Non si sa quali saranno i piani su Trevi né se la società resterà quotata.\n\nLa vicenda mostra che un'offerta in contanti più bassa ha prevalso su una in azioni più alta. Da guardare: i comunicati sull'esito definitivo e le scelte sulla quotazione.",
+ "open": [
+  "Qual è la quota finale di Webuild nei comunicati ufficiali?",
+  "Trevi resterà quotata in Borsa?",
+  "Quale ruolo avrà Cdp dopo l'operazione?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/21/webuild-acquisizione-trevi/", "angle": "L'esito dell'offerta, il confronto con Icop e i numeri di Webuild.", "date": "2026-11-21"},
+  {"name": "Teleborsa", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.teleborsa.it/News/2026/10/30/webuild-sale-al-34-58percent-del-capitale-di-trevi-l-opa-diventa-obbligatoria-261.html", "angle": "Il contesto di fine ottobre: la quota del 34,58% e l'obbligo di Opa.", "date": "2026-10-30"}
+ ],
+ "firstSeen": "2026-11-22T07:24:00+01:00",
+ "updated": "2026-11-22T07:24:00+01:00",
+ "change": "",
+ "tags": ["Webuild", "Opa", "Infrastrutture"],
+ "themes": [],
+ "places": ["IT"],
+ "figure": {"value": "90,6%", "label": "la quota di Webuild in Trevi dopo l'Opa"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: Webuild controlla il 90,6% di Trevi dopo l'Opa."}
+ ]
+}

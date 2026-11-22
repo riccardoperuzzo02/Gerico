@@ -1,0 +1,40 @@
+{
+ "title": "COP31 ad Antalya: terza bozza, richiamo indiretto all'uscita dai fossili",
+ "section": "mondo",
+ "rank": 5,
+ "status": "live",
+ "summary": "Nella notte la presidenza turca ha messo sul tavolo un testo di compromesso che richiama l'accordo della COP28 senza citare i combustibili fossili. L'approvazione era prevista per domenica mattina.",
+ "article": "La presidenza della COP31 di Antalya ha presentato nella notte tra sabato e domenica una terza bozza della decisione finale, che non menziona esplicitamente l'uscita dai combustibili fossili ma richiama «nella sua interezza» il Consenso degli Emirati, il documento finale della COP28 di Dubai del 2023. Quel testo prevedeva l'abbandono graduale dei fossili nei sistemi energetici entro il 2050. Il presidente della conferenza, il ministro dell'Ambiente turco Murat Kurum, dice di essere convinto che il testo sia accettabile per tutte le parti.\n\nI negoziati, con quasi 200 delegazioni, dovevano finire venerdì 20 novembre e sono andati avanti per il secondo giorno oltre la scadenza. Le delegazioni potevano presentare obiezioni fino alle 3 di domenica, ora di Greenwich, e la sessione per avviare l'approvazione era fissata alle 6, le 7 in Italia. Le decisioni si prendono per consenso: l'obiezione di un solo paese può bloccarle.\n\nLa bozza di giovedì aveva eliminato ogni riferimento ai fossili dopo le obiezioni dell'Arabia Saudita e di altri grandi produttori di petrolio e gas, e aveva suscitato critiche forti. Cento organizzazioni della società civile hanno scritto alla Turchia e all'Australia, che guidano i negoziati, avvertendo che il vertice rischia di essere «una delle Cop più deludenti» mai organizzate dall'Onu. L'Unione europea chiede un impegno esplicito all'abbandono dei fossili; il gruppo dei paesi arabi e la Russia rifiutano di inserirlo.\n\nLa terza bozza, all'articolo 38, chiede l'attuazione «piena e rapida» dei contributi determinati a livello nazionale, cioè gli impegni di ogni paese sul clima, e dei piani nazionali di adattamento. Kurum afferma che il testo risponde anche alle preoccupazioni dei paesi in via di sviluppo sul finanziamento dell'adattamento. Restano in discussione, secondo i resoconti, quanto sforzo chiedere ai paesi per ridurre carbone, petrolio e gas, se incoraggiare la cattura e lo stoccaggio del carbonio e se l'espansione dell'elettricità debba basarsi solo su rinnovabili o anche su gas e carbone.\n\nÈ la prima COP dopo la conferma dell'Onu che il riscaldamento globale supererà il limite di 1,5 gradi dell'accordo di Parigi.",
+ "facts": [
+  {"text": "La terza bozza richiama il Consenso degli Emirati della COP28 senza citare esplicitamente i combustibili fossili.", "who": ["ANSA", "Al Jazeera"]},
+  {"text": "I negoziati sono proseguiti per il secondo giorno oltre la scadenza di venerdì 20 novembre.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "Le obiezioni al testo potevano essere presentate fino alle 3 di domenica, ora di Greenwich, e l'approvazione era prevista dalle 6.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "L'Ue chiede un impegno esplicito sull'uscita dai fossili; gruppo arabo e Russia lo rifiutano.", "who": ["ANSA"]},
+  {"text": "Il presidente Murat Kurum dice che il testo può essere accettato da tutte le parti.", "who": ["Al Jazeera", "Reuters"]}
+ ],
+ "view": "È certo che la nuova bozza non nomina i fossili e che si appoggia al testo di Dubai. Non si sa se tutte le delegazioni la accetteranno, né se i paesi che chiedevano un impegno esplicito considerino sufficiente il richiamo indiretto.\n\nCon la regola del consenso, un richiamo a un testo già approvato può far passare un documento che una menzione esplicita avrebbe bloccato; per i paesi più ambiziosi è anche una versione più debole di quella di lunedì. Da guardare: l'esito della plenaria di domenica e le reazioni dell'Unione europea e dei paesi vulnerabili.",
+ "open": [
+  "La plenaria di domenica approverà il testo?",
+  "L'Unione europea accetterà il richiamo indiretto alla COP28?",
+  "Come sarà finanziato l'adattamento dei paesi in via di sviluppo?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/22/cop31-nuova-bozza-con-riferimento-indiretto-a-uscita-da-fossili_ba483cc3-bf7b-4792-bac3-77482db277dc.html", "angle": "Il contenuto della terza bozza, il richiamo alla COP28 e le posizioni di Ue, gruppo arabo e Russia.", "date": "2026-11-22"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime", "angle": "Il calendario dell'approvazione, la lettera delle organizzazioni civili, i nodi ancora aperti.", "date": "2026-11-22"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/cop31-climate-talks-close-to-final-deal-says-summit-president", "angle": "Le parole di Kurum e il contesto dei negoziati.", "date": "2026-11-22"}
+ ],
+ "firstSeen": "2026-11-22T07:24:00+01:00",
+ "updated": "2026-11-22T07:24:00+01:00",
+ "change": "",
+ "tags": ["Clima", "COP31", "Energia"],
+ "themes": [],
+ "places": ["TR", "AU"],
+ "city": {"name": "Antalya", "lat": 36.9, "lon": 30.7},
+ "prev": "2026-11-21-tr-cop31-antalya-fossili",
+ "figure": {"value": "~200", "label": "le delegazioni ai negoziati di Antalya"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: terza bozza della COP31, richiamo indiretto all'uscita dai fossili."}
+ ]
+}

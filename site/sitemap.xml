@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-21T12:21:56+00:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/</loc><lastmod>2026-11-22T06:29:12+00:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/terminal</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/come-funziona</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/glossario</loc></url>
@@ -13,8 +13,16 @@
 <url><loc>https://gerico.financialnews.workers.dev/tema/israele-governo</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/ucraina</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/voto-usa</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/giustizia</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/cybersicurezza</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/stati-uniti</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/energia</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/russia</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/manovra</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/conti-pubblici</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/parlamento</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/iran</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/medio-oriente</loc></url>
+<url><loc>https://gerico.financialnews.workers.dev/tema/giustizia</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/regno-unito</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/unione-europea</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/governo</loc></url>
@@ -26,23 +34,15 @@
 <url><loc>https://gerico.financialnews.workers.dev/tema/wall-street</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/intelligenza-artificiale</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/nvidia</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/russia</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/energia</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/iran</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/medio-oriente</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/manovra</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/lavoro</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/banche</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/cronaca</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/congresso</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/parlamento</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/partiti</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/sicurezza</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/immigrazione</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/italia</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/conti-pubblici</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/cina</loc></url>
-<url><loc>https://gerico.financialnews.workers.dev/tema/cybersicurezza</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/europa</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/politica</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/tema/titoli-di-stato</loc></url>
@@ -50,6 +50,10 @@
 <url><loc>https://gerico.financialnews.workers.dev/pensiero</loc></url>
 <url><loc>https://gerico.financialnews.workers.dev/pensiero/2026-11-20</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/pensiero/2026-11-21</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-tech-starship-cattura</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-gaza-hamas-comandante-rafah</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-it-san-fili-incidente-cinque-morti</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-it-garante-privacy-meta-805-milioni</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-ss-elezioni-rinvio</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-hu-contanti-sesztak</loc><lastmod>2026-11-14T13:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-corte-suprema-asilo-confine</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
@@ -60,6 +64,7 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-es-oviedo-bomba-allarmi</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-de-berthold-bundespraesident</loc><lastmod>2026-11-14T09:48:20+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-new-orleans-collisione-crociera</loc><lastmod>2026-11-14T07:21:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-faa-blocco-voli</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-it-famiglia-bosco-appello</loc><lastmod>2026-11-14T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-economia-sp-rating-italia</loc><lastmod>2026-11-14T07:21:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-13-fr-lycees-blocages-lecornu</loc><lastmod>2026-11-13T09:50:00+01:00</lastmod></url>
@@ -102,33 +107,41 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-27-brasile-lula-bolsonaro</loc><lastmod>2026-11-02T07:26:43+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-yemen-aden-riad</loc><lastmod>2026-11-11T09:22:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-10-07-titoli-di-stato</loc><lastmod>2026-10-29T07:27:28+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-iran-usa-diplomazia-sanzioni</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Iran-Usa: petroliere colpite a Hormuz mentre la trattativa resta ferma</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-ir-bahrein-attacco-blocco-usa</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Iran-Usa: attacco iraniano in Bahrein, tre petroliere colpite vicino a Hormuz</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-ru-sparta-ii-golfo-finlandia</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Golfo di Finlandia: cargo russo colpito da droni, l&#x27;equipaggio è stato evacuato</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-wall-street-nasdaq-crollo</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Wall Street: venerdì il Nasdaq perde il 5,4%, il Dow Jones il 2%</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-ua-kryvyi-rih-doppio-attacco</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Ucraina: doppio attacco russo a Kryvyi Rih, due morti e 58 feriti</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-trump-xi-putin-shenzhen</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-ye-houthi-aden-comandante-saudita</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-tr-cop31-terza-bozza</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>COP31 ad Antalya: terza bozza, richiamo indiretto all&#x27;uscita dai fossili</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-mx-el-chapo-isidro-cattura</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Messico: catturato Fausto Isidro Meza Flores, tra i dieci latitanti dell&#x27;Fbi</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-nvidia-sec-contabilita</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Nvidia: la Sec esamina la contabilità, il titolo perde il 13% in Borsa</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-tr-cop31-antalya-fossili</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>COP31 ad Antalya: nessun accordo, la bozza non cita i combustibili fossili</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-dk-russia-diplomatico-rapper</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Danimarca: espulso un diplomatico russo per un presunto piano di omicidio</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-pl-missili-russi-spazio-aereo</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T13:21:54+01:00</news:publication_date><news:title>Polonia: missili e drone russi cadono sul territorio, per Tusk è provocazione</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-eu-unicredit-commerzbank-accordo</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:21:38+01:00</news:publication_date><news:title>Unicredit e governo tedesco, accordo di massima su Commerzbank</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-it-sciopero-generale-cgil</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:21:38+01:00</news:publication_date><news:title>Italia: oggi sciopero generale della Cgil contro la manovra, cortei in 100 città</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-it-genova-droni-aeroporto</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:21:38+01:00</news:publication_date><news:title>Genova: aeroporto chiuso due ore per il sospetto avvistamento di droni</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-it-amato-ergastolo-definitivo</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:21:38+01:00</news:publication_date><news:title>Bologna: la Cassazione rende definitivo l&#x27;ergastolo a Giampaolo Amato</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-de-deutsche-bank-inchiesta-file</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-anthropic-ipo-nasdaq</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-eu-porto-marghera-materie-prime</loc><lastmod>2026-11-20T07:27:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:27:00+01:00</news:publication_date><news:title>Ue: via libera al sito di Porto Marghera per le materie prime critiche</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-it-avio-iceye-opa</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Avio: il gruppo finlandese Iceye lancia un&#x27;opa da 2 miliardi di euro</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-it-manovra-emendamenti-ammissibilita</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Manovra: circa 7.000 emendamenti, lunedì il primo vaglio in commissione</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-it-de-gennaro-morto</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T13:21:30+01:00</news:publication_date><news:title>Roma: morto Gianni De Gennaro, ex capo della polizia indagato per via D&#x27;Amelio</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-it-avio-iceye-opa</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Avio: il gruppo finlandese Iceye lancia un&#x27;opa da 2 miliardi di euro</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-it-webuild-trevi-controllo</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Webuild arriva al 90,6% di Trevi alla chiusura dell&#x27;offerta in contanti</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-it-tesla-guida-assistita-omologazione</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Italia: via libera provvisorio alla guida assistita Tesla, 99 euro al mese</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-22-us-fbi-ncic-violazione</loc><lastmod>2026-11-22T07:24:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-22T07:24:00+01:00</news:publication_date><news:title>Stati Uniti: presunta violazione della banca dati criminale nazionale dell&#x27;Fbi</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-us-senato-alaska-peltola</loc><lastmod>2026-11-20T09:49:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-us-florida-alluvioni</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Stati Uniti: alluvioni nel Sud della Florida, scuole chiuse a Broward</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-gb-accordo-ue-burnham</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Regno Unito: concluso l&#x27;accordo con l&#x27;Ue, aperta la questione delle rette</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-fr-zecler-poliziotti-condannati</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Francia: tre poliziotti condannati per il pestaggio di Michel Zecler</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-de-gen-z-proteste</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Germania: decine di migliaia di giovani in piazza, qualche disordine</news:title></news:news></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-es-dopo-il-dibattito-sanchez-feijoo</loc><lastmod>2026-11-21T09:50:00+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T09:50:00+01:00</news:publication_date><news:title>Spagna: dopo il faccia a faccia tv, Sánchez e Feijóo rilanciano</news:title></news:news></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-ua-kiev-ponti-attacco</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T07:21:38+01:00</news:publication_date><news:title>Ucraina: attacco russo su Kiev, almeno otto morti e tre ponti colpiti</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-iran-usa-diplomazia-sanzioni</loc><lastmod>2026-11-21T13:21:30+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>Iran-Usa: petroliere colpite a Hormuz mentre la trattativa resta ferma</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-21-tr-cop31-antalya-fossili</loc><lastmod>2026-11-21T07:21:27+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-21T07:21:27+01:00</news:publication_date><news:title>COP31 ad Antalya: nessun accordo, la bozza non cita i combustibili fossili</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-it-sciopero-generale-cgil</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-pl-missili-russi-spazio-aereo</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod><news:news><news:publication><news:name>GERICO</news:name><news:language>it</news:language></news:publication><news:publication_date>2026-11-20T13:21:54+01:00</news:publication_date><news:title>Polonia: missili e drone russi cadono sul territorio, per Tusk è provocazione</news:title></news:news></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-ua-kiev-ponti-attacco</loc><lastmod>2026-11-20T13:21:54+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-gb-burnham-brexit-discorso-ue</loc><lastmod>2026-11-20T09:49:00+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-eu-porto-marghera-materie-prime</loc><lastmod>2026-11-20T07:27:00+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-09-wall-street-ia-chip</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-trump-xi-putin-shenzhen</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-16-anthropic-ipo-nasdaq</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-ye-houthi-aden-comandante-saudita</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-18-de-deutsche-bank-inchiesta-file</loc><lastmod>2026-11-20T07:23:03+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-it-amato-ergastolo-definitivo</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-it-genova-droni-aeroporto</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod></url>
+<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-20-eu-unicredit-commerzbank-accordo</loc><lastmod>2026-11-20T07:21:38+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-19-icj-rohingya-myanmar-sentenza</loc><lastmod>2026-11-19T13:19:35+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-13-es-campagna-elettorale-sciopero</loc><lastmod>2026-11-19T09:48:35+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-17-de-koalitionsausschuss-stromsteuer</loc><lastmod>2026-11-19T09:48:35+01:00</lastmod></url>
@@ -185,9 +198,4 @@
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-fr-maileva-cyberattacco-22-milioni</loc><lastmod>2026-11-15T09:48:31+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-gb-brand-eta-consenso</loc><lastmod>2026-11-15T09:48:31+01:00</lastmod></url>
 <url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-us-east-potomac-golf-giudice</loc><lastmod>2026-11-15T09:48:31+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-it-garante-privacy-meta-805-milioni</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-it-san-fili-incidente-cinque-morti</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-14-us-faa-blocco-voli</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-gaza-hamas-comandante-rafah</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
-<url><loc>https://gerico.financialnews.workers.dev/s/2026-11-15-tech-starship-cattura</loc><lastmod>2026-11-15T07:21:00+01:00</lastmod></url>
 </urlset>

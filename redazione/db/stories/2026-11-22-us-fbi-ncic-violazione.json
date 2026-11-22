@@ -1,0 +1,36 @@
+{
+ "title": "Stati Uniti: presunta violazione della banca dati criminale nazionale dell'Fbi",
+ "section": "tecnologia",
+ "rank": 14,
+ "status": "live",
+ "summary": "Secondo le emittenti americane la banca dati Ncic, usata dalle polizie di tutto il paese, avrebbe subito un attacco. L'Fbi indaga e non ha dato una dichiarazione ufficiale.",
+ "article": "L'Fbi sta indagando su un presunto attacco informatico al National Crime Information Center (Ncic), la banca dati criminale nazionale usata dalle forze dell'ordine locali, statali e federali. Contiene informazioni su latitanti, persone scomparse, mandati di arresto, precedenti penali e beni rubati.\n\nLa notizia è stata data venerdì da emittenti americane che citano due persone informate sul caso, e una fonte anonima l'ha confermata a un'agenzia di stampa. L'Fbi non ha risposto alle richieste di commento e il direttore, Kash Patel, non ha parlato pubblicamente dell'episodio. Non è chiaro quali dati siano stati presi, né quanti, e nessun gruppo ha rivendicato l'attacco.\n\nIl presidente Donald Trump, in un'intervista a Fox News, ha detto che la notizia «non è buona» e che non gli piace, aggiungendo che la violazione potrebbe far scoprire cose nuove.\n\nSarebbe il secondo attacco all'agenzia quest'anno. A settembre l'Fbi aveva indagato su un gruppo che diceva di aver rubato dati sensibili su circa 38.000 dipendenti; il gruppo ShinyHunters aveva rivendicato quell'attacco. A marzo l'agenzia aveva segnalato attività sospette su alcuni sistemi interni.",
+ "facts": [
+  {"text": "L'Fbi indaga su un presunto attacco informatico alla banca dati Ncic.", "who": ["Il Post", "Al Jazeera"]},
+  {"text": "La notizia viene da emittenti americane che citano due fonti; l'Fbi non ha commentato.", "who": ["Al Jazeera", "Il Post"]},
+  {"text": "Non è noto quali dati siano stati sottratti e nessun gruppo ha rivendicato l'attacco.", "who": ["Il Post"]},
+  {"text": "A settembre un altro attacco aveva esposto i dati di circa 38.000 dipendenti dell'Fbi.", "who": ["Al Jazeera"]}
+ ],
+ "view": "È accertato che la notizia circola e che l'Fbi sta indagando; il resto viene da fonti anonime. Non si sa se i dati siano stati sottratti o solo consultati.\n\nLa banca dati è uno strumento quotidiano delle polizie, quindi la portata dipende da cosa è stato esposto. Da guardare: una dichiarazione ufficiale dell'Fbi e un'eventuale rivendicazione.",
+ "open": [
+  "Quali dati dell'Ncic sono stati sottratti?",
+  "Chi ha compiuto l'attacco?",
+  "L'Fbi darà una dichiarazione ufficiale?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/21/lfbi-sta-indagando-su-un-presunto-attacco-hacker-a-una-sua-banca-dati-investigativa/", "angle": "Cosa contiene la banca dati, l'assenza di rivendicazioni, le parole di Trump.", "date": "2026-11-21"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/21/fbi-national-crime-database-suffers-suspected-breach-reports", "angle": "Le fonti delle emittenti americane e gli attacchi precedenti all'Fbi.", "date": "2026-11-21"}
+ ],
+ "firstSeen": "2026-11-22T07:24:00+01:00",
+ "updated": "2026-11-22T07:24:00+01:00",
+ "change": "",
+ "tags": ["Cybersicurezza", "Fbi", "Stati Uniti"],
+ "themes": [],
+ "places": ["US"],
+ "photo": {"wiki": "en", "title": "J. Edgar Hoover Building"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: presunto attacco alla banca dati criminale Ncic dell'Fbi."}
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "title": "Italia: via libera provvisorio alla guida assistita Tesla, 99 euro al mese",
+ "section": "tecnologia",
+ "rank": 13,
+ "status": "live",
+ "summary": "Il ministero dei Trasporti ha riconosciuto il certificato olandese del sistema Tesla Assisted Driving. Il conducente resta responsabile e manca ancora il voto europeo.",
+ "article": "Il ministero delle Infrastrutture e dei Trasporti, guidato da Matteo Salvini, ha dato l'omologazione provvisoria alla guida assistita Tesla Assisted Driving, che arriverà sulle auto con un aggiornamento software. Il 19 novembre la Motorizzazione ha riconosciuto il certificato rilasciato dai Paesi Bassi, valido fino al 10 aprile 2029. Manca ancora il via libera definitivo dell'Unione europea: il voto previsto a ottobre è stato rinviato.\n\nIl sistema è di livello 2: segue il percorso, sterza, cambia corsia e gestisce incroci e rotatorie anche in città, ma il conducente resta responsabile, deve guardare la strada e tenere le mani sul volante, e una telecamera in abitacolo controlla l'attenzione. Costa 99 euro al mese. I Paesi Bassi lo hanno autorizzato per primi, seguiti da altri undici paesi; l'Italia è l'unica tra i grandi paesi europei ad averlo fatto.\n\nSalvini lo ha definito «un altro passo avanti verso l'innovazione, la tecnologia e la mobilità del futuro», e Elon Musk lo ha ringraziato su X. Il deputato del Pd Andrea Casu accusa il ministro di favorire Tesla a scapito dello sviluppo industriale italiano ed europeo della guida autonoma. Tesla sostiene che la probabilità di collisione per chilometro può essere fino a sette volte inferiore rispetto alla guida manuale; il dato non è verificato in modo indipendente.\n\nNon è indicato quando l'aggiornamento sarà disponibile, né quali modelli lo riceveranno.",
+ "facts": [
+  {"text": "Il Mit ha dato l'omologazione provvisoria a Tesla Assisted Driving.", "who": ["Il Post", "Open"]},
+  {"text": "Il 19 novembre la Motorizzazione ha riconosciuto il certificato olandese, valido fino al 10 aprile 2029.", "who": ["Open"]},
+  {"text": "Il sistema costa 99 euro al mese e il conducente resta responsabile.", "who": ["Il Post", "Open"]},
+  {"text": "Manca il via libera definitivo dell'Unione europea.", "who": ["Il Post", "Open"]}
+ ],
+ "view": "È certo che l'Italia ha riconosciuto in via provvisoria il certificato olandese e che il conducente rimane responsabile. Non si sa quando il sistema sarà attivo né quando l'Ue deciderà.\n\nIl dato di sicurezza citato viene dall'azienda. Da guardare: la data dell'aggiornamento e il voto europeo rinviato.",
+ "open": [
+  "Quando arriverà l'aggiornamento sulle auto in Italia?",
+  "Quali modelli saranno interessati?",
+  "Quando voterà l'Unione europea?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/20/tesla-guida-semiautonoma-italia/", "angle": "Come funziona il sistema, il voto europeo rinviato, il confronto con gli altri paesi.", "date": "2026-11-20"},
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/21/tesla-assisted-driving-ok-salvini-come-funziona/", "angle": "Il certificato olandese, le dichiarazioni di Salvini e le critiche del Pd.", "date": "2026-11-21"}
+ ],
+ "firstSeen": "2026-11-22T07:24:00+01:00",
+ "updated": "2026-11-22T07:24:00+01:00",
+ "change": "",
+ "tags": ["Tesla", "Guida autonoma", "Trasporti"],
+ "themes": [],
+ "places": ["IT", "NL"],
+ "figure": {"value": "99 €", "label": "il costo mensile del sistema di guida assistita"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: via libera provvisorio in Italia alla guida assistita Tesla."}
+ ]
+}

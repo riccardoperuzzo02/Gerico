@@ -1,7 +1,105 @@
 {
  "code": "US",
- "asOf": "2026-11-21T21:17:40+00:00",
+ "asOf": "2026-11-22T05:17:36+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
+   "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
+   "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
+   "at": "2026-11-22T05:08:33+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "at": "2026-11-22T04:18:51+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Kansas City Current capture first NWSL trophy",
+   "desc": "The Kansas City Current made history Saturday, capturing their first NWSL Championship title with a 2-1 win over the Washington Spirit.",
+   "url": "https://www.cbsnews.com/news/nwsl-championship-kansas-city-current-washington-spirit/",
+   "at": "2026-11-22T04:15:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+   "desc": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
+   "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+   "at": "2026-11-22T02:56:57+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Moves to Restrict Congressional Oversight of Contractors",
+   "desc": "The president’s executive order is the latest effort to blunt Democratic plans to investigate the administration’s actions.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
+   "at": "2026-11-22T01:29:53+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy",
+   "desc": "The decision by a federal judge in Rhode Island was a blow to an effort to shift aid away from housing subsidies in favor of treatment for mental illness and addiction.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+   "at": "2026-11-22T00:03:40+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Penny Is Dead. Now It’s Official.",
+   "desc": "President Trump signed a law on Friday formally putting the penny out of mint, a year after it stopped being struck.",
+   "url": "https://www.nytimes.com/2026/11/21/us/politics/penny-mint-trump-common-cent-act.html",
+   "at": "2026-11-21T23:12:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Bigfoot Left a Paper Trail That Everyone Can See Now",
+   "desc": "This fall, the U.S. Forest Service quietly released records about the creature of lore.",
+   "url": "https://www.nytimes.com/2026/11/21/us/bigfoot-government-documents-released.html",
+   "at": "2026-11-21T22:55:17+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Like Fiona the Hippo, Internet Famous Animals Can Bring Value to Zoos",
+   "desc": "Animal videos have long been popular online, but as it did with Fiona, social media can foster deeper connections that are valuable to zoos.",
+   "url": "https://www.nytimes.com/2026/11/21/us/fiona-zoo-viral-animals.html",
+   "at": "2026-11-21T22:42:42+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Trump orders federal contractors to check with White House before responding to Congress",
+   "desc": "President Trump is directing federal contractors to consult the White House about inquiries from Congress and to withhold any communications that his administration considers privileged.",
+   "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
+   "at": "2026-11-21T22:40:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Violence breaks out in Mexico after capture of drug kingpin wanted by FBI",
+   "desc": "Fausto Isidro Meza-Flores is allegedly the leader of a cartel responsible for drug distribution and importation.",
+   "url": "https://www.cbsnews.com/news/mexico-drug-kingpin-arrest-fausto-isidro-meza-flores-sinaloa/",
+   "at": "2026-11-21T22:30:10+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Lock of George Washington's hair sells at auction for $4,000",
+   "desc": "South Carolina-based auction house Richmond Auctions said George Washington's lock of hair was sold for $4,000.",
+   "url": "https://www.cbsnews.com/news/george-washington-lock-of-hair-auction/",
+   "at": "2026-11-21T22:10:36+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Google employees protest AI in schools policy",
+   "desc": "More than 550 Google employees signed a petition to allow schools access to Search without AI. Parents and educators protested outside Google offices in 6 cities last week for the same ask.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
+   "at": "2026-11-21T22:01:40+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Highlights and challenges from covering an historic month in South America",
+   "desc": "NPR's South America Correspondent discusses her work covering an historic election upset and a papal visit.",
+   "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
+   "at": "2026-11-21T22:01:35+00:00"
+  },
   {
    "source": "NPR",
    "title": "Bayer reaches Roundup settlement that could cost the company billions",
@@ -11,17 +109,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Trump Moves to Restrict Congressional Oversight of Contractors",
-   "desc": "The president’s executive order is the latest effort to blunt Democratic plans to investigate the administration’s actions.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-   "at": "2026-11-21T20:20:24+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "2-Year-Old Girl Wearing Only a Diaper Is Rescued After Hours in the Desert",
    "desc": "“It was a life-changing moment,” said a searcher who found the girl, Vella Campillo, early on Wednesday in a remote area of Arizona after she had been missing for more than seven hours.",
    "url": "https://www.nytimes.com/2026/11/21/us/missing-2-year-old-arizona-desert.html",
-   "at": "2026-11-21T20:02:01+00:00"
+   "at": "2026-11-21T20:02:02+00:00"
   },
   {
    "source": "New York Times",
@@ -29,20 +120,6 @@
    "desc": "A blitz of new Trump administration policies are set to upend the lives of international students again, making it harder for them to live and work in the United States.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/international-student-enrollment-plunged.html",
    "at": "2026-11-21T19:58:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Violence breaks out in Mexico after capture of drug kingpin wanted by FBI",
-   "desc": "Fausto Isidro Meza-Flores is allegedly the leader of a cartel responsible for drug distribution and importation.",
-   "url": "https://www.cbsnews.com/news/mexico-drug-kingpin-arrest-fausto-isidro-meza-flores-sinaloa/",
-   "at": "2026-11-21T19:58:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Lock of George Washington's hair sells at auction for $4,000",
-   "desc": "South Carolina-based auction house Richmond Auctions said George Washington's lock of hair was sold for $4,000.",
-   "url": "https://www.cbsnews.com/news/george-washington-lock-of-hair-auction/",
-   "at": "2026-11-21T19:12:45+00:00"
   },
   {
    "source": "New York Times",
@@ -74,17 +151,10 @@
   },
   {
    "source": "NPR",
-   "title": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off violence",
+   "title": "Cartel leader captured in northern Mexico in a bloody firefight that left 11 dead",
    "desc": "Fausto Isidro Meza Flores, better known as \"El Chapo Isidro,\" was one of the FBI's most wanted fugitives. His arrest in northwest Mexico on Saturday has sparked violence in the region.",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
    "at": "2026-11-21T18:08:55+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "at": "2026-11-21T17:54:42+00:00"
   },
   {
    "source": "CNBC",
@@ -105,14 +175,14 @@
    "title": "Bon Appétit's tips for a perfect Thanksgiving gathering",
    "desc": "Whether you're hosting Thanksgiving or enjoying the holiday as a guest, Bon Appétit editor-in-chief Jamila Robinson has some tips for you.",
    "url": "https://www.cbsnews.com/video/bon-apptits-tips-for-a-perfect-thanksgiving-gathering/",
-   "at": "2026-11-21T16:13:56+00:00"
+   "at": "2026-11-21T16:13:00+00:00"
   },
   {
    "source": "CBS News",
    "title": "Mamdani's plan to close Rikers Island, revamp NYC jails",
    "desc": "New York City Mayor Zohran Mamdani is moving forward with his plan to close Rikers Island and replace it with four smaller jails. Anna Schecter reports.",
    "url": "https://www.cbsnews.com/video/mamdanis-plan-to-close-rikers-island-revamp-nyc-jails/",
-   "at": "2026-11-21T15:53:43+00:00"
+   "at": "2026-11-21T15:53:00+00:00"
   },
   {
    "source": "CBS News",
@@ -134,13 +204,6 @@
    "desc": "Jonathan McKinsey, 40, was gunned down in a suburban park after spending time with his three children. His wife’s parents have been charged with murder.",
    "url": "https://www.nytimes.com/2026/11/21/us/jonathan-mckinsey-shooting-in-laws.html",
    "at": "2026-11-21T15:31:25+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Jury in Palisades Fire Trial Finds Man Guilty of Arson in Devastating Blaze",
-   "desc": "The defendant, Jonathan Rinderknecht, was found guilty on two counts. The verdict provides a measure of accountability for a painful chapter in recent L.A. history.",
-   "url": "https://www.nytimes.com/2026/11/20/us/la-fire-trial-arson.html",
-   "at": "2026-11-21T15:16:56+00:00"
   },
   {
    "source": "CNBC",
@@ -248,13 +311,6 @@
    "at": "2026-11-21T12:40:17+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
-   "desc": "A mathematician who works for artificial intelligence giant Anthropic claims he has solved a Holy Grail of math problems with the help of the company's AI tool Claude. It marks the second time in recent months that an AI company or someone linked to one claims to have cracked a famed unsolved math problem.",
-   "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
-   "at": "2026-11-21T12:30:16+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
    "desc": "A federal court indefinitely suspended the U.S. Army's plans to detonate 68 drums of lead azide in Iowa after communities raised concerns.",
@@ -273,21 +329,7 @@
    "title": "Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post",
    "desc": "Republicans have targeted the Delaware Democrat, the first openly transgender member of Congress, since she came to Washington. Her party just elevated her to a key job.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
-   "at": "2026-11-21T10:02:28+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "5 ways to turn off your 'work brain' after the day ends",
-   "desc": "Don't let your work troubles follow you home. Psychologist Guy Winch shares techniques to help you stop ruminating about your nine-to-five, so you can focus on what really matters.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6043793/stop-thinking-about-work",
-   "at": "2026-11-21T10:01:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "An effort to circumvent the Electoral College may be within reach. But hurdles remain",
-   "desc": "A national effort to ensure that only winners of the popular vote become president could reach a critical milestone soon.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6044237/electoral-college-national-popular-vote-interstate-compact",
-   "at": "2026-11-21T10:00:00+00:00"
+   "at": "2026-11-21T10:02:29+00:00"
   },
   {
    "source": "CNBC",
@@ -309,202 +351,6 @@
    "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
    "at": "2026-11-21T05:53:09+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "South Florida begins recovery after widespread flooding",
-   "desc": "Historic flooding across South Florida has left neighborhoods underwater, roads impassable and Broward schools closed as residents begin cleanup efforts and officials assess the damage.",
-   "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/",
-   "at": "2026-11-21T02:42:51+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Bobby Ray Inman, Intelligence Official Under Carter and Reagan, Dies at 95",
-   "desc": "An admiral who was a well-regarded director of the National Security Agency and deputy director of central intelligence, he turned down a nomination from President Bill Clinton to be secretary of defense.",
-   "url": "https://www.nytimes.com/2026/11/20/us/bobby-ray-inman-dead.html",
-   "at": "2026-11-21T02:40:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Stocks enter correction territory, driven by deepening tech rout",
-   "desc": "The tech-heavy Nasdaq tumbled more than 1,200 points, putting it on track for its second-worst day of the year.",
-   "url": "https://www.cbsnews.com/news/stocks-enter-correction-territory-ai-fears/",
-   "at": "2026-11-21T02:25:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "A Prosecutor Got Drunk to Help the Police. Things Got Out of Hand.",
-   "desc": "The man drank too much while participating in a “wet lab” to help officers recognize inebriation — and wound up the subject of an internal investigation, officials said.",
-   "url": "https://www.nytimes.com/2026/11/20/us/drunk-officers-training-maricopa-county-arizona.html",
-   "at": "2026-11-21T02:22:41+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Washington State Fines Company $9 Million Over Fatal Tank Implosion",
-   "desc": "Investigators said the company, Nippon Dynawave Packaging, knew conditions at its plant in Longview, Wash., were unsafe. The company said it would appeal.",
-   "url": "https://www.nytimes.com/2026/11/20/us/washington-state-fatal-tank-implosion-fine.html",
-   "at": "2026-11-21T02:18:13+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Takeaways From Trump’s Post-Trip News Conference",
-   "desc": "President Trump called the trilateral meeting with Xi Jinping and Vladimir Putin in China an “amazing event.” He also said he would work with Democrats in Congress on key issues.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/trump-news-conference-asia-trip.html",
-   "at": "2026-11-21T02:15:29+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fiona the Hippo Died After Eating a Hat. Some Want Justice.",
-   "desc": "Social media commenters have called for investigations, the release of zoo video footage and punishment for the parents of a child whose hat Fiona ingested.",
-   "url": "https://www.nytimes.com/2026/11/20/us/fiona-hippo-internet-justice.html",
-   "at": "2026-11-21T02:06:07+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Officials Find Cascade of Problems With ICE Training in Trump’s Immigration Crackdown",
-   "desc": "In a draft report, officials found widespread training gaps as the Department of Homeland Security sought to rapidly hire and deploy 10,000 new officers.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/training-ice-immigration-inspector-general.html",
-   "at": "2026-11-21T01:43:40+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Detonation of unstable explosives in Iowa paused indefinitely by court",
-   "desc": "The U.S. Army's plan to detonate five tons of unstable explosives containing lead azide at a munitions plant in Iowa has been put on indefinite hold by a federal court Friday.",
-   "url": "https://www.cbsnews.com/news/iowa-detonation-lead-azide-paused-indefinitely-court-order/",
-   "at": "2026-11-21T01:29:59+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Teen becomes viral chef after stepping up when his mom had cancer",
-   "desc": "In August, Jennifer Charney, a stay-at-home mother of eight, lost her 10-year battle with breast cancer. Her youngest son, Joey, stepped up to become the family's chef.",
-   "url": "https://www.cbsnews.com/news/joey-charney-georgia-teen-chef-cancer/",
-   "at": "2026-11-21T01:26:26+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Federal court indefinitely pauses military's plans for detonation of unstable explosives in Iowa",
-   "desc": "The Army's plan to detonate five tons of unstable bomb-making material containing lead azide at a munitions plant in Iowa was put on indefinite hold by a federal court Friday amid environmental and health concerns. Lana Zak reports.",
-   "url": "https://www.cbsnews.com/video/federal-court-indefinitely-pauses-militarys-plans-for-detonation-of-unstable-explosives-in-iowa/",
-   "at": "2026-11-21T01:14:30+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "4 injured after merchandise announcement causes stampede at New York City concert",
-   "desc": "A concert by rap artist OsamaSon at a New York City venue ended in a stampede that injured four people after an invitation to head to the merchandise booth for an exclusive gift. Tom Hanson has more.",
-   "url": "https://www.cbsnews.com/video/4-injured-after-merchandise-announcement-causes-stampede-at-new-york-city-concert/",
-   "at": "2026-11-21T01:10:14+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Uncertainty looms over Thanksgiving travel rush with around 29 million expected to fly",
-   "desc": "Millions of passengers are expected to fly over Thanksgiving as the air travel industry recovers from the FAA's national ground stop. Storms may also bring complications. Kris Van Cleave has the story.",
-   "url": "https://www.cbsnews.com/video/uncertainty-looms-over-thanksgiving-travel-rush-with-around-29-million-expected-to-fly/",
-   "at": "2026-11-21T01:06:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "6 reasons stocks are falling, and what you should do about it",
-   "desc": "The S&P 500 is on track for a seventh consecutive day of losses, marking its longest losing streak since February 2020. Here's what's taking the shine off stocks.",
-   "url": "https://www.cbsnews.com/news/why-stocks-are-falling-ai-fears/",
-   "at": "2026-11-21T01:04:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Florida, California facing dangerous weather conditions amid relentless rain",
-   "desc": "Florida and California are facing catastrophic flooding as severe storms slam both coasts. Rob Marciano has more.",
-   "url": "https://www.cbsnews.com/video/florida-california-facing-dangerous-weather-conditions-amid-relentless-rain/",
-   "at": "2026-11-21T01:03:47+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "F.B.I. Is Still Looking for Evidence That Georgia’s 2020 Election Was Rigged",
-   "desc": "On Friday, investigators interviewed the former head of elections in Fulton County. Their questions suggested that they are still pursuing debunked claims of widespread fraud.",
-   "url": "https://www.nytimes.com/2026/11/20/us/fbi-investigation-fulton-county-2020-election.html",
-   "at": "2026-11-21T01:01:22+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Leaked Draft Report Finds ‘Catastrophic’ Training Failures at ICE",
-   "desc": "The Trump administration graduated thousands of new ICE officers through a training regiment that one instructor called a “catastrophic failure,” according to a draft copy of a Department of Homeland Security inspector general’s report obtained by the Times. Our immigration reporter Hamed Aleaziz explains.",
-   "url": "https://www.nytimes.com/video/us/100000011291007/leaked-draft-report-finds-catastrophic-training-failures-at-ice.html",
-   "at": "2026-11-21T00:55:25+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "More than 140 sick on cruise ship that departed Fort Lauderdale, CDC says",
-   "desc": "The Princess Cruises ship Caribbean Princess departed Port Everglades in Fort Lauderdale on Nov. 11 on a 12-night journey.",
-   "url": "https://www.cbsnews.com/news/princess-cruises-caribbean-princess-mystery-illness-cdc-november-2026/",
-   "at": "2026-11-21T00:48:36+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Top N.H. Election Official Reiterates Intent to Keep Nation’s First Primary",
-   "desc": "The New Hampshire secretary of state said he would again hold the Democratic primary first in the nation, defying the party’s intent to prioritize other states in 2028.",
-   "url": "https://www.nytimes.com/2026/11/20/us/elections/new-hampshire-presidential-primary.html",
-   "at": "2026-11-21T00:42:11+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Mayor Mamdani announces plan to shut down Rikers Island",
-   "desc": "New York City Mayor Zohran Mamdani unveiled his strategy to shut down Rikers Island and replace it with four smaller jails across the city.",
-   "url": "https://www.cbsnews.com/news/zohran-mamdani-rikers-island-closing-plan-nyc/",
-   "at": "2026-11-20T23:59:30+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/20: CBS Evening News",
-   "desc": "Markets plunge amid tech selloff; Storms hit Florida and California.",
-   "url": "https://www.cbsnews.com/video/112026-cbs-evening-news/",
-   "at": "2026-11-20T23:30:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump signs Common Cents Act",
-   "desc": "The Common Cents Act established guidelines for businesses and consumers when conducting cash transactions.",
-   "url": "https://www.cbsnews.com/news/trump-signs-common-cents-act-into-law/",
-   "at": "2026-11-20T23:04:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Marine Corps hero under federal investigation",
-   "desc": "Retired Sgt. Maj. Bradley Kasal, whose bloodied visage was depicted in an iconic Iraq War photo, is under investigation stemming from his tenure as a high school JROTC instructor.",
-   "url": "https://www.cbsnews.com/news/marine-corps-hero-brad-kasal-federal-investigation/",
-   "at": "2026-11-20T23:00:50+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-   "desc": "Once the most valuable company in the world, Nvidia now ranks fourth behind Apple, Microsoft and Alphabet.",
-   "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
-   "at": "2026-11-20T22:59:33+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-   "desc": "Trump said he discussed Jensen Huang with China's Xi. Bessent said the ousted Nvidia CEO didn't come up in talks he had while in China.",
-   "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
-   "at": "2026-11-20T22:08:41+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/20: The Takeout with Major Garrett",
-   "desc": "Trump touts summit with Putin and Xi in first news conference since Asia trip; Poland accuses Russia of \"intentional provocation\" after missiles land in its territory.",
-   "url": "https://www.cbsnews.com/video/112026-the-takeout-with-major-garrett/",
-   "at": "2026-11-20T22:00:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Americans need help affording homes. Can Congress deliver?",
-   "desc": "Lawmakers may face more pressure in 2027 to focus on bipartisan housing proposals that would lower the cost of buying a home.",
-   "url": "https://www.cbsnews.com/news/congress-housing-affordability-first-time-homebuyers/",
-   "at": "2026-11-20T21:38:42+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor",
-   "desc": "Cybersecurity companies have been hunting for acquisitions in the AI era.",
-   "url": "https://www.cnbc.com/2026/11/20/zscaler-crowdstrike-deal.html",
-   "at": "2026-11-20T21:35:24+00:00"
   }
  ]
 }

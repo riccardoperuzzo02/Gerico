@@ -1,7 +1,42 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T11:17:38+00:00",
+ "asOf": "2026-11-22T13:17:34+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
+   "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
+   "at": "2026-11-22T12:00:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "COP 31: Weltklimakonferenz scheitert an gemeinsamer Abschlusserklärung",
+   "desc": "Die 31. Weltklimakonferenz hat sich nicht auf eine gemeinsame Abschlusserklärung geeinigt. Es seien keine Beschlüsse gefasst ​worden, sagte Konferenzpräsident Kurum.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/31-weltklimakonferenz-keine-einigung-cop-antalya",
+   "at": "2026-11-22T11:49:21+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Weltklimakonferenz COP31 : EU lehnt COP31-Erklärung ohne Abkehr von fossiler Energie ab",
+   "desc": "Die EU-Länder verweigern ihre Zustimmung zur Abschlusserklärung der Weltklimakonferenz. Sie würden keinen Beschluss akzeptieren, welcher fossile Brennstoffe grünwasche.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/weltklimakonferenz-eu-abschlusserklaerung-fossile-brennstoffe-darragh-obrien-gxe",
+   "at": "2026-11-22T11:28:27+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Grippeimpfstoff: Verzögerte Impfstofffreigabe bringt Praxen in Bedrängnis",
+   "desc": "In vielen Hausarztpraxen fehlt Grippeimpfstoff, Impftermine werden verschoben. Das Paul-Ehrlich-Institut sieht die Versorgung bundesweit dennoch gesichert.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/grippeimpfstoff-engpass-lieferung-paul-ehrlich-institut-gxe",
+   "at": "2026-11-22T11:19:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Spritpreisdeckel: Grüne und Linke kritisieren Reiches geplanten Spritpreisdeckel",
+   "desc": "Bundeswirtschaftsministerin Katherina Reiche hat einen Spritpreisdeckel vorgeschlagen, der wohl nicht an Autobahntankstellen gelten soll. Aus der Opposition kommt Kritik.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/spritpreisdeckel-katharina-reiche-cdu-autobahntankstellen-gxe",
+   "at": "2026-11-22T11:17:36+00:00"
+  },
   {
    "source": "Der Spiegel",
    "title": "Bahn statt Konvoi – Bundeswehr ändert Truppenverlegung nach Litauen kurzfristig",
@@ -15,6 +50,13 @@
    "desc": "Die Bundeswehr hat ein Problem mit sexualisiertem Fehlverhalten. Das belegt eine Studie. Der künftige Generalinspekteur der Bundeswehr, Freuding, will hier \"unerbittlich hart durchgreifen\". Die Zahlen seien \"unerträglich\".",
    "url": "https://www.tagesschau.de/inland/gesellschaft/bundeswehr-generalinspekteur-gegen-sexualisiertes-fehlverhalten-100.html",
    "at": "2026-11-22T09:51:56+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "UN-Klimakonferenz: Deutschland lehnt COP-Abschlusstext als »nicht zustimmungsfähig« ab",
+   "desc": "Eine gemeinsame Abschlusserklärung beim Weltklimagipfel droht zu scheitern. Deutschland, Frankreich und die EU halten die Beschlussvorlage nicht für ausreichend.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-tuerkei-murat-kurum-gxe",
+   "at": "2026-11-22T09:44:00+00:00"
   },
   {
    "source": "Die Zeit",
@@ -45,13 +87,6 @@
    "at": "2026-11-22T08:26:52+00:00"
   },
   {
-   "source": "Tagesschau",
-   "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
-   "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
-   "at": "2026-11-22T08:16:45+00:00"
-  },
-  {
    "source": "Die Zeit",
    "title": "Künstliche Intelligenz: Lauterbach kritisiert Regierung für zu wenig Ehrgeiz bei KI-Förderung",
    "desc": "Deutschland spiele bei der künstlichen Intelligenz »nirgendwo wirklich führend und entscheidend« mit, kritisiert Karl Lauterbach. Er fordert mehr finanzielle Förderung.",
@@ -68,7 +103,7 @@
   {
    "source": "Die Zeit",
    "title": "Robert Habeck: Habeck kritisiert fehlende geopolitische Geschlossenheit der EU",
-   "desc": "Der Grünen-Politiker Robert Habeck warnt davor, dass der Einfluss Euopas schwinden könnte. Russland, China und die USA seien dabei, »die Welt unter sich aufzuteilen«.",
+   "desc": "Der Grünen-Politiker Robert Habeck warnt davor, dass der Einfluss Europas schwinden könnte. Russland, China und die USA seien dabei, »die Welt unter sich aufzuteilen«.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/robert-habeck-arktis-geopolitik-usa-russland-china-gxe",
    "at": "2026-11-22T07:49:28+00:00"
   },
@@ -136,41 +171,6 @@
    "at": "2026-11-22T02:46:20+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Antisemitismus: FDP-Politikerin bei propalästinensischer Demo angegriffen",
-   "desc": "Die Aktivistin Karoline Preisler macht sich gegen Antisemitismus stark. Jetzt ist sie in Berlin in ein Handgemenge geraten und getreten worden. Die Polizei griff ein.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/karoline-preisler-angriff-demonstration-berlin-antisemitismus-katharina-von-schnurbein",
-   "at": "2026-11-22T01:40:35+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "El Chapo Isidro: Mexikanisches Militär fasst mutmaßlichen Drogenboss",
-   "desc": "El Chapo Isidro stand auf der Liste der meistgesuchten Verbrecher der US-Bundespolizei FBI. Nach seiner Festnahme kommt es zu gewalttätigen Ausschreitungen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/fausto-isidro-meza-flores-el-chapo-isidro-sinaloa-fbi",
-   "at": "2026-11-22T00:06:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Freihandel: EU und Indonesien unterzeichnen Handelsabkommen",
-   "desc": "Die EU hat nach langen Verhandlungen ein Handelsabkommen mit dem weltgrößten Inselstaat unterzeichnet. Damit fallen etwa indonesische Zölle auf europäische Autos weg.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/freihandelsabkommen-eu-indonesien-zolle-rohstoffe",
-   "at": "2026-11-21T23:28:22+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Regierungsbildung in Israel: Gadi Eisenkot sondiert Koalition mit rechter Likud-Partei",
-   "desc": "Israels Oppositionschef Gadi Eisenkot hat die Likud-Partei des amtierenden Premiers Benjamin Netanjahu zu Koalitionsgesprächen eingeladen. Die stellt bereits Forderungen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/israel-gadi-eisenkot-regierungsbildung-likud-benjamin-netanjahu",
-   "at": "2026-11-21T23:08:28+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gelbwestenbewegung: Sozialproteste in Frankreich münden in Gewalt",
-   "desc": "Das sechste Wochenende in Folge haben Zehntausende Franzosen gegen hohe Preise und andere Missstände demonstriert. Erneut kam es zu Brandstiftungen und Sachbeschädigung.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-frankreich-gelbwesten-weniger-teilnehmer-gewalt",
-   "at": "2026-11-21T22:15:35+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Karl Lauterbach: »Dass KI die Menschheit auslöscht, halte ich für Unsinn«",
    "desc": "Ex-Gesundheitsminister Karl Lauterbach hat gerade die wichtigsten KI-Labore in den USA und China besucht. Jetzt schlägt er Alarm: Deutschland dürfe sich nicht weiter abhängen lassen. Doch etwas macht ihm Hoffnung.",
@@ -197,20 +197,6 @@
    "desc": "Grünenchefin Brantner hat sich an die Seite der protestierenden Jugendlichen gestellt. Der Regierungskoalition warf sie eine »grausame Politik« vor und forderte mehr Geld für Schulen.",
    "url": "https://www.spiegel.de/politik/deutschland/franziska-brantner-gruenenchefin-kritisiert-soeder-geschenke-zulasten-jugend-a-a69c41bb-868d-4c29-bc4c-4fa4860f82fc",
    "at": "2026-11-21T15:07:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Hausärzte beklagen Mangel an Grippe-Impfstoff",
-   "desc": "Sorry, kein Impfstoff da: Wer sich dieser Tage in der Hausarztpraxis gegen Grippe impfen lassen will, könnte mancherorts vertröstet werden. Der Hausärzteverband beklagt zu wenig Impfstoff. Die Apotheker sehen das weniger dramatisch.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/grippe-impfstoff-hausaerzte-100.html",
-   "at": "2026-11-21T12:13:27+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bilger fordert Bekenntnis der Autoindustrie zu Deutschland",
-   "desc": "Die EU könnte Autokonzernen erlauben, auch nach 2035 neue Verbrenner und Hybride zu verkaufen. Verkehrsminister Bilger knüpft daran eine klare Erwartung: Deutschland müsse starker Produktionstandort bleiben.",
-   "url": "https://www.tagesschau.de/inland/bilger-fordert-bekenntnis-der-autohersteller-zu-deutschland-100.html",
-   "at": "2026-11-21T11:19:36+00:00"
   }
  ]
 }

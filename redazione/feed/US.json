@@ -1,20 +1,69 @@
 {
  "code": "US",
- "asOf": "2026-11-22T11:17:38+00:00",
+ "asOf": "2026-11-22T13:17:34+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Army plans to carry out detonation at Iowa plant despite indefinite pause",
+   "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
+   "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
+   "at": "2026-11-22T13:13:02+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "It's Medicare open enrollment time. Here's what you need to know",
+   "desc": "Open enrollment for Medicare runs through Dec. 7, and there are a few different pitfalls people should watch out for this year. Your drug plan or Medicare Advantage plan could be changing a lot.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
+   "at": "2026-11-22T13:11:04+00:00"
+  },
   {
    "source": "New York Times",
    "title": "A Riverboat Captain Recalls a Crash on the Mississippi",
    "desc": "Capt. Len Stewart had mere seconds to react before a 525-foot tanker crashed into the American Heritage, a riverboat in New Orleans with nearly 200 passengers on board.",
    "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-captain.html",
-   "at": "2026-11-22T10:55:16+00:00"
+   "at": "2026-11-22T13:03:09+00:00"
   },
   {
    "source": "New York Times",
    "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
    "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
    "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-tanker-tick-tock.html",
-   "at": "2026-11-22T10:54:59+00:00"
+   "at": "2026-11-22T13:02:42+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Pizza chains are under pressure. GLP-1 use is only one part of the problem",
+   "desc": "Domino's, Papa Johns and Pizza Hut face weaker demand, more delivery competition and changing eating habits, including GLP-1 use.",
+   "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
+   "at": "2026-11-22T13:00:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Republicans Debate Why They Lost the Midterms, and if Trump Is to Blame",
+   "desc": "A divide is emerging in the party over what caused its wipeout midterm defeats, foreshadowing a battle over how to move forward before 2028.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/republican-midterm-loss-debate-trump.html",
+   "at": "2026-11-22T12:30:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "What’s Legal Under Florida’s New Anti-D.E.I. Law? It’s Anyone’s Guess.",
+   "desc": "Cities and counties are pulling funding from groups and events they’ve long supported before a new law bars them from promoting diversity, equity and inclusion activities.",
+   "url": "https://www.nytimes.com/2026/11/22/us/florida-anti-dei-law-consequences.html",
+   "at": "2026-11-22T12:24:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Top Wall Street analysts favor these 3 dividend stocks for strong returns",
+   "desc": "Wall Street analysts can help shortlist attractive dividend-paying stocks, as their recommendations are backed by thorough analysis of a company's financials.",
+   "url": "https://www.cnbc.com/2026/11/22/top-wall-street-analysts-favor-these-stocks-for-strong-returns.html",
+   "at": "2026-11-22T12:13:56+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "The Nasdaq is in freefall. Here's one stock to look at",
+   "desc": "Elevated options premiums are creating an opportunity in Amazon",
+   "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
+   "at": "2026-11-22T12:10:39+00:00"
   },
   {
    "source": "New York Times",
@@ -31,24 +80,17 @@
    "at": "2026-11-22T10:02:15+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Republicans Debate Why They Lost the Midterms, and if Trump Is to Blame",
-   "desc": "A divide is emerging in the party over what caused its wipeout midterm defeats, foreshadowing a battle over how to move forward before 2028.",
-   "url": "https://www.nytimes.com/2026/11/22/us/politics/republican-midterm-loss-debate-trump.html",
-   "at": "2026-11-22T10:01:55+00:00"
+   "source": "NPR",
+   "title": "He expected a small-business loan. It turned out to be a trap",
+   "desc": "America's fastest-growing source of funding for small businesses is also one of the least regulated. One man has waged a long, lonely fight to recoup its punishing cost.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
+   "at": "2026-11-22T10:00:00+00:00"
   },
   {
    "source": "NPR",
    "title": "NPR's Senior Podcast Challenge: Early entries we love",
    "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
    "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
-   "at": "2026-11-22T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "He expected a small-business loan. It turned out to be a trap",
-   "desc": "America's fastest-growing source of funding for small businesses is also one of the least regulated. One man has waged a long, lonely fight to recoup its punishing cost.",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
    "at": "2026-11-22T10:00:00+00:00"
   },
   {
@@ -311,53 +353,11 @@
    "at": "2026-11-21T14:00:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-   "desc": "Prosecutors argued the defendant, 30-year-old Jonathan Rinderknecht, had been \"mad at everything\" in the days leading up to the January 2025 fire, which killed 12 people.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6049625/palisades-fire-conviction",
-   "at": "2026-11-21T13:58:33+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "A Punk Rocker’s Painful Wait for Wheelchair Repairs",
    "desc": "Two private equity-backed companies now dominate the U.S. wheelchair market. For users, extended repair times can be dangerous and frustrating.",
    "url": "https://www.nytimes.com/2026/11/21/us/wheelchair-repair-delays-public-equity.html",
    "at": "2026-11-21T13:57:49+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "State and federal battle over prediction markets regulation heats up after midterms",
-   "desc": "States, Congress and the CFTC are escalating the fight over prediction market regulation after the midterms.",
-   "url": "https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html",
-   "at": "2026-11-21T13:12:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Warren Buffett quadruples Thanksgiving gifts: A breakdown of how much wealth he's giving away",
-   "desc": "Warren Buffett more than quadrupled his Thanksgiving donations to four family foundations this year to $5.5 billion.",
-   "url": "https://www.cnbc.com/2026/11/21/warren-buffett-quadruples-thanksgiving-gifts.html",
-   "at": "2026-11-21T13:01:44+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
-   "desc": "Colder weather and low wind speeds could strain Europe’s gas market, where storage started winter at its lowest level in more than a decade.",
-   "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
-   "at": "2026-11-21T12:47:25+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
-   "desc": "A federal court indefinitely suspended the U.S. Army's plans to detonate 68 drums of lead azide in Iowa after communities raised concerns.",
-   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
-   "at": "2026-11-21T12:00:15+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
-   "desc": "Airlines are opting to build giant business-class cabins with ever-more luxurious suites.",
-   "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
-   "at": "2026-11-21T12:00:01+00:00"
   }
  ]
 }

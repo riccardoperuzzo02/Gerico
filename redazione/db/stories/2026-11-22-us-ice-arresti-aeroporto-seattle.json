@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-22-us-ice-arresti-aeroporto-seattle",
+  "title": "Stati Uniti: agenti dell'ICE arrestano due passeggeri all'imbarco a Seattle",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Seattle–Tacoma International Airport"},
+  "city": {"name": "Seattle", "lat": 47.4502, "lon": -122.3088},
+  "rank": 101,
+  "summary": "Sabato mattina agenti mascherati dell'immigrazione hanno fermato due messicani sul ponte d'imbarco di un volo per Los Angeles. Il governatore dello stato di Washington e la compagnia aerea hanno criticato il modo in cui è avvenuto l'arresto.",
+  "article": "Sabato 21 novembre agenti mascherati dell'ICE, l'agenzia federale per l'immigrazione e le dogane, hanno arrestato due passeggeri sul ponte d'imbarco dell'aeroporto di Seattle-Tacoma, mentre salivano sul volo Alaska Airlines 1306 diretto a Los Angeles. Il volo, previsto alle 8:10, è partito in ritardo. Nei video circolati online una persona viene trascinata via mentre una donna grida che sua figlia viene portata via.\n\nSecondo il dipartimento della Sicurezza interna (DHS), i due sono Ricardo Larrondo Mendoza e Sofia Hernandez Mejia, entrambi messicani con il visto scaduto. Il DHS sostiene che la donna abbia lanciato caffè bollente contro gli agenti e che dovrà rispondere di accuse federali per aggressione a pubblico ufficiale. Una fonte del DHS li descrive come padre e figlia.\n\nAlaska Airlines ha definito la scena «angosciante» e ha detto che l'ICE non aveva dato alcun preavviso. La compagnia sta verificando con l'autorità portuale di Seattle se i protocolli siano stati rispettati. Il governatore democratico dello stato di Washington, Bob Ferguson, ha detto che l'ICE è «completamente fuori controllo» e ha definito i metodi «profondamente non americani». Anche i deputati democratici Adam Smith e Pramila Jayapal hanno chiesto chiarimenti.\n\nNell'anno fiscale 2026 l'ICE ha compiuto 491.000 arresti, un record, di cui circa 475.000 amministrativi. Gli arresti negli aeroporti sono aumentati dall'estate, soprattutto per visti scaduti. Giovedì, a Washington, un'altra fermata aveva riguardato una studentessa dell'università di Princeton.",
+  "facts": [
+    {"text": "Due messicani con visto scaduto sono stati arrestati sabato sul ponte d'imbarco del volo Alaska Airlines 1306 a Seattle.", "who": ["DHS"]},
+    {"text": "Il DHS dice che la donna ha lanciato caffè bollente contro gli agenti e che sarà accusata di aggressione a pubblico ufficiale.", "who": ["DHS"]},
+    {"text": "Alaska Airlines dice che l'ICE non ha dato preavviso e ha definito la scena angosciante.", "who": ["Alaska Airlines"]},
+    {"text": "Il governatore Bob Ferguson definisce l'ICE «completamente fuori controllo».", "who": ["Bob Ferguson"]},
+    {"text": "Nell'anno fiscale 2026 l'ICE ha compiuto 491.000 arresti, un record.", "who": ["ICE"]}
+  ],
+  "view": "Si può dire con certezza che l'arresto è avvenuto a bordo di un volo di linea e che i due sono accusati dal DHS di avere il visto scaduto. Sulla dinamica ci sono due versioni: quella del DHS, con il caffè lanciato contro gli agenti, e quella dei video e dei testimoni, che mostrano una scena concitata.\n\nLe critiche arrivano da una compagnia aerea e dall'autorità portuale, cioè da chi gestisce lo scalo. Da guardare: l'esito delle verifiche sui protocolli, l'udienza per l'accusa federale e le eventuali richieste dei democratici al DHS.",
+  "open": [
+    "Quale rapporto di parentela c'è tra le due persone arrestate?",
+    "L'autorità portuale e la compagnia ottengono chiarimenti dal DHS sui protocolli?",
+    "Quando è fissata l'udienza per l'accusa federale?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/", "angle": "Articolo aperto: le due persone arrestate, le posizioni di DHS, compagnia, governatore e i numeri dell'ICE.", "at": "2026-11-22T02:56:57+00:00"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html", "angle": "Dal feed: le critiche del governatore e dei responsabili dell'aeroporto, che parlano di episodio angosciante.", "at": "2026-11-22T07:08:46+00:00"}
+  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: due passeggeri arrestati dall'ICE sul ponte d'imbarco dell'aeroporto di Seattle."}
+  ],
+  "tags": ["Stati Uniti", "Immigrazione", "Giustizia"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

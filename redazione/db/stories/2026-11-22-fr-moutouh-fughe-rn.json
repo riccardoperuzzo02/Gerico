@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-22-fr-moutouh-fughe-rn",
+  "title": "Francia: il prefetto Moutouh chiede di lasciare dopo i sospetti di fughe al Rn",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "Hôtel de Beauvau"},
+  "city": {"name": "Parigi", "lat": 48.8697, "lon": 2.3166},
+  "rank": 303,
+  "summary": "Il prefetto del Centre-Val de Loire, sospettato di aver passato informazioni riservate al partito di Marine Le Pen, parla di campagna di destabilizzazione. Un'inchiesta è aperta per violazione del segreto d'indagine.",
+  "article": "Hugues Moutouh, prefetto della regione Centre-Val de Loire ed ex segretario generale del ministero dell'Interno, ha chiesto sabato 21 novembre di essere sollevato dall'incarico. È sospettato di aver trasmesso al Rassemblement national, il partito di estrema destra, informazioni riservate su inchieste che riguardano il partito.\n\nVenerdì era stato convocato al ministero dell'Interno, a place Beauvau. In un comunicato all'agenzia Afp ha scritto di rifiutare che lo Stato, il ministero e il corpo prefettizio diventino «bersagli o strumenti» di «imprese di destabilizzazione». Dice di aver agito «nel rigoroso rispetto della legge» e con «assoluta neutralità politica».\n\nÈ stata aperta un'inchiesta per violazione del segreto professionale, violazione del segreto d'indagine e ricettazione di questi reati. Secondo un resoconto della stampa francese, gli accertamenti sono partiti dal ritrovamento di una e-mail di una funzionaria del ministero nella casa romana di Frédéric Chatillon, vicino a Marine Le Pen.\n\nL'eurodeputato Rn Aleksandar Nikolic ha detto di sperare che la vicenda non sia una pressione su chi «oserebbe discutere» con il partito. Sandrine Rousseau, deputata ecologista, ha chiesto la sospensione del prefetto. L'inchiesta è in corso e Moutouh nega le accuse.",
+  "facts": [
+    {"text": "Moutouh, prefetto del Centre-Val de Loire, ha chiesto di essere sollevato dall'incarico sabato.", "who": ["Hugues Moutouh"]},
+    {"text": "È sospettato di aver passato informazioni riservate al Rassemblement national.", "who": ["Autorità inquirenti"]},
+    {"text": "Respinge le accuse e parla di campagna di destabilizzazione.", "who": ["Hugues Moutouh"]},
+    {"text": "Un'inchiesta è aperta per violazione del segreto professionale e del segreto d'indagine.", "who": ["Autorità inquirenti"]}
+  ],
+  "view": "Si può dire con certezza che il prefetto ha chiesto di lasciare l'incarico, che è in corso un'inchiesta e che lui nega ogni scorrettezza. Le fonti lette non dicono a quale procura sia affidata né se ci siano indagati formali.\n\nIl caso riguarda il rapporto tra apparati dello Stato e un partito a pochi mesi dalle presidenziali. Da guardare: la decisione del ministro dell'Interno sull'incarico, gli sviluppi dell'inchiesta e le reazioni dei partiti.",
+  "open": [
+    "Quale procura conduce l'inchiesta e chi è indagato?",
+    "Il ministro dell'Interno accetterà la richiesta del prefetto?",
+    "Quali informazioni sarebbero state trasmesse al partito?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/politique/front-national/le-prefet-hugues-moutouh-soupconne-d-avoir-transmis-au-rn-des-informations-confidentielles-sur-des-enquetes-visant-le-parti-demande-a-etre-releve-de-ses-fonctions_8294069.html", "angle": "Articolo aperto: la richiesta del prefetto, le sue dichiarazioni, l'inchiesta e le reazioni.", "at": "2026-11-21T18:40:48+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/societe/article/2026/11/21/fuites-de-beauvau-vers-le-rn-d-un-email-trouve-au-domicile-d-un-ami-de-marine-le-pen-aux-suspicions-visant-le-prefet-moutouh-itineraire-d-une-enquete-sensible_6814067_3224.html", "angle": "Dal feed: come è nata l'inchiesta, dall'e-mail trovata a Roma.", "at": "2026-11-21T21:00:02+00:00"}
+  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: il prefetto Moutouh chiede di lasciare l'incarico dopo i sospetti di fughe di notizie verso il Rn."}
+  ],
+  "tags": ["Francia", "Giustizia", "Politica"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

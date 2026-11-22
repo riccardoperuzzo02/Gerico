@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-22-us-ordine-trump-appaltatori-congresso",
+  "title": "Stati Uniti: Trump limita le risposte degli appaltatori al Congresso",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Casa Bianca"},
+  "city": {"name": "Washington", "lat": 38.8977, "lon": -77.0365},
+  "rank": 102,
+  "summary": "Un ordine esecutivo chiede alle aziende che lavorano per il governo federale di trattenere le comunicazioni che l'amministrazione considera riservate. Il Congresso passa ai democratici con le elezioni di metà mandato.",
+  "article": "Venerdì 21 novembre il presidente Donald Trump ha firmato un ordine esecutivo che chiede agli appaltatori federali di consultare la Casa Bianca prima di rispondere alle richieste del Congresso. L'ordine dispone anche che trattengano le comunicazioni che l'amministrazione considera riservate. Il testo non è stato letto per intero: quanto segue si basa su due resoconti della stampa americana.\n\nI democratici, che dopo le elezioni di metà mandato guideranno la Camera, hanno annunciato inchieste sull'operato dell'amministrazione. Secondo un resoconto, l'ordine è l'ultimo tentativo della Casa Bianca di frenare quelle inchieste, che passano spesso dai contratti con aziende private.\n\nLe fonti non riportano ancora reazioni formali dei parlamentari né pareri di giuristi. Non è chiaro se l'ordine valga per tutti i contratti federali o solo per alcuni settori, né con quali sanzioni sia accompagnato.",
+  "facts": [
+    {"text": "Trump ha firmato venerdì un ordine esecutivo sulle risposte degli appaltatori federali al Congresso.", "who": ["Casa Bianca"]},
+    {"text": "Gli appaltatori devono consultare la Casa Bianca prima di rispondere alle richieste del Congresso.", "who": ["Casa Bianca"]},
+    {"text": "Devono trattenere le comunicazioni che l'amministrazione ritiene riservate.", "who": ["Casa Bianca"]}
+  ],
+  "view": "Si può dire con certezza che l'ordine esiste e che riguarda i rapporti tra aziende appaltatrici e Congresso. Restano aperti l'ambito, le sanzioni e il fondamento giuridico: le fonti lette non citano il testo.\n\nLa questione tocca il potere di controllo del Congresso, che si esercita anche con richieste di documenti a chi lavora per il governo. Da guardare: le reazioni dei democratici, eventuali ricorsi e il testo completo dell'ordine.",
+  "open": [
+    "Cosa prevede il testo dell'ordine, e per quali contratti?",
+    "Ci sono sanzioni per gli appaltatori che non si adeguano?",
+    "I democratici o le aziende faranno ricorso?"
+  ],
+  "sources": [
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress", "angle": "Dal feed: l'ordine chiede di consultare la Casa Bianca e di trattenere le comunicazioni considerate riservate.", "at": "2026-11-21T22:40:36+00:00"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html", "angle": "Dal feed: l'ordine come ultimo tentativo di attenuare le inchieste democratiche sull'amministrazione.", "at": "2026-11-22T01:29:53+00:00"}
+  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: ordine esecutivo di Trump sulle risposte degli appaltatori al Congresso."}
+  ],
+  "tags": ["Stati Uniti", "Congresso", "Governo"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

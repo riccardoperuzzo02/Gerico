@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-22-fr-ruffin-ritira-candidatura",
+  "title": "Francia: François Ruffin ritira la candidatura alle presidenziali del 2027",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "photo": {"wiki": "fr", "title": "Palais Bourbon"},
+  "city": {"name": "Parigi", "lat": 48.8566, "lon": 2.3522},
+  "rank": 302,
+  "summary": "Il deputato della Somme lascia la corsa a cinque mesi dal voto e non sostiene nessun candidato. Riduce i candidati della sinistra nel momento in cui la coalizione attorno a Mélenchon è ancora in discussione.",
+  "article": "François Ruffin, deputato della Somme ed ex esponente della France insoumise, ha annunciato sabato 21 novembre il ritiro della sua candidatura alle presidenziali del 2027, a circa cinque mesi dal voto. In un comunicato diffuso sul social X ha detto di prendere «atto dell'impasse» della sua campagna.\n\nRuffin aveva chiesto una «grande primaria» di tutta la sinistra, che i partiti hanno respinto. Secondo lui «gli apparati hanno rifiutato questa grande primaria e il duello tra le due sinistre inconciliabili è ormai installato». Nei sondaggi era fermo tra l'1 e il 3 per cento, secondo il resoconto di una testata francese.\n\nIl deputato non appoggia nessun candidato e augura «buon coraggio e buona campagna» ai «candidati di sinistra ancora in lizza» senza nominarli, per portare «un progetto a vocazione maggioritaria» contro il Rassemblement national, il partito di estrema destra che definisce «alle porte del potere». Continuerà a lavorare con il suo movimento, Debout!.\n\nNel campo della sinistra resta in discussione una coalizione attorno a Jean-Luc Mélenchon, a cui ha mostrato apertura di recente Marine Tondelier, leader degli Ecologisti. Le fonti lette non riportano reazioni degli altri candidati.",
+  "facts": [
+    {"text": "Ruffin ha ritirato la candidatura sabato 21 novembre, a circa cinque mesi dal voto.", "who": ["François Ruffin"]},
+    {"text": "Motivo dichiarato: il rifiuto di una grande primaria della sinistra.", "who": ["François Ruffin"]},
+    {"text": "Non sostiene nessun candidato e parla di un Rassemblement national «alle porte del potere».", "who": ["François Ruffin"]},
+    {"text": "Nei sondaggi era tra l'1 e il 3 per cento.", "who": ["Sondaggi"]}
+  ],
+  "view": "Si può dire con certezza che Ruffin ha lasciato la corsa e non indica nessuno. Gli effetti sul voto dei suoi sostenitori non sono misurabili e le fonti non riportano le reazioni degli altri candidati.\n\nIl ritiro restringe il campo a sinistra, che è diviso. Da guardare: le prese di posizione di Mélenchon e Tondelier e le prossime mosse del suo movimento.",
+  "open": [
+    "Come reagiranno gli altri candidati di sinistra?",
+    "Dove andranno i voti che Ruffin raccoglieva?",
+    "Cosa farà Debout! nelle prossime settimane?"
+  ],
+  "sources": [
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature", "angle": "Articolo aperto: motivazioni, citazioni e contesto a sinistra.", "at": "2026-11-21T17:37:20+00:00"},
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/elections/francois-ruffin-retire-sa-candidature-a-l-election-presidentielle-et-souhaite-bonne-campagne-aux-candidats-de-gauche-encore-en-lice_8294003.html", "angle": "Dal feed: il comunicato su X e l'augurio ai candidati di sinistra.", "at": "2026-11-21T17:56:33+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/21/presidentielle-2027-francois-ruffin-renonce-a-sa-candidature-face-au-risque-de-l-arrivee-de-l-extreme-droite-au-pouvoir_6814051_823448.html", "angle": "Dal feed: il rischio dell'estrema destra al potere e nessun sostegno a candidati.", "at": "2026-11-21T17:13:30+00:00"}
+  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: Ruffin ritira la candidatura alle presidenziali del 2027."}
+  ],
+  "tags": ["Francia", "Elezioni", "Sinistra"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-22-gb-barnham-referendum-richiedenti-asilo",
+  "title": "Regno Unito: un villaggio del Suffolk vota contro un centro di accoglienza",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "2 Marsham Street"},
+  "city": {"name": "Barnham (Suffolk)", "lat": 52.3787, "lon": 0.7001},
+  "rank": 202,
+  "summary": "A Barnham 257 votanti su circa 500 aventi diritto hanno approvato un referendum simbolico contro l'alloggio di 930 richiedenti asilo in una ex base militare vicina. Il deputato locale accusa i partiti di opposizione di soffiare sul fuoco.",
+  "article": "Sabato 21 novembre gli abitanti di Barnham, un villaggio del Suffolk, nell'Inghilterra orientale, hanno votato in un referendum simbolico per «lasciare il Regno Unito». Il voto era una protesta contro il piano del governo di alloggiare 930 richiedenti asilo in una ex base militare vicina. Gli aventi diritto erano circa 500: i sì sono stati 257, i no 16 e una scheda è risultata nulla.\n\nIl referendum non ha alcun valore legale. Secondo le prime reazioni raccolte dalla stampa britannica, i politici locali parlano di un messaggio «potente» che il governo dovrebbe ascoltare. Il deputato della zona sostiene invece che le critiche legittime ai piani di alloggio vengano sfruttate dai partiti di opposizione, che a suo dire «alimentano discordie razziali».\n\nLe fonti lette danno pochi altri elementi: non è chiaro chi abbia organizzato il voto, quando l'ex base dovrebbe aprire e se il governo intenda modificare il piano. Restano da verificare anche la posizione del ministero dell'Interno e quella del consiglio locale.",
+  "facts": [
+    {"text": "Sabato a Barnham 257 voti a favore dell'«uscita» dal Regno Unito, 16 contrari, una scheda nulla.", "who": ["Autorità locali"]},
+    {"text": "Gli aventi diritto erano circa 500.", "who": ["Autorità locali"]},
+    {"text": "Il piano del governo prevede 930 richiedenti asilo in una ex base militare vicina.", "who": ["Governo britannico"]},
+    {"text": "Il deputato locale dice che le critiche legittime sono sfruttate dai partiti di opposizione.", "who": ["Deputato locale"]}
+  ],
+  "view": "Si può dire con certezza che il voto è stato simbolico e che la partecipazione è andata oltre la metà degli aventi diritto. Le fonti non dicono chi l'ha promosso né se il governo cambierà il piano.\n\nIl caso mostra quanto pesi a livello locale l'alloggio dei richiedenti asilo nelle strutture militari. Da guardare: la risposta del ministero dell'Interno, i tempi di apertura del centro e le prossime iniziative degli abitanti.",
+  "open": [
+    "Chi ha organizzato il referendum?",
+    "Quando dovrebbe aprire il centro nella ex base?",
+    "Il governo modificherà il piano?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/uk-news/2026/nov/21/suffolk-village-votes-to-leave-the-uk-over-plans-to-house-asylum-seekers-nearby", "angle": "Dal feed: i numeri del voto e la posizione del deputato locale.", "at": "2026-11-21T18:20:37+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/c6vg270pw9ydo", "angle": "Dal feed: le reazioni dei politici al voto simbolico.", "at": "2026-11-22T06:35:00+00:00"}
+  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: referendum simbolico a Barnham contro l'alloggio di 930 richiedenti asilo."}
+  ],
+  "tags": ["Regno Unito", "Immigrazione", "Governo"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

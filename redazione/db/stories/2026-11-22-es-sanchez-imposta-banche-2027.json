@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-22-es-sanchez-imposta-banche-2027",
+  "title": "Spagna: Sánchez annuncia la proroga fino al 2027 dell'imposta sulle banche",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "photo": {"wiki": "es", "title": "Palacio de la Moncloa"},
+  "city": {"name": "Madrid", "lat": 40.4168, "lon": -3.7038},
+  "rank": 502,
+  "summary": "Il presidente del governo dice che il Consiglio dei ministri prorogherà il prelievo e destinerà 1.400 milioni di euro alla casa, a otto giorni dalle elezioni del 29 novembre.",
+  "article": "Pedro Sánchez, presidente del governo spagnolo e candidato del Partito socialista, ha annunciato venerdì 21 novembre che il Consiglio dei ministri prorogherà fino al 2027 l'imposta sulle banche. Ha detto che il gettito, 1.400 milioni di euro, andrà alla casa. L'annuncio è arrivato nell'ultima settimana di campagna per le elezioni generali del 29 novembre.\n\nSecondo i dati del governo, con questi fondi si finanzierà la costruzione di oltre 6.000 alloggi a prezzi accessibili, la ristrutturazione di 52.000 abitazioni e le agevolazioni fiscali per quasi 120.000 inquilini. Il testo del decreto non è stato letto e la data del Consiglio dei ministri non è nelle fonti.\n\nLe reazioni dei partiti e delle banche non sono riportate nelle fonti lette. Il Partito popolare, guidato da Alberto Núñez Feijóo, propone nel suo programma di costruire un milione di case, e il vicepresidente Carlos Cuerpo ha messo in dubbio quella proposta, avvertendo sui rischi di ridurre le risorse per i servizi pubblici.",
+  "facts": [
+    {"text": "Sánchez dice che il Consiglio dei ministri prorogherà l'imposta sulle banche fino al 2027.", "who": ["Pedro Sánchez"]},
+    {"text": "Il gettito previsto è di 1.400 milioni di euro, destinati alla casa.", "who": ["Governo spagnolo"]},
+    {"text": "Previsti oltre 6.000 alloggi accessibili, 52.000 case ristrutturate e agevolazioni per quasi 120.000 inquilini.", "who": ["Governo spagnolo"]}
+  ],
+  "view": "Si può dire con certezza che l'annuncio è stato fatto in campagna elettorale e che per ora manca il decreto. Un annuncio del presidente non equivale a un atto approvato: le fonti non danno data né testo.\n\nLa casa è uno dei temi centrali della campagna, per tutti i partiti. Da guardare: il Consiglio dei ministri, la reazione delle banche e le proposte degli altri partiti sulla casa.",
+  "open": [
+    "Quando si riunisce il Consiglio dei ministri che approva la proroga?",
+    "Come reagiranno le banche e il Partito popolare?",
+    "Il decreto avrà bisogno della conferma del Parlamento?"
+  ],
+  "sources": [
+    {"name": "20minutos", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.20minutos.es/nacional/sanchez-anuncia-que-consejo-ministros-prorrogara-impuesto-banca-hasta-2027-1-400-millones-que-se-destinen-vivienda_7063963_0.html", "angle": "Dal feed: l'annuncio, i 1.400 milioni e gli usi previsti dal governo.", "at": "2026-11-21T08:29:14+00:00"},
+    {"name": "El País", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://elpais.com/espana/2026-11-22/la-campana-eleva-el-drama-en-la-recta-final-a-por-ellos-no-pasaran.html", "angle": "Dal feed: Sánchez promette tasse sulle banche nella corsa al voto utile.", "at": "2026-11-22T04:30:01+00:00"}  ],
+  "firstSeen": "2026-11-22T09:48:31+01:00",
+  "updated": "2026-11-22T09:48:31+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-22T09:48:31+01:00", "text": "Prima notizia: Sánchez annuncia la proroga dell'imposta sulle banche fino al 2027."}
+  ],
+  "tags": ["Spagna", "Conti pubblici", "Casa"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

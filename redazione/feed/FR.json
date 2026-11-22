@@ -1,27 +1,83 @@
 {
  "code": "FR",
- "asOf": "2026-11-22T17:17:36+00:00",
+ "asOf": "2026-11-22T19:17:35+00:00",
  "items": [
   {
-   "source": "franceinfo",
-   "title": "\"Je ne gouvernerai pas avec le RN\", déclare David Lisnard, candidat du parti Nouvelle Energie à la présidentielle",
-   "desc": "Dans un message publié sur le réseau social X, le maire de Cannes a déclaré a mis en avant des divergences sur les questions économiques.",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/direct-campagne-presidentielle-la-secretaire-generale-de-la-cfdt-marylise-leon-appelle-a-changer-la-date-pour-eviter-un-second-tour-le-2-mai_8294528.html",
-   "at": "2026-11-22T17:12:04+00:00"
+   "source": "Le Monde",
+   "title": "A la COP31, la communauté internationale sort déchirée face au manque d’ambition sur la sortie des énergies fossiles et les transferts financiers",
+   "desc": "Le sommet mondial sur le climat s’est achevé dimanche sans décision finale. La volonté de ne pas faire figurer la sortie des combustibles fossiles dans le texte et l’absence d’engagement à financer l’adaptation des pays du Sud au réchauffement sont en cause.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/22/a-la-cop31-la-communaute-internationale-sort-dechiree-face-au-manque-d-ambition-sur-la-sortie-des-energies-fossiles-et-les-transferts-financiers_6814242_3244.html",
+   "at": "2026-11-22T19:08:00+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "La COP31 s’achève sur un échec, sans accord devant la division des pays sur les énergies fossiles",
-   "desc": "« Nous n’approuverons pas une décision (…) ne mentionnant même pas les combustibles fossiles, qui sont le principal moteur du changement climatique », a déclaré le ministre du climat irlandais, Darragh O’Brien, dont le pays assure actuellement la présidence du Conseil de l’Union européenne.",
-   "url": "https://www.lemonde.fr/climat/article/2026/11/22/la-cop31-s-acheve-sur-un-echec-sans-accord-devant-la-division-des-pays-sur-les-energies-fossiles_6814199_1652613.html",
-   "at": "2026-11-22T17:11:51+00:00"
+   "title": "Emmanuel Macron envisage de réunir le Congrès à Versailles pour faire adopter une « règle d’or » budgétaire, une procédure inédite à plus d’un titre",
+   "desc": "Devant le dérapage des finances publiques et de l’endettement, le chef de l’Etat évoque l’idée d’une mesure contraignante dans la Constitution. Le Rassemblement national, favorable au principe, devrait jouer les arbitres.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/22/emmanuel-macron-envisage-de-reunir-le-congres-a-versailles-pour-faire-adopter-une-regle-d-or-budgetaire-une-procedure-inedite-a-plus-d-un-titre_6814241_823448.html",
+   "at": "2026-11-22T18:53:29+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "La COP31 s'achève à Antalya sans que les pays ne s'accordent sur une déclaration finale, divisés sur la question des énergies fossiles",
+   "title": "COP31 : le sommet pour le climat s’achève à Antalya sans accord final, de nombreux pays restant divisés sur la question des énergies fossiles",
+   "desc": "Les décisions doivent être prises par consensus de quelque 200 pays à la COP, si bien que l'opposition formelle d'un seul d'entre eux peut bloquer une décision.",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/la-cop31-s-acheve-a-antalya-sans-que-les-pays-ne-s-accordent-sur-une-declaration-finale-divises-sur-la-question-des-energies-fossiles_8295011.html",
+   "at": "2026-11-22T18:45:54+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : un cargo russe en feu à Benghazi, les autorités de l’est de la Libye suspectent une attaque de drones",
+   "desc": "Dans un communiqué, le gouvernement basé à Benghazi a annoncé « qu’il est probable qu’il ait été visé par une attaque de drones », et que « le navire était en route pour la Russie et que son escale avait pour but de se ravitailler en carburant et en vivres ».",
+   "url": "https://www.lemonde.fr/international/live/2026/11/22/en-direct-guerre-en-ukraine-un-cargo-russe-en-feu-a-benghazi-les-autorites-de-l-est-de-la-libye-suspectent-une-attaque-de-drones_6814183_3210.html",
+   "at": "2026-11-22T18:43:43+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Choose France : 273 projets industriels seront présentés lors de ce sommet dévolu aux entreprises tricolores",
+   "desc": "Cette édition, réservée aux entreprises françaises qui investissent dans le pays, décompte 14,9 milliards d’euros d’investissements nouveaux, soit 81 projets inédits, notamment dans les secteurs de la santé, de la cosmétique, ou des biocarburants.",
+   "url": "https://www.lemonde.fr/economie-francaise/article/2026/11/22/choose-france-273-projets-industriels-seront-presentes-lors-de-ce-sommet-devolu-aux-entreprises-tricolores_6814240_1656968.html",
+   "at": "2026-11-22T18:42:12+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "COP31 : le sommet pour le climat s’achève à Antalya sans accord final, de nombreux pays restant divisés sur la question des énergies fossiles",
    "desc": "Après quasiment deux jours de prolongations, la conférence de l'ONU s'est achevée dimanche en Turquie, sans accord global des pays participants, après le rejet de l'Union européenne de signer un texte dépourvu de mention aux énergies fossiles.",
    "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/direct-l-union-europeenne-s-oppose-a-l-adoption-de-la-declaration-finale-de-la-cop31-apres-pres-de-deux-jours-de-prolongations_8294819.html",
-   "at": "2026-11-22T16:56:16+00:00"
+   "at": "2026-11-22T18:39:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Toutes les solutions méritent d’être explorées\" : l'Elysée ne confirme pas la possible inscription de la \"règle d'or\" budgétaire dans la Constitution début 2027",
+   "desc": "Selon \"La Tribune Dimanche\", le chef de l'Etat réfléchit à convoquer le Congrès à Versailles, réunissant députés et sénateurs, pour faire approuver cette mesure emblématique de l'orthodoxie financière.",
+   "url": "https://www.franceinfo.fr/economie/budget/toutes-les-solutions-meritent-d-etre-explorees-l-elysee-ne-confirme-pas-la-possible-inscription-de-la-regle-d-or-budgetaire-dans-la-constitution-debut-2027_8295083.html",
+   "at": "2026-11-22T18:25:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Tenir le deuxième tour de la présidentielle \"au lendemain d'un 1er mai est une erreur\", estime Raphaël Glucksmann, qui demande d'avancer le scrutin",
+   "desc": "Le candidat PS-Place publique propose d'organiser les deux scrutins les 11 et 25 avril, afin de ne pas \"prendre des risques avec cette élection\".",
+   "url": "https://www.franceinfo.fr/elections/presidentielle/direct-campagne-presidentielle-la-secretaire-generale-de-la-cfdt-marylise-leon-appelle-a-changer-la-date-pour-eviter-un-second-tour-le-2-mai_8294528.html",
+   "at": "2026-11-22T18:11:17+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La Corse placée en vigilance orange pour des vents violents à partir de lundi ; l’Ain et le Jura touchés par de fortes pluies et face à des risques d’inondations",
+   "desc": "Des pointes jusqu’à 170 km/h seront possibles dans la péninsule du Cap-Corse, lundi, alors que des cumuls de pluie exceptionnels sont attendus sur le Haut-Jura et les plateaux, dimanche. Dans le Pas-de-Calais, la vigilance orange est maintenue pour la Canche.",
+   "url": "https://www.lemonde.fr/climat/article/2026/11/22/la-corse-placee-en-vigilance-orange-pour-des-vents-violents-a-partir-de-lundi-l-ain-et-le-jura-touches-par-de-fortes-pluies-et-face-a-des-risques-d-inondations_6814193_1652613.html",
+   "at": "2026-11-22T18:09:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'absence d'accord à l'issue de la COP 31 est \"frustrant\", réagit Laurence Tubiana, présidente de la Fondation européenne pour le climat",
+   "desc": "L'économiste est déçue face aux avancées \"ces dernières années\" malgré la \"sortie des accords de Paris des États-Unis pour la deuxième fois\".",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/l-absence-d-accord-a-l-issue-de-la-cop-31-est-frustrant-reagit-laurence-tubiana-presidente-de-la-fondation-europeenne-pour-le-climat_8295074.html",
+   "at": "2026-11-22T17:16:53+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Mathématiques et IA : prenons le temps de comprendre",
+   "desc": "Dans sa carte blanche au « Monde », le mathématicien et académicien Etienne Ghys prend acte de l’accélération que l’intelligence artificielle apporte à sa discipline. Mais il rappelle que les maths ne se réduisent pas à des résultats.",
+   "url": "https://www.lemonde.fr/sciences/article/2026/11/22/mathematiques-et-ia-prenons-le-temps-de-comprendre_6814234_1650684.html",
+   "at": "2026-11-22T17:00:10+00:00"
   },
   {
    "source": "Le Monde",
@@ -32,10 +88,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Soudan : l’Ethiopie mise en cause dans des frappes de drones sur des zones résidentielles et un bâtiment de l’ONU à Khartoum",
-   "desc": "Au début de novembre, le Soudan avait annoncé avoir saisi le Conseil de sécurité de l’ONU et l’Union africaine, accusant le pays voisin de soutenir les paramilitaires des Forces de soutien rapide (FSR), qui s’opposent à l’armée soudanaise depuis 2023 dans une guerre meurtrière.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/22/soudan-l-ethiopie-mise-en-cause-dans-des-frappes-de-drones-sur-des-zones-residentielles-et-un-batiment-de-l-onu-a-khartoum_6814229_3212.html",
-   "at": "2026-11-22T16:03:40+00:00"
+   "title": "Aux Etats-Unis, Melat Kiros, 29 ans, démocrate, socialiste et première femme de la génération Z à entrer au Congrès",
+   "desc": "Née en Ethiopie et élue à la Chambre des représentants lors des midterms dans le Colorado, cette ex-avocate incarne une jeune génération de parlementaires qui renouvellent aussi bien la forme que le fond de leurs messages.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/22/aux-etats-unis-melat-kiros-29-ans-democrate-socialiste-et-premiere-femme-de-la-generation-z-a-entrer-au-congres_6814225_3210.html",
+   "at": "2026-11-22T16:00:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Dans le Nord, Vanderschooten fait le pari de relancer le linge de maison made in France",
+   "desc": "Dans ce département, où la filière textile a été balayée par les importations asiatiques, une entreprise familiale installée à Nieppe s’emploie à relancer du linge de maison entièrement fabriqué en France. Un pari, alors que les produits tricolores pâtissent de la crise du pouvoir d’achat.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/22/dans-le-nord-vanderschooten-fait-le-pari-de-relancer-le-linge-de-maison-made-in-france_6814226_3234.html",
+   "at": "2026-11-22T16:00:02+00:00"
   },
   {
    "source": "franceinfo",
@@ -43,13 +106,6 @@
    "desc": "Les Gardiens de la Révolution ont revendiqué samedi soir des frappes contre des installations américaines en réponse aux \"violations continues de l'espace aérien\" iranien.",
    "url": "https://www.franceinfo.fr/monde/moyen-orient/une-frappe-iranienne-sur-un-site-industriel-civil-fait-deux-blesses-a-bahrein_8294927.html",
    "at": "2026-11-22T15:57:57+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : les secours « poursuivent leur intervention » après l’attaque d’un immeuble d’habitation par un drone russe, près de Kiev",
-   "desc": "L’attaque d’un immeuble de cinq étages par un drone russe à Dymer – au nord de Kiev – a tué deux personnes, et onze autres sont portées disparues.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/22/en-direct-guerre-en-ukraine-les-secours-poursuivent-leurs-interventions-apres-l-attaque-d-un-immeuble-d-habitation-par-un-drone-russe-pres-de-kiev_6814183_3210.html",
-   "at": "2026-11-22T15:44:58+00:00"
   },
   {
    "source": "franceinfo",
@@ -63,7 +119,7 @@
    "title": "Après l’attentat de Trappes, un entrepreneur de Millau lance une nouvelle marche nationale contre le racisme, au départ de Marseille",
    "desc": "Le parcours démarrera lundi 23 novembre avec l’objectif de rejoindre la ville des Yvelines. Sollicités, certains marcheurs de 1983 sont circonspects sur l’impact d’une nouvelle édition.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/22/apres-l-attentat-de-trappes-un-entrepreneur-de-millau-lance-une-nouvelle-marche-nationale-contre-le-racisme-au-depart-de-marseille_6814223_3224.html",
-   "at": "2026-11-22T15:30:11+00:00"
+   "at": "2026-11-22T15:30:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -92,6 +148,13 @@
    "desc": "L’été venu, le dipneuste africain s’enterre et transforme sa peau grâce à une toxine véhiculée par le système immunitaire. Et si nos ancêtres avaient emprunté le même chemin il y a 400 millions d’années ?",
    "url": "https://www.lemonde.fr/sciences/article/2026/11/22/le-poisson-a-poumons-eclaire-l-enigme-de-la-sortie-de-la-mer-des-vertebres_6814219_1650684.html",
    "at": "2026-11-22T14:30:05+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Fuites au ministère de l'Intérieur : un mail jette des soupçons sur l'implication du préfet Moutouh",
+   "desc": "La justice française soupçonne des fuites d'informations confidentielles du ministère de l'Intérieur vers le Rassemblement national. Un mail pourrait apporter des éléments sur le rôle de l'ancien secrétaire général de Beauvau et actuel préfet du Loiret et de la région Centre-Val de Loire, Hugues Moutouh, qui nie toute implication.",
+   "url": "https://www.france24.com/fr/france/20261122-fuites-au-minist%C3%A8re-de-l-int%C3%A9rieur-un-mail-jette-des-soup%C3%A7ons-sur-l-implication-du-pr%C3%A9fet-moutouh",
+   "at": "2026-11-22T14:28:27+00:00"
   },
   {
    "source": "franceinfo",
@@ -151,13 +214,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : David Lisnard voit une primaire comme \"un moyen d'exclure les macronistes\"",
-   "desc": "Le candidat Nouvelle Energie affirme qu'il ne soutiendra d'ailleurs pas obligatoirement le vainqueur d'un possible vote pour départager les prétendants de la droite et du centre, car \"il ne veut pas se compromettre avec des gens avec lesquels il ne gouvernera pas\".",
-   "url": "https://www.franceinfo.fr/elections/presidentielle/campagne-presidentielle-david-lisnard-voit-une-primaire-comme-un-moyen-d-exclure-les-macronistes_8294525.html",
-   "at": "2026-11-22T12:58:37+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Présidentielle 2027 : la CFDT appelle à changer la date du scrutin pour éviter un second tour le 2 mai",
    "desc": "\"Le 2 mai est le pire scénario possible, en raison du risque de vives tensions au lendemain de la Fête des travailleurs\", affirme Marylise Léon, secrétaire générale de l'organisation syndicale.",
    "url": "https://www.franceinfo.fr/elections/presidentielle/campagne-presidentielle-la-secretaire-generale-de-la-cfdt-marylise-leon-appelle-a-changer-la-date-pour-eviter-un-second-tour-le-2-mai_8294624.html",
@@ -186,34 +242,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "La présidence de la COP31 fait une nouvelle proposition de compromis, la France dénonce un texte qui \"nous ramène en arrière\"",
-   "desc": "Le projet d'accord ne contient toujours pas d'appel explicite à sortir du charbon, du pétrole ou du gaz, dont l'utilisation est la principale cause du changement climatique.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/la-presidence-de-la-cop31-fait-une-nouvelle-proposition-de-compromis-la-france-denonce-un-texte-qui-nous-ramene-en-arriere_8294591.html",
-   "at": "2026-11-22T10:49:57+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Je crois que raconter l’histoire des mafias, notamment à travers le cinéma, est extrêmement utile\" : Roberto Saviano est l'invité exceptionnel du Festival du film d'Histoire de Pessac",
-   "desc": "L’écrivain italien qui a dénoncé la Camorra fait l'objet d'un documentaire, \"Gomorra, Manifeste antimafia\", et nous parle de ses goûts de cinéphile.",
-   "url": "https://www.franceinfo.fr/culture/cinema/je-crois-que-raconter-l-histoire-des-mafias-notamment-a-travers-le-cinema-est-extremement-utile-roberto-saviano-est-l-invite-exceptionnel-du-festival-du-film-d-histoire-de-pessac_8289596.html",
-   "at": "2026-11-22T10:44:52+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "On vous résume les points de discorde à la COP31 alors que les discussions sur un accord s'enlisent en Turquie",
-   "desc": "Une nouvelle proposition de compromis diffusée durant la nuit de samedi à dimanche à Antalya est jugée insuffisante par de nombreux gouvernement et ONG de défense de l'environnement.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/on-vous-resume-les-points-de-discorde-a-la-cop31-alors-que-les-discussions-sur-un-accord-s-enlisent_8294597.html",
-   "at": "2026-11-22T10:30:58+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Cisjordanie : enquête ouverte par les autorités israéliennes après des attaques de colons ; Gadi Eisenkot dénonce un « terrorisme juif »",
-   "desc": "Dans la nuit de samedi à dimanche, des véhicules et biens palestiniens ont été incendiés et vandalisés dans quatre villages de Cisjordanie, territoire palestinien occupé par Israël depuis 1967.",
-   "url": "https://www.lemonde.fr/guerre-au-proche-orient/article/2026/11/22/cisjordanie-enquete-ouverte-par-les-autorites-israeliennes-apres-des-attaques-de-colons-gadi-eisenkot-denonce-un-terrorisme-juif_6814204_6325529.html",
-   "at": "2026-11-22T10:19:56+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "La multiplication des incidents militaires fait craindre une escalade entre la Russie et l'Otan",
    "desc": "Alors que la Finlande soupçonne un hélicoptère russe d'avoir violé son espace aérien, les incidents se multiplient sur tout l'arc est-européen, de la mer Baltique à la mer Noire.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-multiplication-des-incidents-militaires-fait-craindre-une-escalade-entre-la-russie-et-l-otan_8294615.html",
@@ -225,13 +253,6 @@
    "desc": "Né dans le Bronx il y a plus de cinquante ans, le hip-hop s'est imposé comme une culture dominante et mondiale, avec la France comme deuxième foyer important de son émergence.",
    "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-il-etait-temps-le-hip-hop-en-passe-d-etre-inscrit-au-patrimoine-immateriel-de-l-unesco_8262596.html",
    "at": "2026-11-22T09:10:48+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’Ain et le Jura placés en vigilance orange pluie-inondations dimanche soir ; la Canche à des niveaux toujours élevés dans le Pas-de-Calais",
-   "desc": "Des cumuls de pluie exceptionnels sont attendus sur le Haut-Jura et les plateaux, tandis que la vigilance orange est maintenue pour la Canche, dans le Pas-de-Calais.",
-   "url": "https://www.lemonde.fr/climat/article/2026/11/22/l-ain-et-le-jura-places-en-en-vigilance-orange-pluies-inondations-dimanche-soir-la-canche-a-des-niveaux-toujours-eleves-dans-le-pas-de-calais_6814193_1652612.html",
-   "at": "2026-11-22T06:33:44+00:00"
   },
   {
    "source": "franceinfo",
@@ -248,39 +269,11 @@
    "at": "2026-11-22T06:15:27+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "En Colombie, dix ans après la signature de l’accord historique, le bilan amer de la paix avec les FARC",
-   "desc": "Signé en 2016, le texte dessinait un projet ambitieux de transformation du pays, mêlant mesures de réparation aux victimes, redistribution des terres et retour des guérilleros à la vie civile. Aujourd’hui, en plus de résultats décevants, la mise en œuvre de celui-ci pourrait pâtir des décisions du nouveau gouvernement d’extrême droite dans un contexte de recrudescence des violences.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html",
-   "at": "2026-11-22T05:30:37+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le Groupe Castel, empire discret de la bière et du vin, secoué par une guerre de pouvoir",
-   "desc": "Un âpre conflit de gouvernance tourmente le géant des boissons, au sein duquel on se dispute l’héritage, spirituel comme financier, de son charismatique fondateur, Pierre Castel. La 11ᵉ fortune française vient d’avoir 100 ans.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/22/le-groupe-castel-empire-discret-de-la-biere-et-du-vin-secoue-par-une-guerre-de-pouvoir_6814179_3234.html",
-   "at": "2026-11-22T05:00:20+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Sommet Choose France-Édition France : l'entreprise Blanc Aéro Industries doit investir 39 millions d'euros dans le pays",
    "desc": "Cette annonce intervient à l'occasion d'un sommet Choose France, qui s'ouvre lundi à la Cité internationale universitaire de Paris. Cette \"édition France\" réunira plus de 250 entreprises qui ont investi dans l'Hexagone.",
    "url": "https://www.franceinfo.fr/economie/info-france-info-sommet-choose-france-edition-france-l-entreprise-blanc-aero-industries-doit-investir-39-millions-d-euros-dans-le-pays_8294021.html",
    "at": "2026-11-22T05:00:04+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le préfet Hugues Moutouh, soupçonné d'avoir transmis des informations confidentielles au RN, demande à être relevé de ses fonctions",
-   "desc": "\"Je refuse que l’Etat, le ministère de l'Intérieur et le corps préfectoral deviennent les cibles ou les instruments de ces entreprises de déstabilisation\", a déclaré samedi le haut fonctionnaire dans un communiqué.",
-   "url": "https://www.franceinfo.fr/politique/front-national/le-prefet-hugues-moutouh-soupconne-d-avoir-transmis-au-rn-des-informations-confidentielles-sur-des-enquetes-visant-le-parti-demande-a-etre-releve-de-ses-fonctions_8294069.html",
-   "at": "2026-11-21T18:40:48+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Présidentielle 2027 : François Ruffin jette l'éponge face à \"l’impasse\" de sa campagne",
-   "desc": "À cinq mois de l’échéance, François Ruffin a annoncé, samedi, qu’il retirait sa candidature à l’élection présidentielle, prenant \"acte de l’impasse\" de sa campagne faute d’avoir réussi à imposer l’organisation d’une \"grande primaire\" de toute la gauche.",
-   "url": "https://www.france24.com/fr/france/20261121-pr%C3%A9sidentielle-prenant-acte-de-l-impasse-de-sa-campagne-fran%C3%A7ois-ruffin-retire-sa-candidature",
-   "at": "2026-11-21T17:37:20+00:00"
   }
  ]
 }

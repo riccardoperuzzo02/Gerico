@@ -4,10 +4,10 @@
     "esito": "Trovato 1 risultato: vendite al dettaglio Regno Unito di ottobre +0,7% (ONS), precedente rivisto a -0,6%. Inflazione core del Giappone non trovata (solo il dato di Tokyo). Agenda già completa con il calendario."
   },
   "lastPublish": {
-    "at": "2026-11-22T09:51:22+01:00",
-    "esito": "Giro paesi su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database; cancellate 3 storie archiviate da più di 7 giorni."
+    "at": "2026-11-22T13:19:48+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (446 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-22T07:25:15+01:00",
+  "lastRun": "2026-11-22T13:19:30+01:00",
   "marketsRun": {
     "at": "2026-11-20T18:47:00+01:00",
     "esito": "Aggiornate le chiusure del 20 novembre (Ansa): Ftse Mib -2,48% a 48.703, Dax -2,6%, Cac 40 -1,89%, Ftse 100 -1,02%, spread 109,9, Btp 4,4%, Bund 3,3%, gas Ttf +4,4% a 88 euro. Mancano Aex, Smi, Brent, euro/dollaro. Agenda: nessun dato ufficiale nuovo trovato, non toccata."
@@ -30,13 +30,13 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 38,
-    "at": "2026-11-22T07:25:15+01:00",
-    "factsChecked": 5,
+    "articlesRead": 4,
+    "at": "2026-11-22T13:19:30+01:00",
+    "factsChecked": 2,
     "factsCorrected": 0,
-    "storiesArchived": 12,
-    "storiesNew": 8,
-    "storiesUpdated": 0
+    "storiesArchived": 0,
+    "storiesNew": 0,
+    "storiesUpdated": 1
   },
   "riscrittura": {
     "at": "2026-11-20T11:11:27+01:00",

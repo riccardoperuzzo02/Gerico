@@ -1,7 +1,56 @@
 {
  "code": "US",
- "asOf": "2026-11-22T09:17:34+00:00",
+ "asOf": "2026-11-22T11:17:38+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "A Riverboat Captain Recalls a Crash on the Mississippi",
+   "desc": "Capt. Len Stewart had mere seconds to react before a 525-foot tanker crashed into the American Heritage, a riverboat in New Orleans with nearly 200 passengers on board.",
+   "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-captain.html",
+   "at": "2026-11-22T10:55:16+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
+   "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
+   "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-tanker-tick-tock.html",
+   "at": "2026-11-22T10:54:59+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Fact-Checking Stephen Miller, the New White House Chief of Staff",
+   "desc": "Mr. Miller has promoted some of the second Trump administration’s most egregious falsehoods about immigration policy, the economy and political opposition.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
+   "at": "2026-11-22T10:02:17+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Is Annie Andrews Too Real for the Senate? South Carolinians Are About to Find Out.",
+   "desc": "The pediatrician, who once compared JD Vance to the herpes virus, notched one of the most shocking upsets of the midterm elections by defeating Senator Darline Graham.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/annie-andrews-south-carolina-senate.html",
+   "at": "2026-11-22T10:02:15+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Republicans Debate Why They Lost the Midterms, and if Trump Is to Blame",
+   "desc": "A divide is emerging in the party over what caused its wipeout midterm defeats, foreshadowing a battle over how to move forward before 2028.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/republican-midterm-loss-debate-trump.html",
+   "at": "2026-11-22T10:01:55+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "NPR's Senior Podcast Challenge: Early entries we love",
+   "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
+   "at": "2026-11-22T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "He expected a small-business loan. It turned out to be a trap",
+   "desc": "America's fastest-growing source of funding for small businesses is also one of the least regulated. One man has waged a long, lonely fight to recoup its punishing cost.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
+   "at": "2026-11-22T10:00:00+00:00"
+  },
   {
    "source": "New York Times",
    "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
@@ -200,13 +249,6 @@
   },
   {
    "source": "New York Times",
-   "title": "It’s a Bill on Energy Permits, but Trump’s Pet Projects Are Part of the Debate",
-   "desc": "The pervasive presence of the president hovers over the bipartisan legislation to speed up construction of energy projects that is advancing through Congress.",
-   "url": "https://www.nytimes.com/2026/11/20/us/politics/baaja-permitting-bill-trump.html",
-   "at": "2026-11-21T15:37:45+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "The California Grandparents Accused of Killing Jonathan McKinsey, Their Son-in-Law",
    "desc": "Jonathan McKinsey, 40, was gunned down in a suburban park after spending time with his three children. His wife’s parents have been charged with murder.",
    "url": "https://www.nytimes.com/2026/11/21/us/jonathan-mckinsey-shooting-in-laws.html",
@@ -297,25 +339,11 @@
    "at": "2026-11-21T13:01:44+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Perspective: Defining 'human'",
-   "desc": "The Cambridge Dictionary has chosen the word \"human\" as its Word of the Year. Why ever might a word that entered the English language over 500 years ago be so honored?",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6041585/perspective-defining-human",
-   "at": "2026-11-21T13:00:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
    "desc": "Colder weather and low wind speeds could strain Europe’s gas market, where storage started winter at its lowest level in more than a decade.",
    "url": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
    "at": "2026-11-21T12:47:25+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Senate permitting bill speeds up renewables, divides greens over oil and gas",
-   "desc": "A permitting reform bill in the Senate could help speed the development of renewable energy projects, but it's splitting environmentalists over other provisions that help the oil and gas industry.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6046482/senate-permitting-bill-speeds-up-renewables-divides-greens-over-oil-and-gas",
-   "at": "2026-11-21T12:40:17+00:00"
   },
   {
    "source": "CBS News",
@@ -330,13 +358,6 @@
    "desc": "Airlines are opting to build giant business-class cabins with ever-more luxurious suites.",
    "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
    "at": "2026-11-21T12:00:01+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post",
-   "desc": "Republicans have targeted the Delaware Democrat, the first openly transgender member of Congress, since she came to Washington. Her party just elevated her to a key job.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
-   "at": "2026-11-21T10:02:29+00:00"
   }
  ]
 }

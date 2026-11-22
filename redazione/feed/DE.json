@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T07:17:34+00:00",
+ "asOf": "2026-11-22T09:17:34+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "News: Treffen von Donald Trump, Wladimir Putin und Xi Jinping in Shenzhen, dreckige Deals der Deutschen Bank",
+   "desc": "Wieder hat sich gezeigt, dass der US-Präsident die Demokratien nicht würdig und wirkungsvoll vertreten kann. Das ist die Lage am Sonntag.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-treffen-von-donald-trump-wladimir-putin-und-xi-jinping-in-shenzhen-dreckige-deals-der-deutschen-bank-a-9561aaa0-4107-4044-892c-0927ac523870",
+   "at": "2026-11-22T09:00:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Josef Schuster: Zentralratspräsident fordert klare Abgrenzung von Extremisten",
+   "desc": "Jüdisches Leben hat aus Sicht von Josef Schuster eine Zukunft in Deutschland. Eine Regierungsbeteiligung extremistischer Parteien könne das jedoch grundlegend verändern.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/josef-schuster-zentralrat-juden-antisemitismus-deutschland-gxe",
+   "at": "2026-11-22T08:50:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "UN-Klimakonferenz: Unmut und Uneinigkeit bei Abschluss der UN-Klimakonferenz in Antalya",
+   "desc": "COP-Präsident Murat Kurum hat vor einem Scheitern der Klimakonferenz gewarnt. Frankreichs Umweltministerin Monique Barbut nannte den Abschlusstext inakzeptabel.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-tuerkei-murat-kurum-gxe",
+   "at": "2026-11-22T08:30:23+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Wie Armut Kinder in Deutschland krank macht",
+   "desc": "Kinder aus armutsgefährdeten Familien haben ein höheres Risiko, krank zu werden - körperlich und psychisch. Dabei gibt es in Deutschland viele Hilfen. Warum kommen sie oft nicht an? Von Katharina Spreier.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/armut-kinder-familien-100.html",
+   "at": "2026-11-22T08:26:52+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
+   "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
+   "at": "2026-11-22T08:16:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Künstliche Intelligenz: Lauterbach kritisiert Regierung für zu wenig Ehrgeiz bei KI-Förderung",
+   "desc": "Deutschland spiele bei der künstlichen Intelligenz »nirgendwo wirklich führend und entscheidend« mit, kritisiert Karl Lauterbach. Er fordert mehr finanzielle Förderung.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/kuenstliche-intelligenz-karl-lauterbach-spd-deutschland-usa-china-gxe",
+   "at": "2026-11-22T08:10:29+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "US-Einwanderungsbehörde ICE: US-Gouverneur kritisiert ICE-Einsatz am Flughafen Seattle",
+   "desc": "Auf einer Fluggastbrücke bei Seattle haben ICE-Beamte zwei Menschen festgenommen. Der Gouverneur von Washington verurteilte den Einsatz und forderte ICE zum Rückzug auf.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/ice-festnahme-flughafen-seattle-bob-ferguson-gxe",
+   "at": "2026-11-22T07:53:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Robert Habeck: Habeck kritisiert fehlende geopolitische Geschlossenheit der EU",
+   "desc": "Der Grünen-Politiker Robert Habeck warnt davor, dass der Einfluss Euopas schwinden könnte. Russland, China und die USA seien dabei, »die Welt unter sich aufzuteilen«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/robert-habeck-arktis-geopolitik-usa-russland-china-gxe",
+   "at": "2026-11-22T07:49:28+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Antisemitismusbeauftragte Katharina von Schnurbein warnt vor AfD-Regierung",
+   "desc": "Kommt die AfD an die Macht, sieht die Antisemitismusbeauftragte Katharina von Schnurbein KZ-Gedenkstätten und die Erinnerungskultur in Gefahr. In jüdischen Gemeinden spüre sie Unsicherheit.",
+   "url": "https://www.spiegel.de/politik/deutschland/antisemitismusbeauftragte-katharina-von-schnurbein-warnt-vor-afd-regierung-a-88fde859-ed6b-45a0-8638-7f11fb6ebb67",
+   "at": "2026-11-22T07:13:00+00:00"
+  },
   {
    "source": "Der Spiegel",
    "title": "CDU: Annegret Kramp-Karrenbauer fordert Fokus auf Alltagsängste statt Rechtskurs",
@@ -12,14 +75,14 @@
   {
    "source": "Der Spiegel",
    "title": "Protest gegen Aufrüstung: Der schwierige Kampf der Kriegsgegner",
-   "desc": "Gegen den Bau von Rüstungsfabriken formiert sich oftmals lokaler Widerstand. Die Motive sind höchst unterschiedlich: Friedensbewegte treffen auf Israelhasser und Unternehmen, die die Konkurrenz fürchten.",
+   "desc": "Gegen den Bau von Rüstungsfabriken formiert sich oftmals lokaler Widerstand. Die Motive sind höchst unterschiedlich: Friedensbewegte treffen auf Israelkritiker und Unternehmen, die die Konkurrenz fürchten.",
    "url": "https://www.spiegel.de/politik/deutschland/protest-gegen-aufruestung-der-schwierige-kampf-der-kriegsgegner-a-fa580f9b-43db-465a-8817-79de0219b0ae",
    "at": "2026-11-22T06:28:00+00:00"
   },
   {
    "source": "Tagesschau",
    "title": "Antisemitismusbeauftragte fordert mehr Engagement gegen Judenhass",
-   "desc": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die AfD-Ideologie sei ein gefährlicher Angriff auf die Erinnerungskultur. Ihr Appell ist eindringlich.",
+   "desc": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte von Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die \"AfD-Ideologie\" sei ein gefährlicher Angriff auf die Erinnerungskultur.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
    "at": "2026-11-22T05:47:26+00:00"
   },
@@ -94,46 +157,11 @@
    "at": "2026-11-21T22:15:35+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "IGH-Urteil: Frankreich will UN-Sicherheitsrat zur Lage in Myanmar einberufen",
-   "desc": "Der IGH hatte Myanmar einen Völkermord an den Rohingya vorgeworfen und ihren Schutz gefordert. Weil die Junta sich weigert, sollen sich die UN damit befassen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/igh-urteil-myanmar-rohingya-voelkermord-un-sicherheitsrat-frankreich",
-   "at": "2026-11-21T20:54:14+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Karl Lauterbach: »Dass KI die Menschheit auslöscht, halte ich für Unsinn«",
    "desc": "Ex-Gesundheitsminister Karl Lauterbach hat gerade die wichtigsten KI-Labore in den USA und China besucht. Jetzt schlägt er Alarm: Deutschland dürfe sich nicht weiter abhängen lassen. Doch etwas macht ihm Hoffnung.",
    "url": "https://www.spiegel.de/politik/deutschland/karl-lauterbach-dass-ki-die-menschheit-ausloescht-halte-ich-fuer-unsinn-a-89b982ec-a41a-4dbc-9a4c-3834629fa058",
    "at": "2026-11-21T20:13:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Drohnenangriff auf »Sparta II«: Finnland bestätigt Drohnenangriff auf russisches Schiff in der Ostsee",
-   "desc": "Ein russischer Frachter ist im Finnischen Meerbusen von einer Drohne angegriffen worden und in Brand geraten. Finnlands Militär geht von einem ukrainischen Angriff aus.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/drohnenangriff-sparta-2-russisches-frachtschiff-ostsee-gogland-gxe",
-   "at": "2026-11-21T19:31:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Drohnenangriff auf »Sparta II«: Finnland bestätigt Drohnenangriff auf russisches Schiff in der Ostsee",
-   "desc": "Ein russischer Frachter ist im Finnischen Meerbusen von einer Drohne angegriffen worden und in Brand geraten. Finnlands Militär geht von einem ukrainischen Angriff aus.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/drohnenangriff-sparta-2-russisches-frachtschiff-ostsee-gogland-gxe",
-   "at": "2026-11-21T19:31:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sachsen-Anhalt: Ach, die Hakenkreuzflagge an der Wand? Die ist vom Vormieter",
-   "desc": "Wenn ich wohin fahre, google ich vorher, wie viele dort die AfD gewählt haben. Denn ich bin nicht weiß. Das prägt meinen Alltag. Jetzt will ich mich der Angst stellen.",
-   "url": "https://www.zeit.de/2026/50/rechte-bedrohung-sachsen-anhalt-afd-gewalt-migranten",
-   "at": "2026-11-21T19:21:06+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Berliner Linke: Schwerdtner befürwortet Fraktionsausschluss von Vanessa Emde",
-   "desc": "Die Berliner Linksfraktion entscheidet am Dienstag, ob sie die Abgeordnete Vanessa Emde ausschließt. Parteichefin Ines Schwerdtner wirft ihr eine »Egoshow« vor.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/berlin-linke-ines-schwerdtner-vanessa-emde-ausschluss-abstimmung",
-   "at": "2026-11-21T18:34:24+00:00"
   },
   {
    "source": "Tagesschau",
@@ -169,13 +197,6 @@
    "desc": "Die EU könnte Autokonzernen erlauben, auch nach 2035 neue Verbrenner und Hybride zu verkaufen. Verkehrsminister Bilger knüpft daran eine klare Erwartung: Deutschland müsse starker Produktionstandort bleiben.",
    "url": "https://www.tagesschau.de/inland/bilger-fordert-bekenntnis-der-autohersteller-zu-deutschland-100.html",
    "at": "2026-11-21T11:19:36+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Liquiditätshilfen für Schweinehalter: \"Nur ein Tropfen auf den heißen Stein\"",
-   "desc": "Schweinehaltung in Deutschland ist ein Verlustgeschäft - Liquiditätshilfen in Höhe von 25 Millionen Euro sollen jetzt den Betrieben helfen. Doch das Notfallprogramm allein wird nicht ausreichen, warnen Landwirte und Opposition. Von T. Lehning.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/schweinezucht-deutschland-exporte-100.html",
-   "at": "2026-11-21T08:26:38+00:00"
   }
  ]
 }

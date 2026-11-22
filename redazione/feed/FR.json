@@ -1,13 +1,76 @@
 {
  "code": "FR",
- "asOf": "2026-11-22T07:17:34+00:00",
+ "asOf": "2026-11-22T09:17:34+00:00",
  "items": [
   {
    "source": "franceinfo",
-   "title": "Campagne présidentielle : la secrétaire générale de la CFDT, Marylise Léon, appelle à changer la date pour éviter un second tour le 2 mai",
-   "desc": "\"Le 2 mai est le pire scénario possible, en raison du risque de vives tensions au lendemain de la fête des Travailleurs\", plaide la responsable.",
+   "title": "Campagne présidentielle : un second tour le 2 mai \"n'est pas forcément judicieux\", estime le député RN Thomas Ménagé",
+   "desc": "La CFDT et le président du Sénat, Gérard Larcher, ont appelé plus tôt dans la semaine à déplacer la date du scrutin.",
    "url": "https://www.franceinfo.fr/elections/presidentielle/direct-campagne-presidentielle-la-secretaire-generale-de-la-cfdt-marylise-leon-appelle-a-changer-la-date-pour-eviter-un-second-tour-le-2-mai_8294528.html",
-   "at": "2026-11-22T07:10:51+00:00"
+   "at": "2026-11-22T09:07:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "YouTube met en place de nouveaux espaces d’information pour les adolescents autour de la santé mentale",
+   "desc": "YouTube vient d'élargir ses espaces destinés aux adolescents de 13 à 17 ans. Désormais, lorsqu’ils feront des recherches en lien avec le harcèlement, la colère, la solitude, l'insomnie ou le stress, ils se verront conseiller des vidéos adaptées à leur âge.",
+   "url": "https://www.franceinfo.fr/replay-radio/l-il-de-julie/youtube-met-en-place-de-nouveaux-espaces-d-information-pour-les-adolescents-autour-de-la-sante-mentale_8250529.html",
+   "at": "2026-11-22T09:00:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les offres d'emploi décrochent dans les métiers les plus exposés à l'IA",
+   "desc": "Les entreprises ont-elles tendance à geler ou à renoncer à des embauches dans les métiers les plus exposés à l'Intelligence artificielle ? Sans apporter une preuve irréfutable de cause à effet, une nouvelle étude observe une chute inquiétante des offres d'emploi dans les métiers les plus automatisables.",
+   "url": "https://www.franceinfo.fr/replay-radio/c-est-mon-boulot/les-offres-d-emploi-decrochent-dans-les-metiers-les-plus-exposes-a-l-ia_8250511.html",
+   "at": "2026-11-22T09:00:03+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Quand la Chine manipule le monde\", le bluff de la Chine pour imposer son leadership sur la planète.",
+   "desc": "Cette semaine, une spécialiste des relations internationales montre comment la Chine met en scène sa puissance pour faire oublier ses faiblesses et décourager ses adversaires.",
+   "url": "https://www.franceinfo.fr/replay-radio/livre-actu/quand-la-chine-manipule-le-monde-le-bluff-de-la-chine-pour-imposer-son-leadership-sur-la-planete_8250472.html",
+   "at": "2026-11-22T09:00:02+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le Syndicat national des dermatologues \"va saisir le Conseil d'État\" sur le décret sur la médecine esthétique",
+   "desc": "Le Syndicat national des dermatologues \"va saisir le Conseil d'État\", indique ce dimanche sur France Inter la Dr Catherine Oliveres Ghouti, membre de ce syndicat qui s'oppose au nouveau décret sur la médecine esthétique.",
+   "url": "https://www.franceinfo.fr/sante/le-syndicat-national-des-dermatologues-va-saisir-le-conseil-d-etat-sur-le-decret-sur-la-medecine-esthetique_8294621.html",
+   "at": "2026-11-22T08:59:23+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Elections législatives en Israël : le centriste Gadi Eisenkot invite le parti de Benyamin Nétanyahou à des négociations de coalition",
+   "desc": "Gadi Eisenkot a un mois pour former un gouvernement, après les législatives octobre qui n'ont dégagé aucune majorité absolue, ni pour son camp ni pour celui du Premier ministre sortant.",
+   "url": "https://www.franceinfo.fr/monde/israel/elections-legislatives-en-israel/elections-legislatives-en-israel-le-centriste-gadi-eisenkot-invite-le-parti-de-benyamin-netanyahou-a-des-negociations-de-coalition_8294531.html",
+   "at": "2026-11-22T08:48:57+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Climat : la COP31 au bord de l’impasse ; le dernier texte proposé « nous ramène en arrière », dénonce la France",
+   "desc": "Face à des négociations qui s’enlisent à Antalya, la COP31 est divisée sur la captation du carbone et l’absence d’engagements clairs sur les énergies fossiles, laissant planer l’incertitude d’un accord jusqu’au bout.",
+   "url": "https://www.lemonde.fr/climat/article/2026/11/22/climat-la-cop31-au-bord-de-l-impasse-le-dernier-texte-propose-nous-ramene-en-arriere-denonce-la-france_6814199_1652612.html",
+   "at": "2026-11-22T08:48:06+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La présidence de la COP31 fait une nouvelle proposition de compromis, la France dénonce un texte qui \"nous ramène en arrière\"",
+   "desc": "Le texte ne contient toujours pas d'appel explicite à sortir du charbon, du pétrole ou du gaz fossile, dont l'utilisation est la principale cause du changement climatique.",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/la-presidence-de-la-cop31-fait-une-nouvelle-proposition-de-compromis-la-france-denonce-un-texte-qui-nous-ramene-en-arriere_8294591.html",
+   "at": "2026-11-22T08:27:45+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’historien et archéologue François-Xavier Fauvelle redonne à l’Afrique médiévale sa place dans le monde",
+   "desc": "L’historien et professeur au Collège de France a rassemblé plus de vingt ans de recherche dans cette synthèse exaustive des connaissances actuelles sur le sujet dont il est l’un des grands spécialistes.",
+   "url": "https://www.lemonde.fr/livres/article/2026/11/22/l-historien-et-archeologue-francois-xavier-fauvelle-redonne-a-l-afrique-medievale-sa-place-dans-le-monde_6814196_3260.html",
+   "at": "2026-11-22T08:00:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Déraillement d'un TER en Normandie : la SNCF défend ses agents après un premier point des enquêteurs",
+   "desc": "Le Bureau d'enquêtes sur les accidents de transport terrestre a noté vendredi que le service de gestion des circulations de SNCF Réseau n'avait pas été prévenu par les agents du train, comme le demande la procédure.",
+   "url": "https://www.franceinfo.fr/faits-divers/accident/deraillement-d-un-ter-en-normandie-la-sncf-defend-ses-agents-apres-un-premier-point-des-enqueteurs_8294534.html",
+   "at": "2026-11-22T07:33:43+00:00"
   },
   {
    "source": "franceinfo",
@@ -22,6 +85,13 @@
    "desc": "Donald Trump reçoit ce dimanche 22 novembre les 185 plus gros détenteurs de sa cryptomonnaie, le Trump Coin, lors d'un gala organisé près de Washington. Une nouvelle illustration des liens étroits entre le président américain, son enrichissement personnel et une industrie qui a largement bénéficié de sa politique.",
    "url": "https://www.franceinfo.fr/economie/bitcoin/donald-trump-recoit-les-plus-gros-detenteurs-de-sa-cryptomonnaie-qui-l-a-considerablement-enrichi_8294492.html",
    "at": "2026-11-22T06:49:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’Ain et le Jura placés en vigilance orange pluies-inondations dimanche soir ; la Canche à des niveaux toujours élevés dans le Pas-de-Calais",
+   "desc": "Des cumuls de pluie exceptionnels sont attendus sur le Haut-Jura et les plateaux, tandis que la vigilance orange est maintenue pour la Canche dans le Pas-de-Calais.",
+   "url": "https://www.lemonde.fr/climat/article/2026/11/22/l-ain-et-le-jura-places-en-en-vigilance-orange-pluies-inondations-dimanche-soir-la-canche-a-des-niveaux-toujours-eleves-dans-le-pas-de-calais_6814193_1652612.html",
+   "at": "2026-11-22T06:33:44+00:00"
   },
   {
    "source": "franceinfo",
@@ -53,10 +123,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Scandale de triche à l’IA en Corée du Sud : sous pression, le ministre de l’éducation démissionne",
-   "desc": "Quelques jours avant le Suneung, examen décisif pour les lycéens qui conditionne l’accès à l’université, les révélations sur la tricherie d’un candidat à un concours des finances publiques avaient conduit le gouvernement sud-coréen à lancer une vaste chasse aux fraudeurs.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/22/scandale-de-triche-a-l-ia-en-coree-du-sud-sous-pression-le-ministre-de-l-education-demissionne_6814190_3210.html",
-   "at": "2026-11-22T05:55:03+00:00"
+   "title": "« Très souvent, les personnes vulnérables et vieillissantes ne peuvent pas accéder aux Ehpad ni aux hébergements d’urgence » : à Nîmes, une maison pour ne plus vieillir dans la rue",
+   "desc": "Il y a un an, la première demeure destinée à accueillir les sans-abri âgés de plus de 50 ans ouvrait au cœur de la ville du Gard. Sa mission : offrir un toit et un accompagnement adapté à une population souvent exclue des autres dispositifs d’hébergement.",
+   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/22/tres-souvent-les-personnes-vulnerables-et-vieillissantes-ne-peuvent-pas-acceder-aux-ehpad-ni-aux-hebergements-d-urgence-a-nimes-une-maison-pour-ne-plus-vieillir-dans-la-rue_6814188_4500055.html",
+   "at": "2026-11-22T05:30:24+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le « racisme anti-Blancs », matrice à fantasmes utilisée par l’extrême droite",
+   "desc": "Dans une tentative d’inverser les rapports de domination, une partie de l’extrême droite française veut populariser ce concept né chez les identitaires dans les années 1970.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/22/le-racisme-anti-blancs-matrice-a-fantasmes-utilisee-par-l-extreme-droite_6814187_3224.html",
+   "at": "2026-11-22T05:30:18+00:00"
   },
   {
    "source": "Le Monde",
@@ -67,17 +144,17 @@
   },
   {
    "source": "Le Monde",
+   "title": "Comme aux Etats-Unis, les victimes françaises d’accidents de la route sont de plus en plus courtisées par les avocats",
+   "desc": "En France, l’indemnisation des accidentés de la route coûte trois fois plus cher qu’il y a vingt ans. Les victimes y gagnent, mais les assureurs dénoncent une judiciarisation malsaine.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/22/comme-aux-etats-unis-les-victimes-francaises-d-accidents-de-la-route-sont-de-plus-en-plus-courtisees-par-les-avocats_6814181_3234.html",
+   "at": "2026-11-22T05:20:07+00:00"
+  },
+  {
+   "source": "Le Monde",
    "title": "A Saint-Maur-des-Fossés, le chêne quadricentenaire résiste au promoteur immobilier",
    "desc": "Des habitants de la commune val-de-marnaise se mobilisent pour contrecarrer un projet immobilier menaçant le plus vieux chêne pédonculé d’Ile-de-France, un arbre chéri de nombreux riverains et qui fait l’objet d’une pétition ayant obtenu 85 000 signatures.",
    "url": "https://www.lemonde.fr/planete/article/2026/11/22/a-saint-maur-des-fosses-le-chene-quadricentenaire-resiste-au-promoteur-immobilier_6814180_3244.html",
    "at": "2026-11-22T05:05:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Londres, une église éthiopienne orthodoxe devenue le refuge d’une communauté exilée par la guerre",
-   "desc": "Après dix-neuf ans de lieux d’accueil temporaires et d’incertitudes, la paroisse qui constitue un point d’ancrage pour les exilés de la guerre vient de trouver dans la capitale britannique un bâtiment permanent pour sa communauté.",
-   "url": "https://www.lemonde.fr/le-monde-des-religions/article/2026/11/22/a-londres-une-eglise-ethiopienne-orthodoxe-devenue-le-refuge-d-une-communaute-exilee-par-la-guerre_6814174_6038514.html",
-   "at": "2026-11-22T05:00:11+00:00"
   },
   {
    "source": "franceinfo",
@@ -108,18 +185,18 @@
    "at": "2026-11-22T04:55:02+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Comment les malfaiteurs s'attaquent-ils aux distributeurs de billets ?",
-   "desc": "Les distributeurs de billets sont-ils trop facilement attaquables ? Dans la nuit de jeudi à vendredi dans la Drôme et l'Ardèche, deux d’entre eux ont été ciblés à une heure d’intervalle. Selon les enquêteurs, la technique porterait la marque du grand banditisme.",
-   "url": "https://www.franceinfo.fr/faits-divers/comment-les-malfaiteurs-s-attaquent-ils-aux-distributeurs-de-billets_8294111.html",
-   "at": "2026-11-21T21:32:49+00:00"
+   "source": "Le Monde",
+   "title": "« Alors que la science montre de mieux en mieux le rôle des substances chimiques dans l’épidémie de “maladies de civilisation”, l’Europe affaiblit sa réglementation »",
+   "desc": "Un rapport de l’Organisation mondiale de la santé et du Programme des Nations unies pour l’environnement montre que, pour seulement sept molécules ou famille de substances les mieux connues, le fardeau des dégâts sanitaires se monte à 1 000 milliards d’euros par an, relève, dans sa chronique, Stéphane Foucart, journaliste au « Monde ».",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/22/alors-que-la-science-montre-de-mieux-en-mieux-le-role-des-substances-chimiques-dans-l-epidemie-de-maladies-de-civilisation-l-europe-affaiblit-sa-reglementation_6814145_3232.html",
+   "at": "2026-11-22T04:50:09+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Bahreïn accuse l’Iran d’avoir frappé l’un de ses sites industriels ; Téhéran affirme riposter à des tirs américains",
-   "desc": "Plus tôt samedi, l’Iran avait déclaré avoir intercepté un drone américain visant l’île de Qechm, dans le détroit d’Ormuz. Les gardiens de la révolution ont dit avoir visé à plusieurs reprises cette semaine des installations américaines à Bahreïn.",
-   "url": "https://www.lemonde.fr/guerre-au-proche-orient/article/2026/11/21/bahrein-accuse-l-iran-d-avoir-frappe-l-un-de-ses-sites-industriels_6814069_6325529.html",
-   "at": "2026-11-21T21:31:47+00:00"
+   "title": "Une balade à Rambouillet, du château des présidents aux trains miniatures",
+   "desc": "Le destin de la commune des Yvelines est étroitement lié à l’histoire de France, en particulier à celle de la République. En bordure de sa majestueuse forêt domaniale, elle valorise aujourd’hui son glorieux passé.",
+   "url": "https://www.lemonde.fr/m-styles/article/2026/11/22/une-balade-a-rambouillet-du-chateau-des-presidents-aux-trains-miniatures_6814142_4497319.html",
+   "at": "2026-11-22T04:00:18+00:00"
   },
   {
    "source": "franceinfo",
@@ -144,20 +221,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"On est fatigué, (...) c'est épuisant, stressant\" : le désarroi des habitants du Pas-de-Calais après des inondations à répétition",
-   "desc": "Les habitants de 38 communes autour du Montreuillois et du bassin de la Canche, dans le Pas-de-Calais, ont du mal à cacher leur lassitude. Beaucoup d’entre eux se retrouvent une nouvelle fois victimes des inondations et s’interrogent pour l’avenir.",
-   "url": "https://www.franceinfo.fr/france/hauts-de-france/pas-de-calais/on-est-fatigue-c-est-epuisant-stressant-le-desarroi-des-habitants-du-pas-de-calais-apres-des-inondations-a-repetition_8294126.html",
-   "at": "2026-11-21T20:21:03+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Israël : Gadi Eisenkot invite le parti de Benyamin Nétanyahou à des négociations de coalition",
-   "desc": "M. Eisenkot a jusqu’au mois prochain pour former un gouvernement, à la suite des législatives de la fin d’octobre, qui n’ont dégagé aucune majorité absolue, ni pour son camp ni pour celui du premier ministre sortant.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/21/israel-gadi-eisenkot-invite-le-parti-de-benyamin-netanyahou-a-des-negociations-de-coalition_6814066_3210.html",
-   "at": "2026-11-21T20:00:05+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "L'ex-président brésilien Jair Bolsonaro en soins intensifs pour une occlusion intestinale",
    "desc": "L'ancien dirigeant souffre de séquelles d'un coup de couteau au ventre reçu pendant la campagne électorale de 2018 et a été opéré à plusieurs reprises.",
    "url": "https://www.franceinfo.fr/monde/bresil/l-ex-president-bresilien-jair-bolsonaro-en-soins-intensifs-pour-une-occlusion-intestinale_8294123.html",
@@ -171,11 +234,11 @@
    "at": "2026-11-21T19:23:01+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Même si les démocrates américains enquêtent sur les malversations de Trump et ses proches, il ne se passera rien »",
-   "desc": "Malgré leur victoire aux midterms, les démocrates doivent s’attendre à deux années « peu productives » avant les élections présidentielles de 2028, estime, dans une tribune au « Monde », Anne Deysine, spécialiste des Etats-Unis, qui rappelle qu’ils peuvent néanmoins s’inspirer d’une vieille recette des républicains.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/21/meme-si-les-democrates-americains-enquetent-sur-les-malversations-de-trump-et-ses-proches-il-ne-se-passera-rien_6814061_3232.html",
-   "at": "2026-11-21T19:00:02+00:00"
+   "source": "franceinfo",
+   "title": "\"Je serai le candidat de la liberté de pensée, de parler, de dire ce que vous voyez\", clame Eric Zemmour lors de son premier meeting de campagne présidentielle",
+   "desc": "Le président du parti d'extrême droite s'est exprimé devant ses partisans au Zenith de Toulon.",
+   "url": "https://www.franceinfo.fr/elections/je-serai-le-candidat-de-la-liberte-de-pensee-de-parler-de-dire-ce-que-vous-voyez-clame-eric-zemmour-lors-de-son-premier-meeting-de-campagne-presidentielle_8294024.html",
+   "at": "2026-11-21T18:59:46+00:00"
   },
   {
    "source": "franceinfo",
@@ -186,24 +249,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "La Finlande soupçonne un hélicoptère russe d'avoir violé son espace aérien",
-   "desc": "L'appareil a pénétré jusqu'à 4,1 km à l'intérieur du territoire finlandais, a précisé le ministère de la Défense.",
-   "url": "https://www.franceinfo.fr/monde/russie/la-finlande-soupconne-un-helicoptere-russe-d-avoir-viole-son-espace-aerien_8293799.html",
-   "at": "2026-11-21T18:36:51+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les Etats-Unis déclassifient de nouveaux documents concernant des ovnis et des phénomènes \"anormaux\"",
-   "desc": "Parmi cette quarantaine de documents figurent des extraits filmés sur des plateformes militaires américaines au Moyen-Orient.",
-   "url": "https://www.franceinfo.fr/monde/usa/les-etats-unis-declassifient-de-nouveaux-documents-concernant-des-ovnis-et-des-phenomenes-anormaux_8293832.html",
-   "at": "2026-11-21T18:12:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Les explosions ont secoué la mer autour de moi\" : le Britannique Lewis Pugh a nagé dans le détroit d'Ormuz pour alerter sur l'impact environnemental de la guerre",
-   "desc": "Sur des photos publiées sur les réseaux sociaux par le sportif, figure notamment un navire en feu, vraisemblablement après une attaque survenue dans cette zone au cœur de la guerre qui oppose l'Iran et les Etats-Unis depuis février.",
-   "url": "https://www.franceinfo.fr/monde/moyen-orient/les-explosions-ont-secoue-la-mer-autour-de-moi-un-britannique-a-traverse-le-detroit-d-ormuz-pour-alerter-sur-l-impact-environnemental-de-la-guerre_8293931.html",
-   "at": "2026-11-21T18:05:06+00:00"
+   "title": "François Ruffin retire sa candidature à l'élection présidentielle et souhaite \"bonne campagne\" aux \"candidats de gauche encore en lice\"",
+   "desc": "Dans un communiqué posté sur le réseau social X, le député a déclaré samedi qu'il prenait \"acte de l'impasse\" de sa campagne, faute d'avoir réussi à imposer l'organisation d'une \"grande primaire\" de toute la gauche.",
+   "url": "https://www.franceinfo.fr/elections/francois-ruffin-retire-sa-candidature-a-l-election-presidentielle-et-souhaite-bonne-campagne-aux-candidats-de-gauche-encore-en-lice_8294003.html",
+   "at": "2026-11-21T17:56:33+00:00"
   },
   {
    "source": "franceinfo",
@@ -213,13 +262,6 @@
    "at": "2026-11-21T17:56:33+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Roberto Saviano, auteur de « Gomorra » : « Le suicide de l’ancien chef de la police italienne Gianni De Gennaro est un choc immense »",
-   "desc": "Ce suicide, le 21 novembre, intervient quelques jours après sa mise en examen pour « détournement d’enquête » par le parquet de Caltanissetta, en Sicile, qui l’accuse d’avoir brouillé les pistes dans les investigations sur l’assassinat du juge antimafia Paolo Borsellino, le 19 juillet 1992. Pour l’écrivain italien, cela « pourrait condamner tout espoir de connaître un jour l’entière vérité » sur cette affaire mais aussi sur le meurtre d’un autre juge antimafia, Giovanni Falcone.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/21/roberto-saviano-auteur-de-gomorra-le-suicide-de-l-ancien-chef-de-la-police-italienne-gianni-de-gennaro-est-un-choc-immense_6814054_3210.html",
-   "at": "2026-11-21T17:44:51+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Présidentielle : prenant \"acte de l’impasse\" de sa campagne, François Ruffin retire sa candidature",
    "desc": "À cinq mois de l’échéance, François Ruffin a annoncé samedi qu’il retirait sa candidature à l’élection présidentielle, prenant \"acte de l’impasse\" de sa campagne faute d’avoir réussi à imposer l’organisation d’une \"grande primaire\" de toute la gauche.",
@@ -227,32 +269,11 @@
    "at": "2026-11-21T17:37:20+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Écosse : un Français qui voulait s'assoir sur une relique royale ancestrale exposée à Perth plaide coupable pour des faits de dégradation volontaire",
-   "desc": "En 2025, cet homme de 36 ans avait attaqué à coups de marteau une vitrine contenant la \"Pierre du Destin\", un bloc de grès utilisé lors du couronnement des rois en Écosse. Il sera fixé sur son sort le 6 janvier.",
-   "url": "https://www.franceinfo.fr/culture/patrimoine/ecosse-un-francais-qui-voulait-s-assoir-sur-une-relique-royale-ancestrale-exposee-a-perth-plaide-coupable-pour-des-faits-de-degradation-volontaire_8293961.html",
-   "at": "2026-11-21T17:18:07+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Présidentielle 2027 : François Ruffin renonce à sa candidature « face au risque » de l’arrivée de l’extrême droite au pouvoir",
    "desc": "Le député de la Somme n’apporte son soutien à aucun candidat et souhaite « bon courage et bonne campagne » aux « candidats de gauche encore en lice », sans les citer, « pour porter un projet à vocation majoritaire » face à un Rassemblement national « aux portes du pouvoir ».",
    "url": "https://www.lemonde.fr/politique/article/2026/11/21/presidentielle-2027-francois-ruffin-renonce-a-sa-candidature-face-au-risque-de-l-arrivee-de-l-extreme-droite-au-pouvoir_6814051_823448.html",
    "at": "2026-11-21T17:13:30+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Faire l’amour en se faisant la guerre : comment les adeptes du « hate sex » lient colère et coït",
-   "desc": "« Nos émotions : la colère ». Une sexualité épanouie, synonyme de complicité avec son ou sa partenaire, semble a priori incompatible avec la colère, qui rend agressif et égoïste. Et pourtant… livres et films témoignent qu’il existe bel et bien des amateurs de « sexe enragé ».",
-   "url": "https://www.lemonde.fr/intimites/article/2026/11/21/faire-l-amour-en-se-faisant-la-guerre-comment-les-adeptes-du-hate-sex-lient-colere-et-coit_6814049_6190330.html",
-   "at": "2026-11-21T17:00:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Mobilité des jeunes, commerce, quotas d'émissions carbone… Ce que prévoient les accords conclus entre le Royaume-Uni et l'Union européenne",
-   "desc": "Cette nouvelle alliance, destinée à rapprocher les deux côtés de la Manche après les années houleuses du Brexit, a été qualifiée vendredi de \"tournant\" par la Commission européenne.",
-   "url": "https://www.franceinfo.fr/monde/royaume-uni/mobilite-des-jeunes-commerce-quotas-d-emissions-carbone-ce-que-prevoient-les-accords-conclus-entre-le-royaume-uni-et-l-union-europeenne_8293715.html",
-   "at": "2026-11-21T16:48:41+00:00"
   },
   {
    "source": "franceinfo",
@@ -267,20 +288,6 @@
    "desc": "Les opposants à ce texte le jugent dangereux pour les droits fondamentaux. La gauche sénatoriale a annoncé qu'elle allait saisir le Conseil constitutionnel pour faire barrage à sa promulgation.",
    "url": "https://www.franceinfo.fr/faits-divers/police/nombre-de-tirs-enquetes-lien-de-confiance-les-questions-que-pose-la-loi-sur-la-presomption-d-usage-legal-des-armes-par-les-forces-de-l-ordre_8293529.html",
    "at": "2026-11-21T15:56:32+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Genève, la communauté internationale échoue à interdire les robots tueurs",
-   "desc": "Alors que la menace des systèmes d’armes létales autonomes, désormais assistées par l’intelligence artificielle, se fait chaque jour plus précise dans les zones de combat, la Russie, les Etats-Unis et Israël se sont opposés à l’ouverture de négociations pour un traité international sur ce type d’armes.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/21/a-geneve-la-communaute-internationale-echoue-a-interdire-les-robots-tueurs_6814012_3210.html",
-   "at": "2026-11-21T12:36:49+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Syndicats, jeunesse et gilets jaunes un peu moins mobilisés pour le sixième samedi de manifestation",
-   "desc": "Pour la sixième semaine consécutive, syndicats, organisations de jeunesse et Gilets jaunes ont manifesté contre la vie chère, dans un contexte de colère sociale devenue européenne mais qui commence à s'essouffler en France. Le ministère de l'Intérieur a dénombré au total 82 500 manifestants dans l'Hexagone, dont 21 500 à Paris. La CGT parle de son côté de 150 000 manifestants dans le pays, 45 000 dans la capitale.",
-   "url": "https://www.france24.com/fr/france/20261121-en-direct-acte-vi-de-la-mobilisation-pour-la-jeunesse-et-contre-la-vie-ch%C3%A8re",
-   "at": "2026-11-21T08:23:49+00:00"
   }
  ]
 }

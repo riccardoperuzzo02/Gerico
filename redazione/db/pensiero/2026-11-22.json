@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-22",
+ "asOf": "2026-11-22T08:42:33+01:00",
+ "title": "Washington ha paura della Cina, ma solo quando le conviene",
+ "tema": "Trump, Nvidia e la Cina",
+ "summary": "Trump vuole tassare i data center all'estero per paura di Pechino e intanto chiede di riprendere Huang. La sicurezza nazionale americana si decide caso per caso, e i mercati pagano l'incertezza.",
+ "text": "Venerdì 20 novembre, con le Borse aperte, Donald Trump ha detto due cose. La prima: le grandi aziende tecnologiche che costruiranno data center all'estero saranno «tassate pesantemente», perché secondo lui la Cina se li prenderebbe tutti. La seconda: sarebbe felice di vedere Jensen Huang avere «una seconda possibilità» alla guida di Nvidia. Huang, per il presidente, è «un brav'uomo» che «ha preso decisioni sbagliate». Basta che chieda scusa.\n\nLe decisioni sbagliate sono note. Huang si è dimesso il 12 novembre dopo le notizie sul suo rapporto con Alice Huang, che le autorità americane sospettano di essere una spia di Pechino. La Cina lo nega, e secondo le cronache nemmeno i servizi americani ne sono sicuri. Alice Huang ha guidato Megaspeed, cliente di Nvidia a Singapore, sotto indagine americana dal 2024 per possibili violazioni dei controlli sull'export di chip verso la Cina; Megaspeed dice di aver svolto «attività lecite». Riassumendo: un data center in Europa o in Asia è un regalo a Pechino. Questo caso è una questione di buone maniere.\n\nNon è la prima volta che la linea cambia con l'interlocutore. Il 7 agosto 2025 Trump scrisse che l'amministratore delegato di Intel, Lip-Bu Tan, era «molto in conflitto» per i suoi investimenti in aziende cinesi e doveva dimettersi «immediatamente». «Non c'è altra soluzione», aggiunse. Pochi giorni dopo Tan andò alla Casa Bianca. Il 22 agosto il presidente annunciò che lo Stato prendeva circa il 10% di Intel, pagato in buona parte con contributi pubblici già assegnati e non ancora versati, e raccontò l'incontro così: Tan era entrato volendo tenersi il posto ed era uscito dando al governo 10 miliardi. Tan restò al suo posto. La soluzione, alla fine, c'era.\n\nNello stesso mese Nvidia e AMD accettarono di versare al governo il 15% dei ricavi dei chip venduti in Cina, in cambio delle licenze di esportazione. Un accordo senza precedenti noti. Ad aprile quei chip erano stati fermati, a luglio di nuovo permessi, ad agosto tassati. Il rischio per la sicurezza era lo stesso. Cambiava il prezzo.\n\nOggi la stessa amministrazione parla con due voci. Il segretario al Tesoro Scott Bessent, secondo le cronache, ha chiesto a Nvidia un amministratore delegato esterno e ha dato al consiglio dieci giorni per dimostrare che rispetta i controlli sull'export. Il senatore repubblicano Tim Scott vuole Huang in commissione il 3 dicembre. Il presidente, invece, lo rivuole al comando. A dire di no è rimasto il presidente del consiglio d'amministrazione, Harvey Jones: le dimissioni sono state accettate all'unanimità, nessun reintegro. In questo autunno, un consiglio d'amministrazione che contraddice la Casa Bianca è già una notizia.\n\nIntanto i conti li fanno i mercati. Venerdì Nvidia ha perso circa il 13%, dopo che due fonti hanno parlato di un esame della Sec sulla sua contabilità (né l'autorità né l'azienda hanno confermato, e un'indagine non è una prova). Il Nasdaq ha chiuso a meno 5,37%. Prima che aprisse New York, le Borse europee avevano già bruciato circa 370 miliardi, con Milano a meno 2,48%. Gli analisti parlano di sfiducia nell'intelligenza artificiale e di bolla. Ma c'è anche un'incertezza che non sta in nessun bilancio: chi compra un'azienda di chip deve stimare gli ordini, i margini e l'umore del presidente. Il terzo dato cambia da un post all'altro.\n\nL'Europa guarda come se fosse una faccenda americana. Non lo è. Le regole sull'export dei chip decidono cosa arriva nei nostri data center, e la minaccia di tassare chi costruisce all'estero tocca anche i progetti europei che contano su capitali americani. Una dottrina di sicurezza che si applica caso per caso non si può nemmeno negoziare: si può solo sperare di stare dalla parte giusta il giorno giusto.\n\nHuang sostiene da anni che vendere ai clienti cinesi serve a mantenere la leadership tecnologica americana. Molti parlamentari temono che serva all'esercito di Pechino. Washington non ha ancora deciso chi dei due abbia ragione. Ha deciso chi lo decide.",
+ "stories": [
+  "2026-11-21-us-nvidia-sec-contabilita",
+  "2026-11-21-us-wall-street-nasdaq-crollo",
+  "2026-11-11-nvidia-huang-cina"
+ ],
+ "bersaglio": "Trump e l'amministrazione americana: la sicurezza nazionale verso la Cina applicata caso per caso (Nvidia, Intel, chip)",
+ "sources": [
+  {
+   "name": "Axios",
+   "url": "https://www.axios.com/2025/08/07/trump-intel-ceo"
+  },
+  {
+   "name": "NPR",
+   "url": "https://www.npr.org/2025/08/22/nx-s1-5509673/trump-says-us-government-will-take-stake-intel"
+  },
+  {
+   "name": "Al Jazeera",
+   "url": "https://www.aljazeera.com/economy/2025/8/11/nvidia-amd-to-pay-15-of-china-chip-sales-to-us-government-reports-say"
+  }
+ ]
+}

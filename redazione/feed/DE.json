@@ -1,13 +1,83 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T13:17:34+00:00",
+ "asOf": "2026-11-22T15:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Sozialverband: VdK lehnt Gebühr gegen KI-Schriftsätze vor Sozialgerichten ab",
+   "desc": "KI-generierte Klagen überfordern die Sozialgerichte. Die Justizminister wollen deswegen eine Gebühr erheben. Der Sozialverband VdK lehnt das ab und fordert Alternativen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/sozialgerichte-vdk-gebuehr-eilverfahren-christian-heinz-gxe",
+   "at": "2026-11-22T15:07:20+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bürokratie in Deutschland: Warum viele Regeln unverzichtbar bleiben - Meinung",
+   "desc": "Ständig versprechen Politiker, das Leben für Bürger und Unternehmer einfacher zu machen. Dabei sind viele Gesetze und Regelungen unverzichtbar.",
+   "url": "https://www.spiegel.de/politik/deutschland/buerokratie-in-deutschland-warum-viele-regeln-unverzichtbar-bleiben-meinung-a-629821a3-ef85-4bed-8d72-1fabc074250d",
+   "at": "2026-11-22T15:05:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "UN-Klimakonferenz : Politiker zeigen sich nach gescheiterter Klimakonferenz enttäuscht",
+   "desc": "Die Weltklimakonferenz in Antalya ist an einer gemeinsamen Abschlusserklärung gescheitert. UN-Generalsekretär António Guterres kritisiert die fossile Brennstoffindustrie.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-greenpeace-martin-kaiser-eu-gxe",
+   "at": "2026-11-22T14:58:35+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Silvester: Kliniken, Feuerwehr und Polizei fordern Böllerverbot noch dieses Jahr",
+   "desc": "Berliner Einsatzkräfte wollen eine erneute Überforderung durch Feuerwerksunfälle verhindern. Für ein Böllerverbot braucht Berlin aber noch eine Rückmeldung vom Bund.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/boellerverbot-berlin-polizei-feuerwehr-sprengstoffrecht-iris-spranger-gxe",
+   "at": "2026-11-22T14:19:50+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundesregierung: Merz würde bei Neustart als Bundeskanzler »Erwartungen dämpfen«",
+   "desc": "Der Bundeskanzler zeigt sich weiter zufrieden mit dem Koalitionsvertrag. »Wenn du in der Politik nur beliebt sein willst, dann machst du nicht alles richtig«, sagt Merz.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/friedrich-merz-bundeskanzler-sat1-frag-mal-den-kanzler-gxe",
+   "at": "2026-11-22T14:16:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rhetorik der Ausgrenzung: Einübung in die Unbarmherzigkeit",
+   "desc": "Was früher nur von den radikalen Rändern zu hören war, ist längst im politischen Mainstream angekommen. Doch die Sprache der Rechtsradikalen erzieht zur Grausamkeit.",
+   "url": "https://www.zeit.de/2026/50/rhetorik-rechtsextremismus-oesterreich-politik-medien",
+   "at": "2026-11-22T14:12:54+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Lewis Pugh: Brite schwimmt aus Protest gegen Irankrieg durch Straße von Hormus",
+   "desc": "Der britische Langstreckenschwimmer Lewis Pugh ist 15 Kilometer durch die Straße von Hormus geschwommen. Er will damit vor den ökologischen Folgen des Irankriegs warnen.",
+   "url": "https://www.zeit.de/wissenschaft/umwelt/2026-11/lewis-pugh-strasse-von-hormus-langstreckenschwimmen-umweltverschmutzung-gxe",
+   "at": "2026-11-22T14:02:14+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Femizide: Stefanie Hubig will Mordparagrafen verschärfen",
+   "desc": "»Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden«, sagt Justizministerin Hubig. Dazu hat sie jetzt einen Gesetzentwurf vorgelegt.",
+   "url": "https://www.spiegel.de/politik/deutschland/femizide-stefanie-hubig-will-mordparagrafen-verschaerfen-a-c6d29e6d-8edb-4651-8128-ef74725623e4",
+   "at": "2026-11-22T13:37:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "NRW-Innenminister Herbert Reul gibt Update über Gesundheitszustand",
+   "desc": "Rund sechs Wochen nach seinem Sturz meldet sich Herbert Reul auf Instagram zu Wort. Nordrhein-Westfalens Innenminister erzählt dort, wie anstrengend die Reha sei – und wie er dabei vorankomme.",
+   "url": "https://www.spiegel.de/politik/deutschland/nrw-innenminister-herbert-reul-gibt-update-ueber-gesundheitszustand-a-1508172b-e030-493e-8b8a-03706f84c6bd",
+   "at": "2026-11-22T13:24:00+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
    "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
    "at": "2026-11-22T12:00:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "COP 31: Weltklimakonferenz scheitert an gemeinsamer Abschlusserklärung",
+   "desc": "Die 31. Weltklimakonferenz hat sich nicht auf eine gemeinsame Abschlusserklärung geeinigt. Es seien keine Beschlüsse gefasst ​worden, sagte Konferenzpräsident Kurum.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/31-weltklimakonferenz-keine-einigung-cop-antalya",
+   "at": "2026-11-22T11:49:21+00:00"
   },
   {
    "source": "Die Zeit",
@@ -94,20 +164,6 @@
    "at": "2026-11-22T08:10:29+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "US-Einwanderungsbehörde ICE: US-Gouverneur kritisiert ICE-Einsatz am Flughafen Seattle",
-   "desc": "Auf einer Fluggastbrücke bei Seattle haben ICE-Beamte zwei Menschen festgenommen. Der Gouverneur von Washington verurteilte den Einsatz und forderte ICE zum Rückzug auf.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/ice-festnahme-flughafen-seattle-bob-ferguson-gxe",
-   "at": "2026-11-22T07:53:59+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Robert Habeck: Habeck kritisiert fehlende geopolitische Geschlossenheit der EU",
-   "desc": "Der Grünen-Politiker Robert Habeck warnt davor, dass der Einfluss Europas schwinden könnte. Russland, China und die USA seien dabei, »die Welt unter sich aufzuteilen«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/robert-habeck-arktis-geopolitik-usa-russland-china-gxe",
-   "at": "2026-11-22T07:49:28+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Antisemitismusbeauftragte Katharina von Schnurbein warnt vor AfD-Regierung",
    "desc": "Kommt die AfD an die Macht, sieht die Antisemitismusbeauftragte Katharina von Schnurbein KZ-Gedenkstätten und die Erinnerungskultur in Gefahr. In jüdischen Gemeinden spüre sie Unsicherheit.",
@@ -136,41 +192,6 @@
    "at": "2026-11-22T05:47:26+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "COP31: Weltklimakonferenz nähert sich laut Präsident einem Konsens",
-   "desc": "Nach zähen Verhandlungen haben Australien und die Türkei in der Nacht einen neuen Abschlusstext vorgelegt. Er enthält kein Bekenntnis zur Abkehr von fossilen Energien.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-antalya-einigung-tuerkei-australien-fossile-brennstoffe-finanzhilfe",
-   "at": "2026-11-22T05:41:55+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gewalt gegen Frauen: Bundesjustizministerin will Femizid als Mord erfassen",
-   "desc": "Stefanie Hubig stößt weitere Gesetze zum Schutz von Frauen an. Ihr neuester Plan soll es strafrechtlich leichter machen, Femizide als Mord einzustufen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/mordparagraf-stephanie-hubig-femizid-strafrecht-gesetzesentwurf",
-   "at": "2026-11-22T05:19:53+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Deutsche Wirtschaft: Jobs in Gefahr: VW streicht Zehntausende Stellen – wer noch?",
-   "desc": "Seit 2019 hat die deutsche Industrie fast eine halbe Million Arbeitsplätze verloren. Wie wird es künftig weitergehen? Und: Wer folgt auf António Guterres?",
-   "url": "https://www.zeit.de/politik/2026-11/deutsche-wirtschaft-stellenabbau-unternehmen-nachrichtenpodcast",
-   "at": "2026-11-22T04:59:47+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krimbrücke: Der Kampf um die Brücke erzählt sehr viel – und trügt eben doch",
-   "desc": "Dass die Ukraine Putins Krimbrücke so stark getroffen hat, ist ein Wirkungstreffer. Denn für Brücken gelten in Kriegen eigene Gesetze. Es geht um Strategie und Symbolik.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/krim-bruecke-ukraine-krieg-russland-angriffe-symbolik",
-   "at": "2026-11-22T04:44:35+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Irankrieg: Bahrain meldet Angriffe aus dem Iran",
-   "desc": "Der mit den USA verbündete Golfstaat Bahrain steht unter Beschuss, eine Industrieanlage brennt. In der Straße von Hormus wurden wieder Frachter angegriffen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/2026-05/iran-krieg-donald-trump-hormus-live",
-   "at": "2026-11-22T02:46:20+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Karl Lauterbach: »Dass KI die Menschheit auslöscht, halte ich für Unsinn«",
    "desc": "Ex-Gesundheitsminister Karl Lauterbach hat gerade die wichtigsten KI-Labore in den USA und China besucht. Jetzt schlägt er Alarm: Deutschland dürfe sich nicht weiter abhängen lassen. Doch etwas macht ihm Hoffnung.",
@@ -190,13 +211,6 @@
    "desc": "Björn Höcke bleibt Chef der Thüringer AfD und sich treu: In einer Rede attackierte der radikale Politiker den Verfassungsschutz und die Reform der Geheimdienste.",
    "url": "https://www.spiegel.de/politik/deutschland/bjoern-hoecke-wiederwahl-als-thueringer-afd-chef-a-e44dee38-ea82-4269-8b15-eb3406dfe402",
    "at": "2026-11-21T15:27:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Franziska Brantner: Grünenchefin kritisiert »Söder-Geschenke« zulasten Jugend",
-   "desc": "Grünenchefin Brantner hat sich an die Seite der protestierenden Jugendlichen gestellt. Der Regierungskoalition warf sie eine »grausame Politik« vor und forderte mehr Geld für Schulen.",
-   "url": "https://www.spiegel.de/politik/deutschland/franziska-brantner-gruenenchefin-kritisiert-soeder-geschenke-zulasten-jugend-a-a69c41bb-868d-4c29-bc4c-4fa4860f82fc",
-   "at": "2026-11-21T15:07:00+00:00"
   }
  ]
 }

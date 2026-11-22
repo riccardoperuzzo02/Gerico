@@ -1,7 +1,77 @@
 {
  "code": "US",
- "asOf": "2026-11-22T19:17:35+00:00",
+ "asOf": "2026-11-22T21:17:33+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Delta Delays Flights as Thanksgiving Travel Begins, After Automated System Falters",
+   "desc": "The system that faltered is used to calculate the weight and balance of departing flights. The disruptions came after a nationwide ground stop that canceled thousands of flights last weekend.",
+   "url": "https://www.nytimes.com/2026/11/22/us/delta-flight-delays-system-outage.html",
+   "at": "2026-11-22T21:14:10+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Ossoff's broad and decisive Senate win fuels 2028 speculation",
+   "desc": "Democratic Sen. Jon Ossoff's commanding victory in Georgia relied on a broad coalition, and this is fueling 2028 presidential interest in him, even though he says he'll be in the Senate for the next six years.",
+   "url": "https://www.cbsnews.com/news/jon-ossoff-2028-presidential-speculation-after-georgia-win/",
+   "at": "2026-11-22T21:06:12+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army plans to carry out detonation at Iowa plant despite indefinite pause",
+   "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
+   "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
+   "at": "2026-11-22T21:03:02+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Delta Air Lines hit with delays after baggage network system issue",
+   "desc": "The Delta Air Lines delays are most impacting flights in and out of Hartsfield-Jackson Atlanta International Airport in Georgia.",
+   "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/",
+   "at": "2026-11-22T21:01:05+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
+   "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
+   "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
+   "at": "2026-11-22T20:38:20+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Bigfoot Left a Paper Trail That Everyone Can See Now",
+   "desc": "This fall, the U.S. Forest Service quietly released records about the creature of lore.",
+   "url": "https://www.nytimes.com/2026/11/21/us/bigfoot-government-documents-released.html",
+   "at": "2026-11-22T20:34:20+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "2 New Jersey Women Indicted in Faked Anti-Trump Slashing Attack",
+   "desc": "Natalie Greene, who worked for Representative Jeff Van Drew, a Republican, falsely claimed she had been attacked at a nature preserve in 2025, officials said.",
+   "url": "https://www.nytimes.com/2026/11/22/us/van-drew-employee-indicted-attack-hoax.html",
+   "at": "2026-11-22T20:19:58+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Democrat Chuck Hubbard defeats Rep. Virginia Foxx in House race",
+   "desc": "Chuck Hubbard defeated Rep. Virginia Foxx, CBS News projects, adding to Democrats' sizable majority in the House next year.",
+   "url": "https://www.cbsnews.com/news/democrat-chuck-hubbard-defeats-gop-rep-virginia-foxx-north-carolina/",
+   "at": "2026-11-22T20:03:39+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Natural gas pipeline fire in Alabama lights up night sky",
+   "desc": "Photos and videos posted on social media appeared to show flames rising dozens of yards above the trees near Ward, Alabama, with smoke billowing into the air.",
+   "url": "https://www.cbsnews.com/news/natural-gas-pipeline-fire-ward-alabama/",
+   "at": "2026-11-22T19:59:32+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Full transcript of \"Face the Nation with Margaret Brennan,\" Nov. 22, 2026",
+   "desc": "On this \"Face the Nation with Margaret Brennan\" broadcast, Treasury Secretary Scott Bessent and House Minority Leader Hakeem Jeffries join Margaret Brennan.",
+   "url": "https://www.cbsnews.com/news/full-transcript-of-face-the-nation-with-margaret-brennan-nov-22-2026/",
+   "at": "2026-11-22T19:32:22+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
@@ -43,13 +113,6 @@
    "desc": "The first lady, who has little experience in international affairs, developed back channels to key figures on both sides of the conflict through her longtime agent.",
    "url": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
    "at": "2026-11-22T18:12:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Delta Air Lines hit with delays amid baggage network system issue",
-   "desc": "The Delta Air Lines delays are most impacting flights in and out of Hartsfield-Jackson Atlanta International Airport in Georgia.",
-   "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/",
-   "at": "2026-11-22T17:54:23+00:00"
   },
   {
    "source": "CBS News",
@@ -98,14 +161,7 @@
    "title": "Is Annie Andrews Too Real for the Senate? South Carolinians Are About to Find Out.",
    "desc": "The pediatrician, who once compared JD Vance to the herpes virus, notched one of the most shocking upsets of the midterm elections by defeating Senator Darline Graham.",
    "url": "https://www.nytimes.com/2026/11/22/us/politics/annie-andrews-south-carolina-senate.html",
-   "at": "2026-11-22T16:56:08+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "FAA Says All Delta Flights Through Atlanta Delayed as Automated System Falters",
-   "desc": "The system facing problems is used to calculate the weight and balance of departing flights. The disruptions come after a nationwide ground stop that canceled thousands of flights last weekend.",
-   "url": "https://www.nytimes.com/2026/11/22/us/delta-flight-delays-system-outage.html",
-   "at": "2026-11-22T16:45:41+00:00"
+   "at": "2026-11-22T16:56:09+00:00"
   },
   {
    "source": "NPR",
@@ -248,13 +304,6 @@
    "at": "2026-11-22T13:25:47+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Army plans to carry out detonation at Iowa plant despite indefinite pause",
-   "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
-   "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
-   "at": "2026-11-22T13:13:02+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Medicare looks a bit different in 2027, so don't miss open enrollment",
    "desc": "Open enrollment for Medicare runs through Dec. 7, and there are a few different pitfalls people should watch out for this year. Your drug plan or Medicare Advantage plan could be changing a lot.",
@@ -298,24 +347,17 @@
   },
   {
    "source": "NPR",
-   "title": "NPR's Senior Podcast Challenge: Early entries we love",
-   "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
-   "at": "2026-11-22T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "He expected a small-business loan. He got a 7-year nightmare",
    "desc": "America's fastest-growing source of funding for small businesses is also one of the least regulated. One man has waged a long, lonely fight to recoup its punishing cost.",
    "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
    "at": "2026-11-22T10:00:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
-   "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
-   "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
-   "at": "2026-11-22T07:08:46+00:00"
+   "source": "NPR",
+   "title": "NPR's Senior Podcast Challenge: Early entries we love",
+   "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
+   "at": "2026-11-22T10:00:00+00:00"
   },
   {
    "source": "CNBC",
@@ -361,13 +403,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Bigfoot Left a Paper Trail That Everyone Can See Now",
-   "desc": "This fall, the U.S. Forest Service quietly released records about the creature of lore.",
-   "url": "https://www.nytimes.com/2026/11/21/us/bigfoot-government-documents-released.html",
-   "at": "2026-11-21T22:55:17+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Like Fiona the Hippo, Internet Famous Animals Can Bring Value to Zoos",
    "desc": "Animal videos have long been popular online, but as it did with Fiona, social media can foster deeper connections that are valuable to zoos.",
    "url": "https://www.nytimes.com/2026/11/21/us/fiona-zoo-viral-animals.html",
@@ -379,13 +414,6 @@
    "desc": "President Trump is directing federal contractors to consult the White House about inquiries from Congress and to withhold any communications that his administration considers privileged.",
    "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
    "at": "2026-11-21T22:40:36+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Lock of George Washington's hair sells at auction for $4,000",
-   "desc": "South Carolina-based auction house Richmond Auctions said George Washington's lock of hair was sold for $4,000.",
-   "url": "https://www.cbsnews.com/news/george-washington-lock-of-hair-auction/",
-   "at": "2026-11-21T22:10:36+00:00"
   },
   {
    "source": "NPR",
@@ -400,20 +428,6 @@
    "desc": "NPR's South America Correspondent discusses her work covering an historic election upset and a papal visit.",
    "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
    "at": "2026-11-21T22:01:35+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Bayer reaches Roundup settlement that could cost the company billions",
-   "desc": "The money will go to thousands of people who have been or will be diagnosed with non-Hodgkin lymphoma – a blood cancer linked to the herbicide.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6049684/roundup-bayer-hodgkins-settlement",
-   "at": "2026-11-21T20:37:35+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "2-Year-Old Girl Wearing Only a Diaper Is Rescued After Hours in the Desert",
-   "desc": "“It was a life-changing moment,” said a searcher who found the girl, Vella Campillo, early on Wednesday in a remote area of Arizona after she had been missing for more than seven hours.",
-   "url": "https://www.nytimes.com/2026/11/21/us/missing-2-year-old-arizona-desert.html",
-   "at": "2026-11-21T20:02:02+00:00"
   }
  ]
 }

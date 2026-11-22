@@ -1,20 +1,27 @@
 {
  "code": "US",
- "asOf": "2026-11-22T05:17:36+00:00",
+ "asOf": "2026-11-22T07:17:34+00:00",
  "items": [
   {
    "source": "New York Times",
    "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
    "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
    "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
-   "at": "2026-11-22T05:08:33+00:00"
+   "at": "2026-11-22T07:08:46+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+   "desc": "Quantum computing firms are testing energy-grid optimization, solar materials and hydrogen catalysts as they pursue practical uses.",
+   "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+   "at": "2026-11-22T06:00:01+00:00"
   },
   {
    "source": "CBS News",
    "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
    "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
    "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "at": "2026-11-22T04:18:51+00:00"
+   "at": "2026-11-22T05:20:05+00:00"
   },
   {
    "source": "CBS News",
@@ -330,27 +337,6 @@
    "desc": "Republicans have targeted the Delaware Democrat, the first openly transgender member of Congress, since she came to Washington. Her party just elevated her to a key job.",
    "url": "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
    "at": "2026-11-21T10:02:29+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "How China is using summits to expand its global influence",
-   "desc": "Chinese President Xi Jinping has helped coordinate yet another photo-op of global significance.",
-   "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
-   "at": "2026-11-21T06:00:02+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Europe's cyber weak spot is the everyday businesses nobody thought to protect",
-   "desc": "Known vulnerabilities are leaving everyday businesses increasingly exposed to cyber sabotage, as AI enables cybercriminals to work better and faster.",
-   "url": "https://www.cnbc.com/2026/11/21/cyber-attacks-fridges-cybersecurity.html",
-   "at": "2026-11-21T06:00:02+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Federal Court Halts Pregnant Workers’ Protection Law",
-   "desc": "The Fifth Circuit Court of Appeals said the law was unconstitutional because it was passed with proxy voting during the Covid pandemic. It is expected to be appealed to the Supreme Court.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/federal-court-halts-pregnant-workers-protection-law.html",
-   "at": "2026-11-21T05:53:09+00:00"
   }
  ]
 }

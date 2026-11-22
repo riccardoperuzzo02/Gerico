@@ -1,7 +1,42 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T05:17:36+00:00",
+ "asOf": "2026-11-22T07:17:34+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "CDU: Annegret Kramp-Karrenbauer fordert Fokus auf Alltagsängste statt Rechtskurs",
+   "desc": "Die Beliebtheitswerte für Kanzler Merz sind miserabel, auch seine Partei schwächelt. Die frühere CDU-Chefin Kramp-Karrenbauer sagt, was sie in ihrer Partei vermisst und was die richtige Antwort auf den AfD-Höhenflug wäre.",
+   "url": "https://www.spiegel.de/politik/deutschland/cdu-annegret-kramp-karrenbauer-fordert-fokus-auf-alltagsaengste-statt-rechtskurs-a-56cb454f-6004-48e3-b4da-43e693c4a588",
+   "at": "2026-11-22T06:52:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Protest gegen Aufrüstung: Der schwierige Kampf der Kriegsgegner",
+   "desc": "Gegen den Bau von Rüstungsfabriken formiert sich oftmals lokaler Widerstand. Die Motive sind höchst unterschiedlich: Friedensbewegte treffen auf Israelhasser und Unternehmen, die die Konkurrenz fürchten.",
+   "url": "https://www.spiegel.de/politik/deutschland/protest-gegen-aufruestung-der-schwierige-kampf-der-kriegsgegner-a-fa580f9b-43db-465a-8817-79de0219b0ae",
+   "at": "2026-11-22T06:28:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Antisemitismusbeauftragte fordert mehr Engagement gegen Judenhass",
+   "desc": "Antisemitismus so offen wie seit dem Holocaust nicht mehr: Bundesbeauftragte Schnurbein warnt vor wachsendem Judenhass in Deutschland. Die AfD-Ideologie sei ein gefährlicher Angriff auf die Erinnerungskultur. Ihr Appell ist eindringlich.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/antisemitismusbeauftragte-102.html",
+   "at": "2026-11-22T05:47:26+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "COP31: Weltklimakonferenz nähert sich laut Präsident einem Konsens",
+   "desc": "Nach zähen Verhandlungen haben Australien und die Türkei in der Nacht einen neuen Abschlusstext vorgelegt. Er enthält kein Bekenntnis zur Abkehr von fossilen Energien.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-antalya-einigung-tuerkei-australien-fossile-brennstoffe-finanzhilfe",
+   "at": "2026-11-22T05:41:55+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gewalt gegen Frauen: Bundesjustizministerin will Femizid als Mord erfassen",
+   "desc": "Stefanie Hubig stößt weitere Gesetze zum Schutz von Frauen an. Ihr neuester Plan soll es strafrechtlich leichter machen, Femizide als Mord einzustufen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/mordparagraf-stephanie-hubig-femizid-strafrecht-gesetzesentwurf",
+   "at": "2026-11-22T05:19:53+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Deutsche Wirtschaft: Jobs in Gefahr: VW streicht Zehntausende Stellen – wer noch?",
@@ -15,13 +50,6 @@
    "desc": "Dass die Ukraine Putins Krimbrücke so stark getroffen hat, ist ein Wirkungstreffer. Denn für Brücken gelten in Kriegen eigene Gesetze. Es geht um Strategie und Symbolik.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/krim-bruecke-ukraine-krieg-russland-angriffe-symbolik",
    "at": "2026-11-22T04:44:35+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "COP31: Weltklimakonferenz nähert sich laut Präsident einem Konsens",
-   "desc": "Nach zähen Verhandlungen haben Australien und die Türkei in der Nacht einen neuen Abschlusstext vorgelegt. Er enthält kein Bekenntnis zur Abkehr von fossilen Energien.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-antalya-einigung-tuerkei-australien-fossile-brennstoffe-finanzhilfe",
-   "at": "2026-11-22T03:35:06+00:00"
   },
   {
    "source": "Die Zeit",
@@ -108,13 +136,6 @@
    "at": "2026-11-21T18:34:24+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Politik und Volk: Wir schaffen uns die Regierung, die wir verdienen",
-   "desc": "Merz, der Depp? Nein, zwischen Politik und Volk läuft ein zerstörerisches Spiel. Dabei: die Medien. Und Millionen, die gern die alleinerziehende Krankenschwester mimen.",
-   "url": "https://www.zeit.de/politik/2026-11/politik-volk-friedrich-merz-regierungsfaehigkeit-deutschland",
-   "at": "2026-11-21T17:29:23+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Ministerium will Autobahntankstellen vom Spritpreisdeckel ausnehmen",
    "desc": "Ab Januar soll der Preisdeckel für Benzin und Diesel gelten. Wirtschaftsministerin Reiche plant offenbar, Autobahntankstellen davon ausnehmen. Ihr neuer Gesetzentwurf ist noch in der Abstimmung zwischen den Ministerien.",
@@ -155,13 +176,6 @@
    "desc": "Schweinehaltung in Deutschland ist ein Verlustgeschäft - Liquiditätshilfen in Höhe von 25 Millionen Euro sollen jetzt den Betrieben helfen. Doch das Notfallprogramm allein wird nicht ausreichen, warnen Landwirte und Opposition. Von T. Lehning.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/schweinezucht-deutschland-exporte-100.html",
    "at": "2026-11-21T08:26:38+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Boris Pistorius, Ukraine, AfD auf Kurssuche, Donald Trump lobt Stephen Miller",
-   "desc": "Verteidigungsminister Boris Pistorius patzt. Ex-CDU-Chefin Annegret Kramp-Karrenbauer mahnt zur Solidarität mit der Ukraine. AfD-Landesverbände stimmen über Programm und Personal ab. Das ist die Lage am Samstagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-boris-pistorius-patzt-hilfen-fuer-die-ukraine-afd-auf-kurssuche-donald-trump-lobt-stephen-miller-a-cb84b583-511a-4850-9455-833a6e8d92a7",
-   "at": "2026-11-21T05:46:00+00:00"
   }
  ]
 }

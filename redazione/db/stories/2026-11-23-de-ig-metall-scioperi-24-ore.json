@@ -1,0 +1,36 @@
+{
+ "title": "Germania: scioperi di 24 ore nel settore auto, Mercedes ferma a Brema e Amburgo",
+ "section": "economia",
+ "rank": 16,
+ "status": "live",
+ "summary": "Il sindacato IG Metall allarga gli scioperi di 24 ore nel settore metalmeccanico: Mercedes ferma a Brema e Amburgo, colpiti anche BMW e Audi. Il sindacato chiede il 5% in più in un anno, i datori di lavoro offrono l'1,3% da luglio 2028.",
+ "article": "Da domenica sera il sindacato dei metalmeccanici ha fermato per 24 ore gli stabilimenti Mercedes-Benz di Brema e Amburgo, nel nord della Germania. Nel Paese i metalmeccanici sono in sciopero nel rinnovo del contratto di settore, che riguarda 3,7 milioni di lavoratori dell'industria metalmeccanica ed elettrica.\n\nSecondo il racconto del sindacato, che ha chiamato più di 23.000 lavoratori in 19 siti del nord, a Amburgo lo stabilimento era lunedì mattina «completamente isolato» e nessuno poteva entrare a lavorare. Venerdì c'erano stati scioperi di 24 ore in oltre 100 aziende di tutta la Germania, con 151.000 partecipanti secondo il sindacato: sono i primi scioperi di 24 ore del settore da otto anni. Colpiti anche tre stabilimenti BMW in Baviera e Audi a Ingolstadt.\n\nIl sindacato chiede un aumento del 5% in dodici mesi, la tutela di posti e sedi e una quota sugli utili nelle aziende in salute. I datori di lavoro offrono un pagamento una tantum pari all'1% della retribuzione lorda annua a luglio 2027 e un aumento mensile dell'1,3% da luglio 2028, con un contratto di 26 mesi. Il sindacato sostiene che, con l'inflazione, i lavoratori perderebbero potere d'acquisto.\n\nI datori di lavoro chiedono anche di negoziare con i consigli aziendali, e non con il sindacato, le deroghe al contratto, come il passaggio dell'orario da 35 a 40 ore, e impegni su assenze per malattia e intelligenza artificiale. Tre round di trattative per circa 130.000 dipendenti del nord non hanno portato a un accordo.\n\nSecondo quanto riferito da una fonte giornalistica tedesca, Mercedes cerca risparmi annui per 800 milioni di euro in Germania, con più ore senza compenso e tagli ai benefit; la notizia non è stata commentata dall'azienda. Sono attesi altri scioperi a Berlino e nel distretto centrale, che comprende Assia, Renania-Palatinato, Saarland e Turingia. Volkswagen tratta separatamente con IG Metall per circa 120.000 dipendenti.",
+ "facts": [
+  {"text": "IG Metall ha chiamato più di 23.000 lavoratori in 19 siti del nord della Germania per uno sciopero di 24 ore da domenica sera.", "who": ["Euronews"]},
+  {"text": "Venerdì 20 novembre hanno scioperato 24 ore 151.000 lavoratori in oltre 100 aziende, secondo IG Metall.", "who": ["IG Metall", "Euronews"]},
+  {"text": "IG Metall chiede il 5% in dodici mesi; i datori di lavoro offrono l'1% una tantum a luglio 2027 e l'1,3% da luglio 2028.", "who": ["IG Metall", "Euronews"]},
+  {"text": "I datori di lavoro chiedono di negoziare le deroghe al contratto, come le 40 ore, con i consigli aziendali.", "who": ["IG Metall"]}
+ ],
+ "view": "Sono accertati gli scioperi e le due posizioni sui numeri: il 5% in un anno contro l'1,3% a partire da metà 2028. Non è chiaro quanti stabilimenti siano rimasti fermi lunedì né quanto pesi lo sciopero sulla produzione.\n\nLo scontro non è solo sul salario: la richiesta sulle 40 ore e sui consigli aziendali tocca il modo in cui si fa il contratto. Da guardare: il prossimo round di trattative, che le fonti non datano, e l'estensione degli scioperi ad altri distretti.",
+ "open": [
+  "Quando è fissato il prossimo round di trattative?",
+  "Quanta produzione hanno perso Mercedes, BMW e Audi?",
+  "Mercedes conferma il piano di risparmi da 800 milioni di euro?"
+ ],
+ "sources": [
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/23/mercedes-bmw-hit-by-24-hour-strikes-as-german-pay-dispute-widens", "angle": "Gli scioperi di Mercedes, BMW e Audi, i numeri del sindacato e le posizioni delle parti.", "date": "2026-11-23"},
+  {"name": "IG Metall", "kind": "ufficiale", "country": "Germania", "area": "Europa", "url": "https://www.igmetall.de/tarif/tarifrunden/metall-und-elektro/aktionen-zur-metall-tarifrunde", "angle": "Le richieste del sindacato, l'offerta dei datori di lavoro e i 151.000 scioperanti di venerdì.", "date": "2026-11-20"}
+ ],
+ "firstSeen": "2026-11-23T13:21:00+01:00",
+ "updated": "2026-11-23T13:21:00+01:00",
+ "change": "",
+ "tags": ["Germania", "Lavoro", "Industria"],
+ "themes": [],
+ "places": ["DE"],
+ "figure": {"value": "151.000", "label": "i lavoratori in sciopero venerdì, secondo IG Metall"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T13:21:00+01:00", "text": "Prima notizia: scioperi di 24 ore nel settore metalmeccanico tedesco, Mercedes ferma a Brema e Amburgo."}
+ ]
+}

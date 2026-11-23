@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: due ricerche sui Pmi flash di oggi (Francia, Germania, area euro, Regno Unito) non danno dati del 23 novembre. Agenda già completa con il calendario, non toccata."
   },
   "lastPublish": {
-    "at": "2026-11-23T12:55:34+01:00",
-    "esito": "Giro pubblica su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-23T13:22:21+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-23T07:29:00+01:00",
+  "lastRun": "2026-11-23T13:21:00+01:00",
   "marketsRun": {
     "at": "2026-11-20T18:47:00+01:00",
     "esito": "Aggiornate le chiusure del 20 novembre (Ansa): Ftse Mib -2,48% a 48.703, Dax -2,6%, Cac 40 -1,89%, Ftse 100 -1,02%, spread 109,9, Btp 4,4%, Bund 3,3%, gas Ttf +4,4% a 88 euro. Mancano Aex, Smi, Brent, euro/dollaro. Agenda: nessun dato ufficiale nuovo trovato, non toccata."
@@ -29,19 +29,19 @@
     "esito": "US 2 nuove (maggioranza Dem alla Camera, detonazione in Iowa)/0 aggiornate/1 archiviata (alluvioni Florida); GB 2 nuove (Burnham e Ue dopo l'accordo, Co-op Live)/0/1 archiviata (accordo Ue); FR 2 nuove (regola d'oro, Choose France)/0/1 archiviata (Zecler); DE 1 nuova (progressione fredda)/0/1 archiviata (proteste Gen Z); ES 1 nuova (sondaggi 29-N)/0/1 archiviata (dopo il dibattito). Controlla: tutto a posto."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 35,
-    "at": "2026-11-23T07:29:00+01:00",
-    "factsChecked": 12,
-    "factsCorrected": 3,
-    "storiesArchived": 10,
-    "storiesNew": 10,
-    "storiesUpdated": 0
+    "articlesDiscarded": 1,
+    "articlesRead": 14,
+    "at": "2026-11-23T13:21:00+01:00",
+    "factsChecked": 6,
+    "factsCorrected": 1,
+    "storiesArchived": 0,
+    "storiesNew": 2,
+    "storiesUpdated": 1
   },
   "riscrittura": {
     "at": "2026-11-20T11:11:27+01:00",
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 26
+  "storiesLive": 31
 }

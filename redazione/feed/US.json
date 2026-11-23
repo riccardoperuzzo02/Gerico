@@ -1,13 +1,132 @@
 {
  "code": "US",
- "asOf": "2026-11-23T17:17:37+00:00",
+ "asOf": "2026-11-23T19:17:35+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Trump, tech leaders and investors cheer Huang's return to Nvidia",
+   "desc": "Nvidia's market value soared by $1 trillion, as President Trump and prominent tech figures applauded Huang's reinstatement as CEO.",
+   "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/",
+   "at": "2026-11-23T19:14:19+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
+   "desc": "The U.S. Army plans to detonate 68 drums of lead azide in Iowa despite local leaders and residents raising concerns.",
+   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
+   "at": "2026-11-23T19:13:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "DNI Jay Clayton tapped as acting national cyber director",
+   "desc": "President Donald Trump last week said he decided to replace Sean Cairncross as national cyber director \"because I didn't think that person was good enough.\"",
+   "url": "https://www.cnbc.com/2026/11/23/jay-clayton-cyber-director-kirsten-davies-trump.html",
+   "at": "2026-11-23T19:12:49+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "An options strategy for making even more of your money back in Nvidia",
+   "desc": "Nvidia shareholders can look to the options market to recoup lost money",
+   "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
+   "at": "2026-11-23T18:52:46+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump says he convinced Nvidia board to reinstate Jensen Huang",
+   "desc": "President Trump claimed the government \"has no reason to believe\" Jensen Huang's return is a national security risk.",
+   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
+   "at": "2026-11-23T18:50:44+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Rain Storms Overwhelm San Francisco’s Sewers, Sending Wastewater Into the Streets",
+   "desc": "A downpour once again sent wastewater into San Francisco streets. It could become a frequent occurrence in this El Niño year.",
+   "url": "https://www.nytimes.com/2026/11/23/us/san-francisco-flooding-water-sewer-rain.html",
+   "at": "2026-11-23T18:25:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
+   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "at": "2026-11-23T18:23:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A.I.-Powered Fake Personas Target Taiwan’s Elections",
+   "desc": "A new tool developed by researchers at Vanderbilt is detecting A.I.-generated posts linked to social media accounts aligned with China.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/taiwan-elections-misinformation.html",
+   "at": "2026-11-23T18:19:26+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
+   "desc": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans like 401(k)s.",
+   "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
+   "at": "2026-11-23T18:14:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
+   "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
+   "at": "2026-11-23T18:08:17+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+   "desc": "Wall Street strategists say Jensen Huang’s return to Nvidia could steady the AI trade, though spending and data-center risks remain.",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
+   "at": "2026-11-23T18:00:47+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "St. Patrick’s Day Parade Canceled as Florida Figures Out D.E.I. Law",
+   "desc": "Cities and counties are pulling funding from groups and events they’ve long supported before a new law bars them from promoting diversity, equity and inclusion activities.",
+   "url": "https://www.nytimes.com/2026/11/22/us/florida-anti-dei-law-consequences.html",
+   "at": "2026-11-23T17:54:16+00:00"
+  },
   {
    "source": "CNBC",
    "title": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
    "desc": "CrowdStrike and competitors have shelled out billions to ramp up defenses in the wake of AI cyberattacks.",
    "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
-   "at": "2026-11-23T17:17:10+00:00"
+   "at": "2026-11-23T17:50:30+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Average 401(k), IRA balances fall as more workers raid their accounts, Fidelity says",
+   "desc": "Retirement account balances fell in the third quarter amid market swings, according to Fidelity. At the same time, more savers tapped their accounts for cash.",
+   "url": "https://www.cnbc.com/2026/11/23/fidelity-401k-ira-balances-q3-2026.html",
+   "at": "2026-11-23T17:48:58+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia reinstates Jensen Huang as CEO",
+   "desc": "Nvidia said Monday that it has restored Jensen Huang as the chipmaker's chief executive, calling him the \"right person\" to lead the company.",
+   "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/",
+   "at": "2026-11-23T17:45:51+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
+   "desc": "President Trump decided he wanted to do whatever he could to help Jensen Huang get his old job back, two people familiar with the matter said.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
+   "at": "2026-11-23T17:30:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Here's where we stand on AMD shares after Jensen Huang's return to Nvidia",
+   "desc": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/23/heres-where-we-stand-on-amd-shares-after-jensen-huangs-return-to-nvidia-.html",
+   "at": "2026-11-23T17:24:41+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 33%",
+   "desc": "The Nvidia board said it had input from senior levels of the U.S. government.",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "at": "2026-11-23T17:23:04+00:00"
   },
   {
    "source": "CNBC",
@@ -17,25 +136,11 @@
    "at": "2026-11-23T17:16:39+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
-   "desc": "President Trump decided he wanted to do whatever he could to help Jensen Huang get his old job back, two people familiar with the matter said.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
-   "at": "2026-11-23T17:14:48+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Stock market jumps after Jensen Huang reinstated as Nvidia CEO",
    "desc": "The Nasdaq soared 6% after the opening bell, erasing all of its losses from Friday, when the index suffered its second-worst day of 2026.",
    "url": "https://www.cbsnews.com/news/us-stock-futures-rebound-tech-rout/",
    "at": "2026-11-23T17:07:56+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
-   "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
-   "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-tanker-tick-tock.html",
-   "at": "2026-11-23T17:07:32+00:00"
   },
   {
    "source": "CBS News",
@@ -45,25 +150,11 @@
    "at": "2026-11-23T16:59:31+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
-   "desc": "Wall Street strategists say Jensen Huang’s return to Nvidia could steady the AI trade, though spending and data-center risks remain.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
-   "at": "2026-11-23T16:53:57+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Squeezed for Space in Court Filings, Lawyers Get Typographically Creative",
    "desc": "Manipulating page formatting and fonts can help exceed word limits in legal filings, but can also incur a judge’s ire.",
    "url": "https://www.nytimes.com/2026/11/23/us/federal-court-typography-rules.html",
    "at": "2026-11-23T16:49:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 33%",
-   "desc": "The Nvidia board said it had input from senior levels of the U.S. government.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-   "at": "2026-11-23T16:49:27+00:00"
   },
   {
    "source": "CNBC",
@@ -80,25 +171,11 @@
    "at": "2026-11-23T16:30:39+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Trump says he convinced Nvidia board to reinstate Jensen Huang",
-   "desc": "President Trump claimed the government \"has no reason to believe\" Jensen Huang's return is a national security risk.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
-   "at": "2026-11-23T16:30:09+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Stop agonizing over the ‘right’ choice—to avoid regret, save time and reduce stress, take these 3 steps",
    "desc": "Maximizing can increase regret, anxiety and indecision, says therapist Chamin Ajjan. Take three steps to make faster, better decisions.",
    "url": "https://www.cnbc.com/make-it/2026/11/23/stop-maximizing-make-decisions.html",
    "at": "2026-11-23T16:25:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia reinstates Jensen Huang as CEO",
-   "desc": "Nvidia said Monday that it has restored Jensen Huang as the chipmaker's chief executive, calling him the \"right person\" to lead the company.",
-   "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/",
-   "at": "2026-11-23T16:10:06+00:00"
   },
   {
    "source": "NPR",
@@ -165,7 +242,7 @@
   },
   {
    "source": "NPR",
-   "title": "Nvidia's board of directors brings Jensen Huang back as CEO",
+   "title": "Trump claims credit as Jensen Huang returns to Nvidia",
    "desc": "President Trump endorsed the announcement, calling it essential for the success of the company and the economy. He added that the government does not see Jensen's return as a national security risk.",
    "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
    "at": "2026-11-23T14:53:41+00:00"
@@ -241,13 +318,6 @@
    "at": "2026-11-23T13:45:02+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
-   "desc": "The U.S. Army plans to detonate 68 drums of lead azide in Iowa despite local leaders and residents raising concerns.",
-   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
-   "at": "2026-11-23T13:42:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
    "desc": "The incident comes alongside a suspected Ukrainian drone strike on a Russian cargo ship in the Baltic Sea over the weekend.",
@@ -290,18 +360,18 @@
    "at": "2026-11-23T10:16:33+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "Rain Storms Overwhelm San Francisco’s Sewers, Sending Wastewater Into the Streets",
-   "desc": "A downpour once again sent wastewater into San Francisco streets. It could become a frequent occurrence in this El Niño year.",
-   "url": "https://www.nytimes.com/2026/11/23/us/san-francisco-flooding-water-sewer-rain.html",
-   "at": "2026-11-23T10:04:00+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "When disaster strikes, Medicaid work rules add barriers",
    "desc": "Medicaid provides a critical safety net for people to maintain healthcare coverage. But new work requirements create barriers for those trying to recover from natural disasters.",
    "url": "https://www.cbsnews.com/news/medicaid-work-rules-disasters/",
    "at": "2026-11-23T10:00:07+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
+   "desc": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
+   "at": "2026-11-23T10:00:00+00:00"
   },
   {
    "source": "NPR",
@@ -326,38 +396,17 @@
   },
   {
    "source": "NPR",
-   "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
-   "desc": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
-   "at": "2026-11-23T10:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "French biotech rejects short seller’s cancer-risk claims after shares plunge 17%",
-   "desc": "Short seller Scorpion Capital has accused Abivax of serious scientific and safety shortcomings in its experimental inflammatory bowel disease drug.",
-   "url": "https://www.cnbc.com/2026/11/23/abivax-scorpion-capital-obefazimod.html",
-   "at": "2026-11-23T09:45:42+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "Morning news brief",
    "desc": "A look at how artificial intelligence is affecting the economy, NATO to meet after Russian missiles hit Poland, negotiators fail to reach a deal as COP31 comes to an end.",
    "url": "https://www.npr.org/2026/11/23/nx-s1-6045619/morning-news-brief",
    "at": "2026-11-23T09:45:21+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-   "desc": "Yemen's Iran-aligned Houthis claimed an operation against Saudi Arabia's Rabigh oil refinery, as diplomatic efforts to end the war face long odds.",
-   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
-   "at": "2026-11-23T03:52:17+00:00"
-  },
-  {
    "source": "CBS News",
-   "title": "Army plans to carry out detonation at Iowa plant on Wednesday",
+   "title": "Army sets date for planned explosives detonation in Iowa",
    "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
    "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
-   "at": "2026-11-23T03:02:31+00:00"
+   "at": "2026-11-23T03:02:00+00:00"
   },
   {
    "source": "CBS News",
@@ -417,16 +466,16 @@
   },
   {
    "source": "CBS News",
-   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
-   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
-   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
+   "title": "Delta Air Lines says it's resolved network issue, but severe weather could cause more delays",
+   "desc": "Delta Air Lines said it resolved an automation outage that disrupted half of all flights, but the weather is creating another speed bump for the Thanksgiving travel rush. Shanelle Kaul reports and Andrew Kozak has the forecast.",
+   "url": "https://www.cbsnews.com/video/ddelta-air-lines-says-resolved-network-issue-severe-weather-delays/",
    "at": "2026-11-23T01:49:00+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Delta Air Lines says it's resolved network issue, but severe weather could cause more delays",
-   "desc": "Delta Air Lines said it resolved an automation outage that disrupted half of all flights, but the weather is creating another speed bump for the Thanksgiving travel rush. Shanelle Kaul reports and Andrew Kozak has the forecast.",
-   "url": "https://www.cbsnews.com/video/ddelta-air-lines-says-resolved-network-issue-severe-weather-delays/",
+   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
+   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
+   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
    "at": "2026-11-23T01:49:00+00:00"
   },
   {
@@ -434,7 +483,7 @@
    "title": "Why Democrat Abdul El-Sayed is Talking Up ‘TrumpCare’",
    "desc": "Senator-elect Abdul El-Sayed’s pitch for working together to enact universal health care illustrates how some newly elected Democrats are approaching the president.",
    "url": "https://www.nytimes.com/2026/11/22/us/politics/el-sayed-trump-health-care.html",
-   "at": "2026-11-23T00:27:25+00:00"
+   "at": "2026-11-23T00:27:26+00:00"
   },
   {
    "source": "CBS News",
@@ -479,53 +528,11 @@
    "at": "2026-11-22T21:14:10+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Ossoff's broad and decisive Senate win fuels 2028 speculation",
-   "desc": "Democratic Sen. Jon Ossoff's commanding victory in Georgia relied on a broad coalition, and this is fueling 2028 presidential interest in him, even though he says he'll be in the Senate for the next six years.",
-   "url": "https://www.cbsnews.com/news/jon-ossoff-2028-presidential-speculation-after-georgia-win/",
-   "at": "2026-11-22T21:06:00+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "2 New Jersey Women Indicted in Faked Anti-Trump Slashing Attack",
    "desc": "Natalie Greene, who worked for Representative Jeff Van Drew, a Republican, falsely claimed she had been attacked at a nature preserve in 2025, officials said.",
    "url": "https://www.nytimes.com/2026/11/22/us/van-drew-employee-indicted-attack-hoax.html",
    "at": "2026-11-22T20:19:58+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Donald Hooton Sr., Who Crusaded Against Steroids in Sports, Has Died",
-   "desc": "After the suicide of his son, a high school pitcher who used steroids, Donald Hooton Sr. delivered blistering testimony before Congress. He was 76.",
-   "url": "https://www.nytimes.com/2026/11/22/us/donald-hooton-sr-dead.html",
-   "at": "2026-11-22T19:10:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-   "desc": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
-   "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
-   "at": "2026-11-22T18:55:05+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "St. Patrick’s Day Parade Canceled as Florida Figures Out D.E.I. Law",
-   "desc": "Cities and counties are pulling funding from groups and events they’ve long supported before a new law bars them from promoting diversity, equity and inclusion activities.",
-   "url": "https://www.nytimes.com/2026/11/22/us/florida-anti-dei-law-consequences.html",
-   "at": "2026-11-22T18:14:27+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "How Melania Trump Found a Diplomatic Opening in the War in Ukraine",
-   "desc": "The first lady, who has little experience in international affairs, developed back channels to key figures on both sides of the conflict through her longtime agent.",
-   "url": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
-   "at": "2026-11-22T18:12:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Jeffries talks about where Democrats may be able to work with Trump",
-   "desc": "House Minority Leader Hakeem Jeffries outlined areas where Democrats \"can explore coming together\" with President Trump.",
-   "url": "https://www.cbsnews.com/news/hakeem-jeffries-trump-democrats-healthcare/",
-   "at": "2026-11-22T17:39:08+00:00"
   }
  ]
 }

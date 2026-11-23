@@ -325,12 +325,13 @@ def main(db, site):
     limite = time.strftime("%Y-%m-%d", time.gmtime(time.time() - STORICO_GIORNI * 86400))
     storico = {k: v for k, v in storico.items() if isinstance(v, dict) and v.get("d", "") >= limite}
 
-    def segna(f, chi):
-        """la foto f usata oggi dalla storia chi (lo storico tiene tutte le storie che l'hanno usata)"""
+    def segna(f, chi, voce=""):
+        """la foto f usata oggi dalla storia chi, presa dalla voce (lo storico tiene tutte le storie che l'hanno usata)"""
         prima = storico.get(f) or {}
-        storico[f] = {"d": oggi, "ids": sorted(set(prima.get("ids") or []) | {chi})[-10:]}
+        storico[f] = {"d": oggi, "ids": sorted(set(prima.get("ids") or []) | {chi})[-10:], "t": voce or prima.get("t", "")}
     storie.sort(key=lambda x: (x[1].get("status") != "live", x[1].get("rank") if isinstance(x[1].get("rank"), (int, float)) else 999, x[0]))
     usate = {}
+    voci_di = {sid: ((s.get("photo") or {}).get("title") or "").strip() for sid, s in storie if isinstance(s.get("photo"), dict)}
     for sid, s in storie:
         ph = s.get("photo")
         if not (isinstance(ph, dict) and isinstance(ph.get("title"), str) and ph["title"].strip()) or not re.fullmatch(r"[\w.-]+", sid):
@@ -397,7 +398,7 @@ def main(db, site):
                 f.write(data)
             info.update(key=chiave, title=titolo, bytes=len(data), regola=REGOLA)
             usate[stesso(info.get("file"))] = sid
-            segna(stesso(info.get("file")), sid)
+            segna(stesso(info.get("file")), sid, titolo)
             mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
             if mis:
                 info.update(mis)
@@ -409,7 +410,7 @@ def main(db, site):
             saltate.append(f"{sid}: {str(e)[:120]}")
     # le foto ancora in uso restano nello storico con la data di oggi: si ripetono solo tre settimane dopo l'ultimo uso
     for f, sid_ in usate.items():
-        segna(f, sid_)
+        segna(f, sid_, voci_di.get(sid_, ""))
     with open(storico_path, "w", encoding="utf-8") as fh:
         json.dump(dict(sorted(storico.items())), fh, ensure_ascii=False, indent=0)
         fh.write("\n")

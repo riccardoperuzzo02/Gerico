@@ -215,6 +215,33 @@ def cmd_giro():
 
 # ---------- live ----------
 
+def foto_recenti(giorni=10):
+    """{voce di Wikipedia: [(data, id della storia)]} delle foto usate negli ultimi giorni (site/img/foto-storico.json)."""
+    try:
+        st = json.load(open(os.path.join(SITE, "img", "foto-storico.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    limite = (now_rome().date() - timedelta(days=giorni)).isoformat()
+    out = {}
+    for v in st.values():
+        if isinstance(v, dict) and v.get("t") and v.get("d", "") >= limite:
+            for i in v.get("ids") or []:
+                out.setdefault(v["t"].strip().lower(), []).append((v["d"], i))
+    return out
+
+
+def cmd_foto():
+    """Le voci di Wikipedia già usate per le foto negli ultimi 10 giorni: da non richiedere."""
+    rec = foto_recenti()
+    if not rec:
+        print("Nessuna foto usata negli ultimi giorni.")
+        return 0
+    print("Voci già usate per le foto negli ultimi 10 giorni (non richiederle, scegline una diversa):")
+    for t, usi in sorted(rec.items(), key=lambda x: -len(x[1])):
+        print(f"  {t}: {len(usi)} volte, l'ultima il {max(u[0] for u in usi)}")
+    return 0
+
+
 def cmd_live():
     live = [(s.get("rank") if isinstance(s.get("rank"), int) else 99, sid, s) for sid, s in stories()
             if s.get("status") == "live"]
@@ -322,6 +349,14 @@ def cmd_controlla(db=DB, quiet=False):
         if s.get("prev") is not None and not (isinstance(s.get("prev"), str) and (os.path.exists(os.path.join(db, "stories", s["prev"] + ".json"))
                                                                               or os.path.exists(os.path.join(SITE, "s", s["prev"] + ".html")))):
             problems.append(f"{where}: prev «{s.get('prev')}» non è l'id di una storia che esiste")
+        # la foto di una storia nata oggi non ripete una voce usata da un'altra storia nei giorni scorsi
+        ph = s.get("photo") if isinstance(s.get("photo"), dict) else {}
+        fs_ = parse_time(s.get("firstSeen"))
+        if ph.get("title") and fs_ and fs_.astimezone(ROME).date().isoformat() == today:
+            altri = [u for u in foto_recenti(7).get(str(ph["title"]).strip().lower(), []) if u[1] != sid]
+            if altri:
+                problems.append(f"{where}: la foto «{ph['title']}» è già uscita {len(altri)} volte negli ultimi 7 giorni: scegli la cosa "
+                                "precisa di questa notizia (vedi `python3 scripts/redazione.py foto`), o togli photo e resta la mappa")
         if not isinstance(s.get("themes"), list):
             problems.append(f"{where}: manca themes (gli id dei temi caldi, anche [])")
         # i paesi e il luogo della mappa sopra l'articolo
@@ -691,6 +726,8 @@ def main(argv):
         return cmd_giro()
     if cmd == "live":
         return cmd_live()
+    if cmd == "foto":
+        return cmd_foto()
     if cmd == "controlla":
         return 1 if cmd_controlla() else 0
     if cmd == "pubblica" and len(argv) == 3:

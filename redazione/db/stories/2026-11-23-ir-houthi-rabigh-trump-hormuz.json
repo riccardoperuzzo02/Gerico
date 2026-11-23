@@ -6,11 +6,39 @@
  "summary": "Gli Houthi rivendicano un attacco alla raffineria saudita di Rabigh, che la coalizione guidata da Riad dice di aver fermato. Trump dice che potrebbe ordinare nuovi attacchi contro l'Iran l'anno prossimo, se manca un accordo.",
  "article": "Domenica gli Houthi, il movimento yemenita alleato dell'Iran, hanno detto di aver colpito la raffineria di Rabigh, nell'ovest dell'Arabia Saudita. La coalizione guidata da Riad afferma invece di aver «intercettato e distrutto» un drone diretto verso la regione occidentale del regno, dove si trovano impianti di raffinazione e di esportazione. Il ministero dell'Interno saudita non ha commentato e non è chiaro se l'impianto abbia subito danni.\n\nL'attacco si aggiunge a un fine settimana di incidenti nel Golfo. Sabato due petroliere in uscita dal Golfo Persico sono state raggiunte da proiettili vicino allo stretto di Hormuz, da cui passava circa un quinto del petrolio greggio mondiale prima della guerra. Domenica il centro britannico Ukmto, che segue la sicurezza della navigazione, ha segnalato un altro incidente con una petroliera e forze militari nel Golfo di Oman, senza altri dettagli. La marina iraniana dice di aver dato fuoco a petroliere che ritiene in violazione delle sue regole, e i Guardiani della rivoluzione accusano i «nemici» di voler provocare disordini. Un sito che traccia le navi sostiene che una petroliera iraniana segnalata in transito a Hormuz non esiste.\n\nIl Bahrein, dove ha sede la Quinta Flotta americana, dice che l'attacco iraniano di sabato a un impianto industriale civile ha ferito due persone. Un giorno prima le autorità avevano parlato di nessun ferito.\n\nIn un'intervista a Fox News sabato Trump ha detto di essere incline a ordinare attacchi contro Teheran l'anno prossimo se non ci sarà un accordo, e ha definito i funzionari iraniani «ballerini di tip tap professionisti». Secondo Trump, dopo la vittoria dei democratici alle elezioni di metà mandato l'Iran è diventato più aggressivo: ha detto che sono stati lanciati più droni che in un anno, tutti abbattuti.\n\nIl ministro degli Esteri iraniano, Abbas Araghchi, dice che il governo resta aperto a una fine negoziata della guerra. Il viceministro Kazem Gharibabadi afferma che Teheran è in contatto con i mediatori, tra cui il Qatar, per capire se la diplomazia possa avere un'altra possibilità. Teheran chiede la fine del blocco navale americano, la revoca delle sanzioni sul petrolio e lo sblocco dei beni congelati; Trump ha già detto che questi termini non sono accettabili.\n\nLunedì il portavoce del ministero degli Esteri iraniano, Esmaeil Baghaei, ha definito il blocco navale un «atto criminale» e una violazione della Carta dell'Onu, e ha detto che l'Iran userà «ogni mezzo» per difendersi. Domenica Trump aveva detto che le navi iraniane che cercano di forzare il blocco finirebbero in fondo al mare. Il primo ministro del Qatar, mediatore tra le parti, dovrebbe incontrare lunedì il segretario di Stato americano Marco Rubio. Funzionari iraniani dicono di non avere un piano concreto per un convoglio di petroliere.\n\nLunedì mattina, a metà giornata, il Brent scende sotto i 91 dollari al barile e il Wti a 82 dollari; nei primi scambi in Asia valevano 92,35 e 83,25 dollari.",
  "facts": [
-  {"text": "Gli Houthi dicono di aver colpito la raffineria saudita di Rabigh; la coalizione guidata da Riad dice di aver abbattuto un drone.", "who": ["CNBC", "Reuters"]},
-  {"text": "Trump ha detto a Fox News di essere incline a ordinare attacchi contro l'Iran l'anno prossimo in assenza di un accordo.", "who": ["CNBC", "ANSA"]},
-  {"text": "Due petroliere sono state colpite da proiettili vicino a Hormuz sabato; domenica Ukmto ha segnalato un altro incidente nel Golfo di Oman.", "who": ["CNBC", "Euronews"]},
-  {"text": "Il Bahrein dice che l'attacco iraniano di sabato a un impianto civile ha ferito due persone.", "who": ["CNBC"]},
-  {"text": "Il Brent è a 92,35 dollari e il Wti a 83,25 dollari nei primi scambi asiatici di lunedì.", "who": ["CNBC"]}
+  {
+   "text": "Gli Houthi dicono di aver colpito la raffineria saudita di Rabigh; la coalizione guidata da Riad dice di aver abbattuto un drone.",
+   "who": [
+    "CNBC",
+    "Reuters"
+   ]
+  },
+  {
+   "text": "Trump ha detto a Fox News di essere incline a ordinare attacchi contro l'Iran l'anno prossimo in assenza di un accordo.",
+   "who": [
+    "CNBC",
+    "ANSA"
+   ]
+  },
+  {
+   "text": "Due petroliere sono state colpite da proiettili vicino a Hormuz sabato; domenica Ukmto ha segnalato un altro incidente nel Golfo di Oman.",
+   "who": [
+    "CNBC",
+    "Euronews"
+   ]
+  },
+  {
+   "text": "Il Bahrein dice che l'attacco iraniano di sabato a un impianto civile ha ferito due persone.",
+   "who": [
+    "CNBC"
+   ]
+  },
+  {
+   "text": "Il Brent è a 92,35 dollari e il Wti a 83,25 dollari nei primi scambi asiatici di lunedì.",
+   "who": [
+    "CNBC"
+   ]
+  }
  ],
  "view": "Sono accertati gli attacchi della giornata e il fatto che il negoziato con la mediazione del Qatar non è chiuso. Non è verificato se la raffineria di Rabigh sia stata danneggiata, né quali navi siano state colpite da chi: le versioni di Teheran, di Riad e delle fonti marittime non coincidono.\n\nPer la prima volta in questa fase compare un orizzonte temporale nelle parole di Trump, con l'anno prossimo. Da guardare: nuovi incontri dei mediatori, l'eventuale partenza dei convogli iraniani verso la Cina e l'effetto sui prezzi del greggio.",
  "open": [
@@ -20,25 +48,91 @@
   "Quanti sono i feriti in Bahrein?"
  ],
  "sources": [
-  {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html", "angle": "Gli Houthi sulla raffineria saudita, le parole di Trump a Fox News, i prezzi del petrolio.", "date": "2026-11-23"},
-  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/yemen-s-houthis-say-they-attacked-saudi-rabigh-oil-refinery", "angle": "La rivendicazione degli Houthi su Rabigh.", "date": "2026-11-22"},
-  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat", "angle": "La marina iraniana sulle petroliere e l'avvertimento dei Guardiani della rivoluzione.", "date": "2026-11-22"},
-  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/23/iran-vows-every-means-to-counter-us-blockade-of-hormuz-after-trump-threat", "angle": "La risposta di Teheran al blocco navale, la minaccia di Trump alle navi e l'incontro tra il premier del Qatar e Rubio.", "date": "2026-11-23"},
-  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/22/trump-con-la-vittoria-dei-dem-alle-midterm-liran-e-diventato-piu_d5d5a2aa-878e-481f-b942-8f53e9442059.html", "angle": "Trump collega l'aggressività iraniana alle elezioni di metà mandato.", "date": "2026-11-22"}
+  {
+   "name": "CNBC",
+   "kind": "tv",
+   "country": "Stati Uniti",
+   "area": "Stati Uniti",
+   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+   "angle": "Gli Houthi sulla raffineria saudita, le parole di Trump a Fox News, i prezzi del petrolio.",
+   "date": "2026-11-23"
+  },
+  {
+   "name": "Reuters",
+   "kind": "agenzia",
+   "country": "Regno Unito",
+   "area": "Europa",
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/yemen-s-houthis-say-they-attacked-saudi-rabigh-oil-refinery",
+   "angle": "La rivendicazione degli Houthi su Rabigh.",
+   "date": "2026-11-22"
+  },
+  {
+   "name": "Al Jazeera",
+   "kind": "tv",
+   "country": "Qatar",
+   "area": "Medio Oriente",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
+   "angle": "La marina iraniana sulle petroliere e l'avvertimento dei Guardiani della rivoluzione.",
+   "date": "2026-11-22"
+  },
+  {
+   "name": "Euronews",
+   "kind": "giornale online",
+   "country": "Francia",
+   "area": "Europa",
+   "url": "https://www.euronews.com/2026/11/23/iran-vows-every-means-to-counter-us-blockade-of-hormuz-after-trump-threat",
+   "angle": "La risposta di Teheran al blocco navale, la minaccia di Trump alle navi e l'incontro tra il premier del Qatar e Rubio.",
+   "date": "2026-11-23"
+  },
+  {
+   "name": "ANSA",
+   "kind": "agenzia",
+   "country": "Italia",
+   "area": "Italia",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/22/trump-con-la-vittoria-dei-dem-alle-midterm-liran-e-diventato-piu_d5d5a2aa-878e-481f-b942-8f53e9442059.html",
+   "angle": "Trump collega l'aggressività iraniana alle elezioni di metà mandato.",
+   "date": "2026-11-22"
+  }
  ],
  "firstSeen": "2026-11-23T07:22:00+01:00",
  "updated": "2026-11-23T13:21:00+01:00",
  "change": "Teheran dice che userà «ogni mezzo» contro il blocco; il premier del Qatar vede Rubio.",
- "tags": ["Iran", "Stati Uniti", "Medio Oriente", "Petrolio"],
- "themes": ["iran-usa"],
- "places": ["SA", "YE", "IR", "BH", "US"],
- "city": {"name": "Rabigh", "lat": 22.80, "lon": 39.03},
- "photo": {"wiki": "it", "title": "Stretto di Hormuz"},
+ "tags": [
+  "Iran",
+  "Stati Uniti",
+  "Medio Oriente",
+  "Petrolio"
+ ],
+ "themes": [
+  "iran-usa"
+ ],
+ "places": [
+  "SA",
+  "YE",
+  "IR",
+  "BH",
+  "US"
+ ],
+ "city": {
+  "name": "Rabigh",
+  "lat": 22.8,
+  "lon": 39.03
+ },
+ "photo": {
+  "wiki": "en",
+  "title": "Petro Rabigh"
+ },
  "prev": "2026-11-22-ir-bahrein-attacco-blocco-usa",
  "divergences": [],
  "notCovered": [],
  "history": [
-  {"at": "2026-11-23T13:21:00+01:00", "text": "Teheran dice che userà «ogni mezzo» contro il blocco; il premier del Qatar vede Rubio."},
-  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: gli Houthi dicono di aver colpito Rabigh, Trump valuta attacchi contro l'Iran l'anno prossimo."}
+  {
+   "at": "2026-11-23T13:21:00+01:00",
+   "text": "Teheran dice che userà «ogni mezzo» contro il blocco; il premier del Qatar vede Rubio."
+  },
+  {
+   "at": "2026-11-23T07:22:00+01:00",
+   "text": "Prima notizia: gli Houthi dicono di aver colpito Rabigh, Trump valuta attacchi contro l'Iran l'anno prossimo."
+  }
  ]
 }

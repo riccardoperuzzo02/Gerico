@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-23-fr-macron-regola-d-oro-bilancio",
+  "title": "Francia: Macron valuta una «regola d'oro» di bilancio nella Costituzione",
+  "photo": {"wiki": "it", "title": "Reggia di Versailles", "alt": "Château de Versailles"},
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.8704, "lon": 2.3166},
+  "rank": 304,
+  "summary": "Il presidente vuole rassicurare i mercati con un limite ai conti pubblici. Serve riunire il Congresso a Versailles e una maggioranza di tre quinti.",
+  "article": "Il presidente francese Emmanuel Macron sta valutando di inserire nella Costituzione una «regola d'oro» di bilancio, cioè un vincolo ai conti pubblici. Lo ha confermato lui stesso al quotidiano Le Figaro, secondo quanto riportano più testate francesi. L'obiettivo è ridurre il rischio di una crisi finanziaria: il debito pubblico ha raggiunto 3.600 miliardi di euro e i tassi di interesse salgono.\n\nPer cambiare la Costituzione servirebbe riunire il Congresso, cioè Assemblea nazionale e Senato insieme a Versailles, e ottenere tre quinti dei voti espressi. Una procedura simile, prevista da una legge del 2011 sotto il governo di François Fillon, fu approvata dalle due camere ma non fu mai completata. Macron lega l'idea alla volatilità dei mercati: «Se a gennaio ci sarà ancora volatilità sui mercati, è un'idea da esplorare».\n\nSecondo le fonti lette, il Rassemblement national, il partito di Marine Le Pen, e gli ex primi ministri Édouard Philippe e Gabriel Attal sarebbero favorevoli al principio. La sinistra no. L'Eliseo non ha confermato una modifica costituzionale all'inizio del 2027, e il Rassemblement national, favorevole al principio, potrebbe decidere sulle modalità.",
+  "facts": [
+    {"text": "Macron valuta una regola d'oro di bilancio nella Costituzione e lo ha confermato a Le Figaro.", "who": ["Emmanuel Macron"]},
+    {"text": "Il debito pubblico francese ha raggiunto 3.600 miliardi di euro.", "who": ["Dati citati dalle fonti"]},
+    {"text": "Serve il Congresso e una maggioranza di tre quinti dei voti espressi.", "who": ["Costituzione francese"]},
+    {"text": "Il Rassemblement national, Philippe e Attal sarebbero favorevoli, la sinistra no.", "who": ["Fonti politiche"]}
+  ],
+  "view": "Si può dire con certezza che Macron ha confermato l'idea e che la procedura richiede tre quinti del Congresso. Non è deciso se e quando la proposta sarà presentata, e l'Eliseo non l'ha confermata per i primi mesi del 2027.\n\nIl voto dipenderà dal Rassemblement national, che sosterrebbe il principio. Da guardare: l'andamento dei tassi in gennaio, le posizioni dei candidati alla presidenziale del 2027 e un eventuale testo.",
+  "open": [
+    "Quando sarebbe presentata la riforma costituzionale?",
+    "Quale limite di deficit o di debito prevederebbe la regola?",
+    "Il Rassemblement national voterebbe il testo?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/emmanuel-macron-reflechit-a-instaurer-une-regle-d-or-budgetaire_8273864.html", "angle": "Articolo letto: debito a 3.600 miliardi, procedura del Congresso, tre quinti, posizioni dei partiti.", "at": "2026-11-23T06:47:45+00:00"},
+    {"name": "Le Monde", "kind": "giornale", "country": "Francia", "area": "Europa", "url": "https://www.lemonde.fr/politique/article/2026/11/22/emmanuel-macron-envisage-de-reunir-le-congres-a-versailles-pour-faire-adopter-une-regle-d-or-budgetaire-une-procedure-inedite-a-plus-d-un-titre_6814241_823448.html", "angle": "Dal feed: il Congresso a Versailles e il ruolo di arbitro del Rassemblement national.", "at": "2026-11-22T18:53:29+00:00"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261122-budget-macron-confirme-qu-il-envisage-d-inscrire-une-r%C3%A8gle-d-or-dans-la-constitution", "angle": "Articolo dal feed: Macron conferma al Figaro.", "at": "2026-11-22T15:54:26+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: Macron valuta una regola d'oro di bilancio nella Costituzione."}
+  ],
+  "tags": ["Francia", "Conti pubblici", "Costituzione"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

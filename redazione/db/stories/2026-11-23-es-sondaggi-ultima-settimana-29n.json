@@ -1,0 +1,42 @@
+{
+  "id": "2026-11-23-es-sondaggi-ultima-settimana-29n",
+  "title": "Spagna: a una settimana dal voto del 29 novembre il Pp resta avanti nei sondaggi",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "prev": "2026-11-21-es-dopo-il-dibattito-sanchez-feijoo",
+  "city": {"name": "Madrid", "lat": 40.4168, "lon": -3.7038},
+  "photo": {"wiki": "es", "title": "Palacio de las Cortes"},
+  "rank": 503,
+  "summary": "Secondo l'ultimo sondaggio pubblico di 40dB il Psoe cresce, ma Pp e Vox insieme hanno la maggioranza. Tre elettori su quattro dicono che voteranno.",
+  "article": "A una settimana dalle elezioni politiche del 29 novembre, i sondaggi mostrano un quadro quasi invariato: il Partito popolare di Alberto Núñez Feijóo resta primo e, sommato a Vox, supera la maggioranza assoluta. Lo dice l'ultimo sondaggio pubblico di 40dB per un quotidiano e una radio spagnoli, diffuso oggi.\n\nIl Psoe del premier Pedro Sánchez e soprattutto Frente Amplio crescono rispetto a inizio novembre. Secondo lo stesso sondaggio, la somma di Pp e Vox perde solo un po' dopo dieci giorni di campagna. Più della metà degli intervistati (il 52 per cento) pensa che governerà una coalizione fra Pp e Vox, contro il 38 per cento che indica Psoe e sinistra. Feijóo supera Sánchez come candidato preferito per la presidenza del governo.\n\nTre elettori su quattro dicono che andranno a votare con certezza o quasi, cinque punti in più rispetto al 2023. Sánchez ha detto in televisione che i suoi sondaggi interni «hanno una buona pinta», senza fornire dati. Feijóo ha avvertito i suoi: «Sappiamo cosa è successo nel 2023, vincere e non governare. Non abbiamo vinto niente».\n\nLe fonti lette non danno le percentuali di voto di ogni partito.",
+  "facts": [
+    {"text": "Il Pp è primo e con Vox ha la maggioranza assoluta secondo l'ultimo sondaggio.", "who": ["40dB"]},
+    {"text": "Psoe e Frente Amplio crescono rispetto a inizio novembre.", "who": ["40dB"]},
+    {"text": "Il 52% degli intervistati pensa che governerà una coalizione Pp-Vox, il 38% che governeranno Psoe e sinistre.", "who": ["Sondaggio"]},
+    {"text": "Tre elettori su quattro dicono che voteranno con certezza o quasi.", "who": ["40dB"]}
+  ],
+  "view": "Si può dire con certezza che i sondaggi danno il Pp in vantaggio e che Psoe e Frente Amplio sono in crescita. Un sondaggio non anticipa il risultato, e la maggioranza dipende dalla distribuzione dei seggi.\n\nL'alta partecipazione dichiarata e il Psoe in rimonta lasciano il quadro aperto. Da guardare: gli ultimi sondaggi consentiti, il dibattito a quattro e l'affluenza del 29 novembre.",
+  "open": [
+    "Quanti seggi avrà ciascun partito?",
+    "L'affluenza confermerà l'intenzione dichiarata?",
+    "Quanto peserà il dibattito a quattro?"
+  ],
+  "sources": [
+    {"name": "El País", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/la-ventaja-de-la-derecha-no-cede-mientras-el-psoe-pugna-por-el-primer-puesto.html", "angle": "Dal feed: il sondaggio 40dB, la destra non cede, Psoe in corsa per il primo posto.", "at": "2026-11-23T04:30:01+00:00"},
+    {"name": "20minutos", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.20minutos.es/nacional/psoe-sube-28-pero-sigue-lejos-pp-que-suma-mayoria-absoluta-con-vox_7063769_0.html", "angle": "Dal feed: Psoe e Frente Amplio crescono, Feijóo supera Sánchez come preferito.", "at": "2026-11-23T04:00:00+00:00"},
+    {"name": "El Mundo", "kind": "giornale", "country": "Spagna", "area": "Europa", "url": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b033046fc6c830e508b4594.html", "angle": "Dal feed: Sánchez riduce la distanza da Feijóo, Vox in calo.", "at": "2026-11-22T21:34:22+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: i sondaggi a una settimana dal voto del 29 novembre."}
+  ],
+  "tags": ["Spagna", "Elezioni", "Governo"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-23-us-democratici-maggioranza-camera",
+  "title": "Stati Uniti: i Democratici chiudono le elezioni con 258 seggi alla Camera",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "it", "title": "Campidoglio (Washington)", "alt": "United States Capitol"},
+  "city": {"name": "Washington", "lat": 38.8899, "lon": -77.0091},
+  "rank": 104,
+  "summary": "Con la vittoria di Chuck Hubbard in North Carolina il partito di Hakeem Jeffries ha la maggioranza più ampia in un'elezione nazionale degli ultimi trent'anni. Restano quattro seggi da assegnare.",
+  "article": "I Democratici hanno conquistato il 258esimo seggio della Camera dei rappresentanti, la maggioranza più ampia ottenuta da un partito in un'elezione nazionale negli ultimi tre decenni. Il seggio è andato a Chuck Hubbard, ex giornalista, che in North Carolina ha battuto la deputata repubblicana Virginia Foxx, in carica da undici mandati. Lo ha scritto sabato e domenica la stampa americana, in base alle proiezioni e al riconteggio.\n\nIl partito guadagna finora 44 seggi rispetto al voto precedente, contro i 40 delle elezioni di metà mandato del 2018, quelle del primo mandato di Donald Trump. Hakeem Jeffries, il capo dei Democratici alla Camera, ha scritto su X che il suo gruppo ha ottenuto «la maggioranza più ampia che un partito abbia avuto al Congresso in questo secolo». I Repubblicani avranno almeno 173 seggi. Quattro corse restano aperte: una in Minnesota, una in Tennessee e due in Louisiana, dove si andrà al ballottaggio a dicembre.\n\nAlexandria Ocasio-Cortez, deputata di New York, ha parlato di «un mandato per il cambiamento». Il deputato Jim Jordan, repubblicano dell'Ohio, ha detto che il suo partito «combatterà per le famiglie americane» nei prossimi due anni. Il deputato democratico Tom Suozzi ha chiesto ai colleghi di dedicare il 75 per cento del tempo ai costi della vita e il 25 per cento alla responsabilità del governo.\n\nJeffries dovrebbe essere eletto presidente della Camera il 3 gennaio 2027. I Democratici preparano un'agenda per i primi 100 giorni, con voti per annullare i tagli a Medicaid e ripristinare gli sgravi fiscali scaduti sull'assicurazione sanitaria, e una serie di indagini, anche sulle finanze della famiglia Trump. La Casa Bianca ha avvertito che le inchieste potrebbero configurare «una palese criminalità».",
+  "facts": [
+    {"text": "I Democratici hanno 258 seggi alla Camera, la maggioranza più ampia in trent'anni.", "who": ["Democratici", "proiezioni dei media americani"]},
+    {"text": "Chuck Hubbard ha battuto Virginia Foxx in North Carolina dopo un riconteggio.", "who": ["Proiezioni dei media americani"]},
+    {"text": "Restano da assegnare quattro seggi: Minnesota, Tennessee e due in Louisiana, con ballottaggio a dicembre.", "who": ["Proiezioni dei media americani"]},
+    {"text": "Jeffries dovrebbe essere eletto presidente della Camera il 3 gennaio 2027.", "who": ["Hakeem Jeffries", "Democratici"]},
+    {"text": "I Democratici preparano indagini, anche sulle finanze della famiglia Trump; la Casa Bianca parla di «palese criminalità».", "who": ["Democratici", "Casa Bianca"]}
+  ],
+  "view": "Si può dire con certezza che i Democratici hanno ottenuto una maggioranza larga alla Camera e che quattro seggi restano da assegnare. Non è chiaro quanto la maggioranza reggerà sui voti più divisivi, né se Jeffries sceglierà la via delle indagini più dure.\n\nIl controllo della Camera dà ai Democratici il potere di convocare audizioni e di fermare le leggi della Casa Bianca. Da guardare: il voto sul presidente della Camera del 3 gennaio, i primi provvedimenti sulla sanità e la decisione sulle inchieste.",
+  "open": [
+    "Quanti seggi avranno alla fine i Democratici dopo i ballottaggi in Louisiana?",
+    "Il gruppo democratico avvierà davvero una procedura di impeachment?",
+    "Quali leggi dei primi 100 giorni arriveranno in aula?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/democrats-historic-house-majority-since-1992/", "angle": "Articolo letto: numeri, dichiarazioni di Jeffries, Jordan e Suozzi, programma dei Democratici.", "at": "2026-11-22T22:13:32+00:00"},
+    {"name": "New York Times", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html", "angle": "Dal feed: i 258 seggi sono il record di questo secolo in un'elezione nazionale.", "at": "2026-11-22T23:30:08+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: i Democratici arrivano a 258 seggi alla Camera."}
+  ],
+  "tags": ["Stati Uniti", "Congresso", "Elezioni"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

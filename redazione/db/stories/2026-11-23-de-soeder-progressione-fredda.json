@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-23-de-soeder-progressione-fredda",
+  "title": "Germania: Söder chiede di compensare la progressione fredda, coalizione divisa",
+  "photo": {"wiki": "de", "title": "Reichstagsgebäude"},
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "city": {"name": "Berlino", "lat": 52.5186, "lon": 13.3762},
+  "rank": 402,
+  "summary": "Il leader della Csu parla di una «questione di credibilità» e di circa 4 miliardi di euro. Spd, Verdi e alcuni esponenti della Cdu sono scettici.",
+  "article": "Markus Söder, presidente della Csu, il partito bavarese alleato della Cdu al governo, chiede di compensare la «progressione fredda», cioè l'aumento delle imposte dovuto all'inflazione, che sposta i redditi in scaglioni più alti senza un reale aumento di potere d'acquisto. Per Söder è una «questione di credibilità». Il costo stimato è di circa 4 miliardi di euro.\n\nLa coalizione fra Cdu, Csu e Spd si era accordata da poco, e a fatica, sulla riduzione dell'imposta sull'elettricità. La proposta di Söder rischia di aprire un nuovo scontro. L'Spd la considera senza possibilità di riuscita e chiede una copertura permanente. Alcuni esponenti della Cdu la ritengono irrealistica: i rappresentanti dei lavoratori del partito la giudicano «troppo tarda». Alcuni Länder, i Paesi federati, sono contrari.\n\nBritta Haßelmann, capogruppo dei Verdi al Bundestag, accusa Söder di «lamentarsi in pubblico». Secondo le fonti lette, la questione manca di risorse nel bilancio.\n\nNon è chiaro se la proposta sarà messa in votazione né come verrebbe finanziata.",
+  "facts": [
+    {"text": "Söder chiede di compensare la progressione fredda, definendola «una questione di credibilità».", "who": ["Markus Söder"]},
+    {"text": "Il costo è di circa 4 miliardi di euro.", "who": ["Fonti citate"]},
+    {"text": "L'Spd la ritiene senza possibilità di riuscita e chiede una copertura permanente.", "who": ["Spd"]},
+    {"text": "I Verdi accusano Söder di «lamentarsi in pubblico».", "who": ["Britta Haßelmann"]}
+  ],
+  "view": "Si può dire con certezza che la richiesta di Söder divide la coalizione e che il costo indicato è di 4 miliardi. Non è chiaro dove il governo troverebbe le risorse.\n\nIl tema arriva a poche settimane dall'accordo sull'elettricità e mette alla prova la tenuta della maggioranza. Da guardare: la posizione del ministro delle Finanze e le prossime riunioni della coalizione.",
+  "open": [
+    "Come sarebbero coperti i 4 miliardi?",
+    "Il ministro delle Finanze appoggerà la richiesta?",
+    "Quando la coalizione ne discuterà?"
+  ],
+  "sources": [
+    {"name": "Der Spiegel", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.spiegel.de/politik/deutschland/ausgleich-der-kalten-progression-droht-schon-der-naechste-koalitionsstreit-a-68edb092-41fd-4ae8-9494-01ebc13ee219", "angle": "Dal feed: scontro nella coalizione dopo l'accordo sull'elettricità, posizioni di Cdu, Spd e Länder.", "at": "2026-11-22T15:47:00+00:00"},
+    {"name": "Die Zeit", "kind": "giornale", "country": "Germania", "area": "Europa", "url": "https://www.zeit.de/politik/deutschland/2026-11/kalte-progression-ausgleich-markus-soeder-cdu-dennis-radtke", "angle": "Dal feed: i lavoratori della Cdu parlano di proposta «troppo tarda», l'Spd chiede una copertura permanente.", "at": "2026-11-23T04:48:07+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: Söder chiede di compensare la progressione fredda, la coalizione si divide."}
+  ],
+  "tags": ["Germania", "Conti pubblici", "Governo"],
+  "themes": [],
+  "places": ["DE"],
+  "divergences": [],
+  "notCovered": []
+}

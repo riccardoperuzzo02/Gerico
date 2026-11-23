@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-23-us-iowa-detonazione-esplosivi",
+  "title": "Stati Uniti: l'esercito vuole far esplodere 5 tonnellate di esplosivi in Iowa",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Iowa Army Ammunition Plant"},
+  "city": {"name": "Middletown (Iowa)", "lat": 40.8, "lon": -91.2},
+  "rank": 105,
+  "summary": "L'esercito fissa a mercoledì la detonazione di azide di piombo nello stabilimento di Middletown, nonostante lo stop di una corte federale. Gruppi ambientalisti denunciano il rischio di polveri tossiche.",
+  "article": "L'esercito americano ha annunciato che mercoledì farà esplodere in modo controllato circa 5 tonnellate di esplosivi instabili nello stabilimento di munizioni di Middletown, in Iowa. Il dipartimento dell'esercito dice di voler procedere «per avere condizioni meteo ottimali e tutte le misure di mitigazione in atto». La data era slittata più volte: prima venerdì, poi lunedì e martedì.\n\nSi tratta di 68 fusti di azide di piombo, un composto esplosivo che secondo l'esercito ha cominciato a ricristallizzare nei depositi, e che con il freddo previsto potrebbe esplodere da solo. L'Epa, l'agenzia federale per l'ambiente, ha parlato di «rischio imminente e sostanziale» per la salute. L'esercito sostiene che una detonazione controllata sia più sicura di una incontrollata e usa un'eccezione di emergenza al permesso dell'Epa, applicando comunque le misure per limitare la polvere di piombo.\n\nVenerdì la corte d'appello federale dell'ottavo circuito aveva sospeso la demolizione a tempo indeterminato, dopo il ricorso di Iowa Environmental Council, Sierra Club ed Earthjustice. I gruppi dicono che «questa emergenza è stata creata dall'esercito stesso» e contestano la validità del permesso. L'esercito afferma di non essere tenuto a rispettare l'ordine per ragioni di sicurezza pubblica.\n\nJosh Turek, senatore eletto democratico dell'Iowa, ha chiesto un'indagine completa e una comunicazione più chiara sui rischi per la salute.",
+  "facts": [
+    {"text": "L'esercito prevede la detonazione di circa 5 tonnellate di azide di piombo mercoledì a Middletown.", "who": ["Dipartimento dell'esercito"]},
+    {"text": "Sono 68 fusti di azide di piombo che, secondo l'esercito, hanno iniziato a ricristallizzare.", "who": ["Dipartimento dell'esercito"]},
+    {"text": "Venerdì una corte d'appello federale aveva sospeso la detonazione; l'esercito dice di non doverne tenere conto.", "who": ["Corte d'appello dell'ottavo circuito", "Dipartimento dell'esercito"]},
+    {"text": "L'Epa ha concesso un permesso di emergenza, contestato in tribunale dai gruppi ambientalisti.", "who": ["Epa", "Earthjustice"]}
+  ],
+  "view": "Si può dire con certezza che l'esercito intende procedere mercoledì e che esiste un ordine di sospensione della corte. Non è chiaro se l'ordine sia ancora in vigore né quanta polvere di piombo la detonazione disperderà.\n\nIl caso mette di fronte la sicurezza di un deposito instabile e il rischio sanitario per chi vive vicino. Da guardare: la decisione della corte d'appello prima di mercoledì, le misure per la polvere di piombo e le indicazioni ai residenti.",
+  "open": [
+    "L'ordine della corte è ancora valido o è stato superato dal permesso di emergenza?",
+    "Quanta polvere di piombo si disperderà e dove?",
+    "Quali residenti dovranno lasciare le case?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/", "angle": "Articolo letto: data di mercoledì, stop della corte, posizione dell'esercito e dei gruppi ambientalisti.", "at": "2026-11-23T03:02:31+00:00"},
+    {"name": "Task & Purpose", "kind": "giornale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://taskandpurpose.com/news/army-iowa-munitions-lead-detonation/", "angle": "Dalla ricerca: i 68 fusti di azide di piombo e le circa 5 tonnellate.", "date": "2026-11-20"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: l'esercito fissa a mercoledì la detonazione in Iowa nonostante lo stop della corte."}
+  ],
+  "tags": ["Stati Uniti", "Ambiente", "Giustizia"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

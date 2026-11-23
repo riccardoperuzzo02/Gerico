@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-23-gb-manchester-co-op-live-evacuazione",
+  "title": "Regno Unito: evacuata la Co-op Live di Manchester, rilasciata una sostanza",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Co-op Live"},
+  "city": {"name": "Manchester", "lat": 53.4877, "lon": -2.2000},
+  "rank": 204,
+  "summary": "La polizia ha dichiarato un incidente grave durante un concerto del rapper Don Toliver. Una persona è stata portata in ospedale.",
+  "article": "La polizia di Greater Manchester ha dichiarato un incidente grave poco dopo le 22 di domenica alla Co-op Live, la più grande arena coperta del Regno Unito, dopo che nel pubblico di un concerto del rapper americano Don Toliver è stata rilasciata una «sostanza non identificata». Migliaia di persone sono state fatte uscire dall'edificio.\n\nSecondo la polizia, alcuni spettatori hanno riferito sintomi agli occhi e alle vie respiratorie. Gli agenti hanno inizialmente ritenuto che si trattasse di gas lacrimogeno. Una persona è stata portata in ospedale.\n\nLe fonti lette non dicono quante persone abbiano avuto bisogno di cure, chi abbia rilasciato la sostanza né quale fosse.",
+  "facts": [
+    {"text": "Un incidente grave è stato dichiarato poco dopo le 22 di domenica alla Co-op Live.", "who": ["Polizia di Greater Manchester"]},
+    {"text": "Nel pubblico del concerto di Don Toliver è stata rilasciata una sostanza non identificata.", "who": ["Polizia di Greater Manchester"]},
+    {"text": "Una persona è stata portata in ospedale.", "who": ["Autorità"]},
+    {"text": "Migliaia di persone sono state evacuate.", "who": ["Autorità"]}
+  ],
+  "view": "Si può dire con certezza che l'arena è stata evacuata e che la polizia ha dichiarato un incidente grave. Non si sa quale sostanza sia stata rilasciata né da chi.\n\nL'episodio pone una questione di sicurezza per la più grande arena coperta del Paese. Da guardare: gli esiti delle analisi sulla sostanza e gli aggiornamenti della polizia.",
+  "open": [
+    "Quale sostanza è stata rilasciata?",
+    "Quante persone hanno avuto sintomi?",
+    "Chi ha agito e perché?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert", "angle": "Dal feed: incidente grave, sintomi agli occhi e respiratori, ipotesi iniziale di gas lacrimogeno.", "at": "2026-11-23T03:27:53+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://news.sky.com/story/concert-goers-evacuated-from-manchester-co-op-live-as-major-incident-declared-13615479", "angle": "Dal feed: migliaia di persone evacuate.", "at": "2026-11-23T02:49:00+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o", "angle": "Dal feed: una persona in ospedale.", "at": "2026-11-23T04:21:50+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: evacuata la Co-op Live di Manchester dopo il rilascio di una sostanza non identificata."}
+  ],
+  "tags": ["Regno Unito", "Cronaca", "Sicurezza"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

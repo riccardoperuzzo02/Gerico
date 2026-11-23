@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-23-fr-choose-france-42-miliardi",
+  "title": "Francia: al vertice Choose France 273 progetti industriali per 42,5 miliardi",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.8191, "lon": 2.3396},
+  "photo": {"wiki": "fr", "title": "Cité internationale universitaire de Paris"},
+  "rank": 305,
+  "summary": "Il vertice di oggi a Parigi è dedicato alle imprese francesi. Solo 81 progetti sono nuovi, e gli investimenti delle imprese sono fermi.",
+  "article": "Si tiene oggi a Parigi, alla Cité internationale universitaire, il vertice Choose France: l'Eliseo, la presidenza della Repubblica, ha detto che saranno presentati 273 progetti industriali, di cui 81 nuovi, per 42,5 miliardi di euro. Questa edizione è dedicata alle imprese francesi che investono nel Paese.\n\nLa cifra somma progetti già annunciati e progetti nuovi. Il ministro dell'Industria, Sébastien Martin, ha detto che i progetti nuovi saranno più di cinquanta, senza dare il totale. Ci saranno oltre 200 dirigenti di grandi gruppi, piccole e medie imprese e start-up. Tra gli esempi citati ci sono la fabbrica di razzi riutilizzabili di MaiaSpace a Vernon, già annunciata a gennaio, e un investimento da 30 milioni di euro di NeoCem, nell'Oise, per raddoppiare la produzione di componenti per cemento a basse emissioni.\n\nSecondo le fonti lette, gli investimenti delle imprese in Francia sono fermi e il Paese è in ritardo rispetto ad altri membri dell'Ue. Roland Lescure ha detto che il vertice serve a fare il punto sui risultati, per questo alcuni investimenti non sono nuovi. Alcuni candidati alla presidenziale del 2027, tra cui gli ex primi ministri Édouard Philippe e Gabriel Attal, criticano il bilancio industriale di Macron.",
+  "facts": [
+    {"text": "273 progetti industriali, di cui 81 nuovi, per 42,5 miliardi di euro.", "who": ["Eliseo"]},
+    {"text": "Il ministro dell'Industria dice che i progetti nuovi saranno più di cinquanta.", "who": ["Sébastien Martin"]},
+    {"text": "La cifra somma progetti già annunciati e nuovi.", "who": ["Fonti ufficiali"]},
+    {"text": "Philippe e Attal criticano il bilancio industriale di Macron.", "who": ["Édouard Philippe", "Gabriel Attal"]}
+  ],
+  "view": "Si può dire con certezza che il totale di 42,5 miliardi include progetti già noti e che l'Eliseo conta 81 progetti nuovi. Non si sa quanti euro siano davvero nuovi.\n\nÈ l'ultima edizione del vertice prima della presidenziale del 2027 e riguarda la politica economica di Macron. Da guardare: il totale dei progetti nuovi comunicato dal governo e le risposte dei candidati.",
+  "open": [
+    "Quanti dei 42,5 miliardi sono investimenti nuovi?",
+    "Quali occupazioni creeranno i progetti?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.franceinfo.fr/economie/industrie/nouveaux-projets-d-investissement-derniere-vitrine-du-macronisme-ce-qu-il-faut-savoir-avant-le-sommet-choose-france-qui-a-lieu-lundi_8294753.html", "angle": "Articolo letto: cifre, esempi, contesto e critiche.", "at": "2026-11-23T05:02:42+00:00"},
+    {"name": "France 24", "kind": "tv", "country": "Francia", "area": "Europa", "url": "https://www.france24.com/fr/france/20261122-choose-france-entreprises-fran%C3%A7aises-pr%C3%AAtent-investir-42-5-milliards-euros-emmanuel-macron-%C3%A9conomie-investissements-projet", "angle": "Dal feed: i 42,5 miliardi annunciati dall'Eliseo, più di 200 progetti.", "at": "2026-11-22T19:58:34+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: oggi il vertice Choose France con 273 progetti per 42,5 miliardi."}
+  ],
+  "tags": ["Francia", "Economia", "Industria"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

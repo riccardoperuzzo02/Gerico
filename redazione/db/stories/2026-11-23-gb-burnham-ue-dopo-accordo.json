@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-23-gb-burnham-ue-dopo-accordo",
+  "title": "Regno Unito: Burnham riferisce ai Comuni sull'accordo Ue, May e Tory contrari",
+  "photo": {"wiki": "it", "title": "Palazzo di Westminster"},
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "prev": "2026-11-21-gb-accordo-ue-burnham",
+  "city": {"name": "Londra", "lat": 51.5014, "lon": -0.1246},
+  "rank": 203,
+  "summary": "Il primo ministro parla oggi in Parlamento dell'intesa di venerdì. I conservatori dicono che la cancelleranno, mentre Downing Street nega di voler rallentare sui legami futuri con l'Ue.",
+  "article": "Il primo ministro britannico Andy Burnham riferisce oggi ai deputati dell'accordo raggiunto venerdì con l'Unione europea. Secondo le anticipazioni del governo, dirà che l'intesa è una «scelta tra uno status quo che non funziona e il cambiamento» e che può rendere il prossimo decennio «molto migliore».\n\nDomenica l'ex premier conservatrice Theresa May si è detta «sgomenta» all'idea di un possibile rientro nell'Ue e ha detto che il Paese dovrebbe «accettare la Brexit e andare avanti». Alex Burghart, vice del Partito conservatore, ha detto che i Tory cancellerebbero l'accordo e che non farà scendere i prezzi nei negozi. Il ministro degli Esteri Ed Miliband sostiene invece che i legami più stretti daranno al Regno Unito voce nelle decisioni prese a Bruxelles.\n\nFunzionari di governo citati dalla stampa britannica dicono che Burnham non fa marcia indietro: l'esecutivo vuole lasciare «respirare» l'intesa commerciale, ma le opzioni sui rapporti a lungo termine, compreso il rientro, saranno presentate entro l'anno. Alcuni produttori alimentari britannici hanno accolto con favore l'intesa, che dovrebbe eliminare gran parte dei controlli su cibo, piante e prodotti animali, ma criticano i tempi lunghi di applicazione.\n\nLe fonti lette non dicono quando l'intesa sarà in vigore né quali opzioni il governo proporrà sul rientro.",
+  "facts": [
+    {"text": "Burnham riferisce oggi ai Comuni sull'accordo con l'Ue concluso venerdì.", "who": ["Governo britannico"]},
+    {"text": "Theresa May si dice «sgomenta» all'idea di rientrare nell'Ue.", "who": ["Theresa May"]},
+    {"text": "Alex Burghart dice che i conservatori cancellerebbero l'accordo.", "who": ["Alex Burghart"]},
+    {"text": "Funzionari di governo dicono che non c'è un rallentamento sui legami futuri con l'Ue.", "who": ["Funzionari di governo"]}
+  ],
+  "view": "Si può dire con certezza che l'accordo divide già i partiti e che Burnham ne parla oggi in Parlamento. Le fonti non chiariscono se i tempi sul rientro si siano allungati: il governo lo nega.\n\nLa questione europea torna al centro del dibattito britannico e mette i conservatori in difficoltà sulla linea da tenere. Da guardare: le parole di Burnham ai Comuni, le opzioni promesse entro l'anno e la decisione sulle rette universitarie.",
+  "open": [
+    "Quando entrerà in vigore l'intesa su cibo e piante?",
+    "Quali opzioni presenterà il governo sui rapporti futuri con l'Ue?",
+    "Le rette universitarie bloccheranno l'applicazione dell'accordo?"
+  ],
+  "sources": [
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Europa", "url": "https://www.bbc.co.uk/news/articles/cmde1dy82lepo", "angle": "Dal feed: le parole che Burnham dirà ai deputati oggi.", "at": "2026-11-23T07:01:31+00:00"},
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Europa", "url": "https://www.theguardian.com/politics/2026/nov/23/andy-burnham-not-backtracking-creating-closer-links-eu-officials-say", "angle": "Dal feed: il governo nega di rallentare sui legami futuri con l'Ue.", "at": "2026-11-23T06:00:50+00:00"}
+  ],
+  "firstSeen": "2026-11-23T09:49:00+01:00",
+  "updated": "2026-11-23T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-23T09:49:00+01:00", "text": "Prima notizia: Burnham riferisce ai Comuni sull'accordo con l'Ue, le critiche di May e dei Tory."}
+  ],
+  "tags": ["Regno Unito", "Unione europea", "Governo"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

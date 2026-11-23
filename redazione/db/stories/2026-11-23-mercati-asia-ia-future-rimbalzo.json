@@ -1,0 +1,39 @@
+{
+ "title": "Borse: Seul cede il 3%, Taipei rimbalza e i future Usa salgono",
+ "section": "mercati",
+ "rank": 4,
+ "status": "live",
+ "summary": "Lunedì le Borse asiatiche sono miste dopo il crollo dei titoli legati all'intelligenza artificiale: Seul cede il 3,2%, Taipei guadagna il 2,5%. I future di Wall Street salgono di oltre il 2%.",
+ "article": "Lunedì mattina le Borse asiatiche hanno reagito in ordine sparso al crollo di venerdì a Wall Street. Il Kospi di Seul perdeva il 3,2% a metà giornata, dopo essere arrivato a cedere fino al 5,8%. L'indice Hang Seng di Hong Kong cedeva circa lo 0,6% e il CSI 300 di Shanghai lo 0,6%, dopo cali iniziali più ampi. Il Taiex di Taipei, aperto in ribasso, ha recuperato fino a un rialzo del 2,5%. Tokyo era chiusa per una festività.\n\nVenerdì Kospi, Nikkei e Taiex avevano chiuso con perdite tra il 5,1% e il 6,2%, e l'Hang Seng dell'1,9%. A Wall Street l'S&P 500 era sceso del 3,7% e il Nasdaq del 5,3%, cancellando i guadagni del 2026. Tutti e tre i principali indici hanno chiuso in territorio di correzione, e la settimana è stata la peggiore per Nasdaq e Dow Jones in più di sei anni, mentre per l'S&P 500 è stata il calo settimanale più ampio da aprile 2025.\n\nLunedì mattina i future sono in rialzo: quelli sull'S&P 500 guadagnano il 2,2%, quelli sul Nasdaq 100 il 3%, quelli sul Dow Jones circa 1,5%, pari a circa 745 punti. Gli investitori si chiedono se il minimo sia stato toccato.\n\nTra le cause citate ci sono i dubbi sulla sostenibilità di una spesa in infrastrutture di intelligenza artificiale da migliaia di miliardi di dollari, in parte finanziata con debito. La società di ricerca Gartner stima investimenti globali legati all'intelligenza artificiale per 2.700 miliardi di dollari nel 2026 e 3.600 miliardi nel 2027. Pesano anche la vittoria dei democratici alle elezioni di metà mandato, che secondo le attese rallenterà la costruzione di data center negli Stati Uniti, e le notizie sull'indagine che coinvolge Nvidia e i suoi chip venduti alla Cina.\n\nRajat Agarwal, stratega azionario per l'Asia di Société Générale, dice che i mercati stanno cercando di capire se la correzione sia «andata troppo oltre» e che il calo di venerdì è stato un evento oltre le tre deviazioni standard. Khoon Goh, responsabile della ricerca per l'Asia di Anz, afferma che i timori sull'intelligenza artificiale domineranno la settimana, e ricorda che le esportazioni di semiconduttori della Corea del Sud sono cresciute del 294,4% annuo nei primi 20 giorni di novembre.\n\nLa settimana è accorciata: giovedì i mercati americani sono chiusi per il Ringraziamento e venerdì la seduta termina all'una del pomeriggio a New York. Lunedì dopo la chiusura riferisce i conti Hewlett Packard Enterprise, martedì Best Buy, Dell e Workday.",
+ "facts": [
+  {"text": "Lunedì il Kospi cedeva il 3,2% a metà giornata dopo un calo massimo del 5,8%; il Taiex saliva del 2,5%.", "who": ["Al Jazeera"]},
+  {"text": "Venerdì l'S&P 500 ha perso il 3,7% e il Nasdaq il 5,3%; la settimana è la peggiore per Nasdaq e Dow in oltre sei anni.", "who": ["Al Jazeera", "CNBC"]},
+  {"text": "I future sull'S&P 500 salgono di circa il 2,2% e quelli sul Nasdaq 100 del 3% nelle prime ore di lunedì.", "who": ["Al Jazeera", "CNBC"]},
+  {"text": "Gartner stima investimenti in intelligenza artificiale per 2.700 miliardi di dollari nel 2026.", "who": ["Al Jazeera"]},
+  {"text": "Giovedì i mercati Usa sono chiusi per il Ringraziamento e venerdì la seduta finisce all'una.", "who": ["CNBC"]}
+ ],
+ "view": "Sono certi i movimenti di venerdì e i rialzi dei future di lunedì mattina; i dati asiatici sono in corso di seduta e vanno letti come tali. Le cause indicate sono ipotesi degli analisti, non dati: non c'è prova di un legame diretto tra ciascuna notizia e i prezzi.\n\nIl rimbalzo dei future non dice se la fase di vendite sia finita. Da guardare: l'apertura di Wall Street, le notizie su Nvidia, i conti delle aziende della settimana e i dati americani di mercoledì.",
+ "open": [
+  "I future in rialzo si tradurranno in un rimbalzo anche all'apertura di Wall Street?",
+  "Come chiuderanno Seul e Hong Kong lunedì?",
+  "Gli sviluppi su Nvidia cambieranno il sentimento sui titoli dell'intelligenza artificiale?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount", "angle": "I movimenti delle Borse asiatiche e le voci degli analisti di Société Générale e Anz.", "date": "2026-11-23"},
+  {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html", "angle": "I future di Wall Street, il bilancio della settimana e il calendario dei conti.", "date": "2026-11-22"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/20/wall-street-chiude-in-forte-calo.-dj-203-nasdaq-537_2603c36d-1094-48af-b17a-590d5705aa0b.html", "angle": "La chiusura di Wall Street di venerdì 20 novembre.", "date": "2026-11-20"} ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Wall Street", "Intelligenza artificiale", "Borse", "Asia"],
+ "themes": ["borse-ia"],
+ "places": ["KR", "US", "TW", "CN"],
+ "city": {"name": "Seul", "lat": 37.57, "lon": 126.98},
+ "prev": "2026-11-21-us-wall-street-nasdaq-crollo",
+ "figure": {"value": "+2,2%", "label": "i future sull'S&P 500 nelle prime ore di lunedì"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: Borse asiatiche miste e future Usa in rialzo dopo il crollo di venerdì."}
+ ]
+}

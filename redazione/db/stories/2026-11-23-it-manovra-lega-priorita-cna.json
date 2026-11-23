@@ -1,0 +1,38 @@
+{
+ "title": "Manovra: oggi il vaglio sugli emendamenti, la Lega indica le sue priorità",
+ "section": "economia",
+ "rank": 11,
+ "status": "live",
+ "summary": "La commissione Bilancio della Camera esamina oggi l'ammissibilità di circa 7.000 emendamenti alla legge di bilancio. Per la Cna, otto misure su dieci a sostegno delle imprese prorogano strumenti esistenti.",
+ "article": "Lunedì 23 novembre la commissione Bilancio della Camera fa il primo esame di ammissibilità sui circa 7.000 emendamenti depositati dai gruppi alla legge di bilancio, il record della legislatura, secondo fonti parlamentari. Il termine per presentarli era scaduto il 17 novembre. Dopo il vaglio ogni gruppo sceglie le proposte prioritarie; le fonti non indicano ancora le date del voto in commissione e in aula.\n\nDomenica il vicepremier e segretario della Lega, Matteo Salvini, ha scritto nella newsletter del partito che la Lega ha portato al tavolo sulla manovra le sue priorità: meno tasse, pensioni più giuste, più sicurezza e sostegno alle famiglie. Tra le proposte ci sono la riapertura della rottamazione delle cartelle, quota 64 per l'uscita anticipata dal lavoro, un contributo aggiuntivo delle grandi banche e l'aumento a 10.000 dei militari del programma Strade sicure.\n\nLa Cna, la confederazione dell'artigianato, ha analizzato 50 bonus e incentivi per il 2027: solo sette sono nuovi, 33 sono proroghe, rifinanziamenti o modifiche di strumenti esistenti. Sei misure valgono circa l'89% degli importi lordi del campione, tra cui la Carta per gli anziani, per 1,645 miliardi di euro, e il credito d'imposta per gli investimenti nella Zes unica, per 1,4 miliardi. La Cna osserva che la misura media vale circa 205 milioni di euro, mentre la mediana è di 31 milioni.\n\nTra gli emendamenti segnalati dalle fonti parlamentari, la Lega propone un rimborso per gli spazzolini elettrici e Forza Italia un credito d'imposta per i locali con la birra alla spina. Poche proposte, avvertono le fonti parlamentari, arriveranno al voto.",
+ "facts": [
+  {"text": "Lunedì la commissione Bilancio della Camera esamina l'ammissibilità di circa 7.000 emendamenti.", "who": ["Open", "Teleborsa"]},
+  {"text": "Salvini indica come priorità della Lega meno tasse, rottamazione, quota 64 e un contributo delle banche.", "who": ["ANSA"]},
+  {"text": "Secondo la Cna, di 50 misure del 2027 sette sono nuove e 33 sono proroghe o modifiche.", "who": ["ANSA"]},
+  {"text": "Sei misure valgono circa l'89% degli importi lordi dell'analisi Cna.", "who": ["ANSA"]}
+ ],
+ "view": "Sono certi il numero indicativo degli emendamenti e la data del primo vaglio; non si sa quanti saranno ammessi né quali la maggioranza vorrà votare. Le analisi della Cna riguardano un campione di misure per le imprese e non l'intera manovra.\n\nLe richieste della Lega mostrano dove la maggioranza può cercare modifiche. Da guardare: l'elenco degli inammissibili, il termine per segnalare le proposte prioritarie e la risposta del governo sulle coperture.",
+ "open": [
+  "Quanti emendamenti saranno dichiarati inammissibili?",
+  "Quando voterà la commissione Bilancio?",
+  "Il governo accoglierà la richiesta di un contributo aggiuntivo delle banche?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/22/salvini-meno-tasse-e-pensioni-piu-giuste-le-priorita-della-lega-al-tavolo_16d9362a-b633-4c5b-ab96-c7995e1c7066.html", "angle": "Le priorità della Lega per la manovra e, in un altro articolo, l'analisi della Cna sulle misure per le imprese.", "date": "2026-11-22"},
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/21/legge-bilancio-7mila-emendamenti-quali-sono/", "angle": "Le proposte più curiose di maggioranza e opposizione e il calendario del vaglio.", "date": "2026-11-21"},
+  {"name": "Teleborsa", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.teleborsa.it/News/2026/11/17/pioggia-di-emendamenti-sulla-manovra-depositati-oltre-7000-219.html", "angle": "Il deposito di oltre 7.000 emendamenti alla scadenza del 17 novembre.", "date": "2026-11-17"}
+ ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Manovra", "Conti pubblici", "Parlamento"],
+ "themes": [],
+ "places": ["IT"],
+ "prev": "2026-11-22-it-manovra-emendamenti-ammissibilita",
+ "photo": {"wiki": "it", "title": "Palazzo Montecitorio"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: vaglio sugli emendamenti, priorità della Lega e analisi della Cna."}
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "title": "Polonia: i tre oggetti entrati venerdì erano missili russi Kh-101",
+ "section": "mondo",
+ "rank": 6,
+ "status": "live",
+ "summary": "La procura di Lublino dice che i tre oggetti entrati nello spazio aereo polacco venerdì erano missili da crociera russi. Lunedì il Consiglio Nord Atlantico si riunisce a Bruxelles.",
+ "article": "Domenica i procuratori polacchi hanno confermato che i tre oggetti entrati venerdì nello spazio aereo della Polonia erano missili da crociera russi Kh-101. I resti sono stati trovati in tre località dell'est del paese, vicino al confine con l'Ucraina, secondo la procura distrettuale di Lublino. Le analisi preliminari dei detriti indicano che i missili furono prodotti nel quarto trimestre del 2026 in stabilimenti a Dubna, nella regione di Mosca. Le fonti non riferiscono danni né vittime.\n\nIl governo ha chiesto alla procura di Lublino di indagare. Dichiarazioni precedenti avevano detto che uno degli oggetti era probabilmente un drone. Il segretario generale della Nato, Mark Rutte, ha detto sabato che «la Nato difenderà ogni centimetro del territorio polacco». Il Consiglio Nord Atlantico, l'organo politico dell'Alleanza, si riunisce lunedì a Bruxelles per discutere la violazione dello spazio aereo. Nelle fonti consultate non c'è una dichiarazione della Russia.\n\nLunedì la Polonia ha anche detto che i servizi russi hanno tentato per la seconda volta di uccidere lo stesso rapper ucraino-americano. Secondo il ministero degli Esteri polacco, un cittadino russo, che sarebbe stato reclutato da Mosca, è stato fermato il 7 agosto, e il primo ministro Donald Tusk aveva parlato il 13 agosto di un piano sventato a Varsavia, senza nominare il bersaglio. La persona è, secondo i media danesi, Albert Vasiliev, in arte Kyivstoner, cittadino ucraino e americano. Il portavoce degli Esteri, Maciej Wewior, ha confermato il piano.\n\nLa Danimarca, a sua volta, ha espulso un diplomatico russo accusando i servizi di Mosca di aver pianificato l'omicidio di Vasiliev a un concerto di settembre in un sobborgo di Copenaghen. Il servizio di sicurezza danese, il Pet, sospetta che la Russia abbia usato una banda vietata. Due danesi sono accusati di aver aiutato un servizio di intelligence straniero e di tentato omicidio. L'ambasciata russa a Copenaghen definisce le accuse prive di prove. L'Fsb, il servizio di sicurezza russo, accusa invece Vasiliev di aver fornito droni per un presunto attacco ucraino a un'azienda della difesa nella regione di Mosca, sostenendo che agisse per conto dei servizi ucraini; Vasiliev lo nega, secondo l'emittente danese Dr. Copenaghen valuta di sospendere i visti Schengen ai russi, cosa che la Polonia appoggia.",
+ "facts": [
+  {"text": "La procura di Lublino dice che i tre oggetti entrati in Polonia venerdì erano missili russi Kh-101.", "who": ["Reuters", "Kyiv Independent"]},
+  {"text": "I resti sono stati trovati in tre località nell'est della Polonia.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "Rutte ha detto che la Nato difenderà ogni centimetro del territorio polacco; il Consiglio Nord Atlantico si riunisce lunedì.", "who": ["Reuters"]},
+  {"text": "Il ministero degli Esteri polacco dice che è il secondo tentativo di uccidere lo stesso rapper ucraino-americano.", "who": ["Al Jazeera"]},
+  {"text": "La Danimarca ha espulso un diplomatico russo; l'ambasciata russa nega.", "who": ["Al Jazeera"]}
+ ],
+ "view": "Sono confermati dai procuratori polacchi il tipo dei missili e il luogo dei ritrovamenti; non è noto se l'ingresso sia stato intenzionale né come siano arrivati fin lì. Sul rapper, le accuse sono di Polonia e Danimarca e Mosca le respinge o ribalta.\n\nLe due vicende cadono nello stesso fine settimana e interessano due paesi della Nato e dell'Ue. Da guardare: la riunione del Consiglio Nord Atlantico, la risposta di Mosca e la decisione sui visti Schengen per i russi.",
+ "open": [
+  "I missili sono entrati in Polonia per errore o volontariamente?",
+  "Che cosa deciderà il Consiglio Nord Atlantico lunedì?",
+  "Come risponderà la Russia alle accuse di Polonia e Danimarca sul rapper?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/22/three-russian-missiles-flew-into-poland-friday-prosecutors-say", "angle": "I tre missili Kh-101, la produzione a Dubna e le parole di Rutte.", "date": "2026-11-22"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/polish-authorities-find-russian-missile-remains-at-three-sites-following-airspace-incursion/", "angle": "I ritrovamenti dei resti in tre siti dell'est della Polonia.", "date": "2026-11-23"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/23/poland-says-russia-tried-to-assassinate-ukrainian-rapper-twice", "angle": "Il piano contro il rapper ucraino-americano, l'espulsione danese e le versioni di Mosca.", "date": "2026-11-23"}
+ ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Polonia", "Russia", "Nato", "Ucraina"],
+ "themes": ["ucraina"],
+ "places": ["PL", "RU", "DK", "UA"],
+ "city": {"name": "Lublino", "lat": 51.25, "lon": 22.57},
+ "prev": "2026-11-21-dk-russia-diplomatico-rapper",
+ "figure": {"value": "3", "label": "i missili Kh-101 entrati in Polonia venerdì"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: la procura polacca conferma i missili Kh-101; la Polonia parla di un secondo piano contro un rapper ucraino."}
+ ]
+}

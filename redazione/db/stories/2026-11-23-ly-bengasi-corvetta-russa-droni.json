@@ -1,0 +1,39 @@
+{
+ "title": "Libia: una corvetta russa colpita da droni nel porto di Bengasi",
+ "section": "mondo",
+ "rank": 7,
+ "status": "live",
+ "summary": "Nella notte tra sabato e domenica una nave militare russa ormeggiata a Bengasi è stata colpita da droni ed è quasi affondata. La missione Onu in Libia chiede un'indagine.",
+ "article": "Nella notte tra sabato 21 e domenica 22 novembre una nave militare russa ormeggiata nel porto di Bengasi, nell'est della Libia, è stata colpita da droni. L'attacco ha causato un'esplosione, un incendio e alcuni feriti. Immagini satellitari della società americana Vantor identificano la nave come la corvetta Merkury, che risulta quasi completamente affondata.\n\nLa nave era ferma per rifornirsi di carburante e cibo, in base a un accordo di cooperazione marittima tra Bengasi e Mosca. Il governo dell'est della Libia, che fa capo al generale Khalifa Haftar, ha comunicato l'attacco senza attribuire responsabilità, e dice che il porto, dove c'è anche una base navale, non ha subito danni. Rivendica la propria estraneità alla guerra tra Russia e Ucraina e condanna la violazione del territorio libico. Secondo funzionari libici dell'est, che sospettano un attacco con droni, i velivoli sarebbero partiti da una base nella Libia occidentale controllata da forze ucraine: è una ricostruzione preliminare, non verificata in modo indipendente.\n\nKyiv, secondo le fonti consultate, non ha commentato. Neanche la Russia ha fatto una dichiarazione ufficiale. Alcune ore dopo, secondo un'altra ricostruzione, un cargo russo carico di materiale bellico sarebbe stato colpito da droni al largo di Bengasi.\n\nLa missione delle Nazioni Unite in Libia ha chiesto un'indagine sull'episodio. Il giorno prima un cargo russo era stato attaccato da droni nel golfo di Finlandia, e le autorità finlandesi avevano attribuito l'attacco a droni ucraini. La Libia è divisa tra il governo di Tripoli, riconosciuto a livello internazionale e guidato da Abdul Hamid Dbeibah, e quello dell'est controllato da Haftar e dalla sua famiglia.",
+ "facts": [
+  {"text": "Una nave militare russa è stata colpita da droni nel porto di Bengasi nella notte tra il 21 e il 22 novembre.", "who": ["Il Post", "Al Jazeera", "Kyiv Independent"]},
+  {"text": "Immagini satellitari identificano la nave come la corvetta Merkury, quasi del tutto affondata.", "who": ["Al Jazeera", "Il Post"]},
+  {"text": "Funzionari libici dell'est dicono che i droni siano partiti da una base nella Libia occidentale controllata da forze ucraine; non è verificato.", "who": ["Il Post", "Kyiv Independent"]},
+  {"text": "La missione Onu in Libia chiede un'indagine.", "who": ["Euronews"]}
+ ],
+ "view": "È certo che una nave russa è stata colpita e gravemente danneggiata a Bengasi; non è accertato chi abbia lanciato i droni e da dove. L'attribuzione all'Ucraina viene da funzionari libici dell'est e non ha riscontri indipendenti né commenti ufficiali di Kyiv e Mosca.\n\nL'episodio porta il confronto tra Russia e Ucraina fuori dai teatri noti e dentro la divisione libica. Da guardare: le risposte di Mosca e Kyiv, l'indagine chiesta dall'Onu e le mosse delle due autorità libiche.",
+ "open": [
+  "Chi ha lanciato i droni e da quale base sono partiti?",
+  "Quanti sono i feriti e che danni ha subito la nave?",
+  "Come risponderanno Mosca e Kyiv?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/22/libia-bengasi-sospetto-attacco-nave-russa/", "angle": "La ricostruzione dell'attacco, la corvetta Merkury e il contesto libico.", "date": "2026-11-22"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/22/suspected-drone-strike-hits-russian-vessel-in-libya", "angle": "L'immagine satellitare della corvetta capovolta e l'attacco sospetto.", "date": "2026-11-22"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/russian-warship-docked-in-benghazi-hit-by-suspected-drone-attack-libyan-officials-say/", "angle": "Le fonti libiche sui droni ucraini; Kyiv non commenta.", "date": "2026-11-22"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/23/un-mission-in-libya-urges-probe-after-russian-ship-hit-by-drones-off-benghazi", "angle": "La richiesta di indagine della missione Onu in Libia.", "date": "2026-11-23"}
+ ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Libia", "Russia", "Ucraina", "Droni"],
+ "themes": ["ucraina"],
+ "places": ["LY", "RU", "UA"],
+ "city": {"name": "Bengasi", "lat": 32.12, "lon": 20.07},
+ "figure": {"value": "1", "label": "la corvetta russa quasi affondata a Bengasi"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: corvetta russa colpita da droni a Bengasi."}
+ ]
+}

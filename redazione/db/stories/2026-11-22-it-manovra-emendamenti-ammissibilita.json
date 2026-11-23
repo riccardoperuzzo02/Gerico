@@ -1,15 +1,36 @@
 {
  "title": "Manovra: circa 7.000 emendamenti, lunedì il primo vaglio in commissione",
  "section": "italia",
- "rank": 9,
- "status": "live",
+ "rank": 11,
+ "status": "archived",
  "summary": "I gruppi hanno depositato circa 7.000 emendamenti alla legge di bilancio. Lunedì la commissione Bilancio della Camera verifica quali sono ammissibili.",
  "article": "Lunedì 23 novembre la commissione Bilancio della Camera fa il primo esame di ammissibilità sui circa 7.000 emendamenti depositati dai gruppi parlamentari alla legge di bilancio, secondo fonti parlamentari. Il termine per presentarli era scaduto il 17 novembre.\n\nIl primo esame può ridurre di molto la lista. Dopo, ogni gruppo sceglie i propri emendamenti prioritari, e i capigruppo della maggioranza valutano le modifiche più rilevanti. Le fonti non indicano ancora le date del voto in commissione e in aula.\n\nTra le proposte della maggioranza ci sono, della Lega, un rimborso fino a 50 euro per gli spazzolini elettrici alle famiglie con Isee fino a 10.140 euro, per 1,8 milioni in tre anni, e, di Forza Italia, un credito d'imposta per i locali con la birra alla spina, fino a 5 milioni nel 2027. Tra quelle dell'opposizione, Azione chiede di abolire la maggiorazione del 25% sui redditi legati alla pornografia, stimata in 11,1 milioni l'anno dal 2027, e +Europa propone preservativi gratuiti nelle scuole superiori statali aderenti, con un milione nel 2027.\n\nCircolano anche proposte su una moratoria dei mutui per il settore del vino, una detrazione fino a 15.000 euro per i maestri di sci e una sanzione da 100 a 300 euro per chi non raccoglie le deiezioni degli animali. Le fonti non le attribuiscono a singoli partiti. Poche delle proposte, avvertono le fonti, arriveranno al voto.",
  "facts": [
-  {"text": "I gruppi hanno presentato circa 7.000 emendamenti alla legge di bilancio, secondo fonti parlamentari.", "who": ["Open", "Teleborsa"]},
-  {"text": "Lunedì la commissione Bilancio fa il primo esame di ammissibilità.", "who": ["Open"]},
-  {"text": "Dopo il vaglio ogni gruppo sceglie gli emendamenti prioritari.", "who": ["Open"]},
-  {"text": "Tra le proposte, un rimborso per gli spazzolini elettrici della Lega e un credito d'imposta per la birra alla spina di Forza Italia.", "who": ["Open"]}
+  {
+   "text": "I gruppi hanno presentato circa 7.000 emendamenti alla legge di bilancio, secondo fonti parlamentari.",
+   "who": [
+    "Open",
+    "Teleborsa"
+   ]
+  },
+  {
+   "text": "Lunedì la commissione Bilancio fa il primo esame di ammissibilità.",
+   "who": [
+    "Open"
+   ]
+  },
+  {
+   "text": "Dopo il vaglio ogni gruppo sceglie gli emendamenti prioritari.",
+   "who": [
+    "Open"
+   ]
+  },
+  {
+   "text": "Tra le proposte, un rimborso per gli spazzolini elettrici della Lega e un credito d'imposta per la birra alla spina di Forza Italia.",
+   "who": [
+    "Open"
+   ]
+  }
  ],
  "view": "È certo il numero indicativo e la data del primo vaglio. Non si sa quanti emendamenti passeranno l'ammissibilità né quali la maggioranza vorrà davvero votare.\n\nLa lista è lunga, ma contano i pochi emendamenti segnalati. Da guardare: l'elenco degli inammissibili di lunedì e il termine per segnalare le proposte prioritarie.",
  "open": [
@@ -18,19 +39,47 @@
   "Quali modifiche rilevanti vorrà introdurre la maggioranza?"
  ],
  "sources": [
-  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/21/legge-bilancio-7mila-emendamenti-quali-sono/", "angle": "Le proposte più curiose di maggioranza e opposizione e il calendario del vaglio di ammissibilità.", "date": "2026-11-21"},
-  {"name": "Teleborsa", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.teleborsa.it/News/2026/11/17/pioggia-di-emendamenti-sulla-manovra-depositati-oltre-7000-219.html", "angle": "Il deposito di oltre 7.000 emendamenti alla scadenza del 17 novembre.", "date": "2026-11-17"}
+  {
+   "name": "Open",
+   "kind": "giornale online",
+   "country": "Italia",
+   "area": "Italia",
+   "url": "https://www.open.online/2026/11/21/legge-bilancio-7mila-emendamenti-quali-sono/",
+   "angle": "Le proposte più curiose di maggioranza e opposizione e il calendario del vaglio di ammissibilità.",
+   "date": "2026-11-21"
+  },
+  {
+   "name": "Teleborsa",
+   "kind": "agenzia",
+   "country": "Italia",
+   "area": "Italia",
+   "url": "https://www.teleborsa.it/News/2026/11/17/pioggia-di-emendamenti-sulla-manovra-depositati-oltre-7000-219.html",
+   "angle": "Il deposito di oltre 7.000 emendamenti alla scadenza del 17 novembre.",
+   "date": "2026-11-17"
+  }
  ],
  "firstSeen": "2026-11-22T07:24:00+01:00",
  "updated": "2026-11-22T07:24:00+01:00",
  "change": "",
- "tags": ["Manovra", "Conti pubblici", "Parlamento"],
+ "tags": [
+  "Manovra",
+  "Conti pubblici",
+  "Parlamento"
+ ],
  "themes": [],
- "places": ["IT"],
- "photo": {"wiki": "it", "title": "Palazzo Montecitorio"},
+ "places": [
+  "IT"
+ ],
+ "photo": {
+  "wiki": "it",
+  "title": "Palazzo Montecitorio"
+ },
  "divergences": [],
  "notCovered": [],
  "history": [
-  {"at": "2026-11-22T07:24:00+01:00", "text": "Prima notizia: circa 7.000 emendamenti alla manovra, lunedì il vaglio di ammissibilità."}
+  {
+   "at": "2026-11-22T07:24:00+01:00",
+   "text": "Prima notizia: circa 7.000 emendamenti alla manovra, lunedì il vaglio di ammissibilità."
+  }
  ]
 }

@@ -1,31 +1,109 @@
 {
- "asOf": "2026-11-21T07:24:37+01:00",
- "label": "Chiusura di Wall Street",
- "summary": "Wall Street ha chiuso venerdì in forte ribasso: Nasdaq a meno 5,37%, S&P 500 a meno 3,81% e Dow Jones a meno 2,03%, secondo i primi dati di chiusura. Nvidia ha perso circa il 13% dopo le notizie su un'indagine della Sec. Le Borse sono chiuse nel fine settimana.",
+ "asOf": "2026-11-23T07:27:29+01:00",
+ "label": "Chiusure di venerdì e Asia stamattina",
+ "summary": "Lunedì le Borse asiatiche sono miste dopo il crollo di venerdì: Seul cede il 3,2% in corso di seduta, Taipei sale del 2,5%, Tokyo è chiusa. I future su S&P 500 e Nasdaq 100 salgono di oltre il 2%. Il Brent è a 92,35 dollari. Nessun consiglio di investimento.",
  "classes": [
   {
    "key": "indici",
    "label": "Indici",
    "items": [
-    {"name": "Dow Jones", "chg": -2.03, "value": "48.102", "note": "Chiusura del 20 novembre (Ansa)", "story": "2026-11-21-us-wall-street-nasdaq-crollo", "why": "Vendite sui titoli legati all'intelligenza artificiale."},
-    {"name": "S&P 500", "chg": -3.81, "value": "6.902", "note": "Chiusura del 20 novembre (Ansa)", "story": "2026-11-21-us-wall-street-nasdaq-crollo", "why": "Calo accelerato in corso di seduta."},
-    {"name": "Nasdaq", "chg": -5.37, "value": "22.597", "note": "Chiusura del 20 novembre (Ansa)", "story": "2026-11-21-us-wall-street-nasdaq-crollo", "why": "Pesa Nvidia dopo le notizie sull'indagine della Sec."},
-    {"name": "Ftse Mib", "chg": -2.48, "value": "48.703", "note": "Chiusura del 20 novembre (Ansa)", "story": "2026-11-21-us-wall-street-nasdaq-crollo", "why": "Pesano Stm e Technoprobe, timori sull'intelligenza artificiale."},
-    {"name": "Dax", "chg": -2.6, "value": "24.802", "note": "Chiusura del 20 novembre (Ansa)", "why": ""},
-    {"name": "Cac 40", "chg": -1.89, "value": "7.927", "note": "Chiusura del 20 novembre (Ansa)", "why": ""},
-    {"name": "Ftse 100", "chg": -1.02, "value": "10.346", "note": "Chiusura del 20 novembre (Ansa)", "why": ""},
-    {"name": "Nikkei 225", "chg": -5.0, "value": "n.d.", "note": "Chiusura di Tokyo del 20 novembre, circa -5% (Ansa)", "story": "2026-11-21-us-wall-street-nasdaq-crollo", "why": "Calo dei titoli legati all'intelligenza artificiale."},
-    {"name": "Kospi", "chg": -5.4, "value": "n.d.", "note": "In corso di seduta, 20 novembre (Al Jazeera)", "why": ""},
-    {"name": "Taiex", "chg": -6.8, "value": "n.d.", "note": "Oltre -6,8% in corso di seduta, 20 novembre (Al Jazeera)", "why": ""}
+    {
+     "name": "S&P 500",
+     "chg": -3.81,
+     "value": "6.902",
+     "note": "Chiusura di venerdì 20 novembre (Ansa); i future salgono del 2,2% lunedì (Al Jazeera, Cnbc)",
+     "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+     "why": "Vendite sui titoli legati all'intelligenza artificiale."
+    },
+    {
+     "name": "Nasdaq",
+     "chg": -5.37,
+     "value": "22.597",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+     "why": "Pesa Nvidia dopo l'esame della Sec sulla contabilità."
+    },
+    {
+     "name": "Dow Jones",
+     "chg": -2.03,
+     "value": "48.102",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+     "why": ""
+    },
+    {
+     "name": "Ftse Mib",
+     "chg": -2.48,
+     "value": "48.703",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "why": "Pesano Stm e Technoprobe."
+    },
+    {
+     "name": "Dax",
+     "chg": -2.6,
+     "value": "24.802",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "why": ""
+    },
+    {
+     "name": "Cac 40",
+     "chg": -1.89,
+     "value": "7.927",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "why": ""
+    },
+    {
+     "name": "Ftse 100",
+     "chg": -1.02,
+     "value": "10.346",
+     "note": "Chiusura di venerdì 20 novembre (Ansa)",
+     "why": ""
+    },
+    {
+     "name": "Kospi",
+     "chg": -3.2,
+     "value": "n.d.",
+     "note": "In corso di seduta lunedì 23 novembre, dopo un minimo a -5,8% (Al Jazeera)",
+     "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+     "why": "Timori sulla spesa in intelligenza artificiale."
+    },
+    {
+     "name": "Taiex",
+     "chg": 2.5,
+     "value": "n.d.",
+     "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
+     "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+     "why": "Rimbalzo dopo il calo di venerdì."
+    },
+    {
+     "name": "Hang Seng",
+     "chg": -0.6,
+     "value": "n.d.",
+     "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
+     "why": ""
+    },
+    {
+     "name": "Csi 300",
+     "chg": -0.6,
+     "value": "n.d.",
+     "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
+     "why": ""
+    }
    ],
-   "note": "Wall Street, Europa e Tokyo: chiusure del 20 novembre. Kospi e Taiex: valori in corso di seduta."
+   "note": "Wall Street ed Europa: chiusure di venerdì. Asia: valori in corso di seduta, Tokyo chiusa per festività."
   },
   {
    "key": "azioni",
    "label": "Azioni",
    "items": [
-    {"name": "Nvidia", "chg": -13, "value": "n.d.", "note": "20 novembre, dati Lseg (Reuters)", "story": "2026-11-21-us-nvidia-sec-contabilita", "why": "Notizie su un'indagine della Sec sulla contabilità."},
-    {"name": "Anthropic", "chg": -8.5, "value": "n.d.", "note": "Secondo giorno di quotazione, 20 novembre (Il Post)", "story": "2026-11-16-anthropic-ipo-nasdaq", "why": ""}
+    {
+     "name": "Nvidia",
+     "chg": -13,
+     "value": "n.d.",
+     "note": "Venerdì 20 novembre, dati Lseg (Reuters)",
+     "story": "2026-11-23-us-nvidia-alice-huang-megaspeed",
+     "why": "Notizie su un esame della Sec sulla contabilità."
+    }
    ],
    "note": ""
   },
@@ -33,9 +111,24 @@
    "key": "obbligazioni",
    "label": "Titoli di Stato",
    "items": [
-    {"name": "Spread Btp-Bund", "value": "109,9 bp", "note": "Chiusura del 20 novembre, 18:04 (Ansa)", "why": "Era a 103 all'apertura."},
-    {"name": "Btp 10 anni", "value": "4,4%", "note": "Chiusura del 20 novembre, 18:04 (Ansa)", "why": "Acquisti di titoli di Stato mentre si vendono le azioni legate all'Ia."},
-    {"name": "Bund 10 anni", "value": "3,3%", "note": "Chiusura del 20 novembre, 18:04 (Ansa)", "why": ""}
+    {
+     "name": "Spread Btp-Bund",
+     "value": "109,9 bp",
+     "note": "Chiusura del 20 novembre, 18:04 (Ansa)",
+     "why": "Era a 103 all'apertura di venerdì."
+    },
+    {
+     "name": "Btp 10 anni",
+     "value": "4,4%",
+     "note": "Chiusura del 20 novembre, 18:04 (Ansa)",
+     "why": ""
+    },
+    {
+     "name": "Bund 10 anni",
+     "value": "3,3%",
+     "note": "Chiusura del 20 novembre, 18:04 (Ansa)",
+     "why": ""
+    }
    ],
    "note": "Treasury non riportati nelle fonti di oggi"
   },
@@ -49,11 +142,37 @@
    "key": "materie",
    "label": "Materie prime",
    "items": [
-    {"name": "Petrolio (Wti)", "value": "84,03 $", "note": "Chiusura di New York del 20 novembre, in rialzo (Ansa)", "why": ""},
-    {"name": "Oro", "value": "3.550 $", "note": "20 novembre (Ansa): perso oltre il 9% in una settimana, minimo da 14 mesi", "why": "Secondo l'Ansa, gli investitori scontano un rialzo dei tassi della Fed."},
-    {"name": "Gas Ttf", "chg": 4.4, "value": "88 €/MWh", "note": "20 novembre, contratto di dicembre (Ansa)", "why": "Meno forniture dalla Norvegia e freddo previsto in Europa."}
+    {
+     "name": "Petrolio (Brent)",
+     "chg": -0.22,
+     "value": "92,35 $",
+     "note": "Primi scambi asiatici di lunedì 23 novembre (Cnbc)",
+     "story": "2026-11-23-ir-houthi-rabigh-trump-hormuz",
+     "why": "Attacchi nel Golfo e tensione su Hormuz."
+    },
+    {
+     "name": "Petrolio (Wti)",
+     "chg": -0.19,
+     "value": "83,25 $",
+     "note": "Primi scambi asiatici di lunedì 23 novembre (Cnbc)",
+     "story": "2026-11-23-ir-houthi-rabigh-trump-hormuz",
+     "why": ""
+    },
+    {
+     "name": "Oro",
+     "value": "3.550 $",
+     "note": "20 novembre (Ansa): perso oltre il 9% in una settimana, minimo da 14 mesi",
+     "why": "Secondo l'Ansa, gli investitori scontano un rialzo dei tassi della Fed."
+    },
+    {
+     "name": "Gas Ttf",
+     "chg": 4.4,
+     "value": "88 €/MWh",
+     "note": "20 novembre, contratto di dicembre (Ansa)",
+     "why": "Meno forniture dalla Norvegia e freddo previsto in Europa."
+    }
    ],
-   "note": "Brent senza dato datato di ieri o di oggi"
+   "note": "Oro e gas: ultimi dati datati di venerdì"
   },
   {
    "key": "cripto",
@@ -63,16 +182,45 @@
   }
  ],
  "sources": [
-  {"name": "ANSA, Wall Street chiude in forte calo, Dj -2,03%, Nasdaq -5,37% (20 novembre)", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/20/wall-street-chiude-in-forte-calo.-dj-203-nasdaq-537_2603c36d-1094-48af-b17a-590d5705aa0b.html"},
-  {"name": "ANSA, Il petrolio chiude in rialzo a New York a 84,03 dollari (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/il-petrolio-chiude-in-rialzo-a-new-york-a-8403-dollari_1bb340dd-a096-44c7-aab0-880c11445568.html"},
-  {"name": "Il Post, Anthropic in calo al secondo giorno di quotazione (20 novembre)", "url": "https://www.ilpost.it/2026/11/20/anthropic-azioni-perdita-valore-azioni/"},
-  {"name": "Reuters, Nvidia e l'indagine della Sec (20 novembre)", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/exclusive-nvidia-s-accounting-is-a-focus-of-us-sec-investigation-sources-say"},
-  {"name": "ANSA, Borsa: Milano chiude in forte ribasso, -2,48% (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-milano-chiude-in-forte-ribasso-248_35860291-56d0-487c-b1e3-4937dcc7fb74.html"},
-  {"name": "ANSA, Borsa: l'Europa chiude in rosso, bruciati 370 miliardi (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-leuropa-chiude-in-rosso-bruciati-370-miliardi_8ed8cd41-f081-42ee-9a80-a76c502c494c.html"},
-  {"name": "ANSA, Crollo di oltre il 5% alla Borsa di Tokyo (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/crollo-di-oltre-il-5-alla-borsa-di-tokyo-per-i-timori-sullintelligenza-artificiale_4d6646d7-d589-4024-926a-7e80db3e09c1.html"},
-  {"name": "ANSA, Lo spread tra Btp e Bund chiude in rialzo a 109,9 punti (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/lo-spread-tra-btp-e-bund-tedeschi-chiude-in-rialzo-a-1099-punti_e794a9ce-e923-456f-bd03-559894f77b11.html"},
-  {"name": "ANSA, L'oro crolla a 3.550 dollari (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/loro-crolla-a-3.550-dollari-in-una-settimana-perso-oltre-il-9_b0efb821-9e09-4975-b7ff-3e6239c73c38.html"},
-  {"name": "ANSA, Il gas sale ancora e supera gli 88 euro (20 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/il-gas-sale-ancora-e-supera-gli-88-euro-sulla-piazza-ttf-di-amsterdam_0e26f329-ba37-43e2-b910-b92119eea56a.html"},
-  {"name": "Al Jazeera, Asia's stock markets dive (20 novembre)", "url": "https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears"}
+  {
+   "name": "Al Jazeera, Asian stock markets tumble as AI bubble fears mount (23 novembre)",
+   "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount"
+  },
+  {
+   "name": "CNBC, Stock market today (22 novembre)",
+   "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+  },
+  {
+   "name": "CNBC, Houthis claim attacks on Saudi oil refinery (23 novembre)",
+   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html"
+  },
+  {
+   "name": "ANSA, Wall Street chiude in forte calo, Dj -2,03%, Nasdaq -5,37% (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/20/wall-street-chiude-in-forte-calo.-dj-203-nasdaq-537_2603c36d-1094-48af-b17a-590d5705aa0b.html"
+  },
+  {
+   "name": "ANSA, Borsa: Milano chiude in forte ribasso, -2,48% (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-milano-chiude-in-forte-ribasso-248_35860291-56d0-487c-b1e3-4937dcc7fb74.html"
+  },
+  {
+   "name": "ANSA, Borsa: l'Europa chiude in rosso, bruciati 370 miliardi (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-leuropa-chiude-in-rosso-bruciati-370-miliardi_8ed8cd41-f081-42ee-9a80-a76c502c494c.html"
+  },
+  {
+   "name": "ANSA, Lo spread tra Btp e Bund chiude in rialzo a 109,9 punti (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/lo-spread-tra-btp-e-bund-tedeschi-chiude-in-rialzo-a-1099-punti_e794a9ce-e923-456f-bd03-559894f77b11.html"
+  },
+  {
+   "name": "ANSA, L'oro crolla a 3.550 dollari (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/loro-crolla-a-3.550-dollari-in-una-settimana-perso-oltre-il-9_b0efb821-9e09-4975-b7ff-3e6239c73c38.html"
+  },
+  {
+   "name": "ANSA, Il gas sale ancora e supera gli 88 euro (20 novembre)",
+   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/il-gas-sale-ancora-e-supera-gli-88-euro-sulla-piazza-ttf-di-amsterdam_0e26f329-ba37-43e2-b910-b92119eea56a.html"
+  },
+  {
+   "name": "Reuters, Nvidia e l'indagine della Sec (20 novembre)",
+   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/20/exclusive-nvidia-s-accounting-is-a-focus-of-us-sec-investigation-sources-say"
+  }
  ]
 }

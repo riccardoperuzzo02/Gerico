@@ -1,8 +1,122 @@
 {
- "date": "2026-11-22",
- "asOf": "2026-11-22T07:24:30+01:00",
- "items": [],
+ "date": "2026-11-23",
+ "asOf": "2026-11-23T07:27:29+01:00",
+ "items": [
+  {
+   "time": "09:15",
+   "country": "Francia",
+   "currency": "EUR",
+   "event": "Pmi manifatturiero, stima preliminare",
+   "expected": "49,8",
+   "previous": "49,3",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "09:15",
+   "country": "Francia",
+   "currency": "EUR",
+   "event": "Pmi servizi, stima preliminare",
+   "expected": "47,4",
+   "previous": "48,4",
+   "actual": "",
+   "impact": "medio"
+  },
+  {
+   "time": "09:30",
+   "country": "Germania",
+   "currency": "EUR",
+   "event": "Pmi manifatturiero, stima preliminare",
+   "expected": "54,1",
+   "previous": "54,2",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "09:30",
+   "country": "Germania",
+   "currency": "EUR",
+   "event": "Pmi servizi, stima preliminare",
+   "expected": "52,4",
+   "previous": "51,7",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "10:00",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Pmi manifatturiero, stima preliminare",
+   "expected": "52,7",
+   "previous": "52,4",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "10:00",
+   "country": "Area euro",
+   "currency": "EUR",
+   "event": "Pmi servizi, stima preliminare",
+   "expected": "51,8",
+   "previous": "51,7",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "10:30",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Pmi manifatturiero, stima preliminare",
+   "expected": "53,0",
+   "previous": "52,8",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "10:30",
+   "country": "Regno Unito",
+   "currency": "GBP",
+   "event": "Pmi servizi, stima preliminare",
+   "expected": "53,0",
+   "previous": "53,1",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "15:45",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Pmi manifatturiero S&P Global, stima preliminare",
+   "expected": "54,5",
+   "previous": "56,0",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "15:45",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Pmi servizi S&P Global, stima preliminare",
+   "expected": "55,6",
+   "previous": "57,9",
+   "actual": "",
+   "impact": "alto"
+  },
+  {
+   "time": "22:00",
+   "country": "Stati Uniti",
+   "currency": "USD",
+   "event": "Discorso di John Williams, Fed",
+   "expected": "",
+   "previous": "",
+   "actual": "",
+   "impact": "basso"
+  }
+ ],
  "sources": [
-  {"name": "Calendario macroeconomico della settimana", "url": "https://www.forexfactory.com/calendar"}
+  {
+   "name": "Calendario macroeconomico della settimana",
+   "url": "https://www.forexfactory.com/calendar"
+  }
  ]
 }

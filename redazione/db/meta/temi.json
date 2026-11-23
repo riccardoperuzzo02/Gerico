@@ -1,23 +1,44 @@
 {
-  "asOf": "2026-11-21T07:21:27+01:00",
-  "temi": [
-    {
-      "id": "iran-usa",
-      "keywords": ["Iran", "Teheran", "Hormuz", "Qeshm", "Iron Gate", "houthi"],
-      "label": "Iran-Usa",
-      "since": "2026-11-09"
-    },
-    {
-      "id": "ucraina",
-      "keywords": ["Ucrain", "Kiev", "Kyiv", "Zaporizh", "Cremlino", "Ryabkov"],
-      "label": "Ucraina",
-      "since": "2026-11-09"
-    },
-    {
-      "id": "borse-ia",
-      "keywords": ["Nvidia", "Nasdaq", "Wall Street", "Anthropic", "intelligenza artificiale", "Borse"],
-      "label": "Borse e Ia",
-      "since": "2026-11-09"
-    }
-  ]
+ "asOf": "2026-11-23T07:27:29+01:00",
+ "temi": [
+  {
+   "id": "iran-usa",
+   "keywords": [
+    "Iran",
+    "Teheran",
+    "Hormuz",
+    "Qeshm",
+    "Iron Gate",
+    "houthi"
+   ],
+   "label": "Iran-Usa",
+   "since": "2026-11-09"
+  },
+  {
+   "id": "ucraina",
+   "keywords": [
+    "Ucrain",
+    "Kiev",
+    "Kyiv",
+    "Zaporizh",
+    "Cremlino",
+    "Ryabkov"
+   ],
+   "label": "Ucraina",
+   "since": "2026-11-09"
+  },
+  {
+   "id": "borse-ia",
+   "keywords": [
+    "Nvidia",
+    "Nasdaq",
+    "Wall Street",
+    "Anthropic",
+    "intelligenza artificiale",
+    "Borse"
+   ],
+   "label": "Borse e Ia",
+   "since": "2026-11-09"
+  }
+ ]
 }

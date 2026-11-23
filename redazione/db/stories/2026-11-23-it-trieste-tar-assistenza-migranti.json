@@ -1,0 +1,34 @@
+{
+ "title": "Trieste: il Tar sospende il divieto di assistere i migranti in piazza della Libertà",
+ "section": "italia",
+ "rank": 16,
+ "status": "archived",
+ "summary": "Il Tar del Friuli Venezia Giulia ha sospeso in via provvisoria le regole della questura che limitavano l'assistenza ai migranti della rotta balcanica. L'udienza di merito è il 16 dicembre.",
+ "article": "Il Tribunale amministrativo regionale (Tar) del Friuli Venezia Giulia ha sospeso in via provvisoria le regole della questura di Trieste che limitavano l'assistenza ai migranti arrivati in città lungo la rotta balcanica. Il merito sarà discusso in udienza il 16 dicembre.\n\nIl divieto era in vigore dalla metà di ottobre e riguardava piazza della Libertà, davanti alla stazione. L'assistenza era consentita solo due ore al giorno, dalle 18 alle 20, dal lunedì al venerdì. La questura sostiene che le regole servano a tutelare l'ordine pubblico e le attività commerciali, per garantire la regolare attività di socialità, intrattenimento e svago. Sono rivolte soprattutto all'associazione Linea d'ombra, che in piazza distribuisce cibo, acqua, vestiti e coperte e offre assistenza medica di base, come la medicazione dei piedi.\n\nIl ricorso è di Linea d'ombra, presieduta da Lorena Fornasir, che due settimane prima era stata multata per aver medicato i piedi di alcuni migranti nonostante il divieto. Il Tar scrive che l'assistenza prevale, in linea di principio, sulle preoccupazioni per l'ordine pubblico. Aggiunge però che l'attività continuativa dell'associazione giustifica le preoccupazioni della questura per ordine pubblico e commercio, e osserva che la questura non ha spiegato come la riduzione degli orari possa attenuarle. Il tribunale invita l'associazione a chiedere uno spazio comunale.\n\nIl sindaco di Trieste, Roberto Dipiazza, di Forza Italia, ha dichiarato che non concederà mai alle onlus attive in piazza uno spazio dove operare. Nelle fonti consultate non ci sono posizioni della prefettura e del ministero dell'Interno.",
+ "facts": [
+  {"text": "Il Tar del Friuli Venezia Giulia ha sospeso in via provvisoria il divieto della questura di Trieste.", "who": ["Il Post", "Open"]},
+  {"text": "L'assistenza era consentita solo dalle 18 alle 20, dal lunedì al venerdì, in piazza della Libertà.", "who": ["Il Post"]},
+  {"text": "Il ricorso è dell'associazione Linea d'ombra, presieduta da Lorena Fornasir.", "who": ["Il Post"]},
+  {"text": "L'udienza di merito è il 16 dicembre.", "who": ["Il Post"]}
+ ],
+ "view": "È certa la sospensione provvisoria e la data dell'udienza; non è deciso il merito. Il tribunale riconosce sia la priorità dell'assistenza sia le preoccupazioni della questura.\n\nIl nodo pratico è dove l'associazione potrà operare, visto che il sindaco rifiuta uno spazio comunale. Da guardare: le mosse della questura e l'udienza del 16 dicembre.",
+ "open": [
+  "La questura adotterà nuove regole prima del 16 dicembre?",
+  "Il Comune concederà uno spazio all'associazione?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/22/trieste-sospeso-divieto-assistenza-migranti/", "angle": "La decisione del Tar, le regole della questura e le posizioni del sindaco.", "date": "2026-11-22"}
+ ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Migranti", "Giustizia", "Trieste"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Trieste", "lat": 45.65, "lon": 13.78},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: il Tar sospende il divieto della questura di Trieste."}
+ ]
+}

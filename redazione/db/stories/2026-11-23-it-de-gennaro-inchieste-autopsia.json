@@ -1,0 +1,39 @@
+{
+ "title": "Morte di De Gennaro: indagano Grosseto e Firenze, attesa l'autopsia",
+ "section": "italia",
+ "rank": 9,
+ "status": "live",
+ "summary": "Dopo la morte dell'ex capo della polizia Gianni De Gennaro, la procura di Grosseto indaga per istigazione al suicidio. L'autopsia è prevista a Firenze.",
+ "article": "Gianni De Gennaro, ex capo della polizia, è morto tra la sera del 20 e la mattina del 21 novembre in una dépendance della sua casa di campagna in provincia di Grosseto. Secondo i carabinieri il decesso è avvenuto prima della mattina; l'ora esatta la stabilirà l'autopsia. A trovarlo è stato il custode, su richiesta della famiglia che non riusciva a rintracciarlo.\n\nLa procura di Grosseto, coordinata dalla Direzione distrettuale antimafia di Firenze, ha aperto un'inchiesta per istigazione al suicidio e ha messo la casa sotto sequestro. I magistrati di Firenze, con la procuratrice Rosa Volpe, hanno in mano le lettere ritrovate: una per i familiari, altre indirizzate a persone vicine e una al procuratore di Caltanissetta, Salvatore De Luca. Le lettere saranno consegnate alla famiglia dopo l'autopsia, che sarà fatta a Firenze, nel dipartimento di medicina legale di Careggi. Sono previsti anche accertamenti sulle telecamere della villa.\n\nDe Gennaro era indagato dalla procura di Caltanissetta per depistaggio sulle indagini per la strage di via D'Amelio del 1992, in cui morirono il magistrato Paolo Borsellino e cinque agenti della scorta, e per la sparizione dell'agenda rossa. La sua casa e il suo ufficio erano stati perquisiti. La procura aveva chiesto gli arresti domiciliari, respinti dal giudice per le indagini preliminari; il ricorso doveva essere esaminato dal Tribunale del Riesame il 1° dicembre. Era indagato, non condannato, e respingeva gli addebiti.\n\nI suoi avvocati hanno parlato dell'effetto delle accuse. Franco Coppi ha detto che «avevano certamente scosso in profondità» De Gennaro; Francesco Bertorotta ha riferito che lo angosciava il coinvolgimento di suoi storici collaboratori. Esponenti del centrodestra hanno attribuito la morte alle pressioni giudiziarie e mediatiche. Maria Falcone, sorella di Giovanni Falcone, si è detta sconvolta. La commissione parlamentare Antimafia si riunisce martedì e potrebbe chiedere gli atti.\n\nSe tu o qualcuno che conosci sta vivendo pensieri suicidi, il Telefono Amico risponde allo 02 2327 2327 tutti i giorni, 24 ore su 24. In emergenza si può chiamare il 112.",
+ "facts": [
+  {"text": "De Gennaro è morto tra il 20 e il 21 novembre nella sua casa di campagna vicino a Grosseto.", "who": ["Il Post", "Open"]},
+  {"text": "La procura di Grosseto ha aperto un'inchiesta per istigazione al suicidio.", "who": ["Il Post", "Open"]},
+  {"text": "L'autopsia è prevista a Firenze, nel dipartimento di medicina legale di Careggi.", "who": ["Open"]},
+  {"text": "Era indagato dalla procura di Caltanissetta per depistaggio sulla strage di via D'Amelio.", "who": ["Il Post", "Open"]},
+  {"text": "Il Tribunale del Riesame doveva esaminare il ricorso sui domiciliari il 1° dicembre.", "who": ["Il Post"]}
+ ],
+ "view": "Sono certi la morte, l'inchiesta per istigazione al suicidio e la posizione di indagato per via D'Amelio, senza alcun accertamento di responsabilità. Non è noto il contenuto delle lettere, che restano agli atti, né che cosa cambi nell'indagine di Caltanissetta.\n\nIl caso apre un confronto politico sul rapporto tra indagini e giudizio pubblico, con posizioni opposte. Da guardare: l'esito dell'autopsia, la riunione della commissione Antimafia e le mosse della procura di Caltanissetta.",
+ "open": [
+  "Che cosa dice l'autopsia sulle circostanze della morte?",
+  "Che cosa succede alla posizione di De Gennaro e dei suoi collaboratori a Caltanissetta?",
+  "La commissione Antimafia chiederà gli atti dell'indagine?"
+ ],
+ "sources": [
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/23/gianni-de-gennaro-morte-fonteblanda-lettere-finestra/", "angle": "Le lettere, le procure al lavoro, l'autopsia e gli accertamenti sulla villa.", "date": "2026-11-23"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/22/gianni-de-gennaro-suicidio-cosa-sappiamo/", "angle": "La ricostruzione, le parole degli avvocati e le reazioni del centrodestra.", "date": "2026-11-22"}
+ ],
+ "firstSeen": "2026-11-23T07:22:00+01:00",
+ "updated": "2026-11-23T07:22:00+01:00",
+ "change": "",
+ "tags": ["Giustizia", "Mafia", "Strage di via D'Amelio"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Firenze", "lat": 43.77, "lon": 11.26},
+ "prev": "2026-11-21-it-de-gennaro-morto",
+ "photo": {"wiki": "it", "title": "Palazzo del Viminale"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-23T07:22:00+01:00", "text": "Prima notizia: indagano Grosseto e Firenze, autopsia in programma."}
+ ]
+}

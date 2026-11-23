@@ -21,7 +21,8 @@ Con Pillow (il workflow lo installa prima della pubblicazione) ogni foto si alle
 quadrato centrale (il sito le mostra sempre larghe o quadrate, con il centro in vista), la grande è larga al massimo
 1200 px e accanto c'è <id>-s.jpg, larga 480 px, per le miniature: sul telefono si scarica quella. Le foto già prese si
 alleggeriscono alla prima pubblicazione, senza riscaricarle.
-Una foto vale per una storia sola: se due storie chiedono la stessa, la tiene la più importante e l'altra prova le
+Una foto non si ripete per tre settimane (site/img/foto-storico.json): per lo stesso luogo si prende un'altra foto
+dalla sua categoria di Wikimedia Commons, orizzontale e recente. Una foto vale per una storia sola: se due storie chiedono la stessa, la tiene la più importante e l'altra prova le
 voci di riserva (se non trova un'altra foto resta con la mappa).
 Le foto delle storie che non sono più nel database si cancellano.
 """
@@ -44,7 +45,10 @@ ALTRE = ["en", "it", "fr", "es", "de"]
 LARGA = 1280
 FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
 GRANDE, PICCOLA, OTT = 1200, 480, 2   # OTT: la versione dell'alleggerimento (cambiandola si rifanno tutte)
-REGOLA = 2   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+# le foto usate nelle ultime settimane: non si ripetono, così lo stesso palazzo ha ogni volta uno scatto diverso
+STORICO_GIORNI = 21
+CATEGORIA_MAX = 40   # quante foto della categoria di Commons guardare, dalle più recenti
+REGOLA = 3   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -179,6 +183,24 @@ def trova(wiki, title, escluse=()):
     r = prova(nomi)
     if r:
         return r
+    # altre foto dello stesso luogo: la categoria di Wikimedia Commons della voce (P373), dalle più recenti, solo
+    # orizzontali (interni, altre angolazioni, altri momenti). Così un palazzo che torna spesso ha ogni volta un'altra foto
+    cat = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P373") or []]
+    if cat and isinstance(cat[0], str):
+        try:
+            d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat[0], gcmtype="file",
+                    gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo", iiprop="size|mime")
+            altre = []
+            for pg in (d.get("query") or {}).get("pages") or []:
+                ii = (pg.get("imageinfo") or [{}])[0]
+                w, h = ii.get("width") or 0, ii.get("height") or 0
+                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h:
+                    altre.append(pg["title"].split(":", 1)[1])
+            r = prova(altre)
+            if r:
+                return r
+        except Exception:  # noqa: BLE001  la categoria è un di più: senza, si prova il resto
+            pass
     e = api("www.wikidata.org", action="wbgetentities", ids=item, props="sitelinks")
     links = (((e.get("entities") or {}).get(item) or {}).get("sitelinks") or {})
     for lang in ALTRE:
@@ -230,6 +252,19 @@ def main(db, site):
     # Una foto vale per una storia sola. Le storie si guardano in ordine d'importanza (prima le live, poi per rank):
     # se due chiedono la stessa foto la tiene la più importante, l'altra prova le voci di riserva e, se non trova
     # un'altra foto, resta con la mappa
+    storico_path = os.path.join(site, "img", "foto-storico.json")
+    try:
+        storico = json.load(open(storico_path, encoding="utf-8"))
+    except (OSError, ValueError):
+        storico = {}
+    oggi = time.strftime("%Y-%m-%d")
+    limite = time.strftime("%Y-%m-%d", time.gmtime(time.time() - STORICO_GIORNI * 86400))
+    storico = {k: v for k, v in storico.items() if isinstance(v, dict) and v.get("d", "") >= limite}
+
+    def segna(f, chi):
+        """la foto f usata oggi dalla storia chi (lo storico tiene tutte le storie che l'hanno usata)"""
+        prima = storico.get(f) or {}
+        storico[f] = {"d": oggi, "ids": sorted(set(prima.get("ids") or []) | {chi})[-10:]}
     storie.sort(key=lambda x: (x[1].get("status") != "live", x[1].get("rank") if isinstance(x[1].get("rank"), (int, float)) else 999, x[0]))
     usate = {}
     for sid, s in storie:
@@ -265,7 +300,8 @@ def main(db, site):
         try:
             url, info, motivi = None, None, []
             for wiki, titolo in voci(s, ph):
-                url, info = trova(wiki, titolo, set(usate))
+                # niente foto già usate da un'altra storia viva o, da un'altra storia, nelle ultime settimane
+                url, info = trova(wiki, titolo, set(usate) | {f for f, v in storico.items() if set(v.get("ids") or []) - {sid}})
                 if url:
                     break
                 motivi.append(f"{wiki}:{titolo} → {info}")
@@ -296,6 +332,7 @@ def main(db, site):
                 f.write(data)
             info.update(key=chiave, title=titolo, bytes=len(data), regola=REGOLA)
             usate[stesso(info.get("file"))] = sid
+            segna(stesso(info.get("file")), sid)
             mis = alleggerisci(os.path.join(cartella, sid + ".jpg"))
             if mis:
                 info.update(mis)
@@ -305,6 +342,12 @@ def main(db, site):
             fatte += 1
         except Exception as e:  # la rete o Wikimedia non rispondono: la storia resta con la mappa
             saltate.append(f"{sid}: {str(e)[:120]}")
+    # le foto ancora in uso restano nello storico con la data di oggi: si ripetono solo tre settimane dopo l'ultimo uso
+    for f, sid_ in usate.items():
+        segna(f, sid_)
+    with open(storico_path, "w", encoding="utf-8") as fh:
+        json.dump(dict(sorted(storico.items())), fh, ensure_ascii=False, indent=0)
+        fh.write("\n")
     tolte = 0
     for f in os.listdir(cartella):
         base = f.rsplit(".", 1)[0]

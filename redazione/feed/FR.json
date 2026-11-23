@@ -1,7 +1,77 @@
 {
  "code": "FR",
- "asOf": "2026-11-23T13:17:40+00:00",
+ "asOf": "2026-11-23T15:17:37+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Sommet Choose France : le laboratoire pharmaceutique Virbac dévoile un plan d'investissement de plus de 320 millions d'euros jusqu'en 2030",
+   "desc": "Depuis Toulouse, Emmanuel Macron a affirmé de son côté qu'il voulait faire de la France le pays \"le plus rapide d'Europe quand il s'agit de créer des sites industriels\".",
+   "url": "https://www.franceinfo.fr/economie/industrie/direct-sommet-choose-france-emmanuel-macron-en-visite-sur-le-site-d-airbus-a-toulouse_8295704.html",
+   "at": "2026-11-23T15:12:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Un mois après l'attentat raciste de Trappes, la famille de Pengo Bossio Wangi regrette qu'aucune date n'ait été annoncée pour l'hommage national au jeune homme",
+   "desc": "Le gouvernement avait promis, fin octobre, la tenue d'un hommage national au jeune homme de 26 ans. Mais depuis, aucune date n'a été communiquée.",
+   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/un-mois-apres-l-attentat-raciste-de-trappes-la-famille-de-pengo-bossio-wangui-regrette-qu-aucune-date-n-ait-ete-annoncee-pour-l-hommage-national-au-jeune-homme_8295758.html",
+   "at": "2026-11-23T14:51:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : le parti Génération.s soutient officiellement la candidature de Jean-Luc Mélenchon, un accord conclu avec LFI",
+   "desc": "Le parti de gauche fondé par Benoît Hamon après la présidentielle de 2017 se félicite d'\"une première étape dans la construction d'une coalition au service de l'union populaire, pour la VIe République\".",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-son-combat-est-le-mien-assure-raphael-glucksmann-sur-francois-ruffin-qui-s-est-retire-de-la-course-a-l-elysee_8295479.html",
+   "at": "2026-11-23T14:45:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Nvidia annonce la réintégration de Jensen Huang comme PDG, onze jours après son départ lié à une affaire d'adultère et d'espionnage",
+   "desc": "\"Le conseil d’administration estime que Jensen est la personne idéale pour diriger Nvidia et que sa réintégration est dans le meilleur intérêt de nos actionnaires, de nos employés, de nos partenaires et de nos clients\", a déclaré le président du conseil d’administration.",
+   "url": "https://www.franceinfo.fr/internet/nvidia/nvidia-annonce-la-reintegration-de-jensen-huang-comme-pdg-onze-jours-apres-son-depart-lie-a-une-affaire-d-adultere-et-d-espionnage_8296160.html",
+   "at": "2026-11-23T14:40:49+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Grand Paris Express : Valérie Pécresse juge « très compromise » la mise en service de la ligne 18 avant la fin de l’année",
+   "desc": "Le lancement du premier tronçon du vaste réseau de transport francilien a été reporté à de multiples reprises. La présidente de la région Ile-de-France met en cause Alstom et son logiciel d’automatisation, alors que « les deux mois de marche à blanc » nécessaires avant le déploiement de la ligne 18 n’ont pas encore commencé.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/23/grand-paris-express-valerie-pecresse-juge-tres-compromise-la-mise-en-service-de-la-ligne-18-avant-la-fin-de-l-annee_6814396_3234.html",
+   "at": "2026-11-23T14:35:20+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Guerre en Ukraine : Volodymyr Zelensky plaide pour des négociations de paix incluant l'Europe \"le plus tôt possible\"",
+   "desc": "Le président ukrainien s'est exprimé devant la réunion annuelle de l'assemblée parlementaire de l'Otan à Berlin.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-volodymyr-zelensky-revendique-les-attaques-contre-deux-navires-russes-menees-au-large-de-la-libye_8295668.html",
+   "at": "2026-11-23T14:35:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Jensen Huang réintégré à la tête de Nvidia par son conseil d’administration, deux semaines après avoir démissionné à la suite de soupçons d’espionnage chinois",
+   "desc": "Ce coup de théâtre intervient après des appels répétés du président américain, Donald Trump, proche de Jensen Huang, à la réintégration de cette figure emblématique de la tech au sein de l’entreprise qu’il a cofondée.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/23/jensen-huang-reintegre-comme-directeur-general-et-president-de-nvidia-par-le-conseil-d-administration-deux-semaines-apres-avoir-demissionne-suite-a-des-suspicions-d-espionnage-chinois_6814392_3234.html",
+   "at": "2026-11-23T14:21:52+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le Tadjikistan annonce son retrait de la Cour pénale internationale",
+   "desc": "Ce pays d’Asie centrale, proche de la Russie, avait notifié son retrait au chef de l’ONU, vendredi, jour de la visite du président russe, Vladimir Poutine, dans la capitale, Douchanbé.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/23/le-tadjikistan-annonce-son-retrait-de-la-cour-penale-internationale_6814391_3210.html",
+   "at": "2026-11-23T14:18:59+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"On m'a d'abord regardée comme une personne bizarre\" : au Japon, de plus en plus d'habitants se tournent vers des \"dumbphones\" sans internet",
+   "desc": "Face à la demande grandissante, l'opérateur japonais KDDI ressortira en décembre un appareil juste... pour téléphoner et échanger des SMS.",
+   "url": "https://www.franceinfo.fr/monde/japon/on-m-a-d-abord-regardee-comme-une-personne-bizarre-au-japon-de-plus-en-plus-d-habitants-se-tournent-vers-des-dumbphones-sans-internet_8296001.html",
+   "at": "2026-11-23T14:04:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Vous êtes maire et vous recevez de nombreuses sollicitations de candidats à la présidentielle pour obtenir votre parrainage ? Racontez-nous !",
+   "desc": "A cinq mois de l'élection, près de 40 candidats ont déclaré leur intention de se présenter au scrutin. Pour valider leur participation, ils doivent récolter 500 signatures de la part d'élus.",
+   "url": "https://www.franceinfo.fr/elections/appel-a-temoignages-vous-etes-maire-et-vous-recevez-de-nombreuses-sollicitations-de-candidats-a-la-presidentielle-pour-obtenir-votre-parrainage-racontez-nous_8296022.html",
+   "at": "2026-11-23T13:35:17+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "\"Je me retrouve une nouvelle fois humiliée\" : Gisèle Pelicot veut poursuivre la maison d'édition qui a utilisé des images d'elle à caractère pornographique",
@@ -11,17 +81,31 @@
   },
   {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : un cargo russe pris pour cible dans le golfe de Finlande, le Kremlin dénonce « l’expansion de l’activité terroriste » en mer Baltique",
+   "title": "EN DIRECT, guerre en Ukraine : un cargo russe pris pour cible dans le golfe de Finlande, le Kremlin dénonce l’« expansion de l’activité terroriste » en mer Baltique",
    "desc": "Des bombardements russes ont par ailleurs fait trois morts à Zaporijia et deux autres à Kramatorsk, ont informé lundi les autorités locales.",
    "url": "https://www.lemonde.fr/international/live/2026/11/23/en-direct-guerre-en-ukraine-un-cargo-russe-pris-pour-cible-dans-le-golfe-de-finlande-le-kremlin-denonce-l-expansion-de-l-activite-terroriste-en-mer-baltique_6814183_3210.html",
    "at": "2026-11-23T13:00:17+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : les élus locaux au cœur de la campagne",
+   "desc": "Qu’ils servent de vitrine à des partis en quête de notabilité ou qu’ils soient eux-mêmes candidats, les maires élus en mars font l’objet de toutes les attentions dans une campagne pour laquelle chaque parrainage comptera.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-les-elus-locaux-au-c-ur-de-la-campagne_6814386_823448.html",
+   "at": "2026-11-23T13:00:02+00:00"
+  },
+  {
    "source": "franceinfo",
-   "title": "Sommet Choose France : Emmanuel Macron annonce la création de \"zones industrielles à fort potentiel\" où les procédures d'installation seront simplifiées",
-   "desc": "Pour le chef de l'Etat, l'objectif est de faire de la France le pays \"le plus rapide d'Europe quand il s'agit de créer des sites industriels\".",
-   "url": "https://www.franceinfo.fr/economie/industrie/direct-sommet-choose-france-emmanuel-macron-en-visite-sur-le-site-d-airbus-a-toulouse_8295704.html",
-   "at": "2026-11-23T12:31:22+00:00"
+   "title": "Une marche de Marseille à Trappes \"pour le vivre-ensemble\" et \"pour rendre hommage aux victimes\" du racisme",
+   "desc": "Il y a un mois, le 23 octobre, l'attentat raciste de Trappes a fait un mort, Pengo Bossio Wangi et plusieurs blessés.",
+   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/une-marche-de-marseille-a-trappes-pour-le-vivre-ensemble-et-pour-rendre-hommage-aux-victimes-du-racisme_8296073.html",
+   "at": "2026-11-23T12:59:51+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : le mouvement Génération.s s’engage dans la campagne de Jean-Luc Mélenchon",
+   "desc": "Le mouvement qui a été fondé en 2017 par l’ancien socialiste Benoît Hamon avait été le premier à signer avec LFI pour la Nupes aux élections législatives de 2022.",
+   "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/23/presidentielle-2027-le-mouvement-generation-s-s-engage-dans-la-campagne-de-jean-luc-melenchon_6814385_6205049.html",
+   "at": "2026-11-23T12:40:04+00:00"
   },
   {
    "source": "Le Monde",
@@ -38,25 +122,11 @@
    "at": "2026-11-23T12:26:43+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : le parti Génération.s soutient officiellement la candidature de Jean-Luc Mélenchon, un accord conclu avec LFI",
-   "desc": "Le parti de gauche fondé par Benoît Hamon après la présidentielle 2017 se félicite d'\"une première étape dans la construction d'une coalition au service de l'union populaire, pour la VIe République\".",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-son-combat-est-le-mien-assure-raphael-glucksmann-sur-francois-ruffin-qui-s-est-retire-de-la-course-a-l-elysee_8295479.html",
-   "at": "2026-11-23T12:20:43+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "Une enveloppe de 350 millions d’euros pour l’aéronautique : derrière l’annonce d’Emmanuel Macron, le chantier clé du successeur de l’Airbus A320",
-   "desc": "Le chef de l’Etat a confirmé, lundi 23 novembre, un important soutien de l’Etat pour la recherche aéronautique civile. Des fonds nécessaires à la conception du futur appareil moyen-courrier d’Airbus, crucial pour l’avionneur et ses fournisseurs.",
+   "title": "Aéronautique : derrière l’aide de 350 millions d’euros annoncée par Emmanuel Macron, le chantier-clé du successeur de l’Airbus A320",
+   "desc": "Le président de la République a confirmé, lundi 23 novembre, un important soutien de l’Etat pour la recherche aéronautique civile. Des fonds nécessaires à la conception du futur appareil moyen-courrier d’Airbus, crucial pour l’avionneur et ses fournisseurs.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/23/une-enveloppe-de-350-millions-d-euros-pour-l-aeronautique-derriere-l-annonce-d-emmanuel-macron-le-chantier-cle-du-successeur-de-l-airbus-a320_6814381_3234.html",
    "at": "2026-11-23T12:18:40+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On m'a d'abord regardée comme une personne bizarre\" : au Japon, de plus en plus d'habitants se tournent vers des \"dumbphones\" sans internet",
-   "desc": "Face à la demande grandissante, l'opérateur japonais KDDI ressortira en décembre un appareil juste... pour téléphoner et échanger des SMS.",
-   "url": "https://www.franceinfo.fr/monde/japon/on-m-a-d-abord-regardee-comme-une-personne-bizarre-au-japon-de-plus-en-plus-d-habitants-se-tournent-vers-des-dumbphones-sans-internet_8296001.html",
-   "at": "2026-11-23T12:12:57+00:00"
   },
   {
    "source": "franceinfo",
@@ -73,25 +143,11 @@
    "at": "2026-11-23T11:51:11+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "En Allemagne et au Danemark, des alertes à la bombe dans des établissements scolaires, sans menace concrète ou jugées infondées par les autorités",
-   "desc": "En Allemagne, plus de 450 écoles ont été concernées. Au Danemark, des alertes ont été adressées à des établissements scolaires « partout dans le pays ».",
-   "url": "https://www.lemonde.fr/international/article/2026/11/23/en-allemagne-et-au-danemark-des-alertes-a-la-bombe-dans-des-etablissements-scolaires-sans-menace-concrete-ou-jugees-infondees-par-les-autorites_6814378_3210.html",
-   "at": "2026-11-23T11:47:09+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "La guitare mythique de Django Reinhardt reproduite à l'identique par le facteur d'instruments Selmer",
    "desc": "Soixante répliques de la guitare du jazzman seront fabriquées, à raison de deux ou trois exemplaires par mois. Prix de vente : 15 450 euros pièce.",
    "url": "https://www.franceinfo.fr/culture/musique/la-guitare-mythique-de-django-reinhardt-reproduite-a-l-identique-par-le-facteur-d-instruments-selmer_8295809.html",
    "at": "2026-11-23T11:41:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un mois après l'attentat raciste de Trappes, la famille de Pengo Bossio Wangui regrette qu'aucune date n'ait été annoncée pour l'hommage national au jeune homme",
-   "desc": "Le gouvernement avait promis, fin octobre, la tenue d'un hommage national au jeune homme de 26 ans. Mais depuis, aucune date n'a été communiquée.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/un-mois-apres-l-attentat-raciste-de-trappes-la-famille-de-pengo-bossio-wangui-regrette-qu-aucune-date-n-ait-ete-annoncee-pour-l-hommage-national-au-jeune-homme_8295758.html",
-   "at": "2026-11-23T11:40:50+00:00"
   },
   {
    "source": "franceinfo",
@@ -102,24 +158,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Un très bon œuf, très bien cuit, 8 minutes 40\", conseille l'organisateur du championnat du monde de l'œuf mayonnaise",
-   "desc": "La compétition consacrée à cette entrée mythique des bistrots français est organisée lundi à Saint-Ouen, en région parisienne.",
-   "url": "https://www.franceinfo.fr/culture/cuisine-et-gastronomie/un-tres-bon-uf-tres-bien-cuit-8-minutes-40-conseille-l-organisateur-du-championnat-du-monde-de-l-uf-mayonnaise_8295956.html",
-   "at": "2026-11-23T11:36:17+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Camille Lellouche : \"En musique, j'ai besoin de dénoncer des choses\"",
    "desc": "Tous les jours, une personnalité s'invite dans le monde d'Élodie Suigo. Lundi 23 novembre 2026, la chanteuse, humoriste et actrice Camille Lellouche. Son nouvel album \"Minuit\" est sorti vendredi.",
    "url": "https://www.franceinfo.fr/replay-radio/le-monde-d-elodie/camille-lellouche-en-musique-j-ai-besoin-de-denoncer-des-choses_8273891.html",
    "at": "2026-11-23T11:20:21+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Guerre en Ukraine : Volodymyr Zelensky plaide pour des négociations de paix incluant l'Europe \"le plus tôt possible\"",
-   "desc": "Le président ukrainien s'est exprimé devant la réunion annuelle de l'assemblée parlementaire de l'Otan à Berlin.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/direct-guerre-en-ukraine-volodymyr-zelensky-revendique-les-attaques-contre-deux-navires-russes-menees-au-large-de-la-libye_8295668.html",
-   "at": "2026-11-23T11:14:50+00:00"
   },
   {
    "source": "franceinfo",
@@ -144,13 +186,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Le sixième film de la saga \"Hunger Games\" fait une entrée tonitruante dans le box-office nord-américain et conquiert déjà le monde",
-   "desc": "En un seul week-end, le dernier opus de la franchise a rapporté 120 millions de dollars aux Etats-Unis et au Canada, se plaçant dans le sillage des blockbusters de l'année 2026, \"Spider-Man\", \"Toy Story\", \"Super Mario\" et \"L'Odyssée\".",
-   "url": "https://www.franceinfo.fr/culture/cinema/le-sixieme-film-de-la-saga-hunger-games-fait-une-entree-tonitruante-dans-le-box-office-nord-americain-et-conquiert-deja-le-monde_8295719.html",
-   "at": "2026-11-23T10:37:29+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Enquête sur des fuites présumées vers le RN : le préfet Hugues Moutouh annonce vouloir porter plainte",
    "desc": "\"Je n'ai jamais transmis de ma vie à quiconque des éléments de procédure\", a assuré le haut fonctionnaire sur Europe 1.",
    "url": "https://www.franceinfo.fr/politique/front-national/enquete-sur-des-fuites-presumees-vers-le-rn-le-prefet-hugues-moutouh-annonce-vouloir-porter-plainte_8295833.html",
@@ -169,13 +204,6 @@
    "desc": "Volodymyr Zelensky s'est félicité d'avoir ciblé deux navires battant pavillon russe lors de deux attaques de drones menées dans le port et au large de la ville de Benghazi.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/une-operation-exemplaire-ce-que-l-on-sait-de-l-attaque-de-deux-navires-au-large-de-la-libye-revendiquee-par-l-ukraine_8295566.html",
    "at": "2026-11-23T10:30:12+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On ne peut plus continuer à vivre cette vie\" : à Mayotte, les élus manifestent pour dénoncer la recrudescence des violences",
-   "desc": "Après un week-end marqué par la mort d'un adolescent de 15 ans à Mamoudzou, les élus mahorais se sont réunis ce lundi matin pour une marche à Ongojou, là où une automobiliste a été victime d'un viol une semaine plus tôt. La limite de l'acceptable est déjà franchie selon eux.",
-   "url": "https://la1ere.franceinfo.fr/mayotte/on-ne-peut-plus-continuer-a-vivre-cette-vie-les-elus-manifestent-pour-denoncer-la-recrudescence-des-violences-a-mayotte-1760589.html",
-   "at": "2026-11-23T10:10:29+00:00"
   },
   {
    "source": "France 24",
@@ -200,17 +228,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Aux Etats-Unis, les démocrates obtiennent la plus large majorité depuis 1992 à la Chambre des représentants",
-   "desc": "Aucun des deux partis dominant la vie politique américaine n’avait obtenu une majorité aussi importante depuis la victoire démocrate, il y a trente-quatre ans.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/23/avec-258-sieges-remportes-les-democrates-decrochent-la-plus-large-majorite-depuis-1992-a-la-chambre-des-representants_6814364_3210.html",
-   "at": "2026-11-23T08:50:28+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Les protocoles d’aide à mourir suscitent des interrogations parmi les soignants : « Il n’existe pas de pilule létale magique, mourir n’est jamais simple »",
    "desc": "Rendues publiques le 19 novembre, les recommandations de la Haute Autorité de santé sur les substances létales permettant d’appliquer la loi sont diversement accueillies par les médecins et infirmiers, en première ligne face aux demandes de patients. Les décrets d’application du texte sont attendus d’ici à janvier 2027.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/23/aide-a-mourir-il-n-existe-pas-de-pilule-letale-magique-mourir-n-est-jamais-simple_6814359_3224.html",
    "at": "2026-11-23T08:08:45+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Comment les laboratoires français organisent l’accès de leurs chercheurs à l’IA",
+   "desc": "Les chercheurs du CNRS ont obtenu une dérogation pour recourir aux services d’OpenAI et d’Anthropic, tandis qu’une infrastructure mutualise les ressources de plus d’une vingtaine d’établissements universitaires.",
+   "url": "https://www.lemonde.fr/sciences/article/2026/11/23/comment-les-laboratoires-francais-organisent-l-acces-de-leurs-chercheurs-a-l-ia_6814358_1650684.html",
+   "at": "2026-11-23T07:30:00+00:00"
   },
   {
    "source": "franceinfo",
@@ -234,18 +262,25 @@
    "at": "2026-11-23T06:18:38+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "En Jamaïque, la population défend son accès aux plages",
-   "desc": "Habitants et associations de la très touristique île des Caraïbes saisissent de plus en plus la justice pour empêcher l’accaparement du littoral auquel les hôtels et les villas de luxe se livrent, avec le soutien de l’Etat.",
-   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/23/en-jamaique-la-population-defend-son-acces-aux-plages_6814351_4500055.html",
-   "at": "2026-11-23T05:30:12+00:00"
+   "source": "franceinfo",
+   "title": "\"Il faut bien que la vie continue\" : un mois après l'attentat raciste de Trappes, des habitants et des témoins toujours marqués par le drame",
+   "desc": "Kadiatou, l'infirmière qui a tenté de sauver la victime, reste en état d'hypervigilance. Au marché des Merisiers, habitants et commerçants racontent leurs inquiétudes, mais aussi leur volonté de ne pas céder à la peur.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/il-faut-bien-que-la-vie-continue-un-mois-apres-l-attentat-raciste-de-trappes-des-habitants-et-des-temoins-toujours-marques-par-le-drame_8273867.html",
+   "at": "2026-11-23T06:16:29+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Le Digital Fairness Act, un projet de règlement européen qui affole l’industrie du jeu vidéo",
-   "desc": "Avec ce texte à visée générale, la Commission européenne veut légiférer sur des pratiques jugées piégeuses pour les joueurs. Dans son viseur : les monnaies virtuelles, les « loot boxes » et les mécanismes de « pay-to-win » ou « pay-to-progress ».",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/23/le-digital-fairness-act-un-projet-de-reglement-europeen-qui-affole-l-industrie-du-jeu-video_6814350_4408996.html",
-   "at": "2026-11-23T05:30:07+00:00"
+   "title": "Dans « Yaourt ! », Thomas Poitevin retire ses perruques mais garde son talent",
+   "desc": "Le comédien-humoriste raconte des tranches de vie d’une folle drôlerie à travers une désopilante galerie de personnages.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/23/dans-yaourt-thomas-poitevin-retire-ses-perruques-mais-garde-son-talent_6814352_3246.html",
+   "at": "2026-11-23T05:30:18+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Antoine Lilti, historien : « Il est très frappant, dans les mobilisations en cours, de voir que ces jeunes réclament que la promesse des Lumières soit tenue »",
+   "desc": "La période des Lumières, dont l’héritage était consensuel jusqu’à présent, fait l’objet de critiques croissantes. Pour actualiser cette pensée de l’émancipation par le savoir, l’historien, dans un entretien au « Monde », défend des Lumières ouvertes sur le monde et les autres pensées de l’universalisme.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/23/antoine-lilti-historien-il-est-tres-frappant-dans-les-mobilisations-en-cours-de-voir-que-ces-jeunes-reclament-que-la-promesse-des-lumieres-soit-tenue_6814349_3232.html",
+   "at": "2026-11-23T05:30:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -255,39 +290,18 @@
    "at": "2026-11-23T05:00:54+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Maud Simonet, finaliste du prix Penser le travail 2026 : « Les Jeux olympiques de Paris 2024 ont permis d’institutionnaliser le travail gratuit »",
+   "desc": "Dans un entretien au « Monde », la sociologue du travail Maud Simonet, autrice de « (In)volontaires aux Jo », revient sur la mobilisation et les missions confiées aux 45 000 bénévoles mobilisés lors des Jeux de Paris 2024. Elle explore le caractère politique des frontières entre travail et bénévolat.",
+   "url": "https://www.lemonde.fr/vie-au-travail/article/2026/11/23/maud-simonet-finaliste-du-prix-penser-le-travail-2026-les-jeux-olympiques-de-paris-2024-ont-permis-d-institutionnaliser-le-travail-gratuit_6814343_6768900.html",
+   "at": "2026-11-23T05:00:12+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "On vous explique les débats autour de la retraite par capitalisation, que plusieurs candidats à la présidentielle proposent d'introduire pour financer les pensions",
    "desc": "Certains prétendants à l'Elysée souhaitent que les actifs financent une partie de leur retraite avec des cotisations placées durant leur carrière, alors que le système actuel repose sur la solidarité intergénérationnelle.",
    "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/on-vous-explique-les-debats-autour-de-la-retraite-par-capitalisation-que-plusieurs-candidats-a-la-presidentielle-proposent-d-introduire-pour-financer-les-pensions_8288555.html",
    "at": "2026-11-23T04:59:45+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : Marine Le Pen et le RN, cernés par les procédures, misent sur l’indifférence présumée des électeurs pour les affaires judiciaires",
-   "desc": "La candidate du Rassemblement national à l’Elysée, officiellement entrée en lice le soir même d’une condamnation pour détournements de fonds publics, ne fait aucun cas des multiples affaires et soupçons d’atteinte à la probité visant son parti.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-marine-le-pen-une-campagne-au-defi-de-la-justice_6814312_823448.html",
-   "at": "2026-11-23T04:30:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’itinéraire d’Hugues Moutouh, préfet « provocateur et dominant », ex-bras droit de Claude Guéant aujourd’hui soupçonné d’être une « taupe » du RN",
-   "desc": "Ce haut fonctionnaire adepte de la manière forte, qui dément avoir manqué à ses devoirs et a demandé à être « relevé de ses fonctions », a utilisé l’élection de Nicolas Sarkozy à la présidence de la République, en 2007, comme premier tremplin. Revenu en grâce avec Emmanuel Macron, il s’est rapproché des cercles d’extrême droite, son nom circulant comme possible ministre de Marine Le Pen.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/23/l-itineraire-d-hugues-moutouh-prefet-provocateur-et-dominant-ex-bras-droit-de-claude-gueant-aujourd-hui-soupconne-d-etre-une-taupe-du-rn_6814310_3224.html",
-   "at": "2026-11-23T04:29:59+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« Où est Henry ? » : à Bruxelles, la place stratégique du « Financial Times » dans le microcosme européen",
-   "desc": "Le quotidien économique et financier britannique, et notamment son chef de bureau, Henry Foy, sont une référence pour les responsables politiques comme pour les journalistes européens. Le Brexit n’a pas remis en cause cette position, au contraire.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/23/ou-est-henry-a-bruxelles-la-place-strategique-du-financial-times-dans-le-microcosme-europeen_6814308_3210.html",
-   "at": "2026-11-23T04:10:03+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Notre sélection de concerts en novembre et décembre 2026 : Orelsan, The Pogues, Keren Ann, Blondshell…",
-   "desc": "Chaque lundi, le service Culture du « Monde » propose aux lecteurs de La Matinale ses choix en matière de musique. Aujourd’hui, une proposition riche en rock, rap et jazz en passant par le baroque et l’orchestre symphonique.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/23/notre-selection-de-concerts-en-novembre-et-decembre-2026-orelsan-the-pogues-keren-ann-blondshell_6814306_3246.html",
-   "at": "2026-11-23T03:30:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -316,20 +330,6 @@
    "desc": "Emmanuel Macron a confirmé au Figaro qu'il envisageait de faire inscrire dans la Constitution une \"règle d'or\" budgétaire. Un projet qui lui permettrait de quitter l'Élysée sur une mesure emblématique, rassurante pour les marchés, alors que le président est très critiqué pour sa gestion des finances publiques.",
    "url": "https://www.france24.com/fr/france/20261122-budget-macron-confirme-qu-il-envisage-d-inscrire-une-r%C3%A8gle-d-or-dans-la-constitution",
    "at": "2026-11-22T15:54:26+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le « poisson à poumons » éclaire l’énigme de la sortie de la mer des vertébrés",
-   "desc": "L’été venu, le dipneuste africain s’enterre et transforme sa peau grâce à une toxine véhiculée par le système immunitaire. Et si nos ancêtres avaient emprunté le même chemin il y a 400 millions d’années ?",
-   "url": "https://www.lemonde.fr/sciences/article/2026/11/22/le-poisson-a-poumons-eclaire-l-enigme-de-la-sortie-de-la-mer-des-vertebres_6814219_1650684.html",
-   "at": "2026-11-22T14:30:02+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Suspicion de fuites vers le RN : un mail jette des soupçons sur l'implication du préfet Moutouh",
-   "desc": "La justice française soupçonne des fuites d'informations confidentielles du ministère de l'Intérieur vers le Rassemblement national. Un mail pourrait apporter des éléments sur le rôle de l'ancien secrétaire général de Beauvau et actuel préfet du Loiret et de la région Centre-Val de Loire, Hugues Moutouh, qui nie toute implication.",
-   "url": "https://www.france24.com/fr/france/20261122-fuites-au-minist%C3%A8re-de-l-int%C3%A9rieur-un-mail-jette-des-soup%C3%A7ons-sur-l-implication-du-pr%C3%A9fet-moutouh",
-   "at": "2026-11-22T14:28:27+00:00"
   }
  ]
 }

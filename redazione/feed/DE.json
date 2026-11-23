@@ -1,11 +1,67 @@
 {
  "code": "DE",
- "asOf": "2026-11-22T21:17:33+00:00",
+ "asOf": "2026-11-23T05:17:35+00:00",
  "items": [
   {
    "source": "Die Zeit",
-   "title": "Captagon, Cannabis, Betäubungsmittel: Syrische Behörden vernichten tonnenweise konfiszierte Drogen",
-   "desc": "400 Millionen Tabletten des Aufputschmittels Captagon und Tonnen weiterer Rauschmittel sind in Syrien entsorgt worden. Die Machthaber bekämpfen die Drogenproduktion.",
+   "title": "Nachrichtenpodcast: Woran die Weltklimakonferenz gescheitert ist",
+   "desc": "Die Weltklimakonferenz COP31 endet ohne gemeinsame Abschlusserklärung. Was heißt das für den Klimaschutz? Und: die Risiken und Nebenwirkungen der Commerzbank-Übernahme",
+   "url": "https://www.zeit.de/politik/2026-11/weltklimakonferenz-cop31-abschlusserklaerung-klimaschutz-nachrichtenpodcast",
+   "at": "2026-11-23T05:00:36+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "EU-Parlament: Erlebt die Brandmauer in Brüssel ein Comeback?",
+   "desc": "Zuletzt suchten Konservative im EU-Parlament Mehrheiten mit Rechtsextremen. Doch jetzt steht nach SPIEGEL-Informationen ein Kurswechsel bevor: Es soll eine Abmachung der politischen Mitte geben.",
+   "url": "https://www.spiegel.de/politik/deutschland/eu-parlament-erlebt-die-brandmauer-in-bruessel-ein-comeback-a-8c5dfa3d-9070-4924-a891-919d5398f45a",
+   "at": "2026-11-23T04:54:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Kalte Progression: CDU-Arbeitnehmer kritisieren Söders Entlastungsvorstoß als »zu spät«",
+   "desc": "Mehrere Unionspolitiker halten den von der CSU geforderten Ausgleich der kalten Progression für unrealistisch. Die SPD wünscht sich eine dauerhafte Gegenfinanzierung.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/kalte-progression-ausgleich-markus-soeder-cdu-dennis-radtke",
+   "at": "2026-11-23T04:48:07+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Markus Söder will Kalte Progression ausgleichen, Klimakonferenz zurecht gescheitert, Pressefreiheit in der Türkei",
+   "desc": "Markus Söder stiftet Unruhe mit der kalten Progression. Das Scheitern der Klimakonferenz hat auch eine gute Seite. Und in der Türkei konnte Erdoğan noch nicht alle zum Schweigen bringen. Das ist die Lage am Montagmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-markus-soeder-will-kalte-progression-ausgleichen-klimakonferenz-zurecht-gescheitert-pressefreiheit-in-der-tuerkei-a-4890e582-898f-4c5b-b4ce-526c57e443b1",
+   "at": "2026-11-23T04:29:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Solidarität mit der Ukraine: So denkt Europa über den Krieg",
+   "desc": "Ohne Europa kann die Ukraine nicht bestehen. Aber wie zuverlässig ist die Unterstützung für das von Russland überfallene Land wirklich? ZEIT-Autoren berichten.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/ukraine-krieg-solidaritaet-europaeische-union-grossbritannien",
+   "at": "2026-11-23T04:15:04+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Energiepreise: Bundesregierung weitet Förderung für einkommensschwache Haushalte aus",
+   "desc": "Zuschüsse für sparsame Waschmaschinen, Geschirrspüler und Gefrierschränke: Ab 2027 sollen mehr als 100.000 weitere Haushalte beim Energiesparen Unterstützung erhalten.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromspar-check-bundesumweltministerium-caritas-energie-haushalte",
+   "at": "2026-11-23T04:06:57+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Zwischenwahlen in den USA: US-Demokraten im Repräsentantenhaus so stark wie zuletzt 1992",
+   "desc": "Auch in North Carolina steht nach den US-Midterms ein Sieger fest. Dort setzte sich Chuck Hubbard durch. Die Demokraten haben nun die größte Mehrheit seit über 30 Jahren.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/demokraten-mehrheit-repraesentantenhaus-kongresswahlen-usa-chuck-hubbard",
+   "at": "2026-11-23T00:41:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Russisches Kriegsschiff sinkt in libyschem Hafen",
+   "desc": "Das Schiff ist mutmaßlich von ukrainischen Drohnen angegriffen worden. Bei einem Angriff auf ein Dorf in der Nähe von Kyjiw sind mehrere Menschen gestorben. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-22T23:15:16+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Betäubungsmittel: Syrische Behörden vernichten tonnenweise konfiszierte Drogen",
+   "desc": "400 Millionen Tabletten der Partydroge Captagon und große Mengen weiterer Rauschmittel sind in Syrien entsorgt worden. Die Machthaber bekämpfen die Drogenproduktion.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/syrien-drogen-captagon-baschar-al-assad",
    "at": "2026-11-22T20:58:16+00:00"
   },
@@ -19,7 +75,7 @@
   {
    "source": "Die Zeit",
    "title": "Kalte Progression: Grüne werfen Söder »öffentliches Lamentieren« vor",
-   "desc": "CSU-Chef Markus Söder fordert »dringend einen Ausgleich der kalten Progression«. Die Opposition wirft ihm Inszenierung vor und warnt, er verspiele damit Vertrauen.",
+   "desc": "CSU-Chef Markus Söder fordert »dringend einen Ausgleich der kalten Progression«. Die Opposition wirft ihm Inszenierung vor. Die SPD hält Söders Vorstoß für chancenlos.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/kalte-progression-ausgleich-markus-soeder-britta-hasselmann-gxe",
    "at": "2026-11-22T20:00:32+00:00"
   },
@@ -94,34 +150,6 @@
    "at": "2026-11-22T15:05:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Silvester: Kliniken, Feuerwehr und Polizei fordern Böllerverbot noch dieses Jahr",
-   "desc": "Berliner Einsatzkräfte wollen eine erneute Überforderung durch Feuerwerksunfälle verhindern. Für ein Böllerverbot braucht Berlin aber noch eine Rückmeldung vom Bund.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/boellerverbot-berlin-polizei-feuerwehr-sprengstoffrecht-iris-spranger-gxe",
-   "at": "2026-11-22T14:19:50+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundesregierung: Merz würde bei Neustart als Bundeskanzler »Erwartungen dämpfen«",
-   "desc": "Der Bundeskanzler zeigt sich weiter zufrieden mit dem Koalitionsvertrag. »Wenn du in der Politik nur beliebt sein willst, dann machst du nicht alles richtig«, sagt Merz.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/friedrich-merz-bundeskanzler-sat1-frag-mal-den-kanzler-gxe",
-   "at": "2026-11-22T14:16:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rhetorik der Ausgrenzung: Einübung in die Unbarmherzigkeit",
-   "desc": "Was früher nur von den radikalen Rändern zu hören war, ist längst im politischen Mainstream angekommen. Doch die Sprache der Rechtsradikalen erzieht zur Grausamkeit.",
-   "url": "https://www.zeit.de/2026/50/rhetorik-rechtsextremismus-oesterreich-politik-medien",
-   "at": "2026-11-22T14:12:54+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Lewis Pugh: Brite schwimmt aus Protest gegen Irankrieg durch Straße von Hormus",
-   "desc": "Der britische Langstreckenschwimmer Lewis Pugh ist 15 Kilometer durch die Straße von Hormus geschwommen. Er will damit vor den ökologischen Folgen des Irankriegs warnen.",
-   "url": "https://www.zeit.de/wissenschaft/umwelt/2026-11/lewis-pugh-strasse-von-hormus-langstreckenschwimmen-umweltverschmutzung-gxe",
-   "at": "2026-11-22T14:02:14+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Stefanie Hubig will Femizide immer als Morde erfassen",
    "desc": "»Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden«, sagt Justizministerin Hubig. Dazu hat sie jetzt einen Gesetzentwurf vorgelegt.",
@@ -141,20 +169,6 @@
    "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
    "at": "2026-11-22T12:00:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "COP 31: Weltklimakonferenz scheitert an gemeinsamer Abschlusserklärung",
-   "desc": "Die 31. Weltklimakonferenz hat sich nicht auf eine gemeinsame Abschlusserklärung geeinigt. Es seien keine Beschlüsse gefasst ​worden, sagte Konferenzpräsident Kurum.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/31-weltklimakonferenz-keine-einigung-cop-antalya",
-   "at": "2026-11-22T11:49:21+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "COP 31: Weltklimakonferenz scheitert an gemeinsamer Abschlusserklärung",
-   "desc": "Die 31. Weltklimakonferenz hat sich nicht auf eine gemeinsame Abschlusserklärung geeinigt. Es seien keine Beschlüsse gefasst ​worden, sagte Konferenzpräsident Kurum.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/31-weltklimakonferenz-keine-einigung-cop-antalya",
-   "at": "2026-11-22T11:49:21+00:00"
   },
   {
    "source": "Der Spiegel",

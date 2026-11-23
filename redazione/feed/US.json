@@ -1,7 +1,210 @@
 {
  "code": "US",
- "asOf": "2026-11-22T21:17:33+00:00",
+ "asOf": "2026-11-23T05:17:35+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
+   "desc": "The U.S. is investigating Megaspeed and Alice Huang after it emerged a former associate of hers was reportedly \"deeply involved\" in the firm's activities",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html",
+   "at": "2026-11-23T05:08:03+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tata Steel to buy $1.67 billion stake in India’s largest steel pipe maker; shares plunge nearly 5%",
+   "desc": "Tata Steel will buy a 26.4% stake in India's leading structural steel pipes and tubes maker to boost downstream capacity.",
+   "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
+   "at": "2026-11-23T04:26:49+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+   "desc": "Yemen's Iran-aligned Houthis claimed an operation against Saudi Arabia's Rabigh oil refinery, as diplomatic efforts to end the war face long odds.",
+   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html",
+   "at": "2026-11-23T03:52:17+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army plans to carry out detonation at Iowa plant on Wednesday",
+   "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
+   "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
+   "at": "2026-11-23T03:02:31+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Tom Jackson, former Broncos star and sports broadcaster, dies at 75",
+   "desc": "Tom Jackson, a former Denver Broncos player and ESPN analyst, has died at 75.",
+   "url": "https://www.cbsnews.com/news/tom-jackson-former-broncos-star-sports-broadcaster-dies-75/",
+   "at": "2026-11-23T02:19:17+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
+   "desc": "U.S. intelligence is said to show that the woman at the heart of the A.I. chip scandal was in touch with China’s Ministry of State Security during the period when she was in a relationship with Jensen Huang.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
+   "at": "2026-11-23T02:17:16+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Hall of Fame sports broadcaster Tom Jackson dies at 75",
+   "desc": "The Denver Broncos announced that Hall of Fame sports broadcaster Tom Jackson has died at 75.",
+   "url": "https://www.cbsnews.com/video/hall-of-fame-sports-broadcaster-tom-jackson-dies-75/",
+   "at": "2026-11-23T02:17:05+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "\"I Have a Dream\" pages written by Martin Luther King Jr. to go up for auction",
+   "desc": "Martin Luther King Jr. wrote his famous \"I Have a Dream\" speech on yellow legal paper in long cursive in blue ink. Those pages have been tucked away until now; they are headed to auction in January. Brian Unger has the story.",
+   "url": "https://www.cbsnews.com/video/i-have-a-dream-pages-written-martin-luther-king-jr-up-auction/",
+   "at": "2026-11-23T02:11:08+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Consumers expected to set Cyber Monday spending record this year",
+   "desc": "Americans are expected to spend big in this year's holiday shopping season, even as they struggle with the high costs of everyday needs. Akiko Fujita reports from the Glendale Galleria near Los Angeles.",
+   "url": "https://www.cbsnews.com/video/consumers-expected-set-cyber-monday-spending-record-year/",
+   "at": "2026-11-23T02:02:04+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "International climate talks fall apart over fossil fuels",
+   "desc": "International climate talks collapsed in Turkey on Sunday in a bitter clash over fossil fuels, the main cause of global warming.",
+   "url": "https://www.cbsnews.com/video/international-climate-talks-fall-apart-over-fossil-fuels/",
+   "at": "2026-11-23T01:56:06+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
+   "desc": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
+   "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
+   "at": "2026-11-23T01:55:35+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Do not feed the animals. Vets explain why hats, coins and shoes can be deadly.",
+   "desc": "It's not easy to retrieve foreign objects from animals once ingested. Some things can be grabbed using an endoscope. But if an item gets far into the intestinal tract, surgery isn't always possible.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6049723/do-not-feed-the-animals-vets-explain-why-hats-coins-and-shoes-can-be-deadly",
+   "at": "2026-11-23T01:53:48+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Unmarked ICE agents make violent arrest at Seattle airport",
+   "desc": "An Immigration and Customs Enforcement arrest was caught on camera as passengers were boarding an Alaska Airlines flight. The event was so distressing that some of the crew members asked to be replaced. Olivia Rinaldi reports.",
+   "url": "https://www.cbsnews.com/video/unmarked-ice-agents-violent-arrest-seattle-airport/",
+   "at": "2026-11-23T01:52:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Delta Air Lines hit with delays after baggage network system issue",
+   "desc": "The Delta Air Lines delays are most impacting flights in and out of Hartsfield-Jackson Atlanta International Airport in Georgia.",
+   "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/",
+   "at": "2026-11-23T01:50:57+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
+   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
+   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
+   "at": "2026-11-23T01:49:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Delta Air Lines says it's resolved network issue, but severe weather could cause more delays",
+   "desc": "Delta Air Lines said it resolved an automation outage that disrupted half of all flights, but the weather is creating another speed bump for the Thanksgiving travel rush. Shanelle Kaul reports and Andrew Kozak has the forecast.",
+   "url": "https://www.cbsnews.com/video/ddelta-air-lines-says-resolved-network-issue-severe-weather-delays/",
+   "at": "2026-11-23T01:49:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "3 big things we're watching in the market this Thanksgiving week",
+   "desc": "Can the AI trade rebound? Plus, a big week for retail activity and Fed policy discussion.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/22/3-big-things-were-watching-in-the-market-this-thanksgiving-week.html",
+   "at": "2026-11-23T00:42:54+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Why Democrat Abdul El-Sayed is Talking Up ‘TrumpCare’",
+   "desc": "Senator-elect Abdul El-Sayed’s pitch for working together to enact universal health care illustrates how some newly elected Democrats are approaching the president.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/el-sayed-trump-health-care.html",
+   "at": "2026-11-23T00:27:25+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/22/2026: One Molecule at a Time; The Mass Shooter Fandom; The Angola Prison Rodeo",
+   "desc": "First, a look at how drug cartels make synthetic opioids. Then, investigating the online community idolizing mass shooters. And, visiting a rodeo inside a maximum security prison.",
+   "url": "https://www.cbsnews.com/video/60minutes-2026-11-22/",
+   "at": "2026-11-23T00:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Let's weigh the cons — and pros — of this brutal market to find a way forward",
+   "desc": "My dad always said a list can help you make an informed decision — not always the right one, but the most informed at that moment.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/22/lets-weigh-the-cons-and-pros-of-this-market-to-find-a-way-forward.html",
+   "at": "2026-11-22T23:49:44+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrats Clinch 258 House Seats, an Election-Year Record This Century",
+   "desc": "After sweeping midterm wins, Democrats have secured the largest House majority in a national election for either party in three decades.",
+   "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html",
+   "at": "2026-11-22T23:30:08+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/22: CBS Weekend News",
+   "desc": "Widespread flight delays hit U.S. airports; the Army is set to detonate bomb-making material in Iowa.",
+   "url": "https://www.cbsnews.com/video/112226-cbs-weekend-news/",
+   "at": "2026-11-22T23:30:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Democrat Chuck Hubbard Defeats 11-Term Republican Virginia Foxx in North Carolina",
+   "desc": "Chuck Hubbard, a retired journalist, defeated Representative Virginia Foxx in a conservative district.",
+   "url": "https://www.nytimes.com/2026/11/22/us/virginia-foxx-chuck-hubbard-north-carolina-house.html",
+   "at": "2026-11-22T23:28:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Natural gas pipeline fire in Alabama lights up night sky",
+   "desc": "Photos and videos posted on social media appeared to show flames rising dozens of yards above the trees near Ward, Alabama, with smoke billowing into the air.",
+   "url": "https://www.cbsnews.com/news/natural-gas-pipeline-fire-ward-alabama/",
+   "at": "2026-11-22T22:50:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
+   "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
+   "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
+   "at": "2026-11-22T22:48:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "at": "2026-11-22T22:45:54+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "What it's like at a climate conference as talks collapse",
+   "desc": "After two weeks of negotiations, international climate talks fail to reach an agreement. NPR's Rachel Waldholz was in Turkey for the conference.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6050248/what-its-like-at-a-climate-conference-as-talks-collapse",
+   "at": "2026-11-22T22:40:23+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Philly festival-goers say pickles are a real big dill",
+   "desc": "Influencer and pickle enthusiast Dan Pancoast gives a first hand account of the festivities at the \"The Big Dill\" festival in Philadelphia.",
+   "url": "https://www.npr.org/2026/11/22/nx-s1-6038939/philly-festival-goers-say-pickles-are-a-real-big-dill",
+   "at": "2026-11-22T22:40:19+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Democrats reach historic House majority not seen since 1992",
+   "desc": "\"House Democrats have just secured the largest majority any party in Congress has held this century. BOOM,\" Democratic leader Hakeem Jeffries of New York said Sunday.",
+   "url": "https://www.cbsnews.com/news/democrats-historic-house-majority-since-1992/",
+   "at": "2026-11-22T22:13:32+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Delta Delays Flights as Thanksgiving Travel Begins, After Automated System Falters",
@@ -14,28 +217,7 @@
    "title": "Ossoff's broad and decisive Senate win fuels 2028 speculation",
    "desc": "Democratic Sen. Jon Ossoff's commanding victory in Georgia relied on a broad coalition, and this is fueling 2028 presidential interest in him, even though he says he'll be in the Senate for the next six years.",
    "url": "https://www.cbsnews.com/news/jon-ossoff-2028-presidential-speculation-after-georgia-win/",
-   "at": "2026-11-22T21:06:12+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Army plans to carry out detonation at Iowa plant despite indefinite pause",
-   "desc": "The Department of the Army said it plans to use an emergency munitions and explosives exclusion to the Environmental Protection Agency's permit.",
-   "url": "https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/",
-   "at": "2026-11-22T21:03:02+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Delta Air Lines hit with delays after baggage network system issue",
-   "desc": "The Delta Air Lines delays are most impacting flights in and out of Hartsfield-Jackson Atlanta International Airport in Georgia.",
-   "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/",
-   "at": "2026-11-22T21:01:05+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "ICE Officers Arrest 2 Passengers Boarding a Flight at Seattle Airport",
-   "desc": "The arrests were criticized by Washington’s governor and airport officials, who called the incident “distressing.”",
-   "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html",
-   "at": "2026-11-22T20:38:20+00:00"
+   "at": "2026-11-22T21:06:00+00:00"
   },
   {
    "source": "New York Times",
@@ -60,13 +242,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Natural gas pipeline fire in Alabama lights up night sky",
-   "desc": "Photos and videos posted on social media appeared to show flames rising dozens of yards above the trees near Ward, Alabama, with smoke billowing into the air.",
-   "url": "https://www.cbsnews.com/news/natural-gas-pipeline-fire-ward-alabama/",
-   "at": "2026-11-22T19:59:32+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Full transcript of \"Face the Nation with Margaret Brennan,\" Nov. 22, 2026",
    "desc": "On this \"Face the Nation with Margaret Brennan\" broadcast, Treasury Secretary Scott Bessent and House Minority Leader Hakeem Jeffries join Margaret Brennan.",
    "url": "https://www.cbsnews.com/news/full-transcript-of-face-the-nation-with-margaret-brennan-nov-22-2026/",
@@ -88,20 +263,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Democrat Chuck Hubbard Defeats 11-Term Republican Virginia Foxx in North Carolina",
-   "desc": "Chuck Hubbard, a retired journalist, defeated Representative Virginia Foxx in a conservative district.",
-   "url": "https://www.nytimes.com/2026/11/22/us/virginia-foxx-chuck-hubbard-north-carolina-house.html",
-   "at": "2026-11-22T18:37:10+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Democrats Clinch 258 House Seats, an Election-Year Record This Century",
-   "desc": "After sweeping midterm wins, Democrats have secured the largest House majority in a national election for either party in three decades.",
-   "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html",
-   "at": "2026-11-22T18:23:08+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "St. Patrick’s Day Parade Canceled as Florida Figures Out D.E.I. Law",
    "desc": "Cities and counties are pulling funding from groups and events they’ve long supported before a new law bars them from promoting diversity, equity and inclusion activities.",
    "url": "https://www.nytimes.com/2026/11/22/us/florida-anti-dei-law-consequences.html",
@@ -113,13 +274,6 @@
    "desc": "The first lady, who has little experience in international affairs, developed back channels to key figures on both sides of the conflict through her longtime agent.",
    "url": "https://www.nytimes.com/2026/11/22/us/politics/melania-trump-ukraine-diplomacy.html",
    "at": "2026-11-22T18:12:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Tom Jackson, former Broncos star and sports broadcaster, dies at 75",
-   "desc": "Tom Jackson, a former Denver Broncos player and ESPN analyst, has died at 75.",
-   "url": "https://www.cbsnews.com/news/tom-jackson-former-broncos-star-sports-broadcaster-dies-75/",
-   "at": "2026-11-22T17:46:24+00:00"
   },
   {
    "source": "NPR",
@@ -171,13 +325,6 @@
    "at": "2026-11-22T16:33:22+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "at": "2026-11-22T16:33:13+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
    "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
@@ -220,60 +367,11 @@
    "at": "2026-11-22T15:00:15+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "How cottage cheese was made sexy",
-   "desc": "For decades, cottage cheese was a bland, low-calorie diet food. But now social media influencers are spicing it up, adding cottage cheese to everything from pancakes to pizza crust, and demand has exploded. Correspondent David Pogue looks at how the protein craze has made a familiar dairy product … sexy.",
-   "url": "https://www.cbsnews.com/video/how-cottage-cheese-was-made-sexy/",
-   "at": "2026-11-22T14:55:08+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Kwame Onwuachi's culinary journey",
-   "desc": "Award-winning chef Kwame Onwuachi's Tatiana, located in New York's Lincoln Center, was named the best restaurant in the city by The New York Times two years in a row. Onwuachi discusses his Afro-Caribbean menu, and his path to becoming one of today's brightest culinary stars, with correspondent Nancy Giles.",
-   "url": "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
-   "at": "2026-11-22T14:48:19+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Home-cooked meals, to go",
-   "desc": "In California, more than 1,300 small kitchens are licensed to make and sell food. These MEHKOs (short for \"micro enterprise home kitchen operations\") are run out of homes, allowing cooks to pursue their passions, make supplementary income, or test out potential dining concepts without the investment required for food trucks or traditional brick-and-mortar restaurants. Correspondent Luke Burbank talked with some of the home chefs who turn family recipes into culinary passion projects.",
-   "url": "https://www.cbsnews.com/video/home-cooked-meals-to-go/",
-   "at": "2026-11-22T14:33:19+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Social Security benefits are rising in 2027, but other changes could affect what you keep",
    "desc": "A 3.6% Social Security cost-of-living adjustment for 2027 will increase benefits across the board. But Medicare and tax changes will also affect retirees.",
    "url": "https://www.cnbc.com/2026/11/22/social-security-changes-cola-taxes-medicare.html",
    "at": "2026-11-22T14:30:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "How Brussels sprouts lost their bitterness",
-   "desc": "In the old days, Brussels sprouts were not exactly a favorite vegetable. But today they're a runaway hit, thanks to science.",
-   "url": "https://www.cbsnews.com/news/how-brussels-sprouts-lost-their-bitterness/",
-   "at": "2026-11-22T14:28:25+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Wisconsin's supper clubs, where community is always on the menu",
-   "desc": "Chain restaurants put a lot of America's supper clubs out of business in the 1950s and '60s, but the family-run dinner establishments continue to thrive in Wisconsin, built on Midwestern hospitality and friendliness. Correspondent Mo Rocca reports.",
-   "url": "https://www.cbsnews.com/video/wisconsins-supper-clubs-where-community-is-always-on-the-menu/",
-   "at": "2026-11-22T14:22:11+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Taking on credit card debt to buy food",
-   "desc": "According to a recent survey, about 35% of Americans are using credit cards to buy increasingly expensive groceries – and many are having trouble paying off that food debt.",
-   "url": "https://www.cbsnews.com/news/taking-on-credit-card-debt-to-buy-food/",
-   "at": "2026-11-22T14:16:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Taking on credit card debt to buy food",
-   "desc": "This Thanksgiving, Americans are paying 32% more for food compared to what we paid in 2020. But according to a recent survey, about 35% of us are using credit cards to buy groceries – and many are having trouble paying off that food debt. Correspondent Lee Cowan looks at how rising costs, and the ease of Buy Now Pay Later apps, contribute to ever-tighter food budgets.",
-   "url": "https://www.cbsnews.com/video/taking-on-credit-card-debt-to-buy-food/",
-   "at": "2026-11-22T14:16:18+00:00"
   },
   {
    "source": "New York Times",
@@ -297,13 +395,6 @@
    "at": "2026-11-22T14:00:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Saudi Arabia, Bahrain report new attacks as Iran says it remains open to a deal with U.S.",
-   "desc": "Saudi Arabia said it destroyed a drone launched by Iran-backed Houthis, while Bahrain said an industrial facility was hit by Iranian projectiles.",
-   "url": "https://www.cnbc.com/2026/11/22/saudi-houthi-bahrain-iran-attacks-araghchi-talks.html",
-   "at": "2026-11-22T13:25:47+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Medicare looks a bit different in 2027, so don't miss open enrollment",
    "desc": "Open enrollment for Medicare runs through Dec. 7, and there are a few different pitfalls people should watch out for this year. Your drug plan or Medicare Advantage plan could be changing a lot.",
@@ -316,6 +407,13 @@
    "desc": "Domino's, Papa Johns and Pizza Hut face weaker demand, more delivery competition and changing eating habits, including GLP-1 use.",
    "url": "https://www.cnbc.com/2026/11/22/pizza-chains-sales-glp-1-demand.html",
    "at": "2026-11-22T13:00:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "American vs. Chinese Mahjong: Why the Rivalry Is Stirring Controversy",
+   "desc": "American mahjong, with its own tiles and rules, has overshadowed the traditional Chinese game. The rivalry has fueled anger and cultural misunderstanding.",
+   "url": "https://www.nytimes.com/2026/11/22/world/asia/mahjong-american-chinese-controversy.html",
+   "at": "2026-11-22T12:32:25+00:00"
   },
   {
    "source": "New York Times",
@@ -365,69 +463,6 @@
    "desc": "Quantum computing firms are testing energy-grid optimization, solar materials and hydrogen catalysts as they pursue practical uses.",
    "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
    "at": "2026-11-22T06:00:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Kansas City Current capture first NWSL trophy",
-   "desc": "The Kansas City Current made history Saturday, capturing their first NWSL Championship title with a 2-1 win over the Washington Spirit.",
-   "url": "https://www.cbsnews.com/news/nwsl-championship-kansas-city-current-washington-spirit/",
-   "at": "2026-11-22T04:15:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "ICE officers arrest 2 passengers boarding flight in Seattle",
-   "desc": "Masked immigration officers arrested two passengers on a crowded airport jet bridge in Seattle as people were boarding Saturday",
-   "url": "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/",
-   "at": "2026-11-22T02:56:57+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Moves to Restrict Congressional Oversight of Contractors",
-   "desc": "The president’s executive order is the latest effort to blunt Democratic plans to investigate the administration’s actions.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-   "at": "2026-11-22T01:29:53+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy",
-   "desc": "The decision by a federal judge in Rhode Island was a blow to an effort to shift aid away from housing subsidies in favor of treatment for mental illness and addiction.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
-   "at": "2026-11-22T00:03:40+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "The Penny Is Dead. Now It’s Official.",
-   "desc": "President Trump signed a law on Friday formally putting the penny out of mint, a year after it stopped being struck.",
-   "url": "https://www.nytimes.com/2026/11/21/us/politics/penny-mint-trump-common-cent-act.html",
-   "at": "2026-11-21T23:12:24+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Like Fiona the Hippo, Internet Famous Animals Can Bring Value to Zoos",
-   "desc": "Animal videos have long been popular online, but as it did with Fiona, social media can foster deeper connections that are valuable to zoos.",
-   "url": "https://www.nytimes.com/2026/11/21/us/fiona-zoo-viral-animals.html",
-   "at": "2026-11-21T22:42:42+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump orders federal contractors to check with White House before responding to Congress",
-   "desc": "President Trump is directing federal contractors to consult the White House about inquiries from Congress and to withhold any communications that his administration considers privileged.",
-   "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-   "at": "2026-11-21T22:40:36+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Google employees protest AI in schools policy",
-   "desc": "More than 550 Google employees signed a petition to allow schools access to Search without AI. Parents and educators protested outside Google offices in 6 cities last week for the same ask.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6048599/google-employees-protest-ai-in-schools-policy",
-   "at": "2026-11-21T22:01:40+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Highlights and challenges from covering an historic month in South America",
-   "desc": "NPR's South America Correspondent discusses her work covering an historic election upset and a papal visit.",
-   "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
-   "at": "2026-11-21T22:01:35+00:00"
   }
  ]
 }

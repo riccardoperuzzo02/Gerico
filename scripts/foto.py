@@ -42,9 +42,9 @@ LIBERE = re.compile(r"^(cc[ -]?by(-sa)?([ -]\d(\.\d)?)?([ -][a-z]{2,3})?([ -]mig
 LINGUA = re.compile(r"^[a-z]{2,3}$")
 # dove cercare la stessa voce quando quella scelta non ha una foto
 ALTRE = ["en", "it", "fr", "es", "de"]
-LARGA = 1280
+LARGA = 1600
 FOTO = re.compile(r"\.(jpe?g|png|webp)$", re.I)
-GRANDE, PICCOLA, OTT = 1200, 480, 2   # OTT: la versione dell'alleggerimento (cambiandola si rifanno tutte)
+GRANDE, PICCOLA, OTT = 1400, 520, 3   # OTT: la versione dell'alleggerimento (cambiandola si rifanno tutte)
 # le foto usate nelle ultime settimane: non si ripetono, così lo stesso palazzo ha ogni volta uno scatto diverso
 STORICO_GIORNI = 21
 CATEGORIA_MAX = 40   # quante foto della categoria di Commons guardare, dalle più recenti
@@ -55,8 +55,12 @@ EVENTI = re.compile(r"\b(speech|speaks|speaking|discorso|discours|rede|discurso|
                     r"delegation|delegazione|signing|firma|protest[ae]?|demonstration|manifestazione|parade|parata|march|corteo|run|race|"
                     r"marathon|maratona|wedding|funeral|funerale|crowd|folla|people|persone|leute|gente|staff|soldiers|soldati|"
                     r"students|studenti|award|premiazione|inauguration|insediamento|swearing|giuramento|rally|comizio|celebration|"
-                    r"festival|concert|concerto|mit|with|con|and|und|y|et)\b", re.I)
-REGOLA = 4   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+                    r"festival|concert|concerto|archive|archivio|archiv|establishment|government|governo|cabinet|session|seduta|"
+                    r"vote|voto|mit|with|con|and|und|y|et|1[89]\d\d)\b", re.I)
+# le foto premiate dalla comunità di Commons: si guardano prima delle altre
+PREMIATE = ("Featured_pictures_on_Wikimedia_Commons", "Quality_images")
+FORMATO = 16 / 9   # il formato della foto nella notizia (e nella prima pagina, che la taglia ai lati se serve)
+REGOLA = 5   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -64,7 +68,7 @@ LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078"
 
 
 def alleggerisci(path):
-    """La foto in `path` diventa leggera (quadrato centrale se verticale, larga al massimo GRANDE, JPEG progressivo) e
+    """La foto in `path` diventa leggera (tagliata in 16:9, larga al massimo GRANDE, appena più nitida, JPEG progressivo) e
     accanto si scrive la piccola (-s.jpg, larga PICCOLA). Torna le misure {w, h, sw, sh, bytes, sbytes}, oppure None se
     Pillow non c'è o il file non si legge (allora la foto resta com'è e il sito usa solo quella)."""
     try:
@@ -76,16 +80,25 @@ def alleggerisci(path):
         im = ImageOps.exif_transpose(im).convert("RGB")
     except Exception:  # noqa: BLE001
         return None
+    from PIL import ImageFilter
     w, h = im.size
-    if h > w:
-        t = (h - w) // 2
-        im = im.crop((0, t, w, t + w))
-        w, h = im.size
-    grande = im.resize((GRANDE, round(h * GRANDE / w)), Image.LANCZOS) if w > GRANDE else im
-    piccola = im.resize((PICCOLA, round(h * PICCOLA / w)), Image.LANCZOS) if w > PICCOLA else im
+    # tutte nel formato della notizia, 16:9: una foto più alta si taglia sopra e sotto tenendo il centro un po' in alto
+    # (dove di solito sta il soggetto, non il marciapiede); una molto larga si taglia ai lati
+    if w / h < FORMATO:
+        nh = round(w / FORMATO)
+        t = round((h - nh) * 0.42)
+        im = im.crop((0, t, w, t + nh))
+    elif w / h > 2.1:
+        nw = round(h * 2.1)
+        sx = (w - nw) // 2
+        im = im.crop((sx, 0, sx + nw, h))
+    w, h = im.size
+    nitida = lambda x: x.filter(ImageFilter.UnsharpMask(radius=1.0, percent=55, threshold=2))
+    grande = nitida(im.resize((GRANDE, round(h * GRANDE / w)), Image.LANCZOS)) if w > GRANDE else im
+    piccola = nitida(im.resize((PICCOLA, round(h * PICCOLA / w)), Image.LANCZOS)) if w > PICCOLA else im
     base = path[:-4]
-    grande.save(base + ".tmp.jpg", "JPEG", quality=74, optimize=True, progressive=True)
-    piccola.save(base + "-s.tmp.jpg", "JPEG", quality=72, optimize=True, progressive=True)
+    grande.save(base + ".tmp.jpg", "JPEG", quality=80, optimize=True, progressive=True, subsampling="4:2:0")
+    piccola.save(base + "-s.tmp.jpg", "JPEG", quality=78, optimize=True, progressive=True)
     os.replace(base + ".tmp.jpg", base + ".jpg")
     os.replace(base + "-s.tmp.jpg", base + "-s.jpg")
     return {"w": grande.size[0], "h": grande.size[1], "sw": piccola.size[0], "sh": piccola.size[1],
@@ -132,8 +145,14 @@ def file_ok(nome):
     licenza = pulito((meta.get("LicenseShortName") or {}).get("value"))
     if not LIBERE.match(licenza):
         return None, f"licenza non libera o non riconosciuta («{licenza}»)"
-    if (ii.get("width") or 0) < 800 or (ii.get("height") or 0) < 450:
-        return None, "immagine troppo piccola"
+    w0, h0 = ii.get("width") or 0, ii.get("height") or 0
+    if w0 < 1280 or h0 < 720:
+        return None, "immagine troppo piccola per stare bene in grande"
+    if w0 < 1.2 * h0:
+        return None, "foto verticale o quadrata: nel formato della notizia perderebbe troppo"
+    anno = re.search(r"\b(1[89]\d\d|20\d\d)\b", pulito((meta.get("DateTimeOriginal") or meta.get("DateTime") or {}).get("value")))
+    if anno and int(anno.group(1)) < 2005:
+        return None, f"foto del {anno.group(1)}: troppo vecchia per una notizia di oggi"
     autore = pulito((meta.get("Artist") or {}).get("value"))[:80] or "autore non indicato"
     return ii.get("thumburl") or ii.get("url"), {"author": autore, "license": licenza, "page": ii.get("descriptionurl") or "", "file": nome,
                                                  "w": ii.get("thumbwidth") or ii.get("width"), "h": ii.get("thumbheight") or ii.get("height")}
@@ -144,12 +163,15 @@ def stesso(nome):
     return str(nome or "").replace("_", " ").strip()
 
 
-def senza_persone(pageid):
+def senza_persone(pageid, nome=None):
     """False se il file di Commons dichiara di ritrarre una persona (dati strutturati: «raffigura», P180, un essere
     umano). Senza dati strutturati, o se il controllo non riesce, vale il filtro sul nome del file."""
-    if not pageid:
-        return True
     try:
+        if not pageid and nome:
+            d = api("commons.wikimedia.org", action="query", titles="File:" + nome)
+            pageid = (((d.get("query") or {}).get("pages") or [{}])[0]).get("pageid")
+        if not pageid:
+            return True
         d = api("commons.wikimedia.org", action="wbgetentities", ids=f"M{pageid}", props="claims")
         ent = ((d.get("entities") or {}).get(f"M{pageid}") or {})
         stm = ent.get("statements") or ent.get("claims") or {}
@@ -191,6 +213,21 @@ def trova(wiki, title, escluse=()):
     # quella di Wikidata (P18), poi l'immagine principale della stessa voce nelle altre Wikipedia
     nomi, visti, perche = [], set(), "nessuna foto"
     principale = pages[0].get("pageimage")
+    cat = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P373") or []]
+    cat = cat[0] if cat and isinstance(cat[0], str) else None
+    # prima le foto più belle del luogo: quelle che la comunità di Commons ha premiato (vetrina e foto di qualità),
+    # nella sua categoria e in quelle sotto
+    premiate = []
+    if cat:
+        for premio in PREMIATE:
+            for cerca in (f'deepcategory:"{cat}" incategory:{premio}', f'incategory:"{cat}" incategory:{premio}'):
+                try:
+                    d = api("commons.wikimedia.org", action="query", list="search", srnamespace="6", srlimit="15", srsearch=cerca)
+                    trovati = [x["title"].split(":", 1)[1] for x in (d.get("query") or {}).get("search") or []]
+                    premiate += [n for n in trovati if n not in premiate and not EVENTI.search(n.replace("_", " "))]
+                    break
+                except Exception:  # noqa: BLE001  deepcategory a volte non risponde: si prova la categoria sola
+                    continue
     if principale and FOTO.search(principale):
         nomi.append(principale)
     nomi += [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P18") or []]
@@ -213,15 +250,17 @@ def trova(wiki, title, escluse=()):
             perche = f"{nome}: {info}"
         return None
 
+    r = prova(premiate[:10], controllo=lambda n: senza_persone(None, n)) if premiate else None
+    if r:
+        return r
     r = prova(nomi)
     if r:
         return r
     # altre foto dello stesso luogo: la categoria di Wikimedia Commons della voce (P373), dalle più recenti, solo
     # orizzontali (interni, altre angolazioni, altri momenti). Così un palazzo che torna spesso ha ogni volta un'altra foto
-    cat = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P373") or []]
-    if cat and isinstance(cat[0], str):
+    if cat:
         try:
-            d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat[0], gcmtype="file",
+            d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat, gcmtype="file",
                     gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo|info", iiprop="size|mime")
             altre, ids = [], {}
             for pg in (d.get("query") or {}).get("pages") or []:
@@ -314,7 +353,7 @@ def main(db, site):
         try:
             prima = json.load(open(side, encoding="utf-8"))
             doppia = prima.get("key") == chiave and bool(prima.get("file")) and usate.get(stesso(prima["file"]), sid) != sid
-            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")) and not doppia and prima.get("regola") == REGOLA:
+            if prima.get("key") == chiave and os.path.exists(os.path.join(cartella, sid + ".jpg")) and not doppia and (prima.get("regola") == REGOLA or s.get("status") != "live"):
                 if prima.get("file"):
                     usate[stesso(prima["file"])] = sid
                 # già presa: si alleggerisce una volta sola, dal file che c'è (senza riscaricarla)

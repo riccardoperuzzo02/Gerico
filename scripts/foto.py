@@ -60,7 +60,12 @@ EVENTI = re.compile(r"\b(speech|speaks|speaking|discorso|discours|rede|discurso|
 # le foto premiate dalla comunità di Commons: si guardano prima delle altre
 PREMIATE = ("Featured_pictures_on_Wikimedia_Commons", "Quality_images")
 FORMATO = 16 / 9   # il formato della foto nella notizia (e nella prima pagina, che la taglia ai lati se serve)
-REGOLA = 6   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+# «Isaac Herzog in the Knesset», «Merz besucht...»: un nome e cognome seguito da dove si trova o cosa fa è una persona;
+# GPO, DVIDS, Kremlin.ru e simili sono gli uffici stampa: quasi sempre persone
+PERSONA = re.compile(r"\b[A-ZÀ-Ý][a-zà-ÿ]+ (?:[A-ZÀ-Ý]\.? )?[A-ZÀ-Ý][a-zà-ÿ]+(?:'s)? (?:in|at|visits?|visiting|during|speaks?|addresses|meets|"
+                     r"im|bei|besucht|à|au|dans|en|a|al|nel|nella|alla|durante|visita)\b|\b(?:GPO|KBG|DVIDS|kremlin\.ru|"
+                     r"Official portrait|Prime Minister|Secretary)\b")
+REGOLA = 7   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -225,7 +230,7 @@ def trova(wiki, title, escluse=()):
                 try:
                     d = api("commons.wikimedia.org", action="query", list="search", srnamespace="6", srlimit="15", srsearch=cerca)
                     trovati = [x["title"].split(":", 1)[1] for x in (d.get("query") or {}).get("search") or []]
-                    premiate += [n for n in trovati if n not in premiate and not EVENTI.search(n.replace("_", " "))]
+                    premiate += [n for n in trovati if n not in premiate and not EVENTI.search(n.replace("_", " ")) and not PERSONA.search(n.replace("_", " "))]
                     break
                 except Exception:  # noqa: BLE001  deepcategory a volte non risponde: si prova la categoria sola
                     continue
@@ -268,7 +273,7 @@ def trova(wiki, title, escluse=()):
                 ii = (pg.get("imageinfo") or [{}])[0]
                 w, h = ii.get("width") or 0, ii.get("height") or 0
                 nome = pg["title"].split(":", 1)[1]
-                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")):
+                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")) and not PERSONA.search(nome.replace("_", " ")):
                     altre.append(nome)
                     ids[nome] = pg.get("pageid")
             # il controllo delle persone (dati strutturati) solo sulle candidate, una alla volta, al massimo 8

@@ -195,7 +195,7 @@ def trova(wiki, title, escluse=()):
         nomi.append(principale)
     nomi += [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P18") or []]
 
-    def prova(lista):
+    def prova(lista, controllo=None):
         nonlocal perche
         for nome in lista:
             if not isinstance(nome, str) or not FOTO.search(nome) or nome in visti:
@@ -205,6 +205,9 @@ def trova(wiki, title, escluse=()):
                 perche = f"{nome}: è già la foto di un'altra storia"
                 continue
             url, info = file_ok(nome)
+            if url and controllo and not controllo(nome):
+                perche = f"{nome}: ritrae una persona"
+                continue
             if url:
                 return url, info
             perche = f"{nome}: {info}"
@@ -220,15 +223,16 @@ def trova(wiki, title, escluse=()):
         try:
             d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat[0], gcmtype="file",
                     gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo|info", iiprop="size|mime")
-            altre = []
+            altre, ids = [], {}
             for pg in (d.get("query") or {}).get("pages") or []:
                 ii = (pg.get("imageinfo") or [{}])[0]
                 w, h = ii.get("width") or 0, ii.get("height") or 0
                 nome = pg["title"].split(":", 1)[1]
-                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")) \
-                        and senza_persone(pg.get("pageid")):
+                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")):
                     altre.append(nome)
-            r = prova(altre)
+                    ids[nome] = pg.get("pageid")
+            # il controllo delle persone (dati strutturati) solo sulle candidate, una alla volta, al massimo 8
+            r = prova(altre[:8], controllo=lambda n: senza_persone(ids.get(n)))
             if r:
                 return r
         except Exception:  # noqa: BLE001  la categoria è un di più: senza, si prova il resto

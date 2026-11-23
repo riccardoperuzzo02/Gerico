@@ -48,7 +48,15 @@ GRANDE, PICCOLA, OTT = 1200, 480, 2   # OTT: la versione dell'alleggerimento (ca
 # le foto usate nelle ultime settimane: non si ripetono, così lo stesso palazzo ha ogni volta uno scatto diverso
 STORICO_GIORNI = 21
 CATEGORIA_MAX = 40   # quante foto della categoria di Commons guardare, dalle più recenti
-REGOLA = 3   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+# le foto della categoria con persone o eventi nel nome non si prendono (discorsi, visite, cortei, ritratti...)
+EVENTI = re.compile(r"\b(speech|speaks|speaking|discorso|discours|rede|discurso|president[ea]?|präsident|minist(er|ro|re)|premier|chancellor|cancelliere|kanzler|"
+                    r"senator|senatore|deputy|deputato|mayor|sindaco|king|queen|re|regina|pope|papa|prince|principe|visit[ae]?|besuch|"
+                    r"meeting|incontro|réunion|treffen|reuni[oó]n|portrait|ritratto|selfie|conference|conferenza|ceremony|cerimonia|"
+                    r"delegation|delegazione|signing|firma|protest[ae]?|demonstration|manifestazione|parade|parata|march|corteo|run|race|"
+                    r"marathon|maratona|wedding|funeral|funerale|crowd|folla|people|persone|leute|gente|staff|soldiers|soldati|"
+                    r"students|studenti|award|premiazione|inauguration|insediamento|swearing|giuramento|rally|comizio|celebration|"
+                    r"festival|concert|concerto|mit|with|con|and|und|y|et)\b", re.I)
+REGOLA = 4   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -136,6 +144,28 @@ def stesso(nome):
     return str(nome or "").replace("_", " ").strip()
 
 
+def senza_persone(pageid):
+    """False se il file di Commons dichiara di ritrarre una persona (dati strutturati: «raffigura», P180, un essere
+    umano). Senza dati strutturati, o se il controllo non riesce, vale il filtro sul nome del file."""
+    if not pageid:
+        return True
+    try:
+        d = api("commons.wikimedia.org", action="wbgetentities", ids=f"M{pageid}", props="claims")
+        ent = ((d.get("entities") or {}).get(f"M{pageid}") or {})
+        stm = ent.get("statements") or ent.get("claims") or {}
+        raff = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in stm.get("P180") or []][:4]
+        for q in raff:
+            if not q:
+                continue
+            c = api("www.wikidata.org", action="wbgetclaims", entity=q, property="P31")
+            tipi = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value", {}).get("id") for x in (c.get("claims") or {}).get("P31") or []]
+            if "Q5" in tipi:
+                return False
+    except Exception:  # noqa: BLE001
+        return True
+    return True
+
+
 def trova(wiki, title, escluse=()):
     """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché). `escluse`: i file già usati da un'altra
     storia, che non si riprendono (due notizie con la stessa foto sembrano la stessa notizia)."""
@@ -189,13 +219,15 @@ def trova(wiki, title, escluse=()):
     if cat and isinstance(cat[0], str):
         try:
             d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat[0], gcmtype="file",
-                    gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo", iiprop="size|mime")
+                    gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo|info", iiprop="size|mime")
             altre = []
             for pg in (d.get("query") or {}).get("pages") or []:
                 ii = (pg.get("imageinfo") or [{}])[0]
                 w, h = ii.get("width") or 0, ii.get("height") or 0
-                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h:
-                    altre.append(pg["title"].split(":", 1)[1])
+                nome = pg["title"].split(":", 1)[1]
+                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")) \
+                        and senza_persone(pg.get("pageid")):
+                    altre.append(nome)
             r = prova(altre)
             if r:
                 return r

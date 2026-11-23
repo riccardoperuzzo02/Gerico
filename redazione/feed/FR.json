@@ -1,13 +1,76 @@
 {
  "code": "FR",
- "asOf": "2026-11-23T05:17:35+00:00",
+ "asOf": "2026-11-23T07:17:41+00:00",
  "items": [
   {
+   "source": "franceinfo",
+   "title": "Emmanuel Macron réfléchit à instaurer une \"règle d'or\" budgétaire",
+   "desc": "Selon les informations de franceinfo, Emmanuel Macron envisage d'adopter ce système pour repousser le risque d'une crise financière alors que la France a atteint 3 600 milliards d'euros de dette et que les taux d'intérêt augmentent.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/emmanuel-macron-reflechit-a-instaurer-une-regle-d-or-budgetaire_8273864.html",
+   "at": "2026-11-23T06:47:45+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"On limite les dégâts\" : une nouvelle aide pour les pompes à chaleur pour aider les foyers modestes à mieux se chauffer",
+   "desc": "Qu'il s'agisse du gaz ou du fioul, les prix grimpent alors que l'hiver s'installe partout en France. Le gouvernement a mis en place une offre de leasing social des pompes à chaleur afin de donner un coup de pouce à plusieurs ménages précaires pour s'équiper d'une nouvelle chaudière.",
+   "url": "https://www.franceinfo.fr/environnement/energie/reportage-on-limite-les-degats-une-nouvelle-aide-pour-les-pompes-a-chaleur-pour-aider-les-foyers-modestes-a-mieux-se-chauffer_8294954.html",
+   "at": "2026-11-23T06:35:58+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les objets volants tombés vendredi en Pologne étaient des missiles de croisière fabriqués en Russie, annonce le parquet de Lublin",
+   "desc": "La chute de ces objets, suivie dans au moins un cas d'une explosion et d'un incendie, n'avait pas fait de blessés.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/les-objets-volants-tombes-vendredi-en-pologne-etaient-des-missiles-de-croisiere-fabriques-en-russie-annonce-le-parquet-de-lublin_8295188.html",
+   "at": "2026-11-23T06:21:50+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La Corse reste en vigilance orange au vent et le Pas-de-Calais aux crues, fin de l'alerte \"pluie-inondations\" pour l'Ain et le Jura",
+   "desc": "Dans le Pas-de-Calais, touché ces derniers jours par des inondations, la Canche a amorcé sa décrue, mais le fleuve côtier reste en alerte orange.",
+   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/la-corse-reste-en-vigilance-orange-au-vent-et-le-pas-de-calais-aux-crues-fin-de-l-alerte-pluie-inondations-pour-l-ain-et-le-jura_8295437.html",
+   "at": "2026-11-23T06:20:34+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des frappes russes font au moins 15 morts dans la région de Kiev, avant une réunion de l'Otan dans la journée sur la guerre en Ukraine",
+   "desc": "Les bombardements ont touché un immeuble résidentiel, un supermarché et une habitation. La Russie a intensifié ses frappes contre la capitale ukrainienne ces six derniers mois et beaucoup redoutent que l'hiver soit le plus difficile depuis le début de la guerre.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-des-frappes-russes-font-au-moins-14-morts-dans-la-region-de-kiev_8295389.html",
+   "at": "2026-11-23T06:18:38+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il faut bien que la vie continue\" : un mois après l'attentat raciste de Trappes, des habitants et des témoins toujours marqués par le drame",
+   "desc": "Kadiatou, l'infirmière qui a tenté de sauver la victime, reste en état d'hypervigilance. Au marché des Merisiers, habitants et commerçants racontent leurs inquiétudes, mais aussi leur volonté de ne pas céder à la peur.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/il-faut-bien-que-la-vie-continue-un-mois-apres-l-attentat-raciste-de-trappes-des-habitants-et-des-temoins-toujours-marques-par-le-drame_8273867.html",
+   "at": "2026-11-23T06:16:29+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"Son combat est le mien\", assure Raphaël Glucksmann sur François Ruffin, qui s'est retiré de la course à l'Elysée",
+   "desc": "Le député de la Somme a retiré sa candidature à la présidentielle, samedi, sans annoncer de soutien à un autre candidat.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-son-combat-est-le-mien-assure-raphael-glucksmann-sur-francois-ruffin-qui-s-est-retire-de-la-course-a-l-elysee_8295479.html",
+   "at": "2026-11-23T06:14:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Ça devient une vraie alternative\" : avec la nouvelle loi sur le découvert bancaire, les demandes d'acomptes sur salaire risquent d'augmenter",
+   "desc": "Déjà en hausse de 30% par rapport à l'année 2025, cette pratique permet de toucher une partie de sa paye avant la fin du mois. Une demande que l'employeur ne peut pas refuser.",
+   "url": "https://www.franceinfo.fr/economie/reportage-ca-devient-une-vraie-alternative-avec-la-nouvelle-loi-sur-le-decouvert-bancaire-les-demandes-d-acomptes-sur-salaire-risquent-d-augmenter_8295197.html",
+   "at": "2026-11-23T06:05:12+00:00"
+  },
+  {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : des frappes russes dans la région de Kiev font au moins 14 morts ; deux navires, dont au moins un russe, attaqués en Libye",
-   "desc": "Selon un bilan encore provisoire, dix personnes ont été tuées dans une frappe russe ayant touché un immeuble résidentiel à Dymer, à une quarantaine de kilomètres au nord de la capitale ukrainienne. Les secours sont parvenus à extraire vivants des décombres un enfant et une femme de 79 ans, ont annoncé les autorités locales.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/23/en-direct-guerre-en-ukraine-des-frappes-russes-dans-la-region-de-kiev-font-au-moins-14-morts-deux-navires-dont-au-moins-un-russe-attaques-en-lybie_6814183_3210.html",
-   "at": "2026-11-23T05:07:31+00:00"
+   "title": "La Corse placée en vigilance orange pour des vents violents lundi matin ; la Canche toujours en vigilance orange aux crues, dans le Pas-de-Calais",
+   "desc": "Au cours de la nuit, Météo-France a relevé des rafales comprises généralement entre 130 et 170 km/h sur le cap Corse, et atteignant jusqu’à 191 km/h au cap Sagro, au nord de Bastia.",
+   "url": "https://www.lemonde.fr/climat/article/2026/11/23/la-corse-placee-en-vigilance-orange-pour-des-vents-violents-lundi-matin-la-canche-toujours-en-vigilance-orange-aux-crues-dans-le-pas-de-calais_6814193_1652613.html",
+   "at": "2026-11-23T05:52:54+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La justice saisie après des signalements de messages racistes dans une école de police",
+   "desc": "Deux enquêtes, l'une judiciaire et l'autre administrative, sont ouvertes dans cette affaire qui concerne les élèves de l'École nationale supérieure de la police (ENSP) de Cannes-Écluse (Seine-et-Marne), dont un a été suspendu.",
+   "url": "https://www.franceinfo.fr/faits-divers/police/la-justice-saisie-apres-des-signalements-de-messages-racistes-dans-une-ecole-de-police_8295449.html",
+   "at": "2026-11-23T05:42:13+00:00"
   },
   {
    "source": "franceinfo",
@@ -32,10 +95,17 @@
   },
   {
    "source": "Le Monde",
+   "title": "Cryptomonnaies : comment faire le tri parmi 66 millions d’actifs possibles",
+   "desc": "Malgré les dizaines de millions de jetons numériques existant, seule une poignée d’entre eux domine le marché.",
+   "url": "https://www.lemonde.fr/argent/article/2026/11/23/cryptomonnaies-comment-faire-le-tri-parmi-66-millions-d-actifs-possibles_6814342_1657007.html",
+   "at": "2026-11-23T05:00:14+00:00"
+  },
+  {
+   "source": "Le Monde",
    "title": "Pour Emmanuel Macron, un Choose France 100 % tricolore sur fond de morosité des entreprises françaises",
    "desc": "Le chef de l’Etat tient, lundi 23 novembre, un sommet destiné à mettre en avant 42,5 milliards d’euros d’investissements en France émanant des entreprises hexagonales. Derrière les montants affichés se cache une dynamique inquiétante.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/23/pour-emmanuel-macron-un-choose-france-100-tricolore-sur-fond-de-morosite-des-entreprises-francaises_6814341_3234.html",
-   "at": "2026-11-23T05:00:02+00:00"
+   "at": "2026-11-23T05:00:00+00:00"
   },
   {
    "source": "franceinfo",
@@ -47,20 +117,20 @@
   {
    "source": "Le Monde",
    "title": "Présidentielle 2027 : Marine Le Pen, une campagne au défi de la justice",
-   "desc": "La candidate du Rassemblement national à l’Elysée, déclarée le soir même d’une condamnation pour détournements de fonds publics, ne fait aucun cas des multiples affaires et soupçons d’atteinte à la probité visant son parti, misant sur l’indifférence présumée des électeurs pour les dossiers judiciaires.",
+   "desc": "La candidate du Rassemblement national à l’Elysée, officiellement en lice le soir même d’une condamnation pour détournements de fonds publics, ne fait aucun cas des multiples affaires et soupçons d’atteinte à la probité visant son parti, misant sur l’indifférence présumée des électeurs pour les dossiers judiciaires.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/23/presidentielle-2027-marine-le-pen-une-campagne-au-defi-de-la-justice_6814312_823448.html",
-   "at": "2026-11-23T04:30:10+00:00"
+   "at": "2026-11-23T04:30:07+00:00"
   },
   {
    "source": "Le Monde",
    "title": "L’itinéraire d’Hugues Moutouh, préfet « provocateur et dominant », ex-bras droit de Claude Guéant aujourd’hui soupçonné d’être une « taupe » du RN",
    "desc": "Ce haut fonctionnaire adepte de la manière forte, qui dément avoir manqué à ses devoirs et a demandé à « être relevé de ses fonctions », s’est servi de l’élection de Nicolas Sarkozy à la présidence de la République, en 2007, comme premier tremplin. Revenu en grâce avec Emmanuel Macron, il s’est rapproché des cercles d’extrême droite, son nom circulant comme possible ministre de Marine Le Pen.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/23/l-itineraire-d-hugues-moutouh-prefet-provocateur-et-dominant-ex-bras-droit-de-claude-gueant-aujourd-hui-soupconne-d-etre-une-taupe-du-rn_6814310_3224.html",
-   "at": "2026-11-23T04:30:03+00:00"
+   "at": "2026-11-23T04:29:59+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Voiture : sept millions de personnes en France prises en étau entre nécessité et coût, pointe une étude",
+   "title": "Voiture : 7 millions de personnes en France prises en étau entre nécessité et coût, pointe une étude",
    "desc": "Alors que les dépenses de carburant restent élevées, la voiture représente 13 % du budget des ménages disposant de 1 000 à 2 000 euros par mois, contre 3,5 % pour ceux dont les revenus dépassent 5 000 euros, selon une étude publiée lundi par l’Institut Terram.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/23/voiture-sept-millions-de-personnes-en-france-prises-en-etau-entre-necessite-et-cout-pointe-une-etude_6814273_3234.html",
    "at": "2026-11-23T03:10:36+00:00"
@@ -96,9 +166,16 @@
   {
    "source": "Le Monde",
    "title": "Guadeloupe : le CHU victime d’une « cyberattaque de grande ampleur », le plan blanc déclenché",
-   "desc": "L’activité du centre hospitalier, dont le système d’information et la téléphonie sont très affectés, a été déprogrammée « sur la semaine qui vient » afin de « réserver la prise en charge des patients déjà présents et des cas les plus urgents », a annoncé son directeur, Eric Guyader.",
+   "desc": "L’activité du centre hospitalier, dont le système d’information et la téléphonie sont très affectés, a été déprogrammée pour « la semaine qui vient » afin de privilégier « la prise en charge des patients déjà présents et des cas les plus urgents », a annoncé son directeur, Eric Guyader.",
    "url": "https://www.lemonde.fr/outre-mer/article/2026/11/22/guadeloupe-le-chu-victime-d-une-cyberattaque-de-grande-ampleur-le-plan-blanc-declenche_6814248_1840826.html",
    "at": "2026-11-22T21:54:51+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "James Bond : le monde et ses bouleversements à travers les yeux de l'agent 007",
+   "desc": "Pour les services de renseignements de la Grande-Bretagne, l’agent 007 est un important outil de soft power. Depuis plus de 60 ans, la saga est également le baromètre de l’évolution de la géopolitique planétaire. Avec le temps, l’homme qui incarne la menace dans le film est devenu un sismographe des peurs de l’époque.",
+   "url": "https://www.franceinfo.fr/culture/cinema/james-bond/james-bond-le-monde-et-ses-bouleversements-a-travers-les-yeux-de-l-agent-007_8295176.html",
+   "at": "2026-11-22T21:54:33+00:00"
   },
   {
    "source": "franceinfo",
@@ -123,45 +200,17 @@
   },
   {
    "source": "franceinfo",
-   "title": "Les objets volants tombés vendredi en Pologne étaient des missiles de croisière fabriqués en Russie, annonce le parquet de Lublin",
-   "desc": "La chute de ces objets, suivie dans au moins un cas d'une explosion et d'un incendie, n'avait pas fait de blessés",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/les-objets-volants-tombes-vendredi-en-pologne-etaient-des-missiles-de-croisiere-fabriques-en-russie-annonce-le-parquet-de-lublin_8295188.html",
-   "at": "2026-11-22T20:13:44+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "En Turquie, des milliers de personnes manifestent à Istanbul contre la fermeture de médias d'opposition",
    "desc": "Cette mobilisation fait suite à une descente de police mardi au siège de la chaîne d'opposition Sözcü TV et de son groupe.",
    "url": "https://www.franceinfo.fr/monde/turquie/en-turquie-des-milliers-de-personnes-manifestent-a-istanbul-contre-la-fermeture-de-medias-d-opposition_8295182.html",
    "at": "2026-11-22T20:04:43+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "A Istanbul, des milliers de manifestants ont dénoncé la mise sous tutelle des médias d’opposition par l’Etat",
-   "desc": "La manifestation a été organisée à l’appel du principal parti d’opposition de Turquie, le Yeni Parti (« Nouveau Parti »), après que la chaîne d’opposition Sözcü TV a vu ses bureaux perquisitionnés, mardi, plusieurs de ses dirigeants arrêtés, et un administrateur nommé à sa tête par le gouvernement.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/22/a-istanbul-des-milliers-de-manifestants-ont-denonce-la-mise-sous-tutelle-des-medias-d-opposition-par-l-etat_6814246_3210.html",
-   "at": "2026-11-22T19:58:35+00:00"
-  },
-  {
    "source": "France 24",
-   "title": "Choose France : les entreprises françaises prêtent à investir 42,5 milliards d'euros",
+   "title": "Choose France : les entreprises françaises prêtes à investir 42,5 milliards d'euros",
    "desc": "Les entreprises tricolores projettent d'investir 42,5 milliards d'euros en France lors du sommet Choose France qui se déroulera lundi, a détaillé l'Élysée dimanche soir. Malgré une situation économique compliquée dans le pays, plus de 200 projets industriels français seront mis à l'honneur.",
    "url": "https://www.france24.com/fr/france/20261122-choose-france-entreprises-fran%C3%A7aises-pr%C3%AAtent-investir-42-5-milliards-euros-emmanuel-macron-%C3%A9conomie-investissements-projet",
    "at": "2026-11-22T19:58:34+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "COP31 : le secrétaire général de l'Onu \"profondément déçu\" par l'échec des négociations sur le climat",
-   "desc": "Après quasiment deux jours de prolongations, la conférence de l'Onu s'est achevée dimanche en Turquie, sans accord global des pays participants, après le rejet de l'Union européenne de signer un texte dépourvu de mention aux énergies fossiles.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/direct-l-union-europeenne-s-oppose-a-l-adoption-de-la-declaration-finale-de-la-cop31-apres-pres-de-deux-jours-de-prolongations_8294819.html",
-   "at": "2026-11-22T19:49:52+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Je ne gouvernerai pas avec le RN\", déclare David Lisnard, candidat du parti Nouvelle Energie à la présidentielle",
-   "desc": "Dans un message publié sur le réseau social X, le maire de Cannes a mis en avant des divergences sur les questions économiques.",
-   "url": "https://www.franceinfo.fr/elections/je-ne-gouvernerai-pas-avec-le-rn-declare-david-lisnard-candidat-du-parti-nouvelle-energie-a-la-presidentielle_8295167.html",
-   "at": "2026-11-22T19:47:14+00:00"
   },
   {
    "source": "franceinfo",
@@ -199,20 +248,6 @@
    "at": "2026-11-22T18:45:54+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Toutes les solutions méritent d’être explorées\" : l'Elysée ne confirme pas la possible inscription de la \"règle d'or\" budgétaire dans la Constitution début 2027",
-   "desc": "Selon \"La Tribune Dimanche\", le chef de l'Etat réfléchit à convoquer le Congrès à Versailles, réunissant députés et sénateurs, pour faire approuver cette mesure emblématique de l'orthodoxie financière.",
-   "url": "https://www.franceinfo.fr/economie/budget/toutes-les-solutions-meritent-d-etre-explorees-l-elysee-ne-confirme-pas-la-possible-inscription-de-la-regle-d-or-budgetaire-dans-la-constitution-debut-2027_8295083.html",
-   "at": "2026-11-22T18:25:32+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'absence d'accord à l'issue de la COP 31 est \"frustrant\", réagit Laurence Tubiana, présidente de la Fondation européenne pour le climat",
-   "desc": "L'économiste est déçue face aux avancées \"ces dernières années\" malgré la \"sortie des accords de Paris des États-Unis pour la deuxième fois\".",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/l-absence-d-accord-a-l-issue-de-la-cop-31-est-frustrant-reagit-laurence-tubiana-presidente-de-la-fondation-europeenne-pour-le-climat_8295074.html",
-   "at": "2026-11-22T17:16:53+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Mathématiques et IA : prenons le temps de comprendre",
    "desc": "Dans sa carte blanche au « Monde », le mathématicien et académicien Etienne Ghys prend acte de l’accélération que l’intelligence artificielle apporte à sa discipline. Mais il rappelle que les maths ne se réduisent pas à des résultats.",
@@ -234,18 +269,18 @@
    "at": "2026-11-22T16:00:02+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Une frappe iranienne sur un \"site industriel civil\" fait deux blessés à Bahreïn",
-   "desc": "Les Gardiens de la Révolution ont revendiqué samedi soir des frappes contre des installations américaines en réponse aux \"violations continues de l'espace aérien\" iranien.",
-   "url": "https://www.franceinfo.fr/monde/moyen-orient/une-frappe-iranienne-sur-un-site-industriel-civil-fait-deux-blesses-a-bahrein_8294927.html",
-   "at": "2026-11-22T15:57:57+00:00"
+   "source": "France 24",
+   "title": "Budget : Macron confirme qu'il envisage d'inscrire une \"règle d'or\" dans la Constitution",
+   "desc": "Emmanuel Macron a confirmé au Figaro qu'il envisage de faire inscrire dans la Constitution une \"règle d'or\" budgétaire. Un projet qui lui permettrait de quitter l'Élysée sur une mesure emblématique, rassurante pour les marchés, alors que le président est très critiqué pour sa gestion des finances publiques.",
+   "url": "https://www.france24.com/fr/france/20261122-budget-macron-confirme-qu-il-envisage-d-inscrire-une-r%C3%A8gle-d-or-dans-la-constitution",
+   "at": "2026-11-22T15:54:26+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"On a découvert une facette plus personnelle des candidats\" : en Espagne, un youtubeur catalan s’invite dans la campagne électorale",
-   "desc": "Le youtubeur Jordi Wild a reçu les principaux candidats dans son podcast, suivi par des millions de jeunes. Seul le leader de Vox, Santiago Abascal, a annulé son entretien au dernier moment.",
-   "url": "https://www.franceinfo.fr/monde/espagne/on-a-decouvert-une-facette-plus-personnelle-des-candidats-en-espagne-un-youtubeur-catalan-s-invite-dans-la-campagne-electorale_8294702.html",
-   "at": "2026-11-22T14:46:44+00:00"
+   "source": "Le Monde",
+   "title": "Après l’attentat de Trappes, un entrepreneur de Millau lance une nouvelle marche nationale contre le racisme, au départ de Marseille",
+   "desc": "Le parcours démarrera lundi 23 novembre avec l’objectif de rejoindre la ville des Yvelines. Sollicités, certains marcheurs de 1983 sont circonspects sur l’impact d’une nouvelle édition.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/22/apres-l-attentat-de-trappes-un-entrepreneur-de-millau-lance-une-nouvelle-marche-nationale-contre-le-racisme-au-depart-de-marseille_6814223_3224.html",
+   "at": "2026-11-22T15:30:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -255,39 +290,11 @@
    "at": "2026-11-22T14:45:37+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Benjamin Millepied fait danser la pop intime de la chanteuse November Ultra sur la scène des Folies Bergère à Paris",
-   "desc": "À 49 ans, le prolifique chorégraphe propose trois nouvelles créations dans cette salle mythique, mariant différents univers artistiques. La voix caressante de November Ultra lui a inspiré un concert dansé d'une grande douceur.",
-   "url": "https://www.franceinfo.fr/culture/spectacles/danse/benjamin-millepied-fait-danser-la-pop-intime-de-la-chanteuse-november-ultra-sur-la-scene-des-folies-bergere-a-paris_8289656.html",
-   "at": "2026-11-22T14:39:20+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le « poisson à poumons » éclaire l’énigme de la sortie de la mer des vertébrés",
-   "desc": "L’été venu, le dipneuste africain s’enterre et transforme sa peau grâce à une toxine véhiculée par le système immunitaire. Et si nos ancêtres avaient emprunté le même chemin il y a 400 millions d’années ?",
-   "url": "https://www.lemonde.fr/sciences/article/2026/11/22/le-poisson-a-poumons-eclaire-l-enigme-de-la-sortie-de-la-mer-des-vertebres_6814219_1650684.html",
-   "at": "2026-11-22T14:30:02+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Fuites au ministère de l'Intérieur : un mail jette des soupçons sur l'implication du préfet Moutouh",
    "desc": "La justice française soupçonne des fuites d'informations confidentielles du ministère de l'Intérieur vers le Rassemblement national. Un mail pourrait apporter des éléments sur le rôle de l'ancien secrétaire général de Beauvau et actuel préfet du Loiret et de la région Centre-Val de Loire, Hugues Moutouh, qui nie toute implication.",
    "url": "https://www.france24.com/fr/france/20261122-fuites-au-minist%C3%A8re-de-l-int%C3%A9rieur-un-mail-jette-des-soup%C3%A7ons-sur-l-implication-du-pr%C3%A9fet-moutouh",
    "at": "2026-11-22T14:28:27+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "En Cisjordanie occupée, une enquête ouverte après des incendies imputés à des colons israéliens",
-   "desc": "Gadi Eisenkot, rival du Premier ministre sortant Benyamin Nétanyahou et chargé par le chef de l'Etat de former un gouvernement, a dénoncé ces actes, qu'il a qualifiés de \"terrorisme juif\" ébranlant \"la stabilité régionale\".",
-   "url": "https://www.franceinfo.fr/monde/israel/une-enquete-ouverte-apres-des-incendies-imputes-a-des-colons-israeliens-en-cisjordanie-occupee_8294669.html",
-   "at": "2026-11-22T13:20:08+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La multiplication des incidents militaires fait craindre une escalade entre la Russie et l'Otan",
-   "desc": "Alors que la Finlande soupçonne un hélicoptère russe d'avoir violé son espace aérien, les incidents se multiplient sur tout l'arc est-européen, de la mer Baltique à la mer Noire.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-multiplication-des-incidents-militaires-fait-craindre-une-escalade-entre-la-russie-et-l-otan_8294615.html",
-   "at": "2026-11-22T09:57:56+00:00"
   }
  ]
 }

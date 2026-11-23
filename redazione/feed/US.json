@@ -1,7 +1,21 @@
 {
  "code": "US",
- "asOf": "2026-11-23T05:17:35+00:00",
+ "asOf": "2026-11-23T07:17:41+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "How Asian countries are looking to prop up markets as AI downturn sinks stocks",
+   "desc": "Market regulators in South Korea, China and Taiwan have introduced new measures to support markets.",
+   "url": "https://www.cnbc.com/2026/11/23/asia-markets-kospi-taiwan-china-csi300.html",
+   "at": "2026-11-23T06:50:48+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
+   "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
+   "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-tanker-tick-tock.html",
+   "at": "2026-11-23T06:44:00+00:00"
+  },
   {
    "source": "CNBC",
    "title": "U.S. probes Megaspeed, Alice Huang as new figure emerges in Nvidia chip case",
@@ -325,13 +339,6 @@
    "at": "2026-11-22T16:33:22+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "How a Crash Into a Cruise Ship in New Orleans Became a ‘Miracle on the Mississippi’",
-   "desc": "When a 525-foot tanker struck the docked American Heritage riverboat on Nov. 13, a rescue operation turned tragedy into triumph and led the nearly 200 aboard to safety.",
-   "url": "https://www.nytimes.com/2026/11/22/us/new-orleans-riverboat-crash-tanker-tick-tock.html",
-   "at": "2026-11-22T16:32:19+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Nature: Turkeys in New Hampshire",
    "desc": "We leave you this Sunday with turkeys on the run in Rye, New Hampshire. Videographer: Michael Clark.",
@@ -456,13 +463,6 @@
    "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
    "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
    "at": "2026-11-22T10:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
-   "desc": "Quantum computing firms are testing energy-grid optimization, solar materials and hydrogen catalysts as they pursue practical uses.",
-   "url": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
-   "at": "2026-11-22T06:00:01+00:00"
   }
  ]
 }

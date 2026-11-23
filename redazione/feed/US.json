@@ -1,7 +1,126 @@
 {
  "code": "US",
- "asOf": "2026-11-23T09:17:40+00:00",
+ "asOf": "2026-11-23T11:17:33+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+   "desc": "The incident comes alongside a suspected Ukrainian drone strike on a Russian cargo ship in the Baltic Sea over the weekend.",
+   "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+   "at": "2026-11-23T10:35:46+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic, Nvidia shares rise in premarket trading after major tech selloff",
+   "desc": "The Nasdaq slid 10% last week in its worst week since the early days of Covid in 2020.",
+   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
+   "at": "2026-11-23T10:24:25+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+   "desc": "Ukraine carried out an attack on a Russian warship moored at a port in Libya, President Volodymyr Zelenskyy said, claiming that sea drones sank the navy vessel in a surprise assault.",
+   "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+   "at": "2026-11-23T10:16:33+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
+   "desc": "U.S. Treasury yields rose Monday, partially unwinding price action seen at the end of last week, as stock futures pointed to a strong rebound on Wall Street.",
+   "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html",
+   "at": "2026-11-23T10:15:19+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "‘Worst COP ever’: Climate talks collapse after draft deal fails to include fossil fuels",
+   "desc": "Governments and campaigners rejected the \"cover decision\" drafted at the U.N.'s climate summit, COP31, on Sunday.",
+   "url": "https://www.cnbc.com/2026/11/23/cop31-climate-summit-fossil-fuels.html",
+   "at": "2026-11-23T10:13:30+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Virginia School District Shaken by Sex Abuse Claims Closes for a Week",
+   "desc": "The district failed to conduct required background checks on more than 500 employees. The problem came to light after two staff members were arrested in separate child sex abuse and pornography charges.",
+   "url": "https://www.nytimes.com/2026/11/23/us/albemarle-virginia-school-district-sex-abuse-closure.html",
+   "at": "2026-11-23T10:04:07+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
+   "desc": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html",
+   "at": "2026-11-23T10:04:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The World’s Tech Capital Can’t Keep Sewage Off the Streets in a Deluge",
+   "desc": "A downpour once again sent wastewater into San Francisco streets. It could become a frequent occurrence in this El Niño year.",
+   "url": "https://www.nytimes.com/2026/11/23/us/san-francisco-poop-water-sewer-rain.html",
+   "at": "2026-11-23T10:03:59+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Squeezed for Space in Court Filings, Lawyers Get Typographically Creative",
+   "desc": "Manipulating page formatting and fonts can help exceed word limits in legal filings, but can also incur a judge’s ire.",
+   "url": "https://www.nytimes.com/2026/11/23/us/federal-court-typography-rules.html",
+   "at": "2026-11-23T10:03:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "When disaster strikes, Medicaid work rules add barriers",
+   "desc": "Medicaid provides a critical safety net for people to maintain healthcare coverage. But new work requirements create barriers for those trying to recover from natural disasters.",
+   "url": "https://www.cbsnews.com/news/medicaid-work-rules-disasters/",
+   "at": "2026-11-23T10:00:07+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Stuck: How a frozen housing market is hitting buyers, sellers and the economy",
+   "desc": "A sharp spike in mortgage rates in September has pushed the already chilly real estate sector into a deep freeze.",
+   "url": "https://www.cnbc.com/2026/11/23/housing-market-real-estate-economy.html",
+   "at": "2026-11-23T10:00:01+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
+   "desc": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
+   "at": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "K is for kindness, but families worry the world has less of it",
+   "desc": "A decade after first asking families about kindness, Sesame Workshop asked parents similar questions. They responded that their kids are getting kinder even as the wider world becomes less so.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6035702/kindness-kids-sesame-street-parents-survey",
+   "at": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Mushroom supplements promise health benefits. What does the science say?",
+   "desc": "Wellness influencers say mushroom supplements can help with your gut health, focus and immune system. Here is where research suggests there are some links.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6047791/mushroom-supplements-health-research",
+   "at": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+   "desc": "Grocery costs have been on the rise, but food-price analysts say it's unclear if you'll spend more on the Thanksgiving meal this year. Some people are deciding not to host or are hosting fewer guests.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs",
+   "at": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "French biotech rejects short seller’s cancer-risk claims after shares plunge 17%",
+   "desc": "Short seller Scorpion Capital has accused Abivax of serious scientific and safety shortcomings in its experimental inflammatory bowel disease drug.",
+   "url": "https://www.cnbc.com/2026/11/23/abivax-scorpion-capital-obefazimod.html",
+   "at": "2026-11-23T09:45:42+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Morning news brief",
+   "desc": "A look at how artificial intelligence is affecting the economy, NATO to meet after Russian missiles hit Poland, negotiators fail to reach a deal as COP31 comes to an end.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6045619/morning-news-brief",
+   "at": "2026-11-23T09:45:21+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Forget Anthropic: In Europe, the IPO hype is about a blue lagoon",
@@ -123,24 +242,17 @@
   },
   {
    "source": "CBS News",
-   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
-   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
-   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
-   "at": "2026-11-23T01:49:00+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Delta Air Lines says it's resolved network issue, but severe weather could cause more delays",
    "desc": "Delta Air Lines said it resolved an automation outage that disrupted half of all flights, but the weather is creating another speed bump for the Thanksgiving travel rush. Shanelle Kaul reports and Andrew Kozak has the forecast.",
    "url": "https://www.cbsnews.com/video/ddelta-air-lines-says-resolved-network-issue-severe-weather-delays/",
    "at": "2026-11-23T01:49:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "3 big things we're watching in the market this Thanksgiving week",
-   "desc": "Can the AI trade rebound? Plus, a big week for retail activity and Fed policy discussion.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/22/3-big-things-were-watching-in-the-market-this-thanksgiving-week.html",
-   "at": "2026-11-23T00:42:54+00:00"
+   "source": "CBS News",
+   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
+   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
+   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
+   "at": "2026-11-23T01:49:00+00:00"
   },
   {
    "source": "New York Times",
@@ -242,13 +354,6 @@
   },
   {
    "source": "New York Times",
-   "title": "Bigfoot Left a Paper Trail That Everyone Can See Now",
-   "desc": "This fall, the U.S. Forest Service quietly released records about the creature of lore.",
-   "url": "https://www.nytimes.com/2026/11/21/us/bigfoot-government-documents-released.html",
-   "at": "2026-11-22T20:34:20+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "2 New Jersey Women Indicted in Faked Anti-Trump Slashing Attack",
    "desc": "Natalie Greene, who worked for Representative Jeff Van Drew, a Republican, falsely claimed she had been attacked at a nature preserve in 2025, officials said.",
    "url": "https://www.nytimes.com/2026/11/22/us/van-drew-employee-indicted-attack-hoax.html",
@@ -311,20 +416,6 @@
    "at": "2026-11-22T17:39:08+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Meet the young authors! A literacy program inspires kids in South Africa",
-   "desc": "South Africa is working to overcome a children's literacy crisis. In one Johannesburg township, a reading club is instilling a love of books in kids — and inspiring them to become authors.",
-   "url": "https://www.npr.org/2026/11/22/g-s1-154387/books-children-authors-south-africa-literacy",
-   "at": "2026-11-22T17:34:20+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "I’ve studied over 200 kids—to avoid raising a people pleaser, ditch 6 parenting habits: It starts in ‘ordinary, well-intentioned moments’",
-   "desc": "Reem Raouda, a conscious parenting coach who's worked with over 200 families, shares six habits worth reconsidering, like treating disagreement as disrespect.",
-   "url": "https://www.cnbc.com/make-it/2026/11/22/parenting-habits-people-pleaser.html",
-   "at": "2026-11-22T17:33:25+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Director of National Intelligence Jay Clayton warns Americans of 'bumps in the road' after tech outages",
    "desc": "Clayton’s warning comes ahead of Thanksgiving travel, after separate outages disrupted air travel, Microsoft 365 and some bank transactions.",
@@ -337,13 +428,6 @@
    "desc": "The pediatrician, who once compared JD Vance to the herpes virus, notched one of the most shocking upsets of the midterm elections by defeating Senator Darline Graham.",
    "url": "https://www.nytimes.com/2026/11/22/us/politics/annie-andrews-south-carolina-senate.html",
    "at": "2026-11-22T16:56:09+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Climate change talks fall apart in final hours over fossil fuels",
-   "desc": "Some 200 countries gathered in Antalya, Turkey, for COP31, the annual climate negotiations. Countries failed to reach an agreement over fossil fuels - the primary driver of global warming.",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment",
-   "at": "2026-11-22T16:33:22+00:00"
   },
   {
    "source": "CBS News",
@@ -374,13 +458,6 @@
    "at": "2026-11-22T15:21:06+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Sallie Ann Robinson on preserving Gullah cuisine",
-   "desc": "On a barrier island off the coast of South Carolina, Sallie Ann Robinson – chef, cookbook writer, and human whirlwind – sees food as one way to preserve Gullah Geechee culture. Correspondent Martha Teichner talks with Robinson, winner of this year's James Beard Foundation Hall of Fame Book Award.",
-   "url": "https://www.cbsnews.com/video/sallie-ann-robinson-on-preserving-gullah-cuisine/",
-   "at": "2026-11-22T15:00:15+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Social Security benefits are rising in 2027, but other changes could affect what you keep",
    "desc": "A 3.6% Social Security cost-of-living adjustment for 2027 will increase benefits across the board. But Medicare and tax changes will also affect retirees.",
@@ -407,13 +484,6 @@
    "desc": "Jane Pauley hosts our annual Food Issue. Featured: Food debt; in-home restaurants; Sardinian pasta; chef Kwame Onwuachi; actor Tony Shalhoub; Sallie Ann Robinson on Gullah cuisine; Wisconsin's supper clubs; food for the outdoors; and stories behind Brussels sprouts, cottage cheese, and Chilean sea bass.",
    "url": "https://www.cbsnews.com/video/112226-sunday-morning/",
    "at": "2026-11-22T14:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Medicare looks a bit different in 2027, so don't miss open enrollment",
-   "desc": "Open enrollment for Medicare runs through Dec. 7, and there are a few different pitfalls people should watch out for this year. Your drug plan or Medicare Advantage plan could be changing a lot.",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-6036735/medicare-open-enrollment-2027",
-   "at": "2026-11-22T13:11:04+00:00"
   },
   {
    "source": "CNBC",
@@ -449,27 +519,6 @@
    "desc": "Elevated options premiums are creating an opportunity in Amazon",
    "url": "https://www.cnbc.com/2026/11/22/the-nasdaq-is-in-freefall-heres-one-stock-to-look-at.html",
    "at": "2026-11-22T12:10:39+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fact-Checking Stephen Miller, the New White House Chief of Staff",
-   "desc": "Mr. Miller has promoted some of the second Trump administration’s most egregious falsehoods about immigration policy, the economy and political opposition.",
-   "url": "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
-   "at": "2026-11-22T10:02:17+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "He expected a small-business loan. He got a 7-year nightmare",
-   "desc": "America's fastest-growing source of funding for small businesses is also one of the least regulated. One man has waged a long, lonely fight to recoup its punishing cost.",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-5752261/small-business-loan-merchant-cash-advance",
-   "at": "2026-11-22T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "NPR's Senior Podcast Challenge: Early entries we love",
-   "desc": "People 65 and older have been submitting stories for a chance to win our grand prize — a visit to NPR watch your podcast air live on Weekend Edition . There's still time to enter!",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-6044221/npr-senior-podcast-challenge-early-entries",
-   "at": "2026-11-22T10:00:00+00:00"
   }
  ]
 }

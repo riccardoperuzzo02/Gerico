@@ -1,13 +1,55 @@
 {
  "code": "DE",
- "asOf": "2026-11-23T09:17:40+00:00",
+ "asOf": "2026-11-23T11:17:33+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Kalte Progression: Grünen-Chefin wirft Söder »Ego-Show« vor",
+   "desc": "Nach der Forderung zum Ausgleich der kalten Progression durch Markus Söder zeigt sich Grünen-Chefin Franziska Brantner empört. Söder spiele mit der Regierung, sagte sie.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/franziska-brantner-markus-soeder-csu-kalte-progression-gxe",
+   "at": "2026-11-23T10:48:43+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Wadephul fordert Putin erneut zu Beendigung des Krieges auf",
+   "desc": "Bei der Nato-Versammlung in Berlin fordert Bundesaußenminister Wadephul von Putin ein Ende des Krieges. Die Ukraine attackiert russische Schiffe vor Libyen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-23T10:46:35+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Einigung: Zeugen Jehovas bekommen Archiv einer NS-Verfolgten",
+   "desc": "Die Zeugen Jehovas litten unter der Verfolgung der Nationalsozialisten - eine Betroffene hat dies minutiös dokumentiert. Doch das Kusserow-Archiv lag lange im Museum der Bundeswehr. Nun bekommt die Glaubensgemeinschaft es zurück. Von Max Bauer.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/zeugen-jehovas-kusserow-ns-verfolgung-100.html",
+   "at": "2026-11-23T10:26:02+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "SPD: Sigmar Gabriel kritisiert »Führungsvakuum« in der Partei",
+   "desc": "Die SPD ringt um einen neuen Vorsitz. Nun schaltet sich Sigmar Gabriel in die Debatte ein. Der ehemalige SPD-Vorsitzende bemängelt die niedrige innerparteiliche Solidarität und mahnt: Neue Gesichter allein reichen nicht.",
+   "url": "https://www.spiegel.de/politik/deutschland/spd-sigmar-gabriel-kritisiert-fuehrungsvakuum-in-der-partei-a-e31c435a-b50b-4f5f-8098-67041beca7b1",
+   "at": "2026-11-23T09:45:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Atomare Aufrüstung: Geheimdienste warnen vor russischen Plänen für Atomwaffe im Weltraum",
+   "desc": "Russland will laut Medienberichten einen atomar bewaffneten Satelliten ins Weltall bringen. Geheimdienste und die Bundeswehr haben Warnungen ausgesprochen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-satellit-atomsprengkopf-weltraum-nato-boris-pistorius-gxe",
+   "at": "2026-11-23T09:36:15+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "NATO-Parlamentarier tagen zu Sicherheitspolitik in Berlin",
    "desc": "Die Parlamentarische Versammlung der NATO versteht sich als eine Art transatlantisches Parlament. Heute tagen die Delegierten in Berlin - mit prominenten Gästen und weitreichenden Forderungen. Von Oliver Neuroth.",
    "url": "https://www.tagesschau.de/inland/nato-versammlung-berlin-100.html",
    "at": "2026-11-23T09:14:40+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Brexit-Debatte: Ein neuer Deal für Großbritannien und die EU",
+   "desc": "Enge Verbindungen zwischen jungen Menschen in der EU und Großbritannien sind von herausragender Bedeutung. Ein neues Abkommen macht Reisen und Studieren wieder einfacher.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/brexit-debatte-grossbritannien-eu-kooperation-junge-menschen-studium-reisen",
+   "at": "2026-11-23T09:13:31+00:00"
   },
   {
    "source": "Die Zeit",
@@ -25,17 +67,17 @@
   },
   {
    "source": "Die Zeit",
+   "title": "Inflation : Wir können uns immer weniger leisten? Von wegen!",
+   "desc": "Wohnen, Essen, Benzin: Alles wird angeblich teurer. Doch für eine Bezahlbarkeitskrise gibt es wenig Indizien.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/inflation-bezahlbarkeit-mieten",
+   "at": "2026-11-23T08:56:12+00:00"
+  },
+  {
+   "source": "Die Zeit",
    "title": "Ukrainekarte aktuell: Ukrainische und russische Vorstöße bei Kostjantyniwka und Dobropillja",
    "desc": "In der Region Donezk rücken sowohl ukrainische als auch russische Einheiten in zwei Richtungen vor. Dabei soll die russische Armee ein weiteres Dorf eingenommen haben.",
    "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
    "at": "2026-11-23T08:48:31+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Atomare Aufrüstung: Geheimdienste warnen vor russischen Plänen für Atomwaffe im Weltraum",
-   "desc": "Russland will laut Medienberichten einen atomar bewaffneten Satelliten ins Weltall bringen. Geheimdienste und die Bundeswehr haben Warnungen ausgesprochen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-satellit-atomsprengkopf-weltraum-nato-boris-pistorius-gxe",
-   "at": "2026-11-23T08:36:15+00:00"
   },
   {
    "source": "Die Zeit",
@@ -50,13 +92,6 @@
    "desc": "Die Union möchte die sogenannte Rente mit 63 am liebsten abschaffen, die SPD will sie behalten. Doch es deutet sich ein Abrücken von diesen Maximalforderungen an. Noch verhandelt Arbeitsminister Schweitzer mit der Union über die Knackpunkte.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/rente-koalition-soeder-100.html",
    "at": "2026-11-23T07:11:48+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Russisches Kriegsschiff sinkt in libyschem Hafen",
-   "desc": "Das Schiff ist mutmaßlich von ukrainischen Drohnen angegriffen worden. Bei einem Angriff auf ein Dorf in der Nähe von Kyjiw sind mehrere Menschen gestorben. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-23T07:04:13+00:00"
   },
   {
    "source": "Die Zeit",
@@ -88,9 +123,9 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "News: Markus Söder will Kalte Progression ausgleichen, Klimakonferenz zurecht gescheitert, Pressefreiheit in der Türkei",
+   "title": "News: Markus Söder will Kalte Progression ausgleichen, Klimakonferenz, Türkei",
    "desc": "Markus Söder stiftet Unruhe mit der kalten Progression. Das Scheitern der Klimakonferenz hat auch eine gute Seite. Und in der Türkei konnte Erdoğan noch nicht alle zum Schweigen bringen. Das ist die Lage am Montagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-markus-soeder-will-kalte-progression-ausgleichen-klimakonferenz-zurecht-gescheitert-pressefreiheit-in-der-tuerkei-a-4890e582-898f-4c5b-b4ce-526c57e443b1",
+   "url": "https://www.spiegel.de/politik/deutschland/news-markus-soeder-will-kalte-progression-ausgleichen-klimakonferenz-tuerkei-a-4890e582-898f-4c5b-b4ce-526c57e443b1",
    "at": "2026-11-23T04:29:00+00:00"
   },
   {
@@ -113,27 +148,6 @@
    "desc": "Auch in North Carolina steht nach den US-Midterms ein Sieger fest. Dort setzte sich Chuck Hubbard durch. Die Demokraten haben nun die größte Mehrheit seit über 30 Jahren.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/demokraten-mehrheit-repraesentantenhaus-kongresswahlen-usa-chuck-hubbard",
    "at": "2026-11-23T00:41:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Betäubungsmittel: Syrische Behörden vernichten tonnenweise konfiszierte Drogen",
-   "desc": "400 Millionen Tabletten der Partydroge Captagon und große Mengen weiterer Rauschmittel sind in Syrien entsorgt worden. Die Machthaber bekämpfen die Drogenproduktion.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/syrien-drogen-captagon-baschar-al-assad",
-   "at": "2026-11-22T20:58:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Drohnenangriffe im Sudan: UN melden Angriff auf Wohngebiet in sudanesischer Hauptstadt",
-   "desc": "In der Provinz Khartum im Sudan sind Drohnenangriffe auf Wohnhäuser gemeldet worden. Drei Menschen wurden getötet, auch eine UN-Einrichtung sei beschädigt worden.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/sudan-drohnenangriffe-khartum-armee-rsf-un",
-   "at": "2026-11-22T20:32:04+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Kalte Progression: Grüne werfen Söder »öffentliches Lamentieren« vor",
-   "desc": "CSU-Chef Markus Söder fordert »dringend einen Ausgleich der kalten Progression«. Die Opposition wirft ihm Inszenierung vor. Die SPD hält Söders Vorstoß für chancenlos.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/kalte-progression-ausgleich-markus-soeder-britta-hasselmann-gxe",
-   "at": "2026-11-22T20:00:32+00:00"
   },
   {
    "source": "Tagesschau",
@@ -183,27 +197,6 @@
    "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
    "at": "2026-11-22T12:00:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Markus Söder fordert Ausgleich der kalten Progression",
-   "desc": "Eigentlich fehlt das Geld dafür, doch CSU-Chef Markus Söder pocht auf weitere Steuerentlastungen. Der Ausgleich der kalten Progression sei eine »Frage der Glaubwürdigkeit«. Es geht um vier Milliarden Euro.",
-   "url": "https://www.spiegel.de/politik/deutschland/markus-soeder-fordert-ausgleich-der-kalten-progression-a-ec276ef0-1015-40f2-abd3-c5ef820e15aa",
-   "at": "2026-11-22T10:33:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundeswehr ändert Truppenverlegung nach Litauen kurzfristig",
-   "desc": "Planänderung bei der Bundeswehr: Statt über die Straße wurden Panzer und Fahrzeuge per Zug zu einer Großübung nach Litauen gebracht. Offenbar wollte man keine sichtbar fahrende Kolonne auf Polens Straßen haben.",
-   "url": "https://www.spiegel.de/politik/deutschland/bahn-statt-konvoi-bundeswehr-aendert-truppenverlegung-nach-litauen-kurzfristig-a-74ad6a42-70a8-4973-ab13-571ba1696bce",
-   "at": "2026-11-22T10:22:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Künftiger Generalinspekteur will bei sexualisiertem Fehlverhalten durchgreifen",
-   "desc": "Die Bundeswehr hat ein Problem mit sexualisiertem Fehlverhalten. Das belegt eine Studie. Der künftige Generalinspekteur der Bundeswehr, Freuding, will hier \"unerbittlich hart durchgreifen\". Die Zahlen seien \"unerträglich\".",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/bundeswehr-generalinspekteur-gegen-sexualisiertes-fehlverhalten-100.html",
-   "at": "2026-11-22T09:51:56+00:00"
   }
  ]
 }

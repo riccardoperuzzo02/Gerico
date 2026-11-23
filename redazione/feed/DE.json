@@ -1,7 +1,28 @@
 {
  "code": "DE",
- "asOf": "2026-11-23T19:17:35+00:00",
+ "asOf": "2026-11-23T21:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Brexit-Debatte: Andy Burnham verteidigt Annäherung an die EU im britischen Parlament",
+   "desc": "Der britische Premier setzt sich für eine engere Zusammenarbeit zwischen EU und Großbritannien ein. Eine Abkehr vom Brexit könnte die Wirtschaft ankurbeln, sagt er.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/andy-burnham-grossbritannien-eu-abkommen-brexit",
+   "at": "2026-11-23T21:14:11+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Parastoo Ahmadi: Bekannte iranische Sängerin nach Konzert mit 74 Hieben ausgepeitscht",
+   "desc": "Weil sie bei einem Konzert gegen die Bekleidungsregeln im Iran verstieß, wurde Parastoo Ahmadi mit Dutzenden Hieben ausgepeitscht. Menschenrechtler äußern sich entsetzt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/parastoo-ahmadi-iran-auspeitschung-musik-youtube-kopftuch",
+   "at": "2026-11-23T20:04:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Drohnenangriff auf die »Sparta II«: Boris Pistorius warnt vor Ausweitung des Ukrainekriegs auf die Ostsee",
+   "desc": "Der Verteidigungsminister zeigt sich besorgt über die Angriffe auf ein russisches Schiff vor der Küste Finnlands. Auch die Ukraine habe eine Verantwortung.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/drohnenangriff-finnischer-meerbusen-russischer-frachter-ostsee-ukraine",
+   "at": "2026-11-23T19:20:22+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Krieg gegen die Ukraine: Nato verstärkt Kontrolle von Polens Luftraum",
@@ -29,6 +50,13 @@
    "desc": "Die Öl-Länder sabotieren den Klimaschutz. Warum lassen westliche Staaten das zu? Auch weil die Verbraucher sich selbst unterschätzen. Sie könnten ihre Macht entfalten.",
    "url": "https://www.zeit.de/politik/2026-11/konsum-alltag-supermarkt-politik-friedrich-merz-cop",
    "at": "2026-11-23T17:51:38+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Russische Nuklearwaffen: Das passiert, wenn Russland eine Atombombe im All zündet",
+   "desc": "Der Kreml plant offenbar, eine Atombombe im Weltraum zu stationieren. Für den Westen ist das ein zweiter Sputnik-Schock. Was will Putin damit erreichen?",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-satellit-nuklearwaffe-weltraum-orbit-usa-nato",
+   "at": "2026-11-23T17:51:19+00:00"
   },
   {
    "source": "Die Zeit",
@@ -115,34 +143,6 @@
    "at": "2026-11-23T15:50:46+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Nato: Ukraine hätte laut Merz 2008 in die Nato aufgenommen werden sollen",
-   "desc": "»Es war ein Fehler«, sagt der Bundeskanzler über die Nichtaufnahme der Ukraine in die Nato vor fast 20 Jahren. Damit kritisiert er auch Angela Merkel.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/friedrich-merz-nato-ukraine-aufnahme-2008-gxe",
-   "at": "2026-11-23T15:38:56+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Proteste in Frankreich: Findet Frankreich noch zusammen?",
-   "desc": "Seit Wochen ist Frankreich gespalten. Nun aber kamen Tausende Franzosen miteinander ins Gespräch – gerade weil sie politisch völlig unterschiedlich denken. Ein Ortstermin",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-frankreich-gespraechskultur-debatten-politische-ansichten",
-   "at": "2026-11-23T15:29:43+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Atomare Aufrüstung: Bundesregierung sieht keine akute Bedrohung durch Atomwaffe im All",
-   "desc": "Der Nationale Sicherheitsrat hat sich offenbar mit der Möglichkeit einer russischen Atomwaffe im All befasst. Die Bundesregierung will sich nicht nervös machen lassen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-atomwaffen-weltraum-all-weltraumvertrag-1967-gxe",
-   "at": "2026-11-23T14:59:36+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "AfD Nordrhein-Westfalen: Und schon geht die Schlammschlacht weiter",
-   "desc": "Kurz simulierte die AfD in NRW Harmonie. Einen Tag später entzieht der Bundesvorstand einem Vertrauten des Landeschefs die Mitgliedsrechte. Jetzt herrscht ein Patt.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/martin-vincentz-afd-nordrhein-westfalen-knut-meyer-soltau-parteiausschluss",
-   "at": "2026-11-23T14:50:48+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bombendrohungen an Hunderten Schulen bundesweit",
    "desc": "Freiburg, Erfurt oder Hamburg: Hunderte Schulen im ganzen Land haben Drohschreiben bekommen. Mehrere Schulen wurden vorsorglich geräumt. Laut verschiedenen Polizeibehörden gibt es aber keine Hinweise auf eine konkrete Gefahr.",
@@ -211,13 +211,6 @@
    "desc": "Markus Söder stiftet Unruhe mit der kalten Progression. Das Scheitern der Klimakonferenz hat auch eine gute Seite. Und in der Türkei konnte Erdoğan noch nicht alle zum Schweigen bringen. Das ist die Lage am Montagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-markus-soeder-will-kalte-progression-ausgleichen-klimakonferenz-tuerkei-a-4890e582-898f-4c5b-b4ce-526c57e443b1",
    "at": "2026-11-23T04:29:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "TK-Chef Baas: Mehr Geld schafft keine Arzttermine",
-   "desc": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin - und fordert stattdessen ein grundlegend neues System.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bericht-aus-berlin-arzttermine-baas-100.html",
-   "at": "2026-11-22T19:24:22+00:00"
   }
  ]
 }

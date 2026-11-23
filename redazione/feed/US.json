@@ -1,20 +1,167 @@
 {
  "code": "US",
- "asOf": "2026-11-23T19:17:35+00:00",
+ "asOf": "2026-11-23T21:17:34+00:00",
  "items": [
   {
+   "source": "New York Times",
+   "title": "2 City Bus Drivers Killed in Head-On Collision in Ohio",
+   "desc": "Nine people were injured in the crash, which occurred in Columbus when one of the buses veered into the next lane, the police said.",
+   "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html",
+   "at": "2026-11-23T21:13:57+00:00"
+  },
+  {
    "source": "CBS News",
-   "title": "Trump, tech leaders and investors cheer Huang's return to Nvidia",
-   "desc": "Nvidia's market value soared by $1 trillion, as President Trump and prominent tech figures applauded Huang's reinstatement as CEO.",
-   "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/",
-   "at": "2026-11-23T19:14:19+00:00"
+   "title": "Nvidia reinstates Jensen Huang as CEO",
+   "desc": "Nvidia said Monday that it has restored Jensen Huang as the chipmaker's chief executive, calling him the \"right person\" to lead the company.",
+   "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/",
+   "at": "2026-11-23T21:13:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%",
+   "desc": "The Nvidia board said it had input from senior levels of the U.S. government.",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+   "at": "2026-11-23T21:08:05+00:00"
   },
   {
    "source": "CBS News",
    "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
    "desc": "The U.S. Army plans to detonate 68 drums of lead azide in Iowa despite local leaders and residents raising concerns.",
    "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
-   "at": "2026-11-23T19:13:58+00:00"
+   "at": "2026-11-23T21:05:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
+   "desc": "CrowdStrike and competitors have shelled out billions to ramp up defenses in the wake of AI cyberattacks.",
+   "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+   "at": "2026-11-23T21:04:03+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "desc": "The influential central banker expressed confidence that inflation will get closer to the Fed's 2% target in 2027.",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "at": "2026-11-23T21:02:17+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump says he convinced Nvidia board to reinstate Jensen Huang",
+   "desc": "President Trump claimed the government \"has no reason to believe\" Jensen Huang's return is a national security risk.",
+   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
+   "at": "2026-11-23T21:02:08+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "House Democrat Quits After Panel Alleges Unwanted Sexual Contact With Aide",
+   "desc": "Representative Jimmy Gomez of California disputed the allegations from the Ethics Committee but said they left him with “no other alternative than to resign, effective Dec. 1.”",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/jimmy-gomez-democrat-resigns.html",
+   "at": "2026-11-23T21:00:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
+   "desc": "Nvidia's Jensen Huang admitted to an affair in a note to employees on Nov. 8 and resigned as CEO on Nov. 12.",
+   "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
+   "at": "2026-11-23T20:57:41+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump, tech CEOs cheer Huang's return, but lawmakers question board",
+   "desc": "President Trump and prominent tech figures applauded Huang's reinstatement as CEO, though some lawmakers criticized the move as \"reckless.\"",
+   "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/",
+   "at": "2026-11-23T20:55:56+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
+   "desc": "Has a political or social issue broken down a relationship that was important to you? Can it be repaired? Tell us what's going on. You might be asked to participate in a possible upcoming segment on All Things Considered.",
+   "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute",
+   "at": "2026-11-23T20:53:12+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Turning the Lens Around: Bob Woodward Takes On Bob Woodward",
+   "desc": "In a new memoir, the most celebrated journalist of his era finally tells his own story. It was “liberating,” he said in an interview. “Nothing is hidden here.”",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/bob-woodward-book-secrets.html",
+   "at": "2026-11-23T20:46:43+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Democrats have flipped 47 House seats. Here's the breakdown.",
+   "desc": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
+   "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
+   "at": "2026-11-23T20:38:43+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
+   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
+   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
+   "at": "2026-11-23T20:36:11+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Taking on credit card debt to buy food",
+   "desc": "According to a recent survey, about 63% of Americans are using credit cards to buy increasingly expensive groceries – and many are having trouble paying off that food debt.",
+   "url": "https://www.cbsnews.com/news/taking-on-credit-card-debt-to-buy-food/",
+   "at": "2026-11-23T20:35:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Nvidia's Jensen Huang still testifying before Congress next week",
+   "desc": "Jensen Huang is still set to testify before lawmakers next week, congressional panels confirmed, after he was reinstated as Nvidia's CEO Monday, after resigning earlier this month amid allegations of affairs.",
+   "url": "https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/",
+   "at": "2026-11-23T20:29:37+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia breathes new life into the AI trade. Plus, Qnity inks a smart deal to get stronger",
+   "desc": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/23/nvidia-breathes-new-life-into-the-ai-trade-plus-qnity-inks-a-smart-deal-to-get-stronger.html",
+   "at": "2026-11-23T20:03:25+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
+   "desc": "President Trump decided he wanted to do whatever he could to help Jensen Huang get his old job back, two people familiar with the matter said.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
+   "at": "2026-11-23T19:55:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Average 401(k), IRA balances fall as more workers raid their accounts, Fidelity says",
+   "desc": "Retirement account balances fell in the third quarter amid market swings, according to Fidelity. At the same time, more savers tapped their accounts for cash.",
+   "url": "https://www.cnbc.com/2026/11/23/fidelity-401k-ira-balances-q3-2026.html",
+   "at": "2026-11-23T19:54:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
+   "desc": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans such as 401(k)s.",
+   "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
+   "at": "2026-11-23T19:46:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
+   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "at": "2026-11-23T19:34:38+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump tells Army to halt detonation for now in Iowa this week",
+   "desc": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
+   "url": "https://www.cbsnews.com/news/trump-tells-army-to-halt-detonation-in-iowa-this-week/",
+   "at": "2026-11-23T19:26:32+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
+   "desc": "The Nasdaq slid 10% last week in its worst week since the early days of Covid in 2020.",
+   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
+   "at": "2026-11-23T19:19:08+00:00"
   },
   {
    "source": "CNBC",
@@ -25,17 +172,17 @@
   },
   {
    "source": "CNBC",
+   "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+   "desc": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
+   "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+   "at": "2026-11-23T19:08:37+00:00"
+  },
+  {
+   "source": "CNBC",
    "title": "An options strategy for making even more of your money back in Nvidia",
    "desc": "Nvidia shareholders can look to the options market to recoup lost money",
    "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
    "at": "2026-11-23T18:52:46+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump says he convinced Nvidia board to reinstate Jensen Huang",
-   "desc": "President Trump claimed the government \"has no reason to believe\" Jensen Huang's return is a national security risk.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
-   "at": "2026-11-23T18:50:44+00:00"
   },
   {
    "source": "New York Times",
@@ -45,13 +192,6 @@
    "at": "2026-11-23T18:25:16+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
-   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
-   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
-   "at": "2026-11-23T18:23:55+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "A.I.-Powered Fake Personas Target Taiwan’s Elections",
    "desc": "A new tool developed by researchers at Vanderbilt is detecting A.I.-generated posts linked to social media accounts aligned with China.",
@@ -59,18 +199,11 @@
    "at": "2026-11-23T18:19:26+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Trump administration proposes rule that could curb ESG investing in 401(k)s",
-   "desc": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans like 401(k)s.",
-   "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
-   "at": "2026-11-23T18:14:18+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
    "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
-   "at": "2026-11-23T18:08:17+00:00"
+   "at": "2026-11-23T18:08:18+00:00"
   },
   {
    "source": "CNBC",
@@ -85,48 +218,6 @@
    "desc": "Cities and counties are pulling funding from groups and events they’ve long supported before a new law bars them from promoting diversity, equity and inclusion activities.",
    "url": "https://www.nytimes.com/2026/11/22/us/florida-anti-dei-law-consequences.html",
    "at": "2026-11-23T17:54:16+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "CrowdStrike to buy Zscaler in $44 billion deal as AI supercharges cyberattacks",
-   "desc": "CrowdStrike and competitors have shelled out billions to ramp up defenses in the wake of AI cyberattacks.",
-   "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
-   "at": "2026-11-23T17:50:30+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Average 401(k), IRA balances fall as more workers raid their accounts, Fidelity says",
-   "desc": "Retirement account balances fell in the third quarter amid market swings, according to Fidelity. At the same time, more savers tapped their accounts for cash.",
-   "url": "https://www.cnbc.com/2026/11/23/fidelity-401k-ira-balances-q3-2026.html",
-   "at": "2026-11-23T17:48:58+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia reinstates Jensen Huang as CEO",
-   "desc": "Nvidia said Monday that it has restored Jensen Huang as the chipmaker's chief executive, calling him the \"right person\" to lead the company.",
-   "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/",
-   "at": "2026-11-23T17:45:51+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Is Said to Have Directed Effort to Reinstate Nvidia Chief",
-   "desc": "President Trump decided he wanted to do whatever he could to help Jensen Huang get his old job back, two people familiar with the matter said.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang.html",
-   "at": "2026-11-23T17:30:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Here's where we stand on AMD shares after Jensen Huang's return to Nvidia",
-   "desc": "The Investing Club holds its \"Morning Meeting\" every weekday at 10:20 a.m. ET.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/23/heres-where-we-stand-on-amd-shares-after-jensen-huangs-return-to-nvidia-.html",
-   "at": "2026-11-23T17:24:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 33%",
-   "desc": "The Nvidia board said it had input from senior levels of the U.S. government.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-   "at": "2026-11-23T17:23:04+00:00"
   },
   {
    "source": "CNBC",
@@ -192,13 +283,6 @@
    "at": "2026-11-23T15:39:17+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Tech stocks rally after Nvidia board approves Jensen Huang's return as CEO",
-   "desc": "The Nasdaq slid 10% last week in its worst week since the early days of Covid in 2020.",
-   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-   "at": "2026-11-23T15:36:12+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
    "desc": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
@@ -225,13 +309,6 @@
    "desc": "Netflix’s \"The Altruists\" has drawn backlash over its portrayal of the FTX collapse, with prominent crypto industry figures questioning the series’ accuracy",
    "url": "https://www.cnbc.com/2026/11/23/netflix-the-altruists-crypto-ftx-collapse.html",
    "at": "2026-11-23T15:18:51+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Investors give a thumbs down to Tata Steel-APL Apollo $1.67 billion deal, plunging shares",
-   "desc": "Tata Steel will buy a 26.4% stake in India's leading structural steel pipes and tubes maker to boost downstream capacity.",
-   "url": "https://www.cnbc.com/2026/11/23/tata-steel-acquisition-deal-apl-india.html",
-   "at": "2026-11-23T15:18:36+00:00"
   },
   {
    "source": "CBS News",
@@ -354,7 +431,7 @@
   },
   {
    "source": "NPR",
-   "title": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+   "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
    "desc": "Ukraine carried out an attack on a Russian warship moored at a port in Libya, President Volodymyr Zelenskyy said, claiming that sea drones sank the navy vessel in a surprise assault.",
    "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
    "at": "2026-11-23T10:16:33+00:00"
@@ -365,13 +442,6 @@
    "desc": "Medicaid provides a critical safety net for people to maintain healthcare coverage. But new work requirements create barriers for those trying to recover from natural disasters.",
    "url": "https://www.cbsnews.com/news/medicaid-work-rules-disasters/",
    "at": "2026-11-23T10:00:07+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
-   "desc": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
-   "at": "2026-11-23T10:00:00+00:00"
   },
   {
    "source": "NPR",
@@ -396,6 +466,13 @@
   },
   {
    "source": "NPR",
+   "title": "Seniors embrace Tesla automated driving technology despite questions about safety",
+   "desc": "Older drivers are using Tesla's automated driving technology to stay on the road longer. But safety experts warn the company may be over-selling what its cars can do.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6020559/senior-drivers-tesla-automated-driving-safety",
+   "at": "2026-11-23T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
    "title": "Morning news brief",
    "desc": "A look at how artificial intelligence is affecting the economy, NATO to meet after Russian missiles hit Poland, negotiators fail to reach a deal as COP31 comes to an end.",
    "url": "https://www.npr.org/2026/11/23/nx-s1-6045619/morning-news-brief",
@@ -410,48 +487,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Tom Jackson, former Broncos star and sports broadcaster, dies at 75",
-   "desc": "Tom Jackson, a former Denver Broncos player and ESPN analyst, has died at 75.",
-   "url": "https://www.cbsnews.com/news/tom-jackson-former-broncos-star-sports-broadcaster-dies-75/",
-   "at": "2026-11-23T02:19:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Hall of Fame sports broadcaster Tom Jackson dies at 75",
-   "desc": "The Denver Broncos announced that Hall of Fame sports broadcaster Tom Jackson has died at 75.",
-   "url": "https://www.cbsnews.com/video/hall-of-fame-sports-broadcaster-tom-jackson-dies-75/",
-   "at": "2026-11-23T02:17:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "\"I Have a Dream\" pages written by Martin Luther King Jr. to go up for auction",
-   "desc": "Martin Luther King Jr. wrote his famous \"I Have a Dream\" speech on yellow legal paper in long cursive in blue ink. Those pages have been tucked away until now; they are headed to auction in January. Brian Unger has the story.",
-   "url": "https://www.cbsnews.com/video/i-have-a-dream-pages-written-martin-luther-king-jr-up-auction/",
-   "at": "2026-11-23T02:11:08+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Consumers expected to set Cyber Monday spending record this year",
-   "desc": "Americans are expected to spend big in this year's holiday shopping season, even as they struggle with the high costs of everyday needs. Akiko Fujita reports from the Glendale Galleria near Los Angeles.",
-   "url": "https://www.cbsnews.com/video/consumers-expected-set-cyber-monday-spending-record-year/",
-   "at": "2026-11-23T02:02:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "International climate talks fall apart over fossil fuels",
-   "desc": "International climate talks collapsed in Turkey on Sunday in a bitter clash over fossil fuels, the main cause of global warming.",
-   "url": "https://www.cbsnews.com/video/international-climate-talks-fall-apart-over-fossil-fuels/",
-   "at": "2026-11-23T01:56:06+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Do not feed the animals. Vets explain why hats, coins and shoes can be deadly",
-   "desc": "It's not easy to retrieve foreign objects from animals once ingested. Some things can be grabbed using an endoscope. But if an item gets far into the intestinal tract, surgery isn't always possible.",
-   "url": "https://www.npr.org/2026/11/22/nx-s1-6049723/do-not-feed-the-animals-vets-explain-why-hats-coins-and-shoes-can-be-deadly",
-   "at": "2026-11-23T01:53:48+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Unmarked ICE agents make violent arrest at Seattle airport",
    "desc": "An Immigration and Customs Enforcement arrest was caught on camera as passengers were boarding an Alaska Airlines flight. The event was so distressing that some of the crew members asked to be replaced. Olivia Rinaldi reports.",
    "url": "https://www.cbsnews.com/video/unmarked-ice-agents-violent-arrest-seattle-airport/",
@@ -463,20 +498,6 @@
    "desc": "The Delta Air Lines delays are most impacting flights in and out of Hartsfield-Jackson Atlanta International Airport in Georgia.",
    "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/",
    "at": "2026-11-23T01:50:57+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Delta Air Lines says it's resolved network issue, but severe weather could cause more delays",
-   "desc": "Delta Air Lines said it resolved an automation outage that disrupted half of all flights, but the weather is creating another speed bump for the Thanksgiving travel rush. Shanelle Kaul reports and Andrew Kozak has the forecast.",
-   "url": "https://www.cbsnews.com/video/ddelta-air-lines-says-resolved-network-issue-severe-weather-delays/",
-   "at": "2026-11-23T01:49:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Army moves forward with plans to detonate 5 tons of toxic materials in Iowa",
-   "desc": "The Army warned that freezing temperatures could risk an accidental toxic explosion at a munitions plant in Middletown, Iowa. The Trump administration declared an emergency and is moving ahead with a plan to blow up the unstable explosives despite a federal court order. Ian Lee has more on the controversial plan.",
-   "url": "https://www.cbsnews.com/video/army-moves-forward-plans-detonate-5-tons-toxic-materials-iowa/",
-   "at": "2026-11-23T01:49:00+00:00"
   },
   {
    "source": "New York Times",
@@ -519,20 +540,6 @@
    "desc": "\"House Democrats have just secured the largest majority any party in Congress has held this century. BOOM,\" Democratic leader Hakeem Jeffries of New York said Sunday.",
    "url": "https://www.cbsnews.com/news/democrats-historic-house-majority-since-1992/",
    "at": "2026-11-22T22:13:32+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Delta Delays Flights as Thanksgiving Travel Begins, After Automated System Falters",
-   "desc": "The system that faltered is used to calculate the weight and balance of departing flights. The disruptions came after a nationwide ground stop that canceled thousands of flights last weekend.",
-   "url": "https://www.nytimes.com/2026/11/22/us/delta-flight-delays-system-outage.html",
-   "at": "2026-11-22T21:14:10+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "2 New Jersey Women Indicted in Faked Anti-Trump Slashing Attack",
-   "desc": "Natalie Greene, who worked for Representative Jeff Van Drew, a Republican, falsely claimed she had been attacked at a nature preserve in 2025, officials said.",
-   "url": "https://www.nytimes.com/2026/11/22/us/van-drew-employee-indicted-attack-hoax.html",
-   "at": "2026-11-22T20:19:58+00:00"
   }
  ]
 }

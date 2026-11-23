@@ -21,8 +21,8 @@ Con Pillow (il workflow lo installa prima della pubblicazione) ogni foto si alle
 quadrato centrale (il sito le mostra sempre larghe o quadrate, con il centro in vista), la grande è larga al massimo
 1200 px e accanto c'è <id>-s.jpg, larga 480 px, per le miniature: sul telefono si scarica quella. Le foto già prese si
 alleggeriscono alla prima pubblicazione, senza riscaricarle.
-Una foto non si ripete per tre settimane (site/img/foto-storico.json): per lo stesso luogo si prende un'altra foto
-dalla sua categoria di Wikimedia Commons, orizzontale e recente. Una foto vale per una storia sola: se due storie chiedono la stessa, la tiene la più importante e l'altra prova le
+Prima le foto premiate dalla comunità di Commons (vetrina e qualità) del luogo, che non si ripetono per tre settimane
+(site/img/foto-storico.json); poi la foto principale della voce. Una foto vale per una storia sola: se due storie chiedono la stessa, la tiene la più importante e l'altra prova le
 voci di riserva (se non trova un'altra foto resta con la mappa).
 Le foto delle storie che non sono più nel database si cancellano.
 """
@@ -65,7 +65,7 @@ FORMATO = 16 / 9   # il formato della foto nella notizia (e nella prima pagina, 
 PERSONA = re.compile(r"\b[A-ZÀ-Ý][a-zà-ÿ]+ (?:[A-ZÀ-Ý]\.? )?[A-ZÀ-Ý][a-zà-ÿ]+(?:'s)? (?:in|at|visits?|visiting|during|speaks?|addresses|meets|"
                      r"im|bei|besucht|à|au|dans|en|a|al|nel|nella|alla|durante|visita)\b|\b(?:GPO|KBG|DVIDS|kremlin\.ru|"
                      r"Official portrait|Prime Minister|Secretary)\b")
-REGOLA = 7   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+REGOLA = 8   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -193,7 +193,7 @@ def senza_persone(pageid, nome=None):
     return True
 
 
-def trova(wiki, title, escluse=()):
+def trova(wiki, title, escluse=(), recenti=()):
     """(indirizzo dell'immagine a 1280 px, crediti) oppure (None, perché). `escluse`: i file già usati da un'altra
     storia, che non si riprendono (due notizie con la stessa foto sembrano la stessa notizia)."""
     host = (wiki if isinstance(wiki, str) and LINGUA.match(wiki) else "it") + ".wikipedia.org"
@@ -230,7 +230,10 @@ def trova(wiki, title, escluse=()):
                 try:
                     d = api("commons.wikimedia.org", action="query", list="search", srnamespace="6", srlimit="15", srsearch=cerca)
                     trovati = [x["title"].split(":", 1)[1] for x in (d.get("query") or {}).get("search") or []]
-                    premiate += [n for n in trovati if n not in premiate and not EVENTI.search(n.replace("_", " ")) and not PERSONA.search(n.replace("_", " "))]
+                    # nomi in caratteri latini (gli altri non si possono controllare), niente eventi o persone, niente foto
+                    # usate nelle ultime settimane: le premiate sono tante, si può variare
+                    premiate += [n for n in trovati if n not in premiate and all(ord(c) < 0x250 for c in n) and not EVENTI.search(n.replace("_", " ")) and not PERSONA.search(n.replace("_", " "))
+                                 and stesso(n) not in recenti]
                     break
                 except Exception:  # noqa: BLE001  deepcategory a volte non risponde: si prova la categoria sola
                     continue
@@ -262,26 +265,6 @@ def trova(wiki, title, escluse=()):
     r = prova(nomi)
     if r:
         return r
-    # altre foto dello stesso luogo: la categoria di Wikimedia Commons della voce (P373), dalle più recenti, solo
-    # orizzontali (interni, altre angolazioni, altri momenti). Così un palazzo che torna spesso ha ogni volta un'altra foto
-    if cat:
-        try:
-            d = api("commons.wikimedia.org", action="query", generator="categorymembers", gcmtitle="Category:" + cat, gcmtype="file",
-                    gcmsort="timestamp", gcmdir="desc", gcmlimit=str(CATEGORIA_MAX), prop="imageinfo|info", iiprop="size|mime")
-            altre, ids = [], {}
-            for pg in (d.get("query") or {}).get("pages") or []:
-                ii = (pg.get("imageinfo") or [{}])[0]
-                w, h = ii.get("width") or 0, ii.get("height") or 0
-                nome = pg["title"].split(":", 1)[1]
-                if ii.get("mime") == "image/jpeg" and w >= 1200 and w >= 1.3 * h and not EVENTI.search(nome.replace("_", " ")) and not PERSONA.search(nome.replace("_", " ")):
-                    altre.append(nome)
-                    ids[nome] = pg.get("pageid")
-            # il controllo delle persone (dati strutturati) solo sulle candidate, una alla volta, al massimo 8
-            r = prova(altre[:8], controllo=lambda n: senza_persone(ids.get(n)))
-            if r:
-                return r
-        except Exception:  # noqa: BLE001  la categoria è un di più: senza, si prova il resto
-            pass
     e = api("www.wikidata.org", action="wbgetentities", ids=item, props="sitelinks")
     links = (((e.get("entities") or {}).get(item) or {}).get("sitelinks") or {})
     for lang in ALTRE:
@@ -382,7 +365,8 @@ def main(db, site):
             url, info, motivi = None, None, []
             for wiki, titolo in voci(s, ph):
                 # niente foto già usate da un'altra storia viva o, da un'altra storia, nelle ultime settimane
-                url, info = trova(wiki, titolo, set(usate) | {f for f, v in storico.items() if set(v.get("ids") or []) - {sid}})
+                # mai la foto di un'altra storia in corso; tra le premiate, nemmeno quelle usate di recente da altre storie
+                url, info = trova(wiki, titolo, set(usate), {f for f, v in storico.items() if set(v.get("ids") or []) - {sid}})
                 if url:
                     break
                 motivi.append(f"{wiki}:{titolo} → {info}")

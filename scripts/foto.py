@@ -60,7 +60,7 @@ EVENTI = re.compile(r"\b(speech|speaks|speaking|discorso|discours|rede|discurso|
 # le foto premiate dalla comunità di Commons: si guardano prima delle altre
 PREMIATE = ("Featured_pictures_on_Wikimedia_Commons", "Quality_images")
 FORMATO = 16 / 9   # il formato della foto nella notizia (e nella prima pagina, che la taglia ai lati se serve)
-REGOLA = 5   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
+REGOLA = 6   # la regola con cui si scelgono le foto: quando cambia, quelle già prese si ricontrollano una volta
 # I tipi di Wikidata (P31) delle voci di un territorio. Non serve l'elenco completo: una voce che ha una popolazione
 # (P1082) è comunque un territorio, e sono quasi tutte
 LUOGHI = {"Q515", "Q5119", "Q1549591", "Q486972", "Q747074", "Q6256", "Q3624078", "Q35657", "Q10864048", "Q16110", "Q484170",
@@ -216,11 +216,12 @@ def trova(wiki, title, escluse=()):
     cat = [((x.get("mainsnak") or {}).get("datavalue") or {}).get("value") for x in claims.get("P373") or []]
     cat = cat[0] if cat and isinstance(cat[0], str) else None
     # prima le foto più belle del luogo: quelle che la comunità di Commons ha premiato (vetrina e foto di qualità),
-    # nella sua categoria e in quelle sotto
+    # nella sua categoria
     premiate = []
     if cat:
         for premio in PREMIATE:
-            for cerca in (f'deepcategory:"{cat}" incategory:{premio}', f'incategory:"{cat}" incategory:{premio}'):
+            # solo la categoria del luogo, non quelle sotto: lì finisce di tutto (insetti del giardino, visite di Stato)
+            for cerca in (f'incategory:"{cat}" incategory:{premio}',):
                 try:
                     d = api("commons.wikimedia.org", action="query", list="search", srnamespace="6", srlimit="15", srsearch=cerca)
                     trovati = [x["title"].split(":", 1)[1] for x in (d.get("query") or {}).get("search") or []]
@@ -367,7 +368,7 @@ def main(db, site):
                         leggere += 1
                 continue
             # già cercata da poco senza trovare niente: si riprova dopo 12 ore, non a ogni pubblicazione
-            if prima.get("key") == chiave and prima.get("miss") and not doppia and time.time() - float(prima.get("at") or 0) < 12 * 3600:
+            if prima.get("key") == chiave and prima.get("miss") and not doppia and prima.get("regola") == REGOLA and time.time() - float(prima.get("at") or 0) < 12 * 3600:
                 saltate.append(f"{sid}: già cercata alle {time.strftime('%H:%M', time.gmtime(float(prima['at'])))} UTC senza trovare una foto")
                 continue
         except (OSError, ValueError, TypeError):
@@ -387,7 +388,7 @@ def main(db, site):
                     if os.path.exists(os.path.join(cartella, vecchia)):
                         os.remove(os.path.join(cartella, vecchia))
                 with open(side, "w", encoding="utf-8") as f:
-                    json.dump({"key": chiave, "miss": True, "at": int(time.time()), "why": motivi[-1:]}, f, ensure_ascii=False)
+                    json.dump({"key": chiave, "miss": True, "at": int(time.time()), "why": motivi[-1:], "regola": REGOLA}, f, ensure_ascii=False)
                     f.write("\n")
                 continue
             # la stessa foto di prima, ricontrollata con la regola nuova: resta com'è, senza riscaricarla

@@ -1,20 +1,118 @@
 {
  "code": "ES",
- "asOf": "2026-11-23T11:17:33+00:00",
+ "asOf": "2026-11-23T13:17:40+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "'Caso Koldo'",
+   "desc": "El comandante de la Guardia Civil Rubén Villalba ha declarado al juez de la Audiencia Nacional que investiga el 'caso Koldo' que el empresario y comisionista Víctor de Aldama ha",
+   "url": "https://www.elmundo.es/espana/2026/11/23/6b043adefdddffc64a8b458f.html",
+   "at": "2026-11-23T13:12:25+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Nevenka Fernández considera “una vergüenza” que se “arrope” al alcalde de Móstoles (PP) investigado por presunto acoso",
+   "desc": "La exconcejala de Ponferrada, convertida en un referente tras denunciar al alcalde por acoso, recibe un premio de la UGT en Valencia",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/nevenka-fernandez-considera-una-verguenza-que-se-arrope-al-alcalde-de-mostoles-pp-investigado-por-presunto-acoso.html",
+   "at": "2026-11-23T12:57:51+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "El tiempo",
+   "desc": "El martes habrá \"un cambio de tiempo\" por el paso de un frente y lloverá en amplias zonas de la península Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/23/6b043551fdddff045c8b4582.html",
+   "at": "2026-11-23T12:49:26+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "29-N",
+   "desc": "El Partido Popular se queda a 0,4 puntos de obtener el quinto escaño mientras que el Frente Amplio se sitúa muy lejos de conseguir representación Leer",
+   "url": "https://www.elmundo.es/murcia/2026/11/23/6b042340e4d4d8d37e8b4588.html",
+   "at": "2026-11-23T12:45:30+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Felipe González responde a José Bono: “Yo ya he votado. Soy una persona seria, no como otros”",
+   "desc": "El expresidente del Congreso le había pedido al exmandatario socialista que no hiciera “el tonto” y apoyara a Pedro Sánchez el 29-N",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/felipe-gonzalez-responde-a-jose-bono-yo-ya-he-votado-soy-una-persona-seria-no-como-otros.html",
+   "at": "2026-11-23T12:38:23+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "El Tribunal Supremo ha dictado este lunes el auto en el que aplica la",
+   "url": "https://www.elmundo.es/espana/2026/11/23/6b042ed9e4d4d8872c8b4579.html",
+   "at": "2026-11-23T12:29:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El Supremo aplica la amnistía a Puigdemont y archiva la causa del 'procés'",
+   "desc": "La Sala de lo Penal declara concluso el sumario y confirma el sobreseimiento libre del 'expresident' nueve años después del 'procés'.",
+   "url": "https://www.20minutos.es/nacional/supremo-aplica-amnistia-puigdemont-archiva-causa-proces_7064584_0.html",
+   "at": "2026-11-23T12:19:34+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Voto por correo para el 29N: hasta cuándo nos puede llegar la documentación electoral y cómo consultar el estado del envío",
+   "desc": "A través de la página web del INE podemos saber en qué estado se encuentra nuestro envío de los sobres y papeletas electorales.",
+   "url": "https://www.20minutos.es/nacional/voto-correo-29n-hasta-cuando-llegar-documentacion-electoral-como-consultar-estado-envio_7064515_0.html",
+   "at": "2026-11-23T12:18:07+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El Supremo aplica la amnistía a Puigdemont y cierra la causa del ‘procés’",
+   "desc": "El alto tribunal declara extinguida la responsabilidad penal del expresidente catalán y los exconsejeros Puig y Comín",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/el-supremo-aplica-la-amnistia-a-puigdemont-y-cierra-la-causa-del-proces.html",
+   "at": "2026-11-23T12:12:41+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Igualdad eleva a 47 las víctimas mortales de la violencia machista en 2026 tras confirmar el caso de Albacete",
+   "desc": "La mujer no tenía hijos menores de edad y no existían denuncias previas por violencia de género contra el presunto agresor.",
+   "url": "https://www.20minutos.es/nacional/igualdad-eleva-47-las-victimas-mortales-violencia-machista-2026-tras-confirmar-caso-albacete_7064572_0.html",
+   "at": "2026-11-23T11:49:40+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El PSOE aventaja en casi 10 puntos al PP, según el último CIS antes del 29-N",
+   "desc": "El barómetro de noviembre da a los socialistas un 34,4% en intención de voto y un 24,7% a los populares. Vox pierde 2,8 puntos y cae hasta el 15,6%",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/el-psoe-aventaja-en-casi-10-puntos-al-pp-segun-el-ultimo-cis-antes-del-29-n.html",
+   "at": "2026-11-23T11:41:44+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Aagesen multa con hasta seis millones a los centros de datos si incumplen las condiciones para tener electricidad que el sector rechaza",
+   "desc": "Incurrirán en una \"infracción muy grave\" si transmiten información \"falsa\" sobre su consumo de agua o electricidad o si no cumplen con ellos.",
+   "url": "https://www.20minutos.es/nacional/aagesen-multa-con-hasta-seis-millones-los-centros-datos-si-incumplen-las-condiciones-para-tener-electricidad-que-sector-rechaza_7064523_0.html",
+   "at": "2026-11-23T11:31:21+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El CIS de Tezanos dispara al PSOE diez puntos por encima del PP a solo una semana de las urnas mientras Vox se desploma",
+   "desc": "Los de Feijóo perderían casi un punto y los de Abascal caerían tres, mientras que los socialistas y Frente Amplio ampliarían la ventaja.",
+   "url": "https://www.20minutos.es/nacional/cis-tezanos-dispara-psoe-diez-puntos-por-encima-pp-solo-una-semana-las-urnas-mientras-vox-se-desploma_7064553_0.html",
+   "at": "2026-11-23T11:29:09+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Montero defiende a su candidato por Huesca tras las críticas por su minuto de oro: \"Siempre orgullosa de un trabajador\"",
+   "desc": "\"Quienes aquí están riéndose de él destilan clasismo\", ha escrito la candidata de Podemos tras la intervención de Vicente Oliver en un debate electoral.",
+   "url": "https://www.20minutos.es/nacional/montero-defiende-su-candidato-por-huesca-tras-las-criticas-por-su-minuto-oro-siempre-orgullosa-un-trabajador_7064554_0.html",
+   "at": "2026-11-23T11:27:16+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Una masa de aire polar desploma las temperaturas y trae las primeras nevadas a las montañas de Madrid y La Rioja",
+   "desc": "Noviembre se despide con descenso térmico, heladas nocturnas y lluvias generalizadas desde este martes.",
+   "url": "https://www.20minutos.es/nacional/una-masa-aire-polar-desploma-las-temperaturas-trae-las-primeras-nevadas-las-montanas-madrid-rioja_7064548_0.html",
+   "at": "2026-11-23T11:24:18+00:00"
+  },
   {
    "source": "El Mundo",
    "title": "Tribunales",
    "desc": "La Fiscalía pide nueve años de prisión para la acusada por un delito continuado de estafa con la circunstancia agravante de multirreincidencia Leer",
    "url": "https://www.elmundo.es/espana/2026/11/23/6b041b22e4d4d8bf1c8b4578.html",
    "at": "2026-11-23T10:53:24+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Cataluña|Sucesos",
-   "desc": "Es el décimo crimen con arma de fuego en Cataluña este año, dos más que en 2025 Leer",
-   "url": "https://www.elmundo.es/cataluna/2026/11/23/6b04015afc6c8370218b4577.html",
-   "at": "2026-11-23T10:50:31+00:00"
   },
   {
    "source": "El País",
@@ -59,16 +157,9 @@
    "at": "2026-11-23T09:51:45+00:00"
   },
   {
-   "source": "El Mundo",
-   "title": "Elecciones generales 2026",
-   "desc": "El candidato del PP matiza sus palabras sobre la \"muerte digna\" y asegura que el \"buenismo\" migratorio \"mata personas en el océano\" Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b0409f7fc6c83954e8b4578.html",
-   "at": "2026-11-23T09:51:23+00:00"
-  },
-  {
    "source": "20minutos",
-   "title": "Feijóo descartar cualquier tipo de acuerdo con Sánchez tras el 29N: \"No pacto con un político amoral\"",
-   "desc": "El presidente del PP aclara a Santiago Abascal sus dudas sobre con quién pactará si gana las elecciones:",
+   "title": "Feijóo descarta cualquier tipo de acuerdo con Sánchez tras el 29N: \"No pacto con un político amoral\"",
+   "desc": "El presidente del PP aclara a Santiago Abascal sus dudas sobre con quién pactará si gana las elecciones y pide el voto a los \"socialistas de verdad\" para resetear a un PSOE \"tóxico\".",
    "url": "https://www.20minutos.es/nacional/feijoo-descartar-cualquier-tipo-acuerdo-con-sanchez-tras-29n-no-pacto-con-un-politico-amoral_7064471_0.html",
    "at": "2026-11-23T09:47:03+00:00"
   },
@@ -89,7 +180,7 @@
   {
    "source": "20minutos",
    "title": "Sánchez anuncia un nuevo impuesto a los \"ultrarricos\" con patrimonios de más de 100 millones de euros",
-   "desc": "El presidente afirma en un vídeo que se recaudarán unos 2.000 millones de euros que se destinarán a vivienda, pensiones y prestaciones por crianza.",
+   "desc": "El presidente afirma en un vídeo que se recaudarán unos 2.000 millones de euros que se destinarán a vivienda, pensiones y prestaciones por crianza con una medida que ya había reclamado Frente Amplio esta legislatura.",
    "url": "https://www.20minutos.es/nacional/sanchez-anuncia-un-nuevo-impuesto-los-ultrarricos-con-mas-100-millones-euros-que-recaudara-2-000-millones_7064429_0.html",
    "at": "2026-11-23T08:47:30+00:00"
   },
@@ -151,9 +242,9 @@
   },
   {
    "source": "El País",
-   "title": "Los jubilados al PSOE y los policías a Vox: la diferencia del voto por ocupación",
-   "desc": "Los de Abascal también ganan en grupos asociados a la clase obrera. El PP se impone en más ocupaciones, pero Sánchez es el favorito de más gente. Frente Amplio obtiene su mejor dato entre intelectuales y estudiantes",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/los-jubilados-al-psoe-y-los-policias-a-vox-la-diferencia-del-voto-por-ocupacion.html",
+   "title": "Carmen Lomana: “Lo de facha casi me lo tomo ya como un piropo, aunque yo de fascista nada”",
+   "desc": "La comunicadora odia a la gente “sectaria” y cree que “la intolerancia es producto de la incultura”. Ve necesario un cambio “para que no siga gobernando esa ‘mélange’ de enemigos de España”",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/carmen-lomana-lo-de-facha-casi-me-lo-tomo-ya-como-un-piropo-aunque-yo-de-fascista-nada.html",
    "at": "2026-11-23T04:30:01+00:00"
   },
   {
@@ -165,30 +256,9 @@
   },
   {
    "source": "El País",
-   "title": "Carmen Lomana: “Lo de facha casi me lo tomo ya como un piropo, aunque yo de fascista nada”",
-   "desc": "La comunicadora odia a la gente “sectaria” y cree que “la intolerancia es producto de la incultura”. Ve necesario un cambio “para que no siga gobernando esa ‘mélange’ de enemigos de España”",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/carmen-lomana-lo-de-facha-casi-me-lo-tomo-ya-como-un-piropo-aunque-yo-de-fascista-nada.html",
-   "at": "2026-11-23T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
    "title": "Recta final: más ideología que gestión",
    "desc": "ÁLVARO GARCÍA (EL PAÍS) Debate El secretario general del PSOE, presidente del Gobierno y candidato a la reelección, Pedro Sánchez, y el presidente del PP y candidato a la presidencia, antes del cara a cara del pasado jueves. El secretario general del PSOE, presidente del Gobierno y candidato a la reelección, Pedro Sánchez, y el presidente del PP y candidato a la presidencia, antes del cara a cara del pasado jueves.",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/recta-final-mas-ideologia-que-gestion.html",
-   "at": "2026-11-23T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La agenda interminable de Abascal: demasiada campaña para un solo rostro",
-   "desc": "Vox quiere conquistar nuevos escaños en todo el país, pero el único motor de su maquinaria electoral es su presidente",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/la-agenda-interminable-de-abascal-demasiada-campana-para-un-solo-rostro.html",
-   "at": "2026-11-23T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Medidas contra el fuego: los partidos apuestan por la prevención, pero la derecha obvia el cambio climático",
-   "desc": "La política forestal queda relegada en la campaña electoral pese a que los dos últimos años han estado marcados por los grandes incendios",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/medidas-contra-el-fuego-los-partidos-apuestan-por-la-prevencion-pero-la-derecha-obvia-el-cambio-climatico.html",
    "at": "2026-11-23T04:30:01+00:00"
   },
   {
@@ -284,6 +354,13 @@
   },
   {
    "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Cargos y dirigentes socialistas comparan la movilización y el clima de esta campaña a la de la última victoria del ex presidente Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b032b07fc6c83e4458b456d.html",
+   "at": "2026-11-23T00:24:32+00:00"
+  },
+  {
+   "source": "El Mundo",
    "title": "Política",
    "desc": "Una parte importante de los 38 diputados que reparte la capital sigue en el aire en la semana decisiva. El PP, PSOE, Frente Amplio y Vox se vuelcan en el kilómetro cero con protagonistas 'autóctonos': Ayuso, Delgado, Moñino... Leer",
    "url": "https://www.elmundo.es/madrid/2026/11/23/6b031abde4d4d858078b4574.html",
@@ -295,20 +372,6 @@
    "desc": "Los populares reivindican su legado de mayorías absolutas, arrepentidos de su final en el partido. PSOE y Compromís recuerdan su absolutista forma de gobernar Valencia y los casos de corrupción que la cercaron, con condenas a su círculo de confianza y pendientes de esclarecer Leer",
    "url": "https://www.elmundo.es/comunidad-valenciana/2026/11/23/6b02a87de9cf4a00688b4570.html",
    "at": "2026-11-22T23:02:29+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez vaticina en 'Salvados' su victoria: \"No suelo autoengañarme, mis datos tienen muy buena pinta\"",
-   "desc": "El presidente del Gobierno dice: \"Cómo pase a la historia se lo dejo a los historiadores, yo estoy centrado en el 29 de noviembre\".",
-   "url": "https://www.20minutos.es/nacional/sanchez-vaticina-salvados-victoria-suelo-autoenganarme-mis-datos-tienen-muy-buena-pinta_7064352_0.html",
-   "at": "2026-11-22T22:44:49+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Pedro Sánchez, sobre las causas judiciales contra su mujer y su hermano: \"No me queda más remedio que confiar en la justicia\"",
-   "desc": "\"El llevar a juicio a David y a Begoña por ser hermano y esposa del presidente del gobierno es una tremenda injusticia\", ha dicho el presidente.",
-   "url": "https://www.20minutos.es/nacional/pedro-sanchez-sobre-causas-judiciales-contra-mujer-hermano_7064343_0.html",
-   "at": "2026-11-22T22:06:18+00:00"
   },
   {
    "source": "El Mundo",
@@ -332,46 +395,11 @@
    "at": "2026-11-22T21:51:20+00:00"
   },
   {
-   "source": "El País",
-   "title": "Sánchez defiende en ‘Salvados’ que serán los españoles y no la “opinión publicada” quien le vuelva a hacer presidente",
-   "desc": "“No suelo autoengañarme y los datos tienen muy buena pinta, yo lo dejo ahí”, afirma el presidente, que se considera ganador del cara a cara con Feijóo",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-22/sanchez-defiende-en-salvados-que-seran-los-espanoles-y-no-la-opinion-publicada-quien-le-vuelva-a-hacer-presidente.html",
-   "at": "2026-11-22T21:44:42+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "El Panel",
    "desc": "Sánchez reduce al mínimo su distancia respecto a Feijóo, con ambos al alza mientras que Abascal cae Leer",
    "url": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b033046fc6c830e508b4594.html",
    "at": "2026-11-22T21:34:22+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La IA llega a las promesas electorales de PP, PSOE, Vox, Frente Amplio y Podemos con distintas prioridades",
-   "desc": "PP y Vox coinciden en impulsarla con medidas de apoyo, mientras que el PSOE, Frente Amplio y Podemos coinciden en plantear medidas de protección.",
-   "url": "https://www.20minutos.es/nacional/ia-llega-promesas-electorales-pp-psoe-vox-frente-amplio-podemos-distintas-prioridades_7064329_0.html",
-   "at": "2026-11-22T20:26:03+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar El Gordo: resultados de hoy, domingo 22 de noviembre de 2026",
-   "desc": "Comprueba los resultados del Gordo de la Primitiva del domingo 22 de noviembre de 2026.",
-   "url": "https://www.20minutos.es/nacional/comprobar-gordo-resultados-hoy-domingo-22-noviembre-2026_7064319_0.html",
-   "at": "2026-11-22T19:00:03+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar Sueldazo ONCE: resultados de hoy, domingo 22 de noviembre de 2026",
-   "desc": "Comprueba los resultados del Sueldazo de la ONCE del domingo 22 de noviembre de 2026.",
-   "url": "https://www.20minutos.es/nacional/comprobar-sueldazo-once-resultados-hoy-domingo-22-noviembre-2026_7064318_0.html",
-   "at": "2026-11-22T19:00:03+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprobar Bonoloto: resultados de hoy, domingo 22 de noviembre de 2026",
-   "desc": "Los resultados de la Bonoloto del domingo 22 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
-   "url": "https://www.20minutos.es/nacional/comprobar-bonoloto-resultados-hoy-domingo-22-noviembre-2026_7064317_0.html",
-   "at": "2026-11-22T19:00:03+00:00"
   },
   {
    "source": "El Mundo",
@@ -389,13 +417,6 @@
   },
   {
    "source": "20minutos",
-   "title": "Llega un desplome de temperaturas en las próximas horas y el miércoles \"se espera la primera masa de aire polar seria\"",
-   "desc": "Los cambios comenzarán a notarse ya desde la madrugada de este lunes, cuando las temperaturas bajen rápidamente al ponerse el Sol.",
-   "url": "https://www.20minutos.es/nacional/llega-un-desplome-temperaturas-las-proximas-horas-miercoles-se-espera-primera-masa-aire-polar-seria_7064291_0.html",
-   "at": "2026-11-22T17:40:55+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Cientos de autónomos reclaman al Gobierno la exención del IVA si ingresan menos de 85.000 euros al año, como dicta Bruselas",
    "desc": "Los manifestantes han pedido \"medidas concretas, verificables y eficaces\" que mejoren las condiciones de estos trabajadores y \"menos burocracia\".",
    "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/cientos-autonomos-reclaman-gobierno-exencion-iva-si-ingresan-menos-85-000-euros-ano-como-dicta-bruselas_7064292_0.html",
@@ -407,13 +428,6 @@
    "desc": "Las embarcaciones atracan en La Restinga tras cuatro días de tregua y en plena resaca del récord histórico de desembarcos en Canarias Leer",
    "url": "https://www.elmundo.es/espana/2026/11/22/6b0316ebfdddff996e8b4590.html",
    "at": "2026-11-22T16:26:24+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "El Panel",
-   "desc": "El 'popular' arrasa en percepción de cuál de los dos gobernará tras las elecciones Leer",
-   "url": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b01d978fc6c830e508b457a.html",
-   "at": "2026-11-22T11:25:58+00:00"
   }
  ]
 }

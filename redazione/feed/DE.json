@@ -1,20 +1,62 @@
 {
  "code": "DE",
- "asOf": "2026-11-23T11:17:33+00:00",
+ "asOf": "2026-11-23T13:17:40+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "Markus Söder: Bundesregierung lehnt Vorstoß zur kalten Progression ab",
+   "desc": "CSU-Chef Markus Söder fordert einen raschen Ausgleich der kalten Progression – und sorgt damit kurz vor der Verabschiedung des Haushalts für Unruhe. Nun weist die Bundesregierung seine Forderung zurück.",
+   "url": "https://www.spiegel.de/politik/deutschland/markus-soeder-bundesregierung-lehnt-vorstoss-zur-kalten-progression-ab-a-b9bb0ed3-d7e1-4265-b3c4-05e03378d7f1",
+   "at": "2026-11-23T13:09:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nachfolge von Hubert Aiwanger: Tobias Gotthardt soll neuer bayerischer Wirtschaftsminister werden",
+   "desc": "Die Freien Wähler haben die Nachfolger für die Ämter des verstorbenen Hubert Aiwanger vorgestellt. In Bayern soll die Partei eine Doppelspitze bekommen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/freie-waehler-hubert-aiwanger-nachfolge-bayern-gxe",
+   "at": "2026-11-23T12:32:01+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Nachfolge von Aiwanger: Tobias Gotthardt wird Wirtschaftsminister",
+   "desc": "Nach dem plötzlichen Tod von Bayerns Wirtschaftsminister Aiwanger soll Staatssekretär Gotthardt als Wirtschaftsminister folgen. Der Landesverband wird künftig von einer Doppelspitze geführt.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-nachfolge-gotthardt-100.html",
+   "at": "2026-11-23T12:17:05+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bayern: Tobias Gotthardt soll auf Hubert Aiwanger als Wirtschaftsminister folgen",
+   "desc": "Seit dem Tod von Hubert Aiwanger ringen die Freien Wähler um die Frage, wer seine Lücke füllen kann. Im bayerischen Wirtschaftsministerium setzen sie nun auf Kontinuität. Ein Posten bleibt noch offen.",
+   "url": "https://www.spiegel.de/politik/deutschland/bayern-tobias-gotthardt-soll-auf-hubert-aiwanger-als-wirtschaftsminister-folgen-a-32657ef9-8f70-4a1c-a32c-e40a38829457",
+   "at": "2026-11-23T12:16:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Polen will russischen Botschafter nach Raketenabstürzen einbestellen",
+   "desc": "Nach dem Absturz russischer Raketen auf polnischem Staatsgebiet will Polen Russland zur Rede stellen. Selenskyj wirbt für einen Nato-Beitritt. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-23T12:05:07+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Coca-Cola: EU-Kommission leitet Wettbewerbsverfahren gegen Coca-Cola ein",
+   "desc": "Die EU-Kommission vermutet, dass Coca-Cola Supermärkten und Tankstellen Preisauflagen gemacht hat, die sich je nach Land unterschieden. Dem Unternehmen droht ein Bußgeld.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/wettbewerbsverfahren-coca-cola-eu-kommission-europacific-partners-gxe",
+   "at": "2026-11-23T12:03:48+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Bombendrohungen an Hunderten Schulen bundesweit",
+   "desc": "Freiburg, Erfurt oder Hamburg: Hunderte Schulen im ganzen Land haben Drohschreiben bekommen. Mehrere Schulen wurden vorsorglich geräumt. Laut verschiedenen Polizeibehörden gibt es aber keine Hinweise auf eine konkrete Gefahr.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/bombendrohungen-schulen-102.html",
+   "at": "2026-11-23T11:55:42+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Kalte Progression: Grünen-Chefin wirft Söder »Ego-Show« vor",
    "desc": "Nach der Forderung zum Ausgleich der kalten Progression durch Markus Söder zeigt sich Grünen-Chefin Franziska Brantner empört. Söder spiele mit der Regierung, sagte sie.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/franziska-brantner-markus-soeder-csu-kalte-progression-gxe",
    "at": "2026-11-23T10:48:43+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Wadephul fordert Putin erneut zu Beendigung des Krieges auf",
-   "desc": "Bei der Nato-Versammlung in Berlin fordert Bundesaußenminister Wadephul von Putin ein Ende des Krieges. Die Ukraine attackiert russische Schiffe vor Libyen. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-23T10:46:35+00:00"
   },
   {
    "source": "Tagesschau",
@@ -25,7 +67,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "SPD: Sigmar Gabriel kritisiert »Führungsvakuum« in der Partei",
+   "title": "SPD in der Krise: Sigmar Gabriel warnt vor Führungsvakuum in der Partei",
    "desc": "Die SPD ringt um einen neuen Vorsitz. Nun schaltet sich Sigmar Gabriel in die Debatte ein. Der ehemalige SPD-Vorsitzende bemängelt die niedrige innerparteiliche Solidarität und mahnt: Neue Gesichter allein reichen nicht.",
    "url": "https://www.spiegel.de/politik/deutschland/spd-sigmar-gabriel-kritisiert-fuehrungsvakuum-in-der-partei-a-e31c435a-b50b-4f5f-8098-67041beca7b1",
    "at": "2026-11-23T09:45:00+00:00"
@@ -50,6 +92,13 @@
    "desc": "Enge Verbindungen zwischen jungen Menschen in der EU und Großbritannien sind von herausragender Bedeutung. Ein neues Abkommen macht Reisen und Studieren wieder einfacher.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/brexit-debatte-grossbritannien-eu-kooperation-junge-menschen-studium-reisen",
    "at": "2026-11-23T09:13:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Libyen: Selenskyj bestätigt ukrainischen Angriff auf russisches Kriegsschiff",
+   "desc": "Im Hafen der libyschen Stadt Bengasi ist ein russisches Kriegsschiff versenkt worden. Ukrainische Seedrohnen zerstörten ein weiteres Schiff und einen Kampfhubschrauber.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russisches-kriegsschiff-libyen-bengasi-drohnenangriff-gxe",
+   "at": "2026-11-23T09:11:06+00:00"
   },
   {
    "source": "Die Zeit",
@@ -129,27 +178,6 @@
    "at": "2026-11-23T04:29:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Solidarität mit der Ukraine: So denkt Europa über den Krieg",
-   "desc": "Ohne Europa kann die Ukraine nicht bestehen. Aber wie zuverlässig ist die Unterstützung für das von Russland überfallene Land wirklich? ZEIT-Autoren berichten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/ukraine-krieg-solidaritaet-europaeische-union-grossbritannien",
-   "at": "2026-11-23T04:15:04+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Energiepreise: Bundesregierung weitet Förderung für einkommensschwache Haushalte aus",
-   "desc": "Zuschüsse für sparsame Waschmaschinen, Geschirrspüler und Gefrierschränke: Ab 2027 sollen mehr als 100.000 weitere Haushalte beim Energiesparen Unterstützung erhalten.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromspar-check-bundesumweltministerium-caritas-energie-haushalte",
-   "at": "2026-11-23T04:06:57+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Zwischenwahlen in den USA: US-Demokraten im Repräsentantenhaus so stark wie zuletzt 1992",
-   "desc": "Auch in North Carolina steht nach den US-Midterms ein Sieger fest. Dort setzte sich Chuck Hubbard durch. Die Demokraten haben nun die größte Mehrheit seit über 30 Jahren.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/demokraten-mehrheit-repraesentantenhaus-kongresswahlen-usa-chuck-hubbard",
-   "at": "2026-11-23T00:41:20+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "TK-Chef Baas: Mehr Geld schafft keine Arzttermine",
    "desc": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin - und fordert stattdessen ein grundlegend neues System.",
@@ -190,13 +218,6 @@
    "desc": "Rund sechs Wochen nach seinem Sturz meldet sich Herbert Reul auf Instagram zu Wort. Nordrhein-Westfalens Innenminister erzählt dort, wie anstrengend die Reha sei – und wie er dabei vorankomme.",
    "url": "https://www.spiegel.de/politik/deutschland/nrw-innenminister-herbert-reul-gibt-update-ueber-gesundheitszustand-a-1508172b-e030-493e-8b8a-03706f84c6bd",
    "at": "2026-11-22T13:24:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Gesetzentwurf des Justizministeriums: Femizide sollen eindeutig als Mord gelten",
-   "desc": "\"Wer eine Frau tötet, weil sie sich von ihm trennen will, der muss als Mörder bestraft werden\": Justizministerin Hubig will den Mordparagrafen verschärfen und Femizide eindeutig als Mord erfassen. Ein Gesetzentwurf dazu liegt nun vor.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/femizide-mord-gesetzentwurf-100.html",
-   "at": "2026-11-22T12:00:00+00:00"
   }
  ]
 }

@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-23T07:17:41+00:00",
+ "asOf": "2026-11-23T09:17:40+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "NATO-Parlamentarier tagen zu Sicherheitspolitik in Berlin",
+   "desc": "Die Parlamentarische Versammlung der NATO versteht sich als eine Art transatlantisches Parlament. Heute tagen die Delegierten in Berlin - mit prominenten Gästen und weitreichenden Forderungen. Von Oliver Neuroth.",
+   "url": "https://www.tagesschau.de/inland/nato-versammlung-berlin-100.html",
+   "at": "2026-11-23T09:14:40+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Libyen: Selenskyj bestätigt ukrainischen Angriff auf russisches Kriegsschiff",
+   "desc": "Im Hafen der libyschen Stadt Bengasi ist ein russisches Kriegsschiff versenkt worden. Ukrainische Seedrohnen zerstörten ein weiteres Schiff und einen Kampfhubschrauber.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russisches-kriegsschiff-libyen-bengasi-drohnenangriff-gxe",
+   "at": "2026-11-23T09:11:06+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Inflation : Wir können uns immer weniger leisten? Von wegen!",
+   "desc": "Wohnen, Essen, Benzin: Alles wird angeblich teurer. Doch für eine Bezahlbarkeitskrise gibt es wenig Indizien.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/inflation-bezahlbarkeit-mieten",
+   "at": "2026-11-23T08:56:12+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukrainekarte aktuell: Ukrainische und russische Vorstöße bei Kostjantyniwka und Dobropillja",
+   "desc": "In der Region Donezk rücken sowohl ukrainische als auch russische Einheiten in zwei Richtungen vor. Dabei soll die russische Armee ein weiteres Dorf eingenommen haben.",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
+   "at": "2026-11-23T08:48:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Atomare Aufrüstung: Geheimdienste warnen vor russischen Plänen für Atomwaffe im Weltraum",
+   "desc": "Russland will laut Medienberichten einen atomar bewaffneten Satelliten ins Weltall bringen. Geheimdienste und die Bundeswehr haben Warnungen ausgesprochen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/russland-satellit-atomsprengkopf-weltraum-nato-boris-pistorius-gxe",
+   "at": "2026-11-23T08:36:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Regionalwahlen in Taiwan: Taiwan warnt vor chinesischer Einflussnahme auf Regionalwahlen",
+   "desc": "Die taiwanesische Regierung sieht die anstehenden Regionalwahlen durch China bedroht. Es gehe um die Finanzierung von Kandidaten sowie gezielte Desinformationen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/taiwan-wahlen-china-einfluss-mac-shen-you-chung-gxe",
+   "at": "2026-11-23T07:50:56+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Im Rentenstreit deutet sich ein Kompromiss an",
@@ -94,13 +136,6 @@
    "at": "2026-11-22T20:00:32+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "AfD in NRW: »Scharmützel«, »Heckenschützen«, so sprechen sie hier übereinander",
-   "desc": "In Nordrhein-Westfalen beschloss die AfD, welche Themen sie im Landtagswahlkampf setzen will. Unschöne Debatten um den Begriff »Remigration« will man lieber vermeiden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/afd-nrw-parteitag-muelheim-landtagswahl-wahlkampf",
-   "at": "2026-11-22T19:33:06+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "TK-Chef Baas: Mehr Geld schafft keine Arzttermine",
    "desc": "Schneller zum Facharzt gegen Bezahlung? Die Einschätzung von Kassenärzte-Chef Gassen hat Kritik ausgelöst. Mehr Geld löse das Problem nicht, sagt TK-Chef Baas im Bericht aus Berlin - und fordert stattdessen ein grundlegend neues System.",
@@ -108,39 +143,11 @@
    "at": "2026-11-22T19:24:22+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Drohnenangriff auf »Sparta II«: »Sparta II« wird von finnischen in russische Gewässer geschleppt",
-   "desc": "Ein russischer Frachter ist vor Finnland mutmaßlich von einer ukrainischen Drohne angegriffen worden. Die Besatzung ist in Sicherheit, das Schiff wird abgeschleppt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/sparta-ii-russischer-frachter-drohnenangriff-finnland-gogland-gxe",
-   "at": "2026-11-22T19:05:04+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Prien verurteilt Angriff auf FDP-Politikerin Preisler bei Demo",
    "desc": "Zwei Frauen sollen die Berliner FDP-Politikerin Preisler am Rande einer pro-palästinensischen Demonstration geschubst und getreten haben. Bundesfamilienministerin Prien kritisiert das scharf. Von Mario Kubina.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/prien-angriff-preisler-100.html",
    "at": "2026-11-22T17:36:50+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "UN-Klimakonferenz : Politiker zeigen sich nach gescheiterter Klimakonferenz enttäuscht",
-   "desc": "Die Weltklimakonferenz in Antalya ist an einer gemeinsamen Abschlusserklärung gescheitert. UN-Generalsekretär António Guterres kritisiert die fossile Brennstoffindustrie.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/un-klimakonferenz-cop31-antalya-greenpeace-martin-kaiser-eu-gxe",
-   "at": "2026-11-22T17:18:08+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "COP31: Die Klimakonferenz ist tot. Zeit, etwas anderes zu probieren",
-   "desc": "Das Scheitern der Weltklimakonferenz in Antalya zeigt: Einstimmig wird der Ausstieg aus den Fossilen nicht klappen. Die EU müsste dafür ihre Scheinheiligkeit ablegen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/cop31-klimakonferenz-klimaschutz-abschlusserklaerung-debatte",
-   "at": "2026-11-22T16:14:13+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Pressefreiheit in der Türkei: Tausende protestieren gegen Schließung oppositioneller Medien",
-   "desc": "In Istanbul demonstrieren Tausende Menschen für die Pressefreiheit. Die Regierung hatte zuletzt mehrere regierungskritische Medien zur Schließung gezwungen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/proteste-istanbul-pressefreiheit-tuerkei-halk-tv-sozcu-tv-yeni-gxe",
-   "at": "2026-11-22T15:52:18+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -165,7 +172,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "NRW-Innenminister Herbert Reul gibt Update über Gesundheitszustand",
+   "title": "Herbert Reul: NRW-Innenminister gibt Update über Gesundheitszustand",
    "desc": "Rund sechs Wochen nach seinem Sturz meldet sich Herbert Reul auf Instagram zu Wort. Nordrhein-Westfalens Innenminister erzählt dort, wie anstrengend die Reha sei – und wie er dabei vorankomme.",
    "url": "https://www.spiegel.de/politik/deutschland/nrw-innenminister-herbert-reul-gibt-update-ueber-gesundheitszustand-a-1508172b-e030-493e-8b8a-03706f84c6bd",
    "at": "2026-11-22T13:24:00+00:00"
@@ -197,20 +204,6 @@
    "desc": "Die Bundeswehr hat ein Problem mit sexualisiertem Fehlverhalten. Das belegt eine Studie. Der künftige Generalinspekteur der Bundeswehr, Freuding, will hier \"unerbittlich hart durchgreifen\". Die Zahlen seien \"unerträglich\".",
    "url": "https://www.tagesschau.de/inland/gesellschaft/bundeswehr-generalinspekteur-gegen-sexualisiertes-fehlverhalten-100.html",
    "at": "2026-11-22T09:51:56+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Treffen von Donald Trump, Wladimir Putin und Xi Jinping in Shenzhen",
-   "desc": "Wieder hat sich gezeigt, dass der US-Präsident die Demokratien nicht würdig und wirkungsvoll vertreten kann. Das ist die Lage am Sonntag.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-treffen-von-donald-trump-wladimir-putin-und-xi-jinping-in-shenzhen-dreckige-deals-der-deutschen-bank-a-9561aaa0-4107-4044-892c-0927ac523870",
-   "at": "2026-11-22T09:00:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Wie Armut Kinder in Deutschland krank macht",
-   "desc": "Kinder aus armutsgefährdeten Familien haben ein höheres Risiko, krank zu werden - körperlich und psychisch. Dabei gibt es in Deutschland viele Hilfen. Warum kommen sie oft nicht an? Von Katharina Spreier.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/armut-kinder-familien-100.html",
-   "at": "2026-11-22T08:26:52+00:00"
   }
  ]
 }

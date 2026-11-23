@@ -1,18 +1,53 @@
 {
  "code": "GB",
- "asOf": "2026-11-23T07:17:41+00:00",
+ "asOf": "2026-11-23T09:17:40+00:00",
  "items": [
+  {
+   "source": "BBC",
+   "title": "Pip assessments need 'fundamental overhaul', report to say",
+   "desc": "Disability Minister Sir Stephen Timms says he will recommend major reforms to the personal independence payment.",
+   "url": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo",
+   "at": "2026-11-23T09:12:54+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
+   "desc": "One person was taken to hospital after a major incident was declared during a performance by US rapper Don Toliver.",
+   "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o",
+   "at": "2026-11-23T09:09:00+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "How we formed a friendship to blend our families",
+   "desc": "Expert tips on how to get along with the mums and dads of your child's half-siblings.",
+   "url": "https://www.bbc.co.uk/news/articles/c617kj1j1x4jo",
+   "at": "2026-11-23T09:04:21+00:00"
+  },
   {
    "source": "BBC",
    "title": "Burnham to tell MPs 'landmark' EU deal could make next decade 'much better'",
    "desc": "The prime minister will tell MPs the deal agreed on Friday is a \"choice between a broken status quo or change\".",
    "url": "https://www.bbc.co.uk/news/articles/cmde1dy82lepo",
-   "at": "2026-11-23T07:01:31+00:00"
+   "at": "2026-11-23T08:41:08+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Poundland is facing collapse - what's gone wrong?",
+   "desc": "Poundland has a matter of days to find a buyer or face collapsing into administration. Why?",
+   "url": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o",
+   "at": "2026-11-23T08:00:20+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Manchester’s Co-op Live arena evacuated after ‘unknown substance’ released in crowd",
+   "desc": "Police declare major incident after concertgoers at Don Toliver gig report eye and respiratory symptoms One person was taken to hospital and more than 50 were assessed by medics after a substance was let off in the crowd at Manchester’s Co-op Live arena, officials have said. Police declared a major incident after the release of the substance, which was initially thought to be teargas, as they sought to protect the 12,000 people in the crowd at a Don Toliver concert. Continue reading...",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert",
+   "at": "2026-11-23T07:48:31+00:00"
   },
   {
    "source": "The Guardian",
    "title": "Grieving families getting into debt and doing without memorials due to benefit freezes",
-   "desc": "MPs to discuss bereavement support as financial help for funeral expenses and bereaved families fails to keep pace with costs Bereaved families are borrowing money or forgoing a service with mourners because financial help available from the state no longer covers even half a typical funeral director’s fee. “The funeral expenses payment (FSP) was originally meant to cover the cost of a simple funeral. Today, that is a pipe dream,” said Lindesay Mace, a co-manager of Down to Earth, a funeral costs support service run by the charity Quaker Social Action. Continue reading...",
+   "desc": "MPs to discuss bereavement support as financial help for funeral expenses and bereaved families fails to keep pace with costs Bereaved families are borrowing money or forgoing a service with mourners because financial help available from the state no longer covers even half a typical funeral director’s fee. “The funeral expenses payment (FEP) was originally meant to cover the cost of a simple funeral. Today, that is a pipe dream,” said Lindesay Mace, a co-manager of Down to Earth, a funeral costs support service run by the charity Quaker Social Action. Continue reading...",
    "url": "https://www.theguardian.com/money/2026/nov/23/grieving-families-getting-into-debt-and-doing-without-memorials-due-to-benefit-freezes",
    "at": "2026-11-23T07:00:50+00:00"
   },
@@ -52,30 +87,9 @@
    "at": "2026-11-23T05:00:48+00:00"
   },
   {
-   "source": "BBC",
-   "title": "Manchester's Co-op Live evacuated after 'unknown substance' let off in crowd",
-   "desc": "One person was taken to hospital after a major incident was declared during a performance by US rapper Don Toliver.",
-   "url": "https://www.bbc.co.uk/news/articles/c9e851dn8516o",
-   "at": "2026-11-23T04:21:50+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Pip assessments need 'fundamental overhaul', report to say",
-   "desc": "Disability minister Sir Stephen Timms says he will recommend major reforms to the personal independence payment.",
-   "url": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo",
-   "at": "2026-11-23T04:01:13+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Manchester’s Co-op Live arena evacuated after ‘unknown substance’ released in crowd at Don Toliver concert",
-   "desc": "Greater Manchester police declared a major incident on Sunday following reports of concertgoers reporting eye and respiratory symptoms One person has been taken to hospital after an “unknown substance” was let off in the crowd during a Don Toliver concert at Manchester’s Co-op Live arena, officials said. Greater Manchester police said a major incident was declared shortly after 10pm on Sunday following reports of people in the crowd at the US rapper’s show suffering from the effects of an unknown substance, which police initially believed to be teargas. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert",
-   "at": "2026-11-23T03:27:53+00:00"
-  },
-  {
    "source": "Sky News",
-   "title": "Thousands evacuated from UK's biggest arena after major incident",
-   "desc": "Thousands of people were evacuated from the UK's biggest arena after an \"unknown substance\" was released at a concert.",
+   "title": "Concertgoer describes 'distressing scenes' after 'unknown substance' released at gig",
+   "desc": "A concertgoer has described \"really distressing scenes\" after more than 12,000 people were evacuated from the UK's biggest arena when an \"unknown substance\" was released.",
    "url": "https://news.sky.com/story/concert-goers-evacuated-from-manchester-co-op-live-as-major-incident-declared-13615479",
    "at": "2026-11-23T02:49:00+00:00"
   },
@@ -85,13 +99,6 @@
    "desc": "The collapse of the COP31 climate talks in Turkey is a major focus of Monday's front pages.",
    "url": "https://www.bbc.co.uk/news/articles/cmedq21jgq8xo",
    "at": "2026-11-23T02:24:41+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Would you go on holiday with your ex's kids and their mum? How to make blended families work",
-   "desc": "Expert tips on how to get along with the mums and dads of your child's half-siblings.",
-   "url": "https://www.bbc.co.uk/news/articles/c617kj1j1x4jo",
-   "at": "2026-11-23T01:09:04+00:00"
   },
   {
    "source": "BBC",
@@ -106,13 +113,6 @@
    "desc": "Researchers will test the technology in breast cancer screening which could ease pressure on the NHS.",
    "url": "https://www.bbc.co.uk/news/articles/cmpdwnw3nvzjo",
    "at": "2026-11-23T00:49:22+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "What is going on with Poundland?",
-   "desc": "Poundland has a matter of days to find a buyer or face collapsing into administration. Why?",
-   "url": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o",
-   "at": "2026-11-23T00:22:27+00:00"
   },
   {
    "source": "Sky News",
@@ -256,8 +256,8 @@
   },
   {
    "source": "Sky News",
-   "title": "Man dies after being found seriously injured in hospital car park",
-   "desc": "A man in his 20s has been arrested after a 21-year-old man was found seriously injured in a hospital car park, more than 16 miles from where he was wounded.",
+   "title": "Suspect charged over death of man found injured in hospital car park",
+   "desc": "A suspect has been charged following the death of a young man who was found seriously injured in a hospital car park, almost 20 miles from where he was wounded.",
    "url": "https://news.sky.com/story/man-21-dies-after-being-found-seriously-injured-in-hospital-car-park-13615200",
    "at": "2026-11-22T11:47:00+00:00"
   },
@@ -295,13 +295,6 @@
    "desc": "The Star of Caledonia at Gretna Green faces an uncertain future after a major funder withdrew.",
    "url": "https://www.bbc.co.uk/news/articles/c6jreyd4ey49o",
    "at": "2026-11-22T09:30:21+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Joanna Page says she nearly messed up Gavin and Stacey audition",
-   "desc": "The Swansea actress says she was told her Cardiff accent sounded \"awful\".",
-   "url": "https://www.bbc.co.uk/news/articles/c6gm38e407zxo",
-   "at": "2026-11-22T08:59:41+00:00"
   }
  ]
 }

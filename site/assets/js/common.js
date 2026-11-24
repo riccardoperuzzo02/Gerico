@@ -79,13 +79,26 @@
     document.documentElement.classList.add("lingua-esce");
     setTimeout(vai, 180);
   };
+  // un passaggio saltato non è un errore: lo saltiamo noi (pageswap qui sotto), lo interrompe un clic subito dopo, o la
+  // scheda è nascosta. La pagina cambia lo stesso, senza animazione. Il browser però rifiuta la promessa «ready» con
+  // «Transition was skipped» e, senza chi la raccoglie, il registro degli errori la contava. Gli altri rifiuti restano
+  // errori veri e arrivano nel registro
+  G.saltabile = (t) => {
+    if (t && t.ready && t.ready.catch) {
+      t.ready.catch((e) => {
+        if ((e && e.name === "AbortError") || document.visibilityState === "hidden") return;
+        throw e;
+      });
+    }
+    return t;
+  };
   // le transizioni tra pagine intere (CSS @view-transition) servono solo al cambio di lingua: gli altri passaggi tra
   // pagine li fa già G.go, e una pagina statica (archivio, /s/) si apre come sempre
   window.addEventListener("pageswap", (e) => {
     if (!e.viewTransition) return;
     let lingua = false;
     try { lingua = sessionStorage.getItem("gerico.cambioLingua") === "1"; } catch (x) { /* niente */ }
-    if (!lingua || G.reduced()) e.viewTransition.skipTransition();
+    if (!lingua || G.reduced()) { G.saltabile(e.viewTransition); e.viewTransition.skipTransition(); }
   });
   G.L = (it, en) => (G.en ? en : it);
   document.documentElement.lang = G.lang;
@@ -1406,7 +1419,7 @@
     }
     // tra Notizie e Terminal cambia anche il tema: la barra in alto sfuma da un colore all'altro e la pillola dell'interruttore scivola
     if (opt.mode) htmlEl.dataset.mode = "1";
-    const t = document.startViewTransition(swap);
+    const t = G.saltabile(document.startViewTransition(swap));
     window.gericoVT = t;
     t.finished.then(finish, finish).finally(() => {
       // un passaggio partito dopo questo ha già messo i suoi segni (verso, swipe, interruttore): restano suoi
@@ -1797,7 +1810,7 @@
       if (!document.startViewTransition || G.reduced()) { change(); return; }
       document.querySelectorAll("[style*='view-transition-name']").forEach((el) => { el.style.viewTransitionName = ""; });
       html.classList.add("theme-vt");
-      const t = document.startViewTransition(change);
+      const t = G.saltabile(document.startViewTransition(change));
       t.finished.finally(() => html.classList.remove("theme-vt"));
     };
     document.querySelectorAll("[data-size-set]").forEach((b) => b.addEventListener("click", () => {

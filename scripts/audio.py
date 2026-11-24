@@ -16,10 +16,13 @@ colpo finale. La musica è di GERICO (scripts/sigla.py, con le parti pronte in s
 percussioni sono campioni di pubblico dominio dell'orchestra VSCO 2 CE, i suoni elettronici sono calcolati.
 
 La voce è quella di Gemini 3.8 Flash TTS di Google (API Gemini, livello gratuito; la chiave sta nel segreto
-GEMINI_API_KEY del repository, mai nel codice). Si legge a pezzi di qualche tema (circa tre richieste per riepilogo, il
-livello gratuito ne concede poche al giorno): dentro il pezzo la voce lega le frasi come una persona; poi il montaggio
-rimette in ordine le pause: tra un tema e l'altro sempre la stessa, dentro il tema mai troppo lunghe (ritma). Ogni
-pezzo deve durare quanto ci si aspetta dal numero di parole, altrimenti si rifà. Se la chiave manca o il servizio non risponde, legge Nicola di
+GEMINI_API_KEY del repository, mai nel codice). Gemini spezza da sé i testi oltre le 1.900 lettere circa e lì la voce
+cambia, quindi il riepilogo si legge in pezzi di al massimo PEZZO_LETTERE lettere, divisi tra un tema e l'altro (di
+solito due richieste; il livello gratuito ne concede poche al giorno). Dentro il pezzo la voce lega le frasi come una
+persona; poi si confronta la nota dei pezzi (nota, stessa_voce) e quello che si allontana troppo si rilegge, al
+massimo RIFAI volte. Il montaggio rimette in ordine le pause: tra un tema e l'altro sempre la stessa, dentro il tema
+mai troppo lunghe (ritma). Ogni pezzo deve durare quanto ci si aspetta dal numero di parole, altrimenti si rifà.
+Se la chiave manca o il servizio non risponde, legge Nicola di
 Kokoro (modello aperto, licenza Apache 2.0), che gira sul server senza servizi esterni; i file del modello si
 scaricano dalle release di kokoro-onnx su GitHub e restano nella cache del job. Mai due voci nello stesso audio.
 L'audio è AAC mono a 64 kbps: circa 480 KB al minuto. Scrive anche site/data/audio.json, che la prima pagina legge
@@ -55,8 +58,14 @@ GEMINI_CHAIN = "highpass=f=60,acompressor=threshold=-22dB:ratio=2:attack=10:rele
 FINALE = "loudnorm=I=-16:TP=-2.5:LRA=11"  # -2,5 dBTP: l'AAC a 64 kbps alza un po' i picchi
 PAUSE_TEMA = 0.75                      # tra un tema e l'altro, sempre questa
 PAUSA_MAX, PAUSA_FRASE = 0.45, 0.36    # dentro un tema: una pausa più lunga di PAUSA_MAX diventa PAUSA_FRASE
-INTERO_WORDS = 650                     # fino a qui il riepilogo si legge in una richiesta sola: una voce sola dall'inizio alla fine
-CHUNK_WORDS = 170                      # parole al massimo per richiesta: il riepilogo sta in tre richieste
+# Gemini 3.8 TTS spezza da sé i testi lunghi, circa ogni 1.900 lettere (500 token), e legge ogni parte per conto suo:
+# a quel punto la voce cambia nota e timbro (a metà di un tema, su una frase qualsiasi). Il riepilogo ha 2.600-2.900
+# lettere, quindi si divide noi, tra un tema e l'altro, in pezzi che restano sotto quel limite
+PEZZO_LETTERE = 1700                   # lettere al massimo per richiesta, contate sul testo che va alla voce
+TOLLERANZA = 0.07                      # due pezzi della stessa voce: note entro il 7% (nei giorni buoni stanno entro il 4%)
+RIFAI = 2                              # richieste in più, al massimo, per avere la stessa voce in tutti i pezzi
+# la nota (frequenza fondamentale mediana) di ogni voce nei giorni in cui non cambiava: il pezzo più lontano si rifà
+NOTA_ATTESA = {("Iapetus", "it"): 128.0, ("Iapetus", "en"): 132.0}
 WPS = (2.1, 3.8)                       # parole al secondo accettate (le voci leggono a 2,7-3): fuori da qui ha saltato o aggiunto
 TRIES = 4
 # il livello gratuito dell'API ha poche richieste al giorno: si legge a pezzi di qualche tema (non un paragrafo per volta)
@@ -79,8 +88,9 @@ def musica_id():
 
 
 def gemini_id(voice, lingua="it"):
-    # «voce1»: solo la voce, senza musica; cambiando questa sigla l'audio si rifà
-    return "gemini-38-" + voice.lower() + "-voce2" + ("-en" if lingua == "en" else "")
+    # «voce1»: solo la voce, senza musica; «voce3»: pezzi sotto PEZZO_LETTERE con la stessa nota (24 novembre).
+    # Cambiando questa sigla l'audio si rifà
+    return "gemini-38-" + voice.lower() + "-voce3" + ("-en" if lingua == "en" else "")
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -360,28 +370,90 @@ def gemini_read(text, key, voice, np, sf, style=STYLE):
     raise RuntimeError(f"Gemini non ha letto il pezzo dopo {TRIES} tentativi: {type(last).__name__}: {last}")
 
 
-def pieces(paras):
-    """I paragrafi messi insieme in pezzi di al massimo CHUNK_WORDS parole, senza mai spezzare un paragrafo:
-    dentro un pezzo la riga vuota fa fare alla voce la pausa tra i temi, tra un pezzo e l'altro la mette il montaggio."""
-    out, cur, n = [], [], 0
+def pieces(paras, misura=len):
+    """I paragrafi in pezzi di al massimo PEZZO_LETTERE lettere (`misura` le conta sul testo che va alla voce), tagliando
+    solo tra un tema e l'altro: il minor numero di pezzi e, fra le divisioni possibili, quella con il pezzo più lungo
+    più corto (pezzi simili). Dentro un pezzo la riga vuota fa fare alla voce la pausa tra i temi, tra un pezzo e
+    l'altro la mette il montaggio. Un paragrafo da solo più lungo del limite si divide tra una frase e l'altra."""
+    from itertools import combinations
+    parti = []
     for p in paras:
-        w = len(p.split())
-        if cur and n + w > CHUNK_WORDS:
-            out.append("\n\n".join(cur))
-            cur, n = [], 0
-        cur.append(p)
-        n += w
-    if cur:
-        out.append("\n\n".join(cur))
-    return out
+        if misura(p) <= PEZZO_LETTERE:
+            parti.append(p)
+            continue
+        cur = ""
+        for s in re.split(r"(?<=[.!?])\s+", p):
+            if cur and misura(cur + " " + s) > PEZZO_LETTERE:
+                parti.append(cur)
+                cur = s
+            else:
+                cur = (cur + " " + s).strip()
+        if cur:
+            parti.append(cur)
+    lung = [misura(p) + 2 for p in parti]   # +2: la riga vuota tra due temi
+    n = len(parti)
+    for k in range(1, n + 1):
+        migliore = None
+        for tagli in combinations(range(1, n), k - 1):
+            bordi = (0,) + tagli + (n,)
+            massimo = max(sum(lung[a:b]) for a, b in zip(bordi, bordi[1:]))
+            if massimo <= PEZZO_LETTERE + 2 and (migliore is None or massimo < migliore[0]):
+                migliore = (massimo, bordi)
+        if migliore:
+            bordi = migliore[1]
+            return ["\n\n".join(parti[a:b]) for a, b in zip(bordi, bordi[1:])]
+    return parti
+
+
+def nota(y, rate, np):
+    """La nota della voce in Hz: la mediana della frequenza fondamentale sui tratti parlati (YIN semplificato, a 8 kHz).
+    Serve a confrontare due pezzi letti dalla stessa voce: se uno è molto più alto o più basso, la voce è cambiata.
+    Torna 0 se non c'è abbastanza parlato per misurarla."""
+    y = np.asarray(y, dtype=np.float64)
+    if rate % 8000 == 0 and rate > 8000:
+        q = rate // 8000
+        k = np.arange(-24, 25)
+        y = np.convolve(y, np.sinc(k / q) / q * np.hanning(len(k)), mode="same")[::q]  # passa basso, poi un campione ogni q
+    elif rate != 8000:
+        y = np.interp(np.linspace(0, len(y) - 1, int(round(len(y) * 8000 / rate))), np.arange(len(y)), y)
+    sr, W, H = 8000, 320, 80                  # finestre di 40 ms, passo di 10 ms
+    tmin, tmax = sr // 300, sr // 65          # voci tra 65 e 300 Hz
+    L = W + tmax
+    n = (len(y) - L) // H
+    if n < 50:
+        return 0.0
+    fr = y[np.arange(L)[None, :] + H * np.arange(n)[:, None]]
+    fr = fr - fr.mean(axis=1, keepdims=True)
+    rms = np.sqrt(np.mean(fr[:, :W] ** 2, axis=1))
+    fr = fr[rms > np.percentile(rms, 90) * 0.1]   # solo dove si parla
+    if len(fr) < 50:
+        return 0.0
+    r = np.fft.irfft(np.conj(np.fft.rfft(fr[:, :W], 1024)) * np.fft.rfft(fr, 1024), 1024)[:, : tmax + 1]
+    c = np.cumsum(fr ** 2, axis=1)
+    t = np.arange(tmax + 1)
+    et = c[:, W - 1 + t] - np.concatenate([np.zeros((len(fr), 1)), c[:, t[1:] - 1]], axis=1)
+    d = c[:, W - 1][:, None] + et - 2 * r     # differenza tra la finestra e la stessa spostata di t campioni
+    dn = np.ones_like(d)
+    dn[:, 1:] = d[:, 1:] / np.maximum(np.cumsum(d[:, 1:], axis=1) / np.arange(1, tmax + 1), 1e-12)
+    out = []
+    for row in dn:
+        cand = np.flatnonzero(row[tmin:tmax] < 0.15)
+        if len(cand):
+            j = tmin + cand[0]
+            while j + 1 < tmax and row[j + 1] < row[j]:
+                j += 1
+            out.append(sr / j)
+    return float(np.median(out)) if len(out) > 30 else 0.0
 
 
 def gemini_audio(paras, key, voice, np, sf, lingua="it"):
     """Tutto il riepilogo con Gemini: i pezzi uno dopo l'altro, con le pause rimesse in ordine (ritma) e la stessa
     pausa tra un pezzo e l'altro. Torna la voce, la frequenza e dove comincia ogni tema dopo il primo."""
-    # Prima tutto in una richiesta sola: letto a pezzi, da un pezzo all'altro la voce cambiava timbro e passo e
-    # sembrava un'altra persona. Se la lettura intera non riesce, si torna ai pezzi di CHUNK_WORDS parole.
-    if sum(len(p.split()) for p in paras) <= INTERO_WORDS:
+    # Un testo corto va in una richiesta sola. Uno lungo, letto tutto insieme, Gemini lo spezza da sé (vedi
+    # PEZZO_LETTERE) e la voce cambia a metà di un tema: lo dividiamo noi tra un tema e l'altro e poi controlliamo che
+    # tutti i pezzi abbiano la stessa voce (gemini_leggi). Se la lettura intera non riesce, si torna ai pezzi.
+    prep = per_voce_en if lingua == "en" else per_voce
+    if sum(len(prep(p)) + 2 for p in paras) <= PEZZO_LETTERE + 2:
         try:
             return gemini_leggi(["\n\n".join(paras)], key, voice, np, sf, lingua)
         except QuotaDelGiorno:
@@ -389,17 +461,57 @@ def gemini_audio(paras, key, voice, np, sf, lingua="it"):
         except RuntimeError as e:
             print(f"::warning::audio: la lettura in una richiesta sola non è riuscita ({e}); leggo a pezzi")
             time.sleep(5)
-    return gemini_leggi(pieces(paras), key, voice, np, sf, lingua)
+    return gemini_leggi(pieces(paras, lambda p: len(prep(p))), key, voice, np, sf, lingua)
+
+
+def stessa_voce(letti, rileggi, voice, lingua, np):
+    """Gemini non legge mai due volte con la stessa identica voce: da una richiesta all'altra la nota può salire o
+    scendere anche del 20%. `letti` sono i pezzi letti (audio, frequenza, nota). Finché la nota più alta supera la più
+    bassa di oltre TOLLERANZA, si rilegge il pezzo più lontano dalla nota solita della voce (NOTA_ATTESA; per una voce
+    senza nota solita, il primo pezzo fa da riferimento) e si tiene la lettura più vicina. Al massimo RIFAI richieste
+    in più: finite quelle, o finita la quota del giorno, restano le letture migliori."""
+    attesa = NOTA_ATTESA.get((voice, lingua))
+    note = lambda: [x[2] for x in letti]  # noqa: E731
+    for _ in range(RIFAI):
+        n = note()
+        if min(n) <= 0 or max(n) / min(n) - 1 <= TOLLERANZA:
+            break
+        centro = attesa or n[0]
+        j = max(range(len(n)), key=lambda k: (abs(np.log(n[k] / centro)), k))
+        time.sleep(3)
+        try:
+            nuovo = rileggi(j)
+        except Exception as e:  # noqa: BLE001  quota finita o servizio occupato: si tiene quello che c'è
+            print(f"  pezzo {j + 1} non riletto: {type(e).__name__}: {e}")
+            break
+        print(f"  pezzo {j + 1} riletto: {nuovo[2]:.0f} Hz (prima {n[j]:.0f} Hz)")
+        if abs(np.log(nuovo[2] / centro)) < abs(np.log(n[j] / centro)):
+            letti[j] = nuovo
+    n = note()
+    if min(n) > 0:
+        scarto = max(n) / min(n) - 1
+        msg = f"note dei pezzi {', '.join(f'{x:.0f}' for x in n)} Hz, scarto {100 * scarto:.0f}%"
+        print(f"::warning::audio ({lingua}): la voce cambia ancora tra i pezzi ({msg})" if scarto > TOLLERANZA else f"  stessa voce: {msg}")
+    return letti
 
 
 def gemini_leggi(pezzi, key, voice, np, sf, lingua="it"):
     prep, style = (per_voce_en, STYLE_EN) if lingua == "en" else (per_voce, STYLE)
-    rate = 24000
-    parts, marks, size = [], [], 0
+
+    def leggi(piece):
+        y, rate = gemini_read("\n\n".join(prep(p) for p in piece.split("\n\n")), key, voice, np, sf, style)
+        return y, rate, nota(y, rate, np)
+
+    letti = []
     for i, piece in enumerate(pezzi):
         if i:
             time.sleep(3)  # niente raffiche: il livello gratuito conta anche le richieste al minuto
-        y, rate = gemini_read("\n\n".join(prep(p) for p in piece.split("\n\n")), key, voice, np, sf, style)
+        letti.append(leggi(piece))
+    if len(letti) > 1:
+        letti = stessa_voce(letti, lambda j: leggi(pezzi[j]), voice, lingua, np)
+    rate = letti[0][1]
+    parts, marks, size = [], [], 0
+    for i, (piece, (y, _, _)) in enumerate(zip(pezzi, letti)):
         y, dentro = ritma(y, rate, np, [prep(p) for p in piece.split("\n\n")])
         if i:
             parts.append(np.zeros(int(rate * PAUSE_TEMA), dtype=np.float32))

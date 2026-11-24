@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: la ricerca sull'indice Ifo di oggi dà solo dati di anni passati. Aggiunti all'agenda due eventi dal calendario (fiducia Banca del Belgio, prezzi case Fhfa)."
   },
   "lastPublish": {
-    "at": "2026-11-24T12:11:14+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (405 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-24T13:20:53+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (405 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-24T07:23:24+01:00",
+  "lastRun": "2026-11-24T13:20:30+01:00",
   "marketsRun": {
     "at": "2026-11-23T19:32:00+01:00",
     "esito": "Niente aggiornato: nessun articolo di chiusura del 23 novembre trovato (Teleborsa e Borsa Italiana ferme a dati intraday delle 16:00). Snapshot e agenda lasciati com'erano."
@@ -31,11 +31,11 @@
   "quality": {
     "articlesDiscarded": 2,
     "articlesRead": 22,
-    "at": "2026-11-24T07:23:24+01:00",
-    "factsChecked": 8,
-    "factsCorrected": 1,
-    "storiesArchived": 6,
-    "storiesNew": 4,
+    "at": "2026-11-24T13:20:30+01:00",
+    "factsChecked": 4,
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 1,
     "storiesUpdated": 0
   },
   "riscrittura": {
@@ -43,5 +43,5 @@
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 29
+  "storiesLive": 30
 }

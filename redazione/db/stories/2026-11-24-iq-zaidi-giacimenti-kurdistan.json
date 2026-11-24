@@ -1,0 +1,37 @@
+{
+ "title": "Iraq: il premier Zaidi ordina a Baghdad di gestire i giacimenti nelle aree curde",
+ "section": "mondo",
+ "rank": 16,
+ "status": "live",
+ "summary": "Il primo ministro iracheno Ali al-Zaidi ha messo i giacimenti di quattro province e i valichi del Kurdistan sotto il controllo federale, dopo un'indagine sul contrabbando di petrolio. Le autorità curde non hanno ancora risposto.",
+ "article": "Il primo ministro iracheno Ali al-Zaidi ha ordinato oggi al ministero federale del Petrolio di gestire i giacimenti nelle aree sotto controllo di sicurezza curdo, nelle province di Diyala, Kirkuk, Salahuddin e Ninive. L'ufficio del premier dice che la direttiva nasce dal principio per cui la «sovranità nazionale è indivisibile» e dalla necessità di porre fine al contrabbando.\n\nL'ordine riguarda anche i confini. L'autorità dei valichi dovrà prendere il controllo di tutti i valichi nella regione del Kurdistan, che confina con Turchia, Iran e Siria, e le esportazioni di greggio e prodotti petroliferi dovranno passare solo dal ministero del Petrolio. Zaidi ha rimosso il capo dell'autorità dei valichi e sospeso il direttore generale della North Oil Company, la società statale del nord, con i suoi vice, in attesa di un'indagine. Baghdad dice che sorveglierà i giacimenti con telecamere e chiuderà i valichi non ufficiali.\n\nSecondo tre fonti anonime, l'ordine toccherebbe anche Khormala, il principale giacimento sotto controllo della sicurezza curda, e le autorità curde probabilmente si opporranno. Una reazione ufficiale di Erbil non c'è ancora stata. Il governo federale vuole mantenere estrazione e vendita sotto la compagnia statale Somo, e secondo un corrispondente dell'emittente Al Jazeera a Baghdad la regione curda ha già respinto questa richiesta.\n\nL'indagine sul contrabbando ha coinvolto anche Kataib Hezbollah, milizia filo-iraniana: funzionari iracheni la accusano di gestire una rete a Jurf al-Sakhar, mentre il gruppo nega e respinge i risultati dell'inchiesta. Il contrabbando avrebbe fruttato centinaia di milioni di dollari, secondo le fonti irachene citate.\n\nL'analista politico Hamza Mustafa, di Baghdad, dice che il Kurdistan potrebbe richiamarsi all'assenza di una legge su petrolio e gas per rifiutare di cedere i pozzi, e che Zaidi non cerca il consenso dei partiti in vista di un nuovo mandato. Le spedizioni di greggio dal Kurdistan verso la Turchia erano rimaste ferme per oltre due anni a causa di una disputa sulle vendite senza l'approvazione di Baghdad, e sono riprese nel settembre 2025.",
+ "facts": [
+  {"text": "Zaidi ha ordinato al ministero del Petrolio di gestire i giacimenti nelle aree sotto controllo curdo di Diyala, Kirkuk, Salahuddin e Ninive.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "L'autorità dei valichi dovrà controllare tutti i valichi del Kurdistan e le esportazioni passeranno solo dal ministero del Petrolio.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Zaidi ha rimosso il capo dell'autorità dei valichi e sospeso i vertici della North Oil Company.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Kataib Hezbollah nega di gestire una rete di contrabbando a Jurf al-Sakhar.", "who": ["Reuters", "Al Jazeera"]}
+ ],
+ "view": "È certo che Baghdad ha emesso l'ordine e rimosso dirigenti; non è chiaro come potrà applicarlo nelle aree dove la sicurezza è curda, né se Khormala sia compreso. Le reazioni di Erbil sono ancora assenti.\n\nLa disputa sul petrolio tra governo federale e Kurdistan dura da anni e tocca bilancio e esportazioni verso la Turchia. Da guardare nei prossimi giorni: la risposta del governo regionale, i flussi dell'oleodotto e la posizione dei partiti a Baghdad.",
+ "open": [
+  "Come risponderà il governo regionale del Kurdistan?",
+  "Il giacimento di Khormala rientra davvero nell'ordine?",
+  "Chi farà rispettare l'ordine nelle aree sotto sicurezza curda?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/24/iraqi-pm-orders-takeover-of-kurdistan-region-s-border-crossings-after-oil-smuggling-probe", "angle": "I dettagli dell'ordine, le fonti su Khormala e il commento dell'analista Hamza Mustafa.", "date": "2026-11-24"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control", "angle": "Il contesto del blocco dell'oleodotto e il rifiuto curdo riferito da Baghdad.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-24T13:20:00+01:00",
+ "updated": "2026-11-24T13:20:00+01:00",
+ "change": "",
+ "tags": ["Iraq", "Petrolio", "Kurdistan"],
+ "themes": [],
+ "places": ["IQ"],
+ "city": {"name": "Baghdad", "lat": 33.31, "lon": 44.37},
+ "photo": {"wiki": "it", "title": "Oleodotto Kirkuk-Ceyhan"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-24T13:20:00+01:00", "text": "Prima notizia: Zaidi ordina a Baghdad di gestire i giacimenti nelle aree curde."}
+ ]
+}

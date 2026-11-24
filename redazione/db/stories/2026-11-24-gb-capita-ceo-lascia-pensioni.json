@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-24-gb-capita-ceo-lascia-pensioni",
+  "title": "Regno Unito: Capita perde il 70% in Borsa e il suo amministratore lascia",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Londra", "lat": 51.5, "lon": -0.12},
+  "rank": 201,
+  "summary": "Il gruppo di servizi in appalto prepara un aumento di capitale, con profitti in calo per il contratto sulle pensioni dei dipendenti pubblici. I ritardi nei pagamenti colpiscono i pensionati.",
+  "article": "Lunedì Capita, il gruppo britannico di servizi in appalto per lo Stato, ha perso oltre il 70% in Borsa, ai minimi da 35 anni. Nello stesso giorno l'amministratore delegato, Adolfo Hernandez, ha lasciato l'incarico con effetto immediato. Lo sostituisce il direttore finanziario, Pablo Andres.\n\nIl titolo è crollato dopo l'annuncio di un aumento di capitale e di un calo atteso dei profitti, legato al contratto per la gestione del regime pensionistico dei dipendenti pubblici. Capita ne ha la gestione dall'anno scorso. Secondo l'azienda, il servizio ha accumulato ritardi nei pagamenti agli ex dipendenti pubblici in pensione.\n\nHernandez ha detto che il gruppo «non ha mantenuto» quanto promesso ai pensionati rimasti in attesa dell'assegno. Le cifre dell'aumento di capitale e del calo dei profitti non compaiono nei testi disponibili e restano da verificare.",
+  "facts": [
+    {"text": "Le azioni di Capita hanno perso oltre il 70% lunedì, ai minimi da 35 anni.", "who": ["Capita"]},
+    {"text": "L'amministratore delegato Adolfo Hernandez ha lasciato con effetto immediato; lo sostituisce Pablo Andres.", "who": ["Capita"]},
+    {"text": "Il gruppo prevede un aumento di capitale e profitti in calo per il contratto sulle pensioni dei dipendenti pubblici.", "who": ["Capita"]},
+    {"text": "I pagamenti delle pensioni ai dipendenti pubblici hanno subito ritardi dal passaggio della gestione a Capita.", "who": ["Capita"]}
+  ],
+  "view": "Si può dire con certezza che il titolo è crollato e che il vertice è cambiato. Non si sa ancora quanti pensionati siano ancora in attesa, né quanto costerà al gruppo rimediare.\n\nIl caso riguarda un contratto pubblico in cui i ritardi toccano persone concrete. Da guardare: le cifre dell'aumento di capitale, i tempi dei pagamenti arretrati e la reazione del governo come cliente.",
+  "open": [
+    "Quanto vale l'aumento di capitale?",
+    "Quanti pensionati aspettano ancora il pagamento?",
+    "Il governo rivedrà il contratto con Capita?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "giornale", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/business/2026/nov/23/capita-boss-exits-shares-crash-civil-service-pensions-failures", "angle": "Dal testo del feed: calo del 70%, uscita di Hernandez, subentro di Andres.", "at": "2026-11-23T10:01:00+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/c65y1qqw3kjxo", "angle": "Dal testo del feed: i dipendenti pubblici colpiti dai ritardi nei pagamenti della pensione.", "at": "2026-11-23T11:24:37+00:00"},
+    {"name": "Sky News", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://news.sky.com/story/capita-counts-cost-of-civil-service-pension-failures-13615632", "angle": "Dal testo del feed: aumento di capitale e profitti in calo per il contratto sulle pensioni.", "at": "2026-11-23T12:59:00+00:00"}
+  ],
+  "firstSeen": "2026-11-24T09:49:00+01:00",
+  "updated": "2026-11-24T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-24T09:49:00+01:00", "text": "Prima notizia: Capita crolla in Borsa e il suo amministratore delegato lascia."}
+  ],
+  "tags": ["Regno Unito", "Economia", "Pensioni"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

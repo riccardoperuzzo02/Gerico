@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-24-us-iowa-corte-via-libera-detonazione",
+  "prev": "2026-11-23-us-iowa-detonazione-esplosivi",
+  "title": "Stati Uniti: la corte d'appello lascia all'esercito la detonazione in Iowa",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "photo": {"wiki": "en", "title": "Iowa Army Ammunition Plant"},
+  "city": {"name": "Middletown (Iowa)", "lat": 40.8, "lon": -91.2},
+  "rank": 101,
+  "summary": "Lunedì la corte d'appello federale ha respinto la richiesta degli ambientalisti. L'esercito parla di mercoledì mattina, ma Trump ha detto di voler aspettare il via libera del governatore eletto.",
+  "article": "Lunedì 23 novembre la corte d'appello federale dell'ottavo circuito ha respinto la richiesta di fermare la detonazione di circa 5 tonnellate di esplosivi nello stabilimento di munizioni di Middletown, in Iowa. Il collegio ha ritenuto che i gruppi ambientalisti non avessero dimostrato di poter vincere la causa. La corte aveva sospeso la demolizione la settimana scorsa.\n\nGli esplosivi contengono azide di piombo, immagazzinata per decenni in contenitori coperti di terra. Secondo il governo il materiale si è deteriorato e potrebbe esplodere in modo incontrollato. Adam Telle, il segretario ad interim dell'esercito, ha detto che la detonazione controllata andrà avanti come previsto, mercoledì mattina e se il vento lo consente. L'esercito sostiene di avere l'appoggio della governatrice uscente, Kim Reynolds.\n\nLe versioni sul via libera non coincidono. Il presidente Donald Trump ha detto che l'esercito aspetterà le corti e il consenso del governatore eletto, il democratico Rob Sand, e che riterrà Sand responsabile di eventuali danni se non fosse d'accordo. Secondo le fonti, però, il parere del governatore eletto non è richiesto dalla legge. Sand ha chiesto che la scelta si basi sulle informazioni in mano all'amministrazione e ha detto che gli abitanti dell'Iowa hanno diritto di sapere come si è arrivati a questa situazione.\n\nGli ambientalisti avvertono che una nube di polvere di piombo potrebbe estendersi fino a circa 160 chilometri. Nel piano precedente, previsto per venerdì, ad alcuni abitanti di Middletown era stato chiesto di lasciare le case per sei ore.",
+  "facts": [
+    {"text": "La corte d'appello dell'ottavo circuito ha respinto lunedì la richiesta di bloccare la detonazione.", "who": ["Corte d'appello dell'ottavo circuito"]},
+    {"text": "L'esercito indica mercoledì 25 novembre al mattino, se le condizioni del vento lo permettono.", "who": ["Adam Telle, segretario ad interim dell'esercito"]},
+    {"text": "Trump ha detto di voler attendere le corti e il consenso del governatore eletto Rob Sand.", "who": ["Donald Trump"]},
+    {"text": "Gli ambientalisti temono una nube di polvere di piombo fino a circa 160 chilometri.", "who": ["Gruppi ambientalisti"]}
+  ],
+  "view": "Si può dire con certezza che l'ostacolo giudiziario è caduto e che l'esercito ha indicato mercoledì mattina. Resta aperto se Trump intenda davvero rinviare e quali misure proteggeranno i residenti dalla polvere di piombo.\n\nIl caso mette a confronto il rischio di un'esplosione incontrollata e quello sanitario di una detonazione. Nei prossimi giorni conviene guardare se la data regge, le indicazioni ai residenti e un eventuale nuovo ricorso.",
+  "open": [
+    "L'esercito aspetterà davvero il consenso di Rob Sand, come dice Trump?",
+    "Quali residenti dovranno lasciare le case e per quanto tempo?",
+    "Quanta polvere di piombo si disperderà e dove?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/", "angle": "Articolo letto: decisione della corte, data di mercoledì, posizioni di Telle, Trump e Sand.", "at": "2026-11-24T03:21:47+00:00"},
+    {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html", "angle": "Dal testo del feed: la corte ha autorizzato l'esercito, tra le preoccupazioni su contaminazione e salute.", "at": "2026-11-24T03:32:26+00:00"}
+  ],
+  "firstSeen": "2026-11-24T09:49:00+01:00",
+  "updated": "2026-11-24T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-24T09:49:00+01:00", "text": "Prima notizia: la corte d'appello respinge il ricorso, l'esercito indica mercoledì per la detonazione."}
+  ],
+  "tags": ["Stati Uniti", "Ambiente", "Giustizia"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

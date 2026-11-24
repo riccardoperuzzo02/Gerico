@@ -1,7 +1,56 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T13:17:33+00:00",
+ "asOf": "2026-11-24T15:17:36+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Taliban lassen Abschiebeflug verschieben",
+   "desc": "Ein für heute geplanter Abschiebeflug nach Kabul wurde nach NDR-Informationen von afghanischer Seite abgesagt. Die Taliban wollen offenbar Druck machen, um die Einreise weiterer Konsularbeamte nach Deutschland zu erzwingen. Von P. Hornung.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-taliban-abschiebeflug-gestoppt-100.html",
+   "at": "2026-11-24T15:15:31+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Protest gegen Aufrüstung: Der schwierige Kampf der Kriegsgegner",
+   "desc": "Immer mehr Kriege, immer mehr Waffen. Aufrüstung ist ein Milliardengeschäft. Firmen, die sich in der Provinz ansiedeln wollen, treffen dort allerdings oft auf entschlossenen Widerstand. Aber wer protesiert da eigentlich?",
+   "url": "https://www.spiegel.de/politik/deutschland/protest-gegen-aufruestung-der-schwierige-kampf-der-kriegsgegner-a-fa580f9b-43db-465a-8817-79de0219b0ae",
+   "at": "2026-11-24T15:07:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Ukraine benötigt 2027 Finanzhilfen in Höhe von 115 Milliarden Euro",
+   "desc": "Der Ukraine fehlen 2027 trotz Zusagen der EU rund 25 Milliarden Euro im Haushalt. Polen wirft Russland vorsätzliche Verletzung seines Luftraums vor. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-24T15:03:49+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Deutsch-französische Beziehungen: Frankreichs Präsidentschaftswahl beunruhigt deutsche Unternehmen",
+   "desc": "Werde in Frankreich eine Rechtspopulistin oder ein Linkspopulist Präsident, könnten sich die Wirtschaftsbeziehungen verschlechtern. Davor warnen deutsche Unternehmen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/deutsch-franzoesische-beziehungen-frankreich-praesidentschaft-le-pen-jean-luc-melenchon-wirtschaft-handel-gxe",
+   "at": "2026-11-24T14:44:19+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Kita-Gap-Portal: Trotz weniger Geburten fehlen Kitaplätze",
+   "desc": "Obwohl in Deutschland weniger Kinder geboren werden, fehlt es weiterhin an Kitaplätzen. Vor allem ärmere und nicht Deutsch sprechende Familien sind betroffen. Große Unterschiede gibt es zwischen Ost und West.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/kitaplaetze-mangel-100.html",
+   "at": "2026-11-24T14:12:42+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "\"Zutiefst schockierend\" - Weiterer Anstieg bei Fällen von Gewalt gegen Frauen",
+   "desc": "Etwa 198.000 Frauen und Mädchen sowie 82.000 Männern und Jungen wurde im vergangenen Jahr häusliche Gewalt angetan - ein weiterer Anstieg, wie die Lagebilder des BKA zeigen. Besonders auffällig: Immer mehr Frauen werden zudem Opfer von digitaler Gewalt.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/gewalt-gegen-frauen-lagebericht-100.html",
+   "at": "2026-11-24T13:31:58+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Geschlechtsspezifische Gewalt: Gewalt gegen Frauen nimmt weiter zu",
+   "desc": "2025 wurde fast jeden Tag eine Frau von ihrem Partner oder Ex-Partner getötet. Zahlen zeigen, dass die Gewalt gegen Frauen im vergangenen Jahr deutlich zugenommen hat.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/geschlechtsspezifische-gewalt-bka-lagebild-frauen",
+   "at": "2026-11-24T13:15:04+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Bundeshaushalt 2027: Klingbeil sieht \"wichtige Zukunftsinvestitionen\"",
@@ -38,13 +87,6 @@
    "at": "2026-11-24T11:41:33+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Geschlechtsspezifische Gewalt: Gewalt gegen Frauen nimmt weiter zu",
-   "desc": "2025 gab es fast jeden Tag in Deutschland einen Femizid. Aktuelle Zahlen zeigen, dass die Gewalt gegen Frauen im vergangenen Jahr deutlich zugenommen hat.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/geschlechtsspezifische-gewalt-bka-lagebild-frauen",
-   "at": "2026-11-24T11:20:19+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Marie-Agnes Strack-Zimmermann: Mann wegen Online-Beleidigung verurteilt",
    "desc": "FDP-Politikerin Marie-Agnes Strack-Zimmermann fordert oft militärische Hilfe für die Ukraine im russischen Angriffskrieg, im Internet wird sie von Usern heftig angegangen. Ein Beitrag hat nun juristische Folgen.",
@@ -60,7 +102,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Sachsen: Staatskanzlei ließ Christstollen per Dienstwagen zu Papst Leo XIV. chauffieren",
+   "title": "Papst Leo XIV.: Sachsens Staatskanzlei ließ Christstollen per Dienstwagen in Vatikan chauffieren",
    "desc": "Im September reiste Sachsens Ministerpräsident Michael Kretschmer zu einer Privataudienz bei Papst Leo XIV. Einen Stollen, Porzellan und andere Präsente ließ die Staatskanzlei im 7er-BMW über die Alpen schaffen.",
    "url": "https://www.spiegel.de/politik/deutschland/sachsen-staatskanzlei-liess-christstollen-per-dienstwagen-zu-papst-leo-xiv-chauffieren-a-dfd301fa-b8b8-45ef-a315-16dd8e04103b",
    "at": "2026-11-24T10:20:00+00:00"
@@ -157,20 +199,6 @@
    "at": "2026-11-24T06:36:50+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "USA: Donald Trump fordert schnellere Vollstreckung von Todesurteilen",
-   "desc": "Kaliforniens Gouverneur hat die Todesstrafen in Haftstrafen umgewandelt. Doch US-Präsident Donald Trump forderte schnellere Hinrichtungen auf Bundesebene.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/todesstrafe-usa-donald-trump-gavin-newsom-kalifornien-gxe",
-   "at": "2026-11-24T06:34:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Südkorea: Russische Militärflugzeuge nähern sich südkoreanischer Insel",
-   "desc": "Mehrere russische Militärjets sind in Südkoreas Luftraum eingedrungen. Behörden gaben für die Insel Ulleungdo vor der Ostküste Südkoreas eine Evakuierungswarnung aus.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/russische-militaerflugzeuge-suedkorea-adiz-insel-ulleung",
-   "at": "2026-11-24T06:34:27+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "11KM-Podcast: Machtmissbrauch an Musikhochschulen",
    "desc": "Studierende an Musikhochschulen berichten von Machtmissbrauch und teils auch sexuellen Übergriffen durch ihre Dozenten. Der Podcast 11KM erklärt, warum diese Orte dafür besonders anfällig sind.",
@@ -225,13 +253,6 @@
    "desc": "Kurz vor Ende der Haushaltsberatungen kämpft Markus Söder plötzlich gegen die Steuermehrbelastung. Seine Forderung nach einem Ausgleich der kalten Progression deuten einige in der Union als Angriff auf den Kanzler.",
    "url": "https://www.spiegel.de/politik/deutschland/markus-soeder-was-bezweckt-der-csu-chef-mit-seiner-forderung-zur-kalten-progression-a-3973a8bf-7dea-4dcd-b65a-e11176df237a",
    "at": "2026-11-23T16:08:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bombendrohungen an Hunderten Schulen bundesweit",
-   "desc": "Freiburg, Erfurt oder Hamburg: Hunderte Schulen im ganzen Land haben Drohschreiben bekommen. Mehrere Schulen wurden vorsorglich geräumt. Laut verschiedenen Polizeibehörden gibt es aber keine Hinweise auf eine konkrete Gefahr.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/bombendrohungen-schulen-102.html",
-   "at": "2026-11-23T14:13:20+00:00"
   }
  ]
 }

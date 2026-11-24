@@ -1,34 +1,160 @@
 {
  "code": "US",
- "asOf": "2026-11-24T13:17:33+00:00",
+ "asOf": "2026-11-24T15:17:36+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Anthropic stock falls below $83 IPO price, but analysts are still largely positive",
+   "desc": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
+   "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+   "at": "2026-11-24T15:14:23+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "desc": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
    "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
-   "at": "2026-11-24T13:17:16+00:00"
+   "at": "2026-11-24T15:05:14+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
+   "desc": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html",
+   "at": "2026-11-24T15:04:11+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia brought Jensen Huang back. But the investigations aren’t over",
+   "desc": "Jensen Huang is back as Nvidia CEO, but the company still faces an internal investigation and California and federal scrutiny.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ceo-return.html",
+   "at": "2026-11-24T15:03:36+00:00"
   },
   {
    "source": "CNBC",
    "title": "Best Buy reports comparable sales growth of 6.1%, highest in five years",
    "desc": "Best Buy beat quarterly expectations for its fiscal third-quarter earnings results on Tuesday and raised its full-year guidance.",
    "url": "https://www.cnbc.com/2026/11/24/best-buy-bby-q3-2027-earnings.html",
-   "at": "2026-11-24T12:57:35+00:00"
+   "at": "2026-11-24T14:51:58+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "\"We're racing towards huge dangers,\" AI pioneer Yoshua Bengio says",
+   "desc": "As one of the \"godfathers\" of artificial intelligence, Yoshua Bengio helped bring generative AI into the world. Now he worries society isn't ready for what's coming.",
+   "url": "https://www.cbsnews.com/news/ai-yoshua-bengio-warns-dangers-artificial-intelligence/",
+   "at": "2026-11-24T14:50:33+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
+   "desc": "Privacy-focused messaging application Signal has joined United Airlines and JPMorgan Chase in implementing restrictions around artificial intelligence agents.",
+   "url": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+   "at": "2026-11-24T14:46:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia shares fall over 5% after Huang comeback rally",
+   "desc": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+   "at": "2026-11-24T14:43:53+00:00"
   },
   {
    "source": "CNBC",
    "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
    "desc": "Sanofi faces a revenue drop towards the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
    "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "at": "2026-11-24T12:33:41+00:00"
+   "at": "2026-11-24T14:35:05+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
+   "desc": "Albania's Prime Minister Edi Rama has vowed that Kushner's resort project will go ahead as planned. But an ongoing investigation by Albania's state prosecutor into forged land titles could halt the project.",
+   "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
+   "at": "2026-11-24T14:24:04+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump to present Rudy Giuliani with Presidential Medal of Freedom",
+   "desc": "Rudy Giuliani, the former mayor of New York City who worked as a personal lawyer to President Trump, said he will be honored in the Oval Office.",
+   "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/",
+   "at": "2026-11-24T14:23:43+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army set to detonate toxic lead in Iowa",
+   "desc": "The Army is planning to detonate nearly 10,000 pounds of toxic lead azide in Iowa after getting approval from an appeals court. Ian Lee reports.",
+   "url": "https://www.cbsnews.com/video/army-set-to-detonate-toxic-lead-in-iowa/",
+   "at": "2026-11-24T14:22:04+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "What Jensen Huang's Nvidia return means for the economy",
+   "desc": "The announcement of Jensen Huang's return to Nvidia immediately impacted the markets on Tuesday. Kelly O'Grady and The Atlantic CEO Nick Thompson break it down.",
+   "url": "https://www.cbsnews.com/video/what-jensen-huangs-nvidia-return-means-for-the-economy/",
+   "at": "2026-11-24T14:15:50+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Jensen Huang promises to be a better CEO after Nvidia reinstatement",
+   "desc": "Jensen Huang was welcomed back to the Nvidia headquarters on Monday after his reinstatement; meanwhile, the stock market soared. Jo Ling Kent has reports.",
+   "url": "https://www.cbsnews.com/video/jensen-huang-promises-to-be-better-ceo-after-nvidia-reinstatement/",
+   "at": "2026-11-24T14:11:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
+   "desc": "Nvidia is giving back some of Monday's surge and Anthropic is below its IPO price of $83.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/24/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html",
+   "at": "2026-11-24T13:53:37+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Some Haitian Families Fleeing the U.S. for Canada Are Being Separated at the Border",
+   "desc": "Driven to Canada by deportation fears, some members of Haitian families are being denied entry, turned back and detained by U.S. authorities.",
+   "url": "https://www.nytimes.com/2026/11/24/us/haitians-deportations-canada-immigration.html",
+   "at": "2026-11-24T13:50:17+00:00"
   },
   {
    "source": "CNBC",
    "title": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
    "desc": "Russia accused Estonia of “hostile actions” and warned its border measures risk open war, as Tallinn prepares to close road crossings from Dec. 1.",
    "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
-   "at": "2026-11-24T12:32:24+00:00"
+   "at": "2026-11-24T13:42:55+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Our correspondent got an inside look at how Delta deals with flight delays. Here's what he learned.",
+   "desc": "Kris Van Cleave gets an inside look at how Delta Air Lines deals with flight delays ahead of the Thanksgiving travel rush.",
+   "url": "https://www.cbsnews.com/video/our-correspondent-got-an-inside-look-at-how-delta-deals-with-flight-delays-heres-what-he-learned/",
+   "at": "2026-11-24T13:41:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Huang's return at Nvidia puts spotlight on chipmaker's board",
+   "desc": "Nvidia directors' decision to rehire Jensen Huang shows a \"lack of courage,\" according to one prominent governance expert.",
+   "url": "https://www.cbsnews.com/news/nvidia-board-reinstates-ceo-jensen-huang/",
+   "at": "2026-11-24T13:35:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "desc": "The influential central banker expressed confidence that inflation will get closer to the Fed's 2% target in 2027.",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+   "at": "2026-11-24T13:33:26+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Six key questions raised by Jensen Huang's return to Nvidia",
+   "desc": "As Jensen Huang returns to Nvidia, questions remained around the board's reversal, Trump's involvement and the tech giant's future.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
+   "at": "2026-11-24T13:31:29+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Severe storms threaten Thanksgiving travel",
+   "desc": "Severe storms on both coasts are threatening holiday travel plans. Meanwhile, California residents are racing against record-high tides. Carter Evans reports.",
+   "url": "https://www.cbsnews.com/video/severe-storms-threaten-thanksgiving-travel/",
+   "at": "2026-11-24T13:27:09+00:00"
   },
   {
    "source": "NPR",
@@ -78,13 +204,6 @@
    "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
    "url": "https://www.nytimes.com/2026/11/24/us/harvard-maga-class.html",
    "at": "2026-11-24T10:00:53+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Some Haitian Families Fleeing the U.S. for Canada Are Being Separated at the Border",
-   "desc": "Driven to Canada by deportation fears, some members of Haitian families are being denied entry, turned back and detained by U.S. authorities.",
-   "url": "https://www.nytimes.com/2026/11/24/us/haitians-deportations-canada-immigration.html",
-   "at": "2026-11-24T10:00:39+00:00"
   },
   {
    "source": "New York Times",
@@ -143,34 +262,6 @@
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Morning news brief",
-   "desc": "President Trump is taking credit for the return of his close ally Jensen Huang as Nvidia's CEO, Nvidia's stock rose after Huang was reinstated, the Russia-Ukraine war is spilling into other countries.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6047113/morning-news-brief",
-   "at": "2026-11-24T09:54:18+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Asian tech stocks recover from ‘collateral damage’ of Jensen Huang’s departure",
-   "desc": "Investors piled back into the tech market, following the reinstatement of Nvidia CEO Jensen Huang by its board.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-   "at": "2026-11-24T09:46:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
-   "desc": "Privacy-focused messaging application Signal has joined United Airlines and JPMorgan Chase in implementing restrictions around artificial intelligence agents.",
-   "url": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
-   "at": "2026-11-24T07:25:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Six key questions raised by Jensen Huang's return to Nvidia",
-   "desc": "As Jensen Huang returns to Nvidia, questions remained around the board's reversal, Trump's involvement and the tech giant's future.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
-   "at": "2026-11-24T07:12:33+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "AI adoption grows in Asia, but measuring the gains remains tricky",
    "desc": "Businesses across Asia-Pacific are seeing returns from AI investments, even as confidence in measuring those gains varies, according to an AWS survey.",
@@ -189,7 +280,7 @@
    "title": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
    "desc": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html",
-   "at": "2026-11-24T04:38:48+00:00"
+   "at": "2026-11-24T04:38:49+00:00"
   },
   {
    "source": "CNBC",
@@ -255,13 +346,6 @@
    "at": "2026-11-24T01:49:00+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
-   "desc": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html",
-   "at": "2026-11-24T01:31:14+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Santa school: where his official helpers learn to embody Old Saint Nick",
    "desc": "Santa's official helpers are in training at the Charles H. Howard Santa School in Midland, Michigan. Hundreds of aspiring Saint Nicks and Mrs. Clauses gather every year at what's been called the Harvard of the trade. Tony Dokoupil has the story.",
@@ -302,13 +386,6 @@
    "desc": "Jensen Huang is still set to testify before lawmakers next week, congressional panels confirmed, after he was reinstated as Nvidia's CEO Monday, after resigning earlier this month amid allegations of affairs.",
    "url": "https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/",
    "at": "2026-11-24T01:18:24+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Huang's return at Nvidia puts spotlight on chipmaker's board",
-   "desc": "Nvidia directors' decision to rehire Jensen Huang shows a \"lack of courage,\" according to one prominent governance expert.",
-   "url": "https://www.cbsnews.com/news/nvidia-board-reinstates-ceo-jensen-huang/",
-   "at": "2026-11-24T01:17:32+00:00"
   },
   {
    "source": "CBS News",
@@ -374,13 +451,6 @@
    "at": "2026-11-24T00:32:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "CrowdStrike CEO defends Zscaler acquisition, calls it a 'winning combination'",
-   "desc": "CrowdStrike CEO George Kurtz defended the company's $44 billion acquisition of Zscaler.",
-   "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-deal-ceo-george-kurtz.html",
-   "at": "2026-11-23T23:53:20+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Trump tells Army to halt detonation for now in Iowa this week",
    "desc": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
@@ -428,13 +498,6 @@
    "desc": "Nvidia break record for single stock options volume",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
    "at": "2026-11-23T23:24:02+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jim Cramer sees more upside for Nvidia stock with Jensen Huang back as CEO",
-   "desc": "CNBC's Jim Cramer said Jensen Huang's return as Nvidia CEO could help revive the chipmaker's battered stock.",
-   "url": "https://www.cnbc.com/2026/11/23/jim-cramer-nvidia-jensen-huang-ceo-return.html",
-   "at": "2026-11-23T23:14:34+00:00"
   },
   {
    "source": "CNBC",
@@ -490,28 +553,7 @@
    "title": "Nvidia CEO Jensen Huang resigns in wake of affair, spy scandal",
    "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
    "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
-   "at": "2026-11-23T21:19:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "How Huang's resignation and return unfolded at Nvidia",
-   "desc": "Jensen Huang's shocking exit as CEO of Nvidia unspooled suddenly, yet signs of trouble had emerged much earlier.",
-   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/",
-   "at": "2026-11-23T21:18:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
-   "desc": "The influential central banker expressed confidence that inflation will get closer to the Fed's 2% target in 2027.",
-   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
-   "at": "2026-11-23T21:02:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump says he convinced Nvidia board to reinstate Jensen Huang",
-   "desc": "President Trump claimed the government \"has no reason to believe\" Jensen Huang's return is a national security risk.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/",
-   "at": "2026-11-23T21:02:08+00:00"
+   "at": "2026-11-23T21:19:00+00:00"
   },
   {
    "source": "CNBC",
@@ -519,41 +561,6 @@
    "desc": "Treasury Secretary Scott Bessent was becoming the face of an emerging harder line on Nvidia— until he reversed course",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
    "at": "2026-11-23T21:00:59+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump, tech CEOs cheer Huang's return, but lawmakers question board",
-   "desc": "President Trump and prominent tech figures applauded Huang's reinstatement as CEO, though some lawmakers criticized the move as \"reckless.\"",
-   "url": "https://www.cbsnews.com/news/trump-elon-musk-business-leaders-cheer-jensen-huang-ceo-nvidia/",
-   "at": "2026-11-23T20:55:56+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Democrats have flipped 47 House seats. Here's the breakdown.",
-   "desc": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
-   "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
-   "at": "2026-11-23T20:38:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "This week on \"Sunday Morning\" (Nov. 22): The Food Issue",
-   "desc": "Jane Pauley hosts our annual \"Eat, Drink & Be Merry\" holiday broadcast exploring all things epicurean! Check out our menu...",
-   "url": "https://www.cbsnews.com/news/this-week-on-sunday-morning-nov-22-2026-the-food-issue/",
-   "at": "2026-11-23T20:36:11+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Taking on credit card debt to buy food",
-   "desc": "According to a recent survey, about 63% of Americans are using credit cards to buy increasingly expensive groceries – and many are having trouble paying off that food debt.",
-   "url": "https://www.cbsnews.com/news/taking-on-credit-card-debt-to-buy-food/",
-   "at": "2026-11-23T20:35:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Investors are missing the bigger picture in CrowdStrike's deal to buy Zscaler",
-   "desc": "CrowdStrike's quarterly results, released alongside the deal's announcement, show a company acting from a position of strength rather than weakness.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/23/crowdstrikes-zscaler-deal-investors-are-missing-the-bigger-picture.html",
-   "at": "2026-11-23T20:26:39+00:00"
   },
   {
    "source": "CNBC",
@@ -589,13 +596,6 @@
    "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
    "at": "2026-11-23T18:08:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "U.S. will host the 2031 Women's World Cup, FIFA announces",
-   "desc": "FIFA has confirmed a United States-led bid to host the 2031 Women's World Cup and a U.K. project led by England for the 2035 edition.",
-   "url": "https://www.cbsnews.com/news/us-host-2031-fifa-women-world-cup-announcement/",
-   "at": "2026-11-23T16:59:31+00:00"
   },
   {
    "source": "New York Times",

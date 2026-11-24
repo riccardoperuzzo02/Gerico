@@ -1,13 +1,90 @@
 {
  "code": "FR",
- "asOf": "2026-11-24T19:17:35+00:00",
+ "asOf": "2026-11-24T21:17:35+00:00",
  "items": [
   {
+   "source": "Le Monde",
+   "title": "« GTA VI » piraté : comment des hackeurs assistés par IA font la course pour adapter le jeu vidéo sur PC",
+   "desc": "Des communautés de bidouilleurs travaillent à rendre le jeu de Rockstar Games, disponible uniquement sur console, jouable sur PC. Les pirates de Cyberleek, qui ont illégalement diffusé une version Xbox Series du jeu dès sa sortie, leur ont apporté une aide décisive.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/24/gta-vi-pirate-comment-des-hackeurs-assistes-par-ia-font-la-course-pour-adapter-le-jeu-video-sur-pc_6814851_4408996.html",
+   "at": "2026-11-24T20:48:06+00:00"
+  },
+  {
    "source": "franceinfo",
-   "title": "Sébastien Lecornu recevra les présidents des groupes parlementaires \"la semaine prochaine\" pour prolonger les discussions sur le budget 2027",
+   "title": "Cinq morts dans le crash d'un hélicoptère militaire en Turquie",
+   "desc": "Cet accident intervient douze jours après le crash d'un autre appareil de l'armée, qui avait fait quatre morts.",
+   "url": "https://www.franceinfo.fr/monde/turquie/cinq-morts-dans-le-crash-d-un-helicoptere-militaire-en-turquie_8298399.html",
+   "at": "2026-11-24T20:36:21+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Le constructeur automobile chinois BYD va s’implanter en France",
+   "desc": "Le groupe a annoncé, mardi 24 novembre, son projet de rachat d’une usine à Hambach, en Moselle. Il cherche depuis un an à produire ses véhicules en Europe pour contourner les droits de douane.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/24/le-constructeur-automobile-chinois-byd-va-s-implanter-en-france_6814850_3234.html",
+   "at": "2026-11-24T20:35:09+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une enquête ouverte pour tentative de meurtre sur un adolescent à Paris lors de la manifestation du 17 octobre",
+   "desc": "Le projectile reçu par cet adolescent a \"atteint le poumon\", selon le parquet. \"Les investigations - nombreuses - sont en cours afin d'identifier l'auteur du tir\", précise-t-il.",
+   "url": "https://www.franceinfo.fr/societe/mobilisation-du-17-octobre/une-enquete-ouverte-pour-tentative-de-meurtre-sur-un-adolescent-a-paris-lors-de-la-manifestation-du-17-octobre_8298381.html",
+   "at": "2026-11-24T20:24:27+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’Assemblée nationale adopte le projet de loi sur le logement, avec les voix du Rassemblement national",
+   "desc": "Le ministre du logement, Vincent Jeanbrun, mise sur la suppression, lors de la commission mixte paritaire de décembre, de l’amendement du RN qui met fin à l’interdiction de louer les passoires thermiques.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/l-assemblee-nationale-adopte-le-projet-de-loi-sur-le-logement-avec-les-voix-du-rassemblement-national_6814849_3224.html",
+   "at": "2026-11-24T20:22:45+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : Edouard Philippe \"vote blanc\" dans un duel hypothétique entre Jean-Luc Mélenchon et Marine Le Pen au second tour",
+   "desc": "Le candidat Horizons à l'élection présidentielle refuse de faire un choix dans l'hypothèse où ses rivaux LFI et RN accéderaient au second tour, en mai 2027.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html",
+   "at": "2026-11-24T20:02:03+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le ministre de la Défense israélien affirme que l'Iran développe \"des armes chimiques\"",
+   "desc": "De son côté, le rival de Benyamin Nétanyahou, Gadi Eisenkot, estime qu'aucune opération militaire contre l'Iran ne s'impose dans l'immédiat.",
+   "url": "https://www.franceinfo.fr/monde/conflit-israel-iran/le-ministre-de-la-defense-israelien-affirme-que-l-iran-developpe-des-armes-chimiques_8298327.html",
+   "at": "2026-11-24T19:42:33+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Plus de 300 gendarmes blessés depuis le début de la crise sociale, selon la gendarmerie nationale",
+   "desc": "Le directeur général de la gendarmerie nationale a précisé que 50 d'entre eux ont été hospitalisés après avoir été blessés \"assez sérieusement\".",
+   "url": "https://www.franceinfo.fr/societe/armee-securite-defense/plus-de-300-gendarmes-blesses-depuis-le-debut-de-la-crise-sociale-selon-la-gendarmerie-nationale_8297913.html",
+   "at": "2026-11-24T19:20:11+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Sébastien Lecornu recevra les présidents des groupes parlementaires début décembre pour prolonger les discussions sur le budget 2027",
    "desc": "Le Premier ministre s'est également félicité de l'adoption du projet de loi de finances de fin de gestion pour 2026.",
    "url": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-recevra-les-presidents-des-groupes-parlementaires-la-semaine-prochaine-pour-prolonger-les-discussions-sur-le-budget-2027_8298285.html",
-   "at": "2026-11-24T19:04:02+00:00"
+   "at": "2026-11-24T19:15:27+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Brésil, le gouvernement Lula fait voter un plan de rigueur budgétaire controversé",
+   "desc": "Ce premier texte d’envergure soumis au vote depuis la réélection du dirigeant du Parti des travailleurs, le 25 octobre, a suscité la réprobation d’une partie de la gauche, en désaccord avec la modification de la loi allouant une partie des recettes des exportations de pétrole et de gaz naturel à la santé et à l’éducation.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/24/au-bresil-le-gouvernement-lula-fait-voter-un-plan-de-rigueur-budgetaire-controverse_6814846_3210.html",
+   "at": "2026-11-24T19:11:47+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Allemagne, Die Linke exclut une de ses élues, accusée d’antisémitisme, pour diriger la mairie de Berlin",
+   "desc": "Le parti de gauche radicale a voté, mardi, l’exclusion de Vanessa Emde. Son départ devrait faciliter la conclusion d’un accord avec le SPD et les Verts, attendu avant début 2027, pour gouverner la capitale allemande.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/24/en-allemagne-die-linke-exclut-une-de-ses-elues-pour-diriger-la-mairie-de-berlin_6814844_3210.html",
+   "at": "2026-11-24T19:05:53+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Relancer ou non la guerre : l’alliance israélo-américaine au défi du réarmement iranien",
+   "desc": "Alors que le premier ministre sortant d’Israël, Benyamin Nétanyahou, plaide auprès de Donald Trump pour une reprise rapide des frappes sur l’Iran, le président américain, refroidi par la défaite historique de son camp aux élections de mi-mandat, s’est donné jusqu’à janvier pour trancher.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/24/relancer-ou-non-la-guerre-l-alliance-israelo-americaine-au-defi-du-rearmement-iranien_6814843_3210.html",
+   "at": "2026-11-24T19:00:03+00:00"
   },
   {
    "source": "Le Monde",
@@ -45,27 +122,6 @@
    "at": "2026-11-24T18:33:12+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "La Cour européenne des droits de l’homme juge que les Etats peuvent refouler les migrants en cas d’instrumentalisation par un Etat tiers",
-   "desc": "Dans un triple jugement consacré aux refoulements de demandeurs d’asile aux frontières de l’Europe avec la Biélorussie, les magistrats ont limité, mardi, la protection desdits demandeurs aux seules personnes « vulnérables ». Ces arrêts laissent les juristes dubitatifs.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/24/la-cour-europeenne-des-droits-de-l-homme-juge-que-les-etats-peuvent-refouler-les-migrants-en-cas-d-instrumentalisation-par-un-etat-tiers_6814838_3210.html",
-   "at": "2026-11-24T18:26:48+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : David Lisnard s'engage à continuer à \"défendre les mairies\" s'il accède à l'Elysée en mai 2027.",
-   "desc": "Le candidat Nouvelle Energie brigue sa propre succession à la tête de l'Association des maires de France. Pour ce scrutin, il affronte le maire UDI de Sceaux (Hauts-de-Seine), Philippe Laurent.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html",
-   "at": "2026-11-24T18:16:59+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Budget 2027 : le Sénat abaisse le plafond de l’abattement fiscal de 10 % des retraités, refusant sa suppression totale",
-   "desc": "Actuellement, l’abattement dont bénéficient les retraités est plafonné à 4 439 euros. Dans son projet de loi de finances, le gouvernement proposait de réduire ce plafond à 3 000 euros. Les sénateurs ont voté son abaissement à 1 000 euros.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/24/budget-2027-le-senat-abaisse-le-plafond-de-l-abattement-fiscal-de-10-des-retraites-refusant-sa-suppression-totale_6814837_823448.html",
-   "at": "2026-11-24T18:15:05+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Nicolas Sarkozy, Carla Bruni, Mimi Marchand… Qui sont les principaux protagonistes de l'affaire de la fausse rétractation de Ziad Takieddine ?",
    "desc": "Onze personnes sont renvoyées devant le tribunal correctionnel pour leur implication dans l'opération \"Sauver Sarko\". L'ancien chef de l'Etat et son épouse sont poursuivis pour \"association de malfaiteurs en vue de commettre une escroquerie en bande organisée\" et \"recel de subornation de témoin\".",
@@ -78,13 +134,6 @@
    "desc": "\"Chaque salarié de nuit sera reçu par sa hiérarchie d'ici à la fin du mois de novembre\", précise l'entreprise dans son communiqué. Les syndicats estiment que les intérimaires sont \"sacrifiés\" par cette décision.",
    "url": "https://www.franceinfo.fr/economie/automobile/l-usine-stellantis-de-sochaux-arrete-l-activite-de-son-equipe-de-nuit-a-partir-de-janvier-2027-500-emplois-sont-concernes_8298177.html",
    "at": "2026-11-24T18:08:08+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Chez SFR, les ventes continuent de chuter en pleine opération de rachat par Bouygues Telecom, Free et Orange",
-   "desc": "Le groupe de Patrick Drahi a fait état d’une baisse de son chiffre d’affaires de près de 8 % au troisième trimestre, et a choisi de ne plus publier son nombre d’abonnés.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/24/chez-sfr-les-ventes-continuent-de-chuter-en-pleine-operation-de-rachat-par-bouygues-telecom-free-et-orange_6814833_3234.html",
-   "at": "2026-11-24T17:55:48+00:00"
   },
   {
    "source": "Le Monde",
@@ -129,6 +178,13 @@
    "at": "2026-11-24T17:32:32+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Office Depot ferme définitivement ses 27 magasins et son site Internet en France, faute d’avoir trouvé un repreneur",
+   "desc": "L’entreprise avait été placée début octobre en liquidation judiciaire, avec poursuite d’activité afin de permettre la recherche d’un repreneur. Les 185 salariés feront l’objet d’une procédure légale de licenciement économique.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/24/office-depot-ferme-definitivement-ses-27-magasins-et-son-site-internet-en-france-faute-d-avoir-trouve-un-repreneur_6814829_3234.html",
+   "at": "2026-11-24T17:29:19+00:00"
+  },
+  {
    "source": "France 24",
    "title": "Mort de Nahel : la réaction de la famille après le pourvoi en cassation du policier mis en cause",
    "desc": "Le 27 juin 2023, Nahel Merzouk, 17 ans, est tué à Nanterre, dans les Hauts-de-Seine, d'une balle tirée à bout portant par le policier Florian M. lors d'un contrôle routier. La scène, filmée, devient virale sur les réseaux sociaux. Plusieurs nuits de violences secouent la France. Après deux ans d’enquête et de nombreux rebondissements judiciaires, la cour d'appel de Versailles a ordonné mardi que le policier soit jugé devant la cour d'assises des Hauts-de-Seine pour meurtre. La défense du policier a rapidement annoncé un nouveau pourvoi en cassation.",
@@ -136,31 +192,17 @@
    "at": "2026-11-24T17:07:43+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Plus de 300 gendarmes blessés depuis le début de la crise sociale, selon la gendarmerie nationale",
-   "desc": "Le directeur général de la gendarmerie nationale a précisé que 50 d'entre eux ont été hospitalisés après avoir été blessés \"assez sérieusement\".",
-   "url": "https://www.franceinfo.fr/societe/armee-securite-defense/plus-de-300-gendarmes-blesses-depuis-le-debut-de-la-crise-sociale-selon-la-gendarmerie-nationale_8297913.html",
-   "at": "2026-11-24T17:03:21+00:00"
+   "source": "Le Monde",
+   "title": "Mobilisations lycéennes : « Elus locaux, mettez la jeunesse à la table des décisions ! »",
+   "desc": "Dans une tribune au « Monde », un collectif de plus de 50 étudiants dénonce la place trop restreinte accordée aux jeunes dans les instances locales et formule trois propositions concrètes à l’adresse des maires.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/24/mobilisations-lyceennes-elus-locaux-mettez-la-jeunesse-a-la-table-des-decisions_6814824_3232.html",
+   "at": "2026-11-24T17:00:14+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "A Porto Rico, des candidates africaines privées de concours Miss Univers par les lois anti-immigration de Donald Trump",
-   "desc": "Parmi les 116 prétendantes à la couronne, cinq Miss originaires de pays africains n’ont pas pu obtenir de visa américain ou l’ont reçu trop tardivement pour pouvoir participer au concours mondial de beauté.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/24/a-porto-rico-des-candidates-africaines-privees-de-concours-miss-univers-par-les-lois-anti-immigration-de-donald-trump_6814825_3212.html",
-   "at": "2026-11-24T17:00:15+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Hackers et médias révèlent ce que le Kremlin voulait cacher : le bilan de 500 000 morts au moins sur le front ukrainien",
-   "desc": "Depuis que les troupes russes ont envahi l’Ukraine en février 2022, Vladimir Poutine a empêché la publication des chiffres de décès. Mais des hackers ont piraté les registres de l’agence de statistiques. Et des médias en exil ont passé au crible les données. Le décompte dépasserait les 700 000 morts, en incluant les militaires disparus.",
+   "title": "Hackeurs et médias révèlent ce que le Kremlin voulait cacher : le bilan de 500 000 morts au moins sur le front ukrainien",
+   "desc": "Depuis que les troupes russes ont envahi l’Ukraine en février 2022, Vladimir Poutine a empêché la publication des chiffres de décès. Mais des hackeurs ont piraté les registres de l’agence de statistiques russe. Et des médias en exil ont passé au crible les données. Le décompte dépasserait 700 000 morts en incluant les militaires disparus.",
    "url": "https://www.lemonde.fr/international/article/2026/11/24/hackers-et-medias-revelent-ce-que-le-kremlin-voulait-cacher-le-bilan-de-500-000-morts-au-moins-sur-le-front-ukrainien_6814823_3210.html",
-   "at": "2026-11-24T17:00:11+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Alcool : l’expérimentation en hausse chez les collégiens et les lycéens, les autres usages régressent, y compris chez les adultes",
-   "desc": "Le bilan annuel que l’Observatoire français des drogues et des tendances addictives consacre à la consommation d’alcool et ses conséquences, publié mardi 24 novembre, acte l’augmentation de la tendance à tester des boissons alcoolisées chez les jeunes scolarisés, après plus de dix ans de baisse.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/24/alcool-l-experimentation-en-hausse-chez-les-collegiens-et-les-lyceens-les-autres-usages-regressent-y-compris-chez-les-adultes_6814822_3224.html",
    "at": "2026-11-24T17:00:00+00:00"
   },
   {
@@ -185,18 +227,11 @@
    "at": "2026-11-24T16:43:24+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Paper Tiger » : le cinéaste James Gray livre le récit captivant d’une lente dislocation familiale",
-   "desc": "Le nouveau film du réalisateur américain, présenté en compétition à Cannes et inspiré de sa propre jeunesse, est servi par un formidable trio d’acteurs, Scarlett Johansson, Adam Driver et Miles Teller.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/24/paper-tiger-le-cineaste-james-gray-livre-le-recit-captivant-d-une-lente-dislocation-familiale_6814821_3246.html",
-   "at": "2026-11-24T16:35:50+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Suède : le centre gauche échoue à former un gouvernement",
-   "desc": "Deux mois et demi après les élections législatives, les sociaux-démocrates, les centristes, les Verts et le Parti de la gauche ont acté leur incapacité à constituer une coalition. Le premier ministre sortant conservateur, Ulf Kristersson, se dit prêt à briguer un second mandat à la tête de la droite.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/24/suede-le-centre-gauche-echoue-a-former-un-gouvernement_6814817_3210.html",
-   "at": "2026-11-24T16:30:10+00:00"
+   "source": "franceinfo",
+   "title": "Le constructeur chinois BYD annonce être entré en négociations exclusives pour l'acquisition de l'usine Ineos Automotive d'Hambach en Moselle",
+   "desc": "Ineos Automotive à Hambach (Moselle) qui fabrique le Grenadier et le constructeur automobile chinois BYD confirment mardi 24 novembre 2026 dans deux communiqués distincts, être entrés dans une phase de négociations exclusives pour le rachat du site mosellan.",
+   "url": "https://france3-regions.franceinfo.fr/grand-est/moselle/metz/le-constructeur-chinois-byd-annonce-etre-entre-en-negociations-exclusives-pour-l-acquisition-de-l-usine-ineos-automotive-d-hambach-en-moselle-3455360.html",
+   "at": "2026-11-24T16:41:08+00:00"
   },
   {
    "source": "franceinfo",
@@ -227,27 +262,6 @@
    "at": "2026-11-24T16:15:47+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Plus de 90% des plaintes pour viol classées sans suite en France, selon la Fondation des Femmes",
-   "desc": "Dans sa nouvelle campagne de sensibilisation et d’appel aux dons, la Fondation des Femmes dit vouloir \"donner suite\" à la détresse des femmes victimes de violences. Cette campagne, intitulée #Nousdonnonssuite, est publiée à l'occasion du 25 novembre, Journée internationale pour l’élimination de la violence à l’égard des femmes, et dévoile des chiffres alarmants.",
-   "url": "https://www.franceinfo.fr/societe/violences-faites-aux-femmes/plus-de-90-des-plaintes-pour-viol-classees-sans-suite-en-france-selon-la-fondation-des-femmes_8297715.html",
-   "at": "2026-11-24T16:04:18+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Derrière l’affaire Nvidia, un vaste réseau de détournement de puces d’IA au service de la Chine",
-   "desc": "Alors que Jensen Huang a repris la tête du géant des processeurs américain, lundi 23 novembre, la presse financière mondiale retrace les méthodes qui ont permis d’expédier les puces vers le territoire chinois, malgré les restrictions des Etats-Unis.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/24/derriere-l-affaire-nvidia-un-vaste-reseau-de-detournement-de-puces-d-ia-au-service-de-la-chine_6814811_3234.html",
-   "at": "2026-11-24T15:49:52+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Var et les Alpes-Maritimes placés en vigilance orange mercredi pour \"pluie-inondation\"",
-   "desc": "Météo-France évoque, dans son bulletin, un \"épisode méditerranéen nécessitant un suivi particulier du fait des cumuls attendus, intervenant dans un contexte de sols humides\".",
-   "url": "https://www.franceinfo.fr/environnement/meteo/le-var-et-les-alpes-maritimes-places-en-vigilance-orange-mercredi-pour-pluie-inondation_8297946.html",
-   "at": "2026-11-24T15:47:53+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Boxe : la championne olympique Imane Khelif de retour sur le ring",
    "desc": "Depuis le 9 août 2024, date à laquelle Imane Khelif a remporté la médaille d'or en boxe féminine aux Jeux olympiques, la boxeuse s'était éloignée des rings. Et pour cause, l'athlète algérienne avait été la cible d'une virulente campagne de cyberharcèlement et d'attaques infondées remettant en cause son genre. La boxeuse s'apprête à remonter sur le ring ce 15 décembre, pour son premier combat professionnel.",
@@ -262,25 +276,11 @@
    "at": "2026-11-24T15:13:37+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Eric Zemmour définitivement condamné pour avoir affirmé que le maréchal Pétain « avait sauvé les juifs français »",
-   "desc": "La Cour de cassation a jugé que ses propos tenus sur CNews en 2019 constituaient une « une minoration outrancière de la Shoah telle qu’elle a été mise en œuvre sur le territoire français ».",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/24/eric-zemmour-definitivement-condamne-pour-avoir-affirme-que-le-marechal-petain-avait-sauve-les-juifs-francais_6814807_3224.html",
-   "at": "2026-11-24T15:11:21+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "La mère de Nahel Merzouk se dit \"soulagée et contente\", alors que la justice confirme en appel le renvoi du policier pour meurtre",
    "desc": "La cour d'appel de Versailles a annoncé mardi le renvoi devant les assises pour meurtre du policier qui a tué Nahel Merzouk en 2023. Sa maman, Mounia, est allée sur la tombe de son fils pour lui annoncer \"la bonne nouvelle\".",
    "url": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/la-mere-de-nahel-merzouk-se-dit-soulagee-et-contente-alors-que-la-justice-confirme-en-appel-le-renvoi-du-policier-pour-meurtre_8297925.html",
    "at": "2026-11-24T15:06:27+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Fuites du ministère de l’intérieur vers le RN : Laurent Nuñez dit avoir proposé un successeur au préfet Hugues Moutouh",
-   "desc": "L’ancien haut fonctionnaire du ministère de l’intérieur est soupçonné d’avoir joué un rôle dans la transmission au Rassemblement national d’informations confidentielles sur les enquêtes visant le parti.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/24/fuites-du-ministere-de-l-interieur-vers-le-rn-laurent-nunez-dit-avoir-propose-un-successeur-au-prefet-hugues-moutouh_6814801_823448.html",
-   "at": "2026-11-24T14:58:34+00:00"
   },
   {
    "source": "France 24",
@@ -295,13 +295,6 @@
    "desc": "Nouvelle péripétie judiciaire pour le candidat à l'élection présidentielle Édouard Philippe : une enquête a été ouverte à la suite d'un signalement à la justice pour détournement de fonds publics à la communauté urbaine du Havre, qu'il dirige. Également placé sous statut de témoin assisté dans une autre procédure menée par le parquet national financier, l'ex-Premier ministre dénonce une \"vendetta judiciaire\".",
    "url": "https://www.france24.com/fr/france/20261124-edouard-philippe-vis%C3%A9-par-une-enqu%C3%AAte-pour-d%C3%A9tournement-de-fonds-publics-au-havre",
    "at": "2026-11-24T14:47:28+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le cargo échoué près d'une plage des Landes depuis quatre jours a repris le large, tiré par un remorqueur",
-   "desc": "La météo était clémente mardi, avec des vagues moins hautes que les jours précédents, ce qui a permis le déséchouement du cargo.",
-   "url": "https://www.franceinfo.fr/france/nouvelle-aquitaine/landes/le-cargo-echoue-pres-d-une-plage-des-landes-depuis-quatre-jours-a-repris-le-large-tire-par-un-remorqueur_8297847.html",
-   "at": "2026-11-24T14:46:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -365,20 +358,6 @@
    "desc": "La puissante Association des maires de France (AMF) se réunit du 24 au 26 novembre à Paris, où les candidats à l'élection présidentielle vont se presser, en particulier ceux en quête des 500 parrainages nécessaires à leur candidature. Mais ce rendez-vous annuel sera surtout marqué par l'élection de son président. Déjà candidat à la présidentielle, David Lisnard espère également renouveler son mandat à la tête de l'AMF.",
    "url": "https://www.france24.com/fr/france/20261124-ouverture-du-congr%C3%A8s-des-maires-sur-fond-de-bataille-pour-l-%C3%A9lys%C3%A9e",
    "at": "2026-11-24T00:06:27+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Terres rares : Emmanuel Macron annonce que la France va se doter de \"stocks stratégiques\"",
-   "desc": "Emmanuel Macron a annoncé un projet pour pourvoir la France de \"stocks stratégiques\" de minerais critiques, a déclaré l'Élysée lundi. Le programme inspiré des réserves stratégiques de pétrole aura pour but de sécuriser l'approvisionnement en terres rares et en \"certains métaux prioritaires\" et de réduire la dépendance vis-à-vis de la Chine.",
-   "url": "https://www.france24.com/fr/france/20261123-terres-rares-macron-annonce-france-doter-stocks-strat%C3%A9giques",
-   "at": "2026-11-23T21:06:36+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Présidentielle 2027 : qui pourra rassembler ?",
-   "desc": "À moins de cinq mois du premier tour de la présidentielle, prévu le 18 avril, la course à l’Élysée s’annonce particulièrement disputée. Dernier en date à entrer dans la course : Dominique de Villepin. Plusieurs candidats de la droite et du centre veulent s’affronter dans une primaire afin de désigner un seul représentant, mais l’idée ne fait pas l’unanimité. David Lisnard, qui est en progression dans les sondages, entend peser dans les discussions et pose ses conditions.",
-   "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261123-pr%C3%A9sidentielle-qui-pourra-rassembler",
-   "at": "2026-11-23T19:58:31+00:00"
   }
  ]
 }

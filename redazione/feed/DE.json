@@ -1,20 +1,41 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T19:17:35+00:00",
+ "asOf": "2026-11-24T21:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Ermittlungen gegen Präsidentensohn: US-Abgeordneter verlangt Informationen zu Geschäften von Trump Jr.",
+   "desc": "Dem Präsidentensohn Donald Trump Jr. wird vorgeworfen, Insiderinformationen für seine Investmentgeschäfte zu nutzen. Ein US-Abgeordneter weitet Untersuchungen dazu aus.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/jamie-raskin-1789-capital-donald-trump-jr-hadrian-automation",
+   "at": "2026-11-24T21:02:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Staatsbesuch: Péter Magyar will engere Beziehung zwischen Ungarn und der Ukraine",
+   "desc": "Unter der Orbán-Regierung waren die ungarisch-ukrainischen Beziehungen angespannt. Der neue ungarische Staatschef kündigt ein »neues Kapitel« in der Zusammenarbeit an.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/peter-magyar-ukraine-wolodymyr-selenskyj-ungarische-minderheit",
+   "at": "2026-11-24T19:56:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Berliner Linksfraktion: Ein Schrecken ohne Emde",
+   "desc": "Durch den Ausschluss von Vanessa Emde zeigt die Berliner Linke ihren Willen zu regieren. Doch die Probleme der Partei mit dem Nahostkonflikt sind damit nicht gelöst.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-die-linke-ausschluss-abstimmung",
+   "at": "2026-11-24T19:54:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rudy Giuliani: Trump verleiht Rudy Giuliani höchste zivile Auszeichnung der USA",
+   "desc": "Mit der höchsten zivilen Auszeichnung der USA hat der US-Präsident seinen Vertrauten Rudy Giuliani geehrt. Es geht um seine Arbeit nach dem 11. September 2001.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/rudy-giuliani-freiheitsmedaille-donald-trump-9-11",
+   "at": "2026-11-24T19:41:39+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Verbraucherschützer haben die smarte Brille im Blick",
    "desc": "Verbraucherschützer gehen juristisch gegen KI-Brillen von Meta und Ray-Ban vor. Der Vorwurf: Mit smarten Brillen lassen sich Fotos und Videos aufnehmen, ohne dass andere Menschen das bemerken. Auch Nutzern könnten Bußgelder drohen. Von Jens Eberl.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/smart-glasses-klage-verbraucherschutz-100.html",
    "at": "2026-11-24T19:06:34+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rudy Giuliani: Trump verleiht Rudy Giuliani höchste zivile Auszeichnung der USA",
-   "desc": "Mit der höchsten zivilen Auszeichnung der USA hat der US-Präsident seinen Vertrauten Rudy Giuliani betraut. Es geht um seine Arbeit nach dem 11. September 2001.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/rudy-giuliani-freiheitsmedaille-donald-trump-9-11",
-   "at": "2026-11-24T19:06:17+00:00"
   },
   {
    "source": "Tagesschau",
@@ -183,27 +204,6 @@
    "desc": "Ein Unbekannter attackierte eine Sitzung der Grünen in Nordrhein-Westfalen. Mehrere Menschen kamen in ein Krankenhaus. Der Staatsschutz hat die Ermittlungen übernommen.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/schwerte-groene-parteibuero-angriff-polizei-krankenhaus-gxe",
    "at": "2026-11-24T12:46:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Angriffe auf russische Schiffe: Das trifft Putin empfindlich",
-   "desc": "Die Ukraine nimmt den Kampf gegen die russische Schattenflotte selbst in die Hand, trifft Schiffe in der Ostsee und vor Libyen. Das ist nicht nur ein Signal an Russland.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/angriffe-russische-schiffe-ukraine-ostsee-libyen",
-   "at": "2026-11-24T12:01:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundeswehr: Gutachter äußern Bedenken zum Einsatz von Kamikazedrohnen",
-   "desc": "Ein Bundestagsgutachten stellt laut einem Bericht Kamikazedrohnen bei der Bundeswehr völkerrechtlich infrage. Menschliche Kontrolle sei im Einsatz nicht immer gegeben.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/kamikazedrohnen-bundeswehr-ki-voelkerrecht-loitering-munition-russland-gxe",
-   "at": "2026-11-24T11:54:51+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Vanessa Emde: Ausschluss von Emde für Brantner Bedingung für Rot-Grün-Rot in Berlin",
-   "desc": "Der Fall Emde werde zeigen, ob die Berliner Linken-Spitze die eigene Fraktion im Griff habe, sagt die Grünenchefin. Falls nicht, solle man nicht mit ihr koalieren.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-ausschluss-berlin-rot-gruen-rot-gxe",
-   "at": "2026-11-24T11:41:33+00:00"
   },
   {
    "source": "Der Spiegel",

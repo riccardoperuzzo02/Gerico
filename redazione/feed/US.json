@@ -1,7 +1,28 @@
 {
  "code": "US",
- "asOf": "2026-11-24T07:17:34+00:00",
+ "asOf": "2026-11-24T09:17:33+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
+   "desc": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
+   "at": "2026-11-24T08:35:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
+   "desc": "Investors piled back into the tech market, following the reinstatement of Nvidia CEO Jensen Huang by its board.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
+   "at": "2026-11-24T08:13:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
+   "desc": "Privacy-focused messaging application Signal has joined United Airlines and JPMorgan Chase in implementing restrictions around artificial intelligence agents.",
+   "url": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+   "at": "2026-11-24T07:25:41+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Six key questions raised by Jensen Huang's return to Nvidia",
@@ -15,13 +36,6 @@
    "desc": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
    "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
    "at": "2026-11-24T06:55:36+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
-   "desc": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
-   "at": "2026-11-24T06:31:56+00:00"
   },
   {
    "source": "CNBC",
@@ -85,13 +99,6 @@
    "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
    "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
    "at": "2026-11-24T02:21:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
-   "desc": "Investors piled back into the tech market, following the reinstatement of Nvidia CEO Jensen Huang by its board.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-   "at": "2026-11-24T02:20:36+00:00"
   },
   {
    "source": "CBS News",
@@ -480,13 +487,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
-   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
-   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
-   "at": "2026-11-23T19:34:38+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "An options strategy for making even more of your money back in Nvidia",
    "desc": "Nvidia shareholders can look to the options market to recoup lost money",
    "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
@@ -585,16 +585,16 @@
   },
   {
    "source": "NPR",
-   "title": "K is for kindness, but families worry the world has less of it",
-   "desc": "A decade after first asking families about kindness, Sesame Workshop asked parents similar questions. They responded that their kids are getting kinder even as the wider world becomes less so.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6035702/kindness-kids-sesame-street-parents-survey",
+   "title": "Mushroom supplements promise health benefits. What does the science say?",
+   "desc": "Wellness influencers say mushroom supplements can help with your gut health, focus and immune system. Here is where research suggests there are some links.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6047791/mushroom-supplements-health-research",
    "at": "2026-11-23T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Mushroom supplements promise health benefits. What does the science say?",
-   "desc": "Wellness influencers say mushroom supplements can help with your gut health, focus and immune system. Here is where research suggests there are some links.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6047791/mushroom-supplements-health-research",
+   "title": "K is for kindness, but families worry the world has less of it",
+   "desc": "A decade after first asking families about kindness, Sesame Workshop asked parents similar questions. They responded that their kids are getting kinder even as the wider world becomes less so.",
+   "url": "https://www.npr.org/2026/11/23/nx-s1-6035702/kindness-kids-sesame-street-parents-survey",
    "at": "2026-11-23T10:00:00+00:00"
   }
  ]

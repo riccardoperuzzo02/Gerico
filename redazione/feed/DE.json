@@ -1,10 +1,59 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T07:17:34+00:00",
+ "asOf": "2026-11-24T09:17:33+00:00",
  "items": [
   {
+   "source": "Der Spiegel",
+   "title": "Deutschland-Umfrage: Was sich Bürger von der Bundesregierung wünschen",
+   "desc": "",
+   "url": "https://www.spiegel.de/politik/deutschland/deutschland-umfrage-was-sich-buerger-von-der-bundesregierung-wuenschen-a-9ab4d601-5fc8-4ddf-8645-3fe413e493b1",
+   "at": "2026-11-24T09:00:00+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Vanessa Emde: Berliner Linke entscheidet über Fraktionsausschluss von Emde",
+   "title": "Nordhein-Westfalen: Unbekannter stürmt Sitzung in Grünen-Büro in Schwerte",
+   "desc": "Ein Unbekannter attackierte eine Sitzung der Grünen in Nordrhein-Westfalen. Mehrere Menschen kamen in ein Krankenhaus. Der Staatsschutz hat die Ermittlungen übernommen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/schwerte-groene-parteibuero-angriff-polizei-krankenhaus-gxe",
+   "at": "2026-11-24T08:43:16+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Landminen: Zahl der Landminenopfer auf höchstem Stand seit 2020",
+   "desc": "Mindestens 6.929 Menschen wurden 2025 durch Landminen und Munitionsreste getötet oder verletzt. Die große Mehrheit der Betroffenen gehörte zur Zivilbevölkerung.",
+   "url": "https://www.zeit.de/politik/2026-11/landminen-tote-verletzte-icbl-gxe",
+   "at": "2026-11-24T08:41:33+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Schwerte bei Dortmund: Maskierter stürmte Grünen-Sitzung – eine Person im Krankenhaus",
+   "desc": "Ein maskierter Mann hat eine Sitzung der Grünen im nordrhein-westfälischen Schwerte angegriffen. Laut Polizei wurden mehrere Menschen leicht verletzt. Die Ermittler prüfen eine politisch motivierte Tat.",
+   "url": "https://www.spiegel.de/politik/deutschland/schwerte-bei-dortmund-unbekannter-stuermt-offenbar-gruenen-sitzung-mehrere-menschen-im-krankenhaus-a-0f296213-39b0-4fdf-a77a-f03707044024",
+   "at": "2026-11-24T08:26:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Feuerwerk: Importierte Böller und Raketen kommen fast ausschließlich aus China",
+   "desc": "Eingeführtes Feuerwerk stammt laut Statistischem Bundesamt zu 98 Prozent aus China. Insgesamt wurden 2025 mehr als 51.000 Tonnen Feuerwerk nach Deutschland importiert.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/feuerwerk-china-import-deutschland-gxe",
+   "at": "2026-11-24T08:10:45+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukrainekarte aktuell: Ukrainische Armee stößt bei Nowopawliwka vor",
+   "desc": "In der Region Dnipropetrowsk sind ukrainische Einheiten nördlich von Datschne vorgerückt. Russische Truppen haben bei Kupjansk in der Region Charkiw Gelände eingenommen.",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
+   "at": "2026-11-24T07:56:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Mariupol: Sie beugt sich dem Druck der Besatzer",
+   "desc": "Eine geflohene Ukrainerin fährt erstmals wieder in ihre Heimat Mariupol – und muss die russische Staatsbürgerschaft annehmen. Sonst würde sie ihre Wohnung verlieren.",
+   "url": "https://www.zeit.de/2026/50/mariupol-russland-besatzung-eigentum-zwang-russischer-pass",
+   "at": "2026-11-24T07:27:58+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Vanessa Emde: Berliner Linke entscheidet über Fraktionsausschluss von Vanessa Emde",
    "desc": "Nach Wochen des Streits stimmt die Linksfraktion heute über den Ausschluss der Abgeordneten Vanessa Emde ab. Sie steht wegen Äußerungen zum Nahostkonflikt in der Kritik.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-berlin-abgeordnete-fraktion-ausschluss-gxe",
    "at": "2026-11-24T06:49:38+00:00"
@@ -12,7 +61,7 @@
   {
    "source": "Tagesschau",
    "title": "Worum es in der Haushaltswoche im Bundestag geht",
-   "desc": "2027 will die Bundesregierung insgesamt 560 Milliarden Euro ausgeben. Doch zuerst muss der Bundestag dem Haushalt zustimmen. Deshalb geht es diese Woche noch einmal ums Ganze. Von Jan-Peter Bartels.",
+   "desc": "2027 will die Bundesregierung in ihrem Haushalt 560 Milliarden Euro ausgeben. Doch dafür muss der Bundestag dem Etat zustimmen. Deshalb geht es in dieser Woche noch einmal ums Ganze. Von Jan-Peter Bartels.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html",
    "at": "2026-11-24T06:47:59+00:00"
   },
@@ -25,7 +74,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "BSW-Bundesparteitag in Dresden: Änderungen an Leitantrag – BSW will Streit über Umgang mit der AfD befrieden",
+   "title": "BSW: Sara Wagenknecht will Streit über Umgang mit der AfD befrieden",
    "desc": "Kuschelkurs oder klare Distanz? Über den Umgang mit der AfD ist im BSW ein heftiger Streit entbrannt. Parteigründerin Sahra Wagenknecht hofft nun auf einen Kompromiss.",
    "url": "https://www.spiegel.de/politik/deutschland/bsw-bundesparteitag-in-dresden-aenderungen-an-leitantrag-bsw-will-streit-ueber-umgang-mit-der-afd-befrieden-a-8f9d7605-f39e-4805-be85-659d368f9b7c",
    "at": "2026-11-24T06:44:00+00:00"
@@ -59,13 +108,6 @@
    "at": "2026-11-24T06:20:48+00:00"
   },
   {
-   "source": "Der Spiegel",
-   "title": "Schwerte bei Dortmund: Unbekannter stürmt offenbar Grünen-Sitzung – mehrere Menschen im Krankenhaus",
-   "desc": "Ein Mann hat offenbar eine Sitzung der Grünen im nordrhein-westfälischen Schwerte angegriffen. Laut Polizei wurden mehrere Menschen in eine Klinik gebracht. Die Ermittler prüfen eine politisch motivierte Tat.",
-   "url": "https://www.spiegel.de/politik/deutschland/schwerte-bei-dortmund-unbekannter-stuermt-offenbar-gruenen-sitzung-mehrere-menschen-im-krankenhaus-a-0f296213-39b0-4fdf-a77a-f03707044024",
-   "at": "2026-11-24T06:05:00+00:00"
-  },
-  {
    "source": "Die Zeit",
    "title": "Inflation: Der Alltag wird teurer. Aber ist das schon Krise?",
    "desc": "Alles wird angeblich teurer, eine Bezahlbarkeitskrise ist es nicht: Wo liegen die Probleme stattdessen? Und: Spitzt sich die Lage in der Ostsee zu?",
@@ -81,9 +123,9 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "News: Berliner Linksfraktion will Vanessa Emde ausschließen, Irritation über Markus Söders Vorstoß zur kalten Progression, Femizid soll ins Strafgesetzbuch",
+   "title": "News: Linke, Vanessa Emde, CSU, Markus Söder, Femizid soll ins Strafgesetzbuch",
    "desc": "In Berlin soll Vanessa Emde aus der Linksfraktion fliegen – diesmal wirklich. In der Union fragt man sich mal wieder, was Markus Söder im Schilde führt. Und im Strafgesetzbuch soll der Femizid als Mord festgeschrieben werden. Das ist die Lage am Dienstagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-berliner-linksfraktion-will-vanessa-emde-ausschliessen-irritation-ueber-markus-soeders-vorstoss-zur-kalten-progression-femizid-soll-ins-strafgesetzbuch-a-95f73901-9196-4dde-a781-c80010d12098",
+   "url": "https://www.spiegel.de/politik/deutschland/news-linke-vanessa-emde-csu-markus-soeder-femizid-soll-ins-strafgesetzbuch-a-95f73901-9196-4dde-a781-c80010d12098",
    "at": "2026-11-24T04:31:00+00:00"
   },
   {
@@ -122,41 +164,6 @@
    "at": "2026-11-23T23:15:07+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Brexit-Debatte: Andy Burnham verteidigt Annäherung an die EU im britischen Parlament",
-   "desc": "Der britische Premier setzt sich für eine engere Zusammenarbeit zwischen EU und Großbritannien ein. Eine Abkehr vom Brexit könnte die Wirtschaft ankurbeln, sagt er.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/andy-burnham-grossbritannien-eu-abkommen-brexit",
-   "at": "2026-11-23T21:14:11+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Parastoo Ahmadi: Bekannte iranische Sängerin nach Konzert mit 74 Hieben ausgepeitscht",
-   "desc": "Weil sie bei einem Konzert gegen die Bekleidungsregeln im Iran verstieß, wurde Parastoo Ahmadi mit Dutzenden Hieben ausgepeitscht. Menschenrechtler äußern sich entsetzt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/parastoo-ahmadi-iran-auspeitschung-musik-youtube-kopftuch",
-   "at": "2026-11-23T20:04:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Parastoo Ahmadi: Bekannte iranische Sängerin nach Konzert mit 74 Hieben ausgepeitscht",
-   "desc": "Weil sie bei einem Konzert gegen die Bekleidungsregeln im Iran verstieß, wurde Parastoo Ahmadi mit Dutzenden Hieben ausgepeitscht. Menschenrechtler äußern sich entsetzt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/parastoo-ahmadi-iran-auspeitschung-musik-youtube-kopftuch",
-   "at": "2026-11-23T20:04:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Drohnenangriff auf die »Sparta II«: Boris Pistorius warnt vor Ausweitung des Ukrainekriegs auf die Ostsee",
-   "desc": "Der Verteidigungsminister zeigt sich besorgt über die Angriffe auf ein russisches Schiff vor der Küste Finnlands. Auch die Ukraine habe eine Verantwortung.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/drohnenangriff-finnischer-meerbusen-russischer-frachter-ostsee-ukraine",
-   "at": "2026-11-23T19:20:22+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rentenreform: Thorsten Frei pocht auf höhere Abschläge bei Frühverrentungen",
-   "desc": "Unionsfraktionschef Thorsten Frei will die Reform des Rentensystems wie geplant umsetzen. CSU-Chef Söder hatte Ausnahmen bei höheren Abschlägen in Betracht gezogen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-thorsten-frei-markus-soeder-abschlaege-rente",
-   "at": "2026-11-23T18:11:25+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Nachfolge von Hubert Aiwanger: Freie Wähler stellen sich breiter auf",
    "desc": "Hubert Aiwanger war die zentrale Führungsfigur der Freien Wähler: Landes- und Bundeschef, bayerischer Wirtschaftsminister und Vize-Ministerpräsident. Nach seinem Tod verteilt die Partei die Posten auf mehrere Schultern. Von P. Jerabek und R. Kirschner.",
@@ -172,14 +179,14 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Nato-Treffen in Berlin: Friedrich Merz und Mark Rutte bekräftigen Sicherheitsgarantien für die Ukraine",
+   "title": "Ukraine: Friedrich Merz und Mark Rutte bekräftigen Sicherheitsgarantien",
    "desc": "Der Bundeskanzler und der Nato-Generalsekretär fordern Sicherheitsgarantien für die Ukraine. Diese würden einem Bündnisbeitritt sehr nahekommen, gelobt Merz. Er äußerte sich auch zu den in Polen abgestürzten Marschflugkörpern.",
    "url": "https://www.spiegel.de/politik/deutschland/nato-treffen-in-berlin-friedrich-merz-und-mark-rutte-bekraeftigen-sicherheitsgarantien-fuer-die-ukraine-a-8466115a-c858-4447-907a-07adb51289ee",
    "at": "2026-11-23T16:21:00+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "AfD: Bundesvorstand will Bochumer Bundestagsabgeordneten loswerden",
+   "title": "Bochum: AfD-Spitze will Bundestagsabgeordneten aus der Partei werfen",
    "desc": "Der Machtkampf der AfD in Nordrhein-Westfalen eskaliert weiter. Nun soll der Bundestagsabgeordnete Knuth Meyer-Soltau die Partei verlassen. Die Personalie hängt zusammen mit der Aufstellung für die NRW-Landtagswahl 2027.",
    "url": "https://www.spiegel.de/politik/deutschland/afd-bundesvorstand-will-bochumer-bundestagsabgeordneten-loswerden-a-1fad12cb-c4ca-4645-bc34-6be932e49cee",
    "at": "2026-11-23T16:09:00+00:00"
@@ -232,13 +239,6 @@
    "desc": "Die SPD ringt um einen neuen Vorsitz. Nun schaltet sich Sigmar Gabriel in die Debatte ein. Der ehemalige SPD-Vorsitzende bemängelt die niedrige innerparteiliche Solidarität und mahnt: Neue Gesichter allein reichen nicht.",
    "url": "https://www.spiegel.de/politik/deutschland/spd-sigmar-gabriel-kritisiert-fuehrungsvakuum-in-der-partei-a-e31c435a-b50b-4f5f-8098-67041beca7b1",
    "at": "2026-11-23T09:45:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "NATO-Parlamentarier tagen zu Sicherheitspolitik in Berlin",
-   "desc": "Die Parlamentarische Versammlung der NATO versteht sich als eine Art transatlantisches Parlament. Heute tagen die Delegierten in Berlin - mit prominenten Gästen und weitreichenden Forderungen. Von Oliver Neuroth.",
-   "url": "https://www.tagesschau.de/inland/nato-versammlung-berlin-100.html",
-   "at": "2026-11-23T09:14:40+00:00"
   }
  ]
 }

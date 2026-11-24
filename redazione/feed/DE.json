@@ -1,39 +1,81 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T17:17:40+00:00",
+ "asOf": "2026-11-24T19:17:35+00:00",
  "items": [
   {
+   "source": "Tagesschau",
+   "title": "Verbraucherschützer haben die smarte Brille im Blick",
+   "desc": "Verbraucherschützer gehen juristisch gegen KI-Brillen von Meta und Ray-Ban vor. Der Vorwurf: Mit smarten Brillen lassen sich Fotos und Videos aufnehmen, ohne dass andere Menschen das bemerken. Auch Nutzern könnten Bußgelder drohen. Von Jens Eberl.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/smart-glasses-klage-verbraucherschutz-100.html",
+   "at": "2026-11-24T19:06:34+00:00"
+  },
+  {
    "source": "Die Zeit",
-   "title": "Berliner Linksfraktion: Berliner Linke schließt Vanessa Emde aus der Fraktion aus",
-   "desc": "Nach viel Kritik an ihrer Position zum Nahost-Konflikt und mangelnder Kompromissbereitschaft schließt die Berliner Linksfraktion Vanessa Emde aus. Sie bleibt Abgeordnete.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/berliner-linke-schliesst-vanessa-emde-aus-der-fraktion-aus",
-   "at": "2026-11-24T17:08:01+00:00"
+   "title": "Rudy Giuliani: Trump verleiht Rudy Giuliani höchste zivile Auszeichnung der USA",
+   "desc": "Mit der höchsten zivilen Auszeichnung der USA hat der US-Präsident seinen Vertrauten Rudy Giuliani betraut. Es geht um seine Arbeit nach dem 11. September 2001.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/rudy-giuliani-freiheitsmedaille-donald-trump-9-11",
+   "at": "2026-11-24T19:06:17+00:00"
   },
   {
    "source": "Tagesschau",
    "title": "Berliner Linke schließt Emde aus Fraktion aus",
    "desc": "Wochenlang diskutierten Grüne, SPD und Linke in Berlin über die Personalie Emde. Die Abgeordnete steht wegen ihrer Positionen zu Israel in der Kritik. Nun hat die Fraktion mit der nötigen Mehrheit für ihren Ausschluss gestimmt.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/emde-ausschluss-berlin-linke-100.html",
-   "at": "2026-11-24T17:07:13+00:00"
+   "at": "2026-11-24T18:47:32+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EU-Kommission: EU fordert von Deutschland Nachbesserungen beim Bundeshaushalt",
+   "desc": "Die EU-Kommission fürchtet, dass Deutschland 2027 durch neue Schulden die Vorgaben für die Nettoausgaben verfehlt. Die Bundesregierung soll deshalb den Haushalt anpassen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-kommission-deutschland-nettoausgaben-bundeshaushalt-2027",
+   "at": "2026-11-24T18:39:49+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Polizei vermutet Destabilisierung als Ziel der Drohmails gegen Schulen",
+   "desc": "Die per Mail verschickten Bombendrohungen haben am Montag deutlich mehr Schulen erreicht als zunächst angenommen. Die Polizei vermutet eine gezielte Aktion zur Verunsicherung.",
+   "url": "https://www.tagesschau.de/inland/drohmails-schulen-gdp-destabilisierung-100.html",
+   "at": "2026-11-24T18:39:01+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Ukraine benötigt 2027 Finanzhilfen in Höhe von 115 Milliarden Euro",
+   "desc": "Der Ukraine fehlen 2027 trotz Zusagen der EU rund 25 Milliarden Euro im Haushalt. Polen wirft Russland vorsätzliche Verletzung seines Luftraums vor. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-24T18:28:43+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Édouard Philippe: Weitere Ermittlungen gegen französischen Kandidaten Édouard Philippe",
+   "desc": "Er will Frankreichs Präsident werden, gegen Édouard Philippe wird jedoch bereits wegen Veruntreuung öffentlicher Gelder ermittelt. Weitere Vorwürfe werden untersucht.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/edouard-philippe-le-havre-veruntreuung-ermittlungen-cornelia-findeisen",
+   "at": "2026-11-24T18:24:23+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Alexander Sokurow: Wladimir Putin schließt bekannten Regisseur aus Menschenrechtsrat aus",
    "desc": "Alexander Sokurow kritisierte 2025 Diskriminierung Andersdenkender in Russland sowie Zensur von Filmen. Wladimir Putin schloss ihn daher aus dem Menschenrechtsrat aus.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/alexander-sokurow-wladimir-putin-menschenrechtsrat-russland-zensur",
-   "at": "2026-11-24T17:02:54+00:00"
+   "at": "2026-11-24T18:01:28+00:00"
   },
   {
    "source": "Die Zeit",
-   "title": "Forsa-Umfrage: Unzufriedenheit mit Friedrich Merz nimmt laut Trendbarometer weiter zu",
-   "desc": "Der Bundeskanzler schafft es dem »Trendbarometer« von RTL und ntv zufolge nicht aus seinem Umfragetief. In der sogenannten Sonntagsfrage liegt die AfD klar vor der CDU.",
+   "title": "Berliner Linksfraktion: Berliner Linke schließt Vanessa Emde aus der Fraktion aus",
+   "desc": "Nach viel Kritik an ihrer Position zum Nahostkonflikt und mangelnder Kompromissbereitschaft schließt die Berliner Linksfraktion Vanessa Emde aus. Sie bleibt Abgeordnete.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/berliner-linke-schliesst-vanessa-emde-aus-der-fraktion-aus",
+   "at": "2026-11-24T17:44:48+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Forsa-Umfrage: Unzufriedenheit mit dem Kanzler nimmt laut »Trendbarometer« weiter zu",
+   "desc": "Friedrich Merz schafft es dem »Trendbarometer« von RTL und n-tv zufolge nicht aus seinem Umfragetief. In der sogenannten Sonntagsfrage liegt die AfD klar vor der CDU.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/forsa-umfrage-friedrich-merz-kanzler-unzufriedenheit-parteipraeferenzen",
    "at": "2026-11-24T16:44:52+00:00"
   },
   {
    "source": "Der Spiegel",
    "title": "Vanessa Emde: Berliner Linke schließt umstrittene Politikerin aus Fraktion aus",
-   "desc": "Wochenlange Debatten über die Israelgegnerin Vanessa Emde belasteten die Regierungsbildung in Berlin. Nun hat die Linke-Fraktion in geheimer Abstimmung beschlossen: Die umstrittene Linkenabgeordnete muss gehen.",
+   "desc": "Wochenlange Debatten über die Israelgegnerin Vanessa Emde haben die Regierungsbildung in Berlin belastet. Nun hat die Linkenfraktion sie in geheimer Abstimmung ausgeschlossen. Emde spricht von einer »medialen Hetzkampagne«.",
    "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-berliner-linke-schliesst-umstrittene-politikerin-aus-fraktion-aus-a-d376bd08-93e1-46d3-86ec-a3f81025d59f",
    "at": "2026-11-24T16:38:00+00:00"
   },
@@ -99,13 +141,6 @@
    "desc": "Immer mehr Kriege, immer mehr Waffen. Aufrüstung ist ein Milliardengeschäft. Firmen, die sich in der Provinz ansiedeln wollen, treffen dort allerdings oft auf entschlossenen Widerstand. Aber wer protesiert da eigentlich?",
    "url": "https://www.spiegel.de/politik/deutschland/protest-gegen-aufruestung-der-schwierige-kampf-der-kriegsgegner-a-fa580f9b-43db-465a-8817-79de0219b0ae",
    "at": "2026-11-24T15:07:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Ukraine benötigt 2027 Finanzhilfen in Höhe von 115 Milliarden Euro",
-   "desc": "Der Ukraine fehlen 2027 trotz Zusagen der EU rund 25 Milliarden Euro im Haushalt. Polen wirft Russland vorsätzliche Verletzung seines Luftraums vor. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-24T15:03:49+00:00"
   },
   {
    "source": "Die Zeit",
@@ -178,13 +213,6 @@
    "at": "2026-11-24T11:15:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Jensen Huang: Johann Wadephul kritisiert Donald Trumps Einmischung bei Nvidia",
-   "desc": "Auf Drängen von Donald Trump kehrt Jensen Huang an die Spitze des Chipkonzerns Nvidia zurück. Außenminister Johann Wadephul zeigt sich darüber entsetzt.",
-   "url": "https://www.zeit.de/politik/2026-11/donald-trump-nvidia-johann-wadephul-cdu-usa-gxe",
-   "at": "2026-11-24T10:49:12+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Papst Leo XIV.: Sachsens Staatskanzlei ließ Christstollen per Dienstwagen in Vatikan chauffieren",
    "desc": "Im September reiste Sachsens Ministerpräsident Michael Kretschmer zu einer Privataudienz bei Papst Leo XIV. Einen Stollen, Porzellan und andere Präsente ließ die Staatskanzlei im 7er-BMW über die Alpen schaffen.",
@@ -206,25 +234,11 @@
    "at": "2026-11-24T09:00:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Landminen: Zahl der Landminenopfer auf höchstem Stand seit 2020",
-   "desc": "Mindestens 6.929 Menschen wurden 2025 durch Landminen und Munitionsreste getötet oder verletzt. Die große Mehrheit der Betroffenen gehörte zur Zivilbevölkerung.",
-   "url": "https://www.zeit.de/politik/2026-11/landminen-tote-verletzte-icbl-gxe",
-   "at": "2026-11-24T08:41:33+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Schwerte: Maskierter stürmte Grünen-Sitzung in NRW – eine Person im Krankenhaus",
    "desc": "Ein maskierter Mann hat eine Sitzung der Grünen im nordrhein-westfälischen Schwerte angegriffen. Laut Polizei wurden mehrere Menschen leicht verletzt. Die Ermittler prüfen eine politisch motivierte Tat.",
    "url": "https://www.spiegel.de/politik/deutschland/schwerte-bei-dortmund-unbekannter-stuermt-offenbar-gruenen-sitzung-mehrere-menschen-im-krankenhaus-a-0f296213-39b0-4fdf-a77a-f03707044024",
    "at": "2026-11-24T08:26:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Feuerwerk: Importierte Böller und Raketen kommen fast ausschließlich aus China",
-   "desc": "Eingeführtes Feuerwerk stammt laut Statistischem Bundesamt zu 98 Prozent aus China. Insgesamt wurden 2025 mehr als 51.000 Tonnen Feuerwerk nach Deutschland importiert.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/feuerwerk-china-import-deutschland-gxe",
-   "at": "2026-11-24T08:10:45+00:00"
   },
   {
    "source": "Tagesschau",
@@ -267,13 +281,6 @@
    "desc": "In Berlin soll Vanessa Emde aus der Linksfraktion fliegen – diesmal wirklich. In der Union fragt man sich mal wieder, was Markus Söder im Schilde führt. Und im Strafgesetzbuch soll der Femizid als Mord festgeschrieben werden. Das ist die Lage am Dienstagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-linke-vanessa-emde-csu-markus-soeder-femizid-soll-ins-strafgesetzbuch-a-95f73901-9196-4dde-a781-c80010d12098",
    "at": "2026-11-24T04:31:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Nachfolge von Hubert Aiwanger: Freie Wähler stellen sich breiter auf",
-   "desc": "Hubert Aiwanger war die zentrale Führungsfigur der Freien Wähler: Landes- und Bundeschef, bayerischer Wirtschaftsminister und Vize-Ministerpräsident. Nach seinem Tod verteilt die Partei die Posten auf mehrere Schultern. Von P. Jerabek und R. Kirschner.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-nachfolge-freie-waehler-100.html",
-   "at": "2026-11-23T17:47:10+00:00"
   }
  ]
 }

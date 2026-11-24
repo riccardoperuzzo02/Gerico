@@ -1,41 +1,153 @@
 {
  "code": "US",
- "asOf": "2026-11-24T17:17:40+00:00",
+ "asOf": "2026-11-24T19:17:35+00:00",
  "items": [
   {
-   "source": "CBS News",
-   "title": "Army to detonate unstable explosives in Iowa Wednesday morning",
-   "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
-   "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
-   "at": "2026-11-24T17:10:31+00:00"
+   "source": "CNBC",
+   "title": "AG Blanche, FBI’s Patel dodge questions about Jensen Huang investigation",
+   "desc": "The AG and FBI director evaded answering reporters' questions about details of an investigation Trump said resolved security concerns about Jensen Huang.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
+   "at": "2026-11-24T19:14:04+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Broderick Wins Tennessee House Race, Giving Democrats Largest Majority in 30 Years",
+   "desc": "Democrats’ midterm rout kept expanding in the House after a tech support worker ousted an eight-term Republican without having aired a single TV ad.",
+   "url": "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
+   "at": "2026-11-24T19:10:07+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Anthropic sinks 12%, falling below $83 IPO price, but analysts are still largely positive",
-   "desc": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
-   "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
-   "at": "2026-11-24T16:48:49+00:00"
+   "title": "Trump wanted Jensen Huang back. Now, he's all alone in Washington",
+   "desc": "Republicans worry Nvidia CEO Jensen Huang's affairs with a suspected Chinese spy jeopardized U.S. national security.",
+   "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
+   "at": "2026-11-24T19:04:13+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
+   "title": "Trump presents Rudy Giuliani with Presidential Medal of Freedom",
    "desc": "Rudy Giuliani, the former mayor of New York City who worked as a personal lawyer to President Trump, said he will be honored in the Oval Office.",
    "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/",
-   "at": "2026-11-24T16:44:57+00:00"
+   "at": "2026-11-24T18:55:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
+   "desc": "The product, the first one beyond event contracts, was introduced in May.",
+   "url": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+   "at": "2026-11-24T18:34:55+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+   "desc": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
+   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+   "at": "2026-11-24T18:34:43+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Unstoppable Crowds Are Meeting Up to Push Immovable Objects",
+   "desc": "In Chicago, St. Louis, New York and Washington dreamers and pranksters have gotten together recently aiming to shift massive landmarks.",
+   "url": "https://www.nytimes.com/2026/11/24/us/washington-monument-chicago-bean-pushing.html",
+   "at": "2026-11-24T18:32:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia shares fall 7% as Huang comeback rally cools",
+   "desc": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+   "at": "2026-11-24T18:30:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Op-ed: Trump’s Nvidia board intervention put a price on national security. Our adversaries will take note",
+   "desc": "President Trump's decision to force Nvidia's board to bring back Jensen Huang as CEO is exactly what Beijing, Tehran, and Moscow would want to see.",
+   "url": "https://www.cnbc.com/2026/11/24/trump-nvidia-jensen-huang-national-security-china-chips.html",
+   "at": "2026-11-24T18:30:06+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Trump Ballroom and Other Projects Got $300 Million Donation Boost",
+   "desc": "The Trump administration declined to say who donated those funds to an account funding presidential projects like the White House ballroom and the triumphal arch.",
+   "url": "https://www.nytimes.com/2026/11/24/us/politics/account-park-service-trump-ballroom-donation.html",
+   "at": "2026-11-24T18:28:48+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
+   "desc": "Co-founders of the prediction market platform were slated to appear in a state district court in December.",
+   "url": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
+   "at": "2026-11-24T18:28:33+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Retail turnarounds are taking hold just in time for the holiday season",
+   "desc": "Retail earnings reports on Tuesday pointed to a mix of factors behind the strong results, including a resilient consumer and stronger execution.",
+   "url": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html",
+   "at": "2026-11-24T18:21:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
+   "desc": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html",
+   "at": "2026-11-24T18:21:19+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "As Anthropic falls below its IPO price, here's how big-money traders are reacting",
+   "desc": "Anthropic shares fell below the $83 IPO price as options activity surged, with large put buys, call buys and put sales pointing to a divided market.",
+   "url": "https://www.cnbc.com/2026/11/24/anthropic-options-trading-ipo-price.html",
+   "at": "2026-11-24T18:17:12+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Why Chicago’s Tax Incentive Program Fell Short in Low-Income Neighborhoods",
+   "desc": "An examination by The Times shows how a tax incentive program that transformed downtown has left some poorer neighborhoods overlooked and neglected.",
+   "url": "https://www.nytimes.com/2026/11/24/us/chicago-tax-incentives-low-income-neighborhoods.html",
+   "at": "2026-11-24T18:09:47+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
+   "desc": "Trump Account contributions from friends and family have passed $1 billion, according to the Treasury Department. Here's what families need to know.",
+   "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
+   "at": "2026-11-24T17:59:12+00:00"
   },
   {
    "source": "CNBC",
    "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
    "desc": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
    "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-   "at": "2026-11-24T16:42:57+00:00"
+   "at": "2026-11-24T17:51:45+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Nvidia shares fall 8% as Huang comeback rally cools",
-   "desc": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
-   "at": "2026-11-24T16:38:21+00:00"
+   "title": "Anthropic sinks 8%, falling below $83 IPO price, but analysts are still largely positive",
+   "desc": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
+   "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+   "at": "2026-11-24T17:30:26+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "MAGA Attacked Harvard. So Harvard Taught a Class About It.",
+   "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
+   "url": "https://www.nytimes.com/2026/11/24/us/harvard-maga-class.html",
+   "at": "2026-11-24T17:28:24+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "We're adding to our position in a tech giant that is too cheap to ignore",
+   "desc": "Our discipline requires us to put some money to work in these oversold conditions.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/24/were-adding-to-our-position-in-a-tech-giant-that-is-too-cheap-to-ignore-.html",
+   "at": "2026-11-24T17:19:52+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army to detonate unstable explosives in Iowa Wednesday morning",
+   "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
+   "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
+   "at": "2026-11-24T17:10:31+00:00"
   },
   {
    "source": "CBS News",
@@ -50,13 +162,6 @@
    "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
    "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
    "at": "2026-11-24T16:29:17+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-   "desc": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
-   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-   "at": "2026-11-24T16:06:07+00:00"
   },
   {
    "source": "New York Times",
@@ -101,13 +206,6 @@
    "at": "2026-11-24T15:25:37+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
-   "desc": "Kress led the company for 11 days during Huang’s sudden departure and steered Nvidia through billions in AI financing deals before that. Now she's back to CFO.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
-   "at": "2026-11-24T15:19:46+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "How working caregivers can take care of themselves",
    "desc": "Candace Dellacona, an estates and trust lawyer who hosts the podcast \"The Sandwich Generation Survival Guide,\" joins \"CBS Mornings\" to discuss how working caregivers can take care of themselves.",
@@ -127,20 +225,6 @@
    "desc": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
    "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
    "at": "2026-11-24T15:05:14+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "How a Scientist Behind the Mediterranean Diet Got Caught in Trump’s War on Harvard",
-   "desc": "Walter Willett studies the link between diet and health, a high priority for Health Secretary Robert F. Kennedy Jr. His grants were frozen anyway.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/walter-willett-trump-harvard.html",
-   "at": "2026-11-24T15:04:11+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia brought Jensen Huang back. But the investigations aren’t over",
-   "desc": "Jensen Huang is back as Nvidia CEO, but the company still faces an internal investigation and California and federal scrutiny.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ceo-return.html",
-   "at": "2026-11-24T15:03:36+00:00"
   },
   {
    "source": "CNBC",
@@ -165,7 +249,7 @@
   },
   {
    "source": "NPR",
-   "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
+   "title": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
    "desc": "Albania's Prime Minister Edi Rama has vowed that Kushner's resort project will go ahead as planned. But an ongoing investigation by Albania's state prosecutor into forged land titles could halt the project.",
    "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
    "at": "2026-11-24T14:24:04+00:00"
@@ -192,18 +276,11 @@
    "at": "2026-11-24T14:11:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-   "desc": "Nvidia is giving back some of Monday's surge and Anthropic is below its IPO price of $83.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/24/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html",
-   "at": "2026-11-24T13:53:37+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Some Haitian Families Fleeing the U.S. for Canada Are Being Separated at the Border",
    "desc": "Driven to Canada by deportation fears, some members of Haitian families are being denied entry, turned back and detained by U.S. authorities.",
    "url": "https://www.nytimes.com/2026/11/24/us/haitians-deportations-canada-immigration.html",
-   "at": "2026-11-24T13:50:17+00:00"
+   "at": "2026-11-24T13:50:18+00:00"
   },
   {
    "source": "CNBC",
@@ -256,6 +333,13 @@
   },
   {
    "source": "CNBC",
+   "title": "Does the Nvidia-led rip mark the market bottom? Maybe not",
+   "desc": "The standard market playbook is to assume that we’ve put in “a low, not the final low.”",
+   "url": "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
+   "at": "2026-11-24T12:10:59+00:00"
+  },
+  {
+   "source": "CNBC",
    "title": "Some U.S. food banks see demand top pandemic levels",
    "desc": "A combination of high costs and restrictions to federal aid have led to soaring demand at many food banks in the U.S.",
    "url": "https://www.cnbc.com/2026/11/24/us-food-banks-demand-snap.html",
@@ -274,34 +358,6 @@
    "desc": "Some California homeowners have spent thousands making their homes safer from wildfires. Yet all that work has barely made a dent in their insurance bills. Should they be getting a bigger break?",
    "url": "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country",
    "at": "2026-11-24T11:30:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Why France is at risk of recession — and what could keep it out of one",
-   "desc": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
-   "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-   "at": "2026-11-24T11:15:30+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
-   "desc": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
-   "at": "2026-11-24T10:56:56+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "MAGA Attacked Harvard. So Harvard Taught a Class About It.",
-   "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
-   "url": "https://www.nytimes.com/2026/11/24/us/harvard-maga-class.html",
-   "at": "2026-11-24T10:00:53+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Why Chicago’s Tax Incentive Program Fell Short in Low-Income Neighborhoods",
-   "desc": "An examination by The Times shows how a tax incentive program that transformed downtown has left some poorer neighborhoods overlooked and neglected.",
-   "url": "https://www.nytimes.com/2026/11/24/us/chicago-tax-incentives-low-income-neighborhoods.html",
-   "at": "2026-11-24T10:00:33+00:00"
   },
   {
    "source": "NPR",
@@ -333,9 +389,9 @@
   },
   {
    "source": "NPR",
-   "title": "Meet Colombia's fuzzy 'water guardians'",
-   "desc": "High in the Colombian Andes, a growing number of volunteers are racing to save an unusual plant that helps supply water to millions — one tiny seedling at a time.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+   "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
+   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
@@ -347,9 +403,9 @@
   },
   {
    "source": "NPR",
-   "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
-   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+   "title": "Meet Colombia's fuzzy 'water guardians'",
+   "desc": "High in the Colombian Andes, a growing number of volunteers are racing to save an unusual plant that helps supply water to millions — one tiny seedling at a time.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
@@ -372,13 +428,6 @@
    "desc": "Researchers found that more than 2.2 million women were using a fertility-awareness method, which requires them to chart their cycles closely.",
    "url": "https://www.nytimes.com/2026/11/23/us/natural-family-planning-study.html",
    "at": "2026-11-24T03:06:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
-   "desc": "Nvidia's Jensen Huang admitted to an affair in a note to employees on Nov. 8 and resigned as CEO on Nov. 12.",
-   "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
-   "at": "2026-11-24T02:20:44+00:00"
   },
   {
    "source": "CBS News",
@@ -458,13 +507,6 @@
    "at": "2026-11-24T01:12:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Amazon faces FAA probe after delivery drone strikes Michigan fiber cable, garage",
-   "desc": "An Amazon drone \"struck a fiber cable, a residential garage, and became entangled in power lines during takeoff,\" a preliminary FAA report stated.",
-   "url": "https://www.cnbc.com/2026/11/23/amazon-drone-crash-michigan-faa-investigation.html",
-   "at": "2026-11-24T00:56:10+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Trump’s Extraordinary Nvidia Intervention Sidelines National Security Concerns",
    "desc": "President Trump’s move to put Jensen Huang back at the helm of Nvidia caps his indifference to the warnings of his own intelligence agencies.",
@@ -507,13 +549,6 @@
    "at": "2026-11-23T23:30:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nvidia sets options-trading record after CEO comeback. Here are the big trades",
-   "desc": "Nvidia break record for single stock options volume",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
-   "at": "2026-11-23T23:24:02+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide",
    "desc": "Representative Jimmy Gomez of California disputed the allegations from the Ethics Committee but said they left him with “no other alternative than to resign, effective Dec. 1.”",
@@ -526,13 +561,6 @@
    "desc": "Nine people were injured in the crash, which occurred in Columbus when one of the buses veered into the next lane, the police said.",
    "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html",
    "at": "2026-11-23T22:13:03+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
-   "desc": "In addition to ESPN channels, Super Bowl 61 will also be available on streaming platform Disney+ as well as the company's broadcast network ABC.",
-   "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-   "at": "2026-11-23T21:55:27+00:00"
   },
   {
    "source": "New York Times",
@@ -568,27 +596,6 @@
    "desc": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans such as 401(k)s.",
    "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
    "at": "2026-11-23T19:46:28+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
-   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
-   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
-   "at": "2026-11-23T19:34:38+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Rain Storms Overwhelm San Francisco’s Sewers, Sending Wastewater Into the Streets",
-   "desc": "A downpour once again sent wastewater into San Francisco streets. It could become a frequent occurrence in this El Niño year.",
-   "url": "https://www.nytimes.com/2026/11/23/us/san-francisco-flooding-water-sewer-rain.html",
-   "at": "2026-11-23T18:25:16+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Draws Bipartisan Criticism for Pushing to Reinstate Jensen Huang as Nvidia CEO",
-   "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
-   "at": "2026-11-23T18:08:18+00:00"
   }
  ]
 }

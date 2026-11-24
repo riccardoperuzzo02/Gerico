@@ -1,13 +1,125 @@
 {
  "code": "FR",
- "asOf": "2026-11-24T11:17:34+00:00",
+ "asOf": "2026-11-24T13:17:33+00:00",
  "items": [
   {
    "source": "franceinfo",
+   "title": "\"Il y a un déficit important de radiologues\" : le Royaume-Uni lance une expérimentation de dépistage du cancer du sein à grande échelle assistée par l'IA",
+   "desc": "Près de 700 000 femmes devraient participer à un dépistage de cancers du sein grâce à l'intelligence artificielle. Le NHS, l’hôpital public britannique, espère améliorer ainsi les diagnostics alors qu’il fait face à une pénurie de radiologues.",
+   "url": "https://www.franceinfo.fr/sante/cancer/il-y-a-un-deficit-important-de-radiologues-le-royaume-uni-lance-une-experimentation-de-depistage-du-cancer-du-sein-a-grande-echelle-assistee-par-l-ia_8297310.html",
+   "at": "2026-11-24T13:07:33+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "La grande mosquée de Paris a-t-elle sauvé \"1 500 enfants juifs\" sous l'Occupation ?",
+   "desc": "Le 18 novembre, l'ancienne ministre Yamina Benguigui a déclaré que \"plus de 1 500 enfants juifs\" avaient été sauvés par la grande mosquée de Paris pendant la Seconde Guerre mondiale. Si plusieurs témoignages et documents confirment le rôle de l'institution religieuse dans le sauvetage de plusieurs juifs en France, ce chiffre non étayé n'est reconnu par aucun historien.",
+   "url": "https://www.france24.com/fr/france/20261124-grande-mosqu%C3%A9e-paris-sauvetage-1-500-enfants-juifs-sous-occupation-seconde-guerre-mondiale",
+   "at": "2026-11-24T13:05:57+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une enquête ouverte après un signalement pour détournement de fonds publics à l'agglomération du Havre présidée par Edouard Philippe",
+   "desc": "\"Une plainte a été adressée à mes services via le Parquet national financier initialement saisi, j'ai transmis en enquête au commissariat du Havre\", a expliqué la procureure du Havre.",
+   "url": "https://www.franceinfo.fr/politique/edouard-philippe/une-enquete-ouverte-apres-un-signalement-pour-detournement-de-fonds-publics-a-l-agglomeration-du-havre-presidee-par-edouard-philippe_8297676.html",
+   "at": "2026-11-24T13:03:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Nicolas Sarkozy et Carla Bruni renvoyés en procès dans l'affaire de la fausse rétractation de Ziad Takieddine, notamment pour association de malfaiteurs",
+   "desc": "L'ancien président et son épouse sont renvoyés pour association de malfaiteurs en vue de préparer une escroquerie en bande organisée ainsi que recel de subornation de témoin.",
+   "url": "https://www.franceinfo.fr/societe/justice/nicolas-sarkozy-et-carla-bruni-sont-renvoyes-en-proces-dans-l-affaire-de-la-fausse-retractation-de-ziad-takieddine-notamment-pour-association-de-malfaiteurs_8297655.html",
+   "at": "2026-11-24T12:49:57+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Thomas Pesquet raconte l'espace aux enfants",
+   "desc": "L'astronaute français de l'Agence spatiale européenne, auteur de \"L'espace en 100 questions\", Thomas Pesquet, se prépare à une troisième mission dans l'espace en 2027, une mission \"sprint\" comme il l'appelle, baptisée Vast PAM-1.",
+   "url": "https://www.france24.com/fr/vid%C3%A9o/20261124-thomas-pesquet-raconte-l-espace-aux-enfants",
+   "at": "2026-11-24T12:25:46+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Pesticides : le Parlement européen reporte à 2027 le vote sur une loi visant à assouplir leur réglementation",
+   "desc": "Les eurodéputés devaient voter en décembre sur ce paquet législatif baptisé Omnibus X, qui prévoit notamment des autorisations illimitées pour une partie des pesticides, en raison d’un embouteillage dans l’approbation des produits utilisés.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/24/pesticides-le-parlement-europeen-reporte-a-2027-le-vote-sur-une-loi-visant-a-assouplir-leur-reglementation_6814759_3244.html",
+   "at": "2026-11-24T12:22:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Les ménages ont été amenés à puiser dans leur épargne\" : on vous explique pourquoi le livret A est laissé pour compte",
+   "desc": "Baisse du pouvoir d'achat, concurrence de l'assurance-vie, inflation... Entre janvier et octobre, les Français ont retiré 9,5 milliards d'euros de plus sur leurs livrets A qu'ils n'en ont déposé.",
+   "url": "https://www.franceinfo.fr/economie/votre-argent/livret-a/les-menages-ont-ete-amenes-a-puiser-dans-leur-epargne-on-vous-explique-pourquoi-le-livret-a-est-laisse-pour-compte_8297343.html",
+   "at": "2026-11-24T12:21:15+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Stocks stratégiques de terres rares et métaux : \"L'objectif n'est pas de se couper de la Chine, mais d'augmenter notre résilience\", selon un spécialiste",
+   "desc": "Lundi, l'Élysée a confirmé que la France se doterait de \"stocks stratégiques\" de \"terres rares et certains métaux prioritaires\" inspirés des réserves qui existent pour le pétrole, afin de pallier les dépendances des industriels notamment à l'égard de la Chine.",
+   "url": "https://www.franceinfo.fr/economie/industrie/stocks-strategiques-de-terres-rares-et-metaux-l-objectif-n-est-pas-de-se-couper-de-la-chine-mais-d-augmenter-notre-resilience-selon-un-specialiste_8297661.html",
+   "at": "2026-11-24T12:20:45+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Sanofi, en s’offrant l’américain Insmed, se lance dans la plus importante acquisition de son histoire depuis 2004",
+   "desc": "Le groupe pharmaceutique français met la main, pour 37,6 milliards d’euros, sur ce spécialiste du traitement des maladies respiratoires. La biotech dispose déjà d’un médicament réalisant plus d’1 milliard de dollars de recettes annuelles et de plusieurs produits en développement jugés prometteurs.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/24/sanofi-pret-a-debourser-37-6-milliards-d-euros-pour-l-americain-insmed-un-specialiste-du-traitement-des-maladies-respiratoires_6814758_3234.html",
+   "at": "2026-11-24T12:08:33+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Mayotte : 80 gendarmes et 20 policiers supplémentaires face à la recrudescence des violences",
+   "desc": "En raison d’une flambée de tensions dans le département d’outre-mer, un escadron supplémentaire de forces de l’ordre va rejoindre Mayotte dans les prochains jours.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/mayotte-80-gendarmes-et-20-policiers-supplementaires-face-a-la-recrudescence-des-violences_6814757_3224.html",
+   "at": "2026-11-24T12:01:53+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : la deuxième réunion en vue d’une primaire entre David Lisnard, Bruno Retailleau et Gabriel Attal reportée",
+   "desc": "Ce report est à l'initiative du président Les Républicains (LR) du Sénat, Gérard Larcher, qui souhaitait inclure Edouard Philippe dans l'équation.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html",
+   "at": "2026-11-24T11:56:21+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Nvidia : Donald Trump aurait gagné jusqu’à 15 millions de dollars grâce à ses actions après le retour de Jensen Huang, selon le « Financial Times »",
+   "desc": "Le quotidien britannique s’appuie sur les dernières déclarations financières du président américain, qui font état d’une détention possible de jusqu’à 370 000 actions Nvidia au 30 septembre.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/24/nvidia-donald-trump-aurait-gagne-jusqu-a-15-millions-de-dollars-grace-a-ses-actions-apres-le-retour-de-jensen-huang-selon-le-financial-times_6814756_3210.html",
+   "at": "2026-11-24T11:56:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Prisé par les Français, le billet de 5 euros est pourtant une \"denrée rare\", selon la Banque de France",
+   "desc": "Les billets de 5 euros \"représentent seulement 2,3% du nombre de billets commandés pour les usages du quotidien\" par \"les banques et les acteurs du commerce\" auprès de la filière fiduciaire. La part des billets de 10, 20 et 50 euros avoisine, elle, les 30% pour chacun d'entre eux.",
+   "url": "https://www.franceinfo.fr/economie/prise-par-les-francais-le-billet-de-cinq-euros-est-pourtant-une-denree-rare-selon-la-banque-de-france_8297589.html",
+   "at": "2026-11-24T11:54:53+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Orphelins de féminicides, les victimes oubliées",
+   "desc": "En 2025, en France, 111 femmes ont été tuées par leur conjoint ou ex-conjoint, laissant derrière elles des dizaines d'orphelins. Comment se relever après un tel drame ? Quel accompagnement pour aider ces enfants ? À la veille de la Journée de lutte contre les violences faites aux femmes, Natacha Vesnitch a rencontré Cloé et Eva-Louise. La première avait 7 ans quand elle a vu son père tuer sa mère en l'immolant. Eva-Louise, elle, avait 20 ans. Sa mère a été tuée d'une balle dans le thorax.",
+   "url": "https://www.france24.com/fr/%C3%A9missions/c-est-en-france/20261124-orphelins-feminicides-meurtres-violences-faites-aux-femmes",
+   "at": "2026-11-24T11:43:57+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"J'ai découvert que le démon rôdait\" : le journal du pape François publié par un ancien proche collaborateur révèle sa foi profonde, mais aussi ses travers et ses fragilités",
+   "desc": "Pendant plus de trente ans, le pape argentin a consigné ses états d'âme, ses inquiétudes et ses doutes dans un carnet. Un de ses très proches collaborateurs en publie des extraits choisis dans un livre.",
+   "url": "https://www.franceinfo.fr/culture/livres/j-ai-decouvert-que-le-demon-rodait-le-journal-du-pape-francois-revele-sa-foi-profonde-mais-aussi-ses-travers-et-ses-fragilites_8297319.html",
+   "at": "2026-11-24T11:24:32+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les violences intrafamiliales, hors violences conjugales, ont augmenté de 8 % en France en 2025",
+   "desc": "Comme les années précédentes, les mineurs sont les principales victimes des violences intrafamiliales : ils représentent 75 % des victimes de violences physiques et 96 % des victimes de violences sexuelles, selon le ministère de l’intérieur.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/les-violences-intrafamiliales-hors-violences-conjugales-ont-augmente-de-8-en-france-en-2025_6814753_3224.html",
+   "at": "2026-11-24T11:21:07+00:00"
+  },
+  {
+   "source": "franceinfo",
    "title": "Seuls six parents sur dix font confiance à l'école, selon un sondage, \"un niveau historiquement bas\"",
-   "desc": "A la question \"avez-vous confiance dans le système éducatif français pour assurer à tous l'acquisition des savoirs de base\", 59% des parents ont répondu oui, selon un sondage de l'institut OpinionWay",
+   "desc": "A la question \"avez-vous confiance dans le système éducatif français pour assurer à tous l'acquisition des savoirs de base\", 59% des parents ont répondu oui, selon un sondage de l'institut OpinionWay.",
    "url": "https://www.franceinfo.fr/societe/education/seuls-six-parents-sur-dix-font-confiance-a-l-ecole-selon-un-sondage-un-niveau-historiquement-bas_8297481.html",
-   "at": "2026-11-24T11:03:18+00:00"
+   "at": "2026-11-24T11:16:13+00:00"
   },
   {
    "source": "franceinfo",
@@ -18,8 +130,15 @@
   },
   {
    "source": "Le Monde",
+   "title": "L’Opéra de Paris, accusé d’effacer l’origine juive de Bérénice dans « La Clémence de Titus », se défend de tout antisémitisme",
+   "desc": "La mise en scène de cet opéra de Mozart, signée de l’Allemand Willy Decker, date de 1997, et n’avait jusqu’à présent suscité aucune réaction. L’Opéra de Paris récuse tout révisionnisme ou toute volonté d’effacement.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/24/l-opera-de-paris-accuse-d-effacer-l-origine-juive-de-berenice-dans-la-clemence-de-titus-se-defend-de-tout-antisemitisme_6814749_3246.html",
+   "at": "2026-11-24T11:00:05+00:00"
+  },
+  {
+   "source": "Le Monde",
    "title": "Canicules : en Angleterre, les vagues de chaleur ont fait plus de 5 200 morts durant l’été 2026",
-   "desc": "L’agence de sécurité sanitaire britannique ne publie pas à ce stade d’éléments sur l’âge, la répartition géographique et les causes précises de ces morts, comptabilisés entre mai et septembre.",
+   "desc": "L’agence de sécurité sanitaire britannique ne publie pas à ce stade d’éléments sur l’âge, la répartition géographique et les causes précises de ces morts, comptabilisées entre mai et septembre.",
    "url": "https://www.lemonde.fr/planete/article/2026/11/24/canicules-en-angleterre-les-vagues-de-chaleur-ont-fait-plus-de-5-200-morts-durant-l-ete-2026_6814748_3244.html",
    "at": "2026-11-24T10:55:48+00:00"
   },
@@ -38,13 +157,6 @@
    "at": "2026-11-24T10:49:40+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Le Journal spirituel du pape François » dévoile trente-deux années de réflexions du Saint-Père argentin",
-   "desc": "Un petit carnet de notes de l’ancien souverain pontife fait l’objet d’une sortie mondiale. L’édition française, publiée par Albin Michel, sera disponible le 25 novembre.",
-   "url": "https://www.lemonde.fr/le-monde-des-religions/article/2026/11/24/le-journal-spirituel-du-pape-francois-devoile-trente-deux-annees-de-reflexions-du-saint-pere-argentin_6814741_6038514.html",
-   "at": "2026-11-24T10:10:54+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "En Ukraine, deux morts et plus de 40 blessés dans des frappes russes sur Zaporijjia",
    "desc": "Parmi les blessés, les autorités citent un nourrisson et trois enfants âgés de 4, 6 et 16 ans.",
@@ -53,10 +165,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Ils ont une lassitude du lycée\" : un nombre inédit de proviseurs envisagent leur mutation, alerte le principal syndicat des chefs d'établissement",
-   "desc": "Le ministère de l'Education nationale indique à franceinfo qu'il n'y a pas de hausse significative des demandes de mutation des chefs d'établissement pour la rentrée prochaine. Pourtant, le syndicat SNPDEN-Unsa assure que les proviseurs de lycées pensent de plus en plus à changer de ville, voire de métier.",
-   "url": "https://www.franceinfo.fr/societe/education/ils-ont-une-lassitude-du-lycee-un-nombre-inedit-proviseurs-demandent-leur-mutation-alerte-le-principal-syndicat-des-chefs-d-etablissement_8297274.html",
-   "at": "2026-11-24T10:00:45+00:00"
+   "title": "Pourquoi la France veut se doter de stocks stratégiques de terres rares ?",
+   "desc": "Emmanuel Macron a annoncé aux industriels la création de réserves stratégiques de ces minerais et métaux indispensables à l'économie mondiale, pour réduire notre dépendance et anticiper les crises.",
+   "url": "https://www.franceinfo.fr/replay-radio/histoire-du-jour/pourquoi-la-france-veut-se-doter-de-stocks-strategiques-de-terres-rares_8295902.html",
+   "at": "2026-11-24T10:01:36+00:00"
   },
   {
    "source": "franceinfo",
@@ -67,17 +179,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Guadeloupe : le parquet de Paris ouvre une enquête à la suite de la cyberattaque contre le CHU",
-   "desc": "Le CHU de Guadeloupe a été la cible, samedi soir, d’« une cyberattaque de grande ampleur », selon sa direction. Un plan blanc a été déclenché dimanche matin.",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/24/guadeloupe-le-parquet-de-paris-ouvre-une-enquete-a-la-suite-de-la-cyberattaque-contre-le-chu_6814735_4408996.html",
-   "at": "2026-11-24T09:58:24+00:00"
+   "title": "EN DIRECT, guerre en Ukraine : « Les actes de l’Ukraine ne visent que l’agresseur », affirme Kiev après les attaques de bateaux russes au large de la Libye et de la Finlande",
+   "desc": "Volodymyr Zelensky a confirmé, mardi, que les forces ukrainiennes avaient attaqué un cargo en ​route pour l’exclave ‌russe de Kaliningrad, samedi, dans le golfe de Finlande. « Aucune tierce partie » n’est visée, assure le ministère des affaires étrangères ukrainien.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/24/en-direct-guerre-en-ukraine-le-hongrois-peter-magyar-va-rencontrer-volodymyr-zelensky-mardi-en-transcarpatie_6814183_3210.html",
+   "at": "2026-11-24T09:53:31+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : \"C'est un immense débat qu'on doit avoir avec le pays\", juge François Bayrou sur l'instauration d'une \"règle d'or\" budgétaire",
-   "desc": "Emmanuel Macron envisage de faire inscrire dans la Constitution une \"règle d'or\" budgétaire en janvier.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html",
-   "at": "2026-11-24T09:32:01+00:00"
+   "source": "Le Monde",
+   "title": "Métropole du Havre : une enquête préliminaire ouverte par le parquet après un signalement pour « détournement de fonds publics »",
+   "desc": "Selon les informations du « Monde » et du site d’investigation « Le Poulpe », cette procédure pénale fait suite à un signalement déposé, en mai, par l’ex-directrice générale adjointe de la communauté urbaine du Havre, à l’origine d’une information judiciaire du Parquet national financier dans laquelle Edouard Philippe, président de la collectivité, est témoin assisté.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/metropole-du-havre-une-enquete-preliminaire-ouverte-par-le-parquet-apres-un-signalement-pour-detournement-de-fonds-publics_6814732_3224.html",
+   "at": "2026-11-24T09:33:20+00:00"
   },
   {
    "source": "franceinfo",
@@ -88,24 +200,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Fiches pratiques, interventions à l'école, interlocuteurs adaptés… Face aux dangers du protoxyde d'azote, le gouvernement outille les maires",
-   "desc": "\"On a voulu vraiment concevoir ce guide pour répondre à toutes les interrogations de tous les maires\", a expliqué la ministre déléguée chargée de la Citoyenneté.",
-   "url": "https://www.franceinfo.fr/sante/drogue-addictions/fiches-pratiques-interventions-a-l-ecole-interlocuteurs-adaptes-face-aux-dangers-du-protoxyde-d-azote-le-gouvernement-outille-les-maires_8297283.html",
-   "at": "2026-11-24T09:27:23+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Lego ne connaît pas la crise et investit plus d'un milliard d'euros dans une nouvelle usine au Portugal",
    "desc": "Les petites briques colorées du groupe Lego s'arrachent, en dépit des problèmes de pouvoir d'achat. Pour répondre à la demande, le N°1 mondial du jouet va ouvrir un nouveau site au Portugal.",
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/lego-investit-plus-d-un-milliard-d-euros-dans-une-nouvelle-usine-au-portugal_8275343.html",
    "at": "2026-11-24T08:59:56+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'Iran a infligé 74 coups de fouet à une chanteuse qui s'est produite sur YouTube sans voile",
-   "desc": "En Iran, chanter sans voile peut coûter très cher. La chanteuse Parastoo Ahmadi, une des figures du mouvement Femme Vie Liberté, vient de subir 74 coups de fouet pour s'être produite tête nue dans un concert diffusé sur YouTube.",
-   "url": "https://www.franceinfo.fr/monde/iran/l-iran-a-inflige-74-coups-de-fouet-a-une-chanteuse-qui-s-est-produite-sur-youtube-sans-voile_8297238.html",
-   "at": "2026-11-24T08:58:10+00:00"
   },
   {
    "source": "franceinfo",
@@ -122,25 +220,11 @@
    "at": "2026-11-24T08:55:19+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "A l’Assemblée nationale, les niches parlementaires menacées d’embouteillage",
-   "desc": "Face à la multiplication des groupes politiques et à une session raccourcie en raison de l’échéance présidentielle, les journées d’initiative parlementaire où les groupes d’opposition ont la main sur l’ordre du jour nécessitent des arbitrages délicats.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/24/a-l-assemblee-nationale-les-niches-parlementaires-menacees-d-embouteillage_6814723_823448.html",
-   "at": "2026-11-24T08:45:04+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Mort de Nahel Merzouk : la justice ordonne un procès pour meurtre à l'encontre du policier",
    "desc": "Trois ans après l'homicide de Nahel Merzouk, 17 ans, tué à bout portant par un tir de policier à la suite d'un refus d'obtempérer, la cour d'appel de Versailles a ordonné un procès pour meurtre à l'encontre du policier responsable de la mort du jeune homme dans cette affaire qui avait provoqué des nuits d'émeutes en France.",
    "url": "https://www.france24.com/fr/france/20261124-mort-nahel-merzouk-justice-ordonne-proc%C3%A8s-pour-meurtre-policier",
    "at": "2026-11-24T08:27:33+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Congrès des maires : des consignes transmises aux candidats à l'élection présidentielle pour éviter que l'événement ne se transforme en \"meeting\"",
-   "desc": "L'événement, qui se tient de mardi à jeudi à Paris, représente un enjeu pour les prétendants à la recherche de leurs 500 parrainages.",
-   "url": "https://www.franceinfo.fr/politique/congres-des-maires-des-consignes-transmises-aux-candidats-a-l-election-presidentielle-pour-eviter-que-l-evenement-ne-se-transforme-en-meeting_8297280.html",
-   "at": "2026-11-24T08:21:53+00:00"
   },
   {
    "source": "Le Monde",
@@ -150,60 +234,11 @@
    "at": "2026-11-24T07:51:22+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le système d'alerte canicule mis en place en France a fait baisser la mortalité, surtout des plus âgés",
-   "desc": "Après la canicule de 2003 et ses dizaines de milliers de morts en Europe, la France a mis en place un système national d'alerte canicule-santé, comme d'autres Etats.",
-   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/vagues-de-chaleur-canicules/le-systeme-d-alertes-canicules-mis-en-place-en-france-a-fait-baisser-la-mortalite-surtout-des-plus-ages_8297031.html",
-   "at": "2026-11-24T07:18:52+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Nous sommes à l'os\" : dans les communes, les maires confrontés à des choix difficiles en prévision de nouvelles restrictions budgétaires",
-   "desc": "Dans le Cher, la maire d'Aubigny-sur-Nère doit arbitrer entre la rénovation de l'école, recouvrir la chaussée et augmenter la fiscalité. Comme d'autres élus, elle a posé un ruban noir sur le panneau de sa commune en signe de protestation.",
-   "url": "https://www.franceinfo.fr/economie/budget/reportage-nous-sommes-a-l-os-dans-les-communes-les-maires-confrontes-a-des-choix-difficiles-en-prevision-de-nouvelles-restrictions-budgetaires_8297172.html",
-   "at": "2026-11-24T07:16:22+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le cargo échoué sur une plage des Landes va-t-il retrouver la mer ce mardi ?",
-   "desc": "Le cargo échoué depuis vendredi 20 novembre au large de la plage de Lit-et-Mixe, dans les Landes, pourrait retrouver la mer ce mardi 24 novembre. L’opération dépend notamment des conditions météorologiques et de la marée. La marée haute, attendue aux alentours de 16 heures ce mardi, pourrait offrir une fenêtre de tir précieuse à l’armateur du cargo, mis en demeure par le préfet maritime de l’Atlantique.",
-   "url": "https://www.franceinfo.fr/environnement/cargo-echoue-dans-les-landes-une-journee-decisive_8297217.html",
-   "at": "2026-11-24T07:10:26+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Le congrès des maires de France s’ouvre sur fond de course à la présidentielle et de protestations autour de la double candidature de David Lisnard",
    "desc": "Pour les prétendants en quête des 500 parrainages nécessaires à leur candidature, difficile en effet de faire l’impasse sur le plus grand rassemblement d’élus locaux d’Europe.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/24/le-congres-des-maires-de-france-s-ouvre-sur-fond-de-course-a-la-presidentielle-et-de-protestations-autour-de-la-double-candidature-de-david-lisnard_6814718_823448.html",
    "at": "2026-11-24T07:09:47+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« La proximité entre la Russie de Poutine et les Etats-Unis de Trump ne suffit pas à former une alliance stratégique »",
-   "desc": "Si la rencontre entre les deux puissances, en Chine, le 19 novembre, a rappelé qu’elles partagent une hostilité commune à l’ordre libéral, la question reste entière de savoir qui fixera les règles après lui, estime la chercheuse Marlène Laruelle dans une tribune au « Monde ».",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/24/la-proximite-entre-la-russie-de-poutine-et-les-etats-unis-de-trump-ne-suffit-pas-a-former-une-alliance-strategique_6814716_3232.html",
-   "at": "2026-11-24T07:00:10+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La France va se doter de \"stocks stratégiques\" de terres rares et \"métaux prioritaires\", annonce l'Elysée",
-   "desc": "Ce projet sera piloté par la Caisse des dépôts, qui doit désormais consulter les industriels des secteurs stratégiques utilisant ces matières premières incontournables.",
-   "url": "https://www.franceinfo.fr/economie/industrie/la-france-va-se-doter-de-stocks-strategiques-de-terres-rares-et-metaux-prioritaires-annonce-l-elysee_8296749.html",
-   "at": "2026-11-24T06:49:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Avec \"Jupiter\", en salles mercredi, le thriller nucléaire revient-il en force au cinéma ?",
-   "desc": "Ce lundi, la journaliste Anne-Marie Revol dédie sa chronique culture à un film atypique : \"Jupiter\", d'Alexandre Smia, qui nous plonge au cœur d'une crise politique internationale, située dans un futur proche. Le président français, incarné par Denis Ménochet, doit faire face à un dilemme stratégique, retranché dans l'abri antiatomique de l'Élysée.Une séquence à retrouver dans l'émission \"À suivre Loïc de la Mornais\", diffusée entre 20h30 et 23h sur la chaîne info, canal 16.",
-   "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/avec-jupiter-en-salles-mercredi-le-thriller-nucleaire-revient-il-en-force-au-cinema_8297187.html",
-   "at": "2026-11-24T06:47:10+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Sébastien Lecornu tend la main aux parlementaires pour un compromis sur le budget, sans toucher au déficit",
-   "desc": "Faute de majorité, le Premier ministre s'est adressé aux parlementaires dans un courrier, afin de trouver \"une voie de passage\".",
-   "url": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-tend-la-main-aux-parlementaires-pour-un-compromis-sur-le-budget-sans-toucher-au-deficit_8297160.html",
-   "at": "2026-11-24T06:43:01+00:00"
   },
   {
    "source": "franceinfo",
@@ -214,10 +249,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Dès qu'on voit des promos, on stocke à la maison et on cache\" : de plus en plus de Français profitent du Black Friday pour faire leurs cadeaux de Noël",
-   "desc": "Huit Français sur dix comptent profiter du Black Friday pour acheter leurs cadeaux de Noël, un niveau inédit. Franceinfo a rencontré des personnes déjà en mission, dans les rues de Paris.",
-   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/reportage-des-qu-on-voit-des-promos-on-stocke-a-la-maison-et-on-cache-de-plus-en-plus-de-francais-profitent-du-black-friday-pour-faire-leurs-cadeaux-de-noel_8296566.html",
-   "at": "2026-11-24T05:54:39+00:00"
+   "title": "Depuis janvier, les Français ont retiré près de 10 milliards d'euros de leur livret A, qui connaît sa pire année depuis 2008",
+   "desc": "\"Dans un contexte de baisse du pouvoir d'achat avec la hausse du coût de l'énergie, les ménages ont été amenés à puiser dans leurs livrets\", explique le directeur du Cercle de l'Epargne.",
+   "url": "https://www.franceinfo.fr/economie/votre-argent/livret-a/depuis-janvier-les-francais-ont-retire-pres-de-10-milliards-d-euros-de-leurs-livrets-a-qui-connait-sa-pire-annee-depuis-2008_8297058.html",
+   "at": "2026-11-24T06:36:37+00:00"
   },
   {
    "source": "Le Monde",
@@ -225,27 +260,6 @@
    "desc": "Les midterms à peine passées, les démocrates se tournent déjà vers la présidentielle. Tous les candidats potentiels étaient réunis pour deux jours de conférence à Denver, la capitale du Colorado, les 12 et 13 novembre. Soit une quinzaine de postulants, alors que la soif de renouvellement est évidente au sein de la base militante.",
    "url": "https://www.lemonde.fr/international/article/2026/11/24/election-presidentielle-americaine-de-2028-chez-les-democrates-un-casting-tres-riche-pour-un-premier-role_6814712_3210.html",
    "at": "2026-11-24T05:30:05+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On n'est plus à une surprise près\" : pourquoi Emmanuel Macron envisage-t-il de créer une règle d'or budgétaire à cinq mois de la présidentielle ?",
-   "desc": "Le président de la République réfléchit à faire inscrire dans la Constitution une sorte de \"règle d'or\" budgétaire en faisant adopter une réforme de 2011 qui n'a jamais abouti. Mais cette initiative du chef de l'Etat, brandie dans un timing étonnant, peut-elle réellement être couronnée de succès ?",
-   "url": "https://www.franceinfo.fr/politique/emmanuel-macron/on-n-est-plus-a-une-surprise-pres-pourquoi-emmanuel-macron-envisage-t-il-de-creer-une-regle-d-or-budgetaire-a-cinq-mois-de-la-presidentielle_8295866.html",
-   "at": "2026-11-24T05:16:18+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Au Pays basque, le crépuscule de la chasse traditionnelle aux alouettes des champs, une espèce en déclin",
-   "desc": "Interdite pendant quatre ans, la chasse aux alouettes avec des pantes, des filets déployés au sol, a été réautorisée pour l’automne 2026. Les chasseurs font valoir que leurs prises sont marginales par rapport aux pertes causées par l’agriculture intensive.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/24/au-pays-basque-le-crepuscule-de-la-chasse-traditionnelle-aux-alouettes-des-champs-une-espece-en-declin_6814710_3244.html",
-   "at": "2026-11-24T05:00:56+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« Je suis une enfant gâtée, c’est sûr » : en Inde, la jeunesse dorée profite de ses privilèges",
-   "desc": "« Inde, la jeunesse fracturée » (2/4). Si une vaste majorité de jeunes Indiens souffre de l’absence de perspectives, d’autres, plus fortunés, jouissent d’un train de vie privilégié dans un pays connu pour ses inégalités.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/24/je-suis-une-enfant-gatee-c-est-sur-en-inde-la-jeunesse-doree-profite-de-ses-privileges_6814709_3210.html",
-   "at": "2026-11-24T05:00:31+00:00"
   },
   {
    "source": "Le Monde",
@@ -256,17 +270,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Mouvement lycéen : la délicate et précaire reprise des cours dans les établissements les plus mobilisés",
-   "desc": "Face à une situation tendue et volatile, des proviseurs tentent de rouvrir leur établissement et de reconstruire de l’unité. Entre reprise en petits effectifs et rencontres entre lycéens ou avec les parents d’élèves, chaque lycée teste sa propre recette.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/24/mouvement-lyceen-la-delicate-et-precaire-reprise-des-cours-dans-les-etablissements-les-plus-mobilises_6814703_3224.html",
-   "at": "2026-11-24T05:00:08+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Monsieur Bonbon, démission !\", réagit Foodwatch après la nomination de l'ancien PDG d'Haribo pour copiloter l'action de l’État sur l’alimentation",
-   "desc": "L'association de défense des consommateurs en matière d'alimentation qualifie l'arrivée de Jean-Philippe André comme l'équivalent de \"confier les clés du poulailler au renard\". Avec d'autres organisations, ils ont adressé une lettre au Premier ministre.",
-   "url": "https://www.franceinfo.fr/sante/alimentation/monsieur-bonbon-demission-reagit-foodwatch-apres-la-nomination-de-l-ancien-pdg-d-haribo-pour-copiloter-l-action-de-l-etat-sur-l-alimentation_8296659.html",
-   "at": "2026-11-24T05:00:04+00:00"
+   "title": "« J’ai perdu quasiment la moitié de mes étudiants de première année » : près de deux mois après le début des mobilisations, le risque de décrochage en licence",
+   "desc": "Dans les facultés touchées par les blocages, la désorganisation des cours et le passage au distanciel désorientent les étudiants les plus jeunes et inquiètent leurs enseignants.",
+   "url": "https://www.lemonde.fr/campus/article/2026/11/24/j-ai-perdu-quasiment-la-moitie-de-mes-etudiants-de-premiere-annee-pres-de-deux-mois-apres-le-debut-des-mobilisations-le-risque-de-decrochage-en-licence_6814704_4401467.html",
+   "at": "2026-11-24T05:00:15+00:00"
   },
   {
    "source": "franceinfo",
@@ -290,25 +297,18 @@
    "at": "2026-11-24T04:56:17+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Le come-back spectaculaire de Jensen Huang à la tête de Nvidia, sous la pression de Donald Trump et des marchés financiers",
-   "desc": "Poussé à la démission le 12 novembre après la révélation de sa relation extraconjugale avec une femme soupçonnée de transmettre des informations aux services secrets chinois, le PDG a été réintégré, lundi, par le conseil d’administration du géant des semi-conducteurs.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/24/le-come-back-spectaculaire-de-jensen-huang-a-la-tete-de-nvidia-sous-la-pression-de-donald-trump-et-des-marches-financiers_6814669_3234.html",
-   "at": "2026-11-24T04:30:09+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Comment on lutte contre l’isolement avec un service de navettes citoyennes",
-   "desc": "Avec la série « On avance », « Le Monde » part à la rencontre de personnes qui agissent collectivement pour le climat et la biodiversité. Dans la Creuse, des bénévoles assurent le transport d’habitants entre plusieurs villages après la fermeture d’une ligne de train.",
-   "url": "https://www.lemonde.fr/chaleur-humaine/article/2026/11/24/comment-on-lutte-contre-l-isolement-avec-un-service-de-navettes-citoyennes_6814605_6125299.html",
-   "at": "2026-11-24T04:00:09+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Ouverture du Congrès des maires sur fond de bataille pour l'Élysée",
    "desc": "La puissante Association des maires de France (AMF) se réunit du 24 au 26 novembre à Paris, où les candidats à l'élection présidentielle vont se presser, en particulier ceux en quête des 500 parrainages nécessaires à leur candidature. Mais ce rendez-vous annuel sera surtout marqué par l'élection de son président. Déjà candidat à la présidentielle, David Lisnard espère également renouveler son mandat à la tête de l'AMF.",
    "url": "https://www.france24.com/fr/france/20261124-ouverture-du-congr%C3%A8s-des-maires-sur-fond-de-bataille-pour-l-%C3%A9lys%C3%A9e",
    "at": "2026-11-24T00:06:27+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Il y a des matins où je n'arrivais même plus à me lever\" : alerte au CBD ultra-toxique, vendu sur internet et jusqu'en boutiques",
+   "desc": "Les boutiques de CBD, où l'on peut acheter légalement des fleurs de chanvre ou des liquides à vapoter, se sont multipliées en France. Mais que contiennent vraiment les produits vendus sous l’étiquette “CBD” ? Les autorités sanitaires ont recensé plusieurs centaines d’intoxications après la consommation de produits présentés comme du CBD, qui contiennent pour certains des drogues de synthèse.",
+   "url": "https://www.franceinfo.fr/sante/drogue-addictions/il-y-a-des-matins-ou-je-n-arrivais-meme-plus-a-me-lever-alerte-au-cbd-ultra-toxique-vendu-sur-internet-et-jusqu-en-boutiques_8296758.html",
+   "at": "2026-11-23T22:38:29+00:00"
   },
   {
    "source": "France 24",
@@ -323,20 +323,6 @@
    "desc": "À moins de cinq mois du premier tour de la présidentielle, prévu le 18 avril, la course à l’Élysée s’annonce particulièrement disputée. Dernier en date à entrer dans la course : Dominique de Villepin. Plusieurs candidats de la droite et du centre veulent s’affronter dans une primaire afin de désigner un seul représentant, mais l’idée ne fait pas l’unanimité. David Lisnard, qui est en progression dans les sondages, entend peser dans les discussions et pose ses conditions.",
    "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261123-pr%C3%A9sidentielle-qui-pourra-rassembler",
    "at": "2026-11-23T19:58:31+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Grand Paris Express : l’ouverture de la nouvelle ligne 18 du métro compromise et sans doute reportée à 2027",
-   "desc": "Valérie Pécresse, présidente de la région Ile-de-France, a convoqué une réunion d’urgence avec les acteurs concernés et enjoint à Alstom, concepteur du système d’automatisation, de trouver « des solutions pour fiabiliser son logiciel ».",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/23/grand-paris-express-l-ouverture-de-la-nouvelle-ligne-18-du-metro-plus-compromise-que-jamais_6814446_3234.html",
-   "at": "2026-11-23T19:57:39+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Pays pétroliers offensifs, Européens à sec, organisateurs largués... Qui est responsable de l'échec de la COP31 sur le climat ?",
-   "desc": "Les discussions ont notamment bloqué sur la mention explicite des énergies fossiles dans la déclaration finale.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/pays-petroliers-offensifs-europeens-a-sec-organisateurs-largues-qui-est-responsable-de-l-echec-de-la-cop31-sur-le-climat_8295716.html",
-   "at": "2026-11-23T18:53:09+00:00"
   },
   {
    "source": "franceinfo",

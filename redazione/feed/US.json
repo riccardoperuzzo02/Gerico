@@ -1,7 +1,63 @@
 {
  "code": "US",
- "asOf": "2026-11-24T11:17:34+00:00",
+ "asOf": "2026-11-24T13:17:33+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
+   "desc": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
+   "url": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
+   "at": "2026-11-24T13:17:16+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Best Buy reports comparable sales growth of 6.1%, highest in five years",
+   "desc": "Best Buy beat quarterly expectations for its fiscal third-quarter earnings results on Tuesday and raised its full-year guidance.",
+   "url": "https://www.cnbc.com/2026/11/24/best-buy-bby-q3-2027-earnings.html",
+   "at": "2026-11-24T12:57:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
+   "desc": "Sanofi faces a revenue drop towards the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
+   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
+   "at": "2026-11-24T12:33:41+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
+   "desc": "Russia accused Estonia of “hostile actions” and warned its border measures risk open war, as Tallinn prepares to close road crossings from Dec. 1.",
+   "url": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
+   "at": "2026-11-24T12:32:24+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
+   "desc": "President Trump took credit for negotiating Jensen Huang's return as CEO of Nvidia. And, Rep. Jimmy Gomez, D-Calif., says his resignation will be effective Dec. 1.",
+   "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
+   "at": "2026-11-24T12:12:25+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Some U.S. food banks see demand top pandemic levels",
+   "desc": "A combination of high costs and restrictions to federal aid have led to soaring demand at many food banks in the U.S.",
+   "url": "https://www.cnbc.com/2026/11/24/us-food-banks-demand-snap.html",
+   "at": "2026-11-24T12:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. court clears the way for Army’s planned ammunition detonation in Iowa",
+   "desc": "A U.S. court cleared the Army to detonate degraded explosives at an Iowa ammunition plant amid public concern over contamination and health risks.",
+   "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
+   "at": "2026-11-24T11:56:49+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "What should it cost to insure a home in wildfire country?",
+   "desc": "Some California homeowners have spent thousands making their homes safer from wildfires. Yet all that work has barely made a dent in their insurance bills. Should they be getting a bigger break?",
+   "url": "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country",
+   "at": "2026-11-24T11:30:00+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Why France is at risk of recession — and what could keep it out of one",
@@ -17,13 +73,6 @@
    "at": "2026-11-24T10:56:56+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-   "desc": "Sanofi faces a revenue drop towards the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
-   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "at": "2026-11-24T10:50:26+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "MAGA Attacked Harvard. So Harvard Taught a Class About It.",
    "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
@@ -32,7 +81,7 @@
   },
   {
    "source": "New York Times",
-   "title": "Fleeing the U.S. and Torn Apart: Family Separation at the Northern Border",
+   "title": "Some Haitian Families Fleeing the U.S. for Canada Are Being Separated at the Border",
    "desc": "Driven to Canada by deportation fears, some members of Haitian families are being denied entry, turned back and detained by U.S. authorities.",
    "url": "https://www.nytimes.com/2026/11/24/us/haitians-deportations-canada-immigration.html",
    "at": "2026-11-24T10:00:39+00:00"
@@ -49,20 +98,6 @@
    "title": "Doctors struggle to save babies after parents refuse vitamin K",
    "desc": "Doctors are fighting an uphill battle against disinformation about routine vitamin K shots given to newborns in the hospital. It helps prevent a rare but devastating bleeding disorder.",
    "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding",
-   "at": "2026-11-24T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Democrats probe whether Trump Jr.-aligned businesses benefit from government access",
-   "desc": "Investigators say companies with ties to Donald Trump Jr's investment firm, 1789 Capital, have profited since his father's reelection.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6051028/jamie-raskin-donald-trump-jr-1789-capital-democrats-investigation",
-   "at": "2026-11-24T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
-   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
@@ -88,9 +123,23 @@
   },
   {
    "source": "NPR",
+   "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
+   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
    "title": "Meet Colombia's fuzzy 'water guardians'",
    "desc": "High in the Colombian Andes, a growing number of volunteers are racing to save an unusual plant that helps supply water to millions — one tiny seedling at a time.",
    "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Democrats probe whether Trump Jr.-aligned businesses benefit from government access",
+   "desc": "Investigators say companies with ties to Donald Trump Jr's investment firm, 1789 Capital, have profited since his father's reelection.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6051028/jamie-raskin-donald-trump-jr-1789-capital-democrats-investigation",
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
@@ -150,13 +199,6 @@
    "at": "2026-11-24T04:27:38+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "U.S. court orders to proceed with planned ammunition detonation in Iowa",
-   "desc": "A U.S. court cleared the Army to detonate degraded explosives at an Iowa ammunition plant amid public concern over contamination and health risks.",
-   "url": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
-   "at": "2026-11-24T03:32:26+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Appeals court clears way for Army to detonate Iowa explosives",
    "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
@@ -176,6 +218,13 @@
    "desc": "The U.S. has added Megaspeed and six other companies to its trade blacklist over concerns about the potential diversion of advanced computing products.",
    "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
    "at": "2026-11-24T02:37:39+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
+   "desc": "Kress steered the company through billions in AI financing deals and during Huang's sudden departure. Now she's back to full-time CFO.",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
+   "at": "2026-11-24T02:21:06+00:00"
   },
   {
    "source": "CBS News",
@@ -402,20 +451,6 @@
    "at": "2026-11-23T22:54:50+00:00"
   },
   {
-   "source": "NPR",
-   "title": "California Democrat Rep. Gomez resigns following ethics report on sexual misconduct allegations",
-   "desc": "California Congressman Rep. Jimmy Gomez says he will resign after a House Ethics report concluded Gomez's actions violated House rules by \"making unwelcome sexual advances.\"",
-   "url": "https://www.npr.org/2026/11/23/g-s1-155142/california-democrat-rep-gomez-resigns-following-ethics-report-on-sexual-misconduct-allegations",
-   "at": "2026-11-23T22:29:53+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "They attended Trump's controversial meme coin dinner. It didn't go well",
-   "desc": "Trump held another meme coin dinner for top holders of his cryptocurrency — an event that has raised intense controversy. Here's an inside account from two guests who attended.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6045883/they-attended-trumps-controversial-meme-coin-dinner-it-didnt-go-well",
-   "at": "2026-11-23T22:17:59+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "2 City Bus Drivers Killed in Head-On Collision in Ohio",
    "desc": "Nine people were injured in the crash, which occurred in Columbus when one of the buses veered into the next lane, the police said.",
@@ -451,13 +486,6 @@
    "at": "2026-11-23T21:32:05+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Tech stocks see monster rally after Jensen Huang returns as Nvidia CEO",
-   "desc": "The Nasdaq slid 10% last week in its worst week since the early days of Covid in 2020.",
-   "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-   "at": "2026-11-23T21:22:13+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Nvidia CEO Jensen Huang resigns in wake of affair, spy scandal",
    "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
@@ -470,13 +498,6 @@
    "desc": "Jensen Huang's shocking exit as CEO of Nvidia unspooled suddenly, yet signs of trouble had emerged much earlier.",
    "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/",
    "at": "2026-11-23T21:18:41+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 31%",
-   "desc": "The Nvidia board said it had input from senior levels of the U.S. government.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-   "at": "2026-11-23T21:08:05+00:00"
   },
   {
    "source": "CNBC",
@@ -556,13 +577,6 @@
    "at": "2026-11-23T19:34:38+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "An options strategy for making even more of your money back in Nvidia",
-   "desc": "Nvidia shareholders can look to the options market to recoup lost money",
-   "url": "https://www.cnbc.com/2026/11/23/an-options-strategy-for-making-even-more-of-your-money-back-in-nvidia-.html",
-   "at": "2026-11-23T18:52:46+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Rain Storms Overwhelm San Francisco’s Sewers, Sending Wastewater Into the Streets",
    "desc": "A downpour once again sent wastewater into San Francisco streets. It could become a frequent occurrence in this El Niño year.",
@@ -575,13 +589,6 @@
    "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
    "at": "2026-11-23T18:08:18+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
-   "desc": "Wall Street strategists say Jensen Huang’s return to Nvidia could steady the AI trade, though spending and data-center risks remain.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
-   "at": "2026-11-23T18:00:47+00:00"
   },
   {
    "source": "CBS News",
@@ -603,13 +610,6 @@
    "desc": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html",
    "at": "2026-11-23T15:32:55+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "More Americans pay this Obama-era investment tax every year — how to avoid it",
-   "desc": "As more Americans pay net investment income tax, there are strategies to avoid it, experts say.",
-   "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
-   "at": "2026-11-23T13:15:01+00:00"
   }
  ]
 }

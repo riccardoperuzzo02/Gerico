@@ -1,20 +1,111 @@
 {
  "code": "US",
- "asOf": "2026-11-24T09:17:33+00:00",
+ "asOf": "2026-11-24T11:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Why France is at risk of recession — and what could keep it out of one",
+   "desc": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
+   "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
+   "at": "2026-11-24T11:15:30+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
    "desc": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
-   "at": "2026-11-24T08:35:16+00:00"
+   "at": "2026-11-24T10:56:56+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Asian Nvidia-related stocks jump after Huang's return, with Taiwan's near price limits",
+   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
+   "desc": "Sanofi faces a revenue drop towards the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
+   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
+   "at": "2026-11-24T10:50:26+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "MAGA Attacked Harvard. So Harvard Taught a Class About It.",
+   "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
+   "url": "https://www.nytimes.com/2026/11/24/us/harvard-maga-class.html",
+   "at": "2026-11-24T10:00:53+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Fleeing the U.S. and Torn Apart: Family Separation at the Northern Border",
+   "desc": "Driven to Canada by deportation fears, some members of Haitian families are being denied entry, turned back and detained by U.S. authorities.",
+   "url": "https://www.nytimes.com/2026/11/24/us/haitians-deportations-canada-immigration.html",
+   "at": "2026-11-24T10:00:39+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Why Chicago’s Tax Incentive Program Fell Short in Low-Income Neighborhoods",
+   "desc": "An examination by The Times shows how a tax incentive program that transformed downtown has left some poorer neighborhoods overlooked and neglected.",
+   "url": "https://www.nytimes.com/2026/11/24/us/chicago-tax-incentives-low-income-neighborhoods.html",
+   "at": "2026-11-24T10:00:33+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Doctors struggle to save babies after parents refuse vitamin K",
+   "desc": "Doctors are fighting an uphill battle against disinformation about routine vitamin K shots given to newborns in the hospital. It helps prevent a rare but devastating bleeding disorder.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Democrats probe whether Trump Jr.-aligned businesses benefit from government access",
+   "desc": "Investigators say companies with ties to Donald Trump Jr's investment firm, 1789 Capital, have profited since his father's reelection.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6051028/jamie-raskin-donald-trump-jr-1789-capital-democrats-investigation",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
+   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "They attended Trump's meme coin dinner. It didn't go well",
+   "desc": "Trump's meme coin dinners have sparked intense controversy. These two guests attended his latest on Sunday — and agreed to provide NPR inside access.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6051604/trump-crypto-corruption-meme-coin-dinner",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Black travelers on Route 66 weren't welcome at most gas stations — except this one",
+   "desc": "Threatt Filling Station in Luther, Okla., was the first Black-owned gas station on Route 66. At a time when Black families needed the Green Book to find places to stay, eat, use the bathroom, it provided fuel and respite.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-5928337/threatt-filling-station-oklahoma-route-66",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "For workplace culture champions, Jensen Huang's return is 'unfathomable'",
+   "desc": "Some who have worked to promote diversity and inclusion in Silicon Valley say Jensen Huang's reinstatement as Nvidia's CEO sends a message that all that matters is money.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6051583/nvidia-huang-dei-trump-women",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Meet Colombia's fuzzy 'water guardians'",
+   "desc": "High in the Colombian Andes, a growing number of volunteers are racing to save an unusual plant that helps supply water to millions — one tiny seedling at a time.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+   "at": "2026-11-24T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Morning news brief",
+   "desc": "President Trump is taking credit for the return of his close ally Jensen Huang as Nvidia's CEO, Nvidia's stock rose after Huang was reinstated, the Russia-Ukraine war is spilling into other countries.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6047113/morning-news-brief",
+   "at": "2026-11-24T09:54:18+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Asian tech stocks recover from ‘collateral damage’ of Jensen Huang’s departure",
    "desc": "Investors piled back into the tech market, following the reinstatement of Nvidia CEO Jensen Huang by its board.",
    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-asia-chip-stocks.html",
-   "at": "2026-11-24T08:13:58+00:00"
+   "at": "2026-11-24T09:46:01+00:00"
   },
   {
    "source": "CNBC",
@@ -29,13 +120,6 @@
    "desc": "As Jensen Huang returns to Nvidia, questions remained around the board's reversal, Trump's involvement and the tech giant's future.",
    "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html",
    "at": "2026-11-24T07:12:33+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Why France is at risk of recession — and what could keep it out of one",
-   "desc": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
-   "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-   "at": "2026-11-24T06:55:36+00:00"
   },
   {
    "source": "CNBC",
@@ -99,6 +183,13 @@
    "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
    "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
    "at": "2026-11-24T02:21:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
+   "desc": "Nvidia's Jensen Huang admitted to an affair in a note to employees on Nov. 8 and resigned as CEO on Nov. 12.",
+   "url": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
+   "at": "2026-11-24T02:20:44+00:00"
   },
   {
    "source": "CBS News",
@@ -304,25 +395,11 @@
    "at": "2026-11-23T23:02:18+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "CNBC's The China Connection newsletter: AI race spreads from robots to smartphones",
-   "desc": "More powerful artificial intelligence models are raising expectations for more powerful on-device chips that can run on devices from robots to smartphones.",
-   "url": "https://www.cnbc.com/2026/11/23/cnbcs-the-china-connection-newsletter-ai-race-spreads-to-smartphones.html",
-   "at": "2026-11-23T23:00:01+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Rep. Jimmy Gomez Resigns After Panel Alleges Unwanted Sexual Contact With Aide",
    "desc": "Representative Jimmy Gomez of California disputed the allegations from the Ethics Committee but said they left him with “no other alternative than to resign, effective Dec. 1.”",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/jimmy-gomez-democrat-resigns.html",
    "at": "2026-11-23T22:54:50+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia surge: What investors should do with the stock and the AI trade now",
-   "desc": "The market is loving the return of Jensen Huang, but investors and lawmakers have their guards up.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-stock-jensen-huang-ai-trade.html",
-   "at": "2026-11-23T22:43:38+00:00"
   },
   {
    "source": "NPR",
@@ -344,13 +421,6 @@
    "desc": "Nine people were injured in the crash, which occurred in Columbus when one of the buses veered into the next lane, the police said.",
    "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html",
    "at": "2026-11-23T22:13:03+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Some women in tech have concerns about Huang's return",
-   "desc": "Women who have advocated for DEI in tech say Jensen Huang's return to NVIDIA as CEO sends a message that in Silicon Valley, all that matters is money. s",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6045799/how-some-women-in-tech-are-responding-to-jensen-huangs-return-to-nvidia",
-   "at": "2026-11-23T22:03:57+00:00"
   },
   {
    "source": "CBS News",
@@ -437,13 +507,6 @@
    "at": "2026-11-23T20:55:56+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Mending relationships over the holidays? Considering a truce? NPR wants to know",
-   "desc": "Has a political or social issue broken down a relationship that was important to you? Can it be repaired? Tell us what's going on. You might be asked to participate in a possible upcoming segment on All Things Considered.",
-   "url": "https://www.npr.org/2026/11/23/g-s1-155085/holidays-relationships-politics-dispute",
-   "at": "2026-11-23T20:53:12+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Democrats have flipped 47 House seats. Here's the breakdown.",
    "desc": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
@@ -484,6 +547,13 @@
    "desc": "The Labor Department proposed a regulation Monday that seeks to curb uptake of ESG funds in workplace retirement plans such as 401(k)s.",
    "url": "https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
    "at": "2026-11-23T19:46:28+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Amazon to acquire AI startup Decart's chip software, hire founders",
+   "desc": "Decart, founded in 2023, is best known for its software that lets developers sync their AI models across different chips.",
+   "url": "https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html",
+   "at": "2026-11-23T19:34:38+00:00"
   },
   {
    "source": "CNBC",
@@ -528,20 +598,6 @@
    "at": "2026-11-23T16:49:39+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "SpaceX sued by Oregon and Virginia over AI deepfake porn, Grok safety claims",
-   "desc": "The states are seeking civil penalties and injunctions to stop Grok and X from creation and distribution of nonconsensual sexualized images.",
-   "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
-   "at": "2026-11-23T16:45:31+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "'Medicare for all' is back on the drawing board. Does it stand a better chance this time?",
-   "desc": "Several newly elected Democratic U.S. senators campaigned on Medicare for All. Could this be the time it actually gets traction?",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances",
-   "at": "2026-11-23T16:00:49+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
    "desc": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
@@ -549,53 +605,11 @@
    "at": "2026-11-23T15:32:55+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Trump claims credit as Jensen Huang returns to Nvidia",
-   "desc": "President Trump endorsed the announcement, calling it essential for the success of the company and the economy. He added that the government does not see Huang's return as a national security risk.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump",
-   "at": "2026-11-23T14:53:41+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
-   "desc": "U.S. intelligence is said to show that the woman at the heart of the A.I. chip scandal was in touch with China’s Ministry of State Security during the period when she was in a relationship with Jensen Huang.",
-   "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-   "at": "2026-11-23T14:35:31+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "More Americans pay this Obama-era investment tax every year — how to avoid it",
    "desc": "As more Americans pay net investment income tax, there are strategies to avoid it, experts say.",
    "url": "https://www.cnbc.com/2026/11/23/net-investment-income-tax-niit.html",
    "at": "2026-11-23T13:15:01+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
-   "desc": "Democrats have currently flipped 47 House seats and could flip 49 total. And, climate change talks at COP31 ran two days longer than expected, becoming the longest conference in the summit's history.",
-   "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
-   "at": "2026-11-23T12:42:03+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
-   "desc": "Ukraine carried out an attack on a Russian warship moored at a port in Libya, President Volodymyr Zelenskyy said, claiming that sea drones sank the navy vessel in a surprise assault.",
-   "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-   "at": "2026-11-23T10:16:33+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Mushroom supplements promise health benefits. What does the science say?",
-   "desc": "Wellness influencers say mushroom supplements can help with your gut health, focus and immune system. Here is where research suggests there are some links.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6047791/mushroom-supplements-health-research",
-   "at": "2026-11-23T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "K is for kindness, but families worry the world has less of it",
-   "desc": "A decade after first asking families about kindness, Sesame Workshop asked parents similar questions. They responded that their kids are getting kinder even as the wider world becomes less so.",
-   "url": "https://www.npr.org/2026/11/23/nx-s1-6035702/kindness-kids-sesame-street-parents-survey",
-   "at": "2026-11-23T10:00:00+00:00"
   }
  ]
 }

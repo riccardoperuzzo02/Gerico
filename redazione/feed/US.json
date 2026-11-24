@@ -1,13 +1,125 @@
 {
  "code": "US",
- "asOf": "2026-11-24T15:17:36+00:00",
+ "asOf": "2026-11-24T17:17:40+00:00",
  "items": [
   {
+   "source": "CBS News",
+   "title": "Army to detonate unstable explosives in Iowa Wednesday morning",
+   "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
+   "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
+   "at": "2026-11-24T17:10:31+00:00"
+  },
+  {
    "source": "CNBC",
-   "title": "Anthropic stock falls below $83 IPO price, but analysts are still largely positive",
+   "title": "Anthropic sinks 12%, falling below $83 IPO price, but analysts are still largely positive",
    "desc": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
    "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
-   "at": "2026-11-24T15:14:23+00:00"
+   "at": "2026-11-24T16:48:49+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump presenting Rudy Giuliani with Presidential Medal of Freedom",
+   "desc": "Rudy Giuliani, the former mayor of New York City who worked as a personal lawyer to President Trump, said he will be honored in the Oval Office.",
+   "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/",
+   "at": "2026-11-24T16:44:57+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+   "desc": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
+   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
+   "at": "2026-11-24T16:42:57+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia shares fall 8% as Huang comeback rally cools",
+   "desc": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+   "at": "2026-11-24T16:38:21+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Rep. Omar D.C. home search sought evidence going back to 1980",
+   "desc": "The warrant application covers a 46-year period beginning in 1980, long before Omar was in Congress, according to newly released court records. The documents are heavily redacted, and no criminal charges are listed.",
+   "url": "https://www.cbsnews.com/news/ilhan-omar-home-search-documents-magistrate-judge-probable-cause/",
+   "at": "2026-11-24T16:36:32+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
+   "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
+   "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
+   "at": "2026-11-24T16:29:17+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+   "desc": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
+   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+   "at": "2026-11-24T16:06:07+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
+   "desc": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
+   "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html",
+   "at": "2026-11-24T15:56:26+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
+   "desc": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
+   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
+   "at": "2026-11-24T15:49:27+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Meet Sighle Williams, a beloved drive-thru worker and star of a new Netflix documentary",
+   "desc": "Sighle Williams, the star of the Netflix short documentary \"One Last Order,\" which comes out Tuesday, joins \"CBS Mornings\" to talk about her community impact after working 37 years at Mac's Drive Thru in Gainesville, Florida.",
+   "url": "https://www.cbsnews.com/video/meet-sighle-williams-a-beloved-drive-thru-worker-and-star-of-a-new-netflix-documentary/",
+   "at": "2026-11-24T15:49:08+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Kushner-backed OakNorth secures U.S. bank charter as global digital banks push into America",
+   "desc": "U.K. digital bank OakNorth has secured a U.S. national bank charter as it seeks to expand amid growing competition from international rivals.",
+   "url": "https://www.cnbc.com/2026/11/24/oaknorth-us-bank-charter.html",
+   "at": "2026-11-24T15:34:10+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Forgot to grab wine for Thanksgiving? Here are some last-minute options, according to an expert",
+   "desc": "Ray Isle, the wine editor at \"Food & Wine,\" joins \"CBS Mornings\" to share his favorite affordable picks for a last-minute wine run ahead of Thanksgiving.",
+   "url": "https://www.cbsnews.com/video/forgot-to-grab-wine-for-thanksgiving-here-are-some-last-minute-options-according-to-a-wine-expert/",
+   "at": "2026-11-24T15:29:36+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Quitting can actually be the key to success, says expert: It's one of the 'most courageous moves you can make'",
+   "desc": "'\"Never give up\" is bad advice, according to author Lindsay Crouse. Here's what she recommends instead.",
+   "url": "https://www.cnbc.com/make-it/2026/11/24/how-to-know-when-to-quit.html",
+   "at": "2026-11-24T15:25:37+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
+   "desc": "Kress led the company for 11 days during Huang’s sudden departure and steered Nvidia through billions in AI financing deals before that. Now she's back to CFO.",
+   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
+   "at": "2026-11-24T15:19:46+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "How working caregivers can take care of themselves",
+   "desc": "Candace Dellacona, an estates and trust lawyer who hosts the podcast \"The Sandwich Generation Survival Guide,\" joins \"CBS Mornings\" to discuss how working caregivers can take care of themselves.",
+   "url": "https://www.cbsnews.com/video/how-working-caregivers-can-take-care-of-themselves/",
+   "at": "2026-11-24T15:15:54+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Here's how one robotaxi company is working to avoid accidents",
+   "desc": "Kris Van Cleave looks at how Nuro, a new autonomous vehicle company, tests their cars to avoid accidents and traffic jams.",
+   "url": "https://www.cbsnews.com/video/heres-how-one-robotaxi-company-is-working-to-avoid-accidents/",
+   "at": "2026-11-24T15:09:49+00:00"
   },
   {
    "source": "CNBC",
@@ -52,32 +164,11 @@
    "at": "2026-11-24T14:46:01+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Nvidia shares fall over 5% after Huang comeback rally",
-   "desc": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
-   "at": "2026-11-24T14:43:53+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-   "desc": "Sanofi faces a revenue drop towards the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
-   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "at": "2026-11-24T14:35:05+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
    "desc": "Albania's Prime Minister Edi Rama has vowed that Kushner's resort project will go ahead as planned. But an ongoing investigation by Albania's state prosecutor into forged land titles could halt the project.",
    "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
    "at": "2026-11-24T14:24:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump to present Rudy Giuliani with Presidential Medal of Freedom",
-   "desc": "Rudy Giuliani, the former mayor of New York City who worked as a personal lawyer to President Trump, said he will be honored in the Oval Office.",
-   "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/",
-   "at": "2026-11-24T14:23:43+00:00"
   },
   {
    "source": "CBS News",
@@ -242,13 +333,6 @@
   },
   {
    "source": "NPR",
-   "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
-   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
-   "at": "2026-11-24T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "Meet Colombia's fuzzy 'water guardians'",
    "desc": "High in the Colombian Andes, a growing number of volunteers are racing to save an unusual plant that helps supply water to millions — one tiny seedling at a time.",
    "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
@@ -262,11 +346,11 @@
    "at": "2026-11-24T10:00:00+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "AI adoption grows in Asia, but measuring the gains remains tricky",
-   "desc": "Businesses across Asia-Pacific are seeing returns from AI investments, even as confidence in measuring those gains varies, according to an AWS survey.",
-   "url": "https://www.cnbc.com/2026/11/24/aws-asia-gains-roi.html",
-   "at": "2026-11-24T05:07:16+00:00"
+   "source": "NPR",
+   "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
+   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+   "at": "2026-11-24T10:00:00+00:00"
   },
   {
    "source": "CNBC",
@@ -276,13 +360,6 @@
    "at": "2026-11-24T05:05:08+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "No. 2 Official at F.B.I. Is Said to Be Retiring Before End of Year",
-   "desc": "The departure of Christopher G. Raia, a veteran agent, comes a few months after another deputy left the F.B.I.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/fbi-raia-retiring.html",
-   "at": "2026-11-24T04:38:49+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
    "desc": "China is increasingly focused on containing India economically rather than through military actions.",
@@ -290,39 +367,11 @@
    "at": "2026-11-24T04:27:38+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Appeals court clears way for Army to detonate Iowa explosives",
-   "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
-   "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
-   "at": "2026-11-24T03:21:47+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "More American Women Are Turning to Natural Family Planning, Study Shows",
    "desc": "Researchers found that more than 2.2 million women were using a fertility-awareness method, which requires them to chart their cycles closely.",
    "url": "https://www.nytimes.com/2026/11/23/us/natural-family-planning-study.html",
    "at": "2026-11-24T03:06:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy",
-   "desc": "The U.S. has added Megaspeed and six other companies to its trade blacklist over concerns about the potential diversion of advanced computing products.",
-   "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
-   "at": "2026-11-24T02:37:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
-   "desc": "Kress steered the company through billions in AI financing deals and during Huang's sudden departure. Now she's back to full-time CFO.",
-   "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
-   "at": "2026-11-24T02:21:06+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
-   "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
-   "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
-   "at": "2026-11-24T02:21:00+00:00"
   },
   {
    "source": "CNBC",
@@ -406,14 +455,7 @@
    "title": "Nasdaq gains 6.5% after Huang reinstated as Nvidia CEO",
    "desc": "The Nasdaq Composite closed 6.5% higher, erasing all of its losses from Friday, when the index suffered its second-worst day of 2026.",
    "url": "https://www.cbsnews.com/news/us-stock-futures-rebound-tech-rout/",
-   "at": "2026-11-24T01:12:57+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Tech outages and impending storms causing Thanksgiving travel concern",
-   "desc": "Delta Air Lines flights resumed on Monday after a systemwide outage caused massive delays on Sunday. Meanwhile, authorities in San Francisco expressed concern about severe flooding that could impact airports and roads. Kris Van Cleave reports and Rob Marciano has the forecast.",
-   "url": "https://www.cbsnews.com/video/tech-outages-impending-storms-causing-thanksgiving-travel-concern/",
-   "at": "2026-11-24T01:05:56+00:00"
+   "at": "2026-11-24T01:12:00+00:00"
   },
   {
    "source": "CNBC",
@@ -444,27 +486,6 @@
    "at": "2026-11-24T00:42:18+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Is America's Future Dependent On One CEO?",
-   "desc": "Jensen Huang is back as Nvidia's CEO just eleven days after being ousted over an affair with an alleged Chinese spy. Powerful voices in tech, an extreme market dip, and the president himself are just some reasons for his return. David Feith, senior fellow at the Hudson Institute, says Huang has been wrong, and even dangerous, when it comes to chip security. He breaks down how much the country's AI future depends on one man.",
-   "url": "https://www.cbsnews.com/video/is-americas-future-dependent-on-one-ceo-great-question/",
-   "at": "2026-11-24T00:32:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump tells Army to halt detonation for now in Iowa this week",
-   "desc": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
-   "url": "https://www.cbsnews.com/news/trump-tells-army-to-halt-detonation-in-iowa-this-week/",
-   "at": "2026-11-23T23:51:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump sealed deal for Nvidia to rehire Jensen Huang as CEO",
-   "desc": "President Trump said his administration gave Nvidia's board assurance that Jensen Huang would not be a national security threat if he was reinstated as CEO.",
-   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
-   "at": "2026-11-23T23:42:17+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang",
    "desc": "The president set in motion a weekend of maneuvering, led by Vice President JD Vance, to help Jensen Huang get his old job back.",
@@ -486,25 +507,11 @@
    "at": "2026-11-23T23:30:00+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
-   "desc": "The U.S. Army plans to detonate 68 drums of lead azide in Iowa despite local leaders and residents raising concerns.",
-   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
-   "at": "2026-11-23T23:26:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Nvidia sets options-trading record after CEO comeback. Here are the big trades",
    "desc": "Nvidia break record for single stock options volume",
    "url": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
    "at": "2026-11-23T23:24:02+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "DNI Jay Clayton tapped as acting national cyber director",
-   "desc": "President Donald Trump last week said he decided to replace Sean Cairncross as national cyber director \"because I didn't think that person was good enough.\"",
-   "url": "https://www.cnbc.com/2026/11/23/jay-clayton-cyber-director-kirsten-davies-trump.html",
-   "at": "2026-11-23T23:02:18+00:00"
   },
   {
    "source": "New York Times",
@@ -519,13 +526,6 @@
    "desc": "Nine people were injured in the crash, which occurred in Columbus when one of the buses veered into the next lane, the police said.",
    "url": "https://www.nytimes.com/2026/11/23/us/columbus-ohio-bus-crash.html",
    "at": "2026-11-23T22:13:03+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/23: The Takeout with Major Garrett",
-   "desc": "Jensen Huang reinstated as Nvidia CEO; Iran says it will use all means to end U.S. naval blockade.",
-   "url": "https://www.cbsnews.com/video/112326-the-takeout-with-major-garrett/",
-   "at": "2026-11-23T22:00:00+00:00"
   },
   {
    "source": "CNBC",
@@ -547,13 +547,6 @@
    "desc": "A tool developed by researchers at Vanderbilt University is detecting A.I.-generated social media posts that support the policies of the Chinese Communist Party.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/taiwan-elections-misinformation.html",
    "at": "2026-11-23T21:32:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Nvidia CEO Jensen Huang resigns in wake of affair, spy scandal",
-   "desc": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
-   "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/",
-   "at": "2026-11-23T21:19:00+00:00"
   },
   {
    "source": "CNBC",
@@ -596,20 +589,6 @@
    "desc": "Politicians in both parties questioned the move, with some asking whether the president was prioritizing the stock market over national security.",
    "url": "https://www.nytimes.com/2026/11/23/us/politics/trump-nvidia-huang-congress-criticism.html",
    "at": "2026-11-23T18:08:18+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Squeezed for Space in Court Filings, Lawyers Get Typographically Creative",
-   "desc": "Manipulating page formatting and fonts can help exceed word limits in legal filings, but can also incur a judge’s ire.",
-   "url": "https://www.nytimes.com/2026/11/23/us/federal-court-typography-rules.html",
-   "at": "2026-11-23T16:49:39+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "D.N.C. Plans 12 Debates for the 2028 Presidential Primary, Starting in June",
-   "desc": "The national party also revealed some initial criteria for participating, including a pledge to denounce spending from supportive groups that do not disclose their donors.",
-   "url": "https://www.nytimes.com/2026/11/23/us/politics/democrats-debates-2028-presidential-race.html",
-   "at": "2026-11-23T15:32:55+00:00"
   }
  ]
 }

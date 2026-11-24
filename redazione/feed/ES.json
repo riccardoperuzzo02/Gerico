@@ -1,7 +1,77 @@
 {
  "code": "ES",
- "asOf": "2026-11-24T15:17:36+00:00",
+ "asOf": "2026-11-24T17:17:40+00:00",
  "items": [
+  {
+   "source": "20minutos",
+   "title": "Cuando sufrir un infarto se convierte en superstición: los vecinos agotaron el número escogido de la Lotería de Navidad",
+   "desc": "La historia en Guadalajara de un hombre que sufrió un infarto al comprar Lotería de Navidad y desató la venta masiva del número de la suerte.",
+   "url": "https://www.20minutos.es/loterias/loteria-navidad/cuando-sufrir-un-infarto-se-convierte-supersticion-los-vecinos-agotaron-numero-escogido-loteria-navidad_7065203_0.html",
+   "at": "2026-11-24T16:55:01+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "Tensión entre la matriarca del clan y el imputado durante el interrogatorio telemático Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b056e6ce85ece73128b456e.html",
+   "at": "2026-11-24T16:53:05+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Educación",
+   "desc": "La patronal calcula que con el real decreto aprobado este martes por el Gobierno se destruirán más de 220.000 plazas y cerca de 60.000 puestos de trabajo Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b05af95e9cf4add278b45b6.html",
+   "at": "2026-11-24T16:50:56+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "AEMET advierte de que la entrada de aire frío sobre la Península se verá favorecida por la formación de un sistema de bajas presiones sobre Francia, con una situación de inestabilidad Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b05bc67e9cf4aab1f8b458b.html",
+   "at": "2026-11-24T16:39:36+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El PP rectifica y apoya el pacto de Estado de que piden las víctimas de Adamuz y suscriben PSOE, Vox y otras ocho formaciones",
+   "desc": "La Asociación de Víctimas del Descarrilamiento de Adamuz celebra que el PP se haya sumado a una iniciativa que ya han \"formalizado\" el PP, Vox, Frente Amplio, Podemos, ERC, Adelante Andalucía e Izquierda Española.",
+   "url": "https://www.20minutos.es/nacional/pp-rectifica-apoya-pacto-estado-que-piden-las-victimas-adamuz-suscriben-psoe-vox-otras-ocho-formaciones_7065177_0.html",
+   "at": "2026-11-24T16:13:14+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Aagesen facilita el autoconsumo colectivo y regula las comunidades energéticas en el último Consejo de Ministros antes del 29-N",
+   "desc": "Crea la figura de los excedentes compartidos para fomentar autoconsumo en terrenos de propietarios que no necesiten tanta electricidad o que un mismo consumidor pueda participar en varios autonconsumos, como pedía la industria.",
+   "url": "https://www.20minutos.es/nacional/aagesen-facilita-autoconsumo-colectivo-regula-las-comunidades-energeticas-ultimo-consejo-ministros-antes-29-n_7065132_0.html",
+   "at": "2026-11-24T16:02:29+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "Considera \"desproporcionada\" la petición de Iustitia Europa \"si el argumento justificativo es la falta u omisión de un protocolo uniforme que pueda dar respuesta a las incidencias\" Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b059a91e4d4d88e6b8b4582.html",
+   "at": "2026-11-24T15:55:16+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "Circulaba junto a una mujer y tras chocar contra el camión salió corriendo",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b05af0ce9cf4adf4d8b45af.html",
+   "at": "2026-11-24T15:39:10+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El juez del ‘caso Leire Díez’ reclama más información al PSOE para saber quién autorizó los pagos a sus abogados",
+   "desc": "El instructor deja en manos de los juzgados de Madrid investigar los pagos de ‘OkDiario’ a la abogada del exasesor ministerial Koldo García",
+   "url": "https://elpais.com/espana/2026-11-24/el-juez-del-caso-leire-diez-reclama-mas-informacion-al-psoe-para-saber-quien-autorizo-los-pagos-a-sus-abogados.html",
+   "at": "2026-11-24T15:35:40+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "España",
+   "desc": "Abuchean e insultan a la portavoz de los 'populares' en el Congreso y al cabeza de lista por Guipúzcoa Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b057cd9e9cf4a3f6b8b457e.html",
+   "at": "2026-11-24T15:17:47+00:00"
+  },
   {
    "source": "20minutos",
    "title": "Exteriores afirma que los consulados siguen la indicación del Supremo de \"custodiar y diferenciar\" los votos por ley de nietos",
@@ -11,10 +81,17 @@
   },
   {
    "source": "20minutos",
-   "title": "El juez del caso Leire Díez pide al PSOE que amplíe la documentación presentada sobre la contratación de abogados",
+   "title": "El juez del caso Leire pide al PSOE que aporte toda la documentación sobre el fichaje de abogados tras detectar que está incompleta",
    "desc": "El magistrado solicita las notas de encargo sobre las que se emitieron las facturas que, hasta el momento, no han sido aportadas.",
    "url": "https://www.20minutos.es/nacional/juez-caso-leire-diez-pide-psoe-que-amplie-documentacion-presentada-sobre-contratacion-abogados_7065220_0.html",
    "at": "2026-11-24T14:48:56+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Los ideólogos de la derecha ultracatólica rebajan su discurso en la campaña electoral: “No mezclemos fe con política”",
+   "desc": "La Asociación Católica de Propagandistas sigue la estela de Vox y aparta su agresividad contra el Gobierno, el matrimonio igualitario, la conquista de América o el 8M",
+   "url": "https://elpais.com/espana/2026-11-24/los-ideologos-de-la-derecha-ultracatolica-rebajan-su-discurso-en-la-campana-electoral-no-mezclemos-fe-con-politica.html",
+   "at": "2026-11-24T14:43:21+00:00"
   },
   {
    "source": "El Mundo",
@@ -54,7 +131,7 @@
   {
    "source": "20minutos",
    "title": "Comprar una vivienda exige más del 45% de los ingresos en nueve capitales de provincia",
-   "desc": "Al descontar el efecto de la inflación, el valor medio de la vivienda se mantiene todavía por debajo del techo de la serie histórica, pese a que el esfuerzo medio para comprar una casa supera el nivel considerado \"razonable\", según Tinsa.",
+   "desc": "Al descontar el efecto de la inflación, el precio medio se mantiene todavía un 31% por debajo del máximo de la burbuja, pese a que el esfuerzo para comprar supera el nivel considerado \"razonable\", según Tinsa.",
    "url": "https://www.20minutos.es/nacional/comprar-una-vivienda-exige-mas-45-los-ingresos-nueve-capitales-provincia_7065124_0.html",
    "at": "2026-11-24T14:18:30+00:00"
   },
@@ -89,7 +166,7 @@
   {
    "source": "El País",
    "title": "Errejón y otros testigos niegan conocer irregularidades en el rescate de Air Europa",
-   "desc": "El exdiputado ha confesado a la puerta del juzgado que él no tenía nada que ver con la ayuda a la aerolínea y el expresidente de la SEPI ha explicado que los procedimientos fueron correctos",
+   "desc": "El exdiputado ha confesado a la puerta del juzgado que él no tenía nada que ver con la ayuda a la aerolínea y el exdirector de Participadas de la SEPI ha explicado que los procedimientos fueron correctos",
    "url": "https://elpais.com/espana/2026-11-24/errejon-y-otros-testigos-niegan-conocer-irregularidades-en-el-rescate-de-air-europa.html",
    "at": "2026-11-24T12:47:03+00:00"
   },
@@ -122,13 +199,6 @@
    "at": "2026-11-24T12:21:13+00:00"
   },
   {
-   "source": "El Mundo",
-   "title": "España",
-   "desc": "Abuchean e insultan a la portavoz de los 'populares' en el Congreso y al cabeza de lista por Guipúzcoa Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/24/6b057cd9e9cf4a3f6b8b457e.html",
-   "at": "2026-11-24T12:13:25+00:00"
-  },
-  {
    "source": "El País",
    "title": "Los 499 mensajes de Óscar Puente en campaña: “Cuando tuitea, se nota. Es un activo para el PSOE”",
    "desc": "Un análisis de tweetelecciones.com, una web creada por el español Javier Abrego, destaca que la derecha gana en interacciones, mientras que entre los candidatos Pedro Sánchez y el exministro de Transportes arrasan",
@@ -144,22 +214,15 @@
   },
   {
    "source": "El País",
-   "title": "Muere un operario de luces navideñas en Santander al ser atropellado por un coche que huía de la Policía",
-   "desc": "El compañero y hermano del fallecido se encuentra herido grave. Se ha detenido al fugitivo, que conducía bajo los efectos de sustancias",
-   "url": "https://elpais.com/espana/2026-11-24/muere-un-operario-de-luces-navidenas-en-santander-al-ser-atropellado-por-un-coche-que-huia-de-la-policia.html",
-   "at": "2026-11-24T11:41:20+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Detenidas dos personas en Barcelona vinculadas a la red de financiación de Hamás",
+   "title": "Dos detenidos en Barcelona vinculados a la red de financiación de Hamás",
    "desc": "Los arrestados, que han ingresado en prisión, están relacionados con una red que transfería fondos a la organización terrorista en la franja de Gaza",
    "url": "https://elpais.com/espana/2026-11-24/detenidas-dos-personas-en-barcelona-vinculadas-a-la-red-de-financiacion-de-hamas.html",
    "at": "2026-11-24T11:36:49+00:00"
   },
   {
    "source": "20minutos",
-   "title": "El Gobierno se adelanta un mes y prorroga ya las ayudas al transporte para 2027 antes de quedar en funciones tras el 29 N",
-   "desc": "Se mantiene el abono transporte gratis hasta 14 años y el descuento del 50% para los menores de 26. El descuento del 20% del abono general que debe completarse con aportación autonómica podría bajar al 10% a partir de julio si así lo estipuala la AIRef.",
+   "title": "El Gobierno se adelanta un mes y prorroga ya las ayudas al transporte para 2027 antes de quedar en funciones tras el 29-N",
+   "desc": "Se mantiene el abono transporte gratis hasta 14 años y el descuento del 50% para los menores de 26. El descuento del 20% del abono general que debe completarse con aportación autonómica podría bajar al 10% a partir de julio si así lo estipula la Airef.",
    "url": "https://www.20minutos.es/nacional/gobierno-se-adelanta-un-mes-prorroga-ya-las-ayudas-transporte-para-2027-antes-quedar-funciones-tras-29-n_7065071_0.html",
    "at": "2026-11-24T11:27:17+00:00"
   },
@@ -176,13 +239,6 @@
    "desc": "La reunión está marcada por la aprobación de varias medidas que el Ejecutivo tenía pendientes en materia educativa y en relación al permiso por fallecimiento de familiares.",
    "url": "https://www.20minutos.es/nacional/sigue-directo-ultimo-consejo-ministros-legislatura-antes-29-n_7064932_0.html",
    "at": "2026-11-24T11:05:15+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "Tensión entre la matriarca del clan y el imputado durante el interrogatorio telemático Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/24/6b056e6ce85ece73128b456e.html",
-   "at": "2026-11-24T11:03:27+00:00"
   },
   {
    "source": "El Mundo",
@@ -243,7 +299,7 @@
   {
    "source": "20minutos",
    "title": "El Gobierno amplía a 20 semanas el permiso por nacimiento a solo cinco días del 29-N",
-   "desc": "El Consejo de Ministros ha aprobado este martes la medida, que también contempla la ampliación a 34 semanas para las familias monomarentales. El decreto ley tendrá que ser convalidado por la Diputación Permanente, después de las elecciones y antes de que se constituyan las nuevas Cortes.",
+   "desc": "El Consejo de Ministros ha aprobado este martes la medida, que también amplía lo amplía a 34 semanas para familias monomarentales. El decreto ley entra en vigor este jueves, pero tendrá que ser convalidado por la Diputación Permanente después de las elecciones.",
    "url": "https://www.20minutos.es/nacional/gobierno-amplia-20-semanas-permiso-por-nacimiento_7064962_0.html",
    "at": "2026-11-24T09:20:33+00:00"
   },
@@ -281,13 +337,6 @@
    "desc": "Hay aviso amarillo por acumulación de al menos cinco centímetros de nieve en Asturias (suroccidental, Cordillera Cantábrica y Picos de Europa), León (Cordillera Cantábrica), Lugo y Ourense (montaña), y Zamora (Sanabria) Leer",
    "url": "https://www.elmundo.es/espana/2026/11/24/6b05393321efa0ec428b458d.html",
    "at": "2026-11-24T07:14:00+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Muñoz: “¿Qué quiere, ser el portavoz del PSOE?”. Rufián: “De lo que no tengo ni puñetera gana es de que usted sea ministra”",
-   "desc": "Vox y los populares mantienen su pacto de no agresión y el portavoz de ERC rebaja las críticas a los socialistas de los mítines compartidos con Podemos",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/munoz-que-quiere-ser-el-portavoz-del-psoe-rufian-de-lo-que-no-tengo-ni-punetera-gana-es-de-que-usted-sea-ministra.html",
-   "at": "2026-11-24T07:01:28+00:00"
   },
   {
    "source": "20minutos",
@@ -329,20 +378,6 @@
    "title": "Enganchados a la política",
    "desc": "El duelo entre Pedro Sánchez y Alberto Núñez Feijóo pulverizó todas las marcas de audiencias: la política interesa, y es una muy buena noticia.",
    "url": "https://www.20minutos.es/nacional/enganchados-politica_7064857_3.html",
-   "at": "2026-11-24T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El camino pendiente hacia la accesibilidad real: cómo avanzar en inclusión",
-   "desc": "Representantes de empresas, fundaciones, certificadores y tecnológicas debaten sobre cómo avanzar en inclusión en un foro de 20minutos en colaboración con Acciona",
-   "url": "https://www.20minutos.es/nacional/camino-pendiente-hacia-accesibilidad-real-como-avanzar-inclusion_7064769_0.html",
-   "at": "2026-11-24T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "¿Qué debe hacer el Gobierno con la vivienda? los lectores de 20minutos piden construir más, pisos públicos y perseguir los fondos buitre",
-   "desc": "Los usuarios de este periódico proponen también habilitar suelo, adoptar medidas para movilizar vivienda vacía, frenar la okupación o bajar impuestos a las compraventas.",
-   "url": "https://www.20minutos.es/nacional/que-debe-hacer-gobierno-con-vivienda-los-lectores-20minutos-piden-construir-mas-pisos-publicos-perseguir-los-fondos-buitre_7064353_0.html",
    "at": "2026-11-24T04:00:00+00:00"
   },
   {
@@ -409,13 +444,6 @@
    "at": "2026-11-23T21:49:55+00:00"
   },
   {
-   "source": "El Mundo",
-   "title": "29-N",
-   "desc": "Considera que Sánchez \"impugnará el proceso si es necesario\" para que se contabilicen votos de nacionalizados por la 'ley de nietos' Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b049d72e9cf4abb598b45af.html",
-   "at": "2026-11-23T20:12:32+00:00"
-  },
-  {
    "source": "20minutos",
    "title": "PP y Vox llaman \"cómplices\" a los socios del PSOE, que se unen contra su posible Gobierno en un debate con posturas muy enfrentadas",
    "desc": "La campaña de las elecciones generales encara este lunes una nueva cita televisiva.",
@@ -428,13 +456,6 @@
    "desc": "El manifiesto está firmado por la rapera Sara Socas, las actrices Vicky Peña y Mercedes Samprieto y el pintor Antonio López Leer",
    "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b046504e9cf4add278b457d.html",
    "at": "2026-11-23T18:29:55+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Elecciones generales 2026",
-   "desc": "\"El liderazgo de un país no puede ser mercenario, que no me tiren de la lengua ni me obliguen a entrar en campaña\", advierte el ex presidente del Gobierno Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/23/6b042561e85eceed0a8b457d.html",
-   "at": "2026-11-23T15:41:19+00:00"
   }
  ]
 }

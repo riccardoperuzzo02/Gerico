@@ -1,7 +1,91 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T15:17:36+00:00",
+ "asOf": "2026-11-24T17:17:40+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Berliner Linksfraktion: Berliner Linke schließt Vanessa Emde aus der Fraktion aus",
+   "desc": "Nach viel Kritik an ihrer Position zum Nahost-Konflikt und mangelnder Kompromissbereitschaft schließt die Berliner Linksfraktion Vanessa Emde aus. Sie bleibt Abgeordnete.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/berliner-linke-schliesst-vanessa-emde-aus-der-fraktion-aus",
+   "at": "2026-11-24T17:08:01+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Berliner Linke schließt Emde aus Fraktion aus",
+   "desc": "Wochenlang diskutierten Grüne, SPD und Linke in Berlin über die Personalie Emde. Die Abgeordnete steht wegen ihrer Positionen zu Israel in der Kritik. Nun hat die Fraktion mit der nötigen Mehrheit für ihren Ausschluss gestimmt.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/emde-ausschluss-berlin-linke-100.html",
+   "at": "2026-11-24T17:07:13+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Alexander Sokurow: Wladimir Putin schließt bekannten Regisseur aus Menschenrechtsrat aus",
+   "desc": "Alexander Sokurow kritisierte 2025 Diskriminierung Andersdenkender in Russland sowie Zensur von Filmen. Wladimir Putin schloss ihn daher aus dem Menschenrechtsrat aus.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/alexander-sokurow-wladimir-putin-menschenrechtsrat-russland-zensur",
+   "at": "2026-11-24T17:02:54+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Forsa-Umfrage: Unzufriedenheit mit Friedrich Merz nimmt laut Trendbarometer weiter zu",
+   "desc": "Der Bundeskanzler schafft es dem »Trendbarometer« von RTL und ntv zufolge nicht aus seinem Umfragetief. In der sogenannten Sonntagsfrage liegt die AfD klar vor der CDU.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/forsa-umfrage-friedrich-merz-kanzler-unzufriedenheit-parteipraeferenzen",
+   "at": "2026-11-24T16:44:52+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Vanessa Emde: Berliner Linke schließt umstrittene Politikerin aus Fraktion aus",
+   "desc": "Wochenlange Debatten über die Israelgegnerin Vanessa Emde belasteten die Regierungsbildung in Berlin. Nun hat die Linke-Fraktion in geheimer Abstimmung beschlossen: Die umstrittene Linkenabgeordnete muss gehen.",
+   "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-berliner-linke-schliesst-umstrittene-politikerin-aus-fraktion-aus-a-d376bd08-93e1-46d3-86ec-a3f81025d59f",
+   "at": "2026-11-24T16:38:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Volkswagen, SPIEGEL-Umfrage, teurer Christstollen",
+   "desc": "In der Autoindustrie wackelt die 35-Stunden-Woche. Viele Deutsche stehen der militärischen Unterstützung der Ukraine skeptisch gegenüber. Und Sachsens Staatskanzlei lässt einen Christstollen per Dienstwagen zum Papst chauffieren. Das ist die Lage am Dienstagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-volkswagen-spiegel-umfrage-teurer-christstollen-a-8102ca83-070f-41f7-8fa2-157092ca8452",
+   "at": "2026-11-24T16:36:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bundeswehr setzt im Fall von russischen Atomsprengköpfen im All auf elektronische Abwehr",
+   "desc": "Westliche Geheimdienste gehen wohl davon aus, dass Russland zeitnah einen Atomsprengkopf ins All bringen könnte. Die deutschen Streitkräfte würden in diesem Fall die Mittel »Stören, Blenden und Hacken« setzen.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundeswehr-setzt-im-fall-von-russischen-atomsprengkoepfen-im-all-auf-elektronische-abwehr-a-24a268ff-aeaa-444c-9c49-df83f2d2408c",
+   "at": "2026-11-24T16:32:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Stromsteuer: Stromsteuersenkung soll knapp fünf Milliarden Euro kosten",
+   "desc": "Union und SPD wollen Bürger und Unternehmen im kommenden Jahr bei den Stromkosten entlasten. Das Geld dafür soll aus der Ökostromförderung kommen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-senkung-koalition-kosten-haushalt-lars-klingbeil-nina-warken",
+   "at": "2026-11-24T16:30:36+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Gewalt gegen Frauen: Was die Bundesregierung gegen Gewalt an Frauen tun will",
+   "desc": "Immer mehr Frauen werden Opfer von Gewalt: Was lässt sich dagegen tun? Und: Warum mischt sich Donald Trump in die Führung von Nvidia ein?",
+   "url": "https://www.zeit.de/politik/2026-11/gewalt-frauen-bka-menschenhandel-nachrichtenpodcast",
+   "at": "2026-11-24T16:16:54+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Ukraine-Hilfe: Mehrheit in Deutschland lehnt militärische Unterstützung ab",
+   "desc": "Laut einer Umfrage sind die meisten Menschen in Deutschland gegen militärische Unterstützung für die Ukraine. Außenminister Johann Wadephul zeigt sich besorgt – und warnt davor, Wladimir Putin zu unterschätzen.",
+   "url": "https://www.spiegel.de/politik/deutschland/ukraine-hilfe-mehrheit-in-deutschland-lehnt-militaerische-unterstuetzung-ab-a-62f2289c-ef54-44ac-9435-d9788c730d10",
+   "at": "2026-11-24T15:53:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Bilanz des Spendenrats: Deutsche spenden wieder mehr",
+   "desc": "Die Deutschen spenden wieder mehr, doch die Zahl der Spender geht zurück. Das geht aus der Bilanz des Spendenrats hervor. Besonders eine Altersgruppe gibt auffällig viel - und eine andere auffällig wenig.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/spendenrat-bilanz-100.html",
+   "at": "2026-11-24T15:42:18+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Müssen Geflüchtete bei Taliban-Diplomaten vorsprechen?",
+   "desc": "Seit 2024 gibt es Sammelabschiebungen nach Afghanistan und Absprachen mit den Taliban. Taliban-Vertreter sind in Konsulaten in Deutschland aktiv. Dort müssen Geflüchtete vorsprechen, auf Anordnung deutscher Behörden. Ist das zulässig? Von Max Bauer.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-gefluechtete-taliban-100.html",
+   "at": "2026-11-24T15:18:02+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Taliban lassen Abschiebeflug verschieben",
@@ -26,7 +110,7 @@
   {
    "source": "Die Zeit",
    "title": "Deutsch-französische Beziehungen: Frankreichs Präsidentschaftswahl beunruhigt deutsche Unternehmen",
-   "desc": "Werde in Frankreich eine Rechtspopulistin oder ein Linkspopulist Präsident, könnten sich die Wirtschaftsbeziehungen verschlechtern. Davor warnen deutsche Unternehmen.",
+   "desc": "Wird in Frankreich eine Rechtspopulistin oder ein Linkspopulist Präsident, könnten sich die Wirtschaftsbeziehungen verschlechtern. Davor warnen deutsche Unternehmen.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/deutsch-franzoesische-beziehungen-frankreich-praesidentschaft-le-pen-jean-luc-melenchon-wirtschaft-handel-gxe",
    "at": "2026-11-24T14:44:19+00:00"
   },
@@ -143,34 +227,6 @@
    "at": "2026-11-24T08:10:45+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Ukrainekarte aktuell: Ukrainische Armee stößt bei Nowopawliwka vor",
-   "desc": "In der Region Dnipropetrowsk sind ukrainische Einheiten nördlich von Datschne vorgerückt. Russische Truppen haben bei Kupjansk in der Region Charkiw Gelände eingenommen.",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
-   "at": "2026-11-24T07:56:33+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Mariupol: Sie beugt sich dem Druck der Besatzer",
-   "desc": "Eine geflohene Ukrainerin fährt erstmals wieder in ihre Heimat Mariupol – und muss die russische Staatsbürgerschaft annehmen. Sonst würde sie ihre Wohnung verlieren.",
-   "url": "https://www.zeit.de/2026/50/mariupol-russland-besatzung-eigentum-zwang-russischer-pass",
-   "at": "2026-11-24T07:27:58+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Vanessa Emde: Berliner Linke entscheidet über Fraktionsausschluss von Vanessa Emde",
-   "desc": "Nach Wochen des Streits stimmt die Linksfraktion heute über den Ausschluss der Abgeordneten Vanessa Emde ab. Sie steht wegen Äußerungen zum Nahostkonflikt in der Kritik.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-berlin-abgeordnete-fraktion-ausschluss-gxe",
-   "at": "2026-11-24T06:49:38+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Vanessa Emde: Berliner Linke entscheidet über Fraktionsausschluss von Vanessa Emde",
-   "desc": "Nach Wochen des Streits stimmt die Linksfraktion heute über den Ausschluss der Abgeordneten Vanessa Emde ab. Sie steht wegen Äußerungen zum Nahostkonflikt in der Kritik.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-linke-berlin-abgeordnete-fraktion-ausschluss-gxe",
-   "at": "2026-11-24T06:49:38+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Worum es in der Haushaltswoche im Bundestag geht",
    "desc": "2027 will die Bundesregierung in ihrem Haushalt 560 Milliarden Euro ausgeben. Doch dafür muss der Bundestag dem Etat zustimmen. Deshalb geht es in dieser Woche noch einmal ums Ganze. Von Jan-Peter Bartels.",
@@ -190,13 +246,6 @@
    "desc": "Kuschelkurs oder klare Distanz? Über den Umgang mit der AfD ist im BSW ein heftiger Streit entbrannt. Parteigründerin Sahra Wagenknecht hofft nun auf einen Kompromiss.",
    "url": "https://www.spiegel.de/politik/deutschland/bsw-bundesparteitag-in-dresden-aenderungen-an-leitantrag-bsw-will-streit-ueber-umgang-mit-der-afd-befrieden-a-8f9d7605-f39e-4805-be85-659d368f9b7c",
    "at": "2026-11-24T06:44:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gianni De Gennaro: Sein Tod erschüttert Italien",
-   "desc": "Der Suizid des Polizeichefs Giovanni De Gennaro bewegt das Land – und erinnert an die Mafiaattentate der Neunziger. Das Fundament der italienischen Republik bröckelt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/gianni-de-gennaro-polizeichef-suizid-italien-5vor8",
-   "at": "2026-11-24T06:36:50+00:00"
   },
   {
    "source": "Tagesschau",
@@ -225,34 +274,6 @@
    "desc": "Hubert Aiwanger war die zentrale Führungsfigur der Freien Wähler: Landes- und Bundeschef, bayerischer Wirtschaftsminister und Vize-Ministerpräsident. Nach seinem Tod verteilt die Partei die Posten auf mehrere Schultern. Von P. Jerabek und R. Kirschner.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/aiwanger-nachfolge-freie-waehler-100.html",
    "at": "2026-11-23T17:47:10+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Nuklearwaffen im All, Jensen Huang ist wieder Nvdia-Chef, Markus Söder stichelt",
-   "desc": "Nvidia holt den gerade erst zurückgetretenen Jensen Huang zurück. Russland könnte einen Atomsprengkopf ins Weltall befördern. Und Bayern bekommt einen neuen Söder-Stellvertreter. Das ist die Lage am Montagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-nuklearwaffen-im-all-jensen-huang-ist-wieder-nvdia-chef-markus-soeder-stichelt-a-f6ebc8d2-6e04-409f-9a0e-ac87c9817537",
-   "at": "2026-11-23T16:44:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Ukraine: Friedrich Merz und Mark Rutte bekräftigen Sicherheitsgarantien",
-   "desc": "Der Bundeskanzler und der Nato-Generalsekretär fordern Sicherheitsgarantien für die Ukraine. Diese würden einem Bündnisbeitritt sehr nahekommen, gelobt Merz. Er äußerte sich auch zu den in Polen abgestürzten Marschflugkörpern.",
-   "url": "https://www.spiegel.de/politik/deutschland/nato-treffen-in-berlin-friedrich-merz-und-mark-rutte-bekraeftigen-sicherheitsgarantien-fuer-die-ukraine-a-8466115a-c858-4447-907a-07adb51289ee",
-   "at": "2026-11-23T16:21:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bochum: AfD-Spitze will Bundestagsabgeordneten aus der Partei werfen",
-   "desc": "Der Machtkampf der AfD in Nordrhein-Westfalen eskaliert weiter. Nun soll der Bundestagsabgeordnete Knuth Meyer-Soltau die Partei verlassen. Die Personalie hängt zusammen mit der Aufstellung für die NRW-Landtagswahl 2027.",
-   "url": "https://www.spiegel.de/politik/deutschland/afd-bundesvorstand-will-bochumer-bundestagsabgeordneten-loswerden-a-1fad12cb-c4ca-4645-bc34-6be932e49cee",
-   "at": "2026-11-23T16:09:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Markus Söder: Was bezweckt der CSU-Chef mit seiner Forderung zur kalten Progression?",
-   "desc": "Kurz vor Ende der Haushaltsberatungen kämpft Markus Söder plötzlich gegen die Steuermehrbelastung. Seine Forderung nach einem Ausgleich der kalten Progression deuten einige in der Union als Angriff auf den Kanzler.",
-   "url": "https://www.spiegel.de/politik/deutschland/markus-soeder-was-bezweckt-der-csu-chef-mit-seiner-forderung-zur-kalten-progression-a-3973a8bf-7dea-4dcd-b65a-e11176df237a",
-   "at": "2026-11-23T16:08:00+00:00"
   }
  ]
 }

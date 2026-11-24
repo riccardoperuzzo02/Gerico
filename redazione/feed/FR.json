@@ -1,13 +1,97 @@
 {
  "code": "FR",
- "asOf": "2026-11-24T05:17:34+00:00",
+ "asOf": "2026-11-24T07:17:34+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "La France va se doter de \"stocks stratégiques\" de terres rares et \"métaux prioritaires\", annonce l'Elysée",
+   "desc": "Ce projet sera piloté par la Caisse des dépôts, qui doit désormais consulter les industriels des secteurs stratégiques utilisant ces matières premières incontournables.",
+   "url": "https://www.franceinfo.fr/economie/industrie/la-france-va-se-doter-de-stocks-strategiques-de-terres-rares-et-metaux-prioritaires-annonce-l-elysee_8296749.html",
+   "at": "2026-11-24T06:49:35+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le chef Michel Dumas, connu pour ses vidéos de cuisine sur les réseaux sociaux, est mort à l'âge de 72 ans, annonce son fils",
+   "desc": "Il était atteint d'un cancer de la prostate.",
+   "url": "https://www.franceinfo.fr/culture/cuisine/le-chef-michel-dumas-connu-pour-ses-videos-de-cuisine-sur-les-reseaux-sociaux-est-mort-a-l-age-de-72-ans-annonce-son-fils_8297175.html",
+   "at": "2026-11-24T06:48:02+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Avec \"Jupiter\", en salles mercredi, le thriller nucléaire revient-il en force au cinéma ?",
+   "desc": "Ce lundi, la journaliste Anne-Marie Revol dédie sa chronique culture à un film atypique : \"Jupiter\", d'Alexandre Smia, qui nous plonge au cœur d'une crise politique internationale, située dans un futur proche. Le président français, incarné par Denis Ménochet, doit faire face à un dilemme stratégique, retranché dans l'abri antiatomique de l'Élysée.Une séquence à retrouver dans l'émission \"À suivre Loïc de la Mornais\", diffusée entre 20h30 et 23h sur la chaîne info, canal 16.",
+   "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/avec-jupiter-en-salles-mercredi-le-thriller-nucleaire-revient-il-en-force-au-cinema_8297187.html",
+   "at": "2026-11-24T06:47:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des avions militaires russes ont pénétré la zone de défense aérienne sud-coréenne",
+   "desc": "Un appareil s'est approché de l'île d'Ulleung, au large de la côte est du pays. Le ministère de l'Intérieur a envoyé une alerte aux habitants, les exhortant à se mettre à l'abri.",
+   "url": "https://www.franceinfo.fr/monde/coree-du-sud/des-avions-militaires-russes-ont-penetre-la-zone-de-defense-aerienne-sud-coreenne_8297037.html",
+   "at": "2026-11-24T06:46:40+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Sébastien Lecornu tend la main aux parlementaires pour un compromis sur le budget, sans toucher au déficit",
+   "desc": "Faute de majorité, le Premier ministre s'est adressé aux parlementaires dans un courrier, afin de trouver \"une voie de passage\".",
+   "url": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-tend-la-main-aux-parlementaires-pour-un-compromis-sur-le-budget-sans-toucher-au-deficit_8297160.html",
+   "at": "2026-11-24T06:43:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le gouvernement américain place sur liste noire l'entreprise singapourienne au cœur du scandale Nvidia",
+   "desc": "La mesure est motivée \"par le risque important que ces entités soient ou deviennent impliquées dans le détournement de produits informatiques de pointe vers des utilisations finales ou des utilisateurs finaux non autorisés\".",
+   "url": "https://www.franceinfo.fr/internet/nvidia/le-gouvernement-americain-place-sur-liste-noire-l-entreprise-singapourienne-au-c-ur-du-scandale-nvidia_8297025.html",
+   "at": "2026-11-24T06:38:57+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Depuis janvier, les Français ont retiré près de 10 milliards d'euros de leur livret A, qui connaît sa pire année depuis 2008",
+   "desc": "\"Dans un contexte de baisse du pouvoir d'achat avec la hausse du coût de l'énergie, les ménages ont été amenés à puiser dans leurs livrets\", explique le directeur du Cercle de l'Epargne.",
+   "url": "https://www.franceinfo.fr/economie/votre-argent/livret-a/depuis-janvier-les-francais-ont-retire-pres-de-10-milliards-d-euros-de-leurs-livrets-a-qui-connait-sa-pire-annee-depuis-2008_8297058.html",
+   "at": "2026-11-24T06:36:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : le Congrès des maires s'ouvre, plusieurs candidats attendus sur place",
+   "desc": "A cinq mois de l'élection présidentielle, la rencontre prend inévitablement une dimension politique nationale, la plupart des candidats ayant prévu de faire le déplacement, à l'exception de Marine Le Pen et Jean-Luc Mélenchon.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html",
+   "at": "2026-11-24T06:26:39+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Dès qu'on voit des promos, on stocke à la maison et on cache\" : de plus en plus de Français profitent du Black Friday pour faire leurs cadeaux de Noël",
+   "desc": "Huit Français sur dix comptent profiter du Black Friday pour acheter leurs cadeaux de Noël, un niveau inédit. Franceinfo a rencontré des personnes déjà en mission, dans les rues de Paris.",
+   "url": "https://www.franceinfo.fr/economie/pouvoir-achat/reportage-des-qu-on-voit-des-promos-on-stocke-a-la-maison-et-on-cache-de-plus-en-plus-de-francais-profitent-du-black-friday-pour-faire-leurs-cadeaux-de-noel_8296566.html",
+   "at": "2026-11-24T05:54:39+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "L’alcool, toujours un fléau sur les routes, en hausse d’expérimentation chez les mineurs",
+   "desc": "Si la consommation d’alcool a baissé chez les adultes, elle reste un danger sur la route et joue un rôle dans un quart des accidents mortels en 2025, selon une étude de l’Observatoire français des drogues et des tendances addictives.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/l-alcool-toujours-un-fleau-sur-les-routes-en-hausse-d-experimentation-chez-les-mineurs_6814713_3224.html",
+   "at": "2026-11-24T05:46:25+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Disparition de Sophie Chéênne en 1996 à Laval : de nouvelles investigations vont être menées par les gendarmes",
+   "desc": "Le pôle cold case de Nanterre a délivré une nouvelle commission rogatoire, qui va notamment permettre de réaliser des analyses scientifiques afin d'établir le profil génétique de la disparue.",
+   "url": "https://www.franceinfo.fr/faits-divers/info-radio-france-disparition-de-sophie-cheenne-en-1996-a-laval-de-nouvelles-investigations-vont-etre-menees-par-les-gendarmes_8297088.html",
+   "at": "2026-11-24T05:37:11+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"On n'est plus à une surprise près\" : pourquoi Emmanuel Macron envisage-t-il de créer une règle d'or budgétaire à cinq mois de la présidentielle ?",
+   "desc": "Le président de la République réfléchit à faire inscrire dans la Constitution une sorte de \"règle d'or\" budgétaire en faisant adopter une réforme de 2011 qui n'a jamais abouti. Mais cette initiative du chef de l'Etat, brandie dans un timing étonnant, peut-elle réellement être couronnée de succès ?",
+   "url": "https://www.franceinfo.fr/politique/emmanuel-macron/on-n-est-plus-a-une-surprise-pres-pourquoi-emmanuel-macron-envisage-t-il-de-creer-une-regle-d-or-budgetaire-a-cinq-mois-de-la-presidentielle_8295866.html",
+   "at": "2026-11-24T05:16:18+00:00"
+  },
   {
    "source": "Le Monde",
    "title": "Déraillement d’un TER en Normandie : quatre hommes interpellés pour acte de malveillance présumé",
    "desc": "La garde à vue d’un père de 45 ans, de ses deux fils jumeaux, âgés de 22 ans, et d’un autre homme interpellés lundi matin près de Rouen, peut durer jusqu’à quatre-vingt-seize heures. Un morceau de rail avait été découvert sur les voies après l’accident qui avait fait 44 blessés, le 11 septembre 2026.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/24/deraillement-d-un-ter-en-normandie-quatre-hommes-interpelles-pour-acte-de-malveillance-presume_6814711_3224.html",
-   "at": "2026-11-24T05:10:42+00:00"
+   "at": "2026-11-24T05:10:40+00:00"
   },
   {
    "source": "Le Monde",
@@ -17,6 +101,13 @@
    "at": "2026-11-24T05:00:40+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "Loi \"permis de tuer\" : \"c'est aussi dire que la victime est coupable\", la colère d'un père endeuillé après un contrôle policier",
+   "desc": "Dans le contexte de la loi sur la présomption de légitime défense pour les forces de l’ordre a été définitivement adoptée par le Parlement vendredi 20 novembre. Elle pourra donc prochainement être promulguée. Cela provoque la colère d'Issam El Kalfaoui, dont le fils de 19 ans a été tué par un policier à Marseille, il y a cinq ans. I",
+   "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/temoignage-loi-permis-de-tuer-c-est-aussi-dire-que-la-victime-est-coupable-la-colere-d-un-pere-endeuille-apres-un-controle-policier-3454694.html",
+   "at": "2026-11-24T05:00:33+00:00"
+  },
+  {
    "source": "Le Monde",
    "title": "« Je suis une enfant gâtée, c’est sûr » : en Inde, la jeunesse dorée profite de ses privilèges",
    "desc": "« Inde, la jeunesse fracturée » (2/4). Si une vaste majorité de jeunes Indiens souffre de l’absence de perspectives, d’autres, plus fortunés, jouissent d’un train de vie privilégié dans un pays connu pour ses inégalités.",
@@ -24,18 +115,18 @@
    "at": "2026-11-24T05:00:31+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Monsieur Bonbon, démission !\", réagit Foodwatch après la nomination de l'ancien PDG d'Haribo pour copiloter l’action de l’État sur l’alimentation",
-   "desc": "L'association de défense des consommateurs en matière d'alimentation qualifie l'arrivée de Jean-Philippe André comme l'équivalent de \"confier les clés du poulailler au renard\". Avec d'autres organisations, ils ont adressé une lettre au Premier ministre.",
-   "url": "https://www.franceinfo.fr/sante/alimentation/monsieur-bonbon-demission-reagit-foodwatch-apres-la-nomination-de-l-ancien-pdg-d-haribo-pour-copiloter-l-action-de-l-etat-sur-l-alimentation_8296659.html",
-   "at": "2026-11-24T05:00:04+00:00"
+   "source": "Le Monde",
+   "title": "Mouvement lycéen : la délicate et précaire reprise des cours dans les établissements les plus mobilisés",
+   "desc": "Face à une situation tendue et volatile, des proviseurs tentent de rouvrir leur établissement et de reconstruire de l’unité. Entre reprise en petits effectifs et rencontres entre lycéens ou avec les parents d’élèves, chaque lycée teste sa propre recette.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/mouvement-lyceen-la-delicate-et-precaire-reprise-des-cours-dans-les-etablissements-les-plus-mobilises_6814703_3224.html",
+   "at": "2026-11-24T05:00:08+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "\"Making Marie-Antoinette\" : Eleanor Coppola adresse, dans un documentaire émouvant, une lettre d'amour à sa fille et au cinéma",
-   "desc": "Le film est à voir sur la plateforme Mubi, à l'occasion des 20 ans de la sortie du \"Marie-Antoinette\" de Sofia Coppola.",
-   "url": "https://www.franceinfo.fr/culture/cinema/making-marie-antoinette-eleanor-coppola-adresse-dans-un-documentaire-emouvant-une-lettre-d-amour-a-sa-fille-et-au-cinema_8276408.html",
-   "at": "2026-11-24T05:00:01+00:00"
+   "title": "\"Monsieur Bonbon, démission !\", réagit Foodwatch après la nomination de l'ancien PDG d'Haribo pour copiloter l'action de l’État sur l’alimentation",
+   "desc": "L'association de défense des consommateurs en matière d'alimentation qualifie l'arrivée de Jean-Philippe André comme l'équivalent de \"confier les clés du poulailler au renard\". Avec d'autres organisations, ils ont adressé une lettre au Premier ministre.",
+   "url": "https://www.franceinfo.fr/sante/alimentation/monsieur-bonbon-demission-reagit-foodwatch-apres-la-nomination-de-l-ancien-pdg-d-haribo-pour-copiloter-l-action-de-l-etat-sur-l-alimentation_8296659.html",
+   "at": "2026-11-24T05:00:04+00:00"
   },
   {
    "source": "franceinfo",
@@ -43,13 +134,6 @@
    "desc": "\"Nous devons veiller à ce que les compétences médicales restent prioritairement mobilisées au service des patients\", a plaidé la ministre de la Santé, Stéphanie Rist, après la publication d'un décret limitant la médecine esthétique à 30% du temps de travail des soignants.",
    "url": "https://www.franceinfo.fr/sante/securite-des-patients-ou-affichage-politique-on-vous-explique-le-conflit-entre-les-dermatologues-et-le-gouvernement-sur-l-encadrement-de-la-medecine-esthetique_8295836.html",
    "at": "2026-11-24T04:59:37+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"On n'est plus à une surprise près\" : pourquoi Emmanuel Macron envisage-t-il de créer une règle d'or budgétaire à cinq mois de la présidentielle ?",
-   "desc": "Le président de la République réfléchit à faire inscrire dans la Constitution une sorte de \"règle d'or\" budgétaire en faisant adopter une réforme de 2011 qui n'a jamais abouti. Mais dans cette initiative du chef de l'Etat, brandie dans un timing étonnant, à quelques mois de la fin de son mandat, peut-elle réellement aboutir ?",
-   "url": "https://www.franceinfo.fr/politique/emmanuel-macron/on-n-est-plus-a-une-surprise-pres-pourquoi-emmanuel-macron-envisage-t-il-de-creer-une-regle-d-or-budgetaire-a-cinq-mois-de-la-presidentielle_8295866.html",
-   "at": "2026-11-24T04:58:26+00:00"
   },
   {
    "source": "franceinfo",
@@ -68,7 +152,7 @@
   {
    "source": "Le Monde",
    "title": "Le « come-back » spectaculaire de Jensen Huang à la tête de Nvidia, sous la pression de Donald Trump et des marchés financiers",
-   "desc": "Ecarté il y a onze jours après la révélation de sa relation extraconjugale avec une femme soupçonnée de transmettre des informations aux services secrets chinois, le PDG a été réintégré, lundi, par le conseil d’administration du géant des semi-conducteurs.",
+   "desc": "Poussé à la démission le 12 novembre après la révélation de sa relation extraconjugale avec une femme soupçonnée de transmettre des informations aux services secrets chinois, le PDG a été réintégré, lundi, par le conseil d’administration du géant des semi-conducteurs.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/24/le-come-back-spectaculaire-de-jensen-huang-a-la-tete-de-nvidia-sous-la-pression-de-donald-trump-et-des-marches-financiers_6814669_3234.html",
    "at": "2026-11-24T04:30:09+00:00"
   },
@@ -78,13 +162,6 @@
    "desc": "L’atonie de l’activité économique française et la remontée du chômage freinent la répercussion de l’envolée des cours du pétrole et du gaz à l’ensemble de l’économie. Mais la donne pourrait changer.",
    "url": "https://www.lemonde.fr/economie/article/2026/11/24/inflation-pourquoi-la-hausse-des-cours-de-l-energie-tarde-a-se-repercuter-sur-l-ensemble-des-prix-en-france_6814604_3234.html",
    "at": "2026-11-24T04:00:12+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Les séries de la semaine : « Blade Runner 2099 », « Le Cinéma selon Cunk », « The Altruists » et « Snake Killer »",
-   "desc": "Chaque mardi, La Matinale du « Monde » propose une sélection de séries à découvrir sur petit écran. Aujourd’hui, notamment, une histoire du cinéma en 90 minutes, livrée par une créature issue du cerveau retors de Charlie Brooker.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/24/les-series-de-la-semaine-blade-runner-2099-le-cinema-selon-cunk-the-altruists-et-snake-killer_6814603_3246.html",
-   "at": "2026-11-24T03:30:10+00:00"
   },
   {
    "source": "Le Monde",
@@ -101,39 +178,18 @@
    "at": "2026-11-24T01:31:59+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "La France va se doter de \"stocks stratégiques\" de terres rares et \"métaux prioritaires\", annonce l'Elysée",
-   "desc": "Ce projet sera piloté par la Caisse des dépôts qui doit désormais consulter les industriels des secteurs stratégiques utilisant ces matières premières incontournables.",
-   "url": "https://www.franceinfo.fr/economie/industrie/la-france-va-se-doter-de-stocks-strategiques-de-terres-rares-et-metaux-prioritaires-annonce-l-elysee_8296749.html",
-   "at": "2026-11-23T23:34:43+00:00"
+   "source": "Le Monde",
+   "title": "Six députés LFI portent plainte à la suite de menaces de mort anonymes",
+   "desc": "Les courriers haineux reçus par les élus « insoumis », qui dénoncent une inaction des autorités, comportaient aussi des croix gammées.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/24/six-deputes-lfi-portent-plainte-pour-des-menaces-de-mort-anonymes_6814471_3224.html",
+   "at": "2026-11-24T00:09:13+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "Une intersyndicale des étudiants et des enseignants du supérieur appelle à la mobilisation le 26 novembre",
-   "desc": "\"Après des semaines de mobilisation inédite, les réponses du gouvernement restent insuffisantes\", affirment lundi dans un communiqué commun des syndicats de l'enseignement supérieur et des organisations étudiantes.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/une-intersyndicale-des-etudiants-et-des-enseignants-du-superieur-appelle-a-la-mobilisation-le-26-novembre_8296851.html",
-   "at": "2026-11-23T23:29:58+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Jordan Bardella affirme qu'\"à sa connaissance\" personne au RN n'a bénéficié de fuites et juge \"étrange\" le \"timing\" de la perquisition du siège de son parti",
+   "title": "Jordan Bardella affirme qu'\"à sa connaissance\", personne au RN n'a bénéficié de fuites, et juge \"étrange\" le \"timing\" de la perquisition du siège de son parti",
    "desc": "\"J'espère (...) que la perquisition qui a eu lieu\" le 9 novembre \"n'avait aucun autre but que le but qui a été mentionné à l'occasion de cette affaire\", a avancé le président du RN sur BFMTV lundi soir.",
    "url": "https://www.franceinfo.fr/politique/front-national/jordan-bardella-affirme-qu-a-sa-connaissance-personne-au-rn-n-a-beneficie-de-fuites-et-juge-etrange-le-timing-de-la-perquisition-du-siege-de-son-parti_8296713.html",
    "at": "2026-11-23T22:56:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Cette caravane, c'est le plus digne que j'ai trouvé\" : en Espagne, le logement au cœur d'une crise profonde",
-   "desc": "Direction l'Espagne, ce lundi 23 novembre, à six jours des élections législatives, que Pedro Sànchez a été contraint de convoquer à cause de la crise du logement. Avec les loyers qui s’envolent, des familles sont contraintes de quitter leur maison. À Madrid, l’expulsion de Maricarmen a été le symbole d'un mouvement qui ne cesse de prendre de l'ampleur.",
-   "url": "https://www.franceinfo.fr/monde/espagne/cette-caravane-c-est-le-plus-digne-que-j-ai-trouve-en-espagne-le-logement-au-c-ur-d-une-crise-profonde_8296770.html",
-   "at": "2026-11-23T22:45:45+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Il y a des matins où je n'arrivais même plus à me lever\" : alerte au CBD ultra-toxique, vendu sur internet et jusqu'en boutiques",
-   "desc": "Les boutiques de CBD, où l'on peut acheter légalement des fleurs de chanvre ou des liquides à vapoter, se sont multipliées en France. Mais que contiennent vraiment les produits vendus sous l’étiquette “CBD” ? Les autorités sanitaires ont recensé plusieurs centaines d’intoxications après la consommation de produits présentés comme du CBD, qui contiennent pour certains des drogues de synthèse.",
-   "url": "https://www.franceinfo.fr/sante/drogue-addictions/il-y-a-des-matins-ou-je-n-arrivais-meme-plus-a-me-lever-alerte-au-cbd-ultra-toxique-vendu-sur-internet-et-jusqu-en-boutiques_8296758.html",
-   "at": "2026-11-23T22:38:29+00:00"
   },
   {
    "source": "franceinfo",
@@ -151,13 +207,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Six députés de la France insoumise vont porter plainte pour des menaces de mort anonymes",
-   "desc": "Les députés Eric Coquerel, Antoine Léaument, Sarah Legrain, Marie Mesmeur, Thomas Portes et Carlos Martens Bilongo doivent se rendre mardi au commissariat pour déposer cette plainte commune.",
-   "url": "https://www.franceinfo.fr/societe/justice/six-deputes-de-la-france-insoumise-vont-porter-plainte-pour-des-menaces-de-mort-anonymes_8296824.html",
-   "at": "2026-11-23T22:18:21+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Michel Zecler : \"Les policiers qui m'ont tapé se sont dit que je ne sentais pas les coups...\"",
    "desc": "Michel Zecler est producteur de musique et auteur de \"Rester debout\" (Plon). Dans \"C Ce Soir\", ce 23 novembre 2026, il revient sur le verdict de la justice après la violente agression qu'il a subie par des policiers, dans son studio de musique, en novembre 2020.",
    "url": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/les-policiers-qui-m-ont-tape-se-sont-dit-que-je-ne-sentais-pas-les-coups-michel-zecler_8296704.html",
@@ -169,13 +218,6 @@
    "desc": "Le président du Rassemblement national écarte toutefois toute sanction contre la porte-parole de campagne de Marine Le Pen et lui et lui assure son soutien.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/23/jordan-bardella-deplore-la-faute-de-la-deputee-rn-laure-lavalette-accusee-d-avoir-cautionne-des-ecrits-antisemites-dans-les-annees-1990_6814453_823448.html",
    "at": "2026-11-23T21:51:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le département du Pas-de-Calais et la région Haut-de-France annoncent qu'ils vont payer les franchises d'assurances des sinistrés après les intempéries",
-   "desc": "Le département du Pas-de-Calais et la région des Hauts-de-France vont activer ce dispositif, en complément de la procédure accélérée pour obtenir la reconnaissance de l'état de catastrophe naturelle annoncée par le préfet,",
-   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-departement-du-pas-de-calais-et-la-region-haut-de-france-annoncent-qu-ils-vont-payer-les-franchises-d-assurances-des-sinistres-apres-les-intemperies_8296794.html",
-   "at": "2026-11-23T21:21:51+00:00"
   },
   {
    "source": "France 24",
@@ -200,7 +242,7 @@
   },
   {
    "source": "Le Monde",
-   "title": "Le prix de L’Equerre d’argent distingue la restructuration du Musée des arts décoratifs et du design de Bordeaux",
+   "title": "Le prix de l’Equerre d’argent distingue la restructuration du Musée des arts décoratifs et du design de Bordeaux",
    "desc": "Le jury de cette 44ᵉ édition a récompensé, lundi, le projet réalisé par l’agence Antoine Dufour pour le soin apporté aux détails, la grande finesse du dessin et la maîtrise de toutes les dimensions du processus de transformation.",
    "url": "https://www.lemonde.fr/culture/article/2026/11/23/le-prix-de-l-equerre-d-argent-distingue-la-restructuration-du-musee-des-arts-decoratifs-et-du-design-de-bordeaux_6814448_3246.html",
    "at": "2026-11-23T20:33:06+00:00"
@@ -211,13 +253,6 @@
    "desc": "La justice a été saisie le 29 octobre par le commandant de l’établissement situé à Cannes-Ecluse, sur la base de l’article 40 du code de procédure pénale, qui oblige les agents publics à signaler d’éventuelles infractions pénales.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/23/une-enquete-ouverte-dans-une-ecole-de-police-de-seine-et-marne-apres-des-accusations-de-racisme-de-salut-nazi-et-d-agression-sexuelle_6814447_3224.html",
    "at": "2026-11-23T20:12:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'encaissement de plus d'un million de chèques bloqué à cause d'une grève d'agents des finances publiques à Rennes",
-   "desc": "Ces agents travaillent dans un centre des finances publiques qui gère l'encaissement des chèques pour le paiement des amendes ou encore des factures d'hôpitaux. La fermeture du site est prévue prochainement.",
-   "url": "https://www.franceinfo.fr/economie/greve/l-encaissement-de-plus-d-un-million-de-cheques-bloque-a-cause-d-une-greve-d-agents-des-finances-publiques-a-rennes_8296731.html",
-   "at": "2026-11-23T20:08:23+00:00"
   },
   {
    "source": "France 24",
@@ -232,13 +267,6 @@
    "desc": "Valérie Pécresse, présidente de la région Ile-de-France, a convoqué une réunion d’urgence avec les acteurs concernés et enjoint Alstom, concepteur du système d’automatisation, à trouver « des solutions pour fiabiliser son logiciel ».",
    "url": "https://www.lemonde.fr/economie/article/2026/11/23/grand-paris-express-l-ouverture-de-la-nouvelle-ligne-18-du-metro-plus-compromise-que-jamais_6814446_3234.html",
    "at": "2026-11-23T19:57:41+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les députés socialistes saisissent le Conseil constitutionnel sur la loi instaurant une présomption d'usage légal des armes",
-   "desc": "Le texte prévoit que \"lorsqu'ils font usage de leurs armes\", policiers et gendarmes \"sont présumés avoir agi\" dans le cadre de la loi. Les députés socialistes s'inquiètent notamment, dans leur saisine, de la difficulté à renverser cette présomption de légalité.",
-   "url": "https://www.franceinfo.fr/politique/les-deputes-socialistes-saisissent-le-conseil-constitutionnel-sur-la-loi-instaurant-une-presomption-d-usage-legal-des-armes_8296668.html",
-   "at": "2026-11-23T19:54:33+00:00"
   },
   {
    "source": "Le Monde",
@@ -270,24 +298,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "L'Iran réclame 290 milliards de dollars de dédommagements aux Etats-Unis après la guerre lancée le 28 février",
-   "desc": "Ces procédures couvrent aussi les actions américaines sur plusieurs décennies, selon la télévision d'Etat.",
-   "url": "https://www.franceinfo.fr/monde/iran/frappes-americaines-en-iran/l-iran-reclame-290-milliards-de-dollars-de-dedommagements-aux-etats-unis-apres-la-guerre-lancee-le-28-fevrier_8296214.html",
-   "at": "2026-11-23T17:31:50+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Faut-il changer les dates de l'élection présidentielle ? On fait le point sur ce débat qui agite la classe politique",
    "desc": "Les dates entérinées par l'exécutif prévoient un premier tour le 18 avril, et un second tour le 2 mai. Or, cela pose différents casse-tête à la classe politique, aux syndicats... et aux médias.",
    "url": "https://www.franceinfo.fr/elections/presidentielle/faut-il-changer-les-dates-de-l-election-presidentielle-on-fait-le-point-sur-le-debat-politique-sur-cette-question_8296431.html",
    "at": "2026-11-23T17:15:13+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "De la chute du PDG de Nvidia à son retour aux commandes, comment une affaire d'adultère et d'espionnage a fait vaciller le secteur de l'IA",
-   "desc": "Jensen Huang, l'emblématique patron du géant des puces électroniques, a quitté son poste le 12 novembre. Mais le conseil d'administration de l'entreprise a finalement décidé de le réintégrer, dix jours après le scandale lié aux relations extraconjugales du dirigeant, dont sa liaison avec Alice Huang, accusée d'espionnage industriel pour la Chine.",
-   "url": "https://www.franceinfo.fr/internet/nvidia/recit-des-premieres-revelations-a-la-chute-du-pdg-de-nvidia-comment-une-affaire-d-adultere-provoque-un-seisme-dans-le-secteur-de-l-ia_8280752.html",
-   "at": "2026-11-23T16:14:45+00:00"
   },
   {
    "source": "France 24",
@@ -297,25 +311,11 @@
    "at": "2026-11-23T16:00:26+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "« Making Marie Antoinette », sur Mubi : la cinéaste Sofia Coppola révélée par la caméra de sa mère",
-   "desc": "Le documentaire tiré des images filmées par Eleanor Coppola sur le tournage de « Marie Antoinette », en 2005, est autant une célébration de l’artisanat du cinéma qu’un émouvant hommage d’une mère à sa fille.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/23/making-marie-antoinette-sur-mubi-la-cineaste-sofia-coppola-revelee-par-la-camera-de-sa-mere_6814410_3246.html",
-   "at": "2026-11-23T16:00:16+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Le président de la commission des finances de l'Assemblée nationale, Éric Coquerel, se dit \"fondamentalement opposé\" au projet d'instauration d'une \"règle d'or\" budgétaire",
    "desc": "Cela revient selon lui à \"constitutionnaliser\" une \"politique économique\". Le député insoumis réagit au système pour repousser le risque d'une crise financière, imaginé par Emmanuel Macron.",
    "url": "https://www.franceinfo.fr/economie/le-depute-insoumis-eric-coquerel-se-dit-fondamentalement-oppose-au-projet-d-instauration-d-une-regle-d-or-budgetaire_8296287.html",
    "at": "2026-11-23T15:35:31+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Deux navires russes attaqués dans les eaux libyennes, une extension inédite de la guerre russo-ukrainienne",
-   "desc": "Le président ukrainien, Volodymyr Zelensky, a revendiqué, lundi 23 novembre, le double assaut mené la veille par « sept drones navals » dans la zone maritime de Benghazi. Une telle attaque contre des bateaux russes transportant de l’armement permet à Kiev de montrer que ses forces sont en mesure de frapper les intérêts de Moscou où qu’ils se trouvent.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/23/deux-navires-russes-attaques-dans-les-eaux-libyennes-une-extension-inedite-de-la-guerre-russo-ukrainienne_6814397_3212.html",
-   "at": "2026-11-23T15:00:09+00:00"
   },
   {
    "source": "France 24",

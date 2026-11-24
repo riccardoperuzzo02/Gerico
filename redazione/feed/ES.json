@@ -1,7 +1,35 @@
 {
  "code": "ES",
- "asOf": "2026-11-24T05:17:34+00:00",
+ "asOf": "2026-11-24T07:17:34+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "El tiempo",
+   "desc": "Hay aviso amarillo por acumulación de al menos cinco centímetros de nieve en Asturias (suroccidental, Cordillera Cantábrica y Picos de Europa), León (Cordillera Cantábrica), Lugo y Ourense (montaña), y Zamora (Sanabria) Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b05393321efa0ec428b458d.html",
+   "at": "2026-11-24T07:14:00+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Muñoz: “¿Qué quiere, ser el portavoz del PSOE?”. Rufián: “De lo que no tengo ni puñetera gana es de que usted sea ministra”",
+   "desc": "Vox y los populares mantienen su pacto de no agresión y el portavoz de ERC rebaja las críticas a los socialistas en los mítines compartidos con Podemos",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/munoz-que-quiere-ser-el-portavoz-del-psoe-rufian-de-lo-que-no-tengo-ni-punetera-gana-es-de-que-usted-sea-ministra.html",
+   "at": "2026-11-24T07:01:28+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "¿Quién decide qué es una familia?",
+   "desc": "Las experiencias LGTBIQ+ nos invitan a ampliar nuestra comprensión de la familia y a preguntarnos qué relaciones consideramos merecedoras de protección y reconocimiento.",
+   "url": "https://www.20minutos.es/nacional/blogs/1-de-cada10/quien-decide-que-es-una-familia_7058345_0.html",
+   "at": "2026-11-24T06:30:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Juan Ávila (PP): \"Mejorar la industrialización, el campo y las infraestructuras de Andalucía es mejorar España\"",
+   "desc": "El cabeza de cartel del PP al Senado por la provincia de Sevilla pide a los ciudadanos \"dar una oportunidad\" a Alberto Núñez Feijóo, al que define como un \"hombre de palabra, serio, buen gestor y una persona con dignidad\".",
+   "url": "https://www.20minutos.es/nacional/elecciones-generales/juan-avila-pp-mejorar-industrializacion-campo-las-infraestructuras-andalucia-es-mejorar-espana_7063371_0.html",
+   "at": "2026-11-24T05:43:23+00:00"
+  },
   {
    "source": "El País",
    "title": "El trascendental voto de las mujeres, que superan en 1,2 millones a los hombres en el censo y son mayoría entre los indecisos",
@@ -18,7 +46,7 @@
   },
   {
    "source": "El País",
-   "title": "De las ‘autoinvitarse’ al programa de Jordi Wild a ir siempre de amarillo: la lucha por atraer atención de SALF y Democracia 21",
+   "title": "De ‘autoinvitarse’ al programa de Jordi Wild a ir siempre de amarillo: la lucha por atraer atención de SALF y Democracia 21",
    "desc": "El ultraderechista Alvise Pérez, que recibe un 5% de los votantes de Vox según el CIS, corteja a autónomos y animalistas. La centrista Miriam González promete una drástica poda de “asesores”. Los dos tienen las encuestas en contra",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/de-las-autoinvitarse-al-programa-de-jordi-wild-a-ir-siempre-de-amarillo-la-lucha-por-atraer-atencion-de-salf-y-democracia-21.html",
    "at": "2026-11-24T04:30:01+00:00"
@@ -53,6 +81,20 @@
   },
   {
    "source": "20minutos",
+   "title": "El bipartidismo apela al \"voto útil\" en la recta final de la campaña entre críticas de Vox, Frente Amplio y Podemos",
+   "desc": "PSOE y PP intensifican sus llamadas a concentrar el voto para atraer a los indecisos y los votantes de fuerzas afines, mientras el resto de la izquierda y de la derecha advierten del riesgo de intentar fagocitarlos.",
+   "url": "https://www.20minutos.es/nacional/bipartidismo-apela-voto-util-recta-final-campana-entre-criticas-vox-frente-amplio-podemos_7064736_0.html",
+   "at": "2026-11-24T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Montero: \"Frente Amplio y PSOE no solo tienen cercanía, también la misma lectura de Gobierno\"",
+   "desc": "La candidata de Podemos el 29-N conversa con 20minutos y se erige en \"la tercera opción\" frente a la \"involución\" de PP y Vox y los \"parches\" del Ejecutivo a los grandes problemas del país.",
+   "url": "https://www.20minutos.es/nacional/irene-montero-frente-amplio-psoe-no-solo-tienen-cercania-tambien-misma-lectura-gobierno_7062742_0.html",
+   "at": "2026-11-24T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
    "title": "Enganchados a la política",
    "desc": "El duelo entre Pedro Sánchez y Alberto Núñez Feijóo pulverizó todas las marcas de audiencias: la política interesa, y es una muy buena noticia.",
    "url": "https://www.20minutos.es/nacional/enganchados-politica_7064857_3.html",
@@ -67,23 +109,9 @@
   },
   {
    "source": "20minutos",
-   "title": "El bipartidismo apela al \"voto útil\" en la recta final de la campaña entre críticas de Vox, Frente Amplio y Podemos",
-   "desc": "PSOE y PP intensifican sus llamadas a concentrar el voto para atraer a los indecisos y los votantes de fuerzas afines, mientras el resto de la izquierda y de la derecha advierten del riesgo de intentar fagocitarlos.",
-   "url": "https://www.20minutos.es/nacional/bipartidismo-apela-voto-util-recta-final-campana-entre-criticas-vox-frente-amplio-podemos_7064736_0.html",
-   "at": "2026-11-24T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "¿Qué debe hacer el Gobierno con la vivienda? los lectores de 20minutos piden construir más, pisos públicos y perseguir los fondos buitre",
    "desc": "Los usuarios de este periódico proponen también habilitar suelo, adoptar medidas para movilizar vivienda vacía, frenar la okupación o bajar impuestos a las compraventas.",
    "url": "https://www.20minutos.es/nacional/que-debe-hacer-gobierno-con-vivienda-los-lectores-20minutos-piden-construir-mas-pisos-publicos-perseguir-los-fondos-buitre_7064353_0.html",
-   "at": "2026-11-24T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Irene Montero: \"Frente Amplio y el PSOE no solo tienen cercanía, también la misma lectura de Gobierno\"",
-   "desc": "La candidata de Podemos el 29-N conversa con 20minutos y se erige en \"la tercera opción\" frente a la \"involución\" de PP y Vox y los \"parches\" del Ejecutivo a los grandes problemas del país.",
-   "url": "https://www.20minutos.es/nacional/irene-montero-frente-amplio-psoe-no-solo-tienen-cercania-tambien-misma-lectura-gobierno_7062742_0.html",
    "at": "2026-11-24T04:00:00+00:00"
   },
   {
@@ -122,13 +150,6 @@
    "at": "2026-11-23T23:41:24+00:00"
   },
   {
-   "source": "El País",
-   "title": "Mentiras, inexactitudes y medias verdades en el debate entre los ocho portavoces",
-   "desc": "La portavoz de Vox acusa a la inmigración de la crisis de la vivienda y los salarios y la del PP niega haber congelado las pensiones",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/mentiras-inexactitudes-y-medias-verdades-en-el-debate-entre-los-ocho-portavoces.html",
-   "at": "2026-11-23T23:33:20+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Elecciones generales 2026",
    "desc": "Desde el PP, se plantea la necesaria reforma del Sistema Nacional de Salud \"con planificación, con diálogo y con recursos económico\". Y se apuesta por una ley de paliativos que conviva con la ley de eutanasia, \"una no sustituye a la otra, pero las dos son absolutamente esenciales\" Leer",
@@ -151,7 +172,7 @@
   },
   {
    "source": "20minutos",
-   "title": "Rifirrafe entre Ester Muñoz y Gabriel Rufián en el debate a ocho: \"Cálmate, ya sé que eres un 'Braveheart' de Temu\"",
+   "title": "Rifirrafe entre Muñoz y Rufián en el debate a ocho: \"Cálmate, ya sé que eres un 'Braveheart' de Temu\"",
    "desc": "El portavoz de ERC asegura que hará \"todo lo posible\" para que la dirigente popular no sea ministra, mientras ambos protagonizan varios encontronazos sobre la gestión del Gobierno.",
    "url": "https://www.20minutos.es/nacional/rifirrafe-entre-ester-munoz-gabriel-rufian-debate-ocho-calmate-ya-se-que-eres-un-braveheart-temu_7064858_0.html",
    "at": "2026-11-23T21:58:22+00:00"
@@ -190,13 +211,6 @@
    "desc": "El presidente del Gobierno asegura que se siente \"garrapatero y zurdo\", mientras que la líder del PSOE andaluz pide a Juanma Moreno que defienda a la comunidad frente a los ataques de sus compañeros de partido.",
    "url": "https://www.20minutos.es/nacional/sanchez-montero-responden-las-criticas-ayuso-un-mitin-cordoba-somos-los-garrapateros-perro_7064844_0.html",
    "at": "2026-11-23T19:58:31+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Sánchez agita en Córdoba el orgullo “garrapatero” para movilizar a la izquierda en Andalucía",
-   "desc": "El PSOE explota el ataque de Ayuso: “Somos los garrapateros del ‘perro’”, proclama Montero",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/sanchez-agita-en-cordoba-el-orgullo-garrapatero-para-movilizar-a-la-izquierda-en-andalucia.html",
-   "at": "2026-11-23T19:52:42+00:00"
   },
   {
    "source": "20minutos",
@@ -283,6 +297,13 @@
    "at": "2026-11-23T16:19:06+00:00"
   },
   {
+   "source": "El País",
+   "title": "Oído en el tren: “¿Tú crees que todas las parejas votan lo mismo?”",
+   "desc": "Sábado. 7.32 de la mañana. El Intercity que cubre la línea Madrid-Gijón empieza a moverse. Seguir leyendo",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-23/oido-en-el-tren-tu-crees-que-todas-las-parejas-votan-lo-mismo.html",
+   "at": "2026-11-23T15:55:08+00:00"
+  },
+  {
    "source": "El Mundo",
    "title": "Elecciones generales 2026",
    "desc": "\"El liderazgo de un país no puede ser mercenario, que no me tiren de la lengua ni me obliguen a entrar en campaña\", advierte el ex presidente del Gobierno Leer",
@@ -316,20 +337,6 @@
    "desc": "Las víctimas de la estafadora Ana María Vicente Osset, apodada 'Anita la fantástica', han relatado en el juicio los engaños en la presunta estafa de viajes y entradas para campeonatos de MotoGP que habría causado un perjuicio económico de más de 731.000 euros. La acusada, que cumple prisión preventiva, se han sentado este lunes en el banquillo de Audiencia Provincial de Madrid por un delito continuado de estafa por la venta de paquetes turísticos a través de la agencia AUPA Travel. Osset fue detenida el pasado mes de julio en Francia en virtud de varias órdenes europeas de detención por otras causas relacionadas con presuntas estafas. La Fiscalía solicita nueve años de prisión para la principal acusada y siete años para el segundo procesado, que ya declaró en mayo cuando se celebró la primera sesión del juicio. En dicha sesión, el tribunal dictó una orden de busca y captura contra la pro",
    "url": "https://www.20minutos.es/nacional/las-victimas-anita-fantastica-relatan-estafa-los-viajes-motogp-ella-culpa-aseguradora_7064659_0.html",
    "at": "2026-11-23T14:31:55+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El PP, tras el último CIS que dispara al PSOE: \"Será el último de Tezanos porque Feijóo le va a despedir en cuanto llegue a Moncloa\"",
-   "desc": "El PP ha anunciado que Alberto Núñez Feijóo cesará al presidente del Centro de Investigaciones Sociológicas (CIS), José Félix Tezanos , si llega a la Moncloa tras las elecciones de este domingo. Lo ha adelantado en su cuenta de Twitter tras la publicación del último barómetro , que sitúa al PSOE casi 10 puntos por encima del PP, con una estimación de voto del 34,4% frente al 24,7% de los populares, de cara a las generales del 29N. \"Hoy ha salido el último CIS de Tezanos. Y será el último porque Feijóo le va a despedir en cuanto llegue a Moncloa\", ha señalado el PP en la citada red social. Se da la circunstancia de que todas las encuestas publicadas a lo largo de la campaña en prensa afianzan la victoria de los populares y apuntan a que PP y Vox superarían con holgura los 176 escaños necesarios para alcanzar una mayoría absoluta. Sin embargo, la encuesta del CIS se desmarca de esas previs",
-   "url": "https://www.20minutos.es/nacional/pp-tras-ultimo-cis-que-dispara-psoe-sera-ultimo-tezanos-porque-feijoo-le-va-despedir-cuanto-llegue-moncloa_7064652_0.html",
-   "at": "2026-11-23T14:19:42+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Abascal asegura que es \"útil\" cualquier voto que no vaya a Sánchez ni a \"sus cómplices\" y pide al PP no repetir un mensaje \"dañino\"",
-   "desc": "El líder de Vox tilda a Sánchez de \"sinvergüenza que se disfraza de Robin Hood\" por el impuesto a los 'ultrarricos' y lo acusa de haber \"liquidado la prosperidad de los españoles trabajadores\".",
-   "url": "https://www.20minutos.es/nacional/abascal-asegura-que-es-util-cualquier-voto-que-no-vaya-sanchez-ni-sus-complices-pide-pp-no-repetir-un-mensaje-danino_7064587_0.html",
-   "at": "2026-11-23T14:10:13+00:00"
   },
   {
    "source": "El Mundo",

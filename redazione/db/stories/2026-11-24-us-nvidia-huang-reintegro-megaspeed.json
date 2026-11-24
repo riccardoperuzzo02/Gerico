@@ -1,0 +1,39 @@
+{
+ "title": "Nvidia: il consiglio reintegra Huang, gli Usa mettono Megaspeed in lista nera",
+ "section": "tecnologia",
+ "rank": 5,
+ "status": "live",
+ "summary": "Il consiglio di amministrazione ha richiamato all'unanimità Jensen Huang, dimessosi il 12 novembre. Il governo americano ha inserito nella lista nera commerciale la società di Singapore Megaspeed.",
+ "article": "Il consiglio di amministrazione di Nvidia ha reintegrato all'unanimità Jensen Huang come amministratore delegato e membro del consiglio. La decisione è stata presa domenica e annunciata lunedì 23 novembre; Huang si era dimesso il 12 novembre.\n\nLe dimissioni erano seguite alla notizia di una sua relazione con Alice Huang, sospettata di essere un'informatrice del governo cinese e di aver fatto arrivare tecnologie americane in Cina. Il ritorno è arrivato dopo le pressioni del presidente Donald Trump, che si è congratulato con il consiglio e dice di averlo convinto. Secondo i resoconti, il governo ha poi assicurato che Huang non rappresenta una minaccia per la sicurezza nazionale. Colette Kress, l'amministratrice delegata ad interim, è stata avvisata all'ultimo momento e alcuni dirigenti si erano opposti.\n\nLunedì sera gli Stati Uniti hanno inserito nella lista nera commerciale Megaspeed, la società di Singapore per cui lavorava Alice Huang. Secondo l'avviso pubblicato nel Federal Register, la gazzetta ufficiale americana, le aziende statunitensi non possono inviare a Megaspeed beni, software e tecnologia senza una licenza. La lista riguarda aziende coinvolte in attività «contrarie agli interessi di sicurezza nazionale o di politica estera» degli Stati Uniti. Il dipartimento della Giustizia indaga separatamente sulla società per un sospetto contrabbando di chip verso la Cina; Nvidia conduce un'indagine interna.\n\nIn Congresso lo scetticismo è diffuso anche tra i Repubblicani. Il senatore Tim Scott ha fissato un'audizione di Huang per il 3 dicembre, e il leader dei Democratici al Senato, Chuck Schumer, ha annunciato indagini dal prossimo anno. Huang si è scusato con i dipendenti: «Ho fatto degli errori terribili». Il titolo Nvidia, crollato dopo le dimissioni, è salito di circa il 30% all'apertura dopo l'annuncio.",
+ "facts": [
+  {"text": "Il consiglio di Nvidia ha reintegrato all'unanimità Jensen Huang, dimessosi il 12 novembre.", "who": ["Il Post"]},
+  {"text": "Gli Usa hanno inserito Megaspeed nella lista nera commerciale: servirà una licenza per esportarle beni, software e tecnologia.", "who": ["ANSA"]},
+  {"text": "Il dipartimento della Giustizia indaga su Megaspeed per un sospetto contrabbando di chip verso la Cina.", "who": ["Il Post"]},
+  {"text": "Il senatore Tim Scott ha fissato un'audizione di Huang per il 3 dicembre.", "who": ["Il Post"]},
+  {"text": "Il titolo Nvidia è salito di circa il 30% all'apertura dopo il reintegro.", "who": ["Il Post"]}
+ ],
+ "view": "Sono certi il reintegro di Huang e l'inserimento di Megaspeed nella lista. Non è accertato alcun illecito di Nvidia né che Alice Huang abbia agito per conto di servizi cinesi: sono sospetti, e le fonti consultate non riportano commenti di Nvidia o di Megaspeed.\n\nLa vicenda tiene insieme governance di un'azienda e controlli sull'export di chip verso la Cina. Da guardare: l'audizione del 3 dicembre, le indagini del dipartimento della Giustizia e della Sec e l'esito di quella interna.",
+ "open": [
+  "Che cosa ha concluso finora l'indagine interna di Nvidia sull'influenza di Alice Huang?",
+  "Quale autorità americana ha deciso l'inserimento di Megaspeed nella lista?",
+  "Che cosa chiederà il Congresso a Huang nell'audizione del 3 dicembre?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/23/nvidia-ritorno-jensen-huang/", "angle": "Il reintegro di Huang, le pressioni di Trump, le reazioni e l'audizione del 3 dicembre.", "date": "2026-11-23"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/23/usa-inseriscono-megaspeed-nella-lista-nera-commerciale_2c25052f-6464-4b5c-b22b-09b9012b6b3b.html", "angle": "L'inserimento di Megaspeed nella lista nera commerciale.", "date": "2026-11-23"}
+ ],
+ "firstSeen": "2026-11-24T07:22:00+01:00",
+ "updated": "2026-11-24T07:22:00+01:00",
+ "change": "",
+ "tags": ["Nvidia", "Intelligenza artificiale", "Cina", "Stati Uniti"],
+ "themes": ["borse-ia"],
+ "places": ["US", "SG", "CN"],
+ "city": {"name": "Singapore", "lat": 1.35, "lon": 103.82},
+ "prev": "2026-11-23-us-nvidia-alice-huang-megaspeed",
+ "figure": {"value": "+30%", "label": "il titolo Nvidia all'apertura dopo il ritorno di Huang"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-24T07:22:00+01:00", "text": "Prima notizia: Huang reintegrato in Nvidia, Megaspeed nella lista nera Usa."}
+ ]
+}

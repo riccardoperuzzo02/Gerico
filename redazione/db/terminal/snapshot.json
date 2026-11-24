@@ -1,100 +1,18 @@
 {
- "asOf": "2026-11-23T07:27:29+01:00",
- "label": "Chiusure di venerdì e Asia stamattina",
+ "asOf": "2026-11-24T07:22:00+01:00",
+ "label": "Chiusure di ieri e Asia stamattina",
  "indices": [
-  {
-   "chg": -3.81,
-   "code": "USA",
-   "index": "S&P 500",
-   "note": "Chiusura di venerdì 20 novembre (Ansa)",
-   "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
-   "time": "22:15"
-  },
-  {
-   "chg": -5.0,
-   "code": "JPN",
-   "index": "Nikkei 225",
-   "note": "Chiusura del 20 novembre, circa -5% (Ansa); Tokyo chiusa lunedì",
-   "story": "",
-   "time": "chiusura"
-  },
-  {
-   "chg": -3.2,
-   "code": "KOR",
-   "index": "Kospi",
-   "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
-   "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
-   "time": ""
-  },
-  {
-   "chg": 2.5,
-   "code": "TWN",
-   "index": "Taiex",
-   "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
-   "story": "2026-11-23-mercati-asia-ia-future-rimbalzo",
-   "time": ""
-  },
-  {
-   "chg": -0.6,
-   "code": "CHN",
-   "index": "CSI 300",
-   "note": "In corso di seduta lunedì 23 novembre (Al Jazeera)",
-   "story": "",
-   "time": ""
-  },
-  {
-   "chg": -2.48,
-   "code": "ITA",
-   "index": "FTSE MIB",
-   "note": "Chiusura di venerdì 20 novembre (Ansa)",
-   "story": "",
-   "time": "chiusura"
-  },
-  {
-   "chg": -2.6,
-   "code": "DEU",
-   "index": "DAX",
-   "note": "Chiusura di venerdì 20 novembre (Ansa)",
-   "story": "",
-   "time": "chiusura"
-  },
-  {
-   "chg": -1.89,
-   "code": "FRA",
-   "index": "CAC 40",
-   "note": "Chiusura di venerdì 20 novembre (Ansa)",
-   "story": "",
-   "time": "chiusura"
-  },
-  {
-   "chg": -1.02,
-   "code": "GBR",
-   "index": "FTSE 100",
-   "note": "Chiusura di venerdì 20 novembre (Ansa)",
-   "story": "",
-   "time": "chiusura"
-  }
+  {"chg": 4.7, "code": "USA", "index": "S&P 500", "note": "Chiusura di lunedì 23 novembre", "story": "2026-11-24-us-wall-street-rally-huang", "time": "22:00"},
+  {"chg": 3.05, "code": "JPN", "index": "Nikkei 225", "note": "Apertura di martedì 24 novembre, non una chiusura", "story": "2026-11-24-us-wall-street-rally-huang", "time": ""},
+  {"chg": 0.65, "code": "ITA", "index": "FTSE MIB", "note": "Chiusura di lunedì 23 novembre", "story": "2026-11-24-us-wall-street-rally-huang", "time": "17:35"},
+  {"chg": 2.15, "code": "DEU", "index": "DAX", "note": "Chiusura di lunedì 23 novembre", "story": "2026-11-24-us-wall-street-rally-huang", "time": "17:35"},
+  {"chg": 1.48, "code": "FRA", "index": "CAC 40", "note": "Chiusura di lunedì 23 novembre", "story": "2026-11-24-us-wall-street-rally-huang", "time": "17:35"},
+  {"chg": 1.3, "code": "GBR", "index": "FTSE 100", "note": "Chiusura di lunedì 23 novembre", "story": "2026-11-24-us-wall-street-rally-huang", "time": "17:35"}
  ],
  "sources": [
-  {
-   "name": "Al Jazeera, Asian stock markets tumble as AI bubble fears mount (23 novembre)",
-   "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount"
-  },
-  {
-   "name": "ANSA, Wall Street chiude in forte calo (20 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/20/wall-street-chiude-in-forte-calo.-dj-203-nasdaq-537_2603c36d-1094-48af-b17a-590d5705aa0b.html"
-  },
-  {
-   "name": "ANSA, Borsa: Milano chiude in forte ribasso, -2,48% (20 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-milano-chiude-in-forte-ribasso-248_35860291-56d0-487c-b1e3-4937dcc7fb74.html"
-  },
-  {
-   "name": "ANSA, Borsa: l'Europa chiude in rosso, bruciati 370 miliardi (20 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/borsa-leuropa-chiude-in-rosso-bruciati-370-miliardi_8ed8cd41-f081-42ee-9a80-a76c502c494c.html"
-  },
-  {
-   "name": "ANSA, Crollo di oltre il 5% alla Borsa di Tokyo (20 novembre)",
-   "url": "https://www.ansa.it/sito/notizie/economia/2026/11/20/crollo-di-oltre-il-5-alla-borsa-di-tokyo-per-i-timori-sullintelligenza-artificiale_4d6646d7-d589-4024-926a-7e80db3e09c1.html"
-  }
+  {"name": "ANSA, Borsa: l'Europa chiude in rally col ritorno di Huang (23 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/23/borsa-leuropa-chiude-in-rally-col-ritorno-di-huang-francoforte-215_85f04872-7637-4f3a-93ec-b06462490b8f.html"},
+  {"name": "ANSA, Borsa: Milano chiude in rialzo (23 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/23/borsa-milano-chiude-in-rialzo-065-con-il-ritorno-di-huang-in-nvidia_0ca8e574-9d86-4d2f-a2f9-14f2c10d98f9.html"},
+  {"name": "ANSA, Borsa: Tokyo, apertura in forte rialzo (24 novembre)", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/24/borsa-tokyo-apertura-in-forte-rialzo-305_81ccbb7d-ddf2-49a7-8a6a-3034e143fdf3.html"},
+  {"name": "La Nación, How major US stock indexes fared Monday (23 novembre)", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-11232026-nid23112026/"}
  ]
 }

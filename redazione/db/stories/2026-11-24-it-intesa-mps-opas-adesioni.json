@@ -1,0 +1,38 @@
+{
+ "title": "Intesa Sanpaolo: da oggi le adesioni all'offerta su Mps, fino al 22 gennaio",
+ "section": "economia",
+ "rank": 10,
+ "status": "live",
+ "summary": "Si apre il periodo di adesione all'offerta pubblica di Intesa Sanpaolo su Monte dei Paschi: 1,25 euro in contanti e 1,664 azioni Intesa per ogni azione Mps. Le adesioni restano aperte fino al 22 gennaio 2027.",
+ "article": "Da oggi gli azionisti di Monte dei Paschi di Siena (Mps) possono aderire all'offerta pubblica di scambio di Intesa Sanpaolo. Il periodo di adesione, concordato con Borsa Italiana, comincia alle 8:30 del 24 novembre e finisce alle 17:30 del 22 gennaio 2027, salvo proroghe.\n\nPer ogni azione Mps portata in adesione Intesa offre 1,25 euro in contanti e 1,664 azioni Intesa di nuova emissione. Per l'operazione la banca ha accantonato circa 34,6 miliardi di euro. La Consob ha approvato il documento d'offerta il 9 novembre. Il pagamento è previsto il 29 gennaio; se le condizioni saranno rispettate le adesioni si riapriranno dal 1° al 5 febbraio.\n\nLa soglia che conta è il 50% più un'azione: sotto quel livello l'offerta decade, come richiesto dalla Banca centrale europea. Intesa punta a tutto il capitale e al ritiro dalla Borsa, che di norma richiede il 90%; un livello vicino ai due terzi darebbe il controllo di fatto e permetterebbe la fusione. Hanno già detto che aderiranno Delfin, primo azionista con il 17,53%, ed Edizione con l'1,45%. Si ritiene probabile anche l'adesione di Caltagirone (10,26%), mentre il governo, che ha circa il 5%, non ha chiarito le sue intenzioni.\n\nIl consiglio di amministrazione di Mps ha giudicato il prezzo congruo con alcune riserve; l'avviso ufficiale è atteso entro fine novembre. A ottobre gli azionisti avevano respinto con larga maggioranza il piano di difesa dell'amministratore delegato Luigi Lovaglio e Corrado Passera si è dimesso per protesta. La procura di Milano indaga su Lovaglio, sul presidente di Delfin Francesco Milleri e su Caltagirone per sospetta manipolazione del mercato e ostacolo alla vigilanza.\n\nDopo l'operazione Intesa venderebbe Mps, con il marchio e circa metà degli sportelli, a Bper, e terrebbe Mediobanca, che ha una quota importante in Generali.",
+ "facts": [
+  {"text": "Le adesioni all'offerta di Intesa su Mps vanno dal 24 novembre al 22 gennaio 2027, salvo proroghe.", "who": ["Il Post", "Teleborsa"]},
+  {"text": "Intesa offre 1,25 euro in contanti e 1,664 azioni Intesa per ogni azione Mps.", "who": ["Il Post", "Teleborsa"]},
+  {"text": "Sotto il 50% più un'azione l'offerta decade, condizione posta dalla Bce.", "who": ["Il Post", "Teleborsa"]},
+  {"text": "Delfin (17,53%) ed Edizione (1,45%) hanno già detto che aderiranno.", "who": ["Il Post"]},
+  {"text": "La procura di Milano indaga su Lovaglio, Milleri e Caltagirone per sospetta manipolazione del mercato.", "who": ["Il Post"]}
+ ],
+ "view": "Calendario e termini sono certi; l'esito dipende dalle adesioni, e finora solo Delfin ed Edizione hanno dichiarato la loro posizione. L'indagine della procura di Milano è in corso e nessuno degli interessati è stato giudicato.\n\nLe quote di Caltagirone e del governo sono le più incerte. Da guardare: il parere ufficiale del consiglio di Mps a fine novembre e i primi dati sulle adesioni.",
+ "open": [
+  "Il governo aderirà con la sua quota di circa il 5%?",
+  "Quale sarà il parere ufficiale del consiglio di Mps a fine novembre?",
+  "Intesa raggiungerà i due terzi o il 90% del capitale?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/24/opas-intesa-sanpaolo-mps-periodo-adesione/", "angle": "Termini, soglie, azionisti e indagine della procura di Milano.", "date": "2026-11-24"},
+  {"name": "Teleborsa", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/intesamps-via-libera-consob-al-documento-d-offerta-adesioni-dal-24-novembre-7_2026-11-09_TLB.html", "angle": "Il via libera della Consob e il calendario delle adesioni.", "date": "2026-11-09"}
+ ],
+ "firstSeen": "2026-11-24T07:22:00+01:00",
+ "updated": "2026-11-24T07:22:00+01:00",
+ "change": "",
+ "tags": ["Intesa Sanpaolo", "Mps", "Banche", "Piazza Affari"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Siena", "lat": 43.32, "lon": 11.33},
+ "figure": {"value": "34,6 mld €", "label": "accantonati da Intesa per l'offerta su Mps"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-24T07:22:00+01:00", "text": "Prima notizia: aperto il periodo di adesione all'offerta di Intesa su Mps."}
+ ]
+}

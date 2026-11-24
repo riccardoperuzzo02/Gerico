@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: due ricerche sui Pmi flash di oggi (Francia, Germania, area euro, Regno Unito) danno solo dati di anni passati. Agenda già completa con il calendario, aggiornato solo asOf. I Pmi Usa delle 15:45 erano troppo recenti."
   },
   "lastPublish": {
-    "at": "2026-11-23T19:31:43+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (442 parole); titoli.py: nessun titolo nel database; controlla: 6 cose da sistemare."
+    "at": "2026-11-24T07:26:40+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 14 brevi copiate; riepilogo.py: riepilogo copiato (405 parole); titoli.py: nessun titolo nel database."
   },
-  "lastRun": "2026-11-23T13:21:00+01:00",
+  "lastRun": "2026-11-24T07:23:24+01:00",
   "marketsRun": {
     "at": "2026-11-23T19:32:00+01:00",
     "esito": "Niente aggiornato: nessun articolo di chiusura del 23 novembre trovato (Teleborsa e Borsa Italiana ferme a dati intraday delle 16:00). Snapshot e agenda lasciati com'erano."
@@ -29,19 +29,19 @@
     "esito": "US 2 nuove (maggioranza Dem alla Camera, detonazione in Iowa)/0 aggiornate/1 archiviata (alluvioni Florida); GB 2 nuove (Burnham e Ue dopo l'accordo, Co-op Live)/0/1 archiviata (accordo Ue); FR 2 nuove (regola d'oro, Choose France)/0/1 archiviata (Zecler); DE 1 nuova (progressione fredda)/0/1 archiviata (proteste Gen Z); ES 1 nuova (sondaggi 29-N)/0/1 archiviata (dopo il dibattito). Controlla: tutto a posto."
   },
   "quality": {
-    "articlesDiscarded": 1,
-    "articlesRead": 14,
-    "at": "2026-11-23T13:21:00+01:00",
-    "factsChecked": 6,
+    "articlesDiscarded": 2,
+    "articlesRead": 22,
+    "at": "2026-11-24T07:23:24+01:00",
+    "factsChecked": 8,
     "factsCorrected": 1,
-    "storiesArchived": 0,
-    "storiesNew": 2,
-    "storiesUpdated": 1
+    "storiesArchived": 6,
+    "storiesNew": 4,
+    "storiesUpdated": 0
   },
   "riscrittura": {
     "at": "2026-11-20T11:11:27+01:00",
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 31
+  "storiesLive": 29
 }

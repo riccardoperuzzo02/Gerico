@@ -1,0 +1,37 @@
+{
+ "title": "Borse: Wall Street in forte rialzo dopo il ritorno di Huang in Nvidia",
+ "section": "mercati",
+ "rank": 4,
+ "status": "live",
+ "summary": "Lunedì il Nasdaq ha guadagnato il 6,5% e l'S&P 500 il 4,7%, dopo il crollo di venerdì. L'Europa ha chiuso in rally, con Francoforte a +2,15%, e Tokyo ha aperto martedì in rialzo del 3,05%.",
+ "article": "Wall Street ha chiuso lunedì in forte rialzo, dopo la notizia che Jensen Huang torna a guidare Nvidia. L'S&P 500 ha guadagnato il 4,7% e ha chiuso a 7.237 punti, il Nasdaq Composite il 6,5% a 24.090 punti e il Dow Jones il 3% a 49.595 punti. Il Russell 2000, l'indice dei titoli a minore capitalizzazione, è salito del 3,4%.\n\nÈ il rimbalzo dopo il crollo di venerdì, quando l'S&P 500 aveva perso il 3,7% e il Nasdaq il 5,3% sui timori per la spesa in intelligenza artificiale e sull'indagine che coinvolge Nvidia. Nel corso della seduta il Nasdaq è salito per un momento di oltre il 7%. Il titolo Nvidia, secondo i resoconti della seduta, è salito di circa il 30% all'apertura dopo il reintegro di Huang, dimessosi il 12 novembre.\n\nLe Borse europee, già chiuse quando Wall Street ha esteso i guadagni, hanno seguito la spinta del settore tecnologico. Francoforte ha guadagnato il 2,15%, Parigi l'1,48% e Londra l'1,3%. Piazza Affari ha chiuso in rialzo dello 0,65%, con il Ftse Mib a 49.021 punti: sull'indice ha pesato lo stacco del dividendo da parte di undici società quotate, che ha tolto circa l'1,4%.\n\nMartedì mattina la spinta è arrivata in Asia: la Borsa di Tokyo ha aperto con il Nikkei in rialzo del 3,05% a 58.159 punti, con acquisti su titoli tecnologici e di semiconduttori. Lo yen si scambia a 158,80 per dollaro e a 173,20 per euro.\n\nNella stessa seduta gli Stati Uniti hanno inserito nella lista nera commerciale la società di Singapore Megaspeed, collegata alla vicenda che ha portato alle dimissioni di Huang. La settimana è accorciata: giovedì Wall Street è chiusa per il Ringraziamento e venerdì la seduta finisce all'una del pomeriggio.",
+ "facts": [
+  {"text": "Lunedì l'S&P 500 ha chiuso a +4,7% a 7.237 punti, il Nasdaq a +6,5% e il Dow Jones a +3%.", "who": ["La Nación", "ANSA"]},
+  {"text": "Le Borse europee hanno chiuso in rally: Francoforte +2,15%, Parigi +1,48%, Londra +1,3%.", "who": ["ANSA"]},
+  {"text": "Il Ftse Mib ha chiuso a +0,65% a 49.021 punti, frenato dallo stacco dei dividendi di undici società.", "who": ["ANSA"]},
+  {"text": "Martedì il Nikkei ha aperto a +3,05% a 58.159 punti.", "who": ["ANSA"]},
+  {"text": "Il titolo Nvidia è salito di circa il 30% all'apertura dopo il reintegro di Huang.", "who": ["Il Post"]}
+ ],
+ "view": "Sono certe le chiusure di lunedì e l'apertura di Tokyo. Il legame con Nvidia è la lettura che danno le cronache della seduta, non una prova: dopo un calo così ampio il rimbalzo ha anche una componente tecnica.\n\nUn solo giorno non dice se la fase di vendite sull'intelligenza artificiale sia finita. Da guardare: le audizioni su Nvidia, i conti delle aziende della settimana e i dati americani di mercoledì.",
+ "open": [
+  "Il rimbalzo reggerà dopo il rientro di Huang e le indagini ancora aperte?",
+  "Come chiuderanno oggi le Borse europee dopo il rally di lunedì?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/23/borsa-leuropa-chiude-in-rally-col-ritorno-di-huang-francoforte-215_85f04872-7637-4f3a-93ec-b06462490b8f.html", "angle": "Le chiusure europee di lunedì e il Ftse Mib.", "date": "2026-11-23"},
+  {"name": "La Nación", "kind": "giornale", "country": "Argentina", "area": "America Latina", "url": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-11232026-nid23112026/", "angle": "Le chiusure dei principali indici di Wall Street.", "date": "2026-11-23"},
+  {"name": "Il Post", "kind": "giornale", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/23/valore-azioni-nvidia-crescita/", "angle": "L'andamento del titolo Nvidia dopo il ritorno di Huang.", "date": "2026-11-23"} ],
+ "firstSeen": "2026-11-24T07:22:00+01:00",
+ "updated": "2026-11-24T07:22:00+01:00",
+ "change": "",
+ "tags": ["Wall Street", "Intelligenza artificiale", "Borse", "Nvidia"],
+ "themes": ["borse-ia"],
+ "places": ["US", "JP", "DE"],
+ "prev": "2026-11-23-mercati-asia-ia-future-rimbalzo",
+ "figure": {"value": "+6,5%", "label": "il Nasdaq in una seduta, lunedì"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-24T07:22:00+01:00", "text": "Prima notizia: rally di Wall Street e delle Borse europee dopo il ritorno di Huang in Nvidia."}
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "title": "Ucraina: attacchi russi su Zaporizhzhia e Kiev, in stallo 60 Patriot",
+ "section": "mondo",
+ "rank": 2,
+ "status": "live",
+ "summary": "Un attacco russo su Zaporizhzhia ha ucciso due persone e ne ha ferite decine, mentre a Dymer, vicino a Kiev, i morti sono almeno 11. Secondo un'indiscrezione giornalistica il capo del Pentagono non ha ancora approvato circa 60 intercettori Patriot già promessi a Kiev.",
+ "article": "Un attacco russo su un palazzo residenziale di Zaporizhzhia, nel sud dell'Ucraina, ha ucciso due persone e ne ha ferite almeno 22, secondo il capo dell'amministrazione militare regionale Mykhailo Semikin. Il bilancio è provvisorio: i soccorritori cercano ancora sotto le macerie del palazzo di cinque piani nel distretto Kosmichnyi. Tra i feriti ci sono un neonato e tre bambini di 4, 6 e 16 anni; una persona con trauma cranico è in condizioni critiche. Il numero dei feriti varia tra le fonti, da 22 a 33.\n\nIl giorno prima un attacco notturno con droni aveva colpito un edificio di cinque piani a Dymer, circa 45 chilometri a nord di Kiev. Il funzionario regionale Tymur Tkachenko ha confermato almeno 11 morti; secondo il servizio di emergenza ucraino i soccorritori cercavano ancora 11 persone, tra cui due bambini. Con l'attacco a un supermercato a Vyshneve, dove sono morte tre persone, e quello a un'abitazione a Bila Tserkva, con un morto, le autorità ucraine contano almeno 15 morti nella regione di Kiev. Un'altra sottostazione elettrica è stata colpita nella regione di Dnipropetrovsk.\n\nSul fronte opposto, il vertice militare ucraino dice che i droni di Kiev hanno colpito le raffinerie di Novoshakhtinsk, nella regione di Rostov, e di Perm, mentre una stazione di pompaggio in Tatarstan sarebbe in fiamme, secondo notizie non confermate. Il presidente russo Vladimir Putin ha promesso una risposta «molto più dolorosa» dopo i colpi al ponte di Kerch, colpito tre volte in una settimana. Il presidente ucraino Volodymyr Zelensky dice che le forze di Kiev hanno affondato la corvetta russa Merkury vicino alla Libia.\n\nLa difesa aerea ucraina dipende dagli intercettori occidentali. Secondo un'indiscrezione della stampa britannica il segretario alla Difesa americano Pete Hegseth non ha ancora approvato il trasferimento di circa 60 missili Patriot che Washington aveva già concordato di fornire: i PAC-3 previsti tra settembre e dicembre e una ventina di PAC-2, più vecchi. Alcuni intercettori si trovano negli arsenali europei e sono pagati dagli alleati di Kiev. La notizia non è stata verificata in modo indipendente.\n\nUn portavoce del Pentagono ha detto alla stampa britannica che la politica americana di sostegno all'Ucraina non è cambiata. Un funzionario ha aggiunto che il dipartimento lavora alla cooperazione industriale sul Patriot con partner europei e con Kiev. A ottobre gli Stati Uniti hanno approvato la vendita di 500 PAC-3 per circa 2,1 miliardi di dollari, ma le consegne non sono previste prima dei primi anni 2030.",
+ "facts": [
+  {"text": "Su Zaporizhzhia un attacco ha ucciso 2 persone e ne ha ferite almeno 22, secondo Mykhailo Semikin; i soccorsi continuano.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "A Dymer, vicino a Kiev, almeno 11 morti secondo il funzionario regionale Tymur Tkachenko; nella regione almeno 15 secondo le autorità ucraine.", "who": ["Al Jazeera", "Kyiv Independent"]},
+  {"text": "Secondo la stampa britannica Hegseth non ha approvato circa 60 intercettori Patriot già promessi a Kiev; non verificato in modo indipendente.", "who": ["Reuters"]},
+  {"text": "Il Pentagono dice che la politica di sostegno all'Ucraina non è cambiata.", "who": ["Reuters"]},
+  {"text": "Zelensky dice che le forze ucraine hanno affondato la corvetta russa Merkury vicino alla Libia.", "who": ["Al Jazeera", "Kyiv Independent"]}
+ ],
+ "view": "Sono accertati gli attacchi su Zaporizhzhia e nella regione di Kiev con i bilanci forniti dalle autorità ucraine, ancora provvisori. Il blocco dei Patriot viene da un solo quotidiano e non è stato verificato in modo indipendente: il Pentagono nega un cambio di linea.\n\nIl nodo è il tempo: le consegne di intercettori già concordati contano più delle vendite future, previste solo per i primi anni 2030. Da seguire la risposta di Putin annunciata dopo gli attacchi al ponte di Kerch e l'incontro di mercoledì tra Trump e il segretario generale della Nato Mark Rutte.",
+ "open": [
+  "Quanti intercettori Patriot sono davvero fermi e perché non sono stati approvati?",
+  "Quale sarà la risposta russa annunciata da Putin dopo gli attacchi al ponte di Kerch?",
+  "Quanti sono i morti definitivi a Dymer e a Zaporizhzhia?"
+ ],
+ "sources": [
+  {"name": "Kyiv Independent", "kind": "giornale", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/2-killed-22-injured-in-russian-attack-on-residential-building-in-zaporizhzhia/", "angle": "L'attacco a Zaporizhzhia con il bilancio dato dall'amministrazione regionale.", "date": "2026-11-24"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine", "angle": "I bilanci nella regione di Kiev, gli attacchi ucraini alle raffinerie e la promessa di Putin.", "date": "2026-11-23"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/24/us-defense-chief-has-yet-to-approve-patriot-missiles-already-allocated-to-ukraine-ft-reports", "angle": "Il blocco di circa 60 Patriot secondo la stampa britannica e la posizione del Pentagono.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-24T07:22:00+01:00",
+ "updated": "2026-11-24T07:22:00+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Russia", "Patriot", "Stati Uniti"],
+ "themes": ["ucraina"],
+ "places": ["UA", "RU", "US"],
+ "city": {"name": "Zaporizhzhia", "lat": 47.84, "lon": 35.14},
+ "prev": "2026-11-23-ua-dymer-attacco-droni-kiev",
+ "figure": {"value": "15 morti", "label": "il bilancio degli attacchi nella regione di Kiev"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-24T07:22:00+01:00", "text": "Prima notizia: attacco a Zaporizhzhia, bilancio di Dymer e Patriot non approvati."}
+ ]
+}

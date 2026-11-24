@@ -844,19 +844,33 @@ G.page("terminal", async function (P) {
     $("p-tassi").hidden = all.length > 0 && all.every(treasury);
   }
 
-  // una riga dell'agenda: ora, valuta, evento con i numeri sotto, impatto. Un clic apre la spiegazione dell'evento (che
-  // cosa indica, che effetti ha di solito) e il risultato confrontato con le attese; gli aperti si ricordano tra un aggiornamento e l'altro
+  // una riga dell'agenda (24 novembre): a sinistra quando (l'ora e quanto manca), a destra cosa (le barrette
+  // dell'impatto, la valuta, l'evento) con i numeri sotto e, se è uscito, il risultato con la freccia. Un clic apre
+  // la spiegazione dell'evento (che cosa indica, che effetti ha di solito) e il risultato confrontato con le attese;
+  // gli aperti si ricordano tra un aggiornamento e l'altro. Due eventi alla stessa ora: l'ora si scrive una volta
   const agOpen = new Set();
   const agKey = (o) => [o.time || "", o.cur || "", o.ev || ""].join("|");
   let agN = 0;
+  const IMPN = { alto: 3, medio: 2, basso: 1 };
+  const impNome = (imp) => (G.en ? { alto: "high", medio: "medium", basso: "low" }[imp] : imp);
+  // l'impatto in tre barrette, come il segnale del telefono: tre piene per l'alto, due per il medio, una per il basso
+  const barre = (imp) => '<span class="ag-imp i' + IMPN[imp] + '" aria-hidden="true"><i></i><i></i><i></i></span>';
+  const quantoManca = (mins) => (mins <= 0 ? G.L("adesso", "now") : mins < 60 ? G.L("tra ", "in ") + mins + " min"
+    : G.L("tra ", "in ") + Math.floor(mins / 60) + " h" + (mins % 60 ? " " + String(mins % 60).padStart(2, "0") : ""));
   function agendaRow(o) {
-    const cls = [o.past ? "past" : "", o.imp === "alto" ? "hi" : "", o.next ? "next" + (o.soon ? " soon" : "") : ""].filter(Boolean).join(" ");
-    const IMP = G.en ? { alto: "High", medio: "Medium", basso: "Low", festivo: "Holiday" } : {};
+    const imp = IMPN[o.imp] ? o.imp : o.imp === "festivo" ? "festivo" : "";
+    const cls = ["ag-r", o.past ? "past" : "", { alto: "hi", medio: "me", basso: "lo", festivo: "fe" }[imp] || "",
+      o.next ? "next" + (o.soon ? " soon" : "") : "", o.rip ? "rip" : ""].filter(Boolean).join(" ");
     const info = G.eventoInfo(o.ev, o.cur), v = G.verdetto(o.act, o.exp, o.prev), vt = G.verdettoTesto(v);
     const key = agKey(o), open = agOpen.has(key), id = "ag-d" + (agN++);
     const lbl = o.fcl === "fc" ? G.L("previsione ", "forecast ") : G.L("atteso ", "expected ");
-    const nums = [o.exp ? lbl + o.exp : "", o.prev ? G.L("precedente ", "previous ") + o.prev : ""].filter(Boolean).join(" · ");
-    const small = nums || o.act ? "<small>" + esc(nums) + (o.act ? (nums ? " · " : "") + '<b class="ris' + (v ? " ris-" + v.k : "") + '">' + esc(G.L("effettivo ", "actual ") + o.act + (vt ? " (" + vt + ")" : "")) + "</b>" : "") + "</small>" : "";
+    const numeri = [o.exp ? lbl + o.exp : "", o.prev ? G.L("precedente ", "previous ") + o.prev : ""].filter(Boolean);
+    // il risultato: la freccia dice se è sopra o sotto le attese (o il precedente), senza dire se è un bene o un male
+    const freccia = v ? { su: "↑", giu: "↓", pari: "=" }[v.k] : "";
+    const esito = o.act ? '<span class="ag-esito"><b class="ris' + (v ? " ris-" + v.k : "") + '">' + (freccia ? '<span aria-hidden="true">' + freccia + " </span>" : "") +
+      '<span class="sr-only">' + G.L("effettivo ", "actual ") + "</span>" + esc(o.act) + "</b>" + (vt ? " " + esc(vt) : "") + "</span>" : "";
+    // i numeri vanno a capo interi («atteso 92,4» non si spezza), il risultato sta sempre su una riga sua
+    const small = numeri.length || esito ? "<small>" + numeri.map((t) => '<span class="ag-n">' + esc(t) + "</span>").join("") + esito + "</small>" : "";
     // il blocco dei numeri: solo per gli eventi che ne hanno (un discorso o una festività no)
     const hasNums = !!(o.exp || o.prev || o.act);
     const cell = (k, val, strong) => '<div><span>' + k + "</span><b" + (strong ? ' class="ris' + (v ? " ris-" + v.k : "") + '"' : "") + ">" + (val ? esc(val) : "—") + "</b></div>";
@@ -876,8 +890,28 @@ G.page("terminal", async function (P) {
       (info.s ? '<p><b>' + G.L("Se esce sopra le attese", "If it comes in above expectations") + "</b>" + esc(info.s) + "</p>" : "") +
       (info.g ? '<p><b>' + G.L("Se esce sotto le attese", "If it comes in below expectations") + "</b>" + esc(info.g) + "</p>" : "") +
       (info.cosa ? '<p><b>' + G.L("Cosa può muoversi", "What may move") + "</b>" + esc(info.cosa) + "</p>" : "") + "</div>";
-    return '<li' + (cls ? ' class="' + cls + '"' : "") + ' data-k="' + esc(key) + '"><span class="tm">' + esc(o.time || "—") + "</span><span>" + esc(o.cur || "") +
-      '</span><span class="ev"><button type="button" class="ev-b" aria-expanded="' + open + '" aria-controls="' + id + '"><span class="ev-t">' + esc(o.ev) + "</span>" + small + '</button></span><span class="im ' + (o.imp || "") + '">' + esc(IMP[o.imp] || G.cap(o.imp || "")) + "</span>" + det + "</li>";
+    // quando: l'ora (una volta sola per gli eventi alla stessa ora) e, per quelli di oggi in arrivo, quanto manca
+    const tm = '<span class="tm">' + (o.rip ? '<span class="sr-only">' + esc(o.time) + "</span>" : "<b>" + esc(o.time || "—") + "</b>") +
+      (o.tra && !o.rip ? '<small class="ag-tra' + (o.vicino ? " vicino" : "") + '">' + esc(o.tra) + "</small>" : "") + "</span>";
+    // cosa: le barrette dell'impatto e la valuta prima del nome (chi usa un lettore di schermo sente «impatto alto»)
+    const meta = (IMPN[imp] ? barre(imp) : imp === "festivo" ? '<span class="ag-fe">' + G.L("festivo", "holiday") + "</span>" : "") + (o.cur ? '<span class="cur">' + esc(o.cur) + "</span>" : "");
+    const detto = IMPN[imp] ? '<span class="sr-only">' + G.L("Impatto ", "Impact ") + impNome(imp) + ". </span>" : "";
+    return '<li class="' + cls + '" data-k="' + esc(key) + '">' + tm +
+      '<span class="ev"><button type="button" class="ev-b" aria-expanded="' + open + '" aria-controls="' + id + '"><span class="ev-l1">' +
+      '<span class="ev-meta">' + meta + '</span><span class="ev-t">' + detto + esc(o.ev) + "</span></span>" + small + "</button></span>" + det + "</li>";
+  }
+  // una lista di righe: lo stesso orario di fila si scrive una volta; per oggi, quanto manca a ciascuno
+  function agendaList(list, extra) {
+    const nowMin = G.romeNow().min;
+    let prima = "";
+    return list.map((r) => {
+      const o = Object.assign({}, r, typeof extra === "function" ? extra(r) : extra || {});
+      o.rip = !!r.time && r.time === prima;
+      prima = r.time || "";
+      const m = hmMin(r.time);
+      if (o.oggi && !o.past && m !== null) { o.tra = quantoManca(m - nowMin); o.vicino = m - nowMin <= 60; }
+      return agendaRow(o);
+    }).join("");
   }
   $("ag").addEventListener("click", (e) => {
     const f = e.target.closest && e.target.closest("[data-agf]");
@@ -930,7 +964,8 @@ G.page("terminal", async function (P) {
       if (twin) { if (!twin.exp && !twin.prev) { twin.exp = G.ffNum(it.forecast); twin.prev = G.ffNum(it.previous); twin.fcl = "fc"; } if (it.impact === "alto") twin.imp = "alto"; return; }
       rows.push({ time: it.time || "", cur: it.currency || "", ev: it.title, exp: G.ffNum(it.forecast), prev: G.ffNum(it.previous), fcl: "fc", imp: it.impact });
     });
-    rows.sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")));
+    // in ordine di ora e, alla stessa ora, prima quello che conta di più
+    rows.sort((a, b) => String(a.time || "99").localeCompare(String(b.time || "99")) || (IMPN[b.imp] || 0) - (IMPN[a.imp] || 0));
     // il prossimo evento ad alto impatto di oggi (si aggiorna ogni 30 secondi)
     const next = rows.find((r) => r.imp === "alto" && r.time && r.time >= now) || null;
     let left = "", soon = false;
@@ -950,8 +985,9 @@ G.page("terminal", async function (P) {
     // come si apre la spiegazione
     if (rows.length) html += '<p class="ag-sum">' + G.L("Tocca un evento per capire cosa indica e che effetti ha.", "Tap an event to see what it measures and how it can affect markets.") + "</p>";
     agN = 0;
-    // prima quello che deve ancora uscire (il prossimo ad alto impatto in evidenza), poi, chiusi in una tendina, i dati
-    // già usciti con i loro risultati. Sopra, la scelta tra tutti gli eventi e solo quelli ad alto impatto (resta)
+    // in ordine di tempo, come un'agenda vera: chiusi in una tendina i dati già usciti con i loro risultati, poi la riga
+    // «Adesso» con l'ora, poi quello che deve ancora uscire (il prossimo ad alto impatto in evidenza). Sopra, la scelta
+    // tra tutti gli eventi e solo quelli ad alto impatto (resta) e che cosa vogliono dire le barrette
     if (rows.length) {
       const filtro = G.ls.get("gerico.agFiltro", "tutti") === "alto" ? "alto" : "tutti";
       const vede = (r) => filtro === "tutti" || r.imp === "alto";
@@ -962,27 +998,29 @@ G.page("terminal", async function (P) {
       html += '<div class="seg seg-fill t-seg ag-filtro" role="group" aria-label="' + G.L("Quali eventi", "Which events") + '">' +
         '<button type="button" data-agf="tutti" aria-pressed="' + (filtro === "tutti") + '">' + G.L("Tutti", "All") + "</button>" +
         '<button type="button" data-agf="alto" aria-pressed="' + (filtro === "alto") + '">' + G.L("Alto impatto", "High impact") + "</button></div>";
-      html += prossimi.length ? '<h3 class="ag-h3">' + G.L("In arrivo", "Coming up") + '</h3><ol class="t-agenda">' + prossimi.map((r) => agendaRow(Object.assign({}, r, { past: false, next: r === next, soon }))).join("") + "</ol>"
-        : '<p class="t-na">' + G.L("Per oggi non ci sono altri dati in arrivo", "No more releases due today") + (filtro === "alto" ? G.L(" ad alto impatto", " with high impact") : "") + ".</p>";
+      html += '<p class="ag-leg" aria-hidden="true"><span>' + G.L("Impatto", "Impact") + "</span>" +
+        ["alto", "medio", "basso"].map((k) => "<span>" + barre(k) + impNome(k) + "</span>").join("") + "</p>";
       if (usciti.length) {
         const conRis = usciti.filter((r) => r.act).length;
         html += '<details class="t-ff-week ag-usciti"' + (usciOpen ? " open" : "") + "><summary>" + G.L("Già usciti oggi (", "Already out today (") + usciti.length + ")" +
           (conRis ? '<span class="ag-ris">' + conRis + G.L(" con il risultato", " with the result") + "</span>" : "") +
-          '</summary><ol class="t-agenda">' + usciti.map((r) => agendaRow(Object.assign({}, r, { past: true, next: false, soon }))).join("") + "</ol></details>";
+          '</summary><ol class="t-agenda">' + agendaList(usciti, { past: true, next: false, soon }) + "</ol></details>";
       }
+      // la riga dell'ora: quello che sta sotto deve ancora uscire
+      html += '<h3 class="ag-h3 ag-ora"><span class="sr-only">' + G.L("In arrivo. ", "Coming up. ") + "</span>" + G.L("Adesso ", "Now ") + esc(now) + "</h3>";
+      html += prossimi.length ? '<ol class="t-agenda">' + agendaList(prossimi, (r) => ({ past: false, next: !!next && r.imp === "alto" && r.time === next.time, soon: soon && r === next, oggi: true })) + "</ol>"
+        : '<p class="t-na">' + G.L("Per oggi non ci sono altri dati in arrivo", "No more releases due today") + (filtro === "alto" ? G.L(" ad alto impatto", " with high impact") : "") + ".</p>";
     } else {
       html += '<p class="t-na">' + (ffOk || today ? G.L("Oggi nessun evento ad alto o medio impatto.", "No high- or medium-impact events today.") : G.L("L'agenda di oggi non è ancora disponibile.", "Today's calendar is not available yet.")) + "</p>";
     }
     if (ffWeek.length) {
       // la tendina dei giorni dopo resta aperta o chiusa come l'ha lasciata chi legge, anche quando l'agenda si aggiorna
-      const open = !!document.querySelector("#ag .t-ff-week[open]");
-      let last = "";
-      const week = ffWeek.map((it) => {
-        let day = "";
-        if (it.date !== last) { last = it.date; day = '<li class="t-day">' + esc(G.cap(G.weekday(it.date + "T12:00:00Z")) + " " + G.dayOnly(it.date)) + "</li>"; }
-        return day + agendaRow({ time: it.time, cur: it.currency, ev: it.title, exp: G.ffNum(it.forecast), prev: G.ffNum(it.previous), fcl: "fc", imp: it.impact });
-      }).join("");
-      html += '<details class="t-ff-week"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
+      const open = !!document.querySelector("#ag .ag-giorni[open]");
+      const giorni = [];
+      ffWeek.forEach((it) => { if (!giorni.length || giorni[giorni.length - 1][0] !== it.date) giorni.push([it.date, []]); giorni[giorni.length - 1][1].push(it); });
+      const week = giorni.map(([d, items]) => '<li class="t-day">' + esc(G.cap(G.weekday(d + "T12:00:00Z")) + " " + G.dayOnly(d)) + "</li>" +
+        agendaList(items.map((it) => ({ time: it.time, cur: it.currency, ev: it.title, exp: G.ffNum(it.forecast), prev: G.ffNum(it.previous), fcl: "fc", imp: it.impact })))).join("");
+      html += '<details class="t-ff-week ag-giorni"' + (open ? " open" : "") + "><summary>" + G.L("Prossimi giorni, impatto alto (", "Coming days, high impact (") + ffWeek.length + ')</summary><ol class="t-agenda">' + week + "</ol></details>";
     }
     // da dove viene: una nota sola per le due fonti
     // il nome corto della fonte, una volta sola: Forex Factory compare sia nell'agenda del giorno sia nella settimana

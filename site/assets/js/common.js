@@ -169,8 +169,10 @@
     });
     if (Object.prototype.hasOwnProperty.call(EN, document.title)) document.title = EN[document.title];
   };
-  // un numero scritto all'italiana nei dati («4,33%», «50.053», «107 pb»), in inglese: «4.33%», «50,053», «107 bp»
-  G.numText = (v) => (!G.en || !v ? v : String(v).replace(/\d[\d.,]*\d/g, (m) => m.replace(/[.,]/g, (c) => (c === "." ? "," : "."))).replace(/(\d) pb\b/g, "$1 bp"));
+  // un numero scritto all'italiana nei dati («4,33%», «50.053», «107 pb», «23,8 mila»), in inglese: «4.33%», «50,053»,
+  // «107 bp», «23.8K»
+  G.numText = (v) => (!G.en || !v ? v : String(v).replace(/\d[\d.,]*\d/g, (m) => m.replace(/[.,]/g, (c) => (c === "." ? "," : "."))).replace(/(\d) pb\b/g, "$1 bp")
+    .replace(/(\d) mila\b/g, "$1K").replace(/(\d) (mln|milioni)\b/g, "$1M").replace(/(\d) (mld|miliardi)\b/g, "$1B"));
 
   // impronta di un testo (cyrb53, la stessa di scripts/traduci.py): la chiave delle traduzioni
   G.hash = (str) => {
@@ -3682,7 +3684,7 @@
   (() => {
     if (G.reduced()) return;
     // 1. entrata: riquadri e notizie che stanno sotto lo schermo salgono di poco quando ci arrivi
-    const QUALI = ".list > .item, .blk, .t-panel, .altre-l > li, .story-side > section, .next, .prose h2";
+    const QUALI = ".list > .item, .blk, .t-panel, .altre-l > li, .story-side > section, .next:not(.ag-r), .prose h2";  // .ag-r: il prossimo evento dell'agenda, non la prossima notizia
     if (window.IntersectionObserver) {
       const io = new IntersectionObserver((es) => {
         es.forEach((e) => {

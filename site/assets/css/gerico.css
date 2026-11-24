@@ -3396,3 +3396,87 @@ body.term .art-fonti-l { color: var(--t-ink); }
 .pensiero .pz-nota { margin-top: var(--f21, 21px); padding-top: var(--f13, 13px); border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
 .pz-nav { display: grid; gap: 12px; }
 @media (min-width: 760px) { .pz-nav { grid-template-columns: 1fr 1fr; } }
+
+/* ---------- Terminal: l'agenda più chiara (24 novembre) ----------
+   Si legge da sinistra a destra: quando (l'ora e quanto manca), quanto conta (tre barrette, come il segnale del
+   telefono), dove (la valuta) e cosa (il nome, con i numeri sotto). In ordine di tempo: i già usciti nella tendina,
+   poi la riga «Adesso» con l'ora, poi quello che deve uscire. Gli eventi alla stessa ora stanno insieme, senza riga
+   in mezzo e con l'ora scritta una volta. Il nome pesa quanto l'evento: pieno per l'alto, tenue per il basso.
+   Bordi in trasparenza, colori in OKLCH dove il browser li conosce. */
+.t-agenda li.ag-r, .t-agenda li.ag-r.next { grid-template-columns: 4.25rem minmax(0, 1fr); gap: 0 10px; align-items: start; }
+/* il prossimo ad alto impatto: la fascia chiara sborda di 6 px ai lati (quanto il margine del pannello), così le scritte
+   restano allineate alle altre righe; il filo acceso che pulsa quando manca poco sta nella parte che sborda */
+.t-agenda li.ag-r.next, html.nuova body.term .t-agenda li.ag-r.next { position: relative; isolation: isolate; margin: 0; padding-left: 0; padding-right: 0; background: none; }
+.t-agenda li.ag-r.next::after { content: ""; position: absolute; z-index: -1; top: 0; bottom: 0; left: -6px; right: -6px; background: rgb(169 189 235 / 0.08); }
+.t-agenda li.ag-r .ev { grid-column: 2; grid-row: auto; }
+.t-agenda li.ag-r .ev-det { grid-column: 1 / -1; grid-row: auto; }
+.t-agenda li.ag-r.rip { padding-top: 0; border-top-color: transparent; }
+/* quando */
+.t-agenda li.ag-r .tm { display: grid; gap: 1px; line-height: 1.4; }
+.t-agenda li.ag-r .tm b { font-weight: 700; }
+.t-agenda .ag-tra { font-size: 0.75rem; font-weight: 500; color: var(--t-ink-3); white-space: nowrap; }
+.t-agenda .ag-tra.vicino { font-weight: 650; color: var(--t-accent); }
+/* cosa: le barrette e la valuta a sinistra del nome, i numeri allineati sotto il nome */
+.t-agenda li.ag-r .ev-b { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: start; line-height: 1.4; }
+.t-agenda li.ag-r .ev-l1 { display: contents; }
+.t-agenda li.ag-r .ev-meta { grid-column: 1; grid-row: 1; display: inline-flex; align-items: center; gap: 6px; height: 1.4em; }
+.t-agenda li.ag-r .ev-meta:empty { display: none; }
+.t-agenda li.ag-r .ev-t { grid-column: 2; grid-row: 1; min-width: 0; }
+.t-agenda li.ag-r .ev small { grid-column: 2; }
+.t-agenda li.ag-r .cur { padding: 0 5px; border: 1px solid rgb(170 195 255 / 0.18); font-size: 0.6875rem; font-weight: 700; line-height: 1.5; letter-spacing: 0.04em; color: var(--t-ink-2); }
+html.nuova .t-agenda li.ag-r .cur { border-radius: 4px !important; }
+.t-agenda .ag-fe { font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--t-ink-3); }
+.t-agenda li.ag-r.hi .ev-t { font-weight: 650; color: var(--t-ink); }
+.t-agenda li.ag-r.me .ev-t { font-weight: 500; color: var(--t-ink); }
+.t-agenda li.ag-r.lo .ev-t, .t-agenda li.ag-r.fe .ev-t, .t-agenda li.ag-r.past .ev-t { color: var(--t-ink-2); }
+/* i numeri: ognuno intero, vanno a capo tra l'uno e l'altro. Il risultato sotto, su una riga sua: la freccia e il
+   numero, poi rispetto a che cosa */
+.t-agenda li.ag-r .ev small { display: flex; flex-wrap: wrap; column-gap: 12px; }
+.t-agenda li.ag-r .ag-n { white-space: nowrap; }
+.t-agenda li.ag-r .ag-esito { flex-basis: 100%; margin-top: 3px; color: var(--t-ink-2); }
+.t-agenda li.ag-r .ag-esito .ris { font-weight: 700; color: var(--t-ink); }
+.t-agenda li.ag-r .ag-esito .ris-su, .t-agenda li.ag-r .ag-esito .ris-giu { color: var(--t-accent); }
+/* l'impatto: tre barrette che crescono; piene quante ne vale l'evento */
+.ag-imp { display: inline-flex; flex: none; align-items: flex-end; gap: 2px; height: 11px; color: var(--t-ink-3); }
+.ag-imp i { display: block; width: 3px; background: rgb(170 195 255 / 0.2); }
+.ag-imp i:nth-child(1) { height: 5px; }
+.ag-imp i:nth-child(2) { height: 8px; }
+.ag-imp i:nth-child(3) { height: 11px; }
+.ag-imp.i1 i:nth-child(1), .ag-imp.i2 i:nth-child(-n+2), .ag-imp.i3 i { background: currentColor; }
+.ag-imp.i2 { color: var(--t-ink-2); }
+.ag-imp.i3 { color: var(--t-accent); }
+html.nuova .ag-imp i { border-radius: 1px !important; }
+/* che cosa vogliono dire le barrette */
+#p-agenda .ag-leg { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin: 10px 0 0; font-size: 0.75rem; color: var(--t-ink-3); }
+#p-agenda .ag-leg > span { display: inline-flex; align-items: center; gap: 6px; }
+#p-agenda .ag-leg > span:first-child { font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+/* la riga dell'ora: un punto, «Adesso 15:52» e una linea fino in fondo */
+#p-agenda .ag-ora { display: flex; align-items: center; gap: 8px; margin: 16px 0 0; color: var(--t-accent); }
+#p-agenda .ag-ora::before { content: ""; flex: none; width: 7px; height: 7px; background: currentColor; }
+#p-agenda .ag-ora::after { content: ""; flex: 1; height: 1px; background: rgb(169 189 235 / 0.4); }
+html.nuova #p-agenda .ag-ora::before { border-radius: 50% !important; }
+html.nuova #p-agenda .ag-ora::after { border-radius: 0 !important; }
+#p-agenda .ag-ora + .t-agenda > li:first-child { border-top-color: transparent; }
+#p-agenda .ag-usciti + .ag-ora { margin-top: 6px; }
+@supports (color: oklch(0 0 0)) {
+  .t-agenda li.ag-r.next::after { background: oklch(0.8 0.065 268 / 0.08); }
+  .t-agenda li.ag-r .cur { border-color: oklch(0.83 0.07 268 / 0.18); }
+  .ag-imp i { background: oklch(0.83 0.07 268 / 0.2); }
+  #p-agenda .ag-ora::after { background: oklch(0.8 0.065 268 / 0.4); }
+}
+/* il prossimo ad alto impatto: se alla stessa ora ce n'è più d'uno, un riquadro solo */
+.t-agenda li.ag-r.next:has(+ li.ag-r.next.rip)::after { border-bottom-left-radius: 0 !important; border-bottom-right-radius: 0 !important; }
+.t-agenda li.ag-r.next + li.ag-r.next.rip::after { top: -1px; border-top-left-radius: 0 !important; border-top-right-radius: 0 !important; }
+/* sui telefoni le barrette e la valuta vanno sopra il nome, che così prende tutta la riga */
+@media (max-width: 479px) {
+  .t-agenda li.ag-r .ev-b { grid-template-columns: minmax(0, 1fr); row-gap: 3px; }
+  .t-agenda li.ag-r .ev-meta { height: 1.4em; }
+  .t-agenda li.ag-r .ev-t, .t-agenda li.ag-r .ev small { grid-column: 1; }
+  .t-agenda li.ag-r .ev-t { grid-row: 2; }
+}
+/* sui telefoni stretti l'ora prende meno posto */
+@media (max-width: 359px) {
+  .t-agenda li.ag-r, .t-agenda li.ag-r.next { grid-template-columns: 3.9rem minmax(0, 1fr); gap: 0 8px; }
+  .t-agenda .ag-tra { font-size: 0.6875rem; }
+}
+html.nuova body.term .t-agenda li.ag-r.next.soon::before { left: -6px; }

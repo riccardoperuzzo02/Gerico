@@ -41,9 +41,9 @@ G.page("home", async function (P) {
   if (lastRun) {
     G.setEdition(lastRun);
     const edl = document.querySelector("#edition-line .ed-l");
-    // il titolo grande è il giorno dell'edizione («Mercoledì 11 novembre»), sotto l'ora («ore 9:27»)
+    // il titolo grande è il giorno dell'edizione («Mercoledì 11 novembre»), sotto l'ora («Edizione delle ore 9:27»)
     if (edl) {
-      const parti = edl.textContent.replace(" · edizione delle ", " · ore ").replace(" · edition of ", " · ").split(" · ");
+      const parti = edl.textContent.replace(" · edizione delle ", " · Edizione delle ore ").replace(" · edition of ", " · Edition of ").split(" · ");
       if (parti.length > 1) { $("large-title").textContent = parti[0]; edl.textContent = parti.slice(1).join(" · "); }
     }
     // l'aggiornamento atteso non è uscito: accanto all'ora, l'etichetta «in ritardo»

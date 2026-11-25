@@ -3480,3 +3480,7 @@ html.nuova #p-agenda .ag-ora::after { border-radius: 0 !important; }
   .t-agenda .ag-tra { font-size: 0.6875rem; }
 }
 html.nuova body.term .t-agenda li.ag-r.next.soon::before { left: -6px; }
+/* prima pagina: sotto il giorno «Edizione delle ore 7:27» (25 novembre) e, se serve, «in ritardo»; se le due non
+   stanno su una riga, l'etichetta va a capo allineata a sinistra */
+.home #edition-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.home #edition-line .ritardo { margin-left: 0; }

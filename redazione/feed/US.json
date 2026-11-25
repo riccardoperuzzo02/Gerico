@@ -1,13 +1,132 @@
 {
  "code": "US",
- "asOf": "2026-11-25T19:17:35+00:00",
+ "asOf": "2026-11-25T21:17:37+00:00",
  "items": [
   {
    "source": "CNBC",
-   "title": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
-   "desc": "Nvidia and other AI-linked stocks fell as investors weighed AI spending, inflation and higher-rate risks.",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
-   "at": "2026-11-25T19:15:56+00:00"
+   "title": "Macy's postpones Thanksgiving parade due to severe weather",
+   "desc": "Macy's announced on Wednesday that the annual Thanksgiving Day Parade is being postponed to Saturday due to severe weather.",
+   "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
+   "at": "2026-11-25T21:14:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Macy's Thanksgiving Day Parade postponed due to storm",
+   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed, Macy's said Wednesday.",
+   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
+   "at": "2026-11-25T21:12:40+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "FCC approves SpaceX plan for 1 million data center satellites",
+   "desc": "In an X post on Wednesday, SpaceX CEO Elon Musk said the satellites will be a \"great asset to America and the world.\"",
+   "url": "https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/",
+   "at": "2026-11-25T21:05:17+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "At this Little Free Bakery in Austin, neighbors come for the pastries and stay for community connection",
+   "desc": "Little Free Bakeries are popping up across the country. While they each operate a bit differently, the goal is the same: offering their neighbors a sweet treat to encourage conversation with a side of community. We focus on Sarah Mason, who started Little Free Bakery North Loop in her Austin neighborhood and Lanne Rosebrook Stauffer, who founded the first Little Free Bakery in Seattle and just celebrated five years of weekly bakes.",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6005522/at-this-little-free-bakery-in-austin-neighbors-come-for-the-pastries-and-stay-for-community-connection",
+   "at": "2026-11-25T21:02:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+   "desc": "Bond yields moved lower Wednesday as investors fled to bonds for protection amid sticky inflation data.",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "at": "2026-11-25T21:02:05+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
+   "desc": "Whether the Trump administration has investigated Jensen Huang for potential national security risks has been the subject of questions.",
+   "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
+   "at": "2026-11-25T21:00:08+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "We’re Investigating a $300 Million Mystery",
+   "desc": "A $300 million mystery donation could help pay for Washington projects that matter to President Trump. Our investigative reporter David Fahrenthold looks at questions about its source and purpose.",
+   "url": "https://www.nytimes.com/video/us/100000011287370/were-investigating-a-300-million-mystery.html",
+   "at": "2026-11-25T20:54:29+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Vance says Nvidia's Huang isn't under investigation, doesn't need a pardon",
+   "desc": "Vice President JD Vance said he was assured Nvidia CEO Jensen Huang isn't under federal investigation.",
+   "url": "https://www.cbsnews.com/news/vance-says-jensen-huang-doesnt-need-pardon/",
+   "at": "2026-11-25T20:46:16+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
+   "desc": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
+   "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
+   "at": "2026-11-25T20:31:31+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Iowa Awaits All-Clear as Tests for Lead Continue",
+   "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
+   "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
+   "at": "2026-11-25T20:27:22+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After Extraordinary Iowa Blast, Officials and Scientists Assess Fallout Risks",
+   "desc": "Military and civilian authorities said the Army operation was a success. But testing will continue to make sure residents are safe from contamination.",
+   "url": "https://www.nytimes.com/2026/11/25/us/iowa-army-ammunition-blast.html",
+   "at": "2026-11-25T20:22:26+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Border Barrier Cannot be Removed for Decades, Texas Republicans and D.O.J. Agree",
+   "desc": "Just before Democrats take over the state government, Trump administration and outgoing Republican officials in Texas ink legal settlement barring removal of wire for 30 years.",
+   "url": "https://www.nytimes.com/2026/11/25/us/politics/texas-border-legal-settlement-trump.html",
+   "at": "2026-11-25T20:19:48+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Plane Crash Near Mississippi’s Horn Island Kills 6",
+   "desc": "Divers found the remains of the six people inside the downed plane near Horn Island, the Coast Guard said.",
+   "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html",
+   "at": "2026-11-25T20:04:47+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "We're buying more of a stock down big from its July highs",
+   "desc": "We're dipping into our large cash position as the market remains oversold.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/25/were-buying-more-of-a-stock-down-big-from-its-july-highs.html",
+   "at": "2026-11-25T19:55:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Sept. 11 Defendants Get New Opening to Challenge Death Penalty",
+   "desc": "At issue is a clause in a plea deal involving Khalid Shaikh Mohammed, the man accused of being the mastermind of the plot, and two other defendants.",
+   "url": "https://www.nytimes.com/2026/11/25/us/politics/death-penalty-sept-11-case-guantanamo.html",
+   "at": "2026-11-25T19:52:53+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
+   "desc": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+   "at": "2026-11-25T19:52:47+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Why are investors freaking out even as the U.S. economy surges?",
+   "desc": "The economy is sending mixed signals, with growth jumping while stocks gyrate. Here's what economists say is going on.",
+   "url": "https://www.cbsnews.com/news/us-economy-stocks-ai-inflation/",
+   "at": "2026-11-25T19:45:38+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Bullish hopes spring as traders bet against a higher VIX: Options Action Live",
+   "desc": "With stocks mounting a comeback Wednesday, options trading across a few key volatility products suggests big swings in stocks may dampen in the near term.",
+   "url": "https://www.cnbc.com/2026/11/25/bullish-hopes-spring-as-traders-bet-against-a-higher-vix-options-action-live.html",
+   "at": "2026-11-25T19:12:45+00:00"
   },
   {
    "source": "CNBC",
@@ -15,13 +134,6 @@
    "desc": "Abdulrahman Alfozan, a former OpenAI engineer, is expected to be fitted with an ankle monitor, his attorney, David Rizk, previously told CNBC.",
    "url": "https://www.cnbc.com/2026/11/25/openai-bugging-aflozan-bond-release-saudi.html",
    "at": "2026-11-25T19:11:53+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
-   "desc": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
-   "at": "2026-11-25T19:11:09+00:00"
   },
   {
    "source": "CNBC",
@@ -53,24 +165,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Iowa Awaits All-Clear as Tests for Lead Continue",
-   "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
-   "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
-   "at": "2026-11-25T18:35:06+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Fort Hood Shooter Asks Judge to Delay His Execution by Firing Squad",
    "desc": "Nidal Malik Hasan, who killed 13 people at the Army base in 2009, said he wanted to challenge his conviction and death sentence, which is to be carried out next week.",
    "url": "https://www.nytimes.com/2026/11/25/us/nidal-malik-hasan-fort-hood-execution-stay.html",
    "at": "2026-11-25T18:25:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-   "desc": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "at": "2026-11-25T18:22:59+00:00"
   },
   {
    "source": "New York Times",
@@ -78,13 +176,6 @@
    "desc": "After President Trump said Jensen Huang was not a security threat, U.S. intelligence agencies told aides to lawmakers there was no evidence the woman at the heart of the scandal took directions from the Chinese spy agency.",
    "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
    "at": "2026-11-25T18:14:37+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-   "desc": "Bond yields moved lower Wednesday as investors fled to bonds for protection amid sticky inflation data.",
-   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
-   "at": "2026-11-25T18:08:08+00:00"
   },
   {
    "source": "CBS News",
@@ -227,13 +318,6 @@
    "at": "2026-11-25T16:00:45+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-   "desc": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
-   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-   "at": "2026-11-25T15:55:40+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Middletown, where the explosion took place, has been a quiet city for hundreds of years.",
    "desc": "The city of Middletown, Iowa, where the Army detonated a stockpile of degrading explosives on Wednesday.",
@@ -304,13 +388,6 @@
    "at": "2026-11-25T14:29:50+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-   "desc": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
-   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-   "at": "2026-11-25T14:29:00+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Inside Trump's effort to reinstate Jensen Huang as Nvidia's CEO",
    "desc": "Jensen Huang's comeback as Nvidia CEO came after a weekend of strategizing by Trump administration officials, who offered assurances to the company.",
@@ -358,13 +435,6 @@
    "desc": "The emergency emissions scenario calculated by Army officials did not use a “worst-case scenario,” as required by the Environmental Protection Agency.",
    "url": "https://www.nytimes.com/2026/11/25/us/army-detonation-emissions-maps-risk-underestimated.html",
    "at": "2026-11-25T14:02:21+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Plane Crash Near Mississippi’s Horn Island Kills 6",
-   "desc": "Divers found the remains of the six people inside the downed plane near Horn Island, the Coast Guard said.",
-   "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html",
-   "at": "2026-11-25T13:59:09+00:00"
   },
   {
    "source": "CBS News",
@@ -472,13 +542,6 @@
    "at": "2026-11-25T10:00:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
-   "desc": "The Politburo member is the latest senior official targeted in President Xi Jinping's long-running anti-corruption campaign, which has shown no signs of letting up in scope or depth.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party",
-   "at": "2026-11-25T09:44:13+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
    "desc": "Ukraine’s foreign minister told Putin to end the war if he wants Kyiv to stop attacking Russian refineries, after Putin said retaliation was “inevitable.”",
@@ -536,13 +599,6 @@
   },
   {
    "source": "CNBC",
-   "title": "U.S. jury convicts Huawei in a criminal trial over fraud and trade secrets",
-   "desc": "Huawei was found guilty of bank fraud, money laundering and trade secret theft conspiracy in a U.S. trial.",
-   "url": "https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html",
-   "at": "2026-11-25T02:43:33+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Houthi attack on Saudi Arabian sovereign wealth fund PIF's tower injures 11",
    "desc": "This has been the second attack by the Iran-backed group in six days on the tower, although the previous attack did not cause any casualties.",
    "url": "https://www.cnbc.com/2026/11/25/us-iran-war-trump-hormuz-houthi-saudi-pif-tower.html",
@@ -575,62 +631,6 @@
    "desc": "Thomas Markle, who was arrested in early November in Florida, was indicted by a Los Angeles grand jury on two counts of possession of child pornography.",
    "url": "https://www.cbsnews.com/news/thomas-markle-indicted-federal-grand-jury-child-pornography-charges/",
    "at": "2026-11-25T00:49:41+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "How neighbors around the U.S. are helping their local communities this Thanksgiving",
-   "desc": "Tony Dokoupil explores how residents of different U.S. cities are lending a helping hand for their communities this Thanksgiving.",
-   "url": "https://www.cbsnews.com/video/how-neighbors-around-us-helping-local-communities-thanksgiving/",
-   "at": "2026-11-25T00:43:30+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Some AI-powered toys could offer up inappropriate, sexually explicit content to kids",
-   "desc": "Some of the hottest toys this holiday season are cute, cuddly and filled with AI. Mark Strassmann reports on how some of these toys could offer up inappropriate or even sexually explicit content to kids.",
-   "url": "https://www.cbsnews.com/video/some-ai-powered-toys-could-offer-up-inappropriate-sexually-explicit-content-kids/",
-   "at": "2026-11-25T00:41:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Why the Army says it needs to detonate unstable explosives in Iowa",
-   "desc": "The U.S. Army plans to detonate 68 drums of lead azide in Iowa despite local leaders and residents raising concerns.",
-   "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/",
-   "at": "2026-11-25T00:37:46+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Iowa residents fearful of planned explosion, bracing for toxic cloud",
-   "desc": "The U.S. Army plans to blow up five tons of lead bomb-making material on Wednesday, saying the wind is in their favor and they have no other choice. Residents in southeast Iowa are bracing for the toxic cloud of lead dust. Ian Lee reports.",
-   "url": "https://www.cbsnews.com/video/iowa-residents-fearful-planned-explosion-bracing-toxic-cloud/",
-   "at": "2026-11-25T00:34:31+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "5 questions Nvidia still faces after bringing back Jensen Huang",
-   "desc": "Despite Jensen Huang's shock return as Nvidia's CEO, experts say it's anything but business as usual for the chipmaker.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-challenges/",
-   "at": "2026-11-25T00:33:07+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Sullivan Concedes Alaska Senate Race to Peltola",
-   "desc": "The Republican conceded five days after the Trump administration gave up on a long-shot lawsuit intended to potentially block certification of the race.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/dan-sullivan-concedes-alaska-senate-race-mary-peltola.html",
-   "at": "2026-11-24T23:58:18+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Prosecutor Urged Justice Dept. to Reconsider Charges Against Fugitive, Email Shows",
-   "desc": "Aaron Reitz, the U.S. attorney in Houston, questioned the indictment of a Chicago doctor who fled the country after being accused of defrauding taxpayers. The man later donated to Mr. Reitz’s campaign.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/aaron-reitz-justice-dept-anosh-ahmed.html",
-   "at": "2026-11-24T23:55:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Rep. Omar D.C. home search sought evidence going back to 1980",
-   "desc": "The warrant application covers a 46-year period beginning in 1980, long before Omar was in Congress, according to newly released court records. The documents are heavily redacted, and no criminal charges are listed.",
-   "url": "https://www.cbsnews.com/news/ilhan-omar-home-search-documents-magistrate-judge-probable-cause/",
-   "at": "2026-11-24T23:41:00+00:00"
   }
  ]
 }

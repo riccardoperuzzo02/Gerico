@@ -1,13 +1,90 @@
 {
  "code": "FR",
- "asOf": "2026-11-25T19:17:35+00:00",
+ "asOf": "2026-11-25T21:17:37+00:00",
  "items": [
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : David Lisnard, réélu à la tête de l'Association des maires de France, est l'invité du \"20 Heures\" de France 2",
-   "desc": "Alors que le congrès de l'Association des maires de France se tient à Paris, le maire de Cannes a été reconduit mercredi à la tête de l'organisation.",
+   "title": "En Egypte, un incendie dans l'agglomération du Caire fait au moins 30 morts",
+   "desc": "Le feu s'est déclaré lorsqu'un camion chargé de carburant s'est renversé sur une autoroute très fréquentée, selon les médias d'État.",
+   "url": "https://www.franceinfo.fr/monde/afrique/egypte/en-egypte-un-incendie-dans-l-agglomeration-du-caire-fait-au-moins-30-morts_8300229.html",
+   "at": "2026-11-25T20:54:46+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'Iran accuse Israël de chercher à tromper les Etats-Unis en affirmant que Téhéran développe des armes chimiques",
+   "desc": "Le ministre sortant de la Défense israélien, Israel Katz, a accusé mardi l'Iran de développer des armes chimiques, sans avoir \"encore acquis la capacité de s'en servir pour attaquer Israël\".",
+   "url": "https://www.franceinfo.fr/monde/iran/guerre-entre-les-etats-unis-israel-et-l-iran/l-iran-accuse-israel-de-chercher-a-tromper-les-etats-unis-en-affirmant-que-teheran-developpe-des-armes-chimiques_8300259.html",
+   "at": "2026-11-25T20:53:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La France insoumise refuse la proposition de rencontre des anciens Insoumis de l'Après",
+   "desc": "Après un vote de leurs militants, les ex-Insoumis qui ont créé L'Après après les \"purges\" de 2024 devraient quant à eux soutenir la candidature de Jean-Luc Mélenchon pour la présidentielle.",
+   "url": "https://www.franceinfo.fr/politique/la-france-insoumise/la-france-insoumise-refuse-la-proposition-de-rencontre-des-anciens-insoumis-de-l-apres_8300331.html",
+   "at": "2026-11-25T20:49:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Yémen, des positions des houthistes à nouveau bombardées ; des ports saoudiens pris pour cible en représailles",
+   "desc": "Après le bombardement saoudien du port de Hodeïda aux mains des miliciens pro-iraniens, ces derniers ont dit avoir pris pour cible ceux de Jizan et de Djedda. Ils ont par ailleurs revendiqué l’attaque d’une raffinerie dans l’est du royaume.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/25/au-yemen-des-positions-des-houthistes-a-nouveau-bombardees-des-ports-saoudiens-pris-pour-cible-en-represailles_6815174_3210.html",
+   "at": "2026-11-25T20:48:56+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des espions chinois se sont-ils fait passer pour des touristes dans un village de Gironde ?",
+   "desc": "Une petite commune de Gironde a été le théâtre d'une incroyable histoire d’espionnage présumée. Au mois de janvier dernier dans le jardin d’une maison louée, une parabole de 2 mètres intrigue. Les deux locataires sont soupçonnés d’avoir voulu capter pour Pékin des informations militaires confidentielles.",
+   "url": "https://www.franceinfo.fr/monde/chine/des-espions-chinois-se-sont-ils-fait-passer-pour-des-touristes-dans-un-village-de-gironde_8300283.html",
+   "at": "2026-11-25T20:28:09+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Google accusé d'avoir coupé 250 000 arbres sans autorisation en Finlande",
+   "desc": "250 000 arbres coupés sans avoir obtenu toutes les autorisations pour construire des datas centers. Le géant Google est dans le viseur des autorités finlandaises qui ont ordonné la suspension des travaux de ces centres de données et ouvert une enquête pénale.",
+   "url": "https://www.franceinfo.fr/internet/google/google-accuse-d-avoir-coupe-250-000-arbres-sans-autorisation-en-finlande_8299911.html",
+   "at": "2026-11-25T20:00:01+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Non,\"toute la diaspora chinoise\" n'est pas composée d'espions, mais elle subit une pression de Pékin",
+   "desc": "Le 13 novembre sur le plateau des \"Informés de franceinfo\", des invités ont affirmé que l'ensemble de la diaspora chinoise en France était potentiellement composé d'espions. Selon les experts, cette affirmation est inexacte et contre-productive : l'État chinois est le responsable des activités d'espionnage, et non la diaspora, qui est bien souvent la victime de ses mesures.",
+   "url": "https://www.france24.com/fr/france/20261125-non-toute-diaspora-chinoise-pas-compos%C3%A9e-espions-mais-subit-pressions-p%C3%A9kin",
+   "at": "2026-11-25T19:57:28+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"La démocratie, c’est du vote\", déclare David Lisnard, qui refuse la proposition d’Edouard Philippe de débattre à la place d'une primaire",
+   "desc": "Le maire de Cannes a été reconduit mercredi à la tête de l'Association des maires de France. Il est l'invité du JT de \"20 Heures\" de France 2.",
    "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html",
-   "at": "2026-11-25T19:04:22+00:00"
+   "at": "2026-11-25T19:52:13+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"L'eau est montée de partout dans le lotissement\" : un mois de pluie en six heures dans le sud-est de la France",
+   "desc": "De violents orages ont frappé le Var et les Bouches-du-Rhône, mercredi 25 novembre. Sur plusieurs routes, l’eau est rapidement montée, au point qu’il a fallu fermer la circulation et mettre des dizaines d’automobilistes à l’abri.",
+   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/l-eau-est-montee-de-partout-dans-le-lotissement-un-mois-de-pluie-en-six-heures-dans-le-sud-est-de-la-france_8300235.html",
+   "at": "2026-11-25T19:49:05+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Technip Energies France jugée pour homicide involontaire après trois suicides de salariés",
+   "desc": "Le groupe de gestion de projets pour l’industrie de l’énergie comparaissait pour des faits remontant à la période 2015-2017. La procureure et les parties civiles ont dénoncé son inaction face aux risques psychosociaux.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/25/technip-energies-france-jugee-pour-homicide-involontaire-apres-trois-suicides-de-salaries_6815171_3234.html",
+   "at": "2026-11-25T19:27:53+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Comment le candidat David Lisnard séduit les déçus d’une partie de la droite : « Avec Retailleau et Philippe, on continue sans rien changer »",
+   "desc": "Dans les Yvelines, les Hauts-de-Seine et le Rhône, de nombreux électeurs mécontents des figures de leur camp rejoignent le parti Nouvelle énergie. Ils plébiscitent le discours anti-norme et le profil d’entrepreneur du maire de Cannes.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/25/comment-le-candidat-david-lisnard-seduit-les-decus-d-une-partie-de-la-droite-avec-retailleau-et-philippe-on-continue-sans-rien-changer_6815170_823448.html",
+   "at": "2026-11-25T19:25:00+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Hugues Moutouh, préfet du Loiret, démis de ses fonctions après la révélation de soupçons de fuites émanant du ministère de l’intérieur vers le RN",
+   "desc": "Le haut fonctionnaire a été remplacé en conseil des ministres, mercredi, par Pierre Ory, actuel préfet de Seine-et-Marne. L’ex-secrétaire général de Beauvau dénonce, à propos de cette affaire, « une opération de nature politique ».",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/25/le-prefet-du-loiret-hugues-moutouh-demis-de-ses-fonctions-apres-la-revelation-de-soupcons-de-fuites-emanant-du-ministere-de-l-interieur-vers-le-rn_6815167_3224.html",
+   "at": "2026-11-25T19:11:02+00:00"
   },
   {
    "source": "Le Monde",
@@ -22,6 +99,13 @@
    "desc": "À l’occasion de la Journée internationale de lutte contre les violences faites aux femmes, le 25 novembre, les chiffres restent alarmants : 47 000 femmes et filles ont été tuées par un proche dans le monde en 2025. Comment mieux protéger les victimes et prévenir les féminicides ? Lorraine Questiaux, avocate spécialisée dans les violences faites aux femmes, analyse les réponses de la justice.",
    "url": "https://www.france24.com/fr/%C3%A9missions/questions-directes/20261125-un-bilan-toujours-plus-alarmant",
    "at": "2026-11-25T18:36:07+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Mouvement lycéen : plus de 400 élèves exclus définitivement de leur établissement, sur les 3 000 procédures disciplinaires engagées",
+   "desc": "Le ministre a appelé à ne pas regarder « l’arbre qui cache la forêt » et voir que la grande majorité des élèves n’a commis aucun acte répréhensible.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/25/mouvement-lyceen-plus-de-400-eleves-exclus-definitivement-de-leur-etablissement_6815162_3224.html",
+   "at": "2026-11-25T18:17:25+00:00"
   },
   {
    "source": "France 24",
@@ -60,13 +144,6 @@
   },
   {
    "source": "Le Monde",
-   "title": "Violences sur des élus : plus de 3 100 faits comptabilisés depuis le début 2026 ; une hausse de 25 % par rapport à 2025, annonce Laurent Nuñez",
-   "desc": "L’agression d’un édile de la Vienne a relancé le débat lors des questions au gouvernement, mercredi. « S’il faut durcir les sanctions », elles le seront, a prévenu le ministre de l’intérieur.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/25/violences-sur-des-elus-plus-de-3-100-faits-comptabilises-depuis-le-debut-2026-en-hausse-de-25-par-rapport-a-2025-annonce-laurent-nunez_6815158_3224.html",
-   "at": "2026-11-25T17:40:46+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "La grippe s’installe en France, où la majorité des régions de l’Hexagone sont passées en pré-épidémie",
    "desc": "La circulation des virus grippaux s’intensifie et les recours aux soins apparaissent globalement « à des niveaux toujours supérieurs à ceux de l’année précédente à la même période », constate Santé publique France.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/25/la-grippe-s-installe-en-france-ou-la-majorite-des-regions-de-l-hexagone-sont-passees-en-pre-epidemie_6815156_3224.html",
@@ -88,24 +165,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Congo Boy\" : le jeune cinéaste Rafiki Fariala se raconte en musique avec peps et panache",
-   "desc": "C'est l'histoire d'un jeune réfugié congolais en Centrafrique qui rêvait de chanter. En dépit de la galère et du bac à préparer, il se démène pour décrocher son étoile.",
-   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/congo-boy-le-jeune-cineaste-rafiki-fariala-se-raconte-en-musique-avec-peps-et-panache_8296842.html",
-   "at": "2026-11-25T17:09:34+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Les Européens doivent venir s'expliquer à Moscou avant de participer aux négociations sur l'Ukraine, affirme l'ambassadeur russe en Allemagne",
    "desc": "Sergueï Netchaev a aussi déclaré ne pas être \"convaincu que les Européens souhaitent la paix\".",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/les-europeens-doivent-venir-s-expliquer-a-moscou-avant-de-participer-aux-negociations-sur-l-ukraine-affirme-l-ambassadeur-russe-en-allemagne_8299872.html",
    "at": "2026-11-25T17:07:13+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'UE et le Royaume-Uni infligent près de 600 millions d'euros d'amendes à trois industriels accusés d'avoir formé le \"cartel des parfums\"",
-   "desc": "Les groupes suisses Firmenich et Givaudan, ainsi que l'américain IFF, se sont vu reprocher ont coordonnée certaines décisions tarifaires.",
-   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/l-ue-et-le-royaume-uni-infligent-pres-de-600-millions-d-euros-d-amendes-a-trois-industriels-accuses-d-avoir-forme-le-cartel-des-parfums_8300085.html",
-   "at": "2026-11-25T17:01:34+00:00"
   },
   {
    "source": "Le Monde",
@@ -136,13 +199,6 @@
    "at": "2026-11-25T16:42:36+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Plus de 3 100 faits de violences sur des élus ont été recensés en 2026, un chiffre en hausse de 25% par rapport à 2025",
-   "desc": "Le ministre de l'Intérieur, Laurent Nuñez, a réagi à l'agression du maire d'une commune de la Vienne et de son fils, samedi.",
-   "url": "https://www.franceinfo.fr/faits-divers/plus-de-3-100-faits-de-violences-sur-des-elus-ont-ete-recenses-en-2026-un-chiffre-en-hausse-de-25-par-rapport-a-2025_8300025.html",
-   "at": "2026-11-25T16:41:08+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "La moitié des chèques au Trésor public bloquée depuis quarante jours en raison de la grève de quatre agents",
    "desc": "Le dernier centre d’encaissement des chèques au Trésor public, à Rennes, doit fermer en 2027. Le personnel demande une prime. Le conflit empêche l’encaissement de près de 150 millions d’euros, selon les syndicats.",
@@ -169,13 +225,6 @@
    "desc": "Une douzaine de médias ont épluché plus en détail les données issues d'un piratage de l'agence nationale des statistiques russe. Leurs évaluations oscillent entre 470 000 et 500 000 morts, voire 700 000 selon certaines projections.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/au-moins-470-000-soldats-russes-sont-morts-depuis-le-debut-de-la-guerre-en-ukraine-selon-un-nouveau-decompte-issu-de-donnees-piratees_8299866.html",
    "at": "2026-11-25T16:05:18+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, congrès des maires 2026 : Gabriel Attal espère que la réunion des candidats de la droite et du centre autour de Gérard Larcher permettra « d’avancer » vers une méthode de départage",
-   "desc": "Le président du Sénat doit réunir, probablement la semaine prochaine, les prétendants à l’Elysée de la droite et du centre pour se mettre d’accord sur une « méthode de départage », alors que David Lisnard, candidat libéral, ne cesse de monter dans les sondages.",
-   "url": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-au-quotidien-on-constate-de-plus-en-plus-une-solitude-des-communes_6815062_823448.html",
-   "at": "2026-11-25T15:53:02+00:00"
   },
   {
    "source": "franceinfo",
@@ -269,13 +318,6 @@
    "at": "2026-11-25T14:00:09+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Parcoursup : publier les algorithmes locaux, une gageure pour les universités",
-   "desc": "En réponse aux préoccupations des lycéens, le ministre de l’enseignement supérieur annonce que les formations seront tenues de détailler leurs critères de traitement automatisé des dossiers pour préclasser les candidats. Le sujet fait débat, toutes les facultés n’appréciant pas de la même manière la notion de transparence.",
-   "url": "https://www.lemonde.fr/campus/article/2026/11/25/parcoursup-publier-les-algorithmes-locaux-une-gageure-pour-les-universites_6815107_4401467.html",
-   "at": "2026-11-25T14:00:05+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Saluts nazis et propos racistes : les dérives longtemps impunies des douaniers de Chaumont",
    "desc": "Saluts nazis, propos racistes et climat de terreur : à la brigade des douanes de Chaumont (Haute-Marne), des agents ont multiplié les dérives pendant des années, selon des informations révélées par Mediapart que nous confirmons. Pointée pour sa passivité face aux alertes internes, la direction générale assure avoir réagi sans tarder.",
@@ -295,27 +337,6 @@
    "desc": "Le candidat du parti libéral Nouvelle Energie, qui a récolté 72% des voix, est élu pour un troisième mandat.",
    "url": "https://www.franceinfo.fr/politique/david-lisnard/c-est-le-fruit-de-la-mobilisation-d-une-france-de-terrain-david-lisnard-candidat-a-la-presidentielle-est-reelu-a-la-tete-de-l-association-des-maires-de-france_8299698.html",
    "at": "2026-11-25T13:39:48+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Patrick Bruel visé par une nouvelle plainte pour viol",
-   "desc": "Depuis sa mise en examen, au moins neuf plaintes ont été déposées contre lui pour des faits de viol, tentative de viol, agression sexuelle et d’exhibition sexuelle.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/25/patrick-bruel-vise-par-une-nouvelle-plainte-pour-viol_6815101_3224.html",
-   "at": "2026-11-25T13:39:35+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"J'espère que ça ne montera pas plus\" : la Côte d'Azur une nouvelle fois sous les eaux, les habitants d'une commune du Var tentent de faire avec les inondations",
-   "desc": "Le Var et les Alpes-Maritimes sont toujours en vigilance orange mercredi. Les routes sont complètement inondées et plusieurs écoles ont fermé. Dans le golfe de Saint-Tropez, il est tombé en quelques heures l'équivalent d'un mois de pluie, et de nouvelles précipitations sont attendues.",
-   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/la-cote-d-azur-sous-les-eaux-des-sacs-de-sable-au-paddle-les-habitants-d-une-commune-du-var-tentent-de-faire-avec-les-inondations_8299611.html",
-   "at": "2026-11-25T13:17:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Vous êtes lycéen ou parent d'élève d'un établissement bloqué ? Racontez-nous comment vous palliez le manque de cours",
-   "desc": "Groupes d'entraide, cours particuliers, bascule vers le privé... Franceinfo donne la parole aux jeunes et aux familles qui tentent de limiter le retard scolaire accumulé depuis le début du mouvement social.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/appel-a-temoignages-vous-etes-lyceen-ou-parent-d-eleve-d-un-etablissement-bloque-racontez-nous-comment-vous-palliez-le-manque-de-cours_8299068.html",
-   "at": "2026-11-25T13:11:51+00:00"
   },
   {
    "source": "franceinfo",
@@ -374,13 +395,6 @@
    "at": "2026-11-25T10:24:33+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "La RDC impose un nouvel embargo sur les exportations de cobalt pour faire monter les cours",
-   "desc": "Dans un contexte de baisse des prix, le pays a de nouveau interdit l’exportation de cobalt, dont la transformation est presque entièrement contrôlée par la Chine. Un premier embargo, remplacé ensuite par des quotas, avait été mis en place en 2025.",
-   "url": "https://www.lemonde.fr/afrique/article/2026/11/25/la-rdc-impose-un-nouvel-embargo-sur-les-exportations-de-cobalt-pour-faire-monter-les-cours_6815079_3212.html",
-   "at": "2026-11-25T10:00:09+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Suspicion de fuites vers le RN : Darmanin saisit l'Inspection générale de la Justice",
    "desc": "Le ministre de la justice, Gérald Darmanin, a annoncé, mercredi 25 novembre, avoir saisi l’inspection générale de la justice pour enquêter sur la présence, dans les locaux du Rassemblement national (RN) lors d’une perquisition, le 9 novembre, d’un procureur adjoint du parquet de Paris, Christian de Rocquigny. Le Garde des Sceaux a déploré un \"défaut de loyauté\" du haut magistrat, qui décrit pour sa part une simple visite à une connaissance.",
@@ -393,20 +407,6 @@
    "desc": "Depuis plusieurs mois, Ukrainiens et Russes s'affrontent dans d'anciennes conduites de gaz, à l'est de l'Ukraine. Une opération particulièrement dure, dans des tunnels étroits et insalubres, où chaque kilomètre est chèrement conquis, comme en témoignent des soldats de la 13e brigade de la Garde nationale d’Ukraine Khartia qui y ont participé.",
    "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/temoignages-j-ai-vraiment-cru-que-j-allais-y-rester-le-recit-de-soldats-ukrainiens-qui-ont-survecu-a-l-enfer-de-la-guerre-souterraine_8277137.html",
    "at": "2026-11-25T07:43:31+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Les violences économiques ont vocation à instaurer un climat de dépendance\" : quand l'argent devient un outil d'emprise",
-   "desc": "Une femme sur cinq est exposée aux violences économiques au sein de son couple. Des mécanismes qui installent une dépendance financière et rendent parfois le départ encore plus difficile.",
-   "url": "https://www.franceinfo.fr/societe/violences-faites-aux-femmes/les-violences-economiques-ont-vocation-a-instaurer-un-climat-de-dependance-quand-l-argent-devient-un-outil-d-emprise_8298447.html",
-   "at": "2026-11-25T06:20:44+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Logement, justice, soins… Le départ d'une victime de violences conjugales de son foyer représente presque une année de salaire",
-   "desc": "A l'occasion de la journée de lutte contre les violences faites aux femmes, la Fondation des femmes a publié un rapport pour chiffrer le coût d'un départ du foyer d'une femme victime de violences conjugales.",
-   "url": "https://www.franceinfo.fr/societe/violences-faites-aux-femmes/logement-justice-soins-le-depart-d-une-victime-de-violences-conjugales-de-son-foyer-represente-presque-une-annee-de-salaire_8297718.html",
-   "at": "2026-11-25T04:54:22+00:00"
   },
   {
    "source": "France 24",

@@ -1,0 +1,97 @@
+{
+ "id": "2026-11-25-de-bundestag-generaldebatte-bilancio",
+ "title": "Germania: dibattito sul bilancio 2027 al Bundestag, i Verdi accusano il governo",
+ "section": "mondo",
+ "status": "live",
+ "country": "DE",
+ "scope": "paese",
+ "city": {
+  "name": "Berlino",
+  "lat": 52.52,
+  "lon": 13.37
+ },
+ "rank": 401,
+ "summary": "Il cancelliere Merz parla nel dibattito generale sul bilancio federale, che prevede spese record e nuovo debito. I Verdi parlano di trucchi contabili.",
+ "article": "Mercoledì il cancelliere Friedrich Merz ha parlato al Bundestag, il parlamento federale tedesco, nel dibattito generale sul bilancio 2027, che discute l'etat della cancelleria. Il bilancio prevede spese record, con un volume di circa 561 miliardi di euro.\n\nIl ministro delle Finanze, Lars Klingbeil, aveva difeso martedì il bilancio come un insieme di «importanti investimenti per il futuro». La spesa va in particolare a difesa, droni e sussidio ai disoccupati (Bürgergeld).\n\nI Verdi hanno criticato il progetto prima del dibattito: dicono che la coalizione di governo voglia «prendere in giro le persone» con trucchi sul debito. L'opposizione in generale ha mosso critiche dure sul nuovo indebitamento.\n\nIn parallelo, le casse dell'assicurazione per la non autosufficienza dicono che il prestito federale promesso per il 2027 basta solo per pochi mesi. Il voto finale sul bilancio è atteso nell'ultima settimana di novembre.",
+ "facts": [
+  {
+   "text": "Il bilancio federale 2027 prevede spese record per circa 561 miliardi di euro.",
+   "who": [
+    "Governo federale"
+   ]
+  },
+  {
+   "text": "Klingbeil ha difeso il progetto parlando di investimenti per il futuro.",
+   "who": [
+    "Lars Klingbeil"
+   ]
+  },
+  {
+   "text": "I Verdi accusano la coalizione di usare trucchi sul debito.",
+   "who": [
+    "Verdi"
+   ]
+  },
+  {
+   "text": "Le casse della non autosufficienza dicono che il prestito federale per il 2027 copre solo pochi mesi.",
+   "who": [
+    "Casse della non autosufficienza"
+   ]
+  }
+ ],
+ "view": "Si può dire con certezza che il bilancio ha spese record e che l'opposizione critica il nuovo debito. Non si conosce il testo del discorso del cancelliere né le eventuali modifiche in aula.\n\nLa discussione mostra quanto pesi il debito nei conti del governo di coalizione. Da guardare: il voto finale e le richieste di modifica sulla sanità.",
+ "open": [
+  "Cosa ha detto Merz nel suo intervento?",
+  "A quanto ammonta il nuovo debito nel testo finale?",
+  "Quando è fissato il voto finale?"
+ ],
+ "sources": [
+  {
+   "name": "Die Zeit",
+   "kind": "giornale",
+   "country": "Germania",
+   "area": "Germania",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/schuldenbremse-bundesregierung-haushalt-verschuldung-friedrich-merz-gxe",
+   "angle": "Dal testo del feed: l'accusa dei Verdi di «trucchi» sul bilancio; un altro pezzo dà il volume di 561 miliardi.",
+   "at": "2026-11-25T06:02:34+00:00"
+  },
+  {
+   "name": "Tagesschau",
+   "kind": "tv",
+   "country": "Germania",
+   "area": "Germania",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-150.html",
+   "angle": "Dal testo del feed: scontro atteso sul nuovo debito e sull'etat della cancelleria.",
+   "at": "2026-11-25T06:32:57+00:00"
+  },
+  {
+   "name": "Der Spiegel",
+   "kind": "giornale",
+   "country": "Germania",
+   "area": "Germania",
+   "url": "https://www.spiegel.de/politik/deutschland/news-generaldebatte-im-bundestag-mehr-anzeigen-wegen-gewalt-gegen-frauen-tarifverhandlungen-in-der-metallindustrie-a-40c31068-2413-4166-8289-438c4c3739f7",
+   "angle": "Dal testo del feed: Merz sale al podio nel dibattito generale.",
+   "at": "2026-11-25T04:23:00+00:00"
+  }
+ ],
+ "firstSeen": "2026-11-25T09:49:51+01:00",
+ "updated": "2026-11-25T09:49:51+01:00",
+ "change": "",
+ "history": [
+  {
+   "at": "2026-11-25T09:49:51+01:00",
+   "text": "Prima notizia: dibattito generale al Bundestag sul bilancio 2027."
+  }
+ ],
+ "tags": [
+  "Germania",
+  "Conti pubblici",
+  "Parlamento"
+ ],
+ "themes": [],
+ "places": [
+  "DE"
+ ],
+ "divergences": [],
+ "notCovered": []
+}

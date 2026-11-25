@@ -1,0 +1,88 @@
+{
+ "id": "2026-11-25-gb-ofgem-tetto-bollette-gennaio",
+ "title": "Regno Unito: da gennaio le bollette di luce e gas salgono del 26%",
+ "section": "mondo",
+ "status": "live",
+ "country": "GB",
+ "scope": "paese",
+ "city": {
+  "name": "Londra",
+  "lat": 51.5,
+  "lon": -0.12
+ },
+ "rank": 202,
+ "summary": "Il tetto fissato dall'autorità dell'energia sale per il terzo trimestre di fila e porta la bolletta annua media sopra le 2.000 sterline. Pesa il costo all'ingrosso del gas.",
+ "article": "Da gennaio il tetto ai prezzi di gas ed elettricità in Gran Bretagna sale del 26%. Lo ha annunciato mercoledì Ofgem, l'autorità britannica dell'energia, e le bollette annue di milioni di famiglie superano le 2.000 sterline.\n\nÈ il terzo aumento consecutivo del tetto, trimestre dopo trimestre. Secondo quanto riportato, è la prima volta dalla crisi del gas seguita all'invasione russa dell'Ucraina che la bolletta annua supera quella soglia.\n\nL'aumento deriva dal rialzo dei prezzi all'ingrosso del gas, che non si vedeva dal primo inverno dopo l'invasione. Il tetto riguarda le tariffe standard: chi ha un contratto a prezzo fisso non è toccato dal rialzo.\n\nIl governo ha già annunciato un pagamento da 100 sterline, che milioni di famiglie riceveranno da gennaio. Le fonti disponibili non indicano quali famiglie ne abbiano diritto né come si compensi l'aumento.",
+ "facts": [
+  {
+   "text": "Il tetto ai prezzi di gas ed elettricità sale del 26% da gennaio.",
+   "who": [
+    "Ofgem"
+   ]
+  },
+  {
+   "text": "La bolletta annua media supera le 2.000 sterline per la prima volta dalla crisi del gas seguita all'invasione russa dell'Ucraina.",
+   "who": [
+    "Ofgem"
+   ]
+  },
+  {
+   "text": "È il terzo aumento consecutivo del tetto, causato dal rialzo dei prezzi all'ingrosso del gas.",
+   "who": [
+    "Ofgem"
+   ]
+  },
+  {
+   "text": "Dal mese di gennaio milioni di famiglie riceveranno un pagamento da 100 sterline.",
+   "who": [
+    "Governo britannico"
+   ]
+  }
+ ],
+ "view": "Si può dire con certezza che il tetto sale del 26% e che la causa è il gas all'ingrosso. Resta aperto quanto pesi il pagamento da 100 sterline sulla spesa reale delle famiglie.\n\nLa bolletta incide sui bilanci e sul dibattito politico del governo. Da guardare: le misure di sostegno e i prezzi del gas nelle prossime settimane.",
+ "open": [
+  "Chi ha diritto al pagamento da 100 sterline?",
+  "Quanto costerà in più la bolletta di una famiglia tipo?",
+  "Il governo prepara altri aiuti?"
+ ],
+ "sources": [
+  {
+   "name": "The Guardian",
+   "kind": "giornale",
+   "country": "Regno Unito",
+   "area": "Regno Unito",
+   "url": "https://www.theguardian.com/money/2026/nov/25/energy-bills-in-great-britain-to-rise-ofgem-price-cap",
+   "angle": "Dal testo del feed: +26% da gennaio, oltre 2.000 sterline l'anno, terzo aumento consecutivo.",
+   "at": "2026-11-25T07:03:21+00:00"
+  },
+  {
+   "name": "BBC",
+   "kind": "tv",
+   "country": "Regno Unito",
+   "area": "Regno Unito",
+   "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o",
+   "angle": "Dal titolo del feed: bollette in aumento del 26% da gennaio; un altro pezzo spiega il pagamento da 100 sterline.",
+   "at": "2026-11-25T07:14:15+00:00"
+  }
+ ],
+ "firstSeen": "2026-11-25T09:49:51+01:00",
+ "updated": "2026-11-25T09:49:51+01:00",
+ "change": "",
+ "history": [
+  {
+   "at": "2026-11-25T09:49:51+01:00",
+   "text": "Prima notizia: Ofgem alza il tetto alle bollette del 26% da gennaio."
+  }
+ ],
+ "tags": [
+  "Regno Unito",
+  "Energia",
+  "Conti pubblici"
+ ],
+ "themes": [],
+ "places": [
+  "GB"
+ ],
+ "divergences": [],
+ "notCovered": []
+}

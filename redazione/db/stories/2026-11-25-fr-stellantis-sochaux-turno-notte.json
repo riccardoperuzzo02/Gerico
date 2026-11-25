@@ -1,0 +1,88 @@
+{
+ "id": "2026-11-25-fr-stellantis-sochaux-turno-notte",
+ "title": "Francia: Stellantis chiude il turno di notte a Sochaux, 500 posti coinvolti",
+ "section": "mondo",
+ "status": "live",
+ "country": "FR",
+ "scope": "paese",
+ "city": {
+  "name": "Sochaux",
+  "lat": 47.51,
+  "lon": 6.83
+ },
+ "rank": 306,
+ "summary": "Dal gennaio 2027 l'impianto di Peugeot nel Doubs perde la squadra notturna. I sindacati dicono che i lavoratori interinali sono «sacrificati».",
+ "article": "Dal gennaio 2027 lo stabilimento Stellantis di Sochaux, nell'est della Francia, chiude il turno di notte. La decisione riguarda 500 posti di lavoro, secondo l'azienda, che ha diffuso la notizia con un comunicato.\n\nStellantis, il gruppo che controlla Peugeot, Citroën e Opel, ha detto che ogni lavoratore notturno sarà ricevuto dai suoi responsabili entro la fine di novembre. Non ha spiegato nel comunicato come saranno ricollocate le persone coinvolte.\n\nI sindacati sostengono che i lavoratori interinali siano «sacrificati» da questa scelta. È la seconda decisione dalle conseguenze sociali annunciata dal gruppo in pochi giorni: lunedì Stellantis aveva comunicato il ritiro delle sue scuderie dalle competizioni automobilistiche.\n\nResta da chiarire quanti dei 500 posti siano interinali e quanti a tempo indeterminato, e se sono previsti incontri con il governo.",
+ "facts": [
+  {
+   "text": "Lo stabilimento di Sochaux sospende l'attività del turno di notte da gennaio 2027.",
+   "who": [
+    "Stellantis"
+   ]
+  },
+  {
+   "text": "La decisione riguarda 500 posti di lavoro.",
+   "who": [
+    "Stellantis"
+   ]
+  },
+  {
+   "text": "Ogni lavoratore notturno sarà ricevuto dai suoi responsabili entro fine novembre.",
+   "who": [
+    "Stellantis"
+   ]
+  },
+  {
+   "text": "I sindacati dicono che gli interinali sono «sacrificati».",
+   "who": [
+    "Sindacati"
+   ]
+  }
+ ],
+ "view": "Si può dire con certezza che il turno di notte si ferma da gennaio e che la misura tocca 500 persone. Non si sa quanti siano interinali, né quale sia la ragione commerciale che l'azienda indica.\n\nLa vicenda riguarda un sito simbolo dell'industria automobilistica francese. Da guardare: le trattative con i sindacati e le eventuali reazioni del governo.",
+ "open": [
+  "Quanti dei 500 posti sono lavoratori interinali?",
+  "Quali ricollocazioni propone l'azienda?",
+  "Il governo interverrà?"
+ ],
+ "sources": [
+  {
+   "name": "Le Monde",
+   "kind": "giornale",
+   "country": "Francia",
+   "area": "Francia",
+   "url": "https://www.lemonde.fr/economie-francaise/article/2026/11/25/stellantis-supprime-l-equipe-de-nuit-de-l-usine-de-sochaux-500-emplois-concernes-des-janvier_6815054_1656968.html",
+   "angle": "Dal testo del feed: è la seconda decisione sociale della settimana, dopo il ritiro dalle competizioni.",
+   "at": "2026-11-25T06:42:51+00:00"
+  },
+  {
+   "name": "franceinfo",
+   "kind": "tv",
+   "country": "Francia",
+   "area": "Francia",
+   "url": "https://www.franceinfo.fr/economie/automobile/l-usine-stellantis-de-sochaux-arrete-l-activite-de-son-equipe-de-nuit-a-partir-de-janvier-2027-500-emplois-sont-concernes_8298177.html",
+   "angle": "Dal testo del feed: i colloqui entro fine novembre e la posizione dei sindacati sugli interinali.",
+   "at": "2026-11-24T18:08:08+00:00"
+  }
+ ],
+ "firstSeen": "2026-11-25T09:49:51+01:00",
+ "updated": "2026-11-25T09:49:51+01:00",
+ "change": "",
+ "history": [
+  {
+   "at": "2026-11-25T09:49:51+01:00",
+   "text": "Prima notizia: Stellantis ferma il turno di notte a Sochaux da gennaio."
+  }
+ ],
+ "tags": [
+  "Francia",
+  "Lavoro",
+  "Industria"
+ ],
+ "themes": [],
+ "places": [
+  "FR"
+ ],
+ "divergences": [],
+ "notCovered": []
+}

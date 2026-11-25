@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-25-gb-met-police-rapporto-fairfield",
+ "title": "Regno Unito: un rapporto dice che la Met Police è ancora razzista e misogina",
+ "photo": {
+  "wiki": "en",
+  "title": "New Scotland Yard"
+ },
+ "section": "mondo",
+ "status": "live",
+ "country": "GB",
+ "scope": "paese",
+ "city": {
+  "name": "Londra",
+  "lat": 51.5,
+  "lon": -0.12
+ },
+ "rank": 205,
+ "summary": "La revisione indipendente guidata da Gillian Fairfield trova problemi «sistemici» nella polizia di Londra a tre anni dal rapporto Casey. Pesa il mancato seguito alle raccomandazioni precedenti.",
+ "article": "La Metropolitan Police, la più grande forza di polizia del Regno Unito, è ancora istituzionalmente razzista, misogina e omofoba. Lo conclude una revisione indipendente guidata da Gillian Fairfield, pubblicata mercoledì, tre anni dopo il rapporto della baronessa Louise Casey sulla stessa forza.\n\nIl documento parla di «problemi fondamentali e sistemici» e di una «difesa istituzionale» che si è mantenuta nel tempo. Secondo la revisione, la polizia ha faticato a riconoscere il razzismo come un problema strutturale. Il rapporto Casey del 2023 era arrivato dopo il caso di Sarah Everard, la donna uccisa nel 2021 da un agente.\n\nIl giudizio di Fairfield ricalca quelli di tutte le inchieste precedenti, a cominciare da quella sull'omicidio di Stephen Lawrence del 1999. Il punto che il testo mette in evidenza è che le raccomandazioni passate non sono state attuate fino in fondo.\n\nLe fonti disponibili non riportano ancora la risposta della Met né quella del governo, e non indicano quali misure siano previste.",
+ "facts": [
+  {
+   "text": "Una revisione indipendente guidata da Gillian Fairfield ha concluso che nella Met Police restano razzismo, misoginia e omofobia istituzionali.",
+   "who": [
+    "Revisione Fairfield"
+   ]
+  },
+  {
+   "text": "Il rapporto parla di problemi «fondamentali e sistemici» e di «difesa istituzionale».",
+   "who": [
+    "Revisione Fairfield"
+   ]
+  },
+  {
+   "text": "La revisione arriva tre anni dopo il rapporto di Louise Casey del 2023.",
+   "who": [
+    "Revisione Fairfield"
+   ]
+  },
+  {
+   "text": "Le raccomandazioni dei rapporti precedenti non sono state attuate in pieno.",
+   "who": [
+    "Revisione Fairfield"
+   ]
+  }
+ ],
+ "view": "Si può dire con certezza che una revisione indipendente ha trovato gli stessi problemi del 2023. Non si sa ancora come reagiranno la Met e il governo, né quali raccomandazioni nuove il rapporto contenga.\n\nIl caso pesa perché riguarda la fiducia in una forza che serve circa nove milioni di persone. Da guardare: la risposta del capo della polizia, i tempi di un eventuale piano di attuazione e il dibattito in Parlamento.",
+ "open": [
+  "Come risponde la Metropolitan Police al rapporto?",
+  "Quali raccomandazioni nuove contiene la revisione?",
+  "Il governo imporrà tempi di attuazione?"
+ ],
+ "sources": [
+  {
+   "name": "The Guardian",
+   "kind": "giornale",
+   "country": "Regno Unito",
+   "area": "Regno Unito",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/25/metropolitan-police-institutionally-racist-misogynist-fairfield-report",
+   "angle": "Dal testo del feed: «problemi sistemici», «difesa istituzionale», confronto con il rapporto Casey.",
+   "at": "2026-11-25T00:01:02+00:00"
+  },
+  {
+   "name": "BBC",
+   "kind": "tv",
+   "country": "Regno Unito",
+   "area": "Regno Unito",
+   "url": "https://www.bbc.co.uk/news/articles/cvwy0rg343j7o",
+   "angle": "Dal testo del feed: razzismo, misoginia e omofobia persistono tre anni dopo la revisione precedente.",
+   "at": "2026-11-25T05:45:55+00:00"
+  }
+ ],
+ "firstSeen": "2026-11-25T09:49:51+01:00",
+ "updated": "2026-11-25T09:49:51+01:00",
+ "change": "",
+ "history": [
+  {
+   "at": "2026-11-25T09:49:51+01:00",
+   "text": "Prima notizia: la revisione Fairfield trova ancora razzismo e misoginia nella Met Police."
+  }
+ ],
+ "tags": [
+  "Regno Unito",
+  "Giustizia",
+  "Polizia"
+ ],
+ "themes": [],
+ "places": [
+  "GB"
+ ],
+ "divergences": [],
+ "notCovered": []
+}

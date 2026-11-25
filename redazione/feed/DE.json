@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T17:17:33+00:00",
+ "asOf": "2026-11-25T19:17:35+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Expertenkommission fordert schärfere Regeln für Prostitution",
+   "desc": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/neue-regeln-fuer-prostituition-empfehlungen-100.html",
+   "at": "2026-11-25T19:14:28+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Streit um \"Rente mit 63\": Unionsabgeordnete schlagen \"Respekt-Rente\" vor",
+   "desc": "Im Streit um die \"Rente mit 63\" gehen Unionsabgeordnete mit einem Kompromiss auf die SPD zu: Sie schlagen eine \"Respekt-Rente\" vor. Für Menschen mit kleinem Einkommen soll die abschlagsfreie Frühverrentung bestehen bleiben.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-kompromiss-koalition-100.html",
+   "at": "2026-11-25T19:14:08+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Stromsteuer-Senkung: Warum die Regierung hoffen muss, dass Strom teuer bleibt",
+   "desc": "Die Stromsteuersenkung für alle kommt. Doch damit sie bezahlbar wird, müssen die Strompreise hoch bleiben. Sonst droht der Bundesregierung neues Haushaltschaos.",
+   "url": "https://www.spiegel.de/politik/deutschland/stromsteuer-senkung-warum-die-regierung-hoffen-muss-dass-strom-teuer-bleibt-a-75b63cf8-482b-4c8e-8e5e-4bdb7fcc0c4b",
+   "at": "2026-11-25T19:12:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rente mit 63: CDU schlägt abschlagsfreie Rente für Bezieher geringer Einkommen vor",
+   "desc": "Die Union geht im Rentenstreit auf die SPD zu. Laut ihrem Vorschlag soll die Rente nach 45 Beitragsjahren für Menschen mit unterdurchschnittlichem Einkommen bleiben.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-cdu-bundestag-abgeordnete-abschaffung",
+   "at": "2026-11-25T19:07:24+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Erdölfund in der Ostsee: Das Ungeheuer vor Heringsdorf",
+   "desc": "Vor Usedom liegt das größte Erdölvorkommen Polens. Während sich das Nachbarland auf eine Förderung vorbereitet, wachsen in Deutschland die Sorgen um Natur und Tourismus.",
+   "url": "https://www.zeit.de/2026/50/erdoelfund-ostsee-central-european-petroleum-polen-usedom",
+   "at": "2026-11-25T18:22:25+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "El Hierro: Regionalpräsident der Kanaren bittet EU um Hilfe bei Migration",
+   "desc": "Auf der kanarischen Insel El Hierro sind allein am Dienstag 2.000 Menschen per Boot aus Afrika angelandet. Regionalpräsident Clavijo bat die EU um ein Krisentreffen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/el-hierro-migranten-kanarische-inseln-spanien",
+   "at": "2026-11-25T18:11:32+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Ukraine-Hilfe polarisiert die Generaldebatte im Bundestag",
+   "desc": "Im Bundestag wurde über den Haushalt 2027 debattiert. Darin auch enthalten: rund zwölf Milliarden Euro Ukraine-Hilfe. Für die AfD ist das eine Veruntreuung von Steuergeldern, für Kanzler Merz die Verteidigung \"unserer Freiheit\". Von Nicole Markwald.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-generaldebatte-ukraine-hilfe-100.html",
+   "at": "2026-11-25T18:10:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte: Natürlich wird hier niemand überzeugt",
+   "desc": "Regierungsmelancholie, Oppositionsfloskeln, automatenhafte AfD-Gehässigkeit: Man kann bei der Generaldebatte im Bundestag kaum zuhören. Muss das so sein?",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/generaldebatte-bundestag-politische-diskussions-debatte-haushalt",
+   "at": "2026-11-25T17:49:49+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rechtsterrorismus: Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
+   "desc": "Drei Teenager sind unter dem Verdacht festgenommen worden, einer rechtsextremistischen terroristischen Gruppe anzugehören. Sie sollen geplant haben, Ausländer zu töten.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
+   "at": "2026-11-25T17:12:33+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Bundeshaushalt 2027: Der Kanzler entdeckt die Zurückhaltung",
@@ -18,7 +81,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Union und SPD blockieren einander bei Einkommensteuer und Arbeitsmarktgesetzen",
+   "title": "Schwarz-Rot blockiert sich bei Einkommensteuer und Arbeitsmarktreformen selbst",
    "desc": "Eigentlich sollten Erwerbstätige bei der Einkommensteuer entlastet werden. Doch die Union will da nicht mitmachen, solange sich die Sozialdemokraten Reformen im Arbeitsrecht verweigern. Die sehen das Problem beim Kanzler.",
    "url": "https://www.spiegel.de/politik/deutschland/union-und-spd-blockieren-einander-bei-einkommensteuer-und-arbeitsmarktgesetzen-a-4ae828fd-330d-4b52-8fef-63e2ad5c6e4c",
    "at": "2026-11-25T16:07:00+00:00"
@@ -130,7 +193,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Bundestag: Friedrich Merz versucht’s mal positiv, die Ränder polarisieren – die Lehren aus der Generaldebatte",
+   "title": "Bundestag: Friedrich Merz versucht’s mal positiv – die Lehren aus der Generaldebatte",
    "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Die Haushaltsdebatte legt offen, wie heikel die Koalition regiert. Und wie schwer es erst 2028 werden könnte. Die Blitzanalyse.",
    "url": "https://www.spiegel.de/politik/deutschland/bundestag-so-laeuft-die-generaldebatte-zum-haushalt-live-a-e9f39663-47e8-4835-a192-24bcfe73cc6e",
    "at": "2026-11-25T10:59:00+00:00"
@@ -148,41 +211,6 @@
    "desc": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
    "at": "2026-11-25T10:44:12+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Generaldebatte: Friedrich Merz fordert baldige Umsetzung der Rentenreform",
-   "desc": "In der Generaldebatte hat der Bundeskanzler mehr Tempo bei der Umsetzung der Rentenreform gefordert. Grünen-Fraktionschefin Haßelmann nennt den neuen Haushalt »unseriös«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-friedrich-merz-cdu-fruehverrentung-kapitalmarkt-gxe",
-   "at": "2026-11-25T09:58:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rechtsterrorismus: Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
-   "desc": "Drei Deutsche sind unter dem Verdacht festgenommen worden, einer rechtsextremistischen terroristischen Gruppe anzugehören. Sie sollen geplant haben, Ausländer zu töten.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
-   "at": "2026-11-25T09:53:22+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Julia Klöckner: Bundestagspräsidentin fordert besseren Schutz für Frauen",
-   "desc": "Bundestagspräsidentin Julia Klöckner hat zu mehr Schutz von Frauen aufgerufen. Mit einem Schweigemoment gedachte der Bundestag der Opfer von Femiziden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/julia-kloeckner-gewalt-gegen-frauen-bundestag-gxe",
-   "at": "2026-11-25T08:23:21+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Generaldebatte: Live: die Generaldebatte aus dem Bundestag",
-   "desc": "Es ist der Höhepunkt der Haushaltsberatungen: Der Bundeskanzler äußert sich zum Etat. Eröffnet wird die Debatte von AfD-Fraktionschef Tino Chrupalla. Hier im Livestream",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/generaldebatte-haushalt-livestream-bundestag-bundesregierung-live",
-   "at": "2026-11-25T08:08:11+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Generaldebatte im Bundestag: Opposition wirft Bundesregierung Tricks beim Haushalt vor",
-   "desc": "Vor der Generaldebatte im Bundestag werfen die Grünen der Regierung vor, beim Sondervermögen zu tricksen. Die AfD kritisiert die »sinnlosen Klimaprogramme«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/schuldenbremse-bundesregierung-haushalt-verschuldung-friedrich-merz-gxe",
-   "at": "2026-11-25T07:48:14+00:00"
   },
   {
    "source": "Tagesschau",
@@ -225,27 +253,6 @@
    "desc": "Die möglichen Koalitionspartner der Berliner Linkspartei haben positiv auf den Ausschluss von Vanessa Emde aus der Linksfraktion reagiert. Die Berliner CDU sieht weiterhin ein Antisemitismusproblem bei der Linken.",
    "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-spd-und-gruene-begruessen-fraktionsausschluss-der-berliner-linkenpolitikerin-a-bf3b262f-81df-4b90-b0aa-0996deecfa24",
    "at": "2026-11-24T19:19:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Berliner Linke schließt Emde aus Fraktion aus",
-   "desc": "Wochenlang diskutierten Grüne, SPD und Linke in Berlin über die Personalie Emde. Die Abgeordnete steht wegen ihrer Positionen zu Israel in der Kritik. Nun hat die Fraktion mit der nötigen Mehrheit für ihren Ausschluss gestimmt.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/emde-ausschluss-berlin-linke-100.html",
-   "at": "2026-11-24T18:47:32+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Polizei vermutet Destabilisierung als Ziel der Drohmails gegen Schulen",
-   "desc": "Die per Mail verschickten Bombendrohungen haben am Montag deutlich mehr Schulen erreicht als zunächst angenommen. Die Polizei vermutet eine gezielte Aktion zur Verunsicherung.",
-   "url": "https://www.tagesschau.de/inland/drohmails-schulen-gdp-destabilisierung-100.html",
-   "at": "2026-11-24T18:39:01+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Die Linke und Vanessa Emde: Endlich eine rote Linie! - Kommentar",
-   "desc": "Die Berliner Linksfraktion hat ihre Abgeordnete Vanessa Emde ausgeschlossen. Das ist ein gutes Vorzeichen für eine Koalition. Das Verhalten von Elif Eralp irritiert allerdings.",
-   "url": "https://www.spiegel.de/politik/deutschland/die-linke-und-vanessa-emde-endlich-eine-rote-linie-kommentar-a-fd7bc979-aebe-4f34-97d0-baf23cb7b247",
-   "at": "2026-11-24T17:36:00+00:00"
   }
  ]
 }

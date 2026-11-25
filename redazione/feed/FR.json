@@ -1,7 +1,91 @@
 {
  "code": "FR",
- "asOf": "2026-11-25T17:17:33+00:00",
+ "asOf": "2026-11-25T19:17:35+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : David Lisnard, réélu à la tête de l'Association des maires de France, est l'invité du \"20 Heures\" de France 2",
+   "desc": "Alors que le congrès de l'Association des maires de France se tient à Paris, le maire de Cannes a été reconduit mercredi à la tête de l'organisation.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html",
+   "at": "2026-11-25T19:04:22+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Le sauvetage de Nvidia est bien plus dangereux que celui des banques après la crise de 2008 »",
+   "desc": "Que Donald Trump soit venu au secours de Jensen Huang pour éviter un krach constitue une forme très risquée d’interventionnisme, selon l’historien Harold James, qui rappelle, dans une tribune au « Monde », des précédents édifiants, comme la catastrophe causée par John Law au XVIIIᵉ siècle.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/25/le-sauvetage-de-nvidia-est-bien-plus-dangereux-que-celui-des-banques-apres-la-crise-de-2008_6815165_3232.html",
+   "at": "2026-11-25T18:58:15+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Un bilan toujours plus alarmant",
+   "desc": "À l’occasion de la Journée internationale de lutte contre les violences faites aux femmes, le 25 novembre, les chiffres restent alarmants : 47 000 femmes et filles ont été tuées par un proche dans le monde en 2025. Comment mieux protéger les victimes et prévenir les féminicides ? Lorraine Questiaux, avocate spécialisée dans les violences faites aux femmes, analyse les réponses de la justice.",
+   "url": "https://www.france24.com/fr/%C3%A9missions/questions-directes/20261125-un-bilan-toujours-plus-alarmant",
+   "at": "2026-11-25T18:36:07+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "L'actu en dessin : le 25 novembre, une journée contre les violences faites aux femmes et aux filles",
+   "desc": "Une journée internationale pour l'élimination de la violence à l'égard des femmes se tient chaque 25 novembre. Selon les Nations unies, environ 47 000 femmes et filles ont été tuées par leur partenaire ou un membre de leur famille en 2025.",
+   "url": "https://www.france24.com/fr/france/20261125-actu-dessin-25-novembre-journ%C3%A9e-contre-violences-faites-femmes-filles-physiques-sexuelles-sexistes-psychologiques",
+   "at": "2026-11-25T18:16:15+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une commission d'enquête sur les cyberattaques et les fuites de données va être lancée au Sénat",
+   "desc": "La commission d'enquête pourra démarrer avant la fin de l'année et durera six mois. Son rapport est attendu en avril ou en mai 2027.",
+   "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/une-commission-d-enquete-sur-la-cyberattaques-et-les-fuites-de-donnees-va-etre-lancee-au-senat_8300160.html",
+   "at": "2026-11-25T18:11:04+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La nouvelle traduction des « Mots de la tribu » ravive la saveur orale de ce grand roman autobiographique de Natalia Ginzburg",
+   "desc": "Retour sur ce chef-d’œuvre de l’écrivaine italienne, morte en 1991, publié aujourd’hui sous le titre « Lexique familial », qui raconte la vie d’une famille antifasciste dans les années 1920 à 1940 à Turin.",
+   "url": "https://www.lemonde.fr/livres/article/2026/11/25/la-nouvelle-traduction-des-mots-de-la-tribu-ravive-la-saveur-orale-de-ce-grand-roman-autobiographique-de-natalia-ginzburg_6815160_3260.html",
+   "at": "2026-11-25T18:00:09+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Un jeune homme très talentueux\" : qui est Arion Kurtaj, le hackeur à l'origine de la fuite de \"GTA VI\" condamné à sept ans de prison ?",
+   "desc": "Depuis une chambre d'hôtel, le jeune Britannique de 17 ans est parvenu à dérober des dizaines de vidéos du très attendu \"GTA VI\" dès 2022... alors qu'il avait été privé de son ordinateur par les autorités britanniques. Le jeune hackeur a été condamné lundi à sept ans de prison pour une série de cyberattaques.",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/un-jeune-homme-tres-talentueux-qui-est-arion-kurtaj-le-hackeur-a-l-origine-de-la-fuite-de-gta-vi-condamne-a-sept-ans-de-prison_8300019.html",
+   "at": "2026-11-25T17:48:44+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le groupement Mousquetaires en passe de racheter Chronodrive à Auchan",
+   "desc": "Cette vente au groupe qui possède notamment Intermarché \"pourrait intervenir en 2027\", a déclaré mercredi Auchan dans un communiqué.",
+   "url": "https://www.franceinfo.fr/economie/le-groupement-les-mousquetaires-intermarche-en-passe-de-racheter-chronodrive-a-auchan_8300139.html",
+   "at": "2026-11-25T17:47:27+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Violences sur des élus : plus de 3 100 faits comptabilisés depuis le début 2026 ; une hausse de 25 % par rapport à 2025, annonce Laurent Nuñez",
+   "desc": "L’agression d’un édile de la Vienne a relancé le débat lors des questions au gouvernement, mercredi. « S’il faut durcir les sanctions », elles le seront, a prévenu le ministre de l’intérieur.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/25/violences-sur-des-elus-plus-de-3-100-faits-comptabilises-depuis-le-debut-2026-en-hausse-de-25-par-rapport-a-2025-annonce-laurent-nunez_6815158_3224.html",
+   "at": "2026-11-25T17:40:46+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "La grippe s’installe en France, où la majorité des régions de l’Hexagone sont passées en pré-épidémie",
+   "desc": "La circulation des virus grippaux s’intensifie et les recours aux soins apparaissent globalement « à des niveaux toujours supérieurs à ceux de l’année précédente à la même période », constate Santé publique France.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/25/la-grippe-s-installe-en-france-ou-la-majorite-des-regions-de-l-hexagone-sont-passees-en-pre-epidemie_6815156_3224.html",
+   "at": "2026-11-25T17:33:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'AP-HP envisage d'interdire les soirées d'internes dans les hôpitaux après une enquête pour viol visant un chirurgien",
+   "desc": "Un chef de service à l'hôpital Bichat à Paris est soupçonné d'avoir violé une pharmacienne lors d'une soirée, organisé dans un établissement de l'AP-HP. Une réflexion est en cours pour interdire ce type d'événement.",
+   "url": "https://www.franceinfo.fr/sante/info-radio-france-l-ap-hp-envisage-d-interdire-les-soirees-festives-dans-les-hopitaux-apres-une-enquete-pour-viol-visant-un-chirurgien_8300109.html",
+   "at": "2026-11-25T17:18:12+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Israël, des juges recommandent l’abandon des poursuites contre Benyamin Nétanyahou",
+   "desc": "Le premier ministre sortant est poursuivi dans trois affaires de corruption. Dans la principale, les juges ont estimé qu’en raison des variations d’un témoin-clé, une condamnation est suffisamment improbable pour justifier un réexamen du maintien des poursuites.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/25/en-israel-des-juges-recommandent-l-abandon-des-poursuites-contre-benyamin-netanyahou_6815153_3210.html",
+   "at": "2026-11-25T17:17:50+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "\"Congo Boy\" : le jeune cinéaste Rafiki Fariala se raconte en musique avec peps et panache",
@@ -12,16 +96,9 @@
   {
    "source": "franceinfo",
    "title": "Les Européens doivent venir s'expliquer à Moscou avant de participer aux négociations sur l'Ukraine, affirme l'ambassadeur russe en Allemagne",
-   "desc": "Il a aussi déclaré ne pas être \"convaincus que les Européens souhaitent la paix\".",
+   "desc": "Sergueï Netchaev a aussi déclaré ne pas être \"convaincu que les Européens souhaitent la paix\".",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/les-europeens-doivent-venir-s-expliquer-a-moscou-avant-de-participer-aux-negociations-sur-l-ukraine-affirme-l-ambassadeur-russe-en-allemagne_8299872.html",
    "at": "2026-11-25T17:07:13+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La banque indépendante Delubac placée sous le contrôle du gendarme du secteur bancaire",
-   "desc": "Cette décision est rendue publique deux jours après la cyberattaque dont elle a été victime.",
-   "url": "https://www.franceinfo.fr/economie/la-banque-independante-delubac-placee-sous-le-controle-du-gendarme-du-secteur-bancaire_8299923.html",
-   "at": "2026-11-25T17:01:43+00:00"
   },
   {
    "source": "franceinfo",
@@ -35,7 +112,7 @@
    "title": "En France, une sécheresse persistante malgré les pluies d’automne et des zones inondées",
    "desc": "Alors que la sécheresse des sols s’estompe progressivement à travers le pays, les réserves en eau de nombreux bassins versants sont encore très faibles. Malgré des intempéries sur certains secteurs, la recharge des nappes souterraines est à peine entamée.",
    "url": "https://www.lemonde.fr/planete/article/2026/11/25/en-france-une-secheresse-persistante-malgre-les-pluies-d-automne-et-des-zones-inondees_6815147_3244.html",
-   "at": "2026-11-25T17:00:17+00:00"
+   "at": "2026-11-25T17:00:10+00:00"
   },
   {
    "source": "franceinfo",
@@ -46,10 +123,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Budget de l’UE : la France ne veut « pas un euro » de moins pour la PAC, prévient Emmanuel Macron",
-   "desc": "« L’enveloppe actuelle de la France, c’est 66,25 milliards » d’euros « de crédits européens », « nous on veut nos 66,25 milliards de crédits européens, les plus lisibles et les plus fléchés possibles », dans le budget pluriannuel pour 2028-2034, a dit le chef de l’Etat.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/25/budget-de-l-ue-la-france-ne-veut-pas-un-euro-de-moins-pour-la-pac-previent-emmanuel-macron_6815145_3210.html",
-   "at": "2026-11-25T16:56:34+00:00"
+   "title": "L’Allemagne prête à adopter un endettement historique, un tournant soutenu par une figure de l’orthodoxie économique",
+   "desc": "La politique d’investissement dans les infrastructures et la défense financée par la dette défendue par le gouvernement Merz a reçu le soutien inattendu d’Isabel Schnabel, figure de l’orthodoxie monétaire qui, avant de quitter le directoire de la BCE, remet en cause l’idée que la prospérité du pays dépend avant tout des exportations.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/25/l-allemagne-prete-a-adopter-un-endettement-historique-un-tournant-soutenu-par-une-figure-de-l-orthodoxie-economique_6815144_3234.html",
+   "at": "2026-11-25T16:47:57+00:00"
   },
   {
    "source": "franceinfo",
@@ -67,24 +144,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "L’armée américaine fait exploser des tonnes de matériel militaire vieillissant et toxique ; des habitants appelés à évacuer face aux risques de pollution",
-   "desc": "Donald Trump avait tenté de repousser l’explosion en raison du tollé suscité, mais elle a bien eu lieu, malgré les risques d’exposition au plomb.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/25/l-armee-americaine-fait-exploser-des-tonnes-de-materiel-militaire-vieillissant-et-toxique_6815143_3210.html",
-   "at": "2026-11-25T16:37:30+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« Photomaton, la grande histoire de la petite photo », sur France.tv : un instantané à la portée de tous",
-   "desc": "Depuis cent ans, « se faire tirer le portrait » est accessible à tous : riches, pauvres, artistes, célébrités, anonymes… Le film à énigmes donne à voir ce que nous en avons fait.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/25/photomaton-la-grande-histoire-de-la-petite-photo-sur-france-tv-un-instantane-a-la-portee-de-tous_6815141_3246.html",
-   "at": "2026-11-25T16:30:09+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le folk baroque de la chanteuse Rosemary Standley et du flûtiste François Lazarevitch",
-   "desc": "La voix du groupe Moriarty et le fondateur des Musiciens de Saint-Julien s’associent pour « Songs from the North Country », une relecture originale des ballades traditionnelles du nord des îles Britanniques.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/25/le-folk-baroque-de-la-chanteuse-rosemary-standley-et-du-flutiste-francois-lazarevitch_6815140_3246.html",
-   "at": "2026-11-25T16:24:15+00:00"
+   "title": "La moitié des chèques au Trésor public bloquée depuis quarante jours en raison de la grève de quatre agents",
+   "desc": "Le dernier centre d’encaissement des chèques au Trésor public, à Rennes, doit fermer en 2027. Le personnel demande une prime. Le conflit empêche l’encaissement de près de 150 millions d’euros, selon les syndicats.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/25/la-moitie-des-cheques-au-tresor-public-bloquee-depuis-quarante-jours-en-raison-de-la-greve-de-quatre-agents_6815142_823448.html",
+   "at": "2026-11-25T16:34:24+00:00"
   },
   {
    "source": "franceinfo",
@@ -102,13 +165,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : \"Défendre l'Ukraine, c'est nous défendre nous-mêmes\", répond Gabriel Attal à Teddy Riner, pour qui \"ce n'est pas notre guerre\"",
-   "desc": "\"Je ne comprends pas qu'on envoie des troupes en Ukraine\", a déclaré le judoka depuis le congrès de l'Association des maires de France, à Paris.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html",
-   "at": "2026-11-25T16:07:35+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Au moins 470 000 soldats russes sont morts depuis le début de la guerre en Ukraine, selon un nouveau décompte issu de données piratées",
    "desc": "Une douzaine de médias ont épluché plus en détail les données issues d'un piratage de l'agence nationale des statistiques russe. Leurs évaluations oscillent entre 470 000 et 500 000 morts, voire 700 000 selon certaines projections.",
    "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/au-moins-470-000-soldats-russes-sont-morts-depuis-le-debut-de-la-guerre-en-ukraine-selon-un-nouveau-decompte-issu-de-donnees-piratees_8299866.html",
@@ -116,15 +172,8 @@
   },
   {
    "source": "Le Monde",
-   "title": "Scandale Orpea : la Haute autorité de l’audit se penche sur le rôle du cabinet Deloitte pour couvrir les errements du géant des Ehpad",
-   "desc": "Une audience interroge les manquements attribués à deux cabinets d’audit réputés, Deloitte & Associés et Saint-Honoré BK & A, dans le contrôle des comptes d’Orpea, le géant des maisons de retraite et de cliniques privées empêtré dans un scandale.",
-   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/25/scandale-orpea-la-haute-autorite-de-l-audit-se-penche-sur-le-role-du-cabinet-deloitte-pour-couvrir-les-errements-du-geant-des-ehpad_6815132_4355770.html",
-   "at": "2026-11-25T16:00:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "EN DIRECT, congrès des maires 2026 : « Ce qui motive, c’est l’impression d’être utile, de servir à quelque chose pour les habitants de la commune »",
-   "desc": "A quoi ressemble leur quotidien de maire ? Quel bilan tirent-ils du macronisme à l’échelle des communes ? Quel est l’état d’esprit de leurs administrés à cinq mois de la présidentielle ? Posez vos questions à la maire (Parti socialiste) du Petit-Quevilly (Seine-Maritime), Charlotte Goujon, et au maire (Les Républicains) d’Istres (Bouches-du-Rhône), Robin Prétot.",
+   "title": "EN DIRECT, congrès des maires 2026 : Gabriel Attal espère que la réunion des candidats de la droite et du centre autour de Gérard Larcher permettra « d’avancer » vers une méthode de départage",
+   "desc": "Le président du Sénat doit réunir, probablement la semaine prochaine, les prétendants à l’Elysée de la droite et du centre pour se mettre d’accord sur une « méthode de départage », alors que David Lisnard, candidat libéral, ne cesse de monter dans les sondages.",
    "url": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-au-quotidien-on-constate-de-plus-en-plus-une-solitude-des-communes_6815062_823448.html",
    "at": "2026-11-25T15:53:02+00:00"
   },
@@ -143,32 +192,11 @@
    "at": "2026-11-25T15:42:08+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Budget : Sébastien Lecornu assure qu’il n’a pas de « volonté de passage en force », et appelle au « compromis »",
-   "desc": "Dans les négociations à venir, le gouvernement n’aura, selon le premier ministre, « aucune ligne rouge », mais « un seul impératif : qu’il y ait un budget dans les temps et qu’on boucle à 5 % de déficit » au lieu des 5,4 % d’abord envisagés pour 2026.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/25/budget-sebastien-lecornu-assure-qu-il-n-a-pas-de-volonte-de-passage-en-force-et-appelle-au-compromis_6815129_823448.html",
-   "at": "2026-11-25T15:37:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les agriculteurs de la Coordination rurale lèvent les blocages dans l'Allier et dans l'Aude",
-   "desc": "Plusieurs membres du syndicat ont bloqué mardi, des plateformes logistiques d'approvisionnement des magasins E.Leclerc. Une rencontre est prévue avec Michel-Edouard Leclerc, en décembre.",
-   "url": "https://www.franceinfo.fr/economie/crise/blocus-des-agriculteurs/les-agriculteurs-de-la-coordination-rurale-levent-les-blocages-dans-l-allier-et-dans-l-aude_8299890.html",
-   "at": "2026-11-25T15:33:10+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Présidentielle 2027 : près de 40 candidats au départ, combien au premier tour ?",
    "desc": "Sur le site officiel du gouvernement, à la mi-novembre, 38 candidats à l’élection présidentielle étaient toujours recensés, après quelques abandons. Un record moins de six mois avant le vote. Sans parler des candidats potentiels, tapi dans l'ombre, qui espèrent ouvertement ou secrètement remplacer bientôt les figures actuelles, de moins en moins populaires auprès du public.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-pr%C3%A9sidentielle-2027-pr%C3%A8s-de-40-candidats-au-d%C3%A9part-combien-au-premier-tour",
    "at": "2026-11-25T15:33:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Sébastien Lecornu n'a pas de \"volonté de passage en force\" et appelle au \"compromis\" pour faire adopter le budget 2027",
-   "desc": "Le chef du gouvernement a laissé entendre qu'il pourrait privilégier la voie de l'article 49.3 de la Constitution, plutôt que les ordonnances, afin de venir à bout du marathon budgétaire.",
-   "url": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-n-a-pas-de-volonte-de-passage-en-force-et-appelle-au-compromis-pour-faire-adopter-le-budget-2027_8299881.html",
-   "at": "2026-11-25T15:23:32+00:00"
   },
   {
    "source": "France 24",
@@ -206,11 +234,11 @@
    "at": "2026-11-25T15:04:00+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Votre projet de rénovation énergétique est contrarié par les architectes des bâtiments de France ? Racontez-nous",
-   "desc": "Face à la flambée des coûts pour se chauffer en hiver et à la hausse des températures en été, l'isolation du logement devient une priorité pour de nombreux Français. Mais leurs plans se heurtent parfois à des règles de préservation du patrimoine.",
-   "url": "https://www.franceinfo.fr/economie/immobilier/appel-a-temoignages-votre-projet-de-renovation-energetique-est-contrarie-par-les-architectes-des-batiments-de-france-racontez-nous_8298153.html",
-   "at": "2026-11-25T15:01:02+00:00"
+   "source": "Le Monde",
+   "title": "Comment l’Ukraine perturbe les opérations russes en Afrique en frappant des navires de transport d’armes en Méditerranée",
+   "desc": "Des drones navals ukrainiens ont attaqué, dimanche 22 novembre, deux navires russes dans les eaux libyennes. Des images satellites suggèrent qu’un bateau de la flotte fantôme de Moscou pourrait avoir débarqué à Benghazi et envoyé au Mali de l’équipement militaire avant cet assaut.",
+   "url": "https://www.lemonde.fr/afrique/article/2026/11/25/comment-l-ukraine-perturbe-les-operations-russes-en-afrique-en-frappant-des-navires-de-transport-d-armes-en-mediterranee_6815117_3212.html",
+   "at": "2026-11-25T15:00:02+00:00"
   },
   {
    "source": "franceinfo",
@@ -220,39 +248,11 @@
    "at": "2026-11-25T14:54:22+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Nayib Bukele, je l'aime de tout mon cœur\" : en Haïti, l'emblématique stade de Port-aux-Princes aux mains des gangs a été libéré grâce aux Salvadoriens",
-   "desc": "Haïti connaît un tournant dans sa lutte contre les gangs armés depuis que 2 000 soldats, envoyés en octobre par le très autoritaire président du Salvador, Nayib Bukele, ont été déployés dans le pays. Cette opération est saluée par des Haïtiens qui, après des années de terreur, reprennent espoir.",
-   "url": "https://www.franceinfo.fr/monde/ameriques/nayib-bukele-je-l-aime-de-tout-mon-c-ur-a-port-au-prince-l-emblematique-stade-aux-mains-des-gangs-a-ete-libere-grace-aux-salvadoriens_8299713.html",
-   "at": "2026-11-25T14:48:00+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« De rencontre en rencontre, le pas de Donald Trump se règle de plus en plus sur celui de Xi Jinping »",
-   "desc": "La détente sino-américaine aurait-elle tourné à l’avantage de Pékin ? De fait, tout le paradoxe du président américain réside dans une réalité opposant le désordre qui affaiblit sa présidence à la stabilité incarnée par son homologue chinois, estime Gilles Paris, éditorialiste au « Monde », dans sa chronique.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/25/de-rencontre-en-rencontre-le-pas-de-donald-trump-se-regle-de-plus-en-plus-sur-celui-de-xi-jinping_6815115_3232.html",
-   "at": "2026-11-25T14:44:15+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Vigilance orange dans le Var et les Alpes-Maritimes : reprise attendue des pluies après une accalmie",
    "desc": "Si les deux départements du Sud-Est restent en vigilance orange pluie-inondation, les précipitations les plus importantes ont été relevées dans le Var, également en vigilance orange aux inondations.",
    "url": "https://www.lemonde.fr/planete/article/2026/11/25/vigilance-orange-dans-le-var-et-les-alpes-maritimes-reprise-attendue-des-pluies-apres-une-accalmie_6815053_3245.html",
    "at": "2026-11-25T14:40:30+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le Haut-Commissariat des Nations unies aux droits de l’homme alerte sur le risque de nouveaux « crimes atroces » commis par Israël contre les Palestiniens",
-   "desc": "La poursuite des attaques, des politiques et des violations israéliennes à l’encontre des Palestiniens à Gaza et en Cisjordanie témoigne d’un « risque croissant de nouveaux crimes atroces » dans les deux territoires, estime le chef de l’organe onusien.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/25/le-haut-commissariat-des-nations-unies-aux-droits-de-l-homme-alerte-sur-le-risque-de-nouveaux-crimes-atroces-commis-par-israel-contre-les-palestiniens_6815114_3210.html",
-   "at": "2026-11-25T14:34:07+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En Ukraine, face à la multiplication des frappes russes sur les ponts, Kiev songe à se doter d’un tunnel sous le Dniepr",
-   "desc": "Sous le feu incessant des drones et des missiles russes, la vulnérabilité des ponts du Dniepr fait courir le risque d’un pays coupé en deux. Pour contrer cette menace, un vif débat oppose les partisans d’un tunnel sous le fleuve à ceux qui jugent le chantier bien trop long à mener en temps de guerre.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/25/en-ukraine-face-a-la-multiplication-des-frappes-russes-sur-les-ponts-kiev-songe-a-se-doter-d-un-tunnel-sous-le-dniepr_6815113_3210.html",
-   "at": "2026-11-25T14:30:08+00:00"
   },
   {
    "source": "Le Monde",
@@ -267,6 +267,20 @@
    "desc": "Le 108e Congrès des maires de France s'est ouvert mardi 24 novembre à Paris sur fond de course à la présidentielle et de polémique autour de la double candidature du libéral David Lisnard, président de l'Association des maires de France (AMF), en lice pour un nouveau mandat, mais aussi pour l'Élysée. Les précisions de Karim Yahiaoui, journaliste à France 24.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
    "at": "2026-11-25T14:00:09+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Parcoursup : publier les algorithmes locaux, une gageure pour les universités",
+   "desc": "En réponse aux préoccupations des lycéens, le ministre de l’enseignement supérieur annonce que les formations seront tenues de détailler leurs critères de traitement automatisé des dossiers pour préclasser les candidats. Le sujet fait débat, toutes les facultés n’appréciant pas de la même manière la notion de transparence.",
+   "url": "https://www.lemonde.fr/campus/article/2026/11/25/parcoursup-publier-les-algorithmes-locaux-une-gageure-pour-les-universites_6815107_4401467.html",
+   "at": "2026-11-25T14:00:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Saluts nazis et propos racistes : les dérives longtemps impunies des douaniers de Chaumont",
+   "desc": "Saluts nazis, propos racistes et climat de terreur : à la brigade des douanes de Chaumont (Haute-Marne), des agents ont multiplié les dérives pendant des années, selon des informations révélées par Mediapart que nous confirmons. Pointée pour sa passivité face aux alertes internes, la direction générale assure avoir réagi sans tarder.",
+   "url": "https://france3-regions.franceinfo.fr/grand-est/haute-marne/chaumont/saluts-nazis-et-propos-racistes-les-derives-longtemps-impunies-des-douaniers-de-chaumont-3455603.html",
+   "at": "2026-11-25T13:51:17+00:00"
   },
   {
    "source": "franceinfo",
@@ -340,13 +354,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "L'ONU alerte sur le risque de nouveaux \"crimes atroces\" d'Israël contre les Palestiniens à Gaza et en Cisjordanie",
-   "desc": "Le Haut-Commissariat des Nations unies aux droits de l'homme alerte sur \"le caractère de plus en plus généralisé et systématique des violations commises\" dans les deux territoires palestiniens.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/guerre/l-onu-alerte-sur-le-risque-de-nouveaux-crimes-atroces-d-israel-contre-les-palestiniens-a-gaza-et-en-cisjordanie_8299557.html",
-   "at": "2026-11-25T12:08:23+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Patrick Bruel visé par une nouvelle plainte pour un viol remontant à 2006, en marge d'un concert des Enfoirés",
    "desc": "La plaignante avait 27 ans au moment des faits qu'elle dénonce auprès de Mediapart. Le chanteur de 67 ans n'a pas souhaité réagir à ses accusations, précise le média en ligne.",
    "url": "https://www.franceinfo.fr/culture/musique/patrick-bruel/une-nouvelle-plainte-pour-viol-deposee-contre-patrick-bruel-pour-des-faits-remontant-a-2006-en-marge-d-un-concert-des-enfoires_8299338.html",
@@ -368,10 +375,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Elle réclame 2,6 milliards d’euros à son ex-mari : « Londres n’est pas surnommée la capitale mondiale du divorce pour rien »",
-   "desc": "L’oligarque russe Vladimir Potanine n’a jamais vécu dans la capitale britannique. Son ex-épouse, qui s’y est installée en 2014, lui intente pourtant un procès et lui réclame une partie de sa fortune. Les tribunaux du Royaume-Uni sont en effet les plus généreux pour les divorces des ultrariches, relève Eric Albert, journaliste au service Economie du « Monde ».",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/25/elle-reclame-2-6-milliards-d-euros-a-son-ex-mari-londres-n-est-pas-surnommee-la-capitale-mondiale-du-divorce-pour-rien_6815077_3234.html",
-   "at": "2026-11-25T10:00:05+00:00"
+   "title": "La RDC impose un nouvel embargo sur les exportations de cobalt pour faire monter les cours",
+   "desc": "Dans un contexte de baisse des prix, le pays a de nouveau interdit l’exportation de cobalt, dont la transformation est presque entièrement contrôlée par la Chine. Un premier embargo, remplacé ensuite par des quotas, avait été mis en place en 2025.",
+   "url": "https://www.lemonde.fr/afrique/article/2026/11/25/la-rdc-impose-un-nouvel-embargo-sur-les-exportations-de-cobalt-pour-faire-monter-les-cours_6815079_3212.html",
+   "at": "2026-11-25T10:00:09+00:00"
   },
   {
    "source": "France 24",
@@ -389,24 +396,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "Près d'un salarié sur deux continue de travailler tout en étant malade pour des raisons financières, selon un baromètre",
-   "desc": "Le phénomène s’inscrit dans \"un contexte de progression du mal-être et pose conjointement les questions de santé au travail, de prévention et de pouvoir d’achat\", explique le commanditaire de l'étude consultée par France Inter.",
-   "url": "https://www.franceinfo.fr/economie/emploi/carriere/vie-professionnelle/sante-au-travail/pres-d-un-salarie-sur-deux-continue-de-travailler-tout-en-etant-malade-pour-des-raisons-financieres-selon-un-barometre_8298771.html",
-   "at": "2026-11-25T06:38:05+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"Les violences économiques ont vocation à instaurer un climat de dépendance\" : quand l'argent devient un outil d'emprise",
    "desc": "Une femme sur cinq est exposée aux violences économiques au sein de son couple. Des mécanismes qui installent une dépendance financière et rendent parfois le départ encore plus difficile.",
    "url": "https://www.franceinfo.fr/societe/violences-faites-aux-femmes/les-violences-economiques-ont-vocation-a-instaurer-un-climat-de-dependance-quand-l-argent-devient-un-outil-d-emprise_8298447.html",
    "at": "2026-11-25T06:20:44+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"La pensée libérale irrigue l'ensemble de la psyché collective\" : dans \"Un bon petit soldat\", Stéphane Brizé ausculte la brutalité du monde du travail",
-   "desc": "Stéphane Brizé signe un nouveau long-métrage sur la duplicité d'un management toxique dissimulé dans un décor de Bisounours.",
-   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/entretien-la-pensee-liberale-irrigue-l-ensemble-de-la-psyche-collective-dans-un-bon-petit-soldat-stephane-brize-ausculte-la-brutalite-du-monde-du-travail_8297961.html",
-   "at": "2026-11-25T05:00:05+00:00"
   },
   {
    "source": "franceinfo",

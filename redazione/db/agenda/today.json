@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "asOf": "2026-11-25T12:11:11+01:00",
+ "asOf": "2026-11-25T15:41:35+01:00",
  "items": [
   {
    "time": "01:30",
@@ -49,7 +49,7 @@
    "event": "Indice dei prezzi Pce core, mensile",
    "expected": "0,3%",
    "previous": "0,3%",
-   "actual": "",
+   "actual": "0,3%",
    "impact": "alto"
   },
   {
@@ -59,7 +59,7 @@
    "event": "Pil, stima preliminare",
    "expected": "3,5%",
    "previous": "3,4%",
-   "actual": "",
+   "actual": "4,3%",
    "impact": "alto"
   },
   {
@@ -108,8 +108,8 @@
    "currency": "USD",
    "event": "Spesa personale, mensile",
    "expected": "0,4%",
-   "previous": "0,5%",
-   "actual": "",
+   "previous": "0,6%",
+   "actual": "0,3%",
    "impact": "basso"
   },
   {
@@ -118,8 +118,8 @@
    "currency": "USD",
    "event": "Reddito personale, mensile",
    "expected": "0,4%",
-   "previous": "0,2%",
-   "actual": "",
+   "previous": "0,3%",
+   "actual": "0,7%",
    "impact": "basso"
   },
   {
@@ -167,6 +167,14 @@
   {
    "name": "Forex Factory, calendario della settimana",
    "url": "https://www.forexfactory.com/calendar"
+  },
+  {
+   "name": "Teleborsa, Pil Usa del terzo trimestre",
+   "url": "https://www.teleborsa.it/News/2026/11/25/usa-pil-terzo-trimestre-al-4-3percent-in-forte-accelerazione-rispetto-alla-lettura-preliminare-167.html"
+  },
+  {
+   "name": "Teleborsa, redditi e spese personali di ottobre",
+   "url": "https://www.teleborsa.it/News/2026/11/25/usa-a-ottobre-redditi-personali-crescono-piu-delle-attese-mentre-rallentano-le-spese-159.html"
   }
  ]
 }

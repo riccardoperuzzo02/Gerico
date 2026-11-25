@@ -494,9 +494,10 @@ def cmd_controlla(db=DB, quiet=False):
 
     riepilogo = load(os.path.join(db, "riepilogo", "today.json"))
     if riepilogo is not None:
-        words = len((riepilogo.get("text") or "").split())
-        if riepilogo.get("date") == today and not 380 <= words <= 450:
-            problems.append(f"riepilogo/today: {words} parole (servono 380-450)")
+        # la voce di Gemini legge in una volta sola solo i testi corti: oltre le 1700 lettere circa li spezza e cambia voce
+        lettere = len((riepilogo.get("text") or "").strip())
+        if riepilogo.get("date") == today and not 1300 <= lettere <= 1550:
+            problems.append(f"riepilogo/today: {lettere} caratteri (servono 1300-1550, spazi compresi: oltre, la voce cambia a metà)")
 
     temi = (load(os.path.join(db, "meta", "temi.json"), {}) or {}).get("temi") or []
     if len(temi) != 3:

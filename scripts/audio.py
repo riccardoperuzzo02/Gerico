@@ -16,11 +16,11 @@ colpo finale. La musica è di GERICO (scripts/sigla.py, con le parti pronte in s
 percussioni sono campioni di pubblico dominio dell'orchestra VSCO 2 CE, i suoni elettronici sono calcolati.
 
 La voce è quella di Gemini 3.8 Flash TTS di Google (API Gemini, livello gratuito; la chiave sta nel segreto
-GEMINI_API_KEY del repository, mai nel codice). Gemini spezza da sé i testi oltre le 1.900 lettere circa e lì la voce
-cambia, quindi il riepilogo si legge in pezzi di al massimo PEZZO_LETTERE lettere, divisi tra un tema e l'altro (di
-solito due richieste; il livello gratuito ne concede poche al giorno). Dentro il pezzo la voce lega le frasi come una
-persona; poi si confronta la nota dei pezzi (nota, stessa_voce) e quello che si allontana troppo si rilegge, al
-massimo RIFAI volte. Il montaggio rimette in ordine le pause: tra un tema e l'altro sempre la stessa, dentro il tema
+GEMINI_API_KEY del repository, mai nel codice). Ogni richiesta esce con un timbro un po' diverso e Gemini spezza da sé
+i testi oltre le 1.700-1.900 lettere, cambiando voce a metà: per questo il riepilogo è corto (la redazione lo scrive
+di 1.300-1.550 caratteri) e si legge in una richiesta sola, fino a INTERO_LETTERE. Se è più lungo si legge in pezzi
+divisi tra un tema e l'altro, si confronta la nota dei pezzi (nota, stessa_voce) e quello che si allontana troppo si
+rilegge, al massimo RIFAI volte; ma il timbro può cambiare lo stesso. Il montaggio rimette in ordine le pause: tra un tema e l'altro sempre la stessa, dentro il tema
 mai troppo lunghe (ritma). Ogni pezzo deve durare quanto ci si aspetta dal numero di parole, altrimenti si rifà.
 Se la chiave manca o il servizio non risponde, legge Nicola di
 Kokoro (modello aperto, licenza Apache 2.0), che gira sul server senza servizi esterni; i file del modello si
@@ -61,7 +61,9 @@ PAUSA_MAX, PAUSA_FRASE = 0.45, 0.36    # dentro un tema: una pausa più lunga di
 # Gemini 3.8 TTS spezza da sé i testi lunghi, circa ogni 1.900 lettere (500 token), e legge ogni parte per conto suo:
 # a quel punto la voce cambia nota e timbro (a metà di un tema, su una frase qualsiasi). Il riepilogo ha 2.600-2.900
 # lettere, quindi si divide noi, tra un tema e l'altro, in pezzi che restano sotto quel limite
-PEZZO_LETTERE = 1700                   # lettere al massimo per richiesta, contate sul testo che va alla voce
+INTERO_LETTERE = 1650                  # fino a qui il riepilogo va in una richiesta sola: una voce dall'inizio alla fine
+                                       # (dal 25 novembre la redazione lo scrive di 1300-1550 caratteri apposta)
+PEZZO_LETTERE = 1700                   # se è più lungo: lettere al massimo per pezzo, contate sul testo che va alla voce
 TOLLERANZA = 0.07                      # due pezzi della stessa voce: note entro il 7% (nei giorni buoni stanno entro il 4%)
 RIFAI = 2                              # richieste in più, al massimo, per avere la stessa voce in tutti i pezzi
 # la nota (frequenza fondamentale mediana) di ogni voce nei giorni in cui non cambiava: il pezzo più lontano si rifà
@@ -88,9 +90,9 @@ def musica_id():
 
 
 def gemini_id(voice, lingua="it"):
-    # «voce1»: solo la voce, senza musica; «voce3»: pezzi sotto PEZZO_LETTERE con la stessa nota (24 novembre).
-    # Cambiando questa sigla l'audio si rifà
-    return "gemini-38-" + voice.lower() + "-voce3" + ("-en" if lingua == "en" else "")
+    # «voce1»: solo la voce, senza musica; «voce3»: pezzi sotto PEZZO_LETTERE con la stessa nota (24 novembre);
+    # «voce4»: riepilogo corto, in una richiesta sola (25 novembre). Cambiando questa sigla l'audio si rifà
+    return "gemini-38-" + voice.lower() + "-voce4" + ("-en" if lingua == "en" else "")
 
 
 # ---------- Kokoro, la voce di riserva ----------
@@ -449,11 +451,15 @@ def nota(y, rate, np):
 def gemini_audio(paras, key, voice, np, sf, lingua="it"):
     """Tutto il riepilogo con Gemini: i pezzi uno dopo l'altro, con le pause rimesse in ordine (ritma) e la stessa
     pausa tra un pezzo e l'altro. Torna la voce, la frequenza e dove comincia ogni tema dopo il primo."""
-    # Un testo corto va in una richiesta sola. Uno lungo, letto tutto insieme, Gemini lo spezza da sé (vedi
-    # PEZZO_LETTERE) e la voce cambia a metà di un tema: lo dividiamo noi tra un tema e l'altro e poi controlliamo che
-    # tutti i pezzi abbiano la stessa voce (gemini_leggi). Se la lettura intera non riesce, si torna ai pezzi.
+    # Fino a INTERO_LETTERE il riepilogo va in una richiesta sola: una voce dall'inizio alla fine (dal 25 novembre la
+    # redazione lo scrive corto apposta). Due richieste non hanno mai lo stesso timbro, neanche con la stessa nota, e
+    # un testo lungo letto tutto insieme Gemini lo spezza da sé e cambia voce a metà: se il testo è più lungo, lo
+    # dividiamo noi tra un tema e l'altro e cerchiamo almeno la stessa nota (gemini_leggi), con un avviso.
     prep = per_voce_en if lingua == "en" else per_voce
-    if sum(len(prep(p)) + 2 for p in paras) <= PEZZO_LETTERE + 2:
+    lettere = sum(len(prep(p)) + 2 for p in paras) - 2
+    if lettere > INTERO_LETTERE:
+        print(f"::warning::audio ({lingua}): il riepilogo ha {lettere} lettere, oltre le {INTERO_LETTERE} che la voce legge in una volta: va in pezzi e la voce può cambiare tra un pezzo e l'altro")
+    else:
         try:
             return gemini_leggi(["\n\n".join(paras)], key, voice, np, sf, lingua)
         except QuotaDelGiorno:

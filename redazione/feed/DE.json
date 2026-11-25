@@ -1,32 +1,60 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T09:17:35+00:00",
+ "asOf": "2026-11-25T11:17:35+00:00",
  "items": [
   {
    "source": "Die Zeit",
-   "title": "Haushaltsdebatte im Bundestag: Britta Haßelmann kritisiert Haushalt als »unseriös«",
-   "desc": "Die Grünen-Fraktionschefin wirft der Bundesregierung ein chaotisches Vorgehen bei der Stromsteuer vor. Friedrich Merz erwartet schwierige Haushaltsdebatten. Das Liveblog",
+   "title": "Haushaltsdebatte: Friedrich Merz schwört Bevölkerung auf schwierigen Haushalt ein",
+   "desc": "Im Bundestag warnt der Kanzler vor schwierigen Etatdebatten in der Zukunft. Die Opposition sieht ein chaotisches Vorgehen bei der Regierung. Das Liveblog zum Nachlesen",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-generaldebatte-bundestag-live",
-   "at": "2026-11-25T09:15:15+00:00"
+   "at": "2026-11-25T11:14:56+00:00"
   },
   {
    "source": "Die Zeit",
-   "title": "Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
-   "desc": "None",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
-   "at": "2026-11-25T09:11:51+00:00"
+   "title": "Türkei: Erdoğan-Kontrahent İmamoğlu verliert Voraussetzung für Präsidentenamt",
+   "desc": "Der abgesetzte Istanbuler Bürgermeister Ekrem İmamoğlu ist Erdoğans größter Rivale. Für die Präsidentschaft fehlt ihm nach einem Gerichtsurteil das notwendige Uni-Diplom.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/ekrem-imamoglu-istanbul-diplom-tuerkei-praesidentschaft-2028-gxe",
+   "at": "2026-11-25T11:02:45+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "Bundestag: »Herr, Merz, wie lange wollen Sie sich von dem Söder noch auf der Nase herumtanzen lassen?«, fragt Britta Haßelmann – live",
-   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Nun steht der Höhepunkt in der Haushaltswoche an. Merz zeigt sich demütig, die Opposition attackiert teils aggressiv. Verfolgen Sie die Debatte im Stream und der Liveanalyse.",
+   "title": "Bundestag: Friedrich Merz versucht’s mal positiv, die Ränder polarisieren – die Lehren aus der Generaldebatte",
+   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Die Haushaltsdebatte legt offen, wie heikel die Koalition regiert. Und wie schwer es erst 2028 werden könnte. Die Blitz-Analyse.",
    "url": "https://www.spiegel.de/politik/deutschland/bundestag-so-laeuft-die-generaldebatte-zum-haushalt-live-a-e9f39663-47e8-4835-a192-24bcfe73cc6e",
-   "at": "2026-11-25T09:11:00+00:00"
+   "at": "2026-11-25T10:59:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Bundestag legt Schweigeminute für Opfer von Femiziden ein",
+   "desc": "Dass Bundestagspräsidentin Klöckner und viele andere bei der Generaldebatte Orange als Kleidungsfarbe gewählt hatten, war kein Zufall. Grund ist der Orange Day, an dem an Frauen erinnert wird, die Opfer von Gewalt wurden.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-orange-day-100.html",
+   "at": "2026-11-25T10:55:47+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "AfD fordert Klage gegen Haushalt - Merz nennt Etat \"vertretbar\"",
+   "desc": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
+   "at": "2026-11-25T10:44:12+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte: Friedrich Merz fordert baldige Umsetzung der Rentenreform",
+   "desc": "In der Generaldebatte hat der Bundeskanzler mehr Tempo bei der Umsetzung der Rentenreform gefordert. Grünen-Fraktionschefin Haßelmann nennt den neuen Haushalt »unseriös«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-friedrich-merz-cdu-fruehverrentung-kapitalmarkt-gxe",
+   "at": "2026-11-25T09:58:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rechtsterrorismus: Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
+   "desc": "Drei Deutsche sind unter dem Verdacht festgenommen worden, einer rechtsextremistischen terroristischen Gruppe anzugehören. Sie sollen geplant haben, Ausländer zu töten.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
+   "at": "2026-11-25T09:53:22+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Julia Klöckner: Bundestagspräsidentin fordert besseren Schutz für Frauen",
-   "desc": "Bundestagspräsidentin Julia Klöckner hat zu mehr Schutz von Frauen aufgerufen. Mit einem Schweigemoment gedachte der Bundestag der Opfern von Femiziden.",
+   "desc": "Bundestagspräsidentin Julia Klöckner hat zu mehr Schutz von Frauen aufgerufen. Mit einem Schweigemoment gedachte der Bundestag der Opfer von Femiziden.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/julia-kloeckner-gewalt-gegen-frauen-bundestag-gxe",
    "at": "2026-11-25T08:23:21+00:00"
   },
@@ -102,7 +130,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "News: Generaldebatte im Bundestag, mehr Anzeigen wegen Gewalt gegen Frauen, Tarifverhandlungen in der Metallindustrie",
+   "title": "News: Generaldebatte, Gewalt gegen Frauen, Tarifverhandlungen in der Metallindustrie",
    "desc": "Friedrich Merz tritt in der Generaldebatte des Bundestags ans Rednerpult. Die Polizei meldet mehr angezeigte Gewalt gegen Frauen. Und in der Metallindustrie wird nach Warnstreiks wieder verhandelt. Das ist die Lage am Mittwochmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-generaldebatte-im-bundestag-mehr-anzeigen-wegen-gewalt-gegen-frauen-tarifverhandlungen-in-der-metallindustrie-a-40c31068-2413-4166-8289-438c4c3739f7",
    "at": "2026-11-25T04:23:00+00:00"
@@ -129,18 +157,18 @@
    "at": "2026-11-25T01:27:33+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "EGMR-Urteile: Menschenrechtsgerichtshof grenzt Schutz bei Zurückweisungen ein",
-   "desc": "Staaten dürfen Migranten an Grenzen laut dem EGMR unter bestimmten Voraussetzungen ohne Prüfung zurückweisen. Polen, Lettland und Litauen wurden dennoch verurteilt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/egmr-urteile-belarus-grenze-migranten-zurueckweisung-polen-lettland",
-   "at": "2026-11-24T23:32:47+00:00"
+   "source": "Der Spiegel",
+   "title": "Vanessa Emde: Berliner Linke stimmt knapp für Ausschluss aus Fraktion",
+   "desc": "Die Berliner Linkenabgeordnete Vanessa Emde wird aus ihrer Fraktion ausgeschlossen. Die angehenden Koalitionspartner atmen auf. Doch der Fall dürfte Rot-Grün-Rot auch in Zukunft belasten.",
+   "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-berliner-linke-stimmt-knapp-fuer-ausschluss-aus-fraktion-a-8de561c3-e2ae-4d93-b6e1-1aa5fb438f7a",
+   "at": "2026-11-24T20:27:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Haushaltspolitik: Pflegekassen warnen vor Milliardendefizit trotz Bundeskrediten",
-   "desc": "Der Bund hat den Pflegekassen erst einen Kredit für 2027 zugesagt – der reicht laut ihren Vertretern aber nur für wenige Monate. Danach erwarten sie Milliardendefizite.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/pflegekassen-bundesgarantie-gkv-spitzenverband-finanzkrise",
-   "at": "2026-11-24T23:30:17+00:00"
+   "source": "Der Spiegel",
+   "title": "Vanessa Emde: SPD und Grüne begrüßen Fraktionsausschluss der Berliner Linkenpolitikerin",
+   "desc": "Die möglichen Koalitionspartner der Berliner Linkspartei haben positiv auf den Ausschluss von Vanessa Emde aus der Linksfraktion reagiert. Die Berliner CDU sieht weiterhin ein Antisemitismusproblem bei der Linken.",
+   "url": "https://www.spiegel.de/politik/deutschland/vanessa-emde-spd-und-gruene-begruessen-fraktionsausschluss-der-berliner-linkenpolitikerin-a-bf3b262f-81df-4b90-b0aa-0996deecfa24",
+   "at": "2026-11-24T19:19:00+00:00"
   },
   {
    "source": "Tagesschau",
@@ -155,6 +183,13 @@
    "desc": "Die per Mail verschickten Bombendrohungen haben am Montag deutlich mehr Schulen erreicht als zunächst angenommen. Die Polizei vermutet eine gezielte Aktion zur Verunsicherung.",
    "url": "https://www.tagesschau.de/inland/drohmails-schulen-gdp-destabilisierung-100.html",
    "at": "2026-11-24T18:39:01+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Die Linke und Vanessa Emde: Endlich eine rote Linie! - Kommentar",
+   "desc": "Die Berliner Linksfraktion hat ihre Abgeordnete Vanessa Emde ausgeschlossen. Das ist ein gutes Vorzeichen für eine Koalition. Das Verhalten von Elif Eralp irritiert allerdings.",
+   "url": "https://www.spiegel.de/politik/deutschland/die-linke-und-vanessa-emde-endlich-eine-rote-linie-kommentar-a-fd7bc979-aebe-4f34-97d0-baf23cb7b247",
+   "at": "2026-11-24T17:36:00+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -190,6 +225,13 @@
    "desc": "Die Deutschen spenden wieder mehr, doch die Zahl der Spender geht zurück. Das geht aus der Bilanz des Spendenrats hervor. Besonders eine Altersgruppe gibt auffällig viel - und eine andere auffällig wenig.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/spendenrat-bilanz-100.html",
    "at": "2026-11-24T15:42:18+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Papst Leo XIV. empfängt Friedrich Merz erstmals zu Privataudienz",
+   "desc": "Bei der Amtseinführung von Leo XIV. im Mai 2025 hat Merz den Pontifex schon kurz getroffen. Nun kommt es im Vatikan erstmals zu einem gesonderten Treffen. Danach steht eine Zusammenkunft mit Italiens Regierungschefin Meloni an.",
+   "url": "https://www.spiegel.de/politik/deutschland/papst-leo-xiv-empfaengt-friedrich-merz-erstmals-zu-privataudienz-a-54fa22ed-7995-4895-aefb-a39b044fbafc",
+   "at": "2026-11-24T15:21:00+00:00"
   },
   {
    "source": "Tagesschau",
@@ -232,27 +274,6 @@
    "desc": "Zu Beginn der Haushaltsberatungen im Bundestag hat Finanzminister Klingbeil den geplanten Rekordetat verteidigt. Es gehe um Spielräume für eine \"gute Zukunft\". Harsche Kritik kommt von der Opposition.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
    "at": "2026-11-24T13:10:35+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Marie-Agnes Strack-Zimmermann: Mann wegen Online-Beleidigung verurteilt",
-   "desc": "FDP-Politikerin Marie-Agnes Strack-Zimmermann fordert oft militärische Hilfe für die Ukraine im russischen Angriffskrieg, im Internet wird sie von Usern heftig angegangen. Ein Beitrag hat nun juristische Folgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/marie-agnes-strack-zimmermann-als-dreckige-kriegstreiberin-beleidigt-mann-zu-geldstrafe-verurteilt-a-30142d48-4998-4b7b-b0c5-6642e75e983b",
-   "at": "2026-11-24T11:15:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Papst Leo XIV.: Sachsens Staatskanzlei ließ Christstollen per Dienstwagen in Vatikan chauffieren",
-   "desc": "Im September reiste Sachsens Ministerpräsident Michael Kretschmer zu einer Privataudienz bei Papst Leo XIV. Einen Stollen, Porzellan und andere Präsente ließ die Staatskanzlei im 7er-BMW über die Alpen schaffen.",
-   "url": "https://www.spiegel.de/politik/deutschland/sachsen-staatskanzlei-liess-christstollen-per-dienstwagen-zu-papst-leo-xiv-chauffieren-a-dfd301fa-b8b8-45ef-a315-16dd8e04103b",
-   "at": "2026-11-24T10:20:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Debatte über Arzttermine: Führt der Sparkurs zur Drei-Klassen-Medizin?",
-   "desc": "Der Bund kürzt den Gesundheitsetat um sechs Milliarden Euro. Doch wer gesetzlich versichert ist, wartet schon jetzt länger auf Facharzttermine. Was dahintersteckt, was erlaubt ist und was sich bald ändern könnte. Von Tina Handel.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/arzt-termine-krankenkassen-patienten-100.html",
-   "at": "2026-11-24T10:06:17+00:00"
   }
  ]
 }

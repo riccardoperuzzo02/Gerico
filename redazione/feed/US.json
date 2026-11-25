@@ -1,13 +1,41 @@
 {
  "code": "US",
- "asOf": "2026-11-25T07:17:34+00:00",
+ "asOf": "2026-11-25T09:17:35+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Plane Crash Near Mississippi’s Horn Island Kills 6",
+   "desc": "Divers found the remains of the six people inside the downed plane near Horn Island, the Coast Guard said.",
+   "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html",
+   "at": "2026-11-25T08:57:18+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Puerto Rico’s Jennifer Barreto Wins Miss Universe on Home Turf",
+   "desc": "The pageant’s organizers said Costa Rica would host next year, contradicting a rival camp that chose Vietnam as the venue. They are locked in a bitter fight for control of Miss Universe.",
+   "url": "https://www.nytimes.com/2026/11/25/us/miss-universe-winner-puerto-rico.html",
+   "at": "2026-11-25T08:21:20+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Small plane crash off Mississippi kills 6, including 2 children",
    "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
    "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
-   "at": "2026-11-25T06:45:39+00:00"
+   "at": "2026-11-25T08:12:10+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Treasury yields fall as investors await key inflation signal",
+   "desc": "Bond yields moved lower Wednesday as investors awaited key inflation and spending data during a holiday-shortened week.",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "at": "2026-11-25T07:44:24+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Fuel Leak at Power Plant Near Honolulu Angers Local Officials",
+   "desc": "The mayor and the governor have had harsh words in recent days for the plant’s operator, and Gov. Josh Green signed an executive order requiring immediate reporting of any oil spill.",
+   "url": "https://www.nytimes.com/2026/11/24/us/h-power-fuel-leak-oahu-hawaii.html",
+   "at": "2026-11-25T07:18:29+00:00"
   },
   {
    "source": "NPR",
@@ -29,20 +57,6 @@
    "desc": "Big Tech could find it increasingly tough to secure funding from debt markets critical to the AI build-out, as lenders become pickier over corporate bonds.",
    "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
    "at": "2026-11-25T06:29:46+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Puerto Rico’s Jennifer Barreto Wins Miss Universe on Home Turf",
-   "desc": "The organizers of the pageant said Costa Rica would host next year, contradicting a rival camp that chose Vietnam. They are locked in a bitter fight for control of Miss Universe.",
-   "url": "https://www.nytimes.com/2026/11/25/us/miss-universe-winner-puerto-rico.html",
-   "at": "2026-11-25T06:24:54+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fuel Leak at Power Plant Near Honolulu Has Local Officials Fuming",
-   "desc": "The mayor and the governor have had harsh words in recent days for the plant’s operator, and Gov. Josh Green signed an executive order requiring immediate reporting of any oil spill.",
-   "url": "https://www.nytimes.com/2026/11/24/us/h-power-fuel-leak-oahu-hawaii.html",
-   "at": "2026-11-25T06:21:48+00:00"
   },
   {
    "source": "CNBC",
@@ -267,13 +281,6 @@
    "desc": "The Make America Great Again movement wants to remake Harvard. Harvard has a class for that.",
    "url": "https://www.nytimes.com/2026/11/24/us/harvard-maga-class.html",
    "at": "2026-11-24T23:26:17+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
-   "desc": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-   "at": "2026-11-24T23:13:49+00:00"
   },
   {
    "source": "CNBC",
@@ -578,9 +585,9 @@
   },
   {
    "source": "NPR",
-   "title": "Democrats probe whether Trump Jr.-aligned businesses benefit from government access",
-   "desc": "Investigators say companies with ties to Donald Trump Jr's investment firm, 1789 Capital, have profited since his father's reelection.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6051028/jamie-raskin-donald-trump-jr-1789-capital-democrats-investigation",
+   "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
+   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
+   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
    "at": "2026-11-24T10:00:00+00:00"
   }
  ]

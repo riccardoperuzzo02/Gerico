@@ -1,7 +1,56 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T07:17:34+00:00",
+ "asOf": "2026-11-25T09:17:35+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Haushaltsdebatte im Bundestag: Britta Haßelmann kritisiert Haushalt als »unseriös«",
+   "desc": "Die Grünen-Fraktionschefin wirft der Bundesregierung ein chaotisches Vorgehen bei der Stromsteuer vor. Friedrich Merz erwartet schwierige Haushaltsdebatten. Das Liveblog",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-generaldebatte-bundestag-live",
+   "at": "2026-11-25T09:15:15+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
+   "desc": "None",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
+   "at": "2026-11-25T09:11:51+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bundestag: »Herr, Merz, wie lange wollen Sie sich von dem Söder noch auf der Nase herumtanzen lassen?«, fragt Britta Haßelmann – live",
+   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Nun steht der Höhepunkt in der Haushaltswoche an. Merz zeigt sich demütig, die Opposition attackiert teils aggressiv. Verfolgen Sie die Debatte im Stream und der Liveanalyse.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundestag-so-laeuft-die-generaldebatte-zum-haushalt-live-a-e9f39663-47e8-4835-a192-24bcfe73cc6e",
+   "at": "2026-11-25T09:11:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Julia Klöckner: Bundestagspräsidentin fordert besseren Schutz für Frauen",
+   "desc": "Bundestagspräsidentin Julia Klöckner hat zu mehr Schutz von Frauen aufgerufen. Mit einem Schweigemoment gedachte der Bundestag der Opfern von Femiziden.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/julia-kloeckner-gewalt-gegen-frauen-bundestag-gxe",
+   "at": "2026-11-25T08:23:21+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte: Live: die Generaldebatte aus dem Bundestag",
+   "desc": "Es ist der Höhepunkt der Haushaltsberatungen: Der Bundeskanzler äußert sich zum Etat. Eröffnet wird die Debatte von AfD-Fraktionschef Tino Chrupalla. Hier im Livestream",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/generaldebatte-haushalt-livestream-bundestag-bundesregierung-live",
+   "at": "2026-11-25T08:08:11+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte im Bundestag: Opposition wirft Bundesregierung Tricks beim Haushalt vor",
+   "desc": "Vor der Generaldebatte im Bundestag werfen die Grünen der Regierung vor, beim Sondervermögen zu tricksen. Die AfD kritisiert die »sinnlosen Klimaprogramme«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/schuldenbremse-bundesregierung-haushalt-verschuldung-friedrich-merz-gxe",
+   "at": "2026-11-25T07:48:14+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ukrainekarte aktuell: Ukrainische Einheiten stoßen in Wowtschanski Chutory vor",
+   "desc": "Ukrainische Soldaten sind in Wowtschanski Chutory in der Region Charkiw vorgerückt. In der Region Donezk zerstört die ukrainische Armee eine russische Nachschubroute.",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-russland-frontverlauf-krieg-karte-aktuell",
+   "at": "2026-11-25T07:42:33+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Bundeshaushalt: Was mit den 561 Milliarden passiert",
@@ -29,13 +78,6 @@
    "desc": "Deutschland und vier weitere EU-Staaten wollen abgelehnte Asylbewerber nach Ruanda abschieben. 11KM analysiert, wohin sich die europäische Migrationspolitik gerade entwickelt.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-abschiebezentren-100.html",
    "at": "2026-11-25T06:11:51+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Generaldebatte im Bundestag: Grüne werfen Bundesregierung Tricks beim Haushalt vor",
-   "desc": "Die Grünen haben vor der Generaldebatte im Bundestag Kritik am Haushaltsentwurf der Bundesregierung geübt. Die Koalition wolle »die Menschen für dumm verkaufen«.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/schuldenbremse-bundesregierung-haushalt-verschuldung-friedrich-merz-gxe",
-   "at": "2026-11-25T06:02:34+00:00"
   },
   {
    "source": "Die Zeit",
@@ -99,48 +141,6 @@
    "desc": "Der Bund hat den Pflegekassen erst einen Kredit für 2027 zugesagt – der reicht laut ihren Vertretern aber nur für wenige Monate. Danach erwarten sie Milliardendefizite.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/pflegekassen-bundesgarantie-gkv-spitzenverband-finanzkrise",
    "at": "2026-11-24T23:30:17+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Cyberangriffe: Hacker greifen offenbar die CIA an",
-   "desc": "Der US-Auslandsgeheimdienst CIA ist laut Medienberichten von Hackern angegriffen worden. Sie erbeuteten dabei keine als geheim eingestuften Informationen.",
-   "url": "https://www.zeit.de/politik/2026-11/cia-hackerangriff-cyberangriff-odni-fbi",
-   "at": "2026-11-24T23:04:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Ermittlungen gegen Präsidentensohn: US-Abgeordneter verlangt Informationen zu Geschäften von Trump Jr.",
-   "desc": "Dem Präsidentensohn Donald Trump Jr. wird vorgeworfen, Insiderinformationen für seine Investmentgeschäfte zu nutzen. Ein US-Abgeordneter weitet Untersuchungen dazu aus.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/jamie-raskin-1789-capital-donald-trump-jr-hadrian-automation",
-   "at": "2026-11-24T21:36:18+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Staatsbesuch: Péter Magyar will engere Beziehung zwischen Ungarn und der Ukraine",
-   "desc": "Unter der Orbán-Regierung waren die ungarisch-ukrainischen Beziehungen angespannt. Der neue Regierungschef Ungarns kündigt ein »neues Kapitel« in der Zusammenarbeit an.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/peter-magyar-ukraine-wolodymyr-selenskyj-ungarische-minderheit",
-   "at": "2026-11-24T19:56:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Berliner Linksfraktion: Ein Schrecken ohne Emde",
-   "desc": "Durch den Ausschluss von Vanessa Emde zeigt die Berliner Linke ihren Willen zu regieren. Doch die Probleme der Partei mit dem Nahostkonflikt sind damit nicht gelöst.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-die-linke-ausschluss-abstimmung",
-   "at": "2026-11-24T19:54:51+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Berliner Linksfraktion: Ein Schrecken ohne Emde",
-   "desc": "Durch den Ausschluss von Vanessa Emde zeigt die Berliner Linke ihren Willen zu regieren. Doch die Probleme der Partei mit dem Nahostkonflikt sind damit nicht gelöst.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-die-linke-ausschluss-abstimmung",
-   "at": "2026-11-24T19:54:51+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Verbraucherschützer haben die smarte Brille im Blick",
-   "desc": "Verbraucherschützer gehen juristisch gegen KI-Brillen von Meta und Ray-Ban vor. Der Vorwurf: Mit smarten Brillen lassen sich Fotos und Videos aufnehmen, ohne dass andere Menschen das bemerken. Auch Nutzern könnten Bußgelder drohen. Von Jens Eberl.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/smart-glasses-klage-verbraucherschutz-100.html",
-   "at": "2026-11-24T19:06:34+00:00"
   },
   {
    "source": "Tagesschau",
@@ -253,20 +253,6 @@
    "desc": "Der Bund kürzt den Gesundheitsetat um sechs Milliarden Euro. Doch wer gesetzlich versichert ist, wartet schon jetzt länger auf Facharzttermine. Was dahintersteckt, was erlaubt ist und was sich bald ändern könnte. Von Tina Handel.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/arzt-termine-krankenkassen-patienten-100.html",
    "at": "2026-11-24T10:06:17+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Deutschland-Umfrage: Was sich Bürger von der Bundesregierung wünschen",
-   "desc": "",
-   "url": "https://www.spiegel.de/politik/deutschland/deutschland-umfrage-was-sich-buerger-von-der-bundesregierung-wuenschen-a-9ab4d601-5fc8-4ddf-8645-3fe413e493b1",
-   "at": "2026-11-24T09:00:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Schwerte: Maskierter stürmte Grünen-Sitzung in NRW – eine Person im Krankenhaus",
-   "desc": "Ein maskierter Mann hat eine Sitzung der Grünen im nordrhein-westfälischen Schwerte angegriffen. Laut Polizei wurden mehrere Menschen leicht verletzt. Die Ermittler prüfen eine politisch motivierte Tat.",
-   "url": "https://www.spiegel.de/politik/deutschland/schwerte-bei-dortmund-unbekannter-stuermt-offenbar-gruenen-sitzung-mehrere-menschen-im-krankenhaus-a-0f296213-39b0-4fdf-a77a-f03707044024",
-   "at": "2026-11-24T08:26:00+00:00"
   }
  ]
 }

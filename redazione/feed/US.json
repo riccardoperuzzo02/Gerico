@@ -1,13 +1,174 @@
 {
  "code": "US",
- "asOf": "2026-11-25T15:17:35+00:00",
+ "asOf": "2026-11-25T17:17:33+00:00",
  "items": [
   {
    "source": "CBS News",
-   "title": "Army detonates unstable lead explosives at Iowa plant today",
+   "title": "Maps show Iowa lead dust plume possibly drifting into Missouri after detonation, Army model shows",
+   "desc": "Maps released by the Army Tuesday show a possible plume of toxic dust after its detonation of munitions in Iowa drifting southwest toward northeast Missouri between 9 a.m. and 5 p.m. Wednesday.",
+   "url": "https://www.cbsnews.com/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/",
+   "at": "2026-11-25T17:14:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia leads tech sell-off as Huang comeback rally fizzles and AI concerns return",
+   "desc": "Nvidia and other AI-linked stocks fell as investors weighed AI spending, inflation and higher-rate risks.",
+   "url": "https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html",
+   "at": "2026-11-25T17:10:17+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s the latest.",
+   "desc": "",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-the-latest",
+   "at": "2026-11-25T17:07:54+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The U.S. Isn’t in a Recession. Try Telling Many Americans That.",
+   "desc": "The freshest measures of growth and hiring show a healthy economy. Struggling Americans aren’t seeing that.",
+   "url": "https://www.nytimes.com/2026/11/25/us/economic-growth-recession-pessimism.html",
+   "at": "2026-11-25T17:06:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "FEMA’s Hotline Did Not Offer Promised Help for Iowa Residents",
+   "desc": "Agents who answered the phone line, announced at a news conference and in alerts, were not able to offer information about responding to the detonation in Iowa.",
+   "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-fema-hotline.html",
+   "at": "2026-11-25T16:59:42+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army detonates toxic explosives at Iowa plant despite concerns",
    "desc": "The U.S. Army detonated a stockpile of degrading explosives at a munitions plant in Iowa on Wednesday, after days of back-and-forth between politicians and the courts.",
    "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/",
-   "at": "2026-11-25T15:16:24+00:00"
+   "at": "2026-11-25T16:58:24+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Father of teen killed at campsite says it was \"a deliberate act\"",
+   "desc": "Carey Washington \"Wash\" Vinson, 19, was shot and killed while on an annual camping trip with friends in the Florida Panhandle.",
+   "url": "https://www.cbsnews.com/news/carey-vinson-florida-campsite-fatal-shooting/",
+   "at": "2026-11-25T16:45:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Van Hollen’s Challenge to Schumer Highlights Democratic Rift on Israel",
+   "desc": "Senator Chris Van Hollen says his move to replace Senator Chuck Schumer as party leader isn’t about Israel, but his sharply critical stance toward the Jewish state has become a major fault line in the race.",
+   "url": "https://www.nytimes.com/2026/11/25/us/politics/van-hollen-schumer-israel-senate.html",
+   "at": "2026-11-25T16:41:29+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "There are 5,100 newly minted Anthropic millionaires—here’s all the stuff they don’t tell you about when you suddenly get rich",
+   "desc": "Anthropic’s IPO made about 5,100 employees paper millionaires. Experts explain the risks of sudden wealth.",
+   "url": "https://www.cnbc.com/2026/11/25/anthropic-ipo-employee-millionaires-sudden-wealth.html",
+   "at": "2026-11-25T16:32:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "With Measles on the Rise, Some Families Are Forgoing Thanksgiving Travel",
+   "desc": "With measles cases on the rise, some new parents are choosing not to travel, unwilling to chance airplanes, trains or even drives into areas with high infection rates.",
+   "url": "https://www.nytimes.com/2026/11/25/us/measles-cases-thanksgiving.html",
+   "at": "2026-11-25T16:28:42+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
+   "desc": "Bond yields moved lower Wednesday as investors fled to bonds for protection amid sticky inflation data.",
+   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html",
+   "at": "2026-11-25T16:20:57+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "How people use AI agents to handle annoying tasks and save money",
+   "desc": "Shrugging off fears of AI, some consumers say the technology is simplifying their lives and helping them save money.",
+   "url": "https://www.cbsnews.com/news/ai-agents-annoyance-economy/",
+   "at": "2026-11-25T16:18:40+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+   "desc": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
+   "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+   "at": "2026-11-25T16:17:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Army wants to resume training flights near site of collision",
+   "desc": "An Army helicopter on a training mission collided with an American Airlines passenger jet on approach at DCA, killing all aboard both aircraft, in January 2025.",
+   "url": "https://www.cbsnews.com/news/dc-plane-crash-dca-army-training-flights/",
+   "at": "2026-11-25T16:13:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "A look at the probes involving Nvidia, Jensen Huang and Megaspeed",
+   "desc": "The reinstatement of Jensen Huang as president and CEO of Nvidia sent shockwaves through the political and business world, and has fueled scrutiny by Congress.",
+   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-megaspeed-investigations/",
+   "at": "2026-11-25T16:13:16+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s what witnesses heard and felt from the blast.",
+   "desc": "The blast sent a white and gray plume into the air.",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-what-witnesses-heard-and-felt-from-the-blast",
+   "at": "2026-11-25T16:07:13+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Anthropic's stock has been a clunker post-IPO. Why that matters for the AI trade",
+   "desc": "Shares of Anthropic are trading below their IPO price, creating an overhang on other artificial intelligence names.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/25/anthropics-stock-has-been-a-clunker-post-ipo-why-that-matters-for-the-ai-trade.html",
+   "at": "2026-11-25T16:05:25+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "desc": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory or burdensome to U.S. commerce.",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "at": "2026-11-25T16:02:52+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Investors led by U.S. billionaire Todd Boehly to buy Lukoil's oil and gas assets outside Russia, sources say",
+   "desc": "The U.S. International Development Finance Corporation and Catena Investments, based in the United Arab Emirates, are also parties to the deal, the sources said.",
+   "url": "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
+   "at": "2026-11-25T16:00:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+   "desc": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
+   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
+   "at": "2026-11-25T15:55:40+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump administration to issue new tariffs on China, EU and others",
+   "desc": "The U.S. will increase tariffs on Chinese goods by an additional 20% and raise import taxes on goods from other major economies.",
+   "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/",
+   "at": "2026-11-25T15:54:37+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Middletown, where the explosion took place, has been a quiet city for hundreds of years.",
+   "desc": "The city of Middletown, Iowa, where the Army detonated a stockpile of degrading explosives on Wednesday.",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/where-is-middletown-iowa",
+   "at": "2026-11-25T15:49:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Kalshi traders say the odds of states imposing data center moratoriums is more likely than not",
+   "desc": "After Democrats swept Congress and key governor races, Kalshi traders lowered the odds that at least four states would pause data center build-out this year.",
+   "url": "https://www.cnbc.com/2026/11/25/kalshi-traders-say-the-odds-of-states-imposing-data-center-moratoriums-is-more-likely-than-not.html",
+   "at": "2026-11-25T15:40:22+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Latino-Owned Coffee Shop Closes After Claims That Founder Works for ICE",
+   "desc": "Tasa Coffee Roasters in Chicago permanently closed its doors after workers walked out in protest.",
+   "url": "https://www.nytimes.com/2026/11/24/us/tasa-coffee-chicago-closed-ice-owner.html",
+   "at": "2026-11-25T15:37:17+00:00"
   },
   {
    "source": "CBS News",
@@ -15,13 +176,6 @@
    "desc": "Joe Vinson, who was recently elected as a county commissioner in Escambia County, Florida, sat down with Tom Hanson to discuss the fatal shooting of his 19-year-old son Carey, who was on a camping trip with friends.",
    "url": "https://www.cbsnews.com/video/father-of-camping-trip-shooting-victim-says-there-was-malicious-intent-in-surprise-attack/",
    "at": "2026-11-25T15:04:28+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Here’s the latest.",
-   "desc": "",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-the-latest",
-   "at": "2026-11-25T15:03:46+00:00"
   },
   {
    "source": "New York Times",
@@ -36,13 +190,6 @@
    "desc": "Done right, bonds can be used to reduce taxes rather than defer them.",
    "url": "https://www.cnbc.com/2026/11/25/wealthy-investors-seek-tax-savings-from-municipal-bonds.html",
    "at": "2026-11-25T15:00:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-   "desc": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
-   "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-   "at": "2026-11-25T14:55:10+00:00"
   },
   {
    "source": "New York Times",
@@ -67,13 +214,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Trump administration to issue new tariffs on China, EU and others",
-   "desc": "The U.S. will increase tariffs on Chinese goods by an additional 20% and raise import taxes on goods from other major economies.",
-   "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/",
-   "at": "2026-11-25T14:39:46+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "6 killed in plane crash off Mississippi coast, officials say",
    "desc": "An investigation is underway after a plane crash off the coast of Mississippi killed six people, according to authorities. Jason Allen reports.",
    "url": "https://www.cbsnews.com/video/6-killed-in-plane-crash-off-mississippi-coast-officials-say/",
@@ -85,13 +225,6 @@
    "desc": "Rain, snow and powerful winds were forecast to impact large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
    "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
    "at": "2026-11-25T14:34:31+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump open to pardoning Jensen Huang if needed: NY Post",
-   "desc": "Trump said he would be willing to pardon Jensen Huang if needed and argued that the Nvidia CEO should not have to invoke the Fifth Amendment before Congress.",
-   "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
-   "at": "2026-11-25T14:32:09+00:00"
   },
   {
    "source": "CNBC",
@@ -112,7 +245,7 @@
    "title": "Inside Trump's effort to reinstate Jensen Huang as Nvidia's CEO",
    "desc": "Jensen Huang's comeback as Nvidia CEO came after a weekend of strategizing by Trump administration officials, who offered assurances to the company.",
    "url": "https://www.cbsnews.com/news/trump-jensen-huang-nvidia-ceo-reinstated/",
-   "at": "2026-11-25T14:25:31+00:00"
+   "at": "2026-11-25T14:25:00+00:00"
   },
   {
    "source": "CNBC",
@@ -120,13 +253,6 @@
    "desc": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
    "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
    "at": "2026-11-25T14:24:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
-   "desc": "The personal consumption expenditures price index was expected to show an annual inflation rate of 3.8% in October, according to the Dow Jones consensus.",
-   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
-   "at": "2026-11-25T14:18:45+00:00"
   },
   {
    "source": "CNBC",
@@ -141,13 +267,6 @@
    "desc": "Severe weather across the U.S. is threatening Thanksgiving plans for millions. Meanwhile, massive waves are flooding streets in Northern California. Cristian Benavides and Rob Marciano report.",
    "url": "https://www.cbsnews.com/video/massive-waves-and-high-tides-swallow-beaches-flood-roads-in-northern-california/",
    "at": "2026-11-25T14:15:45+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Our top 10 things to watch in the stock market Wednesday",
-   "desc": "We're headed for a sharply lower open on Wall Street.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/25/our-top-10-things-to-watch-in-the-stock-market-wednesday.html",
-   "at": "2026-11-25T14:15:30+00:00"
   },
   {
    "source": "NPR",
@@ -193,13 +312,6 @@
   },
   {
    "source": "CNBC",
-   "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "desc": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory, or burdensome to U.S. commerce.",
-   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-   "at": "2026-11-25T13:37:35+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
    "desc": "Nvidia’s decision to reinstate CEO Jensen Huang after pressure from Trump is intensifying bipartisan scrutiny of tech companies' ties to the administration.",
    "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
@@ -241,6 +353,13 @@
    "at": "2026-11-25T12:11:14+00:00"
   },
   {
+   "source": "NPR",
+   "title": "Republican wants FBI and CIA answers before questioning Nvidia chief",
+   "desc": "\"The public is rightly concerned,\" says the Republican lawmaker, who wants to know what the FBI and CIA knew about potential national security threats and whether Jensen Huang was warned.",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6052417/nvidia-jensen-huang-reaction-republicans-congress-investigation",
+   "at": "2026-11-25T11:50:05+00:00"
+  },
+  {
    "source": "New York Times",
    "title": "The Army’s plan relies on a complex series of steps and roughly 3,000 pounds of C4.",
    "desc": "",
@@ -260,13 +379,6 @@
    "desc": "Residents of Middletown, Iowa, have spent the week preparing for the Army to detonate.",
    "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/an-explosion-is-coming-to-iowa-and-residents-cant-do-a-thing-about-it",
    "at": "2026-11-25T10:47:55+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "With Measles on the Rise, Some Families Are Forgoing Thanksgiving Travel",
-   "desc": "With measles cases on the rise, some new parents are choosing not to travel, unwilling to chance airplanes, trains or even drives into areas with high infection rates.",
-   "url": "https://www.nytimes.com/2026/11/25/us/measles-cases-thanksgiving.html",
-   "at": "2026-11-25T10:04:03+00:00"
   },
   {
    "source": "NPR",
@@ -298,17 +410,10 @@
   },
   {
    "source": "NPR",
-   "title": "Army plans to detonate nearly five tons of lead-based explosives in Iowa",
-   "desc": "The controlled explosion is scheduled to take place at 9 a.m. CT/10 a.m ET at the Iowa Ammunition Plant, according to U.S. Army officials.",
+   "title": "Army detonates nearly five tons of lead-based explosives in Iowa",
+   "desc": "The controlled detonation of more than 60 barrels — roughly five tons — of unstable lead azide at the Iowa Army Ammunition Plant in Middletown, Iowa is complete.",
    "url": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-detonation-lead-explosives-iowa",
    "at": "2026-11-25T09:41:05+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Kilmar Abrego Garcia leaves U.S. voluntarily for Spain",
-   "desc": "Abrego Garcia, a Salvadoran immigrant who became a symbol of Trump's mass deportation campaign, voluntarily left the country on Tuesday after nearly two years of legal battles.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6053203/abrego-garcia-leaves-us",
-   "at": "2026-11-25T09:19:50+00:00"
   },
   {
    "source": "CNBC",
@@ -329,7 +434,7 @@
    "title": "Fuel Leak at Power Plant Near Honolulu Angers Local Officials",
    "desc": "The mayor and the governor have had harsh words in recent days for the plant’s operator, and Gov. Josh Green signed an executive order requiring immediate reporting of any oil spill.",
    "url": "https://www.nytimes.com/2026/11/24/us/h-power-fuel-leak-oahu-hawaii.html",
-   "at": "2026-11-25T07:18:29+00:00"
+   "at": "2026-11-25T07:18:30+00:00"
   },
   {
    "source": "CNBC",
@@ -353,13 +458,6 @@
    "at": "2026-11-25T04:51:00+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Maps show how far lead dust from Iowa detonation could travel",
-   "desc": "Maps of the planned lead azide detonation in Middletown show the shaded area stretching from near Burlington toward Macon, Missouri, by noon Wednesday. The forecasts will change with the weather.",
-   "url": "https://www.cbsnews.com/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/",
-   "at": "2026-11-25T04:30:03+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
    "desc": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
@@ -379,13 +477,6 @@
    "desc": "After President Trump said Jensen Huang was not a security threat, U.S. intelligence agencies told aides to lawmakers there was no evidence the woman at the heart of the scandal took directions from the Chinese spy agency.",
    "url": "https://www.nytimes.com/2026/11/24/us/politics/intelligence-nvidia-affair-congressional-briefing.html",
    "at": "2026-11-25T03:15:54+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Latino-Owned Coffee Shop Closes After Claims That Founder Works for ICE",
-   "desc": "Tasa Coffee Roasters in Chicago permanently closed its doors after workers walked out in protest.",
-   "url": "https://www.nytimes.com/2026/11/24/us/tasa-coffee-chicago-closed-ice-owner.html",
-   "at": "2026-11-25T03:11:35+00:00"
   },
   {
    "source": "New York Times",
@@ -413,14 +504,14 @@
    "title": "Justice Dept. Apologizes for Making False Statement to Judge in Omar Case",
    "desc": "The acknowledgment came hours after the House’s top lawyer said the department mischaracterized his view on constitutional protections for lawmakers.",
    "url": "https://www.nytimes.com/2026/11/24/us/politics/house-lawyer-ilhan-omar-search.html",
-   "at": "2026-11-25T02:20:55+00:00"
+   "at": "2026-11-25T02:20:56+00:00"
   },
   {
    "source": "New York Times",
    "title": "An Explosion Is Coming to Iowa. And Residents Can’t Do a Thing About It.",
    "desc": "Residents of Middletown, which adjoins an Army facility where dangerous chemicals will be detonated Wednesday, are taping up their doors and getting ready to flee.",
    "url": "https://www.nytimes.com/2026/11/24/us/iowa-ammunition-plant-lead-explosion-middletown.html",
-   "at": "2026-11-25T02:06:53+00:00"
+   "at": "2026-11-25T02:06:54+00:00"
   },
   {
    "source": "CBS News",
@@ -493,13 +584,6 @@
    "at": "2026-11-25T00:27:17+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Storms and coastal flooding could slow Thanksgiving travel plans",
-   "desc": "Thanksgiving travel could be slow-going over the next few days with storms and coastal flooding expected on both sides of the U.S. Kris Van Cleave reports and Rob Marciano has the forecast.",
-   "url": "https://www.cbsnews.com/video/storms-coastal-flooding-could-slow-thanksgiving-travel-plans/",
-   "at": "2026-11-25T00:21:56+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Sullivan Concedes Alaska Senate Race to Peltola",
    "desc": "The Republican conceded five days after the Trump administration gave up on a long-shot lawsuit intended to potentially block certification of the race.",
@@ -547,90 +631,6 @@
    "desc": "Trump Account contributions from friends and family have passed $1 billion, according to the Treasury Department. Here's what families need to know.",
    "url": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
    "at": "2026-11-24T22:18:47+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Shein to pay $100 million to settle claims it deceived customers",
-   "desc": "The Singapore fast-fashion company misled millions of U.S. consumers about its products and policies, FTC alleges.",
-   "url": "https://www.cbsnews.com/news/shein-100-million-ftc-deceptive-practices-settlement/",
-   "at": "2026-11-24T22:13:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
-   "desc": "The company's overall sales more than doubled on an annual basis during the third quarter, driven by AI server demand.",
-   "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
-   "at": "2026-11-24T22:07:45+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-   "desc": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
-   "url": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
-   "at": "2026-11-24T22:03:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/24: The Takeout with Major Garrett",
-   "desc": "Attorney General Todd Blanche won't say if the Justice Department investigated Jensen Huang; airports brace for Thanksgiving travel rush.",
-   "url": "https://www.cbsnews.com/video/112426-the-takeout-with-major-garrett/",
-   "at": "2026-11-24T22:00:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "DOJ directs array of litigators to help with ICE detainee lawsuits",
-   "desc": "Roughly 2,000 DOJ civil litigators are being directed to help with thousands of ICE detainee habeas petitions.",
-   "url": "https://www.cbsnews.com/news/ice-detainee-lawsuits-justice-department-non-immigration-attorneys/",
-   "at": "2026-11-24T21:53:52+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Officials Dismiss Rental Car Felony Charge for Incoming House Democrat",
-   "desc": "Representative-elect LaKesha Womack in North Carolina had been issued a criminal summons at a campaign rally last month about a rental vehicle she had failed to return in 2019.",
-   "url": "https://www.nytimes.com/2026/11/24/us/lakesha-womack-rental-car-felony-charge-dismissed.html",
-   "at": "2026-11-24T21:37:56+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Awards Rudy Giuliani Presidential Medal of Freedom",
-   "desc": "The award honored a Trump ally who was once known as “America’s mayor” but whose reputation was tarnished by his efforts to overturn the 2020 election on behalf of the president.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/trump-rudy-giuliani-presidential-medal-of-freedom.html",
-   "at": "2026-11-24T21:32:54+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Unstoppable Crowds Are Meeting Up to Push Immovable Objects",
-   "desc": "In Chicago, St. Louis, New York and Washington dreamers and pranksters have gotten together recently aiming to shift massive landmarks.",
-   "url": "https://www.nytimes.com/2026/11/24/us/washington-monument-chicago-bean-pushing.html",
-   "at": "2026-11-24T21:27:17+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Ballroom and Other Projects Got $300 Million Donation Boost",
-   "desc": "The Trump administration declined to say who donated those funds to an account funding presidential projects like the White House ballroom and the triumphal arch.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/account-park-service-trump-ballroom-donation.html",
-   "at": "2026-11-24T21:14:02+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
-   "desc": "Republicans worry Nvidia CEO Jensen Huang's affairs with a suspected Chinese spy jeopardized U.S. national security.",
-   "url": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
-   "at": "2026-11-24T21:13:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-   "desc": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
-   "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "at": "2026-11-24T21:07:19+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
-   "desc": "Co-founders of the prediction market platform were slated to appear in a state district court in December.",
-   "url": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
-   "at": "2026-11-24T20:45:57+00:00"
   }
  ]
 }

@@ -20,7 +20,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="assets/fonts/atkinson-next-zero-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/gerico.css?v=20261125-1">
+<link rel="stylesheet" href="assets/css/gerico.css?v=20261125-2">
 <script>try{var l=/[?&]lang=(en|it)\b/.exec(location.search);l=l?l[1]:JSON.parse(localStorage.getItem("gerico.lang"));if(l==="en")document.documentElement.lang="en"}catch(e){}try{var t=JSON.parse(localStorage.getItem("gerico.theme"));if(t)document.documentElement.setAttribute("data-theme",t);var s=JSON.parse(localStorage.getItem("gerico.size"));if(s)document.documentElement.classList.add("size-"+s);if(!sessionStorage.getItem("gerico.intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-run")}catch(e){}</script>
 </head>
 <body>
@@ -73,7 +73,7 @@
 
 <h2>Visite ed errori delle pagine</h2>
 <p>Per sapere quante persone leggono GERICO e se qualcosa non funziona, ogni pagina manda al server di GERICO un messaggio piccolo, senza cookie: quale pagina è (prima pagina, storia, Terminal…), il paese scelto nel sito (non quello da cui ti colleghi), la lingua e se usi un telefono, un tablet o un computer. Si tengono solo i totali di ogni giorno, per 13 mesi.</p>
-<p>Per contare le persone diverse di un giorno il server accorcia prima l'indirizzo IP (toglie l'ultima parte, come chiede il Garante per le statistiche fatte senza consenso) e poi calcola un'impronta cifrata dell'indirizzo accorciato e del browser, con una chiave che cambia ogni giorno. L'indirizzo IP non si salva; a fine giornata le impronte si cancellano e resta solo il numero. I tentativi di accesso e di iscrizione hanno un limite per minuto, contato con un'impronta dell'indirizzo intero; quelle impronte si cancellano entro un giorno.</p>
+<p>Per contare le persone diverse di un giorno il server accorcia prima l'indirizzo IP (toglie l'ultima parte, come chiede il Garante per le statistiche fatte senza consenso) e poi calcola un'impronta cifrata dell'indirizzo accorciato e del browser, con una chiave che cambia ogni giorno. L'indirizzo IP non si salva; a fine giornata le impronte si cancellano e resta solo il numero. Le visite di Riccardo non si contano: se ha escluso la rete di casa sua, il server confronta un'impronta cifrata dell'indirizzo di chi visita (per IPv6 solo la prima metà) con quella della sua rete. L'impronta di chi visita si calcola e si butta subito, senza salvarla; si tiene solo quella della rete di Riccardo, per al massimo 30 giorni. I tentativi di accesso e di iscrizione hanno un limite per minuto, contato con un'impronta dell'indirizzo intero; quelle impronte si cancellano entro un giorno.</p>
 <p>Nello stesso messaggio, per la prima pagina che apri in una visita, c'è il sito da cui arrivi: solo il suo nome (per esempio google.com), oppure «diretto» se non ce n'è uno; per le storie, quale storia è. Anche questi si tengono solo come totali di ogni giorno, per 13 mesi: servono a sapere da dove arrivano i lettori e quali storie si leggono di più.</p>
 <p>Se una pagina va in errore, il browser manda il messaggio dell'errore, il file, la riga e la pagina (al massimo dieci volte per visita), senza niente che dica chi sei. Gli errori si cancellano dopo 30 giorni. Visite ed errori li vede solo Riccardo, nel gestionale.</p>
 <p><b>Su quale base.</b> Il legittimo interesse di GERICO a sapere se il sito funziona, quante persone lo leggono e a proteggerlo dagli abusi (articolo 6, paragrafo 1, lettera f del GDPR), con dati ridotti al minimo: totali di ogni giorno, niente cookie, niente indirizzi salvati. Puoi opporti scrivendo a Riccardo.</p>
@@ -100,7 +100,7 @@
 <h2>I tuoi diritti</h2>
 <p>Puoi chiedere di vedere i dati che ti riguardano, di correggerli, di cancellarli, di limitarne l'uso, di riceverli in un file (anche dal menu, se hai l'account) e di opporti ai trattamenti fatti per legittimo interesse; puoi togliere quando vuoi un consenso che hai dato, senza conseguenze su quello che è stato fatto prima. Per tutto questo scrivi a <a href="mailto:riccardoperuzzo02@gmail.com">riccardoperuzzo02@gmail.com</a> o un messaggio diretto su Instagram a <a href="https://www.instagram.com/riccardo_peruzzo/" rel="noopener">@riccardo_peruzzo</a>: rispondiamo entro un mese. Puoi anche presentare un reclamo al <a href="https://www.garanteprivacy.it/" rel="noopener">Garante per la protezione dei dati personali</a>.</p>
 
-<p><small>Ultimo aggiornamento: 17 novembre 2026.</small></p>
+<p><small>Ultimo aggiornamento: 25 novembre 2026.</small></p>
 </div>
 <div class="prose" data-only="en">
 <h1>Privacy</h1>
@@ -131,7 +131,7 @@
 
 <h2>Page visits and errors</h2>
 <p>To know how many people read GERICO and whether something is broken, each page sends GERICO's server a small message, without cookies: which page it is (front page, story, Terminal…), the country chosen on the site (not the one you're connecting from), the language, and whether you use a phone, a tablet or a computer. Only each day's totals are kept, for 13 months.</p>
-<p>To count the different people on a given day the server first shortens the IP address (it removes the last part, as the Italian data protection authority requires for statistics made without consent) and then computes an encrypted fingerprint of the shortened address and the browser, with a key that changes every day. The IP address is not stored; at the end of the day the fingerprints are deleted and only the number remains. Sign-in and sign-up attempts have a per-minute limit, counted with a fingerprint of the full address; those fingerprints are deleted within a day.</p>
+<p>To count the different people on a given day the server first shortens the IP address (it removes the last part, as the Italian data protection authority requires for statistics made without consent) and then computes an encrypted fingerprint of the shortened address and the browser, with a key that changes every day. The IP address is not stored; at the end of the day the fingerprints are deleted and only the number remains. Riccardo's own visits are not counted: if he has excluded his home network, the server compares an encrypted fingerprint of the visitor's address (for IPv6 only the first half) with that of his network. The visitor's fingerprint is computed and dropped at once, never stored; only the fingerprint of Riccardo's network is kept, for at most 30 days. Sign-in and sign-up attempts have a per-minute limit, counted with a fingerprint of the full address; those fingerprints are deleted within a day.</p>
 <p>In the same message, for the first page you open in a visit, there is the site you came from: only its name (for example google.com), or “direct” if there is none; for stories, which story it is. These too are kept only as each day's totals, for 13 months: they show where readers come from and which stories are read the most.</p>
 <p>If a page hits an error, the browser sends the error message, the file, the line and the page (at most ten times per visit), with nothing that says who you are. Errors are deleted after 30 days. Only Riccardo sees visits and errors, in the dashboard.</p>
 <p><b>On what basis.</b> GERICO's legitimate interest in knowing whether the site works, how many people read it and in protecting it from abuse (Article 6(1)(f) GDPR), with as little data as possible: daily totals, no cookies, no stored addresses. You can object by writing to Riccardo.</p>
@@ -158,7 +158,7 @@
 <h2>Your rights</h2>
 <p>You can ask to see the data about you, to correct it, delete it, restrict its use, receive it in a file (also from the menu, if you have an account) and to object to processing based on legitimate interest; you can withdraw a consent you gave at any time, without affecting what was done before. For all of this write to <a href="mailto:riccardoperuzzo02@gmail.com">riccardoperuzzo02@gmail.com</a> or send a direct message on Instagram to <a href="https://www.instagram.com/riccardo_peruzzo/" rel="noopener">@riccardo_peruzzo</a>: we reply within a month. You can also lodge a complaint with the <a href="https://www.garanteprivacy.it/" rel="noopener">Italian data protection authority (Garante)</a>.</p>
 
-<p><small>Last updated: 17 November 2026.</small></p>
+<p><small>Last updated: 25 November 2026.</small></p>
 </div>
 
 </main>
@@ -168,7 +168,7 @@
 <p class="foot-line"><a href="come-funziona.html">Come funziona</a><a href="archivio">Archivio</a><a href="glossario">Glossario</a><a href="privacy.html">Privacy</a><a href="collabora">Collabora</a><span>Nessun consiglio di investimento</span><span>Articoli scritti con l'intelligenza artificiale, voce sintetica</span></p>
 </div>
 </footer>
-<script src="assets/js/common.js?v=20261125-1"></script>
-<script src="assets/js/info.js?v=20261125-1"></script>
+<script src="assets/js/common.js?v=20261125-2"></script>
+<script src="assets/js/info.js?v=20261125-2"></script>
 </body>
 </html>

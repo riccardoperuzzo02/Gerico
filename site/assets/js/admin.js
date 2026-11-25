@@ -99,14 +99,17 @@ G.page("admin", async function (P) {
 
   // ---------- le visite dell'amministratore: su questo dispositivo si contano o no ----------
   const nonContate = () => G.ls.get("gerico.nonContare", false) === true;
-  const mieTesto = () => (nonContate() ? L("Le visite di questo dispositivo non si contano.", "Visits from this device are not counted.") : L("Le visite di questo dispositivo si contano.", "Visits from this device are counted."));
   const mieBottone = () => (nonContate() ? L("Contale", "Count them") : L("Non contarle", "Don't count them"));
+  const mieStato = () => (nonContate() ? L("non si conta", "not counted") : L("si conta", "counted"));
+  // il visitatore unico di oggi che eri tu, da questo dispositivo: via dal conto (le visite già contate restano)
+  const togliOggi = () => G.conto.api("admin/visite", { azione: "togli-oggi" }).catch(() => {});
 
   // ---------- il pannello ----------
   const pannello = async () => {
     box.classList.add("ad-on");
     // il primo arrivo qui da amministratore toglie questo dispositivo dai conti delle visite (si può cambiare sotto)
     if (G.ls.get("gerico.nonContare", null) === null) G.ls.set("gerico.nonContare", true);
+    if (nonContate()) togliOggi();
     box.innerHTML = '<div class="ad-filtri"><div class="seg" id="ad-periodo" role="group" aria-label="' + L("Periodo", "Period") + '">' +
       PERIODI.map((g) => '<button type="button" data-giorni="' + g + '" aria-pressed="' + (g === giorni) + '">' + g + L(" giorni", " days") + "</button>").join("") +
       '</div><button type="button" class="btn-text" id="ad-agg">' + L("Aggiorna", "Refresh") + '</button></div><div id="ad-corpo" class="ad-corpo"></div>';
@@ -170,8 +173,26 @@ G.page("admin", async function (P) {
     const mie = $("ad-mie");
     if (mie) mie.addEventListener("click", () => {
       G.ls.set("gerico.nonContare", !nonContate());
-      $("ad-mie-t").textContent = mieTesto();
+      $("ad-mie-t").textContent = mieStato();
       mie.textContent = mieBottone();
+      if (nonContate()) togliOggi();
+    });
+    const rete = $("ad-rete");
+    if (rete) rete.addEventListener("click", async () => {
+      rete.disabled = true;
+      try { await G.conto.api("admin/visite", { azione: rete.dataset.az }); await aggiorna(); }
+      catch (e) { rete.disabled = false; G.toast(messaggio(e)); }
+    });
+    const dalF = $("ad-dal-f");
+    if (dalF) dalF.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      try { await G.conto.api("admin/visite", { azione: "dal", dal: $("ad-dal").value || "" }); await aggiorna(); }
+      catch (x) { G.toast(messaggio(x)); }
+    });
+    const dalX = $("ad-dal-x");
+    if (dalX) dalX.addEventListener("click", async () => {
+      try { await G.conto.api("admin/visite", { azione: "dal", dal: "" }); await aggiorna(); }
+      catch (x) { G.toast(messaggio(x)); }
     });
     sub.textContent = L("Aggiornato alle ", "Updated at ") + new Intl.DateTimeFormat(LOC, { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Rome" }).format(new Date(d.ora)) +
       L(" · ultimi ", " · last ") + d.giorni + L(" giorni", " days");
@@ -283,8 +304,31 @@ G.page("admin", async function (P) {
       '<button type="button" class="conto-b" id="ad-copia">' + L("Copia la didascalia", "Copy the caption") + "</button></div></div>";
   };
 
+  // le tue visite: questo dispositivo, questa rete, gli altri dispositivi, e da che giorno guardare le visite
+  const sezMie = (d) => {
+    const dataL = (ms) => new Intl.DateTimeFormat(LOC, { day: "numeric", month: "long", timeZone: "Europe/Rome" }).format(new Date(ms));
+    const domani = new Date(Date.parse(d.oggi + "T12:00:00Z") + 864e5).toISOString().slice(0, 10);
+    const rete = d.rete || {};
+    return '<section class="ad-sec" aria-labelledby="ad-h-mie"><h2 id="ad-h-mie">' + L("Le tue visite", "Your visits") + "</h2>" +
+      '<p class="ad-nota">' + L("Nei numeri non entrano le tue visite quando sei entrato con il tuo account, dai dispositivi dove le hai tolte e dalla rete che escludi qui sotto.",
+        "Your visits are left out when you're signed in with your account, from the devices where you turned them off and from the network you exclude below.") + "</p>" +
+      '<ul class="ad-mie-l">' +
+      '<li><span><b>' + L("Questo dispositivo", "This device") + '</b> <span id="ad-mie-t">' + mieStato() + '</span></span><button type="button" class="btn-text" id="ad-mie">' + mieBottone() + "</button></li>" +
+      '<li><span><b>' + L("Questa rete", "This network") + "</b> " + (rete.esclusa ? L("non si conta fino al ", "not counted until ") + esc(dataL(rete.scade)) : L("si conta", "counted")) + "</span>" +
+      '<button type="button" class="btn-text" id="ad-rete" data-az="' + (rete.esclusa ? "conta-rete" : "escludi-rete") + '">' + (rete.esclusa ? L("Contala", "Count it") : L("Non contarla", "Don't count it")) + "</button>" +
+      "<small>" + L("Vale per tutti i telefoni e i computer collegati a questa rete, anche dove non entri. Usalo solo a casa: in ufficio o al bar toglieresti anche le visite degli altri. Dura 30 giorni, perché l'indirizzo di casa cambia: poi rifallo da qui.",
+        "It covers every phone and computer on this network, even where you don't sign in. Use it only at home: at the office or in a café you'd remove other people's visits too. It lasts 30 days, because your home address changes: then do it again from here.") + "</small></li>" +
+      '<li><span><b>' + L("Un altro telefono o computer", "Another phone or computer") + "</b> " + L("apri una volta ", "open once ") + '<a href="/?conta=no">' + esc(location.host + "/?conta=no") + "</a></span></li></ul>" +
+      '<form class="ad-dal" id="ad-dal-f"><label for="ad-dal">' + L("Mostra le visite dal", "Show visits from") + '</label><input type="date" id="ad-dal" value="' + esc(d.visiteDal || "") + '" max="' + domani + '">' +
+      '<button type="submit" class="btn-text">' + L("Salva", "Save") + "</button>" + (d.visiteDal ? '<button type="button" class="btn-text" id="ad-dal-x">' + L("Da sempre", "From the start") + "</button>" : "") + "</form>" +
+      '<p class="ad-nota">' + L("Le visite di prima restano salvate: solo non si vedono. Il conto va a giorni, quindi per vedere solo quelle degli altri scegli il giorno dopo quello in cui hai tolto i tuoi dispositivi.",
+        "Earlier visits stay saved, they're just hidden. Counts go by day, so to see only other people's visits pick the day after you turned off your devices.") + "</p></section>";
+  };
+
   const disegna = (d, stato, social) => {
-    const oggi = d.serie[d.serie.length - 1] || {}, periodo = d.serie.reduce((a, x) => a + x.visite, 0);
+    // le visite e i visitatori dal giorno scelto in «Le tue visite» (prima ci sono anche le tue)
+    const serieV = d.visiteDal ? d.serie.filter((x) => x.giorno >= d.visiteDal) : d.serie;
+    const oggi = d.serie[d.serie.length - 1] || {}, periodo = serieV.reduce((a, x) => a + (x.visite || 0), 0);
     const nuovi = d.serie.reduce((a, x) => a + x.iscritti, 0);
     const js = d.errori.filter((e) => e.tipo === "js"), wk = d.errori.filter((e) => e.tipo !== "js");
     const recenti = d.errori.filter((e) => d.ora - e.ultimo < 864e5).length;
@@ -298,13 +342,16 @@ G.page("admin", async function (P) {
     let h = avvisi.map((a) => '<p class="ad-avviso">' + esc(a) + "</p>").join("");
     h += '<div class="ad-tiles">' +
       tessera(L("Iscritti", "Members"), n(d.iscritti.totale), nuovi ? "+" + n(nuovi) + L(" negli ultimi ", " in the last ") + d.giorni + L(" giorni", " days") : L("nessuno nuovo nel periodo", "none new in the period")) +
-      tessera(L("Visite oggi", "Visits today"), n(oggi.visite), n(periodo) + L(" nel periodo", " in the period")) +
-      tessera(L("Visitatori unici oggi", "Unique visitors today"), oggi.unici === null || oggi.unici === undefined ? "—" : n(oggi.unici), oggi.unici === null || oggi.unici === undefined ? L("serve STATS_SALT", "needs STATS_SALT") : L("persone diverse, più o meno", "different people, roughly")) +
+      tessera(L("Visitatori unici oggi", "Unique visitors today"), oggi.unici === null || oggi.unici === undefined ? "—" : n(oggi.unici),
+        !d.segreti.statsSalt ? L("serve STATS_SALT", "needs STATS_SALT") : oggi.unici === null ? L("contati dal ", "counted from ") + giornoTxt(d.visiteDal, true) : L("persone diverse, più o meno, senza di te", "different people, roughly, without you")) +
+      tessera(L("Visite oggi", "Visits today"), oggi.visite === null || oggi.visite === undefined ? "—" : n(oggi.visite), n(periodo) + L(" nel periodo", " in the period")) +
       tessera(L("Problemi nelle ultime 24 ore", "Problems in the last 24 hours"), n(recenti), recenti ? L("errori diversi", "distinct errors") : L("nessun errore", "no errors")) +
       tessera(L("Segnalazioni da leggere", "Reports to read"), n(daLeggere), segn.length ? n(segn.length) + L(" in tutto", " in total") : L("nessuna", "none")) + "</div>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-aff"><h2 id="ad-h-aff">' + L("Affluenza", "Traffic") + "</h2>" +
-      colonne(d.serie, "visite", L("Visite al giorno", "Visits per day"), L("visite", "visits")) +
-      (d.segreti.statsSalt ? colonne(d.serie, "unici", L("Visitatori unici al giorno", "Unique visitors per day"), L("visitatori", "visitors")) : "") +
+      (d.visiteDal ? '<p class="ad-nota">' + L("Visite contate dal ", "Visits counted from ") + esc(giornoTxt(d.visiteDal, true)) + L(" (si cambia in «Le tue visite»).", " (change it in «Your visits»).") + "</p>" : "") +
+      (serieV.length ? (d.segreti.statsSalt ? colonne(serieV, "unici", L("Visitatori unici al giorno", "Unique visitors per day"), L("visitatori", "visitors")) : "") +
+        colonne(serieV, "visite", L("Visite al giorno", "Visits per day"), L("visite", "visits"))
+        : '<p class="ad-nota">' + L("Ancora niente da mostrare: le visite si contano dal ", "Nothing to show yet: visits are counted from ") + esc(giornoTxt(d.visiteDal, true)) + ".</p>") +
       '<div class="ad-ranks">' +
       classifica(L("Pagine", "Pages"), d.pagine, (k) => esc(PAGINA[k] || k)) +
       classifica(L("Paese scelto", "Chosen country"), d.paesi, (k) => G.flag(k) + " " + esc(G.paeseNome(k))) +
@@ -312,8 +359,8 @@ G.page("admin", async function (P) {
       classifica(L("Dispositivo", "Device"), d.dispositivi, (k) => esc(DISP[k] || k)) +
       classifica(L("Da dove arrivano", "Where they come from"), d.provenienze || [], (k) => esc(FONTE[k] || k)) +
       classifica(L("Le storie più lette", "Most read stories"), d.letture || [], (k) => '<a href="/s/' + esc(k) + '">' + esc(titolo(k)) + "</a>") +
-      '</div><p class="ad-nota">' + L("Le visite si contano senza cookie e senza salvare indirizzi IP; i visitatori unici con un hash che cambia ogni giorno.", "Visits are counted without cookies and without storing IP addresses; unique visitors with a hash that changes every day.") + "</p>" +
-      '<p class="ad-nota ad-mie"><span id="ad-mie-t">' + mieTesto() + '</span> <button type="button" class="btn-text" id="ad-mie">' + mieBottone() + "</button></p></section>";
+      '</div><p class="ad-nota">' + L("Le visite si contano senza cookie e senza salvare indirizzi IP; i visitatori unici con un hash che cambia ogni giorno.", "Visits are counted without cookies and without storing IP addresses; unique visitors with a hash that changes every day.") + "</p></section>";
+    h += sezMie(d);
     h += '<section class="ad-sec" aria-labelledby="ad-h-seg"><h2 id="ad-h-seg">' + L("Segnalazioni di errori", "Error reports") + "</h2>" + segnalazioni(segn) + "</section>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-soc"><h2 id="ad-h-soc">' + L("Per Instagram", "For Instagram") + "</h2>" + kitSocial(social) + "</section>";
     h += '<section class="ad-sec" aria-labelledby="ad-h-isc"><h2 id="ad-h-isc">' + L("Iscritti", "Members") + "</h2>" +

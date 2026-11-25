@@ -3484,3 +3484,14 @@ html.nuova body.term .t-agenda li.ag-r.next.soon::before { left: -6px; }
    stanno su una riga, l'etichetta va a capo allineata a sinistra */
 .home #edition-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
 .home #edition-line .ritardo { margin-left: 0; }
+/* gestionale: «Le tue visite» (25 novembre). Righe con il filo in trasparenza, il pulsante a destra; sotto la rete la
+   spiegazione su tutta la riga; il giorno da cui contare in una riga sola */
+.ad-mie-l { margin: 12px 0 0; padding: 0; list-style: none; }
+.ad-mie-l li { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 14px; padding: 12px 0; border-top: 1px solid var(--rule); font-size: 0.9375rem; }
+.ad-mie-l li:first-child { border-top: 0; }
+.ad-mie-l li > span { min-width: 0; overflow-wrap: anywhere; }
+.ad-mie-l small { flex-basis: 100%; font-size: 0.8125rem; line-height: 1.45; color: var(--muted); }
+.ad-mie-l .btn-text { flex: none; }
+.ad-dal { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 14px 0 0; font-size: 0.9375rem; }
+.ad-dal input[type="date"] { min-height: 40px; padding: 6px 10px; border: 1px solid var(--rule); border-radius: var(--r, 6px); background: transparent; color: inherit; font: inherit; }
+html.nuova .ad-mie-l li { border-radius: 0 !important; }

@@ -407,11 +407,50 @@ const tetto = (chiave, n) => {
   f.n += 1;
   return f.n <= n;
 };
+// ---------- le visite dell'amministratore non si contano ----------
+// Né con il suo account (la sessione), né dalle reti che ha escluso dal gestionale: casa sua, con tutti i dispositivi e i
+// browser collegati, anche quelli dove non è entrato. Della rete si tiene solo un'impronta (HMAC con il segreto), che
+// scade dopo RETE_GIORNI giorni perché l'indirizzo di casa cambia; quello di chi legge si confronta solo in memoria e
+// non si salva. IPv4 intero (la /24 comprenderebbe anche i vicini), IPv6 la /64 (la seconda metà cambia da sola)
+const RETE_GIORNI = 30;
+function reteDi(request) {
+  const ip = request.headers.get("CF-Connecting-IP") || "";
+  if (/^\d{1,3}(\.\d{1,3}){3}$/.test(ip)) return ip;
+  if (!ip.includes(":")) return "";
+  const [a, b = ""] = ip.split("::");
+  const sx = a ? a.split(":") : [], dx = b ? b.split(":") : [];
+  const tutti = ip.includes("::") ? sx.concat(Array(Math.max(0, 8 - sx.length - dx.length)).fill("0"), dx) : sx;
+  return tutti.slice(0, 4).map((g) => (parseInt(g || "0", 16) || 0).toString(16)).join(":") + "::/64";
+}
+async function impRete(env, request) {
+  const rete = reteDi(request);
+  if (!rete) return "";
+  if (!env.STATS_SALT && !saleProcesso) saleProcesso = casuali(32);
+  const k = await crypto.subtle.importKey("raw", env.STATS_SALT ? enc.encode(env.STATS_SALT) : saleProcesso, { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  return hex(new Uint8Array(await crypto.subtle.sign("HMAC", k, enc.encode("gerico-rete|" + rete)))).slice(0, 32);
+}
+// le reti escluse, tenute in memoria per 5 minuti: una lettura del database ogni tanto, non una per visita
+let reti = { t: 0, set: new Set() };
+async function retiEscluse(c) {
+  if (c.ora - reti.t > 300000) {
+    const r = await c.db.prepare("SELECT hash FROM esclusi WHERE scade > ?1").bind(c.ora).all();
+    reti = { t: c.ora, set: new Set((r.results || []).map((x) => x.hash)) };
+  }
+  return reti.set;
+}
+async function dellAmministratore(c) {
+  const s = await c.sessione();
+  if (s && s.utente.admin) return true;
+  const esclusi = await retiEscluse(c);
+  return esclusi.size > 0 && esclusi.has(await impRete(c.env, c.request));
+}
+
 let ultimaPulizia = 0;
 async function visita(c) {
   const b = await c.corpo(1000);
   const p = String(b.p || ""), paese = String(b.c || ""), lingua = String(b.l || ""), disp = String(b.d || "");
   if (!PAGINE.has(p) || !/^[A-Z]{2}$/.test(paese) || !["it", "en"].includes(lingua) || !DISPOSITIVI.has(disp)) throw new Fallito(400, "visita");
+  if (await dellAmministratore(c)) return vuota();
   const giorno = giornoRoma(c.ora);
   const chi = await impronta(c.request, c.env, giorno, true);
   if (!tetto("v" + chi, 60)) return vuota();
@@ -487,24 +526,31 @@ async function adminAttiva(c) {
 }
 
 async function adminDati(c) {
-  await c.serveAdmin();
+  const s = await c.serveAdmin();
   const giorni = Math.min(400, Math.max(7, Number(c.url.searchParams.get("giorni")) || 30));
   const oggi = giornoRoma(c.ora), dal = spostaGiorno(oggi, 1 - giorni);
+  // le visite si guardano dal giorno scelto dall'amministratore (prima ci sono anche le sue): quelle di prima restano
+  const vd = String(profilo(s.utente).prefs.visiteDal || "");
+  const visiteDal = /^\d{4}-\d{2}-\d{2}$/.test(vd) ? vd : "";
+  const dalV = visiteDal > dal ? visiteDal : dal;
+  const rete = await impRete(c.env, c.request);
   const q = (sql, ...a) => c.db.prepare(sql).bind(...a);
   const r = await c.db.batch([
     q("SELECT COUNT(*) AS n FROM utenti"),
     q("SELECT u.id, u.nome, u.email, u.admin, u.creato, u.ultimo, u.prefs, (SELECT COUNT(*) FROM credenziali k WHERE k.utente = u.id) AS passkey FROM utenti u ORDER BY u.creato DESC LIMIT 1000"),
-    q("SELECT giorno, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY giorno ORDER BY giorno", dal),
-    q("SELECT pagina AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY pagina ORDER BY n DESC", dal),
-    q("SELECT paese AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY paese ORDER BY n DESC", dal),
-    q("SELECT lingua AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY lingua ORDER BY n DESC", dal),
-    q("SELECT dispositivo AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY dispositivo ORDER BY n DESC", dal),
-    q("SELECT giorno, unici FROM giorni WHERE giorno >= ?1", dal),
-    q("SELECT COUNT(*) AS n FROM unici WHERE giorno = ?1", oggi),
+    q("SELECT giorno, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY giorno ORDER BY giorno", dalV),
+    q("SELECT pagina AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY pagina ORDER BY n DESC", dalV),
+    q("SELECT paese AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY paese ORDER BY n DESC", dalV),
+    q("SELECT lingua AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY lingua ORDER BY n DESC", dalV),
+    q("SELECT dispositivo AS k, SUM(n) AS n FROM visite WHERE giorno >= ?1 GROUP BY dispositivo ORDER BY n DESC", dalV),
+    q("SELECT giorno, unici FROM giorni WHERE giorno >= ?1", dalV),
+    q("SELECT COUNT(*) AS n FROM unici WHERE giorno = ?1 AND giorno >= ?2", oggi, dalV),
     q("SELECT tipo, messaggio, file, riga, pagina, n, primo, ultimo FROM errori ORDER BY ultimo DESC LIMIT 200"),
-    q("SELECT fonte AS k, SUM(n) AS n FROM provenienze WHERE giorno >= ?1 GROUP BY fonte ORDER BY n DESC LIMIT 40", dal),
-    q("SELECT storia AS k, SUM(n) AS n FROM letture WHERE giorno >= ?1 GROUP BY storia ORDER BY n DESC LIMIT 25", dal),
-    q("SELECT id, storia, testo, lingua, creata, letta FROM segnalazioni ORDER BY letta, creata DESC LIMIT 200")
+    q("SELECT fonte AS k, SUM(n) AS n FROM provenienze WHERE giorno >= ?1 GROUP BY fonte ORDER BY n DESC LIMIT 40", dalV),
+    q("SELECT storia AS k, SUM(n) AS n FROM letture WHERE giorno >= ?1 GROUP BY storia ORDER BY n DESC LIMIT 25", dalV),
+    q("SELECT id, storia, testo, lingua, creata, letta FROM segnalazioni ORDER BY letta, creata DESC LIMIT 200"),
+    q("SELECT scade FROM esclusi WHERE hash = ?1 AND scade > ?2", rete, c.ora),
+    q("SELECT COUNT(*) AS n FROM esclusi WHERE scade > ?1", c.ora)
   ]);
   const righe = (i) => r[i].results || [];
   const iscrittiGiorno = {};
@@ -522,7 +568,8 @@ async function adminDati(c) {
   const serie = [];
   for (let i = 1 - giorni; i <= 0; i++) {
     const g = spostaGiorno(oggi, i);
-    serie.push({ giorno: g, iscritti: iscrittiGiorno[g] || 0, visite: visite[g] || 0, unici: c.env.STATS_SALT ? unici[g] || 0 : null });
+    const contato = g >= dalV;
+    serie.push({ giorno: g, iscritti: iscrittiGiorno[g] || 0, visite: contato ? visite[g] || 0 : null, unici: c.env.STATS_SALT && contato ? unici[g] || 0 : null });
   }
   return json({
     ora: c.ora, oggi, giorni,
@@ -530,8 +577,43 @@ async function adminDati(c) {
     iscritti: { totale: (righe(0)[0] || {}).n || 0, elenco },
     serie,
     pagine: righe(3), paesi: righe(4), lingue: righe(5), dispositivi: righe(6),
-    errori: righe(9), provenienze: righe(10), letture: righe(11), segnalazioni: righe(12)
+    errori: righe(9), provenienze: righe(10), letture: righe(11), segnalazioni: righe(12),
+    visiteDal, rete: { esclusa: righe(13).length > 0, scade: (righe(13)[0] || {}).scade || null }, retiEscluse: (righe(14)[0] || {}).n || 0
   });
+}
+// le visite dell'amministratore: questa rete esclusa o no, il suo dispositivo tolto dai visitatori unici di oggi, e da
+// che giorno guardare le visite nel gestionale (nelle sue preferenze)
+async function adminVisite(c) {
+  const s = await c.serveAdmin();
+  const b = await c.corpo(500);
+  const oggi = giornoRoma(c.ora);
+  // il visitatore unico di oggi che era lui, da questo dispositivo e questa rete
+  const togliOggi = async () => c.db.prepare("DELETE FROM unici WHERE giorno = ?1 AND hash = ?2").bind(oggi, await impronta(c.request, c.env, oggi, true));
+  if (b.azione === "togli-oggi") {
+    await (await togliOggi()).run();
+  } else if (b.azione === "escludi-rete" || b.azione === "conta-rete") {
+    const h = await impRete(c.env, c.request);
+    if (!h) throw new Fallito(400, "rete");
+    if (b.azione === "escludi-rete") {
+      await c.db.batch([
+        c.db.prepare("INSERT INTO esclusi (hash, creato, scade) VALUES (?1, ?2, ?3) ON CONFLICT (hash) DO UPDATE SET scade = ?3").bind(h, c.ora, c.ora + RETE_GIORNI * 864e5),
+        await togliOggi()
+      ]);
+    } else {
+      await c.db.prepare("DELETE FROM esclusi WHERE hash = ?1").bind(h).run();
+    }
+    reti.t = 0;
+  } else if (b.azione === "dal") {
+    const dal = String(b.dal || "");
+    if (dal && !/^\d{4}-\d{2}-\d{2}$/.test(dal)) throw new Fallito(400, "dal");
+    const prefs = profilo(s.utente).prefs;
+    if (dal) prefs.visiteDal = dal;
+    else delete prefs.visiteDal;
+    await c.db.prepare("UPDATE utenti SET prefs = ?1 WHERE id = ?2").bind(JSON.stringify(prefs), s.utente.id).run();
+  } else {
+    throw new Fallito(400, "azione");
+  }
+  return json({ fatto: true });
 }
 
 // la pagina del gestionale: solo per l'amministratore, e per tutti finché non c'è (con ADMIN_TOKEN impostato), per
@@ -577,6 +659,7 @@ async function pulizia(env) {
     env.DB.prepare("DELETE FROM provenienze WHERE giorno < ?1").bind(vecchio),
     env.DB.prepare("DELETE FROM letture WHERE giorno < ?1").bind(vecchio),
     env.DB.prepare("DELETE FROM segnalazioni WHERE creata < ?1").bind(ora - 180 * 864e5),
+    env.DB.prepare("DELETE FROM esclusi WHERE scade < ?1").bind(ora),
     env.DB.prepare("DELETE FROM giorni WHERE giorno < ?1").bind(vecchio)
   ]);
 }
@@ -597,7 +680,8 @@ const ROTTE = {
   "POST /api/segnala": segnala,
   "POST /api/admin/segnalazione": adminSegnalazione,
   "POST /api/admin/attiva": adminAttiva,
-  "GET /api/admin/dati": adminDati
+  "GET /api/admin/dati": adminDati,
+  "POST /api/admin/visite": adminVisite
 };
 const PERCORSI = new Set(Object.keys(ROTTE).map((k) => k.split(" ")[1]));
 

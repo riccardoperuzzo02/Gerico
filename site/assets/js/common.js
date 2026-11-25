@@ -3087,6 +3087,19 @@
     // anche su ogni dispositivo dove è entrato con l'account dell'amministratore
     // (se nella pagina admin ha scelto «Contale», su quel dispositivo si contano anche da amministratore)
     const nonContare = () => { const v = G.ls.get("gerico.nonContare", null); return v === true || (v === null && !!(G.ls.get("gerico.conto", null) || {}).admin); };
+    // su un dispositivo dove non entra con l'account, l'amministratore apre una volta l'indirizzo con ?conta=no (?conta=si
+    // per tornare a contarlo): la scelta resta nel browser, l'indirizzo torna pulito
+    try {
+      const sc = new URLSearchParams(location.search).get("conta");
+      if (sc === "no" || sc === "si") {
+        G.ls.set("gerico.nonContare", sc === "no");
+        const u = new URL(location.href);
+        u.searchParams.delete("conta");
+        history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+        setTimeout(() => G.toast && G.toast(sc === "no" ? G.L("Le visite di questo dispositivo non si contano più", "Visits from this device are no longer counted")
+          : G.L("Le visite di questo dispositivo si contano di nuovo", "Visits from this device are counted again")), 600);
+      }
+    } catch (e) { /* niente */ }
     // con la visita: da dove arriva (solo il nome del sito, solo alla prima pagina della visita in questa scheda) e, nelle
     // storie, quale storia. Niente di chi legge
     const visita = () => {

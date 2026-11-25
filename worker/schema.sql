@@ -97,3 +97,11 @@ CREATE TABLE IF NOT EXISTS segnalazioni (
   letta INTEGER NOT NULL DEFAULT 0
 );
 CREATE INDEX IF NOT EXISTS segnalazioni_creata ON segnalazioni (creata);
+
+-- migrazione 3: le reti da cui le visite non si contano (la casa dell'amministratore, scelta dal gestionale).
+-- Solo un'impronta della rete (HMAC con STATS_SALT), mai l'indirizzo; scade dopo 30 giorni
+CREATE TABLE IF NOT EXISTS esclusi (
+  hash TEXT PRIMARY KEY,
+  creato INTEGER NOT NULL,
+  scade INTEGER NOT NULL
+);

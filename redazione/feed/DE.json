@@ -1,11 +1,67 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T13:17:34+00:00",
+ "asOf": "2026-11-25T15:17:35+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "Bundestag: Tumulte rund um Besuch von Ex-Mossad Chef David Barnea",
+   "desc": "Eine Veranstaltung mit Ex-Mossad-Chef Barnea sorgt für Aufregung im Bundestag. Linkenabgeordnete blockieren kurzzeitig den Raum, ein Aktivist stört die Veranstaltung. Es kommt zu Rangeleien, die Polizei muss eingreifen.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundestag-tumulte-rund-um-besuch-von-ex-mossad-chef-david-barnea-a-a900cae3-9de2-469f-a225-d3a5e2b6cd73",
+   "at": "2026-11-25T15:09:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Sachsen-Anhalt: AfD-Fraktion reicht Wahlvorschlag für Ulrich Siegmund offiziell ein",
+   "desc": "Am 8. Dezember will sich Ulrich Siegmund in Sachsen-Anhalt zum Regierungschef wählen lassen. Gegen ihn tritt die Linke Eva von Angern an. Auch Proteste werden erwartet.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/ministerpraesident-wahl-afd-ulrich-siegmund-sachsen-anhalt-gxe",
+   "at": "2026-11-25T14:57:58+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Polen will Flugverbotszone an der Grenze zur Ukraine einrichten",
+   "desc": "Nach mehreren Luftraumverletzungen will Polen den Flugverkehr im Grenzgebiet beschränken. Russische Angriffe führen in der Ukraine zu Stromausfällen. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-25T14:55:34+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Protest in Berlin: Linke blockieren Veranstaltung mit Ex-Mossad-Chef im Bundestag",
+   "desc": "Zwei Bundestagsabgeordnete der Linken haben kurzzeitig den Zugang zu einem Treffen mit David Barnea versperrt. Jetzt soll sich der Ältestenrat mit dem Vorfall befassen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/mossad-david-barnea-bundestag-linksfraktion-blockade-gxe",
+   "at": "2026-11-25T14:54:25+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Wenn der Partner zuschlägt",
+   "desc": "Alle drei Minuten erlebt eine Frau oder ein Mädchen in Deutschland häusliche Gewalt. Nur ein kleiner Teil der Taten wird angezeigt - aus Angst, Scham oder sozialer Isolation. Von Marion Försching.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/wenn-der-partner-zuschlaegt-gewalt-gegen-frauen-100.html",
+   "at": "2026-11-25T14:36:47+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte zum Bundeshaushalt 2027: Klug reden kann Merz, jetzt muss er noch führen",
+   "desc": "Im Bundestag hält Kanzler Merz eine ungewöhnliche Rede. Den verkorksten Bundeshaushalt redet er nicht schön. Er geht auf die SPD zu. Das zeigt, wie prekär seine Lage ist.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/generaldebatte-friedrich-merz-bundestag-bundeshaushalt-2027",
+   "at": "2026-11-25T14:08:26+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Polnischer Grenzschutz: Starker Rückgang der Migration auf der Belarus-Route",
+   "desc": "Die Anzahl der versuchten irregulären Einreisen in die EU über Belarus ist stark zurückgegangen. Laut Angaben von Polens Grenzschutz waren es seit Jahresbeginn 482.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/migration-belarus-polen-alexander-lukaschenko-eu-grenze-gxe",
+   "at": "2026-11-25T13:51:43+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "tagesschau in Einfacher Sprache startet WhatsApp-Kanal",
+   "desc": "Langsamer gesprochen, erklärte Fachbegriffe, kaum Nebensätze - seit 2024 gibt es die tagesschau in Einfacher Sprache. Zehntausende nutzen sie jeden Tag. Nun wird das Angebot um einen WhatsApp-Kanal erweitert.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/einfache-sprache-102.html",
+   "at": "2026-11-25T13:45:35+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Was über die rechtsextremistische Gruppe \"Terror 18\" bekannt ist",
-   "desc": "Sie sind fast noch Kinder und plant laut Bundesanwaltschaft schwerste Straftaten, etwa auf eine Flüchtlingsunterkunft. Nun gingen Ermittler gegen mutmaßliche Mitglieder der rechtsextremistischen Gruppe \"Terror 18\" vor. Was ist bekannt? Von Max Bauer.",
+   "desc": "Sie sind fast noch Kinder und planten laut Bundesanwaltschaft schwerste Straftaten, etwa auf eine Flüchtlingsunterkunft. Nun gingen Ermittler gegen mutmaßliche Mitglieder der rechtsextremistischen Gruppe \"Terror 18\" vor. Was ist bekannt? Von Max Bauer.",
    "url": "https://www.tagesschau.de/inland/terror-18-rechtsextremistische-gruppe-100.html",
    "at": "2026-11-25T13:15:59+00:00"
   },
@@ -108,39 +164,11 @@
    "at": "2026-11-25T06:32:57+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Geopolitik : Versuchen wir es doch mal mit Demokratie",
-   "desc": "Von Putin, Trump und Xi abgestoßen, besinnen sich die Wähler auf die Stärke der liberalen Ordnung. Das ist eine Chance für Europa.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/autokratie-shenzhen-gipfel-koalition-der-willigen-ungarn-serbien",
-   "at": "2026-11-25T06:28:35+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "11KM-Podcast: Abschiebezentren in Ruanda: Die nächste Stufe der EU-Asylpolitik",
    "desc": "Deutschland und vier weitere EU-Staaten wollen abgelehnte Asylbewerber nach Ruanda abschieben. 11KM analysiert, wohin sich die europäische Migrationspolitik gerade entwickelt.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-abschiebezentren-100.html",
    "at": "2026-11-25T06:11:51+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "NS-Frauenverbände: Kinder, Küche, Krieg: Frauen im Nationalsozialismus",
-   "desc": "Erstmals macht die ZEIT Akten der NS-Frauenverbände durchsuchbar. War Oma dabei? Und: Die Ukraine weitet die Kampfzone aus. Eine neue Phase des Kriegs?",
-   "url": "https://www.zeit.de/politik/2026-11/ns-frauenverbaende-frauen-nationalsozialismus-akten-suche-nachrichtenpodcast",
-   "at": "2026-11-25T05:00:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nordkorea: Nordkorea weist Leiter der Schweizer Vertretung aus",
-   "desc": "Die Regierung in Pjöngjang wirft der Schweiz wegen neuer Sanktionen einen »feindseligen Akt« vor. Das erst kürzlich eröffnete Verbindungsbüro soll geschlossen werden.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/nordkorea-ausweisung-schweiz-diplomat-pjoengjang-sanktionen",
-   "at": "2026-11-25T04:44:56+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "China: Antikorruptionsbehörden in China ermitteln gegen Politbüromitglied",
-   "desc": "Chen Jining, Parteichef in Shanghai, ist das vierte Mitglied des Politbüros, gegen das seit Anfang 2025 ermittelt wird. Was ihm konkret vorgeworfen wird, blieb offen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/chen-jining-shanghai-parteichef-korruption-politbuero-china",
-   "at": "2026-11-25T04:33:04+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -155,13 +183,6 @@
    "desc": "Der heutige Orange Day steht für eine Zukunft ohne Gewalt gegen Frauen. Doch die Realität sieht anders aus. Strafverschärfungen und Gesetzesänderungen sind angestoßen, aber schnelle Lösungen sind nicht in Sicht. Von A. Lagmöller.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/orange-day-gewalt-gegen-frauen-100.html",
    "at": "2026-11-25T04:00:11+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "US-Zölle: USA planen offenbar neue Zölle gegen die EU und China",
-   "desc": "Die USA werfen mehreren Ländern vor, ihre Industrieproduktion künstlich zu erhöhen. Mehrere Medien berichten nun von neuen Zollplänen, die sich auch gegen Europa richten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/us-zoelle-china-eu-donald-trump-gerichtshof",
-   "at": "2026-11-25T02:07:59+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -246,34 +267,6 @@
    "desc": "Seit 2024 gibt es Sammelabschiebungen nach Afghanistan und Absprachen mit den Taliban. Taliban-Vertreter sind in Konsulaten in Deutschland aktiv. Dort müssen Geflüchtete vorsprechen, auf Anordnung deutscher Behörden. Ist das zulässig? Von Max Bauer.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-gefluechtete-taliban-100.html",
    "at": "2026-11-24T15:18:02+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Taliban lassen Abschiebeflug verschieben",
-   "desc": "Ein für heute geplanter Abschiebeflug nach Kabul wurde nach NDR-Informationen von afghanischer Seite abgesagt. Die Taliban wollen offenbar Druck machen, um die Einreise weiterer Konsularbeamte nach Deutschland zu erzwingen. Von P. Hornung.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/afghanistan-taliban-abschiebeflug-gestoppt-100.html",
-   "at": "2026-11-24T15:15:31+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Protest gegen Aufrüstung: Der schwierige Kampf der Kriegsgegner",
-   "desc": "Immer mehr Kriege, immer mehr Waffen. Aufrüstung ist ein Milliardengeschäft. Firmen, die sich in der Provinz ansiedeln wollen, treffen dort allerdings oft auf entschlossenen Widerstand. Aber wer protesiert da eigentlich?",
-   "url": "https://www.spiegel.de/politik/deutschland/protest-gegen-aufruestung-der-schwierige-kampf-der-kriegsgegner-a-fa580f9b-43db-465a-8817-79de0219b0ae",
-   "at": "2026-11-24T15:07:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kita-Gap-Portal: Trotz weniger Geburten fehlen Kitaplätze",
-   "desc": "Obwohl in Deutschland weniger Kinder geboren werden, fehlt es weiterhin an Kitaplätzen. Vor allem ärmere und nicht Deutsch sprechende Familien sind betroffen. Große Unterschiede gibt es zwischen Ost und West.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/kitaplaetze-mangel-100.html",
-   "at": "2026-11-24T14:12:42+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "\"Zutiefst schockierend\" - Weiterer Anstieg bei Fällen von Gewalt gegen Frauen",
-   "desc": "Etwa 198.000 Frauen und Mädchen sowie 82.000 Männern und Jungen wurde im vergangenen Jahr häusliche Gewalt angetan - ein weiterer Anstieg, wie die Lagebilder des BKA zeigen. Besonders auffällig: Immer mehr Frauen werden zudem Opfer von digitaler Gewalt.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/gewalt-gegen-frauen-lagebericht-100.html",
-   "at": "2026-11-24T13:31:58+00:00"
   }
  ]
 }

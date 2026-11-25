@@ -1,27 +1,209 @@
 {
  "code": "US",
- "asOf": "2026-11-25T13:17:34+00:00",
+ "asOf": "2026-11-25T15:17:35+00:00",
  "items": [
   {
-   "source": "CNBC",
-   "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "desc": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory, or burdensome to U.S. commerce.",
-   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
-   "at": "2026-11-25T13:11:09+00:00"
+   "source": "CBS News",
+   "title": "Army detonates unstable lead explosives at Iowa plant today",
+   "desc": "The U.S. Army detonated a stockpile of degrading explosives at a munitions plant in Iowa on Wednesday, after days of back-and-forth between politicians and the courts.",
+   "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/",
+   "at": "2026-11-25T15:16:24+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Father of camping trip shooting victim says \"there was malicious intent\" in surprise attack",
+   "desc": "Joe Vinson, who was recently elected as a county commissioner in Escambia County, Florida, sat down with Tom Hanson to discuss the fatal shooting of his 19-year-old son Carey, who was on a camping trip with friends.",
+   "url": "https://www.cbsnews.com/video/father-of-camping-trip-shooting-victim-says-there-was-malicious-intent-in-surprise-attack/",
+   "at": "2026-11-25T15:04:28+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s the latest.",
+   "desc": "",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-the-latest",
+   "at": "2026-11-25T15:03:46+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Why Aren’t the Midterms Over in Louisiana? Ask the Supreme Court.",
+   "desc": "A landmark Supreme Court ruling reshaped the state’s congressional map and set up runoffs for two open seats.",
+   "url": "https://www.nytimes.com/2026/11/25/us/politics/why-arent-the-midterms-over-in-louisiana-ask-the-supreme-court.html",
+   "at": "2026-11-25T15:00:05+00:00"
   },
   {
    "source": "CNBC",
-   "title": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
-   "desc": "Nvidia’s decision to reinstate CEO Jensen Huang after pressure from Trump is intensifying bipartisan scrutiny of tech companies' ties to the administration.",
-   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
-   "at": "2026-11-25T13:05:38+00:00"
+   "title": "Wealthy investors seek tax savings from municipal bonds as yields remain elevated",
+   "desc": "Done right, bonds can be used to reduce taxes rather than defer them.",
+   "url": "https://www.cnbc.com/2026/11/25/wealthy-investors-seek-tax-savings-from-municipal-bonds.html",
+   "at": "2026-11-25T15:00:01+00:00"
   },
   {
    "source": "CNBC",
    "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
    "desc": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
    "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-   "at": "2026-11-25T13:01:01+00:00"
+   "at": "2026-11-25T14:55:10+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "The Army rejected a cleaner option to dispose of the explosive materials.",
+   "desc": "The Iowa Army Ammunition Plant in Middletown, Iowa.",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/the-army-rejected-a-cleaner-option-to-dispose-of-the-explosive-materials",
+   "at": "2026-11-25T14:42:24+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Small plane crash off Mississippi kills 6, including 2 children",
+   "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
+   "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "at": "2026-11-25T14:41:14+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Stocks plummet as Jensen Huang rebound rally fades",
+   "desc": "The tech-heavy Nasdaq 100 index is on pace to relinquish earlier gains this week, spurred by the stunning return of Nvidia's CEO.",
+   "url": "https://www.cbsnews.com/news/stocks-jensen-huang-bounce-ai-tariffs/",
+   "at": "2026-11-25T14:40:44+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump administration to issue new tariffs on China, EU and others",
+   "desc": "The U.S. will increase tariffs on Chinese goods by an additional 20% and raise import taxes on goods from other major economies.",
+   "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/",
+   "at": "2026-11-25T14:39:46+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "6 killed in plane crash off Mississippi coast, officials say",
+   "desc": "An investigation is underway after a plane crash off the coast of Mississippi killed six people, according to authorities. Jason Allen reports.",
+   "url": "https://www.cbsnews.com/video/6-killed-in-plane-crash-off-mississippi-coast-officials-say/",
+   "at": "2026-11-25T14:34:58+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Maps show where Thanksgiving storms could disrupt holiday",
+   "desc": "Rain, snow and powerful winds were forecast to impact large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
+   "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
+   "at": "2026-11-25T14:34:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump open to pardoning Jensen Huang if needed: NY Post",
+   "desc": "Trump said he would be willing to pardon Jensen Huang if needed and argued that the Nvidia CEO should not have to invoke the Fifth Amendment before Congress.",
+   "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
+   "at": "2026-11-25T14:32:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
+   "desc": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
+   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
+   "at": "2026-11-25T14:29:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+   "desc": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
+   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+   "at": "2026-11-25T14:29:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Inside Trump's effort to reinstate Jensen Huang as Nvidia's CEO",
+   "desc": "Jensen Huang's comeback as Nvidia CEO came after a weekend of strategizing by Trump administration officials, who offered assurances to the company.",
+   "url": "https://www.cbsnews.com/news/trump-jensen-huang-nvidia-ceo-reinstated/",
+   "at": "2026-11-25T14:25:31+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Budget carrier Norse Atlantic falls 78% after warning its finances are ‘critical’ amid soaring fuel costs",
+   "desc": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
+   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
+   "at": "2026-11-25T14:24:04+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
+   "desc": "The personal consumption expenditures price index was expected to show an annual inflation rate of 3.8% in October, according to the Dow Jones consensus.",
+   "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html",
+   "at": "2026-11-25T14:18:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
+   "desc": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
+   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
+   "at": "2026-11-25T14:17:01+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Massive waves and high tides swallow beaches, flood roads in Northern California",
+   "desc": "Severe weather across the U.S. is threatening Thanksgiving plans for millions. Meanwhile, massive waves are flooding streets in Northern California. Cristian Benavides and Rob Marciano report.",
+   "url": "https://www.cbsnews.com/video/massive-waves-and-high-tides-swallow-beaches-flood-roads-in-northern-california/",
+   "at": "2026-11-25T14:15:45+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Our top 10 things to watch in the stock market Wednesday",
+   "desc": "We're headed for a sharply lower open on Wall Street.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/25/our-top-10-things-to-watch-in-the-stock-market-wednesday.html",
+   "at": "2026-11-25T14:15:30+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
+   "desc": "The first settlers of Liberia were African Americans who brought along the holiday of Thanksgiving — which has evolved to reflect the history and identity of this new nation.",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
+   "at": "2026-11-25T14:14:34+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Army’s Maps of Iowa Explosion May Underestimate Impact",
+   "desc": "The emergency emissions scenario calculated by Army officials did not use a “worst-case scenario,” as required by the Environmental Protection Agency.",
+   "url": "https://www.nytimes.com/2026/11/25/us/army-detonation-emissions-maps-risk-underestimated.html",
+   "at": "2026-11-25T14:02:21+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Plane Crash Near Mississippi’s Horn Island Kills 6",
+   "desc": "Divers found the remains of the six people inside the downed plane near Horn Island, the Coast Guard said.",
+   "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html",
+   "at": "2026-11-25T13:59:09+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "\"How to Kill a Federal Judge\" author gets over 6 years in prison",
+   "desc": "District Judge Karen Schreier found Robert Ivers, 73, guilty on two counts of mailing threatening communications and one count of threatening to murder a U.S. district judge.",
+   "url": "https://www.cbsnews.com/news/robert-ivers-how-to-kill-a-federal-judge-sentenced-prison/",
+   "at": "2026-11-25T13:52:32+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "What to know before using AI agents for Black Friday shopping",
+   "desc": "59% of U.S. shoppers plan to use AI for holiday shopping this weekend, according to the National Retail Federation",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6048524/what-to-know-before-using-ai-agents-for-black-friday-shopping",
+   "at": "2026-11-25T13:51:56+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Here’s how the Army plans to mitigate the blast’s effects.",
+   "desc": "An entrance to the Iowa Army Ammunition Plant in Middletown, Iowa, on Tuesday.",
+   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-how-the-army-plans-to-mitigate-the-blasts-effects",
+   "at": "2026-11-25T13:41:59+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+   "desc": "The new levies seek to counter foreign trade practices deemed unfair, discriminatory, or burdensome to U.S. commerce.",
+   "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
+   "at": "2026-11-25T13:37:35+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump’s meddling in Huang scandal reignites voter angst over tech’s outsized political power",
+   "desc": "Nvidia’s decision to reinstate CEO Jensen Huang after pressure from Trump is intensifying bipartisan scrutiny of tech companies' ties to the administration.",
+   "url": "https://www.cnbc.com/2026/11/25/huang-reinstatement-reignites-voter-angst-over-techs-outsized-power.html",
+   "at": "2026-11-25T13:20:34+00:00"
   },
   {
    "source": "New York Times",
@@ -29,13 +211,6 @@
    "desc": "In Mount Pleasant, Iowa, a farmer turned activist spends the evening before a toxic detonation with her cattle.",
    "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-cattle-farmer.html",
    "at": "2026-11-25T12:48:48+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Here’s the latest.",
-   "desc": "",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/heres-the-latest",
-   "at": "2026-11-25T12:40:46+00:00"
   },
   {
    "source": "New York Times",
@@ -66,32 +241,11 @@
    "at": "2026-11-25T12:11:14+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-   "desc": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
-   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-   "at": "2026-11-25T12:00:01+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "The Army’s plan relies on a complex series of steps and roughly 3,000 pounds of C4.",
    "desc": "",
    "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/the-armys-plan-relies-on-a-complex-series-of-steps-and-roughly-3000-pounds-of-c4",
    "at": "2026-11-25T11:37:04+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Budget carrier Norse Atlantic falls 77% after warning its finances are ‘critical’ amid soaring fuel costs",
-   "desc": "The Norwegian low-cost carrier said its situation is dependent on securing financing for its short-term liquidity needs.",
-   "url": "https://www.cnbc.com/2026/11/25/norse-atlantic-financial-warning-fuel-costs.html",
-   "at": "2026-11-25T11:10:28+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "The Army rejected a cleaner option to dispose of the explosive materials.",
-   "desc": "The Iowa Army Ammunition Plant in Middletown, Iowa.",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/the-army-rejected-a-cleaner-option-to-dispose-of-the-explosive-materials",
-   "at": "2026-11-25T11:04:47+00:00"
   },
   {
    "source": "NPR",
@@ -111,7 +265,7 @@
    "source": "New York Times",
    "title": "With Measles on the Rise, Some Families Are Forgoing Thanksgiving Travel",
    "desc": "With measles cases on the rise, some new parents are choosing not to travel, unwilling to chance airplanes, trains or even drives into areas with high infection rates.",
-   "url": "https://www.nytimes.com/2026/11/25/us/this-thanksgiving-some-families-wonder-should-i-stay-home-with-my-baby.html",
+   "url": "https://www.nytimes.com/2026/11/25/us/measles-cases-thanksgiving.html",
    "at": "2026-11-25T10:04:03+00:00"
   },
   {
@@ -120,13 +274,6 @@
    "desc": "Constantly buying new things can be problematic, says journalist Eric Athas, author of the new book \"Saying No to New.\" Here's how to break the cycle and find joy in what you already have.",
    "url": "https://www.npr.org/2026/11/25/nx-s1-6052361/buying-new-things-feels-wonderful-can-be-trap-break-the-cycle",
    "at": "2026-11-25T10:02:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Army to detonate unstable lead explosives at Iowa plant today",
-   "desc": "The U.S. Army will detonate a stockpile of degrading explosives at a munitions plant in Iowa on Wednesday, after days of back-and-forth between politicians and the courts.",
-   "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/",
-   "at": "2026-11-25T10:00:09+00:00"
   },
   {
    "source": "NPR",
@@ -151,6 +298,13 @@
   },
   {
    "source": "NPR",
+   "title": "Army plans to detonate nearly five tons of lead-based explosives in Iowa",
+   "desc": "The controlled explosion is scheduled to take place at 9 a.m. CT/10 a.m ET at the Iowa Ammunition Plant, according to U.S. Army officials.",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6052338/army-detonation-lead-explosives-iowa",
+   "at": "2026-11-25T09:41:05+00:00"
+  },
+  {
+   "source": "NPR",
    "title": "Kilmar Abrego Garcia leaves U.S. voluntarily for Spain",
    "desc": "Abrego Garcia, a Salvadoran immigrant who became a symbol of Trump's mass deportation campaign, voluntarily left the country on Tuesday after nearly two years of legal battles.",
    "url": "https://www.npr.org/2026/11/25/nx-s1-6053203/abrego-garcia-leaves-us",
@@ -165,24 +319,10 @@
   },
   {
    "source": "New York Times",
-   "title": "Plane Crash Near Mississippi’s Horn Island Kills 6",
-   "desc": "Divers found the remains of the six people inside the downed plane near Horn Island, the Coast Guard said.",
-   "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html",
-   "at": "2026-11-25T08:57:18+00:00"
-  },
-  {
-   "source": "New York Times",
    "title": "Puerto Rico’s Jennifer Barreto Wins Miss Universe on Home Turf",
    "desc": "The pageant’s organizers said Costa Rica would host next year, contradicting a rival camp that chose Vietnam as the venue. They are locked in a bitter fight for control of Miss Universe.",
    "url": "https://www.nytimes.com/2026/11/25/us/miss-universe-winner-puerto-rico.html",
    "at": "2026-11-25T08:21:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Small plane crash off Mississippi kills 6, including 2 children",
-   "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
-   "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
-   "at": "2026-11-25T08:12:10+00:00"
   },
   {
    "source": "New York Times",
@@ -192,11 +332,11 @@
    "at": "2026-11-25T07:18:29+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
-   "desc": "Senegal won the Africa Cup on the field in Morocco in January and then lost it in a legal case in March because its players walked off the field in protest in second-half stoppage time.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6053783/africa-cup-senegal-morocco",
-   "at": "2026-11-25T06:43:23+00:00"
+   "source": "CNBC",
+   "title": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
+   "desc": "Big Tech could find it increasingly tough to secure funding from debt markets critical to the AI build-out, as lenders become pickier over corporate bonds.",
+   "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
+   "at": "2026-11-25T06:29:46+00:00"
   },
   {
    "source": "CNBC",
@@ -210,7 +350,7 @@
    "title": "Army to detonate unstable explosives in Iowa Wednesday morning",
    "desc": "A federal appeals court on Monday declined to block the Army from detonating explosives containing lead azide at a munitions plant in Iowa.",
    "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
-   "at": "2026-11-25T04:51:33+00:00"
+   "at": "2026-11-25T04:51:00+00:00"
   },
   {
    "source": "CBS News",
@@ -276,13 +416,6 @@
    "at": "2026-11-25T02:20:55+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Trump open to pardoning Jensen Huang if needed: NY Post",
-   "desc": "Trump said he would be willing to pardon Jensen Huang if needed and argued that the Nvidia CEO should not have to invoke the Fifth Amendment before Congress.",
-   "url": "https://www.cnbc.com/2026/11/25/trump-huang-pardon-politics.html",
-   "at": "2026-11-25T02:09:45+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "An Explosion Is Coming to Iowa. And Residents Can’t Do a Thing About It.",
    "desc": "Residents of Middletown, which adjoins an Army facility where dangerous chemicals will be detonated Wednesday, are taping up their doors and getting ready to flee.",
@@ -295,13 +428,6 @@
    "desc": "Nidal Hasan, the Army soldier who fatally shot 13 people in the attack at the Texas Army post in 2009, told a federal court Tuesday that he plans to file a petition to delay his execution by firing squad.",
    "url": "https://www.cbsnews.com/news/nidal-hasan-delay-execution-petition/",
    "at": "2026-11-25T01:49:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-   "desc": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
-   "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
-   "at": "2026-11-25T01:13:56+00:00"
   },
   {
    "source": "CBS News",
@@ -374,13 +500,6 @@
    "at": "2026-11-25T00:21:56+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jim Cramer sizes up six retail stocks after earnings — and names his two favorites",
-   "desc": "Here's where Jim Cramer stands on six retailers that rallied after reporting earnings Tuesday, and his two favorites.",
-   "url": "https://www.cnbc.com/2026/11/24/jim-cramer-retail-stocks-earnings.html",
-   "at": "2026-11-25T00:04:08+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Sullivan Concedes Alaska Senate Race to Peltola",
    "desc": "The Republican conceded five days after the Trump administration gave up on a long-shot lawsuit intended to potentially block certification of the race.",
@@ -416,25 +535,11 @@
    "at": "2026-11-24T23:27:37+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
-   "desc": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
-   "at": "2026-11-24T23:13:49+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "U.S. Spy Agencies Suffer Breach of Some Unclassified Information",
    "desc": "The intrusion affecting the C.I.A. and the Office of the Director of National Intelligence comes amid heightened concerns about cybersecurity.",
    "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
    "at": "2026-11-24T23:01:09+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "These deer walk 300 miles a year. The race is on to save their migration",
-   "desc": "Mule deer in Wyoming make some of the longest land migrations in the lower 48 states. They're trying to adapt to a changing climate, but growing development could stand in their way.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6022517/wildlife-migration-wyoming-deer-yellowstone",
-   "at": "2026-11-24T22:52:44+00:00"
   },
   {
    "source": "CNBC",
@@ -514,13 +619,6 @@
    "at": "2026-11-24T21:13:39+00:00"
   },
   {
-   "source": "NPR",
-   "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-   "desc": "Washington's $9 billion industry grows more than 70% of the nation's fresh apples. Farmers are being pressed by high costs, tariffs and a strong dollar that diminishes foreign purchasing power.",
-   "url": "https://www.npr.org/sections/the-picture-show/2026/11/24/g-s1-154620/how-high-costs-are-squeezing-apple-producers",
-   "at": "2026-11-24T21:09:29+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
    "desc": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
@@ -529,108 +627,10 @@
   },
   {
    "source": "CNBC",
-   "title": "Anthropic closes below $83 IPO price, but analysts are still largely positive",
-   "desc": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
-   "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
-   "at": "2026-11-24T21:04:03+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
    "desc": "Co-founders of the prediction market platform were slated to appear in a state district court in December.",
    "url": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
    "at": "2026-11-24T20:45:57+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "How Meta is using Instagram to get an ad boost from its Muse personal AI agent",
-   "desc": "Meta doesn't serve ads in its Muse personal agent, but the tool is already boosting the company's ad business, a senior executive told CNBC.",
-   "url": "https://www.cnbc.com/2026/11/24/meta-instagram-muse-ad-revenue.html",
-   "at": "2026-11-24T20:37:40+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Wendy's \"pricing scheme\" inflated menu prices, lawsuit alleges",
-   "desc": "In a proposed class action, a California resident alleges that Wendy's conspired with its franchisees to set and raise menu prices.",
-   "url": "https://www.cbsnews.com/news/wendys-class-action-lawsuit-dynamic-pricing/",
-   "at": "2026-11-24T20:19:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Democrats have flipped 48 House seats. Here's the breakdown.",
-   "desc": "Democrats won control of the House by flipping dozens of Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
-   "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/",
-   "at": "2026-11-24T20:18:42+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump presents Rudy Giuliani with Presidential Medal of Freedom",
-   "desc": "Rudy Giuliani, the former mayor of New York City who worked as a personal lawyer to President Trump, said he will be honored in the Oval Office.",
-   "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/",
-   "at": "2026-11-24T20:16:27+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Retail turnarounds are taking hold just in time for the holiday season",
-   "desc": "Retail earnings reports on Tuesday pointed to a mix of factors behind the strong results, including a resilient consumer and stronger execution.",
-   "url": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html",
-   "at": "2026-11-24T19:26:39+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Broderick Wins Tennessee House Race, Giving Democrats Largest Majority in 30 Years",
-   "desc": "Democrats’ midterm rout kept expanding in the House after a tech support worker ousted an eight-term Republican without having aired a single TV ad.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
-   "at": "2026-11-24T19:26:32+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Gold is doing something strange. Here's one way to play it",
-   "desc": "Gold is not acting like the traditional safe haven. How one trader is playing the move.",
-   "url": "https://www.cnbc.com/2026/11/24/gold-is-doing-something-strange-heres-one-way-to-play-it-.html",
-   "at": "2026-11-24T19:25:13+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Who qualifies for Costco’s $30-per-share dividend — plus, Meta puts share plan on hold",
-   "desc": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/24/who-qualifies-for-costcos-dividend-plus-meta-pauses-share-plan.html",
-   "at": "2026-11-24T19:23:59+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-   "desc": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
-   "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-   "at": "2026-11-24T18:34:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
-   "desc": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
-   "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-   "at": "2026-11-24T17:51:45+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Federal court releases Rep. Ilhan Omar D.C. home raid documents",
-   "desc": "A federal court on Monday evening released documents regarding last month's raid at the Washington, D.C. home of Democratic Minnesota U.S. Rep. Ilhan Omar.",
-   "url": "https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
-   "at": "2026-11-24T16:29:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Meet Sighle Williams, a beloved drive-thru worker and star of a new Netflix documentary",
-   "desc": "Sighle Williams, the star of the Netflix short documentary \"One Last Order,\" which comes out Tuesday, joins \"CBS Mornings\" to talk about her community impact after working 37 years at Mac's Drive Thru in Gainesville, Florida.",
-   "url": "https://www.cbsnews.com/video/meet-sighle-williams-a-beloved-drive-thru-worker-and-star-of-a-new-netflix-documentary/",
-   "at": "2026-11-24T15:49:08+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Forgot to grab wine for Thanksgiving? Here are some last-minute options, according to an expert",
-   "desc": "Ray Isle, the wine editor at \"Food & Wine,\" joins \"CBS Mornings\" to share his favorite affordable picks for a last-minute wine run ahead of Thanksgiving.",
-   "url": "https://www.cbsnews.com/video/forgot-to-grab-wine-for-thanksgiving-here-are-some-last-minute-options-according-to-a-wine-expert/",
-   "at": "2026-11-24T15:29:36+00:00"
   }
  ]
 }

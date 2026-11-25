@@ -1,13 +1,27 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T11:17:35+00:00",
+ "asOf": "2026-11-25T13:17:34+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Was über die rechtsextremistische Gruppe \"Terror 18\" bekannt ist",
+   "desc": "Sie sind fast noch Kinder und plant laut Bundesanwaltschaft schwerste Straftaten, etwa auf eine Flüchtlingsunterkunft. Nun gingen Ermittler gegen mutmaßliche Mitglieder der rechtsextremistischen Gruppe \"Terror 18\" vor. Was ist bekannt? Von Max Bauer.",
+   "url": "https://www.tagesschau.de/inland/terror-18-rechtsextremistische-gruppe-100.html",
+   "at": "2026-11-25T13:15:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EU-Haushalt 2027: Europaparlament nimmt Haushalt über knapp 200 Milliarden Euro an",
+   "desc": "200 Milliarden Euro stehen der Europäischen Union 2027 zur Verfügung. Eine große Mehrheit der Abgeordneten des Europaparlaments in Straßburg stimmte für den Haushalt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-haushalt-2027-budget-parlament-roberta-metsola-gxe",
+   "at": "2026-11-25T13:03:52+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Haushaltsdebatte: Friedrich Merz schwört Bevölkerung auf schwierigen Haushalt ein",
    "desc": "Im Bundestag warnt der Kanzler vor schwierigen Etatdebatten in der Zukunft. Die Opposition sieht ein chaotisches Vorgehen bei der Regierung. Das Liveblog zum Nachlesen",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/bundeshaushalt-generaldebatte-bundestag-live",
-   "at": "2026-11-25T11:14:56+00:00"
+   "at": "2026-11-25T11:28:27+00:00"
   },
   {
    "source": "Die Zeit",
@@ -19,7 +33,7 @@
   {
    "source": "Der Spiegel",
    "title": "Bundestag: Friedrich Merz versucht’s mal positiv, die Ränder polarisieren – die Lehren aus der Generaldebatte",
-   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Die Haushaltsdebatte legt offen, wie heikel die Koalition regiert. Und wie schwer es erst 2028 werden könnte. Die Blitz-Analyse.",
+   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Die Haushaltsdebatte legt offen, wie heikel die Koalition regiert. Und wie schwer es erst 2028 werden könnte. Die Blitzanalyse.",
    "url": "https://www.spiegel.de/politik/deutschland/bundestag-so-laeuft-die-generaldebatte-zum-haushalt-live-a-e9f39663-47e8-4835-a192-24bcfe73cc6e",
    "at": "2026-11-25T10:59:00+00:00"
   },
@@ -150,13 +164,6 @@
    "at": "2026-11-25T02:07:59+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Kolumbien: Autobombe verletzt in Kolumbien mindestens 25 Menschen",
-   "desc": "Am Jahrestag des Friedensabkommens mit der Farc hat in Kolumbien eine Autobombe zahlreiche Menschen verletzt. Bewaffnete verschanzen sich mit Geiseln.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/autobombe-villavicencio-meta-farc-emc",
-   "at": "2026-11-25T01:27:33+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Vanessa Emde: Berliner Linke stimmt knapp für Ausschluss aus Fraktion",
    "desc": "Die Berliner Linkenabgeordnete Vanessa Emde wird aus ihrer Fraktion ausgeschlossen. Die angehenden Koalitionspartner atmen auf. Doch der Fall dürfte Rot-Grün-Rot auch in Zukunft belasten.",
@@ -267,13 +274,6 @@
    "desc": "Etwa 198.000 Frauen und Mädchen sowie 82.000 Männern und Jungen wurde im vergangenen Jahr häusliche Gewalt angetan - ein weiterer Anstieg, wie die Lagebilder des BKA zeigen. Besonders auffällig: Immer mehr Frauen werden zudem Opfer von digitaler Gewalt.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/gewalt-gegen-frauen-lagebericht-100.html",
    "at": "2026-11-24T13:31:58+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundeshaushalt 2027: Klingbeil sieht \"wichtige Zukunftsinvestitionen\"",
-   "desc": "Zu Beginn der Haushaltsberatungen im Bundestag hat Finanzminister Klingbeil den geplanten Rekordetat verteidigt. Es gehe um Spielräume für eine \"gute Zukunft\". Harsche Kritik kommt von der Opposition.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
-   "at": "2026-11-24T13:10:35+00:00"
   }
  ]
 }

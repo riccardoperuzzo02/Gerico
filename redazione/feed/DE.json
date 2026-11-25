@@ -1,7 +1,42 @@
 {
  "code": "DE",
- "asOf": "2026-11-25T05:17:36+00:00",
+ "asOf": "2026-11-25T07:17:34+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Bundeshaushalt: Was mit den 561 Milliarden passiert",
+   "desc": "Panzer, Drohnen, Bürgergeld: Die Bundesregierung plant in ihrem Haushalt Rekordausgaben für das kommende Jahr. Wir zeigen, wohin das Geld fließt.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/haushaltsausgaben-ministerien-verteilung-datenanalyse",
+   "at": "2026-11-25T07:01:43+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Heftiger Schlagabtausch bei Generaldebatte erwartet",
+   "desc": "Kanzler Merz im Fokus: Bei der Haushaltswoche im Bundestag wird heute der Etat des Kanzleramts verhandelt. Traditionell eine Gelegenheit für die Opposition, mit der Regierung abzurechnen. Heftig gestritten werden könnte über die neuen Schulden.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-150.html",
+   "at": "2026-11-25T06:32:57+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Geopolitik : Versuchen wir es doch mal mit Demokratie",
+   "desc": "Von Putin, Trump und Xi abgestoßen, besinnen sich die Wähler auf die Stärke der liberalen Ordnung. Das ist eine Chance für Europa.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/autokratie-shenzhen-gipfel-koalition-der-willigen-ungarn-serbien",
+   "at": "2026-11-25T06:28:35+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "11KM-Podcast: Abschiebezentren in Ruanda: Die nächste Stufe der EU-Asylpolitik",
+   "desc": "Deutschland und vier weitere EU-Staaten wollen abgelehnte Asylbewerber nach Ruanda abschieben. 11KM analysiert, wohin sich die europäische Migrationspolitik gerade entwickelt.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-abschiebezentren-100.html",
+   "at": "2026-11-25T06:11:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Generaldebatte im Bundestag: Grüne werfen Bundesregierung Tricks beim Haushalt vor",
+   "desc": "Die Grünen haben vor der Generaldebatte im Bundestag Kritik am Haushaltsentwurf der Bundesregierung geübt. Die Koalition wolle »die Menschen für dumm verkaufen«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/schuldenbremse-bundesregierung-haushalt-verschuldung-friedrich-merz-gxe",
+   "at": "2026-11-25T06:02:34+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "NS-Frauenverbände: Kinder, Küche, Krieg: Frauen im Nationalsozialismus",
@@ -101,13 +136,6 @@
    "at": "2026-11-24T19:54:51+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Rudy Giuliani: Trump verleiht Rudy Giuliani höchste zivile Auszeichnung der USA",
-   "desc": "Mit der höchsten zivilen Auszeichnung der USA hat der US-Präsident seinen Vertrauten Rudy Giuliani geehrt. Es geht um seine Arbeit nach dem 11. September 2001.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/rudy-giuliani-freiheitsmedaille-donald-trump-9-11",
-   "at": "2026-11-24T19:41:39+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Verbraucherschützer haben die smarte Brille im Blick",
    "desc": "Verbraucherschützer gehen juristisch gegen KI-Brillen von Meta und Ray-Ban vor. Der Vorwurf: Mit smarten Brillen lassen sich Fotos und Videos aufnehmen, ohne dass andere Menschen das bemerken. Auch Nutzern könnten Bußgelder drohen. Von Jens Eberl.",
@@ -122,25 +150,11 @@
    "at": "2026-11-24T18:47:32+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "EU-Kommission: EU fordert von Deutschland Nachbesserungen beim Bundeshaushalt",
-   "desc": "Die EU-Kommission fürchtet, dass Deutschland 2027 durch neue Schulden die Vorgaben für die Nettoausgaben verfehlt. Die Bundesregierung soll deshalb den Haushalt anpassen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-kommission-deutschland-nettoausgaben-bundeshaushalt-2027",
-   "at": "2026-11-24T18:39:49+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Polizei vermutet Destabilisierung als Ziel der Drohmails gegen Schulen",
    "desc": "Die per Mail verschickten Bombendrohungen haben am Montag deutlich mehr Schulen erreicht als zunächst angenommen. Die Polizei vermutet eine gezielte Aktion zur Verunsicherung.",
    "url": "https://www.tagesschau.de/inland/drohmails-schulen-gdp-destabilisierung-100.html",
    "at": "2026-11-24T18:39:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Ukraine benötigt 2027 Finanzhilfen in Höhe von 115 Milliarden Euro",
-   "desc": "Der Ukraine fehlen 2027 trotz Zusagen der EU rund 25 Milliarden Euro im Haushalt. Polen wirft Russland vorsätzliche Verletzung seines Luftraums vor. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-24T18:28:43+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -253,34 +267,6 @@
    "desc": "Ein maskierter Mann hat eine Sitzung der Grünen im nordrhein-westfälischen Schwerte angegriffen. Laut Polizei wurden mehrere Menschen leicht verletzt. Die Ermittler prüfen eine politisch motivierte Tat.",
    "url": "https://www.spiegel.de/politik/deutschland/schwerte-bei-dortmund-unbekannter-stuermt-offenbar-gruenen-sitzung-mehrere-menschen-im-krankenhaus-a-0f296213-39b0-4fdf-a77a-f03707044024",
    "at": "2026-11-24T08:26:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Worum es in der Haushaltswoche im Bundestag geht",
-   "desc": "2027 will die Bundesregierung in ihrem Haushalt 560 Milliarden Euro ausgeben. Doch dafür muss der Bundestag dem Etat zustimmen. Deshalb geht es in dieser Woche noch einmal ums Ganze. Von Jan-Peter Bartels.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-haushaltswoche-114.html",
-   "at": "2026-11-24T06:47:59+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Die Linke: Wie Vanessa Emde die Partei spaltet",
-   "desc": "Die Berliner Linkenführung will die Israelgegnerin Vanessa Emde aus der Fraktion werfen. Aber für viele in der Partei ist die Neuköllnerin mittlerweile eine Heldin.",
-   "url": "https://www.spiegel.de/politik/deutschland/die-linke-wie-vanessa-emde-die-partei-spaltet-a-f1b924ce-32b4-4478-8bc8-d6dfeab846e9",
-   "at": "2026-11-24T06:47:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "BSW: Sara Wagenknecht will Streit über Umgang mit der AfD befrieden",
-   "desc": "Kuschelkurs oder klare Distanz? Über den Umgang mit der AfD ist im BSW ein heftiger Streit entbrannt. Parteigründerin Sahra Wagenknecht hofft nun auf einen Kompromiss.",
-   "url": "https://www.spiegel.de/politik/deutschland/bsw-bundesparteitag-in-dresden-aenderungen-an-leitantrag-bsw-will-streit-ueber-umgang-mit-der-afd-befrieden-a-8f9d7605-f39e-4805-be85-659d368f9b7c",
-   "at": "2026-11-24T06:44:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "11KM-Podcast: Machtmissbrauch an Musikhochschulen",
-   "desc": "Studierende an Musikhochschulen berichten von Machtmissbrauch und teils auch sexuellen Übergriffen durch ihre Dozenten. Der Podcast 11KM erklärt, warum diese Orte dafür besonders anfällig sind.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-machtmissbrauch-musikhochschulen-100.html",
-   "at": "2026-11-24T06:20:48+00:00"
   }
  ]
 }

@@ -1,13 +1,55 @@
 {
  "code": "US",
- "asOf": "2026-11-25T05:17:36+00:00",
+ "asOf": "2026-11-25T07:17:34+00:00",
  "items": [
+  {
+   "source": "CBS News",
+   "title": "Small plane crash off Mississippi kills 6, including 2 children",
+   "desc": "Six people, including two children, have been found dead after a plane crashed off the coast of Mississippi, according to the Coast Guard.",
+   "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/",
+   "at": "2026-11-25T06:45:39+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
+   "desc": "Senegal won the Africa Cup on the field in Morocco in January and then lost it in a legal case in March because its players walked off the field in protest in second-half stoppage time.",
+   "url": "https://www.npr.org/2026/11/25/nx-s1-6053783/africa-cup-senegal-morocco",
+   "at": "2026-11-25T06:43:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Abrego Garcia Voluntarily Leaves U.S., Ending 20-Month Legal Fight",
+   "desc": "Kilmar Armando Abrego Garcia, who was wrongfully deported last year, has left for Spain. He faced the prospect that the Trump administration might deport him to Liberia.",
+   "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html",
+   "at": "2026-11-25T06:43:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "AI debt worries grow as Nvidia rebound masks Big Tech spending squeeze",
+   "desc": "Big Tech could find it increasingly tough to secure funding from debt markets critical to the AI build-out, as lenders become pickier over corporate bonds.",
+   "url": "https://www.cnbc.com/2026/11/25/ai-debt-big-tech-spending-nvidia.html",
+   "at": "2026-11-25T06:29:46+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Puerto Rico’s Jennifer Barreto Wins Miss Universe on Home Turf",
+   "desc": "The organizers of the pageant said Costa Rica would host next year, contradicting a rival camp that chose Vietnam. They are locked in a bitter fight for control of Miss Universe.",
+   "url": "https://www.nytimes.com/2026/11/25/us/miss-universe-winner-puerto-rico.html",
+   "at": "2026-11-25T06:24:54+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Fuel Leak at Power Plant Near Honolulu Has Local Officials Fuming",
    "desc": "The mayor and the governor have had harsh words in recent days for the plant’s operator, and Gov. Josh Green signed an executive order requiring immediate reporting of any oil spill.",
    "url": "https://www.nytimes.com/2026/11/24/us/h-power-fuel-leak-oahu-hawaii.html",
-   "at": "2026-11-25T04:52:50+00:00"
+   "at": "2026-11-25T06:21:48+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Crypto talent will return ‘when AI implodes,’ Arthur Hayes says",
+   "desc": "Maelstrom CIO Arthur Hayes expects the AI trade to face headwinds in the second half of 2027, with startup talent potentially returning to crypto afterward.",
+   "url": "https://www.cnbc.com/2026/11/25/talents-crypto-ai-investment.html",
+   "at": "2026-11-25T06:09:44+00:00"
   },
   {
    "source": "CBS News",
@@ -22,13 +64,6 @@
    "desc": "Maps of the planned lead azide detonation in Middletown show the shaded area stretching from near Burlington toward Macon, Missouri, by noon Wednesday. The forecasts will change with the weather.",
    "url": "https://www.cbsnews.com/news/maps-show-how-far-lead-dust-from-about-5-tons-of-iowa-explosives-could-spread/",
    "at": "2026-11-25T04:30:03+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Abrego Garcia Voluntarily Leaves U.S., Ending 20-Month Legal Fight",
-   "desc": "Kilmar Armando Abrego Garcia, who was wrongfully deported last year, has left for Spain. He faced the prospect that the Trump administration might deport him to Liberia.",
-   "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html",
-   "at": "2026-11-25T04:22:46+00:00"
   },
   {
    "source": "CNBC",
@@ -71,13 +106,6 @@
    "desc": "Tucker Collins, 19, was documenting a protest in downtown Los Angeles when, according to the lawsuit, he was shot in the eye with a projectile by a federal agent.",
    "url": "https://www.nytimes.com/2026/11/24/us/los-angeles-no-kings-protest-lawsuit.html",
    "at": "2026-11-25T03:03:26+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Op-ed: Trump’s Nvidia board intervention put a price on national security. Our adversaries will take note",
-   "desc": "President Trump's decision to force Nvidia's board to bring back Jensen Huang as CEO is exactly what Beijing, Tehran, and Moscow would want to see.",
-   "url": "https://www.cnbc.com/2026/11/24/trump-nvidia-jensen-huang-national-security-china-chips.html",
-   "at": "2026-11-25T02:50:08+00:00"
   },
   {
    "source": "CNBC",
@@ -445,13 +473,6 @@
   },
   {
    "source": "CNBC",
-   "title": "AG Blanche, FBI’s Patel dodge questions about Jensen Huang investigation",
-   "desc": "The AG and FBI director evaded answering reporters' questions about details of an investigation Trump said resolved security concerns about Jensen Huang.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
-   "at": "2026-11-24T19:19:12+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
    "desc": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
    "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
@@ -491,13 +512,6 @@
    "desc": "Candace Dellacona, an estates and trust lawyer who hosts the podcast \"The Sandwich Generation Survival Guide,\" joins \"CBS Mornings\" to discuss how working caregivers can take care of themselves.",
    "url": "https://www.cbsnews.com/video/how-working-caregivers-can-take-care-of-themselves/",
    "at": "2026-11-24T15:15:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Here's how one robotaxi company is working to avoid accidents",
-   "desc": "Kris Van Cleave looks at how Nuro, a new autonomous vehicle company, tests their cars to avoid accidents and traffic jams.",
-   "url": "https://www.cbsnews.com/video/heres-how-one-robotaxi-company-is-working-to-avoid-accidents/",
-   "at": "2026-11-24T15:09:49+00:00"
   },
   {
    "source": "CBS News",
@@ -560,13 +574,6 @@
    "title": "For workplace culture champions, Jensen Huang's return is 'unfathomable'",
    "desc": "Some who have worked to promote diversity and inclusion in Silicon Valley say Jensen Huang's reinstatement as Nvidia's CEO sends a message that all that matters is money.",
    "url": "https://www.npr.org/2026/11/24/nx-s1-6051583/nvidia-huang-dei-trump-women",
-   "at": "2026-11-24T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
-   "desc": "A landmark lawsuit in Congo sees 27 residents accuse a Chinese-owned copper and cobalt mine of poisoning their community and the government of failing to protect them.",
-   "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
    "at": "2026-11-24T10:00:00+00:00"
   },
   {

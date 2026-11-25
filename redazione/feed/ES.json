@@ -1,7 +1,14 @@
 {
  "code": "ES",
- "asOf": "2026-11-25T05:17:36+00:00",
+ "asOf": "2026-11-25T07:17:34+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "Inmigración",
+   "desc": "Este martes llegaron 2.100 inmigrantes en 14 cayucos, entre ellos un fallecido y una niña de cuatro días nacida en el Atlántico, la cifra más alta para un solo día desde que hay registros en España Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/24/6b05f20121efa017398b4587.html",
+   "at": "2026-11-25T06:47:21+00:00"
+  },
   {
    "source": "El País",
    "title": "¿A quién votan los inmigrantes? Parecido a los españoles, pero apenas influyen en el resultado",
@@ -67,6 +74,62 @@
   },
   {
    "source": "20minutos",
+   "title": "Pedro Sánchez: \"La vivienda será nuestra gran prioridad, hay que construir más y regular contra los que especulan\"",
+   "desc": "El presidente del Gobierno concede esta entrevista a '20minutos' en la recta final de la campaña de las elecciones generales del 29-N.",
+   "url": "https://www.20minutos.es/nacional/pedro-sanchez-vivienda-sera-nuestra-gran-prioridad-hay-que-construir-mas-regular-contra-los-que-especulan_7065391_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La lista de medidas sociales que el Gobierno ha anunciado antes del 29-N: cuáles son de efecto inmediato y cuáles van a la Diputación",
+   "desc": "El Gobierno ha aprobado decenas de medidas agrupadas en reales decretos-ley, reales decretos y acuerdos del Consejo de Ministros.",
+   "url": "https://www.20minutos.es/nacional/lista-medidas-sociales-que-gobierno-ha-anunciado-antes-29-n-cuales-son-efecto-inmediato-cuales-van-diputacion_7065107_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Todo sobre los nuevos permisos por duelo y paternidad: ¿cuándo entran en vigor? ¿Qué ocurre si cambia el Gobierno?",
+   "desc": "El Gobierno ha aprobado este martes en el Consejo de Ministros un nuevo Real Decreto Ley que amplía estos dos permisos y que tendrá que ser convalidado ahora por la Diputación Permanente.",
+   "url": "https://www.20minutos.es/nacional/todo-sobre-los-nuevos-permisos-por-duelo-paternidad-cuando-entran-vigor-que-ocurre-si-cambia-gobierno_7065114_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Efecto 'underdog' vs. efecto 'bandwagon': qué dice la psicología sobre votar a quien lidera las encuestas... o al que va rezagado",
+   "desc": "¿Nos gusta sumarnos al que va a ganar o, por el contrario, como pasa muchas veces en el deporte, animamos al más pequeño, al que va perdiendo?",
+   "url": "https://www.20minutos.es/nacional/efecto-underdog-vs-efecto-bandwagon-que-dice-psicologia-sobre-votar-quien-lidera-las-encuestas-que-va-rezagado_7064524_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Test de afinidad política: ¿A qué partido político eres más afín de cara a las elecciones generales del 29N?",
+   "desc": "Descubre qué propuestas electorales coinciden con tus ideas en materia de vivienda, pensiones, sanidad o inmigración con el test de 20minutos.",
+   "url": "https://www.20minutos.es/nacional/test-afinidad-politica-que-partido-politico-voto-elecciones-generales-2026-29n_7065126_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Figaredo (Vox): \"Si traen productos de fuera, que se produzcan en iguales condiciones que en España\"",
+   "desc": "Asegura que en España se consumen menos productos frescos y aceite de oliva y más pasta, arroz y aceite de girasol porque los españoles no llegan a fin de mes.",
+   "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/jose-maria-figaredo-vox-es-mentira-que-los-espanoles-no-quieran-trabajar-campo-que-no-quieren-son-salarios-miseria_7063336_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Más de 100.000 mujeres viven bajo el radar policial por maltrato y solo es la punta del iceberg de la violencia machista en España",
+   "desc": "Con motivo del 25-N, Día de la Eliminación de la Violencia contra la Mujer, 20minutos hace una radiografía de la violencia machista que afecta a una de cada tres mujeres de 16 años en España e ilustra los retos que se mantienen para erradicarla.",
+   "url": "https://www.20minutos.es/nacional/mas-100-000-mujeres-viven-bajo-radar-policial-por-maltrato-solo-es-punta-iceberg-violencia-machista-espana_7063659_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "\"Que un sistema falle no sé cuántas veces al año no existe\": el tren puede 'copiar' al avión más control o mejores carreras, no tecnología",
+   "desc": "Dos expertos aeronáuticos analizan qué pueden aportar las directivas de AENA y de SENESA al comité de expertos sobre el sector ferroviario que conformó Cuerpo la semana pasada y del que se espera un primer catálogo de medidas inmediatas en los próximos días.",
+   "url": "https://www.20minutos.es/nacional/que-un-sistema-falle-no-se-cuantas-veces-ano-no-existe-tren-puede-copiar-avion-mas-control-mejores-carreras-no-tecnologia_7065246_0.html",
+   "at": "2026-11-25T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
    "title": "Las hermanas Mirabal: la historia que inspiró el Día Internacional de la Eliminación de la Violencia contra la Mujer",
    "desc": "“Si me matan, sacaré los brazos de la tumba y seré más fuerte” . Los años 60 evocan ruptura, revolución y transformación. Una etapa de contestación y cuestionamiento de las estructuras políticas, sociales, culturales y morales que habían dominado hasta entonces. Pero también fue época de contradicciones, donde se entremezclaban por cada orilla las luchas por la libertad y las represiones. Minerva Mirabal sabía que moriría . Pero antepuso su libertad a la propia vida, porque no hay vida sin libertad y por esta ella sangró, luchó y pervivió. A las hermanas Mirabal se las conoce como Las Mariposas. Era el nombre en clave que usaban para enviarse mensajes clandestinos. Crecieron en una familia rural acomodada de Salcedo, en República Dominicana. Al padre le habían salido bien los negocios y pudieron recibir una buena educación. Pero cuando en 1930 Trujillo llegó al poder , la familia perdió ",
    "url": "https://www.20minutos.es/nacional/las-hermanas-mirabal-historia-que-inspiro-dia-internacional-eliminacion-violencia-contra-mujer_7065409_0.html",
@@ -81,20 +144,6 @@
   },
   {
    "source": "20minutos",
-   "title": "Pedro Sánchez: \"La vivienda será nuestra gran prioridad, hay que construir más y regular contra los que especulan\"",
-   "desc": "El presidente del Gobierno concede esta entrevista a '20minutos' en la recta final de la campaña de las elecciones generales del 29-N.",
-   "url": "https://www.20minutos.es/nacional/pedro-sanchez-vivienda-sera-nuestra-gran-prioridad-hay-que-construir-mas-regular-contra-los-que-especulan_7065391_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "\"Que un sistema falle no sé cuántas veces al año no existe\": el tren puede 'copiar' al avión más control o mejores carreras, no tecnología",
-   "desc": "Dos expertos aeronáuticos analizan qué pueden aportar las directivas de AENA y de SENESA al comité de expertos sobre el sector ferroviario que conformó Cuerpo la semana pasada y del que se espera un primer catálogo de medidas inmediatas en los próximos días.",
-   "url": "https://www.20minutos.es/nacional/que-un-sistema-falle-no-se-cuantas-veces-ano-no-existe-tren-puede-copiar-avion-mas-control-mejores-carreras-no-tecnologia_7065246_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Debate oportunidad, debate peligroso",
    "desc": "El último debate electoral reunirá a los cuatro candidatos en un duelo decisivo para movilizar votantes, contener a los rivales y definir sus opciones de gobierno antes de las urnas.",
    "url": "https://www.20minutos.es/nacional/debate-oportunidad-debate-peligroso_7065158_3.html",
@@ -102,44 +151,9 @@
   },
   {
    "source": "20minutos",
-   "title": "Test de afinidad política: ¿A qué partido político eres más afín de cara a las elecciones generales del 29N?",
-   "desc": "Descubre qué propuestas electorales coinciden con tus ideas en materia de vivienda, pensiones, sanidad o inmigración con el test de 20minutos.",
-   "url": "https://www.20minutos.es/nacional/test-afinidad-politica-que-partido-politico-voto-elecciones-generales-2026-29n_7065126_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Todo sobre los nuevos permisos por duelo y paternidad: ¿cuándo entran en vigor? ¿Qué ocurre si cambia el Gobierno?",
-   "desc": "El Gobierno ha aprobado este martes en el Consejo de Ministros un nuevo Real Decreto Ley que amplía estos dos permisos y que tendrá que ser convalidado ahora por la Diputación Permanente.",
-   "url": "https://www.20minutos.es/nacional/todo-sobre-los-nuevos-permisos-por-duelo-paternidad-cuando-entran-vigor-que-ocurre-si-cambia-gobierno_7065114_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La lista de medidas sociales que el Gobierno ha anunciado antes del 29-N: cuáles son de efecto inmediato y cuáles van a la Diputación",
-   "desc": "El Gobierno ha aprobado decenas de medidas agrupadas en reales decretos-ley, reales decretos y acuerdos del Consejo de Ministros.",
-   "url": "https://www.20minutos.es/nacional/lista-medidas-sociales-que-gobierno-ha-anunciado-antes-29-n-cuales-son-efecto-inmediato-cuales-van-diputacion_7065107_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Los problemas de la juventud no empiezan ni acaban con el alquiler",
    "desc": "La precariedad laboral, las barreras educativas y la dificultad para acceder a una vivienda dibujan un futuro incierto para muchos jóvenes. La emancipación no empieza con las llaves de una casa, sino con oportunidades reales.",
    "url": "https://www.20minutos.es/nacional/los-problemas-juventud-no-empiezan-ni-acaban-con-alquiler_7064950_3.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Efecto 'underdog' vs. efecto 'bandwagon': qué dice la psicología sobre votar a quien lidera las encuestas... o al que va rezagado",
-   "desc": "¿Nos gusta sumarnos al que va a ganar o, por el contrario, como pasa muchas veces en el deporte, animamos al más pequeño, al que va perdiendo?",
-   "url": "https://www.20minutos.es/nacional/efecto-underdog-vs-efecto-bandwagon-que-dice-psicologia-sobre-votar-quien-lidera-las-encuestas-que-va-rezagado_7064524_0.html",
-   "at": "2026-11-25T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Más de 100.000 mujeres viven bajo el radar policial por maltrato y solo es la punta del iceberg de la violencia machista en España",
-   "desc": "Con motivo del 25-N, Día de la Eliminación de la Violencia contra la Mujer, 20minutos hace una radiografía de la violencia machista que afecta a una de cada tres mujeres de 16 años en España e ilustra los retos que se mantienen para erradicarla.",
-   "url": "https://www.20minutos.es/nacional/mas-100-000-mujeres-viven-bajo-radar-policial-por-maltrato-solo-es-punta-iceberg-violencia-machista-espana_7063659_0.html",
    "at": "2026-11-25T04:00:00+00:00"
   },
   {
@@ -190,13 +204,6 @@
    "desc": "\"Sánchez se apropió del sustantivo 'resistencia' como eslogan. Pero han sido las instituciones las que han tenido que resistirle a él\" Leer",
    "url": "https://www.elmundo.es/espana/2026/11/24/6b05e618fc6c830d1b8b457a.html",
    "at": "2026-11-24T21:47:31+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Inmigración",
-   "desc": "Ayer llegaron 1.282 migrantes. En el mes de noviembre más de 900 menores arribaron en Canarias Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/24/6b05f20121efa017398b4587.html",
-   "at": "2026-11-24T21:45:10+00:00"
   },
   {
    "source": "20minutos",
@@ -374,20 +381,6 @@
    "at": "2026-11-24T15:17:47+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "El juez del caso Leire pide al PSOE que aporte toda la documentación sobre el fichaje de abogados tras detectar que está incompleta",
-   "desc": "El magistrado solicita las notas de encargo sobre las que se emitieron las facturas que, hasta el momento, no han sido aportadas.",
-   "url": "https://www.20minutos.es/nacional/juez-caso-leire-diez-pide-psoe-que-amplie-documentacion-presentada-sobre-contratacion-abogados_7065220_0.html",
-   "at": "2026-11-24T14:48:56+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Bruselas amenaza a España con un expediente por exceso de gasto público en 2026",
-   "desc": "La Comisión Europea alerta demás de que la deuda española rozará el 100% del PIB mientras el gasto corriente desborda el margen comunitario.",
-   "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/bruselas-amenaza-espana-con-un-expediente-por-superar-techo-gasto-2026-eleva-nivel-critico-por-alta-tasa-pobreza_7064886_0.html",
-   "at": "2026-11-24T14:48:28+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "España",
    "desc": "\"No hablo desde el rencor, no quiero venganza, pero el presidente ha actuado con Bildu con mezquindad y oportunismo\", dice Quico Tomás y Valiente a la salida de prisión de Jon Bienzobas, tras \"no arrepentirse ni reparar el daño causado\", señala Leer",
@@ -400,13 +393,6 @@
    "desc": "También ordena investigar si la forma en que Koldo pagó su defensa buscó eludir el bloqueo de los fondos por parte del TS para sus responsabilidades por el 'caso Mascarillas' Leer",
    "url": "https://www.elmundo.es/espana/2026/11/24/6b059acafc6c835c2b8b4596.html",
    "at": "2026-11-24T14:20:28+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Comprar una vivienda exige más del 45% de los ingresos en nueve capitales de provincia",
-   "desc": "Al descontar el efecto de la inflación, el precio medio se mantiene todavía un 31% por debajo del máximo de la burbuja, pese a que el esfuerzo para comprar supera el nivel considerado \"razonable\", según Tinsa.",
-   "url": "https://www.20minutos.es/nacional/comprar-una-vivienda-exige-mas-45-los-ingresos-nueve-capitales-provincia_7065124_0.html",
-   "at": "2026-11-24T14:18:30+00:00"
   },
   {
    "source": "El Mundo",
@@ -431,28 +417,7 @@
   },
   {
    "source": "20minutos",
-   "title": "El Gobierno aprueba la ampliación de los permisos por fallecimiento y crea uno nuevo por cuidados paliativos y eutanasia",
-   "desc": "El Ejecutivo recupera una medida que había anunciado hace más de un año y que pactó con los sindicatos en diciembre de 2025, pero que no había llevado adelante al no contar con mayoría suficiente en el Congreso.",
-   "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/gobierno-aprueba-ampliacion-los-permisos-por-fallecimiento-crea-uno-nuevo-por-cuidados-paliativos-eutanasia_7065152_0.html",
-   "at": "2026-11-24T13:04:33+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Hacienda aprueba una rebaja para los autónomos en el IRPF de 465 millones y un nuevo régimen de IVA",
-   "desc": "El Gobierno crea nuevo régimen especial de recaudación en estimación directa para pequeños empresarios y profesionales con facturación de menos de 85.000 euros. No estarán obligados a presentar los pagos fraccionados (autoliquidaciones trimestrales) y pasarán de cuatro declaraciones a una.",
-   "url": "https://www.20minutos.es/lainformacion/economia-y-finanzas/hacienda-aprueba-una-rebaja-para-los-autonomos-irpf-465-millones-un-nuevo-regimen-iva_7065106_0.html",
-   "at": "2026-11-24T12:19:34+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El Gobierno se adelanta un mes y prorroga ya las ayudas al transporte para 2027 antes de quedar en funciones tras el 29-N",
-   "desc": "Se mantiene el abono transporte gratis hasta 14 años y el descuento del 50% para los menores de 26. El descuento del 20% del abono general que debe completarse con aportación autonómica podría bajar al 10% a partir de julio si así lo estipula la Airef.",
-   "url": "https://www.20minutos.es/nacional/gobierno-se-adelanta-un-mes-prorroga-ya-las-ayudas-transporte-para-2027-antes-quedar-funciones-tras-29-n_7065071_0.html",
-   "at": "2026-11-24T11:27:17+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Cintia Rocho confirma que el exjuez ligado a las cloacas le llamó para \"eliminar\" a la jueza Biedma: \"Yo no estaba para dar palos a nadie\"",
+   "title": "Cintia Rocho confirma que el exjuez ligado a las cloacas le llamó para \"eliminar\" a la jueza Biedma: \"Yo no estaba para dar palos\"",
    "desc": "La líder del clan de narcotraficantes de Badajoz asegura que Sáenz de Tejada la propuso atacar a la jueza del caso David Sánchez pero ella lo rechazó de plano: \"Le dije que no contara conmigo, que se buscara la vida\".",
    "url": "https://www.20minutos.es/nacional/cintia-rocho-confirma-que-exjuez-ligado-las-cloacas-le-llamo-para-eliminar-jueza-biedma-yo-no-estaba-para-dar-palos-nadie_7065069_0.html",
    "at": "2026-11-24T11:14:38+00:00"
@@ -470,20 +435,6 @@
    "desc": "Los dirigentes fundamentan sus sospechas en el voto en el exterior por la ‘ley de nietos’, el sufragio por correo emitido en España o en el proceso de primarias por el que Sánchez fue designado secretario general del PSOE",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/feijoo-y-ayuso-alimentan-el-fantasma-del-fraude-el-29-n-sanchez-y-la-limpieza-electoral-son-dos-conceptos-contradictorios.html",
    "at": "2026-11-24T09:54:09+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Feijóo critica el proceso de votación exterior: \"Sánchez y la limpieza electoral son conceptos bastante contradictorios\"",
-   "desc": "El líder popular se muestra \"inquieto\" por las urnas de cartón instaladas para depositar los sufragios de los afectados por la 'ley de nietos' pero confía en que los cónsules \"blinden los votos\".",
-   "url": "https://www.20minutos.es/nacional/feijoo-critica-proceso-votacion-exterior-sanchez-limpieza-electoral-son-conceptos-bastante-contradictorios_7064948_0.html",
-   "at": "2026-11-24T09:23:34+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El Gobierno amplía a 20 semanas el permiso por nacimiento a solo cinco días del 29-N",
-   "desc": "El Consejo de Ministros ha aprobado este martes la medida, que también amplía a 34 semanas para familias monoparentales. El decreto ley entra en vigor este jueves, pero tendrá que ser convalidado por la Diputación Permanente después de las elecciones.",
-   "url": "https://www.20minutos.es/nacional/gobierno-amplia-20-semanas-permiso-por-nacimiento_7064962_0.html",
-   "at": "2026-11-24T09:20:33+00:00"
   },
   {
    "source": "El Mundo",
@@ -505,13 +456,6 @@
    "desc": "El fundador de la formación 'morada' participará en el acto de cierre de campaña el viernes en Madrid Leer",
    "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/24/6b054b58e85eceb17f8b459a.html",
    "at": "2026-11-24T08:40:41+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "El tiempo",
-   "desc": "Hay aviso amarillo por acumulación de al menos cinco centímetros de nieve en Asturias (suroccidental, Cordillera Cantábrica y Picos de Europa), León (Cordillera Cantábrica), Lugo y Ourense (montaña), y Zamora (Sanabria) Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/24/6b05393321efa0ec428b458d.html",
-   "at": "2026-11-24T07:14:00+00:00"
   }
  ]
 }

@@ -1,0 +1,34 @@
+{
+ "title": "Ue: dal 1 dicembre limiti all'import di auto ibride da Cina e altri paesi",
+ "section": "economia",
+ "rank": 9,
+ "status": "live",
+ "summary": "Il regolamento dura 200 giorni, fino al 18 giugno 2027, e fissa quote per paese. Per la Cina il tetto transitorio è di 192.000 veicoli.",
+ "article": "Dal 1 dicembre l'Unione europea applica limiti all'importazione di auto ibride dalla Cina e da altri paesi. Il regolamento riguarda le ibride semplici, quelle plug-in e quelle non ricaricabili, ed è stato pubblicato nella Gazzetta ufficiale dell'Ue. Segue l'accordo raggiunto a inizio ottobre a Pechino dal commissario al Commercio, Maroš Šefčovič.\n\nLa misura è temporanea e dura 200 giorni, fino al 18 giugno 2027. Nel periodo transitorio la quota per le auto cinesi è di 192.000 unità; con le misure definitive salirà a 350.000 ibride l'anno. Per il Giappone la quota è di circa 171.000 unità e per la Turchia di circa 126.000. Quando un paese esaurisce la sua quota, le sue ibride non possono più entrare. Sono esclusi Islanda, Liechtenstein, Norvegia, Ucraina, Kenya e un gruppo di paesi in via di sviluppo. Il caso del Regno Unito è ancora aperto.\n\nIl 3 dicembre il testo sulle regole «Made in Europe» passa al Consiglio Competitività: la quota di contenuto europeo richiesta per la preferenza scenderebbe dall'85 al 75 per cento, o al 70 se metà della spesa in ricerca del costruttore è nell'Ue.\n\nIl mercato intanto cresce meno: in ottobre le immatricolazioni di auto in Europa occidentale sono salite del 3,4 per cento, in forte rallentamento rispetto a settembre. Le auto elettriche a batteria hanno una quota del 23,4 per cento nei primi dieci mesi del 2026. La quota di mercato di Stellantis è scesa dal 14,4 al 12,8 per cento. Le fonti non riportano una risposta di Pechino.",
+ "facts": [
+  {"text": "Dal 1 dicembre l'Ue applica quote all'import di auto ibride da Cina e altri paesi, per 200 giorni.", "who": ["ANSA", "Il Post"]},
+  {"text": "La quota transitoria per le ibride cinesi è di 192.000 unità.", "who": ["ANSA"]},
+  {"text": "In ottobre le immatricolazioni in Europa sono salite del 3,4 per cento.", "who": ["ANSA"]}
+ ],
+ "view": "Le quote e le date del regolamento sono fissate nel testo. Non si sa come risponderà la Cina.\n\nLa misura ha una durata limitata e rimanda a quella definitiva. Da guardare: il Consiglio Competitività del 3 dicembre e il tasso di utilizzo delle quote.",
+ "open": [
+  "Come risponderà il governo cinese?",
+  "Il Regno Unito entrerà nel quadro «Made in Europe»?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/24/da-dicembre-scattano-i-limiti-dellue-allimport-di-ibride-dalla-cina-e-da-altri-paesi_56f84908-f866-4828-93f1-7b756a779046.html", "angle": "Quote per paese, durata e esenzioni.", "date": "2026-11-24"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/24/unione-europea-limitazioni-importazioni-auto-ibride-cina/", "angle": "Il limite temporaneo alle importazioni di ibride da alcuni paesi, tra cui la Cina.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Auto", "Cina", "Dazi", "Unione europea"],
+ "themes": [],
+ "places": ["EU", "CN"],
+ "figure": {"value": "192.000", "label": "la quota transitoria di auto ibride cinesi"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: dal 1 dicembre quote Ue sulle ibride importate."}
+ ]
+}

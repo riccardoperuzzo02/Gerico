@@ -1,0 +1,41 @@
+{
+ "title": "Nvidia: Huang si scusa con i dipendenti, Trump parla di una possibile grazia",
+ "section": "tecnologia",
+ "rank": 3,
+ "status": "live",
+ "summary": "L'amministratore delegato di Nvidia ha parlato di «errori terribili» davanti ai dipendenti e dice di seguire una terapia. Trump dice che concederebbe la grazia a Huang «se necessario».",
+ "article": "Martedì Jensen Huang, amministratore delegato di Nvidia, ha chiesto scusa ai dipendenti in una riunione nella sede californiana. Ha parlato di «errori terribili» e ha detto di avere violato il codice di condotta dell'azienda, di seguire una terapia e di voler cambiare comportamento. Lo riferiscono fonti presenti all'incontro, una delle quali anonima.\n\nHuang si era dimesso il 12 novembre dopo lo scandalo legato a una relazione extraconiugale con una donna sospettata di essere un'informatrice del governo cinese. Il consiglio di amministrazione lo ha reintegrato il 23 novembre, dopo le forti pressioni dell'amministrazione di Donald Trump. Ai dipendenti Huang ha detto anche che l'azienda non ha bisogno di un piano di successione.\n\nHuang ha promesso che le risorse umane raccoglieranno ogni mese le valutazioni dei dipendenti sul suo comportamento e le riferiranno al consiglio. Una violazione del codice di condotta, ha spiegato, non porta automaticamente al licenziamento ma va valutata caso per caso.\n\nIl caso ha un lato politico. Trump ha detto che concederebbe la grazia a Huang «se necessario» e ha chiesto al manager di dire la verità davanti al Congresso senza invocare il Quinto emendamento. Il ministro della Giustizia, Todd Blanche, ha rifiutato di dire se Huang sia mai stato indagato e di commentare l'affermazione di Trump secondo cui l'amministrazione avrebbe condotto un'indagine «approfondita». Esponenti di entrambi i partiti hanno sollevato dubbi su possibili operazioni di insider trading legate alla vicenda: secondo alcune ricostruzioni, un guadagno fino a 15 milioni di dollari. L'ex segretaria di Stato Hillary Clinton ha parlato di «Supergate».\n\nIn Borsa il titolo è sceso. Martedì Nvidia ha perso il 7,4 per cento a Wall Street, restituendo in parte il rialzo di lunedì, quando era salita dopo il ritorno di Huang.",
+ "facts": [
+  {"text": "Huang ha parlato di «errori terribili» davanti ai dipendenti e ha detto di seguire una terapia.", "who": ["Il Post", "ANSA"]},
+  {"text": "Trump ha detto che concederebbe la grazia a Huang se necessario.", "who": ["ANSA"]},
+  {"text": "Il ministro della Giustizia Todd Blanche non ha confermato se Huang sia stato indagato.", "who": ["Al Jazeera"]},
+  {"text": "Il titolo Nvidia ha perso il 7,4 per cento a Wall Street martedì.", "who": ["ANSA"]},
+  {"text": "Huang si era dimesso il 12 novembre ed è stato reintegrato il 23.", "who": ["Il Post"]}
+ ],
+ "view": "È accertato che Huang ha chiesto scusa e che il consiglio lo ha reintegrato. Resta aperto se esistano indagini e se le accuse di insider trading abbiano un fondamento: finora sono ricostruzioni e dichiarazioni politiche.\n\nLa vicenda mette insieme governance di un'azienda da cui dipende gran parte del settore dell'intelligenza artificiale e rapporti con la Casa Bianca. Da guardare: un'eventuale audizione al Congresso e come reagisce il titolo.",
+ "open": [
+  "Huang è mai stato indagato e da chi?",
+  "Il Congresso convocherà Huang in audizione?",
+  "Le accuse di insider trading hanno un fondamento?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/25/jensen-huang-scuse-nvidia/", "angle": "Le scuse di Huang ai dipendenti, la terapia e le misure promesse.", "date": "2026-11-25"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/25/nvidia-trump-concederei-la-grazia-a-jensen-huang-se-necessario_f1d734e5-21d1-4571-8eaa-01dbe197c52c.html", "angle": "Trump sulla possibile grazia e il calo del titolo.", "date": "2026-11-25"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/24/todd-blanche-declines-to-confirm-if-nvidias-jensen-huang-was-investigated", "angle": "Il ministro della Giustizia non conferma indagini su Huang.", "date": "2026-11-24"},
+  {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html", "angle": "La riunione con i dipendenti e il piano di successione.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Nvidia", "Intelligenza artificiale", "Stati Uniti"],
+ "themes": ["borse-ia"],
+ "places": ["US"],
+ "city": {"name": "Santa Clara", "lat": 37.35, "lon": -121.96},
+ "figure": {"value": "15 mln $", "label": "il guadagno ipotizzato in alcune ricostruzioni"},
+ "prev":"2026-11-24-us-nvidia-huang-reintegro-megaspeed",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: Huang si scusa con i dipendenti, Trump parla di grazia."}
+ ]
+}

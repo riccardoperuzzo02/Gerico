@@ -1,0 +1,35 @@
+{
+ "title": "Israele: Eisenkot firma il primo accordo di coalizione con Yisrael Beytenu",
+ "section": "mondo",
+ "rank": 6,
+ "status": "live",
+ "summary": "Il partito Yashar di Gadi Eisenkot e quello di Avigdor Lieberman hanno firmato il primo patto di coalizione dopo il voto. I Democratici sospendono i colloqui con Yashar.",
+ "article": "Mercoledì il partito Yashar di Gadi Eisenkot, incaricato di formare il governo israeliano, ha annunciato un accordo di coalizione con Yisrael Beytenu, il partito di Avigdor Lieberman. È il primo patto firmato dopo le elezioni del 27 ottobre, che non hanno dato a nessuno la maggioranza di 61 seggi alla Knesset, il parlamento israeliano.\n\nIl patto sposta pochi seggi ma conta politicamente: Yashar ne ha 21 e Yisrael Beytenu 7. L'alleanza del Likud di Benjamin Netanyahu, con i partiti di estrema destra e ultraortodossi, ne ha 53; il blocco di Eisenkot, compreso Lieberman, 48. I partiti arabi hanno 19 seggi e i Democratici 8. Lieberman, già ministro nei governi di Netanyahu, dice di aspettarsi che Eisenkot presenti una coalizione con una «chiara maggioranza ebraica» entro la fine della prossima settimana.\n\nI Democratici, guidati da Yair Golan, hanno sospeso i colloqui con Yashar per una situazione di «stallo»; Golan preferisce un governo senza Netanyahu ma con i partiti arabi. Yashar e Likud restano divisi sui punti chiave, anche dopo gli ultimi colloqui sulla questione giudiziaria. Il partito ultraortodosso Giudaismo unito nella Torah chiederà l'approvazione dei suoi rabbini prima di aprire formalmente i colloqui con il blocco di Eisenkot.\n\nEisenkot ha tempo fino al 6 dicembre per formare un governo, con un mandato di 28 giorni che può essere esteso di 14. Se fallisce, l'incarico passa a Netanyahu; se falliscono entrambi, si torna al voto l'anno prossimo.",
+ "facts": [
+  {"text": "Yashar e Yisrael Beytenu hanno firmato il primo accordo di coalizione dopo le elezioni del 27 ottobre.", "who": ["Al Jazeera", "Times of Israel"]},
+  {"text": "I Democratici di Golan hanno sospeso i colloqui con Yashar per lo stallo.", "who": ["Al Jazeera", "Times of Israel"]},
+  {"text": "Eisenkot ha tempo fino al 6 dicembre per formare il governo, estendibile di 14 giorni.", "who": ["Al Jazeera"]}
+ ],
+ "view": "Si può dire con certezza che esiste un primo accordo e che mancano ancora i numeri per un governo. Non è chiaro con quale combinazione Eisenkot possa arrivare a 61 seggi.\n\nLa scelta tra Likud e partiti arabi decide la forma di qualsiasi coalizione. Da guardare: la risposta dei rabbini di Giudaismo unito nella Torah e il 6 dicembre.",
+ "open": [
+  "Con quali partiti Eisenkot arriverà a 61 seggi?",
+  "Il Likud entrerà in un governo di unità?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/25/israels-eisenkot-secures-first-coalition-partner-in-bid-to-form-government", "angle": "L'accordo con Yisrael Beytenu, i seggi e le scadenze del mandato.", "date": "2026-11-25"},
+  {"name": "Times of Israel", "kind": "giornale", "country": "Israele", "area": "Medio Oriente", "url": "https://www.timesofisrael.com/democrats-party-declares-suspension-of-coalition-talks-with-yashar-amid-stalemate/", "angle": "La sospensione dei colloqui dei Democratici e le trattative con i partiti ultraortodossi.", "date": "2026-11-25"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Israele", "Medio Oriente", "Governo"],
+ "themes": [],
+ "places": ["IL"],
+ "figure": {"value": "21 seggi", "label": "i seggi di Yashar alla Knesset"},
+ "prev":"2026-11-23-il-eisenkot-likud-coalizione-coloni",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: primo accordo di coalizione per Eisenkot."}
+ ]
+}

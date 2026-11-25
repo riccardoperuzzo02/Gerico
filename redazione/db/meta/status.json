@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: le ricerche su indice Ifo e prezzi Case-Shiller di oggi danno solo dati di anni passati. Aggiunto all'agenda un evento (scorte di petrolio Api)."
   },
   "lastPublish": {
-    "at": "2026-11-24T18:47:13+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (405 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-25T07:30:21+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (416 parole); titoli.py: nessun titolo nel database; cancellate 6 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-24T13:20:30+01:00",
+  "lastRun": "2026-11-25T07:27:00+01:00",
   "marketsRun": {
     "at": "2026-11-24T18:46:56+01:00",
     "esito": "Aggiornati Ftse Mib (-1,8%), spread Btp-Bund (109 punti) e gas TTF (92,3 euro). Dax, Cac 40, Ftse 100 e gli altri non aggiornati: trovati solo dati delle 17:15, non di chiusura. Agenda lasciata com'era."
@@ -29,13 +29,13 @@
     "esito": "US 1 nuova (Iowa, via libera della corte)/0 aggiornate/2 archiviate (appaltatori, Iowa di ieri); GB 1 nuova (Capita)/0/1 archiviata (Barnham); FR 0 nuove (nessuna seconda fonte aperta sulla lettera di Lecornu)/0/1 archiviata (Ruffin); DE 0/0/0; ES 0/0/1 archiviata (imposta banche). Controlla: Capita senza foto, resta la mappa."
   },
   "quality": {
-    "articlesDiscarded": 2,
-    "articlesRead": 22,
-    "at": "2026-11-24T13:20:30+01:00",
-    "factsChecked": 4,
-    "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 1,
+    "articlesDiscarded": 4,
+    "articlesRead": 38,
+    "at": "2026-11-25T07:27:00+01:00",
+    "factsChecked": 5,
+    "factsCorrected": 1,
+    "storiesArchived": 12,
+    "storiesNew": 11,
     "storiesUpdated": 0
   },
   "riscrittura": {
@@ -43,5 +43,5 @@
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 30
+  "storiesLive": 28
 }

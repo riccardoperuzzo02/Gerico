@@ -1,0 +1,37 @@
+{
+ "title": "De Gennaro: i pm indagano su dischi e chiavette, autopsia il 26 novembre",
+ "section": "italia",
+ "rank": 8,
+ "status": "live",
+ "summary": "Secondo gli atti dell'inchiesta di Caltanissetta, De Gennaro avrebbe fatto custodire a terzi supporti informatici. L'autopsia è fissata a Firenze per giovedì 26 novembre.",
+ "article": "Gli atti dell'inchiesta della procura di Caltanissetta sui presunti depistaggi per la strage di via D'Amelio, di cui era indagato l'ex capo della polizia Gianni De Gennaro, descrivono una serie di supporti informatici sequestrati dopo la sua morte, il 21 novembre. L'autopsia è fissata a Firenze per giovedì 26 novembre. I funerali sono lunedì 29 novembre alle 12, nella basilica di Santa Maria degli Angeli a Roma.\n\nSecondo gli atti, De Gennaro avrebbe comprato nel luglio 2025 due dischi da un terabyte: uno sarebbe stato affidato a un ex ufficiale della Guardia di Finanza, Massimo Carnicelli, per la custodia, l'altro al figlio Giulio. Durante una perquisizione De Gennaro si sarebbe rifiutato di consegnare uno dei dischi; nove giorni dopo una busta con una memoria e il disco sarebbe stata lasciata al procuratore Salvatore De Luca. Due chiavette sono state sequestrate nella casa della collaboratrice Donatella Peruzzi, e il Ros ha preso altri due dischi a casa del figlio e di Carnicelli.\n\nI pm sostengono che il contenuto sarebbe stato nascosto su ordine di De Gennaro perché compromettente e che la maggior parte dei documenti cartacei sarebbe stata distrutta. Sono accuse e ricostruzioni preliminari, non accertate. I legali Franco Coppi e Francesco Bertorotta vogliono chiedere la restituzione delle lettere sequestrate: sono quattro, datate 17 novembre.\n\nSecondo la ricostruzione della procura, De Gennaro ebbe la convinzione che nel suo ufficio al Centro Studi Americani di Roma ci fossero microspie: nel marzo 2026 le avrebbe scoperte dopo una soffiata di cui non si conosce la fonte. L'udienza del Riesame sugli arresti di Franco Pacetto e Donatella Peruzzi è fissata per il 1 dicembre, ma la difesa ha chiesto un rinvio. Il pentito Totuccio Contorno è anch'egli indagato.",
+ "facts": [
+  {"text": "L'autopsia su De Gennaro è fissata a Firenze per il 26 novembre.", "who": ["Open"]},
+  {"text": "Secondo gli atti, De Gennaro avrebbe affidato a terzi due dischi da un terabyte.", "who": ["Open"]},
+  {"text": "Secondo la procura di Caltanissetta, De Gennaro scoprì microspie nel suo ufficio al Centro Studi Americani.", "who": ["Il Post"]}
+ ],
+ "view": "Sono fatti accertati la morte, l'inchiesta in corso e le date degli atti già fissate. Il contenuto dei supporti sequestrati e le accuse dei pm non sono verificati e vengono da atti.\n\nIl caso mescola un'inchiesta sulle stragi del 1992 e un'indagine su come sia stata condotta. Da guardare: l'esito dell'autopsia, il Riesame del 1 dicembre e l'analisi forense dei dischi.",
+ "open": [
+  "Che cosa contengono i dischi e le chiavette sequestrati?",
+  "Chi ha installato le microspie nell'ufficio del Centro Studi Americani?",
+  "Quando si deciderà sul Riesame di Pacetto e Peruzzi?"
+ ],
+ "sources": [
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/25/gianni-de-gennaro-hard-disk-pen-drive-lettere/", "angle": "I supporti informatici, le lettere e le date di autopsia, funerali e Riesame.", "date": "2026-11-25"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/24/de-gennaro-intercettazioni-microspie-centro-studi-americani/", "angle": "Le microspie nell'ufficio al Centro Studi Americani secondo la procura di Caltanissetta.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["De Gennaro", "Inchieste", "Italia"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Caltanissetta", "lat": 37.49, "lon": 14.06},
+ "figure": {"value": "26 nov", "label": "la data fissata per l'autopsia a Firenze"},
+ "prev":"2026-11-23-it-de-gennaro-inchieste-autopsia",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: i supporti informatici nell'inchiesta di Caltanissetta, autopsia il 26 novembre."}
+ ]
+}

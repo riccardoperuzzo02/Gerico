@@ -1,0 +1,33 @@
+{
+ "title": "Sanofi compra la biotech americana Insmed per 41 miliardi di dollari",
+ "section": "mercati",
+ "rank": 10,
+ "status": "live",
+ "summary": "Il gruppo francese Sanofi ha accettato di acquistare Insmed per 41 miliardi di dollari. Il titolo Insmed è salito del 14% a Wall Street.",
+ "article": "Martedì la casa farmaceutica francese Sanofi ha annunciato l'accordo per acquistare la società biotecnologica americana Insmed per 41 miliardi di dollari. L'operazione serve a rafforzare la posizione del gruppo nell'immunologia, secondo quanto comunicato.\n\nIl titolo Insmed è salito del 14% a Wall Street dopo la notizia. L'accordo arriva nella stessa seduta in cui Nvidia perdeva il 7,4% e il Nasdaq chiudeva in calo.\n\nLe fonti disponibili non riportano il premio per gli azionisti, i tempi della chiusura dell'operazione né le autorizzazioni antitrust necessarie.",
+ "facts": [
+  {"text": "Sanofi ha accettato di comprare Insmed per 41 miliardi di dollari.", "who": ["ANSA", "CNBC"]},
+  {"text": "Il titolo Insmed è salito del 14% a Wall Street.", "who": ["CNBC"]}
+ ],
+ "view": "Il prezzo e il rialzo del titolo sono accertati. Mancano i dettagli dell'operazione, a partire dal premio e dai tempi di chiusura.\n\nDa guardare: le autorizzazioni antitrust e l'effetto sul titolo Sanofi.",
+ "open": [
+  "Quale premio ricevono gli azionisti di Insmed?",
+  "Quando si chiuderà l'operazione?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/24/sanofi-compra-la-biotech-statunitense-insmed-per-41-miliardi-di-dollari_39b2b7a8-fe7d-4f03-8dcf-9a05b628a430.html", "angle": "L'acquisizione da 41 miliardi di dollari e l'obiettivo nell'immunologia.", "date": "2026-11-24"},
+  {"name": "CNBC", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html", "angle": "Il rialzo del 14% del titolo Insmed.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Farmaceutica", "Fusioni e acquisizioni", "Francia", "Stati Uniti"],
+ "themes": [],
+ "places": ["FR", "US"],
+ "figure": {"value": "41 mld $", "label": "il prezzo dell'acquisto di Insmed da parte di Sanofi"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: Sanofi compra Insmed per 41 miliardi di dollari."}
+ ]
+}

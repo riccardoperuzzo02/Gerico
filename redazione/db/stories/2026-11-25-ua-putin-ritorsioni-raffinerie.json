@@ -1,0 +1,41 @@
+{
+ "title": "Ucraina: Putin promette ritorsioni dopo gli attacchi alle raffinerie russe",
+ "section": "mondo",
+ "rank": 2,
+ "status": "live",
+ "summary": "Martedì Putin ha detto che «le misure di ritorsione sono inevitabili». Nella notte nuove raffinerie in fiamme nella regione di Samara e attacchi russi su Odessa e Kiev.",
+ "article": "Martedì il presidente russo Vladimir Putin ha detto, in una riunione al Cremlino con funzionari e dirigenti del settore petrolifero, che «le misure di ritorsione da parte nostra sono inevitabili». Secondo Putin l'Ucraina continua a colpire le raffinerie russe nonostante la richiesta di Donald Trump di smettere, e ha chiesto più sicurezza per gli impianti energetici.\n\nGli attacchi pesano sul settore: fonti dell'industria stimano che dalla fine di ottobre i droni ucraini abbiano ridotto del 45 per cento la lavorazione di greggio delle raffinerie russe. Diverse regioni russe hanno limitato la vendita di benzina e gasolio al dettaglio. Putin dice che i prezzi dei carburanti si sono stabilizzati dopo il picco di ottobre, ma il mercato interno resta difficile.\n\nNella notte tra martedì e mercoledì i canali di monitoraggio ucraini hanno segnalato nuovi attacchi con droni alle raffinerie di Syzran e di Kuibyshev, nella regione di Samara, a circa 800 chilometri dal confine. I filmati dei residenti mostrano un grande incendio, ma non c'è una conferma ufficiale ucraina né una stima dei danni.\n\nSul fronte opposto, un attacco russo su Odessa ha ucciso due persone, tra cui un adolescente, secondo il governatore della regione, e ne ha ferita un'altra. Un altro attacco ha ferito due persone in un cortile di Kiev e ne ha uccisa una nella regione della capitale. A Zaporizhzhia, secondo il governatore Mykhailo Semikin, l'attacco di martedì ha ucciso due persone e ne ha ferite 40, tra cui quattro bambini.\n\nKiev dice che smetterà di colpire gli obiettivi energetici russi solo se Mosca farà lo stesso. A metà ottobre Trump aveva dichiarato una tregua energetica, e gli attacchi ucraini ai depositi di carburante erano diminuiti prima di riprendere a fine mese. Il presidente Volodymyr Zelensky ha detto a Bloomberg che la nave russa Sparta II, colpita sabato nel Golfo di Finlandia, era un obiettivo legittimo perché trasportava armi.\n\nIl bilancio umano della guerra resta contestato. Lo Stato maggiore ucraino dice che nel 2026 le perdite russe hanno raggiunto 432.519 uomini, un record annuo. Una serie di dati del servizio di statistica russo Rosstat, trapelata e non verificata in modo indipendente, indica almeno 490.000 soldati russi morti. Sono misure diverse e non vanno sommate. Intanto la Norvegia ha promesso almeno 7 miliardi di dollari di aiuti all'Ucraina per il 2027, e il leader ungherese Péter Magyar ha discusso con Zelensky delle forniture di gas nella sua prima visita ufficiale a Kiev.",
+ "facts": [
+  {"text": "Putin dice che le misure di ritorsione russe agli attacchi alle raffinerie sono inevitabili.", "who": ["Al Jazeera"]},
+  {"text": "Fonti dell'industria stimano un calo del 45 per cento della lavorazione di greggio delle raffinerie russe dalla fine di ottobre.", "who": ["Al Jazeera"]},
+  {"text": "Canali di monitoraggio ucraini segnalano attacchi alle raffinerie di Syzran e Kuibyshev, nella regione di Samara.", "who": ["Kyiv Independent"]},
+  {"text": "Un attacco russo su Odessa ha ucciso due persone, secondo il governatore.", "who": ["Reuters", "Kyiv Independent"]},
+  {"text": "Lo Stato maggiore ucraino parla di 432.519 perdite russe nel 2026; dati Rosstat trapelati indicano almeno 490.000 morti.", "who": ["Kyiv Independent", "Euronews"]}
+ ],
+ "view": "È accertato che Putin ha annunciato ritorsioni e che gli attacchi alle raffinerie sono ripresi. Non sono verificati i danni agli impianti di Samara e le cifre sulle perdite russe, che vengono da fonti di parte o da dati non confermati.\n\nLa guerra dell'energia si sposta sui carburanti e sulle infrastrutture civili. Da guardare: la forma delle ritorsioni annunciate, l'effetto sui prezzi dei carburanti in Russia e il vertice europeo in arrivo, dove i paesi dell'Ue non hanno ancora un accordo su come aiutare Kiev.",
+ "open": [
+  "Che cosa farà la Russia per rispondere agli attacchi alle raffinerie?",
+  "Quali danni hanno subìto Syzran e Kuibyshev?",
+  "Come si concilia il dato dello Stato maggiore ucraino con quello trapelato di Rosstat?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/24/putin-says-kyiv-hit-russian-oil-plants-despite-trump-plea-vows-retaliation", "angle": "Le parole di Putin, la stima sul calo della lavorazione e le reazioni di Kiev.", "date": "2026-11-24"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/ukrainian-drones-reportedly-strike-russian-oil-refineries-in-massive-attack/", "angle": "Gli attacchi notturni alle raffinerie di Samara secondo i canali di monitoraggio.", "date": "2026-11-25"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/25/russian-strike-kills-two-people-in-ukraine-s-odesa-region-governor-says", "angle": "I morti e i feriti dell'attacco russo nella regione di Odessa.", "date": "2026-11-25"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/24/at-least-490000-russian-soldiers-killed-in-ukraine-rosstat-data-leak-reveals", "angle": "I dati trapelati di Rosstat sui soldati russi morti.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Russia", "Energia", "Petrolio"],
+ "themes": ["ucraina"],
+ "places": ["UA", "RU"],
+ "city": {"name": "Syzran", "lat": 53.16, "lon": 48.47},
+ "figure": {"value": "-45%", "label": "il calo stimato della lavorazione di greggio russa"},
+ "prev":"2026-11-24-ua-zaporizhzhia-dymer-patriot",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: Putin promette ritorsioni, nuove raffinerie colpite nella regione di Samara."}
+ ]
+}

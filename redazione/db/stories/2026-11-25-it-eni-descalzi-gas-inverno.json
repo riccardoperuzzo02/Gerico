@@ -1,0 +1,35 @@
+{
+ "title": "Gas: Descalzi teme difficoltà in inverno, il ministro Pichetto le esclude",
+ "section": "economia",
+ "rank": 11,
+ "status": "live",
+ "summary": "L'amministratore delegato di Eni prevede possibili difficoltà sulle forniture di gas in inverno. Il ministro dell'Ambiente le esclude con il clima di queste settimane. I futures sul gas sono saliti a 92,3 euro.",
+ "article": "Martedì l'amministratore delegato di Eni, Claudio Descalzi, ha detto che per l'inverno ci si aspettano possibili difficoltà sul gas. Il ministro dell'Ambiente e della Sicurezza energetica, Gilberto Pichetto Fratin, ha risposto che non ci saranno con il clima attuale.\n\nDescalzi ha detto anche che l'azienda è pronta a mantenere lo sconto sui carburanti, finché regge il tetto al prezzo.\n\nIn serata i futures sul gas in Europa sono saliti a 92,3 euro al megawattora, secondo i dati del mercato.\n\nLe fonti disponibili non riportano le quantità di gas in stoccaggio né i dettagli del tetto al prezzo.",
+ "facts": [
+  {"text": "Descalzi si aspetta possibili difficoltà sul gas in inverno.", "who": ["ANSA"]},
+  {"text": "Pichetto Fratin le esclude con il clima attuale.", "who": ["ANSA"]},
+  {"text": "Eni è pronta a mantenere lo sconto sui carburanti.", "who": ["Open"]},
+  {"text": "I futures sul gas sono saliti a 92,3 euro.", "who": ["ANSA"]}
+ ],
+ "view": "Le due posizioni sono pubbliche e opposte; i dati sugli stoccaggi che potrebbero decidere tra le due non sono nelle fonti lette.\n\nDa guardare: il livello degli stoccaggi, le temperature e la durata del tetto al prezzo.",
+ "open": [
+  "A che livello sono gli stoccaggi di gas?",
+  "Fino a quando reggerà il tetto al prezzo dei carburanti?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/24/descalzi-ci-aspettiamo-difficolta-sul-gas-per-linverno.-verso-la-proroga-del_742efb32-bf00-4f18-bc6c-573b69b6ede1.html", "angle": "Le previsioni di Descalzi e la replica del ministro.", "date": "2026-11-24"},
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/24/descalzi-gas-russo-price-cap/", "angle": "Lo sconto sui carburanti e il tetto al prezzo.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-25T07:22:00+01:00",
+ "updated": "2026-11-25T07:22:00+01:00",
+ "change": "",
+ "tags": ["Energia", "Gas", "Eni", "Italia"],
+ "themes": [],
+ "places": ["IT"],
+ "figure": {"value": "92,3 €", "label": "i futures sul gas al megawattora, martedì sera"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-25T07:22:00+01:00", "text": "Prima notizia: Descalzi e Pichetto sul gas dell'inverno."}
+ ]
+}

@@ -1,20 +1,97 @@
 {
  "code": "DE",
- "asOf": "2026-11-24T21:17:35+00:00",
+ "asOf": "2026-11-25T05:17:36+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "NS-Frauenverbände: Kinder, Küche, Krieg: Frauen im Nationalsozialismus",
+   "desc": "Erstmals macht die ZEIT Akten der NS-Frauenverbände durchsuchbar. War Oma dabei? Und: Die Ukraine weitet die Kampfzone aus. Eine neue Phase des Kriegs?",
+   "url": "https://www.zeit.de/politik/2026-11/ns-frauenverbaende-frauen-nationalsozialismus-akten-suche-nachrichtenpodcast",
+   "at": "2026-11-25T05:00:20+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Nordkorea: Nordkorea weist Leiter der Schweizer Vertretung aus",
+   "desc": "Die Regierung in Pjöngjang wirft der Schweiz wegen neuer Sanktionen einen »feindseligen Akt« vor. Das erst kürzlich eröffnete Verbindungsbüro soll geschlossen werden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/nordkorea-ausweisung-schweiz-diplomat-pjoengjang-sanktionen",
+   "at": "2026-11-25T04:44:56+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "China: Antikorruptionsbehörden in China ermitteln gegen Politbüromitglied",
+   "desc": "Chen Jining, Parteichef in Shanghai, ist das vierte Mitglied des Politbüros, gegen das seit Anfang 2025 ermittelt wird. Was ihm konkret vorgeworfen wird, blieb offen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/chen-jining-shanghai-parteichef-korruption-politbuero-china",
+   "at": "2026-11-25T04:33:04+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News: Generaldebatte im Bundestag, mehr Anzeigen wegen Gewalt gegen Frauen, Tarifverhandlungen in der Metallindustrie",
+   "desc": "Friedrich Merz tritt in der Generaldebatte des Bundestags ans Rednerpult. Die Polizei meldet mehr angezeigte Gewalt gegen Frauen. Und in der Metallindustrie wird nach Warnstreiks wieder verhandelt. Das ist die Lage am Mittwochmorgen.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-generaldebatte-im-bundestag-mehr-anzeigen-wegen-gewalt-gegen-frauen-tarifverhandlungen-in-der-metallindustrie-a-40c31068-2413-4166-8289-438c4c3739f7",
+   "at": "2026-11-25T04:23:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Keine schnelle Lösung bei Gewalt gegen Frauen",
+   "desc": "Der heutige Orange Day steht für eine Zukunft ohne Gewalt gegen Frauen. Doch die Realität sieht anders aus. Strafverschärfungen und Gesetzesänderungen sind angestoßen, aber schnelle Lösungen sind nicht in Sicht. Von A. Lagmöller.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/orange-day-gewalt-gegen-frauen-100.html",
+   "at": "2026-11-25T04:00:11+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "US-Zölle: USA planen offenbar neue Zölle gegen die EU und China",
+   "desc": "Die USA werfen mehreren Ländern vor, ihre Industrieproduktion künstlich zu erhöhen. Mehrere Medien berichten nun von neuen Zollplänen, die sich auch gegen Europa richten.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/us-zoelle-china-eu-donald-trump-gerichtshof",
+   "at": "2026-11-25T02:07:59+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Kolumbien: Autobombe verletzt in Kolumbien mindestens 25 Menschen",
+   "desc": "Am Jahrestag des Friedensabkommens mit der Farc hat in Kolumbien eine Autobombe zahlreiche Menschen verletzt. Bewaffnete verschanzen sich mit Geiseln.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/autobombe-villavicencio-meta-farc-emc",
+   "at": "2026-11-25T01:27:33+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EGMR-Urteile: Menschenrechtsgerichtshof grenzt Schutz bei Zurückweisungen ein",
+   "desc": "Staaten dürfen Migranten an Grenzen laut dem EGMR unter bestimmten Voraussetzungen ohne Prüfung zurückweisen. Polen, Lettland und Litauen wurden dennoch verurteilt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/egmr-urteile-belarus-grenze-migranten-zurueckweisung-polen-lettland",
+   "at": "2026-11-24T23:32:47+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Haushaltspolitik: Pflegekassen warnen vor Milliardendefizit trotz Bundeskrediten",
+   "desc": "Der Bund hat den Pflegekassen erst einen Kredit für 2027 zugesagt – der reicht laut ihren Vertretern aber nur für wenige Monate. Danach erwarten sie Milliardendefizite.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/pflegekassen-bundesgarantie-gkv-spitzenverband-finanzkrise",
+   "at": "2026-11-24T23:30:17+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Cyberangriffe: Hacker greifen offenbar die CIA an",
+   "desc": "Der US-Auslandsgeheimdienst CIA ist laut Medienberichten von Hackern angegriffen worden. Sie erbeuteten dabei keine als geheim eingestuften Informationen.",
+   "url": "https://www.zeit.de/politik/2026-11/cia-hackerangriff-cyberangriff-odni-fbi",
+   "at": "2026-11-24T23:04:29+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Ermittlungen gegen Präsidentensohn: US-Abgeordneter verlangt Informationen zu Geschäften von Trump Jr.",
    "desc": "Dem Präsidentensohn Donald Trump Jr. wird vorgeworfen, Insiderinformationen für seine Investmentgeschäfte zu nutzen. Ein US-Abgeordneter weitet Untersuchungen dazu aus.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/jamie-raskin-1789-capital-donald-trump-jr-hadrian-automation",
-   "at": "2026-11-24T21:02:19+00:00"
+   "at": "2026-11-24T21:36:18+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Staatsbesuch: Péter Magyar will engere Beziehung zwischen Ungarn und der Ukraine",
-   "desc": "Unter der Orbán-Regierung waren die ungarisch-ukrainischen Beziehungen angespannt. Der neue ungarische Staatschef kündigt ein »neues Kapitel« in der Zusammenarbeit an.",
+   "desc": "Unter der Orbán-Regierung waren die ungarisch-ukrainischen Beziehungen angespannt. Der neue Regierungschef Ungarns kündigt ein »neues Kapitel« in der Zusammenarbeit an.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/peter-magyar-ukraine-wolodymyr-selenskyj-ungarische-minderheit",
    "at": "2026-11-24T19:56:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Berliner Linksfraktion: Ein Schrecken ohne Emde",
+   "desc": "Durch den Ausschluss von Vanessa Emde zeigt die Berliner Linke ihren Willen zu regieren. Doch die Probleme der Partei mit dem Nahostkonflikt sind damit nicht gelöst.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/vanessa-emde-die-linke-ausschluss-abstimmung",
+   "at": "2026-11-24T19:54:51+00:00"
   },
   {
    "source": "Die Zeit",
@@ -66,34 +143,6 @@
    "at": "2026-11-24T18:28:43+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Édouard Philippe: Weitere Ermittlungen gegen französischen Kandidaten Édouard Philippe",
-   "desc": "Er will Frankreichs Präsident werden, gegen Édouard Philippe wird jedoch bereits wegen Veruntreuung öffentlicher Gelder ermittelt. Weitere Vorwürfe werden untersucht.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/edouard-philippe-le-havre-veruntreuung-ermittlungen-cornelia-findeisen",
-   "at": "2026-11-24T18:24:23+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Alexander Sokurow: Wladimir Putin schließt bekannten Regisseur aus Menschenrechtsrat aus",
-   "desc": "Alexander Sokurow kritisierte 2025 Diskriminierung Andersdenkender in Russland sowie Zensur von Filmen. Wladimir Putin schloss ihn daher aus dem Menschenrechtsrat aus.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/alexander-sokurow-wladimir-putin-menschenrechtsrat-russland-zensur",
-   "at": "2026-11-24T18:01:28+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Berliner Linksfraktion: Berliner Linke schließt Vanessa Emde aus der Fraktion aus",
-   "desc": "Nach viel Kritik an ihrer Position zum Nahostkonflikt und mangelnder Kompromissbereitschaft schließt die Berliner Linksfraktion Vanessa Emde aus. Sie bleibt Abgeordnete.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/berliner-linke-schliesst-vanessa-emde-aus-der-fraktion-aus",
-   "at": "2026-11-24T17:44:48+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Forsa-Umfrage: Unzufriedenheit mit dem Kanzler nimmt laut »Trendbarometer« weiter zu",
-   "desc": "Friedrich Merz schafft es dem »Trendbarometer« von RTL und n-tv zufolge nicht aus seinem Umfragetief. In der sogenannten Sonntagsfrage liegt die AfD klar vor der CDU.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/forsa-umfrage-friedrich-merz-kanzler-unzufriedenheit-parteipraeferenzen",
-   "at": "2026-11-24T16:44:52+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Vanessa Emde: Berliner Linke schließt umstrittene Politikerin aus Fraktion aus",
    "desc": "Wochenlange Debatten über die Israelgegnerin Vanessa Emde haben die Regierungsbildung in Berlin belastet. Nun hat die Linkenfraktion sie in geheimer Abstimmung ausgeschlossen. Emde spricht von einer »medialen Hetzkampagne«.",
@@ -113,20 +162,6 @@
    "desc": "Westliche Geheimdienste gehen wohl davon aus, dass Russland zeitnah einen Atomsprengkopf ins All bringen könnte. Die deutschen Streitkräfte würden in diesem Fall die Mittel »Stören, Blenden und Hacken« setzen.",
    "url": "https://www.spiegel.de/politik/deutschland/bundeswehr-setzt-im-fall-von-russischen-atomsprengkoepfen-im-all-auf-elektronische-abwehr-a-24a268ff-aeaa-444c-9c49-df83f2d2408c",
    "at": "2026-11-24T16:32:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Stromsteuer: Stromsteuersenkung soll knapp fünf Milliarden Euro kosten",
-   "desc": "Union und SPD wollen Bürger und Unternehmen im kommenden Jahr bei den Stromkosten entlasten. Das Geld dafür soll aus der Ökostromförderung kommen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/stromsteuer-senkung-koalition-kosten-haushalt-lars-klingbeil-nina-warken",
-   "at": "2026-11-24T16:30:36+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Gewalt gegen Frauen: Was die Bundesregierung gegen Gewalt an Frauen tun will",
-   "desc": "Immer mehr Frauen werden Opfer von Gewalt: Was lässt sich dagegen tun? Und: Warum mischt sich Donald Trump in die Führung von Nvidia ein?",
-   "url": "https://www.zeit.de/politik/2026-11/gewalt-frauen-bka-menschenhandel-nachrichtenpodcast",
-   "at": "2026-11-24T16:16:54+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -164,13 +199,6 @@
    "at": "2026-11-24T15:07:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Deutsch-französische Beziehungen: Frankreichs Präsidentschaftswahl beunruhigt deutsche Unternehmen",
-   "desc": "Wird in Frankreich eine Rechtspopulistin oder ein Linkspopulist Präsident, könnten sich die Wirtschaftsbeziehungen verschlechtern. Davor warnen deutsche Unternehmen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/deutsch-franzoesische-beziehungen-frankreich-praesidentschaft-le-pen-jean-luc-melenchon-wirtschaft-handel-gxe",
-   "at": "2026-11-24T14:44:19+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Kita-Gap-Portal: Trotz weniger Geburten fehlen Kitaplätze",
    "desc": "Obwohl in Deutschland weniger Kinder geboren werden, fehlt es weiterhin an Kitaplätzen. Vor allem ärmere und nicht Deutsch sprechende Familien sind betroffen. Große Unterschiede gibt es zwischen Ost und West.",
@@ -185,25 +213,11 @@
    "at": "2026-11-24T13:31:58+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Geschlechtsspezifische Gewalt: Gewalt gegen Frauen nimmt weiter zu",
-   "desc": "2025 wurde fast jeden Tag eine Frau von ihrem Partner oder Ex-Partner getötet. Zahlen zeigen, dass die Gewalt gegen Frauen im vergangenen Jahr deutlich zugenommen hat.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/geschlechtsspezifische-gewalt-bka-lagebild-frauen",
-   "at": "2026-11-24T13:15:04+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Bundeshaushalt 2027: Klingbeil sieht \"wichtige Zukunftsinvestitionen\"",
    "desc": "Zu Beginn der Haushaltsberatungen im Bundestag hat Finanzminister Klingbeil den geplanten Rekordetat verteidigt. Es gehe um Spielräume für eine \"gute Zukunft\". Harsche Kritik kommt von der Opposition.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/bundeshaushalt-2027-klingbeil-100.html",
    "at": "2026-11-24T13:10:35+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Nordhein-Westfalen: Unbekannter stürmt Sitzung in Grünen-Büro in Schwerte",
-   "desc": "Ein Unbekannter attackierte eine Sitzung der Grünen in Nordrhein-Westfalen. Mehrere Menschen kamen in ein Krankenhaus. Der Staatsschutz hat die Ermittlungen übernommen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/schwerte-groene-parteibuero-angriff-polizei-krankenhaus-gxe",
-   "at": "2026-11-24T12:46:01+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -267,20 +281,6 @@
    "desc": "Studierende an Musikhochschulen berichten von Machtmissbrauch und teils auch sexuellen Übergriffen durch ihre Dozenten. Der Podcast 11KM erklärt, warum diese Orte dafür besonders anfällig sind.",
    "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-machtmissbrauch-musikhochschulen-100.html",
    "at": "2026-11-24T06:20:48+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Pflege: Mehrheit der Versicherten fordert grundlegende Reform",
-   "desc": "Ob jung oder alt, mit oder ohne persönliche Pflegeerfahrung: Die Menschen in Deutschland eint der Wunsch nach einer grundlegenden Reform. Das ergab eine Erhebung der TK. Deren Chef Jens Baas sieht den Bund in der Pflicht.",
-   "url": "https://www.spiegel.de/politik/deutschland/pflege-mehrheit-der-versicherten-fordert-grundlegende-reform-a-60f0353b-75d0-4bf0-89ae-52c51ab6578d",
-   "at": "2026-11-24T04:43:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News: Linke, Vanessa Emde, CSU, Markus Söder, Femizid soll ins Strafgesetzbuch",
-   "desc": "In Berlin soll Vanessa Emde aus der Linksfraktion fliegen – diesmal wirklich. In der Union fragt man sich mal wieder, was Markus Söder im Schilde führt. Und im Strafgesetzbuch soll der Femizid als Mord festgeschrieben werden. Das ist die Lage am Dienstagmorgen.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-linke-vanessa-emde-csu-markus-soeder-femizid-soll-ins-strafgesetzbuch-a-95f73901-9196-4dde-a781-c80010d12098",
-   "at": "2026-11-24T04:31:00+00:00"
   }
  ]
 }

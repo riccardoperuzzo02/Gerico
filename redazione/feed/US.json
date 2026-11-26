@@ -1,13 +1,69 @@
 {
  "code": "US",
- "asOf": "2026-11-26T17:17:33+00:00",
+ "asOf": "2026-11-26T19:17:34+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Strobe Talbott, Journalist Who Joined Clinton’s State Department, Has Died",
+   "desc": "He was a reporter and foreign affairs columnist at Time and then served as deputy secretary of state and president of the Brookings Institution. He was 80.",
+   "url": "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
+   "at": "2026-11-26T19:01:51+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Fake online stores may fool AI shopping bots on Black Friday",
+   "desc": "AI bots are accidentally steering shoppers toward websites and online shops created by scammers using AI.",
+   "url": "https://www.cbsnews.com/news/black-friday-ai-shopping-agents-fake-online-stores/",
+   "at": "2026-11-26T19:00:44+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Maps show where Thanksgiving storms are disrupting holiday plans",
+   "desc": "Rain, snow and powerful winds were affecting large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
+   "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
+   "at": "2026-11-26T18:55:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+   "desc": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\"",
+   "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+   "at": "2026-11-26T18:44:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
+   "desc": "The microdrama category has exploded at a time when traditional forms of media face waning interest and YouTube claims more viewing hours.",
+   "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
+   "at": "2026-11-26T18:27:43+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Elon Musk doubles SpaceX share pledge for U.S. children",
+   "desc": "Every child in the U.S. will receive one share of SpaceX from the company and one from Elon Musk.",
+   "url": "https://www.cbsnews.com/news/elon-musk-spacex-shares-trump-accounts/",
+   "at": "2026-11-26T18:22:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Semiconductor chips are the new oil. Here's why",
+   "desc": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand.",
+   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+   "at": "2026-11-26T17:52:15+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Texas band raises $350,000 to stay for Macy's Thanksgiving parade",
+   "desc": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
+   "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
+   "at": "2026-11-26T17:42:30+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Food banks see influx of families ahead of Thanksgiving",
    "desc": "Across the U.S., volunteers have noticed more families than usual seeking food assistance as people struggle with higher grocery costs.",
    "url": "https://www.cbsnews.com/news/thanksgiving-food-bank-demand-meal-costs/",
-   "at": "2026-11-26T16:53:12+00:00"
+   "at": "2026-11-26T17:19:34+00:00"
   },
   {
    "source": "New York Times",
@@ -24,20 +80,6 @@
    "at": "2026-11-26T16:45:56+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Texas band raises $350,000 to stay for Macy's Thanksgiving parade",
-   "desc": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-   "at": "2026-11-26T16:44:42+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Maps show where Thanksgiving storms could disrupt holiday",
-   "desc": "Rain, snow and powerful winds were affecting large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
-   "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
-   "at": "2026-11-26T16:40:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
    "desc": "Trump and NATO chief Mark Rutte urged Russia to avoid actions that could expand the war and called for a rapid peaceful resolution.",
@@ -50,13 +92,6 @@
    "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
    "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
    "at": "2026-11-26T16:12:15+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Fake online stores may fool AI shopping bots on Black Friday",
-   "desc": "AI bots are accidentally steering shoppers toward websites and online shops created by scammers using AI.",
-   "url": "https://www.cbsnews.com/news/ai-shopping-agents-fake-online-stores-black-friday/",
-   "at": "2026-11-26T15:45:57+00:00"
   },
   {
    "source": "New York Times",
@@ -151,13 +186,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Semiconductor chips are the new oil. Here's why",
-   "desc": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand.",
-   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-   "at": "2026-11-26T13:19:25+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Planes, trains and automobiles: The best ways to beat travel fatigue—so you can come home feeling rested and fulfilled",
    "desc": "Visiting loved ones for the holidays? Here's how to manage the travel fatigue, from a travel expert and a sleep medicine specialist.",
    "url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
@@ -200,13 +228,6 @@
   },
   {
    "source": "CNBC",
-   "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
-   "desc": "The microdrama category has exploded at a time when traditional forms of media face waning interest and YouTube claims more viewing hours.",
-   "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
-   "at": "2026-11-26T12:00:01+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
    "desc": "Swiss regulator FINMA said UBS can execute its preferred crisis-resolution strategy, even as the bank faces a separate parliamentary fight over tougher capital requirements.",
    "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
@@ -235,16 +256,16 @@
   },
   {
    "source": "NPR",
-   "title": "'Memories of a Good Meal': How food made a difference during WWII",
-   "desc": "New Orleans Chef Alon Shaya's new cookbook shares stories of resilience from World War II, centered around food.",
-   "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
+   "title": "At Albuquerque's Indian Pueblo Kitchen, Native American dishes are the main course",
+   "desc": "At an Albuquerque, N.M., museum, the restaurant is just as much of a draw as the exhibitions, with dishes like green chile stew and sweet biscochitos flavored with anise and cinnamon.",
+   "url": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque",
    "at": "2026-11-26T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "At Albuquerque's Indian Pueblo Kitchen, Native American dishes are the main course",
-   "desc": "At an Albuquerque, N.M., museum, the restaurant is just as much of a draw as the exhibitions, with dishes like green chile stew and sweet biscochitos flavored with anise and cinnamon.",
-   "url": "https://www.npr.org/2026/11/26/nx-s1-5983712/indian-pueblo-kitchen-native-american-food-albuquerque",
+   "title": "'Memories of a Good Meal': How food made a difference during WWII",
+   "desc": "New Orleans Chef Alon Shaya's new cookbook shares stories of resilience from World War II, centered around food.",
+   "url": "https://www.npr.org/2026/11/26/nx-s1-6028781/memories-of-a-good-meal-cookbook-chef-alon-shaya",
    "at": "2026-11-26T10:00:00+00:00"
   },
   {
@@ -337,13 +358,6 @@
    "desc": "Kim Jong Un called for wider use of tactical nuclear weapons and an expanded arsenal, rejecting international denuclearization pressure.",
    "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
    "at": "2026-11-26T05:50:34+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
-   "desc": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
-   "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-   "at": "2026-11-26T05:36:01+00:00"
   },
   {
    "source": "CNBC",
@@ -554,41 +568,6 @@
    "desc": "The economy is sending mixed signals, with growth jumping while stocks gyrate. Here's what economists say is going on.",
    "url": "https://www.cbsnews.com/news/us-economy-stocks-ai-inflation/",
    "at": "2026-11-25T19:45:38+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Fort Hood Shooter Asks Judge to Delay His Execution by Firing Squad",
-   "desc": "Nidal Malik Hasan, who killed 13 people at the Army base in 2009, said he wanted to challenge his conviction and death sentence, which is to be carried out next week.",
-   "url": "https://www.nytimes.com/2026/11/25/us/nidal-malik-hasan-fort-hood-execution-stay.html",
-   "at": "2026-11-25T18:25:04+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "C.I.A. Waterboarded More Detainees Than It Admitted, F.B.I. Interview Suggests",
-   "desc": "The apparent disclosure was included in files released in response to a New York Times lawsuit. The release also shed light on C.I.A. officials’ fears about possible prosecutions.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/cia-waterboarding.html",
-   "at": "2026-11-25T17:57:50+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "The U.S. Isn’t in a Recession. Try Telling Many Americans That.",
-   "desc": "The freshest measures of growth and hiring show a healthy economy. Struggling Americans aren’t seeing that.",
-   "url": "https://www.nytimes.com/2026/11/25/us/economic-growth-recession-pessimism.html",
-   "at": "2026-11-25T17:51:25+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
-   "desc": "Nvidia GPU sellers are seeking new buyers after new U.S. rules tightened remote access to advanced AI chips for China-linked customers",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
-   "at": "2026-11-25T17:28:24+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump administration to issue new tariffs on China, EU and others",
-   "desc": "The U.S. will increase tariffs on Chinese goods by an additional 20% and raise import taxes on goods from other major economies.",
-   "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/",
-   "at": "2026-11-25T17:26:56+00:00"
   }
  ]
 }

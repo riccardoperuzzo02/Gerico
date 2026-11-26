@@ -1,7 +1,70 @@
 {
  "code": "DE",
- "asOf": "2026-11-26T09:17:33+00:00",
+ "asOf": "2026-11-26T11:17:34+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "SPD reagiert verhalten auf CDU-Vorstoß zur Rente",
+   "desc": "Überzeugt der neue Vorschlag zur \"Rente mit 63\" aus der Union die SPD? Erste Reaktionen von den Sozialdemokraten deuten nicht auf eine Einigung hin. Die Union fordert dagegen, \"die ausgestreckte Hand zu ergreifen\".",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-diskussion-104.html",
+   "at": "2026-11-26T10:41:10+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Migration: Alexander Dobrindt dringt trotz Kritik auf Abschiebezentrum in Ruanda",
+   "desc": "Er halte Abschiebungen von abgelehnten Asylsuchenden in ihnen unbekannte Staaten für notwendig, sagt der Bundesinnenminister. Die Pläne sind auch rechtlich umstritten.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/abschiebezentrum-ruanda-alexander-dobrindt-csu-spd-gxe",
+   "at": "2026-11-26T10:31:29+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bundeskanzler Friedrich Merz lehnt Kompromissvorschlag zu EU-Finanzen ab",
+   "desc": "Die EU wird sich nicht über den nächsten mehrjährigen Finanzrahmen einig. Der Bundeskanzler lehnt neue Schulden auf EU-Ebene ab und fordert: keine Ausnahmen mehr bei den Ukrainehilfen.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundeskanzler-friedrich-merz-lehnt-kompromissvorschlag-zu-eu-finanzen-ab-a-c0394446-807d-4b91-b85e-3edff947a318",
+   "at": "2026-11-26T10:31:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Sicherheitskosten: Kommunen fordern mehr Geld für Sicherung der Weihnachtsmärkte",
+   "desc": "Wegen Terrorgefahr ergreifen Kommunen strengere Sicherheitsmaßnahmen auf Weihnachtsmärkten. Dafür fordern sie Unterstützung von Bund und Ländern.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/weihnachtsmaerkte-sicherheitskosten-kommunen-terrorabwehr-dstgb-gxe",
+   "at": "2026-11-26T10:19:31+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "BSW-Europaabgeordnete in Moskau: »Letztlich wird das in einem Atomkrieg enden«",
+   "desc": "Ein Treffen von BSW-Politikern mit Sergej Karaganow in der russischen Hauptstadt wurde heimlich aufgenommen. Darin zeigen die Russen, wie wenig kompromissbereit sie sind.",
+   "url": "https://www.zeit.de/2026/51/bsw-michael-von-der-schulenburg-ruth-firmenich-sergej-karaganow-moskau",
+   "at": "2026-11-26T10:09:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "BSW-Europaabgeordnete in Moskau: »Letztlich wird das in einem Atomkrieg enden«",
+   "desc": "Ein Treffen von BSW-Politikern mit Sergej Karaganow in der russischen Hauptstadt wurde heimlich aufgenommen. Darin zeigen die Russen, wie wenig kompromissbereit sie sind.",
+   "url": "https://www.zeit.de/2026/51/bsw-michael-von-der-schulenburg-ruth-firmenich-sergej-karaganow-moskau",
+   "at": "2026-11-26T10:09:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "BSW-Europaabgeordnete in Moskau: »Letztlich wird das in einem Atomkrieg enden«",
+   "desc": "Ein Treffen von BSW-Politikern mit Sergej Karaganow in der russischen Hauptstadt wurde heimlich aufgenommen. Darin zeigen die Russen, wie wenig kompromissbereit sie sind.",
+   "url": "https://www.zeit.de/2026/51/bsw-michael-von-der-schulenburg-ruth-firmenich-sergej-karaganow-moskau",
+   "at": "2026-11-26T10:09:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Terrorverdacht - zwei Iraker in Köln und Heidelberg festgenommen",
+   "desc": "Die Bundesanwaltschaft hat zwei Männer in Köln und Heidelberg festnehmen lassen. Sie sollen einer pro-iranischen Gruppe angehört und Anschläge geplant haben - möglicherweise auch einen auf eine Synagoge in Köln. Von H. Schmidt.",
+   "url": "https://www.tagesschau.de/inland/terrorverdacht-festnahmen-102.html",
+   "at": "2026-11-26T09:39:12+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Ukraine-Hilfe: Friedrich Merz muss endlich Klartext reden – Meinung",
+   "desc": "Die Mehrheit der Deutschen lehnt Militärhilfen für die Ukraine ab. Umso wichtiger, dass der Kanzler endlich Klartext redet, auch wenn es schmerzt.",
+   "url": "https://www.spiegel.de/politik/deutschland/ukrainehilfe-der-kanzler-muss-endlich-klartext-reden-a-10475eeb-5899-4756-ad1d-df3e4f1add56",
+   "at": "2026-11-26T09:08:00+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Familienministerin Prien für bildschirmfreie Zeit bei Kleinkindern",
@@ -11,14 +74,14 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Rente mit 63: Union bietet SPD Kompromiss für Geringverdiener an",
+   "title": "Rente mit 63: SPD lehnt Kompromiss-Vorschlag der CDU ab",
    "desc": "»So nicht hinnehmbar« findet die SPD einen Kompromissvorschlag des Koalitionspartners zur abschlagsfreien Frühverrentung. Aus der Union entgegnet man, Maximalforderungen seien »lange genug ausgetauscht« worden.",
    "url": "https://www.spiegel.de/politik/deutschland/rente-mit-63-union-bietet-spd-kompromiss-fuer-geringverdiener-an-a-f1ebd904-9dea-48e9-8bef-b4a99a17b1ea",
    "at": "2026-11-26T09:06:00+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "Deutsche Firma soll Ärmelkanal-Schleuser beliefert haben",
+   "title": "Migration: Deutsche Firma MaRe Boote GmbH soll Ärmelkanal-Schleuser beliefert haben",
    "desc": "Clans schleusen jährlich Zehntausende Migranten über den Ärmelkanal. Sehr viele Überfahrten soll laut Medienberichten ein deutscher Unternehmer ausgerüstet haben. Eine Verkehrskontrolle half beim Enttarnen.",
    "url": "https://www.spiegel.de/politik/deutschland/deutsche-firma-soll-aermelkanal-schleuser-beliefern-haben-a-dd3ecb91-159e-42f5-873e-08c18361ac37",
    "at": "2026-11-26T08:50:00+00:00"
@@ -45,13 +108,6 @@
    "at": "2026-11-26T08:15:55+00:00"
   },
   {
-   "source": "Tagesschau",
-   "title": "SPD reagiert verhalten auf CDU-Vorstoß zur Rente",
-   "desc": "Überzeugt der neue Vorschlag zur \"Rente mit 63\" aus der Union die SPD? Erste Reaktionen von den Sozialdemokraten deuten nicht auf eine Einigung hin. Die Union fordert dagegen, \"die ausgestreckte Hand zu ergreifen\".",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-diskussion-104.html",
-   "at": "2026-11-26T07:21:38+00:00"
-  },
-  {
    "source": "Die Zeit",
    "title": "Jared Kushner: Kushner wehrt sich gegen Vorwurf einer zu großen Nähe zu Russland",
    "desc": "Im Podcast von Mathias Döpfner hat US-Unterhändler Jared Kushner den Vorwurf der Russlandnähe dementiert. Zugleich lobte er Putin als »Großmeister der Politik«.",
@@ -74,7 +130,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Bundestag: Julia Klöckner prüft Sanktionen nach Blockade von David Barnea",
+   "title": "Bundestag: Julia Klöckner prüft Sanktionen gegen Linke nach Blockade von David Barnea",
    "desc": "Mit Sitzblockaden haben zwei Linkenabgeordnete gegen den Besuch von Ex-Mossad-Chef Barnea im Bundestag protestiert. Bundestagspräsidentin Klöckner nennt die Aktion einen »Tiefpunkt« – und lotet nun Konsequenzen aus.",
    "url": "https://www.spiegel.de/politik/deutschland/bundestag-julia-kloeckner-prueft-sanktionen-nach-blockade-von-david-barnea-a-c51e85d0-19f5-4fc9-8e09-1e10a697679e",
    "at": "2026-11-26T06:08:00+00:00"
@@ -123,45 +179,10 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Boris Pistorius: Ministerium ruft 14 Milliarden Euro aus Mega-Budget nicht ab",
+   "title": "Boris Pistorius: Ministerium bleibt auf 14 Milliarden Euro sitzen",
    "desc": "Der Verteidigungsminister erhielt für die Modernisierung der Bundeswehr ein Mega-Budget von gut 108 Milliarden Euro. Doch sein Haus kann mehr als ein Zehntel davon nicht ausgeben. Für Pistorius ist das ein Problem.",
    "url": "https://www.spiegel.de/politik/deutschland/boris-pistorius-ministerium-ruft-14-milliarden-euro-aus-mega-budget-nicht-ab-a-e72550cb-0c72-4624-acb3-0c120f407461",
    "at": "2026-11-26T04:08:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Steuern für Reiche: Gewerkschaftsbund will Vermögensabgabe »für die Allerreichsten«",
-   "desc": "Megareiche müssen nach Ansicht des DGB in die Pflicht genommen werden, um den Haushalt zu entlasten. Auch Ausnahmen bei der Erbschaftsteuer sollen gestrichen werden.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/dgb-vermoegensabgabe-vermoegensteuer-erbschaftsteuer-stefan-koerzell",
-   "at": "2026-11-26T04:04:32+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sitzblockade im Bundestag: Klöckner prüft Sanktionen nach Protestaktion gegen Ex-Mossad-Chef",
-   "desc": "Zwei Linkenabgeordnete haben mit einer Sitzblockade gegen ein Treffen mit Ex-Mossad-Chef David Barnea protestiert. Die Bundestagspräsidentin hält Konsequenzen für nötig.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/julia-kloeckner-linke-abgeordnete-david-barnea-mossad-bundestag",
-   "at": "2026-11-26T03:38:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Sitzblockade im Bundestag: Klöckner prüft Sanktionen nach Protestaktion gegen Ex-Mossad-Chef",
-   "desc": "Zwei Linkenabgeordnete haben mit einer Sitzblockade gegen ein Treffen mit Ex-Mossad-Chef David Barnea protestiert. Die Bundestagspräsidentin hält Konsequenzen für nötig.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/julia-kloeckner-linke-abgeordnete-david-barnea-mossad-bundestag",
-   "at": "2026-11-26T03:38:01+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Prostitution: Abgeordnete fordern Reform des Prostitutionsrechts",
-   "desc": "Die CDU fordert Strafen für den Kauf sexueller Dienstleistungen, die Grünen lehnen ein Sexkaufverbot ab. Zuvor hatte eine Expertenkommission Reformvorschläge gemacht.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/prostitutionsrecht-reform-sexkaufverbot-nordisches-modell-freier",
-   "at": "2026-11-26T01:00:44+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rente mit 63: CDU schlägt abschlagsfreie Rente für Bezieher geringer Einkommen vor",
-   "desc": "Die Union geht im Rentenstreit auf die SPD zu. Laut ihrem Vorschlag soll die Rente nach 45 Beitragsjahren für Menschen mit unterdurchschnittlichem Einkommen bleiben.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-cdu-bundestag-abgeordnete-abschaffung",
-   "at": "2026-11-25T21:30:34+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -179,7 +200,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Russland: »Putin kann keinen Krieg führen wie Stalin« Sönke Neitzel und Hanna Notte im SPIEGEL-Talk",
+   "title": "Russland: »Putin kann keinen Krieg führen wie Stalin« – Spitzengespräch",
    "desc": "Wie weit eskaliert Putin? Hier sprechen Russlandexpertin Hanna Notte und Militärhistoriker Sönke Neitzel über Raketen in Polen, Zeitfenster für Verhandlungen und eine Atomwaffe im All, über die die Szene schon länger spricht.",
    "url": "https://www.spiegel.de/politik/deutschland/russland-putin-kann-keinen-krieg-fuehren-wie-stalin-soenke-neitzel-und-hanna-notte-im-spiegel-talk-a-2bd42a0d-8b31-42fe-adea-9592b8ef2507",
    "at": "2026-11-25T20:33:00+00:00"
@@ -193,7 +214,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Kommission empfiehlt Kriminalisierung von Freiern, wenn Prostituierte nicht angemeldet sind",
+   "title": "Prostitution in Deutschland: Expertenkommission schlägt neues Schutzmodell vor",
    "desc": "Eine Expertenkommission hat Empfehlungen vorgelegt, wie Prostituierte besser geschützt werden sollen. Familienministerin Prien sieht die »Chance auf einen echten Paradigmenwechsel«. Die wichtigsten Fragen und Antworten.",
    "url": "https://www.spiegel.de/politik/deutschland/kommission-empfiehlt-kriminalisierung-von-freiern-wenn-prostituierte-nicht-angemeldet-sind-a-766dc637-4c74-499b-bfce-6739ea704d18",
    "at": "2026-11-25T19:13:00+00:00"
@@ -274,27 +295,6 @@
    "desc": "Sie sind fast noch Kinder und planten laut Bundesanwaltschaft schwerste Straftaten, etwa auf eine Flüchtlingsunterkunft. Nun gingen Ermittler gegen mutmaßliche Mitglieder der rechtsextremistischen Gruppe \"Terror 18\" vor. Was ist bekannt? Von Max Bauer.",
    "url": "https://www.tagesschau.de/inland/terror-18-rechtsextremistische-gruppe-100.html",
    "at": "2026-11-25T13:15:59+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundestag: Friedrich Merz versucht’s mal positiv – die Lehren aus der Generaldebatte",
-   "desc": "Streit und zähe Verhandlungen – erst dann einigte sich die Koalition auf den Etat 2027. Die Haushaltsdebatte legt offen, wie heikel die Koalition regiert. Und wie schwer es erst 2028 werden könnte. Die Blitzanalyse.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundestag-so-laeuft-die-generaldebatte-zum-haushalt-live-a-e9f39663-47e8-4835-a192-24bcfe73cc6e",
-   "at": "2026-11-25T10:59:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Bundestag legt Schweigeminute für Opfer von Femiziden ein",
-   "desc": "Dass Bundestagspräsidentin Klöckner und viele andere bei der Generaldebatte Orange als Kleidungsfarbe gewählt hatten, war kein Zufall. Grund ist der Orange Day, an dem an Frauen erinnert wird, die Opfer von Gewalt wurden.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bundestag-orange-day-100.html",
-   "at": "2026-11-25T10:55:47+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "AfD fordert Klage gegen Haushalt - Merz nennt Etat \"vertretbar\"",
-   "desc": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
-   "at": "2026-11-25T10:44:12+00:00"
   }
  ]
 }

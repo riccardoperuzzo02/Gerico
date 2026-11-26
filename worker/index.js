@@ -11,6 +11,7 @@ import SCHEMA from "./schema.sql";
 import ADMIN_HTML from "./admin.html";
 import { verificaIscrizione, verificaAccesso, ErrorePasskey, ALGORITMI, b64u, casuali, sha256 } from "./webauthn.js";
 import { avvia } from "./orari.js";
+import { creaYahoo } from "./yahoo.js";
 
 const COOKIE = "__Host-gerico_s";
 const SESSIONE_MS = 400 * 864e5;     // chi entra resta dentro finché non esce: l'accesso dura 400 giorni (il massimo che un browser
@@ -684,8 +685,13 @@ const ROTTE = {
   "POST /api/admin/visite": adminVisite
 };
 const PERCORSI = new Set(Object.keys(ROTTE).map((k) => k.split(" ")[1]));
+// la ricerca dei titoli del Terminal (worker/yahoo.js): non usa il database e non sa chi cerca
+const YAHOO = creaYahoo();
+const DA_YAHOO = new Set(["/api/cerca", "/api/titolo"]);
 
 async function api(request, env, ctx) {
+  const dove = new URL(request.url).pathname.replace(/\/+$/, "");
+  if (DA_YAHOO.has(dove)) return request.method === "GET" ? YAHOO.rispondi(request) : json({ errore: "metodo" }, 405);
   const c = contesto(request, env, ctx);
   const via = c.url.pathname.replace(/\/+$/, "");
   const fn = ROTTE[request.method + " " + via];

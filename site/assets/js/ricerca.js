@@ -173,7 +173,7 @@
         (d.spark && d.spark.length > 1 ? '<div class="sk-g ' + su(d.c3m) + '">' + G.spark(d.spark, 320, 80, "sk-sp", true) +
           '<p class="sk-gl">' + L("Tre mesi, una chiusura al giorno", "Three months, one close a day") + "</p></div>" : "") +
         '<dl class="sk-dl">' + cella(L("1 settimana", "1 week"), pc(d.c1w), su(d.c1w)) + cella(L("1 mese", "1 month"), pc(d.c1m), su(d.c1m)) + cella(L("3 mesi", "3 months"), pc(d.c3m), su(d.c3m)) +
-        (typeof d.lo === "number" && typeof d.hi === "number" ? cella(L("Oggi", "Today"), num(d.lo, d.k) + " – " + num(d.hi, d.k)) : "") +
+        (typeof d.lo === "number" && typeof d.hi === "number" ? cella(d.t && !G.isToday(d.t) ? L("Ultima seduta", "Last session") : L("Oggi", "Today"), num(d.lo, d.k) + " – " + num(d.hi, d.k)) : "") +
         (typeof d.lo52 === "number" && typeof d.hi52 === "number" ? cella(L("52 settimane", "52 weeks"), num(d.lo52, d.k) + " – " + num(d.hi52, d.k)) : "") + "</dl>" +
         '<div class="sk-n"></div><p class="sk-fonte">' + L("Dati di Yahoo Finance, con qualche minuto di ritardo. ", "Data from Yahoo Finance, a few minutes delayed. ") + yahoo(d.url || url) + "</p>";
     };
@@ -205,9 +205,10 @@
       form.classList.add("a-posto");
     };
 
-    // i dati: al primo uso del campo, non all'apertura della pagina
-    let ixP = null;
-    const carica = () => ixP || (ixP = G.load("indici/elenco").then((el) => {
+    // i dati: al primo uso del campo, non all'apertura della pagina; dopo dieci minuti si ricaricano (i prezzi cambiano
+    // ogni mezz'ora e la pagina può restare aperta a lungo)
+    let ixP = null, ixT = 0;
+    const carica = () => (ixP && Date.now() - ixT < 600000 ? ixP : (ixT = Date.now(), ixP = G.load("indici/elenco").then((el) => {
       const codici = Object.keys((el && el.indici) || {});
       const uno = (n) => Promise.resolve(G.load(n)).catch(() => null);
       return Promise.all([Promise.all(codici.map((c) => uno("indici/" + c))), uno("quotes"), uno("societari"), uno("agenda"), uno("calendario"), uno("glossario")])
@@ -220,7 +221,7 @@
           form.dataset.pronto = "1";
           return ix;
         });
-    }).catch(() => { ixP = null; return G.ricercaIndice({}); }));
+    }).catch(() => { ixP = null; return G.ricercaIndice({}); })));
     const notizie = (testo) => (G.cerca && G.cerca.indice ? G.cerca.indice().then((n) => (n && n.storie ? G.ricercaNotizie(G.cerca.trova(n, testo).storie, testo).slice(0, 3) : [])).catch(() => []) : Promise.resolve([]));
 
     // ---------- Yahoo Finance, dal nostro Worker ----------

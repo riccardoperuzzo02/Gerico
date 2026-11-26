@@ -54,12 +54,14 @@ def browser():
         b.close()
 
 
-def apri(browser, base, larghezza, yahoo=200, lingua="", rotte=None):
+def apri(browser, base, larghezza, yahoo=200, lingua="", rotte=None, orologio=False):
     telefono = larghezza < 760
     ctx = browser.new_context(viewport={"width": larghezza, "height": 720 if telefono else 820},
                               has_touch=telefono, is_mobile=telefono, device_scale_factor=2 if telefono else 1)
     pg = ctx.new_page()
     pg.add_init_script("try{sessionStorage.setItem('gerico.intro','1')}catch(e){}")
+    if orologio:
+        pg.clock.install()
     chiamate = []
 
     def finta(route):
@@ -290,4 +292,42 @@ def test_il_foglio_dice_quando_yahoo_non_risponde(browser, base):
     pg.locator("#tq-l [role=option]").filter(has_text="NYSE").first.click()
     expect(pg.locator("dialog#conto-d[open]")).to_contain_text("non arrivano", timeout=4000)
     assert pg.evaluate("document.documentElement.scrollWidth") <= 390
+    pg.context.close()
+
+
+def test_il_foglio_chiama_ultima_seduta_quella_di_un_altro_giorno(browser, base):
+    rotte = dict(ROTTE)
+    rotte["**/api/titolo*"] = (200, dict(TITOLO, t="2026-11-25T21:00:00.000Z"))
+    pg = apri(browser, base, 1280, rotte=rotte)
+    pronto(pg)
+    pg.fill("#tq", "eni")
+    pg.locator("#tq-l [role=option]").filter(has_text="NYSE").first.click()
+    d = pg.locator("dialog#conto-d[open]")
+    expect(d).to_contain_text("chiusura del 25 nov", timeout=4000)
+    expect(d.locator(".sk-dl dt")).to_contain_text(["1 settimana", "1 mese", "3 mesi", "Ultima seduta", "52 settimane"])
+    pg.context.close()
+
+
+def test_i_prezzi_dei_risultati_si_rinnovano_dopo_dieci_minuti(browser, base):
+    ita = json.loads((SITO / "data/indici/ITA.json").read_text(encoding="utf-8"))
+    stato = {"p": 11.11}
+
+    def ita_finto(route):
+        d = json.loads(json.dumps(ita))
+        for x in d["items"]:
+            if x["s"] == "ENI.MI":
+                x["p"] = stato["p"]
+        route.fulfill(status=200, content_type="application/json", body=json.dumps(d))
+
+    pg = apri(browser, base, 1280, rotte=ROTTE, orologio=True)
+    pg.route("**/data/indici/ITA.json*", ita_finto)
+    pronto(pg)
+    pg.fill("#tq", "eni")
+    expect(pg.locator("#tq-l [role=option]").first).to_contain_text("11,11", timeout=3000)
+    stato["p"] = 22.22
+    pg.fill("#tq", "")
+    pg.clock.fast_forward("11:00")
+    pg.locator("#tq").focus()
+    pg.fill("#tq", "eni")
+    expect(pg.locator("#tq-l [role=option]").first).to_contain_text("22,22", timeout=5000)
     pg.context.close()

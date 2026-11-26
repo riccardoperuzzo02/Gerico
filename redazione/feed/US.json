@@ -1,13 +1,20 @@
 {
  "code": "US",
- "asOf": "2026-11-26T19:17:34+00:00",
+ "asOf": "2026-11-26T21:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
+   "desc": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\"",
+   "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
+   "at": "2026-11-26T21:13:17+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Strobe Talbott, Journalist Who Joined Clinton’s State Department, Has Died",
    "desc": "He was a reporter and foreign affairs columnist at Time and then served as deputy secretary of state and president of the Brookings Institution. He was 80.",
    "url": "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
-   "at": "2026-11-26T19:01:51+00:00"
+   "at": "2026-11-26T19:53:46+00:00"
   },
   {
    "source": "CBS News",
@@ -22,13 +29,6 @@
    "desc": "Rain, snow and powerful winds were affecting large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
    "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
    "at": "2026-11-26T18:55:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
-   "desc": "President Donald Trump on Thursday deemed the latest gross domestic product revision a mistake, claiming that it should be \"immediately investigated.\"",
-   "url": "https://www.cnbc.com/2026/11/26/trump-gdp-revision-investigation.html",
-   "at": "2026-11-26T18:44:15+00:00"
   },
   {
    "source": "CNBC",
@@ -92,6 +92,13 @@
    "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
    "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
    "at": "2026-11-26T16:12:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+   "desc": "ETF Action founding partner Mike Akins and GraniteShares CEO Will Rhind react to Nvidia's sharp losses and latest comeback.",
+   "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+   "at": "2026-11-26T16:00:01+00:00"
   },
   {
    "source": "New York Times",
@@ -487,20 +494,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Details on why Macy's postponed its Thanksgiving Day Parade",
-   "desc": "The Macy's Thanksgiving Day Parade, watched by tens of millions of people, including those lining the streets of New York, has been postponed because of weather for the first time ever. Organizers made the announcement Wednesday, just hours after inflating those infamous balloons. Tom Hanson reports and Rob Marciano has the forecast.",
-   "url": "https://www.cbsnews.com/video/details-why-macys-postponed-thanksgiving-day-parade/",
-   "at": "2026-11-26T00:42:35+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
-   "desc": "Automakers in India are poised to sell over 30 million vehicles in the financial year ending March 2027.",
-   "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
-   "at": "2026-11-26T00:12:16+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "11/25: CBS Evening News",
    "desc": "Macy's Thanksgiving Day Parade is postponed until Saturday; Thanksgiving travelers rush to beat bad weather.",
    "url": "https://www.cbsnews.com/video/112526-cbs-evening-news/",
@@ -547,27 +540,6 @@
    "desc": "Ariel Velasquez-Morales, a native of El Salvador, smiled in a picture with a giant check. The image led immigration agents to him, and he is set for deportation.",
    "url": "https://www.nytimes.com/2026/11/25/us/ice-arrest-boston-lottery-winner.html",
    "at": "2026-11-25T21:22:54+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-   "desc": "Whether the Trump administration has investigated Jensen Huang for potential national security risks has been the subject of questions.",
-   "url": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-   "at": "2026-11-25T21:00:08+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Sept. 11 Defendants Get New Opening to Challenge Death Penalty",
-   "desc": "At issue is a clause in a plea deal involving Khalid Shaikh Mohammed, the man accused of being the mastermind of the plot, and two other defendants.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/death-penalty-sept-11-case-guantanamo.html",
-   "at": "2026-11-25T19:52:54+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Why are investors freaking out even as the U.S. economy surges?",
-   "desc": "The economy is sending mixed signals, with growth jumping while stocks gyrate. Here's what economists say is going on.",
-   "url": "https://www.cbsnews.com/news/us-economy-stocks-ai-inflation/",
-   "at": "2026-11-25T19:45:38+00:00"
   }
  ]
 }

@@ -1,0 +1,37 @@
+{
+ "title": "Gaza: un raid israeliano uccide il viceministro dell'Istruzione di Hamas",
+ "section": "mondo",
+ "rank": 18,
+ "status": "live",
+ "summary": "Khaled Abu Nada è morto con la moglie in un attacco a Deir el-Balah. Israele dice che gestiva le finanze di Hamas, che parla di violazione della tregua.",
+ "article": "Khaled Abu Nada, viceministro dell'Istruzione del governo di Gaza guidato da Hamas, è stato ucciso giovedì all'alba con la moglie in un attacco aereo su un appartamento di Deir el-Balah, nel centro della Striscia. Sei persone sono rimaste ferite, alcune in modo grave, dicono i medici dell'ospedale al-Aqsa.\n\nÈ il terzo alto dirigente di Hamas ucciso da Israele da martedì, dopo due responsabili della sicurezza interna. Secondo i medici, altri attacchi e spari nella notte hanno ucciso almeno otto o nove palestinesi, a seconda dei bilanci: tre persone nel campo profughi di Shati, tre nel quartiere di Tuffah e un uomo di 62 anni a Bureij. È la terza notte consecutiva di raid.\n\nIl primo ministro israeliano Benjamin Netanyahu ha detto che l'attacco fa parte di una serie di uccisioni mirate e che nell'ultimo mese sono stati uccisi circa 80 miliziani. L'esercito afferma che Abu Nada guidava il settore economico e la rete bancaria di Hamas, che finanziava le attività armate, e che la sua morte può ridurre le capacità finanziarie e militari del gruppo. Il ministro della Difesa Israel Katz lo ha collegato ai settori economico e dell'istruzione di Hamas. L'esercito non ha commentato le altre sette morti.\n\nHamas ha confermato la morte, senza rispondere alle accuse sul suo ruolo. Dice che colpire accademici e civili è un crimine e una violazione della tregua e del diritto internazionale, e ritiene responsabile il Board of Peace voluto dal presidente americano Donald Trump, che non ha fermato le uccisioni. Un giornalista di Al Jazeera sul posto riferisce che due missili sono stati sparati da elicotteri senza preavviso, durante la preghiera dell'alba, in una zona dove vivono sfollati nelle tende.\n\nLa tregua è in vigore da ottobre. Secondo il portavoce del ministero della Salute di Gaza, Zaher al-Wahidi, da allora sono stati uccisi più di 1.600 palestinesi, 130 solo questo mese. Israele controlla circa due terzi della Striscia, e il disarmo di Hamas, previsto dal piano, non è ancora avvenuto.",
+ "facts": [
+  {"text": "Khaled Abu Nada, viceministro dell'Istruzione del governo di Gaza, è stato ucciso con la moglie in un attacco a Deir el-Balah.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "L'esercito israeliano dice che Abu Nada guidava il settore economico e la rete bancaria di Hamas.", "who": ["Reuters"]},
+  {"text": "Hamas conferma la morte e parla di violazione della tregua.", "who": ["Reuters"]},
+  {"text": "Il ministero della Salute di Gaza dice che dalla tregua di ottobre sono stati uccisi più di 1.600 palestinesi.", "who": ["Al Jazeera", "Reuters"]}
+ ],
+ "view": "Le versioni sono opposte e nessuna è verificabile da fuori: Israele parla di un bersaglio finanziario di Hamas, Hamas di un civile e accademico. Il bilancio dei morti della notte varia da otto a nove a seconda di chi lo dà.\n\nLe uccisioni mirate di tre giorni di fila mettono alla prova una tregua che regge solo in parte. Da guardare: la risposta di Hamas, la posizione del Board of Peace e il numero di morti nelle prossime settimane.",
+ "open": [
+  "Qual è il bilancio definitivo dei morti della notte?",
+  "Hamas risponderà con attacchi o resterà nella tregua?",
+  "Che cosa farà il Board of Peace dopo le accuse di Hamas?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people", "angle": "I bilanci dei medici e del ministero della Salute di Gaza e la testimonianza sul posto.", "date": "2026-11-26"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/26/israel-kills-nine-in-gaza-including-hamas-appointed-deputy-education-minister-officials-say", "angle": "Le accuse dell'esercito israeliano, la risposta di Hamas e il contesto della tregua.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-26T13:19:55+01:00",
+ "updated": "2026-11-26T13:19:55+01:00",
+ "change": "",
+ "tags": ["Gaza", "Medio Oriente", "Israele"],
+ "themes": [],
+ "places": ["PS", "IL"],
+ "city": {"name": "Deir el-Balah", "lat": 31.42, "lon": 34.35},
+ "figure": {"value": "1.600", "label": "i palestinesi uccisi dalla tregua di ottobre, secondo il ministero della Salute di Gaza"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T13:19:55+01:00", "text": "Prima notizia: ucciso a Deir el-Balah il viceministro dell'Istruzione di Hamas."}
+ ]
+}

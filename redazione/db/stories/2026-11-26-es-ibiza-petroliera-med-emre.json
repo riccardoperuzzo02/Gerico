@@ -1,0 +1,37 @@
+{
+ "title": "Spagna: una nave con gasolio affonda al largo di Ibiza, un marinaio morto",
+ "section": "mondo",
+ "rank": 19,
+ "status": "live",
+ "summary": "La Med Emre, battente bandiera maltese, portava fino a 7.000 tonnellate di gasolio. Per ora le autorità non vedono inquinamento e hanno attivato il piano di emergenza.",
+ "article": "La nave cisterna Med Emre, battente bandiera maltese, è affondata nella notte tra mercoledì e giovedì al largo di Ibiza, nelle Baleari. Dei 17 membri dell'equipaggio, tutti soccorsi, uno è morto in ospedale, dicono i servizi di emergenza locali.\n\nLa nave, diretta da Algeciras a Barcellona, trasportava gasolio: il governo delle Baleari stima fino a 7.000 tonnellate. È affondata a una distanza dalla costa che le fonti indicano tra 46 e 56 chilometri. Sei marinai sono stati portati in due ospedali con lesioni lievi, soprattutto per ipotermia. Le autorità non hanno indicato la causa dell'affondamento.\n\nIl ministero dei Trasporti spagnolo dice che la nave di soccorso Guardamar Talia non ha visto relitti, oggetti in superficie o inquinamento nella mattinata di giovedì. La Marina mercantile ha attivato il piano nazionale contro l'inquinamento marino al livello 2, il secondo più alto. Un aereo e la nave anti-inquinamento Clara Campoamor controllano la zona.\n\nIl governo regionale raccoglie informazioni sulle possibili conseguenze prima di decidere altre misure. Nelle acque davanti a Ibiza vivono tartarughe marine, delfini e la berta delle Baleari, un uccello a rischio di estinzione, e ci sono praterie di Posidonia oceanica.",
+ "facts": [
+  {"text": "La Med Emre, nave cisterna maltese, è affondata nella notte al largo di Ibiza.", "who": ["Il Post", "Reuters"]},
+  {"text": "Dei 17 membri dell'equipaggio, tutti soccorsi, uno è morto in ospedale.", "who": ["Il Post", "Reuters"]},
+  {"text": "Il carico era gasolio, fino a 7.000 tonnellate secondo il governo delle Baleari.", "who": ["Il Post", "Reuters"]},
+  {"text": "Il ministero dei Trasporti non ha rilevato inquinamento nella mattinata di giovedì.", "who": ["Reuters"]}
+ ],
+ "view": "Il fatto certo è l'affondamento con una vittima. La causa e un eventuale sversamento non sono noti: la prima assenza di inquinamento osservata nella mattinata non esclude perdite nelle ore successive.\n\nLa quantità di gasolio a bordo e la zona protetta rendono decisive le prossime ore. Da guardare: i controlli sul relitto e le indagini sulla causa.",
+ "open": [
+  "Perché la nave è affondata?",
+  "Il gasolio è già fuoriuscito dal relitto?",
+  "A quale profondità si trova il relitto?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/26/nave-cisterna-gasolio-affondata-ibiza/", "angle": "Nave, equipaggio, carico stimato dal governo delle Baleari e fauna dell'area.", "date": "2026-11-26"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/26/crew-member-dies-after-diesel-tanker-sinks-off-ibiza-spain-launches-pollution-plan", "angle": "Le dichiarazioni del ministero dei Trasporti e il piano anti-inquinamento.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-26T13:19:55+01:00",
+ "updated": "2026-11-26T13:19:55+01:00",
+ "change": "",
+ "tags": ["Spagna", "Incidenti", "Ambiente"],
+ "themes": [],
+ "places": ["ES"],
+ "city": {"name": "Ibiza", "lat": 38.91, "lon": 1.43},
+ "figure": {"value": "7.000 t", "label": "il gasolio a bordo, secondo il governo delle Baleari"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T13:19:55+01:00", "text": "Prima notizia: affondata la Med Emre al largo di Ibiza."}
+ ]
+}

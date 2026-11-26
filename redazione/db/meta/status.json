@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: fiducia Gfk, M3 e prestiti all'economia non ancora pubblicati nelle fonti cercate. Il calendario non aveva altri eventi da aggiungere."
   },
   "lastPublish": {
-    "at": "2026-11-26T12:11:14+01:00",
-    "esito": "Giro agenda su GitHub; check_dump.py: 2 correzioni; brevi.py: 13 brevi copiate; riepilogo.py: riepilogo copiato (245 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-26T13:21:10+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (245 parole); titoli.py: nessun titolo nel database; cancellate 1 storie archiviate da più di 7 giorni."
   },
-  "lastRun": "2026-11-26T07:26:00+01:00",
+  "lastRun": "2026-11-26T13:20:42+01:00",
   "marketsRun": {
     "at": "2026-11-25T18:46:42+01:00",
     "esito": "Aggiornati Ftse Mib (-1,81%), Dax (-1,26%), Cac 40 (circa -0,75%), Ftse 100 (circa -0,38%), spread Btp-Bund (111,9) e gas TTF (86 euro). Aex e Smi non trovati. Agenda lasciata com'era: nessun nuovo dato nelle pagine aperte."
@@ -29,13 +29,13 @@
     "esito": "US 2 nuove (Iowa detonazione, Fcc-ABC)/0/1 archiviata (Iowa 24/11); GB 2 nuove (Poundland, trattati Ue)/0/1 archiviata (Capita); FR 1 nuova (Bardella)/0/0; DE 1 nuova (pensione a 63 anni)/0/0; ES 1 nuova (dibattito 29-N)/0/0. Molte storie da feed, articoli letti solo per Iowa, Fcc-ABC e Bardella. Nessuna foto, resta la mappa."
   },
   "quality": {
-    "articlesDiscarded": 3,
-    "articlesRead": 34,
-    "at": "2026-11-26T07:26:00+01:00",
-    "factsChecked": 5,
-    "factsCorrected": 2,
-    "storiesArchived": 8,
-    "storiesNew": 10,
+    "articlesDiscarded": 0,
+    "articlesRead": 8,
+    "at": "2026-11-26T13:20:42+01:00",
+    "factsChecked": 2,
+    "factsCorrected": 0,
+    "storiesArchived": 0,
+    "storiesNew": 2,
     "storiesUpdated": 0
   },
   "riscrittura": {
@@ -43,5 +43,5 @@
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 23
+  "storiesLive": 25
 }

@@ -1,20 +1,111 @@
 {
  "code": "ES",
- "asOf": "2026-11-26T11:17:34+00:00",
+ "asOf": "2026-11-26T13:17:41+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "España|ELECCIONES 29-N",
+   "desc": "A pocos días de la gran final de las elecciones, FUTURE MAKERS cita al joven político en una cancha de futbito. \"Como madridista, creo en las remontadas y pronostico una victoria de Sánchez\" Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/26/6b06dc28fc6c83cb3b8b459c.html",
+   "at": "2026-11-26T13:14:05+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La Diputación Permanente convalida sus últimos cinco decretos antes del 29N entre críticas de la oposición y la ausencia de Vox",
+   "desc": "El PP ha votado a favor de tres de ellos, pero ha criticado la \"cara dura\" del Gobierno al acelerar la aprobación normativa en plena campaña electoral.",
+   "url": "https://www.20minutos.es/nacional/diputacion-permanente-convalida-sus-ultimos-cinco-decretos-antes-29n-entre-criticas-oposicion-ausencia-vox_7066199_0.html",
+   "at": "2026-11-26T12:53:05+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "Testifica en la Audiencia Nacional que trasladó \"en tiempo real\" con llamadas y mensajes lo que le había transmitido el servicio de información Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/26/6b082288fc6c831a088b4574.html",
+   "at": "2026-11-26T12:40:19+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los alumnos de ESO que usan redes sociales más de 3 horas al día obtienen peores resultados académicos, según un estudio",
+   "desc": "La Fundación BBVA ha publicado este jueves una investigación con 200.000 estudiantes según la cual el rendimiento baja cuando el abuso de pantallas se produce entre semana, pero no afecta si este se realiza en fines de semana.",
+   "url": "https://www.20minutos.es/nacional/los-alumnos-eso-que-usan-redes-sociales-mas-3-horas-dia-obtienen-peores-resultados-academicos-segun-un-estudio_7066195_0.html",
+   "at": "2026-11-26T12:37:17+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "El Congreso convalida más decretos sociales con subidas salariales a los funcionarios y mejoras fiscales",
+   "desc": "Vox planta la Diputación Permanente porque cree que no representa la Cámara y tilda las normas de electoralistas",
+   "url": "https://elpais.com/espana/2026-11-26/el-congreso-convalida-mas-decretos-sociales-con-subidas-salariales-a-los-funcionarios-y-mejoras-fiscales.html",
+   "at": "2026-11-26T12:36:06+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Un juez en activo entra en “campaña” con un vídeo en redes contra el Gobierno, el PSOE y la periodista Silvia Intxaurrondo",
+   "desc": "El magistrado Ruiz de Lara, al que el Consejo ya abrió un expediente que acabó archivado, comparte una grabación con mofas e insultos a ministros y altos cargos",
+   "url": "https://elpais.com/espana/2026-11-26/un-juez-en-activo-entra-en-campana-con-un-video-en-redes-contra-el-gobierno-el-psoe-y-la-periodista-silvia-intxaurrondo.html",
+   "at": "2026-11-26T12:34:59+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "La instructora, amenazada por las cloacas de Ferraz, ha visto reducida su protección policial. Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/26/6b082497fc6c83625b8b457d.html",
+   "at": "2026-11-26T12:31:54+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Muere un marinero tras el naufragio de un buque cargado de combustible cerca de Ibiza",
+   "desc": "Seis de los 17 tripulantes, de nacionalidades turca e india, han resultado heridos leves en el carguero accidentado, que transportaba 7.000 toneladas de carburante. Detectadas unas “irisaciones” o reflejos de combustible",
+   "url": "https://elpais.com/espana/2026-11-26/muere-un-marinero-en-el-hundimiento-de-un-buque-cargado-de-combustible-cerca-de-ibiza.html",
+   "at": "2026-11-26T12:20:47+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El cónsul de Tetuán declara que trasladó al embajador que había recibido avisos de que la frontera en Ceuta estaba \"caliente\"",
+   "desc": "La jueza solicitará al Gobierno desclasificar las comunicaciones entre el cónsul de España en Tetuán y el embajador de España en Marruecos.",
+   "url": "https://www.20minutos.es/nacional/consul-tetuan-declara-que-traslado-embajador-que-habia-recibido-avisos-que-frontera-ceuta-estaba-caliente_7066172_0.html",
+   "at": "2026-11-26T12:18:56+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La UCO apunta a \"posibles irregularidades\" en la obra del túnel de Belate adjudicada a una empresa vinculada a Santos Cerdán",
+   "desc": "La investigación señala deficiencias en los criterios de adjudicación de una obra de 62,8 millones otorgada a una UTE de Acciona y Servinabar, vinculada a Santos Cerdán.",
+   "url": "https://www.20minutos.es/nacional/uco-apunta-posibles-irregularidades-obra-tunel-belate-adjudicada-una-empresa-vinculada-santos-cerdan_7066110_0.html",
+   "at": "2026-11-26T11:57:20+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Los nuevos partidos y coaliciones a los que podrás votar en las elecciones generales del 29 de noviembre",
+   "desc": "El mapa electoral incorpora nuevas alianzas y proyectos políticos que buscan hacerse un hueco en el Congreso y el Senado este 29N.",
+   "url": "https://www.20minutos.es/nacional/nuevos-partidos-coaliciones-podras-votar-elecciones-generales-29-noviembre_7066025_0.html",
+   "at": "2026-11-26T11:42:19+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Sí, las papeletas que envían los partidos políticos son válidas para votar, pese a la confusión en redes sociales",
+   "desc": "La Junta Electoral Central ha explicado a INFOVERITAS que las formaciones pueden imprimir las papeletas marcadas y que los electores pueden llevarlas el 29-N para votar. Comprobado.es, una alianza de verificadores y medios contra la desinformación electoral.",
+   "url": "https://www.20minutos.es/nacional/si-las-papeletas-que-envian-los-partidos-politicos-son-validas-para-votar-pese-confusion-redes-sociales_7066141_0.html",
+   "at": "2026-11-26T11:39:50+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Una magistrada propone juzgar a un concejal del PP por agredir al delegado del Gobierno en Cantabria en plena precampaña",
+   "desc": "Hasta media docena de testigos confirman que el edil conservador se dirigió a Casares de “forma airada” y, “como mínimo”, le “tocó la cara” mientras le lanzaba reproches",
+   "url": "https://elpais.com/espana/2026-11-26/una-magistrada-propone-juzgar-a-un-concejal-del-pp-por-agredir-al-delegado-del-gobierno-en-cantabria-en-plena-precampana.html",
+   "at": "2026-11-26T11:27:21+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Benita se 'moja' con el Gordo de la Lotería de Navidad 2026 y adelanta cuál será el número ganador",
+   "desc": "La vidente ha lanzado su predicción de cuál será el número premiado con el primer premio de este sorteo.",
+   "url": "https://www.20minutos.es/loterias/loteria-navidad/benita-moja-gordo-loteria-navidad-2026-adelanta-cual-sera-numero-ganador_7066052_0.html",
+   "at": "2026-11-26T11:14:26+00:00"
+  },
   {
    "source": "20minutos",
    "title": "Madrid y Andalucía denuncian que el Gobierno prorrogue ayudas al transporte en 2027 sin haberles pagado el adelanto de 2026",
    "desc": "De momento, lo único que hay es una resolución provisional de Transportes de mitad de noviembre sobre el reintegro de la parte de la ayuda que adelantan las comunidades y corresponde al Gobierno y que contempla cifras menores a las gastadas.",
    "url": "https://www.20minutos.es/nacional/madrid-andalucia-denuncian-que-gobierno-prorrogue-ayudas-transporte-2027-sin-haberles-pagado-adelanto-2026_7066067_0.html",
    "at": "2026-11-26T11:06:48+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Muere un marinero tras el naufragio de un buque cargado de combustible cerca de Ibiza",
-   "desc": "Seis de los 17 tripulantes, de nacionalidades turca e india, han resultado heridos leves en el carguero accidentado, que transportaba 7.000 toneladas de carburante. Salvamento Marítimo no ha detectado “objetos flotantes ni indicios de contaminación” en su informe",
-   "url": "https://elpais.com/espana/2026-11-26/muere-un-marinero-en-el-hundimiento-de-un-buque-cargado-de-combustible-cerca-de-ibiza.html",
-   "at": "2026-11-26T10:48:47+00:00"
   },
   {
    "source": "20minutos",
@@ -133,27 +224,6 @@
    "title": "Qué queda de Ciudadanos: 1.500 afiliados, 400 concejales y cinco trabajadores en una sede de Madrid",
    "desc": "El partido concurre en coalición con Democracia 21, el partido de Miriam González, el próximo 29 de noviembre. Cs ha cedido sus oficinas a la nueva formación, con la que colabora en la campaña",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/que-queda-de-ciudadanos-1500-afiliados-400-concejales-y-cinco-trabajadores-en-una-sede-de-madrid.html",
-   "at": "2026-11-26T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Carolina Yuste: “A veces tengo que decirme: ‘Bueno, chica, hoy relájate, hoy formas parte del sistema”",
-   "desc": "“Las acciones individuales son necesarias, pero la presión hay que hacerla hacia lo gubernamental, porque ahí es donde está la gran mandanga”, dice la actriz ganadora de dos Goya",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/carolina-yuste-a-veces-tengo-que-decirme-bueno-chica-hoy-relajate-hoy-formas-parte-del-sistema.html",
-   "at": "2026-11-26T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Los medios públicos, entre la continuidad o la reforma radical propugnada por PP y Vox",
-   "desc": "La oposición quiere auditar las cuentas de RTVE y cambiar su gestión pese al actual liderazgo en audiencias",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/los-medios-publicos-entre-la-continuidad-o-la-reforma-radical-propugnada-por-pp-y-vox.html",
-   "at": "2026-11-26T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La agenda animal ante el 29-N: PP y Vox se centran en la caza y la tauromaquia y la izquierda en el bienestar",
-   "desc": "Frente Amplio presenta un programa de 37 puntos, mientras que el PP solo hace dos propuestas",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/la-agenda-animal-ante-el-29-n-pp-y-vox-se-centran-en-la-caza-y-la-tauromaquia-y-la-izquierda-en-el-bienestar.html",
    "at": "2026-11-26T04:30:01+00:00"
   },
   {
@@ -276,32 +346,11 @@
    "at": "2026-11-25T23:02:25+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Feijóo asegura que hay que \"reforzar\" la \"custodia de las sacas\" donde se guarda el voto por correo en su entrevista con Plex",
-   "desc": "El líder del PP ha evitado afirmar que pone \"la mano en el fuego\" en esta parte del proceso.",
-   "url": "https://www.20minutos.es/nacional/feijoo-asegura-que-hay-que-reforzar-custodia-las-sacas-donde-se-guarda-voto-por-correo-su-entrevista-con-plex_7065920_0.html",
-   "at": "2026-11-25T22:16:44+00:00"
-  },
-  {
    "source": "El País",
    "title": "Dos horas con Plex: Sánchez sueña con ser juez en el ‘GTA VI’ y Feijóo tiembla en un coche a 247 kilómetros por hora",
    "desc": "El ‘youtuber’ zamorano de 24 años invita por primera vez en su canal, con 15 millones de seguidores, a los dirigentes de PSOE y PP",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-25/dos-horas-con-plex-sanchez-suena-con-ser-juez-en-el-gta-vi-y-feijoo-tiembla-en-un-coche-a-247-kilometros-por-hora.html",
    "at": "2026-11-25T22:06:52+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Las calles de España claman contra la violencia de género en un 25N marcado por el luto: \"Necesitamos justicia real para sanar\"",
-   "desc": "Muchas ciudades han albergado este miércoles dos marchas divididas por las discrepancias del movimiento feminista pero unidas contra los crímenes machistas por el Día Internacional contra la Eliminación de esta lacra. En la convocada en Madrid por la Comisión 8M han participado Irene Montero y Ada Colau, mientras que en la otra se encontraban Begoña Gómez y algunos representantes del PP.",
-   "url": "https://www.20minutos.es/nacional/las-calles-espana-claman-contra-violencia-genero-un-25n-marcado-por-luto-necesitamos-justicia-real-para-sanar_7065740_0.html",
-   "at": "2026-11-25T22:02:15+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez apuesta por incentivos fiscales a propietarios frente al \"punitivismo\" de sus socios de izquierda en la entrevista con Plex",
-   "desc": "El presidente del Gobierno agradece al 'youtuber' que pague impuestos en España.",
-   "url": "https://www.20minutos.es/nacional/sanchez-apuesta-por-incentivos-fiscales-propietarios-frente-punitivismo-sus-socios-izquierda-entrevista-con-plex_7065919_0.html",
-   "at": "2026-11-25T21:57:00+00:00"
   },
   {
    "source": "El Mundo",
@@ -325,13 +374,6 @@
    "at": "2026-11-25T21:45:19+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Begoña Gómez participa en la manifestación del Movimiento Feminista por el 25N en Madrid: \"Machista el que no bote\"",
-   "desc": "En un momento de la marcha, la esposa de Sánchez ha cogido un micrófono para entonar proclamas feministas.",
-   "url": "https://www.20minutos.es/nacional/begona-gomez-participa-manifestacion-25n-madrid-junto-dirigentes-psoe-tope-con-las-mujeres-por-supuesto_7065909_0.html",
-   "at": "2026-11-25T21:18:28+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Los desafíos de España (9)|El compromiso con la Defensa",
    "desc": "El teniente general Lázaro, actual comandante del Eurocuerpo, analiza los desafíos de España para comprometer a los ciudadanos con la defensa Leer",
@@ -339,32 +381,11 @@
    "at": "2026-11-25T21:16:10+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Feijóo llama a culminar el cambio el domingo para que gane \"la decencia\": \"Echaremos a los delincuentes del Gobierno\"",
-   "desc": "En un mitin en Madrid con 10.000 asistentes junto a Isabel Díaz Ayuso y José Luis Martínez-Almeida, el candidato popular ha prometido \"más viviendas, menos ministerios y más soluciones\".",
-   "url": "https://www.20minutos.es/nacional/feijoo-llama-culminar-cambio-domingo-para-que-gane-decencia-echaremos-los-delincuentes-gobierno_7065893_0.html",
-   "at": "2026-11-25T20:59:10+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Así han sido las manifestaciones del 25N en toda España",
-   "desc": "Miles de personas han tomado las calles de toda España este 25 de noviembre para alzar la voz contra la violencia machista.",
-   "url": "https://www.20minutos.es/nacional/asi-han-sido-las-manifestaciones-25n-toda-espana_7065908_1.html",
-   "at": "2026-11-25T20:55:42+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "España",
    "desc": "Han intervenido decenas de agentes y se han registrado varias viviendas del municipio donde residen trabajadores estacionales Leer",
    "url": "https://www.elmundo.es/espana/2026/11/25/6b070fd5e9cf4a2b148b456e.html",
    "at": "2026-11-25T16:48:41+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Redondo, en la protesta del 25N en Valladolid: \"La violencia de género y el machismo matan y el negacionismo es cómplice\"",
-   "desc": "Unas 3.000 personas, según los organizadores, han acudido a la manifestación en la que ha participado la ministra de Igualdad.",
-   "url": "https://www.20minutos.es/nacional/manifestaciones-25n-directo-espana-sale-calle-por-dia-internacional-eliminacion-violencia-contra-mujer_7065747_6.html",
-   "at": "2026-11-25T16:41:09+00:00"
   },
   {
    "source": "El Mundo",
@@ -407,27 +428,6 @@
    "desc": "Admite a trámie una querella de Vox contra la ex militante del PSOE y Juan Manuel Serrano y los cita a declarar el 9 de diciembre Leer",
    "url": "https://www.elmundo.es/espana/2026/11/25/6b06dd84e85ece0e448b45af.html",
    "at": "2026-11-25T13:23:11+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Defensa",
-   "desc": "En 'Las claves de la guerra' desgrana el funcionamiento de los conflictos actuales y analiza lo que le falta a España Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/25/6b05a1e021efa03f778b458f.html",
-   "at": "2026-11-25T12:33:12+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "Acuerda que se mantenga el régimen de semilibertad en el que se encuentra",
-   "url": "https://www.elmundo.es/espana/2026/11/25/6b06cf7a21efa0f96d8b457e.html",
-   "at": "2026-11-25T12:12:26+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Los centros de datos recurren en el Supremo y solicitan la suspensión del decreto que los regula con criterios energéticos que rechazan",
-   "desc": "La patronal del sector, DC Spain, impugna la norma por su carácter retroactivo, por su tramitación urgente y porque el Gobierno la justifica aludiendo a consumos eléctricos de estas instalaciones en Irlanda o País Bajos que son muy superioriores a los que hacen hoy en España.",
-   "url": "https://www.20minutos.es/nacional/los-centros-datos-recurren-supremo-solicitan-suspension-decreto-que-los-regula-con-criterios-energeticos-que-rechazan_7065579_0.html",
-   "at": "2026-11-25T12:11:28+00:00"
   }
  ]
 }

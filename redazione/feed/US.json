@@ -1,7 +1,70 @@
 {
  "code": "US",
- "asOf": "2026-11-26T05:17:34+00:00",
+ "asOf": "2026-11-26T07:17:37+00:00",
  "items": [
+  {
+   "source": "NPR",
+   "title": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical",
+   "desc": "The Trump administration gave Elon Musk's SpaceX the green light to deploy 1 million satellites that it said would create data centers in space, a move that has raised skepticism among scientists.",
+   "url": "https://www.npr.org/2026/11/26/g-s1-155940/fcc-spacex-satellites-data-centers-in-space",
+   "at": "2026-11-26T06:53:09+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Wealthy Europeans are looking beyond the stock market amid the AI sell-off",
+   "desc": "High-net-worth investors are looking to alternatives as turbulent markets continue to raise questions about the outlook for traditional assets.",
+   "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
+   "at": "2026-11-26T06:48:12+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+   "desc": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
+   "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+   "at": "2026-11-26T06:39:34+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Andy Taylor, guitarist of new wave icons Duran Duran, dies at 65",
+   "desc": "Taylor revealed his battle with Stage 4 metastatic prostate cancer in 2022. He was the guitarist of the 1980s English band Duran Duran, whose pop hits included \"Hungry Like the Wolf\" and \"Rio\".",
+   "url": "https://www.npr.org/2026/11/26/g-s1-155934/andy-taylor-duran-duran-obit",
+   "at": "2026-11-26T06:34:20+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Steelers cut Aaron Rodgers after the QB rips coach Mike McCarthy on TV",
+   "desc": "The move capped a chaotic 18 hours in which the team announced it was benching the 42-year-old future Hall of Famer for backup Mason Rudolph ahead of Friday's visit from Denver.",
+   "url": "https://www.npr.org/2026/11/26/nx-s1-6054760/steelers-cut-aaron-rodgers",
+   "at": "2026-11-26T06:26:03+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
+   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
+   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
+   "at": "2026-11-26T05:58:39+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "North Korea's Kim calls for nuclear arsenal expansion, says status 'will never change'",
+   "desc": "Kim Jong Un called for wider use of tactical nuclear weapons and an expanded arsenal, rejecting international denuclearization pressure.",
+   "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
+   "at": "2026-11-26T05:50:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
+   "desc": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
+   "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
+   "at": "2026-11-26T05:36:01+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
+   "desc": "A federal judge has blocked the Trump administration from moving to review all local broadcast licenses held by ABC. The stations air in six of the largest U.S. markets.",
+   "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
+   "at": "2026-11-26T05:23:18+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Flights at Miami Airport Are Disrupted After FedEx Jet Overshoots Runway",
@@ -70,7 +133,7 @@
    "title": "Maps show where Thanksgiving storms could disrupt holiday",
    "desc": "Rain, snow and powerful winds were forecast to impact large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
    "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
-   "at": "2026-11-26T03:19:33+00:00"
+   "at": "2026-11-26T03:19:00+00:00"
   },
   {
    "source": "CNBC",
@@ -120,20 +183,6 @@
    "desc": "Norse Atlantic suspended flights as it warned its financial position was \"critical.\" The airline is seeking short-term financing and exploring a potential takeover.",
    "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
    "at": "2026-11-26T01:52:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
-   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
-   "at": "2026-11-26T01:46:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-   "desc": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
-   "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-   "at": "2026-11-26T01:34:58+00:00"
   },
   {
    "source": "CBS News",
@@ -200,13 +249,6 @@
   },
   {
    "source": "CNBC",
-   "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-   "desc": "SpaceX said it will donate one share of the company's class A stock to every active Trump Account, and CEO Elon Musk would match it.",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-   "at": "2026-11-26T00:27:52+00:00"
-  },
-  {
-   "source": "CNBC",
    "title": "Inside India newsletter: Roaring economy, foreign investors’ return and now record auto sales",
    "desc": "Automakers in India are poised to sell over 30 million vehicles in the financial year ending March 2027.",
    "url": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
@@ -256,16 +298,16 @@
   },
   {
    "source": "CBS News",
-   "title": "11/25: The Takeout with Major Garrett",
-   "desc": "Weather postpones Macy's Thanksgiving Day Parade; Trump introduces new tariffs on China, the EU and major trading partners.",
-   "url": "https://www.cbsnews.com/video/112526-the-takeout-with-major-garrett/",
+   "title": "Would A Brain Surgeon Let His Kids Play Football?",
+   "desc": "A new study of 235 donated NFL brains found CTE in 215 of them. Dr. Myron Rolle is a former college All-American and NFL player who is now a pediatric neurosurgeon. We ask him about his experience, his expertise and the advice he gives to parents when they ask if America's most popular pastime can still be made safe enough for our children. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
+   "url": "https://www.cbsnews.com/video/would-a-brain-surgeon-let-his-kids-play-football/",
    "at": "2026-11-25T22:00:00+00:00"
   },
   {
    "source": "CBS News",
-   "title": "Would A Brain Surgeon Let His Kids Play Football?",
-   "desc": "A new study of 235 donated NFL brains found CTE in 215 of them. Dr. Myron Rolle is a former college All-American and NFL player who is now a pediatric neurosurgeon. We ask him about his experience, his expertise and the advice he gives to parents when they ask if America's most popular pastime can still be made safe enough for our children. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
-   "url": "https://www.cbsnews.com/video/would-a-brain-surgeon-let-his-kids-play-football/",
+   "title": "11/25: The Takeout with Major Garrett",
+   "desc": "Weather postpones Macy's Thanksgiving Day Parade; Trump introduces new tariffs on China, the EU and major trading partners.",
+   "url": "https://www.cbsnews.com/video/112526-the-takeout-with-major-garrett/",
    "at": "2026-11-25T22:00:00+00:00"
   },
   {
@@ -469,7 +511,7 @@
    "title": "With Measles on the Rise, Some Families Are Forgoing Thanksgiving Travel",
    "desc": "With measles cases on the rise, some new parents are choosing not to travel, unwilling to chance airplanes, trains or even drives into areas with high infection rates.",
    "url": "https://www.nytimes.com/2026/11/25/us/measles-cases-thanksgiving.html",
-   "at": "2026-11-25T16:28:42+00:00"
+   "at": "2026-11-25T16:28:43+00:00"
   },
   {
    "source": "CNBC",
@@ -584,53 +626,11 @@
    "at": "2026-11-25T12:48:48+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
-   "desc": "The extreme market gyrations and the drama surrounding Nvidia this past week have highlighted the dilemma facing Federal Reserve Chairman Kevin Warsh.",
-   "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-   "at": "2026-11-25T12:26:41+00:00"
-  },
-  {
    "source": "NPR",
    "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
    "desc": "Authorities have evacuated a 5-mile radius to prepare to dispose of thousands of pounds of lead azide. And, after a nearly two-year legal battle, Kilmar Abrego Garcia's has voluntarily left the U.S.",
    "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
    "at": "2026-11-25T12:18:09+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Army’s Explosion in Iowa Raises Fears of Lead Cloud",
-   "desc": "Environmental Protection Agency technicians took soil samples on Tuesday around homes in the town of Augusta, Iowa, just south of the Iowa Army Ammunition Plant in Middletown, Iowa.",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/iowa-lead-cloud-explainer",
-   "at": "2026-11-25T12:11:15+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Republican wants FBI and CIA answers before questioning Nvidia chief",
-   "desc": "\"The public is rightly concerned,\" says the Republican lawmaker, who wants to know what the FBI and CIA knew about potential national security threats and whether Jensen Huang was warned.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6052417/nvidia-jensen-huang-reaction-republicans-congress-investigation",
-   "at": "2026-11-25T11:50:05+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "The Army’s plan relies on a complex series of steps and roughly 3,000 pounds of C4.",
-   "desc": "",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/the-armys-plan-relies-on-a-complex-series-of-steps-and-roughly-3000-pounds-of-c4",
-   "at": "2026-11-25T11:37:04+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
-   "desc": "Climbing tall mountains like Kilimanjaro is a study in contrasts — from beating sun to freezing nights, fire and snow.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania",
-   "at": "2026-11-25T11:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "An explosion is coming to Iowa, and residents can’t do a thing about it.",
-   "desc": "Residents of Middletown, Iowa, have spent the week preparing for the Army to detonate.",
-   "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/an-explosion-is-coming-to-iowa-and-residents-cant-do-a-thing-about-it",
-   "at": "2026-11-25T10:47:55+00:00"
   }
  ]
 }

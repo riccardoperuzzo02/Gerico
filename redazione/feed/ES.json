@@ -1,7 +1,21 @@
 {
  "code": "ES",
- "asOf": "2026-11-26T05:17:34+00:00",
+ "asOf": "2026-11-26T07:17:37+00:00",
  "items": [
+  {
+   "source": "El País",
+   "title": "Muere un marinero tras el hundimiento de un buque cargado de combustible cerca de Ibiza",
+   "desc": "Seis de los 17 tripulantes han resultado heridos leves en el naufragio del carguero, que transportaba 1,2 millones de litros de gasóleo. El Gobierno ha activado el Plan Nacional de Contingencias por Contaminación Marítima en nivel dos",
+   "url": "https://elpais.com/espana/2026-11-26/muere-un-marinero-en-el-hundimiento-de-un-buque-cargado-de-combustible-cerca-de-ibiza.html",
+   "at": "2026-11-26T06:57:55+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Sánchez: “Estamos tocando con la yema de los dedos la mayoría progresista, si llegamos al 75% la podemos tener”",
+   "desc": "“Feijóo y Abascal practican un trumpismo preventivo. Tengo dudas de que reconozcan el resultado electoral si no suman”, asegura",
+   "url": "https://elpais.com/espana/2026-11-26/sanchez-estamos-tocando-con-la-yema-de-los-dedos-la-mayoria-progresista-si-llegamos-al-75-la-podemos-tener.html",
+   "at": "2026-11-26T04:30:01+00:00"
+  },
   {
    "source": "El País",
    "title": "Sánchez, Feijóo, Abascal y Colau afrontan un debate clave para la definición de los dos bloques ante el 29-N",
@@ -18,16 +32,16 @@
   },
   {
    "source": "El País",
-   "title": "Qué queda de Ciudadanos: 1.500 afiliados, 400 concejales y cinco trabajadores en una sede de Madrid",
-   "desc": "El partido concurre en coalición con Democracia 21, el partido de Miriam González, el próximo 29 de noviembre. Cs ha cedido sus oficinas a la nueva formación, con la que colabora en la campaña",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/que-queda-de-ciudadanos-1500-afiliados-400-concejales-y-cinco-trabajadores-en-una-sede-de-madrid.html",
+   "title": "Los medios públicos, entre la continuidad o la reforma radical propugnada por PP y Vox",
+   "desc": "La oposición quiere auditar las cuentas de RTVE y cambiar su gestión pese al actual liderazgo en audiencias",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/los-medios-publicos-entre-la-continuidad-o-la-reforma-radical-propugnada-por-pp-y-vox.html",
    "at": "2026-11-26T04:30:01+00:00"
   },
   {
    "source": "El País",
-   "title": "Los medios públicos, entre la continuidad o la reforma radical propugnada por PP y Vox",
-   "desc": "La oposición quiere auditar las cuentas de RTVE y cambiar su gestión pese al actual liderazgo en audiencias",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/los-medios-publicos-entre-la-continuidad-o-la-reforma-radical-propugnada-por-pp-y-vox.html",
+   "title": "Qué queda de Ciudadanos: 1.500 afiliados, 400 concejales y cinco trabajadores en una sede de Madrid",
+   "desc": "El partido concurre en coalición con Democracia 21, el partido de Miriam González, el próximo 29 de noviembre. Cs ha cedido sus oficinas a la nueva formación, con la que colabora en la campaña",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/que-queda-de-ciudadanos-1500-afiliados-400-concejales-y-cinco-trabajadores-en-una-sede-de-madrid.html",
    "at": "2026-11-26T04:30:01+00:00"
   },
   {
@@ -60,6 +74,55 @@
   },
   {
    "source": "20minutos",
+   "title": "El debate definitivo: Sánchez, Feijóo, Abascal y Colau se enfrentan a tres días de un 29N que puede cambiar el rumbo político de España",
+   "desc": "El PP apunta a que llegan a la cita reforzados tras el cara a cara aunque apela a la prudencia mientras Moncloa apunta a que se verá a un Sánchez \"presidencial\". Frente Amplio irá a \"desmentir los bulos\" de la derecha y Vox destaca el objetivo común de evitar un nuevo Gobierno de izquierdas.",
+   "url": "https://www.20minutos.es/nacional/debate-definitivo-sanchez-feijoo-abascal-colau-se-enfrentan-tres-dias-un-29n-que-puede-cambiar-rumbo-politico-espana_7065783_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Así será el debate a cuatro: dos horas de duración y 5 bloques",
+   "desc": "El encuentro entre los líderes de PSOE, PP, Vox y Frente Amplio está organizado por la Academia de Televisión y abordará temas como la vivienda, la lucha contra la corrupción y la migración.",
+   "url": "https://www.20minutos.es/nacional/asi-sera-debate-cuatro-hoy-sanchez-feijoo-abascal-colau-dos-horas-duracion-cinco-bloques-tematicos_7065688_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "¿Puede votar Puigdemont este domingo 29-N? Existe un modo para que pueda hacerlo... y le caduca hoy",
+   "desc": "El líder independentista no ha tenido tiempo de ser el cabeza de lista de Junts, pero ¿tiene aún tiempo y posibilidad de ejercer el derecho al voto?",
+   "url": "https://www.20minutos.es/nacional/puede-votar-puigdemont-este-domingo-29-n-existe-un-modo-para-que-pueda-hacerlo-le-caduca-este-jueves_7065515_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La petición de los jóvenes que votarán por primera vez: \"Que nos den confianza y no jueguen con la gente\"",
+   "desc": "En torno a 1,6 millones de españoles han alcanzado la mayoría de edad después de la última convocatoria en 2023. Entre las principales preocupaciones de los entrevistados por '20minutos' resuenan la vivienda, los salarios, el empleo, la salud, la educación y las pensiones, entre otras.",
+   "url": "https://www.20minutos.es/nacional/peticion-los-jovenes-que-votaran-por-primera-vez-las-elecciones-29n-que-nos-den-confianza-no-jueguen-con-gente_7065270_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "De bajar el IVA a limitar precios: las ideas de los lectores de 20minutos para abaratar la compra y llegar mejor a fin de mes",
+   "desc": "El 45% de los usuarios del periódico aboga por reducir impuestos y uno de cada tres vería con buenos ojos controlar precios y limitar márgenes de beneficios. Alimentos, gasolinas y energía son las partidas que más duelen en el bolsillo.",
+   "url": "https://www.20minutos.es/nacional/bajar-iva-limitar-precios-las-ideas-los-lectores-20minutos-para-abaratar-compra-llegar-mejor-fin-mes_7065663_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Así se ve el 29-N desde el Parlamento Europeo: del \"referente de la Europa progresista\" a \"una nueva etapa y liderazgo\" sin Sánchez",
+   "desc": "Los eurodiputados hablan con 20minutos sobre qué esperan de las elecciones generales y el peso de la UE en la campaña.",
+   "url": "https://www.20minutos.es/nacional/asi-se-ve-29-n-desde-parlamento-europeo-referente-europa-progresista-una-nueva-etapa-liderazgo-sin-sanchez_7064403_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Leire Díez intervino en la adjudicación de un contrato de Correos de 790.000 euros a una empresa cercana al expresidente de la SEPI",
+   "desc": "Una jueza de Madrid ha pedido información por este contrato adjudicado a Trade Intermedia, que tiene vínculos con el imputado Vicente Fernández.",
+   "url": "https://www.20minutos.es/nacional/leire-diez-intervino-adjudicacion-un-contrato-correos-790-000-euros-una-empresa-cercana-expresidente-sepi_7065638_0.html",
+   "at": "2026-11-26T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
    "title": "Un día no es suficiente",
    "desc": "Un día contra la Eliminación de la Violencia contra la Mujer no es suficiente. Mientras miles de personas decían ‘basta ya’ en la calle, fallecía otra mujer en Murcia, Verónica.",
    "url": "https://www.20minutos.es/nacional/un-dia-no-es-suficiente_7065917_3.html",
@@ -74,37 +137,9 @@
   },
   {
    "source": "20minutos",
-   "title": "El debate definitivo: Sánchez, Feijóo, Abascal y Colau se enfrentan a tres días de un 29N que puede cambiar el rumbo político de España",
-   "desc": "El PP apunta a que llegan a la cita reforzados tras el cara a cara aunque apela a la prudencia mientras Moncloa apunta a que se verá a un Sánchez \"presidencial\". Frente Amplio irá a \"desmentir los bulos\" de la derecha y Vox destaca el objetivo común de evitar un nuevo Gobierno de izquierdas.",
-   "url": "https://www.20minutos.es/nacional/debate-definitivo-sanchez-feijoo-abascal-colau-se-enfrentan-tres-dias-un-29n-que-puede-cambiar-rumbo-politico-espana_7065783_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Así será el debate a cuatro de hoy entre Sánchez, Feijóo, Abascal y Colau: dos horas de duración y cinco bloques temáticos",
-   "desc": "El encuentro entre los líderes de PSOE, PP, Vox y Frente Amplio está organizado por la Academia de Televisión y abordará temas como la vivienda, la lucha contra la corrupción y la migración.",
-   "url": "https://www.20minutos.es/nacional/asi-sera-debate-cuatro-hoy-sanchez-feijoo-abascal-colau-dos-horas-duracion-cinco-bloques-tematicos_7065688_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "De bajar el IVA a limitar precios: las ideas de los lectores de 20minutos para abaratar la compra y llegar mejor a fin de mes",
-   "desc": "El 45% de los usuarios del periódico aboga por reducir impuestos y uno de cada tres vería con buenos ojos controlar precios y limitar márgenes de beneficios. Alimentos, gasolinas y energía son las partidas que más duelen en el bolsillo.",
-   "url": "https://www.20minutos.es/nacional/bajar-iva-limitar-precios-las-ideas-los-lectores-20minutos-para-abaratar-compra-llegar-mejor-fin-mes_7065663_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Tu voto escribe nuestro futuro: que nadie decida por ti",
    "desc": "El dinero y las soluciones ya existen, pero hay que dejar de destinarlos a blindar el negocio de unos pocos.",
    "url": "https://www.20minutos.es/nacional/tu-voto-escribe-nuestro-futuro-que-nadie-decida-por-ti_7065641_3.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Leire Díez intervino en la adjudicación de un contrato de Correos de 790.000 euros a una empresa cercana al expresidente de la SEPI",
-   "desc": "Una jueza de Madrid ha pedido información por este contrato adjudicado a Trade Intermedia, que tiene vínculos con el imputado Vicente Fernández.",
-   "url": "https://www.20minutos.es/nacional/leire-diez-intervino-adjudicacion-un-contrato-correos-790-000-euros-una-empresa-cercana-expresidente-sepi_7065638_0.html",
    "at": "2026-11-26T04:00:00+00:00"
   },
   {
@@ -116,30 +151,9 @@
   },
   {
    "source": "20minutos",
-   "title": "¿Puede votar Puigdemont este domingo 29-N? Existe un modo para que pueda hacerlo... y le caduca este jueves",
-   "desc": "El líder independentista no ha tenido tiempo de ser el cabeza de lista de Junts, pero ¿tiene aún tiempo y posibilidad de ejercer el derecho al voto?",
-   "url": "https://www.20minutos.es/nacional/puede-votar-puigdemont-este-domingo-29-n-existe-un-modo-para-que-pueda-hacerlo-le-caduca-este-jueves_7065515_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "La petición de los jóvenes que votarán por primera vez en las elecciones del 29N: \"Que nos den confianza y no jueguen con la gente\"",
-   "desc": "En torno a 1,6 millones de españoles han alcanzado la mayoría de edad después de la última convocatoria en 2023. Entre las principales preocupaciones de los entrevistados por '20minutos' resuenan la vivienda, los salarios, el empleo, la salud, la educación y las pensiones, entre otras.",
-   "url": "https://www.20minutos.es/nacional/peticion-los-jovenes-que-votaran-por-primera-vez-las-elecciones-29n-que-nos-den-confianza-no-jueguen-con-gente_7065270_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "Alfonso Rodríguez Gómez de Celis (PSOE): \"Nos jugamos seguir avanzando o retroceder, tener a Cuerpo de vicepresidente o a Abascal\"",
    "desc": "El cabeza de lista del PSOE por Sevilla pone en valor las políticas sociales de la anterior legislatura y las inversiones del Gobierno central en la provincia, como el metro de la capital hispalense.",
    "url": "https://www.20minutos.es/nacional/elecciones-generales/alfonso-rodriguez-gomez-celis-psoe-nos-jugamos-seguir-avanzando-retroceder-tener-cuerpo-vicepresidente-abascal_7064802_0.html",
-   "at": "2026-11-26T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Así se ve el 29-N desde el Parlamento Europeo: del \"referente de la Europa progresista\" a \"una nueva etapa y liderazgo\" sin Sánchez",
-   "desc": "Los eurodiputados hablan con 20minutos sobre qué esperan de las elecciones generales y el peso de la UE en la campaña.",
-   "url": "https://www.20minutos.es/nacional/asi-se-ve-29-n-desde-parlamento-europeo-referente-europa-progresista-una-nueva-etapa-liderazgo-sin-sanchez_7064403_0.html",
    "at": "2026-11-26T04:00:00+00:00"
   },
   {
@@ -183,6 +197,13 @@
    "desc": "El líder del PP ha evitado afirmar que pone \"la mano en el fuego\" en esta parte del proceso.",
    "url": "https://www.20minutos.es/nacional/feijoo-asegura-que-hay-que-reforzar-custodia-las-sacas-donde-se-guarda-voto-por-correo-su-entrevista-con-plex_7065920_0.html",
    "at": "2026-11-25T22:16:44+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Dos horas con Plex: Sánchez sueña con ser juez en el ‘GTA VI’ y Feijóo tiembla en un coche a 247 kilómetros por hora",
+   "desc": "El ‘youtuber’ zamorano de 24 años invita por primera vez en su canal, con 15 millones de seguidores, a los dirigentes de PSOE y PP",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-25/dos-horas-con-plex-sanchez-suena-con-ser-juez-en-el-gta-vi-y-feijoo-tiembla-en-un-coche-a-247-kilometros-por-hora.html",
+   "at": "2026-11-25T22:06:52+00:00"
   },
   {
    "source": "20minutos",
@@ -234,13 +255,6 @@
    "at": "2026-11-25T20:55:42+00:00"
   },
   {
-   "source": "El País",
-   "title": "Una medalla honorífica para todos los vocales abre una nueva brecha en el Poder Judicial",
-   "desc": "La presidenta del CGPJ, los vocales a propuesta del PP y uno de Sumar proponen que todos los miembros del Consejo reciban una condecoración de nueva creación al terminar el mandato",
-   "url": "https://elpais.com/espana/2026-11-25/una-medalla-honorifica-para-todos-los-vocales-abre-una-nueva-brecha-en-el-poder-judicial.html",
-   "at": "2026-11-25T19:29:53+00:00"
-  },
-  {
    "source": "20minutos",
    "title": "Comprobar Bonoloto: resultados de hoy, miércoles 25 de noviembre de 2026",
    "desc": "Los resultados de la Bonoloto del miércoles 25 de noviembre de 2026 se conocerán a partir de las 21:30h. Puedes consultar todos los resultados en la web de 20minutos.es.",
@@ -270,17 +284,10 @@
   },
   {
    "source": "20minutos",
-   "title": "El Gobierno dispara el uso de la Diputación Permanente en periodo electoral y moviliza más de 33.000 millones en 16 decretos",
+   "title": "Sánchez dispara el uso de la Diputación Permanente en periodo electoral y moviliza más de 33.000 millones en 16 decretos",
    "desc": "Se convierte en el presidente del Gobierno que más ha utilizado la Diputación Permanente tras disolver las Cortes de la historia de la democracia: 29 decretos en total. El anterior récord correspondía a Felipe González, con 11.",
    "url": "https://www.20minutos.es/nacional/sanchez-dispara-uso-diputacion-permanente-periodo-electoral-moviliza-mas-33-000-millones-16-decretos_7064639_0.html",
    "at": "2026-11-25T17:00:19+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Colas interminables para votar por correo en la recta final de la campaña electoral: “Esto es bárbaro”",
-   "desc": "Más de un millón de personas han solicitado el sufragio postal pese a las dudas sembradas por el PP y Vox sobre las garantías del procedimiento",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-25/colas-interminables-para-votar-por-correo-en-la-recta-final-de-la-campana-electoral-esto-es-barbaro.html",
-   "at": "2026-11-25T16:51:15+00:00"
   },
   {
    "source": "El Mundo",
@@ -332,39 +339,11 @@
    "at": "2026-11-25T15:53:33+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Así se verá el eclipse total de 2027 desde cada localidad de España: consulta el nuevo simulador del IGN",
-   "desc": "El Instituto Geográfico Nacional publica infografías y simulaciones personalizadas con los horarios, duración y grado de oscurecimiento previstos.",
-   "url": "https://www.20minutos.es/nacional/asi-se-vera-eclipse-total-2027-desde-cada-localidad-espana-consulta-nuevo-simulador-ign_7065778_0.html",
-   "at": "2026-11-25T15:49:55+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Álvarez de Toledo lanza un mensaje este 25N desde el edificio donde residió la expareja de Ábalos: “El Gobierno le puso un piso a una puta”",
-   "desc": "Azcón y Ezcurra también lanzaron críticas contra la “doble moral” del PSOE y lo hicieron desde el Parador de Teruel, otro sitio vinculado al exministro socialista",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-25/alvarez-de-toledo-lanza-un-mensaje-este-25n-desde-el-edificio-donde-residio-la-expareja-de-abalos-el-gobierno-le-puso-un-piso-a-una-puta.html",
-   "at": "2026-11-25T15:03:48+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Tribunales",
    "desc": "El magistrado también inadmite que se deduzca testimonio contra la magistrada, como pretendía Sáenz de Tejada: \"Carece de la más mínima consistencia indiciaria y se sustenta en conjeturas\" Leer",
    "url": "https://www.elmundo.es/espana/2026/11/25/6b06e293e85ecec53c8b4580.html",
    "at": "2026-11-25T14:34:12+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Illa recibirá a Puigdemont en el Palau de la Generalitat, en una fecha aún sin concretar",
-   "desc": "Fuentes de la oficina del president entienden el encuentro como una forma de \"normalizar\" la escena política",
-   "url": "https://www.20minutos.es/cataluna/illa-recibira-puigdemont-palau-generalitat-una-fecha-aun-sin-concretar_7065692_0.html",
-   "at": "2026-11-25T13:48:57+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Los peritos judiciales apuntan a un defecto \"significativo\" en la vía de Adamuz y a que Adif no hizo un \"seguimiento de su evolución\"",
-   "desc": "Señalan que el defecto detectado obligaba a \"analizar la evolución y programar una actuación de mantenimiento\", así como a \"incrementar la vigilancia del punto afectado\".",
-   "url": "https://www.20minutos.es/nacional/los-peritos-judiciales-apuntan-un-defecto-significativo-via-adamuz-que-adif-no-hizo-un-seguimiento-su-evolucion_7065671_0.html",
-   "at": "2026-11-25T13:32:47+00:00"
   },
   {
    "source": "El Mundo",
@@ -409,25 +388,11 @@
    "at": "2026-11-25T12:11:28+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Una jueza abre causa por irregularidades de Leire Díez y Juanma Serrano en Correos y les cita a declarar por cuatro delitos",
-   "desc": "La instructora rechazó en un inicio la querella de Vox, pero la Audiencia Provincial de Madrid revocó su decisión.",
-   "url": "https://www.20minutos.es/nacional/una-jueza-abre-causa-por-irregularidades-leire-diez-juanma-serrano-correos-les-cita-declarar-por-cuatro-delitos_7065571_0.html",
-   "at": "2026-11-25T11:11:59+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "España",
    "desc": "\"Lo haré el sábado a mediodía, y esa misma noche podré dormir en casa, con mi familia\", ha expuesto el ex presidente de la Generalitat y prófugo de la justicia durante nueve años Leer",
    "url": "https://www.elmundo.es/espana/2026/11/25/6b06b417fc6c83ba038b458e.html",
    "at": "2026-11-25T10:13:41+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Puigdemont volverá el 12 de diciembre: \"España ha fracasado, retornaré sin pedir permiso ni perdón\"",
-   "desc": "El expresidente catalán ha comparecido ante los medios en Bruselas después de que se le haya aplicado plenamente la amnistía.",
-   "url": "https://www.20minutos.es/nacional/puigdemont-volvera-espana-12-diciembre-celebra-aministia-esta-es-derrota-represion_7065451_0.html",
-   "at": "2026-11-25T10:09:54+00:00"
   },
   {
    "source": "El Mundo",
@@ -442,13 +407,6 @@
    "desc": "Además de Cantabria y el País Vasco, las otras once comunidades afectadas son Galicia, Asturias, Castilla y León, Navarra, La Rioja, Aragón, Cataluña, Madrid, Andalucía, Comunidad Valenciana y Baleares, todas ellas en nivel amarillo Leer",
    "url": "https://www.elmundo.es/espana/2026/11/25/6b068cae21efa046268b4584.html",
    "at": "2026-11-25T07:25:33+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Inmigración",
-   "desc": "Este martes llegaron 2.100 inmigrantes en 14 cayucos, entre ellos un fallecido y una niña de cuatro días nacida en el Atlántico, la cifra más alta para un solo día desde que hay registros en España Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/24/6b05f20121efa017398b4587.html",
-   "at": "2026-11-25T06:47:21+00:00"
   }
  ]
 }

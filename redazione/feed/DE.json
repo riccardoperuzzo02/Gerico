@@ -1,7 +1,49 @@
 {
  "code": "DE",
- "asOf": "2026-11-26T05:17:34+00:00",
+ "asOf": "2026-11-26T07:17:37+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "Trump und Nvidia: Er glaubt, sich fast alles erlauben zu können",
+   "desc": "Wie stark hat sich der US-Präsident bei Nvidia eingemischt? Trumps Drängen auf Jensen Huangs Rückkehr könnte selbst für ihn zu einem ungewöhnlich großen Skandal werden.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/donald-trump-nvidia-jensen-huang-usa",
+   "at": "2026-11-26T07:00:42+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Jared Kushner: Kushner wehrt sich gegen Vorwurf einer zu großen Nähe zu Russland",
+   "desc": "Im Podcast von Axel-Springer-Chef Mathias Döpfner hat der US-Unterhändler Jared Kushner den Vorwurf der Russland-Nähe dementiert. Zugleich lobte er Russlands Präsidenten.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/jared-kushner-podcast-mathias-doepfner-ukraine-russland-wladimir-putin-gxe",
+   "at": "2026-11-26T06:53:50+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Femizide: Es braucht nicht nur Strafen, es braucht auch Schutz",
+   "desc": "Die geplanten Strafrechtsverschärfungen bei Femiziden sind wichtig. Aber warum muss es erst so weit kommen, damit die Politik mit der nötigen Entschlossenheit handelt?",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/femizide-mord-strafrecht-verschaerfung-stefanie-hubig-5vor8",
+   "at": "2026-11-26T06:30:13+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Familienministerin Prien für bildschirmfreie Zeit bei Kleinkindern",
+   "desc": "Bildschirme lenken ab - egal ob Smartphone, Tablet oder Fernsehen. Familienministerin Prien hat sich deshalb dafür ausgesprochen, dass Kleinkinder in den ersten drei Lebensjahren ohne Bildschirme aufwachsen sollen.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/prien-fuer-bildschirmfreie-kleinkindzeit-100.html",
+   "at": "2026-11-26T06:25:31+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Bundestag: Julia Klöckner prüft Sanktionen nach Blockade von David Barnea",
+   "desc": "Mit Sitzblockaden haben zwei Linkenabgeordnete gegen den Besuch von Ex-Mossad-Chef Barnea im Bundestag protestiert. Bundestagspräsidentin Klöckner nennt die Aktion einen »Tiefpunkt« – und lotet nun Konsequenzen aus.",
+   "url": "https://www.spiegel.de/politik/deutschland/bundestag-julia-kloeckner-prueft-sanktionen-nach-blockade-von-david-barnea-a-c51e85d0-19f5-4fc9-8e09-1e10a697679e",
+   "at": "2026-11-26T06:08:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bildschirmzeit: Prien fordert von Eltern 1.000 bildschirmfreie Tage für Kleinkinder",
+   "desc": "Bundesfamilienministerin Karin Prien ruft Eltern auf, Kleinkinder in den ersten drei Jahren ohne Bildschirme großzuziehen. Auch im Umgang sollten Eltern Geräte meiden.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/karin-prien-cdu-bildschirm-kinder-eltern-gxe",
+   "at": "2026-11-26T05:36:21+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Milliardenschenkung für Springer-Chef Döpfner: Eine fast steuerfreie Milliarde?",
@@ -40,7 +82,7 @@
   {
    "source": "Der Spiegel",
    "title": "News: EU-Haushaltsverhandlungen, CDU-Kompromissvorschlag zur Rente mit 63, mutmaßliche Spionin vor Gericht",
-   "desc": "In Brüssel verhandeln die Europäer über ihren gemeinsamen Haushalt. Im Streit um die »Rente mit 63« winkt ein Kompromiss. Und in Berlin steht eine mutmaßliche Spionin vor Gericht. Das ist die Lage am Donnerstagmorgen.",
+   "desc": "In Brüssel verhandeln die Europäer über ihren gemeinsamen Haushalt. Im Streit über die »Rente mit 63« winkt ein Kompromiss. Und in Berlin steht eine mutmaßliche Spionin vor Gericht. Das ist die Lage am Donnerstagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-eu-haushaltsverhandlungen-cdu-kompromissvorschlag-zur-rente-mit-63-mutmassliche-spionin-vor-gericht-a-2e2df0fa-dd57-4004-a900-871447abe2f6",
    "at": "2026-11-26T04:25:00+00:00"
   },
@@ -80,6 +122,13 @@
    "at": "2026-11-25T21:30:34+00:00"
   },
   {
+   "source": "Die Zeit",
+   "title": "Rente mit 63: CDU schlägt abschlagsfreie Rente für Bezieher geringer Einkommen vor",
+   "desc": "Die Union geht im Rentenstreit auf die SPD zu. Laut ihrem Vorschlag soll die Rente nach 45 Beitragsjahren für Menschen mit unterdurchschnittlichem Einkommen bleiben.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-cdu-bundestag-abgeordnete-abschaffung",
+   "at": "2026-11-25T21:30:34+00:00"
+  },
+  {
    "source": "Der Spiegel",
    "title": "Regierungsbildung in Berlin: Franziska Giffey sieht mit Ausschluss von Vanessa Emde keine Lösung mit Linken",
    "desc": "Die umstrittene Berliner Abgeordnete Vanessa Emde gehört nicht mehr zur Linke-Fraktion. Für Franziska Giffey ein »symbolischer Schritt« – er reiche aber nicht für eine Koalition von Rot-Rot-Grün.",
@@ -108,13 +157,6 @@
    "at": "2026-11-25T20:33:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Rechtsterrorismus: Bundesanwaltschaft lässt mutmaßliche Rechtsterroristen festnehmen",
-   "desc": "Drei Teenager sind unter dem Verdacht festgenommen worden, einer rechtsextremistischen terroristischen Gruppe anzugehören. Sie sollen geplant haben, Ausländer zu töten.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundesanwaltschaft-laesst-mutmassliche-rechtsterroristen-festnehmen",
-   "at": "2026-11-25T19:40:50+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Expertenkommission fordert schärfere Regeln für Prostitution",
    "desc": "Mehr Schutz vor Gewalt und Ausbeutung - Zwangsprostitution und Menschenhandel wirksamer bekämpfen: Die schwarz-rote Koalition will Prostitution neu regeln. Eine Expertenkommission empfiehlt nun strengere Regeln.",
@@ -136,20 +178,6 @@
    "at": "2026-11-25T19:12:00+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Erdölfund in der Ostsee: Das Ungeheuer vor Heringsdorf",
-   "desc": "Vor Usedom liegt das größte Erdölvorkommen Polens. Während sich das Nachbarland auf eine Förderung vorbereitet, wachsen in Deutschland die Sorgen um Natur und Tourismus.",
-   "url": "https://www.zeit.de/2026/50/erdoelfund-ostsee-central-european-petroleum-polen-usedom",
-   "at": "2026-11-25T18:22:25+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "El Hierro: Regionalpräsident der Kanaren bittet EU um Hilfe bei Migration",
-   "desc": "Auf der kanarischen Insel El Hierro sind allein am Dienstag 2.000 Menschen per Boot aus Afrika angelandet. Regionalpräsident Clavijo bat die EU um ein Krisentreffen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/el-hierro-migranten-kanarische-inseln-spanien",
-   "at": "2026-11-25T18:11:32+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Ukraine-Hilfe polarisiert die Generaldebatte im Bundestag",
    "desc": "Im Bundestag wurde über den Haushalt 2027 debattiert. Darin auch enthalten: rund zwölf Milliarden Euro Ukraine-Hilfe. Für die AfD ist das eine Veruntreuung von Steuergeldern, für Kanzler Merz die Verteidigung \"unserer Freiheit\". Von Nicole Markwald.",
@@ -157,25 +185,11 @@
    "at": "2026-11-25T18:10:19+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Generaldebatte: Natürlich wird hier niemand überzeugt",
-   "desc": "Regierungsmelancholie, Oppositionsfloskeln, automatenhafte AfD-Gehässigkeit: Man kann bei der Generaldebatte im Bundestag kaum zuhören. Muss das so sein?",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/generaldebatte-bundestag-politische-diskussions-debatte-haushalt",
-   "at": "2026-11-25T17:49:49+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "Rente mit 63: Union bietet SPD Kompromiss für Geringverdiener an",
    "desc": "Union und SPD haben sich beim Rentenpaket verhakt. Nun macht die Kanzlerpartei einen Vorschlag: Nach SPIEGEL-Informationen soll die »Rente mit 63« für Menschen mit kleinem Einkommen erhalten bleiben.",
    "url": "https://www.spiegel.de/politik/deutschland/rente-mit-63-union-bietet-spd-kompromiss-fuer-geringverdiener-an-a-3cfcd68d-7b6c-47e5-bc21-a78860df3b49",
    "at": "2026-11-25T16:36:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Bundeshaushalt 2027: Der Kanzler entdeckt die Zurückhaltung",
-   "desc": "Bundeskanzler Friedrich Merz verteidigt den Haushalt 2027. Wie hat er sich in der Generaldebatte geschlagen? Und: Was plante die rechtsextreme Gruppe »Terror 18«?",
-   "url": "https://www.zeit.de/politik/2026-11/bundeshaushalt-2027-generaldebatte-friedrich-merz-cdu-nachrichtenpodcast",
-   "at": "2026-11-25T16:10:58+00:00"
   },
   {
    "source": "Tagesschau",
@@ -253,20 +267,6 @@
    "desc": "Die Aufstellung des Haushalts habe \"keinen Schönheitspreis verdient“, räumte der Kanzler ein. Doch er sei in der gegenwärtigen Lage vertretbar. Zuvor war er von AfD-Chef Chrupalla scharf kritisiert worden - auch in Sachen Ukraine.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-154.html",
    "at": "2026-11-25T10:44:12+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Heftiger Schlagabtausch bei Generaldebatte erwartet",
-   "desc": "Kanzler Merz im Fokus: Bei der Haushaltswoche im Bundestag wird heute der Etat des Kanzleramts verhandelt. Traditionell eine Gelegenheit für die Opposition, mit der Regierung abzurechnen. Heftig gestritten werden könnte über die neuen Schulden.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-150.html",
-   "at": "2026-11-25T06:32:57+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "11KM-Podcast: Abschiebezentren in Ruanda: Die nächste Stufe der EU-Asylpolitik",
-   "desc": "Deutschland und vier weitere EU-Staaten wollen abgelehnte Asylbewerber nach Ruanda abschieben. 11KM analysiert, wohin sich die europäische Migrationspolitik gerade entwickelt.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/podcast-11km-abschiebezentren-100.html",
-   "at": "2026-11-25T06:11:51+00:00"
   }
  ]
 }

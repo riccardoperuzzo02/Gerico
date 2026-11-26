@@ -102,6 +102,12 @@ test("leggiGrafico: il giorno si conta nel fuso della Borsa", () => {
   assert.equal(leggiGrafico(grafico(b)).prev, 14.8);
 });
 
+test("leggiGrafico: la chiusura di ieri senza i decimali sporchi di Yahoo", () => {
+  const b = barre(30);
+  b.close[28] = 14.799999771118164;
+  assert.equal(leggiGrafico(grafico(b)).prev, 14.8);
+});
+
 test("leggiGrafico: il grafico ha al massimo 66 punti e finisce sul prezzo di adesso", () => {
   const g = leggiGrafico(grafico(barre(100)));
   assert.ok(g.spark.length <= 66);

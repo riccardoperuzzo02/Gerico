@@ -59,7 +59,7 @@ export function leggiGrafico(json) {
   const oggi = adesso != null ? giorno(adesso) : "";
   // le sedute finite prima di quella del prezzo: l'ultima è «ieri», cinque indietro una settimana, ventuno un mese
   const prima = barre.filter(([t]) => giorno(t) < oggi).map(([, c]) => c);
-  const ieri = prima.length ? prima[prima.length - 1] : numero(m.previousClose);
+  const ieriGrezzo = prima.length ? prima[prima.length - 1] : numero(m.previousClose), ieri = ieriGrezzo != null ? cifre(ieriGrezzo) : null;
   const dietro = (n) => (prima.length >= n ? prima[prima.length - n] : null);
   const linea = barre.map(([, c]) => c);
   if (!barre.length || giorno(barre[barre.length - 1][0]) < oggi) linea.push(p);

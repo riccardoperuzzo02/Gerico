@@ -1,0 +1,42 @@
+{
+ "title": "Ucraina: missili russi su Kiev, Trump e Rutte avvertono Mosca",
+ "figure": {"value": "7 feriti", "label": "il bilancio dell'attacco su Kiev secondo l'amministrazione militare"},
+ "section": "mondo",
+ "rank": 2,
+ "status": "live",
+ "summary": "Nella notte la Russia ha colpito Kiev con missili balistici, sette feriti. Trump e il segretario generale della Nato Rutte invitano Mosca a evitare azioni che estendano il conflitto.",
+ "article": "Nella notte tra mercoledì e giovedì la Russia ha lanciato un attacco con missili balistici contro l'Ucraina e ha colpito Kiev. Secondo l'amministrazione militare della città sette persone sono rimaste ferite. Il sindaco Vitali Klitschko dice che tre sono ricoverate, due in condizioni gravi, e che sono stati colpiti un centro commerciale, un edificio industriale e un edificio non residenziale nel distretto di Desnianskyi. Non risultano morti in città. Non è stato detto quanti missili siano stati intercettati.\n\nMercoledì un altro attacco, nel distretto di Bila Tserkva, nella regione di Kiev, aveva ucciso una persona e danneggiato edifici commerciali. Il giorno prima un attacco su Odessa aveva ucciso due persone, tra cui un adolescente, secondo il governatore. Il presidente ucraino Volodymyr Zelensky dice che da Washington non ci sono buone notizie sull'accelerazione delle consegne di missili per la difesa aerea, ancora in ritardo.\n\nMercoledì il presidente americano Donald Trump e il segretario generale della Nato Mark Rutte, dopo un incontro in Florida, hanno diffuso una dichiarazione congiunta. Dicono che è importante che la Russia eviti qualsiasi azione che, intenzionalmente o no, allarghi la guerra, e chiedono una soluzione pacifica il più presto possibile. La dichiarazione non indica a quale episodio si riferisca. La Polonia ha proposto una zona di interdizione al volo vicino al confine ucraino e ha chiesto alla Nato di intercettare i missili russi sopra l'Ucraina, dopo che il 23 e il 24 novembre missili e droni russi sono entrati nel suo spazio aereo.\n\nLa guerra si combatte anche sul territorio russo. Il governatore del territorio di Stavropol dice che droni ucraini hanno colpito lo stabilimento Nevinnomyssk Azot, che produce ammoniaca e nitrato di ammonio, materiali usati anche per esplosivi. Kiev dice inoltre di aver colpito cinque aerei in una base militare russa; non c'è una conferma indipendente. Martedì il presidente russo Vladimir Putin aveva detto che le misure di ritorsione per gli attacchi alle raffinerie sono inevitabili.\n\nPiù di trenta paesi hanno firmato una dichiarazione che chiede alla Russia di smettere di usare agenti chimici e antisommossa in Ucraina. Giovedì i leader dell'Unione europea si riuniscono a Bruxelles per discutere, tra l'altro, di come finanziare Kiev nel 2027.",
+ "facts": [
+  {"text": "Nella notte la Russia ha colpito Kiev con missili balistici: sette feriti secondo l'amministrazione militare della città.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "Klitschko dice che sono stati colpiti un centro commerciale, un edificio industriale e un edificio non residenziale.", "who": ["Kyiv Independent", "Reuters"]},
+  {"text": "Trump e Rutte chiedono alla Russia di evitare azioni che allarghino la guerra.", "who": ["Reuters"]},
+  {"text": "La Polonia propone una zona di interdizione al volo vicino al confine con l'Ucraina.", "who": ["Kyiv Independent", "Il Post"]},
+  {"text": "Il governatore di Stavropol dice che droni ucraini hanno colpito lo stabilimento Nevinnomyssk Azot.", "who": ["Kyiv Independent"]}
+ ],
+ "view": "Sono accertati l'attacco su Kiev e la dichiarazione congiunta di Trump e Rutte. Non sono verificati i danni dichiarati da Kiev in Russia, e resta senza risposta a quale episodio si riferisca il richiamo a non allargare la guerra.\n\nLa proposta polacca e il ritardo nelle consegne di missili per la difesa aerea mostrano dove l'Europa è più esposta. Da guardare: la risposta della Nato alla richiesta di Varsavia, le ritorsioni annunciate da Putin e l'esito del vertice europeo.",
+ "open": [
+  "Quanti missili russi sono stati intercettati nella notte su Kiev?",
+  "A quale episodio si riferisce l'appello di Trump e Rutte?",
+  "La Nato accoglierà la richiesta polacca di intercettare i missili sopra l'Ucraina?",
+  "Che cosa colpirà la ritorsione annunciata da Putin?"
+ ],
+ "sources": [
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/russia-slams-kyiv-in-ballistic-missile-attack-hits-shopping-center/", "angle": "Il bilancio dei feriti e gli edifici colpiti a Kiev secondo Klitschko e l'amministrazione militare.", "date": "2026-11-26"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/26/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war", "angle": "La dichiarazione congiunta di Trump e Rutte dopo l'incontro in Florida.", "date": "2026-11-26"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/25/polonia-no-fly-zone-confine-ucraina/", "angle": "La proposta polacca di una zona di interdizione al volo.", "date": "2026-11-25"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-attacks-russian-military-base-says-five-planes-struck", "angle": "L'attacco ucraino a una base russa e i cinque aerei che Kiev dice di aver colpito.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Russia", "Nato", "Polonia"],
+ "themes": ["ucraina"],
+ "places": ["UA", "RU", "PL", "US"],
+ "city": {"name": "Kiev", "lat": 50.45, "lon": 30.52},
+ "prev": "2026-11-25-ua-putin-ritorsioni-raffinerie",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: missili balistici su Kiev, Trump e Rutte chiedono alla Russia di non allargare la guerra."}
+ ]
+}

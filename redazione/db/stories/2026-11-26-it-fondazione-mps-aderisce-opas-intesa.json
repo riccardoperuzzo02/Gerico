@@ -1,0 +1,37 @@
+{
+ "title": "Mps: la Fondazione aderisce all'offerta di Intesa Sanpaolo",
+ "section": "economia",
+ "rank": 8,
+ "status": "live",
+ "summary": "La Deputazione amministratrice della Fondazione Mps ha approvato all'unanimità l'adesione all'offerta pubblica di Intesa. L'operazione ha bisogno dell'autorizzazione del Mef.",
+ "article": "Mercoledì sera la Deputazione amministratrice della Fondazione Mps ha approvato all'unanimità l'adesione all'offerta pubblica di acquisto e scambio lanciata da Intesa Sanpaolo su Banca Mps. La Fondazione ha avviato la procedura di autorizzazione davanti al ministero dell'Economia. La decisione è legata a un orientamento approvato lo stesso giorno, sempre all'unanimità, dalla Deputazione generale.\n\nLa Fondazione dice che lavorerà per tutelare il valore secolare della banca e per evitarne lo smembramento nel consolidamento del settore. Propone una piattaforma comune con gli enti locali e con gli altri enti che designano propri rappresentanti, e un confronto con Intesa e con Unipol per difendere gli interessi economici, occupazionali, culturali e sociali del territorio.\n\nL'offerta è aperta dal 24 novembre al 22 gennaio 2027: Intesa propone 1,25 euro in contanti e 1,664 azioni Intesa per ogni azione Mps. Sotto il 50% più un'azione l'offerta decade. Delfin, primo azionista con il 17,53%, ed Edizione, con l'1,45%, avevano già detto che aderiranno; la posizione di Caltagirone e del governo non è stata chiarita. La procura di Milano indaga su alcuni protagonisti della vicenda per sospetta manipolazione del mercato, e gli interessati non sono stati giudicati.\n\nIl comunicato non dà dettagli su concambio, valutazioni e tempi dell'autorizzazione.",
+ "facts": [
+  {"text": "La Deputazione amministratrice della Fondazione Mps ha approvato all'unanimità l'adesione all'offerta di Intesa.", "who": ["ANSA"]},
+  {"text": "La Fondazione ha avviato la procedura di autorizzazione con il ministero dell'Economia.", "who": ["ANSA"]},
+  {"text": "L'offerta resta aperta fino al 22 gennaio 2027.", "who": ["Il Post"]}
+ ],
+ "view": "È accertata la decisione unanime della Fondazione. Non si conoscono i tempi dell'autorizzazione del Mef né la quota di capitale che la Fondazione detiene oggi.\n\nIl voto della Fondazione aggiunge un azionista locale al fronte favorevole, ma l'esito dipende dalla soglia del 50% più un'azione. Da guardare: la posizione del governo e di Caltagirone e il parere ufficiale del consiglio di Mps.",
+ "open": [
+  "Quanto capitale di Mps detiene la Fondazione?",
+  "Quando il Mef darà l'autorizzazione?",
+  "Aderiranno Caltagirone e il governo?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/25/mps-la-fondazione-mps-aderisce-allopas-di-intesa-sanpaolo_330a71b3-f141-4f3b-9431-7c96926c0dfe.html", "angle": "La decisione della Deputazione e le richieste della Fondazione per il territorio.", "date": "2026-11-25"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/24/opas-intesa-sanpaolo-mps-periodo-adesione/", "angle": "Termini, soglie e azionisti dell'offerta.", "date": "2026-11-24"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Intesa Sanpaolo", "Mps", "Banche", "Piazza Affari"],
+ "themes": [],
+ "places": ["IT"],
+ "city": {"name": "Siena", "lat": 43.32, "lon": 11.33},
+ "figure": {"value": "22 gen", "label": "la scadenza delle adesioni all'offerta di Intesa"},
+ "prev": "2026-11-24-it-intesa-mps-opas-adesioni",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: la Fondazione Mps aderisce all'offerta di Intesa."}
+ ]
+}

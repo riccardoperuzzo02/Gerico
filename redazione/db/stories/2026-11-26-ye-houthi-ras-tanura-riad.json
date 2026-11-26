@@ -1,0 +1,42 @@
+{
+ "title": "Yemen: gli Houthi dicono di aver colpito Ras Tanura, missili su Riad",
+ "section": "mondo",
+ "rank": 1,
+ "status": "live",
+ "summary": "Gli Houthi affermano di aver attaccato la raffineria saudita di Ras Tanura e il distretto finanziario di Riad. La coalizione guidata dai sauditi dice di aver intercettato due missili balistici diretti alla capitale.",
+ "article": "Mercoledì gli Houthi, i ribelli dello Yemen, hanno detto di aver attaccato Ras Tanura, la più grande raffineria dell'Arabia Saudita, e il distretto finanziario di Riad. Una foto satellitare del 25 novembre mostra una grande nube di fumo sopra l'impianto, ma nessuna fonte indipendente ha confermato finora che cosa l'abbia provocata. Giovedì la coalizione guidata dai sauditi ha detto che le difese aeree hanno intercettato due missili balistici lanciati dagli Houthi verso la capitale.\n\nRas Tanura si trova accanto a uno dei principali terminali petroliferi del mondo, da cui passa una parte consistente dell'export di greggio del Golfo. Mercoledì il petrolio ha chiuso in rialzo a New York a 83,68 dollari al barile.\n\nA Sanaa, controllata dagli Houthi, un'esplosione è stata segnalata giovedì dopo i raid aerei vicino all'aeroporto internazionale; le fonti non attribuiscono l'esplosione a una parte precisa. Mercoledì la coalizione aveva detto di aver colpito le «capacità operative» del porto di Hodeidah, e il portavoce militare degli Houthi, Yahya Saree, aveva minacciato i porti sauditi del Mar Rosso. Non ci sono bilanci indipendenti delle vittime.\n\nNel Golfo il comandante di una petroliera ha segnalato un'esplosione causata da un proiettile non identificato a circa 93 chilometri a ovest di Dubai. L'organizzazione britannica UKMTO, che segue la navigazione, dice che non ci sono feriti né danni. Resta aperta la crisi dello stretto di Hormuz: i Guardiani della rivoluzione iraniani dicono che petroliere scortate dagli Stati Uniti hanno urtato delle mine, mentre il centro marittimo congiunto Jmic ha detto che le segnalazioni non sono confermate. Dopo un periodo di minore controllo, secondo le ricostruzioni Teheran ha aumentato gli attacchi nello stretto e le esportazioni di petrolio rallentano di nuovo.\n\nMercoledì il Dipartimento di Stato americano ha chiesto ai cittadini statunitensi di lasciare l'Iran e ha avvertito che le ostilità potrebbero intensificarsi rapidamente. Il primo ministro del Qatar, Mohammed bin Abdulrahman Al Thani, lavora per riprendere il negoziato tra Washington e Teheran. Il presidente Donald Trump ha detto che la guerra con l'Iran è finanziata fino a gennaio.",
+ "facts": [
+  {"text": "Gli Houthi dicono di aver attaccato la raffineria saudita di Ras Tanura e il distretto finanziario di Riad.", "who": ["Reuters", "Al Jazeera"]},
+  {"text": "Una foto satellitare del 25 novembre mostra una nube di fumo sopra Ras Tanura.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "La coalizione guidata dai sauditi dice di aver intercettato due missili balistici Houthi diretti a Riad.", "who": ["Al Jazeera"]},
+  {"text": "Un'esplosione segnalata a Sanaa dopo raid aerei vicino all'aeroporto.", "who": ["Al Jazeera"]},
+  {"text": "Il Dipartimento di Stato americano chiede ai cittadini di lasciare l'Iran.", "who": ["Euronews"]}
+ ],
+ "view": "Si può dire con certezza che gli Houthi rivendicano l'attacco e che la coalizione parla di missili intercettati. Non è verificato quanto Ras Tanura sia stata danneggiata, né chi abbia causato l'esplosione a Sanaa.\n\nUn impianto come Ras Tanura pesa sul prezzo del petrolio più di una minaccia ai porti del Mar Rosso. Da guardare: le immagini satellitari dei prossimi giorni, la reazione di Riad e se il Qatar riesce a riaprire il negoziato Usa-Iran.",
+ "open": [
+  "Che danni ha subìto la raffineria di Ras Tanura?",
+  "Chi ha causato l'esplosione a Sanaa?",
+  "Le petroliere segnalate sulle mine di Hormuz hanno davvero urtato delle mine?",
+  "Quando riprenderà il negoziato mediato dal Qatar?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh", "angle": "L'esplosione a Sanaa, i missili intercettati su Riad e la foto satellitare di Ras Tanura.", "date": "2026-11-26"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/25/yemen-s-houthis-say-they-attacked-saudi-oil-refinery-and-riyadh-financial-district", "angle": "La rivendicazione degli Houthi su Ras Tanura e sul distretto finanziario di Riad.", "date": "2026-11-25"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/25/us-tells-citizens-to-leave-iran-warns-hostilities-could-escalate-fast", "angle": "L'invito del Dipartimento di Stato ai cittadini americani a lasciare l'Iran.", "date": "2026-11-25"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/25/hormuz-nuovi-attacchi-petrolio-rallentamento-fine-novembre/", "angle": "L'aumento degli attacchi iraniani a Hormuz e il rallentamento dell'export di petrolio.", "date": "2026-11-25"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Iran", "Yemen", "Medio Oriente", "Petrolio"],
+ "themes": ["iran-usa"],
+ "places": ["SA", "YE", "IR", "AE", "US"],
+ "city": {"name": "Ras Tanura", "lat": 26.64, "lon": 50.16},
+ "figure": {"value": "2 missili", "label": "i missili balistici intercettati su Riad secondo la coalizione"},
+ "prev": "2026-11-25-ye-hodeidah-houthi-porti-sauditi",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: gli Houthi dicono di aver colpito Ras Tanura, missili intercettati su Riad."}
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "title": "Stati Uniti: proposti nuovi dazi sul Brasile, il 10% sugli aerei finiti",
+ "section": "economia",
+ "rank": 7,
+ "status": "live",
+ "summary": "Il rappresentante al Commercio Jamieson Greer propone di togliere l'esenzione agli aerei brasiliani e di stringere sullo zucchero. Il Brasile parla di decisione inaccettabile.",
+ "article": "Mercoledì il rappresentante degli Stati Uniti per il Commercio, Jamieson Greer, ha proposto nuovi dazi sulle importazioni dal Brasile. Il più importante è un dazio del 10% sugli aerei finiti, finora esenti. Le azioni sono proposte nell'ambito della sezione 301, la norma americana sulle pratiche commerciali considerate sleali, e prima di entrare in vigore passeranno da un'audizione pubblica, fissata per il 14 gennaio.\n\nGli aerei sono il quarto prodotto brasiliano più esportato verso gli Stati Uniti, e la misura può colpire in particolare Embraer, i cui titoli sono scesi di oltre il 3%. La proposta prevede anche una nuova aliquota sullo zucchero grezzo e raffinato fuori quota, per impedire che quello brasiliano arrivi attraverso paesi terzi, e un taglio di circa un terzo, a 100.000 tonnellate, della quota di zucchero grezzo esente per il 2027. L'effetto diretto potrebbe essere limitato, perché le esportazioni brasiliane di zucchero verso gli Stati Uniti sono già calate molto.\n\nLe modifiche riguardano i dazi di luglio, che avevano lasciato esenti carne bovina, caffè e aerei. Greer dice che il Brasile non ha fatto «progressi significativi» su pratiche che gli Stati Uniti considerano ingiuste. Tra le contestazioni ci sono la deforestazione illegale e il sistema di pagamenti istantanei Pix. Il Brasile nega le accuse.\n\nIl governo brasiliano ha espresso «indignazione» e ha definito la decisione americana inaccettabile. Dice che i dazi servono a fare pressione su Pix e sulle regole del commercio digitale, e che non cederà alle minacce. Martedì il Brasile aveva chiesto all'Organizzazione mondiale del commercio un gruppo di esperti sui dazi di luglio; gli Stati Uniti hanno bloccato la richiesta.",
+ "facts": [
+  {"text": "Il rappresentante al Commercio propone un dazio del 10% sugli aerei brasiliani finiti, finora esenti.", "who": ["Reuters"]},
+  {"text": "La quota di zucchero grezzo esente per il 2027 scenderebbe di circa un terzo, a 100.000 tonnellate.", "who": ["Reuters"]},
+  {"text": "Un'audizione pubblica è fissata per il 14 gennaio, prima dell'entrata in vigore.", "who": ["Reuters"]},
+  {"text": "Il governo brasiliano parla di decisione inaccettabile e di pressione su Pix.", "who": ["Reuters"]}
+ ],
+ "view": "Sono certi la proposta e il calendario dell'audizione: i dazi non sono ancora in vigore. Gli effetti dipendono dal testo finale, che può cambiare dopo l'audizione.\n\nPer il Brasile pesa l'aeronautica, con Embraer in prima fila. Da guardare: l'audizione del 14 gennaio e la risposta di Brasilia, che può passare dall'Organizzazione mondiale del commercio.",
+ "open": [
+  "Il testo finale manterrà il dazio del 10% sugli aerei?",
+  "Come risponderà il Brasile oltre alla protesta?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/25/us-proposes-surprise-new-tariffs-on-brazil-imports-including-10-duty-on-aircraft", "angle": "Le aliquote proposte, le reazioni di Embraer e del governo brasiliano e il calendario.", "date": "2026-11-25"},
+  {"name": "Ustr", "kind": "ufficiale", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-section-301-action-brazils-unreasonable-acts-policies-and-practices", "angle": "Il contesto: l'azione di luglio sulla sezione 301 contro il Brasile.", "date": "2026-07-16"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Dazi", "Stati Uniti", "Brasile"],
+ "themes": [],
+ "places": ["BR", "US"],
+ "figure": {"value": "10%", "label": "il dazio proposto sugli aerei brasiliani finiti"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: gli Usa propongono nuovi dazi sul Brasile, il 10% sugli aerei."}
+ ]
+}

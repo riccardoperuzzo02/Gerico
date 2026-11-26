@@ -1,0 +1,36 @@
+{
+ "title": "Egitto: almeno 31 morti nell'incendio dopo il ribaltamento di un camion al Cairo",
+ "section": "mondo",
+ "rank": 9,
+ "status": "live",
+ "summary": "Secondo il ministero della Salute un camion con prodotti petroliferi si è ribaltato sulla Ring Road ed è esploso. I feriti sono 21 e la procura ha aperto un'inchiesta.",
+ "article": "Almeno 31 persone sono morte e 21 sono rimaste ferite, secondo il ministero della Salute egiziano, nell'incendio scoppiato mercoledì sulla Ring Road del Cairo, nel quartiere di al-Warraq, nel distretto di Imbabah, a Giza. Le fonti iniziali parlavano di almeno 30 vittime; il bilancio può ancora cambiare.\n\nIl veicolo trasportava prodotti petroliferi. Secondo i media locali un camion ha sbandato, ha colpito lo spartitraffico ed è esploso. L'incendio è stato poi spento. Le autorità giudiziarie dicono che sono stati bruciati 27 veicoli. L'arteria, sopra un tunnel, collega il Cairo, Giza e Qalyubia.\n\nIl ministero ha inviato 39 ambulanze e i feriti sono stati portati negli ospedali vicini; il ministro Khaled Abdel Ghaffar è andato sul luogo. Il presidente Abdel Fattah al-Sisi ha espresso le condoglianze alle famiglie e il primo ministro Mostafa Madbouly ha disposto che lo Stato copra le spese mediche. La procura generale ha aperto un'inchiesta e ha ordinato il prelievo di campioni di DNA dai corpi delle vittime.\n\nNon è stata indicata la causa dello sbandamento.",
+ "facts": [
+  {"text": "Secondo il ministero della Salute egiziano i morti sono almeno 31 e i feriti 21.", "who": ["Al Jazeera"]},
+  {"text": "Un veicolo con prodotti petroliferi si è ribaltato sulla Ring Road del Cairo, nel quartiere di al-Warraq.", "who": ["Al Jazeera", "Euronews", "Reuters"]},
+  {"text": "La procura generale ha aperto un'inchiesta.", "who": ["Al Jazeera"]}
+ ],
+ "view": "Il bilancio viene da una sola fonte ufficiale e le prime cifre erano diverse: va letto come provvisorio. La causa del ribaltamento non è nota.\n\nGli incidenti con carichi di carburante su strade urbane trafficate sono tra i più letali. Da guardare: l'esito dell'inchiesta e se il governo cambierà le regole sul trasporto di prodotti petroliferi.",
+ "open": [
+  "Perché il camion ha sbandato?",
+  "Il bilancio delle vittime salirà?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/25/at-least-30-killed-in-egypt-vehicle-fire-health-ministry-says", "angle": "Il bilancio del ministero, la dinamica e l'inchiesta della procura.", "date": "2026-11-25"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/25/at-least-30-killed-in-highway-fire-in-cairo-district", "angle": "Il luogo dell'incendio sulla Ring Road di al-Warraq.", "date": "2026-11-25"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/25/at-least-21-killed-in-blaze-after-vehicle-overturns-in-egypt-health-ministry-says", "angle": "Il bilancio provvisorio del ministero della Salute.", "date": "2026-11-25"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Egitto", "Incidenti"],
+ "themes": [],
+ "places": ["EG"],
+ "city": {"name": "Il Cairo", "lat": 30.04, "lon": 31.24},
+ "figure": {"value": "31", "label": "i morti secondo il ministero della Salute egiziano"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: almeno 31 morti nell'incendio sulla Ring Road del Cairo."}
+ ]
+}

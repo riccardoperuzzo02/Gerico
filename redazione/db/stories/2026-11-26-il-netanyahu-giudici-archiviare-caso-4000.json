@@ -1,0 +1,38 @@
+{
+ "title": "Israele: i giudici suggeriscono di archiviare il caso più grave contro Netanyahu",
+ "section": "mondo",
+ "rank": 3,
+ "status": "live",
+ "summary": "Il collegio che giudica Netanyahu ha raccomandato alla procura di lasciar cadere il Caso 4000, di riesaminare il 2000 e di chiudere il 1000 con un accordo. Il premier dice che il processo «deve finire».",
+ "article": "Mercoledì i giudici del tribunale distrettuale di Gerusalemme hanno raccomandato alla procura di abbandonare il più grave dei tre procedimenti per corruzione contro il primo ministro Benjamin Netanyahu, il Caso 4000. Hanno suggerito di riesaminare il Caso 2000 e di risolvere il Caso 1000 con un accordo. L'intervento è insolito: i giudici hanno convocato all'udienza la procuratrice generale Gali Baharav-Miara.\n\nNetanyahu, il primo premier in carica a essere processato in Israele, è a giudizio dal maggio 2020. Nel Caso 4000 è accusato di corruzione, frode e abuso di fiducia: secondo l'accusa avrebbe offerto favori regolatori al gruppo Bezeq in cambio di una copertura favorevole su un sito di notizie. La giudice Rivka Friedman-Feldman ha parlato di «notevoli difficoltà» nel provare la corruzione. Il Caso 2000 riguarda un presunto accordo con l'editore di un quotidiano; i giudici hanno messo in dubbio che ci sia un reato. Il Caso 1000 riguarda regali di lusso da parte di persone facoltose.\n\nNetanyahu, premier ad interim dopo le elezioni inconcludenti del 27 ottobre, dice che i casi sono «fabbricati» e che il processo «deve finire immediatamente». Il ministro della Difesa Israel Katz ha scritto che è il momento di chiudere un processo viziato fin dall'inizio. La procuratrice generale dice che valuterà le raccomandazioni ed è pronta sia a un verdetto sia a un patteggiamento.\n\nSul piano politico, Gadi Eisenkot, il leader dell'opposizione che sta formando un governo, ha tempo fino al 6 dicembre. Se non ci riesce, l'incarico passa a Netanyahu; se nessuno ci riesce, si vota di nuovo l'anno prossimo. Il partito Democratici di Yair Golan ha sospeso i negoziati di coalizione con Eisenkot. La Knesset, il parlamento israeliano, ha approvato in via preliminare una commissione d'inchiesta sul 7 ottobre 2023 e un disegno di legge che introduce limiti di mandato per i premier e impedisce di governare sotto incriminazione.",
+ "facts": [
+  {"text": "I giudici raccomandano alla procura di abbandonare il Caso 4000, riesaminare il 2000 e chiudere il 1000 con un accordo.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "Netanyahu dice che il processo deve finire immediatamente e che i casi sono fabbricati.", "who": ["Al Jazeera"]},
+  {"text": "La procuratrice generale Baharav-Miara dice che valuterà le raccomandazioni, pronta a un verdetto o a un patteggiamento.", "who": ["Al Jazeera"]},
+  {"text": "Eisenkot ha tempo fino al 6 dicembre per formare un governo.", "who": ["Al Jazeera"]}
+ ],
+ "view": "Sono certi l'intervento dei giudici e la sua forma di raccomandazione: la decisione spetta alla procura, che non l'ha ancora presa. Le valutazioni dei giudici sulle prove sono quelle dichiarate in udienza.\n\nPer Netanyahu la posta è politica: restare premier gli dà la leva per evitare una condanna. Da guardare: la risposta della procuratrice generale, il 6 dicembre di Eisenkot e se la raccomandazione cambia i calcoli dei partiti in trattativa.",
+ "open": [
+  "La procura accoglierà la raccomandazione sul Caso 4000?",
+  "Che cosa comporterebbe un accordo sul Caso 1000?",
+  "Eisenkot riuscirà a formare un governo entro il 6 dicembre?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/25/netanyahu-says-corruption-trial-must-end-as-court-suggests-dropping-case", "angle": "I tre casi, le parole di Netanyahu, di Katz e della procuratrice generale e il calendario politico.", "date": "2026-11-25"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/25/israeli-judges-recommend-prosecutors-drop-one-bribery-case-against-netanyahu", "angle": "La raccomandazione dei giudici sul Caso 4000.", "date": "2026-11-25"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/25/processo-netanyahu-richiesta-giudici/", "angle": "L'intervento insolito dei giudici e il quadro del processo.", "date": "2026-11-25"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Israele", "Netanyahu", "Giustizia"],
+ "themes": [],
+ "places": ["IL"],
+ "city": {"name": "Gerusalemme", "lat": 31.77, "lon": 35.21},
+ "figure": {"value": "6 dic", "label": "il termine di Eisenkot per formare un governo"},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: i giudici raccomandano di abbandonare il Caso 4000 contro Netanyahu."}
+ ]
+}

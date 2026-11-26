@@ -1,0 +1,38 @@
+{
+ "title": "Nvidia ferma le spedizioni di server verso quattro paesi del Sud-Est asiatico",
+ "section": "tecnologia",
+ "rank": 6,
+ "status": "live",
+ "summary": "Secondo fonti anonime, Nvidia ha chiesto ai partner di sospendere i server verso Malaysia, Singapore, Thailandia e Indonesia. Nessuna conferma ufficiale dall'azienda o da Washington.",
+ "article": "Nvidia ha chiesto ai suoi partner commerciali di sospendere le spedizioni di server con i propri chip verso Malaysia, Singapore, Thailandia e Indonesia. Lo dicono tre persone a conoscenza della decisione, citate dalla stampa economica internazionale; né Nvidia né il governo americano hanno confermato in pubblico. Tra le aziende che hanno ricevuto la richiesta ci sono Dell e Supermicro, che assemblano server con i chip Nvidia. Non è chiaro se lo stop sia temporaneo.\n\nI quattro paesi sono usati spesso da aziende cinesi per aggirare le restrizioni americane sull'acquisto dei processori più avanzati per l'intelligenza artificiale. La decisione segue le nuove regole del Dipartimento del Commercio degli Stati Uniti, annunciate la settimana scorsa per impedire alle aziende cinesi di accedere ai chip in modo indiretto, anche da remoto.\n\nSecondo il testo delle regole, i fornitori del Sud-Est asiatico hanno bisogno di una licenza per esportare i chip più avanzati; i data center già esistenti hanno 90 giorni per ottenere l'autorizzazione dimostrando che tra i clienti non ci sono soggetti vietati. Le regole danno poche indicazioni su come ottenere le licenze, e questo ha creato molta incertezza. Nvidia e i partner stanno valutando come adeguarsi.\n\nLa vicenda arriva dopo il caso dell'amministratore delegato Jensen Huang. Il 12 novembre Huang si è dimesso, dopo la notizia di un rapporto con una donna sospettata di essere un'informatrice del governo cinese e di aver contrabbandato tecnologia americana in Cina. Meno di due settimane dopo è stato richiamato alla guida dell'azienda, anche per le pressioni dell'amministrazione Trump sul consiglio. Mercoledì l'agenzia di rating S&P ha messo sotto osservazione il giudizio su Nvidia, senza escludere un taglio.",
+ "facts": [
+  {"text": "Secondo tre fonti anonime Nvidia ha chiesto ai partner di sospendere i server verso Malaysia, Singapore, Thailandia e Indonesia.", "who": ["Il Post"]},
+  {"text": "Dell e Supermicro sono tra le aziende che hanno ricevuto la richiesta.", "who": ["Il Post"]},
+  {"text": "Le nuove regole del Commercio richiedono una licenza ai fornitori del Sud-Est asiatico; i data center esistenti hanno 90 giorni.", "who": ["Il Post"]},
+  {"text": "S&P ha messo sotto osservazione il rating di Nvidia, senza escludere un declassamento.", "who": ["ANSA"]}
+ ],
+ "view": "È accertata l'esistenza delle regole del Commercio. La sospensione delle spedizioni viene da fonti anonime e da una sola ricostruzione: finché Nvidia o Washington non la confermano va letta come non verificata.\n\nSe confermata, mostra come le restrizioni americane ricadano sui partner commerciali e sui paesi usati come snodo. Da guardare: un comunicato dell'azienda, le licenze concesse nei prossimi 90 giorni e gli effetti sui data center della regione.",
+ "open": [
+  "Lo stop alle spedizioni è temporaneo?",
+  "Nvidia o il governo americano confermeranno la richiesta?",
+  "Come si ottengono le licenze previste dalle nuove regole?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/26/nvidia-blocca-spedizione-server-chip-sud-est-asiatico/", "angle": "La richiesta ai partner, le aziende coinvolte e le nuove regole americane.", "date": "2026-11-26"},
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/25/s-mette-sotto-osservazione-il-rating-di-nvidia-non-esclude-declassamento_3bbcf9f1-f146-47fa-999c-f2b90a83580c.html", "angle": "S&P mette sotto osservazione il rating di Nvidia.", "date": "2026-11-25"},
+  {"name": "Al Jazeera", "kind": "tv", "country": "Qatar", "area": "Medio Oriente", "url": "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal", "angle": "Il contesto: la mossa americana contro l'accesso remoto della Cina ai chip, dopo il caso Huang.", "date": "2026-11-17"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Nvidia", "Chip", "Stati Uniti", "Cina"],
+ "themes": ["borse-ia"],
+ "places": ["US", "MY", "SG", "TH", "ID"],
+ "figure": {"value": "90 giorni", "label": "il tempo dei data center esistenti per ottenere l'autorizzazione"},
+ "prev": "2026-11-25-us-nvidia-huang-scuse-grazia",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: Nvidia avrebbe fermato i server verso quattro paesi del Sud-Est asiatico."}
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "title": "Borse: Wall Street chiude contrastata, Tokyo rimbalza dopo il crollo dei chip",
+ "section": "mercati",
+ "rank": 10,
+ "status": "live",
+ "summary": "Mercoledì il Dow Jones ha guadagnato lo 0,44% mentre il Nasdaq ha perso lo 0,78%. Giovedì la Borsa di Tokyo apre in rialzo dell'1,4% dopo i forti ribassi dei titoli dei chip.",
+ "article": "Mercoledì Wall Street ha chiuso con andamenti divergenti: il Dow Jones è salito dello 0,44%, il Nasdaq è sceso dello 0,78% e lo S&P 500 dello 0,33%, a 7.180 punti. Nel corso della seduta Nvidia era arrivata a perdere più dell'8%, prima di un recupero dei listini. Per il secondo giorno il settore tecnologico è tra i più colpiti.\n\nNella serata di mercoledì l'agenzia di rating S&P ha messo sotto osservazione il giudizio su Nvidia e non esclude un taglio. Mercoledì pomeriggio i dati americani avevano mostrato una crescita del Pil del 4,3% nel terzo trimestre, contro il 3,5% atteso dagli analisti, e un'inflazione al 3,8%.\n\nIn Europa Piazza Affari ha chiuso in calo dell'1,81%, a 47.249 punti, con Prysmian e Stm in ribasso e Stellantis in rialzo. Lo spread tra Btp e Bund è salito a 111,9 punti. Il petrolio ha chiuso in rialzo a New York a 83,68 dollari al barile.\n\nGiovedì in Asia la Borsa di Tokyo ha aperto in rialzo dell'1,41% e a metà mattina saliva dell'1,5%. Hong Kong guadagna lo 0,86%, mentre Shanghai perde il 2,05% all'apertura del pomeriggio. Mercoledì i titoli dei chip erano crollati in Giappone e in Corea del Sud. Oggi negli Stati Uniti i mercati sono chiusi per la festa del Ringraziamento.",
+ "facts": [
+  {"text": "Mercoledì Wall Street ha chiuso con il Dow a +0,44%, il Nasdaq a -0,78% e lo S&P 500 a -0,33%.", "who": ["ANSA"]},
+  {"text": "S&P ha messo sotto osservazione il rating di Nvidia.", "who": ["ANSA"]},
+  {"text": "Il Pil americano del terzo trimestre è cresciuto del 4,3%, contro il 3,5% atteso.", "who": ["ANSA"]},
+  {"text": "Giovedì Tokyo ha aperto a +1,41%.", "who": ["ANSA"]}
+ ],
+ "view": "Le variazioni degli indici sono dati di chiusura accertati. Il rimbalzo di Tokyo viene dall'apertura e può cambiare nella giornata.\n\nIl settore dei chip continua a muovere i listini, ma i dati americani sull'economia sono forti. Da guardare: se il rimbalzo asiatico regge in Europa e la ripresa degli Stati Uniti, oggi chiusi, venerdì.",
+ "open": [
+  "Il rimbalzo dei titoli dei chip in Asia reggerà in Europa?",
+  "Che cosa deciderà S&P sul rating di Nvidia?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/economia/2026/11/25/wall-street-recupera-dj-044-nasdaq-078_71c41bba-e936-4677-a001-9227fde4b430.html", "angle": "Le chiusure di Wall Street di mercoledì.", "date": "2026-11-25"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/25/borsa-statunitense-andamento-negativo-nvidia-anthropic-tecnologia-ai/", "angle": "Un'altra giornata negativa per il tecnologico, tra Nvidia e Anthropic.", "date": "2026-11-25"}
+ ],
+ "firstSeen": "2026-11-26T07:22:00+01:00",
+ "updated": "2026-11-26T07:22:00+01:00",
+ "change": "",
+ "tags": ["Wall Street", "Nvidia", "Borse"],
+ "themes": ["borse-ia"],
+ "places": ["US", "JP"],
+ "figure": {"value": "-0,8%", "label": "il calo del Nasdaq nella seduta di mercoledì"},
+ "prev": "2026-11-25-us-wall-street-nvidia-asia-ia",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-26T07:22:00+01:00", "text": "Prima notizia: Wall Street contrastata, Tokyo rimbalza."}
+ ]
+}

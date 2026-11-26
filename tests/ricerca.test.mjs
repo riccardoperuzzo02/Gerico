@@ -122,3 +122,10 @@ test("notizie: fino a tre lettere solo parole che cominciano così, nel titolo o
   assert.deepEqual(tieni("oro"), ["franci"]);
   assert.deepEqual(tieni("genitori"), ["l'aqui"]);
 });
+
+test("nomeBreve toglie le forme societarie per cercare il nome nelle notizie", () => {
+  const G = carica();
+  const casi = { "Eni S.p.A.": "Eni", "Square Enix Holdings Co., Ltd.": "Square Enix", "Apple Inc.": "Apple", "Toyota Motor Corporation": "Toyota Motor",
+    "Banco BPM": "Banco BPM", "Enel Chile S.A.": "Enel Chile", "Société Générale": "Société Générale", "ASML Holding N.V.": "ASML", "Siemens AG": "Siemens", "BP p.l.c.": "BP" };
+  for (const [n, atteso] of Object.entries(casi)) assert.equal(G.nomeBreve(n), atteso, n);
+});

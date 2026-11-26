@@ -100,6 +100,16 @@
       agenda: scegli(ix.agenda, 4, 150), glossario: scegli(ix.glossario, 4, 150), sezioni: scegli(ix.sezioni, 4, 150) };
   };
 
+  // il nome di una società senza la forma societaria («Eni S.p.A.» → Eni, «ASML Holding N.V.» → ASML): così si cerca
+  // nelle notizie, dove la forma non c'è
+  const FORME = /[\s,]+(s\.?\s?p\.?\s?a\.?|inc\.?|incorporated|corp\.?|corporation|co\.?|company|ltd\.?|limited|plc|p\.?l\.?c\.?|ag|se|s\.?a\.?|n\.?v\.?|holdings?|group)\.?$/i;
+  G.nomeBreve = (n) => {
+    const tutto = String(n || "").trim();
+    let s = tutto, prima;
+    do { prima = s; s = s.replace(FORME, "").replace(/[\s,.]+$/, "").trim(); } while (s && s !== prima);
+    return s || tutto;
+  };
+
   // le notizie trovate da G.cerca (common.js), ripassate: fino a tre lettere solo le parole che cominciano così, nel
   // titolo o nei temi («eni» non deve portare i «genitori»); da quattro in su ogni parola in titolo, temi o sommario
   G.ricercaNotizie = (storie, q) => {
@@ -125,6 +135,58 @@
   const ORDINE = ["titoli", "strumenti", "societa", "agenda", "glossario", "sezioni"];
   const TIPI = { azione: ["Azione", "Stock"], etf: ["ETF", "ETF"], fondo: ["Fondo", "Fund"], indice: ["Indice", "Index"], valuta: ["Valuta", "Currency"], cripto: ["Cripto", "Crypto"], future: ["Future", "Future"] };
   const lungo = (q) => compatta(q).length;
+  const tipoNome = (k) => (TIPI[k] ? G.L(TIPI[k][0], TIPI[k][1]) : "");
+
+  // ---------- le notizie di GERICO che citano un nome (per le schede dei titoli) ----------
+  G.notizieDi = (nome, max) => {
+    const q = G.nomeBreve(nome);
+    if (!q || !G.cerca || !G.cerca.indice) return Promise.resolve([]);
+    return G.cerca.indice().then((n) => (n && n.storie ? G.ricercaNotizie(G.cerca.trova(n, q).storie, q) : []).slice(0, max || 3).map((h) => ({
+      t: h.r.x.t, url: h.r.oggi ? G.storyUrl(h.r.x) : "/s/" + encodeURIComponent(h.r.x.id),
+      sotto: G.secLabel(h.r.x.sec) + (h.r.x.d ? " · " + G.cerca.quando(h.r.x.d) : "")
+    }))).catch(() => []);
+  };
+  G.notizieHTML = (righe) => (!righe || !righe.length ? "" : '<div class="t-st-n"><p class="l">' + G.L("Nelle notizie di GERICO", "In GERICO's news") + "</p><ul>" +
+    righe.map((r) => '<li><a href="' + G.esc(r.url) + '">' + G.esc(r.t) + "</a><small>" + G.esc(r.sotto) + "</small></li>").join("") + "</ul></div>");
+
+  // ---------- il foglio di un titolo, con i prezzi di Yahoo Finance (/api/titolo): prezzo, tre mesi, un anno ----------
+  G.schedaTitolo = (x) => {
+    if (!x || !x.s || !G.conto || !G.conto.foglio) return null;
+    const L = G.L, esc = G.esc, url = "https://finance.yahoo.com/quote/" + encodeURIComponent(x.s);
+    const sotto = (d) => esc([x.s, (d && d.b) || x.b, tipoNome((d && d.k) || x.k), d && d.cur].filter(Boolean).join(" · "));
+    const f = G.conto.foglio(x.n || x.s, '<div class="sk"><p class="sk-sotto">' + sotto(null) + '</p><p class="sk-stato" role="status">' +
+      L("Carico i prezzi da Yahoo Finance…", "Loading prices from Yahoo Finance…") + "</p></div>");
+    const box = f.d.querySelector(".sk");
+    // una notizia di GERICO si apre nel sito: il foglio si chiude
+    box.addEventListener("click", (e) => { const a = e.target.closest("a[href]"); if (a && !a.target) f.chiudi("vai"); });
+    const yahoo = (u) => '<a href="' + esc(G.safeUrl ? G.safeUrl(u) : u) + '" target="_blank" rel="noopener nofollow">' + L("Vedi su Yahoo Finance", "See on Yahoo Finance") +
+      '<span class="sr-only">' + L(" (si apre in un'altra scheda)", " (opens in a new tab)") + "</span></a>";
+    const num = (v, k) => (typeof v !== "number" ? "—" : G.num(v, k === "valuta" || Math.abs(v) < 1 ? 4 : 2));
+    const pc = (v) => (typeof v !== "number" ? "—" : G.pct(v));
+    const su = (v) => (typeof v !== "number" ? "" : v > 0 ? "t-up" : v < 0 ? "t-down" : "");
+    const cella = (k, v, cls) => "<div><dt>" + k + "</dt><dd" + (cls ? ' class="' + cls + '"' : "") + ">" + esc(v) + "</dd></div>";
+    const corpo = (d) => {
+      const quando = d.t ? (G.isToday(d.t) ? L("oggi alle ", "today at ") + G.hm(d.t) : L("chiusura del ", "close of ") + G.day(d.t)) : "";
+      return '<p class="sk-sotto">' + sotto(d) + "</p>" +
+        '<p class="sk-p"><b class="sk-v">' + num(d.p, d.k) + "</b>" + (d.cur ? ' <span class="sk-cur">' + esc(d.cur) + "</span>" : "") +
+        (typeof d.c === "number" ? ' <b class="sk-c ' + su(d.c) + '">' + pc(d.c) + "</b>" : "") + (quando ? ' <span class="sk-q">' + esc(quando) + "</span>" : "") + "</p>" +
+        (d.spark && d.spark.length > 1 ? '<div class="sk-g ' + su(d.c3m) + '">' + G.spark(d.spark, 320, 80, "sk-sp", true) +
+          '<p class="sk-gl">' + L("Tre mesi, una chiusura al giorno", "Three months, one close a day") + "</p></div>" : "") +
+        '<dl class="sk-dl">' + cella(L("1 settimana", "1 week"), pc(d.c1w), su(d.c1w)) + cella(L("1 mese", "1 month"), pc(d.c1m), su(d.c1m)) + cella(L("3 mesi", "3 months"), pc(d.c3m), su(d.c3m)) +
+        (typeof d.lo === "number" && typeof d.hi === "number" ? cella(L("Oggi", "Today"), num(d.lo, d.k) + " – " + num(d.hi, d.k)) : "") +
+        (typeof d.lo52 === "number" && typeof d.hi52 === "number" ? cella(L("52 settimane", "52 weeks"), num(d.lo52, d.k) + " – " + num(d.hi52, d.k)) : "") + "</dl>" +
+        '<div class="sk-n"></div><p class="sk-fonte">' + L("Dati di Yahoo Finance, con qualche minuto di ritardo. ", "Data from Yahoo Finance, a few minutes delayed. ") + yahoo(d.url || url) + "</p>";
+    };
+    const errore = () => '<p class="sk-sotto">' + sotto(null) + '</p><p class="sk-err" role="status">' +
+      L("I dati di Yahoo Finance ora non arrivano. Riprova tra poco.", "Yahoo Finance data is not coming through right now. Try again shortly.") +
+      '</p><div class="sk-n"></div><p class="sk-fonte">' + yahoo(url) + "</p>";
+    const notizie = () => G.notizieDi(x.n || x.s, 3).then((righe) => { const n = box.querySelector(".sk-n"); if (n && !f.chiuso) n.innerHTML = G.notizieHTML(righe); });
+    fetch("/api/titolo?s=" + encodeURIComponent(x.s), { credentials: "same-origin", headers: { Accept: "application/json" } })
+      .then((r) => r.json().then((d) => ({ ok: r.ok, d }), () => ({ ok: false, d: null })))
+      .then(({ ok, d }) => { if (f.chiuso) return; box.innerHTML = ok && d && typeof d.p === "number" ? corpo(d) : errore(); notizie(); })
+      .catch(() => { if (f.chiuso) return; box.innerHTML = errore(); notizie(); });
+    return f;
+  };
 
   G.ricercaCampo = (P, azioni) => {
     const L = G.L, esc = G.esc, $ = (id) => document.getElementById(id);

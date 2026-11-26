@@ -470,7 +470,25 @@ G.page("terminal", async function (P) {
     html += "<p>" + cg + " · " + weightWord(d) + " " + wtS(x.w) + (hasC(x) && !quota(d) ? " · " + G.L("contributo all'indice ", "contribution to the index ") + ptsLong((x.w * x.c) / 100) : "") + "</p>";
     const pr = stockPrice(x, d);
     if (pr) html += "<p>" + G.L("Ultimo prezzo ", "Last price ") + esc(pr) + (x.d ? G.L(", del ", ", of ") + esc(G.dayOnly(x.d)) : "") + ".</p>";
-    return html;
+    const ev = prossimo(x.s);
+    if (ev) html += "<p>" + (ev.kind === "cedole" ? G.L("Cedola il ", "Dividend on ") : G.L("Trimestrale il ", "Earnings on ")) + esc(G.dayOnly(ev.date)) + ".</p>";
+    html += '<p class="t-st-l"><button type="button" class="t-btn" data-sk="' + esc(x.s) + '">' + G.L("Grafico di tre mesi", "Three-month chart") + "</button>" +
+      ext("https://finance.yahoo.com/quote/" + encodeURIComponent(x.s), G.L("Vedi su Yahoo Finance", "See on Yahoo Finance")) + "</p>";
+    return html + '<div class="t-st-nw" data-q="' + esc(x.n) + '"></div>';
+  }
+  // la prossima trimestrale o cedola di un titolo, se c'è nel calendario delle società
+  let socD = null;
+  function prossimo(sym) {
+    const oggi = G.dayKey(new Date());
+    return ((socD && socD.items) || []).filter((it) => it && it.sym === sym && it.date >= oggi).sort((a, b) => (a.date < b.date ? -1 : 1))[0] || null;
+  }
+  // le notizie di GERICO che citano il titolo scelto: arrivano dopo, se ce ne sono (ricerca.js)
+  let nwTok = 0;
+  function notizieDettaglio() {
+    const box = $("indetail").querySelector(".t-st-nw");
+    if (!box || !G.notizieDi) return;
+    const tok = ++nwTok;
+    G.notizieDi(box.dataset.q, 2).then((righe) => { if (tok === nwTok && box.isConnected && righe.length) box.innerHTML = G.notizieHTML(righe); });
   }
   // quanti salgono e quanti scendono; chi ha spinto e chi ha frenato l'indice (peso per variazione)
   function insideSummary(d) {
@@ -564,6 +582,7 @@ G.page("terminal", async function (P) {
     inside.rects = drawStocks($("inmap"), d, inside.sel);
     placeInRing(true);
     $("indetail").innerHTML = stockDetail(d);
+    notizieDettaglio();
     $("insum").innerHTML = insideSummary(d);
     $("inlist").innerHTML = insideList(d);
     requestAnimationFrame(() => G.seg($("inlist").querySelector(".t-sort"), true));
@@ -575,6 +594,7 @@ G.page("terminal", async function (P) {
     $("inmap").querySelectorAll(".tile").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.code === sym)));
     placeInRing(false);
     $("indetail").innerHTML = stockDetail(inside.d);
+    notizieDettaglio();
     easeHeight(iv, h0, 300);
   }
 
@@ -670,7 +690,7 @@ G.page("terminal", async function (P) {
     const items = wt ? G.mapItems(wt, tm, state.view, qt0) : [], mi = items.find((x) => x.code === code);
     const ok = !!(d && Array.isArray(d.items) && d.items.length);
     if (ok) d.items.sort((a, b) => b.w - a.w);
-    Object.assign(inside, { code, d: ok ? d : null, sel: "", sort: "peso", all: false, rects: [], mapIndex: mi ? mi.index : "" });
+    Object.assign(inside, { code, d: ok ? d : null, sel: (ok && opt.sel) || "", sort: "peso", all: false, rects: [], mapIndex: mi ? mi.index : "" });
     if (opt.push) { try { history.pushState(Object.assign({}, history.state, { gi: code }), "", location.pathname + location.search + "#indice-" + code); } catch (e) { /* niente */ } }
     state.sel = code;
     G.ls.set("gerico.mapSel", code);
@@ -1517,12 +1537,18 @@ G.page("terminal", async function (P) {
     if (e.key === "Escape" && inside.code && !document.querySelector("dialog[open]")) { e.preventDefault(); leave(); return; }
     if (FKEYS[e.key]) { e.preventDefault(); run(FKEYS[e.key]); }
   });
+  P.on($("indetail"), "click", (e) => {
+    const b = e.target.closest("[data-sk]");
+    if (!b || !G.schedaTitolo) return;
+    const x = inside.d && inside.d.items.find((it) => it.s === b.dataset.sk);
+    G.schedaTitolo({ s: b.dataset.sk, n: x ? x.n : b.dataset.sk, b: inside.d ? inside.d.index : "", k: "azione" });
+  });
   // ---------- il campo «Cerca» nella barra in alto (ricerca.js): apre quello che il Terminal sa già mostrare ----------
   if (G.ricercaCampo) G.ricercaCampo(P, {
     // un titolo di un indice della mappa: si entra nell'indice (o ci si resta) con il titolo scelto
     titolo: async (code, sym) => {
-      if (inside.code !== code) await enter(code, {});
-      if (inside.code === code && inside.d) selectStock(sym);
+      if (inside.code !== code) await enter(code, { sel: sym });
+      else if (inside.d) selectStock(sym);
       go("map-panel");
     },
     strumento: (sym) => { const q = findQuote(sym); if (q) apriQuote(q); else run(sym); },
@@ -1687,6 +1713,8 @@ G.page("terminal", async function (P) {
     if (PANELS[k] && $(PANELS[k]) && !$(PANELS[k]).hidden) go(PANELS[k]);
   };
   Promise.all([G.load("quotes"), G.load("macro"), G.load("sentiment"), G.load("sec"), G.load("titoli"), G.load("titoli-storico"), G.load("societari"), settled]).then(([qt, mc, se, sc, ti, th, soc]) => {
+    socD = soc;
+    if (inside.d && inside.sel) { $("indetail").innerHTML = stockDetail(inside.d); notizieDettaglio(); }
     if (G.titoliFresh(ti)) {
       $("ti").innerHTML = G.titoliHTML(ti, th);
       $("p-titoli").hidden = false;

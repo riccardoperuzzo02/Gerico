@@ -3570,3 +3570,32 @@ html.nuova .ad-mie-l li { border-radius: 0 !important; }
 @media (max-width: 359px) { .t-o { column-gap: 8px; padding: 6px 8px; } .t-o-v { display: none; } }
 @media (prefers-reduced-motion: no-preference) { .t-res:not([hidden]) { animation: t-res-giu 140ms var(--ease); } }
 @keyframes t-res-giu { from { opacity: 0; transform: translateY(-4px); } }
+
+/* la scheda del titolo nella mappa: prossima trimestrale o cedola, grafico, Yahoo Finance, notizie di GERICO */
+.t-st-l { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 10px; }
+.t-st-l .t-btn { min-height: 40px; padding: 0 14px; font-size: 0.875rem; }
+.t-st-n { margin-top: 12px; }
+.t-st-n .l, .sk-n .l { margin: 0 0 4px; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--t-ink-3, var(--muted)); }
+.t-st-n ul { margin: 0; padding: 0; list-style: none; }
+.t-st-n li { padding: 6px 0; border-top: 1px solid rgb(170 195 255 / 0.1); border-top: 1px solid oklch(0.82 0.06 268 / 0.1); }
+.t-st-n li:first-child { border-top: 0; }
+.t-st-n a { font-weight: 600; text-decoration: none; }
+.t-st-n small { display: block; margin-top: 2px; font-size: 0.8125rem; color: var(--t-ink-3, var(--muted)); }
+
+/* il foglio di un titolo da Yahoo Finance */
+.sk-sotto { margin: 0 0 10px; font-size: 0.875rem; color: var(--t-ink-3, var(--muted)); }
+.sk-p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0 0 12px; }
+.sk-v { font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.sk-cur { font-size: 0.9375rem; color: var(--t-ink-3, var(--muted)); }
+.sk-c { font-size: 1.0625rem; font-variant-numeric: tabular-nums; }
+.sk-q { flex-basis: 100%; font-size: 0.8125rem; color: var(--t-ink-3, var(--muted)); }
+.sk-g { margin: 0 0 12px; }
+.sk-sp { display: block; width: 100%; height: 80px; }
+.sk-gl { margin: 4px 0 0; font-size: 0.75rem; color: var(--t-ink-3, var(--muted)); }
+.sk-dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 10px 16px; margin: 0 0 14px; }
+.sk-dl div { min-width: 0; }
+.sk-dl dt { font-size: 0.75rem; color: var(--t-ink-3, var(--muted)); }
+.sk-dl dd { margin: 2px 0 0; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sk-err, .sk-stato { margin: 8px 0 14px; color: var(--t-ink-3, var(--muted)); }
+.sk-n:not(:empty) { margin: 0 0 6px; }
+.sk-fonte { margin: 12px 0 0; font-size: 0.8125rem; color: var(--t-ink-3, var(--muted)); }

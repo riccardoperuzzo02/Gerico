@@ -54,7 +54,7 @@ def browser():
         b.close()
 
 
-def apri(browser, base, larghezza, yahoo=200, lingua=""):
+def apri(browser, base, larghezza, yahoo=200, lingua="", rotte=None):
     telefono = larghezza < 760
     ctx = browser.new_context(viewport={"width": larghezza, "height": 720 if telefono else 820},
                               has_touch=telefono, is_mobile=telefono, device_scale_factor=2 if telefono else 1)
@@ -70,6 +70,10 @@ def apri(browser, base, larghezza, yahoo=200, lingua=""):
             route.fulfill(status=yahoo, content_type="application/json", body=json.dumps({"errore": "yahoo"}))
 
     pg.route("**/api/cerca*", finta)
+    def risponde(stato, corpo):
+        return lambda route: route.fulfill(status=stato, content_type="application/json", body=json.dumps(corpo))
+    for schema, (stato, corpo) in (rotte or {}).items():
+        pg.route(schema, risponde(stato, corpo))
     richieste = []
     pg.on("request", lambda r: richieste.append(r.url))
     pg.goto(base + "/terminal.html" + lingua, wait_until="networkidle")
@@ -214,4 +218,76 @@ def test_sul_computer_stretto_orologio_e_campo_ci_stanno(browser, base, larghezz
     assert campo["width"] >= 170, campo
     assert orologio["x"] + orologio["width"] <= campo["x"] and campo["x"] + campo["width"] <= modo["x"], (orologio, campo, modo)
     assert pg.evaluate("document.documentElement.scrollWidth") <= larghezza
+    pg.context.close()
+
+
+# ---------- Task 4: cosa si apre ----------
+SOCIETARI = {"asOf": "2026-11-26T15:44:45+01:00", "items": [
+    {"kind": "utili", "date": "2099-12-07", "sym": "ENI.MI", "name": "Eni", "code": "ITA", "index": "FTSE MIB", "when": "", "period": ""}]}
+ARCHIVIO = {"temi": {}, "aggiornato": "2026-11-26T15:00:00+01:00", "storie": [
+    {"id": "2026-11-25-it-eni-prova", "t": "Gas: l'Eni prevede un inverno difficile", "s": "Prova.", "sec": "economia", "d": "2026-11-25T10:00:00+01:00", "tags": ["Eni"]}]}
+TITOLO = {"s": "E", "n": "Eni S.p.A.", "b": "NYSE", "k": "azione", "cur": "USD", "p": 33.12, "t": "2026-11-26T16:35:19.000Z", "prev": 32.5,
+          "c": 1.91, "c1w": -2.13, "c1m": -10.1, "c3m": 4.99, "lo": 32.9, "hi": 33.4, "lo52": 21.1, "hi52": 36.2,
+          "spark": [30, 31, 30.5, 32, 33.12], "url": "https://finance.yahoo.com/quote/E"}
+ROTTE = {"**/data/societari.json*": (200, SOCIETARI), "**/data/archivio.json*": (200, ARCHIVIO), "**/data/edition.json*": (200, {"stories": []})}
+
+
+def scegli(pg, testo, nome):
+    pg.fill("#tq", testo)
+    pg.locator("#tq-l [role=option]").filter(has_text=nome).first.click()
+
+
+def test_eni_apre_il_ftse_mib_con_la_scheda_completa(browser, base):
+    pg = apri(browser, base, 1280, rotte=ROTTE)
+    pronto(pg)
+    scegli(pg, "eni", "Eni")
+    expect(pg.locator("#map-h")).to_contain_text("FTSE MIB", timeout=5000)
+    det = pg.locator("#indetail")
+    expect(det).to_contain_text("Eni")
+    expect(det).to_contain_text("Ultimo prezzo")
+    expect(det).to_contain_text("peso")
+    expect(det).to_contain_text("Trimestrale il 7 dic")
+    expect(det).to_contain_text("l'Eni prevede un inverno difficile", timeout=3000)
+    expect(det.locator("a[href*='finance.yahoo.com/quote/ENI.MI']")).to_have_count(1)
+    assert pg.get_attribute("#inmap .tile[aria-pressed=true]", "data-code") == "ENI.MI"
+    pg.context.close()
+
+
+def test_da_dentro_il_dax_apple_porta_all_sp_500(browser, base):
+    pg = apri(browser, base, 1280, rotte=ROTTE)
+    pronto(pg)
+    scegli(pg, "sap", "SAP")
+    expect(pg.locator("#map-h")).to_contain_text("DAX", timeout=5000)
+    scegli(pg, "apple", "Apple")
+    expect(pg.locator("#map-h")).to_contain_text("S&P 500", timeout=5000)
+    expect(pg.locator("#indetail")).to_contain_text("Apple")
+    pg.context.close()
+
+
+def test_un_titolo_di_yahoo_apre_il_foglio(browser, base):
+    rotte = dict(ROTTE)
+    rotte["**/api/titolo*"] = (200, TITOLO)
+    pg = apri(browser, base, 1280, rotte=rotte)
+    pronto(pg)
+    pg.fill("#tq", "eni")
+    pg.locator("#tq-l [role=option]").filter(has_text="NYSE").first.click()
+    d = pg.locator("dialog#conto-d[open]")
+    expect(d).to_contain_text("Eni S.p.A.", timeout=4000)
+    expect(d).to_contain_text("33,12")
+    expect(d).to_contain_text("+1,91%")
+    expect(d).to_contain_text("3 mesi")
+    expect(d.locator(".sk-sp")).to_have_count(1)
+    expect(d.locator("a[href='https://finance.yahoo.com/quote/E']")).to_have_count(1)
+    pg.context.close()
+
+
+def test_il_foglio_dice_quando_yahoo_non_risponde(browser, base):
+    rotte = dict(ROTTE)
+    rotte["**/api/titolo*"] = (502, {"errore": "yahoo"})
+    pg = apri(browser, base, 390, rotte=rotte)
+    pronto(pg)
+    pg.fill("#tq", "eni")
+    pg.locator("#tq-l [role=option]").filter(has_text="NYSE").first.click()
+    expect(pg.locator("dialog#conto-d[open]")).to_contain_text("non arrivano", timeout=4000)
+    assert pg.evaluate("document.documentElement.scrollWidth") <= 390
     pg.context.close()

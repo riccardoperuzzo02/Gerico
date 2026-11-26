@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-26-gb-trattati-ue-testo-universita",
+  "title": "Regno Unito: oggi il testo dei trattati con l'Ue, aperte le rette universitarie",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Londra", "lat": 51.5, "lon": -0.12},
+  "rank": 203,
+  "summary": "Il governo pubblica i testi dell'accordo con Bruxelles e la legge per applicarlo. Il premier Burnham dice che gli studenti europei pagheranno rette più alte dei britannici.",
+  "article": "Il governo britannico pubblica oggi i testi dei nuovi trattati con l'Unione europea e la legislazione pensata per attuare gran parte dell'accordo, annunciato venerdì scorso a Bruxelles dal primo ministro Andy Burnham. Secondo indiscrezioni che il governo non ha confermato, i trattati avrebbero una clausola che ne permette la chiusura dopo dieci anni.\n\nUn punto dell'intesa non è chiuso: le rette universitarie per gli studenti europei nel Regno Unito. Le due parti si sono date altri sei mesi per trovare una soluzione. Mercoledì alla Camera dei comuni la leader dell'opposizione conservatrice, Kemi Badenoch, ha chiesto a Burnham di escludere la parità di trattamento con gli studenti britannici. Il premier ha risposto che la proposta europea di far pagare la stessa retta «non sarà messa sul tavolo» e ha lasciato intendere che gli studenti europei pagheranno di più.\n\nL'Ue, intanto, ha presentato una bozza per il programma «Made in Europe», che permetterebbe al Regno Unito di aderire senza dover alzare i dazi sulle auto cinesi importate.\n\nIl testo dei trattati e la legge d'attuazione dovranno ora essere esaminati dal Parlamento. Le date dei voti non sono ancora state indicate nelle fonti consultate.",
+  "facts": [
+    {"text": "Il governo pubblica oggi i testi dei trattati con l'Ue e la legge per attuarli.", "who": ["Governo britannico"]},
+    {"text": "Sulle rette degli studenti europei le parti si sono date altri sei mesi.", "who": ["Governo britannico e Ue"]},
+    {"text": "Burnham dice che la retta uguale per studenti britannici ed europei non sarà messa sul tavolo.", "who": ["Andy Burnham, primo ministro"]},
+    {"text": "Una clausola di recesso dopo dieci anni è riportata da indiscrezioni non confermate.", "who": ["Indiscrezioni non confermate"]}
+  ],
+  "view": "Si può dire con certezza che i testi escono oggi e che le rette universitarie restano fuori dall'accordo. La clausola di recesso e il programma «Made in Europe» vanno verificati sui documenti.\n\nL'accordo passa ora dal piano politico a quello giuridico, dove si vedrà quanto pesa ogni condizione. Nei prossimi giorni conviene guardare i testi e il calendario parlamentare.",
+  "open": [
+    "La clausola di recesso a dieci anni è nel testo pubblicato?",
+    "Quando voterà il Parlamento?",
+    "Come finirà la trattativa sulle rette in sei mesi?"
+  ],
+  "sources": [
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo", "angle": "Dal testo del feed: testi dei trattati oggi, legge d'attuazione, clausola di recesso a dieci anni (indiscrezione).", "at": "2026-11-26T02:13:00+00:00"},
+    {"name": "The Guardian", "kind": "stampa", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/uk-news/2026/nov/25/eu-nationals-will-pay-higher-tuition-fees-than-uk-students-burnham-indicates", "angle": "Dal testo del feed: rette degli studenti europei, sei mesi in più, posizione di Burnham.", "at": "2026-11-25T18:19:19+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: il governo pubblica i testi dei trattati con l'Ue, restano aperte le rette universitarie."}
+  ],
+  "tags": ["Regno Unito", "Rapporti con l'Ue", "Università"],
+  "themes": [],
+  "places": ["GB", "EU"],
+  "divergences": [],
+  "notCovered": []
+}

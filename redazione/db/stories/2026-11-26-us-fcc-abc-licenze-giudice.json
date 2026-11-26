@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-26-us-fcc-abc-licenze-giudice",
+  "title": "Stati Uniti: una giudice blocca la revisione anticipata delle licenze di ABC",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "city": {"name": "Washington", "lat": 38.9, "lon": -77.04},
+  "rank": 102,
+  "summary": "La giudice federale Loren AliKhan ha vietato alla Fcc di andare avanti sul rinnovo anticipato delle licenze delle stazioni di ABC. La Fcc dice che farà ricorso nel merito.",
+  "article": "Mercoledì 25 novembre la giudice distrettuale federale Loren AliKhan ha bloccato in via preliminare la procedura con cui la Fcc, l'autorità federale delle comunicazioni, aveva avviato una revisione anticipata delle licenze di trasmissione di ABC, la rete controllata da Disney. La causa va avanti.\n\nLe stazioni coinvolte trasmettono in sei dei maggiori mercati del paese, e le loro licenze erano in scadenza tra il 2028 e il 2031. Disney e ABC avevano fatto causa parlando di ritorsione. Secondo la giudice, ABC ha probabilmente ragione nel sostenere che la revisione sia una punizione per i contenuti. La giudice ha ricordato almeno 11 occasioni in cui il presidente Donald Trump ha chiesto pubblicamente di togliere le licenze alla rete, e ha scritto che Brendan Carr, il presidente della Fcc, avrebbe preso quelle parole come ordini.\n\nLa Fcc nega di voler colpire i contenuti: dice di verificare il rispetto delle norme contro le discriminazioni sul lavoro e di aver ricevuto risposte insufficienti. Un suo portavoce ha definito la decisione sbagliata nei fatti e nel diritto e ha detto che l'agenzia intende vincere la causa. ABC News ha parlato di una «vittoria importante» per il Primo emendamento, la norma che tutela la libertà di parola.\n\nLa giudice ha respinto invece la richiesta più ampia di ABC, che voleva vietare alla Fcc qualsiasi pressione formale o informale sulla rete. Il blocco vale mentre il processo prosegue.",
+  "facts": [
+    {"text": "La giudice Loren AliKhan ha emesso un'ingiunzione preliminare contro la revisione anticipata delle licenze delle stazioni di ABC.", "who": ["Loren AliKhan, giudice distrettuale federale"]},
+    {"text": "Nella motivazione cita almeno 11 occasioni in cui Trump ha chiesto alla Fcc di revocare le licenze di ABC.", "who": ["Loren AliKhan, giudice distrettuale federale"]},
+    {"text": "La Fcc nega intenti punitivi: dice di verificare il rispetto delle norme contro le discriminazioni sul lavoro.", "who": ["Fcc"]},
+    {"text": "La richiesta più ampia di ABC, contro ogni pressione informale, è stata respinta.", "who": ["Loren AliKhan, giudice distrettuale federale"]}
+  ],
+  "view": "Si può dire con certezza che la giudice ha fermato la procedura e che il provvedimento è provvisorio. Resta aperto se la Fcc farà appello e come finirà la causa nel merito.\n\nIl caso mette alla prova il confine tra i poteri di un'autorità di controllo e la libertà di stampa. Nei prossimi giorni conviene guardare l'eventuale ricorso della Fcc.",
+  "open": [
+    "La Fcc farà appello contro l'ingiunzione?",
+    "Quando è fissata la prossima udienza nel merito?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/", "angle": "Articolo letto: decisione di AliKhan, motivazione, posizioni di Fcc e ABC.", "at": "2026-11-26T03:00:27+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr", "angle": "Dal testo del feed: blocco della revisione delle licenze, stazioni in sei dei maggiori mercati.", "at": "2026-11-26T05:23:18+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: la giudice AliKhan blocca la revisione anticipata delle licenze di ABC."}
+  ],
+  "tags": ["Stati Uniti", "Giustizia", "Media"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

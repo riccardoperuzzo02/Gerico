@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-26-es-dibattito-a-quattro-elezioni-29n",
+  "title": "Spagna: stasera il dibattito a quattro tra Sánchez, Feijóo, Abascal e Colau",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "city": {"name": "Madrid", "lat": 40.42, "lon": -3.7},
+  "rank": 501,
+  "summary": "Tre giorni prima delle elezioni generali del 29 novembre, i leader di Psoe, Pp, Vox e Frente Amplio si confrontano in tv. Per il Pp è il primo dibattito del genere dopo l'assenza del 2023.",
+  "article": "Giovedì sera i leader dei quattro principali schieramenti si confrontano in televisione, a tre giorni dalle elezioni generali di domenica 29 novembre. Partecipano il primo ministro Pedro Sánchez (Psoe), Alberto Núñez Feijóo (Partito popolare, Pp), Santiago Abascal (Vox, estrema destra) e Ada Colau (Frente Amplio, a sinistra del Psoe).\n\nIl dibattito dura due ore ed è diviso in cinque blocchi, tra cui casa, lotta alla corruzione e immigrazione. È organizzato dall'Accademia della televisione. Feijóo ci sarà, a differenza del 2023, quando non partecipò.\n\nIn un'intervista, Sánchez ha detto che la maggioranza progressista è «a portata di mano» e ha accusato Feijóo e Abascal di fare un «trumpismo preventivo», dicendo di avere dubbi che riconoscano il risultato se non avranno i numeri. Il Pp, secondo le fonti, arriva al confronto fiducioso ma invita alla prudenza, mentre il Frente Amplio dice che andrà a smentire le false notizie della destra. Vox mette al centro l'obiettivo comune di evitare un nuovo governo di sinistra.\n\nDopo il dibattito restano tre giorni di campagna. Le fonti consultate non riportano i risultati più recenti dei sondaggi, quindi l'esito resta incerto.",
+  "facts": [
+    {"text": "Il dibattito a quattro si tiene giovedì sera, dura due ore e ha cinque blocchi tematici.", "who": ["Accademia della televisione"]},
+    {"text": "Partecipano Sánchez, Feijóo, Abascal e Colau; Feijóo non era presente al dibattito del 2023.", "who": ["Organizzatori del dibattito"]},
+    {"text": "Sánchez accusa Feijóo e Abascal di «trumpismo preventivo».", "who": ["Pedro Sánchez, primo ministro"]},
+    {"text": "Le elezioni generali si tengono domenica 29 novembre.", "who": ["Governo spagnolo"]}
+  ],
+  "view": "Si può dire con certezza che il confronto si tiene stasera e che i temi sono casa, corruzione e immigrazione. Resta aperto se cambierà gli orientamenti di voto a tre giorni dalle urne.\n\nIl dibattito è l'ultima occasione in cui i quattro leader parlano insieme agli elettori indecisi. Nei prossimi giorni conviene guardare i sondaggi dopo il confronto e l'affluenza.",
+  "open": [
+    "Il dibattito sposterà voti a tre giorni dalle elezioni?",
+    "Cosa dicono gli ultimi sondaggi?"
+  ],
+  "sources": [
+    {"name": "El País", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/sanchez-feijoo-abascal-y-colau-afrontan-un-debate-clave-para-la-definicion-de-los-dos-bloques-ante-el-29-n.html", "angle": "Dal testo del feed: debate tra i quattro leader, presenza di Feijóo dopo l'assenza del 2023.", "at": "2026-11-26T04:30:01+00:00"},
+    {"name": "20minutos", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://www.20minutos.es/nacional/asi-sera-debate-cuatro-hoy-sanchez-feijoo-abascal-colau-dos-horas-duracion-cinco-bloques-tematicos_7065688_0.html", "angle": "Dal testo del feed: due ore, cinque blocchi, casa, corruzione e migrazione; posizioni dei partiti.", "at": "2026-11-26T04:00:00+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: stasera il dibattito a quattro prima del voto del 29 novembre."}
+  ],
+  "tags": ["Spagna", "Elezioni", "Politica"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

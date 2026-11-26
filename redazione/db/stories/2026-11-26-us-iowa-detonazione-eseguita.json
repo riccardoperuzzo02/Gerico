@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-26-us-iowa-detonazione-eseguita",
+  "prev": "2026-11-24-us-iowa-corte-via-libera-detonazione",
+  "title": "Stati Uniti: l'esercito fa detonare l'esplosivo in Iowa, nessun piombo nell'aria",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "city": {"name": "Middletown (Iowa)", "lat": 40.8, "lon": -91.2},
+  "rank": 101,
+  "summary": "Mercoledì alle 9 l'esercito ha fatto detonare l'azide di piombo dello stabilimento di Middletown. I monitoraggi dell'agenzia ambientale non hanno rilevato piombo, ma i controlli su aria, acqua e suolo continuano.",
+  "article": "Mercoledì 25 novembre alle 9 del mattino, ora locale, l'esercito americano ha fatto detonare in modo controllato circa 5 tonnellate di azide di piombo, un esplosivo molto instabile, nello stabilimento di munizioni di Middletown, in Iowa. Il maggior generale Eric Shirley, che ha guidato l'operazione, l'ha definita «un grande successo» e ha detto che il rischio per la salute è stato ridotto quasi a zero.\n\nL'azide di piombo era conservata da decenni e, secondo il governo, si era deteriorata al punto da poter esplodere da sola, soprattutto con il calo delle temperature. Per contenere il pennacchio l'esercito ha usato blocchi di schiuma, serbatoi d'acqua e gel vicino ai bunker, e ha indirizzato l'esplosione verso il terreno. Una cifra non coincide con l'altra: il peso indicato dalle fonti oscilla tra circa 4,5 e 5 tonnellate.\n\nQuindici minuti dopo l'esplosione quattro stazioni dell'agenzia federale per l'ambiente (Epa) non hanno rilevato piombo nell'aria, e le letture sono rimaste invariate due ore dopo. Anche l'agenzia federale per le emergenze (Fema) ha riferito di non aver trovato piombo. Adam Telle, il segretario ad interim dell'esercito, ha detto che il meteo era ideale. La governatrice uscente dell'Iowa, Kim Reynolds, ha parlato di esito positivo, e il governatore del Missouri, Mike Kehoe, ha detto che l'esplosione è rimasta ben contenuta.\n\nIl presidente Donald Trump ha scritto sui social che le misure di protezione hanno superato le attese. Le autorità statali e federali dicono che i controlli su aria, acqua e suolo continueranno e che i residenti saranno informati. Gli ambientalisti, che avevano chiesto di fermare l'operazione, non hanno ancora commentato l'esito nelle fonti consultate.",
+  "facts": [
+    {"text": "L'esercito ha fatto detonare l'azide di piombo mercoledì 25 novembre alle 9, ora locale, a Middletown.", "who": ["Esercito degli Stati Uniti"]},
+    {"text": "Quattro stazioni di monitoraggio non hanno rilevato piombo nell'aria 15 minuti e due ore dopo l'esplosione.", "who": ["Agenzia federale per l'ambiente (Epa)"]},
+    {"text": "Anche i monitoraggi dell'agenzia per le emergenze non hanno trovato piombo rilevabile.", "who": ["Fema"]},
+    {"text": "I controlli su aria, acqua e suolo continueranno nei prossimi giorni.", "who": ["Autorità statali e federali"]}
+  ],
+  "view": "Si può dire con certezza che la detonazione è avvenuta come previsto e che le prime letture sull'aria non mostrano piombo. Resta aperto l'esito dei campioni di acqua e suolo, che richiedono più tempo.\n\nLa questione passa dal rischio di un'esplosione incontrollata a quello della contaminazione. Nei prossimi giorni conviene guardare i risultati dei test e le reazioni di residenti e ambientalisti.",
+  "open": [
+    "Cosa mostreranno i campioni di acqua e suolo?",
+    "Quanto pesava davvero il materiale fatto detonare?",
+    "Come rispondono i gruppi ambientalisti che avevano fatto ricorso?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/", "angle": "Articolo letto: ora e modalità della detonazione, misure di mitigazione, letture dell'Epa, dichiarazioni di Shirley, Telle, Reynolds e Kehoe.", "at": "2026-11-26T03:30:47+00:00"},
+    {"name": "New York Times", "kind": "stampa", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/25/us/iowa-army-ammunition-blast.html", "angle": "Dal testo del feed: autorità militari e civili parlano di successo, i test per la contaminazione continuano.", "at": "2026-11-25T23:09:50+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: l'esercito ha fatto detonare l'azide di piombo a Middletown, nessun piombo rilevato nell'aria."}
+  ],
+  "tags": ["Stati Uniti", "Ambiente", "Sicurezza"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

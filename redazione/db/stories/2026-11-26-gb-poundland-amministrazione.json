@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-26-gb-poundland-amministrazione",
+  "title": "Regno Unito: Poundland in amministrazione, a rischio oltre 10.000 posti",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Walsall", "lat": 52.58, "lon": -1.98},
+  "rank": 201,
+  "summary": "I proprietari statunitensi avrebbero respinto almeno due offerte dell'ultima ora. La catena di discount, con circa 600 negozi, dovrebbe essere smembrata.",
+  "article": "Poundland, la catena britannica di discount, è entrata in amministrazione controllata mercoledì 25 novembre, a un mese dal Natale. Gli amministratori della società di consulenza AlixPartners sono stati nominati dai direttori dell'azienda. I posti di lavoro a rischio sono più di 10.000 secondo una versione, 11.000 o 12.000 secondo altre, a seconda del conteggio.\n\nLa catena ha circa 600 negozi nel Regno Unito e in Irlanda. Secondo le informazioni disponibili, l'azienda dovrebbe essere divisa, con chiusure di negozi e molti licenziamenti. I proprietari statunitensi avrebbero respinto almeno due offerte dell'ultimo momento per rilevarla, e la proprietà non ha ancora spiegato la scelta nelle fonti consultate.\n\nSteve Smith, il fondatore della catena, ha avvertito che chi perderà il lavoro potrebbe faticare a trovarne un altro per anni, in un periodo difficile per le strade commerciali britanniche. Il caso arriva dopo altre crisi nel commercio al dettaglio del paese.\n\nOra gli amministratori dovranno decidere quali negozi restano aperti e se ci siano acquirenti per singole parti dell'azienda. Per i dipendenti e i fornitori non ci sono ancora indicazioni su stipendi e pagamenti.",
+  "facts": [
+    {"text": "Poundland è in amministrazione controllata dal 25 novembre, con AlixPartners come amministratore.", "who": ["Direttori di Poundland"]},
+    {"text": "I posti a rischio sono più di 10.000, con stime fino a 12.000.", "who": ["Stime delle fonti"]},
+    {"text": "La catena ha circa 600 negozi tra Regno Unito e Irlanda.", "who": ["Poundland"]},
+    {"text": "Almeno due offerte dell'ultimo momento sarebbero state respinte dai proprietari.", "who": ["Fonti vicine alla vicenda"]}
+  ],
+  "view": "Si può dire con certezza che la catena è in amministrazione e che il numero di posti a rischio supera i 10.000. Resta aperto quanti negozi chiuderanno e chi comprerà le parti vendibili.\n\nPer i lavoratori il momento è il peggiore, a ridosso del Natale. Nei prossimi giorni conviene guardare l'elenco dei negozi chiusi e le eventuali offerte per i punti vendita.",
+  "open": [
+    "Quanti negozi chiuderanno e quando?",
+    "Perché i proprietari hanno respinto le offerte?",
+    "Quanti posti andranno persi davvero?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "stampa", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/business/2026/nov/25/poundland-administration-jobs-at-risk-gordon-brothers", "angle": "Dal testo del feed: amministratori, 600 negozi, offerte respinte, smembramento atteso.", "at": "2026-11-25T18:50:54+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o", "angle": "Dal testo del feed: la catena è fallita dopo che i proprietari non hanno trovato un acquirente, 11.000 posti a rischio.", "at": "2026-11-25T21:31:10+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: Poundland entra in amministrazione, oltre 10.000 posti a rischio."}
+  ],
+  "tags": ["Regno Unito", "Lavoro", "Commercio"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

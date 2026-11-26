@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-26-de-rente-con-63-respekt-rente",
+  "title": "Germania: l'Unione propone alla Spd un compromesso sulla pensione a 63 anni",
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "city": {"name": "Berlino", "lat": 52.52, "lon": 13.4},
+  "rank": 402,
+  "summary": "La «pensione del rispetto» manterrebbe il prepensionamento senza penalizzazioni per i redditi bassi. Cdu e Spd litigano da giorni sul pacchetto pensioni.",
+  "article": "Deputati dell'Unione (Cdu e Csu, il partito del cancelliere Friedrich Merz) hanno proposto alla Spd, loro partner di governo, un compromesso sulla «pensione a 63 anni». Con la «Respekt-Rente», la pensione del rispetto, il prepensionamento senza penalizzazioni resterebbe per chi ha un reddito basso.\n\nSecondo la proposta, chi ha versato contributi per 45 anni e ha un reddito sotto la media potrebbe continuare ad andare in pensione senza tagli all'assegno. La norma attuale, che permette il prepensionamento a questa condizione, era al centro dello scontro sul pacchetto pensioni, e Unione e Spd si erano bloccate a vicenda. Le fonti non indicano ancora la soglia di reddito né i costi della misura.\n\nL'offerta arriva dai deputati dell'Unione e non è ancora una decisione del governo. Nelle fonti consultate non c'è la risposta della Spd, e non è chiaro se i vertici dei due partiti la sosterranno.\n\nLa questione pesa sulla maggioranza, che deve chiudere il pacchetto pensioni mentre il Bundestag, il parlamento federale, discute anche il bilancio del 2027. Nei prossimi giorni si capirà se la Spd accetta la formula e se i dettagli saranno discussi nelle sedi della coalizione.",
+  "facts": [
+    {"text": "Deputati dell'Unione propongono di mantenere il prepensionamento senza penalizzazioni per i redditi bassi, con una «Respekt-Rente».", "who": ["Deputati della Cdu e della Csu"]},
+    {"text": "La proposta riguarda chi ha 45 anni di contributi e un reddito sotto la media.", "who": ["Deputati della Cdu e della Csu"]},
+    {"text": "Unione e Spd sono bloccate da giorni sul pacchetto pensioni.", "who": ["Cdu, Csu e Spd"]}
+  ],
+  "view": "Si può dire con certezza che l'Unione ha offerto un compromesso e che la Spd non ha ancora risposto. Restano aperti soglia di reddito, costi e sostegno dei vertici dei partiti.\n\nLa mossa serve a sbloccare un nodo che rallenta il lavoro della coalizione. Nei prossimi giorni conviene guardare la reazione della Spd e un eventuale testo concordato.",
+  "open": [
+    "Quale soglia di reddito è prevista?",
+    "Quanto costa la misura?",
+    "La Spd accetta la formula?"
+  ],
+  "sources": [
+    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Germania", "url": "https://www.tagesschau.de/inland/innenpolitik/rente-kompromiss-koalition-100.html", "angle": "Dal testo del feed: i deputati dell'Unione propongono la «Respekt-Rente» per i redditi bassi.", "at": "2026-11-25T20:40:23+00:00"},
+    {"name": "Die Zeit", "kind": "stampa", "country": "Germania", "area": "Germania", "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-cdu-bundestag-abgeordnete-abschaffung", "angle": "Dal testo del feed: la pensione resta dopo 45 anni di contributi per chi ha un reddito sotto la media.", "at": "2026-11-25T21:30:34+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: l'Unione propone alla Spd la «Respekt-Rente» come compromesso."}
+  ],
+  "tags": ["Germania", "Pensioni", "Coalizione"],
+  "themes": [],
+  "places": ["DE"],
+  "divergences": [],
+  "notCovered": []
+}

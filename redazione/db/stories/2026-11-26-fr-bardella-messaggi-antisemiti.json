@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-26-fr-bardella-messaggi-antisemiti",
+  "title": "Francia: nuovi messaggi antisemiti attribuiti a Bardella, lui nega",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.86, "lon": 2.35},
+  "rank": 301,
+  "summary": "Due testate francesi dicono di avere una conversazione del 2013 che attribuirebbe a Jordan Bardella frasi antisemite. Il presidente del Rassemblement national nega di esserne l'autore.",
+  "article": "Due testate francesi hanno pubblicato giovedì 26 novembre nuovi elementi su messaggi antisemiti che attribuiscono a Jordan Bardella, presidente del Rassemblement national (Rn, il partito di estrema destra). I messaggi sarebbero stati scritti nel 2013, quando era liceale e giovane militante del Front national. Bardella ha sempre negato di esserne l'autore.\n\nLe testate dicono di avere avuto accesso a una conversazione online con un ex compagno di liceo, certificata da un ufficiale giudiziario. Tra le frasi riportate c'è «i sionisti sono a capo delle banche». Altri passaggi sosterrebbero che i ministeri più importanti siano affidati a persone che favoriscono Israele e gli interessi finanziari. Riferimenti ad alcuni insegnanti dell'epoca, secondo le testate, collegherebbero i messaggi a Bardella. Le prime rivelazioni erano uscite alla fine di settembre.\n\nPascal-Pierre Garbarini, l'avvocato di Bardella, ha detto che il suo assistito «nega categoricamente» di aver scritto quei messaggi e ha parlato di «una volontà di nuocere inaccettabile». Bardella aveva già presentato una denuncia per falso e uso di falso dopo le prime accuse.\n\nNon ci sono per ora decisioni giudiziarie. L'autenticità e l'attribuzione dei messaggi non sono state accertate da un tribunale, e le fonti consultate non riportano reazioni degli altri partiti.",
+  "facts": [
+    {"text": "Nuovi estratti di una conversazione del 2013 sono stati pubblicati giovedì 26 novembre.", "who": ["Testate francesi che hanno pubblicato i messaggi"]},
+    {"text": "La conversazione sarebbe stata certificata da un ufficiale giudiziario.", "who": ["Testate francesi che hanno pubblicato i messaggi"]},
+    {"text": "Bardella nega categoricamente di essere l'autore dei messaggi.", "who": ["Pascal-Pierre Garbarini, avvocato di Jordan Bardella"]},
+    {"text": "Bardella ha presentato denuncia per falso e uso di falso dopo le prime accuse.", "who": ["Jordan Bardella"]}
+  ],
+  "view": "Si può dire con certezza che sono usciti nuovi estratti e che Bardella nega. Non è accertato chi abbia scritto i messaggi.\n\nIl caso riguarda il leader di un partito che punta alle presidenziali del 2027. Nei prossimi giorni conviene guardare le reazioni politiche e gli sviluppi della denuncia.",
+  "open": [
+    "Una perizia o un giudice stabilirà chi ha scritto i messaggi?",
+    "Come reagiranno gli altri partiti?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Francia", "url": "https://www.franceinfo.fr/politique/jordan-bardella/le-monde-et-mediapart-publient-de-nouveaux-elements-de-preuve-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8300856.html", "angle": "Articolo letto: contenuto della conversazione, smentita dell'avvocato di Bardella.", "at": "2026-11-26T06:50:48+00:00"},
+    {"name": "Le Monde", "kind": "stampa", "country": "Francia", "area": "Francia", "url": "https://www.lemonde.fr/politique/article/2026/11/26/les-sionistes-sont-a-la-tete-des-banques-tout-est-lie-nouvelles-revelations-sur-les-propos-antisemites-de-jordan-bardella_6815484_823448.html", "angle": "Dal testo del feed: conversazione del 2013 ottenuta e interlocutore dell'epoca intervistato.", "at": "2026-11-26T05:55:12+00:00"}
+  ],
+  "firstSeen": "2026-11-26T09:49:00+01:00",
+  "updated": "2026-11-26T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-26T09:49:00+01:00", "text": "Prima notizia: nuovi estratti dei messaggi antisemiti attribuiti a Bardella, lui nega."}
+  ],
+  "tags": ["Francia", "Politica", "Rassemblement national"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

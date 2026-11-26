@@ -3294,7 +3294,8 @@
       e.preventDefault();
       apri();
     });
-    return { apri, trova, norm };
+    // il campo «Cerca» del Terminal (ricerca.js) usa lo stesso indice e la stessa evidenziazione
+    return { apri, trova, norm, segna, indice: carica, quando };
   })();
 
   // ---------- il glossario (data/glossario.json): negli articoli la prima volta che compare una parola molto tecnica

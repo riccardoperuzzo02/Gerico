@@ -3495,3 +3495,78 @@ html.nuova body.term .t-agenda li.ag-r.next.soon::before { left: -6px; }
 .ad-dal { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 14px 0 0; font-size: 0.9375rem; }
 .ad-dal input[type="date"] { min-height: 40px; padding: 6px 10px; border: 1px solid var(--rule); border-radius: var(--r, 6px); background: transparent; color: inherit; font: inherit; }
 html.nuova .ad-mie-l li { border-radius: 0 !important; }
+
+/* ---------- Ricerca nel Terminal (26 novembre): il campo nella barra in alto, sempre in vista; i risultati sotto ---------- */
+.t-cerca { position: relative; display: flex; align-items: center; min-width: 0; margin: 0; }
+.t-cerca:not(.a-posto) { visibility: hidden; }
+.t-cerca-i { position: absolute; left: 12px; top: 50%; margin-top: -8px; color: var(--t-ink-3); pointer-events: none; }
+.t-cerca input {
+  width: 100%; min-width: 0; height: 40px; margin: 0; padding: 0 40px 0 36px;
+  background: var(--fill); border: 1px solid rgb(170 195 255 / 0.14); border: 1px solid oklch(0.82 0.06 268 / 0.14); border-radius: var(--r-btn, 6px);
+  color: var(--t-ink); font: inherit; font-size: 0.9375rem; -webkit-appearance: none; appearance: none;
+}
+.t-cerca input::placeholder { color: #7F8BA0; color: oklch(0.63 0.03 262); opacity: 1; }
+.t-cerca input:focus { outline: none; border-color: rgb(170 195 255 / 0.45); border-color: oklch(0.82 0.06 268 / 0.45); }
+.t-cerca input:focus-visible { outline: 2px solid var(--t-accent); outline-offset: 1px; }
+.t-cerca input::-webkit-search-decoration { -webkit-appearance: none; }
+.t-cerca-k {
+  position: absolute; right: 10px; top: 50%; min-width: 20px; height: 20px; margin-top: -10px; padding: 0 6px;
+  border: 1px solid rgb(170 195 255 / 0.2); border: 1px solid oklch(0.82 0.06 268 / 0.2); border-radius: 4px;
+  color: var(--t-ink-3); font: 600 0.75rem/18px var(--sans); text-align: center; pointer-events: none;
+}
+.t-cerca input:focus ~ .t-cerca-k, .t-cerca input:not(:placeholder-shown) ~ .t-cerca-k { display: none; }
+@media (hover: none), (pointer: coarse) { .t-cerca-k { display: none; } .t-cerca input { padding-right: 12px; } }
+/* sul telefono 16 px: con meno iOS ingrandisce la pagina quando si tocca il campo */
+@media (pointer: coarse) { .t-cerca input { height: 44px; font-size: 16px; } }
+
+/* computer: nella riga del nome (in fila, vedi «intestazione sul computer»), tra l'orologio e Notizie / Terminal.
+   L'orologio non si stringe; il campo sì, fino a 180 px */
+@media (min-width: 760px) {
+  html body.term .top-row > .edition { flex: 1 0 auto; }
+  html body.term .top-row > .t-cerca { flex: 0 1 420px; min-width: 180px; }
+}
+/* telefono: nella riga sotto il nome, accanto a «Sezioni» */
+@media (max-width: 759px) {
+  .top-row > .t-cerca { display: none; }
+  body.term .top nav.wrap { display: flex; align-items: center; gap: 8px; }
+  body.term .top nav.wrap > .chips { flex: 1 1 auto; min-width: 0; }
+  body.term .top nav.wrap > .tendina { flex: none; }
+  body.term .top nav.wrap > .t-cerca { flex: 1 1 auto; margin: 2px 0 10px; }
+}
+
+/* i risultati: una superficie più chiara del fondo, con il filo in trasparenza (al buio niente ombre) */
+.t-res {
+  position: absolute; z-index: 45; top: calc(100% + 8px); right: 0; width: min(560px, calc(100vw - 32px));
+  max-height: min(70vh, 620px); overflow-y: auto; overscroll-behavior: contain; padding: 6px;
+  background: var(--fill); border-radius: var(--r-btn, 6px); color: var(--t-ink); text-align: left;
+  box-shadow: 0 0 0 1px rgb(170 195 255 / 0.16); box-shadow: 0 0 0 1px oklch(0.82 0.06 268 / 0.16);
+}
+.t-res[hidden] { display: none; }
+@media (max-width: 759px) {
+  .t-res {
+    position: fixed; top: calc(var(--term-top, 112px) - 6px); left: max(8px, env(safe-area-inset-left)); right: max(8px, env(safe-area-inset-right)); width: auto;
+    max-height: calc(100vh - var(--term-top, 112px) - 92px - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - var(--term-top, 112px) - 92px - env(safe-area-inset-bottom));
+  }
+}
+.t-gr + .t-gr { margin-top: 4px; padding-top: 4px; border-top: 1px solid rgb(170 195 255 / 0.1); border-top: 1px solid oklch(0.82 0.06 268 / 0.1); }
+.t-g { padding: 8px 10px 4px; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--t-ink-3); }
+.t-o {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; column-gap: 12px;
+  min-height: 44px; padding: 6px 10px; border-radius: max(0px, calc(var(--r-btn, 6px) - 6px)); cursor: pointer;
+}
+.t-o[aria-selected="true"] { background: rgb(170 195 255 / 0.12); background: oklch(0.82 0.06 268 / 0.12); }
+.t-o-n, .t-o-s { grid-column: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.t-o-n { grid-row: 1; font-weight: 650; }
+.t-o-s { grid-row: 2; font-size: 0.8125rem; color: var(--t-ink-3); }
+.t-o-n:only-child { grid-row: 1 / span 2; }
+.t-o-v, .t-o-c { grid-row: 1 / span 2; font-size: 0.875rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.t-o-v { grid-column: 2; color: var(--t-ink-2); }
+.t-o-c { grid-column: 3; min-width: 4.6em; text-align: right; font-weight: 700; }
+.t-o mark { background: none; color: inherit; text-decoration: underline 2px; text-decoration-color: var(--t-accent); text-underline-offset: 3px; }
+.t-res-n:not(.sr-only), .t-res-y { margin: 0; padding: 8px 10px; font-size: 0.8125rem; line-height: 1.4; color: var(--t-ink-3); }
+.t-res-n:empty { display: none; }
+.t-res-y[hidden] { display: none; }
+@media (max-width: 359px) { .t-o { column-gap: 8px; padding: 6px 8px; } .t-o-v { display: none; } }
+@media (prefers-reduced-motion: no-preference) { .t-res:not([hidden]) { animation: t-res-giu 140ms var(--ease); } }
+@keyframes t-res-giu { from { opacity: 0; transform: translateY(-4px); } }

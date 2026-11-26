@@ -1495,18 +1495,19 @@ G.page("terminal", async function (P) {
     else if (c === "TASSI" && !$("p-grafici").hidden) openGroup("tassi");
     else {
       const q = findQuote(c);
-      if (q) {
-        if (q.g !== grKey) { grKey = q.g; $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey))); G.seg($("gr-tabs"), true); }
-        drawGroup(q.it.sym);
-        go("p-grafici");
-      } else ok = false;
+      if (q) apriQuote(q);
+      else ok = false;
     }
-    $("cmd-help").textContent = ok ? "" : G.L("Non trovato. Prova: mappa europa, valute, agenda, trimestrali, cedole, grafici, macro, sentiment, sec, oppure un simbolo come eurusd, oro, bitcoin.",
-      "Not found. Try: europe map, currencies, calendar, earnings, dividends, charts, macro, sentiment, sec, or a symbol such as eurusd, gold, bitcoin.");
+    return ok;
   }
-  $("cmd-form").addEventListener("submit", (e) => { e.preventDefault(); run($("cmd").value); $("cmd").value = ""; });
+  // il grafico di uno strumento in «Prezzi e grafici»: il gruppo giusto, la riga aperta, il pannello sotto la barra
+  function apriQuote(q) {
+    if (q.g !== grKey) { grKey = q.g; $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey))); G.seg($("gr-tabs"), true); }
+    drawGroup(q.it.sym);
+    go("p-grafici");
+  }
   document.querySelectorAll("[data-cmd]").forEach((b) => b.addEventListener("click", () => run(b.dataset.cmd)));
-  G.adatta($("keys"), { gradi: ["compatta"], classe: "tendina-nav", invito: G.L("Vai a una sezione", "Go to a section"),
+  G.adatta($("keys"), { gradi: ["compatta"], classe: "tendina-nav", invito: G.L("Sezioni", "Sections"),
     etichetta: G.L("Sezioni del Terminal", "Terminal sections") });
   const FKEYS = { F1: "MAPPA", F2: "INDICI", F3: "VALUTE", F4: "TASSI", F5: "MATERIE PRIME", F6: "AGENDA", F7: "NOTIZIE", F8: "MACRO", F9: "SENTIMENT", F10: "TRIMESTRALI" };
   P.on(document, "keydown", (e) => {
@@ -1515,6 +1516,18 @@ G.page("terminal", async function (P) {
     if (e.altKey || e.ctrlKey || e.metaKey) return;
     if (e.key === "Escape" && inside.code && !document.querySelector("dialog[open]")) { e.preventDefault(); leave(); return; }
     if (FKEYS[e.key]) { e.preventDefault(); run(FKEYS[e.key]); }
+  });
+  // ---------- il campo «Cerca» nella barra in alto (ricerca.js): apre quello che il Terminal sa già mostrare ----------
+  if (G.ricercaCampo) G.ricercaCampo(P, {
+    // un titolo di un indice della mappa: si entra nell'indice (o ci si resta) con il titolo scelto
+    titolo: async (code, sym) => {
+      if (inside.code !== code) await enter(code, {});
+      if (inside.code === code && inside.d) selectStock(sym);
+      go("map-panel");
+    },
+    strumento: (sym) => { const q = findQuote(sym); if (q) apriQuote(q); else run(sym); },
+    comando: (cmd) => run(cmd),
+    yahoo: (x) => { if (G.schedaTitolo) G.schedaTitolo(x); }
   });
 
   // ---------- prezzi in diretta: widget TradingView, solo dopo un clic ----------
@@ -1669,12 +1682,7 @@ G.page("terminal", async function (P) {
   const apriLink = (c) => {
     if (G.current !== "terminal" || !$("p-grafici")) return;
     const q = !$("p-grafici").hidden && findQuote(c);
-    if (q) {
-      if (q.g !== grKey) { grKey = q.g; $("gr-tabs").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === grKey))); G.seg($("gr-tabs"), true); }
-      drawGroup(q.it.sym);
-      go("p-grafici");
-      return;
-    }
+    if (q) { apriQuote(q); return; }
     const k = String(c).trim().toUpperCase();
     if (PANELS[k] && $(PANELS[k]) && !$(PANELS[k]).hidden) go(PANELS[k]);
   };

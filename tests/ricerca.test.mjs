@@ -108,3 +108,17 @@ test("con una lettera sola solo i ticker esatti", () => {
 test("le parole cercate tornano indietro per segnarle", () => {
   assert.deepEqual(cerca("Société  Générale").ws, ["societe", "generale"]);
 });
+
+test("notizie: fino a tre lettere solo parole che cominciano così, nel titolo o nei temi", () => {
+  const G = carica();
+  const storie = [
+    { r: { t: "gas: descalzi teme difficolta in inverno", g: "eni energia", s: "" } },
+    { r: { t: "l'aquila: respinto il ricorso dei genitori", g: "italia", s: "" } },
+    { r: { t: "francia: macron valuta una «regola d'oro»", g: "francia", s: "" } },
+    { r: { t: "spagna: sanchez annuncia la proroga", g: "spagna", s: "" } }
+  ];
+  const tieni = (q) => JSON.parse(JSON.stringify(G.ricercaNotizie(storie, q))).map((h) => h.r.t.slice(0, 6));
+  assert.deepEqual(tieni("eni"), ["gas: d"]);
+  assert.deepEqual(tieni("oro"), ["franci"]);
+  assert.deepEqual(tieni("genitori"), ["l'aqui"]);
+});

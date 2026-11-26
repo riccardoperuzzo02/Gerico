@@ -32,6 +32,13 @@
 <div class="wrap top-row">
 <a class="brand" href="./" data-reveal aria-label="GERICO, prima pagina">GERICO</a>
 <p class="edition" id="clock"></p>
+<form class="t-cerca" id="t-cerca" role="search" action="#" novalidate>
+<label class="sr-only" for="tq">Cerca nel Terminal</label>
+<svg class="t-cerca-i" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+<input id="tq" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tq-l" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" placeholder="Cerca un titolo, una valuta, un evento">
+<kbd class="t-cerca-k" aria-hidden="true">/</kbd>
+<div class="t-res" id="tq-p" hidden><p class="t-res-n" id="tq-n" role="status"></p><div class="t-res-l" id="tq-l" role="listbox" aria-label="Risultati della ricerca"></div><p class="t-res-y" id="tq-y" hidden></p></div>
+</form>
 <nav class="mode" aria-label="Notizie o Terminal"><a href="./" data-reveal>Notizie</a><a href="terminal" data-reveal aria-current="page">Terminal</a></nav>
 <button class="menu-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
 </div>
@@ -60,14 +67,6 @@
 </dialog>
 
 <div class="wrap tv-top" id="tv-top" aria-labelledby="tv-lab" role="region"><div class="tv-card"><p class="tv-lab" id="tv-lab"><i class="tv-dot" aria-hidden="true"></i><span>Prezzi in diretta</span></p><div class="tv-tape"><div class="tv" id="tv"></div></div><a class="tv-cred" id="tv-cred" href="https://it.tradingview.com/" rel="noopener nofollow" target="_blank">TradingView<span class="sr-only"> (si apre in un'altra scheda)</span></a></div></div>
-<div class="wrap t-tools">
-<form class="t-cmd" id="cmd-form">
-<label for="cmd">Vai a</label>
-<input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="mappa europa, eurusd, oro, macro…" aria-describedby="cmd-help">
-<button class="t-btn" type="submit">Vai</button>
-</form>
-</div>
-<p class="wrap t-msg" id="cmd-help" aria-live="polite"></p>
 
 <main class="wrap t-board" id="main">
 <h1 class="sr-only">GERICO Terminal: mercati e agenda</h1>
@@ -114,6 +113,7 @@
 <noscript><p class="t-stale">Il Terminal ha bisogno di JavaScript attivo.</p></noscript>
 <script src="assets/js/common.js?v=20261125-2"></script>
 <script src="assets/js/eventi.js?v=20261125-2"></script>
+<script src="assets/js/ricerca.js?v=20261125-2"></script>
 <script src="assets/js/terminal.js?v=20261125-2"></script>
 </body>
 </html>

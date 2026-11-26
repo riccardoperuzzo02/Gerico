@@ -1,10 +1,52 @@
 {
  "code": "DE",
- "asOf": "2026-11-26T13:17:41+00:00",
+ "asOf": "2026-11-26T15:17:33+00:00",
  "items": [
   {
+   "source": "Die Zeit",
+   "title": "Vereinte Nationen: Woran hakt es bei der Suche nach einem neuen UN-Generalsekretär?",
+   "desc": "Am 31.12. endet die Amtszeit von António Guterres – und noch ist offen, wer sein Nachfolger wird. Was passiert, wenn sich der Sicherheitsrat nicht rechtzeitig einigt?",
+   "url": "https://www.zeit.de/politik/ausland/2026-07/vereinte-nationen-un-generalsekretaer-nachfolge-antonio-guterres-gxe",
+   "at": "2026-11-26T15:09:19+00:00"
+  },
+  {
    "source": "Der Spiegel",
-   "title": "CDU-Abgeordnete will Haushalt nicht zustimmen",
+   "title": "Linken droht Ordnungsgeld wegen Blockadeaktion gegen Ex-Mossad-Chef im Bundestag",
+   "desc": "Der Protest von Linkenabgeordneten gegen eine Bundestagsveranstaltung mit Ex-Mossad-Chef Barnea bleibt nicht ohne Konsequenzen. Bundestagspräsidentin Klöckner sieht einen Verstoß gegen die Hausordnung.",
+   "url": "https://www.spiegel.de/politik/deutschland/linken-droht-ordnungsgeld-wegen-blockade-aktion-gegen-ex-mossad-chef-im-bundestag-a-efce75af-a63e-46df-81ed-02bf9bc81e99",
+   "at": "2026-11-26T14:34:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Michael Kretschmer und Mario Voigt: Ost-Ministerpräsidenten unterstützen »Respekt-Rente«",
+   "desc": "Das Dauerthema Rente spaltet die Regierung: Die SPD hatte zuletzt einen Kompromissvorschlag der Union zur »Rente mit 63« abgelehnt. Kretschmer und Voigt legen nun nach: »Wer 45 Jahre eingezahlt hat, verdient Respekt«.",
+   "url": "https://www.spiegel.de/politik/deutschland/ministerpraesidenten-michael-kretschmer-und-mario-voigt-fordern-respekt-rente-a-dccc33fa-a318-413f-8b7d-365ce2859f2a",
+   "at": "2026-11-26T14:14:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Protest im Bundestag: Linken-Abgeordnete müssen nach Sitzblockade mit Ordnungsgeld rechnen",
+   "desc": "Nach dem Protest gegen ein Treffen mit Ex-Mossad-Chef David Barnea lässt Julia Klöckner Verfahren einleiten. Den Beteiligten drohen jeweils 2.000 Euro Ordnungsgeld.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/linksfraktion-david-barnea-mossad-bundestag-protest-julia-kloeckner",
+   "at": "2026-11-26T14:03:51+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Erzbistum Köln: Rekordschmerzensgeld für Missbrauchsopfer",
+   "desc": "Das Erzbistum Köln muss einem Missbrauchsopfer 550.000 Euro Schmerzensgeld zahlen - die bisher höchste Summe in einem solchen Fall. Das Oberlandesgericht Köln sieht die Kirche in der Verantwortung.",
+   "url": "https://www.tagesschau.de/inland/gesellschaft/missbrauch-kirche-schmerzensgeld-102.html",
+   "at": "2026-11-26T13:37:34+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Friedrich Merz: Opposition moniert Reise mit Privatflugzeug zu CDU-Termin",
+   "desc": "Bundeskanzler Friedrich Merz ist jüngst mit einer Privatmaschine zu einem CDU-Termin in Schleswig-Holstein geflogen. Nach SPIEGEL-Informationen gibt es Hinweise, dass die Maschine einem Unternehmer aus Merz’ Wahlkreis gehört.",
+   "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-opposition-moniert-reise-mit-privatflugzeug-zu-cdu-termin-a-0acf7991-c6fe-49e5-b0ad-7cad2035c484",
+   "at": "2026-11-26T13:23:00+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Haushalt 2027: CDU-Abgeordnete Saskia Ludwig will Etat nicht zustimmen",
    "desc": "Kurz vor der Verabschiedung des Bundeshaushalts schert eine CDU-Abgeordnete aus: Saskia Ludwig will dem Etat nicht zustimmen. Das schreibt sie in einem Brief an die Parteibasis, der dem SPIEGEL vorliegt.",
    "url": "https://www.spiegel.de/politik/deutschland/cdu-abgeordnete-will-haushalt-nicht-zustimmen-a-219d710b-ca88-42da-9283-c2bfe45e18c9",
    "at": "2026-11-26T12:59:00+00:00"
@@ -46,7 +88,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Bundeskanzler Friedrich Merz lehnt Kompromissvorschlag zu EU-Finanzen ab",
+   "title": "Friedrich Merz lehnt Kompromissvorschlag zu EU-Finanzen ab",
    "desc": "Die EU wird sich nicht über den nächsten mehrjährigen Finanzrahmen einig. Der Bundeskanzler lehnt neue Schulden auf EU-Ebene ab und fordert: keine Ausnahmen mehr bei den Ukrainehilfen.",
    "url": "https://www.spiegel.de/politik/deutschland/bundeskanzler-friedrich-merz-lehnt-kompromissvorschlag-zu-eu-finanzen-ab-a-c0394446-807d-4b91-b85e-3edff947a318",
    "at": "2026-11-26T10:31:00+00:00"
@@ -171,20 +213,6 @@
    "at": "2026-11-26T05:36:21+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Milliardenschenkung für Springer-Chef Döpfner: Eine fast steuerfreie Milliarde?",
-   "desc": "Der Springer-Chef Mathias Döpfner soll eine fast steuerfreie Milliardenschenkung erhalten haben. Ist das gerecht? Und: In Brüssel geht es wieder um den EU-Haushalt",
-   "url": "https://www.zeit.de/politik/2026-11/milliardenschenkung-axel-springer-matthias-doepfner-steuer-nachrichtenpodcast",
-   "at": "2026-11-26T05:05:35+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "EU-Gipfel zum Europahaushalt: Die Kassen sind leer, die Wünsche wachsen",
-   "desc": "Die EU-Regierungschefs streiten über den EU-Haushalt ab 2028 – und über die Frage, wofür man Europa braucht. Und wofür nicht. Gewinnen am Ende wieder nur die Bauern?",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-gipfel-haushalt-2028-bruessel-bauern",
-   "at": "2026-11-26T05:02:23+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "News: EU-Haushaltsverhandlungen, CDU-Kompromissvorschlag zur Rente mit 63, mutmaßliche Spionin vor Gericht",
    "desc": "In Brüssel verhandeln die Europäer über ihren gemeinsamen Haushalt. Im Streit über die »Rente mit 63« winkt ein Kompromiss. Und in Berlin steht eine mutmaßliche Spionin vor Gericht. Das ist die Lage am Donnerstagmorgen.",
@@ -281,27 +309,6 @@
    "desc": "Der Kanzler gibt zu: Mit dem Haushalts-Hickhack hat die Koalition »keinen Beauty-Contest gewonnen«. Das war’s aber auch schon mit Selbstkritik. Deutlich schärfer argumentiert die Opposition, die AfD spricht gar von »Sozialismus«.",
    "url": "https://www.spiegel.de/politik/deutschland/bundestag-die-wichtigsten-szenen-von-merz-reichinnek-und-co-a-2b94b292-5638-4ede-b658-b4b6310b7dbd",
    "at": "2026-11-25T15:31:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Bundestag: Tumulte rund um Besuch von Ex-Mossad-Chef David Barnea",
-   "desc": "Eine Veranstaltung mit Ex-Mossad-Chef Barnea sorgt für Aufregung im Bundestag. Linkenabgeordnete blockieren kurzzeitig den Raum, ein Aktivist stört die Veranstaltung. Es kommt zu Rangeleien, die Polizei muss eingreifen.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundestag-tumulte-rund-um-besuch-von-ex-mossad-chef-david-barnea-a-a900cae3-9de2-469f-a225-d3a5e2b6cd73",
-   "at": "2026-11-25T15:09:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Wenn der Partner zuschlägt",
-   "desc": "Alle drei Minuten erlebt eine Frau oder ein Mädchen in Deutschland häusliche Gewalt. Nur ein kleiner Teil der Taten wird angezeigt - aus Angst, Scham oder sozialer Isolation. Von Marion Försching.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/wenn-der-partner-zuschlaegt-gewalt-gegen-frauen-100.html",
-   "at": "2026-11-25T14:36:47+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "tagesschau in Einfacher Sprache startet WhatsApp-Kanal",
-   "desc": "Langsamer gesprochen, erklärte Fachbegriffe, kaum Nebensätze - seit 2024 gibt es die tagesschau in Einfacher Sprache. Zehntausende nutzen sie jeden Tag. Nun wird das Angebot um einen WhatsApp-Kanal erweitert.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/einfache-sprache-102.html",
-   "at": "2026-11-25T13:45:35+00:00"
   }
  ]
 }

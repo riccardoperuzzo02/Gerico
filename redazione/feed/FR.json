@@ -1,20 +1,139 @@
 {
  "code": "FR",
- "asOf": "2026-11-26T13:17:41+00:00",
+ "asOf": "2026-11-26T15:17:33+00:00",
  "items": [
   {
-   "source": "franceinfo",
-   "title": "Mobilisation des étudiants : \"Il faut que les blocages cessent, c'est inacceptable\", affirme le ministre de l'Enseignement supérieur",
-   "desc": "Philippe Baptiste s'inquiète des difficultés scolaires rencontrées par les étudiants dans le contexte de la mobilisation.",
-   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mobilisation-de-la-jeunesse-les-organisations-veulent-maintenir-la-pression-malgre-le-recul-des-blocages-une-manifestation-prevue-dans-l-apres-midi_8300754.html",
-   "at": "2026-11-26T13:01:19+00:00"
+   "source": "France 24",
+   "title": "France : le candidat à la Présidentielle Teddy Riner fait polémique sur l'Ukraine",
+   "desc": "Le candidat à la présidentielle Teddy Riner a exhorté mercredi 25 novembre à arrêter \"de donner de l'argent que nous n'avons pas\" pour soutenir l'Ukraine, d'autant que \"ce n'est pas notre guerre\", à propos du déploiement de soldats français pour des missions non-combattantes.",
+   "url": "https://www.france24.com/fr/vid%C3%A9o/20261126-congr%C3%A8s-des-maires-de-france-le-candidat-teddy-riner-fait-pol%C3%A9mique-sur-l-ukraine",
+   "at": "2026-11-26T15:10:16+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "A la tête de la BCE, un trio fraîchement nommé pour protéger l’Europe de l’inflation… et peut-être la France d’une attaque sur les marchés",
+   "desc": "Selon des sources diplomatiques européennes, les dirigeants des 21 pays de la zone euro ont désigné, jeudi, les titulaires des postes les plus influents de la Banque centrale européenne. L’Espagnol Pablo Hernandez de Cos succédera à Christine Lagarde à la présidence de l’institution monétaire, la Française Laurence Boone sera chargée des marchés financiers et l’Allemand Markus Brunnermeier deviendra chef économiste.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/26/a-la-tete-de-la-bce-un-trio-fraichement-nomme-pour-proteger-l-europe-de-l-inflation-et-peut-etre-la-france-d-une-attaque-sur-les-marches_6815550_3234.html",
+   "at": "2026-11-26T15:04:15+00:00"
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : \"La guerre en Ukraine est notre guerre\", répond Raphaël Glucksmann à Teddy Riner, réticent à aider Kiev",
-   "desc": "Le candidat Place publique, soutenu par le Parti socialiste, estime que le conflit russo-ukrainien \"décide de notre avenir\", contrairement à ce qu'affirme le judoka lancé dans la course à l'Elysée.",
+   "title": "Présidentielle 2027 : selon Sébastien Lecornu, \"l'absence du budget\" pour 2027 \"nous mènerait dans l'abîme\"",
+   "desc": "Un débat a lieu entre Sébastien Lecornu, David Lisnard et Gérard Larcher au congrès des maires de France, jeudi après-midi.",
    "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-a-l-assemblee-les-republicains-proposent-de-durcir-la-reponse-penale-lors-de-leur-niche-parlementaire_8300802.html",
-   "at": "2026-11-26T12:53:04+00:00"
+   "at": "2026-11-26T15:02:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La compagnie aérienne FlyDubai va reprendre ses vols vers Israël le 3 décembre, après plus de deux mois d'interruption",
+   "desc": "L'un des avions de la compagnie émiratie avait été dérouté fin septembre après la tentative du copilote omanais de provoquer un crash.",
+   "url": "https://www.franceinfo.fr/economie/aeronautique/la-compagnie-aerienne-flydubai-va-reprendre-ses-vols-vers-israel-le-3-decembre-apres-plus-de-deux-mois-d-interruption_8301531.html",
+   "at": "2026-11-26T14:54:19+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Gérard Depardieu est renvoyé devant la cour criminelle pour viol commis sur la comédienne Charlotte Arnould",
+   "desc": "L'acteur doit être jugé pour les faits du 7 août mais il obtient un non-lieu pour ceux du 13 août 2018. Les avocats de l'acteur n'excluent pas un pourvoi en cassation.",
+   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/gerard-depardieu-est-renvoye-devant-la-justice-pour-viol-commis-sur-la-comedienne-charlotte-arnould_8301426.html",
+   "at": "2026-11-26T14:44:34+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : Kiev revendique des attaques sur une base aérienne et une station pétrolière en Russie",
+   "desc": "L’armée ukrainienne a frappé, dans la nuit de mercredi à jeudi, « deux infrastructures stratégiques » en Russie, a affirmé l’état-major général des forces armées ukrainiennes sur Telegram.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/26/en-direct-guerre-en-ukraine-kiev-revendique-des-attaques-sur-une-base-aerienne-et-une-station-petroliere-en-russie_6814183_3210.html",
+   "at": "2026-11-26T14:42:49+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Mobilisation des étudiants : le cortège s'est élancé à Paris",
+   "desc": "La manifestation est organisée par un collectif composé de syndicats d’étudiants et de personnels de l’enseignement supérieur et de la recherche.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/direct-mobilisation-de-la-jeunesse-les-organisations-veulent-maintenir-la-pression-malgre-le-recul-des-blocages-une-manifestation-prevue-dans-l-apres-midi_8300754.html",
+   "at": "2026-11-26T14:37:43+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une convention citoyenne sur les finances publiques lancée vendredi pour \"réduire le déficit et préparer l'avenir\"",
+   "desc": "150 citoyens tirés au sort se réuniront à partir de vendredi pour débattre et formuler des propositions visant à rétablir l'équilibre des finances publiques, à l'initiative du Conseil économique, social et environnemental.",
+   "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/une-convention-citoyenne-sur-les-finances-publiques-lancee-vendredi-pour-reduire-le-deficit-et-preparer-l-avenir_8301219.html",
+   "at": "2026-11-26T14:22:40+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une bombe lacrymogène tirée à l'intérieur du lycée Mandela à Nantes, les cours suspendus pour la journée",
+   "desc": "Nouvelle action des élèves ce jeudi matin au lycée Mandela à Nantes. Les forces de l'ordre ont été appelées sur place, en milieu de matinée. L'établissement a été de nouveau fermé, suite au tir d'une bombe lacrymogène à l'intérieur.",
+   "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/loire-atlantique/nantes/blocage-du-lycee-mandela-de-nantes-un-barrage-filtrant-installe-par-les-eleves-des-policiers-sont-sur-place-3456173.html",
+   "at": "2026-11-26T14:17:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l’accuse Charlotte Arnould",
+   "desc": "Cette décision de la cour, saisie par la défense de l’acteur, qui conteste les accusations, est susceptible d’un pourvoi en cassation.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/26/gerard-depardieu-renvoye-en-proces-pour-une-partie-des-viols-dont-l-accuse-charlotte-arnould_6815543_3224.html",
+   "at": "2026-11-26T14:13:51+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Emmanuel Macron s'est rendu au chevet de la jeune victime de 12 ans hospitalisée après l'attentat raciste de Trappes",
+   "desc": "L'enfant de 12 ans est prise en charge depuis plus d'un mois à l'hôpital Necker à Paris. Elle avait été touchée par huit impacts de balles lors de l'attentat raciste de Trappes, le 23 octobre.",
+   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/emmanuel-macron-s-est-rendu-au-chevet-de-la-jeune-victime-de-12-ans-hospitalisee-apres-l-attentat-raciste-de-trappes_8301474.html",
+   "at": "2026-11-26T14:06:45+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : David Lisnard réclame \"l'anonymat des parrainages\" pour \"enlever la pression sur les maires\"",
+   "desc": "\"On peut détester Monsieur Mélenchon, Madame Le Pen ou Édouard Philippe mais ils doivent pouvoir se présenter aux élections\", insiste David Lisnard sur ICI.",
+   "url": "https://www.franceinfo.fr/elections/presidentielle-2027-david-lisnard-reclame-l-anonymat-des-parrainages-pour-enlever-la-pression-sur-les-maires_8301468.html",
+   "at": "2026-11-26T14:03:35+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"J'ai vraiment honte\" : au premier jour de son procès, Emilie König, ex-propagandiste de l'Etat islamique, présente ses excuses \"à toute la nation française\"",
+   "desc": "Présentée par le Parquet national antiterroriste comme une \"véritable égérie\" du groupe jihadiste en Syrie, la Bretonne de 41 ans comparaît jusqu'à lundi devant la cour d'assises spéciale de Paris.",
+   "url": "https://www.franceinfo.fr/monde/terrorisme-djihadistes/j-ai-vraiment-honte-au-premier-jour-de-son-proces-emilie-konig-ex-propagandiste-de-l-etat-islamique-presente-ses-excuses-a-toute-la-nation-francaise_8301402.html",
+   "at": "2026-11-26T14:03:34+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Un jouet sur trois qui est vendu en ligne est « dangereux », alertent Serge Papin et la DGCCRF avant les fêtes de fin d’année",
+   "desc": "D’après des contrôles réalisés en 2025 par la répression des fraudes, 40 % des jouets vendus sur les plateformes de commerce en ligne sont « dangereux », et 77 % d’entre eux sont « non conformes » aux législations.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/26/un-jouet-sur-trois-qui-est-vendu-en-ligne-est-dangereux-alertent-serge-papin-et-la-dgccrf-avant-les-fetes-de-fin-d-annee_6815540_3234.html",
+   "at": "2026-11-26T13:57:16+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l'accuse Charlotte Arnould",
+   "desc": "La cour d'appel de Paris a confirmé jeudi le renvoi de l'acteur Gérard Depardieu en procès pour des chefs de viol et d'agression sexuelle concernant une partie des faits remontant à l'été 2018 que l'actrice Charlotte Arnould avait dénoncés.",
+   "url": "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
+   "at": "2026-11-26T13:46:59+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"C'est très préoccupant\" : l'inquiétude après le naufrage d'un pétrolier transportant 7 000 tonnes de diesel au large d'Ibiza",
+   "desc": "Une importante alerte a été déclenchée en Méditerranée, après le naufrage de ce navire et la mort d'un membre d'équipage. Les autorités espagnoles ont activé le plan d'urgence contre la pollution marine.",
+   "url": "https://www.franceinfo.fr/environnement/pollution/naufrages/c-est-quelque-chose-qui-est-tres-preoccupant-l-inquietude-apres-le-naufrage-d-un-petrolier-avec-7-000-tonnes-de-diesel-a-bord-au-large-d-ibiza_8301390.html",
+   "at": "2026-11-26T13:44:59+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Féminicide de Karen Baldi en 2023 : la prison à perpétuité requise pour l'ex-époux de la policière assassinée à la machette en Savoie",
+   "desc": "Lors de son procès, l'accusé âgé de 64 ans a reconnu \"avoir commis l'acte\" qui a tué la policière de 42 ans.",
+   "url": "https://www.franceinfo.fr/societe/justice/feminicide-de-karen-baldi-en-2023-la-prison-a-perpetuite-requise-pour-l-ex-epoux-de-la-policiere-assassinee-a-la-machette-en-savoie_8301414.html",
+   "at": "2026-11-26T13:42:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "En Estonie, les ventes de bunkers civils font recette pour se protéger du voisin russe",
+   "desc": "Depuis l'invasion de l'Ukraine en février 2022, les pays baltes s'inquiètent de la menace russe. Ces anciennes républiques soviétiques aujourd'hui membres de l'OTAN subissent de nombreuses tentatives d'intimidation et se préparent au pire. En première ligne, l'Estonie s'est lancée sur un nouveau marché : l'installation de bunkers civils, sous forme de maisons ou même de saunas...",
+   "url": "https://www.franceinfo.fr/replay-magazine/france-2/envoye-special/video-estonie-pour-se-proteger-du-voisin-russe-les-ventes-de-bunkers-civils-font-recette_8296305.html",
+   "at": "2026-11-26T13:10:51+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Lilia Hassaine remporte le prix Goncourt des lycéens avec son roman « JE »",
+   "desc": "A mi-chemin entre roman victorien et thriller intimiste, « JE » est inspiré d’un personnage mystérieux de Jane Eyre, le roman culte de Charlotte Brontë, auquel Lilia Hassaine a choisi de donner une voix et une destinée.",
+   "url": "https://www.lemonde.fr/livres/article/2026/11/26/lilia-hassaine-remporte-le-prix-goncourt-des-lyceens-avec-son-roman-je_6815534_3260.html",
+   "at": "2026-11-26T13:01:32+00:00"
   },
   {
    "source": "franceinfo",
@@ -24,18 +143,18 @@
    "at": "2026-11-26T12:44:54+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Elon Musk promet d’offrir deux actions de SpaceX à « chaque enfant » aux Etats-Unis",
+   "desc": "Le milliardaire avait déjà promis, en octobre, une action à chaque enfant aux Etats-Unis. Selon lui, une action provenant de SpaceX sera transférée le mois prochain, tandis qu’une autre venant de lui personnellement sera transférée en juin 2027. Il n’a donné aucun détail sur le dispositif.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/26/elon-musk-promet-d-offrir-deux-actions-de-spacex-a-chaque-enfant-aux-etats-unis_6815531_3210.html",
+   "at": "2026-11-26T12:42:46+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Cybersécurité : \"On se prépare potentiellement à des chocs\", déclare le directeur de l’Anssi qui évoque un \"niveau de menace sans précédent\"",
    "desc": "Pour le nouveau podcast de France Inter, \"Cybernation\", les scénaristes ont pu passer les portes de l'Agence nationale de sécurité des systèmes d'information (Anssi).",
    "url": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/cybersecurite-on-se-prepare-potentiellement-a-des-chocs-declare-le-directeur-de-l-anssi-qui-evoque-un-niveau-de-menace-sans-precedent_8301375.html",
    "at": "2026-11-26T12:42:08+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'ONG Reporters sans frontières saisit l'Arcom pour demander de \"suspendre CNews pendant un mois\"",
-   "desc": "L'ONG accuse la chaîne de non-respect répété du pluralisme pour favoriser l'extrême droite.",
-   "url": "https://www.franceinfo.fr/economie/medias/l-ong-reporters-sans-frontieres-saisit-l-arcom-pour-demander-de-suspendre-cnews-pendant-un-mois_8300685.html",
-   "at": "2026-11-26T12:41:06+00:00"
   },
   {
    "source": "franceinfo",
@@ -52,13 +171,6 @@
    "at": "2026-11-26T12:10:09+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le prix Goncourt des lycéens est attribué à Lilia Hassaine pour son roman \"JE\"",
-   "desc": "Dans son œuvre, publiée aux éditions Gallimard, l'autrice revient sur la vie de Bertha Mason, une héroïne secondaire du roman de Charlotte Brontë \"Jane Eyre\".",
-   "url": "https://www.franceinfo.fr/culture/livres/le-prix-goncourt-des-lyceens-est-attribue-a-lilia-hassaine-pour-son-roman-je_8301324.html",
-   "at": "2026-11-26T12:03:49+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Ouverture du procès d'Émilie König, \"l'égérie du jihad\"",
    "desc": "Ce jeudi s'est ouvert le procès de celle que l'on surnomme \"l'égérie du jihad\". Émilie König, revenante de l'organisation État islamique, est l'une des premières françaises à avoir rejoint les rangs du groupe terroriste en Syrie dès 2012. Rapatriée en France en 2022, elle est jugée à Paris jusqu'au 30 novembre par une cour d'assises spéciale.",
@@ -67,17 +179,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "A Paris et en Île-de-France, trois adresses où les cuisines africaines brillent de toutes leurs saveurs",
-   "desc": "Jusqu’ici un peu sous-représentées dans l’Hexagone, les spécialités subsahariennes ont enfin la cote et s’affichent au menu de restaurants de styles très différents",
-   "url": "https://www.lemonde.fr/m-styles/article/2026/11/26/a-paris-et-en-ile-de-france-trois-adresses-ou-les-cuisines-africaines-brillent-de-toutes-leurs-saveurs_6815529_4497319.html",
-   "at": "2026-11-26T12:00:18+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
    "desc": "Sous pression de ses concurrents de droite et du centre pour une primaire, le candidat Horizons avait sous-estimé la percée du maire de Cannes. Il dénonce désormais ses ambiguïtés avec l’extrême droite et veut se démarquer de sa ligne ultralibérale.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
-   "at": "2026-11-26T12:00:11+00:00"
+   "at": "2026-11-26T12:00:07+00:00"
   },
   {
    "source": "franceinfo",
@@ -88,38 +193,10 @@
   },
   {
    "source": "franceinfo",
-   "title": "L'avocat de Jordan Bardella envisage de déposer un complément de plainte pour \"faux et usage de faux\" après de nouvelles révélations sur des propos antisémites",
-   "desc": "Le président du Rassemblement national dénonce une \"entreprise de persécution\". \"Le Monde\" et Mediapart ont publié jeudi de nouveaux éléments de preuve sur les écrits antisémites attribués à Jordan Bardella.",
-   "url": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella/l-avocat-de-jordan-bardella-envisage-de-deposer-un-complement-de-plainte-pour-faux-et-usage-de-faux-apres-de-nouvelles-revelations-sur-des-propos-antisemites_8301303.html",
-   "at": "2026-11-26T11:51:45+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le réalisateur Cédric Klapisch recevra un César d'honneur lors de la prochaine cérémonie des récompenses du cinéma français",
-   "desc": "Cédric Klapisch, 65 ans, fait partie du cercle restreint des réalisateurs capables de remplir les salles, avec sept films ayant dépassé le million d'entrées.",
-   "url": "https://www.franceinfo.fr/culture/cinema/le-realisateur-cedric-klapisch-recevra-un-cesar-d-honneur-en-fevrier-2027_8301261.html",
-   "at": "2026-11-26T11:47:06+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Propos antisémites attribués à Jordan Bardella : il \"ne peut pas plaider l'erreur de jeunesse\", martèle le coauteur de l’enquête de Mediapart",
    "desc": "Le site d'investigation et le journal \"Le Monde\" ont publié, jeudi, de nouveaux éléments concernant le président du Rassemblement national.",
    "url": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella-il-ne-peut-pas-plaider-l-erreur-de-jeunesse-martele-le-co-auteur-de-l-enquete-de-mediapart_8301168.html",
    "at": "2026-11-26T11:33:56+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Les Etats-Unis approuvent la vente de matériel pour la maintenance de F-16 ukrainiens pour environ 570 millions d'euros",
-   "desc": "La transaction sera financée par des fonds en provenance \"de la Belgique, du Danemark, des Pays-Bas et de la Norvège\", précise Washington.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/les-etats-unis-approuvent-la-vente-de-materiel-pour-la-maintenance-de-f-16-ukrainiens-pour-environ-570-millions-d-euros_8301270.html",
-   "at": "2026-11-26T11:31:01+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Le Monde\" et Mediapart publient de nouveaux éléments de preuve sur les écrits antisémites attribués à Jordan Bardella",
-   "desc": "Les deux médias ont eu accès à une conversation où un ancien camarade de lycée de Jordan Bardella reçoit des messages affirmant notamment que \"ce sont les sionistes qui sont à la tête des banques\". Le président du RN \"réfute catégoriquement en être l'auteur\".",
-   "url": "https://www.franceinfo.fr/politique/jordan-bardella/le-monde-et-mediapart-publient-de-nouveaux-elements-de-preuve-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8300856.html",
-   "at": "2026-11-26T11:25:36+00:00"
   },
   {
    "source": "franceinfo",
@@ -137,13 +214,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "Un professeur de guitare, ancien responsable socialiste dans le département, jugé dans la Drôme pour des agressions sexuelles sur onze jeunes filles",
-   "desc": "Samuel Arnaud comparaît jeudi pour des agressions sexuelles sur onze jeunes filles entre 2020 et 2022, à qui il donnait des cours particuliers de guitare",
-   "url": "https://www.franceinfo.fr/societe/harcelement-sexuel/un-professeur-de-guitare-ancien-responsable-socialiste-dans-le-departement-juge-dans-la-drome-pour-des-agressions-sexuelles-sur-onze-jeunes-filles_8301009.html",
-   "at": "2026-11-26T11:20:59+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"Des gelées et un froid hivernal\" prévus en fin de semaine dans le nord du pays, annonce Météo-France",
    "desc": "L'organisme prévoit des températures largement inférieures aux moyennes de saison dans le quart nord-est.",
    "url": "https://www.franceinfo.fr/environnement/meteo/des-gelees-et-un-froid-hivernal-prevus-en-fin-de-semaine-dans-le-nord-du-pays-annonce-meteo-france_8301090.html",
@@ -157,13 +227,6 @@
    "at": "2026-11-26T11:15:58+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Pourquoi Muse, l'agent IA quasi autonome de Meta, relance les inquiétudes sur son utilisation des données personnelles",
-   "desc": "La maison mère de Facebook poursuit le déploiement de son agent IA, déjà disponible aux Etats-Unis et au Canada, mais pas encore en France. Son arrivée suscite des interrogations après la révélation de problèmes liées aux données personnelles.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/pourquoi-muse-l-agent-ia-quasi-autonome-de-meta-relance-les-inquietudes-sur-son-utilisation-des-donnees-personnelles_8297907.html",
-   "at": "2026-11-26T11:15:26+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Propos antisémites de Jordan Bardella : Le Monde et Médiapart révèlent de nouveaux éléments",
    "desc": "Deux mois après les premières accusations visant Jordan Bardella pour des écrits antisémites, Mediapart et Le Monde apportent de nouvelles preuves ce jeudi 26 novembre. Bien que le président du Rassemblement national ait une fois de plus \"formellement contesté\" en être l'auteur, ces éléments indiquent que les propos datant de 2013 lui sont bien attribués.",
@@ -171,38 +234,10 @@
    "at": "2026-11-26T11:14:20+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Un navire transportant jusqu'à 7 000 tonnes de diesel coule au large de l'île espagnole d'Ibiza, faisant un mort parmi les membres de l'équipage",
-   "desc": "Les éventuels dommages environnementaux sont en cours d'évaluation, selon les secours.",
-   "url": "https://www.franceinfo.fr/monde/espagne/un-navire-transportant-jusqu-a-7-000-tonnes-de-diesel-coule-au-large-de-l-ile-espagnole-d-ibiza-faisant-un-mort-parmi-les-membres-de-l-equipage_8300973.html",
-   "at": "2026-11-26T11:05:25+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Une bombe lacrymogène tirée à l'intérieur du lycée Mandela à Nantes, les cours suspendus pour la journée",
-   "desc": "Nouvelle action des élèves ce jeudi matin au lycée Mandela à Nantes. Les forces de l'ordre ont été appelées sur place, en milieu de matinée. L'établissement a été de nouveau fermé, suite au tir d'une bombe lacrymogène à l'intérieur.",
-   "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/loire-atlantique/nantes/blocage-du-lycee-mandela-de-nantes-un-barrage-filtrant-installe-par-les-eleves-des-policiers-sont-sur-place-3456173.html",
-   "at": "2026-11-26T11:03:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Cancers chez les jeunes : plusieurs collectifs et ONG lancent une cartographie citoyenne et participative pour \"mieux comprendre l'exposition aux polluants chimiques\"",
-   "desc": "Ouverte aux personnes ayant eu un cancer avant 25 ans et à leurs parents, \"cette plateforme participative vise à recueillir des données sur les parcours d’exposition environnementale\" pour \"faire avancer la recherche indépendante et redonner la parole aux personnes concernées\".",
-   "url": "https://www.franceinfo.fr/sante/cancer/cancers-chez-les-jeunes-plusieurs-collectifs-et-ong-lancent-une-cartographie-citoyenne-et-participative-pour-mieux-comprendre-l-exposition-aux-polluants-chimiques_8300925.html",
-   "at": "2026-11-26T10:50:29+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "Le Népal s’apprête à déclarer mortes les plus de 5 000 personnes disparues dans les inondations de l’Himalaya",
-   "desc": "Au mois d’octobre, la législation népalaise avait été modifiée pour réduire de douze ans à environ six semaines le délai d’attente pour déclarer des disparus officiellement morts.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/26/le-nepal-s-apprete-a-declarer-mortes-les-plus-de-5-000-personnes-disparues-dans-les-inondations-de-l-himalaya_6815520_3244.html",
-   "at": "2026-11-26T10:42:01+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Transport en Ile-de-France : le point sur les grands travaux et les perturbations jusqu’à la fin de l’été 2027",
-   "desc": "Environ 4 milliards d’euros seront alloués à la régénération et à la modernisation du réseau. Des perturbations sont à prévoir sur un certain de nombres de lignes de métro, tramways ainsi que sur le réseau ferré.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/26/transport-en-ile-de-france-le-point-sur-les-grands-travaux-et-les-perturbations-jusqu-a-la-fin-de-l-ete-2027_6815518_3234.html",
+   "title": "En Algérie, la posture martiale du président Tebboune sur le narcotrafic avive les tensions avec le Maroc",
+   "desc": "Deux Marocains suspectés de contrebande de stupéfiants ont été tués le 20 novembre dans l’Ouest algérien. Le chef de l’Etat, Abdelmadjid Tebboune, appelle à cibler « la source » du trafic, dans une allusion claire au Maroc voisin.",
+   "url": "https://www.lemonde.fr/afrique/article/2026/11/26/en-algerie-la-posture-martiale-du-president-tebboune-sur-le-narcotrafic-avive-les-tensions-avec-le-maroc_6815519_3212.html",
    "at": "2026-11-26T10:30:09+00:00"
   },
   {
@@ -211,13 +246,6 @@
    "desc": "Les points de vue se sont révélés inconciliables et ce premier conclave budgétaire de la saison a rapidement été déclaré non conclusif.",
    "url": "https://www.franceinfo.fr/economie/budget/budget-de-la-securite-sociale-les-deputes-et-senateurs-echouent-a-trouver-un-accord-le-texte-retourne-a-l-assemblee_8301108.html",
    "at": "2026-11-26T10:29:27+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Reconstruction de Mayotte : la ministre des Outre-mer, Naïma Moutchou, reconnaît les retards et veut accélérer les projets",
-   "desc": "Deux ans après le cyclone Chido, la reconstruction du département ultramarin peine à avancer. Face aux difficultés rencontrées sur le terrain, la ministre souhaite revoir la méthode de travail pour accélérer les projets. Elle mise notamment sur une meilleure coordination entre l’État et les élus locaux.",
-   "url": "https://la1ere.franceinfo.fr/mayotte/reconstruction-de-mayotte-naima-moutchou-reconnait-les-retards-et-veut-accelerer-les-projets-1761713.html",
-   "at": "2026-11-26T10:28:40+00:00"
   },
   {
    "source": "franceinfo",
@@ -234,41 +262,6 @@
    "at": "2026-11-26T09:44:09+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : le désarroi des partis pro-Ukraine et pro-Europe alors que ces sujets ne mobilisent pas les électeurs",
-   "desc": "De Raphaël Glucksmann à Gabriel Attal, en passant par Edouard Philippe, les défenseurs d’une ligne ferme face à Moscou peinent à imposer les sujets internationaux en raison des préoccupations pour le pouvoir d’achat et la dette.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-le-desarroi-des-partis-pro-ukraine-et-pro-europe-alors-que-ces-sujets-ne-mobilisent-pas-les-electeurs_6815508_823448.html",
-   "at": "2026-11-26T09:30:05+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Budget de la « Sécu » 2027 : les députés et sénateurs échouent à s’accorder en commission mixte paritaire",
-   "desc": "Les points de vue des sept députés et sept sénateurs réunis, jeudi matin, pour discuter du texte proposé pour un budget de la Sécurité sociale se sont révélés irréconciliables, et ce premier conclave budgétaire de la saison a rapidement été déclaré « non conclusif ». Il sera renvoyé à l’Assemblée.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/26/budget-de-la-secu-2027-les-deputes-et-senateurs-echouent-a-s-accorder-en-commission-mixte-paritaire_6815507_823448.html",
-   "at": "2026-11-26T09:24:29+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Des policiers \"à bout\" appelés à se rassembler partout en France pour dénoncer leurs conditions de travail",
-   "desc": "\"La ressource n'est pas inépuisable\", alerte le syndicat de police Un1té police avant les rassemblements de policiers prévu",
-   "url": "https://www.franceinfo.fr/societe/manifestation-des-policiers/la-ressource-n-est-pas-inepuisable-alerte-le-syndicat-de-police-un1te-police-avant-les-rassemblements-de-policiers_8300868.html",
-   "at": "2026-11-26T09:10:44+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Espagne : le naufrage d’un pétrolier chargé de diesel fait un mort au large d’Ibiza, sans « indice de pollution » provisoirement observé",
-   "desc": "L’équipage de 17 membres a été secouru, mais l’un d’entre eux a ensuite été déclaré mort à l’hôpital, à Ibiza, selon les secours de l’archipel des Baléares. Les dommages environnementaux sont en cours d’évaluation.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/26/espagne-un-petrolier-charge-de-diesel-coule-au-large-d-ibiza-faisant-un-mort_6815505_3210.html",
-   "at": "2026-11-26T09:06:10+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Au Royaume-Uni, le procès de Russell Brand et un autre comparable à l’affaire Pelicot ouvrent un débat national sur le consentement",
-   "desc": "Dans une tribune publiée mardi dans le quotidien « The Guardian », le premier ministre travailliste, Andy Burnham, affirme vouloir réfléchir à une réforme de l’âge du consentement.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/26/au-royaume-uni-le-proces-de-russell-brand-et-un-autre-semblable-a-l-affaire-pelicot-ouvrent-un-debat-national-sur-le-consentement_6815497_3210.html",
-   "at": "2026-11-26T08:49:33+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "De la Bretagne à l'Etat islamique en Syrie, comment Emilie König, jugée à Paris, a basculé dans le jihadisme",
    "desc": "La Bretonne avait rejoint l'Etat islamique en Syrie dans les années 2010. En pleine guerre, elle était devenue une propagandiste de l'organisation terroriste. Désormais détenue en France, elle comparaît à partir de jeudi devant la cour d'assises spéciale de Paris pour \"association de malfaiteurs terroriste\" et encourt trente ans de réclusion.",
@@ -277,10 +270,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Elections législatives en Espagne : l’Andalousie, laboratoire de l’alliance entre la droite et l’extrême droite",
-   "desc": "Dans cette ancienne place forte socialiste du sud de l’Espagne et à quelques jours des élections législatives anticipées du dimanche 29 novembre, les partisans du Parti populaire et de Vox expriment leur détermination à chasser du pouvoir Pedro Sanchez.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/26/elections-legislatives-en-espagne-l-andalousie-laboratoire-de-l-alliance-entre-la-droite-et-l-extreme-droite_6815491_3210.html",
-   "at": "2026-11-26T07:00:10+00:00"
+   "title": "Pourquoi la jeunesse allemande n’est pas descendue davantage dans la rue",
+   "desc": "En Allemagne, le système éducatif connaît, comme en France, des difficultés matérielles, mais l’économie amortit les tensions sociales en intégrant les jeunes apprentis et les élèves en formation technique.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/26/pourquoi-la-jeunesse-allemande-n-est-pas-descendue-davantage-dans-la-rue_6815492_3232.html",
+   "at": "2026-11-26T08:00:03+00:00"
   },
   {
    "source": "France 24",
@@ -311,6 +304,13 @@
    "at": "2026-11-26T05:31:24+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "Se réveiller en pleine anesthésie et s’en souvenir : les séquelles d’un phénomène méconnu",
+   "desc": "Le fait de se réveiller en pleine opération chirurgicale, et d’en mémoriser les sensations, voire certaines douleurs, est un événement rare. Mais la recherche scientifique s’intéresse à ces états de conscience, les patients étant confrontés à des images et à des sensations persistantes qui rappellent les troubles de stress post-traumatique.",
+   "url": "https://www.lemonde.fr/sciences/article/2026/11/26/se-reveiller-en-pleine-anesthesie-et-s-en-souvenir-les-sequelles-d-un-phenomene-meconnu_6815479_1650684.html",
+   "at": "2026-11-26T05:30:02+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "Aide à l'Ukraine : où se situe la France parmi les principaux pays donateurs ?",
    "desc": "Selon la rédaction internationale et le service d'enquête numérique de Radio France, la France est le troisième pays contributeur à l'effort de guerre, mais le 14e si on le rapporte au PIB.",
@@ -332,24 +332,10 @@
    "at": "2026-11-26T04:57:40+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"C'est la confirmation de mon identité politique\" : comment David Lisnard compte utiliser son image de maire pour la présidentielle",
-   "desc": "Le maire de Cannes, en progression dans les sondages et confirmé à la tête de l'Association des maires de France, entend bien mettre en avant son expérience sur le terrain alors qu'il est de plus en plus attaqué par ses adversaires politiques.",
-   "url": "https://www.franceinfo.fr/elections/c-est-la-confirmation-de-mon-identite-politique-comment-david-lisnard-compte-utiliser-son-image-de-maire-pour-la-presidentielle_8296046.html",
-   "at": "2026-11-26T04:56:53+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Ces centaines de milliers de jeunes Indiens prêts à quitter l’Inde pour étudier : « Après l’annulation du concours de médecine, j’ai énormément pleuré. J’ai trouvé cela tellement injuste »",
    "desc": "« Inde, une jeunesse fracturée » (4/4). Après avoir quatre fois échoué au concours de médecine et subi, en 2026, l’annulation d’un examen à la suite des fuites de sujets, Prithviraj Chauhan, 21 ans, essaie désormais d’obtenir un visa pour poursuivre les études dont il rêve. Chaque année, ils sont nombreux comme lui à tenter de partir à l’étranger pour se former.",
    "url": "https://www.lemonde.fr/international/article/2026/11/26/ces-centaines-de-milliers-de-jeunes-indiens-prets-a-quitter-l-inde-pour-etudier-apres-l-annulation-du-concours-de-medecine-j-ai-enormement-pleure-j-ai-trouve-cela-tellement-injuste_6815470_3210.html",
-   "at": "2026-11-26T04:45:00+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La saison de ski s’ouvre en pleine incertitude : « Avec la conjoncture économique, les Français veulent encore plus qu’avant avoir l’assurance de la neige »",
-   "desc": "Les premières chutes de neige ont rassuré les professionnels, mais ces derniers doivent composer avec des Français plus attentifs à leur budget, des réservations tardives et un modèle économique fragilisé par le réchauffement climatique.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/26/la-saison-de-ski-s-ouvre-en-pleine-incertitude-avec-la-conjoncture-economique-les-francais-veulent-encore-plus-qu-avant-avoir-l-assurance-de-la-neige_6815469_3234.html",
    "at": "2026-11-26T04:45:00+00:00"
   },
   {
@@ -414,34 +400,6 @@
    "desc": "Le Paris SG, opposé à l'AS Rome mercredi 25 novembre en Ligue des champions pour son premier match depuis la grave blessure de Désiré Doué, fait vœu de \"résilience\" et prône la patience avant d'éventuels recrutements. Les blessures de deux ailiers Khvicha Kvaratskhelia et Désiré Doué, victimes d'une rupture du ligament croisé antérieur du genou droit, a assombri dans la perspective d'un triplé européen historique. Les précisions de Benoit Perrochais, chef du service des sports de France 24.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-ligue-des-champions-le-psg-doit-apprendre-%C3%A0-vivre-sans-dou%C3%A9-et-kvaratskhelia",
    "at": "2026-11-25T15:23:21+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "David Lisnard à la tête des Maires de France : \"un record de participation depuis 1989\"",
-   "desc": "Le maire de Cannes David Lisnard, qui s'est lancé dans la course à l'Élysée, a remporté en parallèle un troisième mandat à la tête de l'influente Association des maires de France. Le candidat de droite, soupçonné de se rapprocher de l'extrême droite, joue des coudes avec Édouard Philippe (Horizons), le favori du bloc central. Les précisions de Flore Simon, chroniqueuse internationale à France 24 et Karim Yahiaoui, journaliste à France 24.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-david-lisnard-%C3%A0-la-t%C3%AAte-des-maires-de-france-un-record-de-participation-depuis-1989",
-   "at": "2026-11-25T15:15:51+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Violences conjugales : quitter son conjoint coûterait jusqu'à 16 800 €",
-   "desc": "Se reloger, se soigner, prendre un avocat, assumer seule les dépenses du foyer : pour une femme victime de violences, quitter son conjoint coûterait jusqu'à 16 800 euros lors des trois premiers mois, d'après les calculs de la Fondation des Femmes, dans une étude publiée mardi 24 novembre. Les explications de Laura slimani, directrice du pôle projets à la Fondation des Femmes.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-violences-conjugales-quitter-son-conjoint-co%C3%BBterait-jusqu-%C3%A0-16-800-%E2%82%AC",
-   "at": "2026-11-25T15:12:33+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "France : David Lisnard réelu à la présidence de l'Association de Maire de France",
-   "desc": "Le candidat libéral à l'Élysée, David Lisnard, a battu son rival centriste Philippe Laurent en obtenant 72 % des suffrages. Le maire de Cannes a annoncé sur son compte X que \"c'est un magnifique résultat qui nous permettra de toujours mieux faire entendre la voix des libertés locales, des réalités du terrain, de l'avenir d'une France du concret et des solutions. Au travail\". Les précisions de Flore Simon, chroniqueuse politique à France 24.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-france-david-lisnard-r%C3%A9elu-%C3%A0-la-pr%C3%A9sidence-de-l-association-de-maire-de-france",
-   "at": "2026-11-25T15:08:36+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Congrès des maires : les candidats à la Présidentielle défilent en quête de parrainages",
-   "desc": "Le 108e Congrès des maires de France s'est ouvert mardi 24 novembre à Paris sur fond de course à la présidentielle et de polémique autour de la double candidature du libéral David Lisnard, président de l'Association des maires de France (AMF), en lice pour un nouveau mandat, mais aussi pour l'Élysée. Les précisions de Karim Yahiaoui, journaliste à France 24.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
-   "at": "2026-11-25T14:00:09+00:00"
   }
  ]
 }

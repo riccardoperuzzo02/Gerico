@@ -1,7 +1,91 @@
 {
  "code": "US",
- "asOf": "2026-11-26T13:17:41+00:00",
+ "asOf": "2026-11-26T15:17:33+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
+   "desc": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
+   "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
+   "at": "2026-11-26T14:59:47+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Food banks overwhelmed as people struggle to afford Thanksgiving meals",
+   "desc": "Food banks and resource centers are overwhelmed this season, with nearly 6.5 million fewer Americans receiving food assistance this year. Jason Allen reports.",
+   "url": "https://www.cbsnews.com/video/food-banks-overwhelmed-as-people-struggle-to-afford-thanksgiving-meals/",
+   "at": "2026-11-26T14:39:36+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Maps show where Thanksgiving storms could disrupt holiday",
+   "desc": "Rain, snow and powerful winds were forecast to impact large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
+   "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
+   "at": "2026-11-26T14:31:56+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "FedEx plane slides off Miami runway while landing during stormy weather, causes ground stop",
+   "desc": "A FedEx cargo plane slid off the runway at Miami International Airport on Wednesday. Kris Van Cleave reports.",
+   "url": "https://www.cbsnews.com/video/fedex-plane-slides-off-miami-runway-while-landing-during-stormy-weather-causes-ground-stop/",
+   "at": "2026-11-26T14:00:21+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Macy's parade postponed as inclement weather slams U.S.",
+   "desc": "The Macy's Thanksgiving Day Parade was postponed until Saturday due to severe weather conditions Thursday. Meanwhile, it's snowing in the Midwest and there are flood warnings on both coasts. Rob Marciano reports.",
+   "url": "https://www.cbsnews.com/video/macys-parade-postponed-as-inclement-weather-slams-us/",
+   "at": "2026-11-26T13:51:47+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+   "desc": "As the fast-moving outbreak continues to spread in eastern Congo, fighting between rebels and the army is disrupting efforts to contain the spread of the disease.",
+   "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
+   "at": "2026-11-26T13:47:09+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "The story behind this Eagles player's special Thanksgiving cleats",
+   "desc": "For Philadelphia Eagles cornerback Jonathan Jones, the team's slogan has a personal meaning that extends beyond the football field.",
+   "url": "https://www.cbsnews.com/news/philadelphia-eagles-player-special-cleats-for-thanksgiving-game/",
+   "at": "2026-11-26T13:47:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "What is ‘texture-maxxing’? The food trend putting crunch on the menu",
+   "desc": "Texture-maxxing is the latest food trend taking social media by storm as consumers, driven by aesthetics and taste, are now looking for a sensory experience too.",
+   "url": "https://www.cnbc.com/2026/11/26/texture-maxxing-food-trends-gen-z.html",
+   "at": "2026-11-26T13:34:51+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+   "desc": "Leader Kim Jong Un reportedly visited facilities that produce nuclear ingredients and called for building more nuclear weapons to cope with threats from the U.S. and South Korea.",
+   "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+   "at": "2026-11-26T13:31:28+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "No lead detected in Iowa air after Army's detonation, EPA says",
+   "desc": "No lead has been detected in the air near the Army's controlled blast site in Iowa, where they detonated nearly five tons of lead explosives on Wednesday, according to the Environmental Protection Agency. Some locals remain concerned. Ian Lee reports.",
+   "url": "https://www.cbsnews.com/video/no-lead-detected-in-iowa-air-after-armys-detonation-epa-says/",
+   "at": "2026-11-26T13:24:06+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Eagles' Jonathan Jones on taking his love of flying to new heights",
+   "desc": "The Philadelphia Eagles' Jonathan Jones initially went viral for flying himself to his contract signing. Now, he's talking with Kris Van Cleave about how he hopes to pass on his love of piloting and his charity that helps fly sick kids to medical appointments.",
+   "url": "https://www.cbsnews.com/video/eagles-jonathan-jones-on-taking-his-love-of-flying-to-new-heights/",
+   "at": "2026-11-26T13:23:00+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Semiconductor chips are the new oil. Here's why",
+   "desc": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand.",
+   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+   "at": "2026-11-26T13:19:25+00:00"
+  },
   {
    "source": "CNBC",
    "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
@@ -199,13 +283,6 @@
    "at": "2026-11-26T05:36:01+00:00"
   },
   {
-   "source": "NPR",
-   "title": "U.S. Judge rules FCC violated ABC's free speech rights to please Trump",
-   "desc": "A federal judge has blocked the Trump administration from moving to review all local broadcast licenses held by ABC. The stations air in six of the largest U.S. markets.",
-   "url": "https://www.npr.org/2026/11/26/nx-s1-6000576/fcc-disney-abc-first-amendment-trump-brendan-carr",
-   "at": "2026-11-26T05:23:18+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "Hedge funds are no longer just for the rich. They’re wooing everyday investors",
    "desc": "Hedge funds are increasingly courting retail investors as the industry seeks new avenues for growth.",
@@ -255,13 +332,6 @@
    "at": "2026-11-26T03:19:44+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Maps show where Thanksgiving storms could disrupt holiday",
-   "desc": "Rain, snow and powerful winds were forecast to impact large stretches of the country on Thanksgiving, potentially disrupting holiday festivities and, in some areas, hampering travel plans.",
-   "url": "https://www.cbsnews.com/news/maps-thanksgiving-storms-disrupt-holiday-festivities-travel/",
-   "at": "2026-11-26T03:19:00+00:00"
-  },
-  {
    "source": "CNBC",
    "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
    "desc": "Denny's reaffirmed its longstanding ties with Jensen Huang following his return as Nvidia CEO, revealing that a plaque had been restored.",
@@ -281,13 +351,6 @@
    "desc": "A federal judge blocked the FCC from moving forward with an early review of ABC's broadcast licenses, a move the network argues is an attempt by the Trump administration to punish speech it does not like.",
    "url": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/",
    "at": "2026-11-26T03:00:27+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-   "desc": "SpaceX won approval from the FCC to put 1 million orbital data center satellites into space, a proposal that was opposed by Amazon and other groups.",
-   "url": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "at": "2026-11-26T02:35:39+00:00"
   },
   {
    "source": "CBS News",
@@ -402,13 +465,6 @@
    "at": "2026-11-25T22:32:05+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
-   "desc": "Macy's announced Wednesday that its annual Thanksgiving Day Parade is being postponed to Saturday due to severe weather.",
-   "url": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
-   "at": "2026-11-25T22:26:56+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
    "desc": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
@@ -428,27 +484,6 @@
    "desc": "A new study of 235 donated NFL brains found CTE in 215 of them. Dr. Myron Rolle is a former college All-American and NFL player who is now a pediatric neurosurgeon. We ask him about his experience, his expertise and the advice he gives to parents when they ask if America's most popular pastime can still be made safe enough for our children. If you'd like to share your own great question, email us at greatquestion@cbsnews.com.",
    "url": "https://www.cbsnews.com/video/would-a-brain-surgeon-let-his-kids-play-football/",
    "at": "2026-11-25T22:00:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
-   "desc": "Alan Greenspan famously held the line on interest rates because he believed in the productivity promise of the internet boom. Why can't Kevin Warsh do the same?",
-   "url": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
-   "at": "2026-11-25T21:56:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Stocks turn volatile as Jensen Huang rebound rally fades",
-   "desc": "The tech-heavy Nasdaq index fell more than 1,000 points in early trading before clawing back most of the losses.",
-   "url": "https://www.cbsnews.com/news/stocks-jensen-huang-bounce-ai-tariffs/",
-   "at": "2026-11-25T21:51:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Macy's Thanksgiving Day Parade postponed due to coastal storm",
-   "desc": "The 100th edition of Macy's Thanksgiving Day Parade in New York City has been postponed until Saturday due to a coastal storm. Tom Hanson has the details.",
-   "url": "https://www.cbsnews.com/video/macys-thanksgiving-day-parade-postponed-over-coastal-storm-sources-say/",
-   "at": "2026-11-25T21:39:54+00:00"
   },
   {
    "source": "New York Times",
@@ -477,20 +512,6 @@
    "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
    "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
    "at": "2026-11-25T21:16:07+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "FCC approves SpaceX plan for 1 million data center satellites",
-   "desc": "In an X post on Wednesday, SpaceX CEO Elon Musk said the satellites will be a \"great asset to America and the world.\"",
-   "url": "https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/",
-   "at": "2026-11-25T21:05:17+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "At this Little Free Bakery in Austin, neighbors come for the pastries and stay for community connection",
-   "desc": "The bakers behind these pop-up pastry drops aren't raking in the profits, but they are building a space for people to come together in polarized times.",
-   "url": "https://www.npr.org/2026/11/25/nx-s1-6005522/little-free-bakery-austin-community-connection",
-   "at": "2026-11-25T21:02:58+00:00"
   },
   {
    "source": "CNBC",
@@ -563,13 +584,6 @@
    "at": "2026-11-25T16:59:42+00:00"
   },
   {
-   "source": "CBS News",
-   "title": "Father of teen killed at campsite says it was \"a deliberate act\"",
-   "desc": "Carey Washington \"Wash\" Vinson, 19, was shot and killed while on an annual camping trip with friends in the Florida Panhandle.",
-   "url": "https://www.cbsnews.com/news/carey-vinson-florida-campsite-fatal-shooting/",
-   "at": "2026-11-25T16:45:00+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "Van Hollen’s Challenge to Schumer Highlights Democratic Rift on Israel",
    "desc": "Senator Chris Van Hollen says his move to replace Senator Chuck Schumer as party leader isn’t about Israel, but his sharply critical stance toward the Jewish state has become a major fault line in the race.",
@@ -610,27 +624,6 @@
    "desc": "The city of Middletown, Iowa, where the Army detonated a stockpile of degrading explosives on Wednesday.",
    "url": "https://www.nytimes.com/live/2026/11/25/us/iowa-detonation-ammunition-news/where-is-middletown-iowa",
    "at": "2026-11-25T15:49:51+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Why Aren’t the Midterms Over in Louisiana? Ask the Supreme Court.",
-   "desc": "A landmark Supreme Court ruling reshaped the state’s congressional map and set up runoffs for two open seats.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/why-arent-the-midterms-over-in-louisiana-ask-the-supreme-court.html",
-   "at": "2026-11-25T15:00:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Inside Trump's effort to reinstate Jensen Huang as Nvidia's CEO",
-   "desc": "Jensen Huang's comeback as Nvidia CEO came after a weekend of strategizing by Trump administration officials, who offered assurances to the company.",
-   "url": "https://www.cbsnews.com/news/trump-jensen-huang-nvidia-ceo-reinstated/",
-   "at": "2026-11-25T14:25:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Secondhand shopping is going mainstream this holiday season as consumers seek value",
-   "desc": "More consumers are shopping secondhand this holiday season as they emphasize value and uniqueness in their purchases.",
-   "url": "https://www.cnbc.com/2026/11/25/secondhand-holiday-shopping-grows-as-shoppers-seek-value.html",
-   "at": "2026-11-25T14:17:01+00:00"
   }
  ]
 }

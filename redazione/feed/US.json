@@ -1,7 +1,28 @@
 {
  "code": "US",
- "asOf": "2026-11-27T07:17:37+00:00",
+ "asOf": "2026-11-27T09:17:40+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
+   "desc": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
+   "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+   "at": "2026-11-27T08:47:36+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
+   "desc": "Eagles QB Joe Milton threw two long touchdowns against the quarterback's former team, the Dallas Cowboys, for the the start of quite a comeback, after being down 31-10 early in the third quarter.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
+   "at": "2026-11-27T08:23:12+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
+   "desc": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus.",
+   "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
+   "at": "2026-11-27T08:05:09+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
@@ -318,6 +339,13 @@
    "at": "2026-11-26T14:39:36+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "The great aluminum squeeze: London supply crunch deepens as warehouse stocks slide",
+   "desc": "Iran war disruption has driven the historic London Metal Exchange's warehoused stock of aluminum to levels not seen in decades — forcing it to act.",
+   "url": "https://www.cnbc.com/2026/11/26/lme-aluminum-squeeze-supply.html",
+   "at": "2026-11-26T14:09:10+00:00"
+  },
+  {
    "source": "CBS News",
    "title": "FedEx plane slides off Miami runway while landing during stormy weather, causes ground stop",
    "desc": "A FedEx cargo plane slid off the runway at Miami International Airport on Wednesday. Kris Van Cleave reports.",
@@ -456,27 +484,6 @@
    "desc": "Extreme weather that has unleashed strong winds, high tides, heavy rain and floods is expected to impact travel plans of an estimated 81.5 million people as they travel across the United States.",
    "url": "https://www.npr.org/2026/11/26/nx-s1-6054079/storms-expected-on-both-coasts-as-millions-travel-for-thanksgiving",
    "at": "2026-11-26T09:43:27+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
-   "desc": "Norse Atlantic has suspended all flights and said it may it have to file for bankruptcy, a day after it warned its financial position was \"critical.\"",
-   "url": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
-   "at": "2026-11-26T09:02:30+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
-   "desc": "Xpeng Co-President Brian Gu shared his humanoid robot predictions with CNBC in an interview Thursday.",
-   "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
-   "at": "2026-11-26T07:30:11+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here’s where they’re investing",
-   "desc": "Goldman Sachs Alternatives' inaugural survey of high-net-worth investors found they're increasingly looking to alternatives amid turbulent markets.",
-   "url": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
-   "at": "2026-11-26T07:23:42+00:00"
   }
  ]
 }

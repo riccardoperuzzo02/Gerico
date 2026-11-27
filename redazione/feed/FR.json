@@ -1,7 +1,119 @@
 {
  "code": "FR",
- "asOf": "2026-11-27T07:17:37+00:00",
+ "asOf": "2026-11-27T09:17:40+00:00",
  "items": [
+  {
+   "source": "franceinfo",
+   "title": "\"Il va reconnaître la plupart des faits\" : le youtubeur Grégory Guillotin jugé vendredi pour violences conjugales sur une ex-compagne",
+   "desc": "Une jeune femme accuse l'humoriste et comédien de violences physiques et psychologiques répétées durant leur relation, entre 2019 et 2026. L'audience est prévue vendredi après-midi.",
+   "url": "https://www.franceinfo.fr/societe/justice/il-va-reconnaitre-la-plupart-des-faits-le-youtubeur-gregory-guillotin-juge-vendredi-pour-violences-conjugales-sur-une-ex-compagne_8301051.html",
+   "at": "2026-11-27T09:05:10+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les hospitalisations de jeunes pour tentatives de suicide ou automutilations encore en hausse en 2025, surtout chez les femmes",
+   "desc": "Parmi les 82 655 personnes hospitalisées au moins une fois pour ce motif l'an dernier (+3%), les deux tiers étaient des femmes.",
+   "url": "https://www.franceinfo.fr/sante/les-hospitalisations-des-jeunes-femmes-pour-tentatives-de-suicide-ou-automutilations-encore-en-hausse-en-2025_8302632.html",
+   "at": "2026-11-27T08:41:02+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Complément d'enquête\". Interpol : une police hors de contrôle ?",
+   "desc": "Détournement de ses outils par des régimes autoritaires, corruption interne, données insuffisamment protégées... \"Complément d’enquête\" met au jour une série de failles aux lourdes conséquences au sein de l’organisation internationale.",
+   "url": "https://www.franceinfo.fr/replay-magazine/france-2/complement-d-enquete/complement-d-enquete-interpol-une-police-hors-de-controle_8270150.html",
+   "at": "2026-11-27T08:33:49+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : Gérald Darmanin appelle Edouard Philippe à présenter \"un projet, une vision\"",
+   "desc": "Le garde des Sceaux a défendu sur RTL la ligne d'\"une forme de droite populaire et sociale\" du candidat Horizons.",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html",
+   "at": "2026-11-27T08:32:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Entre Emmanuel Macron et les maires, une décennie de défiance",
+   "desc": "En clôture du congrès des maires, Sébastien Lecornu a délaissé le traditionnel discours aux élus pour un débat télévisé avec le président de l’Association des maires de France, David Lisnard, et le président du Sénat, Gérard Larcher. Un moment révélateur des relations chaotiques entre l’exécutif et les édiles après dix ans de « recentralisation ».",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/entre-emmanuel-macron-et-les-maires-une-decennie-de-defiance_6815818_823448.html",
+   "at": "2026-11-27T08:30:03+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Mairie de Limoges incendiée : un député LFI de Haute-Vienne demande à l'Etat de prendre en charge à 100% la restauration du bâtiment",
+   "desc": "Un mois après l'incendie, Guillaume Guérin, le maire Les Républicains de Limoges espère pour sa part une prise en charge financière à 80% de l'Etat pour reconstruire le bâtiment.",
+   "url": "https://www.franceinfo.fr/societe/mobilisation-du-17-octobre/mairie-de-limoges-incendiee-un-depute-lfi-de-haute-vienne-demande-a-l-etat-de-prendre-en-charge-a-100-la-restauration-du-batiment_8302698.html",
+   "at": "2026-11-27T08:25:47+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Espagne, la gauche régionaliste espère avancer ses pions aux élections législatives du 29 novembre",
+   "desc": "Plusieurs formations radicales, régionalistes ou indépendantistes, pourraient voir le nombre de leurs députés augmenter significativement. Concurrentes de Podemos et du Frente Amplio, qui ont gouverné ces dernières années avec les socialistes, elles pourraient bouleverser le paysage de la gauche espagnole.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/27/en-espagne-la-gauche-regionaliste-espere-avancer-ses-pions-aux-elections-legislatives-du-29-novembre_6815817_3210.html",
+   "at": "2026-11-27T08:09:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "En Guyane, des élus interpellent l'État et lui demandent \"d'agir\" face à la situation migratoire",
+   "desc": "Ces élus guyanais expliquent à France Inter avoir l'impression d'être seuls pour gérer la situation alors que la Guyane ne dispose d'aucun centre d'accueil pour les demandeurs d'asile.",
+   "url": "https://www.franceinfo.fr/france/guyane-francaise/en-guyane-des-elus-interpellent-l-etat-et-lui-demandent-d-agir-face-a-la-situation-migratoire_8302620.html",
+   "at": "2026-11-27T08:06:39+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Iran : « L’alternative aux bombardements n’est pas nécessairement l’indifférence »",
+   "desc": "Les frappes américaines ont permis au régime de Téhéran d’affaiblir l’opposition interne, soulignent les économistes Sultan Mehmood et Leonard Wantchekon, dans une tribune au « Monde ». Ils convoquent François Mitterrand et son discours de La Baule, en 1990, pour rappeler que la voie de la négociation reste ouverte.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/27/iran-l-alternative-aux-bombardements-n-est-pas-necessairement-l-indifference_6815815_3232.html",
+   "at": "2026-11-27T08:00:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le PIB recule de 0,2% en France au troisième trimestre, après une révision à la baisse de l'Insee",
+   "desc": "L'Insee a également publié les chiffres provisoires de l'inflation, qui a ralenti à 2,9% sur un an en novembre.",
+   "url": "https://www.franceinfo.fr/economie/croissance/le-pib-recule-de-0-2-en-france-au-troisieme-trimestre-apres-une-revision-a-la-baisse-de-l-insee_8302671.html",
+   "at": "2026-11-27T07:59:19+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Gérard Depardieu renvoyé pour viol : \"C'est une vraie victoire\", réagit Charlotte Arnould",
+   "desc": "Invitée de France Inter vendredi, la comédienne avait porté plainte contre l'acteur pour des faits de viol survenus en août 2018.",
+   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/gerard-depardieu-renvoye-pour-viol-c-est-une-vraie-victoire-reagit-charlotte-arnould_8302614.html",
+   "at": "2026-11-27T07:53:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Budget de l’Europe : est-il vrai que quand la France donne 100 euros à l'Europe, elle en reçoit 80 en retour ?",
+   "desc": "Le Rassemblement national veut réduire la contribution de la France à l'Union européenne et déplore que les débats budgétaires aient lieu avant les résultats de l'élection présidentielle de 2027.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/vrai-ou-faux-budget-de-l-europe-est-il-vrai-que-la-france-perd-de-l-argent-en-contribuant-a-l-ue_8280254.html",
+   "at": "2026-11-27T07:37:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des data centers dans l'espace, Elon Musk en rêve pour 2027",
+   "desc": "Les États-Unis viennent d'autoriser SpaceX à déployer, à terme, un million de satellites dans l'espace qui vont servir à héberger des data centers. Un feu vert très attendu par Elon Musk et son entreprise pour un projet qui pourrait voir le jour dès le quatrième trimestre 2027, comme l'explique la journaliste et cheffe du service tech-médias-start-up aux Échos, Charlie Perreau. Une séquence à retrouver dans l'émission \"À suivre Loïc de la Mornais\", diffusée entre 20h30 et 23h sur la chaîne info, canal 16.",
+   "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/a-suivre-avec-loic-de-la-mornais/des-data-centers-dans-l-espace-elon-musk-en-reve-pour-2027_8302647.html",
+   "at": "2026-11-27T07:32:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Deux syndicats du jeu vidéo appellent les candidats à la présidentielle à considérer cette industrie \"à la hauteur de ce qu'elle représente dans la société\"",
+   "desc": "\"Le jeu vidéo n'a pas sa place dans les programmes politiques alors qu'il est la première industrie culturelle et créative du pays\", rappelle Nicolas Vignolles, délégué général du Sell, auprès de franceinfo.",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/deux-syndicats-du-jeu-video-appellent-les-candidats-a-la-presidentielle-a-considerer-cette-industrie-a-la-hauteur-de-ce-qu-elle-represente-dans-la-societe_8302608.html",
+   "at": "2026-11-27T07:31:32+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Tempêtes aux Etats-Unis : plus de 900 000 foyers sans électricité sur la Côte est le jour de Thanksgiving",
+   "desc": "De fortes pluies, du vent violent et des inondations côtières ont affecté l’est du pays en ce jour férié aux Etats-Unis.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/27/tempetes-aux-etats-unis-plus-de-900-000-foyers-sans-electricite-sur-la-cote-est-le-jour-de-thanksgiving_6815813_3210.html",
+   "at": "2026-11-27T07:29:32+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"On a étudié deux semaines en présentiel\" : à Paris, des étudiants étrangers témoignent de leur isolement depuis les blocages et fermetures d'universités",
+   "desc": "Pour contourner les blocages d'universités, de nombreuses facultés ont décidé de fermer administrativement et de basculer vers un enseignement en distanciel. La situation isole ceux qui n'avaient pas eu le temps de s'intégrer dans leur nouvel environnement, notamment les étrangers qui apprenaient encore le français.",
+   "url": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/reportage-on-a-etudie-une-semaine-deux-semaines-en-presentiel-a-paris-des-etudiants-etrangers-temoignent-de-leur-isolement-depuis-les-blocages-et-fermetures-d-universite_8302596.html",
+   "at": "2026-11-27T07:26:33+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Intelligence artificielle : quand les salariés se mettent à parler comme des robots pour satisfaire leur employeur",
@@ -24,46 +136,11 @@
    "at": "2026-11-27T06:54:29+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le Costa Rica refoule la rapporteuse de l'ONU pour les Palestiniens, Francesca Albanese",
-   "desc": "\"Tu connais le vrai visage de l'empire le jour où tu lui tapes sur les nerfs ou que tu franchis ses limites\", a réagi Francesca Albanese.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/le-costa-rica-refoule-la-rapporteure-de-l-onu-pour-les-palestiniens-francesca-albanese_8302353.html",
-   "at": "2026-11-27T06:46:32+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Le livre, ce n'est pas simplement pour apprendre à lire\", estime le président du salon du livre jeunesse de Montreuil",
-   "desc": "La 42e édition, qui se tient de vendredi à dimanche près de Paris, attend 200 000 visiteurs.",
-   "url": "https://www.franceinfo.fr/culture/livres/salon-du-livre-et-de-la-presse-jeunesse-de-montreuil/le-livre-ce-n-est-pas-simplement-pour-apprendre-a-lire-estime-le-president-du-salon-du-livre-jeunesse-de-montreuil_8302593.html",
-   "at": "2026-11-27T06:46:20+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Présidentielle 2027 : Marine Le Pen va présenter son programme pour les outre-mer, en pleine tourmente sur les écrits antisémites attribués à Jordan Bardella",
-   "desc": "Le patron du RN devrait s'exprimer, après avoir réitéré sa \"contestation formelle des propos\" rapportés par \"Le Monde\" et Mediapart.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html",
-   "at": "2026-11-27T06:42:08+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Brésil déplore les propos d'Emmanuel Macron sur la viande brésilienne \"dopée\"",
-   "desc": "Le chef de l'Etat avait salué, mercredi, la suspension des importations de viande brésilienne par l'Union européenne depuis septembre, la Commission reprochant au Brésil de ne pas avoir apporté de garanties suffisantes sur la conformité de ses produits avec les règles européennes contre l'utilisation abusive d'antibiotiques.",
-   "url": "https://www.franceinfo.fr/monde/bresil/brasilia-deplore-les-propos-d-emmanuel-macron-sur-la-viande-bresilienne-dopee_8302356.html",
-   "at": "2026-11-27T06:37:23+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : suivez nos dernières informations",
-   "desc": "Andrii Sybiha dit avoir expliqué à son homologue libyen, Taher Al-Baour, qu’« aucune des actions de l’Ukraine n’a jamais été dirigée contre la Libye ou le peuple libyen, uniquement contre des objets militaires russes servant directement à la guerre de la Russie contre l’Ukraine ». Kiev a revendiqué lundi des frappes contre deux navires russes, près de Benghazi.",
+   "title": "EN DIRECT, guerre en Ukraine : la Lettonie fait état d’une violation de son espace aérien par un drone",
+   "desc": "Un drone ‌a brièvement survolé, vendredi, l’espace aérien letton, ont rapporté les forces armées du pays ​dans un communiqué, ce ‌qui constitue une nouvelle violation de l’espace aérien d’un Etat membre de l’UE et de l’OTAN. Des avions ⁠de chasse de l’OTAN et un drone intercepteur ont été déployés ⁠en réponse.",
    "url": "https://www.lemonde.fr/international/live/2026/11/27/en-direct-guerre-en-ukraine-suivez-nos-dernieres-informations_6814183_3210.html",
    "at": "2026-11-27T06:34:59+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Une première avancée mais c'est très tardif\", estime le collectif féministe NousToutes après le renvoi de Gérard Depardieu pour viol",
-   "desc": "Jeudi, la cour d'appel de Paris a confirmé le renvoi de l'acteur soupçonné de viols sur la comédienne Charlotte Arnould, devant une cour criminelle départementale.",
-   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/une-premiere-avancee-mais-c-est-tres-tardif-estime-le-collectif-feministe-noustoutes-apres-le-renvoi-de-gerard-depardieu-pour-viol_8302551.html",
-   "at": "2026-11-27T06:31:35+00:00"
   },
   {
    "source": "franceinfo",
@@ -80,11 +157,18 @@
    "at": "2026-11-27T06:23:09+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "La Chine fait la chasse aux parcours de golf, un sport pourtant en plein essor dans le pays",
-   "desc": "Près d'une vingtaine de terrains de golf a été fermé ce mois-ci en Chine, relançant les spéculations sur les intentions des autorités à l'égard de ce sport. Le Parti communiste (PCC) au pouvoir a souvent vu dans le golf un symbole de richesse ostentatoire, mais aussi d'entre-soi loin du pouvoir pour les nouvelles élites chinoises.",
-   "url": "https://www.franceinfo.fr/replay-radio/d-un-monde-a-l-autre/la-chine-fait-la-chasse-aux-parcours-de-golf-un-sport-pourtant-en-plein-essor-dans-le-pays_8280242.html",
-   "at": "2026-11-27T06:06:41+00:00"
+   "source": "Le Monde",
+   "title": "Logement : plus de la moitié du parc privé est aux mains de multipropriétaires",
+   "desc": "Les propriétaires de plusieurs biens immobiliers possèdent 54 % des logements privés, montre un rapport de recherche, qui analyse aussi les causes et les effets de cette nouvelle donne pour ceux qui cherchent à se loger.",
+   "url": "https://www.lemonde.fr/le-monde-evenements/article/2026/11/27/logement-plus-de-la-moitie-du-parc-prive-est-aux-mains-de-multiproprietaires_6815810_4333359.html",
+   "at": "2026-11-27T06:00:11+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« Il faut un prix qui célèbre l’excellence de la littérature jeunesse francophone »",
+   "desc": "Les jurys et organisations des prix littéraires français les plus prestigieux doivent mettre en valeur ce pan majeur de la création trop souvent déconsidéré, et ainsi soutenir tout un secteur, suggère, dans une tribune au « Monde » l’agente littéraire Agathe Camus.",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/27/il-faut-un-prix-qui-celebre-l-excellence-de-la-litterature-jeunesse-francophone_6815808_3232.html",
+   "at": "2026-11-27T05:30:10+00:00"
   },
   {
    "source": "Le Monde",
@@ -95,13 +179,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"J'ai vraiment l'impression de pouvoir aller mieux\" : des champignons hallucinogènes testés pour guérir dépression et addiction",
-   "desc": "LSD, psilocybine... Des produits considérés comme des stupéfiants et donc interdits en France, pourraient demain soigner des dépressions ou des addictions. Des recherches médicales très sérieuses ont lieu en ce moment dans plusieurs hôpitaux de France, comme au CHU de Nîmes.",
-   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-j-ai-vraiment-l-impression-de-pouvoir-aller-mieux-des-champignons-hallucinogenes-testes-pour-guerir-depression-et-addiction_8280263.html",
-   "at": "2026-11-27T05:12:51+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Visages masqués, enfants en larmes… Qui se cache derrière les chanteurs IA qui cartonnent en ligne ?",
    "desc": "Depuis quelques mois, des vidéos de faux concerts générés par intelligence artificielle explosent le compteur de vues sur les réseaux sociaux. Les plateformes de musique et la Sacem appellent à davantage de régulation.",
    "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/enquete-visages-masques-enfants-en-larmes-qui-se-cache-derriere-les-chanteurs-ia-qui-cartonnent-en-ligne_8301870.html",
@@ -109,10 +186,31 @@
   },
   {
    "source": "Le Monde",
-   "title": "Au Brésil, Lula nomme un banquier au ministère des finances pour tenter de rassurer les marchés",
-   "desc": "Luiz Carlos Trabuco prendra ses fonctions après l’investiture, en janvier, du président de gauche, dont la victoire surprise en octobre avait été suivie d’une forte chute de la Bourse et d’une dépréciation du real.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/au-bresil-lula-nomme-un-banquier-au-ministere-des-finances-pour-tenter-de-rassurer-les-marches_6815796_3210.html",
-   "at": "2026-11-27T04:59:52+00:00"
+   "title": "« Les jeunes s’informent, même s’ils n’en ont pas toujours conscience » : comment les moins de 25 ans réinventent leur rapport à l’actualité à l’heure de TikTok, YouTube et des IA",
+   "desc": "Environ 89 % des 15-24 ans s’intéressent quotidiennement à l’actualité, selon l’Autorité de régulation de la communication audiovisuelle et numérique. Mais leurs pratiques informationnelles diffèrent de leurs aînés.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/27/les-jeunes-s-informent-meme-s-ils-n-en-ont-pas-toujours-conscience-comment-les-moins-de-25-ans-reinventent-leur-rapport-a-l-actualite-a-l-heure-de-tiktok-youtube-et-des-ia_6815805_3234.html",
+   "at": "2026-11-27T05:05:34+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Ethiopie, le Tigré, déjà touché par la guerre, subit une sécheresse aggravée par El Niño : « Rien ou presque n’a poussé, nulle part dans la région »",
+   "desc": "Affectées par ce phénomène climatique intense, les précipitations dans l’est de la région du Tigré ont représenté moins de 60 % de la moyenne saisonnière. Des agriculteurs déplorent une récolte de céréales quasi nulle.",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/27/en-ethiopie-le-tigre-deja-touche-par-la-guerre-subit-une-secheresse-aggravee-par-el-nino-rien-ou-presque-n-a-pousse-nulle-part-dans-la-region_6815804_3244.html",
+   "at": "2026-11-27T05:00:24+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Assurance-vie : pourquoi les épargnants se ruent-ils au Luxembourg ?",
+   "desc": "Inquiétudes politiques, recherche de sécurité, souplesse des placements… L’assurance-vie luxembourgeoise séduit de plus en plus d’épargnants français. Un attrait renforcé par le contexte politique actuel. Mais attention à l’effet de mode.",
+   "url": "https://www.lemonde.fr/argent/article/2026/11/27/assurance-vie-pourquoi-les-epargnants-se-ruent-ils-au-luxembourg_6815801_1657007.html",
+   "at": "2026-11-27T05:00:22+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "« J’ai le droit de refuser de recevoir des candidats sur ma chaîne » : pourquoi les créateurs de contenu s’opposent aux nouvelles règles de l’Arcom ?",
+   "desc": "Les créateurs de contenu ont largement exprimé leur défiance vis-à-vis du nouveau règlement du régulateur de l’audiovisuel à l’approche de l’élection présidentielle.",
+   "url": "https://www.lemonde.fr/comprendre-en-3-minutes/video/2026/11/27/j-ai-le-droit-de-refuser-de-recevoir-des-candidats-sur-ma-chaine-pourquoi-les-createurs-de-contenu-s-opposent-aux-nouvelles-regles-de-l-arcom_6815799_6176282.html",
+   "at": "2026-11-27T05:00:10+00:00"
   },
   {
    "source": "franceinfo",
@@ -137,13 +235,6 @@
   },
   {
    "source": "franceinfo",
-   "title": "\"Il va reconnaître la plupart des faits\" : le youtubeur Grégory Guillotin jugé vendredi pour violences conjugales sur une ex-compagne",
-   "desc": "Une jeune femme accuse l'humoriste et comédien de violences physiques et psychologiques répétées durant leur relation, entre 2019 et 2026. L'audience est prévue vendredi après-midi.",
-   "url": "https://www.franceinfo.fr/societe/justice/il-va-reconnaitre-la-plupart-des-faits-le-youtubeur-gregory-guillotin-juge-vendredi-pour-violences-conjugales-sur-une-ex-compagne_8301051.html",
-   "at": "2026-11-27T04:52:41+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "Devient-on plus frileux en vieillissant ?",
    "desc": "La probabilité d'être très sensible au froid augmente avec l'âge. Le vieillissement n'est cependant qu'\"un facteur de risque et n'est pas associé de manière systématique à ce ressenti\", nuance un spécialiste de médecine interne et de gériatrie.",
    "url": "https://www.franceinfo.fr/vrai-ou-fake/vrai-ou-faux-devient-on-plus-frileux-en-vieillissant_8299254.html",
@@ -159,9 +250,16 @@
   {
    "source": "Le Monde",
    "title": "Au procès de l’explosion de la rue de Trévise, les avocats des parties civiles rendent hommage aux victimes et réfutent la thèse de « la fatalité »",
-   "desc": "Jeudi 26 novembre ont pris fin trois jours de plaidoiries qui ont souligné « la négligence et l’imprudence institutionnalisées » de la Ville de Paris et de la société Cipa, le syndic du n° 6 de la rue de Trévise.",
+   "desc": "Jeudi 26 novembre ont pris fin trois jours de plaidoiries qui ont souligné « la négligence et l’imprudence institutionnalisées » de la Ville de Paris et de la société CIPA, le syndic du nº 6 de la rue de Trévise.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/27/au-proces-de-l-explosion-de-la-rue-de-trevise-les-avocats-des-parties-civiles-rendent-hommage-aux-victimes-et-refutent-la-these-de-la-fatalite_6815760_3224.html",
-   "at": "2026-11-27T04:00:14+00:00"
+   "at": "2026-11-27T04:00:08+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "En Suisse, un scrutin qui sent la poudre",
+   "desc": "Les citoyens sont appelés aux urnes dimanche 29 novembre pour dire s’ils souhaitent interdire aux particuliers d’acheter et d’utiliser des feux d’artifice, accusés notamment de provoquer régulièrement des incendies et des accidents.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/27/en-suisse-un-scrutin-qui-sent-la-poudre_6815692_3210.html",
+   "at": "2026-11-27T02:00:08+00:00"
   },
   {
    "source": "France 24",
@@ -169,20 +267,6 @@
    "desc": "Plusieurs supporteurs du Levski Sofia ont été blessés jeudi à Marseille, lors d’affrontements avec des supporters de l’Olympique de Marseille (OM), avant un match entre les deux équipes.",
    "url": "https://www.france24.com/fr/france/20261127-football-des-supporters-du-levski-sofia-bless%C3%A9s-%C3%A0-marseille-la-bulgarie-exprime-son-indignation",
    "at": "2026-11-27T01:37:29+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Regardez le replay de \"Complément d'enquête\". Interpol : une police hors de contrôle ?",
-   "desc": "Détournement de ses outils par des régimes autoritaires, corruption interne, données insuffisamment protégées... \"Complément d’enquête\" met au jour une série de failles aux lourdes conséquences au sein de l’organisation internationale.",
-   "url": "https://www.franceinfo.fr/replay-magazine/france-2/complement-d-enquete/complement-d-enquete-interpol-une-police-hors-de-controle_8270150.html",
-   "at": "2026-11-26T23:54:29+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Nice, dix membres d’un groupe « anticasseurs » devant la justice : « On était là pour les commerçants »",
-   "desc": "Dix membres présumés d’un « groupe d’autodéfense » constitué face aux manifestations de l’automne, soupçonnés d’être proches de l’ultradroite locale, comparaissaient jeudi 26 octobre devant le tribunal correctionnel de Nice pour association de malfaiteurs et transport d’armes.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/26/a-nice-dix-membres-d-un-groupe-anticasseurs-devant-la-justice-on-etait-la-pour-les-commercants_6815626_3224.html",
-   "at": "2026-11-26T22:43:09+00:00"
   },
   {
    "source": "franceinfo",
@@ -206,20 +290,6 @@
    "at": "2026-11-26T21:08:23+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Le défilé des candidats au Salon des maires, rendez-vous incontournable de la campagne présidentielle",
-   "desc": "Aux exceptions notables de Marine Le Pen et de Jean-Luc Mélenchon, les postulants à l’Elysée sont venus, mercredi, au Parc des expositions à Paris, prendre le pouls des élus locaux et chercher, pour certains, les précieux parrainages.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/26/le-defile-des-candidats-au-salon-des-maires-rendez-vous-incontournable-de-la-campagne-presidentielle_6815600_823448.html",
-   "at": "2026-11-26T20:42:09+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"Si on abandonnait l'Ukraine, on mettrait en péril notre sécurité à court ou moyen terme\", affirme Emmanuel Macron",
-   "desc": "Cette prise de parole intervient alors que la veille, Teddy Riner, candidat surprise à l'élection présidentielle, a affirmé, à propos du conflit : \"Je ne comprends pas qu'on envoie des troupes en Ukraine, ce n'est pas notre guerre.\"",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/si-on-abandonnait-l-ukraine-on-mettrait-en-peril-notre-securite-a-court-ou-moyen-terme-affirme-emmanuel-macron_8302044.html",
-   "at": "2026-11-26T20:36:36+00:00"
-  },
-  {
    "source": "France 24",
    "title": "L'Algérie accuse la France de \"maltraitances\" sur un agent consulaire détenu depuis 2025",
    "desc": "Le ministre algérien des Affaires étrangères, Ahmed Attaf, a accusé jeudi la France d'avoir maltraité un agent consulaire détenu depuis 2025 dans l'Hexagone et mis en examen dans le cadre de l'enlèvement de l'influenceur algérien Amir Boukhors. L'affaire avait aggravé les tensions diplomatiques déjà vives entre les deux pays et conduit à l'expulsion réciproque de diplomates et agents consulaires.",
@@ -241,25 +311,11 @@
    "at": "2026-11-26T19:38:05+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "A Paris, des lycéens et étudiants toujours mobilisés qui récusent tout « retour à la normale »",
-   "desc": "Quelques milliers de jeunes ont manifesté dans la capitale, jeudi 26 novembre, entre volonté de ne rien lâcher sur les revendications et doutes sur les conséquences de la mobilisation sur leur année scolaire et universitaire.",
-   "url": "https://www.lemonde.fr/campus/article/2026/11/26/a-paris-des-lyceens-et-etudiants-toujours-mobilises-qui-recusent-tout-retour-a-la-normale_6815594_4401467.html",
-   "at": "2026-11-26T19:09:12+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "« Un cruel manque d'empathie » : malgré son handicap, elle reçoit 100 euros d'amende pour quelques minutes de train car elle n'avait pas la bonne carte",
-   "desc": "Une Toulousaine handicapée, usagère des transports en commun dans la Ville rose, est choquée. Bénéficiant des transports en commun gratuits sur tout le réseau Tisséo suite à son handicap, elle a écopé mercredi 25 novembre d'une amende de 100 euros pour un trajet de 4 minutes en TER dans l'agglomération toulousaine. L'agent SNCF n'a pas voulu tenir compte de son handicap.",
-   "url": "https://france3-regions.franceinfo.fr/occitanie/haute-garonne/toulouse/un-cruel-manque-d-empathie-malgre-son-handicap-elle-recoit-100-euros-d-amende-pour-quelques-minutes-de-train-car-elle-n-avait-pas-la-bonne-carte-3456680.html",
-   "at": "2026-11-26T19:05:26+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Budget de la « Sécu » pour 2027 : un compromis à ce stade introuvable",
-   "desc": "Alors que les députés et les sénateurs, réunis en commission mixte paritaire, n’ont pas réussi à s’entendre, jeudi, sur une version commune du texte, le premier ministre, Sébastien Lecornu, a déclaré que le « travail » se poursuivait pour essayer de rapprocher les positions.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/26/budget-de-la-secu-pour-2027-un-compromis-a-ce-stade-introuvable_6815592_823448.html",
-   "at": "2026-11-26T18:49:08+00:00"
+   "source": "France 24",
+   "title": "David Lisnard et sa position face au RN, propos de Teddy Riner sur l'Ukraine",
+   "desc": "La présidentielle est dans cinq mois et un candidat monte dans les sondages : le maire de Cannes, David Lisnard. Est-il ambigu vis-à-vis de l'extrême droite comme l'accusent ses opposants ? Autre sujet : l'actualité à gauche, avec François Hollande qui avance ses pions, et la polémique créée par Teddy Riner et ses propos sur l'Ukraine. Il est aussi question des nouveaux éléments sur les écrits antisémites attribués à Jordan Bardella.",
+   "url": "https://www.france24.com/fr/%C3%A9missions/politique/20261126-david-lisnard-et-sa-position-face-au-rn-propos-de-teddy-riner-sur-l-ukraine",
+   "at": "2026-11-26T18:36:31+00:00"
   },
   {
    "source": "France 24",
@@ -267,41 +323,6 @@
    "desc": "De nouvelles accusations sur les écrits antisémites de jeunesse de Jordan Bardella ont été publiées jeudi, quelques jours seulement après d’autres révélations concernant Laure Lavalette, porte-parole de Marine Le Pen. Même si ces accusations n’ont jusqu’ici pas eu d’impact sur les intentions de vote, elles replongent le Rassemblement national dans l’œil du cyclone.",
    "url": "https://www.france24.com/fr/france/20261126-france-jordan-bardella-laure-lavalette-dediabolisation-rassemblement-national-epreuve-affaires-antisemitisme",
    "at": "2026-11-26T18:29:20+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le Louvre, un monument modèle résumé en 300 photographies",
-   "desc": "L’exposition « Louvre Photo » revient sur deux siècles d’images du célèbre musée qui a inspiré les photographes dès l’époque des daguerréotypes.",
-   "url": "https://www.lemonde.fr/m-styles/article/2026/11/26/le-louvre-un-monument-modele-resume-en-300-photographies_6815590_4497319.html",
-   "at": "2026-11-26T18:00:22+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "RTL : les journalistes dénoncent le management de la direction de la rédaction sur fond d’inquiétudes sur la baisse des moyens alloués",
-   "desc": "Le directeur général, Jonathan Curiel, a pris la parole, jeudi, devant la rédaction pour tenter d’apaiser les tensions au sein de la radio du groupe M6. La maison mère est aussi accusée « d’appauvrir » la station.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/26/rtl-les-journalistes-denoncent-le-management-de-la-direction-de-la-redaction-sur-fond-d-inquietudes-sur-la-baisse-des-moyens-alloues_6815588_3234.html",
-   "at": "2026-11-26T18:00:14+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Le virage au forceps des alliés de l’OTAN vers des opérations militaires dopées à l’IA de Palantir",
-   "desc": "Le 30 octobre, sur la base d’Adazi, en Lettonie, a été organisée une simulation grandeur nature de défense du territoire de l’Alliance atlantique, intégralement coordonnée par l’intelligence artificielle du système américain Palantir. L’exercice a eu lieu dans le contexte d’une lutte impitoyable entre industriels de l’armement, licornes de l’intelligence artificielle et états-majors pour faire face à des changements majeurs sur le plan de la souveraineté et de la conduite de la guerre en Europe.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/26/le-virage-au-forceps-des-allies-de-l-otan-vers-des-operations-militaires-dopees-a-l-ia-de-palantir_6815581_3210.html",
-   "at": "2026-11-26T17:35:04+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Nanterre et Pantin, deux projets de réhabilitation qui dessinent le visage du Grand Paris",
-   "desc": "La rénovation de l’école d’architecture de Nanterre et la reconversion des usines Pouchard témoignent de l’intérêt du secteur privé pour ces projets de transformation, plus complexes mais plus écologiques que la construction d’équipements neufs.",
-   "url": "https://www.lemonde.fr/culture/article/2026/11/26/a-nanterre-et-pantin-deux-projets-de-rehabilitation-qui-dessinent-le-visage-du-grand-paris_6815580_3246.html",
-   "at": "2026-11-26T17:30:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"La pensée anti-juifs obsédait Jordan Bardella\" : ce qu'il faut retenir des nouvelles révélations sur des écrits antisémites attribués au patron du Rassemblement national",
-   "desc": "Deux mois après les premières révélations de Mediapart, le site d'investigation et \"Le Monde\" publient de nouveaux messages antisémites attribués au leader d'extrême droite.",
-   "url": "https://www.franceinfo.fr/politique/jordan-bardella/la-pensee-anti-juifs-obsedait-jordan-bardella-ce-qu-il-faut-retenir-des-nouvelles-revelations-sur-des-ecrits-antisemites-attribues-au-patron-du-rassemblement-national_8300919.html",
-   "at": "2026-11-26T17:18:23+00:00"
   },
   {
    "source": "France 24",
@@ -318,11 +339,11 @@
    "at": "2026-11-26T17:00:45+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Notre avis sur « GTA VI » après soixante heures de jeu : entre vertige urbain et romance sous tension",
-   "desc": "Une semaine après sa sortie, nous avons vu le générique de fin de la superproduction de Rockstar Games. Retour sur une fresque explosive, monumentale mais poussive dans sa conclusion.",
-   "url": "https://www.lemonde.fr/pixels/article/2026/11/26/notre-avis-sur-gta-vi-apres-soixante-heures-de-jeu-entre-vertige-urbain-et-romance-sous-tension_6815568_4408996.html",
-   "at": "2026-11-26T16:40:51+00:00"
+   "source": "franceinfo",
+   "title": "Gérard Depardieu renvoyé devant la justice pour viol : on fait le point sur les plaintes et accusations de violences sexistes et sexuelles qui visent l'acteur",
+   "desc": "La cour d'appel de Paris a confirmé jeudi le renvoi de Gérard Depardieu en procès pour une partie des viols dénoncés par la comédienne Charlotte Arnould.",
+   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/apres-sa-condamnation-dans-l-affaire-des-volets-verts-on-fait-le-point-sur-les-plaintes-et-accusations-de-violences-sexistes-et-sexuelles-qui-visent-gerard-depardieu_8284541.html",
+   "at": "2026-11-26T16:54:30+00:00"
   },
   {
    "source": "France 24",
@@ -360,6 +381,13 @@
    "at": "2026-11-26T15:10:16+00:00"
   },
   {
+   "source": "franceinfo",
+   "title": "Gérard Depardieu est renvoyé devant la cour criminelle pour viol commis sur la comédienne Charlotte Arnould",
+   "desc": "L'acteur doit être jugé pour les faits du 7 août mais il obtient un non-lieu pour ceux du 13 août 2018. Les avocats de l'acteur n'excluent pas un pourvoi en cassation.",
+   "url": "https://www.franceinfo.fr/culture/cinema/depardieu/gerard-depardieu-est-renvoye-devant-la-justice-pour-viol-commis-sur-la-comedienne-charlotte-arnould_8301426.html",
+   "at": "2026-11-26T14:44:34+00:00"
+  },
+  {
    "source": "France 24",
    "title": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l'accuse Charlotte Arnould",
    "desc": "La cour d'appel de Paris a confirmé jeudi le renvoi de l'acteur Gérard Depardieu en procès pour des chefs de viol et d'agression sexuelle concernant une partie des faits remontant à l'été 2018 que l'actrice Charlotte Arnould avait dénoncés.",
@@ -372,13 +400,6 @@
    "desc": "Ce jeudi s'est ouvert le procès de celle que l'on surnomme \"l'égérie du jihad\". Émilie König, revenante de l'organisation État islamique, est l'une des premières françaises à avoir rejoint les rangs du groupe terroriste en Syrie dès 2012. Rapatriée en France en 2022, elle est jugée à Paris jusqu'au 30 novembre par une cour d'assises spéciale.",
    "url": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20261126-ouverture-du-proc%C3%A8s-de-l-%C3%A9g%C3%A9rie-du-jihad",
    "at": "2026-11-26T12:02:28+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Propos antisémites attribués à Jordan Bardella : il \"ne peut pas plaider l'erreur de jeunesse\", martèle le coauteur de l’enquête de Mediapart",
-   "desc": "Le site d'investigation et le journal \"Le Monde\" ont publié, jeudi, de nouveaux éléments concernant le président du Rassemblement national.",
-   "url": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella-il-ne-peut-pas-plaider-l-erreur-de-jeunesse-martele-le-co-auteur-de-l-enquete-de-mediapart_8301168.html",
-   "at": "2026-11-26T11:33:56+00:00"
   },
   {
    "source": "France 24",

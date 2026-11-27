@@ -1,7 +1,14 @@
 {
  "code": "ES",
- "asOf": "2026-11-27T05:17:36+00:00",
+ "asOf": "2026-11-27T07:17:37+00:00",
  "items": [
+  {
+   "source": "El Mundo",
+   "title": "Sucesos",
+   "desc": "Una vez en la zona, los servicios sanitarios y agentes desplazados únicamente pudieron confirmar el fallecimiento del hombre Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b0924a9fc6c83d45e8b456d.html",
+   "at": "2026-11-27T06:35:26+00:00"
+  },
   {
    "source": "El País",
    "title": "El gran búnker de las redes del PSOE: “No usamos la IA; para eso están los cortes reales de Feijóo y Abascal”",
@@ -60,6 +67,20 @@
   },
   {
    "source": "20minutos",
+   "title": "Un debate en blanco en vísperas del Black Friday",
+   "desc": "Los cuatro candidatos cumplieron con el guion establecido en un debate sin alusiones entre el bloque de la derecha y pellizcos de monja de una combativa Colau a Sánchez.",
+   "url": "https://www.20minutos.es/actualidad/un-debate-blanco-visperas-black-friday_7066479_0.html",
+   "at": "2026-11-27T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "En qué ciudad cierran hoy los cinco grandes candidatos… y qué motivo demoscópico esconde",
+   "desc": "Los principales candidatos apuran sus últimos actos en territorios donde buscan movilizar a sus votantes y disputar escaños decisivos.",
+   "url": "https://www.20minutos.es/nacional/madrid-valencia-sevilla-donde-cierran-hoy-campana-los-cinco-principales-candidatos-por-que-han-elegido-esa-circunscripcion_7065109_0.html",
+   "at": "2026-11-27T04:00:00+00:00"
+  },
+  {
+   "source": "20minutos",
    "title": "La campaña, vista para sentencia",
    "desc": "Sánchez, Feijóo, Abascal y Colau salieron del debate tan vivos (o muertos) como entraron.",
    "url": "https://www.20minutos.es/nacional/campana-vista-para-sentencia-7066480-3-html-jesus-morales_7066480_3.html",
@@ -70,13 +91,6 @@
    "title": "El PP no divisa \"transferencias entre bloques\" tras el debate y el PSOE aprovecha la pinza con Colau, que ve un \"punto de inflexión\"",
    "desc": "Sánchez apunta a un bloque progresista que \"ha ganado por goleada\" mientras Frente Amplio confía en arañar votos a los socialistas. Los populares minimizan cualquier impacto electoral tras la cita y, como Vox, llaman a una movilización masiva este 29-N.",
    "url": "https://www.20minutos.es/nacional/pp-no-divisa-transferencias-entre-bloques-tras-debate-psoe-aprovecha-pinza-con-colau-que-ve-un-punto-inflexion_7066443_0.html",
-   "at": "2026-11-27T04:00:00+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Madrid, Valencia, Sevilla… dónde cierran hoy la campaña los cinco principales candidatos y por qué han elegido esa circunscripción",
-   "desc": "Los principales candidatos apuran sus últimos actos en territorios donde buscan movilizar a sus votantes y disputar escaños decisivos.",
-   "url": "https://www.20minutos.es/nacional/madrid-valencia-sevilla-donde-cierran-hoy-campana-los-cinco-principales-candidatos-por-que-han-elegido-esa-circunscripcion_7065109_0.html",
    "at": "2026-11-27T04:00:00+00:00"
   },
   {
@@ -144,7 +158,7 @@
   },
   {
    "source": "20minutos",
-   "title": "Sánchez saca la mili en el debate y el PSOE difunde una foto: \"Van de patriotas y de los tres, el único que la ha hecho he sido yo\"",
+   "title": "El PSOE difunde la foto de Sánchez en la mili tras el debate: \"Van de patriotas…\"",
    "desc": "Moncloa distribuye la foto de Pedro Sánchez en su Jura de bandera para certificar que el candidato socialista sí realizó la mili como ha indicado a Feijóo y Abascal en el debate.",
    "url": "https://www.20minutos.es/nacional/sanchez-saca-mili-debate-frente-feijoo-abascal-van-patriotas-los-tres-unico-que-ha-hecho-he-sido-yo_7066478_0.html",
    "at": "2026-11-26T23:49:02+00:00"
@@ -347,8 +361,8 @@
   },
   {
    "source": "20minutos",
-   "title": "Debate electoral 29-N, en directo | Sánchez da ganador al bloque progresista frente al \"machismo\" y Feijóo dice haber hecho un debate \"leal\"",
-   "desc": "Pedro Sánchez (PSOE), Alberto Núñez Feijóo (PP), Santiago Abascal (Vox) y Ada Colau (Frente Amplio) se enfrentan en el debate electoral a cuatro, el último antes de las elecciones generales.",
+   "title": "Debate electoral 29-N, en directo | La campaña llega hoy a su final marcada por la resaca de un debate que enfatizó los dos grandes bloques",
+   "desc": "Sánchez, Colau y Montero cierran la campaña en Madrid, mientras Feijóo lo hace en Sevilla y Abascal, en Valencia.",
    "url": "https://www.20minutos.es/nacional/debate-cuatro-directo-ultima-hora-cara-cara-entre-pedro-sanchez-alberto-nunez-feijoo-santiago-abascal-ada-colau_7066328_6.html",
    "at": "2026-11-26T18:55:42+00:00"
   },
@@ -435,13 +449,6 @@
    "desc": "\"El domingo, día electoral, será una jornada en general tranquila, con menos frío por la mañana que en días previos, aunque con posible formación de bancos de niebla\", según Rubén del Campo, portavoz de la Aemet Leer",
    "url": "https://www.elmundo.es/espana/2026/11/26/6b07dc1afdddffea648b4579.html",
    "at": "2026-11-26T07:23:06+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Elecciones generales 2026",
-   "desc": "Muchos de los \"protagonistas\" del ciclo más exitoso de Podemos se unen en un manifiesto para expresar su apoyo a Ada Colau Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/26/6b078c79fc6c8331038b4596.html",
-   "at": "2026-11-26T07:01:01+00:00"
   }
  ]
 }

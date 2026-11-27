@@ -1,7 +1,112 @@
 {
  "code": "FR",
- "asOf": "2026-11-27T13:17:34+00:00",
+ "asOf": "2026-11-27T15:17:33+00:00",
  "items": [
+  {
+   "source": "Le Monde",
+   "title": "En Serbie, le mouvement des étudiants choisit l’universitaire Radomir Saicic, novice en politique, comme candidat à l’élection présidentielle",
+   "desc": "Le député de 65 ans, professeur à la faculté de chimie de Belgrade, avait été élu en octobre au sein de la Liste étudiante, grande vainqueure des législatives serbes. Le scrutin pour la fonction présidentielle, principalement honorifique dans le pays, aura lieu le 27 décembre.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/27/en-serbie-le-mouvement-des-etudiants-choisit-l-universitaire-radomir-saicic-novice-en-politique-comme-candidat-a-l-election-presidentielle_6815883_3210.html",
+   "at": "2026-11-27T15:13:19+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Bercy abandonne ses redressements fiscaux en rafale contre les exploitants de montgolfières",
+   "desc": "Depuis un an, Bercy avait lancé des contrôles en série contre ces entreprises, accusées de ne pas payer assez de TVA. Le ministère fait finalement marche arrière, mais il confirme que le taux désormais applicable aux vols en ballon est porté de 10 % à 20 %.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/bercy-abandonne-ses-redressements-fiscaux-en-rafale-contre-les-exploitants-de-montgolfieres_6815879_823448.html",
+   "at": "2026-11-27T15:00:07+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Présidentielle 2027 : \"Les débauchages, ça ne m'émeut pas\", réagit Bruno Retailleau après le ralliement de huit députés LR à David Lisnard",
+   "desc": "Distancé dans les intentions de vote, le candidat LR à la présidentielle balaie cette annonce d'un revers de main, la qualifiant d'\"anecdotique\".",
+   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html",
+   "at": "2026-11-27T14:57:50+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Elections législatives en Espagne : les graphiques pour comprendre le dynamisme économique du pays et ses limites",
+   "desc": "« Le modèle espagnol sous pression » (2/3). Dopée par l’immigration, le tourisme et les fonds européens, la croissance espagnole surclasse celle de ses voisins. Malgré ces bonnes performances, le chômage reste élevé.",
+   "url": "https://www.lemonde.fr/international/visuel/2026/11/27/elections-legislatives-en-espagne-les-graphiques-pour-comprendre-le-dynamisme-economique-du-pays-et-ses-limites_6815875_3210.html",
+   "at": "2026-11-27T14:39:51+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La réclusion criminelle à perpétuité requise contre l'accusé lors du procès en appel pour le féminicide de Chahinez Daoud",
+   "desc": "L'homme est jugé pour avoir tué par le feu son ex-compagne Chahinez Daoud à Mérignac en 2021. Ces réquisitions confirment la peine prononcée en première instance pour ce féminicide.",
+   "url": "https://www.franceinfo.fr/faits-divers/justice-proces/la-reclusion-criminelle-a-perpetuite-requise-contre-l-accuse-lors-du-proces-en-appel-pour-le-feminicide-de-chahinez-daoud_8303238.html",
+   "at": "2026-11-27T14:33:01+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au procès d’un gérant de brasserie et de l’entreprise Otis après l’accident mortel d’un jeune apprenti, la banalité de l’absence de prévention",
+   "desc": "Sept ans après le décès de Ludovic Marais, apprenti barman, à Tours, le gérant du restaurant était poursuivi pour homicide involontaire. Le procès a mis en évidence le dysfonctionnement de longue date d’un monte-charge mal entretenu par l’entreprise Otis, et l’absence totale de prévention des risques par l’employeur.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/27/on-a-l-impression-d-une-improvisation-totale-au-proces-d-un-gerant-de-brasserie-et-d-otis-apres-un-accident-mortel-la-banalite-de-l-absence-de-prevention_6815872_3234.html",
+   "at": "2026-11-27T14:30:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Eric Zemmour placé sous le statut de témoin assisté dans l'affaire des prêts accordés au parti Reconquête",
+   "desc": "Une information judiciaire a été ouverte en janvier 2025, après un signalement de la Commission nationale des comptes de campagne et des financements politiques.",
+   "url": "https://www.franceinfo.fr/politique/eric-zemmour/eric-zemmour-place-sous-le-statut-de-temoin-assiste-dans-l-affaire-des-prets-accordes-au-parti-reconquete_8303232.html",
+   "at": "2026-11-27T14:27:08+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Une plainte déposée contre X pour discriminations dans l'Oise après la fermeture d'une école privée musulmane par la préfecture",
+   "desc": "Trois conseils départementaux du culte musulman saisissent la justice et énoncent un acharnement institutionnel à l'encontre de cet établissement accueillant 190 élèves. Les plaignants réclament une enquête indépendante sur cet arrêté préfectoral de quatre mois.",
+   "url": "https://www.franceinfo.fr/faits-divers/une-plainte-deposee-contre-x-pour-discriminations-dans-l-oise-apres-la-fermeture-d-une-ecole-privee-musulmane-par-la-prefecture_8303229.html",
+   "at": "2026-11-27T14:24:12+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "EN DIRECT, guerre en Ukraine : l’armée polonaise annonce qu’elle utilisera l’IA de l’entreprise américaine Palantir",
+   "desc": "Les forces armées polonaises utiliseront un logiciel, développé par Palantir, qui doit servir à « analyser rapidement les informations, identifier les menaces et préparer des recommandations pour les commandants », en exploitant des données de plusieurs sources, selon le ministère de la défense polonais. La France et le Royaume-Uni ont annoncé récemment être à la recherche de solutions de substitution à ces logiciels, pourtant choisis par l’OTAN.",
+   "url": "https://www.lemonde.fr/international/live/2026/11/27/en-direct-guerre-en-ukraine-les-attaques-russes-ont-tue-au-moins-cinq-personnes-et-blesse-quatorze-autres-en-vingt-quatre-heures_6814183_3210.html",
+   "at": "2026-11-27T14:21:54+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Est-ce utile de nourrir les oiseaux l’hiver ?",
+   "desc": "Chaque semaine, l’équipe du podcast Chaleur humaine répond à vos questions sur la transition climatique",
+   "url": "https://www.lemonde.fr/planete/article/2026/11/27/est-ce-utile-de-nourrir-les-oiseaux-l-hiver_6815867_3244.html",
+   "at": "2026-11-27T14:00:03+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "José Beaurain, député RN de l’Aisne, visé par une enquête pour « détournement de fonds publics » et contesté localement",
+   "desc": "Après les révélations fin août du « Canard enchaîné » et l’ouverture d’une enquête préliminaire, le député d’extrême droite, réinvesti par le Rassemblement national malgré des alertes internes, sera l’objet d’une mobilisation à Chauny, samedi.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/le-depute-rn-de-l-aisne-jose-beaurain-vise-par-une-enquete-pour-detournement-de-fonds-publics-et-conteste-localement_6815868_823448.html",
+   "at": "2026-11-27T14:00:03+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Devant la commission d’enquête sur le 17 octobre, le préfet de police décrit « une situation quasi insurrectionnelle » dans les rues de Paris",
+   "desc": "Auditionné le 24 novembre, Patrice Faure a réfuté toute erreur d’anticipation de ses services, « mais la réalité a dépassé l’entendement », a-t-il expliqué.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/devant-la-commission-d-enquete-sur-le-17-octobre-le-prefet-de-police-decrit-une-situation-quasi-insurrectionnelle-a-paris_6815865_823448.html",
+   "at": "2026-11-27T13:52:53+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Les distributeurs indépendants de SFR assignent l'opérateur en justice dans le cadre de son rachat",
+   "desc": "Ce réseau de distributeurs réclame \"la réparation des conséquences de la dégradation de leurs activités\", qui est \"accentuée par l'annonce de la cession de l'opérateur\" SFR.",
+   "url": "https://www.franceinfo.fr/economie/telecom/rachat-de-sfr/les-distributeurs-independants-de-sfr-assignent-l-operateur-en-justice-dans-le-cadre-de-son-rachat_8303124.html",
+   "at": "2026-11-27T13:47:24+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "À l'occasion du Black Friday, des centaines d'annonces proposant des faux médicaments anti-obésité fleurissent sur internet",
+   "desc": "Commander ce type de produit et le prendre sans avis médical est illégal et potentiellement dangereux, alertent les laboratoires pharmaceutiques que France Inter a contactés.",
+   "url": "https://www.franceinfo.fr/sante/medicament/info-radio-france-a-l-occasion-du-black-friday-des-centaines-d-annonces-proposant-des-faux-medicaments-anti-obesite-fleurissent-sur-internet_8302473.html",
+   "at": "2026-11-27T13:31:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Présidentielle 2027 : Marine Le Pen veut contraindre les journalistes à respecter le secret de l’instruction",
+   "desc": "Interrogée par notre journaliste politique Corentin Lesueur, spécialiste de l’extrême droite, lors d’un point presse, Marine Le Pen a déclaré : « Les médias ne pourront plus en toute impunité effectuer des recels de violation du secret de l’enquête et de l’instruction ».",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-marine-le-pen-veut-contraindre-les-journalistes-a-respecter-le-secret-de-l-instruction_6815863_823448.html",
+   "at": "2026-11-27T13:13:16+00:00"
+  },
   {
    "source": "franceinfo",
    "title": "Google contraint de suspendre un important chantier de data center en Belgique, faute de permis",
@@ -22,13 +127,6 @@
    "desc": "S'il s'agit d'un niveau d'inflation moyen, certains produits comme les fruits et légumes vont voir leur prix nettement grimper, à l'image des tomates.",
    "url": "https://www.franceinfo.fr/economie/inflation/le-gouvernement-anticipe-une-hausse-des-prix-alimentaires-d-environ-4-au-debut-de-l-annee-2027_8303091.html",
    "at": "2026-11-27T13:00:36+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« Le monde culturel attend la présidentielle, où il jouera son avenir à la roulette – se sauver ou mourir –, et il évite ainsi de se remettre en question »",
-   "desc": "Les acteurs culturels craignent que leurs subventions, déjà en baisse, ne soient encore amputées en cas d’arrivée au pouvoir du Rassemblement national. Pourtant, la Cour des comptes constate, dans un rapport, une augmentation de l’offre subventionnée, et préconise de « cerner des priorités ». En clair de penser la culture autrement, explique, dans sa chronique, Michel Guerrin, rédacteur en chef au « Monde ».",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/27/le-monde-culturel-attend-la-presidentielle-ou-il-jouera-son-avenir-a-la-roulette-se-sauver-ou-mourir-et-il-evite-ainsi-de-se-remettre-en-question_6815861_3232.html",
-   "at": "2026-11-27T12:55:48+00:00"
   },
   {
    "source": "franceinfo",
@@ -60,28 +158,14 @@
   },
   {
    "source": "Le Monde",
-   "title": "Ecrits antisémites de Jordan Bardella : Marine Le Pen renouvelle sa confiance au président du Rassemblement national",
+   "title": "Ecrits antisémites de Jordan Bardella : Marine Le Pen renouvelle sa confiance au président du RN",
    "desc": "Le président du RN réitère sa défense en contestant « formellement » les nouvelles révélations du « Monde » et de « Mediapart », se refusant de nouveau à avancer des éléments.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-de-jordan-bardella-marine-le-pen-renouvelle-sa-confiance-au-president-du-rassemblement-national_6815858_823448.html",
    "at": "2026-11-27T12:25:05+00:00"
   },
   {
    "source": "Le Monde",
-   "title": "Christian de Rocquigny, le procureur surpris au siège du RN pendant une perquisition, a admis qu’il avait connaissance de l’affaire des fuites",
-   "desc": "Lors d’une perquisition de l’IGPN, Christian de Rocquigny, procureur adjoint de Paris, a été aperçu dans les locaux du Rassemblement national.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/27/christian-de-rocquigny-le-procureur-surpris-au-siege-du-rn-pendant-une-perquisition-a-admis-qu-il-avait-connaissance-de-l-affaire-des-fuites_6815857_823448.html",
-   "at": "2026-11-27T12:21:24+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le PIB recule de 0,2% en France au troisième trimestre, après une révision à la baisse de l'Insee",
-   "desc": "L'institut a également publié les chiffres provisoires de l'inflation, qui a ralenti à 2,9% sur un an en novembre.",
-   "url": "https://www.franceinfo.fr/economie/croissance/le-pib-recule-de-0-2-en-france-au-troisieme-trimestre-apres-une-revision-a-la-baisse-de-l-insee_8302671.html",
-   "at": "2026-11-27T12:21:02+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Manifestations du 28 novembre : Laurent Nuñez pointe « une vulnérabilité supplémentaire » avec l’ouverture des marchés de Noël",
+   "title": "Manifestations du 28 novembre : les marchés de Noël « constituent une vulnérabilité supplémentaire », dit le ministre Laurent Nuñez",
    "desc": "« Cette journée comportera le risque de voir plusieurs cortèges non autorisés se former, dans le but de rechercher l’affrontement avec les forces de l’ordre », a affirmé le ministre de l’intérieur dans un télégramme adressé aux préfets et aux responsables de sécurité.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/27/manifestations-du-28-novembre-laurent-nunez-pointe-une-vulnerabilite-supplementaire-avec-l-ouverture-des-marches-de-noel-la-suspension-de-l-usage-des-grenades-assourdissantes-est-etendue-jusqu-a-nouvel-ordre_6815856_3224.html",
    "at": "2026-11-27T12:17:20+00:00"
@@ -108,13 +192,6 @@
    "at": "2026-11-27T11:53:26+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Radio France demande des sanctions alourdies pour les auteurs de violences contre des journalistes",
-   "desc": "La PDG du groupe public, Sibyle Veil, plaide pour que le code pénal prévoit que l’agression d’un journaliste constitue une « circonstance aggravante ». France Télévisions et BFM-TV annoncent au « Monde » soutenir la proposition.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/27/radio-france-demande-des-sanctions-alourdies-pour-les-auteurs-de-violences-contre-des-journalistes_6815853_3234.html",
-   "at": "2026-11-27T11:37:30+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "La suspension de l'usage des grenades assourdissantes prolongée et étendue à toutes les manifestations",
    "desc": "Le directeur général de la police nationale (DGPN) fait cette annonce dans un télégramme consulté par franceinfo vendredi.",
@@ -130,45 +207,17 @@
   },
   {
    "source": "franceinfo",
-   "title": "Présidentielle 2027 : Marine Le Pen renouvelle sa confiance à Jordan Bardella et veut obliger les journalistes à respecter le secret de l'instruction",
-   "desc": "Vendredi, en fin de matinée, la candidate d'extrême droite s'est exprimée à l'occasion de la présentation de son programme pour les outre-mer. Elle a jugé \"scandaleuses\" les méthodes des médias qui enquêtent sur le RN.",
-   "url": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-marine-le-pen-va-presenter-son-programme-pour-les-outre-mer-en-pleine-tourmente-sur-les-ecrits-antisemites-attribues-a-jordan-bardella_8302521.html",
-   "at": "2026-11-27T11:23:01+00:00"
-  },
-  {
-   "source": "franceinfo",
    "title": "\"Le BHV, c'est quand même le moteur du quartier\" : les déboires du grand magasin parisien font souffrir les commerçants des environs",
    "desc": "Quelle suite pour le BHV Marais ? Le grand magasin parisien fondé en 1856 est fermé depuis trois semaines, après son placement en redressement judiciaire suivi d'une fermeture pour un problème d'assurance. Alors que le dépôt des offres de reprise se clôt vendredi, les commerçants autour témoignent de la baisse de leur chiffre d'affaires.",
    "url": "https://www.franceinfo.fr/economie/commerce/le-bhv-c-est-quand-meme-le-moteur-du-quartier-les-deboires-du-grand-magasin-parisien-font-souffrir-les-commercants-des-environs_8302803.html",
    "at": "2026-11-27T11:11:27+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "Le navire naufragé au large d'Ibiza va être remorqué, annonce Pedro Sanchez",
-   "desc": "Le Premier ministre espagnol a assuré qu'il n'y avait \"pas de fuite\" d'hydrocarbures.",
-   "url": "https://www.franceinfo.fr/environnement/pollution/naufrages/le-navire-naufrage-au-large-d-ibiza-va-etre-remorque-annonce-pedro-sanchez_8302854.html",
-   "at": "2026-11-27T10:33:53+00:00"
-  },
-  {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : la Russie a ciblé des infrastructures civiles et énergétiques dans neuf oblasts pendant la nuit, déplore le premier ministre ukrainien",
-   "desc": "Dans l’oblast de Dnipropetrovsk – où une personne a été tuée par les attaques –, Moscou a bombardé les gares de Kryvy Rih et de Kamianske, ainsi que deux mines de charbon, et endommagé des locomotives. Le ministère de la défense russe a aussi dit avoir touché une sous-station électrique de la ville Kryvy Rih.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/27/en-direct-guerre-en-ukraine-la-russie-a-frappe-des-infrastructures-civiles-et-energetiques-dans-neuf-oblasts-pendant-la-nuit-deplore-le-premier-ministre-ukrainien_6814183_3210.html",
-   "at": "2026-11-27T10:26:53+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Convention citoyenne sur les finances publiques : \"C'est problématique de se dire que c'est un sujet trop compliqué pour que des citoyens comprennent\", estime la présidente du Cese",
-   "desc": "Les 150 citoyens tirés au sort vont découvrir jusqu'en mars, pendant sept week-ends, le fonctionnement d'un budget, la dette ou la macro-économie avant de rendre leurs propositions pour les candidats juste avant la présidentielle.",
-   "url": "https://www.franceinfo.fr/economie/convention-citoyenne-sur-les-finances-publiques-c-est-problematique-de-se-dire-que-c-est-un-sujet-trop-complique-pour-que-des-citoyens-comprennent-estime-la-presidente-du-cese_8302785.html",
-   "at": "2026-11-27T10:26:12+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La température mondiale a dépassé de plus de 2°C les niveaux préindustriels pendant sept jours consécutifs, une première",
-   "desc": "Sous l'effet du réchauffement climatique et du phénomène El Niño, il a fait +2°C au moins, entre les 18 et 24 novembre, par rapport aux températures préindustrielles.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/la-temperature-mondiale-a-depasse-de-plus-de-2-c-les-niveaux-preindustriels-pendant-sept-jours-consecutifs-une-premiere_8302734.html",
-   "at": "2026-11-27T10:23:24+00:00"
+   "title": "Les subtiles oscillations de David Lisnard, du vote Macron à la main tendue au RN",
+   "desc": "Le candidat de droite à la présidentielle rejette dos à dos Emmanuel Macron et Marine Le Pen. Par le passé, sans jamais les soutenir, le maire de Cannes a parfois été plus conciliant, votant pour l’un en 2017, courtisant l’autre en 2025.",
+   "url": "https://www.lemonde.fr/les-decodeurs/article/2026/11/27/les-subtiles-oscillations-de-david-lisnard-du-vote-macron-a-la-main-tendue-au-rn_6815839_4355770.html",
+   "at": "2026-11-27T10:30:12+00:00"
   },
   {
    "source": "franceinfo",
@@ -185,53 +234,11 @@
    "at": "2026-11-27T10:20:32+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Génocide des Rohingya : Le président birman Min Aung Hlaing fait peu de cas du verdict de la CIJ",
-   "desc": "La condamnation de la Birmanie par la Cour internationale de justice pour génocide à l’encontre de la minorité musulmane de l’ouest du pays, oblige à des mesures de réparation et des poursuites judiciaires contre les responsables dont la mise en œuvre par Naypyidaw paraît improbable.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html",
-   "at": "2026-11-27T10:00:07+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "Agriculture, guerre en Ukraine, présidentielle en France... On vous explique pourquoi les négociations sur le budget de l'Union européenne sont dans l'impasse",
    "desc": "Réunis lors d'un sommet européen jeudi, les dirigeants des Vingt-Sept ont bataillé sur le projet de budget de l'UE. Le temps presse à l'approche de 2027, marquée par de nombreuses élections en Europe, dont la présidentielle française.",
    "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/agriculture-guerre-en-ukraine-presidentielle-en-france-on-vous-explique-pourquoi-les-negociations-sur-le-budget-de-l-union-europeenne-sont-dans-l-impasse_8302635.html",
    "at": "2026-11-27T09:30:55+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La France entre officiellement en récession",
-   "desc": "Le produit intérieur brut a reculé de 0,2 % au troisième trimestre 2026, selon l’Insee, alors qu’il avait été initialement estimé en baisse de 0,1 %. Surtout, avec l’annonce d’un léger recul d’activité au deuxième trimestre, et non d’une stagnation comme indiqué précédemment, la France affiche deux trimestres négatifs consécutifs.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/27/la-france-entre-en-recession-apres-deux-trimestres-de-recul-du-pib_6815824_3234.html",
-   "at": "2026-11-27T09:25:50+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Saluts nazis, supporters hospitalisés, réaction de Macron... Ce que l'on sait des graves violences lors du match OM-Levski Sofia",
-   "desc": "Le stade Vélodrome a été le théâtre de violences, jeudi soir, en marge du match de l'Olympique de Marseille en Ligue Europa. Plusieurs supporters bulgares ont été blessés, les événements créant des remous jusque dans la sphère diplomatique.",
-   "url": "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/saluts-nazis-supporters-hospitalises-reaction-de-macron-ce-que-l-on-sait-des-graves-violences-lors-du-match-om-levski-sofia-3456848.html",
-   "at": "2026-11-27T09:13:57+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "La Pologne plus divisée que jamais après le premier attentat majeur de son histoire récente",
-   "desc": "L’attaque meurtrière du 7 novembre à Cracovie a été suivie d’âpres polémiques entre le gouvernement de centre droit et son opposition nationaliste. A un an d’élections législatives décisives, les Polonais partisans de la démocratie libérale se retrouvent sans recours efficace.",
-   "url": "https://www.lemonde.fr/idees/article/2026/11/27/la-pologne-plus-divisee-que-jamais-apres-le-premier-attentat-majeur-de-son-histoire-recente_6815822_3232.html",
-   "at": "2026-11-27T09:00:11+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En Espagne, la gauche régionaliste espère avancer ses pions aux élections législatives du 29 novembre",
-   "desc": "Plusieurs formations radicales, régionalistes ou indépendantistes, pourraient voir le nombre de leurs députés augmenter significativement. Concurrentes de Podemos et du Frente Amplio, qui ont gouverné ces dernières années avec les socialistes, elles pourraient bouleverser le paysage de la gauche espagnole.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/en-espagne-la-gauche-regionaliste-espere-avancer-ses-pions-aux-elections-legislatives-du-29-novembre_6815817_3210.html",
-   "at": "2026-11-27T08:09:05+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Présidentielle 2027 : Raphaël Glucksmann cherche à tisser un réseau d’élus locaux",
-   "desc": "Lors de rencontres au Salon des maires à Paris, puis en Mayenne jeudi, le candidat de Place publique et du Parti socialiste multiplie les appels aux élus de gauche à s’investir dans la campagne. Il promet de faire de son « conseil des territoires » un pilier de sa gouvernance.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/27/presidentielle-2027-raphael-glucksmann-cherche-a-tisser-un-reseau-d-elus-locaux_6815814_823448.html",
-   "at": "2026-11-27T07:43:17+00:00"
   },
   {
    "source": "franceinfo",
@@ -242,50 +249,22 @@
   },
   {
    "source": "Le Monde",
-   "title": "Tempêtes aux Etats-Unis : plus de 900 000 foyers sans électricité sur la Côte est le jour de Thanksgiving",
-   "desc": "De fortes pluies, du vent violent et des inondations côtières ont affecté l’est du pays en ce jour férié aux Etats-Unis.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/tempetes-aux-etats-unis-plus-de-900-000-foyers-sans-electricite-sur-la-cote-est-le-jour-de-thanksgiving_6815813_3210.html",
-   "at": "2026-11-27T07:29:32+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "A l'occasion du Black Friday, des centaines d'annonces proposant des faux médicaments anti-obésité fleurissent sur internet",
-   "desc": "Commander ce type de produit et le prendre sans avis médical est illégal et potentiellement dangereux, alertent les laboratoires pharmaceutiques que France Inter a contactés.",
-   "url": "https://www.franceinfo.fr/sante/medicament/info-radio-france-a-l-occasion-du-black-friday-des-centaines-d-annonces-proposant-des-faux-medicaments-anti-obesite-fleurissent-sur-internet_8302473.html",
-   "at": "2026-11-27T06:57:54+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Visages masqués, enfants en larmes… Qui se cache derrière les chanteurs IA qui cartonnent en ligne ?",
-   "desc": "Depuis quelques mois, des vidéos de faux concerts générés par intelligence artificielle explosent le compteur de vues sur les réseaux sociaux. Les plateformes de musique et la Sacem appellent à davantage de régulation.",
-   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/enquete-visages-masques-enfants-en-larmes-qui-se-cache-derriere-les-chanteurs-ia-qui-cartonnent-en-ligne_8301870.html",
-   "at": "2026-11-27T05:07:55+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "A Shanghaï, le boom de la seconde main bouscule le marché du luxe",
-   "desc": "Dans des magasins aussi grands que des supermarchés, les plateformes chinoises de revente attirent de jeunes clients qui, sur fond de crise de la consommation, ne veulent plus payer les prix exorbitants pratiqués par les grandes maisons.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/27/a-shanghai-le-boom-de-la-seconde-main-bouscule-le-marche-du-luxe_6815800_3234.html",
-   "at": "2026-11-27T05:00:13+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "« Ils nous ont menti » : après la fermeture de leur école de commerce, des étudiants en colère et en galère",
+   "title": "« On paie 15 000 euros l’année pour que l’école fasse faillite ? » : des étudiants en colère et en galère après la fermeture de leur école de commerce",
    "desc": "Redressements judiciaires, rachats, disparitions… Après avoir longtemps surfé sur la vague de l’apprentissage, de nombreuses business schools privées se retrouvent en difficulté. Pour leurs élèves, c’est le début d’un parcours du combattant, entre interlocuteurs injoignables, diplôme incertain, nouvelle école à trouver et argent perdu.",
    "url": "https://www.lemonde.fr/campus/article/2026/11/27/ils-nous-ont-menti-apres-la-fermeture-de-leur-ecole-de-commerce-des-etudiants-en-colere-et-en-galere_6815802_4401467.html",
    "at": "2026-11-27T05:00:13+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "\"Ils jouent avec nos vies\" : en Espagne, la crise du logement pousse les locataires à se mobiliser à l'approche des élections législatives",
-   "desc": "A Madrid, de nombreux locataires sont menacés d'expulsion après le rachat de leur appartement par des fonds d'investissement. La question du logement est au cœur de la bataille pour la réélection du Premier ministre socialiste Pedro Sanchez.",
-   "url": "https://www.franceinfo.fr/monde/espagne/reportage-ils-jouent-avec-nos-vies-en-espagne-la-crise-du-logement-pousse-les-locataires-a-se-mobiliser-a-l-approche-des-elections-legislatives_8297727.html",
-   "at": "2026-11-27T04:54:27+00:00"
+   "source": "Le Monde",
+   "title": "Nos choix de spectacles à réserver pour les fêtes de fin d’année",
+   "desc": "Théâtre, danse, comédie musicale, cirque, humour… Les journalistes du service culture du « Monde » ont sélectionné des rendez-vous festifs pour égayer la fin de l’année.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/27/nos-choix-de-spectacles-a-reserver-pour-les-fetes_6815762_3246.html",
+   "at": "2026-11-27T04:00:19+00:00"
   },
   {
    "source": "France 24",
-   "title": "Football : des supporters du Levski Sofia blessés à Marseille, la Bulgarie exprime son indignation",
-   "desc": "Plusieurs supporteurs du Levski Sofia ont été blessés jeudi à Marseille, lors d’affrontements avec des supporters de l’Olympique de Marseille (OM), avant un match au Stade Vélodrome entre les deux équipes. Les réactions politiques sont nombreuses et une enquête a été ouverte pour \"violences volontaires aggravées\".",
+   "title": "Match OM-Levski Sofia : l’UEFA ouvre une enquête disciplinaire",
+   "desc": "Jeudi, plusieurs supporters bulgares du Levski Sofia ont été blessés à Marseille, lors d’affrontements avec des supporters de l’Olympique de Marseille (OM), avant un match au Stade Vélodrome entre les deux équipes. Les réactions politiques sont nombreuses et l’UEFA a annoncé l’ouverture d’une enquête disciplinaire.",
    "url": "https://www.france24.com/fr/france/20261127-football-des-supporters-du-levski-sofia-bless%C3%A9s-%C3%A0-marseille-la-bulgarie-exprime-son-indignation",
    "at": "2026-11-27T01:37:29+00:00"
   },
@@ -365,20 +344,6 @@
    "desc": "De nouveaux mis en cause ce jeudi 26 novembre par de nouveaux éléments lui attribuant des écrits antisémites, Jordan Bardella se dit dans un communiqué victime d'une \"entreprise de persécution\". Les révélations s'appuient sur une conversation Facebook datant de 2013 dont l'authenticité a été certifiée par un huissier. Les explications de Stéphane Zumsteeg, cirecteur du département politique et opinion d'Ipsos.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261126-propos-antis%C3%A9mites-jordan-bardella-persiste-%C3%A0-nier-les-accusations-malgr%C3%A9-les-preuves",
    "at": "2026-11-26T15:22:20+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "France : le candidat à la Présidentielle Teddy Riner fait polémique sur l'Ukraine",
-   "desc": "Le candidat à la présidentielle Teddy Riner a exhorté mercredi 25 novembre à arrêter \"de donner de l'argent que nous n'avons pas\" pour soutenir l'Ukraine, d'autant que \"ce n'est pas notre guerre\", à propos du déploiement de soldats français pour des missions non-combattantes.",
-   "url": "https://www.france24.com/fr/vid%C3%A9o/20261126-congr%C3%A8s-des-maires-de-france-le-candidat-teddy-riner-fait-pol%C3%A9mique-sur-l-ukraine",
-   "at": "2026-11-26T15:10:16+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l'accuse Charlotte Arnould",
-   "desc": "La cour d'appel de Paris a confirmé jeudi le renvoi de l'acteur Gérard Depardieu en procès pour des chefs de viol et d'agression sexuelle concernant une partie des faits remontant à l'été 2018 que l'actrice Charlotte Arnould avait dénoncés.",
-   "url": "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
-   "at": "2026-11-26T13:46:59+00:00"
   }
  ]
 }

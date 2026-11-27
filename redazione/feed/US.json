@@ -1,7 +1,175 @@
 {
  "code": "US",
- "asOf": "2026-11-26T21:17:34+00:00",
+ "asOf": "2026-11-27T05:17:36+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "China’s factories are growing profits again, but the AI boom is picking the winners",
+   "desc": "China's economy has been running at two speeds, with AI-related manufacturing and exports powering growth while consumption, real estate investment lag.",
+   "url": "https://www.cnbc.com/2026/11/27/china-industrial-profits-october.html",
+   "at": "2026-11-27T05:15:55+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+   "desc": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
+   "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+   "at": "2026-11-27T05:03:15+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX shares jump on alternative trading platform after Musk says he will expand share donations",
+   "desc": "SpaceX shares jumped in overnight trading on Blue Ocean ATS after Elon Musk said on X that he would donate shares to American children every year.",
+   "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+   "at": "2026-11-27T04:20:55+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
+   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
+   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
+   "at": "2026-11-27T03:40:10+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+   "desc": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\"",
+   "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+   "at": "2026-11-27T03:30:23+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "What stores are open on Black Friday? Here are the hours.",
+   "desc": "Many retailers open their doors early on Black Friday, but the stock market will have shorter hours. Here's what to know.",
+   "url": "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/",
+   "at": "2026-11-27T03:01:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump to visit maker of semiconductor chips, including Nvidia's",
+   "desc": "President Trump will visit the Phoenix TSMC facility, one of the largest manufacturers of advanced chips, including Nvidia's.",
+   "url": "https://www.cbsnews.com/news/trump-visit-tsmc-semiconductor-facility-phoenix-nvidia/",
+   "at": "2026-11-27T02:34:45+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Iowa lead detonation results expected soon, EPA says",
+   "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
+   "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
+   "at": "2026-11-27T01:13:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "High school band raises $350K to stay for Macy's Thanksgiving parade",
+   "desc": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
+   "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
+   "at": "2026-11-27T00:52:28+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "A City Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
+   "desc": "The famed pier in Pacifica, Calif., had long been crumbling. This week, a portion of it succumbed to fierce waves and toppled into the sea.",
+   "url": "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
+   "at": "2026-11-27T00:46:52+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Texas town helps high school marching band stay in postponed Thanksgiving Day Parade",
+   "desc": "After the Thanksgiving Day Parade was postponed, a Texas high school saw an outpouring of support to make sure the marching band could still perform.",
+   "url": "https://www.cbsnews.com/video/texas-town-helps-high-school-marching-band-stay-postponed-thanksgiving-day-parade/",
+   "at": "2026-11-27T00:44:32+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "How to protect your packages from porch pirates",
+   "desc": "'Tis the season for online orders and holiday deliveries. But those packages stacking up outside the house are a lure for thieves, just waiting to steal your stuff. Jason Allen has more on protecting your items.",
+   "url": "https://www.cbsnews.com/video/how-to-protect-packages-porch-pirates/",
+   "at": "2026-11-27T00:37:17+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Inside Visa's effort to protect your money from AI holiday shopping scams",
+   "desc": "Friday is Black Friday, with Cyber Monday just around the corner, and a lot of shopping will be done by AI assistants. Scammers are using the same technology to rip off customers. Ash-har Quraishi has an exclusive look inside Visa's innovation center.",
+   "url": "https://www.cbsnews.com/video/inside-visas-effort-protect-your-money-ai-holiday-shopping-scams/",
+   "at": "2026-11-27T00:34:31+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
+   "desc": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
+   "url": "https://www.nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html",
+   "at": "2026-11-27T00:33:25+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Trump signs severe weather disaster declarations from Mar-a-Lago on Thanksgiving",
+   "desc": "President Trump celebrated Thanksgiving at his resort in Palm Beach, Florida. He signed disaster declarations for Florida in the wake of severe weather. Weijia Jiang has more.",
+   "url": "https://www.cbsnews.com/video/trump-signs-severe-weather-disaster-declarations-mar-a-lago-thanksgiving/",
+   "at": "2026-11-27T00:32:27+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Thanksgiving Day Parade performers vow to march on despite postponement",
+   "desc": "The postponed Thanksgiving Day Parade has set up an unprecedented series of challenges for tens of thousands of people walking, working and watching along the parade route. Lilia Luciano reports.",
+   "url": "https://www.cbsnews.com/video/thanksgiving-day-parade-performers-vow-march-despite-postponement/",
+   "at": "2026-11-27T00:31:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Thanksgiving travel nightmare hits airports amid powerful nor'easter",
+   "desc": "More than 2,000 flights have been delayed this Thanksgiving, and more than 400 were canceled as a powerful nor'easter, Cristian Benavides reports.",
+   "url": "https://www.cbsnews.com/video/thanksgiving-travel-nightmare-hits-airports-amid-powerful-noreaster/",
+   "at": "2026-11-27T00:27:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Severe weather this Thanksgiving hits U.S. from California to New York",
+   "desc": "A Thanksgiving nor'easter brought powerful winds that knocked down a tree, crushing a home in Maryland. Major floods hit Virginia and New Jersey and the California coast were hit by king tides. Tom Hanson reports and Scott Padgett has the forecast.",
+   "url": "https://www.cbsnews.com/video/severe-weather-thanksgiving-hits-us-california-new-york/",
+   "at": "2026-11-27T00:27:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Pregnant Inmate Escapes in New Mexico Prison Transport Vehicle",
+   "desc": "The inmate, Rebecca Taylor, 26, took control of the S.U.V. in a Whataburger parking lot as she was being returned to prison from a prenatal appointment, the authorities said.",
+   "url": "https://www.nytimes.com/2026/11/26/us/pregnant-inmate-escapes-new-mexico.html",
+   "at": "2026-11-27T00:23:58+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
+   "desc": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms.",
+   "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
+   "at": "2026-11-27T00:22:29+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/26: CBS Evening News",
+   "desc": "Dangerous storms battering the East and West; coast-to-coast storms disrupt travel for millions.",
+   "url": "https://www.cbsnews.com/video/112626-cbs-evening-news/",
+   "at": "2026-11-26T23:30:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Bipartisan Desire to Regulate A.I. Faces Obstacles in Congress",
+   "desc": "Members of both parties say they want to tackle artificial intelligence policy, but the slow pace of legislating and turf battles could stand in the way.",
+   "url": "https://www.nytimes.com/2026/11/26/us/politics/ai-regulation-congress-nvidia.html",
+   "at": "2026-11-26T23:19:08+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Rocker the coonhound nabs Best in Show at 2026 National Dog Show",
+   "desc": "The black and tan coonhound defeated six other outstanding dogs to claim the 2026 National Dog Show's top honor.",
+   "url": "https://www.cbsnews.com/news/2026-national-dog-show-winner-rocker-coonhound/",
+   "at": "2026-11-26T22:53:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Thanksgiving Is Back on the Menu for Francesca Hong, the Failed Wisconsin Governor Candidate",
+   "desc": "Francesca Hong, who took heat over a social media post condemning the holiday during her run for the Democratic nomination, now has regrets — and is laughing it all off.",
+   "url": "https://www.nytimes.com/2026/11/26/us/politics/thanksgiving-wisconsin-governor-francesca-hong.html",
+   "at": "2026-11-26T21:15:36+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Trump demands probe into ‘record setting error’ after third-quarter GDP data gets massive revision higher",
@@ -53,17 +221,17 @@
   },
   {
    "source": "CBS News",
-   "title": "Texas band raises $350,000 to stay for Macy's Thanksgiving parade",
-   "desc": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-   "at": "2026-11-26T17:42:30+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Food banks see influx of families ahead of Thanksgiving",
    "desc": "Across the U.S., volunteers have noticed more families than usual seeking food assistance as people struggle with higher grocery costs.",
    "url": "https://www.cbsnews.com/news/thanksgiving-food-bank-demand-meal-costs/",
    "at": "2026-11-26T17:19:34+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Nvidia chip buyers told to rule out Chinese renters to purchase GPUs, sources say",
+   "desc": "A new BIS rule was intended to close \"loopholes,\" U.S. Trade Representative Jamieson Greer told CNBC's \"Squawk Box\" on Wednesday.",
+   "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html",
+   "at": "2026-11-26T17:04:54+00:00"
   },
   {
    "source": "New York Times",
@@ -74,10 +242,10 @@
   },
   {
    "source": "CBS News",
-   "title": "ICE detains man in Mass. after he picks up lottery winnings",
+   "title": "ICE detains man after he picked up $1 million lottery winnings",
    "desc": "The Massachusetts State Lottery posted on social media last week a photo of Ariel Velasquez-Morales, who won $1 million from a scratch-off ticket purchased in Boston.",
    "url": "https://www.cbsnews.com/news/ice-arrest-lottery-winnings-massachusetts/",
-   "at": "2026-11-26T16:45:56+00:00"
+   "at": "2026-11-26T16:45:00+00:00"
   },
   {
    "source": "CNBC",
@@ -85,13 +253,6 @@
    "desc": "Trump and NATO chief Mark Rutte urged Russia to avoid actions that could expand the war and called for a rapid peaceful resolution.",
    "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
    "at": "2026-11-26T16:12:47+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Iowa Awaits All-Clear as Tests for Lead Continue",
-   "desc": "It will take some time for officials to examine the air, water and soil samples for contamination.",
-   "url": "https://www.nytimes.com/2026/11/25/us/iowa-detonation-lead-what-next.html",
-   "at": "2026-11-26T16:12:15+00:00"
   },
   {
    "source": "CNBC",
@@ -213,13 +374,6 @@
    "at": "2026-11-26T12:24:29+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
-   "desc": "Investors appeared to have shrugged off a fresh set of tariffs unveiled by the White House on Wednesday, targeting more than a dozen major trading partners.",
-   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
-   "at": "2026-11-26T12:22:25+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "We’re Investigating a $300 Million Mystery",
    "desc": "A $300 million mystery donation could help pay for Washington projects that matter to President Trump. Our investigative reporter David Fahrenthold looks at questions about its source and purpose.",
@@ -239,20 +393,6 @@
    "desc": "Swiss regulator FINMA said UBS can execute its preferred crisis-resolution strategy, even as the bank faces a separate parliamentary fight over tougher capital requirements.",
    "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
    "at": "2026-11-26T11:17:39+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "What's open and closed today on Thanksgiving Day 2026?",
-   "desc": "A handful of grocery stores will welcome customers on Thanksgiving this year, while most retailers will be closed. Here's what to know.",
-   "url": "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/",
-   "at": "2026-11-26T11:00:21+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Bipartisan Desire to Regulate A.I. Faces Obstacles in Congress",
-   "desc": "Members of both parties say they want to tackle artificial intelligence policy, but the slow pace of legislating and turf battles could stand in the way.",
-   "url": "https://www.nytimes.com/2026/11/26/us/politics/ai-regulation-congress-nvidia.html",
-   "at": "2026-11-26T10:03:47+00:00"
   },
   {
    "source": "New York Times",
@@ -351,195 +491,6 @@
    "desc": "Taylor revealed his battle with Stage 4 metastatic prostate cancer in 2022. He was the guitarist of the 1980s English band Duran Duran, whose pop hits included \"Hungry Like the Wolf\" and \"Rio\".",
    "url": "https://www.npr.org/2026/11/26/g-s1-155934/andy-taylor-duran-duran-obit",
    "at": "2026-11-26T06:34:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
-   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
-   "at": "2026-11-26T05:58:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "North Korea's Kim calls for nuclear arsenal expansion, says status 'will never change'",
-   "desc": "Kim Jong Un called for wider use of tactical nuclear weapons and an expanded arsenal, rejecting international denuclearization pressure.",
-   "url": "https://www.cnbc.com/2026/11/26/north-korea-kim-nuclear-weapons-expansion.html",
-   "at": "2026-11-26T05:50:34+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "How Trump’s latest tariff moves hand India an edge over rival Asian exporters",
-   "desc": "Proposed tariffs of 18% on Bangladesh, Cambodia, Thailand, and 20% on China and Vietnam, subject to their respective trade deals, offer India a competitive advantage.",
-   "url": "https://www.cnbc.com/2026/11/26/trump-us-tariff-india-trade.html",
-   "at": "2026-11-26T04:12:18+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Judge blocks FCC early-renewal process for Disney-owned ABC stations, for now",
-   "desc": "A judge has blocked the FCC's early license renewal process for Disney-owned ABC stations in 'important victory for the First Amendment'",
-   "url": "https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html",
-   "at": "2026-11-26T04:00:15+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Border Barrier Cannot be Removed for Decades, Texas Republicans and D.O.J. Agree",
-   "desc": "Just before Democrats take over the state government, Trump administration and outgoing Republican officials in Texas ink legal settlement barring removal of wire for 30 years.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/texas-border-legal-settlement-trump.html",
-   "at": "2026-11-26T03:42:51+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Army detonates toxic explosives at Iowa plant despite concerns",
-   "desc": "The U.S. Army detonated a stockpile of degrading explosives at a munitions plant in Iowa on Wednesday, after days of back-and-forth between politicians and the courts.",
-   "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/",
-   "at": "2026-11-26T03:30:47+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
-   "desc": "S&P Global Ratings said Nvidia's credit rating could be cut by one notch as it flagged \"rising\" management and governance risk at the chipmaker.",
-   "url": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
-   "at": "2026-11-26T03:19:44+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-   "desc": "Denny's reaffirmed its longstanding ties with Jensen Huang following his return as Nvidia CEO, revealing that a plaque had been restored.",
-   "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-   "at": "2026-11-26T03:13:43+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "K-beauty stocks rally as Korean brands top Amazon bestseller lists globally ahead of Black Friday",
-   "desc": "South Korean beauty stocks rose as K-beauty brands dominated Amazon's skincare rankings ahead of Black Friday.",
-   "url": "https://www.cnbc.com/2026/11/26/k-beauty-firms-amazon-sales-black-friday.html",
-   "at": "2026-11-26T03:09:47+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Judge temporarily blocks FCC from reviewing ABC's licenses",
-   "desc": "A federal judge blocked the FCC from moving forward with an early review of ABC's broadcast licenses, a move the network argues is an attempt by the Trump administration to punish speech it does not like.",
-   "url": "https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/",
-   "at": "2026-11-26T03:00:27+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "A look at the probes involving Nvidia, Jensen Huang and Megaspeed",
-   "desc": "The reinstatement of Jensen Huang as president and CEO of Nvidia sent shockwaves through the political and business world, and has fueled scrutiny by Congress.",
-   "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-megaspeed-investigations/",
-   "at": "2026-11-26T02:07:43+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Trump Rejoiced in the Market’s Nvidia Surge. It Didn’t Last Long.",
-   "desc": "The retreat of the stock market in recent days shows how President Trump’s push to reinstall the company’s chief executive has collided with the realities of his other policies.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html",
-   "at": "2026-11-26T01:53:20+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Butterball Turkey hotline ramps up staffing, prepared to help with Thanksgiving cooking needs",
-   "desc": "Even in the world of email, texting and artificial intelligence, the Butterball Turkey hotline has only gotten more popular. The larger team is prepared to field about 100,000 calls this holiday season to help with any turkey troubles. Tony Dokoupil has the story.",
-   "url": "https://www.cbsnews.com/video/butterball-turkey-hotline-ramps-up-staffing-prepared-help-thanksgiving-cooking-needs/",
-   "at": "2026-11-26T01:20:34+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "As Thanksgiving meal costs rise, food donation lines get longer",
-   "desc": "At the home of the Dallas Cowboys, thousands of cars inched across the massive parking lot as volunteers filled truck beds with turkeys, potatoes, cabbage and carrots. The cost of a Thanksgiving meal is even more expensive this year, creating more demand from families in need. Jason Allen has more.",
-   "url": "https://www.cbsnews.com/video/thanksgiving-meal-costs-rise-food-donation-lines-get-longer/",
-   "at": "2026-11-26T01:11:16+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump blames volatile stock market on midterm election results",
-   "desc": "President Trump blamed the volatile stock market on the midterm election results that will put Democrats in control of Congress in January. Weijia Jiang has more.",
-   "url": "https://www.cbsnews.com/video/trump-blames-volatile-stock-market-midterm-election-results/",
-   "at": "2026-11-26T01:07:13+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Judge declines to issue long-term ban on tax-funded pro-Trump ads",
-   "desc": "A federal judge has sided against Democrats on the federal government's taxpayer-funded political ads, which critics say were illegal propaganda intended to promote President Trump.",
-   "url": "https://www.cbsnews.com/news/judge-declines-long-term-ban-pro-trump-ads/",
-   "at": "2026-11-26T01:07:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "EPA detects no lead in air shortly after toxic Iowa chemical detonation",
-   "desc": "The Army went through with blowing up five tons of an old bomb-making chemical at a plant in Iowa on Wednesday, hoping to control the potential for a cloud of lead dust. Ian Lee reports.",
-   "url": "https://www.cbsnews.com/video/epa-detects-no-lead-air-shortly-toxic-iowa-chemical-detonation/",
-   "at": "2026-11-26T01:03:14+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Steelers release Aaron Rodgers after tirade following benching",
-   "desc": "Quarterback Aaron Rodgers, a four-time NFL MVP, was benched by the Pittsburgh Steelers and then cut hours after an interview in which he accused head coach Mike McCarthy of sleeping through meetings. Mark Strassmann has more details.",
-   "url": "https://www.cbsnews.com/video/steelers-release-aaron-rodgers-tirade-following-benching/",
-   "at": "2026-11-26T01:01:09+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "King tides cause monster waves, flooding on California coastline",
-   "desc": "Tuesday night's full moon supercharged king tides in the West, causing flooding in several of California's coastal communities. Matt Gutman reports.",
-   "url": "https://www.cbsnews.com/video/king-tides-cause-monster-waves-flooding-california-coastline/",
-   "at": "2026-11-26T00:59:01+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Thanksgiving holiday travel chaos in full swing amid stormy weather",
-   "desc": "A \"passenger disturbance\" prompted a Chicago-bound flight to divert to Phoenix on Wednesday, federal officials said. Meanwhile, Thanksgiving travelers crowded airports and some raced against Mother Nature as a storm moves up the East Coast. Kris Van Cleave reports.",
-   "url": "https://www.cbsnews.com/video/thanksgiving-holiday-travel-chaos-full-swing-amid-stormy-weather/",
-   "at": "2026-11-26T00:57:05+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/25: CBS Evening News",
-   "desc": "Macy's Thanksgiving Day Parade is postponed until Saturday; Thanksgiving travelers rush to beat bad weather.",
-   "url": "https://www.cbsnews.com/video/112526-cbs-evening-news/",
-   "at": "2026-11-25T23:30:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "U.S.-based firms helping China access Nvidia's most advanced chips",
-   "desc": "It's not just Megaspeed. A CBS News investigation reveals that at least two California-based Nvidia customers have Chinese ownership — giving the U.S. adversary potential access to Nvidia's most advanced technology.",
-   "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
-   "at": "2026-11-25T23:10:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After Extraordinary Iowa Explosion, Officials and Scientists Assess Fallout Risks",
-   "desc": "Military and civilian authorities said the Army operation was a success. But testing will continue to make sure residents are safe from contamination.",
-   "url": "https://www.nytimes.com/2026/11/25/us/iowa-army-ammunition-blast.html",
-   "at": "2026-11-25T23:09:50+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
-   "desc": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
-   "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html",
-   "at": "2026-11-25T22:16:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/25: The Takeout with Major Garrett",
-   "desc": "Weather postpones Macy's Thanksgiving Day Parade; Trump introduces new tariffs on China, the EU and major trading partners.",
-   "url": "https://www.cbsnews.com/video/112526-the-takeout-with-major-garrett/",
-   "at": "2026-11-25T22:00:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "A Man in Denver Has Been Throwing Eggs at Waymo Vehicles",
-   "desc": "The man, who drove a Toyota Corolla from a fleet leased to Lyft drivers, used orange cones to trap the self-driving vehicles before pelting them with eggs, the police said. No charges have been filed.",
-   "url": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
-   "at": "2026-11-25T21:36:35+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "ICE Arrests Man in Boston Days After He Wins $1 Million Lottery Prize",
-   "desc": "Ariel Velasquez-Morales, a native of El Salvador, smiled in a picture with a giant check. The image led immigration agents to him, and he is set for deportation.",
-   "url": "https://www.nytimes.com/2026/11/25/us/ice-arrest-boston-lottery-winner.html",
-   "at": "2026-11-25T21:22:54+00:00"
   }
  ]
 }

@@ -1,20 +1,139 @@
 {
  "code": "ES",
- "asOf": "2026-11-27T11:17:34+00:00",
+ "asOf": "2026-11-27T13:17:34+00:00",
  "items": [
   {
+   "source": "El Mundo",
+   "title": "Tribunales",
+   "desc": "Declara en la Audiencia Nacional que agentes marroquíes a su cargo crearon perfiles de Facebook para impulsar el asalto masivo Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b097a1c21efa0f4398b458d.html",
+   "at": "2026-11-27T13:13:14+00:00"
+  },
+  {
    "source": "El País",
-   "title": "Feijóo planta a TVE en el último momento: no dará entrevista al ente público",
-   "desc": "El PP denuncia ante la Junta Electoral Central la “falta de neutralidad informativa de RTVE”",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/feijoo-planta-a-tve-en-el-ultimo-momento-no-dara-entrevista-al-ente-publico.html",
-   "at": "2026-11-27T10:29:12+00:00"
+   "title": "Del “amiga, date cuenta” de Feijóo a la vestimenta de Colau: así se divirtieron las redes durante el debate a cuatro",
+   "desc": "Más de 10 millones de personas vieron el último enfrentamiento político de la campaña y muchos de ellos llenaron plataformas como X de memes",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/del-amiga-date-cuenta-de-feijoo-a-la-vestimenta-de-colau-asi-se-divirtieron-las-redes-durante-el-debate-a-cuatro.html",
+   "at": "2026-11-27T13:04:36+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Abascal, sobre la pregunta de Colau acerca de la violencia de género: “Me dio un asco infinito”",
+   "desc": "El líder de Vox hace balance del debate a cuatro y califica de “ofensa” que la candidata de Frente Amplio le preguntase si condena la violencia contra las mujeres",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/abascal-sobre-la-pregunta-de-colau-acerca-de-la-violencia-de-genero-me-dio-un-asco-infinito.html",
+   "at": "2026-11-27T12:59:56+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Inmigración",
+   "desc": "Otras seis personas que iban en la embarcación tuvieron que ser trasladadas en helicóptero al hospital Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b097b4ae85ece933c8b45bb.html",
+   "at": "2026-11-27T12:56:58+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Estas son las instrucciones que tienen las mesas sobre los votos de afectados por la ‘ley de nietos’",
+   "desc": "La Junta Electoral Central también fija un protocolo para votar con el DNI digital",
+   "url": "https://elpais.com/espana/2026-11-27/estas-son-las-instrucciones-que-tienen-las-mesas-sobre-los-votos-de-afectados-por-la-ley-de-nietos.html",
+   "at": "2026-11-27T12:50:16+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Alumnos del colegio Nazaret de San Blas, en Madrid, visitan la redacción de '20minutos': \"¿Cuál de todos los partidos es el mejor?\"",
+   "desc": "Tres grupos de estudiantes de 2.º de la ESO del colegio madrileño Nazaret, en el distrito de San Blas, han visitado durante el mes de noviembre la redacción de 20minutos",
+   "url": "https://www.20minutos.es/nacional/alumnos-colegio-nazaret-san-blas-madrid-visitan-20-minutos-que-partido-es-mejor_7066471_0.html",
+   "at": "2026-11-27T12:31:23+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La Junta Electoral Central avisa: las mesas no admitirán el DNI digital para votar si falla la verificación del código QR",
+   "desc": "El organismo establece un protocolo para resolver posibles incidencias y obliga a recurrir al DNI físico, pasaporte o carné de conducir si no se logra verificar la identidad del votante.",
+   "url": "https://www.20minutos.es/nacional/junta-electoral-central-avisa-las-mesas-no-admitiran-dni-digital-para-votar-si-falla-verificacion-codigo-qr_7066719_0.html",
+   "at": "2026-11-27T12:24:06+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Al menos seis muertos en el rescate de un cayuco en El Hierro",
+   "desc": "La embarcación fue rescatada en la madrugada, a unos 62 kilómetros de La Restinga y aún se desconoce el número exacto de fallecidos a bordo",
+   "url": "https://elpais.com/espana/2026-11-27/varios-muertos-en-el-rescate-de-un-cayuco-en-el-hierro.html",
+   "at": "2026-11-27T12:22:17+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "El PP denuncia ante la Junta Electoral Central \"irregularidades\" en el voto por correo a dos días de los comicios",
+   "desc": "El PP ha recibido denuncias de ciudadanos que han encontrado \"cientos de sobres\" de su propaganda electoral en contenedores de residuos.",
+   "url": "https://www.20minutos.es/nacional/pp-denuncia-ante-junta-electoral-central-irregularidades-voto-por-correo-dos-dias-los-comicios_7066717_0.html",
+   "at": "2026-11-27T12:08:10+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Sánchez \"aprendió la lección\" y Feijóo fue \"presidenciable\": los politólogos analizan las actuaciones de los 4 candidatos en el debate",
+   "desc": "Los analistas coinciden en que, si el debate provoca algún trasvase de voto, será dentro de los bloques izquierda-derecha y no entre ellos.",
+   "url": "https://www.20minutos.es/nacional/sanchez-aprendio-leccion-feijoo-fue-presidenciable-los-politologos-analizan-las-actuaciones-los-4-candidatos-debate_7066590_0.html",
+   "at": "2026-11-27T11:55:47+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Sucesos",
+   "desc": "Por el asesinato de su mujer, el tribunal le condena a 27 años de prisión; mientras que se ha decretado dos prisiones permanentes revisables por los asesinatos de sus dos hijos de ocho y tres años Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b096c80e4d4d82d528b45b6.html",
+   "at": "2026-11-27T11:46:36+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Tres asesinadas en una semana por sus parejas elevan a 50 las mujeres muertas por violencia machista este año",
+   "desc": "Otra semana negra más que ha coincidido con la conmemoración del Día Internacional contra la Violencia contra las mujeres.",
+   "url": "https://www.20minutos.es/nacional/tres-asesinadas-una-semana-por-sus-parejas-elevan-50-las-mujeres-muertas-por-violencia-machista-este-ano_7066633_0.html",
+   "at": "2026-11-27T11:41:07+00:00"
   },
   {
    "source": "El País",
    "title": "Sánchez confía en revalidar el Gobierno progresista sin depender de Junts y Feijóo insiste en que los socios del PSOE han estado “calladitos y calladitas”",
-   "desc": "El candidato socialista pide una mayoría de izquierdas para tomar medidas sobre vivienda y el líder popular reitera la construcción de un millón de casas para resolver la crisis",
+   "desc": "El candidato socialista pide una mayoría de izquierdas para avanzar en medidas sobre vivienda y el líder popular reitera la construcción de un millón de casas",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/sanchez-confia-en-revalidar-el-gobierno-progresista-sin-depender-de-junts-y-feijoo-insiste-en-que-los-socios-del-psoe-han-estado-calladitos-y-calladitas.html",
-   "at": "2026-11-27T10:04:40+00:00"
+   "at": "2026-11-27T11:23:39+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "La Junta Electoral ordena consignar como \"no escrutables\" los votos de los 'nietos' con el derecho de sufragio suspendido",
+   "desc": "En una circular publicada este viernes, la JEC explica que la documentación \"deberá conservarse junto con el resto por si se presentan recursos\".",
+   "url": "https://www.20minutos.es/nacional/junta-electoral-ordena-consignar-como-no-escrutables-los-votos-los-nietos-con-derecho-sufragio-suspendido_7066670_0.html",
+   "at": "2026-11-27T11:22:55+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "¡Cuidado con VOX! Trae piel de cordero",
+   "desc": "jams",
+   "url": "https://www.20minutos.es/nacional/blogs/se-nos-vio-el-plumero/cuidado-con-vox-trae-piel-cordero_7066627_0.html",
+   "at": "2026-11-27T11:22:03+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Sucesos",
+   "desc": "Tras el suceso, eEl Equipo Territorial de Policía Judicial de la Guardia Civil de Ponferrada ha detenido a un varón como presunto autor de un delito de homicidio imprudente Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b0924a9fc6c83d45e8b456d.html",
+   "at": "2026-11-27T11:16:58+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Dónde hizo la mili Pedro Sánchez: así fue su paso por el Centro de Instrucción de Reclutas (CIR) de Cáceres",
+   "desc": "El líder socialista inició su paso por la mili en 1996 en la instrucción en Cáceres antes de ser destinado al Servicio Geográfico del Ejército, en Madrid.",
+   "url": "https://www.20minutos.es/nacional/donde-hizo-mili-pedro-sanchez-asi-fue-su-paso-por-centro-instruccion-reclutas-cir-caceres_7066635_0.html",
+   "at": "2026-11-27T11:14:38+00:00"
+  },
+  {
+   "source": "20minutos",
+   "title": "Así puedes asistir al recuento de votos en cualquier colegio electoral y fotografiar el acta en las elecciones del 29-N",
+   "desc": "La Ley Orgánica del Régimen Electoral General (LOREG) establece que el escrutinio es público y solo puede suspenderse por causas de fuerza mayor.",
+   "url": "https://www.20minutos.es/nacional/asi-puedes-asistir-recuento-votos-cualquier-colegio-electoral-fotografiar-acta-las-elecciones-29-n_7066646_0.html",
+   "at": "2026-11-27T11:13:04+00:00"
+  },
+  {
+   "source": "El País",
+   "title": "Feijóo planta a Silvia Intxaurrondo y no dará entrevistas a TVE",
+   "desc": "El PP denuncia ante la Junta Electoral Central la “falta de neutralidad informativa de RTVE”",
+   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/feijoo-planta-a-tve-en-el-ultimo-momento-no-dara-entrevista-al-ente-publico.html",
+   "at": "2026-11-27T10:29:12+00:00"
   },
   {
    "source": "20minutos",
@@ -25,7 +144,7 @@
   },
   {
    "source": "El País",
-   "title": "Ayuso llama “ofendidita” a Colau y le acusa de estar “calladita” mientras “arruinaba Barcelona”",
+   "title": "Ayuso llama “ofendidita” a Colau y la acusa de estar “calladita” mientras “arruinaba Barcelona”",
    "desc": "La presidenta cree que la gestión de la exalcaldesa ha traído a Madrid “lo mejor” de la ciudad condal",
    "url": "https://elpais.com/espana/madrid/2026-11-27/ayuso-llama-ofendidita-a-colau-y-le-acusa-de-estar-calladita-mientras-arruinaba-barcelona.html",
    "at": "2026-11-27T09:36:28+00:00"
@@ -73,45 +192,10 @@
    "at": "2026-11-27T08:13:03+00:00"
   },
   {
-   "source": "El Mundo",
-   "title": "Sucesos",
-   "desc": "Tras el suceso, eEl Equipo Territorial de Policía Judicial de la Guardia Civil de Ponferrada ha detenido a un varón como presunto autor de un delito de homicidio imprudente Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/27/6b0924a9fc6c83d45e8b456d.html",
-   "at": "2026-11-27T06:35:26+00:00"
-  },
-  {
    "source": "El País",
    "title": "El gran búnker de las redes del PSOE: “No usamos la IA; para eso están los cortes reales de Feijóo y Abascal”",
    "desc": "La Moncloa y Ferraz cuentan con una productora inglesa que ha trabajado con Barack Obama. El presidente ha pasado de 2,6 millones de seguidores en 2023 a 8,2 millones en esta campaña",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/el-gran-bunker-de-las-redes-del-psoe-no-usamos-la-ia-para-eso-estan-los-cortes-reales-de-feijoo-y-abascal.html",
-   "at": "2026-11-27T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "La derecha incluye a policías y guardias civiles en sus listas para atraer el voto de 160.000 agentes",
-   "desc": "El PP, Vox y el partido de Alvise pugnan por un electorado que las encuestas ya sitúan claramente escorado hacia ellos",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/la-derecha-incluye-a-policias-y-guardias-civiles-en-sus-listas-para-atraer-el-voto-de-160000-agentes.html",
-   "at": "2026-11-27T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Euskadi será la comunidad donde la alianza entre PP y Vox obtendrá sus peores resultados, según los sondeos",
-   "desc": "LUIS TEJIDO (EFE) El PNV huye de los bloques, se conjura frente a Vox y mira de reojo el auge de Bildu Carteles electorales del PNV y Eh Bildu para las elecciones del 29-N. Carteles electorales del PNV y Eh Bildu para las elecciones del 29-N.",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/euskadi-sera-la-comunidad-donde-la-alianza-entre-pp-y-vox-obtendra-sus-peores-resultados-segun-los-sondeos.html",
-   "at": "2026-11-27T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Es el poder adquisitivo, estúpido",
-   "desc": "La evolución de los salarios y el coste de la vida marca todas las elecciones occidentales (y las españolas) desde la Gran Crisis",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/es-el-poder-adquisitivo-estupido.html",
-   "at": "2026-11-27T04:30:01+00:00"
-  },
-  {
-   "source": "El País",
-   "title": "Ignatius Farray: “Uno no se mete en política para permanecer fiel a sus principios”",
-   "desc": "“Nos pusimos tan solemnes con lo ‘woke’ que vino la derecha, muy cuca, y dijo: ‘Hostia, ¿la risa no la quieren? Pues para mí’”, dice el cómico canario en conversación con EL PAÍS",
-   "url": "https://elpais.com/espana/elecciones-generales/2026-11-27/ignatius-farray-uno-no-se-mete-en-politica-para-permanecer-fiel-a-sus-principios.html",
    "at": "2026-11-27T04:30:01+00:00"
   },
   {
@@ -157,17 +241,10 @@
    "at": "2026-11-27T04:00:00+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Detenido el presunto autor del disparo mortal a un joven de 35 años durante una cacería en la localidad leonesa de Tombrío de Abajo",
-   "desc": "La investigación de la Guardia Civil continúa abierta a la espera de que se conozcan los resultados de la autopsia.",
-   "url": "https://www.20minutos.es/nacional/muere-un-hombre-35-anos-por-un-accidente-caza-localidad-leonesa-tombrio-abajo_7066481_0.html",
-   "at": "2026-11-27T03:25:56+00:00"
-  },
-  {
    "source": "El Mundo",
-   "title": "El votante crucial (4)",
-   "desc": "Más de un millón de españoles que votaron al PP en 2023 ahora dicen que apoyarán a Vox. La paradoja es que la mayoría no quiere a Abascal en Moncloa, sino un contrapeso que evite tentaciones centristas. Su modelo es el Aznar de la mayoría absoluta. \"No necesitamos un ‘pepito grillo’ que nos recuerde la necesidad de reformas\", replican desde Génova Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/27/6b05d3ffe9cf4a97348b45aa.html",
+   "title": "Entrevista",
+   "desc": "Musulmán de casi 27 años es el candidato al Senado por Frente Amplio y el PSOE, la única apuesta de la izquierda con alguna posibilidad electoral este 29-N en la ciudad autónoma Leer",
+   "url": "https://www.elmundo.es/espana/2026/11/27/6b04123de9cf4a964e8b4584.html",
    "at": "2026-11-27T02:00:35+00:00"
   },
   {
@@ -176,6 +253,13 @@
    "desc": "El jefe de Gabinete del ex delegado del Gobierno, Gonzalo Sanz, describe a la juez la inacción del Gobierno de Sánchez Leer",
    "url": "https://www.elmundo.es/espana/2026/11/27/6b08975821efa07a2e8b4572.html",
    "at": "2026-11-27T01:42:50+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "El hartazgo político, la crisis ganadera y la falta de relevo generacional tensan un pulso electoral donde la formación de Abascal gana fuerza entre el sector rural Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/27/6b0884dffdddffb9248b4589.html",
+   "at": "2026-11-27T01:42:47+00:00"
   },
   {
    "source": "El Mundo",
@@ -221,13 +305,6 @@
   },
   {
    "source": "20minutos",
-   "title": "Feijóo asegura que dimitirá si no gobierna tras las elecciones y Sánchez evita pronunciarse al respecto",
-   "desc": "El presidente, Pedro Sánchez, ha urgido este jueves a los líderes del PP y Vox, Alberto Núñez Feijóo y Santiago Abascal, a reconocer los resultados de las elecciones del 29 de noviembre.",
-   "url": "https://www.20minutos.es/nacional/feijoo-asegura-que-dimitira-si-no-gana-las-elecciones-sanchez-evita-pronunciarse_7066476_0.html",
-   "at": "2026-11-26T23:31:52+00:00"
-  },
-  {
-   "source": "20minutos",
    "title": "El minuto de oro de Sánchez, Abascal, Colau y Feijóo: así ha sido su último mensaje a los ciudadanos en el debate final de campaña",
    "desc": "Estos han sido sus discursos finales antes la cámara en la Academia de Televisión, la entidad que ha organizado el debate a cuatro.",
    "url": "https://www.20minutos.es/nacional/minuto-oro-sanchez-abascal-colau-feijoo-asi-ha-sido-su-ultimo-mensaje-los-ciudadanos-antes-29-n_7066477_0.html",
@@ -239,6 +316,13 @@
    "desc": "Siete expertos opinan sobre el último debate electoral entre los candidatos del PP, PSOE, Vox y la candidata de Frente Amplio",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/quien-ha-ganado-el-debate-los-analistas-de-el-pais-se-decantan-por-ada-colau.html",
    "at": "2026-11-26T23:26:46+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Se ve forzado a aclarar su plan por la polémica de su propuesta de recorte del gasto público, pero esquiva condenar la violencia de género. Con la izquierda en contra, descalifica a Sánchez y omite a Feijóo Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/27/6b08bc53fc6c83441e8b45a2.html",
+   "at": "2026-11-26T23:25:49+00:00"
   },
   {
    "source": "El País",
@@ -253,6 +337,13 @@
    "desc": "El líder de Vox se niega a condenar la violencia de género porque “yo no voy a hablar de lo que la señora Colau y el señor Sánchez quieren que hable”",
    "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/abascal-espana-ha-llegado-a-un-punto-de-colapso-aqui-no-cabe-nadie-mas.html",
    "at": "2026-11-26T23:17:00+00:00"
+  },
+  {
+   "source": "El Mundo",
+   "title": "Elecciones generales 2026",
+   "desc": "Cambia su puesta en escena y frente a asuntos incómodos como los trenes o la corrupción desgasta a Feijóo con la negativa de Abascal a condenar la violencia machista. Lo usa para pedir el voto femenino Leer",
+   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/27/6b08bbfffdddffd0068b45a3.html",
+   "at": "2026-11-26T23:13:09+00:00"
   },
   {
    "source": "El Mundo",
@@ -290,20 +381,6 @@
    "at": "2026-11-26T23:10:07+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "Feijóo vuelve a cuestionar a Sánchez sobre sus primarias: \"No se ponga a bailar ni a escribir una carta de amor, explíquelas\"",
-   "desc": "El presidente del Gobierno ha respondido que el dinero para la financiación de los comicios internos procedía de \"los militantes\".",
-   "url": "https://www.20minutos.es/nacional/feijoo-vuelve-cuestionar-sanchez-sobre-sus-primarias-no-se-ponga-bailar-ni-escribir-una-carta-amor-expliquelas_7066401_0.html",
-   "at": "2026-11-26T23:04:53+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Feijóo reprocha a Colau que estuvo \"calladita\" con Paiporta y acusa a Sánchez de manipular su expresión al tildarla de machismo",
-   "desc": "El líder del PP ha criticado este jueves la gestión del Gobierno central en la DANA, que dejó 230 víctimas mortales en Valencia.",
-   "url": "https://www.20minutos.es/nacional/feijoo-reprocha-colau-que-estuvo-calladita-con-paiporta-acusa-sanchez-manipular-su-expresion-tildarla-machismo_7066475_0.html",
-   "at": "2026-11-26T23:00:39+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "El primer cruce",
    "desc": "Me decepcionó comprobar que Pedro Sánchez no llevaba un chaleco y Santiago Abascal no venía a caballo. Todo parecía demasiado normal, si es que",
@@ -325,60 +402,11 @@
    "at": "2026-11-26T22:17:00+00:00"
   },
   {
-   "source": "20minutos",
-   "title": "\"Buitres\", \"Peugeot de guarros\", \"Cuentas y cuentos\", \"Robin Hood\"... las frases más destacadas que deja el debate a cuatro del 29N",
-   "desc": "Han confrontado sus propuestas en un encuentro, en ocasiones áspero, en una batalla dialéctica organizada por la Academia de Televisión.",
-   "url": "https://www.20minutos.es/nacional/buitres-peugeot-guarros-cuentas-cuentos-robin-hood-las-frases-mas-destacadas-que-deja-debate-cuatro-29n_7066470_0.html",
-   "at": "2026-11-26T22:13:14+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Abascal y Colau protagonizan un momento de tensión en el debate al hablar de vivienda y los fondos: \"Buitre, el que tengo aquí al lado\"",
-   "desc": "El rifirrafe a tres bandas se ha producido durante el bloque de vivienda en el debate electoral a cuatro, organizado por la Academia de Televisión.",
-   "url": "https://www.20minutos.es/nacional/abascal-colau-protagonizan-un-momento-tension-debate-hablar-vivienda-los-fondos-buitre-que-tengo-aqui-lado_7066467_0.html",
-   "at": "2026-11-26T22:02:28+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Abascal, único candidato que no sigue a Colau y no condena la violencia machista en el debate a cuatro",
-   "desc": "La líder de Frente Amplio ha arrancado su intervención con la cifra de mujeres asesinadas por violencia de género en lo que va de año, que asciende a 49 feminicidios, y ha pedido al resto de candidatos que condenen este hecho.",
-   "url": "https://www.20minutos.es/nacional/abascal-unico-candidato-que-no-sigue-colau-no-condena-violencia-machista-debate-cuatro_7066454_0.html",
-   "at": "2026-11-26T21:27:46+00:00"
-  },
-  {
    "source": "El Mundo",
    "title": "Elecciones generales 2026",
    "desc": "Portavoz de vivienda de Vox, es uno de los perfiles con mayor protagonismo del partido. Dice que la inmigración \"no es una necesidad\" y pide el voto para que las políticas de Sánchez \"no sigan\" Leer",
    "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/26/6b08761be4d4d8261e8b459b.html",
    "at": "2026-11-26T21:03:34+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Irene Montero, durante el debate a cuatro del 29-N en el que Podemos no está presente: \"¡¿Por qué no le contesta nadie?!\"",
-   "desc": "\"Hoy habrá un debate en la que solamente habrá dos opciones: la derecha y el Gobierno\", ha dicho Montero en un mitin de campaña celebrado en Avilés.",
-   "url": "https://www.20minutos.es/nacional/irene-montero-sobre-debate-cuatro-no-estara-toda-gente-que-va-huelga-las-manifestaciones-que-quiere-cambio-real_7066448_0.html",
-   "at": "2026-11-26T20:46:41+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "El mensaje escondido en la corbata que lleva Pedro Sánchez en el debate a cuatro",
-   "desc": "La prenda es un regalo del director general de la Organización Mundial de la Salud (OMS).",
-   "url": "https://www.20minutos.es/nacional/mensaje-escondido-corbata-con-que-pedro-sanchez-llega-debate-cuatro_7066446_0.html",
-   "at": "2026-11-26T20:44:27+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Sánchez cambia de 'look' tras su comentado traje en el cara a cara y Feijóo mantiene su estilo para el debate a cuatro",
-   "desc": "El líder socialista ha sustituido su viral traje marrón por uno azul, mientras que el candidato del PP solo ha variado el color de su corbata.",
-   "url": "https://www.20minutos.es/nacional/sanchez-cambia-look-tras-su-comentado-traje-cara-cara-feijoo-mantiene-su-estilo-para-debate-cuatro_7066444_0.html",
-   "at": "2026-11-26T20:24:08+00:00"
-  },
-  {
-   "source": "20minutos",
-   "title": "Gritos contra Colau e insultos a Sánchez: así ha sido la llegada de los cuatro candidatos al último gran debate antes del 29N",
-   "desc": "El debate a cuatro llega una semana después del cara a cara que protagonizaron Pedro Sánchez y Alberto Núñez Feijóo. Ambos dirigentes vuelven a encontrarse frente a frente, aunque esta vez acompañados por Santiago Abascal y Ada Colau.",
-   "url": "https://www.20minutos.es/nacional/gritos-contra-colau-insultos-sanchez-asi-ha-sido-llegada-los-cuatro-candidatos-ultimo-gran-debate-antes-29n_7066427_0.html",
-   "at": "2026-11-26T20:00:01+00:00"
   },
   {
    "source": "El Mundo",
@@ -389,8 +417,8 @@
   },
   {
    "source": "20minutos",
-   "title": "Debate electoral 29-N, en directo | El PP denuncia ante la JEC la \"falta de neutralidad\" de RTVE por la \"omisión\" del \"acoso\" a sus candidatos",
-   "desc": "Sánchez, Colau y Montero cierran la campaña en Madrid, mientras Feijóo lo hace en Sevilla y Abascal, en Valencia.",
+   "title": "Elecciones generales 2026, en directo | Correos emite más de un millón de votos, un 8,8 % más que en las elecciones de 2019",
+   "desc": "Sánchez, Colau y Montero cierran este viernes la campaña en Madrid, mientras Feijóo lo hace en Sevilla y Abascal, en Valencia.",
    "url": "https://www.20minutos.es/nacional/debate-cuatro-directo-ultima-hora-cara-cara-entre-pedro-sanchez-alberto-nunez-feijoo-santiago-abascal-ada-colau_7066328_6.html",
    "at": "2026-11-26T18:55:42+00:00"
   },
@@ -421,34 +449,6 @@
    "desc": "Soledad Iparraguirre pedía mantener la semilibertad que le había otorgado la Junta de Tratamiento del Centro Penitenciario de Guipúzcoa Leer",
    "url": "https://www.elmundo.es/espana/2026/11/26/6b083291fc6c837c068b4585.html",
    "at": "2026-11-26T13:36:26+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "España|ELECCIONES 29-N",
-   "desc": "A pocos días de la gran final de las elecciones, FUTURE MAKERS cita al joven político en una cancha de futbito. \"Como madridista, creo en las remontadas y pronostico una victoria de Sánchez\" Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/26/6b06dc28fc6c83cb3b8b459c.html",
-   "at": "2026-11-26T13:14:05+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Elecciones 29-N",
-   "desc": "En Ferraz dejaron en sus manos la decisión de participar: \"Siempre va a ser un valor para este partido, es un magnífico político\" Leer",
-   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/26/6b081d28fdddffa1368b457e.html",
-   "at": "2026-11-26T13:10:12+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Tribunales",
-   "desc": "La instructora, amenazada por las cloacas de Ferraz, ha visto reducida su protección policial. Leer",
-   "url": "https://www.elmundo.es/espana/2026/11/26/6b082497fc6c83625b8b457d.html",
-   "at": "2026-11-26T12:31:54+00:00"
-  },
-  {
-   "source": "El Mundo",
-   "title": "Comunidad Valenciana",
-   "desc": "PSOE y Compromís recriminan al presidente Llorca que siga \"protegiendo\" a Carlos Mazón Leer",
-   "url": "https://www.elmundo.es/comunidad-valenciana/2026/11/26/6b07ff7de85ece933c8b4579.html",
-   "at": "2026-11-26T11:36:06+00:00"
   }
  ]
 }

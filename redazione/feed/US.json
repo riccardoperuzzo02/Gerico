@@ -1,7 +1,63 @@
 {
  "code": "US",
- "asOf": "2026-11-27T11:17:34+00:00",
+ "asOf": "2026-11-27T13:17:34+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "Rheinmetall reins in growth ambitions as Europe's rearmament boom hits hurdles",
+   "desc": "The German arms maker vows a \"more prudent approch\" to forecast sales of tanks and ammunition.",
+   "url": "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html",
+   "at": "2026-11-27T13:08:07+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Spain’s election could pull Madrid closer to Trump’s Washington",
+   "desc": "Spanish voters head to the polls on Sunday for a snap election that could bring socialist Prime Minister Pedro Sánchez's eight years in power to an end.",
+   "url": "https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html",
+   "at": "2026-11-27T13:00:42+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Thanksgiving Storm Leaves Half a Million Without Power on the East Coast",
+   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were expected to gradually improve on Friday.",
+   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
+   "at": "2026-11-27T12:48:46+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+   "desc": "The November selloff has so far pushed the S&P 500 into a correction. History shows that a correction doesn't always lead to a bear market, or a recession.",
+   "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+   "at": "2026-11-27T12:47:08+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "The Tech Download: Will Jensen Huang’s return be the spark the shaky AI market needs?",
+   "desc": "AI stocks have fallen in recent times as investors question the sustainability of the AI boom.",
+   "url": "https://www.cnbc.com/2026/11/27/tech-download-jensen-huang-ai-market.html",
+   "at": "2026-11-27T12:00:22+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
+   "desc": "A powerful storm knocked out power for nearly 1 million customers and flooded streets. And, experts predict inflation will not dampen American spending for the holidays",
+   "url": "https://www.npr.org/2026/11/27/g-s1-156004/up-first-newsletter-thanksgiving-storm-black-friday-shopping-asylum-supreme-court",
+   "at": "2026-11-27T11:59:02+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
+   "desc": "The case has become one of the most prominent in France's reckoning with sexual violence, as the #MeToo movement has faced resistance in the country, particularly in the arts.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
+   "at": "2026-11-27T11:49:50+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
+   "desc": "SAP is reportedly considering cutting 10,000 jobs as it reshapes its software business around AI.",
+   "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+   "at": "2026-11-27T11:49:18+00:00"
+  },
   {
    "source": "CBS News",
    "title": "Here's how GLP-1 drugs are changing people's shopping habits",
@@ -17,25 +73,11 @@
    "at": "2026-11-27T11:00:12+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
-   "desc": "Even as consumers face macroeconomic headwinds, retailers are expecting robust holiday spending through Black Friday and beyond.",
-   "url": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
-   "at": "2026-11-27T11:00:01+00:00"
-  },
-  {
    "source": "NPR",
    "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
-   "desc": "(Image credit: Yuki Iwamura)",
+   "desc": "A storm battered much of the country on Thursday, knocking out power to thousands of homes and disrupting travel. Today, Black Friday shopping deals kick off, and on Saturday New York City will hold the postponed Macy's Thanksgiving Day Parade.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
    "at": "2026-11-27T10:59:36+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Thanksgiving Storm Leaves Half a Million Without Power on the East Coast",
-   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were expected to gradually improve on Friday.",
-   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
-   "at": "2026-11-27T10:31:04+00:00"
   },
   {
    "source": "CNBC",
@@ -43,13 +85,6 @@
    "desc": "SpaceX shares jumped in premarket trading after Elon Musk said on X that he would donate shares to American children every year.",
    "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
    "at": "2026-11-27T10:20:39+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Defense giant Rheinmetall embraces ‘new normal’ of caution after military contract setback; stock rises",
-   "desc": "The German arms maker vows a \"more prudent approch\" to forecast sales of tanks and ammunition.",
-   "url": "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html",
-   "at": "2026-11-27T10:11:09+00:00"
   },
   {
    "source": "New York Times",
@@ -67,9 +102,9 @@
   },
   {
    "source": "NPR",
-   "title": "12 strategies to cut your risk of dementia. Take this quiz to start",
-   "desc": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
+   "title": "Screen free tweens try their hand at Dungeons & Dragons",
+   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -81,9 +116,9 @@
   },
   {
    "source": "NPR",
-   "title": "Screen free tweens try their hand at Dungeons & Dragons",
-   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
+   "title": "12 strategies to cut your risk of dementia. Take this quiz to start",
+   "desc": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -106,13 +141,6 @@
    "desc": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus.",
    "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
    "at": "2026-11-27T08:05:09+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Tech German software major SAP is reportedly weighing cutting at least 10,000 jobs in AI push",
-   "desc": "SAP is weighing cuts of at least 10,000 jobs as it reshapes its software business around AI, Bloomberg reported.",
-   "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-   "at": "2026-11-27T07:15:44+00:00"
   },
   {
    "source": "CNBC",
@@ -430,13 +458,6 @@
    "at": "2026-11-26T13:51:00+00:00"
   },
   {
-   "source": "NPR",
-   "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
-   "desc": "As the fast-moving outbreak continues to spread in eastern Congo, fighting between rebels and the army is disrupting efforts to contain the spread of the disease.",
-   "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
-   "at": "2026-11-26T13:47:09+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "The story behind this Eagles player's special Thanksgiving cleats",
    "desc": "For Philadelphia Eagles cornerback Jonathan Jones, the team's slogan has a personal meaning that extends beyond the football field.",
@@ -451,53 +472,11 @@
    "at": "2026-11-26T13:34:51+00:00"
   },
   {
-   "source": "NPR",
-   "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-   "desc": "Leader Kim Jong Un reportedly visited facilities that produce nuclear ingredients and called for building more nuclear weapons to cope with threats from the U.S. and South Korea.",
-   "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
-   "at": "2026-11-26T13:31:28+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "No lead detected in Iowa air after Army's detonation, EPA says",
    "desc": "No lead has been detected in the air near the Army's controlled blast site in Iowa, where they detonated nearly five tons of lead explosives on Wednesday, according to the Environmental Protection Agency. Some locals remain concerned. Ian Lee reports.",
    "url": "https://www.cbsnews.com/video/no-lead-detected-in-iowa-air-after-armys-detonation-epa-says/",
    "at": "2026-11-26T13:24:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Planes, trains and automobiles: The best ways to beat travel fatigue—so you can come home feeling rested and fulfilled",
-   "desc": "Visiting loved ones for the holidays? Here's how to manage the travel fatigue, from a travel expert and a sleep medicine specialist.",
-   "url": "https://www.cnbc.com/make-it/2026/11/26/travel-fatigue-holiday-tips.html",
-   "at": "2026-11-26T13:00:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
-   "desc": "The U.S. planned a fresh tariff salvo on 14 trading partners, while offering some countries lower rates if they secure trade deals with Washington.",
-   "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
-   "at": "2026-11-26T12:46:55+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "We’re Investigating a $300 Million Mystery",
-   "desc": "A $300 million mystery donation could help pay for Washington projects that matter to President Trump. Our investigative reporter David Fahrenthold looks at questions about its source and purpose.",
-   "url": "https://www.nytimes.com/video/us/100000011287370/were-investigating-a-300-million-mystery.html",
-   "at": "2026-11-26T12:08:50+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "How a Thanksgiving Tradition Connects to Presidential Powers",
-   "desc": "As President Trump pardons turkeys for Thanksgiving, our chief White House correspondent Peter Baker takes a look back at the history of the tradition and the presidential power of the pardon.",
-   "url": "https://www.nytimes.com/video/us/politics/100000011304420/trump-president-turkey-pardon-thanksgiving.html",
-   "at": "2026-11-26T12:08:22+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Switzerland’s biggest bank set for showdown with lawmakers as capital fight intensifies amid crisis planning",
-   "desc": "Swiss regulator FINMA said UBS can execute its preferred crisis-resolution strategy, even as the bank faces a separate parliamentary fight over tougher capital requirements.",
-   "url": "https://www.cnbc.com/2026/11/26/ubs-swiss-capital-rules-finma-crisis-plan.html",
-   "at": "2026-11-26T11:17:39+00:00"
   }
  ]
 }

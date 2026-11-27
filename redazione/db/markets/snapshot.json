@@ -1,7 +1,7 @@
 {
- "asOf": "2026-11-27T07:24:30+01:00",
- "label": "Chiusure di ieri e Asia stamattina",
- "summary": "Giovedì le Borse europee hanno chiuso in forte rialzo, con Wall Street chiusa per il Ringraziamento. Piazza Affari è stata la migliore con +2,36% e lo spread Btp-Bund è sceso a 107 punti. Stamattina Tokyo e Hong Kong salgono.",
+ "asOf": "2026-11-27T19:31:50+01:00",
+ "label": "Chiusura delle Borse europee",
+ "summary": "Venerdì le Borse europee hanno chiuso in rialzo, in una seduta a volumi ridotti dopo il Ringraziamento. Piazza Affari è stata la migliore con +1,89%, spinta da banche e difesa, e lo spread Btp-Bund è sceso a 104 punti.",
  "classes": [
   {
    "key": "indici",
@@ -33,33 +33,33 @@
     },
     {
      "name": "Ftse Mib",
-     "chg": 2.36,
-     "value": "48.362",
-     "note": "Chiusura di giovedì 26 novembre",
-     "why": "Salgono Stellantis (+8,82%) e Prysmian (+6,57%); scambi sottili con Wall Street chiusa.",
+     "chg": 1.89,
+     "value": "49.276",
+     "note": "Chiusura di venerdì 27 novembre",
+     "why": "Guidano le banche e la difesa; UniCredit +4,27%, Fincantieri +5,72%.",
      "story": ""
     },
     {
      "name": "Dax",
-     "chg": 2.08,
-     "value": "25.215",
-     "note": "Chiusura di giovedì 26 novembre",
+     "chg": 0.9,
+     "value": "25.441",
+     "note": "Chiusura di venerdì 27 novembre",
      "why": "",
      "story": ""
     },
     {
      "name": "Cac 40",
-     "chg": 1.61,
-     "value": "8.108",
-     "note": "Chiusura di giovedì 26 novembre",
+     "chg": 0.58,
+     "value": "n.d.",
+     "note": "Chiusura di venerdì 27 novembre",
      "why": "",
      "story": ""
     },
     {
      "name": "Ftse 100",
-     "chg": 1.75,
-     "value": "10.609",
-     "note": "Chiusura di giovedì 26 novembre",
+     "chg": 0.84,
+     "value": "10.699",
+     "note": "Chiusura di venerdì 27 novembre",
      "why": "",
      "story": ""
     },
@@ -111,9 +111,9 @@
    "items": [
     {
      "name": "Spread Btp-Bund",
-     "value": "107 punti",
-     "note": "Chiusura di giovedì 26 novembre",
-     "why": "Mercoledì aveva chiuso a 111,9 punti.",
+     "value": "104 punti",
+     "note": "Chiusura di venerdì 27 novembre",
+     "why": "Giovedì aveva chiuso a 107 punti. Il Btp a 10 anni rende il 4,30%.",
      "story": ""
     }
    ],
@@ -161,6 +161,10 @@
   }
  ],
  "sources": [
+  {
+   "name": "Teleborsa, Piazza Affari maglia rosa d'Europa grazie a Banche e Difesa (27 novembre)",
+   "url": "https://www.teleborsa.it/News/2026/11/27/piazza-affari-maglia-rosa-d-europa-grazie-a-banche-e-difesa-197.html"
+  },
   {
    "name": "ANSA, Borsa: Europa brillante in chiusura, Parigi +1,61%, Londra +1,75% (26 novembre)",
    "url": "https://www.ansa.it/sito/notizie/economia/2026/11/26/borsa-europa-brillante-in-chiusura-parigi-161-londra-175_ac5f6dee-46c8-4874-aef0-0f0d7a3da2a8.html"

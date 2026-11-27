@@ -1,20 +1,97 @@
 {
  "code": "DE",
- "asOf": "2026-11-27T15:17:33+00:00",
+ "asOf": "2026-11-27T17:17:33+00:00",
  "items": [
   {
    "source": "Die Zeit",
-   "title": "Haushalt 2027: Bundestag beschließt Haushalt für 2027",
-   "desc": "Im nächsten Jahr will der Bund so viel Geld ausgeben wie nie zuvor – finanziert durch Schulden. Eine große Rolle spielen Verteidigung und Sozialausgaben.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundestag-beschliesst-haushalt-fuer-2027",
-   "at": "2026-11-27T15:01:08+00:00"
+   "title": "Geschlechtergerechte Sprache: Grüne kritisieren Wadephuls Vorgehen gegen Gendersonderzeichen",
+   "desc": "Im Auswärtigen Amt wird offenbar auch mithilfe von KI nach Gendersternchen gesucht. Die Grünen bemängeln den Aufwand, mit dem das Verbot durchgesetzt wird.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/gender-sonderzeichen-auswaertiges-amt-verbot-johann-wadephul-gxe",
+   "at": "2026-11-27T17:01:30+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rente: Was sich bei der Rente ändern soll",
+   "desc": "Arbeitsminister Schweitzer hat einen Gesetzentwurf zur Reform der Rente vorgelegt. Ist das der ersehnte Kompromiss? Die wichtigsten Punkte",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-gesetzesentwurf-arbeitsministerium-cdu-faq",
+   "at": "2026-11-27T16:54:37+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "EU-Gipfel: Der EU-Gipfel endet ohne Einigung. Wie geht es weiter? (Update)",
+   "desc": "Einen Tag früher als geplant wurde der EU-Sondergipfel ohne Haushaltseinigung beendet. Warum sind die Positionen so festgefahren? Und: Bundeshaushalt 2027 beschlossen",
+   "url": "https://www.zeit.de/politik/2026-11/eu-gipfel-ende-haushalt-einigung-nachrichtenpodcast",
+   "at": "2026-11-27T16:37:49+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Das plant Arbeitsminister Schweitzer für die Rente",
+   "desc": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
+   "at": "2026-11-27T16:30:51+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bundeswehr: Generalleutnant Heico Hübner wird neuer Inspekteur des Heeres",
+   "desc": "Heico Hübner folgt auf Christian Freuding als Heeresinspekteur der Bundeswehr. Hübner sei ein hervorragender Nachfolger, sagte Verteidigungsminister Boris Pistorius.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/heico-huebner-inspekteur-des-heeres-bundeswehr-boris-pistorius-gxe",
+   "at": "2026-11-27T16:28:46+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "News des Tages: Haushalt, SAP, Johann Wadephul, gendern",
+   "desc": "Deutschlands Haushalt für 2027 ist beschlossene Sache. Der Softwarekonzern SAP hat Sicherheitsprobleme. Und Außenminister Wadephul kämpft gegen Gendersternchen. Das ist die Lage am Freitagabend.",
+   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-haushalt-sap-johann-wadephul-gendern-a-54e239f7-8c45-4797-97f5-6bc162a1b8b8",
+   "at": "2026-11-27T16:24:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Ukraine bietet Russland Waffenruhe im Schwarzen Meer an",
+   "desc": "Die Ukraine will mit einer Waffenruhe Lebensmittelexporte im Schwarzen Meer ermöglichen. Eine Antwort Russlands auf den Vorschlag stehe noch aus. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-27T16:19:34+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Grüne und Linke fordern wegen Flug Transparenz von Merz",
+   "desc": "Friedrich Merz könnte mit dem Flugzeug eines Unternehmers aus seinem Wahlkreis zu Parteiterminen geflogen sein. Die Linke will Aufklärung, ein Grüner spricht von einer »unglaublichen Geschmacklosigkeit«.",
+   "url": "https://www.spiegel.de/politik/deutschland/gruene-und-linke-fordern-wegen-flug-transparenz-von-merz-a-1ed0603a-a6b1-4dad-85c9-7d505a740195",
+   "at": "2026-11-27T16:16:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Beschlüsse im Bundestag - Stromsteuer sinkt, Zuckersteuer kommt",
+   "desc": "Der Bundestag hat die Senkung der Stromsteuer für ein Jahr und eine Zuckersteuer bei Getränken beschlossen. Außerdem steigt die Abgabe auf hochprozentigen Alkohol. Auch Alkopops könnten teurer werden.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/beschluss-zuckersteuer-stromsteuer-100.html",
+   "at": "2026-11-27T16:09:18+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Sven Giegold: Ein grüner General?",
+   "desc": "Zum ersten Mal in ihrer Geschichte wählen die Grünen einen Generalsekretär. Was der einstige Attac-Aktivist Sven Giegold mit der Partei vorhat.",
+   "url": "https://www.zeit.de/2026/51/sven-giegold-generalsekretaer-gruene-organisationskommunikation",
+   "at": "2026-11-27T15:28:49+00:00"
   },
   {
    "source": "Die Zeit",
    "title": "Rente mit 63: Arbeitsminister Schweitzer legt Entwurf zu Rentenreform vor",
    "desc": "Alexander Schweitzer will die Rente mit 63 in »modifizierter Form« erhalten. Einig sind sich Union und SPD weiter nicht.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/arbeitsminister-schweitzer-legt-entwurf-zu-rentenreform-vor",
-   "at": "2026-11-27T15:00:13+00:00"
+   "at": "2026-11-27T15:24:57+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Rente: Arbeitsminister Alexander Schweitzer legt Gesetzentwurf zur Rentenreform vor",
+   "desc": "Gibt es einen Kompromiss im Rentenstreit? Der Arbeitsminister prescht mit einem Gesetzentwurf vor. Dieser sei jedoch, sagt das Kanzleramt, noch im Stadium der »Frühkoordinierung«.",
+   "url": "https://www.spiegel.de/politik/deutschland/rente-arbeitsminister-alexander-schweitzer-legt-gesetzentwurf-zur-rentenreform-vor-a-78332671-b923-4dc6-addc-399722e6d309",
+   "at": "2026-11-27T15:18:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Haushalt 2027: Bundestag beschließt Haushalt für 2027",
+   "desc": "Im nächsten Jahr will der Bund so viel Geld ausgeben wie nie zuvor – finanziert durch Schulden. Eine große Rolle spielen Verteidigung und Sozialausgaben.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bundestag-beschliesst-haushalt-fuer-2027",
+   "at": "2026-11-27T15:01:08+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -50,13 +127,6 @@
    "desc": "Die Festnahme des Ex-BND-Chefs Hanning hatte im Oktober international Schlagzeilen produziert. Nun steht fest, dass der 80-Jährige vorerst in Haft bleibt. Gegen Hanning wird unter anderem wegen Spionageverdachts ermittelt.",
    "url": "https://www.tagesschau.de/inland/bnd-hanning-untersuchungshaft-spionageverdacht-100.html",
    "at": "2026-11-27T14:10:01+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Das plant Arbeitsminister Schweitzer für die Rente",
-   "desc": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html",
-   "at": "2026-11-27T14:00:01+00:00"
   },
   {
    "source": "Tagesschau",
@@ -130,13 +200,6 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Frau bei ukrainischen Drohnenangriffen auf St. Petersburg verletzt",
-   "desc": "Bei ukrainischen Angriffen auf die zweitgrößte russische Stadt wird eine Frau verletzt. Russland verlängert seine Exportbeschränkungen für Kerosin bis März. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-27T10:26:07+00:00"
-  },
-  {
-   "source": "Die Zeit",
    "title": "Hybride Kriegsführung: Russland verstärkt offenbar Sabotageaktivitäten in Europa",
    "desc": "Einer Studie zufolge ist die Zahl der Russland zugeschriebenen Sabotageakte binnen eines Jahres um 16 Prozent gestiegen. Besonders im Visier stehen Deutschland und Polen.",
    "url": "https://www.zeit.de/politik/2026-11/russland-sabotageakte-europa-iiss-bericht-gxe",
@@ -169,41 +232,6 @@
    "desc": "Im ZDF-»Politbarometer« lehnen 69 Prozent der Befragten die Abschaffung der abschlagsfreien Rente nach 45 Beitragsjahren ab. Nur FDP-Anhänger sind mehrheitlich dafür.",
    "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-abschaffung-umfrage-zdf-politbarometer-gxe",
    "at": "2026-11-27T08:06:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rente mit 63: Mehrheit der Deutschen gegen Abschaffung der sogenannten Rente mit 63",
-   "desc": "Im ZDF-»Politbarometer« lehnen 69 Prozent der Befragten die Abschaffung der abschlagsfreien Rente nach 45 Beitragsjahren ab. Nur FDP-Anhänger sind mehrheitlich dafür.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-mit-63-abschaffung-umfrage-zdf-politbarometer-gxe",
-   "at": "2026-11-27T08:06:37+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "EU-Haushaltsgipfel: Sie sitzen in Stuhlkreisen, und finden doch keine Lösung",
-   "desc": "Einen Tag früher als geplant durften die Regierungschefs aus Brüssel abreisen, ohne Einigung im Haushaltsstreit. Ratspräsident Costa glaubt dennoch an einen Kompromiss.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/eu-haushaltsgipfel-antonio-costa-friedrich-merz-emmanuel-macron",
-   "at": "2026-11-27T07:57:29+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wahlkampf in Frankreich: Antideutsch? Gehört im französischen Wahlkampf zum guten Ton",
-   "desc": "»Gegen wen wollt ihr mit dieser Armee Krieg führen?« Frankreichs linker Präsidentschaftskandidat Mélenchon stellt sich gegen Deutschland. Damit ist er nicht alleine.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wahlkampf-frankreich-antideutsch-jean-luc-melenchon-marine-le-pen-5vor8",
-   "at": "2026-11-27T06:57:42+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "BSW-Bundesparteitag: BSW-Streit über Verhältnis zur AfD spitzt sich zu",
-   "desc": "Vor dem BSW-Bundesparteitag warnt Sahra Wagenknecht angesichts des Streits über das AfD-Verhältnis vor einer Spaltung. Mitgründer Klaus Ernst droht mit Parteiaustritt.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-bundesparteitag-dresden-sahra-wagenknecht-afd-klaus-ernst-gxe",
-   "at": "2026-11-27T06:25:51+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Parlamentswahl: Regierungsbündnis in Neuseeland verliert Mehrheit",
-   "desc": "Wochen nach dem knappen Wahlausgang in Neuseeland steht das Endergebnis fest. Demnach hat keine Partei eine Mehrheit erzielt. Die Regierungsbildung könnte Monate dauern.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wahl-neuseeland-ergebnis-regierung-verliert-mehrheit-qiulae-wong-opportunity-party",
-   "at": "2026-11-27T05:11:11+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -246,20 +274,6 @@
    "desc": "Wegen ihrer Qualifikation und nicht weil sie eine Frau ist – das war Lydia Knaak wichtig zu betonen. Sie wird Chefin eines wichtigen Marinestützpunkts. Ein Vorbild möchte sie aber doch sein.",
    "url": "https://www.spiegel.de/politik/deutschland/lydia-knaak-eckernfoerde-erste-frau-an-der-spitze-eines-marinestuetzpunkts-a-65a5e5af-40b3-406b-a2e9-f7a077fc4e62",
    "at": "2026-11-26T18:13:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Rente: Die SPD muss sich fragen, ob sie diese Koalition überhaupt noch will – Meinung",
-   "desc": "Die Sozialdemokraten fühlen sich bei der Rente und der Reichensteuer nicht an ihr Wort gebunden. So kann man nicht regieren.",
-   "url": "https://www.spiegel.de/politik/deutschland/rentenstreit-die-spd-muss-sich-fragen-ob-sie-diese-koalition-ueberhaupt-noch-will-kommentar-a-2b52ea0b-7f74-45a3-bce0-500abba12907",
-   "at": "2026-11-26T16:32:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "News des Tages: Anschlagspläne auf Synagoge in Köln, die große Macht der Techmilliardäre, Diskussion über neue Vorschläge zur Rentenreform",
-   "desc": "Elon Musk darf Hunderttausende Satelliten für KI-Rechenzentren ins All schießen. Islamisten sollen Anschlag auf Kölner Synagoge geplant haben. Und der Rentenstreit in der Regierung geht doch nicht in den Ruhestand. Das ist die Lage am Donnerstagabend.",
-   "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-anschlagplaene-auf-synagoge-in-koeln-die-grosse-macht-der-techmilliardaere-diskussion-ueber-neue-vorschlaege-zur-rentenreform-a-71d88c8d-ac74-4b6f-a29e-3e1a5fd96dfb",
-   "at": "2026-11-26T16:32:00+00:00"
   }
  ]
 }

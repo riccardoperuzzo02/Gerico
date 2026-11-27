@@ -1,13 +1,34 @@
 {
  "code": "US",
- "asOf": "2026-11-27T19:17:33+00:00",
+ "asOf": "2026-11-27T21:17:39+00:00",
  "items": [
   {
+   "source": "New York Times",
+   "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
+   "desc": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
+   "url": "https://www.nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html",
+   "at": "2026-11-27T21:08:35+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
+   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were gradually improving on Friday.",
+   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
+   "at": "2026-11-27T20:37:00+00:00"
+  },
+  {
    "source": "CBS News",
-   "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
+   "title": "Powerful Thanksgiving storm causes flooding, power outages",
    "desc": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
    "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
-   "at": "2026-11-27T19:15:37+00:00"
+   "at": "2026-11-27T19:57:00+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies",
+   "desc": "Ms. Stewart-Cousins, the majority leader of the New York State Senate, at a leadership reception on Nov. 7, 2025.",
+   "url": "https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html",
+   "at": "2026-11-27T19:43:58+00:00"
   },
   {
    "source": "CBS News",
@@ -15,13 +36,6 @@
    "desc": "Rebecca Taylor, who was not restrained because of her pregnancy, slid into the front seat of the transport vehicle and drove away.",
    "url": "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
    "at": "2026-11-27T19:13:23+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies",
-   "desc": "Ms. Stewart-Cousins, 76, served in the state senate for 20 years.",
-   "url": "https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html",
-   "at": "2026-11-27T18:51:07+00:00"
   },
   {
    "source": "CNBC",
@@ -43,13 +57,6 @@
    "desc": "Budget carrier Norse Atlantic filed for bankruptcy Friday, saying it failed to secure funding after soaring fuel costs strained the company's operations.",
    "url": "https://www.cnbc.com/2026/11/27/norse-atlantic-bankruptcy-fuel-costs.html",
    "at": "2026-11-27T18:20:32+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
-   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were gradually improving on Friday.",
-   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
-   "at": "2026-11-27T17:57:11+00:00"
   },
   {
    "source": "CBS News",
@@ -99,20 +106,6 @@
    "desc": "The incoming Democratic majorities have begun targeting businesses and other outsiders in their planned inquiries, but the president has threatened to fire them if they comply without his permission.",
    "url": "https://www.nytimes.com/2026/11/27/us/politics/trump-congressional-investigations-contractors.html",
    "at": "2026-11-27T15:47:57+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
-   "desc": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
-   "url": "https://www.nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html",
-   "at": "2026-11-27T15:47:49+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Top 10 things to watch in the stock market on Black Friday",
-   "desc": "Stocks are on pace for a record Black Friday as Anthropic tries to regain its IPO price.",
-   "url": "https://www.cnbc.com/investingclub/2026/11/27/top-10-things-to-watch-in-the-stock-market-on-black-friday.html",
-   "at": "2026-11-27T15:08:31+00:00"
   },
   {
    "source": "CBS News",
@@ -273,7 +266,7 @@
    "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
    "desc": "They treated victims of one of Australia’s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they’re not Jewish.",
    "url": "https://www.nytimes.com/2026/11/27/us/australia-bondi-beach-shooting-wedding.html",
-   "at": "2026-11-27T10:02:55+00:00"
+   "at": "2026-11-27T10:02:56+00:00"
   },
   {
    "source": "NPR",
@@ -284,16 +277,16 @@
   },
   {
    "source": "NPR",
-   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
+   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
-   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -477,20 +470,6 @@
    "desc": "The black and tan coonhound defeated six other outstanding dogs to claim the 2026 National Dog Show's top honor.",
    "url": "https://www.cbsnews.com/news/2026-national-dog-show-winner-rocker-coonhound/",
    "at": "2026-11-26T22:53:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Thanksgiving Is Back on the Menu for Francesca Hong, the Failed Wisconsin Governor Candidate",
-   "desc": "Francesca Hong, who took heat over a social media post condemning the holiday during her run for the Democratic nomination, now has regrets — and is laughing it all off.",
-   "url": "https://www.nytimes.com/2026/11/26/us/politics/thanksgiving-wisconsin-governor-francesca-hong.html",
-   "at": "2026-11-26T21:15:36+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Strobe Talbott, Journalist Who Joined Clinton’s State Department, Has Died",
-   "desc": "He was a reporter and foreign affairs columnist at Time and then served as deputy secretary of state and president of the Brookings Institution. He was 80.",
-   "url": "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
-   "at": "2026-11-26T19:53:47+00:00"
   }
  ]
 }

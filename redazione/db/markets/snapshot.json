@@ -1,7 +1,7 @@
 {
- "asOf": "2026-11-26T18:46:27+01:00",
- "label": "Chiusura delle Borse europee",
- "summary": "Giovedì le Borse europee hanno chiuso in forte rialzo, con Wall Street chiusa per il Ringraziamento e scambi sottili. Piazza Affari è stata la migliore con +2,36%, trainata da Stellantis e Prysmian, e lo spread Btp-Bund è sceso a 107 punti.",
+ "asOf": "2026-11-27T07:24:30+01:00",
+ "label": "Chiusure di ieri e Asia stamattina",
+ "summary": "Giovedì le Borse europee hanno chiuso in forte rialzo, con Wall Street chiusa per il Ringraziamento. Piazza Affari è stata la migliore con +2,36% e lo spread Btp-Bund è sceso a 107 punti. Stamattina Tokyo e Hong Kong salgono.",
  "classes": [
   {
    "key": "indici",
@@ -65,17 +65,17 @@
     },
     {
      "name": "Nikkei 225",
-     "chg": 1.54,
+     "chg": 1.17,
      "value": "n.d.",
-     "note": "Seduta di giovedì 26 novembre alle 3:50 ora italiana, non una chiusura",
-     "why": "Rimbalzo dopo il crollo dei titoli dei chip di mercoledì.",
-     "story": "2026-11-26-us-borse-wall-street-recupera-tokyo-rimbalza"
+     "note": "Seduta di venerdì 27 novembre alle 3:50 ora italiana, non una chiusura",
+     "why": "L'apertura era a +0,39%, sostenuta dai titoli tecnologici.",
+     "story": ""
     },
     {
      "name": "Hang Seng",
-     "chg": 0.86,
+     "chg": 2.62,
      "value": "n.d.",
-     "note": "Seduta di giovedì 26 novembre alle 6:20 ora italiana, non una chiusura",
+     "note": "Seduta di venerdì 27 novembre alle 6:20 ora italiana, non una chiusura",
      "why": "",
      "story": ""
     }
@@ -134,7 +134,14 @@
      "value": "84 $",
      "note": "Giovedì 26 novembre, in lieve aumento; New York chiusa per il Ringraziamento",
      "why": "",
-     "story": "2026-11-26-ye-houthi-ras-tanura-riad"
+     "story": "2026-11-27-sa-houthi-jazan-raffineria"
+    },
+    {
+     "name": "Brent",
+     "value": "94,81 $",
+     "note": "Giovedì 26 novembre",
+     "why": "",
+     "story": ""
     },
     {
      "name": "Gas TTF",

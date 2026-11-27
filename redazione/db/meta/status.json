@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: fiducia Gfk, M3 e prestiti al settore privato non ancora riportati nelle fonti cercate. Il calendario non aveva altri eventi da aggiungere."
   },
   "lastPublish": {
-    "at": "2026-11-26T18:46:39+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (245 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-27T07:27:47+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (249 parole); titoli.py: nessun titolo nel database; cancellate 8 storie archiviate da più di 7 giorni; controlla: 5 cose da sistemare."
   },
-  "lastRun": "2026-11-26T13:20:42+01:00",
+  "lastRun": "2026-11-27T07:24:50+01:00",
   "marketsRun": {
     "at": "2026-11-26T18:46:27+01:00",
     "esito": "Aggiornati Ftse Mib (+2,36%), Dax (+2,08%, ma il sottotitolo ANSA dice +2,98%), Cac 40 (+1,61%), Ftse 100 (+1,75%), spread Btp-Bund (107), Wti (84 $), Stellantis e Prysmian. Aex, Smi, euro/dollaro, Brent e gas non trovati. Agenda lasciata com'era: nessun nuovo dato nelle pagine aperte."
@@ -21,8 +21,9 @@
     "Open",
     "Euronews",
     "Teleborsa",
-    "Milano Finanza",
-    "Il Sole 24 Ore"
+    "Kyiv Independent",
+    "Al Jazeera",
+    "Open"
   ],
   "paesiRun": {
     "at": "2026-11-26T09:50:34+01:00",
@@ -30,12 +31,12 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 8,
-    "at": "2026-11-26T13:20:42+01:00",
-    "factsChecked": 2,
-    "factsCorrected": 0,
-    "storiesArchived": 0,
-    "storiesNew": 2,
+    "articlesRead": 24,
+    "at": "2026-11-27T07:24:50+01:00",
+    "factsChecked": 4,
+    "factsCorrected": 2,
+    "storiesArchived": 9,
+    "storiesNew": 7,
     "storiesUpdated": 0
   },
   "riscrittura": {
@@ -43,5 +44,5 @@
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 25
+  "storiesLive": 19
 }

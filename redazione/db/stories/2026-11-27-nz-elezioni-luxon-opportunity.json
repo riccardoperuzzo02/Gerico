@@ -1,0 +1,35 @@
+{
+ "title": "Nuova Zelanda: il centrodestra di Luxon è a un seggio dalla maggioranza",
+ "section": "mondo",
+ "rank": 9,
+ "status": "live",
+ "summary": "Il conteggio definitivo del voto del 7 novembre dà alla coalizione di governo 65 seggi su 130. Luxon dovrà cercare l'appoggio del partito centrista Opportunity, con 7 seggi.",
+ "article": "La coalizione di centrodestra del primo ministro neozelandese Christopher Luxon ha ottenuto 65 seggi su 130 nel conteggio definitivo delle elezioni del 7 novembre, uno meno della maggioranza. Per governare dovrà trovare un accordo con Opportunity, un partito centrista di nuova formazione che ha 7 seggi.\n\nI voti speciali, circa 400.000, soprattutto di neozelandesi all'estero, hanno fatto perdere due seggi al Partito Nazionale di Luxon rispetto ai risultati provvisori. Il Partito Nazionale ha 40 seggi, Act 13 e New Zealand First 12. Il centrosinistra ha 58 seggi: Laburisti 36, Verdi 17, Te Pāti Māori 5. Il leader laburista Chris Hipkins ha riconosciuto che l'appoggio di Opportunity non basterebbe alla sinistra per governare.\n\nLa leader di Opportunity, Qiulae Wong, 38 anni, dice che il partito è disposto a trattare con entrambe le parti e che «tutte le possibilità restano aperte». Ha detto che non entrerà in un governo in cui Winston Peters, leader di New Zealand First, sia ministro degli Esteri. Tra le sue richieste ci sono una politica climatica più dura e lo stop alla pesca a strascico, che si scontrano con le posizioni di Act e New Zealand First.\n\nLuxon, che prima del voto aveva escluso accordi con Opportunity, dice di essere fiducioso e che «farlo bene conta molto più che farlo in fretta». Se non si trova un accordo, non si esclude un ritorno alle urne.",
+ "facts": [
+  {"text": "La coalizione di governo ha 65 seggi su 130, uno meno della maggioranza.", "who": ["Il Post", "Euronews", "Reuters"]},
+  {"text": "Opportunity ha 7 seggi e può decidere chi governa.", "who": ["Il Post", "Euronews"]},
+  {"text": "Il centrosinistra ha 58 seggi.", "who": ["Il Post", "Euronews"]}
+ ],
+ "view": "I numeri sono chiari: senza Opportunity nessun blocco governa. Non si sa se Luxon troverà un accordo, vista la distanza sulle politiche climatiche.\n\nLa trattativa può essere lunga. Da guardare: le richieste di Wong su clima e pesca e il ruolo di Peters.",
+ "open": [
+  "Opportunity darà un appoggio esterno o entrerà nel governo?",
+  "Si andrà a nuove elezioni se la trattativa fallisce?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/nuova-zelanda-elezioni-maggioranza/", "angle": "I seggi dei due blocchi e la disponibilità di Opportunity.", "date": "2026-11-27"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/27/new-zealand-election-newcomer-centrist-party-holds-the-key-as-luxon-scrambles-for-a-majori", "angle": "Il profilo di Opportunity e le sue condizioni.", "date": "2026-11-27"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/explainer-parties-to-negotiate-after-no-one-wins-majority-in-new-zealand-election", "angle": "Come funzionano i negoziati dopo il voto senza maggioranza.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-27T07:22:00+01:00",
+ "updated": "2026-11-27T07:22:00+01:00",
+ "change": "",
+ "tags": ["Nuova Zelanda", "Elezioni", "Oceania"],
+ "themes": [],
+ "places": ["NZ"],
+ "city": {"name": "Wellington", "lat": -41.29, "lon": 174.78},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-27T07:22:00+01:00", "text": "Prima notizia: il conteggio definitivo lascia il centrodestra a un seggio dalla maggioranza."}
+ ]
+}

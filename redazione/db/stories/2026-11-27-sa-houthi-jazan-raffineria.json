@@ -1,0 +1,35 @@
+{
+ "title": "Arabia Saudita: gli Houthi colpiscono la raffineria di Jazan, un operaio morto",
+ "section": "mondo",
+ "rank": 7,
+ "status": "live",
+ "summary": "Giovedì un attacco degli Houthi alla raffineria di Jazan ha ucciso un operaio e fermato in parte la produzione. Il giorno prima era stato colpito il terminal di Ras Tanura.",
+ "article": "Giovedì 26 novembre un attacco degli Houthi alla raffineria di Jazan, nel sud-ovest dell'Arabia Saudita, ha ucciso un operaio nepalese e ferito altre persone. Il ministero dell'Energia saudita dice che l'attacco ha causato un incendio e sospeso temporaneamente alcune attività dell'impianto.\n\nÈ il secondo attacco in due giorni a un impianto petrolifero saudita. Mercoledì gli Houthi avevano colpito la raffineria di Ras Tanura, sulla costa orientale, parte di un grande terminal di esportazione, che aveva sospeso le operazioni.\n\nGli Houthi, il movimento yemenita sostenuto dall'Iran, attaccano l'Arabia Saudita perché appoggia il governo yemenita nella guerra civile. Gli scontri sono ripresi a luglio dopo anni di relativa calma, e si sono intensificati da quando i ribelli sono avanzati verso lo stretto di Bab el-Mandeb, rotta chiave per il traffico marittimo internazionale.\n\nIl nuovo attacco arriva mentre il conflitto con l'Iran coinvolge anche il Kuwait. L'Arabia Saudita non ha indicato quando la raffineria tornerà a piena capacità.",
+ "facts": [
+  {"text": "L'attacco alla raffineria di Jazan ha ucciso un operaio nepalese e ne ha feriti altri.", "who": ["Ministero dell'Energia saudita"]},
+  {"text": "L'impianto ha avuto un incendio e alcune attività sono state sospese.", "who": ["Ministero dell'Energia saudita"]},
+  {"text": "Mercoledì gli Houthi avevano colpito anche la raffineria di Ras Tanura.", "who": ["Houthi"]}
+ ],
+ "view": "Si sa che l'impianto è stato colpito e che un operaio è morto. Non si sa quanto durerà lo stop alla produzione.\n\nGli attacchi in due giorni a due impianti sauditi mostrano una pressione crescente sulle infrastrutture energetiche del Golfo. Da guardare: la risposta saudita e l'effetto sui prezzi del petrolio.",
+ "open": [
+  "Quando la raffineria di Jazan tornerà a piena capacità?",
+  "Come risponderà l'Arabia Saudita?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/arabia-saudita-houthi-attacco-raffineria/", "angle": "Il quadro del conflitto Houthi-Arabia Saudita e il collegamento con Ras Tanura.", "date": "2026-11-27"},
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations", "angle": "La vittima e l'interruzione delle operazioni.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-27T07:22:00+01:00",
+ "updated": "2026-11-27T07:22:00+01:00",
+ "change": "",
+ "tags": ["Yemen", "Arabia Saudita", "Petrolio"],
+ "themes": ["iran-usa"],
+ "places": ["SA", "YE"],
+ "city": {"name": "Jazan", "lat": 16.89, "lon": 42.55},
+ "prev": "2026-11-26-ye-houthi-ras-tanura-riad",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-27T07:22:00+01:00", "text": "Prima notizia: gli Houthi colpiscono la raffineria di Jazan."}
+ ]
+}

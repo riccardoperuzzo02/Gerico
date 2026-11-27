@@ -1,86 +1,18 @@
 {
- "date": "2026-11-26",
- "asOf": "2026-11-26T15:41:07+01:00",
+ "date": "2026-11-27",
+ "asOf": "2026-11-27T07:24:30+01:00",
  "items": [
-  {
-   "time": "08:00",
-   "country": "Germania",
-   "currency": "EUR",
-   "event": "Fiducia dei consumatori Gfk",
-   "expected": "-29,4",
-   "previous": "-30,8",
-   "actual": "",
-   "impact": "basso"
-  },
-  {
-   "time": "10:00",
-   "country": "Area euro",
-   "currency": "EUR",
-   "event": "Massa monetaria M3, su base annua",
-   "expected": "3,5%",
-   "previous": "3,5%",
-   "actual": "",
-   "impact": "basso"
-  },
-  {
-   "time": "10:00",
-   "country": "Area euro",
-   "currency": "EUR",
-   "event": "Prestiti al settore privato, su base annua",
-   "expected": "3,2%",
-   "previous": "3,1%",
-   "actual": "",
-   "impact": "basso"
-  },
-  {
-   "time": "10:15",
-   "country": "Unione europea",
-   "currency": "EUR",
-   "event": "Vertice dei leader Ue: bilancio 2028-2034 e aiuti all'Ucraina",
-   "expected": "",
-   "previous": "",
-   "actual": "",
-   "impact": "medio"
-  },
-  {
-   "time": "11:30",
-   "country": "Regno Unito",
-   "currency": "GBP",
-   "event": "Rapporto sulla stabilità finanziaria della Bank of England",
-   "expected": "",
-   "previous": "",
-   "actual": "",
-   "impact": "medio"
-  },
-  {
-   "time": "13:30",
-   "country": "Area euro",
-   "currency": "EUR",
-   "event": "Verbali della riunione di politica monetaria della Bce",
-   "expected": "",
-   "previous": "",
-   "actual": "",
-   "impact": "alto"
-  },
-  {
-   "time": "",
-   "country": "Stati Uniti",
-   "currency": "USD",
-   "event": "Festa del Ringraziamento, mercati Usa chiusi",
-   "expected": "",
-   "previous": "",
-   "actual": "",
-   "impact": "basso"
-  }
- ],
+  {"time": "00:30", "country": "Giappone", "currency": "JPY", "event": "Inflazione core di Tokyo, su base annua", "expected": "3,0%", "previous": "2,6%", "actual": "", "impact": "medio"},
+  {"time": "08:45", "country": "Francia", "currency": "EUR", "event": "Pil del terzo trimestre, preliminare", "expected": "-0,1%", "previous": "-0,1%", "actual": "", "impact": "basso"},
+  {"time": "08:45", "country": "Francia", "currency": "EUR", "event": "Inflazione preliminare, su base mensile", "expected": "-0,2%", "previous": "0,4%", "actual": "", "impact": "basso"},
+  {"time": "08:45", "country": "Francia", "currency": "EUR", "event": "Spesa dei consumatori, su base mensile", "expected": "0,1%", "previous": "-0,5%", "actual": "", "impact": "basso"},
+  {"time": "09:00", "country": "Spagna", "currency": "EUR", "event": "Inflazione flash, su base annua", "expected": "4,7%", "previous": "4,9%", "actual": "", "impact": "basso"},
+  {"time": "09:55", "country": "Germania", "currency": "EUR", "event": "Variazione dei disoccupati", "expected": "5 mila", "previous": "4 mila", "actual": "", "impact": "basso"},
+  {"time": "11:33", "country": "Italia", "currency": "EUR", "event": "Asta del Btp a 10 anni", "expected": "", "previous": "4,49%", "actual": "", "impact": "basso"},
+  {"time": "13:40", "country": "Germania", "currency": "EUR", "event": "Intervento del presidente della Bundesbank Nagel", "expected": "", "previous": "", "actual": "", "impact": "basso"},
+  {"time": "14:30", "country": "Stati Uniti", "currency": "USD", "event": "Bilancia commerciale dei beni", "expected": "-135,9 mld", "previous": "-134,9 mld", "actual": "", "impact": "basso"},
+  {"time": "14:30", "country": "Stati Uniti", "currency": "USD", "event": "Scorte all'ingrosso, preliminare, su base mensile", "expected": "0,5%", "previous": "0,6%", "actual": "", "impact": "basso"} ],
  "sources": [
-  {
-   "name": "Forex Factory, calendario della settimana",
-   "url": "https://www.forexfactory.com/calendar"
-  },
-  {
-   "name": "Reuters, vertice Ue su bilancio e Ucraina (26 novembre)",
-   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/26/eu-leaders-to-wrestle-with-seven-year-budget-ukraine-financing-as-they-seek-december-deal"
-  }
+  {"name": "Forex Factory, calendario della settimana", "url": "https://www.forexfactory.com/calendar"}
  ]
 }

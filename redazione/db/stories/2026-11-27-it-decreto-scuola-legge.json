@@ -1,0 +1,33 @@
+{
+ "title": "Scuola: è legge il decreto, libri digitali a metà prezzo e stop ai veli",
+ "section": "italia",
+ "rank": 10,
+ "status": "live",
+ "summary": "Il decreto scuola è legge dopo il voto di fiducia alla Camera. La maggioranza è divisa sugli sconti ai libri digitali e vuole già correggere la norma.",
+ "article": "Il decreto scuola è diventato legge giovedì 26 novembre con l'approvazione della Camera, che ha votato la fiducia: il testo non poteva più essere modificato. La maggioranza si è divisa su alcune norme.\n\nUn emendamento introdotto al Senato obbliga gli editori a vendere in formato digitale i libri scolastici e universitari a metà del prezzo della versione cartacea, con la possibilità di stamparli. Fratelli d'Italia ha sostenuto la misura, che dice di aver pensato per il diritto allo studio. Forza Italia sostiene che le famiglie pagherebbero comunque stampa e rilegatura, e che il risparmio sarebbe minore del promesso.\n\nI deputati della maggioranza hanno approvato un ordine del giorno, non vincolante, che chiede al governo di ridurre la portata della norma: escludere la scuola primaria, dove i libri sono già gratuiti, e rinviare di un anno l'obbligo per superiori e università. Per le medie chiedono di attendere un confronto con editori, docenti, studenti e famiglie. Sempre giovedì il governo ha dato parere favorevole a un ordine del giorno di Fratelli d'Italia su un osservatorio per i contenuti dei testi scolastici ritenuti «non equilibrati»; i sindacati parlano di rischi per la libertà di insegnamento.\n\nIl decreto prevede anche un tetto del 30 per cento di studenti che non parlano bene l'italiano per classe, con molte deroghe. Vieta nelle attività scolastiche i veli che coprono il volto, come niqab e burqa. Gli istituti tecnici e professionali diventano «licei tecnologici» e «licei professionali».",
+ "facts": [
+  {"text": "La Camera ha approvato il decreto scuola con la fiducia e il testo è legge.", "who": ["Il Post"]},
+  {"text": "Gli editori dovranno vendere i libri digitali a metà del prezzo della versione cartacea.", "who": ["Il Post"]},
+  {"text": "Il governo ha dato parere favorevole a un ordine del giorno di Fratelli d'Italia su un osservatorio dei testi scolastici.", "who": ["Open"]}
+ ],
+ "view": "La legge è approvata, ma la maggioranza vuole già modificarne una parte. Non si sa quando e come verrà ridotta la norma sui libri digitali.\n\nDa guardare: i decreti attuativi e l'eventuale rinvio per superiori e università.",
+ "open": [
+  "Quando sarà corretta la norma sui libri digitali?",
+  "L'osservatorio sui testi scolastici sarà istituito?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/26/decreto-scuola-legge-libri-digitali-ebook/", "angle": "Le norme del decreto e le divisioni nella maggioranza.", "date": "2026-11-26"},
+  {"name": "Open", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.open.online/2026/11/26/scuola-libri-testo-odg-osservatorio-indipendente-polemiche/", "angle": "L'osservatorio sui testi scolastici e le critiche dei sindacati.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-27T07:22:00+01:00",
+ "updated": "2026-11-27T07:22:00+01:00",
+ "change": "",
+ "tags": ["Scuola", "Parlamento", "Italia"],
+ "themes": [],
+ "places": ["IT"],
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-27T07:22:00+01:00", "text": "Prima notizia: il decreto scuola è legge."}
+ ]
+}

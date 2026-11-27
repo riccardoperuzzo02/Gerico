@@ -1,0 +1,39 @@
+{
+ "title": "Ue: vertice sul bilancio senza accordo, Costa chiede l'intesa entro dicembre",
+ "photo": {"wiki": "en", "title": "Europa building"},
+ "section": "mondo",
+ "rank": 4,
+ "status": "live",
+ "summary": "Dopo 15 ore di vertice i leader non hanno trovato un'intesa sul bilancio 2028-2034. Il prestito da 45 miliardi all'Ucraina ha il sostegno di 24 paesi.",
+ "article": "Il vertice straordinario dei leader dell'Unione europea a Bruxelles si è chiuso nella notte tra giovedì e venerdì senza un accordo sul bilancio per il periodo 2028-2034. Il presidente del Consiglio europeo António Costa ha detto che «tutti devono collaborare» per arrivare a un'intesa entro fine anno.\n\nLa trattativa è durata circa 15 ore, in un clima teso. La prossima settimana Costa potrebbe presentare una nuova proposta, che i governi potrebbero esaminare al vertice del 17-18 dicembre. Il bilancio, circa 1.582 miliardi di euro, richiede l'unanimità dei 27 paesi. Il presidente francese Emmanuel Macron ha detto che dopo il 31 dicembre non sarà più in condizione, politicamente, di riaprire la discussione. Francia e Germania vogliono chiudere prima delle elezioni previste nel 2027.\n\nI paesi si dividono su più fronti. Sette paesi «frugali» chiedono più tagli alla spesa, e quattro di loro, tra cui Svezia, Belgio, Danimarca e Austria, hanno in parte disertato gli incontri riservati organizzati da Costa. I 17 paesi del gruppo degli «Amici della coesione» difendono i fondi per agricoltura e regioni più povere. La premier italiana Giorgia Meloni si è detta contraria alla ripartizione delle spese e al sistema delle risorse proprie. Danimarca, Ungheria e Italia hanno chiesto a Costa di non presentare conclusioni orali, perché poche delegazioni condividevano la sua lettura dei colloqui. Il premier ungherese Péter Magyar ha definito il vertice «inutile».\n\nSull'Ucraina, Costa ha detto che 24 paesi sostengono il prestito da 45 miliardi di euro per il 2027, da restituire solo se la Russia pagherà le riparazioni di guerra. Slovacchia, Repubblica Ceca e Ungheria sono nettamente contrarie, e la Bulgaria vuole partecipare solo alla parte non militare. La Germania ha fatto della partecipazione di tutti una condizione per un accordo più ampio.\n\nÈ sul tavolo anche un meccanismo automatico di finanziamento a Kiev, circa 100 miliardi in sette anni, voluto dal cancelliere tedesco Friedrich Merz e sostenuto da paesi nordici e baltici. L'Italia e i paesi del gruppo di Visegrad sono contrari: Meloni non contesta il sostegno a Kiev, ma l'idea che scatti in automatico.\n\nSullo sfondo ci sono le elezioni francesi del 2027: Marine Le Pen, in testa nei sondaggi, ha promesso di fermare gli aiuti all'Ucraina e di ridurre i contributi francesi al bilancio. Una data per la decisione sul prestito non è stata indicata.",
+ "facts": [
+  {"text": "Il vertice di 15 ore sul bilancio 2028-2034 non ha prodotto un accordo.", "who": ["ANSA", "Reuters"]},
+  {"text": "Il bilancio vale circa 1.582 miliardi di euro e richiede l'unanimità dei 27.", "who": ["Reuters"]},
+  {"text": "24 paesi sostengono il prestito da 45 miliardi di euro all'Ucraina per il 2027.", "who": ["Costa", "ANSA"]},
+  {"text": "Slovacchia, Repubblica Ceca e Ungheria si oppongono al prestito.", "who": ["ANSA", "Reuters"]},
+  {"text": "Costa potrebbe presentare una nuova proposta la prossima settimana; l'obiettivo è l'intesa entro fine anno.", "who": ["ANSA", "Reuters"]}
+ ],
+ "view": "Il vertice non ha chiuso nulla e la scadenza di fine anno resta quella indicata da Francia e Germania. Non si sa se il prestito all'Ucraina potrà procedere senza i paesi contrari.\n\nBilancio e aiuti a Kiev sono legati, e le divisioni tra frugali, paesi della coesione e Visegrad rendono l'unanimità difficile. Da guardare: la nuova proposta di Costa e il vertice del 17-18 dicembre.",
+ "open": [
+  "Il prestito da 45 miliardi potrà partire senza Ungheria, Slovacchia e Repubblica Ceca?",
+  "Quando sarà presentata la nuova proposta di Costa?",
+  "L'intesa slitterà al 2027?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/27/il-bilancio-spacca-leuropa-ma-costa-insiste-serve-unintesa-a-dicembre_8efd2071-60cc-4a6d-9da5-9029afc0c108.html", "angle": "Le posizioni dei leader, dei frugali e dei paesi della coesione.", "date": "2026-11-27"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/eu-leaders-to-wrestle-with-seven-year-budget-ukraine-financing-as-they-seek-december-deal", "angle": "Le cifre del bilancio e la scadenza di fine anno chiesta da Parigi e Berlino.", "date": "2026-11-27"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/26/eu-budget-and-ukraine-aid-headed-for-collision-at-turbulent-summit", "angle": "Il vertice come possibile scontro tra bilancio e aiuti a Kiev.", "date": "2026-11-26"}
+ ],
+ "firstSeen": "2026-11-27T07:22:00+01:00",
+ "updated": "2026-11-27T07:22:00+01:00",
+ "change": "",
+ "tags": ["Unione europea", "Bilancio Ue", "Ucraina"],
+ "themes": ["ucraina"],
+ "places": ["EU", "UA"],
+ "prev": "2026-11-26-eu-vertice-bilancio-ucraina-prestito",
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-27T07:22:00+01:00", "text": "Prima notizia: il vertice sul bilancio finisce senza accordo."}
+ ]
+}

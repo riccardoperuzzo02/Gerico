@@ -1,13 +1,55 @@
 {
  "code": "DE",
- "asOf": "2026-11-27T09:17:40+00:00",
+ "asOf": "2026-11-27T11:17:34+00:00",
  "items": [
+  {
+   "source": "Der Spiegel",
+   "title": "BSW: Parteitag in Dresden ringt um Kurs zur AfD-Zusammenarbeit",
+   "desc": "In Sachsen-Anhalt kooperiert das BSW mit der AfD – gedeckt von Gründerin Sahra Wagenknecht. Doch nicht allen passt der »Magdeburger Weg«. Ein Parteitag soll die Sache nun klären.",
+   "url": "https://www.spiegel.de/politik/deutschland/bsw-parteitag-in-dresden-ringt-um-kurs-zur-afd-zusammenarbeit-a-76fa5c12-4306-42ea-b5af-16dff89eeea4",
+   "at": "2026-11-27T11:10:00+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
+   "desc": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
+   "url": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
+   "at": "2026-11-27T11:09:55+00:00"
+  },
+  {
+   "source": "Tagesschau",
+   "title": "Streit um Rentenreform: Arbeitsminister Schweitzer optimistisch",
+   "desc": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde des Etat seines Ministeriums debattiert.",
+   "url": "https://www.tagesschau.de/inland/bundestag-haushalt-rentenreform-schweitzer-100.html",
+   "at": "2026-11-27T11:07:08+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Krieg gegen die Ukraine: Frau bei ukrainischen Drohnenangriffen auf St. Petersburg verletzt",
+   "desc": "Bei ukrainischen Angriffen auf die zweitgrößte russische Stadt wird eine Frau verletzt. Russland verlängert seine Exportbeschränkungen für Kerosin bis März. Das Liveblog",
+   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
+   "at": "2026-11-27T10:26:07+00:00"
+  },
   {
    "source": "Die Zeit",
    "title": "Hybride Kriegsführung: Russland verstärkt offenbar Sabotageaktivitäten in Europa",
    "desc": "Einer Studie zufolge ist die Zahl der Russland zugeschriebenen Sabotageakte binnen eines Jahres um 16 Prozent gestiegen. Besonders im Visier stehen Deutschland und Polen.",
    "url": "https://www.zeit.de/politik/2026-11/russland-sabotageakte-europa-iiss-bericht-gxe",
-   "at": "2026-11-27T09:08:23+00:00"
+   "at": "2026-11-27T09:59:15+00:00"
+  },
+  {
+   "source": "Der Spiegel",
+   "title": "Friedrich Merz: Das Schicksalsjahr des CDU-Kanzlers beginnt jetzt",
+   "desc": "Mit Not haben sich Union und SPD auf einen Haushalt verständigt – und dabei fast jedes Vertrauen zerstört. Dabei stehen ihnen die schwierigsten Aufgaben noch bevor.",
+   "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-das-schicksalsjahr-des-cdu-kanzlers-beginnt-jetzt-a-425929cf-a265-495d-8211-8c82318c8aa1",
+   "at": "2026-11-27T09:19:00+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Bildungskrise: Sind wir auf dem Weg in die Superdummheit?",
+   "desc": "Deutschland steckt in einer tiefen Bildungskrise. Was das mit Social Media und KI zu tun hat – und was geschehen müsste, um das Land wieder nach vorn zu bringen.",
+   "url": "https://www.zeit.de/politik/2026-11/bildungskrise-schule-ki-social-media-pisa-politikpodcast",
+   "at": "2026-11-27T09:14:45+00:00"
   },
   {
    "source": "Tagesschau",
@@ -66,25 +108,11 @@
    "at": "2026-11-27T05:05:06+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Bildungskrise: Sind wir auf dem Weg in die Superdummheit?",
-   "desc": "Deutschland steckt in einer tiefen Bildungskrise. Was das mit Social Media und KI zu tun hat – und was geschehen müsste, um das Land wieder nach vorn zu bringen.",
-   "url": "https://www.zeit.de/politik/2026-11/bildungskrise-schule-ki-social-media-pisa-politikpodcast",
-   "at": "2026-11-27T05:00:35+00:00"
-  },
-  {
    "source": "Der Spiegel",
    "title": "News: Bundestag stimmt über umstrittenen Haushalt 2027 ab, Black Friday, Tech-Bros",
    "desc": "Der Bundestag stimmt über den umstrittenen Etat für 2027 ab. Ein Vordenker der US-Demokraten will die Macht der Techmilliardäre brechen. Der Black Friday lockt Schnäppchenjäger – und alarmiert Gewerkschaften. Das ist die Lage am Freitagmorgen.",
    "url": "https://www.spiegel.de/politik/deutschland/news-bundestag-stimmt-ueber-umstrittenen-haushalt-2027-ab-black-friday-tech-bros-a-0b1477f8-87c0-41a9-a19e-58a8f241fb36",
    "at": "2026-11-27T04:44:00+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Krieg gegen die Ukraine: Ukraine verteidigt Angriffe auf russische Schiffe vor Libyen",
-   "desc": "Die Ukraine habe nicht die Absicht, den Krieg auf ein anderes Land auszuweiten, sagt Außenminister Sybiha. Russland verhaftet einen Luftwaffenkommandeur. Das Liveblog",
-   "url": "https://www.zeit.de/politik/ausland/ukraine-krieg-news-liveblog",
-   "at": "2026-11-27T04:26:41+00:00"
   },
   {
    "source": "Tagesschau",
@@ -130,24 +158,17 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "EU-Gipfel: Merz kündigt vorzeitiges Ende der Haushaltsberatungen an",
+   "title": "EU-Gipfel: Friedrich Merz kündigt vorzeitiges Ende der Haushaltsberatungen an",
    "desc": "Die Staats- und Regierungschefs der EU beenden ihre Beratungen über den künftigen Haushalt laut Kanzler Merz bereits am Donnerstag. Die Mitgliedstaaten liegen mit ihren Forderungen weiterhin auseinander.",
    "url": "https://www.spiegel.de/politik/deutschland/eu-gipfel-merz-kuendigt-vorzeitiges-ende-der-haushaltsberatungen-an-a-7a483887-37b0-474f-9aeb-59cc2f83db36",
    "at": "2026-11-26T21:28:00+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "Rente: Union überrumpelt SPD mit überraschendem Kompromissvorschlag",
+   "title": "Rente: CDU/CSU überrumpelt SPD mit überraschendem Kompromissvorschlag",
    "desc": "Der Kompromissvorschlag der Unionsfraktion bringt Bewegung in die festgefahrene Rentendebatte. Die SPD reagiert verschnupft.",
    "url": "https://www.spiegel.de/politik/deutschland/rente-union-ueberrumpelt-spd-mit-ueberraschendem-kompromissvorschlag-a-da8cd897-8042-462c-a892-98fbe6dce2ea",
    "at": "2026-11-26T20:02:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
-   "desc": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
-   "at": "2026-11-26T19:16:09+00:00"
   },
   {
    "source": "Der Spiegel",
@@ -158,7 +179,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Lydia Knaak – Eckernförde: Erste Frau an der Spitze eines Marinestützpunkts",
+   "title": "Eckernförde: Lydia Knaak wird erste Frau an der Spitze eines Marine-Stützpunkts",
    "desc": "Wegen ihrer Qualifikation und nicht weil sie eine Frau ist – das war Lydia Knaak wichtig zu betonen. Sie wird Chefin eines wichtigen Marinestützpunkts. Ein Vorbild möchte sie aber doch sein.",
    "url": "https://www.spiegel.de/politik/deutschland/lydia-knaak-eckernfoerde-erste-frau-an-der-spitze-eines-marinestuetzpunkts-a-65a5e5af-40b3-406b-a2e9-f7a077fc4e62",
    "at": "2026-11-26T18:13:00+00:00"
@@ -172,7 +193,7 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Rentenstreit: Die SPD muss sich fragen, ob sie diese Koalition überhaupt noch will – Kommentar",
+   "title": "Rente: Die SPD muss sich fragen, ob sie diese Koalition überhaupt noch will – Meinung",
    "desc": "Die Sozialdemokraten fühlen sich bei der Rente und der Reichensteuer nicht an ihr Wort gebunden. So kann man nicht regieren.",
    "url": "https://www.spiegel.de/politik/deutschland/rentenstreit-die-spd-muss-sich-fragen-ob-sie-diese-koalition-ueberhaupt-noch-will-kommentar-a-2b52ea0b-7f74-45a3-bce0-500abba12907",
    "at": "2026-11-26T16:32:00+00:00"
@@ -218,27 +239,6 @@
    "desc": "Eine Organisation unter Extremismusverdacht - das reicht nicht, um Mitgliedern waffenrechtliche Erlaubnisse zu entziehen. Das hat das Bundesverwaltungsgericht entschieden. Geklagt hatten AfD-Politiker. Bei einem \"Reichsbürger\" sieht es anders aus.",
    "url": "https://www.tagesschau.de/inland/innenpolitik/afd-waffen-urteil-100.html",
    "at": "2026-11-26T11:39:55+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "SPD reagiert verhalten auf CDU-Vorstoß zur Rente",
-   "desc": "Überzeugt der neue Vorschlag zur \"Rente mit 63\" aus der Union die SPD? Erste Reaktionen von den Sozialdemokraten deuten nicht auf eine Einigung hin. Die Union fordert dagegen, \"die ausgestreckte Hand zu ergreifen\".",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/rente-diskussion-104.html",
-   "at": "2026-11-26T10:41:10+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz lehnt Kompromissvorschlag zu EU-Finanzen ab",
-   "desc": "Die EU wird sich nicht über den nächsten mehrjährigen Finanzrahmen einig. Der Bundeskanzler lehnt neue Schulden auf EU-Ebene ab und fordert: keine Ausnahmen mehr bei den Ukrainehilfen.",
-   "url": "https://www.spiegel.de/politik/deutschland/bundeskanzler-friedrich-merz-lehnt-kompromissvorschlag-zu-eu-finanzen-ab-a-c0394446-807d-4b91-b85e-3edff947a318",
-   "at": "2026-11-26T10:31:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Terrorverdacht - zwei Iraker in Köln und Heidelberg festgenommen",
-   "desc": "Die Bundesanwaltschaft hat zwei Männer in Köln und Heidelberg festnehmen lassen. Sie sollen einer pro-iranischen Gruppe angehört und Anschläge geplant haben - möglicherweise auch einen auf eine Synagoge in Köln. Von H. Schmidt.",
-   "url": "https://www.tagesschau.de/inland/gesellschaft/terrorverdacht-festnahmen-102.html",
-   "at": "2026-11-26T09:39:12+00:00"
   }
  ]
 }

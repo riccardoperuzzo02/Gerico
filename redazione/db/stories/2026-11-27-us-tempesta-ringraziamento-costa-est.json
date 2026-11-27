@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-27-us-tempesta-ringraziamento-costa-est",
+  "title": "Stati Uniti: tempesta sulla costa orientale, 800.000 utenze senza corrente",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "city": {"name": "New York", "lat": 40.71, "lon": -74.0},
+  "rank": 103,
+  "summary": "Il maltempo ha colpito il paese dalla California a New York nel giorno del Ringraziamento. La parata di Macy's è stata rinviata a sabato per la prima volta.",
+  "article": "Una forte tempesta ha investito la costa orientale degli Stati Uniti giovedì 26 novembre, il giorno del Ringraziamento, con pioggia torrenziale, vento e alluvioni. In serata oltre 800.000 utenze erano senza elettricità, secondo il sito PowerOutage.us: più di 170.000 in Pennsylvania, altrettante nel New Jersey e circa 130.000 nel Maryland. Non risultano morti nei resoconti consultati.\n\nIl maltempo è arrivato nel giorno di maggiore traffico dell'anno, con circa 81,5 milioni di persone in viaggio, secondo le stime citate dalle fonti. Secondo FlightAware sono stati più di 2.500 i voli in ritardo e oltre 460 quelli cancellati. La parata di Macy's a New York è stata rinviata a sabato 28 novembre per il rischio di vento sui palloni gonfiabili, e Macy's ha detto che è la prima volta nella sua storia. Il ponte-tunnel della baia di Chesapeake, in Virginia, e la strada statale NC 12 nelle Outer Banks sono rimasti chiusi per ore.\n\nLa governatrice del New Jersey, Mikie Sherrill, ha dichiarato lo stato di emergenza in tutto lo stato; la governatrice di New York, Kathy Hochul, lo ha fatto per alcune zone. Il sindaco di New York, Zohran Mamdani, ha invitato a non camminare né guidare nelle strade allagate: «Non c'è nessuna destinazione che valga la vostra sicurezza». Scott Wahl, amministratore del comune di Avalon, nel New Jersey, ha definito l'alluvione tra le peggiori nella storia del borgo.\n\nNel Missouri la neve ha raggiunto i 36 centimetri a Sainte-Geneviève. Sulla costa californiana le maree alte hanno causato danni, mentre nel Maryland il vento ha fatto cadere un albero su una casa. Il presidente Donald Trump ha firmato dalla sua residenza di Mar-a-Lago dichiarazioni di calamità per la Florida, dopo precedenti episodi di maltempo.",
+  "facts": [
+    {"text": "Oltre 800.000 utenze senza corrente giovedì sera, tra Pennsylvania, New Jersey e Maryland.", "who": ["PowerOutage.us"]},
+    {"text": "Più di 2.500 voli in ritardo e oltre 460 cancellati.", "who": ["FlightAware"]},
+    {"text": "Stato di emergenza nel New Jersey e in parte dello stato di New York.", "who": ["Mikie Sherrill, governatrice del New Jersey", "Kathy Hochul, governatrice di New York"]},
+    {"text": "La parata di Macy's è rinviata a sabato 28 novembre per il rischio di vento.", "who": ["Macy's"]}
+  ],
+  "view": "Si può dire con certezza che la tempesta ha causato blackout, ritardi nei voli e allagamenti in più stati nel giorno di maggiore traffico dell'anno. Non ci sono ancora un bilancio completo dei danni né notizie di vittime nelle fonti consultate.\n\nNei prossimi giorni conviene guardare i tempi di ripristino dell'elettricità e se gli stati chiederanno aiuti federali. Il rinvio della parata a sabato mostra quanto il maltempo abbia pesato sulle feste.",
+  "open": [
+    "Quanti giorni serviranno per ridare la corrente a tutte le utenze?",
+    "Gli stati colpiti chiederanno la dichiarazione di calamità federale?",
+    "Ci sono vittime o feriti non ancora comunicati?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/", "angle": "Blackout, voli, stati di emergenza, dichiarazioni di Mamdani e Wahl.", "at": "2026-11-27T05:36:29+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/26/nx-s1-6054079/storms-expected-on-both-coasts-as-millions-travel-for-thanksgiving", "angle": "Dal testo del feed: vento, maree e alluvioni su entrambe le coste, 81,5 milioni di viaggiatori.", "at": "2026-11-26T09:43:27+00:00"}
+  ],
+  "firstSeen": "2026-11-27T09:49:00+01:00",
+  "updated": "2026-11-27T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-27T09:49:00+01:00", "text": "Prima notizia: la tempesta di Ringraziamento lascia 800.000 utenze senza corrente sulla costa orientale."}
+  ],
+  "tags": ["Stati Uniti", "Maltempo", "Trasporti"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

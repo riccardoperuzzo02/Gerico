@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-27-es-dopo-dibattito-ultimi-giorni-campagna",
+  "title": "Spagna: dopo il dibattito a quattro Feijóo dice che si dimetterà se non governa",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "city": {"name": "Madrid", "lat": 40.42, "lon": -3.7},
+  "rank": 502,
+  "summary": "Sánchez chiede ai leader di Pp e Vox di riconoscere i risultati del voto di domenica 29 novembre. Oggi i candidati chiudono la campagna.",
+  "article": "Alberto Núñez Feijóo, leader del Partito popolare, ha detto nel dibattito televisivo di giovedì 26 novembre che si dimetterà se dopo le elezioni di domenica 29 novembre non riuscirà a governare. Pedro Sánchez, il presidente del governo socialista, ha chiesto a Feijóo e al leader di Vox, Santiago Abascal, di riconoscere i risultati del voto e non ha risposto alla stessa domanda sulle sue dimissioni.\n\nAl dibattito a quattro ha partecipato anche Ada Colau, candidata del Frente Amplio, la coalizione di sinistra. Colau e Sánchez hanno rivolto i loro attacchi soprattutto al blocco di destra, su tagli e violenza di genere. Abascal, che ha rifiutato di parlare del tema nei termini scelti dagli altri candidati, ha detto che la Spagna ha raggiunto un punto di collasso sull'immigrazione. Feijóo ha difeso l'alleanza con Vox nelle comunità autonome.\n\nIl Pp non vede trasferimenti di voti tra i blocchi dopo il dibattito e, come Vox, chiede una mobilitazione massiccia. Il Psoe dice che il blocco progressista ha «vinto per goleada». Il Frente Amplio spera di sottrarre voti ai socialisti.\n\nI cinque candidati principali chiudono oggi la campagna in città scelte per mobilitare gli elettori e contendersi i seggi decisivi.",
+  "facts": [
+    {"text": "Feijóo dice che si dimetterà se non governerà dopo il voto.", "who": ["Alberto Núñez Feijóo, leader del Partito popolare"]},
+    {"text": "Sánchez chiede a Pp e Vox di riconoscere i risultati del 29 novembre.", "who": ["Pedro Sánchez, presidente del governo"]},
+    {"text": "Il dibattito ha coinvolto Sánchez, Feijóo, Abascal e Colau.", "who": ["Academia de la Televisión"]}
+  ],
+  "view": "Si può dire con certezza che il dibattito non ha cambiato i blocchi, secondo gli stessi partiti, e che il tema del riconoscimento dei risultati è entrato nella campagna. Resta aperto quanto pesi sul voto l'alleanza tra Pp e Vox.\n\nDomenica si vota: conviene guardare l'affluenza e i seggi che decideranno la maggioranza tra i due blocchi.",
+  "open": [
+    "Sánchez si dimetterà in caso di sconfitta?",
+    "Quale maggioranza serve per governare con o senza Vox?"
+  ],
+  "sources": [
+    {"name": "20minutos", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://www.20minutos.es/nacional/feijoo-asegura-que-dimitira-si-no-gana-las-elecciones-sanchez-evita-pronunciarse_7066476_0.html", "angle": "Dal testo del feed: Feijóo si dimetterà se non governa, Sánchez chiede il riconoscimento dei risultati.", "at": "2026-11-26T23:31:52+00:00"},
+    {"name": "El País", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://elpais.com/espana/elecciones-generales/2026-11-26/la-izquierda-sale-a-la-ofensiva-contra-abascal-y-feijoo-por-los-recortes-y-la-violencia-de-genero.html", "angle": "Dal testo del feed: Sánchez e Colau in alleanza contro Pp e Vox su tagli e violenza di genere.", "at": "2026-11-26T23:10:45+00:00"}
+  ],
+  "firstSeen": "2026-11-27T09:49:00+01:00",
+  "updated": "2026-11-27T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-27T09:49:00+01:00", "text": "Prima notizia: dopo il dibattito Feijóo dice che si dimetterà se non governa."}
+  ],
+  "tags": ["Spagna", "Elezioni", "Partiti"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

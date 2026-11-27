@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-27-fr-macron-le-pen-bilancio-ue",
+  "title": "Francia: Macron non tratterà il bilancio Ue oltre l'anno, scontro con Le Pen",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.86, "lon": 2.35},
+  "rank": 302,
+  "summary": "Il presidente conferma che i negoziati finiranno entro dicembre. Marine Le Pen li definisce «basse manovre politiche» in vista delle presidenziali.",
+  "article": "Emmanuel Macron, il presidente francese, ha confermato al vertice europeo di giovedì 26 novembre che non proseguirà i negoziati sul bilancio pluriennale dell'Unione europea oltre la fine dell'anno. La Francia vota per le presidenziali nel 2027, e un accordo chiuso in dicembre sarebbe difficile da rimettere in discussione per chi vincesse.\n\nMarine Le Pen, candidata del Rassemblement national, ha accusato Macron di «basse manovre politiche» per chiudere l'intesa prima del voto. Macron ha risposto che serve «più umiltà» in campagna elettorale e ha parlato di una «strana arroganza» della candidata.\n\nIl vertice si è concluso senza accordo. Il presidente del Consiglio europeo, António Costa, ha chiesto l'intesa entro dicembre, e un nuovo incontro è atteso nello stesso mese.\n\nNello stesso incontro Macron ha detto che abbandonare l'Ucraina metterebbe a rischio la sicurezza europea nel breve o medio periodo.",
+  "facts": [
+    {"text": "Macron non proseguirà i negoziati sul bilancio Ue oltre la fine dell'anno.", "who": ["Emmanuel Macron, presidente della Francia"]},
+    {"text": "Le Pen parla di «basse manovre politiche».", "who": ["Marine Le Pen, candidata del Rassemblement national"]},
+    {"text": "Il vertice è finito senza accordo.", "who": ["Consiglio europeo"]}
+  ],
+  "view": "Si può dire con certezza che il vertice non ha prodotto un accordo e che Macron ha fissato dicembre come limite. Resta aperto se gli altri governi accetteranno una scadenza legata al calendario elettorale francese.\n\nLa trattativa sul bilancio entra così nella campagna per le presidenziali. Conviene guardare il vertice di dicembre e se Le Pen preciserà cosa cambierebbe se vincesse.",
+  "open": [
+    "Gli altri governi accetteranno la scadenza di dicembre?",
+    "Cosa cambierebbe nel bilancio Ue con un diverso presidente francese?"
+  ],
+  "sources": [
+    {"name": "Le Monde", "kind": "stampa", "country": "Francia", "area": "Francia", "url": "https://www.lemonde.fr/international/article/2026/11/27/les-discussions-sur-le-budget-de-l-union-europeenne-menacees-par-les-echeances-electorales-francaises_6815793_3210.html", "angle": "Dal testo del feed: Macron non continuerà le trattative oltre l'anno; Le Pen parla di basse manovre.", "at": "2026-11-27T04:29:31+00:00"},
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Francia", "url": "https://www.franceinfo.fr/politique/emmanuel-macron/il-faut-plus-d-humilite-quand-on-fait-campagne-emmanuel-macron-tacle-la-drole-d-arrogance-de-marine-le-pen_8302119.html", "angle": "Dal testo del feed: Macron chiede più umiltà a Le Pen; accordo difficile da rimettere in discussione dopo le presidenziali.", "at": "2026-11-26T22:25:56+00:00"}
+  ],
+  "firstSeen": "2026-11-27T09:49:00+01:00",
+  "updated": "2026-11-27T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-27T09:49:00+01:00", "text": "Prima notizia: Macron fissa a fine anno il limite per il bilancio Ue, scontro con Le Pen."}
+  ],
+  "tags": ["Francia", "Presidenziali", "Unione europea"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

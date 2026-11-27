@@ -1,0 +1,37 @@
+{
+  "id": "2026-11-27-gb-rosebank-lettera-deputati-laburisti",
+  "title": "Regno Unito: quasi 100 deputati laburisti contro il giacimento di Rosebank",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Isole Shetland", "lat": 60.3, "lon": -1.3},
+  "rank": 206,
+  "summary": "Tra i firmatari ci sono almeno quattro membri del governo. La ministra dell'Energia deve decidere entro poche settimane.",
+  "article": "Novantadue deputati laburisti senza incarichi di governo e almeno quattro membri dei ministeri hanno firmato una lettera al primo ministro Andy Burnham per chiedergli di non far approvare il giacimento petrolifero di Rosebank. Il progetto riguarda il maggiore giacimento non ancora sfruttato nelle acque britanniche, a nord-ovest delle isole Shetland. La lettera è la prima divisione aperta nel partito da quando Burnham guida il governo.\n\nLa ministra dell'Energia, Miatta Fahnbulleh, deve decidere entro poche settimane se autorizzare le trivellazioni. Tra i firmatari ci sono anche collaboratori di ministri.\n\nGli ambientalisti sostengono che il progetto produrrebbe grandi quantità di gas serra e sarebbe in contrasto con gli obiettivi climatici del paese. Chi lo sostiene dice che porterebbe investimenti e entrate fiscali.\n\nNon è stata comunicata una risposta del governo alla lettera. Secondo la lettura politica del caso, non sono escluse dimissioni, anche della stessa ministra, ma al momento non risulta nessun annuncio.",
+  "facts": [
+    {"text": "Novantadue deputati laburisti e almeno quattro membri del governo hanno firmato la lettera a Burnham.", "who": ["Deputati laburisti firmatari"]},
+    {"text": "La ministra dell'Energia deve decidere entro poche settimane sull'autorizzazione.", "who": ["Miatta Fahnbulleh, ministra dell'Energia"]},
+    {"text": "Rosebank è il maggiore giacimento non sfruttato nelle acque britanniche.", "who": ["Lettera dei deputati"]}
+  ],
+  "view": "Si può dire con certezza che la lettera esiste, che ha molte firme e che la decisione spetta alla ministra dell'Energia. Resta aperto come reagirà Burnham e se la protesta arriverà fino alle dimissioni.\n\nLa decisione sul giacimento sarà un test per l'unità del partito. Nelle prossime settimane conviene guardare la data della decisione e il comportamento dei deputati che hanno firmato.",
+  "open": [
+    "Quando decide la ministra dell'Energia?",
+    "Il governo risponderà alla lettera prima della decisione?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "stampa", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/politics/2026/nov/26/labour-split-over-rosebank-oilfield-exposed-by-letter-from-nearly-100-mps", "angle": "Dal testo del feed: 92 deputati e almeno quattro membri del governo firmano la lettera a Burnham.", "at": "2026-11-26T16:13:09+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/cw24ez32d1n4o", "angle": "Dal testo del feed: quasi 100 deputati; la ministra Fahnbulleh deve decidere entro poche settimane.", "at": "2026-11-26T16:29:54+00:00"}
+  ],
+  "firstSeen": "2026-11-27T09:49:00+01:00",
+  "updated": "2026-11-27T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-27T09:49:00+01:00", "text": "Prima notizia: quasi 100 deputati laburisti scrivono a Burnham contro Rosebank."}
+  ],
+  "tags": ["Regno Unito", "Energia", "Laburisti"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

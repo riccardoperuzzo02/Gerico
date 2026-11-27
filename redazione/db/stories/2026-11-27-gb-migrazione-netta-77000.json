@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-27-gb-migrazione-netta-77000",
+  "title": "Regno Unito: la migrazione netta scende a 77.000, il livello più basso dal 1997",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Londra", "lat": 51.5, "lon": -0.12},
+  "rank": 204,
+  "summary": "Il dato esclude gli anni della pandemia. Il primo ministro Burnham dice che l'immigrazione è ora sotto un controllo «sufficiente», i Liberaldemocratici chiedono un tetto fissato dal parlamento.",
+  "article": "La migrazione netta nel Regno Unito è stata di 77.000 persone nell'anno fino a giugno 2026, il valore più basso dal 1997 se si escludono gli anni del Covid. I dati sono stati pubblicati giovedì 26 novembre dall'Ufficio nazionale di statistica e dal ministero dell'Interno. La migrazione netta è la differenza tra chi arriva e chi lascia il paese.\n\nAnche le richieste di asilo sono in calo, secondo il ministero dell'Interno. Il governo laburista rivendica di aver riportato i numeri a livelli che i conservatori non avevano raggiunto. Il dato è stato aiutato anche da fattori fuori dal controllo del governo, ricordano le analisi delle fonti.\n\nAndy Burnham, il primo ministro, ha detto che l'immigrazione è ora sotto un controllo «sufficiente». Paul Kohler, portavoce dei Liberaldemocratici per asilo e immigrazione, ha sostenuto che il calo dipende soprattutto dalle misure del precedente governo conservatore e ha chiesto un tetto annuale fissato per legge dal parlamento, a un livello molto più basso.\n\nNel 2010 David Cameron, allora capo dell'opposizione, aveva definito «troppo» una migrazione netta di 200.000 persone l'anno e aveva promesso di ridurla a «decine di migliaia». Il dato di oggi è il primo sotto i 100.000 da quasi trent'anni, pandemia esclusa.",
+  "facts": [
+    {"text": "La migrazione netta è stata di 77.000 persone nell'anno fino a giugno 2026.", "who": ["Ufficio nazionale di statistica", "Ministero dell'Interno"]},
+    {"text": "È il livello più basso dal 1997, esclusi gli anni della pandemia.", "who": ["Ufficio nazionale di statistica"]},
+    {"text": "Le richieste di asilo sono in calo.", "who": ["Ministero dell'Interno"]},
+    {"text": "Burnham dice che l'immigrazione è sotto controllo «sufficiente».", "who": ["Andy Burnham, primo ministro"]}
+  ],
+  "view": "Si può dire con certezza che il numero è il più basso degli ultimi decenni, pandemia esclusa. Resta aperto quanto del calo dipenda dalle scelte del governo e quanto da fattori esterni.\n\nIl tema resta politico: nei prossimi giorni conviene guardare se Burnham userà il dato per rispondere alla pressione di Reform UK e come reagiranno i laburisti più critici sulla stretta.",
+  "open": [
+    "Quanta parte del calo dipende dalle politiche del governo?",
+    "Il governo introdurrà un tetto annuale fissato per legge?"
+  ],
+  "sources": [
+    {"name": "The Guardian", "kind": "stampa", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic", "angle": "Dal testo del feed: 77.000 nell'anno fino a giugno, minimo dal 1997, pandemia esclusa.", "at": "2026-11-26T20:01:47+00:00"},
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/cq36gj12n0l3o", "angle": "Dal testo del feed: calo anche delle richieste di asilo; Burnham parla di controllo «sufficiente».", "at": "2026-11-26T14:55:16+00:00"}
+  ],
+  "firstSeen": "2026-11-27T09:49:00+01:00",
+  "updated": "2026-11-27T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-27T09:49:00+01:00", "text": "Prima notizia: la migrazione netta scende a 77.000, minimo dal 1997 pandemia esclusa."}
+  ],
+  "tags": ["Regno Unito", "Immigrazione"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

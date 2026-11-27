@@ -1,13 +1,69 @@
 {
  "code": "US",
- "asOf": "2026-11-27T17:17:33+00:00",
+ "asOf": "2026-11-27T19:17:33+00:00",
  "items": [
   {
    "source": "CBS News",
    "title": "Powerful Thanksgiving Day storm causes flooding, power outages",
    "desc": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
    "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
-   "at": "2026-11-27T16:53:04+00:00"
+   "at": "2026-11-27T19:15:37+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Pregnant inmate escapes in prison SUV after stop at Whataburger",
+   "desc": "Rebecca Taylor, who was not restrained because of her pregnancy, slid into the front seat of the transport vehicle and drove away.",
+   "url": "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
+   "at": "2026-11-27T19:13:23+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies",
+   "desc": "Ms. Stewart-Cousins, 76, served in the state senate for 20 years.",
+   "url": "https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html",
+   "at": "2026-11-27T18:51:07+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Jensen Huang's return did little to ease AI jitters. We used the weakness to buy",
+   "desc": "Jensen Huang's return sparked a fleeting AI rally, but persistent market volatility gave us another opportunity to put cash to work.",
+   "url": "https://www.cnbc.com/investingclub/2026/11/27/jensen-huangs-return-did-little-to-ease-ai-jitters-we-bought-on-weakness.html",
+   "at": "2026-11-27T18:46:20+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
+   "desc": "SpaceX shares jumped in trading Friday after Elon Musk said on X that he would donate shares to American children every year.",
+   "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
+   "at": "2026-11-27T18:24:06+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
+   "desc": "Budget carrier Norse Atlantic filed for bankruptcy Friday, saying it failed to secure funding after soaring fuel costs strained the company's operations.",
+   "url": "https://www.cnbc.com/2026/11/27/norse-atlantic-bankruptcy-fuel-costs.html",
+   "at": "2026-11-27T18:20:32+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
+   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were gradually improving on Friday.",
+   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
+   "at": "2026-11-27T17:57:11+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Sen. Deb Fischer's husband died by suicide, her office says",
+   "desc": "\"His kindness, integrity, and quiet strength left a lasting impression on all who knew him,\" Sen. Deb Fischer said of her late husband, Bruce.",
+   "url": "https://www.cbsnews.com/news/sen-deb-fischer-husband-bruce-suicide/",
+   "at": "2026-11-27T17:29:38+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
+   "desc": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
+   "url": "https://www.nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html",
+   "at": "2026-11-27T17:26:37+00:00"
   },
   {
    "source": "CNBC",
@@ -22,20 +78,6 @@
    "desc": "A wide swath of consumer products are becoming less reliable and durable, even as their prices rise, research shows.",
    "url": "https://www.cnbc.com/make-it/2026/11/27/durable-goods-reliability-cars-appliances-tvs.html",
    "at": "2026-11-27T16:08:10+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Thanksgiving Storm Leaves Half a Million Without Power on the East Coast",
-   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were expected to gradually improve on Friday.",
-   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
-   "at": "2026-11-27T16:04:08+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Pregnant inmate escapes in prison SUV after stop at Whataburger",
-   "desc": "Rebecca Taylor, who was not restrained because of her pregnancy, slid into the front seat of the transport vehicle and drove away.",
-   "url": "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
-   "at": "2026-11-27T16:02:39+00:00"
   },
   {
    "source": "CNBC",
@@ -62,7 +104,7 @@
    "source": "New York Times",
    "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
    "desc": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
-   "url": "https://www.nytimes.com/2026/11/27/us/supreme-court-rulings-cheered-by-republicans-wound-up-hurting-them.html",
+   "url": "https://www.nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html",
    "at": "2026-11-27T15:47:49+00:00"
   },
   {
@@ -119,7 +161,7 @@
    "title": "Five Big Questions for the 2028 Presidential Race",
    "desc": "Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?",
    "url": "https://www.nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html",
-   "at": "2026-11-27T14:33:04+00:00"
+   "at": "2026-11-27T14:33:05+00:00"
   },
   {
    "source": "CBS News",
@@ -148,13 +190,6 @@
    "desc": "Heavy rains and winds impacted Americans on Thanksgiving and brought power outages to thousands around dinner time. All that and all that matters in today's Eye Opener.",
    "url": "https://www.cbsnews.com/video/eye-opener-massive-thanksgiving-storm-hits-us/",
    "at": "2026-11-27T14:09:00+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Budget airline Norse Atlantic files for bankruptcy in Europe after failing to secure funding",
-   "desc": "Budget carrier Norse Atlantic filed for bankruptcy Friday, saying it failed to secure funding after soaring fuel costs strained the company's operations.",
-   "url": "https://www.cnbc.com/2026/11/27/norse-atlantic-bankruptcy-fuel-costs.html",
-   "at": "2026-11-27T13:58:19+00:00"
   },
   {
    "source": "CBS News",
@@ -234,13 +269,6 @@
    "at": "2026-11-27T10:59:36+00:00"
   },
   {
-   "source": "CNBC",
-   "title": "SpaceX shares jump 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
-   "desc": "SpaceX shares jumped in premarket trading after Elon Musk said on X that he would donate shares to American children every year.",
-   "url": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html",
-   "at": "2026-11-27T10:20:39+00:00"
-  },
-  {
    "source": "New York Times",
    "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
    "desc": "They treated victims of one of Australia’s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they’re not Jewish.",
@@ -256,6 +284,13 @@
   },
   {
    "source": "NPR",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+   "at": "2026-11-27T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
    "title": "Screen-free tweens try their hand at Dungeons & Dragons",
    "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
@@ -266,13 +301,6 @@
    "title": "12 strategies to cut your risk of dementia. Take this quiz to start",
    "desc": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
-   "at": "2026-11-27T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -388,13 +416,6 @@
    "at": "2026-11-27T00:34:31+00:00"
   },
   {
-   "source": "New York Times",
-   "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
-   "desc": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
-   "url": "https://www.nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html",
-   "at": "2026-11-27T00:33:25+00:00"
-  },
-  {
    "source": "CBS News",
    "title": "Trump signs severe weather disaster declarations from Mar-a-Lago on Thanksgiving",
    "desc": "President Trump celebrated Thanksgiving at his resort in Palm Beach, Florida. He signed disaster declarations for Florida in the wake of severe weather. Weijia Jiang has more.",
@@ -470,27 +491,6 @@
    "desc": "He was a reporter and foreign affairs columnist at Time and then served as deputy secretary of state and president of the Brookings Institution. He was 80.",
    "url": "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
    "at": "2026-11-26T19:53:47+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Microdrama apps chase profits as Hollywood moves into short-form, vertical video",
-   "desc": "The microdrama category has exploded at a time when traditional forms of media face waning interest and YouTube claims more viewing hours.",
-   "url": "https://www.cnbc.com/2026/11/26/micro-drama-apps-hollywood-vertical-video.html",
-   "at": "2026-11-26T18:27:43+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Elon Musk doubles SpaceX share pledge for U.S. children",
-   "desc": "Every child in the U.S. will receive one share of SpaceX from the company and one from Elon Musk.",
-   "url": "https://www.cbsnews.com/news/elon-musk-spacex-shares-trump-accounts/",
-   "at": "2026-11-26T18:22:34+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Semiconductor chips are the new oil. Here's why",
-   "desc": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand.",
-   "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
-   "at": "2026-11-26T17:52:15+00:00"
   }
  ]
 }

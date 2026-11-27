@@ -1,20 +1,76 @@
 {
  "code": "GB",
- "asOf": "2026-11-27T17:17:33+00:00",
+ "asOf": "2026-11-27T19:17:33+00:00",
  "items": [
   {
    "source": "BBC",
-   "title": "Body found in woodland confirmed as missing Kelsey Hunter",
-   "desc": "Kelsey Hunter's body was found in a wooded area near the village of Springholm where she lived.",
-   "url": "https://www.bbc.co.uk/news/articles/cqx2e315rz00o",
-   "at": "2026-11-27T17:03:03+00:00"
+   "title": "Millions lose access to benefits and pensions services after 'cyber incident'",
+   "desc": "The Department for Work and Pensions says some of its services have been take offline as a precaution.",
+   "url": "https://www.bbc.co.uk/news/articles/c8wy5p6pv2e2o",
+   "at": "2026-11-27T19:15:30+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Police suspect criminals robbed fans at Manchester gig disrupted by ‘unknown substance’",
+   "desc": "Police are working with agencies across Europe after similar incidents occurred at two other Don Toliver concerts A group of organised criminals are believed to have carried out robberies during Don Toliver’s Manchester concert, where an “unknown substance” was released , police have said, with similar incidents having occurred at another two of the US rapper’s gigs in Europe. Greater Manchester police said they were working to identify the suspects and the substance involved during the incident at the Co-op Live Arena on Sunday evening. Continue reading...",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/27/police-believe-criminals-carried-out-robberies-during-don-toliver-manchester-gig-unknown-substance",
+   "at": "2026-11-27T18:35:45+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Chicken Shop Date: The perfect end or a disappointing send-off?",
+   "desc": "Amelia Dimoldenberg has called time on her hit YouTube series Chicken Shop Date after more than a decade.",
+   "url": "https://www.bbc.co.uk/news/articles/ckz74123x2jvo",
+   "at": "2026-11-27T18:02:25+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "The Com: the global cybercrime network posing a ‘chilling threat’ to children",
+   "desc": "FBI estimates thousands of people identify as members, or recent members, of group linked to indecent images of girls and blackmail It sounds benign: the Com, short for the Community. But crime agencies around the world warn that it is far from that and the young cybercriminals involved are causing havoc and putting children at chilling, sickening risk. Beau-Jack Mensforth was jailed by a UK judge on Friday for his activities as part of the Com. He was one individual operating from his bedroom in north-east England, but there are probably thousands more like him and parents are being urged by police to be aware and to check their children’s devices. Continue reading...",
+   "url": "https://www.theguardian.com/technology/2026/nov/27/the-com-global-cybercrime-network-posing-chilling-threat-to-children",
+   "at": "2026-11-27T17:53:30+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "GTA 6 crashes into top end of music chart after its record launch",
+   "desc": "Several songs on the game's soundtrack have climbed the UK's singles chart.",
+   "url": "https://www.bbc.co.uk/news/articles/ckp80d8vz1ego",
+   "at": "2026-11-27T17:39:11+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Labour row over Rosebank deepens as dozens of MPs warn PM not to block oilfield",
+   "desc": "Warning of ‘lights out for Labour in Scotland’ as Burnham faces choice between warring factions over North Sea drilling project Dozens of Labour MPs in favour of Rosebank are putting pressure on the prime minister not to block the North Sea oilfield, warning that doing so could spell “lights out for Labour in Scotland”. As many as 80 pro-drilling MPs are considering writing their own letter to Andy Burnham after nearly 100 of their colleagues called on the prime minister not to allow the project to proceed . Scottish Labour leader Michael Marra has also reiterated his support for Rosebank, cautioning that “working-class people in vocational jobs” were threatened by the decline of the North Sea basin. Continue reading...",
+   "url": "https://www.theguardian.com/politics/2026/nov/27/rosebank-supporting-mps-warn-pm-blocking-the-oilfield-would-mean-lights-out-for-labour-in-scotland",
+   "at": "2026-11-27T17:39:10+00:00"
   },
   {
    "source": "BBC",
    "title": "Ex-council leader jailed for fraud and tax evasion",
    "desc": "Jason Zadrozny sobs in the dock as he is sentenced to 27 months in prison.",
    "url": "https://www.bbc.co.uk/news/articles/cmkgdjyd5j98o",
-   "at": "2026-11-27T16:57:31+00:00"
+   "at": "2026-11-27T17:37:08+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "UK man jailed for online blackmail of vulnerable girls around the world",
+   "desc": "Beau-Jack Mensforth, 20, part of a group known as the Com, coerced girls into self-harm, making indecent images of themselves and physically harming pets The Com: the global cybercrime network posing a ‘chilling threat’ to children A 20-year-old man from north-east England has been jailed for blackmailing vulnerable girls around the world, prompting a senior police officer to urge parents to regularly check their children’s devices. Beau-Jack Mensforth admitted 17 offences of making and distributing indecent photographs of children, blackmail, and participating in the activities of an organised crime group. Continue reading...",
+   "url": "https://www.theguardian.com/uk-news/2026/nov/27/man-jailed-in-newcastle-for-blackmailing-vulnerable-girls-online",
+   "at": "2026-11-27T17:27:03+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Watch: What has happened to online pension and benefits services?",
+   "desc": "The work and pensions secretary has said an investigation is looking into a \"serious cyber incident\" affecting his government department.",
+   "url": "https://www.bbc.co.uk/news/videos/cqm251rv0vyyo",
+   "at": "2026-11-27T17:17:11+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "Body found in woodland confirmed as missing Kelsey Hunter",
+   "desc": "Kelsey Hunter's body was found in a wooded area near the village of Springholm where she lived.",
+   "url": "https://www.bbc.co.uk/news/articles/cqx2e315rz00o",
+   "at": "2026-11-27T17:03:03+00:00"
   },
   {
    "source": "BBC",
@@ -38,11 +94,18 @@
    "at": "2026-11-27T16:33:28+00:00"
   },
   {
+   "source": "Sky News",
+   "title": "Body found in woodland confirmed as missing Kelsey Hunter",
+   "desc": "The body of a woman found in woodland in Scotland has been identified as 20-year-old Kelsey Hunter, who went missing over the weekend.",
+   "url": "https://news.sky.com/story/body-found-in-woodland-confirmed-as-missing-20-year-old-kelsey-hunter-13617262",
+   "at": "2026-11-27T16:19:00+00:00"
+  },
+  {
    "source": "The Guardian",
    "title": "British Gas owner seeks urgent government talks over future of storage facility",
    "desc": "Centrica boss memo to 400 workers at gas plant off Yorkshire coast says utility doing all it can ‘to save your jobs’ The boss of the British Gas owner Centrica has told hundreds of staff at its largest gas storage facility that he was seeking urgent talks with Andy Burnham and would do everything he could to save jobs. Chris O’Shea, the chief executive of Centrica, reportedly told staff at the Rough gas storage facility off the east Yorkshire that the government had rebuffed the company’s plea for short-term support to run the store over the winter. Continue reading...",
    "url": "https://www.theguardian.com/business/2026/nov/27/british-gas-owner-seeks-urgent-government-talks-gas-storage-faciity-future",
-   "at": "2026-11-27T15:56:32+00:00"
+   "at": "2026-11-27T15:56:31+00:00"
   },
   {
    "source": "The Guardian",
@@ -53,7 +116,7 @@
   },
   {
    "source": "Sky News",
-   "title": "'Small group of organised criminals' sought over Don Toliver concert evacuation",
+   "title": "Hunt for 'group of organised criminals' over Manchester concert evacuation",
    "desc": "A \"small group of organised criminals\" are being sought by police after an unknown substance sparked a mass evacuation at a Manchester concert.",
    "url": "https://news.sky.com/story/small-group-of-organised-criminals-sought-over-manchester-concert-evacuation-13617249",
    "at": "2026-11-27T15:43:00+00:00"
@@ -89,7 +152,7 @@
   {
    "source": "The Guardian",
    "title": "DWP ‘cyber incident’ knocks almost all pensions and benefits systems offline",
-   "desc": "Department for Work and Pensions officials say welfare payments will continue to be made despite huge outage Tell us: have you been affected by the DWP ‘cyber incident’ Almost all pensions and benefits systems in the UK are unavailable after a “cyber incident”. Anyone trying to check their state pension, make an application for disability benefits or claim universal credit was not able to do so on Friday morning. Continue reading...",
+   "desc": "Department for Work and Pensions urges people to be alert to scams related to outage and contact helpline if having urgent difficulties Tell us: have you been affected by the DWP ‘cyber incident’ Benefits and pensions claimants faced chaos on Friday as the system was hit by a “serious cyber incident”, fuelling concerns about the UK government’s ability to defend itself against malicious attacks. The government took its portal down late on Thursday after detecting “unusual activity”, meaning anyone trying to check their state pension, make an application for disability benefits or claim universal credit was not able to do so. Continue reading...",
    "url": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline",
    "at": "2026-11-27T14:28:22+00:00"
   },
@@ -150,13 +213,6 @@
    "at": "2026-11-27T12:41:41+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "Antisemitism adviser to launch inquiry into ‘hostile work environment’ at BBC",
-   "desc": "John Mann says he is conducting review after hearing ‘disturbing’ accounts of discrimination from Jewish staff UK politics live – latest updates The government’s independent adviser on antisemitism has said he is launching an investigation into the BBC after hearing “disturbing” accounts from Jewish staff of discrimination against them. John Mann, the Labour peer and former MP, said BBC whistleblowers had told him they faced a “hostile work environment” at the broadcaster and that his previous warnings to its management had gone unheeded. Continue reading...",
-   "url": "https://www.theguardian.com/media/2026/nov/26/antisemitism-adviser-to-launch-inquiry-into-hostile-work-environment-at-bbc",
-   "at": "2026-11-27T12:39:10+00:00"
-  },
-  {
    "source": "BBC",
    "title": "Five Gladiators will not return for new BBC series",
    "desc": "The programme is set to feature a host of new faces when it returns to screens next year.",
@@ -173,9 +229,9 @@
   {
    "source": "The Guardian",
    "title": "Labour backs bill to stop lawsuits used to silence journalists and whistleblowers",
-   "desc": "Anti-Slapps campaigners criticise draft bill, saying process of dismissing claims will be challenging and costly The government is to back legislation aimed at preventing wealthy and powerful individuals using the courts to silence critics and curb free speech. The justice minister Sarah Sackman told parliament on Friday that Labour would support a private member’s bill sponsored by the Conservative MP John Whittingdale, who is spearheading the latest attempt to bring in anti-Slapp measures. Continue reading...",
+   "desc": "Anti-Slapps campaigners criticise draft bill, saying process of dismissing claims will be challenging and costly The government is to back legislation aimed at preventing wealthy and powerful individuals using the courts to silence critics and curb free speech. The justice minister Sarah Sackman told parliament on Friday that Labour would support a private member’s bill sponsored by the Conservative MP John Whittingdale, who is spearheading the latest attempt to bring in anti-Slapp measures in England and Wales. Continue reading...",
    "url": "https://www.theguardian.com/media/2026/nov/27/labour-backs-bill-lawsuits-journalists-whistleblowers-slapps",
-   "at": "2026-11-27T12:15:45+00:00"
+   "at": "2026-11-27T12:15:44+00:00"
   },
   {
    "source": "BBC",
@@ -192,6 +248,13 @@
    "at": "2026-11-27T10:10:36+00:00"
   },
   {
+   "source": "The Guardian",
+   "title": "Banks may pass on £1.5bn tax rise to customers, warns Bank of England chief",
+   "desc": "Big lenders will aim to ‘protect their earnings’ from temporary increase in corporation tax surcharge, says Andrew Bailey Business live – latest updates The governor of the Bank of England has said he fears banks could attempt to pass on the £1.5bn cost of Labour’s tax increase on their profits . The chancellor, John Healey, used his first budget last month to temporarily increase the bank corporation tax surcharge from 3% to 6% for a 15-month period from January, with the proceeds funding “breathing space” to relieve pressure on household finances. Continue reading...",
+   "url": "https://www.theguardian.com/business/2026/nov/27/bank-tax-rise-customers-bank-of-england-andrew-bailey",
+   "at": "2026-11-27T10:10:29+00:00"
+  },
+  {
    "source": "BBC",
    "title": "NHS boss warns of 'horrible spike' in flu as hospital admissions surge",
    "desc": "Health officials are urging those at risk of getting flu to get vaccinated as soon as possible.",
@@ -200,8 +263,8 @@
   },
   {
    "source": "Sky News",
-   "title": "Man jailed for blackmailing children and sharing indecent images on sinister online network",
-   "desc": "A man who was part of an organised crime group that blackmailed and distributed indecent images of children has been jailed for 14 years.",
+   "title": "'Monster' jailed for coercing children into acts of violence and sexual activity online",
+   "desc": "A man who was part of an organised crime group that blackmailed and distributed indecent images of children has been jailed for 14 and a half years.",
    "url": "https://news.sky.com/story/man-jailed-for-blackmail-and-sharing-indecent-child-images-on-sinister-com-network-13617127",
    "at": "2026-11-27T09:55:00+00:00"
   },
@@ -214,7 +277,7 @@
   },
   {
    "source": "Sky News",
-   "title": "Centrica jobs warning after government snubs Rough gas storage deal",
+   "title": "Centrica warns on jobs after government snubs Rough gas storage deal",
    "desc": "The FTSE-100 utility Centrica has warned that hundreds of jobs at its Rough gas storage facility off the Yorkshire coast are at risk and claimed that ministers had rejected proposals to bolster Britain's energy security.",
    "url": "https://news.sky.com/story/centrica-warns-on-jobs-after-government-snubs-rough-gas-storage-deal-13617109",
    "at": "2026-11-27T09:13:00+00:00"
@@ -276,32 +339,11 @@
    "at": "2026-11-27T06:18:39+00:00"
   },
   {
-   "source": "BBC",
-   "title": "Chris Mason: Immigration stats are down but will that be the end of the issue?",
-   "desc": "Net migration falling to the tens of thousands is a landmark moment in our collective national conversation about immigration, says Chris Mason.",
-   "url": "https://www.bbc.co.uk/news/articles/cmvg23ql63ypo",
-   "at": "2026-11-27T06:12:19+00:00"
-  },
-  {
    "source": "The Guardian",
    "title": "Up to 1.4m UK workers risk missing out on zero-hours shake-up, say unions",
    "desc": "Andy Burnham is warned against calls from bosses to water down employment rights legislation Andy Burnham is being warned that 1.4 million workers will be at risk of being stuck in insecure jobs if a forthcoming ban on zero-hours contracts is watered down. The prime minister is under pressure from business leaders to scale back last year’s Employment Rights Act, which is being introduced in stages over 2026 and 2027. Continue reading...",
    "url": "https://www.theguardian.com/uk-news/2026/nov/27/up-to-1point4-million-uk-workers-risk-missing-out-zero-hours-shake-up",
    "at": "2026-11-27T06:00:55+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "MoD 'severely lacks expertise' to improve military housing",
-   "desc": "The Ministry of Defence lacks the skills and expertise needed to overhaul poor-quality housing for armed forces families, MPs have warned.",
-   "url": "https://news.sky.com/story/mod-severely-lacks-skills-and-expertise-to-improve-military-housing-watchdog-warns-13616831",
-   "at": "2026-11-27T03:38:00+00:00"
-  },
-  {
-   "source": "Sky News",
-   "title": "Amazon staff to strike and rally on busiest weekend of the year",
-   "desc": "Amazon employees around the world are set to stage protests on Black Friday amid claims of unfair pay and oppressive working conditions.",
-   "url": "https://news.sky.com/story/amazon-staff-to-strike-and-rally-on-busiest-weekend-of-the-year-13617042",
-   "at": "2026-11-27T03:03:00+00:00"
   },
   {
    "source": "The Guardian",
@@ -319,13 +361,6 @@
   },
   {
    "source": "BBC",
-   "title": "From £250 job to £9,000 bill: Inside the rogue trader networks scamming customers at scale",
-   "desc": "Networks of plumbers and electricians are scamming people on a large scale, the BBC reveals.",
-   "url": "https://www.bbc.co.uk/news/articles/c65yme31k7m2o",
-   "at": "2026-11-27T00:58:49+00:00"
-  },
-  {
-   "source": "BBC",
    "title": "'It feels very therapeutic': The young hikers swapping screens for walking groups",
    "desc": "From hiking in the Peak District hills to the city parks of Leicester - we talk to several young people who've embraced walking groups and feel better for it.",
    "url": "https://www.bbc.co.uk/news/articles/c32l50v7x2v1o",
@@ -333,45 +368,10 @@
   },
   {
    "source": "The Guardian",
-   "title": "Net migration to UK falls to lowest level since 1997 excluding pandemic",
-   "desc": "Latest figures show difference between number of people arriving and leaving UK was ⁠77,000 in ​year ‌to ‌June Analysis: How much of the fall in UK immigration is due to Labour’s policies? Net migration across the UK has fallen to its lowest level since 1997 with the exclusion of the years of the Covid pandemic. Figures released by the Office for National Statistics and the Home Office show that the difference between people arriving and leaving the UK was ⁠77,000 in ⁠the ​year ‌to ‌June ‌2026. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic",
-   "at": "2026-11-26T20:01:47+00:00"
-  },
-  {
-   "source": "The Guardian",
    "title": "How much of the sharp fall in UK immigration is due to Labour’s policies?",
    "desc": "Labour is jubilant it has got numbers down to levels the Tories could not but it was helped by factors beyond its control Net migration to UK falls to lowest level since 1997 excluding pandemic David Cameron was the leader of the opposition when he made a comment on overall migration that was used to interrogate every Tory leader for the next 14 years. Asked in January 2010 on the BBC by the interviewer Andrew Marr to address comments made by the archbishop of Canterbury calling for the population to remain under 70 million, Cameron said net immigration levels of 200,000 a year were “too much”. Continue reading...",
    "url": "https://www.theguardian.com/uk-news/2026/nov/26/how-much-sharp-fall-uk-immigration-labour-policies",
    "at": "2026-11-26T19:38:26+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Oxford museum displays seized belongings of Naga freedom fighter Gaidinliu for first time",
-   "desc": "Notebooks, clothes and ritual objects taken by British forces in India in the 1930s go on show at Pitt Rivers Museum In 1932, British forces in north-east India imprisoned a 17-year-old girl called Gaidinliu for leading an uprising against colonial rule. While pursuing the freedom fighter through hills and valleys in the homeland of the Naga people, colonial officers also seized some of her most treasured possessions. They were sent to the University of Oxford’s Pitt Rivers Museum and kept in storage. Now, for the first time, the museum is exhibiting the collection of 27 items, including a basket of Gaidinliu’s notebooks believed to contain her prophetic visions as the leader of a Naga Indigenous religion, clothes, bracelets and amulets. Continue reading...",
-   "url": "https://www.theguardian.com/culture/2026/nov/26/oxford-pitt-rivers-museum-naga-gaidinliu",
-   "at": "2026-11-26T19:03:47+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Major East Midlands road projects shelved to divert funding to defence",
-   "desc": "Regional mayor says cancelling works on A38 at Derby and Newark bypass on A46 ‘disappointing and short-sighted’ Two long-awaited major road schemes have been cancelled to divert more than £400m into defence spending, the government has confirmed. Upgrades to roundabouts on the A38 around Derby and to the Newark bypass on the A46 will be shelved. Continue reading...",
-   "url": "https://www.theguardian.com/world/2026/nov/26/major-east-midlands-road-projects-shelved-to-divert-funding-to-defence",
-   "at": "2026-11-26T18:47:24+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Hospitals in England brace for flu spike with admissions highest for time of year since pre-Covid",
-   "desc": "NHS chief says hospital bosses should consider asking staff and visitors to wear masks as winter pressures build Hospitals are bracing for a “horrible spike” in flu in the coming days as winter starts to bite, the head of the NHS in England has said. Flu and other winter viruses including Covid pose such a threat that hospital bosses should consider telling staff and visitors to wear masks, Jim Mackey said, as figures showed rates of admissions to hospital with flu were at the highest for the time of year since before Covid. Continue reading...",
-   "url": "https://www.theguardian.com/society/2026/nov/26/nhs-hospitals-england-flu-spike-masks",
-   "at": "2026-11-26T18:27:49+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "What we learned from the government’s latest release of Mandelson documents",
-   "desc": "From attempted influence on Starmer’s 2025 reshuffle to refusing to sell shares in a lobbying firm, here are some of the key points UK politics live – latest updates The government has published 32 new documents about Peter Mandelson’s appointment and tenure as British ambassador to Washington. This is the third tranche of papers since a parliamentary motion, known as a humble address, in February 2026 for “all papers” relevant to be released. Some material was withheld by the Metropolitan police from earlier releases in March and June on the basis it could prejudice an ongoing investigation into Mandelson. A number of files continue to be withheld but earlier this month the force informed the government that various records could now be disclosed. Continue reading...",
-   "url": "https://www.theguardian.com/politics/2026/nov/26/what-we-learned-latest-release-peter-mandelson-documents",
-   "at": "2026-11-26T17:18:57+00:00"
   }
  ]
 }

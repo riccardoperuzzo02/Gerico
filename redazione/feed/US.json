@@ -1,7 +1,42 @@
 {
  "code": "US",
- "asOf": "2026-11-28T11:17:33+00:00",
+ "asOf": "2026-11-28T13:17:37+00:00",
  "items": [
+  {
+   "source": "CNBC",
+   "title": "The doctor, the patient and the smartwatch: What physicians think of the third voice at your appointment",
+   "desc": "Many Americans use a smartwatch or fitness tracker to collect their health data, and doctors say the devices are increasingly becoming part of annual checkups.",
+   "url": "https://www.cnbc.com/make-it/2026/11/28/wearable-health-trackers-doctors.html",
+   "at": "2026-11-28T13:00:02+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Perspective: A hero's name lives on",
+   "desc": "During Pearl Harbor, sailor Doris Miller carried the wounded to safety and fired a machine gun at Japanese planes. Next week, construction of a new aircraft carrier, the USS Doris Miller, begins.",
+   "url": "https://www.npr.org/2026/11/28/nx-s1-6045586/perspective-a-heros-name-lives-on",
+   "at": "2026-11-28T13:00:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Power being slowly restored as heavy Thanksgiving storm eases",
+   "desc": "Heavy rain over flooded East Coast communities began easing Friday, and power was slowly restored to hundreds of thousands of customers.",
+   "url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/",
+   "at": "2026-11-28T12:38:51+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Explosion at a school in eastern Afghanistan kills 7, wounds more than 90",
+   "desc": "Local officials said the blast appeared to have originated in a neighboring depot for mining explosives.",
+   "url": "https://www.npr.org/2026/11/28/nx-s1-6056284/explosion-school-eastern-afghanistan",
+   "at": "2026-11-28T11:32:37+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Iowa detonation did not increase levels of lead in water, EPA says",
+   "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
+   "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
+   "at": "2026-11-28T11:30:24+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Millions of Children Are Losing Food Stamps",
@@ -50,13 +85,6 @@
    "desc": "Warnings from hard-liners have grown more urgent amid what some call a winner-take-all race for A.I. dominance.",
    "url": "https://www.nytimes.com/2026/11/28/us/politics/trump-china-critics-nvidia.html",
    "at": "2026-11-28T05:19:36+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Power being slowly restored as heavy Thanksgiving storm eases",
-   "desc": "Heavy rain over flooded East Coast communities began easing Friday, and power was slowly restored to hundreds of thousands of customers.",
-   "url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/",
-   "at": "2026-11-28T03:54:12+00:00"
   },
   {
    "source": "New York Times",
@@ -169,13 +197,6 @@
    "desc": "Severe weather rocks Thanksgiving; Shoppers to spend big on Black Friday.",
    "url": "https://www.cbsnews.com/video/112726-cbs-evening-news/",
    "at": "2026-11-27T23:30:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Iowa lead detonation results expected soon, EPA says",
-   "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
-   "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
-   "at": "2026-11-27T23:08:17+00:00"
   },
   {
    "source": "NPR",
@@ -340,13 +361,6 @@
   },
   {
    "source": "CBS News",
-   "title": "Eye Opener: Massive Thanksgiving storm hits U.S.",
-   "desc": "Heavy rains and winds impacted Americans on Thanksgiving and brought power outages to thousands around dinner time. All that and all that matters in today's Eye Opener.",
-   "url": "https://www.cbsnews.com/video/eye-opener-massive-thanksgiving-storm-hits-us/",
-   "at": "2026-11-27T14:09:00+00:00"
-  },
-  {
-   "source": "CBS News",
    "title": "Mother dies after walking into plane propeller at Alaska airport",
    "desc": "Christina Blake, 38, drove a car onto the taxiway of Big Lake Airport, then got out of the vehicle and walked toward a stopped plane.",
    "url": "https://www.cbsnews.com/news/alaska-airport-propeller-death-christina-blake/",
@@ -358,48 +372,6 @@
    "desc": "The November sell-off has so far pushed the S&P 500 into a correction. History shows that a correction doesn't always lead to a bear market, or a recession.",
    "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
    "at": "2026-11-27T13:21:56+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "New car prices are at a record high. Here's where to look for deals",
-   "desc": "While the average price of a new car hit $51,109 in October, according to Kelley Blue Book, many buyers are spending far less on their purchase. Here's how.",
-   "url": "https://www.cnbc.com/2026/11/27/new-car-buying-deals-buying-tips.html",
-   "at": "2026-11-27T13:15:01+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Rheinmetall reins in growth ambitions as Europe's rearmament boom hits hurdles",
-   "desc": "The German arms maker vows a \"more prudent approch\" to forecast sales of tanks and ammunition.",
-   "url": "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html",
-   "at": "2026-11-27T13:08:07+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Spain’s election could pull Madrid closer to Trump’s Washington",
-   "desc": "Spanish voters head to the polls on Sunday for a snap election that could bring socialist Prime Minister Pedro Sánchez's eight years in power to an end.",
-   "url": "https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html",
-   "at": "2026-11-27T13:00:42+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "The Tech Download: Will Jensen Huang’s return be the spark the shaky AI market needs?",
-   "desc": "AI stocks have fallen in recent times as investors question the sustainability of the AI boom.",
-   "url": "https://www.cnbc.com/2026/11/27/tech-download-jensen-huang-ai-market.html",
-   "at": "2026-11-27T12:00:22+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Thanksgiving storm batters East Coast. And, Black Friday sales to hit record levels",
-   "desc": "A powerful storm knocked out power for nearly 1 million customers and flooded streets. And, experts predict inflation will not dampen American spending for the holidays",
-   "url": "https://www.npr.org/2026/11/27/g-s1-156004/up-first-newsletter-thanksgiving-storm-black-friday-shopping-asylum-supreme-court",
-   "at": "2026-11-27T11:59:02+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
-   "desc": "The case has become one of the most prominent in France's reckoning with sexual violence, as the #MeToo movement has faced resistance in the country, particularly in the arts.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
-   "at": "2026-11-27T11:49:50+00:00"
   }
  ]
 }

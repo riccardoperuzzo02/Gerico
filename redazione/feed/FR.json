@@ -1,48 +1,146 @@
 {
  "code": "FR",
- "asOf": "2026-11-28T09:17:33+00:00",
+ "asOf": "2026-11-28T11:17:33+00:00",
  "items": [
-  {
-   "source": "Le Monde",
-   "title": "Les militants des quartiers populaires veulent compter dans le jeu politique face à LFI et préparer « l’après-Mélenchon »",
-   "desc": "Des militants antiracistes, réunis en une Assemblée des quartiers, disent en avoir assez d’être utilisés pour « coller les affiches » et veulent désormais peser dans le rapport de force politique, notamment en vue de probables élections législatives.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/28/les-militants-des-quartiers-populaires-veulent-compter-dans-le-jeu-politique-face-a-lfi-et-preparer-l-apres-melenchon_6816089_823448.html",
-   "at": "2026-11-28T09:00:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Des milliers de personnes affectées par des inondations au Pérou et en Equateur, au moins 34 morts",
-   "desc": "Au Pérou, environ \"2 000 familles\" ont été \"affectées par toutes ces pluies\", selon un bilan préliminaire. L'Équateur a fait état vendredi de 34 morts et de 47 000 personnes touchées.",
-   "url": "https://www.franceinfo.fr/environnement/crise-climatique/el-nino/des-milliers-de-personnes-affectees-par-des-inondations-au-perou-et-en-equateur-au-moins-34-morts_8304369.html",
-   "at": "2026-11-28T08:38:16+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "Une nouvelle journée de mobilisation samedi, notamment contre les violences faites aux femmes",
-   "desc": "Associations féministes, syndicats, mais aussi jeunes et gilets jaunes… De multiples appels à manifester ont de nouveau été lancés pour la journée de samedi partout en France, notamment contre les violences faites aux femmes dans le sillage de la journée internationale de lutte contre les violences faites aux femmes du 25 novembre.",
-   "url": "https://www.france24.com/fr/france/20261128-une-nouvelle-journ%C3%A9e-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes",
-   "at": "2026-11-28T08:37:06+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La Corée du Sud surveille les signes d'une éventuelle visite de Kim Jong-un en Chine",
-   "desc": "La Chine est le premier partenaire commercial de la Corée du Nord et une source essentielle de soutien diplomatique, économique et politique pour Pyongyang.",
-   "url": "https://www.franceinfo.fr/monde/coree-du-nord/la-coree-du-sud-surveille-les-signes-d-une-eventuelle-visite-de-kim-jong-un-en-chine_8304330.html",
-   "at": "2026-11-28T08:17:55+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Mayotte : des policiers réunionnais en renfort",
-   "desc": "Dans l'archipel, une série d'actes malveillants interpelle les habitants et les élus. En moins d'une semaine, trois adolescents ont été tués, victimes d'affrontements entre bandes organisées. Des renforts de police vont rejoindre Mayotte.",
-   "url": "https://www.franceinfo.fr/france/mayotte/mayotte-des-policiers-reunionnais-en-renfort_8304348.html",
-   "at": "2026-11-28T08:17:27+00:00"
-  },
   {
    "source": "franceinfo",
    "title": "Manifestations : nouvelle journée de mobilisation samedi, notamment contre les violences faites aux femmes",
    "desc": "Prévues dans plus d'une trentaine de villes, dont Paris, Lille, Lyon et Marseille, ces manifestations sont organisées dans le sillage de la journée internationale de lutte contre les violences faites aux femmes.",
    "url": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-nouvelle-journee-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes_8304345.html",
-   "at": "2026-11-28T08:02:09+00:00"
+   "at": "2026-11-28T11:03:47+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "A Berlin, Jean-Luc Mélenchon défend sa vision de la relation franco-allemande et répond aux accusations de germanophobie",
+   "desc": "Devant une salle comble, majoritairement composée de jeunes Français, le chef de file de La France insoumise est venu présenter son livre \"Faites mieux ! Vers une révolution citoyenne\", traduit en allemand, à quelques mois de la présidentielle.",
+   "url": "https://www.franceinfo.fr/politique/melenchon/a-berlin-jean-luc-melenchon-defend-sa-vision-de-la-relation-franco-allemande-et-repond-aux-accusations-de-germanophobie_8304450.html",
+   "at": "2026-11-28T10:59:01+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "L'état de catastrophe naturelle reconnu pour 227 communes du Pas-de-Calais après les intempéries du mois de novembre",
+   "desc": "Les sinistrés disposent désormais de 30 jours, soit jusqu'au 28 décembre, pour déclarer les dommages subis auprès de leur assurance.",
+   "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/l-etat-de-catastrophe-naturelle-reconnu-pour-227-communes-du-pas-de-calais-apres-les-intemperies-du-mois-de-novembre_8304426.html",
+   "at": "2026-11-28T10:50:41+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Deux syndicats d'Aéroports de Paris appellent à la grève le premier week-end des vacances de Noël",
+   "desc": "La CGT et FO réclament notamment une revalorisation de 20% de l'indemnité de déplacement et de transport, l'octroi d'une prime carburant de 1 000 euros. Ils demandent également que les postes vacants soient pourvus.",
+   "url": "https://www.franceinfo.fr/economie/greve/deux-syndicats-d-aeroports-de-paris-appellent-a-la-greve-le-premier-week-end-des-vacances-de-noel_8304435.html",
+   "at": "2026-11-28T10:48:42+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des inondations font au moins 34 morts en Equateur, des milliers de familles touchées aussi au Pérou",
+   "desc": "Les villes de Manta (Equateur) et de Piura (Pérou) sont sous les eaux après de fortes pluies ces derniers jours.",
+   "url": "https://www.franceinfo.fr/environnement/crise-climatique/el-nino/des-milliers-de-personnes-affectees-par-des-inondations-au-perou-et-en-equateur-au-moins-34-morts_8304369.html",
+   "at": "2026-11-28T10:40:03+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Le travail n'est jamais fini\" : à 86 ans, Lucinda Childs, légende de la danse contemporaine, revient à l'Opéra de Paris pour une création",
+   "desc": "Sur une musique de Max Richter, la chorégraphe américaine a imaginé une nouvelle pièce présentée en décembre au Palais Garnier, quarante-deux ans après sa première création pour l'Opéra de Paris. Elle nous a exceptionnellement permis d'assister à une répétition.",
+   "url": "https://www.franceinfo.fr/culture/spectacles/danse/le-travail-n-est-jamais-fini-a-86-ans-lucinda-childs-legende-de-la-danse-contemporaine-revient-a-l-opera-de-paris-pour-une-creation_8300022.html",
+   "at": "2026-11-28T10:29:58+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Le Hamas affirme qu'Israël a essayé de tuer le fils de son chef",
+   "desc": "Interrogée par l'AFP, l'armée israélienne a déclaré enquêter sur ces allégations.",
+   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/le-hamas-affirme-qu-israel-a-essaye-de-tuer-le-fils-de-son-chef_8304414.html",
+   "at": "2026-11-28T10:24:00+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La note de la France menacée de dégradation : \"La faute à une politique économique qui soigne le mal par le mal\", selon Eric Coquerel",
+   "desc": "Le président LFI de la commission des finances de l'Assemblée nationale accuse la politique menée par les gouvernements successifs d'Emmanuel Macron de \"mener la France dans le mur\".",
+   "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/s-p-maintient-la-note-de-la-france-mais-menace-de-la-degrader-la-faute-a-une-politique-economique-qui-soigne-le-mal-par-le-mal-selon-eric-coquerel_8304498.html",
+   "at": "2026-11-28T10:23:44+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Dieudonné interdit de scène dans toute l'agglomération parisienne en décembre",
+   "desc": "La préfecture de police de Paris a pris la même décision que plusieurs départements du Sud-Ouest, où toute représentation de Dieudonné a été interdite, y compris dans les \"meetings\" du chanteur Francis Lalanne, candidat à l'élection présidentielle.",
+   "url": "https://www.franceinfo.fr/societe/justice/dieudonne/dieudonne-interdit-de-scene-dans-toute-l-agglomeration-parisienne-en-decembre_8304396.html",
+   "at": "2026-11-28T10:20:51+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Inauguré par de Gaulle il y a 60 ans, le barrage de la Rance reste une exception dans le paysage énergétique français",
+   "desc": "Inauguré par le général de Gaulle en novembre 1966, le barrage de la Rance, près de Saint-Malo (Ille-et-Vilaine), produit de l'électricité grâce aux marées. Pourtant, cette énergie renouvelable reste très peu développée en France.",
+   "url": "https://www.franceinfo.fr/environnement/energie/reportage-inaugure-par-de-gaulle-il-y-a-60-ans-le-barrage-de-la-rance-reste-une-exception-dans-le-paysage-energetique-francais_8303355.html",
+   "at": "2026-11-28T10:14:46+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Un peu avant minuit\" : Melvil Poupaud en marche dans la peau d'un homme prêt à revisiter sa masculinité",
+   "desc": "Nicolas Pariser signe un film ironique dans lequel il porte un regard plein d'autodérision sur les hommes, emmené par Melvil Poupaud entouré d'un aréopage de comédiennes pétillantes.",
+   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/un-peu-avant-minuit-melvil-poupaud-en-marche-dans-la-peau-d-un-homme-pret-a-revisiter-sa-masculinite_8299350.html",
+   "at": "2026-11-28T10:07:30+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Des criminels recherchés par Interpol auraient fait suspendre leur notice rouge contre des millions de dollars",
+   "desc": "Dans cet extrait de \"Complément d'enquête\", voici comment un système de corruption aurait permis à des fugitifs fortunés de bloquer leur avis de recherche lancé par Interpol.",
+   "url": "https://www.franceinfo.fr/replay-magazine/france-2/complement-d-enquete/video-des-criminels-recherches-par-interpol-auraient-fait-suspendre-leur-notice-rouge-contre-des-millions-de-dollars_8299014.html",
+   "at": "2026-11-28T10:06:13+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Avec sa marque Arket, H&M mise sur la montée en gamme pour tenter d’enrayer la concurrence de Shein",
+   "desc": "En dépit de la crise que traverse le marché français de l’habillement, la marque premium du groupe suédois a ouvert un deuxième magasin à Paris.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/28/face-a-la-concurrence-de-shein-h-m-mise-sur-la-montee-en-gamme-avec-arket_6816096_3234.html",
+   "at": "2026-11-28T10:00:05+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Le petit Grégory américain\" : on vous raconte l'histoire du meurtre non élucidé de JonBenét Ramsey, 6 ans, au cœur d'une nouvelle série Netflix",
+   "desc": "La mini-miss, célébrité locale, a été retrouvée morte le 26 décembre 1996 à Boulder dans le Colorado, dans la cave du domicile familial. Un crime resté sans réponse, qui fascine toujours les Etats-Unis.",
+   "url": "https://www.franceinfo.fr/culture/series/netflix/le-petit-gregory-americain-on-vous-raconte-l-histoire-du-meurtre-non-elucide-de-jonbenet-ramsey-6-ans-au-c-ur-d-une-nouvelle-serie-netflix_8301855.html",
+   "at": "2026-11-28T09:57:14+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Deux employés de Médecins sans frontières tués par une frappe israélienne à Gaza",
+   "desc": "L'armée israélienne les a accusés d'être des \"terroristes\" du Hamas.",
+   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/deux-employes-de-medecins-sans-frontieres-tues-par-une-frappe-israelienne-a-gaza_8304309.html",
+   "at": "2026-11-28T09:31:48+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "La Russie annonce l'interception de plus de 1 200 drones ukrainiens sur son territoire",
+   "desc": "Le maire de Moscou avait déclaré auparavant que 462 drones ukrainiens avaient été lancés vers la capitale russe dans la nuit de vendredi à samedi.",
+   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-russie-annonce-l-interception-de-plus-de-1-200-drones-ukrainiens-sur-son-territoire_8304321.html",
+   "at": "2026-11-28T09:29:33+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Ma première préoccupation, c'est que Sánchez s'en aille\" : en Espagne, le rejet du gouvernement profite au parti d'extrême droite Vox",
+   "desc": "À Madrid, les électeurs de Vox dénoncent l’immigration et le manque de réponses à leurs difficultés quotidiennes. Un discours nationaliste que le parti de Santiago Abascal nourrit aussi de chiffres trompeurs.",
+   "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-ma-premiere-preoccupation-c-est-que-sanchez-s-en-aille-en-espagne-le-rejet-du-gouvernement-profite-au-parti-d-extreme-droite-vox_8281901.html",
+   "at": "2026-11-28T09:19:01+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Robert Pattinson dans « Le Monde », de jeune vampire énamouré à nouvelle incarnation de James Bond",
+   "desc": "L’acteur britannique révélé dans la série de films « Twilight » va endosser le smoking du plus célèbre des agents secrets. C’est le 7 janvier 2009 que son nom apparaît dans le quotidien, lors de ses premiers pas dans la saga vampirique à succès.",
+   "url": "https://www.lemonde.fr/m-le-mag/article/2026/11/28/robert-pattinson-dans-le-monde-de-jeune-vampire-enamoure-a-nouvelle-incarnation-de-james-bond_6816091_4500055.html",
+   "at": "2026-11-28T09:00:11+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Les militants des quartiers populaires veulent compter dans le jeu politique face à LFI et préparer « l’après-Mélenchon »",
+   "desc": "Des militants antiracistes, réunis en une Assemblée des quartiers, disent en avoir assez d’être utilisés pour « coller les affiches » et veulent désormais peser dans le rapport de force politique, notamment en vue des élections législatives qui devraient se tenir après la présidentielle de 2027.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/28/les-militants-des-quartiers-populaires-veulent-compter-dans-le-jeu-politique-face-a-lfi-et-preparer-l-apres-melenchon_6816089_823448.html",
+   "at": "2026-11-28T09:00:02+00:00"
+  },
+  {
+   "source": "France 24",
+   "title": "Nouvelle journée de manifestation samedi, notamment contre les violences sexistes et sexuelles",
+   "desc": "Associations féministes, syndicats, mais aussi jeunes et gilets jaunes… De multiples appels à manifester ont de nouveau été lancés pour la journée de samedi partout en France, notamment contre les violences faites aux femmes dans le sillage de la journée internationale de lutte contre les violences faites aux femmes du 25 novembre.",
+   "url": "https://www.france24.com/fr/france/20261128-une-nouvelle-journ%C3%A9e-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes",
+   "at": "2026-11-28T08:37:06+00:00"
   },
   {
    "source": "franceinfo",
@@ -52,25 +150,11 @@
    "at": "2026-11-28T07:47:25+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "La Russie annonce l'interception de plus de 1 200 drones ukrainiens sur son territoire",
-   "desc": "Le maire de Moscou avait déclaré auparavant que 462 drones ukrainiens avaient été lancés vers la capitale russe dans la nuit de vendredi à samedi.",
-   "url": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-russie-annonce-l-interception-de-plus-de-1-200-drones-ukrainiens-sur-son-territoire_8304321.html",
-   "at": "2026-11-28T07:42:18+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Au Canada, 25 ans de prison requis contre un vendeur de \"kits de suicide\"",
-   "desc": "Kenneth Law a vendu une substance létale, pour environ 80 euros (70 dollars), dans au moins 41 pays, dont la Chine, la France ou le Royaume-Uni, où 330 colis ont été expédiés.",
-   "url": "https://www.franceinfo.fr/faits-divers/au-canada-25-ans-de-prison-requis-contre-un-vendeur-de-kits-de-suicide_8304324.html",
-   "at": "2026-11-28T07:20:42+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Deux employés de Médecins sans frontières tués par une frappe israélienne à Gaza",
-   "desc": "L'armée israélienne les a accusés d'être des \"terroristes\" du Hamas.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/deux-employes-de-medecins-sans-frontieres-tues-par-une-frappe-israelienne-a-gaza_8304309.html",
-   "at": "2026-11-28T06:58:04+00:00"
+   "source": "Le Monde",
+   "title": "« “GTA VI” joue un rôle de déclencheur » : pourquoi la PlayStation 5 est en rupture de stock",
+   "desc": "Entre le succès du titre de Rockstar Games et la hausse des prix des composants informatiques, les consoles de jeux vidéo les plus récentes sont quasiment introuvables en magasin à l’approche des fêtes de fin d’année.",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/28/gta-vi-joue-un-role-de-declencheur-pourquoi-la-playstation-5-est-en-rupture-de-stock_6816081_4408996.html",
+   "at": "2026-11-28T07:00:16+00:00"
   },
   {
    "source": "franceinfo",
@@ -94,6 +178,13 @@
    "at": "2026-11-28T06:29:53+00:00"
   },
   {
+   "source": "Le Monde",
+   "title": "A La Villette, le concert « 11 000 cordes » embarque dans une expérience cosmique : « Tout le monde est libre de ressentir ce qu’il veut »",
+   "desc": "L’œuvre du compositeur Georg Friedrich Haas, qui réunit 50 pianos, chacun accordé un cinquantième de demi-ton plus haut que le précédent, accompagnés de 25 instrumentistes, fait l’objet de cinq « concerts performances » à Paris.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/28/a-la-villette-le-concert-11-000-cordes-embarque-dans-une-experience-cosmique-tout-le-monde-est-libre-de-ressentir-ce-qu-il-veut_6816075_3246.html",
+   "at": "2026-11-28T06:00:04+00:00"
+  },
+  {
    "source": "franceinfo",
    "title": "\"Ça fait pschitt !\" : pourquoi les accusations d'antisémitisme visant Jordan Bardella n'entament pas (encore) la popularité du RN",
    "desc": "Les révélations de Mediapart n'ont pas altéré le soutien de l'électorat du Rassemblement national au président du parti, selon plusieurs enquêtes d'opinion réalisées en octobre. Mais ces accusations pourraient compliquer la stratégie de normalisation de Marine Le Pen.",
@@ -115,13 +206,6 @@
    "at": "2026-11-28T05:57:08+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Le Pentagone assure que ses systèmes informatiques sont « sûrs et sécurisés », après une possible cyberattaque annoncée par des médias",
-   "desc": "L’agence Reuters puis NBC News ont avancé que le cloud de l’armée de l’air avait été piraté, exposant possiblement « des informations militaires sensibles ».",
-   "url": "https://www.lemonde.fr/international/article/2026/11/28/le-pentagone-assure-que-ses-systemes-informatiques-sont-surs-et-securises-apres-une-possible-cyberattaque-annoncee-par-des-medias_6816072_3210.html",
-   "at": "2026-11-28T05:30:17+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "\"Un bon petit soldat\", \"Paper Tiger\", \"Congo Boy\" : quels sont les films à voir (ou pas) cette semaine au cinéma ?",
    "desc": "Découvrez les critiques de notre sélection des films sortis en salles le mercredi 25 novembre 2026.",
@@ -130,10 +214,17 @@
   },
   {
    "source": "Le Monde",
-   "title": "Au Canada, le premier ministre, Mark Carney, promet la fin du sans-abrisme d’ici à dix ans",
-   "desc": "Le gouvernement s’est engagé à éradiquer un phénomène qui touche de plus en plus de Canadiens. Un défi de taille dans un pays victime d’une sévère crise du logement. A Montréal, le loyer moyen a augmenté de près de 70 % en moins de dix ans.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/28/au-canada-le-premier-ministre-mark-carney-promet-la-fin-du-sans-abrisme-d-ici-a-dix-ans_6816067_3210.html",
-   "at": "2026-11-28T05:00:31+00:00"
+   "title": "Comment sont taxés les logements vides et les résidences secondaires ?",
+   "desc": "La donne va changer à compter de 2027, alors qu’une nouvelle règle fusionne les deux préexistantes – taxe sur les logements vacants en zone tendue, taxe d’habitation sur les logements vacants hors zone tendue – et pourrait bien faire monter la note pour les propriétaires, explique Virginie Roche, avocate chez CMS Francis Lefebvre Avocats.",
+   "url": "https://www.lemonde.fr/argent/article/2026/11/28/comment-sont-taxes-les-logements-vides-et-les-residences-secondaires_6816069_1657007.html",
+   "at": "2026-11-28T05:00:37+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Balles perdues : les vies brisées des victimes collatérales des fusillades du narcotrafic",
+   "desc": "La multiplication de fusillades et l’emploi d’armes de guerre, souvent liés au narcotrafic, ont conduit à une hausse des victimes indirectes de tirs d’armes à feu. Celles qui survivent voient leur existence bouleversée par des séquelles physiques et psychologiques. Avec, parfois, une certaine défiance à leur égard liée aux circonstances de leur accident.",
+   "url": "https://www.lemonde.fr/societe/article/2026/11/28/derriere-les-morts-en-cascade-et-les-blesses-graves-la-balle-perdue-repand-son-parfum-de-suspicion_6816068_3224.html",
+   "at": "2026-11-28T05:00:20+00:00"
   },
   {
    "source": "Le Monde",
@@ -151,24 +242,24 @@
   },
   {
    "source": "Le Monde",
+   "title": "Partir ou rester en cas de victoire du RN à la présidentielle 2027, le dilemme des hauts fonctionnaires",
+   "desc": "Jusqu’où rester fidèle à ses valeurs et convictions sans manquer à son devoir de loyauté, ni compromettre sa carrière ? A près de cinq mois de l’élection présidentielle, nombreux sont les cadres de l’Etat à s’interroger sur l’attitude qu’ils adopteront dans l’hypothèse où le Rassemblement national accéderait au pouvoir.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/28/partir-ou-rester-en-cas-de-victoire-du-rn-a-la-presidentielle-2027-le-dilemme-des-hauts-fonctionnaires_6816058_823448.html",
+   "at": "2026-11-28T04:00:17+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Notre sélection de BD, mangas et comics en novembre : « Louise en quatre saisons », « Riot », « L’Asile du Havre »…",
+   "desc": "Chaque mois, La Matinale du Monde vous propose une sélection d’ouvrages récemment sortis. Aujourd’hui, retour de flammes dévorant Persépolis sur ordre d’Alexandre, brûlant dans une Bohême lointaine ou s’allumant encore dans les yeux de sympathiques vieillards.",
+   "url": "https://www.lemonde.fr/culture/article/2026/11/28/notre-selection-de-bd-mangas-et-comics-en-novembre-louise-en-quatre-saisons-riot-l-asile-du-havre_6816055_3246.html",
+   "at": "2026-11-28T04:00:08+00:00"
+  },
+  {
+   "source": "Le Monde",
    "title": "Gaza : l’armée israélienne tue deux employés de Médecins sans frontières, qu’elle qualifie de « terroristes »",
    "desc": "L’ONG s’est dite « bouleversée et révoltée par le meurtre » des deux gardiens travaillant dans une de ses cliniques bombardée par les forces armées israéliennes, qui les accusent d’être des membres du Hamas.",
    "url": "https://www.lemonde.fr/international/article/2026/11/28/gaza-l-armee-israelienne-tue-deux-employes-de-medecins-sans-frontieres-qu-elle-qualifie-de-terroristes_6816022_3210.html",
    "at": "2026-11-28T02:30:38+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Trois policiers de la BAC devant le tribunal de Bobigny pour des violences aggravées contre un Algérien",
-   "desc": "De la prison ferme a été requise contre les prévenus, accusés d’avoir, en mars 2025, passé à tabac, volé et arbitrairement détenu à l’intérieur de leur véhicule Samir T., un SDF de 34 ans qui s’adonnait selon eux au trafic de cigarettes.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/28/trois-policiers-de-la-bac-devant-le-tribunal-de-bobigny-pour-des-violences-aggravees-contre-un-algerien_6815989_3224.html",
-   "at": "2026-11-28T01:34:40+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Un concert organisé par un groupe appartenant à la « mouvance identitaire nationaliste, voire néonazie », interdit dans le Rhône et l’Isère",
-   "desc": "Les autorités redoutent la diffusion de discours haineux lors de cet événement clandestin, organisé par une figure de l’ultradroite déjà connue des services de l’Etat.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/27/un-concert-de-rock-antiwokisme-organise-par-une-mouvance-identitaire-interdit-dans-le-rhone-et-l-isere_6815938_823448.html",
-   "at": "2026-11-27T22:54:59+00:00"
   },
   {
    "source": "Le Monde",
@@ -178,39 +269,11 @@
    "at": "2026-11-27T22:06:52+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "OpenAI accuse Apple de vol de secrets et de pressions sur ses fournisseurs",
-   "desc": "Les deux partenaires se rapprochent de mois en mois d’une situation de rivaux, et se rendent désormais coup pour coup devant la justice.",
-   "url": "https://www.lemonde.fr/economie/article/2026/11/27/openai-accuse-apple-de-vol-de-secrets-et-de-pressions-sur-ses-fournisseurs_6815936_3234.html",
-   "at": "2026-11-27T21:49:34+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "L'hommage national aux victimes de l'attentat raciste de Trappes et de La Verrière aura lieu le 4 décembre aux Invalides",
-   "desc": "Cet hommage, qui se tiendra à Paris plus d'un mois après la mort de Pengo Bossio Wangi, sera présidé par le Premier ministre, Sébastien Lecornu.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/l-hommage-national-aux-victimes-de-l-attentat-raciste-de-trappes-et-de-la-verriere-aura-lieu-le-4-decembre-aux-invalides_8303391.html",
-   "at": "2026-11-27T21:45:50+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "L'agence de notation Standard & Poor's menace de dégrader prochainement la note de la France",
    "desc": "Cette décision s'explique notamment par des perspectives de croissance en berne pour la dette française.",
    "url": "https://www.franceinfo.fr/economie/budget/l-agende-de-notation-standard-poor-s-menace-de-degrader-prochainement-la-note-de-la-france_8302788.html",
    "at": "2026-11-27T21:32:15+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "L’agence S&P menace de dégrader encore la note de la France, entrée en récession",
-   "desc": "Vendredi, l’agence américaine a assorti d’une perspective négative la note actuelle de la dette française. Cela ouvre la voie à une possible dégradation à moyen terme. Le dérapage du déficit inquiète les investisseurs.",
-   "url": "https://www.lemonde.fr/politique/article/2026/11/27/l-agence-s-p-menace-de-degrader-encore-la-note-de-la-france-entree-en-recession_6815934_823448.html",
-   "at": "2026-11-27T21:18:33+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "\"David Lisnard, les secrets d'une percée éclair\" : regardez le documentaire de franceinfo consacré aux coulisses de l'entrée en campagne présidentielle du maire de Cannes",
-   "desc": "Il bouscule les sondages parmi les candidats de la droite et vient d'être largement réélu à la tête de l'Association des maires de France. Qui est vraiment David Lisnard et pourquoi sa campagne est-elle si remarquée ? Franceinfo a mené l'enquête.",
-   "url": "https://www.franceinfo.fr/politique/david-lisnard/direct-david-lisnard-les-secrets-d-une-percee-eclair-regardez-le-documentaire-de-franceinfo-consacre-aux-coulisses-de-l-entree-en-campagne-presidentielle-du-maire-de-cannes_8301420.html",
-   "at": "2026-11-27T20:45:15+00:00"
   },
   {
    "source": "Le Monde",
@@ -235,31 +298,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Salim Cevik, politiste : en Turquie, « les Kurdes ne négocient plus vraiment, ils subissent une sorte de diktat de la part du gouvernement d’Erdogan »",
-   "desc": "Dans un entretien au « Monde », le chercheur explique que la loi, votée en août, permettant le retour des combattants du PKK à la vie civile n’a pas changé le rapport de force favorable à Ankara. Affaiblis militairement et politiquement, les Kurdes n’ont que très peu de marge de manœuvre dans ces négociations, qui permettent au président turc de renforcer son pouvoir.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/salim-cevik-politiste-en-turquie-les-kurdes-ne-negocient-plus-vraiment-ils-subissent-une-sorte-de-diktat-de-la-part-du-gouvernement-d-erdogan_6815922_3210.html",
-   "at": "2026-11-27T18:30:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Un calcul \"technique\" qui illustre un \"décrochage\" économique : que signifie l'annonce de l'entrée en récession de la France ?",
-   "desc": "Le produit intérieur brut (PIB) de la France a reculé sur les trois premiers trimestres de l'année, a révélé l'Insee vendredi après avoir revu à la baisse son évolution au deuxième trimestre.",
-   "url": "https://www.franceinfo.fr/economie/croissance/un-calcul-technique-qui-illustre-un-decrochage-economique-que-signifie-l-annonce-de-l-entree-en-recession-de-la-france_8303169.html",
-   "at": "2026-11-27T17:27:16+00:00"
-  },
-  {
-   "source": "Le Monde",
    "title": "Manifestation du 28 novembre contre les violences faites aux femmes : à Paris, les associations féministes défileront dans deux cortèges distincts",
    "desc": "Alors que les collectifs et organisations féministes affichaient jusqu’ici un front uni lors de cette manifestation organisée chaque année, ils n’ont pu, cette fois, passer outre les divisions, notamment concernant la proposition de loi intégrale.",
    "url": "https://www.lemonde.fr/societe/article/2026/11/27/lutte-contre-les-violences-faites-aux-femmes-les-associations-feministes-defileront-dans-deux-corteges-distincts-le-28-novembre-a-paris_6815914_3224.html",
    "at": "2026-11-27T17:21:10+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le Costa Rica refoule la rapporteuse de l'ONU pour les Palestiniens, Francesca Albanese",
-   "desc": "\"Tu connais le vrai visage de l'empire le jour où tu lui tapes sur les nerfs ou que tu franchis ses limites\", a réagi Francesca Albanese.",
-   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/le-costa-rica-refoule-la-rapporteure-de-l-onu-pour-les-palestiniens-francesca-albanese_8302353.html",
-   "at": "2026-11-27T17:00:18+00:00"
   },
   {
    "source": "France 24",
@@ -283,13 +325,6 @@
    "at": "2026-11-27T15:41:07+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "La France est officiellement entrée en récession après deux trimestres de recul du PIB",
-   "desc": "L'Insee a également publié les chiffres provisoires de l'inflation, qui a ralenti à 2,9% sur un an en novembre.",
-   "url": "https://www.franceinfo.fr/economie/croissance/le-pib-recule-de-0-2-en-france-au-troisieme-trimestre-apres-une-revision-a-la-baisse-de-l-insee_8302671.html",
-   "at": "2026-11-27T13:56:35+00:00"
-  },
-  {
    "source": "France 24",
    "title": "Marine Le Pen soutient Bardella et veut obliger les journalistes à respecter le secret des enquêtes",
    "desc": "Vendredi, Marine Le Pen a réitéré sa confiance en Jordan Bardella après la publication de nouveaux éléments lui attribuant des écrits antisémites durant sa jeunesse. Dans la même interview, la candidate du Rassemblement national à l’élection présidentielle a annoncé qu'elle obligerait les journalistes à respecter le secret de l'instruction si elle est élue.",
@@ -302,13 +337,6 @@
    "desc": "À Bruxelles, les négociations sur le prochain budget de l'Union européenne se heurtent aux divisions des Vingt-Sept. La présidentielle française de 2027 s'est aussi invitée dans les discussions : Marine Le Pen, candidate du Rassemblement national, a accusé le président de s'adonner à de \"basses manoeuvres politiciennes\" en voulant verrouiller le budget européen avant l'élection présidentielle. Le président lui a répondu.",
    "url": "https://www.france24.com/fr/vid%C3%A9o/20261127-france-emmanuel-macron-critique-la-dr%C3%B4le-d-arrogance-de-marine-le-pen",
    "at": "2026-11-27T11:26:17+00:00"
-  },
-  {
-   "source": "France 24",
-   "title": "La France entre en récession, le PIB continue de reculer",
-   "desc": "Le produit intérieur brut a reculé de 0,2 % au troisième trimestre 2026, annonce l'Insee vendredi. Avec deux trimestres négatifs consécutifs, le pays est dans une période de récession, selon l'institut statistique.",
-   "url": "https://www.france24.com/fr/france/20261127-la-france-entre-en-r%C3%A9cession-le-pib-continue-de-reculer",
-   "at": "2026-11-27T10:20:32+00:00"
   }
  ]
 }

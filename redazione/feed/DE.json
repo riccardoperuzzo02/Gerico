@@ -1,13 +1,55 @@
 {
  "code": "DE",
- "asOf": "2026-11-28T09:17:33+00:00",
+ "asOf": "2026-11-28T11:17:33+00:00",
  "items": [
+  {
+   "source": "Die Zeit",
+   "title": "BSW-Parteitag: BSW-Chef De Masi warnt vor Spaltung der Partei über AfD-Streit",
+   "desc": "Im Richtungsstreit über den Umgang des BSW mit der AfD hat Parteichef Fabio De Masi zur Einigkeit aufgerufen. Kritiker bat er, die Partei nicht zu verlassen.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/bsw-parteitag-fabio-de-masi-afd-magdeburger-weg-sachsen-anhalt-gxe",
+   "at": "2026-11-28T11:15:52+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Zentralrat der Juden: Josef Schuster sieht AfD-Regierungsbeteiligung als Auswanderungsgrund",
+   "desc": "Der Präsident des Zentralrats der Juden in Deutschland warnt vor einer AfD-Regierungsbeteiligung im Bund. Für Juden könne dies ein Grund zur Auswanderung sein, sagte er.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/josef-schuster-zentralrat-der-juden-afd-rechtsextremismus-gxe",
+   "at": "2026-11-28T11:09:56+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Rentenreform: Thorsten Frei stellt Finanzierbarkeit von SPD-Rentenplänen infrage",
+   "desc": "Unionsfraktionschef Frei reagiert skeptisch auf die Reformvorschläge der SPD zur Rente. Matthias Miersch hält sie für gelungen, die Arbeitgeber nennen sie »vermurkst«.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-alexander-schweitzer-spd-rente-mit-63-cdu-thorsten-frei-gxe",
+   "at": "2026-11-28T10:44:36+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Kritik aus der Union an Rentenplänen von Arbeitsminister Schweitzer",
    "desc": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
    "url": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
-   "at": "2026-11-28T09:14:19+00:00"
+   "at": "2026-11-28T10:11:40+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Tierschutz und politische Rechte: Seit wann ist Tierwohl eigentlich rechts?",
+   "desc": "Die ZEIT hat das Drama um den Wal Timmy rekonstruiert. Jetzt versteht man, warum der Tierschutz in Deutschland gerade vom AfD-nahen Milieu gekapert wird.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/tierschutz-politische-rechte-afd-buckelwal-timmy",
+   "at": "2026-11-28T09:59:01+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Carsten Schneider: Bundesumweltminister will Bekenntnis zu Autoproduktion in Deutschland",
+   "desc": "Bundesumweltminister Carsten Schneider fordert die Autokonzerne zu einem Bekenntnis zum »Standort Deutschland« auf. Die Lockerungen beim Verbrenner-Aus verteidigt er.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/carsten-schneider-audi-donald-trump-verbrennerverbot-elektroautos-gxe",
+   "at": "2026-11-28T09:41:46+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ärzte ohne Grenzen: Israel tötet zwei Mitarbeiter von Ärzte ohne Grenzen im Gazastreifen",
+   "desc": "Bei einem Angriff Israels auf eine Klinik in Gaza sind zwei zivile Wachleute getötet worden, die für Ärzte ohne Grenzen arbeiteten. Laut Israel waren sie Terroristen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/medecins-sans-frontieres-gaza-israel-luftangriff-tote-gxe",
+   "at": "2026-11-28T09:22:47+00:00"
   },
   {
    "source": "Die Zeit",
@@ -15,13 +57,6 @@
    "desc": "Spanien galt unter Pedro Sánchez als Musterland liberaler Einwanderungspolitik. Am Sonntag könnte er die Wahl verlieren. Nun bangen viele Migranten um ihre Zukunft.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/spanien-migration-ceuta-pedro-sanchez-parlamentswahl",
    "at": "2026-11-28T08:43:07+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Ärzte ohne Grenzen: Israel tötet zwei Mitarbeiter von Ärzte ohne Grenzen im Gazastreifen",
-   "desc": "Bei einem Angriff Israels auf eine Klinik in Gaza sind zwei zivile Wachleute getötet worden, die für Ärzte ohne Grenzen arbeiteten. Laut Israel waren sie Terroristen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/medecins-sans-frontieres-gaza-israel-luftangriff-tote-gxe",
-   "at": "2026-11-28T08:36:18+00:00"
   },
   {
    "source": "Die Zeit",
@@ -81,17 +116,17 @@
   },
   {
    "source": "Die Zeit",
+   "title": "Reaktion auf Rentenpläne: Vizeleiter der Rentenkommission kritisiert Reformentwurf",
+   "desc": "Aus der Rentenkommission kommt Lob und Tadel. Linke und Gewerkschaften warnen vor einer Kündigungswelle. Ein CDU-Politiker stellt die Koalitionstreue der SPD infrage.",
+   "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-alexander-schweitzer-rente-mit-63-kapitalrente",
+   "at": "2026-11-28T04:44:22+00:00"
+  },
+  {
+   "source": "Die Zeit",
    "title": "Frankreich: Polizei durchsucht Büro und Wohnung von Marine Le Pens Ex-Büroleiter",
    "desc": "Die Partei der französischen Rechtspopulistin steht unter Verdacht, EU-Gelder veruntreut zu haben. Ermittler fanden bei Razzien laut Berichten eine verdächtige E-Mail.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/frankreich-razzia-polizei-marine-le-pen-ambroise-de-rancourt-hugues-moutouh-rassemblement-national-geheimnisverrat",
    "at": "2026-11-28T02:13:20+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Rhein: Umweltminister setzt sich für Umbau des Rheins ein",
-   "desc": "Carsten Schneider will dem Rhein mehr Platz geben, statt ihn zu vertiefen. Mit Blick auf die Kosten erinnert der Umweltminister an hitzebedingte Wirtschaftseinbußen.",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rhein-umbau-klimawandel-gueterverkehr-carsten-schneider",
-   "at": "2026-11-28T01:30:48+00:00"
   },
   {
    "source": "Tagesschau",
@@ -115,41 +150,6 @@
    "at": "2026-11-27T19:45:49+00:00"
   },
   {
-   "source": "Die Zeit",
-   "title": "Rentenreform: Es könnte eine Jahrhundertreform werden",
-   "desc": "Länger arbeiten und Geld an der Börse anlegen: Die Koalition ist sich bei der Rente in den entscheidenden Punkten einig. Und da soll kein Kompromiss möglich sein?",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-koalition-spd-cdu",
-   "at": "2026-11-27T19:30:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Jean-Luc Mélenchon: Mélenchon weist Vorwurf der Deutschlandfeindlichkeit zurück",
-   "desc": "Jean-Luc Mélenchon hat seine kritische Haltung zu Deutschland verteidigt. Frankreichs linkspopulistischer Präsidentschaftskandidat ist derzeit zu Besuch in Berlin.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/jean-luc-melenchon-berlin-linke-deutschland-eu-gxe",
-   "at": "2026-11-27T18:17:59+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Israel: Eisenkot wirft Likud-Partei Verschleppung der Koalitionsgespräche vor",
-   "desc": "Der Likud weigere sich, konkrete Vorschläge zur Regierungsbildung vorzulegen, sagt Gadi Eisenkot. Die Partei von Benjamin Netanjahu wolle Neuwahlen erzwingen.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/gadi-eisenkot-israel-likud-regierungsbildung-neuwahlen-gxe",
-   "at": "2026-11-27T18:08:40+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Jugendarbeitslosigkeit in Großbritannien: Generation arbeitslos",
-   "desc": "Über die Nöte der Gen Z spricht ganz Europa. In Großbritannien ist es besonders extrem: Dort haben fast eine Million junge Menschen keinen Job. Wie konnte es dazu kommen?",
-   "url": "https://www.zeit.de/2026/51/jugendarbeitslosigkeit-grossbritannien-neets-ausbildung",
-   "at": "2026-11-27T18:01:21+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "US-Vizepräsident: Wenn Trump nicht durchhält, was würde JD Vance als Präsident tun?",
-   "desc": "Müsste Europa auch einen JD Vance als Präsidenten fürchten? Ein Thema der Bonusfolge des US-Podcasts. Und wir beantworten Fragen zu AOC und unseren Lieblingspräsidenten.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/us-vizepraesident-jd-vance-donald-trump-ok-america",
-   "at": "2026-11-27T17:34:06+00:00"
-  },
-  {
    "source": "Tagesschau",
    "title": "Das plant Arbeitsminister Schweitzer für die Rente",
    "desc": "Seit Monaten ringt die Koalition um einen Kompromiss bei der Rente. Arbeitsminister Schweitzer hat nun einen ersten Entwurf vorgelegt. Einer der Punkte: Die \"Rente mit 63\" soll im Kern bestehen bleiben. Von Jan-Peter Bartels und Tim Aßmann.",
@@ -165,9 +165,9 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Grüne und Linke fordern wegen Flug Transparenz von Merz",
+   "title": "Friedrich Merz: Grüne und Linke fordern wegen Flug Transparenz",
    "desc": "Friedrich Merz könnte mit dem Flugzeug eines Unternehmers aus seinem Wahlkreis zu Parteiterminen geflogen sein. Die Linke will Aufklärung, ein Grüner spricht von einer »unglaublichen Geschmacklosigkeit«.",
-   "url": "https://www.spiegel.de/politik/deutschland/gruene-und-linke-fordern-wegen-flug-transparenz-von-merz-a-1ed0603a-a6b1-4dad-85c9-7d505a740195",
+   "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-gruene-und-linke-fordern-wegen-flug-transparenz-a-1ed0603a-a6b1-4dad-85c9-7d505a740195",
    "at": "2026-11-27T16:16:00+00:00"
   },
   {
@@ -179,14 +179,14 @@
   },
   {
    "source": "Der Spiegel",
-   "title": "Rente: Arbeitsminister Alexander Schweitzer legt Gesetzentwurf zur Rentenreform vor",
+   "title": "Rente: Arbeitsminister Alexander Schweitzer legt Gesetzentwurf zur Reform vor",
    "desc": "Gibt es einen Kompromiss im Rentenstreit? Der Arbeitsminister prescht mit einem Gesetzentwurf vor. Dieser sei jedoch, sagt das Kanzleramt, noch im Stadium der »Frühkoordinierung«.",
    "url": "https://www.spiegel.de/politik/deutschland/rente-arbeitsminister-alexander-schweitzer-legt-gesetzentwurf-zur-rentenreform-vor-a-78332671-b923-4dc6-addc-399722e6d309",
    "at": "2026-11-27T15:18:00+00:00"
   },
   {
    "source": "Der Spiegel",
-   "title": "Friedrich Merz und die Koalition: Die Regierung muss endlich wieder verantwortungsvoll haushalten – Kommentar",
+   "title": "Haushalt: Die Bundesregierung muss endlich wieder verantwortungsvoll haushalten – Meinung",
    "desc": "Die Koalition hat entschieden, wofür sie Geld ausgeben will. Doch der Haushalt strotzt vor Buchungstricks. Das könnte sich noch bitter rächen.",
    "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-und-die-koalition-die-regierung-muss-endlich-wieder-verantwortungsvoll-haushalten-kommentar-a-cdfd726b-3872-4e30-9f8b-dbc800c7dec5",
    "at": "2026-11-27T14:56:00+00:00"
@@ -239,34 +239,6 @@
    "desc": "In einem Podcast inszeniert Alice Weidel ihre Partei als Kämpferin für jüdisches Leben in Deutschland. Der Präsident des Zentralrats will davon nichts wissen.",
    "url": "https://www.spiegel.de/politik/deutschland/zentralrat-der-juden-josef-schuster-widerspricht-afd-chefin-alice-weidel-a-683a456b-c93e-4d37-aefb-14602532e3fa",
    "at": "2026-11-27T11:46:00+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "BSW-Parteitag in Dresden ringt um Kurs zur AfD-Zusammenarbeit",
-   "desc": "In Sachsen-Anhalt kooperiert das BSW mit der AfD – gedeckt von Gründerin Sahra Wagenknecht. Doch nicht allen passt der »Magdeburger Weg«. Ein Parteitag soll die Sache nun klären.",
-   "url": "https://www.spiegel.de/politik/deutschland/bsw-parteitag-in-dresden-ringt-um-kurs-zur-afd-zusammenarbeit-a-76fa5c12-4306-42ea-b5af-16dff89eeea4",
-   "at": "2026-11-27T11:10:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "FAQ zur \"Rente mit 63\": Was wird gerade diskutiert?",
-   "desc": "Die Debatte über die \"Rente mit 63\" wird zunehmend unübersichtlich: Welche Vorschläge werden aktuell diskutiert? Was deutet auf Bewegung innerhalb der Koalition hin? Und warum ist das Thema so umstritten? Ein Überblick.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/abschlagsfreie-rente-100.html",
-   "at": "2026-11-27T11:09:55+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Streit um Rentenreform: Arbeitsminister Schweitzer optimistisch",
-   "desc": "Die Koalition ringt weiter um die Rentenreform. Arbeitsminister Schweitzer ist optimistisch, dass es bald zu einer Einigung kommt. Es lägen gute Vorschläge auf dem Tisch, sagte er im Bundestag. Dort wurde der Etat seines Ministeriums debattiert.",
-   "url": "https://www.tagesschau.de/inland/bundestag-haushalt-rentenreform-schweitzer-100.html",
-   "at": "2026-11-27T11:07:08+00:00"
-  },
-  {
-   "source": "Der Spiegel",
-   "title": "Friedrich Merz: Das Schicksalsjahr des CDU-Kanzlers beginnt jetzt",
-   "desc": "Mit Not haben sich Union und SPD auf einen Haushalt verständigt – und dabei fast jedes Vertrauen zerstört. Dabei stehen ihnen die schwierigsten Aufgaben noch bevor.",
-   "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-das-schicksalsjahr-des-cdu-kanzlers-beginnt-jetzt-a-425929cf-a265-495d-8211-8c82318c8aa1",
-   "at": "2026-11-27T09:19:00+00:00"
   }
  ]
 }

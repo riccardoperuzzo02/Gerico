@@ -1,7 +1,35 @@
 {
  "code": "US",
- "asOf": "2026-11-28T09:17:33+00:00",
+ "asOf": "2026-11-28T11:17:33+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Millions of Children Are Losing Food Stamps",
+   "desc": "Republicans said the cuts, part of their domestic policy bill, would root out fraud and push adults to work. But two million children have lost benefits.",
+   "url": "https://www.nytimes.com/2026/11/28/us/politics/millions-of-children-are-losing-food-stamps.html",
+   "at": "2026-11-28T10:02:17+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "This Seattle Engineering Marvel Hid a Mystery: Pyramids of Dead Fish",
+   "desc": "What could have caused the piles of carcasses beneath the mile-and-a-half-long floating bridge that extended Seattle’s light rail across a lake?",
+   "url": "https://www.nytimes.com/2026/11/28/us/dead-fish-mystery-seattle.html",
+   "at": "2026-11-28T10:02:01+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "How One Woman’s Quest for Clean Water Shook Up Trinidad, Texas",
+   "desc": "An arrest over a Facebook post was followed by investigations, resignations and the disbanding of the city’s police force.",
+   "url": "https://www.nytimes.com/2026/11/28/us/texas-water-town.html",
+   "at": "2026-11-28T10:00:32+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "New wave of Democratic attorneys general may reshape the justice system",
+   "desc": "The Democratic victories could have major effects for what alleged crimes are investigated, lawsuits filed and court cases heard across the U.S.",
+   "url": "https://www.npr.org/2026/11/28/g-s1-155837/democratic-attorneys-general-justice-system-texas",
+   "at": "2026-11-28T10:00:00+00:00"
+  },
   {
    "source": "CNBC",
    "title": "Saudi Arabia shifts Vision 2030 spending amid economic and security pressure",
@@ -372,83 +400,6 @@
    "desc": "The case has become one of the most prominent in France's reckoning with sexual violence, as the #MeToo movement has faced resistance in the country, particularly in the arts.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
    "at": "2026-11-27T11:49:50+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Here's how GLP-1 drugs are changing people's shopping habits",
-   "desc": "More than 60 million Americans could be using the drugs by 2030, double the number that currently use them, according to a new forecast.",
-   "url": "https://www.cbsnews.com/news/glp-1-drugs-food-apparel-shopping-habits/",
-   "at": "2026-11-27T11:00:18+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Anchoring on DayQuil, hiding from JLO and losing Bruce Springsteen | Straight Up with Vlad and Kelly",
-   "desc": "This week, Vlad and Kelly hand over the producer's chair to you. In a special mailbag episode, they answer listener questions about everything from their most chaotic moments in live television and what it's really like to report from a war zone, to the celebrities who leave them starstruck and the pop culture opinions they might not say out loud. Happy Holidays from V&K!",
-   "url": "https://www.cbsnews.com/video/anchoring-on-dayquil-hiding-from-jlo-and-losing-bruce-springsteen-straight-up-with-vlad-and-kelly/",
-   "at": "2026-11-27T11:00:12+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
-   "desc": "A storm battered much of the country on Thursday, knocking out power to thousands of homes and disrupting travel. Today, Black Friday shopping deals kick off, and on Saturday New York City will hold the postponed Macy's Thanksgiving Day Parade.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
-   "at": "2026-11-27T10:59:36+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Chinese chip stocks notch biggest ever one-day gains as Beijing signals broader market support",
-   "desc": "Chinese stocks rebounded sharply after a rare intraday state media readout cheered investors as top policymakers pledged market liquidity support.",
-   "url": "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html",
-   "at": "2026-11-27T10:13:44+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
-   "desc": "They treated victims of one of Australia’s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they’re not Jewish.",
-   "url": "https://www.nytimes.com/2026/11/27/us/australia-bondi-beach-shooting-wedding.html",
-   "at": "2026-11-27T10:02:56+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Can luxury save Macy's?",
-   "desc": "This week's celebration of Macy's 100th Thanksgiving parade finds the department store at a turning point. After years of losing sales, the retailer is reimagining itself — as a higher-end destination.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6026486/macys-tries-to-reinvent-with-luxury",
-   "at": "2026-11-27T10:01:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
-   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
-   "at": "2026-11-27T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "12 strategies to cut your risk of dementia. Take this quiz to start",
-   "desc": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
-   "at": "2026-11-27T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-   "at": "2026-11-27T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Morning news brief",
-   "desc": "Thanksgiving storm pummels the East Coast, Americans expected to spend record amount on Black Friday, Israeli rival factions consider deals in race to form a new government.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6047116/morning-news-brief",
-   "at": "2026-11-27T09:47:08+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "New balloons will fly in the postponed 100th Macy's Thanksgiving Day Parade",
-   "desc": "Some new balloons are set to fly in the weather-delayed Macy's Thanksgiving Day Parade.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6043796/new-balloons-will-fly-in-the-postponed-100th-macys-thanksgiving-day-parade",
-   "at": "2026-11-27T09:45:12+00:00"
   }
  ]
 }

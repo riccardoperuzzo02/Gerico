@@ -1,20 +1,153 @@
 {
  "code": "US",
- "asOf": "2026-11-27T21:17:39+00:00",
+ "asOf": "2026-11-28T05:17:34+00:00",
  "items": [
+  {
+   "source": "New York Times",
+   "title": "Trump’s Embrace of Xi and Huang Stun China Critics in Washington",
+   "desc": "Warnings from hard-liners have grown more urgent amid what some call a winner-take-all race for A.I. dominance.",
+   "url": "https://www.nytimes.com/2026/11/28/us/politics/trump-china-critics-nvidia.html",
+   "at": "2026-11-28T05:01:13+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Power being slowly restored as heavy Thanksgiving storm eases",
+   "desc": "Heavy rain over flooded East Coast communities began easing Friday, and power was slowly restored to hundreds of thousands of customers.",
+   "url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/",
+   "at": "2026-11-28T03:54:12+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies",
+   "desc": "Ms. Stewart-Cousins, 76, served in the State Senate for 20 years. Her sudden death leaves a leadership void among top state Democrats.",
+   "url": "https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html",
+   "at": "2026-11-28T03:28:49+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "2 American Airlines Jets Clip Wings at Reagan Airport",
+   "desc": "No injuries were reported after two Boeing 737s made contact while taxiing at the airport outside Washington, D.C., during the busy Thanksgiving holiday weekend.",
+   "url": "https://www.nytimes.com/2026/11/27/us/wings-clipped-american-reagan-airport.html",
+   "at": "2026-11-28T02:55:37+00:00"
+  },
   {
    "source": "New York Times",
    "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
    "desc": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
-   "url": "https://www.nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html",
-   "at": "2026-11-27T21:08:35+00:00"
+   "url": "https://www.nytimes.com/2026/11/27/us/politics/supreme-court-rulings-midterms-voting.html",
+   "at": "2026-11-28T02:46:33+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. Air Force cloud platform breached by hackers, report says",
+   "desc": "The alleged incident follows a series of breaches and outages that have been reported at federal agencies this month.",
+   "url": "https://www.cbsnews.com/news/u-s-air-force-cloud-platform-breached-by-hackers/",
+   "at": "2026-11-28T02:44:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Planning Board to Hold Last-Minute Meeting to Consider Trump’s D.C. Construction",
+   "desc": "President Trump will lose control over the National Capital Planning Commission after Democrats take control of Congress in January. It could give final approval to some of his prized projects.",
+   "url": "https://www.nytimes.com/2026/11/27/us/politics/planning-board-trump-construction-meeting.html",
+   "at": "2026-11-28T02:33:52+00:00"
   },
   {
    "source": "New York Times",
    "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
-   "desc": "The storm brought heavy rain and strong winds from Virginia to New York, disrupting travel during the holiday season. Conditions were gradually improving on Friday.",
+   "desc": "Conditions continued to improve on Friday after heavy rain and strong winds lashed the coast from Virginia to New York. But many remained without power and travel disruptions persisted.",
    "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html",
-   "at": "2026-11-27T20:37:00+00:00"
+   "at": "2026-11-28T02:11:55+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Some Americans canceled or postponed Thanksgiving dinners amid power outages and storms.",
+   "desc": "Some Americans canceled or postponed Thanksgiving dinners amid power outages and storms. They were rescheduled to Friday, Saturday and beyond.",
+   "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-delayed-storm.html",
+   "at": "2026-11-28T02:07:54+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "For One Stormy Moment, D.C. Reveled in a Blank Wall Where Trump’s Name Once Hung",
+   "desc": "High winds dislodged a section of tarp obscuring the removal of the president’s name from the John F. Kennedy Center for the Performing Arts, whipping up some members of the capital.",
+   "url": "https://www.nytimes.com/2026/11/27/us/politics/kennedy-center-trump-name-tarp.html",
+   "at": "2026-11-28T01:26:03+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "2 American Airlines jets clip wings on tarmac of Reagan Airport",
+   "desc": "There were no injuries when the wingtips of two American Airlines jets made contact Friday evening on the tarmac of Ronald Reagan Washington National Airport outside Washington, D.C.",
+   "url": "https://www.cbsnews.com/news/american-airlines-jets-clip-wings-reagan-airport/",
+   "at": "2026-11-28T01:05:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "U.S. Air Force cloud platform breached by hackers, report says",
+   "desc": "The U.S. Air Force's cloud platform was breached by hackers, possibly exposing sensitive military and personnel information, according to a Reuters report. The Air Force did not confirm or deny the breach. Nicole Sganga has more.",
+   "url": "https://www.cbsnews.com/video/us-air-force-cloud-platform-breached-by-hackers-report-says/",
+   "at": "2026-11-28T01:01:14+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "2 American Airlines jets clip their wings at Reagan National Airport",
+   "desc": "Two American Airlines jets clipped their wings at Reagan National Airport outside Washington, D.C., after colliding.",
+   "url": "https://www.cbsnews.com/video/2-american-airlines-jets-clip-their-wings-at-reagan-national-airport/",
+   "at": "2026-11-28T00:58:44+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Shoppers expected to spend nearly $13 billion this Black Friday, Adobe says",
+   "desc": "Shoppers are expected to spend nearly $13 billion on Black Friday alone, according to Adobe, as the holiday shopping rush kicks off. Tom Hanson has the story.",
+   "url": "https://www.cbsnews.com/video/shoppers-expected-to-spend-nearly-13-billion-this-black-friday-adobe-says/",
+   "at": "2026-11-28T00:58:30+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "How severe weather rocked this Thanksgiving, from power outages to flight delays",
+   "desc": "Americans across the country faced disruptions from severe weather this Thanksgiving, including delayed flights, flooding and power outages. Lilia Luciano reports and Bill Kelly has the forecast.",
+   "url": "https://www.cbsnews.com/video/how-severe-weather-rocked-this-thanksgiving-from-power-outages-to-flight-delays/",
+   "at": "2026-11-28T00:37:06+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "California Hiker Falls 500 Feet to His Death While Trying to Help Son",
+   "desc": "Guillermo Batres, 44, slipped while hiking Mount Baden-Powell, northeast of Los Angeles, earlier this week. Two other hikers who were nearby rescued his teenage son and called 911.",
+   "url": "https://www.nytimes.com/2026/11/27/us/california-baden-powell-hiking-death.html",
+   "at": "2026-11-28T00:09:46+00:00"
+  },
+  {
+   "source": "New York Times",
+   "title": "Five Big Questions for the 2028 Presidential Race",
+   "desc": "Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?",
+   "url": "https://www.nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html",
+   "at": "2026-11-27T23:51:52+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "11/27: CBS Evening News",
+   "desc": "Severe weather rocks Thanksgiving; Shoppers to spend big on Black Friday.",
+   "url": "https://www.cbsnews.com/video/112726-cbs-evening-news/",
+   "at": "2026-11-27T23:30:00+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "Iowa lead detonation results expected soon, EPA says",
+   "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
+   "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
+   "at": "2026-11-27T23:08:17+00:00"
+  },
+  {
+   "source": "CBS News",
+   "title": "OpenAI countersues Apple over allegations of stealing trade secrets",
+   "desc": "OpenAI alleged in a lawsuit Friday that Apple sets up departing employees to be accused of stealing trade secrets.",
+   "url": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/",
+   "at": "2026-11-27T22:14:43+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Inflation has shoppers hunting for value. That bodes well for Black Friday",
+   "desc": "Even as consumers face macroeconomic headwinds, retailers are expecting robust holiday spending through Black Friday and beyond.",
+   "url": "https://www.cnbc.com/2026/11/27/black-friday-2026-inflation-value-deals.html",
+   "at": "2026-11-27T22:00:57+00:00"
   },
   {
    "source": "CBS News",
@@ -22,13 +155,6 @@
    "desc": "The storm hammered sections of the East Coast with torrential rain, high winds and flooding, knocking out power to hundreds of thousands of customers.",
    "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
    "at": "2026-11-27T19:57:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Andrea Stewart-Cousins, New York’s First Female Senate Majority Leader, Dies",
-   "desc": "Ms. Stewart-Cousins, the majority leader of the New York State Senate, at a leadership reception on Nov. 7, 2025.",
-   "url": "https://www.nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html",
-   "at": "2026-11-27T19:43:58+00:00"
   },
   {
    "source": "CBS News",
@@ -71,13 +197,6 @@
    "desc": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
    "url": "https://www.nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html",
    "at": "2026-11-27T17:26:37+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "AI shopping agents are having a moment, but Amazon and a growing number of sites threaten to stunt their growth",
-   "desc": "AI shopping agents from OpenAI, Meta, Google and Instinct promise to help users shop, but they're hitting roadblocks at Amazon and other retailers.",
-   "url": "https://www.cnbc.com/2026/11/27/ai-shopping-agents-retailer-blocks.html",
-   "at": "2026-11-27T16:43:14+00:00"
   },
   {
    "source": "CNBC",
@@ -148,13 +267,6 @@
    "desc": "Visa is bracing for a battle online among AI shopping agents targeted by fraudulent bots. Ash-har Quraishi has more.",
    "url": "https://www.cbsnews.com/video/ai-shopping-agents-face-huge-threats-on-black-friday-heres-what-to-know/",
    "at": "2026-11-27T14:33:47+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Five Big Questions for the 2028 Presidential Race",
-   "desc": "Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?",
-   "url": "https://www.nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html",
-   "at": "2026-11-27T14:33:05+00:00"
   },
   {
    "source": "CBS News",
@@ -262,6 +374,13 @@
    "at": "2026-11-27T10:59:36+00:00"
   },
   {
+   "source": "CNBC",
+   "title": "Chinese chip stocks notch biggest ever one-day gains as Beijing signals broader market support",
+   "desc": "Chinese stocks rebounded sharply after a rare intraday state media readout cheered investors as top policymakers pledged market liquidity support.",
+   "url": "https://www.cnbc.com/2026/11/27/china-chip-stocks-beijing-market-support.html",
+   "at": "2026-11-27T10:13:44+00:00"
+  },
+  {
    "source": "New York Times",
    "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
    "desc": "They treated victims of one of Australia’s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they’re not Jewish.",
@@ -277,16 +396,16 @@
   },
   {
    "source": "NPR",
-   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
-   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
    "source": "NPR",
-   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
+   "title": "Screen-free tweens try their hand at Dungeons & Dragons",
+   "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -337,139 +456,6 @@
    "desc": "Nike, Adidas and Puma are betting big on Formula 1 as the sport's cultural influence grows and younger audiences fuel its appeal.",
    "url": "https://www.cnbc.com/2026/11/27/nike-formula-1-sportswear-brands-sponsorship-adidas-puma.html",
    "at": "2026-11-27T05:46:04+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Macy's Thanksgiving Day Parade postponed for 1st time in history",
-   "desc": "For the first time in history, the Macy's Thanksgiving Day Parade has been postponed due to weather, Macy's said Wednesday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-day-parade-postponed/",
-   "at": "2026-11-27T03:40:10+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
-   "desc": "Iran's foreign minister Abbas Araghchi said \"The incident is suspicious and looks like a precooked recipe for war.\"",
-   "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-   "at": "2026-11-27T03:30:23+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "What stores are open on Black Friday? Here are the hours.",
-   "desc": "Many retailers open their doors early on Black Friday, but the stock market will have shorter hours. Here's what to know.",
-   "url": "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/",
-   "at": "2026-11-27T03:01:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump to visit maker of semiconductor chips, including Nvidia's",
-   "desc": "President Trump will visit the Phoenix TSMC facility, one of the largest manufacturers of advanced chips, including Nvidia's.",
-   "url": "https://www.cbsnews.com/news/trump-visit-tsmc-semiconductor-facility-phoenix-nvidia/",
-   "at": "2026-11-27T02:34:45+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Iowa lead detonation results expected soon, EPA says",
-   "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
-   "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
-   "at": "2026-11-27T01:13:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "High school band raises $350K to stay for Macy's Thanksgiving parade",
-   "desc": "Other marching bands from around the U.S. are also raising funds to cover the cost of staying in New York City after the parade was rescheduled for Saturday.",
-   "url": "https://www.cbsnews.com/news/macys-thanksgiving-parade-marching-bands-delay-cost/",
-   "at": "2026-11-27T00:52:28+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
-   "desc": "The famed pier in Pacifica, Calif., had long been crumbling. This week, a portion of it succumbed to fierce waves and toppled into the sea.",
-   "url": "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
-   "at": "2026-11-27T00:46:52+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Texas town helps high school marching band stay in postponed Thanksgiving Day Parade",
-   "desc": "After the Thanksgiving Day Parade was postponed, a Texas high school saw an outpouring of support to make sure the marching band could still perform.",
-   "url": "https://www.cbsnews.com/video/texas-town-helps-high-school-marching-band-stay-postponed-thanksgiving-day-parade/",
-   "at": "2026-11-27T00:44:32+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "How to protect your packages from porch pirates",
-   "desc": "'Tis the season for online orders and holiday deliveries. But those packages stacking up outside the house are a lure for thieves, just waiting to steal your stuff. Jason Allen has more on protecting your items.",
-   "url": "https://www.cbsnews.com/video/how-to-protect-packages-porch-pirates/",
-   "at": "2026-11-27T00:37:17+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Inside Visa's effort to protect your money from AI holiday shopping scams",
-   "desc": "Friday is Black Friday, with Cyber Monday just around the corner, and a lot of shopping will be done by AI assistants. Scammers are using the same technology to rip off customers. Ash-har Quraishi has an exclusive look inside Visa's innovation center.",
-   "url": "https://www.cbsnews.com/video/inside-visas-effort-protect-your-money-ai-holiday-shopping-scams/",
-   "at": "2026-11-27T00:34:31+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Trump signs severe weather disaster declarations from Mar-a-Lago on Thanksgiving",
-   "desc": "President Trump celebrated Thanksgiving at his resort in Palm Beach, Florida. He signed disaster declarations for Florida in the wake of severe weather. Weijia Jiang has more.",
-   "url": "https://www.cbsnews.com/video/trump-signs-severe-weather-disaster-declarations-mar-a-lago-thanksgiving/",
-   "at": "2026-11-27T00:32:27+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Thanksgiving Day Parade performers vow to march on despite postponement",
-   "desc": "The postponed Thanksgiving Day Parade has set up an unprecedented series of challenges for tens of thousands of people walking, working and watching along the parade route. Lilia Luciano reports.",
-   "url": "https://www.cbsnews.com/video/thanksgiving-day-parade-performers-vow-march-despite-postponement/",
-   "at": "2026-11-27T00:31:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Severe weather this Thanksgiving hits U.S. from California to New York",
-   "desc": "A Thanksgiving nor'easter brought powerful winds that knocked down a tree, crushing a home in Maryland. Major floods hit Virginia and New Jersey and the California coast were hit by king tides. Tom Hanson reports and Scott Padgett has the forecast.",
-   "url": "https://www.cbsnews.com/video/severe-weather-thanksgiving-hits-us-california-new-york/",
-   "at": "2026-11-27T00:27:00+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Thanksgiving travel nightmare hits airports amid powerful nor'easter",
-   "desc": "More than 2,000 flights have been delayed this Thanksgiving, and more than 400 were canceled as a powerful nor'easter, Cristian Benavides reports.",
-   "url": "https://www.cbsnews.com/video/thanksgiving-travel-nightmare-hits-airports-amid-powerful-noreaster/",
-   "at": "2026-11-27T00:27:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Pregnant Inmate Escapes in New Mexico Prison Transport Vehicle",
-   "desc": "The inmate, Rebecca Taylor, 26, took control of the S.U.V. in a Whataburger parking lot as she was being returned to prison from a prenatal appointment, the authorities said.",
-   "url": "https://www.nytimes.com/2026/11/26/us/pregnant-inmate-escapes-new-mexico.html",
-   "at": "2026-11-27T00:23:58+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Sovereign wealth funds are acting more like private equity giants — and inheriting their risks",
-   "desc": "Sovereign wealth funds are increasingly originating deals, taking controlling stakes and building their own investment platforms.",
-   "url": "https://www.cnbc.com/2026/11/27/swf-private-equity-risks.html",
-   "at": "2026-11-27T00:22:29+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "11/26: CBS Evening News",
-   "desc": "Dangerous storms battering the East and West; coast-to-coast storms disrupt travel for millions.",
-   "url": "https://www.cbsnews.com/video/112626-cbs-evening-news/",
-   "at": "2026-11-26T23:30:00+00:00"
-  },
-  {
-   "source": "New York Times",
-   "title": "Bipartisan Desire to Regulate A.I. Faces Obstacles in Congress",
-   "desc": "Members of both parties say they want to tackle artificial intelligence policy, but the slow pace of legislating and turf battles could stand in the way.",
-   "url": "https://www.nytimes.com/2026/11/26/us/politics/ai-regulation-congress-nvidia.html",
-   "at": "2026-11-26T23:19:09+00:00"
-  },
-  {
-   "source": "CBS News",
-   "title": "Rocker the coonhound nabs Best in Show at 2026 National Dog Show",
-   "desc": "The black and tan coonhound defeated six other outstanding dogs to claim the 2026 National Dog Show's top honor.",
-   "url": "https://www.cbsnews.com/news/2026-national-dog-show-winner-rocker-coonhound/",
-   "at": "2026-11-26T22:53:00+00:00"
   }
  ]
 }

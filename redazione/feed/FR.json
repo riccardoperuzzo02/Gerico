@@ -1,20 +1,97 @@
 {
  "code": "FR",
- "asOf": "2026-11-28T05:17:34+00:00",
+ "asOf": "2026-11-28T07:17:34+00:00",
  "items": [
   {
+   "source": "franceinfo",
+   "title": "Deux employés de Médecins sans frontières tués par une frappe israélienne à Gaza",
+   "desc": "L'armée israélienne les a accusés d'être des \"terroristes\" du Hamas.",
+   "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/deux-employes-de-medecins-sans-frontieres-tues-par-une-frappe-israelienne-a-gaza_8304309.html",
+   "at": "2026-11-28T06:58:04+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Attention aux fausses publicités générées par intelligence artificielle pendant le Black Friday",
+   "desc": "Produits créés de toutes pièces, visuels ultraréalistes et identités de marques usurpées : les fausses publicités pullulent pendant ce week-end de promotion. Leur but est de récupérer les données bancaires de leurs victimes.",
+   "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/attention-aux-fausses-publicites-generees-par-intelligence-artificielle-pendant-le-black-friday_8303706.html",
+   "at": "2026-11-28T06:55:38+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Est-il possible d'obliger les journalistes à \"respecter le secret de l'instruction\", comme le souhaite Marine Le Pen ?",
+   "desc": "La présidente du Rassemblement national souhaite limiter le partage d'informations pendant une enquête. Toutefois, les journalistes ne sont pas soumis à cette obligation légale et peuvent s'abriter derrière la protection de leurs sources.",
+   "url": "https://www.franceinfo.fr/politique/marine-le-pen/est-il-possible-d-obliger-les-journalistes-a-respecter-le-secret-de-l-instruction-comme-le-souhaite-marine-le-pen_8303805.html",
+   "at": "2026-11-28T06:38:37+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "Dans l'affaire des fuites au profit du RN, le bureau et le domicile d'Ambroise de Rancourt, coordinateur du programme présidentiel du parti, ont été perquisitionnés",
+   "desc": "Ce proche de Marine Le Pen est soupçonné d'avoir été le destinataire d'informations confidentielles transmises au Rassemblement national via le ministère de l'Intérieur.",
+   "url": "https://www.franceinfo.fr/politique/front-national/dans-l-affaire-des-fuites-au-profit-du-rn-le-bureau-et-le-domicile-d-ambroise-de-rancourt-coordinateur-du-programme-presidentiel-du-parti-ont-ete-perquisitionnes_8304285.html",
+   "at": "2026-11-28T06:29:53+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Ça fait pschitt !\" : pourquoi les accusations d'antisémitisme visant Jordan Bardella n'entament pas (encore) la popularité du RN",
+   "desc": "Les révélations de Mediapart n'ont pas altéré le soutien de l'électorat du Rassemblement national au président du parti, selon plusieurs enquêtes d'opinion réalisées en octobre. Mais ces accusations pourraient compliquer la stratégie de normalisation de Marine Le Pen.",
+   "url": "https://www.franceinfo.fr/politique/jordan-bardella/propos-antisemites-attribues-a-jordan-bardella/ca-fait-pschitt-pourquoi-les-accusations-d-antisemitisme-visant-jordan-bardella-n-entament-pas-encore-la-popularite-du-rn_8303220.html",
+   "at": "2026-11-28T05:58:24+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Les immigrés sont instrumentalisés par les politiques\" : en Espagne, le modèle d'immigration défendu par Pedro Sanchez au cœur de la campagne des législatives",
+   "desc": "A Barcelone, la possible victoire de la droite et de l'extrême droite lors du scrutin de dimanche inquiète certains étrangers qui espèrent bénéficier d'une récente loi de régularisation. Comme ailleurs en Europe, le débat politique se crispe autour du sujet.",
+   "url": "https://www.franceinfo.fr/monde/espagne/reportage-les-immigres-sont-instrumentalises-par-les-politiques-en-espagne-le-modele-d-immigration-defendu-par-pedro-sanchez-au-c-ur-de-la-campagne-des-legislatives_8303004.html",
+   "at": "2026-11-28T05:57:52+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Je préfère acheter du bois du coin que du pétrole de Russie\" : dans ce village du Charolais, un réseau de chaleur remplace les chaudières au fioul",
+   "desc": "Notre série \"En toute sobriété\" met en avant des solutions locales pour réduire nos consommations et agir face à l'urgence climatique. Dans cet épisode, une petite commune rurale fait diminuer la facture et l'empreinte carbone du chauffage de ses habitants grâce à une chaudière collective, alimentée par du bois local.",
+   "url": "https://www.franceinfo.fr/environnement/actions-ecologiques/en-toute-sobriete-face-a-la-crise-climatique/reportage-je-prefere-acheter-du-bois-du-coin-que-du-petrole-de-russie-dans-ce-village-du-charolais-un-reseau-de-chaleur-remplace-les-chaudieres-au-fioul_8295641.html",
+   "at": "2026-11-28T05:57:08+00:00"
+  },
+  {
    "source": "Le Monde",
-   "title": "EN DIRECT, guerre en Ukraine : des centaines de drones ukrainiens lancés vers Moscou",
-   "desc": "Le maire de Moscou affirme que « la plupart » des 462 aéronefs, lancés dans la nuit de vendredi à samedi, « ont été neutralisés » à l’approche lointaine, sans plus de précisions et sans indiquer s’il y avait des victimes ou des dégâts.",
-   "url": "https://www.lemonde.fr/international/live/2026/11/28/en-direct-guerre-en-ukraine-des-centaines-de-drones-ukrainiens-lances-vers-moscou_6814183_3210.html",
-   "at": "2026-11-28T05:13:57+00:00"
+   "title": "Le Pentagone assure que ses systèmes informatiques sont « sûrs et sécurisés », après une possible cyberattaque annoncée par des médias",
+   "desc": "L’agence Reuters, puis NBC News citant un responsable anonyme, ont avancé que le cloud de l’armée de l’air avait été piraté, exposant possiblement « des informations militaires sensibles ».",
+   "url": "https://www.lemonde.fr/international/article/2026/11/28/le-pentagone-assure-que-ses-systemes-informatiques-sont-surs-et-securises-apres-une-possible-cyberattaque-annoncee-par-des-medias_6816072_3210.html",
+   "at": "2026-11-28T05:30:17+00:00"
+  },
+  {
+   "source": "franceinfo",
+   "title": "\"Un bon petit soldat\", \"Paper Tiger\", \"Congo Boy\" : quels sont les films à voir (ou pas) cette semaine au cinéma ?",
+   "desc": "Découvrez les critiques de notre sélection des films sortis en salles le mercredi 25 novembre 2026.",
+   "url": "https://www.franceinfo.fr/culture/cinema/sorties-de-films/un-bon-petit-soldat-paper-tiger-congo-boy-quels-sont-les-films-a-voir-ou-pas-cette-semaine-au-cinema_8301162.html",
+   "at": "2026-11-28T05:10:01+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Au Canada, le premier ministre, Mark Carney, promet la fin du sans-abrisme d’ici à dix ans",
+   "desc": "Le gouvernement s’est engagé à éradiquer un phénomène qui touche de plus en plus de Canadiens. Un défi de taille dans un pays victime d’une sévère crise du logement. A Montréal, le loyer moyen a augmenté de près de 70 % en moins de dix ans.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/28/au-canada-le-premier-ministre-mark-carney-promet-la-fin-du-sans-abrisme-d-ici-a-dix-ans_6816067_3210.html",
+   "at": "2026-11-28T05:00:33+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Guerre en Ukraine : Kiev assume l’extension du conflit sur de nouveaux fronts",
+   "desc": "Ces derniers jours, l’Ukraine s’est enhardie, frappant des navires russes en mer Baltique et en Méditerranée, jusque dans le port libyen de Benghazi. Kiev cherche à motiver l’alliance occidentale à continuer d’aider le pays. Mais face à cette nouvelle escalade, les Européens sont partagés entre le soutien et l’inquiétude.",
+   "url": "https://www.lemonde.fr/international/article/2026/11/28/guerre-en-ukraine-kiev-assume-l-extension-du-conflit-sur-de-nouveaux-fronts_6816064_3210.html",
+   "at": "2026-11-28T05:00:09+00:00"
   },
   {
    "source": "Le Monde",
    "title": "A Berlin, Jean-Luc Mélenchon se défend de germanophobie : « Souvent nous sommes jaloux, mais nous ne le disons pas »",
-   "desc": "Venu dans la capitale allemande présenter l’un de ses ouvrages, le candidat de La France insoumise à la présidentielle a nié tout sentiment anti-allemand. Tout en reprenant ses accusations contre le réarmement de l’Allemagne, et son modèle ordolibéral.",
+   "desc": "Venu dans la capitale allemande présenter l’un de ses ouvrages, le candidat de La France insoumise à la présidentielle a nié tout sentiment anti-allemand. Tout en reprenant ses accusations contre le réarmement du pays et son modèle ordolibéral.",
    "url": "https://www.lemonde.fr/international/article/2026/11/28/a-berlin-jean-luc-melenchon-se-defend-de-germanophobie-souvent-nous-sommes-jaloux-mais-nous-ne-le-disons-pas_6816060_3210.html",
-   "at": "2026-11-28T04:30:11+00:00"
+   "at": "2026-11-28T04:30:08+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Plongée dans le monde des IA débridées, ces intelligences artificielles déchaînées pouvant servir des desseins illégaux",
+   "desc": "Accessibles en quelques clics sur Internet, les intelligences artificielles dites « ablitérées », auxquelles on a retiré les garde-fous, répondent à la plupart des questions dangereuses que leurs concurrentes commerciales repoussent. Qui les conçoit, et pour quelles raisons ?",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/28/plongee-dans-le-monde-des-ia-debridees-ces-intelligences-artificielles-dechainees-pouvant-servir-des-desseins-illegaux_6816059_4408996.html",
+   "at": "2026-11-28T04:00:26+00:00"
   },
   {
    "source": "Le Monde",
@@ -22,13 +99,6 @@
    "desc": "L’ONG s’est dite « bouleversée et révoltée par le meurtre » des deux gardiens travaillant dans une de ses cliniques frappée par les forces armées israéliennes, qui les accusent de leur côté d’être des membres du Hamas.",
    "url": "https://www.lemonde.fr/international/article/2026/11/28/gaza-l-armee-israelienne-tue-deux-employes-de-medecins-sans-frontieres-qu-elle-qualifie-de-terroristes_6816022_3210.html",
    "at": "2026-11-28T02:30:38+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Trois policiers de la BAC devant le tribunal de Bobigny pour des violences aggravées contre un Algérien",
-   "desc": "De la prison ferme a été requise contre les prévenus, accusés d’avoir, en mars 2025, passé à tabac, volé et arbitrairement détenu à l’intérieur de leur véhicule Samir T., un SDF de 34 ans qui s’adonnait selon eux au trafic de cigarettes.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/28/trois-policiers-de-la-bac-devant-le-tribunal-de-bobigny-pour-des-violences-aggravees-contre-un-algerien_6815989_3224.html",
-   "at": "2026-11-28T01:34:43+00:00"
   },
   {
    "source": "franceinfo",
@@ -39,10 +109,10 @@
   },
   {
    "source": "Le Monde",
-   "title": "Un concert de « Rock antiwokisme » organisé par une mouvance identitaire interdit dans le Rhône et l’Isère",
-   "desc": "Les autorités redoutent la diffusion de discours haineux lors de cet événement clandestin, organisé par une figure de l’ultra-droite déjà connue des services de l’Etat.",
+   "title": "Un concert « Rock antiwokisme » organisé par une mouvance identitaire interdit dans le Rhône et l’Isère",
+   "desc": "Les autorités redoutent la diffusion de discours haineux lors de cet événement clandestin, organisé par une figure de l’ultradroite déjà connue des services de l’Etat.",
    "url": "https://www.lemonde.fr/politique/article/2026/11/27/un-concert-de-rock-antiwokisme-organise-par-une-mouvance-identitaire-interdit-dans-le-rhone-et-l-isere_6815938_823448.html",
-   "at": "2026-11-27T22:55:01+00:00"
+   "at": "2026-11-27T22:54:59+00:00"
   },
   {
    "source": "franceinfo",
@@ -57,6 +127,13 @@
    "desc": "Cette loi consacre le fait laïc au Québec et tranche avec le multiculturalisme de l’Etat fédéral canadien, ce qui crée des remous dans la classe politique.",
    "url": "https://www.lemonde.fr/international/article/2026/11/27/la-cour-supreme-canadienne-consacre-la-laicite-au-quebec-dans-une-decision-historique_6815937_3210.html",
    "at": "2026-11-27T22:06:52+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "OpenAI accuse Apple de vol de secrets et de pressions sur ses fournisseurs",
+   "desc": "Les deux partenaires se rapprochent de mois en mois d’une situation de rivaux, et se rendent désormais coup pour coup devant la justice.",
+   "url": "https://www.lemonde.fr/economie/article/2026/11/27/openai-accuse-apple-de-vol-de-secrets-et-de-pressions-sur-ses-fournisseurs_6815936_3234.html",
+   "at": "2026-11-27T21:49:34+00:00"
   },
   {
    "source": "franceinfo",
@@ -87,25 +164,18 @@
    "at": "2026-11-27T20:45:15+00:00"
   },
   {
-   "source": "Le Monde",
-   "title": "Mathilde Panot et trois autres députés « insoumis » visés par des menaces de mort provenant d’une adresse e-mail reprenant le nom de l’auteur de l’attentat raciste de Trappes",
-   "desc": "Dans son courrier envoyé à Laure Beccuau, la procureure de Paris, Mathilde Panot évoque des e-mails provenant de l’adresse « kevintessierleheros@outlook.fr » et également envoyés aux députés Danièle Obono, Manuel Bompard et Aly Diouara.",
-   "url": "https://www.lemonde.fr/societe/article/2026/11/27/mathilde-panot-et-trois-autres-deputes-insoumis-vises-par-des-menaces-de-mort-provenant-d-une-adresse-e-mail-reprenant-le-nom-de-l-auteur-de-l-attentat-raciste-de-trappes_6815932_3224.html",
-   "at": "2026-11-27T20:40:43+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le père de Pengo Bossio Wangi, tué dans l'attentat raciste de Trappes, annonce qu'il ne participera pas à l'hommage national",
-   "desc": "Dénonçant \"l'indifférence des officiels de la nation\" à son égard, Bolema Bossio Wangi a annoncé vendredi, sur RTL, qu'il ne participera pas à l'hommage national qui sera rendu à son fils le 4 décembre.",
-   "url": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/le-pere-de-pengo-bossio-wangi-tue-dans-l-attentat-raciste-de-trappes-annonce-qu-il-ne-participera-pas-a-l-hommage-national_8303784.html",
-   "at": "2026-11-27T20:32:08+00:00"
-  },
-  {
    "source": "franceinfo",
    "title": "La commission de sécurité valide la réouverture du BHV Marais à Paris après trois semaines de fermeture",
    "desc": "Fermé depuis le 9 novembre pour défaut d'assurance et non-conformité, le grand magasin devra tout de même réaliser des travaux de sécurité incendie. En parallèle, trois offres de reprise ont été déposées vendredi devant le tribunal de commerce de Paris dans le cadre de son redressement judiciaire.",
    "url": "https://www.franceinfo.fr/economie/la-commission-de-securite-valide-la-reouverture-du-bhv-marais-a-paris-apres-trois-semaines-de-fermeture_8303787.html",
    "at": "2026-11-27T20:18:51+00:00"
+  },
+  {
+   "source": "Le Monde",
+   "title": "Ecrits antisémites : la défense de Jordan Bardella patine, Marine Le Pen maintient timidement sa confiance",
+   "desc": "Interrogé sur le contenu de la plainte du président du RN contre « Mediapart » pour « faux et usage de faux », son avocat a évoqué des courriels périphériques aux échanges incriminés.",
+   "url": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-la-defense-de-jordan-bardella-patine-marine-le-pen-maintient-timidement-sa-confiance_6815931_823448.html",
+   "at": "2026-11-27T20:14:22+00:00"
   },
   {
    "source": "franceinfo",
@@ -122,48 +192,6 @@
    "at": "2026-11-27T20:00:26+00:00"
   },
   {
-   "source": "franceinfo",
-   "title": "La préfecture de l'Isère interdit un concert organisé par \"une mouvance identitaire nationaliste, voire néonazie\" samedi",
-   "desc": "L'organisateur de ce concert de Rock présenté comme \"antiwokisme\" serait \"une figure structurante de l'ultra-droite régionale\", a précisé la préfecture de l'Isère dans son communiqué.",
-   "url": "https://www.franceinfo.fr/faits-divers/la-prefecture-de-l-isere-interdit-un-concert-organise-par-une-mouvance-identitaire-nationaliste-voire-neonazie-samedi_8303742.html",
-   "at": "2026-11-27T19:48:01+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La mairie de Paris va augmenter de deux euros le prix du stationnement dans ses rues pour les \"non-résidents\" en avril 2027",
-   "desc": "La première heure passera ainsi à 8 euros dans les 11 premiers arrondissements et à 6 euros dans le reste de la capitale, tandis que la durée maximale sera abaissée à quatre heures.",
-   "url": "https://www.franceinfo.fr/economie/automobile/la-mairie-de-paris-va-augmenter-de-deux-euros-le-prix-du-stationnement-dans-ses-rues-pour-les-non-residents-en-avril-2027_8303736.html",
-   "at": "2026-11-27T19:34:04+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "En Cisjordanie occupée, la lente asphyxie du système de santé palestinien",
-   "desc": "A Naplouse, alors que les checkpoints et les attaques de colons entravent l’accès aux soins des malades et le travail des urgentistes, les impayés de l’Autorité palestinienne fragilisent l’ensemble du maillage sanitaire du territoire.",
-   "url": "https://www.lemonde.fr/international/article/2026/11/27/en-cisjordanie-occupee-la-lente-asphyxie-du-systeme-de-sante-palestinien_6815929_3210.html",
-   "at": "2026-11-27T19:30:02+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Dans le Pas-de-Calais inondé, la colère des sinistrés : « Ce n’est plus possible. Je ne vais pas attendre tous les hivers le moment où l’eau monte chez moi »",
-   "desc": "Plus de 200 communes du département ont été touchées par la montée des eaux de la rivière Canche. Alors que la décrue s’amorce, les habitants cherchent des responsables et redoutent la suite de l’hiver.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/27/dans-le-pas-de-calais-inonde-le-ras-le-bol-des-sinistres-faut-imaginer-ce-que-c-est-l-eau-boueuse-qui-monte-chez-vous_6815928_3244.html",
-   "at": "2026-11-27T19:15:54+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le mode de calcul d'une aide à l'autonomie des seniors modifié à partir de 2027, augmentant le reste à charge de certains bénéficiaires",
-   "desc": "Cette nouvelle formule de calcul s'appliquera aux droits ouverts à compter de cette date, ainsi qu'à ceux ouverts auparavant à l'occasion de l'actualisation annuelle de la participation financière du bénéficiaire, précise le décret.",
-   "url": "https://www.franceinfo.fr/sante/le-mode-de-calcul-d-une-aide-a-l-autonomie-des-seniors-modifie-a-partir-de-2027-augmentant-le-reste-a-charge-de-certains-beneficiaires_8303703.html",
-   "at": "2026-11-27T18:51:15+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Vladimir Poutine inaugure un nouveau sous-marin nucléaire",
-   "desc": "Le président russe assure que sa flotte va recevoir d'ici à 2030 cinq autres engins similaires, qui jouent un rôle central dans la dissuasion nucléaire.",
-   "url": "https://www.franceinfo.fr/monde/russie/vladimir-poutine-inaugure-un-nouveau-sous-marin-nucleaire_8303691.html",
-   "at": "2026-11-27T18:36:13+00:00"
-  },
-  {
    "source": "Le Monde",
    "title": "Fuite d’informations confidentielles vers le RN : Ambroise de Rancourt, le responsable du programme présidentiel de Marine Le Pen, soupçonné d’être le principal destinataire",
    "desc": "Selon les informations du « Monde », l’énarque de 39 ans est celui qui a été visé par la perquisition de l’IGPN au siège du parti d’extrême droite, le 9 novembre.",
@@ -176,13 +204,6 @@
    "desc": "Dans un entretien au « Monde », le chercheur explique que la loi, votée en août, permettant le retour des combattants du PKK à la vie civile n’a pas changé le rapport de force favorable à Ankara. Affaiblis militairement et politiquement, les Kurdes n’ont que très peu de marge de manœuvre dans ces négociations, qui permettent au président turc de renforcer son pouvoir.",
    "url": "https://www.lemonde.fr/international/article/2026/11/27/salim-cevik-politiste-en-turquie-les-kurdes-ne-negocient-plus-vraiment-ils-subissent-une-sorte-de-diktat-de-la-part-du-gouvernement-d-erdogan_6815922_3210.html",
    "at": "2026-11-27T18:30:02+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Une pétition lancée pour dénoncer les \"conditions de détention moyenâgeuses\" d'un Français au Cambodge",
-   "desc": "Privé de son traitement médical et enfermé avec 80 détenus dans une cellule de 40 m², un quadragénaire originaire de Clermont-Ferrand subit des conditions de détention indécentes. Sa famille lance une pétition et son avocat réclame une prise en charge médicale d'urgence.",
-   "url": "https://www.franceinfo.fr/monde/asie/une-petition-lancee-pour-denoncer-les-conditions-de-detention-moyenageuses-d-un-francais-au-cambodge_8303580.html",
-   "at": "2026-11-27T17:32:16+00:00"
   },
   {
    "source": "franceinfo",
@@ -204,13 +225,6 @@
    "desc": "\"Tu connais le vrai visage de l'empire le jour où tu lui tapes sur les nerfs ou que tu franchis ses limites\", a réagi Francesca Albanese.",
    "url": "https://www.franceinfo.fr/monde/proche-orient/israel-palestine/le-costa-rica-refoule-la-rapporteure-de-l-onu-pour-les-palestiniens-francesca-albanese_8302353.html",
    "at": "2026-11-27T17:00:18+00:00"
-  },
-  {
-   "source": "Le Monde",
-   "title": "Pourquoi la rougeole, maladie humaine la plus contagieuse connue, flambe de nouveau dans de nombreux pays",
-   "desc": "A la suite d’un affaiblissement de la couverture vaccinale sous l’effet des discours et politiques antivax, la rougeole s’étend notamment en Amérique du Nord. Mais la France n’est pas non plus à l’abri.",
-   "url": "https://www.lemonde.fr/planete/article/2026/11/27/pourquoi-la-rougeole-maladie-humaine-la-plus-contagieuse-connue-flambe-de-nouveau-dans-de-nombreux-pays_6815908_3244.html",
-   "at": "2026-11-27T17:00:05+00:00"
   },
   {
    "source": "Le Monde",
@@ -239,20 +253,6 @@
    "desc": "En Guyane, le nombre de sites aurifères illégaux est en forte hausse dans le parc amazonien : 26 % de plus en à peine dix mois. Pour lutter contre ce phénomène, l'armée lance l'opération Makandi à Grand-Santi (à la frontière avec le Suriname) où l'exploitation illégale de l'or se fait au grand jour.",
    "url": "https://www.france24.com/fr/%C3%A9missions/outre-mer/20261127-l-orpaillage-clandestin-atteint-un-niveau-in%C3%A9dit-en-guyanea",
    "at": "2026-11-27T15:41:07+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "La couverture vaccinale des adolescents contre le papillomavirus reste loin de l'objectif, après une campagne 2025-2026 au bilan stable selon Santé publique France",
-   "desc": "Dans la génération née en 2013, 53% des filles et 45% des garçons ont reçu au moins une dose de vaccin contre ce virus, principale cause du cancer du col de l'utérus, alors qu'une couverture de 80% est visée à l'horizon 2030, déplore l'agence.",
-   "url": "https://www.franceinfo.fr/sante/vaccins/la-couverture-vaccinale-des-adolescents-contre-le-papillomavirus-reste-loin-de-l-objectif-apres-une-campagne-2025-2026-au-bilan-stable-selon-sante-publique-france_8303136.html",
-   "at": "2026-11-27T15:34:16+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Le président du syndicat de police CFTC Axel Ronde convoqué en mai devant le tribunal correctionnel pour usage illégal de signes distinctifs de la police",
-   "desc": "Entendu cette semaine en garde à vue par l'IGPN, le syndicaliste policier avait été arrêté dans le 12e arrondissement de Paris au volant de sa voiture personnelle équipée d'un gyrophare, d'une sirène et d'un pare-soleil siglé \"Police\".",
-   "url": "https://www.franceinfo.fr/faits-divers/info-radio-france-le-president-du-syndicat-de-police-cftc-axel-ronde-convoque-en-mai-devant-un-tribunal-correctionnel-pour-usage-illegal-de-signes-distinctifs-de-la-police_8303346.html",
-   "at": "2026-11-27T15:28:46+00:00"
   },
   {
    "source": "franceinfo",
@@ -302,13 +302,6 @@
    "desc": "Le produit intérieur brut a reculé de 0,2 % au troisième trimestre 2026, annonce l'Insee vendredi. Avec deux trimestres négatifs consécutifs, le pays est dans une période de récession, selon l'institut statistique.",
    "url": "https://www.france24.com/fr/france/20261127-la-france-entre-en-r%C3%A9cession-le-pib-continue-de-reculer",
    "at": "2026-11-27T10:20:32+00:00"
-  },
-  {
-   "source": "franceinfo",
-   "title": "Agriculture, guerre en Ukraine, présidentielle en France... On vous explique pourquoi les négociations sur le budget de l'Union européenne sont dans l'impasse",
-   "desc": "Réunis lors d'un sommet européen jeudi, les dirigeants des Vingt-Sept ont bataillé sur le projet de budget de l'UE. Le temps presse à l'approche de 2027, marquée par de nombreuses élections en Europe, dont la présidentielle française.",
-   "url": "https://www.franceinfo.fr/monde/europe/union-europeenne/agriculture-guerre-en-ukraine-presidentielle-en-france-on-vous-explique-pourquoi-les-negociations-sur-le-budget-de-l-union-europeenne-sont-dans-l-impasse_8302635.html",
-   "at": "2026-11-27T09:30:55+00:00"
   }
  ]
 }

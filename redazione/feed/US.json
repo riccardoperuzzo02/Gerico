@@ -1,13 +1,27 @@
 {
  "code": "US",
- "asOf": "2026-11-28T05:17:34+00:00",
+ "asOf": "2026-11-28T07:17:34+00:00",
  "items": [
   {
+   "source": "CNBC",
+   "title": "Saudi Arabia shifts Vision 2030 spending amid economic and security pressure",
+   "desc": "The Kingdom is moving from \"spending and delivery at any cost\" to \"spending and delivery at the right cost,\" Economic Minister Faisal Alibrahim told CNBC.",
+   "url": "https://www.cnbc.com/2026/11/28/saudi-arabia-vision-2030-spending.html",
+   "at": "2026-11-28T06:00:01+00:00"
+  },
+  {
+   "source": "CNBC",
+   "title": "Africa’s richest man is taking his mega-refinery public in a blockbuster IPO",
+   "desc": "Dangote Refinery’s IPO could value the company at about $47 billion, in what is expected to be Africa’s biggest stock market listing.",
+   "url": "https://www.cnbc.com/2026/11/28/dangote-refinery-oil-ipo-nigeria-africa-energy.html",
+   "at": "2026-11-28T06:00:01+00:00"
+  },
+  {
    "source": "New York Times",
-   "title": "Trump’s Embrace of Xi and Huang Stun China Critics in Washington",
+   "title": "Trump’s Embrace of Xi and Huang Stuns China Critics in Washington",
    "desc": "Warnings from hard-liners have grown more urgent amid what some call a winner-take-all race for A.I. dominance.",
    "url": "https://www.nytimes.com/2026/11/28/us/politics/trump-china-critics-nvidia.html",
-   "at": "2026-11-28T05:01:13+00:00"
+   "at": "2026-11-28T05:19:36+00:00"
   },
   {
    "source": "CBS News",
@@ -396,13 +410,6 @@
   },
   {
    "source": "NPR",
-   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
-   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
-   "at": "2026-11-27T10:00:00+00:00"
-  },
-  {
-   "source": "NPR",
    "title": "Screen-free tweens try their hand at Dungeons & Dragons",
    "desc": "Some parents, fed up with screens, have found an analog oasis in the role-playing game invented in the 1970s.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6042445/screen-free-tweens-try-their-hand-at-dungeons-dragons",
@@ -413,6 +420,13 @@
    "title": "12 strategies to cut your risk of dementia. Take this quiz to start",
    "desc": "Here's something you can do as you gather with family and friends this holiday season: Take a free, five-minute quiz to assess your brain health. You'll learn simple changes to keep your mind sharp.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6050867/prevent-dementia-alzheimers-your-turn",
+   "at": "2026-11-27T10:00:00+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Trump effectively ended asylum. Advocates look to the Supreme Court to restore it",
+   "desc": "Trump's sweeping immigration changes — an asylum ban, mass firings and new legal maneuvers — have all but ended asylum. The high court will soon consider whether some shifts deny people due process.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6037854/trump-effectively-ended-asylum-supreme-court",
    "at": "2026-11-27T10:00:00+00:00"
   },
   {
@@ -442,20 +456,6 @@
    "desc": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus.",
    "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
    "at": "2026-11-27T08:05:09+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Spain’s Pablo Hernández de Cos set to lead European Central Bank",
-   "desc": "De Cos will lead the ECB into a period of political uncertainty and choppy growth, after winning the backing needed to succeed Christine Lagarde next year.",
-   "url": "https://www.cnbc.com/2026/11/26/pablo-hernandez-de-cos-ecb-president.html",
-   "at": "2026-11-27T06:50:38+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Fast cars, big money: Why sportswear races into Formula 1 as sponsorship spending soars 75%",
-   "desc": "Nike, Adidas and Puma are betting big on Formula 1 as the sport's cultural influence grows and younger audiences fuel its appeal.",
-   "url": "https://www.cnbc.com/2026/11/27/nike-formula-1-sportswear-brands-sponsorship-adidas-puma.html",
-   "at": "2026-11-27T05:46:04+00:00"
   }
  ]
 }

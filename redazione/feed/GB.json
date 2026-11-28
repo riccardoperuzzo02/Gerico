@@ -1,12 +1,33 @@
 {
  "code": "GB",
- "asOf": "2026-11-28T05:17:34+00:00",
+ "asOf": "2026-11-28T07:17:34+00:00",
  "items": [
   {
+   "source": "The Guardian",
+   "title": "Mental health patients refusing NHS treatment over shared therapy notes",
+   "desc": "Exclusive: Uploading of intimate psychiatric information to wider medical records prompts some to shun support altogether Some psychiatric patients are refusing treatment over the NHS adding intimate details from therapy sessions to their medical notes, fuelling fears that breaching privacy is posing a risk to health, the Guardian can reveal. One stopped medical care for a heart condition when he discovered that details of intrusive sexual thoughts he’d experienced as result of obsessive compulsive disorder (OCD) had been shared with a cardiac nurse. Continue reading...",
+   "url": "https://www.theguardian.com/society/2026/nov/28/mental-health-patients-refusing-nhs-treatment-medical-history-shared",
+   "at": "2026-11-28T06:47:29+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Stunted sprouts: heatwaves and drought take toll on festive vegetable",
+   "desc": "The Christmas staple is smaller this year after a hot, dry summer hit the water-loving – but versatile – brassica They are a key ingredient in many Christmas dinners, but brussels sprouts appearing on diners’ plates this festive season are likely to be smaller than usual, after the hot, dry summer took its toll on the water-loving crop. Sprouts are generally planted outdoors between March and early June, meaning they were already in the ground when the UK faced a series of heatwaves and drought conditions across Wales and most of England. Continue reading...",
+   "url": "https://www.theguardian.com/business/2026/nov/28/sprouts-smaller-than-usual-heatwaves-drought-festive-vegetable",
+   "at": "2026-11-28T06:00:34+00:00"
+  },
+  {
+   "source": "BBC",
+   "title": "The Papers: 'Catherine on cancer fight' and 'Benefits and pensions chaos'",
+   "desc": "The Princess of Wales opening up on her \"cancer battle\" and a cyber incident hitting the pensions department lead Saturday's papers.",
+   "url": "https://www.bbc.co.uk/news/articles/ck792l9q07xro",
+   "at": "2026-11-28T05:21:07+00:00"
+  },
+  {
    "source": "Sky News",
-   "title": "Pharmacies offering children flu jab for first time after surge in hospital admissions",
-   "desc": "More than 6,000 pharmacies across England are offering thousands of children flu vaccines for the first time if they missed their jab at school.",
-   "url": "https://news.sky.com/story/pharmacies-offering-children-flu-jab-for-first-time-after-surge-in-hospital-admissions-13617395",
+   "title": "Children urged to get flu vaccine after 'horrible spike' in cases",
+   "desc": "More than 6,000 pharmacies across England are offering thousands of children flu vaccines for the first time.",
+   "url": "https://news.sky.com/story/pharmacies-offering-children-flu-vaccine-for-first-time-after-surge-in-hospital-admissions-13617395",
    "at": "2026-11-28T01:57:00+00:00"
   },
   {
@@ -22,13 +43,6 @@
    "desc": "Amid a surge in influenza, health officials are urging people to get a vaccine - but what if you're young and healthy?",
    "url": "https://www.bbc.co.uk/news/articles/cq8e018jyjngo",
    "at": "2026-11-28T01:03:11+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "The Papers: 'Catherine on cancer fight' and 'Benefits and pensions chaos'",
-   "desc": "The Princess of Wales opening up on her \"cancer battle\" and a cyber incident hitting the pensions department lead Saturday's papers.",
-   "url": "https://www.bbc.co.uk/news/articles/ck792l9q07xro",
-   "at": "2026-11-28T00:38:55+00:00"
   },
   {
    "source": "The Guardian",
@@ -192,13 +206,6 @@
    "at": "2026-11-27T16:40:22+00:00"
   },
   {
-   "source": "The Guardian",
-   "title": "UK pensions department hit by ‘serious cyber incident’, minister says – as it happened",
-   "desc": "This blog is now closed, you can read more on this story here According to Downdetector , which tracks online service outages, reports of problems with the government website appeared to begin last night and peaked at about 8am this morning. Tory MP Neil Shastri-Hurst has also commented on the disruption at the DWP, saying the incident highlights the importance of protecting essential public services and ensuring they can recover quickly when systems fail. Today’s cyber incident at DWP is a stark reminder that national resilience is not a tomorrow issue. It means protecting the essential services people rely on every day, with secure systems and the ability to recover quickly when things go wrong.” Continue reading...",
-   "url": "https://www.theguardian.com/politics/live/2026/nov/27/department-work-pensions-offline-cyber-incident-rosebank-slapps-latest-news-updates",
-   "at": "2026-11-27T16:33:28+00:00"
-  },
-  {
    "source": "Sky News",
    "title": "Body found in woodland confirmed as missing Kelsey Hunter",
    "desc": "The body of a woman found in woodland in Scotland has been identified as 20-year-old Kelsey Hunter, who went missing over the weekend.",
@@ -211,6 +218,13 @@
    "desc": "Centrica boss memo to 400 workers at gas plant off Yorkshire coast says utility doing all it can ‘to save your jobs’ The boss of the British Gas owner Centrica has told hundreds of staff at its largest gas storage facility that he was seeking urgent talks with Andy Burnham and would do everything he could to save jobs. Chris O’Shea, the chief executive of Centrica, reportedly told staff at the Rough gas storage facility off the east Yorkshire that the government had rebuffed the company’s plea for short-term support to run the store over the winter. Continue reading...",
    "url": "https://www.theguardian.com/business/2026/nov/27/british-gas-owner-seeks-urgent-government-talks-gas-storage-faciity-future",
    "at": "2026-11-27T15:56:31+00:00"
+  },
+  {
+   "source": "The Guardian",
+   "title": "Parents urged to vaccinate children for flu as hospital cases surge in England",
+   "desc": "Pharmacies being asked to administer jabs to children for first time amid NHS pre-Christmas vaccination push Parents are being urged to make sure their children are vaccinated against flu before Christmas amid a surge in hospitalisations, with pharmacies being asked to administer them for the first time. The NHS in England is pushing to vaccinate thousands of children who missed out when jabs were administered at schools. More than 6,000 high street pharmacies are offering appointments, with bookings opening on Monday through the NHS app or the NHS find a pharmacy webpage, with appointments from Tuesday. Continue reading...",
+   "url": "https://www.theguardian.com/society/2026/nov/27/parents-urged-to-vaccinate-children-for-flu-as-hospital-cases-surge-in-england",
+   "at": "2026-11-27T15:52:57+00:00"
   },
   {
    "source": "Sky News",
@@ -305,20 +319,6 @@
   },
   {
    "source": "Sky News",
-   "title": "'Monster' jailed for coercing children into acts of violence and sexual activity online",
-   "desc": "A man who was part of an organised crime group that blackmailed and distributed indecent images of children has been jailed for 14-and-a-half years.",
-   "url": "https://news.sky.com/story/man-jailed-for-blackmail-and-sharing-indecent-child-images-on-sinister-com-network-13617127",
-   "at": "2026-11-27T09:55:00+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Pizza history: AI agent’s cardless purchase is a first for UK",
-   "desc": "Papa John’s order was made without sharing bank security details – tech that could revolutionise shopping Retailers enter the unknown with AI shopping assistants on Black Friday An order of Papa John’s margherita pizzas has become the first purchase in the UK to be made using an AI agent using cardless payment technology. The order of nine mini pizzas was made as part of the Financial Conduct Authority’s (FCA) regulated sandbox trials to test the technology, using Lloyds Bank and payment specialist TrueLayer. Continue reading...",
-   "url": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
-   "at": "2026-11-27T09:53:11+00:00"
-  },
-  {
-   "source": "Sky News",
    "title": "Centrica warns on jobs after government snubs Rough gas storage deal",
    "desc": "The FTSE-100 utility Centrica has warned that hundreds of jobs at its Rough gas storage facility off the Yorkshire coast are at risk and claimed that ministers had rejected proposals to bolster Britain's energy security.",
    "url": "https://news.sky.com/story/centrica-warns-on-jobs-after-government-snubs-rough-gas-storage-deal-13617109",
@@ -351,34 +351,6 @@
    "desc": "The Ministry of Defence has published open letters to almost 100,000 veterans about their duty to mobilise in a crisis but it appears unable to find many people's direct contact details.",
    "url": "https://news.sky.com/story/mod-missing-contact-details-for-nearly-half-of-uks-strategic-reservists-13617071",
    "at": "2026-11-27T07:30:00+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Natural England objected to a datacentre. Weeks later ministers threatened to abolish the agency",
-   "desc": "Body urged Bristol city council to reject plan because of risk to nearby protected wildlife and habitats Natural England objected to the building of a large AI datacentre near Bristol weeks before the government threatened to abolish the independent environmental adviser. The nature adviser made a significant intervention to urge Bristol city council not to grant planning permission for a 40MW datacentre at Avonmouth, because of the threat to protected wildlife and habitats at one of the UK’s most important sites for migratory birds, which is within 600 metres of the site. Continue reading...",
-   "url": "https://www.theguardian.com/environment/2026/nov/27/natural-england-objected-datacentre-ministers-abolish-bristol",
-   "at": "2026-11-27T07:00:57+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Student recalls moment passenger stepped in during Huntingdon attack",
-   "desc": "The BBC's Lucy Manning spoke to Astrid and Stephen after the verdicts, as they met for the first time since the attack.",
-   "url": "https://www.bbc.co.uk/news/videos/cqzr566llz4no",
-   "at": "2026-11-27T06:50:28+00:00"
-  },
-  {
-   "source": "BBC",
-   "title": "Dog fouling in Scotland is getting worse, so why are councils issuing fewer fines?",
-   "desc": "The number of dog fouling complaints is soaring, while the number of fines falls, BBC research finds.",
-   "url": "https://www.bbc.co.uk/news/articles/cwj3krzp4zxeo",
-   "at": "2026-11-27T06:18:39+00:00"
-  },
-  {
-   "source": "The Guardian",
-   "title": "Up to 1.4m UK workers risk missing out on zero-hours shake-up, say unions",
-   "desc": "Andy Burnham is warned against calls from bosses to water down employment rights legislation Andy Burnham is being warned that 1.4 million workers will be at risk of being stuck in insecure jobs if a forthcoming ban on zero-hours contracts is watered down. The prime minister is under pressure from business leaders to scale back last year’s Employment Rights Act, which is being introduced in stages over 2026 and 2027. Continue reading...",
-   "url": "https://www.theguardian.com/uk-news/2026/nov/27/up-to-1point4-million-uk-workers-risk-missing-out-zero-hours-shake-up",
-   "at": "2026-11-27T06:00:55+00:00"
   }
  ]
 }

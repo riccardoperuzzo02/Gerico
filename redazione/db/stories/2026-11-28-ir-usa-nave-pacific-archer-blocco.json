@@ -1,0 +1,36 @@
+{
+ "title": "Golfo di Oman: gli Usa mettono fuori uso una nave partita da un porto iraniano",
+ "section": "mondo",
+ "rank": 5,
+ "status": "live",
+ "summary": "Il Comando Centrale americano dice di aver colpito la Pacific Archer, un mercantile partito da Bandar Abbas. Teheran promette di rompere il blocco navale.",
+ "article": "Gli Stati Uniti hanno messo fuori uso la nave mercantile Pacific Archer, battente bandiera di Palau, che giovedì 26 novembre era partita dal porto iraniano di Bandar Abbas ed era entrata nel Golfo di Oman. Lo ha comunicato il Comando Centrale americano, il Centcom.\n\nSecondo il Centcom, aerei militari hanno colpito la poppa con munizioni di precisione e hanno danneggiato la propulsione. Il comunicato dice che l'equipaggio civile non ha riportato danni. La nave cercava di forzare il blocco navale sui porti iraniani, che Washington ha ripristinato a luglio.\n\nVenerdì Mohammad Mokhber, consigliere della Guida suprema Mojtaba Khamenei, ha detto ai media statali che lo Stretto di Hormuz non sarà riaperto e che il blocco non resterà in vigore, senza spiegare come l'Iran intenda romperlo. Il comandante della marina iraniana, Shahram Irani, ha detto alla tv di Stato che i porti sono operativi e che le navi hanno scorte, e ha sostenuto che il tentativo americano di colpire l'economia del paese finora è fallito.\n\nIl Corpo delle guardie della rivoluzione iraniane ha detto che due petroliere hanno preso fuoco dopo aver urtato mine navali vicino al porto omanita di Khasab e nella parte orientale dello Stretto di Hormuz. All'inizio di novembre gli Stati Uniti hanno istituito la Task Force Iron Gate, per limitare il transito di armi e materiali sotto sanzione lungo i confini terrestri dell'Iran e nel Mar Caspio.\n\nIl presidente americano Donald Trump ha detto giovedì che la vittoria è «a portata di mano» e che Washington offre a Teheran la possibilità di un accordo.",
+ "facts": [
+  {"text": "Gli Usa hanno messo fuori uso la Pacific Archer nel Golfo di Oman dopo la partenza da Bandar Abbas.", "who": ["Comando Centrale americano"]},
+  {"text": "L'equipaggio civile non ha riportato danni, secondo il Centcom.", "who": ["Comando Centrale americano"]},
+  {"text": "Un consigliere della Guida suprema dice che Hormuz non sarà riaperto e che il blocco non resterà in vigore.", "who": ["Mohammad Mokhber", "Media statali iraniani"]},
+  {"text": "Le guardie della rivoluzione dicono che due petroliere hanno preso fuoco dopo aver urtato mine navali.", "who": ["Guardie della rivoluzione iraniane"]}
+ ],
+ "view": "Si sa che gli Usa dichiarano di aver colpito la nave e che l'Iran promette di opporsi al blocco. Non si sa se l'equipaggio stia bene, perché le informazioni vengono dal solo Centcom, e non si sa che cosa faccia Teheran per rompere l'embargo.\n\nIl blocco resta uno dei fronti del conflitto, insieme a Hormuz. Da guardare: nuovi tentativi di forzarlo e le conseguenze sul traffico delle petroliere.",
+ "open": [
+  "Quale carico trasportava la Pacific Archer?",
+  "Come intende l'Iran rompere il blocco navale?",
+  "Chi ha posato le mine che hanno colpito le due petroliere?"
+ ],
+ "sources": [
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/us-disables-ship-trying-to-leave-iran-as-tehran-vows-to-confront-blockade", "angle": "Il comunicato del Centcom e le dichiarazioni dei vertici iraniani.", "date": "2026-11-27"},
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran", "angle": "Le petroliere incendiate dalle mine, secondo le guardie della rivoluzione.", "date": "2026-11-28"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Iran", "Stati Uniti", "Medio Oriente"],
+ "themes": ["iran-usa"],
+ "places": ["OM", "IR", "US"],
+ "city": {"name": "Bandar Abbas", "lat": 27.19, "lon": 56.27},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: gli Usa colpiscono la Pacific Archer nel Golfo di Oman."}
+ ]
+}

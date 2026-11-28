@@ -1,0 +1,35 @@
+{
+ "title": "Gaza: due custodi di una clinica di Msf uccisi in un raid israeliano",
+ "section": "mondo",
+ "rank": 11,
+ "status": "live",
+ "summary": "Medici senza frontiere dice che un attacco israeliano a Gaza City ha ucciso due suoi custodi. L'esercito israeliano sostiene che fossero membri di Hamas, senza prove.",
+ "article": "Due custodi di una clinica di Medici senza frontiere (Msf) a Gaza City sono stati uccisi venerdì in un attacco israeliano. Lo ha annunciato l'organizzazione su X, parlando di «colpo diretto» e dicendo di essere sconvolta.\n\nSecondo Msf la clinica era segnalata con i logo dell'organizzazione e l'esercito israeliano ne conosceva la posizione. Con queste due morti, dice Msf, salgono a 17 i suoi dipendenti uccisi a Gaza, e chiede che i responsabili ne rispondano. L'esercito israeliano ha detto che i due erano membri di Hamas, ma non ha presentato prove. Il direttore generale dell'Oms, Tedros Adhanom Ghebreyesus, ha definito l'attacco «inaccettabile».\n\nNello stesso giorno, secondo Hamas, Izzeldeen al-Hayya, figlio del leader del movimento Khalil al-Hayya, è sopravvissuto a un attacco israeliano contro un appartamento. Lo ha detto Basem Naim, funzionario di Hamas: ci sono stati diversi feriti, tra cui la nuora di al-Hayya, e nessun morto. Hamas collega l'attacco alle minacce del ministro della Difesa israeliano Israel Katz. L'esercito israeliano non ha commentato subito; per un altro episodio a Rafah ha detto di aver colpito tre militanti.\n\nIn totale, secondo le fonti consultate, venerdì due attacchi israeliani hanno ucciso cinque palestinesi. Gli attacchi avvengono dopo il cessate il fuoco entrato in vigore a ottobre 2025, che le parti si accusano di violare.",
+ "facts": [
+  {"text": "Due custodi di una clinica di Msf a Gaza City sono stati uccisi in un attacco israeliano venerdì.", "who": ["Medici senza frontiere"]},
+  {"text": "L'esercito israeliano sostiene che i due fossero membri di Hamas, senza prove.", "who": ["Esercito israeliano"]},
+  {"text": "Hamas dice che il figlio di Khalil al-Hayya è sopravvissuto a un attacco israeliano.", "who": ["Hamas", "Basem Naim"]},
+  {"text": "Msf conta 17 dipendenti uccisi a Gaza.", "who": ["Medici senza frontiere"]}
+ ],
+ "view": "Si sa che due custodi sono morti e che le versioni di Msf e dell'esercito israeliano sono opposte. Non si sa se i due avessero legami con Hamas, perché nessuna prova è stata mostrata.\n\nLe vittime tra gli operatori umanitari pesano sul cessate il fuoco di ottobre 2025. Da guardare: la risposta di Israele alla richiesta di Msf e l'andamento degli attacchi a Gaza.",
+ "open": [
+  "I due custodi avevano legami con Hamas, come dice l'esercito israeliano?",
+  "Israele aprirà un'indagine sull'attacco alla clinica?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/28/israeli-strike-on-doctors-without-borders-clinic-in-gaza-kills-two-staff", "angle": "La posizione di Msf, dell'Oms e dell'esercito israeliano.", "date": "2026-11-28"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/son-of-hamas-chief-survives-israeli-strike-hamas-says", "angle": "L'attacco al figlio di al-Hayya, secondo Hamas, e il bilancio della giornata.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Gaza", "Israele", "Medio Oriente"],
+ "themes": [],
+ "places": ["PS", "IL"],
+ "city": {"name": "Gaza City", "lat": 31.5, "lon": 34.47},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: due custodi di una clinica di Msf uccisi a Gaza City."}
+ ]
+}

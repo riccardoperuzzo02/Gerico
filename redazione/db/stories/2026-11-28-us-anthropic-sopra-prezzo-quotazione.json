@@ -1,0 +1,34 @@
+{
+ "title": "Anthropic: il titolo chiude sopra i 90 dollari e supera il prezzo di quotazione",
+ "section": "tecnologia",
+ "rank": 13,
+ "status": "live",
+ "summary": "Venerdì le azioni di Anthropic hanno chiuso a 91,88 dollari, sopra gli 83 della quotazione del 19 novembre. Il titolo era sceso sotto quel livello per due sedute.",
+ "article": "Le azioni di Anthropic, la società che sviluppa il chatbot Claude, hanno chiuso venerdì a 91,88 dollari al Nasdaq, in rialzo dell'11% rispetto a mercoledì. Il mercato americano era chiuso giovedì per il Ringraziamento e venerdì ha chiuso alle 13 di New York.\n\nIl livello è superiore agli 83 dollari del prezzo di collocamento del 19 novembre, giorno dell'esordio in Borsa. Dopo la quotazione il titolo era sceso sotto gli 83 dollari per due sedute consecutive, in una settimana di vendite sul settore tecnologico legate al caso Nvidia, secondo il quotidiano che ha riportato i dati. Il primo giorno di contrattazioni Anthropic aveva chiuso a 97,17 dollari.\n\nSecondo la rassegna di mercato americana, venerdì Meta, Amazon e Broadcom sono salite di circa il 3-4 per cento e Anthropic di circa l'8-11 per cento, a seconda del momento della seduta. L'azienda è la prima interamente dedicata all'intelligenza artificiale a quotarsi in Borsa.\n\nLe fonti consultate non riportano dichiarazioni dei dirigenti né la capitalizzazione di Borsa dopo la chiusura di venerdì.",
+ "facts": [
+  {"text": "Anthropic ha chiuso venerdì 27 novembre a 91,88 dollari, in rialzo dell'11% rispetto a mercoledì.", "who": ["Il Post", "CNBC"]},
+  {"text": "Il prezzo di collocamento del 19 novembre era di 83 dollari.", "who": ["Nasdaq"]},
+  {"text": "Il titolo era sceso sotto gli 83 dollari per due sedute dopo la quotazione.", "who": ["Il Post"]}
+ ],
+ "figure": {"value": "91,88 $", "label": "la chiusura di Anthropic venerdì"},
+ "view": "Si sa che il titolo ha recuperato e chiude sopra il prezzo di collocamento. Non si sa quanto del rialzo dipenda dalla seduta ridotta e dal rimbalzo generale del settore tecnologico.\n\nLa quotazione è un banco di prova per l'intero settore dell'intelligenza artificiale. Da guardare: gli scambi della settimana e le mosse di Nvidia.",
+ "open": [
+  "Quanto del rialzo dipende dal rimbalzo generale del tecnologico?",
+  "Qual è la capitalizzazione di Borsa dopo la chiusura di venerdì?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/azioni-anthropic-chiusura-27-novembre/", "angle": "Il ritorno sopra il prezzo di collocamento e il calo dei giorni precedenti.", "date": "2026-11-27"},
+  {"name": "CNBC", "kind": "giornale online", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html", "angle": "Il rialzo del tecnologico e il contesto della seduta ridotta di venerdì.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Anthropic", "Intelligenza artificiale", "Borsa"],
+ "themes": ["borse-ia"],
+ "places": ["US"],
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Anthropic chiude sopra il prezzo di quotazione."}
+ ]
+}

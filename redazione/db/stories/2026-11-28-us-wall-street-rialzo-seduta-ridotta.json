@@ -1,0 +1,35 @@
+{
+ "title": "Borse: Wall Street chiude in rialzo nella seduta ridotta, Nasdaq +2,3%",
+ "section": "mercati",
+ "rank": 14,
+ "status": "live",
+ "summary": "Venerdì Wall Street ha chiuso in rialzo alle 13 di New York, spinta dal tecnologico. In Europa Piazza Affari ha guadagnato l'1,9%, con banche e difesa.",
+ "article": "Wall Street ha chiuso in rialzo venerdì 27 novembre, in una seduta accorciata alle 13 di New York dopo il Ringraziamento. L'indice Dow Jones ha guadagnato 592 punti, l'1,2%, a 50.774,94. L'S&P 500 è salito dell'1,6%, a 7.297,49, e il Nasdaq Composite del 2,3%, a 24.129,50.\n\nIl rialzo è venuto soprattutto dal tecnologico: Meta, Amazon e Broadcom sono salite di circa il 3-4%, e Anthropic, quotata da pochi giorni, di circa l'8-11%. Nvidia ha guadagnato quasi il 2,5% dopo la notizia che chip Blackwell sarebbero comparsi in un centro dati di Shanghai legato all'azienda cinese Megaspeed, che è sotto esame per un possibile dirottamento di chip. Nella settimana il Nasdaq Composite ha guadagnato il 6,6%, l'S&P 500 il 5,6% e il Dow Jones il 5,5%. L'indice della volatilità Vix è sceso a 25,13.\n\nIl petrolio ha oscillato: nelle prime ore il Wti era in rialzo del 3% a 85,75 dollari e il Brent stabile a 96,51; più tardi il Brent è sceso di oltre il 2%, intorno ai 94 dollari, e il greggio americano di circa l'1%, sopra gli 82. I prezzi risentono degli attacchi degli Houthi alle infrastrutture energetiche saudite e delle tensioni legate all'Iran.\n\nIn Europa le Borse hanno chiuso in rialzo. Piazza Affari ha guadagnato l'1,89% a 49.276 punti, guidata da banche e difesa: UniCredit ha segnato +4,27% e Fincantieri +5,72%. Lo spread Btp-Bund è sceso a 104 punti, dai 107 di giovedì.",
+ "facts": [
+  {"text": "Il Dow Jones ha chiuso a 50.774,94 punti, in rialzo dell'1,2%; l'S&P 500 a 7.297,49 (+1,6%); il Nasdaq Composite a 24.129,50 (+2,3%).", "who": ["CNBC"]},
+  {"text": "Nella settimana Nasdaq Composite, S&P 500 e Dow Jones sono saliti rispettivamente del 6,6%, del 5,6% e del 5,5%.", "who": ["CNBC"]},
+  {"text": "Piazza Affari ha chiuso a 49.276 punti, in rialzo dell'1,89%.", "who": ["Teleborsa"]},
+  {"text": "Lo spread Btp-Bund è sceso a 104 punti.", "who": ["Teleborsa"]}
+ ],
+ "figure": {"value": "+2,3%", "label": "il rialzo del Nasdaq Composite venerdì"},
+ "view": "Si sa che la seduta è stata corta e con volumi ridotti e che il rialzo è guidato dal tecnologico. Non si sa se il rimbalzo regga con i mercati aperti per intero.\n\nDopo settimane di forte volatilità, la settimana si chiude con guadagni ampi. Da guardare: il tecnologico, il petrolio e le tensioni legate all'Iran.",
+ "open": [
+  "Il rimbalzo del tecnologico reggerà con volumi normali?",
+  "Come reagirà il petrolio alle tensioni nel Golfo?"
+ ],
+ "sources": [
+  {"name": "CNBC", "kind": "giornale online", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html", "angle": "I livelli di chiusura di Wall Street, i titoli tecnologici e il petrolio.", "date": "2026-11-27"},
+  {"name": "Teleborsa", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.teleborsa.it/News/2026/11/27/piazza-affari-maglia-rosa-d-europa-grazie-a-banche-e-difesa-197.html", "angle": "La chiusura di Piazza Affari e il ruolo di banche e difesa.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Wall Street", "Nasdaq", "Piazza Affari"],
+ "themes": ["borse-ia"],
+ "places": ["US", "IT"],
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Wall Street chiude in rialzo nella seduta ridotta del 27 novembre."}
+ ]
+}

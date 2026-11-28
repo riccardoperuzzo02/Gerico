@@ -1,0 +1,38 @@
+{
+ "title": "Kuwait: Tajani dice che il drone che ha ucciso due italiani è iraniano",
+ "section": "italia",
+ "rank": 1,
+ "status": "live",
+ "summary": "Il ministro degli Esteri Tajani dice che le indagini kuwaitiane confermano la fabbricazione iraniana del drone che ha ucciso due tecnici italiani. Teheran nega di averlo lanciato dal suo territorio e offre di partecipare a una commissione d'inchiesta.",
+ "article": "Il drone che giovedì ha ucciso due tecnici italiani in Kuwait è di fabbricazione iraniana. Lo ha detto sabato il ministro degli Esteri Antonio Tajani, citando le indagini condotte dalle autorità kuwaitiane. L'Iran nega di averlo lanciato dal proprio territorio.\n\nLa notizia riguarda la responsabilità di un attacco in cui sono morti due cittadini italiani, dipendenti della divisione italiana della tedesca Rheinmetall, che lavoravano a un sistema di difesa antiaerea. Che il velivolo sia di produzione iraniana non dice però chi lo abbia lanciato: il ministro degli Esteri iraniano Abbas Araghchi aveva già detto che il drone poteva essere partito da milizie filoiraniane, soprattutto in Iraq.\n\nTeheran respinge ogni coinvolgimento. Secondo quanto riferito da Tajani, l'Iran ha offerto di entrare in una commissione d'inchiesta insieme a Italia e Kuwait. Il governo iraniano aveva definito l'episodio «sospetto» e aveva detto che potrebbe servire da pretesto per una guerra.\n\nIl ministero della Difesa del Kuwait aveva attribuito l'attacco all'Iran e aveva detto che i due italiani erano stati colpiti dai frammenti dei droni intercettati. I particolari delle indagini kuwaitiane non sono stati resi noti nei testi consultati.\n\nL'attacco è avvenuto mentre continua il conflitto che coinvolge l'Iran, cominciato a fine febbraio. Nelle stesse ore il Corpo delle guardie della rivoluzione islamica iraniano ha detto che due petroliere hanno preso fuoco dopo aver urtato mine navali vicino al porto omanita di Khasab e nella parte orientale dello Stretto di Hormuz.",
+ "facts": [
+  {"text": "Tajani dice che le indagini del Kuwait confermano che il drone che ha ucciso due italiani è di fabbricazione iraniana.", "who": ["Antonio Tajani"]},
+  {"text": "L'Iran nega di aver lanciato il drone dal suo territorio e offre di partecipare a una commissione d'inchiesta con Italia e Kuwait.", "who": ["Governo iraniano", "Antonio Tajani"]},
+  {"text": "I due italiani erano dipendenti della divisione italiana di Rheinmetall e lavoravano a un sistema di difesa antiaerea.", "who": ["Antonio Tajani", "Ministero della Difesa del Kuwait"]},
+  {"text": "Le guardie della rivoluzione iraniane dicono che due petroliere hanno preso fuoco dopo aver urtato mine navali nello Stretto di Hormuz e vicino a Khasab.", "who": ["Guardie della rivoluzione iraniane"]}
+ ],
+ "view": "Si sa che il drone è di produzione iraniana e che il governo di Teheran nega di averlo lanciato. Non si sa chi lo abbia lanciato né da dove, e la fabbricazione da sola non basta ad attribuire l'attacco.\n\nLa risposta dell'Iran, con l'offerta di una commissione d'inchiesta, sposta la questione sul piano diplomatico. Da guardare: se Italia e Kuwait accettano la commissione e che cosa dicono le indagini kuwaitiane quando saranno rese pubbliche.",
+ "open": [
+  "Chi ha lanciato il drone: l'Iran, milizie filoiraniane o altri?",
+  "Italia e Kuwait accetteranno la commissione d'inchiesta proposta da Teheran?",
+  "Che cosa hanno trovato esattamente le indagini kuwaitiane?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran", "angle": "Le parole di Tajani sull'origine del drone, la smentita iraniana e le petroliere colpite da mine a Hormuz.", "date": "2026-11-28"},
+  {"name": "Euronews", "kind": "giornale online", "country": "Francia", "area": "Europa", "url": "https://www.euronews.com/2026/11/27/iran-denies-responsibility-for-kuwait-drone-strike-that-killed-two-italians", "angle": "La smentita di Teheran sull'attacco in cui sono morti i due italiani.", "date": "2026-11-27"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/civili-italiani-uccisi-cosa-facevano-kuwait/", "angle": "Chi erano i due tecnici e per quale azienda lavoravano.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Iran", "Kuwait", "Medio Oriente"],
+ "themes": ["iran-usa"],
+ "places": ["KW", "IR", "IT"],
+ "city": {"name": "Kuwait City", "lat": 29.38, "lon": 47.99},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Tajani dice che il drone è di fabbricazione iraniana, Teheran nega."}
+ ],
+ "prev": "2026-11-27-kw-italiani-drone-rheinmetall"
+}

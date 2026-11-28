@@ -1,0 +1,39 @@
+{
+ "title": "Costa Rica: negato l'ingresso a Francesca Albanese, relatrice Onu",
+ "section": "mondo",
+ "rank": 3,
+ "status": "live",
+ "summary": "Le autorità costaricane hanno bloccato in aeroporto la relatrice Onu sui territori palestinesi. Il capo dei diritti umani dell'Onu chiede di rivedere la decisione, Israele la elogia.",
+ "article": "Il Costa Rica ha negato venerdì l'ingresso a Francesca Albanese, la relatrice speciale dell'Onu sui territori palestinesi occupati, all'aeroporto internazionale Juan Santamaría di San José. Albanese, cittadina italiana, è rimasta per una seconda notte nella zona dell'aeroporto.\n\nL'Ufficio Onu per i diritti umani dice che l'ingresso è stato negato per presunti motivi di sicurezza nazionale. L'Ufficio immigrazione costaricano ha detto di aver agito dopo aver ricevuto un avviso. Albanese era arrivata per ricevere una laurea honoris causa dall'Università statale del Costa Rica.\n\nSecondo il suo racconto, le autorità le hanno preso il passaporto e l'hanno tenuta in una stanza, minacciando di imbarcarla a forza su un volo per Parigi, che lei ha rifiutato. Venerdì sera le è stato permesso di spostarsi in un albergo vicino all'aeroporto, in attesa di partire per il Messico. Albanese ha detto di sperare che la decisione sia revocata e ha respinto i tentativi di collegarla al terrorismo.\n\nL'Alto commissario Onu per i diritti umani, Volker Türk, si è detto «profondamente preoccupato» e ha chiesto alle autorità di riconsiderare la scelta. L'ambasciatore israeliano all'Onu, Danny Danon, ha elogiato la decisione su X. Una lettera aperta con più di 400 firme, guidata da una professoressa dell'Università del Costa Rica, ha chiesto a Rebeca Grynspan, candidata costaricana alla segreteria generale dell'Onu, di sollecitare il governo a ripensarci. Grynspan non ha risposto subito alla richiesta di commento.\n\nIl Costa Rica, guidato dalla presidente Laura Fernández, ha rafforzato la cooperazione sulla sicurezza con gli Stati Uniti e si è avvicinato a Israele. Albanese è sotto sanzioni statunitensi per le sue iniziative legate alla Corte penale internazionale.",
+ "facts": [
+  {"text": "Il Costa Rica ha negato l'ingresso a Francesca Albanese all'aeroporto di San José venerdì 27 novembre.", "who": ["Ufficio Onu per i diritti umani", "Ufficio immigrazione del Costa Rica"]},
+  {"text": "L'Onu parla di presunti motivi di sicurezza nazionale e chiede di riconsiderare la decisione.", "who": ["Volker Türk", "Ufficio Onu per i diritti umani"]},
+  {"text": "L'ambasciatore israeliano all'Onu Danny Danon ha elogiato la scelta del Costa Rica.", "who": ["Danny Danon"]},
+  {"text": "Una lettera aperta con più di 400 firme chiede a Rebeca Grynspan di intervenire.", "who": ["Lettera aperta pubblicata da Surcos Digital"]}
+ ],
+ "view": "Si sa che l'ingresso è stato negato e che il governo del Costa Rica invoca la sicurezza nazionale. Non si sa quale avviso abbia ricevuto l'Ufficio immigrazione né da chi, e Albanese lo contesta.\n\nIl caso mette sotto pressione il Costa Rica, che esprime il candidato alla guida dell'Onu. Da guardare: se la decisione sarà revocata e se Grynspan interverrà.",
+ "open": [
+  "Chi ha mandato l'avviso all'Ufficio immigrazione e che cosa diceva?",
+  "Il governo costaricano revocherà la decisione?",
+  "Grynspan interverrà sul caso?"
+ ],
+ "sources": [
+  {"name": "ANSA", "kind": "agenzia", "country": "Italia", "area": "Italia", "url": "https://www.ansa.it/sito/notizie/topnews/2026/11/27/il-costa-rica-respinge-francesca-albanese-relatrice-onu-per-i-territori-palestinesi_a0141ef9-3859-4dc0-9239-7546d2798330.html", "angle": "La decisione del Costa Rica e l'applauso di Israele.", "date": "2026-11-27"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/28/costa-rica-bars-un-rapporteur-on-palestinian-territory-drawing-concern-from-rights-chief", "angle": "Il racconto di Albanese, i motivi di sicurezza e la preoccupazione dell'Onu.", "date": "2026-11-28"},
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/28/un-chief-frontrunner-urged-to-speak-out-over-albanese-detention-2", "angle": "La lettera aperta a Rebeca Grynspan e il contesto della corsa alla segreteria Onu.", "date": "2026-11-28"},
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/albanese-costa-rica/", "angle": "Albanese ferma in aeroporto dopo il rifiuto di ingresso.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Costa Rica", "Onu", "Palestina"],
+ "themes": [],
+ "places": ["CR", "IL", "IT"],
+ "photo": {"wiki": "en", "title": "Juan Santamaría International Airport"},
+ "city": {"name": "San José", "lat": 9.93, "lon": -84.08},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: il Costa Rica nega l'ingresso ad Albanese."}
+ ]
+}

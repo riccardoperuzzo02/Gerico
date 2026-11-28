@@ -1,0 +1,35 @@
+{
+ "title": "Taiwan: si vota per sindaci e capi di contea, Pechino invia aerei da guerra",
+ "section": "mondo",
+ "rank": 12,
+ "status": "live",
+ "summary": "Sabato Taiwan elegge circa 11.000 cariche locali. La sfida più osservata è a Taipei, mentre Pechino accusa il candidato del Partito democratico progressista di separatismo.",
+ "article": "Sabato i cittadini di Taiwan votano per eleggere sindaci, capi di contea e altre cariche locali in 22 città e contee. Si assegnano circa 11.000 incarichi, nelle elezioni dette «nove in uno». I seggi sono stati aperti dalle 8 alle 16 locali, e i risultati sono attesi in serata.\n\nLa sfida più seguita è a Taipei, tra il sindaco uscente Chiang Wan-an, del Kuomintang (Kmt), e Puma Shen, deputato del Partito democratico progressista (Dpp), accademico entrato in politica. Chiang ha definito la corsa «molto serrata». Altre sfide riguardano Nuova Taipei, la città più popolosa, ora guidata da un sindaco del Kmt, e Kaohsiung, governata dal Dpp. Quattro anni fa il Kmt aveva vinto in 14 città e contee, il Dpp in 5 e altri in 3.\n\nLa Cina ha attaccato Shen: la polizia cinese dice che è ricercato per «separatismo». Il ministero della Difesa di Taiwan ha contato circa 33 passaggi di aerei militari cinesi tra venerdì e sabato. Il Consiglio per gli affari continentali di Taiwan accusa Pechino di «guerra cognitiva» e «repressione transnazionale». Il ministero della Difesa cinese dice che la riunificazione è una tendenza inarrestabile.\n\nLa campagna si è concentrata su temi locali come trasporti, asili e ambiente. Gli analisti citati dalle fonti dicono che i risultati locali non sono una guida affidabile per le presidenziali di inizio 2028, in cui il presidente Lai Ching-te dovrebbe cercare un secondo mandato.",
+ "facts": [
+  {"text": "Sabato 28 novembre Taiwan vota per circa 11.000 cariche locali in 22 città e contee.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "A Taipei si sfidano Chiang Wan-an del Kmt e Puma Shen del Dpp.", "who": ["Al Jazeera", "Reuters"]},
+  {"text": "La polizia cinese dice che Shen è ricercato per separatismo.", "who": ["Polizia cinese"]},
+  {"text": "Il ministero della Difesa di Taiwan ha contato circa 33 passaggi di aerei militari cinesi tra venerdì e sabato.", "who": ["Ministero della Difesa di Taiwan"]}
+ ],
+ "view": "Si sa che il voto è locale e che Pechino ha aumentato la pressione. Non si sa l'esito: i risultati arrivano in serata e questa storia va riletta alla luce dei dati.\n\nIl risultato di Taipei peserà sugli equilibri interni al Kmt e al Dpp. Da guardare: i risultati nelle grandi città e la reazione di Pechino.",
+ "open": [
+  "Chi vince a Taipei, a Nuova Taipei e a Kaohsiung?",
+  "Come reagiscono Pechino e i partiti taiwanesi ai risultati?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/28/taiwan-votes-in-local-elections-to-choose-mayors-other-leaders", "angle": "Le sfide principali, i dati del voto e le posizioni dei partiti.", "date": "2026-11-28"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/28/taiwan-votes-in-key-local-elections-as-china-looks-on", "angle": "Gli aerei da guerra cinesi e l'attacco di Pechino a un candidato di Taipei.", "date": "2026-11-28"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Taiwan", "Cina", "Elezioni"],
+ "themes": [],
+ "places": ["TW", "CN"],
+ "city": {"name": "Taipei", "lat": 25.03, "lon": 121.57},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Taiwan al voto per le elezioni locali."}
+ ]
+}

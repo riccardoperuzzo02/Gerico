@@ -1,0 +1,37 @@
+{
+ "title": "Libia: Zelensky dice a Meloni che l'attacco di Bengasi non era concordato",
+ "section": "mondo",
+ "rank": 2,
+ "status": "live",
+ "summary": "Dopo una telefonata con Meloni, Zelensky ha detto che l'attacco alla corvetta russa Merkury a Bengasi è avvenuto senza informare i partner europei. Secondo fonti dei servizi di sicurezza, un convoglio russo diretto in Libia ha invertito la rotta.",
+ "article": "Il presidente ucraino Volodymyr Zelensky ha detto venerdì alla presidente del Consiglio Giorgia Meloni che l'attacco ucraino alla corvetta russa Merkury, nel porto libico di Bengasi, è stato condotto senza coordinarsi prima con i partner europei. Lo ha riferito Palazzo Chigi, che parla anche di rimostranze di Meloni.\n\nL'operazione risale al 22 novembre. Secondo Kiev, sette droni navali ucraini di produzione nazionale, con il Servizio di sicurezza ucraino, hanno colpito la nave. Un governo della Libia orientale ha detto che la Merkury era ormeggiata nella base navale di Bengasi. La Libia orientale è controllata dal generale Khalifa Haftar, che ha legami con la Russia, mentre l'ovest è governato da un esecutivo con sede a Tripoli.\n\nIl 26 novembre Zelensky aveva detto in un'intervista che le forze ucraine «non attaccano mai senza coordinamento» con i partner. Il ministro degli Esteri Antonio Tajani ha risposto a Sky TG24 che nessuno in Italia era stato informato e che quanto detto da Zelensky non era vero. Dopo la telefonata Zelensky ha confermato la mancanza di coordinamento e si è impegnato a condividere le informazioni. Palazzo Chigi ha ribadito che il sostegno italiano alla resistenza ucraina non può comportare l'accettazione di «iniziative che mettano a rischio la sicurezza» dell'Italia.\n\nSecondo tre fonti dei servizi militari e di sicurezza, un convoglio russo con veicoli militari, partito da Kaliningrad il 5 novembre e scortato dalla fregata Golovko, ha invertito la rotta vicino allo Stretto di Sicilia il giorno dell'attacco. Il ministero della Difesa russo non ha risposto alla richiesta di commento. Le fonti dicono che i mezzi erano probabilmente destinati all'Africa Corps russo, in Africa occidentale, e in parte all'esercito di Haftar.\n\nNell'ultima settimana l'Ucraina ha colpito obiettivi russi anche nel Baltico e nel Mar Nero. I partner europei temono che la guerra si allarghi al Mediterraneo.",
+ "facts": [
+  {"text": "Zelensky ha detto a Meloni che l'attacco alla Merkury a Bengasi non era stato coordinato con i partner europei.", "who": ["Palazzo Chigi", "Volodymyr Zelensky"]},
+  {"text": "La Merkury è stata colpita il 22 novembre nel porto di Bengasi da droni navali ucraini.", "who": ["Volodymyr Zelensky", "Governo della Libia orientale"]},
+  {"text": "Tajani ha detto che nessuno in Italia era stato informato.", "who": ["Antonio Tajani"]},
+  {"text": "Un convoglio russo diretto in Libia ha invertito la rotta dopo l'attacco, secondo tre fonti di servizi militari e di sicurezza.", "who": ["Fonti dei servizi militari e di sicurezza"]}
+ ],
+ "view": "Si sa che Kiev ha riconosciuto di non aver avvisato i partner e che la nave è stata colpita a Bengasi. Non si sa quanti danni abbia subito la Merkury né che cosa risponda Mosca: le fonti dei servizi parlano di nave affondata, altre di nave colpita.\n\nLa vicenda porta la guerra in un'area dove Roma ha interessi diretti e dove Russia e Ucraina sostengono fazioni diverse. Da guardare: la reazione di Haftar e del governo di Tripoli, e se Kiev manterrà l'impegno a condividere le informazioni.",
+ "open": [
+  "Quali danni ha subito esattamente la Merkury?",
+  "Che cosa dicono Mosca e i governi libici dell'attacco?",
+  "Dove è diretto adesso il convoglio russo?"
+ ],
+ "sources": [
+  {"name": "Il Post", "kind": "giornale online", "country": "Italia", "area": "Italia", "url": "https://www.ilpost.it/2026/11/27/zelensky-scusato-giorgia-meloni-attacco-nave-russa-bengasi-libia/", "angle": "La telefonata tra Zelensky e Meloni e la posizione di Palazzo Chigi.", "date": "2026-11-27"},
+  {"name": "Kyiv Independent", "kind": "giornale online", "country": "Ucraina", "area": "Ucraina e Russia", "url": "https://kyivindependent.com/zelensky-says-ukraine-aligns-naval-strikes-with-partners-italy-denies-coordination-over-libya-attack/", "angle": "Le parole di Zelensky e di Tajani e i dettagli dell'operazione ucraina.", "date": "2026-11-27"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/exclusive-russian-military-flotilla-bound-for-libya-turns-around-after-warship-sunk-on-nov-22-sources-says", "angle": "Il convoglio russo che ha invertito la rotta e la destinazione dei mezzi, secondo fonti dei servizi.", "date": "2026-11-27"}
+ ],
+ "firstSeen": "2026-11-28T07:21:30+01:00",
+ "updated": "2026-11-28T07:21:30+01:00",
+ "change": "",
+ "tags": ["Ucraina", "Libia", "Russia"],
+ "themes": ["ucraina"],
+ "places": ["LY", "UA", "RU", "IT"],
+ "city": {"name": "Bengasi", "lat": 32.12, "lon": 20.07},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Zelensky dice a Meloni che manca il coordinamento di coordinamento sull'attacco di Bengasi."}
+ ]
+}

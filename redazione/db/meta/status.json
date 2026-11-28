@@ -4,10 +4,10 @@
     "esito": "Nessun risultato trovato: le ricerche su inflazione core di Tokyo e dati della Francia non hanno dato il dato di oggi. Il calendario non aveva altri eventi da aggiungere."
   },
   "lastPublish": {
-    "at": "2026-11-27T19:34:15+01:00",
-    "esito": "Giro chiusure su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (249 parole); titoli.py: nessun titolo nel database."
+    "at": "2026-11-28T07:25:44+01:00",
+    "esito": "Giro notizie su GitHub; check_dump.py: 0 correzioni; brevi.py: 15 brevi copiate; riepilogo.py: riepilogo copiato (230 parole); titoli.py: nessun titolo nel database; cancellate 5 storie archiviate da più di 7 giorni; controlla: 5 cose da sistemare."
   },
-  "lastRun": "2026-11-27T13:20:00+01:00",
+  "lastRun": "2026-11-28T07:25:00+01:00",
   "marketsRun": {
     "at": "2026-11-27T19:31:50+01:00",
     "esito": "Aggiornati Ftse Mib, Dax, Cac 40, Ftse 100 e spread Btp-Bund (chiusura del 27 novembre, Teleborsa). Aex, Smi, euro/dollaro, Brent e gas TTF non trovati; agenda senza numeri ufficiali nuovi."
@@ -31,12 +31,12 @@
   },
   "quality": {
     "articlesDiscarded": 0,
-    "articlesRead": 24,
-    "at": "2026-11-27T07:24:50+01:00",
-    "factsChecked": 4,
-    "factsCorrected": 2,
-    "storiesArchived": 9,
-    "storiesNew": 7,
+    "articlesRead": 30,
+    "at": "2026-11-28T07:25:00+01:00",
+    "factsChecked": 8,
+    "factsCorrected": 1,
+    "storiesArchived": 13,
+    "storiesNew": 8,
     "storiesUpdated": 0
   },
   "riscrittura": {
@@ -44,5 +44,5 @@
     "storie": 29
   },
   "runningSince": null,
-  "storiesLive": 19
+  "storiesLive": 14
 }

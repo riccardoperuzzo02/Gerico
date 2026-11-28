@@ -4,7 +4,7 @@
  "rank": 12,
  "status": "live",
  "summary": "Sabato Taiwan elegge circa 11.000 cariche locali. La sfida più osservata è a Taipei, mentre Pechino accusa il candidato del Partito democratico progressista di separatismo.",
- "article": "Sabato i cittadini di Taiwan votano per eleggere sindaci, capi di contea e altre cariche locali in 22 città e contee. Si assegnano circa 11.000 incarichi, nelle elezioni dette «nove in uno». I seggi sono stati aperti dalle 8 alle 16 locali, e i risultati sono attesi in serata.\n\nLa sfida più seguita è a Taipei, tra il sindaco uscente Chiang Wan-an, del Kuomintang (Kmt), e Puma Shen, deputato del Partito democratico progressista (Dpp), accademico entrato in politica. Chiang ha definito la corsa «molto serrata». Altre sfide riguardano Nuova Taipei, la città più popolosa, ora guidata da un sindaco del Kmt, e Kaohsiung, governata dal Dpp. Quattro anni fa il Kmt aveva vinto in 14 città e contee, il Dpp in 5 e altri in 3.\n\nLa Cina ha attaccato Shen: la polizia cinese dice che è ricercato per «separatismo». Il ministero della Difesa di Taiwan ha contato circa 33 passaggi di aerei militari cinesi tra venerdì e sabato. Il Consiglio per gli affari continentali di Taiwan accusa Pechino di «guerra cognitiva» e «repressione transnazionale». Il ministero della Difesa cinese dice che la riunificazione è una tendenza inarrestabile.\n\nLa campagna si è concentrata su temi locali come trasporti, asili e ambiente. Gli analisti citati dalle fonti dicono che i risultati locali non sono una guida affidabile per le presidenziali di inizio 2028, in cui il presidente Lai Ching-te dovrebbe cercare un secondo mandato.",
+ "article": "A Taiwan i seggi per le elezioni locali sono chiusi e lo spoglio è iniziato. Secondo i primi conteggi, il Partito democratico progressista (Dpp) al governo è avviato a guadagnare terreno: nelle sei città maggiori il Dpp e il Kuomintang (Kmt) sembrano vincerne tre ciascuno, e a Taipei è in testa il sindaco Kmt Chiang Wan-an. Nessun candidato nelle sei città ha dichiarato la vittoria o riconosciuto la sconfitta.\n\nSi votava per sindaci, capi di contea e altre cariche locali in 22 città e contee, circa 11.000 incarichi, nelle elezioni dette «nove in uno». I seggi sono stati aperti dalle 8 alle 16 locali.\n\nLa sfida più seguita è a Taipei, tra il sindaco uscente Chiang Wan-an, del Kuomintang (Kmt), e Puma Shen, deputato del Partito democratico progressista (Dpp), accademico entrato in politica. Chiang ha definito la corsa «molto serrata». Altre sfide riguardano Nuova Taipei, la città più popolosa, ora guidata da un sindaco del Kmt, e Kaohsiung, governata dal Dpp. Quattro anni fa il Kmt aveva vinto in 14 città e contee, il Dpp in 5 e altri in 3.\n\nLa Cina ha attaccato Shen: la polizia cinese dice che è ricercato per «separatismo». Il ministero della Difesa di Taiwan ha contato circa 33 passaggi di aerei militari cinesi tra venerdì e sabato. Il Consiglio per gli affari continentali di Taiwan accusa Pechino di «guerra cognitiva» e «repressione transnazionale». Il ministero della Difesa cinese dice che la riunificazione è una tendenza inarrestabile.\n\nLa campagna si è concentrata su temi locali come trasporti, asili e ambiente. Gli analisti citati dalle fonti dicono che i risultati locali non sono una guida affidabile per le presidenziali di inizio 2028, in cui il presidente Lai Ching-te dovrebbe cercare un secondo mandato.",
  "facts": [
   {"text": "Sabato 28 novembre Taiwan vota per circa 11.000 cariche locali in 22 città e contee.", "who": ["Al Jazeera", "Reuters"]},
   {"text": "A Taipei si sfidano Chiang Wan-an del Kmt e Puma Shen del Dpp.", "who": ["Al Jazeera", "Reuters"]},
@@ -21,8 +21,8 @@
   {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/28/taiwan-votes-in-key-local-elections-as-china-looks-on", "angle": "Gli aerei da guerra cinesi e l'attacco di Pechino a un candidato di Taipei.", "date": "2026-11-28"}
  ],
  "firstSeen": "2026-11-28T07:21:30+01:00",
- "updated": "2026-11-28T07:21:30+01:00",
- "change": "",
+ "updated": "2026-11-28T13:20:10+01:00",
+ "change": "Seggi chiusi, i primi conteggi danno il Dpp in guadagno e Chiang in testa a Taipei.",
  "tags": ["Taiwan", "Cina", "Elezioni"],
  "themes": [],
  "places": ["TW", "CN"],
@@ -30,6 +30,7 @@
  "divergences": [],
  "notCovered": [],
  "history": [
+  {"at": "2026-11-28T13:20:10+01:00", "text": "Seggi chiusi, i primi conteggi danno il Dpp in guadagno e Chiang in testa a Taipei."},
   {"at": "2026-11-28T07:21:30+01:00", "text": "Prima notizia: Taiwan al voto per le elezioni locali."}
  ]
 }

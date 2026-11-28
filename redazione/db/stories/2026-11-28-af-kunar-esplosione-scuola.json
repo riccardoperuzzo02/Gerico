@@ -1,0 +1,36 @@
+{
+ "title": "Afghanistan: esplosione vicino a una scuola nel Kunar, almeno sei studenti morti",
+ "section": "mondo",
+ "rank": 15,
+ "status": "live",
+ "summary": "Sabato un'esplosione in una casa accanto a una scuola media nella provincia di Kunar ha ucciso almeno sei studenti e ne ha feriti quasi cento. Le autorità talebane parlano di dinamite di attività minerarie.",
+ "article": "Almeno sei studenti sono morti sabato 28 novembre per un'esplosione avvenuta vicino a una scuola nell'area di Andar Ser, nella provincia di Kunar, nell'Afghanistan orientale, al confine con il Pakistan. Il bilancio è ancora provvisorio: i feriti sono 97 secondo il direttore dell'ospedale provinciale di Kunar, Mawla Dad, fino a 99 secondo il ministero dell'Interno del governo talebano.\n\nIl portavoce del ministero dell'Interno, Abdul Mateen Qani, ha parlato in un comunicato di sette studenti morti. Mawla Dad ha precisato che le cifre sono iniziali e potrebbero cambiare. Non ci sono verifiche indipendenti sui numeri.\n\nSecondo Mawlawi Sami-ul-Haq, responsabile dell'Informazione e della Cultura della provincia, l'esplosione è partita da una casa accanto a una scuola media. La casa apparteneva a persone che lavorano nelle attività minerarie, e vi era stata immagazzinata della dinamite. Qani ha attribuito le prime indagini a «negligenza e imprudenza».\n\nSquadre investigative sono sul posto. Le autorità hanno promesso altri dettagli alla fine dell'inchiesta. Nel Kunar l'estrazione di pietre preziose è in crescita e la sicurezza nelle attività minerarie afghane è spesso scarsa. Ad agosto un'esplosione in un centro educativo di Kabul aveva ferito almeno 42 bambini, secondo la missione dell'Onu in Afghanistan.",
+ "facts": [
+  {"text": "Sabato 28 novembre un'esplosione vicino a una scuola nel Kunar ha ucciso almeno sei studenti.", "who": ["Mawla Dad", "Abdul Mateen Qani"]},
+  {"text": "I feriti sono 97 secondo l'ospedale provinciale e fino a 99 secondo il ministero dell'Interno talebano.", "who": ["Mawla Dad", "Abdul Mateen Qani"]},
+  {"text": "Secondo un funzionario provinciale, in una casa accanto alla scuola era stata immagazzinata dinamite di attività minerarie.", "who": ["Mawlawi Sami-ul-Haq"]},
+  {"text": "Il portavoce del ministero dell'Interno attribuisce l'esplosione a negligenza e imprudenza.", "who": ["Abdul Mateen Qani"]}
+ ],
+ "view": "Si sa che l'esplosione c'è stata vicino a una scuola e che le autorità indicano dinamite stoccata in una casa. Non si sa il bilancio finale e la causa resta quella dichiarata dalle autorità, non verificata da altri.\n\nLa vicenda riporta l'attenzione sullo stoccaggio di esplosivi vicino ai centri abitati nelle zone minerarie. Da guardare: il bilancio aggiornato e gli esiti dell'inchiesta annunciata.",
+ "open": [
+  "Qual è il bilancio definitivo di morti e feriti?",
+  "Chi custodiva la dinamite e come era stata immagazzinata?",
+  "Quali risultati darà l'inchiesta annunciata dalle autorità?"
+ ],
+ "sources": [
+  {"name": "Al Jazeera", "kind": "giornale online", "country": "Qatar", "area": "Medio Oriente", "url": "https://www.aljazeera.com/news/2026/11/28/students-killed-injured-in-school-explosion-in-afghanistans-kunar-region", "angle": "Il bilancio dell'ospedale provinciale e le spiegazioni dei funzionari locali.", "date": "2026-11-28"},
+  {"name": "Reuters", "kind": "agenzia", "country": "Regno Unito", "area": "Europa", "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/28/explosion-reported-at-school-in-afghanistan-official-says", "angle": "Il comunicato del ministero dell'Interno talebano e il precedente di Kabul.", "date": "2026-11-28"}
+ ],
+ "firstSeen": "2026-11-28T13:20:10+01:00",
+ "updated": "2026-11-28T13:20:10+01:00",
+ "change": "",
+ "tags": ["Afghanistan", "Scuola"],
+ "themes": [],
+ "places": ["AF"],
+ "city": {"name": "Asadabad", "lat": 34.87, "lon": 71.15},
+ "divergences": [],
+ "notCovered": [],
+ "history": [
+  {"at": "2026-11-28T13:20:10+01:00", "text": "Prima notizia: esplosione vicino a una scuola nel Kunar, almeno sei studenti morti."}
+ ]
+}

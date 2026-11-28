@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-28-fr-fuite-rn-perquisizione-rancourt",
+  "title": "Francia: perquisiti ufficio e casa del coordinatore del programma di Le Pen",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.86, "lon": 2.35},
+  "rank": 303,
+  "summary": "Ambroise de Rancourt è sospettato di aver ricevuto informazioni riservate uscite dal ministero dell'Interno. Le Pen dice che il partito non è coinvolto.",
+  "article": "Gli investigatori hanno perquisito l'ufficio e la casa di Ambroise de Rancourt, coordinatore del programma presidenziale del Rassemblement national (Rn), il partito di Marine Le Pen. È sospettato di essere stato il destinatario di informazioni riservate passate al partito dal ministero dell'Interno.\n\nL'inchiesta è della procura di Parigi, che ha aperto un'informazione giudiziaria il 27 luglio. Gli investigatori cercano di ricostruire il percorso di una email riservata, di cui una copia è stata trovata a casa di uno stretto collaboratore di Le Pen. De Rancourt, 39 anni, è indicato come il principale destinatario della fuga. Resta un sospettato: non ci sono accuse formali né sentenze.\n\nLe Pen sostiene che la perquisizione «non mette affatto in causa» il Rn. Secondo lei, se il partito fosse coinvolto sarebbero stati perquisiti anche gli uffici suoi e di Jordan Bardella, il presidente del Rn: «non è stato così».\n\nNella vicenda il prefetto Hugues Moutouh è stato rimosso dall'incarico e sostituito da Pierre Ory. Nelle fonti non c'è una data per i prossimi atti dell'inchiesta.",
+  "facts": [
+    {"text": "Perquisiti l'ufficio e l'abitazione di Ambroise de Rancourt.", "who": ["Procura di Parigi"]},
+    {"text": "Il sospetto è che abbia ricevuto informazioni riservate uscite dal ministero dell'Interno.", "who": ["Procura di Parigi"]},
+    {"text": "L'informazione giudiziaria è stata aperta il 27 luglio.", "who": ["Procura di Parigi"]},
+    {"text": "La perquisizione non coinvolge il partito, secondo Le Pen.", "who": ["Marine Le Pen"]}
+  ],
+  "view": "Si può dire con certezza che ci sono state perquisizioni e che l'inchiesta riguarda una fuga di documenti dal ministero dell'Interno. Restano aperti il ruolo di de Rancourt e l'eventuale coinvolgimento del partito.\n\nLa vicenda si aggiunge alle polemiche già aperte sul Rn nella corsa alla presidenziale. Conviene guardare se l'inchiesta porta a nuove perquisizioni o a iscrizioni nel registro degli indagati.",
+  "open": [
+    "De Rancourt è formalmente indagato?",
+    "Chi al ministero dell'Interno ha trasmesso il documento?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Francia", "url": "https://www.franceinfo.fr/politique/front-national/dans-l-affaire-des-fuites-au-profit-du-rn-le-bureau-et-le-domicile-d-ambroise-de-rancourt-coordinateur-du-programme-presidentiel-du-parti-ont-ete-perquisitionnes_8304285.html", "angle": "Perquisizioni, inchiesta della procura, reazione di Le Pen."},
+    {"name": "Le Monde", "kind": "stampa", "country": "Francia", "area": "Francia", "url": "https://www.lemonde.fr/societe/article/2026/11/27/ambroise-de-rancourt-le-responsable-du-programme-presidentiel-de-marine-le-pen-soupconne-d-etre-le-principal-destinataire-de-la-fuite-de-documents-de-beauvau-vers-le-rn_6815924_3224.html", "angle": "Dal testo del feed: de Rancourt, 39 anni, sospettato di essere il principale destinatario della fuga.", "at": "2026-11-27T18:35:49+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: perquisiti ufficio e casa del coordinatore del programma di Le Pen."}
+  ],
+  "tags": ["Francia", "Giustizia", "Partiti"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-28-es-chiusura-campagna-voto-domenica",
+  "title": "Spagna: finita la campagna, domenica 29 novembre si vota per il parlamento",
+  "section": "mondo",
+  "status": "live",
+  "country": "ES",
+  "scope": "paese",
+  "prev": "2026-11-27-es-dopo-dibattito-ultimi-giorni-campagna",
+  "city": {"name": "Madrid", "lat": 40.42, "lon": -3.7},
+  "rank": 501,
+  "summary": "I leader hanno chiuso la campagna con comizi in diverse città. I seggi aprono domenica alle 9 e chiudono alle 20.",
+  "article": "La campagna per le elezioni generali spagnole è finita venerdì 27 novembre con i comizi dei principali leader. Domenica 29 novembre i seggi sono aperti dalle 9 alle 20, e a quell'ora inizia lo scrutinio provvisorio. Sabato è il giorno di silenzio elettorale, in cui sono vietati comizi e propaganda.\n\nPedro Sánchez, il presidente del governo socialista, ha chiuso la campagna a Madrid con un comizio-festa con ospiti a sorpresa, tra cui il regista Pedro Almodóvar. Ha chiesto il voto per una «coalizione progressista» e ha detto a Pp e Vox: «Ho una brutta notizia, perderanno le elezioni». Ha anche ringraziato il Frente Amplio, la coalizione di sinistra guidata da Ada Colau, per la sua campagna.\n\nSantiago Abascal, il leader di Vox, ha chiuso a Valencia e ha definito il voto «esistenziale». Ha chiesto di votare «con coraggio» e ha detto che «le urne non si riempiono con i sondaggi». Alberto Núñez Feijóo, il leader del Partito popolare, ha chiesto di ripetere il cambio visto in Andalusia e di votare per «l'opzione onesta».\n\nSecondo un'analisi dei sondaggi, lo scenario più probabile è una maggioranza di Pp e Vox, ma restano possibili altri esiti, dalla rimonta di Sánchez a un'avanzata più ampia della destra. Il ministero dell'Interno guida un gruppo di esperti che monitora possibili interferenze straniere e attacchi informatici durante il voto.",
+  "facts": [
+    {"text": "I seggi sono aperti dalle 9 alle 20 di domenica 29 novembre, poi inizia lo scrutinio provvisorio.", "who": ["Autorità elettorali"]},
+    {"text": "Sánchez ha chiuso la campagna chiedendo il voto per una coalizione progressista.", "who": ["Pedro Sánchez, presidente del governo"]},
+    {"text": "Abascal ha definito il voto «esistenziale» e ha chiuso a Valencia.", "who": ["Santiago Abascal, leader di Vox"]},
+    {"text": "Il ministero dell'Interno guida un gruppo che monitora interferenze e attacchi informatici.", "who": ["Ministero dell'Interno"]}
+  ],
+  "view": "Si può dire con certezza che la campagna è chiusa e che domenica si vota con orari fissati. Chi vincerà e con quale maggioranza dipende dai seggi nelle province piccole e da affluenza e sondaggi, che non coincidono.\n\nDopo le 20 di domenica conviene guardare lo scrutinio provvisorio e se un blocco raggiunge la maggioranza senza il sostegno di partiti regionali o di Vox.",
+  "open": [
+    "Quale blocco raggiungerà la maggioranza assoluta?",
+    "Quanto peserà l'affluenza?"
+  ],
+  "sources": [
+    {"name": "20minutos", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://www.20minutos.es/nacional/sanchez-convierte-cierre-campana-un-mitin-festival-desafia-pp-vox-tengo-una-mala-noticia-van-perder-las-elecciones_7066938_0.html", "angle": "Dal testo del feed: il comizio finale di Sánchez con Almodóvar e il messaggio a Pp e Vox.", "at": "2026-11-27T19:43:23+00:00"},
+    {"name": "El País", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://elpais.com/espana/elecciones-generales/2026-11-28/cuando-abren-los-colegios-electorales-como-se-realiza-el-recuento-claves-sobre-la-jornada-electoral.html", "angle": "Dal testo del feed: orari del voto, scrutinio, analisi dei sondaggi e misure contro le interferenze.", "at": "2026-11-28T04:30:01+00:00"},
+    {"name": "El Mundo", "kind": "stampa", "country": "Spagna", "area": "Spagna", "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/27/6b09d315fdddff93658b4592.html", "angle": "Dal testo del feed: Abascal chiude la campagna con l'obiettivo di vincere il 29 novembre.", "at": "2026-11-27T20:35:37+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: chiusa la campagna, domenica si vota."}
+  ],
+  "tags": ["Spagna", "Elezioni", "Partiti"],
+  "themes": [],
+  "places": ["ES"],
+  "divergences": [],
+  "notCovered": []
+}

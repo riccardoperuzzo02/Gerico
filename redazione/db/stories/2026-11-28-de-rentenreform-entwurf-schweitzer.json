@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-28-de-rentenreform-entwurf-schweitzer",
+  "title": "Germania: il ministro del Lavoro presenta la bozza di riforma delle pensioni",
+  "section": "mondo",
+  "status": "live",
+  "country": "DE",
+  "scope": "paese",
+  "prev": "2026-11-26-de-rente-con-63-respekt-rente",
+  "city": {"name": "Berlino", "lat": 52.52, "lon": 13.4},
+  "rank": 401,
+  "summary": "La «pensione a 63 anni» resta nel suo nucleo, ma l'Unione protesta. Il cancelliere dice che la bozza è ancora in «coordinamento preliminare».",
+  "article": "Alexander Schweitzer, il ministro federale del Lavoro (Spd), ha presentato venerdì 27 novembre la prima bozza di legge sulla riforma delle pensioni. Il testo lascia in sostanza in vigore la «pensione a 63 anni», il prepensionamento dopo molti anni di contributi. Il cancelliere, Friedrich Merz, e il suo staff dicono che la bozza è ancora nella fase di «coordinamento preliminare».\n\nSchweitzer, intervistato in tv, ha definito le sue proposte una base per un'intesa: «Possiamo trovarci». Secondo lui il piano stabilizza i contributi e premia «chi ha lavorato a lungo». In Parlamento ha detto di essere ottimista su un accordo vicino.\n\nL'Unione (Cdu e Csu) risponde con un'opposizione netta. Il partner di governo contesta il mantenimento della pensione a 63 anni e altri punti del testo. Un esponente della Cdu mette in dubbio la lealtà della Spd alla coalizione. Anche la Commissione sulle pensioni è divisa: il suo vicepresidente critica il progetto, altri membri lo apprezzano in parte.\n\nSul fronte opposto, Yasmin Fahimi, presidente del sindacato Dgb, apprezza il mantenimento della pensione a 63 anni ma critica le penalizzazioni più alte per chi va in pensione prima. La sinistra e i sindacati avvertono di una ondata di licenziamenti.\n\nLa coalizione discute da mesi un compromesso. Le fonti non indicano una data per il prossimo passaggio in governo.",
+  "facts": [
+    {"text": "Presentata la prima bozza di legge sulla riforma delle pensioni.", "who": ["Alexander Schweitzer, ministro federale del Lavoro"]},
+    {"text": "La pensione a 63 anni resta nel suo nucleo.", "who": ["Ministero federale del Lavoro"]},
+    {"text": "La bozza è in «coordinamento preliminare».", "who": ["Cancelleria federale"]},
+    {"text": "Maggiori penalizzazioni per chi va in pensione prima, secondo il sindacato.", "who": ["Yasmin Fahimi, presidente del Dgb"]}
+  ],
+  "view": "Si può dire con certezza che esiste una bozza del ministero e che l'Unione la contesta. Non è un testo concordato dal governo.\n\nIl nodo è la pensione a 63 anni, su cui coalizione e commissione sono divise. Conviene guardare se la cancelleria e l'Unione aprono un negoziato sul testo.",
+  "open": [
+    "Quali penalizzazioni sono previste per chi va in pensione prima?",
+    "Quanto costa il piano?",
+    "Quando va in consiglio dei ministri?"
+  ],
+  "sources": [
+    {"name": "Tagesschau", "kind": "tv", "country": "Germania", "area": "Germania", "url": "https://www.tagesschau.de/inland/innenpolitik/rentenreform-entwurf-arbeitsministerium-100.html", "angle": "Dal testo del feed: la bozza lascia la pensione a 63 anni; più articoli danno le reazioni di Unione, Dgb e Schweitzer.", "at": "2026-11-27T16:30:51+00:00"},
+    {"name": "Der Spiegel", "kind": "stampa", "country": "Germania", "area": "Germania", "url": "https://www.spiegel.de/politik/deutschland/rente-arbeitsminister-alexander-schweitzer-legt-gesetzentwurf-zur-rentenreform-vor-a-78332671-b923-4dc6-addc-399722e6d309", "angle": "Dal testo del feed: la cancelleria parla di «coordinamento preliminare».", "at": "2026-11-27T15:18:00+00:00"},
+    {"name": "Die Zeit", "kind": "stampa", "country": "Germania", "area": "Germania", "url": "https://www.zeit.de/politik/deutschland/2026-11/rentenreform-alexander-schweitzer-rente-mit-63-kapitalrente", "angle": "Dal testo del feed: critiche dal vicepresidente della commissione, sinistra e sindacati temono licenziamenti.", "at": "2026-11-28T04:44:22+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: il ministro del Lavoro presenta la bozza di riforma delle pensioni."}
+  ],
+  "tags": ["Germania", "Pensioni", "Coalizione"],
+  "themes": [],
+  "places": ["DE"],
+  "divergences": [],
+  "notCovered": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-28-us-tempesta-corrente-ripristinata",
+  "title": "Stati Uniti: la tempesta si attenua, 400.000 utenze ancora al buio",
+  "section": "mondo",
+  "status": "live",
+  "country": "US",
+  "scope": "paese",
+  "prev": "2026-11-27-us-tempesta-ringraziamento-costa-est",
+  "city": {"name": "New York", "lat": 40.71, "lon": -74.0},
+  "rank": 101,
+  "summary": "Venerdì sera restavano senza elettricità oltre 400.000 utenze. Sabato a New York si svolge la parata di Macy's rinviata.",
+  "article": "La forte tempesta di Ringraziamento sulla costa orientale degli Stati Uniti si è attenuata venerdì 27 novembre e la corrente sta tornando lentamente a centinaia di migliaia di utenze. La pioggia intensa che aveva allagato diverse comunità è diminuita, dalla Virginia a New York.\n\nVenerdì sera restavano senza elettricità oltre 400.000 utenze, contro le oltre 800.000 del giorno prima, e proseguivano i disagi ai trasporti. Molte famiglie hanno rinviato a venerdì, sabato o oltre i pranzi del Ringraziamento saltati per i blackout.\n\nLa parata di Macy's, giunta al centesimo anno, è stata rinviata a sabato 28 novembre a New York a causa del vento, e per la prima volta nella sua storia non si è tenuta nel giorno previsto. Secondo gli esperti di spesa, intanto, il Black Friday dovrebbe segnare livelli record di vendite nonostante il maltempo.\n\nLe fonti consultate non danno un bilancio di vittime né una stima dei danni complessivi.",
+  "facts": [
+    {"text": "Oltre 400.000 utenze senza corrente venerdì, contro oltre 800.000 il giorno prima.", "who": ["Dati sui blackout negli Stati Uniti"]},
+    {"text": "La parata di Macy's si tiene sabato 28 novembre.", "who": ["Macy's"]},
+    {"text": "La pioggia è in calo sulla costa dalla Virginia a New York.", "who": ["Servizi meteorologici"]}
+  ],
+  "view": "Si può dire con certezza che la fase peggiore è passata e che il ripristino è in corso, ma centinaia di migliaia di utenze sono ancora al buio. Mancano un bilancio dei danni e dei tempi del ritorno alla normalità.\n\nConviene guardare quanto ci vorrà per riattivare le reti più colpite e se gli stati chiederanno aiuti federali.",
+  "open": [
+    "Quanti giorni serviranno per ripristinare tutte le utenze?",
+    "Quali danni complessivi ha causato la tempesta?"
+  ],
+  "sources": [
+    {"name": "CBS News", "kind": "tv", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.cbsnews.com/news/east-coast-thanksgiving-storm-power-outages-cleanup/", "angle": "Dal testo del feed: la pioggia cala e la corrente torna lentamente a centinaia di migliaia di utenze.", "at": "2026-11-28T03:54:12+00:00"},
+    {"name": "New York Times", "kind": "stampa", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html", "angle": "Dal testo del feed: oltre 400.000 utenze senza corrente, disagi ai trasporti, miglioramento venerdì.", "at": "2026-11-28T02:11:55+00:00"},
+    {"name": "NPR", "kind": "radio", "country": "Stati Uniti", "area": "Stati Uniti", "url": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday", "angle": "Dal testo del feed: parata di Macy's rinviata a sabato e Black Friday.", "at": "2026-11-27T10:59:36+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: la tempesta si attenua e la corrente torna a centinaia di migliaia di utenze."}
+  ],
+  "tags": ["Stati Uniti", "Maltempo", "Trasporti"],
+  "themes": [],
+  "places": ["US"],
+  "divergences": [],
+  "notCovered": []
+}

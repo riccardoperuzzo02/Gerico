@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-28-gb-dwp-attacco-informatico",
+  "title": "Regno Unito: attacco informatico al ministero del Lavoro, servizi offline",
+  "section": "mondo",
+  "status": "live",
+  "country": "GB",
+  "scope": "paese",
+  "city": {"name": "Londra", "lat": 51.5, "lon": -0.13},
+  "rank": 202,
+  "summary": "Il ministero ha spento quasi tutti i servizi online dopo «attività insolita». Pensioni, universal credit e domande di invalidità non sono accessibili.",
+  "article": "Il ministero del Lavoro e delle Pensioni britannico (Dwp) ha messo fuori uso quasi tutti i suoi servizi online dopo un «grave incidente informatico». Il portale è stato spento giovedì 27 novembre in serata, quando il ministero ha rilevato «attività insolita». Venerdì chi voleva controllare la pensione statale, chiedere il sussidio di invalidità (Pip) o l'universal credit, il sostegno al reddito, non ha potuto farlo.\n\nIl ministero afferma che alcuni servizi sono stati disattivati per precauzione. Il ministro del Lavoro e delle Pensioni ha detto che è in corso un'indagine sull'incidente. Il ministero invita chi ha difficoltà urgenti a chiamare la linea di assistenza e avverte di stare attenti alle truffe che sfruttano il blackout.\n\nL'episodio alimenta i dubbi sulla capacità del governo britannico di difendersi dagli attacchi informatici. Le fonti consultate non dicono chi sia l'autore, se siano stati sottratti dati né quando i servizi torneranno disponibili.",
+  "facts": [
+    {"text": "Il ministero ha spento il portale giovedì sera dopo aver rilevato attività insolita.", "who": ["Ministero del Lavoro e delle Pensioni"]},
+    {"text": "Fuori uso quasi tutti i servizi online, compresi pensioni, universal credit e domande Pip.", "who": ["Ministero del Lavoro e delle Pensioni"]},
+    {"text": "È in corso un'indagine su un «grave incidente informatico».", "who": ["Il ministro del Lavoro e delle Pensioni"]},
+    {"text": "Il ministero invita a diffidare delle truffe legate al blackout.", "who": ["Ministero del Lavoro e delle Pensioni"]}
+  ],
+  "view": "Si può dire con certezza che i servizi online del ministero sono fermi dal 27 novembre e che il governo parla di incidente informatico grave. Restano ignoti l'autore, i dati eventualmente colpiti e i tempi del ripristino.\n\nPer chi dipende da pensioni e sussidi pesa ogni giorno di blocco. Nei prossimi giorni conviene guardare se arriva un comunicato sui dati e quando riaprono i servizi.",
+  "open": [
+    "Chi ha compiuto l'attacco?",
+    "Sono stati sottratti dati personali di chi riceve prestazioni?",
+    "Quando torneranno disponibili i servizi online?"
+  ],
+  "sources": [
+    {"name": "BBC", "kind": "tv", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.bbc.co.uk/news/articles/ck1l0e946dqmo", "angle": "Dal testo del feed: quasi tutti i sistemi online del ministero sono fuori uso, tra cui pensioni, universal credit e Pip.", "at": "2026-11-27T22:01:04+00:00"},
+    {"name": "The Guardian", "kind": "stampa", "country": "Regno Unito", "area": "Regno Unito", "url": "https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline", "angle": "Dal testo del feed: portale spento giovedì sera, avviso sulle truffe, dubbi sulla difesa informatica del governo.", "at": "2026-11-27T19:45:51+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: attacco informatico al ministero del Lavoro, pensioni e sussidi offline."}
+  ],
+  "tags": ["Regno Unito", "Sicurezza informatica", "Welfare"],
+  "themes": [],
+  "places": ["GB"],
+  "divergences": [],
+  "notCovered": []
+}

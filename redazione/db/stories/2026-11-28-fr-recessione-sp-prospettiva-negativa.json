@@ -1,0 +1,39 @@
+{
+  "id": "2026-11-28-fr-recessione-sp-prospettiva-negativa",
+  "title": "Francia: l'Insee conferma la recessione, S&P porta la prospettiva a negativa",
+  "section": "mondo",
+  "status": "live",
+  "country": "FR",
+  "scope": "paese",
+  "city": {"name": "Parigi", "lat": 48.86, "lon": 2.35},
+  "rank": 301,
+  "summary": "Il Pil del terzo trimestre scende dello 0,2%. L'agenzia di rating lascia la Francia ad A+ ma apre la strada a un declassamento.",
+  "article": "Venerdì 27 novembre l'Insee, l'istituto di statistica francese, ha comunicato che il Pil è calato dello 0,2% nel terzo trimestre, più dello 0,1% stimato in precedenza. Dopo la revisione al ribasso del secondo trimestre, la Francia risulta in recessione tecnica, cioè con due trimestri consecutivi di calo. Nello stesso giorno l'agenzia di rating S&P ha confermato la valutazione A+ ma ha portato la prospettiva da stabile a negativa.\n\nLa crescita già acquisita per il 2026 è dello 0,1%, contro lo 0,5% su cui si basava il governo. L'Insee stima inoltre un'inflazione al 2,9% annuo a novembre, in calo dal 3,4% di ottobre. I consumi delle famiglie sono rimasti stabili in ottobre dopo i cali di agosto e settembre.\n\nS&P motiva la decisione con la difficoltà di ridurre il deficit e con la crescita debole. Il ministro dell'Economia, Roland Lescure, ha preso atto della valutazione e chiede un bilancio 2027 che riporti il deficit al 5% del Pil al massimo. Il testo è ancora in discussione in Parlamento.\n\nSecondo gli analisti di Rexecode, un taglio di un intero gradino sarebbe «piuttosto violento». Gli economisti di Bnp Paribas parlano di una situazione «più incerta che negativa». L'agenzia non ha indicato una data per il prossimo esame.",
+  "facts": [
+    {"text": "Il Pil francese è calato dello 0,2% nel terzo trimestre, rivisto dallo 0,1%.", "who": ["Insee"]},
+    {"text": "La crescita acquisita per il 2026 è dello 0,1%, contro lo 0,5% previsto dal governo.", "who": ["Insee"]},
+    {"text": "L'inflazione provvisoria di novembre è al 2,9% su base annua.", "who": ["Insee"]},
+    {"text": "S&P conferma A+ con prospettiva negativa.", "who": ["S&P"]},
+    {"text": "Il governo chiede un bilancio 2027 con deficit al massimo al 5% del Pil.", "who": ["Roland Lescure, ministro dell'Economia"]}
+  ],
+  "view": "Si può dire con certezza che l'economia francese è calata nel terzo trimestre e che S&P ha peggiorato la prospettiva senza toccare il voto. Resta aperto se il declassamento arriverà e quando.\n\nIl passaggio decisivo è il bilancio 2027: l'approvazione e il livello del deficit diranno se la prospettiva negativa resta o rientra.",
+  "open": [
+    "Quando S&P riesaminerà la nota?",
+    "Il Parlamento approverà un bilancio con deficit al 5%?"
+  ],
+  "sources": [
+    {"name": "franceinfo", "kind": "tv", "country": "Francia", "area": "Francia", "url": "https://www.franceinfo.fr/economie/budget/l-agende-de-notation-standard-poor-s-menace-de-degrader-prochainement-la-note-de-la-france_8302788.html", "angle": "Motivi di S&P, posizione di Lescure e giudizi degli analisti; un secondo articolo dà i dati Insee su Pil, inflazione e consumi."},
+    {"name": "Le Monde", "kind": "stampa", "country": "Francia", "area": "Francia", "url": "https://www.lemonde.fr/politique/article/2026/11/27/l-agence-s-p-menace-de-degrader-encore-la-note-de-la-france-entree-en-recession_6815934_823448.html", "angle": "Dal testo del feed: prospettiva negativa e timori degli investitori sul deficit.", "at": "2026-11-27T21:18:33+00:00"}
+  ],
+  "firstSeen": "2026-11-28T09:49:00+01:00",
+  "updated": "2026-11-28T09:49:00+01:00",
+  "change": "",
+  "history": [
+    {"at": "2026-11-28T09:49:00+01:00", "text": "Prima notizia: l'Insee conferma la recessione e S&P porta la prospettiva a negativa."}
+  ],
+  "tags": ["Francia", "Conti pubblici", "Economia"],
+  "themes": [],
+  "places": ["FR"],
+  "divergences": [],
+  "notCovered": []
+}

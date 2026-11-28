@@ -1,6 +1,6 @@
 {
  "code": "US",
- "asOf": "2026-11-28T07:17:34+00:00",
+ "asOf": "2026-11-28T09:17:33+00:00",
  "items": [
   {
    "source": "CNBC",
@@ -148,6 +148,13 @@
    "desc": "The EPA conducted sampling at more than 130 structures in Iowa, including homes, schools, daycare centers and churches.",
    "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
    "at": "2026-11-27T23:08:17+00:00"
+  },
+  {
+   "source": "NPR",
+   "title": "Sudan's lost generation: War is stealing the childhood of millions",
+   "desc": "Three years of war have stolen childhood from millions of children in Sudan, leaving them displaced, hungry and fighting for survival instead of learning in a classroom.",
+   "url": "https://www.npr.org/2026/11/27/nx-s1-6053049/sudans-lost-generation-war-is-stealing-a-generation-of-childhood",
+   "at": "2026-11-27T22:54:53+00:00"
   },
   {
    "source": "CBS News",
@@ -442,20 +449,6 @@
    "desc": "Some new balloons are set to fly in the weather-delayed Macy's Thanksgiving Day Parade.",
    "url": "https://www.npr.org/2026/11/27/nx-s1-6043796/new-balloons-will-fly-in-the-postponed-100th-macys-thanksgiving-day-parade",
    "at": "2026-11-27T09:45:12+00:00"
-  },
-  {
-   "source": "NPR",
-   "title": "Eagles rally to stun Cowboys coming back from 21 points behind",
-   "desc": "Eagles QB Joe Milton threw two long touchdowns against the quarterback's former team, the Dallas Cowboys, for the the start of quite a comeback, after being down 31-10 early in the third quarter.",
-   "url": "https://www.npr.org/2026/11/27/nx-s1-6055519/eagles-stun-cowboys",
-   "at": "2026-11-27T08:23:12+00:00"
-  },
-  {
-   "source": "CNBC",
-   "title": "Private markets are more accessible than ever for investors. Getting out is another matter",
-   "desc": "Retail access to private markets is growing, but PwC says education lags as redemption limits put liquidity risks in focus.",
-   "url": "https://www.cnbc.com/2026/11/27/private-markets-retail-investors-liquidity.html",
-   "at": "2026-11-27T08:05:09+00:00"
   }
  ]
 }

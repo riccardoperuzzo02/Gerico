@@ -1,7 +1,35 @@
 {
  "code": "DE",
- "asOf": "2026-11-28T07:17:34+00:00",
+ "asOf": "2026-11-28T09:17:33+00:00",
  "items": [
+  {
+   "source": "Tagesschau",
+   "title": "Kritik aus der Union an Rentenplänen von Arbeitsminister Schweitzer",
+   "desc": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
+   "url": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
+   "at": "2026-11-28T09:14:19+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Migration in Spanien: Ceuta hat die Stimmung gedreht",
+   "desc": "Spanien galt unter Pedro Sánchez als Musterland liberaler Einwanderungspolitik. Am Sonntag könnte er die Wahl verlieren. Nun bangen viele Migranten um ihre Zukunft.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/spanien-migration-ceuta-pedro-sanchez-parlamentswahl",
+   "at": "2026-11-28T08:43:07+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Ärzte ohne Grenzen: Israel tötet zwei Mitarbeiter von Ärzte ohne Grenzen im Gazastreifen",
+   "desc": "Bei einem Angriff Israels auf eine Klinik in Gaza sind zwei zivile Wachleute getötet worden, die für Ärzte ohne Grenzen arbeiteten. Laut Israel waren sie Terroristen.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/medecins-sans-frontieres-gaza-israel-luftangriff-tote-gxe",
+   "at": "2026-11-28T08:36:18+00:00"
+  },
+  {
+   "source": "Die Zeit",
+   "title": "Falklandinseln: Wem gehört das Öl vor den Falklandinseln?",
+   "desc": "Großbritannien will vor den Falklandinseln Öl fördern – Argentinien will das verhindern. Nun urteilt der Seegerichtshof. Was hinter dem Konflikt um das Archipel steckt.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/falkland-inseln-argentinien-grossbritannien-uk-isgh-oel-faq-falklandkrieg",
+   "at": "2026-11-28T07:25:52+00:00"
+  },
   {
    "source": "Tagesschau",
    "title": "Nach niedrigen Pegelständen im Sommer: Umweltminister will Rhein umbauen",
@@ -25,10 +53,10 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Falklandinseln: Wem gehört das Öl vor den Falklandinseln?",
-   "desc": "Großbritannien will vor den Falklandinseln Öl fördern – Argentinien will das verhindern. Nun urteilt der Seegerichtshof. Was hinter dem Konflikt um das Archipel steckt.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/falkland-inseln-argentinien-grossbritannien-uk-isgh-oel-faq-falklandkrieg",
-   "at": "2026-11-28T05:00:44+00:00"
+   "title": "Markus Reisner: »Russland erdrückt die Ukraine langsam, wie eine Würgeschlange«",
+   "desc": "Putin kann den Krieg noch lange durchhalten, warnt Oberst Markus Reisner. Er erklärt, warum die Front ein »gläsernes Gefechtsfeld« ist und er Europa für wehrlos hält.",
+   "url": "https://www.zeit.de/politik/ausland/2026-11/markus-reisner-oberst-oesterreich-ukraine-krieg",
+   "at": "2026-11-28T04:58:57+00:00"
   },
   {
    "source": "Die Zeit",
@@ -36,13 +64,6 @@
    "desc": "Putin kann den Krieg noch lange durchhalten, warnt Oberst Markus Reisner. Er erklärt, warum die Front ein »gläsernes Gefechtsfeld« ist und er Europa für wehrlos hält.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/markus-reisner-oberst-oesterreich-ukraine-krieg",
    "at": "2026-11-28T04:58:57+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Kritik aus der Union an Rentenplänen von Arbeitsminister Schweitzer",
-   "desc": "Der Vorschlag des Arbeitsministers zur Reform der Rente liegt auf dem Tisch - und der Gegenwind aus der Union ist recht rau. Dem Koalitionspartner stößt auf, dass die \"Rente mit 63\" im Kern erhalten bleibt. Doch nicht nur das.",
-   "url": "https://www.tagesschau.de/inland/rentenplaene-reaktionen-102.html",
-   "at": "2026-11-28T04:58:25+00:00"
   },
   {
    "source": "Die Zeit",
@@ -102,13 +123,6 @@
   },
   {
    "source": "Die Zeit",
-   "title": "Rentenreform: Es könnte eine Jahrhundertreform werden",
-   "desc": "Länger arbeiten und Geld an der Börse anlegen: Die Koalition ist sich bei der Rente in den entscheidenden Punkten einig. Und da soll kein Kompromiss möglich sein?",
-   "url": "https://www.zeit.de/politik/deutschland/2026-11/rente-koalition-spd-cdu",
-   "at": "2026-11-27T19:30:16+00:00"
-  },
-  {
-   "source": "Die Zeit",
    "title": "Jean-Luc Mélenchon: Mélenchon weist Vorwurf der Deutschlandfeindlichkeit zurück",
    "desc": "Jean-Luc Mélenchon hat seine kritische Haltung zu Deutschland verteidigt. Frankreichs linkspopulistischer Präsidentschaftskandidat ist derzeit zu Besuch in Berlin.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/jean-luc-melenchon-berlin-linke-deutschland-eu-gxe",
@@ -134,20 +148,6 @@
    "desc": "Müsste Europa auch einen JD Vance als Präsidenten fürchten? Ein Thema der Bonusfolge des US-Podcasts. Und wir beantworten Fragen zu AOC und unseren Lieblingspräsidenten.",
    "url": "https://www.zeit.de/politik/ausland/2026-11/us-vizepraesident-jd-vance-donald-trump-ok-america",
    "at": "2026-11-27T17:34:06+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Parlamentswahl in Spanien: Sánchez’ riskantes Pokerspiel",
-   "desc": "Nach kurzem Wahlkampf wählt Spanien ein neues Parlament. Pedro Sánchez hofft auf ein starkes linkes Mandat, doch die Rechtsextremen haben bessere Chancen. Eine Übersicht",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/parlamentswahl-spanien-sozialisten-konservative-faq",
-   "at": "2026-11-27T17:28:59+00:00"
-  },
-  {
-   "source": "Die Zeit",
-   "title": "Wahl in Spanien: »Jetzt wissen wir, wie man ein ganzes Land zum Stillstand bringt«",
-   "desc": "Mieten sind bei der Wahl in Spanien ein Topthema, aber viele Mieter-Aktivisten hat die linke Regierung verloren. Eine von ihnen, Carme Arcarazo i Sempere, erklärt, warum.",
-   "url": "https://www.zeit.de/politik/ausland/2026-11/wahl-spanien-gewerkschaft-carme-arcarazo-i-sempere-generalstreik",
-   "at": "2026-11-27T17:26:07+00:00"
   },
   {
    "source": "Tagesschau",
@@ -267,13 +267,6 @@
    "desc": "Mit Not haben sich Union und SPD auf einen Haushalt verständigt – und dabei fast jedes Vertrauen zerstört. Dabei stehen ihnen die schwierigsten Aufgaben noch bevor.",
    "url": "https://www.spiegel.de/politik/deutschland/friedrich-merz-das-schicksalsjahr-des-cdu-kanzlers-beginnt-jetzt-a-425929cf-a265-495d-8211-8c82318c8aa1",
    "at": "2026-11-27T09:19:00+00:00"
-  },
-  {
-   "source": "Tagesschau",
-   "title": "Parteitag in Dresden: Wie hält es das BSW mit der AfD?",
-   "desc": "Das BSW ringt um den Kurs zur AfD: Die Parteispitze betont Distanz, in Sachsen-Anhalt kommen sich beide Parteien aber recht nahe. Bringt der Parteitag in Dresden einen Richtungsentscheid? Von Maximilian Ulrich.",
-   "url": "https://www.tagesschau.de/inland/innenpolitik/bsw-parteitag-afd-sachsen-anhalt-100.html",
-   "at": "2026-11-27T08:22:38+00:00"
   }
  ]
 }
